@@ -1,13 +1,8 @@
 ---
-title: 'Como: adicionar um método Finder | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar um método Finder | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 597d1e706ad75ba6ec16b958c94b5ba9d8e97760
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963442"
 ---
-# <a name="how-to-add-a-finder-method"></a>Como: adicionar um método Finder
+# <a name="how-to-add-a-finder-method"></a>Como: Adicionar um método Finder
   Para habilitar o serviço de conectividade de dados comerciais (BDC) exibir uma lista de entidades em uma web part ou lista, você deve criar uma *Finder* método. Um método Finder é um método especial que retorna uma coleção de instâncias da entidade. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-finder-method"></a>Para criar um método Finder  
   
 1. Sobre o **Designer de BDC**, escolha uma entidade.  
   
-    Para obter mais informações, consulte [como: adicionar uma entidade a um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+    Para obter mais informações, confira [Como: Adicionar uma entidade a um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
 2. Na barra de menus, escolha **modo de exibição** > **Other Windows** > **detalhes do método BDC**.  
   
@@ -46,7 +41,7 @@ ms.locfileid: "49836223"
   
     Visual Studio adiciona um método, um parâmetro de retorno e um descritor de tipo.  
   
-4. Configure o descritor de tipo como um descritor de tipo de coleção de entidade. Para obter mais informações sobre como criar um descritor de tipo de coleção de entidade, consulte [como: definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+4. Configure o descritor de tipo como um descritor de tipo de coleção de entidade. Para obter mais informações sobre como criar um descritor de tipo de coleção de entidade, consulte [como: Definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
    > [!NOTE]  
    >  Não é necessário executar esta etapa se você tiver adicionado um método Finder específico à entidade. O Visual Studio usa o descritor de tipo definido no método localizador específico.  
@@ -70,11 +65,9 @@ ms.locfileid: "49836223"
 ## <a name="see-also"></a>Consulte também
  [Visão geral de ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Como: adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Como: adicionar um método Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Como: adicionar um método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Como: adicionar um método Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Como: adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Como: definir uma instância de método](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [Como: Adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Como: Adicionar um método Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Como: Adicionar um método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Como: Adicionar um método Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Como: Adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Como: Definir uma instância de método](../sharepoint/how-to-define-a-method-instance.md)  

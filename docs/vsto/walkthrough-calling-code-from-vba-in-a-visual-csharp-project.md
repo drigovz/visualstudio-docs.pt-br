@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Chamar o código do VBA em um projeto do Visual c#'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989024"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Passo a passo: Chamar o código do VBA em um projeto do Visual c#
   Este passo a passo demonstra como chamar um método em uma personalização no nível de documento do Microsoft Office Excel no Visual Basic para código Applications (VBA) na pasta de trabalho. O procedimento envolve três etapas básicas: adicionar um método para o `Sheet1` classe de item de host, expõem o método ao código VBA na pasta de trabalho e, em seguida, chame o método do código VBA na pasta de trabalho.  
@@ -74,7 +71,7 @@ ms.locfileid: "38781683"
 3.  Na faixa de opções, clique no **desenvolvedor** guia.  
   
     > [!NOTE]  
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  No **código** , clique em **Visual Basic**.  
   
@@ -245,14 +242,13 @@ ms.locfileid: "38781683"
 ## <a name="next-steps"></a>Próximas etapas  
  Você pode aprender mais sobre como chamar o código em soluções do Office do VBA nestes tópicos:  
   
--   Chame o código em um item de host em uma personalização no Visual Basic do VBA. Esse processo é diferente do processo Visual c#. Para obter mais informações, consulte [instruções passo a passo: chamar o código do VBA em um projeto do Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
+-   Chame o código em um item de host em uma personalização no Visual Basic do VBA. Esse processo é diferente do processo Visual c#. Para obter mais informações, confira [Passo a passo: Chamar o código do VBA em um projeto do Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
   
--   Chame o código em um suplemento do VSTO do VBA. Para obter mais informações, consulte [instruções passo a passo: chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Chame o código em um suplemento do VSTO do VBA. Para obter mais informações, confira [Passo a passo: Chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Combinar o VBA e personalizações no nível de documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)   
- [Como: expor o código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Como: expor o código para VBA em um Visual C&#35; projeto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Como: Expor o código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Como: Expor o código para VBA em um Visual C&#35; projeto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Passo a passo: Chamar o código do VBA em um projeto do Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
-  

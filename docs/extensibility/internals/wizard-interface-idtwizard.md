@@ -1,9 +1,6 @@
 ---
 title: Interface de assistente (IDTWizard) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDTWizard interface
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f1bc71239ff7923676c35496e103223a6b6e56e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 16ce767c70e532da5991b99a5a77f65b7adc12e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869708"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interface do assistente (IDTWizard)
 O ambiente de desenvolvimento integrado (IDE) usa o <xref:EnvDTE.IDTWizard> interface para se comunicar com os assistentes. Assistentes devem implementar essa interface para ser instalado no IDE.  

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b70a7442440a7d7604c226f9b8ae8bc7fc3c4cb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886560"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Trabalhando com o Gerenciador de Linguagem Específica do Domínio
 O **Gerenciador de DSL** exibe vários tipos de informações em uma exibição de árvore. Para obter mais informações sobre a maioria dos itens no Gerenciador de DSL, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md).

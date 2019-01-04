@@ -1,9 +1,6 @@
 ---
 title: 'Área de teste 8: Alternância de plug-in | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
@@ -14,22 +11,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cec4bc16cea19a1d2eeea68d7d38797d8ea5b312
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e62885b117e8b5fe42b1078c6fb8fbb4b68bf03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986226"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Área de teste 8: alternância de plug-in
+# <a name="test-area-8-plug-in-switching"></a>Área de teste 8: Alternância de plug-in
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) tem a interface do usuário (UI) para alterar o plug-in de controle de origem atual. Essa área de teste fornece os casos de teste para o processo de selecionar o plug-in a ser usado para controle de código-fonte da solução.  
 
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  
  O seguinte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu de ambiente de desenvolvimento integrado são usados nos casos de teste.  
 
--   Controle de origem atual plug-in: **ferramentas** -> **opções** -> **controle do código-fonte** -> **seleção de plug-in** .  
+-   Controle atual origem plug-in: **Ferramentas** -> **opções** -> **controle de origem** -> **seleção de plug-in**.  
 
--   Alterar fonte de ligação de controle: **arquivo** -> **controle de origem** -> **alterar controle do código-fonte**...  
+-   Alterar fonte de ligação de controle: **Arquivo** -> **controle de fonte** -> **alterar controle do código-fonte**...  
 
 ## <a name="common-expected-behavior"></a>Comportamento esperado comuns  
  É possível alterar o plug-in para uma solução de controle de origem sem sair do Visual Studio ou recarregar a solução. Além disso, o plug-in de controle de origem atual é alterado automaticamente àquele usado por uma solução quando essa solução é carregada.  
@@ -37,7 +34,7 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de des
 ## <a name="test-cases"></a>Casos de teste  
  Estes são os casos de teste específicos para a área de teste de comutação plug-in.  
 
-### <a name="case-8a-automatic-change"></a>Caso 8a: automático de alterações  
+### <a name="case-8a-automatic-change"></a>8a case: Alterações automáticas  
 
 #### <a name="expected-behavior"></a>Comportamento esperado  
  Quando um usuário carrega uma solução sob controle do código-fonte, a solução é carregada automaticamente e o plug-in de controle de origem apropriada é selecionada como atual.  
@@ -47,7 +44,7 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de des
 | - | - | - |
 | Alteração de plug-in de controle de fonte automática | 1.  Selecione plug-in em testar como atual (**ferramentas** -> **opções** -> **controle do código-fonte** -> **plug-in Seleção**.)<br />2.  Crie um novo projeto.<br />3.  Adicione a solução ao controle de origem.<br />4.  Selecione outro plug-in (por exemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Aceite solicitação de solução de descarregamento.<br />6.  Reabra a solução do disco. | Solução for aberta.<br /><br /> Plug-in em teste é o plug-in de controle de origem atual. |
 
-### <a name="case-8b-solution-based-change"></a>Caso 8b: alteração com base em solução  
+### <a name="case-8b-solution-based-change"></a>8b case: Alteração de solução  
 
 #### <a name="expected-behavior"></a>Comportamento esperado  
  A solução pode ter seu plug-in de controle de origem associado alterado.  

@@ -1,8 +1,7 @@
 ---
-title: 'CA1410: os métodos de registro COM devem ser correspondentes'
+title: 'CA1410: Métodos de registro COM devem ser correspondidos'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1410
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d04668ef21ea469e1dbb42cea6c8a8b5b7f18f5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1701ac1a432a9957e4350601ea55f13c6371147d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872889"
 ---
-# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: os métodos de registro COM devem ser correspondentes
+# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Métodos de registro COM devem ser correspondidos
 
 |||
 |-|-|
@@ -54,7 +53,7 @@ ms.locfileid: "47858394"
  [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1411: os métodos de registro COM não devem estar visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+ [CA1411: OS métodos de registro não devem ser visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Consulte também
 

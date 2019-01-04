@@ -17,18 +17,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e99e37f99d067356d24e2808754696dc233e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959482"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma linguagem específica de domínio (DSL), você pode criar uma solução do Visual Studio de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
 
-Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por meio de **laboratório de ferramentas de DSL**, que pode ser encontrado neste site: [tiver e SDK de modelagem](http://go.microsoft.com/fwlink/?LinkID=186128)
+Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por meio de **laboratório de ferramentas de DSL**, que pode ser encontrado neste site: [SDK de modelagem e tiver](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Selecionando uma solução de modelo
  Para definir uma DSL, é necessário ter instalados os seguintes componentes:
@@ -169,9 +168,9 @@ Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por 
 
 |Como o elemento é exibido|Classe pai (incorporação)|Exemplo no modelo de solução DSL|
 |-|-|-|
-|Forma no diagrama.<br /><br /> Raia.|Classe raiz da DSL.|Linguagem Mínima.<br /><br /> Fluxo de Tarefa: classe Ator.|
-|Forma na raia.|Classe de domínio de elementos que são exibidos como raias.|Fluxo de Tarefa: classe Tarefa.|
-|Item na lista em forma, em que o item será excluído se o contêiner for excluído.<br /><br /> Porta na borda da forma.|Classe de domínio mapeada conforme a forma do contêiner.|Diagrama de classe: classe Atributo.<br /><br /> Diagrama de componente: classe Porta.|
+|Forma no diagrama.<br /><br /> Raia.|Classe raiz da DSL.|Linguagem Mínima.<br /><br /> Fluxo de tarefa: Classe de ator.|
+|Forma na raia.|Classe de domínio de elementos que são exibidos como raias.|Fluxo de tarefa: Classe de tarefa.|
+|Item na lista em forma, em que o item será excluído se o contêiner for excluído.<br /><br /> Porta na borda da forma.|Classe de domínio mapeada conforme a forma do contêiner.|Diagrama de classe: Classe de atributo.<br /><br /> Diagrama de componente: Classe de porta.|
 |Item na lista, não excluído se o contêiner for excluído.|Classe raiz da DSL.<br /><br /> A lista exibe vínculos de referência.||
 |Não exibido diretamente.|A classe da qual ela forma parte.||
 
@@ -187,7 +186,7 @@ Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por 
 >  Incorporação não é o mesmo que herança. Os filhos em uma relação de incorporação não herdam recursos de seus pais.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Adicionar propriedades de domínio em cada classe de domínio
- As propriedades de domínio armazenam valores. Os exemplos são: Nome, Título, Data de Publicação.
+ As propriedades de domínio armazenam valores. Os exemplos são: Nome, título, data de publicação.
 
  Clique em **propriedades do domínio** na classe, pressione a tecla ENTER e, em seguida, digite o nome de uma propriedade. O tipo padrão de uma propriedade de domínio é a Cadeia de Caracteres. Se você quiser alterar o tipo, selecione a propriedade de domínio e defina as **tipo** na **propriedades** janela. Se o tipo que você deseja não estiver na lista suspensa, consulte [adicionando tipos de propriedade](#addTypes).
 
@@ -409,7 +408,7 @@ Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por 
 
    Depois de testar inicialmente um conector, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a> Definindo formas que contêm listas: formas do compartimento
+## <a name="compartments"></a> Definindo formas que contêm listas: Formas do compartimento
  Uma forma do compartimento contém uma ou mais listas de itens. Por exemplo, em uma DSL de Biblioteca de Músicas, você poderia usar formas do compartimento para representar os Álbuns de música. Em cada Álbum, há uma lista de Canções.
 
  ![Forma do compartimento](../modeling/media/compartmentshape.png)
@@ -605,7 +604,7 @@ Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por 
 
  Você deve, portanto, estar ciente de que ao alterar algumas relações em sua Definição de DSL, não é incomum que erros sejam relatados ao salvar a definição ou ao Transformar Todos os Modelos. A maioria dos erros é fácil de corrigir. Clique duas vezes no relatório de erros para ver o local do erro.
 
- Consulte também [como: alterar o Namespace de uma linguagem específica de domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Confira também [Como: Alterar o Namespace de uma linguagem específica de domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Solução de problemas
  A tabela a seguir lista alguns dos problemas mais comuns encontrados ao projetar uma DSL, junto com as sugestões para sua solução. Mais orientações estão disponíveis sobre o [Fórum de extensibilidade de ferramentas de visualização](http://go.microsoft.com/fwlink/?LinkId=186074).
@@ -619,8 +618,8 @@ Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por 
 | Criei uma classe de domínio, mas não consigo criar instâncias no gerenciador de linguagens. | Cada classe de domínio, exceto a raiz, deve ser o destino de uma relação de incorporação. |
 | No gerenciador de minha DSL, os elementos são mostrados somente com seus nomes de tipos. | Na definição de DSL, selecione uma propriedade de domínio da classe e nas propriedades da janela, defina **é o nome do elemento** como true. |
 | Minha DSL sempre é aberta no editor XML. | Isso pode ocorrer em função de um erro durante a leitura do arquivo. No entanto, mesmo após a correção desse erro, você deve redefinir explicitamente o editor para que seja o designer de DSL.<br /><br /> Clique com botão direito no item de projeto, clique em **abrir com** e selecione * * YourLanguage**Designer (padrão)**. |
-| A caixa de ferramentas de minha DSL não aparece após a mudança de nomes do assembly. | Inspecione e atualize **DslPackage\GeneratedCode\Package.tt** para obter mais informações, consulte [como: alterar o Namespace de uma linguagem específica de domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| A caixa de ferramentas de minha DSL não aparece, mas não alterei o nome do assembly.<br /><br /> Ou, uma caixa de mensagens aparece relatando a falha ao carregar uma extensão. | Redefina a instância experimental e recompile sua solução.<br /><br /> 1.  No Windows menu Iniciar, em **todos os programas**, expanda [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], em seguida, **ferramentas**e, em seguida, clique em **redefinir o Visual Studio instância Experimental do Microsoft**.<br />2.  Sobre o **construir** menu, clique em **recompilar solução**. |
+| A caixa de ferramentas de minha DSL não aparece após a mudança de nomes do assembly. | Inspecione e atualize **DslPackage\GeneratedCode\Package.tt** para obter mais informações, consulte [como: Alterar o Namespace de uma linguagem específica de domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| A caixa de ferramentas de minha DSL não aparece, mas não alterei o nome do assembly.<br /><br /> Ou, uma caixa de mensagens aparece relatando a falha ao carregar uma extensão. | Redefina a instância experimental e recompile sua solução.<br /><br /> 1.  No Windows menu Iniciar, em **todos os programas**, expanda [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], em seguida, **ferramentas**e, em seguida, clique em **redefinir o Visual Studio instância Experimental do Microsoft**.<br />2.  No menu **Compilar**, clique em **Recompilar Solução**. |
 
 ## <a name="see-also"></a>Consulte também
 

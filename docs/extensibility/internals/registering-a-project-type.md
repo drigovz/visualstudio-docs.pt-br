@@ -1,9 +1,6 @@
 ---
 title: Registro de um tipo de projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1839ed51b3bd8b26bd67583054fa142f5853a2de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e3c5aa9dd5784f6d987a433b0f402547e8f7d8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826381"
 ---
 # <a name="registering-a-project-type"></a>Registrando um tipo de projeto
 Quando você cria um novo tipo de projeto, você deve criar entradas do registro que permitem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para reconhecer e trabalhar com o tipo de projeto. Você normalmente cria essas entradas do registro usando um arquivo de script (. rgs) do registro.  
@@ -66,7 +63,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
 ```  
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)  
    @="FigPrj Project Package"  
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
    "CompanyName"="Microsoft"  
    "ProductName"="Figure Project Sample"  
    "ProductVersion"="9.0"  
@@ -105,12 +102,12 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
    @="FigPrj Project"  
    "DisplayName"="#2"  
    "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"  
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
    "DisplayProjectFileExtensions"="#3"  
    "PossibleProjectExtensions"="figp"  
    "DefaultProjectExtension"=".figp"  
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
    @="#4"  
    "CommonOpenFilesFilter"=dword:00000000  
    "CommonFindFilesFilter"=dword:00000000  
@@ -129,7 +126,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
    "SortPriority"=dword:000003e8  
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)  
    @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
    "SortPriority"=dword:00000064  
 ```  
   
@@ -190,7 +187,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
                                  (CLSID for Figures Project projects)  
    @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
    "SortPriority"=dword:00000064  
 ```  
   
@@ -230,7 +227,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
  Todos os exemplos a seguir estão localizados no registro sob a chave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
 ```  
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
    @="#7"  
    "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"  
    "SortPriority"=dword:00000029  
@@ -268,6 +265,6 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
  Isso significa que se você incluir um PROJECT_TYPE = a entrada do EF no arquivo. vsz, localiza o ambiente que seu. vsz arquivos no diretório ProductDir especificado anteriormente.  
   
 ## <a name="see-also"></a>Consulte também  
- [Lista de verificação: Criar novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Elementos de um modelo de projeto](../../extensibility/internals/elements-of-a-project-model.md)   
  [Criar instâncias de projetos usando fábricas de projetos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

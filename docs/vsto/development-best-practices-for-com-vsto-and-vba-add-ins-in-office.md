@@ -1,9 +1,6 @@
 ---
 title: Práticas recomendadas de desenvolvimento para COM, VSTO e suplementos do Office
-ms.custom: ''
 ms.date: 07/25/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - ''
@@ -14,12 +11,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e08dcc5b34fb90992e44bfee10e8bbfba9ee47b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871538"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Práticas recomendadas de desenvolvimento para COM, VSTO e suplementos do Office
   Se você estiver desenvolvendo suplementos VSTO, COM ou do VBA para o Office, siga as práticas recomendadas de desenvolvimento descritas neste artigo.   Isso ajudará a garantir que:

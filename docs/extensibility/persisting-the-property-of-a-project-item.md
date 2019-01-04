@@ -1,8 +1,6 @@
 ---
 title: Manter a propriedade de um Item de projeto | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties, adding to a project item
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e04561a5b61aed471840e5e835b942c1b2a81717
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823426"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Manter a propriedade de um item de projeto
 Você talvez queira manter uma propriedade que você adicionar a um item de projeto, como o autor de um arquivo de origem. Você pode fazer isso, armazenando a propriedade no arquivo de projeto.
@@ -69,7 +67,7 @@ Você talvez queira manter uma propriedade que você adicionar a um item de proj
     uint itemid;
 
     // Retrieve shell interface in order to get current selection
-    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
     if (monitorSelection == null)
         throw new InvalidOperationException();
 

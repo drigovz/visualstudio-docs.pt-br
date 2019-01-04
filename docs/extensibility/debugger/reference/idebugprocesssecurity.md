@@ -1,9 +1,6 @@
 ---
 title: IDebugProcessSecurity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e34a93e73bd1c4c9b5e70f89d318c2db6a84f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967950"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` é implementado por um fornecedor de porta para avisar o usuário anexar ao processo é seguro.  
+`IDebugProcessSecurity` é implementado por um fornecedor de porta para avisar o usuário que é seguro anexando ao processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -29,7 +26,7 @@ ms.locfileid: "31116247"
 IDebugProcessSecurity : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  A tabela a seguir mostra os métodos de `IDebugProcessSecurity`.  
   
 |Método|Descrição|  
@@ -38,7 +35,7 @@ IDebugProcessSecurity : IUnknown
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Avisa o usuário anexar ao processo de depuração é seguro.|  
   
 ## <a name="remarks"></a>Comentários  
- Implemente esta interface para mostrar um aviso e permitir que o usuário cancele se o processo ao qual você está anexando pode ser considerado inseguros.  
+ Implemente essa interface para mostrar um aviso e permitir que o usuário cancele se o processo ao qual você está anexando pode ser considerado não seguro.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  
@@ -50,5 +47,5 @@ IDebugProcessSecurity : IUnknown
 ## <a name="see-also"></a>Consulte também  
  [Portas](../../../extensibility/debugger/ports.md)   
  [Fornecedores de porta](../../../extensibility/debugger/port-suppliers.md)   
- [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

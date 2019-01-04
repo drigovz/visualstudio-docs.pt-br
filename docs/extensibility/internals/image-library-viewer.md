@@ -1,6 +1,5 @@
 ---
 title: Visualizador da biblioteca de imagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968664"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e pesquisar os manifestos de imagem, permitindo que o usuário para manipulá-los da mesma maneira que faria do Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto de imagem. Essa ferramenta é útil para:  
@@ -132,7 +131,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |-|-|  
 |**Atributo**|**Definição**|  
 |URI|[Obrigatório] Um URI que define onde a imagem pode ser carregada de. Ele pode ser um dos seguintes:<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) usando o aplicativo: autoridade<br /><br /> -Referência de recurso um componente absoluto<br /><br /> -Um caminho para um arquivo que contém um recurso nativo|  
-|Informações preliminares|[Opcional] Indica qual tipo de plano de fundo que a fonte se destina a ser usado.<br /><br /> Ele pode ser um dos seguintes:<br /><br /> - *Luz*: A fonte pode ser usada no plano de fundo claro.<br /><br /> - *Escuro*: A origem pode ser usada em um plano de fundo escuro.<br /><br /> - *HighContrast*: A fonte pode ser usada em qualquer tela de fundo no modo de alto contraste.<br /><br /> - *HighContrastLight*: A fonte pode ser usada no plano de fundo claro no modo de alto contraste.<br /><br /> -*HighContrastDark*: A origem pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o **plano de fundo** atributo for omitido, a origem pode ser usada em qualquer tela de fundo.<br /><br /> Se **plano de fundo** é *luz*, *escuro*, *HighContrastLight*, ou *HighContrastDark*, o cores da fonte nunca são invertidas. Se **plano de fundo** é omitido ou definido como *HighContrast*, a inversão de cores da fonte é controlada pela imagem **AllowColorInversion** atributo.|  
+|Informações preliminares|[Opcional] Indica qual tipo de plano de fundo que a fonte se destina a ser usado.<br /><br /> Ele pode ser um dos seguintes:<br /><br /> - *Luz*: A fonte pode ser usada no plano de fundo claro.<br /><br /> - *Escuro*: A fonte pode ser usada em um plano de fundo escuro.<br /><br /> - *HighContrast*: A fonte pode ser usada em qualquer tela de fundo no modo de alto contraste.<br /><br /> - *HighContrastLight*: A fonte pode ser usada no plano de fundo claro no modo de alto contraste.<br /><br /> -*HighContrastDark*: A fonte pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o **plano de fundo** atributo for omitido, a origem pode ser usada em qualquer tela de fundo.<br /><br /> Se **plano de fundo** é *luz*, *escuro*, *HighContrastLight*, ou *HighContrastDark*, o cores da fonte nunca são invertidas. Se **plano de fundo** é omitido ou definido como *HighContrast*, a inversão de cores da fonte é controlada pela imagem **AllowColorInversion** atributo.|  
   
  Um \<origem > elemento pode ter exatamente um dos seguintes subelementos opcionais:  
   

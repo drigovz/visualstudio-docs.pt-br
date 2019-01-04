@@ -1,9 +1,6 @@
 ---
-title: 'Como: estender um nó SharePoint no Gerenciador de servidores | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Estender um nó SharePoint no Gerenciador de servidores | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e39d108d78782413cd120e2a00b97f85784004b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940421"
 ---
-# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Como: estender um nó SharePoint no Gerenciador de servidores
+# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Como: Estender um nó SharePoint no Gerenciador de servidores
   Você pode estender os nós sob o **conexões do SharePoint** nó no **Gerenciador de servidores**. Isso é útil quando você deseja adicionar novos nós filhos, itens de menu de atalho ou propriedades para um nó existente. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>Para estender um nó SharePoint no Gerenciador de servidores  
@@ -52,11 +49,11 @@ ms.locfileid: "49861833"
   
 6.  Em sua implementação do <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> método, use os membros de *nodeType* parâmetro para adicionar recursos para o nó. Esse parâmetro é um <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> objeto que fornece acesso para os eventos definidos na <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interface. Por exemplo, você pode manipular os eventos a seguir:  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: Manipule esse evento para adicionar novos nós filhos para o nó. Para obter mais informações, consulte [como: adicionar um nó do SharePoint personalizado ao Gerenciador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md).  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: Manipule este evento para adicionar novos nós filhos para o nó. Para obter mais informações, confira [Como: Adicionar um nó do SharePoint personalizado ao Gerenciador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md).  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: Manipule esse evento para adicionar um item de menu de atalho personalizado para o nó.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: Manipule este evento para adicionar um item de menu de atalho personalizado para o nó.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: Manipule esse evento para adicionar propriedades personalizadas para o nó. As propriedades aparecem na **propriedades** janela quando o nó é selecionado.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: Manipule este evento para adicionar propriedades personalizadas para o nó. As propriedades aparecem na **propriedades** janela quando o nó é selecionado.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir demonstra como criar dois tipos diferentes de extensões de nó:  
@@ -68,7 +65,7 @@ ms.locfileid: "49861833"
   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
   [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
-  Essa extensão adiciona uma propriedade de cadeia de caracteres editáveis para nós. Você também pode criar propriedades personalizadas que exibem dados somente leitura do servidor do SharePoint. Para obter um exemplo que demonstra como fazer isso, consulte [instruções passo a passo: estenda o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+  Essa extensão adiciona uma propriedade de cadeia de caracteres editáveis para nós. Você também pode criar propriedades personalizadas que exibem dados somente leitura do servidor do SharePoint. Para obter um exemplo que demonstra como fazer isso, consulte [passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ## <a name="compile-the-code"></a>Compilar o código  
  Este exemplo requer referências aos assemblies a seguir:  
@@ -85,8 +82,7 @@ ms.locfileid: "49861833"
  Para implantar o **Gerenciador de servidores** extensão, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) para o assembly e outros arquivos que você deseja distribuir com a extensão. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Consulte também
- [Como: adicionar um nó do SharePoint personalizado ao Gerenciador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
+ [Como: Adicionar um nó do SharePoint personalizado ao Gerenciador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
  [Estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Passo a passo: Estenda o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Associar dados personalizados a extensões de ferramentas do SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  

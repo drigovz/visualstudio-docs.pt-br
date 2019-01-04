@@ -1,9 +1,6 @@
 ---
 title: 'Como: Programaticamente, adicionar e excluir comentários em planilhas'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06097d72693e0b7a00c7af48609523d5e7dfc5a0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: cb243498585677d6df79139bae570a9eec6270d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968612"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Como: Programaticamente, adicionar e excluir comentários em planilhas
   Programaticamente, você pode adicionar e excluir comentários em planilhas do Microsoft Office Excel. Comentários podem ser adicionados somente para células únicas, não aos intervalos de várias células.  
@@ -67,5 +64,3 @@ ms.locfileid: "53804189"
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
  [Como: Exibir comentários em planilhas de forma programática](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [Controle NamedRange](../vsto/namedrange-control.md)  
-  
-  

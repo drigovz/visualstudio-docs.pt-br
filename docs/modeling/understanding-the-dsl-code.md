@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886365"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 Uma solução de linguagem específica do domínio (DSL) gera uma API que você pode usar para ler e atualizar instâncias da DSL no Visual Studio. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.
 
-## <a name="the-example-solution-component-diagrams"></a>A solução do exemplo: Diagramas de Componente
+## <a name="the-example-solution-component-diagrams"></a>A solução de exemplo: Diagramas de componente
  Para criar a solução que é a origem da maioria dos exemplos neste tópico, crie uma DLs a partir de **modelos do componente** modelo de solução. Esse é um dos modelos padrão que são exibidos ao criar uma nova solução DSL.
 
 > [!NOTE]
@@ -66,7 +65,7 @@ Uma solução de linguagem específica do domínio (DSL) gera uma API que você 
 
  `ConnectionBuilders.cs`
 
- Um compilador de conexão é uma classe que cria relações. É o código por trás de uma ferramenta de conexão. Esse arquivo contém um par de classes para cada ferramenta de conexão. Seus nomes são derivados dos nomes da ferramenta de conexão e de relação do domínio: *relacionamento*Builder, e *ConnectorTool*ConnectAction.
+ Um compilador de conexão é uma classe que cria relações. É o código por trás de uma ferramenta de conexão. Esse arquivo contém um par de classes para cada ferramenta de conexão. Seus nomes são derivados dos nomes da ferramenta de conexão e de relação do domínio: *Relacionamento*Builder, e *ConnectorTool*ConnectAction.
 
  (No exemplo de solução de componente, um dos compiladores de conexão é chamado ConnectionBuilder, isso é uma coincidência porque o nome da relação do domínio é Connection.)
 

@@ -1,9 +1,6 @@
 ---
 title: Dentro do Editor de núcleo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828518"
 ---
 # <a name="inside-the-core-editor"></a>Dentro do editor de núcleo
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principal é um conjunto de vários componentes que permitem que você modifique e consultar informações textuais. Se você tiver personalizado o editor principal usando a API herdada, você pode continuar a usar essas personalizações, que serão roteadas por meio de adaptadores do editor. No entanto, ele é recomendável que você adapte suas personalizações para o novo editor de API.  
@@ -47,7 +44,7 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principal é 
  [Eventos de buffer de texto na API herdada](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Fornece uma lista das interfaces que são usados para a notificação de eventos do buffer de texto.  
   
- [Como: se registrar para eventos de buffer de texto com a API herdada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Como: Registre-se para eventos de buffer de texto com a API herdada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Descreve como eventos de buffer de texto de aviso.  
   
  [Use o Gerenciador de texto para monitorar as configurações globais](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -75,8 +72,8 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principal é 
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Explica o conceito de marcadores de texto e como elas são usadas no editor de núcleo e lista as interfaces que são usadas para acessar e gerenciar marcadores de texto.  
   
- [Como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)  
+ [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)  
  Fornece instruções passo a passo sobre como criar um marcador de texto e como adicionar um comando personalizado a um menu de atalho.  
   
- [Como: criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)  
+ [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)  
  Fornece instruções passo a passo sobre como criar um marcador de texto personalizado e como fornecer o tipo de marcador, como um serviço.

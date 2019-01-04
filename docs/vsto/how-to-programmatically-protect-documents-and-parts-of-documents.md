@@ -1,9 +1,6 @@
 ---
-title: 'Como: proteger documentos e partes de documentos de forma programática'
-ms.custom: ''
+title: 'Como: Proteger documentos e partes de documentos de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991104"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Como: proteger documentos e partes de documentos de forma programática
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Como: Proteger documentos e partes de documentos de forma programática
   Você pode adicionar proteção para documentos do Microsoft Office Word para impedir que usuários fazendo nenhuma edição ao documento.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "35669773"
 > [!NOTE]  
 >  O exemplo a seguir não usa a proteção por senha; No entanto, você talvez queira considerar o uso de uma senha ao adicionar a proteção do documento. Para obter mais informações, consulte o exemplo de documento protetor em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).  
   
- Você também pode usar controles de conteúdo para proteger partes de documentos. Para obter mais informações, consulte [como: proteger partes de documentos usando controles de conteúdo](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ Você também pode usar controles de conteúdo para proteger partes de documentos. Para obter mais informações, confira [Como: Proteger partes de documentos usando controles de conteúdo](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Proteger um documento que faz parte de uma personalização no nível de documento  
   
@@ -74,8 +71,6 @@ ms.locfileid: "35669773"
 ## <a name="see-also"></a>Consulte também  
  [Proteção do documento em soluções de nível de documento](../vsto/document-protection-in-document-level-solutions.md)   
  [Proteção por senha em documentos do Office](../vsto/password-protection-on-office-documents.md)   
- [Como: permitir que o código execute documentos code-behind com permissões restritas](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Como: Permitir que o código execute documentos code-behind com permissões restritas](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

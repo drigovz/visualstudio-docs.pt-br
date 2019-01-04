@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Estendendo o Gerenciador de servidores para exibir Web Parts | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957891"
 ---
-# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Passo a passo: Estenda o Gerenciador de servidores para exibir web parts
+# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Passo a passo: Estender o Gerenciador de servidores para exibir web parts
   No Visual Studio, você pode usar o **conexões do SharePoint** nó do **Gerenciador de servidores** para componentes de exibição nos sites do SharePoint. No entanto, **Gerenciador de servidores** não exibe alguns componentes por padrão. Neste passo a passo, você estenderá **Gerenciador de servidores** para que ele exiba a Galeria de Web Parts em cada uma conectada site do SharePoint.  
   
  Este passo a passo demonstra as seguintes tarefas:  
@@ -43,7 +40,7 @@ ms.locfileid: "51296379"
 -   Depurando e testando a extensão.  
   
 > [!NOTE]  
->  Para obter uma versão alternativa deste passo a passo que usa o modelo de objeto do cliente para o SharePoint, em vez de seu modelo de objeto de servidor, consulte [instruções passo a passo: chamar o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  Para obter uma versão alternativa deste passo a passo que usa o modelo de objeto do cliente para o SharePoint, em vez de seu modelo de objeto de servidor, consulte [passo a passo: Chame o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
@@ -374,7 +371,6 @@ ms.locfileid: "51296379"
   
 ## <a name="see-also"></a>Consulte também
  [Estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Passo a passo: Chamar o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [Passo a passo: Chame o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Editor de imagens para ícones](/cpp/windows/image-editor-for-icons)   
  [Criando um ícone ou outra imagem &#40;Editor de imagens para ícones&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

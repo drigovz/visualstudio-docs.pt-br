@@ -1,15 +1,10 @@
 ---
-title: 'Como: adicionar uma propriedade personalizada | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar uma propriedade personalizada | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913279"
 ---
-# <a name="how-to-add-a-custom-property"></a>Como: adicionar uma propriedade personalizada
+# <a name="how-to-add-a-custom-property"></a>Como: Adicionar uma propriedade personalizada
   Você pode adicionar propriedades personalizadas para o modelo usando o **Editor de propriedade**. Você pode acessar essas propriedades no código para recuperar informações como cadeias de conexão e outros dados em tempo de execução.  
   
 ### <a name="to-add-a-custom-property"></a>Para adicionar uma propriedade personalizada  
@@ -53,5 +48,3 @@ ms.locfileid: "36756224"
  [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Criar um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Integre dados corporativos no SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

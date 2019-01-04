@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Adicionar receptores de evento | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7e3471329c6ea798d9d86c594baec2e33815524
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853328"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Passo a passo: Adicionar receptores de evento
   Receptores de evento são métodos executados quando ocorre por um dos seguintes eventos relacionados ao recurso no SharePoint:
@@ -122,5 +119,5 @@ ms.locfileid: "49948753"
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+- [Como: Criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

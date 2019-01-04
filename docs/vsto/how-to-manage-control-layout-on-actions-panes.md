@@ -1,9 +1,6 @@
 ---
 title: 'Como: Gerenciar o layout do controle em painéis de ações'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991169"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Como: Gerenciar o layout do controle em painéis de ações
   Um painel de ações é encaixado à direita de um documento ou planilha, por padrão. No entanto, pode ser encaixado à esquerda, superior ou inferior. Se você estiver usando vários controles de usuário, você pode escrever código para os controles de usuário no painel de ações de pilha corretamente. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).  
@@ -74,5 +71,3 @@ ms.locfileid: "53647043"
  [Como: Adicionar um painel de ações a documentos do Word ou Excel para pastas de trabalho](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Passo a passo: Inserir texto em um documento de um painel de ações](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Passo a passo: Inserir texto em um documento de um painel de ações](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

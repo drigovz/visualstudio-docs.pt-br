@@ -2,7 +2,6 @@
 title: Formatação, XML, editor de texto, a caixa de diálogo opções
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
@@ -10,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938586"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatação, XML, editor de texto, caixa de diálogo Opções
 
-Esta caixa de diálogo permite que você especifique as configurações de formatação para o editor XML. Você pode acessar o **opções** na caixa de diálogo de **ferramentas** menu.
+Esta caixa de diálogo permite que você especifique as configurações de formatação para o editor XML. Você pode acessar o **opções** caixa de diálogo do **ferramentas** menu.
 
 > [!NOTE]
-> Essas configurações estão disponíveis quando você seleciona o **Editor de texto** pasta, o **XML** pasta e, em seguida, o **formatação** opção o **opções** caixa de diálogo.
+> Essas configurações estão disponíveis quando você seleciona os **Editor de texto** pasta, o **XML** pasta e, em seguida, o **formatação** opção o **opções** caixa de diálogo.
 
 ## <a name="attributes"></a>Atributos
  **Preservar formatação manual de atributos**
@@ -48,12 +47,12 @@ Esta caixa de diálogo permite que você especifique as configurações de forma
 
  Reformatar o texto XML colado da área de transferência.
 
- **Após a conclusão da marca de fim**
+ **Na conclusão de marca de fim**
 
  Reformatar o elemento quando a marca de fim é concluída.
 
 ## <a name="mixed-content"></a>Conteúdo misto
- **Preservar o conteúdo misto por padrão**
+ **Conteúdo misturado preserve por padrão**
 
  Determina se o editor reformate conteúdo misturado. Por padrão, o editor tenta reformatar conteúdo misturado, a não ser que quando o conteúdo for encontrado em um escopo de `xml:space="preserve"` .
 
@@ -68,5 +67,5 @@ Esta caixa de diálogo permite que você especifique as configurações de forma
 
 ## <a name="see-also"></a>Consulte também
 
-- [Propriedades de documento XML, janela de propriedades](../xml-tools/xml-document-properties-properties-window.md)
+- [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)
 - [Componentes do Editor de XML](../xml-tools/xml-editor-components.md)

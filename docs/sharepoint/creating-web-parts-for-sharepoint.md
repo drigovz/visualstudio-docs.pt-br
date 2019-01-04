@@ -1,9 +1,6 @@
 ---
 title: Criando Web Parts do SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,15 +23,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879128"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Criar web parts para SharePoint
-  Usando web parts, você pode modificar o conteúdo, aparência e comportamento de páginas de um site do SharePoint usando um navegador. Web parts são controles de servidor que são executados dentro de uma página de web part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Ver [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkID=182097).  
+  Usando web parts, você pode modificar o conteúdo, aparência e comportamento de páginas de um site do SharePoint usando um navegador. Web parts são controles de servidor que são executados dentro de uma página de web part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Você pode criar e depurar o web parts em um site do SharePoint usando modelos do Visual Studio.  
   
@@ -54,10 +49,10 @@ ms.locfileid: "49906033"
 |arquivo. WebPart|Fornece informações que precisa para exibir sua web part em uma galeria de web parts de SharePoint.|  
 |Arquivo de código|Contém métodos que adicionam controles à web part e que geram conteúdo personalizado na web part.|  
   
- Para obter mais informações, consulte [como: criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
+ Para obter mais informações, confira [Como: Criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
 ### <a name="visual-web-part-item"></a>Item do Visual web part
- Uma web part visual é uma web part que você cria usando o designer do Visual Web Developer no Visual Studio. Uma web part visual funciona como qualquer outra web part. Para adicionar controles, como botões e caixas de texto, a uma web part, você pode adicionar código para um arquivo XML. No entanto, você adicionar controles a uma web part visual arrastando ou copiando-os para a web part do Visual Studio **caixa de ferramentas**. O designer, em seguida, gera o código necessário no arquivo XML. Ver [como: criar SharePoint web parts usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+ Uma web part visual é uma web part que você cria usando o designer do Visual Web Developer no Visual Studio. Uma web part visual funciona como qualquer outra web part. Para adicionar controles, como botões e caixas de texto, a uma web part, você pode adicionar código para um arquivo XML. No entanto, você adicionar controles a uma web part visual arrastando ou copiando-os para a web part do Visual Studio **caixa de ferramentas**. O designer, em seguida, gera o código necessário no arquivo XML. Confira [Como Criar um web part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ## <a name="sharepoint-controls"></a>Controles do SharePoint
  Visual Studio fornece alguns controles para a criação de páginas do SharePoint, como páginas de aplicativo. Esses controles aparecem na **caixa de ferramentas** sob **controles do SharePoint**. A funcionalidade desses controles deriva de [WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) namespace, que contém os controles de servidor ASP.NET que são usados nas páginas de site e a lista do SharePoint.  
@@ -115,10 +110,9 @@ ms.locfileid: "49906033"
   
 |Título|Descrição|  
 |-----------|-----------------|  
-|[Como: criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Mostra como criar web parts páginas do SharePoint.|  
-|[Como: criar uma web part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Mostra como criar web parts para SharePoint usando uma superfície de design visual.|  
-|[Como: criar um controle de usuário para uma página ou web part de aplicativo do SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Mostra como criar controles reutilizáveis personalizados que podem ser consumidos por páginas de aplicativos e web parts executadas no SharePoint.|  
+|[Como: Criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Mostra como criar web parts páginas do SharePoint.|  
+|[Como: Criar uma web part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Mostra como criar web parts para SharePoint usando uma superfície de design visual.|  
+|[Como: Criar um controle de usuário para uma página ou web part de aplicativo do SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Mostra como criar controles reutilizáveis personalizados que podem ser consumidos por páginas de aplicativos e web parts executadas no SharePoint.|  
 |[Passo a passo: Criar uma web part do SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Descreve como criar uma web part para SharePoint.|  
 |[Passo a passo: Criar uma web part para SharePoint usando um designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Descreve como criar uma web part para o SharePoint arrastando controles a uma superfície de design visual.|  
 |[Passo a passo: Criar a web part do Silverlight que exiba OData para o SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Descreve como criar uma web part do SharePoint que hospeda um aplicativo do Silverlight e exibe dados de listas do SharePoint.|  
-  
