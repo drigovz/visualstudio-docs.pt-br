@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967513"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869249"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>O arquivo DslDefinition.dsl
 
@@ -97,7 +96,7 @@ Geralmente, o namespace do item referenciado (neste exemplo, a classe de domíni
 
 O sistema de moniker requer que irmãos na árvore XML tenham nomes distintos. Por esse motivo, ocorrerão erros de validação se você tentar salvar uma definição de linguagem específica do domínio que tenha, por exemplo, duas classes com o mesmo nome. Você deve sempre corrigir tais erros de nome duplicado antes de salvar o arquivo DslDefinition.dsl para que possa recarregá-lo corretamente mais tarde.
 
-Cada tipo tem seu próprio tipo de moniker: DomainClassMoniker, DomainRelationshipMoniker etc.
+Cada tipo tem seu próprio tipo de identificador de origem: DomainClassMoniker, DomainRelationshipMoniker e assim por diante.
 
 ## <a name="types"></a>Tipos
 
@@ -228,7 +227,7 @@ Por exemplo, a relação de Conexão vincula membros da classe OutPort a membros
 
 Todo relacionamento contém funções de origem e de destino que possuem os seguintes atributos:
 
--   O atributo `RolePlayer` faz referências à classe de domínio das instâncias vinculadas: OutPort para origem, InPort para destino.
+-   O `RolePlayer` atributo faz referência à classe de domínio das instâncias vinculadas: OutPort para origem, InPort para destino.
 
 -   O atributo `Multiplicity` possui quatro valores possíveis (ZeroMany, ZeroOne, One e OneMany). Este atributo se refere ao número de links desta relação que pode ser associado a um usuário.
 

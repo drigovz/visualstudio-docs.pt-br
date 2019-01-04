@@ -1,9 +1,6 @@
 ---
 title: Elemento FeatureProperty | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccc9e0d628d5c17283368de135c8e83dbd40bec1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3dc58683d2cff7e6c25493924b63666c390cdffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991182"
 ---
 # <a name="featureproperty-element"></a>Elemento FeatureProperty
   Representa uma propriedade personalizada que está incluída com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar a propriedade em seu código.  
@@ -40,7 +37,7 @@ ms.locfileid: "36325976"
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |**Chave**|Exigido **xs: string** atributo.<br /><br /> A chave que é usada para armazenar e recuperar o valor da propriedade. Cada propriedade deve ter uma chave que é exclusiva dentro do recurso.|  
-|**Value**|Exigido **xs: string** atributo.<br /><br /> O valor da propriedade.|  
+|**Valor**|Exigido **xs: string** atributo.<br /><br /> O valor da propriedade.|  
   
 ### <a name="child-elements"></a>Elementos filho
  nenhuma.  
@@ -66,5 +63,3 @@ ms.locfileid: "36325976"
 ## <a name="see-also"></a>Consulte também
  [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
-  
