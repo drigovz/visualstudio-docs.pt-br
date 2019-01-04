@@ -1,9 +1,6 @@
 ---
-title: 'Como: exibir comentários em planilhas de forma programática'
-ms.custom: ''
+title: 'Como: Exibir comentários em planilhas de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f4875e75562d9fa1f6d9cd4982ae2148e35a1c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c246eae0465c64598aae1191c4053f8ba266b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831557"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>Como: exibir comentários em planilhas de forma programática
+# <a name="how-to-programmatically-display-worksheet-comments"></a>Como: Exibir comentários em planilhas de forma programática
   Programaticamente, você pode mostrar e ocultar comentários em planilhas do Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,7 +41,5 @@ ms.locfileid: "35257680"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
- [Como: adicionar e excluir comentários em planilhas de programaticamente](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
+ [Como: Programaticamente, adicionar e excluir comentários em planilhas](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

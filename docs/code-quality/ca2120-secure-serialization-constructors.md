@@ -1,8 +1,7 @@
 ---
-title: 'CA2120: proteger construtores de serialização'
+title: 'CA2120: Construtores de serialização seguros'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2120
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1dbb6f74b138b0ec555af06ece4b6cb11ad8b678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899672"
 ---
-# <a name="ca2120-secure-serialization-constructors"></a>CA2120: proteger construtores de serialização
+# <a name="ca2120-secure-serialization-constructors"></a>CA2120: Construtores de serialização seguros
 
 |||
 |-|-|
@@ -52,7 +51,7 @@ ms.locfileid: "45548498"
 ## <a name="related-rules"></a>Regras relacionadas
  [CA2229: implementar construtores de serialização](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237: marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Consulte também
 

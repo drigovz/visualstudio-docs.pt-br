@@ -1,8 +1,7 @@
 ---
-title: 'CA1309: usar StringComparison ordinal'
+title: 'CA1309: Usar StringComparison ordinal'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseOrdinalStringComparison
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91953fd855576b6f40d02ebb3653fff07bfdef9c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d7e36b199a3447ff3d38266adc723caf229973c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838657"
 ---
-# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: usar StringComparison ordinal
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Usar StringComparison ordinal
 
 |||
 |-|-|
@@ -50,4 +49,4 @@ Uma operação de comparação de cadeia de caracteres linguística não define 
 ## <a name="see-also"></a>Consulte também
 
 - [Avisos de globalização](../code-quality/globalization-warnings.md)
-- [CA1307: especificar StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+- [CA1307: Especificar StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

@@ -1,9 +1,6 @@
 ---
 title: 'Nova geração de projeto: Nos bastidores, parte 1 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827644"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Geração de novo projeto: nos bastidores, Parte um
+# <a name="new-project-generation-under-the-hood-part-one"></a>Nova geração de projeto: Nos bastidores, parte 1
 Jamais pensou em como criar seu próprio tipo de projeto? Se perguntar o que realmente acontece quando você cria um novo projeto? Vamos dar uma olhada nos bastidores e ver o que realmente está acontecendo.  
   
  Existem várias tarefas que coordena a Visual Studio para você:  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   A ordem de classificação pode ser alterada.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Localizando o nó raiz de um tipo de projeto  
- Quando o Visual Studio atravessa as pastas ProjectTemplates, ele abre todos os arquivos. zip e extrai todos os arquivos. vstemplate. Um arquivo. vstemplate usa XML para descrever um modelo de aplicativo. Para obter mais informações, consulte [nova geração de projeto: Under the Hood, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Quando o Visual Studio atravessa as pastas ProjectTemplates, ele abre todos os arquivos. zip e extrai todos os arquivos. vstemplate. Um arquivo. vstemplate usa XML para descrever um modelo de aplicativo. Para obter mais informações, consulte [nova geração de projeto: Nos bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  O \<ProjectType > marca determina o tipo de projeto para o aplicativo. Por exemplo, o arquivo \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip contém um arquivo de EmptyProject.vstemplate que possui essa marca:  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** aparece como um nó filho do Visual c# apenas sob o nó do Windows.  
   
 ## <a name="see-also"></a>Consulte também  
- [Nova geração de projeto: Nos bastidores, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Nova geração de projeto: Nos bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

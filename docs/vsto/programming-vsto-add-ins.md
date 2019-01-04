@@ -1,9 +1,6 @@
 ---
 title: Suplementos do VSTO do programa
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
@@ -35,12 +32,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 522a3cbac565e217f0b6525fb6288f5b79908a78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830645"
 ---
 # <a name="program-vsto-add-ins"></a>Suplementos do VSTO do programa
   Quando você estende um aplicativo do Microsoft Office, criando um suplemento do VSTO, você escreve código diretamente no `ThisAddIn` classe em seu projeto. Você pode usar essa classe para executar tarefas como acessar o modelo de objeto do aplicativo host do Microsoft Office, personalizando a interface do usuário (IU) do aplicativo e expor objetos no seu suplemento do VSTO para outras soluções do Office.  
@@ -122,10 +119,10 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Tarefa|Membro a ser usado|  
 |----------|-------------------|  
 |Execute o código para inicializar o suplemento do VSTO, quando o suplemento do VSTO é carregado.|Adicione código para o `ThisAddIn_Startup` método. Isso é o manipulador de eventos padrão para o <xref:Microsoft.Office.Tools.AddInBase.Startup> eventos. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).|  
-|Execute o código para limpar os recursos usados pelo suplemento do VSTO antes que o suplemento do VSTO é descarregado.|Adicione código para o `ThisAddIn_Shutdown` método. Isso é o manipulador de eventos padrão para o <xref:Microsoft.Office.Tools.AddInBase.Shutdown> eventos. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md). **Observação:** no Outlook, por padrão o `ThisAddIn_Startup` manipulador de eventos não é sempre chamado quando o suplemento do VSTO é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).|  
+|Execute o código para limpar os recursos usados pelo suplemento do VSTO antes que o suplemento do VSTO é descarregado.|Adicione código para o `ThisAddIn_Shutdown` método. Isso é o manipulador de eventos padrão para o <xref:Microsoft.Office.Tools.AddInBase.Shutdown> eventos. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md). **Observação:**  No Outlook, por padrão o `ThisAddIn_Startup` manipulador de eventos não é sempre chamado quando o suplemento do VSTO é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).|  
 |Exiba um painel de tarefas personalizado.|Use o `CustomTaskPanes` campo. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).|  
 |Expor objetos no seu suplemento do VSTO para outras soluções do Microsoft Office.|Substituir o método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>. Para obter mais informações, consulte [chamar o código no VSTO Add-ins de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
-|Personalize um recurso no Microsoft Office system com a implementação de uma interface de extensibilidade.|Substituir o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método para retornar uma instância de uma classe que implementa a interface. Para obter mais informações, consulte [recursos de interface do usuário personalizar usando interfaces de extensibilidade](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Observação:** para personalizar a interface do usuário da faixa de opções, você também pode substituir o <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> método.|  
+|Personalize um recurso no Microsoft Office system com a implementação de uma interface de extensibilidade.|Substituir o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método para retornar uma instância de uma classe que implementa a interface. Para obter mais informações, consulte [recursos de interface do usuário personalizar usando interfaces de extensibilidade](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Observação:**  Para personalizar a interface do usuário da faixa de opções, você também pode substituir o <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> método.|  
   
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>Entender o design da classe ThisAddIn  
  Em projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], <xref:Microsoft.Office.Tools.AddIn> é uma interface. O `ThisAddIn` classe deriva de <xref:Microsoft.Office.Tools.AddInBase> classe. Essa classe base redireciona todas as chamadas para seus membros para uma implementação interna do <xref:Microsoft.Office.Tools.AddIn> da interface no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
@@ -152,8 +149,6 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  [Chamar o código no VSTO Add-ins de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Passo a passo: Chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Personalizar os recursos de interface do usuário usando interfaces de extensibilidade](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)   
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

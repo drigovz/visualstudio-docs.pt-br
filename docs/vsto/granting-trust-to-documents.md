@@ -1,9 +1,6 @@
 ---
 title: Conceder confiança a documentos
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1fb856897f4db39fb41875f3230603237f0cc0b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a60470d43842384103462fe69c4beba72bdc452d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912329"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confiança a documentos
   Um projeto de nível de documento tem os mesmos requisitos de segurança que projetos de nível de aplicativo: os manifestos com um certificado de assinatura ou clicando no prompt de confiança. Além disso, o documento ou pasta de trabalho deve estar localizada em um diretório que é designado como um local confiável.  
@@ -50,5 +47,3 @@ ms.locfileid: "53648827"
  [Conceder confiança a soluções do Office](../vsto/granting-trust-to-office-solutions.md)   
  [Solucionar problemas de segurança de solução do Office](../vsto/troubleshooting-office-solution-security.md)   
  [Proteger as soluções do Office](../vsto/securing-office-solutions.md)  
-  
-  

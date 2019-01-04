@@ -2,7 +2,6 @@
 title: Instalar analisadores do FxCop
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7690d1c67797c3a13dc22364d93d8af686e4f90c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be213d25ca406a8532f00ad88b006c36d369e1a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893768"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analisadores FxCop no Visual Studio
 
@@ -90,5 +89,5 @@ Se você deseja verificar se a extensão é instalada, selecione **ferramentas**
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral dos analisadores de Roslyn no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Usar os analisadores de Roslyn no Visual Studio](../code-quality/use-roslyn-analyzers.md)
+- [Usar Analisadores do Roslyn no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 - [Migrar do FxCop para analisadores de Roslyn](../code-quality/fxcop-analyzers.yml)

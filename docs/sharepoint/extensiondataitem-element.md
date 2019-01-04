@@ -1,9 +1,6 @@
 ---
 title: Elemento ExtensionDataItem | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d95459be48b6d5e87b1a312e68e6ebea2645cb29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916933"
 ---
 # <a name="extensiondataitem-element"></a>Elemento ExtensionDataItem
   Um item de dados personalizado que está associado com o item de projeto do SharePoint, no formato de chave/valor. A chave e o valor devem ser cadeias de caracteres.  
@@ -40,7 +37,7 @@ ms.locfileid: "36325713"
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |**Chave**|Exigido **xs: string** atributo.<br /><br /> A chave que é usada para armazenar e recuperar o item de dados.|  
-|**Value**|Exigido **xs: string** atributo.<br /><br /> O valor do item de dados.|  
+|**Valor**|Exigido **xs: string** atributo.<br /><br /> O valor do item de dados.|  
   
 ### <a name="child-elements"></a>Elementos filho
  nenhuma.  
@@ -65,5 +62,3 @@ ms.locfileid: "36325713"
   
 ## <a name="see-also"></a>Consulte também
  [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

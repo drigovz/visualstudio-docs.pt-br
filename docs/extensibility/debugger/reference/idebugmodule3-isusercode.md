@@ -1,9 +1,6 @@
 ---
 title: IDebugModule3::IsUserCode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugModule3::IsUserCode
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67885ea85c1ac171fa3a22b025a6e74c969e6c54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8756e926f602c1be62670aa36f9367e064910a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990052"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 Recupera informações sobre se o módulo representa o código do usuário ou não.  
@@ -28,8 +25,8 @@ Recupera informações sobre se o módulo representa o código do usuário ou n�
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT IsUserCode(  
-   BOOL* pfUser  
+HRESULT IsUserCode(  
+   BOOL* pfUser  
 );  
 ```  
   

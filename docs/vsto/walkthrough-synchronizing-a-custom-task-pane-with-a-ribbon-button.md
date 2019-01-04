@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Sincronizar um painel de tarefas personalizado com um botão da faixa de opções'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b6c36e93d9dd8dd4ef81d0d124ae33e842a16d7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: eeb0d06b765aee7800ed81b1216efa42b4bd93b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943558"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Passo a passo: Sincronizar um painel de tarefas personalizado com um botão da faixa de opções
   Este passo a passo demonstra como criar um painel de tarefas personalizado que os usuários podem ocultar ou exibir clicando em um botão de alternância na faixa de opções. Você sempre deve criar um elemento de interface do usuário do usuário, como um botão, o que os usuários podem clicar para exibir ou ocultar o painel de tarefas, porque os aplicativos do Microsoft Office não fornecem uma maneira padrão para os usuários mostrar ou ocultar painéis de tarefas personalizados.  
@@ -63,7 +60,7 @@ ms.locfileid: "35670092"
   
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1.  Criar um projeto de suplemento do Excel com o nome **SynchronizeTaskPaneAndRibbon**, usando o modelo de projeto do suplemento do Excel. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Criar um projeto de suplemento do Excel com o nome **SynchronizeTaskPaneAndRibbon**, usando o modelo de projeto do suplemento do Excel. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o **ThisAddIn.cs** ou **ThisAddIn. vb** arquivo de código e adiciona os **SynchronizeTaskPaneAndRibbon** projeto ao **Solution Explorer**.  
   
@@ -170,15 +167,13 @@ ms.locfileid: "35670092"
   
 -   Crie um painel de tarefas personalizado em um suplemento do VSTO para um aplicativo diferente. Para obter mais informações sobre os aplicativos que dão suporte a painéis de tarefas personalizados, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).  
   
--   Automatize um aplicativo de um painel de tarefas personalizado. Para obter mais informações, consulte [instruções passo a passo: automatizar um aplicativo de um painel de tarefas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automatize um aplicativo de um painel de tarefas personalizado. Para obter mais informações, confira [Passo a passo: Automatizar um aplicativo de um painel de tarefas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Crie um painel de tarefas personalizado para cada mensagem de email que é aberto no Outlook. Para obter mais informações, consulte [instruções passo a passo: exibir painéis de tarefas personalizados com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Crie um painel de tarefas personalizado para cada mensagem de email que é aberto no Outlook. Para obter mais informações, confira [Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)   
- [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Passo a passo: Automatizar um aplicativo de um painel de tarefas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
  [Visão geral da faixa de opções](../vsto/ribbon-overview.md)  
-  
-  

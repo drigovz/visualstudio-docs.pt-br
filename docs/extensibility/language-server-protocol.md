@@ -1,9 +1,6 @@
 ---
 title: Visão geral do protocolo de servidor de linguagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828219"
 ---
 # <a name="language-server-protocol"></a>Language Server Protocol
 
@@ -58,7 +55,7 @@ Abaixo está um exemplo de como uma ferramenta e um servidor de linguagem se com
 
 * **O usuário executa "Ir para definição" em um símbolo no editor de**: A ferramenta envia uma solicitação de ' textDocument/definição' com dois parâmetros: (1) o URI do documento e (2) a posição do texto a partir de onde a ir para a solicitação da definição foi iniciada no servidor. O servidor responde com o URI do documento e a posição da definição do símbolo dentro do documento.
 
-* **O usuário fecha o documento (arquivo)**: é enviada uma notificação de ' textDocument/didClose' da ferramenta, informando o servidor de idioma que o documento está agora, não há mais na memória e que o conteúdo atual é agora atualizados no sistema de arquivos.
+* **O usuário fecha o documento (arquivo)**: Uma notificação de ' textDocument/didClose' é enviada na ferramenta, informando o servidor de idioma que o documento está agora, não há mais na memória e que o conteúdo atual é agora atualizados no sistema de arquivos.
 
 Este exemplo ilustra como o protocolo se comunica com o servidor de linguagem no nível de recursos do editor, como "Go to Definition", "Localizar todas as referências". Os tipos de dados usados pelo protocolo são editor ou IDE 'tipos de dados' como o documento de texto aberto no momento e a posição do cursor. Os tipos de dados não estão no nível de um modelo de domínio de programação linguagem que normalmente forneceria árvores de sintaxe abstrata e os símbolos do compilador (por exemplo, os tipos resolvidos, namespaces,...). Isso simplifica o protocolo significativamente.
 

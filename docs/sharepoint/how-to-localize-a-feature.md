@@ -1,13 +1,8 @@
 ---
-title: 'Como: localizar um recurso | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Localizar um recurso | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c143016aaec81c65c118923ff9513bb4607353dc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 165eee357c001720af132236a8577f259efa4f24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887666"
 ---
-# <a name="how-to-localize-a-feature"></a>Como: localizar um recurso
+# <a name="how-to-localize-a-feature"></a>Como: Localizar um recurso
   Por padrão, o recurso títulos e descrições de usam valores de cadeia de caracteres embutida. Para localizar o título do recurso e a descrição, substitua as cadeias de caracteres com expressões que fazem referência a recursos localizados.  
   
 ## <a name="localize-a-feature"></a>Localizar um recurso  
@@ -64,7 +59,6 @@ ms.locfileid: "37118371"
   
 ## <a name="see-also"></a>Consulte também
  [Localizar soluções do SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Como: adicionar um arquivo de recurso](../sharepoint/how-to-add-a-resource-file.md)   
- [Como: localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Como: localizar o código](../sharepoint/how-to-localize-code.md)  
-  
+ [Como: Adicionar um arquivo de recurso](../sharepoint/how-to-add-a-resource-file.md)   
+ [Como: Localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Como: Localizar código](../sharepoint/how-to-localize-code.md)  

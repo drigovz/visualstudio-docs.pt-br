@@ -1,8 +1,6 @@
 ---
 title: Adicionar controles a documentos do Office em tempo de execução
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842782"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Adicionar controles a documentos do Office em tempo de execução
   Você pode adicionar controles a um documento do Microsoft Office Word e do Microsoft Office Excel em tempo de execução. Você também pode removê-los em tempo de execução. Controles que você adicionar ou remover em tempo de execução são chamados *controles dinâmicos*.  
@@ -45,7 +43,7 @@ ms.locfileid: "52305631"
 
 - [Adicionar controles dos Windows Forms a documentos](#WindowsForms).  
 
-  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como eu faço para: adicionar controles a um documento se surgir em tempo de execução?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Adicionar controles a uma superfície de documento em tempo de execução? ](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> Gerenciar controles em tempo de execução por meio de coleções de controle  
  Para adicionar, obter ou remover os controles em tempo de execução, use métodos auxiliares <xref:Microsoft.Office.Tools.Excel.ControlCollection> e <xref:Microsoft.Office.Tools.Word.ControlCollection> objetos.  
@@ -82,15 +80,15 @@ ms.locfileid: "52305631"
 ##  <a name="HostControls"></a> Adicionar controles de host a documentos  
  Quando você adicionar controles de host a documentos programaticamente, você deve fornecer um nome que identifica exclusivamente o controle, e você deve especificar onde adicionar o controle no documento. Para obter instruções específicas, consulte os tópicos a seguir:  
 
-- [Como: adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Como: Adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
 
-- [Como: adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Como: Adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
 
-- [Como: adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)  
 
-- [Como: adicionar conteúdo controles a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Como: Adicionar conteúdo controles a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
 
-- [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 
   Para obter mais informações sobre controles de host, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).  
 
@@ -144,10 +142,10 @@ ms.locfileid: "52305631"
 ## <a name="see-also"></a>Consulte também  
  [Controles em documentos do Office](../vsto/controls-on-office-documents.md)   
  [Persistir controles dinâmicos em documentos do Office](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [Como: adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Como: adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Como: adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)   
- [Como: adicionar controles content a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Como: Adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Como: Adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)   
+ [Como: Adicionar controles content a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Controles de formulários do Windows na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Como: adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Como: Adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   

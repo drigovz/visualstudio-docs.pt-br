@@ -1,9 +1,6 @@
 ---
 title: Menus e comandos para o Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933791"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para o Visual Studio
 ## <a name="command-usage"></a>Uso do comando  
@@ -52,7 +49,7 @@ ms.locfileid: "49937948"
  É útil colocar os comandos em estreita proximidade com a área de foco do usuário. Uma maneira de fazer isso é criar uma barra de ferramentas inserida na parte superior da sua janela de ferramentas ou documento editor. Os comandos colocados na barra de ferramentas devem ser específicos para a região de conteúdo dentro da janela. Não duplica comandos compartilhados nessas barras de ferramentas. Por exemplo, nunca coloque um ícone de "Salvar" dentro de uma barra de ferramentas inserida.  
   
 ### <a name="content-and-command-visibility"></a>Visibilidade de comando e conteúda  
- Comandos existem os seguintes escopos: **ambiente**, **hierarquia**, e **documento**. Sabe a cada escopo para ter confiança no posicionamento de comando.  
+ Comandos existem os seguintes escopos: **Ambiente**, **hierarquia**, e **documento**. Sabe a cada escopo para ter confiança no posicionamento de comando.  
   
  Os comandos na **ambiente** escopo estabelecer contexto primário e são compartilhados entre vários contextos. Alteram a visibilidade ou a disposição dos documentos e janelas de ferramentas. Entre os comandos no ambiente do escopo estão **novo projeto**, **conectar ao servidor**, **anexar processo**, **Recortar**,  **Cópia**, **colar**, **localizar**, **opções**, **personalizar**, **nova janela de**, e **exibir a Ajuda**.  
   
@@ -284,7 +281,7 @@ ms.locfileid: "49937948"
   
 - **Siga as diretrizes do Windows para determinar quais modificador teclas empregar.** Use combinações de teclas Ctrl para comandos que têm efeitos em larga escala, como comandos que se aplicam a um documento inteiro. Use combinações de tecla Shift para comandos que estenderem ou complementam as ações de tecla de atalho padrão. Não use combinações de teclas Ctrl + Alt.  
   
-- **Remova atalhos estranhos.** Se você tiver um recurso herdado, considere remover atalhos que são usados com pouca frequência extrema, a (menos de 10 vezes dos dados do CEIP) ou pouca frequência moderada (menos de 100 vezes do que os dados do CEIP), se uma chave de acesso fornece acesso rápido para o mesmo comando. Por exemplo: C Alt, H, abrirá/conteúdo da Ajuda.  
+- **Remova atalhos estranhos.** Se você tiver um recurso herdado, considere remover atalhos que são usados com pouca frequência extrema, a (menos de 10 vezes dos dados do CEIP) ou pouca frequência moderada (menos de 100 vezes do que os dados do CEIP), se uma chave de acesso fornece acesso rápido para o mesmo comando. Por exemplo: ALT, H, C será aberto/conteúdo da Ajuda.  
   
   Não há uma maneira simples de verificar a disponibilidade de atalho. Se você quiser adicionar um atalho, siga estas etapas:  
   

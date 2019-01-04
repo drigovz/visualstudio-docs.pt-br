@@ -1,9 +1,6 @@
 ---
 title: Estendendo a propriedades, lista de tarefas, saída e as opções Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 621ba178f255fc3c86e8234d4e01bcb74b106b62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922319"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estender as janelas de propriedades, lista de tarefas, saída e opções
 Você pode acessar qualquer janela de ferramentas no Visual Studio. Este passo a passo mostra como integrar informações sobre sua janela de ferramentas em uma nova **opções** página e uma nova configuração na **propriedades** página e também como gravar na **listadetarefas** e **saída** windows.  

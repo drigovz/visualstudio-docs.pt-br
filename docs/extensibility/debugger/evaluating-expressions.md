@@ -1,9 +1,6 @@
 ---
 title: Avaliação de expressões | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK], evaluating
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfd6248b06b69fa89d1888467a70718cf98b2a9a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7df128995c114c724c7a25ebe4949be935a3c496
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929731"
 ---
 # <a name="evaluate-expressions"></a>Avaliar expressões
 As expressões são criadas de cadeias de caracteres passadas do **automóveis**, **inspeção**, **QuickWatch**, ou **imediato** windows. Quando uma expressão é avaliada, ele gera uma cadeia de caracteres imprimível que contém o nome e tipo de variável ou argumento e seu valor. Essa cadeia de caracteres é exibida na janela do IDE correspondente.  

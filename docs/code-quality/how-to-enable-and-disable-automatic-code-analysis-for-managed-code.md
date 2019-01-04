@@ -2,21 +2,20 @@
 title: Habilitar ou desabilitar análise de código
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71a1c44ee775060a25946f79d7c23194e19f0ae9
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 1620999385eec0862b4ba2aceadba10bb21d239d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905592"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Como: habilitar e desabilitar análise de código automática para código gerenciado
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Como: Habilitar e desabilitar análise de código automática para código gerenciado
 
 Você pode configurar a análise de código (estático) a ser executado após cada compilação de um projeto de código gerenciado. Você pode definir propriedades de análise para cada configuração de compilação de código diferente, por exemplo, debug e release.
 

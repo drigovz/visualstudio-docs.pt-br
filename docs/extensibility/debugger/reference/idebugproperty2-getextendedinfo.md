@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::GetExtendedInfo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::GetExtendedInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ed932909845dc992c62ba884d6d48e2b788a61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0366d547dea7f181c42fd5cccbacb568418c203
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935405"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtém informações estendidas de propriedade.  
@@ -28,14 +25,14 @@ Obtém informações estendidas de propriedade.
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetExtendedInfo (   
+HRESULT GetExtendedInfo (   
    REFGUID* guidExtendedInfo,  
    VARIANT* pExtendedInfo  
 );  
 ```  
   
 ```csharp  
-int GetExtendedInfo (   
+int GetExtendedInfo (   
    ref Guid guidExtendedInfo,  
    out object pExtendedInfo  
 );  
@@ -46,7 +43,7 @@ int GetExtendedInfo (
  [in] GUID que determina o tipo de informações estendidas a serem recuperados. Consulte os comentários para obter detalhes.  
   
  `pExtendedInfo`  
- [out] Retorna um `VARIANT` (C++) ou objeto (c#) que pode ser usado para recuperar as informações de propriedade estendida. Por exemplo, esse parâmetro pode retornar um `IUnknown` interface que pode ser consultado para uma [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interface. Consulte os comentários para obter detalhes.  
+ [out] Retorna um `VARIANT` (C++) ou o objeto (C#) que pode ser usado para recuperar as informações de propriedade estendida. Por exemplo, esse parâmetro pode retornar um `IUnknown` interface que pode ser consultado para uma [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interface. Consulte os comentários para obter detalhes.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Retorna `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` se não houver nenhuma informação estendida para recuperar.  

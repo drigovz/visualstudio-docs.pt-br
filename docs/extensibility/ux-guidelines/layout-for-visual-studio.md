@@ -1,9 +1,6 @@
 ---
 title: Layout para o Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898739"
 ---
 # <a name="layout-for-visual-studio"></a>Layout para o Visual Studio
 A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de diálogo do utilitário](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que são o unthemed esse padrão de acompanhamento de caixas de diálogo [princípios de layout de caixa de diálogo de área de trabalho do Windows](/windows/desktop/uxguide/win-dialog-box). Como o Visual Studio moverá atualizar sua interface do usuário, algumas das caixas de diálogo mais proeminentes têm um novo design que estabelece a eles como definição de produto experiências. Eles [layout da caixa de diálogo com tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) têm uma aparência com tema.  
@@ -38,11 +35,11 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
   
  ![Espaçamento de caixa de diálogo para rótulos acima dos controles](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")  
   
- **Figura 08.01-r: Diretrizes para caixas de diálogo de utilitário com rótulos acima dos controles de espaçamento**  
+ **Figura 08.01-r: Diretrizes de espaçamento para caixas de diálogo de utilitário com rótulos acima dos controles**  
   
  ![Espaçamento de caixa de diálogo para rótulos para a esquerda dos controles](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")  
   
- **Figura 08.01-b: Diretrizes para as caixas de diálogo do utilitário com rótulos à esquerda dos controles de espaçamento**  
+ **Figura 08.01-b: Diretrizes de espaçamento para caixas de diálogo de utilitário com rótulos à esquerda dos controles**  
   
 ### <a name="layout-details"></a>Detalhes de layout  
   
@@ -68,7 +65,7 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
   
   ![Alinhamento de botão básica](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
-  **Figura 08.01-c: Alinhamento de botão básica**  
+  **Figura 08.01-c: Alinhamento de botão básico**  
   
 #### <a name="labels"></a>Rótulos  
   
@@ -85,14 +82,14 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
   
  ![Recomendado a distância entre os controles](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")  
   
- **Figura 08.01-d: Recomendações para a distância entre os controles**  
+ **Figura 08.01-unidade d: Recomendações para a distância entre os controles**  
   
 #### <a name="control-indentation"></a>Recuo do controle  
  Quando os controles são aninhados, alinhe controles internos horizontalmente com a borda esquerda do controle acima, geralmente o rótulo.  
   
  ![Alinhamento do controle de aninhado](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")  
   
- **Figura 08.01-e: Alinhamento do controle de aninhado**  
+ **Figura 08.01-e: Alinhamento do controle aninhado**  
   
 #### <a name="control-width"></a>Largura do controle  
  A largura de uma caixa de texto ou outros controles semelhantes deve ter menos de entrada média para o campo. A palavra em inglês média é cinco caracteres. Por exemplo, uma caixa de texto que requer um nome de caminho longo deve ser, desde que permite que o layout horizontal, enquanto uma lista suspensa de nomes de plataforma somente devem ser um comprimento que permite a entrada mais longa.  
@@ -114,11 +111,11 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
   
   ![Botões horizontal Okey e Cancel](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
-  **Figura 08.01-f: Botões de Interior Vertical com Okey horizontal/Cancelar**  
+  **Figura 08.01-f: Botões interiores vertical com Okey horizontal/Cancelar**  
   
   ![Botões Okey vertical e Cancel](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
-  **Figura 08.01-g: Botões de interiores Horizontal com Okey vertical/Cancelar**  
+  **Figura 08.01-g: Botões interiores horizontal com Okey vertical/Cancelar**  
   
 #### <a name="browse-button"></a>[Procurar...] botão  
  **[Procurar...]**  botões que seguem uma caixa de texto devem esclarecer "Procurar..." por completo, incluindo o botão de reticências. Se o espaço é forte ou haja diversas **[procurar...]**  botões na tela, o botão podem ser reduzido para apenas o botão de reticências.  
@@ -143,19 +140,19 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
 ### <a name="themed-dialog-layout-examples"></a>Exemplos de layout de caixa de diálogo com temas  
  ![Layout da caixa de diálogo com tema](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")  
   
- **Figura 08.01-h: Caixa de diálogo com tema**  
+ **Figura 08.01-h: Caixa de diálogo com temas**  
   
  ![Dimensões da caixa de diálogo com tema](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 i_ThemedDialogDimensions")  
   
- **Figura 08.01-i: Caixa de diálogo de tema – dimensões**  
+ **Figura 08.01-i: Caixa de diálogo com tema – dimensões**  
   
  ![Fontes de caixa de diálogo com tema](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 j_ThemedDialogFonts")  
   
- **Figura 08.01-j: Caixa de diálogo de tema – fontes**  
+ **Figura 08.01-j: Caixa de diálogo com tema – fontes**  
   
  ![Cores de tema de caixa de diálogo](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")  
   
- **Figura 08.01-k: Caixa de diálogo de tema-cores**  
+ **Figura 08.01-k: Caixa de diálogo com tema - cores**  
   
 ## <a name="see-also"></a>Consulte também  
  [Padrões de aplicativo para o Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

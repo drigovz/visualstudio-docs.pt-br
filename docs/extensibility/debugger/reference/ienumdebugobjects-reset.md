@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugObjects::Reset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugObjects::Reset
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28cf4f5936ee90a225d05f5b3fe959c21fca3617
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5493a0488051cff84518c1933faf60e92aa7550a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850158"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 Este método redefine a enumeração para o primeiro elemento.  
@@ -39,10 +36,10 @@ int Reset();
  Nenhum  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Depois que este método é chamado, a próxima chamada para [próximo](../../../extensibility/debugger/reference/ienumdebugobjects-next.md) retorna o primeiro elemento da enumeração.  
+ Depois que esse método é chamado, a próxima chamada para [próxima](../../../extensibility/debugger/reference/ienumdebugobjects-next.md) retorna o primeiro elemento da enumeração.  
   
 ## <a name="see-also"></a>Consulte também  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)   

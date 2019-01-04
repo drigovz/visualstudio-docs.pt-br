@@ -1,9 +1,6 @@
 ---
 title: Passo a passo no modo de interrupção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - break mode, stepping
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fff7edc494c763407c65785fe1de0b3fd77d7b2
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 95b4cbe8faa42e5eca87dadcb06aa604856e1b91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988852"
 ---
 # <a name="stepping-in-break-mode"></a>Passo a passo no modo de interrupção
 A seção a seguir descreve o processo que ocorre quando o depurador está no modo de interrupção e deve percorrer o código:  

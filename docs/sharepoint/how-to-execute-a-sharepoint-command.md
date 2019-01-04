@@ -1,9 +1,6 @@
 ---
-title: 'Como: executar um comando do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Executar um comando do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce195dd34c7c0b509f9de4cbe2cfd14d9a477f87
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d6e529420db8261e87c856e2fc80ef436bbc3e73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953112"
 ---
-# <a name="how-to-execute-a-sharepoint-command"></a>Como: executar um comando do SharePoint
+# <a name="how-to-execute-a-sharepoint-command"></a>Como: Executar um comando do SharePoint
   Se você quiser usar o modelo de objeto de servidor em uma extensão de ferramentas do SharePoint, você deve criar um personalizado *comando do SharePoint* para chamar a API. Depois de definir o comando e implantá-lo com sua extensão de ferramentas do SharePoint, sua extensão pode executar o comando para chamar o modelo de objeto de servidor do SharePoint. Para executar o comando, use um dos métodos de ExecuteCommand um <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> objeto.  
   
  Para obter mais informações sobre a finalidade dos comandos do SharePoint, consulte [chamam os modelos de objeto SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -55,12 +52,12 @@ ms.locfileid: "37118542"
     |O comando tem dois parâmetros e um valor de retorno.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir demonstra como usar o <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> sobrecarga para chamar o `Contoso.Commands.UpgradeSolution` comando que é descrito em [como: criar um comando do SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).  
+ O exemplo de código a seguir demonstra como usar o <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> sobrecarga para chamar o `Contoso.Commands.UpgradeSolution` comando que é descrito em [como: Criar um comando do SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).  
   
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]  
   
- O `Execute` método mostrado neste exemplo é uma implementação do <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> método o <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interface em uma etapa de implantação personalizada. Para ver esse código no contexto de um exemplo maior, consulte [instruções passo a passo: criar uma etapa de implantação para projetos do SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ O `Execute` método mostrado neste exemplo é uma implementação do <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> método o <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interface em uma etapa de implantação personalizada. Para ver esse código no contexto de um exemplo maior, consulte [passo a passo: Criar uma etapa de implantação para projetos do SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
  Observe os seguintes detalhes sobre a chamada para o <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> método:  
   
@@ -75,6 +72,5 @@ ms.locfileid: "37118542"
   
 ## <a name="see-also"></a>Consulte também
  [Chamar os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Como: criar um comando do SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
- [Passo a passo: Estenda o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
+ [Como: Criar um comando do SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
+ [Passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

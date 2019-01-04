@@ -1,13 +1,8 @@
 ---
 title: 'Passo a passo: Criando uma Web Part para o SharePoint usando um Designer | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870896"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Passo a passo: Criar uma web part para SharePoint usando um designer
 
@@ -74,7 +69,7 @@ Crie a web part adicionando controles a partir de **caixa de ferramentas** para 
 
 1. No designer Visual Web Developer, escolha o **Design** tab para alternar para modo de exibição de Design.
 
-2. Na barra de menus, escolha **modo de exibição** > **caixa de ferramentas**.
+2. Na barra de menus, escolha **Exibir** > **Caixa de Ferramentas**.
 
 3. No **Standard** nó do **caixa de ferramentas**, escolha o **CheckBoxList** controlar e, em seguida, execute uma das seguintes etapas:
 
@@ -193,5 +188,5 @@ Os eventos de todos os calendários que você especificou aparecem na exibição
 ## <a name="see-also"></a>Consulte também
 
 [Criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Como: criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Como: Criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
 [Passo a passo: Criar uma web part do SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

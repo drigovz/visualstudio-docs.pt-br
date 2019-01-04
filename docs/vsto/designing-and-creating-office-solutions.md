@@ -1,9 +1,6 @@
 ---
 title: Projetar e criar soluções do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b1911feec92e802fb8534623c903bb6461832bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935966"
 ---
 # <a name="design-and-create-office-solutions"></a>Projetar e criar soluções do Office
   Visual Studio fornece modelos de projeto que você pode usar para criar vários tipos diferentes de soluções do Office. Esta seção da documentação descreve os modelos de projeto e fornece orientação sobre como criar projetos do Office. Para obter informações sobre como implementar personalizações de interface do usuário e código depois de ter criado seu projeto, consulte [soluções do Office desenvolver](../vsto/developing-office-solutions.md).  
@@ -108,5 +105,3 @@ ms.locfileid: "53648801"
  [Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)   
  [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
  [Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

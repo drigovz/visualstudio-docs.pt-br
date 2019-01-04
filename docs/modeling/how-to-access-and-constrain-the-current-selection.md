@@ -1,5 +1,5 @@
 ---
-title: Como acessar e restringir a seleção atual
+title: 'Como: Acessar e restringir a seleção atual'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4fdcdbead361a189d6b99a32ba09063e784aa5e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 799e6fdc50cad91ebd5ee5081b1d80fa296f5a7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947929"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>Como acessar e restringir a seleção atual
+# <a name="how-to-access-and-constrain-the-current-selection"></a>Como: Acessar e restringir a seleção atual
 
 Quando você escreve um manipulador de comando ou gesto para sua linguagem específica de domínio, você pode determinar qual elemento o usuário é pequeno. Você também pode impedir alguns campos ou formas sejam selecionadas. Por exemplo, você pode organizar que, quando o usuário clica em um decorador de ícone, de forma que o contém é selecionada em vez disso. Restringir a seleção dessa maneira reduz o número de manipuladores que você precisa escrever. Ele também torna mais fácil para o usuário, que pode clicar em qualquer lugar na forma sem a necessidade de evitar o decorador.
 

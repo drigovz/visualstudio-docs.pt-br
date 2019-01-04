@@ -1,8 +1,6 @@
 ---
 title: Automatizar o Excel usando objetos estendidos
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +21,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a74c5a62cc2e14615db8dd17c9a34a7e54178e7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: e47b60628ccafe78c90782e6cebd4e1d52b3836c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938573"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizar o Excel usando objetos estendidos
   Ao desenvolver soluções do Excel no Visual Studio, você pode usar *hospedar itens* e *controle de host*s em suas soluções. Esses são objetos que estendem alguns objetos comumente usados no modelo de objeto do Excel (ou seja, o modelo de objeto que é exposto pelo assembly de interoperabilidade primário para Excel), como o <xref:Microsoft.Office.Interop.Excel.Worksheet> e <xref:Microsoft.Office.Interop.Excel.Range> objetos. Objetos estendidos se comportam como os objetos do Excel se baseiam, mas adicionar recursos adicionais, como novos eventos e recursos de ligação de dados para os objetos.  
@@ -79,5 +77,3 @@ ms.locfileid: "53248040"
  [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

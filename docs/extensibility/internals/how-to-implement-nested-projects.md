@@ -1,9 +1,6 @@
 ---
-title: 'Como: implementar projetos aninhados | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Implementar projetos aninhados | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945802"
 ---
-# <a name="how-to-implement-nested-projects"></a>Como: implementar projetos aninhados
+# <a name="how-to-implement-nested-projects"></a>Como: Implementar projetos aninhados
 
 Quando você cria um tipo de projeto aninhado, há várias etapas adicionais que devem ser implementadas. Um projeto pai leva em algumas das mesmas responsabilidades que a solução tem para seus projetos aninhados (filho). O projeto pai é um contêiner de projetos semelhantes a uma solução. Em particular, há vários eventos que devem ser gerados pela solução e pelos projetos pai para criar a hierarquia de projetos aninhados. Esses eventos são descritos no seguinte processo para a criação de projetos aninhados.
 

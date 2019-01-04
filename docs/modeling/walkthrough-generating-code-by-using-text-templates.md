@@ -1,5 +1,5 @@
 ---
-title: 'Instruções passo a passo: gerenciando código usando modelos de texto'
+title: 'Passo a passo: Geração de código usando modelos de texto'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5785dee0da189da4db7aad15ee8eff18b20ee49a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898080"
 ---
-# <a name="walkthrough-generate-code-by-using-text-templates"></a>Passo a passo: gerar código usando modelos de texto
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>Passo a passo: Gerar código usando modelos de texto
 
 Geração de código permite que você gerar o código do programa que é fortemente tipado e ainda pode ser facilmente alterado quando o modelo de origem é alterado. Compare isso com a técnica alternativa de escrever um programa completamente genérico que aceita um arquivo de configuração, que é mais flexível, mas os resultados no código que não é tão fácil de ler e alterar, nem tem tal bom desempenho. Este passo a passo demonstra esse benefício.
 

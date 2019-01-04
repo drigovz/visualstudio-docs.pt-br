@@ -1,9 +1,6 @@
 ---
 title: Função SccQueryChanges | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccQueryChanges
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7b3a9454daa0f2e3c5cf91a9dc483afe1f635a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6fabc1108f82c1cd2b43bf740e58c4ea9bb613e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910877"
 ---
 # <a name="sccquerychanges-function"></a>Função SccQueryChanges
 Essa função enumera uma determinada lista de arquivos, fornecendo informações sobre as alterações de nome para cada arquivo por meio de uma função de retorno de chamada.  
@@ -28,7 +25,7 @@ Essa função enumera uma determinada lista de arquivos, fornecendo informaçõe
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-SCCRTN SccQueryChanges(  
+SCCRTN SccQueryChanges(  
    LPVOID           pContext,  
    LONG             nFiles,  
    LPCSTR*          lpFileNames,  

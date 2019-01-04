@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917586"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções
   Usando o Designer de faixa de opções, você pode criar uma guia personalizada e, em seguida, adicionar e posicionar controles nela.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808866"
   
 ### <a name="to-create-an-excel-workbook-project"></a>Para criar um projeto de pasta de trabalho do Excel  
   
--   Criar um projeto de pasta de trabalho do Excel com o nome **MyExcelRibbon**. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Criar um projeto de pasta de trabalho do Excel com o nome **MyExcelRibbon**. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre a nova pasta de trabalho no designer e adiciona o **MyExcelRibbon** projeto ao **Gerenciador de soluções**.  
   
@@ -159,7 +156,7 @@ ms.locfileid: "38808866"
   
 -   Adicione com base no contexto da interface do usuário para qualquer personalização de nível de documento. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).  
   
--   Estenda um formulário personalizado ou padrão do Microsoft Office Outlook. Para obter mais informações, consulte [instruções passo a passo: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Estenda um formulário personalizado ou padrão do Microsoft Office Outlook. Para obter mais informações, confira [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   
@@ -167,9 +164,7 @@ ms.locfileid: "38808866"
  [Designer de faixa de opções](../vsto/ribbon-designer.md)   
  [Personalizar uma faixa de opções do Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Como: alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)   
- [Como: adicionar controles ao modo de exibição backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Como: Alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Como: Adicionar controles ao modo de exibição backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md)  
-  
-  

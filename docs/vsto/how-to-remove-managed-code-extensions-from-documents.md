@@ -1,9 +1,6 @@
 ---
-title: 'Como: remover as extensões de código gerenciado de documentos'
-ms.custom: ''
+title: 'Como: Remover extensões de código gerenciado de documentos'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964767"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Como: remover as extensões de código gerenciado de documentos
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Como: Remover extensões de código gerenciado de documentos
   Você poderá remover programaticamente o assembly de personalização de um documento ou pasta de trabalho que faz parte de uma personalização no nível de documento para o Microsoft Office Word ou Microsoft Office Excel. Os usuários podem, em seguida, abra os documentos e exibir o conteúdo, mas não aparecerá nenhuma interface do usuário personalizada (UI) adicionar aos documentos e seu código não será executado.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Você pode remover o assembly de personalização, usando uma da `RemoveCustomization` métodos fornecidos pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Qual método você usa depende se você deseja remover a personalização em tempo de execução (ou seja, executando o código na personalização enquanto a palavra documento ou pasta de trabalho do Excel é aberta), ou se você quiser remover a personalização de um documento fechado ou um documento que i s em um servidor que não tenha o Microsoft Office instalado.  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como eu faço para: fazer anexar ou desanexar um Assembly do VSTO a partir de um documento do Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como: Anexar ou desanexar um Assembly do VSTO a partir de um documento do Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>Para remover o assembly de personalização em tempo de execução  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35670187"
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciar documentos em um servidor usando a classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Como: anexar Managed extensions para documentos de código](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [Como: Anexar extensões de código gerenciado para documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

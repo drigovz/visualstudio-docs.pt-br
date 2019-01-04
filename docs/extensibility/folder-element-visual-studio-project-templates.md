@@ -1,9 +1,7 @@
 ---
 title: Elemento folder (modelos de projeto do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4fca64abf91105e0363ecd67ea5244c533996f3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: aacda209865ee9e7d9eae48a93be7e23f16c26ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912724"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento folder (modelos de projeto do Visual Studio)
 Especifica uma pasta que será adicionada ao projeto.  

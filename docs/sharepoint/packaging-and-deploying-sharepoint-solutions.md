@@ -1,13 +1,8 @@
 ---
 title: Empacotando e implantando soluções do SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849013"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empacotar e implantar soluções do SharePoint
   Normalmente, uma solução do SharePoint é implantada em um servidor do SharePoint usando um arquivo de pacote (. wsp) da solução. Você pode usar o Visual Studio para organizar os itens de projeto do SharePoint em recursos e criar um pacote para implantar seus recursos do SharePoint.  
@@ -40,9 +35,9 @@ ms.locfileid: "49863263"
 -   [Implantando arquivos em soluções do SharePoint](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>Criar recursos e pacotes
- Você pode usar o Visual Studio para agrupar elementos relacionados do SharePoint em um *recurso*. Por exemplo, um recurso para uma definição de lista de contatos pode incluir a instância de lista e a definição de lista. Você pode combinar esses dois elementos em um único recurso para fins de implantação. Para obter mais informações sobre recursos, consulte [bloco de construção: recursos](http://go.microsoft.com/fwlink/?LinkID=169183).  
+ Você pode usar o Visual Studio para agrupar elementos relacionados do SharePoint em um *recurso*. Por exemplo, um recurso para uma definição de lista de contatos pode incluir a instância de lista e a definição de lista. Você pode combinar esses dois elementos em um único recurso para fins de implantação. Para obter mais informações sobre recursos, consulte [bloco de construção: Recursos](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
- Em seguida, você pode criar um pacote de solução do SharePoint (*. wsp*) para agrupar vários recursos, site definições, assemblies e outros arquivos em um único pacote, que armazena os arquivos em um formato necessário pelo SharePoint para implantar os arquivos para o servidor. Para obter mais informações, consulte [bloco de construção: soluções](http://go.microsoft.com/fwlink/?LinkID=169186).  
+ Em seguida, você pode criar um pacote de solução do SharePoint (*. wsp*) para agrupar vários recursos, site definições, assemblies e outros arquivos em um único pacote, que armazena os arquivos em um formato necessário pelo SharePoint para implantar os arquivos para o servidor. Para obter mais informações, consulte [bloco de construção: Soluções](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
 ## <a name="feature-and-packaging-tool-support"></a>Recursos e suporte de ferramenta de empacotamento
  Você pode usar as ferramentas de desenvolvimento do SharePoint no Visual Studio para organizar rapidamente os arquivos do SharePoint em recursos e pacotes de solução para facilitar a implantação. Você pode usar as ferramentas a seguir para configurar o pacote de solução e de recurso.  
@@ -81,9 +76,9 @@ ms.locfileid: "49863263"
   
   As ferramentas de desenvolvimento do SharePoint no Visual Studio tem regras de validação para ajudar a garantir que o pacote de solução está formado corretamente. Além disso, as regras de verificam se o *. wsp* arquivo da solução pode ser implantado e ativado em um servidor do SharePoint com êxito. Para obter mais informações sobre o esquema XML para os recursos, consulte [esquemas de recurso](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
-  Você pode adicionar o recurso personalizado e regras de validação de pacote para o sistema de projeto do SharePoint. Para obter mais informações, consulte [como: criar o recurso personalizado e o pacote de regras de validação para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Você pode adicionar o recurso personalizado e regras de validação de pacote para o sistema de projeto do SharePoint. Para obter mais informações, confira [Como: Criar recurso personalizado e um pacote de regras de validação para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
-  Para obter mais informações sobre o Gerenciador de pacotes, consulte [como: adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Para obter mais informações sobre o Gerenciador de pacotes, consulte [como: Adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Gerenciador de Soluções
  Você pode usar o Gerenciador de soluções para navegar e abrir os arquivos de projeto do SharePoint. Use o menu de contexto no Gerenciador de soluções para adicionar recursos, receptores de evento e recursos de recursos. Além disso, você pode abrir os Designers de recurso e os Designers de pacote para configurar os recursos e pacotes para a implantação.  
@@ -109,4 +104,3 @@ ms.locfileid: "49863263"
 ## <a name="see-also"></a>Consulte também
  [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

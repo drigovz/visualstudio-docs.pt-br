@@ -1,9 +1,6 @@
 ---
-title: 'Como: abrir editores para documentos abertos | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Abrir editores para documentos abertos | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e91dd296958e44d0c06f2b77d410efdd71fb1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4ba9e15a7f7578454aa7b87372ea776399eca57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967301"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Como: abrir editores para documentos abertos
+# <a name="how-to-open-editors-for-open-documents"></a>Como: Abrir editores para documentos abertos
 Antes de um projeto é aberto em uma janela de documento, o projeto primeiro deve determinar se o arquivo já está aberto na janela do documento para outro editor. O arquivo pode ser qualquer um dos software em um editor específico do projeto ou um dos editores padrão registrado com [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="open-a-project-specific-editor"></a>Abra um editor específico do projeto  
@@ -53,9 +50,9 @@ Antes de um projeto é aberto em uma janela de documento, o projeto primeiro dev
   
      Esse método primeiro verifica se o documento não ainda estiver aberto, chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Se o documento já estiver aberto, sua janela de editor é ressurgiu.  
   
-2.  Se o documento não estiver aberto, em seguida, conclua as etapas em [como: abrir editores padrão](../extensibility/how-to-open-standard-editors.md).  
+2.  Se o documento não estiver aberto, em seguida, conclua as etapas em [como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Como: abrir editores específicos do projeto](../extensibility/how-to-open-project-specific-editors.md)   
- [Como: abrir editores padrão](../extensibility/how-to-open-standard-editors.md)
+ [Como: Editores abertos específicos do projeto](../extensibility/how-to-open-project-specific-editors.md)   
+ [Como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md)

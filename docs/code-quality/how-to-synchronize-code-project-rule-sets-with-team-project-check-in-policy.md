@@ -1,8 +1,7 @@
 ---
-title: Como sincronizar conjuntos de regras do projeto de código com política de check-in do projeto de equipe
+title: 'Como: Sincronizar conjuntos de regras do projeto de código com a política de check-in do projeto de equipe'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883237"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Como: sincronizar conjuntos de regras do projeto de código com uma política de Check-in do projeto de DevOps do Azure
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Como: Sincronizar conjuntos de regras do projeto de código com uma política de Check-in do projeto de DevOps do Azure
 
 Você pode sincronizar as configurações de análise de código para projetos de código para a política de check-in para o projeto de DevOps do Azure, especificando um conjunto de regras que contenha pelo menos as regras que são especificadas na regra definida para a política de check-in. O líder de desenvolvimento pode informar o nome e o local da regra definida para a política de check-in. Você pode usar uma das opções a seguir para garantir que a análise de código para o projeto usa o conjunto correto de regras:
 
@@ -55,7 +54,7 @@ Você pode sincronizar as configurações de análise de código para projetos d
 
 1.  Siga um dos procedimentos neste tópico para selecionar a política de check-in do projeto de DevOps do Azure na página de análise de código da caixa de diálogo de configurações do projeto.
 
-2.  Clique em **aberto**.
+2.  Clique em **Abrir**.
 
 3.  Adicionar ou remover regras usando o [editor de conjunto de regras](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
 

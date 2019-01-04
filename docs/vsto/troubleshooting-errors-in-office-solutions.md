@@ -1,9 +1,6 @@
 ---
 title: Solucionar problemas de erros em soluções do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919012"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar problemas de erros em soluções do Office
   Você pode encontrar problemas ao executar as seguintes tarefas durante o desenvolvimento de soluções do Office no Visual Studio:  
@@ -57,9 +54,9 @@ ms.locfileid: "50672945"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Erros quando você cria um projeto de pasta de trabalho do Excel com base em uma pasta de trabalho existente  
  Se você criar um novo projeto de pasta de trabalho do Excel com base em uma pasta de trabalho existente, é possível encontrar uma combinação dos seguintes erros.  
   
- No Excel: "Aviso de privacidade: este documento contém macros, controles ActiveX, informações de pacote de expansão do XML ou componentes da Web. Eles podem incluir informações pessoais que não podem ser removidas pelo Inspetor de documento."  
+ No Excel: "Aviso de privacidade: Este documento contém macros, controles ActiveX, informações de pacote de expansão do XML ou componentes da Web. Eles podem incluir informações pessoais que não podem ser removidas pelo Inspetor de documento."  
   
- No Visual Studio: "Designer não pôde carregar corretamente."  
+ No Visual Studio: "O designer não pôde carregar corretamente."  
   
  Esses erros podem ocorrer, que tente criar um projeto com base em uma pasta de trabalho que teve suas informações pessoais removidas usando o Inspetor de documento. Para evitar esse erro, execute as seguintes etapas antes de criar o projeto.  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Esse código resulta em erros de compilação a seguir:  
   
-- Visual Basic: "referência à classe 'DocumentClass' não é permitida quando seu assembly é vinculado usando o modo de não PIA."  
+- Visual Basic: "Referência à classe 'DocumentClass' não é permitida quando seu assembly é vinculado usando o modo de não PIA."  
   
-- Visual c#: "tipo de interoperabilidade 'Microsoft.Office.Interop.Word.DocumentClass' não pode ser inserido. Use a interface aplicável."  
+- Visual c#: "Tipo de interoperabilidade 'Microsoft.Office.Interop.Word.DocumentClass' não pode ser inserido. Use a interface aplicável."  
   
   Para resolver esse erro, modifique o código para fazer referência a interface correspondente em vez disso. Por exemplo, em vez de referência de um <xref:Microsoft.Office.Interop.Word.DocumentClass> de objeto, fazer referência a uma instância da <xref:Microsoft.Office.Interop.Word.Document> interface em vez disso.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Solucionar problemas de soluções do Office](../vsto/troubleshooting-office-solutions.md)   
  [Solucionar problemas de segurança de solução do Office](../vsto/troubleshooting-office-solution-security.md)   
  [Solucionar problemas de implantação de solução do Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

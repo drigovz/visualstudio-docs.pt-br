@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7322738fe1bd17944bc5d1883bc9c16e56cc59e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe5fe257814d547ead60d25f2e17b3afcdc13827
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820420"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar seu aplicativo&#39;arquitetura s
 Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus usuários precisa, você pode criar modelos no Visual Studio como parte de sua descrição da estrutura geral e o comportamento do seu aplicativo ou sistema de software. Usando modelos, você também pode descrever padrões que são usados em todo o design. Esses modelos de ajudarão-lo a entender a arquitetura existente, discutir as mudanças e comunique suas intenções claramente.

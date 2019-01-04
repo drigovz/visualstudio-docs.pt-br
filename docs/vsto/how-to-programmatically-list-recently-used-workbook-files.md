@@ -1,9 +1,6 @@
 ---
-title: 'Como: programaticamente listar arquivos usados recentemente pasta de trabalho'
-ms.custom: ''
+title: 'Como: Por meio de programação listar arquivos usados recentemente pasta de trabalho'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3e909ad3e1509689d953e0ad6c6b8346ff97f91
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989590"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Como: programaticamente listar arquivos usados recentemente pasta de trabalho
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Como: Por meio de programação listar arquivos usados recentemente pasta de trabalho
   O <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> propriedade retorna uma coleção que contém os nomes de todos os arquivos que aparecem na lista de arquivos usados recentemente o Microsoft Office Excel. O comprimento da lista varia dependendo do número de arquivos que o usuário tiver selecionado para manter. Você pode exibir os resultados em um intervalo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,5 +38,3 @@ ms.locfileid: "35257583"
  [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)   
  [Controle NamedRange](../vsto/namedrange-control.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

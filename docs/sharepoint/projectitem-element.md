@@ -1,9 +1,6 @@
 ---
 title: Elemento ProjectItem | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0c295410caffb476d6c1e796864c47520a2f56
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890096"
 ---
 # <a name="projectitem-element"></a>Elemento ProjectItem
   Representa um item de projeto do SharePoint. Esse elemento o elemento raiz necessário do *. spdata* arquivo.  
@@ -52,9 +49,9 @@ ms.locfileid: "37118545"
 |**DefaultFile**|Opcional **xs: string** atributo.<br /><br /> O caminho relativo, incluindo o nome de arquivo, do arquivo que é aberto no editor do Visual Studio quando você abre o item de projeto do SharePoint no **Gerenciador de soluções**. O caminho é relativo da pasta que contém o *. spdata* arquivo.|  
 |**FeatureReceiverClass**|Opcional **xs: string** atributo.<br /><br /> O nome totalmente qualificado de uma classe de receptor de recurso para este item de projeto do SharePoint. Para obter mais informações sobre os receptores de recurso, consulte [fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |**FeatureReceiverAssembly**|Opcional **xs: string** atributo.<br /><br /> Especifica o nome totalmente qualificado de um assembly que define um receptor de recurso para este item de projeto do SharePoint. Para obter mais informações sobre os receptores de recurso, consulte [fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Para obter mais informações sobre nomes de assembly totalmente qualificado, consulte [nomes de Assembly](/dotnet/framework/app-domains/assembly-names).|  
-|**SupportedTrustLevels**|Opcional **xs: string** atributo.<br /><br /> Especifica os níveis de confiança que dá suporte a esse item de projeto do SharePoint. Esse valor pode ser uma das seguintes cadeias de caracteres: área restrita, FullTrust, ou tudo. O valor All Especifica Sandboxed e FullTrust.<br /><br /> Em um tipo de item de projeto do SharePoint personalizado, o valor desse atributo corresponde ao valor que você atribui para a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriedade em sua implementação do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Se você especificar um valor diferente para esse atributo, o Visual Studio substitui o valor para que ele especifique o mesmo nível de confiança que você especificar na <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriedade.|  
+|**SupportedTrustLevels**|Opcional **xs: string** atributo.<br /><br /> Especifica os níveis de confiança que dá suporte a esse item de projeto do SharePoint. Esse valor pode ser uma das seguintes cadeias de caracteres: Na área restrita, FullTrust, ou tudo. O valor All Especifica Sandboxed e FullTrust.<br /><br /> Em um tipo de item de projeto do SharePoint personalizado, o valor desse atributo corresponde ao valor que você atribui para a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriedade em sua implementação do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Se você especificar um valor diferente para esse atributo, o Visual Studio substitui o valor para que ele especifique o mesmo nível de confiança que você especificar na <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriedade.|  
 |**SupportedDeploymentScopes**|Opcional **xs: string** atributo.<br /><br /> Especifica os escopos de implantação que dá suporte a esse item de projeto do SharePoint. Esse valor é uma cadeia de caracteres delimitada por vírgula que consiste em uma ou mais das seguintes cadeias de caracteres: Farm, Site, Web, aplicativo Web ou pacote. Por exemplo: `Web, Site`<br /><br /> Em um tipo de item de projeto do SharePoint personalizado, o valor desse atributo corresponde ao valor que você atribui para a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriedade em sua implementação do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Se você especificar um valor diferente para esse atributo, o Visual Studio substitui o valor para que ele especifique o mesmo nível de confiança que você especificar na <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriedade.|  
-|**Tipo**|Exigido **xs: string** atributo.<br /><br /> O identificador do item de projeto do SharePoint. Em um tipo de item de projeto do SharePoint personalizado, o identificador é a cadeia de caracteres que você passa para o <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para obter mais informações, consulte [como: definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Para obter uma lista dos identificadores para os itens de projeto do SharePoint internos incluídos no Visual Studio, consulte [itens de projeto do SharePoint estender](../sharepoint/extending-sharepoint-project-items.md).|  
+|**Tipo**|Exigido **xs: string** atributo.<br /><br /> O identificador do item de projeto do SharePoint. Em um tipo de item de projeto do SharePoint personalizado, o identificador é a cadeia de caracteres que você passa para o <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para obter mais informações, confira [Como: Definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Para obter uma lista dos identificadores para os itens de projeto do SharePoint internos incluídos no Visual Studio, consulte [itens de projeto do SharePoint estender](../sharepoint/extending-sharepoint-project-items.md).|  
   
 ### <a name="child-elements"></a>Elementos filho
   
@@ -80,4 +77,3 @@ ms.locfileid: "37118545"
   
 ## <a name="see-also"></a>Consulte também
 [Rseference de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  

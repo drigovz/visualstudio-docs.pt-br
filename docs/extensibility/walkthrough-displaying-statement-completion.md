@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Exibindo o preenchimento de declaração | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986629"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Passo a passo: Preenchimento de declaração de exibição
 Você pode implementar o preenchimento de declaração baseadas em linguagem definindo os identificadores para o qual você deseja fornecer conclusão e, em seguida, disparar uma sessão de conclusão. Você pode definir o preenchimento de declaração no contexto de um serviço de linguagem, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e, em seguida, exibir conclusão para apenas esse tipo. Ou, você pode disparar o preenchimento para um tipo de conteúdo existente — por exemplo, "texto sem formatação". Este passo a passo mostra como disparar a conclusão de instrução para o tipo de conteúdo "texto sem formatação", que é o tipo de conteúdo de arquivos de texto. O tipo de conteúdo "texto" é o ancestral de todos os outros tipos de conteúdo, inclusive código e arquivos XML.  

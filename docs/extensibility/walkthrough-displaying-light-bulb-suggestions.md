@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Exibir sugestões de lâmpada | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
@@ -11,21 +8,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935002"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Passo a passo: Exibir sugestões de lâmpada
 As lâmpadas são ícones que expandem para exibir um conjunto de ações, por exemplo, correções para problemas identificados pelo analisadores de código internos ou refatoração de código no editor do Visual Studio.  
   
  Nos editores do Visual c# e Visual Basic, você também pode usar o .NET Compiler Platform ("Roslyn") para gravar e empacotar seus próprios analisadores de código com as ações que exibem as lâmpadas automaticamente. Para obter mais informações, consulte:  
   
-- [Como Gravar um c# diagnóstico e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Como: Gravar um c# diagnóstico e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [Como Gravar um diagnóstico do Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Como: Gravar um diagnóstico do Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   Outras linguagens como C++ também fornecem as lâmpadas para algumas ações rápidas, por exemplo, uma sugestão para criar uma implementação de stub dessa função.  
   
@@ -37,7 +34,7 @@ As lâmpadas são ícones que expandem para exibir um conjunto de ações, por e
   
   ![visualização da lâmpada](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  Você pode usar as lâmpadas para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover as chaves para uma nova linha de abertura ou movê-los ao final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **convertida em letras maiusculas** e **converter em letras minúsculas**.  
+  Você pode usar as lâmpadas para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover as chaves para uma nova linha de abertura ou movê-los ao final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **Converter em maiusculas** e **converter em letras minúsculas**.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -225,8 +222,8 @@ As lâmpadas são ícones que expandem para exibir um conjunto de ações, por e
 2.  Crie duas classes, a primeira chamada `UpperCaseSuggestedAction` e a segunda chamada `LowerCaseSuggestedAction`. Ambas as classes implementam <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
-    internal class UpperCaseSuggestedAction : ISuggestedAction   
-    internal class LowerCaseSuggestedAction : ISuggestedAction  
+    internal class UpperCaseSuggestedAction : ISuggestedAction   
+    internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
      Ambas as classes são semelhantes, exceto que um chama <xref:System.String.ToUpper%2A> e as outras chamadas <xref:System.String.ToLower%2A>. As etapas a seguir abrangem apenas a classe de ação em maiusculas, mas você deve implementar as duas classes. Use as etapas para implementar a ação de letras maiusculas como um padrão para implementar a ação em minúsculas.  
@@ -246,8 +243,8 @@ As lâmpadas são ícones que expandem para exibir um conjunto de ações, por e
   
     ```csharp  
     private ITrackingSpan m_span;  
-    private string m_upper;  
-    private string m_display;  
+    private string m_upper;  
+    private string m_display;  
     private ITextSnapshot m_snapshot;  
     ```  
   
@@ -291,7 +288,7 @@ As lâmpadas são ícones que expandem para exibir um conjunto de ações, por e
     {  
         get { return false; }  
     }  
-    public string DisplayText  
+    public string DisplayText  
     {  
         get { return m_display; }  
     }  
@@ -322,7 +319,7 @@ As lâmpadas são ícones que expandem para exibir um conjunto de ações, por e
 9. Implementar o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> método, substituindo o texto no trecho com seu equivalente em maiusculas.  
   
     ```csharp  
-    public void Invoke(CancellationToken cancellationToken)  
+    public void Invoke(CancellationToken cancellationToken)  
     {  
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);  
     }  
@@ -366,4 +363,3 @@ As lâmpadas são ícones que expandem para exibir um conjunto de ações, por e
      ![testar a lâmpada expandida](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Se você clicar na primeira ação, todo o texto da palavra atual deve ser convertido em letras maiusculas. Se você clicar na segunda ação, todo o texto deve ser convertido em minúsculas.  
-  

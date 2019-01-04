@@ -3,8 +3,6 @@ title: Criar suplementos do VSTO para o Office usando o Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7708bc32e240f5976f1a7b6b9f9a1afb4c950743
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942652"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Criar suplementos do VSTO para o Office usando o Visual Studio
   Você pode usar o Microsoft Office developer tools no Visual Studio para criar aplicativos do .NET Framework que estendem o Office. Esses aplicativos também são nomeados *soluções do Office*.  
@@ -114,5 +112,3 @@ ms.locfileid: "53441490"
   
  [Programação do .NET framework no Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  Discute o desenvolvimento de aplicativos com o .NET Framework no Visual Basic e Visual C#.  
-  
-  

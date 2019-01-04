@@ -1,15 +1,10 @@
 ---
-title: 'Como: editar uma configuração de implantação do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Editar uma configuração de implantação do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843587"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Como: editar uma configuração de implantação do SharePoint
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Como: Editar uma configuração de implantação do SharePoint
   Você pode criar uma configuração de implantação ou modificar uma configuração de implantação existente. Por exemplo, você pode executar uma única etapa ou alterar a ordem das etapas no processo de implantação. Você talvez queira criar ou modificar as configurações de implantação porque não não possível alterar as configurações internas e adicionadas programaticamente.  
   
 ## <a name="create-a-sharepoint-deployment-configuration"></a>Criar uma configuração de implantação do SharePoint  
@@ -58,4 +53,3 @@ ms.locfileid: "43774788"
   
 ## <a name="see-also"></a>Consulte também
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

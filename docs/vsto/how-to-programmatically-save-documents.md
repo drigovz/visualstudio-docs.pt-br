@@ -1,9 +1,6 @@
 ---
-title: 'Como: salvar documentos programaticamente'
-ms.custom: ''
+title: 'Como: Salvar documentos programaticamente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821588"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Como: salvar documentos programaticamente
+# <a name="how-to-programmatically-save-documents"></a>Como: Salvar documentos programaticamente
   Há várias maneiras de salvar documentos do Microsoft Office Word. Você pode salvar um documento sem alterar o nome do documento, ou você pode salvar um documento com um novo nome.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -89,9 +86,7 @@ ms.locfileid: "49883465"
 -   Para salvar um documento com um novo nome, um diretório chamado *teste* deve existir na unidade C.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: fechar documentos programaticamente](../vsto/how-to-programmatically-close-documents.md)   
- [Como: abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Como: Fechar documentos programaticamente](../vsto/how-to-programmatically-close-documents.md)   
+ [Como: Abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Item de host do documento](../vsto/document-host-item.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

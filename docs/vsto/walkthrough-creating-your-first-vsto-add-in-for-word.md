@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criar seu primeiro suplemento VSTO para Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948966"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Passo a passo: Criar seu primeiro suplemento VSTO para Word
   Este passo a passo introdutório mostra como criar um suplemento do VSTO para o Microsoft Office Word. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual documento está aberto.  
@@ -124,17 +121,17 @@ ms.locfileid: "49940964"
 ## <a name="next-steps"></a>Próximas etapas  
  Agora que você criou um básico suplemento VSTO para Word, você pode aprender mais sobre como desenvolver suplementos do VSTO nesses tópicos:  
   
--   Tarefas gerais de programação que você pode executar nos suplementos do VSTO: [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
+-   Tarefas de programação gerais que você pode executar nos suplementos do VSTO: [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
   
--   Tarefas de programação que são específicas para suplementos do VSTO do Word: [soluções do Word](../vsto/word-solutions.md).  
+-   Programando tarefas que são específicas para suplementos do VSTO do Word: [Soluções do Word](../vsto/word-solutions.md).  
   
--   Usando o modelo de objeto do Word: [visão geral do modelo de objeto Word](../vsto/word-object-model-overview.md).  
+-   Usando o modelo de objeto do Word: [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md).  
   
--   Personalizando a interface do usuário do Word, por exemplo, por adicionar uma guia personalizada à faixa de opções ou criar seu próprio painel de tarefas personalizado: [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).  
+-   Personalizando a interface do usuário do Word, por exemplo, adicionando uma guia personalizada à faixa de opções ou criando seu próprio painel de tarefas personalizado: [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md).  
   
--   Compilação e depuração de suplementos do VSTO para Word: [soluções do Office compilar](../vsto/building-office-solutions.md).  
+-   Compilação e depuração de suplementos do VSTO para Word: [Compilar soluções do Office](../vsto/building-office-solutions.md).  
   
--   Implantação de suplementos do VSTO para Word: [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
+-   Implantação de suplementos do VSTO para Word: [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -145,5 +142,3 @@ ms.locfileid: "49940964"
  [Compilar soluções do Office](../vsto/building-office-solutions.md)   
  [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)   
  [Visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md)  
-  
-  

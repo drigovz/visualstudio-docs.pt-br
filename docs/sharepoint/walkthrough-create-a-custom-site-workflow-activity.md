@@ -1,13 +1,8 @@
 ---
 title: 'Passo a passo: Criar uma atividade de fluxo de trabalho de Site personalizados | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951807"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Passo a passo: Criar uma atividade de fluxo de trabalho de site personalizada
   Este passo a passo demonstra como criar uma atividade personalizada para um fluxo de trabalho de nível de site usando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Fluxos de trabalho de nível de site se aplica a todo o site, não apenas uma lista no site.) A atividade personalizada cria uma lista de avisos de backup e, em seguida, copia o conteúdo da lista de anúncios para ele.  
@@ -128,6 +123,5 @@ ms.locfileid: "49894164"
 5.  Na barra de início rápido, escolha o **anúncios Backup** link. Observe que todos os comunicados que estão contidos na **anúncios** lista foram copiados para essa nova lista.  
   
 ## <a name="see-also"></a>Consulte também
- [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Como: Criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
  [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

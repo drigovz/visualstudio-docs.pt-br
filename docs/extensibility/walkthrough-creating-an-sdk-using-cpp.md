@@ -1,9 +1,6 @@
 ---
-title: 'Passo a passo: Criando um SDK usando C++ | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Criar um SDK usando C++ | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a0db4f34315f9e0eb4a5627cdc286a43a904a34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917599"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Passo a passo: Criar um SDK usando C++
 Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, o pacote SDK como um Visual Studio VSIX (extensão), e, em seguida, usá-lo para criar um aplicativo. O passo a passo é dividida nestas etapas:  
@@ -112,7 +109,7 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-12. Na barra de menus, escolha **modo de exibição** > **Other Windows** > **janela propriedades** (teclado: escolha o **F4**chave).  
+12. Na barra de menus, escolha **modo de exibição** > **Other Windows** > **janela propriedades** (teclado: Escolha o **F4** chave).  
   
 13. Na **Gerenciador de soluções**, selecione o **NativeMathWRT.winmd** arquivo. No **propriedades** janela, altere o **Build Action** propriedade a ser **conteúdo**e, em seguida, altere o **incluir em VSIX** propriedade  **True**.  
   

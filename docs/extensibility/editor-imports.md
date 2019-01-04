@@ -1,9 +1,6 @@
 ---
 title: Importações do Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893925"
 ---
 # <a name="editor-imports"></a>Importações do Editor
 Você pode importar um número de serviços do editor, fábricas e os agentes que fornecem a sua extensão com diferentes tipos de acesso para o editor de núcleo. Por exemplo, você pode importar o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> para dar a você um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> para um determinado tipo de conteúdo. (Este navegador permite que executar diferentes tipos de pesquisas em um buffer de texto).  
@@ -51,11 +48,11 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [Passo a passo: Realçar texto](../extensibility/walkthrough-highlighting-text.md)  
   
- [Passo a passo: Dicas de ferramenta de QuickInfo vídeo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Passo a passo: Exibir dicas de ferramenta de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Passo a passo: Exibir a Ajuda de assinatura](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Passo a passo: exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Passo a passo: Exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [Passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
@@ -67,7 +64,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Ver [instruções passo a passo: acessar o objeto DTE de uma extensão do editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) para obter mais informações.  
+ Confira [Passo a passo: Acessar o objeto DTE de uma extensão do editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) para obter mais informações.  
   
 ## <a name="services"></a>Serviços  
  Serviços do editor são geralmente única entidades que fornecem um serviço e são compartilhadas entre vários componentes.  

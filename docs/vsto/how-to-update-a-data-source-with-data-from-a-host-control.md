@@ -1,9 +1,6 @@
 ---
-title: 'Como: atualizar uma fonte de dados com dados de um controle de host'
-ms.custom: ''
+title: 'Como: Atualizar uma fonte de dados com dados de um controle de host'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffacf89146932f5a8d1521ea922e27b12fb57151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933009"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Como: atualizar uma fonte de dados com dados de um controle de host
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Como: Atualizar uma fonte de dados com dados de um controle de host
   Você pode associar um controle de host a uma fonte de dados e atualizar a fonte de dados com as alterações feitas aos dados no controle. Há duas etapas principais nesse processo:  
   
 1. Atualize a fonte de dados na memória com os dados modificados no controle. Normalmente, a fonte de dados na memória é um <xref:System.Data.DataSet>, um <xref:System.Data.DataTable>, ou algum outro objeto de dados.  
@@ -119,10 +116,8 @@ ms.locfileid: "49839759"
  [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Salvar dados no banco de dados](../data-tools/save-data-back-to-the-database.md)    
  [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
- [Como: percorrer registros do banco de dados em uma planilha](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [Como: preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [Como: preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Como: preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  
+ [Como: Percorrer os registros de banco de dados em uma planilha](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Como: Preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Como: Preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Como: Preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)  

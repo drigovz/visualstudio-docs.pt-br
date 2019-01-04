@@ -1,9 +1,6 @@
 ---
-title: 'Como: proteger planilhas programaticamente'
-ms.custom: ''
+title: 'Como: Proteger planilhas programaticamente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dce13f8ec89f57b595f1147d99325004e89275e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936926"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Como: proteger planilhas programaticamente
+# <a name="how-to-programmatically-protect-worksheets"></a>Como: Proteger planilhas programaticamente
   O recurso de proteção do Microsoft Office Excel ajuda a impedir que os usuários e o código modificar objetos em uma planilha. Por padrão, todas as células são bloqueadas após você ativa a proteção.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -70,12 +67,10 @@ ms.locfileid: "49867176"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
- [Como: remover a proteção de planilhas programaticamente](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
- [Como: proteger pastas de trabalho de forma programática](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Como: ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Como: Remover a proteção de planilhas programaticamente](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
+ [Como: Proteger pastas de trabalho de forma programática](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Como: Ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Item de host da planilha](../vsto/worksheet-host-item.md)   
  [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

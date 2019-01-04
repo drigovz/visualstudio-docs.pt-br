@@ -1,9 +1,6 @@
 ---
 title: Comandos que devem ser executados após a instalação | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08e1bcf064a8e94af306230e705f686d2d8037c1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915543"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que devem ser executados após a instalação
 Se você implantar sua extensão por meio de um *. msi* arquivo, você deve executar **devenv /setup** como parte de sua instalação para Visual Studio descobrir suas extensões.  

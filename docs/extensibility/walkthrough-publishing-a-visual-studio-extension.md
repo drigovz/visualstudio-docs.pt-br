@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Publicando uma extensão do Visual Studio | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852447"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Passo a passo: Publicar uma extensão do Visual Studio
 
@@ -71,9 +68,9 @@ Este artigo usa uma extensão de VSPackage padrão, mas as etapas são válidas 
 
 6. Escolha o editor que você deseja usar para carregar sua extensão. Você pode alterar os editores clicando em nomes de publicador listados à esquerda. Clique em **nova extensão** e selecione **Visual Studio**.
 
-7. Na **1: carregar a extensão**, você pode optar por carregar um arquivo VSIX diretamente no Visual Studio Marketplace ou simplesmente adicionar um link para seu próprio site. Neste exemplo, a extensão *TestPublish.vsix* é carregado. Arraste e solte sua extensão ou use o **clique** link para navegar para o arquivo. Encontre sua extensão na pasta \bin\Release do projeto.  Clique em **Continue**.
+7. No **1: Carregar a extensão**, você pode optar por carregar um arquivo VSIX diretamente no Visual Studio Marketplace ou simplesmente adicionar um link para seu próprio site. Neste exemplo, a extensão *TestPublish.vsix* é carregado. Arraste e solte sua extensão ou use o **clique** link para navegar para o arquivo. Encontre sua extensão na pasta \bin\Release do projeto.  Clique em **Continue**.
 
-8. Na **2: fornecer detalhes da extensão**, alguns campos são preenchidos automaticamente da *vsixmanifest* arquivo da sua extensão. Encontre mais detalhes sobre cada abaixo:
+8. Em **2: Fornecer detalhes da extensão**, alguns campos são preenchidos automaticamente do *vsixmanifest* arquivo da sua extensão. Encontre mais detalhes sobre cada abaixo:
 
     * **Nome interno** é usado na URL da página de detalhes da extensão. Por exemplo, publicar uma extensão sob o nome do publicador "myname" e especificando o nome interno seja "extensão my" resulta em uma URL de "marketplace.visualstudio\.com/items?itemName=myname.myextension" para obter detalhes da sua extensão página.
     
@@ -129,7 +126,7 @@ Marketplace dá suporte a concessão de permissões de usuários adicionais para
   
    * **Colaborador**: O usuário pode publicar e gerenciar extensões, mas não é possível editar configurações do publicador ou gerenciar o acesso.
   
-   * **Proprietário**: O usuário pode publicar e gerenciar extensões, edite as configurações do publicador e gerenciar o acesso.
+   * **Proprietário**: O usuário pode publicar e gerenciar extensões, editar configurações do publicador e gerenciar o acesso.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Instalar a extensão do Visual Studio Marketplace
 

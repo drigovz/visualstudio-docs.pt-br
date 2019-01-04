@@ -1,7 +1,6 @@
 ---
 title: controle Indicador
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -19,26 +18,26 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 242a4692bc75715e661244dc8f513d30cc9480ed
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: d9a2de59d0cdb9cd1114375d4327ab3e3a6b5af7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960411"
 ---
 # <a name="bookmark-control"></a>controle Indicador
   O controle <xref:Microsoft.Office.Tools.Word.Bookmark> é um indicador que tem um nome exclusivo, expõe eventos e pode ser vinculado a dados. O indicador pode ser usado como um espaço reservado para marcar um item ou local em um documento do Microsoft Office Word. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle é uma combinação de um <xref:Microsoft.Office.Interop.Word.Bookmark> objeto e um <xref:Microsoft.Office.Interop.Word.Range> objeto.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto no tempo de execução. Confira mais informações em [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+ Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto no tempo de execução. Para obter mais informações, confira [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
 ## <a name="bind-data-to-the-control"></a>Associar dados ao controle
  Um <xref:Microsoft.Office.Tools.Word.Bookmark> controle dá suporte à vinculação de dados simples. O indicador deve ser associado a uma fonte de dados usando o <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propriedade. A propriedade de associação de dados padrão do indicador é o <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> propriedade.
 
  Se os dados no conjunto de dados associado forem atualizados, o <xref:Microsoft.Office.Tools.Word.Bookmark> controle mostra as alterações.
 
- Em projetos de nível de documento, você também pode associar dados aos indicadores usando o **fontes de dados** janela. Confira mais informações em [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ Em projetos de nível de documento, você também pode associar dados aos indicadores usando o **fontes de dados** janela. Para obter mais informações, confira [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formatação
  Formatação que pode ser aplicado a um <xref:Microsoft.Office.Interop.Word.Bookmark> pode ser aplicado a um <xref:Microsoft.Office.Tools.Word.Bookmark> controle. Essa formatação inclui fontes, recuos, espaçamento, numeração e estilos.

@@ -1,9 +1,6 @@
 ---
 title: 'Como: Adicionar comentários ao texto em documentos de forma programática'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 677f0ba2cf02f4dd62759ea5f125c91290dc0762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857021"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Como: Adicionar comentários ao texto em documentos de forma programática
   A propriedade de comentários da classe Document adiciona um comentário a um intervalo de texto em um documento do Microsoft Office Word.  
@@ -52,5 +49,3 @@ ms.locfileid: "53804598"
 ## <a name="see-also"></a>Consulte também  
  [Como: Remover todos os comentários de documentos programaticamente](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Item de host do documento](../vsto/document-host-item.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: IDebugGenericFieldDefinition | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldDefinition interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91906fa4e4b76f8d9c43c3a181dd0e8781219587
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4f81691f60619cd9442e86b155850cd29e2cbd5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896560"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
-Representa a definição de um campo de um tipo genérico de código gerenciado.  
+Representa a definição de um campo para um tipo genérico do código gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,9 +31,9 @@ IDebugGenericFieldDefinition : IUnknown
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Cria uma instância do campo recebe uma matriz de argumentos de tipo.|  
+|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Constrói uma instância do campo considerando uma matriz de argumentos de tipo.|  
 |[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Recupera os parâmetros de tipo dado o número de parâmetros.|  
-|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Recupera o número de parâmetros de tipo associada ao campo genérico.|  
+|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Recupera o número de parâmetros de tipo associado ao campo genérico.|  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: Sh.h  

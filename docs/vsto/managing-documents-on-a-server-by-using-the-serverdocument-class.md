@@ -1,9 +1,6 @@
 ---
 title: Gerenciar documentos em um servidor usando a classe ServerDocument
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e983f4cf1b90150113fcfa33702d85bb41a30924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcaebef3edcdf742bc56915d0209f3f61ee63df8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903232"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Gerenciar documentos em um servidor usando a classe ServerDocument
   Você pode usar o `ServerDocument` classe o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para gerenciar vários aspectos das personalizações em nível de documento, mesmo se o Microsoft Office Word e Microsoft Office Excel não são instalados. Você pode executar as seguintes tarefas:  
@@ -61,13 +58,12 @@ ms.locfileid: "49939131"
 |Tarefa|Membro a ser usado|  
 |----------|-------------------|  
 |Para determinar se um documento é parte de uma personalização no nível de documento.|O método <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A>.|  
-|Por meio de programação anexar uma personalização a um documento em tempo de execução.<br /><br /> Para obter mais informações, consulte [como: anexar extensões para documentos de código gerenciado](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Um do <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> métodos.|  
-|Para remover programaticamente uma personalização de um documento em tempo de execução.<br /><br /> Para obter mais informações, consulte [como: remover de extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|O método <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>.|  
+|Por meio de programação anexar uma personalização a um documento em tempo de execução.<br /><br /> Para obter mais informações, confira [Como: Anexar extensões de código gerenciado para documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Um do <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> métodos.|  
+|Para remover programaticamente uma personalização de um documento em tempo de execução.<br /><br /> Para obter mais informações, confira [Como: Remover extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|O método <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>.|  
 |Para obter a URL do manifesto de implantação que está associada ao documento.|A propriedade de <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> .|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: anexar extensões para documentos de código gerenciado](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
- [Como: remover as extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Como: Anexar extensões de código gerenciado para documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
+ [Como: Remover extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Dados de cache](../vsto/caching-data.md)  
-  

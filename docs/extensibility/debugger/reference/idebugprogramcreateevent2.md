@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramCreateEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramCreateEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 591a1e02be4ac96db75c0d43761d83910b89c019
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1213f37fbf4d7384155a17a5cf42c60b5d544f30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915027"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
-Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando um programa é conectado.  
+Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando um programa é anexado ao.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -32,10 +29,10 @@ IDebugProgramCreateEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- O fornecedor de porta personalizada ou DE implementa essa interface para relatar se um programa foi criado, normalmente no momento em que o programa está associado. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto dessa interface. O SDM usa o `QueryInterface` método para acessar o `IDebugEvent2` interface.  
+ O fornecedor de porta personalizada ou DE implementa essa interface para relatar que um programa tiver sido criado, normalmente no momento em que o programa é anexado ao. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface. O SDM usa o `QueryInterface` método para acessar o `IDebugEvent2` interface.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- O fornecedor de porta personalizada ou DE cria e envia esse objeto de evento para a criação de um programa de relatório. O DE envia o evento usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada que é fornecida pelo SDM quando anexado ao programa que está sendo depurado. O fornecedor de porta personalizada envia esse evento usando o [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interface.  
+ O fornecedor de porta personalizada ou DE cria e envia esse objeto de evento para a criação de um programa de relatório. O DE envia esse evento usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada que é fornecida pelo SDM quando anexado a programa que está sendo depurado. O fornecedor de porta personalizada envia esse evento usando o [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interface.  
   
 ## <a name="remarks"></a>Comentários  
  O fornecedor de porta personalizada ou DE publica uma nova [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface chamando [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).  
@@ -48,7 +45,7 @@ IDebugProgramCreateEvent2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)   

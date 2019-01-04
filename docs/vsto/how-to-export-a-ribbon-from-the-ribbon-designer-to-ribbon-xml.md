@@ -1,9 +1,6 @@
 ---
 title: 'Como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 370c2e1d08c47b8a5068d0227426d2b4083590a5
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894055"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções
   O **faixa de opções (Visual Designer)** item não oferece suporte a todos os tipos possíveis de personalização da faixa de opções. Para personalizar a faixa de opções de maneiras avançadas, você pode exportar a faixa de opções do designer para o XML da faixa de opções e editar o XML diretamente.  
@@ -73,5 +70,3 @@ ms.locfileid: "53646926"
  [XML da faixa de opções](../vsto/ribbon-xml.md)   
  [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Passo a passo: Criar uma guia personalizada usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

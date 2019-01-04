@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Adicionar uma página de aplicativo a um fluxo de trabalho | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938193"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Passo a passo: Adicionar uma página de aplicativo a um fluxo de trabalho
-  Este passo a passo demonstra como adicionar uma página de aplicativo que exibe dados derivados de um fluxo de trabalho a um projeto de fluxo de trabalho. Ele se baseia no projeto descrito no tópico [instruções passo a passo: criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+  Este passo a passo demonstra como adicionar uma página de aplicativo que exibe dados derivados de um fluxo de trabalho a um projeto de fluxo de trabalho. Ele se baseia no projeto descrito no tópico [passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Este passo a passo demonstra as seguintes tarefas:
 
@@ -45,14 +42,14 @@ ms.locfileid: "49866890"
 
 -   Visual Studio.
 
--   Você também tem que concluir o projeto no tópico [instruções passo a passo: criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+-   Você também tem que concluir o projeto no tópico [passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend o código de fluxo de trabalho
  Primeiro, adicione uma linha de código para o fluxo de trabalho para definir o valor da coluna de resultado para a quantidade do relatório de despesas. Esse valor é usado posteriormente o cálculo de resumo de relatório de despesas.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Para definir o valor da coluna de resultado no fluxo de trabalho
 
-1.  Carregar o projeto concluído do tópico [instruções passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1.  Carregar o projeto concluído do tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 2.  Abra o código para *Workflow1.cs* ou *Workflow1.vb* (dependendo da sua linguagem de programação).
 
@@ -353,6 +350,6 @@ ms.locfileid: "49866890"
 ## <a name="see-also"></a>Consulte também
 
 - [Passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Como: criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)
+- [Como: Criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)
 - [Criar páginas de aplicativo do SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

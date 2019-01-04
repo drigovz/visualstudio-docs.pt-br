@@ -1,9 +1,6 @@
 ---
 title: Práticas recomendadas para segurança em VSPackages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio SDK]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 629e7076335ee3cd9e2260d6242f586579bd8e0d
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 93ff8f6cd9423212a64404b55b38751d095b260f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913375"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Práticas recomendadas de segurança em VSPackages
 Para instalar o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] no seu computador, você deve estar executando em um contexto com credenciais administrativas. A unidade básica de segurança e a implantação de um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplicativo é o [VSPackage](../../extensibility/internals/vspackages.md). Um VSPackage deverá ser registrado usando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], que também requer credenciais administrativas.  
