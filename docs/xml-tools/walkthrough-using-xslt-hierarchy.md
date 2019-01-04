@@ -2,19 +2,18 @@
 title: 'Passo a passo: Usando a hierarquia XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834718"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Passo a passo: Usar hierarquia XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Passo a passo: Use a hierarquia XSLT
 
 A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML. Uma folha de estilos XSLT frequentemente usa `includes` e instruções de `imports` . A compilação parte da folha de estilos principal, mas quando você verá um erro no resultado de criar uma folha de estilos XSLT, o erro pode vir de uma fonte diferente da folha de estilos principal. Corrigir o erro ou editar a folha de estilos podem exigir acesso incluiu ou importaram folhas de estilos. Percorrer de folha de estilo no depurador pode abrir folhas de estilo embutidas e importados, e você pode querer adicionar um ponto de interrupção em algum ponto de uma ou mais das folhas de estilo embutidas.
 
@@ -22,9 +21,9 @@ Outro cenário onde a ferramenta da hierarquia XSLT pode ser útil é colocando 
 
 O exemplo neste tópico demonstra a depuração em uma folha de estilos referenciada.
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>Para depurar em uma folha de estilos referenciado
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Para depurar em uma folha de estilos referenciada
 
-1. Abrir um documento XML no Visual Studio. Este exemplo usa o documento a seguir:
+1. Abrir um documento XML no Visual Studio. Este exemplo usa o seguinte documento:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -48,7 +47,7 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </COLLECTION>
     ```
 
-1. Adicione o seguinte *xslincludefile.xsl*:
+1. Adicione o seguinte *xslincludefile. xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -71,7 +70,7 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </xsl:stylesheet>
     ```
 
-3.  Adicione o seguinte *xslinclude.xsl* arquivo:
+3.  Adicione o seguinte *xslinclude. xsl* arquivo:
 
     ```xml
     <?xml version='1.0'?>
@@ -109,8 +108,8 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
 
 5.  Inicie a depuração.
 
-6.  Quando o depurador interrompe na instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a **intervir** botão. A depuração pode ser continuada na folha de estilos referenciado. A hierarquia é visível e o designer o caminho correto.
+6.  Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a **intervir** botão. A depuração pode ser continuada na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: o criador de perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Passo a passo: Criador de perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)

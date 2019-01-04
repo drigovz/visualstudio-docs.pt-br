@@ -1,9 +1,6 @@
 ---
 title: Designer da faixa de opções
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
@@ -29,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160cde8b4a2e6034cb9c5ced7c6a13d57c1b546c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928861"
 ---
 # <a name="ribbon-designer"></a>Designer da faixa de opções
   O Designer de faixa de opções é uma tela de design visual. Use o Designer de faixa de opções para adicionar guias personalizadas, grupos e controles à faixa de opções de um aplicativo do Microsoft Office.

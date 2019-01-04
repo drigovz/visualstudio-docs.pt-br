@@ -1,9 +1,6 @@
 ---
 title: Instalar VSPackages com o Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3bb49f02b7c160aa879c0652a081d8fd6cb026a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: e0efb1b5c45595383f62d08399906cbb1b546479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827829"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalando VSPackages com o Windows Installer
 Integrando o VSPackage em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] requer mais do que apenas copiar arquivos para um computador do usuário. Instalador do VSPackage deve instalar o VSPackage e seus arquivos dependentes e registre-se e integrá-los em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. O VSPackage pode tirar proveito dos recursos de integração como exibir um ícone no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] inicial da tela e a caixa de diálogo sobre.  
@@ -51,7 +48,7 @@ Integrando o VSPackage em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_m
  [Implantar tipos de projeto](../../extensibility/internals/deploying-project-types.md)  
  Discute como usar o novo agregador de tipo de projeto para tipos de projeto de código gerenciado.  
   
- [Como gerar informações de registro para um instalador](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [Como: Gerar informações de registro para um instalador](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  Explica como usar RegPkg.exe para gerar um manifesto de registro para um VSPackage gerenciado.  
   
  [Comandos que devem ser executados após a instalação](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  

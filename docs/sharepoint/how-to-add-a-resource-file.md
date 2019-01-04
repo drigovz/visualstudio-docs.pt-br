@@ -1,13 +1,8 @@
 ---
-title: 'Como: adicionar um arquivo de recurso | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar um arquivo de recurso | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e21aefb95dab4b4a6fdc852159c7a0f226e613f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877621"
 ---
-# <a name="how-to-add-a-resource-file"></a>Como: adicionar um arquivo de recurso
+# <a name="how-to-add-a-resource-file"></a>Como: Adicionar um arquivo de recurso
   Os comandos para adicionar arquivos de recurso é no menu de atalho do nó da solução e nós de recurso no Gerenciador de soluções. Para obter mais informações, consulte [soluções do SharePoint Localizando](../sharepoint/localizing-sharepoint-solutions.md).  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Para adicionar um arquivo de recurso global para uma solução do SharePoint  
@@ -57,5 +52,3 @@ ms.locfileid: "49861183"
   
 ## <a name="see-also"></a>Consulte também
  [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

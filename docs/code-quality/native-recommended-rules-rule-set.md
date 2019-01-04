@@ -2,19 +2,18 @@
 title: Conjunto de regras recomendadas nativo
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 12e9e271e0fd6881ae19581a1678f131719c4b34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882796"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de regras recomendadas nativo
 
@@ -60,7 +59,7 @@ A regras nativas recomendadas enfocam os problemas mais críticos e comuns no se
 |[C6270](../code-quality/c6270.md)|Falta argumento float para formatar a função|
 |[C6271](../code-quality/c6271.md)|Argumento extra para formatar função|
 |[C6272](../code-quality/c6272.md)|Argumento diferente de float para formatar a função|
-|[C6273](../code-quality/c6273.md)|Argumento não inteiro para formatar função|
+|[C6273](../code-quality/c6273.md)|Argumento não inteiro para formatar a função|
 |[C6274](../code-quality/c6274.md)|Argumento diferente de caractere para formatar a função|
 |[C6276](../code-quality/c6276.md)|Conversão de cadeia de caracteres inválida|
 |[C6277](../code-quality/c6277.md)|Chamada CreateProcess inválida|
@@ -127,7 +126,7 @@ A regras nativas recomendadas enfocam os problemas mais críticos e comuns no se
 |[C6518](../code-quality/c6518.md)|Tamanho gravável em buffer não gravável|
 |[C6522](../code-quality/c6522.md)|Tipo de cadeia de caracteres de tamanho inválido|
 |[C6525](../code-quality/c6525.md)|Local inatingível da cadeia de caracteres inválido|
-|[C6527](../code-quality/c6527.md)|Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void|
+|[C6527](../code-quality/c6527.md)|Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void|
 |[C6530](../code-quality/c6530.md)|Estilo de cadeia de caracteres de formato não reconhecido|
 |[C6540](../code-quality/c6540.md)|O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função|
 |[C6551](../code-quality/c6551.md)|Especificação de tamanho inválido: expressão não analisável|
@@ -228,16 +227,16 @@ A regras nativas recomendadas enfocam os problemas mais críticos e comuns no se
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|
 |[C28285](../code-quality/c28285.md)|Para função, erro de sintaxe no parâmetro|
 |[C28286](../code-quality/c28286.md)|Para função, erro de sintaxe perto do fim|
-|[C28287](../code-quality/c28287.md)|Para função, erro de sintaxe na \_em\_() anotação (nome de parâmetro não reconhecido)|
-|[C28288](../code-quality/c28288.md)|Para função, erro de sintaxe na \_em\_() anotação (nome de parâmetro inválido)|
-|[C28289](../code-quality/c28289.md)|Para função: ReadableTo ou WritableTo não tinha uma especificação de limite como parâmetro|
+|[C28287](../code-quality/c28287.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)|
+|[C28288](../code-quality/c28288.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)|
+|[C28289](../code-quality/c28289.md)|Para a função: ReadableTo ou WritableTo não tinha uma especificação de limite como um parâmetro|
 |[C28290](../code-quality/c28290.md)|a anotação para função contém mais Externos que o número real de parâmetros|
 |[C28291](../code-quality/c28291.md)|pós null/notnull em deref nível 0 não tem sentido para a função.|
 |[C28300](../code-quality/c28300.md)|Operandos da expressão de tipos incompatíveis para o operador|
 |[C28301](../code-quality/c28301.md)|Não há anotações para a primeira declaração da função.|
-|[C28302](../code-quality/c28302.md)|Um extra \_Deref\_ operador foi encontrado na anotação.|
-|[C28303](../code-quality/c28303.md)|Um ambíguo \_Deref\_ operador foi encontrado na anotação.|
-|[C28304](../code-quality/c28304.md)|Um posicionado \_Notref\_ operador foi encontrado aplicado ao token.|
+|[C28302](../code-quality/c28302.md)|Foi encontrado um operador extra \_Deref\_ na anotação.|
+|[C28303](../code-quality/c28303.md)|Foi encontrado um operador ambíguo \_Deref\_ na anotação.|
+|[C28304](../code-quality/c28304.md)|Foi encontrado um operador \_Notref\_ posicionado inadequadamente aplicado ao token.|
 |[C28305](../code-quality/c28305.md)|Foi encontrado um erro durante a análise de um token.|
 |[C28306](../code-quality/c28306.md)|A anotação no parâmetro é obsoleta|
 |[C28307](../code-quality/c28307.md)|A anotação no parâmetro é obsoleta|

@@ -1,8 +1,7 @@
 ---
-title: 'CA2235: marcar todos os campos não serializáveis'
+title: 'CA2235: Marcar todos os campos não serializáveis'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2235
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad4328c13403b1bea6a4358661b3347404592c02
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986564"
 ---
-# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: marcar todos os campos não serializáveis
+# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Marcar todos os campos não serializáveis
 
 |||
 |-|-|
@@ -54,16 +53,16 @@ ms.locfileid: "45549713"
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2236: chamar métodos de classe base em tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Chamar métodos da classe base em tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240: implementar ISerializable corretamente](../code-quality/ca2240-implement-iserializable-correctly.md)
+ [CA2240: Implementar ISerializable corretamente](../code-quality/ca2240-implement-iserializable-correctly.md)
 
  [CA2229: implementar construtores de serialização](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238: implementar métodos de serialização corretamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+ [CA2238: Implementar métodos de serialização corretamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2237: marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: fornecer métodos de desserialização para campos opcionais](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239: Fornecer métodos de desserialização para campos opcionais](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: proteger construtores de serialização](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: Construtores de serialização segura](../code-quality/ca2120-secure-serialization-constructors.md)

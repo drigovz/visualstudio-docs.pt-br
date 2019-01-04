@@ -1,9 +1,6 @@
 ---
 title: Acesso global a objetos em projetos do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -33,12 +30,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e01519600747a486fd2e719c720329a6423dd002
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 843eba9cceefb2360ed24284a80f4359d092fd89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909067"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
   Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma classe chamada `Globals` no projeto. Você pode usar o `Globals` classe para acessar vários itens de projeto diferente no tempo de execução de qualquer código no projeto.  
@@ -87,5 +84,3 @@ ms.locfileid: "53648940"
  [Item de host da pasta de trabalho](../vsto/workbook-host-item.md)   
  [Item de host da planilha](../vsto/worksheet-host-item.md)   
  [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

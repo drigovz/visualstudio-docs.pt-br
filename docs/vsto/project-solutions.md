@@ -1,9 +1,6 @@
 ---
 title: Soluções de projeto
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be194bb2812f46163a6844a9fa038ee79b5f0e7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac5b8a8f26112a849567777cefb907c95a98656
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909769"
 ---
 # <a name="project-solutions"></a>Soluções de projeto
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para o Microsoft Office Project. Você pode usar suplementos do VSTO para automatizar o projeto, estender os recursos de projeto ou personalizar a interface de usuário (IU) do Project.  
@@ -71,11 +68,9 @@ ms.locfileid: "35670198"
  [Introdução à programação VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
  [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md)   
  [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)   
  [Project 2010 e Project Server 2010 no desenvolvimento do Office](http://go.microsoft.com/fwlink/?LinkId=199016)  
-  
-  

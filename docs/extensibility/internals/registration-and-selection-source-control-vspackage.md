@@ -1,9 +1,6 @@
 ---
 title: Registro e seleção (VSPackage de controle do código-fonte) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930707"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro e seleção (VSPackage do controle do código-fonte)
 Um controle de fonte VSPackage deve ser registrado para expô-lo para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se mais de um VSPackage de controle de origem estiver registrado, o usuário pode selecionar quais VSPackage carregar em momentos apropriados. Ver [VSPackages](../../extensibility/internals/vspackages.md) para obter mais detalhes sobre os VSPackages e como registrá-los.  
@@ -34,7 +31,7 @@ Um controle de fonte VSPackage deve ser registrado para expô-lo para o [!INCLUD
 ### <a name="registry-entries"></a>Entradas do registro  
  Um pacote de controle de origem precisa de três GUIDs privadas:  
   
-- GUID do pacote: Isso é o GUID do principal para o pacote que contém a implementação de controle do código-fonte (chamada ID_Package nesta seção).  
+- GUID do pacote: Esse é o GUID principal para o pacote que contém a implementação de controle do código-fonte (chamada ID_Package nesta seção).  
   
 - GUID de controle do código-fonte: Isso é um GUID para o controle de origem usado para registrar com o Stub de controle de origem Visual do Studio de VSPackage e também é usado como um contexto de interface do usuário do comando GUID. O serviço de controle do código-fonte GUID está registrado sob o GUID de controle do código-fonte. No exemplo, o GUID de controle do código-fonte é chamado ID_SccProvider.  
   

@@ -1,9 +1,6 @@
 ---
-title: 'Como: adicionar uma propriedade a um tipo de Item de projeto personalizado do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar uma propriedade a um tipo de Item de projeto personalizado do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a74fbffd5a1d8e9c5e660961d93f7181e51827a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 44b791c5855838cc8108902305d016fe7f9900ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950479"
 ---
-# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Como: adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint
+# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Como: Adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint
   Quando você define um tipo de item de projeto personalizado do SharePoint, você pode adicionar uma propriedade para o item de projeto. A propriedade aparece na **propriedades** janela quando o item de projeto é selecionado na **Gerenciador de soluções**.  
   
- As etapas a seguir pressupõem que você já definiu seu próprio tipo de item de projeto do SharePoint. Para obter mais informações, consulte [como: definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+ As etapas a seguir pressupõem que você já definiu seu próprio tipo de item de projeto do SharePoint. Para obter mais informações, confira [Como: Definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
 ### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>Para adicionar uma propriedade a uma definição de um tipo de item de projeto  
   
@@ -74,8 +71,6 @@ ms.locfileid: "36757000"
  Para implantar o item de projeto, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensão (VSIX) do pacote para o assembly, o modelo e os outros arquivos que você deseja distribuir com o item de projeto. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Consulte também
- [Como: definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [Como: adicionar um item de menu de atalho para um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
+ [Como: Definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
+ [Como: Adicionar um item de menu de atalho para um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
  [Definindo tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
-  
-  

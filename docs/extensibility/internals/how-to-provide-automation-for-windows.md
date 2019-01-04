@@ -1,9 +1,6 @@
 ---
-title: 'Como: fornecer automação para Windows | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Fornecer automação para Windows | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9158ac7d133d30ae5fbca0281cbc55138e041f6
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: eb5fe307cd477f1c1a30b402cce05850a1a35ae1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841233"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>Como: fornecer automação para windows
+# <a name="how-to-provide-automation-for-windows"></a>Como: Fornecer automação para windows
 Você pode fornecer automação para janelas de documento e ferramenta. Fornecer automação é recomendável sempre que você deseja disponibilizar os objetos de automação em uma janela, e o ambiente já não fornecem um objeto de automação prontas para uso, como ocorre com uma lista de tarefas.
 
 ## <a name="automation-for-tool-windows"></a>Automação das janelas de ferramentas

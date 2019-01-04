@@ -1,22 +1,19 @@
 ---
 title: Atrasa a diagnosticar a extensão de interface do usuário no Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 1bf5dba23622c5dc3d964bdac19fec210aa60b1e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887705"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Como: interface do usuário de diagnosticar atrasos causados pelas extensões
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Como: Diagnosticar atrasos na interface do usuário causados pelas extensões
 
 Quando a interface do usuário se torna sem resposta, o Visual Studio examina a pilha de chamadas do thread da interface do usuário, começando com a folha e funcionando em direção à base. Se o Visual Studio determinar que um quadro de pilha de chamadas pertence a um módulo que é parte de uma extensão instalada e habilitada, ele mostrará uma notificação.
 

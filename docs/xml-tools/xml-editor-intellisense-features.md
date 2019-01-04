@@ -2,7 +2,6 @@
 title: Funcionalidades do IntelliSense o editor XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36350123135142e84adff0c3189ba81e31ebf6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986200"
 ---
 # <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense do Editor de XML
 
@@ -45,7 +44,7 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
 
 -   Nomes de parâmetro para um modelo chamado determinado.
 
-Para obter mais informações, consulte [instruções passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.
+Para obter mais informações, confira [Passo a passo: Usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.
 
 ## <a name="auto-completion"></a>Preenchimento automático
  O editor XML também facilita editando XML preenchendo na sintaxe XML necessário para você. Por exemplo, se você digitar a seguinte marcação inicial:
@@ -122,4 +121,4 @@ Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense
 
 - [Editor de XML](../xml-tools/xml-editor.md)
 - [Usando o IntelliSense](../ide/using-intellisense.md)
-- [Passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Passo a passo: Usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

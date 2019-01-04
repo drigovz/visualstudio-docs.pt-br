@@ -1,15 +1,10 @@
 ---
-title: 'Como: adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880855"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Como: adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Como: Adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer
   Para configurar um pacote para implantar recursos e itens do SharePoint, você pode usar o Packaging Explorer. Você pode ajustar os itens de projeto do SharePoint e recursos em seu arquivo. wsp.  
   
- Como alternativa, você pode usar o Designer de empacotamento para exibir e reordenar os recursos para alterar a ordem de ativação. Para obter mais informações, consulte [como: adicionar e remover funcionalidades e itens de um pacote usando o Designer de pacote](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
+ Como alternativa, você pode usar o Designer de empacotamento para exibir e reordenar os recursos para alterar a ordem de ativação. Para obter mais informações, confira [Como: Adicionar e remover funcionalidades e itens de um pacote usando o Designer de pacote](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
 ## <a name="open-the-packaging-explorer"></a>Abra o Gerenciador de empacotamento  
  Você pode usar o procedimento a seguir para abrir o Gerenciador de pacotes, se sua solução do Visual Studio tem pelo menos um projeto do SharePoint. Como alternativa, o Packaging Explorer é aberto automaticamente quando você exibe um designer de pacote ou recurso. Depois de fechar todos os designers de recurso e pacote, também fecha o Packaging Explorer.  
@@ -69,4 +64,3 @@ ms.locfileid: "36755606"
   
 ## <a name="see-also"></a>Consulte também
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

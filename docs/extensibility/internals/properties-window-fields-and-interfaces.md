@@ -1,9 +1,6 @@
 ---
 title: Interfaces e campos da janela Propriedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149c02918ec909c03c1102a5fc0f1643b79fb46d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872220"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces e campos da janela Propriedades
 O modelo para a seleção determinar quais informações são exibidas na **propriedades** janela baseia-se na janela que tem o foco no IDE. Cada janela e o objeto dentro da janela selecionada, podem ter seu objeto de contexto de seleção enviados por push para o contexto da seleção global. O ambiente atualiza o contexto da seleção global com valores de um quadro de janela quando essa janela tem o foco. Quando o foco é alterado, portanto, não o contexto da seleção.  

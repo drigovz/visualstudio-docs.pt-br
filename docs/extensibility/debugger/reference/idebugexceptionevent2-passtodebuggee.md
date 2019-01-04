@@ -1,9 +1,6 @@
 ---
 title: IDebugExceptionEvent2::PassToDebuggee | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2::PassToDebuggee
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1fb575299000e4b9ab894a4700fdf314d17d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 338127784a7ea4ee474edf1bfc58a75c5df7704d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945607"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 Especifica se a exceção deve ser passada para o programa que está sendo depurado quando a execução é retomada, ou se a exceção deve ser descartada.  
@@ -28,14 +25,14 @@ Especifica se a exceção deve ser passada para o programa que está sendo depur
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT PassToDebuggee(  
-   BOOL fPass  
+HRESULT PassToDebuggee(  
+   BOOL fPass  
 );  
 ```  
   
 ```csharp  
-int PassToDebuggee(  
-   int fPass  
+int PassToDebuggee(  
+   int fPass  
 );  
 ```  
   

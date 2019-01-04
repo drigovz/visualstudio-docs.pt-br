@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Chamar o código em um suplemento do VSTO do VBA'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915897"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Passo a passo: Chamar o código em um suplemento do VSTO do VBA
   Este passo a passo demonstra como expor um objeto em um suplemento do VSTO para outras soluções do Microsoft Office, incluindo o Visual Basic for Applications (VBA) e COM VSTO Add-ins.  
@@ -57,7 +54,7 @@ ms.locfileid: "49843815"
   
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1.  Criar um projeto de suplemento do VSTO do Excel com o nome **ExcelImportData**, usando o modelo de projeto do suplemento do VSTO do Excel. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Criar um projeto de suplemento do VSTO do Excel com o nome **ExcelImportData**, usando o modelo de projeto do suplemento do VSTO do Excel. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o **ThisAddIn.cs** ou **ThisAddIn. vb** arquivo de código e adiciona os **ExcelImportData** projeto ao **Gerenciador de soluções**.  
   
@@ -116,7 +113,7 @@ ms.locfileid: "49843815"
 3.  Na faixa de opções, clique no **desenvolvedor** guia.  
   
     > [!NOTE]  
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  No **código** , clique em **Visual Basic**.  
   
@@ -149,7 +146,7 @@ ms.locfileid: "49843815"
   
 -   Use o `ThisAddIn` classe para automatizar o aplicativo host e executar outras tarefas em projetos de suplemento do VSTO. Para obter mais informações, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
   
--   Crie um painel de tarefas personalizado em um suplemento do VSTO. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md) e [como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+-   Crie um painel de tarefas personalizado em um suplemento do VSTO. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md) e [como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 -   Personalize a faixa de opções em um suplemento do VSTO. Para obter mais informações, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md) e [como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
@@ -157,8 +154,6 @@ ms.locfileid: "49843815"
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Chamar o código no VSTO Add-ins de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Personalizar os recursos de interface do usuário usando interfaces de extensibilidade](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Controle de gráfico
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.ExcelChart
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 439d31b05a861a7c83a10fa728a1e8d3defb305f
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: edeaa0df7841795548637cabbd471daad9d2e878
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826199"
 ---
 # <a name="chart-control"></a>Controle de gráfico
   O <xref:Microsoft.Office.Tools.Excel.Chart> controle é um objeto de gráfico que expõe eventos. Quando você adiciona um gráfico em uma planilha, o Visual Studio cria um <xref:Microsoft.Office.Tools.Excel.Chart> do objeto que você pode programar diretamente sem ter que percorrer o modelo de objeto do Microsoft Office Excel.  
@@ -34,7 +31,7 @@ ms.locfileid: "53248079"
 ## <a name="create-the-control"></a>Criar o controle  
  Você pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles a uma planilha do Microsoft Office Excel em tempo de design ou em tempo de execução em um projeto de nível de documento.  
   
- Você pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles a uma planilha em tempo de execução em um suplemento do VSTO. Confira mais informações em [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md).  
+ Você pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles a uma planilha em tempo de execução em um suplemento do VSTO. Para obter mais informações, confira [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Gráfico criado dinamicamente objetos não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -84,5 +81,3 @@ ms.locfileid: "53248079"
  [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)   
  [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

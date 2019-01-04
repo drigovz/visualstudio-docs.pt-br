@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0216fab44ddc52c2d01c27365449377fb899e1a6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5db3772b782af666023f39fd833e18ba2092c176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989144"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Criando processadores de diretiva de modelo de texto T4 personalizados
 
@@ -64,7 +63,7 @@ Depois de todas as chamadas para ProcessDirective (), o mecanismo de modelagem c
 
 -   `string GetClassCodeForProcessingRun()` -Retorna o código de métodos, propriedades e outras declarações que o código de modelo pode usar. A maneira mais fácil de fazer isso é criar uma cadeia de caracteres que contém o código c# ou Visual Basic. Para fazer com que o processador de diretriz capaz de sendo chamado de um modelo que use qualquer linguagem CLR, você pode construir as instruções de como uma árvore CodeDom e, em seguida, retornar o resultado de serializar a árvore no idioma usado pelo modelo.
 
--   Para obter mais informações, consulte [instruções passo a passo: Criando um processador de diretriz personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+-   Para obter mais informações, confira [Passo a passo: Criando um processador de diretriz personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Consulte também
 

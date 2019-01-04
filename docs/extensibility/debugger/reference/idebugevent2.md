@@ -1,9 +1,6 @@
 ---
 title: IDebugEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff8be869bd65def16ca0519f7c87ea82320bb99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca850f06fa2c17bb6f7c6ccb0756ad2498c67b9d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870158"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-Essa interface é usada para comunicar informações de depuração de críticos, como parar em um ponto de interrupção e informações não-críticas, como uma mensagem de depuração.  
+Essa interface é usada para comunicar informações de depuração essenciais, como interromper um ponto de interrupção e informações não-críticas, como uma mensagem de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -32,12 +29,12 @@ IDebugEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DE) e o fornecedor de porta personalizada implementam essa interface no mesmo objeto, como todas as outras interfaces de evento.  
+ O mecanismo de depuração (DES) e o fornecedor de porta personalizada implementam essa interface no mesmo objeto, como todas as outras interfaces de evento.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Usando a interface do argumento IID (ID) fornecido ao [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ou [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), chama o Gerenciador de sessão de depuração (SDM) [QueryInterface](/cpp/atl/queryinterface) no `IDebugEvent2` interface obter a interface de eventos apropriado.  
+ Usando a interface do argumento IID (ID) fornecido ao [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ou [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), o Gerenciador de sessão de depuração (SDM) chama [QueryInterface](/cpp/atl/queryinterface) no `IDebugEvent2` interface para obter a interface de eventos apropriado.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  A tabela a seguir mostra os métodos de `IDebugEvent2`.  
   
 |Método|Descrição|  
@@ -55,6 +52,6 @@ IDebugEvent2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
