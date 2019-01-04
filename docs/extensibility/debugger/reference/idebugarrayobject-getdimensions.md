@@ -1,9 +1,6 @@
 ---
 title: IDebugArrayObject::GetDimensions | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayObject::GetDimensions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a931b488f2827e59a6b9b9ecaf86bf938ddc72a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f58db8f1f9d847f7ca69c2c829b57f1e45b5d66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849344"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Obtém as dimensões da matriz.  
@@ -28,7 +25,7 @@ Obtém as dimensões da matriz.
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetDimensions(   
+HRESULT GetDimensions(   
    DWORD dwCount,  
    DWORD dwDimensions[]  
 );  

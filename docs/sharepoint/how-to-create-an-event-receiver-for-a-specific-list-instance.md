@@ -1,9 +1,6 @@
 ---
-title: 'Como: criar um receptor de evento para uma instância de lista específica | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um receptor de evento para uma instância de lista específica | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818856"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Como: criar um receptor de evento para uma instância de lista específica
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Como: Criar um receptor de evento para uma instância de lista específica
   Um receptor de evento da instância de lista responde a eventos que ocorrem em qualquer instância de uma definição de lista. Embora o modelo de receptor de evento não permite o direcionamento de uma instância de lista específica, você pode modificar um receptor de eventos com escopo em uma definição de lista para responder a eventos em uma instância de lista específica.  
   
  Usar como destino de uma instância de lista específica, na *Elements. XML* para o receptor de evento, substitua `ListTemplateId` com `ListUrl` e adicione a URL da instância de lista.  
@@ -89,6 +86,5 @@ ms.locfileid: "37118374"
      Observe que o receptor de evento não disparam no anúncio novo porque o receptor está configurado para responder apenas a eventos na instância de lista de comunicado personalizado, **TestAnnouncements**.  
   
 ## <a name="see-also"></a>Consulte também
- [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Como: Criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
  [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: Visão geral da integração de controle de origem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902973"
 ---
 # <a name="source-control-integration-overview"></a>Visão geral da integração do controle do código-fonte
 Esta seção compara as duas formas de integrar o controle do código-fonte do Visual Studio; um controle de fonte plug-in e um VSPackage que fornece uma solução de controle do código-fonte e destaca os novos recursos de controle do código-fonte. Visual Studio permite manual alternando VSPackages de controle de origem e plug-ins de controle de origem, bem como a comutação automática baseados em soluções.  
@@ -35,7 +32,7 @@ Esta seção compara as duas formas de integrar o controle do código-fonte do V
   
 1. Criar uma DLL que implementa as funções especificadas na [Plug-ins de controle de origem](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrar a DLL, tornando as entradas do registro apropriado (descrito na [como: instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Registrar a DLL, tornando as entradas do registro apropriado (descrito na [como: Instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Criar um auxiliar de interface do usuário e a exibição quando solicitado pelo pacote de adaptador de controle de origem (o componente do Visual Studio que manipula a funcionalidade de controle do código-fonte por meio do plug-ins de controle de origem)  
   

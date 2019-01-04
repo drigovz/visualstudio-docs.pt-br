@@ -1,9 +1,6 @@
 ---
 title: Personalizando Menus e controles de Editor usando a API herdada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - controls and menus
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fb11419e6fccf4ec3ca510e91bf79702a5a4348
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 30e30bd1ce04c6a554aa1ab737e4c8d7c36163da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851255"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Personalizar controles de editor e Mmenus, usando a API herdada
 Um serviço de linguagem ou em uma exibição de texto pode controlar os controles no editor e menus de contexto. As páginas nesta seção detalham sobre como trabalhar com esses recursos.  
@@ -33,7 +30,7 @@ Um serviço de linguagem ou em uma exibição de texto pode controlar os control
  [Menus de contexto](../extensibility/context-menus.md)  
  Descreve os menus de contexto do editor.  
   
- [Como: atualizar a barra de Status](../extensibility/how-to-update-the-status-bar.md)  
+ [Como: Atualizar a barra de Status](../extensibility/how-to-update-the-status-bar.md)  
  Fornece instruções para atualizar o **barra de Status**.  
   
 ## <a name="related-sections"></a>Seções relacionadas  

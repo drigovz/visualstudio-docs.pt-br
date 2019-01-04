@@ -1,9 +1,6 @@
 ---
 title: 'Como: Adicionar comandos aos menus de atalho'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 37c0c4c54fdb50f56d7d8f6920eedfd15491a6a7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1d046692ecacc108aa3ded15f7724cc5baad739f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930629"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Como: Adicionar comandos aos menus de atalho
   Este tópico demonstra como adicionar comandos ao menu de atalho em um aplicativo do Office usando um suplemento do VSTO.  
@@ -87,4 +84,3 @@ ms.locfileid: "53648423"
  [Passo a passo: Criar menus de atalho para indicadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Personalizar menus de contexto no Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
-  

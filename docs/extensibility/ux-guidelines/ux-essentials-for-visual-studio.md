@@ -1,9 +1,6 @@
 ---
 title: Fundamentos de UX para Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874860"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fundamentos de UX para Visual Studio
 ## <a name="best-practices"></a>Práticas recomendadas  
@@ -63,7 +60,7 @@ ms.locfileid: "49848586"
  - Altura da caixa de diálogo inicial deve ser **menor que 700 pixels**, de modo que ele caiba na resolução mínima de quadro do IDE em 96 dpi.
   
 ### <a name="high-density-displays"></a>Monitores de alta densidade  
- Interface do usuário no Visual Studio deve funcionar bem em DPI todos os fatores que oferece suporte a Windows fora da caixa de dimensionamento: 150%, 200% e % de 250.  
+ Interface do usuário no Visual Studio deve funcionar bem em todos os fatores de dimensionamento de DPI que oferece suporte a Windows fora da caixa: 150%, 200% e % de 250.  
   
 ## <a name="anti-patterns"></a>Antipadrões  
  Visual Studio contém muitos exemplos de interface do usuário que sigam nossas diretrizes e práticas recomendadas. Em um esforço para ser consistente, os desenvolvedores geralmente emprestam de padrões de design de interface do usuário de produto semelhantes a que está compilando. Embora essa seja uma boa abordagem que ajuda a nos orientar consistência na interação do usuário e design visual, podemos ocasionalmente enviar recursos com alguns detalhes que não atender às nossas diretrizes devido a restrições de agendamento ou defeito priorização. Nesses casos, queremos que as equipes de cópia em um destes "antipadrões" porque elas se proliferam inválido ou está inconsistente da interface do usuário dentro do ambiente do Visual Studio.  
@@ -120,15 +117,15 @@ Forçar o usuário leia textos explicativos antes de ignorar a interface do usu�
 ### <a name="using-command-bars-for-settings"></a>Usando barras de comando para configurações  
  **A Figura A** representa esse antipadrão: colocar uma configuração abaixo de um botão de comando que se aplica a mais do que apenas o comando. Nesse esboço, há comandos além de iniciar depuração — como o modo de exibição no navegador, iniciar sem depuração e intervir — que respeita a configuração selecionada.  
 
-  ![Figura a: comando barra antipadrão](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-padrão-FigureA")<br />Figura r: antipadrão comando barra
+  ![Figura a: Antipadrão de barra de comando](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-padrão-FigureA")<br />Figura a: Antipadrão de barra de comando
   
  Um pouco melhor, mas que ainda indesejável, é colocar as configurações desse tipo em barras de ferramentas, conforme mostrado na **Figura B**. Enquanto os botões de divisão ocupar menos espaço e, portanto, uma melhoria em listas suspensas, ambos os designs ainda estiver usando uma barra de ferramentas para promover a algo que não é realmente um comando.  
  
- ![Figura b: melhor, mas ainda um antipadrão de barra comando](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-padrão-FigureB")<br />Figura b: melhor, mas ainda um antipadrão de barra comando
+ ![Figura b: Melhor, mas ainda é um antipadrão de barra comando](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-padrão-FigureB")<br />Figura b: Melhor, mas ainda é um antipadrão de barra comando
  
   Na abordagem correta mostrada na **Figura C**, a configuração está vinculada a uma série de comandos. Não há nenhuma configuração global que está sendo definida e estamos mudando apenas entre quatro comandos. Isso é a única situação em que os comandos na barra de ferramentas são aceitáveis. 
 
- ![Figura c: uso correto de padrão de barra de comando do Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-padrão-FigureC")<br />Use a Figura c: correto do padrão de barra de comando do Visual Studio
+ ![Figura c: Uso correto de padrão de barra de comando do Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-padrão-FigureC")<br />Figura c: Uso correto de padrão de barra de comando do Visual Studio
    
 ### <a name="control-anti-patterns"></a>Antipadrões de controle  
  Alguns antipadrões são uso simplesmente incorreto ou apresentação de um controle ou um grupo de controles.  
@@ -156,7 +153,7 @@ Forçar o usuário leia textos explicativos antes de ignorar a interface do usu�
   
    ![Ignorando o serviço de cor e uso de "Saiba mais" para os hiperlinks são antipadrões do Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "j_HyperlinkIncorrect 0102")<br />Ignorando o serviço de cor e uso de "Saiba mais" para os hiperlinks são antipadrões do Visual Studio.  
   
-   **Uma melhor solução:** faça a pergunta que o usuário deve estar se perguntando, clicando no link.  
+   **Solução melhor:** Digite a pergunta que o usuário deve estar se perguntando, clicando no link.  
   
 -   Como funcionam os serviços do Windows Azure?  
   
@@ -165,6 +162,6 @@ Forçar o usuário leia textos explicativos antes de ignorar a interface do usu�
 #### <a name="using-click-here-for-links"></a>Usando "Clique aqui" para links  
  Hiperlinks devem ser um nome bastante auto-explicativo. É um antipadrão usar "Clique aqui" ou qualquer variação semelhante.  
   
- **Inválido:** "Clique aqui para obter instruções sobre como criar um novo projeto."
+ **Ruim:** "Clique aqui para obter instruções sobre como criar um novo projeto."
   
  **Boa:** "Como criar um novo projeto?"

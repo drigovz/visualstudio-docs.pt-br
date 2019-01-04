@@ -1,8 +1,6 @@
 ---
 title: Acesso a faixa de opções em tempo de execução
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a20297ee0d60173cbd0513f3d34e12f12388bdb
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304617"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989484"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Acesso a faixa de opções em tempo de execução
   Você pode escrever código para mostrar, ocultar e modificar a faixa de opções e permitir que os usuários executar o código de controles em um painel de tarefas personalizado, o painel de ações ou a região de formulário do Outlook.  
@@ -63,6 +61,6 @@ ms.locfileid: "52304617"
  [XML da faixa de opções](../vsto/ribbon-xml.md)   
  [Visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md)   
  [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Explicação passo a passo: Os controles em uma faixa de opções em tempo de execução de atualização](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Personalizar uma faixa de opções do Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)  

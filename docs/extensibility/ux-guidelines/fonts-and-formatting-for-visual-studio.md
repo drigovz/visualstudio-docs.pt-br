@@ -1,9 +1,6 @@
 ---
 title: Fontes e formatação para o Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989037"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> A fonte de ambiente
@@ -104,122 +101,122 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
   
 #### <a name="375-environment-font--light"></a>Fonte de ambiente % 375 + luz  
- **Aparece como:** pt 34 Segoe UI Light  
+ **É exibida como:** 34 pt Segoe UI Light  
  **Use para:** (raro) exclusivo com a marca da interface do usuário, como na página inicial
 
- **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
+ **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML:** definir o estilo de TextBlock ou o rótulo, conforme mostrado.  
+ **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
 #### <a name="310-environment-font--light"></a>Fonte de ambiente % 310 + luz  
- **Aparece como:** pt 28 Segoe UI Light   
+ **É exibida como:** 28 pt Segoe UI Light   
  **Use para:** títulos de caixa de diálogo assinatura grandes, principais de cabeçalho em relatórios  
   
- **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
+ **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML:** definir o estilo de TextBlock ou o rótulo, conforme mostrado.  
+ **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
 #### <a name="200-environment-font--semilight"></a>Fonte do ambiente de 200% + Semilight  
- **Aparece como:** 18 pt Segoe UI Semilight    
+ **É exibida como:** 18 pt Segoe UI Semilight    
  **Use para:** subtítulos, títulos de caixas de diálogo de pequenas e médias  
   
- **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente: 
+ **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente: 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
- **XAML:** definir o estilo de TextBlock ou o rótulo, conforme mostrado:  
+ **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
 #### <a name="155-environment-font"></a>Fonte de ambiente % 155  
- **Aparece como:** Segoe 14 pt da interface do usuário    
+ **É exibida como:** Segoe 14 pt da interface do usuário    
  **Use para:** títulos de seção no documento bem relatórios ou interface do usuário  
   
- **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
+ **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
- **XAML:** definir o estilo de TextBlock ou o rótulo, conforme mostrado:  
+ **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
 #### <a name="133-environment-font"></a>Fonte de ambiente % 133  
- **Aparece como:** 12 pt Segoe da interface do usuário    
+ **É exibida como:** 12 pt Segoe da interface do usuário    
  **Use para:** subtítulos menores no documento e caixas de diálogo de assinatura bem da interface do usuário  
   
- **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
+ **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
- **XAML:** definir o estilo de TextBlock ou o rótulo, conforme mostrado:  
+ **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
 #### <a name="122-environment-font"></a>Fonte de ambiente % 122  
- **Aparece como:** 11 pt Segoe da interface do usuário    
+ **É exibida como:** 11 pt Segoe da interface do usuário    
  **Use para:** seção títulos em caixas de diálogo de assinatura, superior nós na exibição de árvore, navegação de tabulação vertical  
   
- **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
+ **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
- **XAML:** definir o estilo de TextBlock ou o rótulo, conforme mostrado:  
+ **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Aparece como:** em negrito 9 pt Segoe da interface do usuário    
  **Use para:** rótulos e subtítulos em caixas de diálogo de assinatura, relatórios e documentos bem da interface do usuário  
   
- **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
+ **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
- **XAML:** definir o estilo de TextBlock ou o rótulo, conforme mostrado:  
+ **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -327,7 +324,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 - **Dicas de ferramenta.** Exemplo: "Visualizar itens selecionados"  
   
-- **Cabeçalhos de coluna.** Exemplo: "resposta do sistema"  
+- **Cabeçalhos de coluna.** Exemplo: "Resposta do sistema"  
   
 - **Itens de menu.** Exemplo: "Salvar tudo"  
   
@@ -356,7 +353,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Diferenciam maiusculas de minúsculas  
  Diferenciam maiusculas de minúsculas é o método padrão de maiusculas e minúsculas para gravação no qual apenas a primeira palavra da sentença está em maiusculas, junto com qualquer substantivos e os pronomes "I". Em geral, diferenciam maiusculas de minúsculas é mais fácil para um público mundial ler, especialmente quando o conteúdo será convertido por uma máquina. Use diferenciam maiusculas de minúsculas para:  
   
-1.  **Mensagens da barra de status.** Esses são simples, resumo e fornecem apenas informações de status. Exemplo: "carregamento de arquivo de projeto"  
+1.  **Mensagens da barra de status.** Esses são simples, resumo e fornecem apenas informações de status. Exemplo: "Carregamento de arquivo de projeto"  
   
 2.  **Todos os outros elementos de interface do usuário**, incluindo rótulos, caixas de seleção, botões de opção e listar itens de caixa. Exemplo: "Selecionar todos os itens na lista"  
   
@@ -412,37 +409,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:** raros. Exclusivo com marca somente interface do usuário.<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use leve<br /><br /> **Não:**<br /><br /> -Use para interface do usuário que não seja da interface do usuário, como página inicial de assinatura<br />-Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**Aparece como:** pt 34 Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> *Não usado atualmente. Pode ser usada na página inicial.*|  
+|**Uso:** Raros. Exclusivo com marca somente interface do usuário.<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use leve<br /><br /> **Não:**<br /><br /> -Use para interface do usuário que não seja da interface do usuário, como página inicial de assinatura<br />-Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**É exibida como:** 34 pt Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> *Não usado atualmente. Pode ser usada na página inicial.*|  
   
 #### <a name="310-environment-font--light"></a>Fonte de ambiente % 310 + luz  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Título maior em caixas de diálogo de assinatura<br />-Título do relatório principal<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use leve<br /><br /> **Não:**<br /><br /> -Use para interface do usuário que não seja da interface do usuário, como página inicial de assinatura<br />-Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**Aparece como:** pt 28 Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente % 310 &#43; título claro](../../extensibility/ux-guidelines/media/0202-a_ef310.png "a_EF310 0202")|  
+|**Uso:**<br /><br /> -Título maior em caixas de diálogo de assinatura<br />-Título do relatório principal<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use leve<br /><br /> **Não:**<br /><br /> -Use para interface do usuário que não seja da interface do usuário, como página inicial de assinatura<br />-Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**É exibida como:** 28 pt Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente % 310 &#43; título claro](../../extensibility/ux-guidelines/media/0202-a_ef310.png "a_EF310 0202")|  
   
 #### <a name="200-environment-font--semilight"></a>Fonte do ambiente de 200% + Semilight  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Subtítulos<br />-Títulos de caixas de diálogo de pequenas e médias<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use Semilight peso<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**Aparece como:** Semillight de interface do usuário do Segoe 18 pt<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente de 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "b_EF200 0202")|  
+|**Uso:**<br /><br /> -Subtítulos<br />-Títulos de caixas de diálogo de pequenas e médias<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use Semilight peso<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**É exibida como:** 18 pt Segoe UI Semillight<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente de 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "b_EF200 0202")|  
   
 #### <a name="155-environment-font"></a>Fonte de ambiente % 155  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Os títulos de seção documento bem da interface do usuário<br />-Relatórios<br /><br /> **Tarefas pendentes:** usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**Aparece como:** Segoe 14 pt da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 155](../../extensibility/ux-guidelines/media/0202-c_ef155.png "c_EF155 0202")|  
+|**Uso:**<br /><br /> -Os títulos de seção documento bem da interface do usuário<br />-Relatórios<br /><br /> **Faça:** Usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**É exibida como:** Segoe 14 pt da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 155](../../extensibility/ux-guidelines/media/0202-c_ef155.png "c_EF155 0202")|  
   
 #### <a name="133-environment-font"></a>Fonte de ambiente % 133  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Subtítulos menores nas caixas de diálogo de assinatura<br />-Subtítulos menores no documento bem da interface do usuário<br /><br /> **Tarefas pendentes:** usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**Aparece como:** 12 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 133](../../extensibility/ux-guidelines/media/0202-d_ef133.png "d_EF133 0202")|  
+|**Uso:**<br /><br /> -Subtítulos menores nas caixas de diálogo de assinatura<br />-Subtítulos menores no documento bem da interface do usuário<br /><br /> **Faça:** Usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**É exibida como:** 12 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 133](../../extensibility/ux-guidelines/media/0202-d_ef133.png "d_EF133 0202")|  
   
 #### <a name="122-environment-font"></a>Fonte de ambiente % 122  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Títulos de seção nas caixas de diálogo de assinatura<br />-Nós superior no modo de exibição de árvore<br />-Navegação pela tecla tab vertical<br /><br /> **Tarefas pendentes:** usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**Aparece como:** 11 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 122](../../extensibility/ux-guidelines/media/0202-e_ef122.png "e_EF122 0202")|  
+|**Uso:**<br /><br /> -Títulos de seção nas caixas de diálogo de assinatura<br />-Nós superior no modo de exibição de árvore<br />-Navegação pela tecla tab vertical<br /><br /> **Faça:** Usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**É exibida como:** 11 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 122](../../extensibility/ux-guidelines/media/0202-e_ef122.png "e_EF122 0202")|  
   
 #### <a name="environment-font--bold"></a>Fonte de ambiente + em negrito  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:** todos os outros tipos de texto<br /><br /> **Tarefas pendentes:** usar diferenciam maiusculas de minúsculas<br /><br /> **Não:** itálico ou negrito e itálico|**Aparece como:** Segoe 9 pt da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "g_EF 0202")|  
+|**Uso:** Todos os outros tipos de texto<br /><br /> **Faça:** Usar diferenciam maiusculas de minúsculas<br /><br /> **Não:** Itálico ou negrito itálico|**É exibida como:** 9 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "g_EF 0202")|  
   
 ### <a name="padding-and-spacing"></a>Preenchimento e espaçamento  
  Títulos exigem espaço em torno deles para fornecer-lhes a ênfase apropriada. Esse espaço varia dependendo do tamanho do ponto e o que mais é quase o título, como uma régua horizontal ou uma linha de texto na fonte de ambiente.  

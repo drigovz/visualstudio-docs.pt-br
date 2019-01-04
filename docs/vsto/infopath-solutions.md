@@ -1,9 +1,6 @@
 ---
 title: Soluções InfoPath
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0d346437d6d520ce3beed564c82895ef9f4d1be4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864941"
 ---
 # <a name="infopath-solutions"></a>Soluções InfoPath
   Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para o Microsoft Office InfoPath 2013 e InfoPath 2010. O InfoPath não está disponível no Office 2016.  
@@ -64,11 +61,9 @@ ms.locfileid: "50670852"
  [Introdução à programação VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
  [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md)   
  [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)   
  [O InfoPath 2010 no desenvolvimento do Office](http://go.microsoft.com/fwlink/?LinkId=199012)  
-  
-  
