@@ -1,9 +1,6 @@
 ---
-title: 'Como: alterar programaticamente a formatação em linhas de planilhas que contêm células selecionadas'
-ms.custom: ''
+title: 'Como: Alterar programaticamente a formatação em linhas de planilhas que contêm células selecionadas'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891278"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891794"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Como: alterar programaticamente a formatação em linhas de planilhas que contêm células selecionadas
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Como: Alterar programaticamente a formatação em linhas de planilhas que contêm células selecionadas
   Você pode alterar a fonte de uma linha inteira que contém uma célula selecionada para que o texto está em negrito.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,8 +71,6 @@ ms.locfileid: "49891278"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
- [Como: aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Como: copiar dados e formatar em planilhas de forma programática](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [Como: Aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Como: Copiar dados e formatar em planilhas de forma programática](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

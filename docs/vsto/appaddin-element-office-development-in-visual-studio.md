@@ -1,9 +1,7 @@
 ---
 title: '&lt;appAddin&gt; elemento (desenvolvimento do Office no Visual Studio)'
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7f6caeafc95541cdc939220d76451c4cf5efdb0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905433"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elemento (desenvolvimento do Office no Visual Studio)
   O **appAddin** elemento da `vstov4` namespace armazena informações de personalização específicas para suplementos do VSTO.

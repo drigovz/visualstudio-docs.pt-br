@@ -1,9 +1,6 @@
 ---
-title: 'Como: abrir documentos existentes programaticamente'
-ms.custom: ''
+title: 'Como: Abrir documentos existentes programaticamente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd9e120283c392978a21fa9f796f9eed5e3dab31
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2163ddc7db3f0fbcf32abaa8c845b3838e9d2c98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932149"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>Como: abrir documentos existentes programaticamente
+# <a name="how-to-programmatically-open-existing-documents"></a>Como: Abrir documentos existentes programaticamente
   O <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> método abre o documento do Microsoft Office Word existente, especificado por um nome de arquivo e caminho totalmente qualificado. Esse método retorna um <xref:Microsoft.Office.Interop.Word.Document> que representa o documento aberto.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -48,8 +45,6 @@ ms.locfileid: "35258717"
 -   Um documento chamado *NewDocument.doc* deve existir em um diretório chamado *teste* na unidade C.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: criar novos documentos programaticamente](../vsto/how-to-programmatically-create-new-documents.md)   
- [Como: fechar documentos programaticamente](../vsto/how-to-programmatically-close-documents.md)   
+ [Como: Criar novos documentos programaticamente](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Como: Fechar documentos programaticamente](../vsto/how-to-programmatically-close-documents.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

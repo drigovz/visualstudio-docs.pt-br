@@ -1,9 +1,6 @@
 ---
 title: 'Como: Adicionar controles de indicador a documentos do Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Bookmark.Dialog
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5c89e922f41104be880d598354440a4c6665a39e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904806"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Como: Adicionar controles de indicador a documentos do Word
   Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento no seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto no tempo de execução.  
@@ -136,5 +133,3 @@ ms.locfileid: "53647777"
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)   
  [Como: Redimensionar controles de indicador](../vsto/how-to-resize-bookmark-controls.md)  
-  
-  
