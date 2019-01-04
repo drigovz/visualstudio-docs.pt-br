@@ -1,9 +1,6 @@
 ---
 title: Plug-ins de controle de origem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923634"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de controle do código-fonte
 A seção de referência do SDK de plug-in de controle do código-fonte contém a especificação de interface completa que permite que os sistemas de controle de origem sejam integrados [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Especifica a sintaxe e semântica das várias funções e tipos de dados que o plug-in de controle de origem deve implementar a interface com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE).  
@@ -57,7 +54,7 @@ A seção de referência do SDK de plug-in de controle do código-fonte contém 
  [Glossário](../extensibility/source-control-plug-in-glossary.md)  
  Fornece termos úteis e suas definições para ler a documentação do SDK de plug-in de controle do código-fonte.  
   
- [Como desativar avisos de compatibilidade para plug-ins de controle do código-fonte](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Como: Desativar avisos de compatibilidade para Plug-ins de controle de origem](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Descreve como desabilitar avisos.  
   
 ## <a name="related-sections"></a>Seções relacionadas  

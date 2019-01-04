@@ -1,9 +1,6 @@
 ---
 title: Auxiliares do SDK para depuração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942405"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Auxiliares do SDK para depuração
 Essas funções e as declarações são funções auxiliares global para implementação de mecanismos de depuração, avaliadores de expressão e provedores de símbolo em C++.  
@@ -160,7 +157,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>Definições de métrica  
  Essas definições podem ser usadas para nomes de métrica predefinidos. Os nomes correspondem aos nomes de valor e várias chaves de registro e estão todas definidas como cadeias de caracteres largos: por exemplo, `extern LPCWSTR metrictypeEngine`.  
   
-|Tipos predefinidos de métrica|Descrição: A chave de base para...|  
+|Tipos predefinidos de métrica|Descrição: o A chave de base para...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|Todas as métricas do mecanismo de depuração.|  
 |metrictypePortSupplier|Todas as métricas de fornecedor de porta.|  
@@ -179,7 +176,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Definida como diferente de zero para indicar o suporte para a configuração de pontos de interrupção em alterações nos dados.|  
 |metricDisassembly|Definido como não zero para indicar o suporte para a produção de uma listagem de desmontagem.|  
 |metricDumpWriting|Definida como diferente de zero para indicar o suporte para despejo de gravação (o despejo de memória para um dispositivo de saída).|  
-|metricENC|Definido como não zero para indicar o suporte para editar e continuar. **Observação:** nunca deve definir isso de um mecanismo de depuração personalizado ou deve sempre será definido como 0.|  
+|metricENC|Definido como não zero para indicar o suporte para editar e continuar. **Observação:**  Um mecanismo de depuração personalizado nunca deve definir isso ou deve sempre será definido como 0.|  
 |metricExceptions|Definida como diferente de zero para indicar o suporte para exceções.|  
 |metricFunctionBP|Definida como diferente de zero para indicar o suporte para pontos de interrupção nomeados (os pontos de interrupção que param quando um determinado nome de função é chamado).|  
 |metricHitCountBP|Definida como diferente de zero para indicar o suporte para a configuração de pontos de interrupção "de acertos do ponto" (pontos de interrupção que são disparados somente depois que está sendo atingido um determinado número de vezes).|  
@@ -194,7 +191,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Defina isso como não zero para indicar que o provedor de programa seria sempre carregado localmente.|  
 |metricEngineCanWatchProcess|Defina isso como diferente de zero para indicar que o mecanismo de depuração irá observar para processar eventos em vez do provedor do programa.|  
 |metricRemoteDebugging|Defina isso como diferente de zero para indicar o suporte para depuração remota.|  
-|metricEncUseNativeBuilder|Defina isso como não zero para indicar que o editar e continuar Manager devem usar encbuild.dll do mecanismo de depuração para compilar para editar e continuar. **Observação:** nunca deve definir isso de um mecanismo de depuração personalizado ou deve sempre será definido como 0.|  
+|metricEncUseNativeBuilder|Defina isso como não zero para indicar que o editar e continuar Manager devem usar encbuild.dll do mecanismo de depuração para compilar para editar e continuar. **Observação:**  Um mecanismo de depuração personalizado nunca deve definir isso ou deve sempre será definido como 0.|  
 |metricLoadUnderWOW64|Defina isso como diferente de zero para indicar que o mecanismo de depuração deve ser carregado no processo a ser depurado em WOW, ao depurar um processo de 64 bits; Caso contrário, o mecanismo de depuração será carregado no processo do Visual Studio (que está em execução no WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Defina isso como diferente de zero para indicar que o provedor do programa deve ser carregado do processo de depuração ao depurar um processo de 64 bits em WOW; Caso contrário, ele será carregado no processo do Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Defina isso como diferente de zero para indicar que o processo deve ser interrompida se uma exceção não tratada é lançada em limites de código gerenciados/não gerenciados.|  
@@ -266,7 +263,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[chave do Registro]*|`HKEY_CURRENT_USER` ou `HKEY_LOCAL_MACHINE`.|  
 |*[raiz de versão]*|A versão do Visual Studio (por exemplo, `7.0`, `7.1`, ou `8.0`). No entanto, essa raiz também pode ser modificado usando o **/rootsuffix** alternar para o **devenv.exe**. Para VSIP, esse modificador é normalmente **Exp**, portanto, a raiz da versão seria, por exemplo, 8.0Exp.|  
-|*[métrica root]*|Isso ocorre `AD7Metrics` ou `AD7Metrics(Debug)`, dependendo se a versão de depuração de dbgmetric.lib é usada. **Observação:** se dbgmetric.lib for usada, essa convenção de nomenclatura deverão ser seguida se você tiver diferenças entre depuração e versão versões que devem ser refletidas no registro.|  
+|*[métrica root]*|Isso ocorre `AD7Metrics` ou `AD7Metrics(Debug)`, dependendo se a versão de depuração de dbgmetric.lib é usada. **Observação:**  Se dbgmetric.lib for usada, essa convenção de nomenclatura deverão ser seguida se você tiver diferenças entre depuração e versão versões que devem ser refletidas no registro.|  
 |*[tipo de métrica]*|O tipo de métrica a ser gravado: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc. Eles são definidos como no dbgmetric.h como `metricTypeXXXX`, onde `XXXX` é o nome de tipo específico.|  
 |*[métrica]*|O nome de uma entrada a ser atribuído um valor para definir a métrica. A organização real das métricas depende o tipo de métrica.|  
 |*[valor de métrica]*|O valor atribuído para a métrica. O tipo que o valor deve ter (cadeia de caracteres), números, etc. depende a métrica.|  

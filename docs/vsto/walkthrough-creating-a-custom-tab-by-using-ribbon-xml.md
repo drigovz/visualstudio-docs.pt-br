@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criar uma guia personalizada usando o XML da faixa de opções'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955221"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Passo a passo: Criar uma guia personalizada usando o XML da faixa de opções
   Este passo a passo demonstra como criar uma guia de faixa de opções personalizada usando o **da faixa de opções (XML)** item.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808918"
   
 1.  Criar uma **Word Add-in** projeto com o nome **MyRibbonAddIn**.  
   
-     Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o **ThisAddIn.cs** ou **ThisAddIn. vb** arquivo de código e adiciona os **MyRibbonAddIn** projeto ao **Gerenciador de soluções**.  
   
@@ -155,11 +152,9 @@ ms.locfileid: "38808918"
   
 -   Crie um painel de ações personalizadas. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).  
   
--   Personalize a interface do usuário do Microsoft Office Outlook usando regiões de formulário do Outlook. Para obter mais informações, consulte [instruções passo a passo: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Personalize a interface do usuário do Microsoft Office Outlook usando regiões de formulário do Outlook. Para obter mais informações, confira [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
  [XML da faixa de opções](../vsto/ribbon-xml.md)   
  [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

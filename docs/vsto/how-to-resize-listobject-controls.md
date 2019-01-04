@@ -1,9 +1,6 @@
 ---
-title: 'Como: redimensionar controles ListObject'
-ms.custom: ''
+title: 'Como: Redimensionar controles ListObject'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e655305400915f1ac97a042ac1cca26e52a05ec5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909678"
 ---
-# <a name="how-to-resize-listobject-controls"></a>Como: redimensionar controles ListObject
+# <a name="how-to-resize-listobject-controls"></a>Como: Redimensionar controles ListObject
   Definir o tamanho de um <xref:Microsoft.Office.Tools.Excel.ListObject> controle quando você adiciona uma pasta de trabalho do Microsoft Office Excel; no entanto, você talvez queira para redimensioná-la em um momento posterior. Por exemplo, você talvez queira alterar uma lista de colunas de duas a três colunas.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -40,7 +37,7 @@ ms.locfileid: "49811497"
   
   Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.ListObject> controles, consulte [controle ListObject](../vsto/listobject-control.md).  
   
-  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [How do i: adicionar colunas a um objeto de lista associado a dados em tempo de execução?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Adicionar colunas a um objeto de lista associado a dados em tempo de execução? ](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Redimensionar um controle ListObject em tempo de design  
  Para redimensionar uma lista, você pode clicar e arrastar uma das alças de dimensionamento, ou você pode redefinir seu tamanho na **redimensionar lista** caixa de diálogo.  
@@ -74,7 +71,7 @@ ms.locfileid: "49811497"
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
 ##  <a name="runtimeaddin"></a> Redimensionar um ListObject em tempo de execução em um projeto de suplemento do VSTO  
- Você pode redimensionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle em qualquer planilha aberta em tempo de execução. Para obter mais informações sobre como adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> de controle para uma planilha usando um suplemento do VSTO, consulte [como: Adicionar ListObject controla a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+ Você pode redimensionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle em qualquer planilha aberta em tempo de execução. Para obter mais informações sobre como adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> de controle para uma planilha usando um suplemento do VSTO, consulte [como: Adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 ### <a name="to-resize-a-list-object-programmatically"></a>Para redimensionar um objeto de lista por meio de programação  
   
@@ -95,8 +92,6 @@ ms.locfileid: "49811497"
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Controle ListObject](../vsto/listobject-control.md)   
- [Como: adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Como: redimensionar controles de indicador](../vsto/how-to-resize-bookmark-controls.md)   
- [Como: redimensionar controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)  
-  
-  
+ [Como: Adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Como: Redimensionar controles de indicador](../vsto/how-to-resize-bookmark-controls.md)   
+ [Como: Redimensionar controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)  

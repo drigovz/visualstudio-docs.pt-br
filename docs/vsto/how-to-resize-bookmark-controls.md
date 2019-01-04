@@ -1,9 +1,6 @@
 ---
-title: 'Como: redimensionar controles de indicador'
-ms.custom: ''
+title: 'Como: Redimensionar controles de indicador'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942431"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>Como: redimensionar controles de indicador
+# <a name="how-to-resize-bookmark-controls"></a>Como: Redimensionar controles de indicador
   Definir o tamanho de um <xref:Microsoft.Office.Tools.Word.Bookmark> controle quando você adiciona a um documento do Microsoft Office Word. Você também pode redimensioná-lo em um momento posterior.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,7 +39,7 @@ ms.locfileid: "49924831"
   
    Isso será útil se houver uma alteração significativa no tamanho ou local de um indicador.  
   
-  Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento no seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto no tempo de execução. Para obter mais informações, consulte [como: Adicionar indicador controles a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento no seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto no tempo de execução. Para obter mais informações, confira [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -91,11 +88,9 @@ ms.locfileid: "49924831"
 3.  No **indicador** diálogo caixa, selecione o nome do indicador que você deseja redimensionar e clique em **Add**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
- [Como: redimensionar controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Como: redimensionar controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Como: Redimensionar controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Como: Redimensionar controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

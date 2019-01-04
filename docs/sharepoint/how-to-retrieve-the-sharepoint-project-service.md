@@ -1,9 +1,6 @@
 ---
-title: 'Como: recuperar o serviço de projeto do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Recuperar o serviço de projeto do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891596"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Como: recuperar o serviço de projeto do SharePoint
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Como: Recuperar o serviço de projeto do SharePoint
   Você pode acessar o serviço de projeto do SharePoint nos seguintes tipos de soluções:  
   
 -   Uma extensão do sistema de projeto do SharePoint, como uma extensão de projeto, a extensão de item de projeto ou a definição de tipo de item de projeto. Para obter mais informações sobre esses tipos de extensões, consulte [estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
@@ -47,7 +44,7 @@ ms.locfileid: "49880592"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]  
   
-     Para obter mais informações sobre como criar extensões do projeto, consulte [como: criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+     Para obter mais informações sobre como criar extensões do projeto, consulte [como: Criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>Para recuperar o serviço em uma extensão de item de projeto  
   
@@ -60,7 +57,7 @@ ms.locfileid: "49880592"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]  
   
-     Para obter mais informações sobre como criar extensões de item de projeto, consulte [como: criar uma extensão de item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+     Para obter mais informações sobre como criar extensões de item de projeto, consulte [como: Criar uma extensão de item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>Para recuperar o serviço em uma definição de tipo de item de projeto  
   
@@ -73,7 +70,7 @@ ms.locfileid: "49880592"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]  
   
-     Para obter mais informações sobre como definir tipos de item de projeto, consulte [como: definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+     Para obter mais informações sobre como definir tipos de item de projeto, consulte [como: Definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Recuperar o serviço nas extensões do Gerenciador de servidores  
  Em uma extensão do **conexões do SharePoint** nó no **Gerenciador de servidores**, você pode acessar o serviço de projeto usando o <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> propriedade de um <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objeto.  
@@ -89,14 +86,14 @@ ms.locfileid: "49880592"
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]  
   
-     Para obter mais informações sobre como estender o **conexões do SharePoint** nó no **Gerenciador de servidores**, consulte [como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+     Para obter mais informações sobre como estender o **conexões do SharePoint** nó no **Gerenciador de servidores**, consulte [como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>Recuperar o serviço de outras extensões do Visual Studio  
  Você pode recuperar o serviço de projeto em um VSPackage, ou em qualquer extensão do Visual Studio que tem acesso a um <xref:EnvDTE80.DTE2> objeto no modelo de objeto de automação, como um Assistente de modelo de projeto que implementa o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
   
  Em um VSPackage, você pode solicitar um <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto usando um dos seguintes métodos:  
   
-- O <xref:System.IServiceProvider.GetService%2A> método de um VSPackage gerenciado que deriva de <xref:Microsoft.VisualStudio.Shell.Package> classe. Para obter mais informações, consulte [como: obter um serviço](../extensibility/how-to-get-a-service.md).  
+- O <xref:System.IServiceProvider.GetService%2A> método de um VSPackage gerenciado que deriva de <xref:Microsoft.VisualStudio.Shell.Package> classe. Para obter mais informações, confira [Como: Obtenha um serviço](../extensibility/how-to-get-a-service.md).  
   
 - Estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método. Para obter mais informações, consulte [usar GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice).  
   
@@ -104,6 +101,5 @@ ms.locfileid: "49880592"
   
 ## <a name="see-also"></a>Consulte também
  [Usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
- [Como: obter um serviço](../extensibility/how-to-get-a-service.md)   
- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Como: Obtenha um serviço](../extensibility/how-to-get-a-service.md)   
+ [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)  

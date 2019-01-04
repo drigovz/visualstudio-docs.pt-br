@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Implementar trechos de código | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902182"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>Passo a passo: Trechos de código de implementação
+# <a name="walkthrough-implement-code-snippets"></a>Passo a passo: Implementar trechos de código
 Você pode criar trechos de código e incluí-los em uma extensão de editor para que os usuários da extensão podem adicioná-los para seu próprio código.  
   
  Um trecho de código é um fragmento de código ou outro texto que pode ser incorporado em um arquivo. Para exibir todos os trechos de código que foram registrados para linguagens de programação específicas na **ferramentas** menu, clique em **Gerenciador de trechos de código**. Para inserir um trecho de código em um arquivo, o botão direito do mouse onde você deseja que o trecho de código, clique em Inserir trecho de código, ou **envolver com**, localize o trecho de código que você deseja e, em seguida, clique duas vezes nele. Pressione **guia** ou **Shift**+**guia** para modificar as partes relevantes do trecho de código e, em seguida, pressione **Enter** ou **Esc** aceitá-la. Para obter mais informações, consulte [trechos de código](../ide/code-snippets.md).  
@@ -33,7 +30,7 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
   
 3. Implementar a expansão de trecho de código.  
   
-   Este passo a passo se baseia [instruções passo a passo: exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Este passo a passo se baseia no [passo a passo: Exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -112,7 +109,7 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Para registrar os trechos de código para um GUID específico  
   
-1.  Abra o **CompletionTest** projeto. Para obter informações sobre como criar este projeto, consulte [instruções passo a passo: exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Abra o **CompletionTest** projeto. Para obter informações sobre como criar este projeto, consulte [passo a passo: Exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  No projeto, adicione referências aos assemblies a seguir:  
   

@@ -1,8 +1,7 @@
 ---
-title: 'CA1804: remover locais não usados'
+title: 'CA1804: Remover locais não utilizados'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1804
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 47578cc281334da7eeebeea6eaa5ef0c1c021c8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819855"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: remover locais não usados
+# <a name="ca1804-remove-unused-locals"></a>CA1804: Remover locais não utilizados
 
 |||
 |-|-|
@@ -54,10 +53,10 @@ ms.locfileid: "45545457"
  [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1809: evitar locais excessivos](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809: Evitar locais excessivos](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: examinar parâmetros não usados](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Revisar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)

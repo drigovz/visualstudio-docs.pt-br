@@ -1,9 +1,6 @@
 ---
 title: Propriedade asynctaskmethodbuilder. Objectidfordebugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ObjectForDebugger property, AsyncTaskMethodBuilder structure [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29474e7c47203499f99e6763097fdd0f3f10549a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2c2e2f5ad71d2049c66839ef740b7b65817a820a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851359"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Propriedade asynctaskmethodbuilder. Objectidfordebugger
 Obtém um objeto que pode ser usado para identificar exclusivamente esse construtor para o depurador.  

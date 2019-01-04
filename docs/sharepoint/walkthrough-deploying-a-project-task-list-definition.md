@@ -1,13 +1,8 @@
 ---
 title: 'Passo a passo: Implantando uma definição de lista de tarefas do projeto | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826618"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Passo a passo: Implantar uma definição de lista de tarefas de projeto
 
@@ -143,7 +138,7 @@ Depois que você compilar e testar a lista de tarefas do projeto, você pode imp
 
 Na barra de menus do Visual Studio, escolha **construir** > **implantar solução**.
 
-Visual Studio recicla o pool de aplicativos do IIS, cancela todas as versões existentes da solução, copia o pacote de solução (*. wsp*) do arquivo no SharePoint e, em seguida, ativa seus recursos. Agora você pode usar a solução no SharePoint. Para obter mais informações sobre as etapas de configuração de implantação, consulte [como: editar uma configuração de implantação do SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio recicla o pool de aplicativos do IIS, cancela todas as versões existentes da solução, copia o pacote de solução (*. wsp*) do arquivo no SharePoint e, em seguida, ativa seus recursos. Agora você pode usar a solução no SharePoint. Para obter mais informações sobre as etapas de configuração de implantação, consulte [como: Editar uma configuração de implantação do SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Para implantar a lista de tarefas do projeto em um sistema remoto
 
@@ -175,7 +170,7 @@ Você pode aprender mais sobre como personalizar e implantar soluções do Share
 
 - [Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+- [Como: Criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [Windows PowerShell para o SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
 

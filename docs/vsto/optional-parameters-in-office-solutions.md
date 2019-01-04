@@ -1,9 +1,6 @@
 ---
 title: Parâmetros opcionais em soluções do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34f19c7fa27893b071251f61d01f2dd9c9809d3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905092"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parâmetros opcionais em soluções do Office
   Muitos dos métodos nos modelos de objeto dos aplicativos do Microsoft Office aceitam parâmetros opcionais. Se você usar o Visual Basic para desenvolver uma solução do Office no Visual Studio, você não precisa passar um valor para parâmetros opcionais, porque os valores padrão são usados automaticamente para cada parâmetro ausente. Na maioria dos casos, você também pode omitir parâmetros opcionais em projetos do Visual c#. No entanto, não é possível omitir opcional **ref** parâmetros da `ThisDocument` classe em projetos de nível de documento do Word.  
@@ -74,5 +71,3 @@ ms.locfileid: "49882568"
 ## <a name="see-also"></a>Consulte também  
  [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
  [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

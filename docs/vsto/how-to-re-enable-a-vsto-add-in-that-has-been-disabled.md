@@ -1,9 +1,6 @@
 ---
-title: 'Como: habilitar novamente um suplemento VSTO que tenha sido desabilitado'
-ms.custom: ''
+title: 'Como: Reabilitar um suplemento VSTO que tenha sido desabilitado'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939392"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Como: habilitar novamente um suplemento VSTO que tenha sido desabilitado
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Como: Reabilitar um suplemento VSTO que tenha sido desabilitado
   Aplicativos do Microsoft Office podem desabilitar suplementos do VSTO que tenha um comportamento inesperado. Se um aplicativo não carrega o suplemento do VSTO quando você tenta depurá-lo, o aplicativo pode ter desabilitado rígido ou flexível desabilitado o suplemento do VSTO.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -80,5 +77,3 @@ ms.locfileid: "35670189"
  [Compilar soluções do Office](../vsto/building-office-solutions.md)   
  [Depurar projetos do Office](../vsto/debugging-office-projects.md)   
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)  
-  
-  

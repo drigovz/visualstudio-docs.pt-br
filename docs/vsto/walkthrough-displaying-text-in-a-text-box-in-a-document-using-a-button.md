@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910133"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão
   Este passo a passo demonstra como usar os botões e caixas de texto em uma personalização no nível de documento para o Microsoft Office Word.  
@@ -49,7 +46,7 @@ ms.locfileid: "49822548"
   
 1.  Criar um projeto de documento do Word com o nome **My Button Word**. No assistente, selecione **criar um novo documento**.  
   
-     Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre o novo documento do Word no designer e adiciona o **My Button do Word** projeto ao **Gerenciador de soluções**.  
   
@@ -90,7 +87,7 @@ ms.locfileid: "49822548"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]  
   
-3.  No c#, você deve adicionar um manipulador de eventos para o botão a <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obter informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  No c#, você deve adicionar um manipulador de eventos para o botão a <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obter informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
@@ -108,15 +105,13 @@ ms.locfileid: "49822548"
 ## <a name="next-steps"></a>Próximas etapas  
  Este passo a passo mostra as Noções básicas de como usar os botões e caixas de texto em documentos do Word. Estas são algumas tarefas que podem vir a seguir:  
   
--   Usando uma caixa de combinação para alterar a formatação. Para obter mais informações, consulte [instruções passo a passo: formatação de documento de alteração usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Usando uma caixa de combinação para alterar a formatação. Para obter mais informações, confira [Passo a passo: Formatação do documento de alterações usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
--   Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, consulte [instruções passo a passo: atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, confira [Passo a passo: Atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Controles de formulários do Windows na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Instruções passo a passo usando o Word](../vsto/walkthroughs-using-word.md)   
  [Instruções passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Como: adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Como: Adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

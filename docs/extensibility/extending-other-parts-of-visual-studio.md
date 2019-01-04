@@ -1,9 +1,6 @@
 ---
 title: Estender outras partes do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cad30462879240fd6691c3a7a5a15ea69856b7d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f49d2e10b61bac39941a12f5617fc313f17c208f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967264"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Estender outras partes do Visual Studio
 Há muitas partes mais da IU do Visual Studio que você pode estender. Aqui, mostramos apenas alguns.  
   
 ## <a name="create-a-vspackage"></a>Crie um VSPackage  
- Blocos de construção básicos da extensibilidade do Visual Studio são VSPackages.  Saiba como adicionar um VSPackage: [criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
+ Blocos de construção básicos da extensibilidade do Visual Studio são VSPackages.  Saiba como adicionar um VSPackage: [Criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
 ## <a name="extend-the-toolbox"></a>Estender a caixa de ferramentas  
  Saiba como adicionar novos controles e outros itens à caixa de ferramentas e como usar a funcionalidade de caixa de ferramentas:  
@@ -34,10 +31,10 @@ Há muitas partes mais da IU do Visual Studio que você pode estender. Aqui, mos
 -   [Criar um controle de caixa de ferramentas do Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
 ## <a name="extend-the-status-bar"></a>Estender a barra de status  
- Saiba como ler e gravar para a barra de status e a barra de progresso e como fornecer animações e outra interface de usuário: [estender a barra de status](../extensibility/extending-the-status-bar.md).  
+ Saiba como ler e gravar para a barra de status e a barra de progresso e como fornecer animações e outra interface de usuário: [Estender a barra de status](../extensibility/extending-the-status-bar.md).  
   
 ## <a name="create-custom-start-pages"></a>Criar páginas personalizadas iniciar  
- Saiba como tornar sua própria página inicial, desde o início ou de um exemplo de página de início para download: [criar uma página inicial personalizada](../extensibility/creating-a-custom-start-page.md).  
+ Saiba como tornar sua própria página inicial, desde o início ou de um exemplo de página de início para download: [Criar uma página inicial personalizada](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="write-to-the-activity-log"></a>Gravar no log de atividade  
- Aprenda a gravar no Log de atividade: [como: usar o log de atividades](../extensibility/how-to-use-the-activity-log.md).
+ Aprenda a gravar no Log de atividade: [Como: Usar o log de atividades](../extensibility/how-to-use-the-activity-log.md).

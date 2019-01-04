@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criando um Item de projeto de ação personalizado com um modelo de Item, parte 2 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913930"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.  
   
- Neste passo a passo, você adicionará um Assistente para o item de projeto de ação personalizada que é demonstrado [instruções passo a passo: criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Quando um usuário adiciona um item de projeto de ação personalizada para um projeto do SharePoint, o assistente coleta informações sobre a ação personalizada (como sua localização e a URL para navegar quando um usuário final escolhe-lo) e adiciona essas informações para o *Elements. XML* arquivos no novo item de projeto.  
+ Neste passo a passo, você adicionará um Assistente para o item de projeto de ação personalizada que é demonstrado [passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Quando um usuário adiciona um item de projeto de ação personalizada para um projeto do SharePoint, o assistente coleta informações sobre a ação personalizada (como sua localização e a URL para navegar quando um usuário final escolhe-lo) e adiciona essas informações para o *Elements. XML* arquivos no novo item de projeto.  
   
  Este passo a passo demonstra as seguintes tarefas:  
   
@@ -40,7 +37,7 @@ ms.locfileid: "51296236"
 >  Você pode baixar um exemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
- Para executar este passo a passo, você deve primeiro criar a solução CustomActionProjectItem completando [instruções passo a passo: criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
+ Para executar este passo a passo, você deve primeiro criar a solução CustomActionProjectItem Concluindo [passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Você também precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
@@ -50,12 +47,12 @@ ms.locfileid: "51296236"
   
   Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
   
-- Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, consulte [como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
+- Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, confira [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
   
 - Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Criar o projeto de Assistente
- Para concluir este passo a passo, você deve adicionar um projeto à solução CustomActionProjectItem que você criou na [instruções passo a passo: criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Você implementará o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> de interface e definir o Assistente de interface do usuário neste projeto.  
+ Para concluir este passo a passo, você deve adicionar um projeto à solução CustomActionProjectItem que você criou na [passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Você implementará o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> de interface e definir o Assistente de interface do usuário neste projeto.  
   
 #### <a name="to-create-the-wizard-project"></a>Para criar o projeto de Assistente  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296236"
   
 2.  No **Designer de projeto**, certifique-se de que a estrutura de destino é definida como o .NET Framework 4.5.  
   
-     Para projetos do Visual c#, você pode definir esse valor sobre o **aplicativo** guia. Para projetos do Visual Basic, você pode definir esse valor na **compilar** guia. Para obter mais informações, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Para projetos do Visual c#, você pode definir esse valor sobre o **aplicativo** guia. Para projetos do Visual Basic, você pode definir esse valor na **compilar** guia. Para obter mais informações, confira [Como: Direcionar a uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  No **ItemTemplateWizard** do projeto, adicione uma **janela (WPF)** item ao projeto e, em seguida, o nome do item **WizardWindow**.  
   
@@ -349,6 +346,5 @@ ms.locfileid: "51296236"
  [Definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Criar modelos de projeto do SharePoint para itens de projeto e modelos de item](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Referência de esquema de modelo do Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [IDs e os locais padrão de ação personalizada](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

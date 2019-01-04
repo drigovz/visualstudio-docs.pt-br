@@ -1,9 +1,6 @@
 ---
 title: Suporte a vários modos de exibição de documento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a2fafdaaa2d54cd445017ebd9120d8648bf7067
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e55eed8ffd2651ced96f192972127e710a565eaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830723"
 ---
 # <a name="supporting-multiple-document-views"></a>Dando suporte a várias exibições de documento
 Você pode fornecer mais de uma exibição de um documento com a criação de dados de documento separado e objetos de exibição de documento para que o editor. Alguns casos em que uma exibição de documento adicional seria útil são:  
   
-- Novo suporte de janela: você deseja que seu editor para fornecer dois ou mais exibições do mesmo tipo, para que um usuário que já tem uma janela Abrir no editor pode abrir uma nova janela, selecionando o **nova janela** comando do **janela** menu.  
+- Novo suporte de janela: Você deseja que seu editor para fornecer dois ou mais exibições do mesmo tipo, para que um usuário que já tem uma janela Abrir no editor pode abrir uma nova janela, selecionando o **nova janela** comando da **janela** menu.  
   
-- Exibir o formulário e o código de suporte: você deseja que o editor fornecer modos de exibição de tipos diferentes. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], por exemplo, fornece um modo de exibição de formulário e um modo de exibição de código.  
+- Suporte de modo de exibição de formulário e o código: Você deseja que o editor fornecer modos de exibição de tipos diferentes. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], por exemplo, fornece um modo de exibição de formulário e um modo de exibição de código.  
   
-  Para obter mais informações sobre isso, consulte o procedimento de CreateEditorInstance no arquivo EditorFactory.cs no projeto do editor personalizado criado pelo modelo de pacote do Visual Studio. Para obter mais informações sobre esse projeto, consulte [instruções passo a passo: Criando um Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Para obter mais informações sobre isso, consulte o procedimento de CreateEditorInstance no arquivo EditorFactory.cs no projeto do editor personalizado criado pelo modelo de pacote do Visual Studio. Para obter mais informações sobre esse projeto, consulte [passo a passo: Criar um Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>Sincronizando modos de exibição  
  Quando você implementa vários modos de exibição, o objeto de dados de documento é responsável por manter sincronizadas com os dados de todas as exibições. Você pode usar o evento tratamento interfaces em <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> para sincronizar vários modos de exibição com os dados.  
@@ -42,4 +39,4 @@ Vários modos de exibição
   
  Por padrão, cada modo de exibição (objeto de exibição de documento) está contido no seu próprio quadro de janela (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>). Como já observamos, no entanto, os dados de documento podem ser exibidos em vários modos de exibição. Para habilitar isso, o Visual Studio verifica o RDT para determinar se o documento em questão já está aberto em um editor. Quando chama o IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> para criar o editor, um valor não nulo é retornado no `punkDocDataExisting` parâmetro indica que o documento já está aberto em outro editor. Para obter mais informações sobre como as funções RDT, consulte [tabela de documento em execução](../extensibility/internals/running-document-table.md).  
   
- No seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementação, examinar o objeto de dados de documento retornado no `punkDocDataExisting` para determinar se os dados do documento são apropriados para seu editor. (Por exemplo, apenas os dados HTML devem ser exibidos por um editor de HTML.) Se for o caso, sua fábrica de editor deve fornecer um segundo modo de exibição para os dados. Se o `punkDocDataExisting` parâmetro não é `NULL`, é possível também que o objeto de dados de documento é aberto em outro editor, ou, mais provável, que os dados do documento já estão abertos em uma exibição diferente com o mesmo editor. Se os dados do documento estão abertos em um editor diferente que não dão suporte à sua fábrica de editor, o Visual Studio falhará abrir sua fábrica de editor. Para obter mais informações, consulte [como: anexar exibições para dados de documento](../extensibility/how-to-attach-views-to-document-data.md).
+ No seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementação, examinar o objeto de dados de documento retornado no `punkDocDataExisting` para determinar se os dados do documento são apropriados para seu editor. (Por exemplo, apenas os dados HTML devem ser exibidos por um editor de HTML.) Se for o caso, sua fábrica de editor deve fornecer um segundo modo de exibição para os dados. Se o `punkDocDataExisting` parâmetro não é `NULL`, é possível também que o objeto de dados de documento é aberto em outro editor, ou, mais provável, que os dados do documento já estão abertos em uma exibição diferente com o mesmo editor. Se os dados do documento estão abertos em um editor diferente que não dão suporte à sua fábrica de editor, o Visual Studio falhará abrir sua fábrica de editor. Para obter mais informações, confira [Como: Anexar exibições para dados de documentos](../extensibility/how-to-attach-views-to-document-data.md).

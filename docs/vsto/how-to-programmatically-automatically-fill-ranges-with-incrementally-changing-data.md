@@ -1,9 +1,6 @@
 ---
-title: 'Como: preencher automaticamente por meio de programação intervalos com dados alterados em incrementos'
-ms.custom: ''
+title: 'Como: Por meio de programação automaticamente preencher intervalos com dados alterados em incrementos'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4fff7eb59ff2fe5e17ddf500bf546502492634d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a704fd0cdc18802aff487b5d66b72044303ce2dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895567"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Como: preencher automaticamente por meio de programação intervalos com dados alterados em incrementos
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Como: Por meio de programação automaticamente preencher intervalos com dados alterados em incrementos
   O <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método da <xref:Microsoft.Office.Interop.Excel.Range> objeto permite que você preencha um intervalo em uma planilha com valores automaticamente. Geralmente, o <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método é usado para armazenar aumentando ou diminuindo valores em um intervalo de forma incremental. Você pode especificar o comportamento, fornecendo uma constante opcional do <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumeração.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,10 +53,8 @@ ms.locfileid: "35256397"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com intervalos](../vsto/working-with-ranges.md)   
- [Como: por meio de programação se referir a intervalos de planilhas em código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Como: aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Como: executar cálculos do Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Como: Por meio de programação se referir a intervalos de planilhas em código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Como: Aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Como: Executar cálculos do Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

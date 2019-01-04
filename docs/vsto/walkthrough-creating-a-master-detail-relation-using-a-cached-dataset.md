@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criar uma relação de detalhes mestre usando um conjunto de dados armazenados em cache'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823643"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Passo a passo: Criar uma relação de detalhes mestre usando um conjunto de dados armazenados em cache
   Este passo a passo demonstra como criar uma relação mestre/detalhes em uma planilha e os dados de cache para que a solução possa ser usada offline.  
@@ -57,7 +54,7 @@ ms.locfileid: "49933151"
   
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1. Criar um projeto de pasta de trabalho do Excel com o nome **Meus Master-Detail**, usando o Visual Basic ou c#. Certifique-se de que **criar um novo documento** está selecionado. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Criar um projeto de pasta de trabalho do Excel com o nome **Meus Master-Detail**, usando o Visual Basic ou c#. Certifique-se de que **criar um novo documento** está selecionado. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **Meus Master-Detail** projeto ao **Gerenciador de soluções**.  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933151"
  [Dados em soluções do Office](../vsto/data-in-office-solutions.md)   
  [Dados de cache](../vsto/caching-data.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

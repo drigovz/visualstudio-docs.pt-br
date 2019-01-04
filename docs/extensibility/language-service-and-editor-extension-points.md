@@ -1,9 +1,6 @@
 ---
 title: Serviço de linguagem e pontos de extensão do Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907956"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Pontos de extensão de editor e o serviço de linguagem
 O editor fornece pontos de extensão que você pode estender como partes do componente Managed Extensibility Framework (MEF), incluindo a maioria dos recursos do serviço de linguagem. Essas são as categorias de ponto de extensão principal:  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associado com um adorno.  
   
   > [!NOTE]
-  >  Para obter um exemplo de uma <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consulte a definição de HighlightWordTag na [passo a passo: realce de texto](../extensibility/walkthrough-highlighting-text.md).  
+  >  Para obter um exemplo de uma <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consulte a definição de HighlightWordTag no [passo a passo: Realçar o texto](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associados a regiões que podem ser expandidos ou recolhidos na estrutura de tópicos.  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Para aplicar essa definição de formato para uma marca, fazer referência ao nome definido no atributo de nome da classe (não o nome de exibição).  
   
 > [!NOTE]
->  Para obter um exemplo de uma <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consulte a classe HighlightWordFormatDefinition [passo a passo: realce de texto](../extensibility/walkthrough-highlighting-text.md).  
+>  Para obter um exemplo de uma <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consulte a classe HighlightWordFormatDefinition na [passo a passo: Realçar o texto](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extend-adornments"></a>Estender adornos  
  Adornos definem os efeitos visuais que podem ser adicionados ao texto que é exibido em uma exibição de texto ou ao texto a exibir em si. Você pode definir seu próprio adornos como qualquer tipo de <xref:System.Windows.UIElement>.  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: o nome do adorno.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: a ordenação do adorno em relação a outras camadas de adorno. A classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> define quatro camadas de padrão: estrutura de tópicos, seleção, cursor e texto.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: a ordenação do adorno em relação a outras camadas de adorno. A classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> define quatro camadas de padrão: Seleção, estrutura de tópicos, cursor e texto.  
   
   O exemplo a seguir mostra os atributos de exportação em uma definição de camada de adorno.  
   
@@ -546,11 +543,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Para obter mais informações sobre a implementação de fontes do IntelliSense, consulte as instruções a seguir:  
   
- [Passo a passo: Dicas de ferramenta de QuickInfo vídeo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Passo a passo: Exibir dicas de ferramenta de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Passo a passo: Exibir a Ajuda de assinatura](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Passo a passo: exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Passo a passo: Exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implement-an-intellisense-controller"></a>Implementar um controlador do IntelliSense  
  Para personalizar um controlador, você deve implementar o <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> interface. Além disso, você deve implementar um provedor de controlador junto com os seguintes atributos:  
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Para obter mais informações sobre como usar controladores de IntelliSense, consulte as instruções a seguir:  
   
- [Passo a passo: Dicas de ferramenta de QuickInfo vídeo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Passo a passo: Exibir dicas de ferramenta de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

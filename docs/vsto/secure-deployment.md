@@ -1,9 +1,6 @@
 ---
 title: Implantação segura
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 852e66bb4e29e732093cdac6b44c6791ad9b772d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 40428d36648e159bd8fa90c2680b660b2112ef5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827921"
 ---
 # <a name="secure-deployment"></a>Implantação segura
   Quando você cria uma solução do Office, seu computador de desenvolvimento é atualizado automaticamente para permitir que o código em seu projeto para ser executado. No entanto, quando você implanta sua solução, você deve fornecer a evidência na qual basear uma decisão de confiança da solução com um certificado de assinatura, ou usando o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chave prompt de confiança. Para obter mais informações, consulte [conceder confiança a soluções do Office](../vsto/granting-trust-to-office-solutions.md).  
@@ -51,5 +48,3 @@ ms.locfileid: "50671074"
  [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)   
  [Preparar os computadores para executar ou hospedar soluções do Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [Proteger as soluções do Office](../vsto/securing-office-solutions.md)  
-  
-  

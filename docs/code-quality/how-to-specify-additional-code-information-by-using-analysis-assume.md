@@ -1,8 +1,7 @@
 ---
-title: 'Como: especificar informações de código adicionais usando _Analysis_assume'
+title: 'Como: Especificar informações de código adicionais usando _Analysis_assume'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Analysis_assume
@@ -14,27 +13,27 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8102bbc790019490c4dc2a2ccbfab7d8c33981
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 17e25ace1da6cad9fcdc129b6c6f517c39c9c103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845070"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Como: especificar informações de código adicionais usando _Analysis_assume
-Você pode fornecer dicas para a ferramenta de análise de código para código C/C++ que ajudarão o processo de análise e reduzir avisos. Para fornecer informações adicionais, use a seguinte função:
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Como: Especificar informações de código adicionais usando _Analysis_assume
+Você pode fornecer dicas para a ferramenta de análise de código para código C/C++ que ajudam no processo de análise e reduzir os avisos. Para fornecer informações adicionais, use a função a seguir:
 
  `_Analysis_assume(`  `expr`  `)`
 
- `expr` -qualquer expressão que deve ser avaliada como true.
+ `expr` -qualquer expressão supostamente avaliada como true.
 
- A ferramenta de análise de código pressupõe que a condição representada pela expressão for verdadeira no ponto em que a função é exibida e permanece válido até que a expressão for alterada, por exemplo, por atribuição a uma variável.
+ A ferramenta de análise de código pressupõe que a condição representada pela expressão é verdadeira no ponto em que a função aparece e permanece verdadeira até que a expressão for alterada, por exemplo, por atribuição a uma variável.
 
 > [!NOTE]
->  `_Analysis_assume` não afeta a otimização de código. Fora a ferramenta de análise de código, `_Analysis_assume` é definido como não operacional.
+>  `_Analysis_assume` não afeta a otimização de código. Fora a ferramenta de análise de código, `_Analysis_assume` é definido como inoperante.
 
 ## <a name="example"></a>Exemplo
- O código a seguir usa `_Analysis_assume` para corrigir o aviso de análise de código [C6388](../code-quality/c6388.md):
+ O seguinte código usa `_Analysis_assume` para corrigir o aviso de análise de código [C6388](../code-quality/c6388.md):
 
 ```
 #include<windows.h>

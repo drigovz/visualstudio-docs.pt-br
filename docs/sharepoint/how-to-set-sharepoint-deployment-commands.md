@@ -1,13 +1,8 @@
 ---
-title: 'Como: definir comandos de implantação do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Definir comandos de implantação do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920352"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Como: comandos de implantação do SharePoint de conjunto
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Como: Definir comandos de implantação do SharePoint
   Você pode personalizar o processo de implantação, definindo comandos pré e pós-implantação. Esses comandos são executados antes e depois de outras ações de implantação quando você depura soluções do SharePoint no Visual Studio.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>Para adicionar um comando de pré-implantação  
@@ -49,4 +44,3 @@ ms.locfileid: "37118553"
   
 ## <a name="see-also"></a>Consulte também
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

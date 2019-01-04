@@ -1,9 +1,6 @@
 ---
 title: Fornecer um contexto de serviço de linguagem, usando a API herdada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940252"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Fornecer um contexto de serviço de linguagem, usando a API herdada
 Há duas opções para um serviço de linguagem fornecer o contexto de usuário usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo: fornecer um contexto de marcador de texto, ou fornecer todo o contexto de usuário. As diferenças entre cada são descritas aqui.  
   
- Para obter mais informações sobre como fornecer contexto para um serviço de linguagem que está conectado ao seu próprio editor, consulte [como: fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md).  
+ Para obter mais informações sobre como fornecer contexto para um serviço de linguagem que está conectado ao seu próprio editor, consulte [como: Fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Fornecer o contexto de marcador de texto no Editor  
  Para fornecer contexto para erros do compilador indicados por marcadores de texto na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo, implemente o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interface. Nesse cenário, o serviço de linguagem fornece contexto somente quando o cursor estiver sobre um marcador de texto. Isso permite que o editor fornecer a palavra-chave na posição do cursor para o **ajuda dinâmica** janela sem atributos.  

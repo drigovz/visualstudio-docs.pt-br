@@ -1,9 +1,6 @@
 ---
 title: Solucionar problemas de soluções do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8bc018e104ff06671f1012b1e2e1db4eaa62587e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926548"
 ---
 # <a name="troubleshoot-office-solutions"></a>Solucionar problemas de soluções do Office
   Esta seção contém dicas para resolver problemas comuns que você pode encontrar durante a criação de soluções usando as ferramentas de desenvolvimento do Office no Visual Studio.  
@@ -31,7 +28,7 @@ ms.locfileid: "35669789"
  [Solucionar problemas de erros em soluções do Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Descreve problemas comuns que podem surgir enquanto estiver criando, em execução e teste suas soluções do Office no Visual Studio.  
   
- [Como: habilitar novamente um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [Como: Reabilitar um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  Descreve como reabilitar um suplemento VSTO que foi desabilitado rígida ou flexível.  
   
  [Suporte adicional para erros em soluções do Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
@@ -52,5 +49,3 @@ ms.locfileid: "35669789"
   
  [Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)  
  Com frequência, as listas de perguntas frequentes sobre como programar soluções do Office e fornece links para tópicos que podem ajudar a resolver problemas comuns.  
-  
-  

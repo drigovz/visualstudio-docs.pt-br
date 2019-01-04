@@ -1,8 +1,7 @@
 ---
-title: 'CA1049: tipos que tenham recursos nativos devem ser descartáveis'
+title: 'CA1049: Tipos com recursos nativos devem ser descartáveis'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1049
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9a2eeb032951df86d38075220c14fe98488edef
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fc947358aa4aaf3b9d4bbe646d99e289fa383a06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834744"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: tipos que tenham recursos nativos devem ser descartáveis
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Tipos com recursos nativos devem ser descartáveis
 
 |||
 |-|-|
@@ -58,13 +57,13 @@ O padrão de design recomendado para limpar recursos não gerenciados é fornece
  [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2115: chamar GC.KeepAlive durante o uso de recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+ [CA2115: Chame GC. KeepAlive ao usar recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+ [CA1816: Chame GC. SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA2216: os tipos descartáveis devem declarar o finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+ [CA2216: Os tipos descartáveis devem declarar o finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA1001: tipos que têm campos descartáveis devem ser descartáveis](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+ [CA1001: os tipos com campos descartáveis devem ser descartáveis](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Consulte também
 

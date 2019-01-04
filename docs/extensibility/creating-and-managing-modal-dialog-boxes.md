@@ -1,9 +1,6 @@
 ---
 title: Criar e gerenciar caixas de diálogo modais | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c5a4bdcb6496bae9bf718c38bcf512fbf69756
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f6d7366fe2cce030f47d4bbd78b4baf6e5fff81d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847656"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Criar e gerenciar caixas de diálogo modais
-Quando você cria uma caixa de diálogo modal dentro do Visual Studio, você deve garantir que a janela pai da caixa de diálogo é desabilitada enquanto a caixa de diálogo é exibida e habilite novamente a janela pai depois que a caixa de diálogo é fechada. Se você não fizer isso, você poderá receber o erro: *Microsoft Visual Studio não é possível desligar porque uma caixa de diálogo modal está ativa. Feche a caixa de diálogo e tente novamente.*  
+Quando você cria uma caixa de diálogo modal dentro do Visual Studio, você deve garantir que a janela pai da caixa de diálogo é desabilitada enquanto a caixa de diálogo é exibida e habilite novamente a janela pai depois que a caixa de diálogo é fechada. Se você não fizer isso, você pode receber o erro: *Microsoft Visual Studio não pode desligar porque uma caixa de diálogo modal está ativa. Feche a caixa de diálogo e tente novamente.*  
   
  Há duas maneiras de fazer isso. A maneira recomendada, se você tiver uma caixa de diálogo do WPF é derivá-lo partir <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>e, em seguida, chame <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> para exibir a caixa de diálogo. Se você fizer isso, você precisa gerenciar o estado modal da janela pai.  
   

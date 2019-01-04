@@ -1,17 +1,12 @@
 ---
 title: Importando itens de um Site existente do SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918148"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar itens de um site do SharePoint existente
   O modelo de projeto Importar pacote de solução do SharePoint permite a reutilização elementos como tipos de conteúdo e campos de sites do SharePoint existentes em uma nova [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solução do SharePoint. Embora seja possível executar a maioria das soluções importadas sem modificação, há certas restrições e problemas a serem considerados, especialmente se você modificar todos os itens após importá-los.  
@@ -96,20 +91,20 @@ ms.locfileid: "49832091"
   
  Por exemplo, se você importar a definição de lista ExpenseForms, uma definição de lista com esse nome aparece sob o **definições de listas** pasta no **Gerenciador de soluções** juntamente com seu  *Elements. XML* e *Schema. XML* arquivos. No entanto, seus formulários ASPX e HTML associados podem ser colocados em uma pasta chamada **ExpenseForms** sob o **outros arquivos importados** pasta. Para concluir a importação, mova esses arquivos sob a definição de lista no ExpenseForms **Gerenciador de soluções** e altere o **DeploymentType** propriedade para cada arquivo de **NoDeployment** ao **ElementFile**.  
   
- Durante a importação de receptores de evento, o *Elements. XML* arquivo é copiado para o local correto, mas você deverá incluir manualmente o assembly no pacote de solução para que ele seja implantado com a solução. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] como fazer isso, consulte [como: adicionar e remover assemblies adicionais](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Durante a importação de receptores de evento, o *Elements. XML* arquivo é copiado para o local correto, mas você deverá incluir manualmente o assembly no pacote de solução para que ele seja implantado com a solução. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] como fazer isso, consulte [como: Adicionar e remover assemblies adicionais](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Ao importar fluxos de trabalho, formulários do InfoPath são copiados para o **outros arquivos importados** pasta. Se o *. wsp* arquivo contém um modelo da Web, ele será definido como a página de inicialização na **Gerenciador de soluções**.  
   
 ## <a name="import-fields-and-property-bags"></a>Os recipientes de propriedades e campos de importação
  Quando você importa uma solução que tem vários campos, todas as definições de campo separados são mescladas em um único *Elements. XML* arquivo sob um nó no **Gerenciador de soluções** chamado **campos** . Da mesma forma, todas as entradas de recipiente de propriedade são mescladas em um *Elements. XML* arquivo em um nó chamado **PropertyBags**.  
   
- Campos no SharePoint são colunas de um tipo de dados especificado, como um texto, booliano ou pesquisa. Para obter mais informações, consulte [bloco de construção: colunas e tipos de campo](http://go.microsoft.com/fwlink/?LinkId=182304). Recipientes de propriedade permitem adicionar propriedades aos objetos no SharePoint, tudo de um farm em uma lista em um site do SharePoint. Os recipientes de propriedades são implementados como uma tabela de hash de valores e nomes de propriedade. Para obter mais informações, consulte [gerenciamento de configuração do SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) ou [configurações de recipiente de propriedades do SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
+ Campos no SharePoint são colunas de um tipo de dados especificado, como um texto, booliano ou pesquisa. Para obter mais informações, consulte [bloco de construção: Colunas e tipos de campo](http://go.microsoft.com/fwlink/?LinkId=182304). Recipientes de propriedade permitem adicionar propriedades aos objetos no SharePoint, tudo de um farm em uma lista em um site do SharePoint. Os recipientes de propriedades são implementados como uma tabela de hash de valores e nomes de propriedade. Para obter mais informações, consulte [gerenciamento de configuração do SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) ou [configurações de recipiente de propriedades do SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
   
 ## <a name="delete-items-in-the-project"></a>Excluir itens no projeto
  A maioria dos itens em soluções do SharePoint tem um ou mais itens dependentes. Por exemplo, instâncias de lista dependem de tipos de conteúdo e tipos de conteúdo dependem de campos. Depois de importar uma solução do SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] não notifica você de quaisquer problemas de referência se você excluir um item na solução, mas não seus itens dependentes, até você tentar implantar a solução. Por exemplo, se uma solução importada tiver uma instância de lista que depende de um tipo de conteúdo e excluir o tipo de conteúdo, um erro pode ocorrer na implantação. O erro ocorre se o item dependente não está presente no servidor do SharePoint. Da mesma forma, se um item excluído também tiver um conjunto de propriedades relacionadas, em seguida, exclua essas entradas de recipiente da propriedade do **PropertyBags** *Elements. XML* arquivo. Portanto, se você excluir todos os itens de uma solução importada e você obtiver erros de implantação, verifique se todos os itens dependentes precisam também ser excluídas.  
   
 ## <a name="restore-missing-feature-attributes"></a>Restaurar os atributos de recurso ausentes
- Ao importar soluções, alguns atributos do recurso opcional são omitidos do manifesto de recurso importada. Se você desejar restaurar esses atributos no novo arquivo de recurso, identificar os atributos ausentes, comparando o arquivo de recurso original para o novo manifesto de recurso e siga as instruções no tópico [como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Ao importar soluções, alguns atributos do recurso opcional são omitidos do manifesto de recurso importada. Se você desejar restaurar esses atributos no novo arquivo de recurso, identificar os atributos ausentes, comparando o arquivo de recurso original para o novo manifesto de recurso e siga as instruções no tópico [como: Personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Detecção de conflitos de implantação não será executada em instâncias de lista internas
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] não executar a detecção de conflitos de implantação em instâncias de lista interna (ou seja, lista instâncias padrão que vêm com o SharePoint). Não executar a detecção de conflito é feito para evitar sobrescrever as instâncias de lista interno no SharePoint. A lista interna instâncias ainda são implantados ou atualizados, mas é nunca excluída ou substituída. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Solucionar problemas de implantação e empacotamento do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
@@ -142,4 +137,4 @@ ms.locfileid: "49832091"
  [Passo a passo: Importar itens de um site do SharePoint existente](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Diretrizes para importar fluxos de trabalho reutilizáveis](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
  [Passo a passo: Importar um fluxo de trabalho reutilizável do SharePoint Designer no Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [Como: adicionar um arquivo de modelo BDC existente a um projeto do SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [Como: Adicionar um arquivo de modelo BDC existente a um projeto do SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

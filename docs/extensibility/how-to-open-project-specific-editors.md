@@ -1,9 +1,6 @@
 ---
-title: 'Como: abrir editores específicos do projeto | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Abrir editores específicos do projeto | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45967d2312a7693130126612c7fd052c54e17ce2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96f760163fcbe80e53cca78f7d554563ff6b7225
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934408"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Como: abrir editores específicos do projeto
+# <a name="how-to-open-project-specific-editors"></a>Como: Editores abertos específicos do projeto
 Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente associado ao editor específico para o projeto, o projeto deve abrir o arquivo usando um editor específico do projeto. O arquivo não pode ser delegado para baixo para o mecanismo do IDE para a seleção de um editor. Por exemplo, em vez de usar um editor de bitmap padrão, você pode usar essa opção do editor específicas a um projeto para especificar um editor de bitmap específico que reconhece as informações no arquivo que é exclusivo ao seu projeto.  
   
  As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método quando ele determina se um arquivo deve ser aberto por um projeto específico. Para obter mais informações, consulte [exibir arquivos usando o comando Abrir arquivo](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Use as seguintes diretrizes para implementar o `OpenItem` método para que seu projeto a abrir um arquivo usando um editor específico do projeto.  
@@ -56,5 +53,5 @@ Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente a
   
 ## <a name="see-also"></a>Consulte também  
  [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Como: abrir editores padrão](../extensibility/how-to-open-standard-editors.md)   
- [Como: abrir editores para documentos abertos](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md)   
+ [Como: Abrir editores para documentos abertos](../extensibility/how-to-open-editors-for-open-documents.md)

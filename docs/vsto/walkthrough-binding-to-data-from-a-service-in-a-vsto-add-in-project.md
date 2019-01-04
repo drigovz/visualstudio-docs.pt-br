@@ -1,9 +1,6 @@
 ---
-title: 'Passo a passo: Associar a dados de um serviço em um projeto de suplemento do VSTO'
-ms.custom: ''
+title: 'Passo a passo: Associar aos dados de um serviço em um projeto de suplemento do VSTO'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892284"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Passo a passo: Associar a dados de um serviço em um projeto de suplemento do VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Passo a passo: Associar aos dados de um serviço em um projeto de suplemento do VSTO
   Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este passo a passo demonstra como adicionar controles a um documento do Microsoft Office Word, ligar os controles a dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.  
   
- **Aplica-se a:** as informações neste tópico se aplicam a projetos no nível de aplicativo para Word 2010. Para obter mais informações, confira [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md) (Funcionalidades disponibilizadas pelo aplicativo do Office e pelo tipo de projeto).  
+ **Aplica-se a:** As informações neste tópico se aplicam a projetos no nível de aplicativo para Word 2010. Para obter mais informações, confira [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md) (Funcionalidades disponibilizadas pelo aplicativo do Office e pelo tipo de projeto).  
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49933177"
   
 1.  Criar um projeto de suplemento do VSTO do Word com o nome **serviço de conteúdo MTPS**, usando o Visual Basic ou c#.  
   
-     Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      O Visual Studio abre o `ThisAddIn.vb` ou `ThisAddIn.cs` de arquivos e adiciona o projeto ao **Gerenciador de soluções**.  
   
@@ -62,7 +59,7 @@ ms.locfileid: "49933177"
   
 ### <a name="to-add-the-mtps-content-service-to-the-project"></a>Para adicionar o serviço MTPS de conteúdo para o projeto  
   
-1.  Sobre o **dados** menu, clique em **Add New Data Source**.  
+1.  No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.  
   
 2.  No **Data Source Configuration Wizard**, clique em **Service**e, em seguida, clique em **próxima**.  
   
@@ -119,5 +116,3 @@ ms.locfileid: "49933177"
   
 ## <a name="see-also"></a>Consulte também  
  [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Controles de formulários do Windows na visão geral de documentos do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -30,17 +27,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902487"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controles de formulários do Windows na visão geral de documentos do Office
   Controles dos Windows Forms são objetos que os usuários podem interagir com a inserção ou manipular dados. Nos projetos em nível de documento do Microsoft Office Excel e Microsoft Office Word, você pode adicionar controles de formulários do Windows para o documento ou pasta de trabalho em seu projeto em tempo de design, ou você pode adicionar programaticamente esses controles em tempo de execução. Você pode adicionar esses controles programaticamente para qualquer documento aberto ou a planilha em tempo de execução em um suplemento do VSTO para Excel ou Word.  
   
- Para obter mais informações, consulte [como: adicionar formulários do Windows controla a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+ Para obter mais informações, confira [Como: Adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -121,7 +118,7 @@ ms.locfileid: "49892773"
  Em determinadas condições, o código não é carregado e apenas o bitmap é exibido, como quando o usuário abre a pasta de trabalho no modo de design. Além disso, se o usuário abre a pasta de trabalho em um computador que não tenha o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] instalado, a personalização não pode executar para carregar os controles e, portanto, somente o bitmap do controle está visível. Você deve sempre remover informações pessoais dos controles em pastas de trabalho antes de salvar a pasta de trabalho e enviá-la para outro usuário para garantir que suas informações pessoais não são divulgadas acidentalmente.  
   
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Tamanho do controle de correspondência para o tamanho da célula em uma planilha do Excel  
- Você pode definir o controle a ser redimensionado automaticamente quando o tamanho da célula pai é alterado. Para obter mais informações, consulte [como: redimensionar controles dentro de células da planilha](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
+ Você pode definir o controle a ser redimensionado automaticamente quando o tamanho da célula pai é alterado. Para obter mais informações, confira [Como: Redimensionar controles dentro de células da planilha](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Adicionar componentes que são compartilhados por todas as planilhas  
  Você pode adicionar componentes que você deseja compartilhar entre todas as planilhas, como um <xref:System.Data.DataSet>, para o Designer de pasta de trabalho, em vez de para planilhas. O componente será exibido na bandeja de componentes.  
@@ -155,15 +152,13 @@ ms.locfileid: "49892773"
  [Visão geral do painel de ações](../vsto/actions-pane-overview.md)   
  [Controles dos Windows Forms](/dotnet/framework/winforms/controls/index)   
  [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [Como: adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Como: redimensionar controles dentro de células da planilha](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [Como: ocultar controles em planilhas durante a impressão](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Como: Adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Como: Redimensionar controles dentro de células da planilha](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [Como: Ocultar controles em planilhas durante a impressão](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Passo a passo: Alterar a formatação da planilha usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
  [Passo a passo: Alterar a formatação do documento usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
  [Passo a passo: Exibir texto em uma caixa de texto em uma planilha usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
  [Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
  [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [Explicação passo a passo: Um gráfico em um documento usando botões de opção de atualização](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
- [Explicação passo a passo: Um gráfico em uma planilha usando botões de opção de atualização](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
-  
-  
+ [Passo a passo: Atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
+ [Passo a passo: Um gráfico em uma planilha usando botões de opção de atualização](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Como: procurar um endereço de email em contatos programaticamente'
-ms.custom: ''
+title: 'Como: Pesquisar um endereço de email em contatos de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7b9c4c7d02f3cd1564e6733c46cb821eade7f54
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 767c75bff42bc19b70d4b6dcd35da16c4bb4c099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893348"
 ---
-# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Como: procurar um endereço de email em contatos programaticamente
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Como: Pesquisar um endereço de email em contatos de forma programática
   Este exemplo procura uma pasta de contatos para os contatos que têm o nome de domínio **exemplo.com** em seus endereços de email.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -39,8 +36,6 @@ ms.locfileid: "35670742"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com itens de contato](../vsto/working-with-contact-items.md)   
- [Como: enviar email](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Como: acessar contatos do Outlook de forma programática](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Como: adicionar uma entrada a contatos do Outlook de forma programática](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
-  
-  
+ [Como: Enviar email](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Como: Acessar os contatos do Outlook de forma programática](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Como: Adicionar uma entrada a contatos do Outlook de forma programática](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  

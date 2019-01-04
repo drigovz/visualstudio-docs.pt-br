@@ -1,9 +1,6 @@
 ---
-title: Interfaces (depuração no Visual Studio) | Microsoft Docs
-ms.custom: ''
+title: Interfaces (depuração do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], interfaces
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f5523b28d84b3fd490b2e83823462d4166e7332
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a25e66f6ee86ed0241efceae084d0e8e7abc3488
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889038"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (depuração no Visual Studio)
-Métodos estão listados em ordem alfabética em cada interface na tabela de conteúdo e na página de interface em ordem de Vtable.  
+Métodos estão listados em ordem alfabética em cada interface na tabela de conteúdo e na página de interface na ordem de Vtable.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)  
@@ -31,7 +28,7 @@ Métodos estão listados em ordem alfabética em cada interface na tabela de con
  Descreve as interfaces que são avaliadas expressões em uma pilha de chamadas durante o modo de interrupção.  
   
  [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
- Descreve as interfaces implementadas por um provedor de símbolo para associar tipos de identificadores.  
+ Descreve as interfaces que um provedor de símbolo implementa para associar a tipos de identificadores.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Referência de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  

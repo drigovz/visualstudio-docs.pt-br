@@ -2,7 +2,6 @@
 title: Usando anotações de SAL para reduzir defeitos de código do C/C++
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -14,17 +13,17 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92a48bca7afb59fa83e489c6f5cd96d115d8c872
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 973fcaf1a5c49332223f169cdb668526552cfe12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954325"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Usando anotações de SAL para reduzir defeitos de código do C/C++
-SAL é a linguagem de anotação do código de origem do Microsoft. Usando anotações de código fonte, você pode tornar a intenção por trás de seu código explícita. Essas anotações também habilitar ferramentas de análise estática automatizado analisar seu código com mais precisão, com muito menos falsos positivos e falsos negativos.
+SAL é a linguagem de anotação do código de origem do Microsoft. Usando anotações de código fonte, você pode deixar a intenção por trás de seu código explícito. Essas anotações também habilitar ferramentas de análise estática automatizado analisar seu código com mais precisão, com muito menos falsos positivos e falsos negativos.
 
- Os artigos nesta seção da documentação discutem aspectos de SAL, forneçam a referência para obter a sintaxe SAL e fornecem exemplos de uso.
+ Os artigos nesta seção da documentação discutem aspectos de SAL, fornecem a referência para a sintaxe SAL e darem exemplos de uso.
 
 -   [Noções básicas de SAL](../code-quality/understanding-sal.md)
 
@@ -48,15 +47,15 @@ SAL é a linguagem de anotação do código de origem do Microsoft. Usando anota
 
 -   [Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
-     Lista as anotações de SAL que especifique a condição ou escopo (posicionamento) de outras anotações de SAL.
+     Lista as anotações de SAL que especificam a condição ou escopo (posicionamento) de outras anotações de SAL.
 
 -   [Funções intrínsecas](../code-quality/intrinsic-functions.md)
 
-     Lista as anotações de SAL intrínsecas.
+     Lista as anotações de SAL intrínseco.
 
 -   [Práticas recomendadas e exemplos](../code-quality/best-practices-and-examples-sal.md)
 
-     Fornece exemplos que mostram como usar anotações de SAL. Também explica armadilhas comuns.
+     Fornece exemplos que mostram como usar anotações de SAL. Também explica as armadilhas comuns.
 
 ## <a name="related-resources"></a>Recursos relacionados
  [Blog da equipe de análise de código](http://go.microsoft.com/fwlink/?LinkId=251197)

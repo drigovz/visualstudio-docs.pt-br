@@ -1,9 +1,6 @@
 ---
 title: 'Como: Preencher controles ListObject com dados'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cafaaebeea2a6fd5d4c750e89e90747da28b254d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 970e30245840d82efbd7b02bbde0f4d8b202eaa4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925622"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Como: Preencher controles ListObject com dados
   Você pode usar a vinculação de dados como uma maneira de adicionar rapidamente os dados para seu documento. Após a vinculação de dados para um objeto de lista, você pode desconectar o objeto de lista para que ele exibe os dados, mas não está mais ligado à fonte de dados.  
@@ -71,5 +68,3 @@ ms.locfileid: "53646683"
  [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Como: Preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Como: Preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  
