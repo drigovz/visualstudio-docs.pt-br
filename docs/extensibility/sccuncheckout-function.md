@@ -1,9 +1,6 @@
 ---
 title: Função SccUncheckout | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccUncheckout
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79afce90f462f97d7a33a64875c4784a030f845e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa00faf6fb7605af6098952b2fc592276934d2f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923212"
 ---
 # <a name="sccuncheckout-function"></a>Função SccUncheckout
 Essa função Desfaz uma operação de check-out anterior, restaurando assim o conteúdo de arquivos ou o arquivo selecionado para o estado antes do check-out. Todas as alterações feitas desde o check-out no arquivo serão perdidas.  

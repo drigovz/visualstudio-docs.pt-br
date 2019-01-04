@@ -1,13 +1,8 @@
 ---
-title: 'Como: criar uma página de aplicativo | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar uma página de aplicativo | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820219"
 ---
-# <a name="how-to-create-an-application-page"></a>Como: criar uma página de aplicativo
+# <a name="how-to-create-an-application-page"></a>Como: Criar uma página de aplicativo
   Você pode criar uma página da web para um ou mais sites do SharePoint. No SharePoint, essas páginas são chamadas de páginas do aplicativo. Ao contrário de uma página do site, uma página de aplicativo contém código que é executado por trás da página. Para obter mais informações, consulte [criar páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
 ### <a name="to-create-an-application-page"></a>Para criar uma página de aplicativo  
@@ -50,9 +45,8 @@ ms.locfileid: "51296197"
   
 7.  Se você quiser manipular eventos de controle, adicione código ao arquivo de código para a página de aplicativo.  
   
-     O arquivo de código será exibida se você expandir o nó para o arquivo de página ASP.NET e tem um *. CS* ou *. vb* extensão, dependendo do idioma do projeto. Para obter um exemplo de ponta a ponta de como criar uma página de aplicativo, consulte [instruções passo a passo: criar uma página de aplicativo do SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
+     O arquivo de código será exibida se você expandir o nó para o arquivo de página ASP.NET e tem um *. CS* ou *. vb* extensão, dependendo do idioma do projeto. Para obter um exemplo de ponta a ponta de como criar uma página de aplicativo, consulte [passo a passo: Criar uma página de aplicativo do SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
   
 ## <a name="see-also"></a>Consulte também
  [Criar páginas de aplicativo do SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Passo a passo: Criar uma página de aplicativo do SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  

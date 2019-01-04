@@ -1,8 +1,6 @@
 ---
 title: Arquitetura de personalizações no nível do documento
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 26f65905cc4a8175ca39532db9716bdba1f03b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248264"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917367"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitetura de personalizações no nível do documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] inclui projetos para criar personalizações no nível de documento para o Microsoft Office Word e Microsoft Office Excel. Este tópico descreve os seguintes aspectos de personalizações no nível do documento:  
@@ -81,7 +79,7 @@ ms.locfileid: "53248264"
 |Usando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], o desenvolvedor escreve o código que é acessível para o Word e Excel.<br /><br /> Embora possa parecer que o desenvolvedor está criando um arquivo executável que executa o Word ou Excel, o processo funciona, na verdade, o oposto. O documento está associado um assembly e contém um ponteiro para esse assembly. Quando o documento for aberto, o Word ou Excel localiza o assembly e executa o código em resposta a todos os eventos manipulados.|Aqueles que usam a solução simplesmente abrir o documento ou pasta de trabalho (ou criar um novo documento de um modelo) exatamente como ele abriria qualquer outro arquivo do Microsoft Office.<br /><br /> O assembly fornece personalizações no documento ou pasta de trabalho, como automaticamente populá-lo com dados atuais ou mostrando uma caixa de diálogo para solicitar informações.|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>Suporte para formatos de documento para personalizações no nível do documento  
- Quando você cria um projeto de personalização, você pode escolher o formato do documento que você deseja usar no projeto. Confira mais informações em [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Quando você cria um projeto de personalização, você pode escolher o formato do documento que você deseja usar no projeto. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  A tabela a seguir lista os formatos de documento, que você pode usar em personalizações no nível de documento para Excel e Word.  
   
@@ -152,5 +150,3 @@ ms.locfileid: "53248264"
  [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
  [Visão geral das propriedades de documento personalizadas](../vsto/custom-document-properties-overview.md)   
  [Dados armazenados em cache em personalizações no nível de documento](../vsto/cached-data-in-document-level-customizations.md)  
-  
-  

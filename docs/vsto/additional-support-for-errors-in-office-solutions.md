@@ -1,8 +1,6 @@
 ---
 title: Suporte adicional para erros em soluções do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -59,12 +57,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4706360581749fbc6e84f3250324bad3663e7a9a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 9181b74da09f87d1c19805995b527b9fbd56c52f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946286"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Suporte adicional para erros em soluções do Office
   Você pode usar os seguintes recursos para ajudá-lo a encontrar respostas para problemas encontrados ao criar soluções do Office no Visual Studio.  
@@ -93,5 +91,3 @@ ms.locfileid: "52304448"
  [Solucionar problemas de segurança de solução do Office](../vsto/troubleshooting-office-solution-security.md)   
  [Solucionar problemas de implantação de solução do Office](../vsto/troubleshooting-office-solution-deployment.md)   
  [Recursos adicionais para o desenvolvimento de soluções do Office](../vsto/additional-resources-for-developing-office-solutions.md)  
-  
-  

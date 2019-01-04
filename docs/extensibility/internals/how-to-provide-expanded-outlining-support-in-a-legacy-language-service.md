@@ -1,9 +1,6 @@
 ---
 title: Fornecer suporte em um serviço de linguagem da estrutura de tópicos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ae8a6aeba28fbe90e68305f2b48021b4327c26
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a26d9dbc67f502e30968f3db89834b12e02ae3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965545"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Como: fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Como: Fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado
 Há duas opções para estender a estrutura de tópicos de suporte para seu idioma além do suporte a **recolher para definições de** comando. Você pode adicionar regiões controlado pelo editor de estrutura de tópicos e adicionar regiões de estrutura de tópicos controlado pelo cliente.  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>Adicionar regiões controlado pelo editor de estrutura de tópicos  
@@ -56,4 +53,4 @@ Há duas opções para estender a estrutura de tópicos de suporte para seu idio
     > [!NOTE]
     >  Quando você chama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, você pode especificar um cliente do texto oculto (ou seja, um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> objeto). Esse cliente notifica você quando um texto oculto ou região de estrutura de tópicos é expandida ou recolhida pelo usuário.  
   
-4.  Chamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> estrutura) parâmetro: Especifique um valor de <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> na `iType` membro o <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura para indicar que você está criando uma região de estrutura de tópicos, em vez de uma região oculta. Especifique se a região é controlado pelo cliente ou controlado de editor do `dwBehavior` membro o <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura. Sua implementação de estrutura de tópicos inteligente pode conter uma mistura de regiões de estrutura de tópicos de editor-controlado pelo cliente. Especificar o texto do banner é exibido quando a sua região de estrutura de tópicos é recolhida, como "...", além de `pszBanner` membro do <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura. Texto da faixa do editor padrão para uma região oculta é ""....
+4.  Chamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> estrutura) parâmetro: Especifique um valor de <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> no `iType` membro o <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura para indicar que você está criando uma região de estrutura de tópicos, em vez de uma região oculta. Especifique se a região é controlado pelo cliente ou controlado de editor do `dwBehavior` membro o <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura. Sua implementação de estrutura de tópicos inteligente pode conter uma mistura de regiões de estrutura de tópicos de editor-controlado pelo cliente. Especificar o texto do banner é exibido quando a sua região de estrutura de tópicos é recolhida, como "...", além de `pszBanner` membro do <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura. Texto da faixa do editor padrão para uma região oculta é ""....

@@ -1,9 +1,6 @@
 ---
 title: Item de host da planilha
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4052e7d9b096d9bae6671834369ece6d31bee4a0
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866732"
 ---
 # <a name="worksheet-host-item"></a>Item de host da planilha
   O <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host é um tipo que estende o <xref:Microsoft.Office.Interop.Excel.Worksheet> o tipo do assembly de interoperabilidade primário para o Excel. O <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host fornece todas as mesmas propriedades, métodos e eventos como um <xref:Microsoft.Office.Interop.Excel.Worksheet> objeto, mas ele também expõe eventos adicionais e atua como um contêiner para controles dos Windows Forms e controles de host.  
@@ -50,7 +47,7 @@ ms.locfileid: "35258912"
  Em um projeto de nível de documento, você pode renomear as planilhas no designer do Visual Studio, mas isso altera apenas o nome de exibição da planilha. O nome programático ainda é o nome padrão da planilha. Se você renomear a planilha na **propriedades** janela, apenas o nome programático é alterada.  
   
 ### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Limitações do item de host de planilha em projetos de nível de documento  
- Você não pode criar novos <xref:Microsoft.Office.Tools.Excel.Worksheet> hospedar itens em tempo de execução em um projeto de nível de documento. Se você criar uma nova planilha do Excel em tempo de execução, ele será do tipo <xref:Microsoft.Office.Interop.Excel.Worksheet>. Porque ele não é um item de host, ele não pode conter quaisquer controles de host ou controles de formulários do Windows. Para obter mais informações sobre a criação de documentos em tempo de execução, consulte [como: adicionar novas planilhas a pastas de trabalho de forma programática](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
+ Você não pode criar novos <xref:Microsoft.Office.Tools.Excel.Worksheet> hospedar itens em tempo de execução em um projeto de nível de documento. Se você criar uma nova planilha do Excel em tempo de execução, ele será do tipo <xref:Microsoft.Office.Interop.Excel.Worksheet>. Porque ele não é um item de host, ele não pode conter quaisquer controles de host ou controles de formulários do Windows. Para obter mais informações sobre a criação de documentos em tempo de execução, consulte [como: Adicionar novas planilhas a pastas de trabalho de forma programática](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
   
 ## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Entender os itens de host de planilha em projetos de suplemento do VSTO  
  Em projetos de nível de aplicativo, você pode gerar um <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host em tempo de execução para qualquer planilha que está aberto no Excel. Você pode usar o <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host para adicionar controles à planilha associada, ou para manipular eventos que não estão disponíveis em <xref:Microsoft.Office.Interop.Excel.Worksheet> objetos.  
@@ -66,5 +63,3 @@ ms.locfileid: "35258912"
  [Item de host da pasta de trabalho](../vsto/workbook-host-item.md)   
  [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

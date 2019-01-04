@@ -2,7 +2,6 @@
 title: Instruções passo a passo Analisando código gerenciado em busca de defeitos de código | Microsoft Docs
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955247"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Passo a passo: Defeitos Analisando código gerenciado para código
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Passo a passo: Analisando código gerenciado em busca de defeitos de código
 
 Neste passo a passo, você irá analisar um projeto gerenciado em busca de defeitos de código usando a ferramenta de análise de código.
 
@@ -117,23 +116,23 @@ Este passo a passo o orienta no processo de usar a análise de código para anal
 
    1. Adicione o construtor `public demo () : base() { }` à classe `demo` **.**
 
-   [CA1709: Os identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija as maiusculas e minúsculas do nome do namespace 'testCode' alterando-o para 'TestCode'.
+   [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija as maiusculas e minúsculas do nome do namespace 'testCode' alterando-o para 'TestCode'.
 
    1. Alterar as maiusculas e minúsculas do namespace `testCode` para `TestCode`.
 
-   [CA1709: Os identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija as maiusculas e minúsculas da demonstração' nome de tipo' alterando-o para 'Demonstração'.
+   [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija as maiusculas e minúsculas da demonstração' nome de tipo' alterando-o para 'Demonstração'.
 
    1. Altere o nome do membro a ser `Demo`.
 
-   [CA1709: Os identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija as maiusculas e minúsculas do item' nome do membro' alterando-o para 'Item'.
+   [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija as maiusculas e minúsculas do item' nome do membro' alterando-o para 'Item'.
 
    1. Altere o nome do membro a ser `Item`.
 
-   [CA1710: Os identificadores devem ter sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Renomear 'testCode.demo' para terminar em 'Exceções'.
+   [CA1710: Os identificadores devem ter sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Renomear 'testCode.demo' para terminar com 'Exceções'.
 
    1. Altere o nome da classe e seus construtores para `DemoException`.
 
-   [CA2210: Os Assemblies devem ter nomes fortes válidos](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): assinar 'CodeAnalysisManagedDemo' com uma chave de nome forte.
+   [CA2210: Os assemblies devem ter nomes fortes válidos](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Assine 'CodeAnalysisManagedDemo' com uma chave de nome forte.
 
    1. Sobre o **Project** menu, escolha **CodeAnalysisManagedDemo propriedades**.
 
@@ -153,7 +152,7 @@ Este passo a passo o orienta no processo de usar a análise de código para anal
 
    1. Sobre o **arquivo** menu, escolha **salvar itens selecionados**e, em seguida, feche as páginas de propriedades.
 
-   [CA2237: Marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: adicionar um atributo [Serializable] para o tipo 'demonstração', pois esse tipo implementa ISerializable.
+   [CA2237: Marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Adicione um atributo [Serializable] para o tipo 'demonstração', pois esse tipo implementa ISerializable.
 
    1. Adicione a `[Serializable ()]` à classe de atributo `demo`.
 

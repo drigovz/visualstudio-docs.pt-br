@@ -1,8 +1,7 @@
 ---
-title: 'CA2233: as operações não devem estourar'
+title: 'CA2233: As operações não devem estourar'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c0e616eb527a2213c77cdae00c42635d49b130
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273fb94f4f0b66badef60178635fe3db360f73a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954572"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233: as operações não devem estourar
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233: As operações não devem estourar
 
 |||
 |-|-|
@@ -63,7 +62,7 @@ Se o método neste exemplo é passado <xref:System.Int32.MinValue?displayPropert
 ```csharp
 public static void Main()
 {
-    int value = int.MinValue;    // int.MinValue is -2147483648
+    int value = int.MinValue;    // int.MinValue is -2147483648
     value = Calculator.Decrement(value);
     Console.WriteLine(value);
 }
@@ -71,7 +70,7 @@ public static void Main()
 
 ```vb
 Public Shared Sub Main()
-    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648
+    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648
     value = Calculator.Decrement(value)
     Console.WriteLine(value)
 End Sub

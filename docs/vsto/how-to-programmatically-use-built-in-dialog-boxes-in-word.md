@@ -1,9 +1,6 @@
 ---
-title: 'Como: usar as caixas de diálogo integradas no Word de forma programática'
-ms.custom: ''
+title: 'Como: Usar as caixas de diálogo integradas no Word de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829057"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Como: usar as caixas de diálogo integradas no Word de forma programática
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Como: Usar as caixas de diálogo integradas no Word de forma programática
   Ao trabalhar com o Microsoft Office Word, há ocasiões em que você precisa para exibir caixas de diálogo para entrada do usuário. Embora você possa criar seus próprios, você também poderá usar a abordagem do uso de caixas de diálogo integradas no Word, que são expostas na <xref:Microsoft.Office.Interop.Word.Dialogs> coleção do <xref:Microsoft.Office.Interop.Word.Application> objeto. Isso permite que você acesse mais de 200 caixas de diálogo internas, que são representadas como enumerações.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35669971"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: usar caixas de diálogo do Word no modo oculto de forma programática](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Como: Usar caixas de diálogo do Word no modo oculto de forma programática](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Instrução Option strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflexão (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexão (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

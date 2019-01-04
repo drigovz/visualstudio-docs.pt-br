@@ -1,6 +1,5 @@
 ---
 title: Elemento Assembly (extensão de Assistente de modelo do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 07b01c993bb9a20dcb836a67bc2a9e8d78135adb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828180"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (extensão de Assistente de modelo do Visual Studio)
 Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interface.  
@@ -61,7 +60,7 @@ Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interfa
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.  
   
-```  
+```xml
 <VSTemplate Version="3.0.0" Type="Item"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -87,9 +86,10 @@ Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interfa
         <FullClassName>MyWizard.CustomWizard</FullClassName>  
     </WizardExtension>  
 </VSTemplate>  
-```  
+```
   
-## <a name="see-also"></a>Consulte também  
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
- [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+## <a name="see-also"></a>Consulte também
+
+- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

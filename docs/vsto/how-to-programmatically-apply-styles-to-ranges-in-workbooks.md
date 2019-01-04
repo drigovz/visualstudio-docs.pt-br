@@ -1,9 +1,6 @@
 ---
-title: 'Como: aplicar estilos a intervalos em pastas de trabalho programaticamente'
-ms.custom: ''
+title: 'Como: Aplicar estilos a intervalos em pastas de trabalho programaticamente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4c0129319e1d979efd924d9d2bef57f0ef5dbf1a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876413"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Como: aplicar estilos a intervalos em pastas de trabalho programaticamente
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Como: Aplicar estilos a intervalos em pastas de trabalho programaticamente
   Você pode aplicar estilos nomeados para regiões em pastas de trabalho. Excel fornece um número de estilos predefinidos.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,5 +71,3 @@ ms.locfileid: "35669966"
  [Controle NamedRange](../vsto/namedrange-control.md)   
  [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

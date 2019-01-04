@@ -1,9 +1,6 @@
 ---
 title: Aplicação de configurações entre várias conexões de projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, application of settings
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d8b8d7d6dc1e596686a2fad7b53363b2387a47b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9c49ce750b48372e9233a788b4f98b6ece5e2a1d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927643"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplicação de configurações entre várias conexões de projeto
 Um plug-in de controle do código-fonte criado usando o código-fonte controle plug-in API versão 1.2, pode usar uma operação em lote para executar a mesma operação de controle do código-fonte entre vários projetos ou vários contextos de conexão. Lotes podem ser usados para eliminar redundantes, caixas de diálogo a experiência do usuário por projeto.  

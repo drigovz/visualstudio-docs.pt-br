@@ -1,9 +1,6 @@
 ---
 title: Criar um pacote de extensão com o modelo de Item do pacote de extensão | Microsoft Docs
-ms.custom: ''
 ms.date: 07/27/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,14 +10,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866316"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Passo a passo: criar um pacote de extensão
+# <a name="walkthrough-create-an-extension-pack"></a>Passo a passo: Criar um pacote de extensões
 
 Um pacote de extensão é um conjunto de extensões que podem ser instalados juntos. Pacotes de extensão permitem que você facilmente compartilhar suas extensões favoritas com outros usuários ou agrupar um conjunto de extensões em conjunto para um cenário específico.
   

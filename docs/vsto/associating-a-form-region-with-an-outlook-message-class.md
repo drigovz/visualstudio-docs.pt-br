@@ -1,8 +1,6 @@
 ---
 title: Associar uma região de formulário uma classe de mensagem do Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 5795931b5d964b6eb7a104338756066068f38510
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923342"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associar uma região de formulário uma classe de mensagem do Outlook
   Você pode especificar quais itens do Microsoft Office Outlook exibem uma região de formulário por meio da associação a região do formulário com a classe message de cada item. Por exemplo, se você deseja acrescentar uma região de formulário na parte inferior de um item de email, você pode associar a região do formulário com o `IPM.Note` classe de mensagem.  
@@ -60,7 +58,7 @@ ms.locfileid: "53248027"
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Use o Assistente de nova região de formulário do Outlook  
  Na página final do **nova região de formulário do Outlook** assistente, você pode selecionar as classes de mensagem padrão e digite os nomes das classes de mensagem personalizada que você deseja associar à região do formulário.  
   
- As classes de mensagem padrão não estão disponíveis se a região do formulário foi projetada para substituir todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Confira mais informações em [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ As classes de mensagem padrão não estão disponíveis se a região do formulário foi projetada para substituir todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Para obter mais informações, confira [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
  Para incluir uma ou mais classes de mensagem personalizada, digite os nomes na **quais classes de mensagem personalizadas exibirão esta região do formulário?** caixa.  
   
@@ -99,7 +97,7 @@ ms.locfileid: "53248027"
   
 - Não exceda 256 caracteres para cada nome de classe de mensagem.  
   
-- Não inclua os nomes das classes de mensagem padrão se a região do formulário substitui todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Confira mais informações em [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+- Não inclua os nomes das classes de mensagem padrão se a região do formulário substitui todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Para obter mais informações, confira [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
   Quando você compila o projeto, o Visual Studio valida o formato dos nomes de classe de mensagem.  
   
@@ -113,5 +111,3 @@ ms.locfileid: "53248027"
  [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Visão geral da classe de nome e a mensagem de formulário](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
  [Como os formulários do Outlook e itens funcionam juntos](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
-  
-  

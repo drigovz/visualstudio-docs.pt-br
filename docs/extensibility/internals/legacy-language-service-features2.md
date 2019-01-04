@@ -1,9 +1,6 @@
 ---
-title: Tem 2 serviço de linguagem herdada | Microsoft Docs
-ms.custom: ''
+title: Tem 2 serviço de linguagem herdado | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
@@ -13,20 +10,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b807f5f776690e86cb44334c1822a8facd6ec824
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc86bda0bb0e9acf8c9ebb3fd248afd0fca4023c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861482"
 ---
-# <a name="legacy-language-service-features"></a>Recursos de serviço de linguagem herdada
-Os tópicos a seguir listam alguns dos recursos de serviço de linguagem herdada que pode fornecer.  
+# <a name="legacy-language-service-features"></a>Recursos do serviço de linguagem herdado
+Os tópicos a seguir listam alguns dos recursos de serviço de linguagem herdada, que você pode fornecer.  
   
- Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de idioma, consulte [Editor e extensões de serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).  
+ Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API assim que possível. Isso melhorar o desempenho do seu serviço de linguagem e permitem que você aproveite os novos recursos do editor.  
+>  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
@@ -39,12 +36,12 @@ Os tópicos a seguir listam alguns dos recursos de serviço de linguagem herdada
  Explica como implementar a dica de ferramenta de informações de parâmetro do IntelliSense.  
   
  [Preenchimento de declaração em um serviço de linguagem herdado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- Explica como implementar a lista de instruções IntelliSense e a lista de conclusão de membro.  
+ Explica como implementar a lista de instrução do IntelliSense e a lista de preenchimento de membro.  
   
  [Estruturar em tópicos e texto oculto em um serviço de linguagem herdado](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
- Explica como implementar o texto oculto ou estrutura de tópicos.  
+ Explica como implementar texto oculto ou estrutura de tópicos.  
   
- [Como fornecer suporte estendido à estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- Explica algumas das etapas da implementação do suporte do depurador.  
+ [Como: Fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ Explica algumas das etapas na implementação de suporte do depurador...  
   
 ## <a name="related-sections"></a>Seções relacionadas

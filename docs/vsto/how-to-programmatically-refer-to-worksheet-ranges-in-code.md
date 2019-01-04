@@ -1,9 +1,6 @@
 ---
-title: 'Como: por meio de programação se referir a intervalos de planilhas em código'
-ms.custom: ''
+title: 'Como: Por meio de programação se referir a intervalos de planilhas em código'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 608ce006ccc34330631da8d4c947405b027f1a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1a9904140d08d3ddca63c70bc77f1db4dffb1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851242"
 ---
-# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Como: por meio de programação se referir a intervalos de planilhas em código
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Como: Por meio de programação se referir a intervalos de planilhas em código
   Usar um processo semelhante para referir-se ao conteúdo de um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto de intervalo do Excel nativo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,13 +49,11 @@ ms.locfileid: "35670078"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com intervalos](../vsto/working-with-ranges.md)   
- [Como: verificar a ortografia em planilhas de forma programática](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
- [Como: aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Como: preencher automaticamente por meio de programação intervalos com dados alterados em incrementos](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Como: pesquisar texto em intervalos de planilhas de forma programática](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
+ [Como: Verificar a ortografia em planilhas de forma programática](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Como: Aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Como: Por meio de programação automaticamente preencher intervalos com dados alterados em incrementos](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Como: Pesquisar texto em intervalos de planilhas de forma programática](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
  [Controle NamedRange](../vsto/namedrange-control.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

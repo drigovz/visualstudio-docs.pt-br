@@ -1,9 +1,6 @@
 ---
 title: Visão geral da faixa de opções
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51de8b5fbc4e21b4dabaf34f526b85f0b98623db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989191"
 ---
 # <a name="ribbon-overview"></a>Visão geral da faixa de opções
   A faixa de opções é uma maneira de organizar os comandos relacionados para que eles são mais fáceis de encontrar. Comandos são exibidos como controles da faixa de opções. Controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior da janela do aplicativo. Grupos relacionados são organizados em guias.  
@@ -84,7 +81,7 @@ ms.locfileid: "49846350"
   
  Além disso, quaisquer valores de propriedade padrão inalterado não aparecem no arquivo XML de faixa de opções resultante.  
   
- Para obter mais informações sobre como exportar a faixa de opções para XML, consulte [como: exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+ Para obter mais informações sobre como exportar a faixa de opções para XML, consulte [como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="update-the-code"></a>Atualize o código  
  Um novo arquivo de código da faixa de opções é adicionado ao **Gerenciador de soluções**. Esse arquivo contém a classe XML da faixa de opções. Você deve criar métodos de retorno de chamada no `Ribbon Callbacks` região dessa classe para manipular ações do usuário, como clicar em um botão. Mover seu código de manipuladores de eventos para esses métodos de retorno de chamada e modifique o código para trabalhar com a extensibilidade da faixa de opções (RibbonX) modelo de programação. Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
@@ -124,16 +121,14 @@ ms.locfileid: "49846350"
 |[Designer de faixa de opções](../vsto/ribbon-designer.md)|Descreve como você pode usar o Designer de faixa de opções para adicionar guias personalizadas, grupos e controles à faixa de opções de um aplicativo do Microsoft Office.|  
 |[Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Mostra como criar uma guia de faixa de opções personalizada usando o Designer de faixa de opções. Você pode usar o Designer de faixa de opções para adicionar e posicionar os controles da guia personalizada.|  
 |[Visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md)|Fornece uma visão geral do modelo de objeto com rigidez de tipos que você pode usar para obter e definir as propriedades de controles da faixa de opções em tempo de execução.|  
-|[Explicação passo a passo: Os controles em uma faixa de opções em tempo de execução de atualização](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstra como usar o modelo de objeto da faixa de opções para atualizar os controles em uma faixa de opções, depois que a faixa de opções é carregada no aplicativo do Office.|  
+|[Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstra como usar o modelo de objeto da faixa de opções para atualizar os controles em uma faixa de opções, depois que a faixa de opções é carregada no aplicativo do Office.|  
 |[Personalizar uma faixa de opções do Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Fornece orientação para personalizar a faixa de opções no Microsoft Office Outlook.|  
 |[Personalizar uma faixa de opções para InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Fornece orientação para personalizar a faixa de opções no Microsoft Office InfoPath.|  
 |[Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)|Mostra como mostrar, ocultar e modificar a faixa de opções e permitir que os usuários executar o código de controles em um painel de tarefas personalizado, o painel de ações ou a região de formulário do Outlook.|  
-|[Como: alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Mostra como alterar a ordem das guias em uma faixa de opções.|  
-|[Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)|Mostra como adicionar grupos e controles a uma guia interna.|  
-|[Como: adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Mostra como adicionar controles ao menu que é aberta quando você clica o **arquivo**.|  
-|[Como: adicionar um iniciador da caixa de diálogo a um grupo de faixa de opções](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Mostra para adicionar um iniciador da caixa de diálogo a qualquer grupo em uma faixa de opções.|  
-|[Como: exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Mostra como personalizar a faixa de opções de maneiras avançadas exportando a faixa de opções do designer para XML da faixa de opções.|  
+|[Como: Alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Mostra como alterar a ordem das guias em uma faixa de opções.|  
+|[Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)|Mostra como adicionar grupos e controles a uma guia interna.|  
+|[Como: Adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Mostra como adicionar controles ao menu que é aberta quando você clica o **arquivo**.|  
+|[Como: Adicionar um iniciador da caixa de diálogo a um grupo de faixa de opções](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Mostra para adicionar um iniciador da caixa de diálogo a qualquer grupo em uma faixa de opções.|  
+|[Como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Mostra como personalizar a faixa de opções de maneiras avançadas exportando a faixa de opções do designer para XML da faixa de opções.|  
 |[XML da faixa de opções](../vsto/ribbon-xml.md)|Explica como você pode personalizar uma faixa de opções usando XML da faixa de opções.|  
 |[Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstra como criar uma guia de faixa de opções personalizada usando o **da faixa de opções (XML)** item.|  
-  
-  

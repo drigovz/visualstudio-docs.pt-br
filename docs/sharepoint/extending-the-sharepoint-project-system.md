@@ -1,9 +1,6 @@
 ---
 title: Estendendo o sistema de projeto do SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 028e7aab10ae1ee1de452e69c8148dac099039d0
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 51449003457ecd09e7dca7bc579d652c94a592e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326781"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891106"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Estender o sistema de projeto do SharePoint
   Você pode criar soluções do SharePoint usando um conjunto de modelos de projeto e modelos de item no Visual Studio. Esses modelos atenderem os requisitos de muitos cenários de desenvolvimento, mas talvez você descubra alguns casos em que eles não fornecem a funcionalidade necessária. Nesses casos, você pode estender o sistema de projeto do SharePoint.  
@@ -60,5 +57,3 @@ ms.locfileid: "36326781"
  [Converter entre tipos de sistema de projeto do SharePoint e outros tipos de projeto do Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [Estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Conceitos e funcionalidades de programação para extensões de Ferramentas do SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)  
-  
-  

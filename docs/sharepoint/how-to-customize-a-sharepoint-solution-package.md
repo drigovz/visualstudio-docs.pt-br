@@ -1,9 +1,6 @@
 ---
-title: 'Como: personalizar um pacote de solução do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Personalizar um pacote de solução do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
@@ -13,8 +10,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd1ebe9e49a0b3e26d090fdbbdbbe4dd37c0344a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 85140f8d85c90d2b58df10a63f50c117e10eb8bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835390"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package"></a>Como: personalizar um pacote de solução do SharePoint
+# <a name="how-to-customize-a-sharepoint-solution-package"></a>Como: Personalizar um pacote de solução do SharePoint
   Você pode usar o Designer de pacote para criar e personalizar um pacote (*. wsp*). Por exemplo, você pode adicionar itens de projeto do SharePoint e recursos, especifique se o servidor Web é redefinido quando a solução é implantada e defina o tipo de servidor de implantação.  
   
 ## <a name="open-the-package-designer"></a>Abra o Designer de pacote  
@@ -94,4 +89,3 @@ ms.locfileid: "37118536"
   
 ## <a name="see-also"></a>Consulte também
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

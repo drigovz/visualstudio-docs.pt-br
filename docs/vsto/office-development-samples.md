@@ -1,9 +1,6 @@
 ---
 title: Exemplos de desenvolvimento do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +12,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964527"
 ---
 # <a name="office-development-samples"></a>Exemplos de desenvolvimento do Office
   O Visual Studio inclui aplicativos de exemplo que demonstram como usar o Microsoft Office developer tools para criar soluções do Office. O código nesses exemplos ilustra a sintaxe, estrutura e técnicas usadas para criar soluções do Office.  
   
- Para os exemplos mais recentes, consulte [exemplos de desenvolvedor do MSDN: aprender por meio de código](http://go.microsoft.com/fwlink/?LinkID=248199) no site da Microsoft.  
+ Para os exemplos mais recentes, consulte [exemplos de desenvolvedor do MSDN: Aprenda por meio de código](http://go.microsoft.com/fwlink/?LinkID=248199) no site da Microsoft.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +41,5 @@ ms.locfileid: "35670068"
 |Exemplo de interoperabilidade do VSTO e VBA|Demonstra como chamar um método em uma personalização no nível de documento para Excel do Visual Basic para código Applications (VBA) na pasta de trabalho.<br /><br /> Este exemplo só está disponível online.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Exemplos de desenvolvedor do MSDN: aprender através dos exemplos de código](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Exemplos de desenvolvedor do MSDN: Aprenda por meio de exemplos de código](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)  
-  
-  

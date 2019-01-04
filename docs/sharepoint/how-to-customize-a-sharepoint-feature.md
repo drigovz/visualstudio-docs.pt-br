@@ -1,17 +1,12 @@
 ---
-title: 'Como: personalizar um recurso do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Personalizar um recurso do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner.SwitchView
 - VS.SharePointTools.RAD.featureDesigner.Manifest
 - VS.SharePointTools.RAD.FeatureDesignerProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be9ba70bb94e743a788db11b55c188275bcad64
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835468"
 ---
-# <a name="how-to-customize-a-sharepoint-feature"></a>Como: personalizar um recurso do SharePoint
+# <a name="how-to-customize-a-sharepoint-feature"></a>Como: Personalizar um recurso do SharePoint
   Você pode criar e personalizar os recursos do SharePoint usando o Designer de recursos no Visual Studio. Por exemplo, você pode definir o escopo do recurso e adicionar outros recursos como dependências. Por padrão, o Designer de recursos é aberto quando você adiciona um novo recurso no Gerenciador de soluções ou o Explorador de pacotes do SharePoint.  
   
 ## <a name="opening-the-feature-designer"></a>Abrir o Designer de recursos  
@@ -96,4 +91,3 @@ ms.locfileid: "37118353"
   
 ## <a name="see-also"></a>Consulte também
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

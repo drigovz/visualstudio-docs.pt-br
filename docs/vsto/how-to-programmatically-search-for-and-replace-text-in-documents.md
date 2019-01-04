@@ -1,9 +1,6 @@
 ---
-title: 'Como: programaticamente, pesquisar e substituir texto em documentos'
-ms.custom: ''
+title: 'Como: Programaticamente, pesquisar e substituir texto em documentos'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6de96133a810898fe847cce71bb2711dd7c31dd9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccd9fc41ce0be5aa209098dd574f142b22ad2996
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823669"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Como: programaticamente, pesquisar e substituir texto em documentos
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Como: Programaticamente, pesquisar e substituir texto em documentos
   O <xref:Microsoft.Office.Interop.Word.Find> objeto é um membro de ambos os <xref:Microsoft.Office.Interop.Word.Selection> e o <xref:Microsoft.Office.Interop.Word.Range> objetos e você pode usar qualquer um para pesquisar texto em documentos do Microsoft Office Word. O comando Substituir é uma extensão do comando find.  
   
  Usar um <xref:Microsoft.Office.Interop.Word.Find> para executar um loop por meio de um documento do Microsoft Office Word e pesquisa de texto específico, a formatação ou o estilo do objeto e usar o <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> propriedade para substituir qualquer um dos itens encontrados.  
@@ -120,9 +117,8 @@ ms.locfileid: "49822391"
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> substitui o primeiro item encontrado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: definir programaticamente as opções de pesquisa no Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Como: executar um loop por meio de itens encontrados em documentos programaticamente](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Como: definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Como: programaticamente restaurar seleções após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Como: Definir programaticamente as opções de pesquisa no Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Como: Executar um loop por meio de itens encontrados em documentos programaticamente](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Como: Definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Como: Por meio de programação restaurar seleções após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  

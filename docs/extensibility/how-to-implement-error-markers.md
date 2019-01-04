@@ -1,9 +1,6 @@
 ---
-title: 'Como: implementar marcadores de erro | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Implementar os marcadores de erro | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e074a5e293d5b76f19abd97354b10becd603c5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931496"
 ---
-# <a name="how-to-implement-error-markers"></a>Como: implementar o marcador de erros
+# <a name="how-to-implement-error-markers"></a>Como: Implementar o marcador de erros
 Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor de texto para implementar mais difícil. No entanto, os benefícios que eles oferecem aos usuários de seu VSPackage podem compensam o custo para fornecê-las. Marcadores de erro sutilmente marcam o texto que o analisador de linguagem considera incorreta com uma linha vermelha ondulada ou ondulada. Este indicador ajuda a programadores visualmente, exibindo um código incorreto.  
   
  Use marcadores de texto para implementar os sublinhados ondulados vermelhos. Como regra, serviços de linguagem adicionar ondulados vermelhos para o buffer de texto como uma passagem de plano de fundo, no tempo ocioso ou em um thread em segundo plano.  
@@ -29,11 +26,11 @@ Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor 
   
 1. Selecione o texto sob a qual você deseja colocar o sublinhado vermelho ondulado.  
   
-2. Criar um marcador do tipo `MARKER_CODESENSE_ERROR`. Para obter mais informações, consulte [como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md).  
+2. Criar um marcador do tipo `MARKER_CODESENSE_ERROR`. Para obter mais informações, confira [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md).  
   
 3. Depois disso, passe um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ponteiro de interface.  
   
-   Esse processo também permite que você crie o texto da dica ou um menu de contexto especial sobre um marcador de determinado. Para obter mais informações, consulte [como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md).  
+   Esse processo também permite que você crie o texto da dica ou um menu de contexto especial sobre um marcador de determinado. Para obter mais informações, confira [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md).  
   
    Os seguintes objetos são necessários antes de marcadores de erro podem ser exibidos.  
   
@@ -58,6 +55,6 @@ Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor 
   
 ## <a name="see-also"></a>Consulte também  
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
- [Como: criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+ [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
+ [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
+ [Como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

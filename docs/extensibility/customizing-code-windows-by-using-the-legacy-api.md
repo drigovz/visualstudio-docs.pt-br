@@ -1,9 +1,6 @@
 ---
 title: Personalizando o Windows do código usando a API herdada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883033"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Personalizar janelas de código usando a API herdada
 Uma janela de código é um objeto de janela de documento que dá suporte a um ou mais modos de exibição de texto. Os recursos exatos de uma janela de código dependem do serviço de idioma associado. No modo de interface de documentos múltiplos (MDI), a janela de código é o quadro filho MDI.  
@@ -36,10 +33,10 @@ Janela de código
  `Customizing Code Windows by Using the Legacy API`  
  Explica como personalizar o windows de código usando a API herdada.  
   
- [Como: hospedar um editor em outro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Como: Hospedar um editor em outro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Explica como hospedar um segundo editor dentro de uma janela do editor.  
   
- [Como: disparar eventos quando o editor perde o foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Como: Disparar eventos quando o editor perde o foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Explica como anexar um modo de exibição de documento para um objeto de dados do documento.  
   
 ## <a name="see-also"></a>Consulte também  

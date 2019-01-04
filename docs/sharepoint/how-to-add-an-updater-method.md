@@ -1,13 +1,8 @@
 ---
-title: 'Como: adicionar um método Updater | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar um método Updater | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872512"
 ---
-# <a name="how-to-add-an-updater-method"></a>Como: adicionar um método Updater
+# <a name="how-to-add-an-updater-method"></a>Como: Adicionar um método Updater
   Você pode habilitar os usuários atualizem dados comerciais em uma lista externa do SharePoint com a criação de um *atualizador* método. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-an-updater-method"></a>Para criar um método Updater  
@@ -48,7 +43,7 @@ ms.locfileid: "49951412"
   
    - Um parâmetro de entrada para o método.  
   
-   - Um descritor de tipo para o parâmetro. Por padrão, o Visual Studio usa descritor de tipo de entidade que você definiu para o método Finder (por exemplo: contato).  
+   - Um descritor de tipo para o parâmetro. Por padrão, o Visual Studio usa descritor de tipo de entidade que você definiu para o método Finder (por exemplo: Entre em contato com).  
   
    - Uma instância de método para o método.  
   
@@ -71,13 +66,11 @@ ms.locfileid: "49951412"
   
 ## <a name="see-also"></a>Consulte também
  [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Como: adicionar um método Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Como: adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Como: adicionar um método Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Como: adicionar um método Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Como: adicionar um método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Como: Adicionar um método Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Como: Adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Como: Adicionar um método Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Como: Adicionar um método Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Como: Adicionar um método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Visão geral de ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Como: adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Como: definir uma instância de método](../sharepoint/how-to-define-a-method-instance.md)  
-  
- 
+ [Como: Adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Como: Definir uma instância de método](../sharepoint/how-to-define-a-method-instance.md)  

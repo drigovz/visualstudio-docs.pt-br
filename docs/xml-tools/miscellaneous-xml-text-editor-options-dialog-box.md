@@ -2,7 +2,6 @@
 title: Caixa de diálogo Diversos, XML, Editor de Texto, Opções
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 author: gewarren
@@ -10,23 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 85af563d9fb20b12785a410cf7df7e612d17dbee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941395"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Diversos, XML, Editor de texto, caixa de diálogo Opções
 
-Esta caixa de diálogo permite que você altere a automático e as configurações de esquema para o editor XML. Você pode acessar o **opções** na caixa de diálogo de **ferramentas** menu.
+Esta caixa de diálogo permite que você altere a automático e as configurações de esquema para o editor XML. Você pode acessar o **opções** caixa de diálogo do **ferramentas** menu.
 
 > [!NOTE]
-> Essas configurações estão disponíveis quando você seleciona o **Editor de texto** pasta, o **XML** pasta e, em seguida, o **diversos** opção o **opções** caixa de diálogo.
+> Essas configurações estão disponíveis quando você seleciona os **Editor de texto** pasta, o **XML** pasta e, em seguida, o **diversos** opção o **opções** caixa de diálogo.
 
 
-## <a name="auto-insert"></a>Inserir automaticamente
- **Fechar marcas**
+## <a name="auto-insert"></a>Inserção automática
+ **Marcas de fechamento**
 
  Se a configuração de autocompletar é verificada, o editor adiciona automaticamente uma marca de fim quando você digita um sinal de maior (>) para fechar uma tag de início, se a marca não é fechada. Este é o comportamento padrão.
 
@@ -44,7 +43,7 @@ Esta caixa de diálogo permite que você altere a automático e as configuraçõ
 
  Selecionado por padrão.
 
- **Outra remarcação (comentários, CDATA)**
+ **Outra marcação (Comentários, CDATA)**
 
  Comentários, CDATA, DOCTYPE, as instruções de processamento, e a outra marcação automática são concluídos.
 
@@ -67,9 +66,9 @@ Esta caixa de diálogo permite que você altere a automático e as configuraçõ
 ## <a name="caching"></a>Cache
  **Esquemas**
 
- Especifica o local do cache de esquema. O botão Procurar (**...** ) abre o **Directory procurar** caixa de diálogo no local de cache de esquema atual. Você pode selecionar um diretório diferente, ou você pode selecionar uma pasta na caixa de diálogo, clique com botão direito e escolha **abrir** para ver o que está no diretório.
+ Especifica o local do cache de esquema. O botão Procurar (**...** ) abre o **Procurar diretório** caixa de diálogo no local de cache de esquema atual. Você pode selecionar um diretório diferente, ou você pode selecionar uma pasta na caixa de diálogo, clique com botão direito e escolha **abrir** para ver o que está no diretório.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Propriedades de documento XML, janela de propriedades](../xml-tools/xml-document-properties-properties-window.md)
+- [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)
 - [Componentes do editor de XML](../xml-tools/xml-editor-components.md)

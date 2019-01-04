@@ -1,9 +1,6 @@
 ---
-title: 'Como: programaticamente, inserir texto em documentos do Word'
-ms.custom: ''
+title: 'Como: Programaticamente, inserir texto em documentos do Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d5a0382726e6fc481001f4afc7820875e436594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828911"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Como: programaticamente, inserir texto em documentos do Word
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Como: Programaticamente, inserir texto em documentos do Word
   Há três formas principais para inserir texto em documentos do Microsoft Office Word:  
   
 -   Inserir texto em um intervalo.  
@@ -129,8 +126,6 @@ ms.locfileid: "49881658"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: Formatar o texto em documentos programaticamente](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [Como: definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Como: estender programaticamente os intervalos em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
-  
-  
+ [Como: Por meio de programação de formatar texto em documentos](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [Como: Definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Como: Por meio de programação estender intervalos em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  

@@ -1,5 +1,5 @@
 ---
-title: Como definir atributos CLR em um elemento
+title: 'Como: Definir atributos CLR em um elemento'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1609b92e631abdaba34a18bd32d4fc6d892f7cd7
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 5b9a96f70febc6a33d80557a09cc8bc8e1adf2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938073"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>Como definir atributos CLR em um elemento
+# <a name="how-to-set-clr-attributes-on-an-element"></a>Como: Definir atributos CLR em um elemento
 Atributos personalizados são atributos especiais que podem ser adicionados a diagramas, formas, conectores e elementos de domínio. Você pode adicionar qualquer atributo que herda o `System.Attribute` classe.
 
 ### <a name="to-add-a-custom-attribute"></a>Para adicionar um atributo personalizado

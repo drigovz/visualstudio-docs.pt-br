@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criação de perfil de um aplicativo do SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913811"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Passo a passo: Criar o perfil de um aplicativo do SharePoint
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Passo a passo: Perfil de um aplicativo do SharePoint
   Este passo a passo mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que pode degradar o desempenho do receptor de evento do recurso. O criador de perfil do Visual Studio permite que você localize e eliminar a parte mais cara (desempenho mais lento) do projeto, também conhecido como o *afunilamento*.  
   
  Este passo a passo demonstra as seguintes tarefas:  
@@ -280,4 +277,3 @@ ms.locfileid: "49852734"
  [Visão geral da sessão de desempenho](/visualstudio/profiling/performance-session-overview)   
  [Guia do iniciante à criação de perfil do desempenho](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Encontre afunilamentos de aplicativos com o Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  

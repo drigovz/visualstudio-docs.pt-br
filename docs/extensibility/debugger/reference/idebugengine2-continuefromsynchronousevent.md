@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::ContinueFromSynchronousEvent | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::ContinueFromSynchronousEvent
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43589e4fd5a75c5c1cd7681dde4a3957f3fe4243
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eaa1d399de86864eb8d1c20e6b8e085a2e0d9f9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849448"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Chamado pelo Gerenciador de depuração de sessão (SDM) para indicar que um evento de depuração síncrona, enviado anteriormente pelo mecanismo de depuração (DE) para o SDM, foi recebido e processado.  
@@ -28,13 +25,13 @@ Chamado pelo Gerenciador de depuração de sessão (SDM) para indicar que um eve
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT ContinueFromSynchronousEvent(   
+HRESULT ContinueFromSynchronousEvent(   
    IDebugEvent2* pEvent  
 );  
 ```  
   
 ```csharp  
-HRESULT ContinueFromSynchronousEvent(   
+HRESULT ContinueFromSynchronousEvent(   
    IDebugEvent2 pEvent  
 );  
 ```  

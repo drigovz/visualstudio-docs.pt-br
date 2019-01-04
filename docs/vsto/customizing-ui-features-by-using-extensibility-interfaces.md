@@ -1,9 +1,6 @@
 ---
 title: Personalizar os recursos de interface do usuário usando interfaces de extensibilidade
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 52da4aa630ef5cf6357b38aeb79ac78f882077e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866654"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizar os recursos de interface do usuário usando interfaces de extensibilidade
   As ferramentas de desenvolvimento do Office no Visual Studio fornecem classes e designers que lidar com muitos detalhes de implementação quando usá-los para criar painéis de tarefas personalizados, personalizações da faixa de opções e regiões de formulário do Outlook em um suplemento do VSTO. No entanto, você também pode implementar o *interface de extensibilidade* para cada recurso por conta própria, se você tiver requisitos especiais.  
@@ -86,5 +83,3 @@ ms.locfileid: "53648885"
  [Chamar o código no VSTO Add-ins de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)  
-  
-  

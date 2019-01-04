@@ -1,9 +1,6 @@
 ---
 title: Visão geral de cor e de fonte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966478"
 ---
 # <a name="font-and-color-overview"></a>Visão geral de fontes e cores
 Este tópico discute as configurações de fonte e cor do texto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE). Ele também apresenta os conceitos de categorias e itens de exibição e descreve como os VSPackages e o editor principal usam atributos de texto.  
@@ -74,7 +71,7 @@ Este tópico discute as configurações de fonte e cor do texto no [!INCLUDE[vsp
   
 - A capacidade de ambos usam itens de exibição interna dos **EditorCategory texto** e estendê-las.  
   
-   Para obter mais informações, consulte [como: usar itens de coloração internos](../extensibility/internals/how-to-use-built-in-colorable-items.md) e [itens de coloração personalizados](../extensibility/internals/custom-colorable-items.md).  
+   Para obter mais informações, confira [Como: Usar itens de coloração internos](../extensibility/internals/how-to-use-built-in-colorable-items.md) e [itens de coloração personalizados](../extensibility/internals/custom-colorable-items.md).  
   
 - Persistência automática do atual estado de ambas as internas e personalizada exibir itens com o **Editor de texto** categoria.  
   

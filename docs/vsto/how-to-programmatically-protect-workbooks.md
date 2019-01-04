@@ -1,9 +1,6 @@
 ---
-title: 'Como: proteger pastas de trabalho de forma programática'
-ms.custom: ''
+title: 'Como: Proteger pastas de trabalho de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900764"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Como: proteger pastas de trabalho de forma programática
+# <a name="how-to-programmatically-protect-workbooks"></a>Como: Proteger pastas de trabalho de forma programática
   Você pode proteger uma pasta de trabalho do Microsoft Office Excel para que os usuários não podem adicionar ou excluir planilhas e também desproteger a pasta de trabalho por meio de programação. Opcionalmente, você pode especificar uma senha, indique se você deseja que a estrutura protegida (para que os usuários não é possível mover planilhas em torno de) e indique se deseja que o windows da pasta de trabalho protegidas.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Proteger uma pasta de trabalho não impede que os usuários para editar as células. Para proteger os dados, você deve proteger as planilhas. Para obter mais informações, consulte [como: proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md).  
+ Proteger uma pasta de trabalho não impede que os usuários para editar as células. Para proteger os dados, você deve proteger as planilhas. Para obter mais informações, confira [Como: Proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md).  
   
  Os exemplos de código a seguir usam uma variável para conter uma senha que é obtida do usuário.  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35669798"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)   
- [Como: proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Como: ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Como: Proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Como: Ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

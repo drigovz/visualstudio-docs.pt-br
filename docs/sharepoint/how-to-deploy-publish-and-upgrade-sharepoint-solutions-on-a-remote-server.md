@@ -1,9 +1,6 @@
 ---
-title: 'Como: implantar, publicar e atualizar soluções do SharePoint em um servidor remoto | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Implantar, publicar e atualizar soluções do SharePoint em um servidor remoto | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbd21016d00bdfecfcb606e9fe2b720ab97bf3d0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118363"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835666"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Como: implantar, publicar e atualizar soluções do SharePoint em um servidor remoto
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Como: Implantar, publicar e atualizar soluções do SharePoint em um servidor remoto
   Além de implantar soluções do SharePoint para o sistema local, você pode publicar soluções em área restrita do SharePoint em locais remotos ou sites locais do SharePoint. As cópias de processo de publicação remoto a *. wsp* arquivo para o servidor do SharePoint instala a solução e, em seguida, permite que você ative a solução. Você também pode atualizar uma instalação remota de solução do SharePoint depois que forem feitas alterações a ele.  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Para publicar uma solução em área restrita do SharePoint em um servidor remoto do SharePoint  
@@ -78,8 +75,7 @@ ms.locfileid: "37118363"
      A versão antiga da solução é desativada, a nova versão da solução é atualizada com os dados mantidos da solução antiga e a nova solução é ativada no SharePoint.  
   
 ## <a name="see-also"></a>Consulte também
- [Como: implantar e publicar uma solução do SharePoint em um site do SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
+ [Como: Implantar e publicar uma solução do SharePoint em um site do SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [Criar pacotes de solução do SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Como: personalizar um pacote de solução do SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Como: adicionar e remover funcionalidades e itens de um pacote usando o Designer de pacote](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [Como: Personalizar um pacote de solução do SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Como: Adicionar e remover funcionalidades e itens de um pacote usando o Designer de pacote](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  

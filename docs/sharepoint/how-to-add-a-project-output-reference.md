@@ -1,13 +1,8 @@
 ---
-title: 'Como: adicionar uma referência de saída do projeto | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicione uma referência de saída do projeto | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47b6a3d164bbe1ddcda6d131275427fb1f815198
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4e7c93b0c23d14c2b129d165cd3a8d701ace8ea1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897282"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>Como: adicionar uma referência de saída do projeto
+# <a name="how-to-add-a-project-output-reference"></a>Como: Adicione uma referência de saída do projeto
   Para implantar assemblies de projeto não seja do SharePoint (ou arquivos. xap em projetos do Silverlight) para o SharePoint, adicioná-los como uma referência de saída do projeto.  
   
  Esse processo cria uma dependência de build de solução entre os dois projetos. Projetos associados com referências de saída do projeto são compilados antes que o projeto do SharePoint é criado e implantado.  
@@ -47,7 +42,5 @@ ms.locfileid: "36755471"
   
 ## <a name="see-also"></a>Consulte também
  [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Como: marcar controles como controles seguros](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
+ [Como: Marcar controles como controles seguros](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

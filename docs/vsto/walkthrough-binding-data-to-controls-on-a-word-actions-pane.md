@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Associar dados a controles em um painel de ações do Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926444"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Passo a passo: Associar dados a controles em um painel de ações do Word
   Este passo a passo demonstra a associação de dados a controles em um painel de ações no Word. Os controles de demonstram uma relação mestre/detalhes entre tabelas em um banco de dados do SQL Server.  
@@ -61,7 +58,7 @@ ms.locfileid: "49873884"
   
 1.  Criar um projeto de documento do Word com o nome **meu painel de ações do Word**. No assistente, selecione **criar um novo documento**.  
   
-     Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre o novo documento do Word no designer e adiciona o **meu painel de ações do Word** projeto ao **Gerenciador de soluções**.  
   
@@ -149,7 +146,7 @@ ms.locfileid: "49873884"
      [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]  
   
-2.  No c#, você deve anexar o manipulador de eventos para o <xref:System.Windows.Forms.UserControl.Load> eventos. Você pode colocar esse código na `ActionsControl` construtor, após a chamada para `InitializeComponent`. Para obter mais informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  No c#, você deve anexar o manipulador de eventos para o <xref:System.Windows.Forms.UserControl.Load> eventos. Você pode colocar esse código na `ActionsControl` construtor, após a chamada para `InitializeComponent`. Para obter mais informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]  
   
@@ -234,13 +231,11 @@ ms.locfileid: "49873884"
 ## <a name="next-steps"></a>Próximas etapas  
  Este passo a passo mostra as Noções básicas de vinculação de dados a controles em um painel de ações no Word. Estas são algumas tarefas que podem vir a seguir:  
   
--   Associando dados a controles no Excel. Para obter mais informações, consulte [instruções passo a passo: associar dados a controles em um painel de ações do Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+-   Associando dados a controles no Excel. Para obter mais informações, confira [Passo a passo: Associar dados a controles em um painel de ações do Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
 -   Implantar o projeto. Para obter mais informações, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral do painel de ações](../vsto/actions-pane-overview.md)   
- [Como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

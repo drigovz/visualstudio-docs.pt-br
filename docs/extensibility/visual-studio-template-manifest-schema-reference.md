@@ -1,6 +1,5 @@
 ---
 title: Referência de esquema do manifesto de modelo do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38581d7c7dd788fef481676283fdc96c8abc96ba
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961949"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referência de esquema do manifesto de modelo do Visual Studio
 Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman*) arquivos que são gerados para os modelos de projeto ou item do Visual Studio. O esquema também descreve o local e outras informações relevantes sobre o modelo.  
   
- : Porque há item separado e diretórios do modelo de projeto, um manifesto nunca deve ter uma mistura de modelos de item e projeto.  
+ : Como há item separado e diretórios do modelo de projeto, um manifesto nunca deve ter uma mistura de modelos de item e projeto.  
   
 > [!IMPORTANT]
 >  Esse manifesto está disponível a partir do Visual Studio 2017.  
@@ -29,9 +28,9 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
   
 ### <a name="attributes"></a>Atributos  
   
--   **Versão**: uma cadeia de caracteres que representa a versão do manifesto do modelo. Necessário.  
+-   **Versão**: Uma cadeia de caracteres que representa a versão do manifesto do modelo. Necessário.  
   
--   **Localidade**: uma cadeia de caracteres que representa a localidade ou localidades do manifesto do modelo. O valor da localidade se aplica a todos os modelos. Você deve usar um manifesto separado para cada localidade. Opcional.  
+-   **Localidade**: Uma cadeia de caracteres que representa a localidade ou localidades do manifesto do modelo. O valor da localidade se aplica a todos os modelos. Você deve usar um manifesto separado para cada localidade. Opcional.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -46,11 +45,11 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
  O contêiner do modelo de elementos do manifesto. Um manifesto tem um contêiner de modelo para cada modelo que ela define.  
   
 ### <a name="attributes"></a>Atributos  
- **VSTemplateType**: um valor de cadeia de caracteres que especifica o tipo do modelo (`"Project"`, `"Item"`, ou `"ProjectGroup"`). Necessária  
+ **VSTemplateType**: Um valor de cadeia de caracteres que especifica o tipo do modelo (`"Project"`, `"Item"`, ou `"ProjectGroup"`). Necessária  
   
 ### <a name="child-elements"></a>Elementos filho  
   
--   **RelativePathOnDisk**: O caminho relativo do arquivo de modelo em disco. Esse local também define o posicionamento do modelo na árvore de modelo mostrado na **novo projeto** ou **Novo Item** caixa de diálogo. Para modelos implantados como um diretório e arquivos individuais, esse caminho se refere ao diretório que contém os arquivos de modelo. Para modelos implantados como uma *. zip* arquivo, esse caminho deve ser o caminho para o *. zip* arquivo.  
+-   **RelativePathOnDisk**:  O caminho relativo do arquivo de modelo em disco. Esse local também define o posicionamento do modelo na árvore de modelo mostrado na **novo projeto** ou **Novo Item** caixa de diálogo. Para modelos implantados como um diretório e arquivos individuais, esse caminho se refere ao diretório que contém os arquivos de modelo. Para modelos implantados como uma *. zip* arquivo, esse caminho deve ser o caminho para o *. zip* arquivo.  
   
 -   * * VSTemplateHeader: Um [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento que descreve o cabeçalho.  
   
@@ -69,9 +68,9 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
   
 -   **RelativePath**: O caminho do modelo. Pode haver apenas uma entrada por caminho, portanto, a primeira delas será a vencedora para todos os manifestos.  
   
--   **LocalizedName**: uma **NameDescriptionIcon** elemento que especifica o nome localizado. Opcional.  
+-   **LocalizedName**: Um **NameDescriptionIcon** elemento que especifica o nome localizado. Opcional.  
   
--   **SortOrder**: uma cadeia de caracteres que especifica a ordem de classificação. Opcional.  
+-   **SortOrder**: Uma cadeia de caracteres que especifica a ordem de classificação. Opcional.  
   
 -   **ParentFolderOverrideName**: O nome substituído da pasta pai. Opcional. Este elemento tem um **nome** atributo, que é um valor de cadeia de caracteres que especifica o nome.  
   
@@ -83,9 +82,9 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
   
 ### <a name="attributes"></a>Atributos  
   
--   **Pacote**: um valor de cadeia de caracteres que especifica o pacote. Opcional.  
+-   **Pacote**: Um valor de cadeia de caracteres que especifica o pacote. Opcional.  
   
--   **ID**: um valor de cadeia de caracteres que especifica a ID. Opcional.  
+-   **ID**: Um valor de cadeia de caracteres que especifica a ID. Opcional.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  

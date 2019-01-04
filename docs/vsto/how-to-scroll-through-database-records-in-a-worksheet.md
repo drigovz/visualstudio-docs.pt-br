@@ -1,9 +1,6 @@
 ---
-title: 'Como: percorrer registros do banco de dados em uma planilha'
-ms.custom: ''
+title: 'Como: Percorrer os registros de banco de dados em uma planilha'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897464"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Como: percorrer registros do banco de dados em uma planilha
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Como: Percorrer os registros de banco de dados em uma planilha
   O procedimento a seguir mostra como usar o designer para exibir um único campo de uma tabela de banco de dados em uma planilha do Microsoft Office Excel, com controles que permitem que o usuário final percorrer todos os registros.  
   
- Você pode usar o designer apenas em projetos de nível de documento. No entanto, você também pode adicionar controles e associá-las aos dados por meio de programação em tempo de execução. Para obter mais informações, consulte [instruções passo a passo: associação de dados simples no projeto do suplemento do VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
+ Você pode usar o designer apenas em projetos de nível de documento. No entanto, você também pode adicionar controles e associá-las aos dados por meio de programação em tempo de execução. Para obter mais informações, confira [Passo a passo: Associação de dados simples no projeto do suplemento do VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -48,5 +45,3 @@ ms.locfileid: "35670103"
   
 ## <a name="see-also"></a>Consulte também  
  [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

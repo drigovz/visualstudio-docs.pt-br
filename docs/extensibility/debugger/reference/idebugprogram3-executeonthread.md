@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afca4a97380d010897ca1dfb7c6229f3f1897ef9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbb2650fc2c001e57de7b1820cff238c8963e8cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889430"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Executa o programa do depurador. O thread é retornado para fornecer as informações do depurador em qual thread o usuário está exibindo ao executar o programa.  
@@ -46,11 +43,11 @@ int ExecuteOnThread(
 ## <a name="remarks"></a>Comentários  
  Há três maneiras diferentes que um depurador pode retomar a execução após a interrupção:  
   
-- Execute: Cancelar qualquer etapa anterior e executar até o próximo ponto de interrupção e assim por diante.  
+- Execute: Cancele qualquer etapa anterior e seja executada até que o próximo ponto de interrupção e assim por diante.  
   
 - Etapa: Cancelar qualquer etapa antiga e executar até que a nova etapa seja concluída.  
   
-- Continuar: Executar novamente e deixar qualquer etapa antiga ativa.  
+- Continue: Execute novamente e deixar qualquer etapa antiga ativa.  
   
   O thread é passado para `ExecuteOnThread` é útil ao decidir qual etapa para cancelar. Se você não souber o thread em execução executar cancela todas as etapas. Com conhecimento do thread, você só precisará cancelar a etapa no thread ativo.  
   

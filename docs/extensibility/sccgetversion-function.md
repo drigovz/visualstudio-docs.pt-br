@@ -1,9 +1,6 @@
 ---
 title: Função SccGetVersion | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetVersion
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70beb89f13d2f752f3adb0f25e2b370fa272171a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b997f3724dc3d1bb0f9155f3b575fef3ce9f2802
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879621"
 ---
 # <a name="sccgetversion-function"></a>Função SccGetVersion
-Esta função obtém o número de versão da API do plug-in de controle de origem o plug-in de controle de origem com suporte.  
+Essa função obtém o número de versão de API de plug-in de controle de origem compatível com o plug-in de controle de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,7 +32,7 @@ LONG SccGetVersion(void);
  nenhuma.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Um `LONG` tipo de dados que contém o número de versão da API do plug-in de controle de origem com suporte:  
+ Um `LONG` tipo de dados que contém o número de versão de API de plug-in de controle de origem com suporte:  
   
 |WORD|Descrição|  
 |----------|-----------------|  

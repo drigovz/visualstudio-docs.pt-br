@@ -1,9 +1,6 @@
 ---
-title: 'Como: salvar anexos de itens de email do Outlook de forma programática'
-ms.custom: ''
+title: 'Como: Salvar anexos de itens de email do Outlook de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd564b71622ad5f9ee6500ddc3864bad0b21686b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ec543a23a68965c0fa629d7318f40e840fb81152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911228"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Como: salvar anexos de itens de email do Outlook de forma programática
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Como: Salvar anexos de itens de email do Outlook de forma programática
   Este exemplo salva anexos de email para uma pasta especificada quando o email é recebido na caixa de entrada.  
   
 > [!IMPORTANT]  
@@ -39,8 +36,6 @@ ms.locfileid: "35669963"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com itens de email](../vsto/working-with-mail-items.md)   
- [Como: recuperar uma pasta por nome de forma programática](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Como: executar ações programaticamente quando uma mensagem de email é recebida](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)   
- [Como: pesquisar em uma pasta específica de forma programática](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  
-  
-  
+ [Como: Recuperar uma pasta por nome de forma programática](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Como: Executar ações programaticamente quando uma mensagem de email é recebida](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)   
+ [Como: Pesquisar em uma pasta específica de forma programática](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  

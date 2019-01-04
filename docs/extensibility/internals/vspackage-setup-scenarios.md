@@ -1,9 +1,6 @@
 ---
 title: Cenários de instalação de VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
@@ -12,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932938"
 ---
 # <a name="vspackage-setup-scenarios"></a>Cenários de instalação do VSPackage
 
@@ -39,7 +36,7 @@ Contagem de referência ocorre no nível do componente. Consequentemente, combin
 
 Por exemplo, valores de registro é usado para registrar o VSPackage com o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] deve ser mantido em um componente separado de um usada para registrar o VSPackage no Visual Studio. Arquivos compartilhados ou valores do registro ir em outro componente.
 
-## <a name="scenario-1-shared-vspackage"></a>Cenário 1: Compartilhado VSPackage
+## <a name="scenario-1-shared-vspackage"></a>Cenário 1: VSPackage compartilhado
 
 Nesse cenário, um VSPackage compartilhado (um binário único que oferece suporte a várias versões do Visual Studio é fornecido em um pacote do Windows Installer. Registrando com cada versão do Visual Studio é controlada pelos recursos selecionáveis pelo usuário. Isso também significa que quando atribuído para separar os recursos, cada componente pode ser selecionada individualmente para instalação ou desinstalação, colocando o usuário no controle de integrar o VSPackage em versões diferentes do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. (Consulte [recursos do Windows Installer](/windows/desktop/Msi/windows-installer-features) para obter mais informações sobre como usar recursos em pacotes do Windows Installer.)
 
@@ -61,7 +58,7 @@ Nesse cenário, uma versão atualizada do instalador do VSPackage no cenário 1 
 
 Este cenário apresenta um novo instalador do VSPackage, tirando proveito do suporte do Windows Installer para atualizações secundárias. Os usuários simplesmente instalar a versão 1.1 e ele atualiza a versão 1.0. No entanto, não é necessário ter a versão 1.0 no sistema. O mesmo instalador instalará a versão 1.1 em um sistema sem versão 1.0. A vantagem para fornecer atualizações secundárias dessa maneira é que não é necessário percorrer o trabalho de desenvolvimento de um instalador de atualização e instalador de um produto completo. Um instalador faz os dois trabalhos. Uma correção de segurança ou service pack pode em vez disso, tirar proveito dos patches do Windows Installer. Para obter mais informações, consulte [aplicação de patch e atualizações](/windows/desktop/Msi/patching-and-upgrades).
 
-## <a name="scenario-3-side-by-side-vspackage"></a>Cenário 3: Side-by-Side VSPackage
+## <a name="scenario-3-side-by-side-vspackage"></a>Cenário 3: VSPackage lado a lado
 
 Este cenário apresenta dois instaladores de VSPackage — uma para cada versão do Visual Studio .NET 2003 e o Visual Studio. Cada instalador instala um lado a lado ou privada, VSPackage (aquele que é criado e instalado para uma versão específica do Visual Studio especificamente). Cada VSPackage está em seu próprio componente. Consequentemente, cada um pode ser individualmente atendida com patches ou manutenção libera. Como a DLL de VSPackage agora é específico da versão, é seguro incluir suas informações de registro no mesmo componente, como a DLL.
 
@@ -69,7 +66,7 @@ Este cenário apresenta dois instaladores de VSPackage — uma para cada versão
 
 Cada instalador também inclui código que é compartilhado entre os dois instaladores. Se o código compartilhado é instalado em um local comum, instalar os dois arquivos. msi instalará o código compartilhado somente uma vez. O instalador do segundo apenas incrementa uma contagem de referência no componente. A contagem de referência garante que, se um dos VSPackages for desinstalado, o código compartilhado permanecerá por outro VSPackage. Se o segundo VSPackage for desinstalado, bem, o código compartilhado será removido.
 
-## <a name="scenario-4-side-by-side-vspackage-update"></a>Cenário 4: Atualização de VSPackage de lado a lado
+## <a name="scenario-4-side-by-side-vspackage-update"></a>Cenário 4: Atualização de VSPackage lado a lado
 
 Nesse cenário, o VSPackage para o Visual Studio foram afetados por uma vulnerabilidade de segurança e é necessário executar uma atualização. Como no cenário 2, você pode criar um novo arquivo. msi que atualiza uma instalação existente para incluir a correção de segurança, bem como para implantar novas instalações com a correção de segurança já em vigor.
 

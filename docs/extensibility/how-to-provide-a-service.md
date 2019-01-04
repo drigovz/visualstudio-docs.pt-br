@@ -1,9 +1,6 @@
 ---
-title: 'Como: fornecer um serviço | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Fornecer um serviço | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857809"
 ---
-# <a name="how-to-provide-a-service"></a>Como: fornecer um serviço
+# <a name="how-to-provide-a-service"></a>Como: Fornecer um serviço
 Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para fornecer um serviço, um VSPackage deve registrar o serviço com o Visual Studio e adicione o serviço.  
   
  O <xref:Microsoft.VisualStudio.Shell.Package> classe implementa ambos <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> e <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contém métodos de retorno de chamada que fornecem serviços sob demanda.  
@@ -142,6 +139,6 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
      O valor de `helloString` deve ser "Hello".  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: obter um serviço](../extensibility/how-to-get-a-service.md)   
+ [Como: Obtenha um serviço](../extensibility/how-to-get-a-service.md)   
  [Use e forneça serviços](../extensibility/using-and-providing-services.md)   
  [Fundamentos do serviço](../extensibility/internals/service-essentials.md)

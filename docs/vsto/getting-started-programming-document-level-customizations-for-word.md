@@ -1,9 +1,6 @@
 ---
 title: Começar a programar personalizações no nível de documento para Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36eedad9432738119b1993ba56ae46a363b166a0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904793"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Começar a programar personalizações no nível de documento para Word
   Se você estiver apenas começando criar personalizações em nível de documento para o Microsoft Office Word usando o Visual Studio, aqui está o que você precisa saber.  
@@ -74,5 +71,3 @@ ms.locfileid: "53648407"
  [Instruções passo a passo usando o Word](../vsto/walkthroughs-using-word.md)   
  [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)   
  [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

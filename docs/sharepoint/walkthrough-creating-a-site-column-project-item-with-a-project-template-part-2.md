@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 2 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829894"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de projeto no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para criar um novo projeto que contém o item de projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.  
   
- Neste passo a passo, você adicionará um Assistente para o modelo de projeto da coluna de Site que é demonstrado [instruções passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Quando um usuário cria um projeto de coluna de Site, o assistente coleta informações sobre a coluna de site (como seu tipo base e o grupo) e adiciona essas informações para o *Elements. XML* arquivos no novo projeto.  
+ Neste passo a passo, você adicionará um Assistente para o modelo de projeto da coluna de Site que é demonstrado [passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Quando um usuário cria um projeto de coluna de Site, o assistente coleta informações sobre a coluna de site (como seu tipo base e o grupo) e adiciona essas informações para o *Elements. XML* arquivos no novo projeto.  
   
  Este passo a passo demonstra as seguintes tarefas:  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942069"
 > Para uma série de fluxos de trabalho de exemplo, consulte [exemplos de fluxo de trabalho do SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
- Para executar este passo a passo, você deve primeiro criar a solução SiteColumnProjectItem completando [instruções passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
+ Para executar este passo a passo, você deve primeiro criar a solução SiteColumnProjectItem Concluindo [passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
   
  Você também precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942069"
   
   Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
   
-- Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, consulte [como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
+- Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, confira [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
   
 - Colunas de site no SharePoint. Para obter mais informações, consulte [colunas](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942069"
 |comandos do SharePoint|Esses são métodos que são usados pelo modelo de dados do Assistente para chamar o site do SharePoint local enquanto o assistente está em execução. Porque os comandos do SharePoint devem ter como destino o .NET Framework 3.5, esses comandos são implementados em um assembly diferente do restante do código do assistente.|  
   
 ## <a name="create-the-projects"></a>Crie os projetos
- Para concluir este passo a passo, você precisa adicionar vários projetos à solução SiteColumnProjectItem que você criou na [instruções passo a passo: criar um item de projeto da coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ Para concluir este passo a passo, você precisa adicionar vários projetos à solução SiteColumnProjectItem que você criou na [passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - Um projeto WPF. Você implementará o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> de interface e definir o Assistente de interface do usuário neste projeto.  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942069"
   
 3.  Certifique-se de que a estrutura de destino é definida como o .NET Framework 4.5, não o perfil de cliente do .NET Framework 4.5.  
   
-     Para obter mais informações, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Para obter mais informações, confira [Como: Direcionar a uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Abra o menu de atalho para o **ProjectTemplateWizard** do projeto, escolha **Add**e, em seguida, escolha **Novo Item**.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942069"
   
 13. Se você estiver desenvolvendo um projeto do Visual Basic, importar o namespace ProjectTemplateWizard para seu projeto usando o **Designer de projeto**.  
   
-     Para obter mais informações, consulte [como: Adicionar ou remover Namespaces importados &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Para obter mais informações, confira [Como: Adicionar ou remover Namespaces importados &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Para configurar o projeto SharePointcommands
   
@@ -323,7 +320,7 @@ ms.locfileid: "49942069"
 1.  Na barra de menus, escolha **Compilar** > **Compilar Solução**.  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>Removendo o arquivo snk do modelo de projeto
- Na [instruções passo a passo: criar um item de projeto da coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), o modelo de projeto que você criou contém um arquivo de snk que é usado para assinar cada instância de projeto da coluna de Site. Esse arquivo snk não é mais necessário porque o assistente agora gera um novo arquivo snk para cada projeto. Remova o arquivo de snk do modelo de projeto e remover as referências a esse arquivo.  
+ No [passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), o modelo de projeto que você criou contém um arquivo de snk que é usado para assinar cada instância de projeto da coluna de Site. Esse arquivo snk não é mais necessário porque o assistente agora gera um novo arquivo snk para cada projeto. Remova o arquivo de snk do modelo de projeto e remover as referências a esse arquivo.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>Para remover o arquivo de snk do modelo de projeto  
   
@@ -546,5 +543,4 @@ ms.locfileid: "49942069"
  [Definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Criando modelos de projeto e modelos de Item para itens de projeto do SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Referência de esquema de modelo do Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)  

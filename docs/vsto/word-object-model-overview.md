@@ -1,9 +1,6 @@
 ---
 title: Visão geral do modelo de objeto do Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922245"
 ---
 # <a name="word-object-model-overview"></a>Visão geral do modelo de objeto do Word
   Ao desenvolver soluções do Word no Visual Studio, você interage com o modelo de objeto do Word. Esse modelo de objeto consiste em classes e interfaces que são fornecidos no assembly de interoperabilidade primário para o Word e são definidos na <xref:Microsoft.Office.Interop.Word> namespace.  
@@ -122,7 +119,7 @@ ms.locfileid: "49878005"
  Para obter informações completas sobre o modelo de objeto do Word, você pode consultar a referência de assembly de interoperabilidade primária (PIA) do Word e do Visual Basic para referência de modelo de objeto Applications (VBA).  
   
 ### <a name="primary-interop-assembly-reference"></a>Referência de assembly de interoperabilidade primário  
- A documentação de referência de PIA Word descreve os tipos no assembly de interoperabilidade primário para o Word. Esta documentação está disponível no seguinte local: [referência de assembly de interoperabilidade primária do Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ A documentação de referência de PIA Word descreve os tipos no assembly de interoperabilidade primário para o Word. Esta documentação está disponível no seguinte local: [Referência de assembly de interoperabilidade primária do Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Para obter mais informações sobre o design de PIA o Word, como as diferenças entre classes e interfaces no PIA e como os eventos no PIA são implementados, consulte [visão geral das classes e interfaces no Office assemblies de interoperabilidade primários](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
@@ -140,5 +137,3 @@ ms.locfileid: "49878005"
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Como: abrir editores padrão | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Abrir editores padrão | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e740cdbb04a9b20ddb5a9d0465434333dd29264
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fbc4c694dcaa39e61eef484f018204474e67dd7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820339"
 ---
-# <a name="how-to-open-standard-editors"></a>Como: abrir editores padrão
+# <a name="how-to-open-standard-editors"></a>Como: Abrir editores padrão
 Quando você abre um editor padrão, deixar o IDE determinar um editor padrão para um tipo de arquivo designado, em vez de especificar um editor específico do projeto para o arquivo.  
   
  Conclua o procedimento a seguir para implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método. Isso abrirá um arquivo de projeto em um editor padrão.  
@@ -55,6 +52,6 @@ Quando você abre um editor padrão, deixar o IDE determinar um editor padrão p
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Como: abrir editores específicos do projeto](../extensibility/how-to-open-project-specific-editors.md)   
- [Como: abrir editores para documentos abertos](../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Como: Editores abertos específicos do projeto](../extensibility/how-to-open-project-specific-editors.md)   
+ [Como: Abrir editores para documentos abertos](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Exibir arquivos usando o comando Abrir arquivo](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

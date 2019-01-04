@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criar seu primeiro suplemento VSTO para o projeto'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931249"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Passo a passo: Criar seu primeiro suplemento VSTO para o projeto
   Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office Project. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual projeto estiver aberto. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -123,13 +120,13 @@ ms.locfileid: "50671411"
 ## <a name="next-steps"></a>Próximas etapas  
  Agora que você criou um básico suplemento VSTO para o projeto, você pode aprender mais sobre como desenvolver suplementos do VSTO nesses tópicos:  
   
--   Tarefas gerais de programação que você pode executar no VSTO Add-ins para o projeto: [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
+-   Tarefas de programação gerais que você pode executar no VSTO Add-ins para o projeto: [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
   
--   Usando o modelo de objeto do projeto: [soluções de projeto](../vsto/project-solutions.md).  
+-   Usando o modelo de objeto do projeto: [Soluções de projeto](../vsto/project-solutions.md).  
   
--   Compilar e depurar o VSTO Add-ins para o projeto: [soluções do Office compilar](../vsto/building-office-solutions.md).  
+-   Compilar e depurar o VSTO Add-ins para o projeto: [Compilar soluções do Office](../vsto/building-office-solutions.md).  
   
--   Implantando o VSTO Add-ins para o projeto: [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
+-   Implantação de suplementos do VSTO para o projeto: [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
@@ -137,5 +134,3 @@ ms.locfileid: "50671411"
  [Compilar soluções do Office](../vsto/building-office-solutions.md)   
  [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)   
  [Visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md)  
-  
-  

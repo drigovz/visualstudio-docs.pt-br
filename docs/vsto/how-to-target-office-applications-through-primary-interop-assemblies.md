@@ -1,9 +1,6 @@
 ---
-title: 'Como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários'
-ms.custom: ''
+title: 'Como: Aplicativos do Office de destino por meio de assemblies de interoperabilidade primários'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845896"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como: Aplicativos do Office de destino por meio de assemblies de interoperabilidade primários
   Quando você cria um novo projeto do Office, o Visual Studio adiciona automaticamente referências para os Microsoft Office assemblies de interoperabilidade primários (PIAs) que são necessários para compilar seu projeto. Você deve adicionar referências a outros PIAs nos seguintes cenários:  
   
 - Você deseja usar os recursos de outros aplicativos do Microsoft Office em seu projeto. Por exemplo, você talvez queira usar os recursos do Microsoft Office Excel em um projeto para o Microsoft Office Word.  
@@ -58,6 +55,4 @@ ms.locfileid: "49863744"
  [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md)   
  [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
  [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
- [Como: assemblies de interoperabilidade primários do Office de instalação](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Como: Instalar assemblies de interoperabilidade primários do Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

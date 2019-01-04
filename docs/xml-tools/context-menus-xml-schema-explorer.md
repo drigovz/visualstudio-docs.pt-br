@@ -2,7 +2,6 @@
 title: Menus de contexto em XML Schema Explorer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898889"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus de contexto (XML Schema Explorer)
 
 Os seguintes itens de menu de contexto são usados para executar pesquisas esquema- específicas e outras operações.
 
-## <a name="node-type-schema-set"></a>Tipo de nó: conjunto de esquemas
+## <a name="node-type-schema-set"></a>Tipo de nó: Conjunto de esquema
 
 A tabela a seguir descreve as opções que estão disponíveis para um nó do esquema.
 
@@ -43,7 +42,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Mostrar elementos globais**|Localiza e realces todos elementos globais no namespace selecionado.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
-## <a name="node-type-file"></a>Tipo de nó: arquivo
+## <a name="node-type-file"></a>Tipo de nó: Arquivo
  A tabela a seguir descreve as opções que estão disponíveis para um nó de arquivo.
 
 |Opção|Descrição|
@@ -65,7 +64,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
-## <a name="node-type-element"></a>Tipo de nó: elemento
+## <a name="node-type-element"></a>Tipo de nó: Elemento
  Além das opções do nó globais descritos acima, o menu de contexto para nós do elemento tem as seguintes opções:
 
 |Opção|Descrição|
@@ -77,7 +76,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Cabeçalhos de grupo de substituição**|Para elementos globais que são membros de um grupo de substituição, localiza e ressalta os cabeçotes qualquer diretos e indiretos para o elemento selecionado, como o seguinte:<br /><br /> -Um chefe de grupo de substituição especificado no elemento selecionado.<br />-Um chefe de grupo de substituição especificado no elemento principal.|
 |**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
 
-## <a name="node-type-global-types"></a>Tipo de nó: tipos globais
+## <a name="node-type-global-types"></a>Tipo de nó: Tipos globais
  Além das opções do nó globais descritos acima, o menu de contexto para nós globais do tipo tem as seguintes opções:
 
 |Opção|Descrição|
@@ -87,7 +86,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Mostrar todos os tipos derivados**|Localiza e realça todos os tipos que direta e indiretamente são derivados do tipo selecionado.|
 |**Mostrar todos os ancestrais**|Mostrar todos os tipos de base pai ().|
 
-## <a name="node-type-attribute"></a>Tipo de nó: atributo
+## <a name="node-type-attribute"></a>Tipo de nó: Atributo
  Além das opções do nó globais descritos acima, o menu de contexto para nós de atributo tem as seguintes opções:
 
 |Opção|Descrição|
@@ -96,7 +95,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Vá para o atributo Original**|Para referências de atributo, navega para a definição real do atributo.|
 |**Mostrar todas as referências**|Para atributos globais, localiza e realça todas as referências (outros atributos que têm `ref="selectedAttribute"`) para o atributo selecionado.|
 
-## <a name="node-type-attribute-group"></a>Tipo de nó: grupo de atributos
+## <a name="node-type-attribute-group"></a>Tipo de nó: Grupo de atributos
  Além das opções do nó globais descritos acima, o menu de contexto para nós do grupo de atributo tem as seguintes opções:
 
 |Opção|Descrição|
@@ -105,7 +104,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Mostrar todos os membros**|Localiza e realces todos os membros do grupo de atributo.|
 |**Mostrar todas as referências**|Localiza e realça todas as referências (grupos de atributo que têm `ref="selectedAttributeGroup"`) para o grupo selecionado de atributo.|
 
-## <a name="node-type-named-group"></a>Tipo de nó: grupo nomeado
+## <a name="node-type-named-group"></a>Tipo de nó: Grupo nomeado
  Além das opções do nó globais descritos acima, o menu de contexto para nós nome de grupo tem as seguintes opções:
 
 |Opção|Descrição|
