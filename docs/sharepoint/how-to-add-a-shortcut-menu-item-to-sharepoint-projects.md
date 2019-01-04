@@ -1,9 +1,6 @@
 ---
-title: 'Como: adicionar um Item de Menu de atalho a projetos do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar um Item de Menu de atalho a projetos do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a2fbc9d71684bc44e01a1d53f5d53f35c8d7311
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ba38984b5c49dbf834286414e61734fe46069876
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964131"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Como: adicionar um item de menu de atalho a projetos do SharePoint
+# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Como: Adicionar um item de menu de atalho a projetos do SharePoint
   Você pode adicionar um item de menu de atalho para qualquer projeto do SharePoint. O item de menu é exibido quando um usuário clica em um nó do projeto **Gerenciador de soluções**.  
   
- As etapas a seguir pressupõem que você já tenha criado uma extensão de projeto. Para obter mais informações, consulte [como: criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ As etapas a seguir pressupõem que você já tenha criado uma extensão de projeto. Para obter mais informações, confira [Como: Criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 ### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Para adicionar um item de menu de atalho a projetos do SharePoint  
   
@@ -55,6 +52,5 @@ ms.locfileid: "36757565"
   
 ## <a name="see-also"></a>Consulte também
  [Estender projetos do SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Como: criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Como: adicionar uma propriedade a projetos do SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
-  
+ [Como: Criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [Como: Adicionar uma propriedade a projetos do SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  

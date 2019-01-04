@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Importar de uma região de formulário projetada no Outlook'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 413d2fed56da809b2fdb8c1fad867818e0cce010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956173"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Passo a passo: Importar de uma região de formulário projetada no Outlook
   Este passo a passo demonstra como criar uma região de formulário no Microsoft Office Outlook e, em seguida, importe a região do formulário para um projeto de suplemento do VSTO do Outlook usando o **nova região de formulário** assistente. Criando a região de formulário do Outlook torna possível para adicionar controles nativos do Outlook para a região de formulário associar a dados do Outlook. Depois de importar a região do formulário, você pode manipular os eventos de cada controle.  
@@ -48,7 +45,7 @@ ms.locfileid: "49903511"
 > [!NOTE]  
 >  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [How do i: Criar formulário do Outlook usando o Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Criar regiões de formulário do Outlook usando o Visual Studio 2008? ](http://go.microsoft.com/fwlink/?LinkID=130305).  
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Cria uma região de formulário usando o designer de região de formulário do Outlook  
  Nesta etapa, você criará uma região de formulário do Outlook. Em seguida, você irá salvar em um local fácil de encontrar a região do formulário para que você pode importá-lo para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -58,7 +55,7 @@ ms.locfileid: "49903511"
   
 1.  Inicie o Microsoft Office Outlook.  
   
-2.  No Outlook, sobre o **Developer** , clique em **criar um formulário**. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+2.  No Outlook, sobre o **Developer** , clique em **criar um formulário**. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  No **Design Form** , clique em **tarefa**e, em seguida, clique em **abrir**.  
   
@@ -127,7 +124,7 @@ ms.locfileid: "49903511"
   
 3.  Salve o projeto no diretório de projeto padrão.  
   
-     Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 ## <a name="import-the-form-region"></a>Importar a região do formulário  
  Você pode importar a região do formulário projetada no Outlook para o projeto de suplemento do VSTO do Outlook usando o **nova região de formulário do Outlook** assistente.  
@@ -248,7 +245,7 @@ ms.locfileid: "49903511"
 ## <a name="next-steps"></a>Próximas etapas  
  Você pode aprender mais sobre como personalizar a interface do usuário de um aplicativo do Outlook com estes tópicos:  
   
--   Para saber mais sobre como criar a aparência de uma região de formulário ao arrastar controles gerenciados em um designer visual, consulte [instruções passo a passo: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Para saber mais sobre como criar a aparência de uma região de formulário ao arrastar controles gerenciados em um designer visual, consulte [passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 -   Para saber mais sobre como personalizar a faixa de opções de um item do Outlook, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
@@ -259,9 +256,7 @@ ms.locfileid: "49903511"
  [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)   
  [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Associar uma região de formulário uma classe de mensagem do Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Personalizar ações em regiões de formulário do Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Como: evitar que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
-  
-  
+ [Como: Impedir que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  

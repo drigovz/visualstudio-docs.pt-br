@@ -1,8 +1,7 @@
 ---
-title: 'Como: Definir propriedades de análise de código para projetos C/C++'
+title: 'Como: Definir as propriedades de análise de código para projetos C/C++'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
@@ -20,14 +19,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 000b731bffe6b2fe02e34e98ebfd3ce8a21f5bd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915624"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Como: Definir propriedades de análise de código para projetos C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Como: Definir as propriedades de análise de código para projetos C/C++
 Você pode configurar as regras que a ferramenta de análise de código usa para analisar o código em cada configuração de seu projeto. Além disso, você pode direcionar a análise de código para suprimir avisos do código que foi gerado e adicionado ao seu projeto por uma ferramenta de terceiros.
 
 ## <a name="code-analysis-property-page"></a>Página de propriedades de análise de código

@@ -1,9 +1,6 @@
 ---
 title: Alterações no design dos projetos do Office destinados ao .NET Framework
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a0f18e35cd3bc77e30f62578c5f2527c8f407c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888459"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Alterações no design dos projetos do Office destinados ao .NET Framework 4 ou o .NET Framework 4.5
   A partir [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], o Visual Studio introduziu algumas alterações no design dos projetos do Office que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Se você estiver familiarizado com projetos do Office em versões anteriores do Visual Studio, você deve estar atento essas alterações antes de desenvolver projetos do Office que se destinam a essas versões do .NET Framework 4.0 ou posterior. Por padrão, todos os projetos que você cria usando o Visual Studio 2013 ou posterior direcionam o .NET Framework 4.0 ou posterior.  
@@ -63,5 +60,3 @@ ms.locfileid: "53739478"
  [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [O que há de novo no desenvolvimento do Office](https://msdn.microsoft.com/library/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
-  
-  

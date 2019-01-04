@@ -2,7 +2,6 @@
 title: Configurar a análise de código
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939752"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Como configurar a análise de código para um projeto de código gerenciado
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Como: Configurar a análise de código para um projeto de código gerenciado
 
 No Visual Studio, você pode escolher de uma lista de análise de código [conjuntos de regra](../code-quality/rule-set-reference.md)) para aplicar a um projeto de código gerenciado. Por padrão, o **Microsoft mínimo recomendado regras** conjunto de regras é selecionado, mas você pode aplicar uma regra diferente, defina se desejado. Conjuntos de regras podem ser aplicados a um ou vários projetos em uma solução.
 
 > [!TIP]
-> Para obter informações sobre como configurar uma regra definida para aplicativos web ASP.NET, consulte [como: configurar a análise de código para um ASP.NET web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+> Para obter informações sobre como configurar uma regra definida para aplicativos web ASP.NET, consulte [como: Configurar a análise de código para um aplicativo web do ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Para configurar uma regra definida para um projeto do .NET Framework
 
@@ -77,4 +76,4 @@ Por padrão, todos os projetos gerenciados de uma solução são atribuídos a *
 ## <a name="see-also"></a>Consulte também
 
 - [Referência do conjunto de regras de análise de código](../code-quality/rule-set-reference.md)
-- [Como: configurar a análise de código para um aplicativo web do ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Como: Configurar a análise de código para um aplicativo web do ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

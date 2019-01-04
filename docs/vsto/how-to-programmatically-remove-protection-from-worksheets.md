@@ -1,9 +1,6 @@
 ---
-title: 'Como: remover a proteção de planilhas programaticamente'
-ms.custom: ''
+title: 'Como: Remover a proteção de planilhas programaticamente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e15fd2f2d4a025155bbaa1d39dc5c38155b452e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd0aacdd168c65cda9f7ac57880e3216b3fb3daa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956134"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Como: remover a proteção de planilhas programaticamente
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Como: Remover a proteção de planilhas programaticamente
   Você poderá remover programaticamente a proteção de uma planilha do Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -48,9 +45,7 @@ ms.locfileid: "35670250"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
- [Como: proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Como: proteger pastas de trabalho de forma programática](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Como: ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Como: Proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Como: Proteger pastas de trabalho de forma programática](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Como: Ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

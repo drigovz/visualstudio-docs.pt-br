@@ -1,9 +1,6 @@
 ---
 title: 'Como: Selecionar planilhas programaticamente'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09e477d802b9d92ca4f9e1cd3a532145ad0e68a0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924469"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Como: Selecionar planilhas programaticamente
   O <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> método seleciona o objeto especificado, que move a seleção do usuário para o novo objeto. Use o <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> método se você deseja colocar o foco para o objeto sem alterar a seleção do usuário.  
@@ -53,13 +50,11 @@ ms.locfileid: "35670760"
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
  [Como: Imprimir planilhas programaticamente](../vsto/how-to-programmatically-print-worksheets.md)   
- [Como: excluir planilhas de pastas de trabalho de forma programática](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Como: ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Como: proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Como: Excluir planilhas de pastas de trabalho de forma programática](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Como: Ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Como: Proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Item de host da planilha](../vsto/worksheet-host-item.md)   
  [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

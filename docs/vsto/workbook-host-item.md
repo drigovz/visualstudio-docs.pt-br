@@ -1,9 +1,6 @@
 ---
 title: Item de host da pasta de trabalho
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b477b40425f7ded5fbaacf09aabc446ff207d86c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f15d93818c2db553d22d9639e6460f6637d33c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952849"
 ---
 # <a name="workbook-host-item"></a>Item de host da pasta de trabalho
   O <xref:Microsoft.Office.Tools.Excel.Workbook> item de host é um tipo que estende o <xref:Microsoft.Office.Interop.Excel.Workbook> o tipo do assembly de interoperabilidade primário para o Excel. O <xref:Microsoft.Office.Tools.Excel.Workbook> item de host fornece todas as mesmas propriedades, métodos e eventos como um <xref:Microsoft.Office.Interop.Excel.Workbook> objeto, mas ele também fornece recursos adicionais.  
@@ -47,7 +44,7 @@ ms.locfileid: "35258162"
 ### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>Limitações do item de host de pasta de trabalho em projetos de nível de documento  
  Um projeto de nível de documento pode conter apenas um <xref:Microsoft.Office.Tools.Excel.Workbook> item de host (ou seja, o `ThisWorkbook` classe). Você não pode adicionar novas <xref:Microsoft.Office.Tools.Excel.Workbook> host de itens ao seu projeto em tempo de design, e você não pode criar novos <xref:Microsoft.Office.Tools.Excel.Workbook> hospedar itens em tempo de execução de uma personalização no nível de documento.  
   
- Se você criar uma nova pasta de trabalho do Excel em tempo de execução, ele será do tipo <xref:Microsoft.Office.Interop.Excel.Workbook>. Porque ele não é um item de host, ele não pode conter quaisquer controles de host ou controles de formulários do Windows. Para obter mais informações sobre como criar pastas de trabalho em tempo de execução, consulte [como: criar programaticamente novas pastas de trabalho](../vsto/how-to-programmatically-create-new-workbooks.md).  
+ Se você criar uma nova pasta de trabalho do Excel em tempo de execução, ele será do tipo <xref:Microsoft.Office.Interop.Excel.Workbook>. Porque ele não é um item de host, ele não pode conter quaisquer controles de host ou controles de formulários do Windows. Para obter mais informações sobre como criar pastas de trabalho em tempo de execução, consulte [como: Criar novas pastas de trabalho de forma programática](../vsto/how-to-programmatically-create-new-workbooks.md).  
   
  O <xref:Microsoft.Office.Tools.Excel.Workbook> item de host não age como um contêiner para controles de host. Portanto, você não pode adicionar todos os controles visíveis na pasta de trabalho, mas você pode adicionar componentes, como um <xref:System.Data.DataSet>, de modo que os componentes podem ser compartilhados por todas as planilhas. Em um projeto de nível de documento, os componentes disponíveis para a pasta de trabalho podem ser encontrados na **componente** guia, **dados** guia, e **todos os formulários do Windows** guia o  **Caixa de ferramentas**.  
   
@@ -64,5 +61,3 @@ ms.locfileid: "35258162"
  [Item de host da planilha](../vsto/worksheet-host-item.md)   
  [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: IDebugPointerField | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPointerField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63ac5f4f7e357ba256d7a796654100480a34533a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fc686af78b4ac787abef1c0c52309e82c47376b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947888"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Essa interface representa um tipo de ponteiro.  
@@ -35,17 +32,17 @@ IDebugPointerField : IDebugContainerField
  O provedor de símbolo implementa essa interface para representar um ponteiro.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Use [QueryInterface](/cpp/atl/queryinterface) para obter essa interface do [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retorna `FIELD_TYPE_POINTER`.  
+ Use [QueryInterface](/cpp/atl/queryinterface) para obter essa interface da [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retorna `FIELD_TYPE_POINTER`.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
- Além dos métodos de `IDebugField` e `IDebugContainerField` interfaces, essa interface implementa o método a seguir:  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+ Além dos métodos na `IDebugField` e `IDebugContainerField` interfaces, essa interface implementa o método a seguir:  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que descreve o destino do ponteiro.|  
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) descrevendo a meta do ponteiro.|  
   
 ## <a name="remarks"></a>Comentários  
- Em C/C++, um ponteiro pode ser um contêiner se ele é usado com a notação de matriz. Por exemplo, `char *pString`, `pString` tem um tipo de ponteiro para `char`. `pString[3]` tem o tipo de um contêiner que é um ponteiro para `char` que referencia o quarto elemento do contêiner.  
+ Em C/C++, um ponteiro pode ser um contêiner se ele for usado com a notação de matriz. Por exemplo, dada `char *pString`, `pString` tem um tipo de ponteiro para `char`. `pString[3]` tem o tipo de um contêiner que é um ponteiro para `char` que referencia o quarto elemento do contêiner.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: sh.h  
@@ -55,6 +52,6 @@ IDebugPointerField : IDebugContainerField
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Interfaces de provedor de símbolo](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

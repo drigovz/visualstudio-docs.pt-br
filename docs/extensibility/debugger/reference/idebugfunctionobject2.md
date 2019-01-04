@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionObject2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugFunctionObject2 interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b051cc033f41f78fb1f2e6ed18eb22de6f8f0aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 276db8c4175ce74326cb2e0cd45440f2ed00f8ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958417"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
->  No Visual Studio 2015, essa maneira de implementar avaliadores de expressão foi preterida. Para obter informações sobre como implementar avaliadores de expressão do CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Representa uma função e aprimora o [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
+ Representa uma função e aprimora a [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,7 +33,7 @@ IDebugFunctionObject2 : IUnknown
  Um avaliador de expressão (EE) implementa essa interface para representar uma função.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Métodos desta interface adiar desses **IDebugFunctionObject** das seguintes maneiras:  
+ Métodos dessa interface adiar aqueles **IDebugFunctionObject** das seguintes maneiras:  
   
 -   O **IDebugEvaluate** método usa sinalizadores.  
   
@@ -51,10 +48,10 @@ IDebugFunctionObject2 : IUnknown
 |------------|-----------------|  
 |[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Cria um objeto que usa um construtor que recebe as configurações de sinalizador de avaliação e um valor de tempo limite.|  
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Cria um objeto de cadeia de caracteres que tem o comprimento especificado.|  
-|[avaliar](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Chama a função e retorna o valor resultante como um objeto.|  
+|[Avaliar](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Chama a função e retorna o valor resultante como um objeto.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Ee.h  
+ Cabeçalho: EE.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

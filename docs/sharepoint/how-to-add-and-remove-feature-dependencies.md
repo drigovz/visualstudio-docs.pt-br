@@ -1,16 +1,11 @@
 ---
-title: 'Como: adicionar e remover dependências de recurso | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar e remover dependências de recurso | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7a61ff71b5ed8caa8ad50dff71957bee20b955a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924235"
 ---
-# <a name="how-to-add-and-remove-feature-dependencies"></a>Como: adicionar e remover dependências de recurso
+# <a name="how-to-add-and-remove-feature-dependencies"></a>Como: Adicionar e remover dependências de recurso
   O recurso do SharePoint pode depender de outros recursos de funcionalidade ou dados. Nesses casos, você pode marcar esses outros recursos como dependências para o recurso. Dessa forma, o servidor do SharePoint assegura que os recursos dependentes são ativados antes do recurso é ativado.  
   
 ## <a name="add-dependencies"></a>Adicionar dependências  
@@ -71,6 +66,5 @@ ms.locfileid: "36757986"
   
 ## <a name="see-also"></a>Consulte também
  [Criar recursos do SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Como: adicionar e remover itens de recursos do SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
+ [Como: Personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Como: Adicionar e remover itens de recursos do SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

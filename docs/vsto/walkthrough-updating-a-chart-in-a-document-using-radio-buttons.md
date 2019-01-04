@@ -1,9 +1,6 @@
 ---
-title: 'Explicação passo a passo: Um gráfico em um documento usando botões de opção de atualização'
-ms.custom: ''
+title: 'Passo a passo: Atualizar um gráfico em um documento usando botões de opção'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943230"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Explicação passo a passo: Um gráfico em um documento usando botões de opção de atualização
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Passo a passo: Atualizar um gráfico em um documento usando botões de opção
   Esse passo a passo demonstra como usar os botões de opção em uma personalização ao nível do documento do Microsoft Office Word para fornecer aos usuários a opção de selecionar estilos de gráficos no documento.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49904668"
   
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1.  Criar um projeto de documento do Word com o nome **minhas opções de gráficos**. No assistente, selecione **criar um novo documento**. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Criar um projeto de documento do Word com o nome **minhas opções de gráficos**. No assistente, selecione **criar um novo documento**. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre o novo documento do Word no designer e adiciona o **minhas opções de gráficos** projeto ao **Gerenciador de soluções**.  
   
@@ -164,7 +161,7 @@ ms.locfileid: "49904668"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]  
   
-5.  No C#, é necessário adicionar manipuladores de eventos aos botões de opção. É possível adicionar o código ao construtor `ChartOptions`, abaixo da chamada para `InitializeComponent`. Para obter informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  No C#, é necessário adicionar manipuladores de eventos aos botões de opção. É possível adicionar o código ao construtor `ChartOptions`, abaixo da chamada para `InitializeComponent`. Para obter informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]  
   
@@ -211,13 +208,11 @@ ms.locfileid: "49904668"
 ## <a name="next-steps"></a>Próximas etapas  
  Estas são algumas tarefas que podem vir a seguir:  
   
--   Usar um botão para preencher uma caixa de texto. Para obter mais informações, consulte [instruções passo a passo: exibir texto em uma caixa de texto em um documento usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Usar um botão para preencher uma caixa de texto. Para obter mais informações, confira [Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Alterar a formatação selecionando um estilo de uma caixa de combinação. Para obter mais informações, consulte [instruções passo a passo: formatação de documento de alteração usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Alterar a formatação selecionando um estilo de uma caixa de combinação. Para obter mais informações, confira [Passo a passo: Formatação do documento de alterações usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Instruções passo a passo usando o Word](../vsto/walkthroughs-using-word.md)   
  [Instruções passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

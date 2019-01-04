@@ -3,7 +3,6 @@ title: Designer de fluxo de trabalho - Designer de atividade de transição
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6855cf3361b573d20e9b51590168ab94c9cd500b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60962fbe53184767095735cd460d6eb1eb969fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963973"
 ---
 # <a name="transition-activity-designer"></a>Fazer a transição o designer de atividades
 
@@ -34,7 +33,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.T
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.Transition> . O valor padrão é **T1**. O valor pode ser editado na grade de propriedade, no cabeçalho de designer expandido de transição, e o cabeçalho da seção de ação dentro do designer expandido de transição. <xref:System.Activities.Activity.DisplayName%2A> é usado em navegação de rastreamento que é exibida na parte superior do designer de fluxo de trabalho.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|False|Se estiver presente, especifica uma expressão que deve ser avaliada como **verdadeira** antes do controle é passado para o estado de destino. Essa condição pode ser editada na grade de propriedade e expandido no designer de transição. Várias condições em uma transição compartilhado são avaliadas na ordem em que aparecem no designer de transição. **Observação:** Observe que, se o <xref:System.Activities.Statements.Transition.Condition%2A> de uma transição for avaliada como **falso** (ou todas as condições de uma transição do disparador compartilhado são avaliadas como **False**), não ocorrerá a transição e todos os gatilhos para todas as transições de estado serão reagendados. Neste tutorial, essa situação não pode ocorrer devido à maneira como as condições são configuradas (temos ações específicas para se o palpite está correto ou incorreto).|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|False|Se estiver presente, especifica uma expressão que deve ser avaliada como **verdadeira** antes do controle é passado para o estado de destino. Essa condição pode ser editada na grade de propriedade e expandido no designer de transição. Várias condições em uma transição compartilhado são avaliadas na ordem em que aparecem no designer de transição. **Observação:**  Observe que, se o <xref:System.Activities.Statements.Transition.Condition%2A> de uma transição for avaliada como **falsos** (ou todas as condições de uma transição do disparador compartilhado são avaliadas como **falso**), a transição não ocorrerá e todos os disparadores para todos os o transições de estado serão reagendadas. Neste tutorial, essa situação não pode ocorrer devido à maneira como as condições são configuradas (temos ações específicas para se o palpite está correto ou incorreto).|
 |**Source**|verdadeiro|Indica o estado de que essa transição se origina. Clicando no nome do estado de origem alterna a exibição do designer para uma exibição expandida de estado. Esse valor é definido quando a transição é criada e não pode ser alterada.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|False|Especifica a atividade cuja conclusão inicia a transição. Para definir essa atividade, arraste uma atividade do **caixa de ferramentas** e solte-o na **gatilho** seção da transição.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|False|Especifica a atividade que é executada quando a atividade do disparador concluiu e o <xref:System.Activities.Statements.Transition.Condition%2A>, se presente, é avaliada como **verdadeiro**. Esta atividade é executada ao fazer a transição para estado de destino, após a atividade de <xref:System.Activities.Statements.State.Exit%2A> para o estado de origem, se presentes, é executada. Quando o designer de transição é expandido, esse valor pode ser definido arrastar uma atividade do **caixa de ferramentas** e soltando-os à **ação** seção da transição. Pode haver várias ações para uma única transição. As ações individuais podem ser expandidos e reduzido, e podem ser classificadas clicando para cima ou para baixo a seta que aparece em ação quando há várias ações em uma transição.|

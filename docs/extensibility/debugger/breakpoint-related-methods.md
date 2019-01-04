@@ -1,9 +1,6 @@
 ---
 title: Métodos relacionados ao ponto de interrupção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da8292d817649c83f26ebce4abe346e32624a93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947277"
 ---
 # <a name="breakpoint-related-methods"></a>Métodos relacionados ao ponto de interrupção
 Um mecanismo de depuração (DES) deve dar suporte a configuração de pontos de interrupção. Depuração do Visual Studio suporta os seguintes tipos de pontos de interrupção:  
@@ -42,7 +39,7 @@ Um mecanismo de depuração (DES) deve dar suporte a configuração de pontos de
 |Método|Descrição|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Determina se um especificado pendente do ponto de interrupção pode associar a um local de código.|  
-|[associar](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Associa um especificado pendente do ponto de interrupção em um ou mais locais de código.|  
+|[Associar](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Associa um especificado pendente do ponto de interrupção em um ou mais locais de código.|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Obtém o estado de um ponto de interrupção pendente.|  
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Obtém a solicitação de ponto de interrupção usada para criar um ponto de interrupção pendente.|  
 |[Habilitar](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Alterna o estado ativado de um ponto de interrupção pendente.|  

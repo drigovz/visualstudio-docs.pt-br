@@ -1,9 +1,6 @@
 ---
 title: IDebugAddress | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAddress
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ace2892d4518de8c5a4abaa2c113df914f9fa6b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf8c262aef3b562f43409f6d62fc533e4d6314ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933496"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 Essa interface representa o endereço de um item. Ele é retornado pelo manipulador de símbolo.  
@@ -35,17 +32,17 @@ IDebugAddress : IUnknown
  Um provedor de símbolo implementa essa interface para representar um endereço de um objeto.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Muitos métodos em interfaces de muitos retornam a esta interface.  
+ Muitos métodos em interfaces muitos retornam essa interface.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  Essa interface implementa o método a seguir:  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Recupera um [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estrutura que descreve um objeto e seu local.|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Recupera uma [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estrutura que descreve um objeto e sua localização.|  
   
 ## <a name="remarks"></a>Comentários  
- O provedor de símbolo retorna essa interface para representar um objeto e seu local dentro de um escopo específico (por exemplo, função, método ou classe). Essa interface é retornado do e passado para vários métodos do provedor de símbolo e expressão avaliador. Normalmente, o provedor de símbolo é a única entidade que precisa interpretar o conteúdo desta interface.  
+ O provedor de símbolo retorna essa interface para representar um objeto e sua localização dentro de um escopo específico (por exemplo, função, método ou classe). Essa interface é retornada do e passada para vários métodos do provedor de símbolo e expressão avaliador. Normalmente, o provedor de símbolo é a única entidade que precisa para interpretar o conteúdo desta interface.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: sh.h  
@@ -55,5 +52,5 @@ IDebugAddress : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Interfaces de provedor de símbolo](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
