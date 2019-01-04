@@ -1,9 +1,6 @@
 ---
 title: 'Como: Adicionar um painel de tarefas personalizado a um aplicativo'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6436176c7af4206319d9d2f8408baccb0572da5b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0241cfa4b377d35a639b7aa193a38b44135078e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822778"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Como: Adicionar um painel de tarefas personalizado a um aplicativo
   Você pode adicionar um painel de tarefas personalizado para os aplicativos listados acima por meio do suplemento do VSTO. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).  
@@ -64,5 +61,3 @@ ms.locfileid: "53646991"
  [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)   
  [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)   
  [Passo a passo: Automatizar um aplicativo de um painel de tarefas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
-  
-  

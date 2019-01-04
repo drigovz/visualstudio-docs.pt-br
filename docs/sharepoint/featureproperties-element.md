@@ -1,9 +1,6 @@
 ---
 title: Elemento FeatureProperties | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 26fcdb1dd7fa3b62f7882deb1a077b9466e52018
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e7843d8a8ee9fc21c546c8cfca57cfef63cd4015
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36324991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955666"
 ---
 # <a name="featureproperties-element"></a>Elemento FeatureProperties
   Uma coleção de valores de propriedade que são incluídos com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar os valores de propriedade em seu código.  
@@ -66,5 +63,3 @@ ms.locfileid: "36324991"
 ## <a name="see-also"></a>Consulte também
  [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
-  

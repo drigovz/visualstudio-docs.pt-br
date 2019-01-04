@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821029"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 
@@ -91,7 +90,7 @@ Os usuários também podem colar elementos em outros elementos.
 
    1.  Na **Gerenciador de DSL**, expanda **Classes de domínio**. Clique com botão direito `ExampleElement` e, em seguida, clique em **adicionar nova diretiva Element Merge**.
 
-   2.  Certifique-se de que o **detalhes de DSL** janela estiver aberta, para que você possa ver os detalhes de EMD o novo. (Menu: **modo de exibição**, **outros Windows**, **detalhes de DSL**.)
+   2.  Certifique-se de que o **detalhes de DSL** janela estiver aberta, para que você possa ver os detalhes de EMD o novo. (Menu: **Exiba**, **outros Windows**, **detalhes de DSL**.)
 
 3. Defina as **classe de indexação** na janela de detalhes de DSL, para definir a classe de elementos pode ser mesclado com `ExampleElement` objetos.
 
@@ -145,7 +144,7 @@ Observe os seguintes pontos deste procedimento:
 
      Se você escrever código personalizado que cria novos elementos, você pode invocar explicitamente o EMD usando o `ElementOperations.Merge` método. Isso garante que seu código vincula novos elementos no modelo da mesma forma como outras operações. Para obter mais informações, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemplo: Adicionar código de aceitação personalizada a uma EMD
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemplo: Adicionando código aceitação personalizada a uma EMD
 
 Adicionando código personalizado a uma EMD, você pode definir o comportamento mais complexo de mesclagem. Neste exemplo simples impede que o usuário adicionando mais de um número fixo de elementos no diagrama. O exemplo modifica o padrão EMD que acompanha uma relação de incorporação.
 
@@ -208,7 +207,7 @@ Adicionando código personalizado a uma EMD, você pode definir o comportamento 
 
     3.  Verifique se que você não pode usar qualquer uma das seguintes maneiras para adicionar mais de quatro elementos ao modelo. Isso ocorre porque todos eles usam a diretiva de mesclagem.
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemplo: Adicionar código personalizado de mesclagem para uma EMD
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemplo: Adicionar código personalizado de mesclagem em uma EMD
 
 No código personalizado de mesclagem, você pode definir o que acontece quando o usuário arrasta uma ferramenta ou cola em um elemento. Há duas maneiras de definir uma mesclagem personalizada:
 

@@ -1,9 +1,6 @@
 ---
-title: 'Como: recuperar caracteres iniciais e finais em intervalos de forma programática'
-ms.custom: ''
+title: 'Como: Recuperar caracteres iniciais e finais em intervalos de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1244fb2ba0a9e902d4dd853e7bef25376a205a0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9891e54986cd829c92ab3f5a5ad3a81590cf1474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871194"
 ---
-# <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Como: recuperar caracteres iniciais e finais em intervalos de forma programática
+# <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Como: Recuperar caracteres iniciais e finais em intervalos de forma programática
   Este exemplo demonstra como você pode recuperar as posições de caractere das posições de início e término de um intervalo.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -45,11 +42,9 @@ ms.locfileid: "35669931"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#25](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#25)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Como: estender programaticamente os intervalos em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Como: programaticamente redefinir intervalos em documentos do Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Como: programaticamente recolher intervalos ou seleções em documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Como: excluir programaticamente marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
- [Como: programaticamente contar caracteres em documentos](../vsto/how-to-programmatically-count-characters-in-documents.md)  
-  
-  
+ [Como: Definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Como: Por meio de programação estender intervalos em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Como: Por meio de programação redefinir intervalos em documentos do Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Como: Por meio de programação recolher intervalos ou seleções em documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Como: Por meio de programação excluir marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
+ [Como: Por meio de programação contar caracteres em documentos](../vsto/how-to-programmatically-count-characters-in-documents.md)  

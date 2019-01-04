@@ -1,9 +1,6 @@
 ---
-title: 'Como: adicionar um nó personalizado do SharePoint no Gerenciador de servidores | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar um nó personalizado do SharePoint no Gerenciador de servidores | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb0ba7f09ae564a794792ad6f7a60f53f6f6422e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bc648abd1d8981bd5c64782bd094e40d507b4142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937657"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Como: adicionar um nó do SharePoint personalizado ao Gerenciador de servidores
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Como: Adicionar um nó do SharePoint personalizado ao Gerenciador de servidores
   Você pode adicionar nós personalizado sob o **conexões do SharePoint** nó no **Gerenciador de servidores**. Isso é útil quando você deseja exibir componentes adicionais do SharePoint que não são exibidos na **Gerenciador de servidores** por padrão. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
  Para adicionar um nó personalizado, primeiro crie uma classe que define o novo nó. Em seguida, crie uma extensão que adiciona o nó como um filho de um nó existente.  
@@ -100,7 +97,5 @@ ms.locfileid: "36755635"
   
 ## <a name="see-also"></a>Consulte também
  [Estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Passo a passo: Estenda o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
-  
+ [Como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

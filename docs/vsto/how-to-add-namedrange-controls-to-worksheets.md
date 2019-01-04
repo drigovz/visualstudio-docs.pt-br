@@ -1,9 +1,6 @@
 ---
 title: 'Como: Adicionar controles NamedRange a planilhas'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1d9515f5a42d37d73a95460fa458090992c488aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928653"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Como: Adicionar controles NamedRange a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a uma planilha do Microsoft Office Excel em tempo de design e em tempo de execução em projetos de nível de documento.  
@@ -104,5 +101,3 @@ ms.locfileid: "53648359"
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Como: Redimensionar controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

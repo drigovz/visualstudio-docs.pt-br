@@ -1,9 +1,6 @@
 ---
-title: 'Como: criar uma extensão de Item de projeto do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar uma extensão de Item de projeto do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93459096e6d88ce3754c32bf7f61a3cf369cbeba
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0c716301eee70fea704831890dd1e61b12651f7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956186"
 ---
-# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Como: criar uma extensão de item de projeto do SharePoint
+# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Como: Criar uma extensão de item de projeto do SharePoint
   Crie uma extensão de item de projeto quando você deseja adicionar funcionalidade a um item de projeto do SharePoint que já está instalado no Visual Studio. Para obter mais informações, consulte [itens de projeto do SharePoint estender](../sharepoint/extending-sharepoint-project-items.md).  
   
 ### <a name="to-create-a-project-item-extension"></a>Para criar uma extensão de item de projeto  
@@ -68,5 +65,3 @@ ms.locfileid: "37118462"
 ## <a name="see-also"></a>Consulte também
  [Estender os itens de projeto do SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Passo a passo: Estender um tipo de item de projeto do SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  

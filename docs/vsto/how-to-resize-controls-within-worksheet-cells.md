@@ -1,9 +1,6 @@
 ---
-title: 'Como: redimensionar controles dentro de células da planilha'
-ms.custom: ''
+title: 'Como: Redimensionar controles dentro de células da planilha'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927344"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Como: redimensionar controles dentro de células da planilha
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Como: Redimensionar controles dentro de células da planilha
   Quando você redimensiona as colunas ou linhas em uma planilha, todos os controles dentro das células host será redimensionada automaticamente para a altura ou largura da célula que foi redimensionada. Controles dos Windows Forms não são redimensionados automaticamente por padrão.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -78,8 +75,7 @@ ms.locfileid: "35670106"
   
 ## <a name="see-also"></a>Consulte também  
  [Controles em documentos do Office](../vsto/controls-on-office-documents.md)   
- [Como: adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Como: ocultar controles em planilhas durante a impressão](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Como: Adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Como: Ocultar controles em planilhas durante a impressão](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: Criar um sistema de projeto básico, parte 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967768"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Criar um sistema de projeto básico, parte 2
 A primeiro passo a passo desta série [criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), mostra como criar um sistema de projeto básico. Este passo a passo se baseia no sistema de projeto básico, adicionando um modelo do Visual Studio, uma página de propriedades e outros recursos. Você deve concluir o passo a passo primeiro antes de iniciar este.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Redefina a instância experimental do SDK do Visual Studio.  
   
-    Na [!INCLUDE[win7](../debugger/includes/win7_md.md)]: na **iniciar** menu, localizar o **Microsoft Visual Studio para o Microsoft Visual Studio/ferramentas SDK** pasta e, em seguida, selecione **redefinir o Microsoft Visual Studio Experimental instância**.  
+    Em [!INCLUDE[win7](../debugger/includes/win7_md.md)]: No **inicie** menu, localizar o **Microsoft Visual Studio para o Microsoft Visual Studio/ferramentas SDK** pasta e, em seguida, selecione **redefinir a instância Experimental do Visual Studio do Microsoft**.  
   
-    Em versões posteriores do Windows: sobre o **inicie** tela, digite **redefinir o Microsoft Visual Studio \<versão > instância Experimental**.  
+    Em versões posteriores do Windows: Sobre o **inicie** tela, digite **redefinir o Microsoft Visual Studio \<versão > instância Experimental**.  
   
 2. É exibida uma janela de prompt de comando. Quando você vir as palavras **pressione qualquer tecla para continuar**, clique em **ENTER**. Depois de fecha a janela, abra o Visual Studio.  
   

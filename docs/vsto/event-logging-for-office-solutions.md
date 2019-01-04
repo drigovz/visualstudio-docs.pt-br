@@ -1,9 +1,6 @@
 ---
 title: Log de eventos para soluções do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8064c36b6b0e567f868fee7212560d726bbd3c66
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6cca606022a8b35ba43f9174925aac978835d289
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857047"
 ---
 # <a name="event-logging-for-office-solutions"></a>Log de eventos para soluções do Office
   Você pode usar o Visualizador de eventos no Windows para ver mensagens de exceção que são capturadas pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ao instalar ou desinstalar soluções do Office. Você pode usar essas mensagens do agente de log de eventos para solucionar problemas de implantação e instalação.  
@@ -102,5 +99,3 @@ ms.locfileid: "53647952"
 ## <a name="see-also"></a>Consulte também  
  [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)   
  [Solucionar problemas de implantação de solução do Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

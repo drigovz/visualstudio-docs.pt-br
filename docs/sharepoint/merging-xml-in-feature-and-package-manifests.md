@@ -1,9 +1,6 @@
 ---
 title: Mesclando XML em um recurso e pacote manifestos | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914430"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Mesclar o XML em manifestos de recurso e pacote
   Recursos e pacotes são definidos por [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivos de manifesto. Esses manifestos empacotados são uma combinação de dados gerados em designers e personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] inseridos no modelo de manifesto pelos usuários. No tempo de empacotamento [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mescla personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instruções com o designer fornecido pelo [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar o empacotados [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivo de manifesto. Elementos semelhantes, com as exceções disponível mais adiante exceções de mesclagem, são mesclados para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] erros de validação depois de implantar os arquivos para o SharePoint e para tornar o manifesto arquivos menores e mais eficiente.  
   
 ## <a name="modify-the-manifests"></a>Modificar os manifestos
- Você não pode modificar diretamente os arquivos de manifesto de pacote até que você desabilite os designers de pacote ou recurso. No entanto, você pode adicionar manualmente personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos para o modelo de manifesto por meio os designers de pacote e o recurso ou o [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Para obter mais informações, consulte [como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) e [como: personalizar um pacote de solução do SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+ Você não pode modificar diretamente os arquivos de manifesto de pacote até que você desabilite os designers de pacote ou recurso. No entanto, você pode adicionar manualmente personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos para o modelo de manifesto por meio os designers de pacote e o recurso ou o [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Para obter mais informações, confira [Como: Personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) e [como: Personalizar um pacote de solução do SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>Processo de mesclagem de manifesto de recurso e pacote
  Ao combinar elementos personalizados junto com elementos fornecidos pelo designer, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa o processo a seguir. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verifica se cada elemento tem um valor de chave exclusivo. Se um elemento não tem nenhum valor de chave exclusivo, ele é acrescentado ao arquivo de manifesto empacotado. Da mesma forma, os elementos que têm várias chaves não podem ser mesclados. Portanto, eles são acrescentados ao arquivo de manifesto.  
@@ -84,4 +81,3 @@ ms.locfileid: "37118446"
 ## <a name="see-also"></a>Consulte também
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
