@@ -1,9 +1,6 @@
 ---
 title: Solucionar problemas de VSPackages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835965"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas para resolver os problemas.  
@@ -53,7 +50,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 5. Examine o log de atividades.  
   
-    Para obter mais informações, consulte [como: usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
+    Para obter mais informações, confira [Como: Usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
   
 6. Para obter mais informações sobre as exceções geradas pelo IDE, clique em **exceções** sobre o **depurar** menu habilitar as exceções. No **exceções** caixa de diálogo Selecionar os tipos de exceções sobre o qual você deseja obter mais informações.  
   
@@ -63,7 +60,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Para solucionar problemas de um comando que não é visível ou que gera um erro quando você clica em um comando  
   
-1. Mesclar os comandos de menu novos ou alterados e aqueles já no IDE, digitando o seguinte comando na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prompt de comando: **devenv /rootsuffix Exp /Setup**.  
+1. Mesclar os comandos de menu novos ou alterados e aqueles já no IDE, digitando o seguinte comando na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prompt de comando: **devenv /rootsuffix Exp /Setup.**.  
   
 2. Certifique-se de que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode encontrar UI.dll para o VSPackage.  
   
@@ -92,7 +89,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 2.  Use o log de atividades.  
   
-     Rastrear o comportamento de VSPackage gravando informações ao log de atividades em pontos-chave. Essa técnica é especialmente útil quando você executa um VSPackage em um ambiente de varejo. Para obter mais informações, consulte [como: usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
+     Rastrear o comportamento de VSPackage gravando informações ao log de atividades em pontos-chave. Essa técnica é especialmente útil quando você executa um VSPackage em um ambiente de varejo. Para obter mais informações, confira [Como: Usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Use os símbolos públicos.  
   
