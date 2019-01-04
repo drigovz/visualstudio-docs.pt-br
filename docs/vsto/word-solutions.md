@@ -1,9 +1,6 @@
 ---
 title: Soluções do Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b443cd985910cbb6e81ce79016193623bdeb2dd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81154d0cab5760fa3b6a9d2418c9669258fca01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986746"
 ---
 # <a name="word-solutions"></a>Soluções do Word
   Visual Studio fornece modelos de projeto, que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Word. Você pode usar essas soluções para automatizar o Word, estender os recursos do Word e personalizar a interface do usuário do Word (UI). Para obter mais informações sobre as diferenças entre personalizações no nível de documento e suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -62,7 +59,7 @@ ms.locfileid: "35669952"
 ##  <a name="doclevel"></a> Desenvolver personalizações no nível de documento para Word  
  Uma personalização no nível de documento para o Microsoft Office Word consiste em um assembly que está associado um documento específico. O assembly estende o documento normalmente, personalizando a interface do usuário e automatizando o Word. Ao contrário de um suplemento VSTO, que é associado com a palavra propriamente dita, funcionalidade que você implementa em uma personalização está disponível somente quando o documento associado é aberto no Word.  
   
- Para criar um projeto de personalização de nível de documento para Word, use os modelos de projeto de documento do Word ou o modelo do Word na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Para criar um projeto de personalização de nível de documento para Word, use os modelos de projeto de documento do Word ou o modelo do Word na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Para obter mais informações sobre como funcionam as personalizações no nível do documento como, [arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md).  
   
@@ -74,7 +71,7 @@ ms.locfileid: "35669952"
 ##  <a name="applevel"></a> Desenvolver suplementos do VSTO para Word  
  Um suplemento do VSTO para o Microsoft Office Word consiste em um assembly que é carregado pelo Word. O assembly estende o Word normalmente, personalizando a interface do usuário e automatizando o Word. Ao contrário de uma personalização no nível de documento, que está associada um documento específico, a funcionalidade que você implementa em um suplemento do VSTO não está restrita a nenhum documento.  
   
- Para criar um projeto de suplemento do VSTO para Word, use os modelos de projeto do suplemento do Word na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Para criar um projeto de suplemento do VSTO para Word, use os modelos de projeto do suplemento do Word na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Para obter informações gerais sobre o funcionamento do VSTO Add-ins, consulte [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   
@@ -92,15 +89,15 @@ ms.locfileid: "35669952"
 |Tarefa|Para obter mais informações|  
 |----------|--------------------------|  
 |Personalize a faixa de opções.|[Visão geral da faixa de opções](../vsto/ribbon-overview.md)|  
-|Adicione controles dos Windows Forms ou controles estendidos do Word à documentos personalizados (para uma personalização no nível de documento) ou a qualquer documento aberto (para um suplemento VSTO).|[Como: adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Como: adicionar controles content a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
+|Adicione controles dos Windows Forms ou controles estendidos do Word à documentos personalizados (para uma personalização no nível de documento) ou a qualquer documento aberto (para um suplemento VSTO).|[Como: Adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Como: Adicionar controles content a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
   
 ### <a name="options-for-document-level-customizations"></a>Opções para personalizações no nível do documento  
  A tabela a seguir lista as opções de personalização que ficam disponíveis somente para personalizações no nível do documento.  
   
 |Tarefa|Para obter mais informações|  
 |----------|--------------------------|  
-|Adicione um painel de ações para o documento.|[Visão geral do painel de ações](../vsto/actions-pane-overview.md)<br /><br /> [Como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|Adicione controles XMLNode e XMLNodes estendidos à superfície do documento.|[Como: adicionar controles XMLNode a documentos do Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Como: adicionar controles XMLNodes a documentos do Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
+|Adicione um painel de ações para o documento.|[Visão geral do painel de ações](../vsto/actions-pane-overview.md)<br /><br /> [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Adicione controles XMLNode e XMLNodes estendidos à superfície do documento.|[Como: Adicionar controles XMLNode a documentos do Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Como: Adicionar controles XMLNodes a documentos do Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
   
 ### <a name="options-for-vsto-add-ins"></a>Opções para suplementos VSTO  
  A tabela a seguir lista as opções de personalização que ficam disponíveis somente para suplementos do VSTO.  
@@ -120,5 +117,3 @@ ms.locfileid: "35669952"
 |[Passo a passo: Criar seu primeiro suplemento VSTO para Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Demonstra como criar um básico suplemento VSTO para Word.|  
 |[Passo a passo: Adicionar controles a um documento em tempo de execução em um suplemento do VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Demonstra como adicionar um Windows Forms de botão e um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a um documento em tempo de execução usando um suplemento do VSTO.|  
 |[Word 2010 no desenvolvimento do Office](http://go.microsoft.com/fwlink/?LinkId=199020)|Fornece links para artigos e documentação de referência sobre como desenvolver soluções do Word (não específicas para desenvolvimento do Office usando o Visual Studio).|  
-  
-  

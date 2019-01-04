@@ -1,9 +1,6 @@
 ---
 title: Estendendo projetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d3c6895f23b6d2ffe1f4ff8e311140b1e5d5a51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837193"
 ---
 # <a name="extend-projects"></a>Estender projetos
 Projetos e soluções são as maneiras em que o Visual Studio organiza os arquivos de código e recursos em unidades de compilação e implantação. Você pode encontrar mais informações sobre projetos de [projetos (SDK do Visual Studio)](../extensibility/extending-projects.md).  
   
- Você pode criar seus próprios tipos de projeto com o SDK do Visual Studio e a estrutura de pacote gerenciado para projetos, que pode ser baixado em [estrutura de pacote gerenciado para projetos](https://github.com/tunnelvisionlabs/MPFProj10). Para entender como os projetos personalizados são implementados, consulte [nova geração de projeto: nos bastidores, parte um](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nova geração de projeto: nos bastidores, parte dois](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Você pode criar seus próprios tipos de projeto com o SDK do Visual Studio e a estrutura de pacote gerenciado para projetos, que pode ser baixado em [estrutura de pacote gerenciado para projetos](https://github.com/tunnelvisionlabs/MPFProj10). Para entender como os projetos personalizados são implementados, consulte [nova geração de projeto: Nos bastidores, parte um](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nova geração de projeto: Nos bastidores, parte dois](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Os tópicos nesta seção descrevem como criar projetos personalizados e como gerenciar diferentes tipos de solução do Visual Studio.  
   

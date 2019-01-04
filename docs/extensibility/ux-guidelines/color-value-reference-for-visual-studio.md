@@ -1,6 +1,6 @@
 ---
 title: Referência de valor de cor
-description: 'Referência: Hex códigos para a criação de novos tokens de cor do Visual Studio'
+description: 'Referência: Códigos hexadecimais para a criação de novos tokens de cor do Visual Studio'
 keywords: cor, o código hexadecimal, o matiz, a interface do usuário com tema, temas
 author: brickgeorge
 ms.author: gregvanl
@@ -8,15 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-ms.technology:
-- vs-ide-sdk
 manager: douge
-ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870054"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referência de valor de cor para o Visual Studio
 
@@ -348,7 +346,7 @@ Ao usar este guia de referência, lembre-se:
 | Informações preliminares | ![Amostra de #ECECF0](../../extensibility/ux-guidelines/media/ECECF0.png "#ECECF0 amostra")<br />`#ECECF0` | ![Amostra de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 amostra")<br />`#3F3F46` | ![Amostra de #ECECF0](../../extensibility/ux-guidelines/media/ECECF0.png "#ECECF0 amostra")<br />`#ECECF0` | ![Amostra de controle](../../extensibility/ux-guidelines/media/HCControl.png "amostra de controle")<br />`Control` |
 | Borda | ![Amostra #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "amostra #CCCEDB")<br />`#CCCEDB` | ![amostra de #555555](../../extensibility/ux-guidelines/media/555555.png "#555555 amostra")<br />`#555555` | ![Amostra CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "amostra CCCEDB")<br />`#CCCEDB` | ![Amostra de ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark amostra")<br />`ControlDark` |
 
-### <a name="disabled"></a>Desabilitada
+### <a name="disabled"></a>Disabled
 
 | | Tema claro | Tema escuro | Tema azul | {1&gt;Alto Contraste&lt;1} | 
 | --- | :---: | :---: | :---: | :---: |
@@ -399,7 +397,7 @@ Ao usar este guia de referência, lembre-se:
 | Texto | ![Amostra de #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E amostra")<br />`#1E1E1E` | ![Amostra de #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 amostra")<br />`#F1F1F1` | ![Amostra de #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E amostra")<br />`#1E1E1E` | ![Amostra de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText amostra")<br />`ControlText` |
 | Glifo | ![ amostra](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E amostra")<br />`#1E1E1E` | ![Amostra de #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 amostra")<br />`#F1F1F1` | ![Amostra de #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E amostra")<br />`#1E1E1E` | ![Amostra de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText amostra")<br />`ControlText` |
 
-### <a name="disabled"></a>Desabilitada
+### <a name="disabled"></a>Disabled
 
 | | Tema claro | Tema escuro | Tema azul | {1&gt;Alto Contraste&lt;1} | 
 | --- | :---: | :---: | :---: | :---: |
@@ -457,7 +455,7 @@ Ao usar este guia de referência, lembre-se:
 | Glifo | ![amostra de #717171](../../extensibility/ux-guidelines/media/717171.png "717171swatch #")<br />`#717171` | ![amostra de #999999](../../extensibility/ux-guidelines/media/999999.png "#999999 amostra")<br />`#999999` | ![Amostra de #1B293E](../../extensibility/ux-guidelines/media/1B293E.png "#1B293E amostra")<br />`#1B293E` | ![Amostra de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText amostra")<br />`ControlText` |
 | Plano de fundo de glifo | ![Amostra #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "amostra #FFFFFF")<br />`#FFFFFF` | ![amostra de #333337](../../extensibility/ux-guidelines/media/333337.png "#333337 amostra")<br />`#333337` | ![Amostra #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "amostra #FCFCFC")<br />`#FCFCFC` | ![Amostra de controle](../../extensibility/ux-guidelines/media/HCControl.png "amostra de controle")<br />`#Control` |
 
-#### <a name="disabled"></a>Desabilitada
+#### <a name="disabled"></a>Disabled
 
 | | Tema claro | Tema escuro | Tema azul | {1&gt;Alto Contraste&lt;1} | 
 | --- | :---: | :---: | :---: | :---: |

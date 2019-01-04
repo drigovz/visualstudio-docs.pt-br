@@ -1,9 +1,6 @@
 ---
 title: 'Como: Adicionar partes XML personalizadas a personalizações no nível do documento'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f3e817e91c4a99f5a3aae6decdc500469c10b8f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 80d8b809464cd9209b8125595fef8793fc052943
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846380"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Como: Adicionar partes XML personalizadas a personalizações no nível do documento
   Você pode armazenar dados XML em uma pasta de trabalho do Microsoft Office Excel ou um documento do Microsoft Office Word, criando uma parte XML personalizada em uma personalização no nível de documento. Para obter mais informações, consulte [visão geral de partes XML personalizadas](../vsto/custom-xml-parts-overview.md).  
@@ -63,4 +60,3 @@ ms.locfileid: "53647551"
 ## <a name="see-also"></a>Consulte também  
  [Visão geral de partes XML personalizado](../vsto/custom-xml-parts-overview.md)   
  [Como: Adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
-  

@@ -1,17 +1,12 @@
 ---
-title: 'Passo a passo: Criar uma coluna de Site, o tipo de conteúdo e a lista do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Criar uma coluna de Site, tipo de conteúdo e lista do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852525"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint
   Os procedimentos a seguir demonstram como criar colunas de site do SharePoint personalizadas — ou *campos*— bem como um tipo de conteúdo que usa as colunas de site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.  
@@ -95,7 +90,7 @@ ms.locfileid: "49900118"
     </Field>  
     ```  
   
-4.  Usando o mesmo procedimento, adicione mais duas colunas de site ao projeto: **ID do paciente** (tipo = "Integer") e **Doutor nome** (tipo = "Text"). Definir seu valor de grupo **colunas de Site clínica**.  
+4.  Usando o mesmo procedimento, adicione mais duas colunas de site para o projeto: **ID do paciente** (tipo = "Integer") e **Doutor nome** (tipo = "Text"). Definir seu valor de grupo **colunas de Site clínica**.  
   
 ## <a name="create-a-custom-content-type"></a>Criar um tipo de conteúdo personalizado
  Em seguida, crie um tipo de conteúdo — com base no tipo de conteúdo contatos — que inclui as colunas de site que você criou no procedimento anterior. Baseando um tipo de conteúdo em um tipo de conteúdo existente, você pode economizar tempo porque o tipo de conteúdo base fornece várias colunas de site para uso no novo tipo de conteúdo.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900118"
   
      Isso fornece acesso a outras colunas de site potencialmente útil no contato tipo de conteúdo, além das colunas de site que você definiu anteriormente.  
   
-6.  Após o tipo de conteúdo designer é exibido, além de **colunas** guia, adicione as três colunas que você definiu anteriormente do site: **paciente nome**, **ID do paciente**e **Doutor nome**. Para adicionar essas colunas, escolha a primeira caixa de listagem na lista de colunas de site sob **nome de exibição**e, em seguida, escolher cada coluna de site na lista uma por vez.  
+6.  Após o tipo de conteúdo designer é exibido, além de **colunas** guia, adicione as três colunas que você definiu anteriormente do site: **Nome do paciente**, **ID do paciente**, e **Doutor nome**. Para adicionar essas colunas, escolha a primeira caixa de listagem na lista de colunas de site sob **nome de exibição**e, em seguida, escolher cada coluna de site na lista uma por vez.  
   
     > [!TIP]  
     >  Para escolher as colunas de site mais rapidamente, filtre a lista, digitando as primeiras letras do nome da coluna.  
@@ -229,7 +224,6 @@ ms.locfileid: "49900118"
 ## <a name="see-also"></a>Consulte também
  [Criar colunas de site, tipos de conteúdo e listas para o SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Como: criar um tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Como: Criar um tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Tipos de conteúdo](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Colunas](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

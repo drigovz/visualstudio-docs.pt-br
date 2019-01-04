@@ -1,9 +1,6 @@
 ---
-title: 'Como: exibir documentos em Visualizar impressão programaticamente'
-ms.custom: ''
+title: 'Como: Exibir documentos em Visualizar impressão programaticamente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a2ab538707156826be3a31252cde16e67edff9c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 66a21f2def806dc7800caa01d26a989f9a4cf8e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891928"
 ---
-# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Como: exibir documentos em Visualizar impressão programaticamente
+# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Como: Exibir documentos em Visualizar impressão programaticamente
   Se sua solução gera um relatório, você talvez queira exibir o relatório para o usuário no modo de visualização de impressão.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -61,8 +58,6 @@ ms.locfileid: "35257219"
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: imprimir documentos programaticamente](../vsto/how-to-programmatically-print-documents.md)   
- [Como: abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Como: criar novos documentos programaticamente](../vsto/how-to-programmatically-create-new-documents.md)  
-  
-  
+ [Como: Imprimir documentos programaticamente](../vsto/how-to-programmatically-print-documents.md)   
+ [Como: Abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Como: Criar novos documentos programaticamente](../vsto/how-to-programmatically-create-new-documents.md)  

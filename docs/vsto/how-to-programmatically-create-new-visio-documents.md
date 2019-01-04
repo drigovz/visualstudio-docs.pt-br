@@ -1,9 +1,6 @@
 ---
-title: 'Como: criar novos documentos do Visio programaticamente'
-ms.custom: ''
+title: 'Como: Criar novos documentos do Visio programaticamente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0962c0d7927fd7b21969b36020e2a40d587cf452
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872499"
 ---
-# <a name="how-to-programmatically-create-new-visio-documents"></a>Como: criar novos documentos do Visio programaticamente
+# <a name="how-to-programmatically-create-new-visio-documents"></a>Como: Criar novos documentos do Visio programaticamente
   Quando você cria um novo Microsoft Office Visio desenhando o documento, você adicioná-lo para o `Microsoft.Office.Interop.Visio.Documents` coleção de documentos do Visio abertos. Consequentemente, o `Microsoft.Office.Interop.Visio.Documents.Add` método cria um novo documento de desenho do Visio. Para obter mais informações, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) método.  
   
 ## <a name="create-new-blank-documents"></a>Criar novos documentos em branco  
@@ -77,9 +74,7 @@ ms.locfileid: "50671554"
 ## <a name="see-also"></a>Consulte também  
  [Soluções do Visio](../vsto/visio-solutions.md)   
  [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)   
- [Como: abrir documentos do Visio de forma programática](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Como: fechar documentos do Visio programaticamente](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Como: salvar documentos do Visio programaticamente](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Como: imprimir documentos do Visio de forma programática](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Como: Abrir documentos do Visio de forma programática](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Como: Fechar documentos do Visio programaticamente](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Como: Salvar documentos do Visio programaticamente](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [Como: Imprimir documentos do Visio de forma programática](../vsto/how-to-programmatically-print-visio-documents.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Como: criar programaticamente um item de email'
-ms.custom: ''
+title: 'Como: Criar um item de email de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28b6b1dac69199ff7431eacbe05d8a17a1734763
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e5b665a5ed281cafaf19017d2cf65a6ab1dd80b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869707"
 ---
-# <a name="how-to-programmatically-create-an-email-item"></a>Como: criar programaticamente um item de email
+# <a name="how-to-programmatically-create-an-email-item"></a>Como: Criar um item de email de forma programática
   Este exemplo cria uma mensagem de email no Microsoft Office Outlook.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -35,5 +32,3 @@ ms.locfileid: "35256592"
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com itens de email](../vsto/working-with-mail-items.md)   
  [Introdução à programação VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892297"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hospedados no Visual Studio, permitem que você criar uma linguagem específica de domínio e, em seguida, gerar tudo o que os usuários devem ter para criar modelos que são baseados na linguagem.
@@ -66,7 +65,7 @@ Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hos
 ## <a name="validation-in-dsl-tools"></a>Validação em ferramentas DSL
  DSL fornece um nível de validação para certificar-se de que o modelo de domínio atende aos requisitos básicos para geração de código. Normalmente, quando você cria sua própria linguagem específica de domínio, você adicionaria sua própria validação para expressar suas regras de lógica de negócios. Para obter mais informações sobre a validação personalizada, consulte [validação em uma linguagem específica do domínio](../modeling/validation-in-a-domain-specific-language.md).
 
- É recomendável que você valide sua linguagem específica do domínio com frequência quando você criá-lo. Se sua linguagem específica do domínio tem erros de validação, você não pode gerar o código-fonte. O processo de geração de código-fonte dos modelos é executado clicando **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções. Sempre que você modificar a definição de linguagem, certifique-se **transformar todos os modelos**. Para obter mais informações, consulte [como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ É recomendável que você valide sua linguagem específica do domínio com frequência quando você criá-lo. Se sua linguagem específica do domínio tem erros de validação, você não pode gerar o código-fonte. O processo de geração de código-fonte dos modelos é executado clicando **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções. Sempre que você modificar a definição de linguagem, certifique-se **transformar todos os modelos**. Para obter mais informações, confira [Como: Criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personalização das ferramentas DSL
  Você pode fornecer código adicional para refinar o comportamento do modelo e definir restrições em seu idioma. Se necessário, você pode fazer alterações significativas, modificando os modelos de texto.

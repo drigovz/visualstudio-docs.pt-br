@@ -1,9 +1,6 @@
 ---
 title: Visão geral das soluções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97070a3c47f5e102ce974e0d7eeeea0380beff57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d3117aa61658fe056e6ac48fe8ab4eb4831882b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874583"
 ---
 # <a name="solutions-overview"></a>Visão geral das soluções
 Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo. As projeto e informações de status que pertencem à solução são armazenados em dois arquivos de solução diferente. O arquivo de solução (. sln) é baseado em texto e pode ser colocado sob controle do código-fonte e compartilhado entre usuários. O arquivo de opção (. suo) de usuário da solução é binário. Como resultado, o arquivo. suo não pode ser colocado sob controle do código-fonte e contém informações específicas do usuário.  

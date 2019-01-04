@@ -1,9 +1,6 @@
 ---
 title: Criando uma associação entre entidades | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Association_Dialog
@@ -24,18 +21,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ac00ac48f4fe907e4fb4215992b49227f39961
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 134b477cdc199d85c983633a2a5996d113420443
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842973"
 ---
 # <a name="create-an-association-between-entities"></a>Criar uma associação entre entidades
   Você pode definir relações entre entidades em seu modelo de conectividade de dados comerciais (BDC) com a criação de associações. Visual Studio gera os métodos que fornecem os consumidores do modelo com informações sobre cada associação. Esses métodos podem ser consumidos por web parts, listas ou aplicativos personalizados para exibir relações de dados em uma interface de usuário (IU) do SharePoint.  
   
 ## <a name="create-an-association"></a>Criar uma associação
- Criar uma associação, escolhendo a **associação** controle no Visual Studio **caixa de ferramentas**, escolhendo a primeira entidade (chamada de entidade de origem) e, em seguida, a segunda entidade (chamado de entidade de destino). Você pode definir os detalhes da associação na **Editor de associação**. Para obter mais informações, consulte [como: criar uma associação entre entidades](../sharepoint/how-to-create-an-association-between-entities.md).  
+ Criar uma associação, escolhendo a **associação** controle no Visual Studio **caixa de ferramentas**, escolhendo a primeira entidade (chamada de entidade de origem) e, em seguida, a segunda entidade (chamado de entidade de destino). Você pode definir os detalhes da associação na **Editor de associação**. Para obter mais informações, confira [Como: Criar uma associação entre entidades](../sharepoint/how-to-create-an-association-between-entities.md).  
   
 ## <a name="association-methods"></a>Métodos de associação
  Aplicativos, como web parts de dados de negócios do SharePoint consomem associações chamando métodos da classe de serviço de uma entidade. Você pode adicionar métodos à classe de uma entidade de serviço, selecionando-os na **Editor de associação**.  
@@ -81,6 +78,4 @@ ms.locfileid: "36325457"
   
 ## <a name="see-also"></a>Consulte também
  [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Como: criar uma associação entre entidades](../sharepoint/how-to-create-an-association-between-entities.md)  
-  
- 
+ [Como: Criar uma associação entre entidades](../sharepoint/how-to-create-an-association-between-entities.md)  

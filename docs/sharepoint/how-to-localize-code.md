@@ -1,13 +1,8 @@
 ---
-title: 'Como: localizar o código | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Localizar código | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d170906a66ffaaa0e73d4d7d236c8f41290abe55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f45ef99210ccf5e6caa22e4aef6ba303aa6a6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990786"
 ---
-# <a name="how-to-localize-code"></a>Como: localizar o código
+# <a name="how-to-localize-code"></a>Como: Localizar código
   O código não localizado usa valores de cadeia de caracteres embutida. Para localizar as cadeias de caracteres de código, substitua-as por chamadas para <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, que é um método que referencia recursos localizados.  
   
 ## <a name="localize-code"></a>Localizar código  
@@ -75,7 +70,6 @@ ms.locfileid: "37118445"
   
 ## <a name="see-also"></a>Consulte também
  [Localizar soluções do SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Como: localizar um recurso](../sharepoint/how-to-localize-a-feature.md)   
- [Como: localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Como: adicionar um arquivo de recurso](../sharepoint/how-to-add-a-resource-file.md)  
-
+ [Como: Localizar um recurso](../sharepoint/how-to-localize-a-feature.md)   
+ [Como: Localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Como: Adicionar um arquivo de recurso](../sharepoint/how-to-add-a-resource-file.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Como: implementar o gerenciamento de desfazer | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Implementar o gerenciamento de desfazer | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 227a002b5bd1b333da177944056eef7aca2cc393
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 005b321921003e11f9204616727e0b06b85e5c3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915638"
 ---
-# <a name="how-to-implement-undo-management"></a>Como: implementar o gerenciamento de desfazer
+# <a name="how-to-implement-undo-management"></a>Como: Implementar o gerenciamento de desfazer
 A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, que é implementado pelo ambiente. Para dar suporte ao gerenciamento de desfazer, implemente a unidades de desfazer separado (ou seja, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, que pode conter várias etapas individuais.  
   
  Como implementar o gerenciamento de desfazer varia dependendo se o editor oferece suporte a vários modos de exibição ou não. Os procedimentos para cada implementação são detalhados nas seções a seguir.  
@@ -83,4 +80,4 @@ A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Como: limpar a pilha de desfazer](../extensibility/how-to-clear-the-undo-stack.md)
+ [Como: Limpar a pilha de desfazer](../extensibility/how-to-clear-the-undo-stack.md)

@@ -1,9 +1,6 @@
 ---
-title: 'Como: leitura de e gravação às propriedades do documento'
-ms.custom: ''
+title: 'Como: Ler e gravar para propriedades de documento'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43c74a206ecbe544a6ccb32448104e17a48aaee6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825416"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Como: leitura de e gravação às propriedades do documento
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Como: Ler e gravar para propriedades de documento
   Você pode armazenar as propriedades do documento, juntamente com um documento. Aplicativos do Office fornecem uma série de propriedades internas, como autor, título e assunto. Este tópico mostra como definir propriedades de documento no Microsoft Office Excel e Microsoft Office Word.  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como eu faço para: acesso e manipular as propriedades de documento personalizadas no Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Acessar e manipular as propriedades de documento personalizadas no Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
@@ -86,6 +83,4 @@ ms.locfileid: "49924220"
 ## <a name="see-also"></a>Consulte também  
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)   
- [Como: criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)  
-  
-  
+ [Como: Criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)  

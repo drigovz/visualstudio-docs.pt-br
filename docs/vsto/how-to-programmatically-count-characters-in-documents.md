@@ -1,9 +1,6 @@
 ---
-title: 'Como: programaticamente contar caracteres em documentos'
-ms.custom: ''
+title: 'Como: Por meio de programação contar caracteres em documentos'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 46ead2f1774d779706e8aa6eeb3f1e9c6b1d0ce1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c86eade90d36ca62ad361c757660bcada71a6a4c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960755"
 ---
-# <a name="how-to-programmatically-count-characters-in-documents"></a>Como: programaticamente contar caracteres em documentos
+# <a name="how-to-programmatically-count-characters-in-documents"></a>Como: Por meio de programação contar caracteres em documentos
   É o primeiro caractere em um documento na posição do caractere 0, que representa o ponto de inserção. A última posição de caractere é igual ao número total de caracteres no documento. Você pode determinar o número de caracteres em um documento usando o <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Characters> coleção.  
   
  Todos os caracteres no documento são contados, incluindo espaços, marcas de parágrafo e outros caracteres que normalmente estão ocultas. Até mesmo um novo documento em branco retorna uma contagem de um caractere, porque ela contém uma marca de parágrafo.  
@@ -56,7 +53,5 @@ ms.locfileid: "35670064"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: recuperar caracteres iniciais e finais em intervalos de forma programática](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Como: definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  
-  
-  
+ [Como: Recuperar caracteres iniciais e finais em intervalos de forma programática](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Como: Definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  

@@ -1,9 +1,6 @@
 ---
 title: IDebugCustomAttributeQuery | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugCustomAttributeQuery interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef26d44f72f762749aff8758d68c7ee2fe765fc3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 138e4e90a9fcc7c28239fecf2306963950381d89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902026"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 Representa uma consulta para os atributos personalizados em um método ou tipo.  
@@ -34,8 +31,8 @@ IDebugCustomAttributeQuery : IUnknown
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Recupera um atributo personalizado fornecido seu nome.|  
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Determina do atributo personalizado é definido.|  
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Recupera um atributo personalizado, dado seu nome.|  
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Determina o especificado no atributo personalizado é definido.|  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: Sh.h  

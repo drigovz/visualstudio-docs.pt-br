@@ -1,9 +1,6 @@
 ---
 title: Tratamento de comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - command handling
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a155927bb69c55c15a06cb058692038c8b309a30
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4198cf6bbed2d8f6172872e4f98f1edb4749e7d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926301"
 ---
 # <a name="command-handling"></a>Manipulação de comando
 O editor pode definir novos comandos. Normalmente, os comandos são exibidos em um menu, em uma barra de ferramentas ou em um menu de contexto.  
@@ -28,7 +25,7 @@ O editor pode definir novos comandos. Normalmente, os comandos são exibidos em 
  Um serviço de linguagem pode controlar quais menus de contexto são mostrados no editor, interceptando o <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeração. Como alternativa, você pode controlar o menu de contexto em uma base por marcador. Para obter mais informações, consulte [comandos importantes para filtros do serviço de linguagem](../extensibility/internals/important-commands-for-language-service-filters.md).  
   
 ## <a name="add-commands-to-the-editor-context-menu"></a>Adicionar comandos ao menu de contexto do editor  
- Para adicionar um comando ao menu de contexto, você deve primeiro definir um conjunto de comandos de menu que pertencem a um grupo específico. O exemplo a seguir é obtido dos *VSCT* arquivo gerado como parte do passo a passo [passo a passo: adicionar recursos a um editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+ Para adicionar um comando ao menu de contexto, você deve primeiro definir um conjunto de comandos de menu que pertencem a um grupo específico. O exemplo a seguir é obtido dos *VSCT* arquivo gerado como parte do passo a passo [passo a passo: Adicionar recursos a um editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
  \<Guid de menu = "guidCustomEditorCmdSet" id = "IDMX_RTF" prioridade = "0x0000" type = "Contexto" >  
   

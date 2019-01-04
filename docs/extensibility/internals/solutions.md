@@ -1,9 +1,6 @@
 ---
 title: Soluções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, VSPackages
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d04b64eaec14fb91e76cf1d5edc6c7151b0008b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14c2a5f9d5c9d2a3a7a3425ee34f8e895a856052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869473"
 ---
 # <a name="solutions"></a>Soluções
-Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo. As informações de status e de projeto que pertencem à solução são armazenados em dois arquivos de solução, um arquivo de solução com base em texto (. sln) e um arquivo de opção (. suo) de usuário de solução binário.  
+Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo. As projeto e informações de status que pertencem à solução são armazenados em dois arquivos de solução, um arquivo de solução com base em texto (. sln) e um arquivo de opção (. suo) de usuário de solução de binário.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Visão geral](../../extensibility/internals/solutions-overview.md)  
- Aborda os tipos de arquivos de solução incluídos em uma solução e o processo que ocorre quando uma solução é aberta.  
+ Discute os tipos de arquivos de solução incluídos em uma solução e o processo que ocorre quando uma solução é aberta.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Arquivo de solução (.Sln)](../../extensibility/internals/solution-dot-sln-file.md)  

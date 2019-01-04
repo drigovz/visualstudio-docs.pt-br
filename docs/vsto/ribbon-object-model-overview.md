@@ -1,9 +1,6 @@
 ---
 title: Visão geral do modelo de objeto da faixa de opções
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961303"
 ---
 # <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto da faixa de opções
   O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expõe um modelo de objeto com rigidez de tipos que você pode usar para obter e definir as propriedades de controles da faixa de opções em tempo de execução. Por exemplo, dinamicamente você pode preencher os controles de menu, ou mostrar e ocultar controles contextualmente. Você também pode adicionar guias, grupos e controles à faixa de opções, mas apenas antes que o faixa de opções é carregada pelo aplicativo do Office. Para obter informações, consulte [definir as propriedades que se tornam somente leitura](#SettingReadOnlyProperties).  
@@ -193,10 +190,9 @@ ms.locfileid: "49910583"
  [Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Designer de faixa de opções](../vsto/ribbon-designer.md)   
  [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Explicação passo a passo: Os controles em uma faixa de opções em tempo de execução de atualização](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Personalizar uma faixa de opções do Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)   
- [Como: adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Como: exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Como: Add-in de mostrar erros de interface do usuário](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Como: Adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Como: Mostrar erros de interface de usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)  

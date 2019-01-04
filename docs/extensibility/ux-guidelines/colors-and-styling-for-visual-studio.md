@@ -1,9 +1,6 @@
 ---
 title: Cores e estilos para o Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 07/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914602"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 
@@ -82,7 +79,7 @@ Antes de usar cores compartilhadas comuns, certifique-se de que você compreenda
 
 ### <a name="user-customizable-colors"></a>Cores personalizáveis pelo usuário
 
-Consulte: [expondo as cores para os usuários finais](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+Consulte: [Expondo as cores para os usuários finais](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
 Às vezes, você desejará permitir que o usuário final personalizar a interface do usuário, como quando você estiver criando um editor de código ou a superfície de design. Componentes de interface do usuário personalizáveis são encontrados na **fontes e cores** seção o **ferramentas &gt; opções** caixa de diálogo, onde os usuários podem optar por alterar a cor de primeiro plano, cor de plano de fundo ou ambos.
 
@@ -287,7 +284,7 @@ Apenas algumas poucas cores do sistema podem ser usada para temas de alto contra
 
 ### <a name="system-color-set"></a>Conjunto de cores do sistema
 
-A tabela no [Blog da equipe WPF: referência SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica o conjunto completo de nomes de cores do sistema e os matizes correspondentes exibidos em cada tema.
+A tabela no [Blog da equipe WPF: Referência de SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica o conjunto completo de nomes de cores do sistema e os matizes correspondentes exibidos em cada tema.
 
 Ao aplicar este conjunto limitado de cores para a interface do usuário *espera-se que você perderá detalhes sutis que estavam presentes nos temas "normais"*. Aqui está um exemplo de interface do usuário com as cores cinza sutis que são usadas para distinguir as áreas em uma janela de ferramentas. Quando combinado com a mesma janela exibida no modo de alto contraste, você pode ver que os planos de fundo são o mesmo matiz e as bordas dessas áreas são indicadas pela borda sozinha:
 

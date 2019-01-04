@@ -1,8 +1,7 @@
 ---
-title: 'Como: Avalie uma expressão XPath'
+title: 'Como: Avaliar uma expressão XPath'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02492f2e1760df3ce5cd6751808303bae75577e2
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: eac1668a5d85f1f40d6defe4682f028674b5bf0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838629"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Como: Avalie uma expressão XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Como: Avaliar uma expressão XPath
 
-Você pode avaliar expressões XPath com o **QuickWatch** caixa de diálogo. A expressão XPath deve ser válido de acordo com a recomendação XPath 1,0 W3C. O contexto XSLT atual — ou seja, o `self::node()` nó o **locais** janela — fornece o contexto de avaliação da expressão XPath.
+Você pode avaliar expressões XPath com o **QuickWatch** caixa de diálogo. A expressão XPath deve ser válido de acordo com a recomendação XPath 1,0 W3C. XSLT de contexto atual — ou seja, o `self::node()` nó o **Locals** janela — fornece o contexto de avaliação da expressão XPath.
 
  A lista a seguir descreve quais funções são suportadas para avaliar uma expressão XPath:
 
@@ -30,7 +29,7 @@ Você pode avaliar expressões XPath com o **QuickWatch** caixa de diálogo. A e
 -   As funções definidas pelo usuário não são suportadas.
 
 > [!NOTE]
-> O procedimento a seguir usa o *belowAvg.xsl* e *books.xml* arquivos do [passo a passo: depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tópico.
+> O procedimento a seguir usa o *Belowavg* e *Books. XML* arquivos do [passo a passo: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tópico.
 
 ## <a name="to-evaluate-an-xpath-expression"></a>Para avaliar uma expressão XPath
 
@@ -44,9 +43,9 @@ Você pode avaliar expressões XPath com o **QuickWatch** caixa de diálogo. A e
 
      O **QuickWatch** caixa de diálogo é exibida.
 
-4.  Digite `./price/text()` no **expressão** campo o **QuickWatch** caixa de diálogo e clique em **reavaliar**.
+4.  Insira `./price/text()` no **expressão** campo dos **QuickWatch** caixa de diálogo e clique em **reavaliar**.
 
-     O preço do nó atual do catálogo aparece no **valor** caixa.
+     O preço do nó atual do catálogo aparece na **valor** caixa.
 
 5.  Altere a expressão XPath para `./price/text() < $bookAverage` e clique em **reavaliar**.
 
