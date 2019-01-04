@@ -2,7 +2,6 @@
 title: Conjunto de regras mínimas misto
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d4cc4ddb6a8d6ceb7fd6d7f0874f9f0fdfd66981
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830382"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus projetos do C++ que dão suporte a Common Language Runtime, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir essa regra definida em qualquer conjunto personalizado que você criar para seus projetos em C++ que dão suporte a Common Language Runtime.
@@ -37,7 +36,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C6270](../code-quality/c6270.md)|Falta argumento float para formatar a função|
 |[C6271](../code-quality/c6271.md)|Argumento extra para formatar função|
 |[C6272](../code-quality/c6272.md)|Argumento diferente de float para formatar a função|
-|[C6273](../code-quality/c6273.md)|Argumento não inteiro para formatar função|
+|[C6273](../code-quality/c6273.md)|Argumento não inteiro para formatar a função|
 |[C6274](../code-quality/c6274.md)|Argumento diferente de caractere para formatar a função|
 |[C6276](../code-quality/c6276.md)|Conversão de cadeia de caracteres inválida|
 |[C6277](../code-quality/c6277.md)|Chamada CreateProcess inválida|
@@ -70,7 +69,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C6518](../code-quality/c6518.md)|Tamanho gravável em buffer não gravável|
 |[C6522](../code-quality/c6522.md)|Tipo de cadeia de caracteres de tamanho inválido|
 |[C6525](../code-quality/c6525.md)|Local inatingível da cadeia de caracteres inválido|
-|[C6527](../code-quality/c6527.md)|Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void|
+|[C6527](../code-quality/c6527.md)|Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void|
 |[C6530](../code-quality/c6530.md)|Estilo de cadeia de caracteres de formato não reconhecido|
 |[C6540](../code-quality/c6540.md)|O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função|
 |[C6551](../code-quality/c6551.md)|Especificação de tamanho inválido: expressão não analisável|
@@ -139,20 +138,20 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|
 |[C28285](../code-quality/c28285.md)|Para função, erro de sintaxe no parâmetro|
 |[C28286](../code-quality/c28286.md)|Para função, erro de sintaxe perto do fim|
-|[C28287](../code-quality/c28287.md)|Para função, erro de sintaxe na \_em\_() anotação (nome de parâmetro não reconhecido)|
-|[C28288](../code-quality/c28288.md)|Para função, erro de sintaxe na \_em\_() anotação (nome de parâmetro inválido)|
-|[C28289](../code-quality/c28289.md)|Para função: ReadableTo ou WritableTo não tinha uma especificação de limite como parâmetro|
+|[C28287](../code-quality/c28287.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)|
+|[C28288](../code-quality/c28288.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)|
+|[C28289](../code-quality/c28289.md)|Para a função: ReadableTo ou WritableTo não tinha uma especificação de limite como um parâmetro|
 |[C28290](../code-quality/c28290.md)|a anotação para função contém mais Externos que o número real de parâmetros|
 |[C28291](../code-quality/c28291.md)|pós null/notnull em deref nível 0 não tem sentido para a função.|
 |[C28300](../code-quality/c28300.md)|Operandos da expressão de tipos incompatíveis para o operador|
 |[C28301](../code-quality/c28301.md)|Não há anotações para a primeira declaração da função.|
-|[C28302](../code-quality/c28302.md)|Um extra \_Deref\_ operador foi encontrado na anotação.|
-|[C28303](../code-quality/c28303.md)|Um ambíguo \_Deref\_ operador foi encontrado na anotação.|
-|[C28304](../code-quality/c28304.md)|Um posicionado \_Notref\_ operador foi encontrado aplicado ao token.|
+|[C28302](../code-quality/c28302.md)|Foi encontrado um operador extra \_Deref\_ na anotação.|
+|[C28303](../code-quality/c28303.md)|Foi encontrado um operador ambíguo \_Deref\_ na anotação.|
+|[C28304](../code-quality/c28304.md)|Foi encontrado um operador \_Notref\_ posicionado inadequadamente aplicado ao token.|
 |[C28305](../code-quality/c28305.md)|Foi encontrado um erro durante a análise de um token.|
 |[C28350](../code-quality/c28350.md)|A anotação descreve uma situação que não é aplicável condicionalmente.|
 |[C28351](../code-quality/c28351.md)|A anotação descreve onde um valor dinâmico (uma variável) não pode ser usado na condição.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos que possuem campos descartáveis devem ser descartáveis|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remova finalizadores vazios|
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos com campos descartáveis devem ser descartáveis|
+|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remover finalizadores vazios|
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Campos descartáveis devem ser descartados|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecarregar operador equals ao substituir ValueType.Equals&lt;2}&lt;1}|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|

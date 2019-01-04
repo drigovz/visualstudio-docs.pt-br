@@ -1,13 +1,8 @@
 ---
-title: 'Como: incluir arquivos usando um módulo | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Incluir arquivos usando um módulo | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923481"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Como: incluir arquivos usando um módulo
+# <a name="how-to-include-files-by-using-a-module"></a>Como: Incluir arquivos usando um módulo
   *Módulos* (não deve ser confundido com [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] módulos) são contêineres que permitem que você implante imagens, arquivos de texto ou arquivos como páginas mestras do ASPX no SharePoint.  
   
  Você pode optar por implantar um arquivo em uma biblioteca de documentos ou como um arquivo normal (por exemplo, default. aspx) fora de uma biblioteca de documentos. Para adicionar um arquivo a uma biblioteca de documentos, especifique `Type="GhostableInLibrary"` como um atributo na **arquivo** elemento. Esta configuração instrui o SharePoint para criar um item de lista para ir com o arquivo quando ele é adicionado à biblioteca. Para implantar um arquivo fora de uma biblioteca de documentos, especifique `Type="Ghostable"` ou apenas omita a **tipo** atributo.  
@@ -71,4 +66,3 @@ ms.locfileid: "37118342"
 ## <a name="see-also"></a>Consulte também
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

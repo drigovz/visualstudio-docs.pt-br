@@ -1,9 +1,7 @@
 ---
 title: Assemblies no Visual Studio Tools para Office runtime
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: a992621bc3311fa6dd9ca2703c00aa06d5998494
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838853"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblies no Visual Studio Tools para Office runtime
   Quando você cria um projeto do Office, o Visual Studio adiciona automaticamente referências para o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] assemblies que são usados para o tipo de projeto e o destino do .NET Framework do projeto. Há diferentes assemblies nas extensões do Office para o .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obter mais informações sobre as extensões do Office, consulte [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -67,5 +65,3 @@ ms.locfileid: "53248105"
 ## <a name="see-also"></a>Consulte também  
  [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Ferramentas do Visual Studio para cenários de instalação de tempo de execução do Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)  
-  
-  

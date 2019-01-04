@@ -1,9 +1,6 @@
 ---
 title: Estender o Editor e os serviços de linguagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7194b245ad3803112f5596c82308c384840d7bdf
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5e1d8bac8f682017166c3e625aa0578c90515209
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837323"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Estender os serviços do editor e linguagem
 Você pode adicionar recursos de serviço de linguagem (como o IntelliSense) para o seu próprio editor e estender a maioria dos recursos do editor de código do Visual Studio.  Para obter uma lista completa de como você pode estender, consulte [pontos de extensão de editor e o serviço de linguagem](../extensibility/language-service-and-editor-extension-points.md).  
@@ -46,10 +43,10 @@ Você pode adicionar recursos de serviço de linguagem (como o IntelliSense) par
 |[Passo a passo: Realçar texto](../extensibility/walkthrough-highlighting-text.md)|Mostra como usar *marcas* para realçar o texto.|  
 |[Passo a passo: Adicionar a estrutura de tópicos](../extensibility/walkthrough-outlining.md)|Mostra como adicionar a estrutura de tópicos para tipos específicos de chaves.|  
 |[Passo a passo: Exibir chaves correspondentes](../extensibility/walkthrough-displaying-matching-braces.md)|Mostra como destacar chaves correspondentes.|  
-|[Passo a passo: Dicas de ferramenta de QuickInfo vídeo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Mostra como exibir o pop-ups QuickInfo que descrevem os elementos de código como propriedades, métodos e eventos.|  
-|[Passo a passo: Exibir Ajuda de assinatura](../extensibility/walkthrough-displaying-signature-help.md)|Mostra como exibir o pop-ups que fornecem informações sobre o número e tipos de parâmetros em uma assinatura.|  
-|[Passo a passo: exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)|Mostra como implementar a conclusão da instrução.|  
-|[Passo a passo: Trechos de código de implementação](../extensibility/walkthrough-implementing-code-snippets.md)|Mostra como implementar a expansão de trecho de código.|  
+|[Passo a passo: Exibir dicas de ferramenta de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Mostra como exibir o pop-ups QuickInfo que descrevem os elementos de código como propriedades, métodos e eventos.|  
+|[Passo a passo: Exibir a Ajuda de assinatura](../extensibility/walkthrough-displaying-signature-help.md)|Mostra como exibir o pop-ups que fornecem informações sobre o número e tipos de parâmetros em uma assinatura.|  
+|[Passo a passo: Exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)|Mostra como implementar a conclusão da instrução.|  
+|[Passo a passo: Implementar trechos de código](../extensibility/walkthrough-implementing-code-snippets.md)|Mostra como implementar a expansão de trecho de código.|  
 |[Passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Mostra como exibir as lâmpadas para sugestões de código.|  
 |[Passo a passo: Usar um comando de shell com uma extensão do editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Mostra como associar um comando de menu em um VSPackage com um componente MEF.|  
 |[Passo a passo: Usar uma tecla de atalho com uma extensão do editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Mostra como associar um atalho de menu em um VSPackage com um componente MEF.|  

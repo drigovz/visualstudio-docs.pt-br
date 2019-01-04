@@ -1,9 +1,6 @@
 ---
 title: Padrões comuns de controle para o Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832629"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões comuns de controle para o Visual Studio
 ##  <a name="BKMK_CommonControls"></a> Controles comuns  
@@ -49,7 +46,7 @@ A primeira coisa a considerar ao definir o estilo de controles é se os controle
   
 -   **Caixas de diálogo padrão (utilitário do):** não tema. Não re-modelo. Use padrões de estilo de controle básico.  
   
--   **Ferramentas, editores de documento, superfícies de design e de caixas de diálogo com tema:** usar especializada aparência com tema usando o serviço de cor.  
+-   **Janelas de ferramentas, editores de documento, as caixas de diálogo com tema e superfícies de design:** Use especializada aparência com tema usando o serviço de cor.  
   
 ###  <a name="BKMK_Scrollbars"></a> Barras de rolagem  
  Barras de rolagem devem seguir [barras de rolagem de padrões comuns de interação para Windows](/windows/desktop/Controls/about-scroll-bars) , a menos que eles são aumentados com informações de conteúdo, como no editor de códigos.  
@@ -69,7 +66,7 @@ A primeira coisa a considerar ao definir o estilo de controles é se os controle
   
 -   Necessário campos devem ter  **\<necessárias >** como marcas d'água dentro deles. Você não deve alterar a cor do plano de fundo, exceto em raras situações.  
   
--   Validação de erro: consulte [notificações e progresso para o Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   Validação de erro: Consulte [notificações e progresso para o Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   Campos de entrada devem ser dimensionados para caber o conteúdo não se ajustar à largura da janela na qual eles são mostrados, nem arbitrariamente corresponde ao tamanho de um campo longo, como um caminho. Comprimento pode ser uma indicação ao usuário de limitações sobre quantos caracteres é permitido no campo.  
   
@@ -299,7 +296,7 @@ Diretrizes para usar o botão:
 #### <a name="graphical-buttons"></a>Botões gráficos  
 Alguns botões devem sempre usar uma imagem gráfica e nunca inclua texto para conservar o espaço e evitar problemas de localização. Geralmente, eles são usados no seletor de campo e outras listas classificável.  
   
-> **Observação:** os usuários precisarão de guia para esses botões (não há nenhuma chave de acesso), portanto, colocá-los em uma ordem adequada. Mapa de `name` propriedade do botão para a ação que leva para que os leitores de tela interpretam corretamente a ação do botão.  
+> **Observação:** Os usuários precisam pressionar tab até esses botões (não há nenhuma chave de acesso), portanto, colocá-los em uma ordem adequada. Mapa de `name` propriedade do botão para a ação que leva para que os leitores de tela interpretam corretamente a ação do botão.  
   
 | Função | Botão |  
 | --- | --- |  
@@ -371,23 +368,23 @@ O modo de exibição de árvore deve fornecer a capacidade de selecionar itens e
 ##### <a name="tree-view-control"></a>Controle de exibição de árvore  
 Controles de árvore do Visual Studio devem seguir a navegação de teclado comuns:  
   
--   **Seta para cima:** selecionar itens movendo a árvore  
+-   **Seta:** Selecione os itens, movendo a árvore  
   
--   **Seta para baixo:** selecionar itens movendo-se abaixo da árvore  
+-   **Seta:** Selecione os itens, movendo para baixo da árvore  
   
--   **Seta para a direita:** expandir um nó na árvore  
+-   **Seta para a direita:** Expanda um nó na árvore  
   
--   **Seta para a esquerda:** recolher um nó na árvore  
+-   **Seta para a esquerda:** Recolher um nó na árvore  
   
 -   **Insira a chave:** Iniciar, carregar, executar o item selecionado  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (exibição de árvore e exibição de grade)  
 Um controle trid é um controle complexo que contém uma exibição de árvore em uma grade. Expandindo, recolhimento e navegar pela árvore devem respeitar os mesmos comandos de teclado que uma exibição de árvore, com as seguintes adições:  
   
--   **Seta para a direita:** expandir um nó. Depois que o nó é expandido, ele deve continuar navegando até a coluna mais próxima à direita. Deve interromper a navegação no final da linha.  
+-   **Seta para a direita:** Expanda um nó. Depois que o nó é expandido, ele deve continuar navegando até a coluna mais próxima à direita. Deve interromper a navegação no final da linha.  
   
--   **Guia:** navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.  
+-   **Guia:** Navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.  
   
--   **Shift + Tab:** navega para a célula mais próxima à esquerda.  No início da linha, a navegação continua para a célula mais à direita na linha anterior.  
+-   **Shift + Tab:** Navega para a célula mais próxima à esquerda.  No início da linha, a navegação continua para a célula mais à direita na linha anterior.  
   
 ![Um controle trid no Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Um controle trid no Visual Studio

@@ -1,9 +1,6 @@
 ---
 title: Avaliar uma expressão da janela Inspeção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b0f83be579b4be36cc2ed0b702b473c55c2196c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822697"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Avaliar uma expressão da janela de inspeção
 > [!IMPORTANT]
@@ -45,7 +42,7 @@ ms.locfileid: "39232097"
 7.  Chamadas do Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) para obter o valor da expressão que é exibido na lista de inspeção.  
   
 ## <a name="parse-then-evaluate"></a>Analisar e avaliar  
- Uma vez que uma expressão complexa de análise pode levar muito mais que avaliá-lo, o processo de avaliação de uma expressão é dividido em duas etapas: 1) analisar a expressão e 2) avaliar a expressão analisada. Dessa forma, a avaliação pode ocorrer várias vezes, mas a expressão precisa ser analisado apenas uma vez. A expressão analisada intermediária é retornada do EE em um [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto que é encapsulado por sua vez e retornado de como um [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto. O `IDebugExpression` objeto adia a avaliação de todas as para o `IDebugParsedExpression` objeto.  
+ Uma vez que uma expressão complexa de análise pode levar muito mais que avaliá-lo, o processo de avaliação de uma expressão é dividido em duas etapas: a expressão de 1) análise e 2) avalia a expressão analisada. Dessa forma, a avaliação pode ocorrer várias vezes, mas a expressão precisa ser analisado apenas uma vez. A expressão analisada intermediária é retornada do EE em um [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto que é encapsulado por sua vez e retornado de como um [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto. O `IDebugExpression` objeto adia a avaliação de todas as para o `IDebugParsedExpression` objeto.  
   
 > [!NOTE]
 >  Não é necessário para um EE aderir a esse processo em duas etapas, mesmo que o Visual Studio pressupõe que isso. o EE pode analisar e avaliar na mesma etapa quando [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) é chamado (Isso é como o exemplo MyCEE funciona, por exemplo). Se sua linguagem pode formar expressões complexas, você talvez queira separar a etapa de análise da etapa de avaliação. Isso pode aumentar o desempenho no depurador do Visual Studio quando muitas expressões de inspeção estão sendo mostradas.  

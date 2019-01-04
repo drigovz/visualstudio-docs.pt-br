@@ -1,9 +1,6 @@
 ---
 title: Criando uma instância o Editor principal usando a API herdada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838158"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Criar uma instância o editor principal usando a API herdada
 O editor é responsável por funções, como inserção, exclusão, copiar e colar de edição de texto. Ele combina essas funções com as funções fornecidas pelos serviços de linguagem, como coloração de texto, recuo e preenchimento de declaração do IntelliSense.  
@@ -65,7 +62,7 @@ O editor é responsável por funções, como inserção, exclusão, copiar e col
   
  Se o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método retorna o mesmo comando GUID como o editor de texto, a instância do editor de núcleo obtém automaticamente o padrão teclas de atalho.  
   
- Para obter informações gerais, consulte [instruções passo a passo: criar um núcleo de editor e registrar um tipo de arquivo do editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Para obter informações gerais, consulte [passo a passo: Criar um núcleo de editor e registrar um tipo de arquivo do editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Dentro do editor de núcleo](../extensibility/inside-the-core-editor.md)   

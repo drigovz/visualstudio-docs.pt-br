@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 25fa9581dff49dbdebe9ce79f6f0143d393bb275
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f228d1cf68357711d106b9399477badce350f558
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943729"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validação em uma linguagem específica do domínio
 Como o autor de uma linguagem específica de domínio (DSL), você pode definir restrições de validação para verificar se o modelo criado pelo usuário é significativo. Por exemplo, se a sua DSL permite que os usuários desenhem uma árvore genealógica das pessoas e os seus ancestrais, você pode escrever uma restrição que garanta que os filhos tenham datas de nascimento posteriores as dos seus pais.
@@ -213,7 +212,7 @@ partial class MyLanguageCommandSet
 ...
 ```
 
- Para obter mais informações, consulte [como: adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Para obter mais informações, confira [Como: Adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
  Você também pode criar um controlador de validação independente e gerenciar os erros. Por exemplo:
 

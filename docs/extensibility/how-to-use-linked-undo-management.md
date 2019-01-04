@@ -1,9 +1,6 @@
 ---
-title: 'Como: usar o gerenciamento de desfazer vinculado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Use o gerenciamento de desfazer vinculado | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - linked undo management
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255ad8de79b13a74816b2abd28281ac5de6f1932
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 639b95909f5d0cf91721760cac27768cb64e477a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874187"
 ---
-# <a name="how-to-use-linked-undo-management"></a>Como: usar vinculado gerenciamento de desfazer
+# <a name="how-to-use-linked-undo-management"></a>Como: Use o gerenciamento de desfazer vinculado
 Desfazer vinculado permite que o usuário simultaneamente, desfazer as mesmas edições em vários arquivos. Por exemplo, as alterações de texto simultâneas em vários arquivos de programa, como um arquivo de cabeçalho e um arquivo do Visual C++, é uma transação de desfazer vinculado. Capacidade de desfazer vinculado está incorporada a implementação do ambiente do Gerenciador de desfazer, e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> permite manipular esse recurso. Desfazer vinculado é implementado por uma unidade de desfazer pai que pode vincular as pilhas de desfazer separado juntos para ser tratado como uma unidade de desfazer. O procedimento para usar um Desfazer vinculado é detalhado na seção a seguir.  
   
 ## <a name="to-use-linked-undo"></a>Para usar um Desfazer vinculado  
@@ -32,10 +29,10 @@ Desfazer vinculado permite que o usuário simultaneamente, desfazer as mesmas ed
 3.  Chamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> reverter todas as unidades de desfazer vinculado como um.  
   
     > [!NOTE]
-    >  Para implementar o gerenciamento de desfazer vinculado em um editor, adicione o gerenciamento de desfazer. Para obter mais informações sobre como implementar o gerenciamento de desfazer vinculado, consulte [como: implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md).  
+    >  Para implementar o gerenciamento de desfazer vinculado em um editor, adicione o gerenciamento de desfazer. Para obter mais informações sobre como implementar o gerenciamento de desfazer vinculado, consulte [como: Implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md).  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleparentundounit)   
  [IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
- [Como: implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md)
+ [Como: Implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md)

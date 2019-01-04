@@ -1,9 +1,6 @@
 ---
 title: Criar regiões de formulário do Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.OFFICE.TOOLS.OUTLOOK.FORMREGION
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 77dcdecc766b253eb0cafb808bec8cb48294d6fa
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7b5145701f72bed183dbcff3c3fbe48f757740f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842174"
 ---
 # <a name="create-outlook-form-regions"></a>Criar regiões de formulário do Outlook
   Você pode usar regiões de formulário para personalizar formulários do Microsoft Office Outlook. Visual Studio fornece ferramentas avançadas que tornam mais fácil para você criar, desenvolver e depurar as regiões do formulário.  
@@ -190,4 +187,3 @@ ms.locfileid: "53441724"
 |[Como: Impedir que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Mostra como evitar que o Microsoft Office Outlook exiba uma região de formulário para um determinado item.|  
 |Mostra como acessar o item do Outlook no qual uma região de formulário é exibida.|  
 |[Personalizar ações em regiões de formulário do Outlook](../vsto/custom-actions-in-outlook-form-regions.md)|Descreve como habilitar usuários responder a um item do Outlook.|  
-  

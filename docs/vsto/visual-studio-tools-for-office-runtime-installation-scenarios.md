@@ -1,9 +1,6 @@
 ---
 title: Ferramentas do Visual Studio para cenários de instalação de tempo de execução do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 366863dc9babfd918e3f689420c5e26ec05db6a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850025"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Ferramentas do Visual Studio para cenários de instalação de tempo de execução do Office
   Você pode instalar o Visual Studio 2010 Tools for Office runtime de três maneiras:  
@@ -51,7 +48,7 @@ ms.locfileid: "50670891"
 > [!WARNING]  
 >  Você não pode criar um projeto do Office que tem como alvo o .NET Framework 3.5 usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ou posterior.  
   
- Para obter mais informações sobre como instalar o Office developer tools, consulte [como: configurar um computador para desenvolver soluções do Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).  
+ Para obter mais informações sobre como instalar o Office developer tools, consulte [como: Configurar um computador para desenvolver soluções do Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).  
   
 ### <a name="install-the-runtime-with-office"></a>Instalar o tempo de execução com o Office  
  Quando você instala o Office, as extensões do Office para o .NET Framework 3.5 são instaladas se o .NET Framework 3.5 já está presente no computador. Se você instalar o .NET Framework 3.5 depois do Office, o tempo de execução automaticamente instala as extensões do Office pela .NET Framework 3.5 na primeira vez que um aplicativo do Office tenta carregar uma solução que tem como alvo o .NET Framework 3.5.  
@@ -67,10 +64,8 @@ ms.locfileid: "50670891"
   
  Quando você instala o tempo de execução usando o Visual Studio 2010 Tools para Office runtime redistribuível, as extensões do Office para o .NET Framework 3.5 e extensões do Office para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior está instalado se as versões correspondentes do .NET Framework já estão presentes no computador. Se o computador não tiver uma dessas versões do .NET Framework quando o tempo de execução é instalado, as extensões do Office para a versão ausente do .NET Framework não estão instaladas no momento. Se você instalar a versão ausente do .NET Framework mais tarde, o tempo de execução instala automaticamente extensões do Office correspondentes na próxima vez em que uma solução que exija as extensões está instalada (se o tempo de execução foi instalado com uma solução que foi implantada usando o ClickOnce) ou carregado (se o tempo de execução foi instalado com uma solução que foi implantada usando o Windows Installer).  
   
- Para obter mais informações sobre como incluir pré-requisitos em uma solução do ClickOnce, consulte [como: instalar pré-requisitos em computadores de usuário final para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Para obter mais informações sobre como instalar o tempo de execução do pacote redistribuível manualmente, consulte [como: instalar o Visual Studio Tools for Office runtime redistribuível](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
+ Para obter mais informações sobre como incluir pré-requisitos em uma solução do ClickOnce, consulte [como: Instalar os pré-requisitos em computadores de usuário final para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Para obter mais informações sobre como instalar o tempo de execução do pacote redistribuível manualmente, consulte [como: Instalar o Visual Studio Tools for Office runtime redistribuível](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Assemblies no Visual Studio Tools para Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
-  
-  

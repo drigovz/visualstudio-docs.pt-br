@@ -1,9 +1,6 @@
 ---
 title: Dentro do SDK do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821139"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 Esta seção fornece informações detalhadas sobre as extensões do Visual Studio, incluindo a arquitetura do Visual Studio, componentes, serviços, esquemas, utilitários e assim por diante.
@@ -37,7 +34,7 @@ Esta seção fornece informações detalhadas sobre as extensões do Visual Stud
  Shell do Visual Studio fornece a funcionalidade básica e dar suporte a comunicação cruzada entre suas extensões de componente VSPackages e MEF. Para obter mais informações, consulte [Shell do Visual Studio](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Diretrizes da Experiência do Usuário
- Se você estiver planejando criar novos recursos para o Visual Studio, você deve dar uma olhada nestas diretrizes para obter dicas de design e a usabilidade: [diretrizes de experiência de usuário do Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Se você estiver planejando criar novos recursos para o Visual Studio, você deve dar uma olhada nestas diretrizes para obter dicas de design e a usabilidade: [Diretrizes de experiência de usuário do Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Comandos
  Comandos são funções que realizam tarefas, como imprimir um documento, a atualização de uma exibição ou criando um novo arquivo.
@@ -103,7 +100,7 @@ Esta seção fornece informações detalhadas sobre as extensões do Visual Stud
  Para obter mais informações, consulte [adicionando projeto e modelos de Item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="properties-and-options"></a>Propriedades e opções
- O **propriedades** janela exibe as propriedades de um único ou vários itens selecionados: [estendendo propriedades](../../extensibility/internals/extending-properties.md) páginas de opções contêm conjuntos de opções que pertencem a um componente específico, como um programação da linguagem ou um VSPackage: [opções e páginas de opções](../../extensibility/internals/options-and-options-pages.md). As configurações são recursos geralmente relacionados à interface do usuário que podem ser importados e exportados: [suporte para configurações de usuário](../../extensibility/internals/support-for-user-settings.md).
+ O **propriedades** janela exibe as propriedades de um único ou vários itens selecionados: [Estendendo propriedades](../../extensibility/internals/extending-properties.md) páginas de opções contêm conjuntos de opções que pertencem a um componente específico, como uma linguagem de programação ou em um VSPackage: [Opções e páginas de opções](../../extensibility/internals/options-and-options-pages.md). As configurações são recursos geralmente relacionados à interface do usuário que podem ser importados e exportados: [Suporte para configurações de usuário](../../extensibility/internals/support-for-user-settings.md).
 
 ## <a name="visual-studio-services"></a>Serviços do Visual Studio
  Um serviço fornece um conjunto específico de interfaces de componentes consumir. Visual Studio fornece um conjunto de serviços que podem ser usados por todos os componentes, incluindo as extensões. Por exemplo, serviços do Visual Studio permitem que janelas de ferramenta a ser mostrado ou oculto dinamicamente, habilitar o acesso à Ajuda, barra de status ou eventos de interface do usuário. Editor do Visual Studio também fornece serviços que podem ser importados por extensões de editor. Para obter mais informações, consulte [Using e fornecendo serviços](../../extensibility/using-and-providing-services.md).

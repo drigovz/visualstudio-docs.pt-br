@@ -1,9 +1,6 @@
 ---
 title: Personalização da interface do usuário do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924820"
 ---
 # <a name="office-ui-customization"></a>Personalização da interface do usuário do Office
   Você pode personalizar a interface do usuário (UI) de aplicativos do Microsoft Office usando as ferramentas de desenvolvedor do Office no Visual Studio. Este tópico descreve os recursos de interface do usuário que você pode personalizar nas seções a seguir:  
@@ -96,7 +93,7 @@ ms.locfileid: "49836756"
  Para obter mais informações, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md) e [controles na visão geral de documentos do Office do Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Menus de atalho  
- Um menu de atalho é exibido quando o botão direito do mouse em um documento ou uma janela do aplicativo. Você pode definir um menu de atalho para aparecer após um evento ocorre, como quando um usuário clica um documento, pasta de trabalho ou controle de host. Você pode adicionar um número de comandos de menu diferente ou controles a um menu de atalho. Crie menus de atalho por meio de XML. Se você adicionar um **da faixa de opções (XML)** item ao seu projeto do Office, você pode adicionar o XML para o arquivo XML de faixa de opções para criar menus de atalho. Para obter mais informações sobre como usar XML para criar menus de atalho, consulte [como: adicionar comandos aos menus de atalho](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Um menu de atalho é exibido quando o botão direito do mouse em um documento ou uma janela do aplicativo. Você pode definir um menu de atalho para aparecer após um evento ocorre, como quando um usuário clica um documento, pasta de trabalho ou controle de host. Você pode adicionar um número de comandos de menu diferente ou controles a um menu de atalho. Crie menus de atalho por meio de XML. Se você adicionar um **da faixa de opções (XML)** item ao seu projeto do Office, você pode adicionar o XML para o arquivo XML de faixa de opções para criar menus de atalho. Para obter mais informações sobre como usar XML para criar menus de atalho, consulte [como: Adicionar comandos aos menus de atalho](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
@@ -106,7 +103,5 @@ ms.locfileid: "49836756"
  [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)   
  [Usar controles WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Como: Add-in de mostrar erros de interface do usuário](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Como: Mostrar erros de interface de usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)   
  [Passo a passo: Coletar dados usando um formulário do Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  

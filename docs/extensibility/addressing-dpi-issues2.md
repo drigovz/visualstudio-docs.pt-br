@@ -1,6 +1,5 @@
 ---
 title: Endereçamento DPI Problemas2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875161"
 ---
 # <a name="address-dpi-issues"></a>Questões DPI
 Um número crescente de dispositivos é fornecidos com telas de "alta resolução". Normalmente, essas telas têm mais de 200 pixels por polegada (ppi). Trabalhar com um aplicativo nesses computadores necessitará de conteúdo a ser escalado verticalmente para atender às necessidades de exibir o conteúdo em uma distância de exibição normal para o dispositivo. A partir de 2014, o principal alvo para monitores de alta densidade é móvel (tablets, laptops clamshell e telefones) de dispositivos de computação.  
@@ -204,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- Etapa 2: Verifique se que o tamanho final está correto para o DPI atual.  
+ Etapa 2: Certifique-se de que o tamanho final está correto para o DPI atual.  
   
  Porque o WPF dimensionará a interface do usuário para o DPI atual usando a propriedade de BitmapScalingMode definida no UIElement, deve ser um controle de imagem usando uma imagem prescaled como sua fonte aparecerá duas ou três vezes maior do que ele. A seguir estão algumas maneiras de combater esse efeito:  
   

@@ -1,9 +1,6 @@
 ---
 title: Introdução a VSPackages de controle do código-fonte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a98edacd71132e9290cb339f3b3741a0afc25888
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849720"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Introdução ao controle do código-fonte VSPackages
 Um VSPackage de controle do código-fonte é uma alternativa mais avançada para o plug-in de controle do código-fonte. Para obter mais informações sobre a plug-ins de controle de origem, consulte [criar um controle de fonte plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md). Controle completo sobre o modelo de controle do código-fonte, recursos e interface do usuário (UI) permite a um VSPackage de controle de origem, e ele se integra a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente como um VSPackage.  

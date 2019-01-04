@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939921"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 
@@ -300,7 +299,7 @@ A diretiva de inclusão pode ser usada em qualquer lugar dentro do texto de um a
 
 Você pode compartilhar conteúdo entre os modelos de tempo de execução ao escrever um modelo de classe base, que pode ser abstrato. Use o `inherits` parâmetro do `<@#template#>` diretiva para fazer referência a outra classe de modelo de tempo de execução.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Padrão de herança: fragmentos em métodos de Base
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Padrão de herança: Fragmentos em métodos Base
 
 O padrão usado no exemplo a seguir, observe os seguintes pontos:
 
@@ -355,7 +354,7 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>Padrão de herança: O texto no corpo de Base
+#### <a name="inheritance-pattern-text-in-base-body"></a>Padrão de herança: Texto no corpo de Base
 
 Nessa abordagem alternativa ao uso de herança do modelo, a maior parte do texto é definida no modelo de base. Modelos derivados fornecerem dados e fragmentos de texto que se ajustam o conteúdo de base.
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-Modelos de tempo de design: se você quiser usar um modelo para gerar o código que se torna parte do seu aplicativo, consulte [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Modelos de tempo de design: Se você quiser usar um modelo para gerar o código que se torna parte do seu aplicativo, consulte [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Modelos de tempo de execução podem ser usados em qualquer aplicativo em que os modelos e seus conteúdos são determinados em tempo de compilação. Mas se você deseja gravar uma extensão do Visual Studio que gera texto dos modelos que alterar em tempo de execução, consulte [invocando transformação de texto em uma extensão do VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 

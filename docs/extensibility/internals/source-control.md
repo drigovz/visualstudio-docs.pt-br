@@ -1,9 +1,6 @@
 ---
-title: Controle de origem | Microsoft Docs
-ms.custom: ''
+title: Controle de fonte | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK]
@@ -13,32 +10,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f68108bf2967ba0084581c3a6247e22f53a5af6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 84f1245818ef964a49aafdec3e25b67fddbfac40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129622"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929235"
 ---
 # <a name="source-control"></a>Controle do código-Fonte
-Esta seção discute as opções para implementar o controle de origem como um recurso integrado do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por meio de um plug-in de controle de origem ou de um controle de origem VSPackage.  
+Esta seção discute as opções para implementar o controle de origem como um recurso integrado do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por meio de um plug-in de controle do código-fonte ou um VSPackage de controle do código-fonte.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Conceitos básicos](../../extensibility/internals/source-control-integration-essentials.md)  
- Apresenta as informações importantes que você precisa para começar a trabalhar com o controle de origem.  
+ [Essentials](../../extensibility/internals/source-control-integration-essentials.md)  
+ Apresenta as informações importantes que você deve ter para começar a trabalhar com o controle do código-fonte.  
   
  [Visão geral](../../extensibility/internals/source-control-integration-overview.md)  
- Uma visão geral das duas opções disponíveis para implementar o controle de origem.  
+ Uma visão geral das duas opções disponíveis para implementar o controle do código-fonte.  
   
  [Criar um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- Discute como criar um plug-in de controle de origem que fornece funcionalidade de controle de origem por meio de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface de usuário de controle de origem (UI).  
+ Discute como criar um plug-in de controle de fonte que fornece funcionalidade de controle do código-fonte por meio de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface de usuário de controle do código-fonte (UI).  
   
  [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Discute como criar um controle de origem VSPackage que não só fornece a funcionalidade de controle de origem, mas pode ser usado para personalizar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] da interface do usuário do controle de origem.  
+ Discute como criar um controle de fonte VSPackage que não apenas fornece a funcionalidade de controle do código-fonte, mas pode ser usado para personalizar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] da interface do usuário do controle de origem.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)  
- Referência para a API de plug-in de controle de origem.  
+ Referência para a API de plug-in de controle do código-fonte.  
   
  [Estender projetos](../../extensibility/extending-projects.md)  
- Descreve como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projetos e soluções para organizar os arquivos de código e arquivos de recurso e como implementar o controle de origem.
+ Descreve como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projetos e soluções para organizar os arquivos de código e arquivos de recurso e como implementar o controle do código-fonte.

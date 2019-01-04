@@ -1,9 +1,6 @@
 ---
 title: 'Como: Adicionar controles ao modo de exibição Backstage '
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d33d88849400857914c1daebfcd9d04a373920d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6500118f775f9dfab75b615f28fab9e166a0104a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924651"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Como: Adicionar controles ao modo de exibição Backstage
   Você pode usar o Designer de faixa de opções para adicionar controles ao menu que é aberta quando você clica o **arquivo** guia. Quando você executa o aplicativo, controles que podem ser adicionados para o **arquivo** guia será exibida em um grupo chamado **Add-ins**.  
@@ -71,5 +68,3 @@ ms.locfileid: "53647106"
  [XML da faixa de opções](../vsto/ribbon-xml.md)   
  [Como: Introdução ao personalizar a faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

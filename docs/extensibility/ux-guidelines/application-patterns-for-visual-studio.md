@@ -1,9 +1,6 @@
 ---
 title: Padrões de aplicativo para o Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62f7f75293c895ca1dcfd39c2a03162a43a3904
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898564"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interações de janela  
@@ -151,7 +148,7 @@ Exemplos de janelas de ferramentas lista navegáveis são Gerenciador de soluç�
 | Locais ||  
 | Inspeções ||  
 | Desmontagem ||  
-| Registra ||  
+| Registros ||  
 | Threads ||  
 
 ##  <a name="BKMK_DocumentEditorConventions"></a> Convenções do editor de documento  
@@ -184,17 +181,17 @@ Há vários tipos diferentes de básicos de editores de documento e cada um tem 
 
 -   **Editor de texto:** editor de código, arquivos de log  
 
--   **Superfície de design:** formulários do WPF forms designer, Windows  
+-   **Superfície de design:** Formulários do WPF forms designer, Windows  
 
--   **Editor de caixa de diálogo style:** Designer de manifesto, propriedades do projeto  
+-   **Editor de estilos de caixa de diálogo:** Designer de manifesto, propriedades do projeto  
 
 -   **Designer de modelo:** designer de fluxo de trabalho, codemap, diagrama de arquitetura, progressão  
 
 Também há vários tipos de não de editor que usam o documento também. Embora eles não editam os próprios documentos, que eles precisam seguir as interações padrão para as janelas do documento.  
 
--   **Relatórios:** relatório do IntelliTrace, Hyper-V de relatórios, relatórios do criador de perfil  
+-   **Relatórios:** Relatório de IntelliTrace, o relatório de Hyper-V, o relatório do criador de perfil  
 
--   **Painel:** Hub de diagnóstico  
+-   **Painel:** Hub de Diagnóstico  
 
 #### <a name="text-based-editors"></a>Editores de texto  
 
@@ -401,7 +398,7 @@ A caixa de diálogo deve incluir um botão de controle padrão. Para determinar 
 
 Evite escolher uma ação destrutiva permanentemente para o comando padrão. Se o comando estiver presente, escolha um comando mais seguro como padrão.  
 
-#### <a name="access-keys"></a>Chaves de acesso  
+#### <a name="access-keys"></a>Teclas de acesso  
 Não use chaves de acesso para **Okey**, **Cancelar**, ou **ajuda** botões. Por padrão, esses botões são mapeados a teclas de atalho:  
 
 | Nome do botão | Atalho de teclado |  
@@ -428,8 +425,8 @@ Há vantagens e desvantagens para diferentes métodos de disposição em camadas
 | Mecanismo de troca | Vantagens e o uso apropriado | Uso inadequado e desvantagens |  
 | --- | --- | --- |  
 | Controle guia | Agrupar logicamente as páginas de diálogo em conjuntos relacionados<br /><br />Útil para menos de cinco (ou o número de guias que cabem em uma linha na caixa de diálogo) as páginas de controles relacionados na caixa de diálogo<br /><br />Rótulos de guia devem ser curtos: uma ou duas palavras que podem identificar facilmente o conteúdo<br /><br />Um estilo de caixa de diálogo comuns do sistema<br /><br />Exemplo: **Explorador de arquivos &gt; propriedades de itens** | Pode ser difícil fazer rótulos curtos descritivos<br /><br />Geralmente, não pode ser escalonada após cinco guias em uma caixa de diálogo<br /><br />Inadequado, se você tiver muitos guias para uma linha (use uma técnica alternativa de disposição em camadas)<br /><br />Não extensível |  
-| Navegação de barra lateral | Dispositivo de alternância Simple que pode acomodar mais categorias de guias<br /><br />Lista plana das categorias (sem hierarquia)<br /><br />Extensível<br /><br />Exemplo: **personalizar... &gt; Adicionar comando** | Não um bom uso de espaço horizontal se houver menos de três grupos<br /><br />Tarefa pode ser melhor adequada para uma lista suspensa |  
-| Controle de árvore | Permite a categorias ilimitadas<br /><br />Permite agrupamento e/ou a hierarquia de categorias<br /><br />Extensível<br /><br />Exemplo: **ferramentas &gt; opções** | Hierarquias aninhadas intensamente podem causar excessiva de rolagem horizontal<br /><br />O Visual Studio tem um overabundance dos modos de exibição de árvore |  
+| Navegação de barra lateral | Dispositivo de alternância Simple que pode acomodar mais categorias de guias<br /><br />Lista plana das categorias (sem hierarquia)<br /><br />Extensível<br /><br />Exemplo: **Personalizar... &gt; Adicionar comando** | Não um bom uso de espaço horizontal se houver menos de três grupos<br /><br />Tarefa pode ser melhor adequada para uma lista suspensa |  
+| Controle de árvore | Permite a categorias ilimitadas<br /><br />Permite agrupamento e/ou a hierarquia de categorias<br /><br />Extensível<br /><br />Exemplo: **Ferramentas &gt; opções** | Hierarquias aninhadas intensamente podem causar excessiva de rolagem horizontal<br /><br />O Visual Studio tem um overabundance dos modos de exibição de árvore |  
 | Wizard | Ajuda com a conclusão da tarefa, guiar o usuário pelas etapas sequenciais, com base em tarefa: o assistente representa uma tarefa de alto nível e painéis individuais representam as subtarefas necessárias para realizar a tarefa geral<br /><br />Útil quando a tarefa ultrapassa os limites da interface do usuário, como quando o usuário teria que usar vários editores e janelas para concluir a tarefa<br /><br />Útil quando a tarefa requer a ramificação<br /><br />Útil quando a tarefa contém dependências entre as etapas<br /><br />Útil quando várias tarefas semelhantes com bifurcação de uma decisão que podem ser apresentadas em uma caixa de diálogo para reduzir o número de caixas de diálogo semelhantes diferentes | Inadequado para qualquer tarefa que não requer um fluxo de trabalho sequencial<br /><br />Os usuários podem se tornar confuso com um assistente com muitas etapas e sobrecarregado<br /><br />Assistentes inerentemente têm limitado o espaço na tela |  
 
 ##### <a name="hallways-or-dashboards"></a>Corredores ou painéis  
@@ -470,11 +467,11 @@ Projetos normalmente classificam em si como base de referência (capaz de manter
 
 De uma perspectiva de arrastar e soltar, as seguintes características devem ser aplicados a cada tipo de projeto dentro de **Gerenciador de soluções**:  
 
--   **Projeto de referência:** o ponto principal é que o projeto está sendo arrastado em torno de uma referência a um item no armazenamento. Quando um projeto baseado em referência atua como uma fonte para uma operação de movimentação, ele só deve remover a referência para o item do projeto. O item, na verdade, não deve ser excluído do disco rígido. Quando um projeto baseado em referência atua como um destino para uma operação de movimentação (ou cópia), ele deve adicionar uma referência para o item de origem original sem fazer uma cópia privada do item.  
+-   **Projeto de referência:** O ponto principal é que o projeto está sendo arrastado em torno de uma referência a um item no armazenamento. Quando um projeto baseado em referência atua como uma fonte para uma operação de movimentação, ele só deve remover a referência para o item do projeto. O item, na verdade, não deve ser excluído do disco rígido. Quando um projeto baseado em referência atua como um destino para uma operação de movimentação (ou cópia), ele deve adicionar uma referência para o item de origem original sem fazer uma cópia privada do item.  
 
--   **Com base no diretório de projeto:** de um ponto de vista de arrastar e soltar, o projeto está sendo arrastado em torno do item físico em vez de uma referência. Quando um projeto baseado em diretório atua como uma fonte para uma operação de movimentação, ele deve acabar excluindo o item físico da unidade de disco, bem como removê-lo do projeto. Quando um projeto baseado em diretório atua como um destino para uma operação de movimentação (ou cópia), ele deve fazer uma cópia do item de origem em seu local de destino.  
+-   **Com base no diretório de projeto:** Do ponto de vista do arrastar e soltar, o projeto está sendo arrastado em torno do item físico em vez de uma referência. Quando um projeto baseado em diretório atua como uma fonte para uma operação de movimentação, ele deve acabar excluindo o item físico da unidade de disco, bem como removê-lo do projeto. Quando um projeto baseado em diretório atua como um destino para uma operação de movimentação (ou cópia), ele deve fazer uma cópia do item de origem em seu local de destino.  
 
--   **Projeto de destino misto:** de um ponto de vista de arrastar e soltar, o comportamento desse tipo de projeto se baseia a natureza do item que está sendo arrastado (uma referência a um item no armazenamento) ou o próprio item. O comportamento correto para referências e itens físicos são descritos acima.  
+-   **Projeto de destino misto:** Do ponto de vista do arrastar e soltar, o comportamento desse tipo de projeto se baseia a natureza do item que está sendo arrastado (uma referência a um item no armazenamento) ou o próprio item. O comportamento correto para referências e itens físicos são descritos acima.  
 
 Se houver apenas um tipo de projeto na **Gerenciador de soluções**, em seguida, operações de arrastar e soltar seria simples. Como cada sistema de projeto tem a capacidade de definir seu próprio comportamento de arrastar e soltar, determinadas diretrizes (com base no comportamento de arrastar e soltar do Explorer do Windows) devem ser seguidas para garantir uma experiência de usuário mais previsível:  
 
@@ -508,7 +505,7 @@ O usuário deve sempre ser capaz de determinar o efeito de uma operação de arr
 #### <a name="reference-based-projects"></a>Projetos de referência  
  A tabela a seguir resume as operações de arrastar e soltar (bem como Recortar/copiar/colar) que devem ser executadas com base na natureza das chaves de item e o modificador de origem pressionado para projetos de destino com base em referenciado:  
 
-| Modificador | Categoria | Item de origem: / Link de referência | Item de origem: sistema de item ou arquivo físico (`CF_HDROP`) |  
+| Modificador | Categoria | Item de origem: Link/referência | Item de origem: Sistema de item ou arquivo físico (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Nenhum modificador | Ação | Mover | Link |  
 | Nenhum modificador | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original |  
@@ -540,7 +537,7 @@ O usuário deve sempre ser capaz de determinar o efeito de uma operação de arr
 A tabela a seguir resume as operações de arrastar e soltar (bem como Recortar/copiar/colar) que devem ser executadas com base na natureza nas chaves de item e o modificador de origem pressionado para projetos de destino com base no diretório:  
 
 
-| Modificador | Categoria | Item de origem: / Link de referência | Item de origem: sistema de item ou arquivo físico (`CF_HDROP`) |
+| Modificador | Categoria | Item de origem: Link/referência | Item de origem: Sistema de item ou arquivo físico (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Nenhum modificador | Ação | Mover | Mover |
 | Nenhum modificador | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
@@ -566,7 +563,7 @@ A tabela a seguir resume as operações de arrastar e soltar (bem como Recortar/
 #### <a name="mixed-target-projects"></a>Projetos de destino misto  
 A tabela a seguir resume as operações de arrastar e soltar (bem como Recortar/copiar/colar) que devem ser executadas com base na natureza das chaves de item e o modificador de origem pressionado para projetos de destino misto:  
 
-| Modificador | Categoria | Item de origem: / Link de referência | Item de origem: sistema de item ou arquivo físico (`CF_HDROP`) |  
+| Modificador | Categoria | Item de origem: Link/referência | Item de origem: Sistema de item ou arquivo físico (`CF_HDROP`) |  
 | --- | --- | --- | --- |
 | Nenhum modificador | Ação | Mover | Mover |
 | Nenhum modificador | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |

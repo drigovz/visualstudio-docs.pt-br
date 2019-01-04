@@ -1,8 +1,7 @@
 ---
-title: 'Passo a passo: Profiler XSLT'
+title: 'Passo a passo: Perfil XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: gewarren
@@ -10,26 +9,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f41515ddf04300c075fd82f67bf588d3c17ecc9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835546"
 ---
-# <a name="walkthrough-xslt-profiler"></a>Passo a passo: Profiler XSLT
+# <a name="walkthrough-xslt-profiler"></a>Passo a passo: Perfil XSLT
 
 O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da ajuda, avalia, e problemas de desempenho relacionados de destino no código XSLT. O profiler XSLT inclui dicas úteis para XSL e otimizações de folha de estilos XSLT. Para aplicativos que requerem XSLT máximo desempenho, essa ferramenta pode ser essencial.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Os procedimentos a instrução a seguir exigem que o Visual Studio e .NET Framework versão 4.0 ou posterior.
+Os procedimentos a instrução a seguir exigem o Visual Studio e .NET Framework versão 4.0 ou posterior.
 
 ### <a name="create-the-performance-report"></a>Crie o relatório de desempenho
 
 1.  Abrir um documento XSLT no Visual Studio.
 
-2.  Clique no **perfil XSLT** opção está disponível no menu de XML.
+2.  Clique no **perfil XSLT** opção está disponível no menu XML.
 
 3.  Fornecer um documento XML de entrada. Se um documento XML ele já não estiver aberto, você será solicitado para o arquivo.
 
@@ -41,9 +40,9 @@ Os procedimentos a instrução a seguir exigem que o Visual Studio e .NET Framew
 
 ### <a name="get-all-the-available-views"></a>Obter todos os modos disponíveis
 
-1.  Clique no **exibição atual** lista suspensa para obter todos os modos de exibição disponíveis.
+1.  Clique no **modo de exibição atual** lista suspensa para obter todos os modos de exibição disponíveis.
 
-2.  Selecione o **exibição de resumo** opção o **exibição atual** lista suspensa. Por padrão, um relatório de desempenho é exibido no **exibição de resumo**. Esta exibição é um ponto de partida para determinar problemas de desempenho com documentos XSLT. O **exibição de resumo** lista os pontos de dados a seguir:
+2.  Selecione o **modo de exibição de resumo** opção a **modo de exibição atual** lista suspensa. Por padrão, um relatório de desempenho é exibido na **modo de exibição resumo**. Esta exibição é um ponto de partida para determinar problemas de desempenho com documentos XSLT. O **modo de exibição resumo** relaciona os pontos de dados a seguir:
 
     -   A maioria chamaram funções
 
@@ -51,9 +50,9 @@ Os procedimentos a instrução a seguir exigem que o Visual Studio e .NET Framew
 
     -   Funções que usam o tempo os mais longa de executar
 
-3.  Por padrão, há três colunas para cada ponto de dados: o nome da função, o número de chamadas o valor absoluto, e um valor percentual de função chamado para chamadas de função total. De cada dados point-in a **exibição de resumo**, você pode navegar para modos de exibição mais detalhados clicando nos pontos de dados de função.
+3.  Por padrão, há três colunas para cada ponto de dados: o nome da função, o número de chamadas o valor absoluto, e um valor percentual de função chamado para chamadas de função total. De cada data point-in a **modo de exibição de resumo**, você pode navegar para exibições mais detalhadas clicando nos pontos de dados de função.
 
-4.  Selecione o **exibir função** opção o **exibição atual** lista suspensa. O **exibir função** lista funções chamadas durante a criação de perfil. Você pode classificar os dados em um nome de coluna. As colunas exibidas por padrão são:
+4.  Selecione o **exibição da função** opção a **modo de exibição atual** lista suspensa. O **exibição da função** lista funções chamadas durante a criação de perfil. Você pode classificar os dados em um nome de coluna. As colunas exibidas por padrão são:
 
     -   **Nome da Função**
 
@@ -67,21 +66,21 @@ Os procedimentos a instrução a seguir exigem que o Visual Studio e .NET Framew
 
     -   **Número de Chamadas**
 
-5.  Todas as colunas de tempo são exibidas em valores absolutos e em porcentagens. O termo **exclusivo** refere-se ao tempo total de uma função de execução gasto exclusivos de tempo gasto por outras funções de chamada durante a execução dessa função.
+5.  Todas as colunas de tempo são exibidas em valores absolutos e em porcentagens. O termo **exclusivo** refere-se ao tempo total de uma função executar gasta não incluem o tempo gasto por outras funções chamado durante a execução dessa função.
 
-6.  O termo **inclusiva** refere-se o tempo total gasto em execução, incluindo o tempo de execução de todas as funções de chamada e se qualquer uma dessas funções de chamada chamado outras funções.
+6.  O termo **inclusivo** refere-se ao tempo total gasto em execução, incluindo o tempo de execução de todas as funções que chamou e se qualquer uma das funções chamados chamaram outras funções.
 
 ### <a name="select-callercallee-view"></a>O modo de seleção do chamador/receptor
 
-1.  Selecione **chamador/receptor** exibir no **exibição atual** lista suspensa.
+1.  Selecione **chamador/receptor** exibir na **modo de exibição atual** lista suspensa.
 
 2.  O **chamador/receptor** exibição tem três partes distintas:
 
-    -   **Funções que chamaram**: todas as funções que chamaram uma função específica são listadas na parte superior do modo de exibição.
+    -   **Funções que chamaram**: Todas as funções que chamaram uma função particular são listadas na parte superior do modo de exibição.
 
-    -   **Função atual**: A função específica que foi chamada está listada na parte do meio da exibição.
+    -   **Função atual**: A função específica que foi chamada é listada na parte do meio da exibição.
 
-    -   **Funções que foram chamadas pela** : todas as funções que foram chamadas pela função específica são listadas na parte inferior do modo de exibição.
+    -   **Funções que foram chamadas pela** : Todas as funções que foram chamadas pela função particular são listadas na parte inferior do modo de exibição.
 
 3.  Se uma função chamada `SyncToNavigator` aparece na parte média de exibição, todas as funções que chamaram a função de `SyncToNavigator` aparecem na parte superior de exibição, e em todas as funções que foram chamados por `SyncToNavigator` aparecem na parte de fundo de exibição.
 
@@ -89,25 +88,25 @@ Os procedimentos a instrução a seguir exigem que o Visual Studio e .NET Framew
 
 5.  Você também pode classificar os dados clicando em nomes de coluna.
 
-### <a name="select-call-tree-view"></a>Selecione o modo de exibição de árvore de chamadas
+### <a name="select-call-tree-view"></a>Selecione o modo de exibição de árvore de chamada
 
-1.  Selecione **exibição de árvore de chamadas** no **exibição atual** lista suspensa. Esta exibição é um modo de exibição de árvore de execução do programa.
+1.  Selecione **modo de exibição de árvore de chamadas** na **modo de exibição atual** lista suspensa. Esta exibição é um modo de exibição de árvore de execução do programa.
 
-2.  O **exibição de árvore de chamadas** mostra a raiz da árvore, como o nome do processo. As funções são os nós de árvore. Esta exibição permite que você fure em rastreamentos específicos de chamada e analise que os rastreamentos têm o maior impacto de desempenho. A exibição é semelhante a **exibição de pilha de chamadas** disponível durante a depuração. Além das colunas no **exibir função**, no **exibição de árvore de chamadas**, há uma coluna adicional para exibir o **nome do módulo**.
+2.  O **modo de exibição de árvore de chamadas** mostra a raiz da árvore como o nome do processo. As funções são os nós de árvore. Esta exibição permite que você fure em rastreamentos específicos de chamada e analise que os rastreamentos têm o maior impacto de desempenho. A exibição é semelhante a **modo de exibição de pilha de chamadas** disponível durante a depuração. Além das colunas na **exibição da função**, no **modo de exibição de árvore de chamadas**, há uma coluna adicional para exibir o **nome do módulo**.
 
-3.  Selecione **marcas** no **exibição atual** lista suspensa.
+3.  Selecione **marcas** na **modo de exibição atual** lista suspensa.
 
-4.  Com o profiler de SLT, há marcas que aparece no fluxo da coleção de dados com um comentário associado. As marcas são locais no código que têm contadores. Quando você indica que o profiler XSLT para coletar contadores de desempenho XSLT, os contadores obtém como cada vez que uma dessas marcas é executado. Os dados são exibidos em uma tabela que contém o **ID de marca**, **nome da marca** (**Iniciar programa**, **programa final**) e o  **Carimbo de hora**. As marcas não são agregadas e aparecem em ordem cronológica no **exibição de marcas** do relatório de desempenho.
+4.  Com o profiler de SLT, há marcas que aparece no fluxo da coleção de dados com um comentário associado. As marcas são locais no código que têm contadores. Quando você indica que o profiler XSLT para coletar contadores de desempenho XSLT, os contadores obtém como cada vez que uma dessas marcas é executado. Os dados são exibidos em uma tabela que contém o **ID de marca**, **nome da marca** (**Iniciar programa**, **finalizar programa**) e o  **Time Stamp**. As marcas não são agregadas e exibidos em ordem cronológica na **exibição de marcas** de relatório de desempenho.
 
 ### <a name="select-modules-in-the-current-view"></a>Módulos selecionados na exibição atual
 
-1.  Selecione **módulos** no **exibição atual** lista suspensa.
+1.  Selecione **módulos** na **modo de exibição atual** lista suspensa.
 
-2.  Exibição de módulos é uma lista plana das funções agregadas para o nível de módulo. Expandir ou recolher o nome do módulo para exibir ou fechar a exibição de dados de desempenho do módulo. Você pode classificar os dados em um nome de coluna. Por padrão, há valores absolutos e números de porcentagem para **tempo inclusivo decorrido**, **tempo exclusivo decorrido**, **tempo inclusivo do aplicativo**, **Tempo exclusivo do aplicativo**, e **número de chamadas**.
+2.  Exibição de módulos é uma lista plana das funções agregadas para o nível de módulo. Expandir ou recolher o nome do módulo para exibir ou fechar a exibição de dados de desempenho do módulo. Você pode classificar os dados em um nome de coluna. Por padrão, há valores absolutos e números de porcentagem para **tempo incluindo decorridos**, **tempo exclusivo decorrido**, **tempo inclusivo do aplicativo**, **Tempo exclusivo do aplicativo**, e **número de chamadas**.
 
-3.  Selecione **processo** no **exibição atual** lista suspensa.
+3.  Selecione **processo** na **modo de exibição atual** lista suspensa.
 
-4.  O modo de exibição de processo exibe uma tabela que inclui o **ID do processo**, **nome do processo**, **hora de início**e o **hora de término**. Os dados podem ser classificados clicando em nomes de coluna.
+4.  A exibição processo exibe uma tabela que inclui o **ID do processo**, **nome do processo**, **inicie tempo**e o **hora de término**. Os dados podem ser classificados clicando em nomes de coluna.
 
 ## <a name="see-also"></a>Consulte também
 

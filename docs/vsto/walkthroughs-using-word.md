@@ -1,9 +1,6 @@
 ---
 title: Instruções passo a passo usando o Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c8baedac87ae0f740c9413d4cdba2f07aa0d978a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a439b100c273ee7e884e54b03a44049ad8494935
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822911"
 ---
 # <a name="walkthroughs-using-word"></a>Instruções passo a passo usando o Word
   As instruções a seguir demonstra maneiras que você pode usar as personalizações no nível de documento e suplementos do VSTO para automatizar o Microsoft Office Word e personalizar a interface do usuário (IU).  
@@ -42,7 +39,7 @@ ms.locfileid: "35258321"
  [Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Demonstra como usar os botões e caixas de texto em documentos do Word.  
   
- [Explicação passo a passo: Um gráfico em um documento usando botões de opção de atualização](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
+ [Passo a passo: Atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  Demonstra como alterar estilos de gráfico em um documento do Word por meio de botões de opção em uma personalização no nível de documento.  
   
  [Passo a passo: Criar menus de atalho para indicadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
@@ -75,5 +72,3 @@ ms.locfileid: "35258321"
  [Instruções passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)  
-  
-  

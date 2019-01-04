@@ -1,9 +1,6 @@
 ---
 title: SEEK_START | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SEEK_START
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a10d749022757860c6f7cc620091c2ac10623976
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6aa97560982b49f4544589b18b72892c683d24e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850512"
 ---
 # <a name="seekstart"></a>SEEK_START
 Especifica a posição da qual iniciar a busca em um fluxo de desmontagem.  
@@ -28,7 +25,7 @@ Especifica a posição da qual iniciar a busca em um fluxo de desmontagem.
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-enum enum_SEEK_START {   
+enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
    SEEK_START_CURRENT     = 0x0003,  
@@ -39,7 +36,7 @@ typedef DWORD SEEK_START;
 ```  
   
 ```csharp  
-public enum enum_SEEK_START {   
+public enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
    SEEK_START_CURRENT     = 0x0003,  

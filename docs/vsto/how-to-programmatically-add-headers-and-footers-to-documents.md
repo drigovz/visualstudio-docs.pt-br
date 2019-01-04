@@ -1,9 +1,6 @@
 ---
 title: 'Como: Adicionar programaticamente os cabeçalhos e rodapés a documentos'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d6baf57f8b34f6dc591a8e1a131bd665671322e9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848448"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Como: Adicionar programaticamente os cabeçalhos e rodapés a documentos
   Você pode adicionar texto aos cabeçalhos e rodapés do documento usando o <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> propriedade e <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Section>. Cada seção de um documento contém três cabeçalhos e rodapés de páginas:  
@@ -76,4 +73,3 @@ ms.locfileid: "53803370"
  [Como: Criar novos documentos programaticamente](../vsto/how-to-programmatically-create-new-documents.md)   
  [Como: Por meio de programação estender intervalos em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Como: Executar um loop por meio de itens encontrados em documentos programaticamente](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
-   

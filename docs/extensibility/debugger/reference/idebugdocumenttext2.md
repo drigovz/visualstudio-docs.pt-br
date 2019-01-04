@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentText2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentText2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0dc8344e19f422e65439aae6bafe12e3f62bee4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cae0bfefe4ab39d42f9cc67080d17394b1a1418b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838418"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Essa interface representa um documento de texto.  
@@ -28,17 +25,17 @@ Essa interface representa um documento de texto.
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- Um mecanismo de depuração (DE) implementa essa interface quando ele precisa fornecer o código-fonte está em formato de texto. Como esse é o caso mais comum, se um DE implementar o [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface, ele deve implementar também a `IDebugDocumentText2` interface.  
+ Um mecanismo de depuração (DES) implementa essa interface quando ele precisa fornecer o código-fonte está na forma de texto. Como esse é o caso mais comum, se a DE implementa o [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface, ele deve implementar também a `IDebugDocumentText2` interface.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
  Use o `QueryInterface` método para obter essa interface de um `IDebugDocument2` interface.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
- Além dos métodos de `IDebugDocument2` interface, essa interface implementa os métodos a seguir:  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+ Além dos métodos no `IDebugDocument2` interface, essa interface implementa os seguintes métodos:  
   
 |Método|Descrição|  
 |------------|-----------------|  
@@ -46,7 +43,7 @@ IDebugDocumentText2 : IDebugDocument2
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Recupera o texto da posição especificada no documento.|  
   
 ## <a name="remarks"></a>Comentários  
- Um objeto que implementa essa interface também deve implementar o <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interface, que fornece o <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> a interface para um [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) objeto.  
+ Um objeto que implementa essa interface deve implementar também a <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> da interface, que fornece a <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interface para um [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) objeto.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

@@ -1,13 +1,8 @@
 ---
 title: 'Passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824730"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação
   Este passo a passo demonstra como criar um fluxo de trabalho sequencial básico que incorpora o uso de formulários de associação e iniciação. Esses são os formulários ASPX que permitem que os parâmetros a ser adicionado a um fluxo de trabalho quando ele pela primeira vez é associado pelo administrador do SharePoint (o formulário de associação), e quando o fluxo de trabalho é iniciado pelo usuário (o formulário de inicialização).  
@@ -453,4 +448,3 @@ ms.locfileid: "49873871"
 ## <a name="see-also"></a>Consulte também
  [Criar soluções de fluxo de trabalho do SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Passo a passo: Adicionar uma página de aplicativo a um fluxo de trabalho](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  

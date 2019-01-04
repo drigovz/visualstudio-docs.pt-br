@@ -1,9 +1,6 @@
 ---
-title: 'Como: criar programaticamente um calendário personalizado'
-ms.custom: ''
+title: 'Como: Criar um calendário personalizado de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15603c1b433df97138748b3446e23ac6c7f2c231
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a35433913c0a96a35e1f1db4565ef544af4087f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877197"
 ---
-# <a name="how-to-programmatically-create-a-custom-calendar"></a>Como: criar programaticamente um calendário personalizado
+# <a name="how-to-programmatically-create-a-custom-calendar"></a>Como: Criar um calendário personalizado de forma programática
   Este exemplo cria uma nova pasta Calendário chamada **PersonalCalendar**e, em seguida, cria um novo item de compromisso e o adiciona à pasta Calendário. O código, em seguida, exibe a pasta Calendário.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -34,7 +31,5 @@ ms.locfileid: "42634902"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com itens de calendário](../vsto/working-with-calendar-items.md)   
- [Como: criar compromissos programaticamente](../vsto/how-to-programmatically-create-appointments.md)   
- [Como: criar programaticamente uma solicitação de reunião](../vsto/how-to-programmatically-create-a-meeting-request.md)  
-  
-  
+ [Como: Criar compromissos programaticamente](../vsto/how-to-programmatically-create-appointments.md)   
+ [Como: Criar uma solicitação de reunião de forma programática](../vsto/how-to-programmatically-create-a-meeting-request.md)  

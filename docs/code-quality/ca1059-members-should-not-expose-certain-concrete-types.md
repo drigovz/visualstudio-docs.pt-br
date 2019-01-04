@@ -1,8 +1,7 @@
 ---
-title: 'CA1059: os membros não devem expor determinados tipos concretos'
+title: 'CA1059: Membros não devem expor determinados tipos concretos'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1059
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9440a00b0b1aceb520b1f23abc8ad92f60213855
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0462317ff273b2cb7a967c7e093b16a695e547e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825273"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: os membros não devem expor determinados tipos concretos
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Membros não devem expor determinados tipos concretos
 
 |||
 |-|-|
@@ -53,4 +52,4 @@ ms.locfileid: "49899650"
  É seguro suprimir uma mensagem da regra se a funcionalidade específica fornecida pelo tipo concreto é necessária.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1011: considere passar os tipos base como parâmetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011: Considerar passar tipos base como parâmetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

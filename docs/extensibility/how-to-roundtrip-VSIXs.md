@@ -1,8 +1,6 @@
 ---
 title: Como as extensões de ida e volta
 ms.date: 06/25/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
@@ -10,14 +8,14 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880946"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Como: fazer com que as extensões compatíveis com o Visual Studio 2017 e Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Como: Fazer com que as extensões compatíveis com o Visual Studio 2017 e Visual Studio 2015
 
 Este documento explica como criar projetos de extensibilidade ida e volta entre o Visual Studio 2015 e Visual Studio 2017. Depois de concluir esta atualização, um projeto será capaz de abrir, criar, instalar e executar no Visual Studio 2015 e Visual Studio 2017. Como referência, algumas extensões que podem ida e volta entre o Visual Studio 2015 e Visual Studio 2017 podem ser encontradas na [exemplos de extensibilidade do SDK do VS](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 

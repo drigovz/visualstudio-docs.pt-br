@@ -1,9 +1,6 @@
 ---
 title: Conceitos e recursos de programação para extensões de ferramentas do SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3347b36f64ac84082bee5c3087c035571c6a6b08
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d2451339b7291cba6bff8cebcc60358c84f018d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884013"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Conceitos de programação e recursos para extensões de ferramentas do SharePoint
   Há vários conceitos importantes de programação e recursos que estão relacionados às ferramentas do SharePoint no Visual Studio. Esses conceitos e recursos de desempenham um papel importante na maioria das extensões de ferramentas do SharePoint.  
@@ -41,4 +38,3 @@ ms.locfileid: "37118440"
  [Estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Depurar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [Implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointUnboundEvent2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e9b08c05fb9f89e0caf3f12be4337bfe3a9827
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3fc45b8044ec0c7b4dc4dbda4c3b9002f0a8043b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857524"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 Essa interface informa o Gerenciador de sessão de depuração (SDM) que um ponto de interrupção associado foi desassociado de um programa carregado.  
@@ -32,12 +29,12 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DE) implementa essa interface como parte de seu suporte para pontos de interrupção. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto dessa interface (usa o SDM [QueryInterface](/cpp/atl/queryinterface) para acessar o `IDebugEvent2` interface).  
+ O mecanismo de depuração (DES) implementa essa interface como parte de seu suporte para pontos de interrupção. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface (usa o SDM [QueryInterface](/cpp/atl/queryinterface) para acessar o `IDebugEvent2` interface).  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- O DE cria e envia esse objeto de evento quando um ponto de interrupção associado foi desassociado. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada fornecida pelo SDM quando anexado ao programa que está sendo depurado.  
+ O DE cria e envia esse objeto de evento quando um ponto de interrupção associado ter sido desvinculado. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada fornecida pelo SDM quando anexado a programa que está sendo depurado.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  A tabela a seguir mostra os métodos de `IDebugBreakpointUnboundEvent2`.  
   
 |Método|Descrição|  
@@ -46,7 +43,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Obtém o motivo pelo qual que o ponto de interrupção foi desassociado.|  
   
 ## <a name="remarks"></a>Comentários  
- Quando um mecanismo de depuração DLL ou classe descarrega, todos os pontos de interrupção que estavam vinculados ao código em que o módulo devem ser desassociados do programa que está sendo depurado. Um `IDebugBreakpointUnboundEvent2` é enviada para cada ponto de interrupção não associado.  
+ Quando um mecanismo de depuração de DLL ou classe descarrega, todos os pontos de interrupção que estavam vinculados ao código em que o módulo devem ser desassociados do programa que está sendo depurado. Um `IDebugBreakpointUnboundEvent2` é enviada para cada ponto de interrupção não associado.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

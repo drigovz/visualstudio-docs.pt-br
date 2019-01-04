@@ -1,9 +1,6 @@
 ---
-title: 'Como: fornecer suporte a texto oculto em um serviço de linguagem herdado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Fornecer suporte a texto oculto em um serviço de linguagem herdado | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d368caaa9b65f6f9ab8b12c1f49994e3bfe16670
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 53e7e47f3f38ecca4e68e100dbc24bfaae5aad8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926340"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Como: texto oculto de fornecer suporte a um serviço de linguagem herdado
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Como: Fornecer suporte a texto oculto em um serviço de linguagem herdado
 Você pode criar regiões de texto oculto além das regiões de estrutura de tópicos. Regiões de texto oculta podem ser controlado pelo cliente ou controlado pelo editor e são usados para ocultar uma região de texto completo. O editor exibe uma região oculta como linhas horizontais. Um exemplo disso é o **somente Script** exibição no editor de HTML.  
   
   

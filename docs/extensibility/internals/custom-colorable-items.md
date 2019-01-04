@@ -1,9 +1,6 @@
 ---
 title: Itens de coloração personalizados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 037cd62bea7051e8341101a888bd428b7f78e828
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989744"
 ---
 # <a name="custom-colorable-items"></a>Itens de coloração personalizados
 Você pode substituir a lista de tipos para colorir, como palavras-chave e comentários, com a implementação de itens de coloração personalizados como parte de seu serviço de linguagem.  
@@ -72,4 +69,4 @@ Você pode substituir a lista de tipos para colorir, como palavras-chave e comen
  [Coloração de sintaxe em editores personalizados](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Coloração de sintaxe de implementar](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Como: usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Como: Usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

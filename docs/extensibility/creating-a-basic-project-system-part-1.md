@@ -1,9 +1,6 @@
 ---
 title: Criar um sistema de projeto básico, parte 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832548"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Criar um sistema de projeto básico, parte 1
 No Visual Studio, os projetos são contêineres que os desenvolvedores usam para organizar os arquivos de código-fonte e outros ativos. Projetos aparecem como filhos de soluções na **Gerenciador de soluções**. Projetos permitem que você organize, compilar, depurar e implantar o código-fonte e criar referências para os serviços da Web, bancos de dados e outros recursos.  
@@ -71,7 +68,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
   
 ### <a name="to-create-a-basic-project-template"></a>Para criar um modelo de projeto básico  
   
-1. Adicionar três pastas para o projeto, um sob o outro: *Templates\Projects\SimpleProject*. (No **Gerenciador de soluções**, clique com botão direito do **SimpleProject** nó do projeto, aponte para **adicionar**e, em seguida, clique em **nova pasta**. Nomeie a pasta *modelos*. No *modelos* pasta, adicione uma pasta chamada *projetos*. Além de *projetos* pasta, adicione uma pasta chamada *SimpleProject*.)  
+1. Adicione três pastas para o projeto, um sob o outro: *Templates\Projects\SimpleProject*. (No **Gerenciador de soluções**, clique com botão direito do **SimpleProject** nó do projeto, aponte para **adicionar**e, em seguida, clique em **nova pasta**. Nomeie a pasta *modelos*. No *modelos* pasta, adicione uma pasta chamada *projetos*. Além de *projetos* pasta, adicione uma pasta chamada *SimpleProject*.)  
   
 2. No *Templates\Projects\SimpleProject* pasta, adicione um arquivo de imagem de Bitmap a ser usado como o ícone chamado *SimpleProject.ico*. Quando você clica em **adicionar**, abre o editor de ícone.  
   
@@ -559,7 +556,7 @@ Templates
      Observe que os parâmetros de modelo $nameSpace$ e $ $className$ não tem novos valores. Você aprenderá a implementar a substituição de parâmetro de modelo na próxima seção.  
   
 ## <a name="substitute-template-parameters"></a>Substituir parâmetros de modelo  
- Em uma seção anterior, você registrou o modelo de projeto com o Visual Studio usando o `ProvideProjectFactory` atributo. Registrar o caminho de uma pasta de modelos dessa maneira permite que você habilitar a substituição de parâmetro do modelo básico, substituindo e expandindo o `ProjectNode.AddFileFromTemplate` classe. Para obter mais informações, consulte [nova geração de projeto: nos bastidores, parte dois](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Em uma seção anterior, você registrou o modelo de projeto com o Visual Studio usando o `ProvideProjectFactory` atributo. Registrar o caminho de uma pasta de modelos dessa maneira permite que você habilitar a substituição de parâmetro do modelo básico, substituindo e expandindo o `ProjectNode.AddFileFromTemplate` classe. Para obter mais informações, consulte [nova geração de projeto: Nos bastidores, parte dois](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Agora, adicione o código de substituição para o `AddFileFromTemplate` classe.  
   
