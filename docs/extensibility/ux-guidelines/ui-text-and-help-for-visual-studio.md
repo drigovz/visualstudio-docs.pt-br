@@ -1,9 +1,6 @@
 ---
 title: Texto da interface do usuário e a Ajuda do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907158"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto da interface do usuário e a Ajuda do Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> Terminologia e o texto de interface do usuário  
@@ -204,7 +201,7 @@ ms.locfileid: "49842229"
   
     -   É esse erro ambigious ou compartilhados em várias situações? Nesse caso, como você orientar os usuários para a solução que precisam?  
   
-#### <a name="build-errors"></a>Erros de compilação  
+#### <a name="build-errors"></a>Erros de build  
  Como o Visual Studio é uma ferramenta de desenvolvimento de software, muitos de seus componentes têm uma compilação, convertendo, codificação ou etapa para converter o trabalho do desenvolvedor em formato binário. Essas conversões podem causar erros quando o compilador não pode processar arquivos criados incorretamente ou quando as opções do compilador não foram definidas corretamente.  
   
  Usuários do Visual Studio podem gastar um número enorme de horas de desenvolvimento Resolvendo erros de compilação. Esse tempo de resolução aumenta quando erros têm dependências ou quando as mensagens de erro são mal escritas, que pode dificultar descobrir a origem do erro.  
@@ -262,7 +259,7 @@ ms.locfileid: "49842229"
   
 |Bom|incorreta|  
 |----------|---------|  
-|"O número discado não está mais no serviço. Verifique o número e discar novamente ou discar 0 para o operador."|-"Erro (449): número inválido"<br />-"Esse erro de exceção sem tratamento indica que a operação foi concluída com êxito."<br /><br /> ![Mensagem de erro inválido no Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "a_ErrorDialog 0602")|  
+|"O número discado não está mais no serviço. Verifique o número e discar novamente ou discar 0 para o operador."|-"Erro (449): Número inválido"<br />-"Esse erro de exceção sem tratamento indica que a operação foi concluída com êxito."<br /><br /> ![Mensagem de erro inválido no Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "a_ErrorDialog 0602")|  
   
 ## <a name="accessing-help"></a>Acessando a Ajuda  
   
