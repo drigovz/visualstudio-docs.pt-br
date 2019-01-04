@@ -1,9 +1,6 @@
 ---
 title: Adicionando ícones a comandos de Menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], adding to toolbars
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d01e64915004eb21a92c21a67291dc4f034112d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 73e49c3ac9586f5287e21e63e4560b7009927f46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827631"
 ---
 # <a name="add-icons-to-menu-commands"></a>Adicionar ícones a comandos de menu
 Comandos podem aparecer nos menus e barras de ferramentas. Na barra de ferramentas, é comum para um comando a ser exibido com apenas um ícone (para economizar espaço) ao mesmo tempo nos menus de que um comando normalmente aparece com um ícone e o texto.  

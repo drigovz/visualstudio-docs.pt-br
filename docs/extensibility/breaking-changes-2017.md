@@ -1,9 +1,6 @@
 ---
 title: Alterações consideráveis na extensibilidade do Visual Studio 2017 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841944"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações na extensibilidade do Visual Studio 2017
 
@@ -43,9 +40,9 @@ Alterações no formato VSIX incluem:
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Criando uma extensão do Visual Studio 2017
 
-Designer de ferramentas para a criação do novo formato de manifesto do VSIX v3 agora está disponível no Visual Studio 2017. Consulte o documento que acompanha este artigo [como: migrar projetos de extensibilidade para o Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) para obter detalhes sobre como usar as ferramentas de designer ou fazer atualizações manuais ao projeto e o manifesto para desenvolver extensões do VSIX v3.
+Designer de ferramentas para a criação do novo formato de manifesto do VSIX v3 agora está disponível no Visual Studio 2017. Consulte o documento [como: Migrar projetos de extensibilidade para o Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) para obter detalhes sobre como usar as ferramentas de designer ou fazer atualizações manuais ao projeto e o manifesto para desenvolver extensões do VSIX v3.
 
-## <a name="change-visual-studio-user-data-path"></a>Alteração: Caminho de dados de usuário de Visual Studio
+## <a name="change-visual-studio-user-data-path"></a>Alteração: Caminho de dados de usuário do Visual Studio
 
 Anteriormente, apenas uma instalação de cada versão principal do Visual Studio pode existir em cada computador. Para dar suporte a instalações lado a lado do Visual Studio 2017, vários caminhos de dados de usuário para o Visual Studio podem existir no computador do usuário.
 
@@ -95,9 +92,9 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
 ### <a name="visual-studio-registry"></a>Registro do Visual Studio
 
 * Anteriormente, o Visual Studio instalado várias chaves do registro para o sistema **HKEY_LOCAL_MACHINE** e **HKEY_CURRENT_USER** hives sob uma chave específica do Visual Studio:
-  * **HKLM\Software\Microsoft\VisualStudio\{versão}**: chaves do Registro criadas pelos instaladores MSI e extensões de por máquina.
-  * **HKCU\Software\Microsoft\VisualStudio\{versão}**: chaves do Registro criadas pelo Visual Studio para armazenar configurações específicas do usuário.
-  * **HKCU\Software\Microsoft\VisualStudio\{versão} _Config**: uma cópia da chave em HKLM do Visual Studio acima, além de chaves do registro mesclado de *pkgdef* arquivos pelas extensões.
+  * **HKLM\Software\Microsoft\VisualStudio\{versão}**: Chaves do Registro criadas pelos instaladores MSI e extensões de por máquina.
+  * **HKCU\Software\Microsoft\VisualStudio\{versão}**: Chaves do Registro criadas pelo Visual Studio para armazenar configurações específicas do usuário.
+  * **HKCU\Software\Microsoft\VisualStudio\{versão} _Config**: Uma cópia da chave em HKLM do Visual Studio acima, além de chaves do registro mesclado de *pkgdef* arquivos pelas extensões.
 * Para reduzir o impacto sobre o registro, o Visual Studio agora usa o [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) função para armazenar as chaves do registro em um arquivo binário privado sob *[VSAPPDATA]\privateregistry.bin*. Somente um número muito pequeno de chaves específicas do Visual Studio permanecem no registro do sistema.
 
 * O código existente em execução dentro do processo do Visual Studio não é afetado. Visual Studio redirecionará todas as operações de registro na chave específicas do HKCU Visual Studio para o registro privado. Lendo e gravando em outros locais do registro continuarão a usar o registro do sistema.

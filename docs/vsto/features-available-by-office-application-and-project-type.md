@@ -1,9 +1,6 @@
 ---
 title: Recursos disponíveis por tipo de projeto e aplicativo do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986395"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Recursos disponíveis por tipo de projeto e aplicativo do Office
   Visual Studio tem vários tipos de modelos de projeto que dão suporte a cenários de negócios diferentes para aplicativos do Microsoft Office, incluindo os seguintes tipos:  
@@ -77,5 +74,3 @@ ms.locfileid: "53648146"
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Dados armazenados em cache em personalizações no nível de documento](../vsto/cached-data-in-document-level-customizations.md)   
  [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)  
-  
-  

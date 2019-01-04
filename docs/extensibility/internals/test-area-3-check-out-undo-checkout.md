@@ -1,9 +1,6 @@
 ---
 title: 'Área de teste 3: Check-out / desfazer check-out | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, checkout
@@ -16,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d4c91f3904afbd677bc8359e633bf5a1735fceb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cfb1b2ff397fad1d8a4e74ef21cbb85805d1b1cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827027"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de teste 3: Fazer Check-Out / desfazer check-out
 Essa área de plug-in de teste de controle de origem aborda itens de edição e reversão do repositório de versão por meio de **Check-Out** e **desfazer check-out** comandos.  
 
-**Fazer Check-Out**: as marcas de um item no repositório de versão como check-out, modifica a cópia local como leitura/gravação.  
+**Fazer Check-Out**: As marcas de um item no repositório de versão como check-out, modifica a cópia local como leitura/gravação.  
 
-**Desfazer check-out**: marca um item no repositório de versão, como check-in, reverte a cópia local para o estado antes do check-out (dependendo das opções).
+**Desfazer check-out**: As marcas de um item no repositório de versão como check-in, reverte a cópia local para o estado antes do check-out (dependendo das opções).
 
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  
 
@@ -42,7 +39,7 @@ O seguinte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos
   
 -   Menu de atalho **Check-Out**.  
   
--   Desfazer check-out: **arquivo**, **controle de fonte**, **desfazer check-out**.  
+-   Desfazer check-out: **Arquivo**, **controle de origem**, **desfazer check-out**.  
   
 ## <a name="common-expected-behavior"></a>Comportamento esperado comuns  
   
@@ -65,9 +62,9 @@ Esta seção concentra-se a operação de comando de check-out.
 |Check-Out exclusivo (COE) um projeto de cliente|1.  Crie um projeto de cliente.<br />2.  Adicione a solução ao controle de origem.<br />3.  Check-out de todo o projeto exclusivamente (**arquivo**, **Check-Out**).|Ocorre o check-out.|  
 |Fazer o Check-Out exclusivo COE (), um sistema de arquivos ou um projeto de Web do IIS local|1.  Definir a Conexão de servidor Web para compartilhamento de arquivos **ferramentas**, **opções**, **projetos**, **configurações Web**.<br />2.  Crie um projeto Web.<br />3.  Adicione a solução ao controle de origem.<br />4.  Check-out de todo o projeto exclusivamente (**arquivo**, **controle do código-fonte**, **Check-Out**).|Ocorre o check-out.|  
 |Fazer check-out de itens de solução em uma solução (novo método para lidar com outros arquivos)|1.  Crie uma solução em branco.<br />2.  Adicione a solução ao controle de origem.<br />3.  Verificar a solução.<br />4.  Adicione vários itens de solução.<br />5.  Fazer check-in de todos os itens adicionados recentemente.<br />6.  Selecione vários itens de solução.<br />7.  Fazer check-out dos itens selecionados (Menu de atalho **Check-Out**).|Arquivos selecionados são check-out.|  
-|Check-Out Local Version (se o plug-in em teste dá suporte a esse recurso)|1.  O usuário 1: Crie um projeto do cliente.<br />2.  O usuário 1: Adicione a solução ao controle de origem.<br />3.  O usuário 2: Abra a solução de controle de origem para outro local.<br />4.  Usuário 2: Fazer Check-out de um arquivo.<br />5.  O usuário 2: Modificar o arquivo.<br />6.  O usuário 2: Verifique o arquivo.<br />7.  Usuário 1: Fazer Check-out de uma versão local do arquivo (Verifique a **Check-Out da versão Local** opção no avançada **Check-Out** caixa de diálogo).|A versão local do arquivo foi extraído.<br /><br /> Modificações pelo usuário 2 não são aplicadas ao arquivo do usuário 1.|  
+|Check-Out Local Version (se o plug-in em teste dá suporte a esse recurso)|1.  Usuário 1: Crie um projeto de cliente.<br />2.  Usuário 1: Adicione a solução ao controle de origem.<br />3.  Usuário 2: Abra a solução de controle de origem para outro local.<br />4.  Usuário 2: Fazer check-out de um arquivo.<br />5.  Usuário 2: Modifique o arquivo.<br />6.  Usuário 2: Verifique o arquivo.<br />7.  Usuário 1: Fazer check-out da versão local do arquivo (Verifique a **Check-Out da versão Local** opção em avançada **Check-Out** caixa de diálogo).|A versão local do arquivo foi extraído.<br /><br /> Modificações pelo usuário 2 não são aplicadas ao arquivo do usuário 1.|  
   
-### <a name="case-3b-disconnected-check-out"></a>Caso 3b: desconectado Check-out
+### <a name="case-3b-disconnected-check-out"></a>Caso 3b: Desconectado de Check-out
 
 Operando no modo desconectado permite que os usuários algum nível de suporte de controle de origem contínuo quando não anexado diretamente a um repositório de versão. Isso é feito localmente em cache todas as informações relevantes sobre a solução inscrita e projetos.  
   
@@ -87,7 +84,7 @@ Quando o usuário reconecta-se para a versão de armazenar, os estados de check-
 |------------|----------------|--------------------------------|  
 |Enquanto estiver desconectado, fazer check-out de um arquivo, em seguida, conectar-se para a sincronização|1.  Desconectar um projeto controlado usando a caixa de diálogo Alterar controle do código-fonte (**arquivo**, **controle do código-fonte**, **alterar controle do código-fonte**).<br />2.  Confira um arquivo.<br />3.  Clique em Fazer Check-Out (desconectado) na caixa de diálogo de aviso.<br />4.  Edite o arquivo.<br />5.  Conecte-se usando a caixa de diálogo Alterar controle do código-fonte.<br />6.  Obter a versão mais recente do arquivo editado.|Comportamento esperado comuns|  
   
-### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3c: Editar consulta/salvar (QEQS)  
+### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3c: Editar consulta/consulta salvar (QEQS)  
  Itens sob controle de origem são controladas para as edições, alterações, e salva para ajudar os usuários facilmente gerenciar seus arquivos. Quando um item controlado que é "check-in" for editado, QEQS intercepta a edição de tentativa e pede ao usuário se ele deseja fazer check-out do arquivo para editá-lo. Dependendo da **ferramentas**, **opções** configurações, o usuário é forçada a verificar k-out do arquivo para editar ou com podem ter permissão para editar uma cópia na memória e conferir mais tarde. Se o usuário **ferramentas**, **opções** configuração não está definida para exibir o check-out de caixa de diálogo e apenas fizer check-out e, em seguida, quando o usuário faz sua edição, o arquivo automaticamente faz check-out, sempre que possível.  
   
 #### <a name="expected-behavior"></a>Comportamento esperado  
@@ -106,7 +103,7 @@ Quando o usuário reconecta-se para a versão de armazenar, os estados de check-
 |Editar um arquivo de solução que o check-in|Repita as etapas conforme descrito no anterior de teste, mas em vez de modificar um arquivo de texto, modificar a solução, alterando as propriedades da solução.|Mesmo que o teste anterior|  
 |Editar um arquivo de projeto que o check-in|Repita as etapas conforme descrito no anterior de teste, mas em vez de modificar um arquivo de texto, modifique o projeto, alterando as propriedades do projeto.|Mesmo que o teste anterior.|  
   
-### <a name="case-3d-silent-check-out"></a>Caso 3d: Silencioso Check-Out  
+### <a name="case-3d-silent-check-out"></a>3d de caso: Check-Out silencioso  
  Essa verificação de bastidores subárea cenários em que o **Check-Out** caixa de diálogo não aparecer por do usuário **ferramentas**, **opções**, **as configurações de controle do código-fonte** .  
   
 #### <a name="expected-behavior"></a>Comportamento esperado  

@@ -1,9 +1,6 @@
 ---
 title: Atualizar personalizações da faixa de opções em projetos do Office que você migrar para o .NET Framework 4 ou o .NET Framework 4.5
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4cfd5fb259db7903541e0a86f16c720c9ff9c4d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 864742d3e2ded8ca4cb0531989bebfde9f6f3593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827332"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualizar personalizações da faixa de opções em projetos do Office que você migrar para o .NET Framework 4 ou o .NET Framework 4.5
   Se o projeto contém uma personalização da faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** de item de projeto, você deve fazer as seguintes alterações ao seu código de projeto se a estrutura de destino é alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou mais tarde.  
@@ -192,5 +189,3 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ## <a name="see-also"></a>Consulte também  
  [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Designer da faixa de opções](../vsto/ribbon-designer.md)  
-  
-  

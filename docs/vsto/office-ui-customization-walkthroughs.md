@@ -1,9 +1,6 @@
 ---
 title: Instruções passo a passo personalização de interface do usuário do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826579"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Instruções passo a passo personalização de interface do usuário do Office
   As instruções a seguir demonstra o maneiras que você pode personalizar o usuário (UI) de interface de aplicativos do Microsoft Office por meio de personalizações no nível de documento e suplementos do VSTO.  
@@ -52,7 +49,7 @@ ms.locfileid: "35670097"
  [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
  Demonstra como criar uma guia de faixa de opções personalizada usando o Designer de faixa de opções. A guia contém um botão que pode ser usado para ocultar ou exibir um painel de ações.  
   
- [Explicação passo a passo: Os controles em uma faixa de opções em tempo de execução de atualização](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)  
+ [Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)  
  Demonstra como usar o modelo de objeto da faixa de opções para atualizar os controles em uma faixa de opções, depois que a faixa de opções é carregada no aplicativo do Office.  
   
  [Passo a passo: Criar uma guia personalizada usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
@@ -68,7 +65,7 @@ ms.locfileid: "35670097"
  [Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Demonstra como usar os botões e caixas de texto em documentos do Word.  
   
- [Explicação passo a passo: Um gráfico em um documento usando botões de opção de atualização](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
+ [Passo a passo: Atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  Demonstra como alterar estilos de gráfico em um documento do Word por meio de botões de opção em uma personalização no nível de documento.  
   
 ## <a name="controls-on-excel-worksheets"></a>Controles em planilhas do Excel  
@@ -81,7 +78,7 @@ ms.locfileid: "35670097"
  [Passo a passo: Exibir texto em uma caixa de texto em uma planilha usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
  Demonstra as Noções básicas de como usar os botões e caixas de texto em planilhas do Excel.  
   
- [Explicação passo a passo: Um gráfico em uma planilha usando botões de opção de atualização](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
+ [Passo a passo: Um gráfico em uma planilha usando botões de opção de atualização](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
  Mostra as Noções básicas de alteração de estilos de gráfico usando os botões de opção em uma planilha do Excel.  
   
 ## <a name="see-also"></a>Consulte também  
@@ -92,5 +89,3 @@ ms.locfileid: "35670097"
  [Introdução ao &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)   
  [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

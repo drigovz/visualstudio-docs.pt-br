@@ -1,9 +1,6 @@
 ---
 title: Propriedades em projetos do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9369a42f1f4a8497df42f940bb8bd23453803a26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e2179d10983bc74c8dd9bb692f1eade44dec47
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932202"
 ---
 # <a name="properties-in-office-projects"></a>Propriedades em projetos do Office
   Há várias propriedades importantes que estão disponíveis para projetos do Office no Visual Studio. Essas propriedades podem ser acessadas na **propriedades** janela.  
@@ -58,5 +55,3 @@ ms.locfileid: "49862145"
  [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
  [Visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md)   
  [Eventos em projetos do Office](../vsto/events-in-office-projects.md)  
-  
-  

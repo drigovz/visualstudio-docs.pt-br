@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgramDestroyEventFlags2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6b57206159ce00fbb79e9f9af1a6353588df76c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3d0385af4ec795608672d8d7cbdb4b188246dea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825848"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-Permite que um mecanismo de depuração substituir o comportamento padrão da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário quando você encerrar uma sessão de depuração.  
+Permite que um mecanismo de depuração substituir o comportamento padrão do [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário quando você encerrar uma sessão de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -30,7 +27,7 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- Essa interface é implementada por mecanismos de depuração. É útil para hosts que podem criar e destruir vários programas durante o tempo de vida de um processo.  
+ Essa interface é implementada pelos mecanismos de depuração. É útil para hosts que podem criar e destruir vários programas durante a vida útil de um processo.  
   
 ## <a name="methods"></a>Métodos  
  A tabela a seguir mostra os métodos de `IDebugProgramDestroyEventFlags2`.  
@@ -40,7 +37,7 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 |[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Recupera o programa destruir sinalizadores.|  
   
 ## <a name="remarks"></a>Comentários  
- O comportamento padrão da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário é voltar ao modo de design depois que todos os programas enviou um programa destruir o evento. Essa interface permite que um mecanismo de depuração alterar esse comportamento.  
+ O comportamento padrão do [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário é retornar ao modo de design depois que todos os programas tem enviado um programa destruir o evento. Essa interface permite que um mecanismo de depuração alterar esse comportamento.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: Msdbg.h  

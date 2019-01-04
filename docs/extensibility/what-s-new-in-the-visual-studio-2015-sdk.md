@@ -1,9 +1,6 @@
 ---
 title: O que&#39;novo no SDK do Visual Studio 2015 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4926ed9fafb64664d3ac0426466d90611cae4450
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952836"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>O que&#39;s de novo no SDK do Visual Studio 2015
 O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visual Studio 2015, o Visual Studio 2015 atualizado e o Visual Studio 2017.  
@@ -62,12 +59,12 @@ O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visu
 > [!NOTE]
 >  Você pode continuar a usar os assemblies de referência do SDK do VS instalado com seus projetos (localizado em \<local de instalação do Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) e projetos de extensibilidade existentes não precisam ser atualizado para usar pacotes NuGet.  O projeto **referencia / adicionar referência** diálogo continua a usar os assemblies de referência do SDK do VS instalado.  
 >   
->  Se você quiser modificar seus projetos existentes para usar o NuGet, consulte [como: migrar VSPackages ao Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) que tem uma seção sobre como atualizar projetos de extensibilidade para pacotes do NuGet.  
+>  Se você quiser modificar seus projetos existentes para usar o NuGet, consulte [como: Migrar os VSPackages para Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) que tem uma seção sobre como atualizar projetos de extensibilidade para pacotes do NuGet.  
   
 ## <a name="light-bulbs"></a>Lâmpadas  
  Uma das maneiras de novo mais interessantes de escrever código de extensão é fornecida pelo projeto Roslyn. Para obter mais informações, consulte [Roslyn](https://github.com/dotnet/Roslyn).  
   
- As lâmpadas são um novo recurso que é fornecido com VSSDK. Eles são ícones usados no editor do Visual Studio que expandem para exibir um conjunto de ações de refatoração de código ou correções para problemas identificados pelos analisadores de código internos. Para obter mais informações, consulte [instruções passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+ As lâmpadas são um novo recurso que é fornecido com VSSDK. Eles são ícones usados no editor do Visual Studio que expandem para exibir um conjunto de ações de refatoração de código ou correções para problemas identificados pelos analisadores de código internos. Para obter mais informações, confira [Passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
 ## <a name="updated-user-experience-guidelines"></a>Diretrizes da experiência do usuário atualizada  
  Criando recursos ou novas extensões para Visual Studio? Fazer check-out atualizado e expandida [diretrizes de experiência de usuário do Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Você encontrará a [tokens de cor](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [tamanhos de fonte](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [especificações de layout de caixa de diálogo](../extensibility/ux-guidelines/layout-for-visual-studio.md)e outras diretrizes necessárias para integrar sua nova interface do usuário com o Visual Studio.

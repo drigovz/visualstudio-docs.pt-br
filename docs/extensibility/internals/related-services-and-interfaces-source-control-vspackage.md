@@ -1,9 +1,6 @@
 ---
 title: Interfaces (VSPackage de controle do código-fonte) e serviços relacionados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e68c7c0101661ae9afffa7e9e12e8e4faa44fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940619"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
 Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackage no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. O VSPackage de controle de origem implementa algumas dessas interfaces e usa outras pessoas para realizar tarefas de controle do código-fonte.  
@@ -33,7 +30,7 @@ Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackag
   
  Interfaces são:  
   
--   Obrigatório: A entidade apropriada (controle de origem VSPackage, Stub de controle do código-fonte, projeto) deve implementar a interface.  
+-   Obrigatórias: A entidade apropriada (controle de origem VSPackage, Stub de controle do código-fonte, projeto) deve implementar a interface.  
   
 -   Recomendado: A entidade deve implementar essa interface; Caso contrário, a funcionalidade de controle do código-fonte pode ser limitada.  
   

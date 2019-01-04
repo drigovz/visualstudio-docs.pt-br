@@ -1,9 +1,6 @@
 ---
 title: Atraso de carregamento do documento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ca02010586711fa1a9af463f2fde5d0f4963a5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27edc56516293ff6502f0708a02faa7bae1e3719
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500362"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940356"
 ---
 # <a name="delayed-document-loading"></a>Atraso de carregamento do documento
 Quando um usuário é reaberto em uma solução do Visual Studio, a maioria dos documentos associados não é carregada imediatamente. O quadro de janela do documento é criado em um estado pendente de inicialização, e um documento de espaço reservado (chamado de um quadro de stub) é colocado na tabela de documento em execução (RDT).  
@@ -59,7 +56,7 @@ Você pode descobrir quando um documento foi carregado por assinatura do evento 
 - Caso contrário, você pode assinar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>.  
   
 
- O exemplo a seguir é um cenário de acesso do documento hipotético: extensão de um Visual Studio que deseja exibir algumas informações sobre os documentos abertos, por exemplo Editar Bloquear contagem e algo sobre os dados do documento. Enumera os documentos usando o RDT <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, em seguida, chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> para cada documento para recuperar os dados de documento e de contagem de bloqueio editar. Se o documento estiver no estado pendente de inicialização, solicita os dados de documento faz com que ele seja inicializada desnecessariamente.  
+ O exemplo a seguir é um cenário de acesso do documento hipotético: Uma extensão que deseja exibir algumas informações sobre como abrir documentos do Visual Studio, por exemplo Editar Bloquear contagem e algo sobre os dados do documento. Enumera os documentos usando o RDT <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, em seguida, chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> para cada documento para recuperar os dados de documento e de contagem de bloqueio editar. Se o documento estiver no estado pendente de inicialização, solicita os dados de documento faz com que ele seja inicializada desnecessariamente.  
   
  Uma maneira mais eficiente de acessar um documento é usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> para obter a contagem de bloqueio de edição e, em seguida, use <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> para determinar se o documento foi inicializado. Se não incluir os sinalizadores <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, o documento já foi inicializado e solicita os dados de documento com <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> não faz com que qualquer inicialização desnecessária. Se os sinalizadores de incluir <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, a extensão deve evitar solicita os dados de documento até que o documento seja inicializado. Essa inicialização pode ser detectada no `OnAfterAttributeChange(Ex)` manipulador de eventos.  
   

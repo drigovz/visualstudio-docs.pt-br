@@ -1,9 +1,6 @@
 ---
-title: 'Passo a passo: Vinculação de um tipo de conteúdo para uma extensão de nome de arquivo | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Vinculando a um tipo de conteúdo para uma extensão de nome de arquivo | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926181"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Passo a passo: Vincular um tipo de conteúdo para uma extensão de nome de arquivo
 Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de nome de arquivo a ela usando as extensões do editor Managed Extensibility Framework (MEF). Em alguns casos, a extensão de nome de arquivo já está definida por um serviço de linguagem. Mas, para usá-lo com o MEF, você deve ainda vinculá-lo para um tipo de conteúdo.  
@@ -93,7 +90,7 @@ Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de 
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>Adicione o tipo de conteúdo para uma exportação de editor  
   
-1.  Crie uma extensão do editor. Por exemplo, você pode usar a extensão de glifo de margem descrita em [instruções passo a passo: criar um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Crie uma extensão do editor. Por exemplo, você pode usar a extensão de glifo de margem descrita [passo a passo: Criar um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Adicione a classe definida neste procedimento.  
   

@@ -1,9 +1,6 @@
 ---
 title: IDebugCoreServer2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce3e4c0c933527a5db754dcd96de97283e6e8260
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33347f985f1c495e61e097e04890ca6931751331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921751"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 Essa interface é usada para representar e obter informações de um servidor em um computador na rede.  
@@ -32,14 +29,14 @@ IDebugCoreServer2 : IUknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- O Visual Studio implementa essa interface para representar um servidor. Cada instância do Visual Studio cria uma instância desta interface.  
+ Visual Studio implementa essa interface para representar um servidor. Cada instância do Visual Studio cria uma instância dessa interface.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
  Um fornecedor de porta personalizada recebe essa interface em uma chamada para [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md).  
   
  Um mecanismo de depuração pode obter essa interface indiretamente por meio de uma chamada para [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) (que retorna [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md), uma interface que é derivada de `IDebugCoreServer2`).  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  A tabela a seguir mostra os métodos de `IDebugCoreServer2`.  
   
 |Método|Descrição|  
@@ -53,7 +50,7 @@ IDebugCoreServer2 : IUknown
 |[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Obtém os utilitários de máquina para uma máquina.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa interface também é usada pelo Visual Studio para procurar processos em execução em computadores na rede.  
+ Essa interface também é usada pelo Visual Studio para navegar os processos em execução em computadores na rede.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

@@ -1,9 +1,6 @@
 ---
 title: SDK do Microsoft Help Viewer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987045"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 
@@ -142,7 +139,7 @@ O corpo (sem incluir o cabeçalho e rodapé) do tópico conterá links da págin
 
 4.  Adicione um trecho de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Adicionar texto do código de idioma específico: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que `devLangnu=` permite que você insira outras linguagens. Por exemplo, `devLangnu="Fortran"` exibe Fortran quando o trecho de código DisplayLanguage = Fortran
+5.  Adicione o texto do código de idioma específico:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que `devLangnu=` permite que você insira outras linguagens. Por exemplo, `devLangnu="Fortran"` exibe Fortran quando o trecho de código DisplayLanguage = Fortran
 
 6.  Adicione links de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -283,13 +280,13 @@ F1 diagrama de fluxo:
 
 Quando a fonte de conteúdo de Ajuda do Visualizador da Ajuda padrão é definida como on-line (lançamento em navegador):
 
--   Recursos do Visual Studio Partner (VSP) emitem um valor para o recipiente F1 (prefix.keyword de recipiente da propriedade e a URL on-line para o prefixo encontrado no registro): F1 envia uma URL de VSP + parâmetros para o navegador.
+-   Recursos do Visual Studio Partner (VSP) emitem um valor para o recipiente F1 (prefix.keyword de recipiente da propriedade e a URL on-line para o prefixo encontrado no registro): F1 envia uma URL de VSP + parâmetros no navegador.
 
--   Recursos do Visual Studio (editor de linguagem, itens de menu específico do Visual Studio, etc.): F1 envia uma URL do Visual Studio para o navegador.
+-   Recursos do Visual Studio (editor de linguagem, itens de menu específico do Visual Studio, etc.):  F1 envia uma URL do Visual Studio para o navegador.
 
 Quando a fonte de conteúdo de Ajuda do Visualizador da Ajuda padrão é definida como a Ajuda local (Iniciar no Help Viewer):
 
--   Recursos VSP onde a palavra-chave correspondem entre o recipiente de propriedades de F1 e o índice de repositório local (ou seja, o prefix.keyword de recipiente da propriedade = valor localizado no índice de repositório local): F1 renderiza o tópico no Visualizador da Ajuda.
+-   Recursos VSP onde a palavra-chave correspondem entre o recipiente de propriedades de F1 e o índice de repositório local (ou seja, o prefix.keyword de recipiente da propriedade = valor localizado no índice de repositório local):  F1 renderiza o tópico no Visualizador da Ajuda.
 
 -   Recursos do Visual Studio (nenhuma opção para VSP substituir o recipiente de emissores de recursos do Visual Studio): F1 renderiza um tópico do Visual Studio no Visualizador da Ajuda.
 
@@ -325,7 +322,7 @@ Defina os seguintes valores de registro para habilitar o F1 Fallback para conte�
 
 **Namespace nativo de análise de base**
 
-Para ativar a análise de um namespace base nativo, no registro de adicionar um novo DWORD pelo nome do: BaseNativeNamespaces e defina seu valor como 1 (sob a chave de catálogo que desejam dar suporte).  Por exemplo, se você quiser usar o catálogo do Visual Studio, pode adicionar a chave para o caminho:
+Para ativar o namespace nativo de base de análise, no registro, adicione um novo DWORD pelo nome do: BaseNativeNamespaces e defina seu valor como 1 (sob a chave de catálogo que desejam dar suporte).  Por exemplo, se você quiser usar o catálogo do Visual Studio, pode adicionar a chave para o caminho:
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ Um usuário possa registrar CustomLibrary como o namespace sob a seção de parc
 
 Adicione a seguinte chave do registro e o valor:
 
-Tecla de Ajuda do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: saída de depuração de exibição do valor de varejo: Sim
+Tecla de Ajuda do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: Exibir a saída de depuração em valor de varejo: SIM
 
 No IDE, sob o item de menu de Ajuda, selecione "Depurar contexto de Ajuda"
 
@@ -374,7 +371,7 @@ A versão do Visual Studio abrange um número de diferentes produtos do Visual S
 
 Identidade visual de pacotes é instalados pelo produto que contém o Visualizador da Ajuda.  Produtos do Visual Studio:
 
--   Um pacote de marcas de fallback (Branding_\<localidade >. mshc) está instalado na raiz do aplicativo de Ajuda do visualizador 2.3 (exemplo: C:\Program Files (x86) \Microsoft Help Viewer\v2.3), o pacote de idiomas do Visualizador da Ajuda.  Isso é usado para casos em que o produto identidade visual do pacote não está instalado (nenhum conteúdo foi instalado) ou em que o pacote de marcas instalado está corrompido.  Os elementos do Visual Studio (logotipo e comentários) são ignorados quando o pacote de marcas aplicativo raiz fallback é usado.
+-   Um pacote de marcas de fallback (Branding_\<localidade >. mshc) está instalado na raiz do aplicativo de Ajuda do visualizador 2.3 (exemplo: C:\Program arquivos (x86) \Microsoft Help Viewer\v2.3), o pacote de idiomas do Visualizador da Ajuda.  Isso é usado para casos em que o produto identidade visual do pacote não está instalado (nenhum conteúdo foi instalado) ou em que o pacote de marcas instalado está corrompido.  Os elementos do Visual Studio (logotipo e comentários) são ignorados quando o pacote de marcas aplicativo raiz fallback é usado.
 
 -   Quando o conteúdo do Visual Studio é instalado do serviço do pacote de conteúdo, um pacote de marcas também é instalado (para o primeiro cenário de instalação de conteúdo de tempo).  Se houver uma atualização para o pacote de marcas, a atualização é instalada quando a próxima atualização de conteúdo ou uma ação de instalação de pacote adicionais ocorre.
 
@@ -615,7 +612,7 @@ O nome do MSHA, para fins deste primer é HelpContentSetup. msha (o nome do arqu
 
 Observação: no exemplo a implementação abaixo, incluímos o pacote de marcas. Isso é essencial para incluir a fim de obter o necessários elementos de renderização de conteúdo do Visual Studio e comportamentos de conteúdo.
 
-Arquivo HelpContentSetup msha exemplo: (substitua "nome 1 do conjunto de conteúdo" e "nome do conjunto 2" etc. com seus nomes de arquivo de conteúdo.)
+Exemplo de arquivo HelpContentSetup msha: (Substitua "nome 1 do conjunto de conteúdo" e "nome do conjunto 2" etc. com seus nomes de arquivo de conteúdo.)
 
 ```html
 <html>
@@ -725,11 +722,11 @@ Defina o repositório de conteúdo no registro. Para o Shell integrado, altere V
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   Chave: Valor de cadeia de caracteres LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   Key: Valor de cadeia de caracteres LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   Chave: Valor de cadeia de caracteres CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] documentação
+   Key: Valor de cadeia de caracteres CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentação
 
 **Criar o projeto**
 
@@ -806,7 +803,7 @@ Para testar isso como se implantado:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-EUA
 
-    Chave: Valor de cadeia de caracteres CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] documentação. Para o Shell do ISO, isso é o nome do seu catálogo.
+    Key: Valor de cadeia de caracteres CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentação. Para o Shell do ISO, isso é o nome do seu catálogo.
 
 8. Copie o conteúdo (cabs ou MSHC e MSHA) em uma pasta local.
 

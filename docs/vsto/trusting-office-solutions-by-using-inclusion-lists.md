@@ -1,9 +1,6 @@
 ---
 title: Confiar em soluções do Office usando listas de inclusão
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 819225c152c4436340714dd2f5ecb31f5ec6b2f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857660"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Confiar em soluções do Office usando listas de inclusão
   Listas de inclusão habilitar usuários para conceder confiança a soluções do Office que são assinados com um certificado que identifica o Editor. Listas de inclusão são específicas do usuário, e eles podem ser usados para personalizações no nível de documento e suplementos do VSTO.  
@@ -40,7 +37,7 @@ ms.locfileid: "38783695"
   
  Se Avisar estiver desabilitada, apenas as soluções que têm um certificado confiável e conhecido podem ser instaladas. Se o nível de solicitação é definido como Authenticode necessária, a solução deve ser assinada com um certificado de uma autoridade conhecido, mas ele não requer um certificado que se encadeie a uma autoridade raiz confiável (um certificado confiável). Se o prompt é permitido, a solução poderia ser assinada com um certificado com uma identidade desconhecido. Nesse cenário, a decisão de confiança é adiada para o usuário final e um certificado temporário seria suficiente para instalar uma solução.  
   
- Para obter mais informações, consulte [como: configurar a segurança da lista de inclusões](../vsto/how-to-configure-inclusion-list-security.md) e a tabela 2, intitulada solicitando que nível de registro chave valor iniciar efeitos, na [editores confiáveis do ClickOnce configurar](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Para obter mais informações, confira [Como: Configurar a segurança da lista de inclusões](../vsto/how-to-configure-inclusion-list-security.md) e a tabela 2, intitulada solicitando que nível de registro chave valor iniciar efeitos, na [editores confiáveis do ClickOnce configurar](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="structure-of-the-inclusion-list"></a>Estrutura da lista de inclusão  
  Uma entrada da lista de inclusão válido tem duas partes: um caminho para o manifesto de implantação e a chave pública usada para assinar a solução. Depois que uma solução é adicionada à lista de inclusão, ele é considerado confiável. Quando a solução do Office é executado, o aplicativo do Office compara a chave pública na lista de inclusão com a chave de assinatura no manifesto de implantação para verificar se a solução que está sendo executado é o mesmo que a versão original de confiável.  
@@ -48,5 +45,3 @@ ms.locfileid: "38783695"
 ## <a name="see-also"></a>Consulte também  
  [Conceder confiança a soluções do Office](../vsto/granting-trust-to-office-solutions.md)   
  [Proteger as soluções do Office](../vsto/securing-office-solutions.md)  
-  
-  

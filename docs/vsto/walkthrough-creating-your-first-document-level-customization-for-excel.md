@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Criar a primeira personalização no nível de documento para Excel'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955312"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Passo a passo: Criar a primeira personalização no nível de documento para Excel
   Este passo a passo introdutório mostra como criar uma personalização no nível de documento do Microsoft Office Excel. Os recursos que você criar nesse tipo de solução estão disponíveis somente quando uma pasta de trabalho específica é aberta. Você não pode usar uma personalização no nível de documento para fazer alterações em todo o aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer pasta de trabalho é aberta.  
@@ -155,19 +152,19 @@ ms.locfileid: "49849028"
 ## <a name="next-steps"></a>Próximas etapas  
  Agora que você criou uma personalização no nível de documento básica para Excel, você pode aprender mais sobre como desenvolver as personalizações com estes tópicos:  
   
--   Tarefas gerais de programação que você pode executar personalizações no nível do documento: [personalizações no nível de documento do programa](../vsto/programming-document-level-customizations.md).  
+-   Tarefas de programação gerais que você pode executar personalizações no nível do documento: [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md).  
   
--   Tarefas de programação que são específicas para personalizações no nível de documento para Excel: [soluções do Excel](../vsto/excel-solutions.md).  
+-   Tarefas de programação que são específicas para personalizações no nível de documento para Excel: [Soluções do Excel](../vsto/excel-solutions.md).  
   
--   Usando o modelo de objeto do Excel: [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).  
+-   Usando o modelo de objeto do Excel: [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).  
   
--   Personalizando a interface do usuário do Excel, por exemplo, pela adição de uma guia personalizada à faixa de opções ou criando seu próprio painel de ações: [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).  
+-   Personalizando a interface do usuário do Excel, por exemplo, adicionando uma guia personalizada à faixa de opções ou criando seu próprio painel de ações: [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md).  
   
--   Usando objetos estendidos do Excel fornecidos pelas ferramentas de desenvolvimento do Office no Visual Studio para executar tarefas que não são possíveis por meio do modelo de objeto do Excel (por exemplo, hospedagem de controles gerenciados em documentos e associando controles do Excel a dados usando os formulários do Windows modelo de ligação de dados): [automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md).  
+-   Usando objetos estendidos do Excel fornecidos pelas ferramentas de desenvolvimento do Office no Visual Studio para executar tarefas que não são possíveis por meio do modelo de objeto do Excel (por exemplo, hospedagem de controles gerenciados em documentos e associando controles do Excel a dados usando os formulários do Windows modelo de associação de dados): [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md).  
   
--   Compilar e depurar as personalizações no nível de documento para Excel: [soluções do Office compilar](../vsto/building-office-solutions.md).  
+-   Compilar e depurar personalizações no nível de documento para Excel: [Compilar soluções do Office](../vsto/building-office-solutions.md).  
   
--   Implantação de personalizações no nível de documento para Excel: [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
+-   Implantando as personalizações no nível de documento para Excel: [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -179,5 +176,3 @@ ms.locfileid: "49849028"
  [Compilar soluções do Office](../vsto/building-office-solutions.md)   
  [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)   
  [Visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md)  
-  
-  

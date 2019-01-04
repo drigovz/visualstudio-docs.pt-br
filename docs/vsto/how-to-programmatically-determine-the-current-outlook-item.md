@@ -1,9 +1,6 @@
 ---
-title: 'Como: determinar o item atual do Outlook de forma programática'
-ms.custom: ''
+title: 'Como: Determinar o item atual do Outlook de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 519fd1572b3ebb1faf8cc7adc6d5a9ba2773d67b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 93d1d565664e9851310e9138fef7f6d14041c865
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945945"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Como: determinar o item atual do Outlook de forma programática
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Como: Determinar o item atual do Outlook de forma programática
   Este exemplo usa o `Explorer.SelectionChange` evento para exibir o nome da pasta atual e algumas informações sobre o item selecionado. O código, em seguida, exibe o item selecionado.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -41,7 +38,5 @@ ms.locfileid: "35257032"
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral de modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md)   
- [Como: recuperar uma pasta por nome de forma programática](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Como: pesquisar um contato específico de forma programática](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
-  
-  
+ [Como: Recuperar uma pasta por nome de forma programática](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Como: Pesquisar um contato específico de forma programática](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  

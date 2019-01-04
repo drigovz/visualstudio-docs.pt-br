@@ -1,13 +1,8 @@
 ---
 title: Instruções passo a passo de desenvolvimento do SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8285f6ef3a3ae01681a646c6ce46023ce2c3a8a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c01f9f07b9d6d0bc962592a370fe2d2104ad2a5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945841"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Instruções passo a passo de desenvolvimento do SharePoint
   As instruções a seguir demonstra como desenvolver e implantar soluções do SharePoint usando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -40,8 +35,8 @@ ms.locfileid: "37118443"
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Instruções passo a passo: importar um fluxo de trabalho reutilizável do designer do SharePoint para o Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Demonstra como importar um fluxo de trabalho reutilizável criado no SharePoint Designer 2010 em um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o projeto de fluxo de trabalho do SharePoint.|  
-|[Instruções passo a passo: importar itens de um site existente do SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Demonstra como importar itens de um site do SharePoint existente para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.|  
+|[Passo a passo: Importar um fluxo de trabalho reutilizável do SharePoint Designer no Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Demonstra como importar um fluxo de trabalho reutilizável criado no SharePoint Designer 2010 em um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o projeto de fluxo de trabalho do SharePoint.|  
+|[Passo a passo: Importar itens de um Site do SharePoint existente](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Demonstra como importar itens de um site do SharePoint existente para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.|  
   
 ## <a name="web-parts"></a>Partes da Web
   
@@ -95,9 +90,8 @@ ms.locfileid: "37118443"
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Passo a passo: Estenda o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Demonstra como adicionar novos nós para exibir Web Parts em sites do SharePoint que são exibidos no Gerenciador de servidores. Este passo a passo também demonstra como criar um comando do SharePoint para chamar o modelo de objeto de servidor do SharePoint.|  
-|[Passo a passo: Chamar o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Demonstra como adicionar novos nós para exibir Web Parts em sites do SharePoint que são exibidos no Gerenciador de servidores. Este passo a passo também demonstra como usar o modelo de objeto de cliente do SharePoint.|  
+|[Passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Demonstra como adicionar novos nós para exibir Web Parts em sites do SharePoint que são exibidos no Gerenciador de servidores. Este passo a passo também demonstra como criar um comando do SharePoint para chamar o modelo de objeto de servidor do SharePoint.|  
+|[Passo a passo: Chame o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Demonstra como adicionar novos nós para exibir Web Parts em sites do SharePoint que são exibidos no Gerenciador de servidores. Este passo a passo também demonstra como usar o modelo de objeto de cliente do SharePoint.|  
   
 ## <a name="see-also"></a>Consulte também
  [Exemplos de desenvolvimento do SharePoint e instruções passo a passo](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: Anatomia de um pacote VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921478"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia de um pacote VSIX
 Um pacote VSIX é um *VSIX* arquivo que contém um ou mais extensões do Visual Studio, junto com os metadados do Visual Studio usa para classificar e instalar as extensões. Se os metadados está contido no manifesto do VSIX e o *[Content_Types]. XML* arquivo. Um pacote VSIX também pode conter um ou mais *Extension.vsixlangpack* arquivos para fornecer localizado texto da instalação e pode conter outros pacotes VSIX para instalar dependências.  
@@ -60,4 +57,4 @@ Um pacote VSIX é um *VSIX* arquivo que contém um ou mais extensões do Visual 
 ## <a name="contenttypesxml"></a>[Content_Types]. XML  
  O *[Content_Types]. XML* arquivo identifica os tipos de arquivo expandido *VSIX* arquivo. Visual Studio usa esse arquivo durante a instalação do pacote, mas não instala o arquivo propriamente dito. Para obter mais informações sobre esse arquivo, consulte [a estrutura do arquivo [Content_types]. XML](the-structure-of-the-content-types-dot-xml-file.md).  
   
- Um *[Content_Types]. XML* arquivo é exigido pelo padrão Open Packaging Conventions (OPC). Para obter mais informações sobre OPC, consulte [OPC: um novo padrão para empacotar dados](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) no site do MSDN.
+ Um *[Content_Types]. XML* arquivo é exigido pelo padrão Open Packaging Conventions (OPC). Para obter mais informações sobre OPC, consulte [OPC: Um novo padrão para empacotar dados](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) no site do MSDN.
