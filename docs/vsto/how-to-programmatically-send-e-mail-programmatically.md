@@ -1,9 +1,6 @@
 ---
-title: 'Como: enviar email'
-ms.custom: ''
+title: 'Como: Enviar email'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32977852ffbc4bb1411ed699cc97bb54035fada4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 91e59cc8d7bd0115a59c71f13e8e2dc200336b29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840415"
 ---
-# <a name="how-to-programmatically-send-email"></a>Como: enviar email  
+# <a name="how-to-programmatically-send-email"></a>Como: Enviar email  
   Este exemplo envia uma mensagem de email para contatos que têm o nome de domínio **exemplo.com** em seus endereços de email.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -43,8 +40,6 @@ ms.locfileid: "35670714"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com itens de email](../vsto/working-with-mail-items.md)   
- [Como: criar programaticamente um item de email](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Como: acessar contatos do Outlook de forma programática](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Como: executar ações programaticamente quando uma mensagem de email é recebida](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
-  
-  
+ [Como: Criar um item de email de forma programática](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
+ [Como: Acessar os contatos do Outlook de forma programática](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Como: Executar ações programaticamente quando uma mensagem de email é recebida](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  

@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame2::EnumProperties | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2::EnumProperties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a15929623805f4f9167112de1b780ce9d971380
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62be5aceeae9df198b07969c7d44c0927b5d4825
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986330"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Cria um enumerador para as propriedades associadas com o quadro de pilha, como variáveis locais.  
@@ -28,7 +25,7 @@ Cria um enumerador para as propriedades associadas com o quadro de pilha, como v
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT EnumProperties (   
+HRESULT EnumProperties (   
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,  
    UINT                      nRadix,  
    REFIID                    refiid,  
@@ -39,7 +36,7 @@ HRESULT EnumProperties (
 ```  
   
 ```csharp  
-int EnumProperties (   
+int EnumProperties (   
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,  
    uint                        nRadix,  
    ref Guid                    refiid,  

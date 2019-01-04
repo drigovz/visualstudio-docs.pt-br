@@ -1,13 +1,8 @@
 ---
 title: Compilando e depurando soluções do SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987188"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Compilar e depurar soluções do SharePoint
   Em geral, compilando e depurando soluções do SharePoint é o mesmo que a compilação e depuração de outros tipos de projetos em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Os tópicos nesta seção explicam as diferenças que existem.  
@@ -39,7 +34,7 @@ ms.locfileid: "44283529"
 |Arquivos intermediários do pacote.|*\<ProjectName > \pkgobj\debug* ou  *\<ProjectName > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>Criar soluções do SharePoint
- Para criar soluções do SharePoint, o computador de desenvolvimento deve ter a versão correta do SharePoint server instalado. Caso contrário, a criação de soluções do SharePoint é o mesmo que compilar outros tipos de projetos em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [como: soluções de SharePoint compilar](../sharepoint/how-to-build-sharepoint-solutions.md).  
+ Para criar soluções do SharePoint, o computador de desenvolvimento deve ter a versão correta do SharePoint server instalado. Caso contrário, a criação de soluções do SharePoint é o mesmo que compilar outros tipos de projetos em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, confira [Como: Criar soluções do SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>Depurar e testar soluções do SharePoint
  Antes de depurar, [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] copia o *. wsp* pacote ao servidor do SharePoint, ativa o Site e os recursos no escopo da Web e, em alguns casos, inicia o projeto. Em outros casos, talvez você precise abrir o projeto manualmente. Para obter mais informações, consulte [soluções do SharePoint solucionar](../sharepoint/troubleshooting-sharepoint-solutions.md) e [soluções do SharePoint depurar](../sharepoint/debugging-sharepoint-solutions.md).  
@@ -57,5 +52,3 @@ ms.locfileid: "44283529"
  [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Procurar conexões do SharePoint usando o Gerenciador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
- 

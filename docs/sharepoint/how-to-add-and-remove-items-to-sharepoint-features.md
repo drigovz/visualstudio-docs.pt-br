@@ -1,15 +1,10 @@
 ---
-title: 'Como: adicionar e remover itens de recursos do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar e remover itens de recursos do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964011"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Como: adicionar e remover itens de recursos do SharePoint
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Como: Adicionar e remover itens de recursos do SharePoint
   Quando você cria uma solução do SharePoint, o Visual Studio adiciona os itens de projeto do SharePoint padrão para seu recurso. Antes da implantação, você pode adicionar e remover itens de projeto do SharePoint para modificar o recurso do SharePoint.  
   
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>Adicionar itens de projeto do SharePoint para um recurso  
@@ -35,7 +30,7 @@ ms.locfileid: "49854826"
   
 1. Abra o Designer de recursos.  
   
-    Para obter mais informações, consulte [como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Para obter mais informações, confira [Como: Personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 2. Adicionar um ou mais itens do **itens na solução** listar para o **itens no recurso** lista executando uma ou mais das seguintes etapas:  
   
@@ -60,4 +55,3 @@ ms.locfileid: "49854826"
 ## <a name="see-also"></a>Consulte também
  [Criar recursos do SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

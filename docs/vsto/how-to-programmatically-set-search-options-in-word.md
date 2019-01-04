@@ -1,9 +1,6 @@
 ---
-title: 'Como: definir programaticamente as opções de pesquisa no Word'
-ms.custom: ''
+title: 'Como: Definir programaticamente as opções de pesquisa no Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec5b2f797371d19fea1b4fedc2064ab355ffac10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853379"
 ---
-# <a name="how-to-programmatically-set-search-options-in-word"></a>Como: definir programaticamente as opções de pesquisa no Word
+# <a name="how-to-programmatically-set-search-options-in-word"></a>Como: Definir programaticamente as opções de pesquisa no Word
   Há duas maneiras de definir opções de pesquisa para seleções em documentos do Microsoft Office Word:  
   
 - Definir propriedades individuais de um <xref:Microsoft.Office.Interop.Word.Find> objeto.  
@@ -56,8 +53,6 @@ ms.locfileid: "49853930"
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: programaticamente, pesquisar e substituir texto em documentos](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Como: executar um loop por meio de itens encontrados em documentos programaticamente](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Como: programaticamente restaurar seleções após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)  
-  
-  
+ [Como: Programaticamente, pesquisar e substituir texto em documentos](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [Como: Executar um loop por meio de itens encontrados em documentos programaticamente](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Como: Por meio de programação restaurar seleções após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)  

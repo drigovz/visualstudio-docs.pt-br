@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Coletar dados usando um formulário do Windows'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e9b73671a8c4b03c33169739ea8fd02b486568
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926601"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Passo a passo: Coletar dados usando um formulário do Windows
   Este passo a passo demonstra como abrir um formulário do Windows de uma personalização no nível de documento do Microsoft Office Excel, coletar informações do usuário e grave essas informações em uma célula de planilha.  
@@ -94,7 +91,7 @@ ms.locfileid: "49900469"
 2. No <xref:Microsoft.Office.Tools.Excel.Workbook.Open> manipulador de eventos do `ThisWorkbook`, adicione o seguinte código para declarar uma variável para o formulário `GetInputString` e, em seguida, mostrar o formulário.  
   
    > [!NOTE]  
-   >  No c#, você deve adicionar um manipulador de eventos como mostra a <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> evento abaixo. Para obter informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   >  No c#, você deve adicionar um manipulador de eventos como mostra a <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> evento abaixo. Para obter informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
@@ -146,5 +143,3 @@ ms.locfileid: "49900469"
  [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)   
  [Instruções passo a passo usando o Word](../vsto/walkthroughs-using-word.md)   
  [Instruções passo a passo usando o Excel](../vsto/walkthroughs-using-excel.md)  
-  
-  

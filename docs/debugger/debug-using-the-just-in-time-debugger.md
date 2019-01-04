@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562055"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador Just-in-no Visual Studio
 
@@ -36,13 +36,13 @@ Depuração Just-In-Time funciona para aplicativos de desktop do Windows. Ele n�
 
 Você pode configurar a depuração do Visual Studio Just-In-Time **ferramentas** > **opções** (ou **depurar** > **opções**) caixa de diálogo. 
 
-**Para habilitar ou desabilitar Just-In-Time a depuração:**
+**Para habilitar ou desabilitar a depuração Just-In-Time:**
 
 1. Sobre o **ferramentas** ou **Debug** menu, selecione **opções** > **depuração**  >   **Just-In-Time**.
 
    ![Habilitar ou desabilitar a depuração JIT](../debugger/media/dbg-jit-enable-or-disable.png "habilitar ou desabilitar a depuração JIT")
 
-1. No **just-in-habilitar a depuração para esses tipos de código** , selecione os tipos de código de depuração para depuração Just-In-Time: **gerenciado**, **nativo**, e/ou  **Script**.
+1. No **just-in-habilitar a depuração para esses tipos de código** , selecione os tipos de código de depuração para depuração Just-In-Time: **Managed**, **nativo**, e/ou **Script**.
    
 1. Selecione **OK**.
 
@@ -52,7 +52,7 @@ Se você habilitar o Just-In-Time depurador, mas ele não abrir quando um aplica
 
 A depuração Just-In-Time ainda poderá ser habilitada, mesmo que o Visual Studio não esteja mais instalado no seu computador. Se o Visual Studio não estiver instalado, você pode desabilitar a depuração, editando o registro do Windows Just-In-Time.
 
-**Para desativar a edição do registro de depuração Just-In-Time:**
+**Para desabilitar a depuração Just-In-Time editando o Registro:**
 
 1.  De que o Windows **inicie** menu, execute o **Editor do registro** (*regedit.exe*).
 
@@ -124,7 +124,7 @@ Neste exemplo, você fará uma C# aplicativo de console no Visual Studio que lan
    >[!NOTE]
    >- Escolher **depurar** configuração para a experiência de depuração completa. 
    >- Se você selecionar [Release](../debugger/how-to-set-debug-and-release-configurations.md) configuração, você deve desligar [Just My Code](../debugger/just-my-code.md) para este procedimento trabalhar. Sob **ferramentas** > **opções** > **depuração**, cancele a seleção **habilitar apenas meu código**.
-   Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).
+   Para saber mais sobre configurações de build, veja [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).
    
 1. Abra o aplicativo compilado *ThrowsNullException.exe* em seu C# pasta do projeto (*...\ThrowsNullException\ThrowsNullException\bin\Debug* ou *...\ThrowsNullException\ ThrowsNullException\bin\Release*). 
    
@@ -161,7 +161,7 @@ Se Just-In-Time de depuração não foi iniciada quando um aplicativo falha, mes
 
   - **Relatório de erros do HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
     
-  - (Para computadores de 64 bits): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows relatório de erros**
+  - (Para computadores de 64 bits): **Relatório de erros do HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
   
   Para obter mais informações, consulte [. Configurações WER](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
   
@@ -176,13 +176,13 @@ Se Just-In-Time de depuração não foi iniciada quando um aplicativo falha, mes
 
 Você pode ver as seguintes mensagens de erro durante Just-In-Time de depuração:
 
-- **Não é possível anexar ao processo de travamento. O programa especificado não é um programa do Windows ou MS-DOS.**
+- **Não é possível se anexar ao processo de travamento. O programa especificado não é um programa do Windows ou do MS-DOS.**
 
     O depurador tentou anexar a um processo em execução em outro usuário.
 
     Para contornar esse problema, no Visual Studio, abra **Debug** > **anexar ao processo**e localize o processo que você deseja depurar no **processos disponíveis** lista. Se você não souber o nome do processo, localizar a ID de processo na **depurador do Visual Studio Just-in-** caixa de diálogo. Selecione o processo na **processos disponíveis** lista e, em seguida, selecione **Attach**. Selecione **não** para ignorar o Just-In-Time caixa de diálogo do depurador.
 
-- **Não foi possível iniciar o depurador porque nenhum usuário está conectado.**
+- **Não foi possível iniciar o depurador porque não há usuário conectado.**
 
     Não há nenhum usuário conectado ao console, portanto, não há nenhuma sessão de usuário para exibir o Just-In-Time caixa de diálogo de depuração.
 
@@ -196,6 +196,6 @@ Você pode ver as seguintes mensagens de erro durante Just-In-Time de depuraçã
 
 ## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)
-- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Opções, depuração, Just-In-Time caixa de diálogo](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Aviso de segurança Anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

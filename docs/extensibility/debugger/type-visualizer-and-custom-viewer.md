@@ -1,9 +1,6 @@
 ---
 title: Tipo de visualizador e o visualizador personalizado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5cf2cc9c8f89ed0ecc7935f9afa8e096f05a840
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 0879d18922e730d9cd737bdefde52576b6b03638
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948557"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizador de tipo e visualizador personalizado
 Um visualizador de tipo é um componente que exibe uma parte dos dados em um formato específico. O formato é totalmente até que implementa o visualizador, seja o usuário final ou um fornecedor de terceiros dos visualizadores.  

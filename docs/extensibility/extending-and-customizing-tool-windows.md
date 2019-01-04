@@ -1,9 +1,6 @@
 ---
 title: Estendendo e personalizando a ferramenta Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11485e830d1b7bcef851a50225e15f351e64f3e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949827"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Estender e personalizar janelas de ferramentas
 Visual Studio fornece vários tipos diferentes do windows, por exemplo, janelas de ferramentas, janelas de documentos e janelas de diálogo. Outras janelas, como o **propriedades** janela, o **saída** janela e o **lista de tarefas** janela, são tipos de janelas de ferramentas.  
@@ -39,9 +36,9 @@ Visual Studio fornece vários tipos diferentes do windows, por exemplo, janelas 
   
  Painéis de janela de ferramenta podem hospedar controles de usuário do WPF e barras de ferramentas de suporte. Você pode substituir o <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> propriedade para retornar o identificador do controle hospedado.  
   
- Você pode adicionar muitos recursos diferentes para as janelas de ferramentas. Por exemplo, você pode adicionar uma barra de ferramentas: [adicionar uma barra de ferramentas para uma janela de ferramentas](../extensibility/adding-a-toolbar-to-a-tool-window.md) ou um menu de atalho: [adicionar um menu de atalho em uma janela de ferramenta](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Você pode adicionar um controle de pesquisa que permite que você pesquise itens dentro de sua janela de ferramentas: [Adicionar pesquisa a uma janela de ferramenta](../extensibility/adding-search-to-a-tool-window.md).  
+ Você pode adicionar muitos recursos diferentes para as janelas de ferramentas. Por exemplo, você pode adicionar uma barra de ferramentas: [Adicionar uma barra de ferramentas para uma janela de ferramenta](../extensibility/adding-a-toolbar-to-a-tool-window.md) ou um menu de atalho: [Adicionar um menu de atalho em uma janela de ferramenta](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Você pode adicionar um controle de pesquisa que permite que você pesquise itens dentro de sua janela de ferramentas: [Adicionar pesquisa a uma janela de ferramentas](../extensibility/adding-search-to-a-tool-window.md).  
   
- Você pode assinar eventos de janela de ferramenta: [assinar um evento](../extensibility/subscribing-to-an-event.md).  
+ Você pode assinar eventos de janela de ferramenta: [Assinar um evento](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extend-existing-tool-windows"></a>Estender as janelas de ferramentas existente  
  Você pode adicionar informações sobre sua janela de ferramentas para um novo **opções** página e uma nova configuração na **propriedades** página, escreva para o **lista de tarefas** e **saída**  windows. Para obter mais informações, consulte [estender as janelas de propriedades, lista de tarefas, saída e as opções](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) e [estender as janelas de propriedades, lista de tarefas, saída e opções](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  

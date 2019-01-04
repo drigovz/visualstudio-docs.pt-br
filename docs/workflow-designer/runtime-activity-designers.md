@@ -1,21 +1,20 @@
 ---
-title: Designer de fluxo de trabalho - Designers de atividade de tempo de execução
+title: Designer de fluxo de trabalho – Designers de atividade de tempo de execução
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a519e59538501ceb9f698c89cb2f0c762c08fcd3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29c78049fb36c0eae08054b0e8b78bd8957476c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829966"
 ---
 # <a name="runtime-activity-designers"></a>Designer de atividade do tempo de execução
 Os designers de atividade de tempo de execução são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar os designers de atividade do Designer de fluxo de trabalho.
@@ -25,7 +24,7 @@ Os designers de atividade de tempo de execução são usados para persistir e fi
 
  [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 
- [Sistema de mensagens](../workflow-designer/messaging-activity-designers.md)
+ [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
  [Primitives](../workflow-designer/primitives-activity-designers.md)
 

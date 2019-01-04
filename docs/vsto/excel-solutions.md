@@ -1,9 +1,6 @@
 ---
 title: Soluções do Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856846"
 ---
 # <a name="excel-solutions"></a>Soluções do Excel
   Visual Studio fornece modelos de projeto, que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Excel. Você pode usar essas soluções para automatizar o Excel, estender os recursos do Excel e personalizar a interface de usuário (IU) do Excel. Para obter mais informações sobre as diferenças entre personalizações no nível de documento e suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -122,4 +119,3 @@ ms.locfileid: "53647939"
 | [Passo a passo: Adicionar controles a uma planilha em tempo de execução no projeto do suplemento do VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Demonstra como adicionar um botão dos Windows Forms, um <xref:Microsoft.Office.Tools.Excel.NamedRange>e um <xref:Microsoft.Office.Tools.Excel.ListObject> para uma planilha em tempo de execução usando um suplemento do VSTO. |
 | [Entender a coautoria e suplementos](./understanding-coauthoring-and-addins.md) | Descreve os ajustes que talvez você precise fazer suas soluções para acomodar a coautoria. |
 | [Excel 2010 no desenvolvimento do Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Fornece links para artigos e documentação de referência sobre como desenvolver soluções do Excel. Esses não são específicas para desenvolvimento do Office usando o Visual Studio. |
-

@@ -1,15 +1,10 @@
 ---
-title: 'Como: adicionar uma entidade a um modelo | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar uma entidade a um modelo | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - EntityTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 347728ac4f096359f06ca7823adfcd1b25ff527a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964024"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>Como: adicionar uma entidade a um modelo
+# <a name="how-to-add-an-entity-to-a-model"></a>Como: Adicionar uma entidade a um modelo
   Para criar uma entidade, adicione um controle de entidade do Visual Studio **caixa de ferramentas** para o designer de conectividade de dados comerciais (BDC).  
   
 ### <a name="to-add-an-entity-to-the-model"></a>Para adicionar uma entidade no modelo  
@@ -53,10 +48,8 @@ ms.locfileid: "36757695"
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
 ## <a name="see-also"></a>Consulte também
- [Como: adicionar um método Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Como: adicionar um método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Como: adicionar um método Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Como: adicionar um método Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Como: adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)  
-  
- 
+ [Como: Adicionar um método Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Como: Adicionar um método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Como: Adicionar um método Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Como: Adicionar um método Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Como: Adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)  

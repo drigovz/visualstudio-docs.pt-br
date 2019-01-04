@@ -1,9 +1,6 @@
 ---
-title: 'Como: adicionar marcadores de texto padrão | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar marcadores de texto padrão | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dd34b14b89c78d01f1d4acab57f33014860d7ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874622"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Como: adicionar marcadores de texto padrão
+# <a name="how-to-add-standard-text-markers"></a>Como: Adicionar marcadores de texto padrão
 Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão fornecidos com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo.  
   
 ## <a name="to-create-a-text-marker"></a>Para criar um marcador de texto  
@@ -51,6 +48,6 @@ Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão
   
 ## <a name="see-also"></a>Consulte também  
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Como: implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)   
- [Como: criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+ [Como: Implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)   
+ [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
+ [Como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

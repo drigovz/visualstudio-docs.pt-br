@@ -1,9 +1,6 @@
 ---
-title: Propriedades e métodos estendidos por projeto subtipos | Microsoft Docs
-ms.custom: ''
+title: Propriedades e métodos estendidos por subtipos do projeto | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, extended methods
@@ -14,42 +11,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23510ffbb42e0c0c37c07e0ee80ae15f99e5df00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e325e7cb352592903d869c158e72b766a657ff08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873399"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propriedades e métodos estendidos por subtipos de projeto
-Um subtipo de projeto tem uma grande quantidade de energia para influenciar o comportamento do projeto porque ele é criado como um agregador de um projeto de base. Esta seção resume alguns dos recursos que podem ser aprimorados ou modificados por subtipos de projeto.  
+Um subtipo de projeto tem uma grande quantidade de energia para influenciar o comportamento do projeto porque ele é criado como um agregador de um projeto de base. Esta seção resume alguns dos recursos que podem ser aprimorados ou modificados por subtipos do projeto.  
   
 ## <a name="features-gained-by-aggregation"></a>Recursos obtidos pela agregação  
- A tabela a seguir resume a muitos dos métodos de agregação permite que os subtipos de projeto substituir em projetos de base.  
+ A tabela a seguir resume a muitos dos métodos que permite a agregação subtipos do projeto substituir em projetos de base.  
   
-|Métodos substituídos pela agregação|Subtipo de projeto|  
+|Métodos substituídos por agregação|Subtipo de projeto|  
 |---------------------------------------|---------------------|  
-|De <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetGuidProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetGuidProperty%2A>|Permite que um subtipo de projeto para<br /><br /> -Altere a legenda e o ícone do nó do projeto.<br />-Substituir o projeto completamente `Browse` objeto.<br />-Controle se o projeto pode ser renomeado.<br />-Ordem de classificação control.<br />-Contexto de usuário de controle para obter ajuda dinâmica.|  
+|De <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetGuidProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetGuidProperty%2A>|Permite que um subtipo de projeto para<br /><br /> -Alterar a legenda e o ícone do nó do projeto.<br />-Substituir o projeto completamente `Browse` objeto.<br />-Controla se o projeto pode ser renomeado.<br />-Controle de ordem de classificação.<br />-O contexto de usuário control para obter ajuda dinâmica.|  
 |De <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetItemContext%2A>|Permite que um subtipo de projeto controlar quais serviços contextuais são fornecidos para designers e editores.|  
-|De <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>|Permite que um subtipo de projeto para<br /><br /> -Participe de roteamento de comando para comandos do projeto.<br />-Adicionar, remover ou desabilitar comandos de ambiente de projeto e comandos ativos do Gerenciador de soluções.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>|Habilita o subtipo de projeto filtrar o que o usuário vê no **Adicionar Novo Item** caixa de diálogo.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGeneratorFactory>|Permite que um subtipo de projeto para<br /><br /> -Determine o gerador de padrão fornecido a uma extensão de arquivo.<br />-Mapear um nome de gerador legível humana para um objeto COM.|  
+|De <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>|Permite que um subtipo de projeto para<br /><br /> -Participe de roteamento de comando para comandos de projeto.<br />-Adicionar, remover ou desabilitar os comandos de ambiente de projeto e comandos ativos do Gerenciador de soluções.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>|Permite que o subtipo de projeto filtrar o que o usuário vê na **Adicionar Novo Item** caixa de diálogo.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGeneratorFactory>|Permite que um subtipo de projeto para<br /><br /> -Determine o gerador de padrão, dado uma extensão de arquivo.<br />-Mapear um nome de gerador legível por humanos para um objeto COM.|  
   
-## <a name="properties-used-by-project-subtypes"></a>Propriedades usadas pelo projeto subtipos  
+## <a name="properties-used-by-project-subtypes"></a>Propriedades usadas por subtipos do projeto  
  O sistema de projeto base e o ambiente pode usar as propriedades de <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID> e <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> enumerações detalhadas na tabela a seguir para habilitar um subtipo de projeto controlar vários recursos do sistema de projeto.  
   
 |Propriedade VSHPROPID|Subtipo de projeto|  
 |------------------------|---------------------|  
-|`AddItemTemplatesGuid`|Permite que um subtipo de projeto controlar o conteúdo do **Adicionar Item** caixa de diálogo. O subtipo de projeto pode fornecer uma nova especificação de pastas de modelo, adicionar novos tipos de itens, remover itens existentes e reorganizar um subconjunto de itens do projeto base **Adicionar Item** caixa de diálogo.|  
+|`AddItemTemplatesGuid`|Permite que um subtipo de projeto controlar o conteúdo a **Adicionar Item** caixa de diálogo. O subtipo de projeto pode fornecer uma nova especificação de diretórios de modelo, adicionar novos tipos de itens, remover itens existentes e reorganizar um subconjunto dos itens do projeto base **Adicionar Item** caixa de diálogo.|  
 |`PropertyPagesCLSIDList`|Permite que um subtipo de projeto Adicionar ou remover páginas de propriedades de configuração independente.|  
 |`CfgPropertyPagesCLSIDList`|Permite que um subtipo de projeto Adicionar ou remover páginas de propriedades de configuração dependente.|  
-|`ExtObjectCATID`|Permite que um subtipo de projeto fornecer um extensor de automação para o projeto ou item objetos Conhecendo o CATID de extensor. Por exemplo, um subtipo de projeto pode fornecer um personalizado `Project.Extender("<subtype>")` objeto.|  
-|`BrowseObjectCATID`|Permite que um subtipo de projeto fornecer um extensor de automação para o `Browse` objeto Conhecendo o CATID de extensor. Por exemplo, um subtipo de projeto pode adicionar propriedades adicionais para o <xref:EnvDTE.Project.Properties%2A> coleção.|  
-|`CfgBrowseObjectCATID`|Permite que um subtipo de projeto fornecer um extensor de automação para o objeto de procura de configuração de projeto. Por exemplo, um subtipo de projeto pode adicionar propriedades adicionais para o <xref:EnvDTE.Configuration.Properties%2A> coleção.|  
+|`ExtObjectCATID`|Permite que um subtipo de projeto fornecer um extensor de automação para o projeto ou objetos de item ao conhecer o CATID do extensor. Por exemplo, um subtipo de projeto pode fornecer um personalizado `Project.Extender("<subtype>")` objeto.|  
+|`BrowseObjectCATID`|Permite que um subtipo de projeto fornecer um extensor de automação para o `Browse` objeto Conhecendo o CATID do extensor. Por exemplo, um subtipo de projeto pode adicionar propriedades extras para o <xref:EnvDTE.Project.Properties%2A> coleção.|  
+|`CfgBrowseObjectCATID`|Permite que um subtipo de projeto fornecer um extensor de automação para o objeto de procura de configuração do projeto. Por exemplo, um subtipo de projeto pode adicionar propriedades extras para o <xref:EnvDTE.Configuration.Properties%2A> coleção.|  
 |`CfgExtObjectCATID`|Permite que um subtipo de projeto fornecer um extensor de automação para o objeto de configuração.|  
 |`DefaultPlatformName`|Permite que um subtipo de projeto determinar o nome da plataforma para objetos de configuração do projeto.|  
   
- O projeto base fornece uma implementação padrão das propriedades acima. O projeto base obtém essas chamando `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> no subtipo de projeto mais externo, permitindo o subtipo de projeto substituir a implementação das propriedades.  
+ O projeto base fornece uma implementação padrão das propriedades acima. O projeto base obtém essas chamando `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> no subtipo de projeto mais externo, permitindo assim que o subtipo de projeto substituir a implementação das propriedades.  
   
 ## <a name="see-also"></a>Consulte também  
  [Design de subtipos de projeto](../../extensibility/internals/project-subtypes-design.md)

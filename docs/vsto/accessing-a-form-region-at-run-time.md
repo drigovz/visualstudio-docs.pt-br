@@ -1,8 +1,6 @@
 ---
 title: Acessar uma região de formulário em tempo de execução
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 82f613711d1d95b271bd0d1ca558b193a1aa90cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875427"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Acessar uma região de formulário em tempo de execução
 
@@ -71,17 +69,17 @@ ms.locfileid: "52304474"
 
  Para habilitar o acesso a um controle de fora o arquivo de código de região do formulário, crie uma propriedade no arquivo de código de região de formulário para retornar o controle.  
 
- Para obter mais informações sobre como criar propriedades no C#, consulte [como: declarar e usar ler gravar propriedades &#40;C&#35; guia de programação do&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
+ Para obter mais informações sobre como criar propriedades em c#, consulte [como: Declare e use ler gravar propriedades &#40;C&#35; guia de programação do&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
 
- Para obter mais informações sobre como criar propriedades no Visual Basic, consulte [como: criar uma propriedade (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
+ Para obter mais informações sobre como criar propriedades no Visual Basic, consulte [como: Criar uma propriedade (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
 
 ## <a name="see-also"></a>Consulte também  
  [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Personalizar ações em regiões de formulário do Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Associar uma região de formulário uma classe de mensagem do Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Passo a passo: Importar de uma região de formulário projetada no Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Como: evitar que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
+ [Como: Impedir que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)   
  [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)  

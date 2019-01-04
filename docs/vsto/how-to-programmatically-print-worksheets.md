@@ -1,9 +1,6 @@
 ---
 title: 'Como: Imprimir planilhas programaticamente'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c1e473baccd6e4bb4de1c36d8888082baf40034b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c5061c7b83173088a4031455f27d1332219b6f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904546"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Como: Imprimir planilhas programaticamente
   Você pode imprimir qualquer planilha em uma pasta de trabalho.  
@@ -67,9 +64,7 @@ ms.locfileid: "49876629"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
- [Como: verificar a ortografia em planilhas de forma programática](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Como: Verificar a ortografia em planilhas de forma programática](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
  [Item de host da planilha](../vsto/worksheet-host-item.md)   
  [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

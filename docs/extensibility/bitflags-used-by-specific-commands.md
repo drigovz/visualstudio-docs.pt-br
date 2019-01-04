@@ -1,9 +1,6 @@
 ---
 title: Sinalizadores de bit usados por comandos específicos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875414"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Sinalizadores de bit usados por comandos específicos
 O comportamento de um número de funções em que a API de plug-in de controle do código-fonte pode ser modificado, definindo um ou mais bits em um único valor. Esses valores são conhecidos como sinalizadores de bit. As vários sinalizadores de bit usados pela API de plug-in de controle de origem são detalhadas aqui, agrupados por função em que os utiliza.  
@@ -37,7 +34,7 @@ O comportamento de um número de funções em que a API de plug-in de controle d
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|O plug-in de controle do código-fonte é esperado para detectar automaticamente se o arquivo é texto ou binário.|  
 |`SCC_FILETYPE_TEXT`|0x01|Tipo de arquivo é texto.|  
-|`SCC_FILETYPE_BINARY`|0x04|Tipo de arquivo é binário. **Observação:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` sinalizadores são mutuamente exclusivos.   Defina exatamente um ou nenhum dos dois.|  
+|`SCC_FILETYPE_BINARY`|0x04|Tipo de arquivo é binário. **Observação:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` sinalizadores são mutuamente exclusivos. Defina exatamente um ou nenhum dos dois.|  
 |`SCC_ADD_STORELATEST`|0x02|Store apenas versão mais recente (nenhum delta).|  
   
 ## <a name="diff-flags"></a>Sinalizadores de comparação  
@@ -46,7 +43,7 @@ O comportamento de um número de funções em que a API de plug-in de controle d
 |Sinalizador|Valor|Descrição|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignore diferenças de maiusculas.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignore as diferenças de espaço em branco. **Observação:** as `SCC_DIFF_IGNORECASE` e `SCC_DIFF_IGNORESPACE` sinalizadores são sinalizadores de bit opcional.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignore as diferenças de espaço em branco. **Observação:**  O `SCC_DIFF_IGNORECASE` e `SCC_DIFF_IGNORESPACE` sinalizadores são sinalizadores de bit opcional.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD, comparando o conteúdo do arquivo inteiro.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD por soma de verificação.|  
 |`SCC_DIFF_QD_TIME`|0x0040|QD por carimbo de data/hora do arquivo.|  
@@ -81,7 +78,7 @@ O comportamento de um número de funções em que a API de plug-in de controle d
   
 |Sinalizador|Valor|Descrição|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|O IDE está passando a diretórios, arquivos não: obter todos os arquivos nesses diretórios.|  
+|`SCC_GET_ALL`|0x00000001L|O IDE está passando a diretórios, arquivos não: Obter todos os arquivos nesses diretórios.|  
 |`SCC_GET_RECURSIVE`|0x00000002L|O IDE está passando diretórios: Obtenha esses diretórios e todos os seus subdiretórios.|  
   
 ## <a name="noption-values"></a>valores de nOption  

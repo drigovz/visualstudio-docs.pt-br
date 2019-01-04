@@ -1,9 +1,6 @@
 ---
 title: 'Como: Personalizar uma guia interna'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3a219d4c5d7a57e73c63ec972ccb29724d616d1a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c9f2506ae22b3d33870c4e636a27f100b70358c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859406"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Como: Personalizar uma guia interna
   Você pode adicionar grupos e controles a uma guia interna. Uma guia interna é uma guia que já está na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel. Quando você cria um grupo personalizado, ele é exibido por último na guia, mas você pode mover seu grupo de qualquer lugar na guia.  
@@ -79,5 +76,3 @@ ms.locfileid: "53647330"
  [Como: Alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Como: Adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Como: Mostrar erros de interface de usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)  
-  
-  

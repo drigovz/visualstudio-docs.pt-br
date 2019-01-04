@@ -1,9 +1,6 @@
 ---
-title: 'Como: imprimir documentos programaticamente'
-ms.custom: ''
+title: 'Como: Imprimir documentos programaticamente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c1e34e723618d24870d76dd961e7f4c484bc6fd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: da618b4b972c8f49d98118d26b5f0a4aa47cfde0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917343"
 ---
-# <a name="how-to-programmatically-print-documents"></a>Como: imprimir documentos programaticamente
+# <a name="how-to-programmatically-print-documents"></a>Como: Imprimir documentos programaticamente
   Você pode imprimir todo um documento do Microsoft Office Word ou parte de um documento, para a impressora padrão.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -62,5 +59,3 @@ ms.locfileid: "35669787"
   
 ## <a name="see-also"></a>Consulte também  
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

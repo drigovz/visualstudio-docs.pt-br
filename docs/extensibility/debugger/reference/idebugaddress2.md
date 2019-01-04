@@ -1,9 +1,6 @@
 ---
 title: IDebugAddress2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAddress2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 588b2d3e338080a086fee421deb17760496a268f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f8755aae5d349fcb463d7ff2be51ca4015449ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843970"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 Essa interface fornece acesso para a ID do processo que possui o objeto cujo endereço é representado por esta interface.  
@@ -32,13 +29,13 @@ IDebugAddress2 : IDebugAddress
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- Um provedor de símbolo implementa essa interface no mesmo objeto que implementa o [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Essa interface fornece acesso para a ID do processo que possui o objeto que está relacionado a esse endereço.  
+ Um provedor de símbolo implementa essa interface no mesmo objeto que implementa o [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Essa interface fornece acesso para a identificação do processo que possui o objeto que está relacionado a esse endereço.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Use [QueryInterface](/cpp/atl/queryinterface) para obter essa interface do [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ Use [QueryInterface](/cpp/atl/queryinterface) para obter essa interface da [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos em vtable ordem  
- Além dos métodos herdados da [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface, essa interface implementa o método a seguir:  
+ Além dos métodos herdados do [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface, essa interface implementa o método a seguir:  
   
 |Método|Descrição|  
 |------------|-----------------|  
@@ -52,5 +49,5 @@ IDebugAddress2 : IDebugAddress
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Interfaces de provedor de símbolo](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

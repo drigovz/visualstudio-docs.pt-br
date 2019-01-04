@@ -1,9 +1,6 @@
 ---
-title: 'Como: programaticamente recolher intervalos ou seleções em documentos'
-ms.custom: ''
+title: 'Como: Por meio de programação recolher intervalos ou seleções em documentos'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fee3c821c0b6a39c8dfb499caa00355aa008d413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d26a664a6d66c81a7409759478eb8c9de120964d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859062"
 ---
-# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Como: programaticamente recolher intervalos ou seleções em documentos
+# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Como: Por meio de programação recolher intervalos ou seleções em documentos
   Se você estiver trabalhando com um <xref:Microsoft.Office.Interop.Word.Range> ou <xref:Microsoft.Office.Interop.Word.Selection> do objeto, você talvez queira alterar a seleção para um ponto de inserção antes de inserir texto, para evitar a substituição de texto existente. Tanto a <xref:Microsoft.Office.Interop.Word.Range> e <xref:Microsoft.Office.Interop.Word.Selection> objetos têm um método de recolher, que usa o <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valores de enumeração:  
   
 - <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Recolhe a seleção para o início da seleção. Esse é o padrão se você não especificar um valor de enumeração.  
@@ -69,7 +66,7 @@ ms.locfileid: "49906722"
    [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
    [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
   
-   Você pode esperar que a inserção de uma nova frase pode inseri-la antes do marcador de parágrafo, mas que é o caso de não porque o intervalo original inclui o marcador de parágrafo. Para obter mais informações, consulte [como: excluir programaticamente marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
+   Você pode esperar que a inserção de uma nova frase pode inseri-la antes do marcador de parágrafo, mas que é o caso de não porque o intervalo original inclui o marcador de parágrafo. Para obter mais informações, confira [Como: Excluir programaticamente marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
   
 ## <a name="document-level-customization-example"></a>Exemplo de personalização no nível de documento  
   
@@ -90,10 +87,9 @@ ms.locfileid: "49906722"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: programaticamente, inserir texto em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Como: definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Como: recuperar caracteres iniciais e finais em intervalos de forma programática](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Como: excluir programaticamente marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
- [Como: estender programaticamente os intervalos em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Como: programaticamente redefinir intervalos em documentos do Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)  
-  
+ [Como: Programaticamente, inserir texto em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Como: Definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Como: Recuperar caracteres iniciais e finais em intervalos de forma programática](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Como: Por meio de programação excluir marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
+ [Como: Por meio de programação estender intervalos em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Como: Por meio de programação redefinir intervalos em documentos do Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)  

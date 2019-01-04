@@ -1,9 +1,6 @@
 ---
 title: Implementação de comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f002e660b2c3b745e4a7ea67f715b613b96bd0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ea4240ddf84dc1b475adcf81fe80471c9d1bc2b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965415"
 ---
 # <a name="command-implementation"></a>Implementação do comando
 Para implementar um comando em um VSPackage, você deve executar as seguintes tarefas:  
@@ -70,7 +67,7 @@ if ( null != mcs )
   
 -   Se sua implementação de qualquer um dos métodos reconhece o GUID e o comando e, em seguida, o método deve definir o campo de sinalizadores de comando de cada comando (na `prgCmds` parâmetro) usando os seguintes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> sinalizadores:  
   
-    -   `OLECMDF_SUPPORTED`: O comando é suportado.  
+    -   `OLECMDF_SUPPORTED`: Há suporte para o comando.  
   
     -   `OLECMDF_INVISIBLE`: O comando não deve estar visível.  
   

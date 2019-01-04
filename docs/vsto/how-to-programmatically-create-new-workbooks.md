@@ -1,9 +1,6 @@
 ---
-title: 'Como: criar programaticamente novas pastas de trabalho'
-ms.custom: ''
+title: 'Como: Criar novas pastas de trabalho de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e1da9ff331a4376a6ff242dca4382832ee4e85f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e68b2c955c2e44fb9f721850be2fa4dac9cf875
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958271"
 ---
-# <a name="how-to-programmatically-create-new-workbooks"></a>Como: criar programaticamente novas pastas de trabalho
+# <a name="how-to-programmatically-create-new-workbooks"></a>Como: Criar novas pastas de trabalho de forma programática
   Quando você cria uma pasta de trabalho por meio de programação, é um nativo <xref:Microsoft.Office.Interop.Excel.Workbook> do objeto, não um <xref:Microsoft.Office.Tools.Excel.Workbook> item de host.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,11 +41,9 @@ ms.locfileid: "35257102"
  [Estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)   
- [Como: abrir pastas de trabalho de forma programática](../vsto/how-to-programmatically-open-workbooks.md)   
- [Como: salvar pastas de trabalho de forma programática](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Como: Abrir pastas de trabalho de forma programática](../vsto/how-to-programmatically-open-workbooks.md)   
+ [Como: Salvar pastas de trabalho de forma programática](../vsto/how-to-programmatically-save-workbooks.md)   
  [Como: Fechar pastas de trabalho de forma programática](../vsto/how-to-programmatically-close-workbooks.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

@@ -1,13 +1,8 @@
 ---
-title: 'Como: marcar controles como controles seguros | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Marcar controles como controles seguros | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04470034f1fa1531a1677b4acd6b36f0b99c8a62
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989368"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>Como: marcar controles como controles seguros
+# <a name="how-to-mark-controls-as-safe-controls"></a>Como: Marcar controles como controles seguros
   Para segurança, o SharePoint faz distinção entre controles da Web que estão protegidos contra injeção de script e controles da Web que não são. Protegido por controles, ou *controles seguros*, pode ser acessado por usuários não confiáveis. Você pode marcar os controles como seguro em que a propriedade de entradas de controle seguro de um item de projeto do SharePoint ou nos **Designer de pacote** quando você adiciona um assembly no pacote. Para saber mais, veja  
   
  [Alteração das configurações de arquivo de Web. config](http://go.microsoft.com/fwlink/?LinkId=178965) e [Registrando um Assembly de Web Part como um controle seguro](http://go.microsoft.com/fwlink/?LinkId=171013).  
@@ -120,4 +115,3 @@ ms.locfileid: "37118450"
 ## <a name="see-also"></a>Consulte também
  [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Pacote e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: IDebugGenericFieldInstance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0abc75fa59f19d61ee95194905be678336808b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c265591d1836594b9190e031c1bfe3ab5a93813
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990971"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
-Representa uma instância de um campo de um tipo genérico de código gerenciado.  
+Representa uma instância de um campo para um tipo genérico do código gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,7 +31,7 @@ IDebugGenericFieldInstance : IUnknown
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Recupera os argumentos de parâmetro de tipo para essa instância.|  
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Recupera os argumentos de parâmetro de tipo para esta instância.|  
 |[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retorna o número de tipo de argumentos de parâmetro para esta instância.|  
   
 ## <a name="requirements"></a>Requisitos  

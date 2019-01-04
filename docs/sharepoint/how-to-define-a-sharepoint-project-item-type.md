@@ -1,9 +1,6 @@
 ---
-title: 'Como: definir um tipo de Item de projeto do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Definir um tipo de Item de projeto do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e35087481e1cdb536fddb4181f251e5595b365c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 839cec7ea9ab119e029e9944e3b97afe9bb9d6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916725"
 ---
-# <a name="how-to-define-a-sharepoint-project-item-type"></a>Como: definir um tipo de item de projeto do SharePoint
+# <a name="how-to-define-a-sharepoint-project-item-type"></a>Como: Definir um tipo de item de projeto do SharePoint
   Defina um tipo de item de projeto quando você deseja criar um item de projeto personalizado do SharePoint. Para obter mais informações, consulte [definindo tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).  
   
 ### <a name="to-define-a-project-item-type"></a>Para definir um tipo de item de projeto  
@@ -74,6 +71,5 @@ ms.locfileid: "37118546"
  [Criar modelos de projeto do SharePoint para itens de projeto e modelos de item](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
- [Como: adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
- [Como: adicionar um item de menu de atalho para um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)  
-  
+ [Como: Adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
+ [Como: Adicionar um item de menu de atalho para um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Como: adicionar uma propriedade a uma extensão de Item de projeto do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar uma propriedade a uma extensão de Item de projeto do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1af848f432183153707b2debfed563f3a00d4156
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 424e6d6295b0a9af1ec5d155353f766d4ba17689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950180"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Como: adicionar uma propriedade a uma extensão de item de projeto do SharePoint
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Como: Adicionar uma propriedade a uma extensão de item de projeto do SharePoint
   Você pode usar uma extensão de item de projeto para adicionar uma propriedade para qualquer item de projeto do SharePoint que já está instalado no Visual Studio. A propriedade aparece na **propriedades** janela quando o item de projeto é selecionado na **Gerenciador de soluções**.  
   
- As etapas a seguir pressupõem que você já tenha criado uma extensão de item de projeto. Para obter mais informações, consulte [como: criar uma extensão de Item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ As etapas a seguir pressupõem que você já tenha criado uma extensão de item de projeto. Para obter mais informações, confira [Como: Criar uma extensão de Item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>Para adicionar uma propriedade a uma extensão de item de projeto  
   
@@ -72,9 +69,7 @@ ms.locfileid: "36758093"
  Para implantar a extensão, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) para o assembly e outros arquivos que você deseja distribuir com a extensão. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Consulte também
- [Como: criar uma extensão de item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Como: adicionar um item de menu de atalho para uma extensão de item de projeto do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Como: Criar uma extensão de item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Como: Adicionar um item de menu de atalho para uma extensão de item de projeto do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [Estender os itens de projeto do SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Passo a passo: Estender um tipo de item de projeto do SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  

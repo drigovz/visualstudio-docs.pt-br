@@ -1,9 +1,6 @@
 ---
-title: 'Como: mover planilhas em pastas de trabalho de forma programática'
-ms.custom: ''
+title: 'Como: Mover planilhas em pastas de trabalho de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5075008e3b6b2b6f9ae087c0cfe962f2a1191f52
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4df9f10872283cf8f8b38ba29a9ea140646aa16f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898928"
 ---
-# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Como: mover planilhas em pastas de trabalho de forma programática
+# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Como: Mover planilhas em pastas de trabalho de forma programática
   Programaticamente, você pode alterar a posição de planilhas em relação a outras planilhas em uma pasta de trabalho. Se você não especificar um local para a folha movida, o Excel cria uma nova pasta de trabalho para contê-lo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,9 +41,7 @@ ms.locfileid: "35669780"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
- [Como: ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Como: excluir planilhas de pastas de trabalho de forma programática](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Como: proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Como: Ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Como: Excluir planilhas de pastas de trabalho de forma programática](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Como: Proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

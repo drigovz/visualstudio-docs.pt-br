@@ -1,9 +1,6 @@
 ---
-title: 'Como: obter dados para um nó SharePoint interno no Gerenciador de servidores | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Obter dados para um nó SharePoint interno no Gerenciador de servidores | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06965449cd07fb39480eb1974fc1c90e2d126c73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e9ef30de63789072f021aaded87dd5e9c8071637
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898967"
 ---
-# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Como: obter dados para um nó SharePoint interno no Gerenciador de servidores
+# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Como: Obter dados para um nó SharePoint interno no Gerenciador de servidores
   Para cada nó SharePoint interno no **Gerenciador de servidores**, você pode obter dados para o componente subjacente do SharePoint que o nó representa. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ## <a name="example"></a>Exemplo  
@@ -34,7 +31,7 @@ ms.locfileid: "37118451"
   
  Este exemplo usa o serviço de projeto do SharePoint para obter o <xref:EnvDTE.DTE> lista do objeto que é usado para abrir no Visual Studio. Para obter mais informações sobre o serviço de projeto do SharePoint, consulte [usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
   
- Para obter mais informações sobre as tarefas básicas para criar uma extensão para um nó do SharePoint, consulte [como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+ Para obter mais informações sobre as tarefas básicas para criar uma extensão para um nó do SharePoint, consulte [como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
 ## <a name="compile-the-code"></a>Compilar o código  
  Este exemplo requer referências aos assemblies a seguir:  
@@ -52,7 +49,6 @@ ms.locfileid: "37118451"
   
 ## <a name="see-also"></a>Consulte também
  [Estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

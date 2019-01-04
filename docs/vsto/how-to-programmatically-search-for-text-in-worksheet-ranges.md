@@ -1,9 +1,6 @@
 ---
-title: 'Como: pesquisar texto em intervalos de planilhas de forma programática'
-ms.custom: ''
+title: 'Como: Pesquisar texto em intervalos de planilhas de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826121"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Como: programaticamente pesquisar texto em intervalos de planilhas
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Como: Pesquisar texto por meio de programação em intervalos de planilhas
   O <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método da <xref:Microsoft.Office.Interop.Excel.Range> objeto lhe permite pesquisar texto dentro do intervalo. Esse texto pode ser qualquer uma das cadeias de caracteres erro podem aparecer em uma célula de planilha, como também `#NULL!` ou `#VALUE!`. Para obter mais informações sobre cadeias de caracteres de erro, consulte [valores de erro de célula](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "50671957"
 > [!NOTE]  
 >  O <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> pesquisa do método encapsula voltar ao início do intervalo de pesquisa após ele atingir o fim do intervalo. Seu código deve garantir que a pesquisa não quebra ao redor em um loop infinito. O procedimento de exemplo mostra uma maneira de lidar com isso usando o <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriedade.  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [How do i: Use o método Find em um suplemento do Excel?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Usar o método Find em um suplemento do Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Para pesquisar texto em um intervalo de planilha  
   
@@ -81,8 +78,6 @@ ms.locfileid: "50671957"
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com intervalos](../vsto/working-with-ranges.md)   
- [Como: aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Como: por meio de programação se referir a intervalos de planilhas em código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Como: Aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Como: Por meio de programação se referir a intervalos de planilhas em código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

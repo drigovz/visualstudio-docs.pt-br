@@ -1,9 +1,6 @@
 ---
-title: 'Como: usar caixas de diálogo do Word no modo oculto de forma programática'
-ms.custom: ''
+title: 'Como: Usar caixas de diálogo do Word no modo oculto de forma programática'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819621"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Como: usar caixas de diálogo do Word no modo oculto de forma programática
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Como: Usar caixas de diálogo do Word no modo oculto de forma programática
   Você pode executar operações complexas com uma chamada de método invocando as caixas de diálogo integradas no Microsoft Office Word sem exibi-los para o usuário. Você pode fazer isso usando o <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> método da <xref:Microsoft.Office.Interop.Word.Dialog> objeto sem chamar o <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> método.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35670085"
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: usar as caixas de diálogo integradas no Word de forma programática](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Como: Usar as caixas de diálogo integradas no Word de forma programática](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)   
  [Associação tardia em soluções do Office](../vsto/late-binding-in-office-solutions.md)   
  [Reflexão (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexão (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

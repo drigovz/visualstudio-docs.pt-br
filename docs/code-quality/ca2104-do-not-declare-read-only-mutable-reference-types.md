@@ -1,8 +1,7 @@
 ---
-title: 'CA2104: não declarar tipos de referência mutáveis somente leitura'
+title: 'CA2104: Não declarar tipos de referência mutáveis somente leitura'
 ms.date: 11/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f1c4f19349d94cb7dedfd22a82dc86b6f33b5b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844204"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: não declarar tipos de referência mutáveis somente leitura
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Não declarar tipos de referência mutáveis somente leitura
 
 |||
 |-|-|
@@ -51,7 +50,7 @@ O modificador somente leitura ([readonly](/dotnet/csharp/language-reference/keyw
 
 Essa regra pode inadvertidamente mostrar uma violação para um tipo que é, na verdade, imutáveis. Nesse caso, é seguro suprimir o aviso.
 
-Campos de matriz somente leitura são isentos dessa regra, mas em vez disso, causar uma violação do [CA2105: campos de matriz não devem ser somente leitura](../code-quality/ca2105-array-fields-should-not-be-read-only.md) regra.
+Campos de matriz somente leitura são isentos dessa regra, mas em vez disso, causar uma violação do [CA2105: Campos de matriz não devem ser somente leitura](../code-quality/ca2105-array-fields-should-not-be-read-only.md) regra.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

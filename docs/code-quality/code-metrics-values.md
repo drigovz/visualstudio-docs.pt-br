@@ -2,7 +2,6 @@
 title: Calcular métricas de código
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855566"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas de código
 
@@ -24,7 +23,7 @@ O aumento da complexidade de aplicativos de software moderno também aumenta a d
 
 Os desenvolvedores podem usar o Visual Studio para gerar dados de métricas de código que medem a complexidade e facilidade de manutenção de seu código gerenciado. Dados de métricas de código podem ser gerados para uma solução inteira ou um único projeto.
 
-Para obter informações sobre como gerar dados de métricas de código no Visual Studio, consulte [como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md).
+Para obter informações sobre como gerar dados de métricas de código no Visual Studio, consulte [como: Gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Medições de software
 
@@ -57,5 +56,5 @@ Código gerado para o Windows Forms não é ignorado, porque ele é o código qu
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Como: Gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
 - [Use a janela de resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
