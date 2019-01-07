@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a550ac10b5983041da93b0c290877f8e1b1a3720
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c11a6cd6d34a73956b2efa64a45aae6c4ba2da62
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051789"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592411"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo independente do .NET Framework para coletar dados de memória usando a linha de comando
 
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do Visual Studio para anexar o criador de perfil a um aplicativo (cliente) .NET Framework independente em execução e coletar dados da memória.
 
 > [!NOTE]
-> As ferramentas de linha de comando das Ferramentas de Criação de Perfil estão localizadas no subdiretório *\Team Tools\Performance Tools* do diretório de instalação do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando. Para obter mais informações, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.  
 
 Para anexar a um aplicativo do .NET Framework e coletar dados de memória, você deve usar a ferramenta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar as variáveis de ambiente apropriadas antes de inicia o aplicativo de destino. Quando criador de perfil estiver anexado ao aplicativo, você poderá usar a ferramenta *VSPerfCmd.exe* para pausar e retomar a coleta de dados.
 

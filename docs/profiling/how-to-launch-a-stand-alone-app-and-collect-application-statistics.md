@@ -1,5 +1,5 @@
 ---
-title: Como inicializar um aplicativo autônomo com o criador de perfil e coletar estatísticas de aplicativo usando a linha de comando | Microsoft Docs
+title: 'Como: Iniciar um aplicativo independente com o criador de perfil e coletar estatísticas do aplicativo usando a linha de comando | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57d56564b7be9051efb1a5d153a2a797fcc2211
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ea9027f6589c7d7993aab1652fd89117239940a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819999"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592905"
 ---
-# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Como iniciar um aplicativo autônomo com o criador de perfil e coletar estatísticas do aplicativo usando a linha de comando
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Como: Iniciar um aplicativo autônomo com o criador de perfil e coletar estatísticas do aplicativo usando a linha de comando
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) e coletar estatísticas de desempenho usando o método de amostragem.  
 
 > [!NOTE]
@@ -30,7 +30,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 1.  Se você estiver executando as ferramentas de criação de perfil em um computador no qual o Visual Studio está instalado, uma janela Comando do Visual Studio definirá os caminhos corretos. No menu **Ferramentas**, escolha **Prompt de comando do VS**  
 
 > [!NOTE]
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil estão localizadas no subdiretório *\Team Tools\Performance Tools* do diretório de instalação do Visual Studio. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando. Para saber mais, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.  
 
 ## <a name="start-the-application-with-the-profiler"></a>Iniciar o aplicativo com o criador de perfil  
  Para iniciar um aplicativo de destino usando o criador de perfil, use as opções **/start** e **/launch** do VSPerfCmd para inicializar o criador de perfil e iniciar o aplicativo. Você pode especificar **/start** e **/launch** e suas opções respectivas em uma única linha de comando.  
@@ -98,7 +98,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
     -   Feche o aplicativo de destino.  
 
-         -ou-  
+         - ou -  
 
     -   Digite **VSPerfCmd /detach**  
 

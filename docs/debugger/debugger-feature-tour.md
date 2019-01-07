@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d96e30ad4ba38dffc4bbc489100f14886c813816
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561532"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -174,7 +174,7 @@ A janela **Pilha de Chamadas** mostra a ordem em que os métodos e as funções 
 
 Você pode clicar duas vezes em uma linha de código para examinar esse código-fonte. Isso também altera o escopo atual que está sendo inspecionado pelo depurador. Isso não avança o depurador.
 
-Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificas, reiniciar o aplicativo usando **Executar até o Cursor** e examinar o código-fonte. Confira [Como examinar a Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).
+Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificas, reiniciar o aplicativo usando **Executar até o Cursor** e examinar o código-fonte. Confira [Como Examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Examinar uma exceção
 
@@ -215,7 +215,7 @@ Para obter mais informações, confira a página [Inspecionar estados anteriores
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste tutorial, você obteve uma visão rápida de muitos recursos do depurador. Convém uma visão mais detalhada sobre esses recursos usando um aplicativo de exemplo
+Neste tutorial, você obteve uma visão rápida de muitos recursos do depurador. Talvez você deseje fazer uma análise mais detalhada de uma dessas funcionalidades, como pontos de interrupção.
 
 > [!div class="nextstepaction"]
-> [Aprenda a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Aprenda a usar pontos de interrupção](../debugger/using-breakpoints.md)

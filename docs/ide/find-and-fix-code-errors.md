@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065111"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684815"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -144,7 +144,7 @@ Quando o depurador entra em pausa, você pode inspecionar suas variáveis e pilh
 
 ![Inspeção de valor de tempo de execução do Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Focalize uma variável para ver seu valor atual e suas referências. Se você observar um valor que não esperava, provavelmente, haverá um bug no código anterior ou de chamada. Para obter informações mais detalhadas sobre depuração, [saiba mais](../debugger/getting-started-with-the-debugger.md) sobre como usar o depurador.
+Focalize uma variável para ver seu valor atual e suas referências. Se você observar um valor que não esperava, provavelmente, haverá um bug no código anterior ou de chamada. Para obter informações mais detalhadas sobre depuração, [saiba mais](../debugger/debugger-feature-tour.md) sobre como usar o depurador.
 
 Além disso, o Visual Studio exibe a janela **Ferramentas de Diagnóstico**, na qual você pode observar o uso de memória e CPU do aplicativo ao longo do tempo. Mais tarde no desenvolvimento do seu aplicativo, você pode usar essas ferramentas para procurar uso intenso da CPU ou alocação de memória inesperada. Use-o em conjunto com a janela **Inspeção** e com os pontos de interrupção para determinar o que está ocasionando o uso intenso inesperado ou os recursos não liberados. Para obter mais informações, consulte [Tour do recurso de criação de perfil](../profiling/profiling-feature-tour.md).
 
@@ -159,5 +159,5 @@ Para saber mais sobre testes de unidade no Visual Studio e como eles podem ajud�
 ## <a name="see-also"></a>Consulte também
 
 - [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
-- [Saiba mais sobre como usar o depurador](../debugger/getting-started-with-the-debugger.md)
+- [Saiba mais sobre como usar o depurador](../debugger/debugger-feature-tour.md)
 - [Gerar e corrigir um código](../ide/code-generation-in-visual-studio.md)

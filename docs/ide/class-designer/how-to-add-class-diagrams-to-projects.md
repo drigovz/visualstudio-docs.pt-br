@@ -1,5 +1,5 @@
 ---
-title: Como adicionar diagramas de classe a projetos (Designer de Classe)
+title: 'Como: Adicionar diagramas de classe a projetos (Designer de Classe)'
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901292"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684312"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Como adicionar diagramas de classe a projetos
+# <a name="how-to-add-class-diagrams-to-projects"></a>Como: Adicionar diagramas de classe a projetos
 
 Para criar, editar e refatorar classes e outros tipos, adicione um diagrama de classe ao projeto em C#, Visual Basic ou C++. Para visualizar diferentes partes do código em um projeto, adicione vários diagramas de classes ao projeto.
 
@@ -61,7 +61,7 @@ Para adicionar vários diagramas de classes, repita as etapas deste procedimento
 
 No **Gerenciador de Soluções**, abra o menu de contexto de um arquivo de classe (clique com o botão direito do mouse) e escolha **Exibir em Diagrama de Classe**.
 
--ou-
+- ou -
 
 No **Modo de Exibição de Classe**, abra o namespace ou o menu de contexto de tipo e escolha **Exibir Diagrama de Classe**.
 
@@ -76,8 +76,6 @@ Um diagrama de classe populado automaticamente é criado.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar tipos usando o Designer de Classe](how-to-create-types.md)
-- [Como exibir tipos existentes](how-to-view-existing-types.md)
+- [Como: Criar tipos usando o Designer de Classe](how-to-create-types.md)
+- [Como: Exibir tipos existentes](how-to-view-existing-types.md)
 - [Projetar e exibir classes e tipos](designing-and-viewing-classes-and-types.md)
-- [Exibir tipos e relações](viewing-types-and-relationships.md)
-- [Trabalhar com diagramas de classe](working-with-class-diagrams.md)

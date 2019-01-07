@@ -3,18 +3,18 @@ title: Benefício de Chat de Atendimento da assinatura do Visual Studio | Micros
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Saiba mais sobre o benefício de Atendimento via Chat incluído nas assinaturas do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 06b890ea79bafade2d33f341d3411c38196c7cc9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831842"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740228"
 ---
 # <a name="concierge-chat"></a>Atendimento via Chat
 
@@ -42,20 +42,24 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
-| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Sim          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  Sim          |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 | Visual Studio Dev Essentials | NA  | Não disponível |N/D |
 
-<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclui: FTE, MVP (Microsoft Valued Professional), RD (Diretor regional), MPN (Microsoft Partner Network), Imagine.*
+<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer e BizSpark.  Exclui:  FTE, MVP (Microsoft Valued Professional), RD (Diretor Regional), MPN (Microsoft Partner Network) e Imagine.*
+
+> [!NOTE]
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
-### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>P: O serviço de chat está disponível em vários idiomas?
+### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>P:  O serviço de chat está disponível em vários idiomas?
    R: A assistência com problemas de contas, cobrança e assinaturas está disponível em vários idiomas.  A assistência para localizar informações sobre produtos e documentação técnica está disponível em inglês.
 
 ## <a name="support-resources"></a>Recursos de suporte

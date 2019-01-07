@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592424"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: criação de perfil de linha de comando usando amostragem
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: Criação de perfil de linha de comando usando amostragem
 
 Este passo a passo demonstra como criar um perfil de um aplicativo usando ferramentas de linha de comando e amostragem para identificar problemas de desempenho.
 
@@ -43,7 +43,7 @@ Neste passo a passo, você seguirá estas etapas:
 A amostragem é um método de criação de perfil pelo qual um processo específico é monitorado periodicamente para determinar a função ativa. Os dados resultantes fornecem uma contagem da frequência da função na parte superior da pilha de chamadas, quando o processo foi amostrado.
 
 > [!NOTE]
-> As ferramentas de linha de comando das Ferramentas de Criação de Perfil estão localizadas no subdiretório *\Team Tools\Performance Tools* do diretório de instalação do Visual Studio. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para saber mais, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). O PeopleTrax é um aplicativo de 32 bits.
+>  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.  
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Para criar o perfil do aplicativo PeopleTrax usando o método de amostragem
 

@@ -1,5 +1,5 @@
 ---
-title: Como instrumentar um aplicativo Web ASP .NET compilado dinamicamente e coletar dados de tempo detalhados com o criador de perfil usando a linha de comando | Microsoft Docs
+title: 'Como: Instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de tempo detalhados com o criador de perfil usando a linha de comando | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: bcc5d167fdd53a597fb171881ae61281c8280c8d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 653b4c9b04f3a126e4c63384d99fafce6c9cfcff
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592476"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Como instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de tempo detalhados com o criador de perfil usando a linha de comando
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Como: Instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de tempo detalhados com o criador de perfil usando a linha de comando
 
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do Visual Studio para coletar dados de tempo detalhados para um aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente usando o método de criação de perfil por instrumentação.
 
 > [!NOTE]
-> As ferramentas de linha de comando das Ferramentas de Criação de Perfil estão localizadas no subdiretório *\Team Tools\Performance Tools* do diretório de instalação do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando. Para saber mais, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 
 Para coletar dados de desempenho de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], modifique o arquivo *web.config* do aplicativo de destino para permitir que a ferramenta [VSInstr.exe](../profiling/vsinstr.md) instrumente os arquivos do aplicativo compilado dinamicamente. Em seguida, use a ferramenta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para definir as variáveis de ambiente adequadas no servidor Web para habilitar a criação de perfil e reinicie o computador.
 
@@ -29,7 +29,7 @@ Inicie o criador de perfil e, em seguida, execute o aplicativo de destino. Enqua
 
 ## <a name="configure-the-aspnet-web-application-and-the-web-server"></a>Configurar o aplicativo Web ASP.NET e o servidor Web
 
-1. Modifique o arquivo *web.config* do aplicativo de destino. Confira [Como modificar arquivos web.config para instrumentar e criar perfil de aplicativos Web ASP.NET compilados dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modifique o arquivo *web.config* do aplicativo de destino. Confira [Como Modificar arquivos web.config para instrumentar e analisar aplicativos Web ASP.NET compilados dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
 2. Abra uma janela do Prompt de Comando.
 

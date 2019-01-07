@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2c39fc08528886e143bd51eb1f33219b386807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8bc70a93bf96e34fd3ce2cd09f728b1bd450bf5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921711"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803488"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 A tabela a seguir lista as propriedades usadas com frequência que são definidas nos arquivos de projeto do Visual Studio ou incluídas nos arquivos *.targets* fornecidos pelo MSBuild.  
@@ -56,17 +56,17 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | CscToolPath | O caminho do *csc.exe*, o compilador [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | O nome de um arquivo de projeto ou arquivo de destino a ser importado automaticamente antes da importação de destinos comuns. |
 | DebugSymbols | Um valor booliano que indica se os símbolos são gerados pelo build.<br /><br /> A configuração de **-p:DebugSymbols=false** na linha de comando desabilita a geração de arquivos de símbolo do banco de dados de programa (*.pdb*). |
+| DebugType | Define o nível de informações de depuração que você deseja que seja gerado. Os valores válidos são "full," "pdbonly" e "none". |
 | DefineConstants | Define as constantes de compilador condicional. Os pares de símbolo/valor são separados por ponto e vírgula e são especificados usando a sintaxe a seguir:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> A propriedade é equivalente à opção do compilador `/define`. |
 | DefineDebug | Um valor booliano que indica se você deseja que a constante DEBUG seja definida. |
 | DefineTrace | Um valor booliano que indica se você deseja que a constante TRACE seja definida. |
-| DebugType | Define o nível de informações de depuração que você deseja que seja gerado. Os valores válidos são "full," "pdbonly" e "none". |
 | DelaySign | Um valor booliano que indica se você deseja atrasar a assinatura do assembly em vez de fazer a assinatura completa. |
 | Determinista | Um valor booliano que indica se o compilador deve gerar assemblies idênticos para entradas idênticas. Esse parâmetro corresponde à opção `/deterministic` dos compiladores *vbc.exe* e *csc.exe*. |
 | DisabledWarnings | Suprime os avisos especificados. Somente a parte numérica do identificador de aviso deve ser especificada. Vários avisos são separados por ponto e vírgula. Esse parâmetro corresponde à opção `/nowarn` do compilador *vbc.exe*. |
 | DisableFastUpToDateCheck | Um valor booliano que se aplica apenas a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. O gerenciador de build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa um processo chamado FastUpToDateCheck para determinar se um projeto deve ser reconstruído para ser atualizado. Esse processo é mais rápido que usar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para determinar isso. Configurar a propriedade DisableFastUpToDateCheck para `true` permite ignorar o gerenciador de build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e forçá-lo a usar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para determinar se o projeto está atualizado. |
 | DocumentationFile | O nome do arquivo que é gerado como o arquivo de documentação XML. Esse nome inclui o nome de arquivo e não tem nenhuma informação de caminho. |
 | ErrorReport | Especifica como a tarefa de compilador deve relatar erros do compilador interno. Os valores válidos são "prompt," "send" ou "none". Essa propriedade é equivalente à opção do compilador `/errorreport`. |
-| ExcludeDeploymentUrl | A [tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) adiciona uma marca deploymentProvider ao manifesto de implantação se o arquivo de projeto inclui um dos seguintes elementos:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Entretanto, ao usar ExcludeDeploymentUrl, você poderá impedir que a marca deploymentProvider seja adicionada ao manifesto de implantação, mesmo se qualquer uma das URLs acima for especificada. Para fazer isso, adicione a propriedade a seguir ao arquivo de projeto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Observação:** ExcludeDeploymentUrl não é exposta no IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e pode ser definida apenas com a edição manual do arquivo de projeto. A configuração dessa propriedade não afeta a publicação em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; ou seja, a marca deploymentProvider ainda será adicionada à URL especificada pelo PublishUrl. |
+| ExcludeDeploymentUrl | A [tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) adiciona uma marca deploymentProvider ao manifesto de implantação se o arquivo de projeto inclui um dos seguintes elementos:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Entretanto, ao usar ExcludeDeploymentUrl, você poderá impedir que a marca deploymentProvider seja adicionada ao manifesto de implantação, mesmo se qualquer uma das URLs acima for especificada. Para fazer isso, adicione a propriedade a seguir ao arquivo de projeto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Observação:**  ExcludeDeploymentUrl não é exposta no IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e pode ser definida apenas com a edição manual do arquivo de projeto. A configuração dessa propriedade não afeta a publicação em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; ou seja, a marca deploymentProvider ainda será adicionada à URL especificada pelo PublishUrl. |
 | FileAlignment | Especifica, em bytes, onde alinhar as seções do arquivo de saída. Os valores válidos são 512, 1024, 2048, 4096, 8192. Essa propriedade é equivalente à opção do compilador `/filealignment`. |
 | FrameworkPathOverride | Especifica o local de *mscorlib.dll* e *microsoft.visualbasic.dll*. Esse parâmetro é equivalente à opção `/sdkpath` do compilador *vbc.exe*. |
 | GenerateDocumentation | (somente Visual Basic) Um parâmetro booliano que indica se a documentação é gerada pelo build. Se ele for `true`, o build gerará informações sobre a documentação e as colocará em um arquivo *.xml* junto com o nome do arquivo executável ou a biblioteca criada pela tarefa de build. |

@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7a4475cba023f792c2ff96895eb4dd7e0b4ebcf5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d14db3c10fb9e656596e89a43e75b765b67aa7c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050207"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804520"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Como usar o CTest para C++ no Visual Studio
 
-O CMake (que inclui o CTest) está integrado por padrão ao IDE do Visual Studio como um componente da carga de trabalho **Desenvolvimento de Área de Trabalho com C++**. Caso precise instalá-lo no computador, abra o programa Instalador do Visual Studio, clique no botão **Modificar** e, em seguida, marque [Ferramentas CMake para Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) na lista de componentes de carga de trabalho.
+O CMake (que inclui o CTest) está integrado por padrão ao IDE do Visual Studio como um componente da carga de trabalho **Desenvolvimento para desktop com C++**. Caso precise instalá-lo no computador, abra o programa Instalador do Visual Studio, clique no botão **Modificar** e, em seguida, marque [Ferramentas CMake para Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) na lista de componentes de carga de trabalho.
 
 ## <a name="to-write-tests"></a>Para escrever testes
 
@@ -26,7 +26,7 @@ O suporte de CMake no Visual Studio não envolve o sistema de projetos do Visual
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>Para executar testes (Visual Studio 2017 versão 15.6)
 
-No Visual Studio 2017 versão 15.6, o CTest é totalmente integrado ao **Gerenciador de Testes** e também oferece suporte a estruturas de teste de unidade do Google e Boost. Essas estruturas são incluídas por padrão como componentes na carga de trabalho **Desenvolvimento de área de trabalho com C++**. No entanto, se você estiver atualizando um projeto de uma versão anterior do Visual Studio, talvez seja necessário instalar essas estruturas usando o programa Instalador do Visual Studio.
+No Visual Studio 2017 versão 15.6, o CTest é totalmente integrado ao **Gerenciador de Testes** e também oferece suporte a estruturas de teste de unidade do Google e Boost. Essas estruturas estão incluídas por padrão como componentes na carga de trabalho **Desenvolvimento para desktop com C++**. No entanto, se você estiver atualizando um projeto de uma versão anterior do Visual Studio, talvez seja necessário instalar essas estruturas usando o programa Instalador do Visual Studio.
 
 A ilustração a seguir mostra os resultados de uma execução de CTest usando a estrutura do Google Test:
 

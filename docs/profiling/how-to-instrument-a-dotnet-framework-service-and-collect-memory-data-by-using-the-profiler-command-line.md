@@ -1,5 +1,5 @@
 ---
-title: Como instrumentar um serviço do .NET Framework e coletar dados de memória usando a linha de comando do criador de perfil | Microsoft Docs
+title: 'Como: Instrumentar um serviço do .NET Framework e coletar dados de memória usando a linha de comando do criador de perfil | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eafd91fe97a4e4ceb33b9dc315b8b9d9014d27ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ebca2945995a0f404c506c0e26ee1b1012d4dfa
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592866"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como instrumentar um serviço do .NET Framework e coletar dados de memória usando a linha de comando do criador de perfil
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como: Instrumentar um serviço do .NET Framework e coletar memória de dados usando a linha de comando do criador de perfil
 Este artigo descreve como usar as ferramentas da linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar um serviço do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e coletar dados de uso de memória. É possível coletar dados de alocação de memória ou coletar dados de alocação de memória e dados de tempo de vida do objeto.  
 
 > [!NOTE]
@@ -26,7 +26,7 @@ Este artigo descreve como usar as ferramentas da linha de comando das Ferramenta
 > [!NOTE]
 >  Você não poderá criar o perfil de um serviço com o método de instrumentação se o serviço não puder ser reiniciado após o início do computador, um serviço que inicia quando o sistema operacional for iniciado.  
 > 
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil estão localizadas no subdiretório *\Team Tools\Performance Tools* do diretório de instalação do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para saber mais, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando. 
 
 ## <a name="start-the-profiling-session"></a>Iniciar a sessão de criação de perfil  
  Para coletar dados de desempenho de um serviço do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], use a ferramenta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar as variáveis de ambiente adequadas e a ferramenta [VSInstr.exe](../profiling/vsinstr.md) para criar uma cópia instrumentada do arquivo binário do serviço.  

@@ -9,12 +9,12 @@ description: Saiba como obter e gerenciar as chaves do produto (Product Keys) na
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900846"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803818"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -32,14 +32,14 @@ Se tiver solicitado todas as chaves do produto disponíveis na assinatura e tive
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versões comercial e de licenciamento por volume dos produtos
 As assinaturas do Visual Studio oferecem uma seleção de versões comerciais e de licenciamento por volume dos produtos da Microsoft. Alguns produtos estão disponíveis em Downloads somente na versão comercial ou somente na versão de licenciamento por volume, enquanto outros estão disponíveis nas duas versões. Geralmente, os produtos que exigem ativação, como o Windows, o Windows Server e os produtos de cliente Office, são oferecidos apenas na versão comercial por meio de Downloads.
 
-Os clientes de licenciamento por volume também podem baixar software no VSLC (Centro de Serviços de Licenciamento por Volume) para obter as versões de licenciamento por volume dos produtos (e as chaves do produto (Product Keys) correspondentes).  O acesso ao VLSC é gerenciado por administradores designados na organização do cliente.
+Os clientes do licenciamento por volume também podem baixar o software no VLSC (Centro de Serviços de Licenciamento por Volume) para obter versões do licenciamento por volume de produtos, bem como as chaves do produto (Product Keys) correspondentes.  O acesso ao VLSC é gerenciado por administradores designados na organização do cliente.
 
 ## <a name="daily-product-key-claim-limits"></a>Limites diários de solicitações de chaves do produto (Product Key)
 A Microsoft tem o compromisso de proteger a integridade do programa de assinaturas do Visual Studio e o valor do software e dos benefícios que os assinantes legítimos do programa recebem pelo investimento. Como apoio a esse compromisso, a Microsoft implementou limites diários de solicitações de chaves para as assinaturas do Visual Studio. Esses limites restringem o número de chaves que podem ser solicitadas por dia por assinatura.
 
 O limite diário de solicitação é de 10 chaves para todas as assinaturas do Visual Studio, incluindo aquelas oferecidas pelo MPN, BizSpark, MCT Software & Services e MCT, com a exceção do Visual Studio Professional (MPN), que tem um limite diário de solicitações de 7 chaves.
 
-Observação: os limites de solicitação de chaves estão sujeitos a alterações. Verifique aqui os limites atualizados.
+Observação: Os limites de solicitação de chave estão sujeitos a alterações. Verifique aqui os limites atualizados.
 
 Se você tiver solicitado o número máximo de chaves disponíveis para sua assinatura em um período de 24 horas, será exibida uma mensagem de erro informando que o limite foi atingido. O limite é reiniciado a cada 24 horas, começando às 00:01, Hora do Pacífico.
 

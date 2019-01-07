@@ -1,5 +1,5 @@
 ---
-title: Como criar tipos usando Designer de Classe
+title: 'Como: Criar tipos usando o Designer de Classe'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d7ba3fff5bc075f7113ad2a1f2a14e6fa6b91a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842255"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685686"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Como criar tipos usando o Designer de Classe
+# <a name="how-to-create-types-by-using-class-designer"></a>Como: Criar tipos usando o Designer de Classe
 
-Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-los em um diagrama de classe. Para ver os tipos existentes, consulte [Como exibir tipos existentes](how-to-view-existing-types.md).
+Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-los em um diagrama de classe. Para ver os tipos existentes, confira [Como: Exibir tipos existentes](how-to-view-existing-types.md).
 
 ##  <a name="CreateType"></a> Criar um novo tipo
 
@@ -91,8 +91,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar herança entre tipos](how-to-create-inheritance-between-types.md)
-- [Como criar associações entre tipos](how-to-create-associations-between-types.md)
+- [Como: Criar herança entre tipos](how-to-create-inheritance-between-types.md)
+- [Como: Criar associações entre tipos](how-to-create-associations-between-types.md)
 - [Criando e configurando membros de tipo](creating-and-configuring-type-members.md)
-- [Trabalhando com diagramas de classe](working-with-class-diagrams.md)
 - [Projetando classes e tipos](designing-and-viewing-classes-and-types.md)

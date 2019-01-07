@@ -1,8 +1,9 @@
 ---
-title: Introdução à edição
+title: Introdução à edição no editor de códigos
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
@@ -11,20 +12,21 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027599"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803327"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
 Nesta introdução de 10 minutos ao editor de código do Visual Studio, adicionaremos o código a um arquivo para ver algumas das formas pelas quais o Visual Studio facilita a escrita, a navegação e o entendimento do código.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+> [!TIP]
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
-Este artigo considera que você já esteja familiarizado com uma linguagem de programação. Se não estiver, sugerimos que você confira um dos tutoriais de programação, por exemplo, como criar um aplicativo Web com [Python](../ide/quickstart-python.md) ou [C#](../ide/tutorial-csharp-aspnet-core.md), ou criar um aplicativo de console com [Visual Basic](../ide/quickstart-visual-basic-console.md) ou [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Este artigo considera que você já esteja familiarizado com uma linguagem de programação. Se não estiver, sugerimos que você confira um dos tutoriais de programação, por exemplo, como criar um aplicativo Web com [Python](../ide/quickstart-python.md) ou [C#](../get-started/csharp/tutorial-aspnet-core.md), ou criar um aplicativo de console com [Visual Basic](../ide/quickstart-visual-basic-console.md) ou [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Criar um novo arquivo de código
 
@@ -42,7 +44,7 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
 O Visual Studio fornece *snippets de código* úteis que você pode usar para gerar os blocos de código usados com frequência de forma rápida e fácil. Os [snippets de código](../ide/code-snippets.md) estão disponíveis para linguagens de programação diferentes, incluindo C#, Visual Basic e C++. Vamos adicionar o snippet `void Main` de C# em nosso arquivo.
 
-1. Coloque o cursor logo acima da chave de fechamento final **}** no arquivo e digite os caracteres `svm` (que significam `static void Main`&mdash;não se preocupe muito se você não sabe o que isso significa).
+1. Coloque o cursor logo acima da chave de fechamento final **}** no arquivo e digite os caracteres `svm`. (`svm` representa `static void Main`; o método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) é o ponto de entrada para aplicativos C#.)
 
    Uma caixa de diálogo pop-up é exibida com informações sobre o snippet de código `svm`.
 
@@ -50,7 +52,7 @@ O Visual Studio fornece *snippets de código* úteis que você pode usar para ge
 
 1. Pressione a **Guia** duas vezes para inserir o snippet de código.
 
-   Você verá que a assinatura do método `static void Main()` será adicionada ao arquivo. O método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) é o ponto de entrada para aplicativos C#.
+   Você verá que a assinatura do método `static void Main()` será adicionada ao arquivo.
 
 Os snippets de código disponíveis variam em linguagens de programação diferentes. Examine os snippets de código disponíveis para a linguagem escolhendo **Editar** > **IntelliSense** > **Inserir Snippet** e, em seguida, escolhendo a pasta da linguagem. Para o C#, a lista tem este aspecto:
 

@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 06696ca975fb80eaa97cd265c9d45e6174d3b053
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052146"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348539"
 ---
 # <a name="create-solutions-and-projects"></a>Criar soluções e projetos
 
-*Projetos* são contêineres lógicos no Visual Studio que contêm os itens necessários para criar seu aplicativo, como arquivos de código-fonte, bitmaps, ícones e referências de componente e serviço. Quando você cria um novo projeto, o Visual Studio cria uma *solução* para contê-lo. Você poderá, então, adicionar projetos novos ou existentes à solução, se desejar. As soluções também podem conter arquivos não conectados a nenhum projeto específico.
+Os *projetos* armazenam os itens necessários para criação do aplicativo no Visual Studio, como arquivos de código-fonte, bitmaps, ícones e referências de componente e serviço. Quando você cria um novo projeto, o Visual Studio cria uma *solução* para contê-lo. Você poderá, então, adicionar projetos novos ou existentes à solução, se desejar. As soluções também podem conter arquivos não conectados a nenhum projeto específico.
 
 ![Hierarquia de projeto/solução](./media/vside-proj-soln.png)
 

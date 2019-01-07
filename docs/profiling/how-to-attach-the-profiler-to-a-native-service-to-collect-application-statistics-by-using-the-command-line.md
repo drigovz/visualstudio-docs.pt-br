@@ -1,5 +1,5 @@
 ---
-title: Como anexar o Criador de perfil a um serviço nativo para coletar estatísticas do aplicativo usando a linha de comando | Microsoft Docs
+title: 'Como: Anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo usando a linha de comando | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,21 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6360ab5e62994f0b28126062044d6475d5c76954
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf21bb9ba2c2b0747a94fbfbfbb0c03e222337a6
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921438"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592710"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço nativo e coletar estatísticas de desempenho usando o método de amostragem.  
 
 > [!NOTE]
 >  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 > 
-> [!NOTE]
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil estão localizadas no subdiretório *\Team Tools\Performance Tools* do diretório de instalação do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para obter mais informações, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.  
 
  Enquanto o criador de perfil estiver anexado ao serviço, você pode pausar e retomar a coleta de dados.  
 
@@ -98,7 +97,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     -   Pare o serviço.  
 
-         -ou-  
+         - ou -  
 
     -   Digite **VSPerfCmd /detach**  
 

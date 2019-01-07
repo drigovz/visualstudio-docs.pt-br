@@ -1,5 +1,5 @@
 ---
-title: Como exibir herança entre tipos (Designer de Classe)
+title: 'Como: Exibir herança entre tipos (Designer de Classe)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000488"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684477"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Como exibir herança entre tipos no Designer de Classe
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Como: Exibir herança entre tipos no Designer de Classe
 
-Você poderá localizar a relação de herança, se ela existir, entre um tipo base e seus tipos derivados em um diagrama de classe no **Designer de Classe**. Para criar uma relação de herança, se ainda não houver uma, entre dois tipos, confira [Como criar herança entre tipos](how-to-create-inheritance-between-types.md).
+Você poderá localizar a relação de herança, se ela existir, entre um tipo base e seus tipos derivados em um diagrama de classe no **Designer de Classe**. Para criar uma relação de herança, se nenhuma existir, entre dois tipos, confira [Como: Criar herança entre tipos](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Para localizar o tipo base
 
@@ -49,5 +49,5 @@ Você pode também clicar com o botão direito do mouse no tipo cujos tipos deri
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar associações entre tipos](how-to-create-associations-between-types.md)
-- [Exibindo tipos e relações](viewing-types-and-relationships.md)
+- [Como: Criar associações entre tipos](how-to-create-associations-between-types.md)
+- [Exibindo tipos e relações](designing-and-viewing-classes-and-types.md)

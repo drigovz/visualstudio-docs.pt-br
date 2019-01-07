@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 3a4e3ec3c7d581d8c99018b2dd8c89f37e33c6ea
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160160"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348498"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -101,7 +101,7 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 | NuGet<br><br>Pacote NuGet<br> descoberta | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | HTTPS<br><br>http/s | 443<br><br>80/443<br> | Usada para verificar pacotes NuGet assinados.<br><br>Necessária para pesquisar versões e pacotes NuGet |
 | Informações do repositório GitHub | api.github.com | HTTPS | 443 | Necessária para obter informações adicionais sobre pacotes de Bower |
 | Linters da Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | HTTP | 80 | |
-| Criação do projeto do<br>Explorador do Cookiecutter<br>descoberta <br><br>Criação do projeto do <br>Explorador do Cookiecutter<br> criação  | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | HTTPS | 443<br> | Usada para descobrir modelos online de nosso feed recomendado em repositórios github <br><br>Usada para criar um projeto de um modelo de cookiecutter que requer uma instalação sob demanda única de um pacote do Python de cookiecutter do PyPI (índice de pacote do Python) |
+| Criação do projeto do<br>Explorador do Cookiecutter<br>descoberta <br><br>Criação do projeto do <br>Explorador do Cookiecutter<br> criação  | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | HTTPS | 443<br> | Usada para descobrir modelos online de nosso feed recomendado e de repositórios GitHub <br><br>Usada para criar um projeto de um modelo de cookiecutter que requer uma instalação sob demanda única de um pacote do Python de cookiecutter do PyPI (índice de pacote do Python) |
 | Pacote do Python <br>descoberta<br><br>Pacote do Python <br>gerenciamento<br><br>Python <br>Novo Projeto <br>modelos | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | HTTPS | 443 | Fornece a capacidade de pesquisar pacotes de pip<br><br>Usada para instalar o pip automaticamente se ele estiver ausente <br><br> Usada para criar o <br><br>Usada para resolver os seguintes modelos de projeto do Python na caixa de diálogo Novo Projeto para URLs de modelo do cookiecutter:<br> – Projeto de classificador<br>– Projeto de clustering <br> – Projeto de regressão <br> – PyGame usando PyKinect <br> – Projeto Pyvot |
 | Web do Office <br>add-in <br> Manifest <br>Verificação <br>Serviço | verificationservice.osi.office.net | HTTPS | 443 | Usada para validar os manifestos de suplementos de Web do Office |
 | Suplementos do SharePoint <br>e do Office | sharepoint.com | HTTPS | 443 | Usada para publicar e testar o SharePoint e os Suplementos do Office para o SharePoint Online |

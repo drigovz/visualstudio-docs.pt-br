@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062974"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592762"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referência da API do criador de perfil do Visual Studio (nativo)
 As APIs do criador de perfil do Visual Studio permitem que você controle de forma programática a quantidade de dados coletados e insira marcas de carimbo de data/hora e de perfil durante a criação de perfil. Para usar as APIs nativas, inclua o arquivo de cabeçalho *VSPerf.h* e adicione o *VSPerf.lib* ao projeto.  
   
 > [!NOTE]
->  Por padrão, *VSPerf.h* e *VSPerf.lib* estão localizados em uma pasta chamada *PerfSDK*. Diretório *\<unidade>:\Arquivos de Programas\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK*, por exemplo.  
+> Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
   
 ## <a name="in-this-section"></a>Nesta seção  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

@@ -1,5 +1,5 @@
 ---
-title: Como exportar diagramas de classe como imagens (Designer de Classe)
+title: 'Como: Exportar diagramas de classe como imagens (Designer de Classe)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 564260b60e56974df698ba0efd6e319a8ea3e440
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956839"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684502"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>Como exportar diagramas de classe como imagens
+# <a name="how-to-export-class-diagrams-as-images"></a>Como: Exportar diagramas de classe como imagens
 
 Para exportar um diagrama de classe que você criou do código em um projeto, salve o diagrama como uma imagem. Se você quiser exportar diagramas de classe UML em vez disso, consulte [Exportar diagramas como imagens](../../modeling/export-diagrams-as-images.md).
 
@@ -41,5 +41,5 @@ Para atualizar automaticamente as imagens exportadas vinculadas de outros docume
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como imprimir diagramas de classe](how-to-print-class-diagrams.md)
-- [Trabalhando com diagramas de classe](working-with-class-diagrams.md)
+- [Como: Imprimir diagramas de classe](how-to-print-class-diagrams.md)
+- [Trabalhando com diagramas de classe](designing-and-viewing-classes-and-types.md)

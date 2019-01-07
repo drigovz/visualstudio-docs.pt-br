@@ -1,5 +1,5 @@
 ---
-title: Como exibir tipos existentes (Designer de Classe)
+title: 'Como: Exibir tipos existentes (Designer de Classe)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956647"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684438"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Como exibir tipos existentes no Designer de Classe
+# <a name="how-to-view-existing-types-in-class-designer"></a>Como: Exibir tipos existentes no Designer de Classe
 
 Para ver um tipo existente e seus membros, adicione sua forma a um diagrama de classe.
 
 Você pode ver tipos locais e referenciados. Um tipo local existe no projeto atualmente aberto e é leitura/gravação. Um tipo referenciado existe em outro projeto ou em um assembly referenciado e é somente leitura.
 
-Para criar tipos em diagramas de classe, confira [Como criar tipos usando o Designer de Classe](how-to-create-types.md).
+Para projetar novos tipos em diagramas de classes, confira [Como: Criar tipos usando o Designer de Classe](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Para ver tipos de um projeto em um diagrama de classes
 
-1.  Em um projeto no **Gerenciador de Soluções**, abra um arquivo de diagrama de classe (.cd) existente. Ou, se não houver nenhum diagrama de classes, adicione um novo ao projeto. Consulte [Como adicionar diagramas de classe a projetos](how-to-add-class-diagrams-to-projects.md).
+1.  Em um projeto no **Gerenciador de Soluções**, abra um arquivo de diagrama de classe (.cd) existente. Ou, se não houver nenhum diagrama de classes, adicione um novo ao projeto. Confira [Como Adicionar diagramas de classe a projetos](how-to-add-class-diagrams-to-projects.md).
 
 2.  No projeto localizado no **Gerenciador de Soluções**, arraste um arquivo de código-fonte para o diagrama de classe.
 
@@ -65,6 +65,6 @@ No **Gerenciador de Soluções** ou no **Modo de Exibição de Classe**, clique 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como exibir herança entre tipos](how-to-view-inheritance-between-types.md)
-- [Como personalizar diagramas de classe](how-to-customize-class-diagrams.md)
-- [Exibindo tipos e relações](viewing-types-and-relationships.md)
+- [Como: Exibir herança entre tipos](how-to-view-inheritance-between-types.md)
+- [Como: Personalizar diagramas de classe](how-to-customize-class-diagrams.md)
+- [Exibindo tipos e relações](designing-and-viewing-classes-and-types.md)

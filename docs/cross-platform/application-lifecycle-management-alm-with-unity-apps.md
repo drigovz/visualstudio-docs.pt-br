@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320885"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802560"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps com aplicativos do Unity
 
@@ -26,7 +26,7 @@ As tabelas a seguir identificam como os recursos de DevOps no Visual Studio apli
 
 ## <a name="agile-tools"></a>Ferramentas agile
 
-Link de referência: [About Agile tools and Agile project management](/azure/devops/boards/backlogs/overview?view=vsts) (Sobre as ferramentas Agile e o gerenciamento de projetos Agile) (usando o Azure Boards ou o TFS, incluindo o Team Explorer Everywhere)
+Link de referência: [Sobre as ferramentas Agile e o gerenciamento de projetos Agile](/azure/devops/boards/backlogs/overview?view=vsts) (usando o Azure Boards ou o TFS, incluindo o Team Explorer Everywhere)
 
 Comentário Geral: todos os recursos de planejamento e acompanhamento são independentes do tipo de projeto e de linguagens de codificação.
 
@@ -42,7 +42,7 @@ Comentário Geral: todos os recursos de planejamento e acompanhamento são indep
 
 Link de referência: **[Analisar e modelar a arquitetura](../modeling/analyze-and-model-your-architecture.md)**
 
-Comentário geral: embora esses recursos de design sejam independentes da linguagem de codificação ou funcionem com linguagens .NET como C#, eles operam em um paradigma de aplicativo tradicional com hierarquias de objeto e relações de classe. Projetar um jogo no Unity envolve um paradigma totalmente diferente, ou seja, as relações de objetos gráficos, sons, sombreadores, scripts e assim por diante. Por esse motivo, as ferramentas do diagrama de modelagem do Visual Studio não são particularmente relevantes para a totalidade de um projeto do Unity. Eles poderiam ser usados para gerenciar relações em scripts C#, mas essa é apenas uma parte do todo.
+Comentário geral: Embora essas funcionalidades de design sejam independentes da linguagem de codificação ou funcionem com linguagens .NET como C#, elas operam em um paradigma de aplicativo tradicional com hierarquias de objeto e relações de classe. Projetar um jogo no Unity envolve um paradigma totalmente diferente, ou seja, as relações de objetos gráficos, sons, sombreadores, scripts e assim por diante. Por esse motivo, as ferramentas do diagrama de modelagem do Visual Studio não são particularmente relevantes para a totalidade de um projeto do Unity. Eles poderiam ser usados para gerenciar relações em scripts C#, mas essa é apenas uma parte do todo.
 
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|
 |-------------|--------------------------|-------------------------|
@@ -102,9 +102,9 @@ Link de referência: **[Melhorar a qualidade do código](../test/improve-code-qu
 
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|
 |-------------|--------------------------|-------------------------|
-|[Analisar a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sim|Pode analisar o código de script C# no Visual Studio.|
+|[Analisar a qualidade do código gerenciado](../code-quality/code-analysis-for-managed-code-overview.md)|Sim|Pode analisar o código de script C# no Visual Studio.|
 |[Localizar código duplicado usando detecção de clone de código](https://msdn.microsoft.com/library/hh205279.aspx)|Sim|Pode analisar o código de script C# no Visual Studio.|
-|[Medir complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sim|Pode analisar o código de script C# no Visual Studio.|
+|[Medir complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)|Sim|Pode analisar o código de script C# no Visual Studio.|
 |[Gerenciador de Desempenho](../profiling/performance-explorer.md)|Não|Use o [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (site do Unity).|
 |[Analisar problemas de memória do .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono (como usado pelo Unity) para a criação de perfil. Use o [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (documentação do Unity).|
 
@@ -120,7 +120,7 @@ Link de referência: [Build e versão no Azure Pipelines e no TFS](/azure/devops
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorar com HockeyApp
 
-Link de referência: **[Monitorar com HockeyApp](https://www.hockeyapp.net/features/)**
+Link de referência: **[Monitoramento com o HockeyApp](https://www.hockeyapp.net/features/)**
 
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|
 |-------------|--------------------------|-------------------------|
