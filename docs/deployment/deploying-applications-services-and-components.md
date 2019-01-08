@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861625"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805153"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guia de Início Rápido: Introdução à implantação no Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Início Rápido: Introdução à implantação no Visual Studio
 
 Ao implantar um aplicativo, serviço ou componente, você o distribui para instalação em outros computadores, dispositivos, servidores ou na nuvem. Você escolhe o método apropriado no Visual Studio para o tipo de implantação que deseja. (Muitos tipos de aplicativo são compatíveis com outras ferramentas de implantação como implantação de linha de comando ou o NuGet, as quais não são descritas aqui).
 
@@ -41,21 +41,21 @@ Confira os guias de Início Rápido e Tutoriais para obter instruções passo a 
 
 A implantação em uma pasta local é normalmente usada para teste ou para iniciar uma implantação de teste em que outra ferramenta é usada para a implantação final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e .**NET Core**: use a ferramenta Publicar para implantar em uma pasta local. As opções exatas disponíveis dependem do tipo de aplicativo. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**. (Se você já tiver configurado algum perfil de publicação, será necessário clicar em **Criar novo perfil**). Em seguida, escolha **Pasta**. Para saber mais, confira [Implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e **.NET Core**: Use a ferramenta Publicar para implantação em uma pasta local. As opções exatas disponíveis dependem do tipo de aplicativo. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**. (Se você já tiver configurado algum perfil de publicação, será necessário clicar em **Criar novo perfil**). Em seguida, escolha **Pasta**. Para saber mais, confira [Implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
 
     ![Escolha Publicar](../deployment/media/quickstart-publish.png)
 
-- **Tempo de execução do Visual C++**: você pode implantar o tempo de execução do Visual C++ usando a implantação local ou a vinculação estática. Para obter mais informações, confira [Implantando aplicativos nativos da área de trabalho (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Tempo de execução do Visual C++**: Implante o tempo de execução do Visual C++ usando a implantação local ou a vinculação estática. Para obter mais informações, confira [Implantando aplicativos nativos da área de trabalho (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publicar no Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python** e **Node.js**: você pode usar a ferramenta Publicar para implantar rapidamente aplicativos no Serviço de Aplicativo do Azure ou em uma Máquina Virtual do Azure. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e selecione **Publicar**. (Se você já tiver configurado algum perfil de publicação, será necessário clicar em **Criar novo perfil**). Na caixa de diálogo Publicar, escolha **Serviço de Aplicativo** ou **Máquinas Virtuais do Azure** e, em seguida, siga as etapas de configuração.
+- **ASP.NET**, **ASP.NET Core**, **Python** e **Node.js**: Use a ferramenta Publicar para implantar rapidamente aplicativos no Serviço de Aplicativo do Azure ou em uma Máquina Virtual do Azure. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e selecione **Publicar**. (Se você já tiver configurado algum perfil de publicação, será necessário clicar em **Criar novo perfil**). Na caixa de diálogo Publicar, escolha **Serviço de Aplicativo** ou **Máquinas Virtuais do Azure** e, em seguida, siga as etapas de configuração.
 
     ![Escolher o Serviço de Aplicativo do Azure](../deployment/media/quickstart-publish-azure.png "Escolher o Serviço de Aplicativo do Azure")
 
     No Visual Studio 2017 versão 15.7 e posterior, você poderá implantar aplicativos ASP.NET Core no **Serviço de Aplicativo para Linux**.
 
-    Para aplicativos do Python, confira também [Python – publicar no Serviço de Aplicativo do Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    Para aplicativos do Python, confira também [Python – publicar no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Para uma rápida introdução, confira [Publicar no Azure](quickstart-deploy-to-azure.md) e [Publicar no Linux](quickstart-deploy-to-linux.md). Confira também [Publicar um aplicativo ASP.NET Core no Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Para implantação usando o Git, confira [Implantação contínua do ASP.NET Core no Azure com o Git](/aspnet/core/publishing/azure-continuous-deployment).
 
@@ -66,7 +66,7 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publicar na Web ou implantar em compartilhamento de rede
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python**: você pode usar a ferramenta Publicar para implantar em um site usando FTP ou Implantação da Web. Para obter mais informações, confira [Implantar um site da Web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python**: Use a ferramenta Publicar para implantação em um site usando o FTP ou a Implantação da Web. Para obter mais informações, confira [Implantar um site da Web](quickstart-deploy-to-a-web-site.md).
 
     No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e selecione **Publicar**. (Se você já tiver configurado algum perfil de publicação, será necessário clicar em **Criar novo perfil**). Na ferramenta Publicar, escolha a opção desejada e siga as etapas de configuração.
 
@@ -76,7 +76,7 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
     Você também pode implantar aplicativos e serviços ASP.NET de várias outras maneiras. Para obter mais informações, confira [Implantando aplicativos e serviços Web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Tempo de execução do Visual C++**: você pode implantar o tempo de execução do Visual C++ usando a implantação central. Para obter mais informações, confira [Implantando aplicativos nativos da área de trabalho (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Tempo de execução do Visual C++**: Implante o tempo de execução do Visual C++ usando a implantação central. Para obter mais informações, confira [Implantando aplicativos nativos da área de trabalho (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em um servidor Web ou em um compartilhamento de arquivo de rede usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) e [Implantar um aplicativo nativo usando o ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -84,11 +84,11 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
 No Visual Studio, você pode criar pacotes de aplicativos para implantação na Microsoft Store.
 
-- **UWP**: você pode empacotar o aplicativo e implantá-lo usando itens de menu. Para saber mais, confira [Empacotar um aplicativo UWP usando o Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **UWP**: Empacote o aplicativo e implante-o usando itens de menu. Para saber mais, confira [Empacotar um aplicativo UWP usando o Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Criar um pacote de aplicativos](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Área de trabalho do Windows**: você pode implantar na Microsoft Store usando a Ponte de Desktop do Visual Studio 2017 versão 15.4 em diante. Para fazer isso, comece criando um Projeto de Empacotamento de Aplicativos do Windows. Para obter mais informações, confira [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Área de Trabalho do Windows**: Realize a implantação na Microsoft Store usando a Ponte de Desktop no Visual Studio 2017 versão 15.4 e posterior. Para fazer isso, comece criando um Projeto de Empacotamento de Aplicativos do Windows. Para obter mais informações, confira [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Ponte de Desktop](../deployment/media/feature-tour-desktop-bridge.png)
 
