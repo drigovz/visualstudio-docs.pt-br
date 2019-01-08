@@ -3,18 +3,18 @@ title: Benefício Microsoft Azure | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/3/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Saiba como ativar o benefício Azure incluído em sua assinatura do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862329"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739806"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 
@@ -26,11 +26,9 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 
 |                 Nível de Assinatura/Programa                 |           Benefício           |                         Renovável?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     Crédito mensal de US$150     |                             Sim                             |
-|               Visual Studio Enterprise anual                |     Crédito mensal de US$150     |                             Sim                             |
+|              Visual Studio Enterprise Standard               |     Crédito mensal de US$150     |                             Sim                             ||
 |               Visual Studio Enterprise mensal               |        Não disponível        |                                                             |
-|             Visual Studio Professional Standard              |     Crédito mensal de US$ 50      |                             Sim                             |
-|              Visual Studio Professional anual               |     Crédito mensal de US$ 50      |                             Sim                             |
+|             Visual Studio Professional Standard              |     Crédito mensal de US$ 50      |                             Sim                            
 |              Visual Studio Professional mensal              |        Não disponível        |                                                             |
 |                    Visual Studio Test Pro                    |     Crédito mensal de US$ 50      |                             Sim                             |
 |                        Plataformas MSDN                        |     Crédito mensal de US$ 100     |                             Sim                             |
@@ -46,6 +44,11 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 | Visual Studio Enterprise – Desenvolvedor de Software e Serviços de MCT |     Crédito mensal de US$150     |                             Sim                             |
 
 *Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Professional), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)
+
+
+> [!NOTE]
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
@@ -73,17 +76,17 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 
 ## <a name="faq"></a>Perguntas Frequentes
 
-### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>P: Como posso enviar um incidente de suporte técnico de dentro do Portal do Azure?
-R: O envio de um incidente de suporte do Portal do Azure é um processo de três etapas.
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>P: Como fazer para enviar um incidente de suporte técnico no portal do Azure?
+R:  O envio de um incidente de suporte no portal do Azure é um processo de três etapas.
 1. Ative o benefício de suporte técnico e obtenha sua ID de Acesso de ID de Contrato.
 2. Vincule seu contrato de suporte à sua assinatura do Azure.
 3. Envie um incidente de suporte.
 
 Visite a documentação do [Suporte Técnico](vs-tech-support.md) para encontrar os detalhes completos.
 
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: Recebi uma mensagem informando que meu acesso ao Azure vai expirar em breve.  O que posso fazer para continuar usando o Azure?
+### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: Recebi uma mensagem informando que meu acesso ao Azure será encerrado em breve.  O que posso fazer para continuar usando o Azure?
 
-R: Você está recebendo este email porque usa o benefício do Azure associado à sua assinatura do Visual Studio, e essa assinatura expirou ou foi removida.  Para continuar a usar o Azure, você tem várias opções:
+R:  Você está recebendo esse email porque usa o benefício do Azure associado à sua Assinatura do Visual Studio e essa assinatura expirou ou foi removida.  Para continuar a usar o Azure, você tem várias opções:
 
 **Ação recomendada:**
 

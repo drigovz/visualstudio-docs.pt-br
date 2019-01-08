@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561662"
 ---
 # <a name="immediate-window"></a>Janela imediata
 A janela **Imediato** é usada para depurar e avaliar expressões, executar instruções, imprimir valores de variáveis e assim por diante. Ela permite inserir expressões a serem avaliadas ou executadas pela linguagem de desenvolvimento durante a depuração. Para exibir a janela **Imediato**, abra um projeto para edição, escolha **Windows** no menu **Depurar** e selecione **Imediato**, ou pressione CTRL + ALT + I.
@@ -76,7 +76,7 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
 
     A janela **Imediato** executará `MyFunction` e exibirá `4`.
 
-Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).
+Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, confira [Passo a passo: Depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], projetos Web, projetos de dispositivo inteligente e projetos SQL.
 
@@ -128,8 +128,7 @@ Não é possível usar a avaliação de expressão em tempo de design em tipos d
 
 - [Navegar pelo Código com o Depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Janela Comando](../../ide/reference/command-window.md)
-- [Depurando no Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Noções básicas do depurador](../../debugger/getting-started-with-the-debugger.md)
-- [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Introdução ao depurador](../../debugger/debugger-feature-tour.md)   
+- [Passo a passo: Depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Usando expressões regulares no Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

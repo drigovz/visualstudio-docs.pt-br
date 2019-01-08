@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645140"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684974"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guia de produtividade em C# do Visual Studio 2017
 
@@ -115,7 +115,7 @@ O Visual Studio 2017 tem muitos recursos para ajudar você a pesquisar e navegar
 | Ir para definição | **F12** ou **Ctrl**+**Clique**| Ou pressione **Ctrl** enquanto clica para navegar até a definição |
 | Inspecionar Definição | **Alt**+**F12** | Exibição embutida de uma definição |
 | Visualizador de Estrutura | Linhas cinzas pontilhadas entre chaves | Passe o mouse para ver a estrutura do código |
-| Navegação para assemblies descompilados | **F12** ou **Ctrl**+**Clique** | Navegue para a fonte externa (descompilada com o ILSpy) habilitando o recurso: **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar a navegação para fontes descompiladas**. |
+| Navegação para assemblies descompilados | **F12** ou **Ctrl**+**Clique** | Navegue para a fonte externa (descompilada com ILSpy) habilitando a funcionalidade: **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar navegação para fontes descompiladas**. |
 
 ![Ir para Todos e Localizar Todas as Referências](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -135,7 +135,7 @@ Nós adicionamos inúmeros recursos de depuração novos no Visual Studio 2017:
 
 - *Executar até o clique* permite que você passe o mouse ao lado de uma linha de código, pressione o ícone verde 'executar' que é exibido e execute o programa até atingir essa linha.
 - O novo **Auxiliar de Exceção** coloca as informações mais importantes, como qual variável é 'nula' em uma NullReferenceException, na parte superior da caixa de diálogo.
-- A opção [Retroceder](../debugger/how-to-use-intellitrace-step-back.md) a depuração permite voltar para os pontos de interrupção ou para as etapas anteriores e exibir o estado do aplicativo como ele estava anteriormente.
+- A opção [Retroceder](../debugger/view-historical-application-state.md) a depuração permite voltar para os pontos de interrupção ou para as etapas anteriores e exibir o estado do aplicativo como ele estava anteriormente.
 - A opção [Depuração de instantâneo](/azure/application-insights/app-insights-snapshot-debugger) permite investigar o estado de um aplicativo Web online no momento em que uma exceção foi gerada (é necessário estar no Azure).
 
 ![Novo Auxiliar de Exceção no Visual Studio 2017](../ide/media/VSGuide_Debugging.png)

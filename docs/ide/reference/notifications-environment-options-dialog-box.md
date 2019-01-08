@@ -12,15 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1fc3b6cb38c6d5badff99b83e78605ba5cc31e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 21dfbd69cc3c222ab3a9862578bdbe61e9bcfca6
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945123"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684490"
 ---
-# <a name="notifications-environment-options-dialog-box"></a>Caixa de diálogo notificações, ambiente e opções
-Use essa opção para parar de ignorar qualquer notificação que você tenha escolhido ignorar anteriormente por meio da caixa de diálogo Notificações. Para obter mais informações, consulte [Notificações](../../ide/visual-studio-notifications.md).
+# <a name="notifications-environment-options-dialog-box"></a>Caixa de diálogo Notificações, Ambiente, Opções
+
+Use essa opção para parar de ignorar as notificações que você escolheu ignorar anteriormente por meio da caixa de diálogo **Notificações**. Para obter mais informações, confira [Atualizar o Visual Studio](../../install/update-visual-studio.md).
 
 ### <a name="see-also"></a>Consulte também
 

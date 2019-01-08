@@ -3,18 +3,18 @@ title: Benefício de Conta de Desenvolvedor do Windows em assinaturas do Visual 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Saiba mais sobre a Conta de Desenvolvedor do Windows incluída em sua assinatura do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be7a740e22201a230658dec0803a8523f7716462
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df49564a920ea6f674c6d92ec2203962407a751e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832401"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739874"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Conta de Desenvolvedor do Windows nas assinaturas do Visual Studio
 
@@ -53,14 +53,19 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Incluído       |  Sim|
-| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | Incluído                                                            |Sim|
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Incluído       |  Sim|
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Incluído                                                            |Sim|
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                            |  NA|
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              |  Não disponível                                            |  NA|
 | Visual Studio Dev Essentials | NA  | Não disponível                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
-<sup>1</sup>*Inclui: NFR (Não para revenda), FTE, VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer. Exclui: MPN (Microsoft Partner Network), Imagine, MVP (Microsoft Valued Professional), RD (Diretor regional), MCT Software & Services.*
+<sup>1</sup> *Inclui:  NFR (Proibida a revenda), FTE, VSIP (Visual Studio Industry Partner), BizSpark e MCT Software & Services Developer. Exclui:  MPN (Microsoft Partner Network), Imagine, MVP (Microsoft Valued Professional), RD (Diretor Regional) e MCT Software & Services.*
+
+
+> [!NOTE]
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

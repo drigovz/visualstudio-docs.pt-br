@@ -3,18 +3,18 @@ title: Benefício do Office 365 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/4/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Saiba mais sobre o benefício do Office 365 incluído em algumas assinaturas do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244457"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802102"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 em Assinaturas do Visual Studio
 
@@ -31,7 +31,7 @@ Siga estas etapas para baixar e ativar o Office 365:
 0. Para instalar o Office 365, você precisará de uma chave do produto (Product Key).  Clique no link **Obter chave** na listagem do Office 365.
    > [!div class="mx-imgBorder"]
    > ![Obter chave do produto (Product Key) do Office 365](_img/vs-office365/vs-office365-get-key.png)
-0. Uma janela de submenu mostrará a você quaisquer chaves que você já tiver solicitado, bem como aquelas que estejam disponíveis para você.  Para obter uma nova chave, clique em **Reivindicar chave** na listagem **Office Professional Plus 2019**.
+0. Uma janela de submenu mostrará a você quaisquer chaves que você já tiver solicitado, bem como aquelas que estejam disponíveis para você.  Para obter uma nova chave, clique em **Solicitar chave** na listagem **Office Professional Plus 2019**.
    > [!div class="mx-imgBorder"]
    > ![Reivindicar chave do produto (Product Key) do Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Registre a chave que você acabou de solicitar. (Você sempre pode retornar a essa lista para vê-la novamente).
@@ -55,15 +55,20 @@ Se você planeja desenvolver aplicativos para o Office, convém ativar sua [Assi
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail| Disponível       |  Sim          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Sim          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Não disponível       |  N/D          |
-| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | Não disponível                                                            |  N/D          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                            |  N/D          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/D          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 | Visual Studio Dev Essentials | N/D  | Não disponível |N/D |
 
-<sup>1</sup>  *Inclui: NFR (Proibida a Revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Professional), RD (Diretor regional), MCT Software & Services, Imagine, Microsoft Partner Network.*
+<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Professional), RD (Diretor Regional), MCT Software & Services, Imagine e Microsoft Partner Network.*
+
+
+> [!NOTE]
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

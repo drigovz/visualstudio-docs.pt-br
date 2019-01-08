@@ -9,12 +9,12 @@ description: Saiba como localizar e baixar os produtos da Microsoft incluídos n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831426"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803208"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visuals Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.
@@ -30,7 +30,7 @@ Há várias razões pelas quais determinados produtos podem não estar disponív
 - **O produto está publicamente disponível.** Algumas ferramentas, SDKs, DDKs e service packs estão publicamente disponíveis no [Centro de Download da Microsoft](https://www.microsoft.com/download). Alguns desses produtos podem não estar publicados nos Downloads.
 - **O produto ainda não foi lançado.**  Muitas versões de pré-lançamento (beta) e Release Candidate estão disponíveis nos Downloads. Entretanto, nem todas as betas podem ser incluídas. Por exemplo, algumas betas exigem qualificação ou registros especiais. Para obter mais informações sobre programas técnicos beta abertos, acesse o [Microsoft Connect](http://connect.microsoft.com/).
 - **O produto não está disponível no seu país.** Alguns produtos da Microsoft não estão disponíveis devido a restrições regionais.
-- **Software redundante.** Os downloads e as chaves do produto de determinados pacotes do Office e do Office autônomo não estão mais disponíveis nas assinaturas que incluem o Office. Os downloads e as chaves do produto estão disponíveis para o pacote do Office correspondente mais atual da mesma versão.  Por exemplo, se você pesquisar o Powerpoint 2010, a pesquisa não retornará nenhum resultado.  No entanto, você pode pesquisar pelo Office 2010, ou seja, o pacote do Office que continha o Powerpoint 2010 e baixar o pacote.
+- **Software redundante.** Os downloads e as chaves do produto de determinados pacotes do Office e do Office autônomo não estão mais disponíveis nas assinaturas que incluem o Office. Os downloads e as chaves do produto estão disponíveis para o pacote do Office correspondente mais atual da mesma versão.  Por exemplo, se você pesquisar PowerPoint 2010, a pesquisa não retornará nenhum resultado.  No entanto, você poderá pesquisar Office 2010 – o pacote do Office que continha o PowerPoint 2010 – e baixar o pacote.
 
 ## <a name="what-do-i-get"></a>O que eu posso obter?
 O número e os tipos de downloads dependem do seu nível de assinatura e das suas associações ao programa.  Os assinantes com assinaturas padrão do Visual Studio Enterprise, por exemplo, podem ter downloads disponíveis diferentes dos de assinantes que obtêm suas assinaturas por meio de uma assinatura do programa Microsoft Partner Network ou BizSpark.  Para saber mais sobre quais downloads estão disponíveis para cada nível de assinatura, baixe a lista de [Produtos por nível de benefício](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).

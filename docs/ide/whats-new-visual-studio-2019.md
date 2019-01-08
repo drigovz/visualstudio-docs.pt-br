@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019 Preview
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos na versão prévia do Visual Studio 2019.
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
 ms.custom: seodec18
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 56c9a30ee534a2812455b6777f25b9730f5985b6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159744"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647758"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Novidades no Visual Studio 2019 Preview
 
@@ -50,6 +50,8 @@ A primeira coisa que você observará quando abrir o Visual Studio 2019 será su
    ![A nova janela de início no Visual Studio 2019](../ide/media/start-window.png)
 
 Essa nova janela de início apresenta opções para clonar ou fazer check-out de código, abrir um projeto ou solução, abrir uma pasta local ou criar um novo projeto. Apresentar essas opções em uma caixa de diálogo simples ajuda tanto iniciantes quanto usuários avançados do Visual Studio a acessar o código mais rapidamente.
+
+Para obter mais informações, confira a postagem no blog [Get to code: How we designed the new Visual Studio start window](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Direto ao código: como projetamos a nova janela de início do Visual Studio).
 
 ### <a name="better-search"></a>Melhor pesquisa
 
@@ -82,6 +84,8 @@ Você também pode formatar o modo como um valor é exibido dentro das janelas I
 O [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) é um serviço para desenvolvedores que permite compartilhar uma base de código e seu contexto com um membro da equipe e ter uma colaboração bidirecional instantânea diretamente no Visual Studio. Com o Live Share, um membro da equipe pode ler, navegar, editar e depurar um projeto compartilhado com ele de forma fácil e segura.
 
 E com o Visual Studio 2019 Preview, esse serviço é instalado por padrão.
+
+Para obter mais informações, confira a postagem no blog [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share para revisões de código em tempo real e educação interativa).
 
 ## <a name="modern-development-support"></a>Suporte de desenvolvimento moderno
 
@@ -122,7 +126,7 @@ Quando fizemos a primeira versão prévia da extensão do IntelliCode para Visua
 
 E se você usa C#, também adicionamos a capacidade de treinar um modelo personalizado em seu próprio código.
 
-Para obter mais informações sobre a extensão e baixá-la, confira a página [Visual Studio IntelliCode – Versão prévia](https://go.microsoft.com/fwlink/?linkid=872707) no Microsoft DevLabs.
+Para obter mais informações sobre as atualizações recentes, confira a postagem no blog [Visual Studio IntelliCode supports more languages and learns from your code](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (O Visual Studio IntelliCode dá suporte a mais idiomas e aprende com o código). Para obter mais informações sobre a extensão e como baixá-la, confira a página [Visual Studio IntelliCode – Versão Prévia](https://go.microsoft.com/fwlink/?linkid=872707) no Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Fornecer comentários
 
@@ -135,4 +139,5 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 ## <a name="see-also"></a>Consulte também
 
 * [Notas sobre a versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Microsoft Connect(); conferência de 2018](https://www.microsoft.com/connectevent)
 * [Novidades no Visual Studio 2017](whats-new-in-visual-studio.md)

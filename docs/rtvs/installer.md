@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 91204ea5b4303b38397d90761fd9648159174dd4
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667048"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348398"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Bem-vindo às Ferramentas do R para Visual Studio
 
@@ -29,7 +29,7 @@ Obrigado por instalar às RTVS (Ferramentas do R para Visual Studio)! Confira e 
 - [Como instalar as Ferramentas do R para Visual Studio](installing-r-tools-for-visual-studio.md)
 - [Submit and browse bugs and feature requests on GitHib](https://github.com/Microsoft/RTVS/issues) (Enviar e procurar erros e solicitações de recursos no GitHi)
 - [Explore and contribute to the source code](https://github.com/Microsoft/RTVS/blob/master/LICENSE) (Explorar e contribuir no código-fonte)
-- Para enviar comentários sem usar o Github (o que é preferível), use o menu **Ferramentas do R > Comentários** do Visual Studio.
+- Para enviar comentários sem usar o GitHub (preferencial), use o menu **Ferramentas do R > Comentários** do Visual Studio.
 
 ## <a name="microsoft-r-distributions"></a>Distribuições do Microsoft R
 

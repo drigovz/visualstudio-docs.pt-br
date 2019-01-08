@@ -3,18 +3,18 @@ title: O benefício MSDN Magazine nas assinaturas do Visual Studio | Microsoft D
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/13/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Inscreva-se para receber a assinatura do MSDN Magazine incluída na assinatura do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d108fa34faec04ce2f09e8ab5b55dfe19f0d61d5
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941263"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739583"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>O benefício MSDN Magazine nas assinaturas do Visual Studio
 
@@ -51,18 +51,21 @@ A Edição digital está disponível para membros do Visual Studio Dev Essential
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado |Edição impressa       |  Nº  Disponível apenas para novos assinantes          |
-| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | Edição impressa                                                            |Nº  Disponível apenas para novos assinantes         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado |Edição impressa       |  Nº  Disponível apenas para novos assinantes          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Edição impressa                                                            |Nº  Disponível apenas para novos assinantes         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Edição impressa                                             |  Nº  Disponível apenas para novos assinantes         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Edição impressa                                              | Nº  Disponível apenas para novos assinantes         |
 |Visual Studio Enterprise, Visual Studio Professional (nuvem mensal)   | Azure |Não disponível      |  NA         |
 |Visual Studio Dev Essentials| NA |Edição digital       |  Sim|
 
-<sup>1</sup>  *Edição impressa:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
+<sup>1</sup> *Edição impressa:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise) e Imagine (Premium).*
 
-*Edição digital: MCT Software & Services, MVP (Microsoft Valued Professional) (Professional), RD (Diretor regional).*
+*Edição digital: MCT Software & Services, Microsoft Valued Professional (Professional) e RD (Diretor Regional).*
 
-*Exclui: Imagine (Standard), BizSpark, MCT Software & Services Developer*
+*Exclui:  Imagine (Standard), BizSpark e MCT Software & Services Developer*
+
+> [!NOTE]
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.

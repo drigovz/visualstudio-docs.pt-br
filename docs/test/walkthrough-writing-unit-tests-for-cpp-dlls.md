@@ -1,5 +1,5 @@
 ---
-title: Como gravar testes de unidade para DLLs em C++
+title: 'Como: Escrever testes de unidade para DLLs C++'
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877244"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740160"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Como gravar testes de unidade para DLLs em C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Como: Escrever testes de unidade para DLLs C++
 
 Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a metodologia de teste primeiro. As etapas básicas são as seguintes:
 
@@ -329,7 +329,7 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
 ## <a name="see-also"></a>Consulte também
 
-- [Adicionar testes de unidade a aplicativos C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Adicionar testes de unidade a aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Depurar código nativo](../debugger/debugging-native-code.md)
 - [Passo a passo: Criando e usando uma biblioteca de vínculo dinâmico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)

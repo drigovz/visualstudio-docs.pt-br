@@ -1,5 +1,5 @@
 ---
-title: Como especificar comandos pré e pós-instrumento | Microsoft Docs
+title: 'Como: Especificar comandos pré e pós-instrumento | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 94c27fe4616ffcf541602cc8ab61bbaa26ddbb18
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844632"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592996"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Como especificar comandos de pré e pós-instrumentação
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Como: Especificar comandos pré e pós-instrumento
 
 Você pode especificar comandos que são executados antes ou depois que os binários em uma sessão de desempenho são instrumentados. Qualquer comando que pode ser emitido na linha de comando pode ser especificado como um evento pré-instrumento ou pós-instrumento. Por exemplo, é possível especificar comandos que automatizam a desistência de um assembly com uma chave de nome forte em um arquivo de lote que é executado depois que os binários são instrumentados.
 
@@ -31,21 +31,7 @@ Você pode especificar comandos para todos os binários instrumentados na execu�
 
 O diretório de trabalho no qual os comandos são executados depende do sistema operacional em que você está executando o [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] e da plataforma de destino do aplicativo analisado.
 
- **Computadores de 32 bits**
-
-Em computadores de 32 bits, o diretório padrão das ferramentas do criador de perfil é *drive\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
-
-**Computadores de 64 bits**
-
-Em computadores de 64 bits, especifique o caminho de acordo com a plataforma de destino do aplicativo analisado:
-
-- No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:
-
-     *drive\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
-
-- No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:
-
-     *drive\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
+Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>Para especificar comandos pré-instrumentos
 

@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Usar APIs do criador de perfil | Microsoft Docs'
+title: 'Passo a passo: Usando APIs do criador de perfil | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592632"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Passo a passo: usando APIs do criador de perfil
+# <a name="walkthrough-using-profiler-apis"></a>Passo a passo: Usando APIs do criador de perfil
 
 O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Você usará as APIs do criador de perfil para limitar a quantidade de dados coletados durante a criação de perfil de instrumentação.  
   
@@ -32,16 +32,18 @@ O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferram
   
  O criador de perfil do Visual Studio permite que você limite a coleta de dados. Este passo a passo oferece um exemplo de como limitar a coleta de dados usando as APIs do criador de perfil. O criador de perfil do Visual Studio fornece uma API para controlar a coleta de dados de dentro de um aplicativo.  
   
- Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+ Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
   
- Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Profiler>.  
+ Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Profiler>. 
+ 
+  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Este passo a passo pressupõe que a escolha do ambiente de desenvolvimento está configurada para dar suporte à depuração e amostragem. Os tópicos a seguir fornecem uma visão geral desses pré-requisitos:  
   
- [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)  
+ [Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)  
   
- [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Por padrão, quando o criador de perfil é iniciado, ele coleta dados no nível global. O código a seguir no início do programa desativa a criação de perfil global.  
   
@@ -60,7 +62,7 @@ DataCollection.CurrentId);
 1.  Crie um novo projeto C# no Visual Studio, ou use uma compilação de linha de comando, dependendo de sua preferência.  
   
     > [!NOTE]
-    >  A compilação deve fazer referência à biblioteca *Microsoft.VisualStudio.Profiler.dll*, localizada no diretório *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+    >  O build precisa referenciar a biblioteca *Microsoft.VisualStudio.Profiler.dll*, localizada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.  
   
 2.  Copie e cole o código a seguir em seu projeto:  
   
@@ -151,17 +153,17 @@ DataCollection.CurrentId);
   
      **VsPerfCLREnv /traceon**  
   
-3.  Digite este comando: **VSInstr \<filename>.exe**  
+3.  Digite o seguinte comando: **VSInstr \<nomedoarquivo>.exe**  
   
-4.  Digite este comando: **VSPerfCmd /start:trace /output:\<filename>.vsp**  
+4.  Digite o seguinte comando: **VSPerfCmd /start:trace /output:\<nomedoarquivo>.vsp**  
   
-5.  Digite este comando: **VSPerfCmd /globaloff**  
+5.  Digite o seguinte comando: **VSPerfCmd /globaloff**  
   
 6.  Execute seu programa.  
   
-7.  Digite este comando: **VSPerfCmd /shutdown**  
+7.  Digite o seguinte comando: **VSPerfCmd /shutdown**  
   
-8.  Digite este comando: **VSPerfReport /calltrace:\<filename>.vsp**  
+8.  Digite o seguinte comando: **VSPerfReport /calltrace:\<nomedoarquivo>.vsp**  
   
      Um arquivo .*csv* é criado no diretório atual com os dados de desempenho resultantes.  
   
