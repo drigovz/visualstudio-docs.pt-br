@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Attach | Microsoft Docs
+title: 'Idebugdocumenthelper:: Attach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97ddb49f61e9df4044eb6e16b853e6cf8155162a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f0f397f70d994d0997163a06766d32c35e9b2ab7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726966"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090136"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
-Adiciona este documento à árvore do documento.  
+Adiciona este documento na árvore do documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugDocumentHelper*  pddhParent  
 );  
@@ -38,7 +38,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parâmetros  
  `pddhParent`  
- [in] A árvore do documento onde este documento será adicionado. Pode ser NULL.  
+ [in] A árvore de documentos em que este documento será adicionado. Pode ser NULL.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT Attach(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método adiciona este documento ao documento de árvore, usando `pddhParent` como pai. Se o `pddhParent` é `NULL`, este documento será o documento de nível superior.  
+ Esse método adiciona este documento ao documento de árvore, usando `pddhParent` como pai. Se o `pddhParent` é `NULL`, este documento será o documento de nível superior.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   

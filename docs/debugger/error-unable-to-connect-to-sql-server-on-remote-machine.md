@@ -1,8 +1,6 @@
 ---
 title: 'Erro: Não é possível conectar ao SQL Server na máquina remota | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlle_dcom_accessdenied
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d714bf188d995fa786fecd1038699f16743a4059
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: db9e2e7c489ace9436f101259cccac144e1a933e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858520"
 ---
-# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erro: não foi possível se conectar ao SQL Server na máquina remota
+# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erro: Não é possível se conectar ao SQL Server no computador remoto
 Não é possível conectar ao SQL Server no computador remoto *nome*. Acesso negado. Verifique se você instalou o depurador remoto no computador remoto. Se o computador remoto não estiver em um domínio ou se o Visual Studio for executado em uma conta local, o computador remoto deverá ter uma conta com o mesmo nome de usuário e senha que a conta local.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  

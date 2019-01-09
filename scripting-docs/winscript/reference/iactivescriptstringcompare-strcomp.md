@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fea6ae4d5819680f38d19f2cd6ea1cf9bf9b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725066"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090097"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
 Define o método de comparação de cadeia de caracteres para o mecanismo de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT StrComp(  
 // The first string:  
     [in] BSTR bszStr1,    
@@ -61,10 +61,10 @@ HRESULT StrComp(
 |`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado).|  
   
 ## <a name="remarks"></a>Comentários  
- Este método é chamado sempre que uma comparação de cadeia de caracteres é executada.  
+ Esse método é chamado sempre que uma comparação de cadeia de caracteres é executada.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como a função de comparação de cadeia de caracteres de sobrecarga. Sobrecarga é permitida quando você usar [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) definir SCRIPTPROP_STRINGCOMPAREINSTANCE.  
+ O exemplo a seguir mostra como sobrecarregar a função de comparação de cadeia de caracteres. Sobrecarga é permitida quando você usa [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) definir SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

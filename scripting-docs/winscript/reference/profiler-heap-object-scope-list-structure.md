@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f0972faee11e15bd5d0e9a219e439df49d9672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734256"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088563"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>Estrutura PROFILER_HEAP_OBJECT_SCOPE_LIST
-Essa estrutura é associada a somente os objetos de função. A lista de escopo representa o fechamento da função como uma lista de escopos, onde cada escopo é um objeto de heap com uma lista de propriedades associado que representa as variáveis em cada escopo fornecido. Em alguns casos, os nomes de objetos em que o escopo não fiquem disponível e somente seu índice na lista de propriedades está disponível.  
+Essa estrutura é associada a apenas os objetos de função. A lista de escopo representa o fechamento da função como uma lista de escopos, onde cada escopo é um objeto de heap com uma lista de propriedade associada que representa as variáveis em cada escopo fornecido. Em alguns casos, os nomes de objetos no escopo não esteja disponível e apenas seu índice na lista de propriedades está disponível.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_ID scopes[];} PROFILER_HEAP_OBJECT_SCOPE_LIST;  
 ```  
   

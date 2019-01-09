@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fd7ddd263aab6742e5e6a23c86f7c4480c6561a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be79bbd30a5ec7e177cab9fc7c49161a74b20a46
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728026"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089031"
 ---
 # <a name="imachinedebugmanagerenumapplications"></a>IMachineDebugManager::EnumApplications
-Retorna um enumerador da lista atual de execução de aplicativos.  
+Retorna um enumerador da lista atual de aplicativos em execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT EnumApplications(  
    IEnumRemoteDebugApplications**  ppeda  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumApplications(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppeda`  
- [out] Enumerador que contém a lista atual de execução de aplicativos.  
+ [out] Enumerador que contém a lista atual de aplicativos em execução.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT EnumApplications(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna um enumerador da lista atual de execução de aplicativos. O depurador IDE usa esse método para exibir e anexar aplicativos para fins de depuração.  
+ Esse método retorna um enumerador da lista atual de aplicativos em execução. O IDE do depurador usa esse método para exibir e anexar a aplicativos para fins de depuração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)

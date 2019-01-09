@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42b57e63716804258ba79ed4e4aceae118cb5f54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d813b9d1aa32368abddb6127450dffa8868facc5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729156"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086886"
 ---
 # <a name="iremotedebugapplicationenumthreads"></a>IRemoteDebugApplication::EnumThreads
-Enumera todos os threads conhecidos para ser associado ao aplicativo.  
+Enumera todos os threads conhecidos a serem associados com o aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT EnumThreads(  
    IEnumRemoteDebugApplicationThreads**  pperdat  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumThreads(
   
 #### <a name="parameters"></a>Parâmetros  
  `pperdat`  
- [out] Enumerador que lista todos os threads conhecidos para ser associado ao aplicativo.  
+ [out] Enumerador que lista todos os threads conhecidos a serem associados com o aplicativo.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT EnumThreads(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método enumera todos os threads conhecidos para ser associado ao aplicativo. Novos threads podem ser adicionados a qualquer momento.  
+ Esse método enumera todos os threads conhecidos a serem associados com o aplicativo. Novos threads podem ser adicionados a qualquer momento.  
   
 ## <a name="see-also"></a>Consulte também  
  [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)

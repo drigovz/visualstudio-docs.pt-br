@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Clone | Microsoft Docs
+title: 'IActiveScript:: clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b0b83bcf86bcc56701d11f22640df966334697b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 084da486d2e5831176130ccd080b9e09a80c9bcc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641586"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093659"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
-Clona o mecanismo de script atual (menos qualquer estado de execução atual), retornando um mecanismo de script carregado que não tem nenhum site no thread atual. As propriedades desse novo mecanismo de script será idênticas para as propriedades que do mecanismo de script original estaria em se foram uma transição para o estado inicializado.  
+Clona o mecanismo de script atual (menos qualquer estado de execução atual), retornando um mecanismo de script carregado com nenhum site no thread atual. As propriedades desse novo mecanismo de script serão idênticas às propriedades que do mecanismo de script original seria em se ele foi transferida volta ao estado inicializado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Clone(  
     IActiveScript **ppscript  // receives pointer to IActiveScript  
 );  
@@ -38,7 +38,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppscript`  
- [out] Endereço de uma variável que recebe um ponteiro para o [IActiveScript](../../winscript/reference/iactivescript.md) interface do mecanismo de script clonado. O host deve criar um site e a chamada a [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) método sobre o novo mecanismo de script antes de ele estar no estado inicializado e, portanto, utilizável.  
+ [out] Endereço de uma variável que recebe um ponteiro para o [IActiveScript](../../winscript/reference/iactivescript.md) interface de mecanismo de script clonado. O host deve criar um site e uma chamada a [IActiveScript:: Setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md) método sobre o novo mecanismo de script antes de estar no estado inicializado e, portanto, utilizável.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um dos seguintes valores:  
@@ -51,11 +51,11 @@ HRESULT Clone(
 |`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado).|  
   
 ## <a name="remarks"></a>Comentários  
- O `IActiveScript::Clone` método é uma otimização de `IPersist*::Save`, `CoCreateInstance`, e `IPersist*::Load`, portanto, o estado do mecanismo de script novo deve ser o mesmo que o estado do mecanismo de script original foram salvos e carregado em um novo mecanismo de script. Itens nomeados são duplicados no mecanismo de script clonado, mas ponteiros para objetos específicos para cada item são esquecidos e são obtidos com o [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) método. Isso permite que um modelo de objeto idênticas com pontos de entrada por thread (um modelo de apartment) a ser usado.  
+ O `IActiveScript::Clone` método é uma otimização das `IPersist*::Save`, `CoCreateInstance`, e `IPersist*::Load`, portanto, o estado do mecanismo de script novo deve ser o mesmo como se o estado do mecanismo de script original foram salvos e carregado em um novo mecanismo de script. Itens nomeados são duplicados no mecanismo de script clonado, mas são esquecidos de ponteiros para objetos específicos para cada item e são obtidos com o [iactivescriptsite:: getItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) método. Isso permite que um modelo de objeto idênticas com pontos de entrada (um modelo de apartment) por thread a ser usado.  
   
- Esse método é usado para hosts de servidor multi-threaded que podem executar várias instâncias do mesmo script. O mecanismo de script pode retornar `E_NOTIMPL`, caso em que o host pode alcançar o mesmo resultado duplicando o estado persistente e criando uma nova instância do mecanismo de script com um `IPersist*` interface.  
+ Esse método é usado para hosts de servidor multithread que podem executar várias instâncias do mesmo script. O mecanismo de script pode retornar `E_NOTIMPL`, caso em que o host pode obter o mesmo resultado duplicando o estado persistente e criar uma nova instância do mecanismo de script com um `IPersist*` interface.  
   
- Esse método pode ser chamado de threads não base sem resultando em um texto explicativo de base não a objetos de host ou para o [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interface.  
+ Esse método pode ser chamado de threads não base sem resultando em um balão não base para objetos de host ou o [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interface.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -16,19 +16,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a3343c7e3747c48a4c43a1c1ac17fe6502aee3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb3f71e9a8a383e2362bacb17698f4eec58f464e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724686"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092191"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
-Notifica o criador de perfil de objeto que o mecanismo de script terminar de executar uma função chamada que não é uma chamada em modelo de objeto de documento (DOM).  
+Notifica o criador de perfil de objeto que o mecanismo de script terminar de executar uma função chamada que não é uma chamada no modelo de objeto de documento (DOM).  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnFunctionExit(  
     [in] PROFILER_TOKEN scriptId,   
     [in] PROFILER_TOKEN functionId);  
@@ -45,7 +45,7 @@ HRESULT OnFunctionExit(
  O valor de retorno desse método é ignorado pelo mecanismo de script.  
   
 ## <a name="remarks"></a>Comentários  
- Chamadas de DOM, o mecanismo de script chama [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) em vez de `IActiveScriptProfilerCallback::OnFunctionExit`. Isso é devido ao grande número de exclusivos métodos e propriedades no DOM.  
+ Para chamadas de DOM, o mecanismo de script chama [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) em vez de `IActiveScriptProfilerCallback::OnFunctionExit`. Isso é devido ao grande número de métodos exclusivos e propriedades no DOM.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   

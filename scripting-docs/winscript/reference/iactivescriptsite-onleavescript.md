@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aba20c13dc5568165641c5c7b8e871e0b5e8f322
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7d08d58fc788d2d10ed044808ca40a5f4ea929c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725166"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093152"
 ---
 # <a name="iactivescriptsiteonleavescript"></a>IActiveScriptSite::OnLeaveScript
-Informa ao host que o mecanismo de script foi retornado de execução de código de script.  
+Informa ao host que o mecanismo de script retornou de executar o código de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnLeaveScript(void);  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT OnLeaveScript(void);
  Retorna `S_OK` se houver êxito.  
   
 ## <a name="remarks"></a>Comentários  
- O mecanismo de script deve chamar esse método antes de devolver o controle para um aplicativo de chamada que inseriu o mecanismo de script. Por exemplo, se o script chama um objeto que dispara um evento tratado pelo mecanismo de script, o mecanismo de script deve chamar o [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md) método antes de executar o evento e deve chamar `IActiveScriptSite::OnLeaveScript`depois de executar o evento antes de retornar para o objeto que disparou o evento. Chamadas para esse método podem ser aninhadas. Todas as chamadas para `IActiveScriptSite::OnEnterScript` requer uma chamada correspondente para esse método.  
+ O mecanismo de script deve chamar esse método antes de devolver o controle para um aplicativo de chamada que inseriu o mecanismo de script. Por exemplo, se o script chama um objeto que, em seguida, aciona um evento como manipulado pelo mecanismo de script, o mecanismo de script deve chamar o [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md) método antes de executar o evento e deve chamar `IActiveScriptSite::OnLeaveScript`depois de executar o evento antes de retornar para o objeto que disparou o evento. Chamadas para esse método podem ser aninhadas. Todas as chamadas para `IActiveScriptSite::OnEnterScript` requer uma chamada correspondente para esse método.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

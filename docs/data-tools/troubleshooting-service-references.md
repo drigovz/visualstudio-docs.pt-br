@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919463"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referências de serviço
 
@@ -49,7 +48,7 @@ Para corrigir esse erro:
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Erro ao acessar um serviço em uma área de trabalho remota
 
-Quando um usuário acessa um serviço WCF hospedado na Web sobre uma conexão de área de trabalho remota e o usuário não tem permissões administrativas, autenticação NTLM será usada. Se o usuário não tem permissões administrativas, o usuário pode receber a seguinte mensagem de erro: "a solicitação HTTP é autorizada no esquema de autenticação de cliente 'Anonymous'. O cabeçalho de autenticação recebido do servidor foi 'NTLM' ".
+Quando um usuário acessa um serviço WCF hospedado na Web sobre uma conexão de área de trabalho remota e o usuário não tem permissões administrativas, autenticação NTLM será usada. Se o usuário não tem permissões administrativas, o usuário pode receber a seguinte mensagem de erro: "A solicitação HTTP é autorizada no esquema de autenticação de cliente 'Anonymous'. O cabeçalho de autenticação recebido do servidor foi 'NTLM' ".
 
 Para corrigir esse erro:
 
@@ -84,7 +83,7 @@ Para corrigir esse erro, você deve recriar manualmente o projeto de serviço:
 
 4.  Carregar o projeto de serviço do WCF.
 
-5.  No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
+5.  No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
 
 6.  Na **Gerenciador de soluções**, selecione o projeto de serviço do WCF.
 
@@ -96,7 +95,7 @@ Quando ele tenta exibir uma representação XML dos dados em um [!INCLUDE[ss_dat
 
 Para corrigir esse erro, desabilite os feeds RSS:
 
-1.  No Internet Explorer, sobre o **ferramentas** menu, clique em **opções da Internet**.
+1.  No Internet Explorer, no menu Ferramentas **, clique em Opções da Internet**.
 
 2.  Sobre o **conteúdo** guia da **Feeds** seção, clique em **configurações**.
 

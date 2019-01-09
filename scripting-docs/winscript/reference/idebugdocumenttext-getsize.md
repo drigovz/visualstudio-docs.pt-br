@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3152150c46793a71ec7a46b6ab2097efa06f6fc8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c171b894856141d8c42ae641f1d08b058cd3d9c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727066"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087019"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
-Retorna o número de linhas e o número de caracteres do documento.  
+Retorna o número de linhas e o número de caracteres no documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetSize(  
    ULONG*  pcNumLines,  
    ULONG*  pcNumChars  
@@ -39,10 +39,10 @@ HRESULT GetSize(
   
 #### <a name="parameters"></a>Parâmetros  
  `pcNumLines`  
- [out] Número de linhas do documento. Se esse parâmetro for NULL, o método não retorna um valor.  
+ [out] Número de linhas no documento. Se esse parâmetro for NULL, o método não retorna um valor.  
   
  `pcNumChars`  
- [out] Número de caracteres do documento. Se esse parâmetro for NULL, o método não retorna um valor.  
+ [out] Número de caracteres no documento. Se esse parâmetro for NULL, o método não retorna um valor.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -52,7 +52,7 @@ HRESULT GetSize(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o número de linhas e o número de caracteres do documento.  
+ Esse método retorna o número de linhas e o número de caracteres no documento.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

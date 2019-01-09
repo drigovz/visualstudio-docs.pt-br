@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5126a9efefaab611cd27d2104c40918f8dc7c7e3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64cd178dc997f30f7afbf80279dda42d3c1b7be4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641056"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089343"
 ---
 # <a name="debugtext-constants"></a>Constantes DEBUG_TEXT
-Usado durante a [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).  
+Usado durante [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef DWORD DEBUG_TEXT;  
 ```  
   
@@ -34,10 +34,10 @@ typedef DWORD DEBUG_TEXT;
 |--------------|-----------|-----------------|  
 |DWORD DEBUG_TEXT_ISEXPRESSION|0x00000001|Indica que o texto é uma expressão em vez de uma instrução. Este sinalizador pode afetar a maneira na qual o texto é analisado por alguns idiomas.|  
 |DEBUG_TEXT_RETURNVALUE|0x00000002|Se um valor de retorno estiver disponível, ele será usado pelo chamador.|  
-|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|Não permitir que os efeitos colaterais. Se esse sinalizador estiver definido, a avaliação da expressão não deve alterar nenhum estado de tempo de execução.|  
+|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|Não permita que os efeitos colaterais. Se esse sinalizador estiver definido, a avaliação da expressão não deve alterar nenhum estado de tempo de execução.|  
 |DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Permitir que os pontos de interrupção durante a avaliação do texto. Se este sinalizador não for definido, os pontos de interrupção serão ignorados durante a avaliação do texto.|  
-|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Permitir relatórios de erros durante a avaliação do texto. Se este sinalizador não for definido, em seguida, erros não serão reportados no host durante a avaliação.|  
-|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica que a expressão será avaliada em um contexto de código em vez de executar a própria expressão.|  
+|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Permitir que os relatórios de erros durante a avaliação do texto. Se este sinalizador não for definido, erros serão não relatados ao host durante a avaliação.|  
+|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica que a expressão será avaliada para um contexto de código em vez de executar a expressão em si.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

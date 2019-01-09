@@ -1,5 +1,5 @@
 ---
-title: 'Método Ijsdebugframe: | Microsoft Docs'
+title: 'Método ijsdebugframe:: Getstackrange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cce4d4542f4f76657475636ad6d8e430e1909181
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 049be8a665dae396d4e92fe847e757b266dc6025
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727866"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090279"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>Método IJsDebugFrame::GetStackRange
-Retorna o intervalo de endereço absoluto do quadro de pilhas lógico do JavaScript.  
+Retorna o intervalo de endereços absoluto do registro de ativação JavaScript lógico.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetStackRange(  
    UINT64 *pStart,  
    UINT64 *pEnd  
@@ -37,15 +37,15 @@ HRESULT GetStackRange(
   
 #### <a name="parameters"></a>Parâmetros  
  `pStart`  
- [out] Inferior a maioria dos ponteiro de pilha do quadro.  
+ [out] Baixo, a maioria dos ponteiro de pilha do quadro.  
   
  `pEnd`  
- [out] Ponteiro de pilha mais superior do quadro.  
+ [out] Principais a maioria dos ponteiros do quadro.  
   
 ## <a name="return-value"></a>Valor de retorno  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é útil para juntando rastreamentos de pilha intercalada coletados a partir de vários tempos de execução. O início, fim ponteiros de pilha podem abranger vários registros de ativação de máquina física (para os quadros de tempo de execução de JavaScript interpretados). Iniciar > terminar como a pilha cresce de alto para baixo endereço.  
+ Esse método é útil para reunir rastreamentos de pilha intercalados, coletados de vários tempos de execução. O início, fim ponteiros de pilha podem abranger vários registros de ativação de computador físico (para quadros de tempo de execução do JavaScript interpretados). Iniciar > terminar à medida que a pilha cresce de alto para baixo endereço.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** jscript9diag.h  

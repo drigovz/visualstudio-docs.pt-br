@@ -12,18 +12,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f560b22e6e759d6e8fa2760e1321b0cfa79a77e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5ec2be5f35d15f0f7260e224b53ad4d8f07e8734
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733886"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086496"
 ---
 # <a name="profilerexternalobjectaddress-type"></a>Tipo PROFILER_EXTERNAL_OBJECT_ADDRESS
-O endereço externo do objeto de um objeto, como um objeto C++ alocados, que está fora do heap de JavaScript. Usado em [estrutura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) e [estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
+O endereço do objeto externo de um objeto, como um objeto alocado em C++, que está fora do heap de JavaScript. Usado na [estrutura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) e [estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef void* PROFILER_EXTERNAL_OBJECT_ADDRESS;  
 ```

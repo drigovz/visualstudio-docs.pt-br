@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12583f73c9f3977371ebd193716f2513fc0befc4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c26470e02f6c7e5d8911df7e743bce0cb0e560bb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727316"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087874"
 ---
 # <a name="ienumjsstackframes-interface"></a>Interface IEnumJsStackFrames
-Implementado pelo depurador para fornecer pilha desenrolar para jscript9diag.dll para JavaScript.  
+Implementado pelo depurador para fornecer a pilha de desenrolamento para jscript9diag.dll para JavaScript.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 IEnumJsStackFrames : public IUnknown;  
 ```  
   

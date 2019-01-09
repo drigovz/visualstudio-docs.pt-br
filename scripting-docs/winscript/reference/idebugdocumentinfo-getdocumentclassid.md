@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3d29cf19752da18b76f31b4d12cecb05592c00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 65f43f3dbf76c9055bc4e521435ab56b1c7c6e40
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726896"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086756"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
-Retorna um `CLSID` identifica o tipo de documento.  
+Retorna um `CLSID` identificando o tipo de documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetDocumentClassId(  
    CLSID*  pclsidDocument  
 );  
@@ -38,7 +38,7 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>Parâmetros  
  `pclsidDocument`  
- [out] A `CLSID` identifica o tipo de documento.  
+ [out] Um `CLSID` identificando o tipo de documento.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,9 +48,9 @@ HRESULT GetDocumentClassId(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método permite que o depurador IDE visualizadores personalizados de host para este documento.  
+ Esse método permite que o IDE do depurador para visualizadores personalizados de host para este documento.  
   
- Se o documento não tem dados visíveis, o valor de retorno `pclsidDocument` é `CLSID_NULL`.  
+ Se o documento não tiver dados visível, o valor de retorno `pclsidDocument` é `CLSID_NULL`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)

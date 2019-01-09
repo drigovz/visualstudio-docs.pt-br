@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a81104f51ca1a66c493779146b7eaa102ea300
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ecdec77a8bcb3c1fb8a1dc64c63b363b4f001fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728566"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086652"
 ---
 # <a name="ijsdebugprocess-interface"></a>Interface IJsDebugProcess
 Fornece rotinas para inspecionar e controlar o processo de destino.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 IJsDebugProcess : public IUnknown;  
 ```  
   
@@ -35,8 +35,8 @@ IJsDebugProcess : public IUnknown;
 |Nome|Descrição|  
 |----------|-----------------|  
 |[Método IJsDebugProcess::CreateBreakPoint](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Define o ponto de interrupção na posição do documento especificado.|  
-|[Método IJsDebugProcess::CreateStackWalker](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Método de fábrica movimentador de pilha.|  
-|[Método IJsDebugProcess::PerformAsyncBreak](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Coloca o mecanismo de script no modo de interrupção deixá-lo para interromper a próxima instrução do script.|  
+|[Método IJsDebugProcess::CreateStackWalker](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Método de fábrica para movimentador de pilhas.|  
+|[Método IJsDebugProcess::PerformAsyncBreak](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Coloca o mecanismo de script no modo de interrupção, fazendo com que ele quebrar na próxima instrução de script.|  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** jscript9diag.h  

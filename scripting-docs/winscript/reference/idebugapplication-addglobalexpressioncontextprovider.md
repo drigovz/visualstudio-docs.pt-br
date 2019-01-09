@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cf88dfac1d102ace3f132e7ab61265c704c0b18
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a17e952ef48041d8354753d27d7c40fef4599d55
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725376"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086821"
 ---
 # <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
 Adiciona um provedor de contexto de expressão global para este aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT AddGlobalExpressionContextProvider(  
    IProvideExpressionContexts*  pdsfs,  
    DWORD_PTR*                   pdwCookie  
@@ -39,10 +39,10 @@ HRESULT AddGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdsfs`  
- [in] O provedor de contexto global para adicionar a este aplicativo.  
+ [in] O provedor de contexto global a ser adicionado a este aplicativo.  
   
  `pdwCookie`  
- [out] Um cookie é usado para remover este provedor de contexto de expressão global do aplicativo.  
+ [out] Um cookie que é usado para remover este provedor de contexto de expressão global do aplicativo.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -52,7 +52,7 @@ HRESULT AddGlobalExpressionContextProvider(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método adiciona um provedor de contexto de expressão global para este aplicativo.  
+ Esse método adiciona um provedor de contexto de expressão global para este aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

@@ -16,19 +16,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82e599ae94f422352706a0ec6cd9387bfa6799f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 240df77731b92ebb91cefc3f1a326e7dd77c847a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724406"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094517"
 ---
 # <a name="iactivescriptprofilercallbackinitialize"></a>IActiveScriptProfilerCallback::Initialize
 Chamado para inicializar o objeto do criador de perfil sempre que a criação de perfil é iniciada em um mecanismo de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Initialize(  
     [in] DWORD dwContext);  
 ```  
@@ -45,7 +45,7 @@ HRESULT Initialize(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Se o método não é possível inicializar o objeto do criador de perfil, ele deverá retornar uma HRESULT de falha ao notificar o mecanismo de script. Nesse caso, o mecanismo de script deve chamar diretamente [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), passando o HRESULT no parâmetro e, em seguida, liberar o objeto de criador de perfil.  
+ Se o método não é possível inicializar o objeto do criador de perfil, ele deverá retornar uma falha HRESULT para notificar o mecanismo de script. Nesse caso, o mecanismo de script deve chamar diretamente [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), transmitindo o HRESULT no parâmetro e, em seguida, liberar o objeto de criador de perfil.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

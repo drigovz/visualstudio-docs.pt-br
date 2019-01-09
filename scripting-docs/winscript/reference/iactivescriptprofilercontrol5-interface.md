@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0c8b464004337b41280d6d19821f0fb9f1f50a5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1b20afd05116a98e81a3eeea82e83e6ed200c44a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724456"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090812"
 ---
 # <a name="iactivescriptprofilercontrol5-interface"></a>Interface IActiveScriptProfilerControl5
 Fornece um método para enumerar os objetos de heap de GC associados a um mecanismo de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 interface IActiveScriptProfilerControl5 : IActiveScriptProfilerControl4  
 ```  
   
 ## <a name="methods"></a>Métodos  
  [Método IActiveScriptProfilerControl5::EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md)  
- Retorna uma interface ([IActiveScriptProfilerHeapEnum Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) que pode ser usado para iterar sobre os objetos do heap de GC no contexto do mecanismo de script associados.
+ Retorna uma interface ([IActiveScriptProfilerHeapEnum Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) que pode ser usado para iterar sobre os objetos de heap de GC no contexto do mecanismo de script associado.

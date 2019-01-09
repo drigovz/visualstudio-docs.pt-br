@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da2f68de40a66b98b97ab7c7eb1d63748f1e07a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b45fc7be1a5178e952fefcd794171410d149a1f4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733636"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090019"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
 Retorna o `IScriptNode` objeto que é o pai de um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetParent(  
    IScriptNode       **ppsnParent  
 );  
@@ -40,9 +40,9 @@ HRESULT GetParent(
  `ppsnParent`  
  [out] O endereço de uma variável que recebe um ponteiro para o `IScriptNode` interface da instância pai.  
   
- Se a classe implementa `IScriptEntry` ou `IScriptScriptlet`, uma `IScriptNode` objeto é retornado.  
+ Se a classe implementa `IScriptEntry` ou `IScriptScriptlet`, um `IScriptNode` objeto é retornado.  
   
- Se a classe implementa `IScriptNode` (representando uma página da Web), NULL será retornado.  
+ Se a classe implementa `IScriptNode` (que representa uma página da Web), NULL será retornado.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

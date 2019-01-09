@@ -10,19 +10,19 @@ ms.assetid: 533d770d-06a4-4693-873e-255c9c6f0df0
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: bb7fdf5a6d0b380a8024cfdfa70282bcf80ba16d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c71e33445db7745f71e374c586d079a9665776b2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725016"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087888"
 ---
 # <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 Retorna o objeto de aplicativo de depuração associado a este site de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IDebugApplication**  ppda  
 );  
@@ -30,7 +30,7 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppda`  
- [out] Ponteiro para o objeto de aplicativo de depuração associado ao site de script.  
+ [out] Ponteiro para o objeto de aplicativo de depuração associado com o site de script.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -38,7 +38,7 @@ HRESULT GetApplication(
 |Valor|Descrição|  
 |-----------|-----------------|  
 |`S_OK`|O método foi bem-sucedido.|  
-|`E_NOTIMPL`|O host não oferece suporte direto de depuração.|  
+|`E_NOTIMPL`|O host não suporta diretamente de depuração.|  
   
 ## <a name="remarks"></a>Comentários  
  O `GetApplication` método fornece uma maneira para um host inteligente definir o objeto de aplicativo ao qual pertence cada script. Mecanismos de script devem tentar chamar esse método para obter o seu aplicativo de contenção e recorrer a `IProcessDebugManager::GetDefaultApplication` no caso de falha.  

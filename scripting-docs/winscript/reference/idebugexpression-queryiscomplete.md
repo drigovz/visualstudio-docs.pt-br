@@ -18,31 +18,31 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1d72b2a2d41b748954f2e4b2b4aa9f0011ca670
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0b4fa4b027f0ee8d848f52c063cbfd1f7679d4a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726726"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087146"
 ---
 # <a name="idebugexpressionqueryiscomplete"></a>IDebugExpression::QueryIsComplete
 Determina se a operação for concluída.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT QueryIsComplete();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`S_OK`|O método foi bem-sucedido, e a operação for concluída.|  
+|`S_OK`|O método foi bem-sucedido e a operação for concluída.|  
 |`S_FALSE`|A operação ainda está pendente.|  
   
 ## <a name="remarks"></a>Comentários  

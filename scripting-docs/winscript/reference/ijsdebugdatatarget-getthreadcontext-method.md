@@ -1,5 +1,5 @@
 ---
-title: 'Método Ijsdebugdatatarget: | Microsoft Docs'
+title: 'Método ijsdebugdatatarget:: Getthreadcontext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e2f858c66eda2ad09b04d7beab776c793b6f195
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 50e2bdb7b8720549aac5e5b3c4cebffc4b7ae892
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728176"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090051"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>Método IJsDebugDataTarget::GetThreadContext
-Recupera o contexto de dado thread.  
+Recupera o contexto para o thread fornecido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetThreadContext(  
    DWORD threadId,  
    ULONG32 contextFlags,  
@@ -42,13 +42,13 @@ HRESULT GetThreadContext(
  [in] Thread em execução no processo de destino.  
   
  `contextFlags`  
- [in] Especifica os sinalizadores de contexto. Isso é o mesmo que o campo ContextFlags de contexto (para obter mais informações, Winnt. h de consulte, pesquise CONTEXT_ALL).  
+ [in] Especifica os sinalizadores de contexto. Isso é o mesmo que o campo ContextFlags de CONTEXT (para obter mais informações, consulte Winnt. h, pesquise por CONTEXT_ALL).  
   
  `contextSize`  
- [in] O tamanho do buffer especificado por pContext.  
+ [in] O tamanho do buffer especificado pelo pContext.  
   
  `pContext`  
- [out] Recebe a estrutura de contexto específico de plataforma para o buffer especificado por pContext.  
+ [out] Recebe a estrutura de contexto específicas da plataforma do buffer especificado pelo pContext.  
   
 ## <a name="return-value"></a>Valor de retorno  
   

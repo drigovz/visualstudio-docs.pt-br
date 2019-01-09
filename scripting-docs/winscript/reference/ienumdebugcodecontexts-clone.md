@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ae10efb0f3429d0355b270be69d073876ca1b74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0bdf003c73dd6f98f6f102f3b7dd36b1d69a522c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727486"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089525"
 ---
 # <a name="ienumdebugcodecontextsclone"></a>IEnumDebugCodeContexts::Clone
-Cria um enumerador que contém o mesmo estado do enumerador atual.  
+Cria um enumerador que contém o mesmo estado que o enumerador atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugCodeContexts**  ppescc  
 );  
@@ -38,7 +38,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppescc`  
- [out] Retorna o `IEnumDebugCodeContexts` interface de clone do enumerador.  
+ [out] Retorna o `IEnumDebugCodeContexts` interface do clone do enumerador.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT Clone(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método cria um enumerador que contém o mesmo estado do enumerador atual.  
+ Esse método cria um enumerador que contém o mesmo estado que o enumerador atual.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IEnumDebugCodeContexts](../../winscript/reference/ienumdebugcodecontexts-interface.md)

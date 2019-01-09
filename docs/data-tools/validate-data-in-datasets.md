@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936185"
 ---
 # <a name="validate-data-in-datasets"></a>Validar dados em conjuntos de dados
 Validação de dados é o processo de confirmar que os valores que estão sendo inseridos em objetos de dados estão em conformidade com as restrições no esquema do conjunto de dados. O processo de validação também confirma que esses valores são seguindo as regras que foram estabelecidas para seu aplicativo. É uma boa prática para validar dados antes de enviar atualizações para o banco de dados subjacente. Isso reduz os erros, bem como o número potencial de processamentos entre um aplicativo e o banco de dados.
@@ -40,9 +39,9 @@ Você pode confirmar que os dados que está sendo gravados em um conjunto de dad
 ## <a name="validate-data"></a>Validar dados
  Validação dentro de um conjunto de dados é feita das seguintes maneiras:
 
--   Criando sua própria validação específica de aplicativo que pode verificar valores em uma coluna de dados individuais durante alterações. Para obter mais informações, consulte [como: validar dados durante alterações de coluna](validate-data-in-datasets.md).
+-   Criando sua própria validação específica de aplicativo que pode verificar valores em uma coluna de dados individuais durante alterações. Para obter mais informações, confira [Como: Validar dados durante alterações de coluna](validate-data-in-datasets.md).
 
--   Criando sua própria validação de específicos do aplicativo que pode verificar valores de um inteiro de dados está mudando a linha. Para obter mais informações, consulte [como: validar dados durante alterações de linha](validate-data-in-datasets.md).
+-   Criando sua própria validação de específicos do aplicativo que pode verificar valores de um inteiro de dados está mudando a linha. Para obter mais informações, confira [Como: Validar dados durante alterações de linha](validate-data-in-datasets.md).
 
 -   Criando chaves, restrições exclusivas, e assim por diante como parte da definição de esquema real do conjunto de dados.
 
@@ -90,7 +89,7 @@ Você pode validar dados quando o valor em uma coluna de dados é alterado respo
 
 -   Rejeitar o valor proposto, definindo o erro de coluna (<xref:System.Data.DataRow.SetColumnError%2A>) de dentro do manipulador de eventos de alteração de coluna.
 
--   Opcionalmente, usar um <xref:System.Windows.Forms.ErrorProvider> controle para exibir uma mensagem de erro para o usuário. Para obter mais informações, consulte [componente ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+-   Opcionalmente, usar um <xref:System.Windows.Forms.ErrorProvider> controle para exibir uma mensagem de erro para o usuário. Para obter mais informações, confira [Componente ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 Validação também pode ser executada durante a <xref:System.Data.DataTable.RowChanging> eventos.
 
@@ -99,7 +98,7 @@ Você pode escrever código para verificar se cada coluna que você deseja valid
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Para validar dados quando uma linha é alterado (Visual Basic)
 
-1.  Abra o dataset na **Dataset Designer**. Para obter mais informações, consulte [instruções passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra o conjunto de dados no Designer de Conjunto de Dados **. Para obter mais informações, confira [Passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Clique duas vezes a barra de título da tabela que você deseja validar. Essa ação cria automaticamente o <xref:System.Data.DataTable.RowChanging> manipulador de eventos do <xref:System.Data.DataTable> no arquivo de classe parcial do conjunto de dados.
 
@@ -110,7 +109,7 @@ Você pode escrever código para verificar se cada coluna que você deseja valid
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar dados quando uma linha for alterada (c#)
 
-1.  Abra o dataset na **Dataset Designer**. Para obter mais informações, consulte [instruções passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra o conjunto de dados no Designer de Conjunto de Dados **. Para obter mais informações, confira [Passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Clique duas vezes a barra de título da tabela que você deseja validar. Essa ação cria um arquivo de classe parcial para o <xref:System.Data.DataTable>.
 
@@ -212,5 +211,5 @@ Passando o <xref:System.Data.DataRowVersion> valor juntamente com o índice da c
 ## <a name="see-also"></a>Consulte também
 
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Como: validar dados no controle DataGridView do Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Como: exibir ícones de erro para validação do formulário com o componente ErrorProvider de formulários do Windows](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Como: Validar dados no controle DataGridView do Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Como: Exibir ícones de erro para validação do formulário com o componente ErrorProvider de formulários do Windows](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

@@ -1,5 +1,5 @@
 ---
-title: 'Método: Allocatevirtualmemory | Microsoft Docs'
+title: 'Método ijsdebugdatatarget:: Allocatevirtualmemory | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65b29bbf9a3405bcfab779bd877f798a863538d5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4eaf448e0be224f853674084a18f7aa2a6bd5ed7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728396"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086900"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>Método IJsDebugDataTarget::AllocateVirtualMemory
-Reserva e/ou confirma uma região de memória dentro do espaço de endereço virtual do processo de destino.  
+Reserva e/ou confirma uma região de memória no espaço de endereço virtual do processo de destino.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT AllocateVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -43,21 +43,21 @@ HRESULT AllocateVirtualMemory(
  [in] O endereço dentro do processo de destino em que a memória deve ser confirmada ou reservada. Normalmente, esse valor é zero, caso o sistema escolhe um endereço.  
   
  `size`  
- [in] O tamanho da região de memória a ser alocada em bytes. O sistema será automaticamente arredondar para o próximo limite de página.  
+ [in] O tamanho da região da memória para alocar, em bytes. O sistema irá arredondar automaticamente até o limite da próxima página.  
   
  `allocationType`  
- [in] Indica o tipo de alocação para executar. Isso é normalmente MEM_COMMIT &#124; MEM_RESERVE (0x3000) que reserva e confirma uma alocação em uma única etapa.  
+ [in] Indica o tipo de alocação a ser executada. Isso geralmente é MEM_COMMIT &#124; MEM_RESERVE (0x3000), que reserva e confirma uma alocação em uma única etapa.  
   
  `pageProtection`  
- [in] A proteção de memória para a região de páginas a serem alocados. Se as páginas estiverem sendo confirmadas, você pode especificar qualquer uma das constantes de proteção de memória (por exemplo, PAGE_READWRITE, PAGE_EXECUTE).  
+ [in] A proteção de memória para a região das páginas a serem alocados. Se as páginas estiverem sendo confirmadas, você pode especificar qualquer uma das constantes de proteção de memória (por exemplo, PAGE_READWRITE, PAGE_EXECUTE).  
   
  `pAllocatedAddress`  
- [out] Endereço base da região de páginas alocada.  
+ [out] Endereço básico da região atribuída das páginas.  
   
 ## <a name="return-value"></a>Valor de retorno  
   
 ## <a name="remarks"></a>Comentários  
- A função inicializa a memória aloca a zero, a menos que MEM_RESET é usado. Para obter informações adicionais, consulte a API do Win32 VirtualAlloc.  
+ A função inicializa a memória que aloca a zero, a menos que MEM_RESET seja usado. Para obter mais informações, consulte a API Win32 VirtualAlloc.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** jscript9diag.h  

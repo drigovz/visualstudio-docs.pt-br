@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93323d500ae7e99957c365d60741fa612ba0fc34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b43211dca57a404d5625cfc2d7ede67a70a0a40
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725156"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087978"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
-Permite que um host especificar que um script deve ser encerrado.  
+Permite que um host especificar um script deve ser interrompido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT QueryContinue();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -43,12 +43,12 @@ HRESULT QueryContinue();
 |Valor|Descrição|  
 |-----------|-----------------|  
 |`S_OK`|A chamada foi bem-sucedida e o host permite que o script continue em execução.|  
-|`S_FALSE`|A chamada foi bem-sucedida e as solicitações de host encerrar o script.|  
+|`S_FALSE`|A chamada foi bem-sucedida e o host solicita que o script Encerrar.|  
   
 ## <a name="remarks"></a>Comentários  
- O script hospedado deve encerrar a menos que o valor de retorno de `QueryContinue` método é `S_OK`. Um valor de retorno `S_FALSE` indica que o host solicita explicitamente que o script será encerrado.  
+ O script hospedado deve ser terminada, a menos que o valor de retorno de `QueryContinue` método é `S_OK`. Um valor de retorno `S_FALSE` indica que o host solicita explicitamente que o script Encerrar.  
   
- Um host com multithread pode usar o `IActiveScript::InterruptScriptThread` método para encerrar um script.  
+ Um host de vários threads pode usar o `IActiveScript::InterruptScriptThread` método para encerrar um script.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IActiveScriptSiteInterruptPoll](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   

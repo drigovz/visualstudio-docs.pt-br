@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a17301842cefac7c7f257a4bc0e437670e28064
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a861e2cbdfedc80747e9390316c47da43b71656
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725496"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087406"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-Faz com que esse aplicativo para liberar todas as referências e insira um estado inativo.  
+Faz com que esse aplicativo para liberar todas as referências e entrar em um estado inativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -45,9 +45,9 @@ HRESULT Close();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, o proprietário de um aplicativo chama esse método quando o aplicativo termina.  
+ Normalmente, o proprietário de um aplicativo chama esse método quando o aplicativo é encerrado.  
   
- Este método faz com que `IApplicationDebugger::onClose` seja chamado.  
+ Esse método faz com que `IApplicationDebugger::onClose` a ser chamado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

@@ -18,24 +18,24 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04ea5303489a8c774adfaf65194237685a88a9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fc84edf16e5236f1f8a8cf679711d2ce4fe869b8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728206"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090357"
 ---
 # <a name="iremotedebugapplicationcausebreak"></a>IRemoteDebugApplication::CauseBreak
-Faz com que o aplicativo para invadir o depurador o mais breve possível.  
+Faz com que o aplicativo para invadir o depurador na primeira oportunidade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT CauseBreak();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -45,7 +45,7 @@ HRESULT CauseBreak();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Chamar esse método não faz com que um aplicativo divida imediatamente. Se o aplicativo não está executando código de script, muito tempo pode decorrer antes de fato interrompe o aplicativo.  
+ Chamar esse método não faz com que um aplicativo seja imediatamente interrompido. Se o aplicativo não está executando código de script, um longo tempo pode decorrer antes do aplicativo realmente interrompido.  
   
 ## <a name="see-also"></a>Consulte também  
  [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)

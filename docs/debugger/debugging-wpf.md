@@ -1,8 +1,6 @@
 ---
 title: Depurando WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db41fe7cc56b9e22c94affe8b502959cec17c84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 72739f755b24dd16e5d741afd35caf4faa8f3545
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919619"
 ---
 # <a name="debugging-wpf"></a>Depurando WPF
 O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] fornece recursos adicionais para facilitar a depuração de aplicativos do WPF.  
@@ -32,8 +30,8 @@ O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 
   
 | Título | Descrição |
 | - | - |
-| [Como usar o Visualizador de Árvore WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md) | Você pode usar o visualizador de árvore do WPF para explorar a árvore visual de um objeto do WPF e exibir as propriedades de dependência do WPF para os objetos nessa árvore. Este tópico descreve a interface de usuário do visualizador de árvore do WPF. |
-| [Como exibir informações de rastreamento de WPF](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações na **saída** janela. Este tópico descreve como habilitar e personalizar a exibição de informações de rastreamento do WPF. |
+| [Como: Usar o visualizador de árvore do WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md) | Você pode usar o visualizador de árvore do WPF para explorar a árvore visual de um objeto do WPF e exibir as propriedades de dependência do WPF para os objetos nessa árvore. Este tópico descreve a interface de usuário do visualizador de árvore do WPF. |
+| [Como: Exibir informações de rastreamento do WPF](../debugger/how-to-display-wpf-trace-information.md) | O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações na janela Saída **. Este tópico descreve como habilitar e personalizar a exibição de informações de rastreamento do WPF. |
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)
