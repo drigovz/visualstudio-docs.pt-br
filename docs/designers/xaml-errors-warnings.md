@@ -2,7 +2,6 @@
 title: Avisos e Erros XAML
 ms.date: 03/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
@@ -10,12 +9,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09251f13cafa320e2736e9c61135283bb9e9739d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7e0a5b4bde839e90bcf852273fa0872b1a5c76f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922606"
 ---
 # <a name="xaml-errors-and-warnings"></a>Avisos e erros de XAML
 
@@ -42,5 +41,3 @@ Abra a caixa de diálogo **Opções** selecionando **Ferramentas > Opções** e,
 Desmarque a caixa de seleção **Mostrar erros detectados pelo XAML Designer**.
 
 ![Suprimir erros do XAML Designer](../designers/media/suppress_xaml_designer_errors.png)
-
-
