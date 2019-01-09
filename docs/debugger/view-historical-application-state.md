@@ -3,7 +3,6 @@ title: Exibir o estado anterior do aplicativo usando o IntelliTrace
 description: Saiba como tirar instantâneos e exibi-los com o retrocesso do IntelliTrace
 ms.custom: seodec18
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939973"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio
 
