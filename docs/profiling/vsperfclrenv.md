@@ -1,8 +1,6 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5623cfc9d6f72805e4ced489ef7a786aaad155e6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ae0e54aff0e4206bd5c79c30c810dc6ba497ddf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965078"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -85,7 +83,7 @@ A tabela a seguir descreve as opções de VSPerfCLREnv para criação de perfil 
 
 ## <a name="vsperfclrenv-options-for-global-profiling"></a>Opções de VSPerfCLREnv para criação de perfil global
 
-Para criar o perfil de um serviço gerenciado, como um aplicativo Web ASP.NET que é iniciado pelo sistema operacional, em vez de ser iniciado pelo usuário, use as opções de criação de perfil global das opções de VSPerfCLREnv. A tabela a seguir descreve as versões globais das opções de VSPerfCLREnv. Essas opções definem as variáveis de ambiente adequadas no Registro.
+Para criar o perfil de um serviço gerenciado, como um aplicativo Web ASP .NET que é iniciado pelo sistema operacional, em vez de ser iniciado pelo usuário, use as opções de criação de perfil global das opções de VSPerfCLREnv. A tabela a seguir descreve as versões globais das opções de VSPerfCLREnv. Essas opções definem as variáveis de ambiente adequadas no Registro.
 
 |Opção|Descrição|
 |------------|-----------------|
