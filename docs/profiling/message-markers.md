@@ -1,8 +1,6 @@
 ---
 title: Marcadores de mensagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.message
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b93d497a68ba09237c28fc56159c379b50c9c1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 13cd156263584fb65c2e69df9f86e4610fc5eb3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846497"
 ---
 # <a name="message-markers"></a>Marcadores de mensagem
 Um marcador de mensagem representa a saída de log. Uma mensagem é uma cadeia de caracteres emitida por um thread específico em um momento específico. Você pode exportar as mensagens para um arquivo de texto para usar com outras ferramentas. Você pode deixar o ponteiro em uma mensagem na Visualização Simultânea para exibir a cadeia de caracteres de mensagem. E você pode exibir todos os marcadores de mensagem no [Relatório de marcadores](../profiling/markers-report.md).  A ilustração a seguir mostra um marcador de mensagem.  
