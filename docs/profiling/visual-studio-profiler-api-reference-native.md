@@ -3,7 +3,6 @@ title: Referência da API do Visual Studio Profiler (nativo)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, API
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e0926c80954c83dd1c0c1a72e7c693e8ea266713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945019"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referência da API do criador de perfil do Visual Studio (nativo)
 As APIs do criador de perfil do Visual Studio permitem que você controle de forma programática a quantidade de dados coletados e insira marcas de carimbo de data/hora e de perfil durante a criação de perfil. Para usar as APIs nativas, inclua o arquivo de cabeçalho *VSPerf.h* e adicione o *VSPerf.lib* ao projeto.  

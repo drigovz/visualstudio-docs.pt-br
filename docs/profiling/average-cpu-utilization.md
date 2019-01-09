@@ -1,8 +1,6 @@
 ---
 title: Utilização Média da CPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.percentage
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fee580cdd708c555682f0309759678dee38ad2b1
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8c4c9eeffe2ac0a3b08d8379a50bb88e3c52cbfe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988904"
 ---
 # <a name="average-cpu-utilization"></a>Utilização média da CPU
 Mostra a média de utilização do processo com perfil criado, dos núcleos lógicos do sistema pela duração do processo. O gráfico não mostra qual núcleo específico está ativo em um determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com 50% da capacidade durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado.  
