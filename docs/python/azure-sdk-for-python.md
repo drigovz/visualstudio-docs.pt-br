@@ -3,7 +3,6 @@ title: SDK do Azure para Python
 description: O SDK do Azure para Python facilita o consumo de serviços do Microsoft Azure em aplicativos Python executados em qualquer plataforma.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b9c8f5193e55d86ea4ff5e4d68fb7a66a1044d2e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db391b30305e3fad8384dcbeea611379f0061054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854211"
 ---
 # <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>Consumir serviços do Azure usando o SDK do Azure para Python
 

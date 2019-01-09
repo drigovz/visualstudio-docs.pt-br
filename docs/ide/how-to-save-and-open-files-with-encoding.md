@@ -1,8 +1,7 @@
 ---
-title: Como salvar e abrir arquivos com codificação
+title: 'Como: Salvar e abrir arquivos com codificação'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6298e603589d41a6a082b6fe2c1916b3cf8a2a84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38d52cdee3ee0f6ccbdd378e4fb70e356d5826c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869564"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Como salvar e abrir arquivos com codificação
+# <a name="how-to-save-and-open-files-with-encoding"></a>Como: Salvar e abrir arquivos com codificação
 
 É possível salvar arquivos com uma codificação de caracteres específica para dar suporte a idiomas bidirecionais. Também é possível especificar uma codificação ao abrir um arquivo, para que o Visual Studio exiba o arquivo corretamente.
 
