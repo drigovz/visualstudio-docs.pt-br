@@ -1,8 +1,6 @@
 ---
 title: 'Passo a passo: Criação de perfil de linha de comando usando amostragem | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886803"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: Criação de perfil de linha de comando usando amostragem
 
@@ -35,7 +33,7 @@ Neste passo a passo, você seguirá estas etapas:
 
 - Compreensão intermediária de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Compreensão intermediária para trabalhar com ferramentas de linha de comando
-- Uma cópia de [amostra do PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)
+- Uma cópia de [amostra do PeopleTrax](/visualstudio/profiling/performance-explorer)
 - Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Criação de perfil de linha de comando usando o método de amostragem
