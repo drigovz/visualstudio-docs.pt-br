@@ -1,5 +1,5 @@
 ---
-title: 'Método: Readnullterminatedstring | Microsoft Docs'
+title: 'Método ijsdebugdatatarget:: Readnullterminatedstring | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729496"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093321"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>Método IJsDebugDataTarget::ReadNullTerminatedString
 Lê o número especificado de caracteres de destino.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -39,16 +39,16 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Parâmetros  
  `address`  
- [in] O endereço para ler.  
+ [in] O endereço de onde ler.  
   
  `characterSize`  
- [in] o tamanho de cada caractere na cadeia de caracteres  
+ [in] tamanho de cada caractere na cadeia de caracteres  
   
  `maxCharacters`  
- [in] O número máximo de caracteres a serem lidos. maxCharacters devem ser razoável. Qualquer solicitação para mais de 128MB de memória falhará.  Se a cadeia de caracteres for maior que maxCharacters, a cadeia de caracteres de resultado será truncada após maxCharacters.  
+ [in] O número máximo de caracteres a serem lidos. maxCharacters deve ser razoável. Qualquer solicitação para mais de 128MB de memória falhará.  Se a cadeia de caracteres for maior do que maxCharacters, a cadeia de caracteres de resultado será truncada após maxCharacters.  
   
  `pString`  
- [out] BSTR de leitura do destino.  
+ [out] Leia o BSTR do destino.  
   
 ## <a name="return-value"></a>Valor de retorno  
   

@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f01ca5e001d45907af70b46b6dc362e8ae0b2044
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e95b11537873d3bfe02bf3fa793b61ace10938aa
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733926"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095804"
 ---
 # <a name="profilerrelationshipinfo-enumeration"></a>Enumeração PROFILER_RELATIONSHIP_INFO
-Representa informações sobre o objeto da relação. Usado em [estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
+Representa informações sobre o objeto na relação. Usado na [estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PROPERTY_TYPE_STRING = 0x02,    PROFILER_PROPERTY_TYPE_HEAP_OBJECT = 0x03,    PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT = 0x04,    PROFILER_PROPERTY_TYPE_BSTR = 0x05,} PROFILER_RELATIONSHIP_INFO;  
 ```  
   
@@ -34,7 +34,7 @@ typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PR
 |------------|-----------|-----------------|  
 |PROFILER_PROPERTY_TYPE_NUMBER|0x01|O objeto é um número.|  
 |PROFILER_PROPERTY_TYPE_STRING|0x02|O objeto é uma cadeia de caracteres.|  
-|PROFILER_PROPERTY_TYPE_HEAP_OBJECT|0x03|O objeto é um heap.|  
+|PROFILER_PROPERTY_TYPE_HEAP_OBJECT|0x03|O objeto é um objeto de heap.|  
 |PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT|0x04|O objeto é externo, ou seja, não no heap de coleta de lixo.|  
 |PROFILER_PROPERTY_TYPE_BSTR|0x05|O objeto é um BSTR.|  
 |PROFILER_PROPERTY_TYPE_SUBSTRING|0x06|O objeto é uma subcadeia de caracteres.|

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9bc219ea5c2ff9ff2860d36cd475985d825ae59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3590fe05ef82f094dd5706f9f527b247d95eda8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727566"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097728"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
-Retorna um navegador de propriedade que encapsula uma VARIANTE e permite conversão personalizada de valores de variação ou tipos VARTYPE em cadeias de caracteres.  
+Retorna um navegador de propriedade que envolve uma VARIANTE e permite a conversão personalizada de valores VARIANT ou tipos VARTYPE em cadeias de caracteres.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowserEx(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -48,10 +48,10 @@ HRESULT CreatePropertyBrowserEx(
  [in] Nome a ser atribuído a raiz.  
   
  `pdat`  
- [in] Thread no qual a solicitação de propriedades. Se esse parâmetro for NULL, nenhum processo de empacotamento é executado.  
+ [in] Thread no qual as propriedades da solicitação. Se esse parâmetro for NULL, nenhum empacotamento é executada.  
   
  `pdf`  
- [in] Objeto que fornece a formatação personalizada para variantes.  
+ [in] Objeto que oferece formatação personalizada para variantes.  
   
  `ppdob`  
  [out] O navegador de propriedade.  
@@ -64,7 +64,7 @@ HRESULT CreatePropertyBrowserEx(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna um navegador de propriedade que encapsula uma VARIANTE e permite conversão personalizada de valores de variação ou tipos VARTYPE em cadeias de caracteres.  
+ Esse método retorna um navegador de propriedade que envolve uma VARIANTE e permite a conversão personalizada de valores VARIANT ou tipos VARTYPE em cadeias de caracteres.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   

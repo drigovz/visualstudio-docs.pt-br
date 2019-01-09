@@ -14,22 +14,22 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8306b1d4ff68fe9eec00d47d8c702278e89fc37b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce3a164f3ee4d81ca849db7c4745948ffe17d56e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724386"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097182"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Retorna um valor que indica o tipo de exceção lançada.  
   
 > [!IMPORTANT]
->  [Interface IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) é implementado por PDM versão 11.0 e maior. Localizado em. activdbg100.h.  
+>  [Interface IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) é implementada pelo PDM versão 11.0 ou superior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetExceptionThrownKind(  
    SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND*  pExceptionKind  
 );  
@@ -37,7 +37,7 @@ HRESULT GetExceptionThrownKind(
   
 #### <a name="parameters"></a>Parâmetros  
  `pExceptionKind`  
- [out] O tipo de exceção que é lançada (por exemplo, sem tratamento ou de primeira chance), representado por um [enumeração SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) valor de enumeração.  
+ [out] O tipo de exceção que é lançada (por exemplo, primeira tentativa ou sem tratamento), representado por um [enumeração SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) valor de enumeração.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

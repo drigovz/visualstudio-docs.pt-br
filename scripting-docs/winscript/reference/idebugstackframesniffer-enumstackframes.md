@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726786"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089297"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
-Retorna um enumerador de quadros de pilha do thread atual.  
+Retorna um enumerador dos quadros de pilha do thread atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -48,7 +48,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O enumerador de quadro de pilha retorna os quadros iniciando na parte superior da pilha, começando com o quadro enviado mais recentemente.  
+ O enumerador de quadro de pilha retorna os quadros começando do topo da pilha, começando com o quadro mais recentemente enviados por push.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

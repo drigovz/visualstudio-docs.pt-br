@@ -14,24 +14,24 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78078cd874be1d7d3d169be2d3d70e65866be3fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 086ec8b4a126c65162638afde4d8081269757e1c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724516"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089512"
 ---
 # <a name="iactivescriptprofilercontrol2prepareprofilerstop"></a>IActiveScriptProfilerControl2::PrepareProfilerStop
-Notifica o criador de perfil que você pretende parar criação de perfil em todos os mecanismos de script aplicável. Usando esse método, você pode obter a pilha de chamadas completa se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] está em execução quando você interromper a criação de perfil.  
+Notifica o criador de perfil que você pretende parar criação de perfil em todos os mecanismos de script aplicáveis. Usando esse método, você pode obter a pilha de chamadas completa se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] estiver em execução quando você interrompe a criação de perfil.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT PrepareProfilerStop();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- O método não usa nenhum parâmetro.  
+ O método não leva nenhum parâmetro.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um HRESULT. Os valores possíveis são:  
@@ -44,7 +44,7 @@ HRESULT PrepareProfilerStop();
 |`ACTIVPROF_E_PROFILER_ABSENT`|Criação de perfil não está habilitada.|  
   
 ## <a name="remarks"></a>Comentários  
- Chamando `IActiveScriptProfilerControl2::PrepareProfilerStop` garante que os eventos para funções na pilha de chamadas são enviados. Esse método deve ser chamado antes de interromper a criação de perfil em qualquer mecanismo de script na guia atual. O método pode ser chamado de qualquer mecanismo de script.  
+ Chamar `IActiveScriptProfilerControl2::PrepareProfilerStop` garante que os eventos para as funções na pilha de chamadas são enviados. Esse método deve ser chamado antes de interromper a criação de perfil em qualquer mecanismo de script que está na guia atual. O método pode ser chamado para qualquer mecanismo de script.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   

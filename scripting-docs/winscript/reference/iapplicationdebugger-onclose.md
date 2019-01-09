@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3d70ae4a8a0ed6d6690b8b7368e697cbb68dd0d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4ae22cf44843e04e8634f6ae25fedba5024afdd0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725236"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096090"
 ---
 # <a name="iapplicationdebuggeronclose"></a>IApplicationDebugger::onClose
-Manipula um evento de fechamento de aplicativo de depuração.  
+Manipula um evento de fechamento de aplicativos de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onClose();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -45,7 +45,7 @@ HRESULT onClose();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método é chamado quando `IDebugApplication::Close` é chamado.  
+ Esse método é chamado quando `IDebugApplication::Close` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   

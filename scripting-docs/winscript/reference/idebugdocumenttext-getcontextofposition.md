@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1be8bb6d350a2ca68912622396af52f1625985a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2eb889bef17d2038f17c7f8618ad65ca2162f0c7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727176"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097585"
 ---
 # <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
-Cria um objeto de contexto do documento correspondente ao intervalo de posição de caracteres fornecida.  
+Cria um objeto de contexto do documento correspondente ao intervalo de posição de caractere fornecidos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetContextOfPosition(  
    ULONG                    cCharacterPosition,  
    ULONG                    cNumChars,  
@@ -56,7 +56,7 @@ HRESULT GetContextOfPosition(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método cria um objeto de contexto do documento correspondente ao intervalo de posição de caracteres fornecida.  
+ Esse método cria um objeto de contexto do documento correspondente ao intervalo de posição de caractere fornecidos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

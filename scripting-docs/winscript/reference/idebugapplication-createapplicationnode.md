@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26ed66921175659d7125a0e32a043e7ebcf98cc6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 71aea5c3a7efb6534daab5fc916187c0f56122b3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725246"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095544"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
 Cria um novo nó de aplicativo que está associado um provedor de documento específico.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT CreateApplicationNode(  
    IDebugApplicationNode**  ppdanNew  
 );  
@@ -48,7 +48,7 @@ HRESULT CreateApplicationNode(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O novo nó de aplicativo não está visível até que ela está conectada a um nó pai.  
+ O novo nó de aplicativo não estiver visível até que ele seja anexado a um nó pai.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)

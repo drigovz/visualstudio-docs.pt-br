@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a4e053817ed4c503ebb41e2f3828da421e69ec7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729036"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088732"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
 Retorna a posição inicial e o comprimento de uma entrada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -41,14 +41,14 @@ HRESULT GetRange(
  `pichMin`  
  [out] Para `IScriptEntry` objetos que especificam um bloco de script, retornará 0.  
   
- Para `IScriptEntry` objetos que especificam um objeto de função, retorna a posição inicial da função no bloco de script atual.  
+ Para `IScriptEntry` objetos que especificam um objeto de função retorna a posição inicial da função no bloco de script atual.  
   
- Para `IScriptScriptlet` objetos, retorna 0.  
+ Para `IScriptScriptlet` objetos, retornará 0.  
   
  `pcch`  
  [out] Para `IScriptEntry` objetos que especificam um bloco de script, retorna o comprimento do texto.  
   
- Para `IScriptEntry` objetos que especificam um objeto de função, retorna o comprimento da definição da função.  
+ Para `IScriptEntry` objetos que especificam um objeto de função retorna o comprimento da definição da função.  
   
  Para `IScriptScriptlet` objetos, retorna o comprimento da entrada.  
   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74d3f59648a5a6aa0f510e98b33c3c26b1f9db56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ff7e331ebd61d499ddd865409e23a5ad4ffae11a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728476"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095427"
 ---
 # <a name="iremotedebugapplicationthreadgetdescription"></a>IRemoteDebugApplicationThread::GetDescription
-Obtém a descrição e o estado deste thread.  
+Obtém a descrição e o estado desse thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetDescription(  
    BSTR*  pbstrDescription,  
    BSTR*  pbstrState  
@@ -39,7 +39,7 @@ HRESULT GetDescription(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrDescription`  
- [out] A descrição deste thread.  
+ [out] A descrição desse thread.  
   
  `pbstrState`  
  [out] A descrição do estado do thread.  
@@ -52,7 +52,7 @@ HRESULT GetDescription(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método obtém a descrição e o estado deste thread.  
+ Esse método obtém a descrição e o estado desse thread.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16b05533c566cb90529766d81fb7197dbc284664
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0478d0154ee79c1781885b94ae342e421e61e5e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726136"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095362"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-Faz com que o thread atual bloquear e envia uma notificação do ponto de interrupção ao depurador do IDE.  
+Faz com que o thread atual bloquear e envia uma notificação do ponto de interrupção para o IDE do depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT HandleBreakPoint(  
    BREAKREASON         br,  
    BREAKRESUMEACTION*  pbra  
@@ -52,12 +52,12 @@ HRESULT HandleBreakPoint(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Um mecanismo de linguagem chama esse método no contexto de um thread que atinge um ponto de interrupção. Esse método bloqueia o thread atual e envia uma notificação de ponto de interrupção ao depurador do IDE. Quando o depurador retoma o aplicativo, o `pbra` parâmetro especifica a ação a tomar.  
+ Um mecanismo de linguagem chama esse método no contexto de um thread que atinge um ponto de interrupção. Esse método bloqueia o thread atual e envia uma notificação de ponto de interrupção para o IDE do depurador. Quando o depurador retoma o aplicativo, o `pbra` parâmetro especifica qual ação será tomada.  
   
 > [!NOTE]
->  O mecanismo de linguagem pode ser chamado pelo thread de realizar tarefas como enumerar pilha quadros ou avaliar expressões durante o ponto de interrupção.  
+>  O mecanismo de linguagem pode ser chamado pelo thread de realizar tarefas tais como enumerar a pilha de quadros ou avaliam expressões durante o ponto de interrupção.  
   
- Este método faz com que `IApplicationDebugger::onHandleBreakPoint` seja chamado.  
+ Esse método faz com que `IApplicationDebugger::onHandleBreakPoint` a ser chamado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

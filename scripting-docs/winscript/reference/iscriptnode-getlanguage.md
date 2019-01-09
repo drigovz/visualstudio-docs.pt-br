@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10bab879574f378a1000c398a8f566eea7dd9b4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1639d1f956413545d82f79af3e6b310b20af564e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733716"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089577"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
 Retorna a linguagem de script que é usada pelo nó do script atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetLanguage(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstr`  
- [out] Retorna "JScript" se o nó do script usa JScript ou "VBScript" se o nó do script usa o Visual Basic Scripting Edition (VBScript).  
+ [out] Retorna "JScript" se o nó do script usa o JScript ou "VBScript" se o nó do script usa o Visual Basic Scripting Edition (VBScript).  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

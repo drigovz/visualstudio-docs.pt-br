@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e133afbac4b75a5b9c24ee33148edd1114b33452
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733676"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094231"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
-Retorna um valor definido pelo aplicativo que é usado para associar um miniscript com o objeto de host.  
+Retorna um valor definido pelo aplicativo que é usado para associar um scriptlet com o objeto de host.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetCookie(  
    DWORD              *pdwCookie  
 );  
@@ -40,7 +40,7 @@ HRESULT GetCookie(
  `pdwCookie`  
  [out] Para um `IScriptEntry` de objeto, retorna o valor do cookie definido pelo aplicativo.  
   
- Para uma `IScriptNode` objeto que representa uma página da Web, retornará 0.  
+ Para um `IScriptNode` objeto que representa uma página da Web, retornará 0.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

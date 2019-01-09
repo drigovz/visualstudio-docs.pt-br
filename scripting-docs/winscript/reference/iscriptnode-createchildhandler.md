@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff2ba40d1570e23f0256bd34ca8aff0f8d77ce5c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2ef4c9318cb13459ab787878218bf7ca68052f29
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729556"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094179"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-Adiciona um miniscript como uma instância de filho de um `IScriptNode`.  
+Adiciona um scriptlet como uma instância filho de um `IScriptNode`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT CreateChildHandler(  
    LPCOLESTR          pszDefaultName,  
    LPCOLESTR          *prgpszNames,  
@@ -47,7 +47,7 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszDefaultName`  
- [in] O endereço do nome padrão para associar o miniscript.  
+ [in] O endereço do nome padrão para associar o scriptlet.  
   
  `prgpszNames`  
  [in, size_is (`cpszNames`)] uma lista de identificadores do nome totalmente qualificado no host.  
@@ -56,20 +56,20 @@ HRESULT CreateChildHandler(
  [in] O número de identificadores de `prgpszNames` parâmetro.  
   
  `pszEvent`  
- [in] O endereço do buffer que identifica o nome do evento associado com o miniscript.  
+ [in] O endereço do buffer que identifica o nome do evento associado com o scriptlet.  
   
  `pszDelimiter`  
- [in] O endereço do delimitador final do bloco de script. Para análise, o host normalmente usa um delimitador (como duas aspas simples), para detectar o final do bloco de script.  
+ [in] O endereço do delimitador de fim do bloco de script. Para analisar, o host normalmente usa um delimitador (como duas aspas simples), para detectar o final do bloco de script.  
   
  O delimitador permite pré-processamento pelo script do mecanismo de criação. Por exemplo, o mecanismo pode substituir uma aspa simples por duas aspas simples para uso como um delimitador. O mecanismo determina como o delimitador é usado.  
   
- Definido como NULL se nenhum delimitador é usado para identificar o fim do bloco de script.  
+ Definido como NULL se nenhum delimitador é usado para identificar o final do bloco de script.  
   
  `ptiSignature`  
  [in] As informações de tipo para um objeto de função.  
   
  `iMethodSignature`  
- [in] O índice da função de `ITypeInfo``ptiSignature` parâmetro.  
+ [in] O índice da função no `ITypeInfo``ptiSignature` parâmetro.  
   
  `isn`  
  [in] O índice do filho no pai.  
@@ -88,7 +88,7 @@ HRESULT CreateChildHandler(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Um miniscript Especifica um manipulador de eventos. Esse método cria um miniscript se ele for chamado por um `IScriptNode` objeto que representa uma página da Web. Este método não tem êxito se ele é chamado de outras interfaces.  
+ Um scriptlet Especifica um manipulador de eventos. Esse método cria um scriptlet se ele for chamado por um `IScriptNode` objeto que representa uma página da Web. Esse método não será bem-sucedida se ele for chamado por outras interfaces.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb8adf27811f3046de7b447e537443ef129a8c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 824546b64323f7fb88c4ec016f8420169afa665c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725086"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097325"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Retorna uma estatística de script personalizado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetStatEx(  
    REFGUID  guid,  
    ULONG*   pluHi,  
@@ -40,13 +40,13 @@ HRESULT GetStatEx(
   
 #### <a name="parameters"></a>Parâmetros  
  `guid`  
- [in] Especifica qual estatística para retornar. A semântica de qual estatística corresponde a um determinado GUID é totalmente mecanismo definido.  
+ [in] Especifica qual estatística para retornar. A semântica de qual estatística corresponde a um determinado GUID é totalmente o mecanismo definido.  
   
  `pluHi`  
- [out] Os 32 bits altos de um inteiro não assinado de 64 bits que representa a estatística.  
+ [out] Os 32 bits altos de um inteiro sem sinal de 64 bits que representa a estatística.  
   
  `pluLo`  
- [out] Os 32 bits baixos de um inteiro não assinado de 64 bits que representa a estatística.  
+ [out] Os 32 bits baixos de um inteiro sem sinal de 64 bits que representa a estatística.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -60,7 +60,7 @@ HRESULT GetStatEx(
  Esse método permite que um mecanismo de script personalizado retornar estatísticas significativas para um host personalizado.  
   
 > [!NOTE]
->  Este método não está implementado atualmente.  
+>  Esse método não está implementado atualmente.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   

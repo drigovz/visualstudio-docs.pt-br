@@ -10,19 +10,19 @@ ms.assetid: fcf11eb2-8e71-4cca-afda-a91791c243ff
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7b4ea62bf8afa4247fc7c4fdbea40c6b7c772661
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724546"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089538"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
-Adiciona um miniscript de código para o script. Esse método é usado em ambientes onde o estado persistente do script é entremeado com o documento de host e o host é responsável por restaurar o script, em vez da um `IPersist*` interface. Os exemplos primários são linguagens de scripts HTML que permitem miniscripts de código inserido no documento HTML a ser anexado à eventos intrínsecos (por exemplo, ONCLICK="button1.text='Exit'").  
+Adiciona um scriptlet de código ao script. Esse método é usado em ambientes onde o estado persistente do script está entremeado com o documento de host e o host é responsável por restaurar o script, em vez de por meio um `IPersist*` interface. Os exemplos primários são linguagens de script HTML que permitem miniscripts de código inserido no documento HTML a ser anexado a eventos intrínsecos (por exemplo, ONCLICK="button1.text='Exit'").  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT AddScriptlet(  
     LPCOLESTR pstrDefaultName,       // address of default name of scriptlet  
     LPCOLESTR pstrCode,              // address of scriptlet text  
@@ -40,39 +40,39 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstrDefaultName`  
- [in] Endereço de um nome padrão para associar o miniscript. Se o miniscript não contém informações de nomenclatura (como no exemplo ONCLICK acima), esse nome será usado para identificar o miniscript. Se esse parâmetro for `NULL`, o mecanismo de script fabrica um nome exclusivo, se necessário.  
+ [in] Endereço de um nome padrão para associar o scriptlet. Se o scriptlet não contiver informações de nomeação (como no exemplo ONCLICK acima), esse nome será usado para identificar o scriptlet. Se esse parâmetro for `NULL`, o mecanismo de script fabrica um nome exclusivo, se necessário.  
   
  `pstrCode`  
- [in] Endereço do texto miniscript a adicionar. A interpretação dessa cadeia de caracteres depende da linguagem de script.  
+ [in] Endereço do texto de scriptlet a ser adicionado. A interpretação dessa cadeia de caracteres depende da linguagem de script.  
   
  `pstrItemName`  
- [in] Endereço de um buffer que contém o nome do item associado a este miniscript. Esse parâmetro, além de `pstrSubItemName`, identifica o objeto para o qual o miniscript é um manipulador de eventos.  
+ [in] Endereço de um buffer que contém o nome do item associado a este scriptlet. Esse parâmetro, além de `pstrSubItemName`, identifica o objeto para o qual o scriptlet é um manipulador de eventos.  
   
  `pstrSubItemName`  
- [in] Endereço de um buffer que contém o nome de um `subobject` do item nomeado com o qual este miniscript está associada; esse nome deve ser encontrado nas informações de tipo do item nomeado. Esse parâmetro é NULL se o miniscript deve ser associado ao item nomeado em vez de um `subitem`. Esse parâmetro, além de `pstrItemName`, identifica o objeto para o qual o miniscript é um manipulador de eventos.  
+ [in] Endereço de um buffer que contém o nome de um `subobject` do item nomeado com a qual este scriptlet está associado; esse nome deve ser encontrado nas informações de tipo do item nomeado. Esse parâmetro é NULL se o scriptlet deve ser associado ao item nomeado, em vez de um `subitem`. Esse parâmetro, além de `pstrItemName`, identifica o objeto específico para o qual o scriptlet é um manipulador de eventos.  
   
  `pstrEventName`  
- [in] Endereço de um buffer que contém o nome do evento para o qual o miniscript é um manipulador de eventos.  
+ [in] Endereço de um buffer que contém o nome do evento para o qual o scriptlet é um manipulador de eventos.  
   
  `pstrDelimiter`  
- [in] Endereço do delimitador final de miniscript. Quando o `pstrCode` parâmetro é analisado a partir de um fluxo de texto, o host normalmente usa um delimitador, como duas aspas ("), para detectar o fim do miniscript. Esse parâmetro especifica o delimitador que o host é usado, permitindo que o mecanismo de script fornecer algumas condicional pré-processamento primitivo (por exemplo, substituindo uma aspa simples ['] por duas aspas simples para uso como um delimitador). Exatamente como (e se) o script faz mecanismo use essas informações depende do mecanismo de script. Defina esse parâmetro como NULL se o host não tiver usado um delimitador para marcar o fim do miniscript.  
+ [in] Endereço do delimitador final do scriptlet. Quando o `pstrCode` parâmetro é analisado a partir de um fluxo de texto, o host normalmente usa um delimitador, como duas aspas ("), para detectar o final do scriptlet. Esse parâmetro especifica o delimitador que o host usou, permitindo que o mecanismo de script forneça algum pré-processamento primitivo condicional (por exemplo, substituindo uma aspa simples ['] por duas aspas simples para uso como um delimitador). Exatamente como (e se) o script faz mecanismo usa essas informações depende o mecanismo de script. Defina esse parâmetro como NULL se o host não usou um delimitador para marcar o final do scriptlet.  
   
  `dwSourceContextCookie`  
  [in] Valor definido pelo aplicativo que é usado para fins de depuração.  
   
  `ulStartingLineNumber`  
- [in] Valor de base zero que especifica a linha a análise começará no.  
+ [in] Valor com base em zero que especifica em qual linha a análise começará.  
   
  `dwFlags`  
- [in] Sinalizadores associados com o miniscript. Pode ser uma combinação dos seguintes valores:  
+ [in] Sinalizadores associados com o scriptlet. Pode ser uma combinação dos seguintes valores:  
   
 |Valor de retorno|Significado|  
 |------------------|-------------|  
 |SCRIPTTEXT_ISVISIBLE|Indica que o texto do script deve ser visível (e, portanto, pode ser chamado por nome) como um método global no espaço para nome do script.|  
-|SCRIPTTEXT_ISPERSISTENT|Indica que o código adicionado durante essa chamada deve ser salva se o mecanismo de script é salvo (por exemplo, por meio de uma chamada para `IPersist*::Save`), ou se o mecanismo de script é redefinido por meio de uma transição para o estado inicializado. Para obter mais informações sobre esse estado, consulte estados de mecanismo de Script.|  
+|SCRIPTTEXT_ISPERSISTENT|Indica que o código adicionado durante esta chamada deve ser salvo se o mecanismo de script é salvo (por exemplo, por meio de uma chamada para `IPersist*::Save`), ou se o mecanismo de script for redefinido por uma transição de volta ao estado inicializado. Para obter mais informações sobre esse estado, consulte estados de mecanismo de Script.|  
   
  `pbstrName` ,  
- [out] Nome real usado para identificar o miniscript. Deve ser em ordem de preferência: o nome especificado explicitamente no texto miniscript, o nome padrão fornecido no `pstrDefaultName`, ou um nome exclusivo sintetizadas pelo mecanismo de script.  
+ [out] Nome real usado para identificar o scriptlet. Isso é para estar na ordem de preferência: um nome especificado explicitamente no texto de scriptlet, o nome padrão fornecido no `pstrDefaultName`, ou um nome exclusivo sintetizadas pelo mecanismo de script.  
   
  `pexcepinfo` ,  
  [out] Endereço de uma estrutura que contém informações de exceção. Essa estrutura deve ser preenchida se DISP_E_EXCEPTION for retornado.  
@@ -83,13 +83,13 @@ HRESULT AddScriptlet(
 |Valor de retorno|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
-|`DISP_E_EXCEPTION`|Ocorreu uma exceção na análise do miniscript. O `pexcepinfo` parâmetro contém informações sobre a exceção.|  
+|`DISP_E_EXCEPTION`|Ocorreu uma exceção na análise do scriptlet. O `pexcepinfo` parâmetro contém informações sobre a exceção.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  
-|`E_NOTIMPL`|Não há suporte para esse método; o mecanismo de script não oferece suporte à adição de miniscripts recebendo o evento.|  
+|`E_NOTIMPL`|Não há suporte para esse método; o mecanismo de script não oferece suporte à inclusão de miniscripts recepção de evento.|  
 |`E_POINTER`|Um ponteiro inválido foi especificado.|  
-|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado) e, portanto, a falha.|  
+|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado) e, portanto, com falha.|  
 |`OLESCRIPT_E_INVALIDNAME`|O nome padrão fornecido é inválido nessa linguagem de script.|  
-|`OLESCRIPT_E_SYNTAX`|Ocorreu um erro de sintaxe não especificado no miniscript.|  
+|`OLESCRIPT_E_SYNTAX`|Ocorreu um erro de sintaxe não especificado no scriptlet.|  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

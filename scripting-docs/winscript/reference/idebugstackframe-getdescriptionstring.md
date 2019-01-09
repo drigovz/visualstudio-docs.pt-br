@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdc77aa2ef2f9d7c95b0b82d5195a6a73524f055
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1f6479485a508f71797d6965f71edd3253927088
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729366"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097221"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-Retorna uma descrição textual longo ou curta do quadro de pilhas.  
+Retorna uma descrição curta ou longa textual do quadro de pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetDescriptionString(  
    BOOL   fLong,  
    BSTR*  pbstrDescription  
@@ -39,10 +39,10 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>Parâmetros  
  `fLong`  
- [in] Sinalizador, onde `TRUE` retorna uma descrição longa e `FALSE` retorna uma descrição resumida.  
+ [in] Sinalizador, onde `TRUE` retorna uma descrição longa e `FALSE` retorna uma breve descrição.  
   
  `pbstrDescription`  
- [out] A descrição do quadro de pilhas.  
+ [out] A descrição do quadro de pilha.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -52,7 +52,7 @@ HRESULT GetDescriptionString(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, se `fLong` é `FALSE`, esse método fornece apenas o nome da função associada ao quadro de pilha. Quando `fLong` é `TRUE`, esse método também pode fornecer os parâmetros de função e outras informações relevantes.  
+ Normalmente, se `fLong` é `FALSE`, esse método fornece apenas o nome da função associada com o quadro de pilhas. Quando `fLong` é `TRUE`, esse método também pode fornecer os parâmetros de função e outras informações relevantes.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8ab13f3a284b1b36550367e68ca5fe600db3be6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4967f35904a32e9b9a82426273ea7fd651a34b5a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725386"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088121"
 ---
 # <a name="idebugapplicationnodeenumchildren"></a>IDebugApplicationNode::EnumChildren
 Enumera os nós filho deste nó de aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT EnumChildren(  
    IEnumDebugApplicationNodes**  pperddp  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumChildren(
   
 #### <a name="parameters"></a>Parâmetros  
  `pperddp`  
- [out] A enumeração de nós de filho deste nó.  
+ [out] A enumeração de nós de filhos deste nó.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d50d1e9a22c3d64d65847922090dfab0c33ab32
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f14069f839cf279fcbb997046e34928e59dbfb9a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725486"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094881"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
-Faz com que esse aplicativo para liberar todas as referências e insira um estado inativo.  
+Faz com que esse aplicativo para liberar todas as referências e entrar em um estado inativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -45,7 +45,7 @@ HRESULT Close();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, o proprietário de um aplicativo chama esse método quando o aplicativo termina.  
+ Normalmente, o proprietário de um aplicativo chama esse método quando o aplicativo é encerrado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugApplicationNode Interface](../../winscript/reference/idebugapplicationnode-interface.md)

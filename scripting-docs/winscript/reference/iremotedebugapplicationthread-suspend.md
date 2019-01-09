@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 995fa9e16fa9e1d712caff578c29b9aa3e14123b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c4b7a1491c9e41cfddd0414c47cdf06d4efd3361
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728646"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096844"
 ---
 # <a name="iremotedebugapplicationthreadsuspend"></a>IRemoteDebugApplicationThread::Suspend
 Suspende o thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Suspend(  
    DWORD*  pdwCount  
 );  
@@ -38,7 +38,7 @@ HRESULT Suspend(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdwCount`  
- [out] A contagem de suspender o thread.  
+ [out] A contagem de suspensões do thread.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

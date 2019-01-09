@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ee371ded11f38b5e049e236c92292d6f662f525
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b9b4124429c1a303cd66f4ccbfad8aba46ef3ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728806"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097702"
 ---
 # <a name="imachinedebugmanagerremoveapplication"></a>IMachineDebugManager::RemoveApplication
 Remove um aplicativo de execução de lista de aplicativos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwAppCookie  
 );  
@@ -48,7 +48,7 @@ HRESULT RemoveApplication(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método é chamado pelo Gerenciador de depuração do processo sempre que `IProcessDebugManager::RemoveApplication` é chamado.  
+ Esse método é chamado pelo Gerenciador de depuração do processo sempre que `IProcessDebugManager::RemoveApplication` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a1006304974fab4959ad6313ffdc26793cdd345
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 77cc255bcd04754cbfde4638b67a85f6fdc0a922
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728076"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091982"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
-Recupera os caracteres de e/ou os atributos de caracteres associados a um intervalo de posição do caractere.  
+Recupera os caracteres de e/ou os atributos de caracteres associados com um intervalo de posição do caractere.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetText(  
    ULONG              cCharacterPosition,  
    WCHAR*             pcharText,  
@@ -45,16 +45,16 @@ HRESULT GetText(
  [in] Local do intervalo de posição do caractere inicial.  
   
  `pcharText`  
- [out no] Um buffer de texto de caractere. O buffer deve ser grande o suficiente para manter `cMaxChars` caracteres. Se esse parâmetro for NULL, o método não retornar caracteres.  
+ [no, out] Um buffer de caracteres de texto. O buffer deve ser grande o suficiente para manter `cMaxChars` caracteres. Se esse parâmetro for NULL, o método não retorna caracteres.  
   
  `pstaTextAttr`  
- [out no] Um buffer de atributo de caracteres. O buffer deve ser grande o suficiente para manter `cMaxChars` caracteres. Se esse parâmetro for NULL, o método não retorna atributos.  
+ [no, out] Um buffer de atributo de caracteres. O buffer deve ser grande o suficiente para manter `cMaxChars` caracteres. Se esse parâmetro for NULL, o método não retorna atributos.  
   
  `pcNumChars`  
- [out no] O número de caracteres/atributos retornados. Esse parâmetro deve ser definido como zero antes de chamar esse método.  
+ [no, out] O número de caracteres/atributos retornados. Esse parâmetro deve ser definido como zero antes de chamar esse método.  
   
  `cMaxChars`  
- [in] Número de caracteres no intervalo de posição de caractere. Também especifica o número máximo de caracteres a ser retornado.  
+ [in] Número de caracteres no intervalo de posição de caractere. Também especifica o número máximo de caracteres a serem retornados.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -64,7 +64,7 @@ HRESULT GetText(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna os caracteres de e/ou os atributos de caracteres associados a um intervalo de posição do caractere. O intervalo de posição de caractere é especificado por uma posição de caractere e um número de caracteres.  
+ Esse método recupera os caracteres de e/ou os atributos de caracteres associados com um intervalo de posição do caractere. O intervalo de posição de caractere é especificado por uma posição de caractere e um número de caracteres.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)   

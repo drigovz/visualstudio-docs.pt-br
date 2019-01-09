@@ -1,5 +1,5 @@
 ---
-title: 'Método Ijsdebugdatatarget: | Microsoft Docs'
+title: 'Método ijsdebugdatatarget:: Gettlsvalue | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4205adfb24a1a64d4e90f3fdcaf5a5ecbc4028de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f81e9ea6cca9bf54753a496e07903d23bb913fc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727876"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095323"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>Método IJsDebugDataTarget::GetTlsValue
-Para o thread que está sendo depurado, recupera o valor no slot thread (TLS) de armazenamento local para o índice especificado do TLS.  
+Para o thread que está sendo depurado, recupera o valor no slot de armazenamento local (TLS) de thread para o índice TLS especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetTlsValue(  
    DWORD threadId,  
    UINT32 tlsIndex,  
@@ -41,10 +41,10 @@ HRESULT GetTlsValue(
  [in] Em execução no processo de destino para ler a partir do thread.  
   
  `tlsIndex`  
- [in] O índice TLS que foi alocado quando a função TlsAlloc chamado, o processo de destino.  
+ [in] O índice TLS que foi atribuído quando o processo de destino chamou a função TlsAlloc.  
   
  `pValue`  
- [out] O valor de tamanho de ponteiro que foi armazenado no slot TLS do thread. Se o thread de destino é de 32 bits, 32-bits superiores desse valor será zero.  
+ [out] O valor do ponteiro dimensionado que foi armazenado no encaixe de TLS do thread. Se o thread de destino for de 32 bits, 32-bits superiores desse valor será zero.  
   
 ## <a name="return-value"></a>Valor de retorno  
   

@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1122b5327da5573071bc534b5eb1a16fa69b873
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 8a14a6af9c69772c150164dd9ab49cd13a6a8884
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283373"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093789"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
 Adiciona uma biblioteca de tipos para o namespace para o script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
    REFGUID   rguidTypeLib,  
    DWORD     dwMajor,  

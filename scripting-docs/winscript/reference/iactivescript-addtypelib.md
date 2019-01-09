@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640866"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092534"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Adiciona uma biblioteca de tipos para o espaço de nome para o script. Isso é semelhante de `#include` diretiva em C/C++. Ele permite que um conjunto de itens predefinidos, como definições de classe, `typedefs`e constantes a serem adicionadas ao ambiente de tempo de execução disponível para o script nomeadas.  
+Adiciona uma biblioteca de tipos para o espaço para nome para o script. Isso é semelhante ao `#include` diretiva em C/C++. Ele permite que um conjunto de itens predefinidos, como definições de classe, `typedefs`e constantes a ser adicionado ao ambiente de tempo de execução disponível para o script nomeadas.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -41,7 +41,7 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parâmetros  
  `guidTypeLib`  
- [in] CLSID do tipo de biblioteca para adicionar.  
+ [in] CLSID da biblioteca de tipos para adicionar.  
   
  `dwMaj`  
  [in] Número de versão principal.  
@@ -64,7 +64,7 @@ HRESULT AddTypeLib(
 |`S_OK`|Êxito.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  
 |`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado).|  
-|`TYPE_E_CANTLOADLIBRARY`|Não foi possível carregar a biblioteca de tipo especificado.|  
+|`TYPE_E_CANTLOADLIBRARY`|Não foi possível carregar a biblioteca de tipos especificada.|  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScript](../../winscript/reference/iactivescript.md)

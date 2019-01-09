@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89faa6481bd5e5934ae2d3b85a0bade83949633a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fa444573e418de1a59219eb48b09e64b08d859a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725556"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089889"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
-Adiciona um provedor de enumerador de quadro de pilha para este aplicativo.  
+Adiciona um provedor de enumerador de quadro de pilha para esse aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT AddStackFrameSniffer(  
    IDebugStackFrameSniffer*  pdsfs,  
    DWORD*                    pdwCookie  
@@ -42,7 +42,7 @@ HRESULT AddStackFrameSniffer(
  [in] O provedor de enumerador de quadro de pilha para adicionar a este aplicativo.  
   
  `pdwCookie`  
- [out] Um cookie é usado para remover este provedor de enumerador de quadro de pilha do aplicativo.  
+ [out] Um cookie que é usado para remover este provedor de enumerador de quadro de pilha do aplicativo.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -52,7 +52,7 @@ HRESULT AddStackFrameSniffer(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Embora os mecanismos de linguagem normalmente chamar esse método para expor seus registros de ativação para o depurador, é possível para outras entidades para expor os quadros de pilhas.  
+ Embora os mecanismos de linguagem normalmente chama esse método para expor os quadros de pilhas do depurador, é possível que outras entidades para expor os quadros de pilha.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

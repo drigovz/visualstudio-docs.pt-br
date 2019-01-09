@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d6fc79a9d6d35e35181c3505e07af2d9a1962c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 25e81a4aa631c142d4444c0578742f68001a108d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724556"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097013"
 ---
 # <a name="iactivescriptprofilercontrol3enumheap-method"></a>Método IActiveScriptProfilerControl3::EnumHeap
-Retorna uma interface ([IActiveScriptProfilerHeapEnum Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) que pode ser usado para iterar sobre os objetos do heap de GC no contexto do mecanismo de script associados.  
+Retorna uma interface ([IActiveScriptProfilerHeapEnum Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) que pode ser usado para iterar sobre os objetos de heap de GC no contexto do mecanismo de script associado.  
   
- Você pode chamar este método ou depuração ou modo de liberação. Esse método deve ser chamado quando o thread de interface do usuário está ocioso. Depois que o método é chamado, nenhuma operação deve ser executada contra o mecanismo de script exceto [método Iactivescriptprofilerheapenum:](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) até [método Iactivescriptprofilerheapenum:](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)retornará S_FALSE ou [IActiveScriptProfilerHeapEnum Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) ponteiro de interface é liberado.  
+ Você pode chamar esse método em depuração ou modo de versão. Esse método deve ser chamado quando o thread de interface do usuário está ocioso. Depois que o método foi chamado, nenhuma operação deve ser executada no mecanismo de script, exceto [método iactivescriptprofilerheapenum:: Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) até que [método iactivescriptprofilerheapenum:: Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)retorna S_FALSE ou o [IActiveScriptProfilerHeapEnum Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) ponteiro de interface é liberado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT EnumHeap([out] IActiveScriptProfilerHeapEnum** ppEnum);  
 ```  
   

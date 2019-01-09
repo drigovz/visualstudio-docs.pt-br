@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8ce0dc7c77cd3b58f388ab63a9d5a3573c93419
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b2aaa1882b5699343d82ecae5fe236574802d7d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729126"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092385"
 ---
 # <a name="ienumremotedebugapplicationthreadsnext"></a>IEnumRemoteDebugApplicationThreads::Next
-O `Next` método recupera um número de segmentos na sequência de enumeração especificado.  
+O `Next` método recupera um número especificado de segmentos na sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                            celt,  
    IRemoteDebugApplicationThread**  pprdat,  
@@ -56,7 +56,7 @@ HRESULT Next(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna um número especificado de segmentos na sequência de enumeração.  
+ Esse método recupera um número especificado de segmentos na sequência de enumeração.  
   
 ## <a name="see-also"></a>Consulte também  
  [IEnumRemoteDebugApplicationThreads Interface](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

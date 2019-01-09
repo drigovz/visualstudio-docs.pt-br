@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 844ea36bcbb46e5b1e363d63c39a09518fcd22f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eeaa4f6b83f36ac1fd1540ce99a6ccf06a265699
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724956"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092229"
 ---
 # <a name="iactivescriptprofilercallback3-interface"></a>Interface IActiveScriptProfilerCallback3
-Fornece um método para notificar o criador de perfil que as execuções de perfil estão ocorrendo no contexto de um web worker.  
+Fornece um método para notificar o criador de perfil que as execuções de criação de perfil estão ocorrendo no contexto de um web worker.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2  
 ```  
   

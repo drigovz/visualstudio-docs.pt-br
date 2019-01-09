@@ -18,21 +18,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 70dd250359d52ae0929fb5fb2c60087f66af2160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725106"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095115"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Informa o host sobre um erro de tempo de execução do script quando o processo de depurar Gerenciador não encontrar um depurador de script apenas no tempo.  
+Informa o host sobre um erro de tempo de execução de script quando o processo de Gerenciador de depuração não encontra um depurador de script Just In Time.  
   
- Para implementar um depurador em seu host, você deve tratar [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Com base em uma ação do usuário, o host pode anexar o depurador e retorno ou retornar a partir do depurador no OnScriptErrorDebug `pfEnterDebugger` parâmetro. Você também deve implementar essa interface para receber a notificação sobre o erro de tempo de execução, mesmo se não houver nenhum depuradores externos que podem ser interpretadas pelo Gerenciador de processo de depuração.  
+ Para implementar um depurador em seu host, você deve tratar [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Com base em uma ação do usuário, o host pode anexar o depurador e retornar ou retornar o início do depurador no OnScriptErrorDebug `pfEnterDebugger` parâmetro. Você também deve implementar essa interface para receber a notificação sobre o erro de tempo de execução, mesmo se não houver nenhum depuradores externas que podem ser interpretadas pelo Gerenciador de processos de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnCanNotJITScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug  
    BOOL *pfCallOnScriptErrorWhenContinuing  
@@ -44,7 +44,7 @@ HRESULT OnCanNotJITScriptErrorDebug(
  [in] O erro de tempo de execução que ocorreu.  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- [out] Se a chamada [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) se o usuário decidir continuar sem depuração.  
+ [out] Se a chamada [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) se o usuário decidir continuar sem depurar.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc9c819c2dd4a75d6223af86b4fe89baebc186b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06e7a7cf276e589aaaa3c00ecab8cbf881942f82
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645646"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094322"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
 Retorna o conjunto de caracteres de preenchimento para um contexto de conclusão solicitada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetChars(  
    DWORD            fRequestedList,  
    BSTR             *pbstrChars  
@@ -44,7 +44,7 @@ HRESULT GetChars(
 |Constante|Valor|Descrição|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Solicitações de enumeração do lado esquerdo.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Solicita o contexto de conclusão de membro.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Solicita o contexto de preenchimento de membro.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Solicita a lista de parâmetros.|  
 |SCRIPT_CMPL_COMMIT|0x0004|Conclusão de solicitações da lista de parâmetros.|  
   

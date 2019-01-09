@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_pure | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f79523cec58c34039db817f36eaf22efe4e6acd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 06418ee8f95ad08b5d69ef272820dbe05f3e7bf8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843772"
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
 Recupera um sinalizador que especifica se a função é pura virtual.  
@@ -27,7 +25,7 @@ Recupera um sinalizador que especifica se a função é pura virtual.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT get_pure (   
+HRESULT get_pure (   
    BOOL* pRetVal  
 );  
 ```  

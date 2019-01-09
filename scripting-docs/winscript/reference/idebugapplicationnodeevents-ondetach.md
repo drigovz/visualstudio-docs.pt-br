@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b5f1ccc35e83f4fa016b5ff3dae8fac867bb8d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86a19a0c8ff2ce64cf524ae9b5f0ad258409f2df
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726066"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094465"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
-Manipula um evento indicando que o objeto de nó de aplicativo de depuração foi desanexado de um nó pai.  
+Manipula um evento indicando que o objeto de nó do aplicativo de depuração foi desanexado de um nó pai.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onDetach();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -45,9 +45,9 @@ HRESULT onDetach();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método manipula um evento indicando que o objeto de nó de aplicativo de depuração foi desanexado de um nó pai.  
+ Esse método manipula um evento indicando que o objeto de nó do aplicativo de depuração foi desanexado de um nó pai.  
   
- Os implementadores do `IDebugApplicationNode` interface gerar este evento.  
+ Os implementadores a `IDebugApplicationNode` interface gere este evento.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

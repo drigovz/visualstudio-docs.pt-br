@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdeb57380975f19424f8b7da783846b5aae976ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5e25f42b2bce66cf3bb7ab3e69d3711e2526ae1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726456"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097052"
 ---
 # <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
-Fornece um mecanismo para o chamador executar o código no thread do aplicativo.  
+Fornece um mecanismo para que o chamador executar o código no thread do aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT SynchronousCallIntoThread(  
    IDebugThreadCall*  pstcb,  
    DWORD_PTR          dwParam1,  
@@ -41,7 +41,7 @@ HRESULT SynchronousCallIntoThread(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstcb`  
- [in] O objeto a ser chamada.  
+ [in] Objeto a ser chamado.  
   
  `dwParam1`  
  [in] O primeiro parâmetro para passar para o `IDebugThreadCall::ThreadCallHandler` método.  
@@ -60,7 +60,7 @@ HRESULT SynchronousCallIntoThread(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método fornece um mecanismo para o chamador executar o código no thread do depurador. Hosts e mecanismos de linguagem normalmente usam esse método para implementar free-thread objetos sobre suas implementações de threads único.  
+ Esse método fornece um mecanismo para que o chamador executar o código no thread do depurador. Hosts e mecanismos de linguagem normalmente usam esse método para implementar os objetos de thread livre sobre suas implementações de threads únicos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)   

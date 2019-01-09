@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557fe65859d1e3046d64884982070ad233e12559
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6cee33b5547e30f913407b02a3befd449dda6aeb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728246"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097351"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
 Retorna o resultado da avaliação da expressão como uma cadeia de caracteres e o valor de retorno da operação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetResultAsString(  
    HRESULT*  phrResult,  
    BSTR*     pbstrResult  
@@ -55,7 +55,7 @@ HRESULT GetResultAsString(
 ## <a name="remarks"></a>Comentários  
  Esse método retorna o resultado da avaliação da expressão como uma cadeia de caracteres e a operação `HRESULT`.  
   
- Este método retorna `S_OK` e `phrResult` retorna `E_ABORT` se `Abort` anula a operação.  
+ Esse método retornará `S_OK` e `phrResult` retorna `E_ABORT` se `Abort` anula a operação.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugExpression](../../winscript/reference/idebugexpression-interface.md)

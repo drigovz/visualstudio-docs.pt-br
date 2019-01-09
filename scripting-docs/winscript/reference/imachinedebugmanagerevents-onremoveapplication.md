@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe727b65c8a74962cf6a88ce4ab36ad975b26231
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b4cc2412f88eb4a4224dc96ebc1b993729169071
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728676"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088940"
 ---
 # <a name="imachinedebugmanagereventsonremoveapplication"></a>IMachineDebugManagerEvents::onRemoveApplication
 Manipula o evento quando um aplicativo é removido a execução de lista de aplicativos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onRemoveApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -39,7 +39,7 @@ HRESULT onRemoveApplication(
   
 #### <a name="parameters"></a>Parâmetros  
  `pda`  
- [in] Aplicativo que foi removido da execução lista de aplicativos.  
+ [in] Aplicativo que foi removido a execução de lista de aplicativos.  
   
  `dwAppCookie`  
  [in] O cookie fornecido quando o aplicativo foi adicionado na lista de aplicativos.  

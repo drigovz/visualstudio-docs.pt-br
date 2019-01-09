@@ -16,26 +16,26 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec47cd5f581c36abb60b662983c6d806a4732f47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bbe5acd75ecf4f004d835490579b1f35c1bf675c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724726"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086808"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-Chamado para informar o objeto do criador de perfil sempre que a criação de perfil é interrompida em um mecanismo de script. Dessa forma, o objeto do criador de perfil pode chamar suas rotinas de limpeza, se necessário. Este método também é chamado pelo mecanismo de script quando o mecanismo de script está sendo desligado, ou quando uma chamada para [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) falhar.  
+Chamado para informar o objeto criador de perfil sempre que a criação de perfil é interrompida em um mecanismo de script. Dessa forma, o objeto de criador de perfil pode chamar suas rotinas de limpeza, se necessário. Esse método também é chamado pelo mecanismo de script quando o mecanismo de script está sendo desligado, ou quando uma chamada para [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) falhar.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Shutdown(  
     [in] HRESULT hrReason);  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
  `hrReason`  
- [in] A razão para desligar. Se o mecanismo de script está sendo desligado, `S_OK` é passado. Se a chamada para [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) retorna um HRESULT de falha, o HRESULT é passado. Caso contrário, esse valor é recuperado do [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
+ [in] O motivo para ser desligado. Se o mecanismo de script está sendo desligado, `S_OK` é passado. Se a chamada para [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) retorna um HRESULT de falha, o HRESULT é passado. Caso contrário, esse valor é recuperado da [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
   
 ## <a name="return-value"></a>Valor de retorno  
  O valor de retorno desse método é ignorado pelo mecanismo de script.  

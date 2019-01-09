@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48571476407c29b9af949bd6f626d14ea822f2e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 00055eaaf79e24a9f59c380318b9c24fa476f1af
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725316"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096064"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
 Indica se o depurador está respondendo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT QueryAlive();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -47,7 +47,7 @@ HRESULT QueryAlive();
 ## <a name="remarks"></a>Comentários  
  Este método indica se o depurador está respondendo. As implementações desse método devem retornar sempre `S_OK`.  
   
- Se o processo do depurador termina inesperadamente, COM retornará um erro do proxy empacotamento para chamadas a este método.  
+ Se o processo do depurador termina inesperadamente, COM retornará um erro do proxy marshaling de chamadas para esse método.  
   
 ## <a name="see-also"></a>Consulte também  
  [IApplicationDebugger Interface](../../winscript/reference/iapplicationdebugger-interface.md)

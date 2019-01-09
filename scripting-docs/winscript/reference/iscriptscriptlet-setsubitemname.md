@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0d038330d502dd9a230fdb82c14d36732fed7e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 777a69e47ed7f88851cae0d20f2eb23ee6978296
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733866"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097703"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-Define o último identificador o nome totalmente qualificado do host do objeto do miniscript.  
+Define o último identificador no nome totalmente qualificado do host do objeto do scriptlet.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT SetSubItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,9 +38,9 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>Parâmetros  
  `psz`  
- Se o host totalmente qualificado do nome de miniscript tem mais de um nível, `psz` é o endereço do buffer do identificador do segundo nível.  
+ Se o host totalmente qualificado do nome de scriptlet tem mais de um nível, `psz` é o endereço do buffer do identificador no segundo nível.  
   
- Se o host totalmente qualificado do nome de miniscript tem um nível, `psz` é o endereço do buffer do identificador do primeiro nível.  
+ Se o host totalmente qualificado do nome de scriptlet tem um nível, `psz` é o endereço do buffer do identificador no primeiro nível.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

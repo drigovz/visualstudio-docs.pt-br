@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22ccc54dee335fd8c81343557d2f32c48eb30560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a59f30c5b42301d29b73a4a079837423614da49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837913"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087575"
 ---
 # <a name="idispatchex-interface"></a>Interface IDispatchEx
 `IDispatchEx`, uma extensão do `IDispatch` dá suporte a recursos de interface, apropriado para as linguagens dinâmicas, como as linguagens de script. Esta seção descreve o `IDispatchEx` interface em si, as diferenças entre `IDispatch` e `IDispatchEx`e a lógica para as extensões. Espera-se que os leitores estejam familiarizados com `IDispatch` e ter acesso ao `IDispatch` documentação.  
@@ -71,7 +71,7 @@ ms.locfileid: "49837913"
   
   O código HTML completo é:  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -102,7 +102,7 @@ test();
   
  Um controle colocado nesta página da Web mesmo poderia obter um ponteiro de expedição para os mecanismos de script do navegador. O controle, em seguida, pode implementar o Test () de função:  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -138,7 +138,7 @@ function cat()
   
   O código para o controle de teste:  
   
-```  
+```cpp
    BOOL test(IDispatchEx *pdexScript)  
    {  
       HRESULT hr;  

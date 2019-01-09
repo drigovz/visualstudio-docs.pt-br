@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fdad752587869fbdd1edfa325ddc1282cfa3a95
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3cfbd2f3924391a8c7ff75ea5e4c06e7b0f07c35
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734156"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093022"
 ---
 # <a name="profilerheapobjectrelationshiplist-structure"></a>Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST
-Representa uma lista de relações que pertencem a um objeto do heap.  
+Representa uma lista de relações que pertencem a um objeto de heap.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_RELATIONSHIP elements[];} PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST;  
 ```  
   
@@ -32,5 +32,5 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST{    UINT count;    [size_
   
 |Membro|Tipo|Descrição|  
 |------------|----------|-----------------|  
-|count|UINT|O número de relações de um objeto do heap.|  
-|elementos|[Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md)|As relações de um objeto do heap.|
+|count|UINT|O número de relações de um objeto de heap.|  
+|elementos|[Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md)|As relações de um objeto de heap.|

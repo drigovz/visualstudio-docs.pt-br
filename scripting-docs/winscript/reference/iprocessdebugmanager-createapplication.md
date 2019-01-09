@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateApplication | Microsoft Docs
+title: 'Iprocessdebugmanager:: Createapplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a051462f32acae238ca5843e283fe6001ec43fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f182dd92d181067f930f415ec9332df2658c3ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729206"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088628"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
 Cria um novo objeto de aplicativo de depuração para este aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT CreateApplication(  
    IDebugApplication**  ppda  
 );  
@@ -48,7 +48,7 @@ HRESULT CreateApplication(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O objeto criado por este método não tem um nome e não será adicionado à execução lista de aplicativos. Use o `IProcessDebugManager::AddApplication` para adicionar o aplicativo de depuração para a lista de aplicativos.  
+ O objeto criado por esse método não tem nome e não é adicionado à execução lista de aplicativos. Use o `IProcessDebugManager::AddApplication` para adicionar o aplicativo de depuração para a lista de aplicativos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725986"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092190"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-Manipula o evento quando um nó filho é removido de um objeto de nó de aplicativo de depuração.  
+Manipula o evento quando um nó filho é removido de um objeto de nó do aplicativo de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -48,9 +48,9 @@ HRESULT onRemoveChild(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método manipula o evento quando um nó filho é removido de um objeto de nó de aplicativo de depuração.  
+ Esse método manipula o evento quando um nó filho é removido de um objeto de nó do aplicativo de depuração.  
   
- Os implementadores do `IDebugApplicationNode` interface gerar este evento.  
+ Os implementadores a `IDebugApplicationNode` interface gere este evento.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

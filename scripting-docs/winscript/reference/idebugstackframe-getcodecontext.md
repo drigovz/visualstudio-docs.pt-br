@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b872e63169f6c2d70cd3476324b3d0071718350
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 14c7acc9070edb0e63dee8c71cb0b16c5f85e4cd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726906"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095609"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
-Retorna o contexto de código atual associado ao quadro de pilha.  
+Retorna o contexto de código atual associado com o quadro de pilhas.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetCodeContext(  
    IDebugCodeContext**  ppcc  
 );  
@@ -48,7 +48,7 @@ HRESULT GetCodeContext(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o contexto de código atual associado ao quadro de pilha.  
+ Esse método retorna o contexto de código atual associado com o quadro de pilhas.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

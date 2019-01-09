@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad50f03806cbf98450c0fc917f1a97ca7305d05c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c8682cd54b10144800f17cab3a8a03ea8169889
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734336"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093126"
 ---
 # <a name="profilerheapobject-structure"></a>Estrutura PROFILER_HEAP_OBJECT
-Representa os objetos do heap coletados por [IActiveScriptProfilerControl3::EnumHeap método](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
+Representa os objetos da pilha coletados pelas [método IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT  
 {  
     UINT size;    union {        PROFILER_HEAP_OBJECT_ID objectId;        PROFILER_EXTERNAL_OBJECT_ADDRESS externalObjectAddress;    };    PROFILER_HEAP_OBJECT_NAME_ID typeNameId;    USHORT flags;     USHORT optionalInfoCount;} PROFILER_HEAP_OBJECT;  
@@ -34,8 +34,8 @@ typedef struct _PROFILER_HEAP_OBJECT
   
 |Membro|Tipo|Descrição|  
 |------------|----------|-----------------|  
-|objectId|[Tipo PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|A ID do objeto heap.|  
-|externalObjectAddress|[Tipo PROFILER_EXTERNAL_OBJECT_ADDRESS](../../winscript/reference/profiler-external-object-address-type.md)|O endereço externo do objeto de um objeto, como um objeto C++ alocados, que está fora do heap de JavaScript.|  
-|typeNameId|[Tipo PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md)|A ID do nome do tipo de objeto heap, recuperada do [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md). Somente um dos `externalObjectAddress` ou `typeName` estiver presente, dependendo do `flags` valor.|  
-|sinalizadores|[Enumeração PROFILER_HEAP_OBJECT_FLAGS](../../winscript/reference/profiler-heap-object-flags-enumeration.md)|Os sinalizadores que contêm informações básicas sobre o objeto do heap.|  
-|optionalInfoCount|USHORT|O número de [estrutura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) registros que estão disponíveis para o objeto do heap.|
+|ObjectId|[Tipo PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|A ID do objeto heap.|  
+|externalObjectAddress|[Tipo PROFILER_EXTERNAL_OBJECT_ADDRESS](../../winscript/reference/profiler-external-object-address-type.md)|O endereço do objeto externo de um objeto, como um objeto alocado em C++, que está fora do heap de JavaScript.|  
+|typeNameId|[Tipo PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md)|A ID do nome do tipo de objeto heap, recuperada do [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md). Somente um dos `externalObjectAddress` ou `typeName` estiver presente, dependendo o `flags` valor.|  
+|sinalizadores|[Enumeração PROFILER_HEAP_OBJECT_FLAGS](../../winscript/reference/profiler-heap-object-flags-enumeration.md)|Os sinalizadores que contêm informações básicas sobre o objeto de heap.|  
+|optionalInfoCount|USHORT|O número de [estrutura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) registros que estão disponíveis para o objeto de heap.|
