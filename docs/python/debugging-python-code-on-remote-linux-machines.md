@@ -3,7 +3,6 @@ title: Depurar o código Python em computadores Linux remotos
 description: Use o Visual Studio para depurar o código Python em execução em computadores Linux remotos, incluindo as etapas de configuração necessárias, segurança e solução de problemas.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964884"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
 

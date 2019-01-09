@@ -2,23 +2,20 @@
 title: Modo de mapa e modo de barra da barra de rolagem
 ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
-f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fca9b8dd8f4c3cd17ee6ca7f23b3622fc1a9e4ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5fc435f2fe350c177cbff0e526d2f0221a93b89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965065"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Como: personalizar a barra de rolagem
+# <a name="how-to-customize-the-scroll-bar"></a>Como: Personalizar a barra de rolagem
 
 Quando se trabalha com longos arquivos de código, às vezes torna-se difícil manter o controle de onde está tudo no arquivo. É possível personalizar a barra de rolagem do editor de código para ter um panorama geral do que está acontecendo no código.
 
@@ -38,7 +35,7 @@ Você pode selecionar se a barra de rolagem deve mostrar anotações, como alter
       > [!TIP]
       > A opção **Exibir marcas** inclui pontos de interrupção e indicadores.
 
-Faça a experiência abrindo um grande arquivo de código e substituindo partes do texto que ocorrem em vários locais no arquivo. A barra de rolagem mostra o efeito das substituições, de modo que você pode desfazer suas alterações se tiver substituído algo que não deveria.
+Experimente abrir um arquivo de código grande e substituir algumas partes do texto que ocorrem em vários locais no arquivo. A barra de rolagem mostra o efeito das substituições, de modo que você pode desfazer suas alterações se tiver substituído algo que não deveria.
 
 Esta é a aparência da barra de rolagem após o usuário pesquisar por uma cadeia de caracteres. Observe que todas as instâncias da cadeia de caracteres são exibidas na barra de rolagem.
 
@@ -58,10 +55,10 @@ O *modo de barra* exibe indicadores de anotação na barra de rolagem. Clicar na
 
 ### <a name="map-mode"></a>Modo de mapa
 
-No *modo de mapa*, quando você clica em um local na barra de rolagem, o cursor avança para aquele local no arquivo em vez de simplesmente rolar para cima ou para baixo em uma página. As linhas de código são mostradas em miniatura na barra de rolagem. É possível escolher a largura da coluna de mapa selecionando um valor em **Visão geral do código-fonte**. Para habilitar uma visualização maior do código quando você parar o ponteiro no mapa, selecione a opção **Mostrar dica de ferramenta de visualização**. As regiões recolhidas ficam sombreadas de forma diferente e se expandem quando você clica duas vezes nelas.
+No *modo de mapa*, quando você clica em um local na barra de rolagem, o cursor avança para aquele local no arquivo em vez de simplesmente rolar para cima ou para baixo em uma página. As linhas de código são mostradas em miniatura na barra de rolagem. É possível escolher a largura da coluna do mapa selecionando um valor em **Visão geral do Código-fonte**. Para habilitar uma visualização maior do código quando você parar o ponteiro no mapa, selecione a opção **Mostrar Dica de Ferramenta de Visualização**. As regiões recolhidas ficam sombreadas de forma diferente e são expandidas quando você clica duas vezes nelas.
 
 > [!TIP]
-> Você pode desativar a exibição de código em miniatura no modo de mapa definindo a**Visão geral do código-fonte** para **Desativado**. Se a opção **Mostrar dica de ferramenta de visualização** estiver selecionada, você ainda verá uma visualização do código nesse local ao passar o ponteiro do mouse sobre a barra de rolagem, e o cursor ainda avançará para esse local no arquivo quando você clicar.
+> Você pode desabilitar a exibição de código em miniatura no modo de mapa definindo a opção **Visão geral do código-fonte** como **Desabilitada**. Se a opção **Mostrar dica de ferramenta de visualização** estiver selecionada, você ainda verá uma visualização do código nesse local ao passar o ponteiro do mouse sobre a barra de rolagem, e o cursor ainda avançará para esse local no arquivo quando você clicar.
 
 A imagem a seguir mostra o exemplo de pesquisa quando o modo de mapa está ativado e a largura está definida como **Média**:
 
