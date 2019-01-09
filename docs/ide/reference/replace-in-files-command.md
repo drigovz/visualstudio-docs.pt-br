@@ -2,7 +2,6 @@
 title: Comando Substituir nos Arquivos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf54892d17a877cd8e2c3ffd21ebd513e303d6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959992"
 ---
 # <a name="replace-in-files-command"></a>Comando Substituir nos Arquivos
 Substitui texto em arquivos usando um subconjunto das opções disponíveis na guia **Substituir nos Arquivos** da janela **Localizar e Substituir**.
