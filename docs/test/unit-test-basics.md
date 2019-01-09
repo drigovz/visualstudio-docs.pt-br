@@ -2,7 +2,6 @@
 title: Noções básicas de teste de unidade
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740345"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060797"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -26,7 +25,7 @@ O teste de unidade tem o maior efeito sobre a qualidade do código quando é par
 
 Você pode gerar os projetos de teste e métodos de teste rapidamente do seu código ou criar os testes manualmente conforme a necessidade. Quando você usar o IntelliTest para explorar seu código .NET, poderá gerar dados de teste e um conjunto de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Descubra como [gerar testes de unidade para seu código](generate-unit-tests-for-your-code-with-intellitest.md).
 
-O Gerenciador de Testes também pode executar estruturas de teste de unidade de código aberto e de terceiros que implementaram interfaces de complemento do Gerenciador de Testes. Você pode adicionar muitas dessas estruturas por meio do gerenciador de extensões do Visual Studio e da galeria do Visual Studio. Confira [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
+O Gerenciador de Testes também pode executar estruturas de teste de unidade de código aberto e de terceiros que implementaram interfaces de complemento do Gerenciador de Testes. Você pode adicionar muitas dessas estruturas por meio do gerenciador de extensões do Visual Studio e da galeria do Visual Studio. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Introdução
 

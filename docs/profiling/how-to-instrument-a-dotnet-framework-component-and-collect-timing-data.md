@@ -1,8 +1,6 @@
 ---
 title: 'Como: Instrumentar um componente independente do .NET Framework e coletar dados de tempo com o criador de perfil na linha de comando | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b7dcc27b-45c6-4302-9552-6fa5b1e94b56
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 975e9a177f5d9c7423b4c84823464e1a7cc5ad84
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 8aa9e998be5f4a888428f19db7951f9ab7e2e972
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841840"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Como: Instrumentar um componente do .NET Framework autônomo e coletar dados de tempo com o criador de perfil usando a linha de comando
 Este tópico descreve como usar as ferramentas da linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar um componente do .NET Framework, como um arquivo .*exe* ou .*dll*, e coletar dados de tempo detalhados.  

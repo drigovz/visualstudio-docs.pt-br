@@ -1,8 +1,6 @@
 ---
 title: Modo de exibição de árvore – Dados de amostragem de memória do .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3c7c70057380289272e86cf7187680746dafdd2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 7f8e2e6e480bb082c0f60bd94a06b28ea12c268b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988265"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Modo de exibição de árvore de chamadas – dados de amostragem de memória do .NET
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó de função lista todas as funções que ele chamou e os dados de alocação de memória do .NET sobre essas chamadas de função.  

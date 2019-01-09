@@ -1,8 +1,6 @@
 ---
 title: Uso de vários processadores para criar projetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - multiple processors
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae7ff885ea7707ebe2f60001b265913856cbd125
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 540e2ab57dc7509943bf5d3509f3aed388e77687
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819339"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Usar vários processadores para criar projetos
 MSBuild pode tirar proveito dos sistemas com vários processadores ou vários núcleos processadores. Um processo de compilação separado é criado para cada processador disponível. Por exemplo, se o sistema possui quatro processadores, então quatro processos de compilação são criados. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode processar essas compilações simultaneamente e, portanto, em geral o tempo de compilação é reduzido. No entanto, a construção em paralelo apresenta algumas alterações em como os processos de compilação ocorrem. Este tópico aborda essas alterações.  

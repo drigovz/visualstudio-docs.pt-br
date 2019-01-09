@@ -2,7 +2,6 @@
 title: Associar dados no Designer XAML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f1effd15666839b6e48bcebf46120585c4cfc36c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0d9ccd32c8f616e6f998bcd1f31773460c89a20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866118"
 ---
-# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Passo a passo: associar dados no Designer XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Passo a passo: Associar dados no Designer XAML
 
 No Designer XAML, você pode definir as propriedades de associação de dados usando o artboard e a janela Propriedades. O exemplo neste passo a passo mostra como associar dados a um controle. Especificamente, o procedimento mostra como criar uma classe simples de carrinho de compras com [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) chamado de `ItemCount` e associar a propriedade `ItemCount` à propriedade **Text** de um controle de [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 

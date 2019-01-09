@@ -2,7 +2,6 @@
 title: Nós do Designer de Sombreador
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 827da75bb9faadf7506002780273979f628f20cb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 77af1e3edbe1a8ced088dd7c8c8b1afb2ae677cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986018"
 ---
 # <a name="shader-designer-nodes"></a>Nós do Designer de Sombreador
 Os artigos nesta seção da documentação contêm informações sobre os vários nós do Designer de Sombreador que você pode usar para criar efeitos gráficos.
