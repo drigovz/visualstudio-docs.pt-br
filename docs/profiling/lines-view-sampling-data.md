@@ -1,8 +1,6 @@
 ---
 title: Exibição de Linhas – Dados de Amostragem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb965b9a93a278a4c51ea4661f683ebafc2838fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1809680b7bdc8a56bf2058d332541682ec7cccd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914808"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845961"
 ---
 # <a name="lines-view---sampling-data"></a>Exibição de linhas – dados de amostragem
 A visualização Linhas de dados de amostragem lista os dados de desempenho das instruções que estavam em execução quando os exemplos foram coletados na criação de perfil.  
