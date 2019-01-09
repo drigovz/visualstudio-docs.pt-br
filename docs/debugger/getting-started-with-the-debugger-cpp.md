@@ -3,7 +3,6 @@ title: Aprenda a depurar C++ usando o depurador do Visual Studio
 description: Saiba como iniciar o depurador do Visual Studio, executar o código em etapas e inspecionar os dados.
 ms.custom: debug-experiment
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
 - C++
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3578955d72dcb223baeb022a199fb274c0cc659
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 32338468de994f298b3fe39eae5a3c97d0a98dee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822185"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Aprenda a depurar o código C++ usando o Visual Studio
 

@@ -1,9 +1,7 @@
 ---
 title: Publicar um aplicativo Node.js no Serviço de Aplicativo do Linux
 description: Publique aplicativos Node.js criados no Visual Studio no Serviço de Aplicativo do Linux no Azure
-ms.custom: ''
 ms.date: 11/1/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: fcd7c64e15f890c2411327bff5bdc820509fe712
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846250"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar um aplicativo Node.js no Azure (Serviço de Aplicativo do Linux)
 

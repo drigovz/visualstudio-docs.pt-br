@@ -1,8 +1,6 @@
 ---
 title: PF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c86ce1c828ff3f090ce675aeed03a4911a55544
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2fad892cd0f5d63b83de6d01189410c572f4ec82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821523"
 ---
 # <a name="pf"></a>PF
 A opção de **PF** *VSPerfCmd.exe* define o evento de criação de perfil com amostragem para falhas da página e pode alterar o número de falhas da página em um intervalo de amostragem com o padrão de 10.  
