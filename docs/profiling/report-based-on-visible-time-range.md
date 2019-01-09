@@ -1,8 +1,6 @@
 ---
 title: Relatório com base no intervalo de tempo visível | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c46404eba23c2e80a18232d01ff7a58fb92070c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938312"
 ---
 # <a name="report-based-on-visible-time-range"></a>Relatório com base no intervalo de tempo visível
 O modo de exibição de perfil exibe relatórios com base no intervalo de tempo visível no momento e canais. Para ver detalhes de subconjuntos diferentes de dados, clique em itens na legenda.  
