@@ -1,8 +1,6 @@
 ---
 title: Exibições de dados do método de instrumentação | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method views
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d1582560611a5c47e3b5e24767d9a2b9c03f5a9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 266f342253fd19098f9d889faa10f6df1bf38c78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932240"
 ---
 # <a name="instrumentation-method-data-views"></a>Exibições de dados do método de instrumentação
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil que foram gerados usando o método de instrumentação.  

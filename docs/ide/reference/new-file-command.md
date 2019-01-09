@@ -2,7 +2,6 @@
 title: Comando Novo Arquivo
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.newfile
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4d68f53343b2523347f89977fe2bd602d64742
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: eb4ccae573813811567033dfa574c94e1bf809b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932110"
 ---
 # <a name="new-file-command"></a>Comando Novo Arquivo
 Cria um novo arquivo e abre-o. O arquivo aparece na pasta Arquivos Diversos.

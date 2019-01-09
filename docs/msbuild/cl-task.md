@@ -1,8 +1,6 @@
 ---
 title: Tarefa CL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912763"
 ---
 # <a name="cl-task"></a>tarefa CL
 Encapsula a ferramenta de compilador Visual C++,*cl.exe*. O compilador produz arquivos executáveis (*.exe*), arquivos de biblioteca de vínculo dinâmico (*.dll*) ou arquivos de módulo de código (*.netmodule*). Para obter mais informações, confira [Opções do compilador](/cpp/build/reference/compiler-options).  
