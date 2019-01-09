@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52e386055e458568f8d4076a37489b7b2397f399
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa233e478c83b723b13d19d27dc4b63ee4700bb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728596"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095050"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
 Determina se um objeto é igual ao objeto atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT IsEqualObject(  
   IUnknown*punk  
 );  
@@ -46,10 +46,10 @@ HRESULT IsEqualObject(
 |Valor|Descrição|  
 |-----------|-----------------|  
 |`S_OK`|Os objetos são iguais.|  
-|`S_FALSE`|Os objetos não são iguais.|  
+|`S_FALSE`|Os objetos não forem iguais.|  
   
 ## <a name="remarks"></a>Comentários  
- Uma implementação de `IsEqualObject` método deve retornar `S_OK` somente se os objetos são idênticos.  
+ Uma implementação de `IsEqualObject` método deverá retornar `S_OK` somente se os objetos são idênticos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IObjectIdentity](../../winscript/reference/iobjectidentity-interface.md)

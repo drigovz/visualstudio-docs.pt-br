@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dca878d6d4fd15db4b516e37932fbfebd30607a2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645536"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093191"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Retorna informações de idioma.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetLanguageFlags(  
    DWORD              *pgrfasa  
 );  
@@ -42,7 +42,7 @@ HRESULT GetLanguageFlags(
   
 |Constante|Valor|Descrição|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0x0001|O idioma prefere a criação de manipulador de eventos de script pelo script de criação de mecanismo, em vez do aplicativo.|  
+|fasaPreferInternalHandler|0x0001|A linguagem prefere a criação do manipulador de eventos de script pelo script do mecanismo, em vez do aplicativo de criação.|  
 |fasaSupportInternalHandler|0x0002|A linguagem dá suporte a manipuladores de eventos de script criados pelo script do mecanismo de criação.|  
 |fasaCaseSensitive|0x0004|A linguagem de script diferencia maiusculas de minúsculas.|  
   
@@ -54,9 +54,9 @@ HRESULT GetLanguageFlags(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Se o mecanismo de criação de script gerencia manipuladores de eventos, seu aplicativo deve chamar `CreateChildHandler` de um `IScriptEntry` objeto. Isso cria uma `IScriptScriptlet` objeto corresponde ao manipulador de eventos. O mecanismo também adiciona um manipulador de eventos para a entrada de script. O manipulador de eventos é uma função vazia que contém as informações de assinatura especificada.  
+ Se o mecanismo de criação de script gerencia manipuladores de eventos, seu aplicativo deve chamar `CreateChildHandler` de um `IScriptEntry` objeto. Isso cria um `IScriptScriptlet` objeto que corresponde ao manipulador de eventos. O mecanismo também adiciona um manipulador de eventos para a entrada de script. O manipulador de eventos é uma função vazia que contém as informações de assinatura especificada.  
   
- Se seu aplicativo gerencia manipuladores de eventos, é necessário chamar `CreateChildHandler` de um `IScriptNode` objeto que representa um miniscript de manipulador de eventos. Isso cria uma `IScriptScriptlet` objeto que está associado com o miniscript do manipulador de eventos. O aplicativo também precisa adicionar uma função vazia como um evento de manipulador para uma nova ou existente `IScriptEntry` objeto.  
+ Se seu aplicativo gerencia a manipuladores de eventos, ele deverá chamar `CreateChildHandler` de um `IScriptNode` objeto que representa um scriptlet de manipulador de eventos. Isso cria um `IScriptScriptlet` objeto que está associado com o scriptlet de manipulador de eventos. O aplicativo também tem que adicionar uma função vazia como um evento de manipulador para um novo ou existente `IScriptEntry` objeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptAuthor Interface](../../winscript/reference/iactivescriptauthor-interface.md)

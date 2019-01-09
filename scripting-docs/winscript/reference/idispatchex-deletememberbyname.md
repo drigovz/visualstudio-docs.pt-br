@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728126"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096428"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Exclui um membro por nome.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -46,8 +46,8 @@ HRESULT DeleteMemberByName(
   
 |Valor|Significado|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Solicitações que a pesquisa de nome ser feita de maneira diferencia maiusculas de minúsculas. Pode ser ignorado pelo objeto que não oferece suporte a pesquisa diferencia maiusculas de minúsculas.|  
-|fdexNameCaseInsensitive|Solicitações que a pesquisa de nome ser feita de maneira maiusculas de minúsculas. Pode ser ignorado pelo objeto que não oferece suporte a pesquisa diferencia maiusculas de minúsculas.|  
+|fdexNameCaseSensitive|Solicitações que a pesquisa de nomes ser feita de maneira diferencia maiusculas de minúsculas. Pode ser ignorado por objeto que não oferece suporte a pesquisa diferencia maiusculas de minúsculas.|  
+|fdexNameCaseInsensitive|Solicitações que a pesquisa de nomes ser feita em diferenciando maiusculas de minúsculas. Pode ser ignorado por objeto que não oferece suporte a pesquisa diferencia maiusculas de minúsculas.|  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um dos seguintes valores:  
@@ -58,13 +58,13 @@ HRESULT DeleteMemberByName(
 |`S_FALSE`|Membro existe, mas não pode ser excluído.|  
   
 ## <a name="remarks"></a>Comentários  
- Se o membro for excluído, o DISPID deve permanecer válido para `GetNextDispID`.  
+ Se o membro for excluído, o DISPID deve permanecer válida para `GetNextDispID`.  
   
- Se um membro com um nome fornecido será excluído e posteriormente um membro com o mesmo nome é recriado, o DISPID deve ser o mesmo. (Se os membros que diferenciam somente maiusculas e minúsculas são "mesmo" depende do objeto.)  
+ Se um membro com um determinado nome é excluído e posteriormente um membro com o mesmo nome é recriado, o DISPID deve ser o mesmo. (Se os membros que diferem somente maiusculas são "mesmo" é o objeto dependente).  
   
 ## <a name="example"></a>Exemplo  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   

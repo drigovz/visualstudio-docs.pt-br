@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 274f09ae2a8851b897a825c32f18091c2f4250d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: af8b063f86bd08f293518b1494b41e4f01d61b2c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726026"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093300"
 ---
 # <a name="idebugasyncoperationabort"></a>IDebugAsyncOperation::Abort
 Cancela uma operação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Abort();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -46,7 +46,7 @@ HRESULT Abort();
 |E_NOTIMPL|As operações não podem ser canceladas.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, este método é chamado de dentro do thread do depurador para cancelar uma operação sem resposta. Este método faz com que o `InProgressAbort` método o `IDebugSyncOperation` objeto a ser chamado.  
+ Normalmente, esse método é chamado de dentro do thread depurador para cancelar uma operação sem resposta. Esse método faz com que o `InProgressAbort` método no `IDebugSyncOperation` objeto a ser chamado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   

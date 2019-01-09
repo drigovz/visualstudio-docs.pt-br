@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDeferredText | Microsoft Docs
+title: 'Idebugdocumenthelper:: Adddeferredtext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c92909874429075bebc6a1f0a252573d049584e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba6f945e6c7fa4df83a5e301d73b3fc0bb9da92b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728536"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096077"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Notifica o auxiliar que o texto especificado está disponível, mas ele não fornece os caracteres.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT AddDeferredText(  
    ULONG  cChars,  
    DWORD  dwTextStartCookie  
@@ -53,7 +53,7 @@ HRESULT AddDeferredText(
 |`E_FAIL`|O método falhou.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método permite que o host adiar fornecendo os caracteres a adicionar até que elas forem necessárias, enquanto permite que o auxiliar gerar notificações precisas e informações de tamanho. O `dwTextStartCookie` parâmetro é um cookie, definido pelo host, que representa a posição inicial do texto. As chamadas subsequentes para `IDebugDocumentText::GetText` deve fornecer esse cookie. Por exemplo, em um host que representa o texto em DBCS, o cookie pode ser um deslocamento de bytes.  
+ Esse método permite que o host adiar a fornecer os caracteres para adicionar até que sejam necessários, enquanto permite que o auxiliar gerar notificações precisas e informações de tamanho. O `dwTextStartCookie` parâmetro é um cookie, definido pelo host, que representa a posição inicial do texto. As chamadas subsequentes para `IDebugDocumentText::GetText` deve fornecer esse cookie. Por exemplo, em um host que representa o texto em DBCS, o cookie pode ser um deslocamento de bytes.  
   
  Supõe-se que uma única chamada para `IDebugDocumentText::GetText` pode obter caracteres de várias chamadas para `AddDeferredText`. Classes auxiliares também podem solicitar mais de uma vez para o mesmo intervalo de caracteres adiadas.  
   
@@ -62,6 +62,6 @@ HRESULT AddDeferredText(
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Idebugdocumenthelper:: Addunicodetext](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

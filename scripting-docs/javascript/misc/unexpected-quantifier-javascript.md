@@ -20,17 +20,17 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef0955bac35009d9b6c82f1856bb9005a08043ad
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 693fdf4091a6f6fdf63c701b63c4355a67ee6fbd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282255"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096740"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Quantificador inesperado (JavaScript)
 Ao redigir o padrão de pesquisa de expressão regular, você criou um elemento padrão com um fator de repetição inválida. Por exemplo, o padrão  
   
-```  
+```js
 /^+/  
 ```  
   

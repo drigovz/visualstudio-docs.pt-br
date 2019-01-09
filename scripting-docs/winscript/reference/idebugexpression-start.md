@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d293649e3a6a87c7f594e244378dc2a7e15ac6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c0d7b809f18407bfeb3de59c9cbb6e6e26911ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727596"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093334"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
 Começa a avaliação da expressão.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugExpressionCallBack*  pdecb  
 );  
@@ -38,7 +38,7 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdecb`  
- [in] Retorno de chamada para indicar quando a avaliação da expressão é concluída. Se esse parâmetro for `NULL`, nenhum evento é acionado e o cliente deve sondar o estado de expressão usando `QueryIsComplete`.  
+ [in] Retorno de chamada para indicar quando a avaliação da expressão for concluída. Se esse parâmetro for `NULL`, nenhum evento é acionado e o cliente deve sondar o estado de expressão usando `QueryIsComplete`.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT Start(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método inicia a avaliação da expressão.  
+ Esse método começa a avaliação da expressão.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   

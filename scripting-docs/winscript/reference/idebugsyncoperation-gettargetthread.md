@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df3e65d53e20dd51d045f26855c4f5e058dff159
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4ff27e3d91abe19608bbe10051814d7e0f71af7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726876"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096701"
 ---
 # <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
-Retorna o thread de aplicativo de destino para esta operação síncrona.  
+Retorna o thread do aplicativo de destino para esta operação síncrona.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetTargetThread(  
    IDebugApplicationThread**  ppatTarget  
 );  
@@ -48,7 +48,7 @@ HRESULT GetTargetThread(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o thread de aplicativo de destino para esta operação síncrona.  
+ Esse método retorna o thread do aplicativo de destino para esta operação síncrona.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)

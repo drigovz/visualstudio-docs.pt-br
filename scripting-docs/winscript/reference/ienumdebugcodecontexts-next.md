@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00a3a5765f5b5a62753653d24cf27e4667a5647f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 113f5a25a4bae4279281bbfdcfacce9efee3f2b6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728486"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097234"
 ---
 # <a name="ienumdebugcodecontextsnext"></a>IEnumDebugCodeContexts::Next
-Recupera um número de segmentos na sequência de enumeração especificado.  
+Recupera um número especificado de segmentos na sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                celt,  
    IDebugCodeContext**  pscc,  
@@ -56,7 +56,7 @@ HRESULT Next(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna um número especificado de segmentos na sequência de enumeração.  
+ Esse método recupera um número especificado de segmentos na sequência de enumeração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IEnumDebugCodeContexts](../../winscript/reference/ienumdebugcodecontexts-interface.md)

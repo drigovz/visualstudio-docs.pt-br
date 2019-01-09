@@ -20,17 +20,17 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e7ea718aa97ab7b2eb0924458826cd1eac5672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1a29c3f20392dc216c0306137c0dec6b22aaa58a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632976"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093854"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Não é possível designar a um resultado de função
-Tentativa de atribuir um valor a um resultado de função. O resultado de uma função pode ser atribuído a uma variável, mas ele não pode ser usado como uma variável. Se você deseja atribuir um novo valor para a função em si, omita os parênteses (o operador de chamada de função). O exemplo a seguir demonstra uma situação em que esse erro é gerado.  
+Você tentou atribuir um valor a um resultado de função. O resultado de uma função pode ser atribuído a uma variável, mas ele não pode ser usado como uma variável. Se você deseja atribuir um novo valor para a função em si, omita os parênteses (o operador de chamada de função). O exemplo a seguir demonstra uma situação em que esse erro é gerado.  
   
-```  
+```js
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
@@ -42,7 +42,7 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     myVar = myFunction(42);  
     ```  
   
--   Como alternativa, você pode atribuir a função em si (e não o valor de retorno) a uma variável.  
+-   Como alternativa, você pode atribuir a função em si (e não seu valor de retorno) a uma variável.  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  

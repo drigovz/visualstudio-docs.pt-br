@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae7782d713ab226e57e687cda8eb4ccdb54cf20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ee4fd06b00c674c9c50ce253186aeee3165bac66
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724616"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097403"
 ---
 # <a name="iactivescriptsiteonstatechange"></a>IActiveScriptSite::OnStateChange
 Informa ao host que o mecanismo de script foi alterado de estados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnStateChange(  
     SCRIPTSTATE ssScriptState  // new state of engine  
 );  
@@ -38,7 +38,7 @@ HRESULT OnStateChange(
   
 #### <a name="parameters"></a>Parâmetros  
  `ssScriptState`  
- [in] Valor que indica o novo estado do script. Consulte o [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) método para obter uma descrição dos Estados.  
+ [in] Valor que indica o novo estado de script. Consulte a [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) método para obter uma descrição dos Estados.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna `S_OK` se houver êxito.  

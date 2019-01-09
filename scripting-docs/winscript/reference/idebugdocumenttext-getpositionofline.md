@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0098a78938c745931c529bbc02823d32b8180cde
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ca3a1df414f954dce4398eb8a2e0b7ea68a04a49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726706"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092283"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
-Retorna a posição de caractere correspondente ao primeiro caractere de uma linha.  
+Retorna a posição de caractere correspondente para o primeiro caractere de uma linha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetPositionOfLine(  
    ULONG   cLineNumber,  
    ULONG*  pcCharacterPosition  
@@ -39,10 +39,10 @@ HRESULT GetPositionOfLine(
   
 #### <a name="parameters"></a>Parâmetros  
  `cLineNumber`  
- [in] O número da linha.  
+ [in] O número de linha.  
   
  `pcCharacterPosition`  
- [out] A posição do caractere no documento do início da linha `cLineNumber`.  
+ [out] A posição do caractere dentro do documento do início da linha `cLineNumber`.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -52,7 +52,7 @@ HRESULT GetPositionOfLine(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna a posição do caractere correspondente ao primeiro caractere de uma linha.  
+ Esse método retorna a posição do caractere correspondente para o primeiro caractere de uma linha.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

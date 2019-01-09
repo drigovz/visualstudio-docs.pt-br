@@ -18,34 +18,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75de35bd42ea91e7d27523ba42c392650686041a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2dc5bb84125ca0bf3b25f8f9b8cfe1dad6aeb6d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726806"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097000"
 ---
 # <a name="idebugpropertyenumtypeall-interface"></a>Interface IDebugPropertyEnumType_All
 O `IDebugPropertyEnumType` interfaces são definidas para que cada um dos seus IIDs pode ser passada como um filtro para `IDebugProperty::EnumMembers` ao solicitar o enumerador apropriado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 IDebugPropertyEnumType_All : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Retorna uma cadeia de caracteres de texto que descreve o nome|  
   
- As seguintes interfaces herdam `IDebugPropertyEnumType_All`, e não ter nenhum método adicional.  
+ As seguintes interfaces herdam `IDebugPropertyEnumType_All`, e nenhum outro método adicional de ter.  
   
-```  
-IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
-IDebugPropertyEnumType_Locals : IDebugPropertyEnumType_All   
-IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All   
+```cpp
+IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
+IDebugPropertyEnumType_Locals : IDebugPropertyEnumType_All   
+IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All   
 IDebugPropertyEnumType_Registers : IDebugPropertyEnumType_All  
 ```  
   

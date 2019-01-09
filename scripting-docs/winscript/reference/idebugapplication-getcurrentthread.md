@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2240a62b62c917e94f3ace8f516a10f9de66c74d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5b0712994881aaa58e41246bc054ba6cee895ae0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725196"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092151"
 ---
 # <a name="idebugapplicationgetcurrentthread"></a>IDebugApplication::GetCurrentThread
-Retorna o thread associado com o thread em execução no momento.  
+Retorna o thread associado ao thread em execução no momento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetCurrentThread(  
    IDebugApplicationThread**  pat  
 );  
@@ -38,7 +38,7 @@ HRESULT GetCurrentThread(
   
 #### <a name="parameters"></a>Parâmetros  
  `pat`  
- [out] O thread associado com o thread em execução no momento.  
+ [out] O thread associado ao thread em execução no momento.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT GetCurrentThread(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o thread associado com o thread em execução no momento.  
+ Esse método retorna o thread associado ao thread em execução no momento.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)

@@ -18,20 +18,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93595cd2d0f88244866ab7363ecd68c6d8073b48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c466ec767be53d100b970314bf0d81d5dd9dfb20
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729046"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097533"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-Mapeia um nome de membro único para seu DISPID correspondente, que pode ser usada em chamadas subsequentes para `IDispatchEx::InvokeEx`.  
+Mapeia um nome de membro único para seu DISPID correspondente, que pode ser usado em chamadas subsequentes para `IDispatchEx::InvokeEx`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
- HRESULT GetDispID(  
+```cpp
+HRESULT GetDispID(  
    BSTR bstrName,  
    DWORD grfdex,  
    DISPID *pid  
@@ -40,20 +40,20 @@ Mapeia um nome de membro único para seu DISPID correspondente, que pode ser usa
   
 #### <a name="parameters"></a>Parâmetros  
  `bstrName`  
- Passado no nome a ser mapeada.  
+ Passado nome a ser mapeada.  
   
  `grfdex`  
  Determina as opções para obter o identificador de membro. Isso pode ser uma combinação dos seguintes valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Solicitações que a pesquisa de nome ser feita de maneira diferencia maiusculas de minúsculas. Pode ser ignorado por objeto que não oferece suporte a pesquisa diferencia maiusculas de minúsculas.|  
+|fdexNameCaseSensitive|Solicitações que a pesquisa de nomes ser feita de maneira diferencia maiusculas de minúsculas. Pode ser ignorado por objeto que não oferece suporte a pesquisa diferencia maiusculas de minúsculas.|  
 |fdexNameEnsure|Solicita que o membro criado se ele ainda não existir. O novo membro deve ser criado com o valor `VT_EMPTY`.|  
-|fdexNameImplicit|Indica que o chamador está procurando objetos por um membro de um nome específico quando o objeto base não for especificado explicitamente.|  
-|fdexNameCaseInsensitive|Solicitações que a pesquisa de nome ser feita de maneira maiusculas de minúsculas. Pode ser ignorado por objeto que não oferece suporte a pesquisa diferencia maiusculas de minúsculas.|  
+|fdexNameImplicit|Indica que o chamador está pesquisando (s) de um membro de um nome específico quando o objeto base não for especificado explicitamente.|  
+|fdexNameCaseInsensitive|Solicitações que a pesquisa de nomes ser feita em diferenciando maiusculas de minúsculas. Pode ser ignorado por objeto que não oferece suporte a pesquisa diferencia maiusculas de minúsculas.|  
   
  `pid`  
- Ponteiro para o local alocada pelo chamador para receber resultados DISPID. Se ocorrer um erro, `pid` contém DISPID_UNKNOWN.  
+ Ponteiro para o local alocada pelo chamador para receber DISPID resultado. Se ocorrer um erro, `pid` contém DISPID_UNKNOWN.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um dos seguintes valores:  
@@ -61,19 +61,19 @@ Mapeia um nome de membro único para seu DISPID correspondente, que pode ser usa
 |||  
 |-|-|  
 |`S_OK`|Êxito.|  
-|`E_OUTOFMEMORY`|Sem memória.|  
+|`E_OUTOFMEMORY`|Memória insuficiente.|  
 |`DISP_E_UNKNOWNNAME`|O nome não era conhecido.|  
   
 ## <a name="remarks"></a>Comentários  
- `GetDispID`pode ser usado em vez de `GetIDsOfNames` para obter o DISPID para um determinado membro.  
+ `GetDispID` pode ser usado em vez de `GetIDsOfNames` para obter o DISPID para um determinado membro.  
   
- Porque `IDispatchEx` permite a adição e exclusão de membros, o conjunto de DISPIDs não permanecer constante para o tempo de vida de um objeto.  
+ Porque `IDispatchEx` permite a adição e exclusão de membros, o conjunto de DISPIDs não permanecem constantes durante a vida útil de um objeto.  
   
- Não usada `riid` parâmetro `IDispatch::GetIDsOfNames` foi removido.  
+ O não utilizado `riid` parâmetro no `IDispatch::GetIDsOfNames` foi removido.  
   
 ## <a name="example"></a>Exemplo  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   

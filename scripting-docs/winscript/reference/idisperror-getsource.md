@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 922f95206d341773632b84c3922ea3b240d8d1ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 629ecb8427539069bb9e235e733140331875288c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727966"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091813"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
-Retorna o identificador programático dependentes de idioma para a classe ou o aplicativo que gerou o erro.  
+Retorna o identificador programático do dependente de idioma para a classe ou um aplicativo que gerou o erro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetSource(  
    BSTR*  pbstrSource  
 );  
@@ -38,7 +38,7 @@ HRESULT GetSource(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrSource`  
- [out] Cadeia de caracteres que contém um identificador programático, no formato `progname.objectname`.  
+ [out] Cadeia de caracteres que contém um identificador programático, na forma `progname.objectname`.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT GetSource(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é usado para determinar a classe ou o aplicativo onde ocorreu a exceção. O identificador programático pode ser retornado no idioma especificado pelo identificador de localidade (LCID) fornecido no momento da invocação.  
+ Esse método é usado para determinar a classe ou um aplicativo onde ocorreu a exceção. O identificador programático pode ser retornado no idioma especificado pelo identificador de localidade (LCID) fornecido no momento da invocação.  
   
 > [!NOTE]
 >  Este método não está implementado.  

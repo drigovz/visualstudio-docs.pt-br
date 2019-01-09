@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae53dde2b7e48a4bf67cbd7aa5d70904c57d90f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b66eee068bfffcc726bff60e5e469f9d7254949
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725536"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094894"
 ---
 # <a name="idebugasyncoperationgetsyncdebugoperation"></a>IDebugAsyncOperation::GetSyncDebugOperation
-Retorna a operação síncrona depuração associada a este objeto.  
+Retorna a operação de depuração síncrona associada a este objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetSyncDebugOperation(  
    IDebugSyncOperation**  ppsdo  
 );  
@@ -48,7 +48,7 @@ HRESULT GetSyncDebugOperation(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna a operação síncrona depuração associada a este objeto.  
+ Esse método retornará a operação de depuração síncrona associada a este objeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugAsyncOperation Interface](../../winscript/reference/idebugasyncoperation-interface.md)
