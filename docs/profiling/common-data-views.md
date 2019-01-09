@@ -1,8 +1,6 @@
 ---
 title: Exibições de dados comuns | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,views
@@ -13,18 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ccf237bec0b3ab7bf3ad96f6f4d24df240db0e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0c37bea5a5b447c7cd93c63d5a0ba8cf497d1723
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950005"
 ---
 # <a name="common-data-views"></a>Exibições de dados comuns
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil comuns a todos os métodos de criação de perfil.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Exibição de resumo](../profiling/summary-view.md)  
+ [Exibição de Resumo](../profiling/summary-view.md)  
  Descreve o modo de exibição e o relatório de Resumo. As colunas de dados dependem do método de criação de perfil.  
   
  [Exibição de Chamador/Receptor](../profiling/caller-callee-view.md)  

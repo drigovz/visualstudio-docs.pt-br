@@ -3,7 +3,6 @@ title: 'Tutorial: Depurar o código C# e C++ (modo misto)'
 description: Saiba como depurar uma DLL nativa de um aplicativo .NET Core ou .NET Framework usando a depuração de modo misto
 ms.custom: seodec18
 ms.date: 11/02/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
 - CSharp
@@ -16,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 475160a7ba08cb334eeb26be26731deea547f6ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920862"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depurar o C# e o C++ na mesma sessão de depuração
 

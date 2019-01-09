@@ -1,8 +1,6 @@
 ---
 title: APIs de Ferramentas de Criação de Perfil | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d8bc3326bfe194815f043233120f3e2ee5fae571
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942561"
 ---
 # <a name="profiling-tools-apis"></a>APIs de ferramentas de criação de perfil
 Você pode inserir métodos gerenciados ou nativos das APIs das ferramentas de criação de perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para controlar a coleta de dados em uma execução de geração de perfil. Esta seção descreve os métodos das APIs e descreve como usá-los.  
@@ -27,7 +25,7 @@ Você pode inserir métodos gerenciados ou nativos das APIs das ferramentas de c
  <xref:Microsoft.VisualStudio.Profiler>  
  Descreve os métodos de ferramentas de criação de perfil do .NET.  
   
- [Passo a passo: usando APIs do criador de perfil](../profiling/walkthrough-using-profiler-apis.md)  
+ [Passo a passo: Como usar as APIs do criador de perfil](../profiling/walkthrough-using-profiler-apis.md)  
  Saiba como usar os métodos das ferramentas de criação de perfil do .NET neste exemplo completo.  
   
 ## <a name="related-sections"></a>Seções relacionadas  

@@ -22,13 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962630"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga e erros na exibição Tabelas do Analisador de Teste de Carga
 
@@ -150,7 +149,7 @@ A tabela a seguir lista as tabelas que estão disponíveis para analisar execuç
 |-|-|-|
 |Tipo|O tipo do erro. Por exemplo, HttpError.|Sim|
 |SubType|O subtipo do erro. Por exemplo, LoadTestException.|Sim|
-|Count|O número de erros desse tipo ocorridos durante o teste de carga. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais.|Sim|
+|Contagem|O número de erros desse tipo ocorridos durante o teste de carga. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais.|Sim|
 |Última mensagem|Uma mensagem que descreve o erro. Por exemplo, 404 - NotFound.|Sim|
 
  Para saber mais, confira [Trabalhando com tabelas de teste de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
