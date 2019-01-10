@@ -1,8 +1,6 @@
 ---
 title: Continuando a execução após uma exceção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,20 +25,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b26fe427ba83eea9e989e492fde89ade498a114
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a966709ed4b3fbb773d9f91726f4f79289af5504
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864463"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuando a execução depois de uma exceção
-Quando o depurador interromperá a execução devido a uma exceção, você verá o **auxiliar de exceção**, por padrão. Se você tiver desabilitado o **auxiliar de exceção** no **opções** caixa de diálogo, você verá o **Exception Assistant** (c# ou Visual Basic) ou o **exceção**  caixa de diálogo (C++).  
+Quando o depurador interrompe a execução devido a uma exceção, você verá a **auxiliar de exceção**, por padrão. Se você tiver desabilitado as **auxiliar de exceção** na **opções** caixa de diálogo, você verá o **Assistente de exceção** (c# ou Visual Basic) ou o **exceção**  caixa de diálogo (C++).  
   
- Quando o **auxiliar de exceção** aparecer, você pode tentar corrigir o problema que causou a exceção.
+ Quando o **auxiliar de exceção** for exibida, você pode tentar corrigir o problema que causou a exceção.
   
 ## <a name="managed-and-native-code"></a>Código gerenciado e nativo  
- No código gerenciado e nativo, você pode continuar a execução no mesmo thread após uma exceção sem tratamento. O **auxiliar de exceção** esvazia a pilha de chamadas para o ponto onde a exceção foi lançada.
+ No código gerenciado e nativo, você pode continuar a execução no mesmo thread após uma exceção sem tratamento. O **auxiliar de exceção** desenrola a pilha de chamadas para o ponto em que a exceção foi lançada.
   
 ## <a name="mixed-code"></a>Código misto  
  Se você atinge uma exceção não tratada ao depurar um código nativo misto e gerenciado, as restrições do sistema operacional impedem o desenrolar da pilha de chamadas. Se você tentar voltar a pilha de chamadas usando o menu de atalho, uma mensagem de erro explicará que o depurador não pode desenrolar de uma exceção não tratada exceto durante a depuração de código misto.  

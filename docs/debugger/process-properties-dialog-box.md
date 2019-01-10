@@ -1,8 +1,6 @@
 ---
-title: Caixa de diálogo Propriedades de processo | Microsoft Docs
-ms.custom: ''
+title: Processar caixa de diálogo de propriedades | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
@@ -13,24 +11,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d14805f0815c7645ff54352cda218edc44efa4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 42f1838aa2dcfcdd9ac070d3b1c03c4e177c195d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898028"
 ---
 # <a name="process-properties-dialog-box"></a>Caixa de diálogo Propriedades do Processo
-Use essa caixa de diálogo para obter mais informações sobre um processo específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição processos](../debugger/processes-view.md) janela. Selecione qualquer nó de processo na árvore e escolha **propriedades** do **exibição** menu.  
+Use essa caixa de diálogo para obter mais informações sobre um processo específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição de processos](../debugger/processes-view.md) janela. Selecione qualquer nó de processo na árvore e escolha **propriedades** da **exibição** menu.  
   
  Em sistemas de operacionais Windows 98 e Windows 95, somente uma versão modificada do **geral** guia é exibida.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Guia Geral, Caixa de diálogo Propriedades do Processo](../debugger/general-tab-thread-properties-dialog-box.md)  
- Use essa caixa de diálogo caixa saber mais sobre o processo selecionado.  
+ Use essa caixa de diálogo caixa Saiba mais sobre o processo selecionado.  
   
  [Guia Memória, Caixa de diálogo Propriedades do Processo](../debugger/memory-tab-process-properties-dialog-box.md)  
- Use esta guia para mostrar como um processo usa a memória.  
+ Use esta guia para mostrar como um processo usa memória.  
   
  [Guia Arquivo de Paginação, Caixa de diálogo Propriedades do Processo](../debugger/page-file-tab-process-properties-dialog-box.md)  
  Use esta guia para examinar o arquivo de paginação de um processo.  
@@ -40,16 +38,16 @@ Use essa caixa de diálogo para obter mais informações sobre um processo espec
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Caixa de diálogo Pesquisa de Processos](../debugger/process-search-dialog-box.md)  
- Usado para localizar o nó para um processo específico no modo de exibição de processo.  
+ Usado para localizar o nó para um determinado processo no modo de exibição de processo.  
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.  
+ Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.  
   
- [Procurando por um processo no modo de exibição de processos](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Explica como localizar um processo específico no modo de exibição de processos.  
+ [Procurando por um processo na exibição de processos](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ Explica como localizar um processo específico na exibição de processos.  
   
  [Exibição de processos](../debugger/processes-view.md)  
- Exibe uma árvore de processos ativos.  
+ Exibe uma exibição de árvore de processos ativos.  
   
  [Exibições do Spy++](../debugger/spy-increment-views.md)  
  Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  

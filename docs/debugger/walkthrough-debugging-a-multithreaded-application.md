@@ -1,8 +1,6 @@
 ---
 title: Para visualizar threads no depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946156"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Exibir threads no depurador do Visual Studio usando a janela Threads
 No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo que você está depurando. Para obter orientação passo a passo sobre como usar o **Threads** janela, consulte [passo a passo: Depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md).
@@ -38,7 +36,7 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
 ## <a name="use-the-threads-window"></a>Usar a janela Threads 
  O **Threads** janela contém uma tabela em que cada linha descreve um thread separado em seu aplicativo. Por padrão, a tabela lista todos os threads em seu aplicativo, mas você pode filtrar a lista para mostrar apenas os threads do seu interesse. Cada coluna descreve um tipo diferente de informações. Você também pode ocultar algumas colunas. Se você exibir todas as colunas, as colunas a seguir são exibidos da esquerda para a direita:  
   
-- **Sinalizar** Nesta coluna sem rótulo, você pode marcar um thread ao qual você deseja prestar atenção especial. Para obter informações sobre como sinalizar um thread, consulte [como: sinalizador não sinalizar threads](../debugger/how-to-flag-and-unflag-threads.md).  
+- **Sinalizar** Nesta coluna sem rótulo, você pode marcar um thread ao qual você deseja prestar atenção especial. Para obter informações sobre como sinalizar um thread, consulte [como: Sinalizar e remover sinalização de threads](../debugger/how-to-flag-and-unflag-threads.md)  
   
 - Thread atual Nesta coluna sem nome, uma seta amarela indica que o thread atual. Uma estrutura de tópicos de seta indica o contexto atual do depurador para um thread não atual.
   
@@ -48,9 +46,9 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
 - **Categoria**. Exibe a categoria de threads como threads de interface do usuário, manipuladores de chamada de procedimento remoto ou threads de trabalho. Uma categoria especial identifica o thread principal do aplicativo.  
   
-- /Name: Identifica cada thread por nome, se ele tiver um, ou como \<No Name >.  
+- **name**). Identifica cada thread por nome, se ele tiver um, ou como \<No Name >.  
   
-- **Local** Mostra onde o thread está em execução. Você pode expandir este local para mostrar a pilha de chamadas inteira para o thread.  
+- **location**: Mostra onde o thread está em execução. Você pode expandir este local para mostrar a pilha de chamadas inteira para o thread.  
   
 - Prioridade Uma coluna avançada (ocultada por padrão), que exibe a prioridade ou precedência que o sistema atribuiu a cada thread.  
   
@@ -73,7 +71,7 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
 -   Na barra de ferramentas na parte superior do **Threads** janela, selecione **colunas**. Em seguida, marque ou desmarque o nome da coluna que você deseja exibir ou ocultar.  
 
 ## <a name="display-flagged-threads"></a>Exibir threads sinalizados  
- Você pode sinalizar um thread ao qual deseja dar atenção especial marcando-o com um ícone na janela **Threads**. Confira mais informações em [Como: Sinalizar e remover sinalização de threads](../debugger/how-to-flag-and-unflag-threads.md). Na janela **Threads**, você pode optar por exibir todos os threads ou apenas os threads sinalizados.  
+ Você pode sinalizar um thread ao qual deseja dar atenção especial marcando-o com um ícone na janela **Threads**. Para obter mais informações, confira [Como: Sinalizar e remover sinalização de threads](../debugger/how-to-flag-and-unflag-threads.md). Na janela **Threads**, você pode optar por exibir todos os threads ou apenas os threads sinalizados.  
   
 ### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados  
   

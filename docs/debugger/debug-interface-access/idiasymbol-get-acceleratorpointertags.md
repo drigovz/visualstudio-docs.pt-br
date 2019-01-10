@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db7164335a8deffbac7cb4f62207a974f6efb9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e65def0ac8e94b2f113332981f57c051896f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875453"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Retorna todos os valores de marca de ponteiro de aceleração que correspondem a uma função de stub do C++ AMP acelerador.  
+Retorna todos os valores de marca de ponteiro de acelerador que correspondem a uma função de stub do acelerador de C++ AMP.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,16 +34,16 @@ HRESULT get_acceleratorPointerTags(
  [in] O tamanho da matriz de saída `pPointerTags`.  
   
  `pcnt`  
- [out] A contagem de marcas de ponteiro de acelerador na função de stub do acelerador de C++ AMP.  
+ [out] A contagem de marcas de ponteiro accelerator na função de stub do acelerador de C++ AMP.  
   
  `pPointerTags`  
- [out] Um `DWORD` ponteiro de matriz que é preenchido com os valores de marca de ponteiro de acelerador na função de stub do acelerador de C++ AMP.  
+ [out] Um `DWORD` ponteiro de matriz é preenchido com os valores de marca de ponteiro accelerator na função de stub do acelerador de C++ AMP.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é chamado em um `IDiaSymbol` interface que corresponde a uma função de stub do C++ AMP acelerador.  
+ Esse método é chamado em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador de C++ AMP.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

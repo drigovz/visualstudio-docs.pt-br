@@ -1,8 +1,6 @@
 ---
 title: Usando o coletor autônomo IntelliTrace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbcb39638439261d234c14ff9422badaf6bdeb3
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820910"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Usar o coletor autônomo do IntelliTrace
 O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico IntelliTrace para seus aplicativos em servidores de produção ou em outros ambientes, sem instalar o Visual Studio no computador de destino e sem alterar o ambiente do sistema de destino. O coletor independente do IntelliTrace funciona na Web, SharePoint, WPF e aplicativos do Windows Forms. Quando você terminar a coleta de dados, basta excluir o coletor para desinstalá-lo.

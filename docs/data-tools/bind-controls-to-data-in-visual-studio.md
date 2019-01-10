@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e27f5ce9536e7128330ebe932709a9be408b7e
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: a84fb954d0d632c217e9a4282f7c33fd6226d677
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987214"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associar controles a dados no Visual Studio
 
@@ -43,7 +42,7 @@ No contexto de associação de dados, uma fonte de dados representa os dados na 
 
 1. Gerar o modelo usando o **modelo de dados de entidade** assistente, em seguida, arrastar esses objetos para o designer.
 
-2. Classes LINQ to SQL não aparecem na **fontes de dados** janela. No entanto, você pode adicionar uma nova fonte de dados de objeto com base no LINQ para classes SQL e, em seguida, arrastar esses objetos para o designer para criar controles associados a dados. Para obter mais informações, consulte [instruções passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+2. Classes LINQ to SQL não aparecem na **fontes de dados** janela. No entanto, você pode adicionar uma nova fonte de dados de objeto com base no LINQ para classes SQL e, em seguida, arrastar esses objetos para o designer para criar controles associados a dados. Para obter mais informações, confira [Passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="data-sources-window"></a>janela Fontes de Dados
 

@@ -2,7 +2,6 @@
 title: Depurar aplicativos da web - erros e solução de problemas
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827411"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurando aplicativos Web: erros e solução de problemas
 Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.  
@@ -58,4 +57,4 @@ Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   
- [Depurando aplicativos Web e script](../debugger/debugging-web-applications-and-script.md)
+ [Depurando aplicativos Web e script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

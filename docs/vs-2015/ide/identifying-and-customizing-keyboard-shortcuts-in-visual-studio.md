@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931171"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificando e personalizando atalhos de teclado no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
      Por exemplo, você pode escolher **Global** se desejar que o atalho funcione em todos os contextos. É possível usar qualquer atalho que não esteja mapeado (como Global) em outro editor. Caso contrário, o editor substitui o atalho.
 
     > [!NOTE]
-    >  Não é possível atribuir as seguintes teclas como parte de um atalho de teclado no **Global**: Imprimir Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, a tecla de logotipo do Windows, a chave de aplicativo, qualquer uma das teclas de direção ou Enter; Num Lock, excluir ou Clear no teclado numérico; ou Ctrl + Alt + Delete.
+    >  Não é possível atribuir as seguintes teclas como parte de um atalho de teclado em **Global**: Imprimir Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, a tecla de logotipo do Windows, a chave de aplicativo, qualquer uma das teclas de direção ou Enter; Num Lock, excluir ou Clear no teclado numérico; ou Ctrl + Alt + Delete.
 
 6.  Na caixa **Pressionar tecla(s) de atalho**, digite o atalho que deseja usar.
 

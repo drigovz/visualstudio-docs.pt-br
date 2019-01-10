@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba6fbb03b171b50014aad887ff83d9841f0249
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 9abf64864c9b722f344662200dfc923cc3e192b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914177"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Coletando dados de simultaneidade para um aplicativo Web do ASP.NET usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vspr
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|Anexar o criador de perfil a um aplicativo ASP.NET em execução|-   [How to: Attach the Profiler to an ASP.NET Application to Collect Concurrency Data (Como anexar o criador de perfil a um aplicativo ASP.NET para coletar dados de simultaneidade)](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|Anexar o criador de perfil a um aplicativo ASP.NET em execução|-   [Como: Anexar o criador de perfil a um aplicativo ASP.NET para coletar dados de simultaneidade](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Referência  
  [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)  
@@ -45,7 +45,7 @@ O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vspr
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
 |**Criar perfil usando o método de amostragem**|-   [Coletando estatísticas do aplicativo usando amostragem](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Criar perfil usando o método de instrumentação**|-   [Coletando dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Criar perfil usando o método de instrumentação**|-   [Coletando dados de tempo detalhados usando a instrumentação](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Profile memory allocation and garbage collection (Alocação de memória de perfil e coleta de lixo)**|-   [Coletando dados de memória](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-concurrency-issues"></a>Problemas de simultaneidade da criação de perfil  

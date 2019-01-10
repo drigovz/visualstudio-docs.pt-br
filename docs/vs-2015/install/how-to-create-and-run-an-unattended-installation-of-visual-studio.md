@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065513"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951924"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Como: Criar e executar uma instalação autônoma do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,7 +177,7 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
 
 2.  Insira a chave do produto.
 
-     (Para obter mais informações, consulte o [como: Localize a chave de produto do Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e o [como: Aplicar chaves de produto durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) tópicos.)
+     Para obter mais informações, confira a página [Como: Localize a chave de produto do Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e o [como: Aplicar chaves de produto durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) tópicos.)
 
 ## <a name="see-also"></a>Consulte também
  [Instalar o Visual Studio](../install/install-visual-studio-2015.md)

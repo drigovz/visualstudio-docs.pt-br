@@ -1,8 +1,6 @@
 ---
 title: 'Passo a passo: Baixando Assemblies sob demanda com a API de implantação do ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c45f600462d1862b9f50e12c5849d9d7175310a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989202"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Fazer o Download de assemblies por demanda com a API de implantação do ClickOnce
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Baixar assemblies sob demanda com a API de implantação do ClickOnce
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixadas quando o aplicativo é executado pela primeira vez. No entanto, você pode ter partes de seu aplicativo que são usados por um pequeno conjunto de seus usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional", e como baixá-los usando as classes no <xref:System.Deployment.Application> namespace quando o common language runtime (CLR) requê-los.  
   
 > [!NOTE]
@@ -102,7 +100,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando MageUI.exe  
   
-1.  Usando o *MageUI.exe*, crie um manifesto de aplicativo, conforme descrito em [passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto do aplicativo:  
+1.  Usando o *MageUI.exe*, crie um manifesto de aplicativo, conforme descrito em [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto do aplicativo:  
   
     -   Nomeie o manifesto do aplicativo `ClickOnceOnDemand`.  
   
@@ -110,7 +108,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
   
     -   No **arquivos** página, o *ClickOnceLibrary.dll* linha, digite `ClickOnceLibrary.dll` no **grupo** coluna.  
   
-2.  Usando o *MageUI.exe*, crie um manifesto de implantação, conforme descrito em [passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto de implantação:  
+2.  Usando o *MageUI.exe*, crie um manifesto de implantação, conforme descrito em [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto de implantação:  
   
     -   Nomeie o manifesto de implantação `ClickOnceOnDemand`.  
   
