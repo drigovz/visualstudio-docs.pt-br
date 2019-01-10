@@ -3,19 +3,18 @@ title: Projetos de exemplo em R
 description: Um índice de uma coleção de exemplos para começar a usar R e Visual Studio.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235180"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837453"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Projetos de exemplo das Ferramentas do R para Visual Studio
 
@@ -61,7 +60,7 @@ Como em todos os exemplos, abra o arquivo, coloque o cursor na parte superior e,
 
 - `Datasets` contém três arquivos *.csv* usados por outros exemplos
 - `Flight_Delays_Prediction_with_R` e `Flight_Delays_Prediction_with_MRS` mostram como prever atrasos de voo usando R, aprendizado de máquina e desempenho e dados meteorológicos pontuais históricos. 
-- `Machine learning` contém três exemplos de aprendizado para prever os atrasos de voo, preços de habitação e locações de bicicleta. Juntos, esses exemplos demonstram a aplicação do R e do Microsoft ML Server a problemas reais. Eles também mostram como usar vários modelos de aprendizado de máquina populares e implantá-los como um serviço Web do Azure usando um espaço de trabalho do [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/).
+- `Machine learning` contém três exemplos de aprendizado para prever os atrasos de voo, preços de habitação e locações de bicicleta. Juntos, esses exemplos demonstram a aplicação do R e do Microsoft ML Server a problemas reais. Eles também mostram como usar vários modelos de aprendizado de máquina populares e implantá-los como um serviço Web do Azure usando um Workspace do [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/).
 
 - `R_MRO_MRS_Comparison` é uma comparação de seis partes que mostra as semelhanças e as diferenças entre R, Microsoft R Open e Microsoft ML Server em relação a comandos, sintaxe, constructos e desempenho.
 
@@ -83,7 +82,7 @@ A comparação a seguir mostra que o MLS e MRO com MKL têm um desempenho de com
 
 ![Comparando MLS e MRO com MKL ao R e o MRO sem MKL](media/samples-speed-comparison.png)
 
-Para obter uma comparação técnica do R com o MRO e MLS, confira a [discussão detalhada de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre o assunto.
+Para obter uma comparação técnica do R com o MRO e MLS, confira a [discussão detalhada de Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre o assunto.
 
 A figura a seguir compara o tempo decorrido em segundos usado na criação de modelos de regressão logística para prever atrasos de voos maiores de 15 minutos.  O tempo decorrido usado em CRAN R aumenta drasticamente quando um pequeno número de linhas é aumentado, enquanto o MRS aumenta apenas cerca de duas vezes. Para obter detalhes sobre esse parâmetro de comparação, confira o exemplo *Benchmarks/rxGlm_benchmark.R*.
 
