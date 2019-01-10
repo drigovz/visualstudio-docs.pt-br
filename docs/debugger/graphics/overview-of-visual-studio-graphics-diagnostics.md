@@ -2,19 +2,18 @@
 title: Visão geral do diagnóstico de gráficos | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831372"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visão geral do diagnóstico de gráficos do Visual Studio
 Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas de registro e, em seguida, analisando problemas de desempenho e a renderização em aplicativos Direct3D. Diagnóstico de gráficos pode ser usado em aplicativos que estão sendo executados localmente em seu PC Windows ou em um PC ou dispositivo remoto.  
@@ -53,7 +52,7 @@ Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas de regis
 ### <a name="gpu-usage"></a>Uso de GPU  
  Diagnóstico de gráficos também pode analisar o desempenho do seu aplicativo Direct3D. Porque a criação de perfil de dados seria inclinada por gravação de detalhes de eventos de gráficos, ela é separada da captura de quadros a serem usados examinadas com o analisador de gráficos.  
   
- Ver [uso de GPU](gpu-usage.md) para obter mais informações.  
+ Ver [uso de GPU](/visualstudio/profiling/gpu-usage) para obter mais informações.  
   
 ### <a name="directx-control-panel"></a>Painel de controle do DirectX  
  O painel de controle do DirectX é um componente do DirectX que você pode usar para alterar o comportamento do DirectX. Por exemplo, é possível habilitar a versão de depuração dos componentes de tempo de execução do DirectX, selecionar os tipos de mensagem de depuração que são relatados e impedir que determinados recursos de hardware gráfico sejam usados para emular um hardware menos capaz. Esse nível de controle sobre o DirectX pode ajudar você a depurar e testar seu aplicativo DirectX. É possível acessar o painel de controle do DirectX do Visual Studio.  

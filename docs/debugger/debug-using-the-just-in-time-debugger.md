@@ -1,8 +1,6 @@
 ---
 title: Depurar usando o depurador Just-in | Microsoft Docs
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831544"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador Just-in-no Visual Studio
 
@@ -107,7 +105,7 @@ Para habilitar a depuração em vez do padrão de tratamento de erros do Windows
 
 Neste exemplo, você fará uma C# aplicativo de console no Visual Studio que lança uma [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. No Visual Studio, crie um C# aplicativo de console (**arquivo** > **New** > **projeto** > **C#**  >  **Aplicativo de console**) denominada *ThrowsNullException*. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [instruções passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+1. No Visual Studio, crie um C# aplicativo de console (**arquivo** > **New** > **projeto** > **C#**  >  **Aplicativo de console**) denominada *ThrowsNullException*. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [passo a passo: Criar um aplicativo simples](/visualstudio/get-started/csharp/tutorial-wpf)
    
 1. Quando o projeto é aberto no Visual Studio, abra o *Program.cs* arquivo. Substitua o método Main () com o código a seguir, que imprime uma linha para o console e, em seguida, lança uma NullReferenceException:
    
@@ -198,4 +196,4 @@ Você pode ver as seguintes mensagens de erro durante Just-In-Time de depuraçã
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Opções, depuração, Just-In-Time caixa de diálogo](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Aviso de segurança Anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
