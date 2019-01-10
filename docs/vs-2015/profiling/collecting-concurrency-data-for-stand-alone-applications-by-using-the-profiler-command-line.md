@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc20cce20c07e4fe33cf343cd0cc900a46be5586
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: e49d723db8cb444fb9e21640a2e5e9b1eecea268
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950550"
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Coletando dados de simultaneidade para aplicativos autônomos usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ O método de simultaneidade das Ferramentas de Criação de Perfil [!INCLUDE[vsp
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Start a .NET Framework application and profile concurrency data (Iniciar um aplicativo do .NET Framework e criar o perfil de dados de simultaneidade)**|-   [How to: Launch a .NET Framework Application to Collect Concurrency Data (Como iniciar um aplicativo do .NET Framework para coletar dados de simultaneidade)](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Start a C/C++ application and profile concurrency data (Iniciar um aplicativo C/C++ e criar o perfil de dados de simultaneidade)**|-   [How to: Launch a Native Application to Collect Concurrency Data (Como iniciar um aplicativo nativo para coletar dados de simultaneidade)](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Attach the profiler to a running .NET Framework application (Anexar o criador de perfil a um aplicativo do .NET Framework em execução)**|-   [How to: Attach the Profiler to a .NET Framework Application to Collect Concurrency Data (Como anexar o criador de perfil a um aplicativo do .NET Framework para coletar dados de simultaneidade)](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Attach the profiler to a running C/C++ application (Anexar o criador de perfil a um aplicativo C/C++ em execução)**|-   [How to: Attach the Profiler to a Native Application and Collect Concurrency Data (Como anexar o criador de perfil a um aplicativo nativo e coletar dados de simultaneidade)](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Start a .NET Framework application and profile concurrency data (Iniciar um aplicativo do .NET Framework e criar o perfil de dados de simultaneidade)**|-   [Como: Iniciar um aplicativo .NET Framework para coletar dados de simultaneidade](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Start a C/C++ application and profile concurrency data (Iniciar um aplicativo C/C++ e criar o perfil de dados de simultaneidade)**|-   [Como: Iniciar um aplicativo nativo para coletar dados de simultaneidade](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Attach the profiler to a running .NET Framework application (Anexar o criador de perfil a um aplicativo do .NET Framework em execução)**|-   [Como: Anexar o criador de perfil a um aplicativo .NET Framework para coletar dados de simultaneidade](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Attach the profiler to a running C/C++ application (Anexar o criador de perfil a um aplicativo C/C++ em execução)**|-   [Como: Anexar o criador de perfil a um aplicativo nativo e coletar dados de simultaneidade](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>Tarefas relacionadas  
   

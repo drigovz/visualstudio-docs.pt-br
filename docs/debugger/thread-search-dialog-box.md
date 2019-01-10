@@ -1,8 +1,6 @@
 ---
-title: Caixa de diálogo de pesquisa de thread | Microsoft Docs
-ms.custom: ''
+title: Caixa de diálogo de pesquisa de threads | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Thread Search
@@ -12,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ce2c01bc943945439e0682b9462f24c7d9c5fd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 654e2a43c45364c7050c84c3d98ca08f6e03e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885855"
 ---
 # <a name="thread-search-dialog-box"></a>Caixa de diálogo Pesquisa de Thread
-Use essa caixa de diálogo para localizar e selecionar o nó para um segmento específico no [exibição de Threads](../debugger/threads-view.md). Para exibir essa caixa de diálogo, mova o foco para um **Threads** janela modo de exibição. Em seguida, escolha **encontrar Thread** do **pesquisa** menu.  
+Use essa caixa de diálogo para localizar e selecionar o nó para um segmento específico na [exibição de Threads](../debugger/threads-view.md). Para exibir essa caixa de diálogo, mova o foco para um **Threads** janela modo de exibição. Em seguida, escolha **encontrar Thread** da **pesquisa** menu.  
   
  As configurações a seguir estão disponíveis:  
   
  **Thread**  
- A ID do thread para pesquisar.  
+ A ID do thread a ser pesquisado.  
   
  **Módulo**  
  A cadeia de caracteres do módulo a ser pesquisado.  
@@ -38,10 +36,10 @@ Use essa caixa de diálogo para localizar e selecionar o nó para um segmento es
  Usado para exibir as propriedades de um thread selecionado na exibição de Threads.  
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.  
+ Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.  
   
  [Procurando por um Thread na exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Explica como localizar um segmento específico no modo de exibição de Threads.  
+ Explica como localizar um segmento específico na exibição de Threads.  
   
  [Exibição de Threads](../debugger/threads-view.md)  
  Exibe uma árvore de threads ativos  

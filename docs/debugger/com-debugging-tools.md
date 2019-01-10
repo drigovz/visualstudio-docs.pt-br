@@ -1,8 +1,6 @@
 ---
 title: COM as ferramentas de depuração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 733ec7e74482a0243fef3355a02c8e125183ff87
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 6c1ca9466f4b70f7232cb1832fe05794b8cffd45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951492"
 ---
 # <a name="com-debugging-tools"></a>Ferramentas de depuração COM
 
@@ -49,4 +47,4 @@ Os exemplos MFC ActiveX, OCLIENT e SUPERPAD, também estão disponíveis para te
 - [Depurando no Visual Studio](../debugger/index.md)
 - [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
 - [Exemplo de OCLIENT: Ilustra um aplicativo de contêiner de edição Visual](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Exemplo SUPERPAD: Demonstra um servidor que edita texto usando CEditView de edição Visual](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Exemplo de SUPERPAD: Demonstra um servidor que edita texto usando CEditView de edição Visual](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

@@ -2,7 +2,6 @@
 title: Gerenciar exceções com o depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -34,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561519"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094803"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
@@ -217,7 +216,7 @@ Para adicionar exceções condicionais:
 
    ![As condições adicionais para uma exceção](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Para cada linha de condição, digite o nome do módulo e altere a lista de operadores de comparação para **é igual a** ou **não é igual a**. Você pode especificar caracteres curinga (* *\\* * *) no nome para especificar mais de um módulo.
+3. Para cada linha de condição, digite o nome do módulo e altere a lista de operadores de comparação para **é igual a** ou **não é igual a**. Você pode especificar caracteres curinga (**\\\***) no nome para especificar mais de um módulo.
 
 4. Se você precisar excluir uma condição, escolha o **X** no final da linha de condição.
 

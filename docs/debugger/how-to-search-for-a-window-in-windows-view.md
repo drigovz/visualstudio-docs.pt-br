@@ -1,8 +1,6 @@
 ---
-title: 'Como: procurar uma janela no modo de exibição do Windows | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Pesquisar por uma janela no modo de exibição do Windows | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - windows, searching in Windows view
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c187c3a4b8086b5b991f7288f2686d6010e79262
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 317b815595d6e7bca820b730a2761113e588dded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837060"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>Como procurar uma janela na exibição de janelas
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Como: Procurar uma janela na exibição de janelas
 Você pode procurar uma janela específica no modo de exibição do Windows, usando seu identificador, legenda, classe ou uma combinação de sua legenda e a classe como critérios de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrará os atributos da janela selecionada na árvore de janela.  
   
  Iniciar com a árvore expandida para o segundo nível (todos os windows que são filhos da área de trabalho), para que você possa identificar windows de nível de área de trabalho por seu nome de classe e o título. Depois de ter escolhido uma janela de nível de área de trabalho, você pode expandir esse nível para encontrar uma janela filho específicos.  

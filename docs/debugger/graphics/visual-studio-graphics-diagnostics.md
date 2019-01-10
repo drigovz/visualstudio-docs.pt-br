@@ -2,7 +2,6 @@
 title: Diagnóstico de gráficos | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890924"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos do Visual Studio
 Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas de registro e, em seguida, analisando problemas de desempenho e a renderização em aplicativos Direct3D. Diagnóstico de gráficos pode ser usado em aplicativos que estão sendo executadas localmente no seu PC com Windows, em um emulador de dispositivo do Windows ou em um dispositivo ou computador remoto.  
@@ -82,6 +81,5 @@ Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas de regist
 
 | Título | Descrição |
 | - | - |
-| [Tour dos recursos do depurador](../debugging-in-visual-studio.md) | Apresenta a funcionalidade de depuração no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Tour dos recursos do depurador](/visualstudio/debugger/debugger-feature-tour) | Apresenta a funcionalidade de depuração no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Gráficos e jogos DirectX](http://go.microsoft.com/fwlink/?LinkId=256498) | Fornece artigos que discutem as tecnologias de gráficos do DirectX. |
-

@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30e08cb10b6e1912fe5962620faf34a1c6250cf3
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 1b5579c8916e81e3c49e9d6e24bf37ed85039c03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174147"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851817"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Este método relacionado é o método de suporte para a seguir inserção, atualização, ou métodos padrão de exclusão
 
@@ -38,4 +37,4 @@ Selecionado `DataContext` método no momento é usado como um dos `Insert`, `Upd
 ## <a name="see-also"></a>Consulte também
 
 - [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
-- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

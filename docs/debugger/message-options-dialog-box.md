@@ -1,8 +1,6 @@
 ---
-title: Caixa de diálogo Opções de mensagem | Microsoft Docs
-ms.custom: ''
+title: Caixa de diálogo de opções de mensagem | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Spy++
@@ -13,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ced120b9545adb21a4fcfe73df6f69961568b7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d3f71e33bbb52506760d5b83f50e459473df8077
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861741"
 ---
 # <a name="message-options-dialog-box"></a>Caixa de diálogo Opções da Mensagem
-Use essa caixa de diálogo para selecionar quais mensagens são listadas na [exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, escolha **mensagens de Log** do **Spy** menu.  
+Use essa caixa de diálogo para selecionar quais mensagens são listadas na [exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, escolha **mensagens de Log** da **Spy** menu.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Guia Janelas, Caixa de diálogo Opções de Mensagem](../debugger/windows-tab-message-options-dialog-box.md)  
- Usado para selecionar os tipos de mensagens a lista. Inclui a ferramenta de localização.  
+ Usado para selecionar os tipos de mensagens para listar. Inclui a ferramenta de localização.  
   
  [Guia Mensagens, Caixa de diálogo Opções de Mensagem](../debugger/messages-tab-message-options-dialog-box.md)  
  Usado para selecionar os tipos de mensagem para a exibição.  
@@ -38,16 +36,16 @@ Use essa caixa de diálogo para selecionar quais mensagens são listadas na [exi
  Usado para localizar o nó de uma mensagem específica no modo de exibição de mensagem.  
   
  [Caixa de diálogo Propriedades da Mensagem](../debugger/message-properties-dialog-box.md)  
- Usado para exibir as propriedades de uma mensagem selecionada na exibição de mensagem.  
+ Usado para exibir as propriedades de uma mensagem selecionada no modo de exibição de mensagem.  
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.  
+ Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.  
   
- [Procurando uma mensagem na exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Explica como localizar uma mensagem específica no modo de exibição de mensagens.  
+ [Procurando por uma mensagem na exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ Explica como localizar uma mensagem específica na exibição de mensagens.  
   
- [Abrir modo de exibição de mensagens na janela Localizar](../debugger/how-to-open-messages-view-from-find-window.md)  
- Explica como abrir a exibição de mensagens na caixa de diálogo Localizar janela.  
+ [Modo de exibição de mensagens de abertura da janela Localizar](../debugger/how-to-open-messages-view-from-find-window.md)  
+ Explica como abrir o modo de exibição de mensagens da caixa de diálogo Localizar janela.  
   
  [Exibição de Mensagens](../debugger/messages-view.md)  
  Exibe o fluxo de mensagem associado a uma janela, processo ou thread.  

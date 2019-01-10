@@ -2,7 +2,6 @@
 title: Exibir valores de variáveis em DataTips | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c84c6c9049fe11de16267267df86c88851cfcdfe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898067"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Exibir os valores de dados em DataTips no editor de códigos
 
@@ -131,4 +130,3 @@ Você pode exportar DataTips para um arquivo XML, que você pode compartilhar ou
  [Introdução à depuração](../debugger/debugger-feature-tour.md) [exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Janelas Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
-

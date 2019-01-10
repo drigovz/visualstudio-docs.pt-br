@@ -1,8 +1,6 @@
 ---
-title: 'Erro: O computador remoto não foi possível iniciar comunicações DCOM | Microsoft Docs'
-ms.custom: ''
+title: 'Erro: Computador remoto não foi possível iniciar a comunicação DCOM | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.unmarshal_callback_failed
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 111c8b010f9d1415e8e9e4e86e1401346f78702d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f507f8f2630c001beb9aad3e6f76904e6cd11489
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887497"
 ---
-# <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Erro: o computador remoto não conseguiu iniciar a comunicação DCOM
+# <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Erro: O computador remoto não conseguiu iniciar as comunicações DCOM
 Um erro DCOM ocorreu quando o computador remoto tentou se comunicar com o computador local. O computador local é o computador que está  
   
  executando o Visual Studio. Esse erro pode ocorrer por várias razões:  
@@ -34,7 +32,7 @@ Um erro DCOM ocorreu quando o computador remoto tentou se comunicar com o comput
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1.  Se o computador local tiver habilitado o Firewall do Windows, consulte [depuração remota](../debugger/remote-debugging.md) para obter instruções sobre como configurar o firewall para depuração local.  
+1.  Se o computador local tem o Firewall do Windows habilitado, consulte [depuração remota](../debugger/remote-debugging.md) para obter instruções sobre como configurar o firewall para depuração local.  
   
 2.  Teste a autenticação do Windows tentando abrir um compartilhamento de arquivos no computador local do servidor remoto.  
   

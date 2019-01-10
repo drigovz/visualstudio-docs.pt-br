@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 260676ee54a9410bb7bfc8d90bd3d044c403169d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: bbe52509eb298c33077c81a69e02a813c29b7ce0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959729"
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Coletando dados de memória a partir de um aplicativo Web do ASP.NET usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Esta seção descreve os procedimentos e as opções para coletar alocação de 
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Anexar o criador de perfil a um aplicativo ASP.NET em execução**|-   [Como Anexar o Criador de Perfil a um Aplicativo Web ASP .NET para Coletar Dados de Memória](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrumentar binários compilados estatisticamente**|-   [Como Instrumentar um Aplicativo do ASP.NET Compilado Estaticamente e Coletar Dados de Memória](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|**Instrumentar binários compilados dinamicamente**|-   [Como Instrumentar um Aplicativo do ASP.NET Compilado Dinamicamente e Coletar Dados de Memória](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Anexar o criador de perfil a um aplicativo ASP.NET em execução**|-   [Como: Anexar o criador de perfil a um aplicativo Web ASP.NET para coletar dados de memória](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrumentar binários compilados estatisticamente**|-   [Como: Instrumentar um aplicativo ASP.NET compilado estaticamente e coletar dados de memória](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Instrumentar binários compilados dinamicamente**|-   [Como: Instrumentar um aplicativo ASP.NET compilado dinamicamente e coletar dados de memória](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tarefas relacionadas  
   
@@ -47,7 +47,7 @@ Esta seção descreve os procedimentos e as opções para coletar alocação de 
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
 |**Criar perfil usando o método de amostragem**|-   [Coletando estatísticas do aplicativo usando amostragem](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Criar perfil usando o método de instrumentação**|-   [Coletando dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Criar perfil usando o método de instrumentação**|-   [Coletando dados de tempo detalhados usando a instrumentação](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Criar perfil de contenção de recursos e atividade de thread**|-   [Coletando dados de simultaneidade](../profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-net-framework-memory-data"></a>Criando perfis de dados de memória do .NET Framework  

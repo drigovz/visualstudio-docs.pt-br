@@ -2,7 +2,6 @@
 title: Iniciar uma sessão de depuração para um aplicativo UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3c2ef4e92cddb302e67f99c921750d4e9e83d98e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901974"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Iniciar uma sessão de depuração de um aplicativo UWP
   
@@ -209,4 +208,4 @@ Para anexar o depurador a um aplicativo [!INCLUDE[win8_appname_long](../debugger
 > A maneira mais fácil para anexar ao seu aplicativo JavaScript é fechar todos os outros aplicativos de JavaScript. Ou, você pode observar os PIDs Running *wwahost.exe* processos no Windows Gerenciador de tarefas antes de iniciar seu aplicativo. Quando você inicia seu aplicativo, seus *wwahost.exe* PID será aquele que é diferente daquelas que você anotou anteriormente.  
 
 ## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   

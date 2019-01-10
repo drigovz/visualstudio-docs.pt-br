@@ -2,7 +2,6 @@
 title: Configuração de depuração de configurações do projeto para um VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vbProjectPropertiesDebug
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70ec195418b46a022ca73d6ac3656de8e652f06
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 200d09c77c7ff4c22ed51b4cc93ec724d30dd17b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878491"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Definições do projeto para uma configuração de depuração do Visual Basic
 Você pode alterar as configurações do projeto para uma configuração de depuração do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] na janela **Páginas de Propriedades**, conforme discutido em [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar as configurações relacionadas ao depurador na janela **Páginas de Propriedades**.  

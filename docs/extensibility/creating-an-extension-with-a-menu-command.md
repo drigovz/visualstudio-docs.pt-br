@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd25b7ed02cb8d45ae693eacdb397a250d2456e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847818"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154415"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Criar uma extensão com um comando de menu
 Este passo a passo mostra como criar uma extensão com um comando de menu que inicia o bloco de notas.  
@@ -121,6 +121,6 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
   
 4. Adicione o IntelliSense, sugestões de código e outros recursos para os editores de código existente: [Estender os serviços do editor e linguagem](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Adicione páginas de propriedade e as opções e configurações do usuário para sua extensão: [Estender propriedades e a janela de propriedade](../extensibility/extending-properties-and-the-property-window.md) e [estender Ooptions e configurações de usuário](../extensibility/extending-user-settings-and-options.md)  
+5. Adicione páginas de propriedade e as opções e configurações do usuário para sua extensão: [Estender propriedades e a janela de propriedade](../extensibility/extending-properties-and-the-property-window.md) e [estender opções e configurações do usuário](../extensibility/extending-user-settings-and-options.md)  
   
    Outros tipos de extensões exigem um pouco mais de trabalho, como a criação de um novo tipo de projeto ([estender projetos](../extensibility/extending-projects.md)), criando um novo tipo de editor ([criar designers e editores personalizados](../extensibility/creating-custom-editors-and-designers.md)), ou implementar sua extensão em um shell isolado: [Shell do Visual Studio isolado](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

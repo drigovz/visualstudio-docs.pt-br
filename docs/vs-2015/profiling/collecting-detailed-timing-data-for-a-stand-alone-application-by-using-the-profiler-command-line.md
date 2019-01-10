@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9a84a4dbbeee9c8d4738406023cdb86df09504e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 89ca6cfb99fad4364c8e6a1e180821d5d547b7ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925791"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Coletando dados de tempo detalhados para um aplicativo autônomo usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ Esta seção descreve os procedimentos e opções para coletar dados de desempen
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Profile a .NET Framework application by using instrumentation (Criar o perfil de um aplicativo do .NET Framework usando a instrumentação)**|-   [How to: Instrument a .NET Component and Collect Detailed Timing Data (Como instrumentar um componente do .NET e coletar dados de tempo detalhados)](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Profile a C/C++ application by using instrumentation (Criar o perfil de um aplicativo C/C++ usando a instrumentação)**|-   [How to: Instrument a Native Component and Collect Detailed Timing Data (Como instrumentar um componente nativo e coletar dados de tempo detalhados)](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profile a .NET Framework application by using instrumentation (Criar o perfil de um aplicativo do .NET Framework usando a instrumentação)**|-   [Como: Instrumentar um componente do .NET e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profile a C/C++ application by using instrumentation (Criar o perfil de um aplicativo C/C++ usando a instrumentação)**|-   [Como: Instrumentar um componente nativo do .NET e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tarefas relacionadas  
@@ -51,7 +51,7 @@ Esta seção descreve os procedimentos e opções para coletar dados de desempen
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Aplicativos ASP.NET de criação de perfil**|-   [Coletando dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Aplicativos ASP.NET de criação de perfil**|-   [Coletando dados de tempo detalhados usando a instrumentação](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Serviços de criação de perfil**|-   [Coletando dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analisando modos de exibição e relatórios de dados de instrumentação  

@@ -1,8 +1,6 @@
 ---
 title: Referência (Captura programática) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0046268ff073949db3e3fc0c0753c9008b262c6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 826b399aa0ad0b5a45bc6fd80eb73b555cb3f01c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836330"
 ---
 # <a name="reference-programmatic-capture"></a>Referência (captura programática)
 Diagnóstico de gráficos oferece suporte a controle programático sobre seus recursos de captura, por meio da API de captura programática. Você pode usar essa API para ativar/desativar e adicionar mensagens para o diagnóstico de gráficos HUD (Head-Up Display), inicializar e criar arquivos de log de gráficos e capturar informações gráficas.  
@@ -42,4 +40,3 @@ Diagnóstico de gráficos oferece suporte a controle programático sobre seus re
 | - | - |
 | [Capturando informações de gráficos](capturing-graphics-information.md) | Mostra como capturar informações gráficas de seu aplicativo baseado no DirectX para que você possa usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ferramentas de diagnóstico de gráficos para diagnosticar problemas de renderização. |
 | [Visão geral](overview-of-visual-studio-graphics-diagnostics.md) | Mostra como o diagnóstico de gráficos podem ajudar você a depurar erros de renderização em aplicativos e jogos do DirectX. |
-

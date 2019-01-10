@@ -2,7 +2,6 @@
 title: Gatilho de suspender, continuar e eventos em segundo plano durante a depuração UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9c5543150708238ecc0026bcb1acb012feaaf37d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919671"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Como disparar suspender, continuar e eventos em segundo plano durante a depuração de aplicativos UWP no Visual Studio
 Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Processo)** do Windows controla o estado da execução de seu aplicativo, iniciando, suspendendo, retomando e encerrando o aplicativo em resposta às ações do usuário e ao estado do dispositivo. Quando você está depurando, o Windows desabilita esses eventos de ativação. Este tópico descreve como acionar esses eventos no depurador.  
@@ -111,6 +110,6 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
   
 ## <a name="see-also"></a>Consulte também  
  [Testando aplicativos UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [Ciclo de vida do aplicativo](/windows/uwp/launch-resume/app-lifecycle)   
  [Iniciando, retomar e execução multitarefa](/windows/uwp/launch-resume/index)

@@ -1,8 +1,6 @@
 ---
 title: Enumerações e estruturas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc3b2b74c6539cbbdfd1a7e99c88c0b1e65c5cc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c8f994e83e6817062878ef7a0d8e6cd9981b3ec9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988077"
 ---
 # <a name="enumerations-and-structures"></a>Enumerações e estruturas
-Estas são as enumerações e estruturas usadas pelo DIA SDK.  
+Essas são as enumerações e estruturas usadas pelo SDK do DIA.  
   
 ## <a name="in-this-section"></a>Nesta seção  
   
@@ -40,7 +38,7 @@ Estas são as enumerações e estruturas usadas pelo DIA SDK.
  Especifica a convenção de chamada para uma função.  
   
  [Enumeração CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)  
- Especifica a linguagem do código fonte do aplicativo ou módulo vinculado.  
+ Especifica a linguagem de código fonte do aplicativo ou módulo vinculado.  
   
  [Enumeração CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
  Especifica o processador de destino.  
@@ -52,19 +50,19 @@ Estas são as enumerações e estruturas usadas pelo DIA SDK.
  Indica o escopo específico de um valor de dados.  
   
  [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)  
- Indica o tipo de informações de localização contidos em um símbolo.  
+ Indica o tipo de informações de localização contidas em um símbolo.  
   
  [Enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)  
  Especifica o tipo de memória para acessar.  
   
  [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)  
- Especifica as opções de pesquisa de símbolo e nomes de arquivos.  
+ Especifica as opções de pesquisa para nomes de arquivo e símbolos.  
   
  [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)  
  Especifica o tipo de quadro de pilha.  
   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)  
- Especifica o tipo de símbolo.  
+ Especifica o tipo do símbolo.  
   
  [Enumeração THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)  
  Designa os tipos de conversão.  

@@ -1,8 +1,6 @@
 ---
-title: 'Como: depurar de um projeto DLL | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar de um projeto DLL | Microsoft Docs'
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854056"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Como: depurar de um projeto DLL no Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Como: Depurar de um projeto DLL no Visual Studio (C#, C++, Visual Basic, F#)
 
 Uma maneira de depurar um projeto de DLL é especificar o aplicativo de chamada nas propriedades do projeto DLL. Em seguida, você pode iniciar a depuração a partir do projeto de DLL. Para esse método funcione, o aplicativo deve chamar a mesma DLL no mesmo local que você configurar. Se o aplicativo localiza e carrega uma versão diferente da DLL, essa versão não conterá seus pontos de interrupção. Para outros métodos de depuração de DLLs, consulte [projetos de DLL de depuração](../debugger/debugging-dll-projects.md).
   
-Se seu aplicativo gerenciado chama uma DLL nativa, ou se seu aplicativo nativo chama uma DLL gerenciada, você pode depurar a DLL e o aplicativo de chamada. Para obter mais informações, consulte [como: depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).   
+Se seu aplicativo gerenciado chama uma DLL nativa, ou se seu aplicativo nativo chama uma DLL gerenciada, você pode depurar a DLL e o aplicativo de chamada. Para obter mais informações, confira [Como: Depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Projetos DLL nativos e gerenciados tem configurações diferentes para especificar os aplicativos de chamada. 
 

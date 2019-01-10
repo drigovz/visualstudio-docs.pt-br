@@ -2,7 +2,6 @@
 title: Executar um processo de trabalho em uma conta de usuário | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5162d06f54e65dc35fef9e623d1730b66813c0f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893244"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como: Executar o processo de trabalho em uma conta de usuário
 Para configurar o computador de modo que você possa executar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe ou w3wp.exe) em uma conta de usuário, siga estas etapas.  
@@ -89,4 +88,3 @@ Para configurar o computador de modo que você possa executar o processo de trab
 ## <a name="see-also"></a>Consulte também  
 [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
 [Depuração do ASP.NET: requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md)  
-  

@@ -1,8 +1,6 @@
 ---
-title: Caixa de diálogo Propriedades de thread | Microsoft Docs
-ms.custom: ''
+title: Caixa de diálogo Propriedades do thread | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Spy++, thread properties
@@ -13,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c64db60f7e8a7b8cc7f00157bf33ac38732416
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 30f45bf4ef30ead2740cad45101f6eed6d7c2a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985992"
 ---
 # <a name="thread-properties-dialog-box"></a>Caixa de diálogo Propriedades do Thread
-Use essa caixa de diálogo caixa saber mais sobre um segmento específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição de Threads](../debugger/threads-view.md) janela ou abra [exibição de mensagens](../debugger/messages-view.md) e expanda uma mensagem. Selecione qualquer nó de segmento na árvore e escolha **propriedades** do **exibição** menu.  
+Use essa caixa de diálogo caixa Saiba mais sobre um thread específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição de Threads](../debugger/threads-view.md) janela ou abra [exibição de mensagens](../debugger/messages-view.md) e expandir uma mensagem. Selecione qualquer nó de segmento na árvore e escolha **propriedades** da **exibição** menu.  
   
- O **geral** guia é a única guia exibida. Em sistemas operacionais Windows 98 e Windows 95, uma versão modificada dessa guia é exibida.  
+ O **geral** guia é a única guia exibida. Sistemas operacionais Windows 98 e Windows 95, uma versão modificada dessa guia é exibida.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Guia Geral, Caixa de diálogo Propriedades do Thread](../debugger/general-tab-thread-properties-dialog-box.md)  
@@ -31,13 +29,13 @@ Use essa caixa de diálogo caixa saber mais sobre um segmento específico. Para 
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Caixa de diálogo Pesquisa de Threads](../debugger/thread-search-dialog-box.md)  
- Usado para localizar o nó para um segmento específico no modo de exibição de Threads.  
+ Usado para localizar o nó para um segmento específico na exibição de Threads.  
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.  
+ Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.  
   
  [Procurando por um Thread na exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Explica como localizar um segmento específico no modo de exibição de Threads.  
+ Explica como localizar um segmento específico na exibição de Threads.  
   
  [Exibição de Threads](../debugger/threads-view.md)  
  Exibe uma exibição de árvore de threads ativos.  

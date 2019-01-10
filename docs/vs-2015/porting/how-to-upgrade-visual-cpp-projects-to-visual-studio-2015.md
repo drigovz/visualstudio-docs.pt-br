@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 493b96d4c66c35a242efd4957288d215ab2877ed
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd2cf85abd5b36ba0a3797ef711b4c9364b35c4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945191"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Como: Atualizar projetos do Visual C++ para Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

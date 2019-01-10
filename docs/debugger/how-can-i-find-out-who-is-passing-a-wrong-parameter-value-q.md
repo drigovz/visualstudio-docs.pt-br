@@ -2,7 +2,6 @@
 title: Descobrir quem está passando um valor de parâmetro incorreto | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parameters
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164ca15cfc508b952ccfe2f986892c0801fd1539
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ffcff71a8897796d64c608df698932da4fd9774f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988090"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Como posso descobrir quem está passando um valor de parâmetro incorreto?
 ## <a name="problem-description"></a>Descrição do problema  
@@ -50,7 +49,7 @@ ms.locfileid: "53059360"
   
 6.  Agora, execute o programa novamente. O ponto de interrupção faz com que o programa pare no início da função quando o parâmetro `Var` tiver o valor `3`.  
   
-7.  Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Confira mais informações em [Como: Usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).  
+7.  Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Para obter mais informações, confira [Como: Usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)   

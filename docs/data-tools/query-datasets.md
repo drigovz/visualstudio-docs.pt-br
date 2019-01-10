@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2276828a67cec2562063d220ef3173d98fdf487b
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: b3b51946c9fbf6ba38249c8ca7056179b58ee8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852486"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 Para procurar registros específicos em um conjunto de dados, use o `FindBy` método na DataTable, escrever sua própria instrução foreach para executar um loop pela coleção de linhas da tabela, ou use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,7 +69,7 @@ Você pode usar um <xref:System.Data.DataRelation> objeto para localizar registr
 Esta página fornece exemplos que usam conjuntos de dados tipados. Para obter informações sobre navegar em relações em conjuntos de dados não tipados, consulte [navegando em DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
->  Se você estiver trabalhando em um aplicativo Windows Forms e usando os recursos de vinculação de dados para exibir dados, o formulário gerado pelo designer pode fornecer funcionalidade suficiente para seu aplicativo. Para obter mais informações, consulte [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Especificamente, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
+>  Se você estiver trabalhando em um aplicativo Windows Forms e usando os recursos de vinculação de dados para exibir dados, o formulário gerado pelo designer pode fornecer funcionalidade suficiente para seu aplicativo. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Especificamente, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
 
 Os exemplos de código a seguir demonstram como navegar para cima e para relacionamentos em conjuntos de dados tipados. O uso de exemplos de código digitado <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e o FindBy gerado*PrimaryKey* (`FindByCustomerID`) métodos para localizar uma linha desejada e retornar os registros relacionados. Os exemplos de compilar e executam corretamente somente se você tiver:
 

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f5e6ceefbff4702d509c18b4a555287a1e9f42
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 94e052865c94d747bcb36cd81e0b1c023262b0c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875148"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Retorna o número de marcas de ponteiro accelerator em uma função de stub do C++ AMP.  
+Retorna o número de marcas de ponteiro de acelerador em uma função de stub do C++ AMP.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,10 +32,10 @@ HRESULT get_numberOfAcceleratorPointerTags(
  [out] Um ponteiro para um `DWORD` que contém o número de acelerador de marcas de ponteiro em uma função de stub do C++ AMP.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é chamado em um `IDiaSymbol` interface que corresponde a uma função de stub do C++ AMP acelerador.  
+ Esse método é chamado em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador de C++ AMP.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

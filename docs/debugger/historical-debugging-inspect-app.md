@@ -1,8 +1,6 @@
 ---
 title: Inspecionar seu aplicativo com o histórico de depuração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2309a3213344607fa0f5b2f626fc67af2eff8f79
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
-ms.translationtype: MT
+ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968625"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Inspecionar seu aplicativo com o IntelliTrace histórico de depuração no Visual Studio
 Você pode usar [depuração histórica](../debugger/historical-debugging.md) para retroceder e encaminhe por meio da execução do seu aplicativo e inspecionar seu estado.  

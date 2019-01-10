@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d344fdd444a46b3e0434e70850946ef242864b0
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fc4164ff4cf88edad8c4b0e4e69a41fc18a0b58c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900199"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Criar consultas TableAdapter parametrizadas
 
@@ -42,7 +41,7 @@ Criar consultas TableAdapter parametrizadas na **Dataset Designer**. Você tamb�
 
 -   Crie um novo TableAdapter, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL. Para obter mais informações, consulte [criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     -ou-
+     - ou -
 
 -   Acrescente uma consulta a um TableAdapter existente, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL.
 
@@ -67,7 +66,7 @@ Criar consultas TableAdapter parametrizadas na **Dataset Designer**. Você tamb�
 
 4.  Digite um nome na caixa **Nome da nova consulta** ao criar uma nova consulta.
 
-     -ou-
+     - ou -
 
      Selecione uma consulta na caixa **Nome da consulta existente**.
 

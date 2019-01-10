@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d853322762942e874528b35164dc3f04a6c22b0a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: d3b4d992c59332075e79a3bcb355d3b5b7b9d8f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898171"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usando métodos da criação de perfil para coletar dados de desempenho a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ A escolha de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Ferramentas de Criaç�
 |Tarefa|Tipo de aplicativo de destino|  
 |----------|-----------------------------|  
 |**Iniciar um aplicativo**|-   [Aplicativo Autônomo do .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplicativo Autônomo Nativo](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Anexar a um processo em execução**|-   [Aplicativo Autônomo do .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplicativo Autônomo Nativo](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplicativo Web ASP .NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Serviço do .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Serviço Nativo](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Anexar a um processo em execução**|-   [Aplicativo Autônomo do .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplicativo Autônomo Nativo](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)<br />-   [Aplicativo Web ASP .NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Serviço do .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Serviço Nativo](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ##  <a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> Adicionando dados de interação de camadas a uma execução de criação de perfil  
  Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Consulte [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)  

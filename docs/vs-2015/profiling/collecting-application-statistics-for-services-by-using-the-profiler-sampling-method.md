@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54aad4b8fb2282c1f2d5514f50b67c82ee1c4f53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 37e08c4b9af5c4d870be1ddf7bac0cba677f5cf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947721"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Coletando estatísticas do aplicativo para serviços usando o método de amostragem do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Esta seção descreve os procedimentos e as opções para coletar estatísticas 
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Anexar o criador de perfil a um serviço .NET**|-   [How to: Attach the Profiler to a .NET Service to Collect Application Statistics (Como anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo)](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Anexar o criador de perfil a um serviço .NET**|-   [Como: Anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
 |**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Attach the profiler to a C/C++ service (Anexar o criador de perfil a um serviço C/C++)**|-   [How to: Attach the Profiler to a Native Service to Collect Application Statistics (Como anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo)](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Attach the profiler to a C/C++ service (Anexar o criador de perfil a um serviço C/C++)**|-   [Como: Anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tarefas relacionadas  
   
@@ -52,7 +52,7 @@ Esta seção descreve os procedimentos e as opções para coletar estatísticas 
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
 |**Criar o perfil de aplicativos autônomos (clientes)**|-   [Coletando estatísticas do aplicativo usando amostragem](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Criar o perfil de aplicativos Web ASP.NET**|-   [Coletando estatísticas do aplicativo usando amostragem](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
+|**Criar o perfil de aplicativos Web ASP.NET**|-   [Coletando estatísticas do aplicativo usando amostragem](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analisando exibições e relatórios dos dados de amostragem  
  [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)

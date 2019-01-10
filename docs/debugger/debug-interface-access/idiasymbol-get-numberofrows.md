@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_numberOfRows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c52ecbf10e798faed3efb5f1e5b02c822c1674
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e4b440a77cb6ddd4b957c6a6852c7367b93ddc85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938861"
 ---
 # <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
 Recupera o número de linhas na matriz.  
@@ -34,7 +32,7 @@ HRESULT get_numberOfRows(
  [out] Um ponteiro para um `DWORD` que contém o número de linhas na matriz.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

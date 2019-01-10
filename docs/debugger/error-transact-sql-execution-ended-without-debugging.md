@@ -1,8 +1,6 @@
 ---
 title: 'Erro: Execução de Transact-SQL terminou sem depuração | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0efb83f6b6cbebc255f6f47c30e3934d74de7870
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: ce27a15766af51a10cf1697f3ed08e6aebf2bb96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863050"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>Erro: execução de Transact-SQL encerrada sem depuração
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>Erro: A execução de Transact-SQL terminou sem depuração
 
 Esse erro ocorre quando você está tentando depurar um Transact-SQL ou procedimento SQLCLR e o depurador não recebe mensagens de depuração do SQL Server.  
   
@@ -42,7 +40,7 @@ Há duas contas envolvidas:
   
   Para corrigir esse erro, talvez seja necessário:  
   
-  - Verificar suas configurações de permissões. Para obter mais informações, consulte [como: definir permissões do SQL Server para depuração](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+  - Verificar suas configurações de permissões. Para obter mais informações, confira [Como: Definir permissões do SQL Server para depuração](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
   - Verifique se a depuração do SQL está configurada corretamente.  
   
@@ -51,6 +49,6 @@ Há duas contas envolvidas:
 ## <a name="see-also"></a>Consulte também
 
 - [Configuração de depuração de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Como: definir permissões do SQL Server para depuração](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Como: Definir permissões do SQL Server para depuração](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Depuração remota](../debugger/remote-debugging.md)
