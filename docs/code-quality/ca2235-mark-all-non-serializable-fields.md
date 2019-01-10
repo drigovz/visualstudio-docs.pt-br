@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986564"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154144"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Marcar todos os campos não serializáveis
 
@@ -38,7 +38,9 @@ ms.locfileid: "53986564"
  Um campo de instância de um tipo que não seja serializável é declarado em um tipo que é serializável.
 
 ## <a name="rule-description"></a>Descrição da regra
- Um tipo serializável é aquele que é marcado com o <xref:System.SerializableAttribute?displayProperty=fullName> atributo. Quando o tipo é serializado, um <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> exceção será gerada se um tipo contém um campo de instância de um tipo que não é serializável.
+ Um tipo serializável é aquele que é marcado com o <xref:System.SerializableAttribute?displayProperty=fullName> atributo. Quando o tipo é serializado, um <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> exceção será lançada se o tipo contém um campo de instância de um tipo que não é serializável.
+ 
+ Uma exceção é quando o tipo usa serialização personalizada por meio de <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface. Tipos que implementam essa interface fornecem sua própria lógica de serialização e então CA2235 não serão acionados para campos de instância não-serializáveis desses tipos.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para corrigir uma violação dessa regra, aplicar o <xref:System.NonSerializedAttribute?displayProperty=fullName> de atributo para o campo que não é serializável.
