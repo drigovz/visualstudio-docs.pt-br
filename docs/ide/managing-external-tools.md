@@ -2,7 +2,6 @@
 title: Gerenciar ferramentas externas
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeee2e6e7ae5d043124faaa79bc6bad7c527702
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904173"
 ---
 # <a name="manage-external-tools"></a>Gerenciar ferramentas externas
 
@@ -29,7 +28,7 @@ Você pode chamar ferramentas externas de dentro do Visual Studio usando o menu 
 O menu **Ferramentas** contém vários comandos internos, como:
 
 * **Extensões e atualizações** para [Gerenciar extensões do Visual Studio](finding-and-using-visual-studio-extensions.md)
-* **Gerenciador de trechos de código** para [Organizar trechos de código](code-snippets.md)
+* **Gerenciador de snippets de código** para [Organizar snippets de código](code-snippets.md)
 * **Proteção PreEmptive – Dotfuscator** para iniciar o [Dotfuscator CE (Community Edition)](dotfuscator/index.md) se ele estiver [instalado](dotfuscator/install.md)
 * **Personalizar** para [Personalizar menus e barras de ferramentas](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Opções** para [Definir várias opções diferentes para o IDE do Visual Studio e outras ferramentas](reference/options-dialog-box-visual-studio.md)

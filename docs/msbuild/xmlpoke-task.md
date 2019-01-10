@@ -1,8 +1,6 @@
 ---
 title: Tarefa XmlPoke | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6a12991a8ea3de4348ce87686feadd7bc7681968
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934222"
 ---
 # <a name="xmlpoke-task"></a>Tarefa XmlPoke
 
@@ -35,7 +33,7 @@ Define os valores conforme especificado por uma consulta de XPath em um arquivo 
   
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|`Namespaces`|Parâmetro `String` opcional.<br /><br /> Especifica os namespaces para prefixos de consulta do XPath. `Namespaces` é um trecho XML que consiste em elementos `Namespace` com atributos `Prefix` e `Uri`. O atributo `Prefix` especifica o prefixo para associar ao namespace especificado no atributo `Uri`. Não use um `Prefix` vazio.|
+|`Namespaces`|Parâmetro `String` opcional.<br /><br /> Especifica os namespaces para prefixos de consulta do XPath. `Namespaces` é um snippet XML que consiste em elementos `Namespace` com atributos `Prefix` e `Uri`. O atributo `Prefix` especifica o prefixo para associar ao namespace especificado no atributo `Uri`. Não use um `Prefix` vazio.|
 |`Query`|Parâmetro `String` opcional.<br /><br /> Especifica a consulta do XPath.|
 |`Value`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica o valor a ser inserido no caminho especificado.|
 |`XmlInputPath`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica a entrada XML como um caminho de arquivo.|

@@ -3,7 +3,6 @@ title: Ferramentas F#
 description: Saiba quais recursos do Visual Studio são compatíveis com o F#.
 ms.date: 07/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18803d3033cc3aa1fdfb43620eb741ff1724ec74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990078"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
 

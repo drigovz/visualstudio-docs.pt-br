@@ -1,8 +1,6 @@
 ---
 title: Controle de zoom (exibição de utilização) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.zoom
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5b999136eb1d1d268e8fc0a71147a1996940ed
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 2c54a59cf95452e5582252ff29857851b0f43a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986122"
 ---
 # <a name="zoom-control-utilization-view"></a>Controle de zoom (exibição de utilização)
 O controle de zoom ajuda você a ampliar o gráfico de utilização da CPU para focar áreas de interesse específico. Esse controle amplia o centro da exibição. Portanto, você deve centralizar a área de interesse antes de ampliá-la.  
