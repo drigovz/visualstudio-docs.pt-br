@@ -2,7 +2,6 @@
 title: Comando Adicionar Novo Item
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addnewitem
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8c094e30c9491783733e49901fb297c36c1e94f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952466"
 ---
 # <a name="add-new-item-command"></a>Comando Adicionar Novo Item
 Adiciona um novo item de solução, como um .htm, .css, .txt ou conjunto de quadros à solução atual e a abre.

@@ -1,8 +1,6 @@
 ---
 title: Tarefa LIB | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922014"
 ---
 # <a name="lib-task"></a>tarefa LIB
 Encapsula a ferramenta Gerenciador de Biblioteca de 32 bits da Microsoft, *lib.exe*. O Gerenciador de Biblioteca cria e gerencia uma biblioteca de arquivos-objetos de formato COFF. O Gerenciador de Biblioteca também pode criar arquivos de exportação e importar bibliotecas para referenciar definições exportadas. Para obter mais informações, confira [Referência de LIB](/cpp/build/reference/lib-reference) e [Executando LIB](/cpp/build/reference/running-lib).  

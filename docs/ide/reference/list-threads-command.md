@@ -2,7 +2,6 @@
 title: Comando Listar Threads
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listthreads
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa44556be7c20c52d44ec83da1ba9d4972b4542d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1a914ffcd242626b0f519ab541c4c381a4597da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846133"
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
 Exibe uma lista dos threads no programa atual.

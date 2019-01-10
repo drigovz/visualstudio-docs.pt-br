@@ -2,7 +2,6 @@
 title: Publicar no IIS importando configurações de publicação
 description: Criar e importar um perfil de publicação para implantar um aplicativo no IIS por meio do Visual Studio
 ms.date: 05/07/2018
-ms.technology: vs-ide-deployment
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 13a4210e24fe64db79be897bc159477e9b2f5a3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897374"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publicar um aplicativo no IIS importando configurações de publicação no Visual Studio
 
