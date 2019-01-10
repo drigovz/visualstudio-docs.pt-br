@@ -1,8 +1,6 @@
 ---
 title: Comandos de menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, menu commands
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d494fa3f5aa50cc761152e015df34e76341ed074
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 59afcb8db6fbfa8aa2e6891b954b486eb4ec197e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830671"
 ---
 # <a name="menu-commands"></a>Comandos de menu
 Os tópicos da Ajuda nesta seção listam os comandos disponíveis nos menus Spy + +.  
@@ -43,7 +41,7 @@ Os tópicos da Ajuda nesta seção listam os comandos disponíveis nos menus Spy
  Descreve cada comando disponível a partir de **janela** menu.  
   
  [Comandos do menu Ajuda](../debugger/help-menu-commands.md)  
- Descreve cada comando disponível a partir de **ajuda** menu.  
+ Descreve cada comando disponível a partir de **ajudar** menu.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Usando Spy++](../debugger/using-spy-increment.md)  
@@ -53,4 +51,4 @@ Os tópicos da Ajuda nesta seção listam os comandos disponíveis nos menus Spy
  Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui nesta seção e seções que descrevem cada caixa de diálogo do Spy + +.
+ Inclui esta seção e seções que descrevem cada caixa de diálogo do Spy + +.
