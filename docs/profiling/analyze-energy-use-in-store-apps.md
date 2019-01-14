@@ -1,8 +1,6 @@
 ---
 title: Analisar o uso de energia em aplicativos UWP | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 345d2c744aeffe84517377ed99f486ab02d5e00c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860852"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analisar o uso de energia em aplicativos UWP
 O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar o consumo de energia de aplicativos UWP em dispositivos tablet de baixa capacidade executados o tempo todo ou parte do tempo usando apenas a própria bateria. Em um dispositivo alimentado por bateria, um aplicativo que consome muita energia pode causar grande insatisfação do cliente fazendo com que ele acabe desinstalando o programa. A otimização do consumo de energia pode aumentar a adoção e o uso de seu aplicativo pelos clientes.  
@@ -29,9 +27,9 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
  O criador de perfil Consumo de Energia captura as atividades do monitor, da CPU e das conexões de rede de um dispositivo durante a uma sessão de criação de perfil. Em seguida, ela gera estimativas da energia consumida por essas atividades e a quantidade total de energia para a sessão de criação de perfil.  
   
 > [!NOTE]
->  O criador de perfil de energia calcula uso de potência e energia por meio de um modelo de software de hardware padrão de dispositivo de referência que representa os tablets de baixa potência nos quais seu aplicativo possa estar sendo executado. Para fornecer as melhores estimativas, recomendamos coletar os dados do perfil em um tablet de baixa potência.  
+> O criador de perfil de energia calcula uso de potência e energia por meio de um modelo de software de hardware padrão de dispositivo de referência que representa os tablets de baixa potência nos quais seu aplicativo possa estar sendo executado. Para fornecer as melhores estimativas, recomendamos coletar os dados do perfil em um tablet de baixa potência.  
 >   
->  Embora o modelo forneça boas estimativas para diversos dispositivos de baixa potência, os valores reais do dispositivo analisado provavelmente serão diferentes. Use os valores para localizar as atividades do monitor, da CPU e de rede que são dispendiosas em relação a outros usos de recursos e que portanto podem ser bons candidatos para otimização.  
+> Embora o modelo forneça boas estimativas para diversos dispositivos de baixa potência, os valores reais do dispositivo analisado provavelmente serão diferentes. Use os valores para localizar as atividades do monitor, da CPU e de rede que são dispendiosas em relação a outros usos de recursos e que portanto podem ser bons candidatos para otimização.  
   
  O criador de perfil Consumo de Energia usa estas definições de *potência* e *energia*:  
   
@@ -54,13 +52,13 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
   
  **Adicionar marcas a código C#, Visual Basic, C++**  
   
- Para adicionar uma marca do usuário ao código C#, Visual Basic, C++, crie primeiro um objeto [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel). Em seguida, insira chamadas para os métodos [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) nos pontos do código que você deseja marcar. Use [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) nas chamadas.  
+ Para adicionar uma marca de usuário para código C#, Visual Basic, C++, primeiro crie um objeto <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName>. Em seguida, insira chamadas para os métodos <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType> nos pontos do código que você deseja marcar. Use [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) nas chamadas.  
   
  Quando o método é executado, uma marca de usuário é adicionada aos dados de criação de perfil juntamente com uma mensagem.  
   
 > [!NOTE]
 > - Windows.Foundation.Diagnostics LoggingChannel implementa a interface [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (projetada como [System.IDisposable](/dotnet/api/system.idisposable) em C# e VB). Para evitar vazamento de recursos do sistema operacional, chame [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) em C# e VB) quando tiver terminado com um canal de registro em log.  
->   -   Cada canal de registro em log aberto deve ter um nome exclusivo. Tentar criar um novo canal de registro em log com o mesmo nome de um canal não descartado gera uma exceção.  
+>  - Cada canal de registro em log aberto deve ter um nome exclusivo. Tentar criar um novo canal de registro em log com o mesmo nome de um canal não descartado gera uma exceção.  
   
  Consulte [Exemplo de LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) do SDK do Windows para obter exemplos.  
   
@@ -143,7 +141,7 @@ if (performance && performance.mark) {
   
  ![Painel de Resumo de Consumo de Energia](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary")  
   
- Você tem menos controle sobre os custos de energia da tela. A maioria das telas exige mais energia para exibir cores claras do que cores mais escuras, portanto, usar um plano de fundo escuro é uma maneira de reduzir custos.  
+ Você tem menos controle sobre os custos de energia da tela. A maioria das telas exige mais energia para exibir cores claras do que cores mais escuras, portanto, usar uma tela de fundo escuro é uma maneira de reduzir custos.  
   
 ## <a name="other-resources"></a>Outros recursos  
   
@@ -151,8 +149,9 @@ if (performance && performance.mark) {
   
      O simulador do Visual Studio para aplicativos UWP permite que você simule propriedades de conexão de dados das APIs de informações de rede. Consulte [Executar aplicativos UWP no simulador](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   As ferramentas **Temporização de Função JavaScript** e **Uso da CPU** podem ajudar a reduzir a carga da CPU quando ela for causada por funções ineficientes. Consulte [Analisar o uso de CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+-   As ferramentas **Temporização de Função JavaScript** e **Uso da CPU** podem ajudar a reduzir a carga da CPU quando ela for causada por funções ineficientes. Consulte [Analisar o uso de CPU](/visualstudio/profiling/beginners-guide-to-performance-profiling).
 
 ## <a name="see-also"></a>Consulte também
- [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
+
+- [Criação de perfis no Visual Studio](../profiling/index.md)  
+- [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

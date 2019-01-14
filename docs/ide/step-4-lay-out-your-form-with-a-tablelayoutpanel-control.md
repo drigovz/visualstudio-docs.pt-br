@@ -1,9 +1,7 @@
 ---
 title: 'Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164b0974d751dcfd164efab765432c1f9c23458c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821328"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
 Nesta etapa, você adiciona um controle <xref:System.Windows.Forms.TableLayoutPanel> ao formulário. O TableLayoutPanel ajuda a alinhar corretamente controles no formulário que você irá adicionar posteriormente.
 
- ![link para vídeo](../data-tools/media/playvideo.gif)Para ver uma versão em vídeo deste tópico, confira [Tutorial 1: Criar um visualizador de imagens no Visual Basic – Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Tutorial 1: Criar um visualizador de imagens em C# – Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif) Para obter uma versão em vídeo deste tópico, confira [Tutorial 1: Criar um visualizador de imagens no Visual Basic – Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Tutorial 1: Criar um visualizador de imagens em C# – Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Para apresentar seu formulário com um controle TableLayoutPanel
 
@@ -62,7 +60,7 @@ janela**Propriedades** com **Preenchimento** selecionado
 7.  Após você definir a propriedade **Encaixar** de TableLayoutPanel como **Preenchimento**, o painel preenche o formulário inteiro. Se você redimensionar o formulário novamente, o TableLayoutPanel permanecerá anexado e se redimensionará para caber.
 
     > [!NOTE]
-    >  Um TableLayoutPanel funciona como uma tabela no Microsoft Office Word: tem linhas e colunas, e uma célula individual pode abranger várias linhas e colunas. Cada célula pode conter um controle (como um botão, uma caixa de seleção ou um rótulo). O TableLayoutPanel terá um controle <xref:System.Windows.Forms.PictureBox> que abrange a primeira linha inteira, um controle <xref:System.Windows.Forms.CheckBox> na célula do canto inferior esquerdo e quatro controles <xref:System.Windows.Forms.Button> na célula inferior direita.
+    >  Um TableLayoutPanel funciona como uma tabela no Microsoft Office Word: Ele tem linhas e colunas e uma célula individual pode abranger várias linhas e colunas. Cada célula pode conter um controle (como um botão, uma caixa de seleção ou um rótulo). O TableLayoutPanel terá um controle <xref:System.Windows.Forms.PictureBox> que abrange a primeira linha inteira, um controle <xref:System.Windows.Forms.CheckBox> na célula do canto inferior esquerdo e quatro controles <xref:System.Windows.Forms.Button> na célula inferior direita.
 
 8.  Atualmente, o TableLayoutPanel tem duas linhas de igual tamanho e duas colunas de igual tamanho. Você precisa redimensionar para que a primeira linha e a coluna da direita sejam bem maiores. No **Designer de Formulários do Windows**, selecione o TableLayoutPanel. No canto superior direito, há um pequeno botão de triângulo preto, que aparece da seguinte maneira.
 
@@ -90,6 +88,6 @@ Estilos de linha e coluna de **TableLayoutPanel**
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir à próxima etapa do tutorial, veja [Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
 
--   Para retornar à etapa anterior do tutorial, veja [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).
+-   Para retornar à etapa anterior do tutorial, confira [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).

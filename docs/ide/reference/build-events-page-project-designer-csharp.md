@@ -2,7 +2,6 @@
 title: Página Eventos de Build, Designer de Projeto (C#)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEvents
@@ -17,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe83d3a387d2066965fe83145ddbda4e9648d36b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1745fefc5b1d2065f209e9396794cac5a5cc782d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943909"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
-Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, consulte [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, confira [Como: Especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Como: Especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>Lista UIElement
  **Configuração** Esse controle não é editável nesta página. Para obter uma descrição desse controle, consulte [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md).
@@ -54,7 +53,7 @@ Use a página **Eventos de Build** do **Designer de Projeto** para especificar a
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Como: Especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Como: Especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [Referência de Propriedades do Projeto](../../ide/reference/project-properties-reference.md)
 - [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)

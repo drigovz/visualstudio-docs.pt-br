@@ -1,8 +1,6 @@
 ---
-title: Como coletar dados de amostragem no nível de linha | Microsoft Docs
-ms.custom: ''
+title: 'Como: Coletar dados de amostragem no nível de linha | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7dc61ae776d75331eaaf2974f0eda139b601089
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952028"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Como coletar dados de amostragem no nível de linha
+# <a name="how-to-collect-line-level-sampling-data"></a>Como: Coletar dados de amostragem no nível de linha
 A amostragem de nível de linha é a capacidade do criador de perfil para determinar o local no código de uma função de processamento intensivo em que o processador tem que gastar a maior parte de seu tempo, como uma função que tem amostras altamente exclusivas.  
   
 ## <a name="overview"></a>Visão geral  

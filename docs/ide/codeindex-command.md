@@ -2,7 +2,6 @@
 title: Comando CodeIndex
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03a7f56f7b295cbfaf8eda437d6071e83b79ca44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898249"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -49,13 +48,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Opção**|**Descrição**|
 |----------------| - |
 |**/indexingStatus**|Mostra o status e a configuração do serviço de indexação de código.|
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: iniciar a indexação de todos os conjuntos de alterações.<br />-   **off**: interromper a indexação de todos os conjuntos de alterações.<br />-   **keepupOnly**: interromper a indexação de conjuntos de alterações criados anteriormente e iniciar apenas a indexação de novos conjuntos de alterações.|
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> É possível usar o caractere curinga (*) no início, no fim ou em ambas as extremidades do caminho do servidor.|Especifica uma lista de arquivos de código e seus caminhos que você não deseja indexar.<br /><br /> -   **add**: adicionar o arquivo que você não deseja indexar à lista de arquivos ignorados.<br />-   **remove**: remover o arquivo que você deseja que seja indexado na lista de arquivos ignorados.<br />-   **removeAll**: limpar a lista de arquivos ignorados e iniciar a indexação de todos os arquivos.<br />-   **view**: ver todos os arquivos que não estão sendo indexados.|
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Iniciar indexação de todos os conjuntos de alterações.<br />-   **off**: Interromper indexação de todos os conjuntos de alterações.<br />-   **keepupOnly**: Interromper a indexação de conjuntos de alterações criados anteriormente e iniciar indexação apenas para novos conjuntos de alterações.|
+|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> É possível usar o caractere curinga (*) no início, no fim ou em ambas as extremidades do caminho do servidor.|Especifica uma lista de arquivos de código e seus caminhos que você não deseja indexar.<br /><br /> -   **add**: Adicione o arquivo que você não deseja indexar à lista de arquivos ignorados.<br />-   **remove**: Remova o arquivo que deseja indexar da lista de arquivos ignorados.<br />-   **removeAll**: Limpe a lista de arquivos ignorados e comece a indexar todos os arquivos.<br />-   **view**: Veja todos os arquivos que não estão sendo indexados.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Mostra o número especificado de arquivos que excede o tamanho especificado em KB. É possível usar a opção **/ignoreList** para excluir esses arquivos da indexação.|
 |**/reindexAll**|Limpe os dados indexados anteriormente e reinicie a indexação.|
 |**/destroyCodeIndex [/noPrompt]**|Exclua o índice de código e remota todos os dados indexados. Não requererá confirmação se você usar a opção **/noPrompt**.|
-|**/temporaryDataSizeLimit**:[ exibir &#124; <`SizeInGBs`> &#124; desabilitar ]|Controle quantos dados temporários que o CodeLens cria ao processar conjuntos de alterações. O limite padrão é 2 GB.<br /><br /> -   **exibir**: mostrar o limite do tamanho atual.<br />-   `SizeInGBs`: alterar o limite do tamanho.<br />-   **desabilitar**: remover o limite do tamanho.<br /><br /> Esse limite é verificado antes de CodeLens processa um novo conjunto de alterações. Se os dados temporários excederem esse limite, o CodeLens pausará o processamento de conjuntos de alterações passados, não novos. CodeLens reiniciará o processamento depois que os dados são limpos e ficar abaixo desse limite. Limpeza executa automaticamente uma vez por dia. Isso significa que os dados temporários podem exceder esse limite até que a limpeza começa a ser executado.|
-|**/indexHistoryPeriod**:[ exibir &#124; tudo &#124; <`NumberOfMonths`> ]|Controle por quanto tempo indexar o histórico de alterações. Isso afeta a quantidade de histórico que o CodeLens mostra a você. O limite padrão é 12 meses. Isso significa que o CodeLens mostra seu histórico de alterações apenas dos últimos 12 meses.<br /><br /> -   **exibir**: mostrar o número atual de meses.<br />-   **tudo**: indexar todo o histórico de alterações.<br />-   `NumberOfMonths`: Altere o número de meses usado para indexar o histórico de alterações.|
+|**/temporaryDataSizeLimit**:[ exibir &#124; <`SizeInGBs`> &#124; desabilitar ]|Controle quantos dados temporários que o CodeLens cria ao processar conjuntos de alterações. O limite padrão é 2 GB.<br /><br /> -   **view**: Mostrar o limite do tamanho atual.<br />-   `SizeInGBs`: Alterar o limite do tamanho.<br />-   **disable**: Remover o limite do tamanho.<br /><br /> Esse limite é verificado antes de CodeLens processa um novo conjunto de alterações. Se os dados temporários excederem esse limite, o CodeLens pausará o processamento de conjuntos de alterações passados, não novos. CodeLens reiniciará o processamento depois que os dados são limpos e ficar abaixo desse limite. Limpeza executa automaticamente uma vez por dia. Isso significa que os dados temporários podem exceder esse limite até que a limpeza começa a ser executado.|
+|**/indexHistoryPeriod**:[ exibir &#124; tudo &#124; <`NumberOfMonths`> ]|Controle por quanto tempo indexar o histórico de alterações. Isso afeta a quantidade de histórico que o CodeLens mostra a você. O limite padrão é 12 meses. Isso significa que o CodeLens mostra seu histórico de alterações apenas dos últimos 12 meses.<br /><br /> -   **view**: Mostrar o número atual de meses.<br />-   **all**: Indexar todo o histórico de alterações.<br />-   `NumberOfMonths`: Alterar o número de meses usado para indexar o histórico de alterações.|
 |**/collectionName:** `CollectionName`|Especifica o nome da coleção de projetos na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionId**.|
 |**/collectionId:** `CollectionId`|Especifica o número de identificação da coleção de projetos na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionName**.|
 

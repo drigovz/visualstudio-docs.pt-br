@@ -1,19 +1,18 @@
 ---
 title: Configurar um projeto do C++ para o IntelliSense
 ms.date: 10/08/2018
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: mblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3772c2c910188aacb675f267d20f5e0f16565001
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864862"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar um projeto do C++ para o IntelliSense
 
@@ -43,13 +42,13 @@ Se você executar suas compilações fora do ambiente de desenvolvimento integra
 
  Para ver os valores atuais para a compilação de macros, como **VC_IncludePath**, selecione a linha de Diretórios de Inclusão e clique na lista suspensa à direita. Depois escolha **\<Editar>** e clique no botão **Macros**.
 
-### <a name="makefile-projects"></a>Projetos Makefile
+### <a name="makefile-projects"></a>projetos Makefile
 
 Para projetos Makefile baseados no modelo de projeto NMake, escolha **NMake** no painel esquerdo e **caminho de pesquisas de inclusão** na categoria **IntelliSense**:
 
 ![Caminhos de inclusão no projeto Makefile](media/vcpp-intellisense-makefile-include-paths.png)
 
-Para saber mais, confira [Como habilitar o IntelliSense para projetos Makefile](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
+Para obter mais informações, confira [Como: Habilitar o IntelliSense para projetos makefile](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
 
 ### <a name="open-folder-projects"></a>Projetos de pasta aberta
 

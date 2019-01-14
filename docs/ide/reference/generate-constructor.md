@@ -2,19 +2,18 @@
 title: Ação rápida de geração de construtor
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895292"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Gerar um construtor no Visual Studio
 
@@ -24,13 +23,13 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite gerar imediatamente o código para um novo construtor em uma classe.
+**O quê:** Permite gerar imediatamente o código para um novo construtor em uma classe.
 
-**Quando:** você introduz um novo construtor e deseja declará-lo corretamente automaticamente, ou modifica um construtor existente.
+**Quando:** Você introduz um novo construtor e deseja declará-lo corretamente automaticamente ou modifica um construtor existente.
 
-**Por quê:** você poderia declarar o construtor antes de usá-lo; no entanto, esse recurso o gerará automaticamente com os parâmetros apropriados. Além disso, modificar um construtor existente exige a atualização de todos os callsites, a menos que você use este recurso para atualizá-los automaticamente.
+**Por que:** Você poderia declarar o construtor antes de usá-lo; no entanto, esse recurso o gerará automaticamente com os parâmetros apropriados. Além disso, modificar um construtor existente exige a atualização de todos os callsites, a menos que você use este recurso para atualizá-los automaticamente.
 
-**Como:** há várias maneiras de gerar um construtor:
+**Como:** Há várias maneiras de gerar um construtor:
 
    - [Gerar construtor e selecionar membros](#pick)
    - [Gerar construtor desde campos selecionados](#selection)

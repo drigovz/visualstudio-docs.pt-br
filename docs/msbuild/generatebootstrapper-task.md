@@ -1,8 +1,6 @@
 ---
 title: Tarefa GenerateBootstrapper | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ad85f77d014d534d625b8d08e36b7eb8c01f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e8980df4d98e4d7c76df43f32d7ca0a224e699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891836"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
 Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e seus pré-requisitos. Atua como um único instalador que integra os diferentes instaladores de todos os componentes que compõem um aplicativo.  
@@ -94,11 +92,11 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
   
    Especifica um local no qual o bootstrapper deverá procurar os pré-requisitos de instalação a serem instalados. Esse parâmetro pode ter os seguintes valores:  
   
-  - `HomeSite`: indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
+  - `HomeSite`: Indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
   
-  - `Relative`: indica que o pré-requisito está no mesmo local do aplicativo.  
+  - `Relative`: Indica que o pré-requisito está na mesma localização do aplicativo.  
   
-  - `Absolute`: indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
+  - `Absolute`: Indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
   
     Se `ComponentsLocation` não for especificado, `HomeSite` será usado por padrão.  
   

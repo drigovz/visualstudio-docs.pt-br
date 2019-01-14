@@ -2,7 +2,6 @@
 title: Caixa de diálogo Navegador da Web, Ambiente, Opções
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -24,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9bdfc727e3214292aade933abde6d6671c4b02fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955153"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Caixa de diálogo Navegador da Web, Ambiente, Opções
 
@@ -55,7 +54,7 @@ Define o editor usado para abrir uma página da Web ao escolher **Exibir Fonte**
 
 -   **Editor de origem** Selecione para exibir a fonte no [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
+-   **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta seleção para editar a página da Web em um dos dois modos de exibição: O modo de exibição de Design ou o modo de exibição padrão de Origem baseada em texto.
 
 -   **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.
 

@@ -1,8 +1,6 @@
 ---
 title: Namespace diagnostic | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: c46f67281fe62de36472d9007f21841e843c20fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839437"
 ---
 # <a name="diagnostic-namespace"></a>Namespace de diagnóstico
 O namespace `diagnostics` fornece funcionalidade para emitir marcadores de Visualização Simultânea.  
@@ -48,7 +46,7 @@ namespace diagnostic;
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** *cvmarkersobj.h*  
   
- **Namespace:** Simultaneidade  
+ **Namespace:** Concorrência  
   
 ## <a name="see-also"></a>Consulte também  
  [Namespace de simultaneidade (Visualização Simultânea)](../profiling/concurrency-namespace-concurrency-visualizer.md)

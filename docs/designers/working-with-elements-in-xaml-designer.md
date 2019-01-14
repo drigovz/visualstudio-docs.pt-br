@@ -2,7 +2,6 @@
 title: Trabalhando com elementos no Designer XAML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3a964d39cf2d4473bc8736c5fdeb0ef83809fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922593"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo no XAML, no código ou usando o XAML Designer. Este tópico descreve como trabalhar com elementos no Designer XAML no Visual Studio ou Blend for Visual Studio.
@@ -65,9 +64,9 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
 1.  Selecione os elementos que deseja alinhar. Selecione mais de um elemento mantendo a tecla **Ctrl** pressionada enquanto seleciona os elementos.
 
-2.  Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Esquerda**, **Centralizar**, **Direita** ou **Alongar**.
+2.  Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Left**, **Center**, **Right** ou **Stretch**.
 
-3.  Selecione uma das seguintes propriedades em **VerticalAlignment** na seção **Layout** da janela Propriedades: **Superior**, **Centralizar**, **Inferior** ou **Alongar**.
+3.  Selecione uma das seguintes propriedades em **VerticalAlignment** na seção **Layout** da janela Propriedades: **Top**, **Center**, **Bottom** ou **Stretch**.
 
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Para alinhar dois ou mais elementos usando guias de alinhamento
 

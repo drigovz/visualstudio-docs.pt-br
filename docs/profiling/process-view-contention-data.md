@@ -1,8 +1,6 @@
 ---
 title: Exibição de Processo– Dados de Contenção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943883"
 ---
 # <a name="process-view---contention-data"></a>Exibição Processo – dados de contenção
 A exibição Processo exibe dados de contenção para os processos e threads que foram executados durante o processo de criação de perfil.  
@@ -41,5 +39,5 @@ A exibição Processo exibe dados de contenção para os processos e threads que
 |**ID exclusiva**|Um identificador gerado pelo criador de perfil que é exclusivo ao processo ou thread.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição de Processo](../profiling/process-view.md)

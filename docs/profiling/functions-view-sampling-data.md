@@ -1,8 +1,6 @@
 ---
 title: Exibição de Funções – Dados de Amostragem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Functions View
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9084aad27d14825f4b3d0a648f0880d4db329c78
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: d1f45c2437a1bf1f5d0c81d91bced3f26a6faaad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942574"
 ---
 # <a name="functions-view---sampling-data"></a>Exibição Funções – dados de amostragem
 O modo de exibição de relatório de Funções do método de perfil de amostragem lista as funções que foram amostradas durante a criação de perfil.  
@@ -42,7 +40,7 @@ O modo de exibição de relatório de Funções do método de perfil de amostrag
 |**% de Amostras Exclusivas**|O percentual de todas as amostras na execução de criação de perfil que eram amostras exclusivas dessa função.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição Funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Exibição Funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Exibição Funções](../profiling/functions-view-instrumentation-data.md)

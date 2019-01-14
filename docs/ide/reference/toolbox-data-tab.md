@@ -2,7 +2,6 @@
 title: Caixa de Ferramentas, Guia Dados
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: d9e23cd79510d789c8c8f8b426fb3196f1845745
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952917"
 ---
 # <a name="toolbox-data-tab"></a>Caixa de Ferramentas, Guia Dados
 
@@ -34,7 +33,7 @@ Para acessar diretamente a página de referência do .NET Framework para um comp
 
 |Nome|Descrição|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|Adiciona uma instância de um conjunto de dados tipado ou não tipado ao formulário ou ao componente. Quando você arrasta esse objeto para um designer, ele exibe uma caixa de diálogo que permite selecionar uma classe de conjunto de dados tipado existente ou especificar se você deseja criar um conjunto de dados novo, em branco e não tipado. **Observação:** não use o objeto <xref:System.Data.DataSet> na **Caixa de Ferramentas** para criar um novo esquema e uma nova classe de conjunto de dados tipado. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
+|<xref:System.Data.DataSet>|Adiciona uma instância de um conjunto de dados tipado ou não tipado ao formulário ou ao componente. Quando você arrasta esse objeto para um designer, ele exibe uma caixa de diálogo que permite selecionar uma classe de conjunto de dados tipado existente ou especificar se você deseja criar um conjunto de dados novo, em branco e não tipado. **Observação:**  Não use o objeto <xref:System.Data.DataSet> na **Caixa de Ferramentas** para criar um novo esquema e uma nova classe de conjunto de dados tipado. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Fornece uma maneira avançada e flexível para exibir dados em um formato de tabela.|
 |<xref:System.Windows.Forms.BindingSource>|Simplifica o processo de associar controles a uma fonte de dados subjacente.|
 |<xref:System.Windows.Forms.BindingNavigator>|Representa interface do usuário de navegação e a manipulação para controles em um formulário que está associado aos dados.|

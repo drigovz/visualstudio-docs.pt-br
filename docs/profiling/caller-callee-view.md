@@ -1,8 +1,6 @@
 ---
 title: Exibição de chamador-computador chamado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 973c65927e3732cff44ab8eecb684f3c75af8614
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: f3e349437ddf785ae8ec57b4625cb97f4427b57f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830031"
 ---
-# <a name="callercallee-view"></a>exibição do Chamador/Receptor
+# <a name="callercallee-view"></a>exibição Chamador/Receptor
 A exibição de Chamador/Computador Chamado exibe informações de perfil para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades:  
   
  **Função atual** é exibida na grade intermediária e mostra informações de criação de perfil para a função selecionada. Os valores incluem todas as chamadas para a função que foram coletadas na execução de criação de perfil.  
@@ -37,7 +35,7 @@ A exibição de Chamador/Computador Chamado exibe informações de perfil para u
   
  Você pode selecionar uma função diferente para ser a Função Atual na parte do meio da exibição de Relatório clicando duas vezes em qualquer uma das funções listadas nas outras duas partes da exibição. A exibição de Relatório é atualizada automaticamente para refletir as alterações.  
   
- Você pode classificar os dados clicando em nomes de coluna. Colunas adicionais podem ser incluídas na exibição de Chamador/Computador Chamado. Para saber mais, confira [Como personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md).  
+ Você pode classificar os dados clicando em nomes de coluna. Colunas adicionais podem ser incluídas na exibição de Chamador/Computador Chamado. Para obter mais informações, confira [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição do chamador/chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)   

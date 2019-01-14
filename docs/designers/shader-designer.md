@@ -2,7 +2,6 @@
 title: Designer de Sombreador
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968534"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 
@@ -98,7 +97,7 @@ Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Somb
 |**Visualizar com plano**|Quando habilitado, um modelo de um plano é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|
 |**Caixa de Ferramentas**|De modo alternado, mostra ou oculta a **Caixa de Ferramentas**.|
 |**Propriedades**|De modo alternado, mostra ou oculta a janela **Propriedades**.|
-|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, confira [Como exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com D3D11**: usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com D3D11WARP**: usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo. Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|
+|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: Permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: Exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, confira [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: Permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com o D3D11**: Usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com o D3D11WARP**: Usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: Permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: Quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo. Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|
 
 > [!TIP]
 > Você pode escolher o botão **Avançado** para executar novamente o último comando.
@@ -147,12 +146,12 @@ A tabela a seguir mostra os parâmetros de sombreador que você pode modificar:
 
 |Parâmetro|Propriedades|
 |---------------|----------------|
-|**Textura 1** - **Textura 8**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Filename**: o caminho completo do arquivo de textura que está associado com o registro de textura.|
-|**Material Ambiente**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a cor difusa do pixel atual devido à luz indireta, ou seja, a luz ambiente.|
-|**Material Difuso**|**Access**: **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual difunde a iluminação direta.|
-|**Material Emissivo**|**Access**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a contribuição de cor do pixel atual é devido à iluminação própria.|
-|**Material Especular**|**Access**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual reflete a iluminação direta.|
-|**Material Energia Especular**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: o expoente que define a intensidade dos realces especulares no pixel atual.|
+|**Textura 1** - **Textura 8**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Filename**: O caminho completo do arquivo de textura que está associado com o registro de textura.|
+|**Material Ambiente**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: A cor difusa do pixel atual devido à luz indireta, ou seja, a luz ambiente.|
+|**Material Difuso**|**Acesso**: **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**:  Uma cor que descreve como o pixel atual difunde a iluminação direta.|
+|**Material Emissivo**|**Acesso**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: A contribuição de cor do pixel atual é devido à iluminação própria.|
+|**Material Especular**|**Acesso**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: Uma cor que descreve como o pixel atual reflete a iluminação direta.|
+|**Material Energia Especular**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: O expoente que define a intensidade dos realces especulares no pixel atual.|
 
 #### <a name="time-based-effects"></a>Efeitos de tempo
 
@@ -172,7 +171,7 @@ Antes de usar um sombreador em seu aplicativo, você precisa exportá-lo em um f
 
 Você pode exportar sombreadores como código-fonte HLSL ou código de bytes do sombreador compilado. O código-fonte HLSL é exportado para um arquivo de texto que tem uma extensão de nome de arquivo *.hlsl*. O código de bytes do sombreador pode ser exportado para um arquivo binário bruto que tenha uma extensão de nome de arquivo *.cso* ou para um arquivo de cabeçalho (*.h*) C++ que codifique o código de bytes do sombreador em uma matriz.
 
-Para obter mais informações sobre como exportar sombreadores, confira [Como exportar um sombreador](../designers/how-to-export-a-shader.md).
+Para obter mais informações sobre como exportar sombreadores, confira [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 

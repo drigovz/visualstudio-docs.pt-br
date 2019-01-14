@@ -1,8 +1,6 @@
 ---
 title: Exibição de chamador/computador chamado – Dados de instrumentação | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a24d19fabc3cb82dbb4004ec71b6fa00bc470c
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 6fa2aa1820fabef8a14355190984e83f3ee52054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947095"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Exibição do Chamador/Receptor – dados de instrumentação
 A exibição de Chamador/Computador Chamado exibe informações de criação de perfil sobre uma função selecionada e suas funções pai e filho na árvore de chamadas. A exibição de Chamador/Computador Chamado contém três grades.  
@@ -92,7 +90,7 @@ A exibição de Chamador/Computador Chamado exibe informações de criação de 
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função nesse contexto.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de visualização de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição do chamador/chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)   
  [Exibição do Chamador/Receptor – dados de amostragem da memória do .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Exibição do Chamador/Receptor – dados de instrumentação da memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

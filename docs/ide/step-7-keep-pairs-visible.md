@@ -1,9 +1,7 @@
 ---
 title: 'Etapa 7: Manter os pares visíveis'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e27a5378aacec6af4ca07f13242f24bd665a762e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d541c28148c6e1fca9b1b1b7411b2b4d99715d8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880991"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Etapa 7: Manter os pares visíveis
 O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que não correspondam. Porém, considere o que deve acontecer quando o jogador escolher um par correspondente. Em vez de fazer os ícones desaparecerem ativando o temporizador (usando o método <xref:System.Windows.Forms.Timer.Start>), o jogo deve redefinir a si próprio para que ele não acompanhe mais nenhum rótulo usando as variáveis de referência `firstClicked` e `secondClicked`, sem redefinir as cores dos dois rótulos que foram escolhidos.
@@ -61,6 +59,6 @@ O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que nã
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, veja [Etapa 8: Adicionar um método para verificar se o jogador ganhou](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 8: Adicionar um método para verificar se o jogador ganhou](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
 
--   Para retornar à etapa anterior do tutorial, veja [Etapa 6: Adicionar um temporizador](../ide/step-6-add-a-timer.md).
+-   Para retornar à etapa anterior do tutorial, confira [Etapa 6: Adicionar um temporizador](../ide/step-6-add-a-timer.md).

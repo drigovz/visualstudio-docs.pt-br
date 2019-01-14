@@ -1,8 +1,6 @@
 ---
 title: Propriedades da sessão de desempenho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,properties
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8a6cf897d0181717439f7ae3ac6afccb469b06f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961907"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
 
@@ -36,17 +34,17 @@ Essas configurações permitem que você selecione o método de criação de per
 
 Para obter mais informações, consulte:
 
-[Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
+[Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
 
 [Coletar a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Como definir opções do nome do arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)
+ [Como: Definir opções de nome de arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Inicializar
 
 Essas configurações permitem selecionar em uma lista de binários e especificar a ordem de inicialização dos binários.
 
-Para obter mais informações, confira [Como especificar o binário a ser iniciado](../profiling/how-to-specify-the-binary-to-start.md)
+Para obter mais informações, confira [Como: Especificar o binário a ser iniciado](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="sampling"></a>Amostragem
 
@@ -58,12 +56,12 @@ Essas configurações permitem que você selecione o intervalo de amostragem e d
 - Contadores de Desempenho – para problemas de baixo desempenho
 - Eventos de amostragem adicionais podem ser especificados com base nos contadores de desempenho disponíveis
 
-Para obter mais informações, confira [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
+Para obter mais informações, confira [Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>Binário
 Essas configurações permitem que você especifique se deseja realocar o binário instrumentado para outro local. Por exemplo, se você estiver criando o perfil de *My.DLL* e optar por não realocar o binário instrumentado, será criada uma cópia de backup de *My.DLL* denominada *My.Orig.DLL*. Em seguida, *My.DLL* será modificado pela inserção de investigações para coletar dados. Se você decidir realocar o binário instrumentado, o binário original não será renomeado e o binário instrumentado é copiado para o local especificado para uso durante a instrumentação.
 
-Para obter mais informações, confira [Como especificar o binário a ser iniciado](../profiling/how-to-specify-the-binary-to-start.md)
+Para obter mais informações, confira [Como: Especificar o binário a ser iniciado](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interações de camada
 
@@ -75,15 +73,15 @@ Essas configurações permitem que coletar dados de desempenho de código JScrip
 
 Para obter mais informações, consulte:
 
-[Como criar perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[Como: Criar perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[Como especificar comandos pré e pós-instrumentação](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[Como: Especificar comandos pré e pós-instrumento](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>Contadores de CPU
 
 Essas configurações permitem que você colete dados sobre contadores de desempenho da CPU quando estiver usando o método de criação de perfil de instrumentação. Contadores de desempenho portáteis estão disponíveis independentemente do design ou fabricante da CPU. Eventos de plataforma são específicos para o design e fabricante da CPU. Para obter mais informações sobre contadores de desempenho on-chip, consulte a documentação específica do processador.
 
-Para obter mais informações, confira [Como coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)
+Para obter mais informações, confira [Como: Coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Eventos do Windows
 
@@ -91,7 +89,7 @@ Durante a criação de perfil, você pode coletar dados de provedores de rastrea
 
 Para obter mais informações, consulte:
 
-[Como coletar dados de ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[Como: Coletar dados do ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md).
 
@@ -99,7 +97,7 @@ Para obter mais informações, consulte:
 
 Essa opção permite que você colete dados de contadores do Monitor de Desempenho do Windows. Para coletar esses dados, marque a caixa de seleção rotulada **Coletar contadores de desempenho do Windows**. O intervalo de coleta pode ser definido na caixa **Intervalo de Coleta**. **Categoria do Contador** e **Instância** também podem estar disponíveis. Alguns contadores do Monitor de Desempenho do Windows padrão estão disponíveis.
 
- Para obter mais informações, confira [Como coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Para obter mais informações, confira [Como: Coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md).
 
 ## <a name="advanced"></a>Avançado
 
@@ -107,9 +105,9 @@ Essas configurações permitem que você adicione opções ao processo de instru
 
 Para obter mais informações, consulte:
 
-[Como especificar o tempo de execução do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Como: Especificar o tempo de execução do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Como: Especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>Consulte também
 

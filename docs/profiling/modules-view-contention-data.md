@@ -1,8 +1,6 @@
 ---
 title: Modo de Exibição de Módulos – Dados de Contenção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: edd882b00c5bdaf62ae280cb0e4986662b05ad83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926393"
 ---
 # <a name="modules-view---contention-data"></a>Exibição Módulos – dados de contenção
 O modo de exibição de módulos de dados de contenção exibe dados de simultaneidade agrupados pelos módulos que foram utilizados nos dados de criação de perfil. Cada módulo é a raiz de uma árvore hierárquica. As funções do módulo no qual os eventos de contenção ocorreram são listadas sob o nó do módulo.  
@@ -45,7 +43,7 @@ O modo de exibição de módulos de dados de contenção exibe dados de simultan
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição Módulos](../profiling/modules-view.md)   
  [Exibição Módulos – instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Exibição Módulos – amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)   

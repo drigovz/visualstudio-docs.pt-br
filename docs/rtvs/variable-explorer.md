@@ -3,19 +3,18 @@ title: Gerenciador de Variáveis para R
 description: O Gerenciador de Variáveis no Visual Studio mostra todas as variáveis em um determinado escopo na sessão atual de R.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988930"
 ---
 # <a name="variable-explorer"></a>Gerenciador de Variáveis
 
@@ -71,7 +70,7 @@ O **Gerenciador de Variáveis** altera o escopo de função automaticamente conf
 
 ## <a name="import-data-into-variable-explorer"></a>Importar dados para o Gerenciador de Variáveis
 
-Dois comandos na barra de ferramentas do **Gerenciador de Variáveis**, que também estão disponíveis no menu **Ferramentas do R** > **Dados**, importam conjuntos de dados CSV externos para a sessão do R: **Importar conjunto de dados para a sessão do R por meio de uma URL da Web** e **Importar conjunto de dados para a sessão do R por meio de um arquivo de texto**.
+Dois comandos na barra de ferramentas do **Gerenciador de Variáveis**, que também estão disponíveis no menu **Ferramentas do R** > **Dados**, importam conjuntos de dados CSV externos para a sessão do R:  **Importar conjunto de dados para a sessão do R por meio de uma URL da Web** e **Importar conjunto de dados para a sessão do R por meio de um arquivo de texto**.
 
 Depois de identificar o arquivo CSV a ser importado, o Visual Studio exibe uma caixa de diálogo **Importar Conjunto de Dados**, na qual há opções para controlar como esse arquivo de dados é analisado (ou seja, o que é o separador de campo e como lidar com aspas). Você também pode ver uma versão prévia do quadro de dados importado e do arquivo de dados original:
 

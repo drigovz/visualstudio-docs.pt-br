@@ -1,8 +1,7 @@
 ---
-title: Como exportar uma textura que tenha Alfa pré-multiplicado
+title: 'Como: Exportar uma textura que tenha o alfa pré-multiplicado'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39d7ae466f48bed8bd6fe4c53662c0c8b3c801e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a05235b2212e64baea3caf2d7dc3977c3e9d6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987999"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Como exportar uma textura que tem alfa pré-multiplicado
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Como: Exportar uma textura que tenha o alfa pré-multiplicado
 
 O Pipeline de conteúdo de imagem pode gerar texturas alfa pré-multiplicadas de uma imagem de origem. Eles podem ser mais simples de usar e mais robustos do que texturas que não contêm alfa pré-multiplicado.
 
@@ -40,7 +39,7 @@ Este documento demonstra essas atividades:
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Como criar uma textura que usa alfa pré-multiplicado
 
-1. Comece com uma textura básica. Carregue um arquivo de imagem existente ou crie um, conforme descrito em [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md).
+1. Comece com uma textura básica. Carregue um arquivo de imagem existente ou crie um, conforme descrito em [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md).
 
 2. Configure o arquivo de textura para que ele seja processado pelo Pipeline de conteúdo de imagem. No **Gerenciador de Soluções**, abra o menu de atalho do arquivo de textura e escolha **Propriedades**. Na página **Propriedades de Configuração** > **Geral**, defina a propriedade **Tipo de Item** como **Pipeline de Conteúdo de Imagem**. Verifique se a propriedade **Conteúdo** está definida como **Sim** e se **Excluir do Build** está definido como **Não** e, em seguida, escolha o botão **Aplicar**. A página de propriedades de configuração **Pipeline de Conteúdo de Imagem** é exibida.
 
