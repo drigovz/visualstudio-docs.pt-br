@@ -1,8 +1,6 @@
 ---
-title: 'DA0017: altas taxas de paginação de memória ativa em disco | Microsoft Docs'
-ms.custom: ''
+title: 'DA0017: Altas taxas de paginação de memória ativa em disco | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.17
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6128e5f98efe2a5ef29ffff407918be5d925c75b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d7dc552119390660dcc70e8fb670918e357a2d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864771"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: taxas elevadas de paginação de memória ativa em disco
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Altas taxas de paginação de memória ativa para o disco
 
 |||  
 |-|-|  
@@ -39,7 +37,7 @@ ms.locfileid: "49824329"
 ## <a name="rule-description"></a>Descrição da regra  
 
 > [!NOTE]
->  Essa regra informativa é acionada quando os níveis de paginação de memória ativa atingem uma quantidade significativa. Quando ocorre um nível extremamente alto de paginação, a regra de aviso [DA0014: taxas extremamente altas de paginação de memória ativa em disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) é acionada.  
+>  Essa regra informativa é acionada quando os níveis de paginação de memória ativa atingem uma quantidade significativa. Quando ocorre um nível extremamente alto de paginação, a regra de aviso [DA0014: Taxas de paginação de memória ativa para o disco extremamente altas](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) é disparada em vez disso.  
 
  A paginação excessiva em disco pode ser causada pela memória física insuficiente. Se as operações de paginação dominarem o uso do disco físico em que o arquivo de paginação reside, elas poderão deixar mais lentas outras operações de disco orientadas por aplicativo no mesmo disco.  
 

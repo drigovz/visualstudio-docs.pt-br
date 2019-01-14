@@ -3,7 +3,6 @@ title: Recursos para criar aplicativos acessíveis
 description: Saiba como criar aplicativos acessíveis para torná-los mais fáceis para serem usados por pessoas com deficiências.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959619"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para criar aplicativos acessíveis
 
@@ -37,7 +36,7 @@ Use os links a seguir para localizar informações sobre as tecnologias compatí
 
 ## <a name="windows-applications"></a>Aplicativos do Windows
 
-* **[Passo a passo: criando um aplicativo acessível baseado em Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Este artigo fornece instruções passo a passo para incluir os cinco requisitos de acessibilidade para o logotipo "Certified for Windows" em um aplicativo do Windows de exemplo.
+* **[Passo a passo: Criando um aplicativo acessível baseado em Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Este artigo fornece instruções passo a passo para incluir os cinco requisitos de acessibilidade para o logotipo "Certified for Windows" em um aplicativo do Windows de exemplo.
 
 * **Diretrizes para design da interface do usuário do teclado** Este artigo técnico descreve como criar um aplicativo do Windows para o qual os usuários possam navegar do teclado. Para obter mais informações, confira [Guidelines for keyboard user interface design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) (Diretrizes para o design da interface do usuário do teclado).
 
@@ -45,7 +44,7 @@ Use os links a seguir para localizar informações sobre as tecnologias compatí
 
 ## <a name="websites"></a>Sites
 
--   [Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
+-   [Passo a passo: Diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
 
 -   **Como criar páginas da Web acessíveis com DHTML** Esse artigo técnico lista os elementos HTML 4.0 acessíveis, bem como dicas de Web design acessíveis. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
 

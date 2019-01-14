@@ -2,7 +2,6 @@
 title: Editando Testes de IU Codificados
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0e8e21129392ff949290576dbbbd9a315256b592
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959687"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar testes de IU codificados usando o Editor de Teste de IU Codificado
 
@@ -127,7 +126,7 @@ Após a conclusão do método de divisão, salve as alterações no arquivo *UIM
 
 - É possível renomear o novo método. Selecione-o no painel **Ações de interface do usuário** e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.
 
-   -ou-
+   - ou -
 
    Abra o menu de atalho do novo método de teste e escolha **Renomear**.
 
@@ -197,4 +196,4 @@ Se for necessário garantir que um controle específico esteja disponível antes
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)
 - [Criar um teste de IU codificado controlado por dados](../test/creating-a-data-driven-coded-ui-test.md)
-- [Passo a passo: criar, editar e manter um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Passo a passo: Criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

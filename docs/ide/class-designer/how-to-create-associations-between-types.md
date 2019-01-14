@@ -1,8 +1,7 @@
 ---
-title: Como criar associações entre tipos (Designer de Classe)
+title: 'Como: Criar associações entre tipos (Designer de Classe)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
@@ -18,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 77f957e112835c138a84accbdc7070f1217fc963
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916595"
 ---
-# <a name="how-to-create-associations-between-types-in-class-designer"></a>Como criar associações entre tipos no Designer de Classe
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Como: Criar associações entre tipos no Designer de Classe
 
 As linhas de associação no **Designer de Classe** mostram como as classes em um diagrama são relacionadas. Uma linha de associação representa uma classe que é o tipo de uma propriedade ou de um campo de outra classe no seu projeto. As linhas de associação geralmente são usadas para ilustrar as relações mais importantes entre classes do projeto.
 
@@ -58,4 +57,4 @@ Ou siga estas etapas:
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como alternar entre notação de membro e notação de associação](how-to-change-between-member-notation-and-association-notation.md)
+- [Como: Alterar entre notação de membro e notação de associação](how-to-change-between-member-notation-and-association-notation.md)

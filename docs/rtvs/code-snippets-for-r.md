@@ -3,19 +3,18 @@ title: Snippets de código para R
 description: Os snippets de código para R no Visual Studio fornecem atalhos para inserir rapidamente os blocos de código de comprimento arbitrário, ajudando a evitar a necessidade de digitar novamente códigos semelhantes.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b9a06a747fb0169c22f251c1beb22dad3b86c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860891"
 ---
 # <a name="code-snippets"></a>Snippets de código
 
@@ -38,7 +37,7 @@ Para ver todos os trechos disponíveis, abra a caixa de diálogo **Ferramentas**
 
 ![Caixa de diálogo de snippets de código para R](media/code-snippet-dialog.png)
 
-Para criar trechos de código personalizados, siga as instruções em [Passo a passo: Criar um trecho de código](../ide/walkthrough-creating-a-code-snippet.md). Por fim, um snippet de código é apenas um arquivo XML. Por exemplo, o código a seguir é o snippet de código para a operação de pipe (atalho `>`):
+Para criar trechos de código personalizados, siga as instruções em [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md). Por fim, um snippet de código é apenas um arquivo XML. Por exemplo, o código a seguir é o snippet de código para a operação de pipe (atalho `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

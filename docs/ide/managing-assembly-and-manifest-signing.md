@@ -2,7 +2,6 @@
 title: Gerenciar assinatura de assembly e de manifesto
 ms.date: 02/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1c3795c2887e9d7516f3e9f781e42a2629e2a0b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927565"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gerenciar assinatura de assembly e de manifesto
 
@@ -70,7 +69,7 @@ Você também pode apontar para uma chave já criada. Para obter mais informaç�
 
 Se você só tiver acesso a uma chave pública, use a assinatura com atraso para adiar a atribuição da chave. Habilite a assinatura com atraso selecionando a caixa de seleção **Somente sinal de atraso**. Um projeto assinado com atraso não é executado e não pode ser depurado. No entanto, você pode ignorar a verificação durante o desenvolvimento usando a [ferramenta de nome forte Sn.exe](/dotnet/framework/tools/sn-exe-strong-name-tool) com a opção `-Vr`.
 
-Para obter informações sobre como assinar manifestos, confira [Como assinar manifestos de aplicativo e de implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
+Para obter informações sobre como assinar manifestos, veja [Como: Assinar manifestos de aplicativo e de implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Consulte também
 

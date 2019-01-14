@@ -1,9 +1,7 @@
 ---
 title: 'Etapa 7: Adicionar problemas de multiplicação e divisão'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0186ba637bdb1bc85a7ff60f23c9799972b6a931
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 359f4e5035c564a3f7f4b117994ab4d84d1f6eff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888995"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Etapa 7: Adicionar problemas de multiplicação e divisão
 Na sétima parte deste tutorial, você adicionará problemas de multiplicação e de divisão, mas primeiro pense em como fazer essa alteração. Considere a etapa inicial, que envolve armazenar valores.
@@ -54,6 +52,6 @@ Na sétima parte deste tutorial, você adicionará problemas de multiplicação 
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, veja [Etapa 8: Personalizar o teste](../ide/step-8-customize-the-quiz.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 8: Personalizar o teste](../ide/step-8-customize-the-quiz.md).
 
--   Para retornar à etapa anterior do tutorial, veja [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).
+-   Para retornar à etapa anterior do tutorial, confira [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).

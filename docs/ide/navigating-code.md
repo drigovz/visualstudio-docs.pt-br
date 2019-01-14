@@ -2,7 +2,6 @@
 title: Comandos de navegação de código
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877426"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -78,19 +77,19 @@ Quando você clica em um símbolo no código-fonte, todas as instâncias desse s
 
 Ir Para tem os seguintes comandos que estão disponíveis no menu **Editar** em **Ir Para**:
 
-- **Ir Para Linha** (**Ctrl**+**G**): mover para o número de linha especificado no documento ativo.
+- **Ir para a linha** (**Ctrl**+**G**): Mover para o número de linha especificado no documento ativo.
 
-- **Ir para Todos** (**Ctrl**+**T** ou **Ctrl**+**,**): mover para a linha, o tipo, o arquivo, o membro ou o símbolo especificado.
+- **Ir para todos** (**Ctrl**+**T** ou **Ctrl**+**,**): Mover para a linha, tipo, arquivo, membro ou símbolo especificado.
 
-- **Ir para Arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): mover para o arquivo especificado na solução.
+- **Ir para arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): Mover para o arquivo especificado na solução.
 
-- **Ir para Arquivo Recente** (**Ctrl**+**1**, **Ctrl**+**R**): mover para o arquivo visitado recentemente na solução especificado (novo no Visual Studio 2017 versão 15.8).
+- **Ir para arquivo recente** (**Ctrl**+**1**, **Ctrl**+**R**): Mover para o arquivo visitado recentemente na solução especificado (novo no Visual Studio 2017 versão 15.8).
 
-- **Ir para Tipo** (**Ctrl**+**1**, **Ctrl**+**T**): mover para o tipo especificado na solução.
+- **Ir para tipo** (**Ctrl**+**1**, **Ctrl**+**T**): Mover para o tipo especificado na solução.
 
-- **Ir para Membro** (**Ctrl**+**1**, **Ctrl**+**M**): mover para o membro especificado na solução.
+- **Ir para membro** (**Ctrl**+**1**, **Ctrl**+**M**): Mover para o membro especificado na solução.
 
-- **Ir para Símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): mover para o símbolo especificado na solução.
+- **Ir para símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): Mover para o símbolo especificado na solução.
 
 No Visual Studio 2017 versão 15.8 e posteriores, os seguintes comandos de navegação **Ir Para** também estão disponíveis:
 
@@ -111,7 +110,7 @@ Entrada | Função
 
 ## <a name="peek-definition"></a>Inspecionar Definição
 
-Espiar Definição exibe a definição do elemento selecionado em uma janela sem sair do local atual no editor de código. Para obter mais informações, confira [Como exibir e editar o código usando Espiar Definição](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e [Ir para Definição e Espiar Definição](../ide/go-to-and-peek-definition.md).
+Espiar Definição exibe a definição do elemento selecionado em uma janela sem sair do local atual no editor de código. Para obter mais informações, confira [Como: Exibir e editar o código usando Espiar Definição](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e [Ir para Definição e Espiar Definição](../ide/go-to-and-peek-definition.md).
 
 Entrada | Função
 ------------ | ---
@@ -150,7 +149,7 @@ Para desabilitar as linhas da guia da estrutura, acesse **Ferramentas** > **Opç
 
 ## <a name="enhanced-scroll-bar"></a>Barra de rolagem avançada
 
-Você pode usar a barra de rolagem avançada em uma janela de código para obter uma visão geral do seu código. No modo de mapa, você pode acessar visualizações do código ao mover o cursor para cima e para baixo na barra de rolagem. Para obter mais informações, confira [Como acompanhar o código personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Você pode usar a barra de rolagem avançada em uma janela de código para obter uma visão geral do seu código. No modo de mapa, você pode acessar visualizações do código ao mover o cursor para cima e para baixo na barra de rolagem. Para obter mais informações, confira [Como: Acompanhar o código personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>Informações do CodeLens
 

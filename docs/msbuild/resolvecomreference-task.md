@@ -1,8 +1,6 @@
 ---
 title: Tarefa ResolveComReference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 565b69de16768175e520e06333d714865bbcc0a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893335"
 ---
 # <a name="resolvecomreference-task"></a>Tarefa ResolveComReference
 Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos *.tlb* e resolve essas bibliotecas de tipo em locais no disco.  
@@ -62,14 +60,14 @@ Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos *.tlb* e
 |`VersionMajor`|Metadados obrigatórios do item.<br /><br /> A versão principal da biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa falhará.|  
 |`VersionMinor`|Metadados obrigatórios do item.<br /><br /> A versão secundária da biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa falhará.|  
 |`LocaleIdentifier`|Metadados opcionais do item.<br /><br /> O LCID (ID de localidade) da biblioteca de tipos. Isso é especificado como um valor de 32 bits que identifica o idioma humano preferido por um usuário, região ou aplicativo. Se esses metadados de item não forem especificados, a tarefa usará uma ID de localidade de “0”.|  
-|`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
+|`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: Use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
   
 ## <a name="typelibfiles-item-metadata"></a>Metadados do item TypeLibFiles  
  A tabela a seguir descreve os metadados de item disponíveis para itens passados para o parâmetro `TypeLibFiles`.  
   
 |Metadados|Descrição|  
 |--------------|-----------------|  
-|`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
+|`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: Use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
   
 > [!NOTE]
 >  Quanto mais informações você fornece para identificar uma biblioteca de tipos com exclusividade, maior a possibilidade de que a tarefa será resolvida para o arquivo correto no disco.  

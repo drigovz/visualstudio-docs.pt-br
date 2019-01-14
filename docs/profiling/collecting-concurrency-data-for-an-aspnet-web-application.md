@@ -1,8 +1,6 @@
 ---
 title: Coletar dados de simultaneidade para um aplicativo Web ASP.NET usando a linha de comando do criador de perfil | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: a5cdb1a0a77ece78f623a0fa21bc48672d1624cb
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 6a11614d7dbd7d72dfadcaebc4a0f789bf29c123
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913563"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Coletar dados de simultaneidade para um aplicativo Web do ASP.NET usando a linha de comando do criador de perfil
 O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite coletar dados de contenção de recursos.  
@@ -27,7 +25,7 @@ O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vspr
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|Anexar o criador de perfil a um aplicativo ASP.NET em execução|-   [How to: Attach the Profiler to an ASP.NET Application to Collect Concurrency Data (Como anexar o criador de perfil a um aplicativo ASP.NET para coletar dados de simultaneidade)](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|Anexar o criador de perfil a um aplicativo ASP.NET em execução|-   [Como: Anexar o criador de perfil a um aplicativo ASP.NET para coletar dados de simultaneidade](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Referência  
  [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)  

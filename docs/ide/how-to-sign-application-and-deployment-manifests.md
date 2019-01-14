@@ -1,8 +1,7 @@
 ---
-title: Como assinar manifestos de aplicativo e de implantação
+title: 'Como: Assinar manifestos de aplicativo e implantação'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852908"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Como assinar manifestos de aplicativo e de implantação
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Como: Assinar manifestos de aplicativo e implantação
 
 Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os manifestos do aplicativo e de implantação deverão ser assinados com um par de chaves pública/privada e assinados usando a tecnologia Authenticode. É possível assinar os manifestos usando um certificado do repositório de certificados do Windows ou um arquivo de chave.
 
@@ -34,7 +33,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 
  A assinatura dos manifestos do ClickOnce é opcional para aplicativos baseados em *.exe*. Para obter mais informações, consulte a seção “Gerar manifestos não assinados” deste documento.
 
- Para obter informações sobre como criar arquivos de chave, consulte [Como criar um par de chaves pública-privada](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+ Para obter informações sobre como criar arquivos de chave, veja [Como: Como criar um par de chaves pública/privada](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é compatível apenas com arquivos de chave de Troca de Informações Pessoais (PFX) que têm a extensão *.pfx*. No entanto, é possível selecionar outros tipos de certificados do repositório de certificados do Windows do usuário atual, clicando em **Selecionar do Repositório** na página **Assinatura** das propriedades do projeto.
@@ -94,7 +93,7 @@ A assinatura dos manifestos do ClickOnce é opcional para aplicativos baseados e
 
 2.  Na página **Assinatura**, limpe a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
-3.  Redefina a versão de publicação para que apenas uma versão do aplicativo esteja disponível. Por padrão, o Visual Studio incrementa automaticamente o número de revisão da versão de publicação sempre que um aplicativo é publicado. Para obter mais informações, consulte [Como definir a versão de publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3.  Redefina a versão de publicação para que apenas uma versão do aplicativo esteja disponível. Por padrão, o Visual Studio incrementa automaticamente o número de revisão da versão de publicação sempre que um aplicativo é publicado. Para obter mais informações, confira [Como: Definir a versão da publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4.  Publique o aplicativo.
 
@@ -112,6 +111,6 @@ A assinatura dos manifestos do ClickOnce é opcional para aplicativos baseados e
 ## <a name="see-also"></a>Consulte também
 
 - [Assemblies de nome forte](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Como criar um par de chaves pública/privada](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Como: Criar um par de chaves pública/privada](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Página de assinatura, Designer de Projeto](../ide/reference/signing-page-project-designer.md)
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)

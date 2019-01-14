@@ -1,8 +1,6 @@
 ---
 title: Criando perfil em clusters HPC (computação de alto desempenho) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856651"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
 
@@ -150,4 +148,3 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 | **Argumentos do script pré-perfil** | Especifica os argumentos que serão passados para o script pré-perfil. |
 | **Script pré-perfil** | Especifica o caminho e o nome de arquivo de um script a ser executado no computador de desenvolvimento local depois de iniciar a sessão de criação de perfil. |
 | **Argumentos do script pós-perfil** | Especifica os argumentos que serão passados para o script pós-perfil. |
-

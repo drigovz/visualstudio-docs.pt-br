@@ -1,8 +1,7 @@
 ---
-title: Como criar um sombreador Lambert básico
+title: 'Como: Criar um sombreador Lambert básico'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d71a59e0173be60779675f838fad20943eabc85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622209951ba3321a8278e0f65058459591af7d38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850343"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Como criar um sombreador Lambert básico
+# <a name="how-to-create-a-basic-lambert-shader"></a>Como: Criar um sombreador Lambert básico
 
 Este artigo demonstra como usar o Designer de Sombreador e o DGSL (Directed Graph Shader Language) para criar um sombreador de iluminação que implementa o modelo de iluminação de Lambert clássico.
 
@@ -50,12 +49,12 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
  ![Iluminação Lambert aplicada a um modelo.](../designers/media/digit-lambert-effect-result.png)
 
- Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, confira [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)
-- [Como criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)
+- [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)
+- [Como: Criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)
 - [Designer de Sombreador](../designers/shader-designer.md)
 - [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

@@ -1,8 +1,6 @@
 ---
-title: 'DA0038: alta taxa de contenções de bloqueio | Microsoft Docs'
-ms.custom: ''
+title: 'DA0038: Alta taxa de contenções de bloqueio | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.38
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54788c20552380d22df8bad783d5012ac7157899
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c670ab939f2535c7dfcdf2d2db8a53e06bcd58db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845909"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: taxa alta de contenções de bloqueio
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Alta taxa de contenções de bloqueio
 
 |||  
 |-|-|  
@@ -48,7 +46,7 @@ ms.locfileid: "49922049"
  Essa regra é acionada quando as medições feitas durante uma execução de criação de perfil indicam que há uma quantidade excessivamente alta de contenções de bloqueio. As contenções de bloqueio atrasam a execução de threads que estão aguardando o bloqueio. Até mesmo pequenas quantidades de contenção de bloqueio em testes de unidade ou em testes de carga em execução em um hardware de extremidade inferior devem ser investigadas.  
 
 > [!NOTE]
->  Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é excessivamente alta, a mensagem de aviso [DA0039: taxa muito alta de contenções de bloqueio](../profiling/da0039-very-high-rate-of-lock-contentions.md) é acionada em vez dessa mensagem de informações.  
+>  Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é excessivamente alta, a mensagem de aviso [DA0039: Taxa de contenções de bloqueio muito alta](../profiling/da0039-very-high-rate-of-lock-contentions.md) é acionada em lugar dessa mensagem de informações.  
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem para navegar para a exibição [Marcas](../profiling/marks-view.md) dos dados de criação de perfil.  Encontre a coluna **.NET CLR LocksAndThreads\Taxa de contenção/s**. Determine se há fases específicas da execução do programa em que a contenção de bloqueio é mais pesada do que em outras fases.  

@@ -1,8 +1,7 @@
 ---
-title: Como exibir números de linha no Editor
+title: 'Como: Exibir números de linha no Editor'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - line numbers, displaying
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7977fde404570808f0ee2d6514249a5e73286a
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7b76ac306607dae5fbeaa015bf3f41eb787bf0f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882533"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Como exibir números de linha no Editor
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Como: Exibir números de linha no Editor
 
 Você pode exibir ou ocultar a numeração de linhas em seu código.
 

@@ -1,8 +1,6 @@
 ---
 title: Coletar estatísticas para aplicativos Web ASP.NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, sampling method
@@ -13,16 +11,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9350d96911e818402f7e32ebcd83fe832f31f9d9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 95991806f10a6b4821c232afcf09c83493fabe60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930668"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Coletar estatísticas para aplicativos Web ASP.NET
 
-Esta seção descreve os procedimentos e as opções para coletar estatísticas de desempenho de um aplicativo Web ASP.NET usando a ferramenta de linha de comando **VSPerfASPNETCmd** e **VSPerfCmd** e o método de criação de perfil de amostragem.  
+Esta seção descreve os procedimentos e as opções para coletar estatísticas de desempenho de um aplicativo Web ASP .NET usando a ferramenta de linha de comando **VSPerfASPNETCmd** e **VSPerfCmd** e o método de criação de perfil de amostragem.  
   
 > [!NOTE]
 >  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -34,7 +32,7 @@ Esta seção descreve os procedimentos e as opções para coletar estatísticas 
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Attach the profiler to an ASP.NET application (Anexar o criado de perfil a um aplicativo ASP.NET)**|-   [How to: Attach the Profiler to an ASP.NET Web Application to Collect Application Statistics (Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo)](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Attach the profiler to an ASP.NET application (Anexar o criado de perfil a um aplicativo ASP.NET)**|-   [Como: Anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tarefas relacionadas  
   

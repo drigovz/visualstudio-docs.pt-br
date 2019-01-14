@@ -2,7 +2,6 @@
 title: Exibir dados no Blend
 ms.date: 03/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924391"
 ---
 # <a name="display-data-in-blend"></a>Exibir dados no Blend
 
@@ -33,9 +32,9 @@ Caso deseje que os dados de exemplo apareçam nas páginas quando o aplicativo f
 
 ![Item de menu Habilitar ao Executar Aplicativo](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
- **Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar dados de exemplo do zero](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
+ **Assista a um breve vídeo:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar dados de exemplo do zero](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
 
- **Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combinando associações de dados com o Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+ **Assista a um breve vídeo:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combinando associações de dados com o Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="generate-sample-data-from-a-class"></a>Gerar dados de exemplo de uma classe
 
@@ -43,13 +42,13 @@ Se você já tiver criado as classes que descrevem a estrutura dos dados, será 
 
 Para gerar dados de exemplo com base em uma classe, abra um documento XAML e, no painel **Dados**, clique no botão **Criar dados de exemplo** ![Ícone Criar dados de exemplo](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) e, em seguida, clique em **Criar Dados de Exemplo da Classe**.
 
-**Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar dados de exemplo de uma classe](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
+**Assista a um breve vídeo:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar dados de exemplo com base em uma classe](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
-**Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Mix up some data binding with Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg) (Combinar algumas associações de dados com o Blend).
+**Assista a um breve vídeo:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combinar associações de dados com o Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="show-live-data-in-a-wpf-application"></a>Mostrar dados ao vivo em um aplicativo da WPF
 
-**Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar uma fonte de dados XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
+**Assista a um breve vídeo:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar uma fonte de dados XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>Mostrar dados dinâmicos em um aplicativo de loja ou de telefone
 
