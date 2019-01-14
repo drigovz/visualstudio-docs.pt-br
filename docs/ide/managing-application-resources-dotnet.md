@@ -2,7 +2,6 @@
 title: Gerenciar recursos do aplicativo (.NET)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 4c689de00c5c5f37d47cb0ecc9f802be4b51a9ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966804"
 ---
 # <a name="manage-application-resources-net"></a>Gerenciar recursos do aplicativo (.NET)
 
@@ -50,7 +49,7 @@ Selecione a guia **Recursos**. Você poderá adicionar um arquivo *.resx* se o p
 Recursos são gerenciados de forma diferente em projetos do .NET que em outros tipos de projeto. Para obter mais informações sobre os recursos em:
 
 - Aplicativos UWP (Plataforma Universal do Windows), consulte [Recursos do aplicativo e o Sistema de Gerenciamento de Recursos](/windows/uwp/app-resources/)
-- Projetos C++, confira [trabalhar com arquivos de recurso](/cpp/windows/working-with-resource-files) e [Como criar um recurso](/cpp/windows/how-to-create-a-resource)
+- Projetos C++, confira [trabalhar com arquivos de recurso](/cpp/windows/working-with-resource-files) e [Como: Criar um recurso](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Consulte também
 

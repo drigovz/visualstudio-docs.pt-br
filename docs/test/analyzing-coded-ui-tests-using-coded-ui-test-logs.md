@@ -2,19 +2,18 @@
 title: Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944954"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de IU codificados usando logs de teste de IU codificado
 
@@ -22,7 +21,7 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>Etapa 1: Habilitar registro em log
+## <a name="step-1-enable-logging"></a>Etapa 1: Habilite o registro em logs
 
 De acordo com seu cenário, use um destes métodos para habilitar o log:
 
@@ -90,4 +89,4 @@ Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent3
 ## <a name="see-also"></a>Consulte também
 
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
-- [Como executar testes no Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Como: Como executar testes no Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

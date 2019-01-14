@@ -1,20 +1,18 @@
 ---
 title: Uso de GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941080"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 
@@ -41,7 +39,7 @@ Os seguintes requisitos para usar a ferramenta Uso de GPU são adicionados aos r
 
 **Para iniciar a ferramenta Uso de GPU:**
 
-1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: pressione Alt + F2).
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).
 
 2. No hub Desempenho e Diagnóstico, marque a caixa ao lado de **Uso de GPU**. Opcionalmente, marque as caixas ao lado de outras ferramentas nas quais você esteja interessado. É possível executar várias ferramentas de Desempenho e Diagnóstico simultaneamente para obter uma visão mais completa do desempenho do aplicativo.
 
@@ -104,7 +102,7 @@ Para ajudar a encontrar o que você está procurando, filtre o Relatório Uso da
 |--------------------|-----------------|
 |**Processo**|O nome do processo de seu interesse. Todos os processos que usaram a GPU durante a sessão de diagnóstico são incluídos nessa lista suspensa. A cor associada ao processo nessa lista suspensa é a cor da atividade do thread nas linhas do tempo abaixo.|
 |**Thread**|A ID do thread de seu interesse. Em um aplicativo multi-threaded, essas informações podem ajudá-lo a isolar threads específicos que pertencem ao processo de seu interesse. Os eventos associados ao thread selecionado são realçados em cada linha do tempo.|
-|**Vídeo**|O número do vídeo cuja taxa de atualização é exibida **Observação:** alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|
+|**Vídeo**|O número do vídeo cuja taxa de atualização é exibida **Observação:**  Alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|
 |**Filtrar**|Palavras-chave de seu interesse. Os eventos na parte inferior do relatório incluirão apenas aqueles que correspondem a uma palavra-chave, no todo ou em parte. É possível especificar várias palavras-chave separando-as com um ponto-e-vírgula (;).|
 |**Classificação de Hierarquia**|Uma caixa de seleção que indica se as hierarquias de eventos – definidas por meio de marcadores do usuário – são preservadas ou ignoradas.|
 
@@ -128,7 +126,7 @@ Para ajudar a encontrar o que você está procurando, filtre o Relatório Uso da
 
 **Para adiar a criação de perfil após a inicialização do aplicativo:**
 
-1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: pressione Alt + F2).
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).
 
 2. No hub Desempenho e Diagnóstico, siga o link **Configurações** ao lado de **Uso de GPU**.
 

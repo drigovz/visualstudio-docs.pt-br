@@ -1,8 +1,6 @@
 ---
 title: Tarefa UidManager | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59bcb413ab391f74f9d2713fe87b4384e30cc0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93b3c571d8c68eee8ee00475fad8bda2b5b2ec65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989119"
 ---
 # <a name="uidmanager-task"></a>Tarefa UidManager
 A tarefa <xref:Microsoft.Build.Tasks.Windows.UidManager> verifica, atualiza ou remove UIDs (identificadores exclusivos), para localizar todos os elementos [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] que são incluídos nos arquivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] de origem.  
@@ -62,4 +60,4 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.UidManager> verifica, atualiza ou r
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
  [Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
- [Como localizar um aplicativo](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+ [Como: Localizar um aplicativo](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

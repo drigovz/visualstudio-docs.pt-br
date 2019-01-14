@@ -2,7 +2,6 @@
 title: Desenhe as formas e demarcadores
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942639"
 ---
 # <a name="draw-shapes-and-paths"></a>Desenhe as formas e demarcadores
 
@@ -85,12 +84,12 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 ##  <a name="Convert"></a> Converter uma forma em um caminho
  Para modificar uma forma da mesma maneira que um caminho, converta a forma em um caminho.
 
- **Assista a um vídeo curto:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (Configurar recursos instalados, Trabalhando com demarcadores: converter uma forma em um demarcador).
+ **Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabalhando com demarcadores: Converter uma forma em um demarcador](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 ##  <a name="Combine"></a> Combinar caminhos
  É possível combinar caminhos e formas em um único caminho.
 
- ![Combinar caminhos](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
+ ![Combinar demarcadores](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
 |||||
 |-|-|-|-|
@@ -98,7 +97,7 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 |![Excluir sobreposição](../designers/media/b1_2.png)|União|![](../designers/media/b1_5.png)|Excluir Sobreposição|
 |![Subtração](../designers/media/b1_3.png)|Divisão|![](../designers/media/b1_6.png)|Subtração|
 
- **Assista a um vídeo curto:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (Configurar recursos instalados, Trabalhando com caminhos: combinar caminhos).
+ **Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabalhando com demarcadores: Combinar demarcadores](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ##  <a name="Compound"></a> Criar um caminho composto
  Quando você cria um caminho composto, todas as partes de interseção dos caminhos são subtraídas do resultado e o caminho resultante assume as propriedades visuais do caminho mais baixo.
@@ -107,14 +106,14 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 
  ![Interromper um demarcador composto](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **Assista a um vídeo curto:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (Configurar recursos instalados, Trabalhando com caminhos: criar um demarcador composto).
+ **Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabalhando com demarcadores: Criar um demarcador composto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ##  <a name="Clipping"></a> Criar um caminho de recorte
  Um caminho de recorte é um caminho ou uma forma que é aplicada a outro objeto, o que oculta as partes do objeto mascarado que fica fora do caminho de recorte.
 
  ![Demarcador de recorte](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **Assista a um vídeo curto:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a clipping path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) (Configurar recursos instalados, Trabalhando com demarcadores: criar um demarcador de recorte).
+ **Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabalhando com demarcadores: Criar um demarcador de recorte](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
 ## <a name="see-also"></a>Consulte também
 

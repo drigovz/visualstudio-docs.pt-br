@@ -2,7 +2,6 @@
 title: Adicionar referências no Gerenciador de Referências
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,14 +22,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856274"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como: Adicionar ou remover referências usando o Gerenciador de Referências
 
 É possível usar a caixa de diálogo **Gerenciador de Referências** para adicionar e gerenciar referências aos componentes que você, a Microsoft ou outra empresa desenvolveram. Se você estiver desenvolvendo um aplicativo Universal do Windows, o projeto referenciará automaticamente todas as DLLs corretas do SDK do Windows. Se você estiver desenvolvendo um aplicativo .NET, o projeto referenciará *mscorlib.dll* automaticamente. Algumas APIs do .NET são expostas em componentes que precisam ser adicionados manualmente. As referências a componentes COM ou a componentes personalizados devem ser adicionadas manualmente.
 
@@ -72,7 +71,7 @@ A guia **Assemblies** consiste em duas subguias:
 
 1. **Framework** lista todos os assemblies que constituem a estrutura de destino.
 
-    Os projetos para aplicativos da Windows 8.x Store contêm referências a todos os assemblies do [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] de destino por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo a estrutura. Consequentemente, a guia **Framework** não enumerará nenhum dos assemblies da estrutura e exibirá a seguinte mensagem: “Todos os assemblies do Framework já estão referenciados. Use o Pesquisador de Objetos para explorar as referências no Framework”. Para projetos de área de trabalho, a guia **Framework** enumera os assemblies da estrutura de destino e o usuário deve adicionar as referências exigidas pelo aplicativo.
+    Os projetos para aplicativos da Windows 8.x Store contêm referências a todos os assemblies do [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] de destino por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo a estrutura. Consequentemente, a guia **Framework** não enumerará nenhum dos assemblies da estrutura e exibirá a seguinte mensagem: "Todos os assemblies do Framework já estão referenciados. Use o Pesquisador de Objetos para explorar as referências no Framework”. Para projetos de área de trabalho, a guia **Framework** enumera os assemblies da estrutura de destino e o usuário deve adicionar as referências exigidas pelo aplicativo.
 
 2. **Extensões** lista todos os assemblies que os fornecedores externos de componentes e controles desenvolveram para estender a estrutura de destino. Dependendo da finalidade do aplicativo do usuário, esses assemblies podem ser necessários.
 
@@ -94,7 +93,7 @@ Alguns componentes na lista podem não ser exibidos, dependendo da versão do .N
 
 - Um componente que usa uma versão recente do .NET Framework não é compatível com um projeto que tem uma versão anterior do .NET Framework como destino.
 
-    Para obter informações sobre como alterar a versão de destino do .NET Framework de um projeto, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    Para obter informações sobre como alterar a versão de destino do .NET Framework de um projeto, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 - Um componente que usa [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] não é compatível com um projeto que tem [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] como destino.
 
@@ -155,9 +154,9 @@ A guia **Windows** lista todos os SDKs específicos às plataformas na qual sist
 
 Você pode gerar um arquivo WinMD no Visual Studio de duas maneiras:
 
-- **Projetos gerenciados de aplicativo da Windows 8.x Store**: os projetos de aplicativo da Windows 8.x Store podem produzir binários WinMD definindo **Propriedades do Projeto** > **Tipo de Saída = Arquivo WinMD**. O nome do arquivo WinMD deve ser o namespace do superconjunto de todos os namespaces existentes dentro dele. Por exemplo, se um projeto consiste nos namespaces `A.B` e `A.B.C`, os possíveis nomes para o WinMD emitido serão *A.winmd* e *A.B.winmd*. Se um usuário inserir um valor de **Propriedades de Projeto** > **Nome do Assembly** ou **Propriedades de Projeto** > **Namespace** separado do conjunto de namespaces no projeto ou se não houver nenhum namespace de superconjunto em um projeto, um aviso de criação será gerado: “A.winmd” não é um nome de arquivo .winmd válido para esse assembly." Todos os tipos em um arquivo de metadados do Windows devem existir em um namespace secundário do nome do arquivo. Os tipos que não existirem em um namespace secundário do nome de arquivo não poderão ser localizados no tempo de execução. Nesse assembly, o menor namespace comum é `CSWSClassLibrary1`. Um projeto de Visual Basic ou C# de área de trabalho só pode consumir WinMDs gerados usando SDKs do Windows 8, conhecidos como a primeira parte do WinMDs e não podem gerar WinMDs.
+- **Projetos gerenciados de aplicativo da Windows 8.x Store**: Projetos de aplicativo da Windows 8.x Store podem produzir binários WinMD definindo **Propriedades do Projeto** > **Tipo de Saída = Arquivo WinMD**. O nome do arquivo WinMD deve ser o namespace do superconjunto de todos os namespaces existentes dentro dele. Por exemplo, se um projeto consiste nos namespaces `A.B` e `A.B.C`, os possíveis nomes para o WinMD emitido serão *A.winmd* e *A.B.winmd*. Se um usuário inserir um valor de **Propriedades de Projeto** > **Nome do Assembly** ou **Propriedades de Projeto** > **Namespace** separado do conjunto de namespaces no projeto ou se não houver nenhum namespace de superconjunto em um projeto, um aviso de criação será gerado: “A.winmd” não é um nome de arquivo .winmd válido para esse assembly." Todos os tipos em um arquivo de metadados do Windows devem existir em um namespace secundário do nome do arquivo. Os tipos que não existirem em um namespace secundário do nome de arquivo não poderão ser localizados no tempo de execução. Nesse assembly, o menor namespace comum é `CSWSClassLibrary1`. Um projeto de Visual Basic ou C# de área de trabalho só pode consumir WinMDs gerados usando SDKs do Windows 8, conhecidos como a primeira parte do WinMDs e não podem gerar WinMDs.
 
-- **Projetos nativos de aplicativo da Windows 8.x Store**: um arquivo WinMD nativo consiste apenas em metadados. Sua implementação existe em um arquivo separado da DLL. É possível gerar binários nativos escolhendo o modelo de projeto do componente do Tempo de Execução do Windows na caixa de diálogo **Novo Projeto** ou em um projeto em branco e modificando as propriedades do projeto para gerar um arquivo WinMD. Se o projeto consiste em namespaces separados, um erro de compilação dirá ao usuário para combinar os namespaces ou executar a ferramenta MSMerge.
+- **Projetos de aplicativos nativos da Windows 8.x Store**: Um arquivo WinMD nativo consiste apenas em metadados. Sua implementação existe em um arquivo separado da DLL. É possível gerar binários nativos escolhendo o modelo de projeto do componente do Tempo de Execução do Windows na caixa de diálogo **Novo Projeto** ou em um projeto em branco e modificando as propriedades do projeto para gerar um arquivo WinMD. Se o projeto consiste em namespaces separados, um erro de compilação dirá ao usuário para combinar os namespaces ou executar a ferramenta MSMerge.
 
 A guia **Windows** consiste em dois subgrupos.
 
@@ -165,7 +164,7 @@ A guia **Windows** consiste em dois subgrupos.
 
 O subgrupo **Núcleo** lista todos os WinMDs (para elementos do Windows Runtime) no SDK para a versão de destino do Windows.
 
-Os projetos de aplicativo da Windows 8.x Store contêm referências a todos os WinMDs no SDK do Windows 8 por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo o SDK do Windows 8. Consequentemente, o subgrupo de **Núcleo** no **Gerenciador de Referências** não enumerará nenhum assembly do SDK do Windows 8 e exibirá uma mensagem: “O SDK do Windows já está referenciado. Use o Pesquisador de Objetos para explorar as referências no SDK do Windows”.
+Os projetos de aplicativo da Windows 8.x Store contêm referências a todos os WinMDs no SDK do Windows 8 por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo o SDK do Windows 8. Consequentemente, o subgrupo de **Núcleo** no **Gerenciador de Referências** não enumerará nenhum assembly do SDK do Windows 8 e exibirá uma mensagem: "O SDK do Windows já está referenciado. Use o Pesquisador de Objetos para explorar as referências no SDK do Windows”.
 
 Em projetos da área de trabalho, o subgrupo **Núcleo** não é exibido por padrão. É possível adicionar o Windows Runtime abrindo o menu de atalho do nó do projeto, escolhendo **Descarregar Projeto**, adicionando o snippet a seguir e reabrindo o projeto (no nó do projeto, escolha **Recarregar Projeto**). Ao invocar a caixa de diálogo **Gerenciador de Referências**, o subgrupo **Núcleo** é exibido.
 

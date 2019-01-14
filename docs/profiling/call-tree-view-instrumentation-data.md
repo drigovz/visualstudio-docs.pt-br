@@ -1,8 +1,6 @@
 ---
 title: Modo de exibição de árvore de chamadas – Dados de instrumentação | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 34ae8f845e53fdd80be055c8d0e592d6d01d75e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898093"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Modo de exibição de árvore de chamadas – dados de instrumentação
 Os valores para uma função na árvore de chamadas indicam a hora para as instâncias de função chamadas pela função pai na árvore de chamadas. Valores de percentual são calculados comparando o valor das instâncias de função com o tempo inclusivo decorrido total de todas as funções na execução de criação de perfil.  
@@ -85,7 +83,7 @@ Os valores para uma função na árvore de chamadas indicam a hora para as inst�
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função nesse contexto.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de visualização de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-sampling-data.md)   
  [Modo de exibição de árvore de chamadas – instrumentação](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Modo de exibição de árvore de chamadas – amostragem](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

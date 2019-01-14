@@ -1,8 +1,6 @@
 ---
 title: Exibição de Funções – Dados de Contenção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7444a4d3e8ad6e3f5fdd91d34058e20e13caf38
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b92d19c48f91d6094136d0ac8d2d6b276b59707d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920018"
 ---
 # <a name="functions-view---contention-data"></a>Exibição Funções – dados de contenção
 A exibição de relatório de Funções de dados de contenção lista as funções na execução de criação de perfil que foram bloqueadas da execução durante o processo de criação de perfil.  
@@ -44,7 +42,7 @@ A exibição de relatório de Funções de dados de contenção lista as funçõ
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição de Funções](../profiling/functions-view.md)   
  [Exibição Funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Exibição Funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)   

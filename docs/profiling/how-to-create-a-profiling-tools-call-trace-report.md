@@ -1,8 +1,6 @@
 ---
-title: Como criar um relatório de rastreamento de chamada das ferramentas de criação de perfil | Microsoft Docs
-ms.custom: ''
+title: 'Como: Criar um relatório de rastreamento de chamada das Ferramentas de Criação de Perfil | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, viewing ETW data
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a363554dfab8463ed91a82ffae9dea4f52d435d4
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c2d48b266108a053fa24da517d2367fe85b2b6a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985859"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Como criar um relatório de rastreamento de chamada das ferramentas de criação de perfil
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Como: Criar um relatório de rastreamento de chamada ferramentas de criação de perfil
 O *relatório de rastreamento de chamada* para as Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lista informações de tempo para cada ponto de entrada e de saída para as funções do aplicativo e cada chamada para outras funções por sua função. Relatórios de rastreamento de chamada estão disponíveis para criação de perfil de dados somente se foram coletados com o método de instrumentação.  
   
 > [!NOTE]
@@ -42,5 +40,5 @@ O *relatório de rastreamento de chamada* para as Ferramentas de criação de pe
 
   
 ## <a name="see-also"></a>Consulte também  
- [Como coletar dados de ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+ [Como: Coletar dados do ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md)

@@ -1,8 +1,6 @@
 ---
-title: Como limitar a instrumentação a DLLs específicas | Microsoft Docs
-ms.custom: ''
+title: 'Como: Limitar a instrumentação a DLLs específicas | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c20dde749f95a24c6d83c7b6693220a5552f89fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885162"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como: Limitar a instrumentação a DLLs específicas
 
 Ao usar o método de criação de perfil de instrumentação, é possível limitar a coleta de dados de criação de perfil a uma ou mais DLLs em um aplicativo. Para criar o perfil de uma ou mais DLLs em um aplicativo, você deverá criar uma sessão de desempenho que inclua os arquivos .*dll* como destino. É possível especificar as DLLs que você deseja analisar como projetos em uma solução do Visual Studio ou como arquivos binários independentes.
 
@@ -72,4 +70,4 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 ## <a name="see-also"></a>Consulte também
 
 [Controlar a coleta de dados](../profiling/controlling-data-collection.md)  
-[Como limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Como: Limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

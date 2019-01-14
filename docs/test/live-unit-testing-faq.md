@@ -2,7 +2,6 @@
 title: Perguntas frequentes sobre o Live Unit Testing
 ms.date: 2017-10-03
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935587"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Perguntas frequentes sobre o Live Unit Testing
 
@@ -97,7 +96,7 @@ A **Janela de Saída** (quando o menu suspenso Live Unit Testing está seleciona
 
 Se a solução exigir etapas personalizadas de build para instrumentação (Live Unit Testing) que não são necessárias para o build não instrumentado "normal", você poderá adicionar o código ao projeto ou arquivos *.targets* que verificam a propriedade `BuildingForLiveUnitTesting` e executam etapas de pré/pós-build personalizadas. Também é possível optar por remover algumas etapas de build (como publicar ou gerar pacotes) ou adicionar etapas de build (como copiar pré-requisitos) a um build do Live Unit Testing baseado na propriedade desse projeto. A personalização do build com base nessa propriedade não altera o build normal de nenhum modo e só afeta os builds do Live Unit Testing.
 
-Por exemplo, pode haver um destino que produz pacotes NuGet durante um build normal. Provavelmente, você não desejará que os pacotes NuGet sejam gerados após cada edição feita. Portanto, é possível desabilitar esse destino no build do Live Unit Testing fazendo algo semelhante ao seguinte:  
+Por exemplo, pode haver um destino que produz pacotes NuGet durante um build normal. Provavelmente, você não desejará que os pacotes NuGet sejam gerados após cada edição feita. Portanto, é possível desabilitar esse destino no build do Live Unit Testing fazendo algo semelhante ao seguinte:  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -112,7 +111,7 @@ Você pode receber esse erro se o processo de build da solução substitui `<Out
 
 Por exemplo, se o build substituir o `<OutputPath>`, conforme mostrado abaixo:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -122,7 +121,7 @@ Por exemplo, se o build substituir o `<OutputPath>`, conforme mostrado abaixo:
 
 em seguida, substitua-o pelo seguinte XML:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -138,14 +137,14 @@ Não substitua `<OutDir>` diretamente no processo de build; em vez disso, substi
 ## <a name="set-the-location-of-build-artifacts"></a>Definir o local dos artefatos do build
 **Quero que os artefatos de um build do Live Unit Testing sejam encaminhados para uma localização específica em vez da localização padrão na pasta *.vs*. Como fazer para alterar isso?**
 
-Defina a variável de ambiente em nível de usuário `LiveUnitTesting_BuildRoot` com o caminho no qual você deseja que os artefatos de build do Live Unit Testing sejam soltos. 
+Defina a variável de ambiente em nível de usuário `LiveUnitTesting_BuildRoot` com o caminho no qual você deseja que os artefatos de build do Live Unit Testing sejam soltos. 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Execuções de teste do Gerenciador de Testes vs. Live Unit Testing 
 **Qual a diferença entre a execução de testes na janela do Gerenciador de Testes e no Live Unit Testing?**
 
 Há várias diferenças:
 
-- A execução ou a depuração de testes na janela **Gerenciador de Testes** executa binários regulares, enquanto o Live Unit Testing executa binários instrumentados. Se você desejar depurar binários instrumentados, a adição de uma chamada de método [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) ao método de teste faz com que o depurador seja iniciado sempre que o método é executado (incluindo quando ele é executado pelo Live Unit Testing). Em seguida, é possível anexar e depurar o binário instrumentado. No entanto, esperamos que a instrumentação seja transparente para você na maioria dos cenários de usuário e que você não precise depurar binários instrumentados.
+- A execução ou a depuração de testes na janela **Gerenciador de Testes** executa binários regulares, enquanto o Live Unit Testing executa binários instrumentados. Se você desejar depurar binários instrumentados, a adição de uma chamada de método [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) ao método de teste fará com que o depurador seja iniciado sempre que o método for executado (incluindo quando ele for executado pelo Live Unit Testing). Em seguida, será possível anexar e depurar o binário instrumentado. No entanto, esperamos que a instrumentação seja transparente para você na maioria dos cenários de usuário e que você não precise depurar binários instrumentados.
 
 - O Live Unit Testing não cria um domínio do aplicativo para executar testes, mas os testes executados por meio da janela **Gerenciador de Testes** criam um domínio do aplicativo.
 
@@ -203,7 +202,7 @@ Os testes que dependem desses valores poderão falhar quando executados pelo Liv
 
 A solução poderá ser compilada mesmo que você não esteja fazendo edições se o processo de build da solução gerar um código-fonte que faz parte da própria solução e os arquivos de destino do build não tiverem entradas e saídas apropriadas especificadas. Os destinos devem receber uma lista de entradas e saídas para que o MSBuild possa executar as verificações atualizadas apropriadas e determinar se um novo build é necessário.
 
-O Live Unit Testing inicia um build sempre que detecta uma alteração nos arquivos de origem. Como o build da solução gera arquivos de origem, o Live Unit Testing entrará em um loop infinito de build. Se, no entanto, as entradas e as saídas do destino forem verificadas quando o Live Unit Testing iniciar o segundo build (depois de detectar os arquivos de origem recém-gerados do build anterior), ele interromperá o loop de build, pois as verificações de entradas e saídas indicarão que tudo está atualizado.  
+O Live Unit Testing inicia um build sempre que detecta uma alteração nos arquivos de origem. Como o build da solução gera arquivos de origem, o Live Unit Testing entrará em um loop infinito de build. Se, no entanto, as entradas e as saídas do destino forem verificadas quando o Live Unit Testing iniciar o segundo build (depois de detectar os arquivos de origem recém-gerados do build anterior), ele interromperá o loop de build, pois as verificações de entradas e saídas indicarão que tudo está atualizado.  
 
 ## <a name="lightweight-solution-load"></a>Carga de solução leve
 **Como o Live Unit Testing funciona com o recurso Carga de Solução Leve?**
@@ -223,12 +222,12 @@ Esse é um problema conhecido e deverá ser corrigido em uma próxima atualizaç
 
 Esse problema foi corrigido e não consta no Visual Studio 2017 versão 15.3. Faça upgrade para essa versão do Visual Studio.
 
-Para versões anteriores do Visual Studio de 2017, esse é um problema conhecido. Para solucionar esse problema, você precisará fazer uma edição em qualquer arquivo depois de incluir ou excluir os testes. 
+Para versões anteriores do Visual Studio de 2017, esse é um problema conhecido. Para solucionar esse problema, você precisará fazer uma edição em qualquer arquivo depois de incluir ou excluir os testes. 
 
 ## <a name="editor-icons"></a>Ícones do editor
 **Por que não consigo ver nenhum ícone no editor, embora o Live Unit Testing pareça estar executando os testes de acordo com as mensagens na janela de Saída?**
 
-Talvez você não veja ícones no editor se os assemblies que o Live Unit Testing está operando não estão instrumentados por algum motivo. Por exemplo, o Live Unit Testing não é compatível com projetos que definem `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. Nesse caso, o processo de build precisa ser atualizado para remover essa configuração ou alterá-la para `true`, a fim de que o Live Unit Testing funcione. 
+Talvez você não veja ícones no editor se os assemblies que o Live Unit Testing está operando não estão instrumentados por algum motivo. Por exemplo, o Live Unit Testing não é compatível com projetos que definem `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. Nesse caso, o processo de build precisa ser atualizado para remover essa configuração ou alterá-la para `true`, a fim de que o Live Unit Testing funcione. 
 
 ## <a name="capture-logs"></a>Coletar logs
 **Como faço para coletar logs mais detalhados de relatórios de registros de bugs?**

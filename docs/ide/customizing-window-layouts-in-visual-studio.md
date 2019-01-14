@@ -2,7 +2,6 @@
 title: Personalizar layouts de janela
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: ef1b20741684a8d450d86bf4f41c71516f8eaba6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959320"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
 
@@ -58,7 +57,7 @@ Quando é necessário exibir ou editar dois locais ao mesmo tempo em um document
 
 ### <a name="toolbars"></a>Barras de ferramentas
 
-As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, consulte [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, veja [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arrange-and-dock-windows"></a>Organizar e encaixar janelas
 
@@ -186,4 +185,4 @@ Esses layouts usam perfis móveis automaticamente entre edições do Visual Stud
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como mover-se no IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)
+- [Como: Deslocar-se pelo IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

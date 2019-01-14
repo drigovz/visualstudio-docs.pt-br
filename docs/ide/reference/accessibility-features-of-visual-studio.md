@@ -3,7 +3,6 @@ title: Recursos de acessibilidade do Visual Studio
 description: Saiba mais sobre as funcionalidades de acessibilidade e os utilitários que ajudam a tornar o sistema operacional Windows e o pacote para desenvolvedores do Visual Studio mais acessível para qualquer pessoa, incluindo pessoas com deficiências.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866472"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Recursos de acessibilidade do Visual Studio
 
@@ -46,15 +45,15 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 
 Para mais informações, consulte os seguintes tópicos:
 
--   [Como definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Como: Definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Como usar exclusivamente o teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Como: Usar exclusivamente o teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Consulte também
 

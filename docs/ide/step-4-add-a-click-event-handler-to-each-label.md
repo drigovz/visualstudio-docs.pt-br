@@ -1,9 +1,7 @@
 ---
-title: 'Etapa 4: Adicionar um manipulador de eventos Click a cada rótulo'
-ms.custom: ''
+title: 'Etapa 4: Adicionar um manipulador de eventos de clique a cada rótulo'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04054d353e0260e7a38a189fc6946aacd353b6c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc39a2d92b4c0851d6d7c17b1c988ab0c1f0b184
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942821"
 ---
-# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Etapa 4: Adicionar um manipulador de eventos Click a cada rótulo
+# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Etapa 4: Adicionar um manipulador de eventos de clique a cada rótulo
 
 O jogo da memória funciona desta forma:
 
@@ -51,14 +49,14 @@ O jogo da memória funciona desta forma:
     > Se você copiar e colar o bloco de código `label_Click()` em vez de inserir o código manualmente, não se esqueça de substituir o código `label_Click()` existente. Caso contrário, você terá um bloco de código duplicado.
 
     > [!NOTE]
-    > Você pode reconhecer `object sender` na parte superior do manipulador de eventos como o mesmo usado no [Tutorial 2: Criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md). Como você vinculou diferentes eventos Click de controle de rótulo a um único método do manipulador de eventos, o mesmo método será chamado, independentemente de qual rótulo foi escolhido pelo usuário. O método do manipulador de eventos precisa saber qual rótulo foi escolhido, de modo que ele usa o nome `sender` para identificar o controle de rótulo. A primeira linha do método informa o programa que ele não é apenas um objeto genérico, mas especificamente um controle de rótulo e que usa o nome `clickedLabel` para acessar as propriedades e os métodos do rótulo.
+    > Você pode reconhecer `object sender` no início do manipulador de eventos como o mesmo usado no [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). Como você vinculou diferentes eventos Click de controle de rótulo a um único método do manipulador de eventos, o mesmo método será chamado, independentemente de qual rótulo foi escolhido pelo usuário. O método do manipulador de eventos precisa saber qual rótulo foi escolhido, de modo que ele usa o nome `sender` para identificar o controle de rótulo. A primeira linha do método informa o programa que ele não é apenas um objeto genérico, mas especificamente um controle de rótulo e que usa o nome `clickedLabel` para acessar as propriedades e os métodos do rótulo.
 
-     Esse método primeiro verifica se `clickedLabel` foi convertido com sucesso de um objeto em um controle de rótulo. Se a conversão não foi bem-sucedida, ele terá um valor `null` (C#) ou `Nothing` (Visual Basic), e não será conveniente executar o restante do código no método. Em seguida, o método verifica a cor do texto do rótulo escolhido usando a propriedade **ForeColor** do rótulo. Se a cor do texto do rótulo for preto, isso significa que o ícone já foi escolhido e o método já executado. (Isso é o que a instrução `return` faz: informa o programa para interromper a execução do método.) Caso contrário, o ícone não foi escolhido, de modo que o programa altera a cor do texto do rótulo para preto.
+     Esse método primeiro verifica se `clickedLabel` foi convertido com sucesso de um objeto em um controle de rótulo. Se a conversão não foi bem-sucedida, ele terá um valor `null` (C#) ou `Nothing` (Visual Basic), e não será conveniente executar o restante do código no método. Em seguida, o método verifica a cor do texto do rótulo escolhido usando a propriedade **ForeColor** do rótulo. Se a cor do texto do rótulo for preto, isso significa que o ícone já foi escolhido e o método já executado. (É isso que a instrução `return` faz: Informa o programa para interromper a execução do método.) Caso contrário, o ícone não foi escolhido, de modo que o programa altera a cor do texto do rótulo para preto.
 
 6.  Na barra de menus, escolha **Arquivo** > **Salvar Tudo** para salvar seu progresso e, em seguida, na barra de menus, escolha **Depurar** > **Iniciar Depuração** para executar seu programa. Você deverá ver um formulário vazio com um plano de fundo azul. Escolha qualquer uma das células no formulário e um dos ícones deverá se tornar visível. Continue escolhendo diferentes locais no formulário. À medida que você escolhe os ícones, eles devem aparecer.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, veja [Etapa 5: Adicionar referências de rótulo](../ide/step-5-add-label-references.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 5: Adicionar referências de rótulo](../ide/step-5-add-label-references.md).
 
--   Para retornar à etapa anterior do tutorial, veja [Etapa 3: Atribuir um ícone aleatório a cada rótulo](../ide/step-3-assign-a-random-icon-to-each-label.md).
+-   Para retornar à etapa anterior do tutorial, confira [Etapa 3: Atribuir um ícone aleatório a cada rótulo](../ide/step-3-assign-a-random-icon-to-each-label.md).

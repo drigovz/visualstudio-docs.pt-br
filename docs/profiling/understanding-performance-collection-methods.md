@@ -1,8 +1,6 @@
 ---
 title: Noções básicas sobre métodos de coleta de desempenho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9bde4e313b9baf4975f5bff247fac248f3a090ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825783"
 ---
 # <a name="understand-performance-collection-methods"></a>Entender os métodos de coleta de desempenho
 
@@ -133,5 +131,5 @@ Dados de interação de camadas que são coletados por ferramentas de criação 
 
 ## <a name="see-also"></a>Consulte também
 
-[Como coletar dados de desempenho de um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Como: Coletar dados de desempenho de um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
 [Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)

@@ -1,9 +1,7 @@
 ---
-title: 'Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown'
-ms.custom: ''
+title: 'Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 393e43a44045f4551fbf567f1de037e77dbae00e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846893"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown
 Na quinta parte deste tutorial, você adicionará manipuladores de eventos <xref:System.Windows.Forms.Control.Enter> para facilitar a inserção de respostas aos problemas do teste. Esse código selecionará e desmarcará o valor atual em cada controle <xref:System.Windows.Forms.NumericUpDown> para que o comprador de teste o escolha e comece a inserir um valor diferente.
 
 > [!NOTE]
@@ -72,6 +70,6 @@ Caixa de diálogo **Propriedades**
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, veja [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).
 
--   Para retornar à etapa anterior do tutorial, veja [Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+-   Para retornar à etapa anterior do tutorial, confira [Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

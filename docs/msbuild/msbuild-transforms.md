@@ -1,8 +1,6 @@
 ---
 title: Transformações do MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a3ff7cbd2025a909ab0c5fb044bb61b24388ff
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f2f4dfeb57ab26e985625bd1b62154b9e6924eb8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942873"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 Uma transformação é uma conversão individual de uma lista de itens para outra. Além de habilitar um projeto para converter as lista de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Este tópico explica as transformações e como o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] as utiliza na criação de projetos com mais eficiência.  
@@ -50,7 +48,7 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 ## <a name="dependency-analysis"></a>Análise de dependência  
  Transformações garantem um mapeamento individual entre a lista de itens transformados e a lista do item original. Portanto, se um destino cria saídas que são transformações das entradas, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode analisar os carimbos de hora das entradas e saídas e decida se deseja ignorar, compilar ou recompilar parcialmente um destino.  
   
- Na [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos na lista de itens `BuiltAssemblies` são mapeados para um arquivo na pasta de destino da tarefa especificada usando uma transformação no atributo `Outputs`. Se um arquivo na lista de itens `BuiltAssemblies` for alterado, a tarefa `Copy` será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre a análise de dependência e como usar transformações, confira [Como compilar incrementalmente](../msbuild/how-to-build-incrementally.md).  
+ Na [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos na lista de itens `BuiltAssemblies` são mapeados para um arquivo na pasta de destino da tarefa especificada usando uma transformação no atributo `Outputs`. Se um arquivo na lista de itens `BuiltAssemblies` for alterado, a tarefa `Copy` será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre a análise de dependência e como usar transformações, confira [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md).  
   
 ```xml  
 <Target Name="CopyOutputs"  
@@ -107,4 +105,4 @@ extension: .xsd
 ## <a name="see-also"></a>Consulte também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Como criar de forma incremental](../msbuild/how-to-build-incrementally.md)
+ [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md)

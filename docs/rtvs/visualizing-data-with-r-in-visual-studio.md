@@ -3,19 +3,18 @@ title: Visualizando dados com R
 description: Como plotar dados em programas de R no Visual Studio, usando janelas de plotagem.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859075"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Criar gráficos de dados visuais com R
 
@@ -87,7 +86,7 @@ O tempo de vida de seu histórico de gráficos em todas as janelas está vincula
 
 Você pode manipular as janelas de gráficos do código R de forma programática, usando números de dispositivo para identificar janelas de gráficos específicas. 
 
-- `dev.list()`: listar todos os dispositivos de gráficos na sessão atual do R.
-- `dev.new()`: criar um novo dispositivo de gráficos (uma nova janela de gráficos).
-- `dev.set(<device number>)`: definir o dispositivo de gráficos ativo.
-- `dev.off()`: excluir o dispositivo ativo.
+- `dev.list()`: Listar todos os dispositivos de gráficos na sessão atual do R.
+- `dev.new()`: Criar um novo dispositivo de gráficos (uma nova janela de gráficos).
+- `dev.set(<device number>)`: Definir o dispositivo de gráficos ativo.
+- `dev.off()`: Excluir o dispositivo ativo.

@@ -3,19 +3,18 @@ title: Workspaces remotos para R
 description: Como configurar workspaces remotos de R e conectar-se a eles do Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837778"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurar workspaces remotos
 
@@ -171,13 +170,13 @@ Para executar o código R, o computador remoto deve ter um interpretador de R in
 
 Com os serviços do R em execução no computador remoto, você também precisa criar contas de usuário, definir regras de firewall, configurar a rede do Azure e configurar o certificado SSL.
 
-1. Contas de usuário: crie contas para cada usuário que acessa o computador remoto. Você pode criar contas de usuário local padrão (sem privilégios) ou pode ingressar o computador do servidor R em seu domínio e adicionar os grupos de segurança apropriados ao grupo de segurança `Users`.
+1. Contas de usuário: Crie contas para cada usuário que acessa o computador remoto. Você pode criar contas de usuário local padrão (sem privilégios) ou pode ingressar o computador do servidor R em seu domínio e adicionar os grupos de segurança apropriados ao grupo de segurança `Users`.
 
-1. Regras de firewall: por padrão, o `R Host Broker` escuta na porta TCP 5444. Portanto, verifique se há regras de firewall do Windows habilitadas para o tráfego de entrada e saída (a saída é necessária para instalar pacotes e cenários semelhantes).  O instalador de serviços do R define essas regras automaticamente para o firewall do Windows interno. No entanto, se você estiver usando um firewall de terceiros, abra manualmente a porta 5444 para o `R Host Broker`.
+1. Regras de firewall: Por padrão, o `R Host Broker` escuta na porta TCP 5444. Portanto, verifique se há regras de firewall do Windows habilitadas para o tráfego de entrada e saída (a saída é necessária para instalar pacotes e cenários semelhantes).  O instalador de serviços do R define essas regras automaticamente para o firewall do Windows interno. No entanto, se você estiver usando um firewall de terceiros, abra manualmente a porta 5444 para o `R Host Broker`.
 
-1. Configuração do Azure: se o computador remoto for uma máquina virtual no Azure, abra a porta 5444 para tráfego de entrada na rede do Azure, que é independente do firewall do Windows. Para obter detalhes, consulte [Filtrar o tráfego de rede com grupos de segurança de rede](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) na documentação do Azure.
+1. Configuração do Azure: Se o computador remoto for uma máquina virtual no Azure, abra a porta 5444 para tráfego de entrada na rede do Azure, que é independente do firewall do Windows. Para obter detalhes, consulte [Filtrar o tráfego de rede com grupos de segurança de rede](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) na documentação do Azure.
 
-1. Informar ao Agente de Host do R qual certificado SSL deve ser carregado: se você estiver instalando o certificado em um servidor de Intranet, é provável que o nome de domínio totalmente qualificado do servidor seja o mesmo que seu nome NETBIOS. Nesse caso não há nada que você precise fazer, pois esse é o certificado padrão que é carregado.
+1. Informar ao Agente de Host do R qual certificado SSL deve ser carregado: Se você estiver instalando o certificado em um servidor de Intranet, provavelmente o nome de domínio totalmente qualificado do servidor será o mesmo que seu nome NETBIOS. Nesse caso não há nada que você precise fazer, pois esse é o certificado padrão que é carregado.
 
     No entanto, se você estiver instalando o certificado em um servidor voltado para à Internet (como uma VM do Azure), use o FQDN (nome de domínio totalmente qualificado) do servidor, porque o FQDN de um servidor voltado à Internet nunca é o mesmo que seu nome NETBIOS.
 

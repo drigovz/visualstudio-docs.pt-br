@@ -3,19 +3,18 @@ title: Regras de aninhamento de arquivos do Gerenciador de Soluções
 ms.date: 05/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831148"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar o aninhamento de arquivos no Gerenciador de Soluções
 
@@ -30,11 +29,11 @@ O aninhamento de arquivos relacionados no **Gerenciador de Soluções** não é 
 
 As opções disponíveis para o aninhamento não personalizado de arquivos são:
 
-* **Desativado**: essa opção fornece uma lista plana de arquivos sem nenhum aninhamento.
+* **Desativado**: Essa opção fornece uma lista plana de arquivos sem nenhum aninhamento.
 
-* **Padrão**: essa opção fornece o comportamento padrão do aninhamento de arquivos no **Gerenciador de Soluções**. Se não houver nenhuma configuração para um tipo de projeto fornecido, nenhum arquivo do projeto será aninhado. Se houver configurações, por exemplo, para um projeto Web, o aninhamento será aplicado.
+* **Padrão**: Essa opção fornece o comportamento padrão do aninhamento de arquivos no **Gerenciador de Soluções**. Se não houver nenhuma configuração para um tipo de projeto fornecido, nenhum arquivo do projeto será aninhado. Se houver configurações, por exemplo, para um projeto Web, o aninhamento será aplicado.
 
-* **Web**: essa opção aplica o comportamento **Web** de aninhamento de arquivos a todos os projetos da solução atual. Ela tem várias regras. Por isso, incentivamos você a conferi-la e enviar-nos sua opinião. A seguinte captura de tela destaca apenas alguns exemplos do comportamento de aninhamento de arquivos obtidos com essa opção:
+* **Web**: Essa opção aplica o comportamento **Web** de aninhamento de arquivos a todos os projetos da solução atual. Ela tem várias regras. Por isso, incentivamos você a conferi-la e enviar-nos sua opinião. A seguinte captura de tela destaca apenas alguns exemplos do comportamento de aninhamento de arquivos obtidos com essa opção:
 
    ![Aninhamento de arquivos no Gerenciador de Soluções](media/filenesting.png)
 
@@ -50,17 +49,17 @@ Recomendamos que você use as configurações **Web** como ponto de partida porq
 
 Vamos nos concentrar no nó **dependentFileProviders** e em seus nós filho. Cada nó filho é um tipo de regra que pode ser usado pelo Visual Studio para aninhar arquivos. Por exemplo, **ter o mesmo nome de arquivo, mas uma extensão diferente** é um tipo de regra. As regras disponíveis são:
 
-* **extensionToExtension**: use esse tipo de regra para aninhar *file.js* em *file.ts*
+* **extensionToExtension**: Use esse tipo de regra para aninhar *file.js* em *file.ts*
 
-* **fileSuffixToExtension**: use esse tipo de regra para aninhar *file-vsdoc.js* em *file.js*
+* **fileSuffixToExtension**: Use esse tipo de regra para aninhar *file-vsdoc.js* em *file.js*
 
-* **addedExtension**: use esse tipo de regra para aninhar *file.html.css* em *file.html*
+* **addedExtension**: Use esse tipo de regra para aninhar *file.html.css* em *file.html*
 
-* **pathSegment**: use esse tipo de regra para aninhar *jquery.min.js* em *jquery.js*
+* **pathSegment**: Use esse tipo de regra para aninhar *jquery.min.js* em *jquery.js*
 
-* **allExtensions**: use esse tipo de regra para aninhar *file.** em *file.js*
+* **allExtensions**: Use esse tipo de regra para aninhar *file.** em *file.js*
 
-* **fileToFile**: use esse tipo de regra para aninhar *bower.json* em *.bowerrc*
+* **fileToFile**: Use esse tipo de regra para aninhar *bower.json* em *.bowerrc*
 
 ### <a name="the-extensiontoextension-provider"></a>O provedor extensionToExtension
 

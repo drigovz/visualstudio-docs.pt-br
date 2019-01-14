@@ -1,8 +1,6 @@
 ---
-title: Como realocar binários instrumentados | Microsoft Docs
-ms.custom: ''
+title: 'Como: Realocar binários instrumentados | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.binaries
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a060506f818ac000611fc0c29988ed324ae89226
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: f8b50c5b76ea5b22bc9d734d32e433db1c7594d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893072"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>Como realocar binários instrumentados
+# <a name="how-to-relocate-instrumented-binaries"></a>Como: Realocar binários instrumentados
 
 Durante a instrumentação, as investigações são inseridas no binário para medir o desempenho do aplicativo. Ao escolher realocar o binário instrumentado, uma cópia do binário original é instrumentada e colocada no local especificado. Essa opção será útil se você não quiser que o criador de perfil renomeie o binário original. Se o binário não for realocado, a versão original do binário será substituída.
 

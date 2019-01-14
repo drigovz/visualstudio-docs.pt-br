@@ -2,7 +2,6 @@
 title: Propriedades de arquivo, JavaScript
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -27,17 +26,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9809c48b9226e05b7617c860af524b1ac6daf6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8706264733faf147c2f53ffceff401ca42432d6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910224"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
 É possível usar propriedades de arquivo para indicar quais ações o sistema de projeto deve executar nos arquivos. Por exemplo, é possível definir propriedades de arquivo para indicar se um arquivo deve ser adicionado ao pacote como um arquivo de recurso.
 
- É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Os arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.
+ É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.
 
 ## <a name="file-properties"></a>Propriedades do Arquivo
  Esta seção descreve as propriedades comuns aos arquivos JavaScript.

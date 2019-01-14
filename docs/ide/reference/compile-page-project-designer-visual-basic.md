@@ -2,7 +2,6 @@
 title: Página de Compilação, Designer de Projeto (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b5c55c3bc1732d0b394473f25c0b103c917f4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 890754002c6b3d911b26fe7b1d6aa97b339880c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874885"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
 
@@ -44,7 +43,7 @@ As configurações a seguir permitem selecionar a configuração e a plataforma 
 
  **Configuração**
 
- Especifica quais definições de configuração exibir ou modificar. As configurações são **Depurar** (padrão), **Versão** ou **Todas as Configurações**. Para saber mais, consulte [Noções básicas das configurações de build](../../ide/understanding-build-configurations.md) e [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
+ Especifica quais definições de configuração exibir ou modificar. As configurações são **Depurar** (padrão), **Versão** ou **Todas as Configurações**. Para obter mais informações, consulte [Understanding Build Configurations (Noções básicas sobre configurações de build)](../../ide/understanding-build-configurations.md) e [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
 
  **Plataforma**
 
@@ -176,6 +175,6 @@ Clique neste botão para acessar a caixa de diálogo **Configurações Avançada
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Como: Especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
-- [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)
+- [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

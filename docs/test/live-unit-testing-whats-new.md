@@ -2,7 +2,6 @@
 title: Novidades no Live Unit Testing
 ms.date: 10-11-2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f3324d12d4bfc82e7980a690853b78321215205
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2f032d062a751186c0abdaa37e5fb451d981e4c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962738"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Novidades no Live Unit Testing
 
@@ -35,11 +34,11 @@ Começando com o Visual Studio 2017 versão 15.4, o Live Unit Testing inclui apr
 
 - **Integração com as notificações do Centro de Tarefas**. Agora, o IDE do Visual Studio mostra uma notificação de processamento em segundo plano do Live Unit Testing no Centro de Tarefas, para que os usuários possam perceber facilmente o que está acontecendo quando o Live Unit Testing está habilitado. Isso soluciona um problema importante de inicialização do Live Unit Testing em uma solução grande. Anteriormente, durante alguns minutos até que os ícones de cobertura apareciam, os usuários não podiam determinar se o Live Unit Testing estava realmente habilitado e se estava funcionando. Agora, não é mais assim!
 
-- **Suporte para a versão 1 da estrutura do MSTest**: o Live Unit Testing já funciona com três estruturas de teste de unidade populares: xUnit, NUnit e MSTest. Anteriormente, o Live Unit Testing só funcionava quando projetos de teste de unidade do MSTest usavam MSTest versão 2. Começando com o Visual Studio 2017 versão 15.4, ele agora também é compatível com o MSTest versão 1. 
+- **Suporte para a versão 1 do MSTest Framework**: O Live Unit Testing já funciona com três estruturas de teste de unidade populares: xUnit, NUnit e MSTest. Anteriormente, o Live Unit Testing só funcionava quando projetos de teste de unidade do MSTest usavam MSTest versão 2. Começando com o Visual Studio 2017 versão 15.4, ele agora também é compatível com o MSTest versão 1. 
 
-- **Confiabilidade e desempenho**: agora o Live Unit Testing garante que o sistema possa detectar melhor quando os projetos não concluíram totalmente o carregamento, evitando travamentos do Live Unit Testing. Melhorias no desempenho de build também evitam a reavaliação de projetos de MSBuild quando o sistema entende que nada foi alterado no arquivo de projeto.  
+- **Confiabilidade e desempenho**: Agora o Live Unit Testing garante que o sistema possa detectar melhor quando os projetos não concluíram totalmente o carregamento, evitando travamentos do Live Unit Testing. Melhorias no desempenho de build também evitam a reavaliação de projetos de MSBuild quando o sistema entende que nada foi alterado no arquivo de projeto.  
 
-- **Diversos aprimoramentos na interface do usuário**: a opção confusa **Live Test Set – Incluir/Excluir** do gesto de clicar com o botão direito do mouse foi renomeada para **Incluir/Excluir Live Unit Testing**. A opção **Redefinir limpeza** no menu **Teste** > **Live Unit Testing** foi removida. Agora ela está acessível pela seleção de **Ferramentas** > **Opções** > **Live Unit Testing** e pela seleção de **Excluir Dados Persistidos**.
+- **Diversos aprimoramentos na interface do usuário**:  A opção confusa **Live Test Set – Incluir/Excluir** do gesto de clicar com o botão direito do mouse foi renomeada para **Incluir/Excluir Live Unit Testing**. A opção **Redefinir limpeza** no menu **Teste** > **Live Unit Testing** foi removida. Agora ela está acessível pela seleção de **Ferramentas** > **Opções** > **Live Unit Testing** e pela seleção de **Excluir Dados Persistidos**.
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Novidades no Live Unit Testing para Visual Studio 2017 versão 15.3
 
@@ -67,4 +66,3 @@ Além dessas importantes adições, o Live Unit Testing inclui as seguintes melh
 ## <a name="see-also"></a>Consulte também
 - [Introdução ao Live Unit Testing](live-unit-testing-intro.md)   
 - [Live Unit Testing com o Visual Studio 2017](live-unit-testing.md)
-

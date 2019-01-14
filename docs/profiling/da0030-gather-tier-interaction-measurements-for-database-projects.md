@@ -1,8 +1,6 @@
 ---
-title: 'DA0030: coletar medições de interação de camada para projetos de banco de dados | Microsoft Docs'
-ms.custom: ''
+title: 'DA0030: Coletar medições de interação de camada para projetos de banco de dados | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0030
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d0fb38348a901582182bdfaec2d7d775ec195f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e1ce3a67fd9894062906991bae1adf3ccc24116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845805"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: coletar medidas de interação de camada para projetos de banco de dados
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Coletar medidas de interação de camadas para projetos de banco de dados
 
 |||  
 |-|-|  

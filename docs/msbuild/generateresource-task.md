@@ -1,8 +1,6 @@
 ---
 title: Tarefa GenerateResource | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917495"
 ---
 # <a name="generateresource-task"></a>Tarefa GenerateResource
 Converte entre arquivos *.txt* e *.resx* (formato de recurso baseado em XML) e arquivos *.resources* binários do Common Language Runtime que podem ser inseridos em um executável binário do tempo de execução ou compilados em assemblies satélite. Essa tarefa geralmente é usada para converter arquivos *.txt* ou *.resx* em arquivos *.resources*. A tarefa `GenerateResource` é funcionalmente semelhante a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -46,7 +44,7 @@ Converte entre arquivos *.txt* e *.resx* (formato de recurso baseado em XML) e a
 |`PublicClass`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, cria uma classe de recurso fortemente tipada como uma classe pública.|  
 |`References`|Parâmetro `String[]` opcional.<br /><br /> Referências das quais carregar tipos em arquivos *.resx*. Elementos de dados de arquivo *.resx* podem ter um tipo .NET. Quando o arquivo *.resx* é lido, isso precisa ser resolvido. Normalmente, ele é resolvido com êxito usando o tipo padrão ao carregar regras. Se você fornecer assemblies em `References`, eles terão prioridade.<br /><br /> Esse parâmetro não é necessário para recursos fortemente tipados.|  
 |`SdkToolsPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para o SDK Tools, como *resgen.exe*.|  
-|`Sources`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os itens a converter. Itens passados para esse parâmetro devem ter uma das seguintes extensões de arquivo:<br /><br /> -   *.txt*: especifica a extensão a ser convertida para um arquivo de texto. Os arquivos de texto só podem conter recursos de cadeia de caracteres.<br />-   *.resx*: especifica a extensão a ser convertida para um arquivo de recurso baseado em XML.<br />-   *.restext*: especifica o mesmo formato como *.txt*. Essa extensão diferente é útil se você quiser distinguir claramente os arquivos de origem que contêm recursos de outros arquivos de origem no processo de build.<br />-   *.resources*: especifica a extensão a ser convertida para um arquivo de recurso.|  
+|`Sources`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os itens a converter. Itens passados para esse parâmetro devem ter uma das seguintes extensões de arquivo:<br /><br /> -   *.txt*: Especifica a extensão de um arquivo de texto a converter. Os arquivos de texto só podem conter recursos de cadeia de caracteres.<br />-   *.resx*: Especifica a extensão de um arquivo de recurso com base em XML a converter.<br />-   *.restext*: Especifica o mesmo formato como *.txt*. Essa extensão diferente é útil se você quiser distinguir claramente os arquivos de origem que contêm recursos de outros arquivos de origem no processo de build.<br />-   *.resources*: Especifica a extensão de um arquivo de recurso a converter.|  
 |`StateFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o caminho para um arquivo de cache opcional usado para acelerar a verificação de dependência de links em arquivos de entrada *.resx*.|  
 |`StronglyTypedClassName`|Parâmetro `String` opcional.<br /><br /> Especifica o nome de classe para a classe de recurso fortemente tipada. Se esse parâmetro não for especificado, o nome base do arquivo de recurso será usado.|  
 |`StronglyTypedFilename`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o nome do arquivo para o arquivo de origem. Se esse parâmetro não for especificado, o nome de classe será usado como o nome de arquivo base, com a extensão dependendo da linguagem. Por exemplo: *MyClass.cs*.|  
@@ -87,7 +85,7 @@ Converte entre arquivos *.txt* e *.resx* (formato de recurso baseado em XML) e a
  Supondo que o assembly seja nomeado myAssembly, o seguinte código gera um recurso inserido chamado *someQualifier.someResource.resources*:  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Sem os metadados de \<LogicalName>, o recurso é nomeado *myAssembly.myResource.resources*.  Este exemplo aplica-se somente ao processo de build do Visual Basic e Visual C#.  

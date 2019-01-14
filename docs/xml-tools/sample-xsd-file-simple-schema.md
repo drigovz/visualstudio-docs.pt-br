@@ -1,8 +1,7 @@
 ---
-title: 'Arquivo XSD de exemplo: esquema simples'
+title: 'Arquivo de exemplo XSD: Esquema simples'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a74d5214e434c7d7330bc7ea4e3bcd8a3e5905
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d3c07e6668f7805a6ed044258b6767764e63e1b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922259"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Arquivo XSD de exemplo: esquema simples
+# <a name="sample-xsd-file-simple-schema"></a>Arquivo de exemplo XSD: Esquema simples
 
 O arquivo XSD a seguir é usado em vários exemplos na documentação do Designer de Esquema XSD. Esse arquivo é um esquema de ordem de compra simples.
 

@@ -2,7 +2,6 @@
 title: Janela imediata
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,41 +17,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 294a68ea3c36f47dad06d9104795b493661c40e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561662"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097104"
 ---
-# <a name="immediate-window"></a>Janela imediata
-A janela **Imediato** é usada para depurar e avaliar expressões, executar instruções, imprimir valores de variáveis e assim por diante. Ela permite inserir expressões a serem avaliadas ou executadas pela linguagem de desenvolvimento durante a depuração. Para exibir a janela **Imediato**, abra um projeto para edição, escolha **Windows** no menu **Depurar** e selecione **Imediato**, ou pressione CTRL + ALT + I.
+# <a name="immediate-window"></a>Janela Imediata
 
- É possível usar essa janela para emitir comandos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] individuais. Os comandos disponíveis incluem `EvaluateStatement`, que pode ser usado para atribuir valores a variáveis. A janela **Imediato** também dá suporte ao IntelliSense.
+A janela **Imediato** é usada para depurar e avaliar expressões, executar instruções, imprimir valores de variáveis e assim por diante. Ela permite inserir expressões a serem avaliadas ou executadas pela linguagem de desenvolvimento durante a depuração.
 
-## <a name="displaying-the-values-of-variables"></a>Exibindo os valores de variáveis
- Essa janela pode ser particularmente útil ao depurar um aplicativo. Por exemplo, para verificar o valor de uma variável `varA`, você pode usar o [Comando Imprimir](../../ide/reference/print-command.md):
+Para exibir a janela **Imediato**, abra um projeto para edição, escolha **Depurar** > **Windows** > **Imediato** ou pressione **Ctrl**+**Alt**+**I**. Você também pode inserir **Debug.Immediate** na janela **Comando**.
+
+Você pode usar a janela **Imediato** para emitir comandos individuais do Visual Studio. Os comandos disponíveis incluem `EvaluateStatement`, que pode ser usado para atribuir valores a variáveis. A janela **Imediato** também dá suporte ao IntelliSense.
+
+## <a name="display-the-values-of-variables"></a>Exibir os valores de variáveis
+
+A janela **Imediato** pode ser particularmente útil ao depurar um aplicativo. Por exemplo, para verificar o valor de uma variável `varA`, você pode usar o [Comando Imprimir](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
 ```
 
- O ponto de interrogação (?) é um alias para `Debug.Print`, portanto, esse comando também pode ser escrito:
+O ponto de interrogação (?) é um alias para `Debug.Print`, portanto, esse comando também pode ser escrito:
 
 ```cmd
 >? varA
 ```
 
- As duas versões desse comando retornarão o valor da variável `varA`.
+As duas versões desse comando retornam o valor da variável `varA`.
 
-> [!NOTE]
-> Para emitir um comando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na janela **Imediato**, você deve preceder o comando com um sinal de maior que (>). Para inserir vários comandos, mude para a janela **Comando**.
+> [!TIP]
+> Para emitir um comando do Visual Studio na janela **Imediato**, você deve preceder o comando com um sinal de maior que (>). Para inserir vários comandos, mude para a janela **Comando**.
 
+## <a name="design-time-expression-evaluation"></a>Avaliação de expressão de tempo de design
 
-## <a name="design-time-expression-evaluation"></a>Avaliação de expressões em tempo de design
- Você pode usar a janela **Imediato** para executar uma função ou sub-rotina em tempo de design.
+Você pode usar a janela **Imediato** para executar uma função ou sub-rotina em tempo de design.
 
-#### <a name="to-execute-a-function-at-design-time"></a>Para executar uma função em tempo de design
+### <a name="execute-a-function-at-design-time"></a>Executar uma função em tempo de design
 
 1. Copie o código a seguir em um aplicativo de console do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
 
@@ -72,19 +75,21 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
 
 2. No menu **Depurar**, clique em **Janelas** e clique em **Imediato**.
 
-3. Digite `?MyFunction(2)` na janela **Imediato** e pressione Enter.
+3. Digite `?MyFunction(2)` na janela **Imediato** e pressione **Enter**.
 
-    A janela **Imediato** executará `MyFunction` e exibirá `4`.
+    A janela **Imediato** executa `MyFunction` e exibe `4`.
 
-Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, confira [Passo a passo: Depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).
+Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, confira [Passo a passo: Depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], projetos Web, projetos de dispositivo inteligente e projetos SQL.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Avaliação de expressão em tempo de design em soluções multiprojeto
- Ao estabelecer o contexto para a avaliação de expressão em tempo de design, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] faz referência ao projeto selecionado atualmente no Gerenciador de Soluções. Se nenhum projeto estiver selecionado no Gerenciador de Soluções, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta avaliar a função com relação ao projeto de inicialização. Se a função não puder ser avaliada no contexto atual, você receberá uma mensagem de erro. Se você estiver tentando avaliar uma função em um projeto que não é o projeto de inicialização da solução e receber um erro, tente selecionar o projeto no Gerenciador de Soluções e tente avaliar novamente.
 
-## <a name="entering-commands"></a>Inserindo comandos
- Você precisa inserir o sinal de maior que (>) ao emitir comandos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na janela **Imediato**. Use as teclas de SETA PARA CIMA e SETA PARA BAIXO para rolar os comandos emitidos anteriormente.
+Ao estabelecer o contexto para a avaliação de expressão em tempo de design, o Visual Studio faz referência ao projeto selecionado atualmente no Gerenciador de Soluções. Se nenhum projeto estiver selecionado no Gerenciador de Soluções, o Visual Studio tentará avaliar a função com relação ao projeto de inicialização. Se a função não puder ser avaliada no contexto atual, você receberá uma mensagem de erro. Se você estiver tentando avaliar uma função em um projeto que não é o projeto de inicialização da solução e receber um erro, tente selecionar o projeto no Gerenciador de Soluções e tente avaliar novamente.
+
+## <a name="enter-commands"></a>Inserir comandos
+
+Você precisa inserir o sinal de maior que (>) ao emitir comandos do Visual Studio na janela **Imediato**. Use as teclas de **seta para cima** e **seta para baixo** para rolar pelos comandos emitidos anteriormente.
 
 |Tarefa|Solução|Exemplo|
 |----------|--------------|-------------|
@@ -93,42 +98,45 @@ Não é possível usar a avaliação de expressão em tempo de design em tipos d
 |Mude para a janela Comando.|Digite `cmd` na janela, precedendo-o com um sinal de maior que (>).|`>cmd`|
 |Mude para a janela Imediato.|Digite `immed` na janela, sem o sinal de maior que (>).|`immed`|
 
-## <a name="mark-mode"></a>Modo de Marca
- Quando clica em qualquer linha anterior na janela **Imediato**, você muda automaticamente para o modo de Marca. Isso permite selecionar, editar e copiar o texto de comandos anteriores como você faria em qualquer editor de texto e colá-lo na linha atual.
+## <a name="mark-mode"></a>Modo de marca
 
-## <a name="the-equals--sign"></a>O sinal de igual (=)
- A janela usada para inserir o comando `EvaluateStatement` determina se um sinal de igual (=) é interpretado como um operador de comparação ou um operador de atribuição.
+Quando clica em qualquer linha anterior na janela **Imediato**, você muda automaticamente para o modo de Marca. Isso permite selecionar, editar e copiar o texto de comandos anteriores como você faria em qualquer editor de texto e colá-lo na linha atual.
 
- Na janela **Imediato**, um sinal de igual (=) é interpretado como um operador de atribuição. Assim, por exemplo, o comando
+## <a name="the-equals-sign"></a>O sinal de igual (=)
 
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
+A janela usada para inserir o comando `EvaluateStatement` determina se um sinal de igual (=) é interpretado como um operador de comparação ou um operador de atribuição.
 
- atribuirá à variável `varA` o valor da variável `varB`.
-
- Na janela **Comando**, por outro lado, o sinal de igual (=) é interpretado como um operador de comparação. Você não pode usar operações de atribuição na janela **Comando**. Dessa forma, por exemplo, se os valores das variáveis `varA` e `varB` forem diferentes, o comando
+Na janela **Imediato**, um sinal de igual (=) é interpretado como um operador de atribuição. Assim, por exemplo, o comando
 
 ```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
- retornará um valor de `False`.
+atribui o valor da variável `varB` à variável `varA`.
+
+Na janela **Comando**, por outro lado, o sinal de igual (=) é interpretado como um operador de comparação. Você não pode usar operações de atribuição na janela **Comando**. Dessa forma, por exemplo, se os valores das variáveis `varA` e `varB` forem diferentes, o comando
+
+```cmd
+>Debug.EvaluateStatement(varA=varB)
+```
+
+retorna um valor de `False`.
 
 ## <a name="first-chance-exception-notifications"></a>Notificações de exceção de primeira tentativa
- Em algumas configurações, notificações de exceção de primeira tentativa são exibidas na janela **Imediato**.
 
-#### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Para ativar ou desativar notificações de exceção de primeira tentativa na janela Imediato
+Em algumas configurações, notificações de exceção de primeira tentativa são exibidas na janela **Imediato**.
 
-1.  No menu **Exibir**, clique em **Outras Janelas** e clique em **Saída**.
+### <a name="toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Ativar ou desativar notificações de exceção de primeira tentativa na janela Imediato
 
-2.  Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.
+1. No menu **Exibir**, clique em **Outras Janelas** e clique em **Saída**.
+
+2. Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Navegar pelo Código com o Depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Janela Comando](../../ide/reference/command-window.md)
-- [Introdução ao depurador](../../debugger/debugger-feature-tour.md)   
+- [Introdução ao depurador](../../debugger/debugger-feature-tour.md)
 - [Passo a passo: Depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Usando expressões regulares no Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

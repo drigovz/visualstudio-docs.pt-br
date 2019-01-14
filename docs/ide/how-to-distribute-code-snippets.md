@@ -1,8 +1,7 @@
 ---
-title: Como distribuir trechos de código
+title: 'Como: Distribuir snippets de código'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,22 +13,22 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836056"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Como distribuir trechos de código
+# <a name="how-to-distribute-code-snippets"></a>Como: Distribuir snippets de código
 
-Você pode fornecer os trechos de código a seus amigos e solicitar a eles que instalem os trechos em seus próprios computadores usando o **Gerenciador de Trechos de Código**. No entanto, se você tiver vários trechos para distribuir ou desejar distribuí-los mais amplamente, inclua o arquivo de trecho em uma extensão do Visual Studio. Em seguida, os usuários do Visual Studio podem instalar a extensão.
+Você pode fornecer os snippets de código a seus amigos e solicitar a eles que instalem os snippets em seus próprios computadores usando o **Gerenciador de Snippets de Código**. No entanto, se você tiver vários snippets para distribuir ou desejar distribuí-los mais amplamente, inclua o arquivo de snippet em uma extensão do Visual Studio. Em seguida, os usuários do Visual Studio podem instalar a extensão.
 
 Você deve instalar o SDK do Visual Studio para criar extensões do Visual Studio. Localize a versão do VSSDK que corresponde à sua instalação do Visual Studio em [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Configurar a extensão
 
-Neste procedimento, usaremos o mesmo trecho de código Olá, Mundo criado no [Passo a passo: Criar um trecho de código](../ide/walkthrough-creating-a-code-snippet.md). Forneceremos o texto *.snippet*, de modo que você não precise voltar e criar um.
+Neste procedimento, usaremos o mesmo snippet de código Olá, Mundo criado no [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md). Forneceremos o texto *.snippet*, de modo que você não precise voltar e criar um.
 
 1. Crie um novo projeto do VSIX chamado **TestSnippet**. (**Arquivo** > **Novo** > **Projeto** > **Visual C# (ou Visual Basic)** > **Extensibilidade**).
 
@@ -61,7 +60,7 @@ Neste procedimento, usaremos o mesmo trecho de código Olá, Mundo criado no [Pa
 
 ### <a name="set-up-the-directory-structure"></a>Configurar a estrutura de diretório
 
-1. No **Gerenciador de Soluções**, selecione o nó do projeto e adicione uma pasta que tenha o nome que deseja que o trecho tenha no **Gerenciador de Trechos de Código**. Neste caso, deve ser **HelloWorldVB**.
+1. No **Gerenciador de Soluções**, selecione o nó do projeto e adicione uma pasta que tenha o nome que deseja que o snippet tenha no **Gerenciador de Snippets de Código**. Neste caso, deve ser **HelloWorldVB**.
 
 2. Mova o arquivo *.snippet* para a pasta *HelloWorldVB*.
 
@@ -91,19 +90,19 @@ Neste procedimento, usaremos o mesmo trecho de código Olá, Mundo criado no [Pa
 
 5. Na caixa de diálogo **Adicionar Novo Ativo**, defina o **Tipo** como **Microsoft.VisualStudio.VsPackage**, a **Origem** como **Arquivo no sistema de arquivos** e o **Caminho** como **HelloWorldVB.pkgdef** (que deve aparecer na lista suspensa).
 
-### <a name="test-the-snippet"></a>Teste o trecho
+### <a name="test-the-snippet"></a>Teste o snippet
 
-1. Agora você pode verificar se o trecho de código funciona na instância experimental do Visual Studio. A instância experimental é uma segunda cópia do Visual Studio, que é separada daquela que você usa para escrever código. Ela permite que você trabalhe em uma extensão sem afetar seu ambiente de desenvolvimento.
+1. Agora você pode verificar se o snippet de código funciona na instância experimental do Visual Studio. A instância experimental é uma segunda cópia do Visual Studio, que é separada daquela que você usa para escrever código. Ela permite que você trabalhe em uma extensão sem afetar seu ambiente de desenvolvimento.
 
 2. Compile o projeto e comece a depuração.
 
    Uma segunda instância do Visual Studio é exibida.
 
-3. Na instância experimental, acesse **Ferramentas** > **Gerenciador de Trechos de Código** e defina a **Linguagem** como **Basic**. Você deve ver *HelloWorldVB* como uma das pastas e ser capaz de expandir a pasta para ver o trecho *HelloWorldVB*.
+3. Na instância experimental, acesse **Ferramentas** > **Gerenciador de Snippets de Código** e defina a **Linguagem** como **Basic**. Você deve ver *HelloWorldVB* como uma das pastas e ser capaz de expandir a pasta para ver o snippet *HelloWorldVB*.
 
-4. Teste o trecho. Na instância experimental, abra um projeto do Visual Basic e abra um dos arquivos de código. Coloque o cursor em algum lugar no código, clique com o botão direito do mouse e, no menu de contexto, selecione **Inserir Trecho**.
+4. Teste o snippet. Na instância experimental, abra um projeto do Visual Basic e abra um dos arquivos de código. Coloque o cursor em algum lugar no código, clique com o botão direito do mouse e, no menu de contexto, selecione **Inserir Snippet**.
 
-5. Você deve ver *HelloWorldVB* como uma das pastas. Clique duas vezes nesse item. Você deve ver um pop-up **Inserir trecho: HelloWorldVB >** que tem uma lista suspensa **HelloWorldVB**. Clique na lista suspensa **HelloWorldVB**. Você deve ver a seguinte linha adicionada ao arquivo:
+5. Você deve ver *HelloWorldVB* como uma das pastas. Clique duas vezes nesse item. Você deve ver um pop-up **Inserir trecho de código: HelloWorldVB >** que tem uma lista suspensa **HelloWorldVB**. Clique na lista suspensa **HelloWorldVB**. Você deve ver a seguinte linha adicionada ao arquivo:
 
     ```vb
     Console.WriteLine("Hello, World!")
@@ -111,4 +110,4 @@ Neste procedimento, usaremos o mesmo trecho de código Olá, Mundo criado no [Pa
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trechos de código](../ide/code-snippets.md)
+- [Snippets de código](../ide/code-snippets.md)

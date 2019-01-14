@@ -1,8 +1,6 @@
 ---
 title: Exibição de Linhas – Dados de Contenção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0afb540a314d1e980e9b0a6ccace0b36145cce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905420"
 ---
 # <a name="lines-view---contention-data"></a>Exibição de Linhas – dados de contenção
 A exibição de Linhas de dados de contenção lista os dados de desempenho das instruções que estavam em execução quando as amostras foram coletadas na criação de perfil. Em um arquivo de origem, uma instrução pode abranger mais de uma linha em um arquivo de origem, e uma única linha pode incluir mais de uma instrução.  
@@ -65,7 +63,7 @@ A exibição de Linhas de dados de contenção lista os dados de desempenho das 
 |**Final da Linha de Origem**|O número da linha no arquivo de origem na qual a instrução termina.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição de Linhas](../profiling/lines-view.md)   
  [Exibição de linhas – amostragem](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Exibição de Linhas](../profiling/lines-view-sampling-data.md)

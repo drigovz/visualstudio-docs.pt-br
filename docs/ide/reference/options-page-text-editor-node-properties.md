@@ -2,7 +2,6 @@
 title: Página de Propriedades, Editor de Texto, Propriedades do Nó
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935665"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de Propriedades, Editor de Texto, Propriedades do Nó
 Este documento descreve algumas páginas (ou coleções de propriedades) associadas à categoria **Editor de Texto**, `DTE.Properties("TextEditor", <Property Page>)`, da caixa de diálogo **Opções**. O título de cada subseção é a chamada que é usada para acessar a coleção `Properties` e a tabela em cada subseção lista as propriedades na coleção.
@@ -56,7 +55,7 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
 |WordWrap|Get/Set (Booliano)|Determina se a exibição quebra linhas longas nos limites da palavra. Definir como `true` faz com que o item de propriedade `VirtualSpace` (nesta lista) seja definido como `false`.|
 |WordWrapGlyphs|Get/Set (Booliano)|Exibe um glifo no fim de uma linha; indica que a linha é quebrada para a próxima linha.|
 |EnableLeftClickForURLs|Get/Set (Booliano)|Determina se o editor sublinha URLs e permite que com um único clique no botão esquerdo do mouse seja possível pular para a URL no navegador da Web registrado pelo sistema.|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina o estilo do recuo: Padrão, Inteligente ou Nenhum.|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina o estilo do recuo: Default, Smart ou None.|
 |TabSize|Get/Set (Longo)|Representa o número de espaços que é igual a uma tabulação. Definir um inteiro fora do intervalo de 1 a 60 (inclusive) causa falhas.|
 |InsertTabs|Get/Set (Booliano)|Se `True`, caracteres de tabulação serão usados no recuo.|
 |IndentSize|Get/Set (Longo)|Representa o número de espaços que é igual a um nível de recuo. Definir um valor inteiro fora do intervalo de 1 a 60 (inclusive) causa falhas.|

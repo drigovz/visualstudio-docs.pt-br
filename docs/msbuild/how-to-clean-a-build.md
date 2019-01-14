@@ -1,8 +1,6 @@
 ---
-title: Como limpar um build | Microsoft Docs
-ms.custom: ''
+title: 'Como: Limpar um build | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: ddd4158561b0bac7ea3347738f13f0f9530002ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841126"
 ---
-# <a name="how-to-clean-a-build"></a>Como limpar um build
+# <a name="how-to-clean-a-build"></a>Como: Limpar um build
 Quando você limpa um build, todos os arquivos de saída e intermediários são excluídos, deixando apenas os arquivos de projeto e componente. Nos arquivos de projeto e de componente, novas instâncias dos arquivos de saída e intermediários podem ser criadas. A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui uma tarefa [Exec](../msbuild/exec-task.md) que você pode usar para executar comandos do sistema. Para obter mais informações sobre a biblioteca de tarefas, confira [Referência de tarefas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="create-a-directory-for-output-items"></a>Criar um diretório para itens de saída  

@@ -9,20 +9,20 @@ description: Saiba mais sobre o benefício do Office 365 incluído em algumas as
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968385"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 em Assinaturas do Visual Studio
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus em Assinaturas do Visual Studio
 
-Crie seu melhor trabalho. Trabalhe em qualquer lugar com aplicativos que estão sempre atualizados. O Office 365 é uma assinatura que vem com aplicativos premium, como Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponíveis apenas no PC). Os aplicativos podem ser instalados em vários dispositivos, incluindo PCs, Macs, iPads, iPhones, tablets Android e telefones Android. O Office 365 também vem com serviços como 1 TB de armazenamento do OneDrive, 60 minutos Skype por mês e suporte por chat e telefone da Microsoft. Com uma assinatura, você obtém as últimas versões dos aplicativos e recebe atualizações automaticamente quando elas são disponibilizadas.
+Crie seu melhor trabalho. Trabalhe em qualquer lugar com aplicativos que estão sempre atualizados. O Office 365 Pro Plus é uma assinatura que vem com aplicativos premium, como Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponíveis apenas no PC). Os aplicativos podem ser instalados em vários dispositivos, incluindo PCs, Macs, iPads, iPhones, tablets Android e telefones Android. O Office 365 também vem com serviços como 1 TB de armazenamento do OneDrive, 60 minutos Skype por mês e suporte por chat e telefone da Microsoft. Com uma assinatura, você obtém as últimas versões dos aplicativos e recebe atualizações automaticamente quando elas são disponibilizadas.
 
-## <a name="getting-started-with-office-365"></a>Introdução ao Office 365
+## <a name="getting-started-with-office-365-pro-plus"></a>Introdução ao Office 365 Pro Plus
 
-Siga estas etapas para baixar e ativar o Office 365:
+Siga estas etapas para baixar e ativar o Office 365 Pro Plus:
 1. Entre em sua assinatura do Visual Studio Enterprise.  
 2. Clique na guia **Downloads**.
 3. Você verá uma lista de downloads em destaque. Na lista do Office, escolha **Office 365**. 

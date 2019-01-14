@@ -1,8 +1,6 @@
 ---
-title: 'DA0006: substituir Equals() para tipos de valor | Microsoft Docs'
-ms.custom: ''
+title: 'DA0006: Substituir Equals() por tipos de valor | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab011487f33438091eb963c9ea4a7e1d1c80ec4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78c284e4dd38b551cc575b20da84152470462fd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876001"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: substituir Equals() para tipos de valor
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: Substituir Equals() por tipos de valor
 
 |||  
 |-|-|  
@@ -41,4 +39,4 @@ ms.locfileid: "49856269"
  Para obter mais informações sobre como substituir Equals e os operadores de igualdade, consulte [Diretrizes para Implementação de Equals e o Operador de Igualdade (= =)](http://go.microsoft.com/fwlink/?LinkId=177818).  
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
- Para obter um exemplo de implementação de Equals e operadores de igualdade, consulte a regra de análise de código [CA1815: substituir Equals e operador Equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
+ Para obter um exemplo de implementação de Equals e operadores de igualdade, confira a regra de análise de código [CA1815: Substituir equals e operador equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

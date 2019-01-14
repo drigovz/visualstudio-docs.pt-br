@@ -2,7 +2,6 @@
 title: Criando uma interface do usuário usando o Designer XAML
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880398"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criar uma interface do usuário usando o Designer XAML no Visual Studio
 
@@ -201,4 +200,4 @@ Há várias opções na parte superior da janela **Propriedades**. Você pode al
 
 - [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md)
 - [Como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md)
-- [Passo a passo: associando dados no XAML Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Passo a passo: Associando a dados no Designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

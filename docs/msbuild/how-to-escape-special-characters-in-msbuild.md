@@ -1,8 +1,6 @@
 ---
-title: Como escapar caracteres especiais no MSBuild | Microsoft Docs
-ms.custom: ''
+title: 'Como: Escapar caracteres especiais no MSBuild | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - special characters, escaping
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 701db598872f6dde5a07740ef7601a6c8de7c5f0
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 5e6af51127548b59646ec7243863491115b77e08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854614"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Como fazer o escape de caracteres especiais no MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Como: Usar escape para caracteres especiais no MSBuild
 
 Determinados caracteres têm significado especial em arquivos de projeto do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. O ponto-e-vírgula (`;`) e os asteriscos (`*`) são exemplos de caracteres. Para obter uma lista completa desses caracteres especiais, confira [Caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md).
   
@@ -30,7 +28,7 @@ Para usar esses caracteres especiais como literais em um arquivo de projeto, ele
   
 ## <a name="msbuild-special-characters"></a>Caracteres especiais do MSBuild
 
- Um exemplo de quando os caracteres especiais são usados é no atributo `Include` de listas de itens. Por exemplo, a seguinte lista de itens declara dois itens: *MyFile.cs* e *MyClass.cs*.  
+ Um exemplo de quando os caracteres especiais são usados é no atributo `Include` de listas de itens. Por exemplo, a lista de itens a seguir declara dois itens: *MyFile.cs* e *MyClass.cs*.  
   
 ```xml  
 <Compile Include="MyFile.cs;MyClass.cs"/>  

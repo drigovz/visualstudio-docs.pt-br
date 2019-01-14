@@ -1,8 +1,6 @@
 ---
 title: Comparando propriedades e itens | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e27f9973bc24cf7d45e86e9982d40cdb20a367ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942353"
 ---
 # <a name="compare-properties-and-items"></a>Comparar propriedades e itens
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.  
@@ -55,7 +53,7 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
   
  adiciona o destino CustomBuild à lista de destinos, dando a `BuildDependsOn` o valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- A partir do MSBuild 4.0, a injeção de dependência de destino é preterida. Em vez disso, use os atributos `AfterTargets` e `BeforeTargets`. Para obter mais informações, confira [Ordem de build de destino](../msbuild/target-build-order.md).  
+ A partir do MSBuild 4.0, a injeção de dependência de destino é preterida. Em vez disso, use os atributos `AfterTargets` e `BeforeTargets`. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversões entre cadeias de caracteres e listas de itens  
  O MSBuild executa conversões em e de tipos de item e valores de cadeias de caracteres conforme necessário. Para ver como uma lista de itens pode se tornar um valor de cadeia de caracteres, considere o que acontece quando um tipo de item é usado como o valor de uma propriedade do MSBuild:  
@@ -69,7 +67,7 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
 </PropertyGroup>  
 ```  
   
- O tipo de item OutputDir tem um atributo `Include` com o valor "KeyFiles\\;Certificates\\". O MSBuild analisa essa cadeia de caracteres em dois itens: KeyFiles e Certificates\\. Quando o tipo de item OutputDir é usado como o valor da propriedade OutputDirList, o MSBuild converte ou mescla o tipo de item na cadeia de caracteres separados por ponto-e-vírgula "KeyFiles\\;Certificates\\".  
+ O tipo de item OutputDir tem um atributo `Include` com o valor "KeyFiles\\;Certificates\\". O MSBuild analisa essa cadeia de caracteres em dois itens: Keyfiles e Certificates\\. Quando o tipo de item OutputDir é usado como o valor da propriedade OutputDirList, o MSBuild converte ou mescla o tipo de item na cadeia de caracteres separados por ponto-e-vírgula "KeyFiles\\;Certificates\\".  
   
 ## <a name="properties-and-items-in-tasks"></a>Propriedades e itens em tarefas  
  As propriedades e os itens são usados como entradas e saídas para tarefas do MSBuild. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).  

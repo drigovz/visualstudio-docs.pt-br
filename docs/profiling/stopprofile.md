@@ -1,8 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b44726b2ce1f7a0b699898edfc3a53371163168e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952229"
 ---
 # <a name="stopprofile"></a>StopProfile
 A função `StopProfile` define o contador como 0 (off) para o nível de criação de perfil especificado.  
@@ -46,7 +44,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
  O identificador de processo ou thread gerado pelo sistema.  
   
 ## <a name="property-valuereturn-value"></a>Valor da propriedade/valor retornado  
- A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor retornado pode ser um dos seguintes:  
+ A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  
@@ -67,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informações de função  
- Cabeçalho: declarado em VSPerf.h  
+ Cabeçalho: Declarado em VSPerf.h  
   
  Biblioteca de importação: VSPerf.lib  
   

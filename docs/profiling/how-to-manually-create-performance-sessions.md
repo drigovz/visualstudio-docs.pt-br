@@ -1,8 +1,6 @@
 ---
-title: Como criar manualmente sessões de desempenho | Microsoft Docs
-ms.custom: ''
+title: 'Como: Criar manualmente sessões de desempenho | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.dllpage
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0bf92b01828764652cd75de648b1def01bb722c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c186fdd2c54697b5cda7845547eb33f3fca16ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819673"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Como criar manualmente sessões de desempenho
+# <a name="how-to-manually-create-performance-sessions"></a>Como: Criar sessões de desempenho manualmente
 Você pode criar manualmente uma sessão de desempenho. Não é necessário abrir um projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para fazer isso. Para obter mais informações, confira [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md).  
   
 ### <a name="to-manually-create-a-performance-session"></a>Para criar manualmente uma sessão de desempenho  

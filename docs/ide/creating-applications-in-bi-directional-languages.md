@@ -2,7 +2,6 @@
 title: Criando aplicativos em idiomas bidirecionais
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 26c3ea5073d4b53c0a9d75c18722f1569aff8646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891609"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Como criar aplicativos em idiomas bidirecionais
 
@@ -43,7 +42,7 @@ ms.locfileid: "48863628"
 
 -   **Nomes de objeto** É possível usar idiomas bidirecionais para atribuir nomes a soluções, projetos, arquivos, pastas e assim por diante. No código, é possível usar idiomas bidirecionais para os nomes de variáveis, classes, objetos, atributos, metadados e outros elementos.
 
--   **Codificação do arquivo** é possível salvar e abrir arquivos com uma codificação Unicode ou específica a um idioma. Para saber mais, confira [Como salvar e abrir arquivos com codificação](../ide/how-to-save-and-open-files-with-encoding.md).
+-   **Codificação do arquivo** é possível salvar e abrir arquivos com uma codificação Unicode ou específica a um idioma. Para obter mais informações, confira [Como: Salvar e abrir arquivos com codificação](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="features-with-limited-or-no-support"></a>Recursos com suporte limitado ou sem suporte
  Outros recursos comuns a aplicativos de idiomas bidirecionais não tem suporte completo no Visual Studio, ou em alguns casos, não tem nenhum suporte. Elas incluem:

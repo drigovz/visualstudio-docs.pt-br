@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf719b100aa7c216de2903c05a24a3abcca244
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873503"
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Criar um projeto de IA da galeria do Azure Machine Learning no Visual Studio
 
@@ -42,13 +41,13 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), �
 
 4. Para este início rápido, selecione o exemplo "**MNIST usando TensorFlow**" e clique em **Instalar**. Forneça o seguinte:
 
-   - **Grupo de Recursos**: grupo de recursos do Azure em que os metadados serão armazenados
-   - **Conta**: conta de experimentação do Azure Machine Learning
+   - **Grupo de Recursos**: Grupo de recursos do Azure em que os metadados serão armazenados
+   - **Conta**: Conta de experimentação do Azure Machine Learning
    - **Workspace**: Workspace do Azure Machine Learning
-   - **Tipo de Projeto**: a estrutura de aprendizado de máquina. Nesse caso, escolha o **TensorFlow**
+   - **Tipo de Projeto**: A estrutura de aprendizado de máquina. Nesse caso, escolha o **TensorFlow**
    - **Adicionar à Solução**: determina se é necessário adicionar à sua solução do Visual Studio atual ou uma criar e abrir uma nova solução
-   - **Caminho do Projeto**: local em que o código será salvo
-   - **Nome do Projeto**: tipo **TensorFlowMNIST**
+   - **Caminho do Projeto**: Localização em que o código será salvo
+   - **Nome do Projeto**: Digite **TensorFlowMNIST**
 
    ![Projeto resultante ao usar o modelo de aplicativo do Python](media/create-project-gallery/new-AzureSampleProject.png)
 

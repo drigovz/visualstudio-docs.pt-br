@@ -2,7 +2,6 @@
 title: Análise de Código, Designer de Projeto
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860122"
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
 Contém a ferramenta de análise de código que você pode optar por executar em seu código. A ferramenta relata informações sobre seus assemblies, como violações de regras de programação e design estabelecidas nas Diretrizes de Design do Microsoft .NET Framework.
@@ -78,4 +77,4 @@ Contém a ferramenta de análise de código que você pode optar por executar em
 
 - [Avisos da análise de código para código gerenciado](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Visão geral da análise de código para código gerenciado](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Passo a passo: analisando código gerenciado em busca de defeitos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Passo a passo: Analisando o código gerenciado em busca de defeitos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

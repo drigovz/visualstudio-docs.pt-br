@@ -1,8 +1,7 @@
 ---
-title: 'Passo a passo: Criando uma bola de bilhar realista em 3D'
+title: 'Passo a passo: Criando uma bola de bilhar 3D realista'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913472"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Explicação passo a passo: criar uma bola de bilhar realista em 3D
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Passo a passo: Criar uma bola de bilhar 3D realista
 
 Este passo a passo demonstra como criar uma bola de bilhar realista em 3D usando o Designer de Sombreador e o Editor de Imagens no Visual Studio. A aparência 3D da bola de bilhar é obtida pela combinação de várias técnicas de sombreador com recursos de textura adequados.
 
@@ -79,7 +78,7 @@ Verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo
 
 3. Aplique a textura que você criou no procedimento anterior ao configurar as propriedades de textura. Defina o valor da propriedade **Textura** do nó **Amostra de Textura** em **Texture1** e, em seguida, especifique o arquivo de textura usando a propriedade **Filename** do grupo de propriedades **Texture1** na mesma janela de propriedade.
 
-   Para obter mais informações sobre como aplicar uma textura no sombreador, confira [Como criar um sombreador de textura básica](../designers/how-to-create-a-basic-texture-shader.md).
+   Para obter mais informações sobre como aplicar uma textura no sombreador, confira [Como: Criar um sombreador de textura básica](../designers/how-to-create-a-basic-texture-shader.md).
 
    Sua bola de bilhar agora deve ser semelhante a esta:
 
@@ -101,7 +100,7 @@ Em gráficos de computador, *modelos de iluminação* — aproximações simplif
 
 - Opcionalmente, você pode ajustar o comportamento da iluminação configurando a propriedade **MaterialDiffuse** do gráfico do sombreador. Para acessar as propriedades do gráfico do sombreador, escolha uma área vazia da superfície de design e, em seguida, localize a propriedade que você deseja acessar na janela **Propriedades**.
 
-Para obter mais informações sobre como aplicar a iluminação Lambert no sombreador, confira [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
+Para obter mais informações sobre como aplicar a iluminação Lambert no sombreador, confira [Como: Criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Com a iluminação Lambert aplicada, a bola de bilhar deve ser semelhante a esta:
 
@@ -123,7 +122,7 @@ O modelo de iluminação Phong se baseia no modelo de iluminação Lambert para 
 
 2. Opcionalmente, você pode ajustar a maneira que o realce especular se comporta ao configurar as propriedades especulares (**MaterialSpecular** e **MaterialSpecularPower**) do gráfico do sombreador. Para acessar as propriedades do gráfico do sombreador, escolha uma área vazia da superfície de design e, em seguida, localize a propriedade que você deseja acessar na janela **Propriedades**.
 
-   Para obter mais informações sobre como aplicar realces especulares no sombreador, confira [Como criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).
+   Para obter mais informações sobre como aplicar realces especulares no sombreador, confira [Como: Criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).
 
    Com a iluminação especular aplicada, sua bola de bilhar deve ser semelhante a esta:
 
@@ -211,8 +210,8 @@ A primeira etapa é criar uma textura de mapa de cubo. Em muitos tipos de aplica
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)
-- [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)
+- [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Designer de Sombreador](../designers/shader-designer.md)
 - [Editor de Imagens](../designers/image-editor.md)
 - [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

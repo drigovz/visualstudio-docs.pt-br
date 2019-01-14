@@ -3,7 +3,6 @@ title: Opções de ferramentas R
 description: Referência para as opções no Visual Studio para a linguagem R e recursos associados.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
@@ -15,12 +14,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2d48f59be1bb8e41e5cb587a6c5defcfb6e3227f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37342736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900555"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opções das Ferramentas do R para Visual Studio
 
@@ -30,10 +29,10 @@ As configurações são acessadas pelo menu **Ferramentas do R** > **Opções** 
 
 Opções e configurações específicas para o R são acessadas usando os métodos abaixo. É necessário selecionar a caixa **Mostrar todas as configurações** na parte inferior da caixa de diálogo **Opções** para que todas essas seções sejam exibidas.
 
-- Opções de formatação de código (acesse o menu [Opções do Editor](editing-r-code-in-visual-studio.md#editor-options): **Ferramentas** > **Opções** e, em seguida, selecione **Editor de Texto** > **R** > **Formatação**
-- Opções de linter (acesse o menu [Linting](linting-r-code.md)): **Ferramentas** > **Opções** e, em seguida, selecione **Editor de Texto** > **R** > **Lint**
-- Opções avançadas do editor ([descritas neste artigo](#text-editor--r--advanced-options)): acesse o menu **Ferramentas** > **Opções** e, em seguida, selecione **Editor de Texto** > **R** > **Avançadas**
-- Opções comportamentais ([descritas neste artigo](#r-tools--advanced-options)): menu **Ferramentas do R** > **Opções** ou **Ferramentas** > **Opções** e, em seguida, role até **Ferramentas do R**.
+- Opções de formatação de código (veja [Opções do editor](editing-r-code-in-visual-studio.md#editor-options): Menu **Ferramentas** > **Opções**, depois selecione **Editor de texto** > **R** > **Formatação**
+- Opções de linter (veja [Linting](linting-r-code.md)): Menu **Ferramentas** > **Opções**, depois selecione **Editor de texto** > **R** > **Lint**
+- Opções avançadas do editor ([descrito neste artigo](#text-editor--r--advanced-options)): Menu **Ferramentas** > **Opções**, depois selecione **Editor de texto** > **R** > **Avançado**
+- Opções de comportamento ([descritas neste artigo](#r-tools--advanced-options)): Menu **Ferramentas** > **Opções** ou **Ferramentas** > **Opções**, depois role até **Ferramentas do R**.
 
 O comando **Ferramentas do R** > **Configurações da Ciência de Dados** também afeta inúmeras configurações diferentes no Visual Studio, em geral. Esse comando será descrito na próxima seção.
 
@@ -41,7 +40,7 @@ O comando **Ferramentas do R** > **Configurações da Ciência de Dados** també
 
 ## <a name="r-tools--data-science-settings"></a>Ferramentas do R > Configurações da Ciência de Dados
 
-O item de menu **Ferramentas do R > Configurações da Ciência de Dados** configura o IDE do Visual Studio com um layout otimizado para as necessidades dos cientistas de dados. Especificamente, essa opção abre as janelas [Interativo](interactive-repl-for-r-in-visual-studio.md), [Gerenciador de Variáveis](variable-explorer.md) e [Espaços de trabalho](r-workspaces-in-visual-studio.md):
+O item de menu **Ferramentas do R > Configurações da Ciência de Dados** configura o IDE do Visual Studio com um layout otimizado para as necessidades dos cientistas de dados. Especificamente, essa opção abre as janelas [Interativo](interactive-repl-for-r-in-visual-studio.md), [Gerenciador de Variáveis](variable-explorer.md) e [Workspaces](r-workspaces-in-visual-studio.md):
 
 ![Layout da janela do cientista de dados no Visual Studio](media/installation-data-scientist-layout-result.png)
 
@@ -121,12 +120,12 @@ Essas opções controlam como os valores são manipulados no [Gerenciador de Var
 | Página de código | `(OS Default)` | Define a página de código (localidade) para R. Por padrão, ele usa a localidade subjacente do sistema operacional. |
 | Espelho CRAN | `(Use .Rprofile)` | Define o espelho CRAN padrão para instalações de pacote. A configuração padrão de `Use .Rprofile` respeita as configurações de Espelho CRAN no arquivo *.RProfile*. |
 
-### <a name="workspace"></a>Espaço de trabalho
+### <a name="workspace"></a>Workspace
 
 | Opção | Valor padrão | Descrição |
 | --- | --- | --- |
-| Carregar espaço de trabalho quando o projeto é aberto | `No` | Definir como `Yes` permite carregar dados da sessão do arquivo *.RData* no ambiente global quando o projeto é aberto. |
-| Prompt para salvar espaço de trabalho ao reiniciar | `Yes` | Definir como `No` desabilita o prompt para salvar o espaço de trabalho ao clicar no botão Redefinir na janela interativa. |
-| Salvar espaço de trabalho quando o projeto é fechado | `No` | Definir como `Yes` permite salvar o ambiente global no arquivo *.RData* quando o projeto é fechado. |
-| Mostrar caixa de diálogo de confirmação antes de alternar espaços de trabalho | `Yes` | Definir como `No` desabilita o prompt de confirmação do usuário ao alternar entre espaços de trabalho diferentes. Confira [Alternar entre espaços de trabalho](r-workspaces-in-visual-studio.md#switch-between-workspaces) |
+| Carregar workspace quando o projeto é aberto | `No` | Definir como `Yes` permite carregar dados da sessão do arquivo *.RData* no ambiente global quando o projeto é aberto. |
+| Prompt para salvar workspace ao reiniciar | `Yes` | Definir como `No` desabilita o prompt para salvar o workspace ao clicar no botão Redefinir na janela interativa. |
+| Salvar workspace quando o projeto é fechado | `No` | Definir como `Yes` permite salvar o ambiente global no arquivo *.RData* quando o projeto é fechado. |
+| Mostrar caixa de diálogo de confirmação antes de alternar workspaces | `Yes` | Definir como `No` desabilita o prompt de confirmação do usuário ao alternar entre workspaces diferentes. Confira [Alternar entre workspaces](r-workspaces-in-visual-studio.md#switch-between-workspaces) |
 | Mostrar indicador de carga do computador | `False` | Controla a visibilidade do indicador de carga CPU/Memória/Rede na barra de status. Como o indicador incorre em tráfego de rede, é útil manter isto `False` em cenários limitados remotos. Alterar essa opção requer a reinicialização do Visual Studio. |

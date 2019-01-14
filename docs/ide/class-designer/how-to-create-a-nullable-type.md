@@ -1,8 +1,7 @@
 ---
-title: Como criar um tipo anulável (Designer de Classe)
+title: 'Como: Criar um tipo que permite valor nulo (Designer de Classe)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -16,14 +15,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 461bcef015169cfd9506d301111859b53fdce600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953031"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Como criar um tipo que permite valor nulo no Designer de Classe
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Como: Criar um tipo que permite valor nulo no Designer de Classe
 
 Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa é uma prática comum em bancos de dados, em que alguns campos podem não receber nenhum valor. Por exemplo, é possível atribuir um valor nulo a um campo de banco de dados para indicar que ele ainda não recebeu um valor.
 
@@ -92,5 +91,5 @@ Para obter mais informações sobre tipos que permitem valor nulo no C#, confira
 - <xref:System.Nullable%601>
 - [Tipos que permitem valor nulo](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Usando tipos que permitem valor nulo](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
-- [Como identificar um tipo que permite valor nulo](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
+- [Como: Identificar um tipo que permite valor nulo](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
 - [Tipos de Valor Anulável](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

@@ -9,22 +9,21 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832132"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Como incluir gravações da tela e de voz durante testes usando as configurações de teste
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Como: Incluir gravações da tela e de voz durante testes usando as configurações do teste
 
 No editor de configuração do Visual Studio, é possível configurar o adaptador de dados de diagnóstico que grava a tela e a voz do usuário que está executando o teste. Esse adaptador de dados de diagnóstico salva uma gravação de voz e tela da sessão da área de trabalho durante o teste. A gravação é salva com o resultado do teste ou pode ser anexada a um bug. Outros membros da equipe podem usar a gravação para isolar defeitos no aplicativo que sejam difíceis de reproduzir.
 
 > [!WARNING]
 > As gravações de tela e voz não dão suporte a várias configurações de monitor.
 
-O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por exemplo, se executar um teste de IU codificado remotamente, você talvez queira gravar a área de trabalho para ver o teste de IU codificado à medida que ele é executado. Para obter informações sobre como capturar uma gravação de tela e de voz remotamente, confira [Como configurar o agente de teste para executar testes que interagem com a área de trabalho](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por exemplo, se executar um teste de IU codificado remotamente, você talvez queira gravar a área de trabalho para ver o teste de IU codificado à medida que ele é executado. Para obter mais informações sobre como capturar uma tela e gravação de voz remotamente, confira [Como: Configurar o agente de teste para executar testes que interagem com a área de trabalho](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -52,11 +51,11 @@ O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por
 
 6.  Em **Qualidade de Gravação da Tela**, configure as seguintes opções da lista suspensa:
 
-    1.  **Taxa de quadros:** especifique quantos quadros por segundo você deseja usar na gravação de voz e tela. O valor padrão é 4 quadros por segundo. Valores entre 2 e 20 podem ser especificados.
+    1.  **Taxa de quadros:** Especifique quantos quadros por segundo você deseja usar na gravação de voz e tela. O valor padrão é 4 quadros por segundo. Valores entre 2 e 20 podem ser especificados.
 
-    2.  **Taxa de bits:** especifique quantos quilobytes serão usados por segundo na gravação de voz e tela. O valor padrão é 512. Valores entre 512 e 10.000 podem ser especificados.
+    2.  **Taxa de bits:** Especifique quantos quilobytes serão usados por segundo na gravação de voz e tela. O valor padrão é 512. Valores entre 512 e 10.000 podem ser especificados.
 
-    3.  **Qualidade (1-100):** você pode especificar a qualidade da gravação de voz e tela selecionando um intervalo entre 1 e 100. O padrão é 50 (intermediário).
+    3.  **Qualidade (1-100):** Você pode especificar a qualidade da gravação de voz e tela selecionando um intervalo entre 1 e 100. O padrão é 50 (intermediário).
 
 7.  Escolha **OK**. As configurações do coletor de rastreamento de diagnóstico agora estão definidas e salvas em suas configurações de teste.
 

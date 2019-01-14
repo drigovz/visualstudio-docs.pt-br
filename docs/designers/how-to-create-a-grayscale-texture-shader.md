@@ -1,8 +1,7 @@
 ---
-title: Como criar um sombreador de textura em escala de cinza
+title: 'Como: Criar um sombreador de textura em escala de cinza'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 0634d08f386c638cf141b6e8085982b74377ab55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933535"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>Como criar um sombreador de textura em escala de cinza
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Como: Criar um sombreador de textura em escala de cinza
 
 Este artigo demonstra como usar o Designer de Sombreador e a DGSL (Directed Graph Shader Language) para criar um sombreador de textura em escala de cinza. Esse sombreador modifica o valor de cor RGB da amostra de textura e, em seguida, usa-o junto com o valor alfa inalterado para definir a cor final.
 
@@ -27,7 +26,7 @@ Você pode implementar um sombreador de textura em escala de cinza, modificando 
 
 Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
-1.  Crie um sombreador de textura básico, conforme a descrição em [Como criar um sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
+1.  Crie um sombreador de textura básica, conforme descrito em [Como: Criar um sombreador de textura básica](../designers/how-to-create-a-basic-texture-shader.md).
 
 2.  Desconecte o terminal **RGB** do nó **Amostra de Textura** do terminal **RGB** do nó **Cor Final**. No modo de **Seleção**, escolha o terminal **RGB** do nó **Amostra de Textura** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
 
@@ -51,8 +50,8 @@ Determinadas formas podem fornecer melhores visualizações para alguns sombread
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)
+- [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)
 - [Editor de Imagens](../designers/image-editor.md)
 - [Designer de Sombreador](../designers/shader-designer.md)
 - [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

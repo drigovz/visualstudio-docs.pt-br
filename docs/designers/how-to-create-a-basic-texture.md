@@ -1,8 +1,7 @@
 ---
-title: Como criar uma textura básica
+title: 'Como: Criar uma textura básica'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4bd1d34ef2dc31935038bb1be30d548c58208fd
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 680ec789c4a52e0855651fbe4d5caed7b945a8e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822094"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Como criar uma textura básica
+# <a name="how-to-create-a-basic-texture"></a>Como: Criar uma textura básica
 
 Este artigo demonstra como usar o Editor de imagens para criar uma textura básica, incluindo as seguintes atividades:
 
@@ -87,7 +86,7 @@ A textura de destino de "alvo" foi concluída. Aqui está a imagem final, mostra
 
 ![A textura de destino de "alvo" completa](../designers/media/gfx_image_demo_bullseye.png)
 
-Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, confira [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter mais informações, veja [Como: Criar e modificar os níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Consulte também
 

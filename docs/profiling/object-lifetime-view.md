@@ -1,8 +1,6 @@
 ---
 title: Exibição tempo de vida do objeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8175a8337f15517e0b9c88ae3f5405148a4b22b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934963"
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
 A exibição Tempo de Vida do Objeto está disponível quando **Também coletar dados de tempo de vida do objeto .NET** está marcada nas páginas de propriedades da **Sessão de Desempenho**.  

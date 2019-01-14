@@ -1,8 +1,6 @@
 ---
 title: Coletando dados de memória com base em serviços do .NET Framework usando a linha de comando do criador de perfil | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8989209a5abefb05f0f3f9b90357ab0f2a895786
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d9b76f779af88a6ad02dc61d73a0beb31691c03a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902718"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Coletar dados de memória por meio de serviços do .NET Framework usando a linha de comando do criador de perfil
 Esta seção descreve os procedimentos e as opções para coletar alocação de memória e dados de tempo de vida do objeto para um serviço [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usando o método de amostragem na linha de comando.  
@@ -24,8 +22,8 @@ Esta seção descreve os procedimentos e as opções para coletar alocação de 
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Anexar o criador de perfil a um serviço .NET**|-   [Como anexar o criador de perfil a um serviço do .NET para coletar dados de memória](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrument a .NET service and collect .NET memory data (Instrumentar um serviço do .NET e coletar dados de memória do .NET)**|-   [Como instrumentar um serviço do .NET Framework e coletar dados de memória](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Anexar o criador de perfil a um serviço .NET**|-   [Como: Anexar o criador de perfil a um serviço do .NET para coletar dados de memória](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrument a .NET service and collect .NET memory data (Instrumentar um serviço do .NET e coletar dados de memória do .NET)**|-   [Como: Instrumentar um serviço do .NET Framework e coletar dados de memória](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletar dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tarefas relacionadas

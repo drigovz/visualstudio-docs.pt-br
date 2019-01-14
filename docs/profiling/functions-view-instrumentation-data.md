@@ -1,8 +1,6 @@
 ---
 title: Exibição de Funções – Dados de Instrumentação | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Function view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7787e974b093156b27b2ace4353e94db05063d7d
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 0cc8ac1323e07de333cfe12546da8733e6742801
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962617"
 ---
 # <a name="functions-view---instrumentation-data"></a>Exibição funções – dados de instrumentação
 A exibição de relatório de Funções lista dados de criação perfil segundo o nome da função.  
@@ -84,7 +82,7 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição de Funções](../profiling/functions-view-sampling-data.md)   
  [Exibição Funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Exibição Funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

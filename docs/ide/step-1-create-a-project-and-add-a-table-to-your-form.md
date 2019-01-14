@@ -1,9 +1,7 @@
 ---
 title: 'Etapa 1: Criar um projeto e adicionar uma tabela ao formulário'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f83ce585120131d63c07e6db2ed6b90f32cc0876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da8d951c7bbb96d1c955d9254756ea80925d4969
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882770"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 
@@ -91,6 +89,6 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, veja [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Para retornar ao tópico de visão geral, veja [Tutorial 3: Criar um jogo da memória](../ide/tutorial-3-create-a-matching-game.md).
+-   Para retornar ao tópico de visão geral, confira [Tutorial 3: Criar um jogo da memória](../ide/tutorial-3-create-a-matching-game.md).
