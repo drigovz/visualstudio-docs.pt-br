@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: salvar dados em uma transação'
+title: 'Passo a passo: Salvando dados em uma transação'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: eddd0252bca5cea3f683f0e00133b8e6e66392f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952174"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: salvar dados em uma transação
+# <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: Salvando dados em uma transação
 
 Este passo a passo demonstra como salvar dados em uma transação usando o <xref:System.Transactions> namespace. Neste passo a passo, você criará um aplicativo do Windows Forms. Você usará o Assistente de configuração de fonte de dados para criar um conjunto de dados de duas tabelas no banco de dados de exemplo Northwind. Você adicionará controles ligados a dados a um formulário do Windows, e você modificará o código para do BindingNavigator botão Salvar atualizar o banco de dados dentro de um TransactionScope.
 
@@ -76,7 +75,7 @@ Esta etapa usa a **Data Source Configuration Wizard** para criar uma fonte de da
 
     -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         -ou-
+         - ou -
 
     -   Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão** e criar uma conexão com o banco de dados Northwind.
 

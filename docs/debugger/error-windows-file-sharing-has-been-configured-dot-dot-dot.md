@@ -1,8 +1,6 @@
 ---
-title: 'Erro: O compartilhamento de arquivos do Windows foi configurado... | Microsoft Docs'
-ms.custom: ''
+title: 'Erro: Compartilhamento de arquivos do Windows foi configurado... | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942207"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>Erro: o compartilhamento de arquivos do Windows foi configurado...
+# <a name="error-windows-file-sharing-has-been-configured"></a>Erro: O compartilhamento de arquivos do Windows foi configurado...
 O compartilhamento de arquivos do Windows foi configurado de forma que você se conectará ao computador remoto usando um nome do usuário diferente. Isso é incompatível com a depuração remota  
   
  A configuração de compartilhamento de arquivos atual está configurada para conectar ao computador remoto usando um nome do usuário diferente. A depuração remota não é possível nesse cenário.  
@@ -40,7 +38,7 @@ O compartilhamento de arquivos do Windows foi configurado de forma que você se 
   
      . Desconecte-se do computador remoto e reconfigure o compartilhamento de arquivos para se conectar ao outro computador usando seu nome de conta:  
   
-    1.  Sobre o **iniciar** , aponte para **Acessórios**e, em seguida, clique em **Prompt de comando**.  
+    1.  No menu **Iniciar**, aponte para **Acessórios** e clique em **Prompt de Comando**.  
   
     2.  No prompt de comando do Windows, digite:  
   

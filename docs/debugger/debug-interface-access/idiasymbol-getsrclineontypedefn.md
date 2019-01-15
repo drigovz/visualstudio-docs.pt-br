@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c2e105848a8c56f86eb71ef4c57dcd75c5f604
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3f0a185a04f1cbcfb6b8c53256d23e7beac22f50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911033"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Recupera o número de arquivos e linhas de origem que indicam onde um tipo especificado definido pelo usuário é definido.  
+Recupera o número de arquivo e de linha de código-fonte que indicam onde um tipo especificado definido pelo usuário é definido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -31,10 +29,10 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppResult`  
- [out] Um `IDiaLineNumber` objeto que contém o número de arquivos e linhas de origem onde definido pelo usuário.  
+ [out] Um `IDiaLineNumber` objeto que contém o número de arquivo e linha do código-fonte em que o definido pelo usuário.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

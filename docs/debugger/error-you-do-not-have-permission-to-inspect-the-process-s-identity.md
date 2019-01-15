@@ -1,8 +1,6 @@
 ---
-title: 'Erro: Você não tem permissão para inspecionar o processo&#39;identidade de s | Microsoft Docs'
-ms.custom: ''
+title: 'Erro: Você não tem permissão para inspecionar o processo de&#39;identidade de s | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -14,35 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f37cf6f6a1a72435b549942fa03d821c900718a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2424379a016a80d251b53e79799fd0d39e059218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472004"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941856"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erro: Você não tem permissão para inspecionar o processo&#39;identidade s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erro: Você não tem permissão para inspecionar o processo de&#39;identidade de s
 Você não tem permissão para inspecionar a identidade do processo. Isto pode ocorrer devido à configuração do sistema.  
   
  O depurador não pôde inspecionar a identidade do processo, que são informações necessárias para depuração. A causa mais provável é que os Serviços de Terminal estão sendo desabilitados. O serviço dos Serviços de Terminal é habilitado por padrão. Siga estas etapas para habilitá-lo novamente.  
   
 ### <a name="to-enable-terminal-services"></a>Para habilitar Serviços de Terminal  
   
-1.  Clique em **iniciar** e, em seguida, escolha **painel de controle**.  
+1.  Clique em **Iniciar** e escolha **Painel de Controle**.  
   
-2.  No painel de controle, escolha **alternar para modo de exibição clássico**, se necessário e, em seguida, clique duas vezes em **ferramentas administrativas**.  
+2.  No Painel de Controle, escolha **Alternar para o Modo de Exibição Clássico** se necessário e clique duas vezes em **Ferramentas Administrativas**.  
   
-3.  No **ferramentas administrativas** janela, clique duas vezes em **gerenciamento do computador**.  
+3.  Na janela **Ferramentas Administrativas**, clique duas vezes em **Gerenciamento de Computador**.  
   
-4.  Na janela de gerenciamento do computador, expanda o **serviços e aplicativos** nó.  
+4.  Na janela Gerenciamento de Computador, expanda o nó **Serviços e Aplicativos**.  
   
-5.  Sob o **serviços e aplicativos**, clique em **serviços**.  
+5.  Em **Serviços e Aplicativos**, clique em **Serviços**.  
   
      Uma lista de serviços aparece no painel direito.  
   
-6.  No **serviços** lista, clique no **dos serviços de Terminal** e, em seguida, escolha **propriedades**.  
+6.  Na lista **Serviços**, clique com o botão direito do mouse em **Serviços de Terminal** e escolha **Propriedades**.  
   
-7.  No **propriedades de serviços de Terminal** janela, vá para o **geral** guia e defina **o tipo de inicialização** para **Manual**.  
+7.  No **propriedades de serviços de Terminal** janela, vá para o **gerais** guia e defina **tipo de inicialização** para **Manual**.  
   
 8.  Clique em **OK**.  
   
@@ -52,15 +50,15 @@ Você não tem permissão para inspecionar a identidade do processo. Isto pode o
   
 ### <a name="to-enable-remote-desktop"></a>Para habilitar a Área de Trabalho Remota  
   
-1.  Clique em **iniciar** e, em seguida, clique com botão direito **meu computador**.  
+1.  Clique em **Iniciar** e clique com o botão direito do mouse em **Meu Computador**.  
   
 2.  Escolha **Propriedades**.  
   
-     O **propriedades do sistema** janela é exibida.  
+     A janela **Propriedades do Sistema** é exibida.  
   
-3.  Clique em **remoto**.  
+3.  Clique em **Remoto**.  
   
-4.  Em **área de trabalho remota**, selecione **permitem que os usuários se conectem remotamente a este computador**.  
+4.  Em **Área de Trabalho Remota**, selecione **Permitir que usuários se conectem remotamente a este computador**.  
   
 5.  Clique em **OK**.  
   

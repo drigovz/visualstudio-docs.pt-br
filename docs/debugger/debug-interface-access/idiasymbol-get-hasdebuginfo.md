@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hasdebuginfo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e442bab5b0c7670ca3b42fa24f396252a46331
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 738428e2d1d26e3f94398d3b1967f10140fd668b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985885"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 Recupera um sinalizador que especifica se o [Compiland](../../debugger/debug-interface-access/compiland.md) contém informações de depuração.  

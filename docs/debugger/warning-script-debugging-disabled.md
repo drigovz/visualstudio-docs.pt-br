@@ -1,8 +1,6 @@
 ---
-title: 'Aviso: Depuração de Script desabilitada | Microsoft Docs'
-ms.custom: ''
+title: 'Aviso: Depuração de script desabilitada | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
@@ -17,27 +15,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d491d9c3b81f508523bf87d88c0bad27822e4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9b2cff26e977d6d7e1079e558ed0dc40fa305f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940434"
 ---
-# <a name="warning-script-debugging-disabled"></a>Aviso: depuração de script desabilitada
+# <a name="warning-script-debugging-disabled"></a>Aviso: Depuração de script desabilitada
 A depuração de scripts está atualmente desabilitada no Internet Explorer  
   
  Esse aviso ocorre quando você tenta depurar o script sem habilitar a depuração de scripts no Internet Explorer. Por razões de segurança, o Internet Explorer desabilita a depuração de scripts por padrão.  
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Para habilitar a depuração de scripts no Internet Explorer  
   
-1.  No Internet Explorer **ferramentas** menu, escolha **opções da Internet**.  
+1.  No menu do Internet Explorer **Ferramentas**, escolha **Opções da Internet**.  
   
 2.  Na caixa de diálogo **Opções da Internet** , clique na guia **Avançado** .  
   
-3.  No **avançado** guia, examinar o **configurações** caixa, **navegação** categoria.  
+3.  Na guia **Avançado**, examine a caixa **Configurações**, categoria **Navegação**.  
   
-4.  Limpar **Desabilitar depuração de scripts (Internet Explorer)**.  
+4.  Limpe **Desabilitar depuração de scripts (Internet Explorer)**.  
   
 5.  Clique em **OK**.  
   
@@ -46,4 +44,4 @@ A depuração de scripts está atualmente desabilitada no Internet Explorer
      As novas configurações serão aplicadas.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como anexar ao script](../debugger/how-to-attach-to-script.md)
+ [Como: Anexar ao script](../debugger/how-to-attach-to-script.md)

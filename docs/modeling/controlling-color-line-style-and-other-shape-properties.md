@@ -8,20 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929692"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269313"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controlando cor, estilo de linha e outras propriedades de formas
-Algumas propriedades de forma, como cor pode ser 'exposta' - ou seja, vinculada a uma propriedade de domínio da forma. Outros têm a ser controlada diretamente.
+
+Algumas propriedades da forma como a cor podem ser 'expostas'. Ou seja, as propriedades podem ser vinculadas a uma propriedade de domínio da forma. Outros têm a ser controlada diretamente.
 
 ## <a name="exposing-a-property"></a>Expor uma propriedade
  Algumas propriedades da forma como a cor podem ser vinculadas ao valor de uma propriedade de domínio.
 
- Na definição de DSL, selecione uma forma, conector ou classe de diagrama. No menu de contexto, escolha **adicionar exposto**e, em seguida, escolha a propriedade desejada, como cor de preenchimento.
+ Na definição de DSL, selecione uma forma, conector ou classe de diagrama. No menu de atalho, escolha **adicionar exposto**e, em seguida, escolha a propriedade desejada, como cor de preenchimento.
 
  A forma agora tem uma propriedade de domínio que você pode definir no código do programa ou como um usuário.
 

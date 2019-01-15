@@ -1,8 +1,6 @@
 ---
-title: 'Como: instalar pré-requisitos com um aplicativo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Instalar pré-requisitos com um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e363b021f8dfb82aa641a1baac4d2f33e0bd3d2e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907846"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Como: instalar pré-requisitos com um aplicativo ClickOnce
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Como: Instalar pré-requisitos com um aplicativo ClickOnce
 Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos exigem que a versão correta do .NET Framework está instalada em um computador antes que eles possam ser executados; muitos aplicativos têm também outros pré-requisitos. Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, você pode escolher um conjunto de componentes de pré-requisitos sejam empacotados juntamente com seu aplicativo. No momento da instalação, uma verificação será executada para cada pré-requisito determinar se ele já existe; Se não, ele será instalado antes de instalar o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
   
  Em vez de empacotamento e publicação de pré-requisitos, você também pode especificar um local de download para os componentes. Por exemplo, em vez de incluir pré-requisitos com todos os aplicativos que você publicar, você pode usar um compartilhamento de arquivos centralizado ou o local da Web que contém os instaladores para todos os seus pré-requisitos — no momento da instalação, os componentes serão baixados e instalado a partir desse local.  
   
 > [!IMPORTANT]
->  Você deve adicionar pacotes de instalador de pré-requisitos para seu computador de desenvolvimento antes de publicar seu primeiro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Para obter mais informações, consulte [como: incluir pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+>  Você deve adicionar pacotes de instalador de pré-requisitos para seu computador de desenvolvimento antes de publicar seu primeiro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Para obter mais informações, confira [Como: Incluir pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Pré-requisitos são gerenciados na **pré-requisitos** caixa de diálogo, acessível a partir o **publicar** painel do **Project Designer**.  
   
@@ -40,7 +38,7 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Para especificar os pré-requisitos para instalar com um aplicativo ClickOnce  
   
-1.  Com um projeto selecionado no **Gerenciador de soluções**diante a **Project** menu, clique em **propriedades**.  
+1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
 2.  Selecione o **publicar** painel.  
   
@@ -54,7 +52,7 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
   
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Para especificar um local de download diferentes para pré-requisitos  
   
-1.  Com um projeto selecionado no **Gerenciador de soluções**diante a **Project** menu, clique em **propriedades**.  
+1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
 2.  Selecione o **publicar** painel.  
   
@@ -71,4 +69,4 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
   
 ## <a name="see-also"></a>Consulte também  
  [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

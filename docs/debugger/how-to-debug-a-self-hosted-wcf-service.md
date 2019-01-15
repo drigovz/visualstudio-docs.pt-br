@@ -1,8 +1,6 @@
 ---
-title: 'Como: depurar um serviço WCF auto-hospedado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar um serviço WCF auto-hospedado | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1a847071fa62e0ae168a5c830bd7f52a80edf740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956121"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Como depurar um serviço WCF auto-hospedado
-Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do IIS, o Host de serviço do WCF, ou o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. A maneira mais fácil de depurar um WCF auto-hospedado é configurar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar o cliente e servidor quando você escolhe **iniciar depuração** sobre o **depurar** menu.  
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Como: Depurar um serviço WCF auto-hospedado
+Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do IIS, do Host de Serviço WCF ou do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. A maneira mais fácil de depurar um WCF auto-hospedado é configurar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar o cliente e o servidor quando você escolher **Iniciar Depuração** no menu **Depurar**.  
   
  Se o serviço WCF está sendo auto-hospedado internamente ou é um processo que não pode ser iniciado dessa maneira, como serviço do NT, você não pode usar este método. Em vez disso, execute um destes procedimentos:  
   
@@ -41,21 +39,21 @@ Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do 
   
 1. Crie uma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que contém os projetos de cliente e de servidor.  
   
-2. Configurar a solução para iniciar processos do cliente e servidor quando você escolhe **inicie** sobre o **depurar** menu.  
+2. Configure a solução para iniciar os processos do cliente e do servidor quando você escolhe **Iniciar** no menu **Depurar**.  
   
-   1.  Na **Gerenciador de soluções**, clique com botão direito no nome da solução.  
+   1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nome da solução.  
   
-   2.  Clique em **definir projetos de inicialização**.  
+   2.  Clique em **Definir Projetos de Inicialização**.  
   
-   3.  No **Solution \<nome > propriedades** caixa de diálogo, selecione **vários projetos de inicialização**.  
+   3.  Na caixa de diálogo **Propriedades da Solução \<nome>**, selecione **Vários Projetos de Inicialização**.  
   
-   4.  No **vários projetos de inicialização** grade, na linha que corresponde ao projeto do servidor, clique em **ação** e escolha **iniciar**.  
+   4.  Na grade **Vários Projetos de Inicialização**, na linha que corresponde ao projeto do servidor, clique em **Ação** e escolha **Iniciar**.  
   
-   5.  Na linha que corresponde ao projeto do cliente, clique em **ação** e escolha **iniciar**.  
+   5.  Na linha que corresponde ao projeto de cliente, clique em **Ação** e escolha **Iniciar**.  
   
    6.  Clique em **OK**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando serviços WCF](../debugger/debugging-wcf-services.md)   
- [Limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Como intervir em serviços WCF](../debugger/how-to-step-into-wcf-services.md)
+ [Limitações na depuração do WCF](../debugger/limitations-on-wcf-debugging.md)   
+ [Como: Intervir nos serviços WCF](../debugger/how-to-step-into-wcf-services.md)

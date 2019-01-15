@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858985"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269807"
 ---
 # <a name="trycatch-activity-designer"></a>Designer de atividade de TryCatch
 
@@ -34,7 +34,7 @@ O **TryCatch** designer de atividade pode ser arrastado da **caixa de ferramenta
 
 Clique no botão expandir no canto superior direito das **TryCatch** designer para ver os **tente**, **captura**, e **finalmente** nas caixas a exibição expandida. Para adicionar uma captura, clique o **adicionar novo catch** botão **TryCatch** designer. O botão muda para uma caixa de combinação de tipo. Selecione um tipo de exceção e pressione ENTER para adicionar a captura. Depois de adicionar um **Catch**, a área de captura expande e uma atividade pode ser levada na captura para definir a lógica de execução para a captura. Observe que há uma caixa de texto no lado direito da área expandida catch. Você pode nomear a variável de exceções usando esta caixa de texto. A variável de exceção só pode ser usada para atividades dentro do mesmo **Catch**.
 
-O **TryCatch** designer não oferece suporte à edição **Catch**. Se você quiser alterar o tipo de exceção, você precisa excluir o **Catch** e adicione um novo. Um **Catch** pode ser excluído selecionando-lo e excluí-lo ou usando o **excluir** menu no menu de contexto acessado clique direito.
+O **TryCatch** designer não oferece suporte à edição **Catch**. Se você quiser alterar o tipo de exceção, você precisa excluir o **Catch** e adicione um novo. Um **Catch** pode ser excluído selecionando-lo e excluí-lo ou selecionando **excluir** no menu de contexto que é acessado clicando com o.
 
 ### <a name="the-trycatch-properties"></a>As propriedades de TryCatch
 

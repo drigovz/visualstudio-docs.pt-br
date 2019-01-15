@@ -1,8 +1,6 @@
 ---
 title: DiaAddressMapEntry | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 501defcd2274ab32624a97b9a1463e8f4a515c1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6cadfe96bc0bf0ac0395d93c2ef0b156b9965ed2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964079"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Descreve uma entrada em um mapa de endereço.  
@@ -27,7 +25,7 @@ Descreve uma entrada em um mapa de endereço.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-struct DiaAddressMapEntry {   
+struct DiaAddressMapEntry {   
    DWORD rva,  
    DWORD rvaTo  
 };  
@@ -47,9 +45,9 @@ struct DiaAddressMapEntry {
   
 1. O mapa para a entrada de pesquisa `e`, com o maior `rva` menor ou igual a `addrA`.  
   
-2. Definir `delta = addrA - e.rva`.  
+2. Defina `delta = addrA - e.rva`.  
   
-3. Definir `addrB = e.rvaTo + delta`.  
+3. Defina `addrB = e.rvaTo + delta`.  
   
    Uma matriz de `DiaAddressMapEntry` estruturas é passada para o [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.  
   

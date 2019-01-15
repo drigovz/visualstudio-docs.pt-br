@@ -1,8 +1,6 @@
 ---
 title: 'Passo a passo: Baixando Assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79c5616a9233466c71ca036c4c0cb70d43649979
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: db13440155ca27c9a71e523cea4f0ef69b9eaacf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925804"
 ---
-# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Passo a passo: Fazer o Download de assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Passo a passo: Baixar os assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API
 Aplicativos do Windows Forms podem ser configurados para várias culturas com o uso de assemblies satélite. Um *assembly satélite* é um assembly que contém os recursos de aplicativo para uma cultura que não seja a cultura padrão do aplicativo.  
   
  Conforme discutido em [localizando aplicativos do ClickOnce](../deployment/localizing-clickonce-applications.md), você pode incluir vários assemblies de satélite para várias culturas dentro do mesmo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Por padrão, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] baixará todos os assemblies de satélite em sua implantação para o computador cliente, embora um único cliente provavelmente exigirá apenas um assembly satélite.  
@@ -73,7 +71,7 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
-4.  Adicione o seguinte código para o `MyApplication` classe.  
+4.  Adicione o código a seguir à classe `MyApplication`.  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
   
@@ -81,5 +79,5 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
  Em um ambiente de produção, provavelmente será necessário remover a linha nos exemplos de código que define <xref:System.Threading.Thread.CurrentUICulture%2A> como um valor específico, porque máquinas de cliente será tem o valor correto definido por padrão. Quando seu aplicativo é executado em um computador cliente japonês, por exemplo, <xref:System.Threading.Thread.CurrentUICulture%2A> será `ja-JP` por padrão. Defini-lo por meio de programação é uma boa maneira de testar seus assemblies satélites antes de implantar seu aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Fazer o Download de assemblies satélite por demanda com a API de implantação do ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
+ [Passo a passo: Baixar os assemblies satélite por demanda com a API de implantação do ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
  [Localizar aplicativos ClickOnce](../deployment/localizing-clickonce-applications.md)

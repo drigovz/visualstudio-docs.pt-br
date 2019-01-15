@@ -1,8 +1,6 @@
 ---
 title: IDiaStackFrame::get_functionStart | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d6502a99827d6835fb1f6d9368615fd6045203
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 214f62788c77ea5a15d6065a1661213201d1a341
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827881"
 ---
 # <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
 Recupera um sinalizador que indica se o bloco contém o ponto de entrada de uma função.  
@@ -27,7 +25,7 @@ Recupera um sinalizador que indica se o bloco contém o ponto de entrada de uma 
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT get_functionStart (   
+HRESULT get_functionStart (   
    BOOL* pRetVal  
 );  
 ```  

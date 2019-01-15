@@ -1,8 +1,6 @@
 ---
-title: 'Como: definir permissões personalizadas para um aplicativo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Definir permissões personalizadas para um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4003dd1434d55bb43f52ee02801da0f843563456
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 7bfacf983af73ba8acb1f8f9ed2705ad5cd8e544
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929209"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Como: definir permissões personalizadas para um aplicativo ClickOnce
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Como: Definir permissões personalizadas para um aplicativo ClickOnce
 Você pode implantar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que usa as permissões padrão para as zonas de Internet ou Intranet Local. Como alternativa, você pode criar uma zona personalizada para as permissões específicas que o aplicativo precisa. Você pode fazer isso ao personalizar as permissões de segurança na **segurança** página do **Designer de projeto**.  
   
 ### <a name="to-customize-a-permission"></a>Para personalizar uma permissão  

@@ -1,8 +1,6 @@
 ---
 title: Manifesto de implantação do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2391888e1955c48c1baafcd62c4337916a1a5322
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 44c42d1b0323e8f2d66f7abab13c8fecbf6a1ae4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820313"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911332"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto de implantação do ClickOnce
 Um manifesto de implantação é um arquivo XML que descreve uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, incluindo a identificação do atual [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] versão do aplicativo para implantar.  
@@ -32,7 +30,7 @@ Um manifesto de implantação é um arquivo XML que descreve uma [!INCLUDE[ndpte
 
 | Elemento | Descrição | Atributos |
 | - | - | - |
-| [\<assembly > elemento](../deployment/assembly-element-clickonce-deployment.md) | Necessário. Elemento de nível superior. | `manifestVersion` |
+| [Elemento \<assembly>](../deployment/assembly-element-clickonce-deployment.md) | Necessário. Elemento de nível superior. | `manifestVersion` |
 | [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md) | Necessário. Identifica o manifesto do aplicativo para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
 | [\<Descrição > elemento](../deployment/description-element-clickonce-deployment.md) | Necessário. Identifica as informações do aplicativo usadas para criar uma presença de shell e o **adicionar ou remover programas** item no painel de controle. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<implantação > elemento](../deployment/deployment-element-clickonce-deployment.md) | Opcional. Identifica os atributos usados para a implantação de atualizações e exposição ao sistema. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |

@@ -1,8 +1,6 @@
 ---
-title: 'Como: desabilitar a ativação de aplicativos ClickOnce pela URL | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Desabilitar a ativação de aplicativos ClickOnce pela URL | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab9204513c59d2c853c0a3738ef2363739d56c1
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
-ms.translationtype: MT
+ms.openlocfilehash: 611bb0d2c3c828be5f8eaa10f3baeaafca1c8f37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854770"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Como: desabilitar a ativação de aplicativos ClickOnce pela URL
+# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Como: Desabilitar a ativação de URL de aplicativos ClickOnce
 
 Normalmente, um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo será iniciado automaticamente, imediatamente após a instalação de um servidor Web. Por motivos de segurança, você pode optar por desabilitar esse comportamento e diga aos usuários para iniciar o aplicativo a partir de **iniciar** menu em vez disso. O procedimento a seguir descreve como desabilitar a ativação de URL.
 
@@ -37,7 +35,7 @@ Este procedimento usa a ferramenta Windows Software Development Kit (SDK) MageUI
 
 ### <a name="to-disable-url-activation-for-your-application"></a>Para desabilitar a ativação de URL para seu aplicativo
 
-1.  Abra o manifesto de implantação no MageUI.exe. Se você não ainda tiver criado uma, siga as etapas em [instruções passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1.  Abra o manifesto de implantação no MageUI.exe. Se você não ainda tiver criado uma, siga as etapas em [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 2.  Selecione o **opções de implantação** guia.
 

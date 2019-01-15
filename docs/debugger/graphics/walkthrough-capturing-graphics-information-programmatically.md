@@ -1,22 +1,20 @@
 ---
 title: 'Passo a passo: Capturando informações de gráficos de forma programática | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850681"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Passo a passo: Como capturar informações de gráficos de forma programática
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.  
   
  Captura programática é útil em cenários como:  
@@ -117,6 +115,6 @@ ms.locfileid: "49933281"
 -   Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Ver [visão geral](overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Capturando informações de gráficos](walkthrough-capturing-graphics-information.md)   
- [Capturando informações de gráficos](capturing-graphics-information.md)   
+ [Passo a passo: Como capturar informações de gráficos](walkthrough-capturing-graphics-information.md)   
+ [Como capturar informações de gráficos](capturing-graphics-information.md)   
  [Ferramenta de captura de linha de comando](command-line-capture-tool.md)

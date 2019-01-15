@@ -34,7 +34,7 @@ Os procedimentos a seguir descrevem como habilitar a depuração de código gere
 
 Você pode permitir que os depuradores gerenciados e nativos do projeto de aplicativo chamada **propriedade** páginas. As configurações são diferentes entre os aplicativos nativos e gerenciados.
 
-Se você não tiver acesso a projeto de um aplicativo de chamada, você pode depurar a DLL do projeto de DLL. Modo misto para depurar apenas o projeto DLL não é necessário. Para obter mais informações, confira [Como: Depurar por meio de um projeto DLL](../debugger/how-to-debug-from-a-dll-project.md)
+Se você não tiver acesso a projeto de um aplicativo de chamada, você pode depurar a DLL do projeto de DLL. Modo misto para depurar apenas o projeto DLL não é necessário. Para obter mais informações, confira [Como: Depurar por meio de um projeto DLL](../debugger/how-to-debug-from-a-dll-project.md).
 
 > [!NOTE]
 > As caixas de diálogo e comandos que você vê podem ser diferentes daquelas que neste artigo, dependendo de suas configurações do Visual Studio ou a edição. Para alterar suas configurações, escolha **ferramentas** > **importar e exportar configurações**. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
@@ -45,7 +45,7 @@ Se você não tiver acesso a projeto de um aplicativo de chamada, você pode dep
 
 1. No  **\<projeto > páginas de propriedades** caixa de diálogo caixa, expanda **as propriedades de configuração**e, em seguida, selecione **depuração**.
 
-1. Defina Tipo de Depurador **como Misto** ou Automático **.
+1. Defina **Tipo de Depurador** como **Misto** ou **Automático**.
 
 1. Selecione **OK**.
 

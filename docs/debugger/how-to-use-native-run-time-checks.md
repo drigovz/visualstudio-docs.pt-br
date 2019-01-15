@@ -1,8 +1,6 @@
 ---
-title: 'Como: usar verificações de tempo de execução nativas | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar verificações de tempo de execução nativas | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
@@ -39,14 +37,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc4e4b9ee24bc7be9126866ae804f1b3c6d6dba6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830950"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Como usar verificações de tempo de execução nativas
+# <a name="how-to-use-native-run-time-checks"></a>Como: Usar verificações de tempo de execução nativas
 No Visual C++, você pode usar nativos [runtime_checks](/cpp/preprocessor/runtime-checks) para capturar erros comuns de tempo de execução, como:  
   
 - Dano do ponteiro de pilha.  
@@ -67,9 +65,9 @@ No Visual C++, você pode usar nativos [runtime_checks](/cpp/preprocessor/runtim
   
   Outros tópicos desta seção fornecem informações sobre:  
   
-- [Personalizar o tempo de execução verifica com a biblioteca de tempo de execução C](../debugger/native-run-time-checks-customization.md)  
+- [Personalizando as verificações de tempo de execução com a biblioteca em tempo de execução C](../debugger/native-run-time-checks-customization.md)  
   
-- [Usar o tempo de execução verifica sem a biblioteca de tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+- [Usando verificações de tempo de execução sem a biblioteca em tempo de execução do C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Para habilitar as verificações de tempo de execução nativas em uma compilação de depuração  
   

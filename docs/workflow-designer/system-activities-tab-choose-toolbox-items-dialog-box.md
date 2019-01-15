@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372c1c613aca71f72e57a3a5c9a5d2e82726a03b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868177"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269547"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>O guia de System.Activities, escolher a caixa de diálogo dos itens da caixa de ferramentas
 
@@ -30,11 +30,11 @@ Esta guia, o **Choose Toolbox Items** caixa de diálogo exibe uma lista de ativi
 
  A filtragem é feita em cada guia. Isso significa que não é possível adicionar atividades de fluxo de trabalho por meio de **componente .NET** guia. Eles precisarão ser adicionados por meio de **System. Activities** guia em si.
 
- Você pode desmarcar quaisquer itens que você não deseja ver na **caixa de ferramentas** nessa caixa de diálogo guia ou como alternativa, você pode fazer isso usando o **excluir** opção de menu de contexto na **caixa de ferramentas** e cancelando a referência de um assembly não remove o item do **caixa de ferramentas**.
+ Você pode desmarcar quaisquer itens que você não deseja ver na **caixa de ferramentas** nessa caixa de diálogo guia ou como alternativa, você pode fazer isso usando o **excluir** opção de menu no botão direito do mouse a **Toolbox**e cancelando a referência de um assembly não remove o item do **caixa de ferramentas**.
 
  Criando uma instância da atividade, arrastando e soltando-os ao designer adiciona o assembly que contém o item à lista de módulos (assemblies) referenciados automaticamente. Também se a atividade referencia um assembly C 2.0, C 2.0 não adiciona à lista de assembly referenciado. O assembly C deve estar no GAC ou no mesmo diretório que a atividade B. Em casos autônomos, o assembly deve estar no GAC ou nos caminhos de investigação do VS. Somente então você pode arrastar e soltar a atividade na superfície de fluxo de trabalho.
 
- **Caixa de ferramentas** por padrão, as configurações são salvas como opções de usuário, portanto, a próxima vez, quando você abre o **caixa de ferramentas**, ele exibe sua lista personalizado de atividades de fluxo de trabalho. Um efeito colateral disso é que, se você tiver adicionado seus itens específicos de domínio para o **caixa de ferramentas** por meio de **Choose Toolbox Items** caixa de diálogo, você ainda continuará a consulte esses itens quando você estiver trabalhando em um Aplicativo Console do fluxo de trabalho também. Se você não deseja vê-los, excluí-los usando o menu de contexto ou desmarcá-los por meio de **Choose Toolbox Items** caixa de diálogo, conforme observado anteriormente.
+ **Caixa de ferramentas** por padrão, as configurações são salvas como opções de usuário, portanto, a próxima vez, quando você abre o **caixa de ferramentas**, ele exibe sua lista personalizado de atividades de fluxo de trabalho. Um efeito colateral disso é que, se você tiver adicionado seus itens específicos de domínio para o **caixa de ferramentas** por meio de **Choose Toolbox Items** caixa de diálogo, você ainda continuará a consulte esses itens quando você estiver trabalhando em um Aplicativo Console do fluxo de trabalho também. Se você não deseja vê-los, excluí-los usando o menu de atalho ou desmarcá-los por meio de **Choose Toolbox Items** caixa de diálogo, conforme observado anteriormente.
 
  As colunas nesta caixa de diálogo contém as informações a seguir:
 

@@ -1,8 +1,6 @@
 ---
 title: Gravação da função de gancho de depuração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.hooks
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 365196a01ba9e62ef0b26eb3a99278d4d77a4dd4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9218c36f550c61484054d180ecb4dccb1ca53f3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947498"
 ---
 # <a name="debug-hook-function-writing"></a>Gravação da função de gancho de depuração
 Esta seção descreve várias funções de gancho de depuração personalizadas que você pode escrever que permitem inserir seu código em alguns pontos predefinidos no processamento normal do depurador.  
@@ -41,7 +39,7 @@ Esta seção descreve várias funções de gancho de depuração personalizadas 
  Define uma função de gancho de alocação, explora seus usos diferentes, indica limitações e fornece um protótipo.  
   
  [Ganchos de alocação e alocações de memória de CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
- Descreve a limitação de funções de gancho de alocação de ignorar explicitamente blocos de `_CRT_BLOCK` se eles fizerem chamadas para as funções da biblioteca em tempo de execução C que alocam a memória interna. Este tópico também lista as consequências se sua gancho de alocação não ignorar `_CRT_BLOCK` função de gancho de blocos (com exemplos) e como alterar a alocação padrão **CrtDefaultAllocHook**.  
+ Descreve a limitação de funções de gancho de alocação de ignorar explicitamente blocos de `_CRT_BLOCK` se eles fizerem chamadas para as funções da biblioteca em tempo de execução C que alocam a memória interna. Este tópico também listará as consequências se o gancho de alocação não ignorar os blocos de `_CRT_BLOCK` (com exemplos) e como alterar a função padrão de gancho de alocação, **CrtDefaultAllocHook**.  
   
  [Funções de gancho de relatório](../debugger/report-hook-functions.md)  
  Discute `_CrtSetReportHook`, que você pode usar para filtrar relatórios para enfatizar tipos específicos de alocações. Este tópico também fornece um protótipo.  

@@ -1,8 +1,6 @@
 ---
 title: '&lt;dependência&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d47775f928fc52fb7ffce2e0818fea19e30dee0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898616"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependência&gt; elemento (aplicativo ClickOnce)
 Identifica uma dependência de plataforma ou assembly que é necessária para o aplicativo.  
@@ -106,7 +104,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 ### <a name="osversioninfo"></a>osVersionInfo  
  Necessário. Esse elemento é um filho de `dependentOS` elemento e contém o `os` elemento. Esse elemento não tem atributos.  
 
-### <a name="os"></a>sistema operacional  
+### <a name="os"></a>SO  
  Necessário. Esse elemento é um filho de `osVersionInfo` elemento. Este elemento tem os seguintes atributos.  
 
 |Atributo|Descrição|  
@@ -117,7 +115,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 |`servicePackMajor`|Necessário. Especifica o número principal do service pack do sistema operacional.|  
 |`servicePackMinor`|Opcional. Especifica o número secundário do service pack do sistema operacional.|  
 |`productType`|Opcional. Identifica o valor do tipo de produto. Os valores válidos são `server`, `workstation` e `domainController`. Por exemplo, para o Windows 2000 Professional, esse valor de atributo é `workstation`.|  
-|`suiteType`|Opcional. Identifica um conjunto de produtos disponível no sistema ou o tipo de configuração do sistema. Os valores válidos são `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, e `terminal`. Por exemplo, para o Windows 2000 Professional, esse valor de atributo é `professional`.|  
+|`suiteType`|Opcional. Identifica um conjunto de produtos disponível no sistema ou o tipo de configuração do sistema. Os valores válidos são `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` e `terminal`. Por exemplo, para o Windows 2000 Professional, esse valor de atributo é `professional`.|  
 
 ### <a name="dependentassembly"></a>dependentAssembly  
  Opcional. Contém o `assemblyIdentity` elemento. O `dependentOS` e `dependentAssembly` elementos são mutuamente exclusivos: um ou outro deve existir para um `dependency` elemento, mas não ambos.  
@@ -129,7 +127,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 |-----------------------| - |
 | `dependencyType` | Necessário. Especifica o tipo de dependência. Os valores válidos são `preprequisite` e `install`. Uma `install` assembly é instalado como parte do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Um `prerequisite` assembly deve estar presente no cache de assembly global (GAC) antes do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode instalar o aplicativo. |
 | `allowDelayedBinding` | Necessário. Especifica se o assembly pode ser carregado por meio de programação em tempo de execução. |
-| `group` | Opcional. Se o `dependencyType` atributo é definido como `install`, designa um grupo nomeado de assemblies somente instalação sob demanda. Para obter mais informações, consulte [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md) (Instruções passo a passo: baixando assemblies sob demanda com a API de implantação do ClickOnce usando o designer).<br /><br /> Se definido como `framework` e o `dependencyType` atributo é definido como `prerequisite`, designa o assembly como parte do .NET Framework. O cache de assembly global (GAC) não é verificado para esse assembly ao instalar em [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] e versões posteriores. |
+| `group` | Opcional. Se o `dependencyType` atributo é definido como `install`, designa um grupo nomeado de assemblies somente instalação sob demanda. Para obter mais informações, confira [Passo a passo: Como baixar assemblies sob demanda com a API de implantação do ClickOnce usando o designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Se definido como `framework` e o `dependencyType` atributo é definido como `prerequisite`, designa o assembly como parte do .NET Framework. O cache de assembly global (GAC) não é verificado para esse assembly ao instalar em [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] e versões posteriores. |
 | `codeBase` | Necessário quando o `dependencyType` atributo é definido como `install`. O caminho para o assembly dependente. Talvez um caminho absoluto ou um caminho relativo ao código do manifesto base. Esse caminho deve ser um URI válido para o manifesto do assembly que seja válido. |
 | `size` | Necessário quando o `dependencyType` atributo é definido como `install`. O tamanho do assembly dependente, em bytes. |
 

@@ -34,15 +34,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9f2202c96799fcc2e258e79f050d15fb474d0aa
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847922"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 
@@ -93,7 +92,7 @@ Depois que um cliente WCF tiver sido criado, você referenciar o serviço em seu
 
 ## <a name="wcf-tools-in-visual-studio"></a>Ferramentas do WCF no Visual Studio
 
-Visual Studio fornece ferramentas para ajudá-lo a criar serviços WCF e clientes do WCF. Para um passo a passo que demonstra as ferramentas, consulte [instruções passo a passo: Criando um serviço WCF simples no Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+Visual Studio fornece ferramentas para ajudá-lo a criar serviços WCF e clientes do WCF. Para um passo a passo que demonstra as ferramentas, consulte [passo a passo: Criando um serviço WCF simples no Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
 
 ### <a name="create-and-test-wcf-services"></a>Criar e testar os serviços WCF
 
@@ -131,7 +130,7 @@ O **adicionar referência de serviço** caixa de diálogo permite que você insi
 
 O **configurar referências de serviço** caixa de diálogo permite que você personalize a configuração para um serviço. Alterar o endereço para um serviço, especifique o nível de acesso, o comportamento assíncrono e tipos de contrato de mensagem e configurar a reutilização de tipo.
 
-## <a name="how-to-select-a-service-endpoint"></a>Como: selecione um ponto de extremidade de serviço
+## <a name="how-to-select-a-service-endpoint"></a>Como: Selecione um ponto de extremidade de serviço
 
 Alguns serviços do Windows Communication Foundation (WCF) expõem vários pontos de extremidade por meio do qual um cliente pode se comunicar com o serviço. Por exemplo, um serviço pode expor um ponto de extremidade que usa uma associação HTTP e o nome de usuário e a segurança de senha e um segundo ponto de extremidade que usa a autenticação do Windows e FTP. O primeiro ponto de extremidade pode ser usado por aplicativos que acessam o serviço de fora de um firewall, enquanto o segundo pode ser usado em uma intranet.
 
@@ -175,7 +174,7 @@ Nesse caso, você pode especificar o `endpointConfigurationName` como um parâme
 
 4.  Dentro de `<EndPoint>` marca, você encontrará um `name="` *SomeService* `"` parâmetro (onde *SomeService* representa um nome de ponto de extremidade). Esse é o nome para o ponto de extremidade que pode ser passado para o `endpointConfigurationName As String` sobrecarga de um construtor para uma referência de serviço.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Como: chamar um método de serviço de forma assíncrona
+## <a name="how-to-call-a-service-method-asynchronously"></a>Como: Chamar um método de serviço de forma assíncrona
 
 A maioria dos métodos em serviços Windows Communication Foundation (WCF) pode ser chamado de forma síncrona ou assíncrona. Chamando um método de forma assíncrona permite que seu aplicativo para continuar trabalhando enquanto o método está sendo chamado quando ele opera sobre uma conexão lenta.
 
@@ -194,7 +193,7 @@ Por padrão, quando uma referência de serviço é adicionada a um projeto, ele 
 
 3.  No **Configure Service Reference** caixa de diálogo, selecione o **gerar operações assíncronas** caixa de seleção.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Como: associar dados retornados por um serviço
+## <a name="how-to-bind-data-returned-by-a-service"></a>Como: Associar dados retornados por um serviço
 
 Você pode associar os dados retornados por um serviço do Windows Communication Foundation (WCF) a um controle, assim como você pode vincular qualquer outra fonte de dados a um controle. Quando você adiciona uma referência a um serviço WCF, se o serviço contiver tipos compostos que retornam dados, eles são adicionados automaticamente para o **fontes de dados** janela.
 
@@ -228,7 +227,7 @@ Você pode associar os dados retornados por um serviço do Windows Communication
 
 5.  Arraste o nó para o formulário. Os controles são adicionados ao formulário, juntamente com uma <xref:System.Windows.Forms.BindingSource> componente e um <xref:System.Windows.Forms.BindingNavigator> componente.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Como: configurar um serviço para reutilizar os tipos existentes
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Como: Configurar um serviço para reutilizar os tipos existentes
 
 Quando uma referência de serviço é adicionada a um projeto, quaisquer tipos definidos no serviço são gerados no projeto local. Em muitos casos, isso cria tipos duplicados quando um serviço usa tipos comuns do .NET Framework ou quando os tipos são definidos em uma biblioteca compartilhada.
 
@@ -256,13 +255,13 @@ Para evitar esse problema, os tipos em assemblies referenciados são compartilha
 
 | Título | Descrição |
 | - | - |
-| [Passo a passo: criando um Serviço WCF em Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fornece uma demonstração passo a passo de criação e uso de serviços WCF no Visual Studio. |
-| [Passo a passo: criando um serviço de dados WCF com WPF e Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fornece uma demonstração passo a passo de como criar e usar o WCF Data Services no Visual Studio. |
+| [Passo a passo: Criando um serviço WCF simples no Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fornece uma demonstração passo a passo de criação e uso de serviços WCF no Visual Studio. |
+| [Passo a passo: Criando um WCF Data Service com o WPF e o Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fornece uma demonstração passo a passo de como criar e usar o WCF Data Services no Visual Studio. |
 | [Usando as ferramentas de desenvolvimento do WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | Discute como criar e testar os serviços WCF no Visual Studio. |
-| | [Como adicionar, atualizar ou remover uma referência de WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| | [Como: Adicionar, atualizar ou remover uma referência do WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [Solução de problemas de referências de serviço](../data-tools/troubleshooting-service-references.md) | Apresenta alguns erros comuns que podem ocorrer com referências de serviço e como evitá-los. |
 | [Depurando serviços WCF](../debugger/debugging-wcf-services.md) | Descreve problemas comuns de depuração e técnicas que você pode encontrar ao depurar serviços WCF. |
-| [Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fornece instruções passo a passo para criar um conjunto de dados tipado e separar o código do TableAdapter e do conjunto de dados em vários projetos. |
+| [Passo a passo: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fornece instruções passo a passo para criar um conjunto de dados tipado e separar o código do TableAdapter e do conjunto de dados em vários projetos. |
 | [Configurar a caixa de diálogo de referência de serviço](../data-tools/configure-service-reference-dialog-box.md) | Descreve os elementos de interface do usuário para o **Configure Service Reference** caixa de diálogo. |
 
 ## <a name="reference"></a>Referência

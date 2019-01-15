@@ -25,10 +25,10 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53985914"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Caixa de diálogo Editar e Continuar
-(Apenas Nativo) Essa caixa de diálogo aparece quando você edita o código durante a depuração e Editar e Continuar** reconhece que pode aplicar alterações do código. Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).  
+(Apenas Nativo) Essa caixa de diálogo aparece quando você edita o código durante a depuração e **Editar e Continuar** reconhece que pode aplicar alterações do código. Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).  
   
- {1&gt;Não exibir esta caixa de diálogo novamente&lt;1}  
- Se você marcar essa caixa de seleção, Editar e Continuar aplicará as alterações de código sem solicitar permissão no futuro. Você pode ativar esse aviso novamente indo em Opções **na caixa de diálogo, abrindo a pasta Depuração**, clicando na página Editar e Continuar **e selecionando Chamado por comandos de depuração** e Pergunte-me primeiro **.  
+ **Não exibir esta caixa de diálogo novamente**  
+ Se você marcar essa caixa de seleção, **Editar e Continuar** aplicará as alterações de código sem solicitar permissão no futuro. Você pode ativar esse aviso novamente indo em **Opções** na caixa de diálogo, abrindo a pasta **Depuração**, clicando na página **Editar e Continuar** e selecionando **Chamado por comandos de depuração** e **Pergunte-me primeiro**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   

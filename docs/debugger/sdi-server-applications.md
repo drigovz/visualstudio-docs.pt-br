@@ -1,8 +1,6 @@
 ---
 title: Aplicativos de servidor SDI | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,21 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9047c9b39bad5f4f790327b5ee65b4de688db9d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ec4178fb23d84812d7258bac8384264bed9d4690
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885044"
 ---
 # <a name="sdi-server-applications"></a>Aplicativos de servidor SDI
-Se você estiver depurando um aplicativo de servidor SDI, você deve especificar `/Embedding` ou `/Automation` no **argumentos de linha de comando** propriedade o *projeto* caixa de diálogo páginas de propriedades para C/C++, c#, ou Projetos do Visual Basic.  
+Se estiver depurando um aplicativo para servidores de SDI, especifique `/Embedding` ou `/Automation` na propriedade **Argumentos de linha de comando** na caixa de diálogo Páginas de Propriedades de *Projeto* de projetos C/C++, C# ou do Visual Basic.  
   
  Com esses argumentos de linha de comando, o depurador pode iniciar o aplicativo de servidor como se tivesse sido iniciado de um contêiner. Iniciar o contêiner do Gerenciador de Programas ou do Gerenciador de Arquivos fará com que o contêiner use a instância do servidor iniciada no depurador.  
   
 ## <a name="finding-the-command-line-arguments-property"></a>Localizando a propriedade Argumentos de Linha de Comando  
- Para acessar o *projeto* caixa de diálogo páginas de propriedades, clique em seu projeto no Gerenciador de soluções e escolha Propriedades no menu de atalho. Para localizar a propriedade Argumentos de linha de comando, expanda a categoria Propriedades de Configuração e clique na página Depuração.  
+ Para acessar a caixa de diálogo Páginas de Propriedades de *Projeto*, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e escolha Propriedades no menu de atalho. Para localizar a propriedade Argumentos de linha de comando, expanda a categoria Propriedades de Configuração e clique na página Depuração.  
   
 ## <a name="see-also"></a>Consulte também  
- [COM e ActiveX depuração](../debugger/com-and-activex-debugging.md)   
- [Como depurar servidores COM](../debugger/how-to-debug-com-servers.md)
+ [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Como: Depurar servidores COM](../debugger/how-to-debug-com-servers.md)

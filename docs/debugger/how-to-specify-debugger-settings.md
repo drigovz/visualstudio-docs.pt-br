@@ -1,8 +1,6 @@
 ---
-title: 'Como: especificar as configurações do depurador | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Especificar configurações do depurador | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d309c8d0395869e1a86b4b01dfaba4245447bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 454b6259a7417e66637a40ff09c4eb51536f19d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847172"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
-No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Você especifica as configurações do depurador na **opções** caixa de diálogo.  
+# <a name="how-to-specify-debugger-settings"></a>Como: Especificar as configurações do depurador
+No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Você especifica as configurações do depurador na caixa de diálogo **Opções**.  
   
 ### <a name="to-set-debugger-options"></a>Para definir as opções de depurador  
   
 1.  No menu **Ferramentas**, clique em **Opções**.  
   
-2.  No **opções** caixa de diálogo, abra o **depuração** pasta.  
+2.  Na caixa de diálogo **Opções**, abra a pasta **Depuração**.  
   
-3.  No **depuração** pasta, escolha a categoria de opções que você deseja.  
+3.  Na pasta **Depuração**, escolha a categoria de opções que você deseja.  
   
-     As opções mais comuns estão localizadas na **geral** categoria. Para obter mais informações, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).  
+     As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.  
   

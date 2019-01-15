@@ -24,13 +24,13 @@ Use essa caixa de diálogo para localizar e selecionar o nó para uma janela esp
   
  As configurações a seguir estão disponíveis:  
   
- Ferramenta Descobridora:  
+ **Ferramenta Descobridora**  
  A ferramenta de arrastar e soltar usada para selecionar uma janela.  
   
  **Ocultar Spy + +**  
  Remove a janela principal do Spy + + e deixa o **WindowSearch** caixa de diálogo visível na parte superior de seus outros aplicativos.  
   
- **IDENTIFICADOR**  
+ **Identificador**  
  A ID exclusiva da janela a ser pesquisado.  
   
  **Caption**  

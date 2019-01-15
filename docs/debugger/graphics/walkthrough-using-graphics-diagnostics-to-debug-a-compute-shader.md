@@ -1,8 +1,6 @@
 ---
-title: 'Passo a passo: Usando diagnóstico de gráficos para depurar um sombreador de cálculo | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Usando o diagnóstico de gráficos para depurar um sombreador de cálculo | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c92a8b24dd3d932eedfcb122b4da9294dd3418
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9644e4b9f9d0a193c0d8088aa9e237d84f276aa1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823309"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Instruções passo a passo: usando diagnóstico de gráficos para depurar um sombreador computado
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação
 Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráficos do Visual Studio para investigar um sombreador de cálculo que produz resultados incorretos.  
   
  Este passo a passo ilustra essas tarefas:  
@@ -90,7 +88,7 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
   
     ![Depurar o sombreador de cálculo IntegrateCS. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: Shift + F5).  
+4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: Shift+F5  
   
 5. Em seguida, selecione o segundo `Dispatch` evento e inicie a depuração do sombreador de cálculo, exatamente como você fez na etapa anterior.  
   

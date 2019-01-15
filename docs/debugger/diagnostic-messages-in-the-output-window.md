@@ -1,8 +1,6 @@
 ---
 title: Enviar mensagens para a janela de saída | Microsoft Docs
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906742"
 ---
-# <a name="send-messages-to-the-output-window"></a>Enviar mensagens para a janela de saída
+# <a name="send-messages-to-the-output-window"></a>Enviar mensagens para a Janela de Saída
 
 Você pode escrever mensagens em tempo de execução para o **saída** janela usando o <xref:System.Diagnostics.Debug> classe ou o <xref:System.Diagnostics.Trace> classe, que fazem parte do <xref:System.Diagnostics> biblioteca de classes. Use o <xref:System.Diagnostics.Debug> classe se você quiser apenas a saída de *depurar* versão do seu programa. Use o <xref:System.Diagnostics.Trace> classe se você quiser que a saída em ambos os *depurar* e *versão* versões.  
   
@@ -44,7 +42,7 @@ Você pode escrever mensagens em tempo de execução para o **saída** janela us
   
 - Vários métodos `Write`, os quais geram informações sem interromper a execução. Esses métodos substituem o método `Debug.Print` usado em versões anteriores do Visual Basic.  
   
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> métodos, que separar as informações de execução e a saída se uma condição especificada falhar. Por padrão, o método `Assert` exibe informações em uma caixa de diálogo. Para obter mais informações, consulte [asserções em código gerenciado](../debugger/assertions-in-managed-code.md).  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> métodos, que separar as informações de execução e a saída se uma condição especificada falhar. Por padrão, o método `Assert` exibe informações em uma caixa de diálogo. Para obter mais informações, confira [Asserções em código gerenciado](../debugger/assertions-in-managed-code.md).  
   
 - O <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> métodos, que sempre interrompem informações de execução e de saída. Por padrão, os métodos `Fail` exibem informações em uma caixa de diálogo.  
   
@@ -60,7 +58,7 @@ O **saída** janela também pode exibir informações sobre:
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   
- [Janela de saída](../ide/reference/output-window.md)   
+ [Janela de Saída](../ide/reference/output-window.md)   
  [Rastreamento e instrumentar aplicativos](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [C#, F#e tipos de projeto do Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Tipos de projeto do C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)

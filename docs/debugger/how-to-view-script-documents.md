@@ -1,8 +1,6 @@
 ---
-title: 'Como: exibir documentos de Script | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Exibir documentos de Script | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,25 +15,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MTE95
+ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867716"
 ---
-# <a name="how-to-view-script-documents"></a>Como exibir documentos de script
+# <a name="how-to-view-script-documents"></a>Como: Exibir documentos de script
 Em versões anteriores do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], os arquivos de script do lado do cliente gerados do script do lado do servidor eram exibidos na janela Explorador de Script. A janela Explorador de Script estava geralmente oculta, de modo que a disponibilidade de script do lado do cliente não era sempre óbvia.  
   
  No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], os arquivos de script do lado do cliente gerados do script do lado do servidor aparecem no Gerenciador de Soluções, que é visível por padrão. A janela Explorador de Script foi eliminada.  
   
- Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção. Eles aparecem no **documentos de Script** nó.  
+ Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção. Eles aparecem no nó **Documentos de Script**.  
   
- Os arquivos de script do lado do servidor são sempre visíveis. Eles aparecem no  **\<nome de caminho do site >** nó. O nome do nó é semelhante a este exemplo: `c:\...\Website2\`  
+ Os arquivos de script do lado do servidor são sempre visíveis. Eles aparecem no nó **\<<Nome do caminho do site>**. O nome do nó é semelhante a este exemplo: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Para exibir um documento de script do lado do servidor  
   
-1.  Em **Solution Explorer**, abra o  **\<nome de caminho do site >** nó.  
+1.  No **Gerenciador de Soluções**, abra o nó **\<<Nome do caminho do site>**.  
   
 2.  Clique duas vezes no arquivo de script que deseja exibir.  
   
@@ -43,7 +41,7 @@ Em versões anteriores do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
   
 ### <a name="to-view-a-client-side-script-document"></a>Para exibir um documento de script do lado do cliente  
   
-1.  Em **Solution Explorer**, abra o **documentos de Script** nó.  
+1.  No **Gerenciador de Soluções**, abra o nó **Documentos de Script**.  
   
 2.  Clique duas vezes no arquivo de script que deseja exibir.  
   

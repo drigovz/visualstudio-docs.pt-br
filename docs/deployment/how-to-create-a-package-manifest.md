@@ -1,8 +1,6 @@
 ---
-title: 'Como: criar um manifesto de pacote | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um manifesto de pacote | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943467"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Como: criar um manifesto de pacote
+# <a name="how-to-create-a-package-manifest"></a>Como: Criar um manifesto do pacote
 Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único, mas um manifesto de pacote para cada localidade. Funcionalidade compartilhada entre diferentes versões localizadas deve ir para o manifesto do produto.  
   
- Para obter mais informações sobre manifestos de pacote, consulte [como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).  
+ Para obter mais informações sobre manifestos de pacote, consulte [como: Criar um manifesto do produto](../deployment/how-to-create-a-product-manifest.md)  
   
 ## <a name="create-the-package-manifest"></a>Crie o manifesto de pacote  
   

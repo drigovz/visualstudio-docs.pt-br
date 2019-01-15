@@ -2,19 +2,18 @@
 title: Página inicial para o depurador de instantâneo
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
-ms.translationtype: MT
+ms.openlocfilehash: c9c2e5ec77a2abf07ca396166d4cc2ae9792cacc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853730"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Guia de Introdução com o depurador de instantâneo
 
@@ -64,11 +63,11 @@ O site em si ainda está ao vivo e os usuários finais não são afetados. Por p
 
     Se você escolher **enviar para log de aplicativo**, a mensagem será exibida em qualquer lugar que você pode ver mensagens de `System.Diagnostics.Trace` (ou `ILogger` no .NET Core), como o App Insights, quando o logpoint for atingido.
 
-## <a name="learn-more"></a>Saiba Mais
+## <a name="learn-more"></a>Saiba mais
 
 Você pode encontrar mais informações sobre o depurador de instantâneo na [página de documentos](../debug-live-azure-applications.md). Saiba mais sobre como configurar condições para torná-lo mais fácil de encontrar bugs.
 
-## <a name="dont-show-me-this-again"></a>Não ' Mostrar isso novamente
+## <a name="dont-show-me-this-again"></a>Não mostrar novamente
 
 Para nunca mostrar a página de início de depurador de instantâneo novamente quando você conecta o depurador de instantâneo, alterar o **Mostrar 'Getting Started' página no início da sessão** opção **ferramentas**  >   **As opções** > **depurador de instantâneo**. 
 

@@ -1,8 +1,6 @@
 ---
 title: Como o ClickOnce executa atualizações de aplicativos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f5d9b67633ffa2b14f780b9588f526372a4f5d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 5fc3414660f206aa8f83179e61ed9aa2dcc0098b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845597"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Como o ClickOnce executa atualizações de aplicativos
 ClickOnce usa as informações de versão do arquivo especificadas no manifesto de implantação do aplicativo para decidir se deseja atualizar os arquivos do aplicativo. Depois que uma atualização começa, o ClickOnce usa uma técnica chamada *aplicação de patch de arquivo* para evitar o download redundante dos arquivos de aplicativo.  
@@ -38,5 +36,5 @@ ClickOnce usa as informações de versão do arquivo especificadas no manifesto 
  Aplicação de patch de arquivo não funciona para arquivos que são marcados como dados e armazenados no diretório de dados. Eles são sempre baixados independentemente da assinatura de hash do arquivo. Para obter mais informações sobre o diretório de dados, consulte [acessar dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Escolha uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
+ [Escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

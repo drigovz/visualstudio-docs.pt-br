@@ -1,8 +1,6 @@
 ---
 title: As pseudovariáveis | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af106709ca578abeab19c4f474548476efbeea57
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 4e7056c3535e05febfa8de2ddd57385fc73ec182
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988051"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariáveis no depurador do Visual Studio
-As pseudovariáveis são termos usados para exibir determinadas informações em uma janela variável ou o **QuickWatch** caixa de diálogo. Você pode inserir um pseudovariável da mesma maneira que incorporaria uma variável normal. As pseudovariáveis não são variáveis, no entanto, e não correspondem aos nomes de variáveis em seu programa.  
+As pseudovariáveis são termos usados para exibir determinadas informações em uma janela de variável ou na caixa de diálogo do **QuickWatch**. Você pode inserir um pseudovariável da mesma maneira que incorporaria uma variável normal. As pseudovariáveis não são variáveis, no entanto, e não correspondem aos nomes de variáveis em seu programa.  
   
 ## <a name="example"></a>Exemplo  
- Suponha que você está escrevendo um aplicativo de código nativo e quer consultar o número de identificadores alocados em seu aplicativo. No **Watch** janela, você pode inserir a seguinte pseudovariável na **nome** coluna e, em seguida, pressionar Return para avaliá-lo:  
+ Suponha que você está escrevendo um aplicativo de código nativo e quer consultar o número de identificadores alocados em seu aplicativo. Na janela **Inspeção**, você pode inserir a seguinte pseudovariável na coluna **Nome** e então pressionar Enter para avaliá-la:  
   
 `$handles`
   
@@ -45,7 +43,7 @@ As pseudovariáveis são termos usados para exibir determinadas informações em
 |`$env`|Exibe o bloco de ambiente no visualizador de cadeia de caracteres.|  
 |`$cmdline`|Exibe a cadeia de caracteres de linha de comando que iniciou o programa.|  
 |`$pid`|Exibe a identificação do processo.|  
-|`$` *RegisterName*<br /><br /> ou<br /><br /> `@` *RegisterName*|Exibe o conteúdo do registro *registername*.<br /><br /> Normalmente, você pode exibir conteúdo do registro simplesmente inserindo o nome do registro. A única vez que você precisa usar essa sintaxe é quando o nome do registro sobrecarrega um nome de variável. Se o nome do registro for igual ao nome da variável no escopo atual, o depurador interpretará o nome como um nome de variável. Ou seja, quando `$` *registername* ou `@` *registername* se torna útil.|  
+|`$` *registername*<br /><br /> ou<br /><br /> `@` *registername*|Exibe o conteúdo do registro *registername*.<br /><br /> Normalmente, você pode exibir conteúdo do registro simplesmente inserindo o nome do registro. A única vez que você precisa usar essa sintaxe é quando o nome do registro sobrecarrega um nome de variável. Se o nome do registro for igual ao nome da variável no escopo atual, o depurador interpretará o nome como um nome de variável. É nesse momento que `$`*registername* ou `@`*registername* é útil.|  
 |`$clk`|Exibe a hora em ciclos de relógio.|  
 |`$user`|Exibe uma estrutura com informações de conta para a conta que executa o aplicativo. Por motivo de segurança, as informações de senha não são exibidas.|  
 |`$exceptionstack`|Exibe o rastreamento de pilha da exceção atual de Tempo de Execução do Windows. `$ exceptionstack` funciona apenas em aplicativos UWP. `$ exceptionstack` Não há suporte para as exceções de C++ e SEH|  
@@ -55,18 +53,18 @@ As pseudovariáveis são termos usados para exibir determinadas informações em
   
 |Pseudovariável|Função|  
 |--------------------|--------------|  
-|`$exception`|Exibe informações sobre a última exceção. Se nenhuma exceção tiver ocorrido, a avaliação `$exception` exibirá uma mensagem de erro.<br /><br /> No Visual c#, quando o Assistente de exceção está desabilitado, `$exception` é adicionado automaticamente para o **Locals** janela quando ocorre uma exceção.|  
+|`$exception`|Exibe informações sobre a última exceção. Se nenhuma exceção tiver ocorrido, a avaliação `$exception` exibirá uma mensagem de erro.<br /><br /> Somente no Visual C#, quando o Assistente de Exceção for desabilitado, `$exception` será automaticamente adicionado à janela **Locais** quando ocorrer uma exceção.|  
 |`$user`|Exibe uma estrutura com informações de conta para a conta que executa o aplicativo. Por motivo de segurança, as informações de senha não são exibidas.|  
   
  No Visual Basic, você pode usar as pseudovariáveis mostradas na seguinte tabela:  
   
 |Pseudovariável|Função|  
 |--------------------|--------------|  
-|`$delete` ou `$$delete`|Exclui uma variável implícita que foi criada na **imediato** janela. A sintaxe é `$delete,` *variável* ou`$delete,` *variável*`.`|  
+|`$delete` ou `$$delete`|Exclui uma variável implícita criada na janela **Imediato**. A sintaxe é `$delete,` *variável* ou`$delete,` *variável*`.`|  
 |`$objectids` ou `$listobjectids`|Exibe todas as IDs de objetos como filhos da expressão especificada. A sintaxe é `$objectid,` *expressão* ou`$listobjectids,` *expressão*`.`|  
 |`$` *N* `#`|Exibe o objeto com a ID de objeto igual a *N*.|  
-|`$dynamic`|Exibe o especial **modo de exibição dinâmico** nó para um objeto que implementa o `IDynamicMetaObjectProvider`. Interface. A sintaxe é `$dynamic,` *objeto*. Esse recurso se aplica somente ao código que usa o .NET Framework versão 4.|  
+|`$dynamic`|Exibe o nó especial **Modo de Exibição Dinâmico** para um objeto que implementa o `IDynamicMetaObjectProvider`. Interface. A sintaxe é `$dynamic,` *objeto*. Esse recurso se aplica somente ao código que usa o .NET Framework versão 4.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Inspeção e QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Windows variável](../debugger/debugger-windows.md)
+ [Janelas Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
+ [Janelas de Variáveis](../debugger/debugger-windows.md)

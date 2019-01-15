@@ -1,8 +1,6 @@
 ---
 title: Técnicas de depuração do MFC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a2bfc9e9c45e7bf3413c1733dd57534f3675a2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832211"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuração MFC
 Se você estiver depurando um programa MFC, essas técnicas de depuração poderão ser úteis.  
@@ -46,9 +44,9 @@ Se você estiver depurando um programa MFC, essas técnicas de depuração poder
 
 - [Acompanhando alocações de memória](#BKMK_Tracking_memory_allocations)  
 
-- [Habilitando o diagnóstico de memória](#BKMK_Enabling_memory_diagnostics)  
+- [Habilitando diagnóstico de memória](#BKMK_Enabling_memory_diagnostics)  
 
-- [Tirar instantâneos de memória](#BKMK_Taking_memory_snapshots)  
+- [Tirando instantâneos de memória](#BKMK_Taking_memory_snapshots)  
 
 - [Exibindo estatísticas de memória](#BKMK_Viewing_memory_statistics)  
 
@@ -58,12 +56,12 @@ Se você estiver depurando um programa MFC, essas técnicas de depuração poder
 
   - [Personalizando despejos de objeto](#BKMK_Customizing_object_dumps)  
 
-    [Reduzir o tamanho de uma compilação de depuração do MFC](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+    [Reduzindo o tamanho de um build de depuração do MFC](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
 
   - [Criando um aplicativo do MFC com informações de depuração para os módulos selecionados](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
 
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- O MFC fornece um especial [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) função para codificar os pontos de interrupção no código-fonte:  
+ O MFC fornece uma função [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) especial para evitar a codificação de pontos de interrupção no código-fonte:  
 
 ```cpp
 AfxDebugBreak( );  
@@ -82,9 +80,9 @@ _asm int 3
  [Neste tópico](#BKMK_In_this_topic)  
 
 ##  <a name="BKMK_The_TRACE_macro"></a> A macro TRACE  
- Para exibir mensagens de seu programa no depurador [janela de saída](../ide/reference/output-window.md), você pode usar o [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) macro ou o MFC [rastreamento](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) macro. Como o [asserções](../debugger/c-cpp-assertions.md), as macros de rastreamento estão ativas somente na versão de depuração do seu programa e desaparecem quando compiladas na versão de lançamento.  
+ Para exibir mensagens do seu programa no depurador [janela de Saída](../ide/reference/output-window.md), você pode usar a macro [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) ou a macro [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) do MFC. Assim como as [asserções](../debugger/c-cpp-assertions.md), as macros de rastreamento estão ativas somente na versão de depuração do programa e desaparecem quando compiladas na versão de lançamento.  
 
- Os exemplos a seguir mostram algumas das maneiras como você pode usar o **rastreamento** macro. Como o `printf`, o **rastreamento** macro pode lidar com um número de argumentos.  
+ Os exemplos a seguir mostram algumas das formas que você pode usar a macro **TRACE**. Como o `printf`, a macro **TRACE** pode lidar com um número de argumentos.  
 
 ```cpp
 int x = 1;  
@@ -99,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
 
- A macro TRACE trata adequadamente char * e wchar_t\* parâmetros. Os exemplos a seguir demonstram o uso da macro TRACE junto com os diferentes tipos de parâmetros de cadeia de caracteres.  
+ A macro TRACE trata adequadamente os parâmetros char* e wchar_t\*. Os exemplos a seguir demonstram o uso da macro TRACE junto com os diferentes tipos de parâmetros de cadeia de caracteres.  
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -109,7 +107,7 @@ TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n",
 TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n"), _T("The number is:"), 2);  
 ```  
 
- Para obter mais informações sobre o **rastreamento** macro, consulte [serviços de diagnóstico](/cpp/mfc/reference/diagnostic-services).  
+ Para obter mais informações sobre a macro **TRACE**, confira [Serviços de diagnóstico](/cpp/mfc/reference/diagnostic-services).  
 
  [Neste tópico](#BKMK_In_this_topic)  
 
@@ -117,36 +115,36 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  O MFC fornece classes e funções para detectar a memória alocada, mas nunca desalocada.  
 
 ###  <a name="BKMK_Tracking_memory_allocations"></a> Acompanhando alocações de memória  
- No MFC, você pode usar a macro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) em vez da **novos** perdas de operador para ajudar a localizar a memória. Na versão de depuração do programa, o `DEBUG_NEW` controla o nome de arquivo e o número de linha para cada objeto que aloca. Quando você compila uma versão de lançamento do seu programa `DEBUG_NEW` resolve para um simples **nova** operação sem os nome e a linha número informações do arquivo. Dessa forma, você não paga penalidade de velocidade da versão de lançamento do programa.  
+ No MFC, você pode usar a macro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) no lugar do operador **new** para ajudar a localizar possíveis vazamentos de memória. Na versão de depuração do programa, o `DEBUG_NEW` controla o nome de arquivo e o número de linha para cada objeto que aloca. Quando você compila uma versão de lançamento do programa, o `DEBUG_NEW` resolve-se como uma operação **new** simples sem as informações de nome do arquivo e número de linha. Dessa forma, você não paga penalidade de velocidade da versão de lançamento do programa.  
 
- Se você não deseja reescrever o programa inteiro para usar `DEBUG_NEW` em vez de **nova**, você pode definir essa macro nos arquivos de origem:  
+ Se você não quiser reescrever o programa inteiro para usar `DEBUG_NEW` em vez de **new**, poderá definir esta macro em seus arquivos de origem:  
 
 ```cpp
 #define new DEBUG_NEW  
 ```  
 
- Ao fazer uma [despejo de objeto](#BKMK_Taking_object_dumps), cada objeto alocado com `DEBUG_NEW` mostrará o número de arquivo e de linha em que ele foi alocado, permitindo que você localize as fontes de vazamentos de memória.  
+ Quando você faz [despejo de objeto](#BKMK_Taking_object_dumps), cada objeto alocado com `DEBUG_NEW` mostrará o arquivo e o número da linha em que foi alocado, permitindo que você localize as fontes de possíveis vazamentos de memória.  
 
- A versão de depuração da estrutura MFC usa `DEBUG_NEW` automaticamente, mas seu código não. Se você quiser que os benefícios da `DEBUG_NEW`, você deve usar `DEBUG_NEW` explicitamente ou **#define new** conforme mostrado acima.  
+ A versão de depuração da estrutura MFC usa `DEBUG_NEW` automaticamente, mas seu código não. Se você quiser os benefícios de `DEBUG_NEW`, deverá usar o `DEBUG_NEW` explicitamente ou **#define new** como mostrado acima.  
 
  [Neste tópico](#BKMK_In_this_topic)  
 
-###  <a name="BKMK_Enabling_memory_diagnostics"></a> Habilitando o diagnóstico de memória  
+###  <a name="BKMK_Enabling_memory_diagnostics"></a> Habilitando diagnóstico de memória  
  Para que você possa usar os recursos de diagnóstico de memória, deverá habilitar o rastreamento de diagnóstico.  
 
  **Para habilitar ou desabilitar o diagnóstico de memória**  
 
 - Chame a função global [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) para habilitar ou desabilitar o alocador de diagnóstico de memória. Como o diagnóstico de memória é ativado por padrão na biblioteca de depuração, você normalmente usará essa função para desativá-la temporariamente, o que aumenta a velocidade de execução do programa e reduz a saída de diagnóstico.  
 
-  **Para selecionar os recursos de diagnóstico de memória específicos com afxMemDF**  
+  **Para selecionar recursos de diagnóstico de memória específicos com afxMemDF**  
 
-- Se você quiser um controle mais preciso sobre os recursos de diagnóstico de memória, você pode seletivamente ativar recursos de diagnóstico de memória individuais e desativar, definindo o valor da variável global MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Essa variável pode ter os seguintes valores conforme especificado pelo tipo enumerado **afxMemDF**.  
+- Se você quiser um controle mais preciso sobre os recursos de diagnóstico de memória, poderá habilitar e desabilitar seletivamente os recursos individuais de diagnóstico de memória definindo o valor da variável global [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086) do MFC. Essa variável pode ter os seguintes valores conforme especificado pelo tipo enumerado **afxMemDF**.  
 
   |Valor|Descrição|  
   |-----------|-----------------|  
   |**allocMemDF**|Ativar o alocador de diagnóstico de memória (padrão).|  
   |**delayFreeMemDF**|Atrase a liberação de memória ao chamar `delete` ou até `free` até o programa fechar. Isso fará o programa alocar a quantidade máxima de memória possível.|  
-  |**checkAlwaysMemDF**|Chame [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) sempre que a memória é alocada ou liberada.|  
+  |**checkAlwaysMemDF**|Chame [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) toda vez que a memória for alocada ou liberada.|  
 
    Esses valores podem ser usados em combinação executando uma operação OR lógica, como mostrado a seguir:  
 
@@ -156,7 +154,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
 
   [Neste tópico](#BKMK_In_this_topic)  
 
-###  <a name="BKMK_Taking_memory_snapshots"></a> Tirar instantâneos de memória  
+###  <a name="BKMK_Taking_memory_snapshots"></a> Tirando instantâneos de memória  
 
 1. Criar uma [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) objeto e a chamada a [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) função de membro. Isso cria o primeiro instantâneo de memória.  
 
@@ -232,7 +230,7 @@ Total allocations: 67 bytes
  Em um programa MFC, você pode usar [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para despejar uma descrição de todos os objetos no heap que não foram desalocados. `DumpAllObjectsSince` Despeja todos os objetos alocados desde o último [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Se nenhuma chamada de `Checkpoint` tiver ocorrido, o `DumpAllObjectsSince` despejará todos os objetos e não objetos atualmente na memória.  
 
 > [!NOTE]
->  Antes de usar o despejo de objeto do MFC, você deve [habilitar o rastreamento de diagnóstico](#BKMK_Enabling_Memory_Diagnostics).  
+>  Antes de usar o despejo de objeto do MFC, você deverá [habilitar o rastreamento de diagnóstico](#BKMK_Enabling_Memory_Diagnostics).  
 
 > [!NOTE]
 >  O MFC despeja automaticamente todos os objetos vazados quando o programa sair, portanto você não precisará criar o código para despejar objetos nesse momento.  
@@ -301,11 +299,11 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
 
  O construtor `CPerson` usa três argumentos que são os ponteiros para `char`, que são usados para inicializar variáveis de membro `CString`. No despejo de memória, você pode ver o objeto `CPerson` junto com três blocos diferentes de objeto (3, 4 e 5). Eles mantêm os caracteres para as variáveis de membro `CString` e não serão excluídos quando o destruidor do objeto `CPerson` for invocado.  
 
- O bloco número 2 é o próprio objeto `CPerson`. `$51A4` representa o endereço do bloco e é seguido pelos conteúdos do objeto, que eram gerados pelo `CPerson`::`Dump` quando chamado por [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince).  
+ O bloco número 2 é o próprio objeto `CPerson`. `$51A4` representa o endereço do bloco e é seguido pelos conteúdos do objeto, que eram gerados pelo `CPerson`::`Dump` quando chamados pelo [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince).  
 
  Você pode determinar a qual bloco o número 1 está associado com a variável de quadro `CString` devido ao número e ao tamanho da sequência, que corresponde ao número de caracteres na variável `CString` do quadro. As variáveis alocadas no quadro são desalocadas automaticamente quando o quadro sai do escopo.  
 
- **Variáveis do quadro**  
+ **Variáveis de quadro**  
 
  Em geral, você não precisa se preocupar com objetos heap associados a variáveis do quadro porque eles são desalocados automaticamente quando as variáveis do quadro saem do escopo. Para evitar a confusão nos despejos de diagnóstico de memória, você deve posicionar suas chamadas para `Checkpoint` de modo que fiquem fora do escopo de variáveis do quadro. Por exemplo, coloque colchetes de escopo em volta do código de alocação anterior, como mostrado a seguir:  
 
@@ -337,7 +335,7 @@ Phone #: 581-0215
 
  **Alocações diferentes de objeto**  
 
- Observe que algumas alocações são objetos (como `CPerson`) e algumas são alocações diferentes de objeto. "Alocações diferentes de objeto" são alocações para objetos não derivados de `CObject` ou alocações de tipos C primitivos como `char`, `int`, ou `long`. Se o **CObject -** classe derivada aloca espaço adicional, como para buffers internos, esses objetos mostrarão as alocações de objeto e diferentes de objeto.  
+ Observe que algumas alocações são objetos (como `CPerson`) e algumas são alocações diferentes de objeto. As "alocações diferentes de objeto" são alocações para os objetos não derivados de `CObject` ou alocações de tipos C primitivos como `char`, `int` ou `long`. Se a classe derivada de **CObject** aloca o espaço adicional, por exemplo, para buffers internos, esses objetos mostrarão as alocações de objeto e diferentes de objeto.  
 
  **Evitando vazamentos de memória**  
 
@@ -358,9 +356,9 @@ Phone #: 581-0215
  [Neste tópico](#BKMK_In_this_topic)  
 
 ####  <a name="BKMK_Customizing_object_dumps"></a> Personalizando despejos de objeto  
- Quando você deriva uma classe de [CObject](/cpp/mfc/reference/cobject-class), você pode substituir o `Dump` a função de membro para fornecer informações adicionais quando você usa [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para despejar objetos para o [Janela de saída](../ide/reference/output-window.md).  
+ Quando você deriva uma classe de [CObject](/cpp/mfc/reference/cobject-class), pode substituir a função de membro `Dump` para fornecer informações adicionais quando usa [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para despejar objetos para a [janela de Saída](../ide/reference/output-window.md).  
 
- O `Dump` função grava uma representação textual do membro do objeto variáveis para um contexto de despejo ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). O contexto de despejo é semelhante a um fluxo de E/S. Você pode usar o operador de anexação (**<<**) para enviar dados para um `CDumpContext`.  
+ A função `Dump` grava uma representação textual das variáveis de membro do objeto em um contexto de despejo ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). O contexto de despejo é semelhante a um fluxo de E/S. Você pode usar o operador de acréscimo (**<<**) para enviar dados para um `CDumpContext`.  
 
  Quando você substitui a função `Dump`, primeiro deve chamar a versão da classe base do `Dump` para despejar o conteúdo do objeto da classe base. Em seguida, gere uma descrição e um valor textuais para cada variável de membro da sua classe derivada.  
 
@@ -380,7 +378,7 @@ public:
 };  
 ```  
 
- Porque o objeto de despejo só faz sentido quando você estiver depurando seu programa, a declaração do `Dump` função é agrupada com um **#ifdef DEBUG / #endif** bloco.  
+ Como o objeto de despejo só faz sentido quando você estiver depurando seu programa, a declaração da função `Dump` é envolvida com um bloco **#ifdef _DEBUG / #endif**.  
 
  No exemplo a seguir, a função `Dump` primeiro chama a função `Dump` para a sua classe base. Em seguida, ela grava uma breve descrição de cada variável de membro junto com o valor do membro no fluxo de diagnóstico.  
 
@@ -412,7 +410,7 @@ pMyPerson->Dump( afxDump );
 
  [Neste tópico](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reduzir o tamanho de uma compilação de depuração do MFC  
+##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reduzindo o tamanho de um build de depuração do MFC  
  As informações de depuração para um aplicativo MFC grande pode utilizar muito espaço em disco. Você pode usar um destes procedimentos para reduzir o tamanho:  
 
 1. Recrie as bibliotecas MFC usando o [/Z7, /Zi, /ZI (formato de informações de depuração)](/cpp/build/reference/z7-zi-zi-debug-information-format) opção, em vez de **/Z7**. Essas opções criam um único arquivo de banco de dados do programa (PDB) que contém informações de depuração para a biblioteca inteira, reduzindo a redundância e economizando espaço.  
@@ -428,59 +426,59 @@ pMyPerson->Dump( afxDump );
 
 1. No Gerenciador de Soluções, selecione o projeto.  
 
-2. Dos **modo de exibição** menu, selecione **páginas de propriedade**.  
+2. No menu **Exibir**, selecione **Páginas de Propriedades**.  
 
 3. Primeiro, você criará uma nova configuração de projeto.  
 
-   1.  No  **\<projeto > páginas de propriedades** caixa de diálogo, clique o **Configuration Manager** botão.  
+   1.  Na caixa de diálogo **Páginas de Propriedades \<Projeto>**, clique no botão **Configuration Manager**.  
 
-   2.  No [caixa de diálogo do Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localize seu projeto na grade. No **Configuration** coluna, selecione  **\<novo... >**.  
+   2.  Na [caixa de diálogo do Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localize seu projeto na grade. Na coluna **Configuração**, selecione **\<Novo…>**.  
 
-   3.  No [caixa de diálogo nova configuração de projeto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), digite um nome para a nova configuração, como "Depuração parcial", o **nome de configuração do projeto** caixa.  
+   3.  Na [caixa de diálogo Nova Configuração de Projeto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), digite um nome para a nova configuração, por exemplo “Depuração parcial”, na caixa **Nome de Configuração do Projeto**.  
 
-   4.  No **copiar configurações de** , escolha **versão**.  
+   4.  Na lista **Copiar Configurações de**, escolha **Versão**.  
 
    5.  Clique em **Okey** para fechar o **nova configuração de projeto** caixa de diálogo.  
 
-   6.  Fechar o **Configuration Manager** caixa de diálogo.  
+   6.  Feche a caixa de diálogo **Configuration Manager**.  
 
 4. Agora, você definirá opções para o projeto inteiro.  
 
-   1.  No **páginas de propriedades** caixa de diálogo de **propriedades de configuração** pasta, selecione o **geral** categoria.  
+   1.  Na caixa de diálogo **Páginas de Propriedades**, na pasta **Propriedades de Configuração**, selecione a categoria **Geral**.  
 
-   2.  Na grade de configurações de projeto, expanda **padrões de projeto** (se necessário).  
+   2.  Na grade de configurações de projeto, expanda **Padrões de Projeto** (se necessário).  
 
-   3.  Sob **padrões de projeto**, localize **uso do MFC**. A configuração atual é exibida na coluna direita da grade. Clique na configuração atual e altere-o para **usar MFC em uma biblioteca estática**.  
+   3.  Em **Padrões de Projeto**, localize **Uso do MFC**. A configuração atual é exibida na coluna direita da grade. Clique na configuração atual e altere-a para **Usar MFC em uma Biblioteca Estática**.  
 
-   4.  No painel esquerdo do **páginas de propriedades** caixa de diálogo, abra o **C/C++** pasta e selecione **pré-processador**. Na grade de propriedades, localize **definições de pré-processador** e substitua "NDEBUG" por debug".  
+   4.  No painel esquerdo da caixa de diálogo **Páginas de Propriedades**, abra a pasta **C/C++** e selecione **Pré-Processador**. Na grade de propriedades, localize **Definições do Pré-processador** e substitua "NDEBUG" por "_DEBUG".  
 
-   5.  No painel esquerdo do **páginas de propriedades** caixa de diálogo, abra o **vinculador** pasta e selecione o **entrada** categoria. Na grade de propriedades, localize **dependências adicionais**. No **dependências adicionais** configuração, digite "NAFXCWD. LIB"e"NAFXCWD."  
+   5.  No painel esquerdo da caixa de diálogo **Páginas de Propriedades**, abra a pasta **Vinculador** e selecione a categoria **Entrada**. Na grade de propriedades, localize **Dependências Adicionais**. Na definição de **Dependências Adicionais**, digite "NAFXCWD.LIB" e "LIBCMT".  
 
-   6.  Clique em **Okey** para salvar as novas opções de compilação e fechar o **páginas de propriedade** caixa de diálogo.  
+   6.  Clique em **OK** para salvar as novas opções de criação e feche a caixa de diálogo **Páginas de Propriedades**.  
 
-5. Dos **construir** menu, selecione **recompilar**. Isso remove todas as informações de depuração de seus módulos, mas não afeta a biblioteca MFC.  
+5. No menu **Compilar**, selecione **Recompilar**. Isso remove todas as informações de depuração de seus módulos, mas não afeta a biblioteca MFC.  
 
 6. Agora você deve adicionar as informações de depuração de volta para os módulos selecionados em seu aplicativo. Lembre-se de que você pode definir pontos de interrupção e executar outras funções de depurador apenas nos módulos que você compilou com informações de depuração. Para cada arquivo de projeto em que você quer incluir informações de depuração, execute as seguintes etapas:  
 
-   1.  No Gerenciador de soluções, abra o **arquivos de origem** pasta localizada em seu projeto.  
+   1.  No Gerenciador de Soluções, abra a pasta **Arquivos de Origem** localizada em seu projeto.  
 
    2.  Selecione o arquivo para o qual você quer definir informações de depuração.  
 
-   3.  Dos **modo de exibição** menu, selecione **páginas de propriedade**.  
+   3.  No menu **Exibir**, selecione **Páginas de Propriedades**.  
 
-   4.  No **páginas de propriedades** caixa de diálogo a **definições de configuração** pasta, abra o **C/C++** , em seguida, selecione uma pasta a **geral** categoria.  
+   4.  Na caixa de diálogo **Páginas de Propriedades**, na pasta **Definições de Configuração**, abra a pasta **C/C++** e, em seguida, selecione a categoria **Geral**.  
 
-   5.  Na grade de propriedades, localize **formato informações de depuração.**  
+   5.  Na grade de propriedades, localize **Formato de Informação de Depuração**.  
 
-   6.  Clique o **formato de informações de depuração** as configurações e selecione a opção desejada (normalmente **/ZI**) para obter informações de depuração.  
+   6.  Clique nas configurações de **Formato de Informação de Depuração** e selecione a opção desejada (normalmente **/ZI**) para obter as informações de depuração.  
 
-   7.  Se você estiver usando um aplicativo gerado por assistente ou se tiver cabeçalhos pré-compilado, será preciso desativar os cabeçalhos pré-compilados ou recompilá-los antes de compilar os outros módulos. Caso contrário, você receberá o aviso C4650 e mensagens de erro C2855. Você pode desligar cabeçalhos pré-compilados alterando a **criar/usar cabeçalho pré-compilado** definindo na  **\<projeto > propriedades** caixa de diálogo (**propriedades de configuração**  pasta, **C/C++** subpasta **cabeçalhos pré-compilados** categoria).  
+   7.  Se você estiver usando um aplicativo gerado por assistente ou se tiver cabeçalhos pré-compilado, será preciso desativar os cabeçalhos pré-compilados ou recompilá-los antes de compilar os outros módulos. Caso contrário, você receberá o aviso C4650 e mensagens de erro C2855. Você pode desligar cabeçalhos pré-compilados alterando a configuração **Criar/Usar Cabeçalho Pré-Compilado** na caixa de diálogo **Propriedades \<Projeto>** (pasta **Propriedades de Configuração**, subpasta **C/C++**, categoria **Cabeçalhos Pré-compilados**).  
 
-7. Do **Build** menu, selecione **Build** para recompilar os arquivos de projeto que estão desatualizados.  
+7. No menu **Compilar**, selecione **Compilar** para recompilar os arquivos de projeto que estão desatualizados.  
 
-   Como alternativa à técnica descrita neste tópico, você pode usar um makefile externo para definir opções individuais para cada arquivo. Nesse caso, para vincular com as bibliotecas de depuração MFC, você deve definir a [Debug](/cpp/c-runtime-library/debug) sinalizador para cada módulo. Se você quiser usar bibliotecas de versão MFC, deverá definir NDEBUG. Para obter mais informações sobre como escrever makefiles externos, consulte a [referência de NMAKE](/cpp/build/running-nmake).  
+   Como alternativa à técnica descrita neste tópico, você pode usar um makefile externo para definir opções individuais para cada arquivo. Nesse caso, para vincular com as bibliotecas de depuração MFC, você deverá definir o sinalizador [_DEBUG](/cpp/c-runtime-library/debug) para cada módulo. Se você quiser usar bibliotecas de versão MFC, deverá definir NDEBUG. Para obter mais informações sobre como escrever makefiles externos, confira [Referência de NMAKE](/cpp/build/running-nmake).  
 
    [Neste tópico](#BKMK_In_this_topic)  
 
 ## <a name="see-also"></a>Consulte também  
- [Depuração do Visual C++](../debugger/debugging-native-code.md)
+ [Depurando o Visual C++](../debugger/debugging-native-code.md)

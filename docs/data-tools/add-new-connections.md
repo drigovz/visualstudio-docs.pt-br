@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880592"
 ---
 # <a name="add-new-connections"></a>Adicionar novas conexões
 
@@ -40,7 +39,7 @@ Para criar uma conexão ao banco de dados, clique o **Adicionar Conexão** ícon
 
 Isso abre o **Adicionar Conexão** caixa de diálogo. Aqui, inserimos o nome da instância LocalDB do SQL Server.
 
-![Adicionar nova Conexão](../data-tools/media/raddata-add-new-connection-dialog.png)
+![Adicionar Nova Conexão](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Alterar o provedor
 
@@ -52,7 +51,7 @@ Se a fonte de dados não é o desejado, clique o **alteração** botão para esc
 
 Depois de escolher a fonte de dados, clique em **Conexão de teste**. Se não tiver êxito, você precisará solucionar problemas com base na documentação do fornecedor.
 
-![Conexão de teste](../data-tools/media/raddata-test-connection.png)
+![Testar Conexão](../data-tools/media/raddata-test-connection.png)
 
 Se o teste for bem-sucedido, você está pronto para criar uma *fonte de dados*, que é um termo do Visual Studio que realmente significa uma *modelo de dados* baseado em um banco de dados ou serviço subjacente.
 

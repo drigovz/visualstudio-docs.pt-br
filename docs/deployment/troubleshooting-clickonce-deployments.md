@@ -1,8 +1,6 @@
 ---
 title: Solucionando problemas de implantações do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af05eee471581df756d17bc00e1f3a18fa032598
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 25d352666b66202b40d5d1d397aa36a978f695a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944477"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solucionar problemas de implantações do ClickOnce
 Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações.  
@@ -34,19 +32,19 @@ Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com 
 
 ## <a name="deployment-considerations"></a>Considerações de implantação
 
- [Como: definir um local do arquivo de log personalizado para erros de implantação do ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [Como: Definir uma localização de arquivo de log personalizado para erros de implantação do ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  Descreve como redirecionar todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] falhas de ativação em um computador para um único arquivo de log.  
   
- [Como: especificar arquivos de log detalhados para implantações do ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [Como: Especificar arquivos de log detalhados para implantações do ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  Descreve como aumentar o detalhe que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] grava em arquivos de log.  
   
  [Problemas de configuração de servidor e cliente em implantações do ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
  Descreve vários problemas com a configuração do seu servidor Web que poderia causar dificuldade baixando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos.  
   
- [Segurança, controle de versão e problemas de manifesto em implantações do ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
+ [Problemas de segurança, controle de versão e manifesto em implantações do ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
  Descreve diversos problemas que cercam [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações.  
   
- [Solucionar problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
+ [Solucionar erros específicos em implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
  Descreve os cenários específicos nos quais um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação não pode ser bem-sucedida e fornece etapas para resolvê-los.  
   
  [Depurar aplicativos ClickOnce que usam System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  

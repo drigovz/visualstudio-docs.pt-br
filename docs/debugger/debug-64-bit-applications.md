@@ -1,8 +1,6 @@
 ---
 title: Depurar aplicativos de 64 bits | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 6f79bd9c0f2bbf2ab3156f5bc49100c9c8aee536
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947355"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicativos de 64 bits
 Você pode depurar um aplicativo de 64 bits que está sendo executado no computador local ou em um computador remoto.  
@@ -39,14 +37,14 @@ Você pode depurar um aplicativo de 64 bits que está sendo executado no computa
   
 1.  Crie uma solução do Visual Studio, por exemplo um console aplicativo c#.  
   
-2.  Defina a configuração para 64 bits usando o Configuration Manager. Para obter mais informações, consulte [como: configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).  
+2.  Defina a configuração para 64 bits usando o Configuration Manager. Para obter mais informações, confira [Como: Configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3.  Neste ponto, a versão de 64 bits do depurador remoto (msvsmon.exe) inicia. Ele é executado, desde que a solução com a configuração de 64 bits está aberta.  
   
 4.  Inicie a depuração. Você deve ter a mesma experiência assim como acontece com uma configuração de 32 bits. Se você obtiver erros, consulte a seção de solução de problemas abaixo.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Solucionando problemas de depuração de 64 bits  
- Você verá um erro: "uma operação de depuração de 64 bits está demorando mais do que o esperado." Nesse caso, o Visual Studio enviou uma solicitação para a versão de 64 bits do msvsmon.exe e levou muito tempo para o resultado da solicitação antes de voltar.  
+ Você verá um erro: "Uma operação de depuração de 64 bits está demorando mais do que o esperado." Nesse caso, o Visual Studio enviou uma solicitação para a versão de 64 bits do msvsmon.exe e levou muito tempo para o resultado da solicitação antes de voltar.  
   
  Há duas causas principais para este erro:  
   
@@ -57,6 +55,6 @@ Você pode depurar um aplicativo de 64 bits que está sendo executado no computa
 ## <a name="see-also"></a>Consulte também  
  [Aplicativos de 64 bits](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
  [Configurando programas para 64 bits](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
- [Suporte de 64 bits do Visual Studio IDE](../ide/visual-studio-ide-64-bit-support.md)   
+ [Suporte ao IDE do Visual Studio de 64 bits](../ide/visual-studio-ide-64-bit-support.md)   
  [Usando arquivos de despejo](../debugger/using-dump-files.md)   
  [Depuração remota](../debugger/remote-debugging.md)

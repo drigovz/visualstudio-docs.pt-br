@@ -1,8 +1,6 @@
 ---
 title: Referência de API da visualização simultânea | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 686b7353db35b26769bc9be4f64426862b3dae39
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 8f70c806cc848c8f7aba87e2d89f55c480cbc4af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902208"
 ---
 # <a name="visualizer-api-reference"></a>Referência de API do visualizador
 
-As APIs do Visualizador são fornecidas para os usuários que quiserem escrever um visualizador para o depurador do Visual Studio. Um visualizador é um aplicativo pequeno que estende a funcionalidade da interface de usuário do depurador do Visual Studio. Um visualizador pode exibir (e, opcionalmente, editar) um objeto de dados de um tipo específico para o qual o Visualizador é criado.  
+As APIs do Visualizador são fornecidas para os usuários que quiserem escrever um visualizador para o depurador do Visual Studio. Um visualizador é um aplicativo pequeno que estende a funcionalidade da interface de usuário do depurador do Visual Studio. Um visualizador pode exibir (e, opcionalmente, editar) um objeto de dados de um tipo específico para o qual o visualizador é criado.  
   
 ## <a name="in-this-section"></a>Nesta seção  
   
@@ -44,6 +42,6 @@ As APIs do Visualizador são fornecidas para os usuários que quiserem escrever 
   
 ## <a name="see-also"></a>Consulte também
 
- [Passo a passo: Escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Como: escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Como: Escrever um visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)

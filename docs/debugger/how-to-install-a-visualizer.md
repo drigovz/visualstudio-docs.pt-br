@@ -1,8 +1,6 @@
 ---
-title: 'Como: instalar um visualizador | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Instalar um visualizador | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87feaebf16168744467137fdf4af54538a316cdf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e62637581fbb65eb8efd20e048cc364895cfbcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914565"
 ---
-# <a name="how-to-install-a-visualizer"></a>Como instalar um visualizador
+# <a name="how-to-install-a-visualizer"></a>Como: Instalar um visualizador
 Após ter criado um visualizador, você deverá instalar o visualizador de modo que esteja disponível em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar um visualizador é um processo simples.  
   
 > [!NOTE]
->  Em aplicativos UWP, somente o texto padrão, há suporte para os visualizadores HTML, XML e JSON. Não há suporte para visualizadores personalizados (criados pelo usuário).  
+>  Em aplicativos UWP, apenas o texto padrão, os visualizadores HTML, XML e JSON são suportados. Não há suporte para visualizadores personalizados (criados pelo usuário).  
   
 ### <a name="to-install-a-visualizer"></a>Para instalar um visualizador  
   
@@ -48,4 +46,4 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
   
 ## <a name="see-also"></a>Consulte também  
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Como escrever um visualizador](../debugger/how-to-write-a-visualizer.md)
+ [Como: Escrever um visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)

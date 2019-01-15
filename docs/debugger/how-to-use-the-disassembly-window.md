@@ -2,7 +2,6 @@
 title: Exibir o código de desmontagem no depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922210"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Exibir o código de desmontagem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -57,7 +56,7 @@ Código de assembly depende intensamente registros do processador ou, para códi
 
 Para exibir instruções de código de máquina em sua forma bruta de numérica, em vez de linguagem assembly, use o **memória** janela ou selecione **Bytes de código** no menu de atalho no **desmontagem**  janela.
 
-## <a name="use-the-disassembly-window"></a>Use a janela de desmontagem
+## <a name="use-the-disassembly-window"></a>Usar a janela Desmontagem
 
 Para habilitar o **desmontagem** janela, em **ferramentas** > **opções** (ou **ferramentas**  >  **As opções**) > **Debugging**, selecione **Habilitar depuração no nível do endereço**.
 
@@ -74,4 +73,4 @@ Uma seta amarela na margem esquerda marca o ponto de execução atual. Para cód
 
 * [Paginação para cima ou para baixo na memória](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Exibição de dados no depurador](../debugger/viewing-data-in-the-debugger.md)
-* [Como: Usar a janela registros](../debugger/how-to-use-the-registers-window.md)
+* [Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)

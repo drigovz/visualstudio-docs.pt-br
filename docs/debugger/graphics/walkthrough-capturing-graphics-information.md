@@ -1,8 +1,6 @@
 ---
 title: 'Passo a passo: Capturando informações de gráficos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e647f1e98a13a87c1b526630eee349fde3fd69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2da1aec6c2e819e5d39287ac1c43f72ce8e27
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938887"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Passo a passo: capturando informações de gráficos
+# <a name="walkthrough-capturing-graphics-information"></a>Passo a passo: Capturando informações de gráficos
 Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para capturar manualmente as informações gráficas de um aplicativo Direct3D.  
   
  Este passo a passo ilustra essas tarefas:  
@@ -41,7 +39,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/in
   
 2. Em vez de um arquivo de projeto ou solução, especifique o arquivo executável para o aplicativo que você deseja capturar informações de gráficos e, em seguida, escolha **aberto**.  
   
-3. Na barra de menus, escolha **Debug**, **gráficos**, **iniciar diagnóstico**.  
+3. Na barra de menus, escolha **Depurar**, **Gráficos**, **Iniciar Diagnóstico**.  
   
    Depois de iniciar o aplicativo e é quadros de renderização, você pode capturar informações gráficas.  
   
@@ -49,7 +47,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/in
   
 - Na barra de ferramentas de diagnóstico de gráficos, escolha o **capturar** botão. ![Ícone do botão de captura de elementos gráficos](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-   -ou-  
+   - ou -  
   
    Com o aplicativo no foco, pressionar **Print Screen**.  
   

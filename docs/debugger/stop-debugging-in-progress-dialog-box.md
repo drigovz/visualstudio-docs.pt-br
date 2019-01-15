@@ -29,10 +29,10 @@ ms.locfileid: "53883127"
 # <a name="stop-debugging-in-progress-dialog-box"></a>Caixa de diálogo Parar Depuração em Andamento
 Essa caixa de diálogo aparece quando o depurador está tentando interromper uma sessão de depuração, mas parar a sessão deve demorar um pouco. Parar uma sessão de depuração normalmente é muito rápido e essa caixa de diálogo não é exibida. Entretanto, às vezes, leva mais tempo para desanexar de todos os processos que estão sendo depurados. Se parar a sessão levar mais do que alguns segundos (ou se ocorrer um erro de desanexação), essa caixa de diálogo será exibida. Se isso ocorrer com frequência, poderá ser devido a um problema interno e você deverá entrar em contato com o Product Support Services.  
   
- Você pode esperar os processos desanexarem e essa caixa de diálogo desaparecer ou usar o botão Parar Agora** para forçar a terminação imediata.  
+ Você pode esperar os processos desanexarem e essa caixa de diálogo desaparecer ou usar o botão **Parar Agora** para forçar a terminação imediata.  
   
- {1&gt;Parar Agora&lt;1}  
- Clique neste botão para encerrar imediatamente a sessão de depuração. Usando o **parar agora** encerrará em vez de desanexar os processos que estão sendo depurados. Se você estiver depurando processos do sistema, encerrar os processos com Parar Agora** poderá ter efeitos inesperados e indesejados.  
+ **Parar Agora**  
+ Clique neste botão para encerrar imediatamente a sessão de depuração. Usando o **parar agora** encerrará em vez de desanexar os processos que estão sendo depurados. Se você estiver depurando processos do sistema, encerrar os processos com **Parar Agora** poderá ter efeitos inesperados e indesejados.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   

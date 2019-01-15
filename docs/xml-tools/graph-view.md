@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826988"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269898"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 
@@ -42,7 +42,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
  A barra de rastreamento na parte inferior do modo de figura a seguir mostra onde o nó selecionado é localizado no conjunto de esquema. Se vários itens são selecionados, a barra de rastreamento será em branco.
 
-## <a name="context-menu"></a>Menu de contexto
+## <a name="context-right-click-menu"></a>Menu de contexto (atalho)
 
  A tabela a seguir descreve as opções que estão disponíveis para todos os nós na superfície de design do modo de gráfico.
 
@@ -92,7 +92,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
 ## <a name="properties-window"></a>Janela de Propriedades
 
- Use o menu de contexto para abrir inicialmente a **propriedades** janela. Por padrão, o **propriedades** janela é exibida no canto inferior direito do Visual Studio. Quando você clica em um nó que é renderizado no modo de modelo de conteúdo, as propriedades do nó serão exibidas na **propriedades** janela.
+ Use o menu de contexto (atalho) para abrir inicialmente a **propriedades** janela. Por padrão, o **propriedades** janela é exibida no canto inferior direito do Visual Studio. Quando você clica em um nó que é renderizado no modo de modelo de conteúdo, as propriedades do nó serão exibidas na **propriedades** janela.
 
 ## <a name="xsd-toolbar"></a>Barra de ferramentas XSD
 
@@ -102,9 +102,9 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
 |Opção|Descrição|
 |-|-----------------|
-|**Mostrar exibição inicial**|Alterna para o [Iniciar modo de exibição](../xml-tools/start-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL**+**1**.|
-|**Mostrar modo de exibição do modelo de conteúdo**|Alterna para o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL**+**2**.|
-|**Mostrar exibição de gráfico**|Alterna para o [exibição de gráfico](../xml-tools/graph-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL**+**3**.|
+|**Mostrar exibição inicial**|Alterna para o [Iniciar modo de exibição](../xml-tools/start-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**1**.|
+|**Mostrar modo de exibição do modelo de conteúdo**|Alterna para o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**2**.|
+|**Mostrar exibição de gráfico**|Alterna para o [exibição de gráfico](../xml-tools/graph-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**3**.|
 |**Limpar o espaço de trabalho**|Limpa o workspace e a superfície de design.|
 |**Remover espaço de trabalho**|Removes selecionou nós de workspace e da superfície de design.|
 |**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design. Essa opção é ativada no modo do modelo de conteúdo e no modo de gráfico.|
@@ -141,7 +141,7 @@ O controle deslizante de Zoom é opaco ao selecioná-la, passe o mouse sobre ele
 
 ## <a name="xml-editor-integration"></a>Integração do editor de XML
 
- Você pode alternar para frente e para trás entre o modo de gráfico e o editor XML clicando em um nó e usando o menu de contexto de código de exibição.
+ Você pode alternar entre o modo de exibição de gráfico e o Editor XML clicando em um nó e usando o menu de contexto (atalho) Exibir código.
 
  Se você alterar o esquema definido no editor XML, as alterações serão sincronizadas no modo de gráfico. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
 

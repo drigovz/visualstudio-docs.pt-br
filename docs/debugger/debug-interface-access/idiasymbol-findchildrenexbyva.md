@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenExByVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fa4f64570977a1b3546f933aa7c55e5e69ddcd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7b9a3f790acd7a285468810f981fd7e0210563eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931136"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 Recupera os filhos do símbolo que são válidos em um endereço virtual especificado.  
@@ -27,7 +25,7 @@ Recupera os filhos do símbolo que são válidos em um endereço virtual especif
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT findChildrenExByVA (   
+HRESULT findChildrenExByVA (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -59,7 +57,7 @@ HRESULT findChildrenExByVA (
  Os símbolos de locais que são retornados incluem informações de intervalo em tempo real.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Dia2.h  
+ Cabeçalho: dia2.h  
   
  Biblioteca: diaguids.lib  
   
@@ -69,5 +67,5 @@ HRESULT findChildrenExByVA (
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)

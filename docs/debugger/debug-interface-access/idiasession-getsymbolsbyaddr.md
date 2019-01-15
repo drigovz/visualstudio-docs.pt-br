@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Getsymbolsbyaddr | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c266839334184dc40af6424147dcb8b59420ee5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c58f9d982f2ea0af45ad9c9a7a6f690ad43a394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949200"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
 Recupera um enumerador que localiza os símbolos na ordem de seus endereços.  
@@ -27,7 +25,7 @@ Recupera um enumerador que localiza os símbolos na ordem de seus endereços.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT getSymbolsByAddr(   
+HRESULT getSymbolsByAddr(   
    IDiaEnumSymbolsByAddr** ppEnumbyAddr  
 );  
 ```  

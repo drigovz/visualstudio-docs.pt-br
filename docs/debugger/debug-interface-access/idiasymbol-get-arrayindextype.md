@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_arrayindextype | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: dacaba9db4a05eaaf173cc4936b075782b725025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820871"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Recupera a interface de símbolo do tipo de índice de matriz do símbolo.  
@@ -27,7 +25,7 @@ Recupera a interface de símbolo do tipo de índice de matriz do símbolo.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT get_arrayIndexType (   
+HRESULT get_arrayIndexType (   
    IDiaSymbol** pRetVal  
 );  
 ```  

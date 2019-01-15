@@ -1,8 +1,6 @@
 ---
 title: '&lt;Pacote&gt; elemento (Bootstrapper) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: df0972595710422294f9c37c5f0abad9c6e433ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868609"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacote&gt; elemento (bootstrapper)
 O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.  
@@ -150,7 +148,7 @@ O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.
 |--------------------| - |
 | `Culture` | Necessário. Define a cultura para esse pacote, que determina o idioma a ser usado. Esse atributo é uma chave para o `Strings` elemento, que lista as cadeias de caracteres específicas da cultura para nomes de produtos e as mensagens de erro durante a instalação. |
 | `Name` | Necessário. O nome do pacote exibido ao desenvolvedor de dentro de uma ferramenta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esse atributo é uma chave para o `Strings` elemento, que deve conter um `String` elemento com o `Name` e `Culture` propriedades definidas para corresponder a `Name` e `Culture` propriedades de `Package`. |
-| `LicenseAgreement` | Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser qualquer texto sem formatação (*. txt*) ou Rich Text Format. (*. rtf*) |
+| `LicenseAgreement` | Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser qualquer texto sem formatação (*. txt*) ou Rich Text Format. (*.rtf*) |
 
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra um arquivo de pacote completo para redistribuir o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  

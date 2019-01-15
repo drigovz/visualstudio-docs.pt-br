@@ -1,8 +1,6 @@
 ---
 title: Exibir comandos de Menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - View menu commands
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfbcd8d586c1c6d2d3b208c3d7d62b2b333845d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6c4d30268bc5a41ec45875640aafa0458733c89e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915368"
 ---
 # <a name="view-menu-commands"></a>Comandos do menu Exibir
-O **exibição** menu fornece comandos para controlar a Spy + + interface do usuário.  
+O **exibição** menu fornece comandos para controlar o Spy + + interface do usuário.  
   
  **Fonte**  
- Abre o **fonte** caixa de diálogo onde você pode selecionar uma fonte para uso da exibição atual do Spy + +.  
+ Abre o **fonte** caixa de diálogo, onde você pode selecionar uma fonte para o uso da exibição atual do Spy + +.  
   
  **Toolbar**  
  Oculta ou exibe a barra de ferramentas.  

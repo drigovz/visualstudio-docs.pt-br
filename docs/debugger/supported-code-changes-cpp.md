@@ -1,8 +1,6 @@
 ---
 title: Suporte para alterações de código (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 03b5c279e3d6aeee6cf0b5f0d9ad2e05e9d22fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917664"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C++)
 Editar e continuar do Visual C++ trata a maioria dos tipos de alterações de código. Porém, algumas alterações não podem ser aplicadas durante a execução do programa. Para aplicar essas alterações sem suporte, você deverá parar a execução e criar uma versão atualizada do código.  
@@ -62,7 +60,7 @@ Editar e continuar do Visual C++ trata a maioria dos tipos de alterações de c�
   
 - Alterações ao código que não tem arquivo de objeto.  
   
-  Se você fizer uma dessas alterações e, em seguida, tenta aplicar alterações de código, um erro ou mensagem de aviso aparece na **saída** janela.  
+  Se você executar uma destas alterações e tentar aplicar alterações de código, um erro ou uma mensagem de aviso serão exibidos na janela de **Saída**.  
   
 - Editar e Continuar não atualiza bibliotecas estáticas. Se você fizer uma alteração em uma biblioteca estática, a execução continuará com a versão antiga e nenhum aviso será emitido.  
   
@@ -83,7 +81,7 @@ Editar e continuar do Visual C++ trata a maioria dos tipos de alterações de c�
   
 -   Depurando um arquivo de despejo.  
   
--   Editando o código após uma exceção sem tratamento, quando o **desenrolar a pilha de chamadas em exceções não tratadas** opção não estiver selecionada.  
+-   Editando o código após uma exceção sem tratamento quando a opção **Desenrolar a pilha de chamadas em exceções não tratadas** não está selecionada.  
   
 -   Depurando um aplicativo por meio **anexar a** em vez de executar o aplicativo escolhendo **iniciar** sobre o **depurar** menu.  
   
@@ -93,7 +91,7 @@ Editar e continuar do Visual C++ trata a maioria dos tipos de alterações de c�
   
 ##  <a name="BKMK_Linking_limitations"></a> Limitações de vinculação  
   
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opções do vinculador que desativam Editar e continuar  
+###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opções de vinculador que desabilitam Editar e Continuar  
  As opções de vinculador a seguir desabilitam Editar e Continuar:  
   
 -   Definindo **/OPT: REF**, **/OPT: ICF**, ou **/incremental: no** desabilita editar e continuar com o seguinte aviso:  
@@ -119,27 +117,27 @@ Editar e continuar do Visual C++ trata a maioria dos tipos de alterações de c�
   
  Editar e Continuar não invoca as etapas personalizadas de compilação. Se o seu programa usa etapas personalizadas de compilação, recompile manualmente de modo que as etapas personalizadas de compilação possam ser invocadas. Nesse caso, você pode desabilitar nova vinculação após Editar e Continuar para assegurar que seja solicitado a fazer a recompilação manualmente.  
   
- **Para desabilitar nova vinculação após editar e continuar**  
+ **Para desabilitar a nova vinculação após Editar e Continuar**  
   
-1.  Sobre o **Debug** menu, escolha **opções e configurações**.  
+1.  No menu de **Depurar**, escolha **Opções e Configurações**.  
   
 2.  No **opções** caixa de diálogo do **depuração** nó e selecione o **editar e continuar** nó.  
   
-3.  Desmarque a **vincular novamente alterações de código após a depuração** caixa de seleção.  
+3.  Desmarque a caixa de seleção **Vincular novamente alterações de código após a depuração**.  
   
 ##  <a name="BKMK_Precompiled_Header_Limitations"></a> Limitações de cabeçalho pré-compilado  
  Por padrão, Editar e Continuar carrega e processa cabeçalhos pré-compilados no plano de fundo para acelerar o processamento de alterações de código. O carregamento de cabeçalhos pré-compilados requer a alocação de memória física, o que pode ser um problema se você estiver compilando em um computador com RAM limitada. Você pode determinar se isso pode ser um problema usando o Gerenciador de tarefas do Windows para determinar a quantidade de memória física disponível durante a depuração. Se esse valor for maior que o tamanho dos cabeçalhos pré-compilados, Editar e Continuar não terá problemas. Se o valor for menor que o tamanho dos cabeçalhos pré-compilados, você pode impedir que Editar e Continuar carregue cabeçalhos pré-compilados no plano de fundo.  
   
- **Para desabilitar o carregamento em segundo plano dos cabeçalhos pré-compilados para editar e continuar**  
+ **Para desabilitar o carregamento em segundo plano de cabeçalhos pré-compilados para Editar e Continuar**  
   
-1.  Sobre o **Debug** menu, escolha **opções e configurações**.  
+1.  No menu de **Depurar**, escolha **Opções e Configurações**.  
   
 2.  No **opções** caixa de diálogo do **depuração** nó e selecione o **editar e continuar** nó.  
   
-3.  Desmarque a **permitir pré-compilação** caixa de seleção.  
+3.  Desmarque a caixa de seleção **Permitir Pré-Compilação**.  
   
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> Limitações de atributo IDL  
- Editar e Continuar não regeneram arquivos IDL (definição da interface). Consequentemente, as alterações aos atributos de IDL não serão refletidas ao depurar. Para ver o resultado das alterações em atributos IDL, você deve parar a depuração e recompilar seu aplicativo. Editar e Continuar não gera um erro ou um aviso se os atributos de IDL tiverem sido alterados. Para obter mais informações, consulte [atributos de IDL](/cpp/windows/idl-attributes).  
+ Editar e Continuar não regeneram arquivos IDL (definição da interface). Consequentemente, as alterações aos atributos de IDL não serão refletidas ao depurar. Para ver o resultado das alterações em atributos IDL, você deve parar a depuração e recompilar seu aplicativo. Editar e Continuar não gera um erro ou um aviso se os atributos de IDL tiverem sido alterados. Para obter mais informações, confira [Atributos de IDL](/cpp/windows/idl-attributes).  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

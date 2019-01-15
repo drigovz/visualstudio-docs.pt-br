@@ -1,8 +1,6 @@
 ---
 title: Localizar vazamentos de memória com a biblioteca CRT | Microsoft Docs
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931021"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Localizar vazamentos de memória com a biblioteca CRT
 
@@ -72,7 +70,7 @@ Se seu aplicativo tiver várias saídas, você não precisa inserir manualmente 
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
 
-Por padrão, `_CrtDumpMemoryLeaks` gera o relatório de vazamento de memória para o **Debug** painel da **saída** janela. Se você usar uma biblioteca, a biblioteca poderá redefinir a saída para outro local. 
+Por padrão, a saída `_CrtDumpMemoryLeaks` emite o relatório de vazamento de memória para o painel **Depurar** da janela de **Saída**. Se você usar uma biblioteca, a biblioteca poderá redefinir a saída para outro local. 
 
 Você pode usar `_CrtSetReportMode` para redirecionar o relatório para outro local ou de volta para o **saída** janela, conforme mostrado aqui:  
 
@@ -113,9 +111,9 @@ Se você definir `_CRTDBG_MAP_ALLOC`, exibe o relatório de vazamento de memóri
 - O tamanho do bloco, `64 bytes` no exemplo.  
 - Os primeiros 16 bytes de dados no bloco, no formulário hexadecimal.  
 
-Tipos de bloco de memória são *normal*, *cliente*, ou *CRT*. Um *bloco normal* é a memória comum atribuída pelo seu programa. Um *bloco de cliente* é um tipo especial de bloco de memória usado por programas MFC para objetos que exigem um destruidor. O operador MFC `new` cria um bloco normal ou um bloco de cliente, como apropriado para o objeto que estiver sendo criado. 
+Tipos de bloco de memória são *normal*, *cliente*, ou *CRT*. Um *bloco normal* é a memória comum atribuída pelo seu programa. Um *bloco de cliente* é um tipo especial de bloco de memória usado por programas MFC para os objetos que exigem um destruidor. O operador MFC `new` cria um bloco normal ou um bloco de cliente, como apropriado para o objeto que estiver sendo criado. 
 
-Um *bloco de CRT* é alocado pela biblioteca de CRT para seu próprio uso. A biblioteca de CRT trata a desalocação desses blocos, para que os blocos de CRT não aparecerão no relatório de vazamento de memória, a menos que haja problemas sérios com a biblioteca de CRT.  
+Um *bloco de CRT* é atribuído pela biblioteca de CRT para seu próprio uso. A biblioteca de CRT trata a desalocação desses blocos, para que os blocos de CRT não aparecerão no relatório de vazamento de memória, a menos que haja problemas sérios com a biblioteca de CRT.  
 
 Há dois tipos de outros blocos de memória que nunca aparecem nos relatórios de escape de memória. Um *bloco livre* é a memória que foi liberada, portanto, por definição, não é perdido. Uma *bloco ignorar* é a memória que você marcou explicitamente para excluir do relatório de vazamento de memória.  
 
@@ -195,7 +193,7 @@ Você pode usar o número de alocação para definir um ponto de interrupção n
    
 1. Pressione **ENTER**.  
    
-   O depurador avalia a chamada e coloca o resultado na **valor** coluna. Esse valor será **-1** se você não definiu nenhum ponto de interrupção nas alocações de memória.  
+   O depurador avalia a chamada e coloca o resultado na coluna de **Valor**. Esse valor será **-1** se você não definir nenhum ponto de interrupção nas alocações de memória.  
    
 1. No **valor** coluna, substitua o valor com o número de alocação da alocação de memória em que você deseja que o depurador seja interrompido.  
 
@@ -203,7 +201,7 @@ Depois de definir um ponto de interrupção em um número de alocação de memó
 
 Definindo um ponto de interrupção de dados no objeto também pode ser útil. Para obter mais informações, consulte [usando pontos de interrupção](../debugger/using-breakpoints.md).  
 
-Você também pode definir pontos de interrupção de alocação de memória no código. Você pode definir:  
+Você também pode definir pontos de interrupção de alocação de memória no código. É possível definir:  
 
 ```cpp
 _crtBreakAlloc = 18;  
@@ -262,6 +260,6 @@ Uma técnica para localizar vazamentos de memória começa colocando `_CrtMemChe
  `_CrtDumpMemoryLeaks` poderá dar falsas indicações de vazamentos de memória, se uma biblioteca de marca alocações internas como os blocos normais, em vez de blocos de CRT ou blocos de cliente. Nesse caso, `_CrtDumpMemoryLeaks` não é capaz de reconhecer a diferença entre alocações de usuário e alocações internas de biblioteca. Se os destruidores globais das alocações de biblioteca forem executados após o ponto onde você chama `_CrtDumpMemoryLeaks`, cada alocação interna da biblioteca será relatada como um vazamento de memória. Versões da biblioteca padrão do modelo antes que o Visual Studio .NET pode causar `_CrtDumpMemoryLeaks` relatar tais falsos positivos.  
 
 ## <a name="see-also"></a>Consulte também  
- [Detalhes do heap de depuração CRT](../debugger/crt-debug-heap-details.md)   
+ [Detalhes de heap de depuração do CRT](../debugger/crt-debug-heap-details.md)   
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando código nativo](../debugger/debugging-native-code.md)

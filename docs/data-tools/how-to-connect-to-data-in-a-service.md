@@ -1,5 +1,5 @@
 ---
-title: Como conectar a dados em um serviço
+title: 'Como: Conectar-se a dados em um serviço'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 66a13ac6f23caa3e6ccf28d5d68c03b3fe7fdb4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923868"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Como se conectar a dados em um serviço
+# <a name="how-to-connect-to-data-in-a-service"></a>Como: Conectar a dados em um serviço
 
 Você conecta seu aplicativo para os dados retornados de um serviço executando o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png) e selecionando **serviço** sobre o **escolher um tipo de fonte de dados**página.
 

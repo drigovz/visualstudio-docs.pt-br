@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_lengthlocals | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d32dbe12388074b7e01df511c96b63bfc763a563
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c951baca88804c7259ce8f1bf5e35174be217e87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916235"
 ---
 # <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
 Recupera o número de bytes de variáveis locais empurradas na pilha.  
@@ -27,7 +25,7 @@ Recupera o número de bytes de variáveis locais empurradas na pilha.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT get_lengthLocals (   
+HRESULT get_lengthLocals (   
    DWORD* pRetVal  
 );  
 ```  

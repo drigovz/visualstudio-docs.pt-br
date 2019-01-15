@@ -1,8 +1,6 @@
 ---
 title: 'Idiasourcefile:: Get_checksumtype | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fa53d00d17446e63170d5b729d2e669ecb987b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 750d48cad07251f34e988fa8a6ced618821c443d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825900"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Recupera o tipo de soma de verificação.  
@@ -27,7 +25,7 @@ Recupera o tipo de soma de verificação.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT get_checksumType (   
+HRESULT get_checksumType (   
    DWORD* pRetVal  
 );  
 ```  
@@ -44,7 +42,7 @@ HRESULT get_checksumType (
   
 |Tipo de soma de verificação|Rótulo de CryptoAPI|Descrição|  
 |-------------------|---------------------|-----------------|  
-|0|\<Nenhum >|Soma de verificação não presente.|  
+|0|\<nenhum>|Soma de verificação não presente.|  
 |1|`CALG_MD5`|soma de verificação gerada com o algoritmo de hash MD5.|  
 |2|`CALG_SHA1`|soma de verificação gerada com o algoritmo de hash SHA1.|  
   

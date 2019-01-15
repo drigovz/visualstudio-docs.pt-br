@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918973"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268494"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
@@ -40,7 +40,7 @@ O **XML Schema Explorer** fornece uma exibição hierárquica do esquema definid
 
 -   Se você estiver usando o [iniciar o modo de exibição](../xml-tools/start-view.md), clique no **XML Schema Explorer** link.
 
--   Se você estiver usando o [exibição de gráfico](../xml-tools/graph-view.md) ou o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md) e tiver nós em seu espaço de trabalho, use o menu de contexto para selecionar os **XML Schema Explorer**.
+-   Se você estiver usando o [exibição de gráfico](../xml-tools/graph-view.md) ou o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md) e tiver nós em seu espaço de trabalho, use o menu de contexto (clique com botão direito) para selecionar o **XML Schema Explorer**.
 
 -   Você também pode selecionar o **XML Schema Explorer** da **exibição** menu.
 

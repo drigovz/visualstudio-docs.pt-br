@@ -1,8 +1,6 @@
 ---
-title: Idiaenumtables | Microsoft Docs
-ms.custom: ''
+title: 'Idiaenumtables:: Get_count | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f25c7c734afb6f39fceb0584164ddab894a02925
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 05f254abc58471f6fffa810a6b8f2283595efdb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863310"
 ---
 # <a name="idiaenumtablesgetcount"></a>IDiaEnumTables::get_Count
 Recupera o número de tabelas.  
@@ -27,7 +25,7 @@ Recupera o número de tabelas.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT get_Count (    LONG* pRetVal  
+HRESULT get_Count (    LONG* pRetVal  
 );  
   
 ```  
@@ -37,7 +35,7 @@ HRESULT get_Count (    LONG* pRetVal
  [out] Retorna o número de tabelas.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   

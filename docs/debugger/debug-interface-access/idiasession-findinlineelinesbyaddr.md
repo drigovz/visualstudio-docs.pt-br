@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbf31de5c3a20ecf21a8e293657d4ed3a7eff1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a26692a7c8715150cad071b9c0871e0b8ad9e239
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896663"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do intervalo de endereço especificado.  
@@ -25,7 +23,7 @@ Recupera uma enumeração que permite que um cliente iterar por meio das informa
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT findInlineeLinesByAddr (   
+HRESULT findInlineeLinesByAddr (   
    IDiaSymbol*           parent,   DWORD                 isect,   DWORD                 offset,   DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  
 );  

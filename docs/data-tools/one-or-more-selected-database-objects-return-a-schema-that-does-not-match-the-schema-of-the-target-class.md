@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 47ccdd1f79930fe29e5a213158462139c15bf0f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944120"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Um ou mais objetos de base de dados selecionado retornam um esquema que não corresponde ao esquema de classe de destino
 
@@ -25,11 +24,11 @@ Quando você arrastar objetos de base de dados existentes em classes de entidade
 
 ## <a name="to-correct-this-error"></a>Para corrigir este erro
 
-1. Clique em **Okey** para descartar a caixa de diálogo.
+1. Clique **OK** para descartar a caixa de diálogo.
 
-2. Selecione um objeto de banco de dados que retorna dados que correspondem ao esquema da classe de destino (a classe de objeto de banco de dados está sendo arrastado na **Relational Designer**).
+2. Selecione um objeto de banco de dados que retorna os dados que correspondem ao esquema de classe de destino (a classe para a qual o objeto de banco de dados está sendo arrastado no **Designer Relacional de Objetos**).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
-- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

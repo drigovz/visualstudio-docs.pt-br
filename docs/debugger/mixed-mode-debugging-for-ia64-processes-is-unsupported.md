@@ -1,8 +1,6 @@
 ---
 title: A depuração de modo misto para processos IA64 não é compatível. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_ia64
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f87173f1a5a5be71e21ffd267c94619aed7b58d2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 24f8281966dba0e7b1a0ad158a870a4a8229724b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964806"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>A depuração de modo misto para processos IA64 não é compatível.
 O Visual Studio não oferece suporte à depuração de modo misto de código gerenciado e nativo em processos IA64. Isso significa que, durante a depuração, você não pode depurar de código gerenciado para código nativo e vice-versa.  
@@ -31,25 +29,25 @@ O Visual Studio não oferece suporte à depuração de modo misto de código ger
   
 -   Depure seu código gerenciado e nativo em sessões separadas de depuração.  
   
-     -ou-  
+     - ou -  
   
      Depure seu código misto como um processo de 32 bits, como descrito nos procedimentos a seguir.  
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Para alterar a plataforma para 32 bits (Visual Basic ou C#)  
   
-1.  Em **Solution Explorer**, com o botão direito no projeto e clique em **propriedades** no menu de atalho.  
+1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.  
   
-2.  Nas páginas de propriedades, clique no **compilar** ou **depurar** guia.  
+2.  Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.  
   
-3.  Clique em **plataforma** e selecione na lista de plataformas x86.  
+3.  Clique em **Plataforma** e selecione x86 na lista de plataformas.  
   
-     Por padrão, os compiladores padrão do Visual Basic e do C# produzem código para ser executado em qualquer CPU. Em um computador de 64 bits, esses binários são executados como processos de 64 bits. Para executar em um processo de 32 bits, você deve escolher **Win32**, não **AnyCPU**.  
+     Por padrão, os compiladores padrão do Visual Basic e do C# produzem código para ser executado em qualquer CPU. Em um computador de 64 bits, esses binários são executados como processos de 64 bits. Para executar em um processo de 32 bits, você deve escolher **Win32** e não **AnyCPU**.  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>Para alterar a plataforma para 32 bits (C/C++)  
   
-1.  Em **Solution Explorer**, com o botão direito no projeto e clique em **propriedades** no menu de atalho.  
+1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.  
   
-2.  Nas páginas de propriedades, clique em **plataforma** e selecione na lista de plataformas, Win32  
+2.  Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

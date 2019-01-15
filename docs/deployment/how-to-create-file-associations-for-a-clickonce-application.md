@@ -1,8 +1,6 @@
 ---
-title: 'Como: criar associações de arquivo para um aplicativo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar associações de arquivo para um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d8d12b8ad49b40309845def60964c13a3da708
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 956aa3e87863ca39127c1f8579128f7cb408977c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842813"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como: criar associações de arquivo para um aplicativo ClickOnce
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como: Criar associações de arquivos para um aplicativo ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos podem ser associados com uma ou mais extensões de nome de arquivo, para que o aplicativo será iniciado automaticamente quando o usuário abre um arquivo desses tipos. Adicionando suporte à extensão de nome do arquivo para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é simples.  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Para criar associações de arquivo para um aplicativo ClickOnce  
@@ -33,7 +31,7 @@ ms.locfileid: "49919384"
   
 2. Abra o manifesto do aplicativo com um texto ou editor XML, como o bloco de notas.  
   
-3. Encontre o elemento `assembly`. Para obter mais informações, consulte [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).  
+3. Encontre o elemento `assembly`. Para obter mais informações, confira [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).  
   
 4. Como um filho de `assembly` elemento, adicionar um `fileAssociation` elemento. O `fileAssociation` elemento tem quatro atributos:  
   
@@ -43,7 +41,7 @@ ms.locfileid: "49919384"
   
    - `progid`: Uma cadeia de caracteres que identifica exclusivamente o tipo de arquivo, para marcá-la no registro.  
   
-   - `defaultIcon`: Um ícone a ser usado para esse tipo de arquivo. O ícone deve ser adicionado como um recurso de arquivo no manifesto do aplicativo. Para obter mais informações, consulte [Como incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Um ícone a ser usado para esse tipo de arquivo. O ícone deve ser adicionado como um recurso de arquivo no manifesto do aplicativo. Para obter mais informações, confira [Como: Incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Para obter um exemplo de `file` e `fileAssociation` elementos, consulte [ \<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md).  
   
@@ -53,7 +51,7 @@ ms.locfileid: "49919384"
   
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-    Para obter mais informações, consulte [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
+    Para obter mais informações, confira [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
   
 ## <a name="see-also"></a>Consulte também  
  [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)   

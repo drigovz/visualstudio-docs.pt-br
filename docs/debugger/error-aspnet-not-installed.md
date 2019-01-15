@@ -1,8 +1,6 @@
 ---
 title: 'Erro: ASP.NET não instalado | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http_not_supported
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 754d196ba49e97ed0a70ca988d4ae65aed001bdc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 41ec708b25bc74eb1f566981ee4bbcdc23827087
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902082"
 ---
 # <a name="error-aspnet-not-installed"></a>Erro: ASP.NET não instalado
 Esse erro ocorre quando o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] não está instalado corretamente no computador que você está tentando depurar. Isso pode significar que o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nunca foi instalado ou que o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] foi instalado primeiro e o IIS foi instalado posteriormente.  
@@ -42,7 +40,7 @@ Esse erro ocorre quando o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_
     em que *versão* representa o número de versão do .NET Framework instalado no seu computador, por exemplo, v1.0.370. Você pode determinar a versão do framework examinando o `\WINDOWS\Microsoft.NET\Framework` directory.  
   
    > [!NOTE]
-   >  Com o Windows Server 2003, você pode instalar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] por meio **adicionar ou remover programas** no painel de controle.  
+   >  Com o Windows Server 2003, você pode instalar o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usando **Adicionar ou Remover Programas** no Painel de Controle.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Instruções passo a passo: criando um conjunto de dados com o Designer de Conjunto de Dados'
+title: 'Passo a passo: Criando um conjunto de dados com o Designer de conjunto de dados'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: e79646609bf592b7a8d71d3e0ba8660c65520715
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868497"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Passo a passo: Criar um conjunto de dados com o Designer de conjunto de dados
 
@@ -58,7 +57,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Adicionar um novo conjunto de dados para o aplicativo
 
-1.  Sobre o **Project** menu, selecione **Adicionar Novo Item**.
+1.  No menu **Projeto**, selecione **Adicionar Novo Item**.
 
      A caixa de diálogo **Adicionar Novo Item** é exibida.
 

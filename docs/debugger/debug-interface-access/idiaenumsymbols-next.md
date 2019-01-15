@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsymbols:: Next | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90bc87a8e4fd0702243bd47cb819ddf313350877
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862134"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 Recupera um número especificado de símbolos na sequência de enumeração.  
@@ -27,7 +25,7 @@ Recupera um número especificado de símbolos na sequência de enumeração.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG        celt,  
    IDiaSymbol** rgelt,  
    ULONG*       pceltFetched  
@@ -58,5 +56,5 @@ pEnum->Next( 1, &pSym, &celt );
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
