@@ -1,8 +1,6 @@
 ---
 title: '&lt;Comandos&gt; elemento (Bootstrapper) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 785df23b3d76573182eeb97efc5b359e7298a009
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2370f8e394727c0a4f83488a77096b10cb36746c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990445"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Comandos&gt; elemento (bootstrapper)
 O `Commands` elemento implementa testes descritos pelos elementos sob o `InstallChecks` elemento e declara qual pacote o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bootstrapper deve instalar se o teste falhar.  
@@ -75,7 +73,7 @@ O `Commands` elemento implementa testes descritos pelos elementos sob o `Install
 |`Reboot`|Opcional. Determina se o sistema deve ser reiniciado caso qualquer um dos pacotes retornar um código de saída de reinicialização. A lista a seguir mostra os valores válidos:<br /><br /> `Defer`. A reinicialização é adiada até que algum momento futuro.<br /><br /> `Immediate`. Faz com que uma reinicialização imediata se um dos pacotes retornou um código de saída de reinicialização.<br /><br /> `None`. Faz com que quaisquer solicitações de reinício a serem ignorados.<br /><br /> O padrão é `Immediate`.|  
   
 ## <a name="command"></a>Comando  
- O `Command` é um elemento filho do `Commands` elemento. Um `Commands` elemento pode ter um ou mais `Command` elementos. O elemento tem os seguintes atributos.  
+ O `Command` é um elemento filho do elemento `Commands`. Um `Commands` elemento pode ter um ou mais `Command` elementos. O elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  

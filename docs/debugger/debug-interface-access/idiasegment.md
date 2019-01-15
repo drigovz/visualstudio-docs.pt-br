@@ -1,8 +1,6 @@
 ---
 title: IDiaSegment | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1547f91730d00babad6a0727686ff67357f910b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4f4cc24d64d3d1b1f8ab3e4182c21d451763b15e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847185"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mapeia dados de número de seção para segmentos de espaço de endereço.  
@@ -27,16 +25,16 @@ Mapeia dados de número de seção para segmentos de espaço de endereço.
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaSegment : IUnknown  
+IDiaSegment : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  A tabela a seguir mostra os métodos de `IDiaSegment`.  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Recupera o número de segmento.|  
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera o deslocamento em segmentos de onde a seção começa.|  
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera o deslocamento em segmentos, em que a seção começa.|  
 |[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Recupera o número de bytes no segmento.|  
 |[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Recupera um sinalizador que indica se o segmento pode ser lido.|  
 |[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Recupera um sinalizador que indica se o segmento pode ser modificado.|  
@@ -46,13 +44,13 @@ IDiaSegment : IUnknown
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Recupera o endereço virtual (VA) do início da seção.|  
   
 ## <a name="remarks"></a>Comentários  
- Como o DIA SDK já realiza traduções do deslocamento de seção para endereços virtuais relativos, a maioria dos aplicativos não fará uso das informações no mapa do segmento.  
+ Como o DIA SDK já realiza conversões do deslocamento de seção para endereços virtuais, a maioria dos aplicativos não fará uso das informações no mapa do segmento.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Obter essa interface chamando o [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments-item.md) ou [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments-next.md) métodos. Consulte o exemplo para obter detalhes.  
+ Obtenha essa interface por meio da chamada a [idiaenumsegments:: item](../../debugger/debug-interface-access/idiaenumsegments-item.md) ou [idiaenumsegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) métodos. Consulte o exemplo para obter detalhes.  
   
 ## <a name="example"></a>Exemplo  
- Esta função exibe o endereço de todos os segmentos em uma tabela e o símbolo mais próximo.  
+ Esta função exibe o endereço de todos os segmentos em uma tabela e o símbolo de mais próximo.  
   
 ```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
@@ -96,13 +94,13 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Dia2.h  
+ Cabeçalho: dia2.h  
   
  Biblioteca: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Interfaces (SDK de acesso à Interface de depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
+ [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
  [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineeLinesByRVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5b7ee1359ac4a7943187f9170df08eb9c7858c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f93f0031d9f81bed03713500019ca8ef031d80aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935769"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do endereço relativo virtual (RVA) especificado.  
@@ -25,7 +23,7 @@ Recupera uma enumeração que permite que um cliente iterar por meio das informa
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT findInlineeLinesByRVA (   
+HRESULT findInlineeLinesByRVA (   
    IDiaSymbol*           parent,  
    DWORD                 rva,  
    DWORD                 length,  

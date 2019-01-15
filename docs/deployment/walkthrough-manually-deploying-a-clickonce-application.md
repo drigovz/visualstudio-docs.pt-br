@@ -1,8 +1,6 @@
 ---
 title: 'Passo a passo: Implantando um aplicativo ClickOnce manualmente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923264"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Passo a passo: Implantar um aplicativo ClickOnce manualmente
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Passo a passo: Implantar manualmente um aplicativo ClickOnce
 Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo ou você precisa usar recursos de implantação avançada, como implantação de aplicativos confiáveis, você deve usar o *Mage.exe* ferramenta de linha de comando para criar o seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos. Este passo a passo descreve como criar uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando a versão de linha de comando (*Mage.exe*) ou a versão gráfica (*MageUI.exe*) da geração de manifesto e Ferramenta de edição.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
@@ -45,7 +43,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 - Determine como a implantação será distribuída.  
   
-   As opções de distribuição incluem: Web, compartilhamento de arquivos ou de CD. Para obter mais informações, consulte [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md).  
+   As opções de distribuição incluem: Web, compartilhamento de arquivos ou CD. Para obter mais informações, consulte [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md).  
   
 - Determine se o aplicativo requer um nível elevado de confiança.  
   
@@ -151,7 +149,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 13. Se você tiver um certificado armazenado como um arquivo em seu sistema de arquivos, use o **assinar com arquivo de certificado** opção e, em seguida, selecione o certificado do sistema de arquivos usando o botão de reticências (**...** ) botão. Em seguida, digite sua senha do certificado.  
   
-     -ou-  
+     - ou -  
   
      Se seu certificado é mantido em um repositório de certificados acessível em seu computador, selecione o **assinar com certificado armazenado** opção e, em seguida, selecione o certificado na lista fornecida.  
   
@@ -179,7 +177,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 25. Se você tiver um certificado armazenado como um arquivo em seu sistema de arquivos, use o **assinar com arquivo de certificado** opção e, em seguida, selecione o certificado do sistema de arquivos usando o botão de reticências (**...** ) botão. Em seguida, digite sua senha do certificado.  
   
-     -ou-  
+     - ou -  
   
      Se seu certificado é mantido em um repositório de certificados acessível em seu computador, selecione o **assinar com certificado armazenado** opção e, em seguida, selecione o certificado na lista fornecida.  
   

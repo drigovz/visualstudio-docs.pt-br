@@ -98,7 +98,7 @@ Você pode escrever código para verificar se cada coluna que você deseja valid
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Para validar dados quando uma linha é alterado (Visual Basic)
 
-1.  Abra o conjunto de dados no Designer de Conjunto de Dados **. Para obter mais informações, confira [Passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Clique duas vezes a barra de título da tabela que você deseja validar. Essa ação cria automaticamente o <xref:System.Data.DataTable.RowChanging> manipulador de eventos do <xref:System.Data.DataTable> no arquivo de classe parcial do conjunto de dados.
 
@@ -109,7 +109,7 @@ Você pode escrever código para verificar se cada coluna que você deseja valid
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar dados quando uma linha for alterada (c#)
 
-1.  Abra o conjunto de dados no Designer de Conjunto de Dados **. Para obter mais informações, confira [Passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Clique duas vezes a barra de título da tabela que você deseja validar. Essa ação cria um arquivo de classe parcial para o <xref:System.Data.DataTable>.
 

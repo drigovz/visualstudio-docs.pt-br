@@ -1,6 +1,5 @@
 ---
 title: Referência da API não gerenciada do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -12,7 +11,6 @@ api_type:
 - COM
 topic_type:
 - apiref
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -30,14 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 584dc441e54e89fea77667cac98cdad78bac5b2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968128"
 ---
-# <a name="clickonce-unmanaged-api-reference"></a>Referência da API não gerenciada do ClickOnce
+# <a name="clickonce-unmanaged-api-reference"></a>Referência de API não gerenciada do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] APIs públicas não gerenciadas de dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
@@ -85,8 +83,8 @@ ms.locfileid: "39082120"
 |Parâmetro|Descrição|Tipo|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|Um ponteiro para uma cadeia de caracteres terminada em nulo que contém a URL do manifesto de implantação.|LPCWSTR|  
-|`data`|Reservado para uso futuro. Deve ser NULL.|LPVOID|  
-|`flags`|Reservado para uso futuro. Deve ser 0.|DWORD|  
+|`data`|Reservado para uso futuro. Precisa ser NULL.|LPVOID|  
+|`flags`|Reservado para uso futuro. Precisa ser 0.|DWORD|  
   
 ### <a name="return-value"></a>Valor retornado  
  Se for bem-sucedido, retornará S_OK; Caso contrário, retorna um HRESULT que representa a falha. Se ocorrer uma exceção gerenciada, retorna 0x80020009 (DISP_E_EXCEPTION).  

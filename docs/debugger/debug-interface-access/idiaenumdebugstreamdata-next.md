@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumdebugstreamdata:: Next | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 781fd79611e8de323085ed73dc7682808d69b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958378"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Recupera um número especificado de registros na sequência enumerado.  
@@ -27,7 +25,7 @@ Recupera um número especificado de registros na sequência enumerado.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG  celt,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -46,7 +44,7 @@ HRESULT Next (
  pcbData  
  [out] Retorna o número de bytes retornados. Se `data` for NULL, em seguida, `pcbData` contém o número total de bytes de dados disponíveis para todos os registros de solicitado.  
   
- [Data]  
+ data[]  
  [out] Um buffer que deve ser preenchido com os dados de registro de fluxo de depuração.  
   
  pceltFetched  

@@ -1,8 +1,6 @@
 ---
 title: Depurar o código de exemplo HTML e CSS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947550"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Depurar o código de exemplo HTML e CSS
   
- O código neste tópico é o arquivo de exemplo [início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.  
+ O código neste tópico é o arquivo de exemplo para [guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.  
   
 ## <a name="sample-code"></a>Código de exemplo  
- O código HTML a seguir é usado no \<corpo > marca no início rápido.  
+ O código HTML a seguir é usado na tag \<body> no Início Rápido.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -103,4 +101,4 @@ ms.locfileid: "31456787"
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

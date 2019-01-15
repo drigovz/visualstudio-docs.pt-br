@@ -2,7 +2,6 @@
 title: Para visualizar a memória para variáveis no depurador | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -25,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837219"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usar as janelas de memória no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -81,9 +80,9 @@ Por padrão, o **memória** janela trata **endereço** expressões como express�
   
 ## <a name="customize-the-memory-window"></a>Personalizar a janela de memória 
 
-Por padrão, o conteúdo de memória são exibidos como inteiros de 1 byte em formato hexadecimal e a largura da janela determina o número de colunas mostradas. Você pode personalizar a maneira como o **memória** janela mostra o conteúdo da memória.  
+Por padrão, o conteúdo de memória são exibidos como inteiros de 1 byte em formato hexadecimal e a largura da janela determina o número de colunas mostradas. Você pode personalizar a maneira como a janela **Memória** mostra o conteúdo da memória.  
   
-**Para alterar o formato do conteúdo da memória:**  
+**Para alterar o formato do conteúdo de memória:**  
   
 -  Clique com botão direito no **memória** janela e escolha os formatos que você deseja no menu de contexto.  
   
@@ -100,7 +99,7 @@ Se você não quiser que o conteúdo do **memória** janela alterar seu aplicati
   >[!NOTE]
   >Ao vivo de expressão de avaliação é um controle de alternância e é ativado por padrão, portanto, selecionando **reavaliar automaticamente** é desativado. Selecionando **reavaliar automaticamente** novamente a ativa novamente. 
   
-Você pode ocultar ou exibir a barra de ferramentas na parte superior do **memória** janela. Você não terá acesso para o **endereço** campo ou outras ferramentas, quando a barra de ferramentas está oculto.  
+Você pode ocultar ou exibir a barra de ferramentas na parte superior da janela **Memória**. Você não terá acesso para o **endereço** campo ou outras ferramentas, quando a barra de ferramentas está oculto.  
   
 **Para alternar a exibição da barra de ferramentas:**  
   

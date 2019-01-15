@@ -1,8 +1,6 @@
 ---
 title: Acessando dados locais e remotos em aplicativos ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,20 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5ed1ad3c648a3cf0d8f33d9f15a8cc14c1ebf625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874859"
 ---
-# <a name="access-local-and-remote-data-in-clickonce-applications"></a>Acessar dados locais e remotos em aplicativos ClickOnce
+# <a name="access-local-and-remote-data-in-clickonce-applications"></a>Acesso a dados locais e remotos em aplicativos ClickOnce
 A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Fornece uma variedade de opções para ler e gravar dados, tanto local quanto remotamente.  
   
 ## <a name="local-data"></a>Dados locais  
  Com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], você pode carregar e armazenar dados localmente usando qualquer um dos seguintes métodos:  
   
-- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Diretório de dados  
+- Diretório de dados de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]  
   
 - Armazenamentos isolado  
   
@@ -45,7 +43,7 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../d
 >  Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo for desinstalado, seu diretório de dados também será removido. Nunca use o diretório de dados para armazenar dados de usuário final gerenciado, como documentos.  
   
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>Marcar os arquivos de dados em uma distribuição do ClickOnce  
- Para colocar um arquivo existente dentro do diretório de dados, você deve marcar o arquivo existente como um arquivo de dados no seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivo de manifesto de aplicativo do aplicativo. Para obter mais informações, consulte [como: incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Para colocar um arquivo existente dentro do diretório de dados, você deve marcar o arquivo existente como um arquivo de dados no seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivo de manifesto de aplicativo do aplicativo. Para obter mais informações, confira [Como: Incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="read-from-and-write-to-the-data-directory"></a>Ler e gravar no diretório de dados  
  A leitura do diretório de dados requer que seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solicitação do aplicativo a permissão de leitura; da mesma forma, gravar no diretório requer a permissão de gravação. Seu aplicativo terá essa permissão automaticamente se ele está configurado para ser executado com confiança total. Para obter mais informações sobre como elevar permissões para seu aplicativo usando a implantação de aplicativo confiável ou elevação de permissões, consulte [aplicativos ClickOnce Secure](../deployment/securing-clickonce-applications.md).  
@@ -58,7 +56,7 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../d
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Para obter mais informações sobre como marcar arquivos em sua implantação, como arquivos de dados, consulte [como: incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Para obter mais informações sobre como marcar arquivos em sua implantação, como arquivos de dados, consulte [como: Incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)  
   
  Também é possível obter o caminho do diretório de dados usando as variáveis relevantes sobre o <xref:System.Windows.Forms.Application> classe, como <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
@@ -110,4 +108,4 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../d
  Na maioria das vezes, você não precisará acessar o banco de dados diretamente, mas irá acessá-la em vez disso, por meio de um aplicativo de servidor da Web escrito em [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ou um serviço Web XML. Acessar o banco de dados dessa maneira é com frequência o melhor método se seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo será implantado em um servidor Web. Você pode acessar o servidor em confiança parcial sem a elevação de permissões do seu aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [Como: Incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

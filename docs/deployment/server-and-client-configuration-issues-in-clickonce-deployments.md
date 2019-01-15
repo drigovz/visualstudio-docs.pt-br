@@ -1,8 +1,6 @@
 ---
 title: Servidor e problemas de configuração de cliente em implantações do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955549"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar os serviços de informações da Internet (IIS) no Windows Server, e sua implantação contém um tipo de arquivo que o Windows não reconhecem, como um arquivo do Microsoft Word, o IIS se recusará a transmitir esse arquivo e sua implantação não terá êxito.  
@@ -35,11 +33,11 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 
  Alguns servidores Web podem bloquear os arquivos com extensões como *. dll*, *. config*, e *arquivos. mdf*. Aplicativos baseados no Windows geralmente incluem arquivos com algumas destas extensões. Se um usuário tenta executar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que acessa um arquivo bloqueado em um servidor Web, ocorrerá um erro. Em vez de todas as extensões de arquivo, o desbloqueio [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publica todos os arquivos de aplicativo com um *Deploy* extensão de arquivo por padrão. Portanto, o administrador precisa apenas configurar o servidor Web para desbloquear as seguintes extensões de arquivo de três:  
 
-- *. Application*  
+- *.application*  
 
-- *. manifest*  
+- *.manifest*  
 
-- *. Deploy* 
+- *.deploy* 
 
   No entanto, você poderá desabilitar essa opção desmarcando os **usar a extensão de arquivo. Deploy"** opção a [caixa de diálogo Opções de publicação](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), nesse caso, você deve configurar o servidor Web para desbloquear todas as extensões de arquivo usado no aplicativo.  
 
@@ -99,20 +97,20 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 
 | Tipo de URL | Descrição |
 |----------| - |
-| FTP: / / | Você pode publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
+| ftp:// | Você pode publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
 | http:// | Você pode instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
 | https:// | Você pode instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
 | file:// | Você pode instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall de Windows  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall do Windows  
  Por padrão, o Windows XP SP2 habilita o Firewall do Windows. Se você estiver desenvolvendo seu aplicativo em um computador com Windows XP instalado, é ainda possível publicar e executar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos do servidor local que está executando o IIS. No entanto, você não pode acessar o servidor que está executando o IIS de outro computador, a menos que você abrir o Firewall do Windows. Consulte a Ajuda do Windows para obter instruções sobre como gerenciar o Firewall do Windows.  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Habilitar extensões FrontPage server extensions  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server Habilitar extensões FrontPage server extensions  
  Extensões de servidor do FrontPage da Microsoft é necessária para publicar aplicativos para um servidor Web do Windows que usa o HTTP.  
 
  Por padrão, o Windows Server não tem instalado extensões FrontPage Server Extensions. Se você quiser usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para publicar em um servidor Web do Windows Server que usa HTTP com o FrontPage Server Extensions, você deve instalar extensões FrontPage Server Extensions primeiro. Você pode executar a instalação usando a ferramenta de administração de gerenciar o servidor no Windows Server.  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipos de conteúdo de bloqueada  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server Tipos de conteúdo bloqueado  
  IIS no [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] bloqueará todos os tipos de arquivo, exceto para determinados tipos de conteúdo conhecidos (por exemplo, *. htm*, *. HTML*, *. txt*e assim por diante). Para habilitar a implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que usam esse servidor, você precisa alterar as configurações do IIS para permitir o download de arquivos do tipo *. Application*, *. manifest*e outros tipos de arquivo personalizado usado pelo seu aplicativo.  
 
  Se você implantar usando um servidor IIS, execute *inetmgr.exe* e adicionar novos tipos de arquivo da página da Web padrão:  

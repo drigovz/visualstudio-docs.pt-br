@@ -1,8 +1,6 @@
 ---
-title: 'Como: gerenciar atualizações para um aplicativo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Gerenciar atualizações para um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd9d8d7e88bc9ee8c8b041571ddaa258067c300
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 95436528b42c4b32e15048b771a36daf32a22c1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945893"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Como: gerenciar atualizações para um aplicativo ClickOnce
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Como: Gerenciar atualizações para um aplicativo ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos podem procurar atualizações automaticamente ou por meio de programação. Como desenvolvedor, você tem muita flexibilidade para especificar quando e como executar verificações de atualização, se as atualizações são obrigatórias e onde o aplicativo deve verificar se há atualizações.  
   
  Você pode configurar o aplicativo para verificar se há atualizações automaticamente antes do início do aplicativo ou em intervalos definidos depois que o aplicativo é iniciado. Além disso, você pode especificar a versão mínima necessária; ou seja, uma atualização é instalada, se a versão do usuário é menor do que a versão necessária.  
@@ -37,7 +35,7 @@ ms.locfileid: "44283646"
   
  Você também pode implantar seu aplicativo de um local e atualizá-lo a partir de outro. Consulte o procedimento "para especificar um local de atualização diferente."  
   
- Para obter mais informações, consulte [escolhendo uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Para obter mais informações, confira [Escolhendo uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
  Comportamento de atualização é gerenciado na **atualizações do aplicativo** caixa de diálogo, disponível na **publicar** página do **Designer de projeto.**  
   
@@ -53,7 +51,7 @@ ms.locfileid: "44283646"
   
 5.  No **escolha quando o aplicativo deve verificar atualizações** seção, selecione **antes de iniciar o aplicativo**. Isso garante que os usuários conectados à rede sempre executarem o aplicativo com as atualizações mais recentes.  
   
-### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Para verificar se há atualizações em segundo plano depois que o aplicativo é iniciado  
+### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Para verificar atualizações em segundo plano, depois que o aplicativo é iniciado  
   
 1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
@@ -103,14 +101,14 @@ ms.locfileid: "44283646"
   
 5.  No **atualizar local** , insira o local de atualização com uma URL totalmente qualificada, usando o formato *http://Hostname/ApplicationName*, ou um caminho UNC usando o formato  *\\\Server\ ApplicationName*, ou clique em de **procurar** botão para procurar o local de atualização. O local de atualização é onde o aplicativo irá procurar uma versão atualizada de si mesmo.  
   
-6.  Crie um botão, o item de menu ou outro item de interface do usuário em um formulário do Windows que os usuários irá selecionar para verificar se há atualizações. Manipulador de eventos do item, chame um método para verificar e instalar atualizações. Você pode encontrar um exemplo de código do Visual Basic e Visual c# para esse tipo de método no [como: verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6.  Crie um botão, o item de menu ou outro item de interface do usuário em um formulário do Windows que os usuários irá selecionar para verificar se há atualizações. Manipulador de eventos do item, chame um método para verificar e instalar atualizações. Você pode encontrar um exemplo de código do Visual Basic e Visual c# para esse tipo de método em [como: Verificar as atualizações de aplicativos programaticamente usando a API de implantação do ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)  
   
 7.  Crie seu aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [Caixa de diálogo de atualizações do aplicativo](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
- [Escolha uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
+ [Caixa de diálogo Atualizações do aplicativo](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
+ [Escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Como: verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Como: Verificar as atualizações de aplicativos programaticamente usando a API de implantação do ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

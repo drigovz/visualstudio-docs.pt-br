@@ -1,8 +1,6 @@
 ---
-title: Caixa de diálogo de propriedades de janela | Microsoft Docs
-ms.custom: ''
+title: Janela caixa de diálogo de propriedades | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box
@@ -12,30 +10,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8adfd0e1981f38540f2b682eddf991c4193af849
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d8a1371e8c87b98bdc30a4172be7420686cf21e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909236"
 ---
 # <a name="window-properties-dialog-box"></a>Caixa de diálogo Propriedades da Janela
-Use essa caixa de diálogo para obter mais informações sobre uma janela específica. Para exibir essa caixa de diálogo, mova o foco para o [exibição Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** do **exibição** menu.  
+Use essa caixa de diálogo para obter mais informações sobre uma janela específica. Para exibir essa caixa de diálogo, mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Guia Geral. Caixa de diálogo de propriedades de janela](../debugger/general-tab-window-properties-dialog-box.md)  
+ [Guia Geral. Caixa de diálogo Propriedades da Janela](../debugger/general-tab-window-properties-dialog-box.md)  
  Mostra informações sobre a janela selecionada.  
   
- [Guia de estilos. Caixa de diálogo de propriedades de janela](../debugger/styles-tab-window-properties-dialog-box.md)  
+ [Guia Estilos. Caixa de diálogo Propriedades da Janela](../debugger/styles-tab-window-properties-dialog-box.md)  
  Mostra os estilos aplicados para a janela selecionada.  
   
- [Guia do Windows. Caixa de diálogo de propriedades de janela](../debugger/windows-tab-window-properties-dialog-box.md)  
+ [Guia Janelas. Caixa de diálogo Propriedades da Janela](../debugger/windows-tab-window-properties-dialog-box.md)  
  Mostra informações sobre janelas relacionadas a janela selecionada.  
   
- [Guia de classe. Caixa de diálogo de propriedades de janela](../debugger/class-tab-window-properties-dialog-box.md)  
+ [Guia Classe. Caixa de diálogo Propriedades da Janela](../debugger/class-tab-window-properties-dialog-box.md)  
  Mostra informações sobre a classe da janela selecionada.  
   
- [Guia do processo. Caixa de diálogo de propriedades de janela](../debugger/process-tab-window-properties-dialog-box.md)  
+ [Guia Processo. Caixa de diálogo Propriedades da Janela](../debugger/process-tab-window-properties-dialog-box.md)  
  Identifica o processo da janela selecionada.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
@@ -43,12 +41,12 @@ Use essa caixa de diálogo para obter mais informações sobre uma janela espec�
  Usado para localizar o nó para uma janela específica no modo de exibição do Windows.  
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.  
+ Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.  
   
  [Usando a ferramenta localizador](../debugger/how-to-use-the-finder-tool.md)  
- Mostra como essa ferramenta verifica windows propriedades ou mensagens.  
+ Mostra como essa ferramenta examina o windows para as propriedades ou mensagens.  
   
- [Procurando uma janela no modo de exibição do Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ [Procurando por uma janela no modo de exibição do Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
  Explica como localizar uma janela específica no modo de exibição do Windows.  
   
  [Exibição de janelas](../debugger/windows-view.md)  

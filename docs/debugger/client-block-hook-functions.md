@@ -1,8 +1,6 @@
 ---
 title: Funções de gancho de bloco de clientes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de7c0533d3ea55e7b78ca645735a60f84e66df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ef8beac3b2b9c837cb2e5ee18743c9c640aacc08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966568"
 ---
 # <a name="client-block-hook-functions"></a>Funções de gancho do bloco de clientes
 Se você quiser validar ou reportar o conteúdo dos dados armazenados em blocos `_CLIENT_BLOCK`, poderá escrever uma função especificamente para essa finalidade. A função que você escreve deverá ter um protótipo semelhante ao seguinte, conforme definido em CRTDBG.H:  
@@ -37,11 +35,11 @@ Se você quiser validar ou reportar o conteúdo dos dados armazenados em blocos 
 void YourClientDump(void *, size_t)  
 ```  
 
- Em outras palavras, sua função de gancho deve aceitar uma **void** ponteiro para o início do bloco de alocação, junto com um **size_t** digite um valor que indica o tamanho da alocação e retornar `void`. Além disso, o conteúdo depende de você.  
+ Em outras palavras, sua função de gancho deve aceitar um ponteiro **void** para o início do bloco de alocação, junto com um valor do tipo **size_t** que indica o tamanho da alocação e retornar `void`. Além disso, o conteúdo depende de você.  
 
- Depois de instalar a função de gancho usando [crtsetdumpclient](/cpp/c-runtime-library/reference/crtsetdumpclient), ele será chamado sempre que um `_CLIENT_BLOCK` bloco for despejado. Você pode usar [crtreportblocktype](/cpp/c-runtime-library/reference/crtreportblocktype) para obter informações sobre o tipo ou subtipo de blocos despejados.  
+ Quando você tiver instalado a função de gancho usando [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), ela será chamada sempre que um bloco `_CLIENT_BLOCK` for despejado. Você pode usar [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) para obter informações sobre o tipo ou subtipo de blocos despejados.  
 
- O ponteiro para a função que você passa para `_CrtSetDumpClient` é do tipo **crt_dump_client**, conforme definido em CRTDBG. H:  
+ O ponteiro para sua função que você passa para `_CrtSetDumpClient` é do tipo **_CRT_DUMP_CLIENT**, conforme definido em CRTDBG.H:  
 
 ```cpp
 typedef void (__cdecl *_CRT_DUMP_CLIENT)  

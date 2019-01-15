@@ -1,8 +1,6 @@
 ---
 title: Exibir eventos com o IntelliTrace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f46113365b66a75d3f9e149181637c79068645ab
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
-ms.translationtype: MT
+ms.openlocfilehash: d5416becdf4315b3b7d631675ef52cbe6f509fdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929384"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Exibir eventos com o IntelliTrace no Visual Studio
 Você pode usar o IntelliTrace para coletar informações sobre categorias de eventos ou eventos específicos, ou sobre chamadas de função individuais Além disso, a eventos. Os procedimentos a seguir mostram como fazer isso.  
@@ -64,7 +62,7 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
   
      Captura de tela a seguir é do Visual Studio 2015 atualização 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "Update1 IntelliTrace")  
   
 3.  Selecione o evento para expandir seus detalhes.  
   
@@ -80,7 +78,7 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
   
      ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging Update1")  
   
-4.  Se você não encontrou o bug, tente examinar outros eventos que levam ao bug. Você também pode ter informações de chamada de registro do IntelliTrace para que você possa passar por chamadas de função. 
+4.  Se você não encontrou o bug, tente examinar outros eventos que levam ao bug. Você também pode fazer o IntelliTrace registrar informações de chamada para que você possa passar por chamadas de função. 
   
 ## <a name="next-steps"></a>Próximas etapas
 

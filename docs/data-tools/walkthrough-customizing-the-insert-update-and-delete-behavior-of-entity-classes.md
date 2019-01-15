@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: personalizando a inserção, a atualização e o comportamento de exclusão de classes de entidade'
+title: 'Passo a passo: Personalizando o comportamento de inserção, atualização e exclusão de classes de entidade'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c4512e0defab2d99e2e857c8cb09913b2b521ed8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894071"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Passo a passo: Personalizar o insert, update e o comportamento de exclusão de classes de entidade
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Passo a passo: Personalizar o comportamento de inserção, atualização e exclusão de classes de entidade
 
 O [LINQ to SQL das ferramentas no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornece uma superfície de design visual para criar e editar o LINQ para SQL classes (classes de entidade) que são baseadas em objetos em um banco de dados. Usando [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), você pode usar a tecnologia LINQ para acessar bancos de dados SQL. Para saber mais, confira [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/).
 
@@ -104,7 +103,7 @@ Criar LINQ to SQL classes são mapeadas para tabelas de banco de dados arrastand
      Uma classe de entidade chamada **Customer** é criada. Ela tem propriedades que correspondem às colunas na tabela Customers. A classe de entidade é chamada de **Customer** (e não **Customers**) porque representa um único cliente da tabela Customers.
 
     > [!NOTE]
-    > Esse comportamento de renomeação é chamado de *pluralização*. Ele pode ser ativado ou desativado [caixa de diálogo Opções](../ide/reference/options-dialog-box-visual-studio.md). Para obter mais informações, consulte [como: ative em pluralization e off (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Esse comportamento de renomeação é chamado de *pluralização*. Ele pode ser ativado ou desativado [caixa de diálogo Opções](../ide/reference/options-dialog-box-visual-studio.md). Para obter mais informações, confira [Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
 3.  No menu **Compilar**, clique em **Compilar UpdatingwithSProcsWalkthrough** para criar o projeto.
 
@@ -234,7 +233,7 @@ Por padrão, o botão de salvar não está habilitado e a funcionalidade de salv
 19. Clique em **OK**.
 
 > [!NOTE]
-> Embora não seja um problema para este passo a passo específica, vale a pena observar que o LINQ to SQL lida com valores gerados por banco de dados automaticamente para a identidade (incremento automático), rowguidcol (GUID gerado por banco de dados) e colunas de carimbo de hora durante inserções e atualizações. Os valores gerados pelo banco de dados em outros tipos de coluna resultarão inesperadamente em um valor nulo. Para retornar os valores gerados pelo banco de dados, você deve definir manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> para um dos seguintes: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), ou [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> Embora não seja um problema para este passo a passo específica, vale a pena observar que o LINQ to SQL lida com valores gerados por banco de dados automaticamente para a identidade (incremento automático), rowguidcol (GUID gerado por banco de dados) e colunas de carimbo de hora durante inserções e atualizações. Os valores gerados pelo banco de dados em outros tipos de coluna resultarão inesperadamente em um valor nulo. Para retornar os valores gerados por banco de dados, defina manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> como `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> como um dos seguintes: ,  ou . [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), ou [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="test-the-application"></a>Testar o aplicativo
 
@@ -275,6 +274,6 @@ Dependendo dos requisitos do aplicativo, há várias etapas que você talvez que
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Métodos DataContext](../data-tools/datacontext-methods-o-r-designer.md)
-- [Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Consultas do LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

@@ -1,8 +1,6 @@
 ---
 title: Visão geral do Cache do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d846ec60f6cf1722584c4ea93c56c29bc7007b89
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 323b179a81f9bdd66858c1ff2f96b8ce86b30b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865031"
 ---
-# <a name="clickonce-cache-overview"></a>Visão geral de cache do ClickOnce
+# <a name="clickonce-cache-overview"></a>Visão geral do cache do ClickOnce
 Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos, se eles são instalados localmente ou hospedados online, são armazenados no computador cliente em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplicativo *cache*. Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache é uma família de diretórios sob o diretório de configurações Local da pasta de documentos e configurações do usuário atual. Esse cache contém todos os arquivos do aplicativo, incluindo assemblies, arquivos de configuração, aplicativo e as configurações de usuário e diretório de dados. O cache também é responsável para migrar o diretório de dados do aplicativo para a versão mais recente. Para obter mais informações sobre migração de dados, consulte [acessando dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
  Fornecendo um único local para o armazenamento de aplicativos, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] assume a tarefa de gerenciar a instalação física de um aplicativo do usuário. O cache também ajuda a isolar os aplicativos ao manter os assemblies e arquivos de dados para todos os aplicativos e suas versões distintas separam uns dos outros. Por exemplo, quando você atualiza um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, versão e seus recursos de dados são fornecidos com seus próprios diretórios no cache.  
@@ -36,4 +34,4 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
  Por padrão, os computadores cliente têm 250 MB de armazenamento online [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos. Arquivos de dados não contam para esse limite. Um administrador do sistema pode ampliar ou reduzir essa cota em um computador cliente específico, alterando a chave do registro, **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, que é um valor DWORD que expresse o tamanho do cache em quilobytes. Por exemplo, para reduzir o tamanho do cache de 50 MB, altere esse valor para 51200.  
   
 ## <a name="see-also"></a>Consulte também  
- [Acessar dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Acesso a dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

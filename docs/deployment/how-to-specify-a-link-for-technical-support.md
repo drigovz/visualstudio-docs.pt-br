@@ -1,8 +1,6 @@
 ---
-title: 'Como: especificar um Link para obter suporte técnico | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Especificar um Link para obter suporte técnico | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933934"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Como: especificar um link para obter suporte técnico
+# <a name="how-to-specify-a-link-for-technical-support"></a>Como: Especificar um link para o suporte técnico
 Ao publicar uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, o **URL de suporte** propriedade identifica uma página da Web ou compartilhamento de arquivos em que os usuários podem ir para obter informações sobre o aplicativo. Essa propriedade é opcional. Se fornecido, a URL será exibida na entrada do aplicativo **adicionar ou remover programas** caixa de diálogo.  
   
  O **URL de suporte** propriedade pode ser definida na **publicar** página da **Project Designer**.  
@@ -48,4 +46,4 @@ Ao publicar uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
   
 ## <a name="see-also"></a>Consulte também  
  [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

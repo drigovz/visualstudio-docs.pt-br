@@ -1,8 +1,6 @@
 ---
 title: CaptureCurrentFrame | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41169494424310427e5a8ae6a0af533bdf4be834
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c96a931593771e381d8f526919a5180da1eb919a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990156"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
-Captura o restante do quadro atual para o arquivo de log do gráfico.  
+Captura o restante do quadro atual para o arquivo de log de gráficos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -27,9 +25,9 @@ void CaptureCurrentFrame();
 ```  
   
 ## <a name="remarks"></a>Comentários  
- Se outro captura está em andamento — como uma captura iniciada com o `BeginCapture` função — que captura é concluída e registrada no log de gráficos como um quadro distinto. Logo depois, diagnóstico de gráficos começa a capturar o restante do quadro atual, que também é registrado como um quadro distinto. Final do quadro atual é marcada por uma chamada para apresentar.  
+ Se outra captura está atualmente em andamento — como uma captura que foi iniciada pelo `BeginCapture` função — de captura será concluída e registrada no log de gráficos como um quadro distinto. Logo depois disso, o diagnóstico de gráficos começa capturando o restante do quadro atual, que também é registrado como um quadro distinto. Final do quadro atual é marcado por uma chamada para apresentar.  
   
- Para capturar um quadro, você deve preparar seu aplicativo para capturar e registrar informações de gráficos — ou seja, você deverá ter chamado [Init](init.md) por meio de uma instância do `VsgDbg` classe antes de chamar `CaptureCurrentFrame`.  
+ Para capturar um quadro, você deve preparar seu aplicativo para capturar e registrar informações de gráficos — ou seja, você deve ter chamado [Init](init.md) por meio de uma instância das `VsgDbg` classe antes de chamar `CaptureCurrentFrame`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Init](init.md)   

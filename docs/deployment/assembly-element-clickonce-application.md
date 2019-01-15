@@ -1,8 +1,6 @@
 ---
 title: '&lt;assembly&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 35c8193c2210d2a16a7d73164b551adb5a0f06bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077084"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878345"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;assembly&gt; elemento (aplicativo ClickOnce)
 O elemento de nível superior para o manifesto do aplicativo.  
@@ -73,4 +71,4 @@ O elemento de nível superior para o manifesto do aplicativo.
   
 ## <a name="see-also"></a>Consulte também  
  [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<assembly > elemento](../deployment/assembly-element-clickonce-deployment.md)
+ [Elemento \<assembly>](../deployment/assembly-element-clickonce-deployment.md)

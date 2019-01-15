@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825247"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269144"
 ---
 # <a name="xml-schema-designer-workspace"></a>Espaço de trabalho do Designer de esquema XML
 
@@ -30,7 +30,7 @@ Você pode adicionar nós ao workspace das seguintes maneiras:
 
 -   Arrastar e soltar nós globais, nós de arquivos e nós de namespace do **XML Schema Explorer** em qualquer um dos três modos de exibição. Para obter mais informações, consulte a seção "Arrastar e soltar nós" em [XML Schema Explorer](../xml-tools/xml-schema-explorer.md).
 
--   Use o menu de contexto na **XML Schema Explorer**. Para obter mais informações, consulte [menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md).
+-   Use o menu de contexto (atalho) a **XML Schema Explorer**. Para obter mais informações, consulte [menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md).
 
 -   Executar uma pesquisa em XSD Explorer e clique no **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo. Para obter mais informações, consulte [procurando o conjunto de esquema](../xml-tools/searching-the-schema-set.md).
 
@@ -40,8 +40,8 @@ Para alternar modos de exibição, use um destes procedimentos:
 
 -   A barra de ferramentas do designer XSD.
 
--   Os menus de contexto de exibição do modelo de conteúdo e do modo de gráfico.
+-   Menus de contexto (atalho), a exibição do modelo de conteúdo e a exibição de gráfico.
 
 -   Os marca de agua na página no modo de Início ou a marca de agua no modo em branco do modelo de conteúdo ou no modo de gráfico.
 
--   Teclas de atalho: **CTRL**+**1** para o modo de início **Ctrl**+**2** para o modo de exibição de gráfico, e **Ctrl** + **3** para o modo de exibição do modelo de conteúdo.
+-   Hotkeys: **CTRL**+**1** para o modo de início **Ctrl**+**2** para o modo de exibição de gráfico, e **Ctrl** + **3** para o modo de exibição do modelo de conteúdo.

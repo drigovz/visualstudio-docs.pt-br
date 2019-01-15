@@ -1,8 +1,6 @@
 ---
 title: ClickOnce e configurações de aplicativo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3cf6320401f58cd8ea1733e3b972202ba9b6d3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 40077a30a49842187c24b4cf8b0cba18b3d0a46a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850958"
 ---
-# <a name="clickonce-and-application-settings"></a>Configurações de ClickOnce e aplicativos
+# <a name="clickonce-and-application-settings"></a>ClickOnce e as configurações de aplicativo
 Configurações de aplicativo para Windows Forms torna mais fácil criar, armazenar e manter aplicativos personalizados e preferências do usuário no cliente. Este documento descreve como os arquivos de configurações do aplicativo funcionam em um aplicativo ClickOnce e como o ClickOnce migra as configurações quando o usuário é atualizado para a próxima versão.  
   
  As informações a seguir se aplica somente ao provedor de configurações do aplicativo padrão, o \<xref:System.Configuration.LocalFileSettingsProvider > classe. Se você fornecer um provedor personalizado, esse provedor determinará como ela armazena seus dados e como ele é atualizado suas configurações entre versões. Para obter mais informações sobre provedores de configurações do aplicativo, consulte [arquitetura de configurações do aplicativo](/dotnet/framework/winforms/advanced/application-settings-architecture).  
@@ -55,7 +53,7 @@ Se você tiver criado suas próprias configurações de aplicativo a classe de w
  ClickOnce não funciona com as configurações de roaming, que permite que seu arquivo de configurações a seguir você entre computadores em uma rede. Se você precisar de configurações de roaming, será necessário implementar um provedor de configurações do aplicativo que armazena as configurações de rede ou desenvolver suas próprias classes de configurações personalizadas para armazenar as configurações em um computador remoto. Para obter mais informações em provedores de configurações, consulte [arquitetura de configurações do aplicativo](/dotnet/framework/winforms/advanced/application-settings-architecture).  
   
 ## <a name="see-also"></a>Consulte também  
- [Implantação e segurança do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Visão geral das configurações de aplicativo](/dotnet/framework/winforms/advanced/application-settings-overview)   
- [Visão geral de cache do ClickOnce](../deployment/clickonce-cache-overview.md)   
- [Acessar dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Visão geral do cache do ClickOnce](../deployment/clickonce-cache-overview.md)   
+ [Acesso a dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

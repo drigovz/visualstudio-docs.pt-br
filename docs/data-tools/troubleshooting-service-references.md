@@ -95,7 +95,7 @@ Quando ele tenta exibir uma representação XML dos dados em um [!INCLUDE[ss_dat
 
 Para corrigir esse erro, desabilite os feeds RSS:
 
-1.  No Internet Explorer, no menu Ferramentas **, clique em Opções da Internet**.
+1.  No Internet Explorer, no menu **Ferramentas**, clique em **Opções da Internet**.
 
 2.  Sobre o **conteúdo** guia da **Feeds** seção, clique em **configurações**.
 

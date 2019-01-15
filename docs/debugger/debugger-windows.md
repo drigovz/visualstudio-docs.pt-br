@@ -2,7 +2,6 @@
 title: Janelas do depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875800"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Saiba mais sobre o Windows do depurador no Visual Studio
 
@@ -36,18 +35,18 @@ Você pode abrir a maioria das janelas do depurador enquanto você estiver depur
 |Pilhas paralelas|CTR: + SHIFT + D, S|[Usando a janela Pilhas Paralelas](../debugger/using-the-parallel-stacks-window.md)|
 |Inspeção paralela|CTR: + SHIFT + D, (1, 2, 3, 4)|[Introdução à depuração de aplicativos multi-threaded](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Threads|CTRL + ALT + H|[Depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md)|
-|Módulos|CTRL + ALT + U|[Como: Usar a janela módulos](../debugger/how-to-use-the-modules-window.md)|
+|Módulos|CTRL + ALT + U|[Como: Usar a janela Módulos](../debugger/how-to-use-the-modules-window.md)|
 |Threads de GPU|-|[Como: Usar a janela de Threads de GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tarefas|CTR: + SHIFT + D, K|[Usando a janela Tarefas](../debugger/using-the-tasks-window.md)|
-|Depuração de Python interativa|SHIFT + ALT + I|[REPL interativo do Python](../python/python-interactive-repl-in-visual-studio.md)|
-|Console do JavaScript|CTRL + ALT + V, C|[Guia de início rápido: Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Explorador do DOM|CTRL + ALT + V, D|[Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)|
+|Depuração de Python interativa|SHIFT + ALT + I|[REPL Interativo do Python](../python/python-interactive-repl-in-visual-studio.md)|
+|Console do JavaScript|CTRL + ALT + V, C|[Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|Explorador do DOM|CTRL + ALT + V, D|[Depurar o layout usando o Explorador do DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Árvore visual dinâmica|-|[Inspecione as propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Explorador de propriedades dinâmicas|-|[Inspecione as propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Processos|CTRL + ALT + Z|[Depurar threads e processos](../debugger/debug-threads-and-processes.md)|
 |Memória|CTRL + ALT + M, (1, 2, 3, 4)|[Janelas de Memória](../debugger/memory-windows.md)|
-|Desmontagem|CTRL + ALT + D|[Como: Use a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md)|
-|Registros|CTRL + ALT + G|[Como: Usar a janela registros](../debugger/how-to-use-the-registers-window.md)|
+|Desmontagem|CTRL + ALT + D|[Como: Usar a janela Desmontagem](../debugger/how-to-use-the-disassembly-window.md)|
+|Registros|CTRL + ALT + G|[Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,8 +1,6 @@
 ---
 title: '&lt;trustInfo&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: eb8494f9602b22f5b5997216a3aa74189e27f3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870489"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicativo ClickOnce)
 Descreve as permissões de segurança mínima necessárias para o aplicativo seja executado no computador cliente.  
@@ -270,5 +268,5 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Visão geral de implantação de aplicativos confiável](../deployment/trusted-application-deployment-overview.md)   
+ [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)   
  [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

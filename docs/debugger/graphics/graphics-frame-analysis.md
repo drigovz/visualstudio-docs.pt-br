@@ -1,8 +1,6 @@
 ---
 title: Análise de quadros de gráficos | Microsoft Docs
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875635"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de Quadros de Gráficos
 Use análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.  
@@ -28,7 +26,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
 - A análise de quadro pode gerar informações de desempenho para configurações de hardware e dispositivos diferentes daqueles em que as informações foram capturadas.  
   
-- Análise de quadro pode gerar novos resumos de desempenho de informações capturadas anteriormente — por exemplo, quando os drivers de GPU são otimizados ou expõem recursos de depuração adicionais.  
+- A análise de quadros pode gerar novos resumos de desempenho de informações capturadas anteriormente, por exemplo, quando os drivers de GPU são otimizados ou expõem recursos de depuração adicionais.  
   
   Além dessas vantagens, a análise de quadros também pode alterar o modo como o quadro é renderizado durante a reprodução para que ela possa apresentar informações sobre como essas mudanças podem afetar o desempenho de renderização de um aplicativo. Você pode usar essas informações para se decidir entre possíveis estratégias de otimização sem ter que implementar todas elas e, depois, capturar e comparar todos os resultados você mesmo.  
   
@@ -37,7 +35,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   Para ver uma demonstração do que a análise de quadros pode fazer para seu aplicativo, você pode assistir a [análise de quadros de gráficos do Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo no Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Usando a análise de quadro  
- Antes de usar a análise de quadro, você precisa capturar informações gráficas de seu aplicativo enquanto ele é executado, exatamente como você faria ao usar qualquer uma das ferramentas do analisador de gráficos. Em seguida, na janela de documento (. vsglog) do log de gráficos, escolha o **análise de quadros** guia.  
+ Antes de usar a análise de quadro, você precisa capturar informações gráficas de seu aplicativo enquanto ele é executado, exatamente como você faria ao usar qualquer uma das ferramentas do analisador de gráficos. Em seguida, na janela do documento de log de gráficos (.vsglog), escolha a guia **Análise de Quadros**.  
   
  ![Selecione a guia análise de quadro](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")  
   
@@ -64,7 +62,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
 - Se a variante de Dimensões de Textura de Metade/Quarto mostrar ganhos de desempenho significativos, suas texturas provavelmente ocupam muita memória, consomem muita largura de banda ou usam o cache de textura de maneira ineficiente. Se essa variante não mostrar uma alteração no desempenho, provavelmente, você poderá usar texturas maiores e mais detalhadas sem prejudicar o desempenho.  
   
-  Quando contadores de hardware estão disponíveis, é possível usá-los para coletar informações bastante detalhadas sobre o motivo pelo qual o desempenho de renderização do aplicativo pode estar sendo impactado. Todos os dispositivos em nível de recurso 9.2 e superior dão suporte a consultas de oclusão de profundidade (**pixels obstruídos** contador) e carimbos de hora. Outros contadores de hardware podem estar disponíveis, dependendo se o fabricante de GPU implementou contadores de hardware e os expôs no driver. Você pode usar esses contadores para confirmar a causa precisa dos resultados mostrados na tabela de resumo; por exemplo, é possível determinar se o desenho excessivo é um fator relevante, examinando a porcentagem de pixels que foram obstruídos pelo teste de profundidade.  
+  Quando contadores de hardware estão disponíveis, é possível usá-los para coletar informações bastante detalhadas sobre o motivo pelo qual o desempenho de renderização do aplicativo pode estar sendo impactado. Todos os dispositivos em nível de recurso 9.2 e superior dão suporte a consultas de oclusão de profundidade (contador de **pixels obstruídos**) e carimbos de data/hora. Outros contadores de hardware podem estar disponíveis, dependendo se o fabricante de GPU implementou contadores de hardware e os expôs no driver. Você pode usar esses contadores para confirmar a causa precisa dos resultados mostrados na tabela de resumo; por exemplo, é possível determinar se o desenho excessivo é um fator relevante, examinando a porcentagem de pixels que foram obstruídos pelo teste de profundidade.  
   
 ### <a name="timeline-and-summary-table"></a>Linha do tempo e tabela de resumo  
  Por padrão, a Linha do Tempo e a Tabela de Resumo são exibidas e as outras seções são recolhidas.  
@@ -134,7 +132,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
  A Análise de Quadro limita o número de novas tentativas a 10. Se sua plataforma tiver um gerenciamento de energia ou clock-gating agressivo, isso pode fazer com que a Análise de Quadro falhe e relate um erro por ter excedido o limite de novas tentativas. Se a plataforma permitir, você pode atenuar esse problema redefinindo o gerenciamento de energia e a aceleração da velocidade de clock de sua plataforma para que sejam menos agressivos.  
   
-##  <a name="HardwareSupport"></a> Suporte de hardware  
+##  <a name="HardwareSupport"></a> Suporte a hardware  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Consultas de carimbos de data/hora e oclusão  
  Carimbos de data/hora têm suporte em todas as plataformas compatíveis com Análise de Quadro. Consultas de oclusão de profundidade, necessárias para o contador de Pixels Obstruídos, são suportadas em plataformas com nível de recurso de suporte 9.2 ou superior.  
@@ -173,22 +171,22 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
  A análise de quadro deve ser usada para analisar e aprimorar o desempenho de renderização em hardwares reais. Executar análise de quadro em dispositivos WARP não será impedida, mas ela geralmente não é vantajoso porque WARP em execução em uma CPU de alto nível é mais lento do que até mesmo as GPUs modernas com menor capacidade e desempenho de WARP pode variar bastante dependendo da CPU específica ele está em execução.  
   
 ##  <a name="Variants"></a> Variantes  
- Cada alteração que a análise de quadro realiza na maneira que um quadro é renderizado durante a reprodução é conhecida como uma *variante*. As variantes examinadas pela Análise de Quadro correspondem a alterações comuns e relativamente fáceis que podem ser feitas para aprimorar o desempenho de renderização ou a qualidade visual do aplicativo; por exemplo, reduzir o tamanho das texturas, usar a compactação de texturas ou habilitar diferentes tipos de suavização. As variantes substituem o contexto de renderização e os parâmetros comuns do seu aplicativo. Segue um resumo:  
+ Cada alteração que a Análise de Quadros realiza na maneira em que um quadro é renderizado durante a reprodução é conhecida como uma *variante*. As variantes examinadas pela Análise de Quadro correspondem a alterações comuns e relativamente fáceis que podem ser feitas para aprimorar o desempenho de renderização ou a qualidade visual do aplicativo; por exemplo, reduzir o tamanho das texturas, usar a compactação de texturas ou habilitar diferentes tipos de suavização. As variantes substituem o contexto de renderização e os parâmetros comuns do seu aplicativo. Segue um resumo:  
   
 |Variante|Descrição|  
 |-------------|-----------------|  
-|**Tamanho do visor 1 x 1**|Reduz as dimensões do visor em todos os destinos de renderização para 1 x 1 pixels.<br /><br /> Para obter mais informações, consulte [variante de tamanho do visor 1 x 1](1x1-viewport-size-variant.md)|  
-|**0x MSAA**|Desativa a MSAA (suavização de múltipla amostra) em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](0x-2x-4x-msaa-variants.md)|  
-|**2x MSAA**|Ativa a MSAA de 2x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|Ativa a MSAA de 4x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](0x-2x-4x-msaa-variants.md)|  
+|**Tamanho do Visor 1 x 1**|Reduz as dimensões do visor em todos os destinos de renderização para 1 x 1 pixels.<br /><br /> Para obter mais informações, consulte [variante de tamanho do visor 1 x 1](1x1-viewport-size-variant.md)|  
+|**MSAA 0x**|Desativa a MSAA (suavização de múltipla amostra) em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](0x-2x-4x-msaa-variants.md)|  
+|**MSAA 2x**|Ativa a MSAA de 2x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](0x-2x-4x-msaa-variants.md)|  
+|**MSAA 4x**|Ativa a MSAA de 4x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](0x-2x-4x-msaa-variants.md)|  
 |**Filtragem de textura de ponto**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtragem de textura de ponto) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtragem de textura bilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtragem de textura bilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtragem de textura trilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtragem de textura trilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtragem de textura anisotrópica**|Define o modo de filtragem para `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` para `16` (16 x filtragem de textura anisotrópica) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtragem de textura anisotrópica**|Define o modo de filtragem como `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` para `16` (filtragem de textura anisotrópica de 16x) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Formato de destino de renderização de 16 bpp**|Define o formato de pixels como `DXGI_FORMAT_B5G6R5_UNORM` (16 bpp, formato 565) para todos os destinos de renderização e buffers de fundo.<br /><br /> Para obter mais informações, consulte [formato destino 16 bpp renderizar Variant](16bpp-render-target-format-variant.md)|  
-|**Geração de mapas MIP**|Ativa mapas mip em todas as texturas que não são destinos de renderização.<br /><br /> Para obter mais informações, consulte [variante de geração de Mip-map](mip-map-generation-variant.md).|  
+|**Geração de mapas mip**|Ativa mapas mip em todas as texturas que não são destinos de renderização.<br /><br /> Para obter mais informações, consulte [variante de geração de Mip-map](mip-map-generation-variant.md).|  
 |**Dimensões de textura pela metade**|Reduz as dimensões de textura em todas as texturas que não são destinos de renderização pela metade de seu tamanho original em cada dimensão. Por exemplo, uma textura de 256 x 128 é reduzida para 128 x 64 texels.<br /><br /> Para obter mais informações, consulte [variantes de dimensões de textura de metade/quarto](half-quarter-texture-dimensions-variant.md).|  
 |**Dimensões de textura de um quarto**|Reduz as dimensões de textura em todas as texturas que não são destinos de renderização a um quarto de seu tamanho original em cada dimensão. Por exemplo, uma textura de 256 x 128 é reduzida para 64 x 32 texels.<br /><br /> Para obter mais informações, consulte [variantes de dimensões de textura de metade/quarto](half-quarter-texture-dimensions-variant.md).|  
 |**Compactação de textura BC**|Habilita a compactação de bloco em todas as texturas que possuem uma variante de formato de pixel de B8G8R8X8, B8G8R8A8 ou R8G8B8A8. As variantes de formato B8G8R8X8 são compactados com BC1; as variantes de formato B8G8R8A8 e R8G8B8A8 são compactadas com BC3.<br /><br /> Para obter mais informações, consulte [variante de compressão de textura BC](bc-texture-compression-variant.md).|  
   
- O resultado para a maioria das variantes é descrito como: "Reduzir o tamanho da textura pela metade é 25% mais rápido" ou "Ativar MSAA de 2x é apenas 2% mais lento". Outras variantes podem exigir mais interpretação; por exemplo, se a variante que alterar as dimensões do visor para 1 x 1 mostrar um ganho de desempenho grande, isso pode indicar que a renderização é afunilada por uma taxa de enchimento baixa; alternativamente, se não houver uma alteração significativa no desempenho, isso pode indicar que a renderização é afunilada pelo processamento de vértice.
+ O resultado da maioria das variantes é prescritivo: "Reduzir o tamanho da textura pela metade é 25% mais rápido" ou "Ativar MSAA de 2x é apenas 2% mais lento". Outras variantes podem exigir mais interpretação; por exemplo, se a variante que alterar as dimensões do visor para 1 x 1 mostrar um ganho de desempenho grande, isso pode indicar que a renderização é reduzida por uma taxa de enchimento baixa; alternativamente, se não houver uma alteração significativa no desempenho, isso pode indicar que a renderização é reduzida pelo processamento de vértice.

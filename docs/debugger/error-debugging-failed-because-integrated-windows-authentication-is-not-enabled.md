@@ -1,8 +1,6 @@
 ---
 title: 'Erro: Falha na depuração porque a autenticação integrada do Windows não está habilitada. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
@@ -19,49 +17,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f56cca9fa637efaa66b6dcab4716d4a1900aa61d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2bac4f319967f241a26ce15133497a88332b96be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837622"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: Falha na depuração porque a Autenticação Integrada do Windows não está habilitada
 A autenticação do usuário que solicitou a depuração foi impedida por um erro de autenticação. Isso pode ocorrer ao tentar entrar em um aplicativo Web ou serviço Web XML. Uma causa desse erro é que a autenticação integrada do Windows não está habilitada. Para habilitá-la, siga as etapas em “Para habilitar a autenticação integrada do Windows”.  
   
- Se você tiver habilitado a autenticação integrada do Windows e esse erro ainda aparecer, é possível que esse erro seja causado porque **autenticação de resumo para o Windows Domain Servers** está habilitado. Nessa situação, você deverá entrar em contato com o administrador da rede.  
+ Se você habilitou a autenticação integrada do Windows e esse erro ainda aparece, é possível que ele seja causado porque a **Autenticação Digest para servidores de domínio do Windows** está habilitada. Nessa situação, você deverá entrar em contato com o administrador da rede.  
   
 ### <a name="to-enable-integrated-windows-authentication"></a>Para habilitar a autenticação integrada do Windows  
   
 1.  Faça logon no servidor Web com uma conta de administrador.  
   
-2.  Clique em **inicie** e, em seguida, clique em **painel de controle**.  
+2.  Clique em **Iniciar** e em **Painel de Controle**.  
   
-3.  Na **painel de controle**, clique duas vezes em **ferramentas administrativas**.  
+3.  No **Painel de Controle**, clique duas vezes em **Ferramentas Administrativas**.  
   
-4.  Clique duas vezes em **serviços de informações da Internet**.  
+4.  Clique duas vezes em **Serviços de Informações da Internet**.  
   
 5.  Clique no nó do servidor Web.  
   
-     Um **Sites da Web** pasta é aberta abaixo do nome do servidor.  
+     Uma pasta **Sites** é aberta abaixo do nome do servidor.  
   
-6.  Você pode configurar a autenticação para todos os sites ou para sites individuais. Para configurar a autenticação para todos os sites da Web, clique com botão direito do **Sites da Web** pasta e clique **propriedades**. Para configurar a autenticação para um site individual, abra o **Sites da Web** pasta, clique com botão direito no site individual e, em seguida, clique em **propriedades**.  
+6.  Você pode configurar a autenticação para todos os sites ou para sites individuais. Para configurar a autenticação para todos os sites, clique com o botão direito do mouse na pasta **Sites** e clique em **Propriedades**. Para configurar a autenticação para um site individual, abra a pasta **Sites**, clique com o botão direito do mouse no site individual e clique em **Propriedades**.  
   
-     O **propriedades** caixa de diálogo é exibida.  
+     A caixa de diálogo **Propriedades** é exibida.  
   
-7.  Clique o **segurança de diretório** guia.  
+7.  Clique na guia **Segurança de Diretório**.  
   
-8.  No **controle de acesso e autenticação anônima** seção, clique em **editar**.  
+8.  Na seção **Acesso anônimo e controle de autenticação**, clique em **Editar**.  
   
-     O **métodos de autenticação** caixa de diálogo é exibida.  
+     A caixa de diálogo **Métodos de Autenticação** é exibida.  
   
-9. Sob **acesso autenticado**, selecione **autenticação do Windows integrada**.  
+9. Em **Acesso autenticado**, selecione **Autenticação integrada do Windows**.  
   
-10. Clique em **Okey** para fechar o **métodos de autenticação** caixa de diálogo.  
+10. Clique em **OK** para fechar a caixa de diálogo **Métodos de Autenticação**.  
   
-11. Clique em **Okey** para fechar o **propriedades** caixa de diálogo.  
+11. Clique em **OK** para fechar a caixa de diálogo **Propriedades**.  
   
-12. Fechar o **serviços de informações da Internet** janela.  
+12. Feche a janela **Serviços de Informações da Internet**.  
   
 ### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>Para habilitar a autenticação integrada do Windows no Windows Vista/IIS 7  
   
@@ -71,7 +69,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
     1.  Clique em **inicie**, clique em **painel de controle** e, em seguida, clique em **programas**.  
   
-    2.  Sob **programas e recursos**, clique em **ativar ou desativar recursos do Windows ativar**.  
+    2.  Em **Programas e Recursos**, clique em **Ativar ou desativar recursos do Windows**.  
   
          A caixa de diálogo Controle de Acesso do Usuário aparecerá e solicitará para que a permissão continue.  
   
@@ -79,43 +77,43 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
          A caixa de diálogo Recursos do Windows é exibida.  
   
-    4.  Na lista de recursos, expanda o **serviços de informações da Internet** nó.  
+    4.  Na lista de funcionalidades, expanda o nó **Serviços de Informações da Internet**.  
   
-    5.  Sob **serviços de informações da Internet**, expanda o **serviços da World Wide Web** nó.  
+    5.  Em **Serviços de Informações da Internet**, expanda o nó **Serviços da World Wide Web**.  
   
-    6.  Sob **serviços da World Wide Web**, clique em **segurança**.  
+    6.  Em **Serviços da World Wide Web**, clique em **Segurança**.  
   
-    7.  Clique em **autenticação do Windows**.  
+    7.  Clique em **Autenticação do Windows**.  
   
-    8.  Sob **serviços de informações da Internet**, expanda o **ferramentas de gerenciamento da Web** nó.  
+    8.  Em **Serviços de Informações da Internet**, expanda o nó **Ferramentas de Gerenciamento da Web**.  
   
-    9. Sob **as ferramentas de gerenciamento da Web**, expanda o **compatibilidade com gerenciamento do IIS 6** nó e selecione o **Metabase do IIS 6 e compatibilidade de configuração do IIS 6** caixa de seleção.  
+    9. Expanda **Ferramentas de Gerenciamento da Web**, expanda o nó **Compatibilidade com Gerenciamento do IIS 6** e selecione a caixa de seleção **Compatibilidade com Metabase do IIS 6 e configuração do IIS 6**.  
   
-    10. Sob **as ferramentas de gerenciamento da Web**, selecione **Console de gerenciamento do IIS** e clique em **Okey.**  
+    10. Em **Ferramentas de Gerenciamento da Web**, selecione **Console de Gerenciamento do IIS** e clique em **OK**.  
   
     11. Reinicie o computador para que essas alterações tenham efeito.  
   
-3.  Clique em **inicie** e, em seguida, clique em **painel de controle**.  
+3.  Clique em **Iniciar** e em **Painel de Controle**.  
   
-4.  Clique em **modo de exibição clássico**e, em seguida, clique duas vezes em **ferramentas administrativas**.  
+4.  Clique em **Exibição clássica** e clique duas vezes em **Ferramentas Administrativas**.  
   
-5.  No **nome** coluna e clique duas vezes em **serviços de informações da Internet (IIS) Manager**.  
+5.  Clique na coluna **Nome** e clique duas vezes em **Gerenciador do IIS (Serviços de Informações da Internet)**.  
   
-6.  No **conexões** coluna, expanda o nó para o servidor.  
+6.  Na coluna **Conexões**, expanda o nó para o servidor.  
   
-     Um **Sites da Web** pasta é aberta abaixo do nome do servidor.  
+     Uma pasta **Sites** é aberta abaixo do nome do servidor.  
   
-7.  Expanda o **Sites da Web** nó e clique no site da Web para o qual você deseja habilitar a autenticação integrada do Windows.  
+7.  Expanda o nó **Sites** e clique no site para a qual você deseja habilitar a autenticação integrada do Windows.  
   
-8.  O título do painel central altera o nome do site que você selecionou. Nesse painel, sob o **IIS** título, clique duas vezes em **autenticação**.  
+8.  O título do painel central altera o nome do site que você selecionou. Neste painel, no título **IIS**, clique duas vezes em **Autenticação**.  
   
-     O título do painel é alterado para **autenticação**.  
+     O título do painel é alterado para **Autenticação**.  
   
-9. No **autenticação** painel, no **nome** coluna, clique com botão direito **autenticação do Windows** e, em seguida, clique em **habilitar**.  
+9. No painel **Autenticação**, na coluna **Nome**, clique com o botão direito do mouse em **Autenticação do Windows** e clique em **Habilitar**.  
   
-10. Fechar o **serviços de informações da Internet (IIS) Manager** janela.  
+10. Feche a janela **Gerenciador do IIS (Serviços de Informações da Internet)**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web: Erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Autenticação Digest da Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Autenticação do Microsoft Digest](http://go.microsoft.com/fwlink/?LinkId=77938)   
  [Executando aplicativos da Web no Windows Vista com o IIS 7.0 e Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

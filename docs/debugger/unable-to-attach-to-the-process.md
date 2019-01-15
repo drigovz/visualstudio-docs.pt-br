@@ -42,13 +42,13 @@ Não é possível anexar ao processo. O componente do depurador no servidor rece
   
 ### <a name="to-solve-scenario-2"></a>Para solucionar o cenário 2  
   
-1.  No menu Iniciar **, selecione Painel de Controle**.  
+1.  No menu **Iniciar**, selecione **Painel de Controle**.  
   
-2.  No Painel de Controle **, clique duas vezes em Ferramentas de Administração**.  
+2.  No Painel de Controle, clique duas vezes em **Ferramentas administrativas**.  
   
-3.  Na janela Ferramentas Administrativas, clique duas vezes em **Política de Segurança Local**.  
+3.  Na janela Ferramentas administrativas, clique duas vezes em **Política de Segurança Local**.  
   
-4.  Na janela Política de Segurança Local, selecione Políticas Locais **.  
+4.  Na janela Política de Segurança Local, selecione **Políticas Locais**.  
   
 5.  No **diretivas** coluna, clique duas vezes em **acesso à rede: Modelo de compartilhamento e segurança para contas locais**.  
   

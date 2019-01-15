@@ -2,7 +2,6 @@
 title: Habilitar a depuração para aplicativos ASP.NET | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881095"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicativos ASP.NET ou ASP.NET Core no Visual Studio
 
@@ -185,10 +184,9 @@ Há várias maneiras de publicar aplicativos para o IIS. Estas etapas mostram co
 
 ## <a name="see-also"></a>Consulte também  
 [Depuração do ASP.NET: requisitos do sistema](aspnet-debugging-system-requirements.md)   
-[Como: executar o processo de trabalho em uma conta de usuário](how-to-run-the-worker-process-under-a-user-account.md)   
-[Como: localizar o nome do processo do ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
-[Depurar aplicativos web implantados](debugging-deployed-web-applications.md)   
-[Passo a passo: Depurando um formulário da web](walkthrough-debugging-a-web-form.md)   
-[Como: depurar exceções do ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Depurar aplicativos web: erros e solução de problemas](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[Como: Executar o processo de trabalho em uma conta de usuário](how-to-run-the-worker-process-under-a-user-account.md)   
+[Como: Localizar o nome do processo do ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
+[Depurar aplicativos Web implantados](debugging-deployed-web-applications.md)   
+[Passo a passo: Como depurar um formulário da Web](walkthrough-debugging-a-web-form.md)   
+[Como: Depurar exceções do ASP.NET](how-to-debug-aspnet-exceptions.md)   
+[Depurar aplicativos Web: Erros e solução de problemas](debugging-web-applications-errors-and-troubleshooting.md)

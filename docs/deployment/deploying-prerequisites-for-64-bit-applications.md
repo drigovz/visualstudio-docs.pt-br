@@ -1,8 +1,6 @@
 ---
 title: Implantando pré-requisitos para aplicativos de 64 bits | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ed8d652a36235ef43ce0cdeb78729d560be476
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 86d7512101adf58f13a07481910ab1c28251b8da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885245"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Implantar pré-requisitos para aplicativos de 64 bits
-A implantação do ClickOnce oferece suporte à instalação de aplicativos em plataformas de 64 bits. As plataformas de destino são **x86** para plataformas de 32 bits **x64** para máquinas compatíveis com os conjuntos de instruções AMD64 e EM64T e **Itanium** para o processador de Itanium de 64 bits.  
+A implantação do ClickOnce oferece suporte à instalação de aplicativos em plataformas de 64 bits. As plataformas de destino são plataformas **x86** para 32 bits, **x64** para máquinas compatíveis com o conjunto de instruções AMD64 e EM64T e Itanium para o processador **Itanium** de 64 bits.  
 
 ## <a name="prerequisites"></a>Pré-requisitos  
  A tabela a seguir lista os redistribuíveis que você pode usar como pré-requisitos para a instalação do seu aplicativo de 64 bits.  
@@ -40,11 +38,11 @@ A implantação do ClickOnce oferece suporte à instalação de aplicativos em p
 | - |-------------|--------------|
 | [!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)] | Sim | Não |
 | Bibliotecas de tempo de execução do Visual C++ 2010 (IA64) | Não | Sim |
-| Bibliotecas Visual C++ 2010 Runtime (x64) | Sim | Não |
+| Bibliotecas de Tempo de Execução do Visual C++ 2010 (x64) | Sim | Não |
 | Microsoft .NET Framework 4 (x86 e x64) | Sim | |
 | Perfil de cliente do Microsoft .NET Framework 4 (x86 e x64) | Sim | |
 
 ## <a name="see-also"></a>Consulte também  
  [Implantar aplicativos, serviços e componentes](../deployment/deploying-applications-services-and-components.md)   
- [Como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Aplicativos de 64 bits](/dotnet/framework/64-bit-apps)

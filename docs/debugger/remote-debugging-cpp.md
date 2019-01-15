@@ -2,7 +2,6 @@
 title: Remoto depurar um projeto do Visual C++ | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884578"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Um projeto do Visual C++ no Visual Studio de depuração remota
 Para depurar um aplicativo do Visual Studio em um computador diferente, instalar e executar as ferramentas remotas no computador onde você implantará seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, implantar e executar seu aplicativo.
@@ -82,7 +81,7 @@ O depurador remoto tem suporte no Windows 7 e mais recente (não de telefone) e 
   
 6. No Gerenciador de soluções, clique com botão direito a solução e escolha **Configuration Manager**.  
   
-7. Para o **Debug** configuração, selecione o **implantar** caixa de seleção.  
+7. Para a configuração de **Depuração**, selecione a caixa de seleção **Implantar**.  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   

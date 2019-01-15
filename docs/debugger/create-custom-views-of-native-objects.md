@@ -1,9 +1,7 @@
 ---
 title: Criar exibições personalizadas de objetos nativos
 description: Use a estrutura do Natvis para personalizar a maneira como o Visual Studio exibe os tipos nativos no depurador
-ms.custom: ''
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937692f11cbd642da823d6f7d13bcd90de59b388
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821186"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Criar exibições personalizadas de objetos nativos no depurador
 
@@ -129,7 +127,7 @@ As visualizações do Natvis usam expressões do C++ para especificar os itens d
 
 - As expressões do Natvis são avaliadas no contexto do objeto que está sendo visualizado, não do registro de ativação atual. Por exemplo, `x` um Natvis expressão se refere ao campo denominado **x** no objeto que está sendo visualizado, não a uma variável local chamada **x** na função atual. Você não pode acessar variáveis locais em expressões do Natvis, embora você possa acessar as variáveis globais.  
 
-- As expressões do Natvis não permitem a avaliação da função ou efeitos colaterais. Chamadas de função e operadores de atribuição são ignorados. Porque [funções intrínsecas do depurador](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) têm efeitos colaterais gratuitamente, elas podem ser livremente chamadas de qualquer expressão do Natvis, mesmo que outras chamadas de função não são permitidas.  
+- As expressões do Natvis não permitem a avaliação da função ou efeitos colaterais. Chamadas de função e operadores de atribuição são ignorados. Como as [funções intrínsecas do depurador](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) não têm efeitos colaterais, elas podem ser livremente chamadas de qualquer expressão do natvis, mesmo que outras chamadas de função estejam desabilitadas.  
 
 - Para controlar como uma expressão exibe, você pode usar qualquer um dos especificadores de formato descritos na [especificadores em C++ de formato](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Especificadores de formato são ignorados quando a entrada é usada internamente pelo Natvis, como o `Size` expressão em uma [expansão de ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).  
 
@@ -198,7 +196,7 @@ Um básico `Type` se parece com este exemplo:
 
 1. O que a visualização de tipo deve ser usada para (o `Name` atributo).  
    
-2. O valor de um objeto desse tipo de aparência (o `DisplayString` elemento).  
+2. Qual deve ser a aparência de um objeto desse tipo (semelhante à do elemento `DisplayString`).  
    
 3. Os membros do tipo de aparência quando o usuário expande o tipo em uma janela variável (o `Expand` nó).  
    
@@ -213,9 +211,9 @@ No exemplo a seguir, a mesma visualização é usada se o objeto é uma `CAtlArr
 </Type>  
 ```  
 
-Você pode fazer referência a parâmetros de modelo na entrada de visualização usando macros $T1, $T2 e assim por diante. Para localizar exemplos dessas macros, consulte a *. natvis* arquivos enviados com o Visual Studio.  
+Você pode fazer referência a parâmetros de modelo na entrada de visualização usando macros $T1, $T2 e assim por diante. Para localizar exemplos dessas macros, confira os arquivos *.natvis* que acompanham o Visual Studio.  
 
-####  <a name="BKMK_Visualizer_type_matching"></a> Correspondência de tipo de Visualizador  
+####  <a name="BKMK_Visualizer_type_matching"></a> Correspondência de tipo de visualizador  
 Se uma entrada de visualização não for validado, a próxima visualização disponível será usada.  
 
 #### <a name="inheritable-attribute"></a>Atributo herdável  
@@ -421,7 +419,7 @@ Um `std::vector` mostra os elementos individuais quando expandido na janela vari
 
 O `ArrayItems` nó deve ter:  
 
-- Um `Size` expressão (que deve ser avaliada como um número inteiro) para que o depurador entenda o comprimento da matriz.  
+- Uma expressão `Size` (que deve ser avaliada como um inteiro) para que o depurador entenda o comprimento da matriz.  
 - Um `ValuePointer` expressão que aponta para o primeiro elemento (que deve ser um ponteiro de um tipo de elemento que não é `void*`).  
 
 O valor padrão do limite inferior de matriz é 0. Para substituir o valor, use um `LowerBound` elemento. O *. natvis* arquivos acompanham o Visual Studio têm exemplos.  
@@ -448,7 +446,7 @@ Você também pode especificar a matrizes multidimensionais. Nesse caso, o depur
 
 - `Direction` Especifica se a matriz está na ordem de linhas principais ou de coluna principal. 
 - `Rank` especifica a classificação da matriz. 
-- O `Size` elemento aceita implícito `$i` parâmetro, o que ele substitui pelo índice de dimensão para encontrar o comprimento da matriz nessa dimensão. No exemplo anterior, a expressão `_M_extent.M_base[0]` deve fornecer o comprimento da dimensão 0º, `_M_extent._M_base[1]` o 1º dia e assim por diante.  
+- O elemento `Size` aceita o parâmetro implícito `$i`, que ele substitui pelo índice de dimensão para descobrir o tamanho da matriz na dimensão. No exemplo anterior, a expressão `_M_extent.M_base[0]` deve fornecer o comprimento da dimensão 0º, `_M_extent._M_base[1]` o 1º dia e assim por diante.  
 
 Aqui está como bidimensional `Concurrency::array` objeto fica na janela do depurador:  
 
@@ -582,7 +580,7 @@ Por exemplo, o tipo de ponteiro inteligente `auto_ptr<vector<int>>` normalmente 
 
  ![automático&#95;ptr&#60;vetor&#60;int&#62; &#62; expansão padrão](../debugger/media/dbg_natvis_expand_expandeditem_default.png "expansão padrão")  
 
- Para ver os valores do vetor, você precisa fazer drill down dois níveis na janela variável, passando por meio de `_Myptr` membro. Adicionando um `ExpandedItem` elemento, você pode eliminar o `_Myptr` variável da hierarquia e diretamente exibir os elementos do vetor:  
+ Para ver os valores do vetor, você precisa fazer drill down dois níveis na janela variável, passando por meio de `_Myptr` membro. Adicionando um elemento `ExpandedItem`, você pode eliminar a variável `_Myptr` da hierarquia e exibir diretamente os elementos do vetor:  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -607,10 +605,10 @@ O exemplo a seguir mostra como agregar propriedades da classe base em uma classe
 </Type>  
 ```  
 
-O **nd** especificador de formato, o que desativa a visualização de correspondência para a classe derivada, é necessário aqui. Caso contrário, a expressão `*(CFrameworkElement*)this` causaria a `CPanel` visualização a ser aplicada novamente, porque as regras de correspondência de tipo de visualização padrão considerá-la mais apropriada. Use o **nd** especificador para instruir o depurador a usar a visualização da classe base, ou a expansão padrão se a classe base não tenha nenhuma visualização de formato.  
+O especificador de formato **nd**, que desativa a correspondência de visualização da classe derivada é necessário aqui. Caso contrário, a expressão `*(CFrameworkElement*)this` causaria a `CPanel` visualização a ser aplicada novamente, porque as regras de correspondência de tipo de visualização padrão considerá-la mais apropriada. Use o **nd** especificador para instruir o depurador a usar a visualização da classe base, ou a expansão padrão se a classe base não tenha nenhuma visualização de formato.  
 
 ####  <a name="BKMK_Synthetic_Item_expansion"></a> Expansão de item sintético  
- Enquanto o `ExpandedItem` elemento fornece uma exibição mais simples de dados, eliminando as hierarquias, o `Synthetic` nó faz o oposto. Ele permite que você crie um elemento filho artificial que não é um resultado de uma expressão. O elemento artificial pode ter elementos filho de seu próprio. No exemplo a seguir, a visualização do tipo `Concurrency::array` usa um nó de `Synthetic` para mostrar uma mensagem de diagnóstico para o usuário:  
+ Enquanto o elemento `ExpandedItem` fornece uma exibição de dados mais simples eliminando as hierarquias, o nó `Synthetic` faz o oposto. Ele permite que você crie um elemento filho artificial que não é um resultado de uma expressão. O elemento artificial pode ter elementos filho de seu próprio. No exemplo a seguir, a visualização do tipo `Concurrency::array` usa um nó de `Synthetic` para mostrar uma mensagem de diagnóstico para o usuário:  
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -632,7 +630,7 @@ O **nd** especificador de formato, o que desativa a visualização de correspond
  ![Concurrency:: array com expansão de elemento sintético](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: array com expansão de elemento sintético")  
 
 ###  <a name="BKMK_HResult"></a> Elemento HResult 
- O `HResult` elemento permite que você personalize as informações exibidas para um **HRESULT** nas janelas do depurador. O `HRValue` elemento deve conter o valor de 32 bits do **HRESULT** que deve ser personalizado. O `HRDescription` elemento contém as informações serão exibidas na janela do depurador.  
+ O `HResult` elemento permite que você personalize as informações exibidas para um **HRESULT** nas janelas do depurador. O elemento `HRValue` deve conter o valor de 32 bits do **HRESULT** que deve ser personalizado. O `HRDescription` elemento contém as informações serão exibidas na janela do depurador.  
 
 ```xml
 

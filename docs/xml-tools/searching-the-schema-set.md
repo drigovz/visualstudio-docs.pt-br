@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26be8121c679cc2614440f8e28f52b383dbe944c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836563"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270067"
 ---
 # <a name="search-the-schema-set"></a>O conjunto de esquema de pesquisa
 
@@ -40,7 +40,7 @@ O **XML Schema Explorer** permite pesquisar o esquema definido das seguintes man
 
 ## <a name="schema-specific-search"></a>Pesquisar esquema específico
 
- O **XML Schema Explorer** também inclui as pesquisas internos que você pode acessar por meio do menu de contexto da **XML Schema Explorer**. Para obter mais informações sobre menus de contexto disponíveis, consulte [menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md). Você também pode executar uma pesquisa específica do esquema da exibição inicial; Para obter mais informações, consulte a seção de "detalhes para esquema" na [exibição inicial](../xml-tools/start-view.md) tópico.
+ O **XML Schema Explorer** também inclui as pesquisas internos que você pode acessar por meio do menu de contexto (atalho) da **XML Schema Explorer**. Para obter mais informações sobre menus de contexto disponíveis, consulte [menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md). Você também pode executar uma pesquisa específica do esquema da exibição inicial; Para obter mais informações, consulte a seção de "detalhes para esquema" na [exibição inicial](../xml-tools/start-view.md) tópico.
 
 ## <a name="display-and-navigate-search-results"></a>Exibir e navegar pelos resultados da pesquisa
 

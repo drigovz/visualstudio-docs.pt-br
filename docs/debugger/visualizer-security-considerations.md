@@ -1,8 +1,6 @@
 ---
 title: Considerações de segurança do Visualizador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 799cc8700c450fb2d8b81293bf410903e498e19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819545"
 ---
 # <a name="visualizer-security-considerations"></a>Considerações de segurança do visualizador
 Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma exploração conhecida existe no momento para essas ameaças potenciais, mas os desenvolvedores devem estar atentos a elas e tomar as precauções apropriadas de segurança, conforme descrito aqui, para se proteger contra futuras explorações.  
@@ -40,7 +38,7 @@ Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma explor
  Para atenuar essa vulnerabilidade, esteja atento às interfaces expostas pelo visualizador.  
   
 ## <a name="see-also"></a>Consulte também  
- [Arquitetura do Visualizador](../debugger/visualizer-architecture.md)   
- [Como: gravar um visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Arquitetura do visualizador](../debugger/visualizer-architecture.md)   
+ [Como: Escrever um visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

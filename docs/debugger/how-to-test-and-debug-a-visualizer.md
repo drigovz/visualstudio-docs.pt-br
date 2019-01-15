@@ -1,8 +1,6 @@
 ---
-title: 'Como: testar e depurar um visualizador | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Testar e depurar um visualizador | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41a65fb92615bf8b8e38cc13260187a6abc946f
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: bea0f48432f67dc4109f5175c730a06aab4c0143
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927162"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Como testar e depurar um visualizador
+# <a name="how-to-test-and-debug-a-visualizer"></a>Como: Testar e depurar um visualizador
 Quando você tiver gravado um visualizador, precisará depurá-lo e testá-lo.  
   
- Uma maneira de testar um visualizador é instalando-o no Visual Studio e chamando-o de uma janela do depurador. (Consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).) Se você fizer isso, precisará usar uma segunda instância do Visual Studio para anexar e depurar o visualizador, que está em execução na primeira instância do depurador.  
+ Uma maneira de testar um visualizador é instalando-o no Visual Studio e chamando-o de uma janela do depurador. (Confira [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md).) Se você fizer isso, precisará usar uma segunda instância do Visual Studio para anexar e depurar o visualizador, que está em execução na primeira instância do depurador.  
   
- Uma maneira mais fácil de depurar um visualizador é executar o visualizador de um driver de teste. As APIs do visualizador facilitam a criação desse driver, que é chamado de *host de desenvolvimento visualizador*.  
+ Uma maneira mais fácil de depurar um visualizador é executar o visualizador de um driver de teste. As APIs do visualizador facilitam a criação desse driver, que é chamado de *host de desenvolvimento do visualizador*.  
   
 ### <a name="to-create-a-visualizer-development-host"></a>Para criar um host de desenvolvimento do visualizador  
   
@@ -53,9 +51,9 @@ Quando você tiver gravado um visualizador, precisará depurá-lo e testá-lo.
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     Para obter um exemplo mais completo, consulte [instruções passo a passo: escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+     Para obter um exemplo mais completo, consulte [passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
+ [Passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)

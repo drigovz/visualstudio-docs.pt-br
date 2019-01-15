@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947654"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos do WPF
 
@@ -37,7 +36,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
     -   Conjunto de dados ou modelo de dados de entidade.
 
-    -   WCF Data Service, serviço WCF ou serviço web. Para obter mais informações, consulte [como: conectar-se aos dados em um serviço](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   WCF Data Service, serviço WCF ou serviço web. Para obter mais informações, confira [Como: Conectar-se a dados em um serviço](../data-tools/how-to-connect-to-data-in-a-service.md).
 
     -   Objetos. Para obter mais informações, consulte [associar a objetos no Visual Studio](bind-objects-in-visual-studio.md).
 
@@ -94,4 +93,4 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Exibir dados relacionados em aplicativos WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Passo a passo: exibindo dados relacionados em um aplicativo WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Passo a passo: Exibindo dados relacionados em um aplicativo do WPF](../data-tools/display-related-data-in-wpf-applications.md)

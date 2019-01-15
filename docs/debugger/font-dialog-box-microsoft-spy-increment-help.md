@@ -1,8 +1,6 @@
 ---
 title: Caixa de diálogo fonte (Microsoft Spy + + ajuda) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Font dialog box
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c8af6b21b30caace4ea0e6e6be2eeaa25f10eb0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a9c900ac24821a68cdba537771e2e8b24c379960
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924404"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Caixa de diálogo Fonte (Ajuda do Microsoft Spy++)
-Use essa caixa de diálogo para configurar a fonte de caracteres usada em uma [exibições do Spy + +](../debugger/spy-increment-views.md) janela. Para exibir essa caixa de diálogo, expanda o **exibição** menu e escolha **fonte**.  
+Use essa caixa de diálogo para configurar a fonte de caracteres usada em uma [exibições do Spy + +](../debugger/spy-increment-views.md) janela. Para exibir essa caixa de diálogo, expanda o **modo de exibição** menu e escolha **fonte**.  
   
  As configurações a seguir estão disponíveis:  
   
@@ -33,8 +31,8 @@ Use essa caixa de diálogo para configurar a fonte de caracteres usada em uma [e
  **Size**  
  O tamanho da fonte para a janela de exibições do Spy + + que tem o foco.  
   
- **Salvar a fonte como padrão**  
- Salva as configurações atuais da fonte como suas preferências ao abrir exibições do Spy + +.  
+ **Salvar a Fonte como Padrão**  
+ Salva as configurações de fonte atuais como suas preferências ao abrir exibições do Spy + +.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Exibições do Spy++](../debugger/spy-increment-views.md)  
@@ -44,4 +42,4 @@ Use essa caixa de diálogo para configurar a fonte de caracteres usada em uma [e
  Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.
+ Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.

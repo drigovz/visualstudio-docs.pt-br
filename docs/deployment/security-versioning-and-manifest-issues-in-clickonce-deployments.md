@@ -1,8 +1,6 @@
 ---
 title: Segurança, controle de versão e problemas de manifesto em implantações do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927136"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Segurança, controle de versão e problemas de manifesto em implantações do ClickOnce
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de segurança, controle de versão e manifesto em implantações do ClickOnce
 
 Há uma variedade de problemas com a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] segurança, controle de versão do aplicativo e manifesto sintaxe e semântica que pode causar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação não seja bem-sucedida.
 

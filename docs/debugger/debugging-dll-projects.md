@@ -1,8 +1,6 @@
 ---
 title: Depurar projetos DLL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: baca738ef60ae727db852d00ed821e024f62c22f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871632"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depurar DLLs no Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -123,7 +121,7 @@ Para depurar uma DLL de um aplicativo de chamada, você pode:
   
 Antes de começar a depurar o aplicativo de chamada, defina um ponto de interrupção na DLL. Ver [usando pontos de interrupção](../debugger/using-breakpoints.md). Quando o ponto de interrupção DLL for atingido, você pode percorrer o código, observando a ação em cada linha. Para obter mais informações, consulte [navegar pelo código no depurador](../debugger/navigating-through-code-with-the-debugger.md).
   
-Durante a depuração, você pode usar o **módulos** para verificar as DLLs e *.exe* o aplicativo seja carregado de arquivos. Para abrir o **módulos** janela, durante a depuração, selecione **Debug** > **Windows** > **módulos**. Para obter mais informações, confira [Como: Usar a janela módulos](../debugger/how-to-use-the-modules-window.md). 
+Durante a depuração, você pode usar o **módulos** para verificar as DLLs e *.exe* o aplicativo seja carregado de arquivos. Para abrir o **módulos** janela, durante a depuração, selecione **Debug** > **Windows** > **módulos**. Para obter mais informações, confira [Como: Usar a janela Módulos](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Usar a janela imediata  
 

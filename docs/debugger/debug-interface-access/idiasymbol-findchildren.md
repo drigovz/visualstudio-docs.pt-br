@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Findchildren | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 107770d880a6ceae9cf58b3c56821c8077dfd272
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 43a1f761ad2d21d696e56e95191af92bb1567e7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910747"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Recupera os filhos do símbolo.  
@@ -27,7 +25,7 @@ Recupera os filhos do símbolo.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT findChildren (   
+HRESULT findChildren (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -58,5 +56,5 @@ HRESULT findChildren (
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)

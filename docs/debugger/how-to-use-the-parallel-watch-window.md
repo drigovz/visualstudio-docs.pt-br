@@ -1,8 +1,6 @@
 ---
 title: Definir uma inspeção nas variáveis em Threads paralelos | Microsoft Docs
-ms.custom: ''
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
@@ -19,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946978"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Definir uma inspeção nas variáveis em Threads paralelos no Visual Studio
-Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na **inspeção paralela** janela:  
+Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na janela **Inspeção Paralela**:  
   
 - A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
   
@@ -48,7 +46,7 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
   
 2.  Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.  
   
-3.  Na barra de menus, escolha **Debug**, **Windows**, **inspeção paralela**e, em seguida, escolha uma janela de observação. Você pode abrir até quatro janelas.  
+3.  Na barra de menus, escolha **Depurar**, **Janelas**, **Inspeção Paralela** e selecione uma janela de inspeção. Você pode abrir até quatro janelas.  
   
 ### <a name="to-add-a-watch-expression"></a>Para adicionar uma expressão de inspeção  
   
@@ -64,7 +62,7 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
   
 ### <a name="to-switch-to-another-thread"></a>Para alternar para outro thread  
   
--   Clique duas vezes a coluna de thread atual (segunda coluna). (Teclado: selecione a linha e pressione Enter.)  
+-   Clique duas vezes a coluna de thread atual (segunda coluna). (Teclado: Selecione a linha e pressione Enter.)  
   
 ### <a name="to-sort-a-column"></a>Para classificar uma coluna  
   
@@ -72,21 +70,21 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
   
 ### <a name="to-group-threads"></a>Para agrupar threads  
   
--   Abra o menu de atalho para a janela Inspeção paralela, escolha **Group By**e, em seguida, escolha o item de submenu apropriado.  
+-   Abra o menu de atalho da janela Inspeção Paralela, escolha **Agrupar por** e selecione o item de submenu apropriado.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Para congelar ou descongelar threads  
   
--   Abra o menu de atalho para a linha e escolha **congelar** ou **descongelar**.  
+-   Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Para exportar os dados na janela Inspeção Paralela  
   
--   Escolha o **abrir no Excel** botão e, em seguida, escolha **abrir no Excel** ou **exportar para CSV**.  
+-   Escolha o botão **Abrir no Excel** e, depois, **Abrir no Excel** ou **Exportar para CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Para filtrar por uma expressão booliana  
   
--   Insira uma expressão booleana entre o **filtrar por expressão booliana** caixa. O depurador avalia a expressão para cada contexto de thread. Apenas as linhas nas quais o valor é `true` é exibido.  
+-   Insira uma expressão booliana na caixa **Filtrar por Expressão Booliana**. O depurador avalia a expressão para cada contexto de thread. Apenas as linhas nas quais o valor é `true` é exibido.  
   
 ## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Como: usar a janela de Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Passo a passo: depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+ [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Como: Usar a janela Threads de GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Passo a passo: Depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

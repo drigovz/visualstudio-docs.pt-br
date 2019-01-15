@@ -1,8 +1,6 @@
 ---
 title: (HTML e JavaScript) de atalhos de teclado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949463"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Atalhos de teclado (HTML e JavaScript)
   
- Atalhos de teclado no Visual Studio para depurar aplicativos da UWP usando HTML e JavaScript.  
+ Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e JavaScript.  
   
 ## <a name="general-shortcuts"></a>Atalhos gerais  
- Estes atalhos funcionam em todas as ferramentas para aplicativos UWP usando HTML e JavaScript.  
+ Esses atalhos funcionam em todas as ferramentas para aplicativos UWP usando HTML e JavaScript.  
   
 |Ação|Atalho|  
 |------------|--------------|  
@@ -51,12 +49,12 @@ ms.locfileid: "31475490"
 |Ação|Atalho|  
 |------------|--------------|  
 |Selecionar elemento|Ctrl+B|  
-|Alternar entre exibir e ocultar caixas de realce da página da Web usando **selecionar elemento**|Ctrl+Shift+I|  
-|Confirmar alterações usando **editar como HTML**|Ctrl+Enter|  
-|Descartar alterações usando **editar como HTML**|ESC|  
+|Alternar entre exibir e ocultar caixas de realce da página da Web usando **Selecionar Elemento**|Ctrl+Shift+I|  
+|Confirmar alterações usando **Editar como HTML**|Ctrl+Enter|  
+|Descartar as alterações usando **Editar como HTML**|ESC|  
 |Aumentar o valor de CSS escolhido em 1|Seta para Cima|  
 |Diminuir o valor de CSS escolhido em 1|Seta para Baixo|  
   
 ## <a name="see-also"></a>Consulte também  
- [Início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [Início Rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

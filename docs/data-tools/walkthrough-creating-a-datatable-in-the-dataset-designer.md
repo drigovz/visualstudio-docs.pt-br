@@ -1,5 +1,5 @@
 ---
-title: 'Instruções passo a passo: criando um DataTable no Designer de Conjunto de Dados'
+title: 'Passo a passo: Criando um DataTable no Dataset Designer'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +11,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824828"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Passo a passo: Criar uma DataTable no Dataset Designer
 
 Este passo a passo explica como criar uma <xref:System.Data.DataTable> (sem um TableAdapter) usando o **Dataset Designer**. Para obter informações sobre como criar tabelas de dados que incluem TableAdapters, consulte [criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-## <a name="create-a-new-windows-forms-application"></a>Criar um novo aplicativo Windows Forms
+## <a name="create-a-new-windows-forms-application"></a>Criar um novo Aplicativo do Windows Forms
 
 1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
 
@@ -39,7 +38,7 @@ Este passo a passo explica como criar uma <xref:System.Data.DataTable> (sem um T
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Adicionar um novo conjunto de dados para o aplicativo
 
-1.  Sobre o **Project** menu, selecione **Adicionar Novo Item**.
+1.  No menu **Projeto**, selecione **Adicionar Novo Item**.
 
      A caixa de diálogo **Adicionar Novo Item** é exibida.
 
@@ -79,7 +78,7 @@ Todas as tabelas de dados devem ter uma chave primária. Uma chave primária ide
 
 Para definir a chave primária, clique com botão direito do **SongID** coluna e clique **definir chave primária**. Um ícone de chave aparece ao lado de **SongID** coluna.
 
-## <a name="save-your-project"></a>Salve seu projeto
+## <a name="save-your-project"></a>Salvar o projeto
 
 Para salvar a **DataTableWalkthrough** do projeto, no **arquivo** menu, selecione **Salvar tudo**.
 

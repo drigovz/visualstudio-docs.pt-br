@@ -1,8 +1,6 @@
 ---
-title: 'Como: abrir o modo de exibição de mensagens da janela Localizar | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Abrir modo de exibição de mensagens da janela Localizar | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f832e61bdb39bc87b59fdd64deab8cd86382a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: acd3df773748fe85832868b0286613f86ecbe8a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847082"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Como abrir a exibição de mensagens na janela Localizar
+# <a name="how-to-open-messages-view-from-find-window"></a>Como: Abrir a exibição de mensagens de Localizar janela
 Talvez seja conveniente usar o **localizar janela** caixa de diálogo para selecionar uma janela de destino e, em seguida, abrir um modo de exibição de mensagens dessa janela.  
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Para abrir uma janela de exibição de mensagens usando a caixa de diálogo Localizar janela  
@@ -39,7 +37,7 @@ Talvez seja conveniente usar o **localizar janela** caixa de diálogo para selec
 
 4. Sob **mostram**, selecione **mensagens**.  
 
-5. Pressione **Okey**.  
+5. Pressione **OK**.  
 
     Um espaço em branco [exibição de mensagens](../debugger/messages-view.md) janela é aberta e um **mensagens** menu é adicionado à barra de ferramentas Spy + +.  
 

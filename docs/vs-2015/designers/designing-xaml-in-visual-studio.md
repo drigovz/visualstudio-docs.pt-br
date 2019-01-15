@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
@@ -14,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ef644984b7c7fd364d389fb437b04f02d96b566
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a1c58ca9d567db88fb8267d56e071c11ba8aef27
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870223"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Criando o XAML no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,25 +33,25 @@ O Visual Studio e o Blend for Visual Studio fornecem ferramentas visuais para cr
 ### <a name="shared-capabilities"></a>Funcionalidades compartilhadas
  Para tarefas mais básicas, a IDE do Visual Studio e do Blend for Visual Studio compartilham o mesmo conjunto de janelas e funcionalidades, com algumas diferenças sutis. Alguns destaques incluem:
 
--   **Uma interface de usuário consistente:** Você pode criar seus aplicativos no contexto conhecido da interface de usuário do Visual Studio, o que torna a alternância entre IDEs uma experiência mais agradável e produtiva. O Blend for Visual Studio usa o tema Escuro do Visual Studio, que ajuda você a se concentrar no conteúdo que está criando, melhorando o contraste entre o conteúdo e a interface do usuário. Consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+-   **Uma interface do usuário consistente:** Crie seus aplicativos no contexto conhecido da interface do usuário do Visual Studio, que torna a alternância entre IDEs uma experiência mais agradável e produtiva. O Blend for Visual Studio usa o tema Escuro do Visual Studio, que ajuda você a se concentrar no conteúdo que está criando, melhorando o contraste entre o conteúdo e a interface do usuário. Consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
      ![A IDE do Blend for Visual Studio](../designers/media/blendide.png "BlendIDE")
 
--   IntelliSense XAML Ambos os IDEs dão suporte a todos os recursos comuns que você esperaria do IntelliSense, incluindo preenchimento de declaração, suporte para operações comuns do editor como comentário e formatação de código e navegação para recursos, associação e código.
+-   **XAML IntelliSense:** Os dois IDEs dão suporte a todas as funcionalidades comuns que você espera do IntelliSense, incluindo preenchimento de declaração, suporte para operações comuns do editor como comentário e formatação de código, bem como navegação para recursos, associação e código.
 
--   Capacidades básicas de depuração Agora você pode depurar no Blend, incluindo pontos de interrupção em seu código para depurar seu aplicativo em execução. Para manter uma experiência de depuração consistente com o Visual Studio, o Blend for Visual Studio inclui a maioria das janelas de depuração e barras de ferramentas do Visual Studio. Funcionalidades de depuração avançadas, como diagnóstico e análise de código, somente estão disponíveis no Visual Studio. Consulte [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md).
+-   **Funcionalidades básicas de depuração:** Agora é possível depurar no Blend, incluindo a definição de pontos de interrupção no código para depurar o aplicativo em execução. Para manter uma experiência de depuração consistente com o Visual Studio, o Blend for Visual Studio inclui a maioria das janelas de depuração e barras de ferramentas do Visual Studio. Funcionalidades de depuração avançadas, como diagnóstico e análise de código, somente estão disponíveis no Visual Studio. Consulte [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md).
 
--   Experiência de recarregar arquivo Você pode editar os arquivos XAML no Blend for Visual Studio ou Visual Studio e ter os arquivos editados sejam recarregados automaticamente conforme você muda entre eles. Para minimizar as interrupções de fluxo de trabalho, agora é possível definir suas preferências de recarregamento de arquivos na caixa de diálogo de recarregamento de arquivos.
+-   **Experiência de recarregamento de arquivos:** Edite os arquivos XAML no Blend para Visual Studio ou no Visual Studio e faça com que os arquivos editados sejam recarregados automaticamente conforme você alterna entre eles. Para minimizar as interrupções de fluxo de trabalho, agora é possível definir suas preferências de recarregamento de arquivos na caixa de diálogo de recarregamento de arquivos.
 
      ![Experiência de recarregamento de arquivos](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **Layouts sincronizados e configurações:** Layouts personalizados permitem salvar e aplicar as personalizações de layout de janela de ferramenta. O Visual Studio sincronizará essas personalizações e preferências para o Visual Studio e o Blend for Visual Studio entre os computadores, quando você se conectar com a mesma conta da Microsoft. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+-   **Configurações e layouts sincronizados:** Os layouts personalizados permitem salvar e aplicar as personalizações de layout de janela de ferramentas. O Visual Studio sincronizará essas personalizações e preferências para o Visual Studio e o Blend for Visual Studio entre os computadores, quando você se conectar com a mesma conta da Microsoft. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
--   **Um Gerenciador de soluções comuns:** O Gerenciador de soluções fornece uma exibição organizada de seus projetos e seus arquivos, bem como acesso imediato aos comandos associados a eles. Com o Gerenciador de Soluções, fica mais fácil trabalhar com projetos corporativos grandes. Consulte [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md).
+-   **Um Gerenciador de Soluções comum:** O Gerenciador de Soluções fornece um modo de exibição organizado dos projetos e de seus arquivos, bem como o acesso imediato aos comandos associados a eles. Com o Gerenciador de Soluções, fica mais fácil trabalhar com projetos corporativos grandes. Consulte [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md).
 
--   **Team Explorer:** com o Team Explorer, você pode gerenciar seus projetos com repositórios GIT ou TFS para facilitar a colaboração em equipe. Consulte [Trabalhar no Team Explorer](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+-   **Team Explorer:** Com o Team Explorer, você pode gerenciar seus projetos com repositórios GIT ou TFS para facilitar a colaboração em equipe. Consulte [Trabalhar no Team Explorer](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 
--   NuGet Você pode gerenciar pacotes NuGet no Visual Studio e no Blend para Visual Studio. O NuGet é um gerenciador de pacotes do .NET Framework que simplifica a instalação e remoção de pacotes de uma solução.
+-   **NuGet:** Gerencie pacotes NuGet no Visual Studio e no Blend para Visual Studio. O NuGet é um gerenciador de pacotes do .NET Framework que simplifica a instalação e remoção de pacotes de uma solução.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Funcionalidades avançadas do Blend for Visual Studio
  Para aumentar sua produtividade, considere o uso do Blend for Visual Studio para as tarefas a seguir. Essas são as áreas em que o Blend for Visual Studio oferece mais velocidade e funcionalidade do que o designer do Visual Studio ou o código isolado.

@@ -1,8 +1,6 @@
 ---
 title: Variante de dimensões de textura de metade / um quarto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94820b2930bbe689c37b90443ac007b137f162d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ecd986f56185b68c8d88788b569dcd2ee0398d6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956212"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de metade/um quarto nas dimensões de textura
 Reduz as dimensões de textura nas texturas que não são destinos de renderização.  
@@ -46,5 +44,5 @@ Reduz as dimensões de textura nas texturas que não são destinos de renderiza�
  Essa variante redimensiona as texturas no tempo de execução antes da chamada para `CreateTexture2D`. Não recomendamos essa abordagem para códigos de produção, pois as texturas em tamanho integral consomem mais espaço em disco e a etapa adicional pode aumentar o tempo de carregamento no aplicativo, especialmente no caso de texturas compactadas, que requerem recursos computacionais significativos para codificação. Ao invés disso, recomendamos que você redimensione as texturas offline usando um editor de imagens ou um processador de imagem que faça parte do seu pipeline de compilação. Essas abordagens reduzem os requisitos de espaço em disco e eliminam a sobrecarga do tempo de execução no aplicativo, além de oferecer mais tempo de processamento para que seja possível manter a melhor qualidade de imagem ao reduzir ou compactar as texturas.  
   
 ## <a name="see-also"></a>Consulte também  
- [Variante de geração de MIP-map](mip-map-generation-variant.md)   
+ [Variante de geração de Mip-map](mip-map-generation-variant.md)   
  [Variante de compressão de textura BC](bc-texture-compression-variant.md)

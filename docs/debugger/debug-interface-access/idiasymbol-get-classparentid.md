@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_classparentid | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b335748c40d78cc2539e2c0700c1e7753935970
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8c2f1c80da4872a6066fb257ef4cfe3fb6400864
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862933"
 ---
 # <a name="idiasymbolgetclassparentid"></a>IDiaSymbol::get_classParentId
 Recupera o identificador do pai de classe do símbolo.  
@@ -27,7 +25,7 @@ Recupera o identificador do pai de classe do símbolo.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT get_classParentId (   
+HRESULT get_classParentId (   
    DWORD* pRetVal  
 );  
 ```  

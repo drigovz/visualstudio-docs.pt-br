@@ -1,8 +1,6 @@
 ---
 title: Depurar vários processos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968573"
 ---
 # <a name="debug-multiple-processes"></a>Depurar vários processos
 
@@ -50,7 +48,7 @@ Para iniciar a depuração de um projeto a partir **Gerenciador de soluções** 
    
 1. Selecione **seleção atual**, **único projeto de inicialização** e um arquivo de projeto, ou **vários projetos de inicialização**. 
 
-   Se você selecionar **vários projetos de inicialização**, você pode alterar a ordem de inicialização e a ação a ser tomada para cada projeto: **inicie**, **iniciar sem depuração**, ou **Nenhum**.  
+   Se você selecionar **vários projetos de inicialização**, você pode alterar a ordem de inicialização e a ação a ser tomada para cada projeto: **Inicie**, **iniciar sem depuração**, ou **None**.  
    
 1. Selecione **Apply**, ou **Okey** para aplicar e fechar a caixa de diálogo. 
 
@@ -122,7 +120,7 @@ A tabela a seguir descreve os comportamentos de depuração de comandos quando o
 ###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Localize a fonte e os arquivos de símbolo (.pdb)  
 Para navegar no código de origem de um processo, o depurador precisa acessar seus arquivos de origem e arquivos de símbolo. Para obter mais informações, confira [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-Se você não pode acessar os arquivos para um processo, você pode navegar usando o **desmontagem** janela. Para obter mais informações, consulte [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).  
+Se você não pode acessar os arquivos para um processo, você pode navegar usando o **desmontagem** janela. Para obter mais informações, confira [Como: Usar a janela Desmontagem](../debugger/how-to-use-the-disassembly-window.md).  
 
 ###  <a name="BKMK_Switch_between_processes"></a> Alternar entre processos  
 

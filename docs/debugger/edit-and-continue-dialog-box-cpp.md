@@ -1,8 +1,6 @@
 ---
 title: Editar e continuar a caixa de diálogo (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.failed.commit
@@ -21,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c6d598605f229f306571e792c9b4dcfadfbda92
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 1b7f2929dbb1946b9e4852006260e7ac8c45fa45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923712"
 ---
-# <a name="edit-and-continue-dialog-box-c"></a>Editar e continuar a caixa de diálogo (C++)
-Editar e Continuar não poderiam aplicar as alterações feitas ao seu código nativo. Essa pode ser uma condição temporária. Às vezes, Editar e Continuar não pode aplicar alterações de código nativo imediatamente, mas pode aplicá-las posteriormente durante a sessão de depuração (por exemplo, após a conclusão da chamada atual ao procedimento que agora é executado). Para obter mais informações, consulte [editar e continuar](../debugger/edit-and-continue.md).  
+# <a name="edit-and-continue-dialog-box-c"></a>Caixa de diálogo Editar e Continuar (C++)
+Editar e Continuar não poderiam aplicar as alterações feitas ao seu código nativo. Essa pode ser uma condição temporária. Às vezes, Editar e Continuar não pode aplicar alterações de código nativo imediatamente, mas pode aplicá-las posteriormente durante a sessão de depuração (por exemplo, após a conclusão da chamada atual ao procedimento que agora é executado). Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).  
   
  Você pode editar o código para corrigir o erro durante a depuração ainda, pare a depuração e corrigir o código, ou ignorar o erro e continuar a depuração. Se você continuar sem fazer a correção, suas alterações de código não serão aplicadas imediatamente.  
   

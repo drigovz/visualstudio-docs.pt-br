@@ -1,8 +1,6 @@
 ---
 title: Depurar aplicativos UWP em computadores remotos | Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0350358c2225851619a84216c929b8d7435dc4e3
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 8fec6295fce7f100b0dc8c602a41f95e1af7d64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892245"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depurar aplicativos UWP em máquinas remotas do Visual Studio
   
@@ -78,7 +76,7 @@ No **conexões remotas** caixa de diálogo, você pode procurar por um nome de c
 >[!TIP]
 >Se você não pode se conectar a um dispositivo remoto por nome, tente usar seu endereço IP. Para determinar o endereço IP, no dispositivo remoto, digite **ipconfig** em uma janela de comando. O endereço IP é exibido como **endereço IPv4**.  
     
-## <a name="BKMK_download"></a> Baixe e instale as ferramentas remotas para Visual Studio
+## <a name="BKMK_download"></a> Baixar e instalar as Ferramentas Remotas para Visual Studio
 
 Para o Visual Studio depurar aplicativos em um computador remoto, o computador remoto deve estar executando as ferramentas remotas para Visual Studio. 
 
@@ -109,6 +107,6 @@ Depuração remota funciona da mesma forma depuração local.
 1. Se necessário, selecione **Debug** > **parar depuração** ou pressione **Shift**+**F5** para parar a depuração e Feche o aplicativo remoto.
   
 ## <a name="see-also"></a>Consulte também  
- [Opções de implantação remota avançadas](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
- [Testando aplicativos UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Opções avançadas de implantação remota](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Testando aplicativos UWP com o Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)   
  [Depurar aplicativos UWP no Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

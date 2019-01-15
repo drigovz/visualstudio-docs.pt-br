@@ -1,8 +1,6 @@
 ---
 title: Exemplo de Dia2dump | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 93c103387ff2acd7b041fc103bc519e9ac166593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859640"
 ---
 # <a name="dia2dump-sample"></a>Exemplo de Dia2dump
 
@@ -50,7 +48,7 @@ Por padrão, o diretório de instalação é um diretório protegido. Isso signi
 
 1. No **diretórios de inclusão adicionais** propriedade, escolha o controle de lista suspensa e escolha **editar**.
 
-1. No **diretórios de inclusão adicionais** Inserir caixa de diálogo, no campo de edição, o `$(VSInstallDir)DIA SDK\include` directory. Adicione o diretório para garantir que o compilador pode localizar o arquivo de dia2.h. Escolher **Okey** para salvar suas alterações.
+1. No **diretórios de inclusão adicionais** Inserir caixa de diálogo, no campo de edição, o `$(VSInstallDir)DIA SDK\include` directory. Adicione o diretório para garantir que o compilador pode localizar o arquivo de dia2.h. Escolha **OK** para salvar suas alterações.
 
 1. Escolher **Okey** para salvar suas alterações às propriedades do projeto.
 

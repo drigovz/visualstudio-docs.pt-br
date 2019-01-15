@@ -25,4 +25,4 @@ Use o **estilos** guia para mostrar os estilos aplicados a janela selecionada. P
 |Entrada|Descrição|  
 |-----------|-----------------|  
 |**Estilos de janela**|Uma combinação da janela de códigos de estilo e estilos de controle, se aplicável.|  
-|Estilos Estendidos:|Uma combinação de códigos de estilo de janela estendidos.|
+|**Estilos estendidos**|Uma combinação de códigos de estilo de janela estendidos.|

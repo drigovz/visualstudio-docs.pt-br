@@ -1,8 +1,6 @@
 ---
-title: 'Como: usar a ferramenta localizador | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar a ferramenta localizador | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965256"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Como usar a ferramenta Localizador
+# <a name="how-to-use-the-finder-tool"></a>Como: Usar a ferramenta Localizador
 Você pode usar a ferramenta de localização na **localizar janela** caixa de diálogo para exibir propriedades da janela ou mensagens. A ferramenta localizador também poderá localizar janelas filho desabilitadas e distinguir qual janela para realçar se desabilitada a janelas filho se sobrepuserem.  
   
  ![Spy&#43; &#43; caixa de diálogo da janela localizar](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find")  
@@ -48,11 +46,11 @@ Ferramenta descobridora na caixa de diálogo Localizar janela
   
 4. Sob **mostram**, selecione **Properties** ou **mensagens**.  
   
-5. Pressione **Okey**.  
+5. Pressione **OK**.  
   
     Se você selecionou **propriedades**, o [caixa de diálogo de propriedades de janela](../debugger/window-properties-dialog-box.md) é aberta. Se você selecionou **mensagens**, um [exibição de mensagens](../debugger/messages-view.md) janela é aberta.  
   
 ## <a name="see-also"></a>Consulte também  
- [Exibições do Spy + +](../debugger/spy-increment-views.md)   
- [Usando Spy + +](../debugger/using-spy-increment.md)   
+ [Exibições do Spy++](../debugger/spy-increment-views.md)   
+ [Usando o Spy++](../debugger/using-spy-increment.md)   
  [Referência a Spy++](../debugger/spy-increment-reference.md)

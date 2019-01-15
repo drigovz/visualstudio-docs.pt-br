@@ -1,8 +1,6 @@
 ---
 title: 'Como: Page Up ou para baixo na memória | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902221"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Como subir ou descer a página na memória
+# <a name="how-to-page-up-or-down-in-memory"></a>Como: Mover para cima ou para baixo na memória
 
-Quando você exibe o conteúdo da memória em um **memória** janela ou o **desmontagem** janela, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.  
+Quando exibe conteúdos de memória na janela de **Memória** ou na janela de **Desmontagem**, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Para mover para cima ou para baixo na memória  
   
@@ -49,6 +47,6 @@ Quando você exibe o conteúdo da memória em um **memória** janela ou o **desm
 -   Clique na seta na parte superior ou inferior da barra de rolagem vertical.  
   
 ## <a name="see-also"></a>Consulte também  
- [Windows de memória](../debugger/memory-windows.md)   
- [Como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md)   
+ [Janelas de Memória](../debugger/memory-windows.md)   
+ [Como: Usar a janela Desmontagem](../debugger/how-to-use-the-disassembly-window.md)   
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

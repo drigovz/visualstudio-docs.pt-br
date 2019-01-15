@@ -1,8 +1,6 @@
 ---
 title: Arquitetura do Visualizador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,29 +13,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a7a4ac05283b010ca7a549c9bc6829061e420e30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822939"
 ---
 # <a name="visualizer-architecture"></a>Arquitetura do visualizador
 A arquitetura de um visualizador de depurador tem duas partes:  
   
-- O *do lado do depurador* é executado dentro do depurador do Visual Studio. O código do lado depurador cria e exibe a interface do usuário para o visualizador.  
+- O *lado do depurador* é executado no depurador do Visual Studio. O código do lado depurador cria e exibe a interface do usuário para o visualizador.  
   
-- O *lado a ser depurado* é executado dentro do processo de depuração do Visual Studio (o *ser depurado*).  
+- O *lado a ser depurado* é executado dentro do processo que o Visual Studio está depurando (o *lado a ser depurado*).  
   
-  Um visualizador é um componente do depurador que permite que o depurador exiba (*visualizar*) o conteúdo de um objeto de dados em um formato significativo e legível. Alguns visualizadores também dão suporte à edição do objeto de dados. Ao escrever visualizadores personalizados, você poderá estender o depurador para lidar com seus próprios tipos de dados personalizados.  
+  Um visualizador é um componente de depurador que permite que o depurador exiba (*visualize*) o conteúdo de um objeto de dados em um formato significativo e legível. Alguns visualizadores também dão suporte à edição do objeto de dados. Ao escrever visualizadores personalizados, você poderá estender o depurador para lidar com seus próprios tipos de dados personalizados.  
   
-  O objeto de dados a ser visualizado reside no processo que você está depurando (o *lado a ser depurado* processo). A interface do usuário que exibirá os dados é criada no processo a ser depurado do Visual Studio:  
+  O objeto de dados a ser visualizado reside no processo que você estiver depurando (o processo *a ser depurado*). A interface do usuário que exibirá os dados é criada no processo a ser depurado do Visual Studio:  
   
 |Processo do depurador|Processo a ser depurado|  
 |----------------------|----------------------|  
 |Interface de usuário do depurador (DataTips, janela de inspeção, QuickWatch)|Objeto de dados a ser visualizado|  
   
- Para visualizar o objeto de dados dentro da interface do depurador, você precisará do código para comunicar entre os dois processos. Consequentemente, a arquitetura do visualizador consiste em duas partes: *do lado do depurador* código e *lado a ser depurado* código.  
+ Para visualizar o objeto de dados dentro da interface do depurador, você precisará do código para comunicar entre os dois processos. Consequentemente, a arquitetura do visualizador consiste em duas partes: código do *lado do depurador* e código do *lado a ser depurado*.  
   
  O código do lado do depurador cria sua própria interface do usuário, que pode ser invocada a partir da interface do depurador, como um DataTip, janela de inspeção ou QuickWatch. A interface do visualizador é criada usando a classe <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> e a interface <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>. Como todas as APIs do visualizador, DialogDebuggerVisualizer e IDialogVisualizerService estão localizadas no namespace <xref:Microsoft.VisualStudio.DebuggerVisualizers>.  
   
@@ -88,8 +86,8 @@ A arquitetura de um visualizador de depurador tem duas partes:
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> —ou—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
- [Passo a passo: Escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Passo a passo: Escrevendo um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
- [Passo a passo: Escrevendo um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [Como: Escrever um visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Passo a passo: Como escrever um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [Passo a passo: Como escrever um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Considerações de segurança do visualizador](../debugger/visualizer-security-considerations.md)

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620993582501e157bc8d53e5c295b4cfe5cb50d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0c084bf3bb9b28a6af0ddc1aa53c0707d8876966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827972"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidos nesta função stub num endereço virtual relativo especificado.  
+Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidas nessa função stub em um endereço virtual relativo de especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,16 +34,16 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
  [in] O valor de marca de ponteiro para o qual os registros de símbolo pointee são encontrados.  
   
  `rva`  
- [in] Rva que é usado para filtrar os símbolos que correspondem à variável pointee com o valor da marca especificado.  
+ [in] O rva é usado para filtrar os símbolos que correspondem à variável pointee com o valor de marca especificados.  
   
  `ppResult`  
  [out] Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Chame este método somente em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador.  
+ Chame esse método somente em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

@@ -1,8 +1,6 @@
 ---
-title: 'Erro: Falha em uma verificação de segurança porque o serviço de administração do IIS não respondeu | Microsoft Docs'
-ms.custom: ''
+title: 'Erro: Uma verificação de segurança falhou porque o serviço de administração do IIS não respondeu | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.iis_not_responding
@@ -18,27 +16,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f307e84f5267036e480ab1ec8118c32ee632bff
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: d590e98fc781093c6461bea78665ec0000875b7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902260"
 ---
-# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Erro: falha na verificação de segurança porque o Serviço de Administração do IIS não respondeu
-Esse erro ocorre quando o Serviço de administração do IIS não responde. Isso geralmente indica que há um problema com a instalação do IIS. Primeiro, verifique se o serviço está em execução usando o **Services** ferramenta de **ferramentas administrativas**.  
+# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Erro: Falha em uma verificação de segurança porque o serviço de administração do IIS não respondeu
+Esse erro ocorre quando o Serviço de administração do IIS não responde. Isso geralmente indica que há um problema com a instalação do IIS. Primeiro, verifique se o serviço está sendo executado usando a ferramenta **Serviços** de **Ferramentas Administrativas**.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Reinstale o IIS, usando o **adicionar ou remover programas** painel de controle.  
+-   Reinstale o IIS, usando o Painel de Controle **Adicionar ou Remover Programas**.  
   
--   -ou-  
+-   - ou -  
   
 -   Remova o IIS do computador, usando o painel de controle Adicionar ou Remover Programas. Se você tiver removido o IIS e ainda tiver problemas, verifique no Registro se essa chave já não existe:  
   
     `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`  
   
-     -ou-  
+     - ou -  
   
 -   Desabilite o Serviço de administração do IIS, usando o painel de controle Ferramentas Administrativas. Isso desabilitará o IIS no computador.  
   

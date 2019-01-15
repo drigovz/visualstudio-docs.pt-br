@@ -1,8 +1,6 @@
 ---
 title: Localize o processo do ASP.NET em execução | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 4a65269f9fd99b31ee797be0d5e27559daa1f25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836160"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Localizar o nome do processo do ASP.NET
 
@@ -44,9 +42,9 @@ Para depurar um execução [!INCLUDE[vstecasp](../code-quality/includes/vstecasp
 >[!NOTE]
 >Visual Studio 2012 e anterior [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] código pode ser no sistema de arquivos e executado no servidor de teste *WebDev.WebServer.exe* ou *WebDev.WebServer40.exe*. Nesse caso, para depuração local, anexar a *WebDev.WebServer.exe* ou *WebDev.WebServer40.exe* em vez do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo. 
 
-**Consulte também:**
+**Confira também:**
 
  [Anexar a um processo em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [Pré-requisitos para a depuração remota de aplicativos da web](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
- [Requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md)   
+ [Pré-requisitos para a depuração remota de aplicativos da web](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)   
+ [Requisitos de sistema](../debugger/aspnet-debugging-system-requirements.md)   
  [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

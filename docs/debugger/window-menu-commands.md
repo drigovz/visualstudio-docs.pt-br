@@ -1,8 +1,6 @@
 ---
 title: Comandos do Menu janela | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window menu commands
@@ -12,33 +10,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1379bb236b1b29cd5747e67e73abcb1bc069acb0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e90d6dc7074ad6d70be783326e7617d0fd7e337
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895643"
 ---
 # <a name="window-menu-commands"></a>Comandos do menu Janela
 O **janela** menu fornece comandos para gerenciar o windows Spy + +.  
   
- **Em cascata**  
- Reorganiza todos os windows em um padrão em cascata.  
+ **Cascata**  
+ Reorganiza todas as janelas em um padrão em cascata.  
   
- **Lado a lado horizontalmente**  
- Reorganize todos os windows em um bloco horizontal padrão.  
+ **Organizar Lado a Lado Horizontalmente**  
+ Reorganize todas as janelas em um padrão lado a lado horizontal.  
   
- **Lado a lado verticalmente**  
- Reorganiza todos os windows em um padrão de bloco vertical.  
+ **Organizar Lado a Lado Verticalmente**  
+ Reorganiza todas as janelas em um padrão lado a lado vertical.  
   
- **Organizar ícones**  
- Reorganiza os ícones de exibição, se o windows tiver sido minimizado.  
+ **Organizar Ícones**  
+ Reorganiza os ícones de modo de exibição, se o windows tiveram sido minimizados.  
   
  **Fechar / fechar tudo**  
- Fecha uma ou todas as janelas no Spy + +.  
+ Fecha uma ou todas as janelas em Spy + +.  
   
  **Atualizar**  
- Atualiza a exibição selecionada.  
+ Atualiza a exibição selecionada no momento.  
   
  **Janela**  
  Permite a seleção de uma janela específica.

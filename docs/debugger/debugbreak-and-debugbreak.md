@@ -1,8 +1,6 @@
 ---
 title: DebugBreak e debugbreak | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - DebugBreak
@@ -21,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5eda428410733bf72174676f5a2303a7f625aa7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: db3af2a2bef69a9329a20523ad5bed4444631410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933843"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak e __debugbreak
-Você pode chamar a função DebugBreak Win32 ou [debugbreak](/cpp/intrinsics/debugbreak) intrínseco em qualquer ponto no seu código. `DebugBreak` e `__debugbreak` têm o mesmo efeito de definir um ponto de interrupção nesse local.  
+Você pode chamar a função DebugBreak do Win32 ou a [__debugbreak](/cpp/intrinsics/debugbreak) intrínseca em qualquer ponto em seu código. `DebugBreak` e `__debugbreak` têm o mesmo efeito de definir um ponto de interrupção nesse local.  
   
  Como `DebugBreak` é uma chamada para uma função do sistema, os símbolos de depuração do sistema devem ser instalados para garantir que as informações corretas da pilha de chamadas sejam exibidas depois de interromper. Caso contrário, as informações da pilha de chamadas exibidas pelo depurador podem estar desativadas por um quadro. Se você usar `__debugbreak`, os símbolos não serão necessários.  
   
@@ -37,4 +35,4 @@ Você pode chamar a função DebugBreak Win32 ou [debugbreak](/cpp/intrinsics/de
  [Intrínsecos do compilador](/cpp/intrinsics/compiler-intrinsics)   
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando código nativo](../debugger/debugging-native-code.md)   
- [Especifique o símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

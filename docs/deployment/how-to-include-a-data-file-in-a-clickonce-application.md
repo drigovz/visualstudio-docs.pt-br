@@ -1,8 +1,6 @@
 ---
-title: 'Como: incluir um arquivo de dados em um aplicativo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Incluir um arquivo de dados em um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990208"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Como: incluir um arquivo de dados em um aplicativo ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Como: Incluir um arquivo de dados em um aplicativo ClickOnce
 Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalação de aplicativo é atribuído a um diretório de dados no disco local do computador de destino, onde o aplicativo pode gerenciar seus próprios dados. Arquivos de dados podem incluir arquivos de qualquer tipo: arquivos de texto, arquivos XML ou até mesmo banco de dados do Microsoft Access (*. mdb*) arquivos. Os procedimentos a seguir mostram como adicionar um arquivo de dados de qualquer tipo em seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Para incluir um arquivo de dados usando Mage.exe  
@@ -85,4 +83,4 @@ Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalaç
      Você deve reassinar o manifesto de implantação porque seu hash do manifesto do aplicativo foi alterado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Acessar dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Acesso a dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

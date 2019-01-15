@@ -1,5 +1,5 @@
 ---
-title: Mensagens de Object Relational Designer
+title: Mensagens do O/R Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 243eb5a9d10ec824cc2c17ff1692e58fa3738ca8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859861"
 ---
 # <a name="or-designer-messages"></a>Mensagens de object relational Designer de Objetos
 
@@ -23,13 +22,13 @@ Este tópico lista as mensagens que você pode encontrar quando você trabalha c
 
 ## <a name="in-this-section"></a>Nesta seção
 
- [Não é possível criar uma associação \<nome da associação >-propriedade listada duas vezes](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Não é possível criar uma associação \<nome de associação> – propriedade listada duas vezes](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [Não é possível criar uma associação \<nome da associação >-tipos de propriedade não coincidem](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [Não é possível criar uma associação \<nome de associação> – os tipos de propriedade não correspondem](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [A alteração do tipo de retorno de um método DataContext não pode ser desfeita](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [Não foi possível recuperar informações de esquema para o objeto de banco de dados \<nome do objeto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [Não foi possível recuperar informações de esquema para o objeto de banco de dados \<nome do objeto>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Um ou mais objetos de banco de dados selecionados retornam um esquema que não corresponde ao esquema da classe de destino](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -41,9 +40,9 @@ Este tópico lista as mensagens que você pode encontrar quando você trabalha c
 
  [Os objetos você está adicionando ao designer usam uma conexão de dados diferente daquela que o designer está usando atualmente](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [A propriedade \<nome da propriedade > não pode ser excluído](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [A propriedade \<nome da propriedade> não pode ser excluída](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [A propriedade \<nome da propriedade > não pode ser excluída porque participa da associação \<nome da associação >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [A propriedade \<nome da propriedade> não pode ser excluída porque está participando na associação \<nome da associação>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 
@@ -61,5 +60,5 @@ Este tópico lista as mensagens que você pode encontrar quando você trabalha c
 
 ## <a name="see-also"></a>Consulte também
 
-- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

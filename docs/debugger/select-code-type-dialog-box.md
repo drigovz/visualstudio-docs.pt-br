@@ -1,8 +1,6 @@
 ---
 title: Selecione a caixa de diálogo de tipo de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.selectengines
@@ -23,20 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0f291df376de5de00f1cc6a8a2f94767eccec49
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3ef9edc87963e6c2e3a4ba6ab8eebda429a41a60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856154"
 ---
 # <a name="select-code-type-dialog-box"></a>Caixa de diálogo Selecionar Tipo de Código
-Para abrir essa caixa de diálogo, abra o **anexar ao processo** caixa de diálogo e, em seguida, clique o **selecione** botão.  
+Para abrir essa caixa de diálogo, abra a caixa de diálogo **Anexar ao Processo** e clique no botão **Selecionar**.  
   
  **Determinar automaticamente o tipo de código a ser depurado**  
  O depurador apropriado será selecionado com base no tipo de código que está executando.  
   
- **Depurar esses tipos de código:**  
+ **Depurar estes tipos de código:**  
  Na lista fornecida, escolha o tipo de código que você deseja depurar.  
   
 ## <a name="see-also"></a>Consulte também  

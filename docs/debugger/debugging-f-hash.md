@@ -1,8 +1,6 @@
 ---
-title: 'Depurando F # | Microsoft Docs'
-ms.custom: ''
+title: Depuração F# | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bb2a9379dd6cd43bb0398ccda2b031b96d56e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0f526eb39a62de33910bfa5e3e1e72220be3ae3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903975"
 ---
 # <a name="debugging-f"></a>Depurando F#
 A depuração de F# é semelhante à depuração de qualquer linguagem gerenciada, com algumas exceções:  
   
--   O **Autos** janela não exibe variáveis de F #.  
+-   A janela **Autos** não exibe as variáveis de F#.  
   
 -   Não há suporte para Editar e Continuar em F#. As edições ao código F# durante uma sessão de depuração são possíveis, mas devem ser evitadas. Como as alterações de código não são aplicadas durante a sessão de depuração, a edição do código F# durante a depuração causará uma incompatibilidade entre o código-fonte e o código que está sendo depurado.  
   

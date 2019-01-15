@@ -1,8 +1,6 @@
 ---
 title: 'Idiadatasource:: Opensession | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bea16f7ff0f723979ded9962a8ff9e620227f8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843106"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Abre uma sessão para consultar os símbolos.  
@@ -27,7 +25,7 @@ Abre uma sessão para consultar os símbolos.
 ## <a name="syntax"></a>Sintaxe  
   
 ```C++  
-HRESULT openSession (   
+HRESULT openSession (   
    IDiaSession** ppSession  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT openSession (
 |Valor|Descrição|  
 |-----------|-----------------|  
 |E_UNEXPECTED|O [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) objeto anteriormente não foi inicializado com uma origem de símbolos.|  
-|E_INVALIDARG|Inválido `ppSession` parâmetro.|  
+|E_INVALIDARG|Parâmetro `ppSession` inválido.|  
 |E_OUTOFMEMORY|Memória insuficiente para abrir a sessão.|  
   
 ## <a name="remarks"></a>Comentários  

@@ -1,5 +1,5 @@
 ---
-title: 'Como: ative em pluralization e off (Object Relational Designer)'
+title: 'Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -7,17 +7,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a2d2e44efc284c38cfc450833839776effb9936
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 99dc1c6fefae880d10c1dedd080f9abbceba4d1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961758"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Como: ative em pluralization e off (O/R Designer)
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)
 Por padrão, quando você arrasta objetos de banco de dados que têm nomes que terminam em s ou em ies de **Gerenciador de servidores** ou **Database Explorer** até o [LINQ to SQL das ferramentas no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), o os nomes das classes de entidade gerados são alterados de plural a singular. Isso é feito a representa mais precisamente o fato que a classe instanciado de entidade mapeia para um único registro de dados. Por exemplo, adicionando um `Customers` de tabela para o **Relational Designer** resulta em uma classe de entidade chamada `Customer` porque a classe conterá dados para apenas um único cliente.
 
 > [!NOTE]
@@ -29,12 +28,12 @@ Por padrão, quando você arrasta objetos de banco de dados que têm nomes que t
 
 1.  No menu **Ferramentas**, clique em **Opções**.
 
-2.  No **opções** diálogo caixa, expanda **ferramentas de banco de dados**.
+2.  Na caixa de diálogo **Opções**, expanda **Ferramentas de Banco de Dados**.
 
     > [!NOTE]
-    >  Selecione **Mostrar todas as configurações** se o **ferramentas de banco de dados** nó não está visível.
+    >  Selecione **Mostrar todas as configurações** se o nó de **Ferramentas de Banco de Dados** não estiver visível.
 
-3.  Clique em **Relational Designer**.
+3.  Clique em **Designer Relacional de Objetos**.
 
 4.  Definir **Pluralização de nomes** para **Enabled** = **False** para definir o **Relational Designer** para que ele não altera os nomes de classe .
 
@@ -42,6 +41,6 @@ Por padrão, quando você arrasta objetos de banco de dados que têm nomes que t
 
 ## <a name="see-also"></a>Consulte também
 
-- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

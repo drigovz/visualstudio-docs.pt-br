@@ -1,5 +1,5 @@
 ---
-title: 'Como: salvar dados usando uma transação'
+title: 'Como: Salvar dados usando uma transação'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: daf589eeabbdf753512cc31ca00b6a88e001c0db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918732"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Como: salvar dados usando uma transação
+# <a name="how-to-save-data-by-using-a-transaction"></a>Como: Salvar dados usando uma transação
 
 Salvar dados em uma transação usando o <xref:System.Transactions> namespace. Use o <xref:System.Transactions.TransactionScope> objeto participe de uma transação que é gerenciada automaticamente para você.
 
@@ -55,4 +54,4 @@ Para reverter a transação, lançar uma exceção antes de chamar o <xref:Syste
 ## <a name="see-also"></a>Consulte também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
-- [Passo a passo: salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)
+- [Passo a passo: Salvando dados em uma transação](../data-tools/save-data-in-a-transaction.md)

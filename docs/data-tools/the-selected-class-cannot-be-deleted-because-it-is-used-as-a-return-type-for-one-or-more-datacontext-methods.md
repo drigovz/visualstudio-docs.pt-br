@@ -7,29 +7,28 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21ef0f86d701c899328044a03cde8035a1e7292d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 36ad2afe48b5af06bf7ee59fa3043221bc787ba6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988961"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
 
 O tipo de retorno de um ou mais métodos de <xref:System.Data.Linq.DataContext> é a classe de entidade selecionada. Excluindo uma classe de entidade que é usada como o tipo de retorno para um <xref:System.Data.Linq.DataContext> método faz com que a compilação do projeto falhar. Para excluir a classe selecionada de entidade, identifica os métodos de <xref:System.Data.Linq.DataContext> que a usam e definem seus tipos de retorno para uma classe diferente de entidade.
 
-Para reverter os tipos de retorno de <xref:System.Data.Linq.DataContext> métodos para seus tipos gerados automaticamente originais, primeiro exclua os <xref:System.Data.Linq.DataContext> método da **métodos** painel e, em seguida, arraste o objeto da **Server Explorer** / **Database Explorer** para o **Relational Designer** novamente.
+Para reverter os tipos de retorno de métodos de <xref:System.Data.Linq.DataContext> para seus tipos gerados automaticamente de original, primeiro excluir o método de <xref:System.Data.Linq.DataContext> do painel **Métodos** e arraste então o objeto de **Gerenciador de Servidores**/**Gerenciador de Banco de Dados** no **Designer Relacional de Objetos** novamente.
 
 ## <a name="to-correct-this-error"></a>Para corrigir este erro
 
-1. Identificar <xref:System.Data.Linq.DataContext> métodos que usam a classe de entidade como um tipo de retorno selecionando um <xref:System.Data.Linq.DataContext> método na **métodos** painel e inspecionando o **tipo de retorno** propriedade em que o **Propriedades** janela.
+1. Identifica os métodos de <xref:System.Data.Linq.DataContext> que usam a classe de entidade como um tipo de retorno selecionando um método de <xref:System.Data.Linq.DataContext> no painel **Métodos** e inspecionando a propriedade de **Tipo de Retorno** na janela **Propriedades**.
 
-2. Defina as **tipo de retorno** para uma classe de entidade diferente ou exclua o <xref:System.Data.Linq.DataContext> método a partir do painel de métodos.
+2. Definir **Tipo de Retorno** a uma classe diferente de entidade ou exclui o método de <xref:System.Data.Linq.DataContext> do painel métodos.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
-- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Como: pesquisar por um processo na exibição de processos | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Pesquisar por um processo na exibição de processos | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988748"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Como procurar um processo na exibição de processos
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Como: Pesquise um processo na exibição de processos
 Você pode procurar um processo específico na exibição de processos por meio de sua cadeia de caracteres de ID ou o módulo de processo como critérios de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrará os atributos do processo selecionado na árvore de processo.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Para pesquisar por um processo na exibição de processos  
