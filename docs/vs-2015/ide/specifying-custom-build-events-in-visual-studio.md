@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53893546"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificando eventos de build personalizados no Visual Studio
@@ -31,7 +31,7 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
 -   Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   O Visual C# e F#–[como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   O Visual C# e F#–[como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md)
 
 -   Visual C++ – [Especificando eventos de build](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
@@ -60,4 +60,4 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
     >  `%I` no código acima deve ser `%%I` em scripts em lote.
 
 ## <a name="see-also"></a>Consulte também
- [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [caixa de diálogo de linha de comando do evento de eventos/pós-build de pré-compilação](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md) [passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md)
+ [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [caixa de diálogo de linha de comando do evento de eventos/pós-build de pré-compilação](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md) [passo a passo: Criando um aplicativo.
