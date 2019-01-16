@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee62651d6517444eb33aef272a212e5a12f55e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b68da672fdd0986d0a0bce5c56a13683325d737
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944370"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268884"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>O depurador não pode exibir o código-fonte ou a desmontagem
 Este erro é:  
@@ -36,6 +36,7 @@ Este erro é:
   
 -   Os critérios de segurança podem ter impedido que o depurador lesse a pilha, o thread, o registro e outras informações de contexto do programa que você está depurando. É mais provável que isso ocorra se você estiver depurando um aplicativo Web e não tiver a permissão correta para acessar o diretório virtual. Defina a segurança do diretório virtual como Anônima e tente novamente.  
   
-## <a name="see-also"></a>Consulte também  
- [Depuração no Visual Studio](../debugger/index.md) [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>Consulte também
+ [Depurando no Visual Studio](../debugger/index.md)  
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)  
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

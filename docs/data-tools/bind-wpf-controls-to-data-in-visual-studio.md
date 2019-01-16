@@ -17,12 +17,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932779"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154389"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 
@@ -99,7 +99,7 @@ O Visual Studio gera XAML, que faz o seguinte:
 Quando você arrasta um objeto ou uma propriedade a partir de **fontes de dados** janela para o designer, o Visual Studio gera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que cria um controle associado a dados (ou associa um controle existente para o objeto ou propriedade). No entanto, o Visual Studio não gera código para preencher o objeto com dados. Você deve gravar esse código sozinho.
 
 > [!NOTE]
-> Classes personalizadas devem ser públicos e, por padrão, tem um construtor sem parâmetros. Eles can'tbe aninhados classes que têm "dot" na sua sintaxe. Para obter mais informações, consulte [XAML e classes personalizadas para WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Classes personalizadas devem ser públicos e, por padrão, tem um construtor sem parâmetros. Eles não podem ser classes aninhadas que têm "dot" na sua sintaxe. Para obter mais informações, consulte [XAML e classes personalizadas para WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 O Visual Studio gera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que faz o seguinte:
 

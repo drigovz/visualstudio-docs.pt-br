@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968625"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227688"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Inspecionar seu aplicativo com o IntelliTrace histórico de depuração no Visual Studio
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspecionar seu aplicativo com o IntelliTrace histórico de depuração no Visual Studio (C#, Visual Basic, C++)
+
 Você pode usar [depuração histórica](../debugger/historical-debugging.md) para retroceder e encaminhe por meio da execução do seu aplicativo e inspecionar seu estado.  
   
 Você pode usar o IntelliTrace no Visual Studio Enterprise edition, mas não as edições Professional ou Community.  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>Navegar pelo código com o histórico de depuração  
+## <a name="navigate-your-code-with-historical-debugging"></a>Navegar pelo código com o histórico de depuração
+
  Vamos começar com um programa simples que tem um bug. Em um aplicativo de console em C#, adicione o seguinte código:  
   
 ```csharp  

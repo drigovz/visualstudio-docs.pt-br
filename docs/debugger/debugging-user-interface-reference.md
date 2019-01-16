@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988013"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269482"
 ---
 # <a name="debugging-user-interface-reference"></a>Referência de interface do usuário de depuração
 Você pode encontrar as seguintes caixas de diálogo ao depurar seu aplicativo.  
@@ -44,5 +44,5 @@ Você pode encontrar as seguintes caixas de diálogo ao depurar seu aplicativo.
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando no Visual Studio](../debugger/index.md)  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)   
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)   
  [Janela Comando](../ide/reference/command-window.md)

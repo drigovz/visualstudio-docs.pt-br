@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad685fc33c831d37cee955fda7e965ecd65e9bf7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 4e08171c02288f89e706c80ab6dfd5ef9538318c
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902053"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227935"
 ---
-# <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>Exibir threads e tarefas na janela pilhas paralelas
+# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Exibir threads e tarefas na janela pilhas paralelas (C#, Visual Basic, C++)
 
 O **pilhas paralelas** janela é útil para depurar aplicativos multithread. Ele tem vários modos de exibição:
 

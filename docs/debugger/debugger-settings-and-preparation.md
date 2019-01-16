@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926825"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269768"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparação e configurações do depurador
 Essa seção descreve as configurações de propriedade relacionadas ao depurador, e a preparação necessária para depurar seu programa com o depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Se você criar seu programa no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando os modelos de projeto, essas configurações serão definidas corretamente para você na configuração de depuração.  
@@ -52,4 +52,4 @@ Essa seção descreve as configurações de propriedade relacionadas ao depurado
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)  
  [Depurando no Visual Studio](../debugger/index.md)  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)

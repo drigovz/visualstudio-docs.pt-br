@@ -1,6 +1,6 @@
 ---
 title: 'Como: Exibir documentos de Script | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,21 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ca9eff00f76bd62abce3c3dae061958af546e483
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867716"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204129"
 ---
-# <a name="how-to-view-script-documents"></a>Como: Exibir documentos de script
-Em versões anteriores do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], os arquivos de script do lado do cliente gerados do script do lado do servidor eram exibidos na janela Explorador de Script. A janela Explorador de Script estava geralmente oculta, de modo que a disponibilidade de script do lado do cliente não era sempre óbvia.  
+# <a name="how-to-view-script-documents-javascript"></a>Como: Exibir documentos de Script (JavaScript)
+
+Arquivos de script do lado do servidor são visíveis no Gerenciador de soluções. Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção. Arquivos de script do lado do cliente são exibidos na **documentos de Script** nó.  
   
- No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], os arquivos de script do lado do cliente gerados do script do lado do servidor aparecem no Gerenciador de Soluções, que é visível por padrão. A janela Explorador de Script foi eliminada.  
-  
- Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção. Eles aparecem no nó **Documentos de Script**.  
-  
- Os arquivos de script do lado do servidor são sempre visíveis. Eles aparecem no nó **\<<Nome do caminho do site>**. O nome do nó é semelhante a este exemplo: `c:\...\Website2\`  
+> [!NOTE]
+> Anterior para [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], arquivos de script do lado do cliente gerados do script do lado do servidor do apareceram na janela do Gerenciador de Script.
   
 ### <a name="to-view-a-server-side-script-document"></a>Para exibir um documento de script do lado do servidor  
   

@@ -1,8 +1,6 @@
 ---
 title: Desbloquear o download de ferramentas remotas
-ms.custom: ''
 ms.date: 07/19/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - remote debugging, unblock download
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0586b8f0699ec2eca5843d59df1b6ddd7cecbd3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905339"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Como: desbloquear o download das ferramentas remotas no Windows Server
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Como: Desbloquear o download das ferramentas remotas no Windows Server
 
 As configurações de segurança padrão no Internet Explorer no Windows Server podem tornar demorado baixar os componentes, como as ferramentas remotas.
 
@@ -34,7 +32,7 @@ Para baixar as ferramentas no Windows Server, recomendamos um dos seguintes:
 
 * Baixe as ferramentas remotas diretamente no Windows Server e aceite os prompts para adicionar sites confiáveis. Sites modernos geralmente incluem diversos recursos de terceiros, portanto, isso pode resultar em muitos prompts. Além disso, todos os links redirecionados talvez precise ser adicionadas manualmente. Você pode optar por adicionar alguns dos sites confiáveis antes de iniciar o download. Vá para **opções da Internet > Segurança > Sites confiáveis > Sites** e adicione os seguintes sites.
 
-  * VisualStudio.microsoft.com
+  * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
   * sobre: em branco
 
@@ -43,10 +41,10 @@ Para baixar as ferramentas no Windows Server, recomendamos um dos seguintes:
   * microsoft.com
   * go.microsoft.com
   * download.microsoft.com
-  * My.VisualStudio.com
+  * my.visualstudio.com
   * login.microsoftonline.com
   * login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
+  * secure.aadcdn.microsoftonline-p.com
   * msft.STS.microsoft.com
   * AUTH.GFX.MS
   * app.vssps.visualstudio.com

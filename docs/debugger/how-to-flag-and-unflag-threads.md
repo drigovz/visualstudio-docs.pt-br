@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8d6f50827e81d9aecce4878df00f99e155edb04f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227285"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Como: Sinalizar e remover sinalização de threads
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Como: Sinalizar e remover sinalização de Threads (C#, Visual Basic, C++)
+
 Você pode sinalizar um thread que você deseja dar atenção especial marcando-o com um ícone na **Threads**, **pilhas paralelas** (exibição de thread), **inspeção paralela**e  **Threads da GPU** windows. Esse ícone pode ajudá-lo e a outros a distinguir threads sinalizados de outros threads.  
   
 Threads sinalizados também recebem tratamento especial na **Thread** lista o **local de depuração** barra de ferramentas e as outras janelas de depuração multithread. Você pode mostrar todos os threads ou apenas os threads sinalizados na **Thread** lista ou nas outras janelas.
   
-### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread 
+### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread
   
 - No **Threads** ou **inspeção paralela** janela, localize o thread que você está interessado e clique no ícone de sinalizador para marcar ou desmarcar o sinalizador. 
 - No **pilhas paralelas** janela, o botão direito do mouse em um thread ou o grupo de threads e selecione **sinalizador / <thread>**  ou **Remover sinalização / <thread>** .

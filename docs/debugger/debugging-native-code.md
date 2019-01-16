@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870762"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269509"
 ---
 # <a name="debugging-native-code"></a>Depurando código nativo
 A seção aborda alguns problemas comuns de depuração e técnicas para aplicativos nativos. As técnicas abordadas nesta seção são de alto nível. Para conhecer a mecânica de como usar o depurador do Visual Studio, consulte [primeiro, examine o depurador](../debugger/debugger-feature-tour.md)).  
@@ -67,9 +67,9 @@ A seção aborda alguns problemas comuns de depuração e técnicas para aplicat
 
  [Depurando projetos de DLL](../debugger/debugging-dll-projects.md) fornece informações sobre como depurar DLLs nativas e gerenciadas.
   
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)  
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)  
  Fornece links para as maiores seções de documentação de depuração. A informação inclui: novidades no depurador, configurações e preparação, pontos de interrupção, tratamentos de exceção, edição e continuação, depuração de código gerenciado, depuração de código nativo, depuração de SQL e referências à interface do usuário.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)  
- [Depuração no Visual Studio](../debugger/index.md) [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md)
+ [Depurando no Visual Studio](../debugger/index.md) 
