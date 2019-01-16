@@ -3,7 +3,6 @@ title: Saiba como depurar aplicativos multithread
 description: Depurar usando as janelas de pilhas paralelas e inspeção paralela no Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863284"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>Introdução ao depurar aplicativos multithread
+# <a name="get-started-debugging-multithreaded-applications"></a>Introdução à depuração de aplicativos multi-threaded
 Visual Studio fornece várias ferramentas e os elementos de interface do usuário para ajudá-lo a depurar aplicativos multi-threaded. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Concluir este tutorial você se familiarizará com recursos do Visual Studio para depurar aplicativos multithread.
 
 | | |
@@ -35,9 +34,9 @@ Visual Studio fornece várias ferramentas e os elementos de interface do usuári
 
 Esses dois tópicos fornecem informações adicionais sobre como usar outras ferramentas de depuração multithread:
 
-- Para usar o **local de depuração** barra de ferramentas e o **Threads** janela, consulte [passo a passo: depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
+- Para usar o **local de depuração** barra de ferramentas e o **Threads** janela, consulte [passo a passo: Depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
 
-- Para obter um exemplo que usa <xref:System.Threading.Tasks.Task> (código gerenciado) e o tempo de execução de simultaneidade (C++), consulte [passo a passo: depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md). Para dicas de depuração gerais que se aplicam a tipos de aplicativos multithread mais, leia esse tópico e esta.
+- Para obter um exemplo que usa <xref:System.Threading.Tasks.Task> (código gerenciado) e o tempo de execução de simultaneidade (C++), consulte [passo a passo: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md). Para dicas de depuração gerais que se aplicam a tipos de aplicativos multithread mais, leia esse tópico e esta.
   
 Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo.  
   
@@ -47,7 +46,7 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
   
      A caixa de diálogo **Novo Projeto** é exibida.  
   
-2.  Selecione um idioma: **Visual C#** , **Visual C++**, ou **Visual Basic**.  
+2.  Selecione um idioma **Visual c#**, **Visual C++**, ou **Visual Basic**.  
   
 3.  Sob **área de trabalho do Windows**, escolha **aplicativo de Console**.  
   
@@ -258,7 +257,7 @@ No **pilhas paralelas** janela, você pode alternar entre um modo de exibição 
     Você pode executar várias ações desses menus de atalho, mas para este tutorial, mostraremos mais desses detalhes na **inspeção paralela** janela (próximas seções).
 
     > [!NOTE]
-    > Para ver uma lista para exibir informações sobre cada thread, use o **Threads** janela em vez disso. Ver [instruções passo a passo: depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
+    > Para ver uma lista para exibir informações sobre cada thread, use o **Threads** janela em vez disso. Confira [Passo a passo: Depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Definir uma inspeção em uma variável
 
@@ -345,6 +344,6 @@ Você pode definir pontos de interrupção em diferentes condições, como o nom
   
 ## <a name="see-also"></a>Consulte também  
 [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Como: usar a janela de pilha paralela](../debugger/using-the-parallel-stacks-window.md)  
-[Como usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)  
+[Como: Mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[Como: Use a janela de pilha paralela](../debugger/using-the-parallel-stacks-window.md)  
+[Como: Usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)  

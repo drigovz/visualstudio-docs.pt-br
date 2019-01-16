@@ -1,5 +1,5 @@
 ---
-title: 'Instruções passo a passo: criando um aplicativo de dados de N camadas'
+title: 'Passo a passo: Criando um aplicativo de dados de N camadas'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71c1c8dbaf34613d07ce29fa3f5e08d8e9c6961f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924261"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Passo a passo: Criar um aplicativo de dados de n camadas
 Os aplicativos de dados de *N camadas* são aplicativos que acessam dados e são separados em várias *camadas* lógicas. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral dos aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).
@@ -50,7 +49,7 @@ Durante este passo a passo, você deve executar as seguintes etapas:
 
 -   Gravar código para preencher as tabelas de dados.
 
-![link para vídeo](../data-tools/media/playvideo.gif) para uma versão em vídeo deste tópico, consulte [vídeo de instruções: criar um aplicativo de dados de n camadas](http://go.microsoft.com/fwlink/?LinkId=115188).
+![link para vídeo](../data-tools/media/playvideo.gif) para uma versão em vídeo deste tópico, consulte [vídeo de instruções: Criando um aplicativo de dados de N camadas](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
@@ -106,7 +105,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
  A próxima etapa é criar um conjunto de dados tipado. Conjuntos de dados tipados são criados com a classe de conjunto de dados (incluindo `DataTables` classes) e o `TableAdapter` classes em um único projeto. (Todas as classes são geradas em um único arquivo.) Quando você separar o conjunto de dados e TableAdapters em diferentes projetos, é a classe de conjunto de dados é movida para outro projeto, deixando o `TableAdapter` classes no projeto original. Portanto, crie o conjunto de dados no projeto que conterá, por fim, os TableAdapters (no projeto DataAccessTier). Criar o conjunto de dados usando o **Data Source Configuration Wizard**.
 
 > [!NOTE]
-> É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+> É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: Instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Para criar o conjunto de dados
 
@@ -124,7 +123,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
      Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-     -ou-
+     - ou -
 
      Selecione **nova Conexão** para abrir o **Adicionar Conexão** caixa de diálogo.
 
@@ -156,7 +155,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 5. No menu **Build**, selecione **Compilar Solução**.
 
-   O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (`DataAccessTier`) agora contém somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (`DataEntityTier`) contém o conjunto de dados tipado: *NorthwindDataSet* (ou  *NorthwindDataSet.Dataset.Designer.cs*).
+   O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (`DataAccessTier`) agora contém somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (`DataEntityTier`) contém o conjunto de dados tipado: *NorthwindDataSet* (ou *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados**), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto do conjunto de dados.

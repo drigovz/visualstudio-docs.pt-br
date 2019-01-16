@@ -1,8 +1,6 @@
 ---
-title: 'Como: verificar as configurações de propriedade do IIS | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Verificar as configurações de propriedade do IIS | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926874"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Como verificar as configurações de propriedade do IIS
+# <a name="how-to-verify-iis-property-settings"></a>Como: Verificar as configurações de propriedade do IIS
 
 Você pode definir as propriedades de um aplicativo Web usando a ferramenta de administração do IIS. Essas propriedades devem ser definidas corretamente para que o aplicativo seja executado, de modo que verificar essas configurações geralmente é uma etapa necessária na solução de problemas.
 
@@ -61,7 +59,7 @@ Você pode definir as propriedades de um aplicativo Web usando a ferramenta de a
 
    3.  Clique em **OK** para fechar a caixa de diálogo **Métodos de Autenticação**.
 
-5. Para um aplicativo do servidor ATL, verifique se o verbo DEBUG está associado à extensão ISAPI. Para obter mais informações, consulte [como: associar o verbo de depuração com a extensão](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Para um aplicativo do servidor ATL, verifique se o verbo DEBUG está associado à extensão ISAPI. Para obter mais informações, confira [Como: Associar o verbo DEBUG com extensão](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Para um aplicativo do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], verifique se a pasta virtual para o aplicativo tem um Nome de Aplicativo definido no **Gerenciador de IIS (Serviços de Informações da Internet)**, **Gerenciador de Serviços de Internet** ou **Serviços de Informações da Internet**.
 

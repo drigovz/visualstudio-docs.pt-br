@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864706"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315586"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 
@@ -547,7 +547,7 @@ Especifica as referências, as importações, as declarações e o código do sn
 |[Elemento Code](../ide/code-snippets-schema-reference.md#code-element)|Elemento obrigatório. Especifica o código que você deseja inserir em um arquivo de documentação. Deve haver exatamente um elemento `Code` em um elemento `Snippet`.|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Elemento opcional. Especifica os literais e os objetos que compõem as partes de um snippet de código que você pode editar. Pode ser que não haja nenhum ou um elemento `Declarations` em um elemento `Snippet`.|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento opcional. Agrupa elementos `Import` individuais. Pode ser que não haja nenhum ou um elemento `Imports` em um elemento `Snippet`.|
-||Elemento opcional. Agrupa elementos `Reference` individuais. Pode ser que não haja nenhum ou um elemento `References` em um elemento `Snippet`.|
+|[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento opcional. Agrupa elementos `Reference` individuais. Pode ser que não haja nenhum ou um elemento `References` em um elemento `Snippet`.|
 
 |Elemento pai|Descrição|
 | - |-----------------|
