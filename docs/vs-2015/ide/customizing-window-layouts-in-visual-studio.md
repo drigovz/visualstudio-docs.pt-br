@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057555"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53934369"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalização de layouts de janela no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
  Quando é necessário exibir ou editar dois locais ao mesmo tempo em um documento, é possível dividir as janelas. Para dividir seu documento em duas seções de rolagem independente, clique em **Dividir** no menu **Janela**. Clique em **Remover Divisão** no menu **Janela** para restaurar o modo de exibição único.
 
 ### <a name="toolbars"></a>Barras de ferramentas
- As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, consulte [como: Personalizar Menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, veja [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Organizando e encaixe Windows
  As duas janelas do documento e de ferramentas podem ser *encaixadas* para que elas tenham uma posição e um tamanho dentro do quadro de janela do IDE ou flutuando como uma janela separada independente do IDE. As janelas de ferramentas podem ser encaixadas em qualquer lugar dentro do quadro do IDE; algumas janelas de ferramentas podem ser encaixadas como janelas com guias no quadro do editor. As janelas do documento podem ser encaixadas dentro do quadro do editor e podem ser fixadas em sua posição atual na ordem de tabulação. É possível encaixar várias janelas para que elas flutuem juntas em um “raft” no IDE ou fora dele. As janelas de ferramentas também podem ser ocultadas ou minimizadas.
