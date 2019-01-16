@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,19 +16,19 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae06d11e1bdd193ebda5223c7c638c3132984147
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931047"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilando e criando no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível usar o Visual Studio para compilar aplicativos e criar assemblies e programas executáveis em intervalos frequentes durante um ciclo de desenvolvimento. Compilando seu código com frequência, é possível identificar erros em tempo de build, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação mais precocemente. Também é possível detectar e corrigir erros em tempo de execução, como erros lógicos e semânticos ao compilar e executar frequentemente versões de depuração do código.
 
- Quando você tiver desenvolvido completamente e depurado suficientemente um projeto ou solução, será possível compilar seus componentes em um build de versão. Por padrão, um build de versão é otimizada e projetada para ser menor e para ser executada mais rapidamente do que uma versão de depuração. Para obter mais informações, consulte [passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
+ Quando você tiver desenvolvido completamente e depurado suficientemente um projeto ou solução, será possível compilar seus componentes em um build de versão. Por padrão, um build de versão é otimizada e projetada para ser menor e para ser executada mais rapidamente do que uma versão de depuração. Para obter mais informações, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 ## <a name="choosing-a-build-method"></a>Escolhendo um método de build
  É possível criar um aplicativo usando as opções de build padrão no IDE, em um prompt de comando, ou usando o Build do Team Foundation. Cada uma dessas opções usam o MSBuild como a tecnologia subjacente e cada abordagem tem benefícios específicos, como mostra a tabela a seguir.
@@ -58,4 +57,4 @@ ms.locfileid: "53052644"
 -   Melhorar o desempenho do build usando builds paralelas. Para obter mais informações, consulte [Building Multiple Projects in Parallel (Criando vários projetos paralelamente)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou a postagem do blog [Tuning C++ build parallelism (Ajustando o paralelismo de build do C++)](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Consulte também
- [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [Noções básicas sobre plataformas de Build](../ide/understanding-build-platforms.md) [criando (compilando) projetos de Site](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [Como: criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [Noções básicas sobre plataformas de Build](../ide/understanding-build-platforms.md) [criando (compilando) projetos de Site](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Como: Criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)

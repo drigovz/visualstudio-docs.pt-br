@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2dbb785bcc3092872763d23e968cbf699603286
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893546"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificando eventos de build personalizados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +29,9 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
  Para obter informações específicas sobre a linguagem de programação que está sendo usada, consulte os seguintes tópicos:
 
--   Visual Basic –[como: especificar eventos de Build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   O Visual C# e F#–[como: especificar eventos de Build (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   O Visual C# e F#–[como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++ – [Especificando eventos de build](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 

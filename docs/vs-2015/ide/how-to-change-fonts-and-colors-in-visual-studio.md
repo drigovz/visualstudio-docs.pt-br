@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eee3b8a72ab530e4f480fb4927736e809488cb84
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062503"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915355"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Como: Alterar fontes e cores no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +29,7 @@ ms.locfileid: "53062503"
 É possível personalizar a cor do quadro e das janelas de ferramentas do IDE no Visual Studio de diversas maneiras.
 
 > [!TIP]
->  Para obter informações sobre como alterar as cores do editor de código, consulte [como: Alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+>  Para obter informações sobre como alterar as cores do editor de códigos, confira [Como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Alterar o tema de cores do IDE
 
@@ -71,4 +70,4 @@ ms.locfileid: "53062503"
 5.  Na lista **Tamanho**, escolha um tamanho de texto e, em seguida, escolha o botão **OK**.
 
 ## <a name="see-also"></a>Consulte também
- [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [como: Alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
