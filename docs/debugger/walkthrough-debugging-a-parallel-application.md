@@ -22,14 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff1876ba76421818f3a59616cfdf26aae41adb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87c1aad4374ca41a9ba89eea4eb7f7cc790a1613
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867141"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227805"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Passo a passo: Depurando um aplicativo paralelo no Visual Studio
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Passo a passo: Depurando um aplicativo paralelo no Visual Studio (C#, Visual Basic, C++)
+
 Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para depurar um aplicativo paralelo. Essas janelas ajudarão-lo a compreender e verificar o comportamento de tempo de execução do código que usa o [tarefa TPL (biblioteca paralela)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou o [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime). Este passo a passo fornece código de exemplo que tem pontos de interrupção internos. Após a interrupção do código, este passo a passo mostra como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para examiná-lo.  
   
  Este passo a passo ensina estas tarefas:  

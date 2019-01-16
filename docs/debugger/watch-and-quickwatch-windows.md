@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c0a80c9e45aa56f2a627b73659e7558257e35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936499"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204463"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Assista a variáveis com janelas de inspeção e QuickWatch 
 
@@ -30,7 +30,7 @@ Enquanto você estiver depurando, você pode usar **Watch** windows e **QuickWat
 
 **Assista** windows podem exibir diversas variáveis de cada vez durante a depuração. O **QuickWatch** caixa de diálogo exibe uma única variável por vez e deve ser fechada antes de depuração de continuar.
 
-Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [corrigir bugs, escrevendo melhor C# código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
+Se esta foi sua primeira tentativa de depurar um código, leia [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md) antes continuar a ler este artigo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observe as variáveis com uma janela Inspeção
 

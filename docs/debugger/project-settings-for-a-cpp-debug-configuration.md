@@ -2,7 +2,6 @@
 title: Configurações do projeto para uma configuração de depuração de C++
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,15 +112,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957904"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configurações do projeto para uma configuração de depuração do C++
-Você pode alterar as configurações de projeto para uma configuração de depuração C ou Visual C++ na **páginas de propriedades** caixa de diálogo, conforme discutido na [como: definir a depuração e configurações de versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram como localizar configurações relacionadas ao depurador na caixa de diálogo **Páginas de Propriedades**.  
+Você pode alterar as configurações de projeto para uma configuração de depuração C ou Visual C++ na **páginas de propriedades** caixa de diálogo, conforme discutido em [como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram como localizar configurações relacionadas ao depurador na caixa de diálogo **Páginas de Propriedades**.  
   
 > [!NOTE]
 >  As configurações de projeto de depuração na **propriedades de configuração/depuração** categoria são diferentes para aplicativos UWP e componentes que são escritos em C++. Ver [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
@@ -150,8 +149,8 @@ Você pode alterar as configurações de projeto para uma configuração de depu
 | **Tipo de Acelerador de Depuração** (somente depuração de GPU) | Especifica o dispositivo GPU a ser usado para depuração. A instalação de drivers de dispositivo para dispositivos compatíveis com GPU adicionará outras opções. A configuração padrão é **GPU – Emulador de Software**. |
 | **Comportamento de ponto de interrupção padrão GPU** (somente depuração de GPU) | Especifica se um evento de ponto de interrupção deve ser gerado para cada thread em um warp SIMD. A configuração padrão é gerar o evento do ponto de interrupção apenas uma vez por encurvamento. |
 | **Acelerador Padrão de Amp** | Especifica o acelerador padrão de AMP ao depurar o código de GPU. Escolha **Acelerador de software WARP** para investigar se um problema é causado por hardware ou por um driver em vez de por seu código. |
-| **Diretório de Implantação** (Depurador Remoto do Windows) | Especifica o caminho no computador remoto onde a saída do projeto será copiada antes da inicialização. O caminho pode ser um compartilhamento de rede no computador remoto, ou pode ser um caminho para uma pasta no computador remoto. A configuração padrão está vazia, o que significa que a saída do projeto não é copiada para um compartilhamento de rede. Para habilitar a implantação de arquivos, você também deve marcar a caixa de seleção **Implantar** na caixa de diálogo Configuration Manager. Confira mais informações em [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md). |
-| **Arquivos adicionais para implantar** (depurador remoto do Windows) | Se a propriedade de diretório de implantação é definida, isso é uma lista delimitada por ponto e vírgula de arquivos adicionais para copiar para diretório de implantação. A configuração padrão está vazia, o que significa que nenhum arquivo adicional é copiado para o diretório de implantação. Para habilitar a implantação de arquivos, você também deve marcar a caixa de seleção **Implantar** na caixa de diálogo Configuration Manager. Confira mais informações em [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md). |
+| **Diretório de Implantação** (Depurador Remoto do Windows) | Especifica o caminho no computador remoto onde a saída do projeto será copiada antes da inicialização. O caminho pode ser um compartilhamento de rede no computador remoto, ou pode ser um caminho para uma pasta no computador remoto. A configuração padrão está vazia, o que significa que a saída do projeto não é copiada para um compartilhamento de rede. Para habilitar a implantação de arquivos, você também deve marcar a caixa de seleção **Implantar** na caixa de diálogo Configuration Manager. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md). |
+| **Arquivos adicionais para implantar** (depurador remoto do Windows) | Se a propriedade de diretório de implantação é definida, isso é uma lista delimitada por ponto e vírgula de arquivos adicionais para copiar para diretório de implantação. A configuração padrão está vazia, o que significa que nenhum arquivo adicional é copiado para o diretório de implantação. Para habilitar a implantação de arquivos, você também deve marcar a caixa de seleção **Implantar** na caixa de diálogo Configuration Manager. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md). |
 | **Implantar Bibliotecas de Tempo de Execução de Depuração do Visual C++** (Depurador Remoto do Windows) | Se a propriedade do diretório de implantação estiver definida, isso especifica se as bibliotecas em tempo de execução de depuração do Visual C++ da plataforma atual devem ser copiadas para o compartilhamento de rede. A configuração padrão é Sim. |
   
 ## <a name="cc-folder-general-category"></a>Pasta C/C++ (Categoria geral)  

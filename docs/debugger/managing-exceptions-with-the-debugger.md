@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094803"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204411"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
-Uma exceção é uma indicação de um estado de erro que ocorre enquanto um programa está sendo executado. Você pode instruir o depurador quais exceções ou conjuntos de exceções para interromper e, no ponto em que você deseja que o depurador seja interrompido. Quando o depurador for interrompido, ele mostra onde a exceção foi lançada. Você também pode adicionar ou excluir exceções. Com uma solução aberta no Visual Studio, use **Depurar > Windows > configurações de exceção** para abrir o **configurações de exceção** janela.
+Uma exceção é uma indicação de um estado de erro que ocorre enquanto um programa está sendo executado. Você pode instruir o depurador quais exceções ou conjuntos de exceções para interromper no e no ponto em que você deseja que o depurador seja interrompido (ou seja, pausa no depurador). Quando o depurador for interrompido, ele mostra onde a exceção foi lançada. Você também pode adicionar ou excluir exceções. Com uma solução aberta no Visual Studio, use **Depurar > Windows > configurações de exceção** para abrir o **configurações de exceção** janela.
 
-Fornece manipuladores que respondem às exceções mais importantes. Saiba também como configurar o depurador para interromper a execução de algumas exceções sempre.
+Fornece manipuladores que respondem às exceções mais importantes. Se você precisa saber como adicionar manipuladores de exceções, consulte [corrigir bugs, escrevendo melhor C# código](../debugger/write-better-code-with-visual-studio.md). Além disso, saiba como configurar o depurador para interromper a execução de algumas exceções sempre.
 
 Quando ocorre uma exceção, o depurador grava uma mensagem de exceção para o **saída** janela. Ele pode interromper a execução a seguir casos quando:
 

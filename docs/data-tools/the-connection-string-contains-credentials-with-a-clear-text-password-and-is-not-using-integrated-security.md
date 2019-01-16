@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f7d9c945d3e8897114f165464c0823cce3ceeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ef63abe36a5880305f522d75d9e1cb1d7f6995fa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854745"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204197"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>A cadeia de conexão contém credenciais com uma senha de texto não criptografado e não estiver usando segurança integrada
 
@@ -25,15 +25,13 @@ Ao trabalhar com conexões de dados que incluem informações confidenciais (sen
 > [!WARNING]
 > Explicitamente definindo a propriedade de **Configurações do Aplicativo** propriedades de **Conexão** a **False** adicionará a senha para o arquivo DBML.
 
-## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Para salvar a cadeia de conexão com informações sigilosas nas configurações de aplicativo do projeto
+## <a name="save-options"></a>Opções de salvamento
 
-- Clique em **Sim**.
+- Para salvar a cadeia de caracteres de conexão com as informações confidenciais, escolha **Sim**.
 
    A cadeia de conexão é armazenada como uma configuração de aplicativo. A cadeia de conexão inclui informações sigilosas em texto sem formatação. O arquivo DBML não contém informações sigilosas.
 
-## <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>Para salvar a cadeia de conexão sem informações sigilosas nas configurações de aplicativo do projeto
-
-- Clique em **Não**.
+- Para salvar a cadeia de caracteres de conexão sem as informações confidenciais, escolha **não**.
 
    A cadeia de conexão é armazenada como uma configuração de aplicativo, mas a senha não é incluído.
 

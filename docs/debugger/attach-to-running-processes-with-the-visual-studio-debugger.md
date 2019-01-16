@@ -2,7 +2,6 @@
 title: Anexar a processos em execução com o depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 09/27/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899607"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está em execução, selecione **Debug** > **anexar ao processo** ou pressione **Ctrl**+**Alt** + **P** no Visual Studio e usar o **anexar ao processo** caixa de diálogo para anexar o depurador ao processo.
@@ -210,4 +209,3 @@ Em alguns cenários de depuração locais, você pode depurar no Visual Studio s
  [Depurar vários processos](../debugger/debug-multiple-processes.md)   
  [Depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Depuração remota](../debugger/remote-debugging.md)
- 

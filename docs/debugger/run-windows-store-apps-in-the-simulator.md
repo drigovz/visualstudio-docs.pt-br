@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 6a171c0973bdcb71ff05cff38713081acd5ffd68
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886469"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153948"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Executar aplicativos UWP no simulador
 O simulador do Visual Studio para aplicativos UWP é um aplicativo da área de trabalho que simula um aplicativo UWP. Normalmente, convém depurar no computador local, um dispositivo conectado ou um computador remoto. No entanto, em alguns cenários, você talvez queira usar o simulador do Visual Studio para emular um tamanho da tela física diferente e resolução. Você também pode simular eventos comuns de toque e rotação e simular propriedades de conexão de rede.
@@ -49,7 +49,7 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo da área de t
 ## <a name="pinch-and-zoom"></a>Aperto e zoom
  Defina o modo de interação como sendo gestos de aperto e zoom com dois dedos.
 
--   ![Destino de dedo Siimulator duas](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
+-   ![Destino do simulador dois dedos](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
 
      O ícone de alvo duplo indica o local de dois dedos na tela do dispositivo.
 

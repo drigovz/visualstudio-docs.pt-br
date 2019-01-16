@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875635"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154370"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de Quadros de Gráficos
 Use análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.  
@@ -91,7 +91,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 #### <a name="statistical-significance"></a>Significância estatística  
  Para chamar atenção para as variações de renderização que possuem maior relevância, a Análise de Quadro determina a significância estatística de cada variante de renderização e exibe aquelas de são significativas em negrito. Aquelas que aprimoram o desempenho são exibidas em verde, e as que reduzem o desempenho, em vermelho. Os resultados que não são estatisticamente significativos são exibidos em fonte normal.  
   
- ![A estatística relevence da variante chamada draw](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
+ ![A relevância estatística da variante chamada draw](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
   
  Para determinar a relevância estatística, análise de quadro usa o [teste t de Student](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   

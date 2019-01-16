@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9df8a9dfeef620ba7afab517bc00e16717e7096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42ac7749052fdec3ef9f6cb318af4dc0302e1465
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874213"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269254"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Como: Depurar clientes e servidores COM usando a depuração RPC
 Você pode usar a depuração de chamada de procedimento remoto (RPC) para depurar aplicativos cliente/servidor COM. Você deve habilitar a depuração de RPC para usá-lo. Com a depuração de RPC habilitada, quando você entrar na chamada do servidor do cliente, o depurador anexará ao servidor e permitirá depurar o código. Quando o depurador for anexado, você poderá usar todos os recursos do depurador com o cliente e os processos do servidor.  
@@ -54,4 +54,5 @@ Você pode usar a depuração de chamada de procedimento remoto (RPC) para depur
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração de servidor COM e contêiner](../debugger/com-server-and-container-debugging.md)  
- [Depuração no Visual Studio](../debugger/index.md) [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md)
+ [Depurando no Visual Studio](../debugger/index.md)  
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)

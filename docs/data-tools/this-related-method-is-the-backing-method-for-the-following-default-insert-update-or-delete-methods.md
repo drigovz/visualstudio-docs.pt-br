@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b5579c8916e81e3c49e9d6e24bf37ed85039c03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c79492c69f10d97c246d0d56b013fba5af17ec54
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851817"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203999"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Este método relacionado é o método de suporte para a seguir inserção, atualização, ou métodos padrão de exclusão
 
@@ -22,17 +22,15 @@ Este método relacionado é o método de suporte padrão a seguir `Insert`, `Upd
 
 Selecionado `DataContext` método no momento é usado como um dos `Insert`, `Update`, ou `Delete` métodos para uma das classes de entidade no **Relational Designer**. Excluindo as causas do método selecionado a classe de entidade que estava usando este método para reverter para o comportamento de tempo de execução padrão para executar a inserção, atualização ou exclusão durante uma atualização.
 
-## <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>Para excluir o método selecionado, causando a classe de entidade às atualizações de uso
+## <a name="selected-method-options"></a>Opções do método selecionado
 
-- Clique em **Sim**.
+- Para excluir o método selecionado, fazendo com que a classe de entidade para usar atualizações de tempo de execução, clique em **Sim**.
 
-    O método selecionado é excluído e as classes que usam esse método substituindo o comportamento de atualização são revertidas para usar o comportamento padrão de tempo de execução LINQ to SQL.
+   O método selecionado é excluído e as classes que usam esse método substituindo o comportamento de atualização são revertidas para usar o comportamento padrão de tempo de execução LINQ to SQL.
 
-## <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>Para fechar a caixa de mensagem, deixando o método selecionado inalterado
+- Para fechar a caixa de mensagem, deixando o método selecionado inalterado, clique em **não**.
 
-- Clique em **Não**.
-
-    A caixa de mensagem fecha e nenhuma alteração é feita.
+   A caixa de mensagem fecha e nenhuma alteração é feita.
 
 ## <a name="see-also"></a>Consulte também
 

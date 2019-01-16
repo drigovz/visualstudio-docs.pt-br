@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836904"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227779"
 ---
-# <a name="using-saved-intellitrace-data"></a>Usando os dados salvos do IntelliTrace
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando dados salvos do IntelliTrace (C#, Visual Basic, C++)
+
 Vá para os pontos específicos da execução do aplicativo quando você iniciar a depuração de um arquivo de log do IntelliTrace (.iTrace). Esse arquivo pode conter eventos de desempenho, exceções, threads, etapas de teste, módulos e outras informações do sistema que o IntelliTrace registra durante a execução do seu aplicativo.
 
  Certifique-se de que você tenha:

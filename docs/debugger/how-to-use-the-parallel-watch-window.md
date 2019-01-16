@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 75ffa4075c58750834558f38dcd2e2fcacc0d358
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227311"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Definir uma inspeção nas variáveis em Threads paralelos no Visual Studio
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Definir uma inspeção nas variáveis em Threads paralelos no Visual Studio (C#, Visual Basic, C++)
 Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na janela **Inspeção Paralela**:  
   
 - A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
@@ -34,7 +34,7 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 - Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.  
   
   > [!TIP]
-  >  Para informações sobre a exibição de tarefa na **inspeção paralela** , você deverá primeiro abrir o **tarefa** janela.  
+  >  Para exibir informações sobre a tarefa na **inspeção paralela** , você deverá primeiro abrir os **tarefa** janela.  
   
 - O espaço em branco *Adicionar inspeção* colunas, na qual você pode inserir expressões para assistir.  
   

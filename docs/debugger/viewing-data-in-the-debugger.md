@@ -1,6 +1,6 @@
 ---
 title: Criar exibições personalizadas de dados no depurador | Microsoft Docs
-ms.date: 11/20/2018
+ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -19,22 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234c00bcfd1b46adc260597b5ad438854c45de98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5c5466515e0e58fd94d7a949b04d060a90925d1
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836550"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227220"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Criar exibições personalizadas de dados no depurador do Visual Studio
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Criar exibições personalizadas de dados no depurador do Visual Studio (C#, Visual Basic, C++)
+
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depurador fornece várias ferramentas para inspecionar e modificar o estado do programa. A maioria dessas ferramentas funciona somente no modo de interrupção.
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Criar exibições personalizadas de dados em janelas de variáveis e DataTips
- Muitas da [janelas do depurador](../debugger/debugger-windows.md), como o **Autos** e **Assista** windows, permitem que você inspecione variáveis. Você pode personalizar tipos como nativos, os objetos gerenciados, e seus próprios tipos são mostrados nas janelas de variáveis do depurador e no [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Para obter mais informações, consulte [criar exibições personalizadas de objetos nativos](../debugger/create-custom-views-of-native-objects.md) e [criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-dot-managed-objects.md).
+
+ Muitas da [janelas do depurador](../debugger/debugger-windows.md), como o **Autos** e **Assista** windows, permitem que você inspecione variáveis. Você pode personalizar tipos como nativos, os objetos gerenciados, e seus próprios tipos são mostrados nas janelas de variáveis do depurador e no [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Para obter mais informações, consulte [criar exibições personalizadas de objetos nativos](../debugger/create-custom-views-of-native-objects.md) e [criar exibições personalizadas de objetos](../debugger/create-custom-views-of-dot-managed-objects.md).
   
-## <a name="create-custom-visualizers"></a>Criar visualizadores personalizados  
+## <a name="create-custom-visualizers"></a>Criar visualizadores personalizados
+
  Os visualizadores permitem exibir o conteúdo de um objeto ou variável de forma significativa. No depurador do Visual Studio, um visualizador refere-se ao windows diferentes que podem ser abertos usando a Lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ícone do visualizador") ícone. Por exemplo, o visualizador HTML mostra como uma cadeia de caracteres HTML seria interpretada e exibida em um navegador. Você pode acessar visualizadores a partir das DataTips, a **Watch** janela, o **Autos** janela e o **locais** janela. O **QuickWatch** caixa de diálogo também fornece um visualizador. Para obter mais informações, confira [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md).
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
+
  [Primeiro, examine o depurador](../debugger/debugger-feature-tour.md) [janela de comando](../ide/reference/command-window.md)   
  [Segurança do depurador](../debugger/debugger-security.md)

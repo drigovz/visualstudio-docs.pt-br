@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830950"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269638"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Como: Usar verificações de tempo de execução nativas
 No Visual C++, você pode usar nativos [runtime_checks](/cpp/preprocessor/runtime-checks) para capturar erros comuns de tempo de execução, como:  
@@ -79,6 +79,6 @@ No Visual C++, você pode usar nativos [runtime_checks](/cpp/preprocessor/runtim
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando no Visual Studio](../debugger/index.md)  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)   
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [Verificação de erros em tempo de execução](/cpp/c-runtime-library/run-time-error-checking)

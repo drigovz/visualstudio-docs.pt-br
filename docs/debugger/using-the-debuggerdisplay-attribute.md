@@ -1,9 +1,9 @@
 ---
 title: Usando o atributo DebuggerDisplay | Microsoft Docs
-ms.date: 08/09/2017
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228052"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>Usando o atributo DebuggerDisplay
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Usando o atributo DebuggerDisplay (C#, Visual Basic, C++ c++ CLI)
 O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas de variáveis do depurador. Esse atributo pode ser aplicado a assemblies, delegados, propriedades, campos e tipos.  
   
  O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de caracteres a ser exibida na coluna de valor para instâncias do tipo. Essa cadeia de caracteres pode conter chaves (`{` e `}`). Texto dentro de um par de chaves é avaliado como um campo, propriedade ou método.  
@@ -30,6 +30,9 @@ O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, pr
   
 > [!IMPORTANT]
 >  Se o **Mostrar estrutura bruta de objetos nas janelas de variáveis** caixa de seleção é marcada na **Ferramentas/opções / depuração** caixa de diálogo, em seguida, a `DebuggerDisplay` atributo é ignorado.  
+
+> [!NOTE]
+> Para código nativo, esse atributo só tem suporte no C + + c++ /CLI código CLI.
   
  A tabela a seguir mostra alguns usos possíveis do atributo `DebuggerDisplay` e saídas de exemplo.  
   

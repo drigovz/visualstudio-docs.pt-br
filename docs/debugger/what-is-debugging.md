@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830963"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204275"
 ---
 # <a name="what-is-debugging"></a>O que é depuração?
 
@@ -44,11 +44,14 @@ Quando você alternar essa configuração, você alterar seu projeto de uma conf
 
 ## <a name="when-to-use-a-debugger"></a>Quando usar um depurador
 
-O depurador é uma ferramenta essencial para encontrar e corrigir bugs em seus aplicativos. No entanto, o contexto é king e é importante aproveitar todas as ferramentas em seu disposable para ajudar a eliminar rapidamente bugs ou erros. Às vezes, o direito de "tool" pode ser uma prática de codificação melhores. Aprendendo quando usar o depurador vs. de alguma outra ferramenta, você também aprenderá a usar o depurador com mais eficiência. Se você já souber você precisará aprender sobre o depurador, consulte [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md). Caso contrário, siga o link na **próximas etapas**.
+O depurador é uma ferramenta essencial para encontrar e corrigir bugs em seus aplicativos. No entanto, o contexto é king e é importante aproveitar todas as ferramentas em seu disposable para ajudar a eliminar rapidamente bugs ou erros. Às vezes, o direito de "tool" pode ser uma prática de codificação melhores. Aprendendo quando usar o depurador vs. de alguma outra ferramenta, você também aprenderá a usar o depurador com mais eficiência.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, você pode começar a aprender como depurar com o Visual Studio e como escrever código com menos bugs. O artigo a seguir mostra C# exemplos de código, mas os conceitos se aplicam a todos os idiomas com suporte do Visual Studio.
+Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, você pode começar a aprender como depurar com o Visual Studio e como escrever código com menos bugs. Mostrar os artigos a seguir C# exemplos de código, mas os conceitos se aplicam a todos os idiomas com suporte do Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
 > [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md)

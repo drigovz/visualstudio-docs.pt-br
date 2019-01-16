@@ -18,18 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898067"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204395"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Exibir os valores de dados em DataTips no editor de códigos
 
-Os DataTips fornecem um modo conveniente de exibir informações sobre variáveis em seu programa durante a depuração. Os DataTips funcionam apenas no modo de interrupção e apenas com variáveis que estejam no escopo de execução atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [corrigir bugs, escrevendo melhor C# código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
-
-Se esta for sua primeira vez em que depuração, você talvez queira ler [gravar melhor C# usando o Visual Studio de código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de ler este artigo.
+Os DataTips fornecem um modo conveniente de exibir informações sobre variáveis em seu programa durante a depuração. Os DataTips funcionam apenas no modo de interrupção e apenas com variáveis que estejam no escopo de execução atual. Se esta foi sua primeira tentativa de depurar um código, leia [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md) antes continuar a ler este artigo.
   
 ## <a name="work-with-datatips"></a>Trabalhar com DataTips
 

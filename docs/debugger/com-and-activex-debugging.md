@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820846"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269593"
 ---
 # <a name="com-and-activex-debugging"></a>Depuração de COM e ActiveX
 Essa seção fornece dicas sobre depuração de aplicativos COM e controles ActiveX.  
@@ -42,7 +42,7 @@ Essa seção fornece dicas sobre depuração de aplicativos COM e controles Acti
  Relaciona visualizadores e aplicativos de exemplo que podem ser úteis para depurar o aplicativo COM.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)  
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)  
  Fornece links para as maiores seções de documentação de depuração. A informação inclui: novidades no depurador, configurações e preparação, pontos de interrupção, tratamentos de exceção, edição e continuação, depuração de código gerenciado, depuração de projetos do Visual C++, depuração de COM e ActiveX, depuração de DLLs, depuração de SQL e referências à interface do usuário.  
   
 ## <a name="see-also"></a>Consulte também  

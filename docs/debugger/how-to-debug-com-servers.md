@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cc8cbf7e087e2198071aef9f77c109f3a7c71640
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853925"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268560"
 ---
 # <a name="how-to-debug-com-servers"></a>Como: Depurar servidores COM
 Depurar os aplicativos de servidor COM apresenta um conjunto exclusivo de problemas que nem sempre são fáceis de resolver.  
@@ -47,4 +47,4 @@ Depurar os aplicativos de servidor COM apresenta um conjunto exclusivo de proble
  [Como: Depurar clientes e servidores COM usando a depuração RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [Depuração de servidor e contêiner COM](../debugger/com-server-and-container-debugging.md)   
  [Depurando no Visual Studio](../debugger/index.md)  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)
