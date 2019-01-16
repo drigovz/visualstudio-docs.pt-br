@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913885"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Passo a passo: Criando um arquivo de projeto do MSBuild do zero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +51,7 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
   
 - Compilar de forma incremental.  
   
-  Este passo a passo mostra como compilar o projeto no prompt de comando e como examinar os resultados. Para obter mais informações sobre o MSBuild e como executá-lo no prompt de comandos, consulte [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  Este passo a passo mostra como compilar o projeto no prompt de comando e como examinar os resultados. Para saber mais sobre o MSBuild e como executá-lo no prompt de comando, confira [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
   Para concluir este passo a passo, você deve ter o .NET Framework (versão 2.0, 3.5, 4.0 ou 4.5) instalado, pois ele inclui o MSBuild, e o compilador do Visual C#.  
   
@@ -146,10 +146,10 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -484,7 +484,7 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
 ```  
   
 ## <a name="whats-next"></a>O que vem a seguir?  
- O Visual Studio pode fazer automaticamente muito do trabalho que é mostrado neste passo a passo. Para saber como usar o Visual Studio para criar, editar, compilar e testar arquivos de projeto MSBuild, consulte [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ O Visual Studio pode fazer automaticamente muito do trabalho que é mostrado neste passo a passo. Para saber como usar o Visual Studio para criar, editar, compilar e testar arquivos de projeto MSBuild, confira [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Consulte também  
 [Visão geral do MSBuild](msbuild.md)  

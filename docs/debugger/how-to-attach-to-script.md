@@ -19,10 +19,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 73dbb479c7f579739d04a2c378fb984fbba1f72b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934886"
 ---
 # <a name="how-to-attach-to-script"></a>Como: Anexar ao script
@@ -42,7 +42,7 @@ Este tópico explica como anexar manualmente o depurador do Visual Studio para u
   
 3. Clique no processo ao qual você quer anexar.  
   
-4. No **anexar** caixa, você deverá ver **código do Script** ou **automático: Código do Script**. Se você encontrar algo além disso, siga estas etapas:  
+4. No **anexar** caixa, você deverá ver **código do Script** ou **automático: Código do Script Se você encontrar algo além disso, siga estas etapas:  
   
    1.  Clique em **Selecionar**.  
   
@@ -52,7 +52,7 @@ Este tópico explica como anexar manualmente o depurador do Visual Studio para u
   
 5. Clique em **Anexar**.  
   
-    Neste momento, você pode ver um aviso informando que a depuração de scripts está desabilitada no Internet Explorer. Se isso ocorrer, consulte [Aviso: Depuração de script desabilitada](../debugger/warning-script-debugging-disabled.md)  
+    Neste momento, você pode ver um aviso informando que a depuração de scripts está desabilitada no Internet Explorer. Se isso ocorrer, consulte [Aviso: Depuração de script desabilitada  
   
    A lista **Processos Disponíveis** é exibida automaticamente quando você abre a caixa de diálogo **Processos**. Os processos podem iniciar e parar em segundo plano quando a caixa de diálogo está aberta. Consequentemente, o conteúdo pode não estar atualizado. Você pode atualizar a lista a qualquer momento para ver a lista atual de processos pressionando o botão **Atualizar**.  
   
@@ -61,7 +61,7 @@ Este tópico explica como anexar manualmente o depurador do Visual Studio para u
    Todos os comandos de execução no menu **Depurar** afetam o programa ativo. Você pode interromper qualquer programa depurado da caixa de diálogo processos. Ver [usando pontos de interrupção](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
->  Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: Anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou, se você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+>  Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou se você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
   
  Em alguns casos, quando você está depurando em uma sessão dos Serviços de Terminal (Área de Trabalho Remota), a lista Processos Disponíveis não exibirá todos os processos disponíveis. Em [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] ou em versões posteriores, se você estiver executando o Visual Studio como um usuário limitado, a lista de Processos Disponíveis não mostrará os processos que estão em execução na sessão 0, usada para serviços e outros processos de servidor, incluindo w3wp.exe. Você pode resolver o problema executando o Visual Studio em uma conta de administrador ou executando o Visual Studio de console do servidor em vez de uma sessão de Terminal Services. Se nenhuma dessas soluções alternativas for possível, uma terceira opção será anexar ao processo digitando vsjitdebugger.exe -p ProcessId na linha de comando do Windows. Você pode determinar o ID do processo usando tlist.exe. Para obter tlist.exe, baixe e instale as Ferramentas de Depuração para o Windows, disponíveis em [Central de Desenvolvedores de Hardware do Windows](/windows-hardware/drivers/dashboard/).  
   

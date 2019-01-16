@@ -20,10 +20,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53926874"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Como: Verificar as configurações de propriedade do IIS
@@ -35,7 +35,7 @@ Você pode definir as propriedades de um aplicativo Web usando a ferramenta de a
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Para verificar as configurações do IIS para o aplicativo Web
 
-1. Abra a janela **Ferramentas Administrativas**: no menu **Iniciar**, aponte para **Programas** e clique em **Ferramentas Administrativas**. Se **Ferramentas Administrativas** não aparecer no menu **Programas**, procure no **Painel de Controle**.
+1. Abra a janela **Ferramentas Administrativas**. Sobre o **inicie** , aponte para **programas**e, em seguida, clique em **ferramentas administrativas**. Se **Ferramentas Administrativas** não aparecer no menu **Programas**, procure no **Painel de Controle**.
 
    -   No Windows 2000, selecione **Gerenciador de Serviços de Internet**.
 

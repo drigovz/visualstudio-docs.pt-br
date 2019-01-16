@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934658"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral da implantação de aplicativos confiáveis
@@ -80,7 +80,7 @@ Você deve seguir estas etapas para tirar proveito da implantação de aplicativ
 -   *CertMgr.exe*, que é um componente do Internet Explorer e, portanto, existe no Windows 98 e todas as versões posteriores. Para obter mais informações, consulte [Certmgr.exe (ferramenta de Gerenciador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
   
 ### <a name="create-a-clickonce-application"></a>Criar um aplicativo ClickOnce  
- Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplicativo cliente combinado com os arquivos de manifesto que descrevem o aplicativo e fornecem parâmetros de instalação. Você pode ativar o seu programa em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando o **Publish** no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Como alternativa, você pode gerar todos os arquivos necessários para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando as ferramentas que estão incluídas com o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obter etapas detalhadas sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, consulte [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplicativo cliente combinado com os arquivos de manifesto que descrevem o aplicativo e fornecem parâmetros de instalação. Você pode ativar o seu programa em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando o **Publish** no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Como alternativa, você pode gerar todos os arquivos necessários para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando as ferramentas que estão incluídas com o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obter etapas detalhadas sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, consulte [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  
   
  Implantação de aplicativo confiável é específica para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]e só pode ser usado com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos.  
   

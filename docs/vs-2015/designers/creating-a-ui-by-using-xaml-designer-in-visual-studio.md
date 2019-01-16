@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837284"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
@@ -91,9 +91,9 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Exibição** Especifica diferentes resoluções e tamanhos de exibição para o aplicativo.
 
- **Orientação** Especifica diferentes orientações para o aplicativo: **Paisagem** ou **retrato**.
+ **Orientação** Especifica diferentes orientações para o aplicativo: Paisagem ou **Retrato**.
 
- **Borda** Especifica diferentes alinhamentos de borda para seu aplicativo: **Ambos**, **esquerda**, **direita**, ou **nenhum**.
+ **Borda** Especifica diferentes alinhamentos de borda para seu aplicativo: Ambos, **Esquerda**, **Direita** ou **Nenhum**.
 
  **Alto Contraste** Visualize o aplicativo com base na configuração de contraste selecionada. Essa configuração, quando definida como um valor diferente do valor **Padrão**, substituirá a propriedade `RequestedTheme` definida no arquivo App.xaml.
 
@@ -142,4 +142,4 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
  À direita de cada valor da propriedade, está um *marcador de propriedade* que é exibido como símbolo de caixa. A aparência do marcador da propriedade indica se existe uma associação de dados ou um recurso aplicado à propriedade. Por exemplo, um símbolo de caixa branca indica um valor padrão, um símbolo de caixa preta normalmente indica que um recurso local foi aplicado, e uma caixa laranja geralmente indica que uma associação de dados foi aplicada. Quando você clica no marcador da propriedade, pode navegar para a definição de um estilo, abrir o construtor da associação de dados ou abrir o selecionador de recurso.
 
 ## <a name="see-also"></a>Consulte também
- [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [passo a passo: Associação de dados no Designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [passo a passo: Associando a dados no Designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

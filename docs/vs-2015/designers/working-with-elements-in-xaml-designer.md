@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49896939"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
@@ -71,9 +71,9 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 1.  Selecione os elementos que deseja alinhar. Você pode selecionar mais de um elemento mantendo pressionada a tecla CTRL ao selecionar os elementos.  
   
-2.  Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Esquerda**, **Centralizar**, **Direita** ou **Alongar**.  
+2.  Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Left**, **Center**, **Right** ou **Stretch**.  
   
-3.  Selecione uma das seguintes propriedades em **VerticalAlignment** na seção **Layout** da janela Propriedades: **Superior**, **Centralizar**, **Inferior** ou **Alongar**.  
+3.  Selecione uma das seguintes propriedades em **VerticalAlignment** na seção **Layout** da janela Propriedades: **Top**, **Center**, **Bottom** ou **Stretch**.  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Para alinhar dois ou mais elementos usando guias de alinhamento  
   

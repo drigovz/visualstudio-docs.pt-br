@@ -25,15 +25,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53867573"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Valores de registro de modo de exibição na janela de registros (C#, C++, Visual Basic, F#)
 
-O **registra** janela exibe conteúdo do registro durante a depuração do Visual Studio. Para obter uma introdução aos conceitos por trás de registros de alto nível e o **registra** janela, consulte [Noções básicas de depuração: janela Registros](../debugger/debugging-basics-registers-window.md).
+O **registra** janela exibe conteúdo do registro durante a depuração do Visual Studio. Para obter uma introdução aos conceitos por trás de registros de alto nível e o **registra** janela, consulte [Noções básicas de depuração: Janela Registros
 
 > [!NOTE]
 > Informações de registro não estão disponíveis para aplicativos SQL ou script.

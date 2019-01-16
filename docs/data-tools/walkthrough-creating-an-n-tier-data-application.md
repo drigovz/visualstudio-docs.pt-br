@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53924261"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Passo a passo: Criar um aplicativo de dados de n camadas
@@ -49,7 +49,7 @@ Durante este passo a passo, você deve executar as seguintes etapas:
 
 -   Gravar código para preencher as tabelas de dados.
 
-![link para vídeo](../data-tools/media/playvideo.gif) para uma versão em vídeo deste tópico, consulte [vídeo de instruções: Criando um aplicativo de dados de N camadas](http://go.microsoft.com/fwlink/?LinkId=115188).
+![link para vídeo](../data-tools/media/playvideo.gif) para uma versão em vídeo deste tópico, consulte [vídeo de instruções: Criando um aplicativo de dados de N camadas
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.

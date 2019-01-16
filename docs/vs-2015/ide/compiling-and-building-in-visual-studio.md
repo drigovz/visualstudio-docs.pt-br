@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53931047"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilando e criando no Visual Studio
@@ -57,4 +57,4 @@ ms.locfileid: "53931047"
 -   Melhorar o desempenho do build usando builds paralelas. Para obter mais informações, consulte [Building Multiple Projects in Parallel (Criando vários projetos paralelamente)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou a postagem do blog [Tuning C++ build parallelism (Ajustando o paralelismo de build do C++)](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Consulte também
- [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [Noções básicas sobre plataformas de Build](../ide/understanding-build-platforms.md) [criando (compilando) projetos de Site](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Como: Criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [Noções básicas sobre plataformas de Build](../ide/understanding-build-platforms.md) [criando (compilando) projetos de Site](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Como: Criar e remover dependências de projeto.
