@@ -9,21 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966450"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228039"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Como: Depurar em um cluster de alto desempenho
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Como: Depurar em um Cluster de alto desempenho (C#, Visual Basic, C++)
+
 A depuração de um programa com vários processamentos em um cluster de alto desempenho é semelhante à depuração de um programa comum em um computador remoto. No entanto, há algumas considerações adicionais. Para requisitos gerais de configuração remota, consulte [depuração remota](../debugger/remote-debugging.md).  
   
  Ao depurar em um cluster de alto desempenho, você pode usar todas as janelas e técnicas de depuração do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que estiverem disponíveis para a depuração remota. Como você está depurando remotamente, no entanto, a janela do console externo não está disponível.  
@@ -34,7 +35,7 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
  Ao depurar um aplicativo paralelo, convém definir um ponto de interrupção em um segmento, processo, ou em um computador específico. Você pode fazer isso criando um ponto de interrupção normal, e depois adicionando um filtro de ponto de interrupção.  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Para abrir a caixa de diálogo Filtro de Ponto de Interrupção  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Para abrir a caixa de diálogo Filtro de Ponto de Interrupção
   
 1.  Clique com o botão direito do mouse em um glifo de ponto de interrupção em uma janela de origem, na janela de **Desmontagem**, na janela de **Pilha de Chamadas** ou na janela de **Pontos de Interrupção**.  
   
