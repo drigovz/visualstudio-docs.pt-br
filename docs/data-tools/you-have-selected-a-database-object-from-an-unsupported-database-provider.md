@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894435"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204236"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Você tiver selecionado um objeto de base de dados de um provedor de base de dados sem suporte
 
@@ -23,17 +23,11 @@ O **Relational Designer** dá suporte a apenas o .NET Framework Data Provider pa
 > [!NOTE]
 > Somente as conexões de dados que usam o provedor de dados. NET Framework para SQL Server são suportadas.
 
-## <a name="to-correct-this-error"></a>Para corrigir este erro
+## <a name="options"></a>Opções
 
-- Clique em **OK**.
+- Clique em **OK** para continuar a criar as classes de entidade que mapeiam para a conexão que usa o provedor de banco de dados sem suporte. Você pode apresentar comportamento inesperado quando você usa provedores de base de dados sem suporte.
 
-   Você pode continuar a criar classes de entidade que mapeiam para a conexão que usa o provedor de banco de dados sem suporte. Você pode apresentar comportamento inesperado quando você usa provedores de base de dados sem suporte.
-
-    - ou -
-
-- Clique em **Cancelar**.
-
-   A ação é interrompida. Crie ou use uma conexão de dados que usa o provedor do. NET Framework para SQL Server.
+- Clique em **Cancelar** para parar a ação. Crie ou use uma conexão de dados diferente que usa o provedor .NET Framework para SQL Server.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f3659cd2a77e57f560abb18b0af83549edd0571
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938167"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204158"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Como: Escrever uma função de relatório de erro em tempo de execução
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Como: Escrever uma função de relatório de erro em tempo de execução (C++)
 Uma função personalizada de relatório para erros em tempo de execução deve ter a mesma declaração que `_CrtDbgReportW`. Deve retornar um valor de 1 para o depurador.  
   
  O exemplo a seguir mostra como definir uma função personalizada de relatório.  

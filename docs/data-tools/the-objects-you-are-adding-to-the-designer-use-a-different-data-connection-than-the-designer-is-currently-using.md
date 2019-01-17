@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935652"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204301"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Os objetos que você está adicionando ao designer usam uma conexão de dados diferente que o designer
 
@@ -22,20 +22,18 @@ Os objetos que você está adicionando ao designer usam uma conexão de dados di
 
 Quando você adiciona itens para o **Object Relational Designer** (**Relational Designer**), todos os itens usam uma conexão de dados compartilhada. (A superfície de design representa <xref:System.Data.Linq.DataContext>, que usa uma única conexão para todos os objetos na superfície.) Se você adicionar um objeto para o designer que usa uma conexão de dados que seja diferente de conexão de dados atualmente sendo usada pelo designer, esta mensagem aparece. Para resolver esse erro, você pode escolher para manter a conexão existente. Se você fizer essa opção, o objeto selecionado não será adicionado. Como alternativa, você pode escolher para adicionar o objeto e para redefinir a conexão de <xref:System.Data.Linq.DataContext> para a nova conexão.
 
-> [!NOTE]
-> Se você clicar **Sim**, classes de entidade todas na **Relational Designer** são mapeados para a nova conexão.
+## <a name="connection-options"></a>Opções de conexão
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Para substituir a conexão existente com a conexão usada pelo objeto selecionado
+- Para substituir a conexão existente com a conexão usada pelo objeto selecionado, clique em **Sim**.
 
-- Clique em **Sim**.
+   O objeto selecionado é adicionado para o **Relational Designer**e o *DataContext* é definido como a nova conexão.
 
-    O objeto selecionado é adicionado para o **Relational Designer**e o *DataContext* é definido como a nova conexão.
+   > [!NOTE]
+   > Se você clicar **Sim**, classes de entidade todas na **Relational Designer** são mapeados para a nova conexão.
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Para continuar a usar a conexão e cancelar existentes que adicionam o objeto selecionado
+- Para continuar a usar a conexão existente e Cancelar adicionando o objeto selecionado, clique em **não**.
 
-- Clique em **Não**.
-
-    A ação é cancelada. O *DataContext.Connection* permanece definido para a conexão existente.
+   A ação é cancelada. O *DataContext.Connection* permanece definido para a conexão existente.
 
 ## <a name="see-also"></a>Consulte também
 

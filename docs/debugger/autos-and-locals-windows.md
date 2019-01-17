@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947407"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204476"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas Autos e locais
 
-O **automóveis** e **Locals** windows mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. O **automóveis** janela mostra as variáveis usadas em torno do ponto de interrupção atual. O **Locals** janela mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [corrigir bugs, escrevendo melhor C# código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
+O **automóveis** e **Locals** windows mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. O **automóveis** janela mostra as variáveis usadas em torno do ponto de interrupção atual. O **Locals** janela mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se esta foi sua primeira tentativa de depurar um código, leia [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md) antes continuar a ler este artigo.
 
  O **automóveis** janela está disponível para C#, código do Visual Basic, C++ e Python, mas não para JavaScript ou F#.
   
@@ -39,7 +39,7 @@ Para abrir o **Locals** janela, durante a depuração, selecione **Debug** > **W
 
 Matrizes e objetos mostram na **automóveis** e **locais** windows como controles de árvore. Selecione a seta à esquerda de um nome de variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de uma <xref:System.IO.FileStream?displayProperty=fullName> do objeto na **Locals** janela:
 
-![FileStream Locals](../debugger/media/locals-filestream.png "FileStream Locals")
+![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
 Um valor de vermelho na **Locals** ou **Autos** janela significa que o valor foi alterado desde a última avaliação. A alteração pode ser proveniente de uma sessão de depuração anterior, ou porque você alterou o valor na janela.
 
@@ -109,7 +109,7 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
 
     Defina um ponto de interrupção na linha `e = 5;` e executar o depurador. Quando a execução for interrompida, o **automóveis** janela será exibida:
 
-    ![C++ Autos](../debugger/media/autos-cplus.png "Autos-c + +")
+    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     A variável `e` não foi inicializada, porque a linha `e = 5` ainda não foi executada.
 

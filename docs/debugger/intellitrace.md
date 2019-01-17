@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d38ea825596d4edb38898b36296bde86f0f4c37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842400"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227324"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>O IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
 Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace para registrar e rastrear o histórico de execução do seu código. Você pode localizar bugs facilmente, porque o IntelliTrace permite:
 
@@ -53,7 +53,7 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise edition (mas não as 
 | | |
 |---------------------| - |
 | **Suporte completo** | – Aplicativos Visual Basic e Visual c# que usam o .NET Framework 2.0 ou versões superiores.<br/>É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br/>Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [passo a passo: Depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicativos do Microsoft Azure com o IntelliTrace, consulte [depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
-| **Suporte limitado** | -Direcionamento de suporte do Windows exibir instantâneos usando o retrocesso do IntelliTrace de aplicativos nativos. Há suporte para apenas os eventos de depurador e a exceção.<br />-.NET core e aplicativos ASP.NET Core tem suporte para determinados os eventos somente controlador MVC, ADO.NET e HTTPClicent na depuração local. Não há suporte para o coletor autônomo para aplicativos .NET Core ou ASP.NET Core.<br />– Aplicativos F# em uma base de avaliação<br />-Aplicativos UWP com suporte somente para eventos |
+| **Suporte limitado** | -Aplicativos do C++ direcionando o suporte do Windows exibir instantâneos usando o retrocesso do IntelliTrace. Há suporte para apenas os eventos de depurador e a exceção.<br />-.NET core e aplicativos ASP.NET Core tem suporte para determinados os eventos somente controlador MVC, ADO.NET e HTTPClient na depuração local. Não há suporte para o coletor autônomo para aplicativos .NET Core ou ASP.NET Core.<br />– Aplicativos F# em uma base de avaliação<br />-Aplicativos UWP com suporte somente para eventos |
 | **Sem suporte** | -Outras linguagens e script<br />– Aplicativos Windows Services, Silverlight, Xbox ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] |
 
 > [!NOTE]
@@ -148,7 +148,7 @@ Por padrão, o IntelliTrace registra apenas eventos do IntelliTrace: eventos, ex
 Você pode configurar o IntelliTrace para capturar instantâneos em cada ponto de interrupção e evento de etapa do depurador. O IntelliTrace registra o estado do aplicativo completo em cada instantâneo, que permite a você exibir variáveis complexas e avaliar expressões.
 
 > [!NOTE]
-> O [coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) não oferece suporte a snaphots captura.
+> O [coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) não oferece suporte a instantâneos de captura.
 
 Ver [inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md).
 
