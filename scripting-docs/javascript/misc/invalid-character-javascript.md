@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633726"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348471"
 ---
 # <a name="invalid-character-javascript"></a>Caractere inválido (JavaScript)
-É composto por um identificador usando um caractere (ou caracteres) não reconhecido como válido pelo [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador. Caracteres válidos usam as seguintes regras:  
+É composto por um identificador usando um caractere (ou caracteres) não reconhecido como válido, o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador. Caracteres válidos usam as seguintes regras:  
   
 -   O primeiro caractere deve ser uma letra ASCII (maiuscula ou minúscula) ou um sublinhado (_).  
   
@@ -38,7 +38,7 @@ ms.locfileid: "24633726"
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Evite usar caracteres que não são parte do [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definição de idioma.  
+-   Evite usar caracteres que não são parte do [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definição de linguagem.  
   
 ## <a name="see-also"></a>Consulte também  
  [Variáveis](../../javascript/variables-javascript.md)   

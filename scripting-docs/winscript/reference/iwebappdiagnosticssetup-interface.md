@@ -14,23 +14,23 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e273f29bee6e4d2aae26c01c477373a735624c8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fc29282ec9d00ff79131765d2bf294c54fa347c6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733996"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344896"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>Interface IWebAppDiagnosticsSetup
-Essa interface é implementada por um aplicativo de depuração PDM para criar objetos COM no processo que está sendo depurado e habilitar o diagnóstico da web. Se o PDM Depurar aplicativo objeto implementa [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), Internet Explorer chama [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) após ele ter sido criado e passa uma referência ao [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). Um aplicativo WWA chama [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) e passa no WWA interface IWebApplicationHost em vez disso. Se [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) foi chamado com um valor não nulo, [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) retorna true. Se não, ela retorna false e chamadas para [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) falhar.  
+Essa interface é implementada por um aplicativo de depuração do PDM para criar objetos COM no processo que está sendo depurado e habilitar o diagnóstico da web. Se o PDM Depurar aplicativo objeto implementa [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), Internet Explorer chamará [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) nele após ele ter sido criado e passa uma referência ao [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). Chama um aplicativo WWA [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) e passa no WWA IWebApplicationHost de interface em vez disso. Se [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) foi chamado com um valor não nulo, [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) retorna true. Se não, ela retorna false e chamadas para [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) falhar.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsSetup`é implementado por v PDM 11.0 e maior. Localizado em. activdbg100.h.  
+>  `IWebAppDiagnosticsSetup` é implementado pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="methods"></a>Métodos  
  Essa interface expõe os métodos a seguir.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Obtém os documentos de texto que são ocultados pelo filtro especificado.|  
+|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Obtém os documentos de texto que estão ocultos, o filtro especificado.|  
 |[IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)|Determina se o documento especificado pertence a um de nós filho deste nó.|

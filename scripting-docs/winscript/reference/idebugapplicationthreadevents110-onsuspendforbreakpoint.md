@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 435ea678133755d02ab9a3f757f0947a83278e45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3ce1510ad9e7b4560a7aaafb8d65d5b0e6143cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725686"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349628"
 ---
 # <a name="idebugapplicationthreadevents110onsuspendforbreakpoint"></a>IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
-Determina se o thread foi totalmente suspenso para um ponto de interrupção e ainda não retomado execução normal.  
+Determina se o thread foi totalmente suspensos para um ponto de interrupção e ainda não retomado execução normal.  
   
 > [!IMPORTANT]
->  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) é implementada por v PDM 11.0 e maior. Localizado em. activdbg100.h.  
+>  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,7 +34,7 @@ HRESULT OnSuspendForBreakPoint( void );
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Este método não tem parâmetros.  
+ Esse método não tem parâmetros.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

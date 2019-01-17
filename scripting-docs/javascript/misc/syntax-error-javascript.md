@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632956"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345364"
 ---
 # <a name="syntax-error-javascript"></a>Erro de sintaxe (JavaScript)
-Você criou uma instrução que viola uma ou mais das regras gramaticais de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Você criou uma instrução que viola uma ou mais das regras gramaticais do [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
 -   Verifique a sintaxe do programa na linha número indicado.  
   
--   Procure por parênteses direcionamento incorreto ou chaves.  
+-   Procure por desperdiçar parênteses ou chaves.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto Error](../../javascript/reference/error-object-javascript.md)

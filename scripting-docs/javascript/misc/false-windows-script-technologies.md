@@ -24,14 +24,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8ddf7ae6d3328f00ea3d143251f7fa44e364560a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632846"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344493"
 ---
 # <a name="false-windows-script-technologies"></a>False (Tecnologias de script do Windows)
-O **False** palavra-chave tem um valor igual a 0.  
+O **falsos** palavra-chave tem um valor igual a 0.  
   
 ## <a name="see-also"></a>Consulte também  
  [palavra-chave True](../../javascript/misc/true-keyword.md)

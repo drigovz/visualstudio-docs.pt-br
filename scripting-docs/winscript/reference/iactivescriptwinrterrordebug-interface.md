@@ -1,5 +1,5 @@
 ---
-title: Interface IActiveScriptWinRTErrorDebug | Microsoft Docs
+title: IActiveScriptWinRTErrorDebug Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34fcc4f1dc3ebc21f9303ba49f1709f2d023a29a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2355b9aa38abbed2ca66964a07bb47082eb76c32
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725426"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346495"
 ---
 # <a name="iactivescriptwinrterrordebug-interface"></a>Interface IActiveScriptWinRTErrorDebug
 Implementado pelo mecanismo de JavaScript para fornecer informações estendidas de erro de tempo de execução do Windows de um [enumeração BREAKREASON](../../winscript/reference/breakreason-enumeration.md) eventos. Você pode fazer uma QueryInterface para obtê-lo de um [IActiveScriptError](../../winscript/reference/iactivescripterror.md) objeto.  

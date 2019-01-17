@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642066"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345429"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Constantes, enumerações e estruturas de depurador do script ativo
 As seguintes constantes, enumerações e estruturas são usadas pelas interfaces ativas da depuração.  
@@ -31,7 +31,7 @@ As seguintes constantes, enumerações e estruturas são usadas pelas interfaces
 |Constantes|Descrição|  
 |---------------|-----------------|  
 |[Constantes APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)|Indica o estado atual da depuração para aplicativos e threads.|  
-|[DEBUG_TEXT Constants](../../winscript/reference/debug-text-constants.md)|Opção sinalizadores usados durante [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
+|[DEBUG_TEXT Constants](../../winscript/reference/debug-text-constants.md)|Sinalizadores de opção usados durante [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
 |[TEXT_DOC_ATTR Constants](../../winscript/reference/text-doc-attr-constants.md)|Descrevem os atributos do documento.|  
   
 |Enumerações|Descrição|  

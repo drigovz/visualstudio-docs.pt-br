@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f21bbfacc4918ff0e67731d5efd5521f371cbdf9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dc5e7a7bb6c91bd852a8fd2024b708166c085209
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734266"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349771"
 ---
 # <a name="sourcetextattr-enumeration"></a>Enumeração SOURCE_TEXT_ATTR
 Descrevem os atributos de um único caractere de texto de origem.  
@@ -34,12 +34,12 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
   
 |Membro|Valor|Descrição|  
 |------------|-----------|-----------------|  
-|SOURCETEXT_ATTR_KEYWORD|0x0001|O caractere é parte de uma palavra-chave idioma, por exemplo, a palavra-chave VBScript `While`.|  
+|SOURCETEXT_ATTR_KEYWORD|0x0001|O caractere é parte de uma palavra-chave language, por exemplo, a palavra-chave VBScript `While`.|  
 |SOURCETEXT_ATTR_COMMENT|0x0002|O caractere é parte de um bloco de comentário.|  
 |SOURCETEXT_ATTR_NONSOURCE|0x0004|O caractere não é parte do texto de origem de linguagem compilada. Por exemplo, o HTML ao redor de um bloco de script.|  
-|SOURCETEXT_ATTR_OPERATOR|0x0008|O caractere é parte de um operador de idioma. Por exemplo:, o operador aritmético  **+** .|  
-|SOURCETEXT_ATTR_NUMBER|0x0010|O caractere é parte de uma constante numérica de idioma.  Por exemplo, a constante 3,14159.|  
-|SOURCETEXT_ATTR_STRING|0x0020|O caractere é parte de uma constante de cadeia de caracteres do idioma. Por exemplo, a cadeia de caracteres "Olá, mundo".|  
+|SOURCETEXT_ATTR_OPERATOR|0x0008|O caractere é parte de um operador de linguagem. Por exemplo:, o operador aritmético **+**.|  
+|SOURCETEXT_ATTR_NUMBER|0x0010|O caractere é parte de uma constante numérica da linguagem.  Por exemplo, a constante 3,14159.|  
+|SOURCETEXT_ATTR_STRING|0x0020|O caractere é parte de uma constante de cadeia de caracteres de idioma. Por exemplo, a cadeia de caracteres "Hello World".|  
 |SOURCETEXT_ATTR_FUNCTION_START|0x0040|O caractere indica o início de um bloco de função|  
   
 ## <a name="remarks"></a>Comentários  

@@ -18,24 +18,24 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728386"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344012"
 ---
-# <a name="iperpropertybrowsing2-interface-1"></a>Interface IPerPropertyBrowsing2 1
-Acessa as informações nas páginas de propriedade oferecidos por um objeto.  
+# <a name="iperpropertybrowsing2-interface-1"></a>Interface 1 IPerPropertyBrowsing2
+Acessa as informações nas páginas de propriedades oferecidas por um objeto.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |`GetDisplayString`|Retorna uma cadeia de caracteres de texto que descreve a propriedade especificada.|  
 |`MapPropertyToPage`|Retorna o CLSID da página de propriedades que permite a manipulação da propriedade especificada.|  
 |`GetPredefinedStrings`|Retorna uma matriz de cadeias de caracteres de contado (`LPOLESTR` ponteiros) listando as descrições dos valores permitidos que pode aceitar a propriedade especificada.|  
-|`SetPredefinedValue`|Define o valor da propriedade para o valor predefinido identificado pelo token`dwCookie.`|  
+|`SetPredefinedValue`|Define o valor da propriedade como o valor predefinido identificado pelo token `dwCookie.`|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: dbgprop.h
+ Header: dbgprop.h

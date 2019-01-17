@@ -1,5 +1,5 @@
 ---
-title: Não foi encontrada | Microsoft Docs
+title: Rótulo não encontrado | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633076"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346964"
 ---
 # <a name="label-not-found"></a>Rótulo não encontrado
-Você fez uma referência a um rótulo que não existe. Rótulos podem ser usados para marcar os blocos de código, mas em um escopo especificado, deve ser exclusivos.  
+Você fez uma referência a um rótulo que não existe. Rótulos pode ser usado para marcar os blocos de código, mas em um escopo especificado, deve ser exclusivos.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
 -   Verifique se que você não digitou errado o nome do rótulo.  
   
--   Certifique-se de que todas as referências de rótulo são feitas para rótulos que foram definidos no escopo atual (Isso inclui definições de encaminhamento).  
+-   Certifique-se de que todas as referências de rótulo são feitas para rótulos que foram definidos no escopo atual (Isso inclui as definições de encaminhamento).  
   
 ## <a name="see-also"></a>Consulte também  
  [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)   

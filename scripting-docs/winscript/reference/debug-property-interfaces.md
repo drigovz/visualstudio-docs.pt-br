@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b45800a1c8fa570299dc8950b3e8979fe949faaf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64e2aa684862d6b05b1a4051c31d23656a741c37
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641176"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344589"
 ---
 # <a name="debug-property-interfaces"></a>Interfaces de propriedade de depuração
 O arquivo de cabeçalho DbgProp.h fornece as interfaces listadas nesta seção.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- As seguintes interfaces, estruturas e enumerações descrevem as propriedades hierárquicas do aplicativo que está sendo depurado:  
+ Interfaces, estruturas e enumerações a seguir descrevem as propriedades hierárquicas do aplicativo que está sendo depurado:  
   
 -   [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
   

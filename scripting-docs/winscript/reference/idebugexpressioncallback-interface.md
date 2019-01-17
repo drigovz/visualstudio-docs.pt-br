@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8ec9ca99a75b4e439cecab8ecc36193d04997b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e97b5755a8ea9fefb7456d255a2c0b417c3395cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726536"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347574"
 ---
 # <a name="idebugexpressioncallback-interface"></a>Interface IDebugExpressionCallBack
-Fornece eventos de status relacionados ao andamento de um `IDebugExpression` avaliação.  
+Fornece eventos de status relacionados ao progresso de um `IDebugExpression` avaliação.  
   
 ## <a name="methods"></a>Métodos  
  Além dos métodos herdados de `IUnknown`, o `IDebugExpressionCallBack` interface expõe os métodos a seguir.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugExpressionCallBack::onComplete](../../winscript/reference/idebugexpressioncallback-oncomplete.md)|Indica que a avaliação da expressão é concluída.|
+|[IDebugExpressionCallBack::onComplete](../../winscript/reference/idebugexpressioncallback-oncomplete.md)|Indica que a avaliação da expressão foi concluída.|

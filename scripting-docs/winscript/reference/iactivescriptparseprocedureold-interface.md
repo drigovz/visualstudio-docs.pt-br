@@ -1,5 +1,5 @@
 ---
-title: Interface IActiveScriptParseProcedureOld | Microsoft Docs
+title: IActiveScriptParseProcedureOld Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99cff9cd4d04c5d25489b6cc4c9b9af93792dc2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa7ea909680afdb65004f47e458d735e82ead929
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724416"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349980"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>Interface IActiveScriptParseProcedureOld
-Permite que o texto do código de origem para obter os procedimentos a serem adicionados ao script. Interpretado para linguagens de scripts que não têm um ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IActiveScriptParse` ou `IPersist*`) para adicionar os procedimentos de script para o espaço de nome.  
+Permite que o texto do código fonte para obter os procedimentos a serem adicionados ao script. Para linguagens de script interpretadas que não têm um ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IActiveScriptParse` ou `IPersist*`) para adicionar os procedimentos de script para o espaço para nome.  
   
 > [!NOTE]
 >  Essa interface é preterida em favor do `IActiveScriptParseProcedure` interface.  
@@ -36,7 +36,7 @@ Permite que o texto do código de origem para obter os procedimentos a serem adi
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analisa o procedimento de código fornecido e adiciona o procedimento para o espaço de nome.|  
+|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analisa o procedimento de código fornecido e adiciona o procedimento para o espaço para nome.|  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

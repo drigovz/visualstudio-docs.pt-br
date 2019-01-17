@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0bc287026c88687274ad63cc6c1cd03309af8b93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632736"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345351"
 ---
 # <a name="array-or-arguments-object-expected"></a>Objeto de matriz ou argumentos esperado
-Você não forneceu uma matriz como um argumento. Esse erro aplica-se para o **Function.prototype.apply** método apenas. Se especificado, o segundo argumento para essa função deve ser um `Array` objeto ou um **argumentos** objeto.  
+Você não forneceu uma matriz como um argumento. Esse erro se aplica para o **Function.prototype.apply** somente no método. Se especificado, o segundo argumento para essa função deve ser um `Array` objeto ou uma **argumentos** objeto.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

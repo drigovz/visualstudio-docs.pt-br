@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 369dc8d182efe7bf9697454d0e4b1c9c1a10c027
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9aab3d7abeecd22e830c68f174896df0e7df2da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727626"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344014"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>Interface IMachineDebugManagerEvents
-Sinaliza as alterações na lista de aplicativos em execução mantida pelo gerenciador de depuração do computador. Essa interface pode ser usada pelo depurador IDE para exibir uma lista dinâmica de aplicativos.  
+Sinaliza as alterações na lista de aplicativos em execução mantida pelo gerenciador de depuração do computador. Essa interface pode ser usada pelo IDE do depurador para exibir uma lista dinâmica de aplicativos.  
   
  Além dos métodos herdados de `IUnknown`, o `IMachineDebugManagerEvents` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825494"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348692"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>O tamanho da matriz deve receber um número finito e positivo
 Ao definir a **comprimento** propriedade de existente **matriz** objeto, que você especificou um tamanho da matriz que não era um número positivo ou zero. Esse erro ocorre quando você atribui um valor para o **comprimento** propriedade de um `Array` objeto que é negativo ou não é um número (`NaN`). Observe que [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automaticamente converte números fracionários em inteiros.  

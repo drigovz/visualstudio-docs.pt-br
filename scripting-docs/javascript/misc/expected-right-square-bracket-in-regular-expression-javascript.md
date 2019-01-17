@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804410"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349420"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>']' esperado na expressão regular (JavaScript)
 Você tentou criar uma classe de caractere para uma correspondência de expressão regular, mas não incluiu o colchete direito. Combinações de caracteres literal individuais podem ser montadas em classes de caracteres, colocando-os entre colchetes. Uma classe de caracteres corresponde a qualquer caractere que ele contém. Por exemplo, / [abc] corresponde a qualquer uma das letras "a", "b", ou "c".  

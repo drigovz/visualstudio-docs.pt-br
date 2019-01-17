@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f628ca84bf9c36e6be49d283481a06addf61bcca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632966"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348848"
 ---
 # <a name="the-use-of-a-future-reserved-word-for-an-identifier-is-invalid"></a>O uso de uma palavra reservada futura para um identificador é inválido
-1049: o uso de uma palavra reservada futura para um identificador é inválido  
+1049: O uso de uma palavra reservada futura para um identificador é inválido  
   
  Você não pode usar uma palavra reservada futura como o nome de uma variável, função ou outro identificador definido pelo usuário.  
   

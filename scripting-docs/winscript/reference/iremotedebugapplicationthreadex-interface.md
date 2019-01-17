@@ -14,19 +14,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4d9998a412aa3ecc9316a2595ac9daf707fd873
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 071a34b16ce9b3cbe7e73f44a01de889d113b7e4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728616"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344185"
 ---
 # <a name="iremotedebugapplicationthreadex-interface"></a>Interface IRemoteDebugApplicationThreadEx
 Representa um thread de execução dentro de um aplicativo específico.  
   
  Além dos métodos herdados de `IUnknown`, o `IRemoteDebugApplicationThreadEx` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  

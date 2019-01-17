@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 28514e4f1691364f68c2f60f3cab3bb0c18b1d12
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633036"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348003"
 ---
 # <a name="javascript-object-expected"></a>Objeto do JavaScript esperado
-Você tentou passar não[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto para uma função interna que espera um [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto. Várias funções internas exigem objetos definidos no [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (em vez de objetos definidos pelo host ou um componente externo, como um controle).  
+Você tentou transmitir um não -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto para uma função interna que espera um [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto. Várias funções internas exigem objetos definidos no [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (em vez de objetos definidos pelo host ou um componente externo como um controle).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Certifique-se de que o objeto que você está passando como um parâmetro é do tipo correto.  
+-   Certifique-se de que o objeto que está passando como um parâmetro é do tipo correto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objetos e matrizes](../../javascript/objects-and-arrays-javascript.md)   

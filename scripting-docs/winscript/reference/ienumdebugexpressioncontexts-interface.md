@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 691fe68e78567026bd6ad96883b59aa276481191
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728356"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347587"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>Interface IEnumDebugExpressionContexts
 Enumera uma coleção de objetos `IDebugExpressionContexts`.  
   
  Além dos métodos herdados de `IUnknown`, o `IEnumDebugExpressionContexts` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Recupera um número de segmentos na sequência de enumeração especificado.|  
+|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Recupera um número especificado de segmentos na sequência de enumeração.|  
 |[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Ignora um número especificado de segmentos em uma sequência de enumeração.|  
 |[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Redefine uma sequência de enumeração para o início.|  
-|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Cria um enumerador que contém o mesmo estado do enumerador atual.|
+|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Cria um enumerador que contém o mesmo estado que o enumerador atual.|

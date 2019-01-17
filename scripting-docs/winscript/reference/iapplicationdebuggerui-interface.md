@@ -1,5 +1,5 @@
 ---
-title: Interface IApplicationDebuggerUI | Microsoft Docs
+title: IApplicationDebuggerUI Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbaa04f6790ffc4d80447a6745ca82cc8dba6802
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e3c5f9e4cabeb4fba31bb039a7cf673ca1759860
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725136"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348900"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>Interface IApplicationDebuggerUI
-Implementado pelo ambiente de desenvolvimento integrado (IDE) do depurador (além `IApplicationDebugger`) para fornecer mais controle sobre a interface do usuário (IU) do depurador de um componente externo.  
+Implementado pelo ambiente de desenvolvimento integrado (IDE) do depurador (além `IApplicationDebugger`) para dar a um componente externo mais controle sobre a interface do usuário (IU) do depurador.  
   
  Além dos métodos herdados de `IUnknown`, o `IApplicationDebuggerUI` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Coloca a janela que contém o documento de depuração especificado para a parte superior do depurador de interface do usuário.|  
-|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Coloca a janela que contém o contexto do documento fornecido na parte superior na interface de usuário do depurador e rolar a janela para o contexto.|
+|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Traz a janela que contém o documento de depuração especificada na parte superior no depurador de interface do usuário.|  
+|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Traz a janela que contém o contexto de documento fornecido na parte superior da interface do usuário do depurador e rola a janela para o contexto.|

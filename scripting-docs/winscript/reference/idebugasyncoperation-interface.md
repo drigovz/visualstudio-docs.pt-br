@@ -1,5 +1,5 @@
 ---
-title: Interface IDebugAsyncOperation | Microsoft Docs
+title: IDebugAsyncOperation Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 157ed1248535855fcb53ca2eb6f49427fea94149
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0088fddd2661d6711c9a18495f4b8704f782b3c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726096"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349979"
 ---
 # <a name="idebugasyncoperation-interface"></a>Interface IDebugAsyncOperation
-O processo de depuração Manager implementa o `IDebugAsyncOperation` interface. Um mecanismo de linguagem chama o `IDebugApplication::CreateAsyncDebugOperation` método para obter uma referência a esta interface. O mecanismo de linguagem pode usar o `IDebugAsyncOperation` interface para fornecer acesso assíncrono a uma operação síncrona de depuração.  
+O Gerenciador de depuração do processo implementa o `IDebugAsyncOperation` interface. Um mecanismo de linguagem chama o `IDebugApplication::CreateAsyncDebugOperation` método para obter uma referência a esta interface. O mecanismo de linguagem pode usar o `IDebugAsyncOperation` interface para fornecer acesso assíncrono a uma operação de depuração síncrona.  
   
  Além dos métodos herdados de `IUnknown`, o `IDebugAsyncOperation` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|Retorna a operação síncrona depuração associada a este objeto.|  
+|[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|Retorna a operação de depuração síncrona associada a este objeto.|  
 |[IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)|Faz com que a operação assíncrona começar.|  
 |[IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)|Cancela uma operação.|  
 |[IDebugAsyncOperation::QueryIsComplete](../../winscript/reference/idebugasyncoperation-queryiscomplete.md)|Determina se a operação de depuração foi concluída.|  
-|[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|Fornece o valor de retorno e parâmetro de objeto de retorno da operação síncrona de depuração.|
+|[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|Fornece o valor de retorno e parâmetro de objeto de retorno da operação de depuração síncrona.|

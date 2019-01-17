@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632866"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349225"
 ---
 # <a name="expected-identifier-javascript"></a>Identificador esperado (JavaScript)
-Você usou algo diferente de um identificador em um contexto onde era necessário. Um identificador pode ser:  
+Você usou algo diferente de um identificador em um contexto em que era necessário. Um identificador pode ser:  
   
 -   uma variável  
   

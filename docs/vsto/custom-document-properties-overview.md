@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936887"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349498"
 ---
 # <a name="custom-document-properties-overview"></a>Visão geral das propriedades de documento personalizadas
 
@@ -38,7 +38,7 @@ Esta propriedade contém o CLSID de uma interface no componente de carregador de
 
 Esta propriedade contém uma cadeia de caracteres que fornece detalhes sobre o manifesto de implantação para a personalização. Para obter mais informações sobre manifestos, consulte [manifestos do aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Valor da propriedade The_AssemblyLocation pode ter formatos diferentes, dependendo de como a solução é implantada:
+ O \_AssemblyLocation valor da propriedade pode ter diferentes formatos, dependendo de como a solução é implantada:
 
 - Se a solução for publicada para ser instalado a partir de um site da Web, o caminho UNC ou uma unidade de CD ou USB, a propriedade assemblylocation tem o formato *DeploymentManifestPath*|*SolutionID*. A cadeia de caracteres a seguir está um exemplo:
 
