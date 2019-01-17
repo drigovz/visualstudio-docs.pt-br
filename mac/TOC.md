@@ -1,7 +1,15 @@
-# [Introdução do Visual Studio para Mac](index.md)
-# [Tour do IDE](ide-tour.md)
+---
+ms.openlocfilehash: 641b6b74f523223e48178bdd69ac03b4c3d3392c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315469"
+---
+# [Visual Studio para Mac](index.md)
+# [Tour do IDE](/visualstudio/mac/ide-tour/)
 
-# [Instalação](installation.md)
+# [Instalação](/visualstudio/mac/installation/)
 ## [Instalar e usar por trás de um firewall ou proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalar uma versão prévia](install-preview.md)
 ## [Atualizar](update.md)
@@ -22,7 +30,7 @@
 ## [Gerenciando referências em um projeto](managing-references-in-a-project.md)
 ### [Passo a passo – incluindo um pacote do NuGet em seu projeto](nuget-walkthrough.md)
 ## [Gerenciamento de Recursos do Aplicativo](managing-app-resources.md)
-## [Como abrir várias soluções ou instâncias](open-multiple-solutions.md)
+## [Como: Abrir várias soluções ou instâncias](open-multiple-solutions.md)
 
 # [Editor de Origem](source-editor.md)
 ## [Refatoração](refactoring.md)
@@ -65,6 +73,7 @@
 ### [Usando ferramentas do Unity](using-vsmac-tools-unity.md)
 ### [Usando o .NET 4.x no Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Log de Alterações](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Aplicativos móveis com Xamarin](/xamarin/)
 
 # [Acessibilidade](accessibility.md)
 

@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820910"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227714"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>Usar o coletor autônomo do IntelliTrace
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usando o coletor IntelliTrace autônomo (C#, Visual Basic)
+
 O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico IntelliTrace para seus aplicativos em servidores de produção ou em outros ambientes, sem instalar o Visual Studio no computador de destino e sem alterar o ambiente do sistema de destino. O coletor independente do IntelliTrace funciona na Web, SharePoint, WPF e aplicativos do Windows Forms. Quando você terminar a coleta de dados, basta excluir o coletor para desinstalá-lo.
 
  Veja o IntelliTrace em ação: [Coletando e analisando dados IntelliTrace em produção para depuração (vídeo do Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -118,7 +119,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 2.  Usar o Windows **icacls** comando para conceder permissões completas de administrador para o diretório do coletor de servidor. Por exemplo:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Amp;lt;1}{2&gt;&lt;domain\administratorid&gt;&lt;2}{3&gt;":f&lt;3 >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3.  Para coletar dados de um aplicativo da web ou do SharePoint:
 
@@ -126,7 +127,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
          Por exemplo:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domínio \ id_do_usuário >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  Conceda ao pool de aplicativos para o aplicativo da web ou do SharePoint permissões de leitura e execução para o diretório do coletor.
 
@@ -212,7 +213,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 1.  Para iniciar a coleta de dados, abra uma janela de comando do PowerShell como administrador e execute este comando:
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  Depois de executar esse comando, digite **Y** para confirmar que você deseja iniciar a coleta de dados.
@@ -254,7 +255,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 1.  Para iniciar o aplicativo e coletar dados ao mesmo tempo, use a seguinte sintaxe:
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\< FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Por exemplo, para coletar dados de um aplicativo chamado **MyApp**:
 

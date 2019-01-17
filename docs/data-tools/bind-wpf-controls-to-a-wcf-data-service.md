@@ -16,12 +16,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5a44ffd5c524d1f7e410f203e17b647907e32d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925177"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54269911"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 
@@ -284,7 +284,7 @@ Compile e execute o aplicativo para verificar se é possível exibir e atualizar
 
 3. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto **AdventureWorksSalesEditor**.
 
-4. No menu de contexto, em **Depurar**, clique em **Iniciar nova instância**.
+4. No menu de atalho (menu de contexto), sob **Debug**, clique em **iniciar nova instância**.
 
      O aplicativo é executado. Verifique o seguinte:
 
@@ -312,6 +312,6 @@ Depois de completar este passo a passo, você poderá realizar as seguintes tare
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Associar controles do WPF a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md)
-- [Visão geral do WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [WCF overview (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Visão geral do Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
 - [Visão geral (.NET Framework) de vinculação de dados](/dotnet/framework/wpf/data/data-binding-overview)
