@@ -14,26 +14,26 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2888a6d781ecd501128545e483971a47859d9cda
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e5e5274e8a3d1c81ce010afc3893b27510a0fad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727056"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348354"
 ---
 # <a name="idebugproperty-interface"></a>Interface IDebugProperty
-Usado para descrever a qualquer propriedade hierárquica da entidade que está sendo depurada que tem um nome, tipo e valor. Mais comumente, `IDebugProperty` é usado para descrever o resultado da avaliação de expressão, avaliação de instrução ou avaliação de registro.  
+Usado para descrever qualquer propriedade hierárquica da entidade que está sendo depurada que tem um nome, tipo e valor. Mais comumente, `IDebugProperty` é usado para descrever o resultado da avaliação da expressão, instrução avaliação ou avaliação do registro.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  A tabela a seguir mostra os métodos do `IDebugProperty` Interface.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugProperty::GetPropertyInfo](../../winscript/reference/idebugproperty-getpropertyinfo.md)|Obter o `DebugPropertyInfo` que descreve esse`IDebugProperty``.`|  
+|[IDebugProperty::GetPropertyInfo](../../winscript/reference/idebugproperty-getpropertyinfo.md)|Obter o `DebugPropertyInfo` que descreve esse `IDebugProperty``.`|  
 |[IDebugProperty::GetExtendedInfo](../../winscript/reference/idebugproperty-getextendedinfo.md)|Obtém as informações estendidas em uma propriedade.|  
 |[IDebugProperty::SetValueAsString](../../winscript/reference/idebugproperty-setvalueasstring.md)|Define o valor de uma propriedade de uma cadeia de caracteres.|  
 |[IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)|Enumera os membros de uma propriedade.|  
 |[IDebugProperty::GetParent](../../winscript/reference/idebugproperty-getparent.md)|Obtém o pai de uma propriedade.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: dbgprop.h
+ Header: dbgprop.h

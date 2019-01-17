@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0c8918e277fa9c7183e6d46a4853824a74fa4548
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087367"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346833"
 ---
 # <a name="scriptprophostkeepalive-property"></a>Propriedade SCRIPTPROP_HOSTKEEPALIVE
 Usado para especificar se o mecanismo de script deve ser mantido totalmente funcional se houver referências pendentes.  

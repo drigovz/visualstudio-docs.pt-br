@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2dabf754b2bfb4b20555b41457df04d54a5c31c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632796"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346794"
 ---
 # <a name="string-expected"></a>Cadeia de caracteres esperada
-Você tentou invocar o **String.prototype.toString** ou **String.prototype.valueOf** método em um objeto de um tipo diferente de `String`. O objeto desse tipo de chamada deve ser do tipo `String`.  
+Você tentou invocar o **String.prototype.toString** ou **String.prototype.valueOf** método em um objeto de um tipo diferente de `String`. O objeto desse tipo de invocação deve ser do tipo `String`.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

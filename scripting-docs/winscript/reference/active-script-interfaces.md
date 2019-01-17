@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc3bc5ed2b78f2577fdd5a9a715a210240e91e96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7607616b2cba72010cc25bcfccc5a373de606302
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641466"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344324"
 ---
 # <a name="active-script-interfaces"></a>Interfaces de script ativo
 O arquivo de cabeçalho ActivScp.h fornece as interfaces, enumerações e códigos de erro listados nesta seção.  
@@ -31,17 +31,17 @@ O arquivo de cabeçalho ActivScp.h fornece as interfaces, enumerações e códig
   
 -   [Interface IActiveScript](../../winscript/reference/iactivescript.md)  
   
--   [Interface IActiveScriptError](../../winscript/reference/iactivescripterror.md)  
+-   [IActiveScriptError Interface](../../winscript/reference/iactivescripterror.md)  
   
 -   [IActiveScriptGarbageCollector Interface](../../winscript/reference/iactivescriptgarbagecollector-interface.md)  
   
 -   [Interface IActiveScriptParse](../../winscript/reference/iactivescriptparse.md)  
   
--   [Interface IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)  
+-   [IActiveScriptParse32 Interface](../../winscript/reference/iactivescriptparse32.md)  
   
 -   [Interface IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)  
   
--   [Interface IActiveScriptParseProcedure32](../../winscript/reference/iactivescriptparseprocedure32.md)  
+-   [IActiveScriptParseProcedure32 Interface](../../winscript/reference/iactivescriptparseprocedure32.md)  
   
 -   [IActiveScriptParseProcedureOld Interface](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
   

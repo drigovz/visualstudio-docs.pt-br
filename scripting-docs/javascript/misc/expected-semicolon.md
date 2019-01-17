@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804332"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347197"
 ---
 # <a name="expected-"></a>';' esperado
 Você tentou colocar mais de uma instrução em uma linha, mas não separá-los com ponto e vírgula. Ponto e vírgula é usada para encerrar as instruções. Embora você pode colocar várias instruções em uma única linha, cada um deles deve ser delimitado do próximo com um ponto e vírgula.  

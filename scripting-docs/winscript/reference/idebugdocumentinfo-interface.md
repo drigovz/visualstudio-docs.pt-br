@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5f6bf756a5df5f94804efec40822ed500c0e7f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e0c01803f49204d2f0de40bec07b368f176fb80
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726376"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349329"
 ---
 # <a name="idebugdocumentinfo-interface"></a>Interface IDebugDocumentInfo
 Fornece informações sobre um documento, que pode ou não ser instanciado.  
   
  Além dos métodos herdados de `IUnknown`, o `IDebugDocumentInfo` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  

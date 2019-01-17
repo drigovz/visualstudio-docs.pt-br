@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8e526faf8c83b8cb322d63a471aab8def063b33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 38d1a297884dd84dd5fc39f96a244787f50da115
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725506"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349927"
 ---
 # <a name="idebugapplicationthreadevents110onresumefrombreakpoint"></a>IDebugApplicationThreadEvents110::OnResumeFromBreakPoint
-O thread está voltando a partir de um ponto de interrupção e ficará ativo novamente.  
+O thread está voltando de um ponto de interrupção e estará ativo novamente.  
   
 > [!IMPORTANT]
->  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) é implementada por v PDM 11.0 e maior. Localizado em. activdbg100.h.  
+>  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,7 +34,7 @@ HRESULT OnResumeFromBreakPoint( void );
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Este método não tem parâmetros.  
+ Esse método não tem parâmetros.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

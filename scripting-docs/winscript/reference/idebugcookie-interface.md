@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23f6796c278807951bbc7cfa37bec48e4dd73f4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d47995fbf6c713af0f1d0213dbf5c3c98d54a0e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725976"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344013"
 ---
 # <a name="idebugcookie-interface"></a>Interface IDebugCookie
-Permite que o cookie de depuração a ser definido para uso com o `IMachineDebugManagerCookie` interface. Para obter mais informações, consulte [IMachineDebugManagerCookie Interface](../../winscript/reference/imachinedebugmanagercookie-interface.md). Essa interface é implementada pelo processo de depuração Manager (PDM) e consumido pelo script depuradores.  
+Permite que o cookie de depuração a ser definido para uso com o `IMachineDebugManagerCookie` interface. Para obter mais informações, consulte [IMachineDebugManagerCookie Interface](../../winscript/reference/imachinedebugmanagercookie-interface.md). Essa interface é implementada pelo processo de depuração PDM (Gerenciador de) e consumida por depuradores de script.  
   
 ## <a name="methods"></a>Métodos  
  Além dos métodos herdados de `IUnknown`, o `IDebugCookie` interface expõe os métodos a seguir.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Define o cookie do aplicativo de depuração.|  
+|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Define o cookie de depuração do aplicativo.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)

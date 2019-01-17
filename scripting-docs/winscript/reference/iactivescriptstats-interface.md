@@ -1,5 +1,5 @@
 ---
-title: Interface IActiveScriptStats | Microsoft Docs
+title: IActiveScriptStats Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d459b89bde609dfdf5963d4b6b10b24db4706a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725046"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350135"
 ---
 # <a name="iactivescriptstats-interface"></a>Interface IActiveScriptStats
 Permite que um host consultar as estatísticas de um script em execução. O host pode usar essas informações para determinar se o script levou muito tempo para concluir.  
   
  Além dos métodos herdados de `IUnknown`, o `IActiveScriptStats` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  

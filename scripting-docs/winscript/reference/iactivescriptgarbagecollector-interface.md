@@ -1,5 +1,5 @@
 ---
-title: Interface IActiveScriptGarbageCollector | Microsoft Docs
+title: IActiveScriptGarbageCollector Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55fd4bc91ba158ebbfa16df169ec7b39c7176ad5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6809fe089c2cd3f060cb4591b7c4d1ff12b01e97
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645706"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346248"
 ---
 # <a name="iactivescriptgarbagecollector-interface"></a>Interface IActiveScriptGarbageCollector
-Fornece um método para iniciar a coleta de lixo. Esta interface deve ser implementada por mecanismos de Script ativo que deseja limpar seus recursos.  
+Fornece um método para iniciar a coleta de lixo. Essa interface deve ser implementada por mecanismos de Script ativo que deseja limpar seus recursos.  
   
 ## <a name="methods"></a>Métodos  
   

@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b34e2c45d7e94c72ade62780f46f4b5c7c22405e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f3edf7e8a1495be99d2c5130c307acae92a96b11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725566"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344181"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
-Determina se esse thread está em um estado que processará as chamadas feitas usando o thread do PDM alternância de mecanismos, como SynchronousCallInThread.  
+Determina se esse thread está em um estado que irá processar chamadas feitas usando mecanismos, como SynchronousCallInThread de alternância de threads do PDM.  
   
 > [!IMPORTANT]
->  [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) é implementada por v PDM 11.0 e maior. Localizado em. activdbg100.h.  
+>  [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,7 +35,7 @@ HRESULT IsThreadCallable([out, annotation("_Out_")] BOOL * pfIsCallable);
   
 #### <a name="parameters"></a>Parâmetros  
  `pfIsCallable`  
- [out] `true` se o thread é chamado, caso contrário, `false`.  
+ [out] `true` se o thread pode ser chamado, caso contrário, `false`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md)

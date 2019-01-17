@@ -14,25 +14,25 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 110e04d1c990f1b22f9740d8118a47f485dd041e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d7bd38a0fbbdd596f6a1f6bb040190dddca78bf9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725996"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348991"
 ---
 # <a name="idebugapplicationnode-interface"></a>Interface IDebugApplicationNode
-O `IDebugApplicationNode` interface estende a funcionalidade do `IDebugDocumentProvider` interface fornecendo um contexto de uma árvore de projeto.  
+O `IDebugApplicationNode` interface estende a funcionalidade do `IDebugDocumentProvider` interface fornecendo um contexto dentro de uma árvore de projeto.  
   
  Além dos métodos herdados de `IDebugDocumentProvider`, o `IDebugApplicationNode` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |[IDebugApplicationNode::EnumChildren](../../winscript/reference/idebugapplicationnode-enumchildren.md)|Enumera os nós filho deste nó de aplicativo.|  
 |[IDebugApplicationNode::GetParent](../../winscript/reference/idebugapplicationnode-getparent.md)|Retorna o nó pai deste nó de aplicativo.|  
-|[IDebugApplicationNode::SetDocumentProvider](../../winscript/reference/idebugapplicationnode-setdocumentprovider.md)|Define o provedor de documento para este nó de aplicativo.|  
-|[IDebugApplicationNode::Close](../../winscript/reference/idebugapplicationnode-close.md)|Faz com que esse aplicativo para liberar todas as referências e insira um estado inativo.|  
-|[IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)|Adiciona este nó de aplicativo para a árvore de projeto especificado.|  
-|[IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)|Este nó de aplicativo Remove da árvore do projeto.|
+|[IDebugApplicationNode::SetDocumentProvider](../../winscript/reference/idebugapplicationnode-setdocumentprovider.md)|Define o provedor de documento para este nó do aplicativo.|  
+|[IDebugApplicationNode::Close](../../winscript/reference/idebugapplicationnode-close.md)|Faz com que esse aplicativo para liberar todas as referências e entrar em um estado inativo.|  
+|[IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)|Adiciona este nó do aplicativo para a árvore de projeto especificado.|  
+|[IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)|Remove este nó de aplicativo da árvore do projeto.|

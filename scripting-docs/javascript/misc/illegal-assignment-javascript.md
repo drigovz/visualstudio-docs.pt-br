@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632886"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350148"
 ---
 # <a name="illegal-assignment-javascript"></a>Atribuição ilegal (JavaScript)
-Tentativa de atribuir um valor a um identificador de somente leitura. Você não pode atribuir um valor a um identificador de somente leitura. Por exemplo, o host definido objetos e objetos externos.  
+Você tentou atribuir um valor a um identificador somente leitura. É possível atribuir um valor a um identificador somente leitura. Por exemplo, o host definido objetos e objetos de COM externos.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36fa0ba2d1b4049ad41ff0502ed33be0a706d9f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0834abbedf88b911dd952c1f3928c5da3414abec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727526"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348536"
 ---
 # <a name="idebugstackframe-interface"></a>Interface IDebugStackFrame
-Representa um registro de ativação lógico na pilha de thread. Chamar o `IDebugStackFrame::QueryInterface` método para obter o `IDebugExpressionContext` interface, que permite windows inspeção e avaliação de expressão.  
+Representa um registro de ativação lógico na pilha de thread. Chame o `IDebugStackFrame::QueryInterface` método para obter o `IDebugExpressionContext` interface, que permite janelas de inspeção e avaliação de expressão.  
   
  Além dos métodos herdados de `IUnknown`, o `IDebugStackFrame` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Retorna o contexto de código atual associado ao quadro de pilha.|  
-|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Retorna uma descrição textual longo ou curta do quadro de pilhas.|  
-|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Retorna uma descrição textual longo ou curta do idioma.|  
-|[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Retorna o thread associado deste quadro de pilhas.|  
+|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Retorna o contexto de código atual associado com o quadro de pilhas.|  
+|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Retorna uma descrição curta ou longa textual do quadro de pilha.|  
+|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Retorna uma descrição curta ou longa textual da linguagem.|  
+|[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Retorna o thread associado a esse registro de ativação.|  
 |[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Retorna um navegador de propriedade para o quadro atual.|

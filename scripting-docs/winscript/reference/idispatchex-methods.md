@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a57a983acb2d63cfe5f5b2d9b66e1cace7d98d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7abe9f1b7832706040fabb7f65754c518f2b1742
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727636"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347795"
 ---
 # <a name="idispatchex-methods"></a>Métodos IDispatchEx
-Veja a seguir os métodos IDispatchEx.  
+Estes são os métodos IDispatchEx.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)  
@@ -32,7 +32,7 @@ Veja a seguir os métodos IDispatchEx.
  Exclui um membro por nome.  
   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
- Mapeia um nome de membro único para seu DISPID correspondente, que pode ser usada em chamadas subsequentes para IDispatchEx::InvokeEx.  
+ Mapeia um nome de membro único para seu DISPID correspondente, que pode ser usado em chamadas subsequentes para IDispatchEx::InvokeEx.  
   
  [IDispatchEx::GetMemberName](../../winscript/reference/idispatchex-getmembername.md)  
  Recupera o nome de um membro.  

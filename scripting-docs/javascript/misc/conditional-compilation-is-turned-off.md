@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bcbf844ced2bb74ddfea9bd62d68877b7a3c969c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092879"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347340"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Compilação condicional está desativada
 Você tentou usar uma variável de compilação condicional sem primeiro compilação condicional de ativação no. Ativar a compilação condicional informa o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador a interpretar os identificadores que começam com como variáveis de compilação condicional. Você pode fazer isso, a partir de seu código condicional com a instrução:  
@@ -45,6 +45,6 @@ Você tentou usar uma variável de compilação condicional sem primeiro compila
 ## <a name="see-also"></a>Consulte também  
  [Compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on Instrução](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if Instrução](../../javascript/reference/at-if-statement-javascript.md)   
+ [@cc_on Statement](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if Statement](../../javascript/reference/at-if-statement-javascript.md)   
  [Instrução @set](../../javascript/reference/at-set-statement-javascript.md)

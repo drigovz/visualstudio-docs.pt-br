@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4541ca6dbdb4756a5b1eee286e929385143323de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 775aa19c3343450c6f185de949cb0328f2df4b7a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725676"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347717"
 ---
 # <a name="idebugapplicationthreadevents110onthreadrequestcomplete"></a>IDebugApplicationThreadEvents110::OnThreadRequestComplete
-Uma chamada para o thread usando o thread do PDM alternância foi concluída.  
+Uma chamada para o thread usando o thread do PDM troca foi concluída.  
   
 > [!IMPORTANT]
->  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) é implementada por v PDM 11.0 e maior. Localizado em. activdbg100.h.  
+>  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,7 +34,7 @@ HRESULT OnThreadRequestComplete( void );
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Este método não tem parâmetros.  
+ Esse método não tem parâmetros.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

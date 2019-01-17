@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802336"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347418"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>')' esperado na expressão regular (JavaScript)
 Você tentou criar uma captura de expressão regular, declaração ou grupo, mas não incluiu o parêntese de fechamento. Parênteses têm várias finalidades em expressões regulares. Basicamente, eles são usados para capturar subexpressões, para especificar declarações, ou para agrupar padrões para que os itens podem ser tratados como uma única unidade pelo *, +,? e assim por diante.  

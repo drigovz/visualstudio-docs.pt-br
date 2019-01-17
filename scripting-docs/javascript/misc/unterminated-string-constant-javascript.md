@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0fd4dc6ff9008b03c3e8cc81385d6ebe0fe89396
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633056"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349563"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Constante de cadeia de caracteres não finalizada (JavaScript)
-Não terminou a constante de cadeia de caracteres com aspas de fechamento. Constantes de cadeia de caracteres devem ser incluídas dentro de um par de aspas.  
+Você não terminou seu constante de cadeia de caracteres com aspas de fechamento. Constantes de cadeia de caracteres devem ser colocadas dentro de um par de aspas.  
   
 > [!NOTE]
->  Você pode usar pares correspondentes de aspas simples ou duplas. Aspas duplas podem ser contidas dentro de cadeias de caracteres entre aspas simples e aspas simples podem ser contidas dentro de cadeias de caracteres entre aspas duplas.  
+>  Você pode usar pares correspondentes de aspas simples ou duplas. As aspas duplas podem estar contidas em cadeias de caracteres entre aspas simples e aspas simples podem estar contidas em cadeias de caracteres entre aspas duplas.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Adicione as aspas de fechamento ao final da cadeia de caracteres.  
+-   Adicione a marca de aspas de fechamento ao final da cadeia de caracteres.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto de cadeia de caracteres](../../javascript/reference/string-object-javascript.md)   

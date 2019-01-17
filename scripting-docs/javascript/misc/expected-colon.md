@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802388"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349811"
 ---
 # <a name="expected-"></a>':' esperado
 Você tentou criar uma expressão usando o operador condicional Ternário, mas não inclui os dois-pontos entre o segundo e terceiro operandos. O operador condicional (três operandos) Ternário requer dois-pontos entre a segunda (true) e a terceira (false) operandos.  

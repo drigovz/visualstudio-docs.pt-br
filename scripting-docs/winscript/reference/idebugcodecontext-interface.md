@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8068a4d015adb576d8ec1c03e3edc0db26b304
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725756"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349160"
 ---
 # <a name="idebugcodecontext-interface"></a>Interface IDebugCodeContext
-Uma abstração que representa uma posição em código executável.  
+Uma abstração que representa uma posição no código executável.  
   
  Além dos métodos herdados de `IUnknown`, o `IDebugCodeContext` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Retorna o contexto do documento associado a este contexto de código.|  
+|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Retorna o contexto de documento associado a este contexto de código.|  
 |[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Define ou limpa um ponto de interrupção neste contexto de código.|

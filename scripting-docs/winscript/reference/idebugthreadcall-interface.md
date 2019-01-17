@@ -1,5 +1,5 @@
 ---
-title: Interface IDebugThreadCall | Microsoft Docs
+title: IDebugThreadCall Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726936"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346261"
 ---
 # <a name="idebugthreadcall-interface"></a>Interface IDebugThreadCall
-O `IDebugThreadCall` interface costuma ser implementada por um componente que faz chamadas entre threads com a `IDebugThread` marshalling de implementação fornecida pelo Gerenciador de depuração do processo (PDM).  
+O `IDebugThreadCall` normalmente, a interface é implementada por um componente que faz chamadas entre threads com o `IDebugThread` marshalling de implementação fornecida pelo Gerenciador de depuração de processos (PDM).  
   
- As chamadas PDM o `IDebugThreadCall` interface no thread desejado e o `IDebugThreadCall` interface envia a chamada para a implementação desejada. O `IDebugThreadCall` interface converte as informações do parâmetro passadas nos parâmetros para a parte superior apropriada.  
+ O PDM chama o `IDebugThreadCall` interface em que o thread desejado e o `IDebugThreadCall` interface envia a chamada para a implementação desejada. O `IDebugThreadCall` interface converte as informações do parâmetro passadas nos parâmetros à parte superior apropriado.  
   
- O `IDebugThreadCall` interface é um objeto free-thread.  
+ O `IDebugThreadCall` interface é um objeto de thread livre.  
   
 ## <a name="methods"></a>Métodos  
  Além dos métodos herdados de `IUnknown`, o `IDebugThreadCall` interface expõe os métodos a seguir.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Lida com chamadas para executar código em outro thread.|
+|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Lida com chamadas para executar o código em outro thread.|

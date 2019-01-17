@@ -18,12 +18,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 85eb607ed868d034860d44b3ecaf69a5d8d55c89
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753569"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349316"
 ---
 # <a name="operator-summary-javascript"></a>Resumo de operador (JavaScript)
 As tabelas seguintes listam [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operadores em suas respectivas categorias.  
@@ -36,7 +36,7 @@ As tabelas seguintes listam [!INCLUDE[javascript](../../javascript/includes/java
 |[Decremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Divisão](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[Incremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[restante](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Multiplicação](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Subtração](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Negação unária](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  

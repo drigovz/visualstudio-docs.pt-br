@@ -1,5 +1,5 @@
 ---
-title: Interface IEnumDebugCodeContexts | Microsoft Docs
+title: IEnumDebugCodeContexts Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45e28f91b6637142fabfdb3680479c474a75f03d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e35fbb0f35915b2c531bdf2052aa8263c49a798a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728406"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344090"
 ---
 # <a name="ienumdebugcodecontexts-interface"></a>Interface IEnumDebugCodeContexts
 Enumera os contextos de código que correspondem a um contexto de documento.  
   
  Além dos métodos herdados de `IUnknown`, o `IEnumDebugCodeContexts` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IEnumDebugCodeContexts::Next](../../winscript/reference/ienumdebugcodecontexts-next.md)|Recupera um número de segmentos na sequência de enumeração especificado.|  
+|[IEnumDebugCodeContexts::Next](../../winscript/reference/ienumdebugcodecontexts-next.md)|Recupera um número especificado de segmentos na sequência de enumeração.|  
 |[IEnumDebugCodeContexts::Skip](../../winscript/reference/ienumdebugcodecontexts-skip.md)|Ignora um número especificado de segmentos em uma sequência de enumeração.|  
 |[IEnumDebugCodeContexts::Reset](../../winscript/reference/ienumdebugcodecontexts-reset.md)|Redefine uma sequência de enumeração para o início.|  
-|[IEnumDebugCodeContexts::Clone](../../winscript/reference/ienumdebugcodecontexts-clone.md)|Cria um enumerador que contém o mesmo estado do enumerador atual.|
+|[IEnumDebugCodeContexts::Clone](../../winscript/reference/ienumdebugcodecontexts-clone.md)|Cria um enumerador que contém o mesmo estado que o enumerador atual.|
