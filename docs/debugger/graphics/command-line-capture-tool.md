@@ -1,8 +1,6 @@
 ---
 title: Ferramenta de linha de comando de captura | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775540"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53960648"
 ---
 # <a name="command-line-capture-tool"></a>Ferramenta de captura de linha de comando
-O DXCap.exe é uma ferramenta de linha de comando para reprodução e captura de diagnóstico de gráficos. Ele dá suporte a Direct3D 10 através de Direct3D 12 em todos os níveis de recurso.  
+O DXCap.exe é uma ferramenta de linha de comando para reprodução e captura de diagnóstico de gráficos. Ele dá suporte a Direct3D 10 através de Direct3D 12 em todos os níveis do recurso.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -136,10 +134,10 @@ DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- O comando no exemplo acima captura informações de gráficos da versão de área de trabalho do Internet Explorer ao exibir a página da Web localizada em www.fishgl.com que usa a API WebGL para processar conteúdo 3D.  
+ O comando no exemplo acima captura informações de gráficos da versão da área de trabalho do Internet Explorer ao exibir a página da Web localizada em www.fishgl.com que usa a API WebGL para renderizar conteúdo 3D.  
   
 > [!NOTE]
->  Como argumentos de linha de comando que aparecem após o aplicativo são passados para ele, você deve especificar os argumentos destinados DXCap.exe antes de usar o `-c` opção.  
+>  Como argumentos de linha de comando que aparecem após o aplicativo são passados a ele, você deve especificar os argumentos destinados ao DXCap.exe antes de usar a opção `-c`.  
   
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Capture informações gráficas de um aplicativo UWP.  
  Você pode capturar informações gráficas de um aplicativo UWP.  
@@ -164,15 +162,15 @@ DXCap.exe -e map
   
  **Pacote "Microsoft.BingMaps":**  
  **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Nome completo: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Nome: Microsoft.BingMaps**  
- **Publicador: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
+ **Editor: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
  **Versão: 2.1.2914.1734**  
- **Aplicativos pode ser iniciados:**  
- **ID: AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: nenhum**  
+ **Aplicativos inicializáveis:**  
+ **Id: AppexMaps**  
+ **Exe: C:\Arquivos de Programas\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA: Não**  
  **AppSpec (para iniciar): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** a última linha da saída de cada aplicativo enumerado exibe o comando que você pode usar para capturar informações gráficas.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturar quadros específicos ou quadros entre horários específicos.  
@@ -229,13 +227,13 @@ DXCap.exe -p regression_test_12.vsglog -hw
 ```  
   
 ### <a name="validate-a-graphics-log-file-against-warp"></a>Validar um arquivo de log de gráficos contra o WARP  
- No modo de validação, o arquivo de log de gráficos é reproduzido no hardware e no WARP, e seus resultados são comparados. Isso pode ajudá-lo a identificar erros de renderização causados pelo driver. Use - v para validar o comportamento correto do hardware de gráficos contra o WARP.  
+ No modo de validação, o arquivo de log de gráficos é reproduzido no hardware e no WARP, e seus resultados são comparados. Isso pode ajudá-lo a identificar erros de renderização causados pelo driver. Use -v para validar o comportamento correto do hardware de gráficos contra o WARP.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog  
 ```  
   
- Para reduzir a quantidade de comparações, você pode especificar um subconjunto de comandos de validação comparar e outros comandos serão ignorados. Use – examine para especificar os comandos cujos resultados você deseja comparar.  
+ Para reduzir a quantidade de comparações, você pode especificar um subconjunto de comandos de validação comparar e outros comandos serão ignorados. Use -examine para especificar os comandos cujos resultados você deseja comparar.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear  

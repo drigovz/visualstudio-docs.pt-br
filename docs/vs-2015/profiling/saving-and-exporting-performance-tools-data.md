@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768502"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Salvando e Exportando Dados de Ferramentas de Desempenho
@@ -28,7 +28,7 @@ ms.locfileid: "51768502"
 
 Este tópico descreve como salvar e exportar arquivos de dados de desempenho.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Como Salvar Arquivos de Dados de Desempenho como Arquivos de Relatório Analisados  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Como: Salvar arquivos de dados de desempenho como arquivos de relatório analisados  
  É possível salvar exibições filtradas ou sem filtro de arquivos de dados de criação de perfil (.vsp) como arquivos de relatório analisados (.vsps). Um arquivo de relatório analisado pode ser exibido na janela Exibir Relatório e é significativamente menor do que o arquivo .vsp original. No entanto, não é possível aplicar um filtro aos dados de um arquivo .vsps. É possível criar um arquivo de relatório analisado no Gerenciador de Desempenho sem abrir o arquivo no ambiente de desenvolvimento integrado (IDE) ou você pode abrir e filtrar o arquivo .vsp e salvar os resultados.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Salvar um relatório de desempenho analisado do Gerenciador de Desempenho  
@@ -51,7 +51,7 @@ Este tópico descreve como salvar e exportar arquivos de dados de desempenho.
   
 5.  Clique em **Salvar.**  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Como Exportar Relatórios de Ferramentas de Criação de Perfil para um Arquivo .XML ou .CSV  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Como: Exportar relatórios de ferramentas de criação de perfil para um arquivo .xml ou .csv  
  É possível exportar uma ou mais exibições de relatório de um arquivo .vsp ou arquivo de dados de criação de perfil .vsps como um arquivo separado por vírgulas ou XML. É possível filtrar os dados na janela Exibição de Relatório antes de exportar ou exportar exibições de relatório de todo o arquivo de dados na janela **Gerenciador de Desempenho**.  
   
 > [!NOTE]
