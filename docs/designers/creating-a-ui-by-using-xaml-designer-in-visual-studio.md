@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880398"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270015"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criar uma interface do usuário usando o Designer XAML no Visual Studio
 
@@ -162,7 +162,7 @@ A janela Estrutura de Tópicos de Documento no Designer XAML ajuda a executar es
 
 - Criar e modificar modelos para elementos que são controles.
 
-- Usar o menu de contexto para elementos selecionados. O mesmo menu também está disponível para os elementos selecionados no artboard.
+- Use o menu de clique com o botão direito do mouse (menu de contexto) para os elementos selecionados. O mesmo menu também está disponível para os elementos selecionados no artboard.
 
 Para exibir a janela **Estrutura de Tópicos do Documento**, na barra de menus escolha **Exibir** > **Outras Janelas** > **Estrutura de Tópicos do Documento**.
 
