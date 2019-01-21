@@ -9,12 +9,12 @@ description: Informações para Provedores de Soluções na Nuvem como comprar e
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739569"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270002"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
 
@@ -46,7 +46,7 @@ Qualquer pessoa que tenha [acesso de proprietário ou colaborador](https://na01.
 0. Escolha **Visual Studio Marketplace**.
 0. Verifique se o nome do cliente está no canto superior direito.
 0. Escolha **Assinaturas**.
-0. Escolha Enterprise ou Professional e escolha mensal ou anual para Visual Studio.
+0. Escolha Enterprise ou Professional para o Visual Studio.
 0. Escolha **Comprar**.
 0. Escolha a assinatura do Azure a ser cobrada pela compra.
 0. Insira o número de usuários que o cliente precisa.

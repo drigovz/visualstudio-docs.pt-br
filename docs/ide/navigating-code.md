@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9415b3cf2c777e0a99b3f24a26e56d1a1c94bf8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877426"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269937"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -67,7 +67,7 @@ Localiza todas as referências ao elemento selecionado na solução. Você pode 
 Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Shift**+**F12**
-**Mouse** | Selecione **Localizar Todas as Referências** no menu de contexto
+**Mouse** | Selecione **Localizar Todas as Referências** no menu do clique com o botão direito
 
 ## <a name="reference-highlighting"></a>Realce de referência
 

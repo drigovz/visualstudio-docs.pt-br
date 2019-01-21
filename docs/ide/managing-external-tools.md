@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904173"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154057"
 ---
 # <a name="manage-external-tools"></a>Gerenciar ferramentas externas
 
@@ -65,8 +65,8 @@ Esta é uma lista completa de argumentos que podem ser usados ao definir uma fer
 |Nome de Destino|$(TargetName)|O nome de arquivo do item a ser criado.|
 |Extensão de Destino|$(TargetExt)|A extensão de nome de arquivo do item a ser criada.|
 |Diretório binário|$(BinDir)|O local final do binário que está sendo criado (definido como unidade + caminho).|
-|Diretório do Projeto|$(ProjDir)|O diretório do projeto atual (unidade + caminho).|
-|Nome do arquivo de projeto|$(ProjFileName)|O nome de arquivo do projeto atual (unidade + caminho + nome de arquivo).|
+|Diretório do Projeto|$(ProjectDir)|O diretório do projeto atual (unidade + caminho).|
+|Nome do arquivo de projeto|$(ProjectFileName)|O nome de arquivo do projeto atual (unidade + caminho + nome de arquivo).|
 |Diretório da solução|$(SolutionDir)|O diretório da solução atual (unidade + caminho).|
 |Nome de arquivo da solução|$(SolutionFileName)|O nome de arquivo da solução atual (unidade + caminho + nome de arquivo).|
 

@@ -2,7 +2,7 @@
 title: 'Tutorial: Introdução aos aplicativos de console em C#'
 description: Saiba como criar aplicativos de console em C# do Visual Basic no Visual Studio, passo a passo.
 ms.custom: seodec18, get-started
-ms.date: 12/12/2018
+ms.date: 01/10/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 333eeb3f826663d979e1cec444ede7eda4b55b2a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562211"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204425"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Tutorial: Introdução ao aplicativo de console do C# no Visual Studio
 
@@ -135,9 +135,11 @@ Como mostrado na captura de tela a seguir, se você executar o aplicativo e divi
 
 Vamos corrigir o código para que ele identifique decimais.
 
+1. Pressione **Ctrl** + **F** para abrir o controle **Localizar e Substituir**.
+
 1. Altere cada instância da variável `int` para `float`.
 
-   (Você pode usar o controle [Localizar e Substituir](../../ide/finding-and-replacing-text.md#find-and-replace-control) para ajudá-lo com essa tarefa. Para acessar o controle de pesquisa no editor de códigos, pressione **Crtl**+**F**. Em seguida, escolha o botão **Localizar Próximo** ou **Localizar Anterior** no controle de pesquisa. Para acessar opções de substituição, escolha o botão ao lado da caixa de texto **Localizar**. Para fazer uma substituição por vez, escolha o botão **Substituir próximo** ao lado da caixa de texto **Substituir**. Para substituir todas as correspondências, escolha o botão **Substituir Tudo**.)
+    ![Animação do controle Localizar e Substituir que mostra como alterar a variável int para float](./media/find-replace-control-animation.gif)
 
 1. Execute novamente o aplicativo de calculadora e divida o número **42** pelo número **119**.
 
@@ -147,9 +149,7 @@ Vamos corrigir o código para que ele identifique decimais.
 
 No entanto, o aplicativo produz apenas um resultado decimal. Vamos fazer mais alguns ajustes no código, de modo que o aplicativo possa calcular decimais também.
 
-1. Altere cada instância da variável `float` para `double`.
-
-1. Altere cada instância do método `Convert.ToInt32` para `Convert.ToDouble`.
+1. Use o controle **Localizar e Substituir** (**Ctrl** + **F**) para alterar cada instância da variável `float` para `double` e alterar cada instância do método `Convert.ToInt32` para `Convert.ToDouble`.
 
 1. Execute o aplicativo de calculadora e divida o número **42,5** pelo número **119,75**.
 

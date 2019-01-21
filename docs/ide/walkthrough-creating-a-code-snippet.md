@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890703"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269794"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Para criar um snippet de código
 Você pode criar um snippet de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Adicione o snippet à instalação do Visual Studio usando o botão **Importar** no **Gerenciador de Snippets de Código** (**Ferramentas** > **Gerenciador de Snippets de Código**).
@@ -79,7 +79,7 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
 
      *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  Teste seu snippet abrindo um projeto do Visual Basic e abrindo um arquivo de código. No arquivo, escolha **Trechos** > **Inserir Snippet** no menu de contexto e, em seguida, **Meus Snippets de Código**. Você deve ver um snippet chamado **Meu Snippet de Código do Visual Basic**. Clique duas vezes nesse item.
+6.  Teste seu snippet abrindo um projeto do Visual Basic e abrindo um arquivo de código. No arquivo, escolha **Trechos** > **Inserir Trecho** no menu do clique com o botão direito e, em seguida, **Meus Trechos de Código**. Você deve ver um snippet chamado **Meu Snippet de Código do Visual Basic**. Clique duas vezes nesse item.
 
     `Console.WriteLine("Hello, World!")` é inserido no arquivo de código.
 

@@ -9,12 +9,12 @@ description: Alugue o Visual Studio Professional ou o Visual Studio Enterprise m
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d045e407c030e02ef648c2594a7f2bfa5e97d40f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740215"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269742"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Comprar assinaturas de nuvem do Visual Studio Professional e do Visual Studio Enterprise
 
@@ -37,9 +37,7 @@ Qualquer pessoa com [acesso de proprietário e colaborador](https://na01.safelin
 
 1.  Entre no [Visual Studio Marketplace > Assinaturas](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Escolha a assinatura que você deseja comprar, por exemplo:
-    > [!div class="mx-imgBorder"]
-    > ![Comprar uma assinatura do Visual Studio](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
+2.  Escolha a assinatura que você deseja comprar, por exemplo, a assinatura mensal do Visual Studio Professional.
 
 3.  Selecione a assinatura do Azure a ser usada para a cobrança. Se você ainda não tiver uma assinatura do Azure, será possível criá-la.
     > [!div class="mx-imgBorder"]

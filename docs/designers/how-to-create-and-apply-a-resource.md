@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df8c3a225b4e8f4e65826c1db0c806c716d8fb0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a14f2d38ddbb5f24ef3906ea00f7569629b1f64
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903858"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268507"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Como criar e aplicar um recurso
 Os estilos e modelos de elementos no Designer XAML são armazenados em entidades reutilizáveis chamadas recursos. Os estilos permitem que você defina propriedades de elemento e reutilize essas configurações para obter uma aparência consistente entre vários elementos. Um [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) define a aparência de um controle e também pode ser aplicado como um recurso. Para obter mais informações, confira [Início Rápido: Controles de estilo](http://go.microsoft.com/fwlink/?LinkID=248239) e [Início Rápido: Modelos de controle](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -58,10 +58,10 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
       Se um recurso que você esperava ver não aparecer, poderá ser porque o tipo de recurso não corresponde ao tipo da propriedade.
 
-   - Aplique um estilo ou recurso de modelo de controle a um controle. Abra o menu de contexto para um controle na janela Estrutura de Tópicos de Documento, escolha **Editar Modelo** ou **Editar Modelos Adicionais**, escolha **Aplicar Recurso** e selecione o nome do modelo de controle na lista que é exibida.
+   - Aplique um estilo ou recurso de modelo de controle a um controle. Abra o menu do clique com o botão direito (menu de contexto) para um controle na janela Estrutura de Tópicos de Documento, escolha **Editar Modelo** ou **Editar Modelos Adicionais**, **Aplicar Recurso** e, então, selecione o nome do modelo de controle na lista exibida.
 
      > [!NOTE]
-     >  **Editar Modelo** aplica modelos de controle. **Editar Modelos Adicionais** aplica outros tipos de modelo.
+     > **Editar Modelo** aplica modelos de controle. **Editar Modelos Adicionais** aplica outros tipos de modelo.
 
      É possível aplicar recursos sempre que eles são compatíveis. Por exemplo, você pode aplicar um recurso de pincel à propriedade **Primeiro plano** de um controle <xref:Windows.UI.Xaml.Controls.TextBox>.
 

@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbb34804e827ddd0eefdaf4585ba517034a31392
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883020"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269885"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 
@@ -39,11 +39,11 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 |Ação|Gravando|Código gerado|
 |-|---------------|-|
-|**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Busca em uma hora específica no áudio**|Seek \<name> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Pausar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Desativar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Mute \<name> Audio|HtmlAudio.Mute()|
-|**Ativar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Unmute \<name> Audio|HtmlAudio.Unmute()|
+|**Pausar áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Pause \<name> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Desativar áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Mute \<name> Audio|HtmlAudio.Mute()|
+|**Ativar áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Unmute \<name> Audio|HtmlAudio.Unmute()|
 |**Alterar volume de áudio**|Definir volume de \<name> Audio to 79%|HtmlAudio.SetVolume(float)|
 
 Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) para obter uma lista de propriedades às quais você pode adicionar uma declaração.
@@ -63,11 +63,11 @@ Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioE
 
 |Ação|Gravando|Código gerado|
 |-|---------------|-|
-|**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Busca em uma hora específica no vídeo**|Seek \<name> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Pausar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Desativar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Mute \<name> Video|HtmlVideo.Mute()|
-|**Ativar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Unmute \<name> Video|HtmlVideo.Unmute()|
+|**Pausar vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Pause \<name> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Desativar vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Mute \<name> Video|HtmlVideo.Mute()|
+|**Ativar vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Unmute \<name> Video|HtmlVideo.Unmute()|
 |**Alterar volume de vídeo**|Definir volume de \<name> Video to 79%||
 
 Confira [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) para obter uma lista de propriedades às quais você pode adicionar uma declaração.

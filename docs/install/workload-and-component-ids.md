@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/13/2018
+ms.date: 01/11/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 84711c13270fea4e1b7202d1bd04c8acdde911fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6df4435cf19dc18e2c24e32207b9d3d9bce093a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932675"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269716"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>IDs de carga de trabalho e de componente do Visual Studio 2017
 
@@ -37,7 +37,7 @@ Clique nos nomes de edição na tabela a seguir para ver as IDs de carga de trab
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Ferramentas para desenvolvedores profissionais e serviços para equipes pequenas |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | IDE gratuita e completa para estudantes, desenvolvedores individuais e de software livre |
 | [Team Explorer&nbsp;para&nbsp;Visual Studio&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interaja com o Team Foundation Server e com o Azure DevOps Services sem um conjunto de ferramentas de desenvolvedor do Visual Studio |
-| [Visual Studio 2017 Desktop Express](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Compile aplicativos Gerenciados e Nativos como WPF, WinForms e Win32 com edição de código com reconhecimento de sintaxe, controle do código-fonte e gerenciamento de item de trabalho. Inclui suporte para o C#, Visual Basic e Visual C++. |
+| [Visual Studio 2017 Desktop Express](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Product.WDExpress | Compile aplicativos Gerenciados e Nativos como WPF, WinForms e Win32 com edição de código com reconhecimento de sintaxe, controle do código-fonte e gerenciamento de item de trabalho. Inclui suporte para o C#, Visual Basic e Visual C++. |
 | [Ferramentas de Build&nbsp;do&nbsp;Visual Studio&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | As Ferramentas de Build do Visual Studio permitem que você compile aplicativos baseados em MSBuild nativos e gerenciados, sem exigir o IDE do Visual Studio. Há opções para instalar compiladores e bibliotecas do Visual C++, além do suporte a C++/CLI, ATL e MFC. |
 | [Test Agent&nbsp;do&nbsp;Visual Studio&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Dá suporte à execução de testes automatizados e carrega testes remotamente |
 | [Test Controller&nbsp;do&nbsp;Microsoft Visual Studio 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Distribuir testes automatizados para vários computadores |

@@ -9,16 +9,19 @@ description: Saiba mais sobre a assinatura de treinamento do Power BI Pro inclu�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739637"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315495"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro em assinaturas do Visual Studio
 
 Transforme seus dados em elementos visuais avançados que você pode coletar e organizar.
+
+> [!Note]
+> Esta licença do Power BI é disponibilizada a fim de que os recursos do Power BI possam ser estudados e testados em um local seguro, sem afetar ambientes mais amplos de Produção/Desenvolvimento/Teste.  A oferta atual do Power BI requer que o assinante crie seu próprio locatário para impor a separação. Caso precise de uma licença do Power BI associada às suas credenciais corporativas em seu locatário da empresa, trabalhe com o administrador da empresa para adquirir e atribuir essa licença.
 
 ## <a name="activation-steps"></a>Etapas de ativação
 Para usar o Power BI Pro, você precisará configurar uma conta ou entrar usando uma conta existente.
@@ -95,8 +98,10 @@ R:  O benefício é gratuito, mas a ativação usa o mesmo sistema usado para pr
 - Cartão de crédito.  Mesmo se você fornecer um número de cartão de crédito, seu cartão NÃO será cobrado. 
 - Fatura.  Se você selecionar "Fatura" como o tipo de pagamento, não será necessário fornecer um número de cartão de crédito.  Você também pode definir o intervalo como "anual".  Dessa forma, você receberá um único email informando que uma fatura está pronta.  O valor da fatura será de $0,00.  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>P:  O benefício do Power BI Pro incluído em minhas licenças de assinatura é destinado ao uso em um ambiente de produção?
-R:  Sim.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>P:  O benefício do Power BI Pro incluído em minha assinatura é licenciado para uso em um ambiente de produção?
+R:  Sim, você pode usá-lo em um ambiente de produção, com duas advertências importantes:
+- Esta oferta requer a instalação em seu próprio locatário.  Caso precise de uma licença do Power BI associada às suas credenciais corporativas em seu locatário da empresa, trabalhe com o administrador da empresa para adquirir e atribuir essa licença. 
+- Este benefício do Power BI Pro não pode ser usado em locatários do governo.  
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>P:  Ao tentar ativar o Power BI Pro, recebo uma mensagem "Você já tem uma conta pelo trabalho".  Ainda posso usar o benefício?
 R:  Sim.  A mensagem indica que você está conectado a um domínio que já tem locatários do Office 365 ativos nos quais você não é um administrador.  Para adicionar o Power BI Pro a um locatário, você deve ser um administrador nesse locatário.  Para resolver esse problema, siga estas etapas para criar seu próprio locatário.

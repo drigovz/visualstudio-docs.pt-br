@@ -1,47 +1,54 @@
 ---
 title: -LCID (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - language default
 - locale IDs, setting for IDE
+- Devenv, /L switch
 - Devenv, /LCID switch
 - locale IDs
-- /l Devenv switch
+- L Devenv switch
+- /L Devenv switch
 - LCID devenv switch
-- /lcid Devenv switch
+- /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c3f8633721a4568b81fab31d8fe91a4c33be2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42da279a64f04bca7775440f803e7a26e6bd2dc8
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227298"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
-Define o idioma padrão usado para texto, moeda e outros valores dentro do IDE (ambiente de desenvolvimento integrado).
+
+Define o idioma padrão usado para texto, moeda e outros valores dentro do IDE.
 
 ## <a name="syntax"></a>Sintaxe
 
-```cmd
-devenv {/LCID|/l} LocaleID
+```shell
+devenv {/LCID|/L} LocaleID
 ```
 
 ## <a name="arguments"></a>Arguments
- `LocaleID` Necessário. O LCID (identificação de localidade) do idioma que você especificar.
+
+- *LocaleID*
+
+  Necessário. O identificador de localidade (LCID) do idioma que você especificar.
 
 ## <a name="remarks"></a>Comentários
- Carrega o IDE e define o idioma natural padrão do ambiente. Essa alteração é mantida entre sessões e refletida no painel **Configurações Internacionais** das opções de **Ambiente** na caixa de diálogo **Opções** no IDE.
 
- Se o idioma especificado não estiver disponível no sistema do usuário, a opção /LCID será ignorada.
+Carrega o IDE e define o idioma natural padrão do ambiente. Essa alteração é mantida entre as sessões, e o IDE mostra essa alteração na caixa **Ferramentas** > **Opções** > **Ambiente**  >  **Configurações internacionais** > **Idioma**.
 
- A tabela a seguir lista os LCIDs dos idiomas com suporte do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Se o idioma especificado não estiver disponível em seu sistema, a opção `/LCID` será ignorada.
+
+A tabela a seguir lista os LCIDs dos idiomas para os quais o Visual Studio oferece suporte.
 
 |Idioma|LCID|
 |--------------|----------|
@@ -56,9 +63,10 @@ devenv {/LCID|/l} LocaleID
 |Espanhol|3082|
 
 ## <a name="example"></a>Exemplo
- Este exemplo carrega o IDE com cadeias de caracteres de recursos em inglês.
 
-```cmd
+Este exemplo carrega o IDE com cadeias de caracteres de recursos em inglês.
+
+```shell
 devenv /LCID 1033
 ```
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1e1e01721ae261b756bd6f3567b8f06dc73f12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 143a40c1a2e3602460419465cb84d6ffa44d853c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921332"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269846"
 ---
 # <a name="find-references-in-your-code"></a>Localizar referências no seu código
 
@@ -40,13 +40,13 @@ Você pode usar os seguintes métodos para navegar para as referências na janel
 
 - Pressione **F8** para acessar a próxima referência ou **Shift + F8** para acessar a referência anterior.
 - Pressione a tecla **Enter** em uma referência ou clique duas vezes nela para acessá-la no código.
-- No menu de contexto de uma referência, escolha os comandos **Ir ao Local Anterior** ou **Ir ao Próximo Local**.
+- No menu do clique com o botão direito (menu de contexto) de uma referência, escolha os comandos **Ir para Local Anterior** ou **Ir para Próximo Local**.
 - Use as teclas **Seta para cima** e **Seta para baixo** (se elas estiverem habilitadas na caixa de diálogo **Opções**). Para habilitar essa funcionalidade, na barra de menus, selecione **Ferramentas** > **Opções** > **Ambiente** > **Guias e Janelas** > **Guia Visualizar** e, em seguida, selecione as caixas **Permitir que novos arquivos sejam abertos na guia de visualização** e **Visualizar arquivos selecionados em Localizar Resultados**.
 
 ## <a name="change-reference-groupings"></a>Alterar agrupamentos de referência
 Por padrão, as referências são agrupadas por projetos, depois por definição. No entanto, é possível mudar essa ordem de agrupamento, alterando a configuração na caixa de listagem suspensa **Agrupar por:** na barra de ferramentas. Por exemplo, é possível alterá-la na configuração padrão de **Projeto em vez de definição** para **Definição em vez de projeto** e também para outras configurações.
 
-**Definição** e **Projeto** são dois agrupamentos padrão usados, mas é possível adicionar outros ao escolher o comando **Agrupamento** no menu de contexto do item selecionado. Pode ser útil adicionar mais agrupamentos se sua solução tem muitos arquivos e caminhos.
+**Definição** e **Projeto** são dois agrupamentos padrão usados, mas é possível adicionar outros ao escolher o comando **Agrupamento** no menu do clique com o botão direito ou de contexto do item selecionado. Pode ser útil adicionar mais agrupamentos se sua solução tem muitos arquivos e caminhos.
 
 ## <a name="see-also"></a>Consulte também
 
