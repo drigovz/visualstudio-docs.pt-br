@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968599"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270239"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
 
@@ -64,11 +64,11 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
    }
    ```
 
-5. Use o método `AddNumbers()` para verificar se o teste é executado. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Executar Testes**. (Atalho de teclado: **Ctrl**+**R**,**T**).
+5. Use o método `AddNumbers()` para verificar se o teste é executado. Coloque o cursor no método de teste mostrado acima, abra o menu do clique com o botão direito e escolha **Executar Testes**. (Atalho de teclado: **Ctrl**+**R**,**T**).
 
     O resultado do teste que mostra se o teste passou ou falhou é exibido na janela **Gerenciador de Testes**. Para abrir a janela do Gerenciador de Testes, no menu **Teste**, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
 
-6. Como uma fonte de dados também pode ser usada para valores de parâmetro de declaração, que são usados pelo teste para verificar os valores esperados, vamos adicionar uma declaração para validar se a soma de dois números está correta. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Gerar Código para Teste de IU Codificado** e, em seguida, **Usar Construtor de Teste de IU Codificado**.
+6. Como uma fonte de dados também pode ser usada para valores de parâmetro de declaração, que são usados pelo teste para verificar os valores esperados, vamos adicionar uma declaração para validar se a soma de dois números está correta. Coloque o cursor no método de teste mostrado acima, abra o menu do clique com o botão direito e escolha **Gerar Código para Teste de Interface do Usuário Codificado** e, em seguida, **Usar o Construtor de Teste de Interface do Usuário Codificado**.
 
     Mapeie o controle de texto na Calculadora que exibe a soma.
 
@@ -93,7 +93,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
    }
    ```
 
-9. Verifique se o teste é executado usando o método `ValidateSum()`. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Executar Testes**. (Atalho de teclado: **Ctrl**+**R**,**T**).
+9. Verifique se o teste é executado usando o método `ValidateSum()`. Coloque o cursor no método de teste mostrado acima, abra o menu do clique com o botão direito e escolha **Executar Testes**. (Atalho de teclado: **Ctrl**+**R**,**T**).
 
      Neste ponto, todos os valores de parâmetro são definidos em seus métodos como constantes. Em seguida, vamos criar um conjunto de dados para fazer com que nosso teste seja controlado por dados.
 

@@ -1,55 +1,63 @@
 ---
-title: -Runexit (devenv.exe)
-ms.date: 11/04/2016
+title: -RunExit (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- runexit Devenv switch
-- Devenv, /runexit switch
-- /runexit Devenv switch
+- RunExit Devenv switch
+- Devenv, /RunExit switch
+- /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa715c97310edc447610b0c0ae61226ab5334f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ebeba5afc1eb50703f62e386f7453d7c0c3c1f6
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227181"
 ---
-# <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
+# <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
+
 Compila e executa a solução ou o projeto especificado e, em seguida, fecha o IDE (ambiente de desenvolvimento integrado).
 
 ## <a name="syntax"></a>Sintaxe
 
-```
-devenv /runexit {SolutionName|ProjectName}
+```shell
+devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Arguments
- `SolutionName`
 
- Necessário. O caminho completo e o nome de um arquivo de solução.
+- *SolutionName*
 
- `ProjectName`
+  O caminho completo e o nome de um arquivo de solução.
 
- Necessário. O caminho completo e o nome de um arquivo de projeto.
+- *ProjectName*
+
+  O caminho completo e o nome de um arquivo de projeto.
+
+- `/Out` *OutputFilename*
+
+  Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
 ## <a name="remarks"></a>Comentários
- Compila e executa o projeto ou a solução especificada de acordo com as configurações especificadas para a configuração da solução ativa. Essa opção minimiza o IDE enquanto o projeto ou a solução é executado, e fecha o IDE depois da conclusão da execução do projeto ou da solução.
 
--   Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.
+Compila e executa o projeto ou a solução especificada de acordo com as configurações especificadas para a configuração da solução ativa. Essa opção minimiza o IDE durante a execução do projeto ou da solução. Fecha o IDE depois que a execução do projeto ou da solução for concluída.
 
--   As informações de resumo, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.
+- Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.
+
+- As informações de resumo, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/Out`.
 
 ## <a name="example"></a>Exemplo
- Este exemplo executa a solução `MySolution` em um IDE minimizado usando a configuração de implantação ativa e, em seguida, fecha o IDE.
+
+Este exemplo executa a solução `MySolution` em um IDE minimizado usando a configuração de implantação ativa e, em seguida, fecha o IDE.
 
 ```
-devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>Consulte também

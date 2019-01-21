@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952992"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154357"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
@@ -61,7 +61,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
      Esse proxy permite que você colete informações sobre as chamadas http de um cliente para um servidor Web para os adaptadores de dados de diagnóstico do IntelliTrace e de Impacto de Teste.
 
     > [!WARNING]
-    > Se optar por usar uma conta personalizada para a identidade que está sendo usada no pool de aplicativos do IIS (Servidor de informações da Internet) onde deseja coletar dados do Intellitrace, você deverá criar o perfil de usuário local no computador do IIS para a conta personalizada que está sendo usada. Você pode criar o perfil local para a conta personalizada fazendo logon no computador do IIS localmente uma vez ou executando a seguinte linha de comando com as credenciais da conta personalizada:
+    > Se optar por usar uma conta personalizada para a identidade do pool de aplicativos do Servidor de Informações da Internet (IIS) onde deseja coletar dados do IntelliTrace, será preciso criar o perfil de usuário local no computador do IIS para a conta personalizada que está sendo usada. Você pode criar o perfil local para a conta personalizada fazendo logon no computador do IIS localmente uma vez ou executando a seguinte linha de comando com as credenciais da conta personalizada:
     >
     > **runas /user:domain\name /profile cmd.exe**
 

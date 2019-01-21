@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89e64c88311848d53a114a1f58f711edbe3856e7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858061"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269872"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -46,7 +46,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 
 - Para executar todos os testes em um grupo padrão, escolha **Executar** e, em seguida, escolha o grupo no menu.
 
-- Selecione os testes individuais que deseja executar, abra o menu de contexto para um teste selecionado e escolha **Executar Testes Selecionados**.
+- Selecione os testes individuais que deseja executar, abra o menu do clique com o botão direito para o teste selecionado e, em seguida, escolha **Executar Testes Selecionados**.
 
 - Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
@@ -84,7 +84,7 @@ Se o teste falhar, o painel de detalhes também exibe:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Exibir o código-fonte de um método de teste
 
- Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir Teste** no menu de contexto (teclado: **F12**).
+ Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir Teste** no menu do clique com o botão direito (teclado: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Agrupar e filtrar a lista de testes
 
@@ -165,9 +165,9 @@ Por exemplo, `FullName:"MyClass" - FullName:"PerfTest"` retorna todos os testes 
 
  ![Escolher uma playlist](../test/media/ute_playlist.png)
 
- **Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de contexto, escolha **Adicionar à Playlist** > **NewPlaylist**. Salve o arquivo com o nome e local que você especificar na caixa de diálogo **Criar nova lista de reprodução**.
+ **Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito, escolha **Adicionar à Lista de Reprodução** > **NewPlaylist**. Salve o arquivo com o nome e local que você especificar na caixa de diálogo **Criar nova lista de reprodução**.
 
- **Para adicionar testes a uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de contexto, escolha **Adicionar à lista de reprodução**e, em seguida, escolha a lista de reprodução que você deseja adicionar os testes.
+ **Para adicionar testes a uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito, escolha **Adicionar à Lista de Reprodução** e, em seguida, escolha a lista de reprodução à qual deseja adicionar os testes.
 
  **Para abrir uma playlist**, escolha **Teste** > **Playlist** no menu do Visual Studio e escolha uma opção na lista de playlists usadas recentemente ou escolha **Abrir Playlist** para especificar o nome e o local da playlist.
 
@@ -184,13 +184,13 @@ Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração 
     > [!NOTE]
     > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
 
-2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de contexto.
+2. No Gerenciador de Testes, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu do clique com o botão direito.
 
    Para obter mais informações sobre o depurador, confira [Depuração no Visual Studio](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de desempenho do método de teste
 
- Para diagnosticar o motivo pelo qual um método de teste leva muito tempo para ser executado, selecione o método no Gerenciador de Testes e, em seguida, escolha **Perfil** no menu de contexto. Consulte [Gerenciador de Desempenho](../profiling/performance-explorer.md).
+ Para diagnosticar por quê um método de teste está demorando para ser executado, selecione o método no Gerenciador de Testes e, em seguida, escolha **Perfil** no menu do clique com o botão direito. Consulte [Gerenciador de Desempenho](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analisar a cobertura de código de teste de unidade
 

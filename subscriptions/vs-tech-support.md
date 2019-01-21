@@ -9,12 +9,12 @@ description: Saiba como ativar o benefício do suporte técnico incluído na ass
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740418"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315508"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
@@ -85,11 +85,8 @@ Certifique-se de ter a ID do Contrato e a ID do Acesso disponíveis ao ligar.
 Para usar o benefício de suporte técnico da assinatura do Visual Studio para problemas relacionados ao Azure, será necessário vincular a ID do Contrato e a ID do Acesso à sua assinatura do Azure.
 
 1.  Acesse https://portal.azure.com e entre
-2.  Na navegação esquerda, clique em "Ajuda + suporte"
-3.  Em "Suporte", clique em "Vincular contrato de suporte"
-4.  Insira a “ID de Acesso” e a “ID de Contato” fornecidas no Nº 1 acima.
-
-Depois de concluir essas etapas, você poderá selecionar o plano de suporte associado ao benefício da assinatura do Visual Studio.  (O nome do plano pode conter "MSDN".)
+2.  Na navegação à esquerda, clique em **Ajuda + Suporte**
+3.  Em "Suporte", clique em **Nova Solicitação de Suporte**
 
 ## <a name="eligibility"></a>Qualificação
 

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d306d9399ee9454d1967c24a734c5d9b9b2eb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11e31d46af00620b9e8ac9f45fe79946eea4eb1a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908796"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270145"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Como: Usar snippets de código surround-with
 
-Os procedimentos a seguir descrevem como usar snippets de código surround-with. Os snippets de código de “Envolver com” estão disponíveis de três formas: por um atalho de teclado, pelo menu **Editar** e pelo menu de contexto.
+Os procedimentos a seguir descrevem como usar snippets de código surround-with. Trechos de código Surround-with estão disponíveis de três maneiras: por um atalho de teclado, pelo menu **Editar** e pelo menu do clique com o botão direito ou menu de contexto.
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Para usar snippets de código surround-with por meio do atalho de teclado
 

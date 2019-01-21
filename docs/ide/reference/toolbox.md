@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918606"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269989"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 
@@ -40,7 +40,7 @@ A versão do .NET Framework direcionada pelo seu projeto também afeta o conjunt
 
 Por padrão, a **Caixa de Ferramentas** fica recolhida no lado esquerdo do IDE do Visual Studio e aparece quando o cursor é movido sobre ela. É possível fixar a **Caixa de Ferramentas** (clicando no ícone **Fixar** da barra de ferramentas) para que ela permaneça aberta enquanto você move o cursor. Você também pode desencaixar a janela **Caixa de Ferramentas** e arrastá-la para qualquer lugar na tela. Você pode encaixar, desencaixar e ocultar a **Caixa de Ferramentas**, clicando com o botão direito do mouse na barra de ferramentas e selecionando uma das opções.
 
-Você pode reorganizar os itens em uma guia da **Caixa de Ferramentas** ou adicionar guias e itens personalizados usando os seguintes comandos no menu de contexto:
+Você pode reorganizar os itens em uma guia da **Caixa de Ferramentas** ou adicionar guias e itens personalizados usando os seguintes comandos no menu do clique com o botão direito:
 
 - **Renomear Item** – renomeia o item selecionado.
 

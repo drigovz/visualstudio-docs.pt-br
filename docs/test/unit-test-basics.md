@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: e5b08592fdd60bf88ce703b1b97bd5485cc307ab
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060797"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270174"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -83,7 +83,7 @@ Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de tes
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Gerar o projeto de teste de unidade e os stubs de teste de unidade
 
-1. Na janela do editor de código, clique com botão direito do mouse e escolha **Criar Testes de Unidade** no menu de contexto.
+1. Na janela do editor de código, clique com o botão direito do mouse e escolha **Criar Testes de Unidade** no menu do clique com o botão direito.
 
     ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png)
 
@@ -218,7 +218,7 @@ A barra de ferramentas do **Gerenciador de Testes** ajuda você a descobrir, org
 
 ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute_toolbar.png)
 
-Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados. Depois que você executa um conjunto de testes, um resumo da execução de teste é exibido na parte inferior da janela **Gerenciador de Testes**. Selecione um teste para exibir seus detalhes no painel inferior. Escolha **Abrir Teste** no menu de contexto (teclado: **F12**) para exibir o código-fonte do teste selecionado.
+Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados. Depois que você executa um conjunto de testes, um resumo da execução de teste é exibido na parte inferior da janela **Gerenciador de Testes**. Selecione um teste para exibir seus detalhes no painel inferior. Escolha **Abrir Teste** no menu do clique com o botão direito (teclado: **F12**) para exibir o código-fonte do teste selecionado.
 
 Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 

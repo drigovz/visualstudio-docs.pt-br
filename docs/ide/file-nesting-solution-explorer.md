@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831148"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269275"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar o aninhamento de arquivos no Gerenciador de Soluções
 
@@ -131,7 +131,7 @@ Gerencie todas as configurações, incluindo suas próprias configurações pers
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>Criar configurações específicas a um projeto e uma solução
 
-Crie configurações específicas a um projeto e uma solução por meio do menu de contexto de cada solução e projeto:
+É possível criar configurações específicas para um projeto e para uma solução por meio do menu do clique com o botão direito (menu de contexto) de cada solução e projeto:
 
 ![Regras de aninhamento específicas a um projeto e uma solução](media/filenesting_solutionprojectspecific.png)
 
