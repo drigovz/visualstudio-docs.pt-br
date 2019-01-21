@@ -1,6 +1,10 @@
 items:
-- name: Node.js no Visual Studio
+- name: JavaScript e TypeScript
   href: index.yml
+- name: Visão geral
+  items:
+  - name: JavaScript no Visual Studio 2017
+    href: javascript-in-vs-2017.md
 - name: Guias de Início Rápido
   items:
   - name: Criar um projeto Node.js
@@ -13,35 +17,35 @@ items:
     href: tutorial-nodejs.md
   - name: Criar um aplicativo Node.js com o React
     href: tutorial-nodejs-with-react-and-jsx.md
-  - name: Publicar no Serviço de Aplicativo do Linux
+  - name: Publicar um aplicativo Node.js no Serviço de Aplicativo do Linux
     href: publish-nodejs-app-azure.md
 - name: Guias de instruções
   items:
   - name: Escrever e editar o código
     href: write-and-edit-code.md
+  - name: Criar um aplicativo Vue.js
+    href: create-application-with-vuejs.md
   - name: Gerenciar pacotes npm
     href: npm-package-management.md
   - name: Desenvolver sem projetos nem soluções ("Abrir Pasta")
     href: develop-javascript-code-without-solutions-projects.md
-  - name: Usar o REPL Interativo
+  - name: Usar a o REPL interativo do Node.js
     href: nodejs-interactive-repl.md
-  - name: Depurar um aplicativo Node.js
-    href: debug-nodejs.md
-  - name: Teste de unidade do código JavaScript
-    href: unit-testing-javascript-with-visual-studio.md
   - name: JavaScript IntelliSense
     href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-  - name: Criar um aplicativo Vue.js
-    href: create-application-with-vuejs.md
+  - name: Depurar um aplicativo JavaScript
+    href: debug-nodejs.md
+  - name: Teste de unidade do JavaScript
+    href: unit-testing-javascript-with-visual-studio.md
 - name: Recursos
   items:
   - name: configuração do package.json
     href: configure-packages-with-package-json.md
-  - name: Página Wiki para ferramentas do Node.js
-    href: https://github.com/Microsoft/nodejstools
-ms.openlocfilehash: 491166ddfbdac44438c8b7c14bfe73cba498af76
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+  - name: Documentos Wiki para JavaScript e TypeScript
+    href: https://github.com/Microsoft/nodejstools/wiki
+ms.openlocfilehash: f10039651ab1aba6ee5d013d83893b56d7504196
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441451"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398202"
