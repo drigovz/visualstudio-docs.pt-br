@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd8cdf4b97285b1c0793bb3e80ec85def432bdb4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900867"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348744"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.  
@@ -71,10 +71,6 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 
  O esquema de um projeto importado é idêntico ao de um projeto padrão. Embora [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] possa criar um projeto importado, isso é improvável porque um projeto importado normalmente não contém informações sobre quais propriedades configurar ou a ordem na qual executar os destinos. O projeto importado depende do projeto para o qual ele é importado para fornecer essas informações.  
 
-> [!NOTE]
->  Embora instruções de importação condicional funcionam na linha de comando MSBuilds, elas não funcionam com o MSBuild no ambiente de desenvolvimento integrado (IDE) do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Importações condicionais são avaliadas usando os valores de configuração e plataforma que são definidos quando o projeto é carregado. Se forem feitas alterações subsequentes que exigem uma reavaliação das condições no arquivo de projeto, por exemplo, alterando a plataforma, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reavalia as condições em itens e propriedades, mas não em importações. Como a condicional de importação não é reavaliada, a importação é ignorada.  
-> 
->  Para solucionar esse problema, coloque importações condicionais nos arquivos *.targets* ou coloque o código em um bloco condicional, como um bloco [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Curingas  
  No .NET Framework 4, o MSBuild permite caracteres curinga no atributo Projeto. Quando houver caracteres curinga, todas as correspondências encontradas são classificadas (para capacidade de reprodução) e, em seguida, elas são importadas na ordem como se a ordem tivesse sido definida explicitamente.  
