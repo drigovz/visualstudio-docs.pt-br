@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898669"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345598"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 Itens do MSBuild são entradas no sistema de build e eles normalmente representam arquivos (os arquivos estão especificados no atributo `Include`). Os itens são agrupados em tipos de item com base em seus nomes de elemento. Os tipos de item são listas nomeadas de itens que podem ser usados como parâmetros para tarefas. As tarefas usam os valores do item para executar as etapas do processo de build.  
@@ -321,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
+ [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [Como: Selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)   
  [Como: Excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Como: Exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definições de item](../msbuild/item-definitions.md)   
- [Envio em lote](../msbuild/msbuild-batching.md)   
- [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Envio em lote](../msbuild/msbuild-batching.md)

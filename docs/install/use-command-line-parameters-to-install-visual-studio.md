@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869655"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403961"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usar parâmetros de linha de comando para instalar o Visual Studio 2017
 
@@ -77,7 +77,8 @@ As opções de linha de comando são usadas em conjunto com o bootstrapper de in
 | `--help, --?, -h, -?` | Exibir uma versão offline desta página. |
 | `--config <path>` | **Opcional** e **Novidades do 15.9**: Durante uma instalação ou uma operação de modificação, isso determina as cargas de trabalho e componentes a serem adicionados com base em um arquivo de configuração de instalação salvo anteriormente. Essa operação é aditiva e não removerá nenhuma carga de trabalho nem componente se ele não estiver presente no arquivo. Além disso, os itens que não se aplicarem ao produto não serão adicionados. Durante uma operação de exportação, isso determina a localização para salvar o arquivo de configuração de instalação. |
 
-> Observação: Ao especificar várias cargas de trabalho e vários componentes, é necessário repetir a opção de linha de comando `--add` ou `--remove` para cada item.
+> [!IMPORTANT]
+> Ao especificar várias cargas de trabalho e vários componentes, é necessário repetir a opção de linha de comando `--add` ou `--remove` para cada item.
 
 | **Opções de layout** | **Descrição** |
 | ----------------------- | --------------- |
