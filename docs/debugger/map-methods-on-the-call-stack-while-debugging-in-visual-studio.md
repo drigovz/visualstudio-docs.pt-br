@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960833"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417922"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Criar um mapa visual da pilha de chamadas durante a depuração 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Criar um mapa visual da pilha de chamadas durante a depuração (C#, Visual Basic, C++, JavaScript)
 
 Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.
 
@@ -53,7 +53,7 @@ Aqui está uma rápida olhada um mapa de código:
 
 ##  <a name="MapStack"></a> Mapear a pilha de chamadas
 
-1. Em um Visual Studio Enterprise C#, Visual Basic, C++, JavaScript ou X + exe + de projeto, iniciar a depuração, selecionando **depurar** > **iniciar depuração** ou pressionando **F5**.
+1. Em um Visual Studio Enterprise C#, Visual Basic, C++ ou JavaScript do projeto, iniciar a depuração, selecionando **depurar** > **iniciar depuração** ou pressionando **F5**.
    
 1. Depois que seu aplicativo entra em modo de interrupção ou entrar em uma função, selecione **Debug** > **mapa de códigos**, ou pressione **Ctrl**+**Shift** +**`**.
 
