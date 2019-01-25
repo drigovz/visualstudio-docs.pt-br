@@ -9,12 +9,12 @@ description: Saiba mais sobre o benefício da Comunidade Azure incluído nas ass
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ab3b750395fc09b52cf1d6ab290e21cfdbb7d3d8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739369"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380334"
 ---
 # <a name="azure-community"></a>Comunidade Azure
 
@@ -62,7 +62,7 @@ A disponibilidade do benefício Comunidade Azure depende do nível de sua assina
 |                                     Visual Studio Dev Essentials                                      |        N/D        | Não disponível |     Não     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), Microsoft FTE, MVP (Microsoft Valued Professional), RD (Diretor Regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine e MCT (Microsoft Certified Trainer)*
+<sup>1</sup> *Inclui:  NFR (Proibida a revenda), Microsoft FTE, MVP (Most Valuable Professional), RD (Diretor Regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine e MCT (Microsoft Certified Trainer)*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.

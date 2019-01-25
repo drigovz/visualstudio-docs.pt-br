@@ -9,12 +9,12 @@ description: Saiba mais sobre o benefício de Atendimento via Chat incluído nas
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740228"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380001"
 ---
 # <a name="concierge-chat"></a>Atendimento via Chat
 
@@ -49,7 +49,7 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 | Visual Studio Dev Essentials | NA  | Não disponível |N/D |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer e BizSpark.  Exclui:  FTE, MVP (Microsoft Valued Professional), RD (Diretor Regional), MPN (Microsoft Partner Network) e Imagine.*
+<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer e BizSpark.  Exclui:  FTE, MVP (Most Valuable Professional), RD (Diretor Regional), MPN (Microsoft Partner Network) e Imagine.*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.

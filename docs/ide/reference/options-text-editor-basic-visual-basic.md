@@ -1,6 +1,6 @@
 ---
 title: Opções, Editor de Texto, Basic (VB), Avançado
-ms.date: 11/04/2016
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -19,19 +19,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2178b61aa3cd2aa83314f00c231d564a10944
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871233"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398241"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opções, Editor de Texto, Basic (Visual Basic), Avançado
-A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) contém as seguintes propriedades:
+A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) inclui as seguintes propriedades:
+
+## <a name="analysis"></a>Análise
+
+- Habilitar análise de solução completa
+
+   Permite a análise de código em todos os arquivos na solução, não apenas nos arquivos de código abertos. Para obter mais informações, confira [Análise de solução completa](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+
+## <a name="using-directives"></a>Usando diretivas
+
+- Colocar as diretivas “System” primeiro ao classificar os usos
+
+   Quando selecionado, o comando **Remover e classificar usos** no menu de clique com o botão direito do mouse classifica as diretivas `using` e coloca os namespaces "System" no topo da lista.
+   
+- Separar usando grupos de diretivas
+
+   Quando selecionado, o comando **Remover e classificar usos** no menu de clique com o botão direito do mouse separa as diretivas `using` inserindo uma linha vazia entre os grupos de diretivas que têm o mesmo namespace de raiz.
+   
+- Sugerir usos para tipos em assemblies de referência 
+- Sugerir usos para tipos em pacotes NuGet 
+
+   Quando essas opções estiverem selecionadas, uma [Ação Rápida](../quick-actions.md) estará disponível para instalar um pacote NuGet e para adicionar uma diretiva `using` para tipos não referenciados.
+
+   ![Ação rápida para instalar o pacote NuGet no Visual Studio](media/nuget-lightbulb.png)
+  
+
+## <a name="highlighting"></a>Realce
 
  **Habilitar realce de referências e palavras-chave**
 
 O editor de texto pode realçar todas as instâncias de um símbolo ou todas as palavras-chave em uma cláusula como `If..Then`, `While...End While` ou `Try...Catch...Finally`. Você pode navegar entre referências ou palavras-chave realçadas pressionando **Ctrl** + **Shift** + **Seta para baixo** ou **Ctrl**  + **Shift** + **Seta para cima**.
+
+## <a name="outlining"></a>Estrutura de tópicos
 
 **Habilitar modo de estrutura de tópicos**
 
@@ -47,7 +75,13 @@ O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenha
 |Depois de um conjunto de constructos de linha única|–   Depois das instruções de importação, antes de uma definição de tipo em um arquivo de classe<br />–   Depois de variáveis declaradas em uma classe, antes de qualquer procedimento|
 |Depois de declarações de linha única (declarações de nível não de bloco)|–   Após instruções de importação, instruções de herdar, declarações de variável, declarações de evento, declarações de delegado e instruções de declaração DLL|
 
- **Reformatação automática do código** O editor de texto reformata seu código conforme o necessário. Quando essa opção é selecionada, o editor de códigos:
+## <a name="block-structure-guides"></a>Guias de estrutura de bloco
+
+Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre chaves (**{}**) em seu código. Isso permite que você veja facilmente blocos individuais de código para o seu nível de declaração e construções de nível de código.
+
+## <a name="editor-help"></a>Ajuda do Editor
+
+**Reformatação automática do código** O editor de texto reformata seu código conforme o necessário. Quando essa opção é selecionada, o editor de códigos:
 
 -   Alinhará seu código com a posição correta de guia
 
@@ -65,7 +99,7 @@ O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenha
 
 **Inserção automática de constructos finais**
 
- Quando você digita, por exemplo, a primeira linha de uma declaração de procedimento `Sub Main—`e pressiona **Enter**, o editor de texto adiciona uma linha `End Sub` correspondente. Da mesma forma, se você adicionar um loop [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), o editor de texto adicionará uma instrução `Next` correspondente. Quando essa opção é selecionada, o editor de código adiciona automaticamente o constructo final.
+Quando você digita, por exemplo, a primeira linha de uma declaração de procedimento `Sub Main`, e pressiona **Enter**, o editor de texto adiciona uma linha `End Sub` correspondente. Da mesma forma, se você adicionar um loop [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), o editor de texto adicionará uma instrução `Next` correspondente. Quando essa opção é selecionada, o editor de código adiciona automaticamente o constructo final.
 
 **Inserção automática de membros Interface e MustOverride**
 

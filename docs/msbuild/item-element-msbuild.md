@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab46fa67230ef4a42c6025d99a689ef37d213b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d032e16acc0b3858f81f0989442b8fcfb351047
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908274"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345611"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contém um item definido pelo usuário e seus metadados. Cada item usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve ser especificado como o filho de um elemento `ItemGroup`.  
@@ -122,5 +122,5 @@ O exemplo de código a seguir mostra como usar o atributo `Update` para modifica
 
 ## <a name="see-also"></a>Consulte também  
  [Itens](../msbuild/msbuild-items.md)   
- [Propriedades do MSBuild](../msbuild/msbuild-properties.md)   
+ [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md) [Propriedades de MSBuild](../msbuild/msbuild-properties.md)   
  [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
