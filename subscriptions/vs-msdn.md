@@ -9,12 +9,12 @@ description: Inscreva-se para receber a assinatura do MSDN Magazine incluída na
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d108fa34faec04ce2f09e8ab5b55dfe19f0d61d5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3c57bd85f6570eea5f73409cf6eb9d4cbdc033c1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739583"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379992"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>O benefício MSDN Magazine nas assinaturas do Visual Studio
 
@@ -60,7 +60,7 @@ A Edição digital está disponível para membros do Visual Studio Dev Essential
 
 <sup>1</sup> *Edição impressa:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise) e Imagine (Premium).*
 
-*Edição digital: MCT Software & Services, Microsoft Valued Professional (Professional) e RD (Diretor Regional).*
+*Edição digital: MCT Software & Services, MVP (Most Valuable Professional), RD (Diretor Regional).*
 
 *Exclui:  Imagine (Standard), BizSpark e MCT Software & Services Developer*
 

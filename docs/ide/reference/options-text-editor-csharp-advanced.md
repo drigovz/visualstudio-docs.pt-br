@@ -1,6 +1,6 @@
 ---
 title: Opções, Editor de Texto, C#, Avançado
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887900"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398293"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 
@@ -109,13 +109,17 @@ Use a página de opções **Avançado** para modificar as configurações de for
 
 - Mostrar separadores de linha de procedimento
 
-   O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *.vb* do seu projeto nos locais listados na tabela a seguir:
+   O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *.cs* do seu projeto nos locais listados na tabela a seguir:
 
-   |Local no arquivo de origem .vb|Exemplo de local da linha|
+   |Local no arquivo de origem .cs|Exemplo de local da linha|
    |---------------------------------|------------------------------|
    |Após o encerramento de um constructo de declaração de bloco|–   No final de uma classe, estrutura, módulo, interface ou enumeração<br />–   Depois de uma propriedade, função ou sub<br />–   Não entre cláusulas get e set em uma propriedade|
    |Depois de um conjunto de constructos de linha única|–   Depois das instruções de importação, antes de uma definição de tipo em um arquivo de classe<br />–   Depois de variáveis declaradas em uma classe, antes de qualquer procedimento|
    |Depois de declarações de linha única (declarações de nível não de bloco)|–   Após instruções de importação, instruções de herdar, declarações de variável, declarações de evento, declarações de delegado e instruções de declaração DLL|
+
+## <a name="block-structure-guides"></a>Guias de estrutura de bloco
+
+Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre chaves (**{}**) em seu código. Isso permite que você veja facilmente blocos individuais de código para o seu nível de declaração e construções no nível do código.
 
 ## <a name="editor-help"></a>Ajuda do Editor
 
