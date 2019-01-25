@@ -13,16 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44b957f18061024278710683a63d250f16ae2e4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846159"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761408"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do código
 
-Para visualizar a arquitetura de alto nível, a lógica do seu sistema de software, crie uma *diagrama de dependência* no Visual Studio. Para certificar-se de que o código permaneça consistente com esse design, valide o código com um diagrama de dependência. Você pode criar diagramas de dependência para projetos do Visual c# e Visual Basic. Para ver quais edições do Visual Studio dão suporte a esse recurso, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para visualizar a arquitetura de alto nível, a lógica do seu sistema de software, crie uma *diagrama de dependência* no Visual Studio. Para certificar-se de que o código permaneça consistente com esse design, valide o código com um diagrama de dependência. Você pode criar diagramas de dependência para projetos do Visual c# e Visual Basic. Para ver quais edições do Visual Studio dão suporte a esse recurso, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Criar um diagrama de dependência](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -159,6 +159,7 @@ Antes de criar um diagrama de dependência, certifique-se de que sua solução t
 
 ## <a name="see-also"></a>Consulte também
 
+- [Suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Vídeo: Validar suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)
 - [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)

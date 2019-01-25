@@ -11,24 +11,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964631"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800950"
 ---
 # <a name="list-of-available-services"></a>Lista de serviços disponíveis
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e os seguintes serviços de suporte do SDK do Visual Studio. Alguns pacotes oferecem seus próprios serviços que não estão listados aqui — por exemplo, serviços de linguagem não têm um único serviço GUID. Você deve usar o nome da linguagem para localizar o GUID do serviço de linguagem no registro.  
-  
- Use os GUIDs de serviço listados aqui ou obtido de outra origem (por exemplo, serviços de linguagem) para obter a interface primária ou interfaces mostrados com cada serviço.  
-  
-## <a name="the-services"></a>Os serviços  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e os seguintes serviços de suporte do SDK do Visual Studio. Alguns pacotes oferecem seus próprios serviços que não estão listados aqui — por exemplo, serviços de linguagem não têm um único serviço GUID. Você deve usar o nome da linguagem para localizar o GUID do serviço de linguagem no registro.
+
+Use os GUIDs de serviço listados aqui ou obtido de outra origem (por exemplo, serviços de linguagem) para obter a interface primária ou interfaces mostrados com cada serviço.
+
+## <a name="the-services"></a>Os serviços
+
 | Serviço | Interface | Visual Studio | Visual Studio 2005 | Descrição |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Sim | Sim | Usado pelo VSPackages para obter um <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interface a partir de um controle ActiveX para facilitar as transferências de dados assíncrona. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Não | Sim | Obtém o objeto de extensibilidade de tempo de Design (DTE) usado para a automação.<br /><br /> ID DO C/C++: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Não | Sim | Obtém o objeto de extensibilidade de tempo de Design (DTE) usado para a automação.<br /><br /> C/C++ ID: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | Sim | Sim | Implementado por um designer de formulários para exibir o manipulador de eventos padrão para um controle. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | Sim | Sim | Permite que um VSPackage acessar a interface de automação de VSPackage outro ou de um controle. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | Sim | Sim | Permite que um VSPackage adicionar ou criar uma biblioteca de tipo estendido. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964631"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Sim | Sim | Permite que um VSPackage para adicionar uma URL à lista de URLs usados mais recentemente (MRU) e obter uma lista de todas as URLs na lista MRU. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Sim | Sim | Permite que um VSPackage obter o quadro de janela no qual o pacote ou parte do pacote pode estar situado. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Sim | Sim | Fornece acesso aos arquivos de documentação XML formatado associados com um arquivo de metadados específico. |
-  
-## <a name="see-also"></a>Consulte também  
- [Serviços gerenciados e COM](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Usar e fornecer serviços](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>Consulte também
+
+- [Usar e fornecer serviços](../../extensibility/using-and-providing-services.md)
