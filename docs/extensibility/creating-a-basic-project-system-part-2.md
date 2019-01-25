@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800042"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Criar um sistema de projeto básico, parte 2
 A primeiro passo a passo desta série [criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), mostra como criar um sistema de projeto básico. Este passo a passo se baseia no sistema de projeto básico, adicionando um modelo do Visual Studio, uma página de propriedades e outros recursos. Você deve concluir o passo a passo primeiro antes de iniciar este.  
@@ -85,7 +85,7 @@ A primeiro passo a passo desta série [criar um sistema de projeto básico, part
   
 5. No **propriedades** janela, selecione todos os cinco arquivos na *\\Templates\Projects\SimpleProject\\* pasta e defina o **Build Action** para **ZipProject**.  
   
-   ![Pasta de projeto simples](../extensibility/media/simpproj2.png "SimpProj2")  
+   ![Simple Project Folder](../extensibility/media/simpproj2.png "SimpProj2")  
   
    O \<TemplateData > seção determina o local e a aparência do tipo no projeto SimpleProject a **novo projeto** caixa de diálogo, da seguinte maneira:  
   
@@ -266,9 +266,9 @@ ZipProjects:
   
 5. Clique em **Cancelar** e parar a depuração.  
   
-   ![Pacote cumulativo de atualizações de projeto simples](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")  
+   ![Simple Project Rollup](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")  
   
-   ![Nó de Console simples do projeto](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")  
+   ![Simple Project Console Node](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")  
   
 ## <a name="substitute-project-template-parameters"></a>Substituir parâmetros de modelo de projeto  
  [Criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) mostrou como substituir o `ProjectNode.AddFileFromTemplate` método para fazer um tipo básico de substituição de parâmetro de modelo. Esta seção ensina como usar os parâmetros de modelo do Visual Studio mais sofisticados.  
@@ -339,7 +339,7 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creatr-a-project-property-page"></a>Creatr uma página de propriedades do projeto  
+## <a name="create-a-project-property-page"></a>Criar uma página de propriedades do projeto  
  Você pode criar uma página de propriedades para o tipo de projeto para que os usuários podem exibir e alterar as propriedades em projetos que são baseados no seu modelo. Esta seção mostra como criar uma página de propriedades de configuração independente. Esta página de propriedades básicas usa uma grade de propriedades para exibir as propriedades públicas que expõem em sua classe de página de propriedade.  
   
  Derive sua classe de página de propriedade do `SettingsPage` classe base. A grade de propriedades fornecida pelo `SettingsPage` classe está ciente dos tipos de dados mais primitivos e sabe como exibi-los.  Além disso, o `SettingsPage` classe sabe como manter valores de propriedade para o arquivo de projeto.  
@@ -471,7 +471,7 @@ ZipProjects:
   
 8. Clique com botão direito no nó do projeto no **Gerenciador de soluções**e, em seguida, clique em **propriedades**. A caixa de diálogo **Páginas de Propriedades** é exibida.  
   
-   ![Página de propriedades de projeto simples](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")  
+   ![Simple Project Property Page](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")  
   
 ## <a name="test-the-project-property-page"></a>A página de propriedades do projeto de teste
  Agora você pode testar se é possível modificar e alterar valores de propriedade.  
