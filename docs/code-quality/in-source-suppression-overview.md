@@ -1,6 +1,6 @@
 ---
 title: Suprimir avisos da análise de código
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932861"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835052"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir avisos da análise de código
 
@@ -66,17 +66,19 @@ As propriedades do atributo incluem:
 
 - **MessageId** -identificador exclusivo de um problema para cada mensagem.
 
-- **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Escopos com suporte incluem o seguinte:
+- **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Com suporte [escopos](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) incluem o seguinte:
 
-    - Módulo
+   - `module`
 
-    - Namespace
+   - `resource`
 
-    - Recurso
+   - `type`
 
-    - Tipo
+   - `member`
 
-    - Membro
+   - `namespace` -Este escopo suprime os avisos em relação ao namespace em si. Ele não suprime avisos em relação aos tipos no namespace.
+
+   - `namespaceanddescendants` -(Novo para o Visual Studio de 2019) nesse escopo suprime os avisos em um namespace e todos os seus descendentes símbolos. O `namespaceanddescendants` valor só é válida para os analisadores do Roslyn e é ignorado por análise estática de binária, com base no FxCop.
 
 - **Destino** – um identificador que é usado para especificar o destino no qual o aviso está sendo suprimido. Ele deve conter um nome totalmente qualificado do item.
 
@@ -151,7 +153,7 @@ A ferramenta de análise de código gerenciado examina `SuppressMessage` atribut
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Quando você suprime um aviso com escopo de namespace, ele suprime o aviso em relação ao namespace em si. Ele não suprime o aviso em relação aos tipos no namespace.
+> Quando você suprimir um aviso com `namespace` escopo, ele suprime o aviso em relação ao namespace em si. Ele não suprime o aviso em relação aos tipos no namespace.
 
 Qualquer supressão pode ser expressos com a especificação de um escopo explícito. Esses supressões devem residir no nível global. Você não pode especificar a supressão de nível de membro decorando um tipo.
 
@@ -168,5 +170,6 @@ O arquivo de supressão global mantém supressões supressões no nível global 
 
 ## <a name="see-also"></a>Consulte também
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Usar os analisadores de Roslyn](../code-quality/use-roslyn-analyzers.md)
