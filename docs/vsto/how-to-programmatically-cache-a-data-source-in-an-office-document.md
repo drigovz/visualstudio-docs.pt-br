@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46411ef1827f6a5adead8ff58e42eaf68e6c58ae
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a2338e2402167987767ac5c9527113c4b0ff81d6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088485"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867319"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Como: Armazenar em cache programaticamente uma fonte de dados em um documento do Office
   Você pode adicionar programaticamente um objeto de dados para o cache de dados em um documento por meio da chamada a `StartCaching` método de um host de itens, como uma <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Remove um objeto de dados do cache de dados, chamando o `StopCaching` método de um item de host.
