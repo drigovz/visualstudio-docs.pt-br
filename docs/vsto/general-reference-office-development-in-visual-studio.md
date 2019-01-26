@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec7b021c1eddff17ccc5687ec3d16f765838d062
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0502d26419da855d147fae9dc7fc2d14c241b092
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933172"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875895"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Referência geral (desenvolvimento do Office no Visual Studio)
   Esta seção contém detalhes técnicos sobre projetos do Microsoft Office no Visual Studio.  

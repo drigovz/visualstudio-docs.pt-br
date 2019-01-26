@@ -15,17 +15,17 @@ helpviewer_keywords:
 - worksheets, Excel
 - worksheets
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b89b91e8a1fd93953dae6dad28019b2203cf537
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866732"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876272"
 ---
 # <a name="worksheet-host-item"></a>Item de host da planilha
   O <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host é um tipo que estende o <xref:Microsoft.Office.Interop.Excel.Worksheet> o tipo do assembly de interoperabilidade primário para o Excel. O <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host fornece todas as mesmas propriedades, métodos e eventos como um <xref:Microsoft.Office.Interop.Excel.Worksheet> objeto, mas ele também expõe eventos adicionais e atua como um contêiner para controles dos Windows Forms e controles de host.  

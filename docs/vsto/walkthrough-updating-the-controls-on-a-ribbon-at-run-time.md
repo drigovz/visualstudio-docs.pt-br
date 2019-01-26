@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dynamic menu
 - dynamic menus [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926903"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875908"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução
 
@@ -207,7 +207,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
 
-9. Adicione o seguinte código para o `CustomerRibbon` classe. Esse código usa consultas LINQ para executar as seguintes tarefas:
+9. Adicione o código a seguir à classe `CustomerRibbon`. Esse código usa consultas LINQ para executar as seguintes tarefas:
 
    - Adiciona um submenu para o **ProductsPurchased** menu para cada ordem de venda relacionadas ao cliente selecionado.
 
@@ -240,7 +240,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Adicione o seguinte código para o `CustomerRibbon` classe. Esse código executa as seguintes tarefas:
+14. Adicione o código a seguir à classe `CustomerRibbon`. Esse código executa as seguintes tarefas:
 
     - Preenche a linha para novas mensagens de email usando o endereço de email do cliente selecionado no momento.
 
