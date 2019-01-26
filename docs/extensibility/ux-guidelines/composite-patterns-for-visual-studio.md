@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b373fd51087526c30243391b6b0b32ad27e15ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866901"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027419"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 Padrões compostos combinam elementos de design e interação em configurações distintas. Alguns dos mais importantes compostos padrões no Visual Studio em relação à consistência incluem:  
@@ -71,14 +71,14 @@ Padrões compostos combinam elementos de design e interação em configurações
 #### <a name="color"></a>Cor  
  Há uma paleta específica dos gráficos de cores definidas para uso no Visual Studio. A paleta é acessível para os tipos principais de daltonismo e as cores podem ser diferenciadas, mesmo quando usados como muito estreitas fatias da cor. Você pode usar essas cores em qualquer combinação para qualquer tipo de gráfico na sua interface do usuário. Você não precisa usar todas as cores de sete, se você não precisa que muitas cores distintas. Essas cores não foram projetados para ser usado com qualquer elemento de primeiro plano, portanto, não coloque texto ou glifos sobre essas cores. Esses matizes devem ser embutido em código e expostas para personalização de usuário sob **Ferramentas > Opções** (consulte [expondo as cores para os usuários finais](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).  
 
-|Amostra de|Hex|RGB|  
+|Swatch|Hex|RGB|  
 |------------|---------|---------|  
 |![Amostra 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113,178,82|  
 |![Amostra BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191,63,0|  
 |![Amostra FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|#FCB714|252,183,20|  
 |![Amostra 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|#903F8B|144,63,139|  
 |![Amostra 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|#117AD1|17,122,209|  
-|![Amostra 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
+|![Swatch 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Amostra B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
 
 ##  <a name="BKMK_OnObjectUI"></a> Interface do usuário no objeto e inspecionar  
@@ -396,7 +396,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 
 | Estado | Aparência | Detalhes do Visual |
 |-------------------------|---------------| - |
-| **Não selecionado** | Padrão | ![Estado do botão padrão](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
+| **Unselected** | Padrão | ![Estado do botão padrão](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
 | **Seleção primária** | Redimensionável | ![A seleção principal com alças de redimensionamento](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize") |
 | **Seleção primária** | Não é redimensionável | ![A seleção principal sem alças de redimensionamento](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize") |
 | **Seleção primária** | Bloqueado | ![Seleção primária bloqueada](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked") |

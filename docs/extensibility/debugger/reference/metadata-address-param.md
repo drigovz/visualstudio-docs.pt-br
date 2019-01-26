@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8664948689c872078df12ed9713c128b02c71121
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f91e8ddf00b191bd2574c3a360328fb00cb50960
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938062"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 Essa estrutura representa um parâmetro de um método ou função.  
@@ -54,7 +54,7 @@ public struct METADATA_ADDRESS_PARAM {
  Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_PARAM` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

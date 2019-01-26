@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41970ba51b11ddbd81eca679dd7c540efe7d59a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1a8814ebf769ba76fe7c1dc6646248a088bc17f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930363"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982553"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificando identificadores de arquivo para extensões de nome de arquivo
 Há várias maneiras para determinar o aplicativo que lida com um arquivo que tem uma extensão de arquivo específico. Os verbos OpenWithList e OpenWithProgids são duas maneiras de especificar identificadores de arquivo na entrada de registro para a extensão de arquivo.  
   
-## <a name="openwithlist-verb"></a>Verbo OpenWithList  
+## <a name="openwithlist-verb"></a>OpenWithList Verb  
  Quando o botão direito do mouse um arquivo no Windows Explorer, você verá a **abrir** comando. Se mais de um produto é associado com uma extensão, você verá uma **abrir com** submenu.  
   
  Você pode registrar diferentes aplicativos para abrir uma extensão, definindo a chave de OpenWithList para a extensão de arquivo em HKEY_CLASSES_ROOT. Os aplicativos listados sob essa chave para uma extensão de arquivo aparecem sob o **programas recomendados** título na **abrir com** caixa de diálogo. O exemplo a seguir mostra os aplicativos registrados para abrir a extensão de arquivo. vcproj.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce5ebac402603a8d26908ea1cd67468bbefea1c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a6f6860c64094fc84e5ebe64ede4c6e38ff7d0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943071"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993930"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referência de esquema XML do VSCT
 Fornece uma tabela de elementos de esquema do compilador de tabela de comando, com filho permitido elementos e atributos para cada um.  
@@ -35,7 +35,7 @@ Fornece uma tabela de elementos de esquema do compilador de tabela de comando, c
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
-- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }  
   
   Comentários XML podem ser usados, mas as ferramentas de GUI (interface) de ida e volta gráfica do usuário podem descartá-las. O conteúdo de \<anotação > elementos têm garantia de ser mantida, independentemente do formato.  
   

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a49445445388a6db0e6dae9c09b50137c04c4ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954118"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imagens e ícones para o Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Uso de imagens no Visual Studio  
@@ -83,7 +83,7 @@ ms.locfileid: "53880696"
 |||  
 |-|-|  
 |**"Show"**|**"View"**|  
-|![Mostrar ícone](../../extensibility/ux-guidelines/media/0404-07_show.png "07_Show 0404")|![Ícone do modo de exibição](../../extensibility/ux-guidelines/media/0404-08_view.png "08_View 0404")|  
+|![Show icon](../../extensibility/ux-guidelines/media/0404-07_show.png "0404-07_Show")|![Ícone do modo de exibição](../../extensibility/ux-guidelines/media/0404-08_view.png "08_View 0404")|  
   
  O para a direita ampliando o ícone de lupa deve representam apenas pesquisar, localizar e procurar. A variante voltado para a esquerda com o sinal de subtração ou sinal de adição deve representar somente zoom em / reduzir.  
   
@@ -152,9 +152,9 @@ ms.locfileid: "53880696"
 #### <a name="perspective"></a>Perspectiva  
  Mantenha o ícone claro e compreensível. Perspectiva de uso e uma fonte de luz somente quando necessário. Embora usando a perspectiva em elementos de ícone deve ser evitado, alguns elementos são irreconhecíveis sem ele. Nesses casos, uma perspectiva estilizada se comunica a clareza do elemento.  
   
- ![uma perspectiva de ponto de 3](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "31_3PointPerspective 0404")<br />perspectiva de ponto de 3
+ ![3-point perspective](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "0404-31_3PointPerspective")<br />perspectiva de ponto de 3
   
- ![1 ponto perspectiva](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "32_1PointPerspective 0404")<br />1 ponto perspectiva
+ ![1-point perspective](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404-32_1PointPerspective")<br />1 ponto perspectiva
   
  A maioria dos elementos deve ser voltado para a ou diagonal à direita:  
   
@@ -268,7 +268,7 @@ ms.locfileid: "53880696"
 ### <a name="base-palette"></a>Paleta de base  
  Todos os ícones padrão contêm três cores de base. Ícones de não contenham nenhuma gradientes ou sombras, com uma ou duas exceções para os ícones de ferramenta 3D.  
   
-|Uso|Nome|Valor (tema claro)|Amostra de|Exemplo|  
+|Uso|Nome|Valor (tema claro)|Swatch|Exemplo|  
 |-----------|----------|---------------------------|------------|-------------|  
 |Em segundo plano/escuro|VS BG|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Exemplo de base paleta](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "02_BasePaletteExample 0405")|  
 |Em primeiro plano/leve|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
@@ -281,7 +281,7 @@ ms.locfileid: "53880696"
 #### <a name="action-modifiers"></a>Modificadores de ação  
  Quatro cores indicam os tipos de ações exigidas pelo modificadores de ação:  
   
-|Uso|Nome|Valor (todos os temas)|Amostra de|  
+|Uso|Nome|Valor (todos os temas)|Swatch|  
 |-----------|----------|--------------------------|------------|  
 |Positivo|Verde de ação do VS|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Negativo|Vermelho de ação do VS|A1260D / 161,38,13|![Swatch A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
@@ -293,13 +293,13 @@ ms.locfileid: "53880696"
   
 |||||  
 |-|-|-|-|  
-|![Ícone executar](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "03_ActionModifierRun 0405")<br />Executar|![Ícone de consulta de execução](../../extensibility/ux-guidelines/media/0405-04_executequery.png "04_ExecuteQuery 0405")<br />Executar consulta|![Ícone de todas as etapas de reproduzir](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "05_PlayAllSteps 0405")<br />Executar todas as etapas|![Adicionar ícone do controle](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "06_AddControl 0405")<br />Adicionar controle|  
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Executar|![Ícone de consulta de execução](../../extensibility/ux-guidelines/media/0405-04_executequery.png "04_ExecuteQuery 0405")<br />Executar consulta|![Ícone de todas as etapas de reproduzir](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "05_PlayAllSteps 0405")<br />Executar todas as etapas|![Adicionar ícone do controle](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "06_AddControl 0405")<br />Adicionar controle|  
   
  Vermelho é usado para modificadores de ação negativo, como "Excluir", "Stop", "Cancelar" e "Fechar".  
   
 |||||  
 |-|-|-|-|  
-|![Excluir ícone relacionamento](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "07_DeleteRelationship 0405")<br />Excluir relação|![Excluir coluna de ícone](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "08_DeleteColumn 0405")<br />Excluir coluna|![Ícone de consulta de parada](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "09_StopQuery 0405")<br />Parar consulta|![Ícone de Conexão off-line](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "10_ConnectionOffline 0405")<br />Conexão Offline|  
+|![Excluir ícone relacionamento](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "07_DeleteRelationship 0405")<br />Excluir relação|![Excluir coluna de ícone](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "08_DeleteColumn 0405")<br />Excluir coluna|![Stop query icon](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405-09_StopQuery")<br />Parar consulta|![Ícone de Conexão off-line](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "10_ConnectionOffline 0405")<br />Conexão Offline|  
   
  Azul é aplicada à ação neutra modificadores mais comumente representadas como setas, como "Abrir," "Avançar", "Anterior", "Importar" e "Exportar".  
   
@@ -318,27 +318,27 @@ ms.locfileid: "53880696"
   
 ||||||  
 |-|-|-|-|-|  
-|![Ícone executar](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "03_ActionModifierRun 0405")<br />Executar|![Ícone de interrupção](../../extensibility/ux-guidelines/media/0405-19_stop.png "19_Stop 0405")<br />Stop|![Excluir ícone](../../extensibility/ux-guidelines/media/0405-20_delete.png "20_Delete 0405")<br />Excluir|![Ícone Salvar](../../extensibility/ux-guidelines/media/0405-21_save.png "21_Save 0405")<br />Salvar|![Ícone de voltar de navegar](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "22_NavigateBack 0405")<br />Navegação regressiva|  
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Executar|![Ícone de interrupção](../../extensibility/ux-guidelines/media/0405-19_stop.png "19_Stop 0405")<br />Stop|![Excluir ícone](../../extensibility/ux-guidelines/media/0405-20_delete.png "20_Delete 0405")<br />Excluir|![Ícone Salvar](../../extensibility/ux-guidelines/media/0405-21_save.png "21_Save 0405")<br />Salvar|![Ícone de voltar de navegar](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "22_NavigateBack 0405")<br />Navegação regressiva|  
   
 ### <a name="code-hierarchy-palette"></a>Paleta de hierarquia de código  
   
 #### <a name="folder"></a>Pasta  
   
-|Uso|Nome|Valor (todos os temas)|Amostra de|Exemplo|  
+|Uso|Nome|Valor (todos os temas)|Swatch|Exemplo|  
 |-----------|----------|--------------------------|------------|-------------|  
 |Pastas|Pasta|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Ícone de pasta de cor](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "23_FolderColor 0405")|  
   
 #### <a name="visual-studio-languages"></a>Idiomas do Visual Studio  
  Cada um dos idiomas comum ou plataformas disponíveis no Visual Studio tem uma cor associada. Essas cores são usadas no ícone de base, ou em modificadores de linguagem que aparecem no canto superior direito dos ícones compostas.  
   
-|Uso|Nome|Valor (todos os temas)|Amostra de|  
+|Uso|Nome|Valor (todos os temas)|Swatch|  
 |-----------|----------|--------------------------|------------|  
 |ASP, HTML, WPF|ASP HTML WPF azul|7 DE 0095D / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP roxo|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
 |C#|CS Green (verde de ação do VS)|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |CSS|Vermelho CSS|BD1E2D / 189,30,45|![Swatch BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
 |F#|FS roxo|672878 / 103,40,120|![Swatch 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
-|JavaScript|Laranja JS|F16421 / 241,100,33|![Swatch F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
+|JavaScript|JS Orange|F16421 / 241,100,33|![Swatch F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
 |VB|VB Blue (azul de ação do VS)|C 00539 / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |TypeScript|TS laranja|E04C06 / 224,76,6|![Swatch E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
 |Python|Aj verde|879636 / 135,150,54|![Swatch 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
@@ -347,16 +347,16 @@ ms.locfileid: "53880696"
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Ícone de Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "25_VB 0405")<br />VB|![C&#35; ícone](../../extensibility/ux-guidelines/media/0405-26_csharp.png "26_CSharp 0405")<br />C#|![C&#43; &#43; ícone](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "27_CPlusPlus 0405")<br />C++|![F&#35; ícone](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "28_FSharp 0405")<br />F#|![Ícone de JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "29_JavaScript 0405")<br />JavaScript|![Ícone do Python](../../extensibility/ux-guidelines/media/0405-30_python.png "30_Python 0405")<br />Python|  
-|![Ícone HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "31_HTML 0405")<br />HTML|![Ícone do WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "32_WPF 0405")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![Ícone CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "34_CSS 0405")<br />CSS|![Ícone de TypeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "35_TypeScript 0405")<br />TypeScript||  
+|![Ícone de Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "25_VB 0405")<br />VB|![C&#35; icon](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; icon](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![Ícone de JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "29_JavaScript 0405")<br />JavaScript|![Ícone do Python](../../extensibility/ux-guidelines/media/0405-30_python.png "30_Python 0405")<br />Python|  
+|![HTML icon](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![Ícone CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "34_CSS 0405")<br />CSS|![TypeScript icon](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  Ícones de IntelliSense usam uma paleta de cores exclusivas. Essas cores são usadas para ajudar os usuários a distinguir rapidamente entre diferentes itens na lista de pop-up do IntelliSense.  
   
-|Uso|Nome|Valor (todos os temas)|Amostra de|  
+|Uso|Nome|Valor (todos os temas)|Swatch|  
 |-----------|----------|--------------------------|------------|  
 |Classe de evento|VS ação laranja|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
-|Método de extensão, método, módulo, delegado|VS ação roxo|652 90 DE D / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
+|Método de extensão, método, módulo, delegado|VS ação roxo|652D90 / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |Campo, Item de enumeração, Macro, estrutura, tipo de valor de união, operador, de Interface|VS ação azul|C 00539 / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |Objeto|Verde de ação do VS|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Constante, exceção, Item de enumeração, mapa, Item de mapa, Namespace, modelo, definição de tipo|Em segundo plano (VS BG)|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
@@ -371,7 +371,7 @@ ms.locfileid: "53880696"
 ### <a name="notifications"></a>Notificações  
  As notificações no Visual Studio são usadas para indicar o status. A paleta de notificação usa os seguintes quatro cores, bem como opções de preenchimento de primeiro plano preto ou branco, para definir notificações com os seguintes níveis de status.  
   
-|Uso|Nome|Valor (todos os temas)|Amostra de|  
+|Uso|Nome|Valor (todos os temas)|Swatch|  
 |-----------|----------|--------------------------|------------|  
 |Status: neutro|Notificação azul (VS azul)|1BA1E2 / 27,161,226|![Amostra 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |Status: positivo|Notificação Green (verde VS)|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
@@ -389,15 +389,15 @@ ms.locfileid: "53880696"
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  Em geral, o Visual Studio Online consiste em recursos hospedados em um navegador. A cor varia em ambientes diferentes, mas o estilo permanece o mesmo.  
   
-|Grupo|Uso|Nome|Valor (todos os temas)|Amostra de|  
+|Grupo|Uso|Nome|Valor (todos os temas)|Swatch|  
 |-----------|-----------|----------|--------------------------|------------|  
-|TFS|Informações preliminares|BG TFSO|656565/ 101, 101, 101|![Amostra de 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
+|TFS|Informações preliminares|TFSO BG|656565/ 101, 101, 101|![Amostra de 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|Contorno|TFSO-OUT|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |Napa|Informações preliminares|Branco|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |Mônaco|Informações preliminares|Branco|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|Informações preliminares|Branco|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|Normal|Grey_Primary F12|555555 / 85, 85, 85|![Amostra de 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
-|F12|Passe o mouse|Blue_Hover F12|2279BF / 34,121,191|![Swatch 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
+|F12|Passe o mouse|F12 Blue_Hover|2279BF / 34,121,191|![Swatch 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
 |F12|Disabled|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
 |F12|Passe o mouse em segundo plano|Passe o mouse bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
 |F12|Plano de fundo pressionado|Bg pressionado|B2D7F0 / 178,215,240|![Swatch B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
@@ -414,11 +414,11 @@ ms.locfileid: "53880696"
   
 |TFS Online||||  
 |----------------|-|-|-|  
-|![Ícone de equipe TFS Online](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "49_TFSOnlineTeam 0405")<br />Equipe online|![Ícone de informações do TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "50_TFSInformation 0405")<br />Informações|![Ícone de histórico do TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "51_TFSHistory 0405")<br />Histórico|![Ícone do branch TFS](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "52_TFSBranch 0405")<br />Ramificação|  
+|![Ícone de equipe TFS Online](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "49_TFSOnlineTeam 0405")<br />Equipe online|![Ícone de informações do TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "50_TFSInformation 0405")<br />Informações|![Ícone de histórico do TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "51_TFSHistory 0405")<br />Histórico|![TFS branch icon](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405-52_TFSBranch")<br />Ramificação|  
   
 |Napa||||  
 |----------|-|-|-|  
-|![Ícone de conteúdo Napa](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "53_NapaContent 0405")<br />Conteúdo|![Ícone de email do office Napa](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "54_NapaOfficeMail 0405")<br />Email do Office|![Ícone do SharePoint Napa](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "55_NapaSharePoint 0405")<br />SharePoint|![Ícone do painel de tarefas Napa](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "56_NapaTaskPane 0405")<br />Painel de tarefas|  
+|![Ícone de conteúdo Napa](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "53_NapaContent 0405")<br />Conteúdo|![Ícone de email do office Napa](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "54_NapaOfficeMail 0405")<br />Email do Office|![Napa SharePoint icon](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint")<br />SharePoint|![Ícone do painel de tarefas Napa](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "56_NapaTaskPane 0405")<br />Painel de tarefas|  
   
 |Mônaco||||  
 |------------|-|-|-|  

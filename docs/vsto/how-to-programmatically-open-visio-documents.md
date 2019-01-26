@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], opening Visio documents
 - Visio [Office development in Visual Studio], opening Visio documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1815b0f336026890c88ec0794ea72911560ecb38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c9e9eb6a298270deb4f66c38662b0c52d7ee76f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875716"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864443"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Como: Abrir documentos do Visio de forma programática
   Há dois métodos para abrir documentos existentes do Microsoft Office Visio: Abra e OpenEx. O método OpenEx é idêntico ao método Open, exceto que ele forneça argumentos em que o chamador pode especificar como o documento é aberto.  

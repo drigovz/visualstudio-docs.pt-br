@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f320a23fa75dccdb4c273bc851832f3b762696d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01f22e6f01ded792a450c7b69b5dd36e36066821
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910211"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927587"
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para compilar
 A lista de configurações da solução para uma determinada solução é gerenciada pela caixa de diálogo Configurações da solução.  
@@ -39,7 +39,7 @@ Várias configurações
   
  Dependências do projeto e a ordem de compilação são independentes da configuração de solução: ou seja, você só pode definir a árvore de uma dependência para todos os projetos na solução. Clicando duas vezes a solução ou projeto e selecionando o **dependências do projeto** ou **ordem de Build do projeto** opção abre o **dependências do projeto** caixa de diálogo. Ele também pode ser aberto na **projeto** menu.  
   
- ![Dependências do projeto](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Project Dependencies](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Dependências do projeto  
   
  Dependências do projeto determinam a ordem na qual os projetos são compilados. Use a guia de ordem de Build na caixa de diálogo para exibir a ordem exata em que projetos dentro de uma solução de build e use a guia dependências para modificar a ordem de compilação.  

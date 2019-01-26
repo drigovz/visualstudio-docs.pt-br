@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958cbc17c843ba4d23ac83b928f7b517ada93080
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfbc456ea42342187b5d1d3039c10b3336714133
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922119"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934186"
 ---
 # <a name="capability-flags"></a>Sinalizadores de recurso
 O SCC_CAP_*xxx* sinalizadores são sinalizadores de bit usados para indicar os recursos de um plug-in de controle de origem. O SCC_EXCAP_*xxx* sinalizadores são incrementais sinalizadores que indicam recursos estendidos e resolvem para valores inteiros.  

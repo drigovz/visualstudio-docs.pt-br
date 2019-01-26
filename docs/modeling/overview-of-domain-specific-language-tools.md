@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17a5908ddb6ecdd9f8434de1bd2792c4b86c989d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892297"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981981"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hospedados no Visual Studio, permitem que você criar uma linguagem específica de domínio e, em seguida, gerar tudo o que os usuários devem ter para criar modelos que são baseados na linguagem.
@@ -51,7 +51,7 @@ Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hos
 
   O assistente cria uma solução do Visual Studio que tem os seguintes projetos:
 
-- DSL
+- Dsl
 
    O projeto de Dsl define a linguagem específica de domínio e suas ferramentas de edição e de processamento.
 

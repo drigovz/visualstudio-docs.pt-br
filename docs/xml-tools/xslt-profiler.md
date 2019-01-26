@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 8e852628-99fc-4e6e-8602-e1c13dde3b95
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18776904fcf02ccf35a0ae73027a22e903056661
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b42b961584e79064bee6c8313ff5d26396c2caed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872811"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001154"
 ---
 # <a name="xslt-profiler"></a>Criador de perfil XSLT
 
@@ -29,4 +29,4 @@ O Profiler XSLT é parte do Visual Studio e está disponível a partir de **XML*
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Criador de perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Passo a passo: XSLT profiler](../xml-tools/walkthrough-xslt-profiler.md)

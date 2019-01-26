@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abf0840b3067b323f9d1552c5cb4261002004406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952836"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945379"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>O que&#39;s de novo no SDK do Visual Studio 2015
 O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visual Studio 2015, o Visual Studio 2015 atualizado e o Visual Studio 2017.  

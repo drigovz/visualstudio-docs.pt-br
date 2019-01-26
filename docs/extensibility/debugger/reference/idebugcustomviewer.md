@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b32073b54362c7598c3756ebd691823f5bea76bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72f273cc08926b79e188f43356466fa00736fa5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988970"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Essa interface permite que um avaliador de expressão (EE) para exibir um valor de propriedade em qualquer formato que é necessário.  
@@ -51,7 +51,7 @@ IDebugCustomViewer : IUknown
  Normalmente, um visualizador personalizado fornece uma exibição somente leitura dos dados, desde o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface fornecido à [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) não tem métodos para alterar o valor da propriedade, exceto como uma cadeia de caracteres. Para dar suporte a blocos arbitrários de dados de alteração, o EE implementa uma interface personalizada no mesmo objeto que implementa o `IDebugProperty3` interface. Essa interface personalizada deve fornecer os métodos necessários para alterar um bloco arbitrário de dados.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f80c5a0e507b6dd6db4e23b6917c5774816a4672
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03a269dad8b282707bf4087b8f97fb570a8959cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960224"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 Descreve o resultado da associação a um ponto de interrupção de dados.  
@@ -59,7 +59,7 @@ public struct BP_RESOLUTION_DATA { 
  Essa estrutura é um membro do [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) estrutura, que está em um membro de ativar o [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura retornada pelo [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)método.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
