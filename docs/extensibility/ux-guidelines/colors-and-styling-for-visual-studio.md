@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914602"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027705"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 
@@ -310,7 +310,7 @@ Vários elementos de interface do usuário comuns já têm cores de alto contras
 
 | Cor do sistema | Uso |
 | --- | --- |
-| Legenda ativa | -IDE ativa e glifos de botão de janela rafted no hover e pressione<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de barra de status padrão |
+| ActiveCaption | -IDE ativa e glifos de botão de janela rafted no hover e pressione<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de barra de status padrão |
 | ActiveCaptionText | -IDE Active Directory e o windows rafted de primeiro plano da barra de título (texto e glifos)<br />-Em segundo plano e da borda dos botões da janela ativa no hover e pressione |
 | Controle | -Caixa de combinação, a lista suspensa e a pesquisa padrão de controle e desativado em segundo plano, incluindo o botão suspenso<br />-Plano de fundo do botão de encaixe destino<br />-Plano de fundo de barra de comando<br />-Plano de fundo de janela de ferramenta |
 | ControlDark | -Plano de fundo IDE<br />-Separadores de barra de menu e comando<br />-Borda da barra de comando<br />-Sombras menu<br />-Guia padrão e passe o mouse borda da janela e o separador de ferramenta<br />-De documentos bem fundo do botão de estouro<br />-Borda de glifo de destino dock |
@@ -318,11 +318,11 @@ Vários elementos de interface do usuário comuns já têm cores de alto contras
 | ControlLight |-Borda de guia ocultar automaticamente<br />-Borda de lista de caixa e a lista suspensa caixa de combinação<br />-Encaixar o plano de fundo de destino e a borda |
 | ControlLightLight | -Borda provisória selecionada, focalizada |
 | ControlText | -Glifo de caixa de combinação suspensa e de caixa de lista<br />-Texto da guia ferramenta cancelou a seleção de janela |
-| Texto cinza |-Caixa de combinação e a lista suspensa desabilitado borda, o glifo de menu suspenso, texto e texto do item de menu<br />-Texto de menu desabilitado<br />-Texto do cabeçalho pesquisa controle 'Opções de pesquisa'<br />-Separador de seção de controle pesquisa |
+| GrayText |-Caixa de combinação e a lista suspensa desabilitado borda, o glifo de menu suspenso, texto e texto do item de menu<br />-Texto de menu desabilitado<br />-Texto do cabeçalho pesquisa controle 'Opções de pesquisa'<br />-Separador de seção de controle pesquisa |
 | Realce | -Todas as em foco e pressionados planos de fundo e bordas, exceto combinação botão suspenso em segundo plano e documento estouro bem botão borda da caixa<br />-Planos de fundo do item selecionado |
-| Texto realçado | -Todas as em foco e colorir pressionado (texto e glifos)<br />-Ferramenta focalizado janela e documento guia janela controle em primeiro plano<br />-Borda de barra de título de janela de ferramenta focalizado<br />-Em primeiro plano de guia provisória concentrado e selecionado<br />-Borda do botão de estouro de bem documento em foco e pressione<br />-Borda de ícone selecionado|
+| HighlightText | -Todas as em foco e colorir pressionado (texto e glifos)<br />-Ferramenta focalizado janela e documento guia janela controle em primeiro plano<br />-Borda de barra de título de janela de ferramenta focalizado<br />-Em primeiro plano de guia provisória concentrado e selecionado<br />-Borda do botão de estouro de bem documento em foco e pressione<br />-Borda de ícone selecionado|
 | HotTrack | -Barra de rolagem em segundo plano do elevador e pressione a borda<br />-Barra de rolagem glifo de seta na imprensa |
-| Legenda inativa | -IDE inativo e glifos de botão de janela rafted ao focalizar<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de controle de pesquisa desabilitado |
+| InactiveCaption | -IDE inativo e glifos de botão de janela rafted ao focalizar<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de controle de pesquisa desabilitado |
 | InactiveCaptionText | -IDE inativo e primeiro plano o barra de título windows rafted (texto e glifos)<br />-Plano de fundo de botões de janela inativa e a borda ao focalizar<br />-Borda e o plano de fundo de botão de janela ferramenta sem foco<br />-Em primeiro plano de controle de pesquisa desabilitado |
 | Menu | Lista suspensa plano de fundo do menu<br />-Plano de fundo de marca de seleção marcado e desabilitado |
 | MenuText | -Borda do menu drop-down<br />-Marcas de seleção<br />-Glifos menu<br />-Texto do menu drop-down<br />-Borda de ícone selecionado |
@@ -379,7 +379,7 @@ Preencha o registro com dois valores:
 
 O serviço especificado no registro deve fornecer uma implementação de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> para o grupo correspondente.
 
-![Implementação da interface IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "a_FontAndColorGroup 0304")<br />Implementação de `IVsFontAndColorGroup`
+![Implementation of IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Implementação de `IVsFontAndColorGroup`
 
 ### <a name="to-implement-ide-support"></a>Para implementar o suporte IDE
 

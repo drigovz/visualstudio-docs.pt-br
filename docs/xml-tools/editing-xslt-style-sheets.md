@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98fbf2a1041260370946a059599a601f57c482c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a8625defb0d9e8d656aac7bb3d2236d4f5bb9c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867401"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021878"
 ---
 # <a name="edit-xslt-style-sheets"></a>Editar folhas de estilos XSLT
 
@@ -39,7 +39,7 @@ O editor XML pode ser usado para editar folhas de estilos XSLT. Você pode tirar
 
  Você pode executar uma transformação XSL e exibir a saída do editor XML. Para obter mais informações, confira [Como: Executar uma transformação XSLT do Editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
- **Depurar o XSLT**
+ **Debug XSLT**
 
  Você pode iniciar o depurador XSLT de um arquivo fonte no editor XML. O depurador oferece suporte pontos de interrupção no arquivo XSLT, estado de configuração de execução XSLT de exibição, e assim por diante. Passa sobre uma variável XSLT traz anterior um ToolTip com o valor da variável. O depurador pode ser usado para depurar uma folha de estilos, ou depurar uma transformação XSL compilado chamada de outro aplicativo. Para obter mais informações, consulte [depuração XSLT](../xml-tools/debugging-xslt.md).
 

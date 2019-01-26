@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8b6ea7865bdf9a6fcf3b57f7a463fab83cbbf75b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cc5cf725b47c740bc14a57870e589c5de4e8c1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980421"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
 Quando você abre uma solução de ferramentas de linguagem específica do domínio (ferramentas DSL) no Visual Studio, a interface do usuário será semelhante a figura a seguir.
@@ -42,7 +42,7 @@ Quando você abre uma solução de ferramentas de linguagem específica do domí
 
 |**Termo**|**Definição**|
 |-|-|
-|Classe de domínio|Classes de domínio são os tipos de elementos em seus modelos.<br /><br /> Uma classe de domínio pode aparecer mais de uma vez em um diagrama, se ele é o destino de mais de uma relação.<br /><br /> Para adicionar uma classe de domínio, arraste a ferramenta de classe de domínio do **caixa de ferramentas** para o **Classes e relacionamentos** lado do diagrama.|
+|Domain Class|Classes de domínio são os tipos de elementos em seus modelos.<br /><br /> Uma classe de domínio pode aparecer mais de uma vez em um diagrama, se ele é o destino de mais de uma relação.<br /><br /> Para adicionar uma classe de domínio, arraste a ferramenta de classe de domínio do **caixa de ferramentas** para o **Classes e relacionamentos** lado do diagrama.|
 |Relacionamento de domínio|As relações de domínio são os tipos de links entre os elementos em seus modelos.<br /><br /> Uma *relacionamento de incorporação* indica que o elemento de destino é de propriedade ou contido pelo elemento de origem e aparece como uma linha sólida. Cada elemento em um modelo deve ser o destino de uma relação de incorporação, para que o modelo de uma árvore de formulários. Um *relação de referência* indica um link geral entre elementos de modelo e aparece como uma linha tracejada. Qualquer elemento pode ter qualquer número de links de referência.<br /><br /> Criar uma relação clicando na ferramenta sobre o **caixa de ferramentas**, clicando na classe de domínio de origem e, em seguida, clicando na classe de destino.|
 |Formas e Conectores|Formas de especificam como os elementos de modelo devem ser exibidos em um diagrama DSL., conectores de especificam as linhas em um diagrama DSL que pode ser usado para exibir relações.<br /><br /> Para criar uma forma ou um conector, arraste a ferramenta para o **elementos de diagrama** lado do diagrama.|
 |Mapas de formas|Um mapa de formas aparece como uma linha no diagrama de modelo de domínio, uma forma de vinculação para a classe de domínio que ele exibe, ou um conector para a relação de domínio que ele exibe.|

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5a562b267b630e2a0c53b90072c2dfde62f085b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942678"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978874"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 
@@ -37,7 +37,7 @@ Para ver quais versões do Visual Studio dão suporte a cada tipo de diagrama, c
 
 Para visualizar a arquitetura de um sistema ou o código existente, crie diagramas a seguir:
 
-|**Diagrama**|**programas**|
+|**Diagrama**|**Shows**|
 |-|-|
 |[Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)|Arquitetura de alto nível do sistema|
 |Mapas de código<br /><br /> [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dependências e outros relacionamentos no código existente|

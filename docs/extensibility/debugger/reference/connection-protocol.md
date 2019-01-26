@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f619bde5d2f81b37f50a5896c13c655aaf9fd80e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d09d751dd51306810f4d0cbb56d701859e2b183
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907859"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036466"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Indica o protocolo usado para comunicação entre um servidor de depuração e o pacote de depuração (DES).  
@@ -74,7 +74,7 @@ public enum CONNECTION_PROTOCOL {
  Esses valores são retornados a partir de [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

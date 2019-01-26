@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1348e83a3b07240fcb1c5e6ae4819ea85e4c054
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ac5c3aceb9519d66c185f78bdde37861467ecdf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929851"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983868"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 O mecanismo de depuração (DES) envia essa interface para o Gerenciador de sessão de depuração (SDM) quando uma exceção é lançada no programa que está sendo executado no momento.  
@@ -45,7 +45,7 @@ IDebugExceptionEvent2 : IUnknown
 |[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Especifica se a exceção deve ser passada para o programa que está sendo depurado quando a execução é retomada, ou se a exceção deve ser descartada.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
