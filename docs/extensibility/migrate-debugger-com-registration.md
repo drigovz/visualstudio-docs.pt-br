@@ -5,27 +5,27 @@ ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
 author: gregg-miskelly
 ms.author: greggm
-manager: douge
+manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 0b81d0dc38e4fb6c6bb14860634d41d85aa4dee9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91c834e61452667a0af236eddb65355f23234715
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892112"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990531"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrar o registro de classe COM de depurador de 64 bits
 
 Para extensões de depurador que registre-se COM as classes em HKEY_CLASSES_ROOT usando regasm, regsvr32, ou escrevendo diretamente no registro e carregado no *msvsmon.exe* (o depurador remoto), agora é possível fornecer isso registro do msvsmon sem a necessidade de escrever para HKEY_CLASSES_ROOT. Isso afeta herdados avaliadores de expressão do depurador .NET ou mecanismos de depuração que são configurados para carregar na *msvsmon.exe* processo.
 
-## <a name="msvsmon-comclass-def"></a>o msvsmon-comclass-def
+## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
 
 Para usar essa técnica, adicione uma  **.msvsmon-comclass-def.json* arquivo ao lado do msvsmon (InstallDir:* \Common7\IDE\Remote Debugger\x64*).
 
 Aqui está um exemplo de arquivo de definição de comclass msvsmon que registra um gerenciado e uma classe nativa:
 
-Nome do arquivo: *MyCompany.MyExample.msvsmon-comclass-def.json*
+FileName: *MyCompany.MyExample.msvsmon-comclass-def.json*
 
 ```json
 {

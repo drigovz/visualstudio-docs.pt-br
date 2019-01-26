@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b650810ea0c3a7df32d6a058947d83fb8842b7f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3837ea9773d9deba089da2f7d9ef2541fdc3c31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026926"
 ---
-# <a name="sccaddfilesfromscc-function"></a>Função SccAddFilesFromSCC
+# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC function
 Essa função adiciona uma lista de arquivos do controle de origem para o projeto aberto no momento.  
   
 ## <a name="syntax"></a>Sintaxe  

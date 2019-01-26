@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a6a9ddc8806bdbba5a583e16657c3c5126a8992
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16d027ba128a730bb04b2da83e226dd6bffa3678
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947199"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020432"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 Descreve os diferentes tipos de endereços.  
@@ -80,10 +80,10 @@ public struct DEBUG_ADDRESS_UNION {
  addr.addrRetVal  
  [C++] Contém o[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) estrutura se `dwKind` = ADDRESS_KIND_RETVAL.  
   
- addr.Unused  
+ addr.unused  
  Preenchimento [C++].  
   
- Addr  
+ addr  
  [C++] O nome da união.  
   
  unionmember  
@@ -132,7 +132,7 @@ namespace MyPackage
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

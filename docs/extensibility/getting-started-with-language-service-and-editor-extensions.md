@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4d1b3b1dca44acc092cb3a9a639c196ce8e50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010058"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introdução a extensões de editor e o serviço de linguagem
 Você pode usar as extensões do editor para adicionar recursos de serviço de linguagem, como a estrutura de tópicos, correspondência de chaves, IntelliSense e as lâmpadas para sua própria linguagem de programação ou a qualquer tipo de conteúdo. Você também pode personalizar a aparência e comportamento do editor do Visual Studio, por exemplo texto coloração, margens, adornos e outros elementos visuais. Você também pode definir seu próprio tipo de conteúdo e especificar a aparência e comportamento dos modos de exibição de texto no qual o conteúdo será exibido.  
@@ -64,7 +64,7 @@ Você pode usar as extensões do editor para adicionar recursos de serviço de l
 ## <a name="run-extensions-in-the-experimental-instance"></a>Executar extensões na instância experimental  
  Você pode isolar sua versão de trabalho do Visual Studio enquanto você estiver desenvolvendo uma extensão ao implantá-lo na seguinte pasta experimental (no Windows Vista e Windows 7):  
   
- *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{company}\\{ExtensionID}*  
+ *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{Company}\\{ExtensionID}*  
   
  em que *% LOCALAPPDATA %* é o nome do usuário conectado *empresa* é o nome da empresa que possui a extensão, e *ExtensionID* é a ID da extensão.  
   

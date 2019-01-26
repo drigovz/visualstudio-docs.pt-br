@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 40a4326924d83d4604f512f41f85e7adb8d21bb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154144"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975043"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Marcar todos os campos não serializáveis
 
@@ -39,7 +39,7 @@ ms.locfileid: "54154144"
 
 ## <a name="rule-description"></a>Descrição da regra
  Um tipo serializável é aquele que é marcado com o <xref:System.SerializableAttribute?displayProperty=fullName> atributo. Quando o tipo é serializado, um <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> exceção será lançada se o tipo contém um campo de instância de um tipo que não é serializável.
- 
+
  Uma exceção é quando o tipo usa serialização personalizada por meio de <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface. Tipos que implementam essa interface fornecem sua própria lógica de serialização e então CA2235 não serão acionados para campos de instância não-serializáveis desses tipos.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
