@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5083d45b1613147912f29cd5dcc7daa93e16110c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1146c7ed7bfc0d3f09d6c1848bf52345661bf0c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878946"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995028"
 ---
 # <a name="about-file-name-extensions"></a>Sobre extensões de nome de arquivo
 Quando você registra uma extensão de arquivo de um VSPackage, associá-la com uma versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Isso é importante se mais de uma versão de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é instalado em um computador.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f61504a5b7aa062644f6f046435f1ad7622f8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ed256013bdd336e60fae825c59ae23059cc415e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006106"
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
 Essa estrutura representa um endereço físico.  
@@ -44,7 +44,7 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
  Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_UNMANAGED_PHYSICAL` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac680369c8dc7025de26c83e2e680b2c5057f7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 931c4b29bd5f90b23492cba854644435a7e99bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845331"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980876"
 ---
 # <a name="naming-warnings"></a>Avisos de nomenclatura
 Avisos de nomenclatura dão suporte a conformidade com as convenções de nomenclatura de diretrizes de Design do .NET Framework.
@@ -41,7 +41,7 @@ Avisos de nomenclatura dão suporte a conformidade com as convenções de nomenc
 |[CA1717: Apenas enumerações FlagsAttribute devem ter nomes plurais](../code-quality/ca1717-only-flagsattribute-enums-should-have-plural-names.md)|As convenções de nomenclatura determinam que um nome no plural para uma enumeração indica que mais de um valor de enumeração pode ser especificado ao mesmo tempo.|
 |[CA1725: Nomes de parâmetro devem corresponder à declaração base](../code-quality/ca1725-parameter-names-should-match-base-declaration.md)|A nomenclatura consistente dos parâmetros em uma hierarquia de substituição aumenta a usabilidade das substituições de método. Um nome de parâmetro em um método derivado diferente do nome na declaração de base pode causar confusão em relação à possibilidade do método ser uma substituição do método de base ou de uma nova sobrecarga do método.|
 |[CA1719: Nomes de parâmetro não devem corresponder aos nomes de membro](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Um nome de parâmetro deve informar o significado de um parâmetro e um nome de membro deve informar o significado de um membro. Seria um design raro se eles fossem iguais. A nomenclatura de um parâmetro com o mesmo nome do membro não é intuitiva e dificulta o uso da biblioteca.|
-|[CA1701: AS Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Cada palavra na cadeia de caracteres de recurso é dividida em tokens que são baseados em maiusculas. Cada combinação contígua de dois tokens é verificada pela biblioteca do verificador ortográfico da Microsoft. Se reconhecidas, as palavras produzirão uma violação da regra.|
+|[CA1701: Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Cada palavra na cadeia de caracteres de recurso é dividida em tokens que são baseados em maiusculas. Cada combinação contígua de dois tokens é verificada pela biblioteca do verificador ortográfico da Microsoft. Se reconhecidas, as palavras produzirão uma violação da regra.|
 |[CA1703: Cadeias de caracteres de recurso devem ter grafia correta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Uma cadeia de caracteres de recurso contém uma ou mais palavras não reconhecidas pela biblioteca do verificador ortográfico da Microsoft.|
 |[CA1724: Nomes de tipo não devem corresponder a Namespaces](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Nomes de tipo não devem corresponder a nomes de namespaces que são definidos na biblioteca de classes do .NET Framework. Violação dessa regra pode reduzir a usabilidade da biblioteca.|
 |[CA1707: Identificadores não devem conter sublinhados](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Por convenção, os nomes de identificador não contêm o caractere de sublinhado (_). Esta regra verifica namespaces, tipos, membros e parâmetros.|

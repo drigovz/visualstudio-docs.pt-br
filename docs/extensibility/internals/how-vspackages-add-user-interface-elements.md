@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e3d5266b69419e719c5de7a003e642e8016614
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b83da9cfa04183a1820d8b455d6bc609216cf9cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975290"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Como os VSPackages adicionam elementos da interface do usuário
 Um VSPackage pode adicionar elementos de (UI) de interface do usuário, por exemplo, menus, barras de ferramentas e das janelas, para o Visual Studio por meio das *VSCT* arquivo.  
@@ -195,7 +195,7 @@ priority="0x0100" type="Menu">
 |Barra de ferramentas|[Elemento menus](../../extensibility/menus-element.md), o IDE, outros VSPackages|O próprio item|0 para *n* grupos|  
 |Item de menu|[Elemento Buttons](../../extensibility/buttons-element.md), o IDE, outros VSPackages|1 para *n* grupos, o próprio item|-0 para *n* grupos|  
 |Botão|[Elemento Buttons](../../extensibility/buttons-element.md), o IDE, outros VSPackages|1 para *n* grupos, o próprio item||  
-|Caixa de combinação|[Elemento combos](../../extensibility/combos-element.md), o IDE, outros VSPackages|1 para *n* grupos, o próprio item||  
+|Combo|[Elemento combos](../../extensibility/combos-element.md), o IDE, outros VSPackages|1 para *n* grupos, o próprio item||  
   
 ### <a name="menu-command-and-group-placement"></a>Menu, o comando e o posicionamento do grupo  
  Um menu, um grupo ou um comando pode aparecer em mais de um local no IDE. Para um item seja exibido em vários locais, ele deve ser adicionado para o `CommandPlacements` seção como um [elemento CommandPlacement](../../extensibility/commandplacement-element.md). Qualquer menu, um grupo ou um comando pode ser adicionado como um posicionamento do comando. No entanto, as barras de ferramentas não podem ser posicionadas dessa maneira porque eles não podem aparecer em vários locais sensível ao contexto.  

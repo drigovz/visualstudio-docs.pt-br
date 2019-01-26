@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55c65b7344169f14679d8eb9493cec2e4569af65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956836"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009993"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Quando o usuário executa uma operação de controle do código-fonte dentro do ambiente de desenvolvimento integrado (IDE), o plug-in de controle do código-fonte talvez queira transmitir mensagens de status ou erro relacionadas à operação. O plug-in pode exibir suas próprias caixas de mensagem para essa finalidade. No entanto, para obter mais integração perfeita, o plug-in pode passar cadeias de caracteres para o IDE, o que, em seguida, exibe-os em sua maneira nativa de exibir informações de status. O mecanismo para isso é o `LPTEXTOUTPROC` ponteiro de função. O IDE implementa essa função (descrita mais detalhadamente abaixo) para exibir o status e erros.  

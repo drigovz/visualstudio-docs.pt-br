@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdb0c34f873e7f8dce5b771ece2d3620da4deb19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d534c5616bd32011fb4e84367911b9a8c1b29ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986937"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Essa interface representa um quadro de pilha única em uma pilha de chamadas em um thread específico.  
@@ -54,7 +54,7 @@ IDebugStackFrame2 : IUnknown
  Essa interface é obtida somente quando o programa que está sendo depurado foi interrompido no ponto de interrupção (seja causada por um ponto de interrupção definido pelo usuário ou uma exceção). Nessa interface, um contexto de expressão pode ser obtido para avaliar expressões, uma lista de registros pode ser retornada ou a pilha de chamadas pode ser obtida e examinada.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

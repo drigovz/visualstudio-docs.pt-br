@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f69665c0a97fb67b4cee9ee71a52c2de0b44310f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79c45bd5ded6ab80d7bb1a2abb6c1007e3b29e0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946049"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022944"
 ---
 # <a name="animations-for-visual-studio"></a>Animações para Visual Studio
 ## <a name="animation-fundamentals"></a>Conceitos básicos de animação  
@@ -269,9 +269,9 @@ Como uma transição animada quando um elemento de interface do usuário altera 
   
 ##### <a name="animation-properties"></a>Propriedades de animação  
   
--   A cor inicial: Interface do usuário específico  
+-   A cor inicial: UI-specific  
   
--   Cor final: Interface do usuário específico  
+-   Cor final: UI-specific  
   
 -   Duração: autônomo de 200 milissegundos, 100 milissegundos quando usado como parte de uma sequência de animação de combinação  
   
@@ -317,9 +317,9 @@ Como uma transição animada para um elemento de interface do usuário altera a 
   
 ##### <a name="animation-properties"></a>Propriedades de animação  
   
--   Posição inicial de X e Y: Interface do usuário específico  
+-   Posição inicial de X e Y: UI-specific  
   
--   Terminação de X e Y posição: Interface do usuário específico  
+-   Terminação de X e Y posição: UI-specific  
   
 -   Caminho de movimento: nenhum  
   

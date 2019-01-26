@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2db1f249492702971eb311fe38f76eec3a5b3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4ce2ce06fe26ec420f50597b0377e3f4d174eed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857194"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006850"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Essa interface enumera [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estruturas.  
@@ -49,7 +49,7 @@ IEnumDebugFrameInfo2 : IUnknown
  Visual Studio obtém essa interface como a primeira etapa para lidar com um ponto de interrupção, exceção ou gerados pelo usuário pausa o programa que está sendo depurado. A lista de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estruturas representa a pilha de chamadas atual, com a chamada de função atual no início da lista e a função mais antiga chamar no final da lista. Cada `FRAMEINFO` representa um quadro de pilha, um contexto no qual as expressões podem ser avaliadas e examinamos de variáveis locais.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

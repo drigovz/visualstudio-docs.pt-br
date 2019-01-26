@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ed3913b8031283b20589a670c5d2da6e51a8dec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e0de472738c07de65c04d825cea7e1574cd5df0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941973"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021891"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Como: Registrar uma biblioteca com o Gerenciador de objetos
 Navegação de símbolos de ferramentas, tais como **Class View**, **Pesquisador de objetos**, **Pesquisador de chamadas** e **Find Symbol Results**, que você possa exibir símbolos em seu projeto ou em componentes externos. Os símbolos incluir namespaces, classes, interfaces, métodos e outros elementos de linguagem. As bibliotecas de acompanhar esses símbolos e expô-los para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objeto que preenche as ferramentas com os dados.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - layer models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a467366ca470c17c0f52bd72ae17e766bcb284d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04aa7c1948cd07bf49ab754619442e5310b023f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889313"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069128"
 ---
 # <a name="extend-dependency-diagrams"></a>Estender diagramas de dependência
 Você pode escrever código para criar e atualizar diagramas de dependência e também para validar a estrutura do código do programa em relação a diagramas de dependência no Visual Studio. Você pode adicionar comandos que aparecem no menu de atalho (contexto) dos diagramas, personalizar gestos de arrastar e soltar e acessar o modelo de camada de modelos de texto. Você pode empacotar essas extensões em um Visual Studio Integration VSIX (extensão) e distribuí-los a outros usuários do Visual Studio.

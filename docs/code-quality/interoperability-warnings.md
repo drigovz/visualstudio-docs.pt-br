@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96131b2847b59632212c26bf5fa77fbe6b88960
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ef72695afba37a8a044418ad1dbd49ea6867226
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956590"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000322"
 ---
 # <a name="interoperability-warnings"></a>Avisos de interoperabilidade
 
@@ -30,7 +30,7 @@ Avisos de interoperabilidade dão suporte à interação com clientes COM.
 
 | Regra | Descrição |
 | - | - |
-| [CA1400: OS Pontos de entrada P/Invoke devem existir](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Um método público ou protegido é marcado usando-se o atributo System.Runtime.InteropServices.DllImportAttribute. Não foi possível localizar a biblioteca não gerenciada ou não foi possível comparar o método a uma função na biblioteca. |
+| [CA1400: Pontos de entrada P/Invoke devem existir](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Um método público ou protegido é marcado usando-se o atributo System.Runtime.InteropServices.DllImportAttribute. Não foi possível localizar a biblioteca não gerenciada ou não foi possível comparar o método a uma função na biblioteca. |
 | [CA1401: P/Invokes não devem ser visíveis](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Um método público ou protegido em um tipo público tem o atributo DllImportAttribute (também implementado pela palavra-chave Declare em Visual Basic). Esses métodos não devem ser expostos. |
 | [CA1402: Evitar sobrecargas em interfaces visíveis COM](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | Quando os métodos sobrecarregados são expostos a clientes COM, apenas a primeira sobrecarga do método mantém seu nome. As sobrecargas subsequentes são renomeadas com exclusividade acrescentando-se ao nome um caractere de sublinhado (_) e um inteiro correspondente à ordem de declaração da sobrecarga. |
 | [CA1403: Tipos de layout automático não devem ser visíveis em COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Um tipo de valor visível por COM é marcado usando-se o atributo System.Runtime.InteropServices.StructLayoutAttribute definido como LayoutKind.Auto. O layout desses tipos pode ser alterados entre versões do .NET Framework, o que interromperá clientes COM que esperam um layout específico. |

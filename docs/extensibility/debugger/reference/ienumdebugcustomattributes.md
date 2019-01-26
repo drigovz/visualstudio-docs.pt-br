@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 11aa768d-1852-44d6-9de3-17f9bafaded2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebf7250f0845eb666b910b5ddcce266be1ea9361
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30540c768f657a51b7245c9f6a547289fdaa1eee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990640"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001414"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 Enumera os atributos personalizados.  
@@ -46,7 +46,7 @@ IEnumCustomAttributes : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|Obtém o número de atributos personalizados em um enumerador.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

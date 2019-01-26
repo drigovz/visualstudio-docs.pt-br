@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fc3aa99fd54234cdc21250a39052b37d233a70b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12fd392043ab40354874a0644563cd31282f967d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943282"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004624"
 ---
 # <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
 O serviço de linguagem implementa o Gerenciador de janelas de código e é responsável por gerenciar adornos (por exemplo, a barra de menu suspenso). Para obter mais informações, consulte [Personalizando o Windows de código usando a API herdada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

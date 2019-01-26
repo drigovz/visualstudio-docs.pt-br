@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f2c95b2275389bf02755440745ad3b788956722
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8f759e24671bd397fba691a45f2b0417521064d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827709"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023727"
 ---
 # <a name="when-to-create-project-types"></a>Quando criar tipos de projeto
 Criar um novo tipo de projeto oferece uma base para a personalização [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para seus usuários. No entanto, criar um novo tipo de projeto não é necessário para todos os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personalizações. As diretrizes a seguir devem ajudá-lo a determinar se um novo tipo de projeto é necessário para seu cenário.  

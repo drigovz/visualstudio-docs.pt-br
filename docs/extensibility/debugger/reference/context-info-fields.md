@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 532a2f309af612fb74a2f810b7fe445b79f813fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 712876c38996b0e9b5f0b65cf0b0269d43b15907
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847948"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028420"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 Especifica quais informações devem ser recuperadas sobre um contexto de memória.  
@@ -76,7 +76,7 @@ public enum enum_CONTEXT_INFO_FIELDS {
  Esses valores podem ser combinados com um OR bit a bit.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

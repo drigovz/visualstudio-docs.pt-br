@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab18508a7b79361b85c459066a9e083d77983d7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1b4b7f27bbecd71fa5a99e942d5f1b75e983c0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002472"
 ---
 # <a name="idebugfield"></a>IDebugField
 Essa interface representa um campo, ou seja, uma descrição de um tipo ou um símbolo.  
@@ -63,7 +63,7 @@ weather stormy;
  Se um campo representa um símbolo ou tipo pode ser determinado chamando [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) e examinando a [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) resultado. Se o `FIELD_KIND_TYPE` bit estiver definido, o campo é um tipo e se o `FIELD_KIND_SYMBOL` bit estiver definido, ele é um símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

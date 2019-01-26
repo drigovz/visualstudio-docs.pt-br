@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b70a7442440a7d7604c226f9b8ae8bc7fc3c4cb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 295b7c2bb0c146e567ab752f693b8dba9aa08517
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886560"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069350"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Trabalhando com o Gerenciador de Linguagem Específica do Domínio
 O **Gerenciador de DSL** exibe vários tipos de informações em uma exibição de árvore. Para obter mais informações sobre a maioria dos itens no Gerenciador de DSL, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md).
@@ -34,7 +34,7 @@ O **Gerenciador de DSL** exibe vários tipos de informações em uma exibição 
 
 -   **Tipos de domínio**. Uma lista dos tipos internos e externos usados no modelo.
 
--   **Editor de**. Uma lista dos **caixa de ferramentas** guias e os itens que eles contêm e configurações de validação para o modelo. Para obter mais informações sobre validação, consulte [validação em uma linguagem específica do domínio](../modeling/validation-in-a-domain-specific-language.md).
+-   **Editor**. Uma lista dos **caixa de ferramentas** guias e os itens que eles contêm e configurações de validação para o modelo. Para obter mais informações sobre validação, consulte [validação em uma linguagem específica do domínio](../modeling/validation-in-a-domain-specific-language.md).
 
 -   **Comportamento do Gerenciador**. Configurações que especificam o comportamento do explorador no designer gerado. Para obter mais informações sobre como personalizar o Explorador, consulte [Personalizando o Gerenciador de modelos](../modeling/customizing-the-model-explorer.md).
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c16ae17f8914ee07662a3cd5580963de43f8b0d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b32464084a209aa7d6f41ffaa837d2f377b9720a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959995"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984386"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Essa interface permite que a sessão de depuração SDM (Gerenciador) recuperar uma interface que representa o mecanismo de depuração (DES).  
@@ -45,7 +45,7 @@ IDebugQueryEngine2 : IUnknown
  Normalmente, essa interface é implementada no objeto que implementa o [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface para oferecer suporte a causalidade ordenada percorrendo a funções, ou seja, quando o depurador é sair de uma função, o para executar a função Next não pode ser uma função em outro thread, mas a função anterior na pilha completamente. Para uma definição de "causalidade", consulte o [Glossário do depurador do Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a5df2026672f415df688ebc3389ff57606c815
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875414"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003223"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Sinalizadores de bit usados por comandos específicos
 O comportamento de um número de funções em que a API de plug-in de controle do código-fonte pode ser modificado, definindo um ou mais bits em um único valor. Esses valores são conhecidos como sinalizadores de bit. As vários sinalizadores de bit usados pela API de plug-in de controle de origem são detalhadas aqui, agrupados por função em que os utiliza.  
@@ -101,9 +101,9 @@ O comportamento de um número de funções em que a API de plug-in de controle d
 |`SCC_OPT_EQ_DISABLE`|0x00L|Suspende a atividade de fila de eventos.|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|Habilita o log de fila de eventos.|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_HCM_NO`|0L|(Padrão) Tenha o modo sem cancelar; plug-in deve fornecer se desejado.|`SCC_OPT_HASCANCELMODE`|  
-|`SCC_OPT_HCM_YES`|L 1|IDE manipula Cancelar.|`SCC_OPT_HASCANCELMODE`|  
+|`SCC_OPT_HCM_YES`|1L|IDE manipula Cancelar.|`SCC_OPT_HASCANCELMODE`|  
 |`SCC_OPT_SCO_NO`|0L|(Padrão) Okey para fazer check-out do plug-in da interface do usuário; diretório de trabalho é definido.|`SCC_OPT_SCCCHECKOUTONLY`|  
-|`SCC_OPT_SCO_YES`|L 1|Nenhum plug-in check-out da interface do usuário, nenhum diretório de trabalho.|`SCC_OPT_SCCCHECKOUTONLY`|  
+|`SCC_OPT_SCO_YES`|1L|Nenhum plug-in check-out da interface do usuário, nenhum diretório de trabalho.|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>Consulte também  
  [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)
