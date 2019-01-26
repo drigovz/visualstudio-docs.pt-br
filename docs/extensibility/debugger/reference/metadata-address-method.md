@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac55d884655788dc84615ee8fa6e764ca58c45d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69aa56b2db1b8b4de27209d4bb57195ee8872579
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901198"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923607"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Essa estrutura representa o endereço de um método de uma classe.  
@@ -49,14 +49,14 @@ public struct METADATA_ADDRESS_METHOD {
  dwOffset  
  O deslocamento desde o início da classe para esse método (pode representar o deslocamento em vtable).  
   
- versão do DW  
+ dwVersion  
  A versão do método (esse valor é exclusivo para o provedor de símbolos).  
   
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_METHOD` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
