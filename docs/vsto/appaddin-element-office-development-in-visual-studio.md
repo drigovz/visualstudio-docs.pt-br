@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b53fcfaa28694b88f3401d0e2e40b157ba7c3201
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905433"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875986"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elemento (desenvolvimento do Office no Visual Studio)
   O **appAddin** elemento da `vstov4` namespace armazena informações de personalização específicas para suplementos do VSTO.
@@ -44,13 +44,13 @@ ms.locfileid: "53905433"
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|**Aplicativo**|Necessário. Identifica o aplicativo do Microsoft Office. O valor pode ser um dos seguintes: Excel, InfoPath, Outlook, PowerPoint, Project, Visio ou Word.|
-|**LoadBehavior**|Opcional. Por padrão, o **loadBehavior** é habilitada ao definir esse valor como. Para depuração, o suplemento do VSTO pode ser desabilitado definindo o valor para dois. Para obter mais informações, consulte a tabela intitulada valores LoadBehavior [entradas do registro para suplementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**application**|Necessário. Identifica o aplicativo do Microsoft Office. O valor pode ser um dos seguintes: Excel, InfoPath, Outlook, PowerPoint, Project, Visio ou Word.|
+|**loadBehavior**|Opcional. Por padrão, o **loadBehavior** é habilitada ao definir esse valor como. Para depuração, o suplemento do VSTO pode ser desabilitado definindo o valor para dois. Para obter mais informações, consulte a tabela intitulada valores LoadBehavior [entradas do registro para suplementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 |**keyName**|Necessário. Esse valor é o nome da chave do registro que será usado pelo aplicativo para carregar o suplemento do VSTO. Para obter mais informações, consulte [entradas do registro para suplementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 
  O **appAddin** elemento tem os seguintes elementos filho.
 
-### <a name="friendlyname"></a>Nome amigável
+### <a name="friendlyname"></a>friendlyName
  Opcional. O **friendlyName** elemento é explicado na [ &#60;friendlyName&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
 
 ### <a name="description"></a>descrição
