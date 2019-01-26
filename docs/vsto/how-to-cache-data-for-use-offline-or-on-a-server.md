@@ -14,15 +14,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], offline use
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b72748a4f37aa89fd12ba8751800fa9cb3c7be84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939418"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873738"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Como: Armazenar em cache dados para uso offline ou em um servidor
   Você pode marcar um item de dados sejam armazenados em cache no documento, para que ele esteja disponível offline. Isso também torna possível para os dados do documento ser manipulados por outro código quando o documento é armazenado em um servidor.

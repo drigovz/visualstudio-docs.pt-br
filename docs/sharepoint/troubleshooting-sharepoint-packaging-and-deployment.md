@@ -18,17 +18,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 - SharePoint development in Visual Studio, troubleshooting
 - SharePoint development in Visual Studio, deployment conflict resolution
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a12e24ea0db662931651feb3031ec0da71926f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878699"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868034"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de implantação e empacotamento do SharePoint
   Este tópico aborda diversos problemas que você pode encontrar ao empacotar e implantar soluções do SharePoint.
@@ -67,7 +67,7 @@ ms.locfileid: "53878699"
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Atraso exibindo a página do SharePoint quando implantar a web part visual
  A página do SharePoint leva muito tempo para aparecer durante a implantação de uma Web part Visual para a pasta Bin em [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Se você alterar todos os arquivos em um nível superior [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] recompilações do diretório, como o diretório Bin, todo o aplicativo Web. Isso pode causar um atraso de até 25 segundos para a página do SharePoint para renderizar.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  nenhuma.
 
 ### <a name="resolution"></a>Resolução
@@ -84,7 +84,7 @@ ms.locfileid: "53878699"
 ## <a name="sharepoint-project-deployment-fails-with-error-failed-to-extract-the-cab-file-in-the-solution"></a>Falha de implantação de projeto do SharePoint com o erro "Falha ao extrair o arquivo de gabinete na solução"
  Se o nome de qualquer item de projeto do SharePoint contiver parênteses, sua solução falhará na implantação com um erro.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Ocorreu um erro na etapa de implantação adicionar solução: Falha ao extrair o arquivo de gabinete na solução.
 
 ### <a name="resolution"></a>Resolução
@@ -93,7 +93,7 @@ ms.locfileid: "53878699"
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Erro aparece ao implantar uma web part visual em um site em um aplicativo web diferente
  Na primeira vez que você implante uma Web part visual em um site em um aplicativo Web diferente no qual está implementada atualmente (alterando a propriedade SiteUrl da parte Web visual), você obterá um erro.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Ocorreu um erro na etapa de implantação adicionar solução: Um recurso com a ID [#] já foi instalado neste farm. Use o atributo de força para reinstalar explicitamente o recurso.
 
 ### <a name="resolution"></a>Resolução
@@ -102,7 +102,7 @@ ms.locfileid: "53878699"
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Aviso é exibido ao implantar controles de usuário aninhados
  Este aviso ocorre quando você implanta uma solução do SharePoint que tem controles de usuário aninhados, como uma Web part visual que contém um controle de usuário ou um controle de usuário que contém uma Web part visual ou outro controle de usuário. Este aviso ocorre se você adicionar um controle a um designer arrastando-o na caixa de ferramentas ou usando o @Register diretiva na exibição da fonte.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Aviso 1 elemento ' [*nome do controle*]' não é um elemento conhecido. Isso pode ocorrer se houver um erro de compilação no site da Web ou o arquivo Web. config está ausente.
 
 ### <a name="resolution"></a>Resolução

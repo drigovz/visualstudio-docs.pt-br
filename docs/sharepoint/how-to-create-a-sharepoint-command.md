@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da1b31b7cc1436c90437a9e2b5ef66adfee825b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894844"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867891"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Como: Criar um comando do SharePoint
   Se você quiser usar o modelo de objeto de servidor em uma extensão de ferramentas do SharePoint, você deve criar um personalizado *comando do SharePoint* para chamar a API. Você define o comando do SharePoint em um assembly que pode chamar diretamente o modelo de objeto do servidor.  
@@ -39,7 +39,7 @@ ms.locfileid: "53894844"
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-    -   Microsoft. SharePoint  
+    -   Microsoft.SharePoint  
   
 3.  Em uma classe no projeto, crie um método que define o comando do SharePoint. O método deve estar de acordo com as diretrizes a seguir:  
   
@@ -72,7 +72,7 @@ ms.locfileid: "53894844"
   
 -   Microsoft.VisualStudio.SharePoint.Commands  
   
--   Microsoft. SharePoint  
+-   Microsoft.SharePoint  
   
 ## <a name="deploying-the-command"></a>Implantando o comando  
  Para implantar o comando, inclua o assembly de comando na mesma [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensão (*vsix*) pacote com o assembly de extensão que usa o comando. Você também deve adicionar uma entrada para o assembly de comando no arquivo Extension vsixmanifest. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  

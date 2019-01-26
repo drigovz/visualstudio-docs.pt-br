@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 794974991216a521bf2ca4afb1e958716a3bf735
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939210"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874075"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Como: Criar pacote e um recurso personalizado de regras de validação para soluções do SharePoint
   Você pode criar regras de validação personalizada para verificar se o pacote da solução gerado pelo Visual Studio. Você pode executar uma validação completa em um recurso inteiro ou um pacote, selecionando **Validate** no menu de contexto de um pacote ou recurso nas **PackagingExplorer**. Validação parcial é executada quando você adiciona novos itens de projeto SharePonit ou recursos para o projeto para determinar se o pacote ou recurso seria em um estado válido.  
@@ -52,7 +52,7 @@ ms.locfileid: "53939210"
   
 -   Microsoft.VisualStudio.SharePoint.  
   
--   Composition.  
+-   System.ComponentModel.Composition.  
   
 ## <a name="deploy-the-extension"></a>Implantar a extensão  
  Para implantar a extensão, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) para o assembly e outros arquivos que você deseja distribuir com a extensão. Para obter mais informações, consulte [das ferramentas de implantar extensões para o SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  

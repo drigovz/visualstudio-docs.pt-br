@@ -9,24 +9,24 @@ helpviewer_keywords:
 - certificates [Office development in Visual Studio], Office solutions
 - security [Office development in Visual Studio], signing Office solutions
 - signing manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829041"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871657"
 ---
 # <a name="how-to-sign-office-solutions"></a>Como: Assinar soluções do Office
   Se você assinar uma solução, você pode conceder confiança à solução usando o certificado como prova. Você pode usar o mesmo certificado para várias soluções, e todas as soluções serão confiáveis sem atualizações de política de segurança adicional.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Se você editar manualmente o aplicativo e manifestos de implantação usando o Manifest Generation and Editing Tool (*mage.exe* e *mageui.exe*), você deve assinar novamente os manifestos antes que você pode usá-los. Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ Se você editar manualmente o aplicativo e manifestos de implantação usando o Manifest Generation and Editing Tool (*mage.exe* e *mageui.exe*), você deve assinar novamente os manifestos antes que você pode usá-los. Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e de implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="sign-by-using-a-certificate"></a>Entre usando um certificado
  Um certificado é um arquivo que contém uma chave exclusiva e a identidade do Editor de soluções. Você pode comprar certificados de autoridade de certificação, ou criar seu próprio certificado e tem uma autoridade de certificação assiná-lo.

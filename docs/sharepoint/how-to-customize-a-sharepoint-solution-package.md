@@ -12,17 +12,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85140f8d85c90d2b58df10a63f50c117e10eb8bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e1c2e86f489191c3876154143706be4f9b0f1e4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835390"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874933"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Como: Personalizar um pacote de solução do SharePoint
   Você pode usar o Designer de pacote para criar e personalizar um pacote (*. wsp*). Por exemplo, você pode adicionar itens de projeto do SharePoint e recursos, especifique se o servidor Web é redefinido quando a solução é implantada e defina o tipo de servidor de implantação.  

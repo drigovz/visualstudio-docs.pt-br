@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - importing form regions
 - form regions [Office development in Visual Studio], importing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeac6711691de4113ace572790df0bf6ac674dae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956173"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870224"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Passo a passo: Importar de uma região de formulário projetada no Outlook
   Este passo a passo demonstra como criar uma região de formulário no Microsoft Office Outlook e, em seguida, importe a região do formulário para um projeto de suplemento do VSTO do Outlook usando o **nova região de formulário** assistente. Criando a região de formulário do Outlook torna possível para adicionar controles nativos do Outlook para a região de formulário associar a dados do Outlook. Depois de importar a região do formulário, você pode manipular os eventos de cada controle.  
@@ -162,12 +162,12 @@ ms.locfileid: "53956173"
   
     *TaskFormRegion.cs* ou *TaskFormRegion.vb* é aberto no Editor de códigos.  
   
-2. Adicione o seguinte código para o `TaskFormRegion` classe. Esse código preenche a caixa de combinação na região do formulário com a linha de assunto de cada tarefa da pasta de tarefas do Outlook.  
+2. Adicione o código a seguir à classe `TaskFormRegion`. Esse código preenche a caixa de combinação na região do formulário com a linha de assunto de cada tarefa da pasta de tarefas do Outlook.  
   
     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
   
-3. Adicione o seguinte código para o `TaskFormRegion` classe. Esse código executa as seguintes tarefas:  
+3. Adicione o código a seguir à classe `TaskFormRegion`. Esse código executa as seguintes tarefas:  
   
    - Localiza o `Microsoft.Office.Interop.Outlook.TaskItem` na pasta tarefas chamando o `FindTaskBySubjectName` método auxiliar e passando o assunto da tarefa desejada. Você adicionará o `FindTaskBySubjectName` método auxiliar na próxima etapa.  
   
@@ -178,12 +178,12 @@ ms.locfileid: "53956173"
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]  
   
-4. Adicione o seguinte código para o `TaskFormRegion` classe. Esse código fornece o método auxiliar `FindTaskBySubjectName` que foi descrito na etapa anterior.  
+4. Adicione o código a seguir à classe `TaskFormRegion`. Esse código fornece o método auxiliar `FindTaskBySubjectName` que foi descrito na etapa anterior.  
   
     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
   
-5. Adicione o seguinte código para o `TaskFormRegion` classe. Esse código executa as seguintes tarefas:  
+5. Adicione o código a seguir à classe `TaskFormRegion`. Esse código executa as seguintes tarefas:  
   
    - Atualiza a caixa de listagem na região do formulário com o atual status de conclusão de cada tarefa dependente.  
   

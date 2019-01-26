@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62ab9019eb9722baca523aeff00b4ed511039497
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d2c36ce055816f712b4d38bca42a8af9c75921da
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883250"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871059"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Como: Executar código quando etapas de implantação são executadas
   Se você quiser realizar tarefas adicionais para uma etapa de implantação em um projeto do SharePoint, você pode manipular eventos que são gerados por itens de projeto do SharePoint antes e após cada etapa de implantação de execução do Visual Studio. Para obter mais informações, consulte [estendendo SharePoint empacotamento e implantação](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
