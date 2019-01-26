@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 165eee357c001720af132236a8577f259efa4f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26eb3a1352228d48fb451e3a3520162cdea18b73
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887666"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867371"
 ---
 # <a name="how-to-localize-a-feature"></a>Como: Localizar um recurso
   Por padrão, o recurso títulos e descrições de usam valores de cadeia de caracteres embutida. Para localizar o título do recurso e a descrição, substitua as cadeias de caracteres com expressões que fazem referência a recursos localizados.  

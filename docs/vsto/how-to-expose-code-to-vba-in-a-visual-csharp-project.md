@@ -13,15 +13,15 @@ helpviewer_keywords:
 - exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f49ccc064f06908ed9c965f20773bd15d4753b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3734fab9915d1a1940789a52f278cb0b4f4c7063
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872577"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866211"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Como: Expor o código para VBA em um projeto do Visual c#
   Você pode expor o código em um projeto Visual c# para o Visual Basic para código Applications (VBA) se você quiser que os dois tipos de código para interagir entre si.  

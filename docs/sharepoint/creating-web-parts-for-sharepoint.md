@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff779f70cb5b17d03befddce971a4bbb15ca142
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879128"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865874"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Criar web parts para SharePoint
   Usando web parts, você pode modificar o conteúdo, aparência e comportamento de páginas de um site do SharePoint usando um navegador. Web parts são controles de servidor que são executados dentro de uma página de web part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -45,7 +45,7 @@ ms.locfileid: "53879128"
   
 |Arquivo|Descrição|  
 |----------|-----------------|  
-|*Elements. XML*|Contém informações que o arquivo de definição de recurso em seu projeto usa para implantar a web part.|  
+|*Elements.xml*|Contém informações que o arquivo de definição de recurso em seu projeto usa para implantar a web part.|  
 |arquivo. WebPart|Fornece informações que precisa para exibir sua web part em uma galeria de web parts de SharePoint.|  
 |Arquivo de código|Contém métodos que adicionam controles à web part e que geram conteúdo personalizado na web part.|  
   

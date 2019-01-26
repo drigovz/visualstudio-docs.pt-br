@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942366"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867358"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Passo a passo: Criar uma região de formulário do Outlook
   Regiões de formulário personalizadas estendem formulários do Microsoft Office Outlook padrão ou personalizados. Neste passo a passo, você criará uma região de formulário personalizada é exibida como uma nova página na janela Inspetor de um item de contato. Esta região do formulário exibe um mapa de cada endereço listado para o contato, enviando as informações de endereço para o Windows Live Search site Local. Para obter informações sobre regiões de formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).  
@@ -103,7 +103,7 @@ ms.locfileid: "53942366"
   
      Isso garante que a região do formulário será grande o suficiente para exibir um mapa.  
   
-4.  Sobre o **modo de exibição** menu, clique em **caixa de ferramentas**.  
+4.  No menu **Exibir**, clique em **Caixa de Ferramentas**.  
   
 5.  Do **controles comuns** guia da **caixa de ferramentas**, adicione um **WebBrowser** à região do formulário.  
   

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Bookmark control, events
 - shortcut menus, Word
 - menus, creating in Office applications
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb09bc2ee3f9278026be2046ff249fb2ca4c558f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940541"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863988"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Passo a passo: Criar menus de atalho para indicadores
   Este passo a passo demonstra como criar menus de atalho para <xref:Microsoft.Office.Tools.Word.Bookmark> controles em uma personalização no nível de documento para Word. Quando um usuário clica o texto em um indicador, um menu de atalho é exibido e fornece as opções de usuário para formatar o texto.  

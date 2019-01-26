@@ -13,17 +13,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa71d4cefabbb59e7b9b5255cfebf3677e257a5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915897"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865743"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Passo a passo: Chamar o código em um suplemento do VSTO do VBA
   Este passo a passo demonstra como expor um objeto em um suplemento do VSTO para outras soluções do Microsoft Office, incluindo o Visual Basic for Applications (VBA) e COM VSTO Add-ins.  
@@ -92,7 +92,7 @@ ms.locfileid: "53915897"
   
 2.  Clique com botão direito **ThisAddIn.cs** ou **ThisAddIn. vb**e, em seguida, clique em **Exibir código**.  
   
-3.  Adicione o seguinte código para o `ThisAddIn` classe.  
+3.  Adicione o código a seguir à classe `ThisAddIn`.  
   
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  

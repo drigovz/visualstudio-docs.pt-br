@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, populating with data
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 970e30245840d82efbd7b02bbde0f4d8b202eaa4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a41c9c630eb95fbd0fed2b9ca2f05d56eff65c44
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925622"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865574"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Como: Preencher controles ListObject com dados
   Você pode usar a vinculação de dados como uma maneira de adicionar rapidamente os dados para seu documento. Após a vinculação de dados para um objeto de lista, você pode desconectar o objeto de lista para que ele exibe os dados, mas não está mais ligado à fonte de dados.  

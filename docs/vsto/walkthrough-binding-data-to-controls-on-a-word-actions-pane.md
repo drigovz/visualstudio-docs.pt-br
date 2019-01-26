@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], actions panes
 - actions panes [Office development in Visual Studio], binding controls
 - smart documents [Office development in Visual Studio], data binding
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49d307b687943ec99e04166b66e9ca5b15efb2a3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926444"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866800"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Passo a passo: Associar dados a controles em um painel de ações do Word
   Este passo a passo demonstra a associação de dados a controles em um painel de ações no Word. Os controles de demonstram uma relação mestre/detalhes entre tabelas em um banco de dados do SQL Server.  
