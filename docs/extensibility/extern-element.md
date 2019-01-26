@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc48dc471dab06bf18c0edf622cfa18e7159eaab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bac2f7e5611e8e87dd3ad6c268c0fd2ea6292c14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895253"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924185"
 ---
 # <a name="extern-element"></a>Elemento extern
 O elemento Extern faz referência a qualquer cabeçalho externo (*. h*) arquivos para mesclar com o *VSCT* arquivo em tempo de compilação. Os arquivos a serem mescladas devem estar no caminho de inclusão fornecido ao compilador VSCT ou referenciado por um [elemento Include](../extensibility/include-element.md). Os arquivos podem ser outros *VSCT* arquivos ou arquivos de cabeçalho C++.  
@@ -41,9 +41,9 @@ Elemento Extern
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|href|Necessário. O caminho para o arquivo de cabeçalho:<br /><br /> href="stdidcmd.h"|  
+|{1&gt;href&lt;1}|Necessário. O caminho para o arquivo de cabeçalho:<br /><br /> href="stdidcmd.h"|  
 |Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|linguagem|Opcional. O idioma padrão de todos os [ \<cadeias de caracteres >](../extensibility/strings-element.md) elementos na tabela de comandos:<br /><br /> Language = "en-us"|  
+|linguagem|Opcional. O idioma padrão de todos os [ \<cadeias de caracteres >](../extensibility/strings-element.md) elementos na tabela de comandos:<br /><br /> language="en-us"|  
   
 ### <a name="child-elements"></a>Elementos filho  
   

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3566903824f82cb266fa87f1dec0e8bcf04f9ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 028490e6c23051496202fad2d85b0d11cc434218
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825901"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964282"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Arquivos SCC
 Quando você coloca uma solução do Visual Studio ou o projeto sob controle do código-fonte usando o IDE, o IDE recebe duas informações cruciais. A informação vem de controle de fonte de plug-in na forma de cadeias de caracteres. Essas cadeias de caracteres "AuxPath" e "Nomedoprojeto" são opacas para o IDE, mas eles são usados pelo plug-in para localizar a solução ou projeto no controle de versão. O IDE normalmente obtém essas cadeias de caracteres na primeira vez chamando o [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e ele, em seguida, salva-os no arquivo de projeto ou solução para futuras chamadas para o [SccOpenProject](../extensibility/sccopenproject-function.md). Quando inseridos nos arquivos de solução e projeto, as cadeias de caracteres "AuxPath" e "Nomedoprojeto" não são atualizadas automaticamente quando um usuário de branches, bifurcações, ou copia os arquivos de solução e projeto que estão no controle de versão. Para certificar-se de que os arquivos de solução e projeto apontam para sua localização correta no controle de versão, os usuários devem atualizar manualmente as cadeias de caracteres. Porque as cadeias de caracteres devem ser opaco, pode não sempre ser claro como eles devem ser atualizados.  
@@ -42,23 +42,23 @@ Quando você coloca uma solução do Visual Studio ou o projeto sob controle do 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Uma ilustração de MSSCCPRJ. Formato de arquivo do SCC  
  A seguir está um exemplo do *Mssccprj* formato de arquivo (os números de linha são fornecidos apenas como um guia e não devem ser incluídos no corpo do arquivo):  
   
- [Linha 1] `SCC = This is a Source Code Control file`  
+ [Line 1] `SCC = This is a Source Code Control file`  
   
- [Linha 2]  
+ [Line 2]  
   
- [Linha 3] `[TestApp.sln]`  
+ [Line 3] `[TestApp.sln]`  
   
- [Linha 4] `SCC_Aux_Path = "\\server\vss\"`  
+ [Line 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Linha 5] `SCC_Project_Name = "$/TestApp"`  
+ [Line 5] `SCC_Project_Name = "$/TestApp"`  
   
- [Linha 6]  
+ [Line 6]  
   
- [Linha 7] `[TestApp.csproj]`  
+ [Line 7] `[TestApp.csproj]`  
   
- [Linha 8] `SCC_Aux_Path = "\\server\vss\"`  
+ [Line 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Linha 9] `SCC_Project_Name = "$/TestApp"`  
+ [Line 9] `SCC_Project_Name = "$/TestApp"`  
   
  A primeira linha declara a finalidade do arquivo e serve como a assinatura para todos os arquivos desse tipo. Essa linha deve aparecer exatamente como isso em todos os *Mssccprj* arquivos:  
   

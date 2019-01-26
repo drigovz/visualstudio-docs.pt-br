@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3c5aa9dd5784f6d987a433b0f402547e8f7d8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b1413acafd4358d4b29435a0cd62edd5a8ce22e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826381"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940824"
 ---
 # <a name="registering-a-project-type"></a>Registrando um tipo de projeto
 Quando você cria um novo tipo de projeto, você deve criar entradas do registro que permitem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para reconhecer e trabalhar com o tipo de projeto. Você normalmente cria essas entradas do registro usando um arquivo de script (. rgs) do registro.  
@@ -222,7 +222,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
   
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
-|% CLSID_Package %|REG_SZ|`,1000,1`|O recurso para recuperar as informações de menu.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|O recurso para recuperar as informações de menu.|  
   
  Todos os exemplos a seguir estão localizados no registro sob a chave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   

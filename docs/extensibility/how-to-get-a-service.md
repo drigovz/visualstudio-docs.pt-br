@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e848b3e54d1e3beb6b9681112cd55b74caa6a482
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990023"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949851"
 ---
 # <a name="how-to-get-a-service"></a>Como: Obtenha um serviço
 Muitas vezes você precisa obter os serviços do Visual Studio para acessar recursos diferentes. Em geral, um serviço do Visual Studio fornece uma ou mais interfaces que você pode usar. Você pode obter a maioria dos serviços de um VSPackage.  
@@ -39,7 +39,7 @@ Muitas vezes você precisa obter os serviços do Visual Studio para acessar recu
   
    ```  
   
-    Esse código obtém um serviço SVsActivityLog e converte-o para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, que pode ser usado para gravar no log de atividade. Por exemplo, consulte [como: Usar o log de atividades](../extensibility/how-to-use-the-activity-log.md).  
+    Esse código obtém um serviço SVsActivityLog e converte-o para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, que pode ser usado para gravar no log de atividade. Para obter um exemplo, consulte [ Usar o log de atividades](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Compile o projeto e comece a depuração. A instância experimental é exibida.  
   

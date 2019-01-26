@@ -13,15 +13,15 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89f39fd11e5f42a61fa322edddf83afef1d2fc4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7937ad591435c1b6b83e779abdddd995ee198a2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943072"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: Alterar o design usando visualização e modelagem
 
@@ -143,7 +143,7 @@ Antes das equipes de check-in de suas alterações, elas validam o código contr
 
 O dinner Now deve estimar o custo de atender o requisito de novo. Isso depende em parte quanto essa alteração afetará outras partes do sistema. Para ajudá-los a entender isso, um dos desenvolvedores da Dinner Now cria esses mapas e diagramas de código existente:
 
-|**Mapa ou diagrama**|**programas**|
+|**Mapa ou diagrama**|**Shows**|
 |-|-|
 |*Mapa de código*<br /><br /> Consulte:<br /><br /> - [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />- [Procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)<br />- [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|As dependências e outros relacionamentos no código.<br /><br /> Por exemplo, Dinner Now pode começar revisando os mapas de código de assembly para uma visão geral dos assemblies e suas dependências. Eles podem detalhar os mapas para explorar namespaces e classes nesses assemblies.<br /><br /> O dinner Now também pode criar mapas para explorar areas particulares e outros tipos de relações no código. Eles usam o Gerenciador de soluções para localizar e selecionar as áreas e relacionamentos de seu interesse.|
 |*Diagrama de classe base*<br /><br /> Confira [Como Adicionar diagramas de classe a projetos (Designer de classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Classes existentes no código|

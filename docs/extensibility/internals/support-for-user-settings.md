@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930902"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964243"
 ---
 # <a name="support-for-user-settings"></a>Suporte para configurações de usuário
 Um VSPackage pode definir uma ou mais categorias de configurações, que são grupos de variáveis de estado que persiste quando um usuário escolhe o **configurações de importação/exportação** comando as **ferramentas** menu. Para habilitar essa persistência, você use as APIs de configurações no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -38,7 +38,7 @@ Um VSPackage pode definir uma ou mais categorias de configurações, que são gr
 
  A estrutura da entrada do registro é ilustrada abaixo:  
 
- HKLM\Software\Microsoft\VisualStudio\\*\<versão >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
 
  `<CSPName`> = s '#12345'  
 

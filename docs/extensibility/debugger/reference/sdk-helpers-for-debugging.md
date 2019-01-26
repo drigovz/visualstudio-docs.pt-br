@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951723"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Auxiliares do SDK para depuração
 Essas funções e as declarações são funções auxiliares global para implementação de mecanismos de depuração, avaliadores de expressão e provedores de símbolo em C++.  
@@ -230,7 +230,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Defina isso para mostrar o código de nonuser diferente de zero.|  
 |metricJustMyCodeStepping|Defina isso como diferente de zero para indicar que a revisão pode ocorrer apenas no código do usuário.|  
 |metricCLSID|CLSID para um objeto de um tipo específico de métrica.|  
-|MetricName|Nome amigável para um objeto de um tipo específico de métrica.|  
+|metricName|Nome amigável para um objeto de um tipo específico de métrica.|  
 |metricLanguage|Nome do idioma.|  
   
 ## <a name="registry-locations"></a>Locais do registro  
@@ -249,23 +249,23 @@ HRESULT EnumMetricSections(
   
  *[raiz de versão]*\  
   
- *[métrica root]*\  
+ *[metric root]*\  
   
  *[tipo de métrica]*\  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
 |*[chave do Registro]*|`HKEY_CURRENT_USER` ou `HKEY_LOCAL_MACHINE`.|  
 |*[raiz de versão]*|A versão do Visual Studio (por exemplo, `7.0`, `7.1`, ou `8.0`). No entanto, essa raiz também pode ser modificado usando o **/rootsuffix** alternar para o **devenv.exe**. Para VSIP, esse modificador é normalmente **Exp**, portanto, a raiz da versão seria, por exemplo, 8.0Exp.|  
-|*[métrica root]*|Isso ocorre `AD7Metrics` ou `AD7Metrics(Debug)`, dependendo se a versão de depuração de dbgmetric.lib é usada. **Observação:**  Se dbgmetric.lib for usada, essa convenção de nomenclatura deverão ser seguida se você tiver diferenças entre depuração e versão versões que devem ser refletidas no registro.|  
+|*[metric root]*|Isso ocorre `AD7Metrics` ou `AD7Metrics(Debug)`, dependendo se a versão de depuração de dbgmetric.lib é usada. **Observação:**  Se dbgmetric.lib for usada, essa convenção de nomenclatura deverão ser seguida se você tiver diferenças entre depuração e versão versões que devem ser refletidas no registro.|  
 |*[tipo de métrica]*|O tipo de métrica a ser gravado: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc. Eles são definidos como no dbgmetric.h como `metricTypeXXXX`, onde `XXXX` é o nome de tipo específico.|  
-|*[métrica]*|O nome de uma entrada a ser atribuído um valor para definir a métrica. A organização real das métricas depende o tipo de métrica.|  
+|*[metric]*|O nome de uma entrada a ser atribuído um valor para definir a métrica. A organização real das métricas depende o tipo de métrica.|  
 |*[valor de métrica]*|O valor atribuído para a métrica. O tipo que o valor deve ter (cadeia de caracteres), números, etc. depende a métrica.|  
   
 > [!NOTE]
@@ -280,11 +280,11 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
  `PortSupplier`\  
   
@@ -307,9 +307,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
@@ -327,17 +327,17 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
  `metadata`\  
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
@@ -358,9 +358,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
  `Engine`\  
   
@@ -382,9 +382,9 @@ HRESULT EnumMetricSections(
   
  *[extensão guid]*\  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
@@ -399,30 +399,30 @@ HRESULT EnumMetricSections(
   
  *[tipos de exceção]*\  
   
- *[exceção]*\  
+ *[exception]*\  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[exceção]*\  
+ *[exception]*\  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
 |*[guid do mecanismo de depuração]*|O GUID de um mecanismo de depuração que dá suporte a exceções.|  
 |*[tipos de exceção]*|Um título geral para a subchave identifica a classe de exceções que podem ser manipulados. São nomes típicos **exceções do C++**, **exceções Win32**, **exceções do Common Language Runtime**, e **verificações de tempo de execução nativo**. Esses nomes também são usados para identificar uma determinada classe de exceção para o usuário.|  
-|*[exceção]*|Um nome para uma exceção: por exemplo, **com_error** ou **Control-Break**. Esses nomes também são usados para identificar uma exceção específica ao usuário.|  
+|*[exception]*|Um nome para uma exceção: por exemplo, **com_error** ou **Control-Break**. Esses nomes também são usados para identificar uma exceção específica ao usuário.|  
   
 ## <a name="requirements"></a>Requisitos  
  Esses arquivos estão localizados na [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] diretório de instalação do SDK (por padrão, *[unidade]* \Program Files\Microsoft SDK do Visual Studio 2010\\).  
   
  Cabeçalho: includes\dbgmetric.h  
   
- Biblioteca: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
