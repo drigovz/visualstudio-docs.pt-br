@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8db5e9d42036a7e4b5f1726e2771e143395c5820
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 902551df1ff58e6d970b760e684df9861aac6fb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043174"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Introdução a extensibilidade do depurador
 O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece as informações que você precisa para criar e personalizar componentes do depurador usados para depurar programas de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.  
@@ -32,7 +32,7 @@ O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece as inf
   
 - A linguagem de programação do C++  
   
-- COM ATL  
+- ATL COM  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Roteiro para estender o depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

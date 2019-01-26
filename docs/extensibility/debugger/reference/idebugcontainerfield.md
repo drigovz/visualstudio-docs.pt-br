@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51b88bf0302c404883ccbc3d476cb0262eb1e948
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb03d0adc7e7ff4eb02f29394afdd0f5c810c710
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910302"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988734"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Essa interface representa um símbolo ou um tipo que é um contêiner para outros símbolos ou tipos.  
@@ -45,7 +45,7 @@ IDebugContainerField : IDebugField
  Matrizes (contêineres para variáveis), (contêineres para métodos e variáveis) de classes e métodos (contêineres para parâmetros e variáveis locais) são exemplos de contêineres.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

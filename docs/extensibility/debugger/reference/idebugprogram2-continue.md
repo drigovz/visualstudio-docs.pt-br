@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e5b607588ff10f94db46b86667acc0ae968a16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 225a1d78e3fb6610d9cbcebd1253131f0fe9caf2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938091"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028526"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Continua a execução deste programa de um estado parado. Qualquer estado de execução anterior (por exemplo, uma etapa) é preservado, e o programa inicia a execução novamente.  
   
 > [!NOTE]
->  Esse método é preterido. Use o [continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md) método em vez disso.  
+>  Este método foi preterido. Use o [continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md) método em vez disso.  
   
 ## <a name="syntax"></a>Sintaxe  
   

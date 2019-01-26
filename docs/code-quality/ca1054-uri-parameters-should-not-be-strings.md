@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 8e99d72b-a658-47a7-8dd5-9784ce2c30b8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26118f2686abe7077f1c698a1c80e48de119fb9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7903e5f5241dabecc8077f4c56148c6ac40f5518
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920703"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018846"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: Parâmetros de URI não devem ser cadeias de caracteres
 
@@ -67,4 +67,4 @@ O exemplo a seguir mostra um tipo `ErrorProne`, que viola essa regra e um tipo, 
 
 [CA2234: Passar objetos System. URI em vez de cadeias de caracteres](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
-[CA1057: AS Cadeia de caracteres chamam sobrecargas System. URI](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+[CA1057: Cadeia de caracteres chamam sobrecargas System. URI](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

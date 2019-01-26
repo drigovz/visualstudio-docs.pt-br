@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62824c46e682b0418b8797d6adee0b504f04b414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 852b4284bbbf59ce8f3964d98f0464e583f1444f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987201"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028667"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Avaliação da expressão no modo de interrupção
 A seção a seguir descreve o processo que ocorre quando o depurador está no modo de interrupção e deverá conduzir a avaliação da expressão.  
@@ -31,7 +31,7 @@ A seção a seguir descreve o processo que ocorre quando o depurador está no mo
   
 3.  Se ParseText não retornar S_OK, o motivo do erro é retornado.  
   
-     -Caso contrário-  
+     -otherwise-  
   
      Se ParseText retornar S_OK, o SDM, em seguida, pode chamar o [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obter um valor final da expressão analisada.  
   

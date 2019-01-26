@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f6b8b9b220a9fa81ea8cf43de18bcf3820f5336
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016675"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e pesquisar os manifestos de imagem, permitindo que o usuário para manipulá-los da mesma maneira que faria do Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto de imagem. Essa ferramenta é útil para:  
@@ -70,7 +70,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
   
 |||  
 |-|-|  
-|**Subelemento**|**Definição**|  
+|**Subelement**|**Definição**|  
 |Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto do atual.|  
 |Guid|O símbolo representa um GUID e deve corresponder ao GUID de formatação.|  
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo.|  
@@ -92,7 +92,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |CommonProgramFiles|O valor da variável de ambiente % CommonProgramFiles %|  
 |LocalAppData|O valor da variável de ambiente % LocalAppData %|  
 |ManifestFolder|A pasta que contém o arquivo de manifesto|  
-|Meus documentos|O caminho completo da pasta Meus documentos do usuário atual|  
+|MyDocuments|O caminho completo da pasta Meus documentos do usuário atual|  
 |ProgramFiles|O valor da variável de ambiente % ProgramFiles %|  
 |Sistema|A pasta Windows\System32|  
 |WinDir|O valor da variável de ambiente % WinDir %|  
@@ -138,8 +138,8 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 ||||  
 |-|-|-|  
 |**Elemento**|**Atributos (todos necessária)**|**Definição**|  
-|\<Tamanho >|Valor|A origem será usada para imagens de determinado tamanho (em unidades de dispositivo). A imagem será quadrada.|  
-|\<SizeRange >|MinSize, MaxSize|A origem será usada para imagens de MinSize para tamanho máximo (em unidades de dispositivo), inclusive. A imagem será quadrada.|  
+|\<Size>|Valor|A origem será usada para imagens de determinado tamanho (em unidades de dispositivo). A imagem será quadrada.|  
+|\<SizeRange>|MinSize, MaxSize|A origem será usada para imagens de MinSize para tamanho máximo (em unidades de dispositivo), inclusive. A imagem será quadrada.|  
 |\<Dimensões >|Largura, altura|A origem será usada para imagens de determinada largura e altura (em unidades de dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|A origem será usada para imagens de largura/altura mínimo para a largura/altura máxima (em unidades de dispositivo), inclusive.|  
   
