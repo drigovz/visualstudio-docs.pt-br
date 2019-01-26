@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 574de335bdc7be6cbef658009645efbd6bc6620d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 131926011a12f397310fe6d4a70836a4972b48bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886261"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026808"
 ---
 # <a name="schema-cache"></a>Cache de esquema
 
@@ -27,23 +27,23 @@ A tabela a seguir descreve os esquemas que são instalados com o editor XML.
 
 | Filename | Descrição |
 |-| - |
-| *Catalog* | Esquema para arquivos de catálogo do editor XML. Para obter informações sobre catálogos do esquema, consulte abaixo. |
-| *Dotnetconfig* | Esquema para arquivos Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
-| *MSBuild.xsd* | Esquema para os arquivos MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>". |
-| *MSDATA.xsd* | Para anotações esquema XSD adicionados pela classe de <xref:System.Data.DataSet> , “urna: esquema-Microsoft-COM: XML-msdata”. |
+| *catalog.xsd* | Esquema para arquivos de catálogo do editor XML. Para obter informações sobre catálogos do esquema, consulte abaixo. |
+| *DotNetConfig.xsd* | Esquema para arquivos Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
+| *msbuild.xsd* | Esquema para os arquivos MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>". |
+| *msdata.xsd* | Para anotações esquema XSD adicionados pela classe de <xref:System.Data.DataSet> , “urna: esquema-Microsoft-COM: XML-msdata”. |
 | *msxsl.xsd* | Esquema para extensões do bloco de script do Microsoft XSLT, urna: esquema-Microsoft-COM: XSLT. |
 | *SnippetFormat.xsd* | Esquema para os arquivos XML de snippet de código. Para obter exemplos, consulte *%InstallDir%\VC#\Expansions*. |
 | *Soap1.1.xsd* | Esquema para Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/. |
 | *Soap1.2.xsd* | Esquema para o protocolo de acesso simples 1,2 do objeto. |
 | *SiteMapSchema.xsd* | Esquema para o arquivo XML do mapa do site ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL.xsd* | Esquema para o Web Service Description Language http://schemas.xmlsoap.org/wsdl/. |
+| *wsdl.xsd* | Esquema para o Web Service Description Language http://schemas.xmlsoap.org/wsdl/. |
 | *xenc.xsd* | Esquema para a criptografia de XML, http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML.xsd* | Esquema para XHTML http://www.w3.org/1999/xhtml. |
+| *xhtml.xsd* | Esquema para XHTML http://www.w3.org/1999/xhtml. |
 | *xlink.xsd* | Esquema para XLink1.0, http://www.w3.org/1999/xlink. |
-| *XML.xsd* | Esquema que descreve os atributos XML: space e XML: lang, http://www.w3.org/XML/1998/namespace. |
+| *xml.xsd* | Esquema que descreve os atributos XML: space e XML: lang, http://www.w3.org/XML/1998/namespace. |
 | *xmlsig.xsd* | Esquema para assinaturas digitais XML, http://www.w3.org/2000/09/xmldsig#. |
-| *xsdschema* | Esquema que descreve o XSD em si, http://www.w3.org/2001/XMLSchema. |
-| *XSLT* | Esquema XML para transformações, http://www.w3.org/1999/XSL/Transform. |
+| *xsdschema.xsd* | Esquema que descreve o XSD em si, http://www.w3.org/2001/XMLSchema. |
+| *xslt.xsd* | Esquema XML para transformações, http://www.w3.org/1999/XSL/Transform. |
 
 ## <a name="update-schemas-in-the-cache"></a>Atualizar esquemas no cache
  O editor carrega o diretório de cache do esquema quando o pacote de editor XML é carregado e observações para todas as alterações ao executar. Se um esquema foi adicionado, é carregado automaticamente em um índice de memória conhecidos de esquemas. Se um esquema foi removido, ele é removido automaticamente de índice de memória. Se um esquema foi atualizado, invalida automaticamente o cache de memória deste esquema.

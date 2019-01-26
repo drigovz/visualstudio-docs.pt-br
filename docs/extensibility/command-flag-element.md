@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84a27e392552a7194fc4aced6f2ba4a985968c87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034149"
 ---
 # <a name="command-flag-eelement"></a>Sinalizador de comando Eelement
 Modifica seu elemento pai.  
@@ -47,7 +47,7 @@ Modifica seu elemento pai.
 |DontCache|O ambiente de desenvolvimento não armazena em cache o `QueryStatus` resultados do método para esse comando.<br /><br /> Para um menu, isso informa um controlador de menu não armazenar em cache o texto de seus itens de menu. Use esse sinalizador quando o menu contém itens dinâmicos ou itens que têm texto dinâmico.<br /><br /> Válido para: `Button`, `Menu`|  
 |DynamicItemStart|Indica o início de uma lista dinâmica. Isso permite que o ambiente criar uma lista sucessivamente chamando o `QueryStatus` método nos itens de lista até que o sinalizador OLECMDERR_E_UNSUPPORTED seja retornado. Isso funciona bem para itens, como usado mais recentemente (MRU) listas e listas de janela.<br /><br /> Válido para: `Button`|  
 |DynamicVisibility|A visibilidade do comando pode ser alterada por meio de `QueryStatus` método ou por meio de um GUID que é incluído no contexto o `VisibilityConstraints` seção.<br /><br /> Aplica-se aos comandos que aparecem nos menus e barras de ferramentas de janela de ferramenta, mas não em barras de ferramentas de nível superior que aparecem na janela principal. Itens de nível superior da barra de ferramentas podem ser desabilitados, mas não ocultas, quando o sinalizador OLECMDF_INVISIBLE é retornado do `QueryStatus` método. Comandos da barra de ferramentas que aparecem nas barras de ferramentas de janela de ferramenta podem ser ocultados.<br /><br /> Em um menu, esse sinalizador indica também que ele deve ser automaticamente ocultado quando todos os seus membros estão ocultos. Esse sinalizador normalmente é atribuído à submenus como menus de nível superior já têm esse comportamento.<br /><br /> Este sinalizador deve ser combinado com o `DefaultInvisible` sinalizador.<br /><br /> Válido para: `Button`, `Combo`, `Menu`|  
-|Teclas de filtragem|Consulte o tópico de filtragem chaves sob [elemento Combo](../extensibility/combo-element.md).<br /><br /> Válido para: `Combo`|  
+|FilterKeys|Consulte o tópico de filtragem chaves sob [elemento Combo](../extensibility/combo-element.md).<br /><br /> Válido para: `Combo`|  
 |FixMenuController|Se esse comando é posicionado em um controlador de menu, o comando sempre é o padrão; ou seja, o comando é selecionado sempre que o próprio botão de controlador de menu é selecionado. Se o controlador de menu tem o `TextIsAnchorCommand` sinalizador definido, em seguida, o controlador de menu também usa o texto do comando que tem o `FixMenuController` sinalizador.<br /><br /> Somente um comando em um controlador de menu deve ter o `FixMenuController` sinalizador. Se mais de um comando é marcado assim, o último comando no menu torna-se o comando padrão.<br /><br /> Válido para: `Button`|  
 |IconAndText|Mostra um ícone e texto em menus e barra de ferramentas.<br /><br /> Válido para: `Button`, `Combo`, `Menu`|  
 |NoAutoComplete|O recurso de preenchimento automático está desabilitado.<br /><br /> Válido para: `Combo`|  

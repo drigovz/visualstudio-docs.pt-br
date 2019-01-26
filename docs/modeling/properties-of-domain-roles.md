@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: fbd977b733aa6e8e663cf4a69e577030f5c6106a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 854f282b22427fd805091d39377654b8d988084b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919143"
 ---
 # <a name="properties-of-domain-roles"></a>Propriedades de funções de domínio
 As propriedades na tabela a seguir estão associadas com uma função de domínio. Para obter informações sobre as funções de domínio, consulte [Noções básicas sobre modelos, Classes e relacionamentos](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -36,7 +36,7 @@ As propriedades na tabela a seguir estão associadas com uma função de domíni
 |Categoria|A categoria na qual a propriedade gerada aparece na **propriedades** janela no designer gerado. Se essa propriedade estiver vazia, a propriedade gerada aparece sob o **Misc** categoria|< nenhum\>|
 |Descrição|A descrição que é usada para documentar código e é usada na interface do usuário do designer gerado.<br /><br /> A descrição aparece na dica de ferramenta IntelliSense para a propriedade gerada na classe de player de função.|`Description for` *o nome completo da função*|
 |Nome de Exibição|O nome que é exibido no designer gerado para a função de domínio.|O valor ajustado da propriedade Name.|
-|Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a Ajuda de F1 para a função de domínio.|\<Nenhum >|
+|Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a Ajuda de F1 para a função de domínio.|\<nenhum>|
 |Nome de exibição de propriedade|O nome que é exibido no designer gerado para a propriedade de função gerado.|O valor ajustado da propriedade nome da propriedade.|
 
 > [!NOTE]

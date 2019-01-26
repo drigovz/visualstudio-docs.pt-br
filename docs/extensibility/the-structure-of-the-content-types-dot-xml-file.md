@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80013faf174900c4e94bf452f6f19c0ac9bfbeba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909886"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956487"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>A estrutura do arquivo [Content_types].xml
 Contém informações sobre os tipos de conteúdo de um pacote VSIX. Visual Studio usa o arquivo [Content_Types]. XML para instalar o pacote, mas não instala o arquivo propriamente dito.  
@@ -68,16 +68,16 @@ Contém informações sobre os tipos de conteúdo de um pacote VSIX. Visual Stud
 |---------------|-----------------|  
 |txt|texto/simples|  
 |pkgdef|texto/simples|  
-|xml|texto/xml|  
-|vsixmanifest|texto/xml|  
-|htm ou html|texto/html|  
-|RTF|aplicativo/rtf|  
-|PDF|aplicativo/pdf|  
-|GIF|imagem/gif|  
-|JPG ou jpeg|imagem/jpg|  
+|xml|text/xml|  
+|vsixmanifest|text/xml|  
+|htm ou html|text/html|  
+|rtf|aplicativo/rtf|  
+|pdf|aplicativo/pdf|  
+|gif|imagem/gif|  
+|JPG ou jpeg|image/jpg|  
 |TIFF|imagem/tiff|  
 |vsix|aplicativo/zip|  
-|ZIP|aplicativo/zip|  
+|zip|aplicativo/zip|  
 |DLL|application/octet-stream|  
 |todos os outros tipos de arquivo|application/octet-stream|  
   

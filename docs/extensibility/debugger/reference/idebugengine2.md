@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384d6179f2e8a8c9252e4c631a97d8e429330f96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5298b807d1e5bb0695a1b6c3a2442c834576a969
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914217"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949863"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Essa interface representa um mecanismo de depuração (DES). Ele é usado para gerenciar vários aspectos de uma sessão de depuração, desde a criação de pontos de interrupção para definir e apagar as exceções.  
@@ -61,5 +61,5 @@ IDebugEngine2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

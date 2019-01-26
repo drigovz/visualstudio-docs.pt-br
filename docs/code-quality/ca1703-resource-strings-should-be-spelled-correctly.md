@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 693f4970-f512-40cb-ae3b-a0f3a5c6d6f1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0458fa33413023fe9ae2b693a9bf75ffacda706c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4eea177ce2b47db0319fd9a13639e97bfbe37c0b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971605"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Cadeias de caracteres de recurso devem ser escritas corretamente
 
@@ -59,6 +59,6 @@ Não suprima um aviso nessa regra. Corretamente as palavras escritas de reduzem 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1701: AS Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1704: Identificadores devem ter grafia correta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 - [CA2204: Literais devem ter grafia correta](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

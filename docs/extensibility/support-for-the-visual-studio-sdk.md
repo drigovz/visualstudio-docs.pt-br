@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f1f54d43c02d02aa2967eaead2de75a664619c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90209173e2710850b174539eb3e292234c04c5c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959268"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922357"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Suporte para o SDK do Visual Studio
 Várias opções de suporte estão disponíveis para clientes que tenham dúvidas sobre como estender o ambiente de desenvolvimento integrado (IDE) do Visual Studio.  
@@ -29,7 +29,7 @@ Várias opções de suporte estão disponíveis para clientes que tenham dúvida
 ### <a name="msdn-development-center"></a>Centro de desenvolvimento do MSDN  
  O [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?LinkID=84381) no MSDN contém recursos que ajudam a responder a perguntas sobre como estender o Visual Studio. Por exemplo, há vários links para blogs de desenvolvedores VSIP.  
   
-### <a name="microsoft-newsgroups"></a>Grupos de notícias da Microsoft  
+### <a name="microsoft-newsgroups"></a>Microsoft Newsgroups  
  Membros da equipe de desenvolvimento do Visual Studio e outros desenvolvedores que estendem o Visual Studio geralmente participarem no grupo de notícias do vstudio. Esse grupo de notícias é um grupo de notícias gerenciado. Se você for um assinante do MSDN Universal, certifique-se de que você registre um alias não seja de spam para que seja possível para a Microsoft responder.  
   
 ### <a name="msdn-forums"></a>Fóruns do MSDN  

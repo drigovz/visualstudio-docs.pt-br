@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965686"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão de protocolo de idioma do servidor
 
@@ -49,18 +49,18 @@ inicializar | sim
 inicializado | sim
 desligamento | sim
 sair | sim
-$/ cancelRequest | sim
-janela/showMessage | sim
+$/cancelRequest | sim
+window/showMessage | sim
 window/showMessageRequest | sim
-janela/logMessage | sim
+window/logMessage | sim
 / evento de telemetria |
-cliente/registerCapability |
-cliente/unregisterCapability |
+client/registerCapability |
+client/unregisterCapability |
 workspace/didChangeConfiguration | sim
 workspace/didChangeWatchedFiles | sim
 espaço de trabalho/símbolo | sim
 workspace/executeCommand | sim
-espaço de trabalho/applyEdit | sim
+workspace/applyEdit | sim
 textDocument/publishDiagnostics | sim
 textDocument/didOpen | sim
 textDocument/didChange | sim
@@ -68,17 +68,17 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave | sim
 textDocument/didClose | sim
-textDocument/conclusão | sim
+textDocument/completion | sim
 conclusão/resolver | sim
-Passe o mouse/textDocument | sim
+textDocument/hover | sim
 textDocument/signatureHelp | sim
-textDocument/referências | sim
+textDocument/references | sim
 textDocument/documentHighlight | sim
 textDocument/documentSymbol | sim
-textDocument/formatação | sim
+textDocument/formatting | sim
 textDocument/rangeFormatting | sim
 textDocument/onTypeFormatting |
-textDocument/definição | sim
+textDocument/definition | sim
 textDocument/codeAction | sim
 textDocument/codeLens |
 codeLens/resolve |
@@ -239,7 +239,7 @@ Clique em novo para criar um novo ativo:
 
 ![definir o ativo MEF](media/lsp-define-asset.png)
 
-* **Tipo**: Mefcomponent
+* **Tipo**: Microsoft.VisualStudio.MefComponent
 * **Origem**: Um projeto na solução atual
 * **Projeto**: [seu projeto]
 
@@ -330,7 +330,7 @@ Siga as etapas abaixo para adicionar suporte para as configurações para sua ex
 
    ![Editar o ativo de vspackage](media/lsp-add-vspackage-asset.png)
 
-   * **Tipo**: VSPackage
+   * **Tipo**: Microsoft.VisualStudio.VsPackage
    * **Origem**: Arquivo no sistema de arquivos
    * **Caminho**: [caminho para seu *pkgdef* arquivo]
 

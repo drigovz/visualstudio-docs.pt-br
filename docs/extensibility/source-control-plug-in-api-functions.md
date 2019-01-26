@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d73dd67f0f2d64a2ac02c77b2eb86d21e559c0d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08d2e3ef83cf3b68cd7077dc7abd82527908ed34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965634"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funções de API de plug-in de controle do código-fonte
 A API de plug-in de controle do código-fonte fornece as seguintes funções, que devem ser implementadas pelo plug-in de acordo com essa API de controle de origem. As assinaturas de cada função e a semântica associada com os sinalizadores de bit e outros parâmetros são descritos em detalhes nesta referência.  

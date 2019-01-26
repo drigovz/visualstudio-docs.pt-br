@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1a9f73f396fffe93903f4295428a011c5b5e8d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961096"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042537"
 ---
 # <a name="createexpinstance-utility"></a>Utilitário CreateExpInstance
 Use o **CreateExpInstance** utilitário para criar, redefinir ou excluir uma instância experimental do Visual Studio. Você pode usar a instância experimental para depurar e testar as extensões do Visual Studio sem alterar o produto subjacente.  
@@ -33,16 +33,16 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ## <a name="parameters"></a>Parâmetros  
  **/ Criar** cria a instância experimental.  
   
- **/ Redefinição**  
+ **/Reset**  
  Exclui a instância experimental e, em seguida, cria um novo.  
   
  **/Clean**  
  Exclui a instância experimental.  
   
- **/ VSInstance**  
+ **/VSInstance**  
  O nome do diretório que contém a instância do Visual Studio base para copiar.  
   
- **/ RootSuffix**  
+ **/RootSuffix**  
  O sufixo a ser acrescentado ao nome do diretório de instância experimental.  
   
 ## <a name="remarks"></a>Comentários  
@@ -56,7 +56,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  O exemplo a seguir redefine a instância experimental do padrão do Visual Studio:  
   
- **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix = Exp**  
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
   
 ## <a name="see-also"></a>Consulte também  
  [VSPackages](../../extensibility/internals/vspackages.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27c12228de5a49d0b61cc61e5c1233343430b686
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 393cc1ea5835b66c18a9f4ca46b9f2ac0a88860a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934051"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031819"
 ---
 # <a name="localize-menu-commands"></a>Localizar os comandos de menu
 Você pode fornecer o texto localizado para comandos de menu e barra de ferramentas criando localizada *VSCT* localizadas e arquivos *. resx* arquivos para o VSPackage e, em seguida, atualizar os arquivos de projeto incorporar o alterações.  
@@ -46,7 +46,7 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
   
       O exemplo a seguir mostra o texto do botão em inglês e espanhol para abrir uma janela de ferramentas do Gerenciador de árvore da família.  
   
-      [*FamilyTree.en US.vsct*]  
+      [*FamilyTree.en-US.vsct*]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -59,7 +59,7 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
    </Button>  
    ```  
   
-    [*FamilyTree.es ES.vsct*]  
+    [*FamilyTree.es-ES.vsct*]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -90,7 +90,7 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
   
 5.  Abra cada *. resx* arquivo para modificar a cadeia de caracteres de valores conforme apropriado para o determinado idioma e cultura. O exemplo a seguir mostra a definição de recurso localizado para a barra de título de uma janela de ferramentas.  
   
-     [*Resources resx*]  
+     [*Resources.en-US.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -98,7 +98,7 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
     </data>  
     ```  
   
-     [*Resources.es ES*]  
+     [*Resources.es-ES.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  

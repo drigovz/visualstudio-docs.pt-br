@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7eebe25af23a6468bd0dfd4b60957a0b365a368
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be9a74c4aedf49b9ff7f7d56c29f3281c2d4578f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913417"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952802"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelos do Visual Studio)
 Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é significativo quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `false`. Quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `true`, em seguida, um modelo de item está disponível em todos os tipos de projeto.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<TemplateGroupID >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<TemplateGroupID>  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -65,11 +65,11 @@ Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é 
 |VC gerenciados|Usado para gerenciados (/ clr) projetos|  
 |VC-Windows|Usado para todos os projetos que usam a plataforma do windows (nativo/gerenciado/store)|  
 |WinRT-Native-UAP|Usado para projetos de armazenamento do Windows 10|  
-|CodeSharing nativo|Usado para projetos de item compartilhado|  
-|6.3 do WinRT-nativo|Usado para projetos do Windows 8.1 Store|  
-|WinRT nativo-Phone 6.3|Usado para projetos do Windows Phone 8.1|  
-|Nativo de WinRT|Usado para projetos do Windows 8.0 Store|  
-|Android VC|Usado para projetos do Android|  
+|CodeSharing-Native|Usado para projetos de item compartilhado|  
+|WinRT-Native-6.3|Usado para projetos do Windows 8.1 Store|  
+|WinRT-Native-Phone-6.3|Usado para projetos do Windows Phone 8.1|  
+|WinRT-Native|Usado para projetos do Windows 8.0 Store|  
+|VC-Android|Usado para projetos do Android|  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

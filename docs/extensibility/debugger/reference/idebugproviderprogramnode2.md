@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80f86ac24d6e9e214b19a3e8c4564bdf11523b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b21b643c372cb5481868bc28496f273d4b6a5287
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041341"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Essa interface realiza marshaling de interfaces relacionadas ao programa nos limites do processo.  
@@ -45,7 +45,7 @@ IDebugProviderProgramNode2 : IUnknown
  Essa interface é implementada quando a Alemanha é executado em um espaço de processo separado do programa que está sendo depurado: por exemplo, quando o DE está em execução no espaço de processo do Visual Studio em vez de espaço de processo do programa que está sendo depurado.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

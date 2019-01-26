@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60febef76a02f45e1cbca859453bf56e9cd1e38e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2500a93ea928fbc1c472a60c9350136821a84ee4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040314"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 Essa estrutura é usada para definir as informações de JustMyCode para um módulo.  
@@ -49,7 +49,7 @@ public struct JMC_CODE_SPEC {
  Essa estrutura é passada como uma lista dessas estruturas para o [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

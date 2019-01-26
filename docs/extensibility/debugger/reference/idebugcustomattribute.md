@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec02b9077108687b02e76db22f6349253bdbcb1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b424ab73861a5875554d8c6a658c1f1b4bc72035
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963197"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Essa interface representa um atributo personalizado, e ele pode fornecer o nome, o pai e o tipo de classe do atributo.  
@@ -48,7 +48,7 @@ IDebugCustomAttribute : IUnknown
  Um atributo personalizado é uma estrutura para c#, que fornece metadados personalizados associados a uma determinada classe ou método.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

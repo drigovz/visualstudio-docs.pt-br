@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 02e72a2991b5061459533cab9a3fbf213baa6b94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880816"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876259"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implantar extensões para ferramentas do SharePoint no Visual Studio
 
@@ -167,7 +167,7 @@ Os procedimentos a seguir descrevem como adicionar entradas no arquivo .vsixmani
 
      *Identificação de localidade*
 
-     *YourTemplateName*. zip
+     *YourTemplateName*.zip
 
      Por exemplo, se você tiver um modelo de item chamado ContosoCustomAction.zip que dá suporte à localidade inglês (Estados Unidos), pode ser o caminho completo *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.
 

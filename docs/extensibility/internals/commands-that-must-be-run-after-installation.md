@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd5fdae152cf3810d9b9bc95596081473eecc965
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915543"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942520"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que devem ser executados após a instalação
 Se você implantar sua extensão por meio de um *. msi* arquivo, você deve executar **devenv /setup** como parte de sua instalação para Visual Studio descobrir suas extensões.  
@@ -49,7 +49,7 @@ Se você implantar sua extensão por meio de um *. msi* arquivo, você deve exec
 > [!NOTE]
 > Porque a coluna de tipo da tabela RegLocator for 2, não é necessário especificar informações adicionais de versão na tabela de assinatura.  
   
-## <a name="run-devenvexe"></a>Executar devenv.exe  
+## <a name="run-devenvexe"></a>Run devenv.exe  
  Após o AppSearch ação padrão é executada no instalador, cada propriedade na tabela AppSearch tem um valor que aponta para o *devenv.exe* arquivo para a versão correspondente do Visual Studio. Se qualquer um dos valores do Registro especificada não estão presentes — porque essa versão do Visual Studio não está instalado, a propriedade especificada está definida como null.  
   
  Windows Installer o dá suporte à execução de um executável para o qual aponta uma propriedade por meio da ação personalizada digite 50. A ação personalizada deve incluir as opções de execução no script `msidbCustomActionTypeInScript` (1024) e `msidbCustomActionTypeCommit` (512), para garantir que o VSPackage foi instalado com êxito antes da integração-o na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para obter mais informações, consulte [tabela CustomAction](https://docs.microsoft.com/windows/desktop/msi/customaction-table) e [opções de execução no script de ação personalizado](https://docs.microsoft.com/windows/desktop/msi/custom-action-in-script-execution-options).  
@@ -60,10 +60,10 @@ Se você implantar sua extensão por meio de um *. msi* arquivo, você deve exec
   
 |Ação|Tipo|Origem|Destino|  
 |------------|----------|------------|------------|  
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|  
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|  
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/Setup|  
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/Setup|  
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
  Ações personalizadas devem ser criadas na tabela InstallExecuteSequence agendá-los para execução durante a instalação. Use a propriedade correspondente em cada linha da coluna da condição para impedir que a ação personalizada de ser executado se essa versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] não está instalado no sistema.  
   
