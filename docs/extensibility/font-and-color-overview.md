@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e73d021e89ea59ada88e79ce3235e7f08f75b10f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966478"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983996"
 ---
 # <a name="font-and-color-overview"></a>Visão geral de fontes e cores
 Este tópico discute as configurações de fonte e cor do texto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE). Ele também apresenta os conceitos de categorias e itens de exibição e descreve como os VSPackages e o editor principal usam atributos de texto.  

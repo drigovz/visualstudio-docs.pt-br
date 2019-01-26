@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43d6fb91214d0209c2e5745b23ba1466084d2780
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58a7c9cae59bc5a02dcca53afb66c234012e6713
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918675"
 ---
 # <a name="opening-and-saving-project-items"></a>Abrindo e salvando itens de projeto
 Quando você adiciona um novo tipo de projeto, você deve gerenciar a abertura e salvar os seus arquivos de projetos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem as diferentes abordagens para abrir e salvar arquivos.  

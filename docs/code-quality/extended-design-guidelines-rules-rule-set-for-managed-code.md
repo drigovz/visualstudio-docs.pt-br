@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d30acba85a2980aef51e5f1eab93ef6d53a4199c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9aeddeed26542b32ed1517939b9f93e3ec7bdbb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988012"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017026"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Conjunto de regras de diretrizes do design estendido para código gerenciado
 O conjunto de regras de regras de diretrizes de Design estendido Microsoft expande as regras de diretrizes de design básico para maximizar os problemas de usabilidade e facilidade de manutenção que são relatados. Ênfase extra é colocado em diretrizes de nomenclatura. Você deve considerar incluindo essa regra definida se seu projeto incluir código de biblioteca ou se você quiser impor os mais altos padrões para escrever código que é fácil de manter.
@@ -130,7 +130,7 @@ O conjunto de regras de regras de diretrizes de Design estendido Microsoft expan
 |[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|Parâmetros de URI não devem ser cadeias de caracteres|
 |[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|Valores de retorno de URI não devem ser cadeias de caracteres|
 |[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|Propriedades de URI não devem ser cadeias de caracteres|
-|[CA1057 AS](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Sobrecargas de URI da cadeia de caracteres chamam sobrecargas System.Uri|
+|[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Sobrecargas de URI da cadeia de caracteres chamam sobrecargas System.Uri|
 |[CA1058](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Tipos não devem estender determinados tipos base|
 |[CA1059](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|Membros não devem expor determinados tipos concretos|
 |[CA1064](../code-quality/ca1064-exceptions-should-be-public.md)|Exceções devem ser públicas|
@@ -161,7 +161,7 @@ O conjunto de regras de regras de diretrizes de Design estendido Microsoft expan
 |[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|Não diminuir a visibilidade dos membros herdados|
 |[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|Os membros devem ser diferentes em algo além de um tipo de retorno|
 |[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Substituir equals ao sobrecarregar operador equals|
-|[CA2225 AS](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Sobrecargas de operador têm alternativas nomeadas|
+|[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Sobrecargas de operador têm alternativas nomeadas|
 |[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Operadores devem ter sobrecargas simétricas|
 |[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Propriedades de coleção devem ser somente leitura|
 |[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|Usar parâmetros para argumentos variáveis|
@@ -177,7 +177,7 @@ O conjunto de regras de regras de diretrizes de Design estendido Microsoft expan
 |[CA1505](../code-quality/ca1505-avoid-unmaintainable-code.md)|Evitar código de difícil manutenção|
 |[CA1506](../code-quality/ca1506-avoid-excessive-class-coupling.md)|Evitar acoplamento de classes excessivo|
 |[CA1700](../code-quality/ca1700-do-not-name-enum-values-reserved.md)|Não nomear valores de enumeração 'Reserved'|
-|[CA1701 AS](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Palavras compostas de cadeia de caracteres de recurso devem ter maiúsculas e minúsculas corretas|
+|[CA1701](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Palavras compostas de cadeia de caracteres de recurso devem ter maiúsculas e minúsculas corretas|
 |[CA1702](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|Palavras compostas devem ter maiúsculas e minúsculas corretas|
 |[CA1703](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Cadeias de caracteres de recurso devem ser escritas corretamente|
 |[CA1704](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)|Identificadores devem ser escritos corretamente|

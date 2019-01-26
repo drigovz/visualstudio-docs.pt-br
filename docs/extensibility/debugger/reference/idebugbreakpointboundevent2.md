@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 049f1fd86d0d1d9652ab851f7f9def3ba5944c8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59d42a2fe87efbca6dcf491942cdc5cf77505774
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987765"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942864"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 Essa interface informa o Gerenciador de sessão de depuração (SDM) que um ponto de interrupção pendente foi vinculado com êxito a um programa carregado.  
@@ -46,7 +46,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
  Sempre que um ponto de interrupção está associado, um evento é enviado para o SDM. Se o ponto de interrupção não pode ser associado, uma [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) é enviada; caso contrário, um `IDebugBreakpointBoundEvent2` é enviada.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - layer models, deploying extensions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8614df4c8e7b3a640f7ba488ad18384886b56afe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e39463004ddaa30c79cd944710aef56ba1e5498
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834302"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029772"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 
@@ -62,7 +62,7 @@ Servidores do Team Foundation Server normalmente não tenha instalado o Visual S
 
     -   Se você tiver configurado a compilação para executar no modo interativo como um usuário específico, você pode instalar apenas para esse usuário:
 
-         %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [versão]
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
 2.  Expanda cada arquivo VSIX em uma pasta no mesmo local:
 

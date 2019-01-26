@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 690770c2091d3c0a983b91b9a25afc3d3eb4b348
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989744"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974013"
 ---
 # <a name="custom-colorable-items"></a>Itens de coloração personalizados
 Você pode substituir a lista de tipos para colorir, como palavras-chave e comentários, com a implementação de itens de coloração personalizados como parte de seu serviço de linguagem.  
@@ -30,7 +30,7 @@ Você pode substituir a lista de tipos para colorir, como palavras-chave e comen
 > [!CAUTION]
 >  Você deve incluir o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido. Se você alterar o nome de um dos itens de coloração durante o desenvolvimento, você deve redefinir o cache que foi criado na primeira vez em que seus itens de coloração foram acessado. Você pode redefinir o cache experimental com as **CreateExpInstance** ferramenta, que é instalada com o SDK do Visual Studio, normalmente no diretório:  
 >   
->  *C:\Program arquivos (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+>  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
 >  Para redefinir o cache, digite **CreateExpInstance /Reset**. Para obter mais informações sobre **CreateExpInstance**, consulte [utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   

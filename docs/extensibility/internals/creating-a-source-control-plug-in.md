@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8b6578923134d1aaaeb2c60eb118ab66e71d27e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03b8f7a02c0332a3f75131ddfaf2e021f4a0c65c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888079"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035361"
 ---
 # <a name="create-a-source-control-plug-in"></a>Criar um controle de fonte plug-in
 O SDK do Visual Studio fornece recursos que permitem que você adicione funcionalidade de controle do código-fonte para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE). Ele permite usar qualquer DLL de plug-in que está em conformidade com a API de plug-in de controle do código-fonte descritos nesta documentação.  

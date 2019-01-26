@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b0e2dde4826682be2ffbd907c97369e1586e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab7d66ecae911faf8cc42a840ac853d585fc80bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952132"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012567"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Especifica a quantidade de estado de um programa (como threads em execução, quadros de pilha e o endereço da instrução atual) para despejo.  
@@ -50,7 +50,7 @@ public enum enum_DUMPTYPE { 
  Passado como um argumento para o [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
