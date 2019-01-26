@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e43491c329753e50e7c733afb55ecd4f415d11a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20bfd418da802e136fd92948285f9431efae88ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982111"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 Essa interface representa uma lista de caminhos de código.  
@@ -49,7 +49,7 @@ IEnumCodePaths2 : IUnknown
  Um caminho de código representa uma chamada de função ou o ponto de ramificação em um programa. Uma lista de caminhos de código representa o caminho por meio do qual assumiu a execução do código.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

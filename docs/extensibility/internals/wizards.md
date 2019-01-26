@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca842c185f4e9b50afffc20e14af70e93776116f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 22aa4c86cc00b57e7c290d8b5a5655713ee05052
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932792"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955356"
 ---
 # <a name="wizards"></a>Assistentes
 Depois de criar um assistente, você geralmente deseja adicioná-lo para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente desenvolvimento integrado (IDE) para que outras pessoas possam usá-lo. O Assistente de adição, em seguida, aparece na **adicionar novo projeto** ou **Adicionar Novo Item** caixas de diálogo. Para ver os **adicionar novo projeto** ou **Adicionar Novo Item** caixa de diálogo caixas, clique duas vezes em uma solução aberta no **Gerenciador de soluções**, aponte para **adicionar**, e em seguida, clique em **novo projeto** ou **Novo Item**.  

@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bafe937bee5b51498fa7b7d5978c5cbf7e151a07
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5323551d5a67163bf0ddc7202be44a583f72da62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968265"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelos do Visual Studio)
 Especifica se o usuário é solicitado para um projeto local por meio de salvamento a **novo projeto** caixa de diálogo ao criar um projeto. Se esse elemento é definido como `true`, em seguida, o usuário é solicitado que você salve local; se `false`, em seguida, ele não será solicitado. (Ou seja, um projeto temporário é criado.)  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Sintaxe  
