@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4198cf6bbed2d8f6172872e4f98f1edb4749e7d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3f9086bba7d5c5adfa42f1297de07a2f50ff7e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926301"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988123"
 ---
 # <a name="command-handling"></a>Manipulação de comando
 O editor pode definir novos comandos. Normalmente, os comandos são exibidos em um menu, em uma barra de ferramentas ou em um menu de contexto.  
@@ -29,19 +29,19 @@ O editor pode definir novos comandos. Normalmente, os comandos são exibidos em 
   
  \<Guid de menu = "guidCustomEditorCmdSet" id = "IDMX_RTF" prioridade = "0x0000" type = "Contexto" >  
   
- \<Guid pai = "guidCustomEditorCmdSet" id = "0" / >  
+ \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
  \<Cadeias de caracteres >  
   
  \<ButtonText > Menu de contexto CustomEditor\</ButtonText >  
   
- \<CommandName > CustomEditorContextMenu\</CommandName >  
+ \<CommandName>CustomEditorContextMenu\</CommandName>  
   
- \</ Cadeias de caracteres >  
+ \</Strings>  
   
- \</ Menu >  
+ \</Menu>  
   
- \</ Menus >  
+ \</Menus>  
   
  O texto acima adiciona um comando de menu de contexto com o texto **Menu de contexto CustomEditor**. O GUID de Menu é parte do conjunto de comando que é criado com este editor. O tipo é "Contexto".  
   

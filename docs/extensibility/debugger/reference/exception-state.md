@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06bd0a3f68653bc52e79f9b4eb97d7b409ee5488
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be70688076893d4f978c8a433fe187c3a854c2d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992211"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 Especifica o estado de exceção.  
@@ -127,7 +127,7 @@ public enum enum_EXCEPTION_STATE { 
  Esses sinalizadores podem ser combinados com um OR bit a bit.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

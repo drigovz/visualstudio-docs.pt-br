@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0559f003ec09b6f3b0a12fd8f429f5dc83e6322d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993556"
 ---
 # <a name="vsix-manifest-designer"></a>Designer de manifesto do VSIX
 Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instalação para uma extensão do Visual Studio.  
@@ -64,7 +64,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
   **Linguagem**  
   Especifica o idioma padrão para o pacote, que corresponde aos dados textuais no manifesto. O `Language` atributo segue a convenção de código localidade common language runtime (CLR) para assemblies de recursos, por exemplo, en-us, en, fr-fr. Por padrão, o valor é neutro, o que significa que o pacote será executado em qualquer versão de idioma do Visual Studio.  
   
-  **licença**  
+  **License**  
   Especifica o arquivo de texto que contém a licença de usuário, caso haja algum.  
   
   **Ícone**  
@@ -73,7 +73,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
   **Imagem de visualização**  
   Especifica o arquivo gráfico (*. PNG*, *bmp*, *. JPEG*, *. ico*) que contém a imagem de visualização a ser exibido no **Gerenciador de extensões**, se houver uma imagem de visualização. A imagem de visualização deve ser 200 x 200 pixels. Se nenhuma imagem de visualização for especificada, **Extension Manager** usa uma imagem padrão.  
   
-  **Marcas**  
+  **Tags**  
   Adiciona as marcas de texto a ser usado para dicas de pesquisa.  
   
   **Notas de Versão**  
@@ -121,7 +121,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
   
 - Microsoft.VisualStudio.Package  
   
-- Mefcomponent  
+- Microsoft.VisualStudio.MefComponent  
   
 - Microsoft.VisualStudio.ToolboxControl  
   

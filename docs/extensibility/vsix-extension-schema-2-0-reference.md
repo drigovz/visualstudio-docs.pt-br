@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f9019ca281dd86ef4665e8f6590798d4dfbd917
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e07fc492b5ed44e584870b4c891a9669152442d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993917"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência de esquema 2.0 de extensão do VSIX
 Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um pacote VSIX. O formato de arquivo é regido por um esquema. A versão 2.0 desse esquema dá suporte a adição de atributos e tipos personalizados.  O esquema do manifesto é extensível. O carregador de manifesto ignora elementos XML e atributos que não entende.  
@@ -47,7 +47,7 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
     -   `Id` -Este atributo deve ser uma ID exclusiva para o pacote escolhido por seu autor. O nome deve ser qualificado da mesma forma que os tipos CLR são ajudaria: Company.Product.Feature.Name. O `Id` atributo é limitado a 100 caracteres.  
   
-    -   `Version` -Define a versão deste pacote e seu conteúdo. Esse atributo segue o formato de controle de versão do assembly CLR: Major (1.2.40308.00). Um pacote com um maior número de versão é considerado atualizações do pacote e pode ser instalado em relação à versão instalada existente.  
+    -   `Version` -Define a versão deste pacote e seu conteúdo. Esse atributo segue o formato de controle de versão do assembly CLR: Major.Minor.Build.Revision (1.2.40308.00). Um pacote com um maior número de versão é considerado atualizações do pacote e pode ser instalado em relação à versão instalada existente.  
   
     -   `Language` -Este atributo é o idioma padrão para o pacote e corresponde aos dados textuais neste manifesto. Esse atributo segue a convenção de código de localidade do CLR para assemblies de recurso, por exemplo: en-us, en, fr-fr. Você pode especificar `neutral` para declarar uma extensão com neutralidade de idioma que será executado em qualquer versão do Visual Studio. O valor padrão é `neutral`.  
   
@@ -167,9 +167,9 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
   - `Type` -Tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
   
-    1. VSPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-    2. Mefcomponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
     3. Microsoft.VisualStudio.ToolboxControl  
   
