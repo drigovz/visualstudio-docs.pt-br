@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca850f06fa2c17bb6f7c6ccb0756ad2498c67b9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5bcb9d1adb03ad92e1c7df4fe3d61814718cccc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870158"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038234"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Essa interface é usada para comunicar informações de depuração essenciais, como interromper um ponto de interrupção e informações não-críticas, como uma mensagem de depuração.  
@@ -45,7 +45,7 @@ IDebugEvent2 : IUnknown
  Interfaces de evento mais específico, como [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), não derivam da interface IDebugEvent2, mas em vez disso, são implementados como uma interface separada no mesmo objeto como `IDebugEvent2`.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -53,5 +53,5 @@ IDebugEvent2 : IUnknown
   
 ## <a name="see-also"></a>Consulte também  
  [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
- [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
+ [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

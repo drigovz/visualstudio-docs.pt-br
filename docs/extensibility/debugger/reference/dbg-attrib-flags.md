@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df250545963ad29a609ebe9202c554f646eef74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930a95d733c0467c3c5d9da89a9732a18d718f99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840038"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037389"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 Descreve vários atributos para um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ou um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interface. Membro de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estrutura.  
@@ -305,7 +305,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  O `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` sinalizador é uma indicação ao [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] para obter o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) da interface do [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface e chamada [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) para obter uma lista de visualizadores personalizados.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

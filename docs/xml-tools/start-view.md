@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c97bd62f6a197d5aac64423002580c8ed05d34b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857900"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042238"
 ---
 # <a name="start-view"></a>O modo de Início
 
@@ -42,9 +42,9 @@ Os seguintes botões estão ativados na barra de ferramentas do designer XSD qua
 
 |Opção|Descrição|
 |-|-----------------|
-|**Mostrar exibição inicial**|Alterna a O modo de Início. Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL**+**1**.|
-|**Mostrar modo de exibição do modelo de conteúdo**|Alterna a O modo do modelo de conteúdo. Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL**+**2**.|
-|**Mostrar exibição de gráfico**|Alterna a O modo de gráfico. Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL**+**3**.|
+|**Mostrar exibição inicial**|Alterna a O modo de Início. Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**1**.|
+|**Mostrar modo de exibição do modelo de conteúdo**|Alterna a O modo do modelo de conteúdo. Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**2**.|
+|**Mostrar exibição de gráfico**|Alterna a O modo de gráfico. Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Consulte também
 

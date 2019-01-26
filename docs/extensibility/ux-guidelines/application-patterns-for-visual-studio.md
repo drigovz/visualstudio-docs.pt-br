@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c6f09f6a29ff19c8ad43495502010713e77aa0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938387"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interações de janela  
@@ -499,7 +499,7 @@ O usuário deve sempre ser capaz de determinar o efeito de uma operação de arr
 | :---: | --- | --- |  
 | ![Ícone de "sem soltar" do mouse](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706 01_MouseNoDrop") | Nenhum menu | Item não pode ser solto no local especificado. |  
 | ![Ícone de "cópia" de mouse](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706 02_MouseCopy") | Copiar | Item será copiado para o local de destino. |  
-| ![Ícone de mouse "Mover"](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706 03_MouseMove") | Mover | Item será movido para o local de destino. |  
+| ![Mouse "move" icon](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Mover | Item será movido para o local de destino. |  
 | ![Ícone de "add reference" mouse](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706 04_MouseAddRef") | Adicionar referência | Uma referência para o item selecionado será adicionada ao local de destino. |
 
 #### <a name="reference-based-projects"></a>Projetos de referência  
@@ -511,19 +511,19 @@ O usuário deve sempre ser capaz de determinar o efeito de uma operação de arr
 | Nenhum modificador | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original |  
 | Nenhum modificador | Origem | Referência de exclusões ao item original | Retém o item original |  
 | Nenhum modificador | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
-| SHIFT + arrastar | Ação | Mover | Nenhum menu |  
-| SHIFT + arrastar | Destino | Adiciona a referência ao item original | Nenhum menu |  
-| SHIFT + arrastar | Origem | Referência de exclusões ao item original | Nenhum menu |  
-| SHIFT + arrastar | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | Nenhum menu |  
-| CTRL + arrastar | Ação | Copiar | Nenhum menu |  
-| CTRL + arrastar | Destino | Adiciona a referência ao item original | Nenhum menu |  
-| CTRL + arrastar | Origem | Mantém a referência ao item original | Nenhum menu |  
-| CTRL + arrastar | Resultado | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | Nenhum menu |  
-| Ctrl + Shift + arrastar | Ação | Link | Link |  
-| Ctrl + Shift + arrastar | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original |  
-| Ctrl + Shift + arrastar | Origem | Mantém a referência ao item original | Retém o item original |  
-| Ctrl + Shift + arrastar | Resultado | `DROPEFFECT_LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
-| Ctrl + Shift + arrastar | Observação | Mesmo que o comportamento de arrastar e soltar para atalhos no Windows Explorer. ||  
+| Shift+Drag | Ação | Mover | Nenhum menu |  
+| Shift+Drag | Destino | Adiciona a referência ao item original | Nenhum menu |  
+| Shift+Drag | Origem | Referência de exclusões ao item original | Nenhum menu |  
+| Shift+Drag | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | Nenhum menu |  
+| Ctrl+Drag | Ação | Copiar | Nenhum menu |  
+| Ctrl+Drag | Destino | Adiciona a referência ao item original | Nenhum menu |  
+| Ctrl+Drag | Origem | Mantém a referência ao item original | Nenhum menu |  
+| Ctrl+Drag | Resultado | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | Nenhum menu |  
+| Ctrl+Shift+Drag | Ação | Link | Link |  
+| Ctrl+Shift+Drag | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original |  
+| Ctrl+Shift+Drag | Origem | Mantém a referência ao item original | Retém o item original |  
+| Ctrl+Shift+Drag | Resultado | `DROPEFFECT_LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
+| Ctrl+Shift+Drag | Observação | Mesmo que o comportamento de arrastar e soltar para atalhos no Windows Explorer. ||  
 | Recortar/colar | Ação | Mover | Link |  
 | Recortar/colar | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original |  
 | Recortar/colar | Origem | Mantém a referência ao item original|Retém o item original |  
@@ -542,15 +542,15 @@ A tabela a seguir resume as operações de arrastar e soltar (bem como Recortar/
 | Nenhum modificador | Ação | Mover | Mover |
 | Nenhum modificador | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
 | Nenhum modificador | Origem | Referência de exclusões ao item original | Referência de exclusões ao item original |
-| SHIFT + arrastar | Ação | Mover | Mover |
-| SHIFT + arrastar | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
-| SHIFT + arrastar | Origem | Referência de exclusões ao item original | Exclui o item do local original |
-| SHIFT + arrastar | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
-| CTRL + arrastar | Ação | Copiar | Copiar |
-| CTRL + arrastar | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
-| CTRL + arrastar | Origem | Mantém a referência ao item original | Mantém a referência ao item original |
-| CTRL + arrastar | Resultado | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
-| Ctrl + Shift + arrastar | | Nenhum menu | Nenhum menu |
+| Shift+Drag | Ação | Mover | Mover |
+| Shift+Drag | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
+| Shift+Drag | Origem | Referência de exclusões ao item original | Exclui o item do local original |
+| Shift+Drag | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
+| Ctrl+Drag | Ação | Copiar | Copiar |
+| Ctrl+Drag | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
+| Ctrl+Drag | Origem | Mantém a referência ao item original | Mantém a referência ao item original |
+| Ctrl+Drag | Resultado | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
+| Ctrl+Shift+Drag | | Nenhum menu | Nenhum menu |
 | Recortar/colar | Ação | Mover | Mover |
 | Recortar/colar | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
 | Recortar/colar | Origem | Referência de exclusões ao item original | Exclui o item do local original |
@@ -569,18 +569,18 @@ A tabela a seguir resume as operações de arrastar e soltar (bem como Recortar/
 | Nenhum modificador | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |
 | Nenhum modificador | Origem | Referência de exclusões ao item original | Referência de exclusões ao item original |
 | Nenhum modificador | Resultado | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e item será excluído do local original no armazenamento |
-| SHIFT + arrastar | Ação | Mover | Mover |
-| SHIFT + arrastar | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |
-| SHIFT + arrastar | Origem | Referência de exclusões ao item original | Exclui o item do local original | 
-| SHIFT + arrastar | Resultado | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e item será excluído do local original no armazenamento |
-| CTRL + arrastar | Ação | Copiar | Copiar |
-| CTRL + arrastar | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |
-| CTRL + arrastar | Origem | Mantém a referência ao item original | Retém o item original |
-| CTRL + arrastar | Resultado | `DROPEFFECT_ COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
-| Ctrl + Shift + arrastar | Ação | Link | Link |
-| Ctrl + Shift + arrastar | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original do código-fonte |
-| Ctrl + Shift + arrastar | Origem | Mantém a referência ao item original | Retém o item original |
-| Ctrl + Shift + arrastar | Resultado | `DROPEFFECT_ LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
+| Shift+Drag | Ação | Mover | Mover |
+| Shift+Drag | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |
+| Shift+Drag | Origem | Referência de exclusões ao item original | Exclui o item do local original | 
+| Shift+Drag | Resultado | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e item será excluído do local original no armazenamento |
+| Ctrl+Drag | Ação | Copiar | Copiar |
+| Ctrl+Drag | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |
+| Ctrl+Drag | Origem | Mantém a referência ao item original | Retém o item original |
+| Ctrl+Drag | Resultado | `DROPEFFECT_ COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
+| Ctrl+Shift+Drag | Ação | Link | Link |
+| Ctrl+Shift+Drag | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original do código-fonte |
+| Ctrl+Shift+Drag | Origem | Mantém a referência ao item original | Retém o item original |
+| Ctrl+Shift+Drag | Resultado | `DROPEFFECT_ LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
 | Recortar/colar | Ação | Mover | Mover |
 | Recortar/colar | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
 | Recortar/colar | Origem | Referência de exclusões ao item original | Exclui o item do local original |

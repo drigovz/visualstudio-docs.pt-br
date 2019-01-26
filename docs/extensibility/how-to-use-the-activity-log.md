@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9305cf1de6cadc2230b90723ac0f995b425ba3a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b23dd6ffa0e856ef5d5fb14227953cb22dce65e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990328"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929346"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: Usar o log de atividades
 Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especialmente útil para depurar os VSPackages em ambientes de varejo.  
@@ -60,7 +60,7 @@ Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especia
  Você deve obter o log de atividades antes de gravar. Não armazenar em cache ou salvar o log de atividades para uso futuro.  
   
 ## <a name="see-also"></a>Consulte também
- [/ Log (devenv.exe)](../ide/reference/log-devenv-exe.md)   
+ [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [Solucionar problemas de VSPackages](../extensibility/troubleshooting-vspackages.md)   

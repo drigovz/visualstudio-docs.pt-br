@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c23aa1705880b444fdf036ee269bcc8ae32dfa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 053981aceeb72f0c02f1426068919f72b6cdce8d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902418"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984724"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>Alterar as configurações de exibição usando a API herdada
 As configurações para recursos do editor de núcleo, como quebra automática de linha, margem de seleção e espaço virtual, podem ser alteradas pelo usuário por meio das **opções** caixa de diálogo. No entanto, também é possível alterar essas configurações programaticamente.  

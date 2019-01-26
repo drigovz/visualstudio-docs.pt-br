@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f3380545ce78defb57be8944881309ea2ab2990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21785e7aed4e59e9ee7852bdb5474f7c1ca9d95f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031728"
 ---
 # <a name="language-services-and-the-core-editor"></a>Serviços de linguagem e o editor de núcleo
 Editores do Visual Studio são frequentemente associados um serviço de linguagem. Entre outras coisas, um serviço de linguagem fornece coloração de sintaxe, preenchimento de declaração, IntelliSense e formatação de texto.  

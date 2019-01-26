@@ -1,5 +1,5 @@
 ---
-title: 'Área de teste 6: Excluir | Microsoft Docs'
+title: 'Área de teste 6: Delete | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fff473dbd4e3bc70f1b6308ed0d6b1129c95e2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3eb1615768a195fc6a5abd7e4aedd992907b794e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930086"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966459"
 ---
 # <a name="test-area-6-delete"></a>Área de teste 6: Excluir
 Essa área de plug-in de teste de controle de origem aborda as ações de exclusão.  

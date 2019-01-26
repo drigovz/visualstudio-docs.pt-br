@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d2e874a414efd546e3d6841cfaaf9fdd70da5c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93efb9d03f09be9ce4fc8097b975ddf181a01526
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951385"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948759"
 ---
 # <a name="menu-element"></a>Elemento menu
 Define um item de menu. Estes são os seis tipos de menus: Contexto, Menu, MenuController, MenuControllerLatched, barra de ferramentas e ToolWindowToolbar.  
@@ -50,7 +50,7 @@ Define um item de menu. Estes são os seis tipos de menus: Contexto, Menu, MenuC
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |Pai|Opcional. O elemento pai do item de menu.|  
-|CommandFlag|Necessário. Ver [elemento Command flag](../extensibility/command-flag-element.md). Os valores válidos de CommandFlag para um Menu são da seguinte maneira:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **DontCache**<br />-   **DynamicVisibility** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextoAltera**<br />-   **TextIsAnchorCommand**|  
+|CommandFlag|Necessário. Ver [elemento Command flag](../extensibility/command-flag-element.md). Os valores válidos de CommandFlag para um Menu são da seguinte maneira:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **DontCache**<br />-   **DynamicVisibility** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  
 |Cadeias de caracteres|Necessário. Ver [elemento cadeias de caracteres](../extensibility/strings-element.md). O filho `ButtonText` elemento deve ser definido.|  
 |Anotação|Comentário opcional.|  
   

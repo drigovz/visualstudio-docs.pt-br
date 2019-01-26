@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821029"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933020"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 
@@ -39,7 +39,7 @@ Embora as operações de criação podem parecer diferente do que as operações
 
 A responsabilidade de uma EMD é decidir como um objeto ou grupo de objetos deve ser mesclado em um local específico no modelo. Em particular, ele decide quais relações devem ser instanciadas para vincular o grupo mesclado no modelo. Você também pode personalizá-lo para definir as propriedades e criar objetos adicionais.
 
-![DSL&#45;EMD&#95;de mesclagem](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Uma EMD é gerado automaticamente quando você define uma relação de incorporação. Esse padrão EMD cria uma instância da relação quando os usuários adicionarem novas instâncias filho ao pai. Você pode modificar essas EMDs padrão, por exemplo, adicionando código personalizado.
 
@@ -49,7 +49,7 @@ Você também pode adicionar seus próprios EMDs na definição de DSL, para per
 
 Você pode adicionar diretivas de mesclagem de elementos para as classes de domínio, relações de domínio, formas, conectores e diagramas. Você pode adicionar ou encontrá-los no Gerenciador de DSL sob a classe de domínio de recebimento. A classe de recebimento é a classe de domínio do elemento que já está no modelo e, para que o elemento novo ou copiado será mesclado.
 
-![DSL&#45;EMD&#95;detalhes](../modeling/media/dsl-emd_details.png)
+![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
 O **indexação classe** é a classe de domínio de elementos que podem ser mescladas em membros da classe receptora. Instâncias de subclasses da classe de indexação também serão mescladas por este EMD, a menos que você defina **aplica-se a subclasses** como False.
 

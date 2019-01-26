@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4cbc2deb6f292bf188109bcf8e012f7925cdea8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f492a7d5c42fc18ac2a5516d4549a024d37b7d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887978"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981825"
 ---
 # <a name="updating-the-user-interface"></a>Atualizando a interface do usuário
 Depois de implementar um comando, você pode adicionar código para atualizar a interface do usuário com o estado de seus novos comandos.  

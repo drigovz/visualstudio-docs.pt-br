@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06d56b2d3ae58a3cb24042c4bd4befdd2b92bae3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037207"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identificadores não devem conter nomes de tipos
 
@@ -73,9 +73,9 @@ ms.locfileid: "53912263"
 
 - Float
 
-- float32
+- Float32
 
-- float64
+- Float64
 
 Além disso, os nomes de um parâmetro também são verificados em relação os seguintes nomes de tipo de dados independente de idioma, diferenciando maiusculas de minúsculas:
 
@@ -109,7 +109,7 @@ Além disso, os nomes de um parâmetro também são verificados em relação os 
 
 - IntPtr
 
-- PTR
+- Ptr
 
 - Ponteiro
 

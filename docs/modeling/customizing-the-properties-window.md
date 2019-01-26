@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c02bdb890ed6e65db4916efa9899e967a1ce897c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987334"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936278"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 Você pode personalizar a aparência e comportamento da janela Propriedades em sua linguagem específica de domínio (DSL) no Visual Studio. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio é listada na janela Propriedades. Isso permite que você consulte e edite os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para os campos de forma no diagrama.
@@ -40,7 +40,7 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
 
  Nas formas que você pode expor os **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** e **FillGradientMode** propriedades. Sobre conectores, você pode expor os **cor**`,`**TextColor**, **DashStyle**, e **espessura** propriedades. Em diagramas que você pode expor os **FillColor** e **TextColor** propriedades.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Encaminhamento: Exibindo propriedades de elementos relacionados
+## <a name="forwarding-displaying-properties-of-related-elements"></a>Forwarding: Exibindo propriedades de elementos relacionados
  Quando o usuário de sua DSL seleciona um elemento em um modelo, as propriedades desse elemento são exibidas na janela Propriedades. No entanto, você também pode exibir as propriedades de elementos relacionados especificados. Isso é útil se você tiver definido um grupo de elementos que funciona em conjunto. Por exemplo, você pode definir um elemento principal e um elemento de plug-in opcional. Se o principal elemento é mapeado para uma forma e o outro não, é útil ver todas as suas propriedades, como se estivessem em um elemento.
 
  Esse efeito é denominado *encaminhamento de propriedade*, e isso acontece automaticamente em vários casos. Em outros casos, você pode obter a propriedade de encaminhamento, definindo um descritor de tipo de domínio.

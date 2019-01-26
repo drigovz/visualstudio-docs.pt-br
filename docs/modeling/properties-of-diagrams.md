@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8bbb876ddd8a3615b7e31d0dbf9d005b69f2d03d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf3405d74a1545bb86b1297b766faf46e68223a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942042"
 ---
 # <a name="properties-of-diagrams"></a>Propriedades de diagramas
 Você pode definir propriedades que especificam como os diagramas aparecerá no designer gerado. Por exemplo, você pode especificar uma cor padrão para o texto no diagrama.
@@ -31,7 +31,7 @@ Você pode definir propriedades que especificam como os diagramas aparecerá no 
 |Cor de preenchimento|A cor de preenchimento para o diagrama.|Branco|
 |Cor do texto|A cor do texto que é exibido no diagrama.|Preto|
 |Modificador de acesso|O modificador de acesso da classe (público ou interno).|Público|
-|Atributos personalizados|Usado para adicionar atributos para a classe do código gerado.|\<Nenhum >|
+|Atributos personalizados|Usado para adicionar atributos para a classe do código gerado.|\<nenhum>|
 |Gera dupla derivado|Se `True`, serão geradas uma classe base e uma classe parcial (para dar suporte à personalização por meio de substituições). Para obter mais informações, consulte [substituir e estender as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Tem um construtor personalizado|Se `True`, um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituir e estender as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
 |Modificador de herança|Descreve o tipo de herança da classe de código fonte que é gerado do diagrama (`none`, `abstract`, ou `sealed`).|Nenhum|
@@ -39,12 +39,12 @@ Você pode definir propriedades que especificam como os diagramas aparecerá no 
 |Nome|O nome do diagrama.|Nome atual|
 |Namespace|O namespace que é afiliado neste diagrama.|Namespace atual|
 |Classe representada|A classe de domínio de raiz que este diagrama representa.|Classe raiz atual se aplicável|
-|Observações|Observações informais associadas esse elemento.|\<Nenhum >|
+|Observações|Observações informais associadas esse elemento.|\<nenhum>|
 |Expõe a cor de preenchimento como propriedade|Se `True`, o usuário pode definir a cor de preenchimento do diagrama do designer gerado. Para definir essa propriedade, clique com botão direito na forma de diagrama e clique em **adicionar exposto**.|False|
 |Expõe a cor do texto como propriedade|Se `True`, o usuário pode definir a cor do texto do diagrama no designer gerado. Para definir essa propriedade, clique com botão direito na forma de diagrama e clique em **adicionar exposto**.|False|
-|Descrição|A descrição é usada para documentar o designer gerado.|\<Nenhum >|
-|Nome de Exibição|O nome que será exibido no designer gerado para este diagrama.|\<Nenhum >|
-|Palavra-chave de ajuda|A palavra-chave que é usada para indexar a Ajuda de F1 para este diagrama.|\<Nenhum >|
+|Descrição|A descrição é usada para documentar o designer gerado.|\<nenhum>|
+|Nome de Exibição|O nome que será exibido no designer gerado para este diagrama.|\<nenhum>|
+|Palavra-chave de ajuda|A palavra-chave que é usada para indexar a Ajuda de F1 para este diagrama.|\<nenhum>|
 
 ## <a name="see-also"></a>Consulte também
 

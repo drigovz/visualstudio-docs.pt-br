@@ -8,22 +8,22 @@ helpviewer_keywords:
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caf618ab0f6908f994f9f297dfb057bdf8afd1a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4363d5317e3b07f8d32c754336eeed04ec3ced5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925609"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037961"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelos do Visual Studio)
 Especifica se o usuário pode editar o campo de localização.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<EnableEditOfLocationField >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableEditOfLocationField>  
   
 ## <a name="syntax"></a>Sintaxe  
   

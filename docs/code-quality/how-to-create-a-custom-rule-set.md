@@ -9,15 +9,15 @@ helpviewer_keywords:
 - rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 087651271de696345ed2bed97e24acf280af1cd6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929896"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025951"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -84,7 +84,7 @@ Você também pode criar um novo arquivo de conjunto de regras do **novo arquivo
 
 - Se a mesma regra é listadas duas ou mais vezes em uma regra definida com o *mesmo* gravidade, você poderá ver o seguinte aviso na **lista de erros**:
 
-   **CA0063: Falha ao carregar o arquivo de conjunto de regras '\[seu] RuleSet ' ou uma de suas regras dependentes definida arquivos. O arquivo não estiver de acordo com o esquema do conjunto de regra.**
+   **CA0063 : Falha ao carregar o arquivo de conjunto de regras '\[seu] RuleSet ' ou uma de suas regras dependentes definida arquivos. O arquivo não estiver de acordo com o esquema do conjunto de regra.**
 
 - Se o conjunto de regras inclui uma regra de filho definida usando um **Include** a mesma regra de lista de marca e os conjuntos de regras pai e filho ambos os mas com gravidades diferentes, em seguida, a gravidade no conjunto de regras pai terá precedência. Por exemplo:
 

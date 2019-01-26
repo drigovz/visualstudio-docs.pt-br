@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 005b321921003e11f9204616727e0b06b85e5c3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8d5059ddca1d428f1a1f66cb45e32cdc6f37de3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915638"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929530"
 ---
 # <a name="how-to-implement-undo-management"></a>Como: Implementar o gerenciamento de desfazer
 A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, que é implementado pelo ambiente. Para dar suporte ao gerenciamento de desfazer, implemente a unidades de desfazer separado (ou seja, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, que pode conter várias etapas individuais.  

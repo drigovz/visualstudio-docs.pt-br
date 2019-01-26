@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3dc6a30dedebd8a5bc25c53e86aff4d3315ff8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5964dbbd6851adc1ccf209575dc9867cd18bf1ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990864"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953140"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandos definidos pelo IDE para estender sistemas de projeto
 Quando você deseja estender sistemas de projeto, você pode usar os comandos e comando grupos fornecidos pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  

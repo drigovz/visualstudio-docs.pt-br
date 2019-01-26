@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1be76132e263a95412810c9fd1c4ba7162af9a77
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06026276b6f9b37f005ee296d56ee17df5c75ca8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962739"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Essa interface representa uma porta de depuração em um computador.  
@@ -52,7 +52,7 @@ IDebugPort2 : IUnknown
  A porta local fornece acesso a todos os processos e programas em execução no computador local. Outras portas podem representar uma conexão de cabo serial para um dispositivo baseado em Windows CE ou uma conexão de rede em um computador não-DCOM. O `IDebugPort2` interface é usada para localizar o nome e identificador de uma porta e enumerar todos os processos em execução na porta. Recursos para iniciar e encerrar processos na porta são implementados no `IDebugPortEx2` interface.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

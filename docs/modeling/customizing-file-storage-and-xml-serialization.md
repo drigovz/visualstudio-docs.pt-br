@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42e82d95f855cfa444c30c61a9f2a03cc79ec4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918572"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar o armazenamento de arquivos e a serialização XML
 
@@ -272,7 +272,7 @@ Esses elementos são encontrados no Gerenciador de DSL sob **dados Behavior\Clas
 |Propriedade|Descrição|
 |Tem o esquema de elemento personalizado|Se for True, indica que a classe de domínio tem um esquema de elemento personalizado|
 |É personalizado|Defina isso como **verdadeira** se você deseja escrever seu próprio código de serialização e desserialização para essa classe de domínio.<br /><br /> Compile a solução e investigue os erros para obter instruções detalhadas de descobrir.|
-|Classe de domínio|Classe de domínio ao qual se aplica a este nó de dados de classe. Somente leitura.|
+|Domain Class|Classe de domínio ao qual se aplica a este nó de dados de classe. Somente leitura.|
 |Nome de elementos|Nome do nó XML para elementos dessa classe. O valor padrão é uma versão em minúsculas do nome da classe de domínio.|
 |Nome do atributo de identificador de origem|Nome do atributo usado nos elementos de moniker para conter a referência. Se estiver vazio, o nome da propriedade de chave ou id é usado.<br /><br /> Neste exemplo, é "name":  `<personMoniker name="/Mike Nash"/>`|
 |Nome de elemento do identificador de origem|Nome do elemento xml usado para monikers que se referem a elementos dessa classe.<br /><br /> O valor padrão é uma versão em letra minúscula do nome da classe, o sufixo "Moniker". Por exemplo, `personMoniker`.|

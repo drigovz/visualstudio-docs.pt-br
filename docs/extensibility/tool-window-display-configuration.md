@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e9b8e2ac19ec54134e536d38fac7e4ffbf9034
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973402"
 ---
 # <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramenta
 Quando um VSPackage registra uma janela de ferramentas, a posição padrão, tamanho, estilo de encaixe e outras informações de visibilidade é especificado em valores opcionais. Para obter mais informações sobre o registro de janela da ferramenta, consulte [ferramenta Windows no registro](../extensibility/tool-windows-in-the-registry.md)  
@@ -39,9 +39,9 @@ HKEY_LOCAL_MACHINE\
 | Nome | Tipo | Dados | Descrição |
 |-----------------|-----------| - | - |
 | Nome | REG_SZ | "O nome curto aqui" | Um nome curto que descreve a janela da ferramenta. Usado apenas para referência no registro. |
-| Float | REG_SZ | "X1, Y1, X2, Y2" | Quatro valores separados por vírgula. X1, Y1 é a coordenada do canto superior esquerdo da janela de ferramentas. X2, Y2 é a coordenada do canto inferior direito. Todos os valores estão em coordenadas da tela. |
+| Float | REG_SZ | "X1,Y1,X2,Y2" | Quatro valores separados por vírgula. X1, Y1 é a coordenada do canto superior esquerdo da janela de ferramentas. X2, Y2 é a coordenada do canto inferior direito. Todos os valores estão em coordenadas da tela. |
 | Estilo | REG_SZ | "MDI"<br /><br /> "Float"<br /><br /> "Vinculado"<br /><br /> "Com guias"<br /><br /> "AlwaysFloat" | Uma palavra-chave especificando inicial exibem o estado da janela de ferramenta.<br /><br /> "MDI" = encaixado com janela MDI.<br /><br /> "Flutuar" = flutuante.<br /><br /> "Vinculado" = vinculado a outra janela (especificada na entrada de janela).<br /><br /> "Com guias" = combinada com outra janela de ferramenta.<br /><br /> "AlwaysFloat" = não pode ser encaixada.<br /><br /> Para obter mais informações, consulte a seção comentários abaixo. |
-| Janela | REG_SZ | *\<GUID &GT;* | O GUID de uma janela para o qual a janela de ferramentas pode ser vinculada ou com guias. O GUID pode pertencer a uma das suas próprias janelas ou uma das janelas no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
+| Janela | REG_SZ | *\<GUID>* | O GUID de uma janela para o qual a janela de ferramentas pode ser vinculada ou com guias. O GUID pode pertencer a uma das suas próprias janelas ou uma das janelas no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
 | {1&gt;Orientação&lt;1} | REG_SZ | "Esquerda"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Inferior" | Consulte a seção de comentários abaixo. |
 | DontForceCreate | REG_DWORD | 0 ou 1 | Quando essa entrada estiver presente e seu valor não for zero, a janela é carregada, mas não imediatamente exibida. |
 
@@ -88,7 +88,7 @@ HKEY_LOCAL_MACHINE\
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
 |(Padrão)|REG_SZ|Nenhum|Deixe em branco.|  
-|*\<GUID &GT;*|REG_DWORD ou REG_SZ|0 ou uma cadeia de caracteres descritiva.|Opcional. Nome da entrada deve ser o GUID de um comando que exigem a visibilidade. O valor contém apenas uma cadeia de caracteres informativa. Normalmente, o valor é um `reg_dword` definido como 0.|  
+|*\<GUID>*|REG_DWORD ou REG_SZ|0 ou uma cadeia de caracteres descritiva.|Opcional. Nome da entrada deve ser o GUID de um comando que exigem a visibilidade. O valor contém apenas uma cadeia de caracteres informativa. Normalmente, o valor é um `reg_dword` definido como 0.|  
 
 ### <a name="example"></a>Exemplo  
 

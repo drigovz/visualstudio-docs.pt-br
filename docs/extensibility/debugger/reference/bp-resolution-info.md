@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3d3e96d827e3f6e4979431508b19609f9215651
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67d0eb0b9aaae910e9414deeaf7a7c37fdb9d0d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824109"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967502"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 Descreve as informações de ponto de interrupção associada para um ponto de interrupção de código ou um ponto de interrupção de dados.  
@@ -59,7 +59,7 @@ public struct BP_RESOLUTION_INFO { 
  Essa estrutura é retornada por [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
