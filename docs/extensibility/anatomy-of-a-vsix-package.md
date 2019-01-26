@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 724c78ab566e56dd8d6281819a58fa4baf00563c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921478"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971228"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia de um pacote VSIX
 Um pacote VSIX é um *VSIX* arquivo que contém um ou mais extensões do Visual Studio, junto com os metadados do Visual Studio usa para classificar e instalar as extensões. Se os metadados está contido no manifesto do VSIX e o *[Content_Types]. XML* arquivo. Um pacote VSIX também pode conter um ou mais *Extension.vsixlangpack* arquivos para fornecer localizado texto da instalação e pode conter outros pacotes VSIX para instalar dependências.  
@@ -54,7 +54,7 @@ Um pacote VSIX é um *VSIX* arquivo que contém um ou mais extensões do Visual 
   
  Por padrão, a instalação se aplica somente ao usuário atual, pois *% LocalAppData %* é um diretório específico do usuário. No entanto, se você definir a [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elemento do manifesto para `True`, a extensão será instalada em <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> e estará disponível para todos os usuários do computador.  
   
-## <a name="contenttypesxml"></a>[Content_Types]. XML  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  O *[Content_Types]. XML* arquivo identifica os tipos de arquivo expandido *VSIX* arquivo. Visual Studio usa esse arquivo durante a instalação do pacote, mas não instala o arquivo propriamente dito. Para obter mais informações sobre esse arquivo, consulte [a estrutura do arquivo [Content_types]. XML](the-structure-of-the-content-types-dot-xml-file.md).  
   
  Um *[Content_Types]. XML* arquivo é exigido pelo padrão Open Packaging Conventions (OPC). Para obter mais informações sobre OPC, consulte [OPC: Um novo padrão para empacotar dados](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) no site do MSDN.
