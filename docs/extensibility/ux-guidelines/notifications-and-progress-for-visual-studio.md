@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecc47391c3ab80b0c8752de840c6accfb66f0212
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936691"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificações e progresso para o Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Sistemas de notificação  
@@ -152,7 +152,7 @@ ms.locfileid: "53942665"
 |Tipo de andamento|Quando e como usar o|Observações|  
 |-------------------|-------------------------|-----------|  
 |Barra de progresso (determinada)|Duração da esperada > 5 segundos.<br /><br /> Pode incluir a descrição textual dos detalhes do processo.|**Não** inserir texto em animação.|  
-|Barra de informações|Sistema de mensagens associado contextual da interface do usuário. Ver [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Pode incluir a descrição textual dos detalhes do processo.|**Não** usar vários infobars quando você precisa indicar vários processos. Use as barras de progresso gráfico empilhado.|  
+|Infobar|Sistema de mensagens associado contextual da interface do usuário. Ver [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Pode incluir a descrição textual dos detalhes do processo.|**Não** usar vários infobars quando você precisa indicar vários processos. Use as barras de progresso gráfico empilhado.|  
 |Janela Saída|Notificação transitória: processo de nível de aplicativo que o usuário deseja **examine** detalhes de após a conclusão.|**Não** usar se o usuário precisará se referem aos dados mais tarde.|  
 |Arquivo de log|Emparelhado com notificação intransient em casos quando é importante **salvar** detalhes após a conclusão.||  
 |Barra de status|Notificação transitória: que o usuário de processo no nível do aplicativo serão **não precisa** detalhes de após a conclusão.<br /><br /> Inclui uma barra de progresso incorporado.<br /><br /> Pode incluir a descrição textual dos detalhes do processo.||  
@@ -164,7 +164,7 @@ ms.locfileid: "53942665"
 |Barra de progresso (indeterminada)|Duração da esperada > 5 segundos.<br /><br /> Pode incluir a descrição textual dos detalhes do processo.|**Não** inserir texto em animação.|  
 |ANTS (animados pontos horizontais)|Ida e volta ao servidor.<br /><br /> Colocado próximo ponto de contexto na parte superior do contêiner pai.|**Não** usar se todo o contêiner não tem como pai.|  
 |Controle giratório (anel de progresso)|Processo associado ao contextual da interface do usuário, ou onde o espaço é uma consideração.<br /><br /> Pode incluir a descrição textual dos detalhes do processo.||  
-|Barra de informações|Sistema de mensagens associado contextual da interface do usuário. Ver [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**Não** usar vários infobars quando você precisa indicar vários processos. Use as barras de progresso gráfico empilhado.|  
+|Infobar|Sistema de mensagens associado contextual da interface do usuário. Ver [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**Não** usar vários infobars quando você precisa indicar vários processos. Use as barras de progresso gráfico empilhado.|  
 |Janela Saída|Notificação transitória: processo de nível de aplicativo que o usuário desejará **examine** detalhes de após a conclusão.|**Não** usar para obter informações que precise ser mantido entre as sessões.|  
 |Arquivo de log|Emparelhado com notificação intransient em casos quando é importante **salvar** detalhes após a conclusão.||  
 |Barra de status|Notificação transitória: que o usuário de processo no nível do aplicativo serão **não precisa** detalhes de após a conclusão.<br /><br /> Inclui a barra de progresso incorporado.<br /><br /> Pode incluir a descrição textual dos detalhes do processo.||  
@@ -225,7 +225,7 @@ ms.locfileid: "53942665"
   
  **Barra de status com descrição textual**  
   
-##### <a name="infobar"></a>Barra de informações  
+##### <a name="infobar"></a>Infobar  
  Semelhante à barra de status, da barra de informações fornece notificação contextual e mensagens, que também pode ser emparelhado com indicadores de progresso indeterminado, como a barra de progresso ou um controle giratório. Da barra de informações não deve fornecer a indicação de progresso determinada ou de andamento de nível granular. Ver [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).  
   
  ![Barra de informações com a barra de progresso e o sistema de mensagens](../../extensibility/ux-guidelines/media/0903-05_infobar.png "0903 05_InfoBar")  

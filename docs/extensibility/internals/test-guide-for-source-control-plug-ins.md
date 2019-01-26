@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7a1313a5d74f973e439d6177234eb11a202b344
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827894"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949671"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guia de teste para plug-ins de controle do código-fonte
 Esta seção fornece diretrizes para testar o plug-in com o controle de origem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. É fornecida uma visão geral abrangente das áreas mais comuns de testes, bem como algumas das áreas mais complexas que podem ser um problemas. Esta visão geral não deve ser uma lista completa de casos de teste.  
@@ -65,7 +65,7 @@ Esta seção fornece diretrizes para testar o plug-in com o controle de origem [
   
 -   [Área de teste 2: Obter do controle de origem](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Área de teste 3: Fazer Check-Out / desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Área de teste 3: Check Out/Undo Checkout](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
     -   Caso 3: Fazer Check-Out / desfazer check-out  
   
@@ -95,7 +95,7 @@ Esta seção fornece diretrizes para testar o plug-in com o controle de origem [
   
     -   Caso 5c: Reassociar  
   
--   [Área de teste 6: Excluir](../../extensibility/internals/test-area-6-delete.md)  
+-   [Área de teste 6: Delete](../../extensibility/internals/test-area-6-delete.md)  
   
 -   [Área de teste 7: Compartilhar](../../extensibility/internals/test-area-7-share.md)  
   
