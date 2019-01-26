@@ -7,13 +7,13 @@ helpviewer_keywords:
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-manager: douge
-ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0923b179c3a2237c6923a7f889c802239d824fb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935703"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Você pode criar comandos de menu, derivando de <xref:System.ComponentModel.Design.MenuCommand> ou de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> do objeto e a implementação de manipuladores de eventos apropriados. Na maioria dos casos, você pode usar <xref:System.ComponentModel.Design.MenuCommand>, como o modelo de projeto de VSPackage faz, mas, ocasionalmente, talvez você precise usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
