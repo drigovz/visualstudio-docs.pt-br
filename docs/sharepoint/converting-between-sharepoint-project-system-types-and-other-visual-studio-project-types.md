@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint project service
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 145f080812356a4387401ef47adbd48fe783e60b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aec5557b2837317bfd634035875628ef0e68220c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920612"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863351"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Converter entre tipos de sistema de projeto do SharePoint e outros tipos de projeto do Visual Studio
   Em alguns casos, você pode ter um objeto no sistema de projeto do SharePoint e você deseja usar recursos de um objeto correspondente no modelo de objeto de automação do Visual Studio ou modelo de objeto de integração, ou vice-versa. Nesses casos, você pode usar o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método do serviço de projeto do SharePoint para converter o objeto para um modelo de objeto diferente.
@@ -44,7 +44,7 @@ ms.locfileid: "53920612"
 
 -   Uma extensão do sistema de projeto do SharePoint que tem uma referência para o *EnvDTE.dll* assembly. Para obter mais informações, consulte [estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
--   Código que registra o `projectService_ProjectAdded` método para lidar com o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> eventos de um <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto. Por exemplo, consulte [como: Criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+-   Código que registra o `projectService_ProjectAdded` método para lidar com o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> eventos de um <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto. Para obter um exemplo, consulte [ Criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
 ## <a name="see-also"></a>Consulte também
 

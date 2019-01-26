@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], adding entity instances
 - BDC [SharePoint development in Visual Studio], adding entities
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe40d6f8b5032dbbffeeda3edaff3b1c89aadb3f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867150"
 ---
 # <a name="how-to-add-a-creator-method"></a>Como: Adicionar um método Creator
   Um método Creator adiciona novos dados à fonte de dados de uma entidade. O serviço de conectividade de dados comerciais (BDC) chama esse método quando os usuários escolhem o **Novo Item** botão a **faixa de opções** de uma lista que é baseada no modelo. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  

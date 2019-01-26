@@ -10,17 +10,17 @@ helpviewer_keywords:
 - worksheets, displaying text
 - text boxes, displaying text in worksheets
 - text [Office development in Visual Studio], text boxes
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d7cf32019d3bfa1e6690512f4f348728a409bbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff8bdde07844da26b03bca45f41887d6b4eb64ef
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941603"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863819"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Passo a passo: Exibir texto em uma caixa de texto em uma planilha usando um botão
   Este passo a passo mostra as Noções básicas de como usar os botões e caixas de texto em planilhas do Microsoft Office Excel e como criar projetos do Excel usando ferramentas de desenvolvimento do Office no Visual Studio. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b7cc0f9cc789f7cccb49dc2c5b827f7cf604813
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac39cd45c566d837d34cf8e7be0cf94ded8de419
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846198"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862532"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Como: Adicionar um iniciador da caixa de diálogo a um grupo de faixa de opções
   Você pode adicionar um iniciador da caixa de diálogo a qualquer grupo de uma faixa de opções. Um iniciador da caixa de diálogo é um pequeno ícone que aparece em um grupo. Os usuários clicam nesse ícone para abrir caixas de diálogo relacionadas ou painéis de tarefas que fornecem mais opções relacionadas ao grupo.  

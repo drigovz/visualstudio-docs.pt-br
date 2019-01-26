@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de9e6a7f148612716cee55b5a21a26f1bcf04d9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821121"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875941"
 ---
 # <a name="actions-pane-overview"></a>Visão geral do painel de ações
   Um painel de ações é um personalizável **ações do documento** painel de tarefas que está anexado a um documento específico do Microsoft Office Word ou uma pasta de trabalho do Microsoft Office Excel. O painel de ações está hospedado dentro do painel de tarefas do Office, juntamente com outros painéis de tarefas interna, como o **origem XML** painel de tarefas no Excel ou o **estilos e formatação** painel de tarefas no Word. Você pode usar controles dos Windows Forms ou controles do WPF para projetar a interface de usuário do painel Ações.

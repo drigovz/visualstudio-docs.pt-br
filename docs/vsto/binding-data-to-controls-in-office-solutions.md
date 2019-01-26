@@ -16,15 +16,15 @@ helpviewer_keywords:
 - controls, data binding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce13d0154e2cbd04a593500e14a3c1dd43a870dd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898622"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863806"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associar dados a controles em soluções do Office
   Você pode associar controles dos Windows Forms e *hospedar controles* em um documento do Microsoft Office Word ou planilha do Microsoft Office Excel para uma fonte de dados para que os controles exibem automaticamente os dados. Você pode associar dados a controles em projetos de nível de aplicativo e o nível de documento.  

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 - features [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55b1b3f2f243a6c4d35a4c1effbb4ca759abd9d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58db8ea5affd295ec21ed9e398053c57345dee79
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842876"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862116"
 ---
 # <a name="create-sharepoint-features"></a>Criar recursos do SharePoint
   Você pode usar um recurso do SharePoint para agrupar itens de projeto do SharePoint relacionados para facilitar a implantação. Você pode criar recursos, definir escopos e marcar outros recursos como dependências usando o Designer de recursos do SharePoint. O designer também gera um manifesto, que é um arquivo XML que descreve cada recurso.  
@@ -42,7 +42,7 @@ ms.locfileid: "53842876"
 |--------------|-----------------|  
 |Título|Opcional. O título padrão do recurso é definido como *SolutionName* *FeatureName*.|  
 |Descrição|Opcional. A descrição do recurso do SharePoint.|  
-|Escopo|Necessário. Se um recurso é criado usando **Gerenciador de soluções**, o escopo é definido na Web por padrão.<br /><br /> -Farm: Ative um recurso para um farm de servidores inteiro.<br /><br /> -Site: Ative um recurso para todos os sites em um conjunto de sites.<br /><br /> -Web: Ative um recurso para um site específico.<br /><br /> -Aplicativo Web: Ative um recurso para todos os sites da web em um aplicativo web.|  
+|Escopo|Necessário. Se um recurso é criado usando **Gerenciador de soluções**, o escopo é definido na Web por padrão.<br /><br /> -Farm: Ative um recurso para um farm de servidores inteiro.<br /><br /> -Site: Ative um recurso para todos os sites em um conjunto de sites.<br /><br /> - Web: Ative um recurso para um site específico.<br /><br /> -Aplicativo Web: Ative um recurso para todos os sites da web em um aplicativo web.|  
 |Itens da solução|Todos os itens do SharePoint que pode ser adicionado ao recurso.|  
 |Itens no recurso|Os itens de projeto do SharePoint que foram adicionados ao recurso.|  
   

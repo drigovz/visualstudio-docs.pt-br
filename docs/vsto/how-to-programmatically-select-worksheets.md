@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, selecting
 - Excel projects, selecting worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ecb6872d56d4dc7f54f3ef73e0f8dafed06d2e6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924469"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863104"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Como: Selecionar planilhas programaticamente
   O <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> método seleciona o objeto especificado, que move a seleção do usuário para o novo objeto. Use o <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> método se você deseja colocar o foco para o objeto sem alterar a seleção do usuário.  

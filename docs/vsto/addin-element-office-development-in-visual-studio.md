@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90ad45aa77ce5e383f258c0fcaa10030b46dd1c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867717"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864313"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;suplemento&gt; elemento (desenvolvimento do Office no Visual Studio)
   O **addin** elemento da `vstav3` namespace contém informações específicas para suplementos do VSTO do Microsoft Office e personalizações no nível de documento desenvolvidas com o Visual Studio.
@@ -57,7 +57,7 @@ ms.locfileid: "53867717"
 
  O `addin` elemento tem os seguintes elementos filho.
 
-### <a name="entrypoints"></a>pontos de entrada
+### <a name="entrypoints"></a>entryPoints
  Necessário. O **entryPoints** descrito no elemento [ &#60;pontos de entrada&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="update"></a>atualizar

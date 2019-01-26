@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <postAction> element
 - <postAction> element
 - postAction element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1886a1c0be486cfae8e85d0accd0fb42dc5d5353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958794"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867099"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `postAction` elemento do `vstav3` namespace contém o `entrypoint` elementos e todos os `postActionData` elementos que estão associados com ações de pós-implantação, que são executados após a instalação de soluções do Office.

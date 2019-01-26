@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designing a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97172f0b3a03d015c087a58077696ceff2b4369d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d44654e223c24d3040997bdbd7b7bb0e193263a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858377"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865158"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Criar um modelo de conectividade de dados corporativos
   Você pode desenvolver um modelo para o serviço de conectividade de dados comerciais (BDC) com a adição de entidades e os métodos em um arquivo de modelo. Uma entidade descreve uma coleção de campos de dados. Por exemplo, uma entidade pode representar uma tabela em um banco de dados. Um método executa uma tarefa como adicionar, excluir ou atualizar dados representados pelas entidades. Para obter mais informações, consulte [Integre dados corporativos no SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  

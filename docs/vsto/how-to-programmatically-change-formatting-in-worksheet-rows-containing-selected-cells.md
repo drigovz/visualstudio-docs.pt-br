@@ -11,15 +11,15 @@ helpviewer_keywords:
 - worksheets, changing formatting
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd959c595cd9caa7921c84b87194ee20ddd1291
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a2f93cf8b7c117f42800c8d863520826468ff004
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088303"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865223"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Como: Alterar programaticamente a formatação em linhas de planilhas que contêm células selecionadas
   Você pode alterar a fonte de uma linha inteira que contém uma célula selecionada para que o texto está em negrito.  

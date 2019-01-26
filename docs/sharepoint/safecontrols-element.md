@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SafeControls element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e08b414858db389e507dc9395d218807c9530db6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f2819f0e913b9078f22482fb39164e8ba8d40da
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875962"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866487"
 ---
 # <a name="safecontrols-element"></a>Elemento SafeControls
   Uma coleção de controles ASPX e Web Parts que são designados como seguro para qualquer usuário acessar em qualquer página ASPX no site do SharePoint.  
@@ -46,7 +46,7 @@ ms.locfileid: "53875962"
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Item de projeto](../sharepoint/projectitem-element.md)|Representa um item de projeto do SharePoint. Esse elemento o elemento raiz necessário do *. spdata* arquivo.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Representa um item de projeto do SharePoint. Esse elemento o elemento raiz necessário do *. spdata* arquivo.|  
   
 ## <a name="remarks"></a>Comentários  
  Para obter mais informações sobre controles seguros, consulte [fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
@@ -55,7 +55,7 @@ ms.locfileid: "53875962"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nome do esquema**|Esquema de Item de projeto do SharePoint|  
 |**Arquivo de validação**|ProjectItemModelSchema.xsd|  
 |**Pode estar vazio**|Não|  

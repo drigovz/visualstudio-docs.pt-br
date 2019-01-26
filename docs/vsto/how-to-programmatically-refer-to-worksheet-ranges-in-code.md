@@ -10,17 +10,17 @@ helpviewer_keywords:
 - worksheets, referring to ranges
 - referring to worksheet ranges
 - Excel [Office development in Visual Studio], referring to worksheet ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1a9904140d08d3ddca63c70bc77f1db4dffb1d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b1a1f0f6c37bca2d545e3b689bc72c553ffc6c6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851242"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867131"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Como: Por meio de programação se referir a intervalos de planilhas em código
   Usar um processo semelhante para referir-se ao conteúdo de um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto de intervalo do Excel nativo.  

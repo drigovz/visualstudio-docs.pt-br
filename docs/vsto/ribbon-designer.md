@@ -21,17 +21,17 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928861"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867254"
 ---
 # <a name="ribbon-designer"></a>Designer da faixa de opções
   O Designer de faixa de opções é uma tela de design visual. Use o Designer de faixa de opções para adicionar guias personalizadas, grupos e controles à faixa de opções de um aplicativo do Microsoft Office.
@@ -142,16 +142,16 @@ ms.locfileid: "53928861"
 |-------------|-----------------|
 |**Box**|Um contêiner que organiza controles em um grupo. Você pode adicionar qualquer controle a uma caixa exceto um separador, um grupo ou uma guia. Uma caixa pode ser horizontal ou vertical.|
 |**Button**|Um botão que inicia uma ação. Você pode adicionar um botão para um grupo, um grupo de botões, uma lista suspensa, uma galeria, um menu ou um botão de divisão.|
-|**Grupo de botões**|Um grupo que contém um ou mais botões, botões de alternância, menus, botões de divisão e galerias. Você pode adicionar um grupo de botões a um grupo ou um menu.|
+|**ButtonGroup**|Um grupo que contém um ou mais botões, botões de alternância, menus, botões de divisão e galerias. Você pode adicionar um grupo de botões a um grupo ou um menu.|
 |**CheckBox**|Uma caixa que é marcada ou desmarcada para ativar ou desativar uma opção.|
 |**ComboBox**|Uma caixa de edição com uma caixa de listagem anexada. Usuários podem digitar ou selecionar sua escolha. A caixa exibe a seleção atual. Use o <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> propriedade para adicionar e remover itens em tempo de execução antes ou depois que a faixa de opções é carregada no aplicativo do Office.|
-|**Lista suspensa**|Uma lista de itens que o usuário pode selecionar. O usuário não é possível digitar um novo item em uma lista suspensa.<br /><br /> Use o <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propriedade para adicionar itens à lista. Você pode adicionar e remover itens em tempo de execução.<br /><br /> Use o <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propriedade para adicionar botões à lista. No entanto, você não pode adicionar e remover botões em tempo de execução depois que a faixa de opções é carregada no aplicativo do Office.|
-|**Caixa de edição**|Uma caixa em que o usuário pode digitar texto.|
+|**DropDown**|Uma lista de itens que o usuário pode selecionar. O usuário não é possível digitar um novo item em uma lista suspensa.<br /><br /> Use o <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propriedade para adicionar itens à lista. Você pode adicionar e remover itens em tempo de execução.<br /><br /> Use o <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propriedade para adicionar botões à lista. No entanto, você não pode adicionar e remover botões em tempo de execução depois que a faixa de opções é carregada no aplicativo do Office.|
+|**EditBox**|Uma caixa em que o usuário pode digitar texto.|
 |**Gallery**|Um menu que apresenta uma matriz ou grade de opções visuais da qual os usuários podem selecionar. Você pode controlar o layout das seleções no menu. Use o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> e o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> propriedades para especificar o número de linhas e colunas que exibição os itens e botões de galeria.|
 |**Rótulo**|Texto que você pode usar para identificar os controles na faixa de opções.|
 |**Menu**|Uma lista suspensa que pode conter qualquer um dos seguintes controles:<br /><br /> -Botão<br />-Caixa de seleção<br />-Galeria<br />-Menu<br />-Botão de divisão<br />-Botão de alternância<br />-Separador<br /><br /> Para adicionar um controle a um menu no Designer de faixa de opções, clique na seta para baixo no menu para expor a superfície de design de menu. Em seguida, você pode arrastar controles da faixa de opções do **caixa de ferramentas** para o menu. Para organizar controles, arraste-os para as posições desejadas.<br /><br /> Para adicionar controles para o <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> após a faixa de opções é carregada no aplicativo do Office, você deve configurar o <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propriedade a ser **true** antes que a faixa de opções é carregada. Para obter informações sobre como fazer isso, consulte [visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md).|
 |**Separador**|Uma barra fina usada para separar itens em uma lista. Quando adicionado a um grupo, a barra é vertical. Quando adicionado a um menu, a barra é horizontal.|
-|**Botão de divisão**|Um botão com um menu anexado. Um botão de divisão pode conter qualquer um dos seguintes controles:<br /><br /> -Botão<br />-Caixa de seleção<br />-Galeria<br />-Menu<br />-Botão de divisão<br />-Botão de alternância<br />-Separador<br /><br /> Como o menu, o botão de divisão tem sua própria superfície de design. No entanto, ao contrário de um menu, só é possível atualizar os itens em um botão de divisão antes que a faixa de opções é carregada no aplicativo do Office. Para obter informações sobre como atualizar os itens em um botão de divisão, consulte [visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md).|
+|**SplitButton**|Um botão com um menu anexado. Um botão de divisão pode conter qualquer um dos seguintes controles:<br /><br /> -Botão<br />-Caixa de seleção<br />-Galeria<br />-Menu<br />-Botão de divisão<br />-Botão de alternância<br />-Separador<br /><br /> Como o menu, o botão de divisão tem sua própria superfície de design. No entanto, ao contrário de um menu, só é possível atualizar os itens em um botão de divisão antes que a faixa de opções é carregada no aplicativo do Office. Para obter informações sobre como atualizar os itens em um botão de divisão, consulte [visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Um botão que aparece pressionado ou não pressionado.|
 
 ##  <a name="HandleEventsSetProperties"></a> Tratar eventos e propriedades de configuração
@@ -179,8 +179,8 @@ ms.locfileid: "53928861"
 
 |Ação|Atalho de teclado|
 |------------|-----------------------|
-|Mova um controle antes do controle anterior na lista.|**CTRL**+**backup**<br /><br /> **CTRL**+**esquerda**|
-|Mova um controle depois do próximo controle na lista.|**CTRL**+**para baixo**<br /><br /> **CTRL**+**direita**|
+|Mova um controle antes do controle anterior na lista.|**Ctrl**+**Up**<br /><br /> **Ctrl**+**Left**|
+|Mova um controle depois do próximo controle na lista.|**Ctrl**+**Down**<br /><br /> **Ctrl**+**Right**|
 |Mova a seleção de um controle para outro no mesmo grupo. Para um painel suspenso, mova entre o controle pai e os controles no painel de lista suspensa.|**Para cima**<br /><br /> **Para baixo**|
 |Itere para frente por todos os controles.|**Tab**|
 |Itere para o reverso por todos os controles.|**Shift**+**Tab**|
@@ -188,7 +188,7 @@ ms.locfileid: "53928861"
 |Copie os controles selecionados.|**Ctrl**+**C**|
 |Recorte os controles selecionados.|**Ctrl**+**X**|
 |Cole controles da área de transferência.|**Ctrl**+**V**|
-|Selecione o **caixa de ferramentas**.|**CTRL**+**Alt**+**X**|
+|Selecione o **caixa de ferramentas**.|**Ctrl**+**Alt**+**X**|
 |Selecione o componente pai.|**Esc**|
 
  Os atalhos de teclado que se aplicam somente ao Menu do Microsoft Office <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, e <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> são mostrados na tabela a seguir.

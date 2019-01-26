@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], Outlook
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d1acb1c62e4a79226eb3ab5da0b95ccc2156e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e7b99272e4ef7ca59566c3de0ab9f89804d4cbd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932360"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863624"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Personalizar uma faixa de opções do Outlook
   Quando você personaliza a faixa de opções no Microsoft Office Outlook, você deve considerar onde sua faixa de opções personalizada será exibida no aplicativo. O Outlook exibe a faixa de opções na interface do usuário principal do aplicativo (UI) e no windows que são abertos quando os usuários executam determinadas tarefas, como a criação de mensagens de email. Essas janelas de aplicativo são nomeadas inspetores.  

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], content controls
 - DropDownListContentControl, binding items to a custom XML part
 - DatePickerContentControl, binding to a custom XML part
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 123282862f8ab6e7400f14a1aa07942885257e17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899646"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864729"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Passo a passo: Associar controles de conteúdo a partes XML personalizadas
   Este passo a passo demonstra como associar controles de conteúdo em uma personalização no nível de documento para Word a dados XML armazenados no documento.  
@@ -277,7 +277,7 @@ ms.locfileid: "53899646"
     |-|-|  
     |**Nome do funcionário**|**Karina Leal**|  
     |**Data de contratação**|**1 de abril de 1999**|  
-    |**Título**|**Gerenciador de**|  
+    |**Título**|**Gerente**|  
   
 3.  Escolha a célula à direita do **nome do funcionário** de célula e digite um nome diferente.  
   

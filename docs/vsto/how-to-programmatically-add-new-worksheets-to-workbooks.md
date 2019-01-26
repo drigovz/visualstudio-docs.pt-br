@@ -12,15 +12,15 @@ helpviewer_keywords:
 - worksheets, adding to workbooks
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c5cfd48cf65ea8eed18606377cde2092ddaf302
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d357fd6028fd080f2c1e37895c8d4256bea56a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867664"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865236"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Como: Adicionar novas planilhas a pastas de trabalho programaticamente
   Você pode criar programaticamente uma planilha e, em seguida, adicionar a planilha para a coleção de planilhas na pasta de trabalho.  

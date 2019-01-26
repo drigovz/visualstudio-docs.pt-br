@@ -9,17 +9,17 @@ helpviewer_keywords:
 - bookmarks, updating text
 - text [Office development in Visual Studio], updating in bookmarks
 - Bookmark control, updating contents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdbecf7ea507fdf630ebd3cc4bf50092826292dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e85b4df6b7ad9a01a6a0f1c7369c03fd3779c6c6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864330"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863260"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Como: Atualizar o texto do indicador de forma programática
   Você pode inserir texto em um indicador de espaço reservado em um documento do Microsoft Office Word para que você possa recuperar o texto em um momento posterior, ou para substituir o texto em um indicador. Se você estiver desenvolvendo uma personalização no nível de documento, você também pode atualizar o texto em um <xref:Microsoft.Office.Tools.Word.Bookmark> controle que está associado a dados. Para obter mais informações, consulte [ligar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).  

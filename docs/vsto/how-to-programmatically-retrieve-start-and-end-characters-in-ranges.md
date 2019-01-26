@@ -10,17 +10,17 @@ helpviewer_keywords:
 - end characters
 - start characters
 - documents [Office development in Visual Studio], retrieving ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9891e54986cd829c92ab3f5a5ad3a81590cf1474
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88876641d0c6e72385d6f9e514ff8135de9518fa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871194"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863195"
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Como: Recuperar caracteres iniciais e finais em intervalos de forma programática
   Este exemplo demonstra como você pode recuperar as posições de caractere das posições de início e término de um intervalo.  

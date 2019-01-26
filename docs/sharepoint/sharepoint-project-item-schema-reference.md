@@ -18,17 +18,17 @@ helpviewer_keywords:
 - ProjectItemFile element
 - ExtensionDataItem element
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2023eb4828ab5ac59a45dd72040177a654176d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c261115b21d1067b7494d09ad8031b3f4dc5a8c5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895799"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864911"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Referência de esquema de item de projeto do SharePoint
   Visual Studio usa o esquema de item de projeto do SharePoint para validar o conteúdo de *. spdata* arquivos. Uma *. spdata* arquivo Especifica o conteúdo e o comportamento de um item de projeto do SharePoint. Para obter mais informações sobre o conteúdo de itens de projeto do SharePoint, consulte [criar um item modelos e modelos de projeto do SharePoint para itens de projeto](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
@@ -44,7 +44,7 @@ ms.locfileid: "53895799"
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Representa uma coleção de valores de propriedade que são incluídos com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar os valores de propriedade em seu código.|  
 |[FeatureProperty](../sharepoint/featureproperty-element.md)|Representa uma propriedade personalizada que está incluída com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar a propriedade em seu código.|  
 |[Arquivos](../sharepoint/files-element.md)|Especifica os arquivos para implantar com o item de projeto do SharePoint, como um arquivo de elemento de recurso ou a saída de um projeto.|  
-|[Item de projeto](../sharepoint/projectitem-element.md)|Representa um item de projeto do SharePoint.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Representa um item de projeto do SharePoint.|  
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Representa um arquivo do SharePoint, como o arquivo de elemento de recurso, para incluir com o item de projeto quando ele é implantado no SharePoint.|  
 |[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Representa uma pasta mapeada.|  
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Representa a saída de um projeto para incluir com o item de projeto quando ele é implantado no SharePoint.|  

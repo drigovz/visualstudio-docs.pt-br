@@ -4,17 +4,17 @@ ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d55c260618eb7edcf68e91b521f2ace203ddbf01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd28e7a9f0fc04a704d6d3600fb80390d9509de1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898876"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863039"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Como: Lidar com conflitos de implantação
   Você pode fornecer seu próprio código para lidar com conflitos de implantação para um item de projeto do SharePoint. Por exemplo, você pode determinar se todos os arquivos no item de projeto atual já existem no local de implantação e, em seguida, excluir os arquivos implantados antes que o item de projeto atual seja implantado. Para obter mais informações sobre conflitos de implantação, consulte [estendendo SharePoint empacotamento e implantação](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
