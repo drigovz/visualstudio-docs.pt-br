@@ -8,16 +8,16 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2d0f6681c90d3aba37080e5ac49d406af662e4f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55bb192724bb76ddb563875b4cda49515c2546ec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842155"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992861"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imagens
 No Visual Studio, você pode salvar diagramas de modelagem no formatos de somente leitura para que você pode compartilhá-los com os participantes, usuários ou membros da equipe de projeto que não usam a mesma versão do Visual Studio.

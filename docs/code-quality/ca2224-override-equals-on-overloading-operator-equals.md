@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af2b1af90620fa595d85f7c26d7e5e2c96041dfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eac7f403cd0e115a01252537ade45e6a1bc0aaad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826082"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957878"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Substituir equals ao sobrecarregar operador equals
 
@@ -114,7 +114,7 @@ O exemplo a seguir corrige a violação, substituindo <xref:System.ValueType.Equ
 
 [CA1046: Não sobrecarregar operador equals em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
-[CA2225: AS Sobrecargas de operador possuem alternativas nomeadas](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+[CA2225: Sobrecargas de operador possuem alternativas nomeadas](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
 [CA2226: Os operadores devem ter sobrecargas simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 

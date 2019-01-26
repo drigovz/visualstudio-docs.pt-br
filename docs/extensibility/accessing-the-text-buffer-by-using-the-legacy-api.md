@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba58811c800501b5397465192ffbdec4c80160a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dfd4535eb0d792e323143bdebd4b5e17a048e1d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972661"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>Acessar o buffer de texto, usando a API herdada
 O texto é responsável por gerenciar os fluxos de texto e persistência de arquivo. Embora o buffer pode ler ou gravar outros formatos, toda a comunicação comum com o buffer é executada usando o Unicode. Nas APIs herdadas, o buffer de texto pode usar aquele - ou um sistema de coordenadas bidimensional para identificar os locais de caractere no buffer.  

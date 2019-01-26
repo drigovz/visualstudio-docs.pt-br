@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52ced7e134efd0de9d2f61b039e5c851ba1387a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832629"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931590"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões comuns de controle para o Visual Studio
 ##  <a name="BKMK_CommonControls"></a> Controles comuns  
@@ -383,7 +383,7 @@ Um controle trid é um controle complexo que contém uma exibição de árvore e
   
 -   **Seta para a direita:** Expanda um nó. Depois que o nó é expandido, ele deve continuar navegando até a coluna mais próxima à direita. Deve interromper a navegação no final da linha.  
   
--   **Guia:** Navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.  
+-   **Tab:** Navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.  
   
 -   **Shift + Tab:** Navega para a célula mais próxima à esquerda.  No início da linha, a navegação continua para a célula mais à direita na linha anterior.  
   

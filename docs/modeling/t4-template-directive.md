@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885282"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974247"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 
@@ -36,7 +36,7 @@ Exemplo:
 `compilerOptions="optimize+"`
 
 Valores válidos:
- 
+
 Algumas opções válidas do compilador.
 
 Ignorada para modelos de tempo de execução (pré-processados).
@@ -46,11 +46,11 @@ Estas opções são aplicadas quando o modelo é convertido em [!INCLUDE[csprcs]
 ## <a name="culture-attribute"></a>Atributo culture
 
 Exemplo:
- 
+
 `culture="de-CH"`
 
 Valores válidos:
- 
+
 "", a cultura invariável, que é o padrão.
 
 Uma cultura expressa como uma cadeia de caracteres no formato xx-XX. Por exemplo, en-US, ja-JP, de-CH, de-DE. Para obter mais informações, consulte <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 Valores válidos:
- 
+
 `true`
- 
+
 `false` (padrão)
- 
+
 Se o atributo `debug` for `true`, o arquivo de código intermediário conterá informações que permitem que o depurador identifique mais especificamente a posição em seu modelo onde ocorreu uma quebra ou uma exceção.
 
 Para modelos de tempo de design, o arquivo de código intermediário será gravado para seus **% TEMP %** directory.
@@ -88,9 +88,9 @@ hostspecific="true"
 Valores válidos:
 
 `true`
- 
+
 `false` (padrão)
- 
+
 `trueFromBase`
 
 Se você definir o valor desse atributo como `true`, uma propriedade chamada `Host` será adicionado à classe gerada pelo modelo de texto. A propriedade é uma referência ao host do mecanismo de transformação e é declarada como <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Se você definiu um host personalizado, pode convertê-lo no tipo de host personalizado.

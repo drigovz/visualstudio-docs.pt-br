@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f7cfc820f6f4d3596c932760442371bab294a05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946927"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999763"
 ---
 # <a name="invokemethod-activity-designer"></a>Designer de atividade de InvokeMethod
 
@@ -56,7 +56,7 @@ O algoritmo para registrar os parâmetros em <xref:System.Activities.Activity.Ca
 
 3.  Iterar através da coleção de <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> e registrar cada argumento.
 
-A exceção resultante é do tipo <xref:System.Activities.InvalidWorkflowException> com a seguinte mensagem: "InvokeMethod": Uma variável, RuntimeArgument ou um DelegateArgument já existe com o nome "TargetObject". Nomes devem ser exclusivos dentro do escopo de ambiente.
+A exceção resultante é do tipo <xref:System.Activities.InvalidWorkflowException> com a seguinte mensagem: 'InvokeMethod': Uma variável, RuntimeArgument ou um DelegateArgument já existe com o nome "TargetObject". Nomes devem ser exclusivos dentro do escopo de ambiente.
 
 Essa restrição não se aplica aos <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> e <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>. Eles não são argumentos de fluxo de trabalho e, portanto, não estão registrados na <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> coleção do <xref:System.Activities.Statements.InvokeMethod> atividade no <xref:System.Activities.Activity.CacheMetadata%2A> método.
 
