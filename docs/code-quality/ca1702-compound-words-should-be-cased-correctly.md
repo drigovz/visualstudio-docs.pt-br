@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 05481245-7ad8-48c3-a456-3aa44b6160a6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67050291a43be12bab3ac7aee71497e2f58b045b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67d697ac5c441efaf78fa7382b9efdead647eec8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829570"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996500"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Palavras compostas devem ter maiúsculas e minúsculas corretas
 
@@ -66,7 +66,7 @@ Por exemplo:
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1701: AS Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 - [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 

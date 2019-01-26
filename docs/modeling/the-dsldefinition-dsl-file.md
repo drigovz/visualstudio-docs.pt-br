@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aff681c72b17882db8f7e97daae45bb5da69347
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869249"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995863"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>O arquivo DslDefinition.dsl
 
@@ -209,7 +209,7 @@ Cada propriedade de domínio pode ter também estes atributos:
 
 -   **IsUIReadOnly**. Este atributo determina se o usuário pode alterar a propriedade na **propriedades** janela ou por meio de um decorador no qual a propriedade é apresentada.
 
--   **Tipo**. Você pode configurar este atributo como Normal, Calculado ou CustomStorage. Se você configurar este atributo como Calculado, deverá fornecer um código personalizado que determina o valor e a propriedade será somente leitura. Se você configurar esse atributo como CustomStorage, deverá fornecer o código que obtém e configura valores.
+-   **Kind**. Você pode configurar este atributo como Normal, Calculado ou CustomStorage. Se você configurar este atributo como Calculado, deverá fornecer um código personalizado que determina o valor e a propriedade será somente leitura. Se você configurar esse atributo como CustomStorage, deverá fornecer o código que obtém e configura valores.
 
 -   **IsElementName**. Se esse atributo estiver configurado como true, seu valor será configurado automaticamente como um valor exclusivo quando uma instância da classe pai for criada. Este atributo pode ser configurado como true para somente uma propriedade em cada classe, que deve ter um tipo de cadeia de caracteres. No exemplo de Diagrama de Componente, a propriedade `Name` em `NamedElement` possui o `IsElementName` configurado como true. Sempre que um usuário cria um elemento `Component` (que herda do `NamedElement`), o nome é automaticamente inicializado para algo como "Component6."
 

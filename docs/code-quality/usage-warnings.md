@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b5f2e57b6fa27f314394552d72844cd9b8e189
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 751b2e7f37ff57b980ca5d6c304dfa8ad7404128
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869080"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070507"
 ---
 # <a name="usage-warnings"></a>Avisos de uso
 Avisos de uso suportam o uso correto do .NET Framework.
@@ -53,7 +53,7 @@ Avisos de uso suportam o uso correto do .NET Framework.
 |[CA2222: Não diminuir a visibilidade de membro herdada](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|Você não deve alterar o modificador de acesso para membros herdados. A alteração de um membro herdado para particular não impede que os chamadores acessem a implementação da classe base do método.|
 |[CA2223: Os membros devem ser diferentes por tipo de retorno](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|Embora o Common Language Runtime permita o uso de tipos de retorno na diferenciação de membros outrora idênticos, este recurso não está na CLS nem é um recurso comum das linguagens de programação do .NET.|
 |[CA2224: Substituir equals ao sobrecarregar operador equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Um tipo público implementa o operador de igualdade, mas não substitui Object. Equals.|
-|[CA2225: AS Sobrecargas de operador possuem alternativas nomeadas](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Uma sobrecarga de operador foi detectada, e o método alternativo nomeado esperado não foi encontrado. O membro alternativo nomeado fornece acesso para a mesma funcionalidade que o operador e é fornecido para os desenvolvedores que programem em linguagens que não dão suporte a operadores sobrecarregados.|
+|[CA2225: Sobrecargas de operador possuem alternativas nomeadas](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Uma sobrecarga de operador foi detectada, e o método alternativo nomeado esperado não foi encontrado. O membro alternativo nomeado fornece acesso para a mesma funcionalidade que o operador e é fornecido para os desenvolvedores que programem em linguagens que não dão suporte a operadores sobrecarregados.|
 |[CA2226: Os operadores devem ter sobrecargas simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Um tipo implementa a igualdade ou desigualdade e não implementa o operador oposto.|
 |[CA2227: Propriedades de coleção devem ser somente leitura](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Uma propriedade collection gravável permite que um usuário substitua a coleção por uma coleção diferente. Uma propriedade somente leitura evita que a coleção seja substituída, mas ainda permite que membros individuais sejam definidos.|
 |[CA2228: Não remeter formatos de recurso não lançados](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Arquivos de recursos que foram compilados usando versões de pré-lançamento do .NET Framework não podem ser usados por versões com suporte do .NET Framework.|

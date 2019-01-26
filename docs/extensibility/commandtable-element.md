@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893c55f00d2067eb481efdf9482ab4e8f47aaaf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fefaa84cb00bdf0ccabe825067cb86f6c231a840
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017416"
 ---
 # <a name="commandtable-element"></a>Elemento CommandTable
 CommandTable é o elemento raiz do *VSCT* arquivo. Esse é o arquivo que define o layout real e o tipo dos comandos a um VSPackage fornece ao IDE. Comandos podem incluir itens de menu, menus, barras de ferramentas e caixas de combinação. Para obter mais informações, consulte [arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
@@ -46,8 +46,8 @@ CommandTable é o elemento raiz do *VSCT* arquivo. Esse é o arquivo que define 
   
 | Atributo | Descrição |
 |-----------| - |
-| xmlns | Necessário. Namespaces XML:<br /><br /> xmlns = "<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns: xs = "<http://www.w3.org/2001/XMLSchema>" |
-| linguagem | Opcional. O atributo de idioma pode ser usado para especificar o idioma padrão de todos os \<cadeias de caracteres > elementos na tabela de comandos.  Se o idioma não for especificado, será usado o idioma do processo atual:<br /><br /> Language = "en-us" |
+| xmlns | Necessário. Namespaces XML:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>" |
+| linguagem | Opcional. O atributo de idioma pode ser usado para especificar o idioma padrão de todos os \<cadeias de caracteres > elementos na tabela de comandos.  Se o idioma não for especificado, será usado o idioma do processo atual:<br /><br /> language="en-us" |
   
 ### <a name="child-elements"></a>Elementos filho  
   

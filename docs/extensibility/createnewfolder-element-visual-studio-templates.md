@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5d4294e5d8b466f6f6eaba47196f4e92d573b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 770d5653cb1249a0eab2d3a7bdca6ff1e87c8801
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010357"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Elemento CreateNewFolder (modelos do Visual Studio)
 Determina se deve ser verificado se o diretório de destino onde o projeto será criado existe ou não. Se o diretório não existir, um novo diretório poderá ser criado para o projeto. Essa configuração é normalmente substituída pelo sinalizador de registro `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que todos os tipos de projetos comuns usam para determinar se um novo projeto deve ser criado ou não em um novo diretório.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CreateNewFolder >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CreateNewFolder>  
   
 ## <a name="syntax"></a>Sintaxe  
   

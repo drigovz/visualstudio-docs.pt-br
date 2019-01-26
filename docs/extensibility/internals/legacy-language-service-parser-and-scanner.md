@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c4cc6728600fc4bf605c0600014897025cc27ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941843"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988032"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 O analisador é o coração do serviço de linguagem. As classes de linguagem da estrutura de pacote gerenciado (MPF) exigem um analisador de linguagem para selecionar as informações sobre o código que está sendo exibido. Um analisador separa o texto em tokens léxicos e, em seguida, identifica esses tokens por tipo e funcionalidade.  
@@ -41,7 +41,7 @@ namespace MyNamespace
   
 |Nome do token|Tipo de token|  
 |----------------|----------------|  
-|namespace, void público, de classe, int|keyword|  
+|namespace, class, public, void, int|keyword|  
 |=|operator|  
 |{ } ( ) ;|delimitador|  
 |MyNamespace, MyClass, MyFunction, arg1, var1|identifier|  

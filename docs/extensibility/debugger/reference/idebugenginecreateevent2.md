@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: accf18a72969d160d9b4469d9f0e6f4d843a5c70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7164137d2598f564f5bb2c107f9e1ffdff173d20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963156"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069649"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 O mecanismo de depuração (DES) envia essa interface para o Gerenciador de sessão de depuração (SDM) quando uma instância do DE é criada.  
@@ -42,7 +42,7 @@ IDebugEngineCreateEvent2 : IUnknown
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Recupera o objeto que representa o mecanismo de depuração recém-criado (DES).|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
