@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3113280b7a32d9323f1b5a1638123dca8163528f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899698"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018807"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo e o serviço de imagem
 Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagem introduzido no Visual Studio 2015.  
@@ -104,7 +104,7 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
   
 |||  
 |-|-|  
-|**Subelemento**|**Definição**|  
+|**Subelement**|**Definição**|  
 |Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto do atual|  
 |Guid|O símbolo representa um GUID e deve corresponder ao GUID de formatação|  
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo|  
@@ -126,7 +126,7 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
 |CommonProgramFiles|O valor da variável de ambiente % CommonProgramFiles %|  
 |LocalAppData|O valor da variável de ambiente % LocalAppData %|  
 |ManifestFolder|A pasta que contém o arquivo de manifesto|  
-|Meus documentos|O caminho completo da pasta Meus documentos do usuário atual|  
+|MyDocuments|O caminho completo da pasta Meus documentos do usuário atual|  
 |ProgramFiles|O valor da variável de ambiente % ProgramFiles %|  
 |Sistema|O *Windows\System32* pasta|  
 |WinDir|O valor da variável de ambiente % WinDir %|  
@@ -165,7 +165,7 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
 |-|-|  
 |**Atributo**|**Definição**|  
 |URI|[Obrigatório] Um URI que define onde a imagem pode ser carregada de. Ele pode ser um dos seguintes:<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) usando o aplicativo: autoridade<br />-Referência de recurso um componente absoluto<br />-Um caminho para um arquivo que contém um recurso nativo|  
-|Informações preliminares|[Opcional] Indica qual tipo de plano de fundo que a fonte se destina a ser usado.<br /><br /> Ele pode ser um dos seguintes:<br /><br /> *Luz:* A fonte pode ser usada no plano de fundo claro.<br /><br /> *Escuro:* A fonte pode ser usada em um plano de fundo escuro.<br /><br /> *Alto contraste será:* A fonte pode ser usada em qualquer tela de fundo no modo de alto contraste.<br /><br /> *HighContrastLight:* A fonte pode ser usada no plano de fundo claro no modo de alto contraste.<br /><br /> *HighContrastDark:* A fonte pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a fonte pode ser usada em qualquer tela de fundo.<br /><br /> Se o plano de fundo é *Light*, *escuro*, *HighContrastLight*, ou *HighContrastDark*, cores da fonte nunca sejam invertidas. Se o plano de fundo é omitido ou definido como *HighContrast*, a inversão de cores da fonte é controlada da imagem **AllowColorInversion** atributo.|  
+|Informações preliminares|[Opcional] Indica qual tipo de plano de fundo que a fonte se destina a ser usado.<br /><br /> Ele pode ser um dos seguintes:<br /><br /> *Luz:* A fonte pode ser usada no plano de fundo claro.<br /><br /> *Dark:* A fonte pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A fonte pode ser usada em qualquer tela de fundo no modo de alto contraste.<br /><br /> *HighContrastLight:* A fonte pode ser usada no plano de fundo claro no modo de alto contraste.<br /><br /> *HighContrastDark:* A fonte pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a fonte pode ser usada em qualquer tela de fundo.<br /><br /> Se o plano de fundo é *Light*, *escuro*, *HighContrastLight*, ou *HighContrastDark*, cores da fonte nunca sejam invertidas. Se o plano de fundo é omitido ou definido como *HighContrast*, a inversão de cores da fonte é controlada da imagem **AllowColorInversion** atributo.|  
 
 |||  
   
@@ -174,8 +174,8 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
 ||||  
 |-|-|-|  
 |**Elemento**|**Atributos (todos necessária)**|**Definição**|  
-|\<Tamanho >|Valor|A origem será usada para imagens de determinado tamanho (em unidades de dispositivo). A imagem será quadrada.|  
-|\<SizeRange >|MinSize, MaxSize|A origem será usada para imagens de MinSize para tamanho máximo (em unidades de dispositivo), inclusive. A imagem será quadrada.|  
+|\<Size>|Valor|A origem será usada para imagens de determinado tamanho (em unidades de dispositivo). A imagem será quadrada.|  
+|\<SizeRange>|MinSize, MaxSize|A origem será usada para imagens de MinSize para tamanho máximo (em unidades de dispositivo), inclusive. A imagem será quadrada.|  
 |\<Dimensões >|Largura, altura|A origem será usada para imagens de determinada largura e altura (em unidades de dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|A origem será usada para imagens de largura/altura mínimo para a largura/altura máxima (em unidades de dispositivo), inclusive.|  
   
@@ -240,7 +240,7 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
   
     -   Necessário se você usar o **BrushToColorConverter** para o **ImageThemingUtilities.ImageBackgroundColor** na sua UI do WPF.  
   
--   *Microsoft.VisualStudio.Shell. \<VSVersion >.0*  
+-   *Microsoft.VisualStudio.Shell.\<VSVersion>.0*  
   
     -   Necessário se você usar o **IVsUIObject** tipo.  
   
@@ -948,7 +948,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|  
         |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
         |GlyphGroupError||StatusError|  
-        |GlyphBscFile||Arquivos de classes|  
+        |GlyphBscFile||ClassFile|  
         |GlyphAssembly||Referência|  
         |GlyphLibrary||Biblioteca|  
         |GlyphVBProject||VBProjectNode|  

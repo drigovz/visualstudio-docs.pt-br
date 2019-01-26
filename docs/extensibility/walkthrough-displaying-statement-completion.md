@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c91f9aec4bd3db9a9495b2a05ce5153bf45f2f52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986629"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009759"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Passo a passo: Preenchimento de declaração de exibição
 Você pode implementar o preenchimento de declaração baseadas em linguagem definindo os identificadores para o qual você deseja fornecer conclusão e, em seguida, disparar uma sessão de conclusão. Você pode definir o preenchimento de declaração no contexto de um serviço de linguagem, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e, em seguida, exibir conclusão para apenas esse tipo. Ou, você pode disparar o preenchimento para um tipo de conteúdo existente — por exemplo, "texto sem formatação". Este passo a passo mostra como disparar a conclusão de instrução para o tipo de conteúdo "texto sem formatação", que é o tipo de conteúdo de arquivos de texto. O tipo de conteúdo "texto" é o ancestral de todos os outros tipos de conteúdo, inclusive código e arquivos XML.  

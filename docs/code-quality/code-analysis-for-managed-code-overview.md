@@ -10,15 +10,15 @@ helpviewer_keywords:
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d609413f0c0c955ef334e6b4e25719d59ab06e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04ae73deb4bc4dfba550df2c663d8f77a4b1efcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987097"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030074"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visão geral da análise de código estático para código gerenciado no Visual Studio
 
@@ -29,7 +29,7 @@ Análise de código para código gerenciado analisa os assemblies gerenciados e 
 A ferramenta de análise representa as verificações que executa durante uma análise como mensagens de aviso. Mensagens de aviso identificam quaisquer problemas de programação e design relevantes e, quando é possíveis, forneça informações sobre como corrigir o problema.
 
 > [!NOTE]
-> Não há suporte para a análise de código estático para projetos do .NET Core e .NET Standard no Visual Studio. Se você executar a análise de código em um projeto .NET Core ou .NET Standard como parte do msbuild, você verá um erro semelhante ao **erro: CA0055: Não foi possível identificar a plataforma para \<your.dll >**. Para analisar o código em projetos do .NET Core ou .NET Standard, use [analisadores de Roslyn](../code-quality/roslyn-analyzers-overview.md) em vez disso.
+> Não há suporte para a análise de código estático para projetos do .NET Core e .NET Standard no Visual Studio. Se você executar a análise de código em um projeto .NET Core ou .NET Standard como parte do msbuild, você verá um erro semelhante ao **erro: CA0055 : Não foi possível identificar a plataforma para \<your.dll >**. Para analisar o código em projetos do .NET Core ou .NET Standard, use [analisadores de Roslyn](../code-quality/roslyn-analyzers-overview.md) em vez disso.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integração de IDE (ambiente de desenvolvimento integrado)
 

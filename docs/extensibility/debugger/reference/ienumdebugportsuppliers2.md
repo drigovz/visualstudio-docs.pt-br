@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f12c92a71af59b7af5025d6cebeb689424bef7e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e7ce7262679a1a92b54b4bd7d7deba8704237cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959593"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001833"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Essa interface enumera os fornecedores de porta.  
@@ -49,7 +49,7 @@ IEnumDebugPortSuppliers2 : IUnknown
  Um mecanismo de depuração geralmente não precisa obtenha essa interface.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

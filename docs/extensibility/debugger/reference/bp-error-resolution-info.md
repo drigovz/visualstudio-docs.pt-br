@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8b866681df793e54293268e42e6e172126102aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29a50ef9afa3afccc2d1ef466ac3be9fc93cee0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906678"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025261"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 Descreve a resolução de um ponto de interrupção de erro, incluindo local, o programa e o thread.  
@@ -69,7 +69,7 @@ public struct BP_ERROR_RESOLUTION_INFO { 
  Essa estrutura é retornada a partir de [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

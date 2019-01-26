@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897e12608e0ca91e6ae8b6b58d703616b42be10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849720"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017794"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Introdução ao controle do código-fonte VSPackages
 Um VSPackage de controle do código-fonte é uma alternativa mais avançada para o plug-in de controle do código-fonte. Para obter mais informações sobre a plug-ins de controle de origem, consulte [criar um controle de fonte plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md). Controle completo sobre o modelo de controle do código-fonte, recursos e interface do usuário (UI) permite a um VSPackage de controle de origem, e ele se integra a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) ambiente como um VSPackage.  

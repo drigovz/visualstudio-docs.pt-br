@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22a57c07be39a4867f746c7f5f5dfe844daab69b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0785f1c31a1c4a6eed530a0fc9457d1343b6ce61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878608"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996851"
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto da seleção
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) usa um objeto de contexto de seleção global para determinar o que deve ser exibido no IDE. Cada janela no IDE pode ter seu próprio objeto de contexto de seleção enviados por push para o contexto da seleção global. O IDE atualiza o contexto da seleção global com valores de uma janela quando essa janela tem o foco. Para obter mais informações, consulte [comentários ao usuário](../../extensibility/internals/feedback-to-the-user.md).  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a1f54efc4b61decd88c9cc322597bcc0be513ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935002"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027744"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Passo a passo: Exibir sugestões de lâmpada
 As lâmpadas são ícones que expandem para exibir um conjunto de ações, por exemplo, correções para problemas identificados pelo analisadores de código internos ou refatoração de código no editor do Visual Studio.  
