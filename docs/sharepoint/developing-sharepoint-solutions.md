@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4384396781172c73056de27fd3c674535571d591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871051"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869012"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desenvolver soluções do SharePoint
   Vários modelos de tipo de projeto do SharePoint estão disponíveis no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para a criação de sites do SharePoint e os elementos do site. Para obter uma lista dos tipos de projeto disponíveis, consulte [SharePoint modelos de item de projeto e projeto](../sharepoint/sharepoint-project-and-project-item-templates.md). Veja a seguir uma descrição dos elementos e propriedades de um projeto do SharePoint.  
@@ -101,7 +101,7 @@ ms.locfileid: "53871051"
 |Local de implantação|O caminho totalmente qualificado do arquivo no servidor do SharePoint. Esse caminho é composto de raiz de implantação e caminho de implantação de subpropriedades.|  
 |Caminho de implantação|O caminho relativo do arquivo no arquivo do SharePoint Server, como Workflow1\\. O caminho totalmente qualificado para o arquivo é criado concatenando as *caminho de implantação* valor ao final da *raiz de implantação* valor.<br /><br /> Selecionando um valor de *RootFile* para o *tipo de implantação* alterações de propriedade a *raiz de implantação* propriedade \<SharePointRoot >\\, resultando em um caminho totalmente qualificado \<SharePointRoot > \Workflow1\\. Para obter mais informações, consulte [empacotamento e implantação de soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Raiz de implantação|Cadeia. A pasta raiz onde o arquivo é implantado no servidor do SharePoint. Por exemplo, \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> O valor da *raiz de implantação* propriedade é determinada pelo *tipo de implantação* configuração.|  
-|Tipo de implantação|Tipo de implantação do arquivo, que determina sua *raiz de implantação* valor. pode ser um dos seguintes valores:<br /><br /> NoDeployment:  *\<nenhum valor >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Para obter mais informações, consulte <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Tipo de implantação|Tipo de implantação do arquivo, que determina sua *raiz de implantação* valor. pode ser um dos seguintes valores:<br /><br /> NoDeployment:  *\<nenhum valor >*<br /><br /> ElementManifest: *\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile: *\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile: *\<SharePointRoot>\Template\\*<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot>\Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Para obter mais informações, consulte <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Nome do Arquivo|O nome do arquivo ou pasta para o arquivo do item.|  
 |Caminho completo|O local do arquivo para o item. (Somente leitura.)|  
   

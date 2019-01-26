@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929569"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869431"
 ---
 # <a name="ribbon-xml"></a>XML da faixa de opções
   O item da faixa de opções (XML) permite que você personalize uma faixa de opções usando XML. Use o item de faixa de opções (XML), se você quiser personalizar a faixa de opções de forma que não é compatível com o item da faixa de opções (Visual Designer). Para obter uma comparação do que você pode fazer com cada item, consulte [visão geral da faixa de opções](../vsto/Ribbon-overview.md).  
@@ -116,8 +116,8 @@ ms.locfileid: "53929569"
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |**customUI**|Representa a faixa de opções personalizada no projeto de suplemento do VSTO.|  
-|**Faixa de opções**|Representa a faixa de opções.|  
-|**Guias**|Representa um conjunto de guias da faixa de opções.|  
+|**ribbon**|Representa a faixa de opções.|  
+|**tabs**|Representa um conjunto de guias da faixa de opções.|  
 |**tab**|Representa uma única guia de faixa de opções.|  
 |**group**|Representa um grupo de controles na guia da faixa de opções.|  
   

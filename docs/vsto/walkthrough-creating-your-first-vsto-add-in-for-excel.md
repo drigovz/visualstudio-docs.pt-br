@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Excel [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 64d3512c8b3f2383b755e75bf62958dab9f82ae2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831882"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873308"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Passo a passo: Criar seu primeiro suplemento VSTO para Excel
   Este passo a passo introdutório mostra como criar um suplemento em nível de aplicativo do Microsoft Office Excel. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual pastas de trabalho estão abertas.  

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 - packages [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059bf8068ad3a14d01f0a8167900563eebdff215
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966654"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867982"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Criar pacotes de solução do SharePoint
   Usando o Designer de pacote, você pode criar e personalizar pacotes de implantação. Por exemplo, você pode adicionar itens de projeto do SharePoint e recursos, redefinir o servidor IIS, definir escopos de ativação do recurso e identificar as dependências de recurso. O designer também gera um manifesto de um arquivo XML que descreve cada pacote.  
@@ -36,7 +36,7 @@ ms.locfileid: "53966654"
 |Propriedade do Designer de pacote|Descrição da configuração padrão|  
 |-------------------------------|------------------------------------|  
 |Nome|Necessário. O nome padrão do pacote é definido como *ProjectName*.|  
-|Redefinir o servidor Web|Opcional. Selecione se deseja reiniciar o servidor Web após o *. wsp* arquivo é instalado no servidor do SharePoint.|  
+|Reset WebServer|Opcional. Selecione se deseja reiniciar o servidor Web após o *. wsp* arquivo é instalado no servidor do SharePoint.|  
 |Tipo de servidor de implantação|Necessário. Por padrão, o escopo é definido como ApplicationServer.<br /><br /> ApplicationServer: Descreve um servidor que hospeda os serviços.<br /><br /> WebFrontEnd: Descreve um servidor que hospeda sites da Web.|  
 |Itens da solução|Todos os itens de projeto do SharePoint e recursos que podem ser adicionados ao pacote.|  
 |Itens do pacote|Opcional. Todos os itens do SharePoint e recursos que você deseja implantar em seu pacote.|  

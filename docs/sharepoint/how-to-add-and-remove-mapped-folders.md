@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, mapped folders
 - mapped folders [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 357eb8c16487f625d4c2a7c675e3709f2190ca03
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823911"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871852"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Como: adicionar e remover pastas mapeadas
   Algumas pastas usadas com frequência no SharePoint, como imagens e Layouts, profundamente inserido na hierarquia de arquivos. Você pode mapear essas pastas em um projeto do SharePoint para acessá-los mais facilmente. Pastas mapeadas são pastas no projeto do SharePoint que correspondem ao local físico dos arquivos na instalação do servidor do SharePoint.  

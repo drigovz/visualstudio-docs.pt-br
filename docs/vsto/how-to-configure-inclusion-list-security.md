@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895565"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868674"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Como: Configurar a segurança da lista de inclusões
   Se você tiver permissões de administrador, você pode configurar o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] prompt confiável para controlar se os usuários finais recebem a opção de instalação de soluções do Office, salvando uma decisão de confiança para a lista de inclusão. Para obter informações sobre listas de inclusão, consulte [soluções do Office de confiança usando listas de inclusão](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -38,15 +38,15 @@ ms.locfileid: "53895565"
   
 ### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Para habilitar a lista de inclusão, usando o editor do registro  
   
-1.  Abra o editor do registro:  
+1.  Abra o Editor do Registro:  
   
-    1.  Clique em **inicie**e, em seguida, clique em **executar**.  
+    1.  Clique em **Iniciar** e depois em **Executar**.  
   
     2.  No **aberto** , digite **regedt32.exe**e, em seguida, clique em **Okey**.  
   
 2.  Localize a seguinte chave do registro:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Se a chave não existir, crie-o.  
   
@@ -97,15 +97,15 @@ ms.locfileid: "53895565"
   
 ### <a name="to-restrict-the-inclusion-list"></a>Para restringir a lista de inclusão  
   
-1.  Abra o editor do registro:  
+1.  Abra o Editor do Registro:  
   
-    1.  Clique em **inicie**e, em seguida, clique em **executar**.  
+    1.  Clique em **Iniciar** e depois em **Executar**.  
   
     2.  No **aberto** , digite **regedt32.exe**e, em seguida, clique em **Okey**.  
   
 2.  Localize a seguinte chave do registro:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Se a chave não existir, crie-o.  
   
@@ -156,15 +156,15 @@ ms.locfileid: "53895565"
   
 ### <a name="to-disable-the-inclusion-list"></a>Para desabilitar a lista de inclusão  
   
-1.  Abra o editor do registro:  
+1.  Abra o Editor do Registro:  
   
-    1.  Clique em **inicie**e, em seguida, clique em **executar**.  
+    1.  Clique em **Iniciar** e depois em **Executar**.  
   
     2.  No **aberto** , digite **regedt32.exe**e, em seguida, clique em **Okey**.  
   
 2.  Se isso ainda não existir, crie a seguinte chave do registro:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados.  
   

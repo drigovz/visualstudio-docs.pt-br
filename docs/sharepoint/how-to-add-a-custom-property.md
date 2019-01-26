@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom properties
 - BDC [SharePoint development in Visual Studio], custom properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9821b2ba9602c86916487bf3444eb74e2c0850c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913279"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873828"
 ---
 # <a name="how-to-add-a-custom-property"></a>Como: Adicionar uma propriedade personalizada
   Você pode adicionar propriedades personalizadas para o modelo usando o **Editor de propriedade**. Você pode acessar essas propriedades no código para recuperar informações como cadeias de conexão e outros dados em tempo de execução.  

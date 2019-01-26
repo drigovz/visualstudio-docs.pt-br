@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989157"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871943"
 ---
 # <a name="replaceable-parameters"></a>Parâmetros substituíveis
   Parâmetros substituíveis, ou *tokens*, pode ser usado em arquivos de projeto para fornecer valores para os itens de solução do SharePoint cujos valores reais não são conhecidos em tempo de design. Elas são semelhantes em função para o padrão [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de modelo. Para obter mais informações, consulte [parâmetros de modelo](../ide/template-parameters.md).  
@@ -65,8 +65,8 @@ ms.locfileid: "53989157"
 |$SharePoint.Feature.DeploymentPath$|O nome da pasta que contém o recurso no pacote. Esse token é igual à propriedade "Caminho de implantação" no Designer de recurso. Um valor de exemplo é "Project1_Feature1".|  
 |$SharePoint.Feature.Id$|A ID do SharePoint do recurso de recipiente. Esse token, como com todos os tokens de nível de recurso, pode ser usado somente pelos arquivos incluídos em um pacote por meio de um recurso, não adicionados diretamente a um pacote fora de um recurso.|  
 |$SharePoint.ProjectItem.Name$|O nome do item de projeto (não o nome de arquivo), conforme obtido de **ISharePointProjectItem.Name**.|  
-|$SharePoint.Type. \<GUID >. $ AssemblyQualifiedName|O nome qualificado do assembly da correspondência de tipo a [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] do token. O formato do [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] fica em letras minúsculas e corresponde ao formato Guid.ToString("D") (ou seja, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
-|$SharePoint.Type. \<GUID >. $ FullName|O nome completo do tipo correspondente a GUID no token. O formato do GUID fica em letras minúsculo e corresponde ao formato Guid.ToString("D") (ou seja, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|O nome qualificado do assembly da correspondência de tipo a [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] do token. O formato do [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] fica em letras minúsculas e corresponde ao formato Guid.ToString("D") (ou seja, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.FullName$|O nome completo do tipo correspondente a GUID no token. O formato do GUID fica em letras minúsculo e corresponde ao formato Guid.ToString("D") (ou seja, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
   
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Adicionar extensões à lista de extensões de arquivo de substituição de token
  Embora os tokens, teoricamente, podem ser usados por qualquer arquivo que pertence a um projeto do SharePoint item incluído no pacote, por padrão, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procura tokens somente em arquivos de pacote, arquivos de manifesto e arquivos que têm as seguintes extensões:  

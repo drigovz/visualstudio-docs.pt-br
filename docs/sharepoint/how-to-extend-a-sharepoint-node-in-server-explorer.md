@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39d108d78782413cd120e2a00b97f85784004b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5eb475c5311ecbe578f169ae07e156e0aa85c068
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940421"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870825"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Como: Estender um nó SharePoint no Gerenciador de servidores
   Você pode estender os nós sob o **conexões do SharePoint** nó no **Gerenciador de servidores**. Isso é útil quando você deseja adicionar novos nós filhos, itens de menu de atalho ou propriedades para um nó existente. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  

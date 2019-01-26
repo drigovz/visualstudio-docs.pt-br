@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd88f7978e7c848d925f21bae6a0a3ad27792e67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9c15d7435fa6f5267e413e3afd0fd6e4c7ea17c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950628"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873698"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifestos de aplicativo para soluções do Office
   Um manifesto de aplicativo é um arquivo XML que descreve os assemblies que são carregados em uma solução do Microsoft Office. Usam as ferramentas de desenvolvimento do Microsoft Office no Visual Studio a [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] esquema de manifesto de aplicativo definida na [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md) referência.
@@ -28,7 +28,7 @@ ms.locfileid: "53950628"
 |Elemento|Descrição|Atributos|
 |-------------|-----------------|----------------|
 |[&#60;assembly&#62; elemento &#40;aplicativo ClickOnce&#41;](../deployment/assembly-element-clickonce-deployment.md)|Necessário. Elemento de nível superior.|**manifestVersion**|
-|[&#60;assemblyIdentity&#62; elemento &#40;aplicativo ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Necessário. Identifica o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] assembly principal do aplicativo.|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **ProcessorArchitecture**<br /><br /> **language**|
+|[&#60;assemblyIdentity&#62; elemento &#40;aplicativo ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Necessário. Identifica o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] assembly principal do aplicativo.|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **language**|
 |[&#60;trustInfo&#62; elemento &#40;aplicativo ClickOnce&#41;](../deployment/trustinfo-element-clickonce-application.md)|Identifica os requisitos de segurança do aplicativo.|Nenhum|
 |[&#60;entryPoint&#62; elemento &#40;aplicativo ClickOnce&#41;](../deployment/entrypoint-element-clickonce-application.md)|Necessário. Identifica o ponto de entrada de código do aplicativo para execução.|**name**<br /><br /> **dependencyName**<br /><br /> **customHostSpecified**|
 |[&#60;dependência&#62; elemento &#40;aplicativo ClickOnce&#41;](../deployment/dependency-element-clickonce-deployment.md)|Necessário. Identifica cada dependência necessária para a execução do aplicativo. Opcionalmente, identifica os assemblies que precisam ser pré-instalado.|Nenhum|
@@ -74,8 +74,8 @@ ms.locfileid: "53950628"
 |[&#60;suplemento do&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|Necessário. Armazena pontos de entrada em um único namespace.|Nenhum|
 |[&#60;entryPointsCollection&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypointscollection-element-office-development-in-visual-studio.md)|Necessário. Agrupa todos os assemblies para um ou mais soluções do Office.|**id**|
 |[&#60;pontos de entrada&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)|Necessário. Grupos de todos os assemblies para executar uma solução do Office.|Nenhum|
-|[&#60;entryPoint&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Necessário. Identifica o assembly para ser executado em uma solução do Office.|**class**<br /><br /> **contrato**|
-|[&#60;atualizar&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)|Necessário. Configura as atualizações para a solução.|**habilitado**<br /><br /> **expiração**|
+|[&#60;entryPoint&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Necessário. Identifica o assembly para ser executado em uma solução do Office.|**class**<br /><br /> **contract**|
+|[&#60;atualizar&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)|Necessário. Configura as atualizações para a solução.|**enabled**<br /><br /> **expiration**|
 |[&#60;postActions&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|Opcional. Agrupa todas as ações de pós-implantação que são executados após a instalação de soluções do Office.|Nenhum|
 |[&#60;postAction&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|Opcional. Identifica uma ação pós-implantação.|Nenhum|
 |[&#60;postActionData&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|Opcional. Configura os dados para uma ação pós-implantação.|Nenhum|
@@ -83,7 +83,7 @@ ms.locfileid: "53950628"
 |[&#60;personalizações de&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/customizations-element-office-development-in-visual-studio.md)|Necessário. Armazena todas as informações de host específico do aplicativo em um namespace separado.|Nenhum|
 |[&#60;personalização&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|Necessário. Armazena informações de host específico do aplicativo em um namespace separado.|**xmlns**|
 |[&#60;documento&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md)|Necessário apenas para soluções de nível de documento. Armazena informações específicas de personalização.|**solutionId**|
-|[&#60;appAddin&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Necessário apenas para soluções em nível de aplicativo. Armazena informações específicas de personalização.|**Aplicativo**<br /><br /> **LoadBehavior**<br /><br /> **keyName**|
+|[&#60;appAddin&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Necessário apenas para soluções em nível de aplicativo. Armazena informações específicas de personalização.|**application**<br /><br /> **loadBehavior**<br /><br /> **keyName**|
 |[&#60;nome amigável&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|Opcional. Armazena o nome do suplemento VSTO que aparece na lista de VSTO Add-ins instalados.|Nenhum|
 |[&#60;Descrição&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Necessário apenas para suplementos do VSTO. Armazena a descrição que aparece na lista de programas instalados.|Nenhum|
 |[&#60;formRegions&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|Necessário apenas para Outlook suplementos do VSTO que incluem regiões de formulário.|Nenhum|
@@ -91,7 +91,7 @@ ms.locfileid: "53950628"
 |[&#60;vstoRuntime&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Necessário. Descreve uma versão específica do Visual Studio Tools para Office runtime que é compatível com a solução do Office.|**release**<br /><br /> **version**<br /><br /> **supportUrl**|
 
 ## <a name="remarks"></a>Comentários
- Você pode editar manualmente o aplicativo e manifestos de implantação em soluções do Office. Depois disso, você deve reassinar o aplicativo e manifestos de implantação usando o Manifest Generation and Editing Tool (*mage.exe* e *mageui.exe*). Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ Você pode editar manualmente o aplicativo e manifestos de implantação em soluções do Office. Depois disso, você deve reassinar o aplicativo e manifestos de implantação usando o Manifest Generation and Editing Tool (*mage.exe* e *mageui.exe*). Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e de implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="file-location"></a>Local do arquivo
  Um manifesto de aplicativo é específico para uma única versão de uma solução. Por esse motivo, os manifestos de aplicativo devem ser armazenados separadamente dos manifestos de implantação. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] coloca os arquivos específicos de versão em um subdiretório chamado depois da versão associada na *arquivos de aplicativo* subdiretório na pasta publish.

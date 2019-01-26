@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964644"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868268"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dados armazenados em cache em personalizações no nível de documento
   É dos principais objetivos das personalizações em nível de documento separar dados de exibição em documentos do Office. Dados refere-se às informações que são armazenadas no documento, incluindo números e texto. Modo de exibição refere-se a interface do usuário e o modelo de objeto do Microsoft Office Word e Microsoft Office Excel.  
@@ -56,7 +56,7 @@ ms.locfileid: "53964644"
   
 ||Cache de dados|Partes XML personalizadas|  
 |-|----------------|----------------------|  
-|Quais aplicativos do Office podem usá-los?|Personalizações no nível de documento para os seguintes aplicativos:<br /><br /> -Excel<br />-Word|Soluções de nível de documento e o nível de aplicativo para os seguintes aplicativos:<br /><br /> -Excel<br />-PowerPoint<br />-Word|  
+|Quais aplicativos do Office podem usá-los?|Personalizações no nível de documento para os seguintes aplicativos:<br /><br /> -Excel<br />-   Word|Soluções de nível de documento e o nível de aplicativo para os seguintes aplicativos:<br /><br /> -Excel<br />-   PowerPoint<br />-   Word|  
 |Quais tipos de dados pode armazenar?|Qualquer objeto público no seu assembly de personalização que atenda a certos requisitos. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).|Todos os dados XML.|  
 |Você pode acessar os dados sem iniciar aplicativos do Microsoft Office?|Sim, usando o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe fornecida pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|Sim, usando classes no <xref:System.IO.Packaging> namespace, ou usando o SDK de formato XML aberto.|  
   

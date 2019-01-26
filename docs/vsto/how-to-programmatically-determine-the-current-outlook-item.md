@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], current item
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7ed0a235a24b65b89a1b82ec47236f3f013f81dc
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: e72928c6244ba15a96bdedd7aba6b59c1e50e708
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54153964"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875089"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Como: Determinar o item atual do Outlook de forma programática
   Este exemplo usa o `Explorer.SelectionChange` evento para exibir o nome da pasta atual e algumas informações sobre o item selecionado. O código, em seguida, exibe o item selecionado.  

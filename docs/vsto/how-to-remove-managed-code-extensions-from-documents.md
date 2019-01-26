@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], removing
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f1acdec565a2d03b98a2423f500d527934235bd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964767"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874855"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Como: Remover extensões de código gerenciado de documentos
   Você poderá remover programaticamente o assembly de personalização de um documento ou pasta de trabalho que faz parte de uma personalização no nível de documento para o Microsoft Office Word ou Microsoft Office Excel. Os usuários podem, em seguida, abra os documentos e exibir o conteúdo, mas não aparecerá nenhuma interface do usuário personalizada (UI) adicionar aos documentos e seu código não será executado.  

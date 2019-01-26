@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e72b1f8a7ca76aa2b3afd68041c500b24efd8db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957956"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870617"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluções do SharePoint
   Os seguintes problemas ou alertas que podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [depuração de soluções de fluxo de trabalho do SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -44,7 +44,7 @@ ms.locfileid: "53957956"
 ## <a name="character-restrictions-in-names-of-projects-and-project-items"></a>Restrições de caracteres em nomes de projetos e itens de projeto
  Nomes de projetos e itens de projeto podem conter apenas caracteres válidos em um caminho de implantação no SharePoint 2010. Não há outros caracteres são permitidos.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Mensagem de erro de "Caracteres inválido".
 
 ### <a name="resolution"></a>Resolução
@@ -69,7 +69,7 @@ ms.locfileid: "53957956"
 ## <a name="errors-when-creating-custom-fields"></a>Erros ao criar campos personalizados
  No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], campos personalizados são definidos no XML. Erros podem ocorrer se um campo não estiver definido ou referenciado usando um formato específico.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Mensagem de erro de "Caracteres inválidos" no tempo de empacotamento.
 
 ### <a name="resolution"></a>Resolução
@@ -98,7 +98,7 @@ ms.locfileid: "53957956"
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>Novas definições de site diferente do inglês não aparecem na página de criação de site após a implantação
  Depois de criar e implantar uma definição de site, usando uma versão diferente do inglês do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (ou seja, uma versão com uma localidade [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] diferente de 1033), o **personalizações do SharePoint** guia não aparece no **Seleção de modelo** caixa e o novo modelo de site não aparecer na **novo Site do SharePoint** página.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  nenhuma.
 
 ### <a name="resolution"></a>Resolução
@@ -107,7 +107,7 @@ ms.locfileid: "53957956"
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Erro aparece quando um projeto de fluxo de trabalho é implantado em um sistema limpo
  Esse problema ocorre se você implantar um projeto de fluxo de trabalho no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] em um sistema limpo. Um sistema limpo é um computador que tenha uma instalação nova do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e SharePoint, mas não há projetos de fluxo de trabalho implantados.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Não é possível encontrar a lista do SharePoint: Histórico de fluxo de trabalho.
 
 ### <a name="resolution"></a>Resolução
@@ -125,7 +125,7 @@ ms.locfileid: "53957956"
 ## <a name="error-the-site-location-is-not-valid"></a>Erro: O local do site não é válido
  Esse problema pode ocorrer se [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] não está instalado. Ele também pode ocorrer se você não tiver acesso de administrador para o site do SharePoint que é especificado na **Assistente para personalização do SharePoint**.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
 
 -   Local do site do SharePoint não é válido.
 
@@ -138,7 +138,7 @@ ms.locfileid: "53957956"
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Evento de web de exclusão do site não ocorre no projeto de receptor de evento
  Quando você cria um projeto de receptor de evento e selecionar determinados eventos da Web, como "um site está sendo excluído", ocorre o evento nunca.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  nenhuma.
 
 ### <a name="resolution"></a>Resolução
@@ -174,7 +174,7 @@ ms.locfileid: "53957956"
 
 -   Administração Central do SharePoint 2010. Para obter mais informações, consulte [gerenciamento de modelos de BDC](http://go.microsoft.com/fwlink/?LinkID=181472) no site da Web do Microsoft TechNet.
 
--   Windows PowerShell. Você pode excluir o modelo digitando o seguinte comando no prompt de comando: **Remover SPBusinessDataCatalogModel**. Para obter mais informações, consulte [geral de cmdlets (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) no site da Web do Microsoft TechNet.
+-   Windows PowerShell. Você pode excluir o modelo digitando o seguinte comando no prompt de comando: **Remove-SPBusinessDataCatalogModel**. Para obter mais informações, consulte [geral de cmdlets (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) no site da Web do Microsoft TechNet.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Um erro será exibido quando você tenta exibir uma web part visual no SharePoint
  Esse problema ocorre quando o **caminho** propriedade do controle de usuário não começa com a cadeia de caracteres "CONTROLTEMPLATES\\".
@@ -200,7 +200,7 @@ ms.locfileid: "53957956"
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Erro aparece quando um fluxo de trabalho importado reutilizável que contém um campo de formulário de tarefa é executado
  Esse problema ocorre se você importar um fluxo de trabalho que contém um formulário de tarefa que tem um campo e, em seguida, execute o novo fluxo de trabalho no mesmo sistema do qual você importou.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Ocorreu um erro na etapa de implantação 'Ativar recursos': O campo com a Id [*Guid*] definido recurso [*Guid*] foi encontrado no conjunto de sites atual ou em um subsite.
 
 ### <a name="resolution"></a>Resolução
@@ -211,7 +211,7 @@ ms.locfileid: "53957956"
 ## <a name="error-appears-when-a-renamed-imported-list-instance-is-run"></a>Erro aparece quando um renomeado importado é executar a instância de lista
  Esse problema ocorre se você renomear uma instância de lista importados e, em seguida, executá-lo em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Erro de compilação: Ocorreu um erro na etapa de implantação 'Ativar recursos': O arquivo Template\Features\\[*Importar projeto*<em>recurso</em>*nome*] \Files\Lists\\[*antigo* <em>nome da lista</em>] \Schema.xml não existe.
 
 ### <a name="resolution"></a>Resolução
@@ -222,7 +222,7 @@ ms.locfileid: "53957956"
 ## <a name="sharepoint-debugging-session-terminated-by-iis"></a>Encerrado pelo IIS de sessão de depuração do SharePoint
  Esse problema ocorre se você definir um ponto de interrupção em uma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solução do SharePoint, escolha o **F5** chave executá-lo e, em seguida, permanecem em um ponto de interrupção mais de 90 segundos.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  O processo do servidor Web que estava sendo depurado foi encerrado pelo Internet Information Services (IIS). Você pode evitar esse problema ao configurar as configurações de ping do Pool de aplicativos no IIS. Consulte a Ajuda para obter mais detalhes.
 
 ### <a name="resolution"></a>Resolução
@@ -251,7 +251,7 @@ ms.locfileid: "53957956"
 
 4.  Abra o site do SharePoint e abra a instância de lista.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Erro de servidor no aplicativo '/'.
 
 ### <a name="resolution"></a>Resolução
@@ -262,7 +262,7 @@ ms.locfileid: "53957956"
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>Solução do SharePoint original é substituída por uma versão exportada
  Se você exportar uma solução do SharePoint, importar a solução em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]e, em seguida, implantar a solução de volta para o mesmo site do qual ele foi exportado, a solução do SharePoint original será substituída. Esse problema não ocorre se você implantar a solução em um servidor que não tem a solução original ativada nele.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  nenhuma.
 
 ### <a name="resolution"></a>Resolução
@@ -271,7 +271,7 @@ ms.locfileid: "53957956"
 ## <a name="error-appears-when-debugging-starts"></a>Erro aparece quando a depuração iniciar
  Quando você inicia a depuração de uma solução do SharePoint no Visual Studio, um erro indica que o Visual Studio não foi possível carregar o arquivo Web. config porque não foi determinada chave no dicionário.
 
-### <a name="error-message"></a>mensagem de erro
+### <a name="error-message"></a>Mensagem de erro
  Não foi possível carregar o arquivo de configuração Web. config. Verifique o arquivo para elementos XML malformados e tente novamente. O seguinte erro ocorreu: A chave fornecida não estava presente no dicionário.
 
 ### <a name="resolution"></a>Resolução

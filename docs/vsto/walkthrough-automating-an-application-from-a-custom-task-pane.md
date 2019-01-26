@@ -12,17 +12,17 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], automating applications
 - custom task panes [Office development in Visual Studio], PowerPoint
 - task panes [Office development in Visual Studio], automating applications
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3689b72ef13856ebf3df419377c5bed4ffb88982
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915082"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874859"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Passo a passo: Automatizar um aplicativo de um painel de tarefas personalizado
   Este passo a passo demonstra como criar um painel de tarefas personalizado que automatiza o PowerPoint. O painel de tarefas personalizado insere as datas em um slide quando o usuário clica em um <xref:System.Windows.Forms.MonthCalendar> controle que esteja no painel de tarefas personalizado.  
@@ -87,7 +87,7 @@ ms.locfileid: "53915082"
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]  
   
-3.  Adicione o seguinte código para o `MyUserControl` classe. Esse código declara uma <xref:Microsoft.Office.Interop.PowerPoint.Shape> objeto como um membro de `MyUserControl`. Na etapa a seguir, você usará isso <xref:Microsoft.Office.Interop.PowerPoint.Shape> para adicionar uma caixa de texto a um slide na apresentação ativa.  
+3.  Adicione o código a seguir à classe `MyUserControl`. Esse código declara uma <xref:Microsoft.Office.Interop.PowerPoint.Shape> objeto como um membro de `MyUserControl`. Na etapa a seguir, você usará isso <xref:Microsoft.Office.Interop.PowerPoint.Shape> para adicionar uma caixa de texto a um slide na apresentação ativa.  
   
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]  
@@ -108,7 +108,7 @@ ms.locfileid: "53915082"
   
 2.  Clique com botão direito **ThisAddIn.cs** ou **ThisAddIn. vb** e clique em **Exibir código**.  
   
-3.  Adicione o seguinte código para o `ThisAddIn` classe. Esse código declara as instâncias de `MyUserControl` e <xref:Microsoft.Office.Tools.CustomTaskPane> como membros do `ThisAddIn` classe.  
+3.  Adicione o código a seguir à classe `ThisAddIn`. Esse código declara as instâncias de `MyUserControl` e <xref:Microsoft.Office.Tools.CustomTaskPane> como membros do `ThisAddIn` classe.  
   
      [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]  

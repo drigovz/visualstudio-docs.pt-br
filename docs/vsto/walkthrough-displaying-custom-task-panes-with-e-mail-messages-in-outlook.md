@@ -11,17 +11,17 @@ helpviewer_keywords:
 - displaying custom task panes in e-mail
 - e-mail [Office development in Visual Studio], custom task panes displayed in
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b9a9e3d5fba8b9aeea2124f79522642d4320783
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926574"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867774"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
   Este passo a passo demonstra como exibir uma instância exclusiva de cada mensagem de email que é criado ou aberto um painel de tarefas personalizado. Os usuários podem exibir ou ocultar o painel de tarefas personalizado usando um botão na faixa de opções de cada mensagem de email.  

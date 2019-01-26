@@ -13,15 +13,15 @@ helpviewer_keywords:
 - entryPointsCollection element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a8ae05669bcb7babedc74ad1d97e045a74f07f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e877e186538622b3604e850040cbed0b018911d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933603"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871163"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `entryPointsCollection` elemento do `vstav3` namespace contém tudo o `entryPoints` elementos associados às soluções do Office.
@@ -48,7 +48,7 @@ ms.locfileid: "53933603"
 
  `entryPointsCollection` tem os seguintes elementos.
 
-### <a name="entrypoints"></a>pontos de entrada
+### <a name="entrypoints"></a>entryPoints
  Necessário. A função do `entryPoints` elemento na `vstav3` namespace está definido no [ &#60;pontos de entrada&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Exemplo de personalização no nível de documento

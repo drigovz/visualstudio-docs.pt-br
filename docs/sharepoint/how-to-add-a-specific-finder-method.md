@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], return an entity
 - BDC [SharePoint development in Visual Studio], Specific Finder
 - Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 163badc38ba4037729e29d013c98e0b733c9eaf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93819bea0db3011ed8241389f59e0550d8a3ff84
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913459"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868908"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Como: Adicionar um método Finder específico
   Você pode retornar uma instância de entidade única, criando uma *Specific Finder* método. O serviço de conectividade de dados comerciais (BDC) executa o método de localizador específico quando um usuário escolhe uma entidade em uma web part de dados de negócios ou uma lista externa. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  

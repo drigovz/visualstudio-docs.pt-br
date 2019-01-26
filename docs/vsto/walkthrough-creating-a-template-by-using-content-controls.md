@@ -9,17 +9,17 @@ helpviewer_keywords:
 - building blocks [Office development in Visual Studio]
 - Word [Office development in Visual Studio], creating documents
 - content controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b2bc96a9df16c43c8fe4e66dbed4079a1ae3a40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931980"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874166"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Passo a passo: Criar um modelo usando os controles de conteúdo
   Este passo a passo demonstra como criar uma personalização no nível de documento que usa controles de conteúdo para criar conteúdo reutilizável e não estruturados em um modelo do Microsoft Office Word.  
@@ -139,7 +139,7 @@ ms.locfileid: "53931980"
   
 1.  Na **Gerenciador de soluções**, clique com botão direito **ThisDocument.cs** ou **ThisDocument**e, em seguida, clique em **Exibir código**.  
   
-2.  Adicione o seguinte código para o `ThisDocument` classe. Esse código declara vários objetos que você usará posteriormente neste passo a passo.  
+2.  Adicione o código a seguir à classe `ThisDocument`. Esse código declara vários objetos que você usará posteriormente neste passo a passo.  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - sandboxed solutions [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, farm solutions
 - farm solutions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e26c87d3280ca3cfdd44baa11b09bd007eaca08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28bdf4e9b116522256606bc9fbbe6b05edb45114
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862083"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872970"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerações sobre a solução em área restrita
   *Soluções em área restrita* são um recurso do Microsoft SharePoint 2010 que permite que os usuários da coleção de site carregar suas próprias soluções de código personalizado. Uma solução em área restrita comum é carregar suas próprias Web Parts de usuários.  
@@ -107,7 +107,7 @@ ms.locfileid: "53862083"
   
 - Navegação  
   
-- *onet*  
+- *Onet.xml*  
   
 - SPItemEventReceiver  
   

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, changing formatting using managed controls
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30e89adf2d93e67a63071f79ded213a3dcff6385
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935093"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871020"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Passo a passo: Alterar a formatação da planilha usando controles CheckBox
   Este passo a passo mostra as Noções básicas de como usar caixas de seleção em uma planilha do Microsoft Office Excel para alterar a formatação. Você usará as ferramentas de desenvolvimento do Office no Visual Studio para criar e adicionar código ao seu projeto. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -83,7 +83,7 @@ ms.locfileid: "53935093"
     |Propriedade|Valor|  
     |--------------|-----------|  
     |**Nome**|**applyUnderlineFont**|  
-    |**Texto**|**Sublinhado**|  
+    |**Texto**|**Underline**|  
   
 7.  Selecione todos os controles de caixa de seleção de três ao mesmo tempo mantendo a **Ctrl** chave.  
   

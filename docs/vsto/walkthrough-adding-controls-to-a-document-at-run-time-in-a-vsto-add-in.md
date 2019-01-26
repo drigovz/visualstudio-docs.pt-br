@@ -10,17 +10,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], adding controls
 - controls [Office development in Visual Studio], adding to documents at run time
 - documents [Office development in Visual Studio], adding controls at run time
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 297426de82626488be2b12cbab6014883bd7ba97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954890"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873568"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Passo a passo: Adicionar controles a um documento em tempo de execução em um suplemento do VSTO
   Você pode adicionar controles para qualquer documento do Microsoft Office Word aberto usando um suplemento do VSTO. Este passo a passo demonstra como usar a faixa de opções para permitir que os usuários adicionar um <xref:Microsoft.Office.Tools.Word.Controls.Button> ou um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a um documento.  
@@ -113,7 +113,7 @@ ms.locfileid: "53954890"
 
 1.  Na **Gerenciador de soluções**, clique duas vezes em *ThisAddIn.cs* ou *ThisAddIn. vb* para abrir o arquivo no Editor de códigos.  
 
-2.  Adicione o seguinte código para o `ThisAddIn` classe. Esse código declara <xref:Microsoft.Office.Tools.Word.Controls.Button> e <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objetos que representam os controles que serão adicionados ao documento.  
+2.  Adicione o código a seguir à classe `ThisAddIn`. Esse código declara <xref:Microsoft.Office.Tools.Word.Controls.Button> e <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objetos que representam os controles que serão adicionados ao documento.  
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]  

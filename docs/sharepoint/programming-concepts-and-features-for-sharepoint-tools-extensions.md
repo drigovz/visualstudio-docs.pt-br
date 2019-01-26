@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2451339b7291cba6bff8cebcc60358c84f018d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82424a62afa474d6db4df6933071523ce61343a5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884013"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873945"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Conceitos de programação e recursos para extensões de ferramentas do SharePoint
   Há vários conceitos importantes de programação e recursos que estão relacionados às ferramentas do SharePoint no Visual Studio. Esses conceitos e recursos de desempenham um papel importante na maioria das extensões de ferramentas do SharePoint.  

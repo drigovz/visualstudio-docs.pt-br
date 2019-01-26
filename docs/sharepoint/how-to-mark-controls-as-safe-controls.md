@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989368"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875441"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Como: Marcar controles como controles seguros
   Para segurança, o SharePoint faz distinção entre controles da Web que estão protegidos contra injeção de script e controles da Web que não são. Protegido por controles, ou *controles seguros*, pode ser acessado por usuários não confiáveis. Você pode marcar os controles como seguro em que a propriedade de entradas de controle seguro de um item de projeto do SharePoint ou nos **Designer de pacote** quando você adiciona um assembly no pacote. Para saber mais, veja  
