@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0939fd9499f9699d5672fe5bb7ef580ffe75489
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915329"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021475"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Como: Migrar projetos de extensibilidade para o Visual Studio 2015
 Aqui está como atualizar sua extensão.  

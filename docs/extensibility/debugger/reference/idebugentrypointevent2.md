@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bf75f84d8adf6aa8786c02a6b5fb1a927be7595
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2205ef7d6fa8b270ce30224f867dd2c318272b37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931110"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992276"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 O mecanismo de depuração (DES) envia essa interface para o Gerenciador de sessão de depuração (SDM) quando o programa está prestes a executar sua primeira instrução do código do usuário.  
@@ -40,7 +40,7 @@ IDebugEntryPointEvent2 : IUnknown
  Quando o DE envia `IDebugEntryPointEvent2`, a posição atual do código deve ser na primeira instrução do código do usuário, como `main`.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

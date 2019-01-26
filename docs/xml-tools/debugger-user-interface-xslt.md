@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd9ee5e1d86982b2e1b0a8495c9b43a14f43988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 612fa233ceaa2fdee16a75b25f15576d631bd30b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917527"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
 
@@ -101,5 +101,5 @@ Para obter mais informações, confira [Como: Avaliar uma expressão XPath](../x
 ## <a name="see-also"></a>Consulte também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
-- [Introdução ao depurador](../debugger/debugger-feature-tour.md)   
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Inspecionar variáveis nas janelas autos e locais no Visual Studio](../debugger/autos-and-locals-windows.md)

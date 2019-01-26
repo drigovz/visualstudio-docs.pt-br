@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da94ae10da4632eafda48f145d9bb099d4c3207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954799"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965127"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Sobrecargas de operador têm alternativas nomeadas
 
@@ -44,21 +44,21 @@ ms.locfileid: "53954799"
 |+ (binário)|+|+ (binário)|Adicionar|
 |+=|+=|+=|Adicionar|
 |&|And|&|BitwiseAnd|
-|&=|E =|&=|BitwiseAnd|
+|&=|And=|&=|BitwiseAnd|
 |&#124;|Ou|&#124;|BitwiseOr|
-|&#124;=|Ou =|&#124;=|BitwiseOr|
+|&#124;=|Or=|&#124;=|BitwiseOr|
 |--|N/D|--|Decremento|
 |/|/|/|Divisão|
 |/=|/=|/=|Divisão|
 |==|=|==|Igual a|
 |^|Xor|^|Xor|
-|^=|XOR =|^=|Xor|
+|^=|Xor=|^=|Xor|
 |>|>|>|Comparar|
 |>=|>=|>=|Comparar|
 |++|N/D|++|Incremento|
 |<>|!=|Igual a|
-|<<|<<|<<|SHIFT esquerda|
-|<<=|<<=|<<=|SHIFT esquerda|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|Comparar|
 |<=|<=|\<=|Comparar|
 |&&|N/D|&&|LogicalAnd|
@@ -69,8 +69,8 @@ ms.locfileid: "53954799"
 |* (binário)|*|*|Multiplicar|
 |*=|N/D|*=|Multiplicar|
 |~|não|~|OnesComplement|
-|>>|>>|>>|SHIFT direita|
-=|N/D|>>=|SHIFT direita|
+|>>|>>|>>|RightShift|
+=|N/D|>>=|RightShift|
 |-(binário)|-(binário)|-(binário)|Subtração|
 |-=|N/D|-=|Subtração|
 |true|IsTrue|N/D|IsTrue (propriedade)|

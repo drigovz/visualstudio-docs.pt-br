@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9ee2f0e2353023f1864c892ecc377050ea87923d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdad251b4440219285ba1341663b7531634ed806
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865408"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942216"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriedades de uma definição de DSL
 Definem propriedades de DslDefinition *linguagem específica do domínio* propriedades de definição, como numeração de versão. As propriedades de DslDefinition aparecem na **propriedades** janela quando você clica em uma área aberta do diagrama na *Designer de linguagem específica do domínio*.
@@ -27,17 +27,17 @@ Definem propriedades de DslDefinition *linguagem específica do domínio* propri
 |Propriedade|Descrição|Padrão|
 |-|-|-|
 |Modificador de acesso|Determina se o modificador de acesso para a classe de domínio é público ou interno.|públicos|
-|Atributos personalizados|Personalizadas definidas atributos para a classe de domínio.<br /><br /> **Observação** Use o botão Procurar para adicionar um atributo.|\<Nenhum >|
+|Atributos personalizados|Personalizadas definidas atributos para a classe de domínio.<br /><br /> **Observação** Use o botão Procurar para adicionar um atributo.|\<nenhum>|
 |Nome da empresa|O nome do nome da empresa no registro do sistema.|Nome da empresa atual|
 |Nome|O nome dessa classe de domínio.|Nome atual|
 |Namespace|O namespace afiliado a essa classe de domínio.|Namespace atual|
-|Guid do pacote|O guid do pacote do Visual Studio gerado para esta DSL.|\<Nenhum >|
-|Namespace do pacote|O namespace para o pacote do Visual Studio gerado para esta DSL.|\<Nenhum >|
-|Nome do produto|O nome do produto que será registrado para o pacote do Visual Studio gerado para esta DSL.|\<Nenhum >|
-|Observações|Anotações associadas a essa classe de domínio.|\<Nenhum >|
-|Descrição|Descrição para essa classe de domínio.|\<Nenhum >|
-|Nome de Exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<Nenhum >|
-|Palavra-chave de ajuda|A palavra-chave ajuda associada a essa classe de domínio.|\<Nenhum >|
+|Guid do pacote|O guid do pacote do Visual Studio gerado para esta DSL.|\<nenhum>|
+|Namespace do pacote|O namespace para o pacote do Visual Studio gerado para esta DSL.|\<nenhum>|
+|Nome do produto|O nome do produto que será registrado para o pacote do Visual Studio gerado para esta DSL.|\<nenhum>|
+|Observações|Anotações associadas a essa classe de domínio.|\<nenhum>|
+|Descrição|Descrição para essa classe de domínio.|\<nenhum>|
+|Nome de Exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<nenhum>|
+|Palavra-chave de ajuda|A palavra-chave ajuda associada a essa classe de domínio.|\<nenhum>|
 |Build|O número de build incremental para essa definição de linguagem específica do domínio.|0|
 |Versão principal|O número de compilação principal incrementais para esta definição de linguagem específica do domínio.|1|
 |Versão secundária|O número de compilação secundária incrementais para esta definição de linguagem específica do domínio.|0|

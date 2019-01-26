@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27edc56516293ff6502f0708a02faa7bae1e3719
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 973ea13ca7f175515e0e730cacdf7b1bdd75355b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922971"
 ---
 # <a name="delayed-document-loading"></a>Atraso de carregamento do documento
 Quando um usuário é reaberto em uma solução do Visual Studio, a maioria dos documentos associados não é carregada imediatamente. O quadro de janela do documento é criado em um estado pendente de inicialização, e um documento de espaço reservado (chamado de um quadro de stub) é colocado na tabela de documento em execução (RDT).  

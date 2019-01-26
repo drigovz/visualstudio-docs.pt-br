@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717820bdd16daf9c32b32d873035a652d68f6348
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e02c061e6f85ad25e6cd9509b8a86a977a78cbba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965094"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978510"
 ---
 # <a name="sccaddfromscc-function"></a>Função SccAddFromScc
 Essa função permite que o usuário procurar arquivos que já estão no sistema de controle de origem e, subsequentemente, torná essas partes de arquivos do projeto atual. Por exemplo, essa função pode obter um arquivo de cabeçalho comum para o projeto atual sem copiar o arquivo. Matriz de retorno de arquivos, `lplpFileNames`, contém a lista de arquivos que o usuário deseja adicionar ao projeto do IDE.  
