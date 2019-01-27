@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986980"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013698"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidade e conjunto de ferramentas de integração do Project
 
@@ -110,7 +110,7 @@ Projetos de área de trabalho do Windows não definem `$(ApplicationType)`, port
 > `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*padrão*\\\*. *arquivos de propriedades*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Plataformas*\\`$(Platform)`\\*Platform.default.props*  
+> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*padrão*\\\*. *arquivos de propriedades*  
 
 Vamos usar o `$(_PlatformFolder)` propriedade para manter o `$(Platform)` locais de pasta da plataforma. Essa propriedade é 
@@ -125,10 +125,10 @@ para todo o resto.
 
 Os arquivos de objetos são importados nesta ordem:
 
-> `$(VCTargetsPath)`\\*Props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.Props*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props*  
+> &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *arquivos de propriedades*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *arquivos de propriedades*  
 
@@ -138,9 +138,9 @@ Os arquivos de destino são importados nesta ordem:
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *destinos*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *destinos*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*.*targets*  
 
 Se você precisa definir algumas propriedades padrão para seu conjunto de ferramentas, você pode adicionar arquivos ImportBefore e ImportAfter nas pastas apropriadas.
 
@@ -158,7 +158,7 @@ Embora o processo de compilação inteiro pode ser substituído por um conjunto 
 
    - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Targets*
+   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -480,9 +480,9 @@ O `PageTemplate` atributo define como a regra é exibida na **páginas de propri
 
 | Atributo | Descrição |
 |------------| - |
-| `generic` | Todas as propriedades são mostradas em uma única página nos títulos de categoria<br/>A regra pode ser visível para os `Project` e `PropertySheet` contextos, mas não `File`.<br/><br/> Exemplo: `$(VCTargetsPath)`\\*1033*\\*arquivo General* |
+| `generic` | Todas as propriedades são mostradas em uma única página nos títulos de categoria<br/>A regra pode ser visível para os `Project` e `PropertySheet` contextos, mas não `File`.<br/><br/> Exemplo: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
 | `tool` | Categorias são mostradas como subpáginas.<br/>A regra pode ser visível em todos os contextos: `Project`, `PropertySheet` e `File`.<br/>A regra está visível nas propriedades do projeto somente se o projeto tem itens com o `ItemType` definidos no `Rule.DataSource`, a menos que o nome da regra está incluído no `ProjectTools` grupo de itens.<br/><br/>Exemplo: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
-| `debugger` | A página é mostrada como parte da página de depuração.<br/>Categorias são ignoradas no momento.<br/>O nome da regra deve corresponder do objeto Debug iniciador MEF `ExportDebugger` atributo.<br/><br/>Exemplo: `$(VCTargetsPath)`\\*1033*\\*depurador\_local\_windows.xml* |
+| `debugger` | A página é mostrada como parte da página de depuração.<br/>Categorias são ignoradas no momento.<br/>O nome da regra deve corresponder do objeto Debug iniciador MEF `ExportDebugger` atributo.<br/><br/>Exemplo: `$(VCTargetsPath)`\\*1033*\\*debugger\_local\_windows.xml* |
 | *custom* | Modelo personalizado. O nome do modelo deve corresponder a `ExportPropertyPageUIFactoryProvider` atributo do `PropertyPageUIFactoryProvider` objeto MEF. Ver **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Exemplo: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Se a regra usa um dos modelos com base em grade de propriedade, ele poderá usar esses pontos de extensibilidade para suas propriedades:

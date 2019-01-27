@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948980"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para snippets de código em um serviço de linguagem herdado
 Um trecho de código é um trecho de código que é inserido no arquivo de origem. O trecho de código em si é um modelo baseado em XML com um conjunto de campos. Esses campos são realçados depois que o trecho de código é inserido e pode ter valores diferentes dependendo do contexto no qual o trecho de código é inserido. Imediatamente depois de inserir o trecho de código, o serviço de linguagem pode formatar o trecho de código.  
@@ -85,11 +85,11 @@ Um trecho de código é um trecho de código que é inserido no arquivo de orige
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|% LCID %|ID de localidade.|  
-|% InstallRoot %|Pasta de instalação raiz para o Visual Studio, por exemplo, C:\Program Files\Microsoft Visual Studio 8.|  
-|% ProjDir %|Pasta que contém o projeto atual.|  
-|% ProjItem %|Pasta que contém o item de projeto atual.|  
-|% TestDocs %|Na pasta de configurações do usuário, por exemplo, C:\Documents and Settings\\ *[username]* Documents\Visual Studio\8.|  
+|%LCID%|ID de localidade.|  
+|%InstallRoot%|Pasta de instalação raiz para o Visual Studio, por exemplo, C:\Program Files\Microsoft Visual Studio 8.|  
+|%ProjDir%|Pasta que contém o projeto atual.|  
+|%ProjItem%|Pasta que contém o item de projeto atual.|  
+|%TestDocs%|Na pasta de configurações do usuário, por exemplo, C:\Documents and Settings\\ *[username]* Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Habilitando os trechos de código para seu serviço de linguagem  
  Você pode habilitar os trechos de código para seu serviço de linguagem, adicionando a <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> de atributo para o VSPackage (consulte [Registrando um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obter detalhes). O <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> e <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parâmetros são opcionais, mas você deve incluir o `SearchPaths` parâmetro nomeado para informar o **Gerenciador de trechos de código** do local dos seus trechos de código.  
