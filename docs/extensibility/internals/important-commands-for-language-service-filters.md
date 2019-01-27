@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9f4c568722700ab4521f8a34a0639e78b9f550b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1aec5fb925fbf7140786880db69d5be535abd5ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891690"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004507"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Comandos importantes para filtros do serviço de linguagem
 Se você quiser criar um filtro de serviço de linguagem com recursos completos, considere a manipulação de comandos a seguir. A lista completa de identificadores de comando é definida na <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeração para código gerenciado e o cabeçalho Stdidcmd.h do arquivo para não gerenciado [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] código. Você pode encontrar o arquivo Stdidcmd.h na *caminho de instalação do SDK do Visual Studio*\visualstudiointegration\common\inc.  
