@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863284"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227974"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>Introdução à depuração de aplicativos multi-threaded
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introdução ao depurar aplicativos multithread (C#, Visual Basic, C++)
 Visual Studio fornece várias ferramentas e os elementos de interface do usuário para ajudá-lo a depurar aplicativos multi-threaded. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Concluir este tutorial você se familiarizará com recursos do Visual Studio para depurar aplicativos multithread.
 
 | | |

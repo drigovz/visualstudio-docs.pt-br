@@ -1,8 +1,6 @@
 ---
 title: Criar visualizadores de dados personalizado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,17 +19,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607816"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54204382"
 ---
-# <a name="create-custom-data-visualizers"></a>Criar visualizadores de dados personalizados 
+# <a name="create-custom-data-visualizers"></a>Criar visualizadores de dados personalizados
  Um *visualizer* faz parte do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interface de usuário do depurador que exibe uma variável ou objeto de maneira apropriada para o tipo de dados. Por exemplo, um visualizador de HTML interpreta uma cadeia de caracteres HTML e exibe o resultado como seria exibido em uma janela do navegador. Um visualizador de bitmap interpreta uma estrutura de bitmap e exibe o gráfico representa. Alguns visualizadores permitem que você modifique, bem como exibir os dados.
 
- O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] depurador inclui seis visualizadores padrão. O texto, HTML, XML e JSON visualizadores funcionam em objetos de cadeia de caracteres. O Visualizador de árvore do WPF exibe as propriedades de uma árvore visual de objeto do WPF. O Visualizador de dataset funciona para objetos de DataSet, DataView e DataTable. 
+ O depurador do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] inclui seis visualizadores padrão. O texto, HTML, XML e JSON visualizadores funcionam em objetos de cadeia de caracteres. O Visualizador de árvore do WPF exibe as propriedades de uma árvore visual de objeto do WPF. O Visualizador de dataset funciona para objetos de DataSet, DataView e DataTable. 
 
 Visualizadores mais podem estar disponíveis para download da Microsoft, por terceiros e da comunidade. Você também pode escrever seus próprios visualizadores e instalá-los no [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] depurador.
 
@@ -42,13 +40,13 @@ No depurador, um visualizador é representado por um ícone de lupa ![Visualizer
  > [!NOTE]
  > Para criar um visualizador personalizado para código nativo, consulte o [Visualizador de depurador nativo SQLite](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) exemplo. Não há suporte para os visualizadores personalizados para aplicativos da UWP e Windows 8.x.
 
-Você pode escrever um visualizador personalizado para um objeto de qualquer classe gerenciada, exceto <xref:System.Object> e <xref:System.Array>.  
+Você pode escrever um visualizador personalizado para um objeto de qualquer classe gerenciada com exceção de <xref:System.Object> ou <xref:System.Array>.  
   
 A arquitetura de um visualizador de depurador tem duas partes:  
   
 - O *do lado do depurador* é executado dentro do depurador do Visual Studio e cria e exibe a interface de usuário do visualizador.  
   
-- O *lado a ser depurado* é executado dentro do processo de depuração do Visual Studio (o *ser depurado*). O objeto de dados para visualizar (por exemplo, um objeto de cadeia de caracteres) existe no processo a ser depurado. Lado a ser depurado envia o objeto ao lado do depurador, o que o exibe na interface do usuário que você cria.  
+- O *lado a ser depurado* é executado dentro do processo que o Visual Studio está depurando (o *lado a ser depurado*). O objeto de dados para visualizar (por exemplo, um objeto de cadeia de caracteres) existe no processo a ser depurado. Lado a ser depurado envia o objeto ao lado do depurador, o que o exibe na interface do usuário que você cria.  
 
 O lado do depurador recebe o objeto de dados de um *provedor do objeto* que implementa o <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interface. Lado a ser depurado envia o objeto por meio de *origem do objeto*, que é derivado de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. 
 
@@ -84,13 +82,13 @@ Especifique o código do lado a ser depurado usando o <xref:System.Diagnostics.D
   
 ## <a name="see-also"></a>Consulte também
   
- [Passo a passo: escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Passo a passo: Escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [Passo a passo: escrever um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [Passo a passo: Escrever um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
- [Como instalar um visualizador](../debugger/how-to-install-a-visualizer.md)  
+ [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md)  
   
- [Como testar e depurar um visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Como: Testar e depurar um visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Referência de API do visualizador](../debugger/visualizer-api-reference.md)  
   
