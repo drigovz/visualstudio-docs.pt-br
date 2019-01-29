@@ -17,7 +17,7 @@ ms.author: tglee
 manager: ghogen
 ms.openlocfilehash: 42776c20cd6634903344569f9ce1f35a776c5f86
 ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53959854"
