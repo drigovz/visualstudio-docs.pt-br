@@ -23,26 +23,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946156"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228013"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Exibir threads no depurador do Visual Studio usando a janela Threads
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Exibir threads no depurador do Visual Studio usando a janela de Threads (C#, Visual Basic, C++)
 No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo que você está depurando. Para obter orientação passo a passo sobre como usar o **Threads** janela, consulte [passo a passo: Depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Usar a janela Threads 
  O **Threads** janela contém uma tabela em que cada linha descreve um thread separado em seu aplicativo. Por padrão, a tabela lista todos os threads em seu aplicativo, mas você pode filtrar a lista para mostrar apenas os threads do seu interesse. Cada coluna descreve um tipo diferente de informações. Você também pode ocultar algumas colunas. Se você exibir todas as colunas, as colunas a seguir são exibidos da esquerda para a direita:  
   
-- **Sinalizar** Nesta coluna sem rótulo, você pode marcar um thread ao qual você deseja prestar atenção especial. Para obter informações sobre como sinalizar um thread, consulte [como: Sinalizar e remover sinalização de threads](../debugger/how-to-flag-and-unflag-threads.md)  
+- **Sinalizar** Nesta coluna sem rótulo, você pode marcar um thread ao qual você deseja prestar atenção especial. Para obter informações sobre como sinalizar um thread, consulte [como: Sinalizar e remover sinalização de threads  
   
-- Thread atual Nesta coluna sem nome, uma seta amarela indica que o thread atual. Uma estrutura de tópicos de seta indica o contexto atual do depurador para um thread não atual.
+- – Thread atual Nesta coluna sem nome, uma seta amarela indica que o thread atual. Uma estrutura de tópicos de seta indica o contexto atual do depurador para um thread não atual.
   
-- ID Exibe o número de identificação para cada thread.  
+- **ID**: Exibe o número de identificação para cada thread.  
   
-- ID gerenciada Exibe os números de identificação gerenciados para threads gerenciados.  
+- – ID gerenciada Exibe os números de identificação gerenciados para threads gerenciados.  
   
 - **Categoria**. Exibe a categoria de threads como threads de interface do usuário, manipuladores de chamada de procedimento remoto ou threads de trabalho. Uma categoria especial identifica o thread principal do aplicativo.  
   
@@ -50,13 +50,13 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
 - **location**: Mostra onde o thread está em execução. Você pode expandir este local para mostrar a pilha de chamadas inteira para o thread.  
   
-- Prioridade Uma coluna avançada (ocultada por padrão), que exibe a prioridade ou precedência que o sistema atribuiu a cada thread.  
+- – Prioridade Uma coluna avançada (ocultada por padrão), que exibe a prioridade ou precedência que o sistema atribuiu a cada thread.  
   
-- Máscara de Afinidade Uma coluna avançada (ocultada por padrão), que mostra a máscara de afinidade do processador para cada thread. Em um sistema com vários processadores, a máscara de afinidade determina quais processadores em qual thread pode ser executado.  
+- – Máscara de afinidade Uma coluna avançada (ocultada por padrão), que mostra a máscara de afinidade do processador para cada thread. Em um sistema com vários processadores, a máscara de afinidade determina quais processadores em qual thread pode ser executado.  
   
-- Contagem suspensa Uma coluna avançada (ocultada por padrão) que exibe a contagem suspensa. Esta contagem determina se um thread pode ser executado. Para obter mais informações sobre contagens suspensas, consulte [congelar e descongelar threads](#freeze-and-thaw-threads).  
+- – Contagem suspensa Uma coluna avançada (ocultada por padrão) que exibe a contagem suspensa. Esta contagem determina se um thread pode ser executado. Para obter mais informações sobre contagens suspensas, consulte [congelar e descongelar threads](#freeze-and-thaw-threads).  
   
-- Nome do processo Uma coluna avançada (ocultada por padrão), que exibe o processo ao qual cada thread pertence. Os dados nesta coluna podem ser útil quando você estiver depurando vários processos.  
+- – Nome do processo Uma coluna avançada (ocultada por padrão), que exibe o processo ao qual cada thread pertence. Os dados nesta coluna podem ser útil quando você estiver depurando vários processos.  
 
 - ID de processo Uma coluna avançada (ocultada por padrão), que exibe a ID do processo ao qual cada thread pertence. 
 
