@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af83b0998afa92fc59203fefa4b9d6d21635e642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947069"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921177"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Trabalhar com a janela R Interativo
 
@@ -51,24 +51,24 @@ Aqui está a janela interativa com sua barra de ferramentas:
 
 Os comandos da barra de ferramentas são mostrados a seguir. A maioria deles tem equivalentes de teclado e também está disponível nos menus **Ferramentas do R** > **Sessão** e **Ferramentas do R** > **Diretório de Trabalho** (ou conforme o indicado):
 
-| Botão | Comando | Combinação de teclas | Descrição | 
+| Botão | Comando | Combinação de teclas | Descrição |
 | --- | --- | --- | --- |
 | ![Botão Redefinir](media/repl-toolbar-01-reset.png) | Redefinir | **Ctrl**+**Shift**+**F10** | Redefine a sessão de janela interativa, limpando todas as variáveis e o histórico. |
 | ![Botão Limpar](media/repl-toolbar-02-clear.png) | Clear | **Ctrl**+**L** | Limpa a saída mostrada na janela interativa. não afeta as variáveis de sessão nem o histórico. |
 | ![Botões Histórico](media/repl-toolbar-03-history.png) | Comando Histórico anterior<br/>Comando Próximo histórico | **Para cima**, **Para baixo**<br/>**Alt**+**Para cima**, **Alt**+**Para baixo** | Percorre o histórico, com alguns comportamentos de blocos de código de várias linhas. Consulte [Histórico](#history). |
 | ![Botão Carregar workspace](media/repl-toolbar-04-load-workspace.png) | Carregar workspace | N/D | Carrega um workspace anterior salvo (consulte [Workspaces e sessões](#workspaces-and-sessions). |
 | ![Botão Salvar workspace como](media/repl-toolbar-05-save-workspace-as.png)| Salvar workspace | N/D | Salva o estado atual da sessão como um workspace (consulte [Workspaces e sessões](#workspaces-and-sessions). |
-| ![Botão Script R de origem](media/repl-toolbar-06-source-r-script.png) | Script R de origem | **Ctrl**+**Shift**+**S** | Chama `source` com o script R atualmente ativo no editor do Visual Studio, que executa o código.  Esse botão só aparece quando um arquivo R é aberto no editor do Visual Studio. | 
+| ![Botão Script R de origem](media/repl-toolbar-06-source-r-script.png) | Script R de origem | **Ctrl**+**Shift**+**S** | Chama `source` com o script R atualmente ativo no editor do Visual Studio, que executa o código.  Esse botão só aparece quando um arquivo R é aberto no editor do Visual Studio. |
 | ![Botão Script R de origem com eco](media/repl-toolbar-07-source-r-script-with-echo.png) | Script R de Origem com Eco | **Ctrl**+**Shift**+**Enter** | Igual ao Script R de Origem, mas exibe o conteúdo do script na janela interativa. |
 | ![Botão Interromper R](media/repl-toolbar-08-interrupt-r.png)| Interromper R | **Esc** | Interrompe qualquer código em execução na janela interativa, como o loop `while` na captura de tela mostra no início dessa seção. |
-| ![Botão Anexar depurador](media/repl-toolbar-09b-attach-debugger.png)| Anexar depurador | N/D | Também está disponível ao usar o comando **Depurar** > **Anexar a R Interativo**. | 
+| ![Botão Anexar depurador](media/repl-toolbar-09b-attach-debugger.png)| Anexar depurador | N/D | Também está disponível ao usar o comando **Depurar** > **Anexar a R Interativo**. |
 | ![Botão Definir diretório de trabalho para o local do arquivo de origem](media/repl-toolbar-10-set-working-directory-source.png)| Definir diretório de trabalho para o local do arquivo de origem | **Ctrl**+**Shift**+**E** | Define o diretório de trabalho para o último arquivo de origem carregado na janela interativa (usando `source`). Consulte [Diretório de trabalho](#working-directory). |
 | ![Botão Definir diretório de trabalho para o local do projeto](media/repl-toolbar-11-set-working-directory-to-project.png) | Definir diretório de trabalho para o local do projeto | **Ctrl**+**Shift**+**P** | Define o diretório de trabalho para a raiz do projeto carregado atualmente no Visual Studio. Consulte [Diretório de trabalho](#working-directory). |
 | (Campo de texto) | Selecionar Diretório de Trabalho | N/D | Campo de entrada direta para o diretório de trabalho. Consulte [Diretório de trabalho](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Workspaces e sessões
 
-Executar o código na janela interativa cria um contexto em sua sessão atual. O contexto é composto de variáveis globais, definições de função, cargas de biblioteca e assim por diante. Esse contexto é chamado coletivamente de *workspace* e você pode salvar e carregar workspaces a qualquer momento. 
+Executar o código na janela interativa cria um contexto em sua sessão atual. O contexto é composto de variáveis globais, definições de função, cargas de biblioteca e assim por diante. Esse contexto é chamado coletivamente de *workspace* e você pode salvar e carregar workspaces a qualquer momento.
 
 Selecionar o botão **Salvar Workspace Como** ou usar os prompts de comando **Ferramentas do R** > **Sessão** > **Salvar Workspace Como** solicitará um local e um nome de arquivo (a extensão padrão é *.RData*).
 

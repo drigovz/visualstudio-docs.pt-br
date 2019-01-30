@@ -5,13 +5,13 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 063c002b77761a14bf6a0bae8452b7ff28bd1b99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840746"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918727"
 ---
 # <a name="team-explorer-reference"></a>Referência do Team Explorer
 
@@ -80,8 +80,12 @@ A página **Itens de Trabalho** permite que você veja as consultas de [item de 
 - [Lista de resultados da consulta de email usando o Outlook](/azure/devops/boards/queries/share-plans)
 - [Criar relatórios com base na consulta no Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports) (somente TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
 > Há uma nova [experiência de Itens de Trabalho](/azure/devops/boards/work-items/set-work-item-experience-vs) no Visual Studio 2019 Preview 1. Para obter informações sobre como exibir itens de trabalho no Visual Studio 2019 Preview 1, confira [Exibir e adicionar itens de trabalho](/azure/devops/boards/work-items/view-add-work-items).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Página Builds
 
