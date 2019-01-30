@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899750"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043707"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desenvolver código JavaScript e TypeScript no Visual Studio sem projetos ou soluções
 
@@ -32,9 +32,9 @@ Para começar, selecione **Abrir Pasta** na página inicial que aparece quando v
 
 ## <a name="npm-integration"></a>Integração com npm
 
-Se a pasta que você abrir contiver um arquivo *package.json*, clique com o botão direito do mouse em *package.json* para mostrar um menu de contexto (menu de atalho) específico do npm. 
+Se a pasta que você abrir contiver um arquivo *package.json*, clique com o botão direito do mouse em *package.json* para mostrar um menu de contexto (menu de atalho) específico do npm.
 
-![Menu do npm no Gerenciador de Soluções](../javascript/media/solution-explorer-npm-ctx.png) 
+![Menu do npm no Gerenciador de Soluções](../javascript/media/solution-explorer-npm-ctx.png)
 
 No menu de atalho, você pode gerenciar os pacotes instalados pelo npm da mesma maneira que você [gerencia pacotes de npm](npm-package-management.md) ao usar um arquivo de projeto.
 
@@ -43,7 +43,8 @@ Além disso, o menu também permite a execução de scripts definidos no element
 ## <a name="build-and-debug"></a>Build e depuração
 
 ### <a name="packagejson"></a>package.json
-Se o *package.json* na pasta especificar um elemento `main`, o comando **Depurar** estará disponível no menu de atalho com clique do botão direito do mouse para *package.json*. Se você clicar nele, o *node.exe* será iniciado com o script especificado como seu argumento.
+Se o *package.json* na pasta especificar um elemento `main`, o comando **Depurar** estará disponível no menu de atalho com clique do botão direito do mouse para *package.json*.
+Se você clicar nele, o *node.exe* será iniciado com o script especificado como seu argumento.
 
 ### <a name="javascript-files"></a>Arquivos JavaScript
 Você pode depurar arquivos JavaScript clicando com o botão direito do mouse em um arquivo e selecionando **Depurar** no menu de atalho. Isso inicia o *node.exe* com esse arquivo JavaScript como seu argumento.

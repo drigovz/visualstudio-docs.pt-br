@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: af7126910971cdf9ce583c57c1f88bb56a87f744
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 3aa55ede0d6d36e455a9ab7cc007afede0ff465d
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54405376"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089192"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: como criar um aplicativo simples com C#
 
@@ -274,5 +274,4 @@ Parabéns por concluir este tutorial. Encontre o *.exe* compilado na solução e
 
 ## <a name="see-also"></a>Consulte também
 
-- [Novidades no Visual Studio 2017](../../ide/whats-new-in-visual-studio.md)
 - [Dicas de produtividade](../../ide/productivity-tips-for-visual-studio.md)
