@@ -4,18 +4,18 @@ ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.FSharp.Advanced
+- VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b58f22983d11e44a863c834188cc938282c2626
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9a3158708215303be4dc0bd66202a165cf3a5d4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955707"
 ---
 # <a name="options-text-editor-f-advanced"></a>Opções, Editor de Texto, F#, Avançado
 
@@ -23,12 +23,12 @@ Use a página de opções **Avançado** para modificar algumas configurações d
 
 ## <a name="block-structure-guides"></a>Guias de estrutura de bloco
 
-Marque essa caixa de seleção para exibir linhas verticais pontilhadas entre chaves (**{}**) em seu código. Isso permite que você identifique facilmente seus blocos individuais de código.
-  
+Quando essa opção estiver selecionada, as linhas verticais serão exibidas no editor, alinhadas aos blocos de código estruturado, o que permite que você identifique facilmente os blocos individuais de código.
+
 ## <a name="outlining"></a>Estrutura de tópicos
 
 Marque essa caixa de seleção para colocar o arquivo de código automaticamente em estrutura de tópicos, o que cria blocos de código recolhíveis.
-  
+
 ## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

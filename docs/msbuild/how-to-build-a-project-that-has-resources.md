@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8886f4970a4888d72f0c0f919069c10658e92332
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948954"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Como: Compilar um projeto que tem recursos
 Se você estiver compilando versões localizadas de um projeto, todos os elementos da interface do usuário devem ser separados em arquivos de recursos para os diferentes idiomas. Se o projeto usar somente cadeias de caracteres, os arquivos de recursos poderão usar arquivos de texto. Como alternativa, você pode usar arquivos *.resx* como os arquivos de recurso.  
