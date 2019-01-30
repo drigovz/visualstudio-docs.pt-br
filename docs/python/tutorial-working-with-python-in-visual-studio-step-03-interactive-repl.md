@@ -2,22 +2,22 @@
 title: Etapa 3 do Tutorial do Python no Visual Studio, REPL interativo
 titleSuffix: ''
 description: Etapa 3 de um passo a passo básico das funcionalidades do Python no Visual Studio, abordando a janela REPL interativa do Python.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf51a53301ad65debe2bb69d33ce8a159aa9612f
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986824"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231877"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: Usar a janela Interativa REPL
 
@@ -74,7 +74,7 @@ A janela **Interativa** do Visual Studio para Python oferece uma experiência av
     ![Edição de uma declaração anterior na janela interativa](media/vs-getting-started-python-16-interactive6.png)
 
 1. Repita o processo para fazer experiências com configurações de etapas diferentes, até encontrar um valor que você mais goste. Você também pode fazer a curva se repetir, aumentando o intervalo, por exemplo, `range(0, 1800, 12)`.
- 
+
 1. Quando estiver satisfeito com o código escrito na janela **Interativa**, selecione-o, clique com o botão direito do mouse e selecione **Copiar Código** (**Ctrl**+**Shift**+**C**) e cole-o no editor. Observe como esse recurso especial do Visual Studio omite automaticamente qualquer saída, bem como os prompts `>>>` e `...`. Por exemplo, a imagem abaixo mostra o uso do comando **Copiar Código** em uma seleção que inclui os prompts e a saída:
 
     ![Comando copiar código da janela interativa em uma seleção com prompts e saída](media/vs-getting-started-python-17-interactive7.png)
