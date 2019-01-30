@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 28e85ed5-1512-4b59-bb84-138a2abca7dd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61820a99d3037a205b0c206740c40fc54f439607
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 582e35eec6af0856817c294ad4d84f5bb4e8ea1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891486"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932825"
 ---
 # <a name="callercallee-view---sampling-data"></a>Exibição do chamador/receptor – dados de amostragem
 A exibição de Chamador/Computador Chamado exibe informações de perfil para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.  
