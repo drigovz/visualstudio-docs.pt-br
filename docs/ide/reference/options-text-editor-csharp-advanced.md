@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398293"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959717"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 
@@ -47,7 +47,7 @@ Use a página de opções **Avançado** para modificar as configurações de for
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Após a classificação:
 
    ```csharp
@@ -58,7 +58,7 @@ Use a página de opções **Avançado** para modificar as configurações de for
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Separar usando grupos de diretivas
 
    Quando selecionado, o comando **Remover e classificar usos** no menu de clique com o botão direito do mouse separa as diretivas `using` inserindo uma linha vazia entre os grupos de diretivas que têm o mesmo namespace de raiz.
@@ -73,28 +73,28 @@ Use a página de opções **Avançado** para modificar as configurações de for
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Após a classificação:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Sugerir usos para tipos em assemblies de referência 
-- Sugerir usos para tipos em pacotes NuGet 
+
+- Sugerir usos para tipos em assemblies de referência
+- Sugerir usos para tipos em pacotes NuGet
 
    Quando essas opções estiverem selecionadas, uma [Ação Rápida](../quick-actions.md) estará disponível para instalar um pacote NuGet e para adicionar uma diretiva `using` para tipos não referenciados.
 
    ![Ação rápida para instalar o pacote NuGet no Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Realce
 
 - Realçar referências a símbolo sob o cursor
