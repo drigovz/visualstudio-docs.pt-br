@@ -5,7 +5,7 @@ description: Use as IDs de carga de trabalho e de componente para instalar o Vis
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: e84aaad94916687a34179677cb569595746d86e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 820ee01cf77ec3db3c74d224a6a5b5c30b947995
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964566"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977155"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Diretório de componentes do Visual Studio Enterprise 2017
 
@@ -753,7 +753,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Descrição:** Crie aplicativos de rede escalonáveis usando o Node.js, um tempo de execução do JavaScript controlado por eventos assíncronos. 
+**Descrição:** Crie aplicativos de rede escalonáveis usando o Node.js, um tempo de execução do JavaScript controlado por eventos assíncronos.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
 

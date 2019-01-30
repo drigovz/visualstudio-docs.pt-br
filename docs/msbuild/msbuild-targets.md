@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c383af855c849636f780e5c333bd1937e5e90955
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b94c9a78d3541645edf959aedb295d1a2379ce3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877634"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978809"
 ---
 # <a name="msbuild-targets"></a>Destinos do MSBuild
 Destinos agrupam tarefas em uma ordem específica e permitem que o processo de build seja decomposto em unidades menores. Por exemplo, um destino pode excluir todos os arquivos no diretório de saída para se preparar para o build, enquanto outro compila as entradas para o projeto e as coloca no diretório vazio. Para obter mais informações sobre tarefas, consulte [Tarefas](../msbuild/msbuild-tasks.md).  

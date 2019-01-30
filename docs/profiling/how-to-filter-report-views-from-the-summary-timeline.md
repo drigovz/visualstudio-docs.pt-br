@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c19d70817588a40ced0d57a6753cf52803a353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5ca047f29f1112fc551188548dc98c60885f83d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019431"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Como: Filtrar as exibições de relatório da linha do tempo resumida
 Você pode filtrar os dados que aparecem nos relatórios de desempenho, especificando um segmento de tempo no gráfico de linha do tempo da exibição de Resumo. Ao filtrar os relatórios, o arquivo de dados de criação de perfil é analisado novamente para incluir somente o segmento de tempo especificado.  

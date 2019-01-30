@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417792"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989738"
 ---
 # <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
 
@@ -67,7 +67,7 @@ Quando selecionada, as convenções de codificação especificada do projeto sub
 
 Com essa opção estiver selecionada, você poderá pressionar **Ctrl** e passar o mouse sobre um elemento ao clicar com o mouse. Isso leva você até a definição do elemento selecionado. Você também pode escolher **Alt** ou **Ctrl** + **Alt** no menu suspenso **Usar tecla modificadora**.
 
-Marque a caixa de seleção **Abrir definição na exibição de inspeção** para exibir a definição do elemento selecionado em uma janela sem sair do local atual no editor de código. 
+Marque a caixa de seleção **Abrir definição na exibição de inspeção** para exibir a definição do elemento selecionado em uma janela sem sair do local atual no editor de código.
 
 ## <a name="display"></a>Monitor
 

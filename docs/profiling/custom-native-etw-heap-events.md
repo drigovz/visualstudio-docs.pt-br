@@ -5,23 +5,23 @@ ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1414c2102d2b19728c8dfb74470fefae499bc622
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877131"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089260"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de heap de ETW nativos personalizados
 
 O Visual Studio contém uma variedade de [ferramentas de criação de perfil e diagnóstico](../profiling/profiling-feature-tour.md), incluindo um criador de perfil de memória nativa.  Esse criador de perfil vincula [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) do provedor de heap e fornece uma análise de como a memória está sendo alocada e utilizada.  Por padrão, essa ferramenta só pode analisar alocações feitas do heap padrão do Windows e todas as alocações fora desse heap nativo não serão exibidas.
 
-Há vários casos em que você pode desejar usar seu próprio heap personalizado e evitar a sobrecarga de alocação do heap padrão.  Por exemplo, você poderá usar [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) para alocar uma grande quantidade de memória no início do aplicativo ou do jogo e depois gerenciar seus próprios blocos nessa lista.  Nesse cenário, a ferramenta de criador de perfil de memória só verá essa alocação inicial e não o gerenciamento personalizado feito na parte de memória.  No entanto, ao usar o Provedor ETW de Heap Nativo Personalizado, é possível informar a ferramenta sobre as alocações que estão sendo feitas fora do heap padrão.
+Há vários casos em que você pode desejar usar seu próprio heap personalizado e evitar a sobrecarga de alocação do heap padrão.  Por exemplo, você poderá usar [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) para alocar uma grande quantidade de memória no início do aplicativo ou do jogo e depois gerenciar seus próprios blocos nessa lista.  Nesse cenário, a ferramenta de criador de perfil de memória só verá essa alocação inicial e não o gerenciamento personalizado feito na parte de memória.  No entanto, ao usar o Provedor ETW de Heap Nativo Personalizado, é possível informar a ferramenta sobre as alocações que estão sendo feitas fora do heap padrão.
 
 Por exemplo, em um projeto como o seguinte, em que `MemoryPool` é um heap personalizado, você verá apenas uma única alocação no heap do Windows:
 

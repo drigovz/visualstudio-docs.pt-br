@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dea7eca97ed938271977fea8e8fa5e41dbd19aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abca09620c82ba41f3acec5f878c621f6af02ae8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933697"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038845"
 ---
 # <a name="cores-view"></a>Exibição de núcleos
 A **Exibição de Núcleos** mostra como a execução do thread foi mapeada para os núcleos de processador lógico (escolha **Analisar** > **Visualizador de Simultaneidade** para iniciar o visualizador de simultaneidade). Se você estiver escrevendo aplicativos de servidor, essa exibição poderá ajudá-lo a otimizar o desempenho de cache usando o gerenciamento do pool de threads ou a afinidade de thread. Ela também pode ajudá-lo a examinar os casos em que o uso da afinidade de thread pode ter piorado o problema da migração de núcleo cruzado. A Exibição de Núcleos tem duas partes: um grafo e uma legenda.  

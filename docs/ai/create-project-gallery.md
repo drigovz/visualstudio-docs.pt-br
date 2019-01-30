@@ -1,5 +1,5 @@
 ---
-title: Criar um projeto nas Ferramentas de IA para Visual Studio
+title: Criar um projeto
 description: Criar um projeto usando um exemplo da galeria do Azure Machine Learning
 keywords: ia, visual studio, azure machine learning
 author: lisawong19
@@ -11,14 +11,14 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e44624b5aa6fc5bbb518b5c15798daeca6361680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797457"
 ---
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Criar um projeto de IA da galeria do Azure Machine Learning no Visual Studio
+# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Criar um projeto de IA da galeria do Azure Machine Learning no Visual Studio
 
 O Azure Machine Learning está integrado com as Ferramentas do Visual Studio para IA. É possível usá-lo para enviar trabalhos de aprendizado de máquina a destinos de computação remotos, como as máquinas virtuais do Azure, clusters Spark e muito mais. Saiba mais sobre a [Experimentação do Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 

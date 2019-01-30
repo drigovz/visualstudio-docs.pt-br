@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c9bed8b40e1ce601515a92f1f55a62d54cfb7d30
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ec9a01c7733404bdb5787beddf4d225c5c41cc2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917442"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006340"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Como: Instrumentar um componente do .NET Framework autônomo e coletar dados de memória com o criador de perfil usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar um componente do .NET Framework de um aplicativo autônomo, como um arquivo .exe ou .dll, e coletar informações de memória usando o criador de perfil.  

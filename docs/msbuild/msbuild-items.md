@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 872fc4de05b4f6349db0a2d54a7dfb7c282ab6e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345598"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004429"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 Itens do MSBuild são entradas no sistema de build e eles normalmente representam arquivos (os arquivos estão especificados no atributo `Include`). Os itens são agrupados em tipos de item com base em seus nomes de elemento. Os tipos de item são listas nomeadas de itens que podem ser usados como parâmetros para tarefas. As tarefas usam os valores do item para executar as etapas do processo de build.  

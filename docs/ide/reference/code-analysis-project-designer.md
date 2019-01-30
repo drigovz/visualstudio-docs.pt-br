@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9195bdb33b84420f66e93afb338b1c203c3886c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860122"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023113"
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
 Contém a ferramenta de análise de código que você pode optar por executar em seu código. A ferramenta relata informações sobre seus assemblies, como violações de regras de programação e design estabelecidas nas Diretrizes de Design do Microsoft .NET Framework.
