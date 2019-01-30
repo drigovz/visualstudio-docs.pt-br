@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfc05c208a072fbe1e17eeafdebb938b33aaaf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c30cadc2ab781712deebf7edb6fda47fce5eb724
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967288"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035400"
 ---
 # <a name="cores-view-zoom-tool"></a>Ferramenta de zoom da exibição de núcleos
 O controle de zoom é um controle deslizante que permite ampliar e reduzir a linha do tempo para que seja possível focar em áreas de interesse específico. Esse controle amplia o centro da exibição atual, então, ajuste a exibição antes de aplicar o zoom.  

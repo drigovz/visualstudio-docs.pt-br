@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2800bc660ac157fd7acf8d9d0452a21e62db45da
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: aa7aca674968251418242b57625fb9e0b8b3561e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940798"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funcionalidades de acessibilidade do Help Viewer
 A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todas as pessoas. Este tópico inclui informações sobre recursos, produtos e serviços que ajudam a tornar o Microsoft Help Viewer acessível a pessoas com uma ampla variedade de capacidades.

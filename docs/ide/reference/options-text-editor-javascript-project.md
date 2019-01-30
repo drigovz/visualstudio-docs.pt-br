@@ -11,15 +11,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be14c9953fed34e7bdd9507b6224875b1008a22
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: ff2fc32a173f1c05fc200c9acd9b37ad2307a3a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350222"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031806"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opções, Editor de Texto, JavaScript, Projeto
 
@@ -37,7 +37,7 @@ Essas opções determinam como o editor analisa os projetos, relata diagnóstico
 
 ## <a name="virtual-projects-in-solution-explorer"></a>Projetos virtuais no Gerenciador de Soluções
 
-Essas opções permitem que você escolha se deseja exibir Projetos Virtuais quando uma Solução é carregada ou não carregada. 
+Essas opções permitem que você escolha se deseja exibir Projetos Virtuais quando uma Solução é carregada ou não carregada.
 
 ## <a name="compile-on-save"></a>Compilar ao salvar
 

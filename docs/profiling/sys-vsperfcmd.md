@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a2fb99a6b43328fcc31a5cba0b1d4f0c3df168
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8197ef7c0bf8ba7b38302e5596966328687abc0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908795"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973688"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 A opção **Sys** de *VSPerfCmd.exe* define o evento de criação de perfil cuja amostra é fornecida aos eventos de chamada do sistema (chamadas de função do aplicativo cujo perfil é criado para o sistema operacional) e, opcionalmente, altera o número de chamadas em um intervalo de amostragem do padrão de 10.  
