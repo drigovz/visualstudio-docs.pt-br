@@ -2,22 +2,22 @@
 title: Tutorial do Python no Visual Studio etapa 6, trabalhar com o Git
 titleSuffix: ''
 description: Etapa 6 de um passo a passo básico do Python no Visual Studio, abordando os recursos relacionados ao Git do Visual Studio.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87a4e8c67d7d0f6f1fecabad87d7c2b9ebf7a422
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d7d792300a55c1ad7dee0b25f523f5574c6bca8
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928929"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231734"
 ---
 # <a name="step-6-work-with-git"></a>Etapa 6: Trabalhar com o Git
 

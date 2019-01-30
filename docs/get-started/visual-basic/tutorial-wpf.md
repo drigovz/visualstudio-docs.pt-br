@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c9d1dd1b17c9e3c301822a2c4a3b5eaae037d2f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 3e1789a14d1b3d398372a6490c901b8e9b347691
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54405366"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013295"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: como criar um aplicativo simples com o Visual Basic
 
@@ -270,5 +270,5 @@ Parabéns por concluir este passo a passo! Encontre o *.exe* compilado na soluç
 
 ## <a name="see-also"></a>Consulte também
 
-- [Novidades no Visual Studio 2017](../../ide/whats-new-in-visual-studio.md)
+- [Novidades no Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Dicas de produtividade](../../ide/productivity-tips-for-visual-studio.md)

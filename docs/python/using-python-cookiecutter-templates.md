@@ -1,22 +1,22 @@
 ---
 title: Usar modelos do CookieCutter com o Python
 description: O Visual Studio oferece suporte à extensão Cookiecutter gráfica para descobrir os modelos para o código Python e criar projetos a partir desses modelos.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958229"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231786"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usar a extensão Cookiecutter
 
@@ -60,7 +60,7 @@ Depois que o modelo for instalado localmente, o Cookiecutter exibirá uma págin
 
 ![Página de opções do Cookiecutter](media/cookiecutter-template-options.png)
 
-Cada modelo do Cookiecutter define seu próprio conjunto de opções e especifica um valor padrão para cada um (exibido como o texto sugerido em cada campo de entrada). Um valor padrão pode ser um snippet de código, geralmente, quando ele é um valor dinâmico que usa outras opções. 
+Cada modelo do Cookiecutter define seu próprio conjunto de opções e especifica um valor padrão para cada um (exibido como o texto sugerido em cada campo de entrada). Um valor padrão pode ser um snippet de código, geralmente, quando ele é um valor dinâmico que usa outras opções.
 
 É possível personalizar os valores padrão de opções específicas com um arquivo de configuração do usuário. Quando a extensão Cookiecutter detecta um arquivo de configuração do usuário, ela substitui os valores padrão do modelo pelos valores padrão da configuração do usuário. Esse comportamento é abordado na seção [Configuração do usuário](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) da documentação do Cookiecutter.
 
