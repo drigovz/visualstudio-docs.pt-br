@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743184a0f28df90e703ce355ecf5c2642036d2ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 868ee74ba01014514f5b6bec10fba0fc044f34e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928523"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Como: Comparar arquivos de dados de desempenho
 Você pode comparar os resultados de dois arquivos de dados de criadores de perfil diferentes (.*vsp* ou .*vsps*), criando um relatório ou uma exibição de comparação ("Diff"). A comparação mostra as diferenças, regressões de desempenho e as melhorias que ocorreram de uma sessão de criação de perfil para a outra.  

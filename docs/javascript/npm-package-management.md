@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845948"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948189"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gerenciar pacotes de npm no Visual Studio
 
@@ -36,7 +36,7 @@ A maneira mais fácil de instalar pacotes npm é por meio da janela de instalaç
 
 ![Instalar o novo pacote do npm usando o Gerenciador de Soluções](../javascript/media/solution-explorer-install-package.png)
 
-Nessa janela, você pode procurar por um pacote, especificar as opções e instalar. 
+Nessa janela, você pode procurar por um pacote, especificar as opções e instalar.
 
 ![Pesquisar pacote do npm](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ Você também pode usar o comando `.npm` na janela interativa do Node.js para ex
 Na janela, você pode usar comandos como o seguinte para instalar um pacote:
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > Por padrão, o npm será executado no diretório inicial do projeto. Se houver vários projetos na solução, especifique o nome ou o caminho do projeto entre colchetes. 
+ > Por padrão, o npm será executado no diretório inicial do projeto. Se houver vários projetos na solução, especifique o nome ou o caminho do projeto entre colchetes.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Se seu projeto não contiver um arquivo package.json, use `.npm init -y` para criar um novo arquivo package.json com as entradas padrão. 
+ > Se seu projeto não contiver um arquivo package.json, use `.npm init -y` para criar um novo arquivo package.json com as entradas padrão.
