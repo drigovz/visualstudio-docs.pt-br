@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee80d19dea5956c85c844863ffd41ec94c486486
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99e19df05aea81c9fe2b73fd1020318f3482d1bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841671"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964230"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Como: Referenciar informações de símbolo do Windows
 As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo (.*pdb*) para resolver nomes simbólicos como nomes de função em binários de programa. Siga estas etapas para baixar automaticamente e atualizar os arquivos .*pdb* corretos para a versão do Windows no computador local.  

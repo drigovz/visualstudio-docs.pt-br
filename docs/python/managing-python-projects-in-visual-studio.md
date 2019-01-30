@@ -1,22 +1,22 @@
 ---
 title: Gerenciar projetos de aplicativo do Python
 description: Os projetos do Visual Studio gerenciam dependências entre arquivos e a complexidade das relações em um aplicativo.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825286"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231929"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -113,7 +113,7 @@ Arquivos vinculados são ignorados em uma das seguintes condições:
 
 Para adicionar um item existente como um link, clique com o botão direito do mouse na pasta do projeto em que deseja adicionar o arquivo e, em seguida, selecione **Adicionar** > **Item Existente**. Na caixa de diálogo exibida, selecione um arquivo e escolha **Adicionar como Link** no menu suspenso do botão **Adicionar**. Desde que não existam arquivos conflitantes, esse comando criará um link na pasta selecionada. No entanto, o link não será adicionado se já existir um arquivo com o mesmo nome ou se já existir um link para esse arquivo no projeto.
 
-Se você tentar vincular a um arquivo que já existe nas pastas do projeto, ele será adicionado como um arquivo normal e não como um link. Para converter um arquivo em um link, selecione **Arquivo** > **Salvar Como** para salvar o arquivo em um local fora da hierarquia do projeto. O Visual Studio o converte em um link automaticamente. Da mesma forma, um link pode ser convertido novamente usando a opção **Arquivo** > **Salvar Como** para salvar o arquivo em algum lugar na hierarquia do projeto. 
+Se você tentar vincular a um arquivo que já existe nas pastas do projeto, ele será adicionado como um arquivo normal e não como um link. Para converter um arquivo em um link, selecione **Arquivo** > **Salvar Como** para salvar o arquivo em um local fora da hierarquia do projeto. O Visual Studio o converte em um link automaticamente. Da mesma forma, um link pode ser convertido novamente usando a opção **Arquivo** > **Salvar Como** para salvar o arquivo em algum lugar na hierarquia do projeto.
 
 Se você mover um arquivo vinculado no **Gerenciador de Soluções**, o link será movido, mas o arquivo real não será afetado. Da mesma forma, a exclusão de um link removerá o link sem afetar o arquivo.
 

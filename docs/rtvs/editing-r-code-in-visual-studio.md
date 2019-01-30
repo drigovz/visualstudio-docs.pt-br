@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918596"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Editar o código R no Visual Studio
 
@@ -40,7 +40,7 @@ Para alterar esse comportamento, confira a configuração **Avançado** > **Veri
 
 ## <a name="edit-and-organize-code"></a>Editar e organizar o código
 
-Conforme você digita o código, as RTVS fornecem preenchimento automático, conforme descrito na página [IntelliSense](r-intellisense.md). Ele também faz a formatação automática, como o fechamento de chaves e parênteses: 
+Conforme você digita o código, as RTVS fornecem preenchimento automático, conforme descrito na página [IntelliSense](r-intellisense.md). Ele também faz a formatação automática, como o fechamento de chaves e parênteses:
 
 ![Animação de formatação embutida](media/editing-inline-formatting.gif)
 
@@ -129,6 +129,6 @@ As opções na guia **R** > **Avançado** são específicas das RTVS:
 | | Lista de conclusão no primeiro caractere | On | Mostra a lista de conclusão nos primeiros tipos de caracteres. Quando desabilitada, uma lista de conclusão é exibida com **Editar** > **IntelliSense** > **Listar Membros** (**Ctrl**+**J**). |
 | | Lista de conclusão com a tecla **Tab** | Off | Invoca uma lista de conclusão digitando um ou mais caracteres e pressionando **Tab**. |
 | | Corresponder parcialmente ao digitar nomes de argumento | Off | Ao digitar os nomes de argumento em uma chamada de função, a ajuda de assinatura mostra uma descrição do argumento que é a melhor correspondência. |
-| Janela Interativa | Verificação de sintaxe no console do R | Off | Aplica a verificação na janela interativa de sintaxe. A verificação de sintaxe pode não funcionar corretamente com instruções de várias linhas. | 
+| Janela Interativa | Verificação de sintaxe no console do R | Off | Aplica a verificação na janela interativa de sintaxe. A verificação de sintaxe pode não funcionar corretamente com instruções de várias linhas. |
 | Estrutura de tópicos | Estrutura de tópicos de código | On | Cria regiões recolhíveis automaticamente para áreas como instruções de várias linhas. |
 | Verificação de sintaxe | Mostrar erros de sintaxe | On | Habilita a verificação de sintaxe automática do código. |
