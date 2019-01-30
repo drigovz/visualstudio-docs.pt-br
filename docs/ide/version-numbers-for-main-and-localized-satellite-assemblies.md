@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a22978ee432f4de261932808589e92c9738a8b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6776df2bd0edf6fc639604e6b00502dbf83f657
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880475"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925541"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Números de versão para assemblies satélite principais e localizados
 A classe <xref:System.Resources.SatelliteContractVersionAttribute> fornece suporte ao controle de versão de um assembly principal que usa recursos localizados por meio do Gerenciador de Recursos. A aplicação de <xref:System.Resources.SatelliteContractVersionAttribute> ao assembly principal de um aplicativo permite atualizar e reimplantar o assembly sem atualizar seus assemblies satélites. Por exemplo, é possível usar a classe <xref:System.Resources.SatelliteContractVersionAttribute> com um service pack que não introduz novos recursos sem recompilar e reimplantar os assemblies satélites. Para que os recursos localizados fiquem disponíveis, a versão do contrato satélite do assembly principal deve corresponder à classe <xref:System.Reflection.AssemblyVersionAttribute> dos assemblies satélites. Especifique um número de versão exato no <xref:System.Resources.SatelliteContractVersionAttribute>. Não são permitidos caracteres curinga, como "*". Para obter mais informações, consulte [Recuperar recursos](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).

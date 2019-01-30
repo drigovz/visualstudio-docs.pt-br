@@ -6,15 +6,15 @@ ms.date: 04/25/2017
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62bf07ba0f5f63daa369e88795824f53f9109ce6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43c58825aab4d882ac6ca80b71b2c5a0aa542f76
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942288"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994560"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medir o uso de memória no Visual Studio
 Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico **Uso de Memória** integrada ao depurador. A ferramenta Uso de Memória permite que você obtenha um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa para entender o impacto do uso de memória dos tipos de objeto. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  

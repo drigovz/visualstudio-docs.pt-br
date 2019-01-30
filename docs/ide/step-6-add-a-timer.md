@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ca514f4bfb5b3c73d2f72b06afdab72a987ed0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab5b1a83c377b58bd42f03e3898243b3e956e31b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016338"
 ---
 # <a name="step-6-add-a-timer"></a>Etapa 6: Adicionar um temporizador
 Em seguida, adicione um controle <xref:System.Windows.Forms.Timer> ao jogo de correspondência. Um temporizador aguarda um número especificado de milissegundos e, em seguida, dispara um evento, conhecido como um *tique*. Isso é útil para iniciar uma ação, ou repetir uma ação, regularmente. Nesse caso, você usará um temporizador para permitir que os jogadores escolham dois ícones e, se os ícones não corresponderem, ocultar os dois ícones novamente após um curto período.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67af3509-3a7d-435d-bc37-5262448da915
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6741aa96941e9265ab414ea7d73bb614ace6f9b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e16378663dd07bb9810661ad50d3f1c011dfdd80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913944"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000361"
 ---
 # <a name="memory-management-time"></a>Tempo de gerenciamento de memória
 Esses segmentos na linha do tempo estão associados os tempos de bloqueio categorizados como Gerenciamento da Memória. Esse cenário significa que um thread está bloqueado por um evento associado a uma operação de gerenciamento de memória, como paginação. Durante esse tempo, um thread foi bloqueado em um estado de API ou kernel que a Visualização Simultânea está contando como gerenciamento de memória. Eles incluem eventos como paginação e alocação de memória.  

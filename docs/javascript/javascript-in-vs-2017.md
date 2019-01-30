@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012996"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript no Visual Studio 2017
 
@@ -206,7 +206,8 @@ Você pode usar o seguinte `tsconfig.json` para verificar se o serviço de lingu
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Solução de problemas O serviço de linguagem JavaScript foi desabilitado para os seguintes projetos
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Solução de problemas O serviço de linguagem JavaScript foi desabilitado para os seguintes projetos
 Quando você abre um projeto do JavaScript que tem bastante conteúdo, pode receber a mensagem "O serviço de linguagem JavaScript foi desabilitado para os seguintes projetos”. O motivo mais comum para ter uma grande quantidade de fontes do JavaScript é devido a incluir bibliotecas com o código-fonte que excede o limite de 20 MB do projeto.
 
 Uma maneira simples de otimizar seu projeto é adicionar um arquivo `tsconfig.json` em sua raiz de projeto para permitir que o serviço de linguagem saiba quais arquivos é seguro ignorar. Use o exemplo a seguir para excluir os diretórios mais comuns em que as bibliotecas estão armazenadas:
@@ -231,7 +232,7 @@ Uma maneira simples de otimizar seu projeto é adicionar um arquivo `tsconfig.js
 }
 ```
 
-Adicione mais diretórios conforme considerar adequado. Alguns outros exemplos incluem os diretórios "fornecedor" ou "wwwroot/lib". 
+Adicione mais diretórios conforme considerar adequado. Alguns outros exemplos incluem os diretórios "fornecedor" ou "wwwroot/lib".
 
 > [!NOTE]
 > A propriedade de compilador `disableSizeLimit` pode ser usada também para desabilitar o limite de verificação de 20 MB. Adote precauções especiais ao usar essa propriedade, uma vez que desabilitar o limite pode causar a falha do serviço de linguagem.

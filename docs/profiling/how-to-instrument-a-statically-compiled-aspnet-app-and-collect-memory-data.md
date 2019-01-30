@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d37df1d22f42e3046960c81b1cd75d6c6ae0898f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a5a8a0e0df5e70012c02eb1c2b325173d9d5481
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850590"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069922"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como: Instrumentar um aplicativo Web ASP.NET compilado estaticamente e coletar dados de memória usando a linha de comando do criador de perfil
 Este artigo descreve como usar as ferramentas da linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar um componente Web ou site do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pré-compilado e coletar dados detalhados de alocação de memória do .NET, de tempo de vida do objeto e de tempo.  

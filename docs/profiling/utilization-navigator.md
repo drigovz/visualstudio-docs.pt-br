@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ab02d924e7d3ab3dae7813a18483cb1dbae856
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e6dffeaa75ea6dd0e1c9c46cc0fc48c83c8849c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002568"
 ---
 # <a name="utilization-navigator"></a>Navegador da utilização
 É possível usar o Navegador da Utilização na Visualização Simultânea para selecionar um intervalo de tempo em um rastreamento. A Visualização Simultânea mostra o uso dos núcleos da CPU pelo processe de destino ao longo do tempo. Assim, fica mais fácil examinar os padrões de uso da CPU e comparar os dados de uso e dados de outras exibições. O Navegador da Utilização aparece na parte superior de cada exibição da Visualização Simultânea. A ilustração a seguir mostra o Navegador da Utilização.  

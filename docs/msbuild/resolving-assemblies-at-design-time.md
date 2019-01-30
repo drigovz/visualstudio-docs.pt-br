@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e8f2bc946df5a84b85fc64f513d35c94c98b152
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d599cd7acc4402408c1c5852e7aafe73e93b41ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986058"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991821"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Resolver assemblies em tempo de design
 Quando você adiciona uma referência a um assembly por meio da guia **.NET** da caixa de diálogo **Adicionar Referência**, a referência aponta para um assembly de referência intermediário ou seja, um assembly que contém todas as informações de tipo e a assinatura, mas que não necessariamente contém qualquer código. A guia **.NET** lista assemblies de referência que correspondem aos assemblies de tempo de execução do .NET Framework. Além disso, ela lista os assemblies de referência que correspondem aos assemblies de tempo de execução nas pastas AssemblyFoldersEx registradas que são usados por terceiros.  

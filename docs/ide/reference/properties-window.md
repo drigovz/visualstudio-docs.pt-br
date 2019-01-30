@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b2699c0c7097eca29cd853d68c8a0e2d910a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1302b2e035bc884bd6b3e914b848eada79e45236
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875570"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014985"
 ---
 # <a name="properties-window"></a>Janela Propriedades
 Use esta janela para exibir e alterar as propriedades de tempo de design e os eventos dos objetos selecionados localizados em editores e designers. Você também pode usar a janela **Propriedades** para editar e exibir as propriedades do arquivo, do projeto e da solução. Você pode encontrar a janela **Propriedades** no menu **Exibir**. Também pode abri-la pressionando F4 ou digitando **Propriedades** na janela **Início Rápido**.

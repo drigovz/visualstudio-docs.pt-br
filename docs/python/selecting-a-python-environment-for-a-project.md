@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879352"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010201"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Como selecionar um ambiente do Python para um projeto
 
@@ -46,7 +46,7 @@ O menu de contexto no nó **Ambientes do Python** também fornece comandos adici
 
 ## <a name="use-virtual-environments"></a>Usar ambientes virtuais
 
-Um ambiente virtual é uma combinação exclusiva de um intérprete Python específico e um conjunto específico de bibliotecas diferente de outros ambientes conda e globais. Um ambiente virtual é específico a um projeto e é mantido em uma pasta do projeto. Essa pasta contém as bibliotecas instaladas do ambiente e um arquivo *pyvenv.cfg* que especifica o caminho do *interpretador de base* do ambiente em outro lugar no sistema de arquivos. Ou seja, um ambiente virtual não contém uma cópia do interpretador, apenas um link para ele. 
+Um ambiente virtual é uma combinação exclusiva de um intérprete Python específico e um conjunto específico de bibliotecas diferente de outros ambientes conda e globais. Um ambiente virtual é específico a um projeto e é mantido em uma pasta do projeto. Essa pasta contém as bibliotecas instaladas do ambiente e um arquivo *pyvenv.cfg* que especifica o caminho do *interpretador de base* do ambiente em outro lugar no sistema de arquivos. Ou seja, um ambiente virtual não contém uma cópia do interpretador, apenas um link para ele.
 
 Um benefício de usar um ambiente virtual é que, à medida que você desenvolve um projeto ao longo do tempo, o ambiente virtual sempre reflete as dependências exatas do projeto. (Um ambiente compartilhado global, por outro lado, contém qualquer número de bibliotecas, não importa se você as usa no projeto ou não.) É possível criar facilmente um arquivo *requirements.txt* pelo ambiente virtual, que é usado para reinstalar essas dependências em outro computador de desenvolvimento ou produção. Para saber mais, confira [Gerenciar pacotes necessários com requirements.txt](managing-required-packages-with-requirements-txt.md).
 

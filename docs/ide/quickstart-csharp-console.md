@@ -9,17 +9,17 @@ ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c41aac277136de164ba7148e26fc9c0f422b2eef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853912"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014608"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo de console em C#
 
@@ -49,7 +49,7 @@ Primeiro, você criará um projeto de aplicativo em C#. O tipo de projeto inclui
 
 ## <a name="create-the-application"></a>Criar o aplicativo
 
-Depois que você seleciona o modelo em C# e dá um nome ao projeto, o Visual Studio cria um aplicativo simples “Olá, Mundo”. 
+Depois que você seleciona o modelo em C# e dá um nome ao projeto, o Visual Studio cria um aplicativo simples “Olá, Mundo”.
 
 Para isso, ele chama o método <xref:System.Console.WriteLine%2A> para exibir a cadeia de caracteres literal "Olá, Mundo!" na janela do console.
 

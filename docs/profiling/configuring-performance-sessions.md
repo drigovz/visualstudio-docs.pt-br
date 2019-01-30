@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7dd85cc1a4fb00acfc6d6f7afde05917552f6c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7590cec386fbb455284b59d1d37f32b2eaa56546
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854328"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012164"
 ---
 # <a name="configure-performance-sessions"></a>Configurar sessões de desempenho
 Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], é possível coletar uma grande variedade de dados de desempenho para um grande número de tipos de aplicativos. Esta seção mostra como usar o Assistente de Desempenho, as propriedades da sessão de desempenho e o binário de destino para configurar as Ferramentas de Criação de Perfil para coletar os dados que lhe interessam. As propriedades de configuração das Ferramentas de Criação de Perfil também podem ser usadas para controlar a quantidade de dados coletada em uma execução de criação de perfil. Para saber mais, confira [Controlar a coleta de dados](../profiling/controlling-data-collection.md).  

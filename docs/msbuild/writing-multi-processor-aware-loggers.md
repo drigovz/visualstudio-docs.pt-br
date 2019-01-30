@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97290d1762194a14bcdcef2af74de20a9f2083a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aefd76da0fef3b0ab19dae3b4b2064f83eaa0531
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005261"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Escrever agentes com reconhecimento de multiprocessador
 A capacidade do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de tirar proveito de vários processadores pode diminuir o tempo de criação do projeto, mas também adiciona complexidade para criar o log de eventos. Em um ambiente de processador único, eventos, erros, avisos e mensagens chegam ao agente de uma maneira previsível e sequencial. No entanto, em um ambiente com vários processadores, eventos de origens diferentes podem chegar ao mesmo tempo ou fora de sequência. Para isso, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um agente com reconhecimento de multiprocessador e um novo modelo de registro em log e permite que você crie "agentes de encaminhamento" personalizados.  
