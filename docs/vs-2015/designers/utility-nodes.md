@@ -1,25 +1,20 @@
 ---
 title: Nós de Utilitário | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5907b388e59b136a2d89b02348e7ac3d2b25d63c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783857"
 ---
 # <a name="utility-nodes"></a>Nós de utilitário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ No Designer de Sombreador, nós de utilitário representam cálculos comuns e ú
 |**Vetor de Máscara**|Componentes de máscaras de vetor especificado.<br /><br /> É possível usá-lo para remover canais de cores específicos de um valor de cor ou para impedir que componentes específicos tenham um efeito em cálculos subsequentes.<br /><br /> **Entrada:**<br /><br /> `Vector`: `float4`<br /> O vetor a ser mascarado.<br /><br /> **Saída:**<br /><br /> `Output`: `float4`<br /> O vetor mascarado.|**Vermelho / X**<br /> **False** para mascarar o componente vermelho (x); caso contrário, **True**.<br /><br /> **Verde / Y**<br /> **False** para mascarar o componente verde (y); caso contrário, **True**.<br /><br /> **Azul / Z**<br /> **False** para mascarar o componente azul (z); caso contrário, **True**.<br /><br /> **Alfa / W**<br /> **False** para mascarar o componente alfa (w); caso contrário, **True**.|  
 |**Vetor de Reflexão**|Calcula o vetor de reflexão do pixel atual no espaço tangente, com base na posição da câmera.<br /><br /> Pode ser usado para calcular reflexões, coordenadas de cubemap e contribuições de iluminação especular<br /><br /> **Entrada:**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> O vetor perpendicular à superfície do pixel atual, definido no espaço tangente do pixel atual. É possível usar isso para perturbar vetor perpendicular à superfície aparente, como no mapeamento normal.<br /><br /> **Saída:**<br /><br /> `Output`: `float3`<br /> O vetor de reflexão.|Nenhum|  
 |**Especular**|Calcula a contribuição de iluminação especular acordo com o modelo de iluminação de Phong, usando o vetor perpendicular à superfície especificado.<br /><br /> A iluminação especular dá uma aparência brilhante e refletora a um objeto, por exemplo, água, plástico ou metais.<br /><br /> **Entrada:**<br /><br /> `Surface Normal`: `float3`<br /> O vetor perpendicular à superfície do pixel atual, definido no espaço tangente do pixel atual. É possível usar isso para perturbar vetor perpendicular à superfície aparente, como no mapeamento normal.<br /><br /> **Saída:**<br /><br /> `Output`: `float3`<br /> A contribuição de cor de realces especulares.|Nenhum|
-
-
-

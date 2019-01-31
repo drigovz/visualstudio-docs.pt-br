@@ -1,14 +1,9 @@
 ---
-title: 'DA0006: substituir Equals() para tipos de valor | Microsoft Docs'
-ms.custom: ''
+title: 'DA0006: Substituir Equals() por tipos de valor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
@@ -18,15 +13,15 @@ ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a60bc533ccc826b09e288e7d8ca934702f0443e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793026"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: substituir Equals() para tipos de valor
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: Substituir Equals() por tipos de valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0006 |  
@@ -44,7 +39,4 @@ Id da regra | DA0006 |
  Para obter mais informações sobre como substituir Equals e os operadores de igualdade, consulte [Diretrizes para Implementação de Equals e o Operador de Igualdade (= =)](http://go.microsoft.com/fwlink/?LinkId=177818).  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
- Para obter um exemplo de implementação de Equals e operadores de igualdade, consulte a regra de análise de código [CA1815: substituir Equals e operador Equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
-
-
-
+ Para obter um exemplo de implementação de Equals e operadores de igualdade, confira a regra de análise de código [CA1815: Substituir equals e operador equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

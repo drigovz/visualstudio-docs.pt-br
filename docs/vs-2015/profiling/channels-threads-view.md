@@ -1,14 +1,9 @@
 ---
 title: Canais (exibição de threads) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feebccb0905a4e3161484b5c1fe9f0142fa41d53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743534"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794196"
 ---
 # <a name="channels-threads-view"></a>Canais (exibição de threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ A Visualização Simultânea mostra quatro tipos de canais: canais de thread, ca
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
-
-
-

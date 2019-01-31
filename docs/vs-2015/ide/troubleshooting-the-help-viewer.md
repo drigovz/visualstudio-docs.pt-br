@@ -1,14 +1,9 @@
 ---
 title: Solução de problemas do Visualizador da Ajuda | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: troubleshooting
 helpviewer_keywords:
 - troubleshooting [Help Viewer 2.0]
 - Help Viewer 2.0, troubleshooting
@@ -16,13 +11,13 @@ ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774595"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solucionando problemas do Visualizador da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ Este tópico aborda problemas que podem ocorrer com o Visualizador da Ajuda.
   
 ## <a name="see-also"></a>Consulte também  
  [Guia do administrador do Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)
-
-
-
