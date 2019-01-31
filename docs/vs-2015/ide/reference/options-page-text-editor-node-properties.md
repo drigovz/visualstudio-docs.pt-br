@@ -1,14 +1,9 @@
 ---
 title: Página Opções, Propriedades do Nó de Editor de Texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,13 +11,13 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767986"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de Propriedades, Editor de Texto, Propriedades do Nó
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
 |WordWrap|Get/Set (Booliano)|Determina se a exibição quebra linhas longas nos limites da palavra. Definir como `true` faz com que o item de propriedade `VirtualSpace` (nesta lista) seja definido como `false`.|  
 |WordWrapGlyphs|Get/Set (Booliano)|Exibe um glifo no fim de uma linha; indica que a linha é quebrada para a próxima linha.|  
 |EnableLeftClickForURLs|Get/Set (Booliano)|Determina se o editor sublinha URLs e permite que com um único clique no botão esquerdo do mouse seja possível pular para a URL no navegador da Web registrado pelo sistema.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina o estilo do recuo: Padrão, Inteligente ou Nenhum.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina o estilo do recuo: Default, Smart ou None.|  
 |TabSize|Get/Set (Longo)|Representa o número de espaços que é igual a uma tabulação. Definir um inteiro fora do intervalo de 1 a 60 (inclusive) causa falhas.|  
 |InsertTabs|Get/Set (Booliano)|Se `True`, caracteres de tabulação serão usados no recuo.|  
 |IndentSize|Get/Set (Longo)|Representa o número de espaços que é igual a um nível de recuo. Definir um valor inteiro fora do intervalo de 1 a 60 (inclusive) causa falhas.|  
@@ -76,6 +71,3 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
  [Determinando os nomes de itens de propriedades em páginas de opções](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Página Opções, Propriedades do Nó de Ambiente](../../ide/reference/options-page-environment-node-properties.md)   
  [Página de Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4437b108aebd63950bce0ea07b9b1e493cf759af
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: e6033ce2329974cc3c2b1f140d02d112e4f87ba9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441817"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985832"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Aprenda a depurar o código do Visual Basic usando o Visual Studio
 
@@ -206,7 +206,7 @@ Neste tutorial, você irá:
 
     ![Definir um ponto de interrupção](../visual-basic/media/get-started-set-breakpoint-vb.png)
 
-    Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não. 
+    Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não.
 
 2. Pressione **F5** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração"). O aplicativo será iniciado e o depurador executará a linha de código em que você definiu o ponto de interrupção.
 

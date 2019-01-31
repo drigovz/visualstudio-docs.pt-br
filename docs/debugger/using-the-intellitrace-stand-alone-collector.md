@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 96a7fe0e46420a2469271219aa44ee76c9a49774
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227714"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986794"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usando o coletor IntelliTrace autônomo (C#, Visual Basic)
 
@@ -78,7 +78,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Instalar o coletor
 
-1. No servidor do aplicativo, crie o diretório do coletor, como por exemplo: **C:\IntelliTraceCollector**
+1. No servidor do aplicativo, crie o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
 2. Obtenha o coletor no Centro de Download da Microsoft na pasta de instalação do Visual Studio 2013 atualização 3. [Coletor IntelliTrace para Visual Studio 2013 atualização 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
@@ -119,7 +119,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 2.  Usar o Windows **icacls** comando para conceder permissões completas de administrador para o diretório do coletor de servidor. Por exemplo:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domínio\IDdoAdministrador>* `":F`
 
 3.  Para coletar dados de um aplicativo da web ou do SharePoint:
 
@@ -127,7 +127,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
          Por exemplo:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domínio\IDdoUsuário>* `":F`
 
     2.  Conceda ao pool de aplicativos para o aplicativo da web ou do SharePoint permissões de leitura e execução para o diretório do coletor.
 
@@ -167,7 +167,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Configurar permissões para o diretório de arquivos .iTrace
 
-1. No servidor do aplicativo, crie o diretório do arquivo .iTrace, como por exemplo: **C:\IntelliTraceLogFiles**
+1. No servidor do aplicativo, crie o diretório do arquivo .iTrace, por exemplo: **C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - Para evitar que seu aplicativo fique mais lento, escolha um local em um disco de alta velocidade local que não seja muito ativo.

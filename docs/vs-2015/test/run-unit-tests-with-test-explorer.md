@@ -1,26 +1,21 @@
 ---
 title: Executar testes de unidade com o Gerenciador de Testes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805102"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Exibir o código-fonte de um método de teste  
- Para exibir o código-fonte para um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir teste** no menu de contexto (teclado: F12).  
+ Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir Teste** no menu de contexto (teclado: F12).  
   
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
@@ -135,8 +130,8 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
   
 |Grupo|Descrição|  
 |-----------|-----------------|  
-|**Duração**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|  
-|**Resultado**|Agrupa testes por resultados da execução: **testes com falha**, **testes ignorados**, **testes aprovados**.|  
+|**Duração**|Agrupa testes pelo tempo de execução: **Rápido**, **Médio** e **Lento**.|  
+|**Resultado**|Agrupa testes pelos resultados da execução: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|  
 |**Características**|Agrupa teste por pares de categoria/valor que você define. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|  
 |**Projeto**|Agrupa teste por nome dos projetos.|  
   
@@ -216,7 +211,7 @@ TEST_METHOD(Method1)
 |**Caminho do arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|  
 |**Nome Totalmente Qualificado**|Procura o nome de arquivo totalmente qualificado dos namespaces de teste, classes e métodos para encontrar correspondências.|  
 |**Saída**|Procura as mensagens de erro definidas pelo usuário que são gravadas para a saída padrão (stdout) ou erro padrão (stderr). A sintaxe para especificar mensagens de saúde é definida pela estrutura de teste de unidade.|  
-|**Resultado**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|  
+|**Resultado**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|  
   
  Para excluir um subconjunto dos resultados de um filtro, use a seguinte sintaxe:  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Recursos externos  
   
 ###  <a name="BKMK_Guidance"></a> Diretrizes  
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testando para entrega contínua com Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Consulte também  
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)   
  [Executar um teste de unidade como um processo de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dd949f921c3d504823e9204e0974617c8a2b3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863687"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953179"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Início Rápido: Criar um projeto por meio de um modelo do Cookiecutter
 
@@ -26,7 +26,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 1. Inicie o Visual Studio.
 
-1. Escolha **Arquivo** > **Novo** > **De Cookiecutter**. Esse comando abre uma janela no Visual Studio, na qual você pode procurar modelos. 
+1. Escolha **Arquivo** > **Novo** > **De Cookiecutter**. Esse comando abre uma janela no Visual Studio, na qual você pode procurar modelos.
 
     ![Novo projeto de modelo do Cookiecutter](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 1. Quando o processo for concluído, você verá a mensagem **Arquivos criados com êxito.** Selecione o comando **Abrir no Gerenciador de Soluções** para abrir o projeto.
 
-1. Pressione **Ctrl**+**F5** ou escolha **Depurar** > **Iniciar Sem Depuração** para executar o programa. 
+1. Pressione **Ctrl**+**F5** ou escolha **Depurar** > **Iniciar Sem Depuração** para executar o programa.
 
     ![Saída do projeto do modelo python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 

@@ -1,14 +1,9 @@
 ---
 title: Configurando sessões de desempenho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - common tasks, performance
 - common tasks, profiling tools
@@ -18,13 +13,13 @@ ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 280d9023167b4d83dfb8b0137301219a518521b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c479a2c62d40b52c085f56b424cf3151e93f487c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790390"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774690"
 ---
 # <a name="configuring-performance-sessions"></a>Configurando sessões de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +33,12 @@ Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../includes/vsprv
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Definir as opções básicas de criação de perfil:** é necessário configurar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] para usar o servidor de símbolos da Microsoft. Isso garantirá que você tenha acesso aos símbolos, como nomes de função e de parâmetro, da versão atual do Windows e de outros aplicativos da Microsoft. Também é possível especificar outras opções gerais antes que uma sessão de criação de perfil seja iniciada, como permissões de sistema para as ferramentas de criação de perfil e os nomes dos arquivos de dados de criação de perfil.|-   [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [Como serializar informações de símbolo](../profiling/how-to-serialize-symbol-information.md)<br />-   [Como definir a sessão atual](../profiling/how-to-set-the-current-session.md)<br />-   [Como definir permissões](../profiling/how-to-set-permissions.md)<br />-   [Como definir opções de nome de arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)|  
-|**Especificar os dados que você deseja coletar:** os procedimentos usados para configurar uma sessão de criação de perfil dependem do tipo de aplicativo de destino para o qual você deseja criar um perfil e o tipo de dados de desempenho que você deseja coletar.|-   [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)<br />-   [Coletando estatísticas de desempenho usando amostragem](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [Coletando a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Coletando dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [Como analisar código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Coletando dados de simultaneidade do thread e do processo](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [Coletando dados de desempenho adicionais](../profiling/collecting-additional-performance-data.md)|  
-|**Definir opções avançadas de configuração:** ao criar o perfil de aplicativos .NET Framework que carregam várias versões do CLR (Common Language Runtime), é possível especificar qual versão terá o perfil criado. Quando você tiver vários arquivos .exe em uma sessão de desempenho, será possível definir a ordem de inicialização dos binários.|-   [Como especificar o tempo de execução do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [Como especificar o início do binário](../profiling/how-to-specify-the-binary-to-start.md)|  
+|**Definir as opções básicas de criação de perfil:** É necessário configurar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] para usar o servidor de símbolos da Microsoft. Isso garantirá que você tenha acesso aos símbolos, como nomes de função e de parâmetro, da versão atual do Windows e de outros aplicativos da Microsoft. Também é possível especificar outras opções gerais antes que uma sessão de criação de perfil seja iniciada, como permissões de sistema para as ferramentas de criação de perfil e os nomes dos arquivos de dados de criação de perfil.|-   [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [Como: Serializar informações de símbolo](../profiling/how-to-serialize-symbol-information.md)<br />-   [Como: Configurar a sessão atual](../profiling/how-to-set-the-current-session.md)<br />-   [Como: Configurar permissões](../profiling/how-to-set-permissions.md)<br />-   [Como: Definir opções de nome de arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)|  
+|**Especificar os dados que você deseja coletar:** Os procedimentos usados para configurar uma sessão de criação de perfil dependem do tipo de aplicativo de destino para o qual você deseja criar um perfil e o tipo de dados de desempenho que você deseja coletar.|-   [Como: Escolher os métodos de coleta](../profiling/how-to-choose-collection-methods.md)<br />-   [Coletando estatísticas de desempenho usando amostragem](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [Coletando a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Coletando dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [Como: Criar perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Coletando dados de simultaneidade do thread e do processo](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [Coletando dados de desempenho adicionais](../profiling/collecting-additional-performance-data.md)|  
+|**Definir opções avançadas de configuração:** Ao criar o perfil de aplicativos .NET Framework que carregam várias versões do CLR (Common Language Runtime), é possível especificar qual versão terá o perfil criado. Quando você tiver vários arquivos .exe em uma sessão de desempenho, será possível definir a ordem de inicialização dos binários.|-   [Como: Especificar o tempo de execução do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [Como: Especificar o binário a ser iniciado](../profiling/how-to-specify-the-binary-to-start.md)|  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Controlando a coleta de dados](../profiling/controlling-data-collection.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)
-
-
-

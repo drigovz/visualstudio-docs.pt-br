@@ -1,25 +1,20 @@
 ---
 title: Visualizando eventos EventSource como marcadores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742553"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801486"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizando eventos EventSource como marcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
   
 ### <a name="marker-type"></a>Tipo de marcador  
   
-1.  Eventos que tenham [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop são tratados como o início ou fim de um período, respectivamente.  Períodos aninhados ou sobrepostos não podem ser exibidos. Pares de eventos que começam em um thread e terminam em outro não podem ser exibidos.  
+1.  Eventos que tenham [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop são tratados como o início ou fim de um período, respectivamente.  Períodos aninhados ou sobrepostos não podem ser exibidos. Pares de eventos que começam em um thread e terminam em outro não podem ser exibidos.  
   
-2.  Um evento cujo Opcode não é win:Start nem win:Stop é tratado como um sinalizador de marcador, a menos que seu [Nível](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) seja win:Verbose ou superior.  
+2.  Um evento cujo Opcode não é win:Start nem win:Stop é tratado como um sinalizador de marcador, a menos que seu [Nível](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) seja win:Verbose ou superior.  
   
 3.  Em todos os outros casos, o evento é tratado como uma mensagem.  
   
@@ -43,12 +38,12 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |Nível ETW|Importância da Visualização Simultânea|  
 |---------------|---------------------------------------|  
 |win:LogAlways|Normal|  
-|win:Critical|Critical|  
+|win:Critical|Crítico|  
 |win:Error|Crítico|  
-|win:Warning|High|  
+|win:Warning|Alta|  
 |win:Informational|Normal|  
-|win:Verbose|Low|  
-|Maior que win:verbose|Low|  
+|win:Verbose|Baixo|  
+|Maior que win:verbose|Baixo|  
   
 ### <a name="series-name"></a>Nome da Série  
  O nome da tarefa do evento é usado para o nome da série. O nome da série está vazio se nenhuma tarefa tiver sido definida para o evento.  
@@ -79,12 +74,12 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |Valor de cvImportance|Importância da Visualização Simultânea|  
 |------------------------|---------------------------------------|  
 |0|Normal|  
-|1|Critical|  
-|2|High|  
-|3|High|  
+|1|Crítico|  
+|2|Alta|  
+|3|Alta|  
 |4|Normal|  
 |5|Baixo|  
-|Todos os outros valores|Low|  
+|Todos os outros valores|Baixo|  
   
 ### <a name="series-name"></a>Nome da Série  
  Use o campo de evento `cvSeries`, uma cadeia de caracteres, para controlar o nome que a Visualização Simultânea dá a um evento do EventSource.  
@@ -103,6 +98,3 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
   
 ## <a name="see-also"></a>Consulte também  
  [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md)
-
-
-

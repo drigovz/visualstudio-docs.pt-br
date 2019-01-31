@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6addfb72ae1e67b846433c9762163138523df68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6254ce933ccfc54f28e8e0e893932a5fbda27a0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981240"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Depurar aplicativos ClickOnce que usam System.Deployment.Application
 Na [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação permite que você configure como um aplicativo é atualizado. No entanto, se você precisar usar e personalizar advanced [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] recursos de implantação, você precisará acessar o modelo de objeto de implantação fornecido pelo <xref:System.Deployment.Application>. Você pode usar o <xref:System.Deployment.Application> APIs para tarefas avançadas, como:  
