@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8419ea4f653d870802fd104da2824952b422ab6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2509b7e3c373cecfe5cd1554805554afbedd2b3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999308"
 ---
 # <a name="graphics-diagnostics-examples"></a>Exemplos de diagnóstico de gráficos
 Esses exemplos mostram como depurar problemas de renderização em aplicativos baseados em DirectX usando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Diagnóstico de Gráficos.  
@@ -52,4 +52,4 @@ Esses exemplos mostram como depurar problemas de renderização em aplicativos b
 ## <a name="debugging-compute-shaders"></a>Depurando sombreadores de cálculo  
  Você pode usar o Diagnóstico de Gráficos para depurar kernels do sombreador de cálculo do DirectCompute que geram resultados incorretos. Com o DirectCompute, você pode usar a potência computacional da GPU para realizar cálculos em um grande número de elementos de dados paralelos. Para determinados tipos de problemas, utilizar a GPU pode ter um desempenho muitas vezes mais rápido que até mesmo um código de CPU bem-otimizado. No entanto, depuradores tradicionais não são capazes de detectar códigos executados na GPU. Depurar esse tipo de código requer ferramentas especializadas, que geralmente são específicas do fornecedor e podem não se integrar bem com o Visual Studio. Para tornar a depuração de sombreadores de cálculo mais consistente entre uma série de GPUs, o Diagnóstico de Gráficos captura eventos de expedição do DirectCompute, além de eventos de renderização do Direct3D, para que você possa usar ferramentas familiares para depurar problemas no código do sombreador de cálculo.  
   
- Para um cenário que demonstra como depurar um problema de simulação é causado por um bug em um sombreador de cálculo, consulte [passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de cálculo](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+ Para um cenário que demonstra como depurar um problema de simulação é causado por um bug em um sombreador de cálculo, consulte [instruções passo a passo: usando diagnóstico de gráficos para depurar um sombreador de computação](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md).
