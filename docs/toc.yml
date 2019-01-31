@@ -230,6 +230,8 @@ items:
           href: ide/how-to-update-existing-templates.md
         - name: Substituir parâmetros em um modelo
           href: ide/how-to-substitute-parameters-in-a-template.md
+        - name: Parâmetros de modelo
+          href: ide/template-parameters.md
       - name: Suporte a 64 bits
         href: ide/visual-studio-ide-64-bit-support.md
     - name: Desenvolver sem projetos nem soluções ("Abrir Pasta")
@@ -719,10 +721,6 @@ items:
       href: ide/creating-applications-in-bi-directional-languages.md
 - name: Referência
   items:
-  - name: Modelos de item e de projeto
-    items:
-    - name: Parâmetros de modelo
-      href: ide/template-parameters.md
   - name: Elementos da interface do usuário geral
     items:
     - name: Hierarquia de chamadas
@@ -1147,9 +1145,9 @@ items:
   - name: Fale conosco
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 3734bd3e2955f1f2297ec9a63f92d2e617341142
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 69a36121297349edd6a3e79880935a9b3ed6fe75
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089286"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424610"
