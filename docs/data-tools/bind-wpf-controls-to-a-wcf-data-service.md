@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 1a84a9a1a8f0a7d30aafc1daa7a0a669674b021e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54269911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918005"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 
@@ -312,6 +312,6 @@ Depois de completar este passo a passo, você poderá realizar as seguintes tare
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Associar controles do WPF a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md)
-- [WCF overview (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [Visão geral do WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Visão geral do Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
 - [Visão geral (.NET Framework) de vinculação de dados](/dotnet/framework/wpf/data/data-binding-overview)
