@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49733b4a63ccffef64ca2fca3ba1f969eca2609b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850210"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012515"
 ---
 # <a name="format-python-code"></a>Formatar o código do Python
 
@@ -44,8 +44,8 @@ O **espaçamento** controla o local em que espaços são inseridos ou removidos 
 Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
 | Opção de definições de classe | Selecionado | Limpo |
-| --- | --- | --- | 
-| **Inserir espaço entre o nome de uma declaração da classe e a lista de bases** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **Inserir espaço entre o nome de uma declaração da classe e a lista de bases** | `class X (object): pass` | `class X(object): pass` |
 | **Inserir espaço dentro dos parênteses da lista de bases** | `class X( object ): pass` | `class X(object): pass` |
 | **Inserir espaço dentro dos parênteses da lista de bases vazia** | `class X( ): pass` | `class X(): pass` |
 
@@ -53,7 +53,7 @@ Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
 | Opção de definições de função | Selecionado | Limpo |
 | --- | --- | --- |
-| **Inserir espaço entre o nome de uma declaração da função e a lista de parâmetros** | `def X (): pass` | `def X(): pass` | 
+| **Inserir espaço entre o nome de uma declaração da função e a lista de parâmetros** | `def X (): pass` | `def X(): pass` |
 | **Inserir espaço dentro dos parênteses da lista de parâmetros** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Inserir espaço dentro dos parênteses da lista de parâmetros vazia** | `def X( ): pass` | `def X(): pass` |
 | **Inserir espaços em torno de “=” em valores de parâmetro padrão** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

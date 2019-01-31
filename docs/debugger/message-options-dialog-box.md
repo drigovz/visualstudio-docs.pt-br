@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f71e33bbb52506760d5b83f50e459473df8077
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e8017eb180c76a18c889d764ba73c684419a77a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861741"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996422"
 ---
 # <a name="message-options-dialog-box"></a>Caixa de diálogo Opções da Mensagem
 Use essa caixa de diálogo para selecionar quais mensagens são listadas na [exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, escolha **mensagens de Log** da **Spy** menu.  

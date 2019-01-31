@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7673a4a9ccde94589ba03bd130645558ec088f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965256"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013152"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Como: Usar a ferramenta Localizador
 Você pode usar a ferramenta de localização na **localizar janela** caixa de diálogo para exibir propriedades da janela ou mensagens. A ferramenta localizador também poderá localizar janelas filho desabilitadas e distinguir qual janela para realçar se desabilitada a janelas filho se sobrepuserem.  

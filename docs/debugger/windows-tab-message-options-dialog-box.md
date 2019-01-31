@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407b7c1c28d4232988bb36f8c1333197cd2dc08f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00785b7f53fd800d924e8ed78d6b6a9b48ea730a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827173"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070936"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Guia Janelas, Caixa de diálogo Opções da Mensagem
 Use o **Windows** guia para definir o escopo das mensagens listadas na [exibição de mensagens](../debugger/messages-view.md). Para exibir o [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md), escolha **mensagens de Log** do **Spy** menu.  

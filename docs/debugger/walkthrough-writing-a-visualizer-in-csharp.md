@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 79127504259fde6e3b8d0a917b7a83554eaf23cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0eb372fffac9c9750f5912871e32a987b41e41b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925216"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042394"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Passo a passo: Escrevendo um visualizador em C# #
 Este passo a passo mostra como escrever um visualizador simples usando C#. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres não é especialmente útil em si mesmo, mas mostra as etapas básicas a seguir para criar visualizadores mais úteis para outros tipos de dados.

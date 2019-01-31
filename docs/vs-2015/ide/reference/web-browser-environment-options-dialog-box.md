@@ -1,14 +1,9 @@
 ---
 title: Caixa de diálogo Navegador da Web, Ambiente, Opções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
 - VS.ToolsOptionsPages.Environment.WebBrowser
@@ -28,13 +23,13 @@ ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931825"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755307"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Caixa de diálogo Navegador da Web, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49931825"
 Define opções para o navegador da Web interno e o Internet Explorer. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Ambiente** e selecione **Navegador da Web**.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
 >  Abrir determinados arquivos ou componentes da Web pode executar código no computador.  
@@ -59,7 +54,7 @@ Define opções para o navegador da Web interno e o Internet Explorer. Para aces
   
 - **Editor de origem** Selecione para exibir a fonte em [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
-- **Editor de HTML** Selecione para exibir a fonte no [Designer de HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.  
+- **Editor de HTML** Selecione para exibir a fonte no [Designer de HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use esta seleção para editar a página da Web em um dos dois modos de exibição: O modo de exibição de Design ou o modo de exibição padrão de Origem baseada em texto.  
   
 - **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.  
   
@@ -73,6 +68,3 @@ Define opções para o navegador da Web interno e o Internet Explorer. Para aces
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)   
  [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)   
  [Designer de HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)
-
-
-

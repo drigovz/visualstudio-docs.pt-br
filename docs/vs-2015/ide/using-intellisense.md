@@ -1,14 +1,9 @@
 ---
 title: Usando o IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
@@ -29,18 +24,18 @@ ms.assetid: 9fdb489b-8b46-4b92-9ccc-c8f8cc184081
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586a0b31166f3b7696865e54f7d2df9c415315f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758822"
 ---
 # <a name="using-intellisense"></a>Usando IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O IntelliSense é o termo geral para vários recursos: Listar Membros, Informações do Parâmetro, Informação Rápida e Completar Palavra. Esses recursos ajudam você a aprender mais sobre o código que está usando, a manter o acompanhamento dos parâmetros que está digitando e a adicionar chamadas a métodos e propriedades pressionando apenas algumas teclas.  
+O IntelliSense é o termo geral para uma série de recursos: Listar Membros, Informações de Parâmetro, Informações Rápidas e Completar Palavra. Esses recursos ajudam você a aprender mais sobre o código que está usando, a manter o acompanhamento dos parâmetros que está digitando e a adicionar chamadas a métodos e propriedades pressionando apenas algumas teclas.  
   
  Vários aspectos do IntelliSense são específicos do idioma. Para obter mais informações sobre o IntelliSense para diferentes idiomas, consulte os tópicos listados em Consulte também.  
   
@@ -111,6 +106,3 @@ MessageBox( hWnd, "String literal|") )
  [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)   
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [Fornecendo comentários de código XML](../ide/supplying-xml-code-comments.md)
-
-
-

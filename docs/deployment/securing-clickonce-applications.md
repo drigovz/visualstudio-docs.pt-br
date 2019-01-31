@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35814b1227f9a03fe40c9d41e7809dac54a0f1fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932812"
 ---
 # <a name="secure-clickonce-applications"></a>Proteger aplicativos ClickOnce
 Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estão sujeitos às restrições de segurança de acesso a código no .NET Framework para ajudar a limitar o acesso que o código tem a recursos e operações protegidos. Por esse motivo, é importante compreender as implicações de segurança de acesso a código para desenvolver seus aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] adequadamente. Seus aplicativos podem usar o modo Confiança Total ou zonas parciais, como as zonas da Internet e intranet, para limitar o acesso.  
@@ -66,7 +66,7 @@ Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- Por padrão, os argumentos da cadeia de caracteres de consulta estão desabilitados. Para habilitá-los, o atributo `trustUrlParameters` deverá ser definido no manifesto de implantação do aplicativo. Esse valor pode ser definido de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e MageUI.exe. Para obter etapas detalhadas sobre como habilitar a passagem cadeias de caracteres de consulta, consulte [como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)  
+ Por padrão, os argumentos da cadeia de caracteres de consulta estão desabilitados. Para habilitá-los, o atributo `trustUrlParameters` deverá ser definido no manifesto de implantação do aplicativo. Esse valor pode ser definido de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e MageUI.exe. Para obter etapas detalhadas sobre como habilitar a passagem cadeias de caracteres de consulta, consulte [como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
  Você nunca deve passar argumentos recuperados por meio de uma cadeia de caracteres de consulta a um banco de dados ou linha de comando sem verificar os argumentos para garantir que eles sejam seguros. Os argumentos inseguros são os que incluem caracteres de escape da linha de comando ou banco de dados que poderiam permitir que um usuário mal-intencionado manipulasse o seu aplicativo e executasse comandos arbitrários.  
   

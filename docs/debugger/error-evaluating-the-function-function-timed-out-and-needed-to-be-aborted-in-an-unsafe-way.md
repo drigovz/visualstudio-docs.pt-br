@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a72bd821d7ecd32e82b2ad3b02debe03ff511531
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be26ff3c1c878cee5f2760897f3652de30c52d52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883305"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004780"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erro: Avaliar a função &#39;função&#39; atingiu o tempo limite e precisou ser interrompida de forma não segura
 
@@ -38,7 +38,7 @@ A mensagem de erro informará o nome da função que o depurador tentou chamar. 
     - ou -
 * (Para um getter de propriedade) Coloque o `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atributo na propriedade. Isso pode ser útil se você tiver um método que deve manter uma propriedade por razões de compatibilidade de API, mas na verdade, ele deve ser um método.
  
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Solução Fazer com que o código de destino pergunte o depurador para anular a avaliação
+### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Solução 2: Fazer com que o código de destino pergunte o depurador para anular a avaliação
  
 A mensagem de erro informará o nome da função que o depurador tentou chamar. Se o getter de propriedade ou método ToString, às vezes, não seja executada corretamente, especialmente em situações em que o problema é que o código precisa outro thread para executar o código e a função de implementação pode chamar `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` pedir o depurador para a função abort avaliação. Com essa solução, ainda é possível avaliar a essas funções explicitamente, mas o comportamento padrão é que a execução é interrompida quando ocorre a chamada NotifyOfCrossThreadDependency.
  

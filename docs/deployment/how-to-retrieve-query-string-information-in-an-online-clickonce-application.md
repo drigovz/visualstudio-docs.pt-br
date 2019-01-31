@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff97e72342e8026cddfe80d383c07ab99e3bc99a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df24beeb291efde66498e14fc9e95c980e04c553
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041263"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online
 O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um ponto de interrogação (?) que contém informações arbitrárias no formulário *nome = valor*. Suponha que você tenha um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo denominado `WindowsApp1` que você hospede em `servername`, e você deseja passar um valor para a variável `username` quando o aplicativo é iniciado. A URL pode parecer com o seguinte:  

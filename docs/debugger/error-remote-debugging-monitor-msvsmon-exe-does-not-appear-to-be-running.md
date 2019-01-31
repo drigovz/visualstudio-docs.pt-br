@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d143eb9750aecfcadf63fe999df858ae02dd18a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882e08f155d3da05b63a74850ec966ef71a611c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991028"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erro: O Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.
 Essa mensagem de erro significa que o Visual Studio não pôde localizar a instância correta do Visual Studio Remote Debugging Monitor no computador remoto. O Visual Studio Remote Debugging Monitor deve ser instalado para depuração remota funcione. Para obter informações sobre como baixar e configurar o depurador remoto, consulte [depuração remota](../debugger/remote-debugging.md).  

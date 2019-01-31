@@ -1,27 +1,22 @@
 ---
 title: Exibição de chamador/computador chamado – Dados de amostragem de memória do .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: edeccd8318de36a09a9191a30274ff342cb7a41d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782485"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Exibição Chamador/Receptor da Chamada – dados de amostragem da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,10 +53,7 @@ A exibição de Chamador/Computador Chamado exibe dados de criação de perfil d
 |**% de Bytes Exclusivos**|O percentual de todos os bytes de memória que foram alocados na execução de criação de perfil que eram alocações exclusivas dessa função.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as Colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição Chamador/Receptor da Chamada – dados de instrumentação da memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Exibição de chamador/computador chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)   
  [Exibição de chamador/computador chamado – dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
-
-
-

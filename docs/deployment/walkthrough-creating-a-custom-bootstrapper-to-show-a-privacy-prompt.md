@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e32ea7053d79a64e0c1502ed251d55f6150500a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8719f3dc6d892801135d14d093c265445e90fcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882708"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021527"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: Criar um bootstrapper personalizado com um prompt de privacidade
 Você pode configurar os aplicativos ClickOnce para atualizar automaticamente quando assemblies com versões do assembly e versões mais recentes do arquivo se tornam disponíveis. Para certificar-se de que seus clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Então, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ele não é instalado.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a0b09ca7e9693914d94cdc3337cc4ac2759c07c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33e4d07b6eb6a3af0799385d989bd8383faf3fec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944357"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019509"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Passo a passo: Objetos ausentes devido ao estado do dispositivo
 Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar um objeto que está faltando devido a configurado incorretamente o estado do dispositivo.  

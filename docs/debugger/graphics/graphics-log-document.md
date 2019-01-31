@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9c458891a13a28d9b13ec9674a4a9e829b95a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba089ace95308ddcf6067920da8484064e797ecd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015102"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
 O documento de Log de gráficos é o registro de eventos de gráficos que ocorreu enquanto o aplicativo foi executado em uma sessão de diagnóstico de gráficos. Após ser gravado, você pode examinar o log no analisador de gráficos do Visual Studio para diagnosticar problemas de desempenho e renderização.  
@@ -42,7 +42,7 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 ## <a name="playback-machine"></a>Máquina de reprodução  
  No canto superior direito da **Lista de Quadros** fica a **Máquina de Reprodução**. O computador de reprodução é um computador ou dispositivo usado para reproduzir eventos de gráficos de um arquivo de log de gráficos em uma sessão de diagnóstico posterior. Ao usar outro dispositivo para reproduzir eventos capturados no lugar de seu computador de desenvolvimento, você pode reproduzir com mais precisão o ambiente de execução no qual o problema ocorreu. Por exemplo, você pode usar um computador com drivers ou hardwares gráficos que seu computador de desenvolvimento não usa ou outros tipos de dispositivos, como um tablet Windows RT baseado em ARM ou um dispositivo com Windows Phone.  
 
- Para obter informações sobre como especificar um computador de reprodução, consulte [como: Alterar o computador de reprodução de Diagnóstico de Gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md)  
+ Para obter informações sobre como especificar um computador de reprodução, consulte [como: Alterar o computador de reprodução de Diagnóstico de Gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).  
 
 ## <a name="graphics-log-summary-information"></a>Informações de resumo do log de elementos gráficos  
  Quando o arquivo de log de elementos gráficos está ativo, a janela **Propriedades** exibe informações sobre o ambiente que hospedou a sessão de captura do Diagnóstico de Gráficos. Essa janela exibe informações de diversas categorias.  

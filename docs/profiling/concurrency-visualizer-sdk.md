@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9898037e7dc6beae5d984856ff5c12b74183049
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c5524ed27e456e958bbc5f465bb4ecd27f9a845
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884964"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020094"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
 Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Simultânea para exibir informações adicionais na Visualização Simultânea. É possível associar os dados adicionais a fases e eventos em seu código. Estas visualizações adicionais são conhecidas como *marcadores*.  Para ver um passo a passo introdutório, consulte [Apresentando o SDK da Visualização Simultânea](http://go.microsoft.com/fwlink/?LinkId=235405).  

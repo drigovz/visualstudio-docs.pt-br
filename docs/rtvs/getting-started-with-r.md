@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944620"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024091"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introdução às Ferramentas do R para Visual Studio
 
-Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Instalação](installing-r-tools-for-visual-studio.md)), você poderá ter uma rápida ideia da experiência que essas ferramentas fornecem. 
+Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Instalação](installing-r-tools-for-visual-studio.md)), você poderá ter uma rápida ideia da experiência que essas ferramentas fornecem.
 
 ## <a name="create-an-r-project"></a>Criar um projeto R
 
@@ -93,7 +93,7 @@ Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teore
 
 > [!Tip]
 > Aprenda o padrão de fazer edições e pressionar **Ctrl**+**Enter** (ou selecionar tudo com **Ctrl**+**A** e, em seguida, pressionar **Ctrl**+**Enter**) para executar o código rapidamente. Fazer isso é muito mais eficiente do que usar o mouse para as mesmas operações.
-> 
+>
 > Além disso, você pode arrastar e soltar a janela de gráficos para fora do quadro do Visual Studio e colocá-la em qualquer lugar da tela que desejar. Você pode redimensionar a janela de gráficos para as dimensões desejadas e salve-a em uma imagem ou arquivo PDF.
 
 1. Adicione algumas outras linhas de código para incluir um segundo gráfico:

@@ -1,27 +1,22 @@
 ---
 title: Utilitário de linha de comando Visualização Simultânea (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752907"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitário de linha de comando Visualizador de Simultaneidade (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,12 +46,12 @@ ms.locfileid: "51790976"
 |Consulta|Retorna se a coleta pode ser iniciada.|Nenhum|0 se a coleta estiver pronta para começar.<br /><br /> 1 se a coleta já estiver em andamento.<br /><br /> 2 se a coleta não estiver em andamento, mas uma ou mais sessões [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessárias já estiverem habilitadas.|  
 |Inicializar|Executa o processo especificado na Visualização Simultânea.|O caminho do executável.|0 se a execução foi bem-sucedida.<br /><br /> 1 se a execução falhou porque não foi possível iniciar o aplicativo de destino.<br /><br /> 13 se a execução falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|  
 |Attach|Começa coletando um rastreamento em todo o sistema. Do contrário, se conecta a um processo, se algum for especificado.|Nenhum.|0 se o anexo for bem-sucedido.<br /><br /> 1 se o anexo falhou porque o processo especificado é inválido ou ambíguo.<br /><br /> 13 se o anexo falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|  
-|Detach|Para a coleta.|Nenhum.|0 se a desanexação for bem-sucedida.<br /><br /> 1 se a desanexação falhou porque a coleta não está em andamento no momento.<br /><br /> 2 se a desanexação falhou porque a coleta não pode ser parada.|  
+|Detach|Para a coleta.|nenhuma.|0 se a desanexação for bem-sucedida.<br /><br /> 1 se a desanexação falhou porque a coleta não está em andamento no momento.<br /><br /> 2 se a desanexação falhou porque a coleta não pode ser parada.|  
 |Analisar|Analisa o rastreamento especificado.|O caminho completo do arquivo CVTrace.|0 se a análise for bem-sucedida.<br /><br /> 1 se a análise não puder ser iniciada porque o rastreamento especificado estava em todo o sistema, mas sem um processo de destino especificado.<br /><br /> 2 se a análise não puder ser iniciada porque o rastreamento não estava em todo o sistema e um processo foi especificado.<br /><br /> 3 se a análise falhou porque o processo especificado é inválido.<br /><br /> 4 se a análise falhou porque o arquivo CVTrace especificado é inválido.|  
-|LaunchArgs|Especifica os argumentos executáveis de destino. Essa opção só se aplica ao comando Inicializar.|Os argumentos de linha de comando para o aplicativo.|Nenhum.|  
-|Outdir|Especifica o diretório no qual os arquivos de rastreamento serão salvos. Aplica-se aos comandos Inicializar e Anexar.|Um caminho do diretório ou relativo.|Nenhum.|  
-|Processo|Especifica o processo a ser conectado quando o comando Anexar é executado ou o processo em um rastreamento a ser analisado quando o comando Analisar é executado. Aplica-se aos comandos Anexar e Analisar.|A PID ou o nome do processo.|Nenhum.|  
-|Config|Especifica o caminho do arquivo de configuração, se você quiser configurações de coleta diferentes das configurações padrão.   Aplica-se aos comandos Inicializar, Anexar e Analisar.|O caminho do diretório ou relativo do arquivo de configuração XML.|Nenhum.|  
+|LaunchArgs|Especifica os argumentos executáveis de destino. Essa opção só se aplica ao comando Inicializar.|Os argumentos de linha de comando para o aplicativo.|nenhuma.|  
+|Outdir|Especifica o diretório no qual os arquivos de rastreamento serão salvos. Aplica-se aos comandos Inicializar e Anexar.|Um caminho do diretório ou relativo.|nenhuma.|  
+|Processo|Especifica o processo a ser conectado quando o comando Anexar é executado ou o processo em um rastreamento a ser analisado quando o comando Analisar é executado. Aplica-se aos comandos Anexar e Analisar.|A PID ou o nome do processo.|nenhuma.|  
+|Config|Especifica o caminho do arquivo de configuração, se você quiser configurações de coleta diferentes das configurações padrão.   Aplica-se aos comandos Inicializar, Anexar e Analisar.|O caminho do diretório ou relativo do arquivo de configuração XML.|nenhuma.|  
   
 ## <a name="customizing-configuration-settings"></a>Personalizando definições de configuração  
  Se você usar CVCollectionCmd para coletar rastreamentos e quiser personalizar as configurações de coleta, use um arquivo de configuração para especificá-las.  
@@ -158,6 +153,3 @@ ms.locfileid: "51790976"
 </LocalConfig>  
   
 ```
-
-
-

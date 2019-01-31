@@ -2,22 +2,22 @@
 title: Etapa 2 do Tutorial do Python no Visual Studio, escrever e executar o código
 titleSuffix: ''
 description: Etapa 2 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo como editar código e executar um projeto.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6aec7825387c2eda58c76bf885bcd29b0b7bdd1b
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935133"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231773"
 ---
 # <a name="step-2-write-and-run-code"></a>Etapa 2: Escrever e executar o código
 
@@ -46,7 +46,7 @@ Embora o **Gerenciador de Soluções** seja o local em que você gerencia arquiv
     ![Coloração de sintaxe e realce de erros do IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Como o ambiente de desenvolvimento é uma questão muito pessoal, o Visual Studio oferece controle total sobre a aparência e o comportamento do Visual Studio. Selecione o comando de menu **Ferramentas** > **Opções** e explore as configurações nas guias **Ambiente** e **Editor de Texto**. Por padrão, você vê somente um número limitado de opções; para ver todas as opções de todas as linguagens de programação, selecione **Mostrar todas as configurações** na parte inferior da caixa de diálogo. 
+    > Como o ambiente de desenvolvimento é uma questão muito pessoal, o Visual Studio oferece controle total sobre a aparência e o comportamento do Visual Studio. Selecione o comando de menu **Ferramentas** > **Opções** e explore as configurações nas guias **Ambiente** e **Editor de Texto**. Por padrão, você vê somente um número limitado de opções; para ver todas as opções de todas as linguagens de programação, selecione **Mostrar todas as configurações** na parte inferior da caixa de diálogo.
 
 1. Execute o código que você escreveu até este ponto, pressionando **Ctrl**+**F5** ou selecionando o item de menu **Depurar** > **Iniciar Sem Depuração**. O Visual Studio avisará se ainda houver erros em seu código.
 

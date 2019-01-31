@@ -4,15 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 379180c21bfe1bbb36faa0ad1becad162068e698
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850681"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001180"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Passo a passo: Como capturar informações de gráficos de forma programática
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.  

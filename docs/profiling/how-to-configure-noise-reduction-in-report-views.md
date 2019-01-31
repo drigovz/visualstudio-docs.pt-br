@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a6d72df07578701da33213be62d197be9c71ef5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992848"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Como: Configurar a redução de ruído em exibições de relatório
 Os relatórios de desempenho podem ser configurados para redução de ruído, limitando a quantidade de dados que são apresentados no modo de exibição de Árvore de Chamadas e na exibição de Alocação. Ao usar a redução de ruído, os problemas de desempenho serão mais proeminentes. Isso é útil ao analisar relatórios de desempenho.  

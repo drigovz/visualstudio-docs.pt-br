@@ -1,14 +1,9 @@
 ---
 title: Tarefa AL (Assembly Linker) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758630"
 ---
 # <a name="al-assembly-linker-task"></a>Tarefa AL (Assembly Linker)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,6 +98,3 @@ A tarefa AL encapsula AL.exe, uma ferramenta que é distribuída com o [!INCLUDE
 ## <a name="see-also"></a>Consulte também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)
-
-
-
