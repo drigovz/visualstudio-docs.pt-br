@@ -1,14 +1,9 @@
 ---
 title: Caixa de diálogo Configurações de Build Avançadas (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9f3d62f6cd393dfccdaeb9047bac4780546f0087
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763342"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações de Build Avançadas (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Use a caixa de diálogo **Configurações de Build Avançadas** do **Designer de
   Especifica se uma instrução de aritmética de inteiros que não está no escopo das palavras-chave [marcadas](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) ou [desmarcadas](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) e que resulta em um valor fora do intervalo do tipo de dados causará uma exceção de tempo de execução. Para obter mais informações, consulte [/checked (opções do compilador do C#)](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b).  
   
   **Não referenciar mscorlib.dll**  
-  Especifica se mscorlib. dll será importado para o programa, definindo todo o <xref:System> namespace. Marque essa caixa se desejar definir ou criar seus próprios objetos e namespace <xref:System>. Para obter mais informações, consulte [/nostdlib (opções do compilador C#)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f).  
+  Especifica se mscorlib.dll será importado para o programa, definindo todo o namespace <xref:System>. Marque essa caixa se desejar definir ou criar seus próprios objetos e namespace <xref:System>. Para obter mais informações, consulte [/nostdlib (opções do compilador C#)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f).  
   
 ## <a name="output"></a>Saída  
  As opções a seguir permitem especificar opções de saída avançadas.  
@@ -85,6 +80,3 @@ Use a caixa de diálogo **Configurações de Build Avançadas** do **Designer de
 ## <a name="see-also"></a>Consulte também  
  [Opções do compilador do C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: Como exibir números de linha no Editor | Microsoft Docs
-ms.custom: ''
+title: 'Como: Exibir números de linha no Editor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - line numbers, displaying
 - Code Editor, line numbers
@@ -18,22 +13,22 @@ ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 175abe3eb597289c3e546aaec17aad9379981260
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4b38f39fbb7b1f72622be58ee049554cb04f02f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800737"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Como exibir números de linha no Editor
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Como: Exibir números de linha no Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
 Você pode exibir ou ocultar a numeração de linhas em seu código.  
   
 > [!NOTE]
->  Dependendo das configurações ativas, as caixas de diálogos e os comandos de menu exibidos podem ser diferentes dos descritos aqui. Para alterar as configurações, abra **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dependendo das configurações ativas, as caixas de diálogos e os comandos de menu exibidos podem ser diferentes dos descritos aqui. Para alterar as configurações, abra **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Exibir números de linhas no código  
  Os números de linha não são adicionados ao seu código, eles são apenas para referência. Se desejar que os números de linha sejam impressos, na caixa de diálogo **Imprimir**, marque a caixa de seleção **Incluir números de linha**.  
@@ -51,6 +46,3 @@ Você pode exibir ou ocultar a numeração de linhas em seu código.
  [Personalizando o editor](../../ide/customizing-the-editor.md)   
  [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)   
  [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)
-
-
-

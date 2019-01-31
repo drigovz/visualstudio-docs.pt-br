@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b83ed1ae187647f4e1025d18b4973cb1e25b399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8586bff16bdcf8a67d8d1e27abb37b13efa5ce4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041965"
 ---
 # <a name="performance-report-views"></a>Exibições de Relatório de Desempenho
 Essa seção fornece informações de referência sobre os relatórios e as exibições das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Exibições dos arquivos de dados de criação de perfil são exibidas no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Os relatórios são gerados pela ferramenta de linha de comando [VSPerfReport](../profiling/vsperfreport.md).  

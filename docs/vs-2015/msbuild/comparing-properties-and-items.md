@@ -1,27 +1,22 @@
 ---
 title: Comparando propriedades e itens | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758438"
 ---
 # <a name="comparing-properties-and-items"></a>Comparando propriedades e itens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
 </PropertyGroup>  
 ```  
   
- O tipo de item OutputDir tem um atributo `Include` com o valor "KeyFiles\\;Certificates\\". O MSBuild analisa essa cadeia de caracteres em dois itens: KeyFiles e Certificates\\. Quando o tipo de item OutputDir é usado como o valor da propriedade OutputDirList, o MSBuild converte ou mescla o tipo de item na cadeia de caracteres separados por ponto-e-vírgula "KeyFiles\\;Certificates\\".  
+ O tipo de item OutputDir tem um atributo `Include` com o valor "KeyFiles\\;Certificates\\". O MSBuild analisa essa cadeia de caracteres em dois itens: Keyfiles e Certificates\\. Quando o tipo de item OutputDir é usado como o valor da propriedade OutputDirList, o MSBuild converte ou mescla o tipo de item na cadeia de caracteres separados por ponto-e-vírgula "KeyFiles\\;Certificates\\".  
   
 ## <a name="properties-and-items-in-tasks"></a>Propriedades e itens em Tarefas  
  As propriedades e os itens são usados como entradas e saídas para tarefas do MSBuild. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).  
@@ -189,6 +184,3 @@ KeyFileVersion: 1.0.0.3
   
 ## <a name="see-also"></a>Consulte também  
  [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)
-
-
-

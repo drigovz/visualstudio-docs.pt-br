@@ -1,14 +1,9 @@
 ---
 title: Caixa de diálogo Fontes e Cores, Ambiente, Opções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -31,13 +26,13 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220229"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761621"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "50220229"
 A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Alterações do esquema de cores não terão efeito durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.  
   
@@ -153,7 +148,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 |**Palavra-chave**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|  
 |**Endereço de Memória**|A cor do texto usado para exibir a coluna de endereço dentro da janela **Memória**.|  
 |**Memória Alterada**|A cor do texto usado para exibir dados alterados dentro da janela **Memória**.|  
-|**Dados da Memória**|A cor do texto usado para exibir dados dentro de **memória** janela.|  
+|**Dados da Memória**|A cor do texto usada para exibir dados dentro da janela **Memória**.|  
 |**Memória Ilegível**|A cor do texto usado para exibir áreas de memória ilegível dentro da janela **Memória**.|  
 |**Número**|Um número no código que representa um valor numérico real.|  
 |**Operador**|Operadores, como +, - e !=.|  
@@ -241,7 +236,4 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 ## <a name="see-also"></a>Consulte também  
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)   
  [Caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-
+ [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

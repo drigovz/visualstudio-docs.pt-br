@@ -1,14 +1,9 @@
 ---
 title: Página Opções, Propriedades do Nó de Ambiente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
@@ -16,13 +11,13 @@ ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753510"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de Propriedades, Ambiente, Propriedades do Nó
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -141,7 +136,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
   
 |Nome do item de propriedade|Valor|Descrição|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Enum)|Ação a ser executada na inicialização, de <xref:EnvDTE.vsStartUp>, com valores de 0 a 5:<br /><br /> –   0: Abrir Página Inicial<br />–   1: Carregar última solução carregada<br />–   2: Mostrar caixa de diálogo **Abrir Projeto**<br />–   3: Mostrar caixa de diálogo **Novo Projeto**<br />–   4: Mostrar ambiente vazio<br />–   5: Mostrar Página Inicial|  
+|OnStartUp|Get/Set (Enum)|Ação a ser executada na inicialização, de <xref:EnvDTE.vsStartUp>, com valores de 0 a 5:<br /><br /> –   0: Abrir página inicial<br />–   1: Carregar última solução carregada<br />–   2: Mostrar caixa de diálogo **Abrir Projeto**<br />–   3: Mostrar caixa de diálogo **Novo Projeto**<br />–   4: Mostrar ambiente vazio<br />–   5: Mostrar página inicial|  
 |StartPageRSSUrl|Get/Set (Cadeia de Caracteres)|URL para o RSS feed usado na inicialização.|  
 |StartPageRefreshDownloadedContent|Get/Set (Booliano)|Atualiza a Página Inicial após cada passagem do intervalo especificado em StartPageRefreshInterval.|  
 |StartPageRefreshInterval|Get/Set (Curto)|Intervalo em minutos para atualizar a Página Inicial.|  
@@ -172,6 +167,3 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
  [Página Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Página Opções, Propriedades do Nó de Editor de Texto](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)
-
-
-

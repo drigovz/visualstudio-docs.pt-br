@@ -1,27 +1,22 @@
 ---
 title: SuspendProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - SuspendProfile
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a21358e63ff30a88351607ae4f474a485b7059ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6b40b37c8c0ee97b5d7e0cc33773af140bd1010b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790263"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,8 +67,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="net-framework-equivalent"></a>Equivalente ao .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## <a name="function-information"></a>Informações de Função  
- Cabeçalho: declarado em VSPerf.h  
+## <a name="function-information"></a>Informações de função  
+ Cabeçalho: Declarado em VSPerf.h  
   
  Biblioteca de importação: VSPerf.lib  
   
@@ -114,6 +109,3 @@ void ExerciseSuspendProfile()
   
 ## <a name="see-also"></a>Consulte também  
  [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-
