@@ -1,25 +1,20 @@
 ---
 title: Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778624"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/skuId|Não|Especifica a unidade de manutenção de estoque (SKU) do produto da fonte de instalação, e filtra os livros que a opção de /SourceURI identifica.|  
 |/membership|Não|-   **Mínimo** – instala um conjunto mínimo de conteúdo de Ajuda com base na SKU especificada usando a opção /skuId. O mapeamento entre o SKU e o conteúdo é exposto no serviço API.<br />-   **Recomendado** – instala um conjunto recomendado de livros para a SKU especificada usando o argumento /skuId. A origem de instalação é o serviço API ou .MSHA.<br />-   **Completo** – instala todo o conjunto de livros para a SKU que você especifica usando o argumento /skuId. A origem de instalação é o serviço API ou .MSHA.|  
 |/locationpath|Não|Especifica a pasta padrão para o conteúdo da Ajuda local. Você deve usar essa opção para instalar ou mover apenas o conteúdo. Se você especificar esta opção, também deverá especificar a opção /silent.|  
-|/silent|Não|Instala ou remove conteúdo da Ajuda sem avisar o usuário ou sem exibir qualquer IU, incluindo o ícone na área de notificação de status. A saída é registrada em um arquivo no diretório %Temp%. **Importante:** para instalar o conteúdo silenciosamente, use arquivos .cab assinados digitalmente, não arquivos .mshc.|  
+|/silent|Não|Instala ou remove conteúdo da Ajuda sem avisar o usuário ou sem exibir qualquer IU, incluindo o ícone na área de notificação de status. A saída é registrada em um arquivo no diretório %Temp%. **Importante:**  Para instalar o conteúdo silenciosamente, você deve utilizar arquivos .cab assinados digitalmente, e não arquivos .mshc.|  
 |/launchingApp|Não|Define o aplicativo e o contexto de catálogo quando o Visualizador da Ajuda é iniciado sem o aplicativo pai. Os argumentos para essa opção são *CompanyName*, *ProductName* e *VersionNumber* (por exemplo, `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Isso é necessário para a instalação do conteúdo com o parâmetro /silent.|  
 |/wait *Seconds*|Não|Interrompe operações de instalação, desinstalação e atualização. Se uma operação já está em andamento para o catálogo, o processo esperará até o número determinado de segundos para continuar. Use 0 para aguardar indefinidamente.|  
 |/?|Não|Lista as opções e suas descrições para a ferramenta de linha de comando do Gerenciador de Conteúdo da Ajuda.|  
@@ -96,6 +91,3 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 ## <a name="see-also"></a>Consulte também  
  [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)   
  [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md)
-
-
-

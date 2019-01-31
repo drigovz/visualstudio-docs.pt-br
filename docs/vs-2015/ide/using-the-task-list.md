@@ -1,14 +1,9 @@
 ---
 title: Usando a lista de tarefas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -20,13 +15,13 @@ ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801164"
 ---
 # <a name="using-the-task-list"></a>Usando a lista de tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
   
 #### <a name="to-open-the-task-list"></a>Para abrir a Lista de Tarefas  
   
--   No menu **Exibir**, escolha **Lista de Tarefas** (Teclado: Ctrl+\\,T).  
+-   Sobre o **modo de exibição** menu, escolha **lista de tarefas** (teclado: Ctrl+\\,T).  
   
      ![Janela Lista de Tarefas](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -91,7 +86,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
  Uma vez que `TODO` é um token, esse comentário aparece como uma tarefa `TODO` na lista.  
   
 ###  <a name="customTokens"></a> Tokens personalizados  
- Por padrão, o Visual Studio inclui os seguintes tokens: HACK, TODO, UNDONE, NOTE. Eles não diferenciam maiúsculas de minúsculas.  
+ Por padrão, o Visual Studio inclui os seguintes tokens: HACK, TODO, DESFEITA, OBSERVAÇÃO. Eles não diferenciam maiúsculas de minúsculas.  
   
  Também é possível criar seus próprios tokens personalizados.  
   
@@ -127,12 +122,9 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
   
 #### <a name="to-create-a-shortcut"></a>Para criar um atalho  
   
--   Insira o ponteiro no código onde deseja colocar um atalho. Escolha **Editar &#124; Indicadores &#124; Adicionar Atalho da Lista de Tarefas** ou pressione (Teclado: Ctrl+K, Ctrl+H).  
+-   Insira o ponteiro no código onde deseja colocar um atalho. Escolher **editar &#124; indicadores &#124; Adicionar atalho da lista de tarefas** ou pressione (teclado: Ctrl+K, Ctrl+H).  
   
      Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.  
   
 ## <a name="see-also"></a>Consulte também  
  [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md)
-
-
-

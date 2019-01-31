@@ -1,14 +1,9 @@
 ---
 title: Exibição de alocações da memória do .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798801"
 ---
 # <a name="net-memory-allocations-view"></a>Exibição de alocações da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ A exibição de Alocações lista os tipos criados durante a execução de cria�
 |**% de Bytes Inclusivos**|– Para uma função, o percentual de toda a memória alocada na execução de criação de perfil que eram alocações inclusivas do tipo pai pela função.<br />– Para um tipo, o percentual de toda a memória alocada na execução de criação de perfil que foi alocado em instâncias do tipo.|  
 |**Bytes Exclusivos**|– Para uma função, o número de bytes de memória alocados pela função para objetos do tipo pai. Esse número não inclui a memória alocada por suas funções filho.<br />– Para um tipo, o número total de bytes alocados na execução de criação de perfil para as instâncias do tipo.|  
 |**% de Bytes Exclusivos**|– Para uma função, o percentual de toda a memória alocada na execução de criação de perfil que eram alocações exclusivas do tipo pai pela função.<br />– Para um tipo, o percentual de toda a memória alocada na execução de criação de perfil que foi alocado em instâncias do tipo.|
-
-
-
