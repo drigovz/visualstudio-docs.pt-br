@@ -1,14 +1,9 @@
 ---
-title: Como usar o teclado de forma exclusiva | Microsoft Docs
-ms.custom: ''
+title: 'Como: Usar exclusivamente o teclado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -20,22 +15,22 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782615"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Como usar o teclado de forma exclusiva
+# <a name="how-to-use-the-keyboard-exclusively"></a>Como: Usar exclusivamente o teclado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece muitas combinações padrão de teclas de atalho para facilitar a navegação e a criação de código dentro do IDE (ambiente de desenvolvimento integrado). Para obter uma lista completa das teclas de atalho usadas no Visual Studio, consulte [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre os atalhos de teclado disponíveis para outros produtos da Microsoft, consulte [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Controles de Caixa de Ferramentas  
  É possível adicionar um controle da Caixa de Ferramentas a um formulário ou designer usando o teclado.  
@@ -106,6 +101,3 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece muitas combinações p
  [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)   
  [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
-
-
-

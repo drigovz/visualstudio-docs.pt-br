@@ -1,27 +1,22 @@
 ---
 title: Exibição Módulos – Dados de amostragem de memória do .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b9a02e5579eb5dc82f2e1f21a10444c329a317f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804089"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Exibição Módulos – Dados de amostragem de memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,10 +44,7 @@ A exibição Módulos de dados de alocação de memória do .NET coletados usand
 |**% de Bytes Exclusivos**|O percentual de todos os bytes que foram alocados na execução de criação de perfil que eram bytes exclusivos do módulo, função, linha ou instrução.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como: Personalizar as Colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Exibição Módulos](../profiling/modules-view-sampling-data.md)   
  [Exibição Módulos](../profiling/modules-view-instrumentation-data.md)
-
-
-

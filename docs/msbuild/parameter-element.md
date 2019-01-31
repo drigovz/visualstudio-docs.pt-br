@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e932b5a49559e77b9d7231d969f8ee78e2b4ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83f713382b0f767d966276807b1d10fac39c4bcd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982725"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
 Contém informações sobre um parâmetro específico de uma tarefa que é gerada por um `UsingTask` `TaskFactory`.  O nome do elemento é o nome do parâmetro.  Para saber mais, confira [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  

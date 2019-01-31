@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5be5c3cb48f2cd9846c9b40c967cf830c30f4d8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 281c971e018a775f0e2c8ff700875a9fc0a9a2b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922988"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976466"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C++)
 Você pode usar Editar e continuar em projetos do Visual C++. Ver [alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md) para obter informações sobre as limitações de editar e continuar.
