@@ -1,24 +1,20 @@
 ---
 title: Criando o XAML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a1c58ca9d567db88fb8267d56e071c11ba8aef27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ae621a36a8e5226c60ff5b879d359b0e8556aeaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870223"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754180"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Criando o XAML no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +41,7 @@ O Visual Studio e o Blend for Visual Studio fornecem ferramentas visuais para cr
 
      ![Experiência de recarregamento de arquivos](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **Configurações e layouts sincronizados:** Os layouts personalizados permitem salvar e aplicar as personalizações de layout de janela de ferramentas. O Visual Studio sincronizará essas personalizações e preferências para o Visual Studio e o Blend for Visual Studio entre os computadores, quando você se conectar com a mesma conta da Microsoft. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+-   **Configurações e layouts sincronizados:** Os layouts personalizados permitem salvar e aplicar as personalizações de layout de janela de ferramentas. O Visual Studio sincronizará essas personalizações e preferências para o Visual Studio e o Blend for Visual Studio entre os computadores, quando você se conectar com a mesma conta da Microsoft. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 -   **Um Gerenciador de Soluções comum:** O Gerenciador de Soluções fornece um modo de exibição organizado dos projetos e de seus arquivos, bem como o acesso imediato aos comandos associados a eles. Com o Gerenciador de Soluções, fica mais fácil trabalhar com projetos corporativos grandes. Consulte [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md).
 

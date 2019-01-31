@@ -1,14 +1,9 @@
 ---
-title: 'DA0013: alto uso de String.Split ou String.Substring | Microsoft Docs'
-ms.custom: ''
+title: 'DA0013: Alto uso de String.Split ou String.Substring | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.13
 - vs.performance.rules.DAAvoidStringSubstr
@@ -21,15 +16,15 @@ ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b469a9931ea48b60e49f9b5210e4e4db05fda362
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773154"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: uso alto de String.Split ou String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Alto uso de String.Split ou String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0013 |  
@@ -48,6 +43,3 @@ Id da regra | DA0013 |
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a [Exibição de Detalhes da Função](../profiling/function-details-view.md) dos dados de perfil de amostragem. Examine as funções de chamada para encontrar as seções do programa que fazem o uso mais frequente dos métodos System.String.Split ou System.String.Substr. Se possível, use o método IndexOf ou IndexOfAny para localizar uma subcadeia de caracteres específica em uma cadeia de caracteres sem criar uma nova instância da classe String.
-
-
-

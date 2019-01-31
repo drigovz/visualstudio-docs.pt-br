@@ -9,13 +9,13 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764842"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introdução à depuração no Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de depu
  Então você descobriu o editor e criei alguns códigos. Agora, você deseja iniciar a depuração desse código. No Visual Studio 2015, assim como acontece com a maioria dos IDEs, há duas fases para depuração: compilar o código para detectar e resolver erros de compilador e de projeto e executar esse código no ambiente para detectar e resolver erros de tempo de execução e dinâmicos.
 
 ### <a name="configuring-a-build"></a>Configurando um build
- Há dois tipos básicos de configuração de compilação: **Debug** e **versão**. A primeira configuração produz um executável maior e mais lento que permite uma experiência de depuração de tempo de execução interativa mais avançada, mas nunca deve ser enviado. A segunda compila um executável mais rápido e mais otimizado apropriado para enviar (pelo menos da perspectiva do compilador).
+ Há dois tipos básicos de configuração de build: **Depuração** e **Versão**. A primeira configuração produz um executável maior e mais lento que permite uma experiência de depuração de tempo de execução interativa mais avançada, mas nunca deve ser enviado. A segunda compila um executável mais rápido e mais otimizado apropriado para enviar (pelo menos da perspectiva do compilador).
 
  A configuração de build padrão é **Depuração**.
 

@@ -1,14 +1,9 @@
 ---
 title: Criando perfil em clusters HPC (computação de alto desempenho) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802306"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,8 +55,8 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
 |||  
 |-|-|  
 |*%HeadNode%*|Nome do nó principal do cluster.|  
-|*%FxPath%*|Caminho para o instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. No [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], o caminho de mídia de instalação é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Na mídia de instalação [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], o caminho é: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Caminho para o instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sobre o [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] é o caminho de mídia de instalação: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Sobre o [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] é o caminho de mídia de instalação: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Criação de perfil em um nó de computação HPC  
  Você pode configurar uma sessão de criação de perfil usando o Assistente de Desempenho HPC para especificar as informações de destino e de cluster HPC. Você pode definir outras opções nas páginas de propriedade de sessão de desempenho. As Ferramentas de Criação de Perfil implantam automaticamente os binários de destino e iniciam o criador de perfil e o aplicativo do HPC.  
@@ -155,6 +150,3 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
 |**Argumentos do script pré-perfil**|Especifica os argumentos que serão passados para o script pré-perfil.|  
 |**Script pré-perfil**|Especifica o caminho e o nome de arquivo de um script a ser executado no computador de desenvolvimento local depois de iniciar a sessão de criação de perfil.|  
 |**Argumentos do script pós-perfil**|Especifica os argumentos que serão passados para o script pós-perfil.|
-
-
-

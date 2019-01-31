@@ -1,14 +1,9 @@
 ---
 title: Tarefa MarkupCompilePass1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 693d6945-fd6f-4698-8f64-9dfcb71052d3
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7db6923b0a729d909e22136bd3994af45dfe1da9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf6f6b9dbd227dbdf28781fc9ac206ca1d8a91b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790476"
 ---
 # <a name="markupcompilepass1-task"></a>Tarefa MarkupCompilePass1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> converte arquiv
 |`AllGeneratedFiles`|Parâmetro de saída opcional **ITaskItem[]**.<br /><br /> Contém uma lista completa dos arquivos que são gerados pela tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>.|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|Parâmetro **Boolean** opcional.<br /><br /> Especifica se a tarefa deve ser executada em um <xref:System.AppDomain> separado. Se esse parâmetro retorna **false**, a tarefa é executada no mesmo <xref:System.AppDomain> que [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] e é executada mais rapidamente. Se o parâmetro retorna **true**, a tarefa é executada em um segundo <xref:System.AppDomain> que é isolado de [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] e é executada de modo mais lento.|  
 |`ApplicationMarkup`|Parâmetro opcional **ITaskItem[]**.<br /><br /> Especifica o nome do arquivo [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de definição de aplicativo.|  
-|`AssembliesGeneratedDuringBuild`|Parâmetro **String[]** opcional.<br /><br /> Especifica as referências aos assemblies alterados durante o processo de build. Por exemplo, uma solução [!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] pode conter um projeto que faz referência à saída compilada de outro projeto. Nesse caso, a saída compilada do segundo projeto pode ser adicionada ao parâmetro **AssembliesGeneratedDuringBuild**.<br /><br /> Observação: o parâmetro **AssembliesGeneratedDuringBuild** deve conter referências ao conjunto completo de assemblies que são gerados por uma solução de build.|  
+|`AssembliesGeneratedDuringBuild`|Parâmetro **String[]** opcional.<br /><br /> Especifica as referências aos assemblies alterados durante o processo de build. Por exemplo, uma solução [!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] pode conter um projeto que faz referência à saída compilada de outro projeto. Nesse caso, a saída compilada do segundo projeto pode ser adicionada ao parâmetro **AssembliesGeneratedDuringBuild**.<br /><br /> Observação: O parâmetro **AssembliesGeneratedDuringBuild** precisa conter referências ao conjunto completo de assemblies que são gerados por uma solução de build.|  
 |`AssemblyName`|Parâmetro obrigatório **string**.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto. Por exemplo, se um projeto está gerando um executável [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] cujo nome é **WinExeAssembly.exe**, o parâmetro **AssemblyName** tem um valor de **WinExeAssembly**.|  
 |`AssemblyPublicKeyToken`|Parâmetro **String** opcional.<br /><br /> Especifica o token da chave pública para o assembly.|  
 |`AssemblyVersion`|Parâmetro **String** opcional.<br /><br /> Especifica o número de versão do assembly.|  
@@ -133,6 +128,3 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> converte arquiv
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
  [Compilando um aplicativo WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Visão geral dos aplicativos de navegador XAML do WPF](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-

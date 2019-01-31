@@ -1,14 +1,9 @@
 ---
 title: Classes do Visual C++ no Designer de Classe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285682"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787070"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes do Visual C++ no Designer de Classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- Você também pode arrastar apenas a classe B para o diagrama de classe, clicar com o botão direito do mouse na forma de classe de B e, em seguida, clicar em **Mostrar Classes Base**. Isso exibe sua classe base: A.  
+ Você também pode arrastar apenas a classe B para o diagrama de classe, clicar com o botão direito do mouse na forma de classe de B e, em seguida, clicar em **Mostrar Classes Base**. Isso exibe sua classe base: R.  
   
 ## <a name="multiple-inheritance"></a>Várias heranças  
  O Designer de Classe dá suporte à visualização de relações de herança com várias classes. A *herança múltipla* é usada quando uma classe derivada tem atributos com mais de uma classe base. A seguir, temos um exemplo de herança múltipla:  
@@ -59,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  O comando **Mostrar Classes Derivadas** não tem suporte para código C++. É possível exibir as classes derivadas indo até o Modo de Exibição de Classe, expandindo o nó de tipo, expandindo a subpasta **Tipos Derivados** e, em seguida, arrastando esses tipos para o diagrama de classe.  
   
- Para obter mais informações sobre a herança de classes múltiplas, consulte [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Classes Base Múltiplas](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Para obter mais informações sobre a herança de classes múltiplas, consulte [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Classes Base Múltiplas](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Classes abstratas  
  O Designer de Classe dá suporte a classes abstratas (também chamadas de "classes base abstratas"). Essas são classes que você nunca instancia, mas das quais pode derivar outras classes. Usando um exemplo de "Herança múltipla" no início deste documento, você pode instanciar a classe `Bird` como objetos individuais, da seguinte maneira:  
@@ -178,9 +173,6 @@ typedef struct
  [Trabalhando com código do Visual C++ (Designer de Classe)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [Classes e structs](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
  [Tipos de classe anônima](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
  [Classes base múltiplas](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
  [Modelos](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Criando agentes de log de encaminhamento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
@@ -16,13 +11,13 @@ ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46cff57e8238e00f914f8437fbc81d1887e7d629
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d0fbdfb1af767bfc49d373fedd81598e29ef6918
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281236"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804621"
 ---
 # <a name="creating-forwarding-loggers"></a>Criando agentes de log de encaminhamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ Agentes de encaminhamento melhoram a eficiência de log, permitindo que você es
  [Obtaining Build Logs (Obtendo logs de build)](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Agentes de Log de Build](../msbuild/build-loggers.md)   
  [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)
-
-
-

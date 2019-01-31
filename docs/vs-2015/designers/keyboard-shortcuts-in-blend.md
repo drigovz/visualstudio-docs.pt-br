@@ -1,25 +1,20 @@
 ---
 title: Atalhos de teclado no Blend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4cf0dd03a496d97f883bd1543f133f9f5213ba93
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4f96dcdeb8c53645f314c9456a3328ddb6e7959e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754258"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Atalhos de teclado no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,17 +108,14 @@ Atalhos de projeto
 |Mostrar ou ocultar os limites do objeto|CTRL+SHIFT+H|  
 |Mudar entre os modos de exibição **Design**, **XAML** e **Dividir**|F11|  
   
-## <a name="workspace-shortcuts"></a>Atalhos de espaço de trabalho  
+## <a name="workspace-shortcuts"></a>Atalhos de workspace  
   
 |Para fazer isso|Faça isto|  
 |----------------|-------------|  
-|Mudar entre os espaços de trabalho **Animação** e **Design**|CTRL+F11|  
+|Mudar entre os workspaces **Animação** e **Design**|CTRL+F11|  
 |Exibir ou ocultar o painel **Ativos**|CTRL+PONTO|  
 |Exibir ou ocultar o painel **Resultados**|F12|  
 |Mostrar ou ocultar todos os painéis|F4|  
-|Redefinir o layout do espaço de trabalho ativo|CTRL+SHIFT+R|  
-|Aplicar movimento panorâmico no espaço de trabalho|Manter a barra de espaços pressionada|  
+|Redefinir o layout do workspace ativo|CTRL+SHIFT+R|  
+|Aplicar movimento panorâmico no workspace|Manter a barra de espaços pressionada|  
 |Usar temporariamente a ferramenta **Seleção** (enquanto uma ferramenta diferente permanece selecionada)|Manter a tecla CTRL pressionada|
-
-
-

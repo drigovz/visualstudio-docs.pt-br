@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79b823b850aabc98290df0157da673d11d9a268
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13b8362ccdb6d772a6ffaa4e817798cbb9edf080
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885829"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981722"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Guia Saída, Caixa de diálogo Opções da Mensagem
 Use o **saída** tab para especificar quais dados de cada mensagem à lista na [exibição de mensagens](../debugger/messages-view.md). Para exibir o [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md), escolha **mensagens de Log** do **Spy** menu.  

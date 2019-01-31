@@ -1,14 +1,9 @@
 ---
-title: Como gerenciar configurações de build com as configurações do Visual Basic Developer aplicadas | Microsoft Docs
-ms.custom: ''
+title: 'Como: Gerenciar configurações de Build com configurações do Visual Basic Developer aplicadas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, building with Visual Basic settings
 - MSBuild, debug build
@@ -21,21 +16,21 @@ ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b191b5d4223d32e4d620c779f5813c0db651a6cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784771"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Como gerenciar configurações de build com as configurações do Visual Basic Developer aplicadas
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Como: Gerenciar configurações de build com as configurações do desenvolvedor do Visual Basic aplicadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Por padrão, todas as opções avançadas de configuração de build ficam ocultas com as configurações do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer aplicadas. Este tópico explica como habilitar essas configurações manualmente.  
   
 ## <a name="enabling-advanced-build-configurations"></a>Habilitando configurações de build avançadas  
- Por padrão, as configurações do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer ocultam a opção de abrir a caixa de diálogo do **Configuration Manager** e as listas **Configuração** e **Plataforma** no [Designer de Projeto](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+ Por padrão, as configurações do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer ocultam a opção de abrir a caixa de diálogo do **Configuration Manager** e as listas **Configuração** e **Plataforma** no [Designer de Projeto](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Para habilitar configurações de build avançadas  
   
@@ -55,6 +50,3 @@ Por padrão, todas as opções avançadas de configuração de build ficam ocult
 ## <a name="see-also"></a>Consulte também  
  [Noções sobre configurações de build](../ide/understanding-build-configurations.md)   
  [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

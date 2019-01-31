@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2a78284cbdfa33953f6675c7d6e7ceee29a0eab4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54228052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932188"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Usando o atributo DebuggerDisplay (C#, Visual Basic, C++ c++ CLI)
 O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas de variáveis do depurador. Esse atributo pode ser aplicado a assemblies, delegados, propriedades, campos e tipos.  

@@ -1,14 +1,9 @@
 ---
 title: Página de Aplicativo, Designer de Projeto (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778640"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
 > [!NOTE]
 >  Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente na primeira vez em que a caixa de diálogo é aberta. Se você alterar posteriormente a estrutura de destino do projeto, será necessário selecionar os pré-requisitos manualmente para corresponder à nova estrutura de destino.  
   
- Para obter mais informações, consulte [Como destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
+ Para obter mais informações, confira [Como: Destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Tipo de aplicativo**  
  Especifica o tipo de aplicativo a ser compilado. Para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)], é possível especificar **aplicativo da Windows Store**, **Biblioteca de Classes** ou **Arquivo WinMD**. Para a maioria dos outros tipos de aplicativo, é possível especificar **aplicativos do Windows**, **aplicativo de Console**, **Biblioteca de Classes**, **Serviço Windows** ou **Biblioteca de Controles da Web**.  
@@ -108,6 +103,3 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
 ## <a name="see-also"></a>Consulte também  
 [Gerenciando propriedades do aplicativo](../../ide/application-properties.md)  
  [Escrevendo código em soluções do Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

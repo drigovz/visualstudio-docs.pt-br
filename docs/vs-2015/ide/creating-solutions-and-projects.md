@@ -1,14 +1,9 @@
 ---
 title: Criando soluções e projetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -22,13 +17,13 @@ ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763108"
 ---
 # <a name="creating-solutions-and-projects"></a>Criando soluções e projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49893689"
 Os projetos são os contêineres lógicos para tudo que é necessário para criar seu aplicativo. Quando você cria um projeto escolhendo **Arquivo &#124; Novo &#124; Projeto** no menu principal, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria uma solução para contê-lo. Em seguida, é possível adicionar projetos novos ou existentes à solução, se necessário. É possível criar projetos de arquivos de código existentes e criar projetos temporários (apenas .NET) que serão excluídos quando você não os quiser mais.  
   
 > [!NOTE]
->  As descrições deste tópico baseiam-se na edição Visual Studio Community. As caixas de diálogo e comandos de menu que você vê podem ser diferentes dos descritos aqui, dependendo de suas configurações ou da edição Visual Studio. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As descrições deste tópico baseiam-se na edição Visual Studio Community. As caixas de diálogo e comandos de menu que você vê podem ser diferentes dos descritos aqui, dependendo de suas configurações ou da edição Visual Studio. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Criar um projeto com base em um modelo de projeto instalado  
  **Arquivo &#124; Novo &#124; Projeto** no menu principal para exibir a caixa de diálogo Novo projeto. No painel esquerdo em **Mencionado &#124; Modelos**, escolha a linguagem de programação e plataforma ou tecnologia, em seguida, escolha um dos modelos disponíveis no painel central.  
@@ -100,7 +95,4 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
   
 ## <a name="see-also"></a>Consulte também  
  [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB Como criar soluções multiprojeto](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
-
-
-
+ [(NIB) Como: Criar soluções multiprojeto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

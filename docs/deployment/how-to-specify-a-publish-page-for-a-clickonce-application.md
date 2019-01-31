@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6397944a39a0424211c57ddfe1ad045fce730ec3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9878c3aa3f7ca7ae2a1606e3dd455731c0d9876b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911657"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917751"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Como: Especificar uma página de publicação para um aplicativo ClickOnce
 Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, uma página de Web padrão (Publish. htm) é gerada e publicada com o aplicativo. Esta página contém o nome do aplicativo, um link para instalar o aplicativo e/ou em todos os pré-requisitos e um link para um tópico da Ajuda que descreve [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. O **página de publicação** propriedade para o seu projeto permite que você especifique um nome para a página da Web para seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  

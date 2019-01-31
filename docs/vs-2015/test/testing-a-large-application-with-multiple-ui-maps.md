@@ -1,27 +1,22 @@
 ---
 title: Testando um aplicativo grande com vários mapas de interface do usuário | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0bc13aa389d6597831682cad62bcaad53672fa7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775080"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testando um aplicativo grande com vários mapas de interface do usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -149,6 +144,3 @@ namespace ContosoProject
  [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
  [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)
-
-
-

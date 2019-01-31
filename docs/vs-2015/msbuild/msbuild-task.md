@@ -1,14 +1,9 @@
 ---
 title: Tarefa do MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772331"
 ---
 # <a name="msbuild-task"></a>Tarefa MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,8 +46,8 @@ Compila projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de out
 |`SkipNonexistentProjects`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, os arquivos de projeto que não existem no disco serão ignorados. Caso contrário, esses projetos causarão um erro.|  
 |`StopOnFirstFailure`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, quando um dos projetos falhar em compilar, os projetos não serão mais compilados. Atualmente isso não tem suporte na criação em paralelo (com vários processadores).|  
 |`TargetAndPropertyListSeparators`|Parâmetro `String[]` opcional.<br /><br /> Especifica uma lista de destinos e de propriedades como metadados de item `Project`). Separadores não serão escapados antes do processamento. Por exemplo, %3B (um escape ';') será tratado como se não fosse escapado ';'.|  
-|`TargetOutputs`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Retorna as saídas dos destinos compilados de todos os arquivos de projeto. Somente as saídas de destinos que foram especificados são retornadas, não as saídas que podem existir em destinos dos quais esses destinos dependem.<br /><br /> O parâmetro `TargetOutputs` também contém os metadados a seguir:<br /><br /> -   `MSBuildSourceProjectFile`: o arquivo de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que contém o destino que defina as saídas.<br />-   `MSBuildSourceTargetName`: o destino que define as saídas. **Observação:** para identificar as saídas de cada arquivo de projeto ou destino separadamente, execute a tarefa `MSBuild` separadamente para cada arquivo de projeto ou destino. Se você executar a tarefa `MSBuild` apenas uma vez para compilar todos os arquivos de projeto, as saídas de todos os destinos serão coletadas em uma matriz.|  
-|`Targets`|Parâmetro `String` opcional.<br /><br /> Especifica o destino ou destinos para build nos arquivos de projeto. Use uma lista separada por ponto-e-vírgula de nomes de destino. Se nenhum destino for especificado na tarefa `MSBuild`, os destinos padrão especificados nos arquivos de projeto serão compilados. **Observação:** os destinos devem ocorrer em todos os arquivos de projeto. Caso contrário, ocorrerá um erro de build.|  
+|`TargetOutputs`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Retorna as saídas dos destinos compilados de todos os arquivos de projeto. Somente as saídas de destinos que foram especificados são retornadas, não as saídas que podem existir em destinos dos quais esses destinos dependem.<br /><br /> O parâmetro `TargetOutputs` também contém os metadados a seguir:<br /><br /> -   `MSBuildSourceProjectFile`: O arquivo de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que contém o destino que defina as saídas.<br />-   `MSBuildSourceTargetName`: O destino que define as saídas. **Observação:**  Para identificar as saídas de cada arquivo de projeto ou destino separadamente, execute a tarefa `MSBuild` separadamente para cada arquivo de projeto ou destino. Se você executar a tarefa `MSBuild` apenas uma vez para compilar todos os arquivos de projeto, as saídas de todos os destinos serão coletadas em uma matriz.|  
+|`Targets`|Parâmetro `String` opcional.<br /><br /> Especifica o destino ou destinos para build nos arquivos de projeto. Use uma lista separada por ponto-e-vírgula de nomes de destino. Se nenhum destino for especificado na tarefa `MSBuild`, os destinos padrão especificados nos arquivos de projeto serão compilados. **Observação:**  Os destinos devem ocorrer em todos os arquivos de projeto. Caso contrário, ocorrerá um erro de build.|  
 |`ToolsVersion`|Parâmetro `String` opcional.<br /><br /> Especifica o `ToolsVersion` a ser usado ao compilar projetos passados para essa tarefa.<br /><br /> Permite que uma tarefa [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] compile um projeto que tem como alvo uma versão diferente de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] do que a especificada no projeto. Os valores válidos são `2.0`, `3.0` e `3.5`. O valor padrão é `3.5`.|  
 |`UnloadProjectsOnCompletion`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o projeto será descarregado quando a operação for concluída.|  
 |`UseResultsCache`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o resultado em cache será retornado, se presente. Se a tarefa theMSBuild for executada, o resultado será armazenado em cache em um escopo (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> como uma lista de itens de build|  
@@ -198,6 +193,3 @@ Compila projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de out
 ## <a name="see-also"></a>Consulte também  
  [Tarefas](../msbuild/msbuild-tasks.md)   
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)
-
-
-

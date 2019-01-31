@@ -1,21 +1,17 @@
 ---
 title: Verificar o ambiente do Xamarin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fa7495673b1c063c210a86734811a34af8855740
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 220931b3c00087b778b4c886046795b3f83acaa0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794342"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766991"
 ---
 # <a name="verify-your-xamarin-environment"></a>Verificar o ambiente do Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,4 +113,3 @@ Depois de ter concluído os instaladores (consulte [Configurar e instalar](../cr
 2.  No Assistente de instalação para Xamarin que aparece, clique em **Avançar** e **Alterar**.  
   
 3.  Na lista de recursos opcionais a serem instalados, expanda **Xamarin para Visual Studio 2015**, escolha **será instalado na unidade local** e clique em **Avançar** para proceder para adicionar o recurso.
-

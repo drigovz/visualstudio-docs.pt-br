@@ -1,27 +1,22 @@
 ---
 title: StartProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - StartProfile
 ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aff331d138a3cc61ef2a30adf07bb76157f25228
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 994cde18cfe304add796bffa74d2a327e1c63f45
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774721"
 ---
 # <a name="startprofile"></a>StartProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,8 +67,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="net-framework-equivalent"></a>Equivalente ao .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## <a name="function-information"></a>Informações de Função  
- Cabeçalho: declarado em VSPerf.h  
+## <a name="function-information"></a>Informações de função  
+ Cabeçalho: Declarado em VSPerf.h  
   
  Biblioteca de importação: VSPerf.lib  
   
@@ -116,6 +111,3 @@ void ExerciseStartProfile()
   
 ## <a name="see-also"></a>Consulte também  
  [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Caixa de diálogo Opções do Ambiente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
 - VS.ToolsOptionsPages.Environment
@@ -16,13 +11,13 @@ ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f235e79b7173ec37e5ecfdf2dd3f0d1d2ae1ea40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8acdea7f4c524e6a8697b502efe610fb95a27680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753296"
 ---
 # <a name="environment-options-dialog-box"></a>Caixa de diálogo Opções do Ambiente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49257667"
 Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opções** para definir como determinados elementos do IDE (ambiente de desenvolvimento integrado) são exibidos e se comportam. Na barra de menus, é possível acessar as páginas Ambiente escolhendo **Ferramentas**, **Opções** e selecionando **Ambiente**.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que aparecem no computador podem ser diferentes dos que são descritos na Ajuda, pois variam de acordo com as configurações ativas e a edição do Visual Studio que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos de menu que aparecem no computador podem ser diferentes dos que são descritos na Ajuda, pois variam de acordo com as configurações ativas e a edição do Visual Studio que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Para obter informações como|Consulte|  
 |----------------------------------|---------|  
@@ -54,6 +49,3 @@ Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opçõe
   
 ## <a name="see-also"></a>Consulte também  
  [Caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)
-
-
-

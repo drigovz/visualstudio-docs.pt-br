@@ -1,14 +1,9 @@
 ---
 title: Microsoft Help Viewer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755032"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em se
 |-|-|  
 |Navegação|Usando a guia **Conteúdo**, você pode exibir o conteúdo instalado como uma hierarquia e especificar os critérios para filtrar os títulos que aparecem.<br /><br /> Usando a guia **Pesquisa**, você pode pesquisar termos em qualquer lugar no conteúdo, inclusive código e títulos de tópico.<br /><br /> Usando a guia **Índice**, você pode pesquisar no índice, especificar os critérios para filtrar as entradas e exigir que entradas de índice contenham ou comecem com texto que você especificar.<br /><br /> Usando a guia **Favoritos**, você pode salvar links para os tópicos mais usados e exibir uma lista de tópicos exibidos recentemente.|  
 |Exibição de tópico|Cada tópico aparece em uma guia, e você pode abrir vários tópicos ao mesmo tempo.|  
-|Gerenciando conteúdo|Você pode instalar, atualizar, mover e excluir conteúdo usando a guia **Gerenciar Conteúdo**. Na parte superior da guia, você pode usar o controle do **Código-fonte de instalação** para especificar se deseja instalar os livros de um local de rede ou de um disco ou um URI. A caixa **Caminho do repositório local** mostra o local em que os livros são instalados no computador local, e você pode movê-los para um local diferente escolhendo o botão **Mover**.<br /><br /> A lista de conteúdo mostra quais livros você pode instalar ou já instalou, se uma atualização está disponível e o tamanho de cada livro. Você pode instalar ou remover um ou mais livros escolhendo os links **Adicionar** ou **Remover** apropriados e, em seguida, escolhendo o botão **Atualizar** no painel **Alterações pendentes**. Se houver atualizações disponíveis para quaisquer livros que você já tenha instalado, você poderá atualizar o conteúdo escolhendo o link **Clique aqui para baixar agora** na parte inferior da janela. Além disso, todos os livros instalados serão atualizados se houver atualizações disponíveis quando você instalar livros adicionais. **Observação:** a funcionalidade da guia **Gerenciar Conteúdo** poderá ser diferentes se o administrador do Help Viewer desativar esses recursos ou se não houver acesso à Internet.|  
+|Gerenciando conteúdo|Você pode instalar, atualizar, mover e excluir conteúdo usando a guia **Gerenciar Conteúdo**. Na parte superior da guia, você pode usar o controle do **Código-fonte de instalação** para especificar se deseja instalar os livros de um local de rede ou de um disco ou um URI. A caixa **Caminho do repositório local** mostra o local em que os livros são instalados no computador local, e você pode movê-los para um local diferente escolhendo o botão **Mover**.<br /><br /> A lista de conteúdo mostra quais livros você pode instalar ou já instalou, se uma atualização está disponível e o tamanho de cada livro. Você pode instalar ou remover um ou mais livros escolhendo os links **Adicionar** ou **Remover** apropriados e, em seguida, escolhendo o botão **Atualizar** no painel **Alterações pendentes**. Se houver atualizações disponíveis para quaisquer livros que você já tenha instalado, você poderá atualizar o conteúdo escolhendo o link **Clique aqui para baixar agora** na parte inferior da janela. Além disso, todos os livros instalados serão atualizados se houver atualizações disponíveis quando você instalar livros adicionais. **Observação:**  A funcionalidade da guia **Gerenciar Conteúdo** poderá ser diferente se o administrador do Help Viewer desativar esses recursos ou se não houver acesso à Internet.|  
   
  A barra de ferramentas na janela do Help Viewer contém os seguintes botões:  
   
@@ -84,6 +79,3 @@ Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em se
  [Instalar e gerenciar o conteúdo local](../ide/install-and-manage-local-content.md)   
  [Localizar informações](../ide/locate-information.md)   
  [Solução de problemas do Help Viewer](../ide/troubleshooting-the-help-viewer.md)
-
-
-

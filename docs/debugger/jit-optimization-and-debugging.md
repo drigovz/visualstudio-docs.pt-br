@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8699c468a3bf5f9c72131add984055f08f23c7c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841259"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959285"
 ---
 # <a name="jit-optimization-and-debugging"></a>Otimização e depuração JIT
 **Como as otimizações funcionam no .NET:** Se você estiver tentando depurar o código, é mais fácil quando que o código está **não** otimizado. Isso ocorre porque quando o código é otimizado, o compilador e o tempo de execução fazer alterações para o código emitido de CPU para que ele é executado mais rapidamente, mas tem um mapeamento menos direto ao código-fonte original. Isso significa que os depuradores são geralmente não é possível informar o valor de variáveis locais e revisão de código e os pontos de interrupção podem não funcionar conforme o esperado.

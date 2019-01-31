@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9d478aa328337d3a2b08c74fcbbf7166580962
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828349"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018339"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Segurança de acesso do código para aplicativos ClickOnce
 Os aplicativos ClickOnce são baseados no .NET Framework e estão sujeitos a restrições de segurança de acesso do código. Por esse motivo, é importante que você entenda as implicações do código de segurança de acesso e escrever aplicativos ClickOnce adequadamente.  
@@ -56,7 +56,7 @@ Os aplicativos ClickOnce são baseados no .NET Framework e estão sujeitos a res
   
  Como um ponto de partida para configurar permissões, você pode selecionar uma zona de segurança do **zona** lista os **segurança** página. Se seu aplicativo será implantado potencialmente de mais de uma zona, selecione a zona com o mínimo de permissões. Para obter mais informações, confira [Como: Definir uma zona de segurança para um aplicativo ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Variam de acordo com as propriedades que podem ser definidas pelo conjunto de permissões; nem todos os conjuntos de permissões têm propriedades configuráveis. Para obter mais informações sobre a lista completa de permissões que seu aplicativo pode solicitar, consulte <xref:System.Security.Permissions>. Para obter mais informações sobre como definir permissões para uma zona personalizada, consulte [como: Definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
+ Variam de acordo com as propriedades que podem ser definidas pelo conjunto de permissões; nem todos os conjuntos de permissões têm propriedades configuráveis. Para obter mais informações sobre a lista completa de permissões que seu aplicativo pode solicitar, consulte <xref:System.Security.Permissions>. Para obter mais informações sobre como definir permissões para uma zona personalizada, consulte [como: Definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Depurar um aplicativo que possui permissões restritas  
  Como desenvolvedor, você provavelmente deve executar seu computador de desenvolvimento com permissões de confiança total. Portanto, você não vir as exceções de segurança mesmo quando você depura o aplicativo que os usuários podem ver quando eles o executam com permissões restritas.  

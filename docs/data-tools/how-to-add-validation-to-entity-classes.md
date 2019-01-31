@@ -8,16 +8,16 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9e73fe476dbe323289e7ebe90508aec695b6bd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc6aa80bf82a52e6dc67fab78349e4f58eadd627
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942548"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941046"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Como: Adicionar validação a classes de entidade
 *Validar* classes de entidade é o processo que confirma que os valores inseridos em objetos de dados estão de acordo com as restrições do esquema de um objeto e também as regras estabelecidas para o aplicativo. Validar dados antes de enviar atualizações para o base de dados subjacente é uma boa prática que reduz erros. Também reduz o número potencial de processamentos entre um aplicativo e o base de dados.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 156629fdce19dfe4e503f4af67ca31f99041e231
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9114b9e442f4a6cb8525120d24ba59be99891fef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855579"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940096"
 ---
 # <a name="spy-help"></a>Ajuda do Spy++
 A documentação para o utilitário Spy + + inclui dois grupos de tópicos gerais em usando Spy + + e sobre as exibições do Spy + +. Elas são seguidas por Spy + + referência, que fornece mais detalhes sobre cada caixa de caixa de diálogo e o comando de menu disponíveis.  

@@ -1,14 +1,9 @@
 ---
 title: Propriedades reservadas e conhecidas do MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6f121701ff5d463c852f386f012fe22a7a46d43e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804170"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +55,10 @@ ms.locfileid: "49225401"
 |`MSBuildThisFileDirectory`|A parte do diretório de `MSBuildThisFileFullPath`.<br /><br /> Inclua a barra invertida final no caminho.|Reservado|  
 |`MSBuildThisFileDirectoryNoRoot`|A parte do diretório de `MSBuildThisFileFullPath`, excluindo a unidade raiz.<br /><br /> Inclua a barra invertida final no caminho.|Reservado|  
 |`MSBuildThisFileExtension`|A parte da extensão do nome de arquivo de `MSBuildThisFileFullPath`.|Reservado|  
-|`MSBuildThisFileFullPath`|O caminho absoluto do projeto ou do arquivo de destinos que contém o destino que está sendo executado.<br /><br /> Dica: você pode especificar um caminho relativo em um arquivo de destino que é relativo ao arquivo de destino e não relativo ao arquivo de projeto original.|Reservado|  
+|`MSBuildThisFileFullPath`|O caminho absoluto do projeto ou do arquivo de destinos que contém o destino que está sendo executado.<br /><br /> Dica: Você pode especificar um caminho relativo em um arquivo de destinos que é relativo ao arquivo de destinos e não relativo ao arquivo de projeto original.|Reservado|  
 |`MSBuildThisFileName`|A parte do nome de arquivo de `MSBuildThisFileFullPath`, sem a extensão de nome de arquivo.|Reservado|  
 |`MSBuildToolsPath`|O caminho de instalação da versão [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] associada ao valor de `MSBuildToolsVersion`.<br /><br /> Não inclua a barra invertida final no caminho.<br /><br /> Essa propriedade não pode ser substituída.|Reservado|  
-|`MSBuildToolsVersion`|A versão do Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que é usado para compilar o projeto.<br /><br /> Observação: um conjunto de ferramentas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] consiste em tarefas, destinos e ferramentas que são usados para compilar um aplicativo. As ferramentas incluem compiladores, tais como csc.exe e vbc.exe. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurações padrão e personalizada do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).|Reservado|  
+|`MSBuildToolsVersion`|A versão do Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que é usado para compilar o projeto.<br /><br /> Observação: Um Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] consiste em tarefas, destinos e ferramentas que são usados para compilar um aplicativo. As ferramentas incluem compiladores, tais como csc.exe e vbc.exe. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurações padrão e personalizada do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).|Reservado|  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência do MSBuild](../msbuild/msbuild-reference.md) [Propriedades do MSBuild](msbuild-properties1.md)
-
-
-

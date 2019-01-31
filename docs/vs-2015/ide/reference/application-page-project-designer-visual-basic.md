@@ -1,14 +1,9 @@
 ---
 title: Página de Aplicativo, Designer de Projeto (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774854"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
 > [!NOTE]
 >  Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente quando você abre a caixa de diálogo pela primeira vez. Se você alterar posteriormente a estrutura de destino do projeto, será necessário especificar os pré-requisitos manualmente para corresponder à nova estrutura de destino.  
   
- Para obter mais informações, consulte [Como destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
+ Para obter mais informações, confira [Como: Destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Tipo de aplicativo**  
  Especifica o tipo de aplicativo a ser compilado. Para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)], é possível especificar **aplicativo da Windows Store**, **Biblioteca de Classes** ou **Arquivo WinMD**. Para a maioria dos outros tipos de aplicativo, é possível especificar **aplicativos do Windows**, **aplicativo de Console**, **Biblioteca de Classes**, **Serviço Windows** ou **Biblioteca de Controles da Web**.  
@@ -116,7 +111,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
  As seguintes configurações estão disponíveis na seção **Propriedades da estrutura dos aplicativos do Windows**. Essas opções estarão disponíveis somente se a caixa de seleção **Habilitar estrutura de aplicativo** estiver selecionada. A seção depois desta descreve as configurações **Propriedades da estrutura do aplicativos do Windows** para aplicativos WPF (Windows Presentation Foundation).  
   
  **Habilitar estilos visuais do XP**  
- Habilita ou desabilita os estilos visuais do Windows XP, também conhecidos como *Temas do Windows XP*. Os estilos visuais do Windows XP habilitam, por exemplo, controles com cantos arredondados e cores dinâmicas. O padrão é habilitado. Para obter mais informações sobre estilos visuais do Windows XP, consulte [Recursos do Windows XP e controles do Windows Forms](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Habilita ou desabilita os estilos visuais do Windows XP, também conhecidos como *Temas do Windows XP*. Os estilos visuais do Windows XP habilitam, por exemplo, controles com cantos arredondados e cores dinâmicas. O padrão é habilitado. Para obter mais informações sobre estilos visuais do Windows XP, consulte [Recursos do Windows XP e controles do Windows Forms](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Criar um aplicativo de instância única**  
  Marque esta caixa de seleção para impedir que usuários executem várias instâncias do aplicativo. A configuração padrão para essa caixa de seleção é desmarcada. Essa configuração permite que várias instâncias do aplicativo sejam executadas.  
@@ -166,6 +161,3 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
   
 ## <a name="see-also"></a>Consulte também  
 [Gerenciando propriedades do aplicativo](../../ide/application-properties.md) [Escrevendo código em soluções do Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

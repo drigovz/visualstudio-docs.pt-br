@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269755"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231565"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Um projeto do Visual C++ no Visual Studio de depuração remota
 Para depurar um aplicativo do Visual Studio em um computador diferente, instalar e executar as ferramentas remotas no computador onde você implantará seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, implantar e executar seu aplicativo.
@@ -96,9 +96,11 @@ O depurador remoto tem suporte no Windows 7 e mais recente (não de telefone) e 
 11. No computador do Visual Studio, você deve ver que a execução é interrompida no ponto de interrupção.  
   
     > [!TIP]
-    >  Como alternativa, você pode implantar os arquivos como uma etapa separada. No **Gerenciador de soluções,** com o botão direito do **mymfc** nó e, em seguida, escolha **implantar**.  
+    > Como alternativa, você pode implantar os arquivos como uma etapa separada. No **Gerenciador de soluções,** com o botão direito do **mymfc** nó e, em seguida, escolha **implantar**.
   
-    Se você tiver arquivos sem código que precisam ser usados pelo aplicativo, você precisará incluí-los no projeto do Visual Studio. Crie uma pasta de projeto para os arquivos adicionais (na **Gerenciador de soluções**, clique em **Adicionar > nova pasta**.) Em seguida, adicione os arquivos na pasta (na **Gerenciador de soluções**, clique em **Adicionar > Item existente**, em seguida, selecione os arquivos). Sobre o **propriedades** para cada arquivo, defina **Copy to Output Directory** para **copiar sempre**.
+    Se você tiver arquivos não são de código que são exigidos pelo aplicativo, você pode especificá-los no **arquivos adicionais para implantar** sobre o **depurador remoto do Windows** página.
+
+    Como alternativa, você pode incluir os arquivos em seu projeto e defina as **conteúdo** propriedade a ser **Sim** no **propriedades** página para cada arquivo. Esses arquivos são copiados para o **diretório de implantação** especificado na **depurador remoto do Windows** página. Você também pode alterar o **tipo de Item** para **copiar arquivo** e especificar propriedades adicionais lá se você precisa dos arquivos a serem copiados para uma subpasta dos **diretório de implantação**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar a depuração com símbolos remotos 
 

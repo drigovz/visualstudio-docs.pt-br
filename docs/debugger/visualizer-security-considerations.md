@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b7ef894d249c22cf7b97e23568cd607580affb2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819545"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922006"
 ---
 # <a name="visualizer-security-considerations"></a>Considerações de segurança do visualizador
 Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma exploração conhecida existe no momento para essas ameaças potenciais, mas os desenvolvedores devem estar atentos a elas e tomar as precauções apropriadas de segurança, conforme descrito aqui, para se proteger contra futuras explorações.  
