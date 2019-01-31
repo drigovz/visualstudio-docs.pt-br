@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c8dfd53ec6877e00c395bd068efe58f3776ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0033bb762a42090bd1849d6acc609cf248b28179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931967"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Preparação de depuração: Aplicativos dos Windows Forms
 O modelo de projeto do Windows Forms (.NET) cria um aplicativo do Windows Forms. Depurar esse tipo de aplicativo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é simples. Para obter mais informações, consulte [criando um projeto de aplicativo do Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  

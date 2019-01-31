@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 30ed90f3-9323-4784-80a4-937449eb54f6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae0b5831ef6007832438c4d589c4385711666dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b440c2e95432dfa543d7e9aacae1256b27929de1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921923"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020185"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Usando verificações de tempo de execução sem a biblioteca em tempo de execução do C
 Se você vincular o programa sem a biblioteca de tempo de execução C, usando **/NODEFAULTLIB**e quiser usar verificações de tempo de execução, você deverá vincular com Runtmchk.  

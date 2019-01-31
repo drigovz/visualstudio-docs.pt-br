@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8491e17d214052080e997e3ced65c3154927d558
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95ea10bf4eb3fba3fef6d13641ad516accac3f15
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870016"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025131"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Caixa de diálogo Configurações de Segurança Avançadas
 
@@ -26,7 +26,7 @@ Essa caixa de diálogo permite especificar configurações de segurança relacio
 
 ![Caixa de diálogo Configurações de Segurança Avançada no Visual Studio](../media/advanced-security-settings.png)
 
-Para acessar essa caixa de diálogo, selecione um nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**. Na página Segurança página, selecione Habilitar Configurações de Segurança do ClickOnce, clique em **Este é um aplicativo de confiança parcial** e, em seguida, clique em **Avançado**.
+Para acessar essa caixa de diálogo, selecione um nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**. Na página **Segurança** página, selecione **Habilitar Configurações de Segurança do ClickOnce**, clique em **Este é um aplicativo de confiança parcial** e, em seguida, clique em **Avançado**.
 
 ## <a name="uielement-list"></a>Lista UIElement
 

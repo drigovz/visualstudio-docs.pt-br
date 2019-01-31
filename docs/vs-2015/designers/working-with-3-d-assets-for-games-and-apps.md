@@ -1,27 +1,22 @@
 ---
 title: Trabalhar com ativos 3D para jogos e aplicativos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797589"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Trabalhando com ativos 3D para jogos e aplicativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ Este documento descreve as ferramentas [!INCLUDE[vsprvs](../includes/vsprvs-md.m
 |[Trabalhando com modelos 3D](../designers/working-with-3-d-models.md)|Descreve como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com modelos 3D.|  
 |[Trabalhando com sombreadores](../designers/working-with-shaders.md)|Descreve como usar o Designer de sombrador [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para criar e modificar efeitos de sombreamento personalizado.|  
 |[Usando ativos 3D no jogo ou no aplicativo](../designers/using-3-d-assets-in-your-game-or-app.md)|Descreve como usar ativos, que você criou usando o Editor de Imagens, o Editor de Modelo ou o Designer de Sombreador, em seu jogo ou aplicativo.|
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Página Build, Designer de Projeto (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805315"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,13 +35,13 @@ Use a página **Compilar** do **Designer de Projeto** para especificar as propri
  As opções a seguir permitem selecionar a configuração e a plataforma a ser exibida ou modificada.  
   
 > [!NOTE]
->  Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, essas opções não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+>  Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, essas opções não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Configuração**  
  Especifica quais definições de configuração exibir ou modificar. As configurações podem ser **Ativa (Depuração)** (esse é o padrão), **Depuração**, **Versão** ou **Todas as Configurações**.  
   
  **Plataforma**  
- Especifica quais configurações de plataforma exibir ou modificar. A configuração padrão é **Ativo (Qualquer CPU)**. É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, consulte [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).  
+ Especifica quais configurações de plataforma exibir ou modificar. A configuração padrão é **Ativo (Qualquer CPU)**. É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, confira [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>Geral  
  As opções a seguir permitem definir várias configurações do compilador do C#.  
@@ -109,9 +104,9 @@ Use a página **Compilar** do **Designer de Projeto** para especificar as propri
  As configurações a seguir são usadas para configurar as opções de saída para o processo de build.  
   
  **Caminho de saída**  
- Especifica o local dos arquivos de saída para a configuração deste projeto. Insira o caminho da saída do build nessa caixa ou escolha o botão **Procurar** para especificar um caminho. Observe que o caminho é relativo; se você inserir um caminho absoluto, ele será salvo como relativo. O caminho padrão é bin\Debug ou bin\Release\\. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica o local dos arquivos de saída para a configuração deste projeto. Insira o caminho da saída do build nessa caixa ou escolha o botão **Procurar** para especificar um caminho. Observe que o caminho é relativo; se você inserir um caminho absoluto, ele será salvo como relativo. O caminho padrão é bin\Debug ou bin\Release\\. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. O comando **Build** do menu **Depurar** (F5) colocará o build no local de depuração, independentemente do **Caminho de saída** você especificar. No entanto, o comando **Build** do menu **Build** o coloca no local especificado. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. O comando **Build** do menu **Depurar** (F5) colocará o build no local de depuração, independentemente do **Caminho de saída** você especificar. No entanto, o comando **Build** do menu **Build** o coloca no local especificado. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Arquivo de documentação XML**  
  Especifica o nome de um arquivo no qual os comentários da documentação serão processados. Para obter mais informações, consulte [/doc (opções do compilador C#)](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
@@ -128,6 +123,3 @@ Use a página **Compilar** do **Designer de Projeto** para especificar as propri
 ## <a name="see-also"></a>Consulte também  
  [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)   
  [Opções do compilador de C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
-
-
-
