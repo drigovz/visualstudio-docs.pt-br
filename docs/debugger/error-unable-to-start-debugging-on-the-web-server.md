@@ -23,15 +23,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 804249700ff813de5a45e44787af4f39d4a82ad2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856677"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938445"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: Não é possível iniciar a depuração no servidor Web
 
@@ -51,7 +51,7 @@ O `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 - [O servidor remoto retornou um erro](#server_error)
 - [Não foi possível iniciar a depuração do ASP.NET](#aspnet)
 - [O depurador não pode se conectar ao computador remoto](#cannot_connect)
-- [Consulte a ajuda para obter os erros de configuração comuns. Executando a página da Web fora do depurador pode fornecer mais informações.](#see_help)
+- [ Confira a ajuda para obter os erros de configuração comuns. Executando a página da Web fora do depurador pode fornecer mais informações.](#see_help)
 
 ## <a name="IISlist"></a> O IIS não lista um site que coincide com o lançamento url
 
@@ -61,7 +61,7 @@ O `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 
 ## <a name="web_server_config"></a> O servidor Web não foi configurado corretamente
 
-- Consulte [erro: O servidor Web não foi configurado corretamente](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- Consulte [erro: ](../debugger/error-the-web-server-is-not-configured-correctly.md) O servidor Web não foi configurado corretamente
 
 ## <a name="unabletoconnect"></a> Não é possível conectar-se para o servidor Web
 

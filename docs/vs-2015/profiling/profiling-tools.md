@@ -1,27 +1,22 @@
 ---
 title: Ferramentas de Criação de Perfil | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782096"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780838"
 ---
 # <a name="profiling-tools"></a>Ferramentas de Criação de Perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ Ferramentas de Diagnóstico e Criação de Perfil ajudam você a diagnosticar o 
  O [IntelliTrace](../debugger/intellitrace.md) lhe permite registrar eventos específicos, examinar os dados na janela **Locais** durante eventos do depurador e chamadas de função e depurar erros difíceis de reproduzir.  O IntelliTrace é principalmente uma ferramenta de depuração, mas ela também fornece informações que podem ser usadas para investigações de desempenho. Você pode usar essa ferramenta no Visual Studio Enterprise somente com aplicativos de área de trabalho, aplicativos universais do Windows e C# ASP.NET. Você pode encontrar o IntelliTrace na janela **Ferramentas de Diagnóstico** enquanto você está depurando (**Depurar/Janelas/Mostrar Ferramentas de Diagnóstico**).  
   
 ## <a name="profiling-in-production"></a>Criação de perfil na produção  
- A abordagem recomendada para criação de perfil na produção é criar o perfil por meio da [linha de comando usando vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) para coletar um perfil de CPU. Para suporte à criação de perfil remota no Serviço de Aplicativo do Azure, crie o perfil por meio do [Gerenciador de Servidores ou do Portal Kudu](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ A abordagem recomendada para criação de perfil na produção é criar o perfil por meio da [linha de comando usando vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) para coletar um perfil de CPU. Para suporte à criação de perfil remota no Serviço de Aplicativo do Azure, crie o perfil por meio do [Gerenciador de Servidores ou do Portal Kudu](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Qual ferramenta devo usar?  
  Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio oferece e os diferentes tipos de projeto com os quais você poderá usá-las:  
@@ -103,6 +98,3 @@ Ferramentas de Diagnóstico e Criação de Perfil ajudam você a diagnosticar o 
   
 ## <a name="see-also"></a>Consulte também  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

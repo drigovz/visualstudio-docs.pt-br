@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 892c9f3b200466b22d847063ce2a60cf63301e5a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 285ec62b5cfa0fbff081ccf994633663f69b847a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915069"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987499"
 ---
 # <a name="symbol-locations"></a>Locais de símbolos
 A maioria dos símbolos tem um local definido dentro do arquivo de imagem. Local de um símbolo é especificado com um valor da [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) enumeração. O símbolo pode dar suporte a propriedades adicionais, dependendo de seu local.  

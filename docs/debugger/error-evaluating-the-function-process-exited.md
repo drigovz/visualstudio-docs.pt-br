@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78580cad30447419734afd9ef8c8fbc490e516e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbd7a4c9b3f1524e3552ea7c0c2dd636b09c0f2b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882384"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967307"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erro: O processo de destino foi encerrado com o código &#39;código&#39; ao avaliar a função &#39;função&#39;
 
@@ -42,6 +42,6 @@ Se você pode modificar essa função, você pode impedir que o depurador de cha
 
 Se você não pode modificar esse método, você poderá interromper o processo de destino em uma instrução de alternativa e tente novamente a avaliação.
  
-### <a name="solution-2-disable-all-implicit-evaluation"></a>Solução  Desabilitar todos os avaliação implícita
+### <a name="solution-2-disable-all-implicit-evaluation"></a>Solução Desabilitar todos os avaliação implícita
  
 Se as soluções anteriores não resolverem o problema, vá para **ferramentas** > **opções**e desmarque a configuração **depuração**  >   **Gerais** > **habilitar avaliação de propriedade e outras chamadas de função implícitas**. Isso desabilitará a maioria das avaliações de função implícitas e deve resolver o problema.
