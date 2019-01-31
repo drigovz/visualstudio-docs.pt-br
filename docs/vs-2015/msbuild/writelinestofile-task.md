@@ -1,14 +1,9 @@
 ---
 title: Tarefa WriteLinesToFile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4af63679437e0b128472d084a55f1ef24a93bc4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b25318a9b453ee9f9b05b22e7130555b5a14d556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760135"
 ---
 # <a name="writelinestofile-task"></a>Tarefa WriteLinesToFile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,6 +72,3 @@ Grava os caminhos dos itens especificados no arquivo de texto especificado.
 ## <a name="see-also"></a>Consulte também  
  [Tarefas](../msbuild/msbuild-tasks.md)   
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)
-
-
-

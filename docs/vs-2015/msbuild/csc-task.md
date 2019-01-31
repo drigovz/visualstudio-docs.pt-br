@@ -1,14 +1,9 @@
 ---
 title: Tarefa Csc | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 657535e73294508ac59330cd379c1c6bd192a0b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3cab96aece51252c5a847e07fc3863e6b6f0bf5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766183"
 ---
 # <a name="csc-task"></a>Tarefa Csc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,6 +98,3 @@ Encapsula CSC.exe e produz executáveis (arquivos .exe), bibliotecas de vínculo
 ## <a name="see-also"></a>Consulte também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)
-
-
-

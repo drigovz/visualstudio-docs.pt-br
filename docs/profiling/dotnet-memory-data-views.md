@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95577c4d346ee635fb44e36c88965d322efee308
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e67ee624b965156812c8ba9d1676a25308f617a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820154"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941269"
 ---
 # <a name="net-memory-data-views"></a>Exibições de dados da memória do .NET
 Esta seção contém informações de referência para as exibições e os relatórios dos arquivos de dados do criador de perfil que contêm os dados de criação de perfil de memória do .NET.  

@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c291f9437cab79ca1030bdde3d5d3df86547a87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952308"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 
@@ -153,7 +153,7 @@ Você pode criar controles de associação de dados arrastando itens da janela *
 
 2. Faça algumas alterações nos dados de um ou mais registros em cada tabela.
 
-3. Selecione o **salvar** botão.
+3. Selecione o botão **Salvar**.
 
 4. Confira os valores no banco de dados para verificar se as alterações foram salvas.
 

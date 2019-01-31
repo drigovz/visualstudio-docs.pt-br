@@ -10,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942181"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834247"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Introdução ao Live Unit Testing no Visual Studio
 
@@ -25,7 +25,7 @@ O Live Unit Testing pode ser usado para testar soluções direcionadas ao .NET F
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 A solução C# completa pode ser baixada do repositório [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) no GitHub.
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 A solução completa do Visual Basic pode ser baixada do repositório [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) no GitHub.
 
 ---
@@ -78,7 +78,7 @@ Agora que já criou a solução, você criará uma biblioteca de classes chamada
 
 1.  Selecione **Compilar** > **Compilar Solução** no menu de nível superior do Visual Studio. O Visual Studio deverá compilar a biblioteca com êxito.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
 1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó Visual Basic e, em seguida, selecione **.NET Standard**.
@@ -153,7 +153,7 @@ A próxima etapa é criar o projeto de teste de unidade para testar a biblioteca
 
 1. Compile o projeto de teste de unidade selecionando **Compilar** > **Recompilar Solução** no menu de nível superior do Visual Studio.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
@@ -210,7 +210,7 @@ Quando ele termina de executar os testes, o **Gerenciador de Testes** exibe os r
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![O Gerenciador de Testes e a janela de código depois que o Service Fabric Explorer é iniciado](media/lut-start/lut-results-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 ![O Gerenciador de Testes e a janela de código depois que o Service Fabric Explorer é iniciado](media/lut-start/lut-results-vb.png)
 
 ---
@@ -226,7 +226,7 @@ Você também pode obter informações mais detalhadas sobre a cobertura do test
 
    ![Cobertura de código para a instrução return](media/lut-start/code-coverage-cs2.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Clique na marca de verificação verde na linha em que está escrito `If (String.IsNullOrWhiteSpace(s)) Then` no método `StartsWithUpper`. Como mostra a figura a seguir, o Live Unit Testing indica que três testes cobrem essa linha de código e que todos foram executadas com êxito.
 
    ![Cobertura de código para a instrução condicional 'if'](media/lut-start/code-coverage-vb1.png)
@@ -262,7 +262,7 @@ Para estender a cobertura de código para o método `StartsWithLower`, faça o s
 
     ![Cobertura de código do método StartsWithLower](media/lut-start/lut-extended-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Adicione os seguintes métodos `TestStartsWithLower` e `TestDoesNotStartWithLower` no arquivo de código-fonte do teste do projeto:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -322,7 +322,7 @@ Nesta seção, você vai explorar como é possível usar o Live Unit Testing par
 
 1. Selecione **Depurar** > **Continuar**, pressione **F5** ou clique no botão **Continuar** na barra de ferramentas para continuar executando o programa de teste. Como ocorreu uma exceção sem tratamento, o teste foi encerrado.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Adicione o seguinte método ao arquivo de teste:
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -370,7 +370,7 @@ Isso fornece informações suficientes para uma investigação preliminar do bug
 
     ![O teste de HasEmbeddedSpaces com êxito.](media/lut-start/test-success-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Examine a comparação no método `HasEmbeddedSpaces`. Ele considera um espaço inserido como U+0020. No entanto, o padrão Unicode inclui vários outros caracteres de espaço. Isso sugere que o código da biblioteca testou um caractere de espaço em branco incorretamente.
 
 1. Substitua a comparação de igualdade por uma chamada para o método <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName>:
