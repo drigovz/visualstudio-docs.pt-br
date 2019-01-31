@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3be7039995c27990a1c5c55bf173ef06e5fee0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888446"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984698"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Implantar componentes COM o ClickOnce
 Implantação de componentes legados COM tradicionalmente tem sido uma tarefa difícil. Componentes precisam ser registrados globalmente e, portanto, podem causar efeitos colaterais indesejáveis entre aplicativos sobrepostos. Essa situação geralmente não é um problema em aplicativos .NET Framework porque componentes são completamente isolados para um aplicativo ou são compatíveis com o lado a lado. Visual Studio permite que você implante os componentes isolados no Windows XP ou o sistema de operacional superior.  
@@ -163,7 +163,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
   
 - O componente gerencia um dispositivo físico ou virtual para o sistema, por exemplo, um driver de dispositivo para o spooler de impressão.  
   
-- O componente é redistribuível de acesso a dados. Aplicativos de dados geralmente requerem separado de acesso a dados redistribuível ser instalado antes de serem executados. Você não deve tentar isolar os componentes, como o controle de dados do Microsoft ADO, OLE DB Microsoft ou Microsoft Data Access Components (MDAC). Em vez disso, se seu aplicativo usa MDAC ou SQL Server Express, você deve defini-los como pré-requisitos; consulte [como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
+- O componente é redistribuível de acesso a dados. Aplicativos de dados geralmente requerem separado de acesso a dados redistribuível ser instalado antes de serem executados. Você não deve tentar isolar os componentes, como o controle de dados do Microsoft ADO, OLE DB Microsoft ou Microsoft Data Access Components (MDAC). Em vez disso, se seu aplicativo usa MDAC ou SQL Server Express, você deve defini-los como pré-requisitos; ver [como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   Em alguns casos, talvez seja possível para o desenvolvedor do componente de refazer o design para COM. sem registro Se isso não for possível, você pode criar e publicar aplicativos que dependem deles por meio do esquema padrão do registro usando o Bootstrapper. Para obter mais informações, consulte [criação de pacotes de Bootstrapper](../deployment/creating-bootstrapper-packages.md).  
   
