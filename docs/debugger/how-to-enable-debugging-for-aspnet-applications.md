@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b87a8415bf2df2b8848b4fb619964d981e31ffcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035244"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicativos ASP.NET ou ASP.NET Core no Visual Studio
 
@@ -116,7 +116,7 @@ Projetos do ASP.NET possuem *Web. config* arquivos por padrão, que contêm os d
 
 1. No Visual Studio, abra o projeto do ASP.NET *Web. config* arquivo.  
   
-2. *Web. config* é um arquivo XML, portanto, contém as seções aninhadas marcadas por aspas. Localize o `configuration/system.web/compilation` seção. (Se o `compilation` elemento não existir, crie-o.)
+2. *Web. config* é um arquivo XML, portanto, contém as seções aninhadas marcadas por aspas. Localize a seção `configuration/system.web/compilation`. (Se o `compilation` elemento não existir, crie-o.)
   
 3. Certifique-se de que o `debug` de atributo na `compilation` é definido como `true`. (Se o `compilation` elemento não contém uma `debug` do atributo, adicioná-lo e defina-o como `true`.) 
   
