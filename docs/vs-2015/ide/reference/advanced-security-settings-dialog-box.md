@@ -1,14 +1,9 @@
 ---
 title: Caixa de diálogo Configurações Avançadas de Segurança | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.err.debug_in_zone_no_hostproc
 - vs.err.debug_in_zone_no_hostproc:11310
@@ -22,13 +17,13 @@ ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ff49418b23317b590776c0f81d334480f460780a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 283428e4d4b2c81179d8dbd8ff6200c1d7140eae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758720"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Caixa de diálogo Configurações de Segurança Avançadas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49232969"
   
 Essa caixa de diálogo permite especificar configurações de segurança relacionadas à depuração na zona.  
   
- Para acessar essa caixa de diálogo, selecione um nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**. Na página Segurança página, selecione Habilitar Configurações de Segurança do ClickOnce, clique em **Este é um aplicativo de confiança parcial** e, em seguida, clique em **Avançado**.  
+ Para acessar essa caixa de diálogo, selecione um nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**. Na página **Segurança** página, selecione **Habilitar Configurações de Segurança do ClickOnce**, clique em **Este é um aplicativo de confiança parcial** e, em seguida, clique em **Avançado**.  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  **Depurar este aplicativo com o conjunto de permissões selecionado**  
@@ -54,6 +49,3 @@ Essa caixa de diálogo permite especificar configurações de segurança relacio
   
 ## <a name="see-also"></a>Consulte também  
  [Página Segurança, Designer de Projeto](../../ide/reference/security-page-project-designer.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
-title: 'Extensão de exemplo do Excel: classe TechnologyManager | Microsoft Docs'
-ms.custom: ''
+title: 'Extensão do Excel de exemplo: Classe TechnologyManager | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779564"
 ---
-# <a name="sample-excel-extension-technologymanager-class"></a>Extensão de exemplo do Excel: classe TechnologyManager
+# <a name="sample-excel-extension-technologymanager-class"></a>Extensão do Excel de exemplo: Classe TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Essa classe estende a classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> e é responsável por fornecer os serviços principais para a extensão [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Embora a classe base tenha muitos métodos, apenas um subconjunto deles é usado neste exemplo.  
@@ -72,6 +67,3 @@ Essa classe estende a classe <xref:Microsoft.VisualStudio.TestTools.UITest.Exten
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>   
  [Estendendo testes de IU codificados e gravações da ação para dar suporte ao Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-
