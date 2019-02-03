@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 42d82845-d6f6-4846-9ecd-9dd169216077
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa93204c7011fb13a079c22a0f18bede145631c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf14665b4a8f6f57e01d53debedbb3534fa025d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927201"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015479"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 Mantém o contexto de pilha entre invocações da [idiaframedata:: execute](../../debugger/debug-interface-access/idiaframedata-execute.md) método.  
@@ -46,7 +46,7 @@ IDiaStackWalkFrame : IUnknown
  O aplicativo cliente implementa essa interface e passa uma instância da interface para o [idiaframedata:: execute](../../debugger/debug-interface-access/idiaframedata-execute.md) método. A mesma instância dessa interface é usada várias vezes para manter o estado dos registros durante cada chamada a `execute` método. O `execute` método também usa essa interface para determinar o endereço de retorno.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: dia2.h  
+ Cabeçalho: Dia2.h  
   
  Biblioteca: diaguids.lib  
   

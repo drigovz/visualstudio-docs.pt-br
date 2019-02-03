@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 838e35c0be5ed9cc0e8e7cb34e118b1f57da4689
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847949"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961904"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
 
@@ -42,7 +42,7 @@ A tabela a seguir lista as configurações padrão interno para esses valores do
 
 |Item do registro|Valor padrão|Explicação|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Corresponde a um caractere minúsculo seguido por um caractere maiusculo ou um sublinhado.|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Corresponde a um caractere minúsculo seguido por um caractere maiusculo ou um sublinhado.|
 |**SmartCaptionReplacement**|**USD 1, USD 2**|O **US $1** representa quaisquer caracteres correspondidos no primeiro parênteses da expressão e o **US $2** representa quaisquer caracteres correspondidos no segundo parênteses. A substituição é a primeira correspondência, um espaço e, em seguida, a segunda correspondência.|
 |**SmartCaptionSuffix**|**:**|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name`, o sufixo torna `Company Name:`|
 

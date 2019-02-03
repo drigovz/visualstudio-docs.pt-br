@@ -1,14 +1,9 @@
 ---
-title: Como coletar dados de ETW (Rastreamento de Eventos para Windows) | Microsoft Docs
-ms.custom: ''
+title: 'Como: Coletar dados de ETW (Rastreamento de Eventos para Windows) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.events
 helpviewer_keywords:
@@ -19,15 +14,15 @@ ms.assetid: aa2261fe-d5f5-49fc-a171-d18842e1dc7d
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b840f320495437bbabb35290b81a87bc2db545d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 74754feccc37e32164fe03b156cf059695e7fe66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793055"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Como coletar dados de Rastreamento de Eventos para Windows (ETW)
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Como: Coletar dados do ETW (Rastreamento de Eventos para Windows)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O ETW (Rastreamento de Eventos para Windows) é um recurso de rastreamento eficiente em nível de kernel que permite que o criador de perfil registre log de eventos de kernel ou de eventos definidos pelo aplicativo. Os dados coletados pelo provedor de eventos podem ser exibidos somente usando a opção /**Summary:ETW** da ferramenta de linha de comando [VSPerfReport](../profiling/vsperfreport.md). Você pode usar esse relatório para determinar o local em que ocorrem problemas de desempenho no aplicativo.  
@@ -49,6 +44,3 @@ O ETW (Rastreamento de Eventos para Windows) é um recurso de rastreamento efici
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)
-
-
-

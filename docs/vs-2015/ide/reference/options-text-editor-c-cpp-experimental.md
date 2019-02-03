@@ -1,11 +1,7 @@
 ---
-title: Opções, Editor de texto, C / C++, Experimental | Microsoft Docs
-ms.custom: ''
+title: Opções, Editor de Texto, C/C++, Experimental | Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
@@ -14,13 +10,13 @@ ms.assetid: b9e9dda2-350c-460d-b368-37d6c5342eee
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 41be21f3b28cccfe735a2a908851ebe3b181ce7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762889"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +29,7 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
  Esses recursos estão disponíveis em uma instalação do Visual Studio 2015 Atualização 1 RC.  
   
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Navegação  
  **Habilitar Novo Mecanismo de Banco de Dados**  
@@ -72,6 +68,3 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 ## <a name="see-also"></a>Consulte também  
  [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)   
  [Refatoração em C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
-
-
-

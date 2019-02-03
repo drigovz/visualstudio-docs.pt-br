@@ -1,14 +1,9 @@
 ---
 title: Exibição de chamador-computador chamado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7631085e0560c74ea162f8aeae9147bbcf9412e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788935"
 ---
 # <a name="callercallee-view"></a>Exibição Chamador/Receptor da Chamada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ A exibição de Chamador/Computador Chamado exibe informações de perfil para u
   
  Você pode selecionar uma função diferente para ser a Função Atual na parte do meio da exibição de Relatório clicando duas vezes em qualquer uma das funções listadas nas outras duas partes da exibição. A exibição de Relatório é atualizada automaticamente para refletir as alterações.  
   
- Você pode classificar os dados clicando em nomes de coluna. Colunas adicionais podem ser incluídas na exibição de Chamador/Computador Chamado. Para obter mais informações, consulte [Como personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md).  
+ Você pode classificar os dados clicando em nomes de coluna. Colunas adicionais podem ser incluídas na exibição de Chamador/Computador Chamado. Para obter mais informações, confira [Como: Personalizar as Colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de chamador/computador chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)   
@@ -51,6 +46,3 @@ A exibição de Chamador/Computador Chamado exibe informações de perfil para u
  [Exibição Chamador/Receptor da Chamada – dados de instrumentação da memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Exibição Chamador/Receptor da Chamada – dados de amostragem da memória do .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Exibição do chamador/computador chamado – dados de contenção](../profiling/caller-callee-view-contention-data.md)
-
-
-

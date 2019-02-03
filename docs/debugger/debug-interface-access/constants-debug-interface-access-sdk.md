@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: aca4ec77-bc08-4cdd-a6ce-8d4a28ea5ea3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc54e15014e05f539c115675a97690e685cb5f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae34269cd0f15d522233a73e3500ded4f90a3d52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969909"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (SDK de Acesso à Interface de Depuração)
 Constantes de cadeia de caracteres podem ser usados para identificar várias seções de um arquivo de banco de dados (PDB) de depuração do programa por meio do DIA SDK.  
@@ -30,12 +30,12 @@ Constantes de cadeia de caracteres podem ser usados para identificar várias se�
 |-----------|-----------|  
 |`DiaTable_Symbols`|L "Símbolos"|  
 |`DiaTable_Sections`|L "Seções"|  
-|`DiaTable_SrcFiles`|L "SourceFiles"|  
+|`DiaTable_SrcFiles`|L"SourceFiles"|  
 |`DiaTable_LineNums`|L "LineNumbers"|  
-|`DiaTable_SegMap`|L "SegmentMap"|  
-|`DiaTable_Dbg`|L "Dbg"|  
+|`DiaTable_SegMap`|L"SegmentMap"|  
+|`DiaTable_Dbg`|L"Dbg"|  
 |`DiaTable_InjSrc`|L "InjectedSource"|  
-|`DiaTable_FrameData`|L "FrameData"|  
+|`DiaTable_FrameData`|L"FrameData"|  
   
 ## <a name="example"></a>Exemplo  
  Aqui está um exemplo que usa um dos seguintes símbolos:  
