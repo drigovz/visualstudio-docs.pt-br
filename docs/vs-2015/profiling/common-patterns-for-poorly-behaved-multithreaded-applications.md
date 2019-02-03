@@ -1,14 +1,9 @@
 ---
 title: Padrões comuns para aplicativos multithread de mau comportamento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 00d10629-e20f-4d6d-8643-c59a3879812e
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1e0dfcb9408c67acc754f687903b4be2d13f9ff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778948"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multithread de mau comportamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
   
  Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU, em que, mesmo na presença de vários threads, o aplicativo consome apenas um núcleo lógico.  
   
- Para obter mais informações, consulte "Performance Pattern 1: Identifying Lock Contention (Padrão de desempenho 1: identificando a contenção de bloqueio)" no blog de Hazim Shafi [Parallel Performance Tools For Windows (Ferramentas de desempenho paralelo para Windows)](http://go.microsoft.com/fwlink/?LinkID=160569) no site da Web do blog do MSDN.  
+ Para obter mais informações, veja "Performance pattern 1: Identifying lock contention" (Padrão de desempenho 1: identificando a contenção de bloqueio) no blog de Hazim Shafi, [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Ferramentas de desempenho paralelo para o Windows), no site do blog do MSDN.  
   
  ![Contenção de bloqueio](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -73,6 +68,3 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
-
-
-

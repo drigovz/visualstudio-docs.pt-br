@@ -1,14 +1,9 @@
 ---
 title: Recursos para projetar aplicativos acessíveis | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761666"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para projetar aplicativos acessíveis
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Use os links a seguir para localizar informações sobre as tecnologias que dão
   
 ## <a name="windows-applications"></a>Aplicativos do Windows  
   
--   [Walkthrough: Creating an Accessible Windows-based Application (Passo a passo: criando um aplicativo acessível baseado em Windows)](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) Este tópico fornece instruções passo a passo para incluir os cinco requisitos de acessibilidade para o logotipo Certified for Windows em aplicativos do Windows de exemplo.  
+-   [Passo a passo: Criando um aplicativo baseado no Windows acessível](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) este tópico fornece instruções passo a passo para incluir os cinco requisitos de acessibilidade para o logotipo Certified para Windows em um aplicativo do Windows de exemplo.  
   
 -   **Guidelines for Keyboard User Interface Design (Diretrizes para design da interface do usuário do teclado)** Este artigo técnico descreve como criar uma interface do usuário de aplicativos do Windows para a qual os usuários possam navegar do teclado. Para obter mais informações, consulte [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
@@ -50,7 +45,7 @@ Use os links a seguir para localizar informações sobre as tecnologias que dão
   
 ## <a name="web-sites"></a>Sites  
   
--   [Walkthrough: Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) (Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack) Esse tópico apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo, bem como algumas dicas de design de acessibilidade para a Web.  
+-   [Passo a passo: Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Esse tópico apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo, bem como algumas dicas de design de acessibilidade para a Web.  
   
 -   **Making Web Pages More Accessible** (Tornando as páginas da Web mais acessíveis) Esse artigo técnico lista elementos HTML 3.2 que estão acessíveis, bem como os elementos que podem se tornar acessíveis para uso em desenvolvimento de site. Para obter mais informações, consulte [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   
@@ -64,6 +59,3 @@ Use os links a seguir para localizar informações sobre as tecnologias que dão
   
 ## <a name="see-also"></a>Consulte também  
  [Recursos de Acessibilidade do Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

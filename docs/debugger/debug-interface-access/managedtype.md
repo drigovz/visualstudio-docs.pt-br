@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5db99e2a-4f2e-4796-89b7-b401b151826f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 486739ae466431397e514d3248857fc606a74d6a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36352d88a777b33d65853e17144f771a5cd4d5c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987590"
 ---
 # <a name="managedtype"></a>ManagedType
 Um tipo gerenciado (qualquer símbolo definido por metadados, ou do modo nativo para a funcionalidade de gerenciamento de memória e recursos de linguagens como c#) é identificado por um `SymTagManagedType` símbolo.  

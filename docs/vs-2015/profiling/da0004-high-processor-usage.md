@@ -1,14 +1,9 @@
 ---
-title: 'DA0004: alto uso de processador | Microsoft Docs'
-ms.custom: ''
+title: 'DA0004: Alto uso de processador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -18,21 +13,21 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a942a26bb4cd8ccca94fd442250fe8a239cba4ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762518"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004: uso do processador elevado
+# <a name="da0004-high-processor-usage"></a>DA0004: Uso do processador elevado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0004 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Métodos de criação de perfil | Amostragem de instrumentação |  
-| Mensagem | O uso do processador está consistentemente acima de 75%. Considere usar o modo de amostragem para aplicativos associados à CPU. |  
+| Mensagem | O uso do processador está consistentemente acima de 75%. Considere o uso do modo de Amostragem para aplicativos associados à CPU.  
 | Tipo de regra | Informações |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  
@@ -45,7 +40,3 @@ Id da regra | DA0004 |
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Considere uma nova criação de perfil do aplicativo usando o método de amostragem em vez do método de instrumentação, a menos que você precise de tempos de função ou esteja mais interessado em entender a entrada/saída do que os gargalos do processador.
-
-
-
-

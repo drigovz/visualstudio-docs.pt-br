@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a44277d-cbed-4811-9bad-5a2aa0f09323
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0172d344a7379daa88b378fe4bef7be066567e83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c3b20ade9ccb7799a764c8a43a1e1957dc91960
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843983"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993411"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Receber retornos de chamada do símbolo de DIA de localizar o procedimento, permitindo que as restrições a serem impostas sobre o processo de localização.  
@@ -42,7 +42,7 @@ IDiaLoadCallback2 : IDiaLoadCallback
  O aplicativo cliente implementa essa interface e fornece uma referência a ele na chamada para o [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método. Lembre-se de implementar todos os métodos de [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interface também.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: dia2.h  
+ Cabeçalho: Dia2.h  
   
  Biblioteca: diaguids.lib  
   
