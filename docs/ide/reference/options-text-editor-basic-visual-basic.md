@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998255"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opções, Editor de Texto, Basic (Visual Basic), Avançado
 A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) inclui as seguintes propriedades:
@@ -40,18 +40,18 @@ A página de propriedades **Específico do VB**, na pasta **Básico** da pasta *
 - Colocar as diretivas “System” primeiro ao classificar os usos
 
    Quando selecionado, o comando **Remover e classificar usos** no menu de clique com o botão direito do mouse classifica as diretivas `using` e coloca os namespaces "System" no topo da lista.
-   
+
 - Separar usando grupos de diretivas
 
    Quando selecionado, o comando **Remover e classificar usos** no menu de clique com o botão direito do mouse separa as diretivas `using` inserindo uma linha vazia entre os grupos de diretivas que têm o mesmo namespace de raiz.
-   
-- Sugerir usos para tipos em assemblies de referência 
-- Sugerir usos para tipos em pacotes NuGet 
+
+- Sugerir usos para tipos em assemblies de referência
+- Sugerir usos para tipos em pacotes NuGet
 
    Quando essas opções estiverem selecionadas, uma [Ação Rápida](../quick-actions.md) estará disponível para instalar um pacote NuGet e para adicionar uma diretiva `using` para tipos não referenciados.
 
    ![Ação rápida para instalar o pacote NuGet no Visual Studio](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>Realce
 
@@ -77,7 +77,7 @@ O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenha
 
 ## <a name="block-structure-guides"></a>Guias de estrutura de bloco
 
-Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre chaves (**{}**) em seu código. Isso permite que você veja facilmente blocos individuais de código para o seu nível de declaração e construções de nível de código.
+Quando essa opção estiver selecionada, as linhas verticais serão exibidas no editor, alinhadas aos blocos de código estruturado, o que permite que você identifique facilmente os blocos individuais de código. Por exemplo, você verá uma linha entre `Sub` e `EndSub` em uma instrução `Sub`.
 
 ## <a name="editor-help"></a>Ajuda do Editor
 

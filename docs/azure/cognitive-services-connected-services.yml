@@ -1,0 +1,44 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 8175d1a280c09921b42ee08120b2906b2598d345
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55139082"
+documentType: LandingData
+title: Serviços Cognitivos no Visual Studio
+metadata:
+  title: Serviços Cognitivos | Microsoft Docs
+  meta.description: Tutorials and conceptual articles about connecting apps and services to cognitive services in Azure.
+  ms.custom: seohack18
+  author: ghogen
+  manager: jillfra
+  ms.prod: visual-studio-dev15
+  ms.technology: vs-azure
+  ms.topic: landing-page
+  ms.date: 10/09/2018
+  ms.author: ghogen
+sections:
+- title: Conecte seus aplicativos aos Serviços Cognitivos com os Serviços Conectados do Visual Studio
+  items:
+  - type: paragraph
+    text: 'O Visual Studio oferece uma maneira conveniente de conectar seu projeto de aplicativo ou de serviço a uma variedade de serviços do Azure, incluindo os Serviços Cognitivos, que fornecem um poderoso conjunto de funcionalidades de inteligência artificial. O uso dos Serviços Conectados do Visual Studio simplifica bastante o processo de desenvolvimento, pois toda a configuração é feita automaticamente para você. Para obter um tutorial, escolha para qual serviço deseja adicionar suporte no projeto:'
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: Análise de Texto
+      href: /azure/cognitive-services/text-analytics/vs-text-connected-service
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: Pesquisa de Notícias do Bing
+      href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: API de Detecção Facial
+      href: /azure/cognitive-services/face/vs-face-connected-service
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: Pesquisa Visual Computacional
+      href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service

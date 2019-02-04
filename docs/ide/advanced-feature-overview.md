@@ -6,23 +6,23 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739426d5d93628c90638fef32526484f27eef3e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea5b321169253202c397d09b9d6daac439213b55
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828492"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089205"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funcionalidades do Visual Studio 2017
 
-O artigo [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md) fornece uma introdução básica ao Visual Studio. Este artigo descreve as funcionalidades que podem ser mais apropriadas para desenvolvedores experientes ou aqueles que já estão familiarizados com o Visual Studio.
+O artigo [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md) fornece uma introdução básica ao Visual Studio. Este artigo descreve os recursos que podem ser mais apropriados para desenvolvedores experientes ou aqueles que já estão familiarizados com o Visual Studio.
 
 ## <a name="modular-installation"></a>Instalação modular
 
-O instalador modular do Visual Studio permite escolher e instalar *cargas de trabalho*, que são grupos de funcionalidades necessárias para a linguagem de programação ou para a plataforma de sua preferência. Essa estratégia ajuda a manter a superfície de instalação do Visual Studio menor, o que significa que ele é instalado e atualizado mais rapidamente também.
+O instalador modular do Visual Studio permite que você escolha e instale *cargas de trabalho*. As cargas de trabalho são grupos de recursos necessários para a linguagem de programação ou a plataforma de sua preferência. Essa estratégia ajuda a manter a superfície de instalação do Visual Studio menor, o que significa que ele é instalado e atualizado mais rapidamente também.
 
 Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
@@ -72,23 +72,23 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 - Crie jogos 2D e 3D em C# usando [Ferramentas do Visual Studio para Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Crie aplicativos C++ nativos para dispositivos iOS, Android e Windows e compartilhe código comum em bibliotecas criadas para iOS, Android e Windows usando [C++ para o desenvolvimento de plataforma cruzada](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
+- Compile aplicativos C++ nativos para dispositivos iOS, Android e Windows. Compartilhe código comum em bibliotecas criadas para iOS, Android e Windows usando [C++ para desenvolvimento multiplataforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
 
 - Implante, teste e depure aplicativos Android com o [Android Emulator](../cross-platform/visual-studio-emulator-for-android.md).
 
 ## <a name="connect-to-databases"></a>Conectar-se aos bancos de dados
 
-O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o **Gerenciador de Servidores**, no menu principal, escolha **Exibir** > **Gerenciador de Servidores**. Consulte [Adicionar novas conexões](../data-tools/add-new-connections.md) para obter mais informações sobre como usar o Gerenciador de Servidores.
+O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o **Gerenciador de Servidores**, no menu principal, escolha **Exibir** > **Gerenciador de Servidores**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
 
 O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, do Banco de Dados SQL do Azure e do SQL Data Warehouse do Azure. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 
-O **Pesquisador de Objetos do SQL Server** no Visual Studio fornece uma exibição dos objetos de banco de dados semelhante ao SQL Server Management Studio. O Pesquisador de Objetos do SQL Server permite realizar trabalhos leves de design e administração de banco de dados, incluindo edição de dados de tabela, comparação de esquemas e execução de consultas usando menus contextuais diretamente no Pesquisador de Objetos do SQL Server e muito mais.
+O **Pesquisador de Objetos do SQL Server** no Visual Studio fornece uma exibição dos objetos de banco de dados semelhante ao SQL Server Management Studio. O Pesquisador de Objetos do SQL Server permite que você faça o trabalho leve de administração e design de banco de dados. Exemplos de trabalho incluem editar dados da tabela, comparar esquemas, executar consultas usando menus contextuais diretamente do Pesquisador de Objetos do SQL Server e muito mais.
 
 ![Pesquisador de Objetos do SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>Depurar, testar e melhorar o código
 
-Quando você escrever o código, é necessário executá-lo e testá-lo para verificar o desempenho e se há bugs. O sistema de depuração de última geração do Visual Studio permite depurar o código em execução no projeto local, em um dispositivo remoto ou em um [emulador de dispositivo](../cross-platform/visual-studio-emulator-for-android.md). Você pode percorrer pelo código uma instrução por vez e inspecionar as variáveis conforme avança. Você pode definir pontos de interrupção que são atingidos somente quando uma determinada condição é verdadeira. Tudo isso pode ser gerenciado no próprio editor de código, para que você não precise deixar o código. Para obter mais detalhes sobre a depuração no Visual Studio, consulte [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md).
+Quando você escrever o código, é necessário executá-lo e testá-lo para verificar o desempenho e se há bugs. O sistema de depuração de última geração do Visual Studio permite depurar o código em execução no projeto local, em um dispositivo remoto ou em um [emulador de dispositivo](../cross-platform/visual-studio-emulator-for-android.md). Você pode percorrer pelo código uma instrução por vez e inspecionar as variáveis conforme avança. Você pode definir pontos de interrupção que são atingidos somente quando uma determinada condição é verdadeira. As opções de depuração podem ser gerenciadas no próprio editor de códigos, para que você não precise sair do código. Para obter mais detalhes sobre a depuração no Visual Studio, consulte [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md).
 
 Para saber mais sobre como melhorar o desempenho de seus aplicativos, confira a funcionalidade de [criação de perfil](../profiling/profiling-feature-tour.md) do Visual Studio.
 
@@ -96,13 +96,13 @@ Para [testes](../test/improve-code-quality.md), o Visual Studio oferece teste de
 
 ## <a name="deploy-your-finished-application"></a>Implantar o aplicativo concluído
 
-Quando o aplicativo estiver pronto para ser implantado em usuários ou em clientes, o Visual Studio fornecerá as ferramentas para fazer isso, independentemente de você estar implantando na Microsoft Store, em um site do SharePoint ou com as tecnologias do InstallShield ou do Windows Installer. Ele é todo acessível por meio do IDE. Para obter mais informações, consulte [Implantar aplicativos, serviços e componentes](../deployment/deploying-applications-services-and-components.md).
+Quando o aplicativo estiver pronto para ser implantado em usuários ou clientes, o Visual Studio fornecerá as ferramentas para fazer isso. As opções de implantação incluem na Microsoft Store, em um site do SharePoint ou com as tecnologias InstallShield ou Windows Installer. Ele é todo acessível por meio do IDE. Para obter mais informações, consulte [Implantar aplicativos, serviços e componentes](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gerenciar seu código-fonte e colaborar com outros
 
 É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Ou use o [Azure DevOps Services](/azure/devops/index) para gerenciar o código, bem como bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios GIT no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos recursos do Git no Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
 
-O Azure DevOps Services são serviços baseados em nuvem voltados para planejamento, hospedagem, automatização e implantação de software e que permitem a colaboração em equipes. O Azure DevOps Services dá suporte a repositórios GIT (controle de versão distribuído) e ao Controle de Versão do Team Foundation (controle de versão centralizado), bem como a pipelines de CI/CD (build/lançamento contínuo) de código armazenado em sistemas de controle de versão. O Azure DevOps Services também dá suporte a metodologias de desenvolvimento Agile, CMMI e Scrum.
+Os Azure DevOps Services são serviços baseados em nuvem para planejar, hospedar, automatizar e implantar o software e habilitar a colaboração nas equipes. Os Azure DevOps Services dão suporte a repositórios Git (controle de versão distribuído) e ao Controle de Versão do Team Foundation (controle de versão centralizado). Eles dão suporte a pipelines de build e versão contínuos (CI/CD) de código armazenado em sistemas de controle de versão. O Azure DevOps Services também dá suporte a metodologias de desenvolvimento Agile, CMMI e Scrum.
 
 O TFS (Team Foundation Server) é o hub de gerenciamento do ciclo de vida do aplicativo para o Visual Studio. Ele habilita a participação de todos os envolvidos com o processo de desenvolvimento usando uma única solução. O TFS também é útil para gerenciar equipes e projetos heterogêneos.
 
@@ -110,7 +110,7 @@ Se você tiver uma organização do Azure DevOps ou um Team Foundation Server na
 
 A imagem a seguir mostra a janela **Team Explorer** em uma solução hospedada no Azure DevOps Services.
 
-![Team Explorer para Visual Studio](../ide/media/vs2017_teamexplorer.png)
+![Team Explorer para Visual Studio](../ide/media/vs2017_teamexplorer_devops.png)
 
 Também é possível automatizar o processo de build para compilar o código que os desenvolvedores de sua equipe fizeram check-in no controle de versão. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
@@ -127,4 +127,5 @@ Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
-- [Novidades no Visual Studio 2017](../ide/whats-new-in-visual-studio.md)
+- [Novidades no Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Novidades no Visual Studio 2019 Versão Prévia](../ide/whats-new-visual-studio-2019.md)

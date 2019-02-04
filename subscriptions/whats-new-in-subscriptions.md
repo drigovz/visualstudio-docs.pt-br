@@ -9,13 +9,13 @@ searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.openlocfilehash: 414a7a9ef25740505e08da74cd4dcfce0fe11ce9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927223"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003393"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novidades nas assinaturas do Visual Studio
 
@@ -33,7 +33,7 @@ Adicionamos a nova funcionalidade para administradores de nuvem que facilita o g
 
   ![Adicionar vários usuários usando o botão Adicionar em Massa](media/bulk-add-multiple-subscribers.png)
 
-* [**Exportar**](/visualstudio/subscriptions/exporting-subscriptions): exporte uma lista de usuários e os detalhes sobre suas atribuições. Uma lista como essa é útil para acompanhar as datas de atribuições e de vencimento.
+* [**Exportar**](/visualstudio/subscriptions/exporting-subscriptions): exporte uma lista de usuários e os detalhes de suas atribuições. Uma lista como essa é útil para acompanhar as datas de atribuições e de vencimento.
 
    ![Exportar uma lista de assinantes para o Excel usando o botão Exportar](media/export-subscriber-list-to-csv.png)
 
@@ -52,15 +52,15 @@ Adicionamos a nova funcionalidade para administradores de nuvem que facilita o g
 
     ![Alterar o idioma a ser usado para o envio de emails de notificação](media/change-subscriber-communication-preference.png)
 
-  * **Adicionar referência**: adicione notas de referência para as assinaturas que você gerencia.
+  * **Adicionar referência**: adicione anotações de referência para as assinaturas que você gerencia.
 
     ![Adicionar suas próprias anotações de referência a cada assinatura](media/add-subscriber-reference-notes.png)
 
-* [**Reenviar email de atribuição**](resend-assignment-email.md): envie um email de notificação novamente para qualquer pessoa em sua lista de assinantes e quantas vezes desejar.
+* [**Reenviar email de atribuição**](resend-assignment-email.md): envie um email de notificação novamente para qualquer pessoa em sua lista de assinantes, quantas vezes desejar.
 
   ![Reenviar o email de ativação para qualquer usuário ou para vários usuários sempre que você desejar](media/resend-subscriber-activation-emails.png)
 
-* [**Filtro**](search-license.md): organize e filtre seus dados de assinante para melhor atender às suas necessidades.
+* [**Filtrar**](search-license.md): organize e filtre seus dados de assinante para atender melhor às suas necessidades.
 
   ![Filtrar os dados de assinante, como com base nos campos disponíveis](media/filter-subscriber-data.png)
 
