@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15facda7bcb2b07dd071aaf0e40c44d265a01826
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 1ff3f2552f2334d87bc329bab41501570bd67864
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204502"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918194"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -64,7 +64,7 @@ Quando normalmente você executa um aplicativo, você vê erros e resultados inc
 
 Executar um aplicativo dentro do depurador, também chamado de *modo de depuração*, significa que o depurador monitora ativamente tudo que está acontecendo conforme o programa é executado. Isso também permite pausar o aplicativo a qualquer momento para examinar seu estado e percorrer seu código linha por linha para observar todos os detalhes à medida que acontecem.
 
-No Visual Studio, você entra no modo de depuração usando **F5** (ou o comando de menu **Depurar** > **Iniciar Depuração** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na Barra de Ferramentas Depurar). Se ocorrerem exceções, o Auxiliar de Exceção do Visual Studio levará você ao ponto exato em que a exceção ocorreu e fornecerá outras informações úteis. Para saber mais sobre como lidar com exceções em seu código, consulte o artigo [Corrigir bugs escrevendo um código C# melhor](../debugger/write-better-code-with-visual-studio.md).
+No Visual Studio, você entra no modo de depuração usando **F5** (ou o comando de menu **Depurar** > **Iniciar Depuração** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na Barra de Ferramentas Depurar). Se ocorrerem exceções, o Auxiliar de Exceção do Visual Studio levará você ao ponto exato em que a exceção ocorreu e fornecerá outras informações úteis. Para obter mais informações de como tratar exceções no código, confira [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md).
 
 Se você não recebeu uma exceção, você provavelmente tem uma boa ideia de onde procurar o problema em seu código. É aí que você usa os *pontos de interrupção* com o depurador para ter uma oportunidade de examinar o código mais cuidadosamente. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica onde o Visual Studio deve pausar seu código em execução para você poder examinar os valores das variáveis ou o comportamento da memória ou a sequência na qual o código é executado.
 

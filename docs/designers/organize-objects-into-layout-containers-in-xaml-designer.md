@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829297"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231808"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos em contêineres de layout no XAML Designer
 
@@ -30,19 +30,7 @@ Painéis de layout ajudam a organizar objetos em uma página, mas fazem mais do 
 
 Comece a página escolhendo um destes painéis de layout. A página pode ter mais de um. Por exemplo, é possível iniciar com um painel de layout em **Grade** e, em seguida, adicionar um **StackPanel** a uma área na **Grade** para organizar os controles verticalmente nesse elemento.
 
-Os painéis de layout a seguir são os mais populares, mas existem outros. É possível encontrar todos no painel **Ativos**.
-
-- [Grade](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Tela](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Os painéis de layout a seguir são os mais populares, mas existem outros. Você pode encontrá-los todos na **Caixa de ferramentas** no Visual Studio ou no painel **Ativos** no Blend para Visual Studio.
 
 ### <a name="grid"></a>Grade
 
@@ -92,15 +80,7 @@ Organize objetos para que eles fiquem ou se *encaixem*, em uma borda do painel.
 
 Também é possível adicionar objetos aos controles de layout. Eles não têm tantos recursos como o painel de layout, mas podem ser úteis em determinados cenários.
 
-Os controles de layout a seguir são os mais populares, mas existem outros. É possível encontrar todos no painel **Ativos**.
-
-- [Borda](#Border)
-
-- [Pop-up](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Caixa de Visualização](#viewbox)
+Os controles de layout a seguir são os mais populares, mas existem outros. Você pode encontrá-los todos na **Caixa de ferramentas** no Visual Studio ou no painel **Ativos** no Blend para Visual Studio.
 
 ### <a name="border"></a>Borda
 

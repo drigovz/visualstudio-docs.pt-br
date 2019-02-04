@@ -9,12 +9,12 @@ description: Saiba como ativar o benefício do suporte técnico incluído na ass
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380244"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089218"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
@@ -27,7 +27,7 @@ Resolva problemas de reparo em ambientes que não são de produção. (O benefí
 > ![Bloco do benefício do Suporte Técnico](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Para começar a usar seu benefício Suporte Técnico, clique em **Conversar para ativar** no bloco Suporte Técnico. 
+1. Para começar a usar o benefício do Suporte técnico, acesse https://my.visualstudio.com/Benefits, role para baixo até a seção Suporte e, no bloco suporte técnico, clique em **Chat para ativar**. 
 2. Isso iniciará uma sessão de chat com um representante que poderá criar sua ID do Contrato e ID do Acesso e as fornecer para você. 
 3. Para concluir o processo, será necessário fornecer ao representante:
    - O endereço de email usado para entrar em sua assinatura

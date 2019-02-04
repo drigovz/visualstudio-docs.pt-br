@@ -225,7 +225,7 @@ Neste tutorial, estamos usando o Visual Studio 2017.
 
     O ponto de interrupção deve ser atingido no Visual Studio.
 
-### <a name="bkmk_openports">Solução de problemas</a> Abra as portas necessárias no Windows Server
+### <a name="bkmk_openports"></a> Solução de problemas Abra as portas necessárias no Windows Server
 
 Na maioria das configurações, as portas necessárias estão abertas pela instalação do ASP.NET e o depurador remoto. No entanto, se você estiver solucionando problemas de implantação e o aplicativo é hospedado atrás de um firewall, você precisa verificar se as portas corretas estão abertas.
 

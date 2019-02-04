@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da8d951c7bbb96d1c955d9254756ea80925d4969
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9ae3bcb27e86a4646aa345d4cfd010f8d34dd56
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882770"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231799"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 
@@ -69,7 +69,7 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
    5.  Escolha a propriedade **Fonte**. O botão reticências (**...**) deverá aparecer.
 
-   6.  Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** para **72**.
+   6.  Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** como **48**.
 
    7.  Defina a propriedade **Texto** do rótulo como a letra **c**.
 
