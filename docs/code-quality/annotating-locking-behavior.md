@@ -33,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835284"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690301"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga uma disciplina de bloqueio apropriada e use anotações de SAL.
@@ -105,6 +105,19 @@ Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga um
 |`_Interlocked_`|Anota uma variável e é equivalente a `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|O parâmetro de função anotado é o operando de destino de uma das várias funções Interlocked.  Os operandos devem ter propriedades adicionais específicas.|
 |`_Write_guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é modificada, a contagem de bloqueio do objeto de bloqueio que é nomeado pelo `expr` é pelo menos um.|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Smart Lock e RAII anotações
+ Normalmente, fechaduras inteligentes encapsulam bloqueios nativos e gerenciar seu tempo de vida. A tabela a seguir lista as anotações que podem ser usadas com fechaduras inteligentes e RAII padrões com suporte de codificação `move` semântica.
+
+|Anotação|Descrição|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|Informa o analisador de supor que um bloqueio inteligente foi adquirido. Essa anotação espera um tipo de bloqueio de referência como seu parâmetro.|
+|`_Analysis_assume_smart_lock_released_`|Informa ao analisador de supor que um bloqueio inteligente foi liberado. Essa anotação espera um tipo de bloqueio de referência como seu parâmetro.|
+|`_Moves_lock_(target, source)`|Descreve `move constructor` operação que transfere o estado do bloqueio da `source` do objeto para o `target`. O `target` é considerado um objeto construído recentemente, portanto, qualquer estado que tinha antes é perdido e substituído pelo `source` estado. O `source` é também a redefinição para um estado limpo com nenhum destino de contagens ou alias de bloqueio, mas aliases apontando para ele permanecem inalterados.|
+|`_Replaces_lock_(target, source)`|Descreve `move assignment operator` semântica em que o bloqueio de destino é liberado antes de transferir o estado da origem. Isso pode ser considerado como uma combinação de `_Moves_lock_(target, source)` precedido por um `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Descreve o padrão `swap` comportamento que assume que os objetos `left` e `right` seu estado do exchange. O estado trocado inclui bloqueio contagem e o alias de destino, se estiver presente. Aliases que apontam para o `left` e `right` objetos permanecem inalterados.|
+|`_Detaches_lock_(detached, lock)`|Descreve um cenário em que um tipo de wrapper de bloqueio permite desassociação com seu recurso independente. Isso é semelhante a como `std::unique_ptr` funciona com seu ponteiro interno: ele permite que os programadores extrair o ponteiro e deixar seu contêiner de ponteiro inteligente em um estado limpo. Lógica semelhante é compatível com `std::unique_lock` e pode ser implementado nos wrappers de bloqueio personalizado. O bloqueio desanexado manterá seu estado (bloqueio contagem e o alias de destino, se houver), enquanto o wrapper será redefinido para conter zero contagem de bloqueio e nenhum destino de geração de alias, enquanto retém seus próprios aliases. Não há nenhuma operação na contagem de bloqueio (liberar e adquirir). Essa anotação se comporta exatamente como `_Moves_lock_` , exceto que o argumento desanexado deve ser `return` em vez de `this`.|
 
 ## <a name="see-also"></a>Consulte também
 
