@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eb7059f5a0ecaf07858e6a24b62296383494725c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f59f1038226d34b15310ac09b6b34706c36c342
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979550"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742464"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Passo a passo: Criar um Host de modelo de texto personalizado
 
-Um *modelo de texto*<em>host</em> fornece um ambiente que permite que o *mecanismo de transformação do modelo de texto* para ser executado. O host é responsável por gerenciar a interação do mecanismo com o sistema de arquivos. O mecanismo ou *processador de diretriz* que precisa de um arquivo ou assembly podem solicitar um recurso do host. O host pode pesquisar em diretórios e no cache de assembly global para localizar o recurso solicitado. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).
+Um *host de modelo de texto* fornece um ambiente que permite que o *mecanismo de transformação do modelo de texto* para ser executado. O host é responsável por gerenciar a interação do mecanismo com o sistema de arquivos. O mecanismo ou *processador de diretriz* que precisa de um arquivo ou assembly podem solicitar um recurso do host. O host pode pesquisar em diretórios e no cache de assembly global para localizar o recurso solicitado. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).
 
 Você pode escrever um host personalizado se você deseja usar o *transformação de modelo de texto* funcionalidade de fora do Visual Studio ou se você deseja integrar essa funcionalidade ferramentas personalizadas. Para criar um host personalizado, é preciso criar uma classe herdada de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Para obter a documentação dos métodos individuais, consulte <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 

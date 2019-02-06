@@ -11,16 +11,16 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a13efa2335cd0721b71dd61e270e5331d78dede
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bd87013245bd1c9a28ea093433687009f9c35e8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936380"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484141"
 ---
 # <a name="access-data-in-visual-studio"></a>Acessar dados no Visual Studio
 
@@ -28,7 +28,7 @@ No Visual Studio, você pode criar aplicativos que se conectam aos dados em prat
 
 Para aplicativos em JavaScript, Python, PHP, Ruby ou C++, você se conectar a dados como faria qualquer outra coisa, obtendo bibliotecas e escrever código. Para aplicativos .NET, Visual Studio fornece ferramentas que você pode usar para explorar fontes de dados, criar modelos de objeto para armazenar e manipular os dados na memória e associar dados à interface do usuário. Microsoft Azure fornece SDKs para .NET, Java, Node. js, PHP, Python, Ruby e aplicativos móveis e ferramentas no Visual Studio para se conectar ao armazenamento do Azure.
 
-As listas a seguir mostram apenas alguns os muitos sistemas de banco de dados e armazenamento que podem ser usados no Visual Studio. O [Microsoft Azure](https://azure.microsoft.com/) ofertas são serviços de dados que incluem todos os provisionamento e administração de armazenamento de dados subjacente. O **desenvolvimento do Azure** carga de trabalho no [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) permite que você trabalhe com repositórios de dados do Azure diretamente do Visual Studio.
+As listas a seguir mostram apenas alguns os muitos sistemas de banco de dados e armazenamento que podem ser usados no Visual Studio. O [Microsoft Azure](https://azure.microsoft.com/) ofertas são serviços de dados que incluem todos os provisionamento e administração de armazenamento de dados subjacente. O **desenvolvimento do Azure** carga de trabalho no [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) permite que você trabalhe com repositórios de dados do Azure diretamente do Visual Studio.
 
 ![Carga de trabalho de desenvolvimento do Azure](media/azure-development-workload.png)
 
