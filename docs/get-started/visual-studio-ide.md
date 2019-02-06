@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad0568804c4cd455a195c476cd2cd447ef5827f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58fd5969a06cadf0ebbbb61f58a9ecbe12ef0d2
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954768"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483777"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bem-vindo ao IDE do Visual Studio
 
@@ -98,7 +98,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
 ## <a name="install-the-visual-studio-ide"></a>Instalar o IDE do Visual Studio
 
-Este artigo de visão geral orienta você a criar um projeto simples e a experimentar algumas das coisas que você pode fazer com o Visual Studio, como alterar o tema de cores, usar o [IntelliSense](../ide/using-intellisense.md) como um auxílio de codificação e depurar um aplicativo para ver o valor de uma variável durante a execução do programa. Para começar, [baixe o Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) e instale-o no sistema.
+Este artigo de visão geral orienta você a criar um projeto simples e a experimentar algumas das coisas que você pode fazer com o Visual Studio, como alterar o tema de cores, usar o [IntelliSense](../ide/using-intellisense.md) como um auxílio de codificação e depurar um aplicativo para ver o valor de uma variável durante a execução do programa. Para começar, [baixe o Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) e instale-o no sistema.
 
 O instalador modular permite escolher e instalar *cargas de trabalho*, que são grupos de recursos necessários para a linguagem de programação ou para a plataforma de sua preferência. Para seguir as etapas de [criação de um programa](#create-a-program), selecione a carga de trabalho **Desenvolvimento multiplataforma do .NET Core** durante a instalação.
 
