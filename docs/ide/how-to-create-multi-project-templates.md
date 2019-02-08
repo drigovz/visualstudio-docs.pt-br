@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985910"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424208"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos de multiprojeto
 
@@ -69,17 +69,20 @@ O arquivo *vstemplate* raiz para um modelo multiprojeto difere de um modelo de p
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Para criar um modelo multiprojetos usando uma solução existente
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Criar um modelo multiprojetos usando uma solução existente
 
 1. Crie uma solução e adicione dois ou mais projetos.
 
 1. Personalize os projetos até que eles estejam prontos para serem exportados para um modelo.
 
+   > [!TIP]
+   > Se você estiver usando [parâmetros de modelo](template-parameters.md) e quiser se referir a variáveis do modelo pai, prefixe o nome do parâmetro com `ext_`. Por exemplo, `$ext_safeprojectname$`.
+
 1. No menu **Projeto**, escolha **Exportar Modelo**.
 
    O **Assistente para Exportar Modelo** é aberto.
 
-1. Na página **Escolher Tipo de Modelo**, selecione **Modelo de Projeto**. Selecione o projeto que você deseja exportar como um modelo e, em seguida, escolha **Avançar**.
+1. Na página **Escolher Tipo de Modelo**, selecione **Modelo de Projeto**. Selecione um dos projetos que você deseja exportar para um modelo e, em seguida, escolha **Avançar**. (Você repetirá essas etapas para cada projeto na solução.)
 
 1. Na página **Selecionar Opções do Modelo**, insira um nome e uma descrição opcional, um ícone e uma imagem de exibição para o modelo. Escolha **Concluir**.
 

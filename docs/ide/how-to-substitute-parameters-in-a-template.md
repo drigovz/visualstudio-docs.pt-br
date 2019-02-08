@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e553338478bcdead9e283323348b02ac73eaac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19dcfbca8025ef73cea38e5b2b6e5768ab5e8a1f
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031754"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424272"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Como: Substituir parâmetros em um modelo
 
@@ -25,7 +25,7 @@ Parâmetros de modelo são escritos no formato $*parâmetro*$. Para obter uma li
 
 A seção a seguir mostra como modificar um modelo para substituir o nome de um namespace pelo "nome seguro do projeto".
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Para usar um parâmetro para substituir o nome do namespace
+## <a name="example---namespace-name"></a>Exemplo – o nome do namespace
 
 1. Insira o parâmetro em um ou mais dos arquivos de código no modelo. Por exemplo:
 

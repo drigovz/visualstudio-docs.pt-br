@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979056"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484180"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -99,7 +99,7 @@ Para iniciar a operação **Adicionar usando**, posicione o cursor em uma refer�
 
 ![Adicionar usando, imagem expandida da ação rápida](../ide/media/addusing-quickaction.png)
 
-Clique no ícone de lâmpada e, em seguida, escolha **using System.Xml;** para adicionar automaticamente a diretiva using.
+Clique no ícone de lâmpada de erro e, em seguida, escolha **using System.Xml;** para adicionar automaticamente a diretiva using.
 
 ### <a name="remove-and-sort-usings"></a>Remover e classificar usos
 
@@ -123,7 +123,7 @@ O recurso **Gerar com Base no Uso** permite usar classes e membros antes de defi
 
 Um sublinhado vermelho ondulado é exibido em cada identificador indefinido. Ao posicionar o ponteiro do mouse sobre o identificador, uma mensagem de erro é exibida em uma dica de ferramenta. Para exibir as opções apropriadas, é possível usar um dos seguintes procedimentos:
 
-- Clique no identificador indefinido. Uma lâmpada de **Ações Rápidas** é exibida abaixo do identificador. Clique na lâmpada.
+- Clique no identificador indefinido. Uma lâmpada de erro de **Ações Rápidas** é exibida abaixo do identificador. Clique na lâmpada de erro.
 
 - Clique no identificador indefinido e, em seguida, pressione **Ctrl**+**.** (**Ctrl** + ponto).
 
