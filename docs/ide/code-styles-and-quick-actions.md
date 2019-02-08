@@ -11,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 065a4c21be596b409ed82718e0b38c38367612cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039041"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483985"
 ---
 # <a name="code-style-preferences"></a>Preferências de estilo de código
 
@@ -31,7 +31,7 @@ Cada item na lista mostra uma versão prévia da preferência quando selecionada
 
 ## <a name="preference-and-severity"></a>Preferência e gravidade
 
-Para cada item, é possível definir os valores **Preferência** e **Severidade** usando as listas suspensas de cada linha. A severidade pode ser definida como **Nenhuma**, **Sugestão**, **Aviso** ou **Erro**. Se você quiser habilitar [Ações Rápidas](../ide/quick-actions.md) para um estilo de código, verifique se a configuração de **Severidade** está definida como algo diferente de **Nenhuma**. O ícone de lâmpada **Ações Rápidas** ![Ícone de lâmpada pequeno](media/vs2015_lightbulbsmall.png) é exibido quando um estilo não preferencial é usado. Você pode escolher uma opção na lista **Ações Rápidas** para reescrever o código automaticamente no estilo preferencial.
+Para cada item, é possível definir os valores **Preferência** e **Severidade** usando as listas suspensas de cada linha. A severidade pode ser definida como **Nenhuma**, **Sugestão**, **Aviso** ou **Erro**. Se você quiser habilitar [Ações Rápidas](../ide/quick-actions.md) para um estilo de código, verifique se a configuração de **Severidade** está definida como algo diferente de **Nenhuma**. O ícone de lâmpada ![Ícone de lâmpada](media/vs2015_lightbulbsmall.png) **Ações Rápidas**, de lâmpada de erro ![lâmpada de erro](media/error-bulb.png) ou de chave de fenda ![chave de fenda](media/screwdriver.png) é exibido quando um estilo não preferencial é usado. Você pode escolher uma opção na lista **Ações Rápidas** para reescrever o código automaticamente no estilo preferencial.
 
 ## <a name="editorconfig-files"></a>Arquivos EditorConfig
 

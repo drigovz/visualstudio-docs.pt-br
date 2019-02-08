@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3e4267e806d0dea1b8d00ca2836982fbfdb9d58
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c9927f810dabd028cba311a576e2bbc33a398f5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030633"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483946"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementar uma classe abstrata no Visual Studio
 
@@ -47,8 +47,8 @@ Esta geração de código aplica-se a:
       - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece.
-      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![lâmpada de erro](media/error-bulb.png) ícone que aparece.
+      - Clique no ícone de ![lâmpada de erro](media/error-bulb.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
 
    ![Visualização da implementação de classe](media/abstract-preview-cs.png)
 

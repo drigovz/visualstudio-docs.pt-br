@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948174"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742424"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refatoração Sincronizar um tipo para um nome de arquivo ou um nome de arquivo para um tipo
 
@@ -31,6 +31,9 @@ Esta refatoração aplica-se a:
 **Quando:** Você renomeou um arquivo ou um tipo e ainda não atualizou o arquivo nem o tipo correspondente a ser correspondido.
 
 **Por que:** Se você colocar um tipo em um arquivo com um nome diferente ou vice-versa, será difícil encontrar o que está procurando. Se você renomear o tipo ou nome de arquivo, o código se tornará mais legível e mais fácil de navegar.
+
+> [!NOTE]
+> Esta refatoração ainda não está disponível para projetos .NET Core e .NET Standard.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -62,8 +65,6 @@ Esta refatoração aplica-se a:
    - Visual Basic: No exemplo a seguir, o arquivo **Employee.vb** foi renomeado para **Person.vb** para corresponder ao nome do tipo.
 
        ![Resultado embutido em Visual Basic](media/synctype-result-vb.png)
-
-> ![NOTE] Esta refatoração ainda não está disponível para projetos .NET Core e .NET Standard.
 
 ## <a name="see-also"></a>Consulte também
 

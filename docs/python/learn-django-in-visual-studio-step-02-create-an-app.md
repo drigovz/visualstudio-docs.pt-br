@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020552"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571181"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Django com modos de exibição e modelos de página
 
@@ -35,7 +35,7 @@ Nesta etapa, você aprenderá a:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Etapa 2-1: Criar um aplicativo com uma estrutura padrão
 
-Um aplicativo do Django é um pacote separado em Python que contém um conjunto de arquivos relacionados para uma finalidade específica. Um projeto do Django pode conter qualquer número de aplicativos, o que reflete o fato de que um host da Web pode servir qualquer número de pontos de entrada separados de um único nome de domínio. Por exemplo, um projeto do Django para um domínio como contoso.com pode conter um aplicativo para www.contoso.com, um segundo aplicativo para support.contoso.com e um aplicativo de terceiro para docs.contoso.com. Nesse caso, o projeto do Django manipula o roteamento de URL e as configurações no nível do site (nos arquivos *urls.py* e *settings.py*), enquanto cada aplicativo tem seu próprio estilo e comportamento distintos por meio de seus roteamentos, exibições, modelos, arquivos estáticos e interfaces administrativas internas.
+Um aplicativo do Django é um pacote separado em Python que contém um conjunto de arquivos relacionados para uma finalidade específica. Um projeto do Django pode conter qualquer número de aplicativos, o que reflete o fato de que um host da Web pode servir qualquer número de pontos de entrada separados de um único nome de domínio. Por exemplo, um projeto do Django para um domínio como contoso.com pode conter um aplicativo para `www.contoso.com`, um segundo aplicativo para support.contoso.com e um aplicativo de terceiro para docs.contoso.com. Nesse caso, o projeto do Django manipula o roteamento de URL e as configurações no nível do site (nos arquivos *urls.py* e *settings.py*), enquanto cada aplicativo tem seu próprio estilo e comportamento distintos por meio de seus roteamentos, exibições, modelos, arquivos estáticos e interfaces administrativas internas.
 
 Um aplicativo do Django normalmente começa com um conjunto padrão de arquivos. O Visual Studio fornece modelos de item para inicializar um aplicativo do Django dentro de um projeto do Django, junto com um comando de menu integrado que tem a mesma finalidade:
 

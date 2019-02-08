@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f25f9ab44bee749283603b78744c9e01e4e469
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b18e1837fdc673500fae96555dab7fb0195ec42e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992627"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424234"
 ---
 # <a name="immediate-window"></a>Janela Imediata
 
@@ -102,7 +102,7 @@ Você precisa inserir o sinal de maior que (>) ao emitir comandos do Visual Stud
 
 Quando clica em qualquer linha anterior na janela **Imediato**, você muda automaticamente para o modo de Marca. Isso permite selecionar, editar e copiar o texto de comandos anteriores como você faria em qualquer editor de texto e colá-lo na linha atual.
 
-## <a name="the-equals-sign"></a>O sinal de igual (=)
+## <a name="the-equals-sign-"></a>O sinal de igual (=)
 
 A janela usada para inserir o comando `EvaluateStatement` determina se um sinal de igual (=) é interpretado como um operador de comparação ou um operador de atribuição.
 

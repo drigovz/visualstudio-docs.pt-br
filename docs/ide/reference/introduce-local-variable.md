@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fcd6032879dc8e218aa782d27a34250982fb7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14a595de3b80635ad6974f2abb94bd9645d5a7f7
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961943"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483803"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduzir uma variável local no Visual Studio
 
@@ -47,11 +47,11 @@ Esta geração de código aplica-se a:
       - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
+      - Clique no ícone de ![chave de fenda](media/screwdriver.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com a expressão realçada.
 
    ![Introduzir versão prévia local](media/local-preview-cs.png)
 
-3. Selecione **Introduzir local para a (todas as ocorrências da) '*expressão*'** no menu suspenso.
+3. Selecione **Introduzir local para a (todas as ocorrências da) 'expressão'** no menu suspenso.
 
    > [!TIP]
    > Use o link **Visualizar alterações** na parte inferior da janela de visualização [para ver todas as alterações](../../ide/preview-changes.md) que serão feitas antes de fazer sua seleção.

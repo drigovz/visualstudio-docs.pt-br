@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951281"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483972"
 ---
 # <a name="msbuild-task-reference"></a>Referência de tarefas do MSBuild
 Tarefas fornecem o código que é executado durante o processo de compilação. As tarefas na lista a seguir são incluídas com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] é instalado, há tarefas adicionais disponíveis, que são usadas para compilar projetos [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para saber mais, confira [Tarefas do Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -130,7 +130,10 @@ Tarefas fornecem o código que é executado durante o processo de compilação. 
  [Tarefa GetAssemblyIdentity](../msbuild/getassemblyidentity-task.md)  
  Recupera as identidades do assembly dos arquivos especificados e gera como saída as informações de identidade.  
 
- [Tarefa GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
+ [Tarefa GetFileHash](../msbuild/getfilehash-task.md)  
+ Calcula as somas de verificação do conteúdo de um arquivo ou conjunto de arquivos.
+
+[Tarefa GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
  Recupera o caminho para os assemblies [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
 
  [Tarefa GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ Tarefas fornecem o código que é executado durante o processo de compilação. 
 
  [Tarefa Vbc](../msbuild/vbc-task.md)  
  Invoca o compilador do Visual Basic para produzir arquivos executáveis, bibliotecas de vínculo dinâmico ou módulos de código.  
+
+ [Tarefa VerifyFileHash](../msbuild/verifyfilehash-task.md)  
+ Verifica se um arquivo corresponde ao hash do arquivo esperado.
 
  [Tarefa Warning](../msbuild/warning-task.md)  
  Registra um aviso durante um build com base em uma instrução condicional avaliada.  

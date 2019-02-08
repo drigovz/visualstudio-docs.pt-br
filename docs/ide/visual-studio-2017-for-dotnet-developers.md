@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941386"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484089"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guia de produtividade em C# do Visual Studio 2017
 
@@ -152,10 +152,10 @@ Você pode usar o Git ou o TFVC para armazenar e atualizar seu código no Visual
 
 Aqui está uma lista dos recursos do editor e de produtividade para escrever códigos com mais eficiência. Pode ser necessário ativar alguns recursos, pois eles ficam desativado por padrão (eles podem indexar itens em sua máquina, são controversos ou atualmente são experimentais).
 
-| Recurso | Detalhes | Como habilitar |
+| Recurso | Details | Como habilitar |
 |-|-|-|
 | Arquivo local no Gerenciador de Soluções | Realça o arquivo ativo no **Gerenciador de Soluções** | **Ferramentas** > **Opções** > **Projetos e Soluções** > **Acompanhar Item Ativo no Gerenciador de Soluções** |
-| Adicionar usos para tipos em assemblies de referência e pacotes do NuGet | Mostra uma lâmpada com uma correção de código para instalar um pacote do NuGet para um tipo não referenciado | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Sugerir usos para tipos em assemblies de referência** e **Sugerir usos para tipos em pacotes NuGet** |
+| Adicionar usos para tipos em assemblies de referência e pacotes do NuGet | Mostra uma lâmpada de erro com uma correção de código para instalar um pacote do NuGet para um tipo não referenciado | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Sugerir usos para tipos em assemblies de referência** e **Sugerir usos para tipos em pacotes NuGet** |
 | Habilitar análise de solução completa | Ver todos os erros na solução na **Lista de Erros** | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar análise completa da solução** |
 | Habilitar a navegação para origens descompiladas | Habilite Ir Para a Definição em tipos/membros de fontes externas e usar o descompilador ILSpy para mostrar os corpos de método | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar navegação para fontes descompiladas** |
 | Modo de conclusão/sugestão | Altera o comportamento de conclusão no IntelliSense – os desenvolvedores com experiência em IntelliJ tendem a alterar aqui a configuração padrão | **Menu** > **Editar** > **IntelliSense** > **Ativar/Desativar Modo de Preenchimento** |

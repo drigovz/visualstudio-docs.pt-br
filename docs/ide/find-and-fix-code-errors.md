@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017091"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483764"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -89,9 +89,9 @@ Os avisos novos ou atualizados são exibidos na guia **Lista de Erros** na parte
 
 ![Lista de Erros do Visual Studio com Avisos](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Usar as lâmpadas para corrigir ou refatorar o código
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Usar as Ações Rápidas para corrigir ou refatorar o código
 
-As [Ações Rápidas](../ide/quick-actions.md), disponíveis nos ícones de lâmpada ou chave de fenda, permitem refatorar o código embutido. Elas são uma maneira fácil de corrigir avisos comuns com rapidez e eficiência no código C#, C++ e Visual Basic. Para acessá-las, clique com o botão direito do mouse em uma linha ondulada de aviso e selecione **Ações Rápidas e refatorações**. Outra opção é pressionar **Ctrl**+ **quando o cursor estiver na linha ondulada de aviso** ou selecionar o ícone de lâmpada ou chave de fenda na margem. Você verá uma lista de possíveis correções ou refatorações que podem ser aplicadas àquela linha de código.
+As [Ações Rápidas](../ide/quick-actions.md), disponíveis nos ícones de lâmpada ou chave de fenda, permitem refatorar o código embutido. Elas são uma maneira fácil de corrigir avisos comuns com rapidez e eficiência no código C#, C++ e Visual Basic. Para acessá-las, clique com o botão direito do mouse em uma linha ondulada de aviso e selecione **Ações Rápidas e refatorações**. Outra opção é pressionar **Ctrl**+ **quando o cursor estiver na linha ondulada de aviso** ou selecionar o ícone de lâmpada, lâmpada de erro ou chave de fenda na margem. Você verá uma lista de possíveis correções ou refatorações que podem ser aplicadas àquela linha de código.
 
 ![Visualização da lâmpada do Visual Studio](../ide/media/quick-actions-options.png)
 

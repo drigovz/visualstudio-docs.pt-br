@@ -1,6 +1,6 @@
 ---
 title: Publicar no Serviço de Aplicativo no Linux
-ms.date: 07/23/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -9,18 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 3e80f96e1af39747a6dfa9fb9737ec11bb5baf00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12d1df3874388f0c113600e20ca2dbd080d15d10
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951931"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483959"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publicar um aplicativo ASP.NET Core no Serviço de Aplicativo no Linux usando o Visual Studio
 
-É possível usar a ferramenta **Publicar** para publicar aplicativos ASP.NET Core no Serviço de Aplicativo do Azure no Linux.
+Do Visual Studio 2017 versão 15.7 em diante, você pode publicar aplicativos ASP.NET Core para o Serviço de Aplicativo do Azure para Linux (usando contêineres) usando um dos métodos a seguir.
 
-A implantação no Serviço de Aplicativo no Linux usando a ferramenta **Publicar** requer o Visual Studio 2017 versão 15.7.
+* Para implantação contínua (ou automática) de aplicativos, use o Azure DevOps com [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+
+* Para implantação única (ou manual) de aplicativos, use a ferramenta **Publicar** no Visual Studio para publicar aplicativos ASP.NET Core no Serviço de Aplicativo do Azure para Linux (usando contêineres).
+
+Este artigo descreve como usar a ferramenta **Publicar** para uma implantação única.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
