@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 91e698f5b033629b688bb1aa82de019fb9fbf199
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 29495fb297670b6b297e17d40bfb2bcdc0025862
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966407"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929317"
 ---
 # <a name="the-text-template-transformation-process"></a>O processo de transformação de modelo de texto
 O processo de transformação do modelo de texto utiliza um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como saída. Por exemplo, você pode usar modelos de texto para gerar o código Visual Basic ou c#, ou você pode gerar um relatório HTML.

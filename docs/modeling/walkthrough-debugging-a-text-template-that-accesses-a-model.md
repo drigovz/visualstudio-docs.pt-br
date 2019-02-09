@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004484"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938105"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Passo a passo: Depurando um modelo de texto que acessa um modelo
 Quando você modificar ou adicionar modelos de texto em uma solução de linguagem específica de domínio, você pode receber erros quando o mecanismo transforma o modelo de código-fonte ou quando ele compila o código gerado. A instrução a seguir demonstra algumas das coisas que você pode fazer para depurar um modelo de texto.
@@ -32,7 +31,7 @@ Quando você modificar ou adicionar modelos de texto em uma solução de linguag
 
 - Nome da empresa: Fabrikam
 
-  Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: Criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Criando um modelo de texto
  Adicione um modelo de texto à sua solução.

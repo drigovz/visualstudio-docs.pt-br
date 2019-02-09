@@ -1,7 +1,6 @@
 ---
 title: Conjunto de regras de correção básico para código gerenciado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 937a41f6d308e9c3ff8a99f925cd75c95c17fb24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012476"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937262"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção básico para código gerenciado
 O conjunto de regras de correção básico se concentra em erros lógicos e erros comuns do uso de APIs de estrutura. As regras básicas de correção incluem as regras em que o conjunto de regras recomendadas do mínimo. Para obter mais informações, consulte [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) você deve incluir este conjunto de regras para expandir a lista de avisos que o mínimo recomendado de relatório de regras.
