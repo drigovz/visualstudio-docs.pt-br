@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 63e99a0afe3971062e1dc7e2a31ac6b3d72b93c7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c708dea61246b361620d5dcf05437ff68f1ba42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923406"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929525"
 ---
 # <a name="properties-of-model-elements"></a>Propriedades de elementos de modelo
 Esta seção lista as propriedades que você vê na janela Propriedades quando você seleciona um elemento no diagrama de definição de DSL ou no Gerenciador de DSL.
