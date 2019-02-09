@@ -13,13 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9fd859c3d7fe7af56df976d0e46182dd7f1c6fc6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964191"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936935"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como: Criar uma solução de Linguagem Específica de Domínio
 Uma linguagem específica de domínio (DSL) é criada usando uma solução do Visual Studio especializada.
@@ -133,4 +132,4 @@ Esse padrão é um nome composto de sua empresa e nomes de produto.
 ## <a name="see-also"></a>Consulte também
 
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
