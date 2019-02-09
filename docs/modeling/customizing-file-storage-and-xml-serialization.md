@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a42e82d95f855cfa444c30c61a9f2a03cc79ec4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 07efe6f73047efe389722bdeac8fa28ca4448cf1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918572"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944930"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar o armazenamento de arquivos e a serialização XML
 
@@ -272,7 +271,7 @@ Esses elementos são encontrados no Gerenciador de DSL sob **dados Behavior\Clas
 |Propriedade|Descrição|
 |Tem o esquema de elemento personalizado|Se for True, indica que a classe de domínio tem um esquema de elemento personalizado|
 |É personalizado|Defina isso como **verdadeira** se você deseja escrever seu próprio código de serialização e desserialização para essa classe de domínio.<br /><br /> Compile a solução e investigue os erros para obter instruções detalhadas de descobrir.|
-|Domain Class|Classe de domínio ao qual se aplica a este nó de dados de classe. Somente leitura.|
+|Classe de domínio|Classe de domínio ao qual se aplica a este nó de dados de classe. Somente leitura.|
 |Nome de elementos|Nome do nó XML para elementos dessa classe. O valor padrão é uma versão em minúsculas do nome da classe de domínio.|
 |Nome do atributo de identificador de origem|Nome do atributo usado nos elementos de moniker para conter a referência. Se estiver vazio, o nome da propriedade de chave ou id é usado.<br /><br /> Neste exemplo, é "name":  `<personMoniker name="/Mike Nash"/>`|
 |Nome de elemento do identificador de origem|Nome do elemento xml usado para monikers que se referem a elementos dessa classe.<br /><br /> O valor padrão é uma versão em letra minúscula do nome da classe, o sufixo "Moniker". Por exemplo, `personMoniker`.|

@@ -1,7 +1,6 @@
 ---
 title: Análise de código para visão geral do C/C++
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -22,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896390"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947634"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 
@@ -37,7 +36,7 @@ A ferramenta de análise de código C/C++ fornece informações sobre possíveis
 
 A ferramenta de análise de código é totalmente integrada dentro do IDE do Visual Studio.
 
-Durante o processo de compilação, todos os avisos gerados para o código-fonte aparecem na lista de erros. Você pode navegar para o código-fonte que causou o aviso, e você pode exibir informações adicionais sobre a causa e possíveis soluções do problema.
+Durante o processo de build, todos os avisos gerados para o código-fonte aparecem na Lista de Erros. Você pode navegar para o código-fonte que causou o aviso e ver informações adicionais sobre a causa e possíveis soluções do problema.
 
 ## <a name="command-line-support"></a>Suporte de linha de comando
 
@@ -55,15 +54,15 @@ Você pode usar o `#pragma` diretiva para tratar avisos como erros; ativar ou de
 
 ## <a name="annotation-support"></a>Suporte de anotação
 
-Anotações de melhorar a precisão da análise de código. Anotações fornecem informações adicionais sobre condições pré e pós-nos parâmetros de função e tipos de retorno. Para obter mais informações, confira [Como: Especificar informações de código adicionais usando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+As anotações melhoram a precisão da análise de código. As anotações fornecem informações adicionais sobre pré e pós-condições nos parâmetros de função e nos tipos retornados. Para obter mais informações, confira [Como: especificar informações de código adicionais usando __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Execute a ferramenta de análise como parte da política de check-in
 
-Talvez você queira exigem que o código de origem todos os check-ins satisfaçam determinadas políticas. Em particular, convém certificar-se de que a análise foi executada como uma etapa de compilação local mais recente. Para obter mais informações sobre como habilitar uma política de check-in do análise código, consulte [criando e usando análise de código de Check-In políticas](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+Talvez você queira exigir que todos os check-ins do código-fonte satisfaçam determinadas políticas. Em particular, convém verificar se a análise foi executada como uma etapa do build local mais recente. Para obter mais informações de como habilitar uma política de check-in de análise de código, confira [Criando e usando políticas de check-in de análise de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Integração do Team Build
 
-Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise de código como uma etapa do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo de compilação. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Você pode usar os recursos integrados do sistema de build para executar a ferramenta de análise de código como uma etapa do processo de build do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Consulte também
 

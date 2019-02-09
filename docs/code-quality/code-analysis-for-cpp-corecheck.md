@@ -1,7 +1,6 @@
 ---
 title: Referência de verificador das diretrizes principais do C++
 ms.date: 03/22/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -11,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959476"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949467"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referência de verificador das diretrizes principais do C++
 
@@ -130,7 +129,7 @@ Expressão '% expr %': Sem matriz para ponteiro de decaimento. Ver [Bounds.3 de 
 [C26440 DECLARE_NOEXCEPT](C26440.md) a função '% % do símbolo' pode ser declarada `noexcept`. Ver [diretrizes principais do C++ F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) a função é declarada **noexcept** , mas chama uma função que pode gerar exceções.
-Consulte [diretrizes principais do C++:  F. 6: Se sua função pode lançar, declarar noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+Consulte [diretrizes principais do C++:  F.6: Se sua função pode lançar, declarar noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 ## <a name="concurrency-group"></a>Grupo de SIMULTANEIDADE
 
@@ -193,7 +192,7 @@ Não use aritmética de ponteiro. Use o span. Consulte [Bounds.1 de diretrizes p
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) valor % value % está fora dos limites (0, % acoplado %) da variável '% variable %'. Somente indexe em matrizes que usam expressões de constante que estão dentro dos limites da matriz. Consulte [Bounds.2 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) expressão '% expr %': Sem matriz para ponteiro de decaimento. Consulte [Bounds.3 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Expression '%expr%': Sem matriz para ponteiro de decaimento. Consulte [Bounds.3 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>Grupo de GSL
 
@@ -205,7 +204,7 @@ Consulte [gsl de diretrizes principais do C++: Modos de exibição](https://gith
 [C26448 USE_GSL_FINALLY ](c26448.md) considere o uso de `gsl::finally` se destina-se a ação final. Consulte [diretrizes principais do C++:  GSL.util: Utilitários](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` ou `std::string_view` criado a partir de um temporário será inválido quando o temporário for invalidado. Consulte [diretrizes principais do C++: Gsl: Modos de exibição](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+ `gsl::span` ou `std::string_view` criado a partir de um temporário será inválido quando o temporário for invalidado. Consulte [diretrizes principais do C++: GSL.view: Modos de exibição](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
 
 
 ## <a name="deprecated-warnings"></a>Avisos preteridos
