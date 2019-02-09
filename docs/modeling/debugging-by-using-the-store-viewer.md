@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 55781c9270210f5aaf368ed4df9d247113d0926f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7fb03dd67168867026c77a30bba412076c0b8408
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031559"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945307"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Depurando por meio do Visualizador de Repositório
 Com o visualizador Store, você pode examinar o estado de um *armazenar* usado pelo [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. O Visualizador de Store exibe todos os elementos de modelo de domínio que estão em um repositório específico, juntamente com propriedades de elementos e links entre elementos.

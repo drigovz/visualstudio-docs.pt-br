@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 513ab6f1a953a2992b744aa3680cd453f677f5bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966797"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945671"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acessando modelos a partir de modelos (templates) de texto
 Usando modelos de texto, você pode criar arquivos de relatório, os arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específica do domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo experimental quando você estiver depurando sua DSL e também funcionará em um computador no qual você implantou a DSL.

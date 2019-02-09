@@ -1,7 +1,6 @@
 ---
 title: Anotando o comportamento da função
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _On_failure_
@@ -21,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 360c434b9c841954c4672dd774037dac81d6c4d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78a8bf94323391d031aaf718f6e3132eb89e1df3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835150"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948024"
 ---
 # <a name="annotating-function-behavior"></a>Anotando o comportamento da função
 Além de anotar [parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md), você pode anotar as propriedades da função inteira.
