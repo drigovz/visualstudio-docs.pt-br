@@ -1,7 +1,6 @@
 ---
 title: Conjunto de regras recomendadas gerenciado para código gerenciado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fa15f79be09b9663fb8fc98e32e09e20a030a5d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009590"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918383"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Conjunto de regras recomendadas gerenciado para código gerenciado
 Você pode usar a Microsoft Managed recomendado conjunto de regras para enfocar os problemas mais críticos no seu código gerenciado, inclusive falhas potenciais de segurança, falhas do aplicativo e outros erros importantes de lógica e design. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que você cria para seus projetos.

@@ -1,7 +1,6 @@
 ---
 title: Acesso a faixa de opções em tempo de execução
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e408b475b4ba7ac912826af3021c371b3af57f4c
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 5b00721325d6d4fa57fcb0ef6ecd2ebdf0da9930
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876220"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919957"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Acesso a faixa de opções em tempo de execução
   Você pode escrever código para mostrar, ocultar e modificar a faixa de opções e permitir que os usuários executar o código de controles em um painel de tarefas personalizado, o painel de ações ou a região de formulário do Outlook.  

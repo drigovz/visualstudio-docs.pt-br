@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f2e212612dd9bf2ede8d41db21a95c9c902f3de0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f1e3c479e7e5ae706121e0513d825d57d1cb540c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990921"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939626"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 Todas as propriedades de domínio em uma linguagem específica de domínio (DSL) podem ser exibidas para o usuário no diagrama e no Gerenciador de linguagem e podem ser acessadas pelo código do programa. No entanto, as propriedades são diferentes da maneira que seus valores são armazenados.
