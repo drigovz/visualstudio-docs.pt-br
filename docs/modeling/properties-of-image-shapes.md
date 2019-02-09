@@ -12,13 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1f1f18a0957c3ee2c67fb9a316460a8883e146f1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e58467d9a1600b96069bcd5dd271980faaf9ee7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918195"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938144"
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
 
@@ -74,4 +73,4 @@ Formas de imagem têm as propriedades que são listadas na tabela a seguir.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

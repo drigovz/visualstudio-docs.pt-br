@@ -2,18 +2,17 @@
 title: Contextos de arquivo do espaço de trabalho no Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826858"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939184"
 ---
 # <a name="workspace-file-contexts"></a>Contextos de arquivo do espaço de trabalho
 
@@ -27,7 +26,7 @@ Os cenários mais comuns para contextos de arquivo estão relacionados à compil
 
 ## <a name="file-context-lifecycle"></a>Ciclo de vida do contexto de arquivo
 
-Os ciclos de vida para um `FileContext` são não determinísticas. A qualquer momento, um componente de forma assíncrona pode solicitar para um conjunto de tipos de contexto. Provedores que dão suporte algum subconjunto dos tipos de contexto de solicitação serão consultados. O `IWorkspace` instância atua como intermediário entre o consumidor e provedores por meio de <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> método. Os consumidores podem solicitar um contexto e realizar alguma ação de curto prazo com base no contexto, enquanto outros podem solicitar um contexto e manter uma referência a vida útil longa. 
+Os ciclos de vida para um `FileContext` são não determinísticas. A qualquer momento, um componente de forma assíncrona pode solicitar para um conjunto de tipos de contexto. Provedores que dão suporte algum subconjunto dos tipos de contexto de solicitação serão consultados. O `IWorkspace` instância atua como intermediário entre o consumidor e provedores por meio de <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> método. Os consumidores podem solicitar um contexto e realizar alguma ação de curto prazo com base no contexto, enquanto outros podem solicitar um contexto e manter uma referência a vida útil longa.
 
 As alterações podem ocorrer para arquivos que fazem com que um contexto de arquivo para se tornar desatualizadas. O provedor pode acionar um evento no `FileContext` para notificar os consumidores de atualizações. Por exemplo, se um contexto de build é fornecido para algum arquivo, mas uma alteração em disco invalida nesse contexto, o produtor original pode invocar o evento. Consumidores ainda fazendo referência a ela `FileContext` , em seguida, pode repetir a consulta para um novo `FileContext`.
 
