@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bb5a43224ff94e0e5115265383bff578031793bc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a655cd0ff3412520f0576358b07020585a1f420
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936301"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909551"
 ---
 # <a name="customizing-element-tools"></a>Ferramentas de elemento personalizadas
 Em algumas definições de DSL, você pode representar um conceito único como um grupo de elementos. Por exemplo, se você criar um modelo no qual um componente tem um conjunto fixo de portas, você sempre queira as portas a serem criados ao mesmo tempo como seu componente pai. Portanto, você precisa personalizar a ferramenta de criação de elemento para que ele cria um grupo de elementos em vez de apenas um. Para fazer isso, você pode personalizar como a ferramenta de criação de elemento é inicializada.

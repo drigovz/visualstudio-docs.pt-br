@@ -7,13 +7,12 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820232"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914991"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado pelos designers e especialistas em C++. Atualmente, o Visual Studio suporta um subconjunto dessas regras como parte de suas ferramentas de análise de código para C++. Os verificadores de diretrizes de núcleo são instalados por padrão no Visual Studio 2017 e são [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
