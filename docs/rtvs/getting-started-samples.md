@@ -82,7 +82,7 @@ A comparação a seguir mostra que o MLS e MRO com MKL têm um desempenho de com
 
 ![Comparando MLS e MRO com MKL ao R e o MRO sem MKL](media/samples-speed-comparison.png)
 
-Para obter uma comparação técnica do R com o MRO e MLS, confira a [discussão detalhada de Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre o assunto.
+Para obter uma comparação técnica do R com o MRO e MLS, confira a [discussão detalhada de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre o assunto.
 
 A figura a seguir compara o tempo decorrido em segundos usado na criação de modelos de regressão logística para prever atrasos de voos maiores de 15 minutos.  O tempo decorrido usado em CRAN R aumenta drasticamente quando um pequeno número de linhas é aumentado, enquanto o MRS aumenta apenas cerca de duas vezes. Para obter detalhes sobre esse parâmetro de comparação, confira o exemplo *Benchmarks/rxGlm_benchmark.R*.
 
