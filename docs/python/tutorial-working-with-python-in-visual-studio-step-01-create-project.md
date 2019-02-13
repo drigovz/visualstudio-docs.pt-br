@@ -3,7 +3,6 @@ title: Tutorial Python no Visual Studio, etapa 1, criar um projeto
 titleSuffix: ''
 description: Visão geral e etapa 1 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo pré-requisitos e criação de um projeto do Python.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231864"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155208"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Trabalhar com o Python no Visual Studio
 
@@ -79,5 +78,3 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 - [Projetos do Python no Visual Studio](managing-python-projects-in-visual-studio.md).
 - [Saiba mais sobre a linguagem Python em python.org](https://www.python.org)
 - [Python para iniciantes](https://www.python.org/about/gettingstarted/) (python.org)
-- [Cursos gratuitos do Python na Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Top Python Questions (Principais perguntas sobre Python) na Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)
