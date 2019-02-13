@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b97ad15c6064f1c27eba252173f9afdfc33eda8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009681"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854116"
 ---
 # <a name="csc-task"></a>tarefa Csc
-Encapsula *csc.exe* e produz executáveis (arquivos *.exe*), bibliotecas de vínculo dinâmico (arquivos *.dll*) ou módulos de código (arquivos *.netmodule*). Para obter mais informações sobre o *csc.exe*, confira [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index).  
+Encapsula *csc.exe* e produz executáveis (arquivos *.exe*), bibliotecas de vínculo dinâmico (arquivos *.dll*) ou módulos de código (arquivos *.netmodule*). Para obter mais informações sobre o *csc.exe*, confira [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Parâmetros  
- A tabela a seguir descreve os parâmetros da tarefa `Csc`.  
-
+## <a name="parameters"></a>Parâmetros
+A tabela a seguir descreve os parâmetros da tarefa `Csc`.
 
 | Parâmetro | Descrição |
 |------------------------------| - |
@@ -81,19 +80,19 @@ Encapsula *csc.exe* e produz executáveis (arquivos *.exe*), bibliotecas de vín
 | `Win32Manifest` | Parâmetro `String` opcional.<br /><br /> Especifica o manifesto Win32 a ser incluído. |
 | `Win32Resource` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo (*.res*) do recurso do Win32 no arquivo de saída. Para obter mais informações, confira [-win32res (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Comentários  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe `Microsoft.Build.Tasks.ManagedCompiler`, que herda da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Comentários
+Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe `Microsoft.Build.Tasks.ManagedCompiler`, que herda da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Exemplo  
- O exemplo a seguir usa a tarefa `Csc` para compilar um executável com base nos arquivos de origem da coleção de itens `Compile`.  
+## <a name="example"></a>Exemplo
+O exemplo a seguir usa a tarefa `Csc` para compilar um executável com base nos arquivos de origem da coleção de itens `Compile`.
 
-```xml  
-<CSC  
-    Sources="@(Compile)"  
-    OutputAssembly="$(AppName).exe"  
-    EmitDebugInformation="true" />  
-```  
+```xml
+<CSC
+    Sources="@(Compile)"
+    OutputAssembly="$(AppName).exe"
+    EmitDebugInformation="true" />
+```
 
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Tarefas](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Consulte também
+[Referência de tarefas](../msbuild/msbuild-task-reference.md)  
+[Tarefas](../msbuild/msbuild-tasks.md)

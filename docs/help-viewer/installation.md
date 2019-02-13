@@ -1,7 +1,6 @@
 ---
 title: Instalar a Ajuda offline
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6f2fb01c73a588adc64813c191742de5bf5938
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005703"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155663"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalação do Microsoft Help Viewer
 
@@ -43,10 +42,6 @@ Outra maneira de instalar o Microsoft Help Viewer facilmente é por meio da caix
 1. Na caixa de diálogo que é aberta, escolha o botão **Instalar**.
 
    ![Botão Instalar](media/installation/install.png)
-
-| | |
-|---------|---------|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png) | [Assista a um vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre como instalar o Microsoft Help Viewer usando o Instalador do Visual Studio. |
 
 ## <a name="see-also"></a>Consulte também
 
