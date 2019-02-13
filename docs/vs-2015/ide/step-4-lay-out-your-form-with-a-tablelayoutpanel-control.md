@@ -1,25 +1,20 @@
 ---
 title: 'Etapa 4: definir o layout do formulário com um controle TableLayoutPanel | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210088"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763265"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,6 +93,3 @@ Form1 com TableLayoutPanel redimensionado
 -   Para ir à próxima etapa do tutorial, consulte [Etapa 5: adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).  
   
 -   Para retornar à etapa anterior do tutorial, consulte [Etapa 3: definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).
-
-
-

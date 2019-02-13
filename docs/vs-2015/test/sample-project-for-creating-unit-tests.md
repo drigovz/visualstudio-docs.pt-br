@@ -1,27 +1,22 @@
 ---
 title: Projeto de exemplo para criação de testes de unidade| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
 ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3d364ffe23e79bb8842770bec0602d4bb7022c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1c2516a204151267f6d4686811fe6a7ecba5fe43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791890"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Projeto de exemplo para criação de testes de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Este código de exemplo é fornecido para uso nas instruções passo a passo a s
   
 -   [Passo a passo: criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este passo a passo orienta você pelas etapas para criar e personalizar testes de unidade, executá-los e examinar os resultados de teste.  
   
--   [Passo a passo: executar testes e exibir a cobertura de código](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Este passo a passo ilustra como exibir dados de cobertura de código, que mostra a proporção do código do projeto que está sendo testado.  
+-   [Passo a passo: executar testes e exibir a cobertura de código](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Este passo a passo ilustra como exibir dados de cobertura de código, que mostra a proporção do código do projeto que está sendo testado.  
   
 -   [Passo a passo: usando o utilitário de teste de linha de comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). Neste passo a passo, você pode usar o utilitário de linha de comando MSTest.exe para executar testes e exibir os resultados.  
   
@@ -138,8 +133,5 @@ namespace BankAccountNS
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [Passo a passo: executar testes e exibir a cobertura de código](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [Passo a passo: executar testes e exibir a cobertura de código](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
  [Passo a passo: usando o utilitário de teste de linha de comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
-
-
-
