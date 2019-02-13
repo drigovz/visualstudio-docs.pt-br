@@ -3,14 +3,15 @@ title: Tour do Visual Studio para Mac
 description: O Visual Studio para Mac fornece um ambiente de desenvolvimento integrado para compilar aplicativos .NET no macOS, incluindo sites ASP.NET Core e projetos Xamarin para iOS, Android, Mac e Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 11/03/2018
+ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 99ad6cfcda7bf271853aff5c095bbb0664b3b592
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 3bfc0b9f6d7ba65b2b2023d9641992a27aa11ed8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315824"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916993"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Tour do Visual Studio 2017 para Mac
 
@@ -102,6 +103,11 @@ Os arquivos com alterações não confirmadas têm uma anotação em seus ícone
 ![Arquivos não confirmados no painel de soluções](media/ide-tour-image23.png)
 
 Para saber mais sobre como usar o controle de versão no Visual Studio, veja o artigo [Controle de Versão](/visualstudio/mac/version-control).
+
+## <a name="related-video"></a>Vídeo relacionados
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
+
 
 ## <a name="see-also"></a>Consulte também
 

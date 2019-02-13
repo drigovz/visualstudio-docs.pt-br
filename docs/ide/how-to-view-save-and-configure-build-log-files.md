@@ -1,7 +1,6 @@
 ---
 title: 'Como: exibir, salvar e configurar arquivos de log de build | Microsoft Docs'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabfb6b9209ff57249ceb79460c2bc75e7d63bf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026162"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925222"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como: Exibir, salvar e configurar arquivos de log de build
 
@@ -43,7 +42,7 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
 
 3.  Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.
 
-    |Nível de detalhes|DESCRIÇÃO|
+    |Nível de detalhes|Descrição|
     | - |-----------------|
     |**Silencioso**|Exibe apenas um resumo do build.|
     |**Mínima**|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|

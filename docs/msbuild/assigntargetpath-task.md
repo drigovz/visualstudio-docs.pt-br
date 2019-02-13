@@ -13,44 +13,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f15e11f563a96c9376f7c50b6db7de83abee396e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 21678dd573030076d7248dfb7bbf47ea412cecae
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001677"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853450"
 ---
 # <a name="assigntargetpath-task"></a>Tarefa AssignTargetPath
-Essa tarefa aceita uma lista de arquivos e adiciona atributos `<TargetPath>`, caso eles ainda não estiverem especificados.  
-  
-## <a name="task-parameters"></a>Parâmetros de tarefa  
- A tabela a seguir descreve os parâmetros da tarefa `AssignTargetPath`.  
-  
-|Parâmetro|Descrição|  
-|---------------|-----------------|  
-|`RootFolder`|Parâmetro de entrada de `string` opcional.<br /><br /> Contém o caminho para a pasta que contém os links de destino.|  
-|`Files`|Parâmetro de entrada <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém a lista de entrada de arquivos.|  
-|`AssignedFiles`|Opcional<br /><br /> Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contém a lista resultante de arquivos.|  
-  
-## <a name="remarks"></a>Comentários  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir executa a tarefa `AssignTargetPath` para configurar um projeto.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="MyProject">  
-        <AssignTargetPath  
-RootFolder="Resources"  
-            Files="@(ResourceFiles)"  
-            <Output TaskParameter="AssignedFiles"  
-                ItemName="OutAssignedFiles"/>  
-        </AssignTargetPath>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Tarefas](../msbuild/msbuild-tasks.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+Essa tarefa aceita uma lista de arquivos e adiciona atributos `<TargetPath>`, caso eles ainda não estiverem especificados.
+
+## <a name="task-parameters"></a>Parâmetros de tarefa
+A tabela a seguir descreve os parâmetros da tarefa `AssignTargetPath`.
+
+|Parâmetro|Descrição|
+|---------------|-----------------|
+|`RootFolder`|Parâmetro de entrada de `string` opcional.<br /><br /> Contém o caminho para a pasta que contém os links de destino.|
+|`Files`|Parâmetro de entrada <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém a lista de entrada de arquivos.|
+|`AssignedFiles`|Opcional<br /><br /> Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contém a lista resultante de arquivos.|
+
+## <a name="remarks"></a>Comentários
+Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Exemplo
+O exemplo a seguir executa a tarefa `AssignTargetPath` para configurar um projeto.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="MyProject">
+        <AssignTargetPath
+RootFolder="Resources"
+            Files="@(ResourceFiles)"
+            <Output TaskParameter="AssignedFiles"
+                ItemName="OutAssignedFiles"/>
+        </AssignTargetPath>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Consulte também
+[Tarefas](../msbuild/msbuild-tasks.md)  
+[Referência de tarefas](../msbuild/msbuild-task-reference.md)
