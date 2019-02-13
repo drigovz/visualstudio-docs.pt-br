@@ -1,13 +1,9 @@
 ---
 title: Criando uma interface de usuário usando o Designer XAML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -17,13 +13,13 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53837284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795163"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +87,9 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Exibição** Especifica diferentes resoluções e tamanhos de exibição para o aplicativo.
 
- **Orientação** Especifica diferentes orientações para o aplicativo: Paisagem ou **Retrato**.
+ **Orientação** Especifica diferentes orientações para o aplicativo: **Paisagem** ou **Retrato**.
 
- **Borda** Especifica diferentes alinhamentos de borda para seu aplicativo: Ambos, **Esquerda**, **Direita** ou **Nenhum**.
+ **Borda** Especifica diferentes alinhamentos de borda para o aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
 
  **Alto Contraste** Visualize o aplicativo com base na configuração de contraste selecionada. Essa configuração, quando definida como um valor diferente do valor **Padrão**, substituirá a propriedade `RequestedTheme` definida no arquivo App.xaml.
 

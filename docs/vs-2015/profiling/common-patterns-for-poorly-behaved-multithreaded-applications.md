@@ -32,7 +32,7 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
   
  Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU, em que, mesmo na presença de vários threads, o aplicativo consome apenas um núcleo lógico.  
   
- Para obter mais informações, veja "Performance pattern 1: Identifying lock contention" (Padrão de desempenho 1: identificando a contenção de bloqueio) no blog de Hazim Shafi, [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Ferramentas de desempenho paralelo para o Windows), no site do blog do MSDN.  
+ Para obter mais informações, consulte "Performance Pattern 1: Identifying Lock Contention (Padrão de desempenho 1: identificando a contenção de bloqueio)" no blog de Hazim Shafi [Parallel Performance Tools For Windows (Ferramentas de desempenho paralelo para Windows)](http://go.microsoft.com/fwlink/?LinkID=160569) no site da Web do blog do MSDN.  
   
  ![Contenção de bloqueio](../profiling/media/lockcontention-2.png "LockContention_2")  
   

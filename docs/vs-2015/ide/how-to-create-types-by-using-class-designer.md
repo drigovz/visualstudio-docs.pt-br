@@ -1,14 +1,9 @@
 ---
-title: Como criar tipos usando o Designer de Classe | Microsoft Docs
-ms.custom: ''
+title: 'Como: Criar tipos usando o Designer de classe | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772148"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Como criar tipos usando Designer de Classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ Para o design de novos tipos para projetos do Visual C# .NET and Visual Basic .N
     |Classes, classes abstratas, estruturas ou structs|Métodos, propriedades, campos, eventos, construtores (método), destruidores (método) e constantes que definem o tipo|  
     |Enums|Valores de campo que compõem a enumeração|  
     |Interfaces|Métodos, propriedades e eventos que compõem a interface|  
-    |Representante|Parâmetros que definem o representante|  
+    |delegado|Parâmetros que definem o representante|  
     |Módulo|Métodos, propriedades, campos, eventos, construtores (método) e constantes que definem o módulo|  
   
      Consulte [Criando membros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -106,6 +101,3 @@ Para o design de novos tipos para projetos do Visual C# .NET and Visual Basic .N
  [Criando e configurando membros de tipo (Designer de Classe)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [Trabalhando com diagramas de classe (Designer de Classe)](../ide/working-with-class-diagrams-class-designer.md)   
  [Projetando classes e tipos (Designer de Classe)](../ide/designing-classes-and-types-class-designer.md)
-
-
-

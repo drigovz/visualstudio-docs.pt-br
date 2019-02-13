@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Localizar uma perda de memória (JavaScript) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780928"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Instruções passo a passo: localizar uma perda de memória (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
     - Esse objeto é uma sobra do objeto de Instantâneo 2 e representa um vazamento de memória em potencial.  
   
-      Algum conhecimento dos aplicativos ajuda neste ponto; a escolha do botão **Provocar perda de memória** deve remover um elemento DIV e adicionar um elemento, portanto o código não parece estar funcionando corretamente (ou seja, está vazando memória). A próxima seção explica como corrigir isso.  
+      Algum conhecimento dos aplicativos ajuda neste ponto: Escolhendo a **vazamento de memória** botão deve remover um elemento DIV e adicionar um elemento, portanto, o código não parece estar funcionando corretamente (ou seja, está vazando memória). A próxima seção explica como corrigir isso.  
   
     > [!TIP]
     >  Às vezes, localizar um objeto em relação ao objeto `Global` pode ajudar a identificar esse objeto. Para isso, abra o menu de atalho do identificador e escolha **Mostrar na exibição de raiz**.  
@@ -293,6 +288,3 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 ## <a name="see-also"></a>Consulte também  
  [Memória JavaScript](../profiling/javascript-memory.md)
-
-
-

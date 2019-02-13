@@ -1,14 +1,9 @@
 ---
 title: Criando e configurando membros de tipo (Designer de Classe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,13 +29,13 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827968"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795297"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Criando e configurando membros de tipo (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +131,7 @@ ms.locfileid: "49827968"
      **Observação:** você também pode usar atalhos de teclado para criar membros. Para obter mais informações, consulte [Atalhos de teclado e mouse no Diagrama de Classe e na Janela Detalhes da Classe (Designer de Classe)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ##  <a name="ModifyTypeMembers"></a> Modificando membros de tipo  
- O Designer de Classe permite modificar os membros dos tipos que são exibidos no diagrama. É possível modificar os membros de qualquer tipo exibido em um diagrama de classes que não sejam somente leitura. (Consulte [Exibição de informações somente leitura (Designer de Classe)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Modifique os membros de tipo usando edição in-loco na superfície de design, na janela Propriedades e na janela Detalhes da Classe.  
+ O Designer de Classe permite modificar os membros dos tipos que são exibidos no diagrama. É possível modificar os membros de qualquer tipo exibido em um diagrama de classes que não sejam somente leitura. (Consulte [Exibição de informações somente leitura (Designer de Classe)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Modifique os membros de tipo usando edição in-loco na superfície de design, na janela Propriedades e na janela Detalhes da Classe.  
   
  Todos os membros exibidos na janela Detalhes da Classe representam os membros dos tipos no diagrama de classes. Há quatro tipos de membro: métodos, propriedades, campos e eventos.  
   
@@ -268,7 +263,7 @@ ms.locfileid: "49827968"
   
  Todas as células na janela Detalhes da Classe são editáveis, com algumas exceções:  
   
-- O tipo inteiro é somente leitura, quando, por exemplo, residir em um assembly referenciado (consulte [Exibição de informações somente leitura [Designer de Classe]](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Quando você seleciona a forma no Designer de Classe, a janela Detalhes da Classe exibe seus detalhes em um estado somente leitura.  
+- O tipo inteiro é somente leitura, quando, por exemplo, residir em um assembly referenciado (consulte [Exibição de informações somente leitura [Designer de Classe]](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Quando você seleciona a forma no Designer de Classe, a janela Detalhes da Classe exibe seus detalhes em um estado somente leitura.  
   
 - Para indexadores, o nome é somente leitura e o restante (tipo, modificador, resumo) é editável.  
   

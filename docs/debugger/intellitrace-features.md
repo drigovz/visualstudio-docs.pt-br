@@ -17,21 +17,21 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227831"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035231"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Recursos do IntelliTrace (C#, Visual Basic, C++)
 
 Você pode usar o IntelliTrace para registrar eventos e chamadas de método do aplicativo, que permite que você examine seu estado (pilha de chamadas e valores de variáveis locais) em pontos diferentes na execução. Basta iniciar a depuração como de costume - IntelliTrace é ativado por padrão e você pode ver as informações do IntelliTrace está gravando no novo **ferramentas de diagnóstico** janela sob o **eventos** guia. Selecione um evento e clique em **Ativar depuração histórica** para ver a pilha de chamadas e variáveis locais registradas para este evento.
 
-Para obter uma descrição passo a passo, consulte [passo a passo: Usando o IntelliTrace
+Para obter uma descrição passo a passo, consulte [passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace está disponível no Visual Studio Enterprise edition, mas não nas edições do Visual Studio Professional ou Community.
 
@@ -129,4 +129,4 @@ Quando você salva dados do IntelliTrace para o arquivo, você obtém um arquivo
 
 [Experiência IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
-Depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
+[Depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)

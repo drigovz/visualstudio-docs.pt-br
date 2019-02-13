@@ -1,14 +1,9 @@
 ---
-title: Como criar modelos da Web manualmente | Microsoft Docs
-ms.custom: ''
+title: 'Como: Criar manualmente modelos da Web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -18,13 +13,13 @@ ms.assetid: 731c4027-a152-48c5-bfc4-93490bf1949f
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782204"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Como criar manualmente modelos da Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +88,4 @@ Criar um modelo de Web é diferente de criar outros tipos de modelos. Como model
   
 ## <a name="see-also"></a>Consulte também  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
-
-
+ [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

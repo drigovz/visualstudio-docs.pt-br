@@ -3,10 +3,7 @@ title: Novidades no Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740267"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790727"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -183,7 +180,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ### <a name="notification-hub"></a>Hub de notificação
  A interface do usuário para o hub de notificação foi otimizada para torná-lo mais fácil verificar rapidamente. Tipos de notificações adicionais foram adicionados incluindo problemas de desempenho, problemas de renderização e falhas, e você agora pode informar ao Visual Studio pare de mostrar uma notificação. Para obter mais informações, consulte [Notificações do Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens Encontre o que aconteceu com seu código (apenas para edições Enterprise e Professional)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Encontre o que aconteceu com seu código (apenas para edições Enterprise e Professional)
  Mantenha o foco no trabalho enquanto você encontrar informações sobre seu código – sem sair do editor. Você pode revisar as alterações e outro histórico de itens de trabalho, bugs, revisões de código, e assim por diante para o código que é armazenado no Visual Studio Team Services (VSTS) ou no Team Foundation Server (TFS).
 
  No Visual Studio Enterprise e Professional do Visual Studio, agora você pode:

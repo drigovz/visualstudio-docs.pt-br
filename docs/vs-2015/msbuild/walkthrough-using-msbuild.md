@@ -1,27 +1,22 @@
 ---
 title: 'Instruções passo a passo: usando o MSBuild | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792214"
 ---
 # <a name="walkthrough-using-msbuild"></a>Instruções passo a passo: usando o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
   
 - Uma tarefa é a menor unidade de trabalho ou, em outras palavras, é o "átomo" de um build. As tarefas são componentes executáveis independentes que podem ter entradas e saídas. Não existem tarefas referenciadas ou definidas no arquivo de projeto no momento. Você adicionará tarefas ao arquivo de projeto nas seções a seguir. Para obter mais informações, consulte o tópico [Tarefas](../msbuild/msbuild-tasks.md).  
   
-- Um destino é uma sequência nomeada de tarefas. No momento, há dois destinos ao final do arquivo de projeto incluídos nos comentários HTML: BeforeBuild e AfterBuild.  
+- Um destino é uma sequência nomeada de tarefas. Há dois destinos ao final do arquivo de projeto que atualmente são incluídos nos comentários HTML: BeforeBuild e AfterBuild.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -587,5 +582,3 @@ $(PropertyName)
 ## <a name="see-also"></a>Consulte também
 [Visão geral do MSBuild](msbuild.md)  
  [Referência do MSBuild](../msbuild/msbuild-reference.md)
-
-

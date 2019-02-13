@@ -55,7 +55,7 @@ Uma transformação é uma conversão individual de uma lista de itens para outr
 ## <a name="dependency-analysis"></a>Análise de dependência  
  Transformações garantem um mapeamento individual entre a lista de itens transformados e a lista do item original. Portanto, se um destino cria saídas que são transformações das entradas, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pode analisar os carimbos de hora das entradas e saídas e decida se deseja ignorar, compilar ou recompilar parcialmente um destino.  
   
- No [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos a `BuiltAssemblies` lista de itens é mapeado para um arquivo na pasta de destino da tarefa especificada com uma transformação no `Outputs` atributo. Se um arquivo no `BuiltAssemblies` item alterações da lista, o `Copy` tarefa será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre a análise de dependência e como usar transformações, confira [Como: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md)  
+ No [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos a `BuiltAssemblies` lista de itens é mapeado para um arquivo na pasta de destino da tarefa especificada com uma transformação no `Outputs` atributo. Se um arquivo no `BuiltAssemblies` item alterações da lista, o `Copy` tarefa será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre como usar transformações e análise de dependência, veja [como: compilar incrementalmente](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -112,4 +112,4 @@ extension: .xsd
 ## <a name="see-also"></a>Consulte também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Como: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md)
+ [Como compilar incrementalmente](../msbuild/how-to-build-incrementally.md)
