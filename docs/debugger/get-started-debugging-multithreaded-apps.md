@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227974"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231968"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introdução ao depurar aplicativos multithread (C#, Visual Basic, C++)
 Visual Studio fornece várias ferramentas e os elementos de interface do usuário para ajudá-lo a depurar aplicativos multi-threaded. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Concluir este tutorial você se familiarizará com recursos do Visual Studio para depurar aplicativos multithread.
@@ -36,7 +36,7 @@ Esses dois tópicos fornecem informações adicionais sobre como usar outras fer
 
 - Para usar o **local de depuração** barra de ferramentas e o **Threads** janela, consulte [passo a passo: Depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
 
-- Para obter um exemplo que usa <xref:System.Threading.Tasks.Task> (código gerenciado) e o tempo de execução de simultaneidade (C++), consulte [passo a passo: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md). Para dicas de depuração gerais que se aplicam a tipos de aplicativos multithread mais, leia esse tópico e esta.
+- Para obter um exemplo que usa <xref:System.Threading.Tasks.Task> (código gerenciado) e o tempo de execução de simultaneidade (C++), consulte [passo a passo: Depurar um aplicativo paralelo Para dicas de depuração gerais que se aplicam a tipos de aplicativos multithread mais, leia esse tópico e esta.
   
 Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo.  
   
@@ -106,39 +106,37 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
     ```
   
 7.  Sobre o **arquivo** menu, selecione **Salvar tudo**.  
+
+8. (Somente Visual Basic) No Gerenciador de soluções (painel direito), clique com botão direito no nó do projeto, escolha **propriedades**. Sob o **Application** , altere o **objeto de inicialização** para **simples**.
   
 ## <a name="debug-the-multithreaded-app"></a>Depurar o aplicativo com multithread  
   
@@ -205,8 +205,8 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
     Console.WriteLine()
     ```
 
-1. Botão esquerdo do mouse na medianiz esquerda do `Thread.Sleep` ou `this_thread::sleep_for` instrução para inserir um novo ponto de interrupção.  
+1. Botão esquerdo do mouse na medianiz esquerda do `Thread.Sleep` ou `std::this_thread::sleep_for` instrução para inserir um novo ponto de interrupção.  
   
     Na medianiz, um círculo vermelho indica que um ponto de interrupção está definido neste local. 
   

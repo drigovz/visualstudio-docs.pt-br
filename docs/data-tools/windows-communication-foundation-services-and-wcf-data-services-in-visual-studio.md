@@ -32,16 +32,16 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847922"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919935"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 
@@ -92,7 +92,7 @@ Depois que um cliente WCF tiver sido criado, você referenciar o serviço em seu
 
 ## <a name="wcf-tools-in-visual-studio"></a>Ferramentas do WCF no Visual Studio
 
-Visual Studio fornece ferramentas para ajudá-lo a criar serviços WCF e clientes do WCF. Para um passo a passo que demonstra as ferramentas, consulte [passo a passo: Criando um serviço WCF simples no Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
+Visual Studio fornece ferramentas para ajudá-lo a criar serviços WCF e clientes do WCF. Para um passo a passo que demonstra as ferramentas, consulte [instruções passo a passo: Criando um serviço WCF simples no Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
 
 ### <a name="create-and-test-wcf-services"></a>Criar e testar os serviços WCF
 
