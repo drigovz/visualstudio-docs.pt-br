@@ -3,7 +3,6 @@ title: Atualizar uma instalação baseada em rede
 description: Saiba como atualizar uma instalação do Visual Studio baseada em rede usando o comando --layout
 ms.date: 08/14/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781f6e45d900c1401431346abdcd26d1579a70ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021017"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937533"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Atualizar uma instalação baseada em rede do Visual Studio 2017
 
