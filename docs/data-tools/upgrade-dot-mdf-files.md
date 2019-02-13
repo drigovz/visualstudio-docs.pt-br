@@ -12,15 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cf68127d875ba4c785f10319cabdd96a3c11adc2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 841620330c10bae3cbced7710930af8c72456c31
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996188"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943773"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
 
@@ -70,9 +69,9 @@ Antes de atualizar um banco de dados, considere os seguintes critérios:
 
         -   Para usar uma versão específica: `(localdb)\ProjectsV12` ou `(localdb)\ProjectsV13`, onde V12 é LocalDB 2014, e V13 é LocalDB 2016.
 
-    -   Anexar um arquivo do banco de dados O caminho físico da réplica primária *mdf* arquivo.
+    -   **Anexar um arquivo do banco de dados**: O caminho físico da réplica primária *mdf* arquivo.
 
-    -   Nome Lógico O nome que você deseja usar com o arquivo.
+    -   **Nome lógico**: O nome que você deseja usar com o arquivo.
 
 3.  Selecione o botão **OK**.
 

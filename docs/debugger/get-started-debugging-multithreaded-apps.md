@@ -12,31 +12,27 @@ dev_langs:
 helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
-ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
-ms.translationtype: HT
+ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231968"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155780"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introdução ao depurar aplicativos multithread (C#, Visual Basic, C++)
-Visual Studio fornece várias ferramentas e os elementos de interface do usuário para ajudá-lo a depurar aplicativos multi-threaded. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Concluir este tutorial você se familiarizará com recursos do Visual Studio para depurar aplicativos multithread.
 
-| | |
-|---------|---------|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sobre depuração com multithread que mostra etapas semelhantes. |
+Visual Studio fornece várias ferramentas e os elementos de interface do usuário para ajudá-lo a depurar aplicativos multi-threaded. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Concluir este tutorial você se familiarizará com recursos do Visual Studio para depurar aplicativos multithread.
 
 Esses dois tópicos fornecem informações adicionais sobre como usar outras ferramentas de depuração multithread:
 
-- Para usar o **local de depuração** barra de ferramentas e o **Threads** janela, consulte [passo a passo: Depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
+- Para usar o **local de depuração** barra de ferramentas e o **Threads** janela, consulte [passo a passo: depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
 
-- Para obter um exemplo que usa <xref:System.Threading.Tasks.Task> (código gerenciado) e o tempo de execução de simultaneidade (C++), consulte [passo a passo: Depurar um aplicativo paralelo Para dicas de depuração gerais que se aplicam a tipos de aplicativos multithread mais, leia esse tópico e esta.
+- Para obter um exemplo que usa <xref:System.Threading.Tasks.Task> (código gerenciado) e o tempo de execução de simultaneidade (C++), consulte [passo a passo: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md). Para dicas de depuração gerais que se aplicam a tipos de aplicativos multithread mais, leia esse tópico e esta.
   
 Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo.  
   
@@ -46,7 +42,7 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
   
      A caixa de diálogo **Novo Projeto** é exibida.  
   
-2.  Selecione um idioma **Visual c#**, **Visual C++**, ou **Visual Basic**.  
+2.  Selecione um idioma: **Visual C#** , **Visual C++**, ou **Visual Basic**.  
   
 3.  Sob **área de trabalho do Windows**, escolha **aplicativo de Console**.  
   
@@ -257,7 +253,7 @@ No **pilhas paralelas** janela, você pode alternar entre um modo de exibição 
     Você pode executar várias ações desses menus de atalho, mas para este tutorial, mostraremos mais desses detalhes na **inspeção paralela** janela (próximas seções).
 
     > [!NOTE]
-    > Para ver uma lista para exibir informações sobre cada thread, use o **Threads** janela em vez disso. Confira [Passo a passo: Depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
+    > Para ver uma lista para exibir informações sobre cada thread, use o **Threads** janela em vez disso. Ver [instruções passo a passo: depurar um aplicativo multi-threaded](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Definir uma inspeção em uma variável
 
@@ -342,8 +338,9 @@ Você pode definir pontos de interrupção em diferentes condições, como o nom
     > [!NOTE]
     > Quando você avança o depurador, todos os threads serão executados. No entanto, o depurador não quebre em código em outros threads, a menos que um dos outros threads atinge um ponto de interrupção. 
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
+
 [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Como: Mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Como: Use a janela de pilha paralela](../debugger/using-the-parallel-stacks-window.md)  
-[Como: Usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)  
+[Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[Como: usar a janela de pilha paralela](../debugger/using-the-parallel-stacks-window.md)  
+[Como usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)  
