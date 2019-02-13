@@ -2,7 +2,6 @@
 title: REPL (janela interativa) do IPython
 description: Use a janela interativa do Visual Studio no modo IPython para um ambiente de desenvolvimento interativo e amigável com funcionalidades de Computação Paralela Interativa.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4aec0b6c20efd224bc4ddf5eb447a34c3b68ba4d
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 6f4e153fdbf4a3c4be64c5c5ad6e94d6acef34a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231903"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957868"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usar o IPython na janela Interativa
 

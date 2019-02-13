@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 8ae291054a08a8835d7bf3d1d1df77c1c6eb8519
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 71233b609f2e68935b71e3044a9b6ec0f59091bb
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224260"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987271"
 ---
 # <a name="user-accounts"></a>Contas de usuário
 
@@ -21,4 +21,4 @@ Ao entrar, você habilita o acesso a todos os serviços associados à sua conta 
 ## <a name="in-this-section"></a>Nesta seção
 
 * [Entrando no Visual Studio para Mac](signing-in.md)
-* [Habilitar Assinatura](activation.md)
+* [Habilitar Assinatura](enable-subscription.md)

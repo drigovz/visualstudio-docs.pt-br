@@ -1,7 +1,6 @@
 ---
 title: 'Etapa 8: Personalizar o teste'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aab5e24d046e3b81b507be558f667583fed0ae1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 168c86ace7fde9a2d354b4e9089b386f5cd876c6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022489"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970043"
 ---
 # <a name="step-8-customize-the-quiz"></a>Etapa 8: Personalizar o teste
 Na última parte do tutorial, você explorará algumas maneiras de personalizar o questionário e expandir no que já aprendeu. Por exemplo, pense em como o programa cria os problemas aleatórios de divisão para os quais a resposta nunca é uma fração. Para obter mais informações, mude o controle `timeLabel` para uma cor diferente e dê uma dica à pessoa realizando o teste.
