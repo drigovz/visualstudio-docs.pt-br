@@ -11,15 +11,14 @@ ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: e2d29f594615796cf320167b4e037eca48d1546d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024443"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928771"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código a conjuntos de dados em aplicativos de n camadas
 Você pode estender a funcionalidade de um conjunto de dados, criando um arquivo de classe parcial para o conjunto de dados e adicionando código a ele (em vez de adicionar código para o *DatasetName*. Arquivo do DataSet). Classes parciais permitem codificar uma classe específica a ser dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [classes e métodos parciais](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).

@@ -18,15 +18,14 @@ ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b78bd412343888a5f90fdc84f1c4fe31a3babaa7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d568434e8820ef11e0f2b75ba2409d7b643cc011
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996760"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955902"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Desabilitar restrições ao preencher um conjunto de dados
 
@@ -46,7 +45,7 @@ Se não houver nenhum mecanismo para permitir a suspensão de restrição tempor
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Para suspender restrições de atualização usando o Designer de conjunto de dados
 
-1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, consulte [instruções passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  No **propriedades** janela, defina as <xref:System.Data.DataSet.EnforceConstraints%2A> propriedade `false`.
 

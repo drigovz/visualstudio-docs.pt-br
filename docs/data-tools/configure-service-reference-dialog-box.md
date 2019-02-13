@@ -12,15 +12,14 @@ ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c014f506a1cc1463456508e993959e39b1d5e588
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956995"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955239"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 
@@ -106,5 +105,5 @@ Para acessar o **Configure Service Reference** caixa de diálogo, o botão direi
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Adicione uma referência a um serviço web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Como adicionar uma referência a um serviço Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Serviços do Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
