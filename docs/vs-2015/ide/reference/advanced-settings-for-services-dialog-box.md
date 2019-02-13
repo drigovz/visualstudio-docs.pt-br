@@ -1,14 +1,9 @@
 ---
 title: Caixa de diálogo Configurações Avançadas para Serviços | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 217d1f6f546df94a66c5b7554a7a1710747cf83c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291870"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779130"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Caixa de diálogo Configurações Avançadas para Serviços
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ Os serviços de aplicativo cliente fornecem acesso simplificado ao logon, às fu
 ## <a name="task-list"></a>Lista de Tarefas  
  [Como configurar serviços de aplicativo cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
   
- [Como trabalhar offline com serviços de aplicativo cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
+ [Como: Trabalhar Offline com serviços de aplicativos cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  **Salvar o hash de senha localmente para habilitar o logon offline**  
- Especifica se um formato criptografado da senha do usuário será armazenado em cache localmente para permitir que o usuário faça logon quando o aplicativo estiver no modo offline. Para obter mais informações, consulte [Como trabalhar offline com serviços de aplicativo cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Essa opção é habilitada por padrão.  
+ Especifica se um formato criptografado da senha do usuário será armazenado em cache localmente para permitir que o usuário faça logon quando o aplicativo estiver no modo offline. Para obter mais informações, confira [Como: Trabalhar Offline com serviços de aplicativos cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Essa opção é habilitada por padrão.  
   
  **Exige que os usuários façam logon novamente sempre que o cookie de servidor expira**  
  Especifica se os usuários anteriormente autenticados são reautenticados automaticamente quando o aplicativo acessa as funções ou o serviço de perfil e o cookie de autenticação do servidor expira. Selecione essa opção para negar acesso aos serviços de aplicativo e exigir a reautenticação explícita depois que o cookie expirar. Isso é útil para aplicativos implantados em locais públicos, para garantir que os usuários que deixam o aplicativo em execução após o uso não permanecerão autenticados por tempo indefinido. Essa opção é limpa por padrão.  
@@ -59,7 +54,4 @@ Os serviços de aplicativo cliente fornecem acesso simplificado ao logon, às fu
  [Serviços de aplicativo cliente](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [Página Serviços, Designer de Projeto](../../ide/reference/services-page-project-designer.md)   
  [Como configurar serviços de aplicativo cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
- [Como trabalhar offline com serviços de aplicativo cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
-
-
-
+ [Como: Trabalhar Offline com serviços de aplicativos cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)

@@ -3,10 +3,7 @@ title: Bem-vindo ao Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msdnstart
 helpviewer_keywords:
@@ -15,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
-manager: crdun
-ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805140"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835080"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bem-vindo ao Visual Studio de 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -53,7 +50,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 ## <a name="build-apps-for-android-ios-and-windows"></a>Crie aplicativos para iOS, Android e Windows
  Você pode usar o Visual Studio para compilar aplicativos para dispositivos Android, iOS e Windows. Saiba mais sobre isso em [Cross-Platform Mobile Development](./cross-platform/cross-platform-mobile-development-in-visual-studio.md) (Desenvolvimento Móvel Multiplataforma).
 
- Para obter informações sobre os aplicativos UWP (Plataforma Universal do Windows), confira [Aplicativos universais do Windows](https://dev.windows.com/en-us/windows-apps).
+ Para obter informações sobre os aplicativos UWP (Plataforma Universal do Windows), confira [Aplicativos universais do Windows](https://dev.windows.com/windows-apps).
 
  Escolha as ferramentas necessárias com base nos requisitos dos aplicativos e na linguagem que deseja usar.
 
@@ -99,7 +96,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 
 |||||
 |-|-|-|-|
-|[Novidades no Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novidades do Visual C++](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[O que há de novo para o .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novidades do ALM](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Novidades no Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novidades do Visual C++](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[O que há de novo para o .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novidades do ALM](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
 |[Quais são as novidades do C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novidades do Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[O que há de novo para JavaScript](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

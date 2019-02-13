@@ -1,25 +1,20 @@
 ---
-title: 'Etapa 4: Adicionar um manipulador de eventos de clique a cada rótulo | Microsoft Docs'
-ms.custom: ''
+title: 'Etapa 4: Adicionar um manipulador de eventos Click a cada rótulo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9af0d60e9321baa9f4d2ffc4944d939e6398dcf7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775924"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Etapa 4: Adicionar um manipulador de evento Click a cada rótulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ Janela Propriedades mostrando o evento Click
 -   Para ir para a próxima etapa do tutorial, consulte [Etapa 5: adicionar referências de rótulo](../ide/step-5-add-label-references.md).  
   
 -   Para retornar à etapa anterior do tutorial, consulte [Etapa 3: atribuir um ícone aleatório a cada rótulo](../ide/step-3-assign-a-random-icon-to-each-label.md).
-
-
-

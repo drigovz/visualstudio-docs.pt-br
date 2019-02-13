@@ -1,27 +1,22 @@
 ---
-title: Como modelar terreno 3D | Microsoft Docs
-ms.custom: ''
+title: 'Como: Modelar um terreno 3D | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fae94fe5e7474580f8867f531fc41d0ce6781cf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940509"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764110"
 ---
-# <a name="how-to-model-3-d-terrain"></a>Como modelar terreno 3D
+# <a name="how-to-model-3-d-terrain"></a>Como: Modelo de terreno 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Editor de Modelo para criar um modelo de terreno 3D.  
@@ -77,6 +72,3 @@ Este documento demonstra como usar o Editor de Modelo para criar um modelo de te
   
 ## <a name="see-also"></a>Consulte também  
  [Editor de modelo](../designers/model-editor.md)
-
-
-

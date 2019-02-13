@@ -1,14 +1,9 @@
 ---
 title: Referência de esquema de snippets de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
 - snippets [Visual Studio], schema reference
@@ -18,13 +13,13 @@ ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753557"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -168,7 +163,7 @@ is a great color. I love Blue.
   
 |Elementos filho|Descrição|  
 |-------------------|-----------------|  
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Elemento obrigatório. Contém informações gerais sobre o trecho de código. Deve haver exatamente um elemento `Header` em um snippet de código.|  
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Elemento obrigatório. Contém informações gerais sobre o snippet de código. Deve haver exatamente um elemento `Header` em um snippet de código.|  
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Elemento obrigatório. Contém o código que será inserido pelo Visual Studio. Deve haver exatamente um elemento `Snippet` em um snippet de código.|  
   
 |Elementos pai|Descrição|  
@@ -203,7 +198,7 @@ is a great color. I love Blue.
 |Elementos filho|Descrição|  
 |-------------------|-----------------|  
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal)|Elemento opcional. Define os literais do snippet de código que você pode editar. Pode ser que não haja nenhum ou mais de um elemento `Literal` em um elemento `Declarations`.|  
-|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|Elemento opcional. Define os objetos do trecho de código que você pode editar. Pode ser que não haja nenhum ou mais de um elemento `Object` em um elemento `Declarations`.|  
+|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|Elemento opcional. Define os objetos do snippet de código que você pode editar. Pode ser que não haja nenhum ou mais de um elemento `Object` em um elemento `Declarations`.|  
   
 |Elementos pai|Descrição|  
 |--------------------|-----------------|  
@@ -403,7 +398,7 @@ is a great color. I love Blue.
 ##  <a name="literal"></a> Elemento Literal  
  Define os literais do snippet de código que você pode editar. O elemento `Literal` é usado para identificar um substituto para uma parte de código totalmente contido no snippet, mas que provavelmente será personalizado depois de inserido no código. Por exemplo, cadeias de caracteres literais, valores numéricos e alguns nomes de variáveis devem ser declarados como literais.  
   
- Os literais e objetos não podem conter um elemento **ID** com um valor de selecionado ou fim. O valor `$selected$` representa o texto selecionado no documento que deve ser inserido no snippet quando ele é invocado. `$end$` marca o local para colocar o cursor depois que o trecho de código é inserido.  
+ Os literais e objetos não podem conter um elemento **ID** com um valor de selecionado ou fim. O valor `$selected$` representa o texto selecionado no documento que deve ser inserido no snippet quando ele é invocado. `$end$` marca o local para colocar o cursor depois que o snippet de código é inserido.  
   
 ```xml  
 <Literal Editable="true/false">  
@@ -666,6 +661,3 @@ is a great color. I love Blue.
 ## <a name="see-also"></a>Consulte também  
  [Snippets de código](../ide/code-snippets.md)   
  [Passo a passo: criando um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: 'Passo a passo: criando uma bola de bilhar realística em 3D | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Criando uma bola de bilhar realística em 3D | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793297"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Explicação passo a passo: Criando uma bola de bilhar realística em 3D
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Passo a passo: Criando uma bola de bilhar realística em 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usando o Designer de Sombreador e o Editor de Imagens em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. A aparência 3D da bola de bilhar é obtida pela combinação de várias técnicas de sombreador com recursos de textura adequados.  
@@ -221,10 +216,7 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
   
 ## <a name="see-also"></a>Consulte também  
  [Como exportar um sombreador](../designers/how-to-export-a-shader.md)   
- [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Editor de imagens](../designers/image-editor.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)
-
-
-

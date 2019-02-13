@@ -1,25 +1,20 @@
 ---
 title: ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos do Unity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 0a39bee5517f0a4311613af336a5b8bc6e6fa00e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760700"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778585"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos do Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
  As tabelas a seguir identifica como os recursos do Visual Studio ALM se aplicam ou não se aplicam ao trabalhar com o Unity. Consulte a documentação vinculada para obter detalhes sobre os recursos em si.  
   
 ## <a name="agile-tools"></a>Ferramentas agile  
- Link de referência: **[Trabalho](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (usando o Visual Studio Team Services ou TFS, incluindo o Team Explorer Everywhere)  
+ Link de referência: **[Trabalho](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (usando o Visual Studio Team Services ou TFS, incluindo o Team Explorer Everywhere)  
   
  Comentário Geral: todos os recursos de planejamento e acompanhamento são independentes do tipo de projeto e de linguagens de codificação.  
   
@@ -127,6 +122,3 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|  
 |-------------|--------------------------|-------------------------|  
 |Análise de falhas, telemetria e distribuição beta|Sim|HockeyApp é útil principalmente para tratar a distribuição beta e obter relatórios de falha.<br /><br /> Para telemetria de scripts do C#, é possível usar qualquer estrutura de análise, desde que ela seja executada na versão do .NET que é usada pelo Unity. No entanto, isso permite análise somente dentro de scripts de jogos e não mais profundamente dentro do mecanismo do Unity. No momento, não há nenhum plug-in do Application Insights, mas plug-ins estão disponíveis para outras soluções de análise, como [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) e [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Serviços como Unity Analytics que entendem a natureza de um projeto Unity obviamente fornecerão análise muito mais significativa do que estruturas genéricas.|
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: Como adicionar diagramas de classes a projetos (Designer de Classe) | Microsoft Docs
-ms.custom: ''
+title: 'Como: Adicionar diagramas de classe a projetos (Designer de classe) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
@@ -16,13 +11,13 @@ ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ab062ea6f7dfac6001d016704d627c716079989
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760260"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Como adicionar diagramas de classe a projetos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Para projetar, editar e refatorar classes e outros tipos, adicione um diagrama d
   
 1.  No Gerenciador de Soluções, abra o menu de contexto do arquivo de classe e escolha **Exibir em Diagrama de Classe**.  
   
-     -ou-  
+     - ou -  
   
      Em **Modo de Exibição de Classe**, abra o namespace ou o menu de contexto de tipo e escolha **Exibir em Diagrama de Classe**.  
   
@@ -61,6 +56,3 @@ Para projetar, editar e refatorar classes e outros tipos, adicione um diagrama d
  [Projetando classes e tipos (Designer de Classe)](../ide/designing-classes-and-types-class-designer.md)   
  [Exibindo tipos e relacionamentos (Designer de Classe)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Trabalhando com diagramas de classe (Designer de Classe)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

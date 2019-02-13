@@ -1,30 +1,25 @@
 ---
-title: 'Passo a passo: Meu primeiro aplicativo2 da área de trabalho do WPF| Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Minha primeira Application2 da área de trabalho do WPF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795939"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao desenvolvimento do Windows Presentation Foundation (WPF). Você vai criar um aplicativo básico que inclui elementos comuns à maioria dos aplicativos de área de trabalho do WPF: marcação de XAML, code-behind, definições de aplicativo, controles, layout, vinculação de dados e estilos.  
+um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao desenvolvimento do Windows Presentation Foundation (WPF). Você criará um aplicativo básico que inclui os elementos que são comuns à maioria dos aplicativos de área de trabalho do WPF: Marcação XAML, code-behind, definições de aplicativo, controles, layout, vinculação de dados e estilos.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Criando o projeto de aplicativo  
  Nesta seção, você criará a infraestrutura do aplicativo, que inclui o projeto e uma janela ou formulário principal.  
@@ -983,6 +978,3 @@ um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao d
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Criar um aplicativo de área de trabalho do WPF conectado a um serviço móvel do Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Criar modernos aplicativos da área de trabalho com o Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

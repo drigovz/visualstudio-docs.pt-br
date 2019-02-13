@@ -1,14 +1,9 @@
 ---
 title: Página Publicar, Designer de Projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: 153527c6-8b95-4003-8e8e-03a489d0a629
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1dcd6660ff431bee76fb7f595ed243104136684d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 32b907680155c9631ca5336c2228dd5b8ecce8d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277952"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778598"
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,16 +51,16 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
  Para Aplicativos do Navegador da Web WPF, a opção **O aplicativo está disponível também offline** está desabilitada, pois esses aplicativos estão disponíveis somente online.  
   
  **Arquivos de Aplicativo**  
- Abre a [Caixa de Diálogo de Arquivos do Aplicativo](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8), que é usada para especificar como e o local em que os arquivos individuais são instalados.  
+ Abre a [Caixa de Diálogo de Arquivos do Aplicativo](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), que é usada para especificar como e o local em que os arquivos individuais são instalados.  
   
  **Pré-requisitos**  
  Abre a [Caixa de Diálogo de Pré-Requisitos](../../ide/reference/prerequisites-dialog-box.md), que é usada para especificar os componentes de pré-requisito, como o .NET Framework, a serem instalados junto com o aplicativo.  
   
  **Atualizações**  
- Abre a [Caixa de Diálogo de Atualizações do Aplicativo](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), que é usada para especificar o comportamento da atualização para o aplicativo. Não disponível quando **O aplicativo está disponível apenas online** está selecionado.  
+ Abre a [Caixa de Diálogo de Atualizações do Aplicativo](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), que é usada para especificar o comportamento da atualização para o aplicativo. Não disponível quando **O aplicativo está disponível apenas online** está selecionado.  
   
  **Opções**  
- Abre a [Caixa de Diálogo Opções de Publicação](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), que é usada para especificar mais opções de publicação avançadas.  
+ Abre a [Caixa de Diálogo Opções de Publicação](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), que é usada para especificar mais opções de publicação avançadas.  
   
  **Versão da Publicação**  
  Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido pelo <xref:System.Version>.  
@@ -76,7 +71,7 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
  Opcional. Quando essa opção é selecionada (padrão), a parte de **Revisão** do número de versão de publicação é incrementada em uma unidade toda vez que o aplicativo é publicado. Isso faz o aplicativo ser publicado como uma atualização.  
   
  **Assistente de Publicação**  
- Abre o [Assistente de Publicação](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872). Concluir o Assistente de Publicação tem o mesmo efeito que executar o comando **Publicar** no menu **Build**.  
+ Abre o [Assistente de Publicação](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Concluir o Assistente de Publicação tem o mesmo efeito que executar o comando **Publicar** no menu **Build**.  
   
  **Publicar Agora**  
  Publica o aplicativo usando as configurações atuais. Equivalente ao botão **Concluir** no **PublishWizard**.  
@@ -98,6 +93,3 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
  [Como especificar um nome no menu Iniciar para um aplicativo ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
  [Como especificar uma página de publicação para um aplicativo ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
  [Segurança e implantação do ClickOnce](../../deployment/clickonce-security-and-deployment.md)
-
-
-

@@ -45,7 +45,7 @@ Use os links a seguir para localizar informações sobre as tecnologias que dão
   
 ## <a name="web-sites"></a>Sites  
   
--   [Passo a passo: Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Esse tópico apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo, bem como algumas dicas de design de acessibilidade para a Web.  
+-   [Walkthrough: Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) (Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack) Esse tópico apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo, bem como algumas dicas de design de acessibilidade para a Web.  
   
 -   **Making Web Pages More Accessible** (Tornando as páginas da Web mais acessíveis) Esse artigo técnico lista elementos HTML 3.2 que estão acessíveis, bem como os elementos que podem se tornar acessíveis para uso em desenvolvimento de site. Para obter mais informações, consulte [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   

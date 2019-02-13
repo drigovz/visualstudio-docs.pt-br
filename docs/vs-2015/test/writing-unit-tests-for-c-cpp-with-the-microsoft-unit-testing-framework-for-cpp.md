@@ -1,24 +1,19 @@
 ---
 title: Escrevendo testes de unidade para C-C++ com o Microsoft Unit Testing Framework para C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6600621c195994bf5becec9cae4f77340008516
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760012"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escrevendo teste de unidade para C/C++ com o Microsoft Unit Testing Framework para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ No Visual Studio, você pode criar testes de unidade para código não gerenciad
   
         3.  No menu de atalho de um teste, escolha **Depurar Teste Selecionado** para executar o teste no depurador.  
   
-##  <a name="walkthrough"></a> Instruções passo a passo: desenvolvendo uma DLL não gerenciada com o Gerenciador de Testes  
+##  <a name="walkthrough"></a>Passo a passo: Desenvolvendo uma DLL não gerenciada com o Gerenciador de testes  
  Você pode adaptar estas instruções passo a passo para desenvolver a sua própria DLL. As etapas de entidade são as seguintes:  
   
 1.  [Criar um projeto de teste nativo](#unitTestProject). Os testes são criados em um projeto separado da DLL que você está desenvolvendo.  
@@ -404,6 +399,3 @@ No Visual Studio, você pode criar testes de unidade para código não gerenciad
  [Depurando código nativo](../debugger/debugging-native-code.md)   
  [Instruções passo a passo: criando e usando uma biblioteca de vínculo dinâmico (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [Importando e exportando](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
-
-
-

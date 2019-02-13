@@ -1,25 +1,20 @@
 ---
 title: Modificar o estilo de objetos no Blend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 31192d2c-5b84-41bc-94c0-898638c170bd
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843619"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781368"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar o estilo de objetos no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ A maneira mais fácil de personalizar um objeto é definir as propriedades no pa
 ##  <a name="Brushes"></a> Pincéis: Modificar a aparência de um objeto  
  Aplique um pincel a um objeto se você quiser alterar sua aparência.  
   
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Editor de Pincéis](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
+ **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Editor de pincéis](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Pinte uma imagem ou padrão de repetição em um objeto  
  Pinte uma imagem ou padrão de repetição em um objeto usando um *pincel de bloco*.  
@@ -60,7 +55,7 @@ A maneira mais fácil de personalizar um objeto é definir as propriedades no pa
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Assista a um breve vídeo:** ![Configure Installed Features (Configurar recursos instalados)](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Pincéis de Bloco](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pincéis de bloco](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
 ##  <a name="Styles"></a>Estilos e modelos: Criar uma aparência consistente entre os controles  
  Você pode criar uma vez a aparência e o comportamento de um controle uma vez e aplicar esse design a outros controles, para que você não precise mantê-los individualmente.  
@@ -97,34 +92,31 @@ A maneira mais fácil de personalizar um objeto é definir as propriedades no pa
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Criar um estilo](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
+ **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criar um estilo](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
   
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Criar um modelo de controle no Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
+ **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criando um modelo de controle no Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar um estilo ou modelo a um controle  
- Clique com o botão direito do mouse em um objeto no painel [Objetos e Linha do Tempo](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), escolha **Editar Modelo** e escolha**Aplicar Recurso**.  
+ Clique com o botão direito do mouse em um objeto no painel [Objetos e Linha do Tempo](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), escolha **Editar Modelo** e escolha**Aplicar Recurso**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar o estilo ou modelo padrão de um controle  
- Selecione o controle e, no painel [Propriedades](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), localize a propriedade **Estilo** ou **Modelo**. Em seguida, clique em **Opções avançadas** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") e clique em **Redefinir** no menu de atalho.  
+ Selecione o controle e, no painel [Propriedades](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), localize a propriedade **Estilo** ou **Modelo**. Em seguida, clique em **Opções avançadas** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") e clique em **Redefinir** no menu de atalho.  
   
 ##  <a name="Visual"></a>Estados visuais: Alterar a aparência de um controle com base em seu estado  
  Os controles podem ter aparências diferentes com base nas interações do usuário. Por exemplo, você pode fazer um botão ficar verde quando um usuário clica nele, ou pode executar uma animação. Reduza ou aumente o tempo entre estados visuais usando transições.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Gerenciar o estado de seus controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [gerenciar o estado dos controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
 ##  <a name="Resources"></a>Recursos: Criar cores, estilos e modelos e reutilizá-los posteriormente  
  Converta qualquer coisa em seu projeto em um recurso. Um recurso é apenas um objeto que pode ser reutilizado em locais diferentes de seu aplicativo. Por exemplo, você pode criar uma cor uma vez, torná-la um recurso e, depois, usar essa cor em vários objetos. Para alterar a cor de todos os objetos, basta alterar o recurso de cor.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Um breve resumo sobre recursos](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [um breve resumo sobre recursos](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando uma interface do usuário usando o Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

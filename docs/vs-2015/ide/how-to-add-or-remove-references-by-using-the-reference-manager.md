@@ -1,14 +1,9 @@
 ---
-title: Como adicionar ou remover referências usando o Gerenciador de Referências | Microsoft Docs
-ms.custom: ''
+title: 'Como: Adicionar ou remover referências usando o Gerenciador de referências | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,13 +22,13 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756980"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,16 +154,16 @@ ms.locfileid: "49917526"
   
  Você pode gerar um arquivo WinMD no Visual Studio de duas maneiras:  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projetos gerenciados pelo aplicativo**: os projetos do aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] podem produzir binários WinMD definindo Propriedades do Projeto &#124; Tipo de Saída = Arquivo WinMD. O nome do arquivo WinMD deve ser o namespace do superconjunto de todos os namespaces existentes dentro dele. Por exemplo, se um projeto consiste nos namespaces A.B e A.B.C, os possíveis nomes para o WinMD emitido serão A.winmd e A.B.winmd. Se um usuário entrar em um valor de Propriedade do Projeto &#124; Nome do Assembly ou Propriedades do Projeto &#124; Namespace não contíguo ao conjunto de namespaces no projeto ou se não houver nenhum namespace de superconjunto em um projeto, um aviso de build será gerado: “A.winmd” não é um nome de arquivo .winmd válido para esse assembly. Todos os tipos em um arquivo de metadados do Windows devem existir em um namespace secundário do nome do arquivo. Tipos que não existem em um namespace secundário do nome de arquivo não poderão ser localizados no tempo de execução. Nesse assembly, o menor namespace comum é “CSWSClassLibrary1”. A área de trabalho do Visual Basic ou um projeto do Visual C# só podem consumir WinMDs gerados usando [!INCLUDE[win8](../includes/win8-md.md)] SDKs, conhecidos como primeira parte do WinMDs, e não podem gerar WinMDs.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projetos gerenciados pelo aplicativo**: os projetos do aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] podem produzir binários WinMD definindo Propriedades do Projeto &#124; Tipo de Saída = Arquivo WinMD. O nome do arquivo WinMD deve ser o namespace do superconjunto de todos os namespaces existentes dentro dele. Por exemplo, se um projeto consiste nos namespaces A.B e A.B.C, os possíveis nomes para o WinMD emitido serão A.winmd e A.B.winmd. Se um usuário inserir uma propriedade de projeto &#124; nome do Assembly ou propriedades do projeto &#124; valor de Namespace não contíguo do conjunto de namespaces no projeto ou não há nenhum namespace de superconjunto em um projeto, um aviso de compilação será gerado: 'A. winmd' não é um nome de arquivo. winmd válido para esse assembly. Todos os tipos em um arquivo de metadados do Windows devem existir em um namespace secundário do nome do arquivo. Tipos que não existem em um namespace secundário do nome de arquivo não poderão ser localizados no tempo de execução. Nesse assembly, o menor namespace comum é “CSWSClassLibrary1”. A área de trabalho do Visual Basic ou um projeto do Visual C# só podem consumir WinMDs gerados usando [!INCLUDE[win8](../includes/win8-md.md)] SDKs, conhecidos como primeira parte do WinMDs, e não podem gerar WinMDs.  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projetos nativos do aplicativo**: um arquivo WinMD nativo consiste apenas em metadados. Sua implementação existe em um arquivo separado da DLL. É possível gerar binários nativos escolhendo o modelo de projeto do componente do Tempo de Execução do Windows na caixa de diálogo **Novo Projeto** ou em um projeto em branco e modificando as propriedades do projeto para gerar um arquivo WinMD. Se o projeto consiste em namespaces separados, um erro de compilação dirá ao usuário para combinar os namespaces ou executar a ferramenta MSMerge.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projetos nativos do aplicativo**: Um arquivo WinMD nativo consiste apenas em metadados. Sua implementação existe em um arquivo separado da DLL. É possível gerar binários nativos escolhendo o modelo de projeto do componente do Tempo de Execução do Windows na caixa de diálogo **Novo Projeto** ou em um projeto em branco e modificando as propriedades do projeto para gerar um arquivo WinMD. Se o projeto consiste em namespaces separados, um erro de compilação dirá ao usuário para combinar os namespaces ou executar a ferramenta MSMerge.  
   
   A guia Windows consiste em dois subgrupos.  
   
 ### <a name="core-subgroup"></a>Subgrupo Núcleo  
  O subgrupo Núcleo lista todos os WinMDs (para elementos de Tempo de Execução do Windows) no SDK para a versão de destino do Windows.  
   
- Os projetos de aplicativos [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contêm referências a todos os WinMDs no [!INCLUDE[win8](../includes/win8-md.md)] SDK por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta Referências em **Gerenciador de Soluções** indica a referência a todo o SDK do [!INCLUDE[win8](../includes/win8-md.md)]. Consequentemente, o subgrupo Núcleo no Gerenciador de Referências não enumerará alguns assemblies do [!INCLUDE[win8](../includes/win8-md.md)] SDK e exibirá uma mensagem: “O SDK do já está referenciado. Use o Pesquisador de Objetos para explorar as referências no SDK Windows.”  
+ Os projetos de aplicativos [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contêm referências a todos os WinMDs no [!INCLUDE[win8](../includes/win8-md.md)] SDK por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta Referências em **Gerenciador de Soluções** indica a referência a todo o SDK do [!INCLUDE[win8](../includes/win8-md.md)]. Da mesma forma, o subgrupo núcleo no Gerenciador de referências não enumerará nenhum assembly do [!INCLUDE[win8](../includes/win8-md.md)] SDK e exibirá uma mensagem: "O SDK do Windows já está referenciado. Use o Pesquisador de Objetos para explorar as referências no SDK Windows.”  
   
  Em projetos da área de trabalho, o subgrupo Núcleo não é exibido por padrão. É possível adicionar o Windows Runtime abrindo o menu de atalho do nó do projeto, escolhendo **Descarregar Projeto**, adicionando o snippet a seguir e reabrindo o projeto (no nó do projeto, escolha **Recarregar Projeto**). Ao invocar a caixa de diálogo **Gerenciador de Referências**, o subgrupo Núcleo é exibido.  
   
@@ -221,8 +216,5 @@ ms.locfileid: "49917526"
  A barra de pesquisa na caixa de diálogo **Gerenciador de Referências** opera na guia que está no foco. Por exemplo, se um usuário digitar “Sistema” na barra de pesquisa enquanto a guia **Solução** estiver no foco, a pesquisa não retornará nenhum resultado a menos que a solução consista em um nome de projeto que contém “Sistema”.  
   
 ## <a name="see-also"></a>Consulte também  
- [NIB: como adicionar ou remover referências usando a caixa de diálogo Adicionar Referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [(NIB) Como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)
-
-
-

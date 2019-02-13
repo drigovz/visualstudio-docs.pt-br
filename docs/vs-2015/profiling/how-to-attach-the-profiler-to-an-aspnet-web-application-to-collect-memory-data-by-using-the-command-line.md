@@ -1,25 +1,20 @@
 ---
-title: Como anexar o Criador de perfil a um aplicativo Web ASP .NET para coletar dados de memória usando a linha de comando | Microsoft Docs
-ms.custom: ''
+title: 'Como: Anexar o Profiler para um aplicativo Web ASP.NET para coletar dados de memória usando a linha de comando | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6818c7c23a1ca42fc4537e1024778cd4cab0f177
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783466"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar dados de memória usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +110,7 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
    - Digite **VSPerfCmd** [/detach](../profiling/detach.md)  
 
-      -ou-  
+      - ou -  
 
    - Feche o processo de trabalho [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Tipo:  
 
@@ -136,6 +131,3 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 ## <a name="see-also"></a>Consulte também  
  [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md)
-
-
-

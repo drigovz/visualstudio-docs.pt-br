@@ -1,24 +1,19 @@
 ---
 title: Definir uma propriedade de automação exclusiva para controles da Windows Store para teste | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 25890adaf22d1855426813c35e69766bba02a1c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ed707c1dfa2d756bdf3fa879051795c6ac05eed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833922"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789073"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Definir uma propriedade de automação exclusiva para controles da Windows Store para teste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ Se desejar executar testes de IU codificados no aplicativo da Windows Store base
  Defina o AutomationProperties.AutomationId como **ButtonX** explicitamente no XAML para o controle.  
   
 ```xaml  
-<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
+<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
   
 ```  
   
@@ -133,7 +128,7 @@ Se desejar executar testes de IU codificados no aplicativo da Windows Store base
                         </Setter.Value>  
                     </Setter>  
                 </Style>  
-            </ListBox.ItemContainerStyle>           
+            </ListBox.ItemContainerStyle>           
         </ListBox>  
   
 ```  
@@ -206,7 +201,3 @@ private void CreateCheckBox(string txt, StackPanel panel)
     }  
   
 ```  
-
-
-
-

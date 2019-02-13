@@ -1,25 +1,20 @@
 ---
-title: 'Etapa 1: criar um projeto e adicionar rótulos ao formulário | Microsoft Docs'
-ms.custom: ''
+title: 'Etapa 1: Criar um projeto e adicionar rótulos ao formulário | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6332659307f10b5cf7f4f224c8a99456de03d81a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b29944ac31498710b1d97f75d96d3bc3cbbca696
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786051"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,6 +178,3 @@ Formulário inicial do teste de matemática
 -   Para ir para a próxima etapa do tutorial, consulte [Etapa 2: criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).  
   
 -   Para retornar ao tópico de visão geral, consulte [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
-
-
-

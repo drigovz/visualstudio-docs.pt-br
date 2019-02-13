@@ -1,14 +1,9 @@
 ---
-title: Como criar modelos de projeto | Microsoft Docs
-ms.custom: ''
+title: 'Como: Criar modelos de projeto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785907"
 ---
 # <a name="how-to-create-project-templates"></a>Como criar modelos de projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Este procedimento permite criar um modelo usando o assistente de **Exportação 
   
 2.  Edite o projeto até que ele esteja pronto para ser exportado como um modelo.  
   
-3.  Conforme apropriado, edite os arquivos de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações sobre a substituição de parâmetros, consulte [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).  
+3.  Conforme apropriado, edite os arquivos de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações sobre substituição de parâmetro, consulte [como: Substituir parâmetros em um modelo.](../ide/how-to-substitute-parameters-in-a-template.md)  
   
 4.  No menu **Arquivo**, clique em **Exportar Modelo**. O assistente de **Exportação de Modelo** é aberto.  
   
@@ -64,6 +59,3 @@ Este procedimento permite criar um modelo usando o assistente de **Exportação 
 ## <a name="see-also"></a>Consulte também  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
  [Como criar modelos de item](../ide/how-to-create-item-templates.md)
-
-
-

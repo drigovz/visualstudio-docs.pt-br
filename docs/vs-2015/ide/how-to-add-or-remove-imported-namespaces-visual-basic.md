@@ -1,14 +1,9 @@
 ---
-title: Como adicionar ou remover namespaces importados (Visual Basic) | Microsoft Docs
-ms.custom: ''
+title: 'Como: Adicionar ou remover Namespaces importados (Visual Basic) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
 - removing imported namespaces
@@ -19,13 +14,13 @@ ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c24f9cec4a599a8131ad41cdadb6d00946921922
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798953"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como adicionar ou remover namespaces importados (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Importar um namespace permite que você use elementos deste namespace em seu có
 3.  Na lista **Namespaces Importados**, marque a caixa de seleção do namespace que você deseja adicionar.  
   
     > [!NOTE]
-    >  Para ser importado, o namespace deve estar em um componente referenciado. Se o namespace não aparecer na lista, você precisará adicionar uma referência ao componente que o contém. Para obter mais informações, consulte [NIB: Como adicionar ou remover referências usando a caixa de diálogo Adicionar Referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    >  Para ser importado, o namespace deve estar em um componente referenciado. Se o namespace não aparecer na lista, você precisará adicionar uma referência ao componente que o contém. Para obter mais informações, consulte [NIB como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Para remover um namespace importado  
   
@@ -85,6 +80,3 @@ Importar um namespace permite que você use elementos deste namespace em seu có
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)
-
-
-

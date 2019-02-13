@@ -1,25 +1,20 @@
 ---
 title: 'Etapa 3: Atribuir um ícone aleatório a cada rótulo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8ce8047cbdf6d487a1b4ff00ae99c617a9548fca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 993f6533a5d654ab183fdee587f4968d7bff8c4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799661"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Etapa 3: Atribuir um ícone aleatório a cada rótulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito d
   
      A primeira linha converte a variável `control` em um rótulo denominado `iconLabel`. A linha que vem a seguir está uma instrução `if` que verifica se a conversão funcionou. Se a conversão realmente funcionar, as instruções na instrução `if` serão executadas. (Como talvez você se lembre dos tutoriais anteriores, a instrução `if` é usada para avaliar qualquer condição especificada.) A primeira linha na instrução `if` cria uma variável denominada `randomNumber` que contém um número aleatório que corresponde a um dos itens na lista de ícones. Para fazer isso, ela usa o método `Next` do objeto `Random` que você criou anteriormente. O método `Next` retorna o número aleatório. Essa linha também usa a propriedade `Count` da lista `icons` para determinar o intervalo do qual escolher o número aleatório. A próxima linha atribui um dos itens da lista de ícones à propriedade `Text` do rótulo. A linha comentada é explicada mais adiante neste tópico. Por fim, a última linha na instrução `if` remove da lista o ícone que foi adicionado ao formulário.  
   
-     Lembre-se de que se você não tiver certeza da função de alguma parte do código, será possível posicionar o ponteiro do mouse sobre um elemento do código e analisar a dica de ferramenta resultante. Você também pode percorrer cada linha do código enquanto o programa estiver em execução usando o depurador do Visual Studio. Consulte [Como executar em etapas com o depurador do Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx) ou [Navegando no código com o depurador](../debugger/navigating-through-code-with-the-debugger.md) para obter mais informações.  
+     Lembre-se de que se você não tiver certeza da função de alguma parte do código, será possível posicionar o ponteiro do mouse sobre um elemento do código e analisar a dica de ferramenta resultante. Você também pode percorrer cada linha do código enquanto o programa estiver em execução usando o depurador do Visual Studio. Confira [Como fazer: Etapa com o depurador do Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) ou [navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md) para obter mais informações.  
   
 3.  Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se estiver usando o Visual C#, adicione uma instrução logo abaixo da chamada ao método `InitializeComponent()` no `Form1`*construtor*, de modo que o formulário chame o novo método para configurar a si mesmo antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Consulte [Construtores (Guia de programação do C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Usando construtores e destruidores](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) no Visual Basic para obter mais informações.  
   
@@ -90,6 +85,3 @@ Jogo da memória com ícones aleatórios
 -   Para ir para a próxima etapa do tutorial, consulte [Etapa 4: adicionar um manipulador de eventos de clique a cada rótulo](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
   
 -   Para retornar à etapa anterior do tutorial, consulte [Etapa 2: adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
-
-
-

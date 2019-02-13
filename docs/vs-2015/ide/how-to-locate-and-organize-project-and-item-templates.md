@@ -1,14 +1,9 @@
 ---
-title: Como localizar e organizar modelos de projeto e de item | Microsoft Docs
-ms.custom: ''
+title: 'Como: Localizar e organizar projeto e modelos de Item | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778520"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como localizar e organizar projeto e modelos de item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,6 +178,3 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
  [NumberOfParentCategoriesToRollUp (modelos do Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)   
  [Como criar modelos de item](../ide/how-to-create-item-templates.md)
-
-
-

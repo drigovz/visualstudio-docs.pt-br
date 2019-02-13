@@ -1,25 +1,20 @@
 ---
-title: Como exportar uma textura para uso com aplicativos Direct2D ou Javascipt | Microsoft Docs
-ms.custom: ''
+title: 'Como: Exportar uma textura para uso com Direct2D ou Javascipt | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e2b08760e567f6e000e191703695ee0703da7215
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d5858df00057298f961189173a3943f3e23d2b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781474"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Como exportar uma textura para uso com aplicativos Direct2D ou Javascipt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +66,3 @@ O Pipeline de conteúdo de imagem pode gerar texturas que são compatíveis com 
 6. Escolha o botão **OK**.  
   
    Quando você compila o projeto, o Pipeline de conteúdo de imagem converte a imagem de origem do formato de trabalho para o formato de saída que você especificou, a conversão inclui o formato alfa pré-multiplicado e o resultado é copiado para o diretório de saída do projeto.
-
-
-

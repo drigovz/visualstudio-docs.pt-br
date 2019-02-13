@@ -16,7 +16,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54777297"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como visualizar e editar códigos usando a janela Inspecionar definição (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o comando **Inspecionar Definição** para exibir e editar código sem abandonar o código que está escrevendo. **Inspecionar Definição** e **Ir Para Definição** mostram as mesmas informações, mas **Inspecionar Definição** faz a exibição em uma janela pop-up e **Ir Para Definição** mostra o código em uma janela de código separada. **Ir Para Definição** faz com que seu contexto (ou seja, a janela de código ativo, a linha atual e a posição do cursor) mude para a janela de código de definição. Usando **Inspecionar Definição**, você pode exibir e editar a definição e mover ao redor no arquivo de definição para manter seu local no arquivo original do código.  

@@ -2,18 +2,18 @@
 title: Atualizando testes de IU codificado
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 664eeb618b92b7d3181a223a531aac02e046ab0f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055044"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803621"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Atualizando testes de IU codificados a partir do Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
 -   Visual Studio Enterprise
 
 > [!NOTE]
->  O Visual Studio inclui mais de um tipo de projeto de teste. Se você criar um novo teste de IU codificado, ele será criado em um tipo de projeto de teste de IU codificado. Para saber mais, consulte [Atualizar testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+>  O Visual Studio inclui mais de um tipo de projeto de teste. Se você criar um novo teste de IU codificado, ele será criado em um tipo de projeto de teste de IU codificado. Para saber mais, consulte [Atualizar testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 >  Projetos de teste do [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que contêm testes de IU codificados devem ser recriados ao abri-los no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] lado a lado com [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
@@ -57,11 +57,11 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
 
   A atualização também contém correções para os seguintes problemas:
 
-- **Cobertura de código** Impossibilidade de abrir um arquivo de cobertura de código (. Coverage) criado pelo Visual Studio 2012 no [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
+- **Cobertura de código:** impossibilidade de abrir um arquivo de cobertura de código (.coverage) criado pelo Visual Studio 2012 no [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
 
-- **Artefatos de teste presas:** Sua equipe tem um artefato de teste que é atribuído a um usuário inválido no Team Foundation Server (TFS) 2010. Por exemplo, um usuário saiu da empresa, mas ainda tem um caso de teste atribuído a ele. Atualize o TFS 2010 para TFS 2012. Você usa o [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 para se conectar ao servidor TFS atualizado. Não é possível atribuir o artefato de teste a qualquer usuário do TFS usando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
+- **Artefatos de teste presos:** sua equipe tem um artefato de teste que é atribuído a um usuário inválido no Team Foundation Server (TFS) 2010. Por exemplo, um usuário saiu da empresa, mas ainda tem um caso de teste atribuído a ele. Atualize o TFS 2010 para TFS 2012. Você usa o [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 para se conectar ao servidor TFS atualizado. Não é possível atribuir o artefato de teste a qualquer usuário do TFS usando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
 
-- teste de carga Quando você executar um teste de carga junto com um tipo de rede que não sejam o perfil de rede local (LAN) em um computador Isso é executando o Windows 8, o driver do emulador de rede faz com que o sistema operacional falhe. Para obter mais detalhes, consulte o [Artigo KB 2736182](http://support.microsoft.com/kb/2736182).
+- **Teste de carga:** quando você executa um teste de carga junto com um tipo de rede que não é o perfil de rede local (LAN) em um computador com o Windows 8, o driver do emulador de rede faz com que o sistema operacional falhe. Para obter mais detalhes, consulte o [Artigo KB 2736182](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Consulte também
- [Portando, migrando e Atualizando projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [atualizando testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [gerando um Teste de uma gravação de ação existente de IU codificado](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configurações e plataformas com suporte para testes de IU codificados e gravações da ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Portando, migrando e Atualizando projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [atualizando testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [gerando um Teste de uma gravação de ação existente de IU codificado](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configurações e plataformas com suporte para testes de IU codificados e gravações da ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

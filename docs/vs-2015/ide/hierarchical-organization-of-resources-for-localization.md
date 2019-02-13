@@ -1,14 +1,9 @@
 ---
 title: Organização hierárquica de recursos para localização | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - resource files, localized
 - localization [Visual Studio], resources
@@ -23,13 +18,13 @@ ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 11eeaa2c6742675372acf8b96280737f556c7799
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797054"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organização hierárquica de recursos para localização
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,5 @@ No Visual Studio, os recursos localizados (dados como cadeias de caracteres e im
  [Security and Localized Satellite Assemblies](../ide/security-and-localized-satellite-assemblies.md)  (Assemblies satélite de segurança e localizados)  
  [Localizando aplicativos](../ide/localizing-applications.md)   
  [Globalizando e localizando aplicativos](../ide/globalizing-and-localizing-applications.md)   
- [How to: Set the Culture and UI Culture for Windows Forms Globalization](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)  (Como definir a cultura e a cultura da interface do usuário para globalização do Windows Forms)  
+ [Como: Definir a cultura e cultura da interface do usuário para globalização dos Windows Forms](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
  [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0) (Como definir a cultura e a cultura da interface do usuário para globalização de página da Web do ASP.NET)
-
