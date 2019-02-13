@@ -8,20 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0531d016b2ddcc90348dcbfd2ef80525ac400e5b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df9faeae70ac29562b7fa50f3d472e83299bfb62
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039807"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155624"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visão geral das ferramentas para medir o desempenho no Visual Studio
 
 Ferramentas de diagnóstico e criação de perfil ajudam você a diagnosticar o uso de memória e de CPU, além de outros problemas no aplicativo. Com essas ferramentas, você acumula dados (como valores de variáveis, chamadas de função e eventos) ao longo de um período, como o período em que você executa seu aplicativo. Você pode exibir o estado do seu aplicativo em pontos diferentes durante a execução do código ou pode executar uma análise post-mortem do desempenho do aplicativo.
-
-| | |
-|---------|---------|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre como usar as ferramentas de diagnóstico que mostra como analisar o uso da CPU e como analisar o uso de memória. |
 
 ## <a name="next-steps"></a>Próximas etapas
 

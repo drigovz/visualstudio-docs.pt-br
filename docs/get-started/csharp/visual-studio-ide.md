@@ -1,7 +1,6 @@
 ---
 title: Visão geral para desenvolvedores em C#
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
@@ -12,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f1b1ccaaeb8f51e662c85b7894f9f752dba9c2a8
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484167"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155988"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bem-vindo ao IDE do Visual Studio | C#
 
@@ -305,4 +304,3 @@ Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutór
 - Descubra [mais recursos do Visual Studio](../../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Leia [The Visual Studio blog](https://blogs.msdn.microsoft.com/visualstudio/) (O blog do Visual Studio)
-- Confira os cursos gratuitos do Visual Studio em [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)

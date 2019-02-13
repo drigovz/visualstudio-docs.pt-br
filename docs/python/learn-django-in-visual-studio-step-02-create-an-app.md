@@ -3,7 +3,6 @@ title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 2, modos de exib
 titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, mostrando especificamente as etapas para criar um aplicativo e usar modos de exibição e modelos.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 696bb664cb7dd63e6b6964fca5d999652723d240
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571181"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955655"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Django com modos de exibição e modelos de página
 

@@ -1,7 +1,6 @@
 ---
 title: Página Minhas Extensões, Designer de Projeto (Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesMyExtensions
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 654e96948d738deae78781dacd16b327aac1a141
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027900"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923233"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Página Minhas Extensões, Designer de Projeto (Visual Basic)
 Use a página **Minhas Extensões** do **Designer de Projeto** para gerenciar `My` extensões do namespace em seu projeto. Extensões do namespace `My` permitem personalizar o namespace `My` para adicionar seus próprios membros personalizados. Para obter informações sobre a criação de extensões personalizadas do namespace `My`, consulte [Estendendo Meu Namespace no Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
