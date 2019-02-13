@@ -1,25 +1,20 @@
 ---
 title: 'Etapa 6: nomear os controles de botão | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e02c240f8e4146ce1c87fd1d90c30eb7787cef5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a65eb289cf42ba7b9a9bd7d0ad2cfdc1b630a131
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796823"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,6 +80,3 @@ Guia Form1.cs com código do Visual c#
 -   Para ir para a próxima etapa do tutorial, consulte [Etapa 7: adicionar componentes de diálogo ao formulário](../ide/step-7-add-dialog-components-to-your-form.md).  
   
 -   Para retornar à etapa anterior do tutorial, consulte [Etapa 5: adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
-
-
-
