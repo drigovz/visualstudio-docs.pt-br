@@ -3,7 +3,6 @@ title: 'Tutorial: aplicativo Olá, Mundo com o Windows Presentation Foundation (
 description: Crie um aplicativo .NET de Área de Trabalho do Windows simples no Visual Basic com o Visual Studio usando a estrutura de interface do usuário do Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
 ms.date: 10/03/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 848fe369083b4dd01ee0ee1b541ab7228ee338f8
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 0eb1f0e404bf6815bc26e3c1a14aeff79cde40e8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483920"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945372"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: como criar um aplicativo simples com o Visual Basic
 
