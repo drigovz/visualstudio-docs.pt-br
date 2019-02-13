@@ -6,15 +6,14 @@ ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd5a496ea53bf7958385e6d8fdf106c9bf45afb3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4105a93d4ad459c8bc1cb3a7a20b37c69f311c12
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043603"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931631"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Ferramentas do LINQ to SQL no Visual Studio
 
@@ -49,7 +48,7 @@ Depois de adicionar um **Classes LINQ to SQL** item a um projeto e abrir os **Re
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Criar classes de entidade que são mapeados para tabelas de banco de dados e exibições
 
-Você pode criar classes de entidade mapeadas para tabelas e exibições arrastando tabelas de banco de dados e exibições da **Gerenciador de servidores** ou **Database Explorer** até o **Relational Designer**. Conforme indicado na seção anterior, o <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Se um item subsequente que usa uma conexão diferente é adicionado para o **Relational Designer**, você pode alterar a conexão para o <xref:System.Data.Linq.DataContext>. Para obter mais informações, confira [Como: Criar classes LINQ to SQL mapeadas para tabelas e exibições (Designer Relacional de Objetos)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Você pode criar classes de entidade mapeadas para tabelas e exibições arrastando tabelas de banco de dados e exibições da **Gerenciador de servidores** ou **Database Explorer** até o **Relational Designer**. Conforme indicado na seção anterior, o <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Se um item subsequente que usa uma conexão diferente é adicionado para o **Relational Designer**, você pode alterar a conexão para o <xref:System.Data.Linq.DataContext>. Para obter mais informações, consulte [como: criar classes LINQ to SQL mapeadas para tabelas e exibições (Designer relacional de objetos)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Criar métodos DataContext que chamam procedimentos armazenados e funções
 
@@ -60,15 +59,15 @@ Você pode criar <xref:System.Data.Linq.DataContext> métodos que chamam (são m
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurar um DataContext para usar procedimentos armazenados para salvar os dados entre as classes de entidade e um banco de dados
 
-Conforme observado anteriormente, você pode criar os métodos de <xref:System.Data.Linq.DataContext> que chamam procedimentos armazenados e funções. Além disso, você também pode atribuir procedimentos armazenados que são usados para o padrão LINQ para o comportamento de tempo de execução SQL, que executa inserções, atualizações e exclusões. Para obter mais informações, confira [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Conforme observado anteriormente, você pode criar os métodos de <xref:System.Data.Linq.DataContext> que chamam procedimentos armazenados e funções. Além disso, você também pode atribuir procedimentos armazenados que são usados para o padrão LINQ para o comportamento de tempo de execução SQL, que executa inserções, atualizações e exclusões. Para obter mais informações, consulte [como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer relacional de objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Herança e Designer Relacional de Objetos
 
-Como outros objetos, classes LINQ to SQL pode usar a herança e ser derivado de outras classes. Em uma base de dados, as relações de herança são criadas de várias maneiras. O **Relational Designer** suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Para obter mais informações, confira [Como: Configurar a herança usando o Designer Relacional de Objetos](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
+Como outros objetos, classes LINQ to SQL pode usar a herança e ser derivado de outras classes. Em uma base de dados, as relações de herança são criadas de várias maneiras. O **Relational Designer** suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Para obter mais informações, consulte [como: configurar a herança usando o Designer relacional de objetos](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Consultas do LINQ to SQL
 
-As classes de entidade criadas pelo **Relational Designer** são projetados para uso com [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Para obter mais informações, confira [Como: Consultar informações](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+As classes de entidade criadas pelo **Relational Designer** são projetados para uso com [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Para obter mais informações, consulte [como: consultar informações](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Separar o código da classe DataContext e de entidade gerado em namespaces diferentes
 

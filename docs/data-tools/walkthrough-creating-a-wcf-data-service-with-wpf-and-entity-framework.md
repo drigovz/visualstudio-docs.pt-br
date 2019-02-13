@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um WCF Data Service com o WPF e o Entity Framework'
+title: 'Passo a passo: criando um Serviço de Dados WCF com WPF e Entity Framework'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,16 @@ ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c69b032e01d98030f75273b4ca48714530ddf38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7129b6056f2c8e35e277b548c048d7bd994afa9b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935158"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915841"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: Criando um WCF Data Service com o WPF e o Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: criando um Serviço de Dados WCF com WPF e Entity Framework
 Este passo a passo demonstra como criar um [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] simples que é hospedado em um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e como acessá-lo de um aplicativo do Windows Forms.
 
 Neste passo a passo você:
@@ -290,4 +289,4 @@ A próxima etapa opcional, você aprenderá como filtrar os dados que são retor
 ## <a name="see-also"></a>Consulte também
 
 - [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Como: Adicionar, atualizar ou remover uma referência do WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Como adicionar, atualizar ou remover uma referência de WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

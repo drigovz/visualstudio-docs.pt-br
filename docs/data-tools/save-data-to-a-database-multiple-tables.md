@@ -14,15 +14,14 @@ ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c291f9437cab79ca1030bdde3d5d3df86547a87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952308"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936610"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 
@@ -78,7 +77,7 @@ A primeira etapa é criar uma **aplicativo do Windows Forms**. Atribuir um nome 
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
 
-Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usando o **Assistente de Configuração de Fonte de Dados**. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: Instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usando o **Assistente de Configuração de Fonte de Dados**. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Sobre o **dados** menu, selecione **Show Data Sources**.
 

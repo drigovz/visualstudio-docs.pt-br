@@ -1,7 +1,6 @@
 ---
 title: 'Passo a passo: Para criar um snippet de código'
 ms.date: 10/27/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 27c8237b04b2c4c903d971b1035558b77d4bf2d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8944117c7d4e47f36f504f9677074ad4f86e33de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937594"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949051"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Para criar um snippet de código
 Você pode criar um snippet de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Adicione o snippet à instalação do Visual Studio usando o botão **Importar** no **Gerenciador de Snippets de Código** (**Ferramentas** > **Gerenciador de Snippets de Código**).

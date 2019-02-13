@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um aplicativo de dados de N camadas'
+title: 'Instruções passo a passo: criando um aplicativo de dados de N camadas'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,14 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c3ee28514af9db5b0a03ce8b9805ef773c649a42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993151"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933009"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Passo a passo: Criar um aplicativo de dados de n camadas
 Os aplicativos de dados de *N camadas* são aplicativos que acessam dados e são separados em várias *camadas* lógicas. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral dos aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).
@@ -105,7 +104,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
  A próxima etapa é criar um conjunto de dados tipado. Conjuntos de dados tipados são criados com a classe de conjunto de dados (incluindo `DataTables` classes) e o `TableAdapter` classes em um único projeto. (Todas as classes são geradas em um único arquivo.) Quando você separar o conjunto de dados e TableAdapters em diferentes projetos, é a classe de conjunto de dados é movida para outro projeto, deixando o `TableAdapter` classes no projeto original. Portanto, crie o conjunto de dados no projeto que conterá, por fim, os TableAdapters (no projeto DataAccessTier). Criar o conjunto de dados usando o **Data Source Configuration Wizard**.
 
 > [!NOTE]
-> É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: Instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+> É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Para criar o conjunto de dados
 
@@ -155,7 +154,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 5. No menu **Build**, selecione **Compilar Solução**.
 
-   O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (`DataAccessTier`) agora contém somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (`DataEntityTier`) contém o conjunto de dados tipado: *NorthwindDataSet* (ou *NorthwindDataSet.Dataset.Designer.cs*).
+   O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (`DataAccessTier`) agora contém somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (`DataEntityTier`) contém o conjunto de dados tipado: *NorthwindDataSet* (ou  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados**), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto do conjunto de dados.

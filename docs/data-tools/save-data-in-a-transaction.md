@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Salvando dados em uma transação'
+title: 'Passo a passo: salvar dados em uma transação'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b06e433c5c412ba97d0cd04c670a39cc4bb7ec8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc2626ba0efab60921ed721b9f06fec28c66f58b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946068"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932268"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: Salvando dados em uma transação
+# <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: salvar dados em uma transação
 
 Este passo a passo demonstra como salvar dados em uma transação usando o <xref:System.Transactions> namespace. Neste passo a passo, você criará um aplicativo do Windows Forms. Você usará o Assistente de configuração de fonte de dados para criar um conjunto de dados de duas tabelas no banco de dados de exemplo Northwind. Você adicionará controles ligados a dados a um formulário do Windows, e você modificará o código para do BindingNavigator botão Salvar atualizar o banco de dados dentro de um TransactionScope.
 

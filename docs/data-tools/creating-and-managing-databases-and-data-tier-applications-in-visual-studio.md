@@ -8,15 +8,14 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: bde98c7acb8c4f5c2b8b2cee4fd1c442438da540
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940967"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924637"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Projetos de banco de dados e aplicativos da camada de dados
 
@@ -28,9 +27,9 @@ Para obter uma lista dos recursos de banco de dados que são compatíveis com ap
 
 | Tarefas de alto nível | Conteúdo de suporte |
 | - | - |
-| **Inicie o desenvolvimento de um aplicativo da camada de dados:** O conceito de um aplicativo da camada de dados (DAC) foi introduzido com o SQL Server 2008. Um DAC contém a definição de um banco de dados do SQL Server e os objetos de instância de suporte que são usados por um aplicativo de 3 camadas ou cliente-servidor. Um DAC inclui objetos de banco de dados, como tabelas e exibições, junto com as entidades de instância, como logons. Você pode usar o Visual Studio para criar um projeto de DAC, crie um arquivo de pacote DAC e envie o arquivo de pacote DAC para um administrador de banco de dados para a implantação em uma instância do mecanismo de banco de dados do SQL Server. | - [Aplicativos da Camada de Dados](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Realizar o desenvolvimento iterativo do banco de dados:** Os desenvolvedores podem fazer check-out de partes do projeto e atualizá-los em um ambiente de desenvolvimento isolado. Ao usar esse tipo de ambiente, você pode testar suas alterações sem afetar outros membros da equipe. Depois que as alterações forem concluídas, você verificar os arquivos de volta para o controle de versão, onde outros membros da equipe podem obter as alterações e compilar e implantá-los em um servidor de teste. | - [Desenvolvimento de banco de dados offline orientado a projetos (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Depurador Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Criação de protótipos, verificando resultados de teste e modificar os scripts de banco de dados e objetos:** Você pode usar o editor Transact-SQL para executar qualquer uma dessas tarefas comuns. | - [Editores de consulta e texto (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Iniciar o desenvolvimento de um aplicativo da camada de dados:** o conceito de um aplicativo da camada de dados (DAC) foi introduzido com o SQL Server 2008. Um DAC contém a definição de um banco de dados do SQL Server e os objetos de instância de suporte que são usados por um aplicativo de 3 camadas ou cliente-servidor. Um DAC inclui objetos de banco de dados, como tabelas e exibições, junto com as entidades de instância, como logons. Você pode usar o Visual Studio para criar um projeto de DAC, crie um arquivo de pacote DAC e envie o arquivo de pacote DAC para um administrador de banco de dados para a implantação em uma instância do mecanismo de banco de dados do SQL Server. | - [Aplicativos da Camada de Dados](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Execução de desenvolvimento iterativo do banco de dados:** os desenvolvedores podem fazer check-out de partes do projeto e atualizá-los em um ambiente de desenvolvimento isolado. Ao usar esse tipo de ambiente, você pode testar suas alterações sem afetar outros membros da equipe. Depois que as alterações forem concluídas, você verificar os arquivos de volta para o controle de versão, onde outros membros da equipe podem obter as alterações e compilar e implantá-los em um servidor de teste. | - [Desenvolvimento de banco de dados offline orientado a projetos (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Depurador Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Criação de protótipos, verificando resultados de teste e modificar os scripts de banco de dados e objetos:** você pode usar o editor Transact-SQL para executar qualquer uma dessas tarefas comuns. | - [Editores de consulta e texto (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Consulte também
 

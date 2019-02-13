@@ -18,43 +18,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9b9f5a708abacecaf90a7de1d2a3e9ee231579
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016246"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927731"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Tarefa MergeLocalizationDirectives
-A tarefa <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> mescla os atributos de localização e comentários de um ou mais [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] arquivos de formato binário em um único arquivo para todo o assembly.  
-  
-## <a name="task-parameters"></a>Parâmetros de tarefa  
-  
+A tarefa <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> mescla os atributos de localização e comentários de um ou mais [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] arquivos de formato binário em um único arquivo para todo o assembly.
+
+## <a name="task-parameters"></a>Parâmetros de tarefa
+
 | Parâmetro | Descrição |
 |------------------------------| - |
 | `GeneratedLocalizationFiles` | Parâmetro obrigatório **ITaskItem[]**.<br /><br /> Especifica a lista de arquivos de diretivas de localização de arquivos individuais no formato binário [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
 | `OutputFile` | Parâmetro de saída da **cadeia de caracteres** necessário.<br /><br /> Especifica o caminho de saída do assembly de diretivas de localização compilado. |
-  
-## <a name="remarks"></a>Comentários  
- Você pode adicionar atributos de localização e comentários no conteúdo [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Com o suporte à localização do [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)], você pode retirar os atributos de localização e os comentários colocá-los em um arquivo *.loc* separado do assembly gerado. Você pode fazer isso usando o atributo **LocalizationPropertyStorage**. Para obter mais informações sobre atributos de localização e comentários, bem como sobre **LocalizationPropertyStorage**, confira [Atributos de localização e comentários](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mescla os comentários de localização de vários arquivos de formato binário [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] em um único arquivo *.loc*.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  <UsingTask   
-    TaskName="Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives"   
-    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />  
-  <Target Name="MergeLocalizationDirectivesTask">  
-    <MergeLocalizationDirectives   
-      GeneratedLocalizationFiles="obj\debug\page1.loc;obj\debug\page2.loc;obj\debug\page3.loc"  
-      OutputFile="obj\debug\WPFMSBuildSample.loc" />  
-  </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
+
+## <a name="remarks"></a>Comentários
+Você pode adicionar atributos de localização e comentários no conteúdo [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Com o suporte à localização do [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)], você pode retirar os atributos de localização e os comentários colocá-los em um arquivo *.loc* separado do assembly gerado. Você pode fazer isso usando o atributo **LocalizationPropertyStorage**. Para obter mais informações sobre atributos de localização e comentários, bem como sobre **LocalizationPropertyStorage**, confira [Atributos de localização e comentários](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+
+## <a name="example"></a>Exemplo
+O exemplo a seguir mescla os comentários de localização de vários arquivos de formato binário [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] em um único arquivo *.loc*.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives"
+    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
+  <Target Name="MergeLocalizationDirectivesTask">
+    <MergeLocalizationDirectives
+      GeneratedLocalizationFiles="obj\debug\page1.loc;obj\debug\page2.loc;obj\debug\page3.loc"
+      OutputFile="obj\debug\WPFMSBuildSample.loc" />
+  </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Consulte também
 [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
 [Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
 [Referência do MSBuild](../msbuild/msbuild-reference.md)  

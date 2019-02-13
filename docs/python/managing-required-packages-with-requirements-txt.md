@@ -2,7 +2,6 @@
 title: Gerenciar as dependências do pacote com um arquivo requirements.txt
 description: Um arquivo requirements.txt descreve as dependências de um projeto. Se você receber um projeto que contém um arquivo requirements.txt, você pode instalar facilmente essas dependências em uma única etapa.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4979ea79a63c8d0618e9106a62cf85d03d7c26cf
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231669"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924338"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerenciar os pacotes necessários com requirements.txt
 
