@@ -35,7 +35,7 @@ Para obter informações sobre os esquemas subjacentes para a definição de ser
 
 ### <a name="service-configuration"></a>Configuração de Serviço
 
-Seleciona qual arquivo do `ServiceConfiguration.*.cscfg` é afetado pelas alterações. Por padrão, há variantes de Local e Nuvem, e você pode usar o comando **Manage...**  para copiar, renomear e remover os arquivos de configuração. Esses arquivos são adicionados ao seu projeto de serviço de nuvem e aparecem no **Gerenciador de Soluções**. No entanto, renomear ou remover configurações pode ser feito somente por este controle.
+Seleciona qual arquivo do `ServiceConfiguration.*.cscfg` é afetado pelas alterações. Por padrão, há variantes de Local e Nuvem, e você pode usar o comando **Manage...** para copiar, renomear e remover os arquivos de configuração. Esses arquivos são adicionados ao seu projeto de serviço de nuvem e aparecem no **Gerenciador de Soluções**. No entanto, renomear ou remover configurações pode ser feito somente por este controle.
 
 ### <a name="instances"></a>Instâncias
 
@@ -70,7 +70,7 @@ Você pode definir a cadeia de conexão para usar o armazenamento local conforme
 
 Para criar uma cadeia de conexão, selecione **Adicionar Configuração** e defina **Tipo** como "Cadeia de Conexão".
 
-Para cadeias de conexão novas ou existentes, selecione **...** * à direita do campo **Valor** para abrir a caixa de diálogo **Criar Cadeia de Conexão de Armazenamento**:
+Para cadeias de conexão novas ou existentes, selecione **...*** à direita do campo **Valor** para abrir a caixa de diálogo **Criar Cadeia de Conexão de Armazenamento**:
 
 1. Em **Conectar usando**, escolha a opção **Sua assinatura** para selecionar uma conta de armazenamento de uma assinatura. O Visual Studio, em seguida, obtém as credenciais da conta de armazenamento automaticamente do arquivo `.publishsettings`.
 1. Selecionar **Credenciais inseridas manualmente** permite que você especifique o nome da conta e a chave diretamente usando as informações do Portal do Azure. Para copiar a chave de conta:

@@ -4,18 +4,17 @@ description: Navegando e gerenciando recursos de armazenamento com o Gerenciador
 author: ghogen
 manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 97c6bea6fbdb676e33be1bfc9aa40ebbfe9eac85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f4cfa0abb9a6b61bdb5c27d3dd4243250162aa37
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139044"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947413"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procurar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
 
@@ -280,7 +279,7 @@ A nova conta de armazenamento aparece na lista **Armazenamento** no Gerenciador 
 
 ### <a name="to-view-the-secondary-endpoints"></a>Para exibir os pontos de extremidade secundários
 
-Se você criou uma conta de armazenamento usando a opção de replicação **Redundância Geográfica com Acesso de Leitura**, poderá exibir os pontos de extremidade secundários dela abrindo o menu de atalho do nome da conta e, em seguida, selecionando  **Propriedades**.
+Se você criou uma conta de armazenamento usando a opção de replicação **Redundância Geográfica com Acesso de Leitura**, poderá exibir os pontos de extremidade secundários dela abrindo o menu de atalho do nome da conta e, em seguida, selecionando **Propriedades**.
 
 ![Pontos de extremidade de armazenamento secundários](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 
