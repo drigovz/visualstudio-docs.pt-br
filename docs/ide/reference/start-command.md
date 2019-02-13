@@ -1,7 +1,6 @@
 ---
 title: Comando Iniciar
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.start
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0307bc8fef348aa408bf6d4fad53759df61806fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962817"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912555"
 ---
 # <a name="start-command"></a>Comando Iniciar
 Inicia a depuração do projeto de inicialização.

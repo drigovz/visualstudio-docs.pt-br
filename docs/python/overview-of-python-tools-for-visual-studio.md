@@ -3,7 +3,6 @@ title: Suporte do Python no Visual Studio no Windows
 titleSuffix: ''
 description: Resumo dos recursos do Python no Visual Studio, que fazem dele o melhor IDE do Python no Windows (também conhecido como PTVS, Ferramentas Python para Visual Studio).
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 39d11b1b3bc17cd8a7329fd6f4c1a8010f461438
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232059"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155832"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
@@ -30,7 +29,7 @@ No momento, o Python não tem suporte no Visual Studio para Mac, mas está dispo
 Para começar:
 
 - Siga as [instruções de instalação](installing-python-support-in-visual-studio.md) para configurar a carga de trabalho Python.
-- Familiarize-se com os recursos do Python no Visual Studio examinando as seções neste artigo. Você também pode [Assistir a uma série de vídeos (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) para obter uma introdução ao Python no Visual Studio (total de 22 minutos).
+- Familiarize-se com os recursos do Python no Visual Studio examinando as seções neste artigo.
 - Realize ou mais Guias de Início Rápido para criar um projeto. Se você não tiver certeza, comece com [Criar um aplicativo Web com o Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - Siga o tutorial [Trabalhar com o Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) para ter uma experiência completa de ponta a ponta.
 
@@ -44,9 +43,8 @@ Use o comando **Abrir janela interativa** para executar o Python de maneira inte
 
 Para saber mais:
 
-- Vídeo (2min35s): [Gerenciar ambientes do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Documentação: [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
-- Documentação: [Referência aos Ambientes do Python](python-environments-window-tab-reference.md)
+- [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
+- [Referência aos Ambientes do Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edição avançada, IntelliSense e compreensão do código
 
@@ -56,7 +54,6 @@ O Visual Studio oferece um editor de Python de primeira classe, incluindo colora
 
 Para saber mais:
 
-- Vídeo (2min30s): [Editar o código Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Documentação: [Editar o código Python](editing-python-code-in-visual-studio.md)
 - Documentação: [Formatar código](formatting-python-code.md)
 - Documentação: [Refatorar o código](refactoring-python-code.md)
@@ -75,9 +72,8 @@ O Visual Studio também é compatível com IPython/Jupyter no REPL, incluindo gr
 
 Para saber mais:
 
-- Vídeo (2min22s): [Janela Interativa do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Documentação: [Janela Interativa](python-interactive-repl-in-visual-studio.md)
-- Documentação: [IPython no Visual Studio](interactive-repl-ipython.md)
+- [Janela Interativa](python-interactive-repl-in-visual-studio.md)
+- [IPython no Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Sistema de projeto e modelos de projeto e de item
 
@@ -106,7 +102,6 @@ Um dos pontos fortes do Visual Studio é seu depurador avançado. Para Python es
 
 Para saber mais:
 
-- Vídeo: [Depurando o Python, 3min32s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
 - Documentação: [Depurar o Python](debugging-python-in-visual-studio.md)
 - Documentação: [Depuração de modo misto do Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Documentação: [Depuração remota no Linux](debugging-python-code-on-remote-linux-machines.md)
@@ -120,7 +115,6 @@ A criação de perfil explora como o tempo está sendo gasto no aplicativo. O Vi
 
 Para saber mais:
 
-- Vídeo: [Criação de perfil do Python, 3min00s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - Documentação: [Ferramentas de criação de perfil do Python](profiling-python-code-in-visual-studio.md)
 - Documentação de funcionalidades gerais do Visual Studio: [Tour de funcionalidades de criação de perfil](../profiling/profiling-feature-tour.md). (Nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para Python).
 
@@ -132,7 +126,6 @@ Descubra, execute e gerencie testes no **Gerenciador de Testes** do Visual Studi
 
 Para saber mais:
 
-- Vídeo: [Testando o Python, 2min31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
 - Documentação: [Ferramentas de teste de unidade do Python](unit-testing-python-in-visual-studio.md)
 - Documentação de funcionalidades gerais do Visual Studio: [Executar teste de unidade no código](../test/unit-test-your-code.md).
 
@@ -141,12 +134,6 @@ Para saber mais:
 A carga de trabalho do Python inclui o Azure SDK para Python, que simplifica o consumo de serviços do Azure em aplicativos do Windows, do Mac OS X e do Linux.
 
 Para obter mais informações, veja [SDK do Azure para Python](/python/azure/?view=azure-python).
-
-## <a name="python-training-on-microsoft-virtual-academy"></a>Treinamento do Python no Microsoft Virtual Academy
-
-|   |   |
-|---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | <ul><li>[Introdução à programação com o Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Iniciante em Python: Cadeias de caracteres e funções](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Conceitos básicos do Python: Lista e loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Principais perguntas sobre o Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Perguntas e respostas
 
@@ -314,9 +301,3 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 1. Exige o Windows 8 ou posterior. O comando **Anexar Depurador (Python)** no **Gerenciador de Servidores** exige o [SDK do Azure para .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
 
 1. Exige o Windows 8 ou posterior.
-
-## <a name="additional-resources"></a>Recursos adicionais
-
-- [Ponte do WFastCGI entre o IIS e o Python](https://pypi.org/p/wfastcgi) (pypi.org)
-- [Cursos gratuitos do Python na Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Principais perguntas sobre Python na Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)
