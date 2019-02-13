@@ -1,7 +1,6 @@
 ---
 title: Desenvolver o código sem projetos nem soluções
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9cdcc7e298cca689ea9e9e0c73bf217db92b92a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021121"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155351"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desenvolver código no Visual Studio sem projetos nem soluções
 
@@ -62,10 +61,6 @@ O exemplo a seguir mostra como clonar um repositório GitHub e, em seguida, abri
    ![Mostrar exibição de pasta](./media/VSIDE_Code_Clone3_show.png)
 
    Agora é possível procurar pastas e arquivos no repositório clonado, além de exibir e pesquisar o código no editor de códigos do Visual Studio, completo com colorização de sintaxe e outros recursos.
-
-| | |
-|---------|---------|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png)| [Assista a um vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) sobre como clonar e abrir o código de um repositório do GitHub no Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Executar e depurar seu código
 
