@@ -5,23 +5,23 @@ ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99f353da4b6269ebf9fac425a12dfce5b5917df6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2a68101b6090a20526088309a441956a68e875e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53923751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014660"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Como: Configurar a herança usando o Designer Relacional de Objetos
 O **Object Relational Designer** (**Relational Designer**) suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Herança de tabela única, há uma tabela de banco de dados individual que contém campos para informações pai e informações de filho. Com os dados relacionais, uma coluna de discriminador contém o valor que determina qual classe qualquer registro pertence.
 
 Por exemplo, considere um `Persons` tabela que contém todos empregado por uma empresa. Algumas pessoas são funcionários e algumas pessoas são gerentes. O `Persons` tabela contém uma coluna denominada `EmployeeType` que tem um valor de 1 para gerentes e um valor de 2 para funcionários; esta é a coluna de discriminador. Nesse cenário, você pode criar uma subclasse de funcionários e preencher a classe com apenas os registros que têm um valor de `EmployeeType` de 2. Você pode também remover colunas que não se aplicam de cada uma das classes.
 
-Criar um modelo de objeto que usar herança (e corresponde a dados relacionais) pode ser um pouco confuso. O procedimento a seguir descreve as etapas necessárias para configurar a herança com o **Designer Relacional de Objetos**. As seguintes etapas genéricas sem se referir a uma tabela existente e colunas podem ser difícil, portanto, um passo a passo que usa dados é fornecida. Para instruções passo a passo detalhadas para configurar a herança usando o **Relational Designer**, consulte [passo a passo: Criando o LINQ to SQL classes por meio de herança de tabela única (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
+Criar um modelo de objeto que usar herança (e corresponde a dados relacionais) pode ser um pouco confuso. O procedimento a seguir descreve as etapas necessárias para configurar a herança com o **Designer Relacional de Objetos**. As seguintes etapas genéricas sem se referir a uma tabela existente e colunas podem ser difícil, portanto, um passo a passo que usa dados é fornecida. Para instruções passo a passo detalhadas para configurar a herança usando o **Relational Designer**, consulte [passo a passo: Criando classes LINQ to SQL usando a herança de tabela única (Designer Relacional de Objetos)
 
 ## <a name="to-create-inherited-data-classes"></a>Para criar classes de dados herdadas
 
