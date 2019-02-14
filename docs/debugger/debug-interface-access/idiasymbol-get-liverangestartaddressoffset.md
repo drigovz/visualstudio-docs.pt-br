@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5b28914-0a14-4b22-8259-59d7f97ee610
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95c24788894c784cbe1d4b60dac3dbccf0350a85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a3a7bf8786f2ca066248ada3f1a0473b85681315
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851307"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986989"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 Retorna a parte do deslocamento do endereço inicial do intervalo no qual o símbolo local é válido.  
@@ -46,7 +46,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
  Para obter a parte da seção do endereço, use [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: dia2.h  
+ Cabeçalho: Dia2.h  
   
  Biblioteca: diaguids.lib  
   

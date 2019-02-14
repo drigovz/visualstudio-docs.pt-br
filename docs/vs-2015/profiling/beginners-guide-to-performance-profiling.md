@@ -1,13 +1,8 @@
 ---
 title: Guia do iniciante para criação de perfil de desempenho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -19,18 +14,18 @@ ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4a1b8fbc31bb05f69a1f9e30960106c08df5eb6f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2e243c1202ffbc9bd61f42073d6e464de858ff87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761523"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guia do iniciante à criação de perfil do desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.  
+Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.  
   
  **Amostragem** é um método de criação de perfil estatístico que mostra as funções que fazem a maior parte do trabalho do modo de usuário no aplicativo. A amostragem é uma boa opção para começar a procurar áreas para acelerar seu aplicativo.  
   
@@ -131,6 +126,3 @@ Você pode usar ferramentas de criação de perfil do Visual Studio para analisa
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)   
  [Introdução](../profiling/getting-started-with-performance-tools.md)   
  [Visões gerais](../profiling/overviews-performance-tools.md)
-
-
-

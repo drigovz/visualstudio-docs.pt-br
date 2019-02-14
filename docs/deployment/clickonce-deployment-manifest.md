@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c42d1b0323e8f2d66f7abab13c8fecbf6a1ae4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e62fb21f33658c07a5c7b60885c0cc83310e15f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911332"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927789"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto de implantação do ClickOnce
 Um manifesto de implantação é um arquivo XML que descreve uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, incluindo a identificação do atual [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] versão do aplicativo para implantar.  
@@ -31,13 +31,13 @@ Um manifesto de implantação é um arquivo XML que descreve uma [!INCLUDE[ndpte
 | Elemento | Descrição | Atributos |
 | - | - | - |
 | [Elemento \<assembly>](../deployment/assembly-element-clickonce-deployment.md) | Necessário. Elemento de nível superior. | `manifestVersion` |
-| [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md) | Necessário. Identifica o manifesto do aplicativo para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<assemblyIdentidade> elemento](../deployment/assemblyidentity-element-clickonce-deployment.md) | Necessário. Identifica o manifesto do aplicativo para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
 | [\<Descrição > elemento](../deployment/description-element-clickonce-deployment.md) | Necessário. Identifica as informações do aplicativo usadas para criar uma presença de shell e o **adicionar ou remover programas** item no painel de controle. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<implantação > elemento](../deployment/deployment-element-clickonce-deployment.md) | Opcional. Identifica os atributos usados para a implantação de atualizações e exposição ao sistema. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
 | [\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Necessário. Identifica as versões do .NET Framework em que este aplicativo pode instalar e executar. | `SupportUrl` |
 | [\<dependência > elemento](../deployment/dependency-element-clickonce-deployment.md) | Necessário. Identifica a versão do aplicativo para instalar a implantação e o local do manifesto do aplicativo. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
-| [\<publisherIdentity > elemento](../deployment/publisheridentity-element-clickonce-deployment.md) | Necessário para manifestos assinados. Contém informações sobre o editor que assinou o manifesto de implantação. | `Name`<br /><br /> `issuerKeyHash` |
-| [\<Assinatura > elemento](../deployment/signature-element-clickonce-deployment.md) | Opcional. Contém as informações necessárias para assinar digitalmente o manifesto de implantação. | Nenhum |
+| [\<publisherIdentity> Element](../deployment/publisheridentity-element-clickonce-deployment.md) | Necessário para manifestos assinados. Contém informações sobre o editor que assinou o manifesto de implantação. | `Name`<br /><br /> `issuerKeyHash` |
+| [\<Assinatura > elemento](../deployment/signature-element-clickonce-deployment.md) | Opcional. Contém as informações necessárias para assinar digitalmente o manifesto de implantação. | Nenhuma |
 | [\<customErrorReporting > elemento](../deployment/customerrorreporting-element-clickonce-deployment.md) | Opcional. Especifica um URI para mostrar quando ocorre um erro. | URI |
 
 ## <a name="remarks"></a>Comentários  

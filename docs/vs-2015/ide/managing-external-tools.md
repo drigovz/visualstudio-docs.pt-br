@@ -1,14 +1,9 @@
 ---
 title: Gerenciando ferramentas externas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
@@ -61,20 +56,20 @@ ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf8e00635ff76e9e4ccfc4cbedbafabe8b0718dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244473"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763317"
 ---
 # <a name="managing-external-tools"></a>Gerenciando ferramentas externas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível chamar ferramentas externas no Visual Studio. Algumas ferramentas padrão estão disponíveis no menu **Ferramentas**, mas é possível adicionar outros executáveis de sua preferência.  
   
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Ferramentas disponíveis no Menu de ferramentas do Visual Studio  
+## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Ferramentas disponíveis no menu das Ferramentas do Visual Studio  
  É possível chamar as ferramentas a seguir no menu **Ferramentas** em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você também pode chamá-las pelo nome na janela **Início Rápido**. Por exemplo, para chamar GuidGen.exe, digite **Criar GUID**.  
   
 1.  Criar GUID: gera um GUID.  
@@ -83,14 +78,14 @@ ms.locfileid: "49244473"
   
 3.  Ferramenta de Rastreamento da ATL/MFC: mostra mensagens de rastreamento de depuração nas fontes ATL e MFC.  
   
-4.  PreEmptive Dotfuscator e Análise: protege os programas .NET contra a engenharia reversa.  
+4.  PreEmptive Dotfuscator e Analytics: Protege os programas .NET contra engenharia reversa.  
   
-5.  SPY++: exibe processos, threads, janelas e mensagens de janela graficamente.  
+5.  SPY++ Exibe graficamente os processos, threads, windows e as mensagens da janela.  
   
-6.  Editor de Configuração do serviço WCF: permite criar e modificar definições de configuração para os serviços WCF.  
+6.  Editor de Configuração de Serviço &WCF Permite que você criar e modificar definições de configuração para serviços WCF.  
   
 > [!WARNING]
->  Você poderá ver uma lista diferente de ferramentas externas, dependendo de qual edição do Visual Studio está instalada e o perfil de configurações aplicado. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Você poderá ver uma lista diferente de ferramentas externas, dependendo de qual edição do Visual Studio está instalada e o perfil de configurações aplicado. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Adição de novas ferramentas  
  É possível adicionar uma ferramenta externa ao menu **Ferramentas**. Abra a caixa de diálogo **Ferramentas Externas**, clique em **Adicionar** e, em seguida, preencha as informações. Por exemplo, a seguinte entrada faz com que o Windows Explorer abra o diretório do arquivo atualmente aberto no Visual Studio:  
@@ -128,11 +123,3 @@ ms.locfileid: "49244473"
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas de build de C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
-
-
-
-
-
-
-
-

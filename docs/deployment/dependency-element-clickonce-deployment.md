@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a322d201310121a843fd1fe805d502b5aa9364b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941295"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependência&gt; elemento (implantação do ClickOnce)
 Identifica a versão do aplicativo para instalar e o local do manifesto do aplicativo.  
@@ -104,10 +104,10 @@ Identifica a versão do aplicativo para instalar e o local do manifesto do aplic
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa um algoritmo hash de todos os arquivos em um aplicativo como uma verificação de segurança para garantir que nenhum dos arquivos foram alterados após a implantação. Se o `hash` elemento não for incluído, essa verificação não será executada. Portanto, omitindo o `hash` elemento não é recomendado.  
 
-## <a name="dsigtransforms"></a>DSIG:Transforms  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  O `dsig:Transforms` elemento é um filho necessário do `hash` elemento. O `dsig:Transforms` elemento não tem atributos.  
 
-## <a name="dsigtransform"></a>DSIG:Transform  
+## <a name="dsigtransform"></a>dsig:Transform  
  O `dsig:Transform` elemento é um filho necessário do `dsig:Transforms` elemento. A tabela a seguir mostra os atributos do `dsig:Transform` elemento.  
 
 
@@ -115,7 +115,7 @@ Identifica a versão do aplicativo para instalar e o local do manifesto do aplic
 |-------------| - |
 | `Algorithm` | O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] é `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
-## <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
+## <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  O `dsig:DigestMethod` elemento é um filho necessário do `hash` elemento. A tabela a seguir mostra os atributos do `dsig:DigestMethod` elemento.  
 
 
@@ -123,7 +123,7 @@ Identifica a versão do aplicativo para instalar e o local do manifesto do aplic
 |-------------| - |
 | `Algorithm` | O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] é `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  O `dsig:DigestValue` elemento é um filho necessário do `hash` elemento. O `dsig:DigestValue` elemento não tem atributos. Seu valor de texto é o hash calculado para o arquivo especificado.  
 
 ## <a name="remarks"></a>Comentários  

@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968333"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009889"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido na **inspeção** janela usando especificadores de formato.  
@@ -64,7 +64,7 @@ int main() {
 |---------------|------------|--------------------------|---------------------|  
 |d|inteiro decimal|0x00000066|102|  
 |o|inteiro octal não assinado|0x00000066|000000000146|  
-|x<br /><br /> **h**|inteiro hexadecimal|102|0xCCCCCCCC|  
+|x<br /><br /> **h**|inteiro hexadecimal|102|0xcccccccc|  
 |X<br /><br /> **H**|inteiro hexadecimal|102|0xCCCCCCCC|  
 |c|caractere único|0x0065, c|101 'e'|  
 |s|Const char * cadeia de caracteres (com aspas)|\<local > "hello world"|"hello world"|  
@@ -79,7 +79,7 @@ int main() {
 |**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|hello world|  
 |**en**|enum|Saturday(6)|Sábado|  
 |**hv**|Tipo de ponteiro - indica que o valor do ponteiro está sendo inspecionado é o resultado da alocação de heap de uma matriz, por exemplo, `new int[3]`.|\<local > {\<primeiro membro >}|\<local > {\<primeiro membro >, \<segundo membro >,...}|  
-|**na**|Inibe o endereço de memória de um ponteiro para um objeto.|\<local >, {membro = valor...}|{membro = valor...}|  
+|**na**|Inibe o endereço de memória de um ponteiro para um objeto.|\<location>, {member=value...}|{member=value...}|  
 |**nd**|Exibe somente as informações de classe base, ignorando classes derivadas|`(Shape*) square` inclui a classe base e derivadas informações de classe|Exibe somente informações de classe de base|  
 |hr|Código de erro HRESULT ou Win32. Esse especificador não é necessário para HRESULTs como o depurador decodifica automaticamente.|S_OK|S_OK|  
 |wc|Sinalizador de classe do Windows|0x0010|WC_DEFAULTCHAR|  
@@ -109,12 +109,12 @@ int main() {
 |x<br /><br />X|Inteiro hexadecimal|61541|0x0000f065|  
 |**l**<br /><br />**h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|  
 |**f**|ponto flutuante assinado|(3./2.), f|1,500000|  
-|**e**|notação científica assinada|(2.0/3.0)|1.500000e+000|  
-|**g**|ponto flutuante assinado ou notação científica assinada,<br/> o que for menor|(2.0/3.0)|1.5|  
+|**e**|notação científica assinada|3.0|1.500000e+000|  
+|**g**|ponto flutuante assinado ou notação científica assinada,<br/> o que for menor|3.0|1.5|  
 |c|caractere único|\<localização>|101 'e'|  
 |s|Const char * (com aspas)|\<localização>|"hello world"|  
 |su|const wchar_t*<br /><br /> char16_t const\* (com aspas)|\<localização>|L"hello world"|  
-|sub|const wchar_t*<br /><br /> char16_t const\*|\<localização>|hello world|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<localização>|hello world|  
 |s8|Const char * (com aspas)|\<localização>|"hello world"|  
 |hr|Código de erro HRESULT ou Win32.<br/>Esse especificador não é necessário para HRESULTs como o depurador decodifica automaticamente.|S_OK|S_OK|  
 |wc|Sinalizador de classe do Windows|0x00000040,|WC_DEFAULTCHAR|  

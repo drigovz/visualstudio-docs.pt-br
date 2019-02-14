@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 55f79e1a-d4c2-42cd-ab37-d8253b20e34c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d33a87225345137a303284387c93dcec06d07f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be097c9d57f67c0e4fcf211041b3862e32952d18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931603"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
 Recupera o número de intervalos de endereços válido associado com o símbolo local.  
@@ -38,7 +38,7 @@ HRESULT get_countLiveRanges ( 
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: dia2.h  
+ Cabeçalho: Dia2.h  
   
  Biblioteca: diaguids.lib  
   

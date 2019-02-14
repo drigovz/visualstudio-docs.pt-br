@@ -193,7 +193,7 @@ A saída da compilação, incluindo uma mensagem de erro ou sucesso, aparecem na
 |||
 |-|-|
 |[Contas de usuário e atualizações](../ide/user-accounts-and-updates.md)|[Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[Como: Mover-se no IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Introdução ao desenvolvimento com o Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
+|[How to: Move Around in the IDE (Como mover-se no IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Introdução ao desenvolvimento com o Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Localizando e usando extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)|[Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Ferramentas de Criação de Perfil](../profiling/profiling-tools.md)|[Melhorar a qualidade do código](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|

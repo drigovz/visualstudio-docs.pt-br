@@ -4,15 +4,15 @@ ms.date: 06/08/2018
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 8cb250cd319f28b444a8f3bfecef421ecbaac9b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848357"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965453"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introdução às ferramentas de Kubernetes do Visual Studio
 
@@ -74,7 +74,7 @@ Os arquivos adicionados são:
 
 - um gráfico do Helm e um *gráficos* pasta. Esses arquivos yaml compõem o gráfico do Helm para o aplicativo, que pode ser usada para implantá-lo no Kubernetes. Para obter mais informações sobre o Helm, consulte [ https://www.helm.sh ](https://www.helm.sh).
 
-- *azds.YAML*. Isso contém configurações para espaços de desenvolvimento do Azure, que fornece uma experiência de depuração rápida e interativa no serviço Kubernetes do Azure. Para obter mais informações, consulte [a documentação do Azure Dev espaços](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
+- *azds.yaml*. Isso contém configurações para espaços de desenvolvimento do Azure, que fornece uma experiência de depuração rápida e interativa no serviço Kubernetes do Azure. Para obter mais informações, consulte [a documentação do Azure Dev espaços](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publicar no serviço de Kubernetes do Azure (AKS)
 

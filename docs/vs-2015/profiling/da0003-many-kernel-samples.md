@@ -1,14 +1,9 @@
 ---
 title: 'DA0003: muitas amostras de kernel | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
@@ -18,13 +13,13 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 922cc6998db9813c188eb9028b8e855a8b860270
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782628"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: muitas amostras de kernel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51741702"
 Id da regra | DA0003 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Métodos de criação de perfil | Amostragem |  
-| Mensagem | Você tem uma grande proporção de amostras no modo Kernel. Isso pode indicar um alto volume de atividade de E/S ou uma taxa alta de alternância de contexto. Considere a criação de perfil de seu aplicativo novamente usando o modo de instrumentação. |  
+| Mensagem | Você tem uma grande proporção de amostras no modo Kernel. Isso pode indicar um alto volume de atividade de E/S ou uma taxa alta de alternância de contexto. Considere criar um novo perfil para o aplicativo usando o Modo de Instrumentação.  
 | Tipo de regra | Informações |  
   
 ## <a name="cause"></a>Causa  
@@ -49,6 +44,3 @@ Id da regra | DA0003 |
 -   Crie perfis usando o método de instrumentação.  
   
 -   Aumente a taxa de amostragem para coletar mais amostras no modo de usuário.
-
-
-

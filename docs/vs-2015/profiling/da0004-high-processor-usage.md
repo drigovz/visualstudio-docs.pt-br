@@ -1,5 +1,5 @@
 ---
-title: 'DA0004: Alto uso de processador | Microsoft Docs'
+title: 'DA0004: alto uso de processador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54762518"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004: Uso do processador elevado
+# <a name="da0004-high-processor-usage"></a>DA0004: uso do processador elevado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0004 |  
