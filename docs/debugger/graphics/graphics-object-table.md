@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e89ae75a3e3ea43e9354df828410a0bdb6f2e79
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: a509e88671fc9fec3deb63c172469326d24e169d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53902705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016089"
 ---
 # <a name="graphics-object-table"></a>Tabela de objetos de gráfico
 A tabela de objeto de elementos gráficos em análise de gráficos do Visual Studio ajuda você a entender os objetos Direct3D que dão suporte a um quadro do seu jogo ou aplicativo.  
@@ -27,7 +27,7 @@ A tabela de objeto de elementos gráficos em análise de gráficos do Visual Stu
  ![Os objetos Direct3D que foram criados por um aplicativo.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")  
   
 ## <a name="understanding-the-graphics-object-table"></a>Noções básicas sobre a Tabela de Objetos Gráficos  
- Usando a tabela de objetos, você pode analisar os objetos Direct3D que dão suporte a renderização de um quadro específico. Você pode identificar um problema de renderização para um objeto específico, examinando suas propriedades e os dados (usando outras ferramentas de diagnóstico de gráficos inicialmente no diagnóstico, você pode restringir a lista de objetos que podem não ser o esperado.) Quando localizar o objeto incorreto, você pode usar uma visualização específica ao tipo para examiná-lo, por exemplo, você pode usar o Editor de Imagens para exibir texturas, ou o Visualizador de Buffer* para exibir o conteúdo do buffer.  
+ Usando a tabela de objetos, você pode analisar os objetos Direct3D que dão suporte a renderização de um quadro específico. Você pode identificar um problema de renderização para um objeto específico, examinando suas propriedades e os dados (usando outras ferramentas de diagnóstico de gráficos inicialmente no diagnóstico, você pode restringir a lista de objetos que podem não ser o esperado.) Quando encontrar o objeto incorreto, você pode usar uma visualização que é específica para seu tipo para examiná-lo — por exemplo, você pode usar o Editor de imagens para exibir texturas, ou o *Visualizador de Buffer* para exibir o conteúdo do buffer.  
   
  A tabela de objetos dá suporte a copiar e colar para que você possa usar outra ferramenta — por exemplo, o Microsoft Excel — para examinar seu conteúdo.
 
@@ -111,4 +111,4 @@ A tabela de objeto de elementos gráficos em análise de gráficos do Visual Stu
   
 ## <a name="see-also"></a>Consulte também  
  [Diagnóstico de Gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)   
- [Passo a passo: Objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+ [Passo a passo: objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)
