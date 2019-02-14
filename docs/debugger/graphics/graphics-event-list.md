@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 555a786ceed97bb83b0924eef45f102c43755b2e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 701271e245aca0ea798d3901bd8d627def495fc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870736"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941455"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos de gráficos no analisador de gráficos do Visual Studio para explorar os eventos Direct3D registrados durante a renderização de um quadro do seu jogo ou aplicativo.  
@@ -32,7 +32,7 @@ Use a lista de eventos de gráficos no analisador de gráficos do Visual Studio 
 ### <a name="color-coded-events-in-direct3d-12"></a>Eventos codificados por cores no Direct3D 12  
  Direct3D 12 expõe várias filas que correspondem à funcionalidade de um hardware diferente. Para ajudar a identificar a fila que está associado a um evento de gráficos específico no Direct3D 12, os eventos são codificadas por cores na lista de eventos de acordo com suas filas quando você está trabalhando com uma captura de um aplicativo Direct3D 12.  
 
-|Direct3D 12 fila|Cor|  
+|Direct3D 12 Queue|Cor|  
 |-----------------------|-----------|  
 |Processar a fila|Verde|  
 |Fila de computação|Amarelo|  
@@ -117,4 +117,4 @@ Essa janela permite que você exiba o histórico do item selecionado na lista de
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+ [Passo a passo: objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)

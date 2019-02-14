@@ -1,14 +1,9 @@
 ---
-title: Como criar modelos de item | Microsoft Docs
-ms.custom: ''
+title: 'Como: Criar modelos de Item | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,13 +13,13 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863616"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788240"
 ---
 # <a name="how-to-create-item-templates"></a>Como criar modelos de item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,9 +155,9 @@ As etapas no [primeiro procedimento](../ide/how-to-create-item-templates.md#expo
   
 7.  No Windows Explorer, selecione os arquivos que você deseja incluir em seu modelo, clique com o botão direito do mouse na seleção, clique em Enviar para e, em seguida, clique em Pasta Compactada (zipada). Os arquivos selecionados são compactados em um arquivo .zip.  
   
-8.  Copie o arquivo .zip e cole-o no local do modelo de item do usuário. No Visual Studio 2015, o diretório padrão é... \Users\\< nome de usuário\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Para obter mais informações, consulte Como localizar e organizar modelos de projeto e item.  
+8.  Copie o arquivo .zip e cole-o no local do modelo de item do usuário. No Visual Studio de 2015, o diretório padrão é ..\Users\\<nome de usuário\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Para obter mais informações, consulte Como localizar e organizar modelos de projeto e item.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
  [Como criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eef3d0732921bdd22b5753db6d7f769371bc335a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021592"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Passo a passo: Implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade Visual
 Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, dê a ele a um cliente para publicar e implantar, o cliente teve tradicionalmente atualizar o manifesto de implantação e assine-o novamente. Enquanto ainda é o método preferencial na maioria dos casos, o .NET Framework 3.5 permite que você crie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações que podem ser implantadas por clientes sem precisar regenerar um novo manifesto de implantação. Para obter mais informações, consulte [ClickOnce implantar aplicativos para servidores de teste e produção sem assinar novamente](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  

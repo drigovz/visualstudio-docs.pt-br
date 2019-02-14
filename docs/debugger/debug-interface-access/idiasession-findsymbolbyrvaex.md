@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyrvaex | Microsoft Docs'
+title: IDiaSession::findSymbolByRVAEx | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 166a5cd0de9980a72cdcf83a4e4cd12f02642d90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 278c88e71ce6350c2d7a1dbd21cc467dd1867274
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917166"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço especificado virtual relativo (RVA) e o deslocamento.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bacf5c57955f018c684ffb42afb5b9195cf4543f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a9f3609f97d74cad8a9abb8aad511345d3120c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924365"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977636"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Receber retornos de chamada do símbolo de DIA de localizar o procedimento, permitindo que uma interface do usuário relatar o progresso da tentativa de local.  
@@ -45,7 +45,7 @@ IDiaLoadCallback : IUnknown
  Para obter restrições adicionais que podem ser impostas em um processo de carregamento, consulte o [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) interface.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: dia2.h  
+ Cabeçalho: Dia2.h  
   
  Biblioteca: diaguids.lib  
   

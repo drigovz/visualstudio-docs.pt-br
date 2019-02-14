@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c961641-3ce3-4bc3-bd6e-a802fa3bec49
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a52f34987ac938f09ecbb350d280deb1235589c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e27e63a4a76e188ebf078b3101f7259f62dbefe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823523"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042719"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 Permite que um aplicativo cliente para fornecer os bytes de um arquivo executável, conforme especificado pela posição do arquivo.  
@@ -42,7 +42,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
  Esse método é implementado pelo aplicativo cliente e passado para o [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método como um método alternativo para ler o arquivo.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: dia2.h  
+ Cabeçalho: Dia2.h  
   
  Biblioteca: diaguids.lib  
   

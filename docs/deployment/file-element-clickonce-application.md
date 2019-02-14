@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828297"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984711"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;arquivo&gt; elemento (aplicativo ClickOnce)
 Identifica todos os arquivos de nonassembly baixado e usado pelo aplicativo.  
@@ -94,7 +94,7 @@ Identifica todos os arquivos de nonassembly baixado e usado pelo aplicativo.
 |`optional`|Opcional. Especifica se esse arquivo deve executar quando o aplicativo é o primeiro de download, ou se o arquivo deve residir apenas no servidor até que o aplicativo solicitá-lo sob demanda. Se `false` ou indefinido, o arquivo é baixado quando o aplicativo pela primeira vez é executado ou instalado. Se `true`, um `group` deve ser especificado para o manifesto do aplicativo seja válido. `optional` não pode ser true se `writeableType` for especificado com o valor `applicationData`.|  
 |`writeableType`|Opcional. Especifica que esse arquivo é um arquivo de dados. Atualmente, o único valor válido é `applicationData`.|  
 
-## <a name="typelib"></a>TypeLib  
+## <a name="typelib"></a>typelib  
  O `typelib` elemento é um filho opcional do elemento de arquivo. O elemento descreve a biblioteca de tipos que pertence ao componente COM. O elemento tem os seguintes atributos.  
 
 |Atributo|Descrição|  
@@ -160,10 +160,10 @@ Identifica todos os arquivos de nonassembly baixado e usado pelo aplicativo.
 
  Se um manifesto contém um arquivo que não será transformada em hash, esse manifesto não pode ser digitalmente assinados, pois os usuários não é possível verificar o conteúdo de um arquivo sem hash.  
 
-## <a name="dsigtransforms"></a>DSIG:Transforms  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  O `dsig:Transforms` elemento é um filho necessário do `hash` elemento. O `dsig:Transforms` elemento não tem atributos.  
 
-## <a name="dsigtransform"></a>DSIG:Transform  
+## <a name="dsigtransform"></a>dsig:Transform  
  O `dsig:Transform` elemento é um filho necessário do `dsig:Transforms` elemento. O `dsig:Transform` elemento tem os seguintes atributos.  
 
 
@@ -171,7 +171,7 @@ Identifica todos os arquivos de nonassembly baixado e usado pelo aplicativo.
 |-------------| - |
 | `Algorithm` | O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] é `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
-## <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
+## <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  O `dsig:DigestMethod` elemento é um filho necessário do `hash` elemento. O `dsig:DigestMethod` elemento tem os seguintes atributos.  
 
 
@@ -179,7 +179,7 @@ Identifica todos os arquivos de nonassembly baixado e usado pelo aplicativo.
 |-------------| - |
 | `Algorithm` | O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] é `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  O `dsig:DigestValue` elemento é um filho necessário do `hash` elemento. O `dsig:DigestValue` elemento não tem atributos. Seu valor de texto é o hash calculado para o arquivo especificado.  
 
 ## <a name="remarks"></a>Comentários  

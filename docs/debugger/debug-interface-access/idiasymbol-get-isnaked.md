@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isnaked | Microsoft Docs'
+title: IDiaSymbol::get_isNaked | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b16629dc-8e17-476b-9c7b-58e7277c61ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a91a605a0f1b08ee3c8c1d005a1af21e086b88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9d30ff3762e8c429cdd92725ee79c6bff603db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936250"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924448"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 Recupera um sinalizador que especifica se a função tem o [naked](/cpp/cpp/naked-cpp) atributo (ou seja, a função não tem nenhum código de prólogo ou epílogo adicionado pelo compilador).  

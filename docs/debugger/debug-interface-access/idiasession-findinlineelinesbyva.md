@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: dffe6594-e0d1-4ed5-aeea-8773f88d82a6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 637161fc197a34ceb1b8e2704bbc0e695aaa2ff1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 520f15e56ad1a6370c444ce6a7596ac55f25e6d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893439"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949305"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do endereço virtual especificado (VA).  

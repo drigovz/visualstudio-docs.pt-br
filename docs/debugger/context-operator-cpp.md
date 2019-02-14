@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9222a36bd1e03a1f213a0d3ea0e86e269e912d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7e31f1eb259f6633f747f0243a08e09caf4539d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889573"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965595"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operador de contexto no depurador do Visual Studio (C++)
 Você pode usar o operador de contexto em C++ para qualificar um local de ponto de interrupção, nome de variável ou expressão. O operador de contexto é útil para especificar um nome de um escopo externo que está oculto por um nome local.  
@@ -35,7 +35,7 @@ Você pode usar o operador de contexto em C++ para qualificar um local de ponto 
 ##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintaxe  
  Há duas maneiras de especificar o contexto:  
   
-1.  {, [*módulo*]} *expressão*  
+1.  {,,[*module*] } *expression*  
   
      As chaves devem conter duas vírgulas e o nome do módulo (executável ou DLL) ou o caminho completo.  
   

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3556c36e00ac092c1ebb3af4e6d09921fcd11233
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865975"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023571"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (bootstrapper)
 O `InstallChecks` elemento oferece suporte ao início de uma variedade de testes em relação ao computador local para certificar-se de que todos os pré-requisitos para um aplicativo apropriados foram instalados.  
@@ -92,7 +92,7 @@ O `InstallChecks` elemento oferece suporte ao início de uma variedade de testes
 |`PackageFile`|Necessário. O programa externo para executar. O programa deve ser parte do pacote de distribuição da instalação.|  
 |`Arguments`|Opcional. Fornece os argumentos de linha de comando para o executável nomeado pelo `PackageFile`.|  
 
-## <a name="filecheck"></a>Não  
+## <a name="filecheck"></a>FileCheck  
  Este é um elemento filho opcional de `InstallChecks`. Para cada instância do `FileCheck`, o bootstrapper determinará se o arquivo nomeado existe e retornar o número de versão do arquivo. Se o arquivo não tiver um número de versão, o bootstrapper define a propriedade nomeada pelo `Property` como 0. Se o arquivo não existir, `Property` não está definida como qualquer valor.  
 
  `FileCheck` não contém elementos e tem os seguintes atributos.  
@@ -168,7 +168,7 @@ O `InstallChecks` elemento oferece suporte ao início de uma variedade de testes
 |Propriedade|Observações|Valores possíveis|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Número de versão de um sistema de operacional Windows 9 X.|4.10 = Windows 98|  
-|`VersionNT`|Número de versão de um sistema operacional Windows NT.|ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`VersionNT`|Número de versão de um sistema operacional Windows NT.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
 |`VersionNT64`|Número de versão de um sistema de operacional de 64 bits com base no Windows NT.|O mesmo como mencionado anteriormente.|  
 |`VersionMsi`|Número de versão do serviço Windows Installer.|2.0 = Windows Installer 2.0|  
 |`AdminUser`|Especifica se um usuário tem privilégios de administrador em um sistema operacional Windows NT.|0 = sem privilégios de administrador<br /><br /> 1 = privilégios de administrador|  

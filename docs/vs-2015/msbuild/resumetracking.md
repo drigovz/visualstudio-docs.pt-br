@@ -1,14 +1,9 @@
 ---
 title: ResumeTracking | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 api_name:
 - ResumeTracking
 api_location:
@@ -21,13 +16,13 @@ ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c64cb40110e4f9af4d38994a64a337377d9faaa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2328b318c00b214138cf70e505c1988f8f1afc6a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802196"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +37,10 @@ HRESULT WINAPI ResumeTracking();
 ```  
   
 ## <a name="return-value"></a>Valor de retorno  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) com [SUCCEEDED] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) conjunto de bits, se o acompanhamento tiver sido retomado. [E_FAIL] (<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->) será retornado se o controle não pode ser retomado porque o contexto não estava disponível.  
+ Um <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> com o conjunto de bits SUCCEEDED se o acompanhamento tiver sido retomado. <!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->E_FAIL será retornado se não for possível continuar o acompanhamento porque o contexto não estava disponível.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** FileTracker.h  
   
 ## <a name="see-also"></a>Consulte também  
  [SuspendTracking](../msbuild/suspendtracking.md)
-
-
-

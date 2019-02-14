@@ -1,14 +1,9 @@
 ---
 title: Opções, Editor de Texto, XAML, Formatação | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.XAML.Miscellaneous
@@ -35,13 +30,13 @@ ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c86c7d2913b5fe112181bec2e9dc1bec12273b5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6ee37247cf628c0efe99af3e8a0b06dcab0b196c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824445"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800724"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opções, Editor de Texto, XAML, Formatação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "49824445"
 Use a página de propriedades **Formatação** para especificar como elementos e atributos são formatados nos documentos XAML. Para abrir a caixa de diálogo **Opções**, clique no menu **Ferramentas** e clique em **Opções**. Para acessar a página de propriedades de **Formatação**, expanda o nó **Editor de Texto**, **XAML**, **Formatação**.  
 
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
 
 ## <a name="auto-formatting-events"></a>Eventos de Formatação Automática  
  Formatação automática pode ocorrer quando qualquer um dos eventos a seguir é detectado.  
@@ -119,7 +114,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 |**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento (}) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura ({).|  
 |**Vírgulas para separar parâmetros MarkupExtension**|Especifica se vírgulas são geradas quando você digita mais de um parâmetro em uma extensão de marcação.|  
 
-## <a name="default-view"></a>Modo de exibição padrão  
+## <a name="default-view"></a>exibição padrão  
  Use essa configuração para controlar se o modo de exibição de Design aparece quando documentos XAML são carregados.  
 
 |||  
@@ -135,8 +130,5 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 
 ## <a name="see-also"></a>Consulte também  
  [XAML no WPF](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
- [Como alterar as configurações do modo de exibição XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [Passo a passo do Code e XAML](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
-
-
-
+ [Como: Alterar as configurações do modo de exibição XAML](http://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
+ [Passo a passo do Code e XAML](http://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

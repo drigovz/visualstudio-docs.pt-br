@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce84105fa1a3d7bf5c6f949421b306b5147368a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18485d94aaedcb1f41c0ed747dc6af0be7f7e276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892349"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952867"
 ---
 # <a name="report-hook-functions"></a>Funções de gancho do relatório
 Uma função de gancho de relatório, instalada usando [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), é chamada sempre que [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) gera um relatório de depuração. Você pode usá-la, entre outras coisas, para filtrar relatórios com foco em tipos de alocações específicos. Uma função de gancho de relatório deve ter um protótipo como o seguinte:  
@@ -49,4 +49,4 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
 ## <a name="see-also"></a>Consulte também  
  [Gravação da função de gancho de depuração](../debugger/debug-hook-function-writing.md)   
- [Exemplo de crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)
+ [crt_dbg2 Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

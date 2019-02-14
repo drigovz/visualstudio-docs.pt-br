@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_length | Microsoft Docs'
+title: IDiaSymbol::get_length | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e32585e44c7100d673b35e99ad0db081caa9fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b536aae5431163ae8ac6d7bd2a52d23ced662447
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824230"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941496"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Recupera o número de bits ou de bytes de memória usada pelo objeto representado por este símbolo.  
