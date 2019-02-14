@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997319"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Criar exibições personalizadas de objetos nativos no depurador
 
@@ -26,10 +26,6 @@ O Visual Studio *Natvis* framework personaliza a forma como tipos nativos aparec
 
 Natvis substitui o *autoexp. dat* arquivo nas versões anteriores do Visual Studio com a sintaxe XML, diagnósticos melhores, controle de versão e vários arquivos de suporte.  
 
-Natvis não funciona para:
-
-- Projetos de área de trabalho do Windows C++ com o **tipo de depurador** definido como **misto** sob **propriedades de configuração** > **depuração**. 
-- [Depuração de modo misto](how-to-debug-in-mixed-mode.md) para aplicativos de desktop do Windows no modo de compatibilidade gerenciado (**ferramentas** > **opções** > **depuração**  >  **Gerais** > **usar o modo de compatibilidade gerenciado**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Visualizações do Natvis
 
@@ -166,7 +162,7 @@ Os erros exibidos na **saída** janela.
 
 ##  <a name="BKMK_Syntax_reference"></a> Referência de sintaxe do Natvis  
 
-###  <a name="BKMK_AutoVisualizer"></a> Elemento AutoVisualizer  
+###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer element  
 O `AutoVisualizer` elemento é o nó raiz do *. natvis* do arquivo e contém o namespace `xmlns:` atributo. 
 
 ```xml

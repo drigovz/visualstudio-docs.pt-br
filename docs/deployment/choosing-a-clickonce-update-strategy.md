@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e09bdaff6d3b5a584091f05eae7d21b0aba256b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b157044bc6e626c4c35bcd6979648256e8eef9d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032966"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Escolher uma estratégia de atualização do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode fornecer atualizações automáticas para o aplicativo. Um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lê periodicamente o arquivo de manifesto de implantação para verificar se há atualizações disponíveis para ele. Se disponível, a nova versão do aplicativo será baixada e executada. Para proporcionar eficiência, somente os arquivos que foram alterados serão baixados.  
@@ -117,9 +117,9 @@ ms.locfileid: "53946653"
  Nenhum aviso sobre níveis de confiança ocorrerá se você usar a Implantação de Aplicativo de Confiança. Para obter mais informações, consulte [visão geral da implantação de aplicativo confiável](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="see-also"></a>Consulte também  
- \<XRef:System.Deployment.Application >   
+ \<xref:System.Deployment.Application>   
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Como o ClickOnce executa atualizações de aplicativos](../deployment/how-clickonce-performs-application-updates.md)   
- [Como: Gerenciar atualizações para um aplicativo ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+ [Como gerenciar atualizações para um aplicativo ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
