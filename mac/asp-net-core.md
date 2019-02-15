@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296470"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910981"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
@@ -64,8 +65,8 @@ public static void Main(string[] args)
 ```
 Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configurando e iniciando um host por meio de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
 
-* `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo
-* `UseContentRoot(Directory.GetCurrentDirectory())`: usa pasta raiz do projeto Web como a raiz de conteúdo do aplicativo ele for iniciado desta pasta
+* `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo.
+* `UseContentRoot(Directory.GetCurrentDirectory())`: usa a pasta raiz do projeto Web como a raiz de conteúdo do aplicativo, quando ele é iniciado nesta pasta.
 * `.UseIISIntegration()`: especifica que o aplicativo funcionará com o IIS. Para usar o IIS com o ASP.NET Core, tanto `UseKestrel` quanto `UseIISIntegration` precisam ser especificados.
 * `.UseStartup<Startup>()`: especifica a classe Startup.
 
@@ -131,7 +132,7 @@ Abra o navegador de sua escolha e digite `http://localhost:5000/`, substituindo 
 Aplicativos ASP.NET Core usam o padrão de design MVC (Modelo-Exibição-Controlador) para fornecer uma separação lógica de responsabilidades para cada parte do aplicativo. O MVC consiste no seguinte:
 
 - **Modelo**: uma classe que representa os dados do aplicativo.
-- **Exibição**: exibe a interface do usuário do aplicativo (que muitas vezes são os dados de modelo).
+- **Exibir**: exibe a interface do usuário do aplicativo, que muitas vezes são os dados de modelo.
 - **Controlador**: uma classe que trata as solicitações do navegador, responde à entrada e interação do usuário.
 
 Para obter mais informações sobre como usar o MVC, consulte [Visão geral do guia de MVC do ASP.NET Core](/aspnet/core/mvc/overview).
@@ -236,3 +237,7 @@ Para obter mais informações sobre as próximas etapas a partir daqui, consulte
 - Documentos do [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
 - [Criando serviços de back-end para aplicativos móveis nativos](/aspnet/core/mobile/native-mobile-backend), que mostra como criar um serviço REST usando o ASP.NET Core para um aplicativo Xamarin.Forms.
 - [Laboratório prático do ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+
+## <a name="related-video"></a>Vídeo relacionados
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

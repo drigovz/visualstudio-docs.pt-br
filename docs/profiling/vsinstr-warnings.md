@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a4136a67bea3dc06378265df9f01878c1a14dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 079cf7681f8583b500068c0ca6aea60ce0fad66b
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923971"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767900"
 ---
 # <a name="vsinstr-warnings"></a>Avisos de VSInstr
 A tabela a seguir lista os avisos emitidos pela ferramenta *VSInstr.exe*. Você pode usar a opção NOWARN junto com os números de aviso para suprimir o aviso seja exibido.  
   
 |Número do aviso|Descrição|  
 |--------------------|-----------------|  
-|**VSP1026**|Não há suporte para cobertura em bibliotecas que não fazem referência a MSCorLib. Esse geralmente é o caso de Bibliotecas Portáteis.|  
+|**VSP1026**|Não há suporte para cobertura em bibliotecas que não fazem referência a MSCorLib. Esse geralmente é o caso de Bibliotecas Portáteis.<br /><br />A opção [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) da linha de comando é obrigatória para o .NET Core.|  
 |**VSP2000**|Erro interno. Não é possível obter o nome de arquivo do módulo para este executável.|  
 |**VSP2001**|\<assembly name> é um assembly de nome forte. Ele deve ser assinado novamente antes de ser executado.<br /><br /> Este aviso ocorre quando um assembly assinado é instrumentado. Use a ferramenta *sn.exe* para desistir do binário ou desligar temporariamente o requisito de nome forte. Para obter mais informações, confira [Sn.exe (ferramenta de nome forte)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|Não foi possível localizar a função \<funcname > no arquivo \<filename ><br /><br /> Este aviso ocorrerá se uma função não puder ser localizada no arquivo especificado.|  
