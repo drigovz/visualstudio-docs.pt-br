@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969662"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768409"
 ---
 # <a name="vbc-task"></a>tarefa Vbc
 Encapsula o *vbc.exe*, que produz executáveis (*.exe*), bibliotecas de vínculo dinâmico (*.dll*) ou módulos de código (*.netmodule*). Para obter mais informações sobre *vbc.exe*, confira [Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -51,7 +51,7 @@ Encapsula o *vbc.exe*, que produz executáveis (*.exe*), bibliotecas de vínculo
 | `Imports` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Importa namespaces de coleções do item especificado. Esse parâmetro corresponde à opção [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) do compilador *vbc.exe*. |
 | `KeyContainer` | Parâmetro `String` opcional.<br /><br /> Especifica o nome do contêiner da chave de criptografia. Esse parâmetro corresponde à opção [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) do compilador *vbc.exe*. |
 | `KeyFile` | Parâmetro `String` opcional.<br /><br /> Especifica o nome de arquivo que contém a chave de criptografia. Para obter mais informações, confira [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica a versão da linguagem, “9” ou “10”. |
+| `LangVersion` | Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica a [versão da linguagem](/dotnet/visual-basic/language-reference/configure-language-version), como "15.5". |
 | `LinkResources` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Cria um link para um recurso do .NET Framework no arquivo de saída; o arquivo de recurso não é colocado no arquivo de saída. Esse parâmetro corresponde à opção [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) do compilador *vbc.exe*. |
 | `MainEntryPoint` | Parâmetro `String` opcional.<br /><br /> Especifica a classe ou o módulo que contém o procedimento `Sub Main`. Esse parâmetro corresponde à opção [-main](/dotnet/visual-basic/reference/command-line-compiler/main) do compilador *vbc.exe*. |
 | `ModuleAssemblyName` | Parâmetro `String` opcional.<br /><br /> Especifica o assembly do qual esse módulo faz parte. |

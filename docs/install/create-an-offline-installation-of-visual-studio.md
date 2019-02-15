@@ -1,9 +1,8 @@
 ---
 title: Criar uma instalação offline
 description: Saiba como instalar o Visual Studio offline quando você tiver uma conexão com a Internet não confiável ou largura de banda baixa.
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -15,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71c618efc383227167b3d4ccb034e32758229294
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035517"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954017"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Criar uma instalação offline do Visual Studio 2017
 
-Projetamos o Visual Studio 2017 para funcionar bem em uma variedade de configurações de rede e do computador. Embora seja recomendável que você experimente o [instalador Web do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), que é um arquivo pequeno e permite que você permaneça atualizado com todas as correções e recursos mais recentes, entendemos que talvez você não possa fazer isso.
+Projetamos o Visual Studio 2017 para funcionar bem em uma variedade de configurações de rede e do computador. Embora seja recomendável que você experimente o [instalador Web do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), que é um arquivo pequeno e permite que você permaneça atualizado com todas as correções e recursos mais recentes, entendemos que talvez você não possa fazer isso.
 
 Por exemplo, você pode ter uma conexão com a Internet não confiável ou que tem largura de banda baixa. Nesse caso, você tem algumas opções: Você pode usar a nova funcionalidade "Baixar tudo, depois instalar" para baixar os arquivos antes de instalar ou usar a linha de comando para criar um cache local dos arquivos.
 
@@ -33,10 +32,14 @@ Por exemplo, você pode ter uma conexão com a Internet não confiável ou que t
 
 ## <a name="use-the-download-all-then-install-feature"></a>Usar o recurso "baixar tudo, depois instalar"
 
-[**Novidades do 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): Depois de baixar o instalador da Web, selecione a nova opção **Baixar tudo, depois instalar** do Instalador do Visual Studio. Em seguida, continue com a instalação.
+[**Novidades do 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Depois de baixar o instalador da Web, selecione a nova opção **Baixar tudo, depois instalar** do Instalador do Visual Studio. Em seguida, continue com a instalação.
 
    ![A opção "Baixar tudo, depois instalar"](media/download-all-then-install.png)
+
+Criamos o recurso "Baixar tudo, depois instalar" para que você possa baixar o Visual Studio como uma instalação única, no mesmo computador em que você o baixar. Dessa maneira, você pode se desconectar com segurança da Web antes de instalar o Visual Studio.
+
+> [!IMPORTANT]
+> Não use o recurso "Baixar tudo, depois instalar" para criar um cache offline, que você pretende transferir para outro computador. Ele não foi desenvolvido para funcionar dessa maneira. <br><br>Se pretende criar um cache offline para instalar o Visual Studio em outro computador, confira a seção [Usar a linha de comando para criar um cache local](#use-the-command-line-to-create-a-local-cache) nesta página para saber como criar um cache local. Para saber mais sobre como criar um cache de rede, confira a página [Criar uma instalação de rede do Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md).
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Use a linha de comando para criar um cache local
 

@@ -3,7 +3,6 @@ title: 'Tutorial: Introdução ao Visual Basic'
 description: Saiba como criar aplicativos de console do Visual Basic no Visual Studio, passo a passo.
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424493"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155689"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introdução ao Visual Basic no Visual Studio
 
@@ -142,10 +141,10 @@ O .NET Core é o próximo passo na evolução do .NET Framework. Enquanto o .NET
 Parabéns por concluir este tutorial. Para saber ainda mais, confira o tutorial a seguir.
 
 > [!div class="nextstepaction"]
-> [Tutorial em vídeo: Conceitos básicos do Visual Basic para iniciantes](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Criar uma biblioteca com o Visual Basic e o SDK do .NET Core no Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Consulte também
 
-* [Novidades no Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
-* [IntelliSense para arquivos de código do Visual Basic](../../ide/visual-basic-specific-intellisense.md)
+* [Instruções passo a passo sobre a linguagem do Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Referência da linguagem Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [IntelliSense para arquivos de código do Visual Basic](../../ide/visual-basic-specific-intellisense.md)

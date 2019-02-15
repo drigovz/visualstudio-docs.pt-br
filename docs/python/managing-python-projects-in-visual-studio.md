@@ -2,7 +2,6 @@
 title: Gerenciar projetos de aplicativo do Python
 description: Os projetos do Visual Studio gerenciam dependências entre arquivos e a complexidade das relações em um aplicativo.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231929"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155858"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -37,8 +36,7 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) para obter uma introdução a projetos do Python (2min17s). |
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Assista também ao vídeo [Aprofundamento: Usar o controle do código-fonte com projetos do Python](https://youtu.be/Aq8eqApnugM) (youtube.com, 8min55s). |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Aprofundamento: Usar o controle do código-fonte com projetos do Python](https://youtu.be/Aq8eqApnugM) (youtube.com, 8min55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Adicionar arquivos, atribuir um arquivo de inicialização e definir os ambientes
 
