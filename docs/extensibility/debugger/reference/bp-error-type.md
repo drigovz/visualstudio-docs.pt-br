@@ -12,98 +12,98 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fec663bce0c64d4da003ca337ab43cebbe73a2d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a986191cb52ac76e06ab44fc9cf8faef72f0154
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960289"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317881"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
-Especifica o tipo de erro de um ponto de interrupção.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-enum enum_BP_ERROR_TYPE {   
-   BPET_NONE            = 0x00000000,  
-   BPET_TYPE_WARNING    = 0x00000001,  
-   BPET_TYPE_ERROR      = 0x00000002,  
-   BPET_SEV_HIGH        = 0x0F000000,  
-   BPET_SEV_GENERAL     = 0x07000000,  
-   BPET_SEV_LOW         = 0x01000000,  
-   BPET_TYPE_MASK       = 0x0000ffff,  
-   BPET_SEV_MASK        = 0xffff0000,  
-   BPET_GENERAL_WARNING = BPET_SEV_GENERAL | BPET_TYPE_WARNING,  
-   BPET_GENERAL_ERROR   = BPET_SEV_GENERAL | BPET_TYPE_ERROR,  
-   BPET_ALL             = 0xffffffff  
-};  
-typedef DWORD BP_ERROR_TYPE;  
-```  
-  
-```csharp  
-public enum enum_BP_ERROR_TYPE {   
-   BPET_NONE            = 0x00000000,  
-   BPET_TYPE_WARNING    = 0x00000001,  
-   BPET_TYPE_ERROR      = 0x00000002,  
-   BPET_SEV_HIGH        = 0x0F000000,  
-   BPET_SEV_GENERAL     = 0x07000000,  
-   BPET_SEV_LOW         = 0x01000000,  
-   BPET_TYPE_MASK       = 0x0000ffff,  
-   BPET_SEV_MASK        = 0xffff0000,  
-   BPET_GENERAL_WARNING = BPET_SEV_GENERAL | BPET_TYPE_WARNING,  
-   BPET_GENERAL_ERROR   = BPET_SEV_GENERAL | BPET_TYPE_ERROR,  
-   BPET_ALL             = 0xffffffff  
-};  
-```  
-  
-## <a name="members"></a>Membros  
- BPET_NONE  
- Não especifica que nenhum erro de ponto de interrupção.  
-  
- BPET_TYPE_WARNING  
- Especifica um erro de ponto de interrupção de estilo de aviso.  
-  
- BPET_TYPE_ERROR  
- Especifica um erro de ponto de interrupção de estilo de erro.  
-  
- BPET_SEV_HIGH  
- Especifica um erro de ponto de interrupção de alta gravidade.  
-  
- BPET_SEV_GENERAL  
- Especifica um erro de ponto de interrupção de severidade média.  
-  
- BPET_SEV_LOW  
- Especifica um erro de ponto de interrupção de baixa severidade.  
-  
- BPET_TYPE_MASK  
- Especifica um erro de ponto de interrupção de estilo de máscara.  
-  
- BPET_SEV_MASK  
- Especifica um erro de ponto de interrupção de gravidade de máscara de estilo.  
-  
- BPET_GENERAL_WARNING  
- Especifica um erro de ponto de interrupção de estilo de aviso geral.  
-  
- BPET_GENERAL_ERROR  
- Especifica um erro de ponto de interrupção de estilo de erro geral.  
-  
- BPET_ALL  
- Especifica todos os tipos de erros de ponto de interrupção.  
-  
-## <a name="remarks"></a>Comentários  
- Esses valores podem ser combinados com um bit a bit `OR` e é usado para o `dwType` membro a [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estrutura. Passado como um parâmetro para o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) método.  
-  
- Um tipo de erro de ponto de interrupção é composto de um tipo e severidade. Isso significa que um tipo de erro de ponto de interrupção nunca é apenas um tipo (por exemplo, `BPET_TYPE_ERROR`,) ou uma severidade (por exemplo, `BPET_SEV_GENERAL`) por si só. `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` fornecem valores predefinidos para pontos de interrupção de aviso e erro geral.  
-  
-## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
- [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+Especifica o tipo de erro de um ponto de interrupção.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+enum enum_BP_ERROR_TYPE {
+    BPET_NONE            = 0x00000000,
+    BPET_TYPE_WARNING    = 0x00000001,
+    BPET_TYPE_ERROR      = 0x00000002,
+    BPET_SEV_HIGH        = 0x0F000000,
+    BPET_SEV_GENERAL     = 0x07000000,
+    BPET_SEV_LOW         = 0x01000000,
+    BPET_TYPE_MASK       = 0x0000ffff,
+    BPET_SEV_MASK        = 0xffff0000,
+    BPET_GENERAL_WARNING = BPET_SEV_GENERAL | BPET_TYPE_WARNING,
+    BPET_GENERAL_ERROR   = BPET_SEV_GENERAL | BPET_TYPE_ERROR,
+    BPET_ALL             = 0xffffffff
+};
+typedef DWORD BP_ERROR_TYPE;
+```
+
+```csharp
+public enum enum_BP_ERROR_TYPE {
+    BPET_NONE            = 0x00000000,
+    BPET_TYPE_WARNING    = 0x00000001,
+    BPET_TYPE_ERROR      = 0x00000002,
+    BPET_SEV_HIGH        = 0x0F000000,
+    BPET_SEV_GENERAL     = 0x07000000,
+    BPET_SEV_LOW         = 0x01000000,
+    BPET_TYPE_MASK       = 0x0000ffff,
+    BPET_SEV_MASK        = 0xffff0000,
+    BPET_GENERAL_WARNING = BPET_SEV_GENERAL | BPET_TYPE_WARNING,
+    BPET_GENERAL_ERROR   = BPET_SEV_GENERAL | BPET_TYPE_ERROR,
+    BPET_ALL             = 0xffffffff
+};
+```
+
+## <a name="members"></a>Membros
+BPET_NONE  
+Não especifica que nenhum erro de ponto de interrupção.
+
+BPET_TYPE_WARNING  
+Especifica um erro de ponto de interrupção de estilo de aviso.
+
+BPET_TYPE_ERROR  
+Especifica um erro de ponto de interrupção de estilo de erro.
+
+BPET_SEV_HIGH  
+Especifica um erro de ponto de interrupção de alta gravidade.
+
+BPET_SEV_GENERAL  
+Especifica um erro de ponto de interrupção de severidade média.
+
+BPET_SEV_LOW  
+Especifica um erro de ponto de interrupção de baixa severidade.
+
+BPET_TYPE_MASK  
+Especifica um erro de ponto de interrupção de estilo de máscara.
+
+BPET_SEV_MASK  
+Especifica um erro de ponto de interrupção de gravidade de máscara de estilo.
+
+BPET_GENERAL_WARNING  
+Especifica um erro de ponto de interrupção de estilo de aviso geral.
+
+BPET_GENERAL_ERROR  
+Especifica um erro de ponto de interrupção de estilo de erro geral.
+
+BPET_ALL  
+Especifica todos os tipos de erros de ponto de interrupção.
+
+## <a name="remarks"></a>Comentários
+Esses valores podem ser combinados com um bit a bit `OR` e é usado para o `dwType` membro a [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estrutura. Passado como um parâmetro para o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) método.
+
+Um tipo de erro de ponto de interrupção é composto de um tipo e severidade. Isso significa que um tipo de erro de ponto de interrupção nunca é apenas um tipo (por exemplo, `BPET_TYPE_ERROR`,) ou uma severidade (por exemplo, `BPET_SEV_GENERAL`) por si só. `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` fornecem valores predefinidos para pontos de interrupção de aviso e erro geral.
+
+## <a name="requirements"></a>Requisitos
+Header: msdbg.h
+
+Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Consulte também
+[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
+[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

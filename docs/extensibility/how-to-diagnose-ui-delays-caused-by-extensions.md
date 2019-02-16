@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957436"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317114"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Como: Diagnosticar atrasos na interface do usuário causados pelas extensões
 
@@ -102,7 +102,7 @@ Em seguida, abra o arquivo de rastreamento. Você pode fazer isso usando a mesma
 Em seguida, selecione o arquivo de rastreamento no painel esquerdo e abra-o, escolhendo **abrir** no menu de contexto ou o botão direito do mouse.
 
 > [!NOTE]
-> Por padrão o PerfView gera um arquivo Zip. Quando você abre *trace.zip*, ele descompacta o arquivo morto automaticamente e abre o rastreamento. Você pode ignorar isso desmarcando os **Zip** caixa durante a coleta de rastreamento. No entanto, se você estiver planejando transferir e usar rastreamentos em máquinas diferentes, convém desmarcando os **Zip** caixa. Sem essa opção, os PDBs necessárias para assemblies Ngen não acompanharão o rastreamento e, portanto, símbolos de assemblies Ngen não serão resolvidos no computador de destino. (Consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) para obter mais informações sobre PDBs para assemblies Ngen.) 
+> Por padrão o PerfView gera um arquivo Zip. Quando você abre *trace.zip*, ele descompacta o arquivo morto automaticamente e abre o rastreamento. Você pode ignorar isso desmarcando os **Zip** caixa durante a coleta de rastreamento. No entanto, se você estiver planejando transferir e usar rastreamentos em máquinas diferentes, convém desmarcando os **Zip** caixa. Sem essa opção, os PDBs necessárias para assemblies Ngen não acompanharão o rastreamento e, portanto, símbolos de assemblies Ngen não serão resolvidos no computador de destino. (Consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obter mais informações sobre PDBs para assemblies Ngen.) 
 
 Pode levar vários minutos para que o PerfView processar e abrir o rastreamento. Quando o rastreamento é aberto, uma lista de vários "exibições" aparecem sob ele.
 

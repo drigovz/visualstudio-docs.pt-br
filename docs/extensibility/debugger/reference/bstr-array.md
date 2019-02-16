@@ -12,51 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14f05949dd275a7f1566b8cec3a49903249e3de1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79502e4a7a42a4c83957c0ef6b470fa9753db6fd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037194"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317452"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
-Uma estrutura que descreve uma matriz de cadeias de caracteres.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-typedef struct tagBSTR_ARRAY {  
-   DWORD dwCount;  
-   BSTR* Members;  
-} BSTR_ARRAY;  
-```  
-  
-```csharp  
-struct BSTR_ARRAY {  
-   DWORD    dwCount;  
-   string[] Members;  
-}  
-```  
-  
-## <a name="terms"></a>Termos  
- dwCount  
- Número de cadeias de caracteres em `Members` matriz.  
-  
- Membros  
- Matriz de cadeias de caracteres.  
-  
-## <a name="remarks"></a>Comentários  
- Essa estrutura é retornada a partir de [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) método.  
-  
- [C++] Cada cadeia de caracteres individual deve ser liberada usando `SysFreeString`e o `Members` matriz deve ser liberada com `CoTaskMemFree`.  
-  
-## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
+Uma estrutura que descreve uma matriz de cadeias de caracteres.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+typedef struct tagBSTR_ARRAY {
+    DWORD dwCount;
+    BSTR* Members;
+} BSTR_ARRAY;
+```
+
+```csharp
+struct BSTR_ARRAY {
+    DWORD    dwCount;
+    string[] Members;
+}
+```
+
+## <a name="terms"></a>Termos
+dwCount  
+Número de cadeias de caracteres em `Members` matriz.
+
+Membros  
+Matriz de cadeias de caracteres.
+
+## <a name="remarks"></a>Comentários
+Essa estrutura é retornada a partir de [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) método.
+
+[C++] Cada cadeia de caracteres individual deve ser liberada usando `SysFreeString`e o `Members` matriz deve ser liberada com `CoTaskMemFree`.
+
+## <a name="requirements"></a>Requisitos
+Header: msdbg.h
+
+Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Consulte também
+[Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
