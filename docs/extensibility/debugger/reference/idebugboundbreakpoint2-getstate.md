@@ -13,60 +13,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dbf6ef2a0c584280e93bcfd3db6ae82c3f2bbd3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7cf782a23c630153539f76b66c97af8db15a4d6a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956123"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315957"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
-Obtém o estado deste ponto de interrupção associada.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetState(   
-   BP_STATE* pState  
-);  
-```  
-  
-```csharp  
-int GetState(   
-   out enum_BP_STATE pState  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pState`  
- [out] Retorna um valor da [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeração que descreve o estado do ponto de interrupção.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CBoundBreakpoint` objeto que expõe o [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
-  
-```  
-HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)    
-{    
-   HRESULT hr;    
-  
-   // Check for a valid pointer to pState and assign the local state variable.    
-   if (pState)    
-   {    
-      *pState = m_state;    
-      hr = S_OK;    
-   }    
-   else    
-   {    
-      hr = E_INVALIDARG;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+Obtém o estado deste ponto de interrupção associada.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetState( 
+    BP_STATE* pState
+);
+```
+
+```csharp
+int GetState( 
+    out enum_BP_STATE pState
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+`pState`  
+[out] Retorna um valor da [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeração que descreve o estado do ponto de interrupção.
+
+## <a name="return-value"></a>Valor de retorno
+Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="example"></a>Exemplo
+O exemplo a seguir mostra como implementar esse método para um simples `CBoundBreakpoint` objeto que expõe o [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.
+
+```
+HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
+{
+    HRESULT hr;
+
+    // Check for a valid pointer to pState and assign the local state variable.
+    if (pState)
+    {
+        *pState = m_state;
+        hr = S_OK;
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Consulte também
+[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
+[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

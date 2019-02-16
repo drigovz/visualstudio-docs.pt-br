@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cde01932d2e0d73fdae1dad0ef4e5b3e659f34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970368"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316750"
 ---
 # <a name="validate-your-system-during-development"></a>Validar o sistema durante o desenvolvimento
 Visual Studio pode ajudar a manter seu software consistentes com os requisitos de usuários e com a arquitetura do seu sistema.
@@ -35,7 +35,7 @@ Visual Studio pode ajudar a manter seu software consistentes com os requisitos d
 |-|-|
 |**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif) [Channel 9: Doug sete: Compreensão de código e Design do sistema com o Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif) [Channel 9: Arquitetura de um aplicativo usando um diagrama de dependência](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif) [série MSDN como faço para: Como validar códigos usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Fóruns**|-   [Visualização do Visual Studio e ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visualização do Visual Studio e modelagem (ferramentas DSL) do SDK](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Blogs**|-   [Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Artigos técnicos e diários**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Consulte também
