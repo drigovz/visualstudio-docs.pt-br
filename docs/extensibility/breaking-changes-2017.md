@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012263"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318739"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações na extensibilidade do Visual Studio 2017
 
-Com o Visual Studio 2017, estamos oferecendo uma [experiência de instalação mais rápida e leve do Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer) que reduz o impacto do Visual Studio em sistemas de usuário, ao mesmo tempo, dando aos usuários maior preferência sobre os recursos e cargas de trabalho que são instalados. Para dar suporte a esses aprimoramentos, fez alterações para o modelo de extensibilidade e fez algumas alterações para extensibilidade do Visual Studio. Este documento descreve os detalhes técnicos dessas alterações e que pode ser feito para resolvê-los. Observe que algumas informações são detalhes de implementação de point-in-time e podem ser alteradas posteriormente.
+Com o Visual Studio 2017, estamos oferecendo uma [experiência de instalação mais rápida e leve do Visual Studio](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) que reduz o impacto do Visual Studio em sistemas de usuário, ao mesmo tempo, dando aos usuários maior preferência sobre os recursos e cargas de trabalho que são instalados. Para dar suporte a esses aprimoramentos, fez alterações para o modelo de extensibilidade e fez algumas alterações para extensibilidade do Visual Studio. Este documento descreve os detalhes técnicos dessas alterações e que pode ser feito para resolvê-los. Observe que algumas informações são detalhes de implementação de point-in-time e podem ser alteradas posteriormente.
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>Alterações que afetam a instalação e formato VSIX
 
@@ -28,7 +28,7 @@ Alterações no formato VSIX incluem:
 * Declaração de pré-requisitos de instalação. Para cumprir a promessa de uma leve, fast-instalação do Visual Studio, o instalador agora oferece mais opções de configuração para os usuários. Como resultado, para garantir que os recursos e componentes necessários para uma extensão estiverem instalados, serão necessário extensões declarar suas dependências.
   * O instalador do Visual Studio 2017 oferecerá automaticamente para adquirir e instalar os componentes necessários para o usuário como parte da instalação de sua extensão.
   * Os usuários também serão avisados ao tentar instalar uma extensão que não foi criada usando o novo formato VSIX v3, mesmo que elas tenham sido marcadas em seu manifesto como direcionamento de versão 15.0.
-* Recursos avançados para o formato VSIX. Para fornecer um [instalação de baixo impacto](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install) do Visual Studio que também dá suporte a instalações lado a lado, podemos não salvar a maioria dos dados de configuração no registro do sistema e foram movidos assemblies específicos do Visual Studio fora do GAC. Também aumentamos os recursos do formato VSIX e mecanismo de instalação de VSIX, permitindo que você usá-la em vez de um MSI ou EXE para instalar as extensões para alguns tipos de instalação.
+* Recursos avançados para o formato VSIX. Para fornecer um [instalação de baixo impacto](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) do Visual Studio que também dá suporte a instalações lado a lado, podemos não salvar a maioria dos dados de configuração no registro do sistema e foram movidos assemblies específicos do Visual Studio fora do GAC. Também aumentamos os recursos do formato VSIX e mecanismo de instalação de VSIX, permitindo que você usá-la em vez de um MSI ou EXE para instalar as extensões para alguns tipos de instalação.
 
   Os novos recursos incluem:
 

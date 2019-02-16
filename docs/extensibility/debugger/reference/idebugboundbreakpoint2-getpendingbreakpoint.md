@@ -13,74 +13,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c87d89a16feec72c795f81f1b11f5344917a18c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 51bd7d649be51c2cc48c643cba10ef1cc90446d2
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024013"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316965"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-Obtém o ponto de interrupção pendente da qual o ponto de interrupção associado especificado foi criado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetPendingBreakpoint(   
-   IDebugPendingBreakpoint2** ppPendingBreakpoint  
-);  
-```  
-  
-```csharp  
-int GetPendingBreakpoint(   
-   out IDebugPendingBreakpoint2 ppPendingBreakpoint  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppPendingBreakpoint`  
- [out] Retorna o [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) associado de objeto que representa o ponto de interrupção pendente que foi usado para criar esse ponto de interrupção.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Um ponto de interrupção pendente pode ser pensado como uma coleção de todas as informações necessárias para associar um ponto de interrupção para o código que pode ser aplicado a um ou vários programas.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CBoundBreakpoint` objeto que expõe o [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
-  
-```  
-HRESULT CBoundBreakpoint::GetPendingBreakpoint(  
-    IDebugPendingBreakpoint2** ppPendingBreakpoint)  
-{    
-   HRESULT hr;    
-  
-   // Check for valid IDebugPendingBreakpoint2 interface pointer.    
-   if (ppPendingBreakpoint)    
-   {    
-      // Be sure that the bound breakpoint has not been deleted. If  
-      // deleted, then return hr = E_BP_DELETED.    
-      if (m_state != BPS_DELETED)    
-      {    
-         // Query for the IDebugPendingBreakpoint2 interface.    
-         hr = m_pPendingBP->QueryInterface(IID_IDebugPendingBreakpoint2,  
-                                           (void**)ppPendingBreakpoint);    
-      }    
-      else    
-      {    
-         hr = E_BP_DELETED;    
-      }    
-   }    
-   else    
-   {    
-      hr = E_INVALIDARG;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+Obtém o ponto de interrupção pendente da qual o ponto de interrupção associado especificado foi criado.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetPendingBreakpoint( 
+    IDebugPendingBreakpoint2** ppPendingBreakpoint
+);
+```
+
+```csharp
+int GetPendingBreakpoint( 
+    out IDebugPendingBreakpoint2 ppPendingBreakpoint
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+`ppPendingBreakpoint`  
+[out] Retorna o [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) associado de objeto que representa o ponto de interrupção pendente que foi usado para criar esse ponto de interrupção.
+
+## <a name="return-value"></a>Valor de retorno
+Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+Um ponto de interrupção pendente pode ser pensado como uma coleção de todas as informações necessárias para associar um ponto de interrupção para o código que pode ser aplicado a um ou vários programas.
+
+## <a name="example"></a>Exemplo
+O exemplo a seguir mostra como implementar esse método para um simples `CBoundBreakpoint` objeto que expõe o [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.
+
+```
+HRESULT CBoundBreakpoint::GetPendingBreakpoint(
+    IDebugPendingBreakpoint2** ppPendingBreakpoint)
+{
+    HRESULT hr;
+
+    // Check for valid IDebugPendingBreakpoint2 interface pointer.
+    if (ppPendingBreakpoint)
+    {
+        // Be sure that the bound breakpoint has not been deleted. If
+        // deleted, then return hr = E_BP_DELETED.
+        if (m_state != BPS_DELETED)
+        {
+            // Query for the IDebugPendingBreakpoint2 interface.
+            hr = m_pPendingBP->QueryInterface(IID_IDebugPendingBreakpoint2,
+                                              (void**)ppPendingBreakpoint);
+        }
+        else
+        {
+            hr = E_BP_DELETED;
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Consulte também
+[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

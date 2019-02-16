@@ -12,51 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df95424ab949baeac93a993dd03c99eeae1e1127
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e90801f17690b48ba82e9fa80fba345e206c50b2
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966394"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315918"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
-Descreve o local de um ponto de interrupção em um endereço no código.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-typedef struct _BP_LOCATION_CODE_ADDRESS {   
-   BSTR bstrContext;  
-   BSTR bstrModuleUrl;  
-   BSTR bstrFunction;  
-   BSTR bstrAddress;  
-} BP_LOCATION_CODE_ADDRESS;  
-```  
-  
-## <a name="members"></a>Membros  
- `bstrContext`  
- O contexto do ponto de interrupção, normalmente um nome de método ou função, como visto em uma pilha de chamadas.  
-  
- `bstrModuleUrl`  
- A URL do módulo que contém o ponto de interrupção.  
-  
- `bstrFunction`  
- O nome da função que contém o ponto de interrupção.  
-  
- `bstrAddress`  
- O endereço do ponto de interrupção, que é analisada por um avaliador de expressão para associá-lo para um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.  
-  
-## <a name="remarks"></a>Comentários  
- Essa estrutura é um membro do [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura como parte de uma união.  
-  
-## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+Descreve o local de um ponto de interrupção em um endereço no código.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+typedef struct _BP_LOCATION_CODE_ADDRESS {
+    BSTR bstrContext;
+    BSTR bstrModuleUrl;
+    BSTR bstrFunction;
+    BSTR bstrAddress;
+} BP_LOCATION_CODE_ADDRESS;
+```
+
+## <a name="members"></a>Membros
+`bstrContext`  
+O contexto do ponto de interrupção, normalmente um nome de método ou função, como visto em uma pilha de chamadas.
+
+`bstrModuleUrl`  
+A URL do módulo que contém o ponto de interrupção.
+
+`bstrFunction`  
+O nome da função que contém o ponto de interrupção.
+
+`bstrAddress`  
+O endereço do ponto de interrupção, que é analisada por um avaliador de expressão para associá-lo para um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.
+
+## <a name="remarks"></a>Comentários
+Essa estrutura é um membro do [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura como parte de uma união.
+
+## <a name="requirements"></a>Requisitos
+Header: msdbg.h
+
+Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Consulte também
+[Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
+[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

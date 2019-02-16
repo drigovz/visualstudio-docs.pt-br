@@ -12,70 +12,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 550490f677f2d63eabfeba61bcac2c49cb258217
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cab1d06c868f0236d1d24c186af705e9adab717e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931409"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317465"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-Especifica quais informações devem ser recuperadas sobre um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-enum enum_FIELD_INFO_FIELDS {   
-   FIF_FULLNAME  = 0x0001,  
-   FIF_NAME      = 0x0002,  
-   FIF_TYPE      = 0x0004,  
-   FIF_MODIFIERS = 0x0008,  
-   FIF_ALL       = 0xffffffff,  
-   FIF_NONE      = 0x0000  
-};  
-typedef DWORD FIELD_INFO_FIELDS;  
-```  
-  
-```csharp  
-public enum enum_FIELD_INFO_FIELDS {  
-   FIF_FULLNAME  = 0x0001,  
-   FIF_NAME      = 0x0002,  
-   FIF_TYPE      = 0x0004,  
-   FIF_MODIFIERS = 0x0008,  
-   FIF_ALL       = 0xffffffff,  
-   FIF_NONE      = 0x0000  
-};  
-```  
-  
-## <a name="members"></a>Membros  
- FIF_FULLNAME  
- Inicialização/usar o `bstrFullName` campo de [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.  
-  
- FIF_NAME  
- Inicialização/usar o `bstrName` campo o `FIELD_INFO` estrutura.  
-  
- FIF_TYPE  
- Inicialização/usar o `bstrType` campo o `FIELD_INFO` estrutura.  
-  
- FIF_MODIFIERS  
- Inicialização/usar o `bstrModifiers` campo o `FIELD_INFO` estrutura.  
-  
-## <a name="remarks"></a>Comentários  
- Esses valores também são passados como um argumento para o [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método para especificar quais campos da [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) são de estrutura a ser inicializado.  
-  
- Esses valores também são usados na `dwFields` membro o `FIELD_INFO` estrutura para indicar quais campos são usados e válido.  
-  
- Esses sinalizadores podem ser combinados com um bit a bit `OR`.  
-  
-## <a name="requirements"></a>Requisitos  
- Header: sh.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+Especifica quais informações devem ser recuperadas sobre um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+enum enum_FIELD_INFO_FIELDS { 
+    FIF_FULLNAME  = 0x0001,
+    FIF_NAME      = 0x0002,
+    FIF_TYPE      = 0x0004,
+    FIF_MODIFIERS = 0x0008,
+    FIF_ALL       = 0xffffffff,
+    FIF_NONE      = 0x0000
+};
+typedef DWORD FIELD_INFO_FIELDS;
+```
+
+```csharp
+public enum enum_FIELD_INFO_FIELDS {
+    FIF_FULLNAME  = 0x0001,
+    FIF_NAME      = 0x0002,
+    FIF_TYPE      = 0x0004,
+    FIF_MODIFIERS = 0x0008,
+    FIF_ALL       = 0xffffffff,
+    FIF_NONE      = 0x0000
+};
+```
+
+## <a name="members"></a>Membros
+FIF_FULLNAME  
+Inicialização/usar o `bstrFullName` campo de [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.
+
+FIF_NAME  
+Inicialização/usar o `bstrName` campo o `FIELD_INFO` estrutura.
+
+FIF_TYPE  
+Inicialização/usar o `bstrType` campo o `FIELD_INFO` estrutura.
+
+FIF_MODIFIERS  
+Inicialização/usar o `bstrModifiers` campo o `FIELD_INFO` estrutura.
+
+## <a name="remarks"></a>Comentários
+Esses valores também são passados como um argumento para o [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método para especificar quais campos da [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) são de estrutura a ser inicializado.
+
+Esses valores também são usados na `dwFields` membro o `FIELD_INFO` estrutura para indicar quais campos são usados e válido.
+
+Esses sinalizadores podem ser combinados com um bit a bit `OR`.
+
+## <a name="requirements"></a>Requisitos
+Header: sh.h
+
+Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Consulte também
+[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)  
+[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
