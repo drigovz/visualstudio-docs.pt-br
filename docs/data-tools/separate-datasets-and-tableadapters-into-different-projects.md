@@ -9,15 +9,14 @@ ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d3386cd6a379a1d38c40f97f3a9c4ef93e293d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947628"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927653"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Conjuntos de dados e TableAdapters separados m diferentes projetos
 Conjuntos de dados tipados foram aprimorados para que o [TableAdapters](create-and-configure-tableadapters.md) e classes de conjunto de dados podem ser geradas em projetos separados. Isso permite que você separe as camadas de aplicativos rapidamente e gerar aplicativos de dados de n camadas.
@@ -61,7 +60,7 @@ Por padrão, após você separar o conjunto de dados e o código TableAdapter, o
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
-- [Passo a passo: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Atualização hierárquica](../data-tools/hierarchical-update.md)
 - [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

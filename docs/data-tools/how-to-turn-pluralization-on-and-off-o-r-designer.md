@@ -1,22 +1,21 @@
 ---
-title: 'Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)'
+title: Como habilitar e desabilitar a pluralização (Designer Relacional de Objetos)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3aeddaa1b3589857124e4658c758a52def896acd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 51ca5704bae6d52bf6957b97ac01d2b587c05970
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983567"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943552"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Como habilitar e desabilitar a pluralização (Designer Relacional de Objetos)
 Por padrão, quando você arrasta objetos de banco de dados que têm nomes que terminam em s ou em ies de **Gerenciador de servidores** ou **Database Explorer** até o [LINQ to SQL das ferramentas no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), o os nomes das classes de entidade gerados são alterados de plural a singular. Isso é feito a representa mais precisamente o fato que a classe instanciado de entidade mapeia para um único registro de dados. Por exemplo, adicionando um `Customers` de tabela para o **Relational Designer** resulta em uma classe de entidade chamada `Customer` porque a classe conterá dados para apenas um único cliente.
 
 > [!NOTE]

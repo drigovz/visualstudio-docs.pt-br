@@ -8,16 +8,15 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5923a3df9241689847444f5748d07f3c5f389ce5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926575"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929395"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
@@ -60,7 +59,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 7. Cole o script T-SQL no editor de consultas e, em seguida, escolha o **Execute** botão.
 
-     Após alguns instantes, a consulta termina a execução e os objetos de banco de dados são criados. O banco de dados contém duas tabelas: Os clientes e pedidos. Essas tabelas não contêm dados inicialmente, mas você pode adicionar dados ao executar o aplicativo que você vai criar. O banco de dados também contém quatro procedimentos armazenados simples.
+     Após alguns instantes, a consulta termina a execução e os objetos de banco de dados são criados. O banco de dados contém duas tabelas: clientes e pedidos. Essas tabelas não contêm dados inicialmente, mas você pode adicionar dados ao executar o aplicativo que você vai criar. O banco de dados também contém quatro procedimentos armazenados simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Criar os formulários e adicionar controles
 

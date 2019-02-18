@@ -1,22 +1,21 @@
 ---
-title: 'Como: Salvar e editar cadeias de conexão'
+title: Como salvar e editar cadeias de conexão
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60253ada78391c48543e81093136da15e1446f91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f8300043f9a16c7d92d72c4dcb22e4cd0432a06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000413"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937546"
 ---
-# <a name="how-to-save-and-edit-connection-strings"></a>Como: Salvar e editar cadeias de conexão
+# <a name="how-to-save-and-edit-connection-strings"></a>Como salvar e editar cadeias de conexão
 Cadeias de caracteres de Conexão em aplicativos do Visual Studio são salvas no arquivo de configuração do aplicativo (também conhecido como configurações de aplicativo) ou codificadas diretamente no seu aplicativo. Salvar cadeias de conexão no arquivo de configuração do aplicativo simplifica a tarefa de realizar a manutenção de seu aplicativo. Se a cadeia de conexão precisar ser alterada, você poderá atualizá-la no arquivo de configurações do aplicativo (em vez de alterá-la no código-fonte e recompilar o aplicativo).
 
 O armazenamento das informações confidenciais (tal como a senha) dentro da cadeia de conexão pode afetar a segurança do aplicativo. Cadeias de conexão salvas no arquivo de configuração do aplicativo não são criptografadas nem ofuscadas, de modo que talvez seja possível que alguém acesse o arquivo e exiba seu conteúdo. O uso da segurança integrada do Windows é uma maneira mais segura de controlar o acesso a um banco de dados.

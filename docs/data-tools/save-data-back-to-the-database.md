@@ -17,16 +17,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989118"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928654"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 
@@ -48,7 +47,7 @@ Se você estiver familiarizado com TableAdapters, você pode ir diretamente para
 |[Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Como realizar atualizações com TableAdapters|
 |[Atualização hierárquica](../data-tools/hierarchical-update.md)|Como realizar atualizações de um conjunto de dados com duas ou mais tabelas relacionadas|
 |[Lidar com uma exceção de simultaneidade](../data-tools/handle-a-concurrency-exception.md)|Como tratar exceções quando dois usuários tentam alterar os mesmos dados em um banco de dados ao mesmo tempo|
-|[Como: Salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)|Como salvar dados em uma transação usando o sistema. Um objeto TransactionScope e o namespace de transações|
+|[Como salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)|Como salvar dados em uma transação usando o sistema. Um objeto TransactionScope e o namespace de transações|
 |[Salvando dados em uma transação](../data-tools/save-data-in-a-transaction.md)|Instruções passo a passo que cria um aplicativo de formulários do Windows para demonstrar o salvamento de dados para um banco de dados dentro de uma transação|
 |[Salvar dados em um banco de dados (várias tabelas)](../data-tools/save-data-to-a-database-multiple-tables.md)|Como editar registros e salvar alterações em várias tabelas no banco de dados|
 |[Salvar dados de um objeto em um banco de dados](../data-tools/save-data-from-an-object-to-a-database.md)|Como transmitir dados de um objeto que não está em um conjunto de dados para um banco de dados usando um método TableAdapter DbDirect|
@@ -280,4 +279,4 @@ Em uma instrução UPDATE, você precisa especificar novos valores (aqueles que 
 - [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Validar dados](validate-data-in-datasets.md)
-- [Como: Adicionar, modificar e excluir entidades (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Como: adicionar, modificar e excluir entidades (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

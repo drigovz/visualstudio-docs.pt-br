@@ -10,15 +10,14 @@ ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c23097bfdf122d5b10cdf3b03cd020db5b62c0c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 135985d7e6ed13555db73f35fef31e6da4b85071
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989634"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910019"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabalhar com um modelo conceitual (WCF Data Services)
 
@@ -29,8 +28,8 @@ Quando você usa um modelo conceitual para descrever os dados em um banco de dad
 
 | Tópico | Descrição |
 | - | - |
-| [Como: Executar consultas de serviço de dados](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Mostra como consultar um serviço de dados de um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplicativo. |
-| [Como: Resultados de consulta do projeto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados. |
+| [How to: Execute Data Service Queries](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) (Como executar consultas de serviço de dados) | Mostra como consultar um serviço de dados de um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplicativo. |
+| [Como projetar resultados da consulta](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados. |
 
  Quando você usa um modelo conceitual, você pode definir o tipo de dados é válido no idioma que corresponde a seu domínio. Você pode definir dados válidos no modelo, ou você pode adicionar validação para operações que podem ser executadas em um serviço de dados ou de entidade.
 
@@ -38,14 +37,14 @@ Quando você usa um modelo conceitual para descrever os dados em um banco de dad
 
 |Tópico|Descrição|
 |-----------|-----------------|
-|[Como: Interceptar mensagens de serviço de dados](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Mostra como adicionar validação a uma operação de serviço de dados.|
+|[Como interceptar mensagens de serviço de dados](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Mostra como adicionar validação a uma operação de serviço de dados.|
 
  Os tópicos a seguir mostram como criar, atualizar e excluir dados, executando operações em entidades.
 
 |Tópico|Descrição|
 |-----------|-----------------|
-|[Como: Adicionar, modificar e excluir entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Mostra como criar, atualizar e excluir dados de entidade em um serviço de dados.|
-|[Como: Definir relações entre entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Mostra como criar ou alterar as relações em um serviço de dados.|
+|[Como adicionar, modificar e excluir entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Mostra como criar, atualizar e excluir dados de entidade em um serviço de dados.|
+|[Como definir relacionamentos entre entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Mostra como criar ou alterar as relações em um serviço de dados.|
 
 ## <a name="see-also"></a>Consulte também
 
