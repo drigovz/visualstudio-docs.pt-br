@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831544"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921426"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador Just-in-no Visual Studio
 
@@ -40,7 +39,7 @@ Você pode configurar a depuração do Visual Studio Just-In-Time **ferramentas*
 
    ![Habilitar ou desabilitar a depuração JIT](../debugger/media/dbg-jit-enable-or-disable.png "habilitar ou desabilitar a depuração JIT")
 
-1. No **just-in-habilitar a depuração para esses tipos de código** , selecione os tipos de código de depuração para depuração Just-In-Time: **Managed**, **nativo**, e/ou **Script**.
+1. No **just-in-habilitar a depuração para esses tipos de código** , selecione os tipos de código de depuração para depuração Just-In-Time: **gerenciado**, **nativo**, e/ou  **Script**.
    
 1. Selecione **OK**.
 
@@ -56,7 +55,7 @@ A depuração Just-In-Time ainda poderá ser habilitada, mesmo que o Visual Stud
 
 2.  No **Editor do registro** janela, localize e exclua as seguintes entradas do registro:
 
-    -   **HKEY_LOCAL_MACHINE\Software\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -64,7 +63,7 @@ A depuração Just-In-Time ainda poderá ser habilitada, mesmo que o Visual Stud
 
 3.  Se o computador estiver executando um sistema operacional de 64 bits, também exclua as entradas de registro a seguir:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -105,7 +104,7 @@ Para habilitar a depuração em vez do padrão de tratamento de erros do Windows
 
 Neste exemplo, você fará uma C# aplicativo de console no Visual Studio que lança uma [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. No Visual Studio, crie um C# aplicativo de console (**arquivo** > **New** > **projeto** > **C#**  >  **Aplicativo de console**) denominada *ThrowsNullException*. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [passo a passo: Criar um aplicativo simples](/visualstudio/get-started/csharp/tutorial-wpf)
+1. No Visual Studio, crie um C# aplicativo de console (**arquivo** > **New** > **projeto** > **C#**  >  **Aplicativo de console**) denominada *ThrowsNullException*. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [instruções passo a passo: criar um aplicativo simples](/visualstudio/get-started/csharp/tutorial-wpf).
    
 1. Quando o projeto é aberto no Visual Studio, abra o *Program.cs* arquivo. Substitua o método Main () com o código a seguir, que imprime uma linha para o console e, em seguida, lança uma NullReferenceException:
    
@@ -157,9 +156,9 @@ Se Just-In-Time de depuração não foi iniciada quando um aplicativo falha, mes
   
   
 
-  - **Relatório de erros do HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
+  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
     
-  - (Para computadores de 64 bits): **Relatório de erros do HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
+  - (Para computadores de 64 bits): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows relatório de erros**
   
   Para obter mais informações, consulte [. Configurações WER](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
   
@@ -193,7 +192,8 @@ Você pode ver as seguintes mensagens de erro durante Just-In-Time de depuraçã
     Para corrigir esse problema, use o instalador do Visual Studio para reinstalar ou reparar a instalação do Visual Studio.
 
 ## <a name="see-also"></a>Consulte também
+
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Opções, depuração, Just-In-Time caixa de diálogo](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

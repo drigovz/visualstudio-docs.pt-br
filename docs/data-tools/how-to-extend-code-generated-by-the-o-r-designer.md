@@ -1,23 +1,22 @@
 ---
-title: 'Como: Estender o código gerado pelo Designer Relacional de Objetos'
+title: Como estender o código gerado pelo Designer Relacional de Objetos
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 275d281c8e127f5ef7278881244252615efd2827
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ff7dfc9a83028b866f7601b9b41c685262356ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966160"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909591"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Como: Estender o código gerado pelo Designer Relacional de Objetos
-Código gerado pelo **Relational Designer** é regenerado quando alterações são feitas para as classes de entidade e outros objetos na superfície do designer. Devido a essa regeneração de código, qualquer código que você adicionar ao código gerado seja substituído normalmente quando o código de regenerados de designer. O **Relational Designer** fornece a capacidade de gerar arquivos de classe parcial na qual você pode adicionar código que não será substituído. Um exemplo de como adicionar seu próprio código para o código gerado pelo **Relational Designer** está adicionando validação de dados a LINQ para classes SQL (entidade). Para obter mais informações, confira [Como: Adicionar validação a classes de entidade](../data-tools/how-to-add-validation-to-entity-classes.md).
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Como estender o código gerado pelo Designer Relacional de Objetos
+Código gerado pelo **Relational Designer** é regenerado quando alterações são feitas para as classes de entidade e outros objetos na superfície do designer. Devido a essa regeneração de código, qualquer código que você adicionar ao código gerado seja substituído normalmente quando o código de regenerados de designer. O **Relational Designer** fornece a capacidade de gerar arquivos de classe parcial na qual você pode adicionar código que não será substituído. Um exemplo de como adicionar seu próprio código para o código gerado pelo **Relational Designer** está adicionando validação de dados a LINQ para classes SQL (entidade). Para obter mais informações, consulte [como: adicionar validação a classes de entidade](../data-tools/how-to-add-validation-to-entity-classes.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,5 +47,5 @@ Código gerado pelo **Relational Designer** é regenerado quando alterações s�
 ## <a name="see-also"></a>Consulte também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Passo a passo: Criando o LINQ para SQL classes (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
