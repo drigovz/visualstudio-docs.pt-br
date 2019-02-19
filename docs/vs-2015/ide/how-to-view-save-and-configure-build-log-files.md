@@ -1,5 +1,5 @@
 ---
-title: 'Como: Exibir, salvar e configurar arquivos de Log de Build | Microsoft Docs'
+title: Como exibir, salvar e configurar arquivos de log de build |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54760051"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Como: Exibir, salvar e configurar arquivos de log de build
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Como ver, salvar e configurar arquivos de log de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depois de compilar um projeto no Visual Studio IDE, é possível exibir informações sobre sse build na Janela de **Saída**. Usando essas informações, é possível, por exemplo, solucionar problemas de uma falha de build. Para projetos C++, também é possível exibir as mesmas informações em um arquivo .txt criado e salvo automaticamente. Para projetos de código gerenciado, é possível copiar e colar as informações da Janela de **Saída** em uma arquivo .txt e salvá-lo. Também é possível usar o IDE para especificar que tipos de informações você deseja exibir sobre cada build.  

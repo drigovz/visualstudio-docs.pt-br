@@ -26,7 +26,7 @@ ms.locfileid: "54773281"
 Id da regra | DA0018 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Método de criação de perfil | Amostragem |  
-| Mensagem | Gerenciado alocações de memória se aproximando do limite padrão para um processo de 32 bits. O aplicativo poderá ser associado à memória.  
+| Mensagem | Gerenciado alocações de memória se aproximando do limite padrão para um processo de 32 bits. O aplicativo pode ser associado à memória.|  
 | Tipo de regra | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

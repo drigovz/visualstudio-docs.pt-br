@@ -27,7 +27,7 @@ ms.locfileid: "54792917"
 Id da regra | DA0002 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Métodos de criação de perfil | Criação de perfil usando as ferramentas de linha de comando VSPerfCmd e VSPerfASPNETCmd |  
-| Mensagem | Parece que o arquivo foi coletado sem definir corretamente as variáveis de ambiente com vsperfclrenv. cmd. Símbolos de binários gerenciados podem não ser resolvidos.  
+| Mensagem | Parece que o arquivo foi coletado sem definir corretamente as variáveis de ambiente com vsperfclrenv. cmd. Os símbolos de binários gerenciados podem não ser resolvidos.|  
 | Tipo de regra | Informações |  
   
 ## <a name="cause"></a>Causa  

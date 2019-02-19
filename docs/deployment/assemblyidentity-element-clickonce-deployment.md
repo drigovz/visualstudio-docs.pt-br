@@ -68,4 +68,4 @@ Identifica o assembly principal da [!INCLUDE[ndptecclick](../deployment/includes
   
 ## <a name="see-also"></a>Consulte também  
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<assemblyIdentidade> elemento](../deployment/assemblyidentity-element-clickonce-application.md)
+ [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-application.md)

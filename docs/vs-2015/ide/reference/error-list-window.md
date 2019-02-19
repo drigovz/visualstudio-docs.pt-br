@@ -27,7 +27,7 @@ ms.locfileid: "54785765"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-OBSERVAÇÃO
+[OBSERVAÇÃO]
 >  A Lista de Erros exibe informações sobre uma mensagem de erro específica. É possível copiar o número do erro ou o texto da cadeia de caracteres de erro da Janela de Saída. Para exibir a Janela de Saída, pressione Ctrl+Alt+O. Consulte [Janela de Saída](../../ide/reference/output-window.md).  
   
  É possível desenvolver aplicativos mais rapidamente usando a janela **Lista de Erros**. Por exemplo, é possível executar as seguintes tarefas:  

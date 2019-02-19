@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769426"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Passo a passo: Criando um arquivo de projeto do MSBuild do zero
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -46,7 +46,7 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
   
 - Compilar de forma incremental.  
   
-  Este passo a passo mostra como compilar o projeto no prompt de comando e como examinar os resultados. Para saber mais sobre o MSBuild e como executá-lo no prompt de comando, confira [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  Este passo a passo mostra como compilar o projeto no prompt de comando e como examinar os resultados. Para obter mais informações sobre o MSBuild e como executá-lo no prompt de comandos, consulte [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
   Para concluir este passo a passo, você deve ter o .NET Framework (versão 2.0, 3.5, 4.0 ou 4.5) instalado, pois ele inclui o MSBuild, e o compilador do Visual C#.  
   
@@ -479,7 +479,7 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
 ```  
   
 ## <a name="whats-next"></a>O que vem a seguir?  
- O Visual Studio pode fazer automaticamente muito do trabalho que é mostrado neste passo a passo. Para saber como usar o Visual Studio para criar, editar, compilar e testar arquivos de projeto MSBuild, confira [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ O Visual Studio pode fazer automaticamente muito do trabalho que é mostrado neste passo a passo. Para saber como usar o Visual Studio para criar, editar, compilar e testar arquivos de projeto MSBuild, consulte [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Consulte também  
 [Visão geral do MSBuild](msbuild.md)  

@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6b29179332920197960ebe3be71e5973bdc8fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769445"
 ---
 # <a name="import-and-export-settings-command"></a>Comando Importar e Exportar Configurações
@@ -44,7 +44,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  Opcional. Redefine as configurações atuais.  
   
 ## <a name="remarks"></a>Comentários  
- Executar esse comando sem nenhuma opção abre o assistente **Importar e Exportar Configurações**. Para obter mais informações, confira [Como: Compartilhar configurações entre computadores ou versões do Visual Studio](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
+ Executar esse comando sem nenhuma opção abre o assistente **Importar e Exportar Configurações**. Para obter mais informações, consulte [Como: Compartilhar configurações entre computadores ou versões de Visual Studio](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
   
 ## <a name="example"></a>Exemplo  
  O comando a seguir exporta as configurações atuais para o arquivo `MyFile.vssettings`.  

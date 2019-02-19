@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796871"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
@@ -121,7 +121,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 |Visível|Booliano opcional. Indica se o arquivo no **Gerenciador de Soluções** deve ser exibido no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1.  Nunca<br />2.  Sempre<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Nenhum  
+### <a name="none"></a>Nenhuma  
  Representa arquivos que não devem ter função no processo de build.  
   
 |Nome do Item|Descrição|  

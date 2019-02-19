@@ -31,10 +31,10 @@ Estamos interessados em suas ideias para melhorar a nossa documentação. Não p
  Use nosso botão de comentários (**Esta página foi útil?**) na parte inferior da página. Você pode encontrar esse botão em todas as páginas do MSDN. Se você está procurando uma resposta e não consegue encontrá-la, informe o que você está procurando.  
   
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Eu gostaria de relatar um problema com o Visual Studio  
- Se você estiver encontrando problemas usando o Visual Studio, como falhas, desempenho lento, um comportamento inesperado e assim por diante, relate o problema para nós clicando no ícone de comentários ao lado **QuickLaunch**, ou escolhendo  **Ajuda do &#124; enviar comentários &#124; relatar um problema** no menu principal. Para saber mais, consulte [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
+ Se você estiver encontrando problemas usando o Visual Studio, como falhas, desempenho lento, um comportamento inesperado e assim por diante, relate o problema para nós clicando no ícone de comentários ao lado **QuickLaunch**, ou escolhendo  **Ajuda do &#124; enviar comentários &#124; relatar um problema** no menu principal. Para obter mais informações, confira [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quero fazer sugestões sobre os recursos do Visual Studio  
- Se houver algo que possamos fazer melhor, informe-nos! Escolha **Fornecer uma sugestão** para sugerir um recurso ou alteração à equipe do Visual Studio. Sua sugestão será postada automaticamente em [UserVoice](https://visualstudio.uservoice.com), onde outras pessoas poderão votar nela.  
+ Caso tenha sugestões de melhorias, informe-nos. Escolha **Fornecer uma sugestão** para sugerir um recurso ou alteração à equipe do Visual Studio. Sua sugestão será postada automaticamente em [UserVoice](https://visualstudio.uservoice.com), onde outras pessoas poderão votar nela.  
   
 ## <a name="rate-this-product"></a>Classificar este produto  
  Versões de pré-lançamento do Visual Studio têm um item de menu **Classificar este produto** que permite que você envie comentários sobre a qualidade do build que você está executando. Você não verá isso em versões de lançamento do produto.  

@@ -27,7 +27,7 @@ ms.locfileid: "54762518"
 Id da regra | DA0004 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Métodos de criação de perfil | Amostragem de instrumentação |  
-| Mensagem | O uso do processador está consistentemente acima de 75%. Considere o uso do modo de Amostragem para aplicativos associados à CPU.  
+| Mensagem | O uso do processador está consistentemente acima de 75%. Considere o uso do modo de Amostragem para aplicativos associados à CPU.|  
 | Tipo de regra | Informações |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criar um aplicativo simples com o Visual c# ou Visual Basic | Microsoft Docs'
+title: 'Passo a passo: Criar um aplicativo simples com o Visual C# ou o Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802610"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Passo a passo: Criar um aplicativo simples com o Visual c# ou Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Instruções passo a passo: criar um aplicativo simples com o Visual C# ou o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao concluir este passo a passo, você estará familiarizado com vários designers, ferramentas e caixas de diálogo que poderão ser usados no desenvolvimento de aplicativos com o Visual Studio. Você vai criar um aplicativo simples no estilo "Olá, Mundo", criar uma interface de usuário, adicionar código e depurar erros enquanto aprende mais sobre como trabalhar no IDE (ambiente de desenvolvimento integrado).  
@@ -55,7 +55,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
   
 #### <a name="to-change-the-color-theme-of-the-ide"></a>Para alterar o tema da cor do IDE  
   
-1. Abra a caixa de diálogo **Opções** escolhendo o menu **Ferramentas** na parte superior e, em seguida, o item **Opções...** .  
+1. Abra a caixa de diálogo **Opções** escolhendo o menu **Ferramentas** na parte superior e, em seguida, o item **Opções…** .  
   
     ![Comando Opções no menu Ferramentas](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")  
   
@@ -132,7 +132,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
   
    Sua janela deve se parecer com a ilustração a seguir:  
   
-   A Figura 7 Janela saudações com controle TextBlock  
+   Figura 7: Janela Saudações com controle TextBlock  
   
    ![Controle TextBlock no formulário Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -162,7 +162,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
   
     A sua janela deve se parecer com esta:  
   
-    Figura 8. Botões de opção na janela saudações.  
+    Figura 8: RadioButtons na janela Saudações.  
   
     ![Formulário Greetings com bloco de texto e dois botões de opção](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -190,7 +190,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
   
    Sua janela deve se parecer com a ilustração a seguir.  
   
-   Figura 9: Interface do usuário final de saudações  
+   Figura 9: Interface do usuário final de Saudações  
   
    ![Formulário Greetings com rótulos de controle](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
@@ -259,7 +259,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
   
     ![Comando Iniciar Depuração no menu Depurar](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    Uma caixa de diálogo é exibida, indicando que um IOException ocorreu: Não é possível localizar o recurso 'mainwindow.xaml'.  
+    Uma caixa de diálogo aparece, indicando que um IOException ocorreu: Não é possível localizar o recurso 'mainwindow.xaml'.  
   
 2. Escolha o botão **OK** e pare o depurador.  
   

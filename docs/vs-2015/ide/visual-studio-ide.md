@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780673"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
@@ -92,7 +92,7 @@ Se você quiser saber sobre os novos recursos no Visual Studio 2015, consulte [o
 
  Se o projeto tiver uma interface de usuário baseada em XAML, o designer padrão é o Blend para Visual Studio, uma ferramenta de gráficos sofisticados que funciona perfeitamente com o Visual Studio.
 
- ![Artboard](../ide/media/b5-artboard.png "b5_artboard")
+ ![Prancheta](../ide/media/b5-artboard.png "b5_artboard")
 
 |||
 |-|-|
@@ -111,7 +111,7 @@ Se você quiser saber sobre os novos recursos no Visual Studio 2015, consulte [o
 
  ![Greetingsconsoleapp no editor de códigos](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C + +")
 
- O editor de texto é altamente interativo (se desejar que ele seja assim), com muitos recursos de produtividade que ajudarão a escrever códigos mais rapidamente. Os recursos variam por linguagem, e você não precisa usar qualquer um deles (tipo de "Editor" no início rápido) para ativar ou desativar recursos do: Alguns dos recursos de produtividade comuns são:
+ O editor de texto é altamente interativo (se desejar que ele seja assim), com muitos recursos de produtividade que ajudarão a escrever códigos mais rapidamente. Os recursos variam por linguagem e você não precisa usar nenhum deles. Digite "Editor" no Início Rápido para ativar ou desativar recursos. Alguns dos recursos de produtividade comuns são:
 
 1. [Refatoração](../ide/refactoring-in-visual-studio.md) inclui operações como renomeação inteligente de variáveis, movimentação de linhas de código selecionadas para uma função distinta, movimentação do código para outros locais, reordenação de parâmetros de função e muito mais.
 
@@ -169,7 +169,7 @@ A saída da compilação, incluindo uma mensagem de erro ou sucesso, aparecem na
 ## <a name="connecting-to-cloud-services-and-databases"></a>Conectar-se a bancos de dados e serviços de nuvem
  O [Gerenciador de servidores](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) janela no Visual Studio mostra os recursos em todas as contas gerenciadas na sua conta de personalização (aquele com você fez logon), incluindo instâncias do SQL Server, Azure, Salesforce.com, Office 365, e sites da Web.
 
- ![Server Explorer](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![Gerenciador de Servidores](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
  O Visual Studio inclui o [SSDT](https://msdn.microsoft.com/data/tools.aspx) (Microsoft SQL Server Data Tools), que permite você criar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 

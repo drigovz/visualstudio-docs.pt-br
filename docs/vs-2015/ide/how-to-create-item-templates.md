@@ -155,7 +155,7 @@ As etapas no [primeiro procedimento](../ide/how-to-create-item-templates.md#expo
   
 7.  No Windows Explorer, selecione os arquivos que você deseja incluir em seu modelo, clique com o botão direito do mouse na seleção, clique em Enviar para e, em seguida, clique em Pasta Compactada (zipada). Os arquivos selecionados são compactados em um arquivo .zip.  
   
-8.  Copie o arquivo .zip e cole-o no local do modelo de item do usuário. No Visual Studio de 2015, o diretório padrão é ..\Users\\<nome de usuário\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Para obter mais informações, consulte Como localizar e organizar modelos de projeto e item.  
+8.  Copie o arquivo .zip e cole-o no local do modelo de item do usuário. No Visual Studio 2015, o diretório padrão é ..\Users\\<nomedeusuário\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Para obter mais informações, consulte Como localizar e organizar modelos de projeto e item.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   

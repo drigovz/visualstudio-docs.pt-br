@@ -27,7 +27,7 @@ ms.locfileid: "54784432"
 Id da regra | DA0014 |  
 | Categoria | Memória e paginação |  
 | Método de criação de perfil | Todos os |  
-| Mensagem | Está ocorrendo uma taxa extremamente alta de paginação de memória ativa em disco. O aplicativo pode ser associado à memória.  
+| Mensagem | Está ocorrendo uma taxa extremamente alta de paginação de memória ativa em disco. O aplicativo pode ser associado à memória.|  
 | Tipo de regra | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 25 amostras para disparar essa regra.  

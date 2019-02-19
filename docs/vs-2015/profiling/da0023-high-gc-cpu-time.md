@@ -26,7 +26,7 @@ ms.locfileid: "54794154"
 Id da regra | DA0023 |  
 | Categoria de |. Uso do .NET Framework |  
 | Método de criação de perfil | Todos os |  
-| Mensagem | % Time no GC é muito alta. Essa indicação de quantidade excessiva de sobrecarga de coleta de lixo pode estar afetando a capacidade de resposta do aplicativo. Você pode coletar dados de alocação de memória do .NET e informações de tempo de vida do objeto para entender o padrão de alocação de memória usado melhor pelo aplicativo.  
+| Mensagem | % Time no GC é muito alta. Essa indicação de quantidade excessiva de sobrecarga de coleta de lixo pode estar afetando a capacidade de resposta do aplicativo. Colete dados de alocação de memória do .NET e informações de tempo de vida do objeto para entender o padrão de alocação de memória usado melhor pelo aplicativo.|  
 | Tipo de regra | Informação |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

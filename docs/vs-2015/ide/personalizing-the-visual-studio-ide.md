@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778439"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizando o IDE do Visual Studio
@@ -36,10 +36,10 @@ Esta seção descreve como personalizar o Visual Studio de várias maneiras para
  Para criar uma página inicial personalizada para você e sua equipe, consulte [Customizing the Start Page](../ide/customizing-the-start-page-for-visual-studio.md) (Personalizando a página inicial)
 
 ### <a name="environment-color-themes"></a>Temas de cores do ambiente
- Para alterar o tema de cores entre claro, escuro e azul, digite ambiente no **QuickLaunch** e escolha **Ambiente &#124; Geral**. Para alterar as opções de colorização no editor, digite `environment` em **QuickLaunch** e escolha **Ambiente &#124; Fontes e Cores**. Confira também [Como: Alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Para alterar o tema de cores entre claro, escuro e azul, digite ambiente no **QuickLaunch** e escolha **Ambiente &#124; Geral**. Para alterar as opções de colorização no editor, digite `environment` em **QuickLaunch** e escolha **Ambiente &#124; Fontes e Cores**. consulte também [How to: Change Fonts and Colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) (Como alterar fontes e cores).
 
 ### <a name="menus-and-toolbars"></a>Menus e barras de ferramentas
- Para adicionar ou remover itens do menu ou da barra de ferramentas, confira [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Para adicionar ou remover itens de menu ou barra de ferramentas, consulte [How to: Customize Menus and Toolbars](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) (Como personalizar menus e barras de ferramentas).
 
 ### <a name="main-menu-casing"></a>Maiúsculas e minúsculas do menu principal
  Devido à demanda popular, você pode alterar as maiúsculas e minúsculas do menu principal entre **Capitalização de Título**, **TODAS EM MAIÚSCULA** digitando `environment` em **QuickLaunch** e escolhendo **Ambiente &#124; Geral**.

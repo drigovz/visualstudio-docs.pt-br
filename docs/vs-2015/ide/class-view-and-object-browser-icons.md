@@ -28,7 +28,7 @@ ms.locfileid: "54785043"
 # <a name="class-view-and-object-browser-icons"></a>Exibição de classe ícones do Pesquisador de Objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Modo de Exibição de Classe** e Pesquisador de Objetos exibem ícones que representam entidades de código, por exemplo, namespaces, classes, funções e variáveis. A tabela a seguir ilustra e descreve os ícones.  
+O Modo de Exibição de Classe** e o **Pesquisador de Objetos** exibem ícones que representam entidades de código, por exemplo, namespaces, classes, funções e variáveis. A tabela a seguir ilustra e descreve os ícones.  
   
 |Ícone|Descrição|Ícone|Descrição|  
 |----------|-----------------|----------|-----------------|  

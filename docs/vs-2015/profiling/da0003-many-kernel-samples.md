@@ -27,7 +27,7 @@ ms.locfileid: "54782628"
 Id da regra | DA0003 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Métodos de criação de perfil | Amostragem |  
-| Mensagem | Você tem uma grande proporção de amostras no modo Kernel. Isso pode indicar um alto volume de atividade de E/S ou uma taxa alta de alternância de contexto. Considere criar um novo perfil para o aplicativo usando o Modo de Instrumentação.  
+| Mensagem | Você tem uma grande proporção de amostras no modo Kernel. Isso pode indicar um alto volume de atividade de E/S ou uma taxa alta de alternância de contexto. Considere a criação de perfil para o aplicativo novamente usando o Modo de Instrumentação.|  
 | Tipo de regra | Informações |  
   
 ## <a name="cause"></a>Causa  

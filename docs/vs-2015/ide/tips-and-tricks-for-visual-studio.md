@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771173"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Dicas e truques sobre o Visual Studio
@@ -139,7 +139,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 
 ##  <a name="BKMK_ALM"></a> Gerenciamento do Ciclo de Vida do Aplicativo
 
-Consulte [atalhos de teclado: Visual Studio Online, TFS da web do portal e o Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
+Veja [Atalhos de teclado: Visual Studio Online, portal da Web do TFS e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
 ## <a name="see-also"></a>Consulte também
 

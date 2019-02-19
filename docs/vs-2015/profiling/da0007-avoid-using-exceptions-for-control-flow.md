@@ -27,7 +27,7 @@ ms.locfileid: "54770811"
 Id da regra | DA0007 |  
 | Categoria de |. Uso do .NET Framework |  
 | Métodos de criação de perfil | Todos os |  
-| Mensagem | Um grande número de exceções está sendo lançado consistentemente. Considere a redução do uso de exceções na lógica do programa.  
+| Mensagem | Um grande número de exceções está sendo lançado consistentemente. Considere a redução do uso de exceções na lógica do programa.|  
 | Tipo de mensagem | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 25 amostras para disparar essa regra.  

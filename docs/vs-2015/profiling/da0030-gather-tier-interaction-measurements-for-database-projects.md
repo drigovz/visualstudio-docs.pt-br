@@ -26,7 +26,7 @@ ms.locfileid: "54801473"
 Id da regra | DA0030 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Método de criação de perfil | Amostragem |  
-| Mensagem | Coleta de medições de interação para aplicativos de várias camadas ajudam você a compreender os padrões de uso de banco de dados e os dados importantes acessará atrasos. Tente criar o perfil do aplicativo novamente com a opção Criação de Perfil de Interação de Camada habilitada.  
+| Mensagem | Coleta de medições de interação para aplicativos de várias camadas ajudam você a compreender os padrões de uso de banco de dados e os dados importantes acessará atrasos. Tente criar o perfil do aplicativo novamente com a opção Criação de Perfil de Interação de Camada habilitada.|  
 | Tipo de regra | Informações |  
   
 ## <a name="cause"></a>Causa  

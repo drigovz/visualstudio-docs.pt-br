@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782288"
 ---
 # <a name="blocking-time-profile-report"></a>Bloqueando relatório de perfil de tempo
@@ -41,7 +41,7 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
 |Tempo de bloqueio inclusivo|O tempo total de bloqueio gasto para todas as pilhas acumuladas para esse nível de árvore de pilha de chamadas. O número inclusivo é a soma do tempo de bloqueio exclusivo para essa função e o tempo de bloqueio exclusivo para todos os nós filho.|  
 |Tempo de bloqueio exclusivo|O tempo total de bloqueio gasto durante o qual essa função é o nível mais baixo da pilha de chamadas. Uma entrada da pilha de chamadas exclusiva que tem um alto tempo de bloqueio exclusivo pode ser uma função de interesse.|  
 |Categoria de API/espera|Mostrado somente para funções do nível mais baixo da pilha de chamadas. Quando a assinatura da chamada de bloqueio é reconhecida, o nome da API do bloqueio é fornecido. Se a assinatura não for reconhecida, as informações relatadas pelo kernel serão fornecidas.|  
-|Detalhes|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|  
+|Details|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|  
   
 ### <a name="synchronization"></a>Sincronização  
  O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de sincronização](../profiling/synchronization-time.md)  

@@ -39,7 +39,7 @@ Se houver falha no carregamento de um modelo no ambiente de desenvolvimento, hav
 5.  Verifique se o XML do arquivo .vstemplate está de acordo com o esquema de modelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações sobre o esquema .vstemplate, consulte [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Para obter suporte do IntelliSense enquanto cria o arquivo `xmlns`vstemplate`VSTemplate`, adicione um atributo http://schemas.microsoft.com/developer/vstemplate/2005 ao elemento  e atribua um valor igual a .  
+    >  Para obter suporte do IntelliSense durante a criação do arquivo .vstemplate, adicione um atributo `xmlns` ao elemento `VSTemplate` e atribua a ele um valor igual a http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6.  Salve e feche o arquivo .vstemplate.  
   

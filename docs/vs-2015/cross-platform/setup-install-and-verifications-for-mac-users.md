@@ -45,7 +45,7 @@ Este tópico destina-se a desenvolvedores que trabalham principalmente em um Mac
   
 1.  Crie uma ID Apple gratuita em [Minha ID Apple](https://appleid.apple.com/) se você não tiver uma. Isso é necessário para instalar e entrar no Xcode.  
   
-2.  Baixe e instale o Xcode de [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/).  
+2.  Baixe e instale o Xcode em [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/).  
   
 3.  Baixe e instale o Xamarin, seguindo as instruções em [Instalando e configurando o Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).  
   

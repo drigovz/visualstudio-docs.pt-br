@@ -1,25 +1,20 @@
 ---
 title: Visual C++ IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802623"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,14 +80,14 @@ No Visual Studio 2015, o IntelliSense está disponível para arquivos de código
   
   Observe o seguinte:  
   
-- A ramificação #ifdef na linha 6 é esmaecida para indicar a região inativa, pois *_ANDROID\\*  \_ não está definido para o projeto do iOS.  
+- O branch #ifdef na linha 6 é esmaecido para indicar uma região inativa, pois *_ANDROID\\*\_ não está definido para o projeto do iOS.  
   
 - A variável de saudação na linha 11 é inicializada com o identificador HELLO, que agora tem uma linha ondulada vermelha. Isso ocorre porque nenhum identificador HELLO está definido no projeto iOS inativo no momento.  
   
 - A linha 12 tem linha ondulada roxa no identificador BYE; esse identificador não está definido no projeto Android.NativeActivity inativo no momento.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense de arquivo único  
- Ao abrir um arquivo único fora de qualquer projeto, você ainda obtém o IntelliSense. Você pode habilitar ou desabilitar determinados recursos indo para **Editor de Texto, C/C++, Avançado** para ativar ou desativar recursos do IntelliSense. Para configurar o IntelliSense para arquivos únicos que não fazem parte de um projeto, procure **IntelliSense e navegação para arquivos que não são de projeto** na seção **Avançado**. Consulte [Tour guiado do Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Ao abrir um arquivo único fora de qualquer projeto, você ainda obtém o IntelliSense. Você pode habilitar ou desabilitar determinados recursos indo para **Editor de Texto, C/C++, Avançado** para ativar ou desativar recursos do IntelliSense. Para configurar o IntelliSense para arquivos únicos que não fazem parte de um projeto, procure **IntelliSense e navegação para arquivos que não são de projeto** na seção **Avançado**. Consulte [Tour guiado do Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![IntelliSense de arquivo único do Visual C&#43;&#43;](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -102,6 +97,3 @@ No Visual Studio 2015, o IntelliSense está disponível para arquivos de código
   
 ## <a name="see-also"></a>Consulte também  
  [Usando o IntelliSense](../ide/using-intellisense.md)
-
-
-

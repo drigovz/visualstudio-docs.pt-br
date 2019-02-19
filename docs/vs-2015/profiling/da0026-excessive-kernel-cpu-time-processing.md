@@ -26,7 +26,7 @@ ms.locfileid: "54768965"
 Id da regra | TODO |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Método de criação de perfil | Amostragem |  
-| Mensagem | Foi medida uma quantidade relativamente alta de tempo de CPU em modo kernel. Considere a investigação da fonte com a amostragem de SysCall habilitada.  
+| Mensagem | Foi medida uma quantidade relativamente alta de tempo de CPU em modo kernel. Considere a investigação da fonte com a amostragem de SysCall habilitada.|  
 | Tipo de regra | Informações |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

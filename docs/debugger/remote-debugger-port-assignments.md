@@ -21,13 +21,13 @@ O depurador remoto do Visual Studio pode ser executado como um aplicativo ou com
 
 - Visual Studio 2019: 4024
 
-- Visual Studio 2017
+- Visual Studio 2017: 4022
 
 - Visual Studio 2015: 4020  
   
 - Visual Studio 2013: 4018  
   
-- Visual Studio 2012:  
+- Visual Studio 2012: 4016  
   
   Em outras palavras, o número da porta atribuída ao depurador remoto é incrementado por 2 para cada versão. Você pode definir um número de porta diferente da que você deseja. Explicaremos como definir os números de porta em uma seção posterior.  
   

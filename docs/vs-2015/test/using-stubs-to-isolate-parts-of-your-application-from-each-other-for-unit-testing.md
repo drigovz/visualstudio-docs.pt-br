@@ -18,7 +18,7 @@ ms.locfileid: "54803239"
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usando stubs para isolar partes de seu aplicativo para teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os tipos de stub são uma das duas tecnologias que o Microsoft Fakes framework fornece para permitir que você isole facilmente um componente em teste de outros componentes que ele chama. Um stub é um pequeno trecho de código que ocupa o lugar de outro componente durante o teste. A vantagem de usar um stub é que ele retorna resultados consistentes, tornando mais fácil escrever o teste. E você pode executar testes mesmo se os outros componentes não estiverem funcionando ainda.  
+Os tipos de stub* são uma das duas tecnologias fornecidas pelo Microsoft Fakes Framework para permitir que você isole com facilidade um componente que está sendo testado de outros componentes chamados. Um stub é um pequeno trecho de código que ocupa o lugar de outro componente durante o teste. A vantagem de usar um stub é que ele retorna resultados consistentes, tornando mais fácil escrever o teste. E você pode executar testes mesmo se os outros componentes não estiverem funcionando ainda.  
   
  Para obter uma visão geral e início rápido guia Fakes, confira [Isolamento de código em teste com Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
