@@ -322,6 +322,10 @@ items:
           items:
           - name: Alterar assinatura do método
             href: ide/reference/change-method-signature.md
+          - name: Converter tipo anônimo em classe
+            href: ide/reference/convert-anonymous-type-to-class.md
+          - name: Converter tipo anônimo em tupla
+            href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: Converter entre a instrução loop e foreach
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Converter entre a propriedade e o método Get
@@ -340,6 +344,8 @@ items:
             href: ide/reference/move-declaration-near-reference.md
           - name: Mover o tipo para o arquivo correspondente
             href: ide/reference/move-type-to-matching-file.md
+          - name: Mover membro para cima
+            href: ide/reference/pull-members-up.md
           - name: Remover o código inacessível
             href: ide/reference/remove-unreachable-code.md
           - name: Renomear
@@ -348,6 +354,8 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Usar o tipo explícito
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: Encapsular, recuar e alinhar parâmetros
+            href: ide/reference/wrap-align-indent-parameters.md
         - name: 'Passo a passo: Gerar código por meio do uso'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Dicas de produtividade
@@ -508,6 +516,11 @@ items:
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: Trabalhar com arquivos XML e XSLT
       href: xml-tools/xml-tools-in-visual-studio.md
+    - name: Desenvolver aplicativos internacionais
+      href: ide/globalizing-and-localizing-applications.md
+      items:
+      - name: Idiomas bidirecionais
+        href: ide/creating-applications-in-bi-directional-languages.md
     - name: Tutoriais adicionais
       items:
       - name: Criar um aplicativo WPF com C# ou Visual Basic
@@ -696,29 +709,6 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: Recursos para criar aplicativos acessíveis
       href: ide/reference/resources-for-designing-accessible-applications.md
-  - name: Globalizar e localizar aplicativos
-    href: ide/globalizing-and-localizing-applications.md
-    items:
-    - name: Introdução a aplicativos internacionais do .NET Framework
-      href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-    - name: Localizar aplicativos
-      href: ide/localizing-applications.md
-      items:
-      - name: Organização hierárquica de recursos para localização
-        href: ide/hierarchical-organization-of-resources-for-localization.md
-      - name: Assemblies satélite de segurança e localizados
-        href: ide/security-and-localized-satellite-assemblies.md
-      - name: Números de versão para assemblies principal e satélite localizados
-        href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
-      - name: Idiomas de recursos naturais para localização
-        href: ide/neutral-resources-languages-for-localization.md
-    - name: Globalizar aplicativos
-      href: ide/globalizing-applications.md
-      items:
-      - name: Classes específicas de cultura para Windows Forms e Web Forms globais
-        href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-    - name: Criar aplicativos em idiomas bidirecionais
-      href: ide/creating-applications-in-bi-directional-languages.md
 - name: Referência
   items:
   - name: Elementos da interface do usuário geral
@@ -1145,9 +1135,9 @@ items:
   - name: Fale conosco
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 69a36121297349edd6a3e79880935a9b3ed6fe75
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: d81e33771d4e5b8333c7dddf7311e63488a55604
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424610"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335578"
