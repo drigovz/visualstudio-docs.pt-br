@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73d515c03b7966e3434a2fc2507d3ad5f8d13c1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782829"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
@@ -43,14 +43,14 @@ Quando você abrir uma solução de Ferramentas DSL (Ferramentas de Linguagem Es
   
  A tabela a seguir explica alguns dos elementos do diagrama de modelo de domínio.  
   
-|**Termo**|**Definição**|  
+|**Prazo**|**Definição**|  
 |--------------|--------------------|  
 |Classe de domínio|As classes de domínio são os tipos de elementos em seus modelos.<br /><br /> Uma classe de domínio pode aparecer mais de uma vez em um diagrama, se ela for o destino de mais de um relacionamento.<br /><br /> Para adicionar uma classe de domínio, arraste a ferramenta de classe de domínio da **Caixa de ferramentas** para o lado **Classes e relacionamentos** do diagrama.|  
 |Relacionamento de domínio|Os relacionamentos de domínio são os tipos de links entre os elementos nos modelos.<br /><br /> Um *relacionamento de incorporação* indica que o elemento de destino pertence ou está contido no elemento de origem e aparece como uma linha sólida. Cada elemento em um modelo deve ser o destino de um relacionamento de incorporação, para que o modelo forme uma árvore. Um *relacionamento de referência* indica um link geral entre elementos de modelo e aparece como uma linha tracejada. Qualquer elemento pode ter qualquer número de links de referência.<br /><br /> Crie um relacionamento clicando na ferramenta na **Caixa de ferramentas** e clicando na classe de domínio de origem e, em seguida, na classe de destino.|  
 |Formas e Conectores|As formas especificam como os elementos de modelo devem ser exibidos em um diagrama DSL, os conectores especificam as linhas em um diagrama de DSL que podem ser usadas para exibir relacionamentos.<br /><br /> Para criar uma forma ou um conector, arraste a ferramenta para o lado **Elementos de Diagrama** do diagrama.|  
 |Mapas de formas|Um mapa de formas aparece como uma linha no diagrama de modelo de domínio, uma vinculando uma forma à classe de domínio que ele exibe ou um conector com o relacionamento de domínio que ele exibe.|  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
  [Visão geral das Ferramentas de Linguagem Específica de Domínio](../modeling/overview-of-domain-specific-language-tools.md)   
  [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)
