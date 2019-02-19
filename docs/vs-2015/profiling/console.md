@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e947fb28c92323f0d4d66c697c272699fc63450e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771050"
 ---
 # <a name="console"></a>Console
@@ -28,7 +28,7 @@ VSPerfCmd.exe /Launch:AppName /Console
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Nenhum  
+ Nenhuma  
   
 ## <a name="required-options"></a>Opções obrigatórias  
  O **Console** só pode ser especificado em uma linha de comando que também tem a opção **Iniciar**.  
