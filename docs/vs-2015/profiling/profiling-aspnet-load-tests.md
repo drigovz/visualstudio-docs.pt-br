@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c422b1bb2e41e3b1a848d3957530f43177d9c29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791797"
 ---
 # <a name="profiling-aspnet-load-tests"></a>Criando perfis dos testes de carga do ASP.NET
@@ -21,9 +21,9 @@ ms.locfileid: "54791797"
 
 Você pode coletar dados de criação de perfil de testes da Web [!INCLUDE[TCMext](../includes/tcmext-md.md)] automatizados executados em projetos de sites da Web ASP.NET. Você pode coletar dados de amostragem e interação entre camadas. Para mais informações, consulte os seguintes tópicos:
 
- [Como: Executar uma sessão de desempenho em um aplicativo Web do Editor de Testes de Desempenho Web](/previous-versions/ff356203(v=vs.100))
+ [Como: executar uma sessão de desempenho em um aplicativo Web pelo Editor de Testes de Desempenho Web](/previous-versions/ff356203(v=vs.100))
 
- [Como: Configurar o criador de perfil do ASP.NET para testes de carga usando configurações de teste no Visual Studio](/visualstudio/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings?view=vs-2015)
+ [Como configurar o Criador de Perfil do ASP.NET para carregar testes usando configurações de teste no Visual Studio](/visualstudio/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings?view=vs-2015)
 
  [Executando testes de sistema usando o Microsoft Visual Studio](http://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130).
 
