@@ -31,9 +31,9 @@ Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto d
 | Elemento | Descrição | Atributos |
 | - | - | - |
 | [Elemento \<assembly>](../deployment/assembly-element-clickonce-application.md) | Necessário. Elemento de nível superior. | `manifestVersion` |
-| [\<assemblyIdentidade> elemento](../deployment/assemblyidentity-element-clickonce-application.md) | Necessário. Identifica o assembly principal da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-application.md) | Necessário. Identifica o assembly principal da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
 | [\<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) | Identifica os requisitos de segurança do aplicativo. | Nenhuma |
-| [\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md) | Necessário. Identifica o ponto de entrada de código do aplicativo. | `name` |
+| [Elemento \<entryPoint>](../deployment/entrypoint-element-clickonce-application.md) | Necessário. Identifica o ponto de entrada de código do aplicativo. | `name` |
 | [\<dependência > elemento](../deployment/dependency-element-clickonce-application.md) | Necessário. Identifica cada dependência necessária para a execução do aplicativo. Opcionalmente, identifica os assemblies que precisam ser pré-instalado. | Nenhuma |
 | [\<Elemento file>](../deployment/file-element-clickonce-application.md) | Opcional. Identifica cada arquivo nonassembly que é usado pelo aplicativo. Pode incluir dados de isolamento (COM Component Object Model) associados ao arquivo. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
 | [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md) | Opcional. Identifica uma extensão de arquivo a ser associado com o aplicativo. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |

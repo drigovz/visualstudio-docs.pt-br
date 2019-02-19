@@ -109,8 +109,8 @@ int main() {
 |x<br /><br />X|Inteiro hexadecimal|61541|0x0000f065|  
 |**l**<br /><br />**h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|  
 |**f**|ponto flutuante assinado|(3./2.), f|1,500000|  
-|**e**|notação científica assinada|3.0|1.500000e+000|  
-|**g**|ponto flutuante assinado ou notação científica assinada,<br/> o que for menor|3.0|1.5|  
+|**e**|notação científica assinada|(3.0/2.0)|1.500000e+000|  
+|**g**|ponto flutuante assinado ou notação científica assinada,<br/> o que for menor|(3.0/2.0)|1.5|  
 |c|caractere único|\<localização>|101 'e'|  
 |s|Const char * (com aspas)|\<localização>|"hello world"|  
 |su|const wchar_t*<br /><br /> char16_t const\* (com aspas)|\<localização>|L"hello world"|  
