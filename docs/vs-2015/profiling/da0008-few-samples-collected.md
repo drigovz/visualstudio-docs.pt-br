@@ -27,7 +27,7 @@ ms.locfileid: "54800399"
 Id da regra | DA0008 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Método de criação de perfil | Amostragem |  
-| Mensagem | Apenas algumas amostras foram coletadas. Considere uma execução mais longa ou uma taxa de amostragem mais rápida para obter resultados mais significativos.  
+| Mensagem | Apenas algumas amostras foram coletadas. Considere uma execução mais longa ou uma taxa de amostragem mais rápida para obter resultados mais significativos.|  
 | Tipo de regra | Informações |  
   
 ## <a name="cause"></a>Causa  

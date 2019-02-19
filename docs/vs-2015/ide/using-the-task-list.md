@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801164"
 ---
 # <a name="using-the-task-list"></a>Usando a lista de tarefas
@@ -47,7 +47,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
   
 #### <a name="to-open-the-task-list"></a>Para abrir a Lista de Tarefas  
   
--   Sobre o **modo de exibição** menu, escolha **lista de tarefas** (teclado: Ctrl+\\,T).  
+-   No menu **Exibir**, escolha **Lista de Tarefas** (Teclado: Ctrl+\\,T).  
   
      ![Janela Lista de Tarefas](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -86,7 +86,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
  Uma vez que `TODO` é um token, esse comentário aparece como uma tarefa `TODO` na lista.  
   
 ###  <a name="customTokens"></a> Tokens personalizados  
- Por padrão, o Visual Studio inclui os seguintes tokens: HACK, TODO, DESFEITA, OBSERVAÇÃO. Eles não diferenciam maiúsculas de minúsculas.  
+ Por padrão, o Visual Studio inclui os seguintes tokens: HACK, TODO, UNDONE, NOTE. Eles não diferenciam maiúsculas de minúsculas.  
   
  Também é possível criar seus próprios tokens personalizados.  
   
@@ -122,7 +122,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
   
 #### <a name="to-create-a-shortcut"></a>Para criar um atalho  
   
--   Insira o ponteiro no código onde deseja colocar um atalho. Escolher **editar &#124; indicadores &#124; Adicionar atalho da lista de tarefas** ou pressione (teclado: Ctrl+K, Ctrl+H).  
+-   Insira o ponteiro no código onde deseja colocar um atalho. Escolha **Editar &#124; Indicadores &#124; Adicionar Atalho da Lista de Tarefas** ou pressione (Teclado: Ctrl+K, Ctrl+H).  
   
      Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.  
   

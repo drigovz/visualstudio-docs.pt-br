@@ -28,7 +28,7 @@ A análise de cobertura de código no Microsoft Visual Studio mostra quanto de s
   
     Se você tiver mais de uma definição de Fonte de Teste, repita essa etapa para cada uma.  
   
-   - <em>Mas não há nenhum campo denominado *Tipo de Arquivo de Configurações de Execução</em>.*  
+   - <em>No entanto, não há nenhum campo chamado **Tipo de Arquivo de Configurações de Execução</em>*.*  
   
       Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha o botão de reticências **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, em **Test Runner**, selecione **Visual Studio Test Runner**.  
   

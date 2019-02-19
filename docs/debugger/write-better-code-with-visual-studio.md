@@ -40,7 +40,7 @@ Para demonstrar essas tarefas, vamos mostrar alguns dos tipos mais comuns de err
 
 O código a seguir tem alguns bugs que você pode corrigir o problema usando o IDE do Visual Studio. Aqui, o aplicativo é um aplicativo simple que simula a obtenção de dados JSON de alguma operação desserializar os dados a um objeto e a atualização de uma lista simples com os novos dados.
 
-Para criar o aplicativo
+Para criar o aplicativo:
 
 1. Abra o Visual Studio e escolha **arquivo > Novo projeto**. Sob **Visual C#** , escolha **área de trabalho do Windows** ou **.NET Core**e, em seguida, no painel central, escolha uma **aplicativo de Console**.
 

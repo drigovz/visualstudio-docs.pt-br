@@ -69,4 +69,4 @@ Identifica o aplicativo implantado em um [!INCLUDE[ndptecclick](../deployment/in
   
 ## <a name="see-also"></a>Consulte também  
  [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentidade> elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)
+ [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-deployment.md)

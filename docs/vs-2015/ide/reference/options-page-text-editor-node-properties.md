@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767986"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de Propriedades, Editor de Texto, Propriedades do Nó
@@ -58,7 +58,7 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
 |WordWrap|Get/Set (Booliano)|Determina se a exibição quebra linhas longas nos limites da palavra. Definir como `true` faz com que o item de propriedade `VirtualSpace` (nesta lista) seja definido como `false`.|  
 |WordWrapGlyphs|Get/Set (Booliano)|Exibe um glifo no fim de uma linha; indica que a linha é quebrada para a próxima linha.|  
 |EnableLeftClickForURLs|Get/Set (Booliano)|Determina se o editor sublinha URLs e permite que com um único clique no botão esquerdo do mouse seja possível pular para a URL no navegador da Web registrado pelo sistema.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina o estilo do recuo: Default, Smart ou None.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina o estilo do recuo: Padrão, Inteligente ou Nenhum.|  
 |TabSize|Get/Set (Longo)|Representa o número de espaços que é igual a uma tabulação. Definir um inteiro fora do intervalo de 1 a 60 (inclusive) causa falhas.|  
 |InsertTabs|Get/Set (Booliano)|Se `True`, caracteres de tabulação serão usados no recuo.|  
 |IndentSize|Get/Set (Longo)|Representa o número de espaços que é igual a um nível de recuo. Definir um valor inteiro fora do intervalo de 1 a 60 (inclusive) causa falhas.|  

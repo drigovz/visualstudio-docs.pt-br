@@ -48,7 +48,7 @@ Como o Spy + + é executado de forma independente, depois de iniciada, você pod
   
 1.  Em uma janela de Prompt de comando, altere os diretórios para a pasta que contém spyxx.exe. Normalmente, o caminho para essa pasta é... \\ *Pasta de instalação do visual Studio*\Common7\Tools\\.  
   
-2.  Enter **spyxx.exe**. 
+2.  Insira **spyxx.exe**. 
   
 ## <a name="see-also"></a>Consulte também  
  [Usando o Spy++](../debugger/using-spy-increment.md)   

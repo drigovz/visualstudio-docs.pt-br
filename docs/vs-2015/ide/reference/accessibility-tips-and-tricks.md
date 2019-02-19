@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800782"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Dicas e truques de acessibilidade
@@ -50,7 +50,7 @@ ms.locfileid: "54800782"
 |Janela caixa de ferramentas|Adicionar um controle da Caixa de ferramentas a um formulário ou designer|**ENTER**|  
 |Caixa de diálogo Teclado, Ambiente, Opções|Excluir uma combinação de teclas inserida na opção **Pressionar teclas de atalho**|**BACKSPACE**|  
 |Todas as janelas de ferramentas|Selecionar o primeiro botão na barra de ferramentas da janela|**SHIFT** + **ALT**|  
-|Barras de ferramentas do IDE|Selecionar o primeiro botão na barra de ferramentas Padrão|**ALT**, **CTRL** + **guia** **Observação:**  Pressione **CTRL** + **guia** novamente para selecionar o primeiro botão na barra de ferramentas do IDE Avançar.|  
+|Barras de ferramentas do IDE|Selecionar o primeiro botão na barra de ferramentas Padrão|**ALT**, **CTRL** + **TAB** **Observações:**  Pressione **CTRL** + **TAB** novamente para selecionar o primeiro botão na próxima barra de ferramentas do IDE.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Recursos de Acessibilidade do Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

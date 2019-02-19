@@ -1,14 +1,9 @@
 ---
 title: Estendendo o JavaScript IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867060"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797441"
 ---
 # <a name="extending-javascript-intellisense"></a>Estendendo JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +90,12 @@ intellisense.addEventListener('statementcompletion', function (event) {
 > [!NOTE]
 >  No JavaScript, informações rápidas refere-se à caixa pop-up que aparece à direita de uma lista de conclusão. Você não é possível invocar informações rápidas.  
   
-##  <a name="intellisenseObject"></a> IntelliSense de objeto  
+##  <a name="intellisenseObject"></a> Objeto intellisense  
  A tabela a seguir mostra as funções que estão disponíveis para o `intellisense` objeto. O `intellisense` objeto está disponível somente em tempo de design.  
   
 |Função|Descrição|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|Adiciona um manipulador de eventos para um evento de IntelliSense.<br /><br /> `type` é um valor de cadeia de caracteres. Os valores válidos incluem `statementcompletion`, `signaturehelp`, e `statementcompletionhint`.<br /><br /> `handler` é uma função de manipulador de eventos que recebe um objeto de evento de um dos seguintes tipos:<br /><br /> -   `CompletionEvent`, usado para o `statementcompletion` eventos.<br />-   `SignatureHelpEvent`, usado para o `signaturehelp` eventos.<br />-   `CompletionHintEvent`, usado para o `statementcompletionhint` eventos.<br /><br /> Para obter exemplos que usam essa função, consulte [exemplos de código](#CodeExamples).|  
+|`addEventListener(type, handler);`|Adiciona um manipulador de eventos para um evento de IntelliSense.<br /><br /> `type` é um valor de cadeia de caracteres. Os valores válidos incluem `statementcompletion`, `signaturehelp` e `statementcompletionhint`.<br /><br /> `handler` é uma função de manipulador de eventos que recebe um objeto de evento de um dos seguintes tipos:<br /><br /> -   `CompletionEvent`, usado para o `statementcompletion` eventos.<br />-   `SignatureHelpEvent`, usado para o `signaturehelp` eventos.<br />-   `CompletionHintEvent`, usado para o `statementcompletionhint` eventos.<br /><br /> Para obter exemplos que usam essa função, consulte [exemplos de código](#CodeExamples).|  
 |`annotate(obj, doc);`|Especifica a documentação para um objeto, copiando os comentários da documentação de um objeto para outro objeto.<br /><br /> `obj` Especifica o objeto no qual copiar a documentação.<br /><br /> `doc` Especifica o objeto do qual copiar a documentação.<br /><br /> Para obter um exemplo que mostra como usar essa função, consulte [adicionar anotações de IntelliSense](#Annotations).|  
 |`getFunctionComments(func);`|Retorna os comentários para uma função especificada.<br /><br /> `func` Especifica a função para o qual os comentários são retornados.<br /><br /> Você pode definir as `func` parâmetro usando `completionItem.value`.<br /><br /> Retornado `functionComments` objeto inclui os seguintes membros: `above`, `inside`, e `paramComment`. Para obter mais informações, consulte o [functionComments propriedade](#FunctionComments) propriedade.<br /><br /> `getFunctionComments` pode ser chamado apenas de dentro de um dos manipuladores de eventos que são registrados por `addEventListener`.<br /><br /> Para obter um exemplo que mostra como usar essa função, consulte \\ \\ *caminho de instalação do Visual Studio*\JavaScript\References\showPlainComments.js.|  
 |`logMessage(msg);`|Envia mensagens de diagnóstico para a janela de saída.<br /><br /> `msg` é uma cadeia de caracteres que contém a mensagem.<br /><br /> Para obter um exemplo que mostra como usar essa função, consulte [enviando mensagens para a janela de saída](#Logging).|  
@@ -214,7 +209,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Valor de retorno: objeto  
   
-###  <a name="Target"></a> Propriedade de destino  
+###  <a name="Target"></a> Propriedade target  
  Retorna um objeto que representa o item à esquerda do caractere disparador, que é um ponto (.). Para funções, `target` retorna a função para a qual as informações do parâmetro é solicitada. Essa propriedade está disponível para o `statementcompletion` e `signaturehelp` objetos de evento.  
   
  Valor de retorno: objeto  
@@ -553,6 +548,3 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="see-also"></a>Consulte também  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [Preenchimento de declaração para identificadores](../ide/statement-completion-for-identifiers.md)
-
-
-

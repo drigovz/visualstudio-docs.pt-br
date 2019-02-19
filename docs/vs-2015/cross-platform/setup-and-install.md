@@ -94,7 +94,7 @@ Se você tiver problemas para usar o Xamarin depois de fazer essa configuração
   
 ##  <a name="mac"></a> Configuração do Mac (Apple ID, Xcode e Xamarin)  
   
-1.  Crie uma ID Apple gratuita em [https://appleid.apple.com](https://appleid.apple.com/) se você ainda não tiver uma. Isso é necessário para instalar e entrar no Xcode.  
+1.  Crie uma ID gratuita da Apple em [https://appleid.apple.com](https://appleid.apple.com/) caso ainda não tenha uma. Isso é necessário para instalar e entrar no Xcode.  
   
 2.  Baixe e instale o Xcode de [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) e adicione sua ID Apple, conforme é descrito em [Adicionando sua conta no XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  
   

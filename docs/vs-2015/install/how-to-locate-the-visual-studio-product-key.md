@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: c4eb2b40d6f61cefe0b8d80cafba84ebdf0dcedc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793933"
 ---
-# <a name="how-to-locate-the-visual-studio-product-key"></a>Como: Localize a chave de produto do Visual Studio
+# <a name="how-to-locate-the-visual-studio-product-key"></a>Como localizar a chave do produto do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Talvez seja conveniente localizar a chave do produto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando você estiver trabalhando com o atendimento ao cliente, atualizando de uma versão de avaliação ou atualizando seus próprios registros.
@@ -35,4 +35,4 @@ Talvez seja conveniente localizar a chave do produto do [!INCLUDE[vsprvs](../inc
     -   Documentação ou outros comunicados do fornecedor do qual você comprou o software.
 
 ## <a name="see-also"></a>Consulte também
- [Como: Atualização de uma edição de avaliação do Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [instalar o Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio e MSDN White Paper de licenciamento](http://go.microsoft.com/fwlink/?LinkId=191417)
+ [Como: atualizar de uma edição de avaliação do Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [instalar o Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio e MSDN White Paper de licenciamento](http://go.microsoft.com/fwlink/?LinkId=191417)
