@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204463"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002492"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Assista a variáveis com janelas de inspeção e QuickWatch 
 
@@ -30,7 +30,7 @@ Enquanto você estiver depurando, você pode usar **Watch** windows e **QuickWat
 
 **Assista** windows podem exibir diversas variáveis de cada vez durante a depuração. O **QuickWatch** caixa de diálogo exibe uma única variável por vez e deve ser fechada antes de depuração de continuar.
 
-Se esta foi sua primeira tentativa de depurar um código, leia [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md) antes continuar a ler este artigo.
+Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md) antes de prosseguir com este artigo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observe as variáveis com uma janela Inspeção
 
@@ -280,5 +280,5 @@ Para observar o `a` variável,
 
 ## <a name="see-also"></a>Consulte também
  [O que é depuração?](../debugger/what-is-debugging.md)  
- [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)  
  [Introdução à depuração](../debugger/debugger-feature-tour.md) [janelas do depurador](../debugger/debugger-windows.md)

@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb26e310673003ab25c4d08d4991ec33aa50932
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54792201"
 ---
 # <a name="javascript-memory"></a>Memória JavaScript
@@ -47,7 +47,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
    Objetos que não são criados diretamente em seu código de aplicativo são extraídos automaticamente. Você também pode filtrar dados pelo nome do objeto.  
   
-  Para ver um tutorial que o guie pelo processo de identificação de perda de memória em um aplicativo em funcionamento, confira [Passo a passo: Localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Para ver um tutorial que percorre o processo de identificação de perda de memória em um aplicativo em funcionamento, consulte [Passo a passo: localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   Neste tópico:  
   
@@ -126,7 +126,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 -   [Exibir comparações de um instantâneo](#SnapshotDiff). Mostra valores diferenciais entre instantâneos. Essas exibições mostram diferenças de tamanho e número de objetos.  
   
 ##  <a name="Isolate"></a> Isolar uma perda de memória  
- Estas etapas fornecem um fluxo de trabalho que pode ajudá-lo a usar o analisador de memória de JavaScript com mais eficiência. Estas etapas podem ser úteis se você suspeitar de vazamento de memória em seu aplicativo. Para ver um tutorial que o guie pelo processo de identificação de perda de memória em um aplicativo em funcionamento, confira [Passo a passo: Localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ Estas etapas fornecem um fluxo de trabalho que pode ajudá-lo a usar o analisador de memória de JavaScript com mais eficiência. Estas etapas podem ser úteis se você suspeitar de vazamento de memória em seu aplicativo. Para ver um tutorial que percorre o processo de identificação de perda de memória em um aplicativo em funcionamento, consulte [Passo a passo: localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Abra o aplicativo no Visual Studio.  
   
@@ -168,7 +168,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
     - Tamanho de heap diferencial (link à esquerda, abaixo do tamanho do heap). Esse texto de link mostra a diferença entre o tamanho do heap do instantâneo atual e o tamanho do heap do instantâneo anterior.  
   
-    - Contagem de objetos diferencial (link à direita, abaixo da contagem de objetos). O texto do link mostra dois valores (por exemplo, +1858 / -1765): O primeiro valor é o número de novos objetos adicionados desde o instantâneo anterior e o segundo valor é o número de objetos removidos desde o instantâneo anterior.  
+    - Contagem de objetos diferencial (link à direita, abaixo da contagem de objetos). O texto do link mostra dois valores (por exemplo, +1858 / -1765). O primeiro valor representa o número de novos objetos adicionados desde o instantâneo anterior, ao passo que o segundo valor traz o número de objetos removidos desde o instantâneo anterior.  
   
       Esses links abrem uma exibição de comparação dos detalhes do instantâneo dos tipos no heap, classificados pelo tamanho retido ou pela contagem de objetos, dependendo do link aberto.  
   
@@ -224,7 +224,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
 -   Contagem de objeto. Essa contagem mostra apenas objetos criados no seu aplicativo e filtra os objetos internos criados no tempo de execução JavaScript. A contagem de objeto é vinculada à exibição Tipos dos detalhes do instantâneo.  
   
--   Contagem diferencial de objeto. Isso mostra dois valores: O primeiro valor é o número de novos objetos adicionados desde o instantâneo anterior e o segundo valor é o número de objetos removidos desde o instantâneo anterior. Por exemplo, a ilustração mostra que 1.859 objetos foram adicionados e 1.733 objetos foram removidos do Instantâneo 1. Essas informações serão acompanhadas de uma seta para cima vermelha se o número de objetos aumentar, ou de uma seta para baixo verde se o número diminuir. Se a contagem de objetos não for alterada, você verá o texto **Sem alteração** em vez de um número. Para o primeiro instantâneo, você verá o texto **Linha de base**. A contagem diferencial de objeto é vinculada à exibição Tipos da diferença do instantâneo.  
+-   Contagem diferencial de objeto. Isso mostra dois valores: o primeiro valor é o número de novos objetos adicionados desde o instantâneo anterior, e o segundo valor é o número de objetos removidos desde o instantâneo anterior. Por exemplo, a ilustração mostra que 1.859 objetos foram adicionados e 1.733 objetos foram removidos do Instantâneo 1. Essas informações serão acompanhadas de uma seta para cima vermelha se o número de objetos aumentar, ou de uma seta para baixo verde se o número diminuir. Se a contagem de objetos não for alterada, você verá o texto **Sem alteração** em vez de um número. Para o primeiro instantâneo, você verá o texto **Linha de base**. A contagem diferencial de objeto é vinculada à exibição Tipos da diferença do instantâneo.  
   
 -   Captura da tela no momento em que o instantâneo é obtido.  
   
@@ -401,4 +401,4 @@ if (performance && performance.mark) {
     -   Crie um objeto de teste e controle-o nas exibições do analisador de memória do JavaScript, por exemplo, na exibição Tipos. Por exemplo, você pode anexar um objeto muito grande a outro objeto para ver se um objeto ou um elemento específico foi coletado como lixo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
+ [Passo a passo: localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

@@ -31,7 +31,7 @@ Como uma linguagem de programação Python é:
 - Geralmente é útil para programas rápidos de scripts, scripts de aplicativo, aplicativos da área de trabalho, servidores web, serviços web e computação científica.
 - Fácil de aprender e tem um bom design para incentivar a boa codificação (muitas universidades usam-os para cursos introdutórios de programação).
 - Flexível, suporte a estilos de programação imperativos, funcionais e orientada a objeto.
-- Gratuito e de código aberto
+- Gratuito e software livre.
 - É executado bem em todos os principais sistemas operacionais.  
 - Suporte para várias bibliotecas gratuitas, úteis e bem projetadas.  
 - Compatível com muita documentação, exemplos e uma sólida comunidade de desenvolvedores.  
@@ -46,7 +46,7 @@ Para instalar o Python em si, visite [ https://www.python.org/download/ ](https:
 As ferramentas Python para Visual Studio, que pode ser instalado a partir [visualstudio.com](https://www.visualstudio.com/explore/python-vs), fornecem os seguintes recursos:  
   
 - Suporte para vários intérpretes: várias versões de CPython, IronPython e IPython  
-- Um sistema de projeto que seleciona implicitamente uma estrutura de pastas de código Python e também permite controle explícito, para que você possa identificar código de aplicativo, código de teste, páginas da Web, JavaScript, scripts de build e assim por diante.  
+- Um sistema de projeto que seleciona implicitamente uma estrutura de pastas do código Python e também permite o controle explícito, de modo que você possa identificar o código do aplicativo, o código de teste, as páginas da Web, o JavaScript, os scripts de build e assim por diante.  
 - Modelos de projeto para console, Web, Azure, ciência de dados e outros tipos de projetos.    
 - O SDK do Azure para Python (veja abaixo)    
 - Recursos de compreensão de código e edição avançada, incluindo coloração de sintaxe, preenchimento automático em todo o seu código e bibliotecas, ajuda com assinatura, modo de exibição de classe, Ir para Definição, Localizar Todas as Referências, refatoração e muito mais.    

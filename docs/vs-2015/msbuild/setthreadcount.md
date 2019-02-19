@@ -41,7 +41,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  O número máximo de threads.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Um <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> com o conjunto de bit SUCCEEDED se a contagem de thread foi atualizada.  
+ Um [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) com o conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) se a contagem de threads foi atualizada.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** FileTracker.h

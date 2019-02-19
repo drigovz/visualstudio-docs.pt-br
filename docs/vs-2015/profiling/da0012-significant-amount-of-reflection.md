@@ -1,14 +1,9 @@
 ---
 title: 'DA0012: volume significativo de reflexão | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAReflection
 - vs.performance.12
@@ -18,13 +13,13 @@ ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9cea0faef4a0ee46b2fba0ea5c5bbbcd91e43bfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770767"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: volume significativo de reflexão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51739515"
 Id da regra | DA0012 |  
 | Categoria de |. Uso do .NET Framework |  
 | Métodos de criação de perfil | Amostragem |  
-| Mensagem | Você pode estar usando o reflexo excessivamente. Ele é uma operação cara. |  
+| Mensagem | Você pode estar usando o reflexo excessivamente. Essa é uma operação cara.|  
 | Tipo de regra | Aviso |  
   
 ## <a name="cause"></a>Causa  
@@ -45,6 +40,3 @@ Id da regra | DA0012 |
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a [Exibição de Detalhes da Função](../profiling/function-details-view.md) dos dados de criação de perfil. Examine as funções de chamada do método System.Type ou System.Reflection para encontrar as seções do programa que fazem o uso mais frequente de APIs de Reflexão do .NET. Evite usar métodos que retornam metadados. Quando o desempenho do aplicativo for crítico, talvez seja necessário evitar o uso da associação tardia e a criação de tipos dinamicamente em tempo de execução.
-
-
-

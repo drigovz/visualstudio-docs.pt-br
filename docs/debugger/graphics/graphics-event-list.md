@@ -32,7 +32,7 @@ Use a lista de eventos de gráficos no analisador de gráficos do Visual Studio 
 ### <a name="color-coded-events-in-direct3d-12"></a>Eventos codificados por cores no Direct3D 12  
  Direct3D 12 expõe várias filas que correspondem à funcionalidade de um hardware diferente. Para ajudar a identificar a fila que está associado a um evento de gráficos específico no Direct3D 12, os eventos são codificadas por cores na lista de eventos de acordo com suas filas quando você está trabalhando com uma captura de um aplicativo Direct3D 12.  
 
-|Direct3D 12 Queue|Cor|  
+|Fila do Direct3D 12|Cor|  
 |-----------------------|-----------|  
 |Processar a fila|Verde|  
 |Fila de computação|Amarelo|  

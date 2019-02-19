@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834823"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar o Visual Studio
@@ -43,7 +43,7 @@ Essa página guia você pela desinstalação do Visual Studio 2015, uma versão 
 1.  Localize o arquivo de .exe do Visual Studio (por exemplo, localize "vs_enterprise.exe").
 
     > [!NOTE]
-    >  O arquivo deve estar em uma subpasta de "%ProgramData%\Package Cache", por exemplo: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
+    >  O arquivo deve estar em uma subpasta de "%ProgramData%\Package Cache", por exemplo: Cache C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
 
 2.  Execute o arquivo .exe usando a desinstalar /Force parâmetros de linha de comando.
 
@@ -73,7 +73,7 @@ Essa página guia você pela desinstalação do Visual Studio 2015, uma versão 
 
 2. Instale ou reinstale a versão anterior do Visual Studio que você deseja usar.
 
-   Mesmo se você instalar uma versão anterior do Visual Studio, o programa de instalação pode ainda tentar usar uma versão mais recente ou se houver uma disponível. Para obter mais informações, consulte o [como: Instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tópico.
+   Mesmo se você instalar uma versão anterior do Visual Studio, o programa de instalação pode ainda tentar usar uma versão mais recente ou se houver uma disponível. Para obter mais informações, consulte o [como: instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tópico.
 
 ## <a name="see-also"></a>Consulte também
  [Instalar o Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

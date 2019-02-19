@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763108"
 ---
 # <a name="creating-solutions-and-projects"></a>Criando soluções e projetos
@@ -95,4 +95,4 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
   
 ## <a name="see-also"></a>Consulte também  
  [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)   
- [(NIB) Como: Criar soluções multiprojeto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [NIB Como criar soluções multiprojeto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

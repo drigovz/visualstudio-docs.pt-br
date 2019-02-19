@@ -73,7 +73,7 @@ ms.locfileid: "54773167"
  Lista os caracteres que podem ter “escapado” para serem interpretados corretamente. Uma sequência de escape é uma série de caracteres que indica que o que segue se trata de uma interpretação alternativa.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Visão geral do MSBuild ](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Apresenta o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e fornece links para tópicos que explicam como usá-lo para criar projetos.  
+ [Visão geral do MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Apresenta o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e fornece links para tópicos que explicam como usá-lo para criar projetos.  
   
  <xref:Microsoft.Build.Conversion>  
  Contém a referência ao namespace de conversão  

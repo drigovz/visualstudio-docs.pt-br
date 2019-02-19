@@ -44,14 +44,14 @@ Ao instalar o Visual Studio 2015 por meio de um prompt de comando, é possível 
 |**/CustomInstallPath** *InstallationDirectory*|Instala todos os pacotes que podem ser redestinados no diretório que você especifica.|
 |**/ForceRestart**|Sempre reinicia o computador após a instalação.|
 |**/full**|Instala todos os recursos do produto.|
-|**/InstallSelectableItems \<item name 1>[;\<item name 2>]**|Lista de itens da árvore de seleção para verificação na tela de seleção do Assistente de instalação.|
+|**/InstallSelectableItems \<nome do item 1>[;\<nome do item 2>]**|Lista de itens da árvore de seleção para verificação na tela de seleção do Assistente de instalação.|
 |**/l**<br /><br /> **/Log** *Filename*|Especifica um local para o arquivo de log.|
 |**/layout** *diretório*|Copia os arquivos da mídia de instalação no diretório que você especifica.|
 |**/NoCacheOnlyMode**|Impede pré-população do cache de pacote.|
 |**/NoRefresh**|Impede que a verificação de versões mais recentes do produto para versões atualizadas obrigatórias ou recomendadas.|
 |**/norestart**|Impede que o aplicativo de instalação reinicie o computador durante ou após a instalação. Consulte a seção códigos de retorno de [guia do administrador do Visual Studio](../install/visual-studio-administrator-guide.md) para os códigos de retorno a ser procurado.|
 |**/noweb**|Impede a instalação da Internet.|
-|**/OverrideFeedUri \<path to feed file>**|Caminho até um feed local e externo que descreve os itens de software|
+|**/OverrideFeedUri \<caminho para o arquivo do feed>**|Caminho até um feed local e externo que descreve os itens de software|
 |**/ProductKey**<br /><br /> *ProductKey*|Define uma chave de produto personalizada sem traços e com até 25 caracteres.|
 |**/PromptRestart**|Avisa o usuário antes de reiniciar o computador.|
 |**/q**<br /><br /> **/quiet**<br /><br /> **/s**<br /><br /> **/silent**|Suprime a interface de usuário para o aplicativo de instalação. Se o Visual Studio já estiver instalado e você não especificar outros parâmetros além desse, o aplicativo de instalação será executado no Modo de Manutenção.|

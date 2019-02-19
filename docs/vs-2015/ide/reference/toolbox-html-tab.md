@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780418"
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
@@ -32,9 +32,9 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
   
 ## <a name="tasks"></a>Tarefas  
   
--   [Como: Gerenciar a janela da caixa de ferramentas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+-   [Como gerenciar a janela Caixa de Ferramentas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [Como: Manipular guias da caixa de ferramentas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+-   [Como manipular guias da caixa de ferramentas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>Elementos da interface do usuário  
  As ferramentas a seguir estão disponíveis por padrão na guia HTML.  
@@ -42,7 +42,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
  **Ponteiro**  
  ![Ponteiro de HTMLpage do Designer de Dispositivo Móvel do ASP.NET](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- Essa ferramenta é selecionada por padrão quando uma guia da Caixa de ferramentas é aberta. Não pode ser excluído. O ponteiro permite arrastar objetos para a superfície do modo de exibição de Design, redimensioná-los e reposicioná-los na página ou no formulário. Para obter mais informações, confira [Como: Gerenciar a janela da caixa de ferramentas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [como: Manipular guias da caixa de ferramentas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+ Essa ferramenta é selecionada por padrão quando uma guia da Caixa de ferramentas é aberta. Não pode ser excluído. O ponteiro permite arrastar objetos para a superfície do modo de exibição de Design, redimensioná-los e reposicioná-los na página ou no formulário. Para obter mais informações, consulte [Como gerenciar a janela de ferramentas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Como manipular as guias da caixa de ferramentas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  **Entrada (Botão)**  
  ![Botão da página da Web HTML](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -55,7 +55,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Para obter mais informações, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxe declarativa do controle de servidor HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Como: Criar Scripts e editar manipuladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [mapa de conteúdo de controles de servidor da Web de botão](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, e <xref:System.Web.UI.WebControls.Button>.  
+ Para obter mais informações, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxe declarativa do controle de servidor HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: como: criar Scripts e editar manipuladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Mapa de conteúdo de controles de servidor da Web de botão](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, e <xref:System.Web.UI.WebControls.Button>.  
   
  **Entrada (Redefinição)**  
  ![Captura de tela de HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -126,7 +126,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- Para obter mais informações, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxe declarativa do controle de servidor HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [como: Definir um controle de servidor Web TextBox para entrada de senha](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), e [passo a passo: Validação de entrada do usuário em uma Web Forms página](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
+ Para obter mais informações, consulte [Controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxe declarativa do controle de servidor HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Como definir um controle de servidor Web TextBox para uma entrada de senha](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) e [Passo a passo: Validando uma entrada do usuário em uma página do Web Forms](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
 >  Se o aplicativo transmitir nomes de usuário e senhas, será necessário configurar o site para usar o protocolo SSL para criptografar a transmissão. Para obter mais informações, consulte “Protegendo conexões com o protocolo SSL” no [Guia de Operações do IIS](http://go.microsoft.com/fwlink/?linkid=47856). Além disso, é recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -225,7 +225,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
   
  É possível criar um elemento `select` multilinha aumentando o valor da propriedade de tamanho.  
   
- Para obter mais informações, consulte [sintaxe declarativa do controle de servidor HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Como: Criar Scripts e editar manipuladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [visão geral do controle de servidor Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [visão geral do controle de servidor Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, e <xref:System.Web.UI.WebControls.DropDownList>.  
+ Para obter mais informações, consulte [sintaxe declarativa do controle de servidor HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: como: criar Scripts e editar manipuladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [DropDownList Web Server Control Overview](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Visão geral do controle de servidor Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, e <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Régua horizontal**  
  ![Item Regra Horizontal da página HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  

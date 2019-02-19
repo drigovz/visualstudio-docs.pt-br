@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037831"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335240"
 ---
 # <a name="how-to-implement-nested-projects"></a>Como: Implementar projetos aninhados
 
@@ -65,7 +65,7 @@ Quando você cria um tipo de projeto aninhado, há várias etapas adicionais que
      Porque os projetos pai e filho são instanciados por meio de programação, você pode definir propriedades para projetos aninhados neste momento.
 
     > [!NOTE]
-    > Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode fazer se o projeto pai tem qualquer contexto para esse item, marcando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Dessa forma, você pode adicionar atributos ajuda dinâmica extra e opções de menu específicas para projetos aninhados individuais.
+    > Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode fazer se o projeto pai tem qualquer contexto para esse item, marcando [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). Dessa forma, você pode adicionar atributos ajuda dinâmica extra e opções de menu específicas para projetos aninhados individuais.
 
 10. A hierarquia é criada para exibição nas **Gerenciador de soluções** com uma chamada para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.
 

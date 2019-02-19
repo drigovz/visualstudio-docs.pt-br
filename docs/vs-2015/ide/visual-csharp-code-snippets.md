@@ -1,14 +1,9 @@
 ---
 title: Snippets de código do Visual C# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787099"
 ---
 # <a name="visual-c-code-snippets"></a>Snippets de código do Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Os snippets de código são snippets de código prontos que você pode inserir r
 |classe|Cria uma declaração de classe.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|  
 |ctor|Cria um construtor para a classe que o contém.|Dentro de uma classe.|  
 |cw|Cria uma chamada para <xref:System.Console.WriteLine%2A>.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|  
-|do|Cria uma [fazer](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` loop.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|  
+|do|Cria um loop [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|  
 |else|Cria um bloco [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|  
 |enum|Cria uma declaração [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|  
 |é igual a|Cria uma declaração de método que substitui o método <xref:System.Object.Equals%2A> definido na classe <xref:System.Object>.|Dentro de uma classe ou um struct.|  
@@ -83,10 +78,7 @@ Os snippets de código são snippets de código prontos que você pode inserir r
 ## <a name="see-also"></a>Consulte também  
  [Funções de snippet de código](../ide/code-snippet-functions.md)   
  [Snippets de código](../ide/code-snippets.md)   
- [Como criar um novo snippet com substituições](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Como: Criar um novo trecho com substituições](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Parâmetros de modelo](../ide/template-parameters.md)   
- [Como: usar trechos de código Surround-with](../ide/how-to-use-surround-with-code-snippets.md)   
- [Como restaurar snippets de refatoração C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Como usar snippets de código surround-with](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Como: Restaurar trechos de refatoração c#](../ide/how-to-restore-csharp-refactoring-snippets.md)

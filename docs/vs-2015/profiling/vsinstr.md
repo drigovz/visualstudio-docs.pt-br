@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09562c3372a6dd933d3656f1b2f7ccf7ca68109d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771021"
 ---
 # <a name="vsinstr"></a>VSInstr
@@ -47,7 +47,7 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|Lista as funções dentro da imagem especificada. Nenhuma instrumentação é executada.|  
 |**ExcludeSmallFuncs**|Exclui funções pequenas, que são funções curtas que não fazem chamadas de função, da instrumentação. A opção **ExcludeSmallFuncs** oferece menos sobrecarga devido à instrumentação, portanto, uma velocidade de instrumentação aprimorada.<br /><br /> A exclusão de pequenas funções também reduz o tamanho do arquivo .vsp e o tempo necessário para análise.|  
 |**Marca:**{**Antes**`&#124;`**Depois**`&#124;`**Superior**`&#124;`**Inferior**}`,funcname,markid`|Insere uma marca de perfil (um identificador usado para delimitar os dados em relatórios) que você pode usar para identificar o início ou término de um intervalo de dados no arquivo de relatório. vsp.<br /><br /> **Before** – Imediatamente antes da entrada da função de destino.<br /><br /> **After** – Imediatamente depois da saída da função de destino.<br /><br /> **Top** – Imediatamente depois da entrada da função de destino.<br /><br /> **Bottom** – Imediatamente antes de cada retorno na função de destino.<br /><br /> `funcname` – Nome da função de destino<br /><br /> `Markid` – Um inteiro positivo (longo) para usar como o identificador da marca de perfil.|  
-|**Cobertura**|Executa a instrumentação de cobertura. Pode ser que ele pode ser usado apenas com as seguintes opções: **Verbose**, **OutputPath**, **Exclude** e **Logfile**.|  
+|**Cobertura**|Executa a instrumentação de cobertura. Pode ser usado apenas com as seguintes opções: **Verbose**, **OutputPath**, **Exclude** e **Logfile**.|  
 |**Verbose**|A opção **Verbose** é usada para exibir informações detalhadas sobre o processo de instrumentação.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Suprime todos os avisos ou avisos específicos.<br /><br /> `Message Number` – o número o aviso. Se `Message Number` for omitido, todos os avisos serão suprimidos.<br /><br /> Para obter mais informações, consulte [Avisos VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Especifica o nível de criação de perfil das seguintes opções de controle de coleta de dados VSInstr:<br /><br /> **Iniciar**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** – Especifica as funções de controle da coleta de dados de nível de thread. A criação de perfil é iniciada ou interrompida somente para o thread atual. O estado da criação de perfil de outros threads não é afetado. O padrão é thread.<br /><br /> **Process** – Especifica as funções de controle da coleta de dados da criação de perfil em nível de processo. A criação de perfil é iniciada ou interrompida para todos os threads no processo atual. O estado da criação de perfil de outros processos não é afetado.<br /><br /> **Global** – Especifica as funções de controle de coleta de dados em nível global (processo cruzado).<br /><br /> Se você não especificar o nível de criação de perfil, ocorrerá um erro.|  

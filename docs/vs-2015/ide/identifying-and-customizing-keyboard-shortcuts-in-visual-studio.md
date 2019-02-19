@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54798981"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificando e personalizando atalhos de teclado no Visual Studio
@@ -91,7 +91,7 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
      Por exemplo, você pode escolher **Global** se desejar que o atalho funcione em todos os contextos. É possível usar qualquer atalho que não esteja mapeado (como Global) em outro editor. Caso contrário, o editor substitui o atalho.
 
     > [!NOTE]
-    >  Não é possível atribuir as seguintes teclas como parte de um atalho de teclado em **Global**: Imprimir Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, a tecla de logotipo do Windows, a chave de aplicativo, qualquer uma das teclas de direção ou Enter; Num Lock, excluir ou Clear no teclado numérico; ou Ctrl + Alt + Delete.
+    >  Não é possível atribuir as seguintes teclas como parte de um atalho de teclado em **Global**: Print Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, a tecla do logotipo do Windows, a tecla Aplicativo, qualquer uma das teclas de direção ou Enter; Num Lock, Delete ou Clear no teclado numérico; ou Ctrl+Alt+Delete.
 
 6.  Na caixa **Pressionar tecla(s) de atalho**, digite o atalho que deseja usar.
 

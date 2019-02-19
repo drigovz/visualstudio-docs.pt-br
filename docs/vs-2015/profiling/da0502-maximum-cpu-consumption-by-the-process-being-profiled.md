@@ -26,7 +26,7 @@ ms.locfileid: "54787349"
 Id da regra | DA0502 |  
 | Categoria | Monitoramento de recursos |  
 | Método de criação de perfil | Todos os |  
-| Mensagem | Essa regra é apenas para fins informativos. O contador Processo()\\% de tempo do processador mede o consumo da CPU do processo do qual o perfil está sendo criado. O valor relatado é o máximo observado em todos os intervalos de medição.  
+| Mensagem | Essa regra é apenas para fins informativos. O contador Processo()\\% de tempo do processador mede o consumo da CPU do processo do qual o perfil está sendo criado. O valor relatado é o máximo observado em todos os intervalos de medição.|  
 | Tipo de regra | Informação |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

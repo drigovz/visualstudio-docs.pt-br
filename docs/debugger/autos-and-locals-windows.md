@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204476"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941977"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas Autos e locais
 
-O **automóveis** e **Locals** windows mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. O **automóveis** janela mostra as variáveis usadas em torno do ponto de interrupção atual. O **Locals** janela mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se esta foi sua primeira tentativa de depurar um código, leia [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md) antes continuar a ler este artigo.
+O **automóveis** e **Locals** windows mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. O **automóveis** janela mostra as variáveis usadas em torno do ponto de interrupção atual. O **Locals** janela mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md) antes de prosseguir com este artigo.
 
  O **automóveis** janela está disponível para C#, código do Visual Basic, C++ e Python, mas não para JavaScript ou F#.
   
@@ -150,5 +150,5 @@ Para ver os valores de retorno de `sumVars()` e `subtractVars()` chamadas de mé
   
 ## <a name="see-also"></a>Consulte também  
  [O que é depuração?](../debugger/what-is-debugging.md)  
- [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)  
  [Introdução à depuração](../debugger/debugger-feature-tour.md) [janelas do depurador](../debugger/debugger-windows.md)

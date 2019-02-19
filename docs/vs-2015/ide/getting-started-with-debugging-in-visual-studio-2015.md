@@ -11,10 +11,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54764842"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introdução à depuração no Visual Studio 2015
@@ -22,7 +22,7 @@ ms.locfileid: "54764842"
 
 Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de depuração e build do projeto. Neste tópico, descubra como começar a usar o conjunto mais básico de recursos de interface do usuário de depuração.
 
- Observação: há links para recursos mais avançados e tópicos específicos da plataforma ou do recurso na parte inferior desta página.
+ Observação: links para recursos mais avançados e tópicos específicos de plataforma ou de recurso estão na parte inferior desta página.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>Meu código não funciona. Ajude-me, Visual Studio 2015!
  Então você descobriu o editor e criei alguns códigos. Agora, você deseja iniciar a depuração desse código. No Visual Studio 2015, assim como acontece com a maioria dos IDEs, há duas fases para depuração: compilar o código para detectar e resolver erros de compilador e de projeto e executar esse código no ambiente para detectar e resolver erros de tempo de execução e dinâmicos.
@@ -44,7 +44,7 @@ Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de depu
 
  Ao começar, basta usar **Depuração** e **x86** como sua configuração de build e plataforma, respectivamente. Quando você terminar de codificar e depurar, altere a configuração para **Versão** e direcione para uma plataforma específica. (As versões mais antigas do Visual Studio forneciam uma plataforma padrão **AnyCPU** para projetos de código .Net.)
 
- Observação: quando você cria seu projeto, os valores de configuração e de plataforma também são usados para determinar qual caminho de diretório do projeto é criado para armazenar o executável. Normalmente, ele é **\<caminho-para-o-projeto>\\<nome-do-projeto>\\<configuração\>\\<plataforma\>**. Por exemplo, um projeto com uma configuração de `Debug` e uma plataforma de `x86` seria encontrado em `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Isso poderá ser útil se você tiver suas próprias ferramentas ou scripts que gerenciam esses executáveis compilados.
+ Observação: quando você compila seu projeto, os valores de configuração e plataforma também são usados para determinar que caminho de diretório do projeto é criado para armazenar o executável. Normalmente, ele é **\<caminho-para-o-projeto>\\<nome-do-projeto>\\<configuração\>\\<plataforma\>**. Por exemplo, um projeto com uma configuração de `Debug` e uma plataforma de `x86` seria encontrado em `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Isso poderá ser útil se você tiver suas próprias ferramentas ou scripts que gerenciam esses executáveis compilados.
 
 ### <a name="building-your-code"></a>Compilando seu código
  Com seu build configurado, é hora de realmente compilar seu projeto. A maneira mais fácil de fazer isso é pressionar F7, mas você também pode iniciar o build selecionando **Compilar->Compilar Solução** no menu principal.

@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755307"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Caixa de diálogo Navegador da Web, Ambiente, Opções
@@ -54,7 +54,7 @@ Define opções para o navegador da Web interno e o Internet Explorer. Para aces
   
 - **Editor de origem** Selecione para exibir a fonte em [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
-- **Editor de HTML** Selecione para exibir a fonte no [Designer de HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use esta seleção para editar a página da Web em um dos dois modos de exibição: O modo de exibição de Design ou o modo de exibição padrão de Origem baseada em texto.  
+- **Editor de HTML** Selecione para exibir a fonte no [Designer de HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.  
   
 - **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.  
   

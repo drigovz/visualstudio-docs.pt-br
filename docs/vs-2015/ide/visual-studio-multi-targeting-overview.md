@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768874"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multissegmentação do Visual Studio
@@ -60,7 +60,7 @@ Nesta versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível espe
 >  A definição de destino da estrutura não assegura que o aplicativo será executado corretamente. É necessário testar o aplicativo para ter certeza de que ele é executado na versão de destino. Não é possível definir como destino versões de estrutura anteriores ao .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Selecionando uma versão de estrutura de destino
- Ao criar um projeto, selecione a versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino na caixa de diálogo **Novo Projeto**. A lista de modelos de projeto disponíveis é filtrada com base na seleção. Em um projeto existente, é possível alterar a versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, confira [Como: Direcionar a uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Ao criar um projeto, selecione a versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino na caixa de diálogo **Novo Projeto**. A lista de modelos de projeto disponíveis é filtrada com base na seleção. Em um projeto existente, é possível alterar a versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 >  Nas edições Express do Visual Studio, não é possível definir a estrutura de destino na caixa de diálogo **Novo Projeto**.
@@ -76,7 +76,7 @@ Nesta versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível espe
  Para obter mais informações sobre referências de assembly, consulte [Resolvendo assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="enabling-linq"></a>Habilitando o LINQ
- Ao definir o .NET Framework 3.5 ou posterior como destino, uma referência ao System.Core e uma importação no nível do projeto para System.Linq (somente no Visual Basic) são adicionadas automaticamente. Se você desejar usar recursos do LINQ, também será necessário ativar a Opção Infer (somente no Visual Basic). A referência e a importação serão removidas automaticamente se você alterar o destino para uma versão anterior do .NET Framework. Para obter mais informações, confira [Como: Criar um projeto LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
+ Ao definir o .NET Framework 3.5 ou posterior como destino, uma referência ao System.Core e uma importação no nível do projeto para System.Linq (somente no Visual Basic) são adicionadas automaticamente. Se você desejar usar recursos do LINQ, também será necessário ativar a Opção Infer (somente no Visual Basic). A referência e a importação serão removidas automaticamente se você alterar o destino para uma versão anterior do .NET Framework. Para obter mais informações, consulte [Como criar um projeto do LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Consulte também
  [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md) [.NET Framework Multi-Targeting para projetos Web ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [requisitos de sistema e compatibilidade de plataforma](http://www.microsoft.com/visualstudio/eng/products/compatibility)

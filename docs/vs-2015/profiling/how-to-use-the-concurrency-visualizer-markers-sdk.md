@@ -96,7 +96,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Adicione o código para criar três intervalos na série de marcador padrão e gravar um sinalizador, uma mensagem e um alerta, um para cada intervalo. Crie um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> chamando o método estático <!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan. Para escrever a série padrão, use os métodos estáticos de escrita da classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Adicione o código para criar três intervalos na série de marcador padrão e gravar um sinalizador, uma mensagem e um alerta, um para cada intervalo. Crie um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> chamando o método estático [EnterSpan](<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->). Para escrever a série padrão, use os métodos estáticos de escrita da classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```vb  
   

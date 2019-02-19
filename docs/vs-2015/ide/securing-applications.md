@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800753"
 ---
 # <a name="securing-applications"></a>Protegendo aplicativos
@@ -30,7 +30,7 @@ Embora a maioria dos aplicativos tenham desafios de segurança comuns, cada dom�
  [Práticas Recomendadas de segurança](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
  Fornece informações sobre os recursos e as práticas de segurança disponíveis ao trabalhar no Visual C++.  
   
- [NÃO ESTÁ EM COMPILAÇÃO: Segurança e programação (C# e Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
+ [NÃO ESTÁ EM BUILD: segurança e programação (C# e Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
  Fornece informações sobre os três principais problemas de segurança para desenvolvedores do Visual Basic e C#: privilégios, aplicativos Web e instalação do Visual Studio.  
   
 ## <a name="securing-mobile-applications"></a>Protegendo aplicativos móveis  
@@ -57,7 +57,7 @@ Embora a maioria dos aplicativos tenham desafios de segurança comuns, cada dom�
  [Considerações de segurança para JScript](http://msdn.microsoft.com/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
  Detalha algumas armadilhas de segurança que os desenvolvedores de JScript podem encontrar.  
   
- [Como: Usar segurança de transporte](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [Como usar segurança de transporte](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  Descreve como usar a segurança de transporte para autenticação ao se conectar a um serviço WCF.  
   
 ## <a name="securing-desktop-applications"></a>Protegendo aplicativos de área de trabalho  

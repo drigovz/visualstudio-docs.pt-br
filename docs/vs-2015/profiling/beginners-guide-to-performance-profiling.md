@@ -25,7 +25,7 @@ ms.locfileid: "54761523"
 # <a name="beginners-guide-to-performance-profiling"></a>Guia do iniciante à criação de perfil do desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.  
+Use as Ferramentas de Criação de Perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.  
   
  **Amostragem** é um método de criação de perfil estatístico que mostra as funções que fazem a maior parte do trabalho do modo de usuário no aplicativo. A amostragem é uma boa opção para começar a procurar áreas para acelerar seu aplicativo.  
   

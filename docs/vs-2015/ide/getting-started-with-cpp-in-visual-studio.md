@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758236"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introdução à linguagem C++ no Visual Studio
@@ -36,7 +36,7 @@ Ao concluir esta explicação passo a passo, você estará familiarizado com vá
 ##  <a name="BKMK_Configure"></a> Entrar no Visual Studio
  Quando você iniciar o Visual Studio pela primeira vez, terá a chance de entrar usando uma conta da Microsoft, como do Live ou do Outlook. Entrar permite que suas configurações sejam sincronizadas em todos os seus dispositivos. Para obter mais informações, consulte [Entrando no Visual Studio](../ide/signing-in-to-visual-studio.md)
 
- Figura 1: Visual Studio IDE
+ Figura 1: IDE do Visual Studio
 
  ![IDE com as configurações do Visual C&#43;&#43; aplicadas](../ide/media/c-ide-defaultenvironmentlayout.png "C++IDE_DefaultEnvironmentLayout")
 

@@ -162,7 +162,7 @@ Os erros exibidos na **saída** janela.
 
 ##  <a name="BKMK_Syntax_reference"></a> Referência de sintaxe do Natvis  
 
-###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer element  
+###  <a name="BKMK_AutoVisualizer"></a> Elemento AutoVisualizer  
 O `AutoVisualizer` elemento é o nó raiz do *. natvis* do arquivo e contém o namespace `xmlns:` atributo. 
 
 ```xml

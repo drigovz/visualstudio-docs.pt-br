@@ -26,7 +26,7 @@ ms.locfileid: "54793042"
 Id da regra | DA0505 |  
 | Categoria | Gerenciamento de recursos |  
 | Método de criação de perfil | Todos os |  
-| Mensagem | Estas informações foram coletadas apenas para fins informativos. O contador Bytes privados do processo mede a memória virtual alocada pelo processo do qual o perfil está sendo criado. O valor relatado é a média calculada de todos os intervalos de medição.  
+| Mensagem | Estas informações foram coletadas apenas para fins informativos. O contador Bytes privados do processo mede a memória virtual alocada pelo processo do qual o perfil está sendo criado. O valor relatado é a média calculada de todos os intervalos de medição.|  
 | Tipo de regra | Informações |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

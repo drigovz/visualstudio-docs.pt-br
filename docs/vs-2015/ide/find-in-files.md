@@ -31,7 +31,7 @@ ms.locfileid: "54804353"
 # <a name="find-in-files"></a>Localizar em Arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O Localizar nos Arquivos permite pesquisar um conjunto de arquivos especificado. As correspondências encontradas e as ações executadas são listadas na janela **Localizar Resultados** selecionada em **Opções de resultado**.  
+O recurso Localizar nos Arquivos** permite pesquisar um conjunto especificado de arquivos. As correspondências encontradas e as ações executadas são listadas na janela **Localizar Resultados** selecionada em **Opções de resultado**.  
   
  É possível usar qualquer um dos métodos a seguir para exibir **Localizar nos Arquivos** na janela **Localizar e Substituir**.  
   

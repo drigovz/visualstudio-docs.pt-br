@@ -114,7 +114,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 |**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento (}) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura ({).|  
 |**Vírgulas para separar parâmetros MarkupExtension**|Especifica se vírgulas são geradas quando você digita mais de um parâmetro em uma extensão de marcação.|  
 
-## <a name="default-view"></a>exibição padrão  
+## <a name="default-view"></a>Exibição padrão  
  Use essa configuração para controlar se o modo de exibição de Design aparece quando documentos XAML são carregados.  
 
 |||  

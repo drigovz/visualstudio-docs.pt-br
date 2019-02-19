@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979641"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335487"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Acessar a exibição de texto, usando a API herdada
 Uma exibição de texto é uma apresentação do texto que é armazenado em um buffer de texto. Você pode acessar a exibição de texto usando a API herdada, conforme mostrado na seção a seguir.
@@ -23,7 +23,7 @@ Uma exibição de texto é uma apresentação do texto que é armazenado em um b
 ## <a name="text-view-object"></a>Objeto de exibição de texto
  Cada modo de exibição está associado com o próprio buffer de texto e o modo de exibição é uma janela sobre os dados no buffer. O diagrama a seguir mostra as interfaces principais do objeto de exibição de texto, que é representado por <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Objeto de exibição de texto do Visual Studio](../extensibility/media/vstextview.gif "vstextview") objeto de exibição de texto
+ ![Objeto de exibição de texto do Visual Studio](../extensibility/media/vstextview.gif)
 
  O modo de exibição é uma maneira de apresentar o texto no buffer. Ele inclui recursos como quebra automática de linha e a estrutura de tópicos, para que o que você vê no modo de exibição não é uma representação exata do texto no buffer.
 

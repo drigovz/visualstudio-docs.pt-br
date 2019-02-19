@@ -26,7 +26,7 @@ ms.locfileid: "54771063"
 Id da regra | DA0024 |  
 | Categoria de |. Uso do .NET Framework |  
 | Método de criação de perfil | Todos os |  
-| Mensagem | % Time no GC é muito alta. Há uma quantidade excessiva de sobrecarga de coleta de lixo.  
+| Mensagem | % Time no GC é muito alta. Há uma quantidade excessiva de sobrecarga de coleta de lixo.|  
 | Tipo de regra | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 340a12bfb8dc9a26c4200682851bb0acc684dddf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787384"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Exibição Funções – Dados de instrumentação de memória do .NET
@@ -100,7 +100,7 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: Personalizar as Colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição de Funções – Amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Exibição de Funções](../profiling/functions-view-instrumentation-data.md)   
  [Exibição Funções](../profiling/functions-view-sampling-data.md)

@@ -29,7 +29,7 @@ ms.locfileid: "54803534"
 Id da regra | DA0029 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Método de criação de perfil | Criação de perfil da linha de comando |  
-| Mensagem | Uma versão do CLR sem suporte foi detectada durante a coleta. Talvez os símbolos gerenciados não resolvam corretamente.  
+| Mensagem | Uma versão do CLR sem suporte foi detectada durante a coleta. Os símbolos gerenciados podem não ser resolvidos corretamente.|  
 | Tipo de regra | Informações. |  
   
 ## <a name="cause"></a>Causa  

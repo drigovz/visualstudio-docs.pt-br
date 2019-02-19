@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776092"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -61,8 +61,8 @@ VSPerfCmd [/U] [/options]
   
 |Opção|Descrição|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Executável*|Inicia o aplicativo especificado e começa a criação de perfil.|  
-|[Args](../profiling/args.md) **:** *Argumentos*|Especifica argumentos de linha de comando a serem passados para o aplicativo iniciado.|  
+|[Launch](../profiling/launch.md) **:** *Executable*|Inicia o aplicativo especificado e começa a criação de perfil.|  
+|[Args](../profiling/args.md) **:** *Arguments*|Especifica argumentos de linha de comando a serem passados para o aplicativo iniciado.|  
 |[Console](../profiling/console.md)|Inicia o comando especificado em uma nova janela de prompt de comando.|  
 |[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Inicia a criação de perfil dos processos especificados. Os processos podem ser identificados pela id do processo ou pelo nome do processo.|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Para a criação de perfil dos processos especificados. Os processos podem ser identificados pela id do processo ou pelo nome do processo. Se nenhum processo for especificado, a criação de perfil será interrompida para todos os processos.|  
@@ -86,8 +86,8 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|Permite ou nega o acesso do usuário ou grupo especificado aos serviços de criação de perfil.<br /><br /> `Right` pode ser:<br /><br /> CrossSession - dá ao usuário acesso ao serviço a fim de executar a criação cruzada de perfil.<br /><br /> SampleProfiling - dá ao usuário acesso ao driver para habilitar a criação de perfil de amostragem. Também é usado para acessar informações de transição de kernel durante a criação de perfil de rastreamento.<br /><br /> FullAccess - dá ao usuário acesso ao CrossSession e ao SampleProfiling.|  
 |**Admin:Security, List**|Lista o estado atual dos serviços de criação de perfil e lista as permissões de usuário.|  
-|**Admin:** \<*Serviço*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Inicia, para, instala ou desinstala o componente de serviço de criação de perfil (serviço) ou o driver de dispositivo de modo kernel (driver).|  
-|**Admin:** \<*Serviço*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Habilita ou desabilita a inicialização automática do serviço de criação de perfil (serviço) ou driver de dispositivo de modo kernel (driver) após a reinicialização.|  
+|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Inicia, para, instala ou desinstala o componente de serviço de criação de perfil (serviço) ou o driver de dispositivo de modo kernel (driver).|  
+|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Habilita ou desabilita a inicialização automática do serviço de criação de perfil (serviço) ou driver de dispositivo de modo kernel (driver) após a reinicialização.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  A opção **VSPerfCmd /Driver** está obsoleta. Use a opção **VsPerfCmdAdmin** para essa funcionalidade.  

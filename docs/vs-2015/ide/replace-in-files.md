@@ -26,7 +26,7 @@ ms.locfileid: "54779236"
 # <a name="replace-in-files"></a>Substituir nos Arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Substituir nos Arquivos permite pesquisar o código de um conjunto especificado de arquivos para uma cadeia de caracteres ou expressão e alterar algumas ou todas as correspondências encontradas. As correspondências encontradas e as ações executadas são listadas na janela **Localizar Resultados** selecionada em **Opções de resultado**.  
+O recurso Substituir nos Arquivos** permite pesquisar o código de um conjunto especificado de arquivos em busca de uma cadeia de caracteres ou uma expressão e alterar algumas ou todas as correspondências encontradas. As correspondências encontradas e as ações executadas são listadas na janela **Localizar Resultados** selecionada em **Opções de resultado**.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

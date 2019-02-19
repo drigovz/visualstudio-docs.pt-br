@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756459"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
@@ -45,7 +45,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  O identificador inteiro do processo para iniciar ou parar. IDs de processo são listados na guia processo do Gerenciador de tarefas do Windows.  
   
 ## <a name="required-subcommands"></a>Subcomandos necessários  
- Nenhum  
+ Nenhuma  
   
 ## <a name="valid-subcommands"></a>Subcomandos válidos  
  **ProcessOn** e **ProcessOff** podem ser especificados em linhas de comando que também contêm os subcomandos a seguir.  

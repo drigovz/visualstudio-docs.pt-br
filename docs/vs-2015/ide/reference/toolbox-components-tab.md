@@ -12,17 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775882"
 ---
 # <a name="toolbox-components-tab"></a>Caixa de Ferramentas, Guia Componentes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-Exibe os componentes que podem ser adicionados a designers [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Além dos componentes [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] incluídos no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou os componentes de terceiros a essa guia. Para obter mais informações, confira [Como: Manipular guias da caixa de ferramentas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+Exibe os componentes que podem ser adicionados a designers [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Além dos componentes [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] incluídos no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou os componentes de terceiros a essa guia. Para obter mais informações, consulte [Como manipular guias da caixa de ferramentas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Para exibir essa guia, no menu **Exibir**, selecione **Caixa de ferramentas**. Na **Caixa de ferramentas**, selecione a guia **Componentes**.  
   
@@ -42,7 +42,7 @@ Exibe os componentes que podem ser adicionados a designers [!INCLUDE[vbprvb](../
  Cria uma instância do componente <xref:System.Diagnostics.EventLog>, que pode ser usada para interagir com logs do sistema e de eventos personalizados, incluindo a gravação de eventos em um log e a leitura dos dados de log. Para obter mais informações, consulte [Introdução ao componente EventLog](http://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
  **FileSystemWatcher**  
- Cria uma instância do componente <xref:System.IO.FileSystemWatcher>, que pode ser usada para monitorar alterações em um diretório ou arquivo ao qual você tem acesso. Para obter mais informações, confira [Como: Configurar instâncias do componente FileSystemWatcher](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
+ Cria uma instância do componente <xref:System.IO.FileSystemWatcher>, que pode ser usada para monitorar alterações em um diretório ou arquivo ao qual você tem acesso. Para obter mais informações, consulte [Como configurar as instâncias do componente FileSystemWatcher](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
   
  **HelpProvider**  
  Cria uma instância do componente `System.Windows.Forms.HelpProvider` que fornece Ajuda pop-up ou online para controles.  

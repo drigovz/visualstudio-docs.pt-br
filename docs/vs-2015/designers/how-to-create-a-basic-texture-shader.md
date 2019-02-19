@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar um sombreador de textura básico | Microsoft Docs'
+title: Como criar um sombreador de textura básico | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793428"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Como: Criar um sombreador de textura básica
+# <a name="how-to-create-a-basic-texture-shader"></a>Como criar um sombreador de textura básica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed Graph Shader Language) para criar um sombreador de textura única. Esse sombreador define a cor final diretamente para os valores RGB e alfa, cujas amostras são obtidas da textura.  
@@ -66,7 +66,7 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
  Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte [Designer de Sombreador](../designers/shader-designer.md)  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Editor de imagens](../designers/image-editor.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

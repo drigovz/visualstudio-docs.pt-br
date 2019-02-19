@@ -1,14 +1,9 @@
 ---
 title: Analisar o uso da CPU em um aplicativo universal do Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,21 +13,21 @@ ms.assetid: c122b08e-e3bf-43e6-bd6c-e776e178fd9a
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 11e8587176ecc452f8f97132d296cff93b09b5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: d6728ce1f83c53a406512c75d89368dbcdd87c3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777427"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analisar o uso de CPU em um aplicativo universal do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Quando você precisa investigar problemas de desempenho no aplicativo, um bom começo é entender como ele usa a CPU. A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código. Para se concentrar em cenários específicos, o uso da CPU pode ser executado com o [capacidade de resposta de interface do usuário XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) ferramenta, o [consumo de energia](../profiling/analyze-energy-use-in-store-apps.md) ferramenta ou ambas as ferramentas em uma única sessão de diagnóstico.  
+ Quando você precisa investigar problemas de desempenho no aplicativo, um bom começo é entender como ele usa a CPU. A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código. Para se concentrar em cenários específicos, a ferramenta Uso da CPU pode ser executada com a ferramenta [Capacidade de Resposta da Interface do Usuário XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), a ferramenta [Consumo de Energia](../profiling/analyze-energy-use-in-store-apps.md) ou ambas as ferramentas em uma única sessão de diagnóstico.  
   
 > [!NOTE]
 >  A ferramenta **Uso da CPU** não pode ser usada com os aplicativos Windows Phone Silverlight 8.1.  
@@ -321,6 +316,3 @@ namespace CpuUseDemo
 }  
   
 ```
-
-
-

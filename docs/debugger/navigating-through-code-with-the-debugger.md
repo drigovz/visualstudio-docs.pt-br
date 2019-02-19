@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 2a009bb48d130f35fa9663602762d5cff9789037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204477"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070611"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
 
-O depurador do Visual Studio pode ajudá-lo a navegar pelo código para inspecionar o estado de um aplicativo e mostrar o fluxo de execução. Você pode usar atalhos de teclado, comandos de depuração, os pontos de interrupção e outros recursos para obter rapidamente o código que você deseja examinar. Familiaridade com comandos de navegação do depurador e atalhos torna mais rápido e mais fácil localizar e resolver problemas do aplicativo.  Se esta foi sua primeira tentativa de depurar um código, leia [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md) antes continuar a ler este artigo.
+O depurador do Visual Studio pode ajudá-lo a navegar pelo código para inspecionar o estado de um aplicativo e mostrar o fluxo de execução. Você pode usar atalhos de teclado, comandos de depuração, os pontos de interrupção e outros recursos para obter rapidamente o código que você deseja examinar. Familiaridade com comandos de navegação do depurador e atalhos torna mais rápido e mais fácil localizar e resolver problemas do aplicativo.  Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md) antes de prosseguir com este artigo.
   
 ## <a name="basic-debugging"></a>Depuração básica  
 
@@ -186,5 +186,5 @@ Para carregar símbolos da Microsoft, consulte [configurar locais de símbolos e
 
 ## <a name="see-also"></a>Consulte também
  [O que é depuração?](../debugger/what-is-debugging.md)  
- [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)  
  [Primeira olhada na depuração](../debugger/debugger-feature-tour.md) 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Aplicar chaves de produto durante a implantação do Visual Studio 2015 | Microsoft Docs'
+title: 'Como: aplicar as chaves de produto durante a implantação do Visual Studio 2015 | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,13 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834842"
 ---
-# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Como: Aplicar chaves do produto (Product Keys) durante a implantação do Visual Studio
+# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Como aplicar as chaves de produto automaticamente durante a implantação do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obter a documentação mais recente do Visual Studio 2017, consulte [aplicar chaves de produto durante a implantação do Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
@@ -54,7 +54,7 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [aplica
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Para obter mais informações sobre como obter uma chave do produto, consulte [como: Localize a chave de produto do Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
+ Para obter mais informações sobre como obter uma chave do produto, consulte [como: localizar a chave de produto do Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
 
  Se o StorePID.exe aplicou a chave do produto (Product Key) com êxito, ele retornará 0. Se ele encontrar erros, retornará um número entre 1 e 6.
 

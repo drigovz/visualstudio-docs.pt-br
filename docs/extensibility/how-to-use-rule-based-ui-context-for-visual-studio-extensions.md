@@ -7,22 +7,24 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905193110d8485399b01c1e3c00791154efee637
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824282"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335344"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Como: Usar o contexto de interface do usuário baseada em regras para extensões do Visual Studio
+
 Visual Studio permite o carregamento de VSPackages quando determinados bem conhecidos <xref:Microsoft.VisualStudio.Shell.UIContext>s são ativados. Entretanto, nesses contextos de interface do usuário não são bem mais refinado, que não deixa os autores de extensão nenhuma opção, mas para selecionar um contexto de interface do usuário disponível que ativa antes do ponto realmente desejasse o VSPackage ao carregar. Para obter uma lista de contextos de interface do usuário bem conhecidos, consulte <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
- Carregando pacotes pode ter um impacto no desempenho e carregá-los mais cedo do que o necessário não é a prática recomendada. Visual Studio 2015 introduziu o conceito de com base em regras de contextos de interface do usuário, um mecanismo que permite que os autores de extensão definir as condições precisas sob as quais um contexto de interface do usuário é ativado e VSPackages associados são carregados.  
+Carregando pacotes pode ter um impacto no desempenho e carregá-los mais cedo do que o necessário não é a prática recomendada. Visual Studio 2015 introduziu o conceito de com base em regras de contextos de interface do usuário, um mecanismo que permite que os autores de extensão definir as condições precisas sob as quais um contexto de interface do usuário é ativado e VSPackages associados são carregados.  
   
 ## <a name="rule-based-ui-context"></a>Contexto de interface do usuário baseada em regra  
- Uma "regra" consiste em um novo contexto de interface do usuário (um GUID) e uma expressão booliana que faz referência a um ou mais "termos de" combinada com lógica "and", "ou", "não" operações. "Termos de" são avaliados dinamicamente em tempo de execução e a expressão é reavaliada sempre que qualquer uma das suas alterações de termos. Quando a expressão é avaliada como true, o contexto de interface do usuário associado é ativado. Caso contrário, o contexto de interface do usuário é desativado.  
+
+Uma "regra" consiste em um novo contexto de interface do usuário (um GUID) e uma expressão booliana que faz referência a um ou mais "termos de" combinada com lógica "and", "ou", "não" operações. "Termos de" são avaliados dinamicamente em tempo de execução e a expressão é reavaliada sempre que qualquer uma das suas alterações de termos. Quando a expressão é avaliada como true, o contexto de interface do usuário associado é ativado. Caso contrário, o contexto de interface do usuário é desativado.  
   
- Contexto de interface do usuário com base em regra pode ser usado de várias maneiras:  
+Contexto de interface do usuário com base em regra pode ser usado de várias maneiras:  
   
 1. Especifique as restrições de visibilidade para comandos e janelas de ferramentas. Você pode ocultar as janelas de ferramentas/comandos até que a regra de contexto de interface do usuário seja atendida.  
   
@@ -124,30 +126,30 @@ Visual Studio permite o carregamento de VSPackages quando determinados bem conhe
 ```  
   
 ## <a name="term-types"></a>Tipos de termo  
- Aqui estão os vários tipos de termo que têm suporte:  
+
+Aqui estão os vários tipos de termo que têm suporte:  
   
 |Termo|Descrição|  
 |-|-|  
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|O GUID se refere a um contexto de interface do usuário. O termo será true sempre que o contexto de interface do usuário está ativo e false caso contrário.|  
-|HierSingleSelectionName:\<padrão >|O termo será true sempre que a seleção na hierarquia do Active Directory é um único item e o nome do item selecionado corresponde à expressão regular .net fornecido pelo "padrão".|  
-|UserSettingsStoreQuery:\<consulta >|"consulta" representa um caminho completo para o repositório de configurações do usuário, que deve ser avaliada como um valor diferente de zero. A consulta é dividida em uma "coleção" e "propertyName" em que a última barra.|  
-|ConfigSettingsStoreQuery:\<consulta >|"consulta" representa um caminho completo para o repositório de configurações de configuração, que deve ser avaliada como um valor diferente de zero. A consulta é dividida em uma "coleção" e "propertyName" em que a última barra.|  
-|ActiveProjectFlavor:\<projectTypeGuid >|O termo será true sempre que o projeto selecionado atualmente é tipo (agregado) e tem um tipo correspondente ao tipo de projeto determinado GUID.|  
-|ActiveEditorContentType:\<contentType >|O termo será true quando o documento selecionado é um editor de texto com o tipo de conteúdo fornecido.|  
-|ActiveProjectCapability:\<expressão >|O termo é verdadeiro quando os recursos de projeto ativo correspondem a expressão fornecida. Uma expressão pode ser algo parecido com VB &#124; CSharp.|  
-|SolutionHasProjectCapability:\<expressão >|Semelhante ao acima mas termo é verdadeiro quando a solução tem qualquer projeto carregado que corresponde à expressão.|  
-|SolutionHasProjectFlavor:\<projectTypeGuid >|O termo será true sempre que uma solução tem um projeto que é o tipo (agregado) e tem um tipo correspondente ao tipo de projeto determinado GUID.|
+|HierSingleSelectionName:\<pattern>|O termo será true sempre que a seleção na hierarquia do Active Directory é um único item e o nome do item selecionado corresponde à expressão regular .net fornecido pelo "padrão".|  
+|UserSettingsStoreQuery:\<query>|"consulta" representa um caminho completo para o repositório de configurações do usuário, que deve ser avaliada como um valor diferente de zero. A consulta é dividida em uma "coleção" e "propertyName" em que a última barra.|  
+|ConfigSettingsStoreQuery:\<query>|"consulta" representa um caminho completo para o repositório de configurações de configuração, que deve ser avaliada como um valor diferente de zero. A consulta é dividida em uma "coleção" e "propertyName" em que a última barra.|  
+|ActiveProjectFlavor:\<projectTypeGuid>|O termo será true sempre que o projeto selecionado atualmente é tipo (agregado) e tem um tipo correspondente ao tipo de projeto determinado GUID.|  
+|ActiveEditorContentType:\<contentType>|O termo será true quando o documento selecionado é um editor de texto com o tipo de conteúdo fornecido.|  
+|ActiveProjectCapability:\<Expression>|O termo é verdadeiro quando os recursos de projeto ativo correspondem a expressão fornecida. Uma expressão pode ser algo parecido com VB &#124; CSharp.|  
+|SolutionHasProjectCapability:\<Expression>|Semelhante ao acima mas termo é verdadeiro quando a solução tem qualquer projeto carregado que corresponde à expressão.|  
+|SolutionHasProjectFlavor:\<projectTypeGuid>|O termo será true sempre que uma solução tem um projeto que é o tipo (agregado) e tem um tipo correspondente ao tipo de projeto determinado GUID.|
 
-
-  
 ## <a name="compatibility-with-cross-version-extension"></a>Compatibilidade com a extensão de versão cruzada  
- Contextos de interface do usuário baseada em regras é um novo recurso no Visual Studio 2015 e não ser transportado para versões anteriores. Não portabilidade para versões anteriores cria um problema com as extensões/pacotes destinados a várias versões do Visual Studio. Essas versões precisam ser carregados automaticamente no Visual Studio 2013 e versões anteriores, mas podem se beneficiar de contextos de interface do usuário baseada em regras para impedir que está sendo carregado automaticamente no Visual Studio 2015.  
+
+Contextos de interface do usuário baseada em regras é um novo recurso no Visual Studio 2015 e não ser transportado para versões anteriores. Não portabilidade para versões anteriores cria um problema com as extensões/pacotes destinados a várias versões do Visual Studio. Essas versões precisam ser carregados automaticamente no Visual Studio 2013 e versões anteriores, mas podem se beneficiar de contextos de interface do usuário baseada em regras para impedir que está sendo carregado automaticamente no Visual Studio 2015.  
   
- Para dar suporte a esses pacotes, AutoLoadPackages entradas no registro agora podem fornecer um sinalizador em seu campo de valor para indicar que a entrada deve ser ignorada no Visual Studio 2015 e versões posteriores. Isso pode ser feito pela adição de uma opção de sinalizadores para <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Agora pode adicionar os VSPackages **SkipWhenUIContextRulesActive** opção ao seus <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atributo para indicar a entrada deve ser ignorada no Visual Studio 2015 e superior.  
-  
+Para dar suporte a esses pacotes, AutoLoadPackages entradas no registro agora podem fornecer um sinalizador em seu campo de valor para indicar que a entrada deve ser ignorada no Visual Studio 2015 e versões posteriores. Isso pode ser feito pela adição de uma opção de sinalizadores para <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Agora pode adicionar os VSPackages **SkipWhenUIContextRulesActive** opção ao seus <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atributo para indicar a entrada deve ser ignorada no Visual Studio 2015 e superior.  
 ## <a name="extensible-ui-context-rules"></a>Regras de contexto de interface do usuário extensíveis  
- Às vezes, os pacotes não podem usar regras estáticas do contexto de interface do usuário. Por exemplo, suponha que você tenha um pacote de suporte a extensibilidade, de modo que o estado do comando baseia-se nos tipos de editor que são suportados por provedores MEF importados. O comando será habilitado se há uma extensão que dão suporte a tipo de edição atual. Nesses casos, o pacote propriamente dito não pode usar uma regra de contexto de interface do usuário estática, uma vez que os termos seriam alterado dependendo de qual MEF extensões estão disponíveis.  
+
+Às vezes, os pacotes não podem usar regras estáticas do contexto de interface do usuário. Por exemplo, suponha que você tenha um pacote de suporte a extensibilidade, de modo que o estado do comando baseia-se nos tipos de editor que são suportados por provedores MEF importados. O comando será habilitado se há uma extensão que dão suporte a tipo de edição atual. Nesses casos, o pacote propriamente dito não pode usar uma regra de contexto de interface do usuário estática, uma vez que os termos seriam alterado dependendo de qual MEF extensões estão disponíveis.  
   
- Para dar suporte a esses pacotes, contextos de interface do usuário baseada em regras dar suporte a uma expressão de embutidos em código "*" que indica que todos os termos abaixo será junto com ou. Isso permite que o pacote mestre definir um contexto de interface do usuário com base em regra conhecido e vincular o seu estado de comando para este contexto. Depois disso qualquer extensão MEF direcionado para o pacote mestre pode adicionar seus termos para editores que dá suporte a sem afetar outros termos ou a expressão mestre.  
+Para dar suporte a esses pacotes, contextos de interface do usuário baseada em regras dar suporte a uma expressão de embutidos em código "*" que indica que todos os termos abaixo será junto com ou. Isso permite que o pacote mestre definir um contexto de interface do usuário com base em regra conhecido e vincular o seu estado de comando para este contexto. Depois disso qualquer extensão MEF direcionado para o pacote mestre pode adicionar seus termos para editores que dá suporte a sem afetar outros termos ou a expressão mestre.  
   
- O construtor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> documentação mostra a sintaxe para as regras de contexto de interface do usuário extensíveis.
+O construtor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> documentação mostra a sintaxe para as regras de contexto de interface do usuário extensíveis.

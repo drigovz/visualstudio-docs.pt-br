@@ -271,11 +271,11 @@ Você pode restringir um ponto de interrupção seja acionado apenas nos disposi
   
 Sob **condições** na **configurações de ponto de interrupção** janela, selecione **filtro**e, em seguida, insira um ou mais das seguintes expressões:  
   
--   MachineName = "name"  
--   ProcessId = value  
--   ProcessName = "name"  
--   ThreadId = value  
--   ThreadName = "name"  
+-   MachineName = "nome"  
+-   ProcessId = valor  
+-   ProcessName = "nome"  
+-   ThreadId = valor  
+-   ThreadName = "nome"  
 
 Coloque os valores de cadeia de caracteres entre aspas duplas. Você pode combinar cláusulas usando `&` (AND), `||` (OR), `!` (NOT) e parênteses.  
   

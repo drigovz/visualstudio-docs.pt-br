@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar e editar configurações | Microsoft Docs'
+title: Como criar e editar configurações | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -20,13 +20,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767322"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Como: Criar e editar configurações
+# <a name="how-to-create-and-edit-configurations"></a>Como criar e editar configurações de teste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível compilar várias configurações de build para uma solução. Por exemplo, é possível configurar um build de depuração que seus testadores podem usar para localizar e corrigir problemas, e é possível configurar diferentes tipos de builds que podem ser distribuídos a diferentes clientes.  
@@ -126,4 +126,4 @@ ms.locfileid: "54767322"
 ## <a name="see-also"></a>Consulte também  
  [Noções sobre configurações de build](../ide/understanding-build-configurations.md)   
  [Compilando e limpando projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [(NIB) Como: Modificar as propriedades do projeto e as definições de configuração](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB: como modificar as propriedades do projeto e as definições de configuração](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
