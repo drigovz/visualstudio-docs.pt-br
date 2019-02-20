@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8cdcc9e05a3b238adcd559911208cbb6532b1d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918241"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318427"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar navegadores da Web diferentes com testes de IU codificados
 
@@ -24,13 +24,13 @@ Primeiro, instale os [Componentes do Selenium para testes de IU codificados entr
 
 ## <a name="whats-supported-across-all-web-browsers"></a>O que tem suporte em todos os navegadores da Web?
 
--   [Adicionar código personalizado para recursos de controle, ](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)como propriedades, pesquisa e waiters de reprodução.
+-   [Adicionar código personalizado para recursos de controle, ](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)como propriedades, pesquisa e waiters de reprodução.
 
 -   Pop-ups e caixas de diálogo
 
--   [Executar JavaScript básico sem tipo de retorno](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+-   [Executar JavaScript básico sem tipo de retorno](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Resiliência de pesquisa (usando smart match) e [melhorias de desempenho](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+-   Resiliência de pesquisa (usando smart match) e [melhorias de desempenho](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Por que eu deveria usar testes de IU codificados em vários tipos de navegadores da Web?
 

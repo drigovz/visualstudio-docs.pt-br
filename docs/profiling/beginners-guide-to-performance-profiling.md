@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8b1f602dc791b0475b0e33aa49215aaa62860d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 7bc7d75329e83345107cac18fa49267dc62f964d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155299"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316698"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
@@ -64,7 +64,7 @@ Neste tutorial, você irá:
 
      ![Guia Resumo das Ferramentas de Diagnóstico](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Para obter mais informações sobre os eventos, confira [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (Pesquisando e filtrando a guia Eventos da janela Ferramentas de Diagnóstico).
+     Para obter mais informações sobre os eventos, confira [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (Pesquisando e filtrando a guia Eventos da janela Ferramentas de Diagnóstico).
 
 6.  Execute o cenário que fará com que o primeiro ponto de interrupção seja atingido.
 
