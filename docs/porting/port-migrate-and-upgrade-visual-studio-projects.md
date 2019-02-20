@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768826"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335526"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Referência de atualização e de migração de projeto para o Visual Studio 2017
 
@@ -34,7 +35,7 @@ O suporte para alguns tipos de projeto também muda ao longo do tempo. É possí
 
 Este artigo fornece detalhes somente para os tipos de projeto que o Visual Studio 2017 pode migrar. O artigo exclui os tipos de projeto para os quais não há mais suporte no Visual Studio 2017 e, portanto, não podem ser migrados. O artigo também exclui os tipos de projeto compatíveis que não têm nenhum problema de migração. A lista desses tipos é encontrada em [Direcionamento e compatibilidade da plataforma](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Alguns tipos de projeto exigem a instalação das cargas de trabalho apropriadas por meio do instalador do Visual Studio. Se a carga de trabalho não estiver instalada, o Visual Studio relatará um tipo de projeto desconhecido ou incompatível. Nesse caso, verifique as opções de instalação e tente novamente. Novamente, consulte o artigo [Direcionamento e compatibilidade da plataforma](/visualstudio/productinfo/vs2017-compatibility-vs) para obter detalhes sobre o suporte de projetos no Visual Studio 2017.
 
 ## <a name="project-types"></a>Tipos de projeto

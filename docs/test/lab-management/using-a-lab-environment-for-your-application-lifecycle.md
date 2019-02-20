@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 35bc798052bac30f76e76983d0a5dc0bdf4f1fa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38039bd98ab1a2d8407945f578e47d325475d4cd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956118"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317998"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -141,4 +141,4 @@ Para saber mais sobre como configurar ambientes, veja:
 
 * [Instalar e configurar agentes de teste](../../test/lab-management/install-configure-test-agents.md)
 * [Guia do Lab Management do Visual Studio](https://aka.ms/vsarsolutions)
-* [Blog de DevOps da Microsoft](https://blogs.msdn.microsoft.com/devops/)
+* [Blog de DevOps da Microsoft](https://devblogs.microsoft.com/devops/)

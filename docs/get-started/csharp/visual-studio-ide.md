@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155988"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317218"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bem-vindo ao IDE do Visual Studio | C#
 
@@ -122,18 +122,6 @@ Vamos configurar o Visual Studio para usar configurações de ambiente adequadas
 Para conhecer outras maneiras pelas quais você pode personalizar o IDE, confira [Personalizar o Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Criar um programa
-
-Primeiro, vamos configurar o Visual Studio para usar configurações de ambiente adequadas aos desenvolvedores em C#.
-
-1. Na barra de menus, escolha **Ferramentas** > **Importar e Exportar Configurações**.
-
-2. No **Assistente de Importação e Exportação de Configurações**, selecione **Redefinir todas as configurações** na primeira página e, em seguida, escolha **Avançar**.
-
-3. Na página **Salvar Configurações Atuais**, selecione uma opção para salvar suas configurações atuais ou não e, em seguida, escolha **Avançar**. Se você ainda não personalizou as configurações, selecione **Não, apenas redefina as configurações, substituindo minhas configurações atuais**.
-
-4. Na página **Escolher uma Coleção Padrão de Configurações**, escolha **Visual C#** e, em seguida, escolha **Concluir**.
-
-5. Na página **Redefinição Concluída**, escolha **Fechar**.
 
 Vamos nos aprofundar e criar um programa simples.
 
@@ -303,4 +291,4 @@ Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutór
 
 - Descubra [mais recursos do Visual Studio](../../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Leia [The Visual Studio blog](https://blogs.msdn.microsoft.com/visualstudio/) (O blog do Visual Studio)
+- Leia [The Visual Studio blog](https://devblogs.microsoft.com/visualstudio/) (O blog do Visual Studio)

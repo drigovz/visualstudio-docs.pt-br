@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b4dd4e347d6a8c96cef9ce9028071214200682c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916161"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316139"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalar estruturas de teste de unidade
 
@@ -58,7 +58,7 @@ Para procurar uma lista de estruturas juntamente com outras ferramentas de teste
 
 ## <a name="update-to-the-latest-test-adapters"></a>Atualizar para os adaptadores de teste mais recentes
 
-Atualização para o adaptador de teste estável mais recente para aproveitar melhor a detecção e a execução de teste. Para saber mais sobre atualizações para adaptadores de teste MSTest, NUnit e xUnit, veja o [blog do Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+Atualização para o adaptador de teste estável mais recente para aproveitar melhor a detecção e a execução de teste. Para saber mais sobre atualizações para adaptadores de teste MSTest, NUnit e xUnit, veja o [blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/).
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Para atualizar para a versão estável mais recente do adaptador de teste
 

@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918534"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56314592"
 ---
 # <a name="help-content-manager-overrides"></a>Substituições do Gerenciador de Conteúdo da Ajuda
 
-Você pode alterar o comportamento padrão do Help Viewer e das funcionalidades relacionadas à Ajuda no IDE do Visual Studio. Algumas opções são especificadas com a criação de um arquivo [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) para definir vários valores de chave do Registro. Outras são definidas diretamente no registro.
+Você pode alterar o comportamento padrão do Help Viewer e das funcionalidades relacionadas à Ajuda no IDE do Visual Studio. Algumas opções são especificadas com a criação de um arquivo [.pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/) para definir vários valores de chave do Registro. Outras são definidas diretamente no registro.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Como controlar o comportamento do Help Viewer usando um arquivo .pkgdef
 
