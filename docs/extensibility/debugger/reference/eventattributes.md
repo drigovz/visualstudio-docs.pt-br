@@ -12,78 +12,78 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60bd3296ed3c610b238abf00d90781b6e0067d72
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4b0f7de41857984464afb1576448fec56bd2841d
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953819"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413261"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
-Especifica os atributos do evento.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-enum enum_EVENTATTRIBUTES {   
-   EVENT_ASYNCHRONOUS          = 0x0000,  
-   EVENT_SYNCHRONOUS           = 0x0001,  
-   EVENT_STOPPING              = 0x0002,  
-   EVENT_ASYNC_STOP            = 0x0002,  
-   EVENT_SYNC_STOP             = 0x0003,  
-   EVENT_IMMEDIATE             = 0x0004,  
-   EVENT_EXPRESSION_EVALUATION = 0x0008  
-};  
-typedef DWORD EVENTATTRIBUTES;  
-```  
-  
-```csharp  
-public enum enum_EVENTATTRIBUTES {   
-   EVENT_ASYNCHRONOUS          = 0x0000,  
-   EVENT_SYNCHRONOUS           = 0x0001,  
-   EVENT_STOPPING              = 0x0002,  
-   EVENT_ASYNC_STOP            = 0x0002,  
-   EVENT_SYNC_STOP             = 0x0003,  
-   EVENT_IMMEDIATE             = 0x0004,  
-   EVENT_EXPRESSION_EVALUATION = 0x0008  
-};  
-```  
-  
-## <a name="members"></a>Membros  
- EVENT_ASYNCHRONOUS  
- Indica que o evento é assíncrono e não é necessária nenhuma resposta ao evento.  
-  
- EVENT_SYNCHRONOUS  
- Indica que o evento é síncrono; responder por meio da [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
-  
- EVENT_STOPPING  
- Indica que se trata de um evento de interrupção. Deve ser combinado com o `EVENT_ASYNCHRONOUS` ou `EVENT_SYNCHRONOUS`.  
-  
- EVENT_ASYNC_STOP  
- Indica um evento de interrupção assíncrono. Atualmente, não há nenhum evento do tipo. Este sinalizador é apenas um espaço reservado.  
-  
- EVENT_SYNC_STOP  
- Indica um evento de interrupção síncrona (uma combinação de `EVENT_SYNCHRONOUS` e `EVENT_STOPPING`). Esse valor é usado por um mecanismo de depuração (DES) quando ele envia um evento de interrupção. A resposta é feita por meio de uma chamada para [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [etapa](../../../extensibility/debugger/reference/idebugprogram2-step.md), ou [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
-  
- EVENT_IMMEDIATE  
- Indica um evento que é enviado imediatamente e de forma síncrona para o IDE. Esse sinalizador é combinado com outros sinalizadores como `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, ou `EVENT_SYNC_STOP` para indicar o tipo de evento e o fato de que o mecanismo de resposta (se houver) é conhecido.  
-  
- EVENT_EXPRESSION_EVALUATION  
- O evento é um resultado da avaliação de expressão.  
-  
-## <a name="remarks"></a>Comentários  
- Esses valores são passados no `dwAttrib` parâmetro do [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) método.  
-  
- Esses valores podem ser combinados com um bit a bit `OR`.  
-  
-## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+Especifica os atributos do evento.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+enum enum_EVENTATTRIBUTES {
+    EVENT_ASYNCHRONOUS          = 0x0000,
+    EVENT_SYNCHRONOUS           = 0x0001,
+    EVENT_STOPPING              = 0x0002,
+    EVENT_ASYNC_STOP            = 0x0002,
+    EVENT_SYNC_STOP             = 0x0003,
+    EVENT_IMMEDIATE             = 0x0004,
+    EVENT_EXPRESSION_EVALUATION = 0x0008
+};
+typedef DWORD EVENTATTRIBUTES;
+```
+
+```csharp
+public enum enum_EVENTATTRIBUTES {
+    EVENT_ASYNCHRONOUS          = 0x0000,
+    EVENT_SYNCHRONOUS           = 0x0001,
+    EVENT_STOPPING              = 0x0002,
+    EVENT_ASYNC_STOP            = 0x0002,
+    EVENT_SYNC_STOP             = 0x0003,
+    EVENT_IMMEDIATE             = 0x0004,
+    EVENT_EXPRESSION_EVALUATION = 0x0008
+};
+```
+
+## <a name="members"></a>Membros
+EVENT_ASYNCHRONOUS  
+Indica que o evento é assíncrono e não é necessária nenhuma resposta ao evento.
+
+EVENT_SYNCHRONOUS  
+Indica que o evento é síncrono; responder por meio da [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+
+EVENT_STOPPING  
+Indica que se trata de um evento de interrupção. Deve ser combinado com o `EVENT_ASYNCHRONOUS` ou `EVENT_SYNCHRONOUS`.
+
+EVENT_ASYNC_STOP  
+Indica um evento de interrupção assíncrono. Atualmente, não há nenhum evento do tipo. Este sinalizador é apenas um espaço reservado.
+
+EVENT_SYNC_STOP  
+Indica um evento de interrupção síncrona (uma combinação de `EVENT_SYNCHRONOUS` e `EVENT_STOPPING`). Esse valor é usado por um mecanismo de depuração (DES) quando ele envia um evento de interrupção. A resposta é feita por meio de uma chamada para [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [etapa](../../../extensibility/debugger/reference/idebugprogram2-step.md), ou [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+
+EVENT_IMMEDIATE  
+Indica um evento que é enviado imediatamente e de forma síncrona para o IDE. Esse sinalizador é combinado com outros sinalizadores como `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, ou `EVENT_SYNC_STOP` para indicar o tipo de evento e o fato de que o mecanismo de resposta (se houver) é conhecido.
+
+EVENT_EXPRESSION_EVALUATION  
+O evento é um resultado da avaliação de expressão.
+
+## <a name="remarks"></a>Comentários
+Esses valores são passados no `dwAttrib` parâmetro do [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) método.
+
+Esses valores podem ser combinados com um bit a bit `OR`.
+
+## <a name="requirements"></a>Requisitos
+Header: msdbg.h
+
+Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Consulte também
+[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)  
+[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
