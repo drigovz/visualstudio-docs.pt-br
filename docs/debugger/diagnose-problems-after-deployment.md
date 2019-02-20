@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54228026"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008706"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnosticar problemas após a implantação usando o IntelliTrace (C#, Visual Basic)
 
@@ -90,7 +90,7 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
 6.  Execute uma nova compilação.
 
-    Vá para a etapa 2. Liberar seu aplicativo](#DeployRelease)
+    Vá para [etapa 2: liberar seu aplicativo](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 ou 2010
  Siga estas etapas para criar automaticamente o arquivo de manifesto de compilação (BuildInfo.config) para seu projeto e colocá-lo na pasta de saída do projeto. O arquivo aparece como "*ProjectName*.BuildInfo.config" na pasta de saída, mas é renomeado "BuildInfo.config" na pasta de implantação, após publicar seu aplicativo.
@@ -115,7 +115,7 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
 4.  Execute uma nova compilação.
 
-    Vá para a etapa 2. Liberar seu aplicativo](#DeployRelease)
+    Vá para [etapa 2: liberar seu aplicativo](#DeployRelease)
 
 ###  <a name="ManualBuild"></a> Criar o manifesto de build para um build manual usando o Visual Studio
  Siga estas etapas para criar automaticamente o arquivo de manifesto de compilação (BuildInfo.config) para seu projeto e colocá-lo na pasta de saída do projeto. O arquivo aparece como "*ProjectName*.BuildInfo.config" na pasta de saída, mas é renomeado "BuildInfo.config" na pasta de implantação, após publicar seu aplicativo.
@@ -142,7 +142,7 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
 4.  Execute uma nova compilação.
 
-    Vá para a etapa 2. Liberar seu aplicativo](#DeployRelease)
+    Vá para [etapa 2: liberar seu aplicativo](#DeployRelease)
 
 ###  <a name="MSBuild"></a> Criar o manifesto de build para um build manual usando o MSBuild.exe
  Adicione estes argumentos de compilação ao executar uma compilação:
@@ -186,7 +186,7 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
      Para criar um workspace com mapeamentos específicos ou com um nome que não seja o nome do computador, escolha **Gerenciar**.
 
-     [P: Por que o Visual Studio diz que meu workspace selecionado é inelegível?](#IneligibleWorkspace)
+     [P: Por que o Visual Studio indica que meu workspace selecionado não é qualificado?](#IneligibleWorkspace)
 
      [P: Por que não consigo continuar até escolher uma coleção de equipe ou uma coleção diferente?](#ChooseTeamProject)
 
@@ -248,7 +248,7 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
 ###  <a name="FAQ"></a> Perguntas e respostas
 
-####  <a name="WhyInclude"></a> P: Por que incluir informações sobre meu projeto, controle do código-fonte, build e símbolos com minha versão?
+####  <a name="WhyInclude"></a> P: Por que incluir informações sobre meu projeto, controle do código-fonte, build e símbolos com minha liberação?
  O Visual Studio usa essas informações para encontrar a solução e o código-fonte correspondentes para a versão que está tentando depurar. Após abrir o log do IntelliTrace e selecionar um evento para iniciar a depuração, o Visual Studio usa símbolos para encontrar e mostrar o código onde ocorreu o evento. Você pode então visualizar os valores que estão registrados e avançar ou retornar através da execução do seu código.
 
  Se estiver usando o TFS e essas informações não estiverem no manifesto de build (BuildInfo.config file), o Visual Studio procurará o código-fonte e os símbolos correspondentes em seu TFS conectado no momento. Você recebe uma solicitação para escolher um TFS diferente caso o Visual Studio não encontre o TFS correto ou o código-fonte correspondente.
@@ -357,13 +357,13 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> P: Por que o Visual Studio diz que meu workspace selecionado é inelegível?
- **R:** O workspace selecionado não tem mapeamento entre a pasta de controle do código-fonte e uma pasta local. Para criar um mapeamento para esse workspace, escolha **Gerenciar**. Caso contrário, escolha um workspace já mapeado ou crie um novo workspace.
+####  <a name="IneligibleWorkspace"></a> P: Por que o Visual Studio indica que meu workspace selecionado não é qualificado?
+ **R:** O workspace selecionado não tem nenhum mapeamento entre a pasta do controle do código-fonte e uma pasta local. Para criar um mapeamento para esse workspace, escolha **Gerenciar**. Caso contrário, escolha um workspace já mapeado ou crie um novo workspace.
 
  ![Abrir do controle de origem com nenhum espaço de trabalho mapeado](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
 ####  <a name="ChooseTeamProject"></a> P: Por que não consigo continuar até escolher uma coleção de equipe ou uma coleção diferente?
- **R:** Isso pode acontecer por qualquer um destes motivos:
+ **R:** Isso pode acontecer por um destes motivos:
 
 -   O Visual Studio não está conectado ao TFS.
 
@@ -380,7 +380,7 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
      ![Abrir do controle de origem &#45; migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> P: O que é um espaço de trabalho?
- **R:** Seu [workspace armazena uma cópia do código-fonte](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) para que você possa desenvolvê-lo e testá-lo separadamente antes de fazer o check-in de seu trabalho. Se você ainda não tem um workspace mapeado especificamente para a solução ou o projeto encontrado, o Visual Studio solicitará a escolha de um workspace disponível ou a criação de um novo workspace com o nome do computador como o nome padrão do workspace.
+ **R:** Seu [workspace armazena uma cópia do código-fonte](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts), de modo que você possa desenvolvê-lo e testá-lo separadamente antes de fazer check-in do trabalho. Se você ainda não tem um workspace mapeado especificamente para a solução ou o projeto encontrado, o Visual Studio solicitará a escolha de um workspace disponível ou a criação de um novo workspace com o nome do computador como o nome padrão do workspace.
 
 ####  <a name="UntrustedSymbols"></a> P: Por que recebo esta mensagem sobre símbolos não confiáveis?
  ![Depurar com o caminho de símbolos não confiáveis? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
