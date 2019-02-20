@@ -1,14 +1,9 @@
 ---
-title: Guia do administrador do Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Guia do Administrador do Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,20 +12,20 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722814"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834871"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guia do Administrador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obter a documentação mais recente do Visual Studio 2017, consulte o [guia do administrador do Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-Você pode implantar o Visual Studio 2015 em uma rede desde que cada computador de destino atende o [requisitos mínimos de instalação](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Você pode criar um compartilhamento de rede, executando o arquivo de instalação com o argumento /layout (conforme descrito na [criar uma instalação Offline do Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) página) e, em seguida, copiá-lo do computador local para o compartilhamento de rede. Se você estiver usando um arquivo ISO, você pode montar o ISO e compartilhá-lo ou copiar o ISO em um compartilhamento de rede.  
+Você pode implantar o Visual Studio 2015 em uma rede desde que cada computador de destino atende o [requisitos mínimos de instalação](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Crie um compartilhamento de rede executando o arquivo de instalação com a opção /layout (conforme descrito na página [Criar uma instalação offline do Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)) e, em seguida, copiando-o do computador local para o compartilhamento de rede. Se você estiver usando um arquivo ISO, você pode montar o ISO e compartilhá-lo ou copiar o ISO em um compartilhamento de rede.  
   
  Observe que as instalações de um compartilhamento de rede "lembrar" local de origem que de onde vieram. Isso significa que um reparo de um computador cliente pode ter que retornar para o compartilhamento de rede do qual o cliente foi instalado originalmente. Escolha seu local de rede com cuidado para que ele se alinhe com o tempo de vida que você espera que os clientes do Visual Studio 2015 em execução em sua organização.  
   
@@ -73,8 +68,8 @@ Você pode implantar o Visual Studio 2015 em uma rede desde que cada computador 
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Como instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Descreve como instalar configurações específicas da versão atual do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Como criar e executar uma instalação autônoma do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Descreve como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo.|  
+|[Como: Instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Descreve como instalar configurações específicas da versão atual do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Como: Criar e executar uma instalação autônoma do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Descreve como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo.|  
 |[Como aplicar as chaves de produto automaticamente durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Descreve como aplicar chaves de produto durante a implantação em vários computadores.|  
 |[Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)|Fornece informações sobre como gerenciar as instalações da Ajuda local para ambientes de rede que têm ou não tem acesso à internet.|  
 |[Instalar o Visual Studio](../install/install-visual-studio-2015.md)|Fornece instruções e links para tópicos que descrevem como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016488"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318414"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprender dicas de produtividade e truques do depurador no Visual Studio
 
@@ -77,9 +77,9 @@ Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de
 3. Localize a variável na **Locals** janela (**Depurar > Windows > Locals**), a variável com o botão direito e selecione **criar ID de objeto**.
 
     ![Criar uma ID de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Você deve ver uma **$** além de um número no **locais** janela. Essa variável é a ID de objeto.
-  
+
 5.  A variável de ID de objeto com o botão direito e escolha **Adicionar inspeção**.
 
 Para obter mais informações, consulte [criar uma ID de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ Se você precisar depurar os tipos de problemas que são comuns a aplicativos mu
 #### <a name="to-show-threads-in-your-source-code"></a>Mostrar threads em seu código-fonte
 
 1.  Durante a depuração, clique o **Mostrar Threads em origem** botão ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") no **depurar** barra de ferramentas.
-  
+
 2.  Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se parece com dois threads de pano. O marcador de thread indica que um thread está parado nesse local.
 
     Observe que um marcador de thread pode ser escondido parcialmente por um ponto de interrupção.
-  
+
 3.  Passe o ponteiro sobre o marcador de thread. Um DataTip aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado.
 
     Você também pode exibir o local de threads na [janela pilhas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ Para descobrir como o depurador classifica o código como código de usuário, c
 
 Para obter mais dicas e truques e informações mais detalhadas, consulte essas postagens de blog:
 
-- [7 menos conhecidos de hackers para depuração no Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 gems ocultas no Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 menos conhecidos de hackers para depuração no Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 gems ocultas no Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Consulte também
 [Atalhos de teclado](../ide/tips-and-tricks-for-visual-studio.md)

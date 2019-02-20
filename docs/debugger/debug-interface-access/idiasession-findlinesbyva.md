@@ -12,55 +12,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 063403df90ff222d13384ef61d865ba2c5187c9f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: e2503707b8fd5907cd028b7af3e67cd5acd76a00
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000426"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227781"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Recupera as informações de número de linha para linhas contidas em um intervalo de endereço virtual especificado (VA).  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT findLinesByVA (   
-   ULONGLONG             va,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `va`  
- [in] Especifica o endereço como um VA.  
-  
- `length`  
- [in] Especifica o número de bytes do intervalo de endereços para cobrir com essa consulta.  
-  
- `ppResult`  
- [out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todas as linha de números que abrangem o intervalo de endereços especificado.  
-  
-## <a name="example"></a>Exemplo  
- Este exemplo mostra uma função que obtém todos os números de linha contidos em uma função usando o endereço da função virtual e o comprimento.  
-  
-```C++  
-IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
-{  
-    IDiaEnumLineNumbers* pEnum = NULL;  
-    ULONGLONG            va;  
-    ULONGLONG            length;  
-  
-    if (pFunc->get_virtualAddress ( &va ) == S_OK)  
-    {  
-        pFunc->get_length( &length );  
-        pSession->findLinesByVA( va, static_cast<DWORD>( length ), &pEnum );  
-    }  
-    return(pEnum);  
-}  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+Recupera as informações de número de linha para linhas contidas em um intervalo de endereço virtual especificado (VA).
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT findLinesByVA (
+    ULONGLONG             va,
+    DWORD                 length,
+    IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+`va`  
+[in] Especifica o endereço como um VA.
+
+`length`  
+[in] Especifica o número de bytes do intervalo de endereços para cobrir com essa consulta.
+
+`ppResult`  
+[out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todas as linha de números que abrangem o intervalo de endereços especificado.
+
+## <a name="example"></a>Exemplo
+Este exemplo mostra uma função que obtém todos os números de linha contidos em uma função usando o endereço da função virtual e o comprimento.
+
+```C++
+IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)
+{
+    IDiaEnumLineNumbers* pEnum = NULL;
+    ULONGLONG            va;
+    ULONGLONG            length;
+
+    if (pFunc->get_virtualAddress ( &va ) == S_OK)
+    {
+        pFunc->get_length( &length );
+        pSession->findLinesByVA( va, static_cast<DWORD>( length ), &pEnum );
+    }
+    return(pEnum);
+}
+```
+
+## <a name="see-also"></a>Consulte também
+[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
