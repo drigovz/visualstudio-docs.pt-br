@@ -1,14 +1,9 @@
 ---
 title: Editando testes de IU codificados usando o Editor de Teste de IU Codificado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793757"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editando testes de interface de usuário codificada usando o editor de teste de interface de usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Editar propriedades de ações de interface do usuário
   
  Para modificar as propriedades de uma ação de interface do usuário, no painel **Ações de interface do usuário**, expanda o método de teste que contém uma ação de IU cujas propriedades você deseja editar, selecione a ação de interface do usuário e, em seguida, modifique as propriedades usando a janela Propriedades.  
   
- Por exemplo, se um servidor estiver indisponível e houver uma ação de interface do usuário associada ao navegador da Web com a instrução **Acessar página da Web "<http://Contoso1/default.aspx’>"**, será possível alterar a URL para `‘http://Contoso2/default.aspx’`.  
+ Por exemplo, se um servidor não estiver disponível e houver uma ação de interface do usuário associada ao navegador da Web que indica **Acesse a página da Web ‘<http://Contoso1/default.aspx’>**, você poderá alterar a URL para `‘http://Contoso2/default.aspx’`.  
   
  ![Propriedades de controle](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar propriedades de controle  
@@ -125,7 +120,7 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Questões importantes**  
   
-- ![Ícone Cuidado](../test/media/caution.gif "cuidado") **Aviso:** ao dividir um método, modifique os códigos que chamam o método existente para que eles também chamem o novo método a ser criado caso ainda deseje incluir essas ações de interface do usuário. Quando um método é dividido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que é necessário modificar os códigos que chamam o método existente para que eles também chamem o novo método a ser criado. Escolha **Sim**.  
+- ![Ícone de cuidado](../test/media/caution.gif "cuidado") **Aviso:** Se você dividir um método, modifique os códigos que chamam o método existente para que eles também chamem o novo método a ser criado caso ainda deseje incluir essas ações de interface do usuário. Quando um método é dividido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que é necessário modificar os códigos que chamam o método existente para que eles também chamem o novo método a ser criado. Escolha **Sim**.  
   
   **Dicas**  
   
@@ -133,7 +128,7 @@ Editar propriedades de controle
   
 - ![Dica](../test/media/tip.png "Dica") É possível renomear o novo método. Selecione-o no painel Ações de interface do usuário e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.  
   
-   -ou-  
+   - ou -  
   
    Abra o menu de atalho do novo método de teste e escolha **Renomear**.  
   
@@ -149,7 +144,7 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Questões importantes**  
   
-- ![Ícone Cuidado](../test/media/caution.gif "Cuidado") **Aviso:** depois de mover o método, não é possível editá-lo usando o Editor de Teste de IU Codificado. Você deve adicionar seu código personalizado e mantê-lo usando o Editor de Códigos. Quando um método é movido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que o método será movido do arquivo UIMap.uitest para o arquivo UIMap.cs ou UIMap.vb e que não será possível editar o método usando o Editor de Teste de IU Codificado. Escolha **Sim**.  
+- ![Ícone de cuidado](../test/media/caution.gif "cuidado") **Aviso:** Depois de mover um método, você não pode mais editá-lo usando o Editor de Teste de IU Codificado. Você deve adicionar seu código personalizado e mantê-lo usando o Editor de Códigos. Quando um método é movido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que o método será movido do arquivo UIMap.uitest para o arquivo UIMap.cs ou UIMap.vb e que não será possível editar o método usando o Editor de Teste de IU Codificado. Escolha **Sim**.  
   
   **Dicas**  
   
@@ -167,7 +162,7 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Questões importantes**  
   
-- ![Ícone Cuidado](../test/media/caution.gif "cuidado") **Aviso:** antes de localizar um controle de interface do usuário, verifique se o aplicativo associado ao teste está em execução.  
+- ![Ícone de cuidado](../test/media/caution.gif "cuidado") **Aviso:** Antes de localizar um controle de interface do usuário, verifique se o aplicativo associado ao teste está em execução.  
   
   **Dicas**  
   
@@ -185,7 +180,7 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Questões importantes**  
   
--   ![Ícone Cuidado](../test/media/caution.gif "cuidado") **Aviso:** antes de localizar os controles de interface do usuário, verifique se o aplicativo associado ao teste está em execução.  
+-   ![Ícone de cuidado](../test/media/caution.gif "cuidado") **Aviso:** Antes de localizar os controles de interface do usuário, verifique se o aplicativo associado ao teste está em execução.  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> Inserir um atraso antes de uma ação de interface do usuário  
  Ocasionalmente, convém instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Ao utilizar o Editor de Teste de IU Codificado, isso pode ser feito inserindo um atraso antes de uma ação de interface do usuário. É possível especificar quantos segundos o atraso durará.  
@@ -210,7 +205,7 @@ Editar propriedades de controle
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="guidance"></a>Diretrizes  
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testando para entrega contínua com Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>Perguntas Frequentes  
  [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -226,6 +221,3 @@ Editar propriedades de controle
  [Criando um Teste de IU Codificado Controlado por Dados](../test/creating-a-data-driven-coded-ui-test.md)   
  [Gerar um Teste de IU Codificado de uma Gravação da Ação Existente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Passo a passo: criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-
