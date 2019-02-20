@@ -10,18 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 72947a75cb782ad92444dd58658dbeebce55012a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6190f4e735b7b3f05efe80f8d8562ac03f1ee3c8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967567"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335020"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Depurar os serviços do Azure no Visual Studio
 
 Você pode usar o Visual Studio para depurar os serviços do Azure em cenários diferentes:
 
 - Para depurar um aplicativo de produção hospedado no serviço de aplicativo do Azure, consulte [Debug live ASP.NET apps usando o depurador de instantâneo](../debugger/debug-live-azure-applications.md).
+
+- Para depurar um aplicativo de produção hospedado em uma máquina virtual do Azure ou o conjunto de dimensionamento de máquina virtual do Azure, consulte [depuração ASP.NET Azure máquinas virtuais e máquinas virtuais do Azure usando o depurador de instantâneo de conjuntos de dimensionamento](../debugger/debug-live-azure-virtual-machines.md).
+
+- Para depurar um aplicativo de produção hospedado no serviço Kubernetes do Azure, consulte [serviços de Kubernetes do Azure do ASP.NET usando o depurador de instantâneo ao vivo de depuração](../debugger/debug-live-azure-kubernetes.md).
 
 - Para depurar um aplicativo de produção usando o Application Insights e hospedado no serviço de aplicativo do Azure ou o Service Fabric, consulte [depurar instantâneos em exceções em aplicativos .NET](/azure/application-insights/app-insights-snapshot-debugger).
 

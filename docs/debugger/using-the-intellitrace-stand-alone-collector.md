@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96a7fe0e46420a2469271219aa44ee76c9a49774
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986794"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316841"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usando o coletor IntelliTrace autônomo (C#, Visual Basic)
 
 O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico IntelliTrace para seus aplicativos em servidores de produção ou em outros ambientes, sem instalar o Visual Studio no computador de destino e sem alterar o ambiente do sistema de destino. O coletor independente do IntelliTrace funciona na Web, SharePoint, WPF e aplicativos do Windows Forms. Quando você terminar a coleta de dados, basta excluir o coletor para desinstalá-lo.
 
- Veja o IntelliTrace em ação: [Coletando e analisando dados IntelliTrace em produção para depuração (vídeo do Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
+ Veja o IntelliTrace em ação: [coletando e analisando dados IntelliTrace em produção para depuração (vídeo do Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 >  Você também pode coletar os mesmos dados IntelliTrace para aplicativos da web e do Sharepoint executados em computadores remotos usando o **Microsoft Monitoring Agent** no modo **Rastrear**.
@@ -78,7 +78,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Instalar o coletor
 
-1. No servidor do aplicativo, crie o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+1. No servidor do seu aplicativo, crie o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
 2. Obtenha o coletor no Centro de Download da Microsoft na pasta de instalação do Visual Studio 2013 atualização 3. [Coletor IntelliTrace para Visual Studio 2013 atualização 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
@@ -86,7 +86,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
      1. Ao lado de **IntelliTraceCollector.exe**, escolha **Baixar**.
 
-     2. Salve o IntelliTraceCollector.exe no diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+     2. Salvar IntelliTraceCollector.exe ao diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
      3. Execute o IntelliTraceCollector.exe. Isso extrai o arquivo IntelliTraceCollection.cab.
 
@@ -98,7 +98,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
           **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2.  Coloque o IntelliTraceCollection.cab no diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+     2.  Coloque o intellitracecollection. cab no diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
 3. Expanda o IntelliTraceCollection.cab:
 
@@ -167,7 +167,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Configurar permissões para o diretório de arquivos .iTrace
 
-1. No servidor do aplicativo, crie o diretório do arquivo .iTrace, por exemplo: **C:\IntelliTraceLogFiles**
+1. No servidor do seu aplicativo, crie o diretório do arquivo. itrace, por exemplo: **C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - Para evitar que seu aplicativo fique mais lento, escolha um local em um disco de alta velocidade local que não seja muito ativo.
@@ -225,8 +225,8 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
     |||
     |-|-|
     |*ApplicationPool*|O nome do pool de aplicativos onde o aplicativo é executado|
-    |*PathToCollectionPlan*|O caminho para um plano de coleta, um arquivo.xml que define as configurações para o coletor.<br /><br /> Você pode especificar um plano que vem com o coletor. Os seguintes planos funcionam para aplicativos da web e do SharePoint:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Coleta apenas eventos IntelliTrace do SharePoint, incluindo exceções, chamadas de banco de dados e solicitações no servidor da web.<br />– collection_plan.ASP.NET.trace.xml<br />     Coleta chamadas de função e todos os dados no collection_plan.ASP.NET.default.xml. Esse plano é útil para uma análise detalhada, mas pode causar lentidão no seu aplicativo mais do que no collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar causar lentidão no seu aplicativo, personalize esses planos ou crie seu próprio plano. Por segurança, coloque planos personalizados no mesmo local seguro que os arquivos do coletor. Ver [criando e personalizando planos de coleta do IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) e [como obter a maioria dos dados sem afetar a velocidade do meu aplicativo?](#Minimizing) **Observação:**  Por padrão, o tamanho máximo do arquivo .iTrace é 100 MB. Quando o arquivo .iTrace atingir esse limite, o coletor exclui as entradas de mais antigas do arquivo para dar espaço às entradas mais recentes. Para alterar esse limite, edite o atributo `MaximumLogFileSize` do plano de coleta. <br /><br /> *Onde posso encontrar versões localizadas desses planos de coleta?*<br /><br /> Você pode encontrar planos localizados nas subpastas do coletor.|
-    |*FullPathToITraceFileDirectory*|O caminho completo para o diretório de arquivos .iTrace. **Observação de segurança:**  Forneça o caminho completo, não um caminho relativo.|
+    |*PathToCollectionPlan*|O caminho para um plano de coleta, um arquivo.xml que define as configurações para o coletor.<br /><br /> Você pode especificar um plano que vem com o coletor. Os seguintes planos funcionam para aplicativos da web e do SharePoint:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Coleta apenas eventos IntelliTrace do SharePoint, incluindo exceções, chamadas de banco de dados e solicitações no servidor da web.<br />– collection_plan.ASP.NET.trace.xml<br />     Coleta chamadas de função e todos os dados no collection_plan.ASP.NET.default.xml. Esse plano é útil para uma análise detalhada, mas pode causar lentidão no seu aplicativo mais do que no collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar causar lentidão no seu aplicativo, personalize esses planos ou crie seu próprio plano. Por segurança, coloque planos personalizados no mesmo local seguro que os arquivos do coletor. Ver [criando e personalizando planos de coleta do IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) e [como obter a maioria dos dados sem afetar a velocidade do meu aplicativo?](#Minimizing) **Observação:** por padrão, o tamanho máximo do arquivo. itrace é 100 MB. Quando o arquivo .iTrace atingir esse limite, o coletor exclui as entradas de mais antigas do arquivo para dar espaço às entradas mais recentes. Para alterar esse limite, edite o atributo `MaximumLogFileSize` do plano de coleta. <br /><br /> *Onde posso encontrar versões localizadas desses planos de coleta?*<br /><br /> Você pode encontrar planos localizados nas subpastas do coletor.|
+    |*FullPathToITraceFileDirectory*|O caminho completo para o diretório de arquivos .iTrace. **Observação de segurança:** forneça o caminho completo, não um caminho relativo.|
 
      O coletor anexa-se ao pool de aplicativos e inicia a coleta de dados.
 
@@ -264,8 +264,8 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
     |||
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|O caminho completo para o coletor executável, IntelliTraceSC.exe|
-    |*PathToCollectionPlan*|O caminho para um plano de coleta, um arquivo.xml que define as configurações para o coletor.<br /><br /> Você pode especificar um plano que vem com o coletor. Os seguintes planos funcionam para aplicativos gerenciados:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Coleta somente eventos do IntelliTrace, incluindo exceções, chamadas de banco de dados e solicitações no servidor da web.<br />– collection_plan.ASP.NET.trace.xml<br />     Coleta chamadas de função e todos os dados no collection_plan.ASP.NET.default.xml. Esse plano é útil para uma análise detalhada, mas pode causar lentidão no seu aplicativo mais do que no collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar causar lentidão no seu aplicativo, personalize esses planos ou crie seu próprio plano. Por segurança, coloque planos personalizados no mesmo local seguro que os arquivos do coletor. Ver [criando e personalizando planos de coleta do IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) e [como obter a maioria dos dados sem afetar a velocidade do meu aplicativo?](#Minimizing) **Observação:**  Por padrão, o tamanho máximo do arquivo .iTrace é 100 MB. Quando o arquivo .iTrace atingir esse limite, o coletor exclui as entradas de mais antigas do arquivo para dar espaço às entradas mais recentes. Para alterar esse limite, edite o atributo `MaximumLogFileSize` do plano de coleta. <br /><br /> *Onde posso encontrar versões localizadas desses planos de coleta?*<br /><br /> Você pode encontrar planos localizados nas subpastas do coletor.|
-    |*FullPathToITraceFileDirectoryAndFileName*|O caminho completo para o diretório do arquivo. itrace e o nome do arquivo. itrace com a **. itrace** extensão. **Observação de segurança:**  Forneça o caminho completo, não um caminho relativo.|
+    |*PathToCollectionPlan*|O caminho para um plano de coleta, um arquivo.xml que define as configurações para o coletor.<br /><br /> Você pode especificar um plano que vem com o coletor. Os seguintes planos funcionam para aplicativos gerenciados:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Coleta somente eventos do IntelliTrace, incluindo exceções, chamadas de banco de dados e solicitações no servidor da web.<br />– collection_plan.ASP.NET.trace.xml<br />     Coleta chamadas de função e todos os dados no collection_plan.ASP.NET.default.xml. Esse plano é útil para uma análise detalhada, mas pode causar lentidão no seu aplicativo mais do que no collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar causar lentidão no seu aplicativo, personalize esses planos ou crie seu próprio plano. Por segurança, coloque planos personalizados no mesmo local seguro que os arquivos do coletor. Ver [criando e personalizando planos de coleta do IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) e [como obter a maioria dos dados sem afetar a velocidade do meu aplicativo?](#Minimizing) **Observação:** por padrão, o tamanho máximo do arquivo. itrace é 100 MB. Quando o arquivo .iTrace atingir esse limite, o coletor exclui as entradas de mais antigas do arquivo para dar espaço às entradas mais recentes. Para alterar esse limite, edite o atributo `MaximumLogFileSize` do plano de coleta. <br /><br /> *Onde posso encontrar versões localizadas desses planos de coleta?*<br /><br /> Você pode encontrar planos localizados nas subpastas do coletor.|
+    |*FullPathToITraceFileDirectoryAndFileName*|O caminho completo para o diretório do arquivo. itrace e o nome do arquivo. itrace com a **. itrace** extensão. **Observação de segurança:** forneça o caminho completo, não um caminho relativo.|
     |*PathToAppExecutableFileAndFileName*|O caminho e o nome de arquivo do seu aplicativo gerenciado|
 
 2.  Interrompa a coleta de dados saindo do aplicativo.
@@ -379,7 +379,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 -   De uma sessão no Visual Studio Enterprise de depuração do IntelliTrace, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
 
--   Em uma sessão de teste no Microsoft Test Manager, consulte [como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)
+-   Em uma sessão de teste no Microsoft Test Manager, consulte [como: coletar dados do IntelliTrace para ajudar a depurar problemas difíceis](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 
 ## <a name="where-can-i-get-more-information"></a>Onde posso obter mais informações?
  [Usando dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)
@@ -393,10 +393,10 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
  [Como otimizar a coleta do IntelliTrace em servidores de produção](http://go.microsoft.com/fwlink/?LinkId=255233)
 
- [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)
+ [Microsoft DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>Fóruns
  [Depurador do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>Vídeos
- [Vídeo do Channel 9: Coletar e analisar dados do IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)
+ [Vídeo do Channel 9: coletando e analisando dados IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)

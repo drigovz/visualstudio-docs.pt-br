@@ -1,25 +1,26 @@
 ---
-title: Depurar aplicativos do Azure do ASP.NET em tempo real
+title: Depurar serviços de Kubernetes do live ASP.NET do Azure
 description: Saiba como configurar o snappoints e exibir instantâneos com o depurador de instantâneo.
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335591"
+ms.locfileid: "56335967"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos em tempo real do Azure do ASP.NET usando o depurador de instantâneo
+# <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Depuração dos serviços de Kubernetes do Azure ao vivo ASP.NET usando o depurador de instantâneo
 
 O depurador de instantâneo tira um instantâneo de seus aplicativos em produção, quando o código que você está interessado é executado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
 
@@ -34,55 +35,43 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Depurador de instantâneos só está disponível para o Visual Studio 2017 Enterprise versão 15.5 ou posterior com o **carga de trabalho de desenvolvimento do Azure**. (Sob o **componentes individuais** guia, você encontrá-lo sob **depuração e testes** > **depurador de instantâneo**.)
+* Depurador de instantâneo para serviços de Kubernetes do Azure só está disponível para visualização do Visual Studio 2019 Enterprise ou superior com o **carga de trabalho de desenvolvimento do Azure**. (Sob o **componentes individuais** guia, você encontrá-lo sob **depuração e testes** > **depurador de instantâneo**.)
 
-    Se ainda não estiver instalado, instale [Visual Studio 2017 Enterprise versão 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ou posterior. Se você estiver atualizando de uma instalação anterior do Visual Studio 2017, execute o instalador do Visual Studio e verifique o componente do depurador de instantâneos **carga de trabalho de desenvolvimento ASP.NET e web**.
+    Se ainda não estiver instalado, instale [versão prévia do Visual Studio Enterprise de 2019](https://visualstudio.microsoft.com/vs/preview/).
 
-* Plano de serviço de aplicativo do Azure básico ou superior.
+* Coleta de instantâneo está disponível para os seguintes aplicativos web de serviços de Kubernetes do Azure:
+  * Aplicativos do ASP.NET Core em execução no .NET Core 2.2 ou posterior no Debian 9.
+  * Aplicativos do ASP.NET Core em execução no .NET Core 2.2 ou posterior em Alpine 3.8.
+  * Aplicativos do ASP.NET Core em execução no .NET Core 2.2 ou posterior no Ubuntu 18.04.
 
-* A coleção de instantâneos está disponível para os seguintes aplicativos Web em execução no Serviço de Aplicativo do Azure:
-  * Aplicativos ASP.NET em execução no .NET Framework 4.6.1 ou posterior.
-  * Aplicativos ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
+    > [!NOTE]
+    > Para ajudá-lo a habilitar o suporte para o depurador de instantâneo no AKS, fornecemos uma [repositório que contém um conjunto de Dockerfiles que demonstram a instalação em imagens do Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Abra seu projeto e iniciar o depurador de instantâneo
 
 1. Abra o projeto que você gostaria de depuração de instantâneo.
 
     > [!IMPORTANT]
-    > A depuração de instantâneo, você precisará abrir o *mesma versão do código-fonte* que é publicado ao serviço de aplicativo do Azure.
-::: moniker range="< vs-2019"
+    > A depuração de instantâneo, você precisará abrir o *mesma versão do código-fonte* que é publicado ao seu serviço de Kubernetes do Azure.
 
-2. No Gerenciador de nuvem (**exibição > Gerenciador de nuvem**), o serviço de aplicativo do Azure seu projeto é implantado com o botão direito e selecione **Anexar depurador de instantâneo**.
+1. Anexe o depurador de instantâneo. Você pode usar um dos vários métodos diferentes:
 
-   ![Iniciar o depurador de instantâneo](../debugger/media/snapshot-launch.png)
-
-    Na primeira vez que você seleciona **anexar o depurador de instantâneo**, você será solicitado a instalar a extensão de site do depurador de instantâneo em seu serviço de aplicativo do Azure. Esta instalação requer uma reinicialização do serviço de aplicativo do Azure.
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. Anexe o depurador de instantâneo. Você pode usar um dos vários métodos diferentes:
-
-    * Escolha **Depurar > Anexar depurador de instantâneos...** . Selecione o serviço de aplicativo do Azure seu projeto é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Attach**.
+    * Escolha **Depurar > Anexar depurador de instantâneos...** . Selecione o recurso AKS seu aplicativo web é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Attach**.
   
       ![Iniciar o depurador de instantâneo no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Clique com botão direito no seu projeto e selecione **Publish**e, em seguida, na página de publicação. clique em **Anexar depurador de instantâneo**. Selecione o serviço de aplicativo do Azure seu projeto é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Attach**.
+    * Clique com botão direito no seu projeto e selecione **Publish**e, em seguida, na página de publicação. clique em **Anexar depurador de instantâneo**. Selecione o recurso AKS seu aplicativo web é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Attach**.
     ![Iniciar o depurador de instantâneo da página de publicação](../debugger/media/snapshot-publish-attach.png)
 
-    * Na depuração de destino menu suspenso, selecione **depurador de instantâneo**, aperte **F5** e se necessário selecionar o serviço de aplicativo do Azure seu projeto é implantado e o armazenamento do Azure da conta e, em seguida, clique em  **Anexar**.
+    * Na depuração de destino menu suspenso, selecione **depurador de instantâneo**, aperte **F5** e se necessário selecionar o recurso AKS seu aplicativo web é implantado e o armazenamento do Azure da conta e, em seguida, clique em  **Anexar**.
     ![Iniciar o depurador de instantâneo no menu suspenso F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * Usando o Gerenciador de nuvem (**exibição > Gerenciador de nuvem**), o serviço de aplicativo do Azure seu projeto é implantado com o botão direito e selecione uma conta de armazenamento do Azure e, em seguida, clique em **Anexar depurador de instantâneo**.
+    * Usando o Gerenciador de nuvem (**exibição > Gerenciador de nuvem**), clique com botão direito do recurso AKS seu aplicativo web é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Anexar depurador de instantâneo**.
   
       ![Iniciar o depurador de instantâneo do Cloud Explorer](../debugger/media/snapshot-launch.png)
 
-    Na primeira vez que você seleciona **anexar o depurador de instantâneo**, você será solicitado a instalar a extensão de site do depurador de instantâneo em seu serviço de aplicativo do Azure. Esta instalação requer uma reinicialização do serviço de aplicativo do Azure.
-::: moniker-end
-
-   Visual Studio agora está no modo de depuração de instantâneo.
-
-  > [!NOTE]
-  > A extensão de site do Application Insights também dá suporte à depuração de instantâneo. Se você encontrar uma mensagem de erro "desatualizados da extensão de site", consulte [solução de problemas e problemas conhecidos para depuração de instantâneo](../debugger/debug-live-azure-apps-troubleshooting.md) para atualizar os detalhes.
+    > [!NOTE]
+    > A extensão de site do Application Insights também dá suporte à depuração de instantâneo. Se você encontrar uma mensagem de erro "desatualizados da extensão de site", consulte [solução de problemas e problemas conhecidos para depuração de instantâneo](../debugger/debug-live-azure-apps-troubleshooting.md) para atualizar os detalhes.
 
    ![Modo de depuração de instantâneo](../debugger/media/snapshot-message.png)
 
@@ -96,7 +85,7 @@ Neste tutorial, você irá:
 
    ![Defina um snappoint](../debugger/media/snapshot-set-snappoint.png)
 
-2. Clique em **iniciar coleta** para ativar o snappoint.
+1. Clique em **iniciar coleta** para ativar o snappoint.
 
    ![Ativar o snappoint](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +152,7 @@ Além de gerar um instantâneo quando um snappoint for atingido, você também p
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste tutorial, você aprendeu como usar o depurador de instantâneo para serviços de aplicativo. Você talvez queira ler mais detalhes sobre esse recurso.
+Neste tutorial, você aprendeu como usar o depurador de instantâneo para o Kubernetes do Azure. Você talvez queira ler mais detalhes sobre esse recurso.
 
 > [!div class="nextstepaction"]
 > [Perguntas frequentes sobre depuração de instantâneos](../debugger/debug-live-azure-apps-faq.md)
