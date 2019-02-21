@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/05/2019
+ms.date: 02/14/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b33b794bf790d2b68368ee4853c699f6de01300
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939522"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317985"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -27,6 +27,8 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.7 | Versão | 12 de fevereiro de 2019 | 15.9.28307.423 |
+| 15.0.21 | Versão | 12 de fevereiro de 2019 | 15.0.26228.73 |
 | 15.9.6 | Versão | 24 de janeiro de 2019 | 15.9.28307.344 |
 | 15.9.5 | Versão | 8 de janeiro de 2019 | 15.9.28307.280 |
 | 15.9.4 | Versão | 11 de dezembro de 2018 | 15.9.28307.222 |
@@ -175,6 +177,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Preview 3 | 13 de fevereiro de 2019 | 16.0.28608.199 |
 | 16.0.0 | Versão prévia 2.2 | 5 de fevereiro de 2019 | 16.0.28602.52 |
 | 16.0.0 | Preview 2.1 | 31 de janeiro de 2019 | 16.0.28529.54 |
 | 16.0.0 | Preview 2 | 23 de janeiro de 2019 | 16.0.28522.59 |
@@ -185,6 +188,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 ## <a name="see-also"></a>Consulte também
 
+* [Ritmo de lançamento do Visual Studio](/visualstudio/productinfo/release-rhythm)
 * [Guia do administrador do Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)

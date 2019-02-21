@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d484ae5bffad903258b7f6f5d4561a23dcba1f5d
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988565"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450484"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: Usar uma tecla de atalho com uma extensão do editor
 Você pode responder a teclas de atalho em sua extensão de editor. A instrução a seguir mostra como adicionar um adorno de exibição para uma exibição de texto usando uma tecla de atalho. Este passo a passo se baseia no modelo de editor do adorno de visor e permite que você adicionar o adorno, usando o caractere +.  
@@ -47,12 +47,12 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
 No arquivo de classe KeyBindingTestTextViewCreationListener.cs, altere o nome de AdornmentLayer a partir **KeyBindingTest** à **PurpleCornerBox**:
   
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
+```csharp  
+[Export(typeof(AdornmentLayerDefinition))]  
+[Name("PurpleCornerBox")]  
+[Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+public AdornmentLayerDefinition editorAdornmentLayer;  
+```  
 
 ## <a name="handle-typechar-command"></a>Lidar com o comando TIPOCARAC
 Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos em uma extensão do editor foi implementar um <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> com base em filtro de comando. Visual Studio 2017 versão 15.6 introduziu uma abordagem simplificada modernos, com base em manipuladores de comandos do editor. As próximas duas seções demonstram como lidar com um comando usando tanto a abordagem herdada e moderna.

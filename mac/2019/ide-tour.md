@@ -6,23 +6,34 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 2a5b60496a53c35bb67e5cd19d6059212e22ccfd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e192f75508173cd4014e391168ab27e9abe2bc9a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911774"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317205"
 ---
 # <a name="visual-studio-2019-for-mac-preview-tour"></a>Tour da versão prévia do Visual Studio 2019 para Mac
 
 > [!NOTE]
 > O Visual Studio 2019 para Mac [já está disponível](installation.md) como versão prévia para teste.
 
-O Visual Studio para Mac evolui o IDE voltado para plataformas móveis do Xamarin, Xamarin Studio, em um ambiente de desenvolvimento primeiramente móvel e na nuvem no Mac. Essa ferramenta para desenvolvedores permite que você use a potência do .NET para criar aplicativos para todas as plataformas exigidas pelos usuários.
+O Visual Studio para Mac é um _ambiente de desenvolvimento integrado_ do .NET no Mac que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Além de recursos esperados, tais como o editor e o depurador padrão, o Visual Studio para Mac inclui compiladores, ferramentas de preenchimento de código, designers gráficos e controle do código-fonte para facilitar o processo de desenvolvimento de software.
 
-A UX (experiência do usuário) do Visual Studio para Mac é semelhante de seu equivalente do Windows, porém com uma aparência de macOS nativa. Criar, abrir e desenvolver um aplicativo será uma experiência familiar para qualquer pessoa que já tenha usado o Visual Studio no Windows. Além disso, o Visual Studio para Mac emprega muitas das ferramentas avançadas que fazem do seu equivalente no Windows um IDE tão avançado. A Roslyn Compiler Platform é usada para refatoração e IntelliSense. Seu sistema de projeto e mecanismo de build usam o MSBuild e seu editor de código-fonte dá suporte a pacotes TextMate. Ele usa os mesmos mecanismos de depuração para aplicativos Xamarin e .NET Core, e os mesmos designers para Xamarin.iOS e Xamarin.Android.
+O Visual Studio para Mac dá suporte a muitos dos mesmos tipos de arquivo que seu equivalente do Windows, tais como arquivos `.csproj`, `.fsproj`, ou `.sln`. Ele também dá suporte a recursos como EditorConfig, o que significa que você pode usar o IDE que melhor funciona para você.
+Criar, abrir e desenvolver um aplicativo será uma experiência familiar para qualquer pessoa que já tenha usado o Visual Studio no Windows. Além disso, o Visual Studio para Mac emprega muitas das ferramentas avançadas que fazem do seu equivalente no Windows um IDE tão avançado. A Roslyn Compiler Platform é usada para refatoração e IntelliSense. Seu sistema de projeto e mecanismo de build usam o MSBuild e seu editor de código-fonte dá suporte a pacotes TextMate. Ele usa os mesmos mecanismos de depuração para aplicativos Xamarin e .NET Core, e os mesmos designers para Xamarin.iOS e Xamarin.Android.
 
-Este artigo explora várias seções do Visual Studio para Mac, mostrando alguns dos recursos que o tornam uma ferramenta avançada para criar aplicativos de plataforma cruzada.
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>O que posso fazer no Visual Studio para Mac
+
+O Visual Studio para Mac é compatível com os seguintes tipos de desenvolvimento:
+
+- Aplicativos Web do ASP.NET Core com C#, F# e o suporte para Razor Pages, JavaScript e TypeScript
+- Aplicativo de console .NET Core com C# ou F#
+- Jogos do Unity multiplataforma e aplicativos com C#
+- Aplicativos Android, iOS, tvOS e watchOS no Xamarin com o C# ou F# e XAML
+- Aplicativos da área de trabalho Cocoa no C# ou F#
+
+Este artigo explora várias seções do Visual Studio para Mac, mostrando alguns dos recursos que o tornam uma ferramenta avançada para criar esses aplicativos.
 
 ## <a name="ide-tour"></a>Tour do IDE
 

@@ -12,79 +12,79 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa4d8756beeeec87b663c565382947a8824bbe37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9e4a02fdccb15f959615c0e7e39d22a05c40ea2
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038897"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450458"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-Chamado pelo Gerenciador de depuração de sessão (SDM) para indicar que um evento de depuração síncrona, enviado anteriormente pelo mecanismo de depuração (DE) para o SDM, foi recebido e processado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT ContinueFromSynchronousEvent(   
-   IDebugEvent2* pEvent  
-);  
-```  
-  
-```csharp  
-HRESULT ContinueFromSynchronousEvent(   
-   IDebugEvent2 pEvent  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pEvent`  
- [in] Uma [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa o evento síncrono enviado anteriormente da qual o depurador agora deve prosseguir.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- O DE deve verificar que ele foi a origem do evento representado pelo `pEvent` parâmetro.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CEngine` objeto que implementa o [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  
-  
-```cpp  
-HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  
-{  
-   HRESULT hr;  
-  
-   // Create a pointer to a unique event interface defined for batch file  
-   // breaks.    
-   IAmABatchFileEvent *pBatEvent;  
-   // Check for successful query for the unique batch file event  
-   // interface.  
-   if (SUCCEEDED(pEvent->QueryInterface(IID_IAmABatchFileEvent,  
-                                       (void **)&pBatEvent)))  
-   {  
-      // Release the result of the QI.  
-      pBatEvent->Release();  
-      // Check thread message for notification to continue.  
-      if (PostThreadMessage(GetCurrentThreadId(),  
-                            WM_CONTINUE_SYNC_EVENT,  
-                            0,  
-                            0))  
-      {    
-         hr = S_OK;  
-      }  
-      else  
-      {  
-         hr = HRESULT_FROM_WIN32(GetLastError());  
-      }  
-   }  
-   else  
-   {  
-      hr = E_INVALIDARG;  
-   }  
-   return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+Chamado pelo Gerenciador de depuração de sessão (SDM) para indicar que um evento de depuração síncrona, enviado anteriormente pelo mecanismo de depuração (DE) para o SDM, foi recebido e processado.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT ContinueFromSynchronousEvent(
+    IDebugEvent2* pEvent
+);
+```
+
+```csharp
+HRESULT ContinueFromSynchronousEvent(
+    IDebugEvent2 pEvent
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+`pEvent`  
+[in] Uma [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa o evento síncrono enviado anteriormente da qual o depurador agora deve prosseguir.
+
+## <a name="return-value"></a>Valor de retorno
+Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+O DE deve verificar que ele foi a origem do evento representado pelo `pEvent` parâmetro.
+
+## <a name="example"></a>Exemplo
+O exemplo a seguir mostra como implementar esse método para um simples `CEngine` objeto que implementa o [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.
+
+```cpp
+HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
+{
+    HRESULT hr;
+
+    // Create a pointer to a unique event interface defined for batch file
+    // breaks.
+    IAmABatchFileEvent *pBatEvent;
+    // Check for successful query for the unique batch file event
+    // interface.
+    if (SUCCEEDED(pEvent->QueryInterface(IID_IAmABatchFileEvent,
+                                        (void **)&pBatEvent)))
+    {
+        // Release the result of the QI.
+        pBatEvent->Release();
+        // Check thread message for notification to continue.
+        if (PostThreadMessage(GetCurrentThreadId(),
+                              WM_CONTINUE_SYNC_EVENT,
+                              0,
+                              0))
+        {
+            hr = S_OK;
+        }
+        else
+        {
+            hr = HRESULT_FROM_WIN32(GetLastError());
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Consulte também
+[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
+[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
