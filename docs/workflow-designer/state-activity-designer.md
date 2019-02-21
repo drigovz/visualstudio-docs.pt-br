@@ -19,8 +19,7 @@ ms.locfileid: "55940758"
 ---
 # <a name="state-activity-designer"></a>Designer de atividade de estado
 
-
-  <xref:System.Activities.Statements.State> representa um estado em que um computador de estado pode estar.
+<xref:System.Activities.Statements.State> representa um estado em que um computador de estado pode estar.
 
 ## <a name="using-the-state-activity-designer"></a>Usando o designer de atividade de estado
 
