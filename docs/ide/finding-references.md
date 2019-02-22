@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 777e8519077cebc162b1bad575a6ffcf976c4db4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908875"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335266"
 ---
 # <a name="find-references-in-your-code"></a>Localizar referências no seu código
 
@@ -46,6 +46,11 @@ Você pode usar os seguintes métodos para navegar para as referências na janel
 Por padrão, as referências são agrupadas por projetos, depois por definição. No entanto, é possível mudar essa ordem de agrupamento, alterando a configuração na caixa de listagem suspensa **Agrupar por:** na barra de ferramentas. Por exemplo, é possível alterá-la na configuração padrão de **Projeto em vez de definição** para **Definição em vez de projeto** e também para outras configurações.
 
 **Definição** e **Projeto** são dois agrupamentos padrão usados, mas é possível adicionar outros ao escolher o comando **Agrupamento** no menu do clique com o botão direito ou de contexto do item selecionado. Pode ser útil adicionar mais agrupamentos se sua solução tem muitos arquivos e caminhos.
+
+## <a name="filter-by-reference-type-in-net"></a>Filtrar por tipo de referência no .NET
+No C# ou Visual Basic, a janela Localizar Referências tem uma coluna de tipo em que ela lista o tipo de referência encontrada. Esta coluna pode ser usada para filtrar por tipo de referência, clicando no ícone de filtro que aparece ao passar o mouse sobre o cabeçalho da coluna. As referências podem ser filtradas por leitura, gravação, referência e NameOnly.
+
+![Encontrar a coluna Tipo da janela Referências ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>Consulte também
 

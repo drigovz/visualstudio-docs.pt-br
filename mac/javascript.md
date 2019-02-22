@@ -1,22 +1,22 @@
 ---
-title: Javascript
-description: Informações sobre o suporte para Javascript no Visual Studio para Mac
+title: JavaScript e TypeScript
+description: Informações sobre o suporte para JavaScript no Visual Studio para Mac
 author: conceptdev
 ms.author: crdun
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: a2f8e73ecd4ca1010dd25fe4031e73aa13727605
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ed84e5478ae7a15905a5555a318bd656c664710e
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294910"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335201"
 ---
-# <a name="javascript-support"></a>Suporte para Javascript
+# <a name="javascript-and-typescript-support"></a>Suporte a JavaScript e TypeScript
 
-O Visual Studio para Mac dá suporte para Javascript e Typescript por meio do IntelliSense, da formatação de código e do realce de sintaxe.
+O Visual Studio para Mac dá suporte para JavaScript e TypeScript por meio do IntelliSense, da formatação de código e do realce de sintaxe.
 
 ![Suporte para o Editor de TypeScript](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
 
@@ -28,13 +28,13 @@ Arquivos JavaScript frequentemente são adicionados a projetos do ASP.NET Core u
 
 ![Adicionando novos arquivos ao projeto](media/javascript-image1.png)
 
-Na caixa de diálogo Novo Arquivo, selecione **Web > Arquivo JS Vazio** ou **Web > Arquivos TypeScript**. Dê um nome ao arquivo e, em seguida, escolha **Novo**:
+Na caixa de diálogo **Novo Arquivo**, selecione **Web > Arquivo JS Vazio ou Web** > **Arquivos TypeScript**. Dê um nome ao arquivo e, em seguida, escolha **Novo**:
 
 ![Criando um novo arquivo TypeScript usando o modelo](media/javascript-image2.png)
 
-## <a name="intellisense"></a>Intellisense
+## <a name="intellisense"></a>IntelliSense
 
-O Visual Studio para Mac usa o [Serviço de Linguagem JavaScript](/visualstudio/ide/javascript-intellisense) para fornecer IntelliSense, permitindo que você tenha conclusão de código inteligente, informações de parâmetro e listas de membros ao escrever código.
+O Visual Studio para Mac usa o [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) para fornecer IntelliSense, permitindo que você tenha conclusão de código inteligente, informações de parâmetro e listas de membros ao escrever código.
 
 O IntelliSense de JavaScript no Visual Studio para Mac pode ser baseado em inferência de tipos, JSDoc ou em declarações de TypeScript.
 

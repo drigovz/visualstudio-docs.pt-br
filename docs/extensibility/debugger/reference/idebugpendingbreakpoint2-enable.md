@@ -13,74 +13,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f4da6362f195efe55ba38e3de02f644d40596c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a06ed6e7d3c5f95e0de2ee88c63783924c2b015d
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971943"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450003"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Alterna o estado habilitado do ponto de interrupção pendente.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT Enable(   
-   BOOL fEnable  
-);  
-```  
-  
-```csharp  
-int Enable(   
-   int fEnable  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `fEnable`  
- [in] Definido como não zero (`TRUE`) para habilitar um ponto de interrupção pendente, ou zero (`FALSE`) para desabilitar.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção tiver sido excluído.  
-  
-## <a name="remarks"></a>Comentários  
- Quando um ponto de interrupção pendente está habilitado ou desabilitado, todos os pontos de interrupção associados dele são definidos para o mesmo estado.  
-  
- Esse método pode ser chamado quantas vezes forem necessárias, mesmo se o ponto de interrupção já está habilitado ou desabilitado.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CPendingBreakpoint` objeto que expõe o [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
-  
-```cpp  
-HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    
-{    
-   HRESULT hr;    
-  
-   // Verify that the pending breakpoint has not been deleted. If deleted,   
-   // then return hr = E_BP_DELETED.    
-   if (m_state.state != PBPS_DELETED)    
-   {    
-      // If the bound breakpoint member variable is valid, then enable or   
-      // disable the bound breakpoint.    
-      if (m_pBoundBP)    
-      {    
-         m_pBoundBP->Enable(fEnable);    
-      }    
-      // Set the PENDING_BP_STATE in the PENDING_BP_STATE_INFO structure   
-      // to enabled or disabled depending on the passed BOOL condition.    
-      m_state.state = fEnable ? PBPS_ENABLED : PBPS_DISABLED;    
-      hr = S_OK;    
-  
-   }    
-   else    
-   {    
-      hr = E_BP_DELETED;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+Alterna o estado habilitado do ponto de interrupção pendente.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT Enable(
+    BOOL fEnable
+);
+```
+
+```csharp
+int Enable(
+    int fEnable
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+`fEnable`  
+[in] Definido como não zero (`TRUE`) para habilitar um ponto de interrupção pendente, ou zero (`FALSE`) para desabilitar.
+
+## <a name="return-value"></a>Valor de retorno
+Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção tiver sido excluído.
+
+## <a name="remarks"></a>Comentários
+Quando um ponto de interrupção pendente está habilitado ou desabilitado, todos os pontos de interrupção associados dele são definidos para o mesmo estado.
+
+Esse método pode ser chamado quantas vezes forem necessárias, mesmo se o ponto de interrupção já está habilitado ou desabilitado.
+
+## <a name="example"></a>Exemplo
+O exemplo a seguir mostra como implementar esse método para um simples `CPendingBreakpoint` objeto que expõe o [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.
+
+```cpp
+HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
+{
+    HRESULT hr;
+
+    // Verify that the pending breakpoint has not been deleted. If deleted,
+    // then return hr = E_BP_DELETED.
+    if (m_state.state != PBPS_DELETED)
+    {
+        // If the bound breakpoint member variable is valid, then enable or
+        // disable the bound breakpoint.
+        if (m_pBoundBP)
+        {
+            m_pBoundBP->Enable(fEnable);
+        }
+        // Set the PENDING_BP_STATE in the PENDING_BP_STATE_INFO structure
+        // to enabled or disabled depending on the passed BOOL condition.
+        m_state.state = fEnable ? PBPS_ENABLED : PBPS_DISABLED;
+        hr = S_OK;
+
+    }
+    else
+    {
+        hr = E_BP_DELETED;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Consulte também
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
