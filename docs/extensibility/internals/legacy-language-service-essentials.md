@@ -13,34 +13,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2369348552ca8eaaceed92e4373fa3d934d383d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031023"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616866"
 ---
 # <a name="legacy-language-service-essentials"></a>Conceitos básicos do serviço de linguagem herdado
-Você deve fornecer um serviço de linguagem para integrar uma linguagem de programação no Visual Studio. Este tópico explica os recursos disponíveis nos serviços de linguagem herdada.  
+Você deve fornecer um serviço de linguagem para integrar uma linguagem de programação no Visual Studio. Este tópico explica os recursos disponíveis nos serviços de linguagem herdada.
 
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).  
+ Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+>  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
- Serviços de linguagem herdado fornecem os seguintes recursos:  
+ Serviços de linguagem herdado fornecem os seguintes recursos:
 
-|Recurso|Descrição|  
-|-------------|-----------------|  
-|Coloração de sintaxe|Faz com que a exibição do editor exibir cores diferentes e estilos de fonte para os diferentes elementos de um idioma. Essa diferenciação pode tornar mais fácil de ler e editar arquivos.<br /><br /> Para obter informações gerais, consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Para obter informações sobre esse recurso na estrutura de pacote gerenciado (MPF), consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
-|Conclusão da instrução|Conclui uma instrução ou palavra-chave que o usuário começa a digitar. Preenchimento de declaração ajuda os usuários a inserir instruções difícil mais facilmente, com menos digitação e menos chances para erro.<br /><br /> Para obter informações gerais, consulte [preenchimento de declaração em um serviço de linguagem herdado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [preenchimento automático de palavras em um serviço de linguagem herdado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
-|Correspondência de chaves|Destaques emparelhado caracteres como chaves. Quando o usuário digita um caractere de fechamento, como "}", correspondência de chaves destaca correspondente a abertura de caractere, como "{". Quando há vários níveis de delimitar caracteres, esse recurso ajuda os usuários confirmar que os caracteres delimitadores estão emparelhados corretamente.<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [correspondência de chaves em um serviço de linguagem herdado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|  
-|Dicas de ferramentas de informações de parâmetro|Exibe uma lista de assinaturas possíveis para o método sobrecarregado que o usuário está digitando no momento.<br /><br /> Para obter informações gerais, consulte [informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|  
-|Marcadores de erro|Exibe um sublinhado vermelho ondulado, também conhecido como uma linha ondulado, sob o texto que está sintaticamente incorreto. Marcadores de erro geralmente são usados para tornar os usuários ciente das palavras-chave incorretas, não fechados parênteses, caracteres inválidos e erros semelhantes.<br /><br /> As classes MPF, marcadores de erro são tratadas automaticamente na <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> método da <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe.|  
+|Recurso|Descrição|
+|-------------|-----------------|
+|Coloração de sintaxe|Faz com que a exibição do editor exibir cores diferentes e estilos de fonte para os diferentes elementos de um idioma. Essa diferenciação pode tornar mais fácil de ler e editar arquivos.<br /><br /> Para obter informações gerais, consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Para obter informações sobre esse recurso na estrutura de pacote gerenciado (MPF), consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
+|Conclusão da instrução|Conclui uma instrução ou palavra-chave que o usuário começa a digitar. Preenchimento de declaração ajuda os usuários a inserir instruções difícil mais facilmente, com menos digitação e menos chances para erro.<br /><br /> Para obter informações gerais, consulte [preenchimento de declaração em um serviço de linguagem herdado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [preenchimento automático de palavras em um serviço de linguagem herdado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
+|Correspondência de chaves|Destaques emparelhado caracteres como chaves. Quando o usuário digita um caractere de fechamento, como "}", correspondência de chaves destaca correspondente a abertura de caractere, como "{". Quando há vários níveis de delimitar caracteres, esse recurso ajuda os usuários confirmar que os caracteres delimitadores estão emparelhados corretamente.<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [correspondência de chaves em um serviço de linguagem herdado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
+|Dicas de ferramentas de informações de parâmetro|Exibe uma lista de assinaturas possíveis para o método sobrecarregado que o usuário está digitando no momento.<br /><br /> Para obter informações gerais, consulte [informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
+|Marcadores de erro|Exibe um sublinhado vermelho ondulado, também conhecido como uma linha ondulado, sob o texto que está sintaticamente incorreto. Marcadores de erro geralmente são usados para tornar os usuários ciente das palavras-chave incorretas, não fechados parênteses, caracteres inválidos e erros semelhantes.<br /><br /> As classes MPF, marcadores de erro são tratadas automaticamente na <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> método da <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe.|
 
- Muitos desses recursos exigem que o serviço de linguagem para analisar o código-fonte. Você geralmente pode reutilizar os tokens e analisar o código para o compilador ou interpretador.  
+ Muitos desses recursos exigem que o serviço de linguagem para analisar o código-fonte. Você geralmente pode reutilizar os tokens e analisar o código para o compilador ou interpretador.
 
- Os recursos a seguir estão relacionados ao suporte para linguagens de programação, mas não fazem parte dos serviços de linguagem:  
+ Os recursos a seguir estão relacionados ao suporte para linguagens de programação, mas não fazem parte dos serviços de linguagem:
 
 
 | Recurso | Descrição |

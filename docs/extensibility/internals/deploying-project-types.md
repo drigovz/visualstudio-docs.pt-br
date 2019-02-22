@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b42e4f879352a6edaf9171296b282accd9b1ae3f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 958628194e4ea768de5a47dc66476345bff6c4f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009902"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625329"
 ---
 # <a name="deploy-project-types"></a>Implantar tipos de projeto
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] instala um novo agregador do tipo de projeto (*ProjectAggregator2.dll*) e também um pacote do Windows Installer para redistribuição (*ProjectAggregator2.msi*). Você deve usar o novo agregador para tipos de projeto de código gerenciado. ProjectAggregator2 funciona com limitações no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeto agregador que impede que os tipos de projeto de código gerenciado de funcionar corretamente. As etapas a seguir descrevem como alterar o VSPackage para usar o novo agregador.  
-  
-1.  Remova o projeto de NativeHierarchyWrapper da sua solução.  
-  
-2.  Remova os binários do NativeHierarchyWrapper de sua configuração.  
-  
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] instala um novo agregador do tipo de projeto (*ProjectAggregator2.dll*) e também um pacote do Windows Installer para redistribuição (*ProjectAggregator2.msi*). Você deve usar o novo agregador para tipos de projeto de código gerenciado. ProjectAggregator2 funciona com limitações no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeto agregador que impede que os tipos de projeto de código gerenciado de funcionar corretamente. As etapas a seguir descrevem como alterar o VSPackage para usar o novo agregador.
+
+1.  Remova o projeto de NativeHierarchyWrapper da sua solução.
+
+2.  Remova os binários do NativeHierarchyWrapper de sua configuração.
+
 3.  Adicione *ProjectAggregator2.msi* à sua instalação.
