@@ -18,27 +18,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3800c5e2665d201f9f8806272e95a6862ef98c0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863403"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612563"
 ---
 # <a name="work-with-calendar-items"></a>Trabalhar com itens de calendário
-  O <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> classe contém os métodos e propriedades que você pode usar para executar tarefas com itens de calendário.  
-  
-|Tarefa|Procedimento|  
-|----------|---------------|  
-|Criar um compromisso e adicionar destinatários.|[Como: Criar compromissos programaticamente](../vsto/how-to-programmatically-create-appointments.md)|  
-|Exclua uma instância de um compromisso recorrente.|[Como: Excluir compromissos programaticamente](../vsto/how-to-programmatically-delete-appointments.md)|  
-|Crie uma pasta de calendário e adicione um item de compromisso.|[Como: Criar um calendário personalizado de forma programática](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
-|Crie uma solicitação de reunião e enviá-lo.|[Como: Criar uma solicitação de reunião de forma programática](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
-  
- Para obter mais informações sobre tarefas do Outlook e o modelo de objeto do Outlook, consulte [visão geral de modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Trabalhar com itens de contato](../vsto/working-with-contact-items.md)   
- [Trabalhar com pastas](../vsto/working-with-folders.md)   
- [Trabalhar com itens de email](../vsto/working-with-mail-items.md)   
- [Soluções do Outlook](../vsto/outlook-solutions.md)  
+  O <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> classe contém os métodos e propriedades que você pode usar para executar tarefas com itens de calendário.
+
+|Tarefa|Procedimento|
+|----------|---------------|
+|Criar um compromisso e adicionar destinatários.|[Como: Criar compromissos programaticamente](../vsto/how-to-programmatically-create-appointments.md)|
+|Exclua uma instância de um compromisso recorrente.|[Como: Excluir compromissos programaticamente](../vsto/how-to-programmatically-delete-appointments.md)|
+|Crie uma pasta de calendário e adicione um item de compromisso.|[Como: Criar um calendário personalizado de forma programática](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
+|Crie uma solicitação de reunião e enviá-lo.|[Como: Criar uma solicitação de reunião de forma programática](../vsto/how-to-programmatically-create-a-meeting-request.md)|
+
+ Para obter mais informações sobre tarefas do Outlook e o modelo de objeto do Outlook, consulte [visão geral de modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md).
+
+## <a name="see-also"></a>Consulte também
+- [Trabalhar com itens de contato](../vsto/working-with-contact-items.md)
+- [Trabalhar com pastas](../vsto/working-with-folders.md)
+- [Trabalhar com itens de email](../vsto/working-with-mail-items.md)
+- [Soluções do Outlook](../vsto/outlook-solutions.md)
