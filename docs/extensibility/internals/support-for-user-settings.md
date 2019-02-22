@@ -12,43 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964243"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622716"
 ---
 # <a name="support-for-user-settings"></a>Suporte para configurações de usuário
-Um VSPackage pode definir uma ou mais categorias de configurações, que são grupos de variáveis de estado que persiste quando um usuário escolhe o **configurações de importação/exportação** comando as **ferramentas** menu. Para habilitar essa persistência, você use as APIs de configurações no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+Um VSPackage pode definir uma ou mais categorias de configurações, que são grupos de variáveis de estado que persiste quando um usuário escolhe o **configurações de importação/exportação** comando as **ferramentas** menu. Para habilitar essa persistência, você use as APIs de configurações no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
- Uma entrada de registro que é conhecida como um ponto de configurações personalizado e um GUID define a categoria de configurações do VSPackage. Um VSPackage pode dar suporte a várias categorias de configurações, definidos por um ponto de configurações personalizado.  
+ Uma entrada de registro que é conhecida como um ponto de configurações personalizado e um GUID define a categoria de configurações do VSPackage. Um VSPackage pode dar suporte a várias categorias de configurações, definidos por um ponto de configurações personalizado.
 
--   Implementações de configurações que se baseiam em assemblies de interoperabilidade (usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) deve criar o ponto de configurações personalizado editando o registro ou usando um script de registrador (arquivo. rgs). Para obter mais informações, consulte [criação de Scripts do registrador](/cpp/atl/creating-registrar-scripts).  
+-   Implementações de configurações que se baseiam em assemblies de interoperabilidade (usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) deve criar o ponto de configurações personalizado editando o registro ou usando um script de registrador (arquivo. rgs). Para obter mais informações, consulte [criação de Scripts do registrador](/cpp/atl/creating-registrar-scripts).
 
--   Código que usa a estrutura de pacote gerenciado (MPF) deve criar pontos de configurações personalizadas, anexando um <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> o VSPackage para cada ponto de configurações personalizadas.  
+-   Código que usa a estrutura de pacote gerenciado (MPF) deve criar pontos de configurações personalizadas, anexando um <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> o VSPackage para cada ponto de configurações personalizadas.
 
-     Se um único VSPackage dá suporte a vários pontos de configurações personalizadas, cada ponto de configurações personalizado é implementado por uma classe separada e cada um é registrado por uma instância exclusiva do <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe. Consequentemente, as configurações de implementação de classe podem dar suporte a mais de uma categoria de configurações.  
+     Se um único VSPackage dá suporte a vários pontos de configurações personalizadas, cada ponto de configurações personalizado é implementado por uma classe separada e cada um é registrado por uma instância exclusiva do <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe. Consequentemente, as configurações de implementação de classe podem dar suporte a mais de uma categoria de configurações.
 
-## <a name="custom-settings-point-registry-entry-details"></a>Detalhes da entrada do registro do ponto de configurações personalizadas  
- Pontos de configurações personalizadas são criados em uma entrada de registro no seguinte local: HKLM\Software\Microsoft\VisualStudio\\*\<versão >* \UserSettings\\`<CSPName>`, onde `<CSPName>` é o nome do ponto de configurações personalizado suporta o VSPackage e  *\<versão >* é a versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por exemplo 8.0.  
+## <a name="custom-settings-point-registry-entry-details"></a>Detalhes da entrada do registro do ponto de configurações personalizadas
+ Pontos de configurações personalizadas são criados em uma entrada de registro no seguinte local: HKLM\Software\Microsoft\VisualStudio\\*\<versão >* \UserSettings\\`<CSPName>`, onde `<CSPName>` é o nome do ponto de configurações personalizado suporta o VSPackage e  *\<versão >* é a versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por exemplo 8.0.
 
 > [!NOTE]
->  O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma alternativa raiz quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é o ambiente de desenvolvimento integrado (IDE) inicializado. Para obter mais informações, consulte [opções de linha de comando](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+>  O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma alternativa raiz quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é o ambiente de desenvolvimento integrado (IDE) inicializado. Para obter mais informações, consulte [opções de linha de comando](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
- A estrutura da entrada do registro é ilustrada abaixo:  
+ A estrutura da entrada do registro é ilustrada abaixo:
 
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\
 
- `<CSPName`> = s '#12345'  
+ `<CSPName`> = s '#12345'
 
- Pacote = '{XXXX XXXXXX XXXX XXXX XXXXXXXXX}'  
+ Pacote = '{XXXX XXXXXX XXXX XXXX XXXXXXXXX}'
 
- Categoria = '{aaaa AAAAAA YYYY YYYY YYYYYYYYY}'  
+ Categoria = '{aaaa AAAAAA YYYY YYYY YYYYYYYYY}'
 
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'
 
- AlternateParent = CategoryName  
+ AlternateParent = CategoryName
 
 
 | Nome | Tipo | Dados | Descrição |

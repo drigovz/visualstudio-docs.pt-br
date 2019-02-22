@@ -14,23 +14,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c68822c2dc640008079b0d518fb5774be9a46ea6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42a3fb7b44f0e21c564bc9bef26d5aa158d43091
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037740"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631504"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Otimizando os comandos do menu e da barra de ferramentas
-A adição de VSPackages e os comandos correspondentes para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode fazer com que uma interface do usuário cheia. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece maneiras para ajudar a minimizar a confusão de comando de interface do usuário.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Disponibilização de comandos](../../extensibility/internals/making-commands-available.md)  
- Fornece diretrizes gerais para minimizar acumularem do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface do usuário quando você adiciona os VSPackages.  
-  
- [Diretrizes de posicionamento](../../extensibility/internals/command-placement-guidelines.md)  
- Fornece diretrizes específicas para implementar um VSPackage de acordo com o tamanho do conjunto de comandos.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Comandos, menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md)  
+A adição de VSPackages e os comandos correspondentes para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode fazer com que uma interface do usuário cheia. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece maneiras para ajudar a minimizar a confusão de comando de interface do usuário.
+
+## <a name="in-this-section"></a>Nesta seção
+- [Disponibilização de comandos](../../extensibility/internals/making-commands-available.md)
+
+ Fornece diretrizes gerais para minimizar acumularem do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface do usuário quando você adiciona os VSPackages.
+
+- [Diretrizes de posicionamento](../../extensibility/internals/command-placement-guidelines.md)
+
+ Fornece diretrizes específicas para implementar um VSPackage de acordo com o tamanho do conjunto de comandos.
+
+## <a name="related-sections"></a>Seções relacionadas
+- [Comandos, menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md)
+
  Explica como criar uma interface do usuário que inclui menus, barras de ferramentas e caixas de combinação de comando.

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873738"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636509"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Como: Armazenar em cache dados para uso offline ou em um servidor
   Você pode marcar um item de dados sejam armazenados em cache no documento, para que ele esteja disponível offline. Isso também torna possível para os dados do documento ser manipulados por outro código quando o documento é armazenado em um servidor.
@@ -60,4 +60,8 @@ ms.locfileid: "54873738"
 4.  No **propriedades** janela, defina as **modificadores** propriedade a ser **público** (por padrão, é **interno**).
 
 ## <a name="see-also"></a>Consulte também
- [Armazenar dados em cache](../vsto/caching-data.md) [como: Armazenar em cache programaticamente uma fonte de dados em um documento do Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [como: Armazenar dados em um documento protegido por senha em cache](../vsto/how-to-cache-data-in-a-password-protected-document.md) [acessar dados em documentos no servidor](../vsto/accessing-data-in-documents-on-the-server.md) [salvar dados](../data-tools/saving-data.md)
+- [Dados de cache](../vsto/caching-data.md)
+- [Como: Armazenar em cache programaticamente uma fonte de dados em um documento do Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Como: Cache de dados em um documento protegido por senha](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Acessar dados em documentos no servidor](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Salvar dados](../data-tools/saving-data.md)

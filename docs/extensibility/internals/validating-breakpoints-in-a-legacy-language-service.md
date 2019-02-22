@@ -11,92 +11,92 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 355101179e54839fbe5060ce2bc5cdf583ec7d3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3142d854a3a6371983dc6c5851ad007c387f1480
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997488"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603034"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validando pontos de interrupção em um serviço de linguagem herdado
-Um ponto de interrupção indica que a execução do programa deve parar em um ponto específico, enquanto ele está sendo executado em um depurador. Um usuário pode colocar um ponto de interrupção em qualquer linha no arquivo de origem, uma vez que o editor não tem conhecimento sobre o que constitui um local válido para um ponto de interrupção. Quando o depurador é iniciado, todos os pontos de interrupção marcados (chamados de pontos de interrupção pendentes) são vinculados para o local apropriado no programa em execução. Ao mesmo tempo que os pontos de interrupção são validados para garantir que eles marcam os locais de código válido. Por exemplo, um ponto de interrupção em um comentário não é válido, porque não há nenhum código nesse local no código-fonte. O depurador desabilita os pontos de interrupção inválidos.  
-  
- Uma vez que o serviço de linguagem sabe sobre o código-fonte que está sendo exibido, pode validar os pontos de interrupção antes que o depurador é iniciado. Você pode substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método retorne um span especificando um local válido para um ponto de interrupção. O local do ponto de interrupção ainda é validado quando o depurador é iniciado, mas o usuário é notificado de pontos de interrupção inválida sem esperar que o depurador carregar.  
-  
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementação do suporte para validar os pontos de interrupção  
-  
--   O <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método é dada a posição do ponto de interrupção. Sua implementação deve decidir se o local é válido e indicar isso retornando um intervalo de texto que identifica o código associado com a posição da linha que o ponto de interrupção.  
-  
--   Retornar <xref:Microsoft.VisualStudio.VSConstants.S_OK> se o local for válido, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se ele não é válido.  
-  
--   Se o ponto de interrupção é válido, o intervalo de texto é realçado, juntamente com o ponto de interrupção.  
-  
--   Se o ponto de interrupção for inválido, uma mensagem de erro será exibida na barra de status.  
-  
-### <a name="example"></a>Exemplo  
- Este exemplo mostra uma implementação do <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método que chama o analisador para obter o trecho de código (se houver) no local especificado.  
-  
- Este exemplo pressupõe que você tenha adicionado uma `GetCodeSpan` método para o <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe que valida o intervalo de texto e retorna `true` se ele for um local de ponto de interrupção válido.  
-  
-```csharp  
-using Microsoft VisualStudio;  
-using Microsoft.VisualStudio.Package;  
-using Microsoft.VisualStudio.TextManager.Interop;  
-  
-namespace TestLanguagePackage  
-{  
-    class TestLanguageService : LanguageService  
-    {  
-        public override int ValidateBreakpointLocation(IVsTextBuffer buffer,  
-                                                       int line,  
-                                                       int col,  
-                                                       TextSpan[] pCodeSpan)  
-        {  
-            int retval = VSConstants.S_FALSE;  
-            if (pCodeSpan != null)  
-            {  
-                // Initialize span to current line by default.  
-                pCodeSpan[0].iStartLine = line;  
-                pCodeSpan[0].iStartIndex = col;  
-                pCodeSpan[0].iEndLine = line;  
-                pCodeSpan[0].iEndIndex = col;  
-            }  
-  
-            if (buffer != null)  
-            {  
-                IVsTextLines textLines = buffer as IVsTextLines;  
-                if (textLines != null)  
-                {  
-                    Source src = this.GetSource(textLines);  
-                    if (src != null)  
-                    {  
-                        TokenInfo tokenInfo = new TokenInfo();  
-                        string text = src.GetText();  
-                        ParseRequest req = CreateParseRequest(src,  
-                                                              line,  
-                                                              col,  
-                                                              tokenInfo,  
-                                                              text,  
-                                                              src.GetFilePath(),  
-                                                              ParseReason.CodeSpan,  
-                                                              null);  
-                        req.Scope = this.ParseSource(req);  
-                        TestAuthoringSink sink = req.Sink as TestAuthoringSink;  
-  
-                        TextSpan span = new TextSpan();  
-                        if (sink.GetCodeSpan(out span))  
-                        {  
-                            pCodeSpan[0] = span;  
-                            retval = VSConstants.S_OK;  
-                        }  
-                    }  
-                }  
-            }  
-            return retval;  
-        }  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)
+Um ponto de interrupção indica que a execução do programa deve parar em um ponto específico, enquanto ele está sendo executado em um depurador. Um usuário pode colocar um ponto de interrupção em qualquer linha no arquivo de origem, uma vez que o editor não tem conhecimento sobre o que constitui um local válido para um ponto de interrupção. Quando o depurador é iniciado, todos os pontos de interrupção marcados (chamados de pontos de interrupção pendentes) são vinculados para o local apropriado no programa em execução. Ao mesmo tempo que os pontos de interrupção são validados para garantir que eles marcam os locais de código válido. Por exemplo, um ponto de interrupção em um comentário não é válido, porque não há nenhum código nesse local no código-fonte. O depurador desabilita os pontos de interrupção inválidos.
+
+ Uma vez que o serviço de linguagem sabe sobre o código-fonte que está sendo exibido, pode validar os pontos de interrupção antes que o depurador é iniciado. Você pode substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método retorne um span especificando um local válido para um ponto de interrupção. O local do ponto de interrupção ainda é validado quando o depurador é iniciado, mas o usuário é notificado de pontos de interrupção inválida sem esperar que o depurador carregar.
+
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementação do suporte para validar os pontos de interrupção
+
+-   O <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método é dada a posição do ponto de interrupção. Sua implementação deve decidir se o local é válido e indicar isso retornando um intervalo de texto que identifica o código associado com a posição da linha que o ponto de interrupção.
+
+-   Retornar <xref:Microsoft.VisualStudio.VSConstants.S_OK> se o local for válido, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se ele não é válido.
+
+-   Se o ponto de interrupção é válido, o intervalo de texto é realçado, juntamente com o ponto de interrupção.
+
+-   Se o ponto de interrupção for inválido, uma mensagem de erro será exibida na barra de status.
+
+### <a name="example"></a>Exemplo
+ Este exemplo mostra uma implementação do <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método que chama o analisador para obter o trecho de código (se houver) no local especificado.
+
+ Este exemplo pressupõe que você tenha adicionado uma `GetCodeSpan` método para o <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe que valida o intervalo de texto e retorna `true` se ele for um local de ponto de interrupção válido.
+
+```csharp
+using Microsoft VisualStudio;
+using Microsoft.VisualStudio.Package;
+using Microsoft.VisualStudio.TextManager.Interop;
+
+namespace TestLanguagePackage
+{
+    class TestLanguageService : LanguageService
+    {
+        public override int ValidateBreakpointLocation(IVsTextBuffer buffer,
+                                                       int line,
+                                                       int col,
+                                                       TextSpan[] pCodeSpan)
+        {
+            int retval = VSConstants.S_FALSE;
+            if (pCodeSpan != null)
+            {
+                // Initialize span to current line by default.
+                pCodeSpan[0].iStartLine = line;
+                pCodeSpan[0].iStartIndex = col;
+                pCodeSpan[0].iEndLine = line;
+                pCodeSpan[0].iEndIndex = col;
+            }
+
+            if (buffer != null)
+            {
+                IVsTextLines textLines = buffer as IVsTextLines;
+                if (textLines != null)
+                {
+                    Source src = this.GetSource(textLines);
+                    if (src != null)
+                    {
+                        TokenInfo tokenInfo = new TokenInfo();
+                        string text = src.GetText();
+                        ParseRequest req = CreateParseRequest(src,
+                                                              line,
+                                                              col,
+                                                              tokenInfo,
+                                                              text,
+                                                              src.GetFilePath(),
+                                                              ParseReason.CodeSpan,
+                                                              null);
+                        req.Scope = this.ParseSource(req);
+                        TestAuthoringSink sink = req.Sink as TestAuthoringSink;
+
+                        TextSpan span = new TextSpan();
+                        if (sink.GetCodeSpan(out span))
+                        {
+                            pCodeSpan[0] = span;
+                            retval = VSConstants.S_OK;
+                        }
+                    }
+                }
+            }
+            return retval;
+        }
+    }
+}
+```
+
+## <a name="see-also"></a>Consulte também
+- [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)

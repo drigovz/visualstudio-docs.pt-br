@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30a4992bed527b017f66f42067f88ec127fb9ed3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625615"
 ---
 # <a name="command-availability"></a>Disponibilidade do comando
 
@@ -49,7 +49,7 @@ Se um contexto de comando apropriado que GUID já não está definido, poderá d
 2.  Obter o estado de um GUID de contexto chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método.
 
 3.  Ativar e desativar os GUIDs de contexto chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método.
-   
+
 > [!CAUTION]
 > Certifique-se de que o VSPackage não afeta nenhum contexto existente GUIDs porque pode depender de outros VSPackages neles.
 

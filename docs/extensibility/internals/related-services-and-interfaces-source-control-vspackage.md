@@ -11,31 +11,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a80212a2de88a5896caf0b655b9710afbce096f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005950"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598993"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
-Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackage no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. O VSPackage de controle de origem implementa algumas dessas interfaces e usa outras pessoas para realizar tarefas de controle do código-fonte.  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implementadas por e para os VSPackages de controle do código-fonte  
- As seguintes interfaces são descritas no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], e o VSPackage de controle de origem implementa um subconjunto deles, dependendo de seu conjunto de recursos desejado. Algumas interfaces são marcados como obrigatório e deve ser implementado por cada VSPackage de controle de origem.  
-  
- Para essas interfaces que não implementa um pacote, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece uma implementação padrão. Observe que a implementação padrão é criada para o caso quando nenhum VSPackage é registrado e nenhum projeto é controlado. Um VSPackage de controle de fonte escrito adequadamente implementa interfaces necessários em vez de deixá-lo para a implementação padrão dessas interfaces.  
-  
- Um VSPackage de controle do código-fonte deve implementar um serviço privado que encapsula a algumas ou todas as interfaces a seguir.  
-  
- Interfaces são:  
-  
--   Obrigatórias: A entidade apropriada (controle de origem VSPackage, Stub de controle do código-fonte, projeto) deve implementar a interface.  
-  
--   Recomendado: A entidade deve implementar essa interface; Caso contrário, a funcionalidade de controle do código-fonte pode ser limitada.  
-  
--   Opcional: a entidade pode implementar essa interface para fornecer um conjunto mais rico de recursos.  
-  
+Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackage no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. O VSPackage de controle de origem implementa algumas dessas interfaces e usa outras pessoas para realizar tarefas de controle do código-fonte.
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implementadas por e para os VSPackages de controle do código-fonte
+ As seguintes interfaces são descritas no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], e o VSPackage de controle de origem implementa um subconjunto deles, dependendo de seu conjunto de recursos desejado. Algumas interfaces são marcados como obrigatório e deve ser implementado por cada VSPackage de controle de origem.
+
+ Para essas interfaces que não implementa um pacote, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece uma implementação padrão. Observe que a implementação padrão é criada para o caso quando nenhum VSPackage é registrado e nenhum projeto é controlado. Um VSPackage de controle de fonte escrito adequadamente implementa interfaces necessários em vez de deixá-lo para a implementação padrão dessas interfaces.
+
+ Um VSPackage de controle do código-fonte deve implementar um serviço privado que encapsula a algumas ou todas as interfaces a seguir.
+
+ Interfaces são:
+
+-   Obrigatórias: A entidade apropriada (controle de origem VSPackage, Stub de controle do código-fonte, projeto) deve implementar a interface.
+
+-   Recomendado: A entidade deve implementar essa interface; Caso contrário, a funcionalidade de controle do código-fonte pode ser limitada.
+
+-   Opcional: a entidade pode implementar essa interface para fornecer um conjunto mais rico de recursos.
+
 | Interface | Finalidade | Implementado por | Implementar? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Editores de chamar essa interface antes de modificar ou salvar um arquivo. O controle de fonte VSPackage pode fazer check-out do arquivo ou negar a operação se o check-out falhar. | Controle de fonte de VSPackage | Recomendado |
@@ -60,6 +60,6 @@ Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackag
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | Essa interface é usada para salvar as configurações de controle de fonte de no arquivo de solução (. sln). As configurações incluem o local de controle do código-fonte e os sinalizadores de status de controle do código-fonte. | Controle de fonte de VSPackage | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Essa interface é usada para salvar as configurações de controle do código-fonte no arquivo de opções (. suo) da solução. Isso pode incluir configurações de controle de origem específicas do usuário, como local de inscrição do usuário atual. | Controle de fonte de VSPackage | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Essa interface é usada para monitorar eventos para executar operações como a verificação em arquivos de projeto antes de fechar soluções ou obtendo novos arquivos de controle de origem ao abrir um projeto. | Controle de fonte de VSPackage | Recomendado |
-  
-## <a name="see-also"></a>Consulte também  
- [Elementos de design](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>Consulte também
+- [Elementos de design](../../extensibility/internals/source-control-vspackage-design-elements.md)

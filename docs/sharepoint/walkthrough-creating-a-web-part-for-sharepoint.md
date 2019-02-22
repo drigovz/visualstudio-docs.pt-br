@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e31e34c634965dc00a5d8c806759ec82cf78d014
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863975"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604568"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Passo a passo: Criar uma web part do SharePoint
 
@@ -216,7 +216,7 @@ Mostrar e ocultar os funcionários que não são gerentes, clicando em um item q
 
 ## <a name="see-also"></a>Consulte também
 
-[Criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Como: Criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Como: Criar uma web part do SharePoint usando um Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[Passo a passo: Criar uma web part para SharePoint usando um designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[como: Criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[como: Criar uma web part do SharePoint usando um Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
+[passo a passo: Criar uma web part para SharePoint usando um designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
