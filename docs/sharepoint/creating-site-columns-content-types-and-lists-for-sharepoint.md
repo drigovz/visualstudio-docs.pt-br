@@ -18,35 +18,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec1bc999025128c0dd68281dfc53e3f6353ae6b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cecb3e78cea90b927dc6b67b5b4a2cb50bfa87c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875544"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608039"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Criar colunas de site, tipos de conteúdo e listas para o SharePoint
-  Visual Studio fornece modelos de item de projeto para muitos fundamentais SharePoint itens diferentes, incluindo *listas* e *tipos de conteúdo*, que podem incorporar as colunas de site (ou  *campos*). Os novos designers para tipos de conteúdo e listas facilitam a criação desses itens mais fácil do que nunca.  
-  
+  Visual Studio fornece modelos de item de projeto para muitos fundamentais SharePoint itens diferentes, incluindo *listas* e *tipos de conteúdo*, que podem incorporar as colunas de site (ou  *campos*). Os novos designers para tipos de conteúdo e listas facilitam a criação desses itens mais fácil do que nunca.
+
 ## <a name="site-columns"></a>Colunas de site
- Colunas de site são um dos elementos mais básicos que você pode adicionar a um projeto do SharePoint. Uma coluna de site representa um tipo de dados, como um número de telefone, um comentário ou o nome da cidade de um contato em uma lista de contatos.  
-  
- O novo modelo de item de projeto de coluna de site torna a criação de colunas de site mais fácil do que na versão anterior do Visual Studio. Depois de criar uma nova coluna de site, você pode modificar o XML na coluna de site *Elements. XML* arquivo para incluir as informações que você deseja, como seu nome de exibição, seu tipo de dados e o grupo no qual você deseja que a coluna de site sejam exibidos no SharePoint. Para obter mais informações sobre colunas de site, consulte [Introdução às colunas](http://go.microsoft.com/fwlink/?LinkId=224996).  
-  
+ Colunas de site são um dos elementos mais básicos que você pode adicionar a um projeto do SharePoint. Uma coluna de site representa um tipo de dados, como um número de telefone, um comentário ou o nome da cidade de um contato em uma lista de contatos.
+
+ O novo modelo de item de projeto de coluna de site torna a criação de colunas de site mais fácil do que na versão anterior do Visual Studio. Depois de criar uma nova coluna de site, você pode modificar o XML na coluna de site *Elements. XML* arquivo para incluir as informações que você deseja, como seu nome de exibição, seu tipo de dados e o grupo no qual você deseja que a coluna de site sejam exibidos no SharePoint. Para obter mais informações sobre colunas de site, consulte [Introdução às colunas](http://go.microsoft.com/fwlink/?LinkId=224996).
+
 ## <a name="content-types-and-lists"></a>Listas e tipos de conteúdo
- Listas e tipos de conteúdo estão entre com mais frequência elementos usados no SharePoint.  
-  
- Um tipo de conteúdo define os metadados, o fluxo de trabalho e o comportamento para uma categoria de itens em uma biblioteca de documento ou de lista do SharePoint. Por exemplo, você pode criar um tipo de conteúdo para obter informações em uma lista de contatos ou uma lista de tarefas. Um contato tipo de conteúdo pode incluir colunas, como nome, Email, número de telefone e endereço. Um tipo de conteúdo que você define no nível do site é independente de qualquer lista ou biblioteca de documentos no site. Você pode usar o mesmo tipo de conteúdo com diferentes listas ou bibliotecas de documentos no site do SharePoint. Você também pode usar vários tipos de conteúdo na mesma lista ou biblioteca de documentos.  
-  
- Uma lista é uma coleção de informações no SharePoint que você pode compartilhar com outras pessoas. Listas consistem em linhas de colunas que contêm dados. Alguns exemplos de listas: uma lista de tarefas, uma lista de contatos e uma lista de avisos.  
-  
- Os designers de tipo de conteúdo e lista novos no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Verifique a criação de listas e tipos de conteúdo de site muito mais fácil e mais intuitiva do que na versão anterior do Visual Studio. A interface do usuário permite que você construir visualmente listas e tipos de conteúdo de uma maneira familiar e permite classificar e agrupar dados em listas e use títulos de grupo. Para obter mais informações sobre tipos de conteúdo, consulte [tipos de conteúdo](http://go.microsoft.com/fwlink/?LinkId=224997). Para obter mais informações sobre listas, consulte [formulários de lista](http://go.microsoft.com/fwlink/?LinkId=224998) e [modos de exibição de lista](http://go.microsoft.com/fwlink/?LinkId=224999).  
-  
+ Listas e tipos de conteúdo estão entre com mais frequência elementos usados no SharePoint.
+
+ Um tipo de conteúdo define os metadados, o fluxo de trabalho e o comportamento para uma categoria de itens em uma biblioteca de documento ou de lista do SharePoint. Por exemplo, você pode criar um tipo de conteúdo para obter informações em uma lista de contatos ou uma lista de tarefas. Um contato tipo de conteúdo pode incluir colunas, como nome, Email, número de telefone e endereço. Um tipo de conteúdo que você define no nível do site é independente de qualquer lista ou biblioteca de documentos no site. Você pode usar o mesmo tipo de conteúdo com diferentes listas ou bibliotecas de documentos no site do SharePoint. Você também pode usar vários tipos de conteúdo na mesma lista ou biblioteca de documentos.
+
+ Uma lista é uma coleção de informações no SharePoint que você pode compartilhar com outras pessoas. Listas consistem em linhas de colunas que contêm dados. Alguns exemplos de listas: uma lista de tarefas, uma lista de contatos e uma lista de avisos.
+
+ Os designers de tipo de conteúdo e lista novos no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Verifique a criação de listas e tipos de conteúdo de site muito mais fácil e mais intuitiva do que na versão anterior do Visual Studio. A interface do usuário permite que você construir visualmente listas e tipos de conteúdo de uma maneira familiar e permite classificar e agrupar dados em listas e use títulos de grupo. Para obter mais informações sobre tipos de conteúdo, consulte [tipos de conteúdo](http://go.microsoft.com/fwlink/?LinkId=224997). Para obter mais informações sobre listas, consulte [formulários de lista](http://go.microsoft.com/fwlink/?LinkId=224998) e [modos de exibição de lista](http://go.microsoft.com/fwlink/?LinkId=224999).
+
 ## <a name="related-topics"></a>Tópicos relacionados
-  
-|Título|Descrição|  
-|-----------|-----------------|  
-|[Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Demonstra como criar colunas de site que são usadas em um tipo de conteúdo personalizado. O tipo de conteúdo, em seguida, é usado em uma lista personalizada.|  
-  
+
+|Título|Descrição|
+|-----------|-----------------|
+|[Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Demonstra como criar colunas de site que são usadas em um tipo de conteúdo personalizado. O tipo de conteúdo, em seguida, é usado em uma lista personalizada.|
+
 ## <a name="see-also"></a>Consulte também
- [Introdução ao desenvolvimento no SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)  
+- [Introdução ao desenvolvimento no SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)

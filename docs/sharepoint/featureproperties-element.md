@@ -12,54 +12,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb345e66a53f9816281df6e948a8961252c0fcea
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f9b893ce699dd86f309a05fad83560cc42439551
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862583"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619362"
 ---
 # <a name="featureproperties-element"></a>Elemento FeatureProperties
-  Uma coleção de valores de propriedade que são incluídos com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar os valores de propriedade em seu código.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```xml  
-<FeatureProperties>  
-  <FeatureProperty.../>  
-</FeatureProperties>  
-```  
-  
+  Uma coleção de valores de propriedade que são incluídos com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar os valores de propriedade em seu código.
+
+## <a name="syntax"></a>Sintaxe
+
+```xml
+<FeatureProperties>
+  <FeatureProperty.../>
+</FeatureProperties>
+```
+
 ## <a name="attributes-and-elements"></a>Atributos e elementos
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
-  
-### <a name="attributes"></a>Atributos  
- nenhuma.  
-  
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
+
+### <a name="attributes"></a>Atributos
+ nenhuma.
+
 ### <a name="child-elements"></a>Elementos filho
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[FeatureProperty](../sharepoint/featureproperty-element.md)|Elemento opcional.<br /><br /> Representa uma propriedade personalizada, no formato de chave/valor.|  
-  
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[FeatureProperty](../sharepoint/featureproperty-element.md)|Elemento opcional.<br /><br /> Representa uma propriedade personalizada, no formato de chave/valor.|
+
 ### <a name="parent-elements"></a>Elementos pai
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Representa um item de projeto do SharePoint. Esse elemento o elemento raiz necessário do `.spdata` arquivo.|  
-  
-## <a name="remarks"></a>Comentários  
- Para obter mais informações sobre as propriedades do recurso, consulte [fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
-  
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[ProjectItem](../sharepoint/projectitem-element.md)|Representa um item de projeto do SharePoint. Esse elemento o elemento raiz necessário do `.spdata` arquivo.|
+
+## <a name="remarks"></a>Comentários
+ Para obter mais informações sobre as propriedades do recurso, consulte [fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
+
 ## <a name="element-information"></a>Informações sobre o elemento
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nome do esquema**|Esquema de Item de projeto do SharePoint|  
-|**Arquivo de validação**|ProjectItemModelSchema.xsd|  
-|**Pode estar vazio**|Não|  
-  
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nome do esquema**|Esquema de Item de projeto do SharePoint|
+|**Arquivo de validação**|ProjectItemModelSchema.xsd|
+|**Pode estar vazio**|Não|
+
 ## <a name="see-also"></a>Consulte também
- [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+- [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

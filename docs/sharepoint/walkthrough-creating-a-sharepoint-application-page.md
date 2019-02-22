@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866185"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630893"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Passo a passo: Criar uma página de aplicativo do SharePoint
- 
+
 Uma página de aplicativo é uma forma especializada de uma página ASP.NET. Páginas de aplicativos têm conteúdo que é mesclado com uma página mestra do SharePoint. Para obter mais informações, consulte [criar páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 Este passo a passo mostra como criar uma página de aplicativo e depurá-lo por meio de um site do SharePoint local. Esta página mostra todos os itens que cada usuário criou ou modificou em todos os sites do farm de servidores.
@@ -153,5 +153,5 @@ Você pode aprender mais sobre como projetar o conteúdo da página do SharePoin
 
 ## <a name="see-also"></a>Consulte também
 
-[Como: Criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)  
-[Tipo de página layouts do aplicativo](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Como: Criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)
+[tipo de página layouts do aplicativo](http://go.microsoft.com/fwlink/?LinkID=169274)

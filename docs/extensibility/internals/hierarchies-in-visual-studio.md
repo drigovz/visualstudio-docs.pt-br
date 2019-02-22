@@ -11,28 +11,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20e8dcb947b84652f818ab38ed441e39e27942e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033395"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616879"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarquias no Visual Studio
-O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) exibe um projeto como um *hierarquia*. No IDE, uma hierarquia é uma árvore de nós, onde cada nó tem um conjunto de propriedades associadas. Um *hierarquia de projeto* é um contêiner que mantém os itens do projeto, as relações dos itens e propriedades associadas dos itens e comandos.  
-  
- Na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você gerencia hierarquias de projeto usando a interface de hierarquia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface redireciona você invocar de itens de projeto para a janela de hierarquia apropriada, em vez do manipulador de comandos padrão de comandos.  
-  
-## <a name="project-hierarchies"></a>Hierarquias de projeto  
- Cada hierarquia do projeto contém itens que você pode exibir e editar. Esses itens variam dependendo do tipo de projeto. Por exemplo, um projeto de banco de dados pode conter procedimentos armazenados, exibições de banco de dados e tabelas de banco de dados. Um projeto de linguagem de programação, por outro lado, provavelmente incluirá arquivos de origem e arquivos de recurso para caixas de diálogo e bitmaps. Hierarquias podem ser aninhadas, que oferece alguns maior flexibilidade quando você cria uma hierarquia do projeto.  
-  
- Quando você cria um novo tipo de projeto, o tipo de projeto controla o conjunto completo de itens que podem ser editadas nele. No entanto, os projetos podem conter itens para os quais não têm suporte de edição. Por exemplo, os projetos do Visual C++ podem conter arquivos HTML, mesmo que o Visual C++ não fornece qualquer editor personalizado para o tipo de arquivo HTML.  
-  
- Hierarquias de gerenciam a persistência dos itens que contidos nelas. A implementação da hierarquia deve controlar as propriedades especiais que afetam a persistência dos itens dentro da hierarquia. Por exemplo, se os itens representam os objetos em um repositório em vez de arquivos, a implementação de hierarquia deve controlar a persistência desses objetos. O próprio IDE direciona a hierarquia para salvar os itens em conformidade com a entrada do usuário, mas o IDE não controla as ações necessárias para salvar esses itens. Em vez disso, o projeto está no controle.  
-  
- Quando um usuário abre um item em um editor, a hierarquia que controla esse item é selecionada e se torna a hierarquia do Active Directory. A hierarquia selecionada determina o conjunto de comandos disponíveis para atuar no item. Acompanhamento de foco do usuário dessa maneira permite que a hierarquia refletir o contexto do usuário atual.  
-  
-## <a name="see-also"></a>Consulte também  
- [Tipos de projeto](../../extensibility/internals/project-types.md)   
- [Seleção e moeda no IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [Exemplos de VSSDK](http://aka.ms/vs2015sdksamples)
+O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) exibe um projeto como um *hierarquia*. No IDE, uma hierarquia é uma árvore de nós, onde cada nó tem um conjunto de propriedades associadas. Um *hierarquia de projeto* é um contêiner que mantém os itens do projeto, as relações dos itens e propriedades associadas dos itens e comandos.
+
+ Na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você gerencia hierarquias de projeto usando a interface de hierarquia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface redireciona você invocar de itens de projeto para a janela de hierarquia apropriada, em vez do manipulador de comandos padrão de comandos.
+
+## <a name="project-hierarchies"></a>Hierarquias de projeto
+ Cada hierarquia do projeto contém itens que você pode exibir e editar. Esses itens variam dependendo do tipo de projeto. Por exemplo, um projeto de banco de dados pode conter procedimentos armazenados, exibições de banco de dados e tabelas de banco de dados. Um projeto de linguagem de programação, por outro lado, provavelmente incluirá arquivos de origem e arquivos de recurso para caixas de diálogo e bitmaps. Hierarquias podem ser aninhadas, que oferece alguns maior flexibilidade quando você cria uma hierarquia do projeto.
+
+ Quando você cria um novo tipo de projeto, o tipo de projeto controla o conjunto completo de itens que podem ser editadas nele. No entanto, os projetos podem conter itens para os quais não têm suporte de edição. Por exemplo, os projetos do Visual C++ podem conter arquivos HTML, mesmo que o Visual C++ não fornece qualquer editor personalizado para o tipo de arquivo HTML.
+
+ Hierarquias de gerenciam a persistência dos itens que contidos nelas. A implementação da hierarquia deve controlar as propriedades especiais que afetam a persistência dos itens dentro da hierarquia. Por exemplo, se os itens representam os objetos em um repositório em vez de arquivos, a implementação de hierarquia deve controlar a persistência desses objetos. O próprio IDE direciona a hierarquia para salvar os itens em conformidade com a entrada do usuário, mas o IDE não controla as ações necessárias para salvar esses itens. Em vez disso, o projeto está no controle.
+
+ Quando um usuário abre um item em um editor, a hierarquia que controla esse item é selecionada e se torna a hierarquia do Active Directory. A hierarquia selecionada determina o conjunto de comandos disponíveis para atuar no item. Acompanhamento de foco do usuário dessa maneira permite que a hierarquia refletir o contexto do usuário atual.
+
+## <a name="see-also"></a>Consulte também
+- [Tipos de projeto](../../extensibility/internals/project-types.md)
+- [Seleção e moeda no IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [Exemplos de VSSDK](http://aka.ms/vs2015sdksamples)
