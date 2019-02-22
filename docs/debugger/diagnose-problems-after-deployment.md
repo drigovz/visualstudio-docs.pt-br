@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008706"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316880"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnosticar problemas após a implantação usando o IntelliTrace (C#, Visual Basic)
 
@@ -31,7 +31,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 -   Visual Studio Enterprise (mas não as edições Professional ou Community) para examinar dados de diagnóstico e depurar seu código com o IntelliTrace
 
-##  <a name="SetUpBuild"></a> Etapa 1: Incluir informações de compilação com sua versão
+##  <a name="SetUpBuild"></a> Etapa 1: inclua informações de compilação com sua liberação
  Configure seu processo de build para criar um manifesto de compilação (arquivo *BuildInfo.config*) de seu projeto Web e inclua esse manifesto em sua versão. Esse manifesto contém informações sobre o projeto, sobre o controle do código-fonte e o sistema de compilação utilizados para criar uma compilação específica. Essas informações ajudam o Visual Studio a encontrar o código-fonte e os símbolos correspondentes após abrir o log do IntelliTrace para revisar os eventos registrados.
 
 ###  <a name="AutomatedBuild"></a> Criar o manifesto de build de um build automatizado usando Team Foundation Server
@@ -153,15 +153,15 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
  **1&gt;/p:buildsymbolstorepath=&lt;1}&lt;{2&gt;caminho =**\<*para símbolos*>
 
-##  <a name="DeployRelease"></a> Etapa 2: Liberar seu aplicativo
+##  <a name="DeployRelease"></a>Etapa 2: liberar seu aplicativo
  Se você usar o [pacote Deploy](https://msdn.microsoft.com/library/dd394698.aspx) que foi criado pelo processo de compilação para implantar seu aplicativo, o manifesto de compilação é renomeado automaticamente de "*ProjectName*. Buildinfo. config"para"Buildinfo. config"e é colocado na mesma pasta com o arquivo de Web. config do seu aplicativo em seu servidor web.
 
  Se você usa outros métodos para implantar seu aplicativo, verifique se o manifesto de build foi renomeado de "*ProjectName*.BuildInfo.config" para "BuildInfo.config" e colocado na mesma pasta que seu arquivo Web.config do aplicativo no seu servidor Web.
 
-## <a name="step-3-monitor-your-app"></a>Etapa 3: Monitorar seu aplicativo
+## <a name="step-3-monitor-your-app"></a>Etapa 3: monitorar seu aplicativo
  Configure o monitoramento do desempenho de aplicativos no seu servidor Web para que você possa monitorar a ocorrência de problemas em seu aplicativo, registrar eventos de diagnóstico e salvar esses eventos em um arquivo de log do IntelliTrace. Confira [Monitoramento de problemas de implantação versão](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="InvestigateEvents">Etapa 4:</a> Localizar o problema
+##  <a name="InvestigateEvents"></a>Etapa 4: Encontre o problema
  Será necessário o Visual Studio Enterprise no computador de desenvolvimento ou em outro computador para revisar os eventos registrados e depurar seu código usando o IntelliTrace. Você também pode usar ferramentas como CodeLens, mapas do depurador e mapas de código para ajudar no diagnóstico do problema.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Abrir o log do IntelliTrace e a solução correspondente
@@ -216,7 +216,7 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
     - [O que são todos esses outros eventos e informações no log do IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
     - [O que mais posso fazer aqui?](#WhatElse)
-    - [Deseja obter mais informações sobre eventos de desempenho?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [Deseja obter mais informações sobre eventos de desempenho?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Diagnosticar uma exceção
 
@@ -276,11 +276,11 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
   - **TFS**
 
-    - **ProjectCollectionUri**: O URI para sua coleção de projeto e o Team Foundation Server
+    - **ProjectCollectionUri**: o URI para seu Team Foundation Server e coleção de projetos
 
-    - **ProjectItemSpec**: O caminho para o arquivo de projeto do seu aplicativo (. csproj ou. vbproj)
+    - **ProjectItemSpec**: o caminho para seu arquivo de projeto do aplicativo (.csproj ou .vbproj)
 
-    - **ProjectVersionSpec**: A versão do seu projeto
+    - **ProjectVersionSpec**: a versão para seu projeto
 
       Por exemplo:
 
@@ -296,13 +296,13 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
   - **Git**
 
-    - **GitSourceControl**: O local do **GitSourceControl** esquema
+    - **GitSourceControl**: o local de esquema de **GitSourceControl**
 
-    - **RepositoryUrl**: O URI para seu Team Foundation Server, a coleção de projeto e o repositório Git
+    - **RepositoryUrl**: o URI para seu Team Foundation Server, a coleção de projetos e o repositório Git
 
-    - **ProjectPath**: O caminho para o arquivo de projeto do seu aplicativo (. csproj ou. vbproj)
+    - **ProjectPath**: o caminho para seu arquivo de projeto do aplicativo (.csproj ou .vbproj)
 
-    - **CommitId**: A id para a sua confirmação
+    - **CommitId**: o id para sua confirmação
 
       Por exemplo:
 
@@ -320,15 +320,15 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
    Informações sobre seu sistema de compilação, `"TeamBuild"` ou `"MSBuild"` e as seguintes propriedades necessárias:
 
-  - **{1&gt;buildlabel&lt;1** (para TeamBuild): O nome da compilação e o número. Esse rótulo também é usado como o nome do evento de implantação. Para obter mais informações sobre números de compilação, consulte [Use números para dar nomes significativos a compilações concluídas de compilação](/azure/devops/pipelines/build/options?view=vsts).
+  - **BuildLabel** (para TeamBuild): o nome e o número da compilação. Esse rótulo também é usado como o nome do evento de implantação. Para obter mais informações sobre números de compilação, consulte [Use números para dar nomes significativos a compilações concluídas de compilação](/azure/devops/pipelines/build/options?view=vsts).
 
-  - **SymbolPath** (recomendado): A lista de URIs para os locais de símbolos (arquivo PDB) separados por ponto e vírgula. Esses URIs podem ser URLs ou UNCs (caminhos de rede). Isso facilita para o Visual Studio encontrar os símbolos correspondentes para ajudar com sua depuração.
+  - **SymbolPath** (Recomendado): a lista dos URIs dos locais de seus símbolos (arquivo PDB) separados por ponto-e-vírgula. Esses URIs podem ser URLs ou UNCs (caminhos de rede). Isso facilita para o Visual Studio encontrar os símbolos correspondentes para ajudar com sua depuração.
 
-  - **{1&gt;buildreporturl&lt;1** (para TeamBuild): O local do relatório de compilação no TFS
+  - **BuildReportUrl** (para TeamBuild): o local do relatório de compilação no TFS
 
-  - **{1&gt;BuildID&lt;1** (para TeamBuild): O URI para os detalhes da compilação no TFS. Esse URI também é usado como a ID do evento de implantação. Deve ser uma ID exclusiva caso não esteja usando o TeamBuild.
+  - **BuildId** (para TeamBuild): o URI para os detalhes da compilação no TFS. Esse URI também é usado como a ID do evento de implantação. Deve ser uma ID exclusiva caso não esteja usando o TeamBuild.
 
-  - **BuiltSolution**: O caminho para o arquivo de solução que o Visual Studio usa para localizar e abrir a solução correspondente. Esse é o conteúdo da propriedade **SolutionPath** do MsBuild.
+  - **BuiltSolution**: o caminho para seu arquivo de solução que o Visual Studio usa para localizar e abrir a solução correspondente. Esse é o conteúdo da propriedade **SolutionPath** do MsBuild.
 
     Por exemplo:
 
@@ -379,10 +379,10 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
      ![Abrir do controle de origem &#45; migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> P: O que é um espaço de trabalho?
+####  <a name="WhatWorkspace"></a> P: O que é um workspace?
  **R:** Seu [workspace armazena uma cópia do código-fonte](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts), de modo que você possa desenvolvê-lo e testá-lo separadamente antes de fazer check-in do trabalho. Se você ainda não tem um workspace mapeado especificamente para a solução ou o projeto encontrado, o Visual Studio solicitará a escolha de um workspace disponível ou a criação de um novo workspace com o nome do computador como o nome padrão do workspace.
 
 ####  <a name="UntrustedSymbols"></a> P: Por que recebo esta mensagem sobre símbolos não confiáveis?
  ![Depurar com o caminho de símbolos não confiáveis? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **R:** Esta mensagem aparece quando o caminho de símbolos no arquivo de manifesto de compilação (\<*ProjectName*>. Buildinfo) não está incluído na lista de caminhos confiáveis de símbolos. Você pode adicionar o caminho à lista de caminhos de símbolos nas opções do depurador.
+ **R:** esta mensagem aparece quando o caminho de símbolos no arquivo de manifesto de compilação (\<*ProjectName*>. Buildinfo) não está incluído na lista de caminhos confiáveis de símbolos. Você pode adicionar o caminho à lista de caminhos de símbolos nas opções do depurador.
