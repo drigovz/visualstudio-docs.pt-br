@@ -15,37 +15,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b94375b54e7e0c0c774adc7b8054fc4219456a40
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bd071a10ab456014190df4f84d6a0bff13c859b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870077"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604831"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Como: Remover a proteção de planilhas programaticamente
-  Você poderá remover programaticamente a proteção de uma planilha do Microsoft Office Excel.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- O exemplo a seguir usa a variável `getPasswordFromUser`, que contém uma senha obtida do usuário.  
-  
-## <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>Para desproteger uma planilha em uma personalização no nível de documento  
-  
-1.  Chamar o <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> método da planilha e passe a senha, se necessário. Este exemplo pressupõe que você está trabalhando com uma planilha denominada `Sheet1`.  
-  
+  Você poderá remover programaticamente a proteção de uma planilha do Microsoft Office Excel.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ O exemplo a seguir usa a variável `getPasswordFromUser`, que contém uma senha obtida do usuário.
+
+## <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>Para desproteger uma planilha em uma personalização no nível de documento
+
+1.  Chamar o <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> método da planilha e passe a senha, se necessário. Este exemplo pressupõe que você está trabalhando com uma planilha denominada `Sheet1`.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]
-     [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]  
-  
-## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>Para desproteger uma planilha em um suplemento do VSTO  
-  
-1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> método da planilha ativa e passe a senha, se necessário.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]
+
+## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>Para desproteger uma planilha em um suplemento do VSTO
+
+1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> método da planilha ativa e passe a senha, se necessário.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]  
-  
-## <a name="see-also"></a>Consulte também  
- [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
- [Como: Proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Como: Proteger pastas de trabalho de forma programática](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Como: Ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]
+
+## <a name="see-also"></a>Consulte também
+- [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
+- [Como: Proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Como: Proteger pastas de trabalho de forma programática](../vsto/how-to-programmatically-protect-workbooks.md)
+- [Como: Ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)

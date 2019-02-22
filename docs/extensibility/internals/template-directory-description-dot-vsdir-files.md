@@ -12,29 +12,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d17c8a375a5e579c6c2720afb118f1940c4a0d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935027"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605686"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Arquivos de descrição do diretório de modelo (.Vsdir)
-Um arquivo de descrição de diretório do modelo (. vsdir) é um arquivo de texto que permite que o ambiente de desenvolvimento integrado (IDE) para exibir pastas, arquivos. vsz do assistente e arquivos de modelo que estão associados ao seu projeto em caixas de diálogo. O conteúdo inclui um registro por arquivo ou pasta. Todos os arquivos. vsdir em um local referenciado são mesclados, embora. vsdir apenas um arquivo geralmente é fornecido para descrever várias pastas, assistentes ou arquivos de modelo.  
+Um arquivo de descrição de diretório do modelo (. vsdir) é um arquivo de texto que permite que o ambiente de desenvolvimento integrado (IDE) para exibir pastas, arquivos. vsz do assistente e arquivos de modelo que estão associados ao seu projeto em caixas de diálogo. O conteúdo inclui um registro por arquivo ou pasta. Todos os arquivos. vsdir em um local referenciado são mesclados, embora. vsdir apenas um arquivo geralmente é fornecido para descrever várias pastas, assistentes ou arquivos de modelo.
 
- Pastas (subdiretórios), arquivos que são referenciados no arquivo. vsdir e o próprio arquivo. vsdir estão localizadas no mesmo diretório. Quando o IDE executa um assistente ou exibe uma pasta ou arquivo a **novo projeto** ou **Adicionar Novo Item** caixas de diálogo, o IDE examina o diretório que contém os arquivos executados para determinar se um arquivo. vsdir é presente. Se um arquivo. vsdir for encontrado, o IDE lê-lo para determinar se ele contém uma entrada para o arquivo ou pasta executada ou exibida. Se uma entrada for encontrada, o IDE usa as informações na exibição do conteúdo ou da execução do assistente.  
+ Pastas (subdiretórios), arquivos que são referenciados no arquivo. vsdir e o próprio arquivo. vsdir estão localizadas no mesmo diretório. Quando o IDE executa um assistente ou exibe uma pasta ou arquivo a **novo projeto** ou **Adicionar Novo Item** caixas de diálogo, o IDE examina o diretório que contém os arquivos executados para determinar se um arquivo. vsdir é presente. Se um arquivo. vsdir for encontrado, o IDE lê-lo para determinar se ele contém uma entrada para o arquivo ou pasta executada ou exibida. Se uma entrada for encontrada, o IDE usa as informações na exibição do conteúdo ou da execução do assistente.
 
- O exemplo de código a seguir é do arquivo SourceFiles.vsdir no \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files chave do registro:  
+ O exemplo de código a seguir é do arquivo SourceFiles.vsdir no \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files chave do registro:
 
-```  
-HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127  
-SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124  
-```  
+```
+HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
+SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
+```
 
- Nesse caso, dois registros estão em um arquivo. Uma nova linha (caractere de retorno de carro) separa cada registro. Cada linha representa um tipo de arquivo diferente. Um pipe (&#124;) caractere que separa os campos em cada registro. Um único diretório pode conter vários arquivos. vsdir que têm nomes de arquivo diferentes, ou você pode ter um arquivo. vsdir para cada tipo de arquivo.  
+ Nesse caso, dois registros estão em um arquivo. Uma nova linha (caractere de retorno de carro) separa cada registro. Cada linha representa um tipo de arquivo diferente. Um pipe (&#124;) caractere que separa os campos em cada registro. Um único diretório pode conter vários arquivos. vsdir que têm nomes de arquivo diferentes, ou você pode ter um arquivo. vsdir para cada tipo de arquivo.
 
-## <a name="fields"></a>Campos  
- A tabela a seguir lista os campos especificados para cada registro.  
+## <a name="fields"></a>Campos
+ A tabela a seguir lista os campos especificados para cada registro.
 
 
 | Campo | Descrição |
@@ -49,20 +49,20 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Sinalizadores (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Usado para desabilitar ou habilitar o **nome** e **local** campos dos **Add New Item** caixa de diálogo. O valor de **sinalizadores** campo é o equivalente decimal da combinação de sinalizadores de bits necessários.<br /><br /> Quando um usuário seleciona um item na **New** guia, o projeto determina se o campo de nome e o campo de localização são mostrados quando o **Adicionar Novo Item** caixa de diálogo é exibida primeiro. Um item, por meio de um arquivo. vsdir, pode controlar somente se os campos estão habilitados versus desabilitado quando o item é selecionado. |
 | SuggestedBaseName | Representa o nome padrão para o arquivo, o assistente ou o modelo. Este campo é uma cadeia de caracteres ou um identificador de recurso do formulário "#ResID". O IDE usa esse valor para fornecer um nome padrão para o item. Esse valor de base é acrescentado com um valor inteiro para tornar o nome exclusivo, como MyFile21.asp.<br /><br /> Na lista anterior, descrição, DLLPath, IconResourceId, sinalizadores e SuggestedBaseNumber se aplicam somente a arquivos de modelo e o assistente. Esses campos não se aplicam às pastas. Esse fato é ilustrado no código no arquivo BscPrjProjectItems no \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems chave do registro. Esse arquivo contém três registros (uma para cada pasta) com quatro campos para cada registro: RelPathName, {clsidPackage} LocalizedName e SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- Quando você cria um arquivo do assistente, você também deve considerar os problemas a seguir.  
+ Quando você cria um arquivo do assistente, você também deve considerar os problemas a seguir.
 
--   Qualquer campo não obrigatórios para o qual não há dados significativos deve conter um 0 (zero) como um espaço reservado.  
+-   Qualquer campo não obrigatórios para o qual não há dados significativos deve conter um 0 (zero) como um espaço reservado.
 
--   Se nenhum nome localizado for fornecido, o nome de caminho relativo é usado no arquivo do assistente.  
+-   Se nenhum nome localizado for fornecido, o nome de caminho relativo é usado no arquivo do assistente.
 
--   DLLPath substitui clsidPackage para localização do ícone.  
+-   DLLPath substitui clsidPackage para localização do ícone.
 
--   Se nenhum ícone for definido, a IDE substitui o ícone padrão para um arquivo que tem a extensão.  
+-   Se nenhum ícone for definido, a IDE substitui o ícone padrão para um arquivo que tem a extensão.
 
--   Se nenhum nome de base sugerido for fornecido, 'Project' será usado.  
+-   Se nenhum nome de base sugerido for fornecido, 'Project' será usado.
 
--   Se você excluir os arquivos. vsz, pastas ou arquivos de modelo, você também deve remover seus registros associados do arquivo. vsdir.  
+-   Se você excluir os arquivos. vsz, pastas ou arquivos de modelo, você também deve remover seus registros associados do arquivo. vsdir.
 
-## <a name="see-also"></a>Consulte também  
- [Assistentes](../../extensibility/internals/wizards.md)   
- [Arquivo do assistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+## <a name="see-also"></a>Consulte também
+- [Assistentes:](../../extensibility/internals/wizards.md)
+- [Arquivo do assistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

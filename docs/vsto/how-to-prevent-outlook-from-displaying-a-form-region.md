@@ -13,35 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 473b88dca8813d1db3c465105dc7eca95e49dfbe
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868921"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629177"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Como: Impedir que o Outlook exiba uma região de formulário
-  Pode haver situações em que você quer que o Microsoft Office Outlook para exibir uma região de formulário para um determinado item. Por exemplo, se um item de contato não contiver um endereço comercial, você pode impedir que uma região de formulário que mostra o local da empresa em um mapa apareça.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Para impedir que o Outlook exiba uma região de formulário  
-  
-1. Abra o arquivo de código para a região do formulário que você deseja modificar.  
-  
-2. Expanda o **fábrica de região de formulário** região de código.  
-  
-3. Adicione código para o `FormRegionInitializing` manipulador de eventos que define o <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriedade da <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe para **true**.  
-  
-   Neste exemplo, se o item de contato não contiver um endereço, o <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> estiver definida como **verdadeiro**, e a região do formulário não é exibida.  
-  
-## <a name="example"></a>Exemplo  
+  Pode haver situações em que você quer que o Microsoft Office Outlook para exibir uma região de formulário para um determinado item. Por exemplo, se um item de contato não contiver um endereço comercial, você pode impedir que uma região de formulário que mostra o local da empresa em um mapa apareça.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Para impedir que o Outlook exiba uma região de formulário
+
+1. Abra o arquivo de código para a região do formulário que você deseja modificar.
+
+2. Expanda o **fábrica de região de formulário** região de código.
+
+3. Adicione código para o `FormRegionInitializing` manipulador de eventos que define o <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriedade da <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe para **true**.
+
+   Neste exemplo, se o item de contato não contiver um endereço, o <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> estiver definida como **verdadeiro**, e a região do formulário não é exibida.
+
+## <a name="example"></a>Exemplo
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
- [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
-  
-## <a name="see-also"></a>Consulte também  
- [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)   
- [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Passo a passo: Importar de uma região de formulário projetada no Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+ [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+
+## <a name="see-also"></a>Consulte também
+- [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
+- [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Passo a passo: Importar de uma região de formulário projetada no Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

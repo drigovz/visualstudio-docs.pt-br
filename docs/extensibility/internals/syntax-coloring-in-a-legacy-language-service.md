@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025638"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629567"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Coloração de sintaxe em um serviço de linguagem herdado
 
@@ -63,11 +63,17 @@ Visual Studio usa um serviço de codificação por cores para identificar elemen
 >  Além de usar um colorizador do serviço de linguagem, um VSPackage também pode usar o texto do Visual Studio para fins gerais coloração mecanismo. Para obter mais informações sobre esse mecanismo, consulte [usando fontes e cores](../../extensibility/using-fonts-and-colors.md).
 
 ## <a name="in-this-section"></a>Nesta seção
- [Implementando a coloração de sintaxe](../../extensibility/internals/implementing-syntax-coloring.md) aborda como um editor acessa um serviço de linguagem coloração de sintaxe e que o serviço de linguagem deve implementar para dar suporte a coloração de sintaxe.
+- [Implementar a coloração de sintaxe](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [Como: Usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md) demonstra como usar itens de coloração internos do serviço de linguagem.
+ Discute como um editor acessa um serviço de linguagem coloração de sintaxe e que o serviço de linguagem deve implementar para dar suporte à sintaxe colorida.
 
- [Itens de coloração personalizados](../../extensibility/internals/custom-colorable-items.md) discute como implementar itens de coloração personalizados.
+- [Como: Usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ Demonstra como usar itens de coloração internos do serviço de linguagem.
+
+- [Itens de coloração personalizados](../../extensibility/internals/custom-colorable-items.md)
+
+ Discute como implementar itens de coloração personalizados.
 
 ## <a name="see-also"></a>Consulte também
 
