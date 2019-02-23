@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier2
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a52bc088b2781f31894213c4c37c50069c9fea2
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 16ffb759c2f3309351f9c27feb719e18c49a39ea
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449886"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678564"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Essa interface fornece portas para o Gerenciador de sessão de depuração (SDM).
@@ -51,9 +51,9 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 
 Uma chamada para [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) retorna essa interface, que representa o fornecedor de porta atual que está sendo usado por [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) retorna essa interface, que representa o fornecedor de porta que criou a porta.
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) retorna essa interface, que representa o fornecedor de porta que criou a porta.
 
-[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) representa uma lista de `IDebugPortSupplier` interfaces (o `IEnumDebugPortSuppliers` interface é obtido do [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), que representa todos os fornecedores de porta registrados com [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) representa uma lista de `IDebugPortSupplier` interfaces (o `IEnumDebugPortSuppliers` interface é obtido do [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), que representa todos os fornecedores de porta registrados com [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
 
 Um mecanismo de depuração normalmente não interage com um fornecedor de porta.
 
@@ -81,7 +81,7 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)  
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)  
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)  
-[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
+- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::ReplaceSymbols | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ReplaceSymbols
 - IDebugComPlusSymbolProvider::ReplaceSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee202ec6462adffa3f4c21d518b18388bea2e072
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413482"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679960"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Substitui os símbolos de depuração atual com aqueles no fluxo de dados especificado.
@@ -40,14 +40,17 @@ int ReplaceSymbols(
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`  
-[in] Identificador do domínio do aplicativo.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificador exclusivo do módulo.
+ [in] Identificador do domínio do aplicativo.
 
-`pStream`  
-[in] Fluxo de dados que contém os símbolos de novo.
+`guidModule`
+
+ [in] Identificador exclusivo do módulo.
+
+`pStream`
+
+ [in] Fluxo de dados que contém os símbolos de novo.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
@@ -79,4 +82,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

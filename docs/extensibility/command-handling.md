@@ -10,42 +10,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3f9086bba7d5c5adfa42f1297de07a2f50ff7e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1517410c58646bad2333db95b6f666937d890303
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988123"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683344"
 ---
 # <a name="command-handling"></a>Manipulação de comando
-O editor pode definir novos comandos. Normalmente, os comandos são exibidos em um menu, em uma barra de ferramentas ou em um menu de contexto.  
-  
- Para obter mais informações sobre como definir os menus e comandos, consulte [comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).  
-  
- Um serviço de linguagem pode controlar quais menus de contexto são mostrados no editor, interceptando o <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeração. Como alternativa, você pode controlar o menu de contexto em uma base por marcador. Para obter mais informações, consulte [comandos importantes para filtros do serviço de linguagem](../extensibility/internals/important-commands-for-language-service-filters.md).  
-  
-## <a name="add-commands-to-the-editor-context-menu"></a>Adicionar comandos ao menu de contexto do editor  
- Para adicionar um comando ao menu de contexto, você deve primeiro definir um conjunto de comandos de menu que pertencem a um grupo específico. O exemplo a seguir é obtido dos *VSCT* arquivo gerado como parte do passo a passo [passo a passo: Adicionar recursos a um editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
-  
- \<Guid de menu = "guidCustomEditorCmdSet" id = "IDMX_RTF" prioridade = "0x0000" type = "Contexto" >  
-  
- \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
-  
- \<Cadeias de caracteres >  
-  
- \<ButtonText > Menu de contexto CustomEditor\</ButtonText >  
-  
- \<CommandName>CustomEditorContextMenu\</CommandName>  
-  
- \</Strings>  
-  
- \</Menu>  
-  
- \</Menus>  
-  
- O texto acima adiciona um comando de menu de contexto com o texto **Menu de contexto CustomEditor**. O GUID de Menu é parte do conjunto de comando que é criado com este editor. O tipo é "Contexto".  
-  
- Você também pode usar comandos predefinidos que não precisam ser definidos na *VSCT* arquivo. Por exemplo, examine os *EditorPane.cs* arquivo gerado pelo modelo de pacote do Visual Studio. Você verá que um conjunto de comandos predefinidos, como <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> definido por <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, são tratados em manipuladores de comandos, como o `onSelectAll` método.  
-  
-## <a name="see-also"></a>Consulte também  
- [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
+O editor pode definir novos comandos. Normalmente, os comandos são exibidos em um menu, em uma barra de ferramentas ou em um menu de contexto.
+
+ Para obter mais informações sobre como definir os menus e comandos, consulte [comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).
+
+ Um serviço de linguagem pode controlar quais menus de contexto são mostrados no editor, interceptando o <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeração. Como alternativa, você pode controlar o menu de contexto em uma base por marcador. Para obter mais informações, consulte [comandos importantes para filtros do serviço de linguagem](../extensibility/internals/important-commands-for-language-service-filters.md).
+
+## <a name="add-commands-to-the-editor-context-menu"></a>Adicionar comandos ao menu de contexto do editor
+ Para adicionar um comando ao menu de contexto, você deve primeiro definir um conjunto de comandos de menu que pertencem a um grupo específico. O exemplo a seguir é obtido dos *VSCT* arquivo gerado como parte do passo a passo [passo a passo: Adicionar recursos a um editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):
+
+ \<Guid de menu = "guidCustomEditorCmdSet" id = "IDMX_RTF" prioridade = "0x0000" type = "Contexto" >
+
+ \<Parent guid="guidCustomEditorCmdSet" id="0"/>
+
+ \<Cadeias de caracteres >
+
+ \<ButtonText > Menu de contexto CustomEditor\</ButtonText >
+
+ \<CommandName>CustomEditorContextMenu\</CommandName>
+
+ \</Strings>
+
+ \</Menu>
+
+ \</Menus>
+
+ O texto acima adiciona um comando de menu de contexto com o texto **Menu de contexto CustomEditor**. O GUID de Menu é parte do conjunto de comando que é criado com este editor. O tipo é "Contexto".
+
+ Você também pode usar comandos predefinidos que não precisam ser definidos na *VSCT* arquivo. Por exemplo, examine os *EditorPane.cs* arquivo gerado pelo modelo de pacote do Visual Studio. Você verá que um conjunto de comandos predefinidos, como <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> definido por <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, são tratados em manipuladores de comandos, como o `onSelectAll` método.
+
+## <a name="see-also"></a>Consulte também
+- [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

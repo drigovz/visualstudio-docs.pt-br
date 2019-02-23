@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IEEVisualizerService::GetValueDisplayStringCount
 - GetValueDisplayStringCount
@@ -11,46 +11,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bb70d58cb2f419661253f4aab135bef91d3700b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b3ed52e8be77e5f4dce081fc6a60ae22cecbb990
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978497"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720086"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-Recupera o número de cadeias de caracteres a ser exibida para a propriedade especificada ou o campo de valor.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetValueDisplayStringCount (  
-   DWORD         displayKind,   
-   IDebugField * propertyOrField,   
-   ULONG *       pcelt  
-);  
-```  
-  
-```csharp  
-int GetValueDisplayStringCount (  
-   uint        displayKind,   
-   IDebugField propertyOrField,   
-   out ulong   pcelt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `displayKind`  
- [in] O valor dos [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) enumeração.  
-  
- `propertyOrField`  
- [in] Uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface que representa uma propriedade ou campo.  
-  
- `pcelt`  
- [out] Retorna o número de cadeias de caracteres de valor para exibir.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
+Recupera o número de cadeias de caracteres a ser exibida para a propriedade especificada ou o campo de valor.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetValueDisplayStringCount (
+   DWORD         displayKind,
+   IDebugField * propertyOrField,
+   ULONG *       pcelt
+);
+```
+
+```csharp
+int GetValueDisplayStringCount (
+   uint        displayKind,
+   IDebugField propertyOrField,
+   out ulong   pcelt
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `displayKind`
+
+ [in] O valor dos [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) enumeração.
+
+ `propertyOrField`
+
+ [in] Uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface que representa uma propriedade ou campo.
+
+ `pcelt`
+
+ [out] Retorna o número de cadeias de caracteres de valor para exibir.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

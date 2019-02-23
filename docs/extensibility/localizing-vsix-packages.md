@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936639"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687075"
 ---
 # <a name="localizing-vsix-packages"></a>Localizando pacotes do VSIX
 
@@ -27,7 +27,7 @@ Se o conteúdo do seu pacote do VSIX inclui um VSPackage que adiciona os comando
 
 ## <a name="directory-structure"></a>Estrutura do diretório
 
- Quando um usuário instala uma extensão **extensões e atualizações** verifica o nível superior do pacote VSIX para uma pasta cujo nome corresponde à localidade do Visual Studio do computador de destino. Se **extensões e atualizações** localiza um *.vsixlangpack* arquivo na pasta, ele substitui os valores localizados no arquivo para os valores correspondentes no *.vsixmanifest*arquivo. Esses valores são exibidos quando a extensão está sendo instalada. O exemplo a seguir mostra a estrutura de diretório para um pacote VSIX que está localizado em espanhol (es-ES) e francês (fr-FR).  
+ Quando um usuário instala uma extensão **extensões e atualizações** verifica o nível superior do pacote VSIX para uma pasta cujo nome corresponde à localidade do Visual Studio do computador de destino. Se **extensões e atualizações** localiza um *.vsixlangpack* arquivo na pasta, ele substitui os valores localizados no arquivo para os valores correspondentes no *.vsixmanifest*arquivo. Esses valores são exibidos quando a extensão está sendo instalada. O exemplo a seguir mostra a estrutura de diretório para um pacote VSIX que está localizado em espanhol (es-ES) e francês (fr-FR).
 
 ```text
 .
@@ -63,7 +63,7 @@ O exemplo a seguir mostra as partes relevantes de um *vsixmanifest* arquivo. O a
 
 ### <a name="code"></a>Código
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ O exemplo a seguir mostra as partes relevantes de um *vsixmanifest* arquivo. O a
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

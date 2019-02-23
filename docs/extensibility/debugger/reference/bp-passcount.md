@@ -1,7 +1,7 @@
 ---
 title: BP_PASSCOUNT | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_PASSCOUNT
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d51e0fc895c104c1a18ef079c6784384e4cedbb4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4ef8b2d927fab7637d92ac8061b3580c16db96e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316685"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710910"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
 Descreve a contagem e condições no qual um ponto de interrupção condicional é disparado.
@@ -39,11 +39,9 @@ public struct BP_PASSCOUNT {
 ```
 
 ## <a name="members"></a>Membros
-`dwPassCount`  
-O número de vezes para passar o ponto de interrupção antes de disparar a ele.
+`dwPassCount` O número de vezes para passar o ponto de interrupção antes de disparar a ele.
 
-`stylePassCount`  
-Um valor a partir de [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) contagem de aprovações de enumeração que especifica o estilo do ponto de interrupção.
+`stylePassCount` Um valor a partir de [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) contagem de aprovações de enumeração que especifica o estilo do ponto de interrupção.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é um membro do [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura.
@@ -58,8 +56,8 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)  
-[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)  
-[BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)
+- [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)
+- [SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)
+- [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)
