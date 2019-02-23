@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974141"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695363"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Passo a passo: Publicando uma extensão do Visual Studio por meio da linha de comando
 
@@ -34,7 +34,7 @@ Publica uma extensão no Marketplace. A extensão pode ser um vsix, um arquivo e
 |---------|---------|
 |carga (obrigatória) | Um caminho para a carga para publicar ou um link a ser usada como a "URL de informações adicionais". |
 |publishManifest (obrigatório) | Caminho para a publicação do manifesto arquivo a ser usado. |
-|ignoreWarnings | Lista de avisos a serem ignorados ao publicar uma extensão. Esses avisos são mostrados como mensagens de linha de comando ao publicar uma extensão. (for example, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|ignoreWarnings | Lista de avisos a serem ignorados ao publicar uma extensão. Esses avisos são mostrados como mensagens de linha de comando ao publicar uma extensão. (for example, "VSIXValidatorWarning01, VSIXValidatorWarning02")
 |personalAccessToken | Pessoal acesso PAT (Token) que é usado para autenticar o publicador. Se não for fornecido, o PAT é obtido dos usuários conectados. |
 
 ```

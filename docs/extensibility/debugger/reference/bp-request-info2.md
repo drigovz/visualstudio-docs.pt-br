@@ -1,7 +1,7 @@
 ---
 title: BP_REQUEST_INFO2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_REQUEST_INFO2
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a953d367acd90ed869316e2595e5a8c666e816a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 81028ef1d4096a9aa434f6a402ee57124100bf9c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316854"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695343"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 Contém as informações necessárias para implementar um ponto de interrupção, incluindo o GUID do fornecedor, restrição e tracepoint.
@@ -61,44 +61,31 @@ public struct BP_REQUEST_INFO2 {
 ```
 
 ## <a name="members"></a>Membros
-`dwFields`  
-Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que especifica quais campos são preenchidos.
+`dwFields` Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que especifica quais campos são preenchidos.
 
-`guidLanguage`  
-O GUID do idioma.
+`guidLanguage` O GUID do idioma.
 
-`bpLocation`  
-O [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura que especifica o tipo do local de ponto de interrupção.
+`bpLocation` O [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura que especifica o tipo do local de ponto de interrupção.
 
-`pProgram`  
-O [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o aplicativo no qual o ponto de interrupção ocorre.
+`pProgram` O [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o aplicativo no qual o ponto de interrupção ocorre.
 
-`bstrProgramName`  
-O nome do aplicativo no qual o ponto de interrupção ocorre.
+`bstrProgramName` O nome do aplicativo no qual o ponto de interrupção ocorre.
 
-`pThread`  
-O [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread no qual o ponto de interrupção ocorre.
+`pThread` O [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread no qual o ponto de interrupção ocorre.
 
-`bstrThreadName`  
-O nome do thread no qual o ponto de interrupção ocorre.
+`bstrThreadName` O nome do thread no qual o ponto de interrupção ocorre.
 
-`bpCondition`  
-O [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura que descreve as condições sob as quais o ponto de interrupção será acionado.
+`bpCondition` O [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura que descreve as condições sob as quais o ponto de interrupção será acionado.
 
-`bpPassCount`  
-O [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estrutura que contém as informações de contagem de passagem do ponto de interrupção.
+`bpPassCount` O [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estrutura que contém as informações de contagem de passagem do ponto de interrupção.
 
-`dwFlags`  
-Uma combinação de sinalizadores do [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeração que especifica os sinalizadores para o ponto de interrupção solicitado.
+`dwFlags` Uma combinação de sinalizadores do [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeração que especifica os sinalizadores para o ponto de interrupção solicitado.
 
-`guidVendor`  
-GUID do fornecedor. Pode ser um valor nulo.
+`guidVendor` GUID do fornecedor. Pode ser um valor nulo.
 
-`bstrConstraint`  
-Nome da restrição de ponto de interrupção. Pode ser um valor nulo.
+`bstrConstraint` Nome da restrição de ponto de interrupção. Pode ser um valor nulo.
 
-`bstrTracepoint`  
-Nome do ponto de rastreamento. Pode ser um valor nulo.
+`bstrTracepoint` Nome do ponto de rastreamento. Pode ser um valor nulo.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é retornada pelo [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) método.
@@ -111,12 +98,12 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)  
-[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)  
-[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)  
-[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)
+- [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
+- [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)
+- [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)

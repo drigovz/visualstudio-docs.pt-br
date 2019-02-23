@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomViewer | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomViewer
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8594d8848aae4fd69c5ea65eb69005035a6c4527
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 5c576de860183353831eb9cc33293ead11123c59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413235"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700153"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Essa interface permite que um avaliador de expressão (EE) para exibir um valor de propriedade em qualquer formato que é necessário.
@@ -105,7 +105,7 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)  
-[Auxiliares do SDK para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)  
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
+- [Auxiliares do SDK para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
