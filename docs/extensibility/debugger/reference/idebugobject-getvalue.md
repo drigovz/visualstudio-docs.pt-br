@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::GetValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::GetValue
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2c41cc81a27e46e74298d78ff9836ef74a8bff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d8b55fed250b94fc02c9810eca17ec0934bf81e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941899"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690728"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-Obtém o valor do objeto consecutivos de bytes.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetValue(   
-   BYTE* pValue,  
-   UINT  nSize  
-);  
-```  
-  
-```csharp  
-int GetValue(  
-   ref byte[] pValue,   
-   uint nSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pValue`  
- [no, out] Uma matriz que é preenchida com uma série consecutiva de bytes que representa o valor do objeto.  
-  
- `nSize`  
- [in] O número máximo de bytes para buscar.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Obter o número total de bytes do valor que pode ser buscadas chamando o [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) método.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Obtém o valor do objeto consecutivos de bytes.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetValue( 
+   BYTE* pValue,
+   UINT  nSize
+);
+```
+
+```csharp
+int GetValue(
+   ref byte[] pValue,
+   uint nSize
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pValue`
+
+ [no, out] Uma matriz que é preenchida com uma série consecutiva de bytes que representa o valor do objeto.
+
+ `nSize`
+
+ [in] O número máximo de bytes para buscar.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Obter o número total de bytes do valor que pode ser buscadas chamando o [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) método.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

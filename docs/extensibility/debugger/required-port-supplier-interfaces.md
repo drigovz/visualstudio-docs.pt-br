@@ -11,74 +11,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be33e399ff50d0f9c1caa4d88410f61ab9ede689
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22f8fc22e2812e059b0af8f81856ac2c95888c94
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988643"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715486"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfaces de fornecedor porta necessárias
-Um fornecedor de porta deve implementar o [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
-  
- Um fornecedor de porta fornece portas e implementá-las. Portanto, ele deve executar as seguintes interfaces:  
-  
--   [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
-  
-     Descreve a porta e enumera todos os processos em execução na porta.  
-  
--   [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
-  
-     Fornece para iniciar e encerrar processos na porta.  
-  
--   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
-  
-     Fornece um mecanismo para programas em execução dentro do contexto desta porta para notificá-lo de destruição e criação de nó do programa. Para obter mais informações, consulte [nós de programa](../../extensibility/debugger/program-nodes.md).  
-  
--   `IConnectionPointContainer`  
-  
-     Fornece um ponto de conexão para [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).  
-  
-## <a name="port-supplier-operation"></a>Operação de fornecedor de porta  
- O [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) coletor recebe notificações quando o processo e os programas são criados e destruídos em uma porta. Uma porta é necessário para enviar [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) quando um processo é criado e [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) quando um processo for destruído na porta. Uma porta também é necessário para enviar [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) quando um programa é criado e [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) quando um programa for destruído em um processo em execução na porta.  
-  
- Uma porta normalmente programa envia criar e destruir eventos em resposta para o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) e [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) métodos, respectivamente.  
-  
- Como uma porta pode iniciar e encerrar processos físicos e lógicos programas, as interfaces a seguir também devem ser implementadas pelo mecanismo de depuração:  
-  
--   [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
-  
-     Descreve o processo de física. Pelo menos os seguintes métodos devem ser implementados:  
-  
-    -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
-  
-    -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
-  
-    -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
-  
-    -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
-  
-    -   [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
-  
-    -   [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
-  
--   [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
-  
-     Fornece uma maneira para o SDM anexar e desanexar um processo em si.  
-  
--   [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
-  
-     Descreve a lógica do programa. Pelo menos os seguintes métodos devem ser implementados:  
-  
-    -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
-  
-    -   [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
-  
-    -   [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
-  
--   [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
-  
-     Fornece uma maneira para o SDM anexar a este programa.  
-  
-## <a name="see-also"></a>Consulte também  
- [Implementando um fornecedor de porta](../../extensibility/debugger/implementing-a-port-supplier.md)
+Um fornecedor de porta deve implementar o [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
+
+ Um fornecedor de porta fornece portas e implementá-las. Portanto, ele deve executar as seguintes interfaces:
+
+-   [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
+
+     Descreve a porta e enumera todos os processos em execução na porta.
+
+-   [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)
+
+     Fornece para iniciar e encerrar processos na porta.
+
+-   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)
+
+     Fornece um mecanismo para programas em execução dentro do contexto desta porta para notificá-lo de destruição e criação de nó do programa. Para obter mais informações, consulte [nós de programa](../../extensibility/debugger/program-nodes.md).
+
+-   `IConnectionPointContainer`
+
+     Fornece um ponto de conexão para [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).
+
+## <a name="port-supplier-operation"></a>Operação de fornecedor de porta
+ O [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) coletor recebe notificações quando o processo e os programas são criados e destruídos em uma porta. Uma porta é necessário para enviar [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) quando um processo é criado e [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) quando um processo for destruído na porta. Uma porta também é necessário para enviar [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) quando um programa é criado e [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) quando um programa for destruído em um processo em execução na porta.
+
+ Uma porta normalmente programa envia criar e destruir eventos em resposta para o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) e [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) métodos, respectivamente.
+
+ Como uma porta pode iniciar e encerrar processos físicos e lógicos programas, as interfaces a seguir também devem ser implementadas pelo mecanismo de depuração:
+
+-   [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
+
+     Descreve o processo de física. Pelo menos os seguintes métodos devem ser implementados:
+
+    -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
+
+    -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
+
+    -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
+
+    -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+
+    -   [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
+
+    -   [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+
+-   [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)
+
+     Fornece uma maneira para o SDM anexar e desanexar um processo em si.
+
+-   [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
+
+     Descreve a lógica do programa. Pelo menos os seguintes métodos devem ser implementados:
+
+    -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
+
+    -   [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+
+    -   [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
+
+-   [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
+
+     Fornece uma maneira para o SDM anexar a este programa.
+
+## <a name="see-also"></a>Consulte também
+- [Implementando um fornecedor de porta](../../extensibility/debugger/implementing-a-port-supplier.md)

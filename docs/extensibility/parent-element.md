@@ -11,43 +11,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbfb014e57f793bb39d696ac311c4f27884500f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7220e435090cc688d32a2d6d26917a8c05510d4f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949708"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687907"
 ---
 # <a name="parent-element"></a>Elemento pai
-O pai de um botão ou caixa de combinação só pode ser um grupo. O pai de um menu ou grupo pode ser qualquer menu ou grupo. Em um [elemento CommandPlacement](../extensibility/commandplacement-element.md), esse elemento é necessário; em todas as outras instâncias é opcional. Se esse elemento for omitido, o pai do `Group_Undefined:0` será assumida.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```xml  
-<Parent guid="guidMyCommandSet" id="MyParentGroupOrMenu" />  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
-  
-### <a name="attributes"></a>Atributos  
-  
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|GUID|Necessário. Identificador de comando do GUID/ID de GUID.|  
-|id|Necessário. Identificador de comando de ID de/ID de GUID.|  
-  
-### <a name="child-elements"></a>Elementos filho  
- Nenhum  
-  
-### <a name="parent-elements"></a>Elementos pai  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam os comandos que fornece um VSPackage para o ambiente de desenvolvimento integrado (IDE). Por exemplo, itens de menu, menus, barras de ferramentas e caixas de combinação.|  
-|[Elemento Buttons](../extensibility/buttons-element.md)|Grupos [elemento Button](../extensibility/button-element.md) elementos.|  
-|[Elemento menus](../extensibility/menus-element.md)|Define todos os menus que implementa um VSPackage.|  
-|[Elemento Groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comando de um VSPackage.|  
-  
-## <a name="see-also"></a>Consulte também  
- [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+O pai de um botão ou caixa de combinação só pode ser um grupo. O pai de um menu ou grupo pode ser qualquer menu ou grupo. Em um [elemento CommandPlacement](../extensibility/commandplacement-element.md), esse elemento é necessário; em todas as outras instâncias é opcional. Se esse elemento for omitido, o pai do `Group_Undefined:0` será assumida.
+
+## <a name="syntax"></a>Sintaxe
+
+```xml
+<Parent guid="guidMyCommandSet" id="MyParentGroupOrMenu" />
+```
+
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
+
+### <a name="attributes"></a>Atributos
+
+|Atributo|Descrição|
+|---------------|-----------------|
+|GUID|Necessário. Identificador de comando do GUID/ID de GUID.|
+|id|Necessário. Identificador de comando de ID de/ID de GUID.|
+
+### <a name="child-elements"></a>Elementos filho
+ Nenhum
+
+### <a name="parent-elements"></a>Elementos pai
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam os comandos que fornece um VSPackage para o ambiente de desenvolvimento integrado (IDE). Por exemplo, itens de menu, menus, barras de ferramentas e caixas de combinação.|
+|[Elemento Buttons](../extensibility/buttons-element.md)|Grupos [elemento Button](../extensibility/button-element.md) elementos.|
+|[Elemento menus](../extensibility/menus-element.md)|Define todos os menus que implementa um VSPackage.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comando de um VSPackage.|
+
+## <a name="see-also"></a>Consulte também
+- [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
