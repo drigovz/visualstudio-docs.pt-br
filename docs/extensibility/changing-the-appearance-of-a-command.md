@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317075"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691339"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Alterar a aparência de um comando
 Você pode fornecer comentários ao usuário, alterando a aparência de um comando. Por exemplo, convém um comando para uma aparência diferente quando ele não estiver disponível. Você pode tornar os comandos disponíveis ou não disponíveis, ocultar ou mostrá-los, ou marque ou desmarque-os no menu.
@@ -85,7 +85,7 @@ Para alterar a aparência de um comando, execute uma destas ações:
 8. Sobre o **ferramentas** menu, agora você deve ver **novo texto**. Clique em **novo texto**. O comando agora deveriam ser esmaecido.
 
 ## <a name="see-also"></a>Consulte também
-[Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[Ampliar menus e comandos](../extensibility/extending-menus-and-commands.md)  
-[Tabela de comando do Visual Studio (. Arquivos de VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Ampliar menus e comandos](../extensibility/extending-menus-and-commands.md)
+- [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

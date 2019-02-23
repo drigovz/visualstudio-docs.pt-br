@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c355ba523bd16cce9d352d483af8c142f0ee439c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318232"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705632"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Adicionar um controlador de menu a uma barra de ferramentas
 Este passo a passo baseia-se a [adicionar uma barra de ferramentas para uma janela de ferramenta](../extensibility/adding-a-toolbar-to-a-tool-window.md) passo a passo e mostra como adicionar um controlador de menu na barra de ferramentas de janela de ferramenta. As etapas mostradas aqui também podem ser aplicadas à barra de ferramentas que é criada na [adicionar uma barra de ferramentas](../extensibility/adding-a-toolbar.md) passo a passo.
@@ -223,5 +223,5 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     Uma caixa de diálogo é exibida com a mensagem **você selecionou o controlador do Menu Item 3**. Observe que a mensagem corresponde ao texto no botão de controlador do menu. Agora, o botão de controlador de menu exibe **MC Item 3**.
 
 ## <a name="see-also"></a>Consulte também
-[Adicionando uma barra de ferramentas para uma janela de ferramentas](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
-[Adicionando uma barra de ferramentas](../extensibility/adding-a-toolbar.md)
+- [Adicionando uma barra de ferramentas para uma janela de ferramentas](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [Adicionando uma barra de ferramentas](../extensibility/adding-a-toolbar.md)

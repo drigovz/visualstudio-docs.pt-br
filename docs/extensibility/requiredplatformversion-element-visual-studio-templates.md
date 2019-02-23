@@ -9,69 +9,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b04a4332169f2f7ae57daaaeebb8a71ea0fafc72
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 73dcb29211eac35fad670f981aae1ebda75e2436
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947498"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716149"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (modelos do Visual Studio)
-Especifica a versão mínima do sistema operacional que o modelo de projeto requer para funcionar corretamente. Esse elemento é usado para modelos de projeto que cria [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativos.  
-  
- O `RequiredPlatformVersion` valor é comparado diretamente com a versão do sistema operacional. Se o `RequiredPlatformVersion` é maior do que a versão do sistema operacional, o modelo não aparecer na **novo projeto** caixa de diálogo. Para especificar um modelo para [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou superior, defina `RequiredPlatformVersion` para 6.2.0. Para especificar um modelo para [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou superior, defina `RequiredPlatformVersion` para 6.3.0.  
-  
- Modelos que especificam `RequiredPlatformVersion`= 8 são compatíveis com o cliente anterior [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modelos.  
-  
- VSTemplate  
-TemplateData  
-.....TargetPlatformName  
-RequiredPlatformVersion  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```xml  
-<RequiredPlatformVersion> OperatingSystem </RequiredPlatformVersion>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- nenhuma.  
-  
-### <a name="attributes"></a>Atributos  
- nenhuma.  
-  
-### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
-  
-### <a name="parent-elements"></a>Elementos pai  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica a plataforma de que os destinos de modelo de projeto.|  
-  
-## <a name="text-value"></a>Valor de texto  
- Um valor de texto é obrigatório.  
-  
-## <a name="remarks"></a>Comentários  
- Esse texto Especifica a versão mínima do sistema operacional necessária ao modelo.  
-  
-## <a name="example"></a>Exemplo  
- Este exemplo especifica que os destinos de modelo de projeto [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou posterior.  
-  
-```xml  
-<VSTemplate Type="Project" Version="3.0.0"    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <TargetPlatformName>Windows</TargetPlatformName>  
-            <RequiredPlatformVersion>6.3.0</RequiredPlatformVersion>  
-  
-    </TemplateData>  
-    <TemplateContent>  
-  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Elemento TargetPlatformName (modelos do Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)   
- [Criar modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+Especifica a versão mínima do sistema operacional que o modelo de projeto requer para funcionar corretamente. Esse elemento é usado para modelos de projeto que cria [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativos.
+
+ O `RequiredPlatformVersion` valor é comparado diretamente com a versão do sistema operacional. Se o `RequiredPlatformVersion` é maior do que a versão do sistema operacional, o modelo não aparecer na **novo projeto** caixa de diálogo. Para especificar um modelo para [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou superior, defina `RequiredPlatformVersion` para 6.2.0. Para especificar um modelo para [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou superior, defina `RequiredPlatformVersion` para 6.3.0.
+
+ Modelos que especificam `RequiredPlatformVersion`= 8 são compatíveis com o cliente anterior [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modelos.
+
+ VSTemplate TemplateData... TargetPlatformName RequiredPlatformVersion
+
+## <a name="syntax"></a>Sintaxe
+
+```xml
+<RequiredPlatformVersion> OperatingSystem </RequiredPlatformVersion>
+```
+
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ nenhuma.
+
+### <a name="attributes"></a>Atributos
+ nenhuma.
+
+### <a name="child-elements"></a>Elementos filho
+ nenhuma.
+
+### <a name="parent-elements"></a>Elementos pai
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica a plataforma de que os destinos de modelo de projeto.|
+
+## <a name="text-value"></a>Valor de texto
+ Um valor de texto é obrigatório.
+
+## <a name="remarks"></a>Comentários
+ Esse texto Especifica a versão mínima do sistema operacional necessária ao modelo.
+
+## <a name="example"></a>Exemplo
+ Este exemplo especifica que os destinos de modelo de projeto [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou posterior.
+
+```xml
+<VSTemplate Type="Project" Version="3.0.0"    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <TargetPlatformName>Windows</TargetPlatformName>
+            <RequiredPlatformVersion>6.3.0</RequiredPlatformVersion>
+
+    </TemplateData>
+    <TemplateContent>
+
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Consulte também
+- [Elemento TargetPlatformName (modelos do Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
+- [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
