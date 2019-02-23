@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba4501662e483af4ae357d75ca55f1a9cbac2329
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1e84ff96381fb29a1728ad43df4ff558abd17243
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017988"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689832"
 ---
 # <a name="troubleshooting-template-installation"></a>Instalação do modelo de solução de problemas
 
@@ -46,4 +46,4 @@ O arquivo de log contém as seguintes colunas:
 
 ## <a name="see-also"></a>Consulte também
 
-[Criando modelos personalizados de projeto e de item](creating-custom-project-and-item-templates.md)
+- [Criando modelos personalizados de projeto e de item](creating-custom-project-and-item-templates.md)

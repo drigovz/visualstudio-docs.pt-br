@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9241a93afea5d19664a74a78321d4d2857467b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412793"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722831"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Carregar símbolos de depuração de um fluxo de dados que recebe o **ICorDebugModule** objeto.
@@ -46,23 +46,29 @@ int LoadSymbolsFromStreamWithCorModule(
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`  
-[in] Identificador do domínio do aplicativo.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificador exclusivo do módulo.
+ [in] Identificador do domínio do aplicativo.
 
-`baseAddress`  
-[in] Endereço de memória de base.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Objeto que contém os metadados de símbolo.
+ [in] Identificador exclusivo do módulo.
 
-`pUnkCorDebugModule`  
-[in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+`baseAddress`
 
-`pStream`  
-[in] Fluxo de dados que contém os símbolos de depuração para carregar.
+ [in] Endereço de memória de base.
+
+`pUnkMetadataImport`
+
+ [in] Objeto que contém os metadados de símbolo.
+
+`pUnkCorDebugModule`
+
+ [in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`pStream`
+
+ [in] Fluxo de dados que contém os símbolos de depuração para carregar.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
@@ -141,4 +147,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

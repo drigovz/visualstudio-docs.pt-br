@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayField::GetRank | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugArrayField::GetRank
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 444f665a13891441f55879938c7fceecd4b106a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c091c7696867f369262a81259105dcf23fbe4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920429"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698151"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
-Obtém a classificação ou o número de dimensões da matriz.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetRank(   
-   DWORD* pdwRank  
-);  
-```  
-  
-```csharp  
-int GetRank(  
-   out uint pdwRank  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pdwRank`  
- [out] Retorna a classificação.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- A classificação de uma matriz corresponde ao número de dimensões. Em C++ e c#, matrizes multidimensionais são realmente matrizes de matrizes em, portanto, pode ser considerados apenas uma matriz unidimensional (e o `GetRank` método sempre retorna 1). Na [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], por outro lado, matrizes multidimensionais são tratados de maneira diferente, e a classificação de como uma matriz reflete o número de dimensões (e o `GetRank` método sempre retorna o número de dimensões).  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)
+Obtém a classificação ou o número de dimensões da matriz.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetRank( 
+   DWORD* pdwRank
+);
+```
+
+```csharp
+int GetRank(
+   out uint pdwRank
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pdwRank`
+
+ [out] Retorna a classificação.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ A classificação de uma matriz corresponde ao número de dimensões. Em C++ e c#, matrizes multidimensionais são realmente matrizes de matrizes em, portanto, pode ser considerados apenas uma matriz unidimensional (e o `GetRank` método sempre retorna 1). Na [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], por outro lado, matrizes multidimensionais são tratados de maneira diferente, e a classificação de como uma matriz reflete o número de dimensões (e o `GetRank` método sempre retorna o número de dimensões).
+
+## <a name="see-also"></a>Consulte também
+- [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

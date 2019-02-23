@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316321"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681472"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Adicionar um menu de atalho em uma janela de ferramenta
 Este passo a passo coloca um menu de atalho em uma janela de ferramentas. Um menu de atalho é um menu que aparece quando um usuário clica um botão, a caixa de texto ou o plano de fundo da janela. Comandos em um menu de atalho se comportam da mesma maneira como os comandos em outros menus ou barras de ferramentas. Para dar suporte a um menu de atalho, especifique-a na *VSCT* de arquivo e exibi-la na resposta para o botão direito do mouse.
@@ -277,5 +277,5 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
 4. Clique em uma cor no menu de atalho. A cor de plano de fundo da janela de ferramenta deverá ser alterada para a cor selecionada.
 
 ## <a name="see-also"></a>Consulte também
-[Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Usar e fornecer serviços](../extensibility/using-and-providing-services.md)
+- [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Usar e fornecer serviços](../extensibility/using-and-providing-services.md)

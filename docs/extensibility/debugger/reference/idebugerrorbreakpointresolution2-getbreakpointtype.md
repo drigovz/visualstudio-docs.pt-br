@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorBreakpointResolution2::GetBreakpointType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugErrorBreakpointResolution2::GetBreakpointType
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dbb829b9d1b74bb4dcabb635867d34f33bef140
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a733a600c8e8f3e346ffffdac306982c88994709
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450523"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707673"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 Obtém o tipo de ponto de interrupção.
@@ -37,8 +37,9 @@ int GetBreakpointType(
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`pBPType`  
-[out] Retorna um valor da [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que descreve o tipo de ponto de interrupção.
+`pBPType`
+
+ [out] Retorna um valor da [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que descreve o tipo de ponto de interrupção.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
@@ -81,5 +82,5 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)  
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+- [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

@@ -10,117 +10,117 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14dfc5237f505306c28954a93eb848673f0d3387
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a137f5ee777785fe3709ace14b5af3385cdaa19
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936093"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682538"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Passo a passo: Exibir chaves correspondentes
-Implemente recursos de baseada na linguagem, por exemplo, definindo as chaves que você deseja corresponder e adicionando uma marca de marcador de texto para as chaves correspondentes, quando o cursor está em uma das chaves a correspondência de chaves. Você pode definir chaves no contexto de um idioma, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e aplicar as marcas para apenas esse tipo ou aplicam as marcas a um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar marcas para o tipo de conteúdo "texto" a correspondência de chaves.  
-  
-## <a name="prerequisites"></a>Pré-requisitos  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
-  
-## <a name="create-a-managed-extensibility-framework-mef-project"></a>Criar um projeto de Managed Extensibility Framework (MEF)  
-  
-#### <a name="to-create-a-mef-project"></a>Para criar um projeto MEF  
-  
-1.  Crie um projeto de classificador do Editor. Nomeie a solução `BraceMatchingTest`.  
-  
-2.  Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
-  
-3.  Exclua os arquivos de classe existentes.  
-  
-## <a name="implement-a-brace-matching-tagger"></a>Implementar um marcador de correspondência de chaves  
- Para obter um efeito semelhante ao que é usado no Visual Studio de realce de chave, você pode implementar um marcador de tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. O código a seguir mostra como definir o marcador para pares de chave em qualquer nível de aninhamento. Neste exemplo, os pares de chave de [] e {} são definidos no construtor de marcador, mas em uma implementação de linguagem completa, a chave relevante pares seriam definidas na especificação da linguagem.  
-  
-### <a name="to-implement-a-brace-matching-tagger"></a>Para implementar um marcador de correspondência de chaves  
-  
-1.  Adicione um arquivo de classe e nomeie-a correspondência de chaves.  
-  
-2.  Importe os seguintes namespaces.  
-  
+Implemente recursos de baseada na linguagem, por exemplo, definindo as chaves que você deseja corresponder e adicionando uma marca de marcador de texto para as chaves correspondentes, quando o cursor está em uma das chaves a correspondência de chaves. Você pode definir chaves no contexto de um idioma, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e aplicar as marcas para apenas esse tipo ou aplicam as marcas a um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar marcas para o tipo de conteúdo "texto" a correspondência de chaves.
+
+## <a name="prerequisites"></a>Pré-requisitos
+ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+
+## <a name="create-a-managed-extensibility-framework-mef-project"></a>Criar um projeto de Managed Extensibility Framework (MEF)
+
+#### <a name="to-create-a-mef-project"></a>Para criar um projeto MEF
+
+1.  Crie um projeto de classificador do Editor. Nomeie a solução `BraceMatchingTest`.
+
+2.  Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+
+3.  Exclua os arquivos de classe existentes.
+
+## <a name="implement-a-brace-matching-tagger"></a>Implementar um marcador de correspondência de chaves
+ Para obter um efeito semelhante ao que é usado no Visual Studio de realce de chave, você pode implementar um marcador de tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. O código a seguir mostra como definir o marcador para pares de chave em qualquer nível de aninhamento. Neste exemplo, os pares de chave de [] e {} são definidos no construtor de marcador, mas em uma implementação de linguagem completa, a chave relevante pares seriam definidas na especificação da linguagem.
+
+### <a name="to-implement-a-brace-matching-tagger"></a>Para implementar um marcador de correspondência de chaves
+
+1.  Adicione um arquivo de classe e nomeie-a correspondência de chaves.
+
+2.  Importe os seguintes namespaces.
+
      [!code-csharp[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_1.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]  
-  
-3.  Definir uma classe `BraceMatchingTagger` que herda de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> do tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
-  
+     [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]
+
+3.  Definir uma classe `BraceMatchingTagger` que herda de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> do tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
+
      [!code-csharp[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_2.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]  
-  
-4.  Adicione propriedades para a exibição de texto, o buffer de origem, o ponto do instantâneo atual e também um conjunto de pares de chave.  
-  
+     [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]
+
+4.  Adicione propriedades para a exibição de texto, o buffer de origem, o ponto do instantâneo atual e também um conjunto de pares de chave.
+
      [!code-csharp[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_3.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]  
-  
-5.  No construtor de marcador, defina as propriedades e assinar os eventos de alteração do modo de exibição <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. Neste exemplo, para fins ilustrativos, os pares correspondentes também são definidos no construtor.  
-  
+     [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]
+
+5.  No construtor de marcador, defina as propriedades e assinar os eventos de alteração do modo de exibição <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. Neste exemplo, para fins ilustrativos, os pares correspondentes também são definidos no construtor.
+
      [!code-csharp[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_4.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]  
-  
-6.  Como parte do <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementação, declare um evento TagsChanged.  
-  
+     [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]
+
+6.  Como parte do <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementação, declare um evento TagsChanged.
+
      [!code-csharp[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_5.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]  
-  
-7.  Os manipuladores de eventos atualizar a posição atual do cursor do `CurrentChar` propriedade e gerar o evento TagsChanged.  
-  
+     [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]
+
+7.  Os manipuladores de eventos atualizar a posição atual do cursor do `CurrentChar` propriedade e gerar o evento TagsChanged.
+
      [!code-csharp[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_6.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]  
-  
-8.  Implementar o <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> método para corresponder chaves a quando o caractere atual for uma chave de abertura ou quando o caractere anterior for um colchete de fechamento, como no Visual Studio. Quando a correspondência for encontrada, esse método cria uma instância de duas marcas, um para a chave de abertura e outra para o colchete de fechamento.  
-  
+     [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]
+
+8.  Implementar o <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> método para corresponder chaves a quando o caractere atual for uma chave de abertura ou quando o caractere anterior for um colchete de fechamento, como no Visual Studio. Quando a correspondência for encontrada, esse método cria uma instância de duas marcas, um para a chave de abertura e outra para o colchete de fechamento.
+
      [!code-csharp[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_7.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]  
-  
-9. Os seguintes métodos privados encontrar a chave correspondente em qualquer nível de aninhamento. O primeiro método encontra o caractere de fechamento que corresponde ao caractere aberto:  
-  
+     [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]
+
+9. Os seguintes métodos privados encontrar a chave correspondente em qualquer nível de aninhamento. O primeiro método encontra o caractere de fechamento que corresponde ao caractere aberto:
+
      [!code-csharp[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_8.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_8.vb)]  
-  
-10. O método auxiliar a seguir localiza o caractere aberto que corresponde a um caractere de fechamento:  
-  
+     [!code-vb[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_8.vb)]
+
+10. O método auxiliar a seguir localiza o caractere aberto que corresponde a um caractere de fechamento:
+
      [!code-csharp[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_9.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_9.vb)]  
-  
-## <a name="implement-a-brace-matching-tagger-provider"></a>Implementar um provedor de marcador de correspondência de chaves  
- Além de implementar um marcador, você também deve implementar e exportar um provedor de marcador. Nesse caso, o tipo do provedor de conteúdo é "text". Portanto, correspondência de chaves será exibido em todos os tipos de arquivos de texto, mas uma implementação mais completa se aplica somente a um tipo específico de conteúdo a correspondência de chaves.  
-  
-### <a name="to-implement-a-brace-matching-tagger-provider"></a>Para implementar um provedor de marcador de correspondência de chaves  
-  
-1.  Declarar um provedor de marcador que herda de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, nomeie-o BraceMatchingTaggerProvider e exportá-lo com um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text" e um <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
-  
+     [!code-vb[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_9.vb)]
+
+## <a name="implement-a-brace-matching-tagger-provider"></a>Implementar um provedor de marcador de correspondência de chaves
+ Além de implementar um marcador, você também deve implementar e exportar um provedor de marcador. Nesse caso, o tipo do provedor de conteúdo é "text". Portanto, correspondência de chaves será exibido em todos os tipos de arquivos de texto, mas uma implementação mais completa se aplica somente a um tipo específico de conteúdo a correspondência de chaves.
+
+### <a name="to-implement-a-brace-matching-tagger-provider"></a>Para implementar um provedor de marcador de correspondência de chaves
+
+1.  Declarar um provedor de marcador que herda de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, nomeie-o BraceMatchingTaggerProvider e exportá-lo com um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text" e um <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
+
      [!code-csharp[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_10.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]  
-  
-2.  Implementar o <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> método para instanciar um BraceMatchingTagger.  
-  
+     [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]
+
+2.  Implementar o <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> método para instanciar um BraceMatchingTagger.
+
      [!code-csharp[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_11.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]  
-  
-## <a name="build-and-test-the-code"></a>Compilar e testar o código  
- Para testar esse código, compile a solução BraceMatchingTest e executá-lo na instância experimental.  
-  
-#### <a name="to-build-and-test-bracematchingtest-solution"></a>Para compilar e testar a solução BraceMatchingTest  
-  
-1.  Compile a solução.  
-  
-2.  Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é iniciada.  
-  
-3.  Crie um arquivo de texto e digite algum texto que inclui chaves correspondentes.  
-  
-    ```  
-    hello {  
-    goodbye}  
-  
-    {}  
-  
-    {hello}  
-    ```  
-  
-4.  Quando você posiciona o cursor antes de uma chave de abertura, essa chave e o colchete de fechamento correspondente deve ser realçado. Quando você posiciona o cursor logo após o colchete de fechamento, essa chave e a chave de abertura correspondente deve ser realçada.  
-  
-## <a name="see-also"></a>Consulte também  
- [Passo a passo: Vincular um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+     [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]
+
+## <a name="build-and-test-the-code"></a>Compilar e testar o código
+ Para testar esse código, compile a solução BraceMatchingTest e executá-lo na instância experimental.
+
+#### <a name="to-build-and-test-bracematchingtest-solution"></a>Para compilar e testar a solução BraceMatchingTest
+
+1.  Compile a solução.
+
+2.  Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é iniciada.
+
+3.  Crie um arquivo de texto e digite algum texto que inclui chaves correspondentes.
+
+    ```
+    hello {
+    goodbye}
+
+    {}
+
+    {hello}
+    ```
+
+4.  Quando você posiciona o cursor antes de uma chave de abertura, essa chave e o colchete de fechamento correspondente deve ser realçado. Quando você posiciona o cursor logo após o colchete de fechamento, essa chave e a chave de abertura correspondente deve ser realçada.
+
+## <a name="see-also"></a>Consulte também
+- [Passo a passo: Vincular um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

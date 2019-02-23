@@ -14,80 +14,78 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55cbc596824e0a02398ee1ad0ff420db0746089a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc3ec9052a9d912e5563e4db1f8afc8d9daf9d6e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010240"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699841"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (extensão de Assistente de modelo do Visual Studio)
-Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interface.  
-  
- \<VSTemplate>  
-\<WizardExtension >  
-\<Assembly >  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```  
-<Assembly>AssemblyName</Assembly>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
-  
-### <a name="attributes"></a>Atributos  
- nenhuma.  
-  
-### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
-  
-### <a name="parent-elements"></a>Elementos pai  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contém os elementos de registro para personalizar o Assistente de modelo.|  
-  
-## <a name="text-value"></a>Valor de texto  
- Um valor de texto é obrigatório.  
-  
- Esse texto Especifica o assembly que implementa o `IWizard` interface. O nome do assembly deve ser especificado como um nome completo do assembly. Por exemplo, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
-  
-## <a name="remarks"></a>Comentários  
- O `Assembly` é um elemento filho obrigatório de `WizardExtension`.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.  
-  
-```xml
-<VSTemplate Version="3.0.0" Type="Item"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>MyTemplate</Name>  
-        <Description>Template using IWizard extension</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyTemplate.csproj">  
-            <ProjectItem>Form1.cs</ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-    <WizardExtension>  
-        <Assembly>MyWizard, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom=null</Assembly>  
-        <FullClassName>MyWizard.CustomWizard</FullClassName>  
-    </WizardExtension>  
-</VSTemplate>  
+Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interface.
+
+ \<VSTemplate > \<WizardExtension > \<Assembly >
+
+## <a name="syntax"></a>Sintaxe
+
 ```
-  
+<Assembly>AssemblyName</Assembly>
+```
+
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
+
+### <a name="attributes"></a>Atributos
+ nenhuma.
+
+### <a name="child-elements"></a>Elementos filho
+ nenhuma.
+
+### <a name="parent-elements"></a>Elementos pai
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contém os elementos de registro para personalizar o Assistente de modelo.|
+
+## <a name="text-value"></a>Valor de texto
+ Um valor de texto é obrigatório.
+
+ Esse texto Especifica o assembly que implementa o `IWizard` interface. O nome do assembly deve ser especificado como um nome completo do assembly. Por exemplo, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
+
+## <a name="remarks"></a>Comentários
+ O `Assembly` é um elemento filho obrigatório de `WizardExtension`.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.
+
+```xml
+<VSTemplate Version="3.0.0" Type="Item"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>MyTemplate</Name>
+        <Description>Template using IWizard extension</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyTemplate.csproj">
+            <ProjectItem>Form1.cs</ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+    <WizardExtension>
+        <Assembly>MyWizard, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom=null</Assembly>
+        <FullClassName>MyWizard.CustomWizard</FullClassName>
+    </WizardExtension>
+</VSTemplate>
+```
+
 ## <a name="see-also"></a>Consulte também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
