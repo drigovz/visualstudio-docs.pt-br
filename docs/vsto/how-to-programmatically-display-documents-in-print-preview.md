@@ -13,51 +13,51 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0907db7e616f0b342f2810c32af8e06d6bc730f7
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 846dbee5f66fbdafa9a4b53bab3947ecb95b006c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873932"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602618"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Como: Exibir documentos em Visualizar impressão programaticamente
-  Se sua solução gera um relatório, você talvez queira exibir o relatório para o usuário no modo de visualização de impressão.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="procedures-for-document-level-customizations"></a>Procedimentos para personalizações no nível do documento  
-  
-### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>Para exibir um documento em Visualizar impressão chamando o método PrintPreview  
-  
-1.  Chame o <xref:Microsoft.Office.Tools.Word.Document.PrintPreview%2A> método da <xref:Microsoft.Office.Tools.Word.Document> classe. Para usar este exemplo de código, executá-la na `ThisDocument` classe em seu projeto.  
-  
+  Se sua solução gera um relatório, você talvez queira exibir o relatório para o usuário no modo de visualização de impressão.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="procedures-for-document-level-customizations"></a>Procedimentos para personalizações no nível do documento
+
+### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>Para exibir um documento em Visualizar impressão chamando o método PrintPreview
+
+1.  Chame o <xref:Microsoft.Office.Tools.Word.Document.PrintPreview%2A> método da <xref:Microsoft.Office.Tools.Word.Document> classe. Para usar este exemplo de código, executá-la na `ThisDocument` classe em seu projeto.
+
      [!code-vb[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#13)]
-     [!code-csharp[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#13)]  
-  
-### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>Para exibir um documento em Visualizar impressão, definindo a propriedade PrintPreview  
-  
-1.  Defina a <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Application> do objeto para **true**.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#13)]
+
+### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>Para exibir um documento em Visualizar impressão, definindo a propriedade PrintPreview
+
+1.  Defina a <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Application> do objeto para **true**.
+
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
-     [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]  
-  
-## <a name="procedures-for-vsto-add-ins"></a>Procedimentos para suplementos VSTO  
-  
-### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>Para exibir um documento em Visualizar impressão chamando o método PrintPreview  
-  
-1.  Chame o <xref:Microsoft.Office.Interop.Word._Document.PrintPreview%2A> método da <xref:Microsoft.Office.Interop.Word.Document> que você deseja visualizar. Para usar este exemplo de código, executá-la na `ThisAddIn` classe em seu projeto.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
+
+## <a name="procedures-for-vsto-add-ins"></a>Procedimentos para suplementos VSTO
+
+### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>Para exibir um documento em Visualizar impressão chamando o método PrintPreview
+
+1.  Chame o <xref:Microsoft.Office.Interop.Word._Document.PrintPreview%2A> método da <xref:Microsoft.Office.Interop.Word.Document> que você deseja visualizar. Para usar este exemplo de código, executá-la na `ThisAddIn` classe em seu projeto.
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#13)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#13)]  
-  
-### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>Para exibir um documento em Visualizar impressão, definindo a propriedade PrintPreview  
-  
-1.  Defina a <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Application> do objeto para **true**.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#13)]
+
+### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>Para exibir um documento em Visualizar impressão, definindo a propriedade PrintPreview
+
+1.  Defina a <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Application> do objeto para **true**.
+
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
-     [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]  
-  
-## <a name="see-also"></a>Consulte também  
- [Como: Imprimir documentos programaticamente](../vsto/how-to-programmatically-print-documents.md)   
- [Como: Abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Como: Criar novos documentos programaticamente](../vsto/how-to-programmatically-create-new-documents.md)  
+     [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
+
+## <a name="see-also"></a>Consulte também
+- [Como: Imprimir documentos programaticamente](../vsto/how-to-programmatically-print-documents.md)
+- [Como: Abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Como: Criar novos documentos programaticamente](../vsto/how-to-programmatically-create-new-documents.md)

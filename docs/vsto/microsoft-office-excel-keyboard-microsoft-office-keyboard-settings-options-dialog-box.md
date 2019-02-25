@@ -16,26 +16,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dcf80961fa035145aa32d32636d9645f8c61ec4
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 63f3bfc9295501d5f9b8f0267037302cdbb04a76
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615839"
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Caixa de diálogo de opções de teclado do Excel do Microsoft Office, configurações de teclado do Microsoft Office,
-  Microsoft Office Excel e Visual Studio ambos lidam com teclas de atalho. Comandos diferentes no Excel e no Visual Studio pode representar a mesma combinação de teclas de atalho. Quando o Excel está aberto em um projeto de nível de documento no Visual Studio, o aplicativo apenas uma por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Excel recebê-las quando o documento tem o foco, selecionando **esquema de teclado dinâmico**.  
-  
- Se você usar uma tecla de atalho que não está atribuída a um comando no aplicativo que atualmente está tratando as teclas de atalho, a tecla de atalho é passada para o outro aplicativo.  
-  
- A opção que você selecione permanecerá em vigor para projetos do Excel até você alterá-lo. A seleção não afeta seus projetos do Microsoft Office Word; Você deve fazer qualquer alteração para o Word usando as opções de teclado do Microsoft Office Word.  
-  
-## <a name="uielement-list"></a>Lista UIElement  
- **Esquema de teclado do Visual Studio**  
- Visual Studio recebe todos os comandos de tecla de atalho, mesmo que o Excel tem o foco. Por exemplo, se você pressionar a tecla de função **F5** enquanto o Excel tem o foco, o Visual Studio inicia a depuração de sua solução.  
-  
- **Esquema de teclado dinâmico**  
- Visual Studio recebe comandos de tecla de atalho somente quando ele tem o foco. Quando o Excel tem o foco, o Excel recebe todos os comandos de tecla de atalho. Por exemplo, se você pressionar a tecla de função **F5** enquanto o Excel tem o foco, o Excel abre o **ir para** caixa de diálogo. Se você pressionar **F5** enquanto o Visual Studio tem o foco, o Visual Studio inicia a depuração de sua solução.  
-  
-## <a name="see-also"></a>Consulte também  
- [Caixa de diálogo de opções de teclado do Word do Microsoft Office, configurações de teclado do Microsoft Office,](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+  Microsoft Office Excel e Visual Studio ambos lidam com teclas de atalho. Comandos diferentes no Excel e no Visual Studio pode representar a mesma combinação de teclas de atalho. Quando o Excel está aberto em um projeto de nível de documento no Visual Studio, o aplicativo apenas uma por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Excel recebê-las quando o documento tem o foco, selecionando **esquema de teclado dinâmico**.
+
+ Se você usar uma tecla de atalho que não está atribuída a um comando no aplicativo que atualmente está tratando as teclas de atalho, a tecla de atalho é passada para o outro aplicativo.
+
+ A opção que você selecione permanecerá em vigor para projetos do Excel até você alterá-lo. A seleção não afeta seus projetos do Microsoft Office Word; Você deve fazer qualquer alteração para o Word usando as opções de teclado do Microsoft Office Word.
+
+## <a name="uielement-list"></a>Lista UIElement
+ **Esquema de teclado do Visual Studio** Visual Studio recebe todos os comandos de tecla de atalho, mesmo que o Excel tem o foco. Por exemplo, se você pressionar a tecla de função **F5** enquanto o Excel tem o foco, o Visual Studio inicia a depuração de sua solução.
+
+ **Esquema de teclado dinâmico** Visual Studio recebe comandos de tecla de atalho somente quando ele tem o foco. Quando o Excel tem o foco, o Excel recebe todos os comandos de tecla de atalho. Por exemplo, se você pressionar a tecla de função **F5** enquanto o Excel tem o foco, o Excel abre o **ir para** caixa de diálogo. Se você pressionar **F5** enquanto o Visual Studio tem o foco, o Visual Studio inicia a depuração de sua solução.
+
+## <a name="see-also"></a>Consulte também
+- [Caixa de diálogo de opções de teclado do Word do Microsoft Office, configurações de teclado do Microsoft Office,](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugCanStopEvent2::GetDocumentContext | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCanStopEvent2::GetDocumentContext
 helpviewer_keywords:
@@ -12,43 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e2e2f9c96780c5b409b8cd145ea554c10e54e96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2066d712824ec40c822a813eb20a6afffd7981ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960367"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721024"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
-Obtém o contexto do documento que descreve o local desse evento.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetDocumentContext (   
-   IDebugDocumentContext2** ppDocCxt  
-);  
-```  
-  
-```csharp  
-int GetDocumentContext (   
-   out IDebugDocumentContext2 ppDocCxt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppDocCxt`  
- [out] Retorna o [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface que representa uma posição em um documento do arquivo de origem correspondente para o local atual do código.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Em geral, o contexto do documento pode ser pensado como uma posição em um arquivo de origem.  
-  
- Para obter o contexto de código, que é orientado para instruções de código, chame o [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) método.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)
+Obtém o contexto do documento que descreve o local desse evento.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetDocumentContext ( 
+   IDebugDocumentContext2** ppDocCxt
+);
+```
+
+```csharp
+int GetDocumentContext ( 
+   out IDebugDocumentContext2 ppDocCxt
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppDocCxt`
+
+ [out] Retorna o [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface que representa uma posição em um documento do arquivo de origem correspondente para o local atual do código.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Em geral, o contexto do documento pode ser pensado como uma posição em um arquivo de origem.
+
+ Para obter o contexto de código, que é orientado para instruções de código, chame o [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) método.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)

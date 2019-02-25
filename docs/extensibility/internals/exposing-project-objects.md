@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16a9c34d06cc94e3c9fb41fa3cc09b12b7349849
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d814576c4f071c9e90dd71d56c3bde8da43260f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992887"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609911"
 ---
 # <a name="expose-project-objects"></a>Expor objetos do projeto
 
@@ -24,73 +24,73 @@ Tipos de projeto personalizado podem fornecer objetos de automação para permit
 
 Você pode criar objetos de automação de nível raiz personalizado que você pode acessar associação tardia da raiz DTE objeto usando `DTE.<customObjectName>` ou `DTE.GetObject("<customObjectName>")`. Por exemplo, o Visual C++ cria uma coleção de projeto específicos do projeto C++ chamada *VCProjects* que você pode acessar usando `DTE.VCProjects` ou `DTE.GetObject("VCProjects")`. Você também pode criar uma `Project.Object`, que é exclusivo para o tipo de projeto, um `Project.CodeModel`, que pode ser consultado para seu objeto mais derivado e uma `ProjectItem`, que expõe `ProjectItem.Object` e um `ProjectItem.FileCodeModel`.
 
-É uma convenção comum para projetos para expor uma coleção de projeto personalizados, específicos do projeto. Por exemplo, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] cria uma coleção de projeto específico do C++ que, em seguida, você pode acessar usando `DTE.VCProjects` ou `DTE.GetObject("VCProjects")`. Você também pode criar uma `Project.Object`, que é exclusivo para o tipo de projeto, um `Project.CodeModel`, que pode ser consultado para seu objeto mais derivado, um `ProjectItem`, que expõe `ProjectItem.Object`e um `ProjectItem.FileCodeModel`.  
-  
-## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Para contribuir com um objeto de VSPackage específico para um projeto  
-  
-1.  Adicionar as chaves apropriadas para o *pkgdef* arquivo de seu VSPackage.  
-  
-     Por exemplo, aqui estão os *pkgdef* configurações para o projeto de linguagem C++:  
-  
-    ```  
-    [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]  
-    "VCProjects"=""  
-    [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\AutomationEvents]  
-    "VCProjectEngineEventsObject"=""  
-    ```  
-  
-2.  Implementar o código no <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método, como no exemplo a seguir.  
-  
-    ```cpp  
-    STDMETHODIMP CVsPackage::GetAutomationObject(  
-    /* [in]  */ LPCOLESTR       pszPropName,   
-    /* [out] */ IDispatch **    ppIDispatch)  
-    {  
-    ExpectedPtrRet(pszPropName);  
-    ExpectedPtrRet(ppIDispatch);  
-    *ppIDispatch = NULL;  
-  
-        if (m_fZombie)  
-            return E_UNEXPECTED;  
-  
-        if (_wcsicmp(pszPropName, g_wszAutomationProjects) == 0)  
-        {  
-            return GetAutomationProjects(ppIDispatch);  
-        }  
-        else if (_wcsicmp(pszPropName, g_wszAutomationProjectsEvents) == 0)  
-        {  
-            return CAutomationEvents::GetAutomationEvents(ppIDispatch);  
-        }  
-        else if (_wcsicmp(pszPropName, g_wszAutomationProjectItemsEvents) == 0)  
-        {  
-            return CAutomationEvents::GetAutomationEvents(ppIDispatch);  
-        }  
-        return E_INVALIDARG;  
-    }   
-    ```  
-  
-     No código, `g_wszAutomationProjects` é o nome da sua coleção de projeto. O `GetAutomationProjects` método cria um objeto que implementa o `Projects` interface e retorna um `IDispatch` ponteiro para o objeto de chamada, conforme mostrado no exemplo de código a seguir.  
-  
-    ```cpp  
-    HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)  
-    {  
-        ExpectedPtrRet(ppIDispatch);  
-        *ppIDispatch = NULL;  
-  
-        if (!m_srpAutomationProjects)  
-        {  
-            HRESULT hr = CACProjects::CreateInstance(&m_srpAutomationProjects);  
-            IfFailRet(hr);  
-            ExpectedExprRet(m_srpAutomationProjects != NULL);  
-        }  
-        return m_srpAutomationProjects.CopyTo(ppIDispatch);  
-    }  
-    ```  
-  
-     Escolha um nome exclusivo para seu objeto de automação. Conflitos de nome são imprevisíveis e colisões de fazer com que um nome de objeto conflitante para arbitrariamente gerado se a vários tipos de projeto usam o mesmo nome. Você deve incluir o nome da sua empresa ou alguns aspectos exclusivos do seu nome de produto no nome do objeto de automação.  
-  
-     Personalizado `Projects` objeto da coleção é um ponto de entrada de conveniência para a parte restante do seu modelo de automação do projeto. Seu objeto de projeto também é acessível a partir de <xref:EnvDTE.Solution> coleção de projeto. Depois que você criou as entradas apropriadas de código e do registro que fornecem os consumidores com `Projects` objetos de coleção, sua implementação deve fornecer o restante objetos padrão para o modelo de projeto. Para obter mais informações, consulte [modelagem do projeto](../../extensibility/internals/project-modeling.md).  
-  
+É uma convenção comum para projetos para expor uma coleção de projeto personalizados, específicos do projeto. Por exemplo, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] cria uma coleção de projeto específico do C++ que, em seguida, você pode acessar usando `DTE.VCProjects` ou `DTE.GetObject("VCProjects")`. Você também pode criar uma `Project.Object`, que é exclusivo para o tipo de projeto, um `Project.CodeModel`, que pode ser consultado para seu objeto mais derivado, um `ProjectItem`, que expõe `ProjectItem.Object`e um `ProjectItem.FileCodeModel`.
+
+## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Para contribuir com um objeto de VSPackage específico para um projeto
+
+1.  Adicionar as chaves apropriadas para o *pkgdef* arquivo de seu VSPackage.
+
+     Por exemplo, aqui estão os *pkgdef* configurações para o projeto de linguagem C++:
+
+    ```
+    [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]
+    "VCProjects"=""
+    [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\AutomationEvents]
+    "VCProjectEngineEventsObject"=""
+    ```
+
+2.  Implementar o código no <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método, como no exemplo a seguir.
+
+    ```cpp
+    STDMETHODIMP CVsPackage::GetAutomationObject(
+    /* [in]  */ LPCOLESTR       pszPropName,
+    /* [out] */ IDispatch **    ppIDispatch)
+    {
+    ExpectedPtrRet(pszPropName);
+    ExpectedPtrRet(ppIDispatch);
+    *ppIDispatch = NULL;
+
+        if (m_fZombie)
+            return E_UNEXPECTED;
+
+        if (_wcsicmp(pszPropName, g_wszAutomationProjects) == 0)
+        {
+            return GetAutomationProjects(ppIDispatch);
+        }
+        else if (_wcsicmp(pszPropName, g_wszAutomationProjectsEvents) == 0)
+        {
+            return CAutomationEvents::GetAutomationEvents(ppIDispatch);
+        }
+        else if (_wcsicmp(pszPropName, g_wszAutomationProjectItemsEvents) == 0)
+        {
+            return CAutomationEvents::GetAutomationEvents(ppIDispatch);
+        }
+        return E_INVALIDARG;
+    }
+    ```
+
+     No código, `g_wszAutomationProjects` é o nome da sua coleção de projeto. O `GetAutomationProjects` método cria um objeto que implementa o `Projects` interface e retorna um `IDispatch` ponteiro para o objeto de chamada, conforme mostrado no exemplo de código a seguir.
+
+    ```cpp
+    HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)
+    {
+        ExpectedPtrRet(ppIDispatch);
+        *ppIDispatch = NULL;
+
+        if (!m_srpAutomationProjects)
+        {
+            HRESULT hr = CACProjects::CreateInstance(&m_srpAutomationProjects);
+            IfFailRet(hr);
+            ExpectedExprRet(m_srpAutomationProjects != NULL);
+        }
+        return m_srpAutomationProjects.CopyTo(ppIDispatch);
+    }
+    ```
+
+     Escolha um nome exclusivo para seu objeto de automação. Conflitos de nome são imprevisíveis e colisões de fazer com que um nome de objeto conflitante para arbitrariamente gerado se a vários tipos de projeto usam o mesmo nome. Você deve incluir o nome da sua empresa ou alguns aspectos exclusivos do seu nome de produto no nome do objeto de automação.
+
+     Personalizado `Projects` objeto da coleção é um ponto de entrada de conveniência para a parte restante do seu modelo de automação do projeto. Seu objeto de projeto também é acessível a partir de <xref:EnvDTE.Solution> coleção de projeto. Depois que você criou as entradas apropriadas de código e do registro que fornecem os consumidores com `Projects` objetos de coleção, sua implementação deve fornecer o restante objetos padrão para o modelo de projeto. Para obter mais informações, consulte [modelagem do projeto](../../extensibility/internals/project-modeling.md).
+
 ## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

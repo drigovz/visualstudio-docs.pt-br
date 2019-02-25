@@ -14,78 +14,76 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd39590ab2d236d0ad66eea204b1a0d7170408a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f8f94036a20d6c1b6963b39aa3d2b13e17a6e256
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982046"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678067"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>Elemento SupportsLanguageDropDown (modelos do Visual Studio)
-Especifica se o modelo de item da Web é idêntico para vários idiomas e se o **linguagem** opção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<SupportsLanguageDropDown>  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```  
-<SupportsLanguageDropDown> true/false </SupportsLanguageDropDown>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
-  
-### <a name="attributes"></a>Atributos  
- nenhuma.  
-  
-### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
-  
-### <a name="parent-elements"></a>Elementos pai  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
-  
-## <a name="text-value"></a>Valor de texto  
- Um valor de texto é obrigatório.  
-  
- O texto deve ser `true` ou `false`, indicando ou não a **idioma** opção está disponível na **Add New Item** caixa de diálogo.  
-  
-## <a name="remarks"></a>Comentários  
- `SupportsLanguageDropDown` é um elemento opcional. O valor padrão é `false`.  
-  
- O `SupportsLanguageDropDown` elemento só está disponível para modelos de item da Web.  
-  
- Se o valor desse elemento for definido como `true`, em seguida, o modelo de item é idêntico para todas as linguagens de programação e o **linguagem** opção é habilitada na **Adicionar Novo Item** caixa de diálogo. Essa opção permite que você escolha a linguagem de programação do novo item que você deseja criar do modelo.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir especifica que o **linguagem** lista suspensa da opção.  
-  
-```  
-<VSTemplate Version="3.0.0" Type="Project"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>  
-    <TemplateData>  
-        <Name>MyWebProjecStarterKit</Name>  
-        <Description>A simple Web template</Description>  
-        <Icon>icon.ico</Icon>  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        <DefaultName>WebSite</DefaultName>  
-        <SupportsLanguageDropDown>true</SupportsLanguageDropDown>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="WebApplication.webproj">  
-            <ProjectItem>icon.ico</ProjectItem>  
-            <ProjectItem OpenInEditor="true">Default.aspx</ProjectItem>  
-            <ProjectItem>Default.aspx.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+Especifica se o modelo de item da Web é idêntico para vários idiomas e se o **linguagem** opção está habilitada no **Adicionar Novo Item** caixa de diálogo.
+
+ \<VSTemplate > \<TemplateData > \<SupportsLanguageDropDown >
+
+## <a name="syntax"></a>Sintaxe
+
+```
+<SupportsLanguageDropDown> true/false </SupportsLanguageDropDown>
+```
+
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
+
+### <a name="attributes"></a>Atributos
+ nenhuma.
+
+### <a name="child-elements"></a>Elementos filho
+ nenhuma.
+
+### <a name="parent-elements"></a>Elementos pai
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+
+## <a name="text-value"></a>Valor de texto
+ Um valor de texto é obrigatório.
+
+ O texto deve ser `true` ou `false`, indicando ou não a **idioma** opção está disponível na **Add New Item** caixa de diálogo.
+
+## <a name="remarks"></a>Comentários
+ `SupportsLanguageDropDown` é um elemento opcional. O valor padrão é `false`.
+
+ O `SupportsLanguageDropDown` elemento só está disponível para modelos de item da Web.
+
+ Se o valor desse elemento for definido como `true`, em seguida, o modelo de item é idêntico para todas as linguagens de programação e o **linguagem** opção é habilitada na **Adicionar Novo Item** caixa de diálogo. Essa opção permite que você escolha a linguagem de programação do novo item que você deseja criar do modelo.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir especifica que o **linguagem** lista suspensa da opção.
+
+```
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
+    <TemplateData>
+        <Name>MyWebProjecStarterKit</Name>
+        <Description>A simple Web template</Description>
+        <Icon>icon.ico</Icon>
+        <ProjectType>Web</ProjectType>
+        <ProjectSubType>CSharp</ProjectSubType>
+        <DefaultName>WebSite</DefaultName>
+        <SupportsLanguageDropDown>true</SupportsLanguageDropDown>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="WebApplication.webproj">
+            <ProjectItem>icon.ico</ProjectItem>
+            <ProjectItem OpenInEditor="true">Default.aspx</ProjectItem>
+            <ProjectItem>Default.aspx.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Consulte também
+- [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

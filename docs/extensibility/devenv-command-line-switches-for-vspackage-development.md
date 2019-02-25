@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970546"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705525"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Opções de linha de comando devenv para desenvolvimento de VSPackage
 
-O Visual Studio permite aos desenvolvedores automatizarem as tarefas da linha de comando ao executar `devenv.exe`, o arquivo que inicia o IDE do Visual Studio.  
+O Visual Studio permite aos desenvolvedores automatizarem as tarefas da linha de comando ao executar `devenv.exe`, o arquivo que inicia o IDE do Visual Studio.
 
- As tarefas incluem:  
+ As tarefas incluem:
 
-- Implantando aplicativos em configurações predefinidas de fora do IDE.  
+- Implantando aplicativos em configurações predefinidas de fora do IDE.
 
-- Compilando projetos usando a predefinição de configurações de build ou automaticamente configurações de depuração.  
+- Compilando projetos usando a predefinição de configurações de build ou automaticamente configurações de depuração.
 
-- Carregando o IDE em configurações específicas, tudo a partir de fora do IDE. Você também pode personalizar o IDE durante a inicialização.  
+- Carregando o IDE em configurações específicas, tudo a partir de fora do IDE. Você também pode personalizar o IDE durante a inicialização.
 
 ## <a name="guidelines-for-switches"></a>Diretrizes para comutadores
 
-Documentação do Visual Studio descreve o nível de usuário `devenv` de linha de comando. Para obter mais informações, consulte [opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md). O `devenv` ferramenta também dá suporte a opções de linha de comando adicionais que são úteis com desenvolvimento VSPackage, implantação e depuração.  
+Documentação do Visual Studio descreve o nível de usuário `devenv` de linha de comando. Para obter mais informações, consulte [opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md). O `devenv` ferramenta também dá suporte a opções de linha de comando adicionais que são úteis com desenvolvimento VSPackage, implantação e depuração.
 
 | Opção de linha de comando | Descrição |
 |---------------------| - |

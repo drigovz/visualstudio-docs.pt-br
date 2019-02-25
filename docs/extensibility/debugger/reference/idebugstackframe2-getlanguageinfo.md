@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 helpviewer_keywords:
@@ -12,53 +12,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 790c17bbf547a4b54ef86b7fb79f2e5108a3cbf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90fd7beabb14163558afe4b957d95635e91f904a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921928"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719542"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
-Obtém o idioma associado a esse registro de ativação.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetLanguageInfo (   
-   BSTR* pbstrLanguage,  
-   GUID* pguidLanguage  
-);  
-```  
-  
-```csharp  
-int GetLanguageInfo (   
-   ref string pbstrLanguage,  
-   ref Guid   pguidLanguage  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pbstrLanguage`  
- [out] Retorna o nome da linguagem que implementa o método associado deste quadro de pilhas.  
-  
- `pguidLanguage`  
- [out] Retorna o `GUID` da linguagem. Para o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] linguagens, por exemplo, o seguinte pode ser retornado:  
-  
--   `guidVBScriptLang`  
-  
--   `guidJScriptLang`  
-  
--   `guidCPPLang`  
-  
--   `guidVBLang`  
-  
--   `guidSQLLang`  
-  
--   `guidScriptLang`  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+Obtém o idioma associado a esse registro de ativação.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetLanguageInfo ( 
+   BSTR* pbstrLanguage,
+   GUID* pguidLanguage
+);
+```
+
+```csharp
+int GetLanguageInfo ( 
+   ref string pbstrLanguage,
+   ref Guid   pguidLanguage
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pbstrLanguage`
+
+ [out] Retorna o nome da linguagem que implementa o método associado deste quadro de pilhas.
+
+ `pguidLanguage`
+
+ [out] Retorna o `GUID` da linguagem. Para o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] linguagens, por exemplo, o seguinte pode ser retornado:
+
+-   `guidVBScriptLang`
+
+-   `guidJScriptLang`
+
+-   `guidCPPLang`
+
+-   `guidVBLang`
+
+-   `guidSQLLang`
+
+-   `guidScriptLang`
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

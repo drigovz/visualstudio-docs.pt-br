@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_STREAM_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73214385e3bc2b8ac6dbe2dff8705377d6f14e12
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d3fdc4a738a28f64aa87955f339409d1e64ed3bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413586"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715668"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Especifica quais informações devem ser recuperadas sobre um campo de desmontagem.
@@ -62,44 +62,31 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 ```
 
 ## <a name="members"></a>Membros
-DSF_ADDRESS  
-Inicialização/usar o `bstrAddress` campo.
+DSF_ADDRESS Initialize/usar o `bstrAddress` campo.
 
-DSF_ADDRESSOFFSET  
-Inicialização/usar o `bstrAddressOffset` campo.
+DSF_ADDRESSOFFSET Initialize/usar o `bstrAddressOffset` campo.
 
-DSF_CODEBYTES  
-Inicialização/usar o `bstrCodeBytes` campo.
+DSF_CODEBYTES Initialize/usar o `bstrCodeBytes` campo.
 
-DSF_OPCODE  
-Inicialização/usar o `bstrOpCode` campo.
+DSF_OPCODE Initialize/usar o `bstrOpCode` campo.
 
-DSF_OPERANDS  
-Inicialização/usar o `bstrOperands` campo.
+DSF_OPERANDS Initialize/usar o `bstrOperands` campo.
 
-DSF_SYMBOL  
-Inicialização/usar o `bstrSymbol` campo.
+DSF_SYMBOL Initialize/usar o `bstrSymbol` campo.
 
-DSF_CODELOCATIONID  
-Inicialização/usar o `uCodeLocationId` campo.
+DSF_CODELOCATIONID Initialize/usar o `uCodeLocationId` campo.
 
-DSF_POSITION  
-Inicialização/usar o `posBeg` e `posEnd` campos.
+DSF_POSITION Initialize/usar o `posBeg` e `posEnd` campos.
 
-DSF_DOCUMENTURL  
-Inicialização/usar o `bstrDocumentUrl` campo.
+DSF_DOCUMENTURL Initialize/usar o `bstrDocumentUrl` campo.
 
-DSF_BYTEOFFSET  
-Inicialização/usar o `dwByteOffset` campo.
+DSF_BYTEOFFSET Initialize/usar o `dwByteOffset` campo.
 
-DSF_FLAGS  
-Inicialização/usar o `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) campo.
+DSF_FLAGS Initialize/usar o `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) campo.
 
-DSF_OPERANDS_SYMBOLS  
-Incluir nomes de símbolos no `bstrOperands` campo.
+Os nomes de símbolo DSF_OPERANDS_SYMBOLS incluem no `bstrOperands` campo.
 
-DSF_ALL  
-Especifica todos os campos para o fluxo de desmontagem.
+DSF_ALL especifica todos os campos para o fluxo de desmontagem.
 
 ## <a name="remarks"></a>Comentários
 Passado como um parâmetro para o [leitura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método para indicar quais campos da [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) são de estrutura a ser inicializado.
@@ -116,7 +103,7 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)  
-[Ler](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)  
-[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [Ler](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

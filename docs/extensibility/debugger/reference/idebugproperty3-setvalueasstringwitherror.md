@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3d317cf45692a8214f15c1473eb8f781b21451
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450302"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709272"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Define o valor dessa propriedade e retorna uma mensagem de erro, se necessário.
@@ -43,17 +43,21 @@ int SetValueAsStringWithError(
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`pszValue`  
-[in] Valor a ser definido.
+`pszValue`
 
-`dwRadix`  
-[in] A base do valor que está sendo definido.
+ [in] Valor a ser definido.
 
-`dwTimeout`  
-[in] O período de tempo de espera para o valor a ser definido (`INFINITE` significa espera para sempre).
+`dwRadix`
 
-`errorString`  
-[out] Se houver um erro ao definir o valor, isso mantém o motivo da falha.
+ [in] A base do valor que está sendo definido.
+
+`dwTimeout`
+
+ [in] O período de tempo de espera para o valor a ser definido (`INFINITE` significa espera para sempre).
+
+`errorString`
+
+ [out] Se houver um erro ao definir o valor, isso mantém o motivo da falha.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
@@ -167,4 +171,4 @@ HRESULT CProperty::SetValueAsStringWithError(
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

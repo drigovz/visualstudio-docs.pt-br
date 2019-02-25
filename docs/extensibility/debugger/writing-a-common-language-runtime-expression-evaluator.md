@@ -12,45 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7026a0851288a87a291f3312aa2a955049bb3a39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b7621508c069d21e7d90d7477254fe03468b0ea3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926937"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722519"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Escrever um avaliador de expressão de tempo de execução de linguagem comum
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
-  
- O avaliador de expressão (EE) é a parte de um mecanismo de depuração (DES) que lida com a sintaxe e semântica da linguagem de programação que gerou o código que está sendo depurado. As expressões devem ser avaliadas dentro do contexto de uma linguagem de programação. Por exemplo, em alguns idiomas, a expressão "A + B" significa "a soma de A e b." Em outras linguagens, a mesma expressão pode significar "A ou B." Portanto, um separado EE deve ser escrito para cada linguagem de programação que gera o código de objeto a ser depurado no IDE do Visual Studio.  
-  
- Alguns aspectos do pacote de depuração do Visual Studio devem interpretar o código no contexto da linguagem de programação. Por exemplo, quando a execução é interrompida no ponto de interrupção, todas as expressões que o usuário digitou em uma **inspeção** janela deve ser avaliada e exibida. O usuário pode alterar o valor de uma variável local digitando uma expressão em uma **Watch** janela ou o **imediato** janela.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Avaliação de tempo de execução e a expressão de linguagem comum](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
- Explica que quando você precisa integrar a linguagem de programação proprietária ao IDE do Visual Studio, escrever um EE capaz de avaliar expressões dentro do contexto da linguagem proprietária permite que você compilar para um Microsoft intermediate language (MSIL) sem escrever um mecanismo de depuração.  
-  
- [Arquitetura do avaliador de expressão](../../extensibility/debugger/expression-evaluator-architecture.md)  
- Discute como implementar as interfaces EE necessárias e chamar o provedor de símbolo de tempo de execução de linguagem comum (SP) e interfaces de associador.  
-  
- [Registrar um avaliador de expressão](../../extensibility/debugger/registering-an-expression-evaluator.md)  
- Observa que o EE deve ser registrado como uma fábrica de classes com o common language runtime e os ambientes de tempo de execução do Visual Studio.  
-  
- [Implementar um avaliador de expressão](../../extensibility/debugger/implementing-an-expression-evaluator.md)  
- Descreve como o processo de avaliar uma expressão inclui o mecanismo de depuração (DE), o provedor de símbolo (SP), o objeto de associador e o avaliador de expressão (EE).  
-  
- [Locais de exibição](../../extensibility/debugger/displaying-locals.md)  
- Descreve como fazer isso, quando a execução pausa, o pacote de depuração chama DE para obter uma lista de argumentos e variáveis locais.  
-  
- [Avaliar uma expressão da janela de inspeção](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
- Documenta como o pacote de depuração do Visual Studio chama o DE para determinar o valor atual de cada expressão em sua lista de inspeção.  
-  
- [Altere o valor de um local](../../extensibility/debugger/changing-the-value-of-a-local.md)  
- Explica como alterar o valor de um local, cada linha da janela locais tem um objeto associado que fornece o nome, o tipo e o valor atual de um local.  
-  
- [Implementar visualizadores de tipo e visualizadores personalizados](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
- Explica a interface que precisa ser implementada pelo componente que para dar suporte a visualizadores de tipo e visualizadores personalizados.  
-  
-## <a name="see-also"></a>Consulte também  
+>  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+
+ O avaliador de expressão (EE) é a parte de um mecanismo de depuração (DES) que lida com a sintaxe e semântica da linguagem de programação que gerou o código que está sendo depurado. As expressões devem ser avaliadas dentro do contexto de uma linguagem de programação. Por exemplo, em alguns idiomas, a expressão "A + B" significa "a soma de A e b." Em outras linguagens, a mesma expressão pode significar "A ou B." Portanto, um separado EE deve ser escrito para cada linguagem de programação que gera o código de objeto a ser depurado no IDE do Visual Studio.
+
+ Alguns aspectos do pacote de depuração do Visual Studio devem interpretar o código no contexto da linguagem de programação. Por exemplo, quando a execução é interrompida no ponto de interrupção, todas as expressões que o usuário digitou em uma **inspeção** janela deve ser avaliada e exibida. O usuário pode alterar o valor de uma variável local digitando uma expressão em uma **Watch** janela ou o **imediato** janela.
+
+## <a name="in-this-section"></a>Nesta seção
+ [Avaliação de tempo de execução e a expressão de linguagem comum](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) explica que, quando você estiver integrando proprietária linguagem de programação ao IDE do Visual Studio, escrever um EE capaz de avaliar expressões dentro do contexto da linguagem proprietária permite que você compilar para um Microsoft intermediate language (MSIL) sem precisar escrever um mecanismo de depuração.
+
+ [Arquitetura do avaliador de expressão](../../extensibility/debugger/expression-evaluator-architecture.md) discute como implementar as interfaces EE necessárias e chamar o provedor de símbolo de tempo de execução de linguagem comum (SP) e interfaces de associador.
+
+ [Registrar um avaliador de expressão](../../extensibility/debugger/registering-an-expression-evaluator.md) anotações que o EE deve ser registrado como uma fábrica de classes com o common language runtime e os ambientes de tempo de execução do Visual Studio.
+
+ [Implementar um avaliador de expressão](../../extensibility/debugger/implementing-an-expression-evaluator.md) descreve como o processo de avaliar uma expressão inclui o mecanismo de depuração (DE), o provedor de símbolo (SP), o objeto de associador e o avaliador de expressão (EE).
+
+ [Exibir locals](../../extensibility/debugger/displaying-locals.md) descreve como fazer isso, quando a execução pausa, o pacote de depuração chama DE para obter uma lista de argumentos e variáveis locais.
+
+ [Avaliar uma expressão da janela de inspeção](../../extensibility/debugger/evaluating-a-watch-window-expression.md) documenta como o pacote de depuração do Visual Studio chama o DE para determinar o valor atual de cada expressão em sua lista de inspeção.
+
+ [Altere o valor de um local](../../extensibility/debugger/changing-the-value-of-a-local.md) explica que alterar o valor de um local, cada linha da janela locais tem um objeto associado que fornece o nome, o tipo e o valor atual de um local.
+
+ [Implementar visualizadores de tipo e visualizadores personalizados](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) explica qual interface precisa ser implementada pelo componente que para dar suporte a visualizadores de tipo e visualizadores personalizados.
+
+## <a name="see-also"></a>Consulte também
  [Extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

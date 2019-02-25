@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317114"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719477"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Como: Diagnosticar atrasos na interface do usuário causados pelas extensões
 
@@ -21,7 +21,7 @@ Quando a interface do usuário se torna sem resposta, o Visual Studio examina a 
 
 A notificação informa ao usuário que o atraso de interface do usuário (ou seja, a falta de resposta na interface do usuário) pode ter sido o resultado do código de uma extensão. Ele também fornece o usuário com opções para desabilitar a extensão ou notificações futuras para essa extensão.
 
-Este documento descreve como diagnosticar o que em seu código de extensão está causando as notificações de atraso de interface do usuário. 
+Este documento descreve como diagnosticar o que em seu código de extensão está causando as notificações de atraso de interface do usuário.
 
 > [!NOTE]
 > Não use a instância experimental do Visual Studio para diagnosticar atrasos de interface do usuário. Algumas partes da análise de pilha de chamadas necessárias para notificações de atraso de interface do usuário são desativadas ao usar a instância experimental, que significa que as notificações de atraso de interface do usuário não podem ser mostradas.
@@ -102,7 +102,7 @@ Em seguida, abra o arquivo de rastreamento. Você pode fazer isso usando a mesma
 Em seguida, selecione o arquivo de rastreamento no painel esquerdo e abra-o, escolhendo **abrir** no menu de contexto ou o botão direito do mouse.
 
 > [!NOTE]
-> Por padrão o PerfView gera um arquivo Zip. Quando você abre *trace.zip*, ele descompacta o arquivo morto automaticamente e abre o rastreamento. Você pode ignorar isso desmarcando os **Zip** caixa durante a coleta de rastreamento. No entanto, se você estiver planejando transferir e usar rastreamentos em máquinas diferentes, convém desmarcando os **Zip** caixa. Sem essa opção, os PDBs necessárias para assemblies Ngen não acompanharão o rastreamento e, portanto, símbolos de assemblies Ngen não serão resolvidos no computador de destino. (Consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obter mais informações sobre PDBs para assemblies Ngen.) 
+> Por padrão o PerfView gera um arquivo Zip. Quando você abre *trace.zip*, ele descompacta o arquivo morto automaticamente e abre o rastreamento. Você pode ignorar isso desmarcando os **Zip** caixa durante a coleta de rastreamento. No entanto, se você estiver planejando transferir e usar rastreamentos em máquinas diferentes, convém desmarcando os **Zip** caixa. Sem essa opção, os PDBs necessárias para assemblies Ngen não acompanharão o rastreamento e, portanto, símbolos de assemblies Ngen não serão resolvidos no computador de destino. (Consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obter mais informações sobre PDBs para assemblies Ngen.)
 
 Pode levar vários minutos para que o PerfView processar e abrir o rastreamento. Quando o rastreamento é aberto, uma lista de vários "exibições" aparecem sob ele.
 

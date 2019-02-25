@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921028"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688336"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Crie sua primeira extensão: Hello World
 
@@ -50,7 +50,11 @@ Etapa 2. Dos **modelos** menu, clique em **Visual c#**, clique em **extensibilid
 
 Agora você deve ver a página de Introdução e alguns recursos de exemplo.
 
+::: moniker range="vs-2017"
+
 Se você precisar deixar este tutorial e volte a ela, você pode encontrar seu novo projeto HelloWorld na **página inicial** na **recentes** seção.
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Adicionar um comando personalizado
 

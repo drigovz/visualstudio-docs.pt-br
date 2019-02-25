@@ -1,7 +1,7 @@
 ---
 title: BP_COND_STYLE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_COND_STYLE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8ca4f551f4dd6541bad9d73b5e91c671ad80492
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318297"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685853"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Especifica o estilo de condição de ponto de interrupção para pendentes e associados a pontos de interrupção.
@@ -42,14 +42,11 @@ public enum enum_BP_COND_STYLE {
 ```
 
 ## <a name="members"></a>Membros
-BP_COND_NONE  
-Dispara o ponto de interrupção quando a posição do ponto de interrupção é atingida. Nenhuma condição de ponto de interrupção especificada.
+BP_COND_NONE dispara o ponto de interrupção quando a posição do ponto de interrupção é atingida. Nenhuma condição de ponto de interrupção especificada.
 
-BP_COND_WHEN_TRUE  
-Dispara o ponto de interrupção somente quando a expressão condicional é associado com o ponto de interrupção é avaliada como `true`.
+BP_COND_WHEN_TRUE dispara o ponto de interrupção somente quando a expressão condicional é associado com o ponto de interrupção é avaliada como `true`.
 
-BP_COND_WHEN_CHANGED  
-Dispara o ponto de interrupção somente quando o valor da expressão condicional associado com o ponto de interrupção foi alterado de sua avaliação anterior.
+BP_COND_WHEN_CHANGED dispara o ponto de interrupção somente quando o valor da expressão condicional associado com o ponto de interrupção foi alterado de sua avaliação anterior.
 
 ## <a name="remarks"></a>Comentários
 Usado para o `styleCondition` membro a [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura.
@@ -62,5 +59,5 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

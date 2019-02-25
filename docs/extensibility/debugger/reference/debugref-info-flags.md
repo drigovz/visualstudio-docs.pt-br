@@ -1,7 +1,7 @@
 ---
 title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUGREF_INFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d7d953e62703ecb1790ce9da8c71f4e8f0fdba
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412988"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686280"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 Especifica quais informações devem ser recuperadas sobre um objeto de referência de depuração.
@@ -54,32 +54,23 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ```
 
 ## <a name="members"></a>Membros
-DEBUGREF_INFO_NAME  
-Inicialização/usar o `bstrName` campo na estrutura.
+DEBUGREF_INFO_NAME Initialize/usar o `bstrName` campo na estrutura.
 
-DEBUGREF_INFO_TYPE  
-Inicialização/usar o `bstrType` campo na estrutura.
+DEBUGREF_INFO_TYPE Initialize/usar o `bstrType` campo na estrutura.
 
-DEBUGREF_INFO_VALUE  
-Inicialização/usar o `bstrValue` campo na estrutura.
+DEBUGREF_INFO_VALUE Initialize/usar o `bstrValue` campo na estrutura.
 
-DEBUGREF_INFO_ATTRIB  
-Inicialização/usar o `dwAttrib` campo na estrutura.
+DEBUGREF_INFO_ATTRIB Initialize/usar o `dwAttrib` campo na estrutura.
 
-DEBUGREF_INFO_REFTYPE  
-Inicialização/usar o `dwRefType` campo na estrutura.
+DEBUGREF_INFO_REFTYPE Initialize/usar o `dwRefType` campo na estrutura.
 
-DEBUGREF_INFO_REF  
-Inicialização/usar o `pReference` campo na estrutura.
+DEBUGREF_INFO_REF Initialize/usar o `pReference` campo na estrutura.
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND  
-O campo de valor deve conter o valor expandida automaticamente, se disponível, para esse tipo de objeto.
+DEBUGREF_INFO_VALUE_AUTOEXPAND o campo de valor deve conter o valor expandida automaticamente, se disponível, para esse tipo de objeto.
 
-DEBUGREF_INFO_NONE  
-Indica que nenhum sinalizador está definido.
+DEBUGREF_INFO_NONE indica que nenhum sinalizador está definido.
 
-DEBUGREF_INFO_ALL  
-Indica uma máscara dos sinalizadores.
+DEBUGREF_INFO_ALL indica uma máscara dos sinalizadores.
 
 ## <a name="remarks"></a>Comentários
 Esses sinalizadores são passados para o [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) e [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) métodos para indicar quais campos dos [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) são de estrutura a ser inicializado.
@@ -96,7 +87,7 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)  
-[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
+- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)
+- [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)

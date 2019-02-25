@@ -1,7 +1,7 @@
 ---
 title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 152f3b501aad6bba9e87e861346fa9ddb876a44d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1bbb4af7b4269376d912ba312cfe8aacfef2e4ff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315619"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692756"
 ---
 # <a name="displaykind"></a>DisplayKind
 Enumera os valores válidos que representam os tipos de informações para levar de uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de objeto e exibir para o usuário.
@@ -42,14 +42,11 @@ public enum enum_DisplayKind
 ```
 
 #### <a name="parameters"></a>Parâmetros
-DisplayKind_Value  
-Valor do campo.
+DisplayKind_Value o valor do campo.
 
-DisplayKind_Name  
-Nome do campo.
+DisplayKind_Name o nome do campo.
 
-DisplayKind_Type  
-Tipo de campo.
+DisplayKind_Type o tipo de campo.
 
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: EE.h
@@ -59,5 +56,5 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)
+- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

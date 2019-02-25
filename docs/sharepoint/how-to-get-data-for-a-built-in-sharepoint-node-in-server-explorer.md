@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef3377b7c90aac183c1fc624743ea2882685eb27
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a51c64b2caf8520385a5334d7bbd3ad6c14d93f0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870357"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633454"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Como: Obter dados para um nó SharePoint interno no Gerenciador de servidores
-  Para cada nó SharePoint interno no **Gerenciador de servidores**, você pode obter dados para o componente subjacente do SharePoint que o nó representa. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
-  
-## <a name="example"></a>Exemplo  
- O exemplo de código a seguir demonstra como obter dados para a lista do SharePoint subjacente que representa o nó de uma lista de **Gerenciador de servidores**. Por padrão, nós da lista têm um **exibir no navegador** item de menu de contexto que você pode clicar para abrir a lista em um navegador da Web. Este exemplo amplia a nós da lista, adicionando um **modo de exibição no Visual Studio** item de menu de contexto que abre as listas diretamente no Visual Studio. O código acessa os dados da lista para o nó obter a URL da lista para abrir no Visual Studio.  
-  
+  Para cada nó SharePoint interno no **Gerenciador de servidores**, você pode obter dados para o componente subjacente do SharePoint que o nó representa. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+
+## <a name="example"></a>Exemplo
+ O exemplo de código a seguir demonstra como obter dados para a lista do SharePoint subjacente que representa o nó de uma lista de **Gerenciador de servidores**. Por padrão, nós da lista têm um **exibir no navegador** item de menu de contexto que você pode clicar para abrir a lista em um navegador da Web. Este exemplo amplia a nós da lista, adicionando um **modo de exibição no Visual Studio** item de menu de contexto que abre as listas diretamente no Visual Studio. O código acessa os dados da lista para o nó obter a URL da lista para abrir no Visual Studio.
+
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]  
-  
- Este exemplo usa o serviço de projeto do SharePoint para obter o <xref:EnvDTE.DTE> lista do objeto que é usado para abrir no Visual Studio. Para obter mais informações sobre o serviço de projeto do SharePoint, consulte [usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
-  
- Para obter mais informações sobre as tarefas básicas para criar uma extensão para um nó do SharePoint, consulte [como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
-  
-## <a name="compile-the-code"></a>Compilar o código  
- Este exemplo requer referências aos assemblies a seguir:  
-  
--   EnvDTE  
-  
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.SharePoint.Explorer.Extensions  
-  
--   System.ComponentModel.Composition  
-  
-## <a name="deploy-the-extension"></a>Implantar a extensão  
- Para implantar o **Gerenciador de servidores** extensão, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) para o assembly e outros arquivos que você deseja distribuir com a extensão. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
-  
+ [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]
+
+ Este exemplo usa o serviço de projeto do SharePoint para obter o <xref:EnvDTE.DTE> lista do objeto que é usado para abrir no Visual Studio. Para obter mais informações sobre o serviço de projeto do SharePoint, consulte [usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
+
+ Para obter mais informações sobre as tarefas básicas para criar uma extensão para um nó do SharePoint, consulte [como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+
+## <a name="compile-the-code"></a>Compilar o código
+ Este exemplo requer referências aos assemblies a seguir:
+
+-   EnvDTE
+
+-   Microsoft.VisualStudio.SharePoint
+
+-   Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+
+-   System.ComponentModel.Composition
+
+## <a name="deploy-the-extension"></a>Implantar a extensão
+ Para implantar o **Gerenciador de servidores** extensão, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) para o assembly e outros arquivos que você deseja distribuir com a extensão. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+
 ## <a name="see-also"></a>Consulte também
- [Estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
- [Implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+- [Estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
+- [Usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
+- [Implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

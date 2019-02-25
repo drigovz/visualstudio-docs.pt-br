@@ -1,7 +1,7 @@
 ---
 title: IDebugStopCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
 author: gregvanl
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33272f87ae30832588a998ebea2fc46e9adaae50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a3ec59d6e9a6008f195cab40fe5c1998aff24a50
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984230"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705275"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
@@ -30,7 +30,7 @@ IDebugStopCompleteEvent2 : IUnknown
 
 Essa interface foi introduzida com o Visual Studio 2005. Versões anteriores não dava suporte assíncrono parando.
 
-[Parar](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) é chamado pelo SDM em vários processos ou um programas com vários cenários. Quando um programa envia um evento de interrupção para o SDM, o SDM solicita parar, muito de outros programas.
+- [Parar](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) é chamado pelo SDM em vários processos ou um programas com vários cenários. Quando um programa envia um evento de interrupção para o SDM, o SDM solicita parar, muito de outros programas.
 
 Parada é usada para informar assincronamente o SDM que um programa foi interrompido. Informando o SDM é útil para um mecanismo de depuração do interpretador, em que, às vezes, nenhum código é executado dentro do depurado do programa, isso [parar](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) não pode ser concluída de forma síncrona. Se um mecanismo de depuração deseja empregar essa notificação assíncrona, ela deve retornar `S_ASYNC_STOP` partir [parar](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
 

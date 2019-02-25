@@ -10,31 +10,31 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866316"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718350"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Passo a passo: Criar um pacote de extensões
 
 Um pacote de extensão é um conjunto de extensões que podem ser instalados juntos. Pacotes de extensão permitem que você facilmente compartilhar suas extensões favoritas com outros usuários ou agrupar um conjunto de extensões em conjunto para um cenário específico.
-  
+
 ## <a name="prerequisites"></a>Pré-requisitos
 
-A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 O recurso de pacote de extensão está disponível a partir do Visual Studio 15.8 Preview 2.
-  
+
 ## <a name="create-an-extension-with-an-extension-pack-item-template"></a>Criar uma extensão com um modelo de item do pacote de extensão
 
 O modelo de item do pacote de extensão cria um pacote de extensão com o conjunto de extensões que podem ser instalados juntos.
-  
-1. No **novo projeto** diálogo caixa, expanda **Visual c#** ou **Visual Basic** e, em seguida, clique em **extensibilidade**. No **modelos** painel, selecione **projeto VSIX**. Na caixa **Nome**, digite `Test Extension Pack`. Clique em **OK**.  
-  
-2. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. Vá para o Visual c# **extensibilidade** nó e selecione **pacote de extensão**. Deixe o nome de arquivo padrão (ExtensionPack1.cs).  
-  
+
+1. No **novo projeto** diálogo caixa, expanda **Visual c#** ou **Visual Basic** e, em seguida, clique em **extensibilidade**. No **modelos** painel, selecione **projeto VSIX**. Na caixa **Nome**, digite `Test Extension Pack`. Clique em **OK**.
+
+2. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. Vá para o Visual c# **extensibilidade** nó e selecione **pacote de extensão**. Deixe o nome de arquivo padrão (ExtensionPack1.cs).
+
 3. Arquivo ExtensionPack1.vsext é adicionado, que contém o código a seguir
 
    ```json
@@ -53,18 +53,18 @@ O modelo de item do pacote de extensão cria um pacote de extensão com o conjun
         "name": "CopyAsHtml"
       }
     ]
-   }  
+   }
    ```
 
 4. O vsixid da extensão para incluir no pacote de extensão pode ser encontrado na [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Localize a extensão que você deseja incluir e clique em **ID da cópia**. Você pode atualizar existente **vsixId** no arquivo ou adicione outra extensão à lista.
 
     ![Copiar VsixId do Marketplace](media/vsixid-marketplace.png)
 
-5. Compile o projeto e carregar sua extensão no Marketplace. Ver [publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). 
-    
+5. Compile o projeto e carregar sua extensão no Marketplace. Ver [publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
+
 > [!NOTE]
 > Um pacote de extensão só pode instalar extensões que estão disponíveis sobre o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou [Galeria privada](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
- 
+
 ## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Instalar o pacote de extensão do Visual Studio Marketplace
 
 Agora que a extensão for publicada, instalá-lo no Visual Studio e testá-lo lá.
