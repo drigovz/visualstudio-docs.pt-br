@@ -14,37 +14,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2805c2ecaff3704d96e9ebac176d96a4d820551
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 952195ab33b9a7e35265f5ecf40a8de3cf958fb3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959795"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720582"
 ---
 # <a name="signing-vsix-packages"></a>Assinando pacotes VSIX
-Assemblies de extensão não é necessário ser assinados antes que eles podem executar no Visual Studio, mas é uma boa prática fazer isso.  
-  
- Se você quiser proteger sua extensão e verifique se que ele não foi adulterado, você pode adicionar uma assinatura digital a um pacote VSIX. Quando está conectado a um VSIX, o instalador do VSIX exibirá uma mensagem indicando que ele está assinado, além de obter mais informações sobre a assinatura em si. Se o conteúdo do VSIX foi modificado e VSIX não foi assinado novamente, o instalador do VSIX mostrará que a assinatura não é válida. A instalação não for interrompida, mas o usuário é avisado.  
-  
+Assemblies de extensão não é necessário ser assinados antes que eles podem executar no Visual Studio, mas é uma boa prática fazer isso.
+
+ Se você quiser proteger sua extensão e verifique se que ele não foi adulterado, você pode adicionar uma assinatura digital a um pacote VSIX. Quando está conectado a um VSIX, o instalador do VSIX exibirá uma mensagem indicando que ele está assinado, além de obter mais informações sobre a assinatura em si. Se o conteúdo do VSIX foi modificado e VSIX não foi assinado novamente, o instalador do VSIX mostrará que a assinatura não é válida. A instalação não for interrompida, mas o usuário é avisado.
+
 > [!IMPORTANT]
->  Começando com o Visual Studio 2015, os pacotes VSIX assinados usando algo diferente de criptografia de SHA256 serão identificados como tendo uma assinatura inválida. Instalação de VSIX não é bloqueada, mas o usuário será avisado.  
-  
-## <a name="signing-a-vsix-with-vsixsigntool"></a>Assinar um VSIX com VSIXSignTool  
- Há uma ferramenta disponível a partir de assinatura de criptografia de SHA256 [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) em nuget.org em [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).  
-  
-#### <a name="to-use-the-vsixsigntool"></a>Para usar o VSIXSignTool  
-  
-1. Adicione seu VSIX a um projeto.  
-  
-2. Clique com botão direito no nó do projeto no Gerenciador de soluções, selecionando **adicionar &#124; gerenciar pacotes NuGet**.  Para obter mais informações sobre a adição de NuGet e NuGet pacotes Consulte os [documentação do NuGet](/NuGet) e [Gerenciador de pacotes UI](/NuGet/Tools/Package-Manager-UI) tópicos.  
-  
-3. Pesquisar VSIXSignTool de VisualStudioExtensibility e instalar o pacote do NuGet.  
-  
-4. Agora você pode executar o VSIXSignTool de local de pacotes local do projeto. Consulte a Ajuda de linha de comando da ferramenta para seu cenário de autenticação (VSIXSignTool.exe /?).  
-  
-   Por exemplo, para entrar com uma senha protegida no arquivo de certificado:  
-  
-   VSIXSignTool.exe entrada /f \<certfile >/p \<senha > \<VSIXfile >  
-  
-## <a name="see-also"></a>Consulte também  
- [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+>  Começando com o Visual Studio 2015, os pacotes VSIX assinados usando algo diferente de criptografia de SHA256 serão identificados como tendo uma assinatura inválida. Instalação de VSIX não é bloqueada, mas o usuário será avisado.
+
+## <a name="signing-a-vsix-with-vsixsigntool"></a>Assinar um VSIX com VSIXSignTool
+ Há uma ferramenta disponível a partir de assinatura de criptografia de SHA256 [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) em nuget.org em [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
+
+#### <a name="to-use-the-vsixsigntool"></a>Para usar o VSIXSignTool
+
+1. Adicione seu VSIX a um projeto.
+
+2. Clique com botão direito no nó do projeto no Gerenciador de soluções, selecionando **adicionar &#124; gerenciar pacotes NuGet**.  Para obter mais informações sobre a adição de NuGet e NuGet pacotes Consulte os [documentação do NuGet](/NuGet) e [Gerenciador de pacotes UI](/NuGet/Tools/Package-Manager-UI) tópicos.
+
+3. Pesquisar VSIXSignTool de VisualStudioExtensibility e instalar o pacote do NuGet.
+
+4. Agora você pode executar o VSIXSignTool de local de pacotes local do projeto. Consulte a Ajuda de linha de comando da ferramenta para seu cenário de autenticação (VSIXSignTool.exe /?).
+
+   Por exemplo, para entrar com uma senha protegida no arquivo de certificado:
+
+   VSIXSignTool.exe entrada /f \<certfile >/p \<senha > \<VSIXfile >
+
+## <a name="see-also"></a>Consulte também
+- [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

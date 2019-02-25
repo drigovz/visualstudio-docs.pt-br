@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318739"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680462"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações na extensibilidade do Visual Studio 2017
 
@@ -103,6 +103,6 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
 ### <a name="reacting-to-this-breaking-change"></a>Reagir a essa alteração interruptiva
 
 * Código externo deve ser convertido para usar a ativação sem registro para componentes COM também.
-* Componentes externos podem encontrar o local do Visual Studio [seguindo as diretrizes aqui](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
+* Componentes externos podem encontrar o local do Visual Studio [seguindo as diretrizes aqui](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * É recomendável que componentes externos usam a [Gerenciador de configurações externas](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) em vez de ler/gravar diretamente para chaves de registro do Visual Studio.
 * Verifique se os componentes de que sua extensão está usando podem ter implementado outra técnica para o registro. Por exemplo, as extensões do depurador podem ser capazes de tirar proveito dos novos [msvsmon registro do arquivo JSON COM](migrate-debugger-COM-registration.md).

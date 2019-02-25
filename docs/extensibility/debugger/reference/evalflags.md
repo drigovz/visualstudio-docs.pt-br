@@ -1,7 +1,7 @@
 ---
 title: EVALFLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EVALFLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f780f06188d738deeb7f4b781fba1313e46db6d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d9d59262349891a5c0483297039578c5de4a7b72
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315762"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696266"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Especifica sinalizadores que controlam a avaliação da expressão.
@@ -50,26 +50,19 @@ public enum enum_EVALFLAGS {
 ```
 
 ## <a name="members"></a>Membros
-EVAL_RETURNVALUE  
-Especifica que o valor de retorno, se houver, ser avaliado.
+EVAL_RETURNVALUE Especifica que o valor de retorno, se houver, seja avaliado.
 
-EVAL_NOSIDEEFFECTS  
-Especifica que os efeitos colaterais não serão permitidas.
+EVAL_NOSIDEEFFECTS Especifica que os efeitos colaterais serão permitidas.
 
-EVAL_ALLOWBPS  
-Especifica parando em pontos de interrupção.
+EVAL_ALLOWBPS Especifica parar em pontos de interrupção.
 
-EVAL_ALLOWERRORREPORT  
-Especifica o relatório de erros para o host a ser permitido. Usado principalmente para a avaliação da expressão no script no Internet Explorer.
+Especifica EVAL_ALLOWERRORREPORT relatório de erros para o host a ser permitido. Usado principalmente para a avaliação da expressão no script no Internet Explorer.
 
-EVAL_FUNCTION_AS_ADDRESS  
-Funções de força a ser avaliada como endereços, em vez de invocar a função.
+Funções de EVAL_FUNCTION_AS_ADDRESS força a ser avaliada como endereços, em vez de invocar a função.
 
-EVAL_NOFUNCEVAL  
-Impede que a função que está sendo avaliado. Por exemplo, considere a `int` token na expressão `myExpression(int) + 10`. Essa função pode ser avaliada corretamente como um endereço, mas não como um valor.
+Função EVAL_NOFUNCEVAL impede de serem avaliadas. Por exemplo, considere a `int` token na expressão `myExpression(int) + 10`. Essa função pode ser avaliada corretamente como um endereço, mas não como um valor.
 
-EVAL_NOEVENTS  
-Sinalizador para indicar que os eventos que ocorrem durante a avaliação da expressão não devem ser enviados para o Gerenciador de sessão de depuração (SDM) ou para o IDE.
+EVAL_NOEVENTS sinalizador para indicar que os eventos que ocorrem durante a avaliação da expressão não devem ser enviados para o Gerenciador de sessão de depuração (SDM) ou para o IDE.
 
 ## <a name="remarks"></a>Comentários
 Esses sinalizadores são passados como um argumento para o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) e [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) métodos.
@@ -84,6 +77,6 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)  
-[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
+- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
+- [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

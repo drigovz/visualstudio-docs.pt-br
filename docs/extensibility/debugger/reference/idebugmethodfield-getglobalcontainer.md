@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::GetGlobalContainer | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::GetGlobalContainer
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23ce04265b5400a708fafdfd5b2a793cec9f6b42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40bbee4c00425c4f46ccde35b8a8c810e1d7c8e6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954287"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717501"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
-Obtém o contêiner global do método.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetGlobalContainer(  
-   IDebugClassField** ppClass  
-);  
-```  
-  
-```csharp  
-int GetGlobalContainer(  
-   out IDebugClassField ppClass  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppClass`  
- [out] Retorna um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa o módulo no qual esse método é definido.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Retornado [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto representa o módulo de inteiro e é um objeto artificial, ou seja, o próprio módulo não tem uma classe real, mas ele pode ser representado por um `IDebugClassField` objeto, permitindo que os vários elementos do módulo a ser enumerado e descobertos.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
+Obtém o contêiner global do método.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetGlobalContainer(
+   IDebugClassField** ppClass
+);
+```
+
+```csharp
+int GetGlobalContainer(
+   out IDebugClassField ppClass
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppClass`
+
+ [out] Retorna um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa o módulo no qual esse método é definido.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Retornado [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto representa o módulo de inteiro e é um objeto artificial, ou seja, o próprio módulo não tem uma classe real, mas ele pode ser representado por um `IDebugClassField` objeto, permitindo que os vários elementos do módulo a ser enumerado e descobertos.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

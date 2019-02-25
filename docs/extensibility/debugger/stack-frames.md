@@ -12,26 +12,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35b22c47aa80713ae494f868996142e776c94a0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d38f53b6841c03e769c8d1f1af967cf903a0b32
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020328"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684086"
 ---
 # <a name="stack-frames"></a>Quadros de pilha
-Na arquitetura do depurador, uma *quadro de pilha*:  
-  
--   É uma abstração de uma pilha que fornece o contexto de execução de um thread. Um thread sempre é executado dentro de uma função. Um quadro de pilha contém as variáveis locais da função e os argumentos a ele. Para depurar com o Visual Studio, o idioma ou o ambiente que está sendo depurado deve dar suporte a quadros de pilha.  
-  
--   Pode tanto identificar e descrever em si e pode retornar o thread associado. Um quadro de pilha também pode retornar o contexto de código que representa o ponteiro de instrução atual e a documentação associada e contextos de avaliação de expressão.  
-  
--   Tem propriedades que descrevem o nome, tipo e valor de argumentos e variáveis locais, e que aparecem em várias janelas de depuração do IDE.  
-  
--   É representado por um [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interface, geralmente criado por um mecanismo de depuração (DES) ou a máquina virtual como consequência de execução de um thread.  
-  
-## <a name="see-also"></a>Consulte também  
- [Contextos do depurador](../../extensibility/debugger/debugger-contexts.md)   
- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)   
- [Mecanismo de depuração](../../extensibility/debugger/debug-engine.md)   
- [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)
+Na arquitetura do depurador, uma *quadro de pilha*:
+
+-   É uma abstração de uma pilha que fornece o contexto de execução de um thread. Um thread sempre é executado dentro de uma função. Um quadro de pilha contém as variáveis locais da função e os argumentos a ele. Para depurar com o Visual Studio, o idioma ou o ambiente que está sendo depurado deve dar suporte a quadros de pilha.
+
+-   Pode tanto identificar e descrever em si e pode retornar o thread associado. Um quadro de pilha também pode retornar o contexto de código que representa o ponteiro de instrução atual e a documentação associada e contextos de avaliação de expressão.
+
+-   Tem propriedades que descrevem o nome, tipo e valor de argumentos e variáveis locais, e que aparecem em várias janelas de depuração do IDE.
+
+-   É representado por um [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interface, geralmente criado por um mecanismo de depuração (DES) ou a máquina virtual como consequência de execução de um thread.
+
+## <a name="see-also"></a>Consulte também
+- [Contextos do depurador](../../extensibility/debugger/debugger-contexts.md)
+- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)
+- [Mecanismo de depuração](../../extensibility/debugger/debug-engine.md)
+- [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

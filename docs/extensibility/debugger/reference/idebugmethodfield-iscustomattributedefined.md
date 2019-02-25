@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::IsCustomAttributeDefined
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ecb0e2c068e3ddd0aae246fe782f808c95ced52
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08534abc468ac358d7c5eeba25129d9752f84e5a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992315"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717075"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
-Determina se um atributo personalizado específico foi definido.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
-);  
-```  
-  
-```csharp  
-int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pszCustomAttributeName`  
- [in] Uma cadeia de caracteres que contém o nome do atributo personalizado para localizar.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Retorna que S_OK se o atributo personalizado é definido neste método, caso contrário retorna S_FALSE.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+Determina se um atributo personalizado específico foi definido.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT IsCustomAttributeDefined( 
+   LPCOLESTR pszCustomAttributeName
+);
+```
+
+```csharp
+int IsCustomAttributeDefined(
+   [In] string pszCustomAttributeName
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pszCustomAttributeName`
+
+ [in] Uma cadeia de caracteres que contém o nome do atributo personalizado para localizar.
+
+## <a name="return-value"></a>Valor de retorno
+ Retorna que S_OK se o atributo personalizado é definido neste método, caso contrário retorna S_FALSE.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

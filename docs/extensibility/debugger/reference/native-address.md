@@ -1,7 +1,7 @@
 ---
 title: NATIVE_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - NATIVE_ADDRESS
 helpviewer_keywords:
@@ -12,44 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 681523b6d842b5eff36309451260d6572243bfec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7d7d061d7cd60444a523d5764c30b7ff538faefe
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988617"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719098"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
-Essa estrutura representa um endereço nativo.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-typedef struct _tagNATIVE_ADDRESS {  
-   DWORD unknown;  
-} NATIVE_ADDRESS;  
-```  
-  
-```csharp  
-public struct NATIVE_ADDRESS {  
-   public uint unknown;  
-}  
-```  
-  
-## <a name="terms"></a>Termos  
- Desconhecido  
- O endereço nativo (o significado disso depende do tempo de execução e o sistema operacional).  
-  
-## <a name="remarks"></a>Comentários  
- Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_NATIVE` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
-  
-## <a name="requirements"></a>Requisitos  
- Header: sh.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+
+Essa estrutura representa um endereço nativo.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+typedef struct _tagNATIVE_ADDRESS {
+    DWORD unknown;
+} NATIVE_ADDRESS;
+```
+
+```csharp
+public struct NATIVE_ADDRESS {
+    public uint unknown;
+}
+```
+
+## <a name="terms"></a>Termos
+
+`unknown`
+
+O endereço nativo (o significado disso depende do tempo de execução e o sistema operacional).
+
+## <a name="remarks"></a>Comentários
+
+Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_NATIVE` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).
+
+## <a name="requirements"></a>Requisitos
+
+Header: sh.h
+
+Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Consulte também
+
+- [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

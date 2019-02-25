@@ -8,31 +8,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1450a7a7e254f9045b0f29cda4359e1e0676c65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 159ed9c5100a2503495c6ec65e8305b71fa31209
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034714"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694550"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Criar uma extensão com uma janela de ferramentas
-Neste procedimento, você aprenderá a usar o modelo de projeto do VSIX e o **janela de ferramenta personalizada** modelo de item para criar uma extensão com uma janela de ferramentas.  
-  
-## <a name="prerequisites"></a>Pré-requisitos  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
-  
-### <a name="create-a-tool-window"></a>Criar uma janela de ferramentas  
-  
-1.  Crie um projeto do VSIX chamado **FirstWindow**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c#** > **extensibilidade**.  
-  
-2.  Quando o projeto aberto, adicione um modelo de item da janela de ferramenta denominado **MyWindow**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da janela, altere o nome de arquivo da janela de ferramenta *MyWindow.cs*.  
-  
-3.  Compile o projeto e comece a depuração.  
-  
-     A instância experimental do Visual Studio é exibida. Para obter mais informações sobre a instância experimental, consulte [a instância experimental](../extensibility/the-experimental-instance.md).  
-  
-4.  Na instância experimental, vá para **modo de exibição** > **Other Windows**.  
-  
-     Você deve ver um item de menu **MyWindow**. Clique nele.  
-  
+Neste procedimento, você aprenderá a usar o modelo de projeto do VSIX e o **janela de ferramenta personalizada** modelo de item para criar uma extensão com uma janela de ferramentas.
+
+## <a name="prerequisites"></a>Pré-requisitos
+ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+
+### <a name="create-a-tool-window"></a>Criar uma janela de ferramentas
+
+1.  Crie um projeto do VSIX chamado **FirstWindow**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c#** > **extensibilidade**.
+
+2.  Quando o projeto aberto, adicione um modelo de item da janela de ferramenta denominado **MyWindow**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da janela, altere o nome de arquivo da janela de ferramenta *MyWindow.cs*.
+
+3.  Compile o projeto e comece a depuração.
+
+     A instância experimental do Visual Studio é exibida. Para obter mais informações sobre a instância experimental, consulte [a instância experimental](../extensibility/the-experimental-instance.md).
+
+4.  Na instância experimental, vá para **modo de exibição** > **Other Windows**.
+
+     Você deve ver um item de menu **MyWindow**. Clique nele.
+
      Você deverá ver uma janela de ferramenta com o título **MyWindow** e uma fala botão **Click Me!.**

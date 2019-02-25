@@ -10,51 +10,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 787eb0fd3cf865eb4b800c9470cf0c3d77d45975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bfe4578b4896c137f3bcef8418c5dc0cafd70798
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958388"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604204"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>Adicionar diretórios à caixa de diálogo Adicionar Novo Item
 O exemplo de código a seguir demonstra como registrar um novo conjunto de diretórios para o **Adicionar Novo Item** caixa de diálogo. Diretórios para o **Adicionar Novo Item** caixa de diálogo são diferentes para cada projeto. Portanto, os diretórios estão registrados com o **projetos** subchave, encontrado no **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
-  
-## <a name="registry-script"></a>Script de registro  
-  
-```  
-NoRemove Projects  
-{  
-  NoRemove %GUID_Project%  
-  {  
-    NoRemove AddItemTemplates  
-    {  
-      NoRemove TemplateDirs  
-      {  
-        ForceRemove %CLSID_Package%  
-        {  
-      ForceRemove /1 = s '#%Folder_Label_ResID%'  
-          {  
-            val TemplatesDir = s '%Template_Path%'     
-            val SortPriority = d 2000  
-          }  
-        }  
-      }  
-    }  
-  }  
-}  
-```  
-  
- O `%Template_Path%` valor Especifica o caminho completo do diretório que contém os modelos de projeto. Esses modelos podem ser *. vsz* arquivos ou arquivos de modelo de um modelo a ser clonado.  
-  
- O `SortPriority` valor Especifica uma prioridade de classificação.  
-  
-## <a name="add-items-to-an-existing-project"></a>Adicionar itens a um projeto existente  
- Você também pode adicionar itens a um projeto existente. Por exemplo, para um [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projeto, você pode adicionar itens para o  *\<raiz > \Program Files\Microsoft Studio\VC Visual #\CSharpProjectItems\LocalProjectItems* pasta. Nesse caso, `%GUID_Project%` é o GUID de um projeto c# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
-  
- Você também pode estender um projeto existente por um subtipo de projeto de programação. Com um subtipo de projeto, você pode estender um projeto sem precisar escrever um novo tipo de projeto. Para obter mais informações sobre os subtipos de projeto, consulte [subtipos de projeto](../../extensibility/internals/project-subtypes.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Registrar os modelos de projeto e de item](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Adicionar itens à caixa de diálogo Adicionar Novo Item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Adicionar diretórios à caixa de diálogo Novo projeto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+
+## <a name="registry-script"></a>Script de registro
+
+```
+NoRemove Projects
+{
+  NoRemove %GUID_Project%
+  {
+    NoRemove AddItemTemplates
+    {
+      NoRemove TemplateDirs
+      {
+        ForceRemove %CLSID_Package%
+        {
+      ForceRemove /1 = s '#%Folder_Label_ResID%'
+          {
+            val TemplatesDir = s '%Template_Path%'
+            val SortPriority = d 2000
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+ O `%Template_Path%` valor Especifica o caminho completo do diretório que contém os modelos de projeto. Esses modelos podem ser *. vsz* arquivos ou arquivos de modelo de um modelo a ser clonado.
+
+ O `SortPriority` valor Especifica uma prioridade de classificação.
+
+## <a name="add-items-to-an-existing-project"></a>Adicionar itens a um projeto existente
+ Você também pode adicionar itens a um projeto existente. Por exemplo, para um [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projeto, você pode adicionar itens para o  *\<raiz > \Program Files\Microsoft Studio\VC Visual #\CSharpProjectItems\LocalProjectItems* pasta. Nesse caso, `%GUID_Project%` é o GUID de um projeto c# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
+
+ Você também pode estender um projeto existente por um subtipo de projeto de programação. Com um subtipo de projeto, você pode estender um projeto sem precisar escrever um novo tipo de projeto. Para obter mais informações sobre os subtipos de projeto, consulte [subtipos de projeto](../../extensibility/internals/project-subtypes.md).
+
+## <a name="see-also"></a>Consulte também
+- [Registrar os modelos de projeto e de item](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Adicionar itens à caixa de diálogo Adicionar Novo Item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Adicionar diretórios à caixa de diálogo Novo projeto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

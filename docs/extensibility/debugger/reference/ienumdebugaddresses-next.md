@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugAddresses::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugAddresses::Next
 helpviewer_keywords:
@@ -12,47 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7727bb27e3b41cf009d7b00cd168b7a3182f9aef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a990c0843d34a0458e8646bea18e9bcc056e40b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980525"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682733"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
-Esse método retorna o próximo conjunto de elementos da enumeração.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT Next(  
-   ULONG           celt,  
-   IDebugAddress** rgelt,  
-   ULONG*          pceltFetched  
-);  
-```  
-  
-```csharp  
-int Next(  
-   uint            celt,  
-   IDebugAddress[] rgelt,  
-   ref uint        pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `celt`  
- [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.  
-  
- `rgelt`  
- [no, out] Matriz de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elementos a serem preenchidos.  
-  
- `pceltFetched`  
- [out] Retorna o número de elementos realmente retornados em `rgelt`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+Esse método retorna o próximo conjunto de elementos da enumeração.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT Next(
+   ULONG           celt,
+   IDebugAddress** rgelt,
+   ULONG*          pceltFetched
+);
+```
+
+```csharp
+int Next(
+   uint            celt,
+   IDebugAddress[] rgelt,
+   ref uint        pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `celt`
+
+ [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
+
+ `rgelt`
+
+ [no, out] Matriz de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elementos a serem preenchidos.
+
+ `pceltFetched`
+
+ [out] Retorna o número de elementos realmente retornados em `rgelt`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

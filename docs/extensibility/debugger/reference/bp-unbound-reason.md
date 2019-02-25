@@ -1,7 +1,7 @@
 ---
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_UNBOUND_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab701ef9886dddc0c2e32aa79092f22ad91d4630
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316061"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717654"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Fornece o motivo pelo qual que um ponto de interrupção foi desassociado.
@@ -44,17 +44,13 @@ public enum enum_BP_UNBOUND_REASON {
 ```
 
 ## <a name="members"></a>Membros
-BPUR_UNKNOWN  
-O motivo é desconhecido.
+BPUR_UNKNOWN o motivo é desconhecido.
 
-BPUR_CODE_UNLOADED  
-O código que contém o ponto de interrupção foi descarregado.
+BPUR_CODE_UNLOADED o código que contém o ponto de interrupção foi descarregado.
 
-BPUR_BREAKPOINT_REBIND  
-O ponto de interrupção foram religado para um local diferente. Isso pode acontecer após editar e continuar as operações quando move o ponto de interrupção ou quando o ponto de interrupção é associado a um arquivo com um caminho que não é mais válido.
+Foram religados BPUR_BREAKPOINT_REBIND o ponto de interrupção em um local diferente. Isso pode acontecer após editar e continuar as operações quando move o ponto de interrupção ou quando o ponto de interrupção é associado a um arquivo com um caminho que não é mais válido.
 
-BPUR_ BREAKPOINT_ERROR  
-O ponto de interrupção é determinado em erro depois que ele está associado. Isso acontece com os pontos de interrupção gerenciados cujas condições não são mais válidas.
+BPUR_ BREAKPOINT_ERROR o ponto de interrupção é determinado em erro depois que ele está associado. Isso acontece com os pontos de interrupção gerenciados cujas condições não são mais válidas.
 
 ## <a name="remarks"></a>Comentários
 Retornado pela [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.
@@ -67,5 +63,5 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

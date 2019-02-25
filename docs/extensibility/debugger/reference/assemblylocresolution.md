@@ -1,7 +1,7 @@
 ---
 title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ASSEMBLYLOCRESOLUTION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: befa1c67aa8d095288d13cb6f309f31b5c2916e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316425"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710247"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Especifica onde um assembly está localizado.
@@ -44,17 +44,13 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 ```
 
 ## <a name="members"></a>Membros
-ALR_NAME  
-Assembly está localizado no namespace atual.
+ALR_NAME Assembly está localizado no namespace atual.
 
-ALR_USERDIR  
-Assembly está localizado em um diretório de usuário.
+ALR_USERDIR Assembly está localizado em um diretório de usuário.
 
-ALR_SHAREDDIR  
-Assembly está localizado no diretório compartilhado.
+ALR_SHAREDDIR Assembly está localizado no diretório compartilhado.
 
-ALR_REMOTEDIR  
-Assembly está localizado em um diretório remoto.
+ALR_REMOTEDIR Assembly está localizado em um diretório remoto.
 
 ## <a name="remarks"></a>Comentários
 Esses valores são retornados pela [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) métodos.
@@ -69,6 +65,6 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)  
-[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
+- [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
+- [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

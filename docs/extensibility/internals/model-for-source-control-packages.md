@@ -10,35 +10,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3986a90754f073fa28ecce11ff0053ecad512289
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ad60503c9f7b15bd4665fb8f9552864debc381d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957917"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609573"
 ---
 # <a name="model-for-source-control-packages"></a>Modelo de pacotes de controle do código-fonte
-O modelo a seguir representa um exemplo de uma implementação de controle do código-fonte. No modelo, você pode ver as que você deve implementar interfaces e os serviços de ambiente que você deve chamar. Assim como todos os serviços, você realmente chama os métodos de uma interface específica que você obtém por meio do serviço. Os nomes das classes são identificados para torná-lo mais fácil de ver como o controle de origem é realizado.  
-  
- ![SCC&#95;exemplos de SCRIP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
-Projeto de controle de fonte de exemplo  
-  
-## <a name="interfaces"></a>Interfaces  
- Você pode implementar o controle do código-fonte para seus novos tipos de projeto no Visual Studio usando a lista de interfaces mostrado na tabela a seguir.  
-  
-|Interface|Use|  
-|---------------|---------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Chamado por projetos e editores antes de eles salvar ou arquivos de alteração (sujo). Essa interface é acessada usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> service.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Chamado por projetos para solicitar permissão para adicionar, remover ou renomear um arquivo ou diretório. Essa interface também é chamada por projetos para informar o ambiente quando uma adição aprovada, remova ou renomeie a ação for concluído. Ele é acessado usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> service.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Implementada por qualquer entidade que registra para ser notificado quando os projetos de adicionar, renomeiam ou remover um arquivo ou diretório. Para se registrar para notificação de eventos, chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Chamado por projetos para registrar com o pacote de controle do código-fonte e obter informações sobre o status de controle do código-fonte. Essa interface é acessada usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> service.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementado pelo projeto para responder a solicitações de controle do código-fonte para obter informações sobre arquivos e obter a fonte de configurações de controle necessárias para o arquivo de projeto.|  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
- [Oferecer suporte ao controle do código-fonte](../../extensibility/internals/supporting-source-control.md)
+O modelo a seguir representa um exemplo de uma implementação de controle do código-fonte. No modelo, você pode ver as que você deve implementar interfaces e os serviços de ambiente que você deve chamar. Assim como todos os serviços, você realmente chama os métodos de uma interface específica que você obtém por meio do serviço. Os nomes das classes são identificados para torná-lo mais fácil de ver como o controle de origem é realizado.
+
+ ![SCC&#95;exemplos de SCRIP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") projeto de controle de fonte de exemplo
+
+## <a name="interfaces"></a>Interfaces
+ Você pode implementar o controle do código-fonte para seus novos tipos de projeto no Visual Studio usando a lista de interfaces mostrado na tabela a seguir.
+
+|Interface|Use|
+|---------------|---------|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Chamado por projetos e editores antes de eles salvar ou arquivos de alteração (sujo). Essa interface é acessada usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> service.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Chamado por projetos para solicitar permissão para adicionar, remover ou renomear um arquivo ou diretório. Essa interface também é chamada por projetos para informar o ambiente quando uma adição aprovada, remova ou renomeie a ação for concluído. Ele é acessado usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> service.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Implementada por qualquer entidade que registra para ser notificado quando os projetos de adicionar, renomeiam ou remover um arquivo ou diretório. Para se registrar para notificação de eventos, chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Chamado por projetos para registrar com o pacote de controle do código-fonte e obter informações sobre o status de controle do código-fonte. Essa interface é acessada usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> service.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementado pelo projeto para responder a solicitações de controle do código-fonte para obter informações sobre arquivos e obter a fonte de configurações de controle necessárias para o arquivo de projeto.|
+
+## <a name="see-also"></a>Consulte também
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
+- [Oferecer suporte ao controle do código-fonte](../../extensibility/internals/supporting-source-control.md)

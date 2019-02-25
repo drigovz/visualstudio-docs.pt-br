@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c3c396dbea0e005012162080590a0b84ec9f5b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da13452e125e2cf6452a1e2e2ab617b38de7ee28
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413287"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678279"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 Atualiza os símbolos de depuração na memória com aqueles do fluxo de dados especificado.
@@ -40,14 +40,17 @@ int UpdateSymbols (
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`  
-[in] Identificador do domínio do aplicativo.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificador exclusivo do módulo.
+ [in] Identificador do domínio do aplicativo.
 
-`pUpdateStream`  
-[in] Fluxo de dados que contém os símbolos de depuração atualizado.
+`guidModule`
+
+ [in] Identificador exclusivo do módulo.
+
+`pUpdateStream`
+
+ [in] Fluxo de dados que contém os símbolos de depuração atualizado.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
@@ -92,4 +95,4 @@ Error:
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

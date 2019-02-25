@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject2::CreateStringObjectWithLength | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
@@ -11,46 +11,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ed28b28e38c3e855661c4d3941738f3cced28a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02ee13b62a2238624f1c6d42c52bf67db2ceaae4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954456"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710403"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-Cria um objeto de cadeia de caracteres que tem o comprimento especificado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT CreateStringObjectWithLength (  
-   LPCOLESTR      pcstrString,  
-   UINT           uiLength,  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int CreateStringObjectWithLength (  
-   string           pcstrString,  
-   uint             uiLength,  
-   out IDebugObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pcstrString`  
- [in] O valor de cadeia de caracteres para o objeto de cadeia de caracteres.  
-  
- `uiLength`  
- [in] O comprimento da cadeia de caracteres em bytes.  
-  
- `ppObject`  
- [out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa o objeto de cadeia de caracteres criada recentemente.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)
+Cria um objeto de cadeia de caracteres que tem o comprimento especificado.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT CreateStringObjectWithLength (
+   LPCOLESTR      pcstrString,
+   UINT           uiLength,
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int CreateStringObjectWithLength (
+   string           pcstrString,
+   uint             uiLength,
+   out IDebugObject ppObject
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pcstrString`
+
+ [in] O valor de cadeia de caracteres para o objeto de cadeia de caracteres.
+
+ `uiLength`
+
+ [in] O comprimento da cadeia de caracteres em bytes.
+
+ `ppObject`
+
+ [out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa o objeto de cadeia de caracteres criada recentemente.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

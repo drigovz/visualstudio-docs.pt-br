@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumLocals | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::EnumLocals
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6cd5e65c54355ec21d22d101d94270b95018e8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 6e8c39adaca6c394b631542d57d74ed4818501b4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450406"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700556"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Cria um enumerador para variáveis locais selecionados do método.
@@ -39,11 +39,13 @@ int EnumLocals(
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`pAddress`  
-[in] Uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto que representa o endereço de depuração que seleciona o contexto ou escopo do qual obter os locais.
+`pAddress`
 
-`ppLocals`  
-[out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa uma lista de locais; caso contrário, retornará um valor nulo se não houver nenhum locais.
+ [in] Uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto que representa o endereço de depuração que seleciona o contexto ou escopo do qual obter os locais.
+
+`ppLocals`
+
+ [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa uma lista de locais; caso contrário, retornará um valor nulo se não houver nenhum locais.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhum locais. Caso contrário, retornará um código de erro.
@@ -74,7 +76,7 @@ public void func(int index)
 O [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objeto representa o `func` método em si. Chamar o `EnumLocals` método com um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) definido como o `Inner Scope 1` endereço retorna uma enumeração que contém o `temp1` variável, por exemplo.
 
 ## <a name="see-also"></a>Consulte também
-[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)  
-[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)  
-[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)  
-[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+- [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)

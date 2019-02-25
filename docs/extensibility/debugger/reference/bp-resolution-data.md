@@ -1,7 +1,7 @@
 ---
 title: BP_RESOLUTION_DATA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RESOLUTION_DATA
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b2d887c10721693468ed907175399074f890588
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 70c1bb00fc8648cfe19f4bcecffdd0592e5f8deb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317257"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711443"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 Descreve o resultado da associação a um ponto de interrupção de dados.
@@ -43,17 +43,13 @@ public struct BP_RESOLUTION_DATA {
 ```
 
 ## <a name="members"></a>Membros
-`bstrDataExpr`  
-A expressão de dados que foi associada.
+`bstrDataExpr` A expressão de dados que foi associada.
 
-`bstrFunc`  
-O nome da função de ponto de interrupção de dados tem associado no (se houver).
+`bstrFunc` O nome da função de ponto de interrupção de dados tem associado no (se houver).
 
-`bstrImage`  
-O nome do módulo (MyModule.dll, por exemplo) que o ponto de interrupção de dados tenha associado no.
+`bstrImage` O nome do módulo (MyModule.dll, por exemplo) que o ponto de interrupção de dados tenha associado no.
 
-`dwFlags`  
-Um valor a partir de [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) enumeração, que descreve como o ponto de interrupção de dados é implementado.
+`dwFlags` Um valor a partir de [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) enumeração, que descreve como o ponto de interrupção de dados é implementado.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é um membro do [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) estrutura, que está em um membro de ativar o [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura retornada pelo [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)método.
@@ -66,7 +62,7 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
+- [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

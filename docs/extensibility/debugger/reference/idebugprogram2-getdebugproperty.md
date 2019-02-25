@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetDebugProperty | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::GetDebugProperty
 helpviewer_keywords:
@@ -12,43 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 359dd06c6105741ec2f7eec6428cbb2dc838f491
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e18aa5611e7440322e08828060714b4fad954b89
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951216"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679886"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
-Obtém as propriedades do programa.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetDebugProperty(   
-   IDebugProperty2** ppProperty  
-);  
-```  
-  
-```csharp  
-int GetDebugProperty(   
-   out IDebugProperty2 ppProperty  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppProperty`  
- [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa as propriedades do programa.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- As propriedades retornadas por esse método são específicas para o programa. Se o programa precisa retornar mais de uma propriedade, em seguida, a [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto retornado por esse método é um recipiente de propriedades adicionais e chamar o [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método retorna um lista de todas as propriedades.  
-  
- Um programa pode expor qualquer número e tipo de propriedades adicionais que podem ser descritos por meio de `IDebugProperty2` interface. Um IDE pode exibir as propriedades adicionais do programa por meio de uma interface de usuário do navegador de propriedade genérica.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
+Obtém as propriedades do programa.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetDebugProperty( 
+   IDebugProperty2** ppProperty
+);
+```
+
+```csharp
+int GetDebugProperty( 
+   out IDebugProperty2 ppProperty
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppProperty`
+
+ [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa as propriedades do programa.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+ As propriedades retornadas por esse método são específicas para o programa. Se o programa precisa retornar mais de uma propriedade, em seguida, a [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto retornado por esse método é um recipiente de propriedades adicionais e chamar o [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método retorna um lista de todas as propriedades.
+
+ Um programa pode expor qualquer número e tipo de propriedades adicionais que podem ser descritos por meio de `IDebugProperty2` interface. Um IDE pode exibir as propriedades adicionais do programa por meio de uma interface de usuário do navegador de propriedade genérica.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)

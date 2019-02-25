@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetReference | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetReference
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63364cd74b0497ac2b40f592e847514065ee869a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: abff655b41dbc55735b7dea2934f7d396aae5f4c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069623"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698112"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
-Retorna uma referência para o valor da propriedade.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetReference(  
-   IDebugReference2** ppReference  
-);  
-```  
-  
-```csharp  
-int GetReference(  
-   out IDebugReference2 ppReference  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppRererence`  
- [out] Retorna um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa uma referência para o valor da propriedade.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro, geralmente `E_NOTIMPL` ou `E_GETREFERENCE_NO_REFERENCE`.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+Retorna uma referência para o valor da propriedade.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetReference(
+   IDebugReference2** ppReference
+);
+```
+
+```csharp
+int GetReference(
+   out IDebugReference2 ppReference
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppRererence`
+
+ [out] Retorna um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa uma referência para o valor da propriedade.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro, geralmente `E_NOTIMPL` ou `E_GETREFERENCE_NO_REFERENCE`.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

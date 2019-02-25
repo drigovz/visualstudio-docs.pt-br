@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentText2::GetText
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 729b56b4161d6cfd38db91334427840d0c7339d8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449641"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678352"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera o texto da posição especificada no documento.
@@ -43,17 +43,21 @@ int GetText(
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`pos`  
-[in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica o local do texto a ser recuperado.
+`pos`
 
-`cMaxChars`  
-[in] O número máximo de caracteres do texto a ser recuperado.
+ [in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica o local do texto a ser recuperado.
 
-`pText`  
-[no, out] Um ponteiro para um buffer que deve ser preenchido com o texto desejado. Esse buffer deve ser capaz de conter pelo menos `cMaxChars` número de caracteres largos.
+`cMaxChars`
 
-`pcNumChars`  
-[out] Retorna o número de caracteres realmente recuperados.
+ [in] O número máximo de caracteres do texto a ser recuperado.
+
+`pText`
+
+ [no, out] Um ponteiro para um buffer que deve ser preenchido com o texto desejado. Esse buffer deve ser capaz de conter pelo menos `cMaxChars` número de caracteres largos.
+
+`pcNumChars`
+
+ [out] Retorna o número de caracteres realmente recuperados.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
@@ -98,5 +102,5 @@ namespace Mynamespace
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

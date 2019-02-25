@@ -1,7 +1,7 @@
 ---
 title: IDebugPortEx2::GetProgram | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortEx2::GetProgram
 helpviewer_keywords:
@@ -12,43 +12,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68ee835f4c9aa81a79730f971a3c1a5885f14b31
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d1fd56bf6705cb6e47e94422ab06261645d0d512
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941835"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687426"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
-Obtém o programa associado a um nó de programa.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetProgram(   
-   IDebugProgramNode2* pProgramNode,  
-   IDebugProgram2**    ppProgram  
-);  
-```  
-  
-```csharp  
-int GetProgram(   
-   IDebugProgramNode2 pProgramNode,  
-   out IDebugProgram2 ppProgram  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pProgramNode`  
- [in] Uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa o nó do programa.  
-  
- `ppProgram`  
- [out] Retorna um [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o programa associado ao nó de programa.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+Obtém o programa associado a um nó de programa.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetProgram( 
+   IDebugProgramNode2* pProgramNode,
+   IDebugProgram2**    ppProgram
+);
+```
+
+```csharp
+int GetProgram( 
+   IDebugProgramNode2 pProgramNode,
+   out IDebugProgram2 ppProgram
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pProgramNode`
+
+ [in] Uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa o nó do programa.
+
+ `ppProgram`
+
+ [out] Retorna um [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o programa associado ao nó de programa.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

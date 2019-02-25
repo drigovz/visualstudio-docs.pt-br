@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ffcc334a69a38da4869532d633960cfac7260d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317127"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709935"
 ---
 # <a name="add-a-tool-window"></a>Adicionar uma janela de ferramentas
 Neste passo a passo, você aprenderá como criar uma janela de ferramenta e integrá-la no Visual Studio das seguintes maneiras:
@@ -277,4 +277,4 @@ Adicionar uma barra de ferramentas e um comando de menu que invoca a **abrir arq
     Você deve ouvir o som do alarme.
 
 ## <a name="see-also"></a>Consulte também
-[Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

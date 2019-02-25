@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316167"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710078"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Adicionar a que lista a um submenu um mais usados recentemente
 Este passo a passo se baseia no demonstrações [adicionar um submenu a um menu](../extensibility/adding-a-submenu-to-a-menu.md)e mostra como adicionar uma lista dinâmica a um submenu. A lista dinâmica constitui a base para a criação de uma lista de usados mais recentemente (MRU).
@@ -202,4 +202,4 @@ Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para
 4. Abra o submenu novamente. Observe que **Item 3** agora está na parte superior da lista e os outros itens enviados para uma posição para baixo. Clique em **Item 3** novamente e observe que a caixa de mensagem ainda exibe **selecionado Item 3**, que indica que o texto corretamente foram movidos para a nova posição junto com o rótulo de comando.
 
 ## <a name="see-also"></a>Consulte também
-[Adição dinâmica de itens de menu](../extensibility/dynamically-adding-menu-items.md)
+- [Adição dinâmica de itens de menu](../extensibility/dynamically-adding-menu-items.md)

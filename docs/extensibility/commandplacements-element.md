@@ -13,60 +13,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923ba2a517ae934fb83c0cb36a29dbe518a2a2a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fcacd56700867682e10ead8e46cfdadcdc66b31d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991054"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696760"
 ---
 # <a name="commandplacements-element"></a>Elemento CommandPlacements
-O elemento CommandPlacements agrupa elementos CommandPlacement e outros agrupamentos CommandPlacements.  
-  
- O elemento CommandPlacements é opcional. Se não há comandos, grupos ou menus devem ser incluídas em um local secundário, não precisará incluí-la em seu *VSCT* arquivo.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```xml  
-<CommandPlacements>  
-  <CommandPlacement>... </CommandPlacement>  
-  <CommandPlacement>... </CommandPlacement>  
-</CommandPlacements>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
-  
-### <a name="attributes"></a>Atributos  
-  
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementos filho  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|CommandPlacements|Agrupa elementos de CommandPlacement e outros agrupamentos CommandPlacements.|  
-|[Elemento CommandPlacement](../extensibility/commandplacement-element.md)|Permite que os botões, grupos e menus a serem incluídos em mais de um grupo ou menu.|  
-  
-### <a name="parent-elements"></a>Elementos pai  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos.|  
-  
-## <a name="example"></a>Exemplo  
-  
-```xml  
-<CommandPlacements>  
-  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"  
-    priority="0x0300">  
-    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>  
-  </CommandPlacement>  
-</CommandPlacements>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Elemento CommandPlacement](../extensibility/commandplacement-element.md)   
- [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+O elemento CommandPlacements agrupa elementos CommandPlacement e outros agrupamentos CommandPlacements.
+
+ O elemento CommandPlacements é opcional. Se não há comandos, grupos ou menus devem ser incluídas em um local secundário, não precisará incluí-la em seu *VSCT* arquivo.
+
+## <a name="syntax"></a>Sintaxe
+
+```xml
+<CommandPlacements>
+  <CommandPlacement>... </CommandPlacement>
+  <CommandPlacement>... </CommandPlacement>
+</CommandPlacements>
+```
+
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
+
+### <a name="attributes"></a>Atributos
+
+|Atributo|Descrição|
+|---------------|-----------------|
+|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementos filho
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|CommandPlacements|Agrupa elementos de CommandPlacement e outros agrupamentos CommandPlacements.|
+|[Elemento CommandPlacement](../extensibility/commandplacement-element.md)|Permite que os botões, grupos e menus a serem incluídos em mais de um grupo ou menu.|
+
+### <a name="parent-elements"></a>Elementos pai
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos.|
+
+## <a name="example"></a>Exemplo
+
+```xml
+<CommandPlacements>
+  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"
+    priority="0x0300">
+    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>
+  </CommandPlacement>
+</CommandPlacements>
+```
+
+## <a name="see-also"></a>Consulte também
+- [Elemento CommandPlacement](../extensibility/commandplacement-element.md)
+- [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

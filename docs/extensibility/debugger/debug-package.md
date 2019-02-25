@@ -10,24 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb843e63dbc4ff711b56ff457ca930dc9df0207
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2ba784f3a544b2f66f1f2c9c229f85477bf6c782
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010175"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705867"
 ---
 # <a name="debug-package"></a>Pacote de depuração
-O pacote de depuração é executado no shell do Visual Studio e manipula toda a interface do usuário. Ele consome as interfaces de depuração do Visual Studio e se comunica com o Gerenciador de sessão de depuração (SDM).  
-  
- Eventos de interrupção enviados por meio do SDM alternar o depurador do modo de execução para o modo de interrupção e altere o foco para o programa onde a quebra ocorreu. O pacote de depuração acompanha o quadro de pilha e o thread a partir das informações enviadas a ele pelos eventos.  
-  
- O pacote de depuração não tem idioma ou as dependências do ambiente de tempo de execução. Não é necessário implementar ou modificar o pacote de depuração.  
-  
- O pacote de depuração é implementado pelo *vsdebug.dll*.  
-  
-## <a name="see-also"></a>Consulte também  
- [Gerenciador de sessão de depuração](../../extensibility/debugger/session-debug-manager.md)   
- [Quadros de pilha](../../extensibility/debugger/stack-frames.md)   
- [Threads](../../extensibility/debugger/threads.md)   
- [Componentes do depurador](../../extensibility/debugger/debugger-components.md)
+O pacote de depuração é executado no shell do Visual Studio e manipula toda a interface do usuário. Ele consome as interfaces de depuração do Visual Studio e se comunica com o Gerenciador de sessão de depuração (SDM).
+
+ Eventos de interrupção enviados por meio do SDM alternar o depurador do modo de execução para o modo de interrupção e altere o foco para o programa onde a quebra ocorreu. O pacote de depuração acompanha o quadro de pilha e o thread a partir das informações enviadas a ele pelos eventos.
+
+ O pacote de depuração não tem idioma ou as dependências do ambiente de tempo de execução. Não é necessário implementar ou modificar o pacote de depuração.
+
+ O pacote de depuração é implementado pelo *vsdebug.dll*.
+
+## <a name="see-also"></a>Consulte também
+- [Gerenciador de sessão de depuração](../../extensibility/debugger/session-debug-manager.md)
+- [Quadros de pilha](../../extensibility/debugger/stack-frames.md)
+- [Threads](../../extensibility/debugger/threads.md)
+- [Componentes do depurador](../../extensibility/debugger/debugger-components.md)

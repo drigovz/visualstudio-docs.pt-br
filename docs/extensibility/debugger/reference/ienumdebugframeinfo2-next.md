@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFrameInfo2::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugFrameInfo2::Next
 helpviewer_keywords:
@@ -12,47 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b6072b4273ce2c2c94a6c265cd46af8ef5f165c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 361b936cf2072e2105edfb02f66f4e0524b2b98e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980629"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705132"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
-Retorna o próximo conjunto de elementos da enumeração.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT Next(  
-   ULONG       celt,  
-   FRAMEINFO** rgelt,  
-   ULONG*      pceltFetched  
-);  
-```  
-  
-```csharp  
-int Next(  
-   uint        celt,  
-   FRAMEINFO[] rgelt,  
-   ref uint    pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `celt`  
- [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.  
-  
- `rgelt`  
- [no, out] Matriz de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) elementos a serem preenchidos.  
-  
- `pceltFetched`  
- [out] Retorna o número de elementos realmente retornados em `rgelt`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)   
- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
+Retorna o próximo conjunto de elementos da enumeração.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT Next(
+   ULONG       celt,
+   FRAMEINFO** rgelt,
+   ULONG*      pceltFetched
+);
+```
+
+```csharp
+int Next(
+   uint        celt,
+   FRAMEINFO[] rgelt,
+   ref uint    pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `celt`
+
+ [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
+
+ `rgelt`
+
+ [no, out] Matriz de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) elementos a serem preenchidos.
+
+ `pceltFetched`
+
+ [out] Retorna o número de elementos realmente retornados em `rgelt`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)
+- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

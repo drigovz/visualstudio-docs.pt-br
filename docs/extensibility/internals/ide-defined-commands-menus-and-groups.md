@@ -12,40 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9c7f8514dffbea2246f74019a8e684f8af76e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 727c999e275830260ce83eac3d2d72024e89882b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940681"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602371"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Grupos, menus e comandos definidos pelo IDE
-Muitos menus, comandos e grupos de comando já estão definidos para uso pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Esses comandos também estão disponíveis para uso quando você estende [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="finding-environment-defined-commands"></a>Encontrando comandos definidos pelo ambiente  
- Os comandos de ambiente são definidos em um conjunto de quatro arquivos. VSCT:  
-  
-- SharedCmdDef.vsct  
-  
-- SharedCmdPlace.vsct  
-  
-- ShellCmdDef.vsct  
-  
-- ShellCmdPlace.vsct  
-  
-  Esses arquivos estão localizados no  *\<caminho de instalação do SDK do Visual Studio >* \visualstudiointegration\common\inc\\. Esses arquivos fornecem as definições e os GUIDs dos menus e grupos que você pode usar no arquivo de configuração (. VSCT) de tabela de comando de seu VSPackage como contêineres para seus próprios menus, grupos e comandos.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [GUIDs e IDs de menus do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  
- Fornece os valores GUID e ID de menus na barra de menus do Visual Studio e dos grupos que eles contêm.  
-  
- [GUIDs e IDs de barras de ferramentas do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)  
- Fornece os valores GUID e ID das barras de ferramentas no IDE do Visual Studio e dos grupos que eles contêm.  
-  
- [GUIDs e IDs de comandos do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)  
- Fornece os valores GUID e ID de comandos definidos pelo IDE do Visual Studio.  
-  
-## <a name="see-also"></a>Consulte também  
- [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Comandos definidos pelo IDE para estender sistemas de projeto](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)   
- [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+Muitos menus, comandos e grupos de comando já estão definidos para uso pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Esses comandos também estão disponíveis para uso quando você estende [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+## <a name="finding-environment-defined-commands"></a>Encontrando comandos definidos pelo ambiente
+ Os comandos de ambiente são definidos em um conjunto de quatro arquivos. VSCT:
+
+- SharedCmdDef.vsct
+
+- SharedCmdPlace.vsct
+
+- ShellCmdDef.vsct
+
+- ShellCmdPlace.vsct
+
+  Esses arquivos estão localizados no  *\<caminho de instalação do SDK do Visual Studio >* \visualstudiointegration\common\inc\\. Esses arquivos fornecem as definições e os GUIDs dos menus e grupos que você pode usar no arquivo de configuração (. VSCT) de tabela de comando de seu VSPackage como contêineres para seus próprios menus, grupos e comandos.
+
+## <a name="in-this-section"></a>Nesta seção
+- [GUIDs e IDs de menus do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+
+ Fornece os valores GUID e ID de menus na barra de menus do Visual Studio e dos grupos que eles contêm.
+
+- [GUIDs e IDs de barras de ferramentas do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
+
+ Fornece os valores GUID e ID das barras de ferramentas no IDE do Visual Studio e dos grupos que eles contêm.
+
+- [GUIDs e IDs de comandos do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
+
+ Fornece os valores GUID e ID de comandos definidos pelo IDE do Visual Studio.
+
+## <a name="see-also"></a>Consulte também
+- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Comandos definidos pelo IDE para estender sistemas de projeto](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

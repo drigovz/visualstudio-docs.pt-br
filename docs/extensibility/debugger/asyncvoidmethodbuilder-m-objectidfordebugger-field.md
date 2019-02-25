@@ -10,28 +10,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d689e2038563c0192a3f904b604a9a8d67256d1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19ad68ce060eca252befb033b3181fc9da7a28c2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038754"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706126"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Campo asyncvoidmethodbuilder. M_objectidfordebugger
-Representa o objeto de inicialização ociosa usado pelo depurador para identificar exclusivamente esse construtor.  
-  
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Assembly:** mscorlib (em mscorlib. dll)  
-  
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```csharp  
-.field private object m_objectIdForDebugger  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Elementos internos de extensões paralelas para o .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Representa o objeto de inicialização ociosa usado pelo depurador para identificar exclusivamente esse construtor.
+
+ **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Assembly:** mscorlib (em mscorlib. dll)
+
+ Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).
+
+## <a name="syntax"></a>Sintaxe
+
+```csharp
+.field private object m_objectIdForDebugger
+```
+
+## <a name="see-also"></a>Consulte também
+- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
+- [Elementos internos de extensões paralelas para o .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

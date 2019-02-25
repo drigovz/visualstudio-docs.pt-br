@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12fd392043ab40354874a0644563cd31282f967d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa291eace866dd7c65aaa8263f036dbe388a475
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004624"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711079"
 ---
 # <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
-O serviço de linguagem implementa o Gerenciador de janelas de código e é responsável por gerenciar adornos (por exemplo, a barra de menu suspenso). Para obter mais informações, consulte [Personalizando o Windows de código usando a API herdada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
-  
- A tabela a seguir mostra as interfaces no `VSCodeWindowManager` objeto.  
-  
-|Interface|Descrição|  
-|---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite que os adornos (como barras de menu suspenso) a ser adicionado ou removido de uma janela de código.|  
-  
-## <a name="see-also"></a>Consulte também  
- [Personalizando o windows de código usando a API herdada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+O serviço de linguagem implementa o Gerenciador de janelas de código e é responsável por gerenciar adornos (por exemplo, a barra de menu suspenso). Para obter mais informações, consulte [Personalizando o Windows de código usando a API herdada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
+
+ A tabela a seguir mostra as interfaces no `VSCodeWindowManager` objeto.
+
+|Interface|Descrição|
+|---------------|-----------------|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite que os adornos (como barras de menu suspenso) a ser adicionado ou removido de uma janela de código.|
+
+## <a name="see-also"></a>Consulte também
+- [Personalizando o windows de código usando a API herdada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

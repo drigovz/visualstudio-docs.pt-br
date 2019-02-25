@@ -11,54 +11,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b62df361a965028240316c14da4c8c9ee8e578c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de2ed5d9c757d9082cd06c2aae5a8e51b0865714
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997696"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699399"
 ---
 # <a name="strings-element"></a>Elemento Strings
-O elemento de cadeias de caracteres deve conter pelo menos um **ButtonText** elemento filho. Todos os outros elementos filho são opcionais. Caracteres de XML inválido, como '&' e ' <' devem ser codificados como entidades ('&amp;'e'&lt;' e assim por diante).  
-  
- Um e comercial na cadeia de texto Especifica o atalho de teclado para o comando.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```  
-<Strings>  
-  <ButtonText>... </ButtonText>  
-  <CommandName>... </CommandName>  
-</Strings>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
-  
-### <a name="attributes"></a>Atributos  
-  
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|linguagem|Opcional. Language=".".|  
-  
-### <a name="child-elements"></a>Elementos filho  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|ButtonText|Este campo e os cinco seguintes campos de texto em uma definição de comando permitem que você especifique o texto que aparece em vários menus. Por padrão, o `ButtonText` campo aparece em controladores de menu. O `ButtonText` campo também se tornará o padrão se campos de texto estiverem em branco. O `ButtonText` campo não pode ficar em branco, mesmo se os outros campos de texto forem especificados.|  
-|ToolTipText|O `ToolTipText` campo especifica o texto que aparece na dica de ferramenta para um item de menu.<br /><br /> Se o `ToolTipText` campo fica em branco, o `ButtonText` campo é usado.|  
-|MenuText|O `MenuText` campo especifica o texto que é exibido para um comando se ele estiver no menu principal, uma barra de ferramentas em um menu de atalho ou em um submenu. Se o `MenuText` campo estiver em branco, o ambiente de desenvolvimento integrado (IDE) usa o `ButtonText` campo. O `MenuText` campo também pode ser usado para a localização.<br /><br /> Para menus de atalho, o `MenuText` campo é o nome que é exibido na barra de Menus de atalho, que permite a personalização de menus de atalho no IDE. Portanto, ser específico no qual o nome seu menu de atalho; Por exemplo, use "Menu de atalho do Widget de pacote" em vez de "Atalho".<br /><br /> Se o `MenuText` campo não for especificado, o `ButtonText` campo é usado.|  
-|CommandName|O `CommandName` campo especifica o texto que aparece na categoria de teclado em de **comandos** guia o **personalizar** caixa de diálogo (disponível ao clicar em **personalizar**sobre o **ferramentas** menu).|  
-|CanonicalName|O inglês `CanonicalName` campo especifica o nome do comando no texto em inglês que pode ser inserido em de **comando** janela para executar o item de menu. O IDE elimine qualquer caractere que não é letras, dígitos, sublinhados ou pontos inseridos. Esse texto é concatenado, em seguida, o `ButtonText` campo para definir o comando. Por exemplo, **novo projeto** sobre o **arquivo** menu torna-se o comando, File.NewProject.<br /><br /> Se o inglês `CanonicalName` campo não for especificado, o IDE usa o `ButtonText` campo e faixas todas, exceto letras, dígitos, sublinhados e pontos inseridos. Por exemplo, o texto do botão "& Definir comandos..." se torna DefineCommands, onde o e comercial, o espaço e as reticências são removidos.<br /><br /> Se o `TextChanges` sinalizador for especificado e o texto do comando é alterado, o comando correspondente reconhecido pelo **comando** janela não é alterado; ele permanece a forma canônica do original `ButtonText` ou inglês `CanonicalName` campos.|  
-|LocCanonicalName|O `LocCanonicalName` campo comporta-se identicamente para o inglês `CanonicalName` campo, mas permite que o texto de comando localizada seja especificado. Ambos os campos canônicos podem ser especificados. Como o IDE apenas analisa o texto inserido na **comando** janela e associa-o com um comando, o inglês e o texto de inglês pode ser associado com o mesmo comando.|  
-  
-### <a name="parent-elements"></a>Elementos pai  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Elemento Button](../extensibility/button-element.md)|Define um elemento que o usuário pode interagir com o.|  
-|[Elemento Menu](../extensibility/menu-element.md)|Define um item de menu único.|  
-|[Elemento Combo](../extensibility/combo-element.md)|Define os comandos que aparecem em uma caixa de combinação.|  
-  
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+O elemento de cadeias de caracteres deve conter pelo menos um **ButtonText** elemento filho. Todos os outros elementos filho são opcionais. Caracteres de XML inválido, como '&' e ' <' devem ser codificados como entidades ('&amp;'e'&lt;' e assim por diante).
+
+ Um e comercial na cadeia de texto Especifica o atalho de teclado para o comando.
+
+## <a name="syntax"></a>Sintaxe
+
+```
+<Strings>
+  <ButtonText>... </ButtonText>
+  <CommandName>... </CommandName>
+</Strings>
+```
+
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
+
+### <a name="attributes"></a>Atributos
+
+|Atributo|Descrição|
+|---------------|-----------------|
+|linguagem|Opcional. Language=".".|
+
+### <a name="child-elements"></a>Elementos filho
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|ButtonText|Este campo e os cinco seguintes campos de texto em uma definição de comando permitem que você especifique o texto que aparece em vários menus. Por padrão, o `ButtonText` campo aparece em controladores de menu. O `ButtonText` campo também se tornará o padrão se campos de texto estiverem em branco. O `ButtonText` campo não pode ficar em branco, mesmo se os outros campos de texto forem especificados.|
+|ToolTipText|O `ToolTipText` campo especifica o texto que aparece na dica de ferramenta para um item de menu.<br /><br /> Se o `ToolTipText` campo fica em branco, o `ButtonText` campo é usado.|
+|MenuText|O `MenuText` campo especifica o texto que é exibido para um comando se ele estiver no menu principal, uma barra de ferramentas em um menu de atalho ou em um submenu. Se o `MenuText` campo estiver em branco, o ambiente de desenvolvimento integrado (IDE) usa o `ButtonText` campo. O `MenuText` campo também pode ser usado para a localização.<br /><br /> Para menus de atalho, o `MenuText` campo é o nome que é exibido na barra de Menus de atalho, que permite a personalização de menus de atalho no IDE. Portanto, ser específico no qual o nome seu menu de atalho; Por exemplo, use "Menu de atalho do Widget de pacote" em vez de "Atalho".<br /><br /> Se o `MenuText` campo não for especificado, o `ButtonText` campo é usado.|
+|CommandName|O `CommandName` campo especifica o texto que aparece na categoria de teclado em de **comandos** guia o **personalizar** caixa de diálogo (disponível ao clicar em **personalizar**sobre o **ferramentas** menu).|
+|CanonicalName|O inglês `CanonicalName` campo especifica o nome do comando no texto em inglês que pode ser inserido em de **comando** janela para executar o item de menu. O IDE elimine qualquer caractere que não é letras, dígitos, sublinhados ou pontos inseridos. Esse texto é concatenado, em seguida, o `ButtonText` campo para definir o comando. Por exemplo, **novo projeto** sobre o **arquivo** menu torna-se o comando, File.NewProject.<br /><br /> Se o inglês `CanonicalName` campo não for especificado, o IDE usa o `ButtonText` campo e faixas todas, exceto letras, dígitos, sublinhados e pontos inseridos. Por exemplo, o texto do botão "& Definir comandos..." se torna DefineCommands, onde o e comercial, o espaço e as reticências são removidos.<br /><br /> Se o `TextChanges` sinalizador for especificado e o texto do comando é alterado, o comando correspondente reconhecido pelo **comando** janela não é alterado; ele permanece a forma canônica do original `ButtonText` ou inglês `CanonicalName` campos.|
+|LocCanonicalName|O `LocCanonicalName` campo comporta-se identicamente para o inglês `CanonicalName` campo, mas permite que o texto de comando localizada seja especificado. Ambos os campos canônicos podem ser especificados. Como o IDE apenas analisa o texto inserido na **comando** janela e associa-o com um comando, o inglês e o texto de inglês pode ser associado com o mesmo comando.|
+
+### <a name="parent-elements"></a>Elementos pai
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[Elemento Button](../extensibility/button-element.md)|Define um elemento que o usuário pode interagir com o.|
+|[Elemento Menu](../extensibility/menu-element.md)|Define um item de menu único.|
+|[Elemento Combo](../extensibility/combo-element.md)|Define os comandos que aparecem em uma caixa de combinação.|
+
+## <a name="see-also"></a>Consulte também
+- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

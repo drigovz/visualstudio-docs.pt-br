@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac58ec0d7175d2d7989ce9c4d6086b5a741e77c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 076b7aa56ec00fda559bbdfdc8b2b9df2be38816
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927236"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603125"
 ---
 # <a name="web-site-support-attributes"></a>Atributos de suporte a site
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projeto de site pode ser estendido para fornecer suporte para Web linguagens de programação. O idioma deve ser registrado com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que os modelos de projeto podem aparecer em de **New Web Site** caixa de diálogo quando o idioma é selecionado.
@@ -55,4 +55,4 @@ public class PythonPackage : Package, IOleComponent
  A implementação de IVsIntellisenseProject trata referências e chama o compilador de linguagem quando uma página da Web com o código é solicitada, mas não é armazenado em cache.
 
 ## <a name="see-also"></a>Consulte também
- [Suporte ao site](../../extensibility/internals/web-site-support.md)
+- [Suporte ao site](../../extensibility/internals/web-site-support.md)

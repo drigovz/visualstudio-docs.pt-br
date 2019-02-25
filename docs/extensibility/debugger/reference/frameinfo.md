@@ -1,7 +1,7 @@
 ---
 title: FRAMEINFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FRAMEINFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 723bab4d42f01fe7b2c6362155a959b689428dc5
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 84e7329acb3cdbff5c2f84fbd035867791012b2e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413183"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680497"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Descreve um quadro de pilha.
@@ -61,44 +61,31 @@ public struct FRAMEINFO {
 ```
 
 ## <a name="members"></a>Membros
-m_dwValidFields  
-Uma combinação de sinalizadores do [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeração que especifica quais campos são preenchidos.
+m_dwValidFields uma combinação de sinalizadores dos [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeração que especifica quais campos são preenchidos.
 
-m_bstrFuncName  
-O nome da função associado com o quadro de pilhas.
+m_bstrFuncName o nome da função associado com o quadro de pilhas.
 
-m_bstrReturnType  
-O tipo de retorno associado com o quadro de pilha.
+m_bstrReturnType o tipo de retorno associado com o quadro de pilha.
 
-m_bstrArgs  
-Os argumentos para a função associada com o quadro de pilhas.
+m_bstrArgs os argumentos para a função associada com o quadro de pilhas.
 
-m_bstrLanguage  
-O idioma no qual a função é implementada.
+m_bstrLanguage o idioma no qual a função é implementada.
 
-m_bstrModule  
-O nome do módulo associado com o quadro de pilhas.
+m_bstrModule o nome do módulo associado com o quadro de pilhas.
 
-m_addrMin  
-O endereço de pilha física mínimo.
+m_addrMin o endereço de pilha física mínimo.
 
-m_addrMAX  
-O endereço físico máximo da pilha.
+m_addrMAX o endereço físico máximo da pilha.
 
-m_pFrame  
-O [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa esse quadro de pilha.
+m_pFrame a [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa esse quadro de pilha.
 
-m_pFrame  
-O [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa o módulo que contém esse quadro de pilhas.
+m_pFrame a [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa o módulo que contém esse quadro de pilhas.
 
-m_fHasDebugInfo  
-Diferente de zero (`TRUE`) se houver informações de depuração em determinado quadro.
+m_fHasDebugInfo diferente de zero (`TRUE`) se houver informações de depuração em determinado quadro.
 
-m_fHasDebugInfo  
-Diferente de zero (`TRUE`) se o registro de ativação está associado com o código que não é mais válido.
+m_fHasDebugInfo diferente de zero (`TRUE`) se o registro de ativação está associado com o código que não é mais válido.
 
-m_fHasDebugInfo  
-Diferente de zero (`TRUE`) se o quadro de pilha é anotado pelo Gerenciador de depuração de sessão (SDM).
+m_fHasDebugInfo diferente de zero (`TRUE`) se o quadro de pilha é anotado pelo Gerenciador de depuração de sessão (SDM).
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é passada para o [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) método a ser preenchido. Essa estrutura também está contida em uma lista que está contida na [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface que, por sua vez, é retornado de uma chamada para o [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) método.
@@ -111,10 +98,10 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Consulte também
-[Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)  
-[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)  
-[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)  
-[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)  
-[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
+- [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)
+- [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)
+- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)

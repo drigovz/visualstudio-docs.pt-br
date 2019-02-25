@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::ConstraintCount | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ConstraintCount
 - IDebugGenericParamField::ConstraintCount
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 019b223c22e8101c902023f2d9996d7756005c49
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: f21e872fc04bc3d18ca3c332622844bfc57ece67
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450354"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688908"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 Retorna o número de restrições que estão associados esse parâmetro genérico.
@@ -36,8 +36,9 @@ int ConstraintCount(
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`pcConst`  
-[no, out] Número de restrições que estão associados esse campo.
+`pcConst`
+
+ [no, out] Número de restrições que estão associados esse campo.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
@@ -79,4 +80,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

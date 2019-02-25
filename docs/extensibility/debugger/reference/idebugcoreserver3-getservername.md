@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer3::GetServerName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::GetServerName
 helpviewer_keywords:
@@ -12,43 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8afdea003b03f3cc8e19aa4373034bc9322c167
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 26136955a8956006a5c6795d5fc28ea9079f3efb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917388"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693419"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
-Recupera o nome do servidor.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT GetServerName(  
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetServerName(  
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pbstrName`  
- [out] Retorna o nome do servidor.  
-  
+Recupera o nome do servidor.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetServerName(
+   BSTR* pbstrName
+);
+```
+
+```csharp
+int GetServerName(
+   out string pbstrName
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pbstrName`
+
+ [out] Retorna o nome do servidor.
+
 > [!NOTE]
->  O chamador é responsável por liberar a cadeia de caracteres.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Para um nome amigável do servidor, chame o [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) método.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
- [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)
+>  O chamador é responsável por liberar a cadeia de caracteres.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.
+
+## <a name="remarks"></a>Comentários
+ Para um nome amigável do servidor, chame o [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) método.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+- [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)

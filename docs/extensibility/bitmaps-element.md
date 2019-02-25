@@ -11,57 +11,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c06100e666d73341753b6268180224d277e3608
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d247a0df29cb14eec6dffa5e362f23693b59cc99
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916480"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699633"
 ---
 # <a name="bitmaps-element"></a>Elemento bitmaps
-Grupos [elemento Bitmap](../extensibility/bitmap-element.md) elementos.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```  
-<Bitmaps>  
-  <Bitmap>... </Bitmap>  
-  <Bitmap>... </Bitmap>  
-</Bitmaps>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
-  
-### <a name="attributes"></a>Atributos  
-  
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementos filho  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Elemento bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos do Bitmap.|  
-|[Elemento bitmap](../extensibility/bitmap-element.md)|Define um bitmap.|  
-  
-### <a name="parent-elements"></a>Elementos pai  
-  
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas do VSPackage.|  
-  
-## <a name="example"></a>Exemplo  
-  
-```  
-<Bitmaps>  
-  <Bitmap guid="guidWidgetIcons" href="WidgetToolbarIcons_32.bmp" />  
-  <Bitmap guid="guidWidgetIcons2" resID="IDBMP_WIDGETICONS"  
-    usedList="1, 2, 3, 4"/>  
-</Bitmaps>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
+Grupos [elemento Bitmap](../extensibility/bitmap-element.md) elementos.
+
+## <a name="syntax"></a>Sintaxe
+
+```
+<Bitmaps>
+  <Bitmap>... </Bitmap>
+  <Bitmap>... </Bitmap>
+</Bitmaps>
+```
+
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
+
+### <a name="attributes"></a>Atributos
+
+|Atributo|Descrição|
+|---------------|-----------------|
+|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementos filho
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[Elemento bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos do Bitmap.|
+|[Elemento bitmap](../extensibility/bitmap-element.md)|Define um bitmap.|
+
+### <a name="parent-elements"></a>Elementos pai
+
+|Elemento|Descrição|
+|-------------|-----------------|
+|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas do VSPackage.|
+
+## <a name="example"></a>Exemplo
+
+```
+<Bitmaps>
+  <Bitmap guid="guidWidgetIcons" href="WidgetToolbarIcons_32.bmp" />
+  <Bitmap guid="guidWidgetIcons2" resID="IDBMP_WIDGETICONS"
+    usedList="1, 2, 3, 4"/>
+</Bitmaps>
+```
+
+## <a name="see-also"></a>Consulte também
+- [Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
