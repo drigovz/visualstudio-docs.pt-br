@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690455"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796875"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interações de janela
@@ -128,10 +128,22 @@ Exemplos de janelas de ferramentas lista navegáveis são Gerenciador de soluç�
 
 **Outras janelas de ferramentas**
 
+::: moniker range="vs-2017"
+
 | Janela de ferramentas | Função |
 | --- | --- |
 | Caixa de Ferramentas | A janela da ferramenta usada para armazenar os elementos que serão removidos em superfícies de design, fornecendo uma origem de arrasto consistente para todos os designers. |
-| Start Page | Portal do usuário para o Visual Studio 2017, com acesso a feeds de notícias do desenvolvedor, Ajuda do Visual Studio e projetos recentes. Os usuários também podem criar páginas iniciais personalizadas copiando o arquivo ' StartPage do "Common7\IDE\StartPages\" diretório de arquivos de programa do Visual Studio para a pasta StartPages no Visual Studio documenta o diretório e, em seguida, qualquer edição do XAML pela mão ou abri-lo no Visual Studio ou outro editor de código. |
+| Start Page | Portal do usuário para o Visual Studio, com acesso a feeds de notícias do desenvolvedor, Ajuda do Visual Studio e projetos recentes. Os usuários também podem criar páginas iniciais personalizadas copiando o arquivo ' StartPage do "Common7\IDE\StartPages\" diretório de arquivos de programa do Visual Studio para a pasta StartPages no Visual Studio documenta o diretório e, em seguida, qualquer edição do XAML pela mão ou abri-lo no Visual Studio ou outro editor de código. |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| Janela de ferramentas | Função |
+| --- | --- |
+| Caixa de Ferramentas | A janela da ferramenta usada para armazenar os elementos que serão removidos em superfícies de design, fornecendo uma origem de arrasto consistente para todos os designers. |
+
+::: moniker-end
 
 **Janelas de ferramenta do depurador**
 

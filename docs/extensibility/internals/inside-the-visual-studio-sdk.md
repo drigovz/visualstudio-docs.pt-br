@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978263"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796667"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 Esta seção fornece informações detalhadas sobre as extensões do Visual Studio, incluindo a arquitetura do Visual Studio, componentes, serviços, esquemas, utilitários e assim por diante.
@@ -55,13 +55,13 @@ Esta seção fornece informações detalhadas sobre as extensões do Visual Stud
 
  Normalmente, as janelas de ferramentas oferecem vários controles com a qual o usuário pode interagir. Por exemplo, o **propriedades** janela permite que o usuário defina as propriedades de objetos que têm um propósito específico. O **propriedades** janela é especializada nesse sentido, mas também geral porque ele pode ser usado em muitas situações diferentes. Da mesma forma, o **saída** é especializada em janela porque ele fornece uma saída com base em texto, mas geral porque muitos subsistemas no Visual Studio podem usá-lo para fornecer saída para o usuário do Visual Studio.
 
- Considere a imagem a seguir do Visual Studio, que contém várias janelas de ferramentas.
+ Considere a imagem a seguir do Visual Studio, que contém várias janelas de ferramenta:
 
  ![Captura de tela](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Algumas das janelas de ferramentas estão encaixadas juntas em um único painel que exibe a janela de ferramenta do Gerenciador de soluções e oculta as outras janelas de ferramentas, mas torna-os disponíveis clicando nas guias. A figura mostra duas outras janelas de ferramentas, o **lista de erros** e **saída** janela, encaixada juntas em um único painel.
 
- Também mostrado é o painel do documento principal, que mostra as várias janelas do editor. Embora as janelas de ferramentas normalmente têm uma única instância (por exemplo, você pode abrir somente um **Gerenciador de soluções**), janelas do editor podem ter várias instâncias, cada um deles é usada para editar um documento separado, mas todos os quais ferramentas estão encaixados em o mesmo painel. A figura mostra um painel de documento que tem duas janelas do editor, uma janela de designer de formulário e uma janela do navegador que mostra a página de início. Todas as janelas no painel do documento estão disponíveis clicando nas guias, mas a janela do editor que contém o arquivo EditorPane.cs está visível e Active Directory.
+ Também mostrado é o painel do documento principal, que mostra as várias janelas do editor. Embora as janelas de ferramentas normalmente têm uma única instância (por exemplo, você pode abrir somente um **Gerenciador de soluções**), janelas do editor podem ter várias instâncias, cada um deles é usada para editar um documento separado, mas todos os quais ferramentas estão encaixados em o mesmo painel. A figura mostra um painel de documento que contém duas janelas do editor, uma janela de designer de formulário. Todas as janelas no painel do documento estão disponíveis clicando nas guias, mas a janela do editor que contém o arquivo EditorPane.cs está visível e Active Directory.
 
  Quando você estende o Visual Studio, você pode criar ferramenta janelas que permitem que os usuários do Visual Studio interagir com sua extensão. Você também pode criar seus próprios editores que permitem que os usuários do Visual Studio editar documentos. Como seus editores e janelas de ferramenta serão integrados ao Visual Studio, você não precisa programá-los para encaixar ou exibidos corretamente em uma guia. Quando eles são registrados corretamente no Visual Studio, eles terão automaticamente os recursos típicos de janelas de ferramentas e janelas de documentos no Visual Studio. Para obter mais informações, consulte [estendendo e personalizando ferramenta Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 

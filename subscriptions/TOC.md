@@ -18,14 +18,14 @@
 ### [Benefícios do assinante](subscriber-benefits.md)
 ## Usar os benefícios do assinante
 ### Ferramentas
-#### [Visual Studio IDE ](vs-ide-benefit.md)
+#### [Visual Studio IDE](vs-ide-benefit.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Crédito Azure](vs-azure.md)
 #### [Assinatura de Desenvolvedor do Office 365](vs-office-dev.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
-#### [Parasoft ](vs-parasoft.md)
+#### [Parasoft](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Enterprise Mobility & Security](vs-ems.md)
 #### [Conta de Desenvolvedor do Windows](vs-windows-dev.md)
