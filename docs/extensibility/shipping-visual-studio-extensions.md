@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a002ca0696f18aa8c524b27be27047ed29b9b25
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720491"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796589"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Enviando extensões do Visual Studio
 Depois de concluir o desenvolvimento de sua extensão, você pode instalá-lo em outros computadores, compartilhá-lo com seus amigos e colegas de trabalho ou publicá-lo no Visual Studio Marketplace. Nesta seção, vamos explicar todas as coisas que você precisa fazer para publicar e manter sua extensão: trabalhar com arquivos. VSIX, publicação, localizando e atualizando.
@@ -25,7 +25,7 @@ Depois de concluir o desenvolvimento de sua extensão, você pode instalá-lo em
 ## <a name="working-with-vsix-extensions"></a>Trabalhando com extensões VSIX
  Você pode criar extensões de VSIX criando um projeto de VSIX em branco e, em seguida, adicionar modelos de item diferentes a ele. Para obter mais informações, consulte [modelo de projeto do VSIX](../extensibility/vsix-project-template.md).
 
- Você pode usar o formato VSIX para modelos de projeto de pacote, componentes do modelos, VSPackages, Managed Extensibility Framework (MEF), de item **caixa de ferramentas** controles, assemblies e tipos personalizados (Isso inclui páginas de inicialização personalizada). O formato VSIX usa implantação baseada em arquivo. Para obter mais informações sobre pacotes VSIX, consulte [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+ Você pode usar o formato VSIX para modelos de projeto de pacote, componentes do modelos, VSPackages, Managed Extensibility Framework (MEF), de item **caixa de ferramentas** controles, assemblies e tipos personalizados (Isso inclui páginas personalizadas iniciar Visual Studio de 2017). O formato VSIX usa implantação baseada em arquivo. Para obter mais informações sobre pacotes VSIX, consulte [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
  O formato VSIX não suporta a instalação de trechos de código. Ele também não suporta outros cenários, como o Cache de Assembly Global (GAC) ou no registro do sistema de escrita. Se você precisar gravar em GAC ou no registro na instalação, você deve usar o instalador do Windows. Para obter mais informações, consulte [Preparando implantação das extensões para o Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
