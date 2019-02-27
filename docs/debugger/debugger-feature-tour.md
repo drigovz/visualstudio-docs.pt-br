@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042056"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696734"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -27,7 +27,7 @@ Os recursos descritos aqui são aplicáveis a C#, C++, Visual Basic, JavaScript 
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Definir um ponto de interrupção e iniciar o depurador
 
-Para depurar, você precisa iniciar o aplicativo com o depurador anexado ao processo do aplicativo. **F5** (**Depurar > Iniciar Depuração**) é a maneira mais comum de fazer isso. No entanto, talvez você ainda não definiu pontos de interrupção para examinar o código do seu aplicativo, portanto faremos isso primeiro e, em seguida, iniciaremos a depuração. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não. 
+Para depurar, você precisa iniciar o aplicativo com o depurador anexado ao processo do aplicativo. **F5** (**Depurar > Iniciar Depuração**) é a maneira mais comum de fazer isso. No entanto, talvez você ainda não definiu pontos de interrupção para examinar o código do seu aplicativo, portanto faremos isso primeiro e, em seguida, iniciaremos a depuração. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não.
 
 Se você tem um arquivo aberto no editor de código, é possível definir um ponto de interrupção clicando na margem à esquerda de uma linha de código.
 

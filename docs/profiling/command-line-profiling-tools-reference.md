@@ -8,31 +8,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 018ef620438a678ac90c92d319cc8bb23757b742
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3e5bdd0897d5b53a6949731a233909664d3fce7d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952633"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615358"
 ---
 # <a name="command-line-profiling-tools-reference"></a>Referência de ferramentas de criação de perfil de linha de comando
-Ferramentas de desempenho de linha de comando permitem que os programadores criem o perfil de seus aplicativos no prompt de comando. As ferramentas de criação de perfil de linha de comando a seguir permitem que você crie o perfil do código no prompt de comando.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [VSInstr](../profiling/vsinstr.md)  
- Lista as opções de instrumentação de VSInstr.exe.  
-  
- [Avisos de VSInstr](../profiling/vsinstr-warnings.md)  
- Lista os avisos emitidos pela ferramenta VSInstr.  
-  
- [VSPerfCLREnv](../profiling/vsperfclrenv.md)  
- Lista as opções de VSPerfCLREnv.exe para configurar o ambiente de criação de perfil do código gerenciado.  
-  
- [VSPerfCmd](../profiling/vsperfcmd.md)  
- Lista as opções de VSPerfCmd.exe para coletar dados de desempenho.  
-  
- [VSPerfMon](../profiling/vsperfmon.md)  
- Lista as opções de VSPerfMon.exe para coleta de dados.  
-  
- [VSPerfReport](../profiling/vsperfreport.md)  
+Ferramentas de desempenho de linha de comando permitem que os programadores criem o perfil de seus aplicativos no prompt de comando. As ferramentas de criação de perfil de linha de comando a seguir permitem que você crie o perfil do código no prompt de comando.
+
+## <a name="in-this-section"></a>Nesta seção
+- [VSInstr](../profiling/vsinstr.md)
+
+ Lista as opções de instrumentação de VSInstr.exe.
+
+- [Avisos de VSInstr](../profiling/vsinstr-warnings.md)
+
+ Lista os avisos emitidos pela ferramenta VSInstr.
+
+- [VSPerfCLREnv](../profiling/vsperfclrenv.md)
+
+ Lista as opções de VSPerfCLREnv.exe para configurar o ambiente de criação de perfil do código gerenciado.
+
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+
+ Lista as opções de VSPerfCmd.exe para coletar dados de desempenho.
+
+- [VSPerfMon](../profiling/vsperfmon.md)
+
+ Lista as opções de VSPerfMon.exe para coleta de dados.
+
+- [VSPerfReport](../profiling/vsperfreport.md)
+
  Lista opções de linha de comando de VSPerfReport.exe para criação de relatórios.

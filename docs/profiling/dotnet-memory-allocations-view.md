@@ -15,44 +15,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ea89dcf3244da64fdadf4259e2afb3c4718630
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c70845547da5f16aa0744f522448880605ec2ff9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927470"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626798"
 ---
 # <a name="net-memory-allocations-view"></a>Exibição de alocações da memória do .NET
-A exibição de Alocações lista os tipos criados durante a execução de criação de perfil. Cada tipo é o nó raiz de uma árvore de chamadas que exibe os caminhos de execução de função que resultaram em alocações do tipo.  
-  
- Os dados em uma linha de tipo exibem o número total de objetos do tipo criados na execução de criação de perfil e o número total de bytes alocados para os objetos desse tipo. Os valores inclusivos e exclusivos para um tipo são sempre os mesmos.  
-  
-- Os valores inclusivos são para objetos criados nas instâncias da função e suas funções filho chamadas pela função pai na árvore de chamadas.  
-  
-- Os valores exclusivos são para objetos criados diretamente pela função quando foram chamados pela função pai. Objetos criados nas funções filho não são incluídos.  
-  
-  Os dados de uma função exibem o número de objetos criados e o número de bytes alocados para objetos do tipo pai.  
-  
-## <a name="highlight-the-execution-hot-path"></a>Realçar o afunilamento de execução  
- É possível encontrar o caminho de execução da árvore de chamadas que criou a maioria dos objetos do tipo pai.  
-  
--   Para exibir o caminho mais ativo, clique com o botão direito do mouse no tipo ou na função e, em seguida, clique em **Expandir Afunilamento**.  
-  
-|Column|Descrição|  
-|------------|-----------------|  
-|**Nome**|O nome do tipo alocado ou da função.|  
-|**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
-|**Nome do Módulo**|O nome do módulo que contém o tipo ou a função.|  
-|**Caminho do Módulo**|O caminho do módulo que contém o tipo ou a função.|  
-|**Arquivo de Origem**|O arquivo de origem que contém a definição do tipo ou função.|  
-|**Número de linha da função**|O número de linha do início dessa definição de tipo ou função no arquivo de origem.|  
-|**Nível**|Indica se os dados são de um tipo ou uma função.|  
-|**Alocações Inclusivas**|– Para uma função, o número total de objetos do tipo pai criados pela função. Esse número inclui objetos criados em funções filho.<br />– Para um tipo, o número total de instâncias desse tipo que foram criadas.|  
-|**% de Alocações Inclusivas**|– Para uma função, o percentual de todos os objetos criados na execução de criação de perfil que eram alocações inclusivas do tipo pai pela função.<br />– Para um tipo, o percentual do número total de objetos do criados na execução de criação de perfil que eram instâncias do tipo.|  
-|**Alocações Exclusivas**|– Para uma função, o número de objetos criados quando a função estava executando diretamente na parte superior da pilha de chamadas. Esse número não inclui objetos criados em funções filho.<br />– Para um tipo, o número total de instâncias desse tipo que foram criadas.|  
-|**% de Alocações Exclusivas**|– Para uma função, o percentual de todos os objetos criados na execução de criação de perfil que eram alocações exclusivas do tipo pai pela função.<br />– Para um tipo, o percentual do número total de objetos do criados na execução de criação de perfil que eram instâncias do tipo.|  
-|**Bytes Inclusivos**|– Para uma função, o número de bytes de memória alocados pela função para objetos do tipo pai. Esse número inclui a memória alocada por suas funções filho.<br />– Para um tipo, o número total de bytes alocados na execução de criação de perfil para as instâncias do tipo.|  
-|**% de Bytes Inclusivos**|– Para uma função, o percentual de toda a memória alocada na execução de criação de perfil que eram alocações inclusivas do tipo pai pela função.<br />– Para um tipo, o percentual de toda a memória alocada na execução de criação de perfil que foi alocado em instâncias do tipo.|  
-|**Bytes Exclusivos**|– Para uma função, o número de bytes de memória alocados pela função para objetos do tipo pai. Esse número não inclui a memória alocada por suas funções filho.<br />– Para um tipo, o número total de bytes alocados na execução de criação de perfil para as instâncias do tipo.|  
+A exibição de Alocações lista os tipos criados durante a execução de criação de perfil. Cada tipo é o nó raiz de uma árvore de chamadas que exibe os caminhos de execução de função que resultaram em alocações do tipo.
+
+ Os dados em uma linha de tipo exibem o número total de objetos do tipo criados na execução de criação de perfil e o número total de bytes alocados para os objetos desse tipo. Os valores inclusivos e exclusivos para um tipo são sempre os mesmos.
+
+- Os valores inclusivos são para objetos criados nas instâncias da função e suas funções filho chamadas pela função pai na árvore de chamadas.
+
+- Os valores exclusivos são para objetos criados diretamente pela função quando foram chamados pela função pai. Objetos criados nas funções filho não são incluídos.
+
+  Os dados de uma função exibem o número de objetos criados e o número de bytes alocados para objetos do tipo pai.
+
+## <a name="highlight-the-execution-hot-path"></a>Realçar o afunilamento de execução
+ É possível encontrar o caminho de execução da árvore de chamadas que criou a maioria dos objetos do tipo pai.
+
+-   Para exibir o caminho mais ativo, clique com o botão direito do mouse no tipo ou na função e, em seguida, clique em **Expandir Afunilamento**.
+
+|Column|Descrição|
+|------------|-----------------|
+|**Nome**|O nome do tipo alocado ou da função.|
+|**ID do Processo**|A ID de processo (PID) da criação de perfil.|
+|**Nome do Processo**|O nome do processo.|
+|**Nome do Módulo**|O nome do módulo que contém o tipo ou a função.|
+|**Caminho do Módulo**|O caminho do módulo que contém o tipo ou a função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição do tipo ou função.|
+|**Número de linha da função**|O número de linha do início dessa definição de tipo ou função no arquivo de origem.|
+|**Nível**|Indica se os dados são de um tipo ou uma função.|
+|**Alocações Inclusivas**|– Para uma função, o número total de objetos do tipo pai criados pela função. Esse número inclui objetos criados em funções filho.<br />– Para um tipo, o número total de instâncias desse tipo que foram criadas.|
+|**% de Alocações Inclusivas**|– Para uma função, o percentual de todos os objetos criados na execução de criação de perfil que eram alocações inclusivas do tipo pai pela função.<br />– Para um tipo, o percentual do número total de objetos do criados na execução de criação de perfil que eram instâncias do tipo.|
+|**Alocações Exclusivas**|– Para uma função, o número de objetos criados quando a função estava executando diretamente na parte superior da pilha de chamadas. Esse número não inclui objetos criados em funções filho.<br />– Para um tipo, o número total de instâncias desse tipo que foram criadas.|
+|**% de Alocações Exclusivas**|– Para uma função, o percentual de todos os objetos criados na execução de criação de perfil que eram alocações exclusivas do tipo pai pela função.<br />– Para um tipo, o percentual do número total de objetos do criados na execução de criação de perfil que eram instâncias do tipo.|
+|**Bytes Inclusivos**|– Para uma função, o número de bytes de memória alocados pela função para objetos do tipo pai. Esse número inclui a memória alocada por suas funções filho.<br />– Para um tipo, o número total de bytes alocados na execução de criação de perfil para as instâncias do tipo.|
+|**% de Bytes Inclusivos**|– Para uma função, o percentual de toda a memória alocada na execução de criação de perfil que eram alocações inclusivas do tipo pai pela função.<br />– Para um tipo, o percentual de toda a memória alocada na execução de criação de perfil que foi alocado em instâncias do tipo.|
+|**Bytes Exclusivos**|– Para uma função, o número de bytes de memória alocados pela função para objetos do tipo pai. Esse número não inclui a memória alocada por suas funções filho.<br />– Para um tipo, o número total de bytes alocados na execução de criação de perfil para as instâncias do tipo.|
 |**% de Bytes Exclusivos**|– Para uma função, o percentual de toda a memória alocada na execução de criação de perfil que eram alocações exclusivas do tipo pai pela função.<br />– Para um tipo, o percentual de toda a memória alocada na execução de criação de perfil que foi alocado em instâncias do tipo.|

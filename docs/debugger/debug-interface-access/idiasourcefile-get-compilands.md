@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e977916f55220ba0dad878e8cbcbdaaea973ea13
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15ebc8296bdf78515b31d38a7543a4f41db84664
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035725"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613018"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
-Recupera um enumerador de compilandos que têm números de linha, fazendo referência a esse arquivo.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_compilands (   
-   IDiaEnumSymbols** ppRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppRetVal`  
- [out] Retorna um [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) objeto que contém uma lista de compilandos todos os que têm números de linha, fazendo referência a esse arquivo.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Recupera um enumerador de compilandos que têm números de linha, fazendo referência a esse arquivo.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_compilands ( 
+   IDiaEnumSymbols** ppRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppRetVal`
+
+[out] Retorna um [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) objeto que contém uma lista de compilandos todos os que têm números de linha, fazendo referência a esse arquivo.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

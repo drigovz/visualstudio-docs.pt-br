@@ -20,26 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d6bc004ac9d450e0f5ea358d16bb25ab6cabecf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41b93ae19afd54b6e22458d1ba12029d5bb93cf3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018742"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682785"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Caixa de diálogo Executável para Sessão de Depuração
 
-Essa caixa de diálogo aparece quando você tenta depurar uma DLL para a qual nenhum executável está especificado. O Visual Studio não pode iniciar uma DLL diretamente. Em vez disso, o Visual Studio inicia o executável especificado. Você pode depurar a DLL quando ela é chamada pelo executável.  
-  
- **Nome de arquivo executável**  
- Digite o nome do caminho para um executável que chama a DLL que você está depurando.  
-  
- **URL em que o projeto pode ser acessado (somente servidor ATL)**  
- Se você estiver depurando um DLL do servidor ATL, digite a URL onde o projeto pode ser localizado.  
-  
- Uma vez inseridas, essas configurações são armazenadas no projeto de páginas de propriedades, para que você não precise inseri-las novamente para sessões de depuração subsequentes. Se você precisar alterar as configurações, poderá abrir as Páginas de Propriedades e alterar os valores. Para obter mais informações sobre como especificar um executável para a sessão de depuração, confira [Depurando DLLs](../debugger/how-to-debug-from-a-dll-project.md).  
-  
+Essa caixa de diálogo aparece quando você tenta depurar uma DLL para a qual nenhum executável está especificado. O Visual Studio não pode iniciar uma DLL diretamente. Em vez disso, o Visual Studio inicia o executável especificado. Você pode depurar a DLL quando ela é chamada pelo executável.
+
+ **Nome do arquivo executável** insira o nome do caminho para um executável que chama a DLL que você está depurando.
+
+ **URL em que o projeto pode ser acessado (somente servidor ATL)** se você estiver depurando uma DLL do servidor ATL, insira a URL onde o projeto pode ser encontrado.
+
+ Uma vez inseridas, essas configurações são armazenadas no projeto de páginas de propriedades, para que você não precise inseri-las novamente para sessões de depuração subsequentes. Se você precisar alterar as configurações, poderá abrir as Páginas de Propriedades e alterar os valores. Para obter mais informações sobre como especificar um executável para a sessão de depuração, confira [Depurando DLLs](../debugger/how-to-debug-from-a-dll-project.md).
+
 ## <a name="see-also"></a>Consulte também
 
- [Depurando no Visual Studio](../debugger/index.md)  
- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
+- [Depurando no Visual Studio](../debugger/index.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)

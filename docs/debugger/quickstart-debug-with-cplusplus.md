@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918558"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716513"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Início Rápido: Depuração com C++ usando o depurador do Visual Studio
 
 O depurador do Visual Studio oferece muitos recursos avançados para ajudar a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto 
+## <a name="create-a-new-project"></a>Criar um novo projeto
 
 1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
@@ -47,7 +47,7 @@ O depurador do Visual Studio oferece muitos recursos avançados para ajudar a de
     por esse código (não remova `#include "stdafx.h"`):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ Um *ponto de interrupção* é um marcador que indica quando o Visual Studio dev
     > [!TIP]
     > Se você tiver um ponto de interrupção em um loop ou recursão ou se tiver muitos pontos de interrupção que percorre com frequência, use um [ponto de interrupção condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para garantir que seu código seja suspenso APENAS quando condições específicas forem atendidas. Um ponto de interrupção condicional economiza tempo e pode também tornar mais fácil depurar problemas difíceis de reproduzir.
 
-    Ao tentar depurar falhas relacionadas a memória em C++, também é possível usar pontos de interrupção para inspecionar valores de endereço (procure NULL) e contagens de referência. 
+    Ao tentar depurar falhas relacionadas a memória em C++, também é possível usar pontos de interrupção para inspecionar valores de endereço (procure NULL) e contagens de referência.
 
 ## <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -110,7 +110,7 @@ Comandos de teclado comuns usados para percorrer o código incluem **F10** e **F
 
     ![Exibir uma datatip](../debugger/media/dbg-qs-data-tip.png "Exibir uma datatip")
 
-    A datatip mostra o valor atual da variável `c1` e permite que você inspecione suas propriedades. Ao depurar, se você vir um valor que não espera, provavelmente haverá um bug nas linhas de código anteriores ou de chamada. 
+    A datatip mostra o valor atual da variável `c1` e permite que você inspecione suas propriedades. Ao depurar, se você vir um valor que não espera, provavelmente haverá um bug nas linhas de código anteriores ou de chamada.
 
 2. Expanda a datatip para examinar os valores de propriedade atuais do objeto `c1`.
 

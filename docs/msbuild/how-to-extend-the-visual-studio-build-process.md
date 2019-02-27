@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908485"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603255"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Como: Estender o processo de build do Visual Studio
 O processo de build do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é definido por uma série de arquivos *.targets* do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que são importados para o arquivo de projeto. Um desses arquivos importados, *Microsoft.Common.targets*, pode ser estendido para permitir a execução de tarefas personalizadas em vários pontos no processo de build. Este artigo explica os dois métodos que você pode usar para estender o processo de build do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
@@ -35,8 +35,8 @@ O arquivo *Microsoft.Common.targets* contém um conjunto de destinos vazios pred
 
 1. Identifique um destino predefinido em *Microsoft.Common.targets* que você deseja substituir. Consulte a tabela abaixo para obter uma lista completa de destinos que você pode substituir com segurança.
 
-2. Defina o destino ou destinos no final do arquivo de projeto, imediatamente antes da marca `</Project>`. Por exemplo:  
-  
+2. Defina o destino ou destinos no final do arquivo de projeto, imediatamente antes da marca `</Project>`. Por exemplo:
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ O arquivo *Microsoft.Common.targets* contém um conjunto de destinos vazios pred
         </Target>
     </Project>
     ```
-  
+
 3. Compile o arquivo de projeto.
 
 A tabela a seguir mostra todos os destinos em *Microsoft.Common.targets* que você pode substituir com segurança.
@@ -124,6 +124,6 @@ Projetos que importam seus arquivos de projeto podem substituir essas propriedad
 |`CompileDependsOn`|A propriedade a ser substituída se você quiser inserir processos personalizados antes ou após a etapa de compilação.|
 
 ## <a name="see-also"></a>Consulte também
-[Integração com o Visual Studio](../msbuild/visual-studio-integration-msbuild.md)  
-[Conceitos do MSBuild](../msbuild/msbuild-concepts.md)  
-[Arquivos .targets](../msbuild/msbuild-dot-targets-files.md)
+- [Integração com o Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
+- [Arquivos .targets](../msbuild/msbuild-dot-targets-files.md)

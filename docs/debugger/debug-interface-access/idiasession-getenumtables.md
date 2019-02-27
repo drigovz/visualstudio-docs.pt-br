@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c331171a62d2319666229f108428b9d62b7464e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 759972fa02c7645ae457e0b715d835b2d717e26f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227612"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608585"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Recupera um enumerador para todas as tabelas contidas no repositório de símbolos.
@@ -31,7 +31,8 @@ HRESULT getEnumTables (
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`ppEnumTables`  
+`ppEnumTables`
+
 [out] Retorna um [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objeto. Use esta interface para enumerar as tabelas no repositório de símbolos.
 
 ## <a name="return-value"></a>Valor de retorno
@@ -67,5 +68,5 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

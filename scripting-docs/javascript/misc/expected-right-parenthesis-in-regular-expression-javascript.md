@@ -1,14 +1,9 @@
 ---
 title: Esperado ')' na expressão regular (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5020
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 72b4cf24b4b738b7ca71e364d7be6486313a4844
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347418"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840799"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>')' esperado na expressão regular (JavaScript)
 Você tentou criar uma captura de expressão regular, declaração ou grupo, mas não incluiu o parêntese de fechamento. Parênteses têm várias finalidades em expressões regulares. Basicamente, eles são usados para capturar subexpressões, para especificar declarações, ou para agrupar padrões para que os itens podem ser tratados como uma única unidade pelo *, +,? e assim por diante.  

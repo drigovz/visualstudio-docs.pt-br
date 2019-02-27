@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764572"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841799"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -519,7 +519,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 2.  Selecione um destino de emulador ou dispositivo apropriado e inicie o aplicativo pressionando a tecla F5.
 
-3.  No dispositivo ou no emulador, digite um CEP válido dos Estados Unidos na caixa de edição (por exemplo: 60601) e pressione **obter clima**. Dados de clima para aquela região então são exibidos nos controles.
+3.  No dispositivo ou no emulador, digite um CEP dos Estados Unidos válido na caixa de edição (por exemplo: 60601) e pressione **Obter Clima**. Dados de clima para aquela região então são exibidos nos controles.
 
      ![Aplicativo de clima para Android e Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +625,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 2.  Inicie o aplicativo pressionando a tecla F5.
 
-3.  No emulador do Windows Phone, digite um CEP válido dos Estados Unidos, na caixa de edição (por exemplo: 60601) e pressione **obter clima**. Dados de clima para aquela região então são exibidos nos controles.
+3.  No emulador do Windows Phone, digite um CEP dos Estados Unidos válido na caixa de edição (por exemplo: 60601) e pressione **Obter Clima**. Dados de clima para aquela região então são exibidos nos controles.
 
      ![Versão do Windows do aplicativo em execução](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -644,4 +644,4 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
  O código compartilhado em uma PCL é neutro em termos de plataforma, pois a PCL é compilada uma vez e incluída em cada pacote do aplicativo específico da plataforma. Se você quiser escrever código compartilhado que use compilação condicional para isolar o código específico da plataforma, poderá usar um projeto *compartilhado*. Para obter mais detalhes, consulte [Opções de compartilhamento ode](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
 
 ## <a name="see-also"></a>Consulte também
- [Site de desenvolvedor do Xamarin](http://developer.xamarin.com/) [Centro de desenvolvimento do Windows](https://dev.windows.com/en-us) [Swift e C# pôster de referência rápida](http://aka.ms/scposter)
+ [Site de desenvolvedor do Xamarin](http://developer.xamarin.com/) [Centro de desenvolvimento do Windows](https://dev.windows.com/en-us) [Swift e C# pôster de referência rápida](https://aka.ms/scposter)

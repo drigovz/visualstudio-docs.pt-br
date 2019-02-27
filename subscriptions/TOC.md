@@ -81,7 +81,7 @@
 #### [Gerenciar assinaturas para o MPN](manage-mpn-subscriptions.md)
 #### [Microsoft para startups](program-startups.md)
 ## Recursos
-### [White paper de licenciamento do Visual Studio](http://aka.ms/vslicensing)
+### [White paper de licenciamento do Visual Studio](https://aka.ms/vslicensing)
 ### [Comparar opções e preços de assinatura](https://visualstudio.microsoft.com/vs/pricing)
 ### [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ### [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

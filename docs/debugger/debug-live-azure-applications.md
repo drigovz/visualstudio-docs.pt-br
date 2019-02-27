@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335591"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613369"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos em tempo real do Azure do ASP.NET usando o depurador de instantâneo
 
@@ -63,7 +63,7 @@ Neste tutorial, você irá:
 2. Anexe o depurador de instantâneo. Você pode usar um dos vários métodos diferentes:
 
     * Escolha **Depurar > Anexar depurador de instantâneos...** . Selecione o serviço de aplicativo do Azure seu projeto é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Attach**.
-  
+
       ![Iniciar o depurador de instantâneo no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Clique com botão direito no seu projeto e selecione **Publish**e, em seguida, na página de publicação. clique em **Anexar depurador de instantâneo**. Selecione o serviço de aplicativo do Azure seu projeto é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Attach**.
@@ -73,7 +73,7 @@ Neste tutorial, você irá:
     ![Iniciar o depurador de instantâneo no menu suspenso F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Usando o Gerenciador de nuvem (**exibição > Gerenciador de nuvem**), o serviço de aplicativo do Azure seu projeto é implantado com o botão direito e selecione uma conta de armazenamento do Azure e, em seguida, clique em **Anexar depurador de instantâneo**.
-  
+
       ![Iniciar o depurador de instantâneo do Cloud Explorer](../debugger/media/snapshot-launch.png)
 
     Na primeira vez que você seleciona **anexar o depurador de instantâneo**, você será solicitado a instalar a extensão de site do depurador de instantâneo em seu serviço de aplicativo do Azure. Esta instalação requer uma reinicialização do serviço de aplicativo do Azure.

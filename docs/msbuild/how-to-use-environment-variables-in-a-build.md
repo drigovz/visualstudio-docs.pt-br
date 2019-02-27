@@ -12,57 +12,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a0afa3d67ab78248ea983eedb0cd626dc7af499
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 84fe30f4bddc410f580ccd94250591027e0f9887
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942877"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796134"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Como: Usar variáveis de ambiente em um build
-Quando você compila projetos, geralmente é necessário definir opções de build usando informações que não estão no arquivo de projeto ou nos arquivos que compõem seu projeto. Normalmente, essas informações são armazenadas em variáveis de ambiente.  
-  
-## <a name="reference-environment-variables"></a>Referenciar variáveis de ambiente  
- Todas as variáveis de ambiente estão disponíveis para o arquivo de projeto [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) como propriedades.  
-  
+Quando você compila projetos, geralmente é necessário definir opções de build usando informações que não estão no arquivo de projeto ou nos arquivos que compõem seu projeto. Normalmente, essas informações são armazenadas em variáveis de ambiente.
+
+## <a name="reference-environment-variables"></a>Referenciar variáveis de ambiente
+ Todas as variáveis de ambiente estão disponíveis para o arquivo de projeto [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) como propriedades.
+
 > [!NOTE]
->  Se o arquivo de projeto contiver uma definição explícita de uma propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no arquivo de projeto substituirá os valores de uma variável de ambiente.  
-  
-#### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Para usar uma variável de ambiente em um projeto MSBuild  
-  
-- Faça referência à variável de ambiente da mesma maneira que faria com uma variável declarada em seu arquivo de projeto. Por exemplo, o código a seguir faz referência à variável de ambiente BIN_PATH:  
-  
-   `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
-  
-  Você pode usar um atributo `Condition` para fornecer um valor padrão para uma propriedade se a variável de ambiente não foi definida.  
-  
-#### <a name="to-provide-a-default-value-for-a-property"></a>Para fornecer um valor padrão de uma propriedade  
-  
--   Use um atributo `Condition` em uma propriedade para definir o valor somente se a propriedade não tiver nenhum valor. Por exemplo, o seguinte código define a propriedade `ToolsPath` como *c:\tools* somente se a variável de ambiente `ToolsPath` não está definida:  
-  
-     `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
-  
+>  Se o arquivo de projeto contiver uma definição explícita de uma propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no arquivo de projeto substituirá os valores de uma variável de ambiente.
+
+#### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Para usar uma variável de ambiente em um projeto MSBuild
+
+- Faça referência à variável de ambiente da mesma maneira que faria com uma variável declarada em seu arquivo de projeto. Por exemplo, o código a seguir faz referência à variável de ambiente BIN_PATH:
+
+   `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`
+
+  Você pode usar um atributo `Condition` para fornecer um valor padrão para uma propriedade se a variável de ambiente não foi definida.
+
+#### <a name="to-provide-a-default-value-for-a-property"></a>Para fornecer um valor padrão de uma propriedade
+
+-   Use um atributo `Condition` em uma propriedade para definir o valor somente se a propriedade não tiver nenhum valor. Por exemplo, o seguinte código define a propriedade `ToolsPath` como *c:\tools* somente se a variável de ambiente `ToolsPath` não está definida:
+
+     `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
+
     > [!NOTE]
-    >  Os nomes de propriedade não diferenciam maiúsculas de minúsculas então `$(ToolsPath)` e `$(TOOLSPATH)` fazem referência à mesma variável de ambiente ou propriedade.  
-  
-## <a name="example"></a>Exemplo  
- O arquivo de projeto a seguir usa variáveis de ambiente para especificar o local dos diretórios.  
-  
-```xml  
-<Project DefaultTargets="FakeBuild">  
-    <PropertyGroup>  
-        <FinalOutput>$(BIN_PATH)\myassembly.dll</FinalOutput>  
-        <ToolsPath Condition=" '$(ToolsPath)' == '' ">  
-            C:\Tools  
-        </ToolsPath>  
-    </PropertyGroup>  
-    <Target Name="FakeBuild">  
-        <Message Text="Building $(FinalOutput) using the tools at $(ToolsPath)..."/>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
-[MSBuild ](../msbuild/msbuild.md)  
-[Propriedades do MSBuild](../msbuild/msbuild-properties.md)  
-[Como: Compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  
+    >  Os nomes de propriedade não diferenciam maiúsculas de minúsculas então `$(ToolsPath)` e `$(TOOLSPATH)` fazem referência à mesma variável de ambiente ou propriedade.
+
+## <a name="example"></a>Exemplo
+ O arquivo de projeto a seguir usa variáveis de ambiente para especificar o local dos diretórios.
+
+```xml
+<Project DefaultTargets="FakeBuild">
+    <PropertyGroup>
+        <FinalOutput>$(BIN_PATH)\myassembly.dll</FinalOutput>
+        <ToolsPath Condition=" '$(ToolsPath)' == '' ">
+            C:\Tools
+        </ToolsPath>
+    </PropertyGroup>
+    <Target Name="FakeBuild">
+        <Message Text="Building $(FinalOutput) using the tools at $(ToolsPath)..."/>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Consulte também
+- [MSBuild](../msbuild/msbuild.md)
+- [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
+- [Como: Compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

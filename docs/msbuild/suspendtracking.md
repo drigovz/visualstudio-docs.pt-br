@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a093b89264df43574acd3929d4370bb43162d829
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc2a8b3dc2f5940c64be870df452b088dce7bc0e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946744"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632453"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
-Suspende o acompanhamento no contexto atual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp 
-HRESULT WINAPI SuspendTracking(void);  
-```  
-  
-## <a name="return-value"></a>Valor retornado  
- Um **HRESULT** com o conjunto de bits **SUCCEEDED** se o acompanhamento tiver sido suspenso.  
-  
-## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** *FileTracker.h*  
-  
-## <a name="see-also"></a>Consulte também  
- [ResumeTracking](../msbuild/resumetracking.md)
+Suspende o acompanhamento no contexto atual.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT WINAPI SuspendTracking(void);
+```
+
+## <a name="return-value"></a>Valor retornado
+ Um **HRESULT** com o conjunto de bits **SUCCEEDED** se o acompanhamento tiver sido suspenso.
+
+## <a name="requirements"></a>Requisitos
+ **Cabeçalho:** *FileTracker.h*
+
+## <a name="see-also"></a>Consulte também
+- [ResumeTracking](../msbuild/resumetracking.md)

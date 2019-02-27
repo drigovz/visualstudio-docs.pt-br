@@ -7,16 +7,9 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856817"
 ---
+
 # <a name="visual-studio-subscriptions"></a>Assinaturas do Visual Studio
 
 As assinaturas do Visual Studio são um conjunto abrangente de recursos para criar, implantar e gerenciar grandes aplicativos em suas plataformas e dispositivos preferidos, incluindo Windows, iOS, Android e Linux.  Os benefícios das assinaturas são: acesso a ferramentas para desenvolvedores, serviços de nuvem e software, treinamento e suporte para necessidades de desenvolvimento e teste.

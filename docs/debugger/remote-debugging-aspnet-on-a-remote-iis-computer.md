@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3499465c6b1027232cb42580b2e099a2f74b83ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947461"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702168"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Depuração remota do ASP.NET Core em um computador remoto IIS no Visual Studio 2017
 Para depurar um aplicativo ASP.NET que tenha sido implantado no IIS, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo e, em seguida, anexar a seu aplicativo em execução do Visual Studio.
@@ -40,7 +40,7 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
 
 * Se você deseja obter ajuda para certificar-se de que seu aplicativo é configurado, implantado e executando corretamente no IIS para que você possa depurar, siga as etapas neste tópico.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Criar o aplicativo ASP.NET Core no computador do Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Criar o aplicativo ASP.NET Core no computador do Visual Studio 2017
 
 1. Crie um novo aplicativo ASP.NET Core. (**Arquivo > Novo > projeto**, em seguida, selecione **Visual c# > Web > aplicativo Web ASP.NET Core**).
 
@@ -147,7 +147,7 @@ Você também pode publicar e implantar o aplicativo usando o sistema de arquivo
 Neste tutorial, estamos usando o Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Configurar o depurador remoto no Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -163,7 +163,7 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 2. No Visual Studio, clique em **Depurar > Anexar ao processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > No Visual Studio 2017, você pode anexar novamente o mesmo processo que você anexado anteriormente usando **Depurar > anexar novamente ao processo...** (Shift + Alt + P). 
+    > No Visual Studio 2017, você pode anexar novamente o mesmo processo que você anexado anteriormente usando **Depurar > anexar novamente ao processo...** (Shift + Alt + P).
 
 3. Definir o qualificador de campo para  **\<nome do computador remoto >: 4022**.
 4. Cliquem em **Atualizar**.
@@ -181,14 +181,14 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 7. Clique em **Anexar**.
 
 8. Abra o site do computador remoto. Em um navegador, vá para **http://\<nome do computador remoto >**.
-    
+
     Você deve ver a página da web ASP.NET.
 
 9. No aplicativo ASP.NET em execução, clique no link para o **sobre** página.
 
     O ponto de interrupção deve ser atingido no Visual Studio.
 
-## <a name="bkmk_openports"></a> Solução de problemas Abra as portas necessárias no Windows Server
+## <a name="bkmk_openports"></a>Solução de problemas Abra as portas necessárias no Windows Server
 
 Na maioria das configurações, as portas necessárias estão abertas pela instalação do ASP.NET e o depurador remoto. No entanto, talvez você precise verificar se as portas estão abertas.
 

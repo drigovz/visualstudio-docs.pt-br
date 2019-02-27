@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947614"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605179"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para compilar um aplicativo. Normalmente, um Conjunto de Ferramentas do MSBuild inclui um arquivo *microsoft.common.tasks*, um arquivo *microsoft.common.targets* e compiladores como o *csc.exe* e o *vbc.exe*. A maioria dos conjuntos de ferramentas pode ser usada para compilar aplicativos para mais de uma versão do .NET Framework e mais de uma plataforma de sistema. No entanto, o conjunto de ferramentas do MSBuild 2.0 pode ser usado para visar apenas o NET Framework 2.0.
@@ -116,4 +116,5 @@ O MSBuild fornece sobrecargas para os métodos `ToolLocationHelper` que adiciona
 Os subconjuntos de ferramentas foram introduzidos no .NET Framework 4.5.
 
 ## <a name="see-also"></a>Consulte também
- [Configurações padrão e personalizadas do Conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md) [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
+- [Configurações padrão e personalizadas do Conjunto de Ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)

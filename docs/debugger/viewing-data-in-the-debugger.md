@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00eb9127247c98324b64a998ea8c13cb47e074d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030477"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710481"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Criar exibições personalizadas de dados no depurador do Visual Studio (C#, Visual Basic, C++)
 
@@ -33,12 +33,13 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depurador fornece v�
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Criar exibições personalizadas de dados em janelas de variáveis e DataTips
 
  Muitas da [janelas do depurador](../debugger/debugger-windows.md), como o **Autos** e **Assista** windows, permitem que você inspecione variáveis. Você pode personalizar tipos como nativos, os objetos gerenciados, e seus próprios tipos são mostrados nas janelas de variáveis do depurador e no [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Para obter mais informações, consulte [criar exibições personalizadas de objetos nativos](../debugger/create-custom-views-of-native-objects.md) e [criar exibições personalizadas de objetos](../debugger/create-custom-views-of-dot-managed-objects.md).
-  
+
 ## <a name="create-custom-visualizers"></a>Criar visualizadores personalizados
 
  Os visualizadores permitem exibir o conteúdo de um objeto ou variável de forma significativa. No depurador do Visual Studio, um visualizador refere-se ao windows diferentes que podem ser abertos usando a Lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ícone do visualizador") ícone. Por exemplo, o visualizador HTML mostra como uma cadeia de caracteres HTML seria interpretada e exibida em um navegador. Você pode acessar visualizadores a partir das DataTips, a **Watch** janela, o **Autos** janela e o **locais** janela. O **QuickWatch** caixa de diálogo também fornece um visualizador. Para obter mais informações, confira [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md).
-  
+
 ## <a name="see-also"></a>Consulte também
 
- [Primeiro, examine o depurador](../debugger/debugger-feature-tour.md) [janela de comando](../ide/reference/command-window.md)   
- [Segurança do depurador](../debugger/debugger-security.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
+- [Janela Comando](../ide/reference/command-window.md)
+- [Segurança do depurador](../debugger/debugger-security.md)

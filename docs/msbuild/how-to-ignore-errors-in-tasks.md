@@ -9,12 +9,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d8c11fef90a4910c178e7494a5a16f6ea9bfbf0
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 062edb5e7b76b3d3d308046ea1d541c543a6324f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853281"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610418"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Como: Ignorar erros em tarefas
 Às vezes você deseja que um build seja tolerante a falhas em determinadas tarefas. Se essas tarefas não críticas falharem, você deseja que o build continue, pois ela ainda pode produzir a saída necessária. Por exemplo, se um projeto usa uma tarefa `SendMail` para enviar uma mensagem de email depois que cada componente é compilado, você pode considerar aceitável que o build prossiga até a conclusão, mesmo que os servidores de email não estejam disponíveis e as mensagens de status não possam ser enviadas. Ou, por exemplo, se arquivos intermediários são geralmente excluídos durante o build, você pode considerar aceitável que o build prossiga até a conclusão, mesmo que esses arquivos não possam ser excluídos.
@@ -28,16 +28,16 @@ O atributo `ContinueOnError` pode conter um dos seguintes valores:
 
 - **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.
 
-- **ErrorAndStop** ou **falso** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.  
-  
-  As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.  
-  
+- **ErrorAndStop** ou **falso** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.
+
+  As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.
+
   O valor padrão de `ContinueOnError` é `ErrorAndStop`. Se você definir o atributo como `ErrorAndStop`, tornará o comportamento explícito para qualquer pessoa que lê o arquivo de projeto.
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Para ignorar um erro em uma tarefa
 
-- Use o atributo `ContinueOnError` da tarefa. Por exemplo:  
-  
+- Use o atributo `ContinueOnError` da tarefa. Por exemplo:
+
     `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
 
 ## <a name="example"></a>Exemplo
@@ -60,6 +60,6 @@ O exemplo de código a seguir ilustra que o destino de `Build` ainda é executad
 ```
 
 ## <a name="see-also"></a>Consulte também
-[MSBuild](../msbuild/msbuild.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)  
-[Tarefas](../msbuild/msbuild-tasks.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)

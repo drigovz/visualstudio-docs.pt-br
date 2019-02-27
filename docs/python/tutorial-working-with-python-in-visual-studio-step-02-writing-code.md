@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918098"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843085"
 ---
 # <a name="step-2-write-and-run-code"></a>Etapa 2: Escrever e executar o código
 
@@ -53,7 +53,7 @@ Embora o **Gerenciador de Soluções** seja o local em que você gerencia arquiv
 
     ![Saída da primeira execução do programa](media/vs-getting-started-python-07-output.png)
 
-1. Além das conclusões para instruções e funções, o IntelliSense fornece preenchimentos para instruções `import` e `from` do Python. Esses preenchimentos ajudam você a descobrir com facilidade quais módulos estão disponíveis no ambiente e os membros desses módulos. No editor, exclua a linha `print` e comece a digitar `import `. Uma lista de módulos é exibida quando você digita o espaço:
+1. Além das conclusões para instruções e funções, o IntelliSense fornece preenchimentos para instruções `import` e `from` do Python. Esses preenchimentos ajudam você a descobrir com facilidade quais módulos estão disponíveis no ambiente e os membros desses módulos. No editor, exclua a linha `print` e comece a digitar `import`. Uma lista de módulos é exibida quando você digita o espaço:
 
     ![IntellSense mostrando os módulos disponíveis para uma instrução de importação](media/vs-getting-started-python-08-import1.png)
 

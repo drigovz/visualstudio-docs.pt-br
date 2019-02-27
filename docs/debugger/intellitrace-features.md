@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317764"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720179"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Recursos do IntelliTrace (C#, Visual Basic, C++)
 
@@ -56,7 +56,7 @@ Instantâneos estão disponíveis no Visual Studio Enterprise 2017 versão 15.5 
 
 Isso não é habilitado por padrão, mas o IntelliTrace poderá registrar chamadas de método, junto com eventos. Para habilitar a coleta de método chamadas acessem **Ferramentas > Opções > IntelliTrace > geral**e selecione **eventos do IntelliTrace e informações (somente gerenciadas) de chamada**.
 
-Informações de chamada não estão atualmente disponíveis para aplicativos .NET Core e ASP.NET Core. 
+Informações de chamada não estão atualmente disponíveis para aplicativos .NET Core e ASP.NET Core.
 
 Isso permite que você consulte o histórico da pilha de chamadas e retroceda e avance por meio de chamadas em seu código. O IntelliTrace registra dados como nomes de método, pontos de entrada e saída de método e determinados valores de parâmetros e valores de retorno.
 

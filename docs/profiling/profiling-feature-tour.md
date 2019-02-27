@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae109558c19f408c2300830b64960d11fb57e39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000829"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611913"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Início Rápido: Introdução às ferramentas de criação de perfil
 
@@ -149,22 +149,22 @@ Se você precisar de recursos, como instrumentação, que não estão atualmente
 
 ![Ferramenta de Gerenciador de Desempenho](../profiling/media/prof-tour-performance-explorer.png "Gerenciador de Desempenho")
 
-## <a name="which-tool-should-i-use"></a>Qual ferramenta devo usar?  
+## <a name="which-tool-should-i-use"></a>Qual ferramenta devo usar?
 
 Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio oferece e os diferentes tipos de projeto com os quais você poderá usá-las:
-  
-|Ferramenta de Desempenho|Área de Trabalho do Windows|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|Ferramenta de Desempenho|Área de Trabalho do Windows|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|
-|[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim| 
-|[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no| 
+|[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
+|[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no|
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|
 |[Gerenciador de Desempenho](../profiling/performance-explorer.md)|sim|no|sim|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
 |[Uso de rede](../profiling/network-usage.md)|no|sim|no|
-|[Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no| 
+|[Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no|
 |[Memória JavaScript](../profiling/javascript-memory.md)|no|sim para HTML, não para XAML|no|
 
-## <a name="see-also"></a>Consulte também  
- [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>Consulte também
+- [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour)

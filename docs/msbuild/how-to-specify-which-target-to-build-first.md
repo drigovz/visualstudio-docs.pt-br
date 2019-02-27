@@ -12,67 +12,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6e8ec70c941035caa0e4b3569f82013a829f15
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bfca12367bf675fdadd7bc84bc616e0d5e0b6b7d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970572"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603417"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Como: Especificar qual destino compilar primeiro
-Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como o projeto é compilado. O mecanismo [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila o primeiro projeto e as dependências que localizar, a menos que o arquivo de projeto contenha um atributo `DefaultTargets`, um atributo `InitialTargets` ou que um destino seja especificado na linha de comando usando a opção **-target**.  
-  
-## <a name="use-the-initialtargets-attribute"></a>Usar o atributo InitialTargets  
- O atributo `InitialTargets` do elemento `Project` especifica um destino que será executado primeiro, mesmo se os destinos forem especificados na linha de comando ou no atributo `DefaultTargets`.  
-  
-#### <a name="to-specify-one-initial-target"></a>Para especificar um destino inicial  
-  
-- Especifique o destino padrão no atributo `InitialTargets` do elemento `Project`. Por exemplo:  
-  
-   `<Project InitialTargets="Clean">`  
-  
-  Você pode especificar mais de um destino inicial no atributo `InitialTargets` ao listar os destinos em ordem e usar um ponto e vírgula para separar cada destino. Os destinos na lista serão executados sequencialmente.  
-  
-#### <a name="to-specify-more-than-one-initial-target"></a>Para especificar mais de um destino inicial  
-  
--   Liste os destinos iniciais, separados por ponto e vírgula, no atributo `InitialTargets` do elemento `Project`. Por exemplo, para executar o destino `Clean` e, em seguida, o destino `Compile`, digite:  
-  
-     `<Project InitialTargets="Clean;Compile">`  
-  
-## <a name="use-the-defaulttargets-attribute"></a>Usar o atributo DefaultTargets  
- O atributo `DefaultTargets` do elemento `Project` especifica qual destino ou quais destinos serão compilados se um destino não for especificado explicitamente na linha de comando. Se os destinos estiverem especificados nos atributos `InitialTargets` e `DefaultTargets` e nenhum destino for especificado na linha de comando, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executa os destinos especificados no atributo `InitialTargets` seguido pelos destinos especificados no atributo `DefaultTargets`.  
-  
-#### <a name="to-specify-one-default-target"></a>Para especificar um destino padrão  
-  
-- Especifique o destino padrão no atributo `DefaultTargets` do elemento `Project`. Por exemplo:  
-  
-   `<Project DefaultTargets="Compile">`  
-  
-  Você pode especificar mais de um destino padrão no atributo `DefaultTargets` ao listar os destinos em ordem e usar um ponto e vírgula para separar cada destino. Os destinos na lista serão executados sequencialmente.  
-  
-#### <a name="to-specify-more-than-one-default-target"></a>Para especificar mais de um destino padrão  
-  
--   Liste os destinos padrão, separados por ponto e vírgula, no atributo `DefaultTargets` do elemento `Project`. Por exemplo, para executar o destino `Clean` e, em seguida, o destino `Compile`, digite:  
-  
-     `<Project DefaultTargets="Clean;Compile">`  
-  
-## <a name="use-the--target-switch"></a>Usar a opção -target  
- Se um destino padrão não estiver definido no arquivo de projeto ou se você não desejar usar aquele destino padrão, poderá usar a opção de linha de comando **-target** para especificar um destino diferente. O destino ou destinos especificados com a opção **-target** são executados em lugar dos destinos especificados pelo atributo `DefaultTargets`. Os destinos especificados no atributo `InitialTargets` são sempre executados primeiro.  
- 
- 
-#### <a name="to-use-a-target-other-than-the-default-target-first"></a>Para usar primeiro um destino diferente do destino padrão  
-  
--   Especifique o destino como o primeiro destino usando a opção de linha de comando **-target**. Por exemplo:  
-  
-     `msbuild file.proj -target:Clean`  
-  
-#### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Para usar primeiro vários destinos que sejam diferentes dos destinos padrão  
-  
--   Liste os destinos, separados por ponto e vírgula ou por vírgulas, usando a opção de linha de comando **-target**. Por exemplo:  
-  
-     `msbuild <file name>.proj -t:Clean;Compile`  
-  
+Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como o projeto é compilado. O mecanismo [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila o primeiro projeto e as dependências que localizar, a menos que o arquivo de projeto contenha um atributo `DefaultTargets`, um atributo `InitialTargets` ou que um destino seja especificado na linha de comando usando a opção **-target**.
+
+## <a name="use-the-initialtargets-attribute"></a>Usar o atributo InitialTargets
+ O atributo `InitialTargets` do elemento `Project` especifica um destino que será executado primeiro, mesmo se os destinos forem especificados na linha de comando ou no atributo `DefaultTargets`.
+
+#### <a name="to-specify-one-initial-target"></a>Para especificar um destino inicial
+
+- Especifique o destino padrão no atributo `InitialTargets` do elemento `Project`. Por exemplo:
+
+   `<Project InitialTargets="Clean">`
+
+  Você pode especificar mais de um destino inicial no atributo `InitialTargets` ao listar os destinos em ordem e usar um ponto e vírgula para separar cada destino. Os destinos na lista serão executados sequencialmente.
+
+#### <a name="to-specify-more-than-one-initial-target"></a>Para especificar mais de um destino inicial
+
+-   Liste os destinos iniciais, separados por ponto e vírgula, no atributo `InitialTargets` do elemento `Project`. Por exemplo, para executar o destino `Clean` e, em seguida, o destino `Compile`, digite:
+
+     `<Project InitialTargets="Clean;Compile">`
+
+## <a name="use-the-defaulttargets-attribute"></a>Usar o atributo DefaultTargets
+ O atributo `DefaultTargets` do elemento `Project` especifica qual destino ou quais destinos serão compilados se um destino não for especificado explicitamente na linha de comando. Se os destinos estiverem especificados nos atributos `InitialTargets` e `DefaultTargets` e nenhum destino for especificado na linha de comando, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executa os destinos especificados no atributo `InitialTargets` seguido pelos destinos especificados no atributo `DefaultTargets`.
+
+#### <a name="to-specify-one-default-target"></a>Para especificar um destino padrão
+
+- Especifique o destino padrão no atributo `DefaultTargets` do elemento `Project`. Por exemplo:
+
+   `<Project DefaultTargets="Compile">`
+
+  Você pode especificar mais de um destino padrão no atributo `DefaultTargets` ao listar os destinos em ordem e usar um ponto e vírgula para separar cada destino. Os destinos na lista serão executados sequencialmente.
+
+#### <a name="to-specify-more-than-one-default-target"></a>Para especificar mais de um destino padrão
+
+-   Liste os destinos padrão, separados por ponto e vírgula, no atributo `DefaultTargets` do elemento `Project`. Por exemplo, para executar o destino `Clean` e, em seguida, o destino `Compile`, digite:
+
+     `<Project DefaultTargets="Clean;Compile">`
+
+## <a name="use-the--target-switch"></a>Usar a opção -target
+ Se um destino padrão não estiver definido no arquivo de projeto ou se você não desejar usar aquele destino padrão, poderá usar a opção de linha de comando **-target** para especificar um destino diferente. O destino ou destinos especificados com a opção **-target** são executados em lugar dos destinos especificados pelo atributo `DefaultTargets`. Os destinos especificados no atributo `InitialTargets` são sempre executados primeiro.
+
+
+#### <a name="to-use-a-target-other-than-the-default-target-first"></a>Para usar primeiro um destino diferente do destino padrão
+
+-   Especifique o destino como o primeiro destino usando a opção de linha de comando **-target**. Por exemplo:
+
+     `msbuild file.proj -target:Clean`
+
+#### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Para usar primeiro vários destinos que sejam diferentes dos destinos padrão
+
+-   Liste os destinos, separados por ponto e vírgula ou por vírgulas, usando a opção de linha de comando **-target**. Por exemplo:
+
+     `msbuild <file name>.proj -t:Clean;Compile`
+
 ## <a name="see-also"></a>Consulte também
-  [MSBuild](../msbuild/msbuild.md)  
- [Destinos](../msbuild/msbuild-targets.md)   
- [Como: Limpar um build](../msbuild/how-to-clean-a-build.md)
+  [MSBuild](../msbuild/msbuild.md)
+- [Destinos](../msbuild/msbuild-targets.md)
+- [Como: Limpar um build](../msbuild/how-to-clean-a-build.md)

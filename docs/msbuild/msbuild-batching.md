@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee0c3c503be815feacd5d6077dd9e560b2c4074
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928394"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603463"
 ---
 # <a name="msbuild-batching"></a>Envio em lote do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tem a capacidade de dividir as listas de itens em categorias diferentes ou lotes com base nos metadados do item, além de executar um destino ou uma tarefa uma vez com cada lote.
@@ -100,7 +100,7 @@ não é permitido.
 Para obter mais informações sobre funções de propriedade, confira [Funções de propriedade](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Consulte também
-[Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Conceitos do MSBuild](../msbuild/msbuild-concepts.md)  
-[Referência do MSBuild](../msbuild/msbuild-reference.md)  
-[Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)
+- [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
+- [Referência do MSBuild](../msbuild/msbuild-reference.md)
+- [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

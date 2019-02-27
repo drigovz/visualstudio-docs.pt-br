@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae786d3fa65bdf4ce591be1c8ec677a5ac757e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615527"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840893"
 ---
 # <a name="projects"></a>Projetos
 No Visual Studio, os projetos são contêineres que os desenvolvedores usam para organizar os arquivos de código-fonte e outros recursos que aparecem no **Gerenciador de soluções**. Normalmente, os projetos são arquivos (por exemplo, um arquivo. csproj para um projeto de c#) que armazenam referências a recursos como arquivos de bitmap e arquivos de código-fonte. Projetos permitem organizar, compilar, depurar e implantar o código-fonte, as referências a serviços Web e bancos de dados e outros recursos. Os VSPackages pode estender o sistema de projeto do Visual Studio de três maneiras principais: *tipos de projeto*, *subtipos de projeto*, e *ferramentas personalizadas*.
@@ -41,7 +41,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
 
  Explica o que realmente ocorre quando você cria um novo projeto.
 
-- [Exemplos de VSSDK](http://aka.ms/vs2015sdksamples) contém exemplos de VSSDK que lidam com projetos e soluções.
+- [Exemplos de VSSDK](https://aka.ms/vs2015sdksamples) contém exemplos de VSSDK que lidam com projetos e soluções.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Dentro do SDK do Visual Studio](../../extensibility/internals/inside-the-visual-studio-sdk.md)

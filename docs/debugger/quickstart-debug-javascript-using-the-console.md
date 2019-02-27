@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227561"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720504"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript usando o console no Visual Studio
 
@@ -36,7 +36,7 @@ A janela Console do JavaScript permite que você:
 
 - Execute o código JavaScript, que é executado no contexto do script atual.
 
-- Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Windows Runtime .
+- Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Tempo de Execução do Windows.
 
 - Realizar outras tarefas, como limpar a tela. Ver [comandos do JavaScript Console](../debugger/javascript-console-commands.md) para a lista completa de comandos.
 
@@ -249,11 +249,11 @@ A ilustração a seguir mostra a lista de destino na janela Console do JavaScrip
 Você também pode alternar o contexto de execução usando o comando `cd`, mas você precisa saber o nome do outro contexto de execução e a referência que será usada deve estar no escopo. A lista **Destino** fornece um acesso melhor a outros contextos de execução.
 
 ## <a name="see-also"></a>Consulte também
-[Depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Comandos do Console JavaScript](../debugger/javascript-console-commands.md)  
-[Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Depurar código de exemplo em HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)  
-[Depurar um controle WebView](../debugger/debug-a-webview-control.md)  
-[Suporte ao produto e acessibilidade](https://visualstudio.microsoft.com/vs/support/)
+- [Depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Comandos do Console JavaScript](../debugger/javascript-console-commands.md)
+- [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Depurar código de exemplo em HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Depurar um controle WebView](../debugger/debug-a-webview-control.md)
+- [Suporte ao produto e acessibilidade](https://visualstudio.microsoft.com/vs/support/)

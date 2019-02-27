@@ -4,24 +4,22 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba mais sobre o benefício Enterprise Mobility + Security incluído em sua assinatura do Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380051"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841189"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Benefício do EMS (Enterprise Mobility + Security) nas assinaturas do Visual Studio
 
 As assinaturas anuais padrão e de nuvem do Visual Studio Enterprise incluem o EMS (Enterprise Mobility + Security).  Proteja e gerencie identidades, dispositivos, aplicativos e dados com o EMS – Azure Active Directory, Microsoft Intune, Proteção de Informações do Azure, Microsoft Advanced Threat Analytics e Microsoft Cloud App Security.
 
 > [!NOTE]
-> Se você comprar uma assinatura de vários anos por meio do licenciamento por volume, tenha em mente que o benefício do EMS atualmente está disponível somente no primeiro ano.  
+> Se você comprar uma assinatura de vários anos por meio do licenciamento por volume, tenha em mente que o benefício do EMS atualmente está disponível somente no primeiro ano.
 
 ## <a name="activation-steps"></a>Etapas de Ativação
 
