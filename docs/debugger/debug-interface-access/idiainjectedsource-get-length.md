@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 492c223543b4c7661a9709b88d6d162dd591a756
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973610"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616021"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
-Recupera o número de bytes de código.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_length (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o número de bytes de código.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- O valor retornado por esse método é o comprimento do código-fonte e é o mesmo valor, conforme retornado pela [idiainjectedsource:: Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) método.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   
- [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)
+Recupera o número de bytes de código.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_length ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o número de bytes de código.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ O valor retornado por esse método é o comprimento do código-fonte e é o mesmo valor, conforme retornado pela [idiainjectedsource:: Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) método.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+- [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

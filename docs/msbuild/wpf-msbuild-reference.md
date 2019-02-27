@@ -16,37 +16,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4879c30290fcb932f8fbd203290fa57c792efa4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 147ee5dbaf6d521b609005425eac076314f1f417
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963587"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638823"
 ---
 # <a name="wpf-msbuild-reference"></a>Referência do WPF MSBuild
-O WPF (Windows Presentation Foundation) estende o MSBuild (Microsoft Build Engine) com suporte de build adicional, que está documentado nesta seção.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Arquivos .targets do WPF](../msbuild/wpf-dot-targets-files.md)  
- Descreve os arquivos .targets do WPF.  
-  
- [Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
- Lista as tarefas de build disponíveis do WPF.  
-  
- <xref:Microsoft.Build.Tasks>  
- Um assembly de tarefas de build.  
-  
- <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>  
- Um assembly do bootstrapper de implantação da tarefa de build.  
-  
- <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>  
- Um assembly de utilitário do manifesto de implantação da tarefa de build.  
-  
- <xref:Microsoft.Build.Tasks.Hosting>  
- Um assembly de hospedagem da tarefa de build.  
-  
- <xref:Microsoft.Build.Tasks.Windows>  
- Um assembly das janelas da tarefa de build.  
-  
-## <a name="see-also"></a>Consulte também  
- [MSBuild](../msbuild/msbuild.md)
+
+O WPF (Windows Presentation Foundation) estende o MSBuild (Microsoft Build Engine) com suporte de build adicional, que está documentado nesta seção.
+
+## <a name="in-this-section"></a>Nesta seção
+
+[Arquivos .targets do WPF](../msbuild/wpf-dot-targets-files.md)
+
+Descreve os arquivos .targets do WPF.
+
+[Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
+
+Lista as tarefas de build disponíveis do WPF.
+
+<xref:Microsoft.Build.Tasks>
+
+Um assembly de tarefas de build.
+
+<xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>
+
+Um assembly do bootstrapper de implantação da tarefa de build.
+
+<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>
+
+Um assembly de utilitário do manifesto de implantação da tarefa de build.
+
+<xref:Microsoft.Build.Tasks.Hosting>
+
+Um assembly de hospedagem da tarefa de build.
+
+<xref:Microsoft.Build.Tasks.Windows>
+
+Um assembly das janelas da tarefa de build.
+
+## <a name="see-also"></a>Consulte também
+
+- [MSBuild](../msbuild/msbuild.md)

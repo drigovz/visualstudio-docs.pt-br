@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f974cde33103f86aa7330600e87c856119f537c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d996aa0c16c67cfdda23a1ecb63adcbb32d02b15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853541"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596289"
 ---
 # <a name="copy-task"></a>tarefa Copy
 Copia os arquivos para um novo local no sistema de arquivos.
@@ -111,5 +111,5 @@ O exemplo a seguir demonstra como fazer uma cópia recursiva. Esse projeto copia
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Tarefas](../msbuild/msbuild-tasks.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

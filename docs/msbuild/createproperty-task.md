@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 39b732a962f648f0c812f3f9d37df7dcf17296ce
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853437"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626603"
 ---
 # <a name="createproperty-task"></a>Tarefa CreateProperty
 Popula as propriedades com os valores passados. Isso permite que os valores sejam copiados de uma propriedade ou cadeia de caracteres para outra.
@@ -67,5 +67,5 @@ O exemplo a seguir usa a tarefa `CreateProperty` para criar a propriedade `NewFi
 Depois de executar o projeto, o valor da propriedade `NewFile` será *Module1.vb*.
 
 ## <a name="see-also"></a>Consulte também
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)  
-[Tarefas](../msbuild/msbuild-tasks.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)

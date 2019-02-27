@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853934"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634624"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Como: Usar escape para caracteres especiais no MSBuild
 
@@ -51,6 +51,6 @@ Também é possível usar uma [função de propriedade](../msbuild/property-func
 Use a notação `%<xx>` no lugar do caractere especial, em que `<xx>` representa o valor hexadecimal do caractere ASCII. Por exemplo, para usar um asterisco (`*`) como um caractere literal, use o valor `%2A`.
 
 ## <a name="see-also"></a>Consulte também
-[Conceitos do MSBuild](../msbuild/msbuild-concepts.md)  
-[MSBuild](../msbuild/msbuild.md)  
-[Itens](../msbuild/msbuild-items.md)
+- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Itens](../msbuild/msbuild-items.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854103"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626616"
 ---
 # <a name="generateapplicationmanifest-task"></a>Tarefa GenerateApplicationManifest
 Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Um manifesto nativo descreve um componente definindo uma identidade exclusiva para ele e identificando todos os assemblies e arquivos que compõem o componente. Um manifesto do aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende um manifesto nativo indicando o ponto de entrada do aplicativo e especificando o nível de segurança do aplicativo.
@@ -88,7 +88,7 @@ Isso ilustra o cenário mais simples de geração de manifesto possível, no qua
 
 > [!NOTE]
 > No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
-> 
+>
 > [!NOTE]
 > Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ Este exemplo é semelhante ao exemplo anterior, exceto que o nome e a identidade
 
 > [!NOTE]
 > No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
-> 
+>
 > [!NOTE]
 > Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ Este exemplo usa as tarefas `GenerateApplicationManifest` e `GenerateDeploymentM
 
 > [!NOTE]
 > No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
-> 
+>
 > [!NOTE]
 > Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ Este exemplo produz *Test.exe.manifest*, tornando o aplicativo XCOPY implantáve
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Tarefas](../msbuild/msbuild-tasks.md)  
-[Tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)  
-[Tarefa SignFile](../msbuild/signfile-task.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
+- [Tarefa SignFile](../msbuild/signfile-task.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
