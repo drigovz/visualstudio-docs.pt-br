@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7bd27ceb83105a9d790937b3a5fcb904adf3abd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f3b9ed2a0a27c3be992f6dadd2a6f18c1f8df9bd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983970"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598902"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Consumo médio de CPU pelo processo cujo perfil está sendo criado.
 
-|||  
-|-|-|  
-|ID de regra|DA501|  
-|Categoria|Monitoramento de recursos|  
-|Método de criação de perfil|Todos|  
-|Mensagem|Consumo médio de CPU pelo Processo cujo perfil está sendo criado.|  
-|Tipo de regra|Informações|  
+|||
+|-|-|
+|ID de regra|DA501|
+|Categoria|Monitoramento de recursos|
+|Método de criação de perfil|Todos|
+|Mensagem|Consumo médio de CPU pelo Processo cujo perfil está sendo criado.|
+|Tipo de regra|Informações|
 
- Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  
+ Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.
 
-## <a name="rule-description"></a>Descrição da regra  
- Essa mensagem relata o percentual de tempo que um processador esteve ocupado executando instruções do aplicativo. O valor relatado é a média de todos os intervalos de medição em que o processo do qual o perfil está sendo criado estava ativo. O valor do valor pode ser maior que 100% em um computador com mais de um processador.  
+## <a name="rule-description"></a>Descrição da regra
+ Essa mensagem relata o percentual de tempo que um processador esteve ocupado executando instruções do aplicativo. O valor relatado é a média de todos os intervalos de medição em que o processo do qual o perfil está sendo criado estava ativo. O valor do valor pode ser maior que 100% em um computador com mais de um processador.
 
-## <a name="how-to-use-rule-data"></a>Como usar dados de regra  
+## <a name="how-to-use-rule-data"></a>Como usar dados de regra
  Use o valor da regra para comparar o desempenho de diferentes versões ou compilações do programa ou para entender o desempenho do aplicativo em diferentes cenários de teste.

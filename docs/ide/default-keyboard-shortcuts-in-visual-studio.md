@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270648"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607402"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -525,7 +525,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|Nenhuma|
+|Debug.Graphics.CaptureFrame|Nenhum|
 |Gráficos.MoverSeleçãoDePixelParaBaixo|**Shift+Alt+Seta para baixo**|
 |Gráficos.MoverSeleçãoDePixelParaEsquerda|**Shift+Alt+Seta para a esquerda**|
 |Gráficos.MoverSeleçãoDePixelParaDireita|**Shift+Alt+Seta para a direita**|
@@ -807,8 +807,8 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 | Edit.HideSelection | **Ctrl+M, Ctrl+H** |
 | Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **Ctrl+I** |
-| Edit.InsertCaretsatAllMatching | **Shift+Alt+;** | 
-| Edit.InsertNextMatchingCaret | **Shift+Alt+.** | 
+| Edit.InsertCaretsatAllMatching | **Shift+Alt+;** |
+| Edit.InsertNextMatchingCaret | **Shift+Alt+.** |
 | Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl+L** |
 | Edit.LineDelete | **Ctrl+Shift+L** |

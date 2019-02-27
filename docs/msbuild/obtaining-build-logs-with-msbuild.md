@@ -11,37 +11,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d372bf84d6b43547be160a50e52afffccd42bc89
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f7999e65a36968872816abfa8246c0e42ce699d3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035559"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627357"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obter logs de build com o MSBuild
 
-Usando opções com o MSBuild, você pode especificar quantos dados de build você deseja examinar e se deseja salvar os dados de build em um ou mais arquivos. Você também pode especificar um agente personalizado para coletar dados de build. Para saber mais sobre opções de linha de comando do MSBuild que este tópico não aborda, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
-  
+Usando opções com o MSBuild, você pode especificar quantos dados de build você deseja examinar e se deseja salvar os dados de build em um ou mais arquivos. Você também pode especificar um agente personalizado para coletar dados de build. Para saber mais sobre opções de linha de comando do MSBuild que este tópico não aborda, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
+
 > [!NOTE]
 > Se você compilar projetos usando o IDE do Visual Studio, poderá solucionar os builds examinando os logs de build. Para obter mais informações, confira [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
-  
-## <a name="set-the-level-of-detail"></a>Definir o nível de detalhes  
 
- Quando você compila um projeto usando MSBuild sem especificar um nível de detalhamento, as seguintes informações aparecem no log de saída:  
-  
-- Erros, avisos e mensagens que são classificados como altamente importante.  
-  
-- Alguns eventos de status.  
-  
-- Um resumo do build.  
+## <a name="set-the-level-of-detail"></a>Definir o nível de detalhes
 
-Usando a opção **-verbosity** (**-v**), você pode controlar a quantidade de dados exibida no log de saída. Para solucionar o problema, use um nível de detalhes de `detailed` (`d`) ou `diagnostic` (`diag`), que fornece o máximo de informações.  
+ Quando você compila um projeto usando MSBuild sem especificar um nível de detalhamento, as seguintes informações aparecem no log de saída:
 
-O processo de build pode ficar mais lento ao definir o **-verbosity** para `detailed` e ainda mais lento se definir o **-verbosity** para `diagnostic`.  
+- Erros, avisos e mensagens que são classificados como altamente importante.
+
+- Alguns eventos de status.
+
+- Um resumo do build.
+
+Usando a opção **-verbosity** (**-v**), você pode controlar a quantidade de dados exibida no log de saída. Para solucionar o problema, use um nível de detalhes de `detailed` (`d`) ou `diagnostic` (`diag`), que fornece o máximo de informações.
+
+O processo de build pode ficar mais lento ao definir o **-verbosity** para `detailed` e ainda mais lento se definir o **-verbosity** para `diagnostic`.
 
 ```cmd
-msbuild MyProject.proj -t:go -v:diag  
-```  
+msbuild MyProject.proj -t:go -v:diag
+```
 
 ### <a name="verbosity-settings"></a>Configurações de detalhes
 
@@ -56,33 +56,33 @@ A tabela a seguir mostra como os detalhes do log (valores de coluna) afetam quai
 | Mensagens de baixa prioridade              |       |         |        |     ✅    |      ✅     |
 | Informações adicionais do mecanismo MSBuild |       |         |        |          |      ✅     |
 
-## <a name="save-the-build-log-to-a-file"></a>Salvar o log de compilação em um arquivo  
+## <a name="save-the-build-log-to-a-file"></a>Salvar o log de compilação em um arquivo
 
-Você pode usar a opção **-fileLogger** (**fl**) para salvar dados de build em um arquivo. O exemplo a seguir salva dados de build em um arquivo chamado *msbuild.log*.  
+Você pode usar a opção **-fileLogger** (**fl**) para salvar dados de build em um arquivo. O exemplo a seguir salva dados de build em um arquivo chamado *msbuild.log*.
 
-```cmd  
-msbuild MyProject.proj -t:go -fileLogger  
-```  
+```cmd
+msbuild MyProject.proj -t:go -fileLogger
+```
 
- No exemplo a seguir, o arquivo de log é denominado *MyProjectOutput.log* e o detalhamento da saída do log é definida como `diagnostic`. Especifique essas duas configurações usando a opção **-filelogparameters** (`flp`).  
+ No exemplo a seguir, o arquivo de log é denominado *MyProjectOutput.log* e o detalhamento da saída do log é definida como `diagnostic`. Especifique essas duas configurações usando a opção **-filelogparameters** (`flp`).
 
-```cmd  
-msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
-```  
+```cmd
+msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
+```
 
- Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
-  
-## <a name="save-the-log-output-to-multiple-files"></a>Salvar a saída de log em vários arquivos  
+ Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
 
- O exemplo a seguir salva o log inteiro em *msbuild1.log*, apenas os erros em *JustErrors.log* e apenas os avisos em *JustWarnings.log*. O exemplo usa números de arquivo para cada um dos três arquivos. Os números de arquivo são especificados logo após as opções **-fl** e **-flp** (por exemplo, `-fl1` e `-flp1`).  
-  
- As opções **-filelogparameters** (`flp`) para arquivos 2 e 3 especificam o nome de cada arquivo e o que deve ser incluído em cada um. Nenhum nome foi especificado para o arquivo 1, então o nome padrão de *msbuild1.log* é usado.  
+## <a name="save-the-log-output-to-multiple-files"></a>Salvar a saída de log em vários arquivos
 
-```cmd  
-msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly  
-```  
+ O exemplo a seguir salva o log inteiro em *msbuild1.log*, apenas os erros em *JustErrors.log* e apenas os avisos em *JustWarnings.log*. O exemplo usa números de arquivo para cada um dos três arquivos. Os números de arquivo são especificados logo após as opções **-fl** e **-flp** (por exemplo, `-fl1` e `-flp1`).
 
- Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
+ As opções **-filelogparameters** (`flp`) para arquivos 2 e 3 especificam o nome de cada arquivo e o que deve ser incluído em cada um. Nenhum nome foi especificado para o arquivo 1, então o nome padrão de *msbuild1.log* é usado.
+
+```cmd
+msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly
+```
+
+ Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="save-a-binary-log"></a>Salvar um log binário
 
@@ -90,22 +90,22 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 No exemplo a seguir, é criado um arquivo de log binário com o nome *binarylogfilename*.
 
-```cmd  
+```cmd
 /bl:binarylogfilename.binlog
-``` 
+```
 
-Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
+Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
 
-## <a name="use-a-custom-logger"></a>Usar um agente personalizado  
+## <a name="use-a-custom-logger"></a>Usar um agente personalizado
 
- Você pode escrever seu próprio agente por meio da criação de um tipo gerenciado que implementa a interface <xref:Microsoft.Build.Framework.ILogger>. Você pode usar um agente personalizado, por exemplo, para enviar erros de build por email, registrá-los em um banco de dados ou em um arquivo XML. Para saber mais, confira [Agentes de build](../msbuild/build-loggers.md).  
-  
- Na linha de comando do MSBuild, você deve especificar o agente personalizado usando a opção **-logger**. Você também pode usar a opção **-noconsolelogger** para desabilitar o agente do console padrão.  
-  
-## <a name="see-also"></a>Consulte também  
+ Você pode escrever seu próprio agente por meio da criação de um tipo gerenciado que implementa a interface <xref:Microsoft.Build.Framework.ILogger>. Você pode usar um agente personalizado, por exemplo, para enviar erros de build por email, registrá-los em um banco de dados ou em um arquivo XML. Para saber mais, confira [Agentes de build](../msbuild/build-loggers.md).
 
- <xref:Microsoft.Build.Framework.LoggerVerbosity>   
- [Agentes de build](../msbuild/build-loggers.md)   
- [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)   
- [Criando agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)   
- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
+ Na linha de comando do MSBuild, você deve especificar o agente personalizado usando a opção **-logger**. Você também pode usar a opção **-noconsolelogger** para desabilitar o agente do console padrão.
+
+## <a name="see-also"></a>Consulte também
+
+- <xref:Microsoft.Build.Framework.LoggerVerbosity>
+- [Agentes de build](../msbuild/build-loggers.md)
+- [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Como criar Agentes de Encaminhamento](../msbuild/creating-forwarding-loggers.md)
+- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

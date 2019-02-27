@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf0e91e2d617877596798512140195b54f4d3f8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924542"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596341"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Lê `BOOL` valores em um conjunto de propriedades.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT ReadBOOL (   
-   PROPID id,  
-   BOOL*  pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `id`  
- [in] Identificador da propriedade a ser lido (`PROPID` é definido em wtypes. H como um `ULONG`).  
-  
- `pValue`  
- [out] Retorna o valor da propriedade.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Retorna `E_INVALIDARG` se a propriedade não é do tipo `BOOL`.  
-  
-## <a name="remarks"></a>Comentários  
- Para obter resultados consistentes, interpretar os `BOOL` de valor para que sejam valores diferentes de zero `TRUE` e zero é `FALSE`.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Lê `BOOL` valores em um conjunto de propriedades.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT ReadBOOL ( 
+   PROPID id,
+   BOOL*  pValue
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `id`
+
+[in] Identificador da propriedade a ser lido (`PROPID` é definido em wtypes. H como um `ULONG`).
+
+ `pValue`
+
+[out] Retorna o valor da propriedade.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Retorna `E_INVALIDARG` se a propriedade não é do tipo `BOOL`.
+
+## <a name="remarks"></a>Comentários
+ Para obter resultados consistentes, interpretar os `BOOL` de valor para que sejam valores diferentes de zero `TRUE` e zero é `FALSE`.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
