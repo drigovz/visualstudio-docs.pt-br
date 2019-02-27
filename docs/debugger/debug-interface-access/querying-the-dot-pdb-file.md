@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13520d6bdf6d6d5e778669bddc08378f4d506bc4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 3a67dc121790acff1f5e39a82a1711317616fc2d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227492"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616437"
 ---
 # <a name="querying-the-pdb-file"></a>Consultando o arquivo .Pdb
 Um arquivo de banco de dados do programa (extensão. PDB) é um arquivo binário que contém o tipo e informações de depuração simbólicas coletados ao longo do compilando e vinculando o projeto. Um arquivo PDB é criado quando você compila um programa C/C++ com **/ZI** ou **/Zi** ou uma [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], ou [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programar com o **/Debug** opção. Arquivos de objeto contêm referências no arquivo. PDB para informações de depuração. Para obter mais informações sobre arquivos pdb, consulte [arquivos PDB](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Um aplicativo de DIA pode usar as seguintes etapas gerais para obter detalhes sobre os vários símbolos, objetos e elementos de dados dentro de uma imagem executável.
@@ -91,4 +91,4 @@ Um arquivo de banco de dados do programa (extensão. PDB) é um arquivo binário
     ```
 
 ## <a name="see-also"></a>Consulte também
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

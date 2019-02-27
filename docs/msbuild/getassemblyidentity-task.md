@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadbc72f3d7bb21f313ddaae0de97ec45a7e72a3
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3e2d81701ae121b4666a10b6ce15fd8ae71e8920
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853762"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643789"
 ---
 # <a name="getassemblyidentity-task"></a>Tarefa GetAssemblyIdentity
 Recupera as identidades do assembly dos arquivos especificados e gera como saída as informações de identidade.
@@ -58,5 +58,5 @@ O exemplo a seguir recupera a identidade dos arquivos especificados no item `MyA
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Tarefas](../msbuild/msbuild-tasks.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

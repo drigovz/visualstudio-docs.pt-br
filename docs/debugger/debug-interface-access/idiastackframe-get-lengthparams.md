@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf9d5c24e175a3c12084330e01313da1d13b3c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f8505556e814493078bcd3944768011a2405510c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040080"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630568"
 ---
 # <a name="idiastackframegetlengthparams"></a>IDiaStackFrame::get_lengthParams
-Recupera o número de bytes de parâmetros enviados por push na pilha.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_lengthParams (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o número de bytes de parâmetros.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para a propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Recupera o número de bytes de parâmetros enviados por push na pilha.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_lengthParams ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o número de bytes de parâmetros.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para a propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

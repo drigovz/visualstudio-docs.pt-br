@@ -10,30 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49aa4df8c37a51ee5347c2a983c383c2ecca8ee0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8880d207a41418e12cab4374578fea4f3c4f338c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951957"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622443"
 ---
 # <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
-Recupera a ID de símbolo do qual o ponteiro se baseia.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_baseSymbolId(   
-   DWORD *pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Um ponteiro para um `DWORD` que contém a ID de símbolo do qual o ponteiro se baseia.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_baseSymbol](../../debugger/debug-interface-access/idiasymbol-get-basesymbol.md)
+Recupera a ID de símbolo do qual o ponteiro se baseia.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_baseSymbolId(
+   DWORD *pRetVal);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Um ponteiro para um `DWORD` que contém a ID de símbolo do qual o ponteiro se baseia.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_baseSymbol](../../debugger/debug-interface-access/idiasymbol-get-basesymbol.md)

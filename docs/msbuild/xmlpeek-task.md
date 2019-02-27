@@ -16,30 +16,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a23743bd2f7cc674e44ee3063553ed023b2d806
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19b8273617955092519bf16f0aa5b3fbea86218a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042459"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645054"
 ---
 # <a name="xmlpeek-task"></a>Tarefa XmlPeek
-Retorna os valores conforme especificado por uma consulta de XPath em um arquivo XML.  
-  
-## <a name="parameters"></a>Parâmetros  
- A tabela a seguir descreve os parâmetros da tarefa `XmlPeek`.  
-  
-|Parâmetro|Descrição|  
-|---------------|-----------------|  
-|`Namespaces`|Parâmetro `String` opcional.<br /><br /> Especifica os namespaces para prefixos de consulta do XPath.|  
-|`Query`|Parâmetro `String` opcional.<br /><br /> Especifica a consulta do XPath.|  
-|`Result`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém os resultados que são retornados por essa tarefa.|  
-|`XmlContent`|Parâmetro `String` opcional.<br /><br /> Especifica a entrada XML como uma cadeia de caracteres.|  
-|`XmlInputPath`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica a entrada XML como um caminho de arquivo.|  
-  
-## <a name="remarks"></a>Comentários  
- Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Tarefas](../msbuild/msbuild-tasks.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+Retorna os valores conforme especificado por uma consulta de XPath em um arquivo XML.
+
+## <a name="parameters"></a>Parâmetros
+ A tabela a seguir descreve os parâmetros da tarefa `XmlPeek`.
+
+|Parâmetro|Descrição|
+|---------------|-----------------|
+|`Namespaces`|Parâmetro `String` opcional.<br /><br /> Especifica os namespaces para prefixos de consulta do XPath.|
+|`Query`|Parâmetro `String` opcional.<br /><br /> Especifica a consulta do XPath.|
+|`Result`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém os resultados que são retornados por essa tarefa.|
+|`XmlContent`|Parâmetro `String` opcional.<br /><br /> Especifica a entrada XML como uma cadeia de caracteres.|
+|`XmlInputPath`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica a entrada XML como um caminho de arquivo.|
+
+## <a name="remarks"></a>Comentários
+ Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Consulte também
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

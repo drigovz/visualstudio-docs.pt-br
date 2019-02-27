@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dca6ea011392daf5492d68ac61483d5ac39a71a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8b920a9f1c3191bfea580df510c7a44c2b7929e4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039823"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629554"
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
-Recupera uma referência ao símbolo compiland que contribuíram nesta seção.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_compiland (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland que contribuíram nesta seção.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera uma referência ao símbolo compiland que contribuíram nesta seção.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_compiland ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland que contribuíram nesta seção.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

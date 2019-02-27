@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea60c8d7001b906bf9f994e2d48974fe0e2da1f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937360"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610444"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Como: Compilar destinos específicos em soluções usando o MSBuild.exe
-Use o *MSBuild.exe* para criar destinos específicos de projetos específicos em uma solução.  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Para criar um destino específico de um projeto específico em uma solução  
-  
-1.  Na linha de comando, digite `MSBuild.exe <SolutionName>.sln`, em que `<SolutionName>` corresponde ao nome de arquivo da solução que contém o destino que você deseja executar.  
-  
+Use o *MSBuild.exe* para criar destinos específicos de projetos específicos em uma solução.
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Para criar um destino específico de um projeto específico em uma solução
+
+1.  Na linha de comando, digite `MSBuild.exe <SolutionName>.sln`, em que `<SolutionName>` corresponde ao nome de arquivo da solução que contém o destino que você deseja executar.
+
 2. Especifique o destino após a opção `-target:` no formato \<NomeProjeto>:\<NomeDestino>. Se o nome do projeto contiver algum dos caracteres `%`, `$`, `@`, `;`, `.`, `(`, `)` ou `'`, substitua-os por um `_` no nome de destino especificado.
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir executa o destino `Rebuild` do projeto `NotInSlnFolder` e, em seguida, executa o destino `Clean` do projeto `InSolutionFolder`, que está localizado na pasta de solução *NewFolder*.  
-  
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir executa o destino `Rebuild` do projeto `NotInSlnFolder` e, em seguida, executa o destino `Clean` do projeto `InSolutionFolder`, que está localizado na pasta de solução *NewFolder*.
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ Se quiser examinar as opções disponíveis para você, será possível usar uma
 
 Não compile com essa variável de ambiente definida a menos que precise dessa exibição interna. Essa configuração pode causar problemas ao criar projetos na sua solução.
 
-## <a name="see-also"></a>Consulte também  
- [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)   
- [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Consulte também
+- [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)
+- [Referência do MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

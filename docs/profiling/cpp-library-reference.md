@@ -10,21 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66264af71d93bb83c217360668a14c5cae2bf812
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975940"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634338"
 ---
 # <a name="c-library-reference"></a>Referência de biblioteca C++
-Esta seção contém informações de referência para o SDK da Visualização Simultânea.  
-  
+
+Esta seção contém informações de referência para o SDK da Visualização Simultânea.
+
 > [!NOTE]
->  O padrão da linguagem C++ reserva o uso de identificadores que começam com um caractere de sublinhado (`_`) a implementações, como bibliotecas. Não use nomes que começam com um sublinhado no código. O comportamento de elementos de código cujos nomes seguem essa convenção não é garantido e está sujeito a alteração em versões futuras. Por esses motivos, esses elementos de código são omitidos desta documentação.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Namespace de simultaneidade (Visualização Simultânea)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
-  
-## <a name="see-also"></a>Consulte também  
- [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)
+> O padrão da linguagem C++ reserva o uso de identificadores que começam com um caractere de sublinhado (`_`) a implementações, como bibliotecas. Não use nomes que começam com um sublinhado no código. O comportamento de elementos de código cujos nomes seguem essa convenção não é garantido e está sujeito a alteração em versões futuras. Por esses motivos, esses elementos de código são omitidos desta documentação.
+
+## <a name="in-this-section"></a>Nesta seção
+
+[Namespace de simultaneidade (Visualização Simultânea)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+
+## <a name="see-also"></a>Consulte também
+
+- [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)

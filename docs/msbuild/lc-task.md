@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5759be35cda11557847d128233811d8aaffced7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa9a210b61a1ba28d2dca2f81184b3d20a91ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938918"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638695"
 ---
 # <a name="lc-task"></a>tarefa LC
 Encapsula *LC.exe*, que gera um arquivo *.license* com base em um arquivo *.licx*. Para obter mais informações sobre *LC.exe*, confira [Lc.exe (Compilador de Licença)](/dotnet/framework/tools/lc-exe-license-compiler).
@@ -67,5 +67,5 @@ O exemplo a seguir usa a tarefa `LC` para compilar licenças.
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Tarefas](../msbuild/msbuild-tasks.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

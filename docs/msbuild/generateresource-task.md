@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c63e9293cffca2c1b071dcd537c0f49f8faa438
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853973"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615904"
 ---
 # <a name="generateresource-task"></a>Tarefa GenerateResource
 Converte entre arquivos *.txt* e *.resx* (formato de recurso baseado em XML) e arquivos *.resources* binários do Common Language Runtime que podem ser inseridos em um executável binário do tempo de execução ou compilados em assemblies satélite. Essa tarefa geralmente é usada para converter arquivos *.txt* ou *.resx* em arquivos *.resources*. A tarefa `GenerateResource` é funcionalmente semelhante a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
@@ -95,5 +95,5 @@ Supondo que o assembly seja nomeado myAssembly, o seguinte código gera um recur
 Sem os metadados de \<LogicalName>, o recurso é nomeado *myAssembly.myResource.resources*.  Este exemplo aplica-se somente ao processo de build do Visual Basic e Visual C#.
 
 ## <a name="see-also"></a>Consulte também
-[Tarefas](../msbuild/msbuild-tasks.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
