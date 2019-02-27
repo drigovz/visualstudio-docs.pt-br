@@ -26,7 +26,7 @@ ms.locfileid: "56636899"
 
 As janelas **Autos** e **Locals** mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. A janela **Autos** mostra as variáveis usadas em torno do ponto de interrupção atual. A janela **Locals** mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md) antes de prosseguir com este artigo.
 
- A janela **Autos** está disponível para C#, código do Visual Basic, C++ e Python, mas não para JavaScript ou F#.
+ A janela **Autos** está disponível para código C#, Visual Basic, C++ e Python, mas não para JavaScript ou F#.
 
 Para abrir a janela **Autos**, durante a depuração, selecione **Debug** > **Windows** > **Autos**, ou pressione **Ctrl**+**Alt**+**V** > **um**.
 
