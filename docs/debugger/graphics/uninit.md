@@ -8,26 +8,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c4e76105c024f9f414a884c2e3cabde716db86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8165b2e1993a6ea52127536a058f662e1a3d92cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019103"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711807"
 ---
 # <a name="uninit"></a>UnInit
-Finaliza o arquivo de log de gráficos, fecha e libera os recursos que foram usados enquanto o aplicativo ativamente estava gravando informações de gráficos.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-void UnInit();  
-```  
-  
-## <a name="remarks"></a>Comentários  
- `UnInit` é chamado automaticamente quando uma instância da `VsgDbg` classe seja destruída. Se o `VsgDbg` instância não estava gravando ativamente informações de gráficos, isso não tem nenhum efeito.  
-  
- Após `UnInit` foi chamado em uma instância da `VsgDbg` classe, uma gráfico novo arquivo de log pode ser criado chamando `Init` e finalização, chamando `UnInit`. Você pode repetir isso quantas vezes você deseja usar o mesmo `VsgDbg` instância para criar gráficos independentes de vários arquivos de log.  
-  
-## <a name="see-also"></a>Consulte também  
- [Init](init.md)
+Finaliza o arquivo de log de gráficos, fecha e libera os recursos que foram usados enquanto o aplicativo ativamente estava gravando informações de gráficos.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+void UnInit();
+```
+
+## <a name="remarks"></a>Comentários
+ `UnInit` é chamado automaticamente quando uma instância da `VsgDbg` classe seja destruída. Se o `VsgDbg` instância não estava gravando ativamente informações de gráficos, isso não tem nenhum efeito.
+
+ Após `UnInit` foi chamado em uma instância da `VsgDbg` classe, uma gráfico novo arquivo de log pode ser criado chamando `Init` e finalização, chamando `UnInit`. Você pode repetir isso quantas vezes você deseja usar o mesmo `VsgDbg` instância para criar gráficos independentes de vários arquivos de log.
+
+## <a name="see-also"></a>Consulte também
+- [Init](init.md)

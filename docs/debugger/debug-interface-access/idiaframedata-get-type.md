@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c73f99fdb210c611287f07c5ba4131b3a2d2d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a7096550dc3de67ba38058c4029a6bd3c30ca4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025970"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611484"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
-Recupera o tipo de quadro específicos do compilador.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_type (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna um valor da [enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) enumeração que indica o tipo de quadro específicos do compilador.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)
+Recupera o tipo de quadro específicos do compilador.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_type ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna um valor da [enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) enumeração que indica o tipo de quadro específicos do compilador.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)

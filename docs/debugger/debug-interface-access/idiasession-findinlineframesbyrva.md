@@ -10,40 +10,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07465a6a85febeb9abd65964f3d396c218ea3b4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98b441e52d3d24a5ccd738fe1ac65b268a30a2bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984035"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625966"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-Recupera uma enumeração que permite que um cliente iterar em todos os quadros embutidos em um endereço relativo virtual (RVA) especificado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT findInlineFramesByRVA (   
-   IDiaSymbol*       parent,   DWORD             rva,  
-   IDiaEnumSymbols** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `parent`  
- [in] Um `IDiaSymbol` que representa o pai do objeto.  
-  
- `rva`  
- [in] Especifica o endereço como um RVA.  
-  
- `ppResult`  
- [out] Mantém um `IDiaEnumSymbols` objeto que contém a lista de quadros que são recuperados.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Recupera uma enumeração que permite que um cliente iterar em todos os quadros embutidos em um endereço relativo virtual (RVA) especificado.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT findInlineFramesByRVA ( 
+   IDiaSymbol*       parent,   DWORD             rva,
+   IDiaEnumSymbols** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `parent`
+
+[in] Um `IDiaSymbol` que representa o pai do objeto.
+
+ `rva`
+
+[in] Especifica o endereço como um RVA.
+
+ `ppResult`
+
+[out] Mantém um `IDiaEnumSymbols` objeto que contém a lista de quadros que são recuperados.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

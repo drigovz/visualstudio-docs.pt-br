@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 415cf28fa5b130a53d10226255facae91bf7ea4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd9dd34bd75199f2af3e14a96a12af663b2ba1f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036856"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616424"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
-Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumLineNumbers** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppenum`  
- [out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma duplicata do enumerador. A linha números não são duplicados, apenas o enumerador...  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumLineNumbers** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppenum`
+
+[out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma duplicata do enumerador. A linha números não são duplicados, apenas o enumerador...
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

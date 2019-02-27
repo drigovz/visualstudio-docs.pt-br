@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 572db4071fecc9bb235bc79a8d0c7b182b907cb4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9992b17155601284387981a9b424a77d3d9b5580
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070718"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616606"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
-Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumSegments** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- ppenum  
- [out] Retorna um [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md) objeto que contém uma duplicata do enumerador. Os segmentos não são duplicados, apenas o enumerador.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumSegments** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ ppenum
+
+[out] Retorna um [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md) objeto que contém uma duplicata do enumerador. Os segmentos não são duplicados, apenas o enumerador.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

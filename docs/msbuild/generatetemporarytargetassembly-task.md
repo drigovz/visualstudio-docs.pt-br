@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853862"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610028"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Tarefa GenerateTemporaryTargetAssembly
 A tarefa [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] gera um assembly se pelo menos uma página <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> em um projeto referencia um tipo declarado localmente no projeto. O assembly gerado será removido após concluir o processo de build ou se o processo de build falhar.
@@ -71,9 +71,9 @@ O exemplo a seguir gera um assembly temporário porque *Page1.xaml* contém uma 
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)  
-[Referência do MSBuild](../msbuild/msbuild-reference.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)  
-[Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Visão geral dos aplicativos de navegador XAML do WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)
+- [Referência do MSBuild](../msbuild/msbuild-reference.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Visão geral dos aplicativos de navegador XAML do WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

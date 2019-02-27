@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 682461df50999f14d3f8ca1f3acbee7c69559c8d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908576"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840825"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -30,7 +30,7 @@ Quando você entrar, enriquecerá sua experiência no Visual Studio. Por exemplo
 
 Veja uma lista completa do que é possível esperar e fazer após entrar:
 
-- **Acesso ao programa Visual Studio Dev Essentials** – Este programa inclui ofertas de software gratuito, treinamento, suporte e mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp).
+- **Acesso ao programa Visual Studio Dev Essentials** – Este programa inclui ofertas de software gratuito, treinamento, suporte e mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp).
 
 - **Sincronizar as configurações do Visual Studio** – As configurações que você personaliza, como associações de teclas, layout da janela e tema de cores, são aplicadas imediatamente quando você entra no Visual Studio em qualquer dispositivo. Confira [Configurações sincronizadas no Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 

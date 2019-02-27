@@ -22,26 +22,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b177ec2664014fa547908aa18e19f605a83a8282
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 17e0c76e45dccb657b90fa0b36934061944cac0b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931876"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700075"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Como depurar funções de API do Windows?
-Se você desejar depurar uma função de API do Windows que tenha os símbolos do NT carregados, deverá fazer o seguinte.  
-  
-### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Para definir um ponto de interrupção em uma função de API do Windows com os símbolos do NT carregados  
-  
--   Digite o nome da função junto com o nome da DLL em que a função reside. No código de 32 bits, use a forma decorada do nome da função. Para definir um ponto de interrupção em **MessageBeep**, por exemplo, você precisa inserir o seguinte.  
-  
+Se você desejar depurar uma função de API do Windows que tenha os símbolos do NT carregados, deverá fazer o seguinte.
+
+### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Para definir um ponto de interrupção em uma função de API do Windows com os símbolos do NT carregados
+
+-   Digite o nome da função junto com o nome da DLL em que a função reside. No código de 32 bits, use a forma decorada do nome da função. Para definir um ponto de interrupção em **MessageBeep**, por exemplo, você precisa inserir o seguinte.
+
     ```cpp
-    {,,USER32.DLL}_MessageBeep@4  
-    ```  
-  
-     Para obter o nome decorado, consulte [exibindo nomes decorados](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).  
-  
-## <a name="see-also"></a>Consulte também  
- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Depurando código nativo](../debugger/debugging-native-code.md)
+    {,,USER32.DLL}_MessageBeep@4
+    ```
+
+     Para obter o nome decorado, consulte [exibindo nomes decorados](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)
+- [Depurando código nativo](../debugger/debugging-native-code.md)

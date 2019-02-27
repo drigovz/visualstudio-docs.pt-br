@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 980a9c49ee801af0caf45ecd6123c6af3e26f1ae
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 5cf6627b23f7421dc164cf13bbaab46e8d7a2577
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853619"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615241"
 ---
 # <a name="assignculture-task"></a>Tarefa AssignCulture
 Essa tarefa aceita uma lista de itens que pode conter uma cadeia de caracteres de identificador de cultura .NET válida como parte do nome de arquivo e produz itens com metadados nomeados como `Culture` que contêm o identificador de cultura correspondente. Por exemplo, o nome de arquivo *Form1.fr-fr.resx* tem um identificador de cultura "fr-fr" inserido; portanto, essa tarefa produzirá um item com o mesmo nome de arquivo e com os metadados `Culture` iguais a `fr-fr`. A tarefa também produz uma lista de nomes de arquivo com a cultura removida do nome de arquivo.
@@ -78,5 +78,5 @@ A tabela a seguir descreve o valor dos itens de saída após a execução da tar
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Cultura="fr")<br /><br /> *MyResource2.XX.resx* (sem metadados adicionais)|
 
 ## <a name="see-also"></a>Consulte também
-[Tarefas](../msbuild/msbuild-tasks.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

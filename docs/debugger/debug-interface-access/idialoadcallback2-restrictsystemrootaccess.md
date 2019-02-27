@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b15d8cb68336de044e79484533124cbb8080348
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 421581520f28037bc4b8fce9d546eaffad557f75
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036076"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643009"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
-Determina se a procura de arquivos. PDB é permitido no diretório raiz do sistema.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT RestrictSystemRootAccess();  
-```  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Qualquer código de retorno diferente de `S_OK` impede que pesquisa a raiz do sistema de arquivos. PDB.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Determina se a procura de arquivos. PDB é permitido no diretório raiz do sistema.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT RestrictSystemRootAccess();
+```
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Qualquer código de retorno diferente de `S_OK` impede que pesquisa a raiz do sistema de arquivos. PDB.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

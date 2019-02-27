@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d33e1ae22da7980b9f4228243e93568864535ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6346b7751ccb076298c406f3f3e583991bfadfe7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069194"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702948"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Como posso descobrir quem está passando um valor de parâmetro incorreto?
-## <a name="problem-description"></a>Descrição do problema  
- O valor de parâmetro errado está sendo passado a uma de minhas funções. Essa função é chamada de todos os pontos Como posso descobrir o que está passando o valor errado?  
-  
-## <a name="solution"></a>Solução  
-  
-#### <a name="to-resolve-this-problem"></a>Para resolver esse problema  
-  
-1.  Defina um local de ponto de interrupção no início da função.  
-  
-2.  Clique com o botão direito do mouse no ponto de interrupção e selecione **Condição**.  
-  
-3.  Na caixa de diálogo **Condição de Ponto de Interrupção**, clique na caixa de seleção **Condição**. Ver [avançadas de pontos de interrupção](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
-  
-4.  Digite uma expressão, como `Var==3`, na caixa de texto, onde `Var` é o nome do parâmetro que contém o valor incorreto, e `3` é o valor incorreto passado para ele.  
-  
-5.  Selecione o botão de opção **é True** e clique no botão **OK**.  
-  
-6.  Agora, execute o programa novamente. O ponto de interrupção faz com que o programa pare no início da função quando o parâmetro `Var` tiver o valor `3`.  
-  
-7.  Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Para obter mais informações, confira [Como: Usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Pontos de interrupção](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
- [Depurando código nativo](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Descrição do problema
+ O valor de parâmetro errado está sendo passado a uma de minhas funções. Essa função é chamada de todos os pontos Como posso descobrir o que está passando o valor errado?
+
+## <a name="solution"></a>Solução
+
+#### <a name="to-resolve-this-problem"></a>Para resolver esse problema
+
+1.  Defina um local de ponto de interrupção no início da função.
+
+2.  Clique com o botão direito do mouse no ponto de interrupção e selecione **Condição**.
+
+3.  Na caixa de diálogo **Condição de Ponto de Interrupção**, clique na caixa de seleção **Condição**. Ver [avançadas de pontos de interrupção](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+
+4.  Digite uma expressão, como `Var==3`, na caixa de texto, onde `Var` é o nome do parâmetro que contém o valor incorreto, e `3` é o valor incorreto passado para ele.
+
+5.  Selecione o botão de opção **é True** e clique no botão **OK**.
+
+6.  Agora, execute o programa novamente. O ponto de interrupção faz com que o programa pare no início da função quando o parâmetro `Var` tiver o valor `3`.
+
+7.  Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Para obter mais informações, consulte [como: usar a janela pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)
+- [Pontos de interrupção](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [Depurando código nativo](../debugger/debugging-native-code.md)

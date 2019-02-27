@@ -12,38 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37236435204bc5fc5d7f971b1ecbf14ca628dd13
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1b7819c90804933795c220c4d47f288d29abfe1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010422"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616554"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
-Recupera um número especificado de fluxos de depuração na sequência de enumeração.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT Next (   
-   ULONG                     celt,   
-   IDiaEnumDebugStreamData** rgelt,  
-   ULONG*                    pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- celt  
- [in] O número de fluxos de depuração no enumerador a ser recuperado.  
-  
- rgelt  
- [out] Retorna uma matriz de [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objetos que representa a depuração fluxos que estão sendo recuperados.  
-  
- pceltFetched  
- [out] Retorna o número de fluxos de depuração retornados.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum mais fluxos. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Recupera um número especificado de fluxos de depuração na sequência de enumeração.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Next ( 
+   ULONG                     celt,
+   IDiaEnumDebugStreamData** rgelt,
+   ULONG*                    pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ celt
+
+[in] O número de fluxos de depuração no enumerador a ser recuperado.
+
+ rgelt
+
+[out] Retorna uma matriz de [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objetos que representa a depuração fluxos que estão sendo recuperados.
+
+ pceltFetched
+
+[out] Retorna o número de fluxos de depuração retornados.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum mais fluxos. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a15e0001342a31d13cb1b77f2c8e6d7fc4d31c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936262"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621741"
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Recupera um sinalizador que indica se a seção é um registro COMDAT.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_comdat (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se a seção COMDAT registro; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Um registro COMDAT é um registro de comuns objeto COFF (File Format) que torna as funções empacotadas visíveis para o vinculador.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Recupera um sinalizador que indica se a seção é um registro COMDAT.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_comdat ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se a seção COMDAT registro; caso contrário, retornará `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Um registro COMDAT é um registro de comuns objeto COFF (File Format) que torna as funções empacotadas visíveis para o vinculador.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

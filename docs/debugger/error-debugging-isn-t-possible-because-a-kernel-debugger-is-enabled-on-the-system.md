@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema | Microsoft Docs'
+title: 'Erro: A depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,88 +16,88 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35910a7682d4e9a6d848f270dd8d6c86e4bd850
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954144"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709662"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erro: Depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema
-Quando você depura o código gerenciado, talvez receba a seguinte mensagem de erro:  
-  
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erro: A depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema
+Quando você depura o código gerenciado, talvez receba a seguinte mensagem de erro:
+
 ```cmd
-Debugging isn't possible because a kernel debugger is enabled on the system  
-```  
-  
- Essa mensagem ocorre quando você tenta depurar o código gerenciado:  
-  
-- em um sistema do [!INCLUDE[win7](../debugger/includes/win7_md.md)] ou [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]que foi iniciado em modo de depuração.  
-  
-- o aplicativo usa o CLR versão 2.0, 3.0 ou 3.5.  
-  
-## <a name="solution"></a>Solução  
-  
-#### <a name="to-fix-this-problem"></a>Para corrigir esse problema  
-  
-- Atualizar seu aplicativo para usar a versão 4.0 ou 4.5 do CLR  
-  
-   —ou—  
-  
-- Desabilite a depuração de kernel e depure-a no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-   —ou—  
-  
-- Depure usando o depurador de kernel em vez do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-   —ou—  
-  
-- No depurador de kernel, desabilite as exceções em modo de usuário.  
-  
-#### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Para desabilitar a depuração de kernel na sessão atual  
-  
--   No prompt de comando, digite:  
-  
+Debugging isn't possible because a kernel debugger is enabled on the system
+```
+
+ Essa mensagem ocorre quando você tenta depurar o código gerenciado:
+
+- em um sistema do [!INCLUDE[win7](../debugger/includes/win7_md.md)] ou [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]que foi iniciado em modo de depuração.
+
+- o aplicativo usa o CLR versão 2.0, 3.0 ou 3.5.
+
+## <a name="solution"></a>Solução
+
+#### <a name="to-fix-this-problem"></a>Para corrigir esse problema
+
+- Atualizar seu aplicativo para usar a versão 4.0 ou 4.5 do CLR
+
+   —ou—
+
+- Desabilite a depuração de kernel e depure-a no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+   —ou—
+
+- Depure usando o depurador de kernel em vez do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+   —ou—
+
+- No depurador de kernel, desabilite as exceções em modo de usuário.
+
+#### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Para desabilitar a depuração de kernel na sessão atual
+
+-   No prompt de comando, digite:
+
     ```cmd
-    Kdbgctrl.exe -d  
-    ```  
-  
-#### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Para desabilitar a depuração de kernel para todas as sessões (Windows Vista e Windows 7)  
-  
-1.  No prompt de comando, digite:  
-  
+    Kdbgctrl.exe -d
+    ```
+
+#### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Para desabilitar a depuração de kernel para todas as sessões (Windows Vista e Windows 7)
+
+1.  No prompt de comando, digite:
+
     ```cmd
-    bcdedit /debug off   
-    ```  
-  
-2.  Reinicie o computador.  
-  
-#### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Para desabilitar a depuração de kernel para todas as sessões (outros sistemas operacionais Windows)  
-  
-1.  Localize boot.ini na unidade do sistema (normalmente C:\\). O arquivo boot.ini pode ser ocultado e somente leitura. Portanto, você deve usar o seguinte comando para vê-lo:  
-  
+    bcdedit /debug off
+    ```
+
+2.  Reinicie o computador.
+
+#### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Para desabilitar a depuração de kernel para todas as sessões (outros sistemas operacionais Windows)
+
+1.  Localize boot.ini na unidade do sistema (normalmente C:\\). O arquivo boot.ini pode ser ocultado e somente leitura. Portanto, você deve usar o seguinte comando para vê-lo:
+
     ```cmd
-    dir /ASH  
-    ```  
-  
-2.  Abra o boot.ini usando o Bloco de Notas e remova as seguintes opções:  
-  
+    dir /ASH
+    ```
+
+2.  Abra o boot.ini usando o Bloco de Notas e remova as seguintes opções:
+
     ```cmd
-    /debug  
-    /debugport  
-    /baudrate  
-    ```  
-  
-3.  Reinicie o computador.  
-  
-#### <a name="to-debug-with-the-kernel-debugger"></a>Para depurar com o depurador de kernel  
-  
-1.  Se o depurador de kernel estiver associado, você verá uma mensagem que pergunta se quer continuar a depuração. Clique no botão para continuar.  
-  
-2.  Você poderá obter um `User break exception(Int 3).` Se isso ocorrer, digite o seguinte comando do depurador de kernel para continuar a depuração:  
-  
-     `gn`  
-  
-## <a name="see-also"></a>Consulte também  
- [Segurança do depurador](../debugger/debugger-security.md)   
- [Depurando código gerenciado](../debugger/debugging-managed-code.md)
+    /debug
+    /debugport
+    /baudrate
+    ```
+
+3.  Reinicie o computador.
+
+#### <a name="to-debug-with-the-kernel-debugger"></a>Para depurar com o depurador de kernel
+
+1.  Se o depurador de kernel estiver associado, você verá uma mensagem que pergunta se quer continuar a depuração. Clique no botão para continuar.
+
+2.  Você poderá obter um `User break exception(Int 3).` Se isso ocorrer, digite o seguinte comando do depurador de kernel para continuar a depuração:
+
+     `gn`
+
+## <a name="see-also"></a>Consulte também
+- [Segurança do depurador](../debugger/debugger-security.md)
+- [Depurando código gerenciado](../debugger/debugging-managed-code.md)

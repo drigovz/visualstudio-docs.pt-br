@@ -15,53 +15,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccba6de5795dd461c2a68f6aeeb593314ceede09
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962476"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639421"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Agendas&gt; elemento (bootstrapper)
-O `Schedules` elemento contém `Schedule` elementos, que definem a horários específicos em quais comandos definidos pelo `Command` elemento deve ser executado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
+O `Schedules` elemento contém `Schedule` elementos, que definem a horários específicos em quais comandos definidos pelo `Command` elemento deve ser executado.
+
+## <a name="syntax"></a>Sintaxe
+
 ```xml
-<Schedules>  
-    <Schedule  
-        Name  
-    >  
-        <BuildList />  
-        <BeforePackage />  
-        <AfterPackage />  
-    </Schedule>  
-</Schedules>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `Schedules` um filho do elemento é o `Product` elemento. Cada `Product` elemento pode ter no máximo um `Schedules` elemento. O `Schedules` elemento não tem atributos.  
-  
-## <a name="schedule"></a>Agendamento  
- O `Schedule` um filho do elemento é o `Schedules` elemento. Um `Schedules` elemento deve ter pelo menos um `Schedule` elemento.  
-  
- `Schedule` tem o seguinte atributo.  
-  
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`Name`|Necessário. O nome do item de agenda. Isso corresponde do `ScheduleName` propriedade do `Command` elemento. Quando um `Command` faz referência a agenda nomeada, ele será executado somente no período indicado pelo que `Schedule` elemento. Agendas também podem ser associadas com o `FailIf` e `BypassIf` elementos, que restringem esses testes condicionais para execução no agendamento especificado. Para obter mais informações, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
-  
- Uma determinada `Schedule` elemento pode ter exatamente um dos seguintes filhos.  
-  
-## <a name="buildlist"></a>BuildList  
- O `BuildList` elemento instrui o instalador para executar um comando imediatamente após o aplicativo de inicialização é iniciado.  
-  
-## <a name="beforepackage"></a>BeforePackage  
- O `BeforePackage` elemento instrui o instalador para executar um comando antes de instalar o pacote especificado.  
-  
-## <a name="afterpackage"></a>AfterPackage  
- O `AfterPackage` elemento instrui o instalador para executar um comando depois de instalar o pacote especificado.  
-  
-## <a name="see-also"></a>Consulte também  
- [\<Produto > elemento](../deployment/product-element-bootstrapper.md)   
- [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
+<Schedules>
+    <Schedule
+        Name
+    >
+        <BuildList />
+        <BeforePackage />
+        <AfterPackage />
+    </Schedule>
+</Schedules>
+```
+
+## <a name="elements-and-attributes"></a>Elementos e atributos
+ O `Schedules` um filho do elemento é o `Product` elemento. Cada `Product` elemento pode ter no máximo um `Schedules` elemento. O `Schedules` elemento não tem atributos.
+
+## <a name="schedule"></a>Agendamento
+ O `Schedule` um filho do elemento é o `Schedules` elemento. Um `Schedules` elemento deve ter pelo menos um `Schedule` elemento.
+
+ `Schedule` tem o seguinte atributo.
+
+|Atributo|Descrição|
+|---------------|-----------------|
+|`Name`|Necessário. O nome do item de agenda. Isso corresponde do `ScheduleName` propriedade do `Command` elemento. Quando um `Command` faz referência a agenda nomeada, ele será executado somente no período indicado pelo que `Schedule` elemento. Agendas também podem ser associadas com o `FailIf` e `BypassIf` elementos, que restringem esses testes condicionais para execução no agendamento especificado. Para obter mais informações, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|
+
+ Uma determinada `Schedule` elemento pode ter exatamente um dos seguintes filhos.
+
+## <a name="buildlist"></a>BuildList
+ O `BuildList` elemento instrui o instalador para executar um comando imediatamente após o aplicativo de inicialização é iniciado.
+
+## <a name="beforepackage"></a>BeforePackage
+ O `BeforePackage` elemento instrui o instalador para executar um comando antes de instalar o pacote especificado.
+
+## <a name="afterpackage"></a>AfterPackage
+ O `AfterPackage` elemento instrui o instalador para executar um comando depois de instalar o pacote especificado.
+
+## <a name="see-also"></a>Consulte também
+- [\<Produto > elemento](../deployment/product-element-bootstrapper.md)
+- [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

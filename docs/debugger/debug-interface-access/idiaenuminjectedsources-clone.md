@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece73b97ec0129b2acd26c8751ab8b10909ee4ed
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036115"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632557"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumInjectedSources** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppenum`  
- [out] Retorna um [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) objeto que contém uma duplicata do enumerador. As fontes injetadas não são duplicadas, apenas o enumerador.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumInjectedSources** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppenum`
+
+[out] Retorna um [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) objeto que contém uma duplicata do enumerador. As fontes injetadas não são duplicadas, apenas o enumerador.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

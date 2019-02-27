@@ -11,35 +11,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 861129a6251f0142a22cd916cddbfd95d03b22db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938546"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692392"
 ---
 # <a name="spy-views"></a>Exibições do Spy++
-Spy + + exibe modos de exibição de árvore do windows, mensagens, processos e threads disponíveis no seu computador.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Exibição de janelas](../debugger/windows-view.md)  
- Exibe uma exibição de árvore do windows disponível e controles.  
-  
- [Exibição de Mensagens](../debugger/messages-view.md)  
- Exibe o fluxo de mensagem associado a uma janela, processo ou thread.  
-  
- [Exibição de processos](../debugger/processes-view.md)  
- Exibe uma exibição de árvore de processos ativos.  
-  
- [Exibição de Threads](../debugger/threads-view.md)  
- Exibe uma exibição de árvore de threads ativos.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Ferramentas de pesquisa para as exibições do Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Caixas de diálogo usadas para localizar nós específicos no windows de exibições do Spy + +.  
-  
- [Usando Spy++](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
-  
- [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+Spy + + exibe modos de exibição de árvore do windows, mensagens, processos e threads disponíveis no seu computador.
+
+## <a name="in-this-section"></a>Nesta seção
+ [Modo de exibição do Windows](../debugger/windows-view.md) exibe uma exibição de árvore do windows disponível e controles.
+
+ [A exibição de mensagens](../debugger/messages-view.md) exibe o fluxo de mensagem associado a uma janela, processo ou thread.
+
+ [Exibição de processos](../debugger/processes-view.md) exibe uma árvore de processos ativos.
+
+ [Exibição de threads](../debugger/threads-view.md) exibe uma árvore de threads ativos.
+
+## <a name="related-sections"></a>Seções relacionadas
+ [Ferramentas de pesquisa para exibições do Spy + +](../debugger/search-tools-for-spy-increment-views.md) caixas de diálogo usadas para localizar nós específicos no windows de exibições do Spy + +.
+
+ [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+
+ [Referência de Spy + +](../debugger/spy-increment-reference.md) inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.

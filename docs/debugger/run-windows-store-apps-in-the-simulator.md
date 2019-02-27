@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949788"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710533"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Executar aplicativos UWP no simulador
 O simulador do Visual Studio para aplicativos UWP é um aplicativo da área de trabalho que simula um aplicativo UWP. Normalmente, convém depurar no computador local, um dispositivo conectado ou um computador remoto. No entanto, em alguns cenários, você talvez queira usar o simulador do Visual Studio para emular um tamanho da tela física diferente e resolução. Você também pode simular eventos comuns de toque e rotação e simular propriedades de conexão de rede.
@@ -107,7 +107,7 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo da área de t
      ![Menu de contexto de configurações de captura de tela](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
 
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propriedades de conexão de rede
- Você pode ajudar os usuários de seu aplicativo a gerenciar os custos de conexões de rede limitadas mantendo a percepção desses custos da conexão de rede ou das alterações de status do plano de dados e habilitando o seu aplicativo para usar essas informações a fim de evitar a cobrança de custos adicionais por roaming ou exceder um limite especificado de transferência de dados. O [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) APIs permitem que você responda aos [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) eventos que assinar. (Confira [Início Rápido: Gerenciando restrições de custo de rede limitada](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+ Você pode ajudar os usuários de seu aplicativo a gerenciar os custos de conexões de rede limitadas mantendo a percepção desses custos da conexão de rede ou das alterações de status do plano de dados e habilitando o seu aplicativo para usar essas informações a fim de evitar a cobrança de custos adicionais por roaming ou exceder um limite especificado de transferência de dados. O [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) APIs permitem que você responda aos [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) eventos que assinar. Ver [guia de início rápido: restrições de custo de gerenciamento de rede limitada](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
  Para depurar ou testar seu código com reconhecimento de custo de rede, o simulador pode imitar as propriedades de uma rede que são expostas por meio de [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objeto retornado por [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -131,7 +131,7 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo da área de t
 
    **Mais informações sobre como gerenciar conexões de rede**
 
-   [Início Rápido: Gerenciando restrições de custo de rede limitada](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+   [Guia de início rápido: Gerenciando monitorados restrições de custo de rede](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
    [Exemplo de informações de rede](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
@@ -149,4 +149,4 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo da área de t
  Você pode desligar o simulador pressionando **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Consulte também
- [Executar aplicativos usando o Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Executar aplicativos usando o Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

@@ -18,34 +18,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d42362a7eb6a61540ef2dbcf56d957e71639296f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 47693c6fbb25fb0a7c2468abbad515f8aaf63159
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070403"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694979"
 ---
-# <a name="edit-and-continue-error-message"></a>Editar e continuar a mensagem de erro 
+# <a name="edit-and-continue-error-message"></a>Editar e continuar a mensagem de erro
 
-O **editar e continuar** caixa de mensagem de erro aparece quando você estiver depurando em uma linguagem de código que dá suporte a editar e continuar, mas editar e continuar não está disponível para as alterações de código que você fez. A mensagem de erro fornece uma explicação mais detalhada. Para responder à caixa de diálogo, selecione **Okey** para fechar a caixa de diálogo e cancelar a tentativa de editar.  
+O **editar e continuar** caixa de mensagem de erro aparece quando você estiver depurando em uma linguagem de código que dá suporte a editar e continuar, mas editar e continuar não está disponível para as alterações de código que você fez. A mensagem de erro fornece uma explicação mais detalhada. Para responder à caixa de diálogo, selecione **Okey** para fechar a caixa de diálogo e cancelar a tentativa de editar.
 
-As possíveis razões para essa mensagem de erro incluem:  
+As possíveis razões para essa mensagem de erro incluem:
 
 -   Tentativa de editar o código do SQL Server.
 -   Tentativa de editar o código otimizado. Talvez você precise alternar de um build de versão para um build de depuração.
 -   Tentativa de editar o código enquanto ele está em execução, em vez de enquanto está em pausa no depurador. Tente [definindo um ponto de interrupção](../debugger/using-breakpoints.md)e a edição do código enquanto está em pausa.
 -   Tentativa de editar o código gerenciado quando a depuração não gerenciada só está habilitada. Editar e continuar não funciona com [depuração de modo misto](../debugger/how-to-debug-in-mixed-mode.md).
 -   Fazer com que um código de alteração que não há suporte para editar e continuar em sua linguagem de programação. Para obter mais informações, consulte os artigos [suporte para alterações de código em C# ](supported-code-changes-csharp.md), [sem suporte a edições no Visual Basic Edit and Continue](/visualstudio/debugger/supported-code-changes-csharp), e [suporte para alterações de código C++](supported-code-changes-cpp.md).
--   Tentativa de editar o código em um aplicativo que você estiver associada, em vez de iniciar a depuração a partir de **depurar** menu.  
--   Tentativa de editar o código durante a depuração de uma recuperação de desastre. Watson.  
--   Tentativa de editar o código após uma exceção não tratada ocorre e a opção **desenrolar a pilha de chamadas em exceções não tratadas** não estiver selecionada.  
+-   Tentativa de editar o código em um aplicativo que você estiver associada, em vez de iniciar a depuração a partir de **depurar** menu.
+-   Tentativa de editar o código durante a depuração de uma recuperação de desastre. Watson.
+-   Tentativa de editar o código após uma exceção não tratada ocorre e a opção **desenrolar a pilha de chamadas em exceções não tratadas** não estiver selecionada.
 -   Tentando editar código durante a depuração de um aplicativo de tempo de execução incorporado.
--   Tentativa de editar o código gerenciado usando uma versão do .NET Framework anteriores à 4.5.1 com um destino de aplicativo de 64 bits. Para usar Editar e continuar para o .NET Framework anteriores à 4.5.1, defina o destino como **x86** na  **\<ProjectName >** > **propriedades**  >  **Compile** guia **avançado compilador** configuração.  
--   Tentativa de editar o código em um assembly que foi modificado durante a depuração e foi recarregado.  
--   Tentativa de editar o código em um assembly que não foi carregado.  
+-   Tentativa de editar o código gerenciado usando uma versão do .NET Framework anteriores à 4.5.1 com um destino de aplicativo de 64 bits. Para usar Editar e continuar para o .NET Framework anteriores à 4.5.1, defina o destino como **x86** na  **\<ProjectName >** > **propriedades**  >  **Compile** guia **avançado compilador** configuração.
+-   Tentativa de editar o código em um assembly que foi modificado durante a depuração e foi recarregado.
+-   Tentativa de editar o código em um assembly que não foi carregado.
 -   Começar a depurar uma versão antiga de um aplicativo, porque a versão mais recente tem erros de compilação.
-  
+
 Para obter mais informações, consulte:
-- [Postagem de C++ Edit e Continue blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
+- [Postagem de C++ Edit e Continue blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [Alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md)
 - [Editar e continuar](../debugger/edit-and-continue.md)

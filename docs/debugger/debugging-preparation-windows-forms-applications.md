@@ -20,55 +20,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0033bb762a42090bd1849d6acc609cf248b28179
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5cc06e33b3549bda9bdc9fe04073ca4cf0d9e9a5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931967"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679938"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Preparação de depuração: Aplicativos dos Windows Forms
-O modelo de projeto do Windows Forms (.NET) cria um aplicativo do Windows Forms. Depurar esse tipo de aplicativo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é simples. Para obter mais informações, consulte [criando um projeto de aplicativo do Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
-  
- Quando você cria um projeto do Windows Forms com o modelo de projeto, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para as configurações de depuração e versão. Se necessário, você pode alterar essas configurações. Essas configurações podem ser alteradas na caixa de diálogo **\<nome do projeto> Páginas de Propriedades** (**Meu Projeto** em Visual Basic).  
-  
- Para obter mais informações, consulte [configurações de propriedade recomendadas](../debugger/managed-debugging-recommended-property-settings.md).  
-  
- A tabela a seguir exibe uma configuração de propriedade recomendada adicional.  
-  
-### <a name="configuration-properties-in-debug-tab"></a>Propriedades de configuração na guia Depurar  
-  
-|**Nome da propriedade**|**Configuração**|  
-|-----------------------|-----------------|  
-|**Iniciar ação**|–   Definido como **Iniciar projeto,** na maioria das vezes. Definido como **Iniciar programa externo** se você quiser iniciar outro executável ao iniciar a depuração (geralmente para depuração de DLLs).|  
-  
- Você pode depurar aplicativos do Windows Forms de dentro do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou anexando a um aplicativo já em execução. Para obter mais informações sobre como anexar, consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
-  
-### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Para depurar um aplicativo C#, F# ou Windows Forms do Visual Basic  
-  
-1. Abra o projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-2. Crie pontos de interrupção conforme o necessário.  
-  
-    Como os aplicativos do Windows Forms são controlados por eventos, seus pontos de interrupção entrarão no código do manipulador de eventos ou nos métodos chamados pelo código do manipulador de eventos. Eventos comuns nos quais colocar pontos de interrupção incluem:  
-  
-   1. Os eventos associados a um controle, como Clique, Insira etc.  
-  
-   2. Os eventos associados à inicialização e o desligamento do aplicativo, como Carregar, Ativado etc.  
-  
-   3. Foco e eventos de validação.  
-  
-      Para obter mais informações, consulte [Criando manipuladores de eventos nos Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
-  
-3. No menu **Depurar**, clique em **Iniciar**.  
-  
-4. Depuração usando as técnicas discutidas [primeiro, examine o depurador](../debugger/debugger-feature-tour.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
- [Tipos de projeto do C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Configurações do projeto para configurações de depuração de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configurações do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Windows Forms](/dotnet/framework/winforms/index)
+# <a name="debugging-preparation-windows-forms-applications"></a>Preparação da depuração: aplicativos dos Windows Forms
+O modelo de projeto do Windows Forms (.NET) cria um aplicativo do Windows Forms. Depurar esse tipo de aplicativo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é simples. Para obter mais informações, consulte [criando um projeto de aplicativo do Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+
+ Quando você cria um projeto do Windows Forms com o modelo de projeto, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para as configurações de depuração e versão. Se necessário, você pode alterar essas configurações. Essas configurações podem ser alteradas na caixa de diálogo **\<nome do projeto> Páginas de Propriedades** (**Meu Projeto** em Visual Basic).
+
+ Para obter mais informações, consulte [configurações de propriedade recomendadas](../debugger/managed-debugging-recommended-property-settings.md).
+
+ A tabela a seguir exibe uma configuração de propriedade recomendada adicional.
+
+### <a name="configuration-properties-in-debug-tab"></a>Propriedades de configuração na guia Depurar
+
+|**Nome da propriedade**|**Configuração**|
+|-----------------------|-----------------|
+|**Iniciar ação**|–   Definido como **Iniciar projeto,** na maioria das vezes. Definido como **Iniciar programa externo** se você quiser iniciar outro executável ao iniciar a depuração (geralmente para depuração de DLLs).|
+
+ Você pode depurar aplicativos do Windows Forms de dentro do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou anexando a um aplicativo já em execução. Para obter mais informações sobre como anexar, consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+
+### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Para depurar um aplicativo C#, F# ou Windows Forms do Visual Basic
+
+1. Abra o projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+2. Crie pontos de interrupção conforme o necessário.
+
+    Como os aplicativos do Windows Forms são controlados por eventos, seus pontos de interrupção entrarão no código do manipulador de eventos ou nos métodos chamados pelo código do manipulador de eventos. Eventos comuns nos quais colocar pontos de interrupção incluem:
+
+   1. Os eventos associados a um controle, como Clique, Insira etc.
+
+   2. Os eventos associados à inicialização e o desligamento do aplicativo, como Carregar, Ativado etc.
+
+   3. Foco e eventos de validação.
+
+      Para obter mais informações, consulte [Criando manipuladores de eventos nos Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).
+
+3. No menu **Depurar**, clique em **Iniciar**.
+
+4. Depuração usando as técnicas discutidas [primeiro, examine o depurador](../debugger/debugger-feature-tour.md).
+
+## <a name="see-also"></a>Consulte também
+- [Depurando código gerenciado](../debugger/debugging-managed-code.md)
+- [Tipos de projeto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Configurações do projeto para configurações de depuração de C#](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Windows Forms](/dotnet/framework/winforms/index)

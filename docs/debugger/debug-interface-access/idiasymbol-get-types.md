@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfde6e7824fa0df315cb843eedb92e4d249b618
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f99530e790594e6966611b97a3d9a2c0a0cc04d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965140"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602696"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-Recupera uma matriz de tipos específicos do compilador para esse símbolo.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_types (   
-   DWORD       cTypes,  
-   DWORD*      pcTypes,  
-   IDiaSymbol* types[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `cTypes`  
- [in] Tamanho do buffer para manter os dados.  
-  
- `pcTypes`  
- [out] Retorna o número de tipos escritos, ou, se o `types` parâmetro é `NULL`, em seguida, o número total de tipos disponíveis.  
-  
- `types[]`  
- [out] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam todos os tipos para esse símbolo.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+Recupera uma matriz de tipos específicos do compilador para esse símbolo.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_types ( 
+   DWORD       cTypes,
+   DWORD*      pcTypes,
+   IDiaSymbol* types[]
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `cTypes`
+
+[in] Tamanho do buffer para manter os dados.
+
+ `pcTypes`
+
+[out] Retorna o número de tipos escritos, ou, se o `types` parâmetro é `NULL`, em seguida, o número total de tipos disponíveis.
+
+ `types[]`
+
+[out] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam todos os tipos para esse símbolo.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

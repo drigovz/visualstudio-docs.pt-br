@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95454741aa20b083c768f0df9678e47b471f6fe3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 180c6f2aa987e628773572158a23b9564054305e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043122"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611549"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
-Recupera um sinalizador que especifica se um tipo definido pelo usuário (UDT) contém o ponto flutuante agregada (HFA) dados homogêneos de flutuação de tipo.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_hfaFloat(   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se o UDT contiver dados HFA de flutuação de tipo; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+Recupera um sinalizador que especifica se um tipo definido pelo usuário (UDT) contém o ponto flutuante agregada (HFA) dados homogêneos de flutuação de tipo.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_hfaFloat( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se o UDT contiver dados HFA de flutuação de tipo; caso contrário, retornará `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="remarks"></a>Comentários  
-  
-## <a name="requirements"></a>Requisitos  
- Cabeçalho: Dia2.h  
-  
- Biblioteca: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="remarks"></a>Comentários
+
+## <a name="requirements"></a>Requisitos
+ Cabeçalho: Dia2.h
+
+ Biblioteca: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

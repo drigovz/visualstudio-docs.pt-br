@@ -10,40 +10,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c034da718db4ca8a6ede1e4674a6150f60abe4a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bdcb85db51a3fcfca434af9d39bc88587a0e5cdc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969688"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611185"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, nesse símbolo no endereço relativo virtual (RVA) especificado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `rva`  
- [in] Especifica o endereço como um RVA.  
-  
- `length`  
- [in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.  
-  
- `ppResult`  
- [out] Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)
+Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, nesse símbolo no endereço relativo virtual (RVA) especificado.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `rva`
+
+[in] Especifica o endereço como um RVA.
+
+ `length`
+
+[in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.
+
+ `ppResult`
+
+[out] Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)

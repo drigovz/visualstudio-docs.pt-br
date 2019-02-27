@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b968ac3cc7356aa085eb8237d37a5372e1f67bb7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944443"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696838"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Guia Janelas, Caixa de diálogo Propriedades da Janela
-Use o **Windows** guia para exibir informações sobre windows relacionados a janela selecionada. Para exibir o [janela caixa de diálogo de propriedades](../debugger/window-properties-dialog-box.md), mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.  
-  
- As seguintes configurações estão disponíveis sobre o **Windows** guia:  
-  
-|Entrada|Descrição|  
-|-----------|-----------------|  
-|**Próxima janela**|O identificador da janela próximo irmão na mesma sequência (ordem Z) mostrada na exibição de árvore de janela ("none" se não houver nenhuma janela próximo). Escolha essa entrada para exibir as propriedades da janela próximo.|  
-|**Janela anterior**|O identificador da janela de irmão anterior na mesma sequência (ordem Z) mostrada na exibição de árvore de janela ("none" se não houver nenhuma janela anterior). Escolha essa entrada para exibir as propriedades da janela anterior.|  
-|**Janela pai**|O identificador da janela de pai dessa janela ("none" se não houver nenhum pai). Escolha essa entrada para exibir as propriedades da janela pai.|  
-|**Primeiro filho**|O identificador da primeira janela filho dessa janela, na sequência (ordem Z) mostrado na exibição de árvore de janela ("none" se não houver nenhuma janela filho). Escolha esse valor para exibir as propriedades da primeira janela filho.|  
+Use o **Windows** guia para exibir informações sobre windows relacionados a janela selecionada. Para exibir o [janela caixa de diálogo de propriedades](../debugger/window-properties-dialog-box.md), mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.
+
+ As seguintes configurações estão disponíveis sobre o **Windows** guia:
+
+|Entrada|Descrição|
+|-----------|-----------------|
+|**Próxima janela**|O identificador da janela próximo irmão na mesma sequência (ordem Z) mostrada na exibição de árvore de janela ("none" se não houver nenhuma janela próximo). Escolha essa entrada para exibir as propriedades da janela próximo.|
+|**Janela anterior**|O identificador da janela de irmão anterior na mesma sequência (ordem Z) mostrada na exibição de árvore de janela ("none" se não houver nenhuma janela anterior). Escolha essa entrada para exibir as propriedades da janela anterior.|
+|**Janela pai**|O identificador da janela de pai dessa janela ("none" se não houver nenhum pai). Escolha essa entrada para exibir as propriedades da janela pai.|
+|**Primeiro filho**|O identificador da primeira janela filho dessa janela, na sequência (ordem Z) mostrado na exibição de árvore de janela ("none" se não houver nenhuma janela filho). Escolha esse valor para exibir as propriedades da primeira janela filho.|
 |**Janela Proprietário**|O identificador da janela do proprietário dessa janela. Janela principal do aplicativo normalmente possui windows da caixa de diálogo modal do sistema, por exemplo ("none" se não houver nenhum proprietário). Escolha essa entrada para exibir as propriedades da janela do proprietário.|

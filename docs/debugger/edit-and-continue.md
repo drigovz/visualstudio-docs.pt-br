@@ -21,31 +21,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7abb1f4a47c7d5274aaef28dfa0838c755f9a689
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1bc71b37572d76632a0936f23386985c2e3a9dc1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930927"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696474"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edite o código e continuar a depuração no Visual Studio (c#, VB, C++)
-Editar e Continuar é um recurso que economiza tempo e permite que você faça alterações no seu código-fonte enquanto o programa está no modo de interrupção. Quando você retoma a execução do programa escolhendo um comando de execução, como **Continue** ou **etapa**, editar e continuar automaticamente aplica as alterações de código com algumas limitações. Isso permite que você faça alterações no código durante uma sessão de depuração, em vez de ter que parar, recompilar o programa inteiro e reiniciar a sessão de depuração.  
-  
- Esta seção inclui os seguintes tópicos:   
-  
- [Como: Habilitar e desabilitar Editar e Continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
-  
- [Como: Parar alterações de código](../debugger/how-to-stop-code-changes.md)   
-  
- [Editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
-  
- [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)  
-  
- [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)  
-  
- [Não há suporte para Editar e Continuar em F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
-  
-## <a name="see-also"></a>Consulte também  
- [Segurança do depurador](../debugger/debugger-security.md)   
- [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)   
- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
+Editar e Continuar é um recurso que economiza tempo e permite que você faça alterações no seu código-fonte enquanto o programa está no modo de interrupção. Quando você retoma a execução do programa escolhendo um comando de execução, como **Continue** ou **etapa**, editar e continuar automaticamente aplica as alterações de código com algumas limitações. Isso permite que você faça alterações no código durante uma sessão de depuração, em vez de ter que parar, recompilar o programa inteiro e reiniciar a sessão de depuração.
+
+ Esta seção inclui os seguintes tópicos:
+
+ [Como habilitar e desabilitar Editar e Continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md)
+
+ [Como parar as alterações de código](../debugger/how-to-stop-code-changes.md)
+
+ [Editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+
+ [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+
+ [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
+
+ [Não há suporte para Editar e Continuar em F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+
+## <a name="see-also"></a>Consulte também
+- [Segurança do depurador](../debugger/debugger-security.md)
+- [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)

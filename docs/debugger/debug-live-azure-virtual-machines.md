@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2baf119259c749e8da99a9326eb22aa1e034b4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335971"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646467"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depurar aplicativos ASP.NET dinâmicos em máquinas virtuais do Azure e conjuntos de dimensionamento de máquina virtual do Azure usando o depurador de instantâneo
 
@@ -53,7 +53,7 @@ Neste tutorial, você irá:
 1. Anexe o depurador de instantâneo. Você pode usar um dos vários métodos diferentes:
 
     * Escolha **Depurar > Anexar depurador de instantâneos...** . Selecione o VM/VMSS do Azure seu aplicativo web é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Attach**.
-  
+
       ![Iniciar o depurador de instantâneo no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Clique com botão direito no seu projeto e selecione **Publish**e, em seguida, na página de publicação. clique em **Anexar depurador de instantâneo**. Selecione o VM/VMSS do Azure seu aplicativo web é implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Attach**.
@@ -63,7 +63,7 @@ Neste tutorial, você irá:
     ![Iniciar o depurador de instantâneo no menu suspenso F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Usando o Gerenciador de nuvem (**exibição > Gerenciador de nuvem**), o VM/VMSS do Azure seu aplicativo web é implantado com o botão direito e selecione uma conta de armazenamento do Azure e, em seguida, clique em **Anexar depurador de instantâneo**.
-  
+
       ![Iniciar o depurador de instantâneo do Cloud Explorer](../debugger/media/snapshot-launch.png)
 
     > [!IMPORTANT]

@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1044f681efbdf0f07687a34652723612feb5a4ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 896e26075780c0cbd7bf0b1762da141d5ba7d2d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939888"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639902"
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
-Recupera o número de bytes em um bloco.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_length (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o número de bytes em um bloco.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- O bloco é o comprimento do código-fonte na linha, conforme representado pela [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objeto.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Recupera o número de bytes em um bloco.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_length ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o número de bytes em um bloco.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ O bloco é o comprimento do código-fonte na linha, conforme representado pela [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objeto.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

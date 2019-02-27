@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2305c155e0f9790e43514ac4ef68a8e23113e94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8620dcf7367914e25411fad7ac54a34a5bac54c2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008342"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598800"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
-Posiciona o enumerador ao executar uma pesquisa por número de seção de imagem e o deslocamento.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT symbolByAddr (   
-   DWORD**      isect,  
-   DWORD**      offsect,  
-   IDiaSymbol** ppsymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- isect  
- [in] Número de seção de imagem.  
-  
- offsect  
- [in] Na seção de deslocamento.  
-  
- ppsymbol  
- [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o símbolo encontrado.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o símbolo não pôde ser encontrado. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Posiciona o enumerador ao executar uma pesquisa por número de seção de imagem e o deslocamento.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT symbolByAddr ( 
+   DWORD**      isect,
+   DWORD**      offsect,
+   IDiaSymbol** ppsymbol
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ isect
+
+[in] Número de seção de imagem.
+
+ offsect
+
+[in] Na seção de deslocamento.
+
+ ppsymbol
+
+[out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o símbolo encontrado.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o símbolo não pôde ser encontrado. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

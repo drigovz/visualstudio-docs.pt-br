@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596732"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depurar ou desabilitar o código do projeto no Designer XAML
 
@@ -88,7 +88,7 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 ## <a name="control-display-options"></a>Opções de exibição de controle
 
 > [!NOTE]
-> **Controlar Opções de Exibição** só está disponível para aplicativos da Plataforma Universal do Windows que se destinam ao Windows 10 Fall Creators Update (build 16299) ou posterior. O recurso **Opções de Exibição do Controle** está disponível no Visual Studio 2017 versão 15.9 ou posterior. 
+> **Controlar Opções de Exibição** só está disponível para aplicativos da Plataforma Universal do Windows que se destinam ao Windows 10 Fall Creators Update (build 16299) ou posterior. O recurso **Opções de Exibição do Controle** está disponível no Visual Studio 2017 versão 15.9 ou posterior.
 
 No designer XAML, você pode alterar as opções de exibição de controle para exibir somente os controles de plataforma do SDK do Windows. Isso pode aumentar a confiabilidade do designer XAML.
 

@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3466f211edb90783a64f8c7d02c602847e616d82
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 468e3bee84c7312def06c32cb411c00526ba3b1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042993"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619154"
 ---
 # <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
-Recupera o comprimento, em bytes, do bloco de código descrito pelo quadro.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_lengthBlock (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o número de bytes de código no quadro.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- O valor retornado por esse método normalmente é usado na interpretação de uma cadeia de caracteres do programa (consulte a [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método para a definição de uma cadeia de caracteres do programa).  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+Recupera o comprimento, em bytes, do bloco de código descrito pelo quadro.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_lengthBlock ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o número de bytes de código no quadro.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ O valor retornado por esse método normalmente é usado na interpretação de uma cadeia de caracteres do programa (consulte a [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método para a definição de uma cadeia de caracteres do programa).
+
+## <a name="see-also"></a>Consulte também
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

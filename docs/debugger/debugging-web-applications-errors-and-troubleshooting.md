@@ -27,34 +27,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc3bafc89b30d3f98dd4615eae22ee76c9e0ea6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0c2cee0e0b823e5fe17fbc5720137163dcb300b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018261"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699048"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurando aplicativos Web: erros e solução de problemas
-Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.  
-  
--   [Solução de problemas](../debugger/debugging-web-applications-troubleshooting.md)  
-  
--   [Erro: O site usa endereço IP](../debugger/error-site-uses-ip-address.md)  
-  
--   [Erro: Falha em uma verificação de segurança porque o serviço de administração do IIS não respondeu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
-  
--   [Erro: ASP.NET não instalado](../debugger/error-aspnet-not-installed.md)  
-  
--   [Erro: Falha na depuração porque a Autenticação Integrada do Windows não está habilitada](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
-  
--   [Erro: O servidor Web não foi configurado corretamente](../debugger/error-the-web-server-is-not-configured-correctly.md)  
-  
--   [Erro: O servidor Web foi bloqueado e está bloqueando o verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
-  
--   [Erro: Tempo limite atingido durante a depuração de serviços Web](../debugger/error-timeout-while-debugging-web-services.md)  
-  
--   [Erro: Não é possível iniciar a depuração no servidor Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
-  
-## <a name="see-also"></a>Consulte também  
- [Segurança do depurador](../debugger/debugger-security.md)   
- [Depurando aplicativos Web e script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.
+
+-   [Solução de problemas](../debugger/debugging-web-applications-troubleshooting.md)
+
+-   [Erro: o site usa endereço IP](../debugger/error-site-uses-ip-address.md)
+
+-   [Erro: falha em uma verificação de segurança porque o Serviço de Administração do IIS não respondeu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+
+-   [Erro: ASP.NET não instalado](../debugger/error-aspnet-not-installed.md)
+
+-   [Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+
+-   [Erro: o servidor Web não foi configurado corretamente](../debugger/error-the-web-server-is-not-configured-correctly.md)
+
+-   [Erro: o servidor Web foi bloqueado e está bloqueando o verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+
+-   [Erro: tempo limite durante a depuração de serviços Web](../debugger/error-timeout-while-debugging-web-services.md)
+
+-   [Erro: não foi possível iniciar a depuração no servidor Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+
+## <a name="see-also"></a>Consulte também
+- [Segurança do depurador](../debugger/debugger-security.md)
+- [Depurando aplicativos Web e script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

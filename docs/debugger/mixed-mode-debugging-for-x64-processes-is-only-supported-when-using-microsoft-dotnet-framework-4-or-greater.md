@@ -15,47 +15,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9610198859962e804482096e6f2ab75f4da07991
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ba8186114fd976ec7e4704d97acb91ee0c97824
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069723"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719529"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>A depuração do modo misto para processos x64 só é suportada durante o uso do Microsoft.NET Framework 4 ou superior
-As versões do .NET Framework anteriores à versão 4 não fornecem suporte à depuração de modo misto de processos do x64. Isso significa que você não pode depurar de código gerenciado para código nativo, ou do código nativo para o código gerenciado.  
-  
-### <a name="workarounds"></a>Soluções alternativas  
-  
--   Atualize seu projeto para usar o Microsoft .NET Framework 4 ou posterior.  
-  
-     - ou -  
-  
-     Depure seu código gerenciado e nativo em sessões separadas de depuração.  
-  
-     - ou -  
-  
-     Depure seu código misto como um processo de 32 bits, como descrito nos procedimentos a seguir.  
-  
-### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Para alterar a plataforma para 32 bits (Visual Basic ou C#)  
-  
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.  
-  
-2.  Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.  
-  
-3.  Clique em **Plataforma** e selecione x86 na lista de plataformas.  
-  
-     Por padrão, os compiladores padrão do Visual Basic e do C# produzem código para ser executado em qualquer CPU. Em um computador de 64 bits, esses binários são executados como processos de 64 bits. Para executar em um processo de 32 bits, você deve escolher **Win32** e não **AnyCPU**.  
-  
-### <a name="to-change-the-platform-to-32-bit-cc"></a>Para alterar a plataforma para 32 bits (C/C++)  
-  
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.  
-  
-2.  Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.  
-  
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
-  
--   Ver [Configurando a depuração SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).  
-  
-## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)
+As versões do .NET Framework anteriores à versão 4 não fornecem suporte à depuração de modo misto de processos do x64. Isso significa que você não pode depurar de código gerenciado para código nativo, ou do código nativo para o código gerenciado.
+
+### <a name="workarounds"></a>Soluções alternativas
+
+-   Atualize seu projeto para usar o Microsoft .NET Framework 4 ou posterior.
+
+     - ou -
+
+     Depure seu código gerenciado e nativo em sessões separadas de depuração.
+
+     - ou -
+
+     Depure seu código misto como um processo de 32 bits, como descrito nos procedimentos a seguir.
+
+### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Para alterar a plataforma para 32 bits (Visual Basic ou C#)
+
+1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.
+
+2.  Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.
+
+3.  Clique em **Plataforma** e selecione x86 na lista de plataformas.
+
+     Por padrão, os compiladores padrão do Visual Basic e do C# produzem código para ser executado em qualquer CPU. Em um computador de 64 bits, esses binários são executados como processos de 64 bits. Para executar em um processo de 32 bits, você deve escolher **Win32** e não **AnyCPU**.
+
+### <a name="to-change-the-platform-to-32-bit-cc"></a>Para alterar a plataforma para 32 bits (C/C++)
+
+1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.
+
+2.  Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.
+
+### <a name="to-correct-this-error"></a>Para corrigir este erro
+
+-   Ver [Configurando a depuração SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+
+## <a name="see-also"></a>Consulte também
+- [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

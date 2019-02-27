@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a1150e3c4ffcd2823226ed2c831938aa00f942
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 087bd1cb40be2129853807f3f43ea0e87615c36a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978835"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635820"
 ---
 # <a name="idialinenumbergetrelativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
-Recupera o endereço virtual relativo (RVA) do bloco.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o endereço virtual de relativos a imagem do bloco.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Recupera o endereço virtual relativo (RVA) do bloco.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_relativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o endereço virtual de relativos a imagem do bloco.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -21,21 +21,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 559c8fa5cf21a5f87d60167d586ef7d0d543100b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a409ee1e8d1b633689a0c33e39e300071b9b4d83
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009486"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690065"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Como posso manter o foco ao passar pelo meu aplicativo?
-## <a name="description"></a>Descrição  
- Meu programa tem um problema de ativação de janela. Percorrer o programa com o depurador interfere em minha capacidade de reproduzir o problema, pois meu programa sempre perde o foco. Há alguma maneira de evitar isso?  
-  
-## <a name="solution"></a>Solução  
- Se você tiver um segundo computador, use a depuração remota. Você pode operar seu programa no computador remoto quando executar o depurador no host. Para obter mais informações, confira [Como: Selecionar um computador remoto](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).  
-  
-## <a name="see-also"></a>Consulte também  
- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Depurando código nativo](../debugger/debugging-native-code.md)
+## <a name="description"></a>Descrição
+ Meu programa tem um problema de ativação de janela. Percorrer o programa com o depurador interfere em minha capacidade de reproduzir o problema, pois meu programa sempre perde o foco. Há alguma maneira de evitar isso?
+
+## <a name="solution"></a>Solução
+ Se você tiver um segundo computador, use a depuração remota. Você pode operar seu programa no computador remoto quando executar o depurador no host. Para obter mais informações, consulte [como: selecionar um computador remoto](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).
+
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)
+- [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Depurando código nativo](../debugger/debugging-native-code.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790727"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844133"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
  Ferramentas do Visual Studio para Apache Cordova é o resultado de uma estreita colaboração entre a Microsoft e de código aberto da comunidade do Apache Cordova. As ferramentas permitem o desenvolvimento móvel de plataforma cruzada usando HTML, CSS e JavaScript (ou Typescript). Você pode direcionar o iOS, Android e Windows com uma única base de código e aproveite a riqueza do IDE do Visual Studio incluindo IntelliSense do JavaScript, o Explorador do DOM, Console do JavaScript, os pontos de interrupção, inspeções, locais, apenas meu código e muito mais.  Com o Visual Studio Tools para Apache Cordova, seus aplicativos têm acesso aos recursos nativos do dispositivo em todas as plataformas por meio do plug-ins que fornecem uma API comum em JavaScript. Para começar, consulte [Introdução ao Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Jogos móveis de plataforma cruzada em c# com o Unity
- Unity é uma plataforma amplamente usado para desenvolvimento de jogos 2D e 3D multiplataforma. Você pode escrever seu jogo em c# e executá-lo de modo nativo no Android, iOS, Windows Phone e muitas outras plataformas. Ferramentas do Visual Studio para Unity é uma extensão que se integra a Unity com o IDE do Visual Studio. Com essa extensão, você obtém todos os recursos do IDE do Visual Studio e o depurador, além dos recursos de produtividade que são projetados para desenvolvedores do Unity. Ferramentas do Visual Studio para Unity 2.0 Preview 2 adiciona suporte para Visual Studio 2015, além disso a um número de novos recursos, como uma melhor visualização para objetos em locais e inspeção windows. A Microsoft adquiriu recentemente SyntaxTree, os criadores do Visual Studio Tools for Unity. Para baixar as ferramentas do Visual Studio para Unity 2.0 Preview 2 e para obter mais informações sobre ferramentas do Visual Studio para Unity, consulte [Visual Studio Tools for Unity 2.0](http://Aka.ms/vstu).
+ Unity é uma plataforma amplamente usado para desenvolvimento de jogos 2D e 3D multiplataforma. Você pode escrever seu jogo em c# e executá-lo de modo nativo no Android, iOS, Windows Phone e muitas outras plataformas. Ferramentas do Visual Studio para Unity é uma extensão que se integra a Unity com o IDE do Visual Studio. Com essa extensão, você obtém todos os recursos do IDE do Visual Studio e o depurador, além dos recursos de produtividade que são projetados para desenvolvedores do Unity. Ferramentas do Visual Studio para Unity 2.0 Preview 2 adiciona suporte para Visual Studio 2015, além disso a um número de novos recursos, como uma melhor visualização para objetos em locais e inspeção windows. A Microsoft adquiriu recentemente SyntaxTree, os criadores do Visual Studio Tools for Unity. Para baixar as ferramentas do Visual Studio para Unity 2.0 Preview 2 e para obter mais informações sobre ferramentas do Visual Studio para Unity, consulte [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Aplicativos de plataforma cruzada e bibliotecas para C++ nativo
  C++ é um idioma disponível nativamente pela maioria dos dispositivos móveis. Você pode usá-lo a escrever código de plataforma cruzada compartilhado bibliotecas que pode ser criados para vários destinos de plataforma móvel. Você pode até criar aplicativos móveis todo em C++. Visual C++ fornece as ferramentas para editar, compilar, implantar e depurar seu código de plataforma cruzada. Além dos modelos para aplicativos do Windows, você pode criar projetos de modelos para aplicativos de atividade nativa do Android, aplicativos iOS ou projetos de biblioteca de código compartilhado para várias plataformas que incluem aplicativos híbridos de Xamarin. IntelliSense específico da plataforma permite que você explorar APIs e gerar códigos corretos para destinos de Android, iOS ou Windows. Você pode configurar sua compilação para plataformas x86 ou ARM nativas e, em seguida, implantar seu código em um simulador de iOS ou em dispositivos iOS no Mac conectado à rede, em dispositivos Android diretamente conectados ou usar o emulador do Microsoft Visual Studio de alto desempenho para o Android para teste. Você pode definir pontos de interrupção, inspecione variáveis, exibir a pilha e percorrer o código C++ no depurador do Visual Studio. Você pode compartilhar tudo, exceto o código mais específicos da plataforma em várias plataformas de aplicativo e criar para eles, tudo isso com uma solução no Visual Studio.
@@ -180,7 +180,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ### <a name="notification-hub"></a>Hub de notificação
  A interface do usuário para o hub de notificação foi otimizada para torná-lo mais fácil verificar rapidamente. Tipos de notificações adicionais foram adicionados incluindo problemas de desempenho, problemas de renderização e falhas, e você agora pode informar ao Visual Studio pare de mostrar uma notificação. Para obter mais informações, consulte [Notificações do Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Encontre o que aconteceu com seu código (apenas para edições Enterprise e Professional)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Localizar o que aconteceu com seu código (apenas para edições Enterprise e Professional)
  Mantenha o foco no trabalho enquanto você encontrar informações sobre seu código – sem sair do editor. Você pode revisar as alterações e outro histórico de itens de trabalho, bugs, revisões de código, e assim por diante para o código que é armazenado no Visual Studio Team Services (VSTS) ou no Team Foundation Server (TFS).
 
  No Visual Studio Enterprise e Professional do Visual Studio, agora você pode:

@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981266"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710819"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Depuração remota do ASP.NET Core no IIS no Azure no Visual Studio 2017
 
@@ -47,7 +47,7 @@ A maneira recomendada para depuração remota no Azure depende de seu cenário:
 
 Não há suporte para depuração entre dois computadores conectados por meio de um proxy. Depuração em uma alta latência ou a conexão de baixa largura de banda, como dial-up da Internet, ou pela Internet entre países não é recomendado e pode falhar ou ser muito lento. Para obter uma lista completa dos requisitos, consulte [requisitos de](../debugger/remote-debugging.md#requirements_msvsmon).
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Criar o aplicativo ASP.NET Core no computador do Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Criar o aplicativo ASP.NET Core no computador do Visual Studio 2017
 
 1. Crie um novo aplicativo ASP.NET Core. (Escolha **arquivo > Novo > projeto**, em seguida, selecione **Visual c# > Web > aplicativo Web ASP.NET Core**).
 
@@ -61,7 +61,7 @@ Não há suporte para depuração entre dois computadores conectados por meio de
 
 ## <a name="remote_debug_azure_app_service"></a> Depuração remota do ASP.NET Core em um serviço de aplicativo do Azure
 
-No Visual Studio, você pode publicar e depurar seu aplicativo a uma instância totalmente provisionado do IIS rapidamente. No entanto, a configuração do IIS é predefinida e não é possível personalizá-lo. Para obter instruções mais detalhadas, consulte [implantar um aplicativo web ASP.NET Core no Azure usando o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Se você precisar de capacidade de personalizar o IIS, experimente a depuração um [Azure VM](#remote_debug_azure_vm).) 
+No Visual Studio, você pode publicar e depurar seu aplicativo a uma instância totalmente provisionado do IIS rapidamente. No entanto, a configuração do IIS é predefinida e não é possível personalizá-lo. Para obter instruções mais detalhadas, consulte [implantar um aplicativo web ASP.NET Core no Azure usando o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Se você precisar de capacidade de personalizar o IIS, experimente a depuração um [Azure VM](#remote_debug_azure_vm).)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Para implantar o aplicativo e a depuração remota usando o Gerenciador de servidores
 
@@ -184,7 +184,7 @@ Se você não estiver usando a implantação da Web, você deve publicar e impla
 Neste tutorial, estamos usando o Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> Configurar o depurador remoto no Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ Neste tutorial, estamos usando o Visual Studio 2017.
 2. No Visual Studio, clique em **Depurar > Anexar ao processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > No Visual Studio 2017, você pode anexar novamente para o mesmo processo anteriormente anexado ao usando **Depurar > anexar novamente ao processo...** Shift+Alt+P 
+    > No Visual Studio 2017, você pode anexar novamente para o mesmo processo anteriormente anexado ao usando **Depurar > anexar novamente ao processo...** Shift+Alt+P
 
 3. Definir o qualificador de campo para  **\<nome do computador remoto >: 4022**.
 4. Cliquem em **Atualizar**.
@@ -211,7 +211,7 @@ Neste tutorial, estamos usando o Visual Studio 2017.
 5. Verifique **Mostrar processos de todos os usuários**.
 
 6. Digite a primeira letra do nome de um processo para localizar rapidamente *dotnet.exe* (para o ASP.NET Core).
-   
+
    Para um aplicativo ASP.NET Core, o nome do processo anterior foi *dnx.exe*.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,17 +219,17 @@ Neste tutorial, estamos usando o Visual Studio 2017.
 7. Clique em **Anexar**.
 
 8. Abra o site do computador remoto. Em um navegador, vá para **http://\<nome do computador remoto >**.
-    
+
     Você deve ver a página da web ASP.NET.
 9. No aplicativo ASP.NET em execução, clique no link para o **sobre** página.
 
     O ponto de interrupção deve ser atingido no Visual Studio.
 
-### <a name="bkmk_openports"></a> Solução de problemas Abra as portas necessárias no Windows Server
+### <a name="bkmk_openports"></a>Solução de problemas Abra as portas necessárias no Windows Server
 
 Na maioria das configurações, as portas necessárias estão abertas pela instalação do ASP.NET e o depurador remoto. No entanto, se você estiver solucionando problemas de implantação e o aplicativo é hospedado atrás de um firewall, você precisa verificar se as portas corretas estão abertas.
 
-Em uma VM do Azure, você deve abrir as portas por meio de [grupo de segurança de rede](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+Em uma VM do Azure, você deve abrir as portas por meio de [grupo de segurança de rede](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Portas obrigatórias:
 

@@ -12,49 +12,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6e20f043e7f23dc881ab95ac7d6fd51200d12e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef151b369c18863b8a87944cdbf69fed9aeb0840
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039508"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598681"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
-Recupera um número especificado de símbolos na sequência de enumeração.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT Next (   
-   ULONG        celt,  
-   IDiaSymbol** rgelt,  
-   ULONG*       pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- celt  
- [in] O número de símbolos no enumerador a ser recuperado.  
-  
- rgelt  
- [out] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam os símbolos desejados.  
-  
- pceltFetched  
- [out] Retorna o número de símbolos no enumerador buscado.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum símbolo de mais. Caso contrário, retornará um código de erro.  
-  
-## <a name="example"></a>Exemplo  
-  
-```C++  
-IDiaEnumSymbols* pEnum  
-CComPtr< IDiaSymbol> pSym;  
-DWORD celt;  
-pEnum->Next( 1, &pSym, &celt );  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera um número especificado de símbolos na sequência de enumeração.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Next ( 
+   ULONG        celt,
+   IDiaSymbol** rgelt,
+   ULONG*       pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ celt
+
+[in] O número de símbolos no enumerador a ser recuperado.
+
+ rgelt
+
+[out] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam os símbolos desejados.
+
+ pceltFetched
+
+[out] Retorna o número de símbolos no enumerador buscado.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum símbolo de mais. Caso contrário, retornará um código de erro.
+
+## <a name="example"></a>Exemplo
+
+```C++
+IDiaEnumSymbols* pEnum
+CComPtr< IDiaSymbol> pSym;
+DWORD celt;
+pEnum->Next( 1, &pSym, &celt );
+```
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

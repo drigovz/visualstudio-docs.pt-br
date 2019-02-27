@@ -13,48 +13,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36a4a7019b0332845073c8c3e8e962dc23e2f83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbe25da9dd687eba011bd8e3cc2701cf154e0358
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034626"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697255"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Atalhos de teclado (HTML e JavaScript)
-  
- Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e JavaScript.  
-  
-## <a name="general-shortcuts"></a>Atalhos gerais  
- Esses atalhos funcionam em todas as ferramentas para aplicativos UWP usando HTML e JavaScript.  
-  
-|Ação|Atalho|  
-|------------|--------------|  
-|Atualizar o aplicativo Windows|Ctrl+Shift+R|  
-|Reiniciar o aplicativo Windows|Ctrl+Shift+F5|  
-|Parar a depuração|Shift+F5|  
-|Abrir o hub de Desempenho e Diagnóstico|Alt+F2|  
-  
-## <a name="javascript-console-shortcuts"></a>Atalhos do Console do JavaScript  
- Use estes atalhos na janela Console do JavaScript.  
-  
-|Ação|Atalho|  
-|------------|--------------|  
-|Executar um comando do console|Enter|  
-|Limpar o console|ESC|  
-|Alterar entre o modo de linha única e o modo de várias linhas|Ctrl+Alt+M|  
-  
-## <a name="dom-explorer-shortcuts"></a>Atalhos do Explorador do DOM  
- Use estes atalhos no Explorador do DOM.  
-  
-|Ação|Atalho|  
-|------------|--------------|  
-|Selecionar elemento|Ctrl+B|  
-|Alternar entre exibir e ocultar caixas de realce da página da Web usando **Selecionar Elemento**|Ctrl+Shift+I|  
-|Confirmar alterações usando **Editar como HTML**|Ctrl+Enter|  
-|Descartar as alterações usando **Editar como HTML**|ESC|  
-|Aumentar o valor de CSS escolhido em 1|Seta para Cima|  
-|Diminuir o valor de CSS escolhido em 1|Seta para Baixo|  
-  
-## <a name="see-also"></a>Consulte também  
- [Início Rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+
+ Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e JavaScript.
+
+## <a name="general-shortcuts"></a>Atalhos gerais
+ Esses atalhos funcionam em todas as ferramentas para aplicativos UWP usando HTML e JavaScript.
+
+|Ação|Atalho|
+|------------|--------------|
+|Atualizar o aplicativo Windows|Ctrl+Shift+R|
+|Reiniciar o aplicativo Windows|Ctrl+Shift+F5|
+|Parar a depuração|Shift+F5|
+|Abrir o hub de Desempenho e Diagnóstico|Alt+F2|
+
+## <a name="javascript-console-shortcuts"></a>Atalhos do Console do JavaScript
+ Use estes atalhos na janela Console do JavaScript.
+
+|Ação|Atalho|
+|------------|--------------|
+|Executar um comando do console|Enter|
+|Limpar o console|ESC|
+|Alterar entre o modo de linha única e o modo de várias linhas|Ctrl+Alt+M|
+
+## <a name="dom-explorer-shortcuts"></a>Atalhos do Explorador do DOM
+ Use estes atalhos no Explorador do DOM.
+
+|Ação|Atalho|
+|------------|--------------|
+|Selecionar elemento|Ctrl+B|
+|Alternar entre exibir e ocultar caixas de realce da página da Web usando **Selecionar Elemento**|Ctrl+Shift+I|
+|Confirmar alterações usando **Editar como HTML**|Ctrl+Enter|
+|Descartar as alterações usando **Editar como HTML**|ESC|
+|Aumentar o valor de CSS escolhido em 1|Seta para Cima|
+|Diminuir o valor de CSS escolhido em 1|Seta para Baixo|
+
+## <a name="see-also"></a>Consulte também
+- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

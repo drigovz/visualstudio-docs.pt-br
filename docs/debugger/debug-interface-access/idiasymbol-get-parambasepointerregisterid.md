@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4e9ef45c3b376aac3252e35bfb3e6c95eac62a7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bda768518c140f0f30d6ab4553ba16b3f519651c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014894"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628020"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-Recupera a ID do registro que contém um ponteiro de base para os parâmetros. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como `SymTagFunction`.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_paramBasePointerRegisterId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna a ID do registro que contém um ponteiro de base para os parâmetros.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+Recupera a ID do registro que contém um ponteiro de base para os parâmetros. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como `SymTagFunction`.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_paramBasePointerRegisterId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna a ID do registro que contém um ponteiro de base para os parâmetros.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="remarks"></a>Comentários  
-  
-## <a name="requirements"></a>Requisitos  
- Cabeçalho: Dia2.h  
-  
- Biblioteca: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="remarks"></a>Comentários
+
+## <a name="requirements"></a>Requisitos
+ Cabeçalho: Dia2.h
+
+ Biblioteca: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

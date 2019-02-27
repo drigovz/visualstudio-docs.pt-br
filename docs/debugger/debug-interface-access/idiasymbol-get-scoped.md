@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74db5ea9ef8ba4092ed47b9e9e356001cd3ae40
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00d7a878edd9b161aa40e4d128196e95ce566a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984451"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639473"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
-Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário é exibida em um escopo léxico não global.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_scoped (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se o tipo de dados definido pelo usuário é exibido em um escopo léxico não globais; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário é exibida em um escopo léxico não global.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_scoped ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se o tipo de dados definido pelo usuário é exibido em um escopo léxico não globais; caso contrário, retornará `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

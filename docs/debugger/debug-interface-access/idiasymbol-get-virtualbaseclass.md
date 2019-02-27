@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 901bfefb245191d84a5ffb0807ae8595c64fd871
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7773dfdecff4e56783765ccdedfa2feacf9c7b06
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026405"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616203"
 ---
 # <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
-Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário é uma classe base virtual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_virtualBaseClass (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se o tipo de dados definido pelo usuário é uma classe base virtual; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário é uma classe base virtual.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_virtualBaseClass ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se o tipo de dados definido pelo usuário é uma classe base virtual; caso contrário, retornará `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
