@@ -8,55 +8,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a31e5efca4fe2c8b81e3f8653422ed3311a0ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: baea4215ac3424bbf8d9d2acc713aac80e273d1b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946666"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634026"
 ---
 # <a name="vsperf"></a>VSPerf
-Use a ferramenta de linha de comando **VsPerf** para:  
-  
-1. Crie perfil de aplicativos UWP na linha de comando quando o Visual Studio não estiver instalado no dispositivo.  
-  
-2. Crie perfil de aplicativos de área de trabalho do Windows 8 e aplicativos do Windows Server 2012 usando o método de criação de perfil de amostragem.  
-  
-   Para obter mais informações sobre opções de criação de perfil, consulte [Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
-## <a name="uwp-apps-only"></a>Apenas os aplicativos UWP  
- Essas opções se aplicam somente aos aplicativos UWP.  
-  
-|||  
-|-|-|  
-|**/app:{AppName}**|Inicia o criador de perfil e aguarda o lançamento do aplicativo especificado no menu Iniciar.<br /><br /> Execute `vsperf /listapps` para exibir o nome do aplicativo e o PackageFullName de aplicativos instalados.|  
-|**/package:{PackageFullName}**|Inicia o criador de perfil e aguarda o lançamento do aplicativo especificado no menu Iniciar.<br /><br /> Execute `vsperf /listapps` para exibir o nome do aplicativo e o PackageFullName de aplicativos instalados.|  
-|**/js**|Necessário para aplicativos JavaScript de criação de perfil.<br /><br /> Colete dados de desempenho de aplicativos JavaScript.<br /><br /> Use somente com /package ou /attach.|  
-|**/noclr**|Opcional. Não colete dados CLR.<br /><br /> Use somente com /package ou /attach.<br /><br /> Otimização, nenhum símbolo gerenciado será resolvido.|  
-|**/listapps**|Lista nomes de aplicativos instalados e PackageFullNames.|  
-  
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Somente aplicativos da área de trabalho do Windows 8 e do Windows Server 2012  
- Essas opções não funcionam em aplicativos UWP.  
-  
-|||  
-|-|-|  
-|**/launch:{Executable}**|Inicia e começa a criação de perfil do arquivo executável especificado.|  
-|**/args:{ExecutableArguments}**|Especifica os argumentos de linha de comando que passarão o destino **/launch**.|  
-|**/console**|Executa o destino **/launch** em uma nova janela de comando.|  
-  
-## <a name="all-applications"></a>Todos os aplicativos  
- Essas opções aplicam-se a qualquer aplicativo Windows 8 ou o Windows Server 2012.  
-  
-|||  
-|-|-|  
-|**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Coleta dados dos processos especificados.<br /><br /> Use o Gerenciador de Tarefas para exibir a PID (ID do Processo) e processar os nomes dos aplicativos em execução.|  
-|**/file:{ReportName}**|Opcional. Especifica o arquivo de saída (substitui o arquivo existente).<br /><br /> Use somente com /package ou /attach.|  
-|**/pause**|Pause a coleta de dados.|  
-|**/resume**|Retome a coleta de dados.|  
-|**/stop**|Pare a coleta de dados e encerre os processos de destino.|  
-|**/detach**|Pare a coleta de dados, mas permita que os processos de destino continuem a executar.|  
-|**/status**|Mostre status do criador de perfil.|  
-  
-## <a name="see-also"></a>Consulte também  
- [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
- [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+Use a ferramenta de linha de comando **VsPerf** para:
+
+1. Crie perfil de aplicativos UWP na linha de comando quando o Visual Studio não estiver instalado no dispositivo.
+
+2. Crie perfil de aplicativos de área de trabalho do Windows 8 e aplicativos do Windows Server 2012 usando o método de criação de perfil de amostragem.
+
+   Para obter mais informações sobre opções de criação de perfil, consulte [Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
+## <a name="uwp-apps-only"></a>Apenas os aplicativos UWP
+ Essas opções se aplicam somente aos aplicativos UWP.
+
+|||
+|-|-|
+|**/app:{AppName}**|Inicia o criador de perfil e aguarda o lançamento do aplicativo especificado no menu Iniciar.<br /><br /> Execute `vsperf /listapps` para exibir o nome do aplicativo e o PackageFullName de aplicativos instalados.|
+|**/package:{PackageFullName}**|Inicia o criador de perfil e aguarda o lançamento do aplicativo especificado no menu Iniciar.<br /><br /> Execute `vsperf /listapps` para exibir o nome do aplicativo e o PackageFullName de aplicativos instalados.|
+|**/js**|Necessário para aplicativos JavaScript de criação de perfil.<br /><br /> Colete dados de desempenho de aplicativos JavaScript.<br /><br /> Use somente com /package ou /attach.|
+|**/noclr**|Opcional. Não colete dados CLR.<br /><br /> Use somente com /package ou /attach.<br /><br /> Otimização, nenhum símbolo gerenciado será resolvido.|
+|**/listapps**|Lista nomes de aplicativos instalados e PackageFullNames.|
+
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Somente aplicativos da área de trabalho do Windows 8 e do Windows Server 2012
+ Essas opções não funcionam em aplicativos UWP.
+
+|||
+|-|-|
+|**/launch:{Executable}**|Inicia e começa a criação de perfil do arquivo executável especificado.|
+|**/args:{ExecutableArguments}**|Especifica os argumentos de linha de comando que passarão o destino **/launch**.|
+|**/console**|Executa o destino **/launch** em uma nova janela de comando.|
+
+## <a name="all-applications"></a>Todos os aplicativos
+ Essas opções aplicam-se a qualquer aplicativo Windows 8 ou o Windows Server 2012.
+
+|||
+|-|-|
+|**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Coleta dados dos processos especificados.<br /><br /> Use o Gerenciador de Tarefas para exibir a PID (ID do Processo) e processar os nomes dos aplicativos em execução.|
+|**/file:{ReportName}**|Opcional. Especifica o arquivo de saída (substitui o arquivo existente).<br /><br /> Use somente com /package ou /attach.|
+|**/pause**|Pause a coleta de dados.|
+|**/resume**|Retome a coleta de dados.|
+|**/stop**|Pare a coleta de dados e encerre os processos de destino.|
+|**/detach**|Pare a coleta de dados, mas permita que os processos de destino continuem a executar.|
+|**/status**|Mostre status do criador de perfil.|
+
+## <a name="see-also"></a>Consulte também
+- [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
+- [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

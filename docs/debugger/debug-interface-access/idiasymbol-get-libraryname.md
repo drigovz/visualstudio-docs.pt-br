@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f996ffdae69c1a31b4c8a09f7c93b47945e077
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f832bc0472cc6b04d803dc1e5871eda62bbe451d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042147"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605634"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-Recupera o nome do arquivo do arquivo de biblioteca ou objeto do qual o objeto foi carregado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_libraryName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o nome do arquivo do arquivo de biblioteca ou objeto do qual o objeto foi carregado.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+Recupera o nome do arquivo do arquivo de biblioteca ou objeto do qual o objeto foi carregado.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_libraryName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o nome do arquivo do arquivo de biblioteca ou objeto do qual o objeto foi carregado.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 021c3ec0115267f83dbc39ba9c7c34b262fa6614
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987373"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605595"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Abre e prepara um arquivo de banco de dados (. PDB) do programa como uma fonte de dados de depuração.
@@ -31,7 +31,8 @@ HRESULT loadDataFromPdb (
 ```
 
 #### <a name="parameters"></a>Parâmetros
-pdbPath  
+pdbPath
+
 [in] O caminho para o arquivo. PDB.
 
 ## <a name="return-value"></a>Valor de retorno
@@ -64,7 +65,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

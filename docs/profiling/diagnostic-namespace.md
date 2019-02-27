@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f365210c2ed365a7e9ce75ab3c6fbcd309e01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984048"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600667"
 ---
 # <a name="diagnostic-namespace"></a>Namespace de diagnóstico
-O namespace `diagnostics` fornece funcionalidade para emitir marcadores de Visualização Simultânea.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-namespace diagnostic;  
-```  
-  
-## <a name="members"></a>Membros  
-  
-### <a name="classes"></a>Classes  
-  
-|Nome|Descrição|  
-|----------|-----------------|  
-|[Classe marker_series](../profiling/marker-series-class.md)|Representa um canal serial de eventos gerados por um único provedor.|  
-|[Classe span](../profiling/span-class.md)|Define uma fase do aplicativo.|  
-  
-### <a name="enumerations"></a>Enumerações  
-  
-|Nome|Descrição|  
-|----------|-----------------|  
-|[Enumeração marker_importance](../profiling/marker-importance-enumeration.md)|Representa o nível de importância de um marcador da Visualização Simultânea.|  
-  
-## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** *cvmarkersobj.h*  
-  
- **Namespace:** Concorrência  
-  
-## <a name="see-also"></a>Consulte também  
- [Namespace de simultaneidade (Visualização Simultânea)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+O namespace `diagnostics` fornece funcionalidade para emitir marcadores de Visualização Simultânea.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+namespace diagnostic;
+```
+
+## <a name="members"></a>Membros
+
+### <a name="classes"></a>Classes
+
+|Nome|Descrição|
+|----------|-----------------|
+|[Classe marker_series](../profiling/marker-series-class.md)|Representa um canal serial de eventos gerados por um único provedor.|
+|[Classe span](../profiling/span-class.md)|Define uma fase do aplicativo.|
+
+### <a name="enumerations"></a>Enumerações
+
+|Nome|Descrição|
+|----------|-----------------|
+|[Enumeração marker_importance](../profiling/marker-importance-enumeration.md)|Representa o nível de importância de um marcador da Visualização Simultânea.|
+
+## <a name="requirements"></a>Requisitos
+ **Cabeçalho:** *cvmarkersobj.h*
+
+ **Namespace:** Concorrência
+
+## <a name="see-also"></a>Consulte também
+- [Namespace de simultaneidade (Visualização Simultânea)](../profiling/concurrency-namespace-concurrency-visualizer.md)

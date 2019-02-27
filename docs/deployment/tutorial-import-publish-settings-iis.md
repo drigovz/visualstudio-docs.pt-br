@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab41ead57671948dcc30a0d3009fad2bfabfa34
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413300"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605393"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publicar um aplicativo no IIS importando configurações de publicação no Visual Studio
 
@@ -42,7 +42,7 @@ Um arquivo de configurações de publicação (*\*.publishsettings*) é diferent
 
     Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalá-lo gratuitamente.
 
-* No servidor, você precisa estar executando o Windows Server 2012 ou 2016 e precisa ter a [função de servidor Web do IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) configurada corretamente (necessário para gerar o arquivo de configurações de publicação (*\*.publishsettings*)). O ASP.NET 4.5 ou o ASP.NET Core também precisam ser instalados no servidor. Para configurar o ASP.NET 4.5, confira [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Para configurar o ASP.NET Core, confira [Hospedar o ASP.NET Core no Windows com o IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
+* No servidor, você precisa estar executando o Windows Server 2012 ou 2016 e precisa ter a [função de servidor Web do IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) configurada corretamente (necessário para gerar o arquivo de configurações de publicação (*\*.publishsettings*)). O ASP.NET 4.5 ou o ASP.NET Core também precisam ser instalados no servidor. Para configurar o ASP.NET 4.5, confira [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Para configurar o ASP.NET Core, confira [Hospedar o ASP.NET Core no Windows com o IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Criar um novo projeto ASP.NET no Visual Studio
 

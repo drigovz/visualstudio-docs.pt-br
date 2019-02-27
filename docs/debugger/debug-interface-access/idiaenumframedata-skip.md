@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ad89beb8672c8f8cf2d6d6710ee53dccba5b5ed
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d747149e18f831b9f57249503a64c37141c4daa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000324"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598473"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
-Ignora um número especificado de elementos de dados do quadro em uma sequência de enumeração.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- celt  
- [in] O número de elementos de dados do quadro na sequência de enumeração para ignorar.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se não houver nenhum mais registros a serem ignorados.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+Ignora um número especificado de elementos de dados do quadro em uma sequência de enumeração.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ celt
+
+[in] O número de elementos de dados do quadro na sequência de enumeração para ignorar.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se não houver nenhum mais registros a serem ignorados.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

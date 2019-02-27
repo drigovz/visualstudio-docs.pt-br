@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852834"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610405"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Como: Compilar um projeto que tem recursos
 Se você estiver compilando versões localizadas de um projeto, todos os elementos da interface do usuário devem ser separados em arquivos de recursos para os diferentes idiomas. Se o projeto usar somente cadeias de caracteres, os arquivos de recursos poderão usar arquivos de texto. Como alternativa, você pode usar arquivos *.resx* como os arquivos de recurso.
@@ -77,7 +77,7 @@ O exemplo de projeto a seguir contém duas tarefas: a tarefa `GenerateResource` 
 ```
 
 ## <a name="see-also"></a>Consulte também
-[MSBuild](../msbuild/msbuild.md)  
-[Tarefa GenerateResource](../msbuild/generateresource-task.md)  
-[Tarefa Csc](../msbuild/csc-task.md)  
-[Resgen.exe (Gerador de Arquivo de Recurso)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [Tarefa GenerateResource](../msbuild/generateresource-task.md)
+- [Tarefa Csc](../msbuild/csc-task.md)
+- [Resgen.exe (Gerador de Arquivo de Recurso)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

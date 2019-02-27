@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318011"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626109"
 ---
 # <a name="basictype"></a>BasicType
 Especifica o tipo básico do símbolo.
@@ -50,59 +50,41 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elementos
-btNoType  
-Nenhum tipo básico é especificado.
+btNoType que nenhum tipo básico é especificado.
 
-btVoid  
-Tipo básico é um `void`.
+btVoid tipo básico é um `void`.
 
-btChar  
-Tipo básico é um `char` (tipo de C/C++).
+btChar tipo básico é um `char` (tipo de C/C++).
 
-btWChar  
-Tipo básico é um caractere largo de (Unicode) (`WCHAR`).
+btWChar tipo básico é um caractere largo de (Unicode) (`WCHAR`).
 
-btInt  
-Tipo básico é `signed int` (tipo de C/C++).
+btInt tipo básico é `signed int` (tipo de C/C++).
 
-btUInt  
-Tipo básico é `unsigned int` (tipo de C/C++).
+btUInt tipo básico é `unsigned int` (tipo de C/C++).
 
-btFloat  
-Tipo básico é um número de ponto flutuante (`FLOAT`).
+btFloat tipo básico é um número de ponto flutuante (`FLOAT`).
 
-btBCD  
-Tipo básico é um decimal codificado binário (`BCD`).
+btBCD tipo básico é um decimal codificado binário (`BCD`).
 
-btBool  
-Tipo básico é um valor booliano (`BOOL`).
+btBool tipo básico é um valor booliano (`BOOL`).
 
-btLong  
-Tipo básico é um `long int` (tipo de C/C++).
+btLong tipo básico é um `long int` (tipo de C/C++).
 
-btULong  
-Tipo básico é um `unsigned long int` (tipo de C/C++).
+btULong tipo básico é um `unsigned long int` (tipo de C/C++).
 
-btCurrency  
-Tipo básico é a moeda.
+btCurrency tipo básico é a moeda.
 
-btDate  
-Tipo básico é de data/hora (`DATE`).
+btDate tipo básico é data/hora (`DATE`).
 
-btVariant  
-Tipo básico é uma estrutura de tipo de variável (`VARIANT`).
+btVariant tipo básico é uma estrutura de tipo de variável (`VARIANT`).
 
-btComplex  
-Tipo básico é um número complexo.
+btComplex tipo básico é um número complexo.
 
-btBit  
-Tipo básico é um pouco.
+btBit tipo básico é um pouco.
 
-btBSTR  
-Tipo básico é uma cadeia de caracteres básica ou binary (`BSTR`).
+btBSTR tipo básico é uma cadeia de caracteres básica ou binary (`BSTR`).
 
-btHresult  
-Tipo básico é um `HRESULT`.
+btHresult tipo básico é um `HRESULT`.
 
 ## <a name="remarks"></a>Comentários
 Os valores nesta enumeração são retornados pelo [idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) método.
@@ -111,6 +93,6 @@ Os valores nesta enumeração são retornados pelo [idiasymbol:: Get_basetype](.
 Cabeçalho: cvconst.h
 
 ## <a name="see-also"></a>Consulte também
-[Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+- [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b85cb1529d929196a2b77629d870c75f03b878a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 729f09f680969cb6a6653109f57d382cd7238557
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963899"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645947"
 ---
 # <a name="warning-task"></a>tarefa Warning
-Registra um aviso durante um build com base em uma instrução condicional avaliada.  
+Registra um aviso durante um build com base em uma instrução condicional avaliada.
 
-## <a name="parameters"></a>Parâmetros  
- A tabela a seguir descreve os parâmetros da tarefa `Warning`.  
+## <a name="parameters"></a>Parâmetros
+ A tabela a seguir descreve os parâmetros da tarefa `Warning`.
 
 
 | Parâmetro | Descrição |
@@ -39,30 +39,30 @@ Registra um aviso durante um build com base em uma instrução condicional avali
 | `HelpKeyword` | Parâmetro `String` opcional.<br /><br /> A palavra-chave Ajuda que será associada ao aviso. |
 | `Text` | Parâmetro `String` opcional.<br /><br /> O texto de aviso que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] registra se o parâmetro `Condition` resultar em `true`. |
 
-## <a name="remarks"></a>Comentários  
- A tarefa `Warning` permite que projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verifiquem a presença de uma configuração necessária ou propriedade antes de continuar com a próxima etapa de build.  
+## <a name="remarks"></a>Comentários
+ A tarefa `Warning` permite que projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verifiquem a presença de uma configuração necessária ou propriedade antes de continuar com a próxima etapa de build.
 
- Se o parâmetro `Condition` da tarefa `Warning` for avaliada como `true`, o valor do parâmetro `Text` será registrado e o build continuará a ser executada. Se não existir um parâmetro `Condition`, o texto de aviso será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Se o parâmetro `Condition` da tarefa `Warning` for avaliada como `true`, o valor do parâmetro `Text` será registrado e o build continuará a ser executada. Se não existir um parâmetro `Condition`, o texto de aviso será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemplo  
- O exemplo de código a seguir verifica as propriedades que são definidas na linha de comando. Se nenhuma propriedade estiver definida, o projeto gerará um evento de aviso e registrará o valor do parâmetro `Text` da tarefa `Warning`.  
+## <a name="example"></a>Exemplo
+ O exemplo de código a seguir verifica as propriedades que são definidas na linha de comando. Se nenhuma propriedade estiver definida, o projeto gerará um evento de aviso e registrará o valor do parâmetro `Text` da tarefa `Warning`.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="ValidateCommandLine">  
-        <Warning  
-            Text=" The 0 property was not set on the command line."  
-            Condition="'$(0)' == ''" />  
-        <Warning  
-            Text=" The FREEBUILD property was not set on the command line."  
-            Condition="'$(FREEBUILD)' == ''" />  
-    </Target>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ValidateCommandLine">
+        <Warning
+            Text=" The 0 property was not set on the command line."
+            Condition="'$(0)' == ''" />
+        <Warning
+            Text=" The FREEBUILD property was not set on the command line."
+            Condition="'$(FREEBUILD)' == ''" />
+    </Target>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>Consulte também  
- [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>Consulte também
+- [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

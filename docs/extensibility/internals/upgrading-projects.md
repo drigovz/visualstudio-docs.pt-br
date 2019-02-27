@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6f1d12e5735a0c285918c4621083bf6c1b6769
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31af6efb2021567b9eb4a5f5048b367c57971fee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949786"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841721"
 ---
 # <a name="upgrading-projects"></a>Atualizando projetos
 
@@ -64,7 +64,7 @@ Se você alterar as informações mantidas no arquivo de projeto entre diferente
 
 O antigo mecanismo que usa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface ainda tem suporte, mas conceitualmente atualiza o sistema de projeto como parte do projeto aberto. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface, portanto, é chamado do Visual Studio ambiente mesmo se o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface é chamado ou implementada. Essa abordagem permite que você use <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> para implementar a cópia e somente as partes da atualização de projeto e delegue o resto do trabalho a ser feito no local (possivelmente no novo local), o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface.
 
-Para uma implementação de exemplo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, consulte [exemplos de VSSDK](http://aka.ms/vs2015sdksamples).
+Para uma implementação de exemplo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, consulte [exemplos de VSSDK](https://aka.ms/vs2015sdksamples).
 
 Os seguintes cenários ocorrem com atualizações de projeto:
 

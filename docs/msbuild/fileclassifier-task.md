@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dccb229712d173e847a7205f03aad308fab224d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853175"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640578"
 ---
 # <a name="fileclassifier-task"></a>Tarefa FileClassifier
 O <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica um conjunto de recursos de origem uma vez que eles serão inseridos em um assembly. Se um recurso não for localizável, ele será inserido no assembly principal do aplicativo; caso contrário, ele será inserido em um assembly satélite.
@@ -64,8 +64,8 @@ O exemplo a seguir classifica um único arquivo de origem como um recurso e, em 
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)  
-[Referência do MSBuild](../msbuild/msbuild-reference.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)  
-[Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)
+- [Referência do MSBuild](../msbuild/msbuild-reference.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

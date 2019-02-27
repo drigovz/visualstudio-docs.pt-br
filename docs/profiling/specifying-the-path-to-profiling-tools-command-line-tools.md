@@ -8,28 +8,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a42774d2f91afe0e3b469a97a17763950b4bdc2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c89e741e4f854f0426a3b3908b896a8908325684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968119"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634806"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Especificar o caminho para as ferramentas de linha de comando das Ferramentas de Criação de Perfil
-O caminho das ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não é adicionado à variável de ambiente PATH. Em computadores de 32 bits, as ferramentas permanecem em um único diretório. Existem versões de 32 e 64 bits das ferramentas de criação de perfil em computadores de 64 bits.  
-  
-## <a name="32-bit-computers"></a>Computadores 32 bits  
+O caminho das ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não é adicionado à variável de ambiente PATH. Em computadores de 32 bits, as ferramentas permanecem em um único diretório. Existem versões de 32 e 64 bits das ferramentas de criação de perfil em computadores de 64 bits.
+
+## <a name="32-bit-computers"></a>Computadores 32 bits
  Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
-  
+
  Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
-  
-## <a name="64-bit-computers"></a>Computadores de 64 bits  
- Em computadores de 64 bits, especifique o caminho de acordo com a plataforma de destino do aplicativo cujo perfil foi criado.  
-  
--   No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:  
-  
-     (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (gerenciado) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*  
-  
--   No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:  
-  
+
+## <a name="64-bit-computers"></a>Computadores de 64 bits
+ Em computadores de 64 bits, especifique o caminho de acordo com a plataforma de destino do aplicativo cujo perfil foi criado.
+
+-   No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:
+
+     (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (gerenciado) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+
+-   No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:
+
      (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (gerenciado) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

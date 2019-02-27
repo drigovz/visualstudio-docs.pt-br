@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfe88fc7f31f90b6c6d4dd3935d7c40e4cc223c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853749"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602177"
 ---
 # <a name="findunderpath-task"></a>Tarefa FindUnderPath
 Determina quais itens na coleção de itens especificados têm caminhos que estão dentro ou abaixo da pasta especificada.
@@ -73,6 +73,6 @@ O exemplo a seguir usa a tarefa `FindUnderPath` para determinar se os arquivos c
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)  
-[Tarefas](../msbuild/msbuild-tasks.md)  
-[Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

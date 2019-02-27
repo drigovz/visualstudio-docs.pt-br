@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f552e9e21baf0be0b8ad2f1a0138323ea09c0502
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40437dfe6d7b8d46a3850f55f181ecd0c3745b70
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009226"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640734"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
-Pesquisa o quadro de pilha especificada para o endereço de retorno de função mais próximo.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT searchForReturnAddress (   
-   IDiaFrameData* frame,  
-   ULONGLONG*     returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `frame`  
- [in] Uma [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa o quadro de pilhas atual.  
-  
- `returnAddress`  
- [out] Retorna o endereço de retorno de função mais próximo.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Pesquisa o quadro de pilha especificada para o endereço de retorno de função mais próximo.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT searchForReturnAddress ( 
+   IDiaFrameData* frame,
+   ULONGLONG*     returnAddress
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `frame`
+
+[in] Uma [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa o quadro de pilhas atual.
+
+ `returnAddress`
+
+[out] Retorna o endereço de retorno de função mais próximo.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

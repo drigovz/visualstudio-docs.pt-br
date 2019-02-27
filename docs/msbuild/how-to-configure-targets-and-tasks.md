@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853697"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603225"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Como: Configurar destinos e tarefas
 Tarefas do MSBuild selecionadas podem ser definidas para serem executadas no ambiente de destino, independentemente do ambiente do computador de desenvolvimento. Por exemplo, quando você usa um computador de 64 bits para criar um aplicativo destinado a uma arquitetura de 32 bits, as tarefas selecionadas são executadas em um processo de 32 bits.
@@ -108,4 +108,4 @@ Os parâmetros `MSBuildRuntime` e `MSBuildArchitecture` fornecem a maneira mais 
 > Os parâmetros de tarefa são avaliados no contexto do nó pai, não no contexto do host da tarefa. As variáveis de ambiente que são dependentes do tempo de execução ou da arquitetura (como o local *Arquivos de Programas*) serão avaliadas como o valor que corresponde ao nó pai. No entanto, se a mesma variável de ambiente for lida diretamente pela tarefa, ela será avaliada corretamente no contexto do host da tarefa.
 
 ## <a name="see-also"></a>Consulte também
-[Configurar destinos e tarefas](../msbuild/configuring-targets-and-tasks.md)
+- [Configurar destinos e tarefas](../msbuild/configuring-targets-and-tasks.md)

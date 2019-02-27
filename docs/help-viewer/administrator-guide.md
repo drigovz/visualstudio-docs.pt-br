@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c381fbb7c5c272ecbe56ee85c527437b44927359
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924039"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841569"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
 
@@ -122,7 +122,7 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
 
 4.  Digite o seguinte:
 
-     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o `
+     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
      Por exemplo: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 

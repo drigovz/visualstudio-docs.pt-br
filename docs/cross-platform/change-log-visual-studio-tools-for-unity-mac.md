@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027231"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611068"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
 Log de alterações de Ferramentas do Visual Studio para Unity.
@@ -34,11 +34,11 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Depurador:**
 
      -   Corrigido um deadlock na biblioteca usada para se comunicar com o mecanismo de depuração do Unity, causando o congelamento do Visual Studio ou Unity, especialmente ao pressionar "Anexar ao Unity" ou ao reiniciar o jogo.
-     
+
 -   **Integração:**
 
      -   Correção da ativação de plug-in do Unity quando outro editor padrão é selecionado.
-     
+
      -   Correção da criação do modelo de arquivo do Unity.
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Integração:**
 
      -   Foi revertida a solução alternativa para um bug de desempenho do Unity que foi corrigido pelo Unity.
-     
+
 ## <a name="1601"></a>1.6.0.1
  Lançado em 10 de julho de 2018
 
@@ -58,7 +58,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Integração:**
 
      -   Suporte à coloração de código de Sombreador corrigido.
-     
+
 ## <a name="1600"></a>1.6.0.0
  Lançado em 26 de junho de 2018
 
@@ -71,23 +71,23 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Geração do Projeto:**
 
      -   Solução alternativa temporária para um bug de desempenho do Unity: armazenar em cache MonoIslands ao gerar projetos.
-     
+
      -   Não converta mais um pdb portátil para mdb ao usar o novo tempo de execução do Unity.
-     
+
 ## <a name="1502"></a>1.5.0.2
  Lançado em 18 de abril de 2018
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Integração:**
 
     -   Adicionado suporte para a conclusão de código básico do Sombreador.
-    
+
     -   Adicionado suporte para ativar/desativar comentários em arquivos do Sombreador.
 
 ## <a name="1501"></a>1.5.0.1
  Lançado em 28 de março de 2018
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Integração:**
@@ -96,7 +96,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1500"></a>1.5.0.0
  Lançado em 21 de março de 2018
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Integração:**
@@ -105,7 +105,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1403"></a>1.4.0.3
  Lançado em 5 de março de 2018
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Geração do Projeto:**
@@ -118,7 +118,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1402"></a>1.4.0.2
  Lançado em 24 de janeiro de 2018
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Geração do Projeto:**
@@ -133,7 +133,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1401"></a>1.4.0.1
  Lançado em 23 de janeiro de 2018
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Integração:**
@@ -142,7 +142,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1400"></a>1.4.0.0
  Lançado em 13 de dezembro de 2017
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Geração do Projeto:**
@@ -157,7 +157,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1301"></a>1.3.0.1
  Lançado em 12 de dezembro de 2017
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Integração:**
@@ -170,7 +170,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1300"></a>1.3.0.0
  Lançado em 20 de novembro de 2017
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Assistentes:**
@@ -181,7 +181,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1200"></a>1.2.0.0
  Lançado em 23 de outubro de 2017
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Depurador:**
@@ -198,7 +198,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1103"></a>1.1.0.3
  Lançado em 23 de outubro de 2017
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Geração do Projeto:**
@@ -207,7 +207,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1102"></a>1.1.0.2
  Lançado em 8 de agosto de 2017
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Depurador:**
@@ -220,7 +220,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1101"></a>1.1.0.1
  Lançado em 20 de julho de 2017
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Integração:**
@@ -229,7 +229,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1100"></a>1.1.0.0
  Lançado em 12 de julho de 2017
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Integração:**
@@ -240,9 +240,9 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
     -   Corrigidas referências de nome de assembly com arquivos mcs.rsp.
 
-    -   Adicionado suporte para unidades de compilação assembly.json.    
+    -   Adicionado suporte para unidades de compilação assembly.json.
 
-    -   Corrigidas definições com níveis de API.    
+    -   Corrigidas definições com níveis de API.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
@@ -252,7 +252,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="1001"></a>1.0.0.1
  Lançado em 4 de maio de 2017
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Integração:**

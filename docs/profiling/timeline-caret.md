@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02add685cc3045fedca5bff8c8bf5efde17d371e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 370e19757890d6d9f56fad4e7b89b2197e515d9c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945041"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615033"
 ---
 # <a name="timeline-caret"></a>Cursor da linha do tempo
-Ao selecionar um ponto na linha do tempo de um segmento de thread em execução, um cursor da Linha do tempo é exibido acima dele. A pilha de chamadas exibida na guia da pilha atual é a mais próxima em tempo ao local em que você clicou no segmento. O cursor é usado para associar a pilha de chamadas, que é exibida sob a guia **Atual**, com o instante em que uma amostra dela foi coletada. O cursor mostra o local exato da pilha de chamadas, que é a pilha de chamadas mais próxima ao local que o usuário selecionou.  
-  
-## <a name="see-also"></a>Consulte também  
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+Ao selecionar um ponto na linha do tempo de um segmento de thread em execução, um cursor da Linha do tempo é exibido acima dele. A pilha de chamadas exibida na guia da pilha atual é a mais próxima em tempo ao local em que você clicou no segmento. O cursor é usado para associar a pilha de chamadas, que é exibida sob a guia **Atual**, com o instante em que uma amostra dela foi coletada. O cursor mostra o local exato da pilha de chamadas, que é a pilha de chamadas mais próxima ao local que o usuário selecionou.
+
+## <a name="see-also"></a>Consulte também
+- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

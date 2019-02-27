@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010344"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623002"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe base ToolTaskExtension
-Muitas tarefas são herdadas da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que é herdada da classe <xref:Microsoft.Build.Utilities.ToolTask>, que é herdada da classe <xref:Microsoft.Build.Utilities.Task>. Esta cadeia de herança adiciona vários parâmetros nas tarefas que derivam deles. Esses parâmetros são listados neste documento.  
+Muitas tarefas são herdadas da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que é herdada da classe <xref:Microsoft.Build.Utilities.ToolTask>, que é herdada da classe <xref:Microsoft.Build.Utilities.Task>. Esta cadeia de herança adiciona vários parâmetros nas tarefas que derivam deles. Esses parâmetros são listados neste documento.
 
-## <a name="parameters"></a>Parâmetros  
- A tabela a seguir descreve os parâmetros das classes base.  
+## <a name="parameters"></a>Parâmetros
+ A tabela a seguir descreve os parâmetros das classes base.
 
 
 | Parâmetro | Descrição |
@@ -48,6 +48,6 @@ Muitas tarefas são herdadas da classe <xref:Microsoft.Build.Tasks.ToolTaskExten
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Parâmetro `bool` opcional.<br /><br /> Quando definido como `true`, essa tarefa cria um arquivo em lotes para a linha de comando e o executa usando o processador de comando em vez de executar o comando diretamente. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Parâmetro `bool` opcional.<br /><br /> Quando definido como `true`, essa tarefa gera o nó quando a tarefa está em execução. |
 
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Tarefas](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Consulte também
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)

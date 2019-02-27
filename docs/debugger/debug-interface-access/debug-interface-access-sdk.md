@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 161934d30c7cd4ecb9d2658e7dac12e46049be1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932292"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608078"
 ---
 # <a name="debug-interface-access-sdk"></a>SDK de Acesso à Interface de Depuração
 
@@ -27,17 +27,22 @@ A Microsoft depurar Interface acesso Software Development Kit (DIA SDK) fornece 
 
 ## <a name="in-this-section"></a>Nesta seção
 
-[Introdução](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[Introdução](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 Fornece uma visão geral do DIA SDK recursos e especifica onde o DIA SDK está instalado, bem como os arquivos de biblioteca e cabeçalho necessário.
 
-[Consultando o arquivo .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[Consultando o arquivo .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 Fornece instruções sobre como usar a API do DIA para consultar o arquivo. PDB.
 
-[Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 Discute como os símbolos e marcações de símbolos são usadas na API do DIA.
 
-[Referência](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Referência](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 Contém as interfaces, métodos, enumerações e estruturas da API do DIA.
 
-[Exemplo de Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Exemplo de Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 Ilustra como usar a API do DIA para pesquisar e procurar informações de depuração.
