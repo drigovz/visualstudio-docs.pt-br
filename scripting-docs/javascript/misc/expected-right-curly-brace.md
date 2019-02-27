@@ -1,14 +1,9 @@
 ---
 title: Esperado '}' | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1009
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 614ee85cca7df89987c4e7c1b4ff87eeebb4678d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350109"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844120"
 ---
 # <a name="expected-"></a>'}' esperado
 Você não incluir a chave à direita que marca o final do corpo da função, o loop, o bloco de código, ou inicializador de objeto. Um exemplo desse erro seria uma **para** loop com apenas a chave à esquerda marcando o corpo do loop.  

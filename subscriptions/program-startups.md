@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/20/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Detalhes sobre quais assinaturas são oferecidas pela Microsoft para o programa de Startups.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cef3c37d2b80a360e680fa59f66d2bfb195ef63f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278967"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840653"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Assinaturas do Visual Studio oferecidas para startups
 As startups qualificadas que entram no programa Microsoft para Startups recebem cinco [assinaturas de nuvem mensais do Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). Essas são as mesmas assinaturas que são oferecidas no mercado, sem nenhuma limitação ou restrição específica. Cada assinatura precisa ser atribuída a um usuário final (que é o usuário licenciado) para que o usuário possa executar o Visual Studio e ser reconhecido como um assinante do Visual Studio Enterprise no Azure DevOps Services.

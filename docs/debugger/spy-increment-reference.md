@@ -11,47 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407c161c700f4dd24eb8d123f0ef015398051caa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925604"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686581"
 ---
 # <a name="spy-reference"></a>Referência de Spy++
-Consulte as seções abaixo para obter descrições de cada Spy + + menu e caixa de diálogo caixa:  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Comandos de menu](../debugger/menu-commands.md)  
- Descreve os comandos disponíveis em cada menu do Spy + +.  
-  
- [Caixa de diálogo Fonte](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
- Usado para configurar a fonte de caracteres usada em uma janela de exibições do Spy + +.  
-  
- [Ferramentas de pesquisa para as exibições do Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Caixas de diálogo usadas para localizar um nó específico em uma janela de exibições do Spy + +.  
-  
- [Caixa de diálogo Propriedades da Janela](../debugger/window-properties-dialog-box.md)  
- Usado para exibir as propriedades de uma janela selecionada no modo de exibição do Windows.  
-  
- [Caixa de diálogo Opções de Mensagem](../debugger/message-options-dialog-box.md)  
- Usado para selecionar quais mensagens são listadas na exibição de mensagens.  
-  
- [Caixa de diálogo Propriedades da Mensagem](../debugger/message-properties-dialog-box.md)  
- Usado para exibir as propriedades de uma mensagem selecionada na exibição de mensagens.  
-  
- [Caixa de diálogo Propriedades do Processo](../debugger/process-properties-dialog-box.md)  
- Usado para exibir as propriedades de um processo selecionado na exibição de processos.  
-  
- [Caixa de diálogo Propriedades do Thread](../debugger/thread-properties-dialog-box.md)  
- Usado para exibir as propriedades de um thread selecionado na exibição de Threads.  
-  
- [Outras caixas de diálogo](../debugger/other-dialog-boxes.md)  
- Usado para exibir informações sobre o programa Spy + +.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Usando Spy++](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
-  
- [Exibições do Spy++](../debugger/spy-increment-views.md)  
- Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.
+Consulte as seções abaixo para obter descrições de cada Spy + + menu e caixa de diálogo caixa:
+
+## <a name="in-this-section"></a>Nesta seção
+ [Comandos de menu](../debugger/menu-commands.md) descreve os comandos disponíveis em cada menu do Spy + +.
+
+ [Caixa de diálogo fonte](../debugger/font-dialog-box-microsoft-spy-increment-help.md) usado para configurar a fonte de caracteres usada em uma janela de exibições do Spy + +.
+
+ [Ferramentas de pesquisa para exibições do Spy + +](../debugger/search-tools-for-spy-increment-views.md) caixas de diálogo usadas para localizar um nó específico em uma janela de exibições do Spy + +.
+
+ [Caixa de diálogo de propriedades de janela](../debugger/window-properties-dialog-box.md) usado para exibir as propriedades de uma janela selecionada no modo de exibição do Windows.
+
+ [Caixa de diálogo Opções da mensagem](../debugger/message-options-dialog-box.md) usado para selecionar quais mensagens são listadas na exibição de mensagens.
+
+ [Caixa de diálogo Propriedades da mensagem](../debugger/message-properties-dialog-box.md) usado para exibir as propriedades de uma mensagem selecionada na exibição de mensagens.
+
+ [Caixa de diálogo Propriedades de processar](../debugger/process-properties-dialog-box.md) usado para exibir as propriedades de um processo selecionado na exibição de processos.
+
+ [Caixa de diálogo Propriedades do thread](../debugger/thread-properties-dialog-box.md) usado para exibir as propriedades de um thread selecionado na exibição de Threads.
+
+ [Outras caixas de diálogo](../debugger/other-dialog-boxes.md) usado para exibir informações sobre o programa Spy + +.
+
+## <a name="related-sections"></a>Seções relacionadas
+ [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+
+ [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.

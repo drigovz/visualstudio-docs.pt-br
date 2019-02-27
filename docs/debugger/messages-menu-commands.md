@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a4a6e65929e6c437481397e5aadb6bbe4d1f33
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978926"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692561"
 ---
 # <a name="messages-menu-commands"></a>Comandos do menu Mensagens
-O **mensagens** menu fornece comandos para controlar modos de exibição de mensagem.  
-  
- **Iniciar/Parar registro em log**  
- Inicia ou interrompe a exibição de mensagem.  
-  
- **Opções de log**  
- Abre o **MessageOptions** caixa de diálogo, onde você pode especificar critérios de pesquisa da mensagem.  
-  
- **Limpar Log**  
- Limpa o conteúdo da exibição de mensagens ativa.
+O **mensagens** menu fornece comandos para controlar modos de exibição de mensagem.
+
+ **Iniciar/Parar registro em log** inicia ou para a mensagem de exibir.
+
+ **Opções de log** abre o **MessageOptions** caixa de diálogo, onde você pode especificar critérios de pesquisa da mensagem.
+
+ **Limpar Log** limpa o conteúdo da exibição de mensagens ativa.

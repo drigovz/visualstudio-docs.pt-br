@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023948"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720024"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuração remota do ASP.NET em um computador remoto IIS
 Para depurar um aplicativo ASP.NET que tenha sido implantado no IIS, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo e, em seguida, anexar a seu aplicativo em execução do Visual Studio.
@@ -47,7 +47,7 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
 * Se você deseja obter ajuda para certificar-se de que seu aplicativo é configurado, implantado e executando corretamente no IIS para que você possa depurar, siga as etapas neste tópico.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Criar do ASP.NET 4.5.2 aplicativo no computador do Visual Studio
-  
+
 1. Crie um novo aplicativo ASP.NET MVC. (**Arquivo > Novo > projeto**, em seguida, selecione <strong>Visual C# > Web > aplicativo Web ASP.NET. No **ASP.NET 4.5.2</strong> seção de modelos, selecione **MVC**. Certifique-se de que **Habilitar suporte ao Docker** não está selecionado e que **autenticação** está definido como **sem autenticação**. Nomeie o projeto **MyASPApp**.)
 
 2. Abra o arquivo HomeController.cs e defina um ponto de interrupção `About()` método.
@@ -147,7 +147,7 @@ Você pode usar essa opção para implantar seu aplicativo se você deseja copia
 Você também pode publicar e implantar o aplicativo usando o sistema de arquivos ou outras ferramentas.
 
 1. (ASP.NET 4.5.2) Certifique-se de que o arquivo Web. config lista a versão correta do .NET Framework.  Por exemplo, se você estiver direcionando a ASP.NET 4.5.2, verifique se que essa versão é listada no Web. config.
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -156,7 +156,7 @@ Você também pode publicar e implantar o aplicativo usando o sistema de arquivo
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     Por exemplo, a versão deve ser 4.0, se você instalar o ASP.NET 4, em vez de 4.5.2.
@@ -168,7 +168,7 @@ Você também pode publicar e implantar o aplicativo usando o sistema de arquivo
 Neste tutorial, estamos usando o Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Configurar o depurador remoto no Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -184,7 +184,7 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 2. No Visual Studio, clique em **Depurar > Anexar ao processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > No Visual Studio 2017, você pode anexar novamente o mesmo processo que você anexado anteriormente usando **Depurar > anexar novamente ao processo...** Shift+Alt+P 
+    > No Visual Studio 2017, você pode anexar novamente o mesmo processo que você anexado anteriormente usando **Depurar > anexar novamente ao processo...** Shift+Alt+P
 
 3. Definir o qualificador de campo para  **\<nome do computador remoto >: 4022**.
 4. Cliquem em **Atualizar**.
@@ -200,7 +200,7 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 7. Clique em **Anexar**
 
 8. Abra o site do computador remoto. Em um navegador, vá para **http://\<nome do computador remoto >**.
-    
+
     Você deve ver a página da web ASP.NET.
 9. No aplicativo ASP.NET em execução, clique no link para o **sobre** página.
 
@@ -211,7 +211,7 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 Na maioria das configurações, as portas necessárias estão abertas pela instalação do ASP.NET e o depurador remoto. No entanto, talvez você precise verificar se as portas estão abertas.
 
 > [!NOTE]
-> Em uma VM do Azure, você deve abrir as portas por meio de [grupo de segurança de rede](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+> Em uma VM do Azure, você deve abrir as portas por meio de [grupo de segurança de rede](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Portas obrigatórias:
 

@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2f8312b67610a1f796e6bf9949d24a195428d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 24317ff7a79815e5af2306b09cc8d2aa3bfdde0d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016481"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56595847"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-Determina se procurando por informações de depuração é permitido de arquivos. dbg.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT RestrictDBGAccess();  
-```  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Qualquer valor de retorno diferente de `S_OK` para evitar procurando por informações de depuração de arquivos. dbg.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Determina se procurando por informações de depuração é permitido de arquivos. dbg.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT RestrictDBGAccess();
+```
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Qualquer valor de retorno diferente de `S_OK` para evitar procurando por informações de depuração de arquivos. dbg.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

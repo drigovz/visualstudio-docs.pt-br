@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227677"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698983"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em c# no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido na **inspeção** janela usando especificadores de formato. Você também pode usar especificadores de formato na **Immediate** janela, o **comando** janela, na [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e em janelas de origem. Se você pausar em uma expressão nessas janelas, o resultado será exibido em uma [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) na exibição do formato especificado.
@@ -68,5 +68,5 @@ A tabela a seguir descreve o C# formatar os especificadores de depurador do Visu
 |resultados|Usado com uma variável de um tipo que implementa IEnumerable ou IEnumerable\<T >, geralmente o resultado de uma expressão de consulta. Exibe apenas os membros que contém o resultado da consulta.|Exibe todos os membros|Exibe os membros que atendam as condições da consulta|
 
 ## <a name="see-also"></a>Consulte também
-[Janelas Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)  
-[Janelas automáticas e locais](../debugger/autos-and-locals-windows.md)
+- [Janelas Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)
+- [Janelas automáticas e locais](../debugger/autos-and-locals-windows.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927731"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627214"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Tarefa MergeLocalizationDirectives
 A tarefa <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> mescla os atributos de localização e comentários de um ou mais [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] arquivos de formato binário em um único arquivo para todo o assembly.
@@ -55,8 +55,8 @@ O exemplo a seguir mescla os comentários de localização de vários arquivos d
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
-[Referência do MSBuild](../msbuild/msbuild-reference.md)  
-[Referência de tarefas do MSBuild](../msbuild/msbuild-task-reference.md)  
-[Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+- [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
+- [Referência do MSBuild](../msbuild/msbuild-reference.md)
+- [Referência de tarefas do MSBuild](../msbuild/msbuild-task-reference.md)
+- [Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

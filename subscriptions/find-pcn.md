@@ -4,21 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/29/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba como localizar seu PCN (número do cliente) ou seu número de autorização
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b27d61a614c7ddbe1503eb7708e0e2e35a39fca0
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269205"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844341"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Como localizar meu "Número de Cliente Público" (PCN) ou Número de Autorização?
 
-Para concluir a integração da sua organização ao portal de administração de assinatura, você precisará de seu PCN (número do cliente) ou seu número de autorização. Este artigo fornece as etapas para localizar esses números para sua organização.  
+Para concluir a integração da sua organização ao portal de administração de assinatura, você precisará de seu PCN (número do cliente) ou seu número de autorização. Este artigo fornece as etapas para localizar esses números para sua organização.
 
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>Para localizar o PCN ou o número de autorização
 
@@ -28,8 +26,8 @@ O Centro de Atendimento de Licença por Volume não fornece mais acesso ao seu P
     > [!div class="mx-imgBorder"]
     > ![Escolher suporte à assinatura](_img/vlsc/vlsc-pcn.png)
 3. Escolha o país na lista suspensa.
-4. Escolha, na lista de opções de suporte disponíveis em seu país, o contato de um agente de suporte que pode pesquisar o PCN para você.  
+4. Escolha, na lista de opções de suporte disponíveis em seu país, o contato de um agente de suporte que pode pesquisar o PCN para você.
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Se eu tiver mais de um PCN, qual deles deverei usar?
 
-Se tiver mais de um PCN (Número de Cliente Público), você receberá um email com uma URL de integração exclusiva para cada PCN. Cada URL exclusiva só funciona com o PCN correspondente, os últimos três dígitos que também são fornecidos no mesmo email. Você precisará concluir o processo de integração por meio do link exclusivo em cada email, para cada PCN. 
+Se tiver mais de um PCN (Número de Cliente Público), você receberá um email com uma URL de integração exclusiva para cada PCN. Cada URL exclusiva só funciona com o PCN correspondente, os últimos três dígitos que também são fornecidos no mesmo email. Você precisará concluir o processo de integração por meio do link exclusivo em cada email, para cada PCN.

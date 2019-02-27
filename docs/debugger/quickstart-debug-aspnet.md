@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027357"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683591"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Início Rápido: Depurar o ASP.NET com o depurador do Visual Studio
 
 O depurador do Visual Studio oferece muitos recursos avançados para ajudar a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto 
+## <a name="create-a-new-project"></a>Criar um novo projeto
 
 1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
@@ -110,7 +110,7 @@ Comandos de teclado comuns usados para percorrer o código incluem **F10** e **F
 
     ![Exibir uma datatip](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    A datatip mostra o valor atual da variável `c2` e permite que você inspecione suas propriedades. Ao depurar, se você vir um valor que não espera, provavelmente haverá um bug nas linhas de código anteriores ou de chamada. 
+    A datatip mostra o valor atual da variável `c2` e permite que você inspecione suas propriedades. Ao depurar, se você vir um valor que não espera, provavelmente haverá um bug nas linhas de código anteriores ou de chamada.
 
 2. Expanda a datatip para examinar os valores de propriedade atuais do objeto `c2`.
 

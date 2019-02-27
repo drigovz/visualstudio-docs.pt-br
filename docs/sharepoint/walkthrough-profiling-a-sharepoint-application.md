@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602033"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841709"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Passo a passo: Perfil de um aplicativo do SharePoint
   Este passo a passo mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que pode degradar o desempenho do receptor de evento do recurso. O criador de perfil do Visual Studio permite que você localize e eliminar a parte mais cara (desempenho mais lento) do projeto, também conhecido como o *afunilamento*.
@@ -47,7 +47,7 @@ ms.locfileid: "56602033"
 ## <a name="create-a-sharepoint-project"></a>Criar um projeto do SharePoint
  Primeiro, crie um projeto do SharePoint.
 
-#### <a name="to-create-a-sharepoint-project"></a>Para criar um projeto do SharePoint
+### <a name="to-create-a-sharepoint-project"></a>Para criar um projeto do SharePoint
 
 1. Na barra de menus, escolha **arquivo** > **New** > **projeto** para exibir o **novo projeto** caixa de diálogo.
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602033"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Adicionar um recurso e o receptor de evento de recurso
  Em seguida, adicione um recurso para o projeto, juntamente com um receptor de eventos para o recurso. Esse receptor de evento conterá o código para criação de perfil.
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para adicionar um recurso e o receptor de evento de recurso
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para adicionar um recurso e o receptor de evento de recurso
 
 1.  Na **Gerenciador de soluções**, abra o menu de atalho para o **recursos** nó, escolha **adicionar recurso**e deixe o nome com o valor padrão, **Feature1**.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602033"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Configurar e implantar o aplicativo do SharePoint
  Agora que o projeto do SharePoint estiver pronto, configurá-lo e implantá-lo no servidor do SharePoint.
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Para configurar e implantar o aplicativo do SharePoint
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Para configurar e implantar o aplicativo do SharePoint
 
 1.  Sobre o **Analyze** menu, escolha **Launch Performance Wizard**.
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602033"
 ## <a name="run-the-sharepoint-application"></a>Executar o aplicativo do SharePoint
  Ativar o recurso no SharePoint, disparando o `FeatureActivation` código de evento para ser executado.
 
-#### <a name="to-run-the-sharepoint-application"></a>Para executar o aplicativo do SharePoint
+### <a name="to-run-the-sharepoint-application"></a>Para executar o aplicativo do SharePoint
 
 1.  No SharePoint, abra o **ações do Site** menu e, em seguida, escolha **configurações de Site**.
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602033"
 ## <a name="view-and-interpret-the-profile-results"></a>Exibir e interpretar os resultados de perfil
  Agora que você executou e criação de perfil de aplicativo do SharePoint, exiba os resultados de teste.
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>Para exibir e interpretar os resultados de perfil
+### <a name="to-view-and-interpret-the-profile-results"></a>Para exibir e interpretar os resultados de perfil
 
 1.  No **funções que realizam o trabalho mais Individual** seção do relatório de criação de perfil de exemplo, observe que `TimeCounter` está no topo da lista.
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602033"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>Corrija o código e reprofile o aplicativo
  Agora que a função de ponto de acesso no aplicativo do SharePoint tiver sido identificada, corrigi-lo.
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>Para corrigir o código e reprofile o aplicativo
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>Para corrigir o código e reprofile o aplicativo
 
 1.  Em que o código de receptor de evento de recurso, comente a `TimeCounter` chamada de método na `FeatureActivated` impedi-lo de que está sendo chamado.
 

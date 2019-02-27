@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942796"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610535"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Como: Selecionar os arquivos a serem compilados
 Quando você compila um projeto que contém vários arquivos, é possível listar cada arquivo separadamente no arquivo de projeto ou usar caracteres curinga para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios.
@@ -29,25 +29,25 @@ Para incluir arquivos para um build, eles devem ser incluídos em uma lista de i
 
 #### <a name="to-declare-items-individually"></a>Para declarar itens individualmente
 
-- Use os atributos `Include` semelhantes ao seguinte:  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    ou  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- Use os atributos `Include` semelhantes ao seguinte:
+
+    `<CSFile Include="form1.cs"/>`
+
+    ou
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > Se os itens em uma coleção de itens não estiverem no mesmo diretório que o arquivo de projeto, será necessário especificar o caminho completo ou relativo para o item. Por exemplo: `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Para declarar vários itens
 
--   Use os atributos `Include` semelhantes ao seguinte:  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    ou  
-  
+-   Use os atributos `Include` semelhantes ao seguinte:
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    ou
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Especificar entradas com curingas
@@ -63,24 +63,24 @@ Os seguintes exemplos baseiam-se em um projeto que contém arquivos de elementos
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Para incluir todos os arquivos *.jpg* no diretório *Images* e nos subdiretórios
 
-- Use o seguinte atributo `Include`:  
-  
+- Use o seguinte atributo `Include`:
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Para incluir todos os arquivos *.jpg* que começam com *img*
 
-- Use o seguinte atributo `Include`:  
-  
+- Use o seguinte atributo `Include`:
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Para incluir todos os arquivos em diretórios com nomes que terminam com *jpgs*
 
-- Use um dos seguintes atributos `Include`:  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    ou  
-  
+- Use um dos seguintes atributos `Include`:
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    ou
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Passar itens para uma tarefa
@@ -88,17 +88,17 @@ Em um arquivo de projeto, você pode usar a notação @() em tarefas para especi
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos os arquivos do Visual c# ou Visual Basic como entradas
 
-- Use os atributos `Include` semelhantes ao seguinte:  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    ou  
-  
+- Use os atributos `Include` semelhantes ao seguinte:
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    ou
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  Use curingas com itens para especificar as entradas para um build; não é possível especificar as entradas usando o atributo `Sources` em tarefas do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Exemplo
@@ -170,5 +170,5 @@ O exemplo de código a seguir usa um curinga para incluir todos os arquivos *.cs
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Como: Excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md)  
-[Itens](../msbuild/msbuild-items.md)
+- [Como: Excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Itens](../msbuild/msbuild-items.md)

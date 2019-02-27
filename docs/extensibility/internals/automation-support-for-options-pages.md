@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d59fbfe6213bbcec1311cf9ad6216b3d8c86c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629139"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840452"
 ---
 # <a name="automation-support-for-options-pages"></a>Suporte de automação para páginas de opções
 Os VSPackages pode fornecer personalizado **opções** caixas de diálogo para o **ferramentas** menu (**opções de ferramentas** páginas) no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e podem disponibilizá-los para a automação modelo.
@@ -34,7 +34,7 @@ Os VSPackages pode fornecer personalizado **opções** caixas de diálogo para o
 
 4. O objeto de automação do VSPackage, em seguida, é usado para fornecer a cada <xref:EnvDTE.Property> retornado por <xref:EnvDTE._DTE.Properties%2A>.
 
-   Para obter um exemplo de implementação de uma **opções de ferramentas** página, consulte [exemplos de VSSDK](http://aka.ms/vs2015sdksamples).
+   Para obter um exemplo de implementação de uma **opções de ferramentas** página, consulte [exemplos de VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Consulte também
 - [Expor objetos do projeto](../../extensibility/internals/exposing-project-objects.md)
