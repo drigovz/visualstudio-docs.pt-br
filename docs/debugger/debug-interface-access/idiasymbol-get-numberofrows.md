@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efe806276f713a5c57ee5752c1fdac9bb5e446f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9d87445592db3cc566744151ea207bbb64c4906
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005326"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622053"
 ---
 # <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
-Recupera o número de linhas na matriz.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_numberOfRows(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Um ponteiro para um `DWORD` que contém o número de linhas na matriz.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera o número de linhas na matriz.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_numberOfRows(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Um ponteiro para um `DWORD` que contém o número de linhas na matriz.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

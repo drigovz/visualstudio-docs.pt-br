@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d45cf1e1ee8cbb12af9f10733db9aed06e252ece
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996198"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634052"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Início Rápido: Analisar dados de uso da CPU no Visual Studio | Microsoft Docs (ASP.NET)
 
@@ -87,8 +87,8 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil 
-  
+##  <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
+
 1.  Primeiro, defina um ponto de interrupção em seu aplicativo nesta linha de código no construtor `Simple`:
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 
     > [!TIP]
     > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
-  
+
 1.  A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
 
 1.  Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
@@ -189,7 +189,7 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
      Agora, você tem dados de desempenho do aplicativo especificamente para a região do código que é executada entre os dois pontos de interrupção.
 
      O criador de perfil começa a preparar os dados de thread. Aguarde sua conclusão.
-  
+
      A ferramenta de Uso de CPU exibe o relatório na guia **Uso da CPU**.
 
      Neste ponto, você pode começar a analisar os dados.
@@ -207,7 +207,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
 2. Na lista de função, clique duas vezes na função `MyProfilingApp_MVC.Models.ServerClass::GetNumber`.
 
-    Quando você clica duas vezes na função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo. 
+    Quando você clica duas vezes na função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo.
 
     ![Exibição Chamador/Computador Chamado das ferramentas de diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 - [Analisar o uso da CPU](../profiling/cpu-usage.md) para obter informações mais detalhadas sobre a ferramenta de uso de CPU.
 - Analise o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
 
- [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
+- [Criação de perfis no Visual Studio](../profiling/index.md)
+- [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

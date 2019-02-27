@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922115"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645479"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opções, Editor de Texto, C/C++, Formatação
 
@@ -42,7 +42,7 @@ Esta página contém as opções de formatação de instruções e de blocos con
 
 ### <a name="configuring-clangformat-options"></a>Configurando as opções de ClangFormat
 
-No Visual Studio 2017 versão 15.7 e posteriores, o suporte ao ClangFormat está habilitado por padrão. Você pode escolher quais dessas convenções de formatação comuns serão aplicadas a todos os seus projetos: LLVM, Google, Chromium, Mozilla ou WebKit. Você também pode criar um arquivo .clang-format ou _clang-format de definição de formato personalizado. Quando esse arquivo está presente em uma pasta de projeto, o Visual Studio o usa para formatar todos os arquivos de código-fonte nessa pasta e em suas subpastas. 
+No Visual Studio 2017 versão 15.7 e posteriores, o suporte ao ClangFormat está habilitado por padrão. Você pode escolher quais dessas convenções de formatação comuns serão aplicadas a todos os seus projetos: LLVM, Google, Chromium, Mozilla ou WebKit. Você também pode criar um arquivo .clang-format ou _clang-format de definição de formato personalizado. Quando esse arquivo está presente em uma pasta de projeto, o Visual Studio o usa para formatar todos os arquivos de código-fonte nessa pasta e em suas subpastas.
 
 Por padrão, o Visual Studio executa o clangformat.exe em segundo plano e aplica a formatação à medida que você digita. Você também pode especificar que ele seja executado somente para comandos de formatação invocados manualmente **Formatar Documento (Ctrl + K, Ctrl + D)** ou **Formatar Seleção (Ctrl + K, Ctrl + F)**.
 

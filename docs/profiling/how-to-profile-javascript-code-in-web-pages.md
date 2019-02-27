@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043512"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646129"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Como: Criar perfil de código JavaScript em páginas da Web
 
 As Ferramentas de Criação de Perfil do Visual Studio podem coletar dados de desempenho do código JavaScript que é executado em um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], em uma página da Web arbitrária ou em um aplicativo JavaScript usando o método de criação de perfil por instrumentação. Exige o Internet Explorer 8 ou posterior.
 
 > [!WARNING]
-> Para analisar JavaScript em aplicativos UWP, consulte [Memória de JavaScript](../profiling/javascript-memory.md) 
+> Para analisar JavaScript em aplicativos UWP, consulte [Memória de JavaScript](../profiling/javascript-memory.md)
 
 Você pode usar o Assistente de Criação de Perfil para criar uma sessão de desempenho. Especifique o método de instrumentação e, em seguida, especifique a opção de criação de perfil JavaScript na página de Instrumentação da caixa de diálogo de propriedades da sessão de desempenho.
 

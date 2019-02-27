@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dff89e6d2552773e78e3e3de051e68cf81de9fc7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042082"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642164"
 ---
 # <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
-Recupera o endereço virtual (VA) do início da seção.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna a VA do início da seção.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Recupera o endereço virtual (VA) do início da seção.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna a VA do início da seção.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

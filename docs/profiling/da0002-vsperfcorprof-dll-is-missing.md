@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc44f1dd1a7c9b81330912871a090881987d2a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa263f6ceab515627fd33070517e3393aeec419d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033605"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637198"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll está ausente
 
-|||  
-|-|-|  
-|ID de regra|DA0002|  
-|Categoria|Uso das ferramentas de criação de perfil|  
-|Métodos de criação de perfil|Criação de perfil usando as ferramentas de linha de comando VSPerfCmd e VSPerfASPNETCmd|  
-|Mensagem|Parece que o arquivo foi coletado sem definir corretamente as variáveis de ambiente com *VSPerfCLREnv.cmd*. Símbolos de binários gerenciados podem não ser resolvidos.|  
-|Tipo de regra|Informações|  
+|||
+|-|-|
+|ID de regra|DA0002|
+|Categoria|Uso das ferramentas de criação de perfil|
+|Métodos de criação de perfil|Criação de perfil usando as ferramentas de linha de comando VSPerfCmd e VSPerfASPNETCmd|
+|Mensagem|Parece que o arquivo foi coletado sem definir corretamente as variáveis de ambiente com *VSPerfCLREnv.cmd*. Símbolos de binários gerenciados podem não ser resolvidos.|
+|Tipo de regra|Informações|
 
-## <a name="cause"></a>Causa  
- O criador de perfil não conseguiu localizar *VSPerfCorProf.dll* durante a execução da criação de perfil. Este aviso ocorre quando as ferramentas de linha de comando para a coleta de dados do criador de perfil são usadas sem usar a ferramenta *VSPerfCLREnv.cmd* para inicializar as variáveis de ambiente necessárias. O aviso também pode acionar se outro criador de perfil está sendo executado quando iniciar as ferramentas de criação de perfil.  
+## <a name="cause"></a>Causa
+ O criador de perfil não conseguiu localizar *VSPerfCorProf.dll* durante a execução da criação de perfil. Este aviso ocorre quando as ferramentas de linha de comando para a coleta de dados do criador de perfil são usadas sem usar a ferramenta *VSPerfCLREnv.cmd* para inicializar as variáveis de ambiente necessárias. O aviso também pode acionar se outro criador de perfil está sendo executado quando iniciar as ferramentas de criação de perfil.
 
-## <a name="rule-description"></a>Descrição da regra  
- Variáveis de ambiente específicas devem ser definidas antes de executar a criação de perfil para o criador de perfil resolver os símbolos nos binários do .NET Framework. Este aviso sugere que a ferramenta *VSPerfCLREnv.cmd* não estava em execução antes da coleta dos dados de criação de perfil. Símbolos de binários gerenciados podem não ser resolvidos. Para obter mais informações sobre como usar as ferramentas de criação de perfil da linha de comando, confira [Profiling from the command-line](../profiling/using-the-profiling-tools-from-the-command-line.md) (Criando perfil da linha de comando)  
+## <a name="rule-description"></a>Descrição da regra
+ Variáveis de ambiente específicas devem ser definidas antes de executar a criação de perfil para o criador de perfil resolver os símbolos nos binários do .NET Framework. Este aviso sugere que a ferramenta *VSPerfCLREnv.cmd* não estava em execução antes da coleta dos dados de criação de perfil. Símbolos de binários gerenciados podem não ser resolvidos. Para obter mais informações sobre como usar as ferramentas de criação de perfil da linha de comando, confira [Profiling from the command-line](../profiling/using-the-profiling-tools-from-the-command-line.md) (Criando perfil da linha de comando)
 
-## <a name="how-to-fix-violations"></a>Como corrigir violações  
+## <a name="how-to-fix-violations"></a>Como corrigir violações
  Quando você estiver criando perfis para aplicativos gerenciados usando as ferramentas de linha de comando nas ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], execute a ferramenta da linha de comando [VSPerfCLREnv](../profiling/vsperfclrenv.md) ferramenta de linha de comando antes de iniciar a coleta de dados.

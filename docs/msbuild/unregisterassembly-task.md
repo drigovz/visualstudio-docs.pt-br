@@ -18,49 +18,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c8ea976783d2771500302e8f0ecce560e11b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec05565bb43d4b592515c9c4b41c969a3e677e0e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961251"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644998"
 ---
 # <a name="unregisterassembly-task"></a>Tarefa UnregisterAssembly
-Cancela o registro os assemblies especificados para fins de interoperabilidade COM. Executa o inverso da [tarefa RegisterAssembly](../msbuild/registerassembly-task.md).  
-  
-## <a name="parameters"></a>Parâmetros  
- A tabela a seguir descreve os parâmetros da tarefa `UnregisterAssembly`.  
-  
-|Parâmetro|Descrição|  
-|---------------|-----------------|  
-|`Assemblies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os assemblies cujo registro deverá ser cancelado.|  
-|`AssemblyListFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Contém informações sobre o estado entre a tarefa `RegisterAssembly` e a tarefa `UnregisterAssembly`. Isso impede que a tarefa tente cancelar o registro de um assembly que falhou ao se registrar na tarefa `RegisterAssembly`.<br /><br /> Se esse parâmetro for especificado, os parâmetros `Assemblies` e `TypeLibFiles` serão ignorados.|  
-|`TypeLibFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Cancela o registro da biblioteca de tipos especificada do assembly especificado. **Observação:**  Esse parâmetro só é necessário se o nome de arquivo de biblioteca de tipos é diferente do nome do assembly.|  
-  
-## <a name="remarks"></a>Comentários  
- Não é necessário que o assembly exista para que esta tarefa seja bem-sucedida. Se você tentar cancelar o registro de um assembly que não existe, a tarefa terá êxito com um aviso. Isso ocorre porque é o trabalho dessa tarefa remover o registro do assembly do Registro. Se o assembly não existir, ele não estará no Registro e, portanto, a tarefa terá sido bem-sucedida.  
-  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension>, que herda da classe <xref:System.MarshalByRefObject>. A classe `MarshalByRefObject` fornece a mesma funcionalidade que a classe <xref:Microsoft.Build.Utilities.Task>, mas ela pode ser instanciada em seu próprio domínio do aplicativo.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir usa a tarefa `UnregisterAssembly` para cancelar o registro do assembly no caminho especificado pelas propriedades `OutputPath` e `FileName`, se ele existir.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <PropertyGroup>  
-        <OutputPath>\Output\</OutputPath>  
-        <FileName>MyFile.dll</FileName>  
-    </PropertyGroup>  
-    <Target Name="UnregisterAssemblies">  
-        <UnregisterAssembly  
-            Condition="Exists('$(OutputPath)$(FileName)')"  
-            Assemblies="$(OutputPath)$(FileName)" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Tarefa RegisterAssembly](../msbuild/registerassembly-task.md)   
- [Tarefas](../msbuild/msbuild-tasks.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+Cancela o registro os assemblies especificados para fins de interoperabilidade COM. Executa o inverso da [tarefa RegisterAssembly](../msbuild/registerassembly-task.md).
+
+## <a name="parameters"></a>Parâmetros
+ A tabela a seguir descreve os parâmetros da tarefa `UnregisterAssembly`.
+
+|Parâmetro|Descrição|
+|---------------|-----------------|
+|`Assemblies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os assemblies cujo registro deverá ser cancelado.|
+|`AssemblyListFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Contém informações sobre o estado entre a tarefa `RegisterAssembly` e a tarefa `UnregisterAssembly`. Isso impede que a tarefa tente cancelar o registro de um assembly que falhou ao se registrar na tarefa `RegisterAssembly`.<br /><br /> Se esse parâmetro for especificado, os parâmetros `Assemblies` e `TypeLibFiles` serão ignorados.|
+|`TypeLibFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Cancela o registro da biblioteca de tipos especificada do assembly especificado. **Observação:**  Esse parâmetro só é necessário se o nome de arquivo de biblioteca de tipos é diferente do nome do assembly.|
+
+## <a name="remarks"></a>Comentários
+ Não é necessário que o assembly exista para que esta tarefa seja bem-sucedida. Se você tentar cancelar o registro de um assembly que não existe, a tarefa terá êxito com um aviso. Isso ocorre porque é o trabalho dessa tarefa remover o registro do assembly do Registro. Se o assembly não existir, ele não estará no Registro e, portanto, a tarefa terá sido bem-sucedida.
+
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension>, que herda da classe <xref:System.MarshalByRefObject>. A classe `MarshalByRefObject` fornece a mesma funcionalidade que a classe <xref:Microsoft.Build.Utilities.Task>, mas ela pode ser instanciada em seu próprio domínio do aplicativo.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir usa a tarefa `UnregisterAssembly` para cancelar o registro do assembly no caminho especificado pelas propriedades `OutputPath` e `FileName`, se ele existir.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <OutputPath>\Output\</OutputPath>
+        <FileName>MyFile.dll</FileName>
+    </PropertyGroup>
+    <Target Name="UnregisterAssemblies">
+        <UnregisterAssembly
+            Condition="Exists('$(OutputPath)$(FileName)')"
+            Assemblies="$(OutputPath)$(FileName)" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Consulte também
+- [Tarefa RegisterAssembly](../msbuild/registerassembly-task.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f532b55ffd401b88471921cb41d47410604dfa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939363"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614721"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-Recupera um sinalizador que indica se o bloco contém o ponto de entrada de uma função.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_functionStart (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se o bloco contiver o ponto de entrada; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- É possível que um quadro de pilha não ser o início de uma função como o quadro representa um método em linha ou uma função inserida em uma função.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Recupera um sinalizador que indica se o bloco contém o ponto de entrada de uma função.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_functionStart ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se o bloco contiver o ponto de entrada; caso contrário, retornará `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ É possível que um quadro de pilha não ser o início de uma função como o quadro representa um método em linha ou uma função inserida em uma função.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

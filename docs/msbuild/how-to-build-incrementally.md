@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853895"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621325"
 ---
 # <a name="how-to-build-incrementally"></a>Como: Compilar de forma incremental
 Quando você cria um projeto grande, é importante que já tenha criado componentes que ainda estejam atualizados e não sejam recriados. Se todos os destinos forem criados todas as vezes, cada build levará muito tempo para ser concluída. Para habilitar as builds incrementais (builds nos quais somente os destinos que não foram criados antes ou destinos que estão desatualizados são recriadas), o [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No entanto, deve haver um mapeamento de um para um entre entradas e saídas. Você pode usar transformações para permitir que os destinos identifiquem esse mapeamento direto. Para obter mais informações sobre transformações, consulte [Transformações](../msbuild/msbuild-transforms.md).
@@ -38,12 +38,12 @@ Um destino pode ser criado incrementalmente se as entradas e saídas forem espec
   O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No seguinte exemplo, se um arquivo da lista de itens `@(CSFile)` for mais recente que o arquivo *hello.exe*, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executará o destino; caso contrário, ele será ignorado:
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ Este arquivo de projeto contém os destinos `Convert` e `Build`. As tarefas `Gen
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Destinos](../msbuild/msbuild-targets.md)  
-[Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Transformações](../msbuild/msbuild-transforms.md)  
-[Tarefa Csc](../msbuild/csc-task.md)  
-[Tarefa Vbc](../msbuild/vbc-task.md)
+- [Destinos](../msbuild/msbuild-targets.md)
+- [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Transformações](../msbuild/msbuild-transforms.md)
+- [Tarefa Csc](../msbuild/csc-task.md)
+- [Tarefa Vbc](../msbuild/vbc-task.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925443"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638717"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrando em log em um ambiente multiprocessador
 A capacidade do MSBuild de usar vários processadores pode diminuir bastante o tempo de criação do projeto, mas também adiciona complexidade ao registrar em logs. Em um ambiente de processador único, o agente pode gerenciar eventos recebidos, mensagens, avisos e erros de uma maneira previsível e sequencial. No entanto, em um ambiente com vários processadores, eventos de origens diferentes podem surgir simultaneamente ou fora de sequência. O MSBuild fornece um novo agente com reconhecimento de vários processadores e permite a criação de “agentes de encaminhamento” personalizados.
@@ -71,5 +71,5 @@ Culture=neutral
 Um asterisco (*) separa os dois nomes de agentes na opção `-dl`.
 
 ## <a name="see-also"></a>Consulte também
-[Agentes de build](../msbuild/build-loggers.md)  
-[Criar agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)
+- [Agentes de build](../msbuild/build-loggers.md)
+- [Criar agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)

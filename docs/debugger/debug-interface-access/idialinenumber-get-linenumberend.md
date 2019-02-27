@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b541a21afb997e2864f4b43fd6074f760c8e6dd7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920572"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641631"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Recupera o número de linha de código-fonte baseado em um em que a instrução ou expressão termina.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_lineNumberEnd (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o número de linha em que a instrução ou expressão termina. Se o valor for zero, as informações de término não estão presentes.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Recupera o número de linha de código-fonte baseado em um em que a instrução ou expressão termina.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_lineNumberEnd ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o número de linha em que a instrução ou expressão termina. Se o valor for zero, as informações de término não estão presentes.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

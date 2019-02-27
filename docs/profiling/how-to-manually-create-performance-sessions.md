@@ -14,28 +14,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e283128d17d088ed9d90597ccde24bcb22470b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035608"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645219"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Como: Criar sessões de desempenho manualmente
-Você pode criar manualmente uma sessão de desempenho. Não é necessário abrir um projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para fazer isso. Para obter mais informações, confira [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md).  
-  
-### <a name="to-manually-create-a-performance-session"></a>Para criar manualmente uma sessão de desempenho  
-  
-1.  No menu **Depurar**, aponte para **Criador de Perfil**, em seguida, para **Gerenciador de Desempenho** e clique em **Nova Sessão de Desempenho**.  
-  
-     Uma sessão de desempenho vazia é adicionada ao **Gerenciador de Desempenho**.  
-  
-2.  Clique com botão direito do mouse em **Destinos** e, em seguida, clique em **Adicionar Binário de Destino**.  
-  
-3.  Na caixa de diálogo **Adicionar Binário de Destino**, selecione o nome do arquivo e, em seguida, clique em **Abrir**.  
-  
-     Um novo binário é adicionado.  
-  
-## <a name="see-also"></a>Consulte também  
- [Gerenciador de Desempenho](../profiling/performance-explorer.md)   
- [Introdução](../profiling/getting-started-with-performance-tools.md)
+Você pode criar manualmente uma sessão de desempenho. Não é necessário abrir um projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para fazer isso. Para obter mais informações, confira [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md).
+
+### <a name="to-manually-create-a-performance-session"></a>Para criar manualmente uma sessão de desempenho
+
+1.  No menu **Depurar**, aponte para **Criador de Perfil**, em seguida, para **Gerenciador de Desempenho** e clique em **Nova Sessão de Desempenho**.
+
+     Uma sessão de desempenho vazia é adicionada ao **Gerenciador de Desempenho**.
+
+2.  Clique com botão direito do mouse em **Destinos** e, em seguida, clique em **Adicionar Binário de Destino**.
+
+3.  Na caixa de diálogo **Adicionar Binário de Destino**, selecione o nome do arquivo e, em seguida, clique em **Abrir**.
+
+     Um novo binário é adicionado.
+
+## <a name="see-also"></a>Consulte também
+- [Gerenciador de Desempenho](../profiling/performance-explorer.md)
+- [Introdução](../profiling/getting-started-with-performance-tools.md)
