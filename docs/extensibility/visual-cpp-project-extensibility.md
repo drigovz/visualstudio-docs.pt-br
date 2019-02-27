@@ -10,16 +10,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232046"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692054"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidade e conjunto de ferramentas de integração do Project
 
-O *sistema de projeto do Visual C++* é usado para arquivos. vcxproj. Ele se baseia a [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) e fornece adicionais, pontos de extensibilidade específica do C++ para fácil integração de novos conjuntos de ferramentas, arquiteturas de compilação e plataformas de destino. 
+O *sistema de projeto do Visual C++* é usado para arquivos. vcxproj. Ele se baseia a [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) e fornece adicionais, pontos de extensibilidade específica do C++ para fácil integração de novos conjuntos de ferramentas, arquiteturas de compilação e plataformas de destino.
 
 ## <a name="c-msbuild-targets-structure"></a>Estrutura de destinos do MSBuild C++
 
@@ -47,7 +47,7 @@ Esses arquivos definem pouco por si só. Em vez disso, eles importarem outros ar
 
    A arquitetura de compilação, denominado "Platform" por razões históricas.
 
-   Exemplos: Win32, x86, x64, ARM   
+   Exemplos: Win32, x86, x64, ARM
 
 - `$(PlatformToolset)`
 
@@ -55,18 +55,7 @@ Esses arquivos definem pouco por si só. Em vez disso, eles importarem outros ar
 
 Esses valores de propriedade especificam nomes de pastas sob o `$(VCTargetsPath)` pasta raiz:
 
-> `$(VCTargetsPath)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;*Tipo de aplicativo*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Plataformas*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
-> &nbsp;&nbsp;&nbsp;&nbsp;Plataformas\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(usado quando `$(ApplicationType)` estiver vazio, para projetos de área de trabalho do Windows)  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
+> `$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Tipo de aplicativo* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< c58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plataformas* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>plataformas</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Adicionar um novo conjunto de ferramentas de plataforma
 
@@ -97,27 +86,17 @@ Para adicionar um novo tipo de aplicativo, crie uma *MyApplicationType* pasta so
 
 Uma árvore simplificada de importações para arquivos de objetos e destinos do Microsoft C++ é semelhante a:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*padrão*\\\*. *arquivos de propriedades*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Tipo de aplicativo*\\`$(ApplicationType)`\\*Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Tipo de aplicativo*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Tipo de aplicativo*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plataformas* \\ `$(Platform)` \\  *Platform.default.Props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*padrão*\\\*. *arquivos de propriedades*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*padrão* \\ \*. *props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *tipo de aplicativo* \\ `$(ApplicationType)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *tipo de aplicativo* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Tipo de aplicativo*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plataformas* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter*\\*padrão*\\\*. *arquivos de propriedades*
 
 Projetos de área de trabalho do Windows não definem `$(ApplicationType)`, portanto, eles apenas importarem
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*padrão*\\\*. *arquivos de propriedades*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*padrão*\\\*. *arquivos de propriedades*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*padrão* \\ \*. *props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *plataformas* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\  *Padrão*\\\*. *arquivos de propriedades*
 
-Vamos usar o `$(_PlatformFolder)` propriedade para manter o `$(Platform)` locais de pasta da plataforma. Essa propriedade é 
+Vamos usar o `$(_PlatformFolder)` propriedade para manter o `$(Platform)` locais de pasta da plataforma. Essa propriedade é
 
 > `$(VCTargetsPath)`\\*Plataformas*\\`$(Platform)`
 
-para aplicativos da área de trabalho do Windows, e 
+para aplicativos da área de trabalho do Windows, e
 
 > `$(VCTargetsPath)`\\*Tipo de aplicativo*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plataformas*\\`$(Platform)`
 
@@ -125,22 +104,11 @@ para todo o resto.
 
 Os arquivos de objetos são importados nesta ordem:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *arquivos de propriedades*  
+> `$(VCTargetsPath)`\\*Props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore* \\\*. *Props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*. *arquivos de propriedades</span>*
 
 Os arquivos de destino são importados nesta ordem:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*.*targets*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *destinos* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter* \\\*. *destinos</span>*
 
 Se você precisa definir algumas propriedades padrão para seu conjunto de ferramentas, você pode adicionar arquivos ImportBefore e ImportAfter nas pastas apropriadas.
 
@@ -168,7 +136,7 @@ Embora o processo de compilação inteiro pode ser substituído por um conjunto 
 
    Esse arquivo determina o local do SDK do Windows e define algumas propriedades importantes para aplicativos destinados ao Windows.
 
-### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>Integrar destinos específicos do conjunto de ferramentas com o padrão no processo de compilação do C++ 
+### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>Integrar destinos específicos do conjunto de ferramentas com o padrão no processo de compilação do C++
 
 O processo de compilação de C++ de padrão é definido no *Microsoft.CppCommon.targets*. Lá, os destinos não chamam qualquer ferramenta de compilação específica; eles especificam principal criar etapas, seu pedido e dependências.
 
@@ -190,7 +158,7 @@ Os destinos que são executados dentro de cada etapa são controlados por essas 
 
 - `$(BeforeBuildLinkTargets)`
 
-Cada etapa também tem propriedades Before e After. 
+Cada etapa também tem propriedades Before e After.
 
 ```xml
 <Target
@@ -232,7 +200,7 @@ Se você examinar os destinos, tais como `_ClCompile`, você verá que eles não
 <Target Name="ClCompile"/>
 ```
 
-Porque o `ClCompile` destino estiver vazio, a menos que seja substituído por um conjunto de ferramentas, nenhuma ação de compilação real é executada. Os destinos de conjunto de ferramentas podem substituir a `ClCompile` de destino, ou seja, eles podem conter outro `ClCompile` definição depois de importar *Microsoft.CppBuild.targets*: 
+Porque o `ClCompile` destino estiver vazio, a menos que seja substituído por um conjunto de ferramentas, nenhuma ação de compilação real é executada. Os destinos de conjunto de ferramentas podem substituir a `ClCompile` de destino, ou seja, eles podem conter outro `ClCompile` definição depois de importar *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"
