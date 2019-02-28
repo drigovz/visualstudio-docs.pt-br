@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722272"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954423"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referência de valor de cor para o Visual Studio
 
@@ -553,7 +553,7 @@ Ao usar este guia de referência, lembre-se:
 
 | Claro | Escuro | Azul | Usado para... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | Itens de menu, itens de caixa de combinação, botões da barra de comando, botões suspensos e botões de ação: plano de fundo |
+| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | Itens de menu, itens de caixa de combinação, botões da barra de comando, botões suspensos e botões de ação: plano de fundo |
 | ![Amostra #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "amostra #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 swatch")<br />`#FF3F3F46` | ![Amostra de #FF465A7D](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D amostra")<br />`#FF465A7D` | Borda de ocultar automaticamente |
 | ![Amostra de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 amostra")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FF293955 swatch](../../extensibility/ux-guidelines/media/293955.png "#FF293955 swatch")<br />`#FF293955` | Ocultar automaticamente planos de fundo padrão e passe o mouse do guia |
 | ![#FF444444 swatch](../../extensibility/ux-guidelines/media/444444.png "#FF444444 swatch")<br />`#FF444444` | ![#FFD0D0D0 swatch](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 swatch")<br />`#FFD0D0D0` | ![Amostra #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "amostra #FFFFFFFF")<br />`#FFFFFFFF` | Texto da guia ocultar automaticamente, uma ferramenta texto da barra de título de janela e texto de guia da janela de ferramenta |
@@ -570,7 +570,7 @@ Ao usar este guia de referência, lembre-se:
 | ![Amostra de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC amostra")<br />`#FF007ACC` | ![Amostra de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC amostra")<br />`#FF007ACC` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | Opções da barra de comandos: passe o mouse de glifo |
 | ![Amostra #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "amostra #FFFFFFFF")<br />`#FFFFFFFF` | ![Amostra #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "amostra #FFFFFFFF")<br />`#FFFFFFFF` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | Opções da barra de comandos: mouse para baixo de glifo |
 | ![Amostra de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E amostra")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | Texto da barra de comando, a lista suspensa e o texto do item de menu de caixa de combinação |
-| ![Amostra de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E amostra")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000   swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | Barra de comandos: passe o mouse, mouse para baixo e o texto selecionado |
+| ![Amostra de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E amostra")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | Barra de comandos: passe o mouse, mouse para baixo e o texto selecionado |
 | ![Amostra #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "amostra #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF222222 swatch](../../extensibility/ux-guidelines/media/222222.png "#FF222222 swatch")<br />`#FF222222` | ![Amostra de #FF8591A2](../../extensibility/ux-guidelines/media/8591A2.png "#FF8591A2 amostra")<br />`#FF8591A2` | Barra de comandos: separador de barra de ferramentas |
 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF46464A swatch](../../extensibility/ux-guidelines/media/46464A.png "#FF46464A swatch")<br />`#FF46464A` | ![Amostra de #FFD6DBE9](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 amostra")<br />`#FFD6DBE9` | Barra de comandos: barra realce de separador de ferramentas |
 | ![Amostra de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 amostra")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Amostra de #FFD6DBE9](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 amostra")<br />`#FFD6DBE9` | Plano de fundo de prateleira de comando |
