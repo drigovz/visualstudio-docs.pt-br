@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318791"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954274"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão de protocolo de idioma do servidor
 
@@ -129,7 +129,7 @@ O LSP não inclui a especificação sobre como fornecer a colorização do texto
 
 4. Criar uma *pkgdef* arquivo e adicione uma linha semelhante a esta:
 
-    ```xml
+    ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
@@ -313,13 +313,13 @@ Siga as etapas abaixo para adicionar suporte para as configurações para sua ex
 
 4. Adicionar um arquivo. pkgdef ao projeto (Adicionar novo arquivo de texto e altere a extensão de arquivo para. pkgdef). O arquivo pkgdef deve conter essas informações:
 
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
     ```
 
     Amostra:
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
@@ -345,8 +345,10 @@ Siga as etapas abaixo para adicionar suporte para as configurações para sua ex
         "foo.maxNumberOfProblems": 10
     }
     ```
-    ### <a name="enabling-diagnostics-tracing"></a>Habilitando o rastreamento de diagnóstico
-    Rastreamento de diagnóstico pode ser habilitado para todas as mensagens entre o cliente e servidor, que pode ser útil ao depurar problemas de saída. Para habilitar o rastreamento de diagnóstico, faça o seguinte:
+
+### <a name="enabling-diagnostics-tracing"></a>Habilitando o rastreamento de diagnóstico
+
+Rastreamento de diagnóstico pode ser habilitado para todas as mensagens entre o cliente e servidor, que pode ser útil ao depurar problemas de saída. Para habilitar o rastreamento de diagnóstico, faça o seguinte:
 
 4. Abra ou crie o arquivo de configurações do espaço de trabalho *Vsworkspacesettings* (consulte "Usuário de edição de configurações para um espaço de trabalho").
 5. Adicione a seguinte linha no arquivo de configurações de json:

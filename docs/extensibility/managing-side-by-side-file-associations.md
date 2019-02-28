@@ -10,32 +10,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fe1bc52f9367289d4b04e73cf2d1fffab4ee8de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707478"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954381"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gerenciar associações de arquivo lado a lado
+
 Se o VSPackage fornece associações de arquivo, você deve decidir como lidar com instalações lado a lado em que uma versão específica do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deve ser invocado para abrir um arquivo. Formatos de arquivo incompatíveis composta o problema.
 
- Os usuários esperam que uma nova versão de um produto para ser compatível com versões anteriores, para que os arquivos existentes podem ser carregados em uma nova versão sem perda de dados. O ideal é que o VSPackage pode carregar e salvar os formatos de arquivo das versões anteriores. Se não for verdadeira, você deve oferecer atualizar o formato de arquivo para a nova versão do seu VSPackage. A desvantagem dessa abordagem é que o arquivo atualizado não pode ser aberto na versão anterior.
+Os usuários esperam que uma nova versão de um produto para ser compatível com versões anteriores, para que os arquivos existentes podem ser carregados em uma nova versão sem perda de dados. O ideal é que o VSPackage pode carregar e salvar os formatos de arquivo das versões anteriores. Se não for verdadeira, você deve oferecer atualizar o formato de arquivo para a nova versão do seu VSPackage. A desvantagem dessa abordagem é que o arquivo atualizado não pode ser aberto na versão anterior.
 
- Para evitar esse problema, você pode alterar as extensões quando os formatos de arquivo se tornar incompatíveis. Por exemplo, a versão 1 do VSPackage poderia usar a extensão *.mypkg10*e a versão 2 pode usar a extensão *.mypkg20*. Essa diferença identifica o VSPackage que abre um arquivo específico. Se você adicionar mais recentes VSPackages à lista de programas que estão associados com uma extensão antiga, os usuários podem o arquivo com o botão direito e escolha para abri-lo em um VSPackage mais recente. Nesse ponto, o VSPackage pode oferecer para atualizar o arquivo para o novo formato ou abra o arquivo e manter a compatibilidade com versões anteriores do VSPackage.
+Para evitar esse problema, você pode alterar as extensões quando os formatos de arquivo se tornar incompatíveis. Por exemplo, a versão 1 do VSPackage poderia usar a extensão *.mypkg10*e a versão 2 pode usar a extensão *.mypkg20*. Essa diferença identifica o VSPackage que abre um arquivo específico. Se você adicionar mais recentes VSPackages à lista de programas que estão associados com uma extensão antiga, os usuários podem o arquivo com o botão direito e escolha para abri-lo em um VSPackage mais recente. Nesse ponto, o VSPackage pode oferecer para atualizar o arquivo para o novo formato ou abra o arquivo e manter a compatibilidade com versões anteriores do VSPackage.
 
 > [!NOTE]
->  Você pode combinar essas abordagens. Por exemplo, você pode oferecer compatibilidade com versões anteriores ao carregar um arquivo mais antigo e da oferta atualizar o formato de arquivo quando o usuário salvá-lo.
+> Você pode combinar essas abordagens. Por exemplo, você pode oferecer compatibilidade com versões anteriores ao carregar um arquivo mais antigo e da oferta atualizar o formato de arquivo quando o usuário salvá-lo.
 
 ## <a name="face-the-problem"></a>O problema de detecção facial
- Se você quiser vários VSPackages lado a lado para usar a mesma extensão, você deve escolher a versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que está associado com a extensão. Aqui estão duas alternativas:
+
+Se você quiser vários VSPackages lado a lado para usar a mesma extensão, você deve escolher a versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que está associado com a extensão. Aqui estão duas alternativas:
 
 - Abra o arquivo na versão mais recente do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado no computador do usuário.
 
    Nessa abordagem, o instalador é responsável por determinar a versão mais recente do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e incluindo-os em escrito para a associação de arquivo de entrada do registro. Em um pacote do Windows Installer, você pode incluir ações personalizadas para definir uma propriedade que indica a versão mais recente do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
   > [!NOTE]
-  >  Nesse contexto, "mais recente" significa "última versão com suporte." Essas entradas de instalador não detectará automaticamente uma versão subsequente do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. As entradas no [requisitos do sistema detectando](../extensibility/internals/detecting-system-requirements.md) e, na [comandos que deve ser executado após a instalação](../extensibility/internals/commands-that-must-be-run-after-installation.md) são semelhantes aos apresentados aqui e são necessários para dar suporte a versões adicionais de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+  > Nesse contexto, "mais recente" significa "última versão com suporte." Essas entradas de instalador não detectará automaticamente uma versão subsequente do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. As entradas no [requisitos do sistema detectando](../extensibility/internals/detecting-system-requirements.md) e, na [comandos que deve ser executado após a instalação](../extensibility/internals/commands-that-must-be-run-after-installation.md) são semelhantes aos apresentados aqui e são necessários para dar suporte a versões adicionais de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
    As seguintes linhas na tabela CustomAction defina a propriedade DEVENV_EXE_LATEST para ser uma propriedade definida pelo AppSearch e tabelas RegLocator discutidos [comandos que devem ser executados após a instalação](../extensibility/internals/commands-that-must-be-run-after-installation.md). Linhas na tabela InstallExecuteSequence agendar as ações personalizadas no início na sequência de execução. Valores de marca de coluna a condição a lógica de trabalho:
 
@@ -47,7 +49,7 @@ Se o VSPackage fornece associações de arquivo, você deve decidir como lidar c
 
     O resultado líquido é que o DEVENV_EXE_LATEST contém o caminho da versão mais recente do devenv.exe.
 
-  ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Linhas da tabela CustomAction que determinam a versão mais recente do Visual Studio
+  **Linhas da tabela CustomAction que determinam a versão mais recente do Visual Studio**
 
   |Ação|Tipo|Origem|Destino|
   |------------|----------|------------|------------|
@@ -55,7 +57,7 @@ Se o VSPackage fornece associações de arquivo, você deve decidir como lidar c
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
   |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|
 
-  ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Linhas da tabela InstallExecuteSequence que determinam a versão mais recente do Visual Studio
+  **Linhas da tabela InstallExecuteSequence que determinam a versão mais recente do Visual Studio**
 
   |Ação|Condição|Sequência|
   |------------|---------------|--------------|
@@ -72,16 +74,18 @@ Se o VSPackage fornece associações de arquivo, você deve decidir como lidar c
    O iniciador deve estar em um componente do Windows Installer que é compartilhado com todas as versões do VSPackage. Esse processo garante que a versão mais recente sempre é instalada e não é removida até que todas as versões do VSPackage são desinstaladas. Dessa forma, as associações de arquivo e outras entradas do registro do componente de iniciador serão preservadas, mesmo se uma versão do VSPackage for desinstalada.
 
 ## <a name="uninstall-and-file-associations"></a>Desinstale e as associações de arquivo
- Desinstalar um VSPackage que grava entradas do registro para associações de arquivo remove as associações de arquivo. Portanto, a extensão não tem nenhum programas associados. Windows Installer não "recover" as entradas do registro que foram adicionadas quando o VSPackage foi instalado. Aqui estão algumas maneiras de corrigir as associações de arquivo do usuário:
 
--   Use um componente compartilhado iniciador conforme descrito anteriormente.
+Desinstalar um VSPackage que grava entradas do registro para associações de arquivo remove as associações de arquivo. Portanto, a extensão não tem nenhum programas associados. Windows Installer não "recover" as entradas do registro que foram adicionadas quando o VSPackage foi instalado. Aqui estão algumas maneiras de corrigir as associações de arquivo do usuário:
 
--   Instrua o usuário a executar um reparo da versão do VSPackage que o usuário quer ter a associação de arquivo.
+- Use um componente compartilhado iniciador conforme descrito anteriormente.
+
+- Instrua o usuário a executar um reparo da versão do VSPackage que o usuário quer ter a associação de arquivo.
 
 -   Fornece um programa executável separado que reescreve as entradas do registro apropriado.
 
 -   Forneça uma configuração Opções página ou caixa de diálogo que permite aos usuários escolher as associações de arquivo e recuperar as associações perdidas. Instrua os usuários para executá-lo após a desinstalação.
 
 ## <a name="see-also"></a>Consulte também
+
 - [Registrar as extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Registrar verbos para extensões de nome de arquivo](../extensibility/registering-verbs-for-file-name-extensions.md)

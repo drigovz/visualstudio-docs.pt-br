@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957933"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954300"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 
@@ -161,27 +161,28 @@ Você pode usar a opção de linha de comando para desabilitar temporariamente t
 
 Às vezes, pode ser útil para análise de código foco e ainda aproveitar o IDE do Visual Studio. Abaixo está um cenário de exemplo que pode ser usado para projetos grandes para economizar tempo de compilação e para facilitar para filtrar os resultados.
 
-1.  No shell de comando, defina as `esp.extension` e `esp.annotationbuildlevel` variáveis de ambiente.
-2.  Inicie o Visual Studio no shell de comando para herdar essas variáveis.
-3.  Carregue seu projeto e abra suas propriedades.
-4.  Habilitar análise de código, selecione os conjuntos de regra apropriado, mas não habilitar extensões de análise de código.
-5.  Vá até o arquivo que você deseja analisar com o verificador de diretrizes de núcleo do C++ e abrir suas propriedades.
-6.  Escolher **C / C + + \Command opções de linha de** e adicionar `/analyze:plugin EspXEngine.dll`
-7.  Desabilitar o uso de cabeçalho pré-compilado (**C / C + + \Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado e se a última opção tiver sido compilado com as opções de projeto padrão, ele não será compatível.
-8.  Recompile o projeto. As verificações de PREFast comuns devem ser executado em todos os arquivos. Porque o verificador de diretrizes do C++ Core não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
+1. No shell de comando, defina as `esp.extension` e `esp.annotationbuildlevel` variáveis de ambiente.
+2. Inicie o Visual Studio no shell de comando para herdar essas variáveis.
+3. Carregue seu projeto e abra suas propriedades.
+4. Habilitar análise de código, selecione os conjuntos de regra apropriado, mas não habilitar extensões de análise de código.
+5. Vá até o arquivo que você deseja analisar com o verificador de diretrizes de núcleo do C++ e abrir suas propriedades.
+6. Escolher **C / C + + \Command opções de linha de** e adicionar `/analyze:plugin EspXEngine.dll`
+7. Desabilitar o uso de cabeçalho pré-compilado (**C / C + + \Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado e se a última opção tiver sido compilado com as opções de projeto padrão, ele não será compatível.
+8. Recompile o projeto. As verificações de PREFast comuns devem ser executado em todos os arquivos. Porque o verificador de diretrizes do C++ Core não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Como usar o verificador de diretrizes do C++ Core fora do Visual Studio
 Você pode usar as verificações de diretrizes principais do C++ em compilações automatizadas.
 
 ### <a name="msbuild"></a>MSBuild
- O verificador de análise de código nativo (PREfast) é integrado ao ambiente do MSBuild pelos arquivos de destinos personalizados. Você pode usar as propriedades do projeto para habilitá-lo e adicionar o verificador de diretrizes do C++ Core (que se baseia no PREfast):
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+O verificador de análise de código nativo (PREfast) é integrado ao ambiente do MSBuild pelos arquivos de destinos personalizados. Você pode usar as propriedades do projeto para habilitá-lo e adicionar o verificador de diretrizes do C++ Core (que se baseia no PREfast):
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 Verifique se que você adicionar essas propriedades antes da importação do arquivo Microsoft.Cpp.targets. Você pode escolher os conjuntos de regras específicas ou criar um conjunto de regras personalizadas ou usar o conjunto de regras padrão que inclui outras verificações PREfast.
@@ -221,14 +222,16 @@ Você precisará definir algumas variáveis de ambiente e usar as opções de li
    - `/analyze:plugin EspXEngine.dll` Esta opção carrega o mecanismo de extensões de análise de código para o PREfast. Esse mecanismo, por sua vez, carrega o verificador de diretrizes de núcleo do C++.
 
 ## <a name="use-the-guideline-support-library"></a>Use a biblioteca de suporte de diretriz
- A biblioteca de suporte de diretriz é projetada para ajudá-lo a seguir as diretrizes de núcleo. O GSL inclui definições que permitem que você substitua construções propenso a erro alternativas mais seguras. Por exemplo, você pode substituir uma `T*, length` par de parâmetros com o `span<T>` tipo. A GSL está disponível em [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é software livre, portanto, você pode exibir as fontes de, fazer comentários ou contribuir com. O projeto pode ser encontrado em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Use as diretrizes de verificação principal do C++ em projetos do Visual Studio 2015
-  Se você usar o Visual Studio 2015, conjuntos de regras de análise de código verificação principal do C++ não são instalados por padrão. Você deve executar algumas etapas adicionais antes de habilitar as ferramentas de análise de código de verificação principal do C++ no Visual Studio 2015. Microsoft fornece suporte para projetos do Visual Studio 2015 usando um pacote do Nuget. O pacote é chamado Microsoft.CppCoreCheck e está disponível em [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este pacote requer que você tem pelo menos o Visual Studio 2015 com atualização 1 instalado.
+A biblioteca de suporte de diretriz é projetada para ajudá-lo a seguir as diretrizes de núcleo. O GSL inclui definições que permitem que você substitua construções propenso a erro alternativas mais seguras. Por exemplo, você pode substituir uma `T*, length` par de parâmetros com o `span<T>` tipo. A GSL está disponível em [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é software livre, portanto, você pode exibir as fontes de, fazer comentários ou contribuir com. O projeto pode ser encontrado em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- O pacote também instala outro pacote como uma dependência, uma biblioteca de suporte diretriz (GSL) somente de cabeçalho. A GSL também está disponível no GitHub em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="vs2015_corecheck"></a> Use as diretrizes de verificação principal do C++ em projetos do Visual Studio 2015
 
- Por causa da maneira que as regras de análise de código são carregadas, você deve instalar o pacote do Microsoft.CppCoreCheck NuGet em cada projeto de C++ que você deseja verificar no Visual Studio 2015.
+Se você usar o Visual Studio 2015, conjuntos de regras de análise de código verificação principal do C++ não são instalados por padrão. Você deve executar algumas etapas adicionais antes de habilitar as ferramentas de análise de código de verificação principal do C++ no Visual Studio 2015. Microsoft fornece suporte para projetos do Visual Studio 2015 usando um pacote do Nuget. O pacote é chamado Microsoft.CppCoreCheck e está disponível em [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este pacote requer que você tem pelo menos o Visual Studio 2015 com atualização 1 instalado.
+
+O pacote também instala outro pacote como uma dependência, uma biblioteca de suporte diretriz (GSL) somente de cabeçalho. A GSL também está disponível no GitHub em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+Por causa da maneira que as regras de análise de código são carregadas, você deve instalar o pacote do Microsoft.CppCoreCheck NuGet em cada projeto de C++ que você deseja verificar no Visual Studio 2015.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Para adicionar o pacote de Microsoft.CppCoreCheck ao seu projeto no Visual Studio 2015
 
