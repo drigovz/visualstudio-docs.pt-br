@@ -10,47 +10,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b8362ccdb6d772a6ffaa4e817798cbb9edf080
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981722"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690546"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Guia Saída, Caixa de diálogo Opções da Mensagem
-Use o **saída** tab para especificar quais dados de cada mensagem à lista na [exibição de mensagens](../debugger/messages-view.md). Para exibir o [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md), escolha **mensagens de Log** do **Spy** menu.  
-  
- As seguintes configurações estão disponíveis sobre o **saída** guia:  
-  
- **Números de Linha**  
- Exibir números de linha.  
-  
- **Nível de aninhamento de mensagem**  
- Prefixo de mensagens aninhadas com um período por nível.  
-  
- **Parâmetros de mensagens brutos**  
- Exibir o hexadecimal **wParam** e **lParam** valores.  
-  
- **Parâmetros de mensagem decodificados**  
- Exibir os resultados da decodificação de mensagem específica do **wParam** e **lParam** valores.  
-  
- **Valores de retorno brutos**  
- Exibir o hexadecimal **lResult** valor de retorno.  
-  
- **Valores de retorno decodificados**  
- Exibir os resultados da decodificação de mensagem específica do **lResult** valor de retorno.  
-  
- **Tempo de origem da mensagem**  
- O tempo decorrido desde que o sistema do Windows foi iniciado (apenas para mensagens postadas).  
-  
- **Posição do Mouse de mensagem**  
- As coordenadas de tela do mouse quando a mensagem foi postada (apenas para mensagens postadas).  
-  
- **Máximo de linhas**  
- Limite o número de linhas que são mantidos na exibição de mensagens atualmente selecionada.  
-  
- **Também registrar mensagens de arquivo**  
- Especifique um arquivo de saída para o log de mensagem. Este arquivo de saída é gravado simultaneamente com a janela de log de mensagem.  
-  
- **Salvar as Configurações como Padrão**  
- Salve as configurações anteriores para novas janelas de fluxo de mensagem. Essas configurações são salvas ao fechar o Spy + +.
+Use o **saída** tab para especificar quais dados de cada mensagem à lista na [exibição de mensagens](../debugger/messages-view.md). Para exibir o [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md), escolha **mensagens de Log** do **Spy** menu.
+
+ As seguintes configurações estão disponíveis sobre o **saída** guia:
+
+ **Números de linha** exibir números de linha.
+
+ **Nível de aninhamento da mensagem** mensagens aninhadas com um período por nível de prefixo.
+
+ **Parâmetros de mensagem RAW** exibir o hexadecimal **wParam** e **lParam** valores.
+
+ **Decodificado parâmetros de mensagem** exibem os resultados de decodificação de mensagem específica do **wParam** e **lParam** valores.
+
+ **Os valores de retorno brutos** exibir o hexadecimal **lResult** valor de retorno.
+
+ **Valores de retorno decodificados** exibem os resultados de decodificação de mensagem específica do **lResult** valor de retorno.
+
+ **Tempo de origem da mensagem** o tempo decorrido desde que o sistema do Windows foi iniciado (apenas para mensagens postadas).
+
+ **Posição do Mouse da mensagem** as coordenadas de tela do mouse quando a mensagem foi postada (apenas para mensagens postadas).
+
+ **Máximo de linhas** limitar o número de linhas que são mantidos na exibição de mensagens atualmente selecionada.
+
+ **Também as mensagens de Log ao arquivo** especificar um arquivo de saída para o log de mensagem. Este arquivo de saída é gravado simultaneamente com a janela de log de mensagem.
+
+ **Salve as configurações padrões** salvar as configurações anteriores para novas janelas de fluxo de mensagem. Essas configurações são salvas ao fechar o Spy + +.

@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc5fd2222acff6f667d8b2d83d948619028f7b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0f8910d35106574912e4a01f7995bfe0f503e3f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993878"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624809"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
-Especifica se a variável é removido para otimização.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_isOptimizedAway(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Um ponteiro para um `BOOL` que especifica se a variável é removido para otimização.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Especifica se a variável é removido para otimização.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_isOptimizedAway(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Um ponteiro para um `BOOL` que especifica se a variável é removido para otimização.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

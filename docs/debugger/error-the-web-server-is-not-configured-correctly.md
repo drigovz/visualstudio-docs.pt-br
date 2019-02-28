@@ -1,5 +1,5 @@
 ---
-title: 'Erro: O servidor web não está configurado corretamente | Microsoft Docs'
+title: 'Erro: O servidor web não é configurado corretamente | Microsoft Docs'
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019185"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711596"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: O servidor Web não foi configurado corretamente
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: o servidor Web não foi configurado corretamente
 
 Depois de obter as etapas descritas aqui para resolver o problema e antes de tentar novamente a depuração, você também precisará redefinir o IIS. Você pode fazer isso abrindo um prompt de comando do administrador e digitando `iisreset`.
 
@@ -44,9 +44,9 @@ Siga estas etapas para resolver esse problema:
 4. (IIS) Certifique-se de que a versão correta do ASP.NET está instalada no servidor.
 
     Versões incompatíveis do ASP.NET no IIS e no projeto do Visual Studio podem causar esse problema. Talvez você precise definir a versão do framework no Web. config. Para instalar o ASP.NET no IIS, use o [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Consulte também [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ou, para o ASP.NET Core [Host no Windows com o IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 4. Se o `maxConnection` limite no IIS for muito baixo e você tem muitas conexões, talvez você precise [aumentar o limite de conexão](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
-  
-## <a name="see-also"></a>Consulte também  
- [Depuração Remota de ASP.NET em um computador remoto IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>Consulte também
+- [Depuração Remota de ASP.NET em um computador remoto IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

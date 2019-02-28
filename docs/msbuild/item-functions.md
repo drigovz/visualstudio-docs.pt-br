@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950507"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617152"
 ---
 # <a name="item-functions"></a>funções de item
 Começando com o MSBuild 4.0, o código em tarefas e destinos pode chamar funções de item para obter informações sobre os itens no projeto. Essas funções simplificam a obtenção de itens Distinct() e são mais rápidas do que executar loop nos itens.
@@ -100,4 +100,4 @@ O exemplo a seguir mostra como usar funções intrínsecas de item.
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Itens](../msbuild/msbuild-items.md)
+- [Itens](../msbuild/msbuild-items.md)

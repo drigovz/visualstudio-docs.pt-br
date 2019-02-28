@@ -16,50 +16,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c926da377688b1248daa01f015cda7914434a36
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013893"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618556"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Descrição&gt; elemento (implantação do ClickOnce)
-Identifica as informações do aplicativo usadas para criar uma presença de shell e um **adicionar ou remover programas** item no painel de controle.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```xml  
-  
-      <description   
-   publisher   
-   product  
-   suiteName  
-   supportUrl  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `description` elemento é necessário e está no `urn:schemas-microsoft-com:asm.v1` namespace. Ele não contém nenhum elemento filho e tem os seguintes atributos.  
-  
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`publisher`|Necessário. Identifica o nome da empresa usado para o posicionamento do ícone do Windows **inicie** menu e o **adicionar ou remover programas** item no painel de controle, quando a implantação é configurada para instalação.|  
-|`product`|Necessário. Identifica o nome completo do produto. Usado como o título para o ícone de instalado no Windows **iniciar** menu.|  
-|`suiteName`|Opcional. Identifica uma subpasta dentro de `publisher` pasta no Windows **iniciar** menu.|  
-|`supportUrl`|Opcional. Especifica uma URL de suporte que é mostrada na **adicionar ou remover programas** item no painel de controle. Também é criado um atalho para essa URL para o suporte do aplicativo no Windows **iniciar** menu, quando a implantação é configurada para a instalação.|  
-  
-## <a name="remarks"></a>Comentários  
- O elemento de descrição é necessária em todas as configurações de implantação.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo de código a seguir ilustra uma `description` elemento em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de implantação. Este exemplo de código é parte de um exemplo maior fornecido para o [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) tópico.  
-  
-```xml  
-<description   
-  asmv2:publisher="My Company Name"  
-  asmv2:product="My Application"  
-  xmlns="urn:schemas-microsoft-com:asm.v1" />  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
+Identifica as informações do aplicativo usadas para criar uma presença de shell e um **adicionar ou remover programas** item no painel de controle.
+
+## <a name="syntax"></a>Sintaxe
+
+```xml
+
+      <description 
+   publisher 
+   product
+   suiteName
+   supportUrl
+/>
+```
+
+## <a name="elements-and-attributes"></a>Elementos e atributos
+ O `description` elemento é necessário e está no `urn:schemas-microsoft-com:asm.v1` namespace. Ele não contém nenhum elemento filho e tem os seguintes atributos.
+
+|Atributo|Descrição|
+|---------------|-----------------|
+|`publisher`|Necessário. Identifica o nome da empresa usado para o posicionamento do ícone do Windows **inicie** menu e o **adicionar ou remover programas** item no painel de controle, quando a implantação é configurada para instalação.|
+|`product`|Necessário. Identifica o nome completo do produto. Usado como o título para o ícone de instalado no Windows **iniciar** menu.|
+|`suiteName`|Opcional. Identifica uma subpasta dentro de `publisher` pasta no Windows **iniciar** menu.|
+|`supportUrl`|Opcional. Especifica uma URL de suporte que é mostrada na **adicionar ou remover programas** item no painel de controle. Também é criado um atalho para essa URL para o suporte do aplicativo no Windows **iniciar** menu, quando a implantação é configurada para a instalação.|
+
+## <a name="remarks"></a>Comentários
+ O elemento de descrição é necessária em todas as configurações de implantação.
+
+## <a name="example"></a>Exemplo
+ O exemplo de código a seguir ilustra uma `description` elemento em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de implantação. Este exemplo de código é parte de um exemplo maior fornecido para o [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) tópico.
+
+```xml
+<description
+  asmv2:publisher="My Company Name"
+  asmv2:product="My Application"
+  xmlns="urn:schemas-microsoft-com:asm.v1" />
+```
+
+## <a name="see-also"></a>Consulte também
+- [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)

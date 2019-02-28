@@ -28,25 +28,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c7bf00946542b8cb29354f7e03688baaac33fb7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9434be46f357a97ad01f10ceec184ebe6c52eb43
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941873"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624159"
 ---
 # <a name="crt-debug-library-use"></a>Uso da biblioteca de depuração CRT
-A biblioteca em tempo de execução C fornece amplo suporte à depuração. Para usar uma das bibliotecas de depuração do CRT, você deve vincular com [/Debug](/cpp/build/reference/debug-generate-debug-info) e compile com **/MDd**, **/MTd**, ou **/LDd**.  
-  
-## <a name="remarks"></a>Comentários  
- As definições e macros principais de depuração de CRT podem ser encontradas no arquivo de cabeçalho CRTDBG.h.  
-  
- As funções nas bibliotecas de depuração de CRT são criadas com informações de depuração ([/Z7, /Zd, /Zi, /ZI (formato das informações de depuração)](/cpp/build/reference/z7-zi-zi-debug-information-format)) e sem otimização. Algumas funções contêm asserções para verificar os parâmetros passados a elas, e o código-fonte será fornecido. Com esse código-fonte, você pode acessar funções de CRT para confirmar se as funções estão funcionando conforme o esperado e verificar se há parâmetros incorretos ou estados de memória. (Qualquer tecnologia de CRT é proprietária e não fornece código-fonte para tratamento de exceções, ponto flutuante e algumas outras rotinas.)  
-  
- Quando você instalar o Visual C++, terá a opção de instalar o código-fonte da biblioteca em tempo de execução C no disco rígido. Se você não instalar o código-fonte, precisará do CD-ROM para acessar as funções de CRT.  
-  
- Para obter mais informações sobre as várias bibliotecas em tempo de execução que você pode usar, confira [Bibliotecas em tempo de execução C](/cpp/c-runtime-library/crt-library-features).  
-  
-## <a name="see-also"></a>Consulte também  
- [Técnicas de depuração do CRT](../debugger/crt-debugging-techniques.md)   
- [/MD, /MT, /LD (usar biblioteca de tempo de execução)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+A biblioteca em tempo de execução C fornece amplo suporte à depuração. Para usar uma das bibliotecas de depuração do CRT, você deve vincular com [/Debug](/cpp/build/reference/debug-generate-debug-info) e compile com **/MDd**, **/MTd**, ou **/LDd**.
+
+## <a name="remarks"></a>Comentários
+ As definições e macros principais de depuração de CRT podem ser encontradas no arquivo de cabeçalho CRTDBG.h.
+
+ As funções nas bibliotecas de depuração de CRT são criadas com informações de depuração ([/Z7, /Zd, /Zi, /ZI (formato das informações de depuração)](/cpp/build/reference/z7-zi-zi-debug-information-format)) e sem otimização. Algumas funções contêm asserções para verificar os parâmetros passados a elas, e o código-fonte será fornecido. Com esse código-fonte, você pode acessar funções de CRT para confirmar se as funções estão funcionando conforme o esperado e verificar se há parâmetros incorretos ou estados de memória. (Qualquer tecnologia de CRT é proprietária e não fornece código-fonte para tratamento de exceções, ponto flutuante e algumas outras rotinas.)
+
+ Quando você instalar o Visual C++, terá a opção de instalar o código-fonte da biblioteca em tempo de execução C no disco rígido. Se você não instalar o código-fonte, precisará do CD-ROM para acessar as funções de CRT.
+
+ Para obter mais informações sobre as várias bibliotecas em tempo de execução que você pode usar, confira [Bibliotecas em tempo de execução C](/cpp/c-runtime-library/crt-library-features).
+
+## <a name="see-also"></a>Consulte também
+
+- [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)
+- [/MD, /MT, /LD (usar biblioteca de tempo de execução)](/cpp/build/reference/md-mt-ld-use-run-time-library)

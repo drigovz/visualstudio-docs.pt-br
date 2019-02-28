@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a3ca9c99683a35ceaaf011ba68456abe6b0f07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e026b837205a8bf62f5d33dc2f5449d40cc485e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951398"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619700"
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
-Recupera uma referência ao arquivo de origem.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_sourceFile (   
-   IDiaSourceFile** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna um [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa o arquivo de origem.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Recupera uma referência ao arquivo de origem.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_sourceFile ( 
+   IDiaSourceFile** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna um [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa o arquivo de origem.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

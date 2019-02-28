@@ -19,21 +19,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 304c3bb5779af3fd53dddb8e5397a7913b353a4c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 657d8730f923d144d0691afe921ad5eaf9337a42
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024260"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690039"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Como posso depurar violações de acesso ao executar meu programa fora do depurador?
 
-## <a name="problem-description"></a>Descrição do problema  
- Meu programa é executado corretamente no ambiente do Visual Studio, mas quando eu o executo em modo autônomo no sistema operacional Windows, ele gera uma violação de acesso. Como posso depurar esse problema?  
-  
-## <a name="solution"></a>Solução  
- Defina a opção [depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) e execute o programa autônomo, até que ocorra a violação de acesso. Em seguida, na caixa de diálogo **Violação de Acesso**, clique em **Cancelar** para iniciar o depurador.  
-  
-## <a name="see-also"></a>Consulte também  
- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Depurando código nativo](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Descrição do problema
+ Meu programa é executado corretamente no ambiente do Visual Studio, mas quando eu o executo em modo autônomo no sistema operacional Windows, ele gera uma violação de acesso. Como posso depurar esse problema?
+
+## <a name="solution"></a>Solução
+ Defina a opção [depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) e execute o programa autônomo, até que ocorra a violação de acesso. Em seguida, na caixa de diálogo **Violação de Acesso**, clique em **Cancelar** para iniciar o depurador.
+
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)
+- [Depurando código nativo](../debugger/debugging-native-code.md)

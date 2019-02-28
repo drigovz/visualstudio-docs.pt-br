@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 981227f24cb35400b3b4483458a4a6afa5175c6a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31b386ff2c31937efc352049f7db068f49e4ba19
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021644"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620129"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
-Recupera um sinalizador que indica se o tratamento de exceções C++ está em vigor.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_cplusplusExceptionHandling (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se o tratamento de exceções C++ está em vigor; caso contrário, retorna `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Para determinar se a exceção estruturada manipulação estiver em vigor (que é muito diferente de tratamento de exceções C++), chame o [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) método.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)
+Recupera um sinalizador que indica se o tratamento de exceções C++ está em vigor.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_cplusplusExceptionHandling ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se o tratamento de exceções C++ está em vigor; caso contrário, retorna `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Para determinar se a exceção estruturada manipulação estiver em vigor (que é muito diferente de tratamento de exceções C++), chame o [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) método.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)

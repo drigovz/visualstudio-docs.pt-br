@@ -10,40 +10,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41d5a490ddd4b426a3c03f9e5bbea94d18660200
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d41f48594e50e9d5ae0c6f67aabab673a9f112a3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946328"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618972"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Exibição de IPs (ponteiros de instrução) – dados de contenção
-O modo de exibição de IPs dos dados de contenção lista dados para as instruções de assembly cuja execução foi bloqueada na execução da criação de perfil.  
-  
- A tabela a seguir explica os valores das colunas no modo de exibição de Ponteiros de Instrução.  
-  
-|Column|Descrição|  
-|------------|-----------------|  
-|**Tempo Bloqueado Exclusivo**|O tempo de bloqueio nesta função.|  
-|**% de Tempo Bloqueado Exclusivo**|O percentual de tempo de bloqueio enquanto a instrução era executada.|  
-|**Contenções Exclusivas**|O número de contenções que ocorreram enquanto a instrução era executada.|  
-|**% de Contenções Exclusivas**|O percentual de todas as contenções da criação de perfil que ocorreram durante a execução da instrução.|  
-|**Endereço da Função**|O endereço de memória inicial da função no binário carregado.|  
-|**Nome da Função**|O nome da função que contém a instrução.|  
-|**Endereço da Instrução**|O endereço de memória da instrução no binário carregado.|  
-|**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
-|**Nome do Módulo**|O nome do módulo que contém a instrução.|  
-|**Caminho do Módulo**|O caminho do módulo que contém a instrução.|  
-|**ID do Processo**|A PID (ID do processo) do processo analisado.|  
-|**Nome do Processo**|O nome do processo.|  
-|**Início do Caractere de Origem**|O deslocamento do caractere na linha do arquivo de origem em que esta instrução começa.|  
-|**Final do Caractere de Origem**|O deslocamento do caractere na linha do arquivo de origem em que esta instrução termina.|  
-|**Arquivo de Origem**|O arquivo de origem que contém a instrução.|  
-|**Início da Linha de Origem**|O número de linha no arquivo de origem em que esta instrução começa.|  
-|**Final da Linha de Origem**|O número de linha no arquivo de origem em que esta instrução termina.|  
-  
-## <a name="see-also"></a>Consulte também  
- [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
- [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view.md)   
- [Exibição de IPs (ponteiros de instrução) – amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+O modo de exibição de IPs dos dados de contenção lista dados para as instruções de assembly cuja execução foi bloqueada na execução da criação de perfil.
+
+ A tabela a seguir explica os valores das colunas no modo de exibição de Ponteiros de Instrução.
+
+|Column|Descrição|
+|------------|-----------------|
+|**Tempo Bloqueado Exclusivo**|O tempo de bloqueio nesta função.|
+|**% de Tempo Bloqueado Exclusivo**|O percentual de tempo de bloqueio enquanto a instrução era executada.|
+|**Contenções Exclusivas**|O número de contenções que ocorreram enquanto a instrução era executada.|
+|**% de Contenções Exclusivas**|O percentual de todas as contenções da criação de perfil que ocorreram durante a execução da instrução.|
+|**Endereço da Função**|O endereço de memória inicial da função no binário carregado.|
+|**Nome da Função**|O nome da função que contém a instrução.|
+|**Endereço da Instrução**|O endereço de memória da instrução no binário carregado.|
+|**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
+|**Nome do Módulo**|O nome do módulo que contém a instrução.|
+|**Caminho do Módulo**|O caminho do módulo que contém a instrução.|
+|**ID do Processo**|A PID (ID do processo) do processo analisado.|
+|**Nome do Processo**|O nome do processo.|
+|**Início do Caractere de Origem**|O deslocamento do caractere na linha do arquivo de origem em que esta instrução começa.|
+|**Final do Caractere de Origem**|O deslocamento do caractere na linha do arquivo de origem em que esta instrução termina.|
+|**Arquivo de Origem**|O arquivo de origem que contém a instrução.|
+|**Início da Linha de Origem**|O número de linha no arquivo de origem em que esta instrução começa.|
+|**Final da Linha de Origem**|O número de linha no arquivo de origem em que esta instrução termina.|
+
+## <a name="see-also"></a>Consulte também
+- [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view.md)
+- [Exibição de IPs (ponteiros de instrução) – amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view-sampling-data.md)

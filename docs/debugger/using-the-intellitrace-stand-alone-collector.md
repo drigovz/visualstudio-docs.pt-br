@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 62fabe86798a957f148c4b497f36e9512663cd17
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316841"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710585"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usando o coletor IntelliTrace autônomo (C#, Visual Basic)
 
@@ -172,7 +172,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
    > [!NOTE]
    > - Para evitar que seu aplicativo fique mais lento, escolha um local em um disco de alta velocidade local que não seja muito ativo.
    >   -   Você pode colocar os arquivos .iTrace e os coletores no mesmo lugar. No entanto, se você tiver um aplicativo da web ou do SharePoint, verifique se que esse local está fora do diretório que hospeda o aplicativo.
-   > 
+   >
    > [!IMPORTANT]
    > - Restrinja o diretório do arquivo .iTrace a apenas as identidades que devem trabalhar com o coletor. Um arquivo .iTrace pode conter informações confidenciais, tais como dados de usuários, bancos de dados, outros locais de origem e cadeias de conexão como IntelliTrace podem registrar quaisquer dados que passem os parâmetros de método ou como valores de retorno.
    >   -   Certifique-se de aqueles que podem abrir os arquivos .iTrace têm autoridade para ver dados confidenciais. Tenha cuidado ao compartilhar arquivos .iTrace. Se outras pessoas precisarem ter acesso, copie os arquivos para um local compartilhado seguro.

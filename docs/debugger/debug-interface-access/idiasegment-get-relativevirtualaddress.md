@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98e70b866b8177ad021c39764ed954b5773aa3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6387b4e7cbf3ab100b641fe8694505c5e326fc8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952100"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611120"
 ---
 # <a name="idiasegmentgetrelativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
-Recupera o endereço virtual relativo (RVA) do início da seção.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o RVA do início da seção.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Recupera o endereço virtual relativo (RVA) do início da seção.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_relativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o RVA do início da seção.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

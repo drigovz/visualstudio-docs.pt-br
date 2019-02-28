@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15d1c1e62661cec18074e937b11a9e48579a33f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e098f1e2367395f201abf6f44554f1699400b12
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968434"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635716"
 ---
 # <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
-Recupera o número de seção que mapeia para este segmento.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o número de seção que mapeia para este segmento.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Recupera o número de seção que mapeia para este segmento.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o número de seção que mapeia para este segmento.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

@@ -10,33 +10,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8f3c19559f5c2b267410d22fd30f32dca7a02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947095"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719758"
 ---
 # <a name="window-menu-commands"></a>Comandos do menu Janela
-O **janela** menu fornece comandos para gerenciar o windows Spy + +.  
-  
- **Cascata**  
- Reorganiza todas as janelas em um padrão em cascata.  
-  
- **Organizar Lado a Lado Horizontalmente**  
- Reorganize todas as janelas em um padrão lado a lado horizontal.  
-  
- **Organizar Lado a Lado Verticalmente**  
- Reorganiza todas as janelas em um padrão lado a lado vertical.  
-  
- **Organizar Ícones**  
- Reorganiza os ícones de modo de exibição, se o windows tiveram sido minimizados.  
-  
- **Fechar / fechar tudo**  
- Fecha uma ou todas as janelas em Spy + +.  
-  
- **Atualizar**  
- Atualiza a exibição selecionada no momento.  
-  
- **Janela**  
- Permite a seleção de uma janela específica.
+O **janela** menu fornece comandos para gerenciar o windows Spy + +.
+
+ **CASCADE** reorganiza todas as janelas em um padrão em cascata.
+
+ **Lado a lado horizontalmente** reorganizar todas as janelas em um padrão lado a lado horizontal.
+
+ **Lado a lado verticalmente** reorganiza todas as janelas em um padrão lado a lado vertical.
+
+ **Organizar ícones** reorganiza os ícones de modo de exibição, se o windows tiveram sido minimizados.
+
+ **Fechar / fechar tudo** fecha uma ou todas as janelas em Spy + +.
+
+ **Atualizar** atualiza a exibição selecionada no momento.
+
+ **Janela** permite a seleção de uma janela específica.

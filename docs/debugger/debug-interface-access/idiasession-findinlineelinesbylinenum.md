@@ -10,53 +10,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432c0859041740c74e6c3264c318d46352d262b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f6ed12d127789d350f528bf2eabfce34da2c3736
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972687"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621858"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
-Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, o número de arquivo e linha de origem especificado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT findInlineeLinesByVA (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 column,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `compiland`  
- [in] Uma [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland no qual pesquisar os números de linha. O parâmetro não pode ser `NULL`.  
-  
- `file`  
- [in] Uma [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa o arquivo de origem na qual pesquisar. O parâmetro não pode ser `NULL`.  
-  
- `linenum`  
- [in] Especifica um número de linha de base um.  
-  
+Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, o número de arquivo e linha de origem especificado.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT findInlineeLinesByVA ( 
+   IDiaSymbol*           compiland,
+   IDiaSourceFile*       file,
+   DWORD                 linenum,
+   DWORD                 column,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `compiland`
+
+[in] Uma [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland no qual pesquisar os números de linha. O parâmetro não pode ser `NULL`.
+
+ `file`
+
+[in] Uma [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa o arquivo de origem na qual pesquisar. O parâmetro não pode ser `NULL`.
+
+ `linenum`
+
+[in] Especifica um número de linha de base um.
+
 > [!NOTE]
->  Você não pode usar zero para especificar todas as linhas (usar o [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) método para localizar todas as linhas).  
-  
- `column`  
- [in] Especifica o número da coluna. Use zero para especificar todas as colunas. Uma coluna é um deslocamento de bytes em uma linha.  
-  
- `ppResult`  
- [out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista dos números de linha que foram recuperados.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+>  Você não pode usar zero para especificar todas as linhas (usar o [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) método para localizar todas as linhas).
+
+ `column`
+
+[in] Especifica o número da coluna. Use zero para especificar todas as colunas. Uma coluna é um deslocamento de bytes em uma linha.
+
+ `ppResult`
+
+[out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista dos números de linha que foram recuperados.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

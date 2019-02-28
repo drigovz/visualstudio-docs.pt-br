@@ -21,22 +21,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7568975ff23694e9a62f7d6b3010d1598c5bc8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940161"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701349"
 ---
 # <a name="select-code-type-dialog-box"></a>Caixa de diálogo Selecionar Tipo de Código
-Para abrir essa caixa de diálogo, abra a caixa de diálogo **Anexar ao Processo** e clique no botão **Selecionar**.  
-  
- **Determinar automaticamente o tipo de código a ser depurado**  
- O depurador apropriado será selecionado com base no tipo de código que está executando.  
-  
- **Depurar estes tipos de código:**  
- Na lista fornecida, escolha o tipo de código que você deseja depurar.  
-  
-## <a name="see-also"></a>Consulte também  
- [Segurança do depurador](../debugger/debugger-security.md)   
- [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+Para abrir essa caixa de diálogo, abra a caixa de diálogo **Anexar ao Processo** e clique no botão **Selecionar**.
+
+ **Determine automaticamente o tipo de código para depurar** o depurador apropriado será selecionado com base no tipo de código que está sendo executado.
+
+ **Depurar esses tipos de código:** na lista fornecida, escolha o tipo de código que você deseja depurar.
+
+## <a name="see-also"></a>Consulte também
+- [Segurança do depurador](../debugger/debugger-security.md)
+- [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

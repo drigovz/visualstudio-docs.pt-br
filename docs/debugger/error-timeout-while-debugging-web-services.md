@@ -15,29 +15,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0963d1675c3456601aba70bb5291b7cc19d454fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9979f723a342aaefee80f9410c28aa68047b5e57
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930752"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683539"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>Erro: Tempo limite atingido durante a depuração de serviços Web
-Quando você estiver acessando um serviço Web XML do código de chamada, a chamada pode exceder o tempo limite e você não poderá continuar a depuração. Você pode ver uma mensagem de erro como essa.  
-  
+# <a name="error-timeout-while-debugging-web-services"></a>Erro: tempo limite durante a depuração de serviços Web
+Quando você estiver acessando um serviço Web XML do código de chamada, a chamada pode exceder o tempo limite e você não poderá continuar a depuração. Você pode ver uma mensagem de erro como essa.
+
 ```cmd
-An unhandled exception of type 'System.Net.WebException' occurred in   
-system.Web.services.dll  
-Additional information: The operation has timed-out.  
-```  
-  
-## <a name="solution"></a>Solução  
- Para evitar esse problema, defina o tempo limite para a chamada ao serviço Web XML como infinito, conforme exibido neste exemplo:  
-  
+An unhandled exception of type 'System.Net.WebException' occurred in
+system.Web.services.dll
+Additional information: The operation has timed-out.
+```
+
+## <a name="solution"></a>Solução
+ Para evitar esse problema, defina o tempo limite para a chamada ao serviço Web XML como infinito, conforme exibido neste exemplo:
+
 ```csharp
-Service1 obj = new Service1();  
-obj.TimeOut = -1; // infinite time out.  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+Service1 obj = new Service1();
+obj.TimeOut = -1; // infinite time out.
+```
+
+## <a name="see-also"></a>Consulte também
+- [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

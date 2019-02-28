@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b575ac0fb83735ca2726352b5925c82b368af958
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33078226c0610d0d992147e2ce4bec3697e3b3ae
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918063"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56647079"
 ---
 # <a name="idiaenumlinenumbersgetcount"></a>IDiaEnumLineNumbers::get_Count
-Recupera o número de números de linha.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_Count (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- pRetVal  
- [out] Retorna o número de números de linha.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)
+Recupera o número de números de linha.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_Count ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ pRetVal
+
+[out] Retorna o número de números de linha.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)

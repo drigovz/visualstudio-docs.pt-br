@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa1d17b31a75945392dd5bc49f5a1979e265180
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924854"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701687"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Guia Processo, Caixa de diálogo Propriedades da Janela
-Use o **processo** guia para identificar o processo da janela selecionada. Para exibir o [janela caixa de diálogo de propriedades](../debugger/window-properties-dialog-box.md), mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.  
-  
- As seguintes configurações estão disponíveis sobre o **processo** guia:  
-  
-|Entrada|Descrição|  
-|-----------|-----------------|  
-|**ID do Processo**|A ID do processo que possui o thread que criou esta janela. Escolha esse valor para exibir as propriedades desse processo.|  
+Use o **processo** guia para identificar o processo da janela selecionada. Para exibir o [janela caixa de diálogo de propriedades](../debugger/window-properties-dialog-box.md), mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.
+
+ As seguintes configurações estão disponíveis sobre o **processo** guia:
+
+|Entrada|Descrição|
+|-----------|-----------------|
+|**ID do Processo**|A ID do processo que possui o thread que criou esta janela. Escolha esse valor para exibir as propriedades desse processo.|
 |**ID do Thread**|A ID do thread que criou esta janela. Escolha esse valor para exibir as propriedades desse thread.|

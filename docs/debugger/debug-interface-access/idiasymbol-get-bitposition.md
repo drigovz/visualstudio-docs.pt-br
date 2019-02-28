@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1cbe949c12e3d1361563a5ead378b1aa81e1cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 521a21b2d3534433fe72ea6bd9578c0e668755ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000348"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611822"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
-Recupera a posição de bit do local. Usado quando o [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) é `LocIsBitField`.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_bitPosition (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna a posição de bit do local.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.  
-  
+Recupera a posição de bit do local. Usado quando o [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) é `LocIsBitField`.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_bitPosition ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna a posição de bit do local.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="requirements"></a>Requisitos  
-  
-|Requisito|Descrição|  
-|-----------------|-----------------|  
-|Cabeçalho:|dia2.h|  
-|Versão:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="requirements"></a>Requisitos
+
+|Requisito|Descrição|
+|-----------------|-----------------|
+|Cabeçalho:|dia2.h|
+|Versão:|DIA SDK v7.0|
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)

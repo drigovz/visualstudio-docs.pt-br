@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f950984e69412dce4fc0420148755763eb8463ee
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 864de61a3cc0c17dfa81770b3be35f6e5879541d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916680"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635755"
 ---
 # <a name="idiasectioncontribgetread"></a>IDiaSectionContrib::get_read
-Recupera um sinalizador que indica se a seção pode ser lido.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_read (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se a seção pode ser lida; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Recupera um sinalizador que indica se a seção pode ser lido.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_read ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se a seção pode ser lida; caso contrário, retornará `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

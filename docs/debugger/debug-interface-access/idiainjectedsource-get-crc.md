@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dd46f6b1939f83cfad633b2c404337b85410824
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39fb027c5e23d0d18443a22848b181e64347669a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598785"
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
-Recupera uma verificação de redundância cíclica (CRC) calculada a partir de bytes do código-fonte.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_crc (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o CRC calculado a partir de bytes do código-fonte.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Recupera uma verificação de redundância cíclica (CRC) calculada a partir de bytes do código-fonte.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_crc ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o CRC calculado a partir de bytes do código-fonte.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

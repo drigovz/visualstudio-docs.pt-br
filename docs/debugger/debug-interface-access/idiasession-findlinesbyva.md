@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2503707b8fd5907cd028b7af3e67cd5acd76a00
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227781"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646819"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 Recupera as informações de número de linha para linhas contidas em um intervalo de endereço virtual especificado (VA).
@@ -33,13 +33,16 @@ HRESULT findLinesByVA (
 ```
 
 #### <a name="parameters"></a>Parâmetros
-`va`  
+`va`
+
 [in] Especifica o endereço como um VA.
 
-`length`  
+`length`
+
 [in] Especifica o número de bytes do intervalo de endereços para cobrir com essa consulta.
 
-`ppResult`  
+`ppResult`
+
 [out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todas as linha de números que abrangem o intervalo de endereços especificado.
 
 ## <a name="example"></a>Exemplo
@@ -62,5 +65,5 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 ```
 
 ## <a name="see-also"></a>Consulte também
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

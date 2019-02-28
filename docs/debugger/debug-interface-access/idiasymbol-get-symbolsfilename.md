@@ -12,37 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fafae8bb5c2e9ab275601af0d7ed1dea22db4940
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b78c62ad096600254ddeb2ebd82d6174a950ca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970065"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601532"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
-Recupera o nome do arquivo do qual os símbolos foram carregados.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_symbolsFileName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o nome do arquivo do qual os símbolos foram carregados.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+Recupera o nome do arquivo do qual os símbolos foram carregados.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_symbolsFileName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna o nome do arquivo do qual os símbolos foram carregados.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="remarks"></a>Comentários  
- Essa propriedade é válida somente para símbolos com um [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valor `SymTagExe` que também têm escopo global.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="remarks"></a>Comentários
+ Essa propriedade é válida somente para símbolos com um [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valor `SymTagExe` que também têm escopo global.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

@@ -10,36 +10,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2e25e1106741e3ebb81bbff52fd5bc75368e806
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0e8c14779f9f7b3f14fab2dfc1022db0319aeb4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941110"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637965"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Exibição Funções – dados de amostragem de memória do .NET
-A exibição Funções dos dados de criação de perfil de alocação de memória do .NET que foram coletados usando o método de amostragem lista as funções que alocaram a memória durante a execução da criação de perfil e reporta o tamanho e quantidade de alocações.  
-  
-|Column|Descrição|  
-|------------|-----------------|  
-|**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
-|**Nome do Módulo**|O nome do módulo que contém a função.|  
-|**Caminho do Módulo**|O demarcador do módulo que contém a função.|  
-|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
-|**Nome da Função**|O nome totalmente qualificado da função.|  
-|**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
-|**Endereço da Função**|O endereço da função.|  
-|**Alocações Inclusivas**|O número total de objetos que foram alocados nessa função e suas funções filho.|  
-|**% de Alocações Inclusivas**|O percentual de todos os objetos que foram alocados na execução da criação de perfil que eram alocações inclusivas dessa função.|  
-|**Alocações Exclusivas**|O número de objetos criados quando a função estava executando diretamente na parte superior da pilha de chamadas. Esse número não inclui objetos criados em funções filho.|  
-|**% de Alocações Exclusivas**|O percentual de todos os objetos alocados na execução de criação de perfil que eram alocações exclusivas dessa função.|  
-|**Bytes Inclusivos**|O número de bytes da memória que foram alocados por esta função e suas funções filho.|  
-|**% de Bytes Inclusivos**|O percentual de todos os bytes de memória que foram alocados na execução de criação de perfil que eram bytes inclusivos dessa função.|  
-|**Bytes Exclusivos**|O número de bytes da memória que foram alocados por esta função, mas não por suas funções filho.|  
-|**% de Bytes Exclusivos**|O percentual de todos os bytes de memória que foram alocados na execução de criação de perfil que eram bytes exclusivos dessa função.|  
-  
-## <a name="see-also"></a>Consulte também  
- [Exibição Funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Exibição de Funções](../profiling/functions-view-sampling-data.md)   
- [Exibição Funções](../profiling/functions-view-instrumentation-data.md)
+A exibição Funções dos dados de criação de perfil de alocação de memória do .NET que foram coletados usando o método de amostragem lista as funções que alocaram a memória durante a execução da criação de perfil e reporta o tamanho e quantidade de alocações.
+
+|Column|Descrição|
+|------------|-----------------|
+|**ID do Processo**|A ID de processo (PID) da criação de perfil.|
+|**Nome do Processo**|O nome do processo.|
+|**Nome do Módulo**|O nome do módulo que contém a função.|
+|**Caminho do Módulo**|O demarcador do módulo que contém a função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
+|**Nome da Função**|O nome totalmente qualificado da função.|
+|**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
+|**Endereço da Função**|O endereço da função.|
+|**Alocações Inclusivas**|O número total de objetos que foram alocados nessa função e suas funções filho.|
+|**% de Alocações Inclusivas**|O percentual de todos os objetos que foram alocados na execução da criação de perfil que eram alocações inclusivas dessa função.|
+|**Alocações Exclusivas**|O número de objetos criados quando a função estava executando diretamente na parte superior da pilha de chamadas. Esse número não inclui objetos criados em funções filho.|
+|**% de Alocações Exclusivas**|O percentual de todos os objetos alocados na execução de criação de perfil que eram alocações exclusivas dessa função.|
+|**Bytes Inclusivos**|O número de bytes da memória que foram alocados por esta função e suas funções filho.|
+|**% de Bytes Inclusivos**|O percentual de todos os bytes de memória que foram alocados na execução de criação de perfil que eram bytes inclusivos dessa função.|
+|**Bytes Exclusivos**|O número de bytes da memória que foram alocados por esta função, mas não por suas funções filho.|
+|**% de Bytes Exclusivos**|O percentual de todos os bytes de memória que foram alocados na execução de criação de perfil que eram bytes exclusivos dessa função.|
+
+## <a name="see-also"></a>Consulte também
+- [Exibição Funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Exibição Funções](../profiling/functions-view-sampling-data.md)
+- [Exibição Funções](../profiling/functions-view-instrumentation-data.md)

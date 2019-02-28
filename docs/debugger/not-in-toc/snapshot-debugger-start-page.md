@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939784"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703702"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Guia de Introdução com o depurador de instantâneo
 
@@ -27,7 +27,7 @@ O depurador de instantâneo coleta instantâneos do seu aplicativo. Instantâneo
 
 ### <a name="set-a-snappoint"></a>Defina um Snappoint
 
-1. No editor de códigos, clique na medianiz esquerda ao lado de uma linha de código que você está interessado para definir um snappoint. Verifique se que ele é o código que você sabe que será executado. 
+1. No editor de códigos, clique na medianiz esquerda ao lado de uma linha de código que você está interessado para definir um snappoint. Verifique se que ele é o código que você sabe que será executado.
 
     ![Definindo um snappoint no Editor](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ O depurador de instantâneo coleta instantâneos do seu aplicativo. Instantâneo
 
 ### <a name="open-a-snapshot"></a>Abrir um instantâneo
 
-1. Quando o snappoint for atingido, um instantâneo é exibida na janela de ferramentas de diagnóstico à direita. Se não abrir a janela, você pode abri-lo escolhendo **Debug** > **Windows** > **Mostrar ferramentas de diagnóstico**. 
+1. Quando o snappoint for atingido, um instantâneo é exibida na janela de ferramentas de diagnóstico à direita. Se não abrir a janela, você pode abri-lo escolhendo **Debug** > **Windows** > **Mostrar ferramentas de diagnóstico**.
 
     ![Instantâneo na janela de ferramentas de diagnóstico](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ O site em si ainda está ao vivo e os usuários finais não são afetados. Por p
 
 3. No **mensagem** , insira uma mensagem de log que você deseja registrar. Você também pode avaliar variáveis na sua mensagem de log, colocando-os entre chaves.
 
-    Se você escolher **enviar para a janela de saída**, a mensagem será exibida na janela de ferramentas de diagnóstico quando o logpoint for atingido. 
+    Se você escolher **enviar para a janela de saída**, a mensagem será exibida na janela de ferramentas de diagnóstico quando o logpoint for atingido.
 
     Se você escolher **enviar para log de aplicativo**, a mensagem será exibida em qualquer lugar que você pode ver mensagens de `System.Diagnostics.Trace` (ou `ILogger` no .NET Core), como o App Insights, quando o logpoint for atingido.
 
@@ -69,6 +69,6 @@ Você pode encontrar mais informações sobre o depurador de instantâneo na [p�
 
 ## <a name="dont-show-me-this-again"></a>Não mostrar novamente
 
-Para nunca mostrar a página de início de depurador de instantâneo novamente quando você conecta o depurador de instantâneo, alterar o **Mostrar 'Getting Started' página no início da sessão** opção **ferramentas**  >   **As opções** > **depurador de instantâneo**. 
+Para nunca mostrar a página de início de depurador de instantâneo novamente quando você conecta o depurador de instantâneo, alterar o **Mostrar 'Getting Started' página no início da sessão** opção **ferramentas**  >   **As opções** > **depurador de instantâneo**.
 
 ![Página de opção de ferramenta de depurador de instantâneo](../media/snapshot-startpage-tools-options.png)

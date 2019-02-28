@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227055"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714966"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Como depurar o método OnStart
 Você pode depurar um serviço Windows iniciando o serviço e anexando o depurador ao processo do serviço. Para obter mais informações, confira [Como depurar aplicativos de Serviço Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). No entanto, para depurar o <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> método de um serviço do Windows, você deve iniciar o depurador de dentro do método.
@@ -53,5 +53,5 @@ Você pode depurar um serviço Windows iniciando o serviço e anexando o depurad
 5. Uma nova instância do Visual Studio ser iniciado e a execução é interrompida no `Debugger.Launch()` método.
 
 ## <a name="see-also"></a>Consulte também
-[Segurança do depurador](../debugger/debugger-security.md)  
-[Depurando código gerenciado](../debugger/debugging-managed-code.md)
+- [Segurança do depurador](../debugger/debugger-security.md)
+- [Depurando código gerenciado](../debugger/debugging-managed-code.md)

@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4399c6f3c1bc5168f4a7bce0a82e251051432033
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964412"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612784"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-Recupera um valor de chave de inteiro simples que é exclusivo para esta imagem.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_uniqueId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna um valor de chave de inteiro simples que é exclusivo para esta imagem.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Comparação de chaves em vez de cadeias de caracteres podem acelerar o processamento de números de linha.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Recupera um valor de chave de inteiro simples que é exclusivo para esta imagem.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_uniqueId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna um valor de chave de inteiro simples que é exclusivo para esta imagem.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Comparação de chaves em vez de cadeias de caracteres podem acelerar o processamento de números de linha.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

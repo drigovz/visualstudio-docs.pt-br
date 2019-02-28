@@ -8,70 +8,70 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa206673f4984eec80911c8c56adbb423d13473
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74d1be80fff92a8663582ba4e51e65ecc224ef1f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042199"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699217"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
-Substitui a MSAA (suavização de múltipla amostra) em todos os destinos de renderização e cadeias de troca.  
-  
-## <a name="interpretation"></a>Interpretação  
- A suavização de múltipla amostra aumenta a qualidade visual colhendo amostras em vários locais e cada pixel; níveis mais altos de MSAA colhem mais amostras, e sem MSAA, somente uma amostra é colhida do centro do pixel. Habilitar MSAA em seu aplicativo geralmente afeta de maneira modesta, porém notável, o desempenho de renderização; mas em determinadas cargas de trabalho ou em determinadas GPUs, ele quase não oferece impacto.  
-  
- Se seu aplicativo já tem MSAA habilitado, então as variantes de MSAA mais inferiores indicam o custo sobre o desempenho relativo incorrido pelo MSAA existente de mais alto nível. Em particular, a variante MSAA de 0x indica o desempenho relativo de seu aplicativo sem MSAA.  
-  
- Se seu aplicativo ainda não tem MSAA habilitado, então as variantes de MSAA de 2x e 4x indicam o custo sobre o desempenho relativo de habilitá-las em seu aplicativo. Quando o custo for aceitavelmente baixo, considere habilitar MSAA para aprimorar a qualidade de imagem do seu aplicativo.  
-  
+Substitui a MSAA (suavização de múltipla amostra) em todos os destinos de renderização e cadeias de troca.
+
+## <a name="interpretation"></a>Interpretação
+ A suavização de múltipla amostra aumenta a qualidade visual colhendo amostras em vários locais e cada pixel; níveis mais altos de MSAA colhem mais amostras, e sem MSAA, somente uma amostra é colhida do centro do pixel. Habilitar MSAA em seu aplicativo geralmente afeta de maneira modesta, porém notável, o desempenho de renderização; mas em determinadas cargas de trabalho ou em determinadas GPUs, ele quase não oferece impacto.
+
+ Se seu aplicativo já tem MSAA habilitado, então as variantes de MSAA mais inferiores indicam o custo sobre o desempenho relativo incorrido pelo MSAA existente de mais alto nível. Em particular, a variante MSAA de 0x indica o desempenho relativo de seu aplicativo sem MSAA.
+
+ Se seu aplicativo ainda não tem MSAA habilitado, então as variantes de MSAA de 2x e 4x indicam o custo sobre o desempenho relativo de habilitá-las em seu aplicativo. Quando o custo for aceitavelmente baixo, considere habilitar MSAA para aprimorar a qualidade de imagem do seu aplicativo.
+
 > [!NOTE]
->  Seu hardware pode não oferecer suporte completo a MSAA para todos os formatos. Se uma dessas variantes encontrar uma limitação de hardware que não tenha uma solução alternativa, sua coluna na tabela de resumo de desempenho estará em brando e uma mensagem de erro será produzida.  
-  
-## <a name="remarks"></a>Comentários  
- Essas variantes substituem a contagem de amostra e os argumentos de qualidade de amostra em chamadas para `ID3DDevice::CreateTexture2D` que criam destinos de renderização. Especificamente, esses parâmetros são substituídos quando:  
-  
-- O objeto `D3D11_TEXTURE2D_DESC` transmitido em `pDesc` descreve um destino de renderização; ou seja:  
-  
-  -   O membro BindFlags possui o sinalizador D3D11_BIND_TARGET ou D3D11_BIND_DEPTH_STENCIL definido.  
-  
-  -   O membro Uso está definido como D3D11_USAGE_DEFAULT.  
-  
-  -   O membro CPUAccessFlags é definido como 0.  
-  
-  -   O membro MipLevels é definido como 1.  
-  
-- O dispositivo oferece suporte à contagem de amostra solicitada (0, 2 ou 4) e à qualidade da amostra (0) para o formato do destino de renderização solicitado (membro D3D11_TEXTURE2D_DESC::Format), como determinado por `ID3D11Device::CheckMultisampleQualityLevels`.  
-  
-  Se o membro D3D11_TEXTURE2D_DESC::BindFlags tiver um sinalizador D3D_BIND_SHADER_RESOURCE ou D3D11_BIND_UNORDERED_ACCESS definido, então serão criadas duas versões da textura; a primeira terá esses sinalizadores liberados para uso como o destino de renderização, e a outra será uma textura não MSAA, na qual esses sinalizadores serão deixados intactos para agirem como um buffer de resolução para a primeira versão. Isso é necessário porque o uso de uma textura MSAA como um recurso de sombreador ou para acesso não ordenado provavelmente não será válido; por exemplo, um sombreador que agisse sobre ela geraria resultados incorretos, pois esperaria uma textura não MSAA. Se a variante tiver criado a textura não MSAA secundária, então sempre que o destino de renderização MSAA não for definido do contexto do dispositivo, seu conteúdo será resolvido na textura não MSAA. Da mesma forma, sempre que o destino de renderização MSAA for vinculado como um recurso do sombreador ou usado em uma exibição de acesso não ordenada, a textura não MSAA resolvida é vinculada em seu lugar.  
-  
-  Essas variantes também substituem as definições de MSAA em todas as cadeias de troca criadas usando `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` e `ID3D11CreateDeviceAndSwapChain`.  
-  
-  O efeito real dessas alterações é que toda a renderização é realizada em um destino de renderização MSAA, mas se seu aplicativo usar um desses destinos de renderização ou buffers de cadeia de troca como uma exibição de recurso do sombreador ou uma exibição de acesso não ordenada, então os dados são amostrados a partir da cópia não MSAA resolvida do destino de renderização.  
-  
-## <a name="restrictions-and-limitations"></a>Restrições e limitações  
- No Direct3D11, as texturas MSAA são mais restritas do que texturas não MSAA. Por exemplo, você não pode chamar `ID3D11DeviceContext::UpdateSubresource` em uma textura MSAA, e chamar `ID3D11DeviceContext::CopySubresourceRegion` falhará se a contagem de amostra e a qualidade da amostra do recurso de origem e do recurso de destino não forem correspondentes, o que pode ocorrer quando essa variante substitui as definições de MSAA de um recurso, mas não de outro.  
-  
- Quando a reprodução detecta esses tipos de conflitos, ela se esforça para replicar o comportamento pretendido, mas pode não ser possível reproduzir os resultados de maneira exata. Embora isso geralmente não afete o desempenho dessas variantes de maneira que seu impacto seja representado de forma inadequada, é possível que isso aconteça, por exemplo, quando o controle do fluxo em um sombreador de pixel é determinado de acordo com o conteúdo preciso de uma textura, pois a textura replicada pode não ter conteúdos idênticos.  
-  
-## <a name="example"></a>Exemplo  
- Essas variantes podem ser reproduzidas para destinos de renderização criados usando `ID3D11Device::CreateTexture2D` ao utilizar um código como esse:  
-  
+>  Seu hardware pode não oferecer suporte completo a MSAA para todos os formatos. Se uma dessas variantes encontrar uma limitação de hardware que não tenha uma solução alternativa, sua coluna na tabela de resumo de desempenho estará em brando e uma mensagem de erro será produzida.
+
+## <a name="remarks"></a>Comentários
+ Essas variantes substituem a contagem de amostra e os argumentos de qualidade de amostra em chamadas para `ID3DDevice::CreateTexture2D` que criam destinos de renderização. Especificamente, esses parâmetros são substituídos quando:
+
+- O objeto `D3D11_TEXTURE2D_DESC` transmitido em `pDesc` descreve um destino de renderização; ou seja:
+
+  -   O membro BindFlags possui o sinalizador D3D11_BIND_TARGET ou D3D11_BIND_DEPTH_STENCIL definido.
+
+  -   O membro Uso está definido como D3D11_USAGE_DEFAULT.
+
+  -   O membro CPUAccessFlags é definido como 0.
+
+  -   O membro MipLevels é definido como 1.
+
+- O dispositivo oferece suporte à contagem de amostra solicitada (0, 2 ou 4) e à qualidade da amostra (0) para o formato do destino de renderização solicitado (membro D3D11_TEXTURE2D_DESC::Format), como determinado por `ID3D11Device::CheckMultisampleQualityLevels`.
+
+  Se o membro D3D11_TEXTURE2D_DESC::BindFlags tiver um sinalizador D3D_BIND_SHADER_RESOURCE ou D3D11_BIND_UNORDERED_ACCESS definido, então serão criadas duas versões da textura; a primeira terá esses sinalizadores liberados para uso como o destino de renderização, e a outra será uma textura não MSAA, na qual esses sinalizadores serão deixados intactos para agirem como um buffer de resolução para a primeira versão. Isso é necessário porque o uso de uma textura MSAA como um recurso de sombreador ou para acesso não ordenado provavelmente não será válido; por exemplo, um sombreador que agisse sobre ela geraria resultados incorretos, pois esperaria uma textura não MSAA. Se a variante tiver criado a textura não MSAA secundária, então sempre que o destino de renderização MSAA não for definido do contexto do dispositivo, seu conteúdo será resolvido na textura não MSAA. Da mesma forma, sempre que o destino de renderização MSAA for vinculado como um recurso do sombreador ou usado em uma exibição de acesso não ordenada, a textura não MSAA resolvida é vinculada em seu lugar.
+
+  Essas variantes também substituem as definições de MSAA em todas as cadeias de troca criadas usando `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` e `ID3D11CreateDeviceAndSwapChain`.
+
+  O efeito real dessas alterações é que toda a renderização é realizada em um destino de renderização MSAA, mas se seu aplicativo usar um desses destinos de renderização ou buffers de cadeia de troca como uma exibição de recurso do sombreador ou uma exibição de acesso não ordenada, então os dados são amostrados a partir da cópia não MSAA resolvida do destino de renderização.
+
+## <a name="restrictions-and-limitations"></a>Restrições e limitações
+ No Direct3D11, as texturas MSAA são mais restritas do que texturas não MSAA. Por exemplo, você não pode chamar `ID3D11DeviceContext::UpdateSubresource` em uma textura MSAA, e chamar `ID3D11DeviceContext::CopySubresourceRegion` falhará se a contagem de amostra e a qualidade da amostra do recurso de origem e do recurso de destino não forem correspondentes, o que pode ocorrer quando essa variante substitui as definições de MSAA de um recurso, mas não de outro.
+
+ Quando a reprodução detecta esses tipos de conflitos, ela se esforça para replicar o comportamento pretendido, mas pode não ser possível reproduzir os resultados de maneira exata. Embora isso geralmente não afete o desempenho dessas variantes de maneira que seu impacto seja representado de forma inadequada, é possível que isso aconteça, por exemplo, quando o controle do fluxo em um sombreador de pixel é determinado de acordo com o conteúdo preciso de uma textura, pois a textura replicada pode não ter conteúdos idênticos.
+
+## <a name="example"></a>Exemplo
+ Essas variantes podem ser reproduzidas para destinos de renderização criados usando `ID3D11Device::CreateTexture2D` ao utilizar um código como esse:
+
 ```cpp
-D3D11_TEXTURE2D_DESC target_description;  
-target_description.BindFlags = D3D11_BIND_RENDER_TARGET;  
-target_description.SampleDesc.Count = 4; // 4x MSAA, can be 2 or 0 instead  
-target_description.SampleDesc.Quality = 0;  
-d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
-```  
-  
-## <a name="example"></a>Exemplo  
- Ou para cadeias de troca criadas usando IDXGISwapChain::CreateSwapChain ou D3D11CreateDeviceAndSwapChain ao utilizar um código como esse:  
-  
+D3D11_TEXTURE2D_DESC target_description;
+target_description.BindFlags = D3D11_BIND_RENDER_TARGET;
+target_description.SampleDesc.Count = 4; // 4x MSAA, can be 2 or 0 instead
+target_description.SampleDesc.Quality = 0;
+d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
+```
+
+## <a name="example"></a>Exemplo
+ Ou para cadeias de troca criadas usando IDXGISwapChain::CreateSwapChain ou D3D11CreateDeviceAndSwapChain ao utilizar um código como esse:
+
 ```cpp
-DXGI_SWAP_CHAIN_DESC chain_description;  
-chain_description.SampleDesc.Count = 4; // 4x MSAA, can be 2 or 0 instead  
-chain_description.SampleDesc.Quality = 0;  
-  
-// Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.  
+DXGI_SWAP_CHAIN_DESC chain_description;
+chain_description.SampleDesc.Count = 4; // 4x MSAA, can be 2 or 0 instead
+chain_description.SampleDesc.Quality = 0;
+
+// Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.
 ```

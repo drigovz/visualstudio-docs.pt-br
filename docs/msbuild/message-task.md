@@ -18,46 +18,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ebb74c201a730ffe256670b936ef2a886a24e95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941582"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643061"
 ---
 # <a name="message-task"></a>tarefa de mensagem
-Registra uma mensagem durante a compilação.  
-  
-## <a name="parameters"></a>Parâmetros  
- A tabela a seguir descreve os parâmetros da tarefa `Message`.  
-  
-|Parâmetro|Descrição|  
-|---------------|-----------------|  
-|`Importance`|Parâmetro `String` opcional.<br /><br /> Especifica a importância da mensagem. Esse parâmetro pode ter um valor igual a `high`, `normal` ou `low`. O valor padrão é `normal`.|  
-|`Text`|Parâmetro `String` opcional.<br /><br /> O texto de erro do log.|  
-  
-## <a name="remarks"></a>Comentários  
- A tarefa `Message` permite o envio de mensagens de problema para os agentes de log em diferentes etapas no processo de compilação de projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
-  
- Se o parâmetro `Condition` avaliar para o `true`, o valor do parâmetro `Text` será registrado e a compilação dará continuidade à execução. Se um parâmetro `Condition` não existir, o texto da mensagem será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).  
-  
- Por padrão, a mensagem é enviada para o agente de log de console do MSBuild. Isso pode ser alterado configurando o parâmetro <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. O agente de log interpreta o parâmetro `Importance`.  
-  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Exemplo  
- O exemplo de código a seguir registra mensagens para todos os agentes de log registrados.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="DisplayMessages">  
-        <Message Text="Project File Name = $(MSBuildProjectFile)" />  
-        <Message Text="Project Extension = $(MSBuildProjectExtension)" />  
-    </Target>  
-    ...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
+Registra uma mensagem durante a compilação.
+
+## <a name="parameters"></a>Parâmetros
+ A tabela a seguir descreve os parâmetros da tarefa `Message`.
+
+|Parâmetro|Descrição|
+|---------------|-----------------|
+|`Importance`|Parâmetro `String` opcional.<br /><br /> Especifica a importância da mensagem. Esse parâmetro pode ter um valor igual a `high`, `normal` ou `low`. O valor padrão é `normal`.|
+|`Text`|Parâmetro `String` opcional.<br /><br /> O texto de erro do log.|
+
+## <a name="remarks"></a>Comentários
+ A tarefa `Message` permite o envio de mensagens de problema para os agentes de log em diferentes etapas no processo de compilação de projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+ Se o parâmetro `Condition` avaliar para o `true`, o valor do parâmetro `Text` será registrado e a compilação dará continuidade à execução. Se um parâmetro `Condition` não existir, o texto da mensagem será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
+
+ Por padrão, a mensagem é enviada para o agente de log de console do MSBuild. Isso pode ser alterado configurando o parâmetro <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. O agente de log interpreta o parâmetro `Importance`.
+
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Exemplo
+ O exemplo de código a seguir registra mensagens para todos os agentes de log registrados.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="DisplayMessages">
+        <Message Text="Project File Name = $(MSBuildProjectFile)" />
+        <Message Text="Project Extension = $(MSBuildProjectExtension)" />
+    </Target>
+    ...
+</Project>
+```
+
+## <a name="see-also"></a>Consulte também
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)

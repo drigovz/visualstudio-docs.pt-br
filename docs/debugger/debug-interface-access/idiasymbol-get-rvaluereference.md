@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206abebe13a6295a387208bb50461ffed4f30b25
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd75cad2fb40961c829c1fd76c603aa88d072199
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622170"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
-Recupera um sinalizador que especifica se um tipo de ponteiro é uma referência de rvalue. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como um tipo de ponteiro.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT get_RValueReference (  
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se o ponteiro for uma referência de rvalue; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+Recupera um sinalizador que especifica se um tipo de ponteiro é uma referência de rvalue. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como um tipo de ponteiro.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_RValueReference (
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se o ponteiro for uma referência de rvalue; caso contrário, retornará `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="remarks"></a>Comentários  
-  
-## <a name="requirements"></a>Requisitos  
- Cabeçalho: Dia2.h  
-  
- Biblioteca: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="remarks"></a>Comentários
+
+## <a name="requirements"></a>Requisitos
+ Cabeçalho: Dia2.h
+
+ Biblioteca: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

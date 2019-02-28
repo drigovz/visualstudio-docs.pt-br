@@ -12,47 +12,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db493023d94f527f61090783e28b3029c31f0517
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ecb0db40f1179722b5ca315853dc3953a105b45b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971186"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626031"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
-Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço virtual especificado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT findSymbolByVA (   
-   ULONGLONG    va,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `va`  
- [in] Especifica o endereço virtual.  
-  
- `symtag`  
- [in] Tipo de símbolo a ser localizada. Valores são tirados de [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumeração.  
-  
- `ppSymbol`  
- [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperado do objeto que representa o símbolo.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="example"></a>Exemplo  
-  
-```C++  
-IDiaSymbol* pFunc;  
-pSession->findSymbolByVA( va, SymTagFunction, &pFunc );  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço virtual especificado.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT findSymbolByVA ( 
+   ULONGLONG    va,
+   SymTagEnum   symtag,
+   IDiaSymbol** ppSymbol
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `va`
+
+[in] Especifica o endereço virtual.
+
+ `symtag`
+
+[in] Tipo de símbolo a ser localizada. Valores são tirados de [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumeração.
+
+ `ppSymbol`
+
+[out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperado do objeto que representa o símbolo.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="example"></a>Exemplo
+
+```C++
+IDiaSymbol* pFunc;
+pSession->findSymbolByVA( va, SymTagFunction, &pFunc );
+```
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

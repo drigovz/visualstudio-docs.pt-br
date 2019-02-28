@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484219"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713146"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -101,7 +101,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     O aplicativo é iniciado e não há exceções mostradas pelo depurador. No entanto, a saída que você vê na janela do console é não o que você espera. Veja a saída esperada:
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     Mas, em vez disso, vemos o seguinte:
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Quando você definir o ponto de interrupção, um ponto vermelho será exibido na margem esquerda.
@@ -247,13 +247,13 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 1. Examinando seu código com relação à definição do tipo de galáxia, você acha que a propriedade `GalaxyType` da classe `Galaxy` é especificada como `object`, em vez de `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Altere o código anterior para isto:
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Clique no botão **Reiniciar** ![Reiniciar aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na Barra de ferramentas de depuração (**Ctrl** + **Shift** + **F5**) para recompilar o código e reiniciar.
@@ -265,8 +265,8 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     O aplicativo é executado e exibe a saída. Ele parece muito bom agora, mas você percebe uma coisa; você esperava que a galáxia Pequena Nuvem de Magalhães fosse exibida como uma galáxia irregular na saída do console, mas ele mostra nenhum tipo de galáxia.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
 1. Clique no botão **Reiniciar** ![Reiniciar aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na Barra de ferramentas de depuração (**Ctrl** + **Shift** + **F5**) para reiniciar.
 
-    O depurador é pausado na linha de código em que você definiu o ponto de interrupção.  
+    O depurador é pausado na linha de código em que você definiu o ponto de interrupção.
 
 1. Passe o mouse sobre a variável `type`. Você verá um valor de `S` (seguindo o código de caractere). Você está interessado em um valor de `I`, uma vez que você sabe que é um tipo de galáxia irregular.
 
@@ -323,7 +323,7 @@ Quando você encontrar a região de código com o problema, use o depurador para
 * Verifique se o seu aplicativo está executando o código que você espera. (Por exemplo, no aplicativo de exemplo, esperávamos que o código para a instrução de opção definisse o tipo de galáxia como Irregular, mas o aplicativo ignorou o código devido ao erro de digitação.)
 
 > [!TIP]
-> Use um depurador para ajudá-lo a encontrar bugs. Uma ferramenta de depuração poderá localizar bugs *para você* somente se conhecer a intenção do seu código. Uma ferramenta só poderá conhecer a intenção do seu código se você, o desenvolvedor, expressar essa intenção. Gravar [testes de unidade](../test/improve-code-quality.md) é como se faz isso. 
+> Use um depurador para ajudá-lo a encontrar bugs. Uma ferramenta de depuração poderá localizar bugs *para você* somente se conhecer a intenção do seu código. Uma ferramenta só poderá conhecer a intenção do seu código se você, o desenvolvedor, expressar essa intenção. Gravar [testes de unidade](../test/improve-code-quality.md) é como se faz isso.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -17,27 +17,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88689df3b1dad671f56b42e9c8523c6f85169c9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 972ad0d772eee9b876f43bc3e2fcd032d4b7e0ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976427"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685359"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C#)
- Com a função Editar e Continuar no C#, é possível fazer alterações em seu código no modo de interrupção durante a depuração. As alterações podem ser aplicadas sem precisar interromper e reiniciar a sessão de depuração. No modo de execução, o editor de origem é somente leitura.  
-  
- Editar e Continuar dá suporte à maioria das alterações que você talvez queira fazer durante uma sessão de depuração, mas há algumas exceções. Para obter mais informações, consulte [Supported Code Changes (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md).  
+ Com a função Editar e Continuar no C#, é possível fazer alterações em seu código no modo de interrupção durante a depuração. As alterações podem ser aplicadas sem precisar interromper e reiniciar a sessão de depuração. No modo de execução, o editor de origem é somente leitura.
+
+ Editar e Continuar dá suporte à maioria das alterações que você talvez queira fazer durante uma sessão de depuração, mas há algumas exceções. Para obter mais informações, consulte [Supported Code Changes (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
  Editar e continuar é suportada em UWP em x86 e x64 aplicativos destinados ao .NET Framework 4.6 e Windows 10 desktops ou versões posteriores (.NET Framework é apenas uma versão de área de trabalho).
 
  > [!NOTE]
  > Plataformas e aplicativos sem suporte incluem o ASP.NET 5, o Silverlight 5 e o Windows 8.1.
-  
- Quando Editar e Continuar estiver habilitado, as alterações com suporte são aplicadas automaticamente quando você usa um comando de execução do depurador, tal como **Continuar**, **Etapa** ou **Definir Próxima Instrução**, ou executa uma avaliação de função em uma janela de depuração.  
-  
- Para obter mais informações, confira [Como: Usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Como: Usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
- [Alterações de código suportadas (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
+
+ Quando Editar e Continuar estiver habilitado, as alterações com suporte são aplicadas automaticamente quando você usa um comando de execução do depurador, tal como **Continuar**, **Etapa** ou **Definir Próxima Instrução**, ou executa uma avaliação de função em uma janela de depuração.
+
+ Para obter mais informações, consulte [como: usar Editar e continuar (c#)](../debugger/how-to-use-edit-and-continue-csharp.md).
+
+## <a name="see-also"></a>Consulte também
+- [Como usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Alterações de código suportadas (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
