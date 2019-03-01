@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar arquivos de Log detalhados para implantações do ClickOnce | Microsoft Docs'
+title: 'Como: especificar arquivos de Log detalhados para implantações do ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,30 +15,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9abdd886215582d2f4a05145ab9da5bd81151b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ffc7fbdace660a894352623a3ff8765a165b5556
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041353"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619492"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Como: Especificar arquivos de log detalhados para implantações do ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantém os arquivos de log de atividades para todas as implantações. Esses logs documentar detalhes referentes à instalação, inicializando, atualizando e desinstalando uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Para aumentar o detalhe que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gravações para esses arquivos de log, use o Editor do registro (*regedit.exe*) para especificar o nível de detalhamento.  
-  
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Como especificar arquivos de log detalhados para implantações do ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantém os arquivos de log de atividades para todas as implantações. Esses logs documentar detalhes referentes à instalação, inicializando, atualizando e desinstalando uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Para aumentar o detalhe que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gravações para esses arquivos de log, use o Editor do registro (*regedit.exe*) para especificar o nível de detalhamento.
+
 > [!CAUTION]
->  Se você usar o Editor do Registro incorretamente, poderá causar sérios problemas que talvez exijam a reinstalação do sistema operacional. Use o Editor do Registro por sua conta e risco.  
-  
- O procedimento a seguir descreve como especificar o nível de detalhamento para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos de log para o usuário atual. Para reduzir o nível de detalhamento, remova esse valor do registro.  
-  
-### <a name="to-specify-verbose-log-files"></a>Para especificar os arquivos de log detalhados  
-  
-1.  Abra *Regedit.exe*.  
-  
-2.  Navegue até o nó **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.  
-  
-3.  Se necessário, crie um novo valor de cadeia de caracteres chamado `LogVerbosityLevel`.  
-  
-4.  Defina as `LogVerbosityLevel` valor `1`.  
-  
-## <a name="see-also"></a>Consulte também  
- [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+>  Se você usar o Editor do Registro incorretamente, poderá causar sérios problemas que talvez exijam a reinstalação do sistema operacional. Use o Editor do Registro por sua conta e risco.
+
+ O procedimento a seguir descreve como especificar o nível de detalhamento para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos de log para o usuário atual. Para reduzir o nível de detalhamento, remova esse valor do registro.
+
+### <a name="to-specify-verbose-log-files"></a>Para especificar os arquivos de log detalhados
+
+1.  Abra *Regedit.exe*.
+
+2.  Navegue até o nó **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
+
+3.  Se necessário, crie um novo valor de cadeia de caracteres chamado `LogVerbosityLevel`.
+
+4.  Defina as `LogVerbosityLevel` valor `1`.
+
+## <a name="see-also"></a>Consulte também
+- [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
