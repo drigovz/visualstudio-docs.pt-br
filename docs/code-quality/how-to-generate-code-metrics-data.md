@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909200"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007352"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como: Gerar dados de métricas de código
 
@@ -25,6 +25,8 @@ Você pode gerar resultados de métricas de código para um ou mais projetos ou 
 Além disso, você pode instalar um [pacote do NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) que inclui quatro métricas de código [analisador](roslyn-analyzers-overview.md) regras: CA1501, CA1502, CA1505 e CA1506. Essas regras são desabilitadas por padrão, mas você pode habilitá-las a partir **Gerenciador de soluções** ou em um [conjunto de regras](using-rule-sets-to-group-code-analysis-rules.md) arquivo.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Métricas de código do Visual Studio IDE
+
+Gerar as métricas de código para um ou todos os seus projetos abertos no IDE usando o **Analyze** > **calcular métricas de código** menu.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Gerar resultados de métricas de código para uma solução inteira
 
@@ -45,6 +47,16 @@ Os resultados são gerados e o **resultados de métricas de código** janela é 
 1. Na barra de menus, escolha **Analyze** > **calcular métricas de código** > **para projetos selecionados**.
 
 Os resultados são gerados e o **resultados de métricas de código** janela é exibida. Para exibir os detalhes de resultados, expanda a árvore na **hierarquia**.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> O **calcular métricas de código** comando não funciona para projetos .NET Core e .NET Standard. Para calcular métricas de código para um projeto .NET Core ou .NET Standard, você pode:
+>
+> - calcular métricas de código a partir de [linha de comando](#command-line-code-metrics) em vez disso
+> - Atualizar para o Visual Studio de 2019
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Métricas de código de linha de comando
 
