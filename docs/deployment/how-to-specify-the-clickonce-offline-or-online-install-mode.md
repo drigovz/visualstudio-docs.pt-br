@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especifique o ClickOnce Offline ou Online de modo de instalação | Microsoft Docs'
+title: 'Como: especificar o ClickOnce Offline ou Online de modo de instalação | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,39 +18,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef19b966bb9d934975eebd00399b401e768922d1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 786b187aa38aaeb49f840e28f25ec3cc43087ce8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011670"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625381"
 ---
-# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Como: Especificar o modo de instalação offline ou online do ClickOnce
-O `Install Mode` para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo determina se o aplicativo estará disponível offline ou online. Quando você escolhe **o aplicativo está disponível somente online**, o usuário deve ter acesso para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] local (uma página da Web ou um compartilhamento de arquivos) para executar o aplicativo de publicação. Quando você escolhe **o aplicativo está disponível também offline**, o aplicativo adiciona entradas para o **inicie** menu e o **adicionar ou remover programas** caixa de diálogo; o usuário é é possível executar o aplicativo quando eles não estão conectados.  
-  
- O `Install Mode` podem ser definidos na **Publish** página da **Designer de projeto**.  
-  
- **Observação** o `Install Mode` também podem ser definidas usando o Assistente de publicação. Para obter mais informações, confira [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
-  
-### <a name="to-make-a-clickonce-application-available-online-only"></a>Para disponibilizar um aplicativo ClickOnce online apenas  
-  
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
-  
-2.  Clique o **publicar** guia.  
-  
-3.  No **modo de instalação e as configurações** área, clique no **o aplicativo está disponível apenas online** botão de opção.  
-  
-### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>Para disponibilizar um aplicativo ClickOnce online ou offline  
-  
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
-  
-2.  Clique o **publicar** guia.  
-  
-3.  No **modo de instalação e as configurações** área, clique no **o aplicativo está disponível também offline** botão de opção.  
-  
-     Quando instalado, o aplicativo adiciona entradas para o **inicie** menu e, ao **adicionar ou remover programas** no painel de controle.  
-  
-## <a name="see-also"></a>Consulte também  
- [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Como especificar o modo de instalação offline ou online do ClickOnce
+O `Install Mode` para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo determina se o aplicativo estará disponível offline ou online. Quando você escolhe **o aplicativo está disponível somente online**, o usuário deve ter acesso para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] local (uma página da Web ou um compartilhamento de arquivos) para executar o aplicativo de publicação. Quando você escolhe **o aplicativo está disponível também offline**, o aplicativo adiciona entradas para o **inicie** menu e o **adicionar ou remover programas** caixa de diálogo; o usuário é é possível executar o aplicativo quando eles não estão conectados.
+
+ O `Install Mode` podem ser definidos na **Publish** página da **Designer de projeto**.
+
+ **Observação** o `Install Mode` também podem ser definidas usando o Assistente de publicação. Para obter mais informações, consulte [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+
+### <a name="to-make-a-clickonce-application-available-online-only"></a>Para disponibilizar um aplicativo ClickOnce online apenas
+
+1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
+
+2.  Clique o **publicar** guia.
+
+3.  No **modo de instalação e as configurações** área, clique no **o aplicativo está disponível apenas online** botão de opção.
+
+### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>Para disponibilizar um aplicativo ClickOnce online ou offline
+
+1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
+
+2.  Clique o **publicar** guia.
+
+3.  No **modo de instalação e as configurações** área, clique no **o aplicativo está disponível também offline** botão de opção.
+
+     Quando instalado, o aplicativo adiciona entradas para o **inicie** menu e, ao **adicionar ou remover programas** no painel de controle.
+
+## <a name="see-also"></a>Consulte também
+- [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
+- [Como publicar um aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

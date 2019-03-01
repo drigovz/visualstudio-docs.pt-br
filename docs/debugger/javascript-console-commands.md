@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227401"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701947"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos do Console do JavaScript no Visual Studio
 
@@ -61,11 +61,11 @@ Você pode usar o formato de comando mais longo, `window.console.[command]`, se 
 |`warn(message)`|Envia `message` para a janela do console, prefaciada por um símbolo de aviso.<br /><br /> Os objetos transmitidos usando o comando são convertidos em um valor de cadeia de caracteres.|`console.warn("warning message");`|
 
 ## <a name="miscellaneous-commands"></a>Comandos variados
-{1&gt;Esses comandos também estão disponíveis na janela do Console do JavaScript (não estão disponíveis no código).&lt;1}
+Esses comandos também estão disponíveis na janela do Console do JavaScript (não estão disponíveis no código).
 
 |Comando|Descrição|Exemplo|
 |-------------|-----------------|-------------|
-|`$0`, `$1`, `$2`, `$3`, `$4`|Retorna o elemento especificado para a janela do console. `$0` retorna o elemento selecionado atualmente no Explorador do DOM, `$1` retorna o elemento selecionado anteriormente no Explorador do DOM e assim por diante, até o quarto elemento selecionado anteriormente.|{1&gt;$3&lt;1}|
+|`$0`, `$1`, `$2`, `$3`, `$4`|Retorna o elemento especificado para a janela do console. `$0` retorna o elemento selecionado atualmente no Explorador do DOM, `$1` retorna o elemento selecionado anteriormente no Explorador do DOM e assim por diante, até o quarto elemento selecionado anteriormente.|$3|
 |`$(id)`|Retorna um elemento por ID. Este é um comando de atalho para `document.getElementById(id)`, em que `id` é uma cadeia de caracteres que representa a ID do elemento.|`$("contenthost")`|
 |`$$(selector)`|Retorna uma matriz de elementos que correspondem ao seletor especificado usando a sintaxe do seletor de CSS. Este é um comando de atalho para `document.querySelectorAll()`.|`$$(".itemlist")`|
 |`cd()`<br /><br /> `cd(window)`|Permite que você altere o contexto de avaliação da expressão, da janela de nível superior padrão da página para a janela do quadro especificado. Chamar `cd()` sem parâmetros reverte o contexto para a janela de nível superior.|`cd();`<br /><br /> `cd(myframe);`|
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  Há suporte para os seguintes padrões de substituição:
 
-- %s - cadeia de caracteres %i - inteiro  
-  %d - inteiro  
-  %f - flutuação  
-  %o - objeto  
-  %b - binário  
-  %x - hexadecimal  
-  %e - expoente  
+- %s – cadeia de caracteres %i – inteiro %d – inteiro %f – float %o – objeto %b – binário %x – hexadecimal %e –exponente
 
   Estes são alguns exemplos de como usar padrões de substituição no `console.log`:
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
