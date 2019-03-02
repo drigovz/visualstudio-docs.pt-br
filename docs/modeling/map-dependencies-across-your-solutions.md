@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950221"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223696"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapear dependências com mapas de código
 
@@ -47,7 +47,7 @@ Você pode mapear as dependências para código nestes idiomas:
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Mapa de código de instalação e validação de dependência dinâmica
 
-Para criar um mapa de código no Visual Studio 2017, primeiro instale o **mapa de códigos** e **validação de dependência dinâmica** componentes:
+Para criar um mapa de código no Visual Studio, primeiro instale o **mapa de códigos** e **validação de dependência dinâmica** componentes:
 
 1. Abra **instalador do Visual Studio**. Você pode abri-lo no menu Iniciar do Windows ou no Visual Studio, selecionando **ferramentas** > **obter ferramentas e recursos**.
 

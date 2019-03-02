@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909132"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222591"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visão geral da análise de código estático para código gerenciado no Visual Studio
 
-Visual Studio 2017 pode executar a análise de código gerenciado de duas maneiras: com *FxCop* análise estática de assemblies gerenciados e com os mais modernos *analisadores de Roslyn*. Este tópico aborda a análise de código estático do FxCop. Para saber mais sobre a análise de código usando analisadores de código, consulte [analisadores de visão geral do Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio pode executar a análise de código gerenciado de duas maneiras: com *FxCop* análise estática de assemblies gerenciados e com os mais modernos *analisadores de Roslyn*. Este tópico aborda a análise de código estático do FxCop. Para saber mais sobre a análise de código usando analisadores de código, consulte [analisadores de visão geral do Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 A análise de código gerenciado analisa os assemblies gerenciados e relata informações sobre assemblies, como violações das regras de programação e de design estabelecidas nas Diretrizes de Design do Microsoft .NET Framework.
 
@@ -59,7 +59,7 @@ Public class MyClass
 Para obter mais informações, consulte [suprimir avisos](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Se você migrar um projeto para Visual Studio 2017, você pode encontrar, de repente, com um grande número de avisos da análise de código. Se você não estiver pronto para corrigir os avisos e quer se tornar produtivo imediatamente, você poderá *linha de base* o estado de análise do seu projeto. Dos **Analyze** menu, selecione **executar análise de código e suprimir problemas ativos**.
+> Se você migrar um projeto para Visual Studio 2017 ou Visual Studio de 2019, você pode encontrar, de repente, com um grande número de avisos da análise de código. Se você não estiver pronto para corrigir os avisos e quer se tornar produtivo imediatamente, você poderá *linha de base* o estado de análise do seu projeto. Dos **Analyze** menu, selecione **executar análise de código e suprimir problemas ativos**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Executar análise de código como parte da política de check-in
 
