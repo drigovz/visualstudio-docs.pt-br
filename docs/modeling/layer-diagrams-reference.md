@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957907"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223007"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependência: referência
 
@@ -34,7 +34,7 @@ No Visual Studio, você pode usar um *diagrama de dependência* para visualizar 
 Para ver quais edições do Visual Studio dão suporte a esse recurso, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Não há suporte para diagramas de dependência para projetos do .NET Core no Visual Studio 2017.
+> Não há suporte para diagramas de dependência para projetos do .NET Core no Visual Studio.
 
 Você pode especificar as dependências desejadas ou existentes entre camadas. Essas dependências, que são representadas como setas, indicam quais camadas podem usar ou atualmente usam a funcionalidade representada por outras camadas. Organizando seu sistema em camadas que descrevem funções distintas e funções, um diagrama de dependência pode ajudar a tornar mais fácil para você entender, reutilizar e manter seu código.
 

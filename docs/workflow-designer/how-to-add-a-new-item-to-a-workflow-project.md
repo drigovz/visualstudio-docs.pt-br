@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9016ee501c0fc4064e15358c3c8e2e4e0ac11cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938990"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222328"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Como: Adicionar um novo item a um projeto de fluxo de trabalho
 
@@ -38,7 +38,7 @@ A tabela a seguir lista os itens do Windows Workflow Foundation (WF) que você p
 1. No painel esquerdo, selecione a **fluxo de trabalho** categoria e, em seguida, selecione um modelo de item de fluxo de trabalho.
 
    > [!NOTE]
-   > Se você não vir as **fluxo de trabalho** categoria, primeiro instale o **Windows Workflow Foundation** componente do Visual Studio 2017. Para obter instruções detalhadas, consulte [instalar o Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Se você não vir as **fluxo de trabalho** categoria, primeiro instale o **Windows Workflow Foundation** componente do Visual Studio. Para obter instruções detalhadas, consulte [instalar o Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Insira um nome para o item na **nome** caixa na parte inferior da caixa de diálogo.
 
