@@ -1,7 +1,7 @@
 ---
 title: Visão geral do Visual Studio 2017
 titleSuffix: ''
-ms.date: 10/26/2018
+ms.date: 2/21/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f49d4e9c734d1a7f20a765a75c4dcb6b950b38f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316815"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705499"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bem-vindo ao IDE do Visual Studio
 
@@ -62,6 +62,8 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 - [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa **Início Rápido** é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, o **Início Rápido** fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
+
+   Encontre a caixa de pesquisa **Início Rápido** no canto superior direito do IDE. (Alternativamente, pressione **Ctrl**+**Q** para acessá-la.)
 
    ![Caixa de pesquisa Início Rápido no Visual Studio](media/quick-launch-nuget.png)
 

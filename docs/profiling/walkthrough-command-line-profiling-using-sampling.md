@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cfa4afeda38180825a9f17b47a4e959fdac092d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf9fd3006ab584dddfcb089ae31fb945fe69049a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960536"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624887"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: Criação de perfil de linha de comando usando amostragem
 
@@ -41,7 +41,7 @@ Neste passo a passo, você seguirá estas etapas:
 A amostragem é um método de criação de perfil pelo qual um processo específico é monitorado periodicamente para determinar a função ativa. Os dados resultantes fornecem uma contagem da frequência da função na parte superior da pilha de chamadas, quando o processo foi amostrado.
 
 > [!NOTE]
->  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.  
+>  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Para criar o perfil do aplicativo PeopleTrax usando o método de amostragem
 
@@ -99,8 +99,8 @@ A amostragem é um método de criação de perfil pelo qual um processo específ
 
 ## <a name="see-also"></a>Consulte também
 
-[Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)  
-[Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)  
-[Exibições de relatório de desempenho](../profiling/performance-report-views.md)
+[Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)
+[Criação de perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)
+[Exibições do relatório de desempenho](../profiling/performance-report-views.md)

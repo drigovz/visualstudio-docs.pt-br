@@ -6,15 +6,13 @@ manager: lank
 ms.date: 10/31/2018
 ms.topic: conceptual
 description: Saiba como os dados de assinante são anonimizados quando o acesso às assinaturas é perdido.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4570ff43f946c25c50d298e22de3b0c8a261f870
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811246"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842540"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimização de informações de assinante do Visual Studio
 
@@ -36,11 +34,11 @@ Eventos que inutilizam uma assinatura para um assinante dispararão a anonimiza�
 
 ## <a name="faq"></a>Perguntas Frequentes
 
-### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>P: A anonimização das informações pessoais do assinante fará com que ele perca o acesso à assinatura?
-R: Não.  A anonimização é em resposta a um evento que ocasiona a perda de acesso à assinatura, mas não ocasiona a falta de acesso.
+### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>P:  A anonimização das informações pessoais do assinante fará com que ele perca o acesso à assinatura?
+R:  Nº  A anonimização é em resposta a um evento que ocasiona a perda de acesso à assinatura, mas não ocasiona a falta de acesso.
 
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P: Sou um administrador das assinaturas da minha organização.  Se uma das informações do meu assinante for anonimizada, essa assinatura poderá ser atribuída novamente a outro usuário?
-R: Sim. Desde que a assinatura não tenha expirado, ela poderá ser reatribuída a outro assinante.
+### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P:  Sou administrador das assinaturas de minha organização.  Se uma das informações do meu assinante for anonimizada, essa assinatura poderá ser atribuída novamente a outro usuário?
+R:  Sim. Desde que a assinatura não tenha expirado, ela poderá ser reatribuída a outro assinante.
 
 ## <a name="next-steps"></a>Próximas etapas
 

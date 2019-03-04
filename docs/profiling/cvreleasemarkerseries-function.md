@@ -12,33 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ef7cc83c876f5ac9031010fd45e2230e6c4c03
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d100b7ff37ea5a3cd224fd420f14e4cb23061903
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006991"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630191"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Função CvReleaseMarkerSeries
-Libera a série de marcador. Não use um objeto de série de marcador após a liberação; caso contrário, o aplicativo poderá falhar. A falha ao liberar a série de marcador causa uma perda de memória.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C  
-HRESULT CvReleaseMarkerSeries(  
-   _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pMarkerSeries`  
- Endereço da variável de objeto do provedor. O endereço não pode ser NULL; a variável pode ter qualquer valor.  
-  
-## <a name="return-value"></a>Valor de retorno  
- S_OK quando a série de marcador é liberada com êxito ou código de erro no caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.  
-  
-## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Consulte também  
- [Referência de biblioteca C++](../profiling/cpp-library-reference.md)
+Libera a série de marcador. Não use um objeto de série de marcador após a liberação; caso contrário, o aplicativo poderá falhar. A falha ao liberar a série de marcador causa uma perda de memória.
+
+## <a name="syntax"></a>Sintaxe
+
+```C
+HRESULT CvReleaseMarkerSeries(
+   _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pMarkerSeries` Endereço da variável de objeto do provedor. O endereço não pode ser NULL; a variável pode ter qualquer valor.
+
+## <a name="return-value"></a>Valor de retorno
+ S_OK quando a série de marcador é liberada com êxito ou código de erro no caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.
+
+## <a name="requirements"></a>Requisitos
+ **Cabeçalho:** *cvmarkers.h*
+
+## <a name="see-also"></a>Consulte também
+- [Referência de biblioteca C++](../profiling/cpp-library-reference.md)

@@ -1,7 +1,7 @@
 ---
 title: Atualizar uma instalação baseada em rede
 description: Saiba como atualizar uma instalação do Visual Studio baseada em rede usando o comando --layout
-ms.date: 08/14/2017
+ms.date: 2/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937533"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796628"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Atualizar uma instalação baseada em rede do Visual Studio 2017
 
@@ -26,13 +26,13 @@ ms.locfileid: "55937533"
 
 ## <a name="how-to-update-a-network-layout"></a>Como atualizar um layout de rede
 
-Para atualizar o compartilhamento de instalação de rede para que ele inclua as atualizações mais recentes, execute comando --layout para baixar pacotes atualizados de forma incremental.
+Para atualizar o compartilhamento de instalação de rede para que ele inclua as últimas atualizações, execute o comando `--layout` para baixar pacotes atualizados de forma incremental.
 
-Se você selecionou um layout parcial quando criou o layout de rede, essas configurações são salvas.  Comandos de layout futuros usam as opções anteriores e quaisquer novas opções que você especificar.  (Isso é novidade no 15.3.)  Se você está usando um layout de uma versão mais antiga, use os mesmos parâmetros de linha de comando utilizados ao criar o layout de instalação de rede (ou seja, as mesmas cargas de trabalho e idiomas) para atualizar o seu conteúdo.
+**Novidades do 15.3**: Se você selecionou um layout parcial quando criou o layout de rede, essas configurações são salvas.  Comandos de layout futuros usam as opções anteriores e quaisquer novas opções que você especificar. Porém, se você está usando um layout de uma versão anterior, use os mesmos parâmetros de linha de comando utilizados ao criar o layout de instalação de rede pela primeira vez (em outras palavras, as mesmas cargas de trabalho e os mesmos idiomas) para atualizar o conteúdo.
 
 Se você hospedar um layout em um compartilhamento de arquivo, atualize uma cópia privada do layout (por exemplo, c:\vs2017offline) e, depois que todo o conteúdo atualizado for baixado, copie-a para o compartilhamento de arquivo (por exemplo, \\server\products\VS2017). Se você não fizer isso, haverá uma chance maior de que quaisquer usuários que executem a instalação enquanto o layout está sendo atualizado não consigam obter todo o conteúdo do layout, pois ele não estará completamente atualizado.
 
-Vamos examinar como criar e, em seguida, atualizar um layout:
+Vamos examinar alguns exemplos de como criar e, em seguida, atualizar um layout:
 
 * Primeiro, aqui está um exemplo de como criar um layout com uma carga de trabalho apenas para inglês:
 
@@ -58,7 +58,11 @@ Vamos examinar como criar e, em seguida, atualizar um layout:
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* E, finalmente, eis aqui como adicionar uma carga de trabalho e um idioma traduzido adicionais sem atualizar a versão. (Este comando adiciona a carga de trabalho do ASP.NET e Web.)  Agora, as cargas de trabalho da Área de Trabalho Gerenciada, do Azure e do ASP.NET e Web estão incluídas neste layout.  Os recursos de idioma para inglês, alemão e francês também estão incluídos para todas essas cargas de trabalho.  No entanto, o layout não foi atualizado para a versão mais recente disponível quando esse comando foi executado.  Ele permanece com a versão existente.
+    > [!IMPORTANT]
+    > Uma operação de atualização não instala componentes opcionais recém-adicionados, mesmo se você inclui esses componentes em uma seção de "adição" de um [arquivo de resposta](automated-installation-with-response-file.md). Isso ocorre porque a operação de adição não é usada durante uma atualização.<br>
+    > **Solução alternativa**: Execute uma operação de modificação separada após uma atualização para instalar os componentes ausentes.
+
+* E, finalmente, eis aqui como adicionar uma carga de trabalho e um idioma traduzido adicionais sem atualizar a versão. (Este comando adiciona a carga de trabalho do ASP.NET e Web.)  Agora, as cargas de trabalho da Área de Trabalho Gerenciada, do Azure e do ASP.NET e Web estão incluídas neste layout. Os recursos de idioma para inglês, alemão e francês também estão incluídos para todas essas cargas de trabalho.  No entanto, o layout não foi atualizado para a versão mais recente disponível quando esse comando foi executado. Ele permanece com a versão existente.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

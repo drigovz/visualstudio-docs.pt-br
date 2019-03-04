@@ -1,6 +1,6 @@
 ---
 title: Referência de esquema dos snippets de código
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203236c454b2047872bc9f71242e4992a1c1294f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929629"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841851"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 
@@ -117,6 +117,7 @@ Há três atributos disponíveis para o Elemento de código:
    |`CPP`|Identifica um snippet de código C++.|
    |`XML`|Identifica um snippet de código XML.|
    |`JavaScript`|Identifica um snippet de código JavaScript.|
+   |`TypeScript`|Identifica um snippet de código TypeScript.|
    |`SQL`|Identifica um snippet de código SQL.|
    |`HTML`|Identifica um snippet de código HTML.|
 

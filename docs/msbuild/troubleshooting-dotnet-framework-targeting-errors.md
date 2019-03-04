@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004481"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620285"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Solução de problemas de erros de definição de destino do .NET Framework
 Este tópico descreve os erros do MSBuild que podem ocorrer devido a referência problemas e como você pode resolver esses erros.
@@ -54,4 +54,7 @@ Este tópico descreve os erros do MSBuild que podem ocorrer devido a referência
 >  Depois de fechar e reabrir o projeto, você também deve recompilá-lo para garantir que todas as referências resolver corretamente.
 
 ## <a name="see-also"></a>Consulte também
- [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile) [Definindo uma versão específica do .NET Framework como destino](../ide/visual-studio-multi-targeting-overview.md) [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
+- [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [Perfil de cliente do .NET Framework](/dotnet/framework/deployment/client-profile)
+- [Direcionando a uma versão específica do .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)

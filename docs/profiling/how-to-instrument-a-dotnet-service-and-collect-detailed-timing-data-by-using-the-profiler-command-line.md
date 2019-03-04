@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c329755c1468d0ced5ab7f85335086a2388e21c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933277"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638979"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Como: Instrumentar um serviço do .NET e coletar dados de tempo detalhados usando a linha de comando do criador de perfil
 
@@ -20,7 +20,7 @@ Este artigo descreve como usar as ferramentas da linha de comando das Ferramenta
 
 > [!NOTE]
 > Você não pode analisar um serviço com o método de instrumentação se o serviço não puder ser reiniciado após o início do computador, um serviço que inicia somente quando o sistema operacional for iniciado.
-> 
+>
 > Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 >
 > A adição de dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Confira [Coletar dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md).
@@ -108,5 +108,5 @@ Você deve reiniciar o computador para que as novas configurações de ambiente 
 
 ## <a name="see-also"></a>Consulte também
 
-[Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)  
+[Analisar serviços](../profiling/command-line-profiling-of-services.md)
 [Exibições de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)

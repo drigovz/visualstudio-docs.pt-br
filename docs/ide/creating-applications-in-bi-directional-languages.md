@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,31 +12,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335227"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450315"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>Criar aplicativos em idiomas bidirecionais
+# <a name="create-applications-in-bidirectional-languages"></a>Criar aplicativos em idiomas bidirecionais
 
 É possível usar o Visual Studio para criar aplicativos que exibem o texto corretamente em idiomas escritos da direita para a esquerda, incluindo árabe e hebraico. Para alguns recursos, é possível apenas definir as propriedades. Em outros casos, é necessário implementar recursos no código.
 
 > [!NOTE]
-> Para inserir e exibir idiomas bidirecionais, é necessário estar trabalhando com uma versão do Windows que está configurada com o idioma apropriado. Essa pode ser uma versão em inglês do Windows com o pacote de idioma apropriado instalado, ou a versão localizada do Windows.
+> Para inserir e exibir idiomas bidirecionais, você precisa trabalhar com uma versão do Windows que está configurada com o idioma apropriado. Essa pode ser uma versão em inglês do Windows com o pacote de idioma apropriado instalado, ou a versão localizada do Windows.
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>Tipos de aplicativos que dão suporte a idiomas bidirecionais
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>Tipos de aplicativos que dão suporte a idiomas bidirecionais
 
 -  Aplicativos do Windows
 
-   É possível criar aplicativos totalmente bidirecionais que incluem suporte para texto bidirecional, sentido de leitura da direita para a esquerda e espelhamento (reversão do layout de janelas, menus, caixas de diálogo e assim por diante). Com exceção do espelhamento, esses recursos estão disponíveis por padrão ou como configurações de propriedades. Há suporte inerente para o espelhamento em alguns recursos, como caixas de mensagem. No entanto, em outros casos, é necessário implementar o espelhamento no código. Para saber mais, confira [Suporte bidirecional para aplicativos do Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   É possível criar aplicativos totalmente bidirecionais que incluem suporte para texto bidirecional, sentido de leitura da direita para a esquerda e espelhamento (reversão do layout de janelas, menus, caixas de diálogo e assim por diante). Com exceção do espelhamento, esses recursos estão disponíveis por padrão ou como configurações de propriedades. Há suporte inerente para o espelhamento em alguns recursos, como caixas de mensagem. No entanto, em outros casos, é necessário implementar o espelhamento no código. Para obter mais informações, confira [Suporte bidirecional para aplicativos do Windows Forms](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
 
 -  Aplicativos Web
 
-   Os serviços Web dão suporte ao recebimento e envio de textos UTF-8 e Unicode, tornando-os adequados para aplicativos que envolvem idiomas bidirecionais. Os aplicativos cliente Web dependem de navegadores para sua interface do usuário e, portanto, o grau de suporte bidirecional em um aplicativo Web depende do nível de suporte do navegador do usuário a esses recursos bidirecionais. No Visual Studio, é possível criar aplicativos com suporte para texto em árabe ou hebraico, sentido de leitura da direita para a esquerda, codificação de arquivos e configurações da cultura local. Para saber mais, confira [Suporte bidirecional para aplicativos Web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Os serviços Web dão suporte ao recebimento e ao envio de textos UTF-8 e Unicode, tornando-os adequados para aplicativos que envolvem idiomas bidirecionais. Os aplicativos cliente Web dependem de navegadores para sua interface do usuário e, portanto, o grau de suporte bidirecional em um aplicativo Web depende do nível de suporte do navegador do usuário a essas funcionalidades bidirecionais. No Visual Studio, é possível criar aplicativos com suporte para texto em árabe ou hebraico, sentido de leitura da direita para a esquerda, codificação de arquivos e configurações da cultura local. Para saber mais, confira [Suporte bidirecional para aplicativos Web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
-Aplicativos de console não incluem o suporte de texto para idiomas bidirecionais. Esta é uma consequência de como o Windows funciona com aplicativos de console.
+Os aplicativos de console não incluem o suporte de texto para idiomas bidirecionais. Esta é uma consequência de como o Windows funciona com aplicativos de console.
 
 ## <a name="fully-supported-features"></a>Recursos totalmente compatíveis
 
@@ -48,7 +48,7 @@ Em tempo de design no Visual Studio, é possível usar idiomas bidirecionais das
 
 - **Nomes de objetos**
 
-   É possível usar idiomas bidirecionais para atribuir nomes a soluções, projetos, arquivos, pastas e assim por diante. No código, é possível usar idiomas bidirecionais para os nomes de variáveis, classes, objetos, atributos, metadados e outros elementos.
+   Use idiomas bidirecionais para atribuir nomes a soluções, projetos, arquivos, pastas e assim por diante. No código, use idiomas bidirecionais para os nomes de variáveis, classes, objetos, atributos, metadados e outros elementos.
 
 - **Codificação de arquivos**
 
@@ -62,7 +62,7 @@ Por padrão, os controles de entrada de texto no Visual Studio usam o sentido de
 
 - Caixas de seleção, listas suspensas e outros controles em caixas de diálogo do Visual Studio sempre usam o sentido de leitura da esquerda para a direita.
 
-- O editor de código (e o editor de texto) não dão suporte ao sentido de leitura da direita para a esquerda. É possível inserir texto em um idioma bidirecional, mas o sentido de leitura sempre será da esquerda para a direita.
+- O editor de código (e o editor de texto) não dão suporte ao sentido de leitura da direita para a esquerda. Insira o texto em um idioma bidirecional, mas com o sentido de leitura sempre sendo da esquerda para a direita.
 
 ## <a name="arabic-or-hebrew-object-names"></a>Nomes de objeto em árabe ou hebraico
 

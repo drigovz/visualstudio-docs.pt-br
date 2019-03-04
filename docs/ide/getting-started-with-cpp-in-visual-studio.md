@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920477"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796641"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
@@ -30,11 +30,23 @@ Para acompanhar, você precisará de uma cópia do Visual Studio 2017 versão 15
 
 ## <a name="create-a-console-app"></a>Criar um aplicativo do console
 
-Se ele não ainda estiver em execução, inicie o Visual Studio.
+Se ele ainda não estiver em execução, abra o Visual Studio.
+
+::: moniker range="vs-2017"
 
 ![Configurações do IDE com Visual C&#43;&#43; aplicadas](../ide/media/get-started-cpp-ide-layout.png)
 
 Depois de abrir o Visual Studio, você poderá ver as três partes básicas do IDE: janelas de ferramenta, menus e barras de ferramentas e o espaço da janela principal. As janelas de ferramentas são encaixadas à esquerda e à direita da janela do aplicativo. A caixa **Início Rápido**, a barra de menus e a barra de ferramentas padrão estão na parte superior. O centro da janela contém a **Página Inicial**. Quando você abre uma solução ou um projeto, editores e designers aparecem neste espaço. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nesta área central.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Depois que você abrir o Visual Studio, a janela **Iniciar** será exibida primeiro. Selecione **Continuar sem código** para abrir o ambiente de desenvolvimento.
+
+Você verá as três partes básicas do IDE: janelas de ferramentas, menus e barras de ferramentas, além do espaço da janela principal. As janelas de ferramentas são encaixadas à esquerda e à direita da janela do aplicativo. A caixa **Início Rápido**, a barra de menus e a barra de ferramentas padrão estão na parte superior. Quando você carrega uma solução ou um projeto, os editores e designers são exibidos no espaço central da janela do aplicativo. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
+
+::: moniker-end
 
 O Visual Studio usa os *projetos* para organizar o código em um aplicativo e as *soluções* para organizar seus projetos. Um projeto contém todas as opções, configurações e regras usadas para criar seus aplicativos. Ele também gerencia a relação entre todos os arquivos de projeto e todos os arquivos externos. Para criar seu aplicativo, primeiro, crie um novo projeto e uma nova solução.
 

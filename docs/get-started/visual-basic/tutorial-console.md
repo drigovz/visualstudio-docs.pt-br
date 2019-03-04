@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155689"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840408"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introdução ao Visual Basic no Visual Studio
 
@@ -38,7 +38,7 @@ Primeiro, criaremos um projeto de aplicativo do Visual Basic. O tipo de projeto 
 
    ![Modelo de projeto do aplicativo do console (.NET Core) na caixa de diálogo Novo projeto no IDE do Visual Studio](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>Adicionar um grupo de trabalho (opcional)
+### <a name="add-a-workload-optional"></a>Adicionar uma carga de trabalho (opcional)
 
 Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, você poderá obtê-lo adicionando a carga de trabalho **Desenvolvimento .NET Core de multiplataforma**. Você pode adicionar essa carga de trabalho de uma das duas maneiras, dependendo de quais atualizações do Visual Studio 2017 estão instaladas no seu computador.
 

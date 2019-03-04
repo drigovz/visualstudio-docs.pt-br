@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956059"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796524"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Etapa 1: Criar um projeto de aplicativo do Windows Forms
 
@@ -37,20 +37,21 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
 
      O Visual Studio cria uma solução para seu programa. Uma solução atua como um recipiente para todos os projetos e arquivos necessários pelo seu programa. Esses termos serão explicados em mais detalhes posteriormente neste tutorial.
 
-4. A ilustração a seguir mostra o que você deve ver agora na interface do Visual Studio.
-
-    > [!NOTE]
-    > O layout da janela pode não ser exatamente como esta ilustração. O layout preciso da janela depende da versão do Visual Studio, da linguagem de programação usada e de outros fatores. Entretanto, você deve verificar que todas as três janelas aparecem.
-
-     ![Janela IDE](../ide/media/express_ideoverview_visio.png)<br/>*Janela **IDE***
-
-     A interface contém três janelas: uma janela principal, o **Gerenciador de Soluções** e a janela **Propriedades**.
+4. O ambiente de desenvolvimento contém três janelas: uma janela principal, o **Gerenciador de Soluções** e a janela **Propriedades**.
 
      Se qualquer uma das janelas estiver faltando, restaure o layout de janela padrão ao escolher, na barra de menus, **Janela** > **Redefinir Layout da Janela**. Você também pode exibir janelas usando os comandos de menu. Na barra de menus, escolha **Modo de Exibição** > **Janela Propriedades** ou **Gerenciador de Soluções**. Se qualquer outra janela está aberta, feche-a escolhendo o botão **Fechar** (x) no canto superior direito.
 
-5. A ilustração a seguir mostra as seguintes janelas (no sentido horário a partir do canto superior esquerdo):
+    ::: moniker range="vs-2017"
 
-    - **Janela principal** Nesta janela você fará a maior parte de seu trabalho, como trabalhar com formulários e editar códigos. Na ilustração, a janela mostra um formulário no **Editor de Formulários**. Na parte superior da janela, a guia **Página Inicial** e a guia **Form1.cs [Design]** aparecem. (No Visual Basic, o nome da guia termina com *.vb*, em vez de *.cs*).
+    - **Janela principal** Nesta janela você fará a maior parte de seu trabalho, como trabalhar com formulários e editar códigos. A janela mostra um formulário no **Editor de Formulários**. Na parte superior da janela, a guia **Página Inicial** e a guia **Form1.cs [Design]** aparecem. (No Visual Basic, o nome da guia termina com *.vb*, em vez de *.cs*).
+
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+
+    - **Janela principal** Nesta janela você fará a maior parte de seu trabalho, como trabalhar com formulários e editar códigos. A janela mostra um formulário no **Editor de Formulários**.
+
+    ::: moniker-end
 
     - **Janela do Gerenciador de Soluções** Nesta janela, você pode exibir e navegar em todos os itens na solução. Se você escolher um arquivo, o conteúdo da janela **Propriedades** será alterado. Se você abrir um arquivo de código (que termine com *.cs* no Visual C# e com *.vb* no Visual Basic), o arquivo de código ou um designer para o arquivo de código será exibido. Um designer é uma superfície visual na qual você pode adicionar controles, como botões e listas. Para formulários do Visual Studio, o designer é chamado no **Designer de Formulários do Windows**.
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba mais sobre a gama completa de benefícios disponíveis para você no portal de assinaturas do Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859014"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843788"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Usando o Portal do Assinante – my.<span></span>visualstudio<span></span>.com
 
@@ -22,10 +20,10 @@ O portal de assinaturas do Visual Studio, [https://my.visualstudio.com](https://
 
 O uso do portal requer que você entre com a identidade associada à a assinatura.  Pode ser a MSA (Conta da Microsoft) ou um endereço de email fornecido por uma organização, como sua empresa ou escola.  Saiba mais sobre como [entrar](signing-in.md).
 
-O portal está organizado em seis páginas.  Cada página fornece acesso a diferentes produtos ou serviços incluídos na assinatura.  As seis páginas são Benefícios, Downloads, Chaves do Produto, Assinaturas, Suporte e Marketplace. 
+O portal está organizado em seis páginas.  Cada página fornece acesso a diferentes produtos ou serviços incluídos na assinatura.  As seis páginas são Benefícios, Downloads, Chaves do Produto, Assinaturas, Suporte e Marketplace.
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-As ferramentas e os serviços incluídos na assinatura são exibidos como "blocos" na página Benefícios.  Nem todos os benefícios são incluídos em todas as assinaturas. Os blocos são agrupados em três categorias: Ferramentas, Desenvolvimento Profissional e Suporte.  Se estiver usando o Visual Studio Dev Essentials, você verá também uma categoria chamada Em Destaque, que pode conter benefícios selecionados das outras três categorias.
+As ferramentas e os serviços incluídos na assinatura são exibidos como "blocos" na página Benefícios.  Nem todos os benefícios são incluídos em todas as assinaturas. Os blocos são agrupados em três categorias:  Ferramentas, Desenvolvimento Profissional e Suporte.  Se estiver usando o Visual Studio Dev Essentials, você verá também uma categoria chamada Em Destaque, que pode conter benefícios selecionados das outras três categorias.
 
 ### <a name="tools"></a>Ferramentas
 Na categoria Ferramentas, você encontrará as principais ferramentas de desenvolvimento, como o IDE do Visual Studio, o Azure DevOps, bem como ferramentas fornecidas por nossos parceiros.  Você também verá serviços como o App Center do Visual Studio e do Azure.

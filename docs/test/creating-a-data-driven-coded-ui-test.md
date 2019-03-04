@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970914"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796654"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
 
@@ -50,7 +50,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 4. Adicione 1 mais 2, pause o gravador e gere o método de teste. Posteriormente, vamos substituir os valores dessa entrada do usuário por valores de um arquivo de dados.
 
-    ![Gerar o método de teste](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Gerar método de teste](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     Feche o construtor de teste. O método é adicionado ao teste:
 

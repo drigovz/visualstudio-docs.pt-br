@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba como os administradores de assinaturas podem acessar o portal de administração e gerenciar as assinaturas adquiridas por meio de VL (licenciamento por volume)
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379534"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843125"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Acessando o portal e gerenciando administradores – para assinaturas adquiridas por meio de VL (licenciamento por volume)
 
@@ -22,8 +20,8 @@ ms.locfileid: "39379534"
 
 A partir de 1º de março de 2017, os clientes que ainda estiverem trabalhando no processo de migração e integração do portal deverão passar a gerenciar suas assinaturas no Centro de Empresas da Microsoft.
 
-Para obter mais informações de como gerenciar assinaturas no Centro de Empresas da Microsoft, confira estes guias: [Understanding Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf) (Noções básicas sobre assinaturas do Visual Studio no Centro de Empresas da Microsoft)
-[Managing Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf) (Gerenciando assinaturas do Visual Studio no Centro de Empresas da Microsoft)
+Para obter mais informações sobre como gerenciar assinaturas no VLSC, confira estes guias: [Noções básicas sobre as Assinaturas do Visual Studio para o VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+[Gerenciando as Assinaturas do Visual Studio para o VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Portal de administração de assinaturas do Visual Studio** Se sua organização for migrada, mas você ainda não tiver siso configurado no novo portal, o Contato Principal ou para Notificações do contrato de licenciamento por volume da organização precisará realizar algumas etapas para integrar sua organização e configurá-lo como administrador.
 

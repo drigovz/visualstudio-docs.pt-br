@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970823"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700257"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 
-A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
+A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Acesse essa caixa de diálogo clicando em **Ferramentas** > **Opções** e, em seguida, selecionando **Ambiente** > **Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
 
 Alterações do esquema de cores não terão efeito durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.
 
@@ -63,7 +63,13 @@ Lista todos os elementos da interface do usuário para os quais é possível alt
 
 -   **Fonte do ambiente**
 
-     Altera o tamanho e o estilo da fonte de todos os elementos de interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações de**. Por exemplo, essa opção se aplica à **Página Inicial**, mas não afetaria a Janela de **Saída**.
+     Altera o tamanho e o estilo da fonte de todos os elementos de interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações de**.
+
+     ::: moniker range="vs-2017"
+
+     Por exemplo, essa opção se aplica à **Página Inicial**, mas não afeta a Janela de **Saída**.
+
+     ::: moniker-end
 
 -   **[Todas as janelas de ferramentas de texto]**
 

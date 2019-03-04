@@ -8,81 +8,76 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc5a353b87d8dbe945e73d828269c38b18274a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2ee29b677096e46d965e8191cf26a829587471dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961644"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622976"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
-As opções *VSPerfCmd.exe* **GlobalOff** e **GlobalOn** pausam e retomam a criação de perfil de todos os processos e threads em uma sessão de criação de perfil de linha de comando.  
-  
- Você pode especificar **GlobalOn** e **GlobalOff** como as únicas opções em uma linha de comando do *VSPerfCmd.exe* ou pode incluí-las nas linhas de comando que também contêm as opções **Start**, **Launch** ou **Attach**.  
-  
- **GlobalOn** e **GlobalOff** também podem ser combinados com as opções **ProcessOn**, **ProcessOff**, **ThreadOn** e **ThreadOff**.  
-  
- As opções **GlobalOn** e **GlobalOff** interagem com as opções **ProcessOn** e **ProcessOff** que controlam a coleta de dados para um processo especificado e com as opções **ThreadOn** e **ThreadOff** que controlam a coleta de dados para um thread especificado.  
-  
- As opções **GlobalOff** e **GlobalOn** também afetam a contagem Global de Iniciar/Parar que é manipulada pelas funções de API do criador de perfil.  
-  
-- **GlobalOff** imediatamente define a Contagem global de iniciar/parar para 0 e, portanto, fará uma pausa de criação de perfil.  
-  
-- **GlobalOn** imediatamente define a Contagem global de iniciar/parar para 1 e, portanto, retomará a criação de perfil.  
-  
-  Confira [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md) para obter mais informações.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cmd  
-VSPerfCmd.exe /{GlobalOff|GlobalOn}  
-  
-VSPerfCmd.exe /Start:Method /{GlobalOff|GlobalOn} [Options]  
-  
-VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- Nenhum  
-  
-## <a name="valid-options"></a>Opções válidas  
- **GlobalOn** e **GlobalOff** podem ser especificados em linhas de comando que também contêm as seguintes opções.  
-  
- **Iniciar:** `Method`  
- Inicializa a sessão de criador de perfil de linha de comando e define o método de criação de perfil especificado.  
-  
- **Inicialize:** `AppName`  
- Inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.  
-  
- **Anexar:** `PID`  
- Inicia a criação de perfil do processo especificado.  
-  
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
- Interrompe ou inicia a criação de perfil para o processo especificado.  
-  
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
- Interrompe ou inicia a criação de perfil para o processo especificado (somente no método de instrumentação).  
-  
-## <a name="example"></a>Exemplo  
- Neste exemplo, as opções **GlobalOff** e **GlobalOn** são usadas para evitar a coleta de dados de criação de perfil para inicialização e desligamento do aplicativo.  
-  
-```cmd  
-; Initialize the profiler with profiling stopped.  
-VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp /GlobalOff  
-; Start an instrumented application and wait for it to warm up.  
-; Start profiling.  
-VSPerfCmd.exe /GlobalOn  
-; Exercise the application functionality that you want to profile.  
-; Stop profiling.  
-VSPerfCmd.exe /GlobalOff  
-; Shut down the target application.  
-; Close the profiler.  
-VSPerfCmd /Shutdown  
-  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criar perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)
+As opções *VSPerfCmd.exe* **GlobalOff** e **GlobalOn** pausam e retomam a criação de perfil de todos os processos e threads em uma sessão de criação de perfil de linha de comando.
+
+ Você pode especificar **GlobalOn** e **GlobalOff** como as únicas opções em uma linha de comando do *VSPerfCmd.exe* ou pode incluí-las nas linhas de comando que também contêm as opções **Start**, **Launch** ou **Attach**.
+
+ **GlobalOn** e **GlobalOff** também podem ser combinados com as opções **ProcessOn**, **ProcessOff**, **ThreadOn** e **ThreadOff**.
+
+ As opções **GlobalOn** e **GlobalOff** interagem com as opções **ProcessOn** e **ProcessOff** que controlam a coleta de dados para um processo especificado e com as opções **ThreadOn** e **ThreadOff** que controlam a coleta de dados para um thread especificado.
+
+ As opções **GlobalOff** e **GlobalOn** também afetam a contagem Global de Iniciar/Parar que é manipulada pelas funções de API do criador de perfil.
+
+- **GlobalOff** imediatamente define a Contagem global de iniciar/parar para 0 e, portanto, fará uma pausa de criação de perfil.
+
+- **GlobalOn** imediatamente define a Contagem global de iniciar/parar para 1 e, portanto, retomará a criação de perfil.
+
+  Confira [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md) para obter mais informações.
+
+## <a name="syntax"></a>Sintaxe
+
+```cmd
+VSPerfCmd.exe /{GlobalOff|GlobalOn}
+
+VSPerfCmd.exe /Start:Method /{GlobalOff|GlobalOn} [Options]
+
+VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
+```
+
+#### <a name="parameters"></a>Parâmetros
+ Nenhum
+
+## <a name="valid-options"></a>Opções válidas
+ **GlobalOn** e **GlobalOff** podem ser especificados em linhas de comando que também contêm as seguintes opções.
+
+ **Iniciar:** `Method` Inicializa a sessão do criador de perfil de linha de comando e define o método de criação de perfil especificado.
+
+ **Iniciar:** `AppName` Inicia o aplicativo especificado e inicia a criação de perfil com o método de amostragem.
+
+ **Anexar:** `PID` Inicia a criação de perfil do processo especificado.
+
+ {**ProcessOff**&#124;**ProcessOn**}**:**`PID` Interrompe ou inicia a criação de perfil para o processo especificado.
+
+ {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Interrompe ou inicia a criação de perfil para o processo especificado (somente no método de instrumentação).
+
+## <a name="example"></a>Exemplo
+ Neste exemplo, as opções **GlobalOff** e **GlobalOn** são usadas para evitar a coleta de dados de criação de perfil para inicialização e desligamento do aplicativo.
+
+```cmd
+; Initialize the profiler with profiling stopped.
+VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp /GlobalOff
+; Start an instrumented application and wait for it to warm up.
+; Start profiling.
+VSPerfCmd.exe /GlobalOn
+; Exercise the application functionality that you want to profile.
+; Stop profiling.
+VSPerfCmd.exe /GlobalOff
+; Shut down the target application.
+; Close the profiler.
+VSPerfCmd /Shutdown
+
+```
+
+## <a name="see-also"></a>Consulte também
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

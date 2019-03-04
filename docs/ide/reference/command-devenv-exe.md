@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8f72f0d9b0c2d847ddb2c5e7e6c3c8d4ae4467
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932489"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717514"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -31,13 +31,19 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>Arguments
 
-- *CommandName*
+*CommandName*
 
-  Necessário. O nome completo de um comando do Visual Studio ou seu alias, entre aspas duplas. Para obter mais informações sobre comandos e a sintaxe de aliases, consulte [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md).
+Necessário. O nome completo de um comando do Visual Studio ou seu alias, entre aspas duplas. Para obter mais informações sobre comandos e a sintaxe de aliases, consulte [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Comentários
 
-Após a conclusão da inicialização, o IDE executa o comando nomeado. Se você usar esta opção, o IDE não mostrará a Página Inicial do Visual Studio na inicialização.
+Após a conclusão da inicialização, o IDE executa o comando nomeado.
+
+::: moniker range="vs-2017"
+
+Se você usar essa opção, o IDE não exibirá a Página Inicial na inicialização.
+
+::: moniker-end
 
 Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, confira [Como: Controlar suplementos usando o Gerenciador de Suplementos](/previous-versions/xwdatdwh(v=vs.140)).
 

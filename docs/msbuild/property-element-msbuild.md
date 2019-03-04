@@ -16,63 +16,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde2f9418a06b85f19027de37c242f06ad6a0868
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2c011e700eb93293ae5fa0b08db5f486ea85ad5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920799"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604191"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
-Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade usada em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve ser especificada como filho de um elemento `PropertyGroup`.  
+Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade usada em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve ser especificada como filho de um elemento `PropertyGroup`.
 
- \<Project>  
- \<PropertyGroup>  
+ \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Sintaxe
 
-```xml  
-<Property Condition="'String A' == 'String B'">  
-    Property Value  
-</Property>  
-```  
+```xml
+<Property Condition="'String A' == 'String B'">
+    Property Value
+</Property>
+```
 
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
-### <a name="attributes"></a>Atributos  
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`Condition`|Atributo opcional.<br /><br /> Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
+|Atributo|Descrição|
+|---------------|-----------------|
+|`Condition`|Atributo opcional.<br /><br /> Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+### <a name="child-elements"></a>Elementos filho
+ nenhuma.
 
-### <a name="parent-elements"></a>Elementos pai  
+### <a name="parent-elements"></a>Elementos pai
 
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento de agrupamento para propriedades.|  
+|Elemento|Descrição|
+|-------------|-----------------|
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento de agrupamento para propriedades.|
 
-## <a name="text-value"></a>Valor de texto  
- Um valor de texto é opcional.  
+## <a name="text-value"></a>Valor de texto
+ Um valor de texto é opcional.
 
- Esse texto especifica o valor da propriedade e pode conter XML.  
+ Esse texto especifica o valor da propriedade e pode conter XML.
 
-## <a name="remarks"></a>Comentários  
- Nomes de propriedade estão limitados a apenas a caracteres ASCII. Valores de propriedades são referenciados no projeto, colocando o nome da propriedade entre "`$(`" e "`)`". Por exemplo, `$(builddir)\classes` resolveria para *build\classes*, se a propriedade `builddir` tivesse o valor `build`. Para saber mais sobre as propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).  
+## <a name="remarks"></a>Comentários
+ Nomes de propriedade estão limitados a apenas a caracteres ASCII. Valores de propriedades são referenciados no projeto, colocando o nome da propriedade entre "`$(`" e "`)`". Por exemplo, `$(builddir)\classes` resolveria para *build\classes*, se a propriedade `builddir` tivesse o valor `build`. Para saber mais sobre as propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
-## <a name="example"></a>Exemplo  
- O código a seguir define a propriedade `Optimization` para `false` e a propriedade `DefaultVersion` para `1.0` se a propriedade `Version` estiver vazia.  
+## <a name="example"></a>Exemplo
+ O código a seguir define a propriedade `Optimization` para `false` e a propriedade `DefaultVersion` para `1.0` se a propriedade `Version` estiver vazia.
 
-```xml  
-<PropertyGroup>  
-    <Optimization>false</Optimization>  
-    <DefaultVersion Condition="'$(Version)' == ''" >1.0</DefaultVersion>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup>
+    <Optimization>false</Optimization>
+    <DefaultVersion Condition="'$(Version)' == ''" >1.0</DefaultVersion>
+</PropertyGroup>
+```
 
 ## <a name="see-also"></a>Consulte também
-[Propriedades do MSBuild](../msbuild/msbuild-properties.md)  
- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
+- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

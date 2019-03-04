@@ -18,60 +18,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c600d7756c83fb55a63a91e81b3d826aa9f3d747
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 318ca02899632fb4499010cc348f73379a2a562d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996747"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617126"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
-Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contenham informações não [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tudo dentro de um elemento `ProjectExtensions` será ignorado por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contenham informações não [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tudo dentro de um elemento `ProjectExtensions` será ignorado por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
- \<Project>  
- \<ProjectExtensions>  
+ \<Project> \<ProjectExtensions>
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Sintaxe
 
-```xml  
-<ProjectExtensions>  
-    Non-MSBuild information to include in file.  
-</ProjectExtensions>  
-```  
+```xml
+<ProjectExtensions>
+    Non-MSBuild information to include in file.
+</ProjectExtensions>
+```
 
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
-### <a name="attributes"></a>Atributos  
- Nenhum  
+### <a name="attributes"></a>Atributos
+ Nenhum
 
-### <a name="child-elements"></a>Elementos filho  
- Nenhum  
+### <a name="child-elements"></a>Elementos filho
+ Nenhum
 
-### <a name="parent-elements"></a>Elementos pai  
+### <a name="parent-elements"></a>Elementos pai
 
 | Elemento | Descrição |
 | - | - |
 | [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
-## <a name="remarks"></a>Comentários  
- Apenas um elemento `ProjectExtensions` pode ser usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+## <a name="remarks"></a>Comentários
+ Apenas um elemento `ProjectExtensions` pode ser usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-## <a name="example"></a>Exemplo  
- O exemplo de código a seguir mostra informações do ambiente de desenvolvimento integrado que estão sendo armazenado em um elemento `ProjectExtensions`.  
+## <a name="example"></a>Exemplo
+ O exemplo de código a seguir mostra informações do ambiente de desenvolvimento integrado que estão sendo armazenado em um elemento `ProjectExtensions`.
 
-```xml  
-<ProjectExtensions>  
-    <VSIDE>  
-        <External>  
-            <!--  
-            Raw XML passed to the IDE by an external source  
-            -->  
-        </External>  
-    </VSIDE>  
-</ProjectExtensions>  
-```  
+```xml
+<ProjectExtensions>
+    <VSIDE>
+        <External>
+            <!--
+            Raw XML passed to the IDE by an external source
+            -->
+        </External>
+    </VSIDE>
+</ProjectExtensions>
+```
 
-## <a name="see-also"></a>Consulte também  
- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Consulte também
+- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

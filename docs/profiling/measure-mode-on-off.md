@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82385221988a0a2eb9ed562742abc16c8552f9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967265"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639941"
 ---
 # <a name="measure-mode-onoff"></a>Ativar/desativar modo de medida
-Com essa ferramenta, é possível medir com precisão um período de tempo na linha do tempo. Para habilitar o modo de medida, clique no botão de medida (que tem um ícone de régua) e, em seguida, arraste a linha do tempo. Ao arrastar, observe que a área abaixo do ponteiro será realçada em amarelo e o tempo medido aparecerá na barra de ferramentas à direita do botão. Esse valor é calculado dinamicamente conforme você arrasta a fim de que seja possível ver imediatamente o quanto um determinado evento está demorando. Quando você soltar o botão do mouse, o valor temporal permanecerá visível.  
-  
- É possível repetir o processo de medição, mas apenas a medida mais recente será mostrada. Clique no botão de medida novamente para desativar o modo de medida.  
-  
-## <a name="see-also"></a>Consulte também  
- [Gerenciar canais](../profiling/manage-channels.md)   
- [Controle de zoom (exibição de threads)](../profiling/zoom-control-threads-view.md)   
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+Com essa ferramenta, é possível medir com precisão um período de tempo na linha do tempo. Para habilitar o modo de medida, clique no botão de medida (que tem um ícone de régua) e, em seguida, arraste a linha do tempo. Ao arrastar, observe que a área abaixo do ponteiro será realçada em amarelo e o tempo medido aparecerá na barra de ferramentas à direita do botão. Esse valor é calculado dinamicamente conforme você arrasta a fim de que seja possível ver imediatamente o quanto um determinado evento está demorando. Quando você soltar o botão do mouse, o valor temporal permanecerá visível.
+
+ É possível repetir o processo de medição, mas apenas a medida mais recente será mostrada. Clique no botão de medida novamente para desativar o modo de medida.
+
+## <a name="see-also"></a>Consulte também
+- [Gerenciar canais](../profiling/manage-channels.md)
+- [Controle de zoom (exibição de threads)](../profiling/zoom-control-threads-view.md)
+- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

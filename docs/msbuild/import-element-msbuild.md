@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924429"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629905"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 
-\<Project>  
-\<Import>  
+\<Project> \<Import>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +48,7 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 |`Condition`|Atributo opcional.<br /><br /> Uma condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhuma
+ Nenhum
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -108,5 +107,5 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 ```
 
 ## <a name="see-also"></a>Consulte também
-[Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)  
-[Como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

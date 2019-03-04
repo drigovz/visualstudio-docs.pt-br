@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/25/2019
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 197e162df314e039bbf748a7afc208c0639531d1
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089234"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841634"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -29,29 +27,29 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 1. Para ativar sua assinatura, conecte-se ao [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no link **Obter código** no bloco do benefício Pluralsight, localizado na seção Desenvolvimento Profissional.
    > [!div class="mx-imgBorder"]
    > ![Bloco do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
-   > 
+   >
    > [!IMPORTANT]
    > Quando você clica no link "Obter código" no bloco de benefício do Pluralsight, poderá receber a seguinte mensagem:
-   > 
+   >
    > **"Observe o seguinte:   Se você ativou anteriormente outra oferta do Pluralsight por meio de sua Assinatura do Visual Studio, talvez esse código não permita que você crie uma conta do Pluralsight."**
 
 2. Você receberá uma notificação de que o código do cupom foi recuperado com êxito.  Clique em **Ativar**.
    > [!div class="mx-imgBorder"]
    > ![Ativar o benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.  
+3. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.
    - Forneça as informações de contato solicitadas no formulário
    - Clique na caixa de seleção para aceitar os termos de uso e a política de privacidade
    - Clique em **Concordo. Ativar o benefício**.
      > [!div class="mx-imgBorder"]
-     > ![Ativação do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
+     > ![Ativação do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
      > [!div class="mx-imgBorder"]
      > ![Termos do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
 5. Pode levar um momento para configurar sua conta.  Quando terminar, você verá uma confirmação na página e receberá um email com suas informações de logon.  O email será enviado para o alias especificado quando você criou a conta.  Verifique suas pastas de lixo eletrônico ou de spam se você tiver dificuldade para encontrar a mensagem.
    > [!div class="mx-imgBorder"]
    > ![Confirmação do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   > 
+   >
    > [!NOTE]
    > Se sua conta não for elegível para resgatar novas ofertas, o email recebido explicará que houve um problema ao criar sua conta, pois ela não é elegível.  Ele também conterá informações para ajudá-lo a contatar a equipe de suporte do Pluralsight, que poderá responder dúvidas que você possa ter sobre a sua conta.
 
@@ -73,9 +71,9 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   Seis meses    | Sim<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 meses    | Sim<sup>2</sup> |
-|              Visual Studio Test Professional (Padrão)              |    VL, Retail     |   3 meses    | Não  |
-|                      Plataformas MSDN (Padrão)                       |    VL, Retail     |   3 meses    | Não  |
-|                     Visual Studio Dev Essentials                     |        NA         |   1 mês    |       Não        |
+|              Visual Studio Test Professional (Padrão)              |    VL, Retail     |   3 meses    | Não |
+|                      Plataformas MSDN (Padrão)                       |    VL, Retail     |   3 meses    | Não |
+|                     Visual Studio Dev Essentials                     |        NA         |   1 mês    |       Não       |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) |       Azure       | Não disponível |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Programa      | Não disponível |       NA       |
 
@@ -113,4 +111,4 @@ R:  Ao final de sua assinatura gratuita do Pluralsight, você pode optar por com
 -  Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Próximas etapas
-Depois de criar sua conta, você estará pronto para começar o treinamento.  Acesse [https://www.pluralsight.com](http://www.pluralsight.com) e toque em **fazer logon** no canto superior direito da página para iniciar um novo curso ou retorne para um curso que já está em andamento. 
+Depois de criar sua conta, você estará pronto para começar o treinamento.  Acesse [https://www.pluralsight.com](http://www.pluralsight.com) e toque em **fazer logon** no canto superior direito da página para iniciar um novo curso ou retorne para um curso que já está em andamento.
