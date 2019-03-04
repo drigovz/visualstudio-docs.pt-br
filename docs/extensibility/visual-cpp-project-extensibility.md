@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692054"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223553"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidade e conjunto de ferramentas de integração do Project
 
@@ -604,7 +604,7 @@ Para desabilitar atualizações de projeto, use um `NoUpgrade` valor:
 
 ## <a name="project-cache-and-extensibility"></a>Cache do projeto e extensibilidade
 
-Para melhorar o desempenho ao trabalhar com soluções grandes do C++ no Visual Studio 2017, o [cache de projeto](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/) foi introduzido. Ele é implementado como um banco de dados SQLite preenchido com dados do projeto e, em seguida, usado para carregar projetos sem carregar os projetos do MSBuild ou o CPS em memória.
+Para melhorar o desempenho ao trabalhar com soluções grandes do C++ no Visual Studio 2017, o [cache de projeto](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) foi introduzido. Ele é implementado como um banco de dados SQLite preenchido com dados do projeto e, em seguida, usado para carregar projetos sem carregar os projetos do MSBuild ou o CPS em memória.
 
 Como não há nenhum presente para projetos. vcxproj carregados do cache de objetos de CPS, componentes do MEF da extensão que importe `UnconfiguredProject` ou `ConfiguredProject` não pode ser criado. Para dar suporte à extensibilidade, o cache do projeto não é usado quando o Visual Studio detecta se um projeto usa (ou provavelmente usará) extensões MEF.
 
