@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948804"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716500"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Etapa 4: Executar o código no depurador
 
@@ -47,12 +47,9 @@ Além de gerenciar projetos, fornecer uma experiência de edição avançada e a
 1. Verifique se o código funciona corretamente pressionando **F5** ou selecionando o comando de menu **Depurar** > **Iniciar Depuração**. Esse comando executa o código no depurador, mas como você não fez nada para pausar o programa enquanto ele está em execução, ele apenas imprime um padrão de onda para algumas iterações. Pressione qualquer tecla para fechar a janela de saída.
 
     > [!Tip]
-    > Para fechar a janela de saída automaticamente quando o programa for concluído, substitua a chamada `main()` pelo seguinte código:
+    > Para fechar a Janela de Saída automaticamente quando o programa for concluído, selecione o comando de menu **Ferramentas** > **Opções**, expanda o nó do **Python**, selecione **Depuração** e, em seguida, desmarque a opção **Aguardar pela entrada quando o processo for encerrado normalmente**:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Opção de depuração do Python para fechar a Janela de Saída na saída normal do programa](media/vs-getting-started-python-22-debugging5.png)
 
 1. Defina um ponto de interrupção na instrução `for` clicando uma vez na margem cinza próxima a essa linha ou colocando o cursor na linha e usando o comando **Depurar** > **Ativar/Desativar Ponto de Interrupção** (**F9**). Um ponto vermelho é exibido na margem cinza para indicar o ponto de interrupção (conforme indicado pela seta abaixo):
 

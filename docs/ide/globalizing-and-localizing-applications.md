@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f90590c0273b886fe3f9a8e1c406ddf9aa7f11c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335253"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450471"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Desenvolver aplicativos localizados e globalizados
 
@@ -28,7 +28,7 @@ O Visual Studio facilita o desenvolvimento para um público internacional, aprov
 
 Por exemplo, o sistema do projeto dos aplicativos Windows Forms pode gerar arquivos de recurso para a cultura de interface do usuário de fallback e para cada cultura de interface do usuário adicional. Ao compilar um projeto no Visual Studio, os arquivos de recursos são compilados do formato XML do Visual Studio (.resx) para um formato binário intermediário (.resources), que são então inseridos em assemblies satélites. Para obter mais informações, consulte [Arquivos de recurso no Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) e [Criar assemblies satélite para aplicativos da área de trabalho](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
-Para obter informações sobre a criação de aplicativos para idiomas bidirecionais no Visual Studio, consulte [Criar aplicativos para árabe e hebraico](creating-applications-in-bi-directional-languages.md).
+Para obter informações sobre como criar aplicativos para idiomas bidirecionais no Visual Studio, confira [Criar aplicativos para árabe e hebraico](creating-applications-in-bi-directional-languages.md).
 
 ## <a name="see-also"></a>Consulte também
 

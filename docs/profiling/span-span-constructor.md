@@ -12,62 +12,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d188f67a646d327c683125b7e59f208bdc7de61
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3b04f9edc946b83f8785c6a6fb3e9720db4840f0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023204"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596192"
 ---
 # <a name="spanspan-constructor"></a>Construtor span::span
-Inicializa uma nova instância da classe `span`.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-span(  
-   const marker_series& _Series,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   marker_importance _Importance,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   marker_importance _Importance,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `_Series`  
- Contexto de série de marcador válido.  
-  
- `_Format`  
- Uma cadeia de caracteres de formato de composição, que contém texto intercalado com zero ou mais itens de formato correspondentes a objetos na lista de argumentos.  
-  
- `_Importance`  
- Nível de importância.  
-  
- `_Category`  
- Categoria.  
-  
-## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** *cvmarkersobj.h*  
-  
+Inicializa uma nova instância da classe `span`.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+span(
+   const marker_series& _Series,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   marker_importance _Importance,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   marker_importance _Importance,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `_Series` Contexto de série de marcador válido.
+
+ `_Format` Uma cadeia de caracteres de formato composto, que contém um texto intercalado com zero ou mais itens de formato correspondentes aos objetos na lista de argumentos.
+
+ `_Importance` Nível de prioridade.
+
+ `_Category` Categoria.
+
+## <a name="requirements"></a>Requisitos
+ **Cabeçalho:** *cvmarkersobj.h*
+
  **Namespace:** Concurrency::diagnostic
- 
+
  ## <a name="see-also"></a>Consulte também
- [Classe span](../profiling/span-class.md)
+- [Classe span](../profiling/span-class.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952821"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703247"
 ---
 # <a name="environment-options-dialog-box"></a>Caixa de diálogo Opções do Ambiente
 
@@ -35,7 +35,7 @@ Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opçõe
 |Para definir opções de mapeamento de teclado.|[Caixa de diálogo Teclado, Ambiente, Opções](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Para especificar se as notificações estão habilitadas.|[Caixa de diálogo Notificações, Ambiente, Opções](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Para especificar opções para a janela Início Rápido.|[Caixa de diálogo Início Rápido, Ambiente, Opções](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Para especificar opções de página inicial.|[Caixa de diálogo Inicialização, Ambiente, Opções](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Para especificar opções de inicialização.|[Caixa de diálogo Inicialização, Ambiente, Opções](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Para especificar se deseja usar perfil móvel para as configurações entre computadores.|[Caixa de diálogo Configurações Sincronizadas, Ambiente, Opções](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Definir opções para tarefas e listas de tarefas|[Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Alterar sua home page e páginas de pesquisa padrão, alterando o editor de código-fonte do sistema e configurando as opções do Internet Explorer.|[Caixa de diálogo Navegador da Web, Ambiente, Opções](../../ide/reference/web-browser-environment-options-dialog-box.md)|

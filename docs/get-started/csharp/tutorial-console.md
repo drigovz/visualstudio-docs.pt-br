@@ -2,7 +2,7 @@
 title: 'Tutorial: criar um aplicativo de console simples em C#'
 description: Saiba como criar aplicativos de console em C# do Visual Basic no Visual Studio, passo a passo.
 ms.custom: seodec18, get-started
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156066"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841165"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Criar um aplicativo de console simples em C# no Visual Studio
 
@@ -39,7 +39,7 @@ Para começar, criaremos um projeto de aplicativo em C#. O tipo de projeto inclu
 
    ![Modelo de projeto do aplicativo do console (.NET Core) na caixa de diálogo Novo projeto no IDE do Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>Adicionar um grupo de trabalho (opcional)
+### <a name="add-a-workload-optional"></a>Adicionar uma carga de trabalho (opcional)
 
 Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, você poderá obtê-lo adicionando a carga de trabalho **Desenvolvimento .NET Core de multiplataforma**. Veja como.
 
@@ -80,6 +80,7 @@ Vamos começar com alguns cálculos matemáticos de inteiro em C#.
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. Escolha **Calculadora** para executar seu programa ou pressione **F5**.
 
    ![Escolha o botão Calculadora para executar o aplicativo na barra de ferramentas](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ Vamos continuar com a adição de um conjunto mais complexo de código de calcul
         }
     }
     ```
+
 1. Escolha **Calculadora** para executar seu programa ou pressione **F5**.
 
    ![Escolha o botão Calculadora para executar o aplicativo na barra de ferramentas](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ Vamos começar.
         }
     }
     ```
+
 1. Escolha **Calculadora** para executar seu programa ou pressione **F5**.
 
 1. Siga os prompts e divida o número **42** pelo número **119**. O aplicativo deverá ser semelhante ao seguinte:

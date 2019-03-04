@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954641"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796615"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -84,7 +84,7 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 | Cenário ou serviço | Ponto de extremidade DNS | Protocolo | Porta | Descrição |
 | - | - | - | - | - |
 | URL<br>resolução | go.microsoft.com<br><br>aka.ms | | | Usada para reduzir as URLs, que, em seguida, resolvem em URLs mais longas |
-| Start Page | vsstartpage.blob.core.windows.net | | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial no Visual Studio |
+| Start Page | vsstartpage.blob.core.windows.net | | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial (somente Visual Studio 2017) |
 | Destino<br> Notificação <br>Serviço | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores |
 | Extensão <br>verificação de atualização | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Usada para fornecer notificações quando uma extensão instalada tem uma atualização disponível <br><br> Usada como um local de conexão |
 | Projeto do AI <br>Integração | az861674.vo.msecnd.net | | 443<br> | Usada para configurar novos projetos para enviar dados de uso para sua conta do Application Insights registrada |

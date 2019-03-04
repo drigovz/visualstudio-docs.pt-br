@@ -18,58 +18,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e969c3fca525835c39811db5ca09261586bde2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e48d28f5270cd43da22d070f30706ce75a1655c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955512"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633220"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
-Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executar em sequência.  
+Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executar em sequência.
 
- \<Project>  
- \<Target>  
+ \<Project> \<Target>
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Sintaxe
 
-```xml  
-<Target Name="Target Name"  
-        Inputs="Inputs"  
-        Outputs="Outputs"  
-        Returns="Returns"  
-        KeepDuplicateOutputs="true/false"  
-        BeforeTargets="Targets"  
-        AfterTargets="Targets"  
-        DependsOnTargets="DependentTarget"  
-        Condition="'String A' == 'String B'">  
-        Label="Label">  
-    <Task>... </Task>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <OnError... />  
-</Target>  
-```  
+```xml
+<Target Name="Target Name"
+        Inputs="Inputs"
+        Outputs="Outputs"
+        Returns="Returns"
+        KeepDuplicateOutputs="true/false"
+        BeforeTargets="Targets"
+        AfterTargets="Targets"
+        DependsOnTargets="DependentTarget"
+        Condition="'String A' == 'String B'">
+        Label="Label">
+    <Task>... </Task>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <OnError... />
+</Target>
+```
 
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
-### <a name="attributes"></a>Atributos  
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`Name`|Atributo obrigatório.<br /><br /> O nome do destino.|  
-|`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Se a condição for avaliada como `false`, o destino não executará o corpo dos destinos definidos no atributo `DependsOnTargets`. Para obter mais informações sobre condições, consulte [Condições](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Atributo opcional.<br /><br /> Os arquivos que formam entradas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Outputs` para determinar se o `Target` está atualizado. Para obter mais informações, veja [Builds incrementais](../msbuild/incremental-builds.md), [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md), e [Transformações](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Atributo opcional.<br /><br /> Os arquivos que formam saídas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Inputs` para determinar se o `Target` está atualizado. Para obter mais informações, veja [Builds incrementais](../msbuild/incremental-builds.md), [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md), e [Transformações](../msbuild/msbuild-transforms.md).|  
-|`Returns`|Atributo opcional.<br /><br /> O conjunto de itens que será disponibilizado para tarefas que invocam esse destino, por exemplo, tarefas do MSBuild. Vários destinos são separados por ponto e vírgula. Se os destinos no arquivo não tiverem nenhum atributo `Returns`, os atributos de Saídas serão usados para essa finalidade.|  
-|`KeepDuplicateOutputs`|Atributo booliano opcional.<br /><br /> Se for `true`, várias referências ao mesmo item nos Retornos do destino serão registradas.  Por padrão, esse atributo é `false`.|  
-|`BeforeTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino.  Quando especificado, indica que esse destino deve ser executado antes dos destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).|  
-|`AfterTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino. Quando especificado, indica que esse destino deve ser executado após os destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).|  
-|`DependsOnTargets`|Atributo opcional.<br /><br /> Os destinos que devem ser executados antes que esse destino possa ser executado ou antes que a análise de dependência de nível superior possa ocorrer. Vários destinos são separados por ponto e vírgula.|  
-|`Label`|Atributo opcional.<br /><br /> Um identificador que pode identificar ou ordenar os elementos do sistema e do usuário.|  
+|Atributo|Descrição|
+|---------------|-----------------|
+|`Name`|Atributo obrigatório.<br /><br /> O nome do destino.|
+|`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Se a condição for avaliada como `false`, o destino não executará o corpo dos destinos definidos no atributo `DependsOnTargets`. Para obter mais informações sobre condições, consulte [Condições](../msbuild/msbuild-conditions.md).|
+|`Inputs`|Atributo opcional.<br /><br /> Os arquivos que formam entradas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Outputs` para determinar se o `Target` está atualizado. Para obter mais informações, veja [Builds incrementais](../msbuild/incremental-builds.md), [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md), e [Transformações](../msbuild/msbuild-transforms.md).|
+|`Outputs`|Atributo opcional.<br /><br /> Os arquivos que formam saídas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Inputs` para determinar se o `Target` está atualizado. Para obter mais informações, veja [Builds incrementais](../msbuild/incremental-builds.md), [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md), e [Transformações](../msbuild/msbuild-transforms.md).|
+|`Returns`|Atributo opcional.<br /><br /> O conjunto de itens que será disponibilizado para tarefas que invocam esse destino, por exemplo, tarefas do MSBuild. Vários destinos são separados por ponto e vírgula. Se os destinos no arquivo não tiverem nenhum atributo `Returns`, os atributos de Saídas serão usados para essa finalidade.|
+|`KeepDuplicateOutputs`|Atributo booliano opcional.<br /><br /> Se for `true`, várias referências ao mesmo item nos Retornos do destino serão registradas.  Por padrão, esse atributo é `false`.|
+|`BeforeTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino.  Quando especificado, indica que esse destino deve ser executado antes dos destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).|
+|`AfterTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino. Quando especificado, indica que esse destino deve ser executado após os destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).|
+|`DependsOnTargets`|Atributo opcional.<br /><br /> Os destinos que devem ser executados antes que esse destino possa ser executado ou antes que a análise de dependência de nível superior possa ocorrer. Vários destinos são separados por ponto e vírgula.|
+|`Label`|Atributo opcional.<br /><br /> Um identificador que pode identificar ou ordenar os elementos do sistema e do usuário.|
 
-### <a name="child-elements"></a>Elementos filho  
+### <a name="child-elements"></a>Elementos filho
 
 | Elemento | Descrição |
 | - | - |
@@ -78,44 +77,44 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Contém um conjunto de elementos `Item` definidos pelo usuário. A partir do .NET Framework 3.5, um elemento `Target` pode conter elementos `ItemGroup`. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md). |
 | [OnError](../msbuild/onerror-element-msbuild.md) | Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError` é ErrorAndStop (ou `false`) para uma tarefa com falha. Pode haver zero ou mais elementos `OnError` em um destino. Se `OnError` elementos estiverem presentes, eles deverão ser os últimos elementos do elemento `Target`.<br /><br /> Para saber mais sobre o atributo `ContinueOnError`, confira [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). |
 
-### <a name="parent-elements"></a>Elementos pai  
+### <a name="parent-elements"></a>Elementos pai
 
 | Elemento | Descrição |
 | - | - |
 | [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
-## <a name="remarks"></a>Comentários  
- O primeiro destino a ser executado é especificado em tempo de execução. Os destinos podem ter dependências em outros destinos. Por exemplo, um destino de implantação depende de um destino de compilação. O mecanismo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executa dependências na ordem em que aparecem no atributo `DependsOnTargets`, da esquerda para a direita. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).  
+## <a name="remarks"></a>Comentários
+ O primeiro destino a ser executado é especificado em tempo de execução. Os destinos podem ter dependências em outros destinos. Por exemplo, um destino de implantação depende de um destino de compilação. O mecanismo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executa dependências na ordem em que aparecem no atributo `DependsOnTargets`, da esquerda para a direita. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).
 
- Um destino é executado apenas uma vez durante um build, mesmo se mais de um destino tem uma dependência dele.  
+ Um destino é executado apenas uma vez durante um build, mesmo se mais de um destino tem uma dependência dele.
 
- Se um destino for ignorado porque seu atributo `Condition` é avaliado como `false`, ele ainda poderá ser executado se for invocado posteriormente no build e se seu atributo `Condition` for avaliado como `true` nesse momento.  
+ Se um destino for ignorado porque seu atributo `Condition` é avaliado como `false`, ele ainda poderá ser executado se for invocado posteriormente no build e se seu atributo `Condition` for avaliado como `true` nesse momento.
 
- Antes do MSBuild 4, `Target` retornava todos os itens que eram especificados no atributo `Outputs`.  Para fazer isso, o MSBuild precisava registrar esses itens, caso tarefas posteriores no build os solicitassem. Como não havia nenhuma maneira de indicar quais destinos tinham saídas que seriam exigidas por chamadores, o MSBuild acumulou todos os itens de todos os `Outputs` em todos os `Target`s invocados. Isso leva a problemas de colocação em escala em compilações que tinham um grande número de itens de saída.  
+ Antes do MSBuild 4, `Target` retornava todos os itens que eram especificados no atributo `Outputs`.  Para fazer isso, o MSBuild precisava registrar esses itens, caso tarefas posteriores no build os solicitassem. Como não havia nenhuma maneira de indicar quais destinos tinham saídas que seriam exigidas por chamadores, o MSBuild acumulou todos os itens de todos os `Outputs` em todos os `Target`s invocados. Isso leva a problemas de colocação em escala em compilações que tinham um grande número de itens de saída.
 
- Se o usuário especificar um `Returns` em um elemento `Target` de um projeto, apenas esses `Target`s que têm um atributo `Returns` registrarão esses itens.  
+ Se o usuário especificar um `Returns` em um elemento `Target` de um projeto, apenas esses `Target`s que têm um atributo `Returns` registrarão esses itens.
 
- Um `Target` pode conter tanto um atributo `Outputs` quanto um atributo `Returns`.  `Outputs` é usado com `Inputs` para determinar se o destino está atualizado. `Returns`, se estiver presente, substitui o valor de `Outputs` para determinar quais itens são retornados aos chamadores.  Se `Returns` não estiver presente, `Outputs` será disponibilizado para os chamadores, exceto no caso descrito anteriormente.  
+ Um `Target` pode conter tanto um atributo `Outputs` quanto um atributo `Returns`.  `Outputs` é usado com `Inputs` para determinar se o destino está atualizado. `Returns`, se estiver presente, substitui o valor de `Outputs` para determinar quais itens são retornados aos chamadores.  Se `Returns` não estiver presente, `Outputs` será disponibilizado para os chamadores, exceto no caso descrito anteriormente.
 
- Antes do MSBuild 4, sempre que um `Target` incluía várias referências ao mesmo item em seu `Outputs`, esses itens duplicados eram registrados. Em compilações muito grandes que tinham um grande número de saídas e várias interdependências de projeto, isso causava uma grande quantidade de memória gasta devido à inutilidade dos itens duplicados. Quando o atributo `KeepDuplicateOutputs` é definido como `true`, essas duplicatas são registradas.  
+ Antes do MSBuild 4, sempre que um `Target` incluía várias referências ao mesmo item em seu `Outputs`, esses itens duplicados eram registrados. Em compilações muito grandes que tinham um grande número de saídas e várias interdependências de projeto, isso causava uma grande quantidade de memória gasta devido à inutilidade dos itens duplicados. Quando o atributo `KeepDuplicateOutputs` é definido como `true`, essas duplicatas são registradas.
 
-## <a name="example"></a>Exemplo  
- O exemplo de código a seguir mostra um elemento `Target` que executa a tarefa `Csc`.  
+## <a name="example"></a>Exemplo
+ O exemplo de código a seguir mostra um elemento `Target` que executa a tarefa `Csc`.
 
-```xml  
-<Target Name="Compile" DependsOnTargets="Resources" Returns="$(TargetPath)">  
-    <Csc Sources="@(CSFile)"  
-          TargetType="library"  
-          Resources="@(CompiledResources)"  
-          EmitDebugInformation="$(includeDebugInformation)"  
-          References="@(Reference)"  
-          DebugType="$(debuggingType)" >  
-        <Output TaskParameter="OutputAssembly"  
-                  ItemName="FinalAssemblyName" />  
-    </Csc>  
-</Target>  
-```  
+```xml
+<Target Name="Compile" DependsOnTargets="Resources" Returns="$(TargetPath)">
+    <Csc Sources="@(CSFile)"
+          TargetType="library"
+          Resources="@(CompiledResources)"
+          EmitDebugInformation="$(includeDebugInformation)"
+          References="@(Reference)"
+          DebugType="$(debuggingType)" >
+        <Output TaskParameter="OutputAssembly"
+                  ItemName="FinalAssemblyName" />
+    </Csc>
+</Target>
+```
 
-## <a name="see-also"></a>Consulte também  
- [Destinos](../msbuild/msbuild-targets.md)   
- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>Consulte também
+- [Destinos](../msbuild/msbuild-targets.md)
+- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

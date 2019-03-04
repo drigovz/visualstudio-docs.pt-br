@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172ec56815f989b13cd5a15c22241b669a9dc0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908849"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721505"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
@@ -56,15 +56,15 @@ Você pode encontrar uma série de recursos avançados no menu **Editar** > **Av
 |Formatar Seleção|Define o recuo adequado das linhas de código e move as chaves para separar linhas na seleção.|
 |Tabular linhas selecionadas|Troca espaços à esquerda por tabulações quando for apropriado.|
 |Cancelar tabulação das linhas selecionadas|Troca tabulações à esquerda por espaços. Se você desejar converter todos os espaços em seu arquivo para tabulações (ou todas as tabulações para espaços), você poderá usar os comandos `Edit.ConvertSpacesToTabs` e `Edit.ConvertTabsToSpaces`. Esses comandos não são exibidos nos menus do Visual Studio, mas você pode chamá-los por meio da janela **Acesso Rápido** ou da janela Comando.|
-|Colocar em Maiúsculas|Alterar todos os caracteres na seleção para maiúsculos ou se não houver nenhuma seleção, altera o caractere no ponto de inserção para maiúsculo.|
-|Colocar em Minúsculas|Alterar todos os caracteres na seleção para minúsculos ou se não houver nenhuma seleção, altera o caractere no ponto de inserção para minúsculo.|
+|Colocar em Maiúsculas|Alterar todos os caracteres na seleção para maiúsculos ou se não houver nenhuma seleção, altera o caractere no ponto de inserção para maiúsculo. Atalho: **Ctrl**+**Shift**+**U**.|
+|Colocar em Minúsculas|Alterar todos os caracteres na seleção para minúsculos ou se não houver nenhuma seleção, altera o caractere no ponto de inserção para minúsculo. Atalho: **Ctrl**+**U**.|
 |Mover linhas selecionadas para cima|Move a linha selecionada uma linha para cima. Atalho: **Alt**+**Seta para Cima**.|
 |Mover Linhas Selecionadas para Baixo|Move a linha selecionada uma linha para baixo. Atalho: **Alt**+**Seta para Baixo**.|
-|Excluir Espaço em Branco Horizontal|Exclui tabulações ou espaços ao final da linha atual.|
+|Excluir Espaço em Branco Horizontal|Exclui tabulações ou espaços ao final da linha atual. Atalho: **Ctrl**+**K**, **Ctrl**+**\\**|
 |Exibir Espaço em Branco|Exibe espaços como pontos elevados e tabulações como setas. O final de um arquivo é exibido como um glifo retangular. Se **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **Quebra automática de linha** > **Mostrar glifos visíveis para quebra automática de linha** estiver selecionado, esse glifo também será exibido.|
 |Quebra automática de linha|Faz com que todas as linhas em um documento sejam visíveis na janela de código. Você pode ativar e desativar a quebra automática de linha nas configurações **Todas as Linguagens do Editor de Texto** (**Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens**).|
-|Comentar Seleção|Adiciona caracteres de comentários na seleção ou na linha atual.|
-|Remover Comentários da Seleção|Remove caracteres de comentários da seleção ou da linha atual.|
+|Comentar Seleção|Adiciona caracteres de comentários na seleção ou na linha atual. Atalho: **Ctrl**+**K**, **Ctrl**+**C**|
+|Remover Comentários da Seleção|Remove caracteres de comentários da seleção ou da linha atual. Atalho: **Ctrl**+**K**, **Ctrl**+**U**|
 |Aumentar recuo de linha|Adiciona uma tabulação (ou os espaços equivalentes) nas linhas selecionadas ou na linha atual.|
 |Diminuir recuo de linha|Remove uma tabulação (ou os espaços equivalentes) das linhas selecionadas ou da linha atual.|
 |Selecionar Marca|Em um documento que contém marcas (por exemplo, XML ou HTML), seleciona a marca.|
@@ -76,7 +76,7 @@ Você pode se mover pelo editor de códigos de várias maneiras diferentes, incl
 
 ## <a name="find-references-in-your-code-base"></a>Localizar referências na base de código
 
-Para localizar onde os elementos de código específicos são referenciados em toda a sua base de código, é possível usar o comando **Localizar Todas as Referências**. Além disso, quando você clica em um tipo ou membro, o recurso **realce de referência** destaca automaticamente todas as referências a esse tipo ou membro. Para obter mais informações, confira [Localizar referências no código](finding-references.md).
+Para encontrar o local em que elementos de código específicos são referenciados na base de código, use o comando **Localizar Todas as Referências** ou pressione **Shift**+**F12**. Além disso, quando você clica em um tipo ou membro, o recurso **realce de referência** destaca automaticamente todas as referências a esse tipo ou membro. Para obter mais informações, confira [Localizar referências no código](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Personalizar o editor
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: A entrada poderá falhar se forem usados aliases ou nomes amigáveis
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817432"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841621"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>A entrada nas assinaturas do Visual Studio poderá falhar ao usar aliases
 
@@ -150,7 +148,7 @@ Você atribuiu uma assinatura do Visual Studio e pode ter sido direcionado para 
 
 6. Agora você deve ver os benefícios
 
-Observação: ao visitar https://my.visualstudio.com futuramente, talvez você tenha que selecionar qual conta deseja usar (por exemplo, "Conta Corporativa ou de Estudante" ou "Conta Pessoal").  Depois de seguir as etapas acima, você precisará utilizar a opção "Conta Pessoal".
+Observação:  Ao visitar https://my.visualstudio.com no futuro, talvez você precise selecionar a conta que deseja usar (por exemplo, "Conta Corporativa ou de Estudante" ou "Conta Pessoal").  Depois de seguir as etapas acima, você precisará utilizar a opção "Conta Pessoal".
 
 Se houver problemas, contate a equipe de suporte (https://visualstudio.microsoft.com/subscriptions/support/).
 

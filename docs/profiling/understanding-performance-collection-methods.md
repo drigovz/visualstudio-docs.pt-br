@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918609"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635079"
 ---
 # <a name="understand-performance-collection-methods"></a>Entender os métodos de coleta de desempenho
 
@@ -131,5 +131,5 @@ Dados de interação de camadas que são coletados por ferramentas de criação 
 
 ## <a name="see-also"></a>Consulte também
 
-[Como: Coletar dados de desempenho de um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Como: Coletar dados de desempenho para um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)

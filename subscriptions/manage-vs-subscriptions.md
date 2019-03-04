@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822157"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842652"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -91,19 +89,19 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 
 **Assinaturas padrão**
 
-- Microsoft Store: se você tiver comprado sua assinatura na [Microsoft Store](http://www.microsoft.com/store), você também poderá renová-la na Microsoft Store.
-- Licença de volume: se a sua empresa compra assinaturas por meio de uma Licença de Volume, o administrador deverá contatar um revendedor para renovar suas assinaturas.
+- Microsoft Store: Se você comprou sua assinatura na [Microsoft Store](http://www.microsoft.com/store), você também pode renová-la nela.
+- Licença de volume:  Caso sua empresa compre assinaturas por meio de uma licença de volume, o administrador deverá contatar um revendedor para renovar suas assinaturas.
 
-**Assinaturas de nuvem:** as assinaturas de nuvem não precisam ser renovadas. Enquanto a sua assinatura estiver sendo paga, ela permanecerá ativa.
+**Assinaturas na nuvem:**  As assinaturas na nuvem não precisam ser renovadas. Enquanto a sua assinatura estiver sendo paga, ela permanecerá ativa.
 
-**Assinaturas adquiridas por meio de programas:** se você receber sua assinatura por meio de um programa, ela estará vinculada à sua participação no programa. Fale com os seus contatos do programa para obter informações adicionais.
+**Assinaturas adquiridas por meio de programas:**  Se você receber sua assinatura por meio de um programa, ela estará vinculada à sua participação no programa. Fale com os seus contatos do programa para obter informações adicionais.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials:** o Dev Essentials é um programa gratuito e as associações não expiram.
+**Visual Studio Dev Essentials:**  O Dev Essentials é um programa gratuito, e as associações não expiram.
 
 ## <a name="transferring-subscriptions"></a>Transferindo assinaturas
 
@@ -147,9 +145,9 @@ Depois de adicionar uma conta alternativa, você poderá atualizá-la ou removê
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>P: se eu não renovar minha assinatura, por quanto tempo Microsoft manterá meus dados?
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>P: Se eu não renovar minha assinatura, por quanto tempo a Microsoft manterá meus dados?
 
-R: dependendo do canal de compra, a Microsoft mantém os dados do cliente durante diferentes períodos de tempo.
+R: Dependendo do canal de compra, a Microsoft mantém os dados do cliente durante diferentes períodos de tempo.
 
 | Canal                                                | Duração (dias) |
 |--------------------------------------------------------|-----------------|

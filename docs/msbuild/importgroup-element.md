@@ -16,62 +16,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d5aeac5115dfa251b42c824b88a779e22ad6a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3dd0b9fc5ef9441e867d5103bbb722a3628ffc78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978328"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610522"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
-Contém uma coleção de elementos `Import` que são agrupados em uma condição opcional. Para obter mais informações, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).  
+Contém uma coleção de elementos `Import` que são agrupados em uma condição opcional. Para obter mais informações, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
 
- \<Project>  
- \<ImportGroup>  
+ \<Project> \<ImportGroup>
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Sintaxe
 
-```xml  
-<ImportGroup Condition="'String A' == 'String B'">  
-    <Import ... />  
-    <Import ... />  
-</ImportGroup>  
-```  
+```xml
+<ImportGroup Condition="'String A' == 'String B'">
+    <Import ... />
+    <Import ... />
+</ImportGroup>
+```
 
-## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
+## <a name="attributes-and-elements"></a>Atributos e elementos
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
-### <a name="attributes"></a>Atributos  
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
+|Atributo|Descrição|
+|---------------|-----------------|
+|`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elementos filho  
+### <a name="child-elements"></a>Elementos filho
 
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Import](../msbuild/import-element-msbuild.md)|Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.|  
+|Elemento|Descrição|
+|-------------|-----------------|
+|[Import](../msbuild/import-element-msbuild.md)|Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.|
 
-### <a name="parent-elements"></a>Elementos pai  
+### <a name="parent-elements"></a>Elementos pai
 
 | Elemento | Descrição |
 | - | - |
 | [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
-## <a name="example"></a>Exemplo  
- O exemplo de código a seguir mostra o elemento `ImportGroup`.  
+## <a name="example"></a>Exemplo
+ O exemplo de código a seguir mostra o elemento `ImportGroup`.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ImportGroup>  
-        <Import Project="$(Targets1.targets)" />  
-        <Import Project="$(Targets2.targets)" />  
-    </ImportGroup>  
-...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ImportGroup>
+        <Import Project="$(Targets1.targets)" />
+        <Import Project="$(Targets2.targets)" />
+    </ImportGroup>
+...
+</Project>
+```
 
-## <a name="see-also"></a>Consulte também  
- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
- [Itens](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Consulte também
+- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Itens](../msbuild/msbuild-items.md)

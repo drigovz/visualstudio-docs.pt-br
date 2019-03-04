@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959415"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624965"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
 
@@ -38,7 +38,7 @@ Para obter mais informações, consulte:
 
 [Coletar a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Como: Definir opções de nome de arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Como: Definir opções de nome de arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Inicializar
 
@@ -111,6 +111,6 @@ Para obter mais informações, consulte:
 
 ## <a name="see-also"></a>Consulte também
 
-[Visões gerais](../profiling/overviews-performance-tools.md)  
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
+[Visões gerais](../profiling/overviews-performance-tools.md)
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
 [Controlar a coleta de dados](../profiling/controlling-data-collection.md)

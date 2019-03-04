@@ -1,7 +1,7 @@
 ---
 title: Dicas de acessibilidade e truques do Visual Studio
 description: Saiba mais sobre dicas e truques que podem ajudar a tornar o uso do IDE (ambiente de desenvolvimento integrado) do Visual Studio mais acessível para todos, incluindo pessoas com deficiências.
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318546"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680926"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Dicas de acessibilidade e truques do Visual Studio
 
 > [!TIP]
-> Para saber mais sobre atualizações de acessibilidade recentes, confira a postagem no blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Aprimoramentos de acessibilidade no Visual Studio 2017 versão 15.3).
+> Para saber mais sobre atualizações de acessibilidade, confira a postagem no blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Melhorias de acessibilidade no Visual Studio 2017 versão 15.3).
 
 O Visual Studio tem recursos internos de acessibilidade que são compatíveis com leitores de tela e outras tecnologias assistenciais. Este tópico lista combinações de teclas de atalho comum que você pode usar para executar tarefas apenas com o teclado e inclui informações de como usar temas de alto contraste para melhorar a visibilidade. Além disso, mostra como usar anotações para revelar informações úteis sobre o código e como configurar indicações de som para eventos de build e de ponto de interrupção.
 
@@ -64,6 +64,7 @@ Algumas outras combinações de teclas de atalho úteis incluem o seguinte.
 |Caixa de diálogo|Marque ou desmarque a opção da caixa de seleção em uma caixa de diálogo. <br> <br> **OBSERVAÇÃO:** Atalho padrão do Windows|**BARRA DE ESPAÇO**|
 |Menus de contexto|Abra um menu de contexto (clique com o botão direito do mouse). <br> <br> **OBSERVAÇÃO:** Atalho padrão do Windows|**SHIFT** + **F10**|
 |Menus|Acesse rapidamente um item de menu usando as teclas de aceleração. Escolha a tecla **ALT** seguida pelas letras sublinhadas em um menu de atalho para ativar o comando. Por exemplo, para exibir a caixa de diálogo Abrir Projeto no Visual Studio, você escolheria **ALT** + **F** + **O** + **P**.  <br><br> **OBSERVAÇÃO:** Atalho padrão do Windows|**ALT** + **[carta]**|
+|Caixa de pesquisa Início Rápido| Usar o recurso de pesquisa no Visual Studio|**Ctrl** + **Q**|
 |Janela caixa de ferramentas|Mover-se entre guias da Caixa de ferramentas.|**CTRL** + **SETA PARA CIMA**<br /><br /> e<br /><br /> **CTRL** + **SETA PARA BAIXO**|
 |Janela caixa de ferramentas|Adicionar um controle da Caixa de ferramentas a um formulário ou designer.|**ENTER**|
 |Caixa de diálogo Teclado, Ambiente, Opções|Excluir uma combinação de teclas inserida na opção **Pressionar teclas de atalho**.|**BACKSPACE**|

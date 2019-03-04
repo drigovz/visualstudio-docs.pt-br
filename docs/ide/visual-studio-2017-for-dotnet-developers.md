@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920594"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708635"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guia de produtividade em C# do Visual Studio 2017
 
@@ -92,6 +92,8 @@ O Visual Studio 2017 vem com muitas refatorações, ações de geração de cód
   - *Adicionar Null-Check*
   - *Adicionar Parâmetro*
   - *Remover Usos Desnecessários*
+  - *Loop Foreach para uma consulta LINQ ou um método LINQ*
+  - *Refatoração para efetuar pull de membros para nível superior com opções de caixa de diálogo*
   - Confira mais em nossa [documentação](https://aka.ms/refactorings)
 - Crie sua própria refatoração ou correção de código com [analisadores Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Vários membros da comunidade codificaram extensões gratuitas que adicionam outras inspeções de código:
@@ -108,7 +110,7 @@ O Visual Studio 2017 tem muitos recursos para ajudar você a pesquisar e navegar
 
 | Recurso | Atalho | Detalhes/melhorias |
 |- | - | -|
-| Localizar Todas as Referências | **Shift**+**F12**| Os resultados são coloridos e podem ser agrupados por projeto, definição etc. Também é possível “bloquear” resultados. |
+| Localizar Todas as Referências | **Shift**+**F12**| Os resultados são coloridos e podem ser agrupados por projeto, definição e tipo de referência, como leitura ou gravação. Também é possível “bloquear” resultados. |
 | Ir Para Implementação | **Ctrl**+**F12** | É possível usar “Ir para definição” na palavra-chave `override` para navegar até o membro substituído |
 | Ir para definição | **F12** ou **Ctrl**+**Clique**| Ou pressione **Ctrl** enquanto clica para navegar até a definição |
 | Inspecionar Definição | **Alt**+**F12** | Exibição embutida de uma definição |
@@ -151,7 +153,7 @@ Você pode usar o Git ou o TFVC para armazenar e atualizar seu código no Visual
 
 Aqui está uma lista dos recursos do editor e de produtividade para escrever códigos com mais eficiência. Pode ser necessário ativar alguns recursos, pois eles ficam desativado por padrão (eles podem indexar itens em sua máquina, são controversos ou atualmente são experimentais).
 
-| Recurso | Details | Como habilitar |
+| Recurso | Detalhes | Como habilitar |
 |-|-|-|
 | Arquivo local no Gerenciador de Soluções | Realça o arquivo ativo no **Gerenciador de Soluções** | **Ferramentas** > **Opções** > **Projetos e Soluções** > **Acompanhar Item Ativo no Gerenciador de Soluções** |
 | Adicionar usos para tipos em assemblies de referência e pacotes do NuGet | Mostra uma lâmpada de erro com uma correção de código para instalar um pacote do NuGet para um tipo não referenciado | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Sugerir usos para tipos em assemblies de referência** e **Sugerir usos para tipos em pacotes NuGet** |

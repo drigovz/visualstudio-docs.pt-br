@@ -12,22 +12,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f624a1130c0da261e563e755e55dc2bfcfd49151
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966706"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630485"
 ---
 # <a name="per-thread-summary-report"></a>Relatório de resumo por thread
-Este gráfico de barras mostra a proporção de tempo que cada thread não oculta gasta em cada categoria de atividade durante o intervalo de tempo visível no momento. “Execução” significa que o thread está em execução; todas as outras categorias significam que o thread está aguardando algo.  
-  
-## <a name="see-also"></a>Consulte também  
- [Tempo de execução (exibição Threads)](../profiling/execution-time-threads-view.md)   
- [Tempo de E/S (exibição Threads)](../profiling/i-o-time-threads-view.md)   
- [Tempo de gerenciamento de memória](../profiling/memory-management-time.md)   
- [Tempo de preempção](../profiling/preemption-time.md)   
- [Tempo de suspensão](../profiling/sleep-time.md)   
- [Tempo de sincronização](../profiling/synchronization-time.md)   
- [Tempo de processamento da interface do usuário](../profiling/ui-processing-time.md)   
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+Este gráfico de barras mostra a proporção de tempo que cada thread não oculta gasta em cada categoria de atividade durante o intervalo de tempo visível no momento. “Execução” significa que o thread está em execução; todas as outras categorias significam que o thread está aguardando algo.
+
+## <a name="see-also"></a>Consulte também
+- [Tempo de execução (Exibição Threads)](../profiling/execution-time-threads-view.md)
+- [Tempo de E/S (Exibição Threads)](../profiling/i-o-time-threads-view.md)
+- [Tempo de gerenciamento de memória](../profiling/memory-management-time.md)
+- [Tempo de preempção](../profiling/preemption-time.md)
+- [Tempo de suspensão](../profiling/sleep-time.md)
+- [Tempo de sincronização](../profiling/synchronization-time.md)
+- [Tempo de processamento da interface do usuário](../profiling/ui-processing-time.md)
+- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

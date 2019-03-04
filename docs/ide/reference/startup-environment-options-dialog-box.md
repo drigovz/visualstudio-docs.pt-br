@@ -10,15 +10,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde00d3e9911c8c2b125ac44aff4200037dfeb50
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0877205c906727d35073a8e280bb4700ae455b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942276"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696487"
 ---
-# <a name="startup-environment-options-dialog-box"></a>Caixa de diálogo de opções, inicialização e ambiente
-Use esta página para personalizar a página inicial do Visual Studio ou para definir uma ação padrão diferente quando o Visual Studio é iniciado. Para obter mais informações, consulte [Customizing the Start Page (Personalizando a página inicial)](../../ide/customizing-the-start-page-for-visual-studio.md).
+# <a name="startup-environment-options-dialog-box"></a>Caixa de diálogo Inicialização, Ambiente, Opções
+
+::: moniker range="vs-2017"
+
+Use esta página para personalizar a página inicial do Visual Studio ou para definir uma ação padrão diferente quando o Visual Studio é iniciado. Para obter mais informações, confira [Personalizar inicialização](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Use essa página para definir outra ação padrão quando o Visual Studio é iniciado. Na lista **Na inicialização, abrir**, escolha entre **janela Iniciar** (que permite abrir um projeto novo ou existente), **Solução mais recente** ou **Ambiente vazio**.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Consulte também
 

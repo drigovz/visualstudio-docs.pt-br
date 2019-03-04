@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63919a13a948f7e6be2d2789aa778bd39514e51
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950826"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625680"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de CPU e do Windows
 
@@ -129,7 +129,7 @@ Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é 
 
 ## <a name="see-also"></a>Consulte também
 
-[Visões gerais](../profiling/overviews-performance-tools.md)  
-[Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)  
-[Como: Coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
+[Visões gerais](../profiling/overviews-performance-tools.md)
+[Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
+[Como: Coletar dados do contador da CPU](../profiling/how-to-collect-cpu-counter-data.md)
 [Como: Coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md)

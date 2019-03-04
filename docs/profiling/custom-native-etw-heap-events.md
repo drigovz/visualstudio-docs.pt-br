@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089260"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615540"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de heap de ETW nativos personalizados
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Essa biblioteca pode ser usada no C e C++ com facilidade.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > Esse decorador informará o compilador que essa função é uma chamada a um alocador.  Cada chamada à função gerará o endereço do site da chamada, o tamanho da instrução de chamada e a typeId do novo objeto para um novo símbolo `S_HEAPALLOCSITE`.  Quando uma pilha de chamadas for alocada, o Windows emitirá um evento ETW com essas informações.  A ferramenta de criador de perfil de memória percorre a pilha de chamadas em busca de uma correspondência de endereço de retorno com um símbolo `S_HEAPALLOCSITE` e as informações de typeId no símbolo são usadas para exibir o tipo de tempo de execução da alocação.
    >
@@ -79,7 +79,7 @@ Essa biblioteca pode ser usada no C e C++ com facilidade.
    ```
 
    Se você estiver usando o C, use a função `OpenHeapTracker`.  Essa função retornará um identificador que será usado ao chamar outras funções de acompanhamento:
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Essa biblioteca pode ser usada no C e C++ com facilidade.
    ```
 
 ## <a name="track-memory-usage"></a>Rastrear uso de memória
-Com essas chamadas implementadas, o uso de heap personalizado agora pode ser acompanhado usando a ferramenta padrão **Uso de Memória** no Visual Studio.  Para obter mais informações sobre como usar essa ferramenta, consulte a documentação [Uso de memória](../profiling/memory-usage.md). Verifique se você habilitou a de criação de perfil de heap com instantâneos; caso contrário, você não verá o uso de heap personalizado exibido. 
+Com essas chamadas implementadas, o uso de heap personalizado agora pode ser acompanhado usando a ferramenta padrão **Uso de Memória** no Visual Studio.  Para obter mais informações sobre como usar essa ferramenta, consulte a documentação [Uso de memória](../profiling/memory-usage.md). Verifique se você habilitou a de criação de perfil de heap com instantâneos; caso contrário, você não verá o uso de heap personalizado exibido.
 
 ![Habilitar a criação de perfil de heap](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Assim como ocorre com o heap padrão do Windows, também é possível usar essa 
 > O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar** > **Criador de Perfil de Desempenho** ou na combinação de teclas **Alt**+**F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl**+**Alt**+**F2**, contém essa funcionalidade.
 
 ## <a name="see-also"></a>Consulte também
-[Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)  
-[Uso de Memória](../profiling/memory-usage.md)
+[Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
+[Uso da Memória](../profiling/memory-usage.md)
