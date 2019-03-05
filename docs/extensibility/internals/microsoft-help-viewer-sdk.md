@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023909"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323926"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 
@@ -29,7 +29,8 @@ Este artigo contém as seguintes tarefas para integradores do Visual Studio Help
 
 -   Recursos adicionais
 
-### <a name="creating-a-topic-f1-support"></a>Criação de um tópico (suporte a F1)
+## <a name="create-a-topic-f1-support"></a>Criar um tópico (suporte a F1)
+
 Esta seção fornece uma visão geral dos componentes de um tópico apresentado, requisitos de tópico, uma breve descrição de como criar um tópico (incluindo os requisitos de suporte F1) e, finalmente, um tópico de exemplo com seu resultado renderizado.
 
 **Visão geral de tópico do Visualizador de ajuda**
@@ -91,17 +92,17 @@ Criar um novo documento XHTML chamado ContosoTopic4.htm e incluir a marca de tí
 
 ```
 
-Em seguida, adicione dados para definir como o tópico é para ser apresentado (próprio da marca ou não), como fazer referência a este tópico para F1, em que este tópico existe dentro do Sumário, sua ID (para a referência de link por outros tópicos), etc.  Consulte a tabela "Metadados de conteúdo" abaixo para obter uma lista completa de metadados com suporte.
+Em seguida, adicione dados para definir como o tópico é para ser apresentado (próprio da marca ou não), como fazer referência a este tópico para F1, em que este tópico existe dentro do Sumário, sua ID (para a referência de link por outros tópicos), etc. Consulte a tabela "Metadados de conteúdo" abaixo para obter uma lista completa de metadados com suporte.
 
 -   Nesse caso, usaremos nosso próprio pacote de marcas, uma variante do pacote de identidade visual do Visual Studio Help Viewer.
 
--   Adicionar o valor e nome de meta F1 (conteúdo de "Microsoft.Help.F1" = "ContosoTopic4") que corresponderá o valor de F1 fornecido no conjunto de propriedades do IDE.  (Consulte a seção de suporte de F1 para obter mais informações).   Esse é o valor que corresponde a F1 chamar de dentro do IDE para exibir este tópico quando F1 é escolhido no IDE.
+-   Adicionar o valor e nome de meta F1 (conteúdo de "Microsoft.Help.F1" = "ContosoTopic4") que corresponderá o valor de F1 fornecido no conjunto de propriedades do IDE. (Consulte a seção de suporte de F1 para obter mais informações). Esse é o valor que corresponde a F1 chamar de dentro do IDE para exibir este tópico quando F1 é escolhido no IDE.
 
--   Adicione a ID do tópico. Isso é a cadeia de caracteres que é usada por outros tópicos para vincular a esse tópico.  É a identificação de Visualizador de ajuda para este tópico.
+-   Adicione a ID do tópico. Isso é a cadeia de caracteres que é usada por outros tópicos para vincular a esse tópico. É a identificação de Visualizador de ajuda para este tópico.
 
 -   Para o Sumário, adicione nó do pai deste tópico para definir no qual este nó de Sumário do tópico serão exibidos.
 
--   Para o Sumário, adicione a ordem de nó deste tópico. Quando o nó pai tem um número de nós filhos, defina na ordem de nós filho local deste tópico. Por exemplo, este tópico é o número 4 de 4 tópicos de filho.)
+-   Para o Sumário, adicione a ordem de nó deste tópico. Quando o nó pai tem `n` número de filhos definir nós, na ordem de nós filho local deste tópico. Por exemplo, este tópico é o número 4 de 4 tópicos de filho.
 
 Seção de metadados de exemplo:
 
@@ -124,7 +125,6 @@ Seção de metadados de exemplo:
 
 </body>
 </html>
-
 ```
 
 **O corpo do tópico**
@@ -141,10 +141,10 @@ O corpo (sem incluir o cabeçalho e rodapé) do tópico conterá links da págin
 
 5.  Adicione o texto do código de idioma específico:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que `devLangnu=` permite que você insira outras linguagens. Por exemplo, `devLangnu="Fortran"` exibe Fortran quando o trecho de código DisplayLanguage = Fortran
 
-6.  Adicione links de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  Adicione links de página: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Observação: para sem suporte novo "Idioma de exibição" (exemplo, F#, Cobol, Fortran) colorização de código no trecho de código poderá ser monocromático.
+> Observação: para sem suporte novo "Idioma de exibição" (exemplo, F#, Cobol, Fortran) colorização de código no trecho de código poderá ser monocromático.
 
 **Tópico Visualizador da Ajuda do exemplo** o código ilustra como definir metadados, um trecho de código, uma área recolhível e específicos do idioma de texto.
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ Um usuário possa registrar CustomLibrary como o namespace sob a seção de parc
 
 Adicione a seguinte chave do registro e o valor:
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help key: Exibir a saída de depuração em valor de varejo: SIM
+::: moniker range="vs-2017"
 
-No IDE, sob o item de menu de Ajuda, selecione "Depurar contexto de Ajuda"
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
+
+::: moniker-end
+
+Valor: Saída de depuração de exibição nos dados de varejo: SIM
+
+No IDE, sob o item de menu de Ajuda, selecione **contexto de ajudar a depurar**.
 
 **Metadados de conteúdo**
 
@@ -366,7 +378,8 @@ A tabela a seguir, qualquer cadeia de caracteres que aparece entre colchetes é 
 | \< meta name="Microsoft.Help.TopicVersion content="[topic version number]"/> | Especifica a esta versão do tópico quando há várias versões em um catálogo. Porque Microsoft.Help.Id não é garantida para ser exclusivo, essa marca é necessária quando mais de uma versão de um tópico existe em um catálogo, por exemplo, quando um catálogo contém um tópico para o .NET Framework 3.5 e um tópico para o .NET Framework 4 e ambos têm o mesmo Micro reversível. Ajuda. |
 | \< nome da meta = "SelfBranded" content = "[TRUE ou FALSE]" / > | Especifica se este tópico usa o pacote de marcas de inicialização do Gerenciador de biblioteca de Ajuda ou um pacote de marcas é específico para o tópico. Essa marca deve ser verdadeiro ou falso. Se for TRUE, em seguida, o pacote de marcas para o tópico associado substitui o pacote de marcas é definido quando inicia o Help Library Manager para que o tópico é renderizado conforme o esperado, mesmo se for diferente do processamento de outros tipos de conteúdo. Se for FALSE, o tópico atual é renderizado de acordo com o pacote de marcas é definido quando o Help Library Manager é iniciado. Por padrão, o Help Library Manager presume Self identidade visual seja false, a menos que a variável SelfBranded é declarada como TRUE; Portanto, você não precisa declarar \<nome meta = "SelfBranded" content = "Falso" / >. |
 
-### <a name="creating-a-branding-package"></a>Criando um pacote de marcas
+## <a name="create-a-branding-package"></a>Criar um pacote de marcas
+
 A versão do Visual Studio abrange um número de diferentes produtos do Visual Studio, incluindo os shells integrados e isolado para parceiros do Visual Studio.  Cada um desses produtos requer um certo grau de conteúdo da Ajuda baseado em tópico exclusivo para o produto, o suporte de identidade visual.  Por exemplo, tópicos do Visual Studio precisam ter uma apresentação consistentes de marcas, enquanto SQL Studio, que encapsula o Shell do ISO, requer sua própria exclusivo ajuda conteúdo de identidade visual para cada tópico.  Um parceiro de Shell integrado pode querer seus tópicos da Ajuda para estar dentro do pai do conteúdo de Ajuda do produto Visual Studio enquanto mantém seu próprio tópico identidade visual.
 
 Identidade visual de pacotes é instalados pelo produto que contém o Visualizador da Ajuda.  Produtos do Visual Studio:
@@ -432,7 +445,6 @@ O arquivo Branding.xml contém uma lista de elementos usados para renderizar con
 Observação: as variáveis observadas por "{n}" tem dependências de código - remover ou alterar esses valores causará erros e, possivelmente, a falha do aplicativo. Identificadores de localização (exemplo _locID="codesnippet.n") são incluídos no pacote do Visual Studio de identidade visual.
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Conteúdo do Visual Studio exibe um logotipo do Visual Studio, bem como outros e
 |ccOn.png|Legendas de gráfico||
 |ImageSprite.png|Usado para renderizar a área recolhível|expandido ou recolher gráfico|
 
-### <a name="deploying-a-set-of-topics"></a>Implantar um conjunto de tópicos
+## <a name="deploy-a-set-of-topics"></a>Implantar um conjunto de tópicos
+
 Este é um tutorial rápido e simple para a criação de um conjunto de implantação de conteúdo do Visualizador da Ajuda composto de um arquivo MSHA e o conjunto de cabs ou MSHCs que contém os tópicos. O MSHA é um arquivo XML que descreve um conjunto de cabs ou arquivos MSHC. O Visualizador da Ajuda podem ler o MSHA para obter uma lista de conteúdo (o. CAB ou. Arquivos MSHC) disponíveis para instalação local.
 
 Isso é apenas um livro de instruções que descrevem o esquema XML muito básico para o MSHA de Visualizador de Ajuda.  Há um exemplo de implementação abaixo neste exemplo HelpContentSetup. msha e uma breve visão geral.
@@ -677,14 +690,14 @@ Para obter o pacote de identidade visual do Visual Studio, copie o arquivo de Br
 </div>
 </body>
 </html>
-
 ```
 
 **Resumo**
 
 Usando e estendendo as etapas acima permitirá VSPs implantar seus conjuntos de conteúdo para o Visual Studio Help Viewer.
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Adicionar uma ajuda para o Visual Studio Shell (integrado e isolado)
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Adicionar a Ajuda para o Visual Studio Shell (integrado e isolado)
+
 **Introdução**
 
 Este passo a passo demonstra como incorporar o conteúdo da Ajuda em um aplicativo de Shell do Visual Studio e, em seguida, implantá-lo.
@@ -786,7 +799,7 @@ Para testar isso como se implantado:
 
 6. Criar Catalogtype e adicionar ao repositório de conteúdo (etapa anterior) que contém:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -817,7 +830,7 @@ Para testar isso como se implantado:
 
 12. Dentro do IDE de Contoso, escolha a tecla F1 para testar a funcionalidade de F1.
 
-### <a name="additional-resources"></a>Recursos adicionais
+## <a name="additional-resources"></a>Recursos adicionais
 
 Para a API de tempo de execução, consulte [API de Ajuda do Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 

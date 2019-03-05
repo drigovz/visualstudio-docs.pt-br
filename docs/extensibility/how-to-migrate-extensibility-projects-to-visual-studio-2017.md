@@ -8,12 +8,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+monikerRange: vs-2017
+ms.openlocfilehash: d2d54bf83cac677c09e63da6169e39100cbb30cc
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954237"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324202"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Como: Migrar projetos de extensibilidade para o Visual Studio 2017
 
@@ -133,10 +134,10 @@ Tentativa de instalar a extensão:
 
 ![Instalador do VSIX no Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
-* Opcionais: Verificar as versões anteriores do Visual Studio.
+* Opcional: Verificar as versões anteriores do Visual Studio.
   * Prova a compatibilidade com versões anteriores.
   * Deve funcionar para o Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
-* Opcionais: Verifique que o verificador de versão do instalador do VSIX oferece uma variedade de versões.
+* Opcional: Verifique que o verificador de versão do instalador do VSIX oferece uma variedade de versões.
   * Inclui as versões anteriores do Visual Studio (se instalado).
   * Inclui o Visual Studio 2017.
 
