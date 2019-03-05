@@ -7,12 +7,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925430"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324228"
 ---
 # <a name="workspaces"></a>Workspaces
 
@@ -175,7 +175,19 @@ Um contexto de interface do usuário pode ser usado para carregar automaticament
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>O pacote SourceExplorerPackage não foi carregado corretamente
 
-Extensibilidade de espaço de trabalho é fortemente baseada no MEF, e erros de composição fará com que o pacote de hospedagem Abrir pasta para falhar ao serem carregados. Por exemplo, se uma extensão exporta um tipo com `ExportFileContextProviderAttribute`, mas o tipo implementa apenas `IWorkspaceProviderFactory<IFileContextActionProvider>`, ocorrerá um erro ao tentar abrir uma pasta no Visual Studio. Detalhes do erro podem ser encontrados no _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Resolva quaisquer erros para tipos implementados por sua extensão.
+Extensibilidade de espaço de trabalho é fortemente baseada no MEF, e erros de composição fará com que o pacote de hospedagem Abrir pasta para falhar ao serem carregados. Por exemplo, se uma extensão exporta um tipo com `ExportFileContextProviderAttribute`, mas o tipo implementa apenas `IWorkspaceProviderFactory<IFileContextActionProvider>`, ocorrerá um erro ao tentar abrir uma pasta no Visual Studio.
+
+::: moniker range="vs-2017"
+
+Detalhes do erro podem ser encontrados no _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Resolva quaisquer erros para tipos implementados por sua extensão.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Detalhes do erro podem ser encontrados no _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Resolva quaisquer erros para tipos implementados por sua extensão.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Próximas etapas
 

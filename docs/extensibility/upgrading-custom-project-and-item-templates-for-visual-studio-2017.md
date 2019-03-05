@@ -8,16 +8,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbb34e93b4faf8df206353d2a06649f652cbcaeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689818"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323981"
 ---
-# <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizando Modelos de Projeto e Item personalizados para Visual Studio 2017
+# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizar modelos de Item para Visual Studio 2017 e projeto personalizados
 
-A partir do Visual Studio 2017, Visual Studio detecta os modelos de projeto e item que foram instalados por um VSIX ou um. msi de uma maneira diferente para versões anteriores do Visual Studio. Se você possui as extensões que usam modelos de item ou de projeto personalizado, você precisará atualizar suas extensões. Este tópico explica o que você deve fazer.
+A partir do Visual Studio 2017, Visual Studio detecta os modelos de projeto e item que foram instalados por um VSIX ou um. msi de uma maneira diferente para versões anteriores do Visual Studio. Se você possui as extensões que usam modelos de item ou de projeto personalizado, você precisará atualizar suas extensões. Este artigo explica o que você deve fazer.
 
 Essa alteração afeta apenas o Visual Studio 2017. Ele não afeta as versões anteriores do Visual Studio.
 
@@ -27,7 +28,7 @@ Se você quiser criar um modelo de projeto ou item como parte de uma extensão d
 
 Nas versões anteriores do Visual Studio, **devenv /setup** ou **devenv /installvstemplates** verificados no disco local para localizar modelos de projeto e item. A partir do Visual Studio 2017, a verificação é executada somente para o local de nível de usuário. O local de nível de usuário padrão é **%USERPROFILE%\Documents\\< versão do Visual Studio\>\Templates\\**. Esse local é usado para modelos gerados pelo **Project** > **exportar modelos...**  comando, se o **importar automaticamente o modelo no Visual Studio** opção for selecionada no assistente.
 
-Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.vstman) que especifica o local e outras características do modelo. O arquivo vstman é gerado, juntamente com o arquivo. vstemplate usado para modelos. Se você instalar a extensão usando um. VSIX, você pode fazer isso por meio da recompilação a extensão no Visual Studio 2017. Mas se você usar um. msi, você precisa fazer as alterações manualmente. Para obter uma lista do que você precisa fazer para que essas alterações, consulte **atualizações para extensões instaladas com um. MSI** mais adiante neste tópico.
+Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.vstman) que especifica o local e outras características do modelo. O arquivo vstman é gerado, juntamente com o arquivo. vstemplate usado para modelos. Se você instalar a extensão usando um. VSIX, você pode fazer isso por meio da recompilação a extensão no Visual Studio 2017. Mas se você usar um. msi, você precisa fazer as alterações manualmente. Para obter uma lista do que você precisa fazer para que essas alterações, consulte **atualizações para extensões instaladas com um. MSI** posteriormente nesta página.
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Como atualizar uma extensão do VSIX com modelos de Item ou projeto
 
@@ -58,7 +59,7 @@ Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.v
 
 -   Evite usar arquivos de modelo compactado. Compactado arquivos precisam ser descompactado para recuperar os recursos e o conteúdo do modelo, portanto, eles serão mais caras usar. Em vez disso, você deve implantar os modelos de projeto e item como arquivos individuais em seu próprio diretório para acelerar a inicialização de modelo. Extensões de VSIX, tarefas de build do SDK descompactará automaticamente qualquer modelo compactado ao criar o arquivo VSIX.
 
--   Evite usar entradas de ID de recurso do pacote para o nome do modelo, a descrição, o ícone ou a visualização para evitar cargas de assembly de recurso desnecessárias durante a descoberta de modelo. Em vez disso, você pode usar manifestos localizados para criar uma entrada de modelo para cada localidade, que usa nomes localizados ou propriedades.
+-   Evite usar entradas de ID de recurso do pacote para o nome do modelo, a descrição, o ícone ou visualizar a fim de evitar carregamentos de assembly de recurso desnecessárias durante a descoberta de modelo. Em vez disso, você pode usar manifestos localizados para criar uma entrada de modelo para cada localidade, que usa nomes localizados ou propriedades.
 
 -   Se você estiver incluindo modelos como itens de arquivo, geração de manifesto não pode fornecer os resultados esperados. Nesse caso, você terá que adicionar um manifesto gerado manualmente para o projeto VSIX.
 
@@ -168,7 +169,6 @@ Mostramos os pontos da diferença entre o Visual Studio 2015 e Visual Studio 201
     </VSTemplateHeader>
   </VSTemplateContainer>
 </VSTemplateManifest>
-
 ```
 
  As informações fornecidas pelo  **\<TemplateData >** elemento permanece o mesmo. O  **\<VSTemplateContainer >** elemento aponta para o arquivo. vstemplate para o modelo associado
@@ -177,7 +177,7 @@ Mostramos os pontos da diferença entre o Visual Studio 2015 e Visual Studio 201
 
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Atualizações para as extensões instaladas com um. MSI
 
-Algumas extensões baseadas em MSI Implante modelos locais de modelo comuns, como o seguinte:
+Algumas extensões baseadas em MSI implantar modelos em locais de modelo comuns, como os diretórios a seguir:
 
 - **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
 
@@ -185,7 +185,7 @@ Algumas extensões baseadas em MSI Implante modelos locais de modelo comuns, com
 
 Se sua extensão executa uma implantação baseada em MSI, você precisa gerar o manifesto do modelo manualmente e certifique-se de que ele seja incluído na configuração da extensão. Compare os exemplos de vstman listados acima e o [modelo de manifesto do esquema de referência do Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
-Você deve criar manifestos separados para modelos de projeto e item, e eles devem apontar para o modelo diretório raiz conforme especificado acima. Crie um manifesto por extensão e a localidade.
+Criar manifestos separados para modelos de projeto e item, e eles devem apontar para o modelo diretório raiz conforme especificado acima. Crie um manifesto por extensão e a localidade.
 
 ## <a name="see-also"></a>Consulte também
 

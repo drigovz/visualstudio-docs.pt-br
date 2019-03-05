@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843306"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323634"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores de Roslyn e biblioteca de reconhecimento de código para ImmutableArrays
 
@@ -298,7 +298,7 @@ Em seguida, o método de busca a raiz do documento, e como isso pode envolver tr
 
 Agora, você pode pressionar **F5** para executar o seu analisador em uma segunda instância do Visual Studio. Abra o projeto de console que você usou antes. Agora você verá a lâmpada aparecer onde sua nova expressão de criação de objeto é para `ImmutableArray<int>`. Se você pressionar **Ctrl**+**.** (período), em seguida, você verá seu código corrigir e você verá uma visualização de diferença do código gerado automaticamente na lâmpada da interface do usuário. Roslyn o criará para você.
 
-**Dica de Pro:** Se você iniciar a segunda instância do Visual Studio, e você não vir a lâmpada com a correção de código, em seguida, você talvez precise limpar o cache de componente do Visual Studio. A limpeza do cache força o Visual Studio para examinar novamente os componentes, portanto, o Visual Studio deve pegar seu componente mais recente. Primeiro, desligue a segunda instância do Visual Studio. Em seguida, na **Windows Explorer**, navegue até *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (O "15.0" muda com a versão com o Visual Studio). Excluir o subdiretório *ComponentModelCache*.
+**Dica de Pro:** Se você iniciar a segunda instância do Visual Studio, e você não vir a lâmpada com a correção de código, em seguida, você talvez precise limpar o cache de componente do Visual Studio. A limpeza do cache força o Visual Studio para examinar novamente os componentes, portanto, o Visual Studio deve pegar seu componente mais recente. Primeiro, desligue a segunda instância do Visual Studio. Em seguida, na **Windows Explorer**, navegue até *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (O "16.0" muda com a versão com o Visual Studio.) Excluir o subdiretório *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Se comunicar com vídeo e concluir o projeto de código
 

@@ -7,27 +7,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e84ff96381fb29a1728ad43df4ff558abd17243
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689832"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323994"
 ---
 # <a name="troubleshooting-template-installation"></a>Instalação do modelo de solução de problemas
 
 Se você tiver problemas ao implantar seus modelos de projeto ou item, você pode habilitar o log de diagnóstico.
 
-1. Crie um arquivo pkgdef na pasta Common7\IDE\CommonExtensions para a instalação (por exemplo, C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) com o seguinte conteúdo:
+::: moniker range="vs-2017"
+
+1. Crie um arquivo pkgdef na *Common7\IDE\CommonExtensions* pasta para a instalação. Por exemplo, *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Crie um arquivo pkgdef na *Common7\IDE\CommonExtensions* pasta para a instalação. Por exemplo, *C:\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*.
+
+::: moniker-end
+
+2. Adicione o seguinte ao arquivo pkgdef:
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-1. Abra um Prompt de comando "desenvolvedores" para a instalação por meio de pesquisa na pesquisa do Windows e execute `devenv /updateConfiguration`.
+3. Abra uma [Prompt de comando do desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) para sua instalação e execução `devenv /updateConfiguration`.
 
-1. Inicie o Visual Studio e inicie as caixas de diálogo New Project e o novo Item para inicializar a ambas as árvores do modelo. O log de modelo agora aparece na **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid corresponde à ID da instalação da sua instância do Visual Studio). A inicialização de cada árvore modelo acrescenta as entradas nesse log.
+::: moniker range="vs-2017"
+
+4. Inicie o Visual Studio e inicie as caixas de diálogo New Project e o novo Item para inicializar a ambas as árvores do modelo.
+
+   O log de modelo agora aparece na **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid corresponde à ID da instalação da sua instância do Visual Studio). A inicialização de cada árvore modelo acrescenta as entradas nesse log.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Inicie o Visual Studio e inicie as caixas de diálogo New Project e o novo Item para inicializar a ambas as árvores do modelo.
+
+   O log de modelo agora aparece na **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid corresponde à ID da instalação da sua instância do Visual Studio). A inicialização de cada árvore modelo acrescenta as entradas nesse log.
+
+::: moniker-end
 
 O arquivo de log contém as seguintes colunas:
 
