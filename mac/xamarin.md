@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319459"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428564"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desenvolvimento de aplicativos móveis do Xamarin
 
@@ -28,7 +28,7 @@ Para saber mais sobre o Designer Android, veja o guia [Visão geral do Designer 
 
 ## <a name="ios"></a>iOS
 
-O iOS Designer está totalmente integrado com o Visual Studio para Mac e permite a edição visual de arquivos .xib e de Storyboard para criar interfaces do usuário do iOS, tvOS e WatchOS e transições. A interface do usuário pode ser criada usando a funcionalidade do tipo "arrastar e soltar" entre a Caixa de Ferramentas e o Design Surface, usando uma abordagem intuitiva para manipulação de eventos. O iOS Designer também dá suporte a [custom controls/xamarin/ios/user-interface/designer/ios-designable-controls-overview) com o benefício adicional de renderização em tempo de design.
+O iOS Designer está totalmente integrado com o Visual Studio para Mac e permite a edição visual de arquivos .xib e de Storyboard para criar interfaces do usuário do iOS, tvOS e WatchOS e transições. A interface do usuário pode ser criada usando a funcionalidade do tipo "arrastar e soltar" entre a Caixa de Ferramentas e o Design Surface, usando uma abordagem intuitiva para manipulação de eventos. O Designer do iOS também dá suporte a [controles personalizados](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) com o benefício adicional de renderização em tempo de design.
 
 ![Designer de Storyboard do iOS](media/intro-image30.png)
 

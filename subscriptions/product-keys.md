@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843710"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953895"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -104,10 +104,10 @@ Os assinantes do Visual Studio podem aumentar o número de usuários com acesso 
 Cinco chaves de cada tipo estão disponíveis para o Windows Server 2008 R2, sendo que cada chave comporta 20 conexões. Quatro chaves de cada tipo são fornecidas para o Windows Server 2012 R2, sendo que cada uma comporta 50 conexões.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Para habilitar as conexões adicionais no Windows Server:
-1.  Abra o Gerenciador de Servidores.
-2.  Abra a lista de Servidores no painel de navegação à esquerda.
-3.  Clique com o botão direito do mouse no servidor de licença e escolha “Instalar Licenças”.
-4.  Siga as etapas no assistente.  Ao selecionar o tipo de contrato, escolha “Pacote de Licença (comercial)” e insira a chave do produto (Product Key) obtida no portal do usuário.
+1. Abra o Gerenciador de Servidores.
+2. Abra a lista de Servidores no painel de navegação à esquerda.
+3. Clique com o botão direito do mouse no servidor de licença e escolha “Instalar Licenças”.
+4. Siga as etapas no assistente.  Ao selecionar o tipo de contrato, escolha “Pacote de Licença (comercial)” e insira a chave do produto (Product Key) obtida no portal do usuário.
 
 Se as seguintes condições forem atendidas, os usuários finais poderão conectar-se para acessar os aplicativos pelo RDS:
 - Os usuários devem ser anônimos (em estado não autenticado).

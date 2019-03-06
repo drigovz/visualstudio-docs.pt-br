@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609430"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953511"
 ---
 # <a name="visual-studio-product-feedback"></a>Comentários de produto do Visual Studio
 
@@ -24,7 +24,7 @@ Fale conosco! Estamos interessados em suas ideias para aprimorar nossos produtos
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Desejo relatar um problema com o Visual Studio
 
-Se você tiver problemas com o Visual Studio&mdash;, tais como falhas, desempenho lento ou comportamento inesperado, &mdash;fale conosco usando a ferramenta **Relatar um problema**. No Visual Studio, escolha o ícone de comentários ao lado de **Início Rápido** ou escolha **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Em seguida, o Visual Studio abre a página [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com) no navegador, na qual você pode entrar para relatar o problema. Para saber mais, veja [Como relatar um problema com o Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Se você tiver problemas com o Visual Studio&mdash;, tais como falhas, desempenho lento ou comportamento inesperado, &mdash;fale conosco usando a ferramenta **Relatar um problema**. No Visual Studio, escolha o ícone de comentários ao lado de **Início Rápido** ou escolha **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Em seguida, o Visual Studio abre a página [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com) no navegador, na qual você pode entrar para relatar o problema. Para saber mais, consulte [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quero fazer sugestões sobre os recursos do Visual Studio
 
@@ -59,6 +59,6 @@ Use nosso botão de comentários **Esta página foi útil?** na parte inferior d
 
 ## <a name="see-also"></a>Consulte também
 
-* [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+* [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 * [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com)
 * [Privacidade de dados da Comunidade de Desenvolvedores](developer-community-privacy.md)

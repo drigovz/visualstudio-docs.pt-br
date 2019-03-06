@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Saiba como gerenciar as assinaturas do Visual Studio da sua organização com o portal do administrador.
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843705"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953941"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Usando o portal do administrador de assinaturas do Visual Studio
 
@@ -38,13 +38,14 @@ Para usar o portal do administrador para gerenciar as assinaturas da organizaç�
 ### <a name="onboarding"></a>Integração
 
 Quando sua organização estiver pronta para ser integrada ao Portal de Administração de Assinaturas do Visual Studio, um email será enviado para os Contatos Principal e para Notificações convidando-os para concluir o processo de integração. Os detalhes abaixo são as etapas necessárias para realizar a integração no novo portal. Se você desejar um passo a passo do processo, confira este [vídeo de integração para o administrador](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) ou este [artigo de suporte](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Processo de migração do administrador de assinaturas do Visual Studio").
-1.  **Localizando o PCN e entrando:**
-    - No email, os contatos principal e para notificações recebem um link exclusivo e os três últimos dígitos do PCN (Número do Cliente Público). *
-    - Para obter o PCN inteiro, o Contato principal precisará entrar no VLSC (instruções para localizar o PCN podem ser encontradas lá).
-    - Depois de obter o PCN, ele precisará selecionar o link exclusivo que permitirá sua entrada. Ele poderá entrar usando uma conta corporativa ou de estudante (se sua organização estiver no AAD) ou uma conta MSA (conta da Microsoft) se sua organização não estiver no AAD.
-    - Em seguida, será necessário inserir o PCN.
-2.  **Configure seus administradores.** Depois de inserir o PCN, ele será registrado como um superadministrador no novo sistema e poderá adicionar outros superadministradores e administradores (conhecidos anteriormente como gerentes de assinatura). Para evitar a perda do acesso, isso deverá ser concluído antes da data de migração da organização.
-3.  **Acessando o novo portal de gerenciamento de assinaturas.**  Depois da migração da organização, serão enviados emails para os superadministradores e administradores recém-adicionados convidando-os para acessar o novo portal e começar a gerenciar assinaturas.
+
+1. **Localizando o PCN e entrando:**
+    - No email, os contatos principal e para notificações recebem um link exclusivo e os três últimos dígitos do PCN (Número do Cliente Público). * 
+    - Para obter o PCN inteiro, o Contato principal precisará entrar no VLSC (instruções para localizar o PCN podem ser encontradas lá). 
+    - Depois de obter o PCN, ele precisará selecionar o link exclusivo que permitirá sua entrada. Ele poderá entrar usando uma conta corporativa ou de estudante (se sua organização estiver no AAD) ou uma conta MSA (conta da Microsoft) se sua organização não estiver no AAD. 
+    - Em seguida, será necessário inserir o PCN. 
+2. **Configure seus administradores.** Depois de inserir o PCN, ele será registrado como um superadministrador no novo sistema e poderá adicionar outros superadministradores e administradores (conhecidos anteriormente como gerentes de assinatura). Para evitar a perda do acesso, isso deverá ser concluído antes da data de migração da organização. 
+3. **Acessando o novo portal de gerenciamento de assinaturas.**  Depois da migração da organização, serão enviados emails para os superadministradores e administradores recém-adicionados convidando-os para acessar o novo portal e começar a gerenciar assinaturas.  
 
 > [!NOTE]
 > Se os Contatos Principais ou para Notificações receberem mais de um email, isso significará que eles têm mais de um PCN. Será necessário concluir o processo usando o link exclusivo para o PCN referenciado em cada email.*

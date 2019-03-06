@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Alugue o Visual Studio Professional ou o Visual Studio Enterprise mês a mês ou anualmente, sem nenhum contrato de longo prazo.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842215"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953415"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Comprar assinaturas de nuvem do Visual Studio Professional e do Visual Studio Enterprise
 
@@ -26,28 +26,28 @@ Você pode comprar [assinaturas do Visual Studio Professional e do Visual Studio
 
 ## <a name="before-you-start"></a>Antes de começar
 
-*   Para que as compras sejam cobradas, você precisa de uma [assinatura do Azure](https://azure.microsoft.com/pricing/purchase-options/). Você pode [inscrever-se](https://portal.azure.com) antes da primeira compra ou durante a primeira compra no Visual Studio Marketplace.
+* Para que as compras sejam cobradas, você precisa de uma [assinatura do Azure](https://azure.microsoft.com/pricing/purchase-options/). Você pode [inscrever-se](https://portal.azure.com) antes da primeira compra ou durante a primeira compra no Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Quem pode comprar assinaturas de nuvem do Visual Studio?
 Qualquer pessoa com [acesso de proprietário e colaborador](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) na assinatura do Azure pode comprar assinaturas na nuvem.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Como comprar assinaturas de nuvem
 
-1.  Entre no [Visual Studio Marketplace > Assinaturas](https://marketplace.visualstudio.com/subscriptions).
+1. Entre no [Visual Studio Marketplace > Assinaturas](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Escolha a assinatura que você deseja comprar, por exemplo, a assinatura mensal do Visual Studio Professional.
+2. Escolha a assinatura que você deseja comprar, por exemplo, a assinatura mensal do Visual Studio Professional.
 
-3.  Selecione a assinatura do Azure a ser usada para a cobrança. Se você ainda não tiver uma assinatura do Azure, será possível criá-la.
+3. Selecione a assinatura do Azure a ser usada para a cobrança. Se você ainda não tiver uma assinatura do Azure, será possível criá-la.
     > [!div class="mx-imgBorder"]
     > ![Selecionar assinatura do Azure para cobrança](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
-4.  Selecione o número de assinaturas a serem compradas.
+4. Selecione o número de assinaturas a serem compradas.
     > [!div class="mx-imgBorder"]
     > ![Selecionar número de assinaturas](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Se não desejar assinaturas atribuídas a você, desmarque **Atribuir esta assinatura a mim**.
 
-5.  Confirme e conclua a compra. Se você tiver atribuído uma assinatura para si mesmo, visite o [Portal do assinante do Visual Studio](https://my.visualstudio.com) para iniciar o download do software e usar outros benefícios do assinante.
+5. Confirme e conclua a compra. Se você tiver atribuído uma assinatura para si mesmo, visite o [Portal do assinante do Visual Studio](https://my.visualstudio.com) para iniciar o download do software e usar outros benefícios do assinante.
 
 > [!div class="mx-imgBorder"]
 > ![Concluir a compra com êxito](_img/buy-vs-subscriptions/buy-vs-sub-success.png)

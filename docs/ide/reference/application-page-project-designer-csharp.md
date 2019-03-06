@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f287de1e756d20575e1c72775719b2c366534b6d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927549"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222526"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 
@@ -71,7 +71,7 @@ Para obter informações sobre como acessar esta propriedade de forma programát
 
 **Gerar redirecionamentos de associação automaticamente**
 
-Os redirecionamentos da associação serão adicionados ao seu projeto se o aplicativo ou seus componentes referenciarem mais de uma versão do mesmo assembly. Se você desejar definir manualmente os redirecionamentos de associação no arquivo de projeto, desmarque **Gerar Redirecionamentos de Associação Automaticamente**. Essa caixa de seleção foi introduzida no Visual Studio 2017 versão 15.7.
+Os redirecionamentos da associação serão adicionados ao seu projeto se o aplicativo ou seus componentes referenciarem mais de uma versão do mesmo assembly. Se você desejar definir manualmente os redirecionamentos de associação no arquivo de projeto, desmarque **Gerar Redirecionamentos de Associação Automaticamente**.
 
 Para obter mais informações sobre o redirecionamento, confira [Redirecionando versões de assembly](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

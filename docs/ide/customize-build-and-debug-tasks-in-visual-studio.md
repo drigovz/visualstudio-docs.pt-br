@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03943f4c50785f0c02be2afc0e874c94c1021b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919047"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954160"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizar tarefas de compilação e depuração para desenvolvimento de "Pasta Aberta"
 
@@ -56,6 +56,7 @@ Se a sua base de código usar ferramentas de compilação personalizadas não re
 
 Considere uma base de código composta por um único arquivo em C# chamado *hello.cs*. O *makefile* de uma base de código como essa pode ter esta aparência:
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -72,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 Para um *makefile* que contém destinos de build, limpeza e recompilação, você pode definir o seguinte arquivo *tasks.vs.json*. Ele contém três tarefas de compilação para compilar, recompilar e limpar a base de código, usando NMAKE como a ferramenta de compilação.
 

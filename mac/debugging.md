@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295287"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953480"
 ---
 # <a name="debugging-with-xamarin"></a>Depuração com Xamarin
 
@@ -79,10 +79,10 @@ Quando um ponto de interrupção for atingido, as Ferramentas de depuração per
 
 Esses são os quatro botões:
 
-*   **Executar** – Inicia a execução do código até o próximo ponto de interrupção.
-*   **Sobrepor** – Executa a próxima linha de código. Se a próxima linha for uma chamada de função, Sobrepor executará a função e parará na próxima linha de código *depois* da função.
-*   **Intervir** – Também executa a próxima linha de código. Se a próxima linha é uma chamada de função, Intervir parará na primeira linha da função, permitindo que você continue a depuração da função linha a linha. Se a próxima linha não for uma função, ela se comportará como Passar.
-*   **Sair** – Retorna para a linha na qual a função atual foi chamada.
+* **Executar** – Inicia a execução do código até o próximo ponto de interrupção.
+* **Sobrepor** – Executa a próxima linha de código. Se a próxima linha for uma chamada de função, Sobrepor executará a função e parará na próxima linha de código *depois* da função.
+* **Intervir** – Também executa a próxima linha de código. Se a próxima linha é uma chamada de função, Intervir parará na primeira linha da função, permitindo que você continue a depuração da função linha a linha. Se a próxima linha não for uma função, ela se comportará como Passar.
+* **Sair** – Retorna para a linha na qual a função atual foi chamada.
 
 ## <a name="debugging-monos-class-libraries"></a>Depuração de bibliotecas de classes Mono
 

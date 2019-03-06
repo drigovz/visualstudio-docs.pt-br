@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841663"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953801"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
 
@@ -29,21 +29,22 @@ Locatário não gerenciado é um locatário sem nenhum administrador interno, qu
 Antes de concluir a associação do locatário, aqui estão alguns requisitos ou etapas necessárias para tornar-se um administrador de assinaturas do Visual Studio.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Pré-associação do locatário (locatário gerenciado)
--   Você precisa ser um usuário registrado no Centro de Empresas.
--   É necessário ser um administrador de usuários (no mínimo) ou um administrador global no locatário do qual faz parte. (Isso se aplica se sua empresa já usa serviços de nuvem). Uma dessas funções é necessária para ser um administrador de assinaturas do Visual Studio.
--   É necessário ser um administrador global no locatário do qual faz parte para poder associar sua conta de compra ao locatário.
--   Você precisa ser um administrador de conta ou um gerente de conta no Centro de Empresas.
--   O campo "País ou Região" em seu perfil de usuário (e de qualquer outro usuário) no [Azure](https://portal.azure.com/) precisa ser preenchido corretamente, dependendo da região (ou seja, EUA, Canadá, etc.).
+
+- Você precisa ser um usuário registrado no Centro de Empresas.
+- É necessário ser um administrador de usuários (no mínimo) ou um administrador global no locatário do qual faz parte. (Isso se aplica se sua empresa já usa serviços de nuvem). Uma dessas funções é necessária para ser um administrador de assinaturas do Visual Studio.
+- É necessário ser um administrador global no locatário do qual faz parte para poder associar sua conta de compra ao locatário.
+- Você precisa ser um administrador de conta ou um gerente de conta no Centro de Empresas.
+- O campo "País ou Região" em seu perfil de usuário (e de qualquer outro usuário) no [Azure](https://portal.azure.com/) precisa ser preenchido corretamente, dependendo da região (ou seja, EUA, Canadá, etc.). 
 
 > [!NOTE]
 > Os usuários que você deseja tornar administradores de assinaturas do Visual Studio não precisam ser usuários do Centro de Empresas, pois eles só precisam atender aos critérios das Etapas 2 e 5.
 
 Depois de atender aos critérios nas 5 etapas acima, você poderá associar sua conta de compra ao locatário seguindo as etapas abaixo.
-1.  Faça logon no [Centro de Empresas](https://businessaccount.microsoft.com/).
-2.  Clique na guia **Conta** e escolha **Associar Domínios**.
-3.  Selecione a **Conta de Compra** (se você tiver mais de uma).
-4.  Selecione o **locatário** (por exemplo, contoso.onmicrosoft.com).
-5.  Clique em **Associar Domínio**.
+1. Faça logon no [Centro de Empresas](https://businessaccount.microsoft.com/).
+2. Clique na guia **Conta** e escolha **Associar Domínios**.
+3. Selecione a **Conta de Compra** (se você tiver mais de uma).
+4. Selecione o **locatário** (por exemplo, contoso.onmicrosoft.com).
+5. Clique em **Associar Domínio**.
 
 Após a associação, todos os usuários que atenderem aos critérios necessários serão provisionados como administradores de assinaturas do Visual Studio provavelmente em minutos. No entanto, às vezes isso pode levar até 24 horas. Após o provisionamento, você poderá acessar o Portal de Administração de Assinaturas do Visual Studio. Se esse processo levar mais de 24 horas, contate o suporte do MPSA.
 

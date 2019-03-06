@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49690730b60de6c1ec0aa2f4a0776e45cca43ccb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913165"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223267"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 
@@ -76,7 +76,7 @@ Para obter mais informações sobre a propriedade **Tipo de aplicativo**, consul
 
 ### <a name="auto-generate-binding-redirects"></a>Gerar redirecionamentos de associação automaticamente
 
-Os redirecionamentos da associação serão adicionados ao seu projeto se o aplicativo ou seus componentes referenciarem mais de uma versão do mesmo assembly. Se você desejar definir manualmente os redirecionamentos de associação no arquivo de projeto, desmarque **Gerar Redirecionamentos de Associação Automaticamente**. Essa caixa de seleção foi introduzida no Visual Studio 2017 versão 15.7.
+Os redirecionamentos da associação serão adicionados ao seu projeto se o aplicativo ou seus componentes referenciarem mais de uma versão do mesmo assembly. Se você desejar definir manualmente os redirecionamentos de associação no arquivo de projeto, desmarque **Gerar Redirecionamentos de Associação Automaticamente**.
 
 Para obter mais informações sobre o redirecionamento, confira [Redirecionando versões de assembly](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155871"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954355"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -246,7 +246,7 @@ As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
 1. Insira o seguinte comando:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Inicie a depuração e percorra todas as etapas são necessárias para reproduzir o problema. Durante esse tempo, os logs de depuração aparecem na janela **Saída** em **Log de Host do Adaptador de Depuração**. Em seguida, você poderá copiar os logs dessa janela e colá-los em um problema do GitHub, em um email etc.
@@ -256,7 +256,7 @@ As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
 1. Se o Visual Studio parar de funcionar ou se não for possível acessar a janela **Saída**, reinicie o Visual Studio, abra uma janela de comando e digite o seguinte comando:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Inicie a depuração e reproduza o problema novamente. Os logs de depurador podem ser encontrados em `%temp%\DebugAdapterHostLog.txt`.
