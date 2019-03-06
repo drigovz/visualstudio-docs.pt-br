@@ -54,19 +54,19 @@ Você pode inserir uma expressão para um valor, por exemplo `a + b`. O depurado
 No código C++ nativo, talvez você precise qualificar o contexto de um nome de variável. Para obter mais informações, consulte [operador de contexto (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
-> Certifique-se de que compreender as consequências antes de alterar valores e expressões. Alguns problemas possíveis são:
+> Certifique-se de compreender as consequências antes de alterar valores e expressões. Alguns problemas possíveis são:
 >
-> - Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliando `var1 = ++var2` altera o valor de ambos `var1` e `var2`. Essas expressões são consideradas como tendo [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efeitos colaterais podem causar resultados inesperados se você não estiver ciente deles.
+> - Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, a avaliação de `var1 = ++var2` altera o valor de ambos `var1` e `var2`. Essas expressões são consideradas como tendo [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efeitos colaterais podem causar resultados inesperados se você não estiver ciente deles.
 >
 > - Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Até mesmo uma edição aparentemente inofensiva pode resultar em alterações para alguns dos bits na variável de ponto flutuante.
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Alterar o contexto para a janela Autos ou locais
 
-Você pode usar o **local de depuração** barra de ferramentas para selecionar uma função desejada, thread ou processo, que altera o contexto para as janelas **Autos** e **Locals**.
+Você pode usar a barra de ferramentas **Local de Depuração** para selecionar uma função desejada, thread ou processo, que altera o contexto para as janelas **Autos** e **Locals**.
 
 Para habilitar a barra de ferramentas **local de depuração**, clique em uma parte vazia da área da barra de ferramentas e selecione **local de depuração** da lista suspensa ou selecione **exibição** > **Barras de ferramentas** > **local de depuração**.
 
-Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de interrupção é atingido, as pausas de execução e você pode ver o local na barra de ferramentas **local de depuração**.
+Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de interrupção é atingido, a execução para e você pode ver o local na barra de ferramentas **local de depuração**.
 
 ![Barra de ferramentas local de depuração](../debugger/media/debuglocationtoolbar.png "barra de ferramentas Depurar local")
 
@@ -87,7 +87,7 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
        }
    ```
 
-   Defina um ponto de interrupção na linha `c = 3;`, e inicie o depurador. Quando a execução pausa, a janela **Autos** será exibida:
+   Defina um ponto de interrupção na linha `c = 3;`, e inicie o depurador. Quando a execução pausa, a janela **Autos** é exibida:
 
    ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
@@ -107,14 +107,14 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
        }
    ```
 
-    Defina um ponto de interrupção na linha `e = 5;` e executar o depurador. Quando a execução for interrompida, a janela **Autos** será exibida:
+    Defina um ponto de interrupção na linha `e = 5;` e execute o depurador. Quando a execução for interrompida, a janela **Autos** será exibida:
 
     ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     A variável `e` não foi inicializada, porque a linha `e = 5` ainda não foi executada.
 
 ##  <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método
- No código .NET e C++, você pode examinar os valores de retorno na janela **Autos** ao passar sobre ou fora de uma chamada de método. Chamada de método exibindo retornam valores podem ser úteis quando eles não são armazenados em variáveis locais. Um método pode ser usado como um parâmetro, ou como o valor retornado de outro método.
+ No código .NET e C++, você pode examinar os valores de retorno na janela **Autos** ao passar sobre uma chamada de método ou sair dela. Pode ser útil exibir valores de retornor de chamadas de método quando eles não são armazenados em variáveis locais. Um método pode ser usado como um parâmetro ou como o valor retornado de outro método.
 
  Por exemplo, a seguinte C# código adiciona os valores de retorno das duas funções:
 
@@ -144,7 +144,7 @@ Para ver os valores de retorno de `sumVars()` e `subtractVars()` chamadas de mé
 
 1. Defina um ponto de interrupção a `int x = sumVars(a, b) + subtractVars(c, d);` linha.
 
-1. Iniciar a depuração e quando a execução pausa no ponto de interrupção, selecione **Step Over** ou pressione **F10**. Você deve ver os seguintes valores de retornados na janela **Autos**:
+1. Inicie a depuração e, quando a execução parar no ponto de interrupção, selecione **Step Over** ou pressione **F10**. Você deve ver os seguintes valores de retornados na janela **Autos**:
 
   ![Valor de retorno de Autos C# ](../debugger/media/autosreturnvaluecsharp2.png "Autos retornam valorC#")
 
