@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa7667c26e2394e86833f6d0ce633ea9a4a168
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637328"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428720"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurar o Firewall do Windows para depuração remota
 
@@ -52,11 +52,25 @@ Visual Studio e o depurador remoto tentam abrir as portas corretas durante a ins
 
 Para depuração remota, as portas a seguir devem estar abertas no computador remoto:
 
+::: moniker range="vs-2017"
+
 |**Portas**|**Entrada/saída**|**Protocolo**|**Descrição**|
 |-|-|-|-|
 |4022|Entrada|TCP|Para VS 2017. O porta número é incrementado por 2 para cada versão do Visual Studio. Para obter mais informações, consulte [atribuições de porta de depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |4023|Entrada|TCP|Para VS 2017. O porta número é incrementado por 2 para cada versão do Visual Studio. Essa porta é apenas usada para remoto depurar um processo de 32 bits de uma versão de 64 bits do depurador remoto. Para obter mais informações, consulte [atribuições de porta de depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|Saída|UDP|(Opcional) Necessário para a descoberta de depurador remoto.|
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+|**Portas**|**Entrada/saída**|**Protocolo**|**Descrição**|
+|-|-|-|-|
+|4024|Entrada|TCP|Para o VS de 2019. O porta número é incrementado por 2 para cada versão do Visual Studio. Para obter mais informações, consulte [atribuições de porta de depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4025|Entrada|TCP|Para o VS de 2019. O porta número é incrementado por 2 para cada versão do Visual Studio. Essa porta é apenas usada para remoto depurar um processo de 32 bits de uma versão de 64 bits do depurador remoto. Para obter mais informações, consulte [atribuições de porta de depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|3702|Saída|UDP|(Opcional) Necessário para a descoberta de depurador remoto.|
+
+::: moniker-end
 
 Se você selecionar **usar o modo de compatibilidade gerenciado** sob **ferramentas** > **opções** > **depuração**, abra Essas portas adicionais do depurador remoto. Modo de compatibilidade do depurador gerenciado habilita uma herdado, a versão do Visual Studio 2010 do depurador.
 

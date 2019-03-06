@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53f50c3a107f9796e4fbb661f303bfcabf284cc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 11a310884f9f63264157c96bafc15e8161c0239d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710091"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323835"
 ---
-# <a name="debugging-f"></a>Depurando F#
+# <a name="debugging-f"></a>Depurando F\#
 A depuração de F# é semelhante à depuração de qualquer linguagem gerenciada, com algumas exceções:
 
 -   A janela **Autos** não exibe as variáveis de F#.
