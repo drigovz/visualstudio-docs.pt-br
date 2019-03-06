@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700907"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428694"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
@@ -204,7 +204,7 @@ Você pode adicionar a exceção **configurações de exceção** usando o proce
 Use o **configurações de exceção** janela para definir condições em exceções. Condições com suporte no momento incluem os nomes de módulo para incluir ou excluir da exceção. Ao definir nomes de módulo como condições, você pode optar por interromper a exceção apenas em determinados módulos de código. Você também pode optar por evitar a quebra de módulos específicos.
 
 > [!NOTE]
-> Adicionar condições a uma exceção é nova no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Adicionando condições a uma exceção tem suporte do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Para adicionar exceções condicionais:
 

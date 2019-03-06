@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb86929a050a61a50a7aa1dd41220f4e087ad767
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607038"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428538"
 ---
 # <a name="dia2dump-sample"></a>Exemplo de Dia2dump
 
@@ -64,7 +64,7 @@ Por padrão, o diretório de instalação é um diretório protegido. Isso signi
 
 ## <a name="run-the-dia2dump-sample"></a>Executar o exemplo de Dia2Dump
 
-Dia2Dump.exe depende do msdia*versão*. dll COM o servidor para fornecer seus serviços. No Visual Studio 2015 e Visual Studio 2017, a versão é msdia140.dll. Se o msdia*versão*. dll COM servidor não é inicializado, você deve registrá-lo antes de dia2dump.exe pode trabalhar. O diretório de DIA SDK tem um subdiretório bin que contém o x86 versão da DLL. Uma versão para x64 máquinas de arquitetura está em bin\amd64 e uma versão para ARM está em bin\arm. Para registrar a dll, abra uma janela elevada de prompt de comando do desenvolvedor e altere o diretório que contém a versão para a sua arquitetura de máquina. Digite o comando `regsvr32 msdia140.dll` para registrar o servidor COM.
+Dia2Dump.exe depende do msdia*versão*. dll COM o servidor para fornecer seus serviços. A partir do Visual Studio 2015, a versão é msdia140.dll. Se o msdia*versão*. dll COM servidor não é inicializado, você deve registrá-lo antes de dia2dump.exe pode trabalhar. O diretório de DIA SDK tem um subdiretório bin que contém o x86 versão da DLL. Uma versão para x64 máquinas de arquitetura está em bin\amd64 e uma versão para ARM está em bin\arm. Para registrar a dll, abra uma janela elevada de prompt de comando do desenvolvedor e altere o diretório que contém a versão para a sua arquitetura de máquina. Digite o comando `regsvr32 msdia140.dll` para registrar o servidor COM.
 
 ### <a name="to-run-the-sample"></a>Para executar a amostra
 
