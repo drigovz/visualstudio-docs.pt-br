@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944254"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323459"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
 
@@ -57,7 +57,7 @@ A tabela a seguir define as opções e os argumentos que você pode usar a ferra
 |/membership|Não|-   **Mínimo** – instala um conjunto mínimo de conteúdo de Ajuda com base na SKU especificada usando a opção /skuId. O mapeamento entre o SKU e o conteúdo é exposto no serviço API.<br />-   **Recomendado** – instala um conjunto recomendado de livros para a SKU especificada usando o argumento /skuId. A origem de instalação é a API de serviço ou *.MSHA*.<br />-   **Completo** – instala todo o conjunto de livros para a SKU que você especifica usando o argumento /skuId. A origem de instalação é a API de serviço ou *.MSHA*.|
 |/locationpath|Não|Especifica a pasta padrão para o conteúdo da Ajuda local. Você deve usar essa opção para instalar ou mover apenas o conteúdo. Se você especificar esta opção, também deverá especificar a opção /silent.|
 |/silent|Não|Instala ou remove conteúdo da Ajuda sem avisar o usuário ou sem exibir qualquer IU, incluindo o ícone na área de notificação de status. A saída é registrada em um arquivo no diretório *%Temp%*. **Importante:**  Para instalar o conteúdo silenciosamente, você deve utilizar arquivos *.cab* assinados digitalmente, e não arquivos *.mshc*.|
-|/launchingApp|Não|Define o aplicativo e o contexto de catálogo quando o Visualizador da Ajuda é iniciado sem o aplicativo pai. Os argumentos para essa opção são *CompanyName*, *ProductName* e *VersionNumber* (por exemplo, `/launchingApp Microsoft,VisualStudio,15.0`).<br /><br /> Isso é necessário para a instalação do conteúdo com o parâmetro /silent.|
+|/launchingApp|Não|Define o aplicativo e o contexto de catálogo quando o Visualizador da Ajuda é iniciado sem o aplicativo pai. Os argumentos para essa opção são *CompanyName*, *ProductName* e *VersionNumber* (por exemplo, `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Isso é necessário para a instalação do conteúdo com o parâmetro /silent.|
 |/wait *Seconds*|Não|Interrompe operações de instalação, desinstalação e atualização. Se uma operação já está em andamento para o catálogo, o processo esperará até o número determinado de segundos para continuar. Use 0 para aguardar indefinidamente.|
 |/?|Não|Lista as opções e suas descrições para a ferramenta de linha de comando do Gerenciador de Conteúdo da Ajuda.|
 

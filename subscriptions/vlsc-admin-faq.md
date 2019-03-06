@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Perguntas frequentes sobre migração de administrador no Centro de Empresas da Microsoft
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844094"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953937"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migração de administração de assinaturas do Visual Studio
 
@@ -44,21 +44,21 @@ Sim.  Há duas fases nesse processo. Configurar (ou integrar) a organização an
 ### <a name="what-is-the-onboarding-process"></a>O que é o processo de integração?
 Um email é enviado para os Contatos Principal/para Notificações convidando-os a concluir o processo de integração.
 Confira abaixo as instruções sobre o processo.
-1.  **Localizando o PCN e entrando:**
+1. **Localizando o PCN e entrando:**
 
-    a.  No email, os Contatos Principal/para Notificações recebem um link exclusivo e os últimos três dígitos do PCN (número do cliente).*
+    a. No email, os Contatos Principal/para Notificações recebem um link exclusivo e os últimos três dígitos do PCN (número do cliente).*
 
-    b.  Para obter o PCN inteiro, o Contato Principal precisará entrar no Centro de Empresas da Microsoft (instruções para localizar o PCN podem ser encontradas abaixo).
+    b. Para obter o PCN inteiro, o Contato Principal precisará entrar no Centro de Empresas da Microsoft (instruções para localizar o PCN podem ser encontradas abaixo).
 
-    c.  Depois de obter o PCN, ele precisará selecionar o link exclusivo que permitirá sua entrada. Eles poderão entrar usando uma conta corporativa ou de estudante (se a organização estiver no Azure AD) ou uma conta da Microsoft (MSA) se a organização não estiver no Azure AD.
+    c. Depois de obter o PCN, ele precisará selecionar o link exclusivo que permitirá sua entrada. Eles poderão entrar usando uma conta corporativa ou de estudante (se a organização estiver no Azure AD) ou uma conta da Microsoft (MSA) se a organização não estiver no Azure AD.
 
-    d.  Em seguida, será solicitado que eles insiram o PCN.
+    d. Em seguida, será solicitado que eles insiram o PCN.
 
-2.  **Configure os administradores:**
+2. **Configure os administradores:**
 
     Depois de inserir o PCN, eles serão levados à página em que é possível adicionar superadministradores e administradores (conhecidos anteriormente como Gerentes de Assinatura). O ideal é que isso seja concluído antes da data de migração da organização, para que não haja nenhuma interrupção no gerenciamento de suas assinaturas.
 
-3.  **Acessando o novo portal de gerenciamento de assinaturas:** Após a migração de sua organização, serão enviados emails para os superadministradores e os administradores convidando-os a acessar o novo portal e começar a gerenciar assinaturas.
+3. **Acessando o novo portal de gerenciamento de assinaturas:** Após a migração de sua organização, serão enviados emails para os superadministradores e os administradores convidando-os a acessar o novo portal e começar a gerenciar assinaturas.
 
 > [!NOTE]
 > Se os Contatos Principais ou para Notificações receberem mais de um email, isso significará que eles têm mais de um PCN. Será necessário concluir o processo usando o link exclusivo para o PCN referenciado em cada email.

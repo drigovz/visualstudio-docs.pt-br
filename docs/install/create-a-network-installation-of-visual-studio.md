@@ -1,7 +1,7 @@
 ---
 title: Criar uma instalação baseada em rede
 description: Saiba como criar um ponto de instalação de rede para implantar o Visual Studio em uma empresa.
-ms.date: 02/12/2019
+ms.date: 02/27/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e25bdc20393c0d3faff5faa72c89bd531972e5d4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796394"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954015"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Criar uma instalação de rede do Visual Studio 2017
 
@@ -201,7 +201,7 @@ Caso precise criar um layout para uma versão mais antiga do Visual Studio 2017,
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Como obter suporte para o instalador offline
 
-Caso tenha um problema com a instalação offline, gostaríamos de saber a respeito. A melhor maneira de fazer isso é usando a ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Ao usar essa ferramenta, é possível enviar-nos a telemetria e os logs necessários para nos ajudar a diagnosticar e corrigir o problema.
+Caso tenha um problema com a instalação offline, gostaríamos de saber a respeito. A melhor maneira de fazer isso é usando a ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio.md). Ao usar essa ferramenta, é possível enviar-nos a telemetria e os logs necessários para nos ajudar a diagnosticar e corrigir o problema.
 
 Oferecemos também uma opção de suporte por meio de [**chat ao vivo**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para problemas relacionados à instalação.
 
@@ -210,6 +210,7 @@ Também temos outras opções de suporte disponíveis. Para obter uma lista dela
 ## <a name="see-also"></a>Consulte também
 
 * [Atualizar uma instalação baseada em rede do Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Atualizações de controle para implantações do Visual Studio com base em rede](controlling-updates-to-visual-studio-deployments.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)

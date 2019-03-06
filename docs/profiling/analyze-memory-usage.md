@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b73fc70231e9756bf20f90f5873a0241c5f29bdd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 277401cb8e4e3b90d3543d6f5307452e83d07cc8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315557"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222617"
 ---
 # <a name="analyze-memory-usage"></a>Analisar o uso de memória
 Use a ferramenta de diagnóstico **Uso de Memória** integrada no depurador para localizar perdas de memória e uso de memória ineficiente. A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, ASP.NET, nativos ou mistos (.NET e nativos).
@@ -30,7 +30,7 @@ Você pode usar as ferramentas de criação de perfil sem o depurador com o Wind
 
 [Analisar a CPU e a memória durante a depuração](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Blog do Visual C++: Criação de perfil de memória no Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)
+[Blog do Visual C++: Criação de perfil de memória no Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="see-also"></a>Consulte também
 

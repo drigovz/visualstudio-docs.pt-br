@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Saiba mais sobre as responsabilidades dos administradores de assinaturas.
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842345"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954474"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Visão geral das responsabilidades do administrador
 Como administrador, você tem a capacidade de gerenciar as assinaturas da organização.  A função de administrador também tem a responsabilidade de garantir que as assinaturas sejam gerenciadas de acordo com os termos de licença. Este artigo descreve as responsabilidades, os benefícios e as limitações da função de administrador.
 
 ## <a name="roles--responsibilities"></a>Funções e responsabilidades
 Um administrador do Visual Studio tem quatro responsabilidades principais:
-1.  **Entender os benefícios e as restrições das assinaturas do Visual Studio.** O entendimento correto sobre os benefícios permite que você reduza os custos de hardware através do uso de serviços de nuvem e reduza os custos de software com licenças por usuário para ambientes de pré-produção.
-2.  **Atribuir assinaturas do Visual Studio a pessoas específicas e determinadas e incentivar o uso.** O contrato requer que as assinaturas do Visual Studio sejam atribuídas a pessoas específicas e determinadas. Faça o acompanhamento das pessoas que receberam assinaturas para garantir que elas acessem e aproveitem ao máximo os benefícios incluídos nas assinaturas do Visual Studio.
-3.  **Fazer inventário de seu ambiente de pré-produção com precisão.** Isso é essencial para garantir que todos os usuários que interagem com software licenciado do Visual Studio estejam adequadamente licenciados com suas respectivas assinaturas do Visual Studio.
-4.  **Controlar as alterações de atribuição dos usuários e adquirir licenças adicionais de acordo com um agendamento.** Os contratos de VL (Licenciamento por Volume) e MPSA da Microsoft oferecem flexibilidade para usar e atribuir assinaturas do Visual Studio. Em troca, é esperado que você controle as alterações em relação ao uso do software e atribuições de usuário, e também processe os pedidos de licenças adicionais de acordo com o agendamento descrito no contrato.
+
+1. **Entender os benefícios e as restrições das assinaturas do Visual Studio.** O entendimento correto sobre os benefícios permite que você reduza os custos de hardware através do uso de serviços de nuvem e reduza os custos de software com licenças por usuário para ambientes de pré-produção. 
+2. **Atribuir assinaturas do Visual Studio a pessoas específicas e determinadas e incentivar o uso.** O contrato requer que as assinaturas do Visual Studio sejam atribuídas a pessoas específicas e determinadas. Faça o acompanhamento das pessoas que receberam assinaturas para garantir que elas acessem e aproveitem ao máximo os benefícios incluídos nas assinaturas do Visual Studio.
+3. **Fazer inventário de seu ambiente de pré-produção com precisão.** Isso é essencial para garantir que todos os usuários que interagem com software licenciado do Visual Studio estejam adequadamente licenciados com suas respectivas assinaturas do Visual Studio. 
+4. **Controlar as alterações de atribuição dos usuários e adquirir licenças adicionais de acordo com um agendamento.** Os contratos de VL (Licenciamento por Volume) e MPSA da Microsoft oferecem flexibilidade para usar e atribuir assinaturas do Visual Studio. Em troca, é esperado que você controle as alterações em relação ao uso do software e atribuições de usuário, e também processe os pedidos de licenças adicionais de acordo com o agendamento descrito no contrato.
 
 ## <a name="benefits-and-limitations"></a>Benefícios e limitações
 As assinaturas do Visual Studio permitem aos membros da equipe de desenvolvimento instalar e usar o software para projetar, desenvolver, testar, avaliar e demonstrar outro software. As assinaturas de software do Visual Studio não estão licenciadas para ambientes de produção.
@@ -70,9 +71,10 @@ Os administradores de assinaturas do Visual Studio devem controlar o uso do Visu
 - Um usuário interage com software do Visual Studio.
 
 Sua obrigação de compra completa é determinada pela **marca d'água alta de uso**. Esta marca-d'água é o ponto alto em atribuições de usuário diário ou em usuários interagindo com software do Visual Studio, o que for maior.
-1.  Os administradores de assinaturas do Visual Studio podem aumentar a marca d'água alta de uso atribuindo assinaturas do Visual Studio a indivíduos.
-2.  Os administradores de assinaturas do Visual Studio podem reatribuir assinaturas de um assinante a outro após 90 dias do momento da atribuição original. Para evitar uma marca d'água alta artificialmente, sempre faça isso removendo primeiro a assinatura existente e, em seguida, adicionando a nova.
-3.  Os administradores de assinaturas do Visual Studio podem alterar o nível de assinatura atribuído para um indivíduo, o que constituiria na diminuição em uma atribuição e no aumento em outra. Ao diminuir o nível de assinatura atribuído de um assinante, a pessoa deve imediatamente parar de usar e desinstalar tudo o que está somente na assinatura de nível mais alto.
+
+1. Os administradores de assinaturas do Visual Studio podem aumentar a marca d'água alta de uso atribuindo assinaturas do Visual Studio a indivíduos.
+2. Os administradores de assinaturas do Visual Studio podem reatribuir assinaturas de um assinante a outro após 90 dias do momento da atribuição original. Para evitar uma marca d'água alta artificialmente, sempre faça isso removendo primeiro a assinatura existente e, em seguida, adicionando a nova.
+3. Os administradores de assinaturas do Visual Studio podem alterar o nível de assinatura atribuído para um indivíduo, o que constituiria na diminuição em uma atribuição e no aumento em outra. Ao diminuir o nível de assinatura atribuído de um assinante, a pessoa deve imediatamente parar de usar e desinstalar tudo o que está somente na assinatura de nível mais alto. 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>Assinaturas de nuvem, Open License ou Open Value
 É possível que você esteja atribuindo assinaturas por meio de um programa, como assinaturas do Microsoft Cloud, Open License ou Open Value. Nesse caso, você deve processar seu pedido de usuários adicionais durante o mês no qual os usuários (funcionários ou prestadores de serviço externos) começam a interagir com o software licenciado do Visual Studio.

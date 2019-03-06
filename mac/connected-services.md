@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 11/06/2018
-ms.openlocfilehash: ada47aa3d0cb0d9917404efc2775b843223c6e86
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948940"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953976"
 ---
 # <a name="connected-services-walkthrough"></a>Passo a passo do Connected Services
 
@@ -65,10 +65,10 @@ Este passo a passo mostra como adicionar um serviço de back-end do Azure, que o
 
 Um novo serviço requer os seguintes parâmetros:
 
--   **Nome do serviço de aplicativo** – nome/ID exclusiva do plano
--   **Assinatura** – a assinatura que você deseja usar para pagar pelo serviço
--   **Grupo de Recursos** – um modo de organizar todos os recursos do Azure para um projeto. Opção de usar um existente ou criar um. Se esse for seu primeiro serviço do Azure, crie um.
--   **Plano de Serviço** – determina o local e o custo dos recursos que o usam. Opção de usar um existente ou criar um. Se esse for o primeiro serviço do Azure, use o padrão ou crie um novo na camada gratuita (F1).
+- **Nome do serviço de aplicativo** – nome/ID exclusiva do plano
+- **Assinatura** – a assinatura que você deseja usar para pagar pelo serviço
+- **Grupo de Recursos** – um modo de organizar todos os recursos do Azure para um projeto. Opção de usar um existente ou criar um. Se esse for seu primeiro serviço do Azure, crie um.
+- **Plano de Serviço** – determina o local e o custo dos recursos que o usam. Opção de usar um existente ou criar um. Se esse for o primeiro serviço do Azure, use o padrão ou crie um novo na camada gratuita (F1).
 
 Visite a [Documentação dos aplicativos móveis](/azure/app-service-mobile/) para obter mais informações.
 

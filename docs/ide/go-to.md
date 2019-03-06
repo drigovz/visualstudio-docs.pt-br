@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923532"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222474"
 ---
 # <a name="find-code-using-go-to-commands"></a>Localizar código usando comandos Ir Para
 
-Os comandos **Ir Para** do Visual Studio executam uma pesquisa restrita no código para ajudá-lo a localizar rapidamente os itens especificados. É possível ir para uma linha, um tipo, um símbolo, um arquivo e um membro específico usando uma interface simples e unificada. Esse recurso existe no Visual Studio 2017 e posterior.
+Os comandos **Ir Para** do Visual Studio executam uma pesquisa restrita no código para ajudá-lo a localizar rapidamente os itens especificados. É possível ir para uma linha, um tipo, um símbolo, um arquivo e um membro específico usando uma interface simples e unificada.
 
 ## <a name="how-to-use-it"></a>Como usá-lo
 

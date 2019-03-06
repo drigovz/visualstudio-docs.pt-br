@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: 3882f52dc38364b0ff325c49964fa907ee8a26ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e5304011b27717f8967d2fc77c66c0cf0e6bc908
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927939"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953227"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Depurando um serviço de nuvem do Azure publicado com o Visual Studio e o IntelliTrace
 Com o IntelliTrace, você pode registrar em log informações extensas de depuração sobre uma instância de função quando ela é executada no Azure. Se precisa encontrar a causa de um problema, você pode usar os logs do IntelliTrace para examinar seu código no Visual Studio como se ele estivesse em execução no Azure. Na verdade, o IntelliTrace registra dados de ambiente e a execução do código de chave quando seu aplicativo Azure está em execução como um serviço de nuvem no Azure, além de permitir que você reproduza os dados gravados usando o Visual Studio.
