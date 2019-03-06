@@ -13,16 +13,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939834"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323687"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
 
-Quando você arrasta itens dos [janela fontes de dados](add-new-data-sources.md#data-sources-window) para um designer, uma consideração especial entra em ação: os nomes de coluna nos rótulos de legenda são reformatados para uma cadeia de caracteres mais legível quando duas ou mais palavras são encontradas concatenados. Você pode personalizar a maneira na qual esses rótulos são criados, definindo o **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valores em o **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** chave do registro.
+Quando você arrasta itens dos [janela fontes de dados](add-new-data-sources.md#data-sources-window) para um designer, uma consideração especial entra em ação: os nomes de coluna nos rótulos de legenda são reformatados para uma cadeia de caracteres mais legível quando duas ou mais palavras são encontradas concatenados.
+
+::: moniker range="vs-2017"
+
+Você pode personalizar a maneira na qual esses rótulos são criados definindo a **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valores em o **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** chave do registro.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Você pode personalizar a maneira na qual esses rótulos são criados definindo a **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valores em o **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** chave do registro.
+
+::: moniker-end
 
 > [!NOTE]
 > Essa chave do registro não existe até que você criá-lo.
@@ -46,21 +58,31 @@ A tabela a seguir lista as configurações padrão interno para esses valores do
 |**SmartCaptionSuffix**|**:**|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name`, o sufixo torna `Company Name:`|
 
 > [!CAUTION]
-> Você deve ser muito cuidado ao fazer qualquer coisa no Editor do registro. Faça backup do registro antes de editá-lo. Se você usar o Editor do Registro incorretamente, você pode causar sérios problemas que talvez exijam a reinstalação do sistema operacional. A Microsoft não garante que os problemas que causam usando o Editor do Registro incorretamente podem ser resolvidos. Use o Editor do Registro por sua conta e risco.
+> Tenha muito cuidado ao fazer qualquer coisa no Editor do registro. Faça backup do registro antes de editá-lo. Se você usar o Editor do Registro incorretamente, você pode causar sérios problemas que talvez exijam a reinstalação do sistema operacional. A Microsoft não garante que os problemas que causam usando o Editor do Registro incorretamente podem ser resolvidos. Use o Editor do Registro por sua conta e risco.
 >
-> O seguinte artigo da Base de conhecimento contém instruções para fazer backup, edição e a restauração do registro: [descrição do registro do Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Para obter informações sobre como fazer backup, edição e a restauração do registro, consulte [informações de registro do Windows para usuários avançados](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificar o comportamento de Legendagem oculta inteligente da janela fontes de dados
 
-1.  Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
+1. Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
 
-2.  Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
+2. Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
 
-3.  Expanda o **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nó.
+3. Expanda o **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nó.
 
-4.  Clique com botão direito do **15.0** nó e crie um novo **chave** chamado `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Clique com botão direito do **Designers de dados** nó e criar três novos valores de cadeia de caracteres:
+4. Clique com botão direito do **15.0** nó e crie um novo **chave** chamado `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Clique com botão direito do **16.0** nó e crie um novo **chave** chamado `Data Designers`.
+
+::: moniker-end
+
+5. Clique com botão direito do **Designers de dados** nó e criar três novos valores de cadeia de caracteres:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -82,15 +104,25 @@ A tabela a seguir lista as configurações padrão interno para esses valores do
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>Desativar o recurso de Legendagem oculta inteligente
 
-1.  Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
+1. Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
 
-2.  Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
+2. Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
 
-3.  Expanda o **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nó.
+3. Expanda o **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nó.
 
-4.  Clique com botão direito do **15.0** nó e crie um novo **chave** chamado `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Clique com botão direito do **Designers de dados** nó e criar três novos valores de cadeia de caracteres:
+4. Clique com botão direito do **15.0** nó e crie um novo **chave** chamado `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Clique com botão direito do **16.0** nó e crie um novo **chave** chamado `Data Designers`.
+
+::: moniker-end
+
+5. Clique com botão direito do **Designers de dados** nó e criar três novos valores de cadeia de caracteres:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`

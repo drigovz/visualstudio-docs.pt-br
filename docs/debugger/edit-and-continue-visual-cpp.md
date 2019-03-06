@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694992"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222347"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C++)
 Você pode usar Editar e continuar em projetos do Visual C++. Ver [alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md) para obter informações sobre as limitações de editar e continuar.
 
-Para obter mais informações sobre as melhorias do Visual Studio 2015 atualização 3, consulte [C++ Edit e Continue no Visual Studio 2015 atualização 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Para obter mais informações sobre as melhorias do Visual Studio 2015 atualização 3, consulte [C++ Edit e Continue no Visual Studio 2015 atualização 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  O [/Zo (aprimorar otimizado de depuração)](/cpp/build/reference/zo-enhance-optimized-debugging) opção de compilador que foi introduzida no Visual Studio 2013 atualização 3 adiciona informações adicionais para arquivos. PDB (símbolo) para binários compilados sem a [/Od (desabilitar (Depurar)) ](https://msdn.microsoft.com/library/aafb762y.aspx) opção.
 
@@ -37,7 +37,7 @@ Para obter mais informações sobre as melhorias do Visual Studio 2015 atualiza�
  Talvez você queira desabilitar a invocação automática de editar e continuar, se você estiver fazendo edições ao código que você deseja não aplicado durante a sessão de depuração atual. Você também pode habilitar novamente automática editar e continuar.
 
 > [!IMPORTANT]
-> Para configurações de compilação necessários e outras informações sobre compatibilidade de recursos, consulte [C++ Edit e Continue no Visual Studio 2015 atualização 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Para configurações de compilação necessários e outras informações sobre compatibilidade de recursos, consulte [C++ Edit e Continue no Visual Studio 2015 atualização 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
 1. Se você estiver em uma sessão de depuração, pare a depuração (**Shift + F5**).
 

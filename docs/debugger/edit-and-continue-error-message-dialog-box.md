@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47693c6fbb25fb0a7c2468abbad515f8aaf63159
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694979"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222341"
 ---
 # <a name="edit-and-continue-error-message"></a>Editar e continuar a mensagem de erro
 
@@ -46,6 +46,6 @@ As possíveis razões para essa mensagem de erro incluem:
 -   Começar a depurar uma versão antiga de um aplicativo, porque a versão mais recente tem erros de compilação.
 
 Para obter mais informações, consulte:
-- [Postagem de C++ Edit e Continue blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)
+- [Postagem de C++ Edit e Continue blog](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [Alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md)
 - [Editar e continuar](../debugger/edit-and-continue.md)

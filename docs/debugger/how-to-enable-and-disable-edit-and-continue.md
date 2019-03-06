@@ -26,18 +26,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694602"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223579"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Como: habilitar e desabilitar editar e continuar (C#, VB, C++)
 
 Você pode desabilitar ou habilitar **editar e continuar** no Visual Studio **opções** caixa de diálogo em tempo de design. **Editar e Continuar** só funciona em builds de depuração. Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).
 
-Para o C++ nativo, **editar e continuar** requer o uso de `/INCREMENTAL` opção. Para obter mais informações sobre os requisitos de recurso no C++, consulte este [postagem de blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) e [editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
+Para o C++ nativo, **editar e continuar** requer o uso de `/INCREMENTAL` opção. Para obter mais informações sobre os requisitos de recurso no C++, consulte este [postagem de blog](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) e [editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
 
 **Para habilitar ou desabilitar editar e continuar:**
 

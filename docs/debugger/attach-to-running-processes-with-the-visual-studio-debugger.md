@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637497"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428759"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está em execução, selecione **Debug** > **anexar ao processo** ou pressione **Ctrl**+**Alt** + **P** no Visual Studio e usar o **anexar ao processo** caixa de diálogo para anexar o depurador ao processo.
@@ -95,9 +95,20 @@ Para obter instruções mais completas para depuração de aplicativos do ASP.NE
 
    - Selecione a seta suspensa ao lado **destino de Conexão**e selecione o nome do computador na lista suspensa.
    - Digite o nome do computador na **destino de Conexão** caixa.
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > Se você não pode se conectar usando o nome do computador remoto, tente usar o IP e endereço da porta (por exemplo, `123.45.678.9:4022`). 4022 é a porta padrão para o depurador remoto do Visual Studio 2017 x64. Para outras atribuições de porta do depurador remoto, consulte [atribuições de porta do depurador remoto](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > Se você não pode se conectar usando o nome do computador remoto, tente usar o IP e endereço da porta (por exemplo, `123.45.678.9:4022`). 4024 é a porta padrão para o depurador remoto do Visual Studio 2019 x64. Para outras atribuições de porta do depurador remoto, consulte [atribuições de porta do depurador remoto](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
 
    - Selecione o **encontrar** lado a **destino de Conexão** caixa para abrir o **conexões remotas** caixa de diálogo. O **conexões remotas** caixa de diálogo lista todos os dispositivos que estão na sua sub-rede local ou diretamente conectado ao seu computador. Talvez você precise [abra a porta UDP 3702](../debugger/remote-debugger-port-assignments.md) no servidor para descobrir dispositivos remotos. Selecione o computador ou dispositivo que você deseja e, em seguida, clique em **selecionar**.
 
@@ -142,7 +153,7 @@ Se nenhuma dessas soluções alternativas é possível, uma terceira opção é 
 Você poderá reanexar rapidamente a processos que estavam anteriormente conectados a, escolhendo **Debug** > **reanexar ao processo** (**Shift** + **Alt**+**P**). Quando você escolhe este comando, o depurador tentará imediatamente anexar até o último processo anexado ao primeiro tentando corresponder à ID do processo anterior e se isso falhar, correspondendo ao anterior nome do processo. Se nenhuma correspondência for encontrada, ou se vários processos têm o mesmo nome, o **anexar ao processo** caixa de diálogo será aberta para que você possa selecionar o processo correto.
 
 > [!NOTE]
-> O **reanexar ao processo** command é novo no Visual Studio 2017.
+> O **reanexar ao processo** comando está disponível a partir do Visual Studio 2017.
 
 ## <a name="BKMK_Scenarios"></a> Cenários comuns de depuração
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703702"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428642"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Guia de Introdução com o depurador de instantâneo
 
@@ -69,6 +69,6 @@ Você pode encontrar mais informações sobre o depurador de instantâneo na [p�
 
 ## <a name="dont-show-me-this-again"></a>Não mostrar novamente
 
-Para nunca mostrar a página de início de depurador de instantâneo novamente quando você conecta o depurador de instantâneo, alterar o **Mostrar 'Getting Started' página no início da sessão** opção **ferramentas**  >   **As opções** > **depurador de instantâneo**.
+Para nunca mostrar a página de início do depurador de instantâneo novamente quando você conectar o depurador de instantâneo, alterar o **Mostrar 'Getting Started' página no início da sessão** opção **ferramentas**  >   **As opções** > **depurador de instantâneo**.
 
 ![Página de opção de ferramenta de depurador de instantâneo](../media/snapshot-startpage-tools-options.png)

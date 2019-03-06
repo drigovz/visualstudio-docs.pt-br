@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8de3edf65b67463bb1678f23d71695bc4867b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 206b14a1cdab61d64354e134449149b70a030683
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599162"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954487"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicativos de 64 bits
 Você pode depurar um aplicativo de 64 bits que está sendo executado no computador local ou em um computador remoto.
@@ -50,7 +50,7 @@ Você pode depurar um aplicativo de 64 bits que está sendo executado no computa
 
 -   Você tem o software de segurança de rede instalado no computador que fez a pilha de rede seja pouco confiável e ele descartado pacotes ultrapassou o localhost. Tente desabilitar todos os softwares de segurança de rede e veja se isso resolve. Nesse caso, de relatório para o seu fornecedor de software de segurança de rede que o software está interferindo com o tráfego de localhost.
 
--   Você está executando em um problema de suspensão ou de desempenho com o Visual Studio. Se o problema ocorrer regularmente, você pode coletar despejos de memória do Visual Studio (devenv.exe) e o processo de trabalho (msvsmon.exe) e enviá-los à Microsoft. Para obter informações sobre como relatar um problema, consulte [como relatar um problema com o Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
+-   Você está executando em um problema de suspensão ou de desempenho com o Visual Studio. Se o problema ocorrer regularmente, você pode coletar despejos de memória do Visual Studio (devenv.exe) e o processo de trabalho (msvsmon.exe) e enviá-los à Microsoft. Para obter informações sobre como relatar um problema, consulte [como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Consulte também
 
