@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954423"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428824"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referência de valor de cor para o Visual Studio
 
@@ -134,7 +134,7 @@ Ao usar este guia de referência, lembre-se:
 | Em primeiro plano: desabilitada | ![Amostra de #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 amostra")<br />`#FFA2A4A5` | ![#FF656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#FF656565 swatch")<br />`#FF656565` | ![Amostra de #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 amostra")<br />`#FFA2A4A5` | ![Amostra de texto cinza](../../extensibility/ux-guidelines/media/HCGrayText.png "texto cinza amostra")<br />`GrayText` |
 | Background: disabled | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Amostra de controle](../../extensibility/ux-guidelines/media/HCControl.png "amostra de controle")<br />`Control` |
 | Borda | ![Amostra #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "amostra #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF434346 swatch](../../extensibility/ux-guidelines/media/434346.png "#FF434346 swatch")<br />`#FF434346` | ![Amostra #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "amostra #FFCCCEDB")<br />`#FFCCCEDB` | ![Amostra de ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark amostra")<br />`ControlDark` |
-| Borda: desabilitada | ![Amostra #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "amostra #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF434346 swatch](../../extensibility/ux-guidelines/media/434346.png "#FF434346 swatch")<br />`#FF434346` | ![Amostra de #FFC6C6C6](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 amostra")<br />`#FFC6C6C6` | ![Amostra de ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark amostra")<br />`ControlDark ` |
+| Borda: desabilitada | ![Amostra #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "amostra #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF434346 swatch](../../extensibility/ux-guidelines/media/434346.png "#FF434346 swatch")<br />`#FF434346` | ![Amostra de #FFC6C6C6](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 amostra")<br />`#FFC6C6C6` | ![Amostra de ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark amostra")<br />`ControlDark` |
 
 ### <a name="list-items"></a>Itens de lista
 
