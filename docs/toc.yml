@@ -95,25 +95,25 @@ items:
       - name: IDs de carga de trabalho e de componente do Visual Studio
         href: install/workload-and-component-ids.md
         items:
-        - name: Visual Studio Enterprise 2017
+        - name: Visual Studio Enterprise
           href: install/workload-component-id-vs-enterprise.md
-        - name: Visual Studio Professional 2017
+        - name: Visual Studio Professional
           href: install/workload-component-id-vs-professional.md
-        - name: Visual Studio Community 2017
+        - name: Comunidade Visual Studio
           href: install/workload-component-id-vs-community.md
-        - name: Team Explorer para Visual Studio 2017
+        - name: Team Explorer para Visual Studio
           href: install/workload-component-id-vs-team-explorer.md
-        - name: Visual Studio Express 2017 para Windows Desktop
+        - name: Visual Studio Desktop Express
           href: install/workload-component-id-vs-express.md
-        - name: Ferramentas de Build do Visual Studio 2017
+        - name: Ferramentas de Build do Visual Studio
           href: install/workload-component-id-vs-build-tools.md
-        - name: Visual Studio Test Agent 2017
+        - name: Test Agent do Visual Studio
           href: install/workload-component-id-vs-test-agent.md
-        - name: Visual Studio Test Controller 2017
+        - name: Test Controller do Visual Studio
           href: install/workload-component-id-vs-test-controller.md
-        - name: Visual Studio Test Professional 2017
+        - name: Visual Studio Test Professional
           href: install/workload-component-id-vs-test-professional.md
-        - name: Visual Studio Feedback Client 2017
+        - name: Visual Studio Feedback Client
           href: install/workload-component-id-vs-feedback-client.md
       - name: Números de build e datas de lançamento do Visual Studio
         href: install/visual-studio-build-numbers-and-release-dates.md
@@ -305,12 +305,16 @@ items:
             href: ide/reference/generate-field-property-local.md
           - name: Gerar construtor
             href: ide/reference/generate-constructor.md
+          - name: Gerar desconstrutor
+            href: ide/reference/generate-deconstructor.md
           - name: Adicionar parâmetro a um método
             href: ide/reference/add-parameter.md
           - name: Gerar substituição
             href: ide/reference/generate-override.md
           - name: Gerar substituições de método Equals e GetHashCode
             href: ide/reference/generate-equals-gethashcode-methods.md
+          - name: Gerar usos
+            href: ide/reference/generate-usings.md
           - name: Implementar classe abstrata
             href: ide/reference/implement-abstract-class.md
           - name: Implementar interface
@@ -330,6 +334,10 @@ items:
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Converter entre a propriedade e o método Get
             href: ide/reference/convert-get-method-to-property.md
+          - name: Converter função local em método
+            href: ide/reference/convert-local-function-method.md
+          - name: Converter o loop foreach ao LINQ
+            href: ide/reference/convert-foreach-linq.md
           - name: Converter a consulta LINQ em uma instrução foreach
             href: ide/reference/convert-linq-to-foreach.md
           - name: Encapsular campo
@@ -340,6 +348,10 @@ items:
             href: ide/reference/extract-method.md
           - name: Variável temporária embutida
             href: ide/reference/inline-temporary-variable.md
+          - name: Inverter expressões condicionais e operações lógicas
+            href: ide/reference/invert-conditional-logical.md
+          - name: Inverter instrução if
+            href: ide/reference/invert-if-statement.md
           - name: Mover declaração para perto da referência
             href: ide/reference/move-declaration-near-reference.md
           - name: Mover o tipo para o arquivo correspondente
@@ -354,6 +366,10 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Usar o tipo explícito
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: Usar a expressão de lambda ou bloquear o corpo
+            href: ide/reference/use-block-body-lambda.md
+          - name: Parâmetros e valores não usados
+            href: ide/reference/unused-values-parameters.md
           - name: Encapsular, recuar e alinhar parâmetros
             href: ide/reference/wrap-align-indent-parameters.md
         - name: 'Passo a passo: Gerar código por meio do uso'
@@ -1135,9 +1151,9 @@ items:
   - name: Fale conosco
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 5aa0ef8e9053a4321041ff87742de7772cab95f6
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a54443258922e37da185b8abd7897a2ab6a525cb
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223566"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324254"
