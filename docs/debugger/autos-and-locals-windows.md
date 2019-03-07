@@ -1,4 +1,4 @@
----
+﻿---
 title: Inspecionar variáveis - janelas Autos e locais | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
@@ -28,7 +28,7 @@ As janelas **Autos** e **Locals** mostram valores de variáveis durante a depura
 
  A janela **Autos** está disponível para código C#, Visual Basic, C++ e Python, mas não para JavaScript ou F#.
 
-Para abrir a janela **Autos**, durante a depuração, selecione **Debug** > **Windows** > **Autos**, ou pressione **Ctrl**+**Alt**+**V** > **A**.
+Para abrir a janela **Autos**, durante a depuração, selecione **Debug** > **Windows** > **Autos**, ou pressione **Ctrl**+**Alt**+**V** > **um**.
 
 Para abrir a janela **Locals**, durante a depuração, selecione **Debug** > **Windows** > **Locals**, ou pressione **Alt**+**4**.
 
