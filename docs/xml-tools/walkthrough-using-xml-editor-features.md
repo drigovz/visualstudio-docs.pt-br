@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Usando recursos do Editor de XML'
+title: 'Passo a passo: Usando recursos do editor de XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954680"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525863"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Passo a passo: Usar recursos do editor de XML
 
-As etapas nessa explicação passo a passo mostram como criar um novo documento XML. A explicação passo a passo também usa alguns dos recursos do editor XML que tornam valioso para criar XML.
+As etapas nessa explicação passo a passo mostram como criar um novo documento XML. O passo a passo também usa alguns dos recursos do editor de XML que tornam valioso para a criação de XML.
 
 > [!NOTE]
 > Antes de iniciar o passo a passo, salve o *HireDate* arquivo (incluído abaixo neste tópico) para seu computador local.
@@ -96,9 +96,11 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-format-the-xml-document"></a>Para formatar o documento XML
 
-- Selecione o **Formatar documento** botão da barra de ferramentas do Editor de XML.
+- Selecione o **Formatar documento** botão na barra de ferramentas do editor XML, ou pressione **Ctrl**+**eletrônico**,**1!d**.
 
-    O documento XML é reformatado.
+   ![Botão de documento do formato XML no Visual Studio](media/format-xml-document.png)
+
+   O documento XML é reformatado.
 
 ## <a name="to-save-the-xml-document"></a>Para salvar o documento XML
 
@@ -109,7 +111,8 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 2.  Insira o nome do arquivo e o local para o documento XML e clique em **salvar**.
 
 ## <a name="hiredatexsd-file"></a>hireDate.xsd file
- O seguinte arquivo de esquema é usado por passo a passo.
+
+O arquivo de esquema a seguir é usado neste passo a passo:
 
 ```xml
 <?xml version="1.0"?>

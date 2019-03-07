@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d892ba202a73560568bdb6c43427a8ee0f7c1aee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913620"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526211"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: Usar trechos de código XML
 
-Você pode chamar snippets XML usando os dois seguintes comandos no menu de atalho do editor XML. O **Inserir trecho** comando insere o trecho XML a posição do cursor. O **envolver com** comando encapsula o trecho XML ao redor do texto selecionado. Cada snippets XML designou tipos de snippets. Os tipos de trecho determinam se o trecho de código está disponível com o **Inserir trecho** comando, o **envolver com** , ou ambos.
+Você pode chamar trechos XML usando dois comandos a seguir no menu de atalho do editor de XML. O **Inserir trecho** comando insere o trecho XML a posição do cursor. O **envolver com** comando encapsula o trecho XML ao redor do texto selecionado. Cada snippets XML designou tipos de snippets. Os tipos de trecho determinam se o trecho de código está disponível com o **Inserir trecho** comando, o **envolver com** , ou ambos.
 
 Depois que o snippet XML foi adicionado ao editor, todos os campos editáveis no snippet estão realçados em amarelo, e o cursor está localizado no primeiro campo editável.
 
@@ -80,7 +80,7 @@ Os procedimentos a seguir descrevem como acessar o **envolver com** comando.
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Usar Surround With no menu de contexto
 
-1. Selecione o texto para colocar no editor XML.
+1. Selecione o texto para colocar no editor de XML.
 
 2. Clique com botão direito e selecione **envolver com**.
 
@@ -90,7 +90,7 @@ Os procedimentos a seguir descrevem como acessar o **envolver com** comando.
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Usar Surround With no menu IntelliSense
 
-1. Selecione o texto para colocar no editor XML.
+1. Selecione o texto para colocar no editor de XML.
 
 2. Dos **edite** , aponte para **IntelliSense**e, em seguida, selecione **Surround With**.
 

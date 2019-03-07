@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933568"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525785"
 ---
 # <a name="content-model-view"></a>O modo do modelo de conteúdo
 
@@ -35,7 +35,7 @@ Quando um nó é selecionado na **espaço de trabalho** painel, ele é adicionad
 
 O modelo de conteúdo de um nó é representado por uma árvore gráfico expansível com elementos e atributos que aparecem como nós de árvore. Por padrão, somente um nível é expandido. Outras informações, como compositores, nomes de tipo, grupos, e outros contêineres é colocada em uma barra vertical (quando expandido) ao longo de elementos e atributos que incluem. Quando você clica duas vezes em uma barra vertical, transformações horizontal e recolhe de árvore. Quando você clica duas vezes em uma barra horizontal e vertical, transformações a árvore expande. Selecione a barra vertical seleciona todos os nós no contêiner. Os expansores são exibidos à direita de um nó se um elemento pode ser expandido ou recolhido.
 
-Se a superfície de design fica em branco, o Editor de XML, o **XML Schema Explorer**, e a marca d'água são mostradas. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD. Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".
+Se a superfície de design fica em branco, o editor de XML, o **XML Schema Explorer**, e a marca d'água são mostradas. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD. Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".
 
 ## <a name="breadcrumb-bar"></a>Barra de navegação estrutural
 
@@ -52,7 +52,7 @@ Quando você clique com botão direito um item na superfície de design ou **esp
 |**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
 |**Exibir documentação**|Mostra ou de anotação/documentação de oculta conteúdo do nó.|
 |**Exportar diagrama como imagem**|Salva a superfície de design para um arquivo XPS.|
-|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado na **XML Schema Explorer** também está selecionado no Editor de XML.|
+|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor de XML. O item selecionado na **XML Schema Explorer** também está selecionado no editor de XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
 A tabela a seguir descreve as opções que estão disponíveis para o **espaço de trabalho** painel.
@@ -66,7 +66,7 @@ A tabela a seguir descreve as opções que estão disponíveis para o **espaço 
 |**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design.|
 |**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
 |**Selecionar tudo**|Seleciona todos os nós a **espaço de trabalho** painel.|
-|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado na **XML Schema Explorer** também está selecionado no Editor de XML.|
+|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor de XML. O item selecionado na **XML Schema Explorer** também está selecionado no editor de XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
 ## <a name="properties-window"></a>Janela de Propriedades
@@ -119,9 +119,9 @@ O controle deslizante de Zoom é opaco ao selecioná-la, passe o mouse sobre ele
 
 ## <a name="xml-editor-integration"></a>Integração do editor de XML
 
-Você pode alternar entre o **Designer XSD** e o Editor de XML usando o menu de atalho (contexto).
+Você pode alternar entre o **Designer XSD** e o editor de XML usando o menu de atalho (contexto).
 
-Se você fizer alterações no esquema definido no Editor XML as alterações serão sincronizadas no modo de modelo de conteúdo. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
+Se você fizer alterações no esquema definido no editor de XML, que as alterações serão sincronizadas no modo de modelo de conteúdo. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Consulte também
 

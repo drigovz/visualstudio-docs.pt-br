@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205b4739d152186415a811b934a210d5f9a38ac4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615397"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526693"
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Painéis de tarefas estão os painéis de interface do usuário que normalmente são encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Painéis de tarefas personalizados oferecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar recursos da sua solução. Por exemplo, a interface pode conter controles que executar o código para modificar documentos ou exibir dados de uma fonte de dados.
@@ -136,8 +136,6 @@ ms.locfileid: "56615397"
 - [Outlook](#Outlook)
 
 - [Word, InfoPath e PowerPoint](#WordAndInfoPath)
-
-  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Gerenciar os painéis de tarefas nos suplementos do VSTO do Word? ](http://go.microsoft.com/fwlink/?LinkId=136781).
 
 ##  <a name="Outlook"></a> Outlook
  Quando você cria um painel de tarefas personalizado para o Outlook, o painel de tarefas personalizado está associado uma janela de navegador ou Inspetor específica. Explorers são janelas que exibem o conteúdo de uma pasta e inspetores são janelas que exibem um item como uma mensagem de email ou uma tarefa.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5747c4c530a358b5ca25b30aaadbe57c10c000c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aefe931bf4b53f0637c4bac1216e313b7a6fb092
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600871"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526497"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Como: Criar e modificar propriedades de documento personalizadas
   Aplicativos do Microsoft Office listados acima fornecem propriedades internas são armazenadas com documentos. Além disso, você pode criar e modificar propriedades de documento personalizadas se há informações adicionais que você deseja armazenar no documento.
@@ -30,9 +30,7 @@ ms.locfileid: "56600871"
 
  O exemplo a seguir demonstra como adicionar uma propriedade personalizada em uma personalização no nível de documento para Excel e atribua um valor.
 
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Acessar e manipular as propriedades de documento personalizadas no Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).
-
-## <a name="example"></a>Exemplo
+ ## <a name="example"></a>Exemplo
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
  [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]
 

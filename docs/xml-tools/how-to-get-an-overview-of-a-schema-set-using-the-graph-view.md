@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922024"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525127"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Como: Obtenha uma visão geral de um esquema definido usando o modo de exibição de gráfico
 
@@ -23,11 +23,11 @@ Este tópico descreve como usar o [modo de exibição gráfico](../xml-tools/gra
 
 1.  Crie um novo arquivo de esquema XML e salve o arquivo como *Relationships*.
 
-2.  Clique o **Use o Editor de XML para exibir e editar o arquivo de esquema XML subjacente** link no modo de início.
+2.  Clique o **editor de XML de uso para exibir e editar o arquivo de esquema XML subjacente** link no modo de início.
 
 3.  Copie o código de exemplo de esquema XML do [esquema XML de exemplo: relações](../xml-tools/sample-xsd-file-relationships.md) e cole-o para substituir o código que foi adicionado ao novo arquivo XSD por padrão.
 
-4.  Clique com botão direito em qualquer lugar no Editor de XML e selecione **Designer de exibição**.
+4.  Clique com botão direito em qualquer lugar no editor de XML e selecione **Designer de exibição**.
 
 5.  Selecione o modo de exibição de gráfico do **barra de ferramentas XSD**.
 
