@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600383"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525190"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
   Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma classe chamada `Globals` no projeto. Você pode usar o `Globals` classe para acessar vários itens de projeto diferente no tempo de execução de qualquer código no projeto.
@@ -74,7 +74,7 @@ ms.locfileid: "56600383"
  Código que tenta usar o `Globals` classe antes do documento ou um suplemento do VSTO é inicializado pode lançar uma exceção de tempo de execução. Por exemplo, usando `Globals` quando declarar uma variável de nível de classe pode falhar porque o `Globals` classe não pode ser inicializada com referências a todos os itens de host antes do objeto declarado é instanciado.
 
 > [!NOTE]
->  O `Globals` classe nunca é inicializado em tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade do `Globals` classe de dentro de uma classe de controle de usuário, você deve se a propriedade retorna **nulo** antes de tentar usar o objeto retornado.
+>  O `Globals` classe nunca é inicializado em tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade do `Globals` classe de dentro de uma classe de controle de usuário, você deve verificar se a propriedade retorna **nulo** antes de tentar usar o objeto retornado.
 
 ## <a name="see-also"></a>Consulte também
 - [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)

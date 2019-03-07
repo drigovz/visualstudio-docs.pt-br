@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907328"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526614"
 ---
 # <a name="how-to-create-xml-snippets"></a>Como: Criar trechos de código XML
 
-O editor XML pode ser usado para criar novos snippets XML. O editor inclui um snippet XML, chamado “Snippets”, que é um snippet de texto constante para criar novos snippets XML.
+O editor XML pode ser usado para criar novos trechos XML. O editor inclui um snippet XML, chamado “Snippets”, que é um snippet de texto constante para criar novos snippets XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Para criar um novo snippet XML
 
@@ -80,7 +80,7 @@ O editor XML pode ser usado para criar novos snippets XML. O editor inclui um sn
 
 - $name$ variável é definido pelo usuário. Cria um elemento de `name` , que tem um valor editável que usa padrão “para nomear”. As variáveis definidas pelo usuário são definidos usando o elemento de `Literal` .
 
-- $selected$ é uma variável predefinido. Representa o texto que foi selecionado no editor XML antes de chamar o snippet. O posicionamento dessa variável determina onde o texto selecionado aparece no snippet de código que circunda a seleção.
+- $selected$ é uma variável predefinido. Representa o texto que foi selecionado no editor de XML antes de invocar o trecho de código. O posicionamento dessa variável determina onde o texto selecionado aparece no snippet de código que circunda a seleção.
 
 - $end$ é uma variável predefinido. Quando o usuário pressiona **Enter** para terminar de editar os campos de trecho de código, essa variável determina onde o acento circunflexo (^) é movido.
 
@@ -105,7 +105,7 @@ O editor XML pode ser usado para criar novos snippets XML. O editor inclui um sn
 </Literal
 ```
 
- Literais também podem se referir funções. O Editor XML inclui uma função chamada **LookupPrefix**. O **LookupPrefix** função procura o determinado URI de namespace do local no documento XML que este trecho de código é invocado do e retorna o prefixo de namespace é definido para esse namespace, se houver, e ele inclui os dois-pontos (:) Esse nome. A seguir está um exemplo de uma `Literal` elemento que usa o **LookupPrefix** função.
+ Literais também podem se referir funções. O editor XML inclui uma função chamada **LookupPrefix**. O **LookupPrefix** função procura o determinado URI de namespace do local no documento XML que este trecho de código é invocado do e retorna o prefixo de namespace é definido para esse namespace, se houver, e ele inclui os dois-pontos (:) Esse nome. A seguir está um exemplo de uma `Literal` elemento que usa o **LookupPrefix** função.
 
 ```xml
 <Literal Editable="false">

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937910"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525352"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Como: Criar e editar um arquivo de esquema XSD
 
@@ -29,14 +29,10 @@ Este tópico descreve como criar um novo arquivo de esquema XML (XSD) e, em segu
 
 ## <a name="to-edit-a-file"></a>Para editar um arquivo
 
-1. Selecione o **Use o Editor de XML para exibir e editar o arquivo de esquema XML subjacente** link no modo de início.
+1. Selecione o **editor de XML de uso para exibir e editar o arquivo de esquema XML subjacente** link no modo de início.
 
-   O Editor XML aparece com o novo arquivo aberto.
+   O editor XML aparece com o novo arquivo aberto.
 
 2. Copie o código de exemplo de esquema XML do [esquema de ordem de compra](../xml-tools/sample-xsd-file-simple-schema.md) e cole-o para substituir o código que foi adicionado ao novo arquivo XSD por padrão.
 
    O **XML Schema Explorer** é atualizado com o novo conjunto de esquema.
-
-## <a name="see-also"></a>Consulte também
-
-- [Trabalhar com dados XML](../xml-tools/working-with-xml-data.md)

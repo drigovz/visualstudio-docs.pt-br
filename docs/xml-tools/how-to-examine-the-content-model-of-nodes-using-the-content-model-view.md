@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63edeb597c3c085df3c9c9eb15f6c051e524a476
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920906"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525993"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Como: Examinar o modelo de conteúdo de nós usando a exibição do modelo de conteúdo
 
@@ -23,11 +23,11 @@ Este tópico descreve como explorar os nós usando o [modo de exibição do mode
 
 1.  Crie um novo arquivo de esquema XML.
 
-2.  Clique em **Use o Editor de XML para exibir e editar o arquivo de esquema XML subjacente** no modo de início.
+2.  Clique em **editor de XML de uso para exibir e editar o arquivo de esquema XML subjacente** no modo de início.
 
 3.  Copie o código de exemplo de esquema XML do [esquema XML de exemplo: esquema de ordem de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md) e cole-o para substituir o código que foi adicionado ao novo arquivo XSD por padrão.
 
-4.  Selecione o `purchaseOrder` elemento no esquema Explorer clicando com o `purchaseOrder` no Editor de XML do elemento e selecionando **Mostrar em XML Explorer**.
+4.  Selecione o `purchaseOrder` elemento no esquema Explorer clicando com o `purchaseOrder` elemento no XML editor e selecionando **Mostrar em XML Explorer**.
 
 5.  Clique com botão direito do `purchaseOrder` no XML Explorer e selecione **Mostrar na exibição do modelo de conteúdo**.
 

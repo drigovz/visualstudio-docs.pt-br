@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952639"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526640"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 
@@ -27,11 +27,11 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
  A superfície de design do modo de gráfico exibe o conteúdo do [espaço de trabalho designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md). Se o workspace contém quaisquer nós globais do conjunto de esquema, os nós são mostrados na superfície de design do modo de gráfico e as setas são desenhadas entre os nós que possuem relações.
 
- Clique duas vezes em um nó no modo de gráfico trará anterior o editor XML.
+ Clicar duas vezes em um nó no modo de gráfico abrirá o editor de XML.
 
  Para excluir nós selecionados do espaço de trabalho, use a barra de ferramentas do Designer XSD ou o **excluir** chave.
 
- Se a superfície de design fica em branco, o Editor de XML, o **XML Schema Explorer**, e a marca d'água são mostradas. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD.
+ Se a superfície de design fica em branco, o editor de XML, o **XML Schema Explorer**, e a marca d'água são mostradas. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD.
 
  ![Designer XSD; Exibição do gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
@@ -55,7 +55,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 |**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design.|
 |**Exportar diagrama como imagem**|Salva a superfície de design para um arquivo XPS.|
 |**Selecionar tudo**|Selecionar todos os nós na superfície de design.|
-|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado na **XML Schema Explorer** também está selecionado no Editor de XML.|
+|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor de XML. O item selecionado na **XML Schema Explorer** também está selecionado no editor de XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
  Além das opções comuns descritas anterior, o menu de contexto para elementos globais também tem as seguintes opções:
@@ -140,9 +140,9 @@ O controle deslizante de Zoom é opaco ao selecioná-la, passe o mouse sobre ele
 
 ## <a name="xml-editor-integration"></a>Integração do editor de XML
 
- Você pode alternar entre o modo de exibição de gráfico e o Editor XML clicando em um nó e usando o menu de contexto (atalho) Exibir código.
+ Você pode alternar entre o modo de exibição de gráfico e o editor XML clicando em um nó e usando o menu de contexto (atalho) Exibir código.
 
- Se você alterar o esquema definido no editor XML, as alterações serão sincronizadas no modo de gráfico. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
+ Se você fizer alterações no esquema definido no editor de XML, as alterações serão sincronizadas no modo de gráfico. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Consulte também
 

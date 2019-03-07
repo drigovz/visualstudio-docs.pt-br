@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910541"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526484"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus de contexto (XML Schema Explorer)
 
@@ -50,7 +50,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Mostrar todas as referências de saída**|Localiza e realces o seguinte:<br /><br /> -Todos os namespaces especificados nos atributos de namespace de todas as instruções que não têm de importar o `schemaLocation` atributo.<br />-Todos os arquivos especificados no `schemaLocation` de todos os atributos de importação e incluem instruções.|
 |**Mostrar tipos globais**|Os localiza e realça todos globais neste arquivo.|
 |**Mostrar elementos globais**|Os localiza e realça todos os elementos globais neste arquivo.|
-|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|
+|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor de XML. O item selecionado em XML Schema Explorer também será selecionado no editor de XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
 ## <a name="all-global-node-types"></a>Todos os tipos de nós globais
@@ -60,7 +60,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |-|-----------------|
 |**Mostrar na exibição de gráfico**|Abre a exibição do gráfico. Se o nó selecionado não está no workspace, adicione-o ao workspace e selecione o nó.|
 |**Mostrar no modo de exibição do modelo de conteúdo**|Abre a exibição do modelo de conteúdo. Se o nó selecionado não está no workspace, adicione-o ao workspace e selecione o nó.|
-|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|
+|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor de XML. O item selecionado em XML Schema Explorer também será selecionado no editor de XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
 ## <a name="node-type-element"></a>Tipo de nó: Elemento
