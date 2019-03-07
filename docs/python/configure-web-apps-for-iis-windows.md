@@ -2,23 +2,21 @@
 title: Configurar aplicativos Web do Python para o IIS
 description: Como configurar aplicativos Web do Python para execução com os Serviços de Informações da Internet de uma máquina virtual do Windows.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6a6861f2f334f3a03fe133e5185c9079a54cfb34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062891"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937668"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurar aplicativos Web do Python para o IIS
 

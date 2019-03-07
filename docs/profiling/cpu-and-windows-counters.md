@@ -1,8 +1,6 @@
 ---
 title: Contadores de CPU e do Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865915"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625680"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de CPU e do Windows
 
@@ -97,7 +95,7 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
       **Observação** Clique em **Cancelar** para retornar à configuração de amostragem anterior.
 
-     -ou-
+     - ou -
 
    - Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.
 
@@ -113,7 +111,7 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
 4. Na lista **Categoria de Contador**, selecione um grupo de contadores. O contador do Windows para o grupo é exibido na caixa de listagem.
 
-     **Observação:** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.
+     **Observação:** Clique em **Cancelar** para retornar à configuração anterior de coleta de contadores.
 
 ### <a name="command-line"></a>Linha de comando
 
@@ -127,13 +125,11 @@ Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é 
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     em que *\<Visual Studio Performance Tools Directory>* é o caminho para o diretório das Ferramentas de Desempenho de sua instalação do Visual Studio, geralmente
-
-     *C:\Arquivos de Programas\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     em que *\<Diretório das Ferramentas de Desempenho do Visual Studio>* é o caminho para o diretório das Ferramentas de Desempenho da instalação do Visual Studio. Para obter o caminho para as ferramentas de desempenho, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Consulte também
 
-[Visões gerais](../profiling/overviews-performance-tools.md)  
-[Como escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)  
-[Como coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
-[Como coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Visões gerais](../profiling/overviews-performance-tools.md)
+[Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
+[Como: Coletar dados do contador da CPU](../profiling/how-to-collect-cpu-counter-data.md)
+[Como: Coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md)

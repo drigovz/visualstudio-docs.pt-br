@@ -1,14 +1,9 @@
 ---
 title: Caixa de diálogo Pré-requisitos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6aff33e7129123e2f910116a5d9352944e1c064a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59605af2d0ebb7ed094602e9f300dc8dbc3b7ead
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183944"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54799823"
 ---
 # <a name="prerequisites-dialog-box"></a>Caixa de diálogo Pré-requisitos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,16 +48,16 @@ Essa caixa de diálogo especifica quais componentes de pré-requisito são insta
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|**.NET Framework 3.5 SP1**|Esse pacote instala o seguinte:<br /><br /> -   .NET Framework versões 2.0, 3.0 e 3.5.<br />-   Suporte para todas as versões do .NET Framework em sistemas operacionais de 32 bits (x86) e 64 bits (x64).<br />-   Pacotes de idiomas para cada versão do .NET Framework que é instalada com o pacote.<br />-   Service packs para o .NET Framework 2.0 e 3.0.<br /><br /> O .NET Framework 3.0 está incluído no Windows Vista e o .NET Framework 3.5 está incluído no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. O .NET Framework 3.5 é necessário para todos os projetos do Visual Basic e Visual C# que são compilados para sistemas operacionais de 32 bits e para quais a estrutura de destino é definida como **.NET Framework 3.5**, bem como para projetos do Visual Basic e Visual C# compilados para sistemas operacionais de 64 bits. (Não há suporte para o IA64.) Observe que os projetos do Visual Basic e do Visual C# são compilados para qualquer arquitetura de CPU, por padrão. Para obter mais informações, consulte [Visão geral do Visual Studio Multi-Targeting](../../ide/visual-studio-multi-targeting-overview.md), [Redistribuindo o .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287), e [Implantando pré-requisitos de aplicativos de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Por padrão, esse item está selecionado.|  
+|**.NET Framework 3.5 SP1**|Esse pacote instala o seguinte:<br /><br /> -   .NET Framework versões 2.0, 3.0 e 3.5.<br />-   Suporte para todas as versões do .NET Framework em sistemas operacionais de 32 bits (x86) e 64 bits (x64).<br />-   Pacotes de idiomas para cada versão do .NET Framework que é instalada com o pacote.<br />-   Service packs para o .NET Framework 2.0 e 3.0.<br /><br /> O .NET Framework 3.0 está incluído no Windows Vista e o .NET Framework 3.5 está incluído no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. O .NET Framework 3.5 é necessário para todos os projetos do Visual Basic e Visual C# que são compilados para sistemas operacionais de 32 bits e para quais a estrutura de destino é definida como **.NET Framework 3.5**, bem como para projetos do Visual Basic e Visual C# compilados para sistemas operacionais de 64 bits. (Não há suporte para o IA64.) Observe que os projetos do Visual Basic e do Visual C# são compilados para qualquer arquitetura de CPU, por padrão. Para obter mais informações, consulte [Visão geral do Visual Studio Multi-Targeting](../../ide/visual-studio-multi-targeting-overview.md), [Redistribuindo o .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287), e [Implantando pré-requisitos de aplicativos de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Por padrão, esse item está selecionado.|  
 |**.NET Framework 3.5 SP1 Client Profile**|O .NET Framework Client Profile é um subconjunto do .NET Framework 3.5 SP1 completo que tem aplicativos cliente como destino. Ele fornece um subconjunto simplificado de recursos do WPF (Windows Presentation Foundation), Windows Forms, WCF (Windows Communication Foundation) e ClickOnce. Isso possibilita cenários de implantação rápida para o WPF, Windows Forms, WCF e aplicativos de console que têm o .NET Framework Client Profile como destino. Para obter mais informações, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).|  
-|**Microsoft .NET Framework 4 (x86 e x64)**|Esse pacote instala o .NET Framework 4 para as plataformas x86 e x64.<br /><br /> Para obter mais informações, consulte [Visão geral do Visual Studio Multi-Targeting](../../ide/visual-studio-multi-targeting-overview.md), [Redistribuindo o .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287), e [Implantando pré-requisitos de aplicativos de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Por padrão, esse item está selecionado.|  
+|**Microsoft .NET Framework 4 (x86 e x64)**|Esse pacote instala o .NET Framework 4 para as plataformas x86 e x64.<br /><br /> Para obter mais informações, consulte [Visão geral do Visual Studio Multi-Targeting](../../ide/visual-studio-multi-targeting-overview.md), [Redistribuindo o .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287), e [Implantando pré-requisitos de aplicativos de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Por padrão, esse item está selecionado.|  
 |**Microsoft .NET Framework 4 Client Profile (x86 e x64)**|O .NET Framework 4 Client Profile é um subconjunto do .NET Framework 4 completo que tem aplicativos cliente como destino. Ele fornece um subconjunto simplificado de recursos do WPF (Windows Presentation Foundation), Windows Forms, WCF (Windows Communication Foundation) e ClickOnce. Isso possibilita cenários de implantação rápida para o WPF, Windows Forms e aplicativos de console que têm o .NET Framework 4 Client Profile como destino. Para obter mais informações, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).|  
 |**Assemblies de interoperabilidade primários do Microsoft Office 2007**|Esse pacote instala os Assemblies de Interoperabilidade Primários para produtos do Microsoft Office 2007. O assembly de interoperabilidade primário permite que o código gerenciado interaja com o modelo de objeto baseado em COM de um aplicativo do Microsoft Office. Para obter mais informações, consulte [Assemblies de interoperabilidade primários do Office](http://msdn.microsoft.com/library/aa29d12c-185f-4558-a7cd-3d85f924203d).|  
 |**Microsoft Visual Basic PowerPacks versão 10.0**|Power Packs são suplementos, controles, componentes e ferramentas para ajudar você a desenvolver aplicativos do Visual Basic. Essa versão contém o componente <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm>, que permite imprimir o conteúdo de um Windows Form e a Biblioteca de Compatibilidade da Impressora, que permite que o código da impressora do Visual Basic 6.0 seja executado sem modificação.|  
 |**Tempo de Execução do Microsoft Visual F# para .NET 2.0**|Esse pacote instala as bibliotecas em tempo de execução Visual F# dos sistemas operacionais x86 e x64, que fornecem suporte para programação funcional, bem como para programação imperativa (de procedimento) e tradicional orientada a objeto. Esse pacote deve ser instalado se o aplicativo ou seus componentes são criados no Visual F# e .NET Framework 2.0, .NET Framework 3.0 ou .NET Framework 3.5.<br /><br /> Para obter mais informações, consulte [Referência da linguagem F#](http://msdn.microsoft.com/library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf).|  
 |**Tempo de Execução do Microsoft Visual F# para .NET 4.0**|Esse pacote instala as bibliotecas em tempo de execução Visual F# dos sistemas operacionais x86 e x64, que fornecem suporte para programação funcional, bem como para programação imperativa (de procedimento) e tradicional orientada a objeto. Esse pacote deve ser instalado se o aplicativo ou seus componentes são criados no Visual F# e .NET Framework 4.<br /><br /> Para obter mais informações, consulte [Referência da linguagem F#](http://msdn.microsoft.com/library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf).|  
 |**Visualizador de Relatórios do Microsoft Visual Studio 2010**|Esse pacote instala controles do visualizador de relatórios que podem ser usados para adicionar relatórios de dados avançados ao Windows Forms e a aplicativos ASP.NET.|  
-|**Microsoft Visual Studio 2010 para o Tempo de Execução do Office (x86 e x64)**|As Office Developer Tools no Visual Studio oferecem ferramentas integradas e fáceis de usar para a criação de soluções comerciais personalizadas com o Microsoft Office. É possível criar soluções cliente inteligentes e gerenciadas que usam aplicativos do Office como uma interface do usuário. As ferramentas permitem aos desenvolvedores criar soluções seguras que são fáceis de serem implantadas e mantidas.<br /><br /> Para obter mais informações, consulte [Como publicar uma solução do Office usando o ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).|  
+|**Microsoft Visual Studio 2010 para o Tempo de Execução do Office (x86 e x64)**|As Office Developer Tools no Visual Studio oferecem ferramentas integradas e fáceis de usar para a criação de soluções comerciais personalizadas com o Microsoft Office. É possível criar soluções cliente inteligentes e gerenciadas que usam aplicativos do Office como uma interface do usuário. As ferramentas permitem aos desenvolvedores criar soluções seguras que são fáceis de serem implantadas e mantidas.<br /><br /> Para obter mais informações, consulte [Como publicar uma solução do Office usando o ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).|  
 |**SQL Server 2005 Express Edition SP2 (x86)**|Esse pacote instala o Microsoft SQL Server 2005 Express Edition SP2, um aplicativo de banco de dados baseado no [!INCLUDE[sqprsqext](../../includes/sqprsqext-md.md)]. O SQL Server Express é uma substituição do MSDE (Microsoft SQL Server Desktop Engine). O SQL Server Express é gratuito e pode ser redistribuído (sujeito a contrato) e funciona como um banco de dados cliente e um banco de dados de servidor básico. É o mesmo que o SQL Server 2005, com exceção das seguintes diferenças:<br /><br /> -   Sem suporte a recursos corporativos.<br />-   Limitado a uma CPU.<br />-   Limite de memória de 1 GB (gigabyte) para o pool de buffers.<br />-   Tamanho máximo de 4 GB para bancos de dados.|  
 |**SQL Server 2008 Express**|Esse pacote instala o Microsoft SQL Server 2008 Express, uma edição gratuita do Microsoft SQL Server 2008, um banco de dados ideal para aplicativos Web, de servidor ou de área de trabalho pequenos. Pode ser usado gratuitamente para desenvolvimento e produção. Um [registro](http://go.microsoft.com/fwlink/?LinkId=130380) gratuito é necessário para distribuir o SQL Server 2008 Express com o aplicativo.<br /><br /> O comportamento do bootstrapper é o seguinte:<br /><br /> -   Se o computador já tiver o SQL Server 2008 Express ou posterior, o computador permanecerá no SQL Server 2008 Express ou posterior.<br />-   Se o computador não tiver nenhuma versão do SQL Server 2008 Express ou posterior, o pacote instalará a última versão do SQL Server 2008 Express SP1.<br /><br /> Para saber mais sobre o SQL Server 2008 Express, visite [ http://go.microsoft.com/fwlink/?LinkId=183586 ](http://go.microsoft.com/fwlink/?LinkId=183586).|  
 |**Bibliotecas em tempo de execução do Visual C++ 2010 (IA64)**|Esse pacote instala as bibliotecas em tempo de execução Visual C++ para a arquitetura Itanium, que fornecem rotinas de programação para o sistema operacional Microsoft Windows. Essas rotinas automatizam várias tarefas comuns de programação que não são fornecidas pelas linguagens C e C++.<br /><br /> Para obter mais informações, consulte [Referência da biblioteca em tempo de execução C](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8).|  
@@ -74,9 +69,6 @@ Essa caixa de diálogo especifica quais componentes de pré-requisito são insta
 ## <a name="see-also"></a>Consulte também  
  [Página Publicar, Designer de Projeto](../../ide/reference/publish-page-project-designer.md)   
  [Pré-requisitos de implantação do aplicativo](../../deployment/application-deployment-prerequisites.md)   
- [Redistribuindo o .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   
+ [Redistribuindo o .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287)   
  [Implantando pré-requisitos para aplicativos de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md)   
  [Visão Geral do Visual Studio Multiplataforma](../../ide/visual-studio-multi-targeting-overview.md)
-
-
-

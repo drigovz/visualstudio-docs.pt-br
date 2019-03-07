@@ -2,22 +2,20 @@
 title: Designer de fluxo de trabalho - Designer de atividade paralela
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79e1e7e48f7ed7e8cd4084805dfae2018a886a82
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863757"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950403"
 ---
 # <a name="parallel-activity-designer"></a>Designer paralelo de atividades
 

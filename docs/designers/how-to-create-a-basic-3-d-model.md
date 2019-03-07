@@ -1,23 +1,21 @@
 ---
-title: Como criar um modelo 3D básico
+title: 'Como: Criar um modelo 3D básico'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913436"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970264"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Como criar um modelo 3D básico
+# <a name="how-to-create-a-basic-3d-model"></a>Como: Criar um modelo 3D básico
 
 Este artigo demonstra como usar o Editor de Modelo para criar um modelo 3D básico. As seguintes atividades são abordadas:
 
@@ -72,10 +70,10 @@ Este artigo demonstra como usar o Editor de Modelo para criar um modelo 3D bási
 
    ![O modelo concluído da casa simplificada](../designers/media/gfx_model_demo_house_final.png)
 
-   Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter informações, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter mais informações, veja [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md)
+- [Como: Modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md)
 - [Editor de modelos](../designers/model-editor.md)
 - [Designer de sombreador](../designers/shader-designer.md)

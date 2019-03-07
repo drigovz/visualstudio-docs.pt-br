@@ -1,9 +1,6 @@
 ---
 title: Visão geral das propriedades de documento personalizadas
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671515"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614410"
 ---
 # <a name="custom-document-properties-overview"></a>Visão geral das propriedades de documento personalizadas
 
@@ -41,7 +38,7 @@ Esta propriedade contém o CLSID de uma interface no componente de carregador de
 
 Esta propriedade contém uma cadeia de caracteres que fornece detalhes sobre o manifesto de implantação para a personalização. Para obter mais informações sobre manifestos, consulte [manifestos do aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Valor da propriedade The_AssemblyLocation pode ter formatos diferentes, dependendo de como a solução é implantada:
+ O \_AssemblyLocation valor da propriedade pode ter diferentes formatos, dependendo de como a solução é implantada:
 
 - Se a solução for publicada para ser instalado a partir de um site da Web, o caminho UNC ou uma unidade de CD ou USB, a propriedade assemblylocation tem o formato *DeploymentManifestPath*|*SolutionID*. A cadeia de caracteres a seguir está um exemplo:
 
@@ -58,5 +55,5 @@ Esta propriedade contém uma cadeia de caracteres que fornece detalhes sobre o m
 - [Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)
 - [Manifestos de aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Como: publicar uma solução do Office usando o ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Como: criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Como: Publicar uma solução do Office usando o ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Como: Criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -1,23 +1,22 @@
 ---
 title: O que é depuração?
 description: Entender o que significa depurar um aplicativo
-ms.custom: debug-experiments
+ms.custom: debug-experiment
 ms.date: 10/17/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821442"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919324"
 ---
 # <a name="what-is-debugging"></a>O que é depuração?
 
@@ -45,11 +44,14 @@ Quando você alternar essa configuração, você alterar seu projeto de uma conf
 
 ## <a name="when-to-use-a-debugger"></a>Quando usar um depurador
 
-O depurador é uma ferramenta essencial para encontrar e corrigir bugs em seus aplicativos. No entanto, o contexto é king e é importante aproveitar todas as ferramentas em seu disposable para ajudar a eliminar rapidamente bugs ou erros. Às vezes, o direito de "tool" pode ser uma prática de codificação melhores. Aprendendo quando usar o depurador vs. de alguma outra ferramenta, você também aprenderá a usar o depurador com mais eficiência. Se você já souber você precisará aprender sobre o depurador, consulte [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md). Caso contrário, siga o link na **próximas etapas**.
+O depurador é uma ferramenta essencial para encontrar e corrigir bugs em seus aplicativos. No entanto, o contexto é king e é importante aproveitar todas as ferramentas em seu disposable para ajudar a eliminar rapidamente bugs ou erros. Às vezes, o direito de "tool" pode ser uma prática de codificação melhores. Aprendendo quando usar o depurador vs. de alguma outra ferramenta, você também aprenderá a usar o depurador com mais eficiência.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, você pode começar a aprender como depurar com o Visual Studio e como escrever código com menos bugs. O artigo a seguir mostra C# exemplos de código, mas os conceitos se aplicam a todos os idiomas com suporte do Visual Studio.
+Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, você pode começar a aprender como depurar com o Visual Studio e como escrever código com menos bugs. Mostrar os artigos a seguir C# exemplos de código, mas os conceitos se aplicam a todos os idiomas com suporte do Visual Studio.
 
 > [!div class="nextstepaction"]
-> [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md)
+> [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md)
+
+> [!div class="nextstepaction"]
+> [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)

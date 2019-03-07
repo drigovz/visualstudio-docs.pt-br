@@ -1,14 +1,9 @@
 ---
 title: Atribuição ilegal (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5008
 dev_langs:
@@ -16,19 +11,18 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: abebe518-07d7-42cd-af50-00bfda17da08
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8008ddc6d47114bcb442ebfb1e2f1cdda6c04587
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632886"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843890"
 ---
 # <a name="illegal-assignment-javascript"></a>Atribuição ilegal (JavaScript)
-Tentativa de atribuir um valor a um identificador de somente leitura. Você não pode atribuir um valor a um identificador de somente leitura. Por exemplo, o host definido objetos e objetos externos.  
+Você tentou atribuir um valor a um identificador somente leitura. É possível atribuir um valor a um identificador somente leitura. Por exemplo, o host definido objetos e objetos de COM externos.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

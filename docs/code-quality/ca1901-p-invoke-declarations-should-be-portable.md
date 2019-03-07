@@ -1,8 +1,6 @@
 ---
-title: 'CA1901: as declarações de P-Invoke devem ser portáteis'
+title: 'CA1901: Declarações P-Invoke devem ser portáteis'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1901
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94067aad31c25db64d0732ebd67c442fd9466328
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937363"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936883"
 ---
-# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: as declarações de P/Invoke devem ser portáteis
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Declarações P/Invoke devem ser portáteis
 
 |||
 |-|-|
@@ -72,7 +70,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 
 ```csharp
 internal class NativeMethods{
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
     internal static extern IntPtr ExtractIcon(IntPtr hInst,
         string lpszExeFileName, uint nIconIndex);
 }

@@ -1,14 +1,9 @@
 ---
 title: Exibição tempo de vida do objeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cc2e17084809e691838ea0e681e3d2b766d0769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756438"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54833681"
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,6 +76,3 @@ A exibição de Tempo de vida do objeto está disponível quando **Também colet
   
 ## <a name="see-also"></a>Consulte também  
  [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md)
-
-
-

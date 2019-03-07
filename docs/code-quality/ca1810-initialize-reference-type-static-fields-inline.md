@@ -1,8 +1,6 @@
 ---
-title: 'CA1810: inicializar campos estáticos de tipo de referência embutido'
+title: 'CA1810: Inicializar campos estáticos de tipo de referência em linha'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: e9693118-a914-4efb-9550-ec659d8d97d2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6fdfebe506fb2edb1814e18d3d090025c665fa
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1fca9742a4fe5e778c0b172adad7996dcad58ca4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549437"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923480"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: inicializar campos estáticos de tipo de referência embutido
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicializar campos estáticos de tipo de referência em linha
 
 |||
 |-|-|
@@ -78,4 +76,4 @@ extends [mscorlib]System.Object
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA2207: inicializar campos estáticos de tipo de valor embutido](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+- [CA2207: Inicializar campos estáticos de tipo de valor embutido](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

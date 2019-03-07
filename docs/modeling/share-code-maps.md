@@ -4,19 +4,17 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abfe8d6160d023a99e9a49480baada9acb0c8243
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 70c4cd238b6e5d31eced6a35ff0c7d24ab85a280
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268367"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907887"
 ---
-# <a name="share-code-maps"></a>Mapas de códigos de compartilhamento
+# <a name="share-code-maps"></a>Compartilhar mapas de códigos
 
 Você pode salvar mapas de código como parte de um projeto do Visual Studio, como uma imagem ou como um arquivo XPS.
 
@@ -26,16 +24,16 @@ Use o **arquivo** menu para salvar o mapa.
 
 -ou-
 
-Para salvar o mapa como parte do projeto específico, na barra de ferramentas do mapa, escolha **compartilhamento** > **mover \<CodeMapName > .dgml em**e, em seguida, escolha o projeto em que você deseja salvar o mapa.
+Para salvar o mapa como parte do projeto específico, na barra de ferramentas do mapa, escolha **compartilhamento** > **mover \<CodeMapName >. dgml em**e, em seguida, escolha o projeto onde você deseja salvar o mapa.
 
 ![Mover um mapa em outro projeto](../modeling/media/codemapsmovemapmenu.png)
 
-O Visual Studio salva o mapa como uma *.dgml* arquivo que você pode compartilhar com outros usuários do Visual Studio Enterprise e no Visual Studio Professional.
+O Visual Studio salva o mapa como uma *dgml* arquivo que você pode compartilhar com outros usuários do Visual Studio Enterprise e Professional do Visual Studio.
 
 > [!NOTE]
-> Antes de compartilhar um mapa com aqueles que usam o Visual Studio Professional, certifique-se expandir todos os grupos, Mostrar nós ocultos e links entre grupos e recuperar todos os nós excluídos que você deseja ver em seu mapa. Do contrário, outros usuários não poderão consultar esses itens.
+> Antes de compartilhar um mapa com aqueles que usam o Visual Studio Professional, certifique-se expandir todos os grupos, Mostrar nós ocultos e links de grupo cruzado e recuperar todos os nós excluídos que você deseja que outras pessoas vejam no seu mapa. Do contrário, outros usuários não poderão consultar esses itens.
 >
-> O seguinte erro pode ocorrer quando você salvar um mapa que está em um projeto de modelagem ou foi copiado de um projeto de modelagem para outro local:
+> O seguinte erro poderá ocorrer quando você salva um mapa que está em um projeto de modelagem ou foi copiado de um projeto de modelagem para outro local:
 >
 > "Não é possível salvar *fileName* fora do diretório do projeto. Itens vinculados não são compatíveis."
 >
@@ -45,20 +43,20 @@ O Visual Studio salva o mapa como uma *.dgml* arquivo que você pode compartilha
 
 Quando você exporta um mapa de código como uma imagem, você pode copiá-lo para outros aplicativos, como Microsoft Word ou PowerPoint.
 
-1. Na barra de ferramentas do mapa de código, escolha **compartilhamento** > **Email como imagem** ou **Copiar imagem**.
+1. Na barra de ferramentas de mapa de código, escolha **compartilhamento** > **Email como imagem** ou **Copiar imagem**.
 
 2. Cole a imagem em outro aplicativo.
 
 ## <a name="export-the-map-as-an-xps-file"></a>Exportar o mapa como um arquivo XPS
 
-Quando você exporta um mapa de código como um arquivo XPS, você poderá ver isso em visualizadores XML ou XAML, como o Internet Explorer.
+Quando você exporta um mapa de código como um arquivo XPS, você poderá ver isso em visualizadores XML ou XAML como o Internet Explorer.
 
-1. Na barra de ferramentas do mapa de código, escolha **compartilhamento** > **Email como portátil XPS** ou **Salvar como XPS portátil**.
+1. Na barra de ferramentas de mapa de código, escolha **compartilhamento** > **Email como XPS portátil** ou **Salvar como XPS portátil**.
 
 2. Navegue para onde você deseja salvar o arquivo.
 
-3. Nome do mapa de código. Verifique se o **Salvar como tipo** caixa é definida para **arquivos XPS (\*. XPS)**. Escolha **salvar**.
+3. Nome do mapa de código. Certifique-se de que o **Salvar como tipo** caixa é definida como **arquivos XPS (\*. XPS)**. Escolher **salvar**.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Mapear as dependências com mapas de código](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapear dependências com mapas de código](../modeling/map-dependencies-across-your-solutions.md)

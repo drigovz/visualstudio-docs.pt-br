@@ -1,8 +1,6 @@
 ---
 title: Comando Listar Origem
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Debug.ListSource
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a5d0699fced4d01d439942081b359454bcf476
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943612"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953185"
 ---
 # <a name="list-source-command"></a>Comando Listar Origem
 Exibe as linhas de código-fonte especificadas.

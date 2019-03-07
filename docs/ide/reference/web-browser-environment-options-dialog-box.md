@@ -1,8 +1,6 @@
 ---
 title: Caixa de diálogo Navegador da Web, Ambiente, Opções
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -11,7 +9,6 @@ f1_keywords:
 helpviewer_keywords:
 - browsers, customizing
 - searching, search page for Web browser
-- Visual Studio Start page, default URL
 - Web browsers, customizing
 - searches, default Web browser search page
 - URLs, specifying VS home page
@@ -21,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389439"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699997"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Caixa de diálogo Navegador da Web, Ambiente, Opções
 
@@ -55,7 +52,7 @@ Define o editor usado para abrir uma página da Web ao escolher **Exibir Fonte**
 
 -   **Editor de origem** Selecione para exibir a fonte no [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
+-   **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta seleção para editar a página da Web em um dos dois modos de exibição: O modo de exibição de Design ou o modo de exibição padrão de Origem baseada em texto.
 
 -   **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.
 

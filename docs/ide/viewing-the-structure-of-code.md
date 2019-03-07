@@ -1,8 +1,6 @@
 ---
 title: Exibir a estrutura de código usando o modo de exibição de classe, hierarquia de chamadas, pesquisador de objetos e janela de definição de código
 ms.date: 05/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -24,15 +22,15 @@ helpviewer_keywords:
 - object browser
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336133"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926366"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Exibir a estrutura do código usando janelas de ferramentas diferentes
 
@@ -111,7 +109,7 @@ Usar a lista suspensa na barra de ferramentas, é possível especificar o escopo
 
 O painel principal exibe as chamadas do método e para ele, e o painel **Chamar Sites** exibe o local da chamada selecionada. Para membros virtuais ou abstratos, um nó **Substitui o nome do método** é exibido. Para membros de interface, um nó **Implementa o nome do método** é exibido.
 
-A janela **Hierarquia de Chamada** não encontra referências do grupo do método, que incluem os locais nos quais um método é adicionado como um manipulador de eventos ou é atribuído a um representante. Para localizar essas referências, use o comando **Localizar todas as referências**.
+A janela **Hierarquia de Chamada** não encontra referências do grupo do método, que incluem os locais nos quais um método é adicionado como um manipulador de eventos ou é atribuído a um delegado. Para localizar essas referências, use o comando **Localizar todas as referências**.
 
 O menu de atalho na janela **Hierarquia de Chamada** contém os comandos a seguir:
 
@@ -183,7 +181,7 @@ A Janela de **Definição de Código** exibe a definição de um membro ou tipo 
 Embora essa janela seja somente leitura, você pode definir pontos de interrupção ou indicadores nela. Para modificar a definição exibida, escolha **Editar Definição** no menu de atalho. Isso abre o arquivo de origem no editor de códigos e move o ponto de inserção para a linha em que a definição começa.
 
 > [!NOTE]
-> A partir do Visual Studio 2015, a janela de **Definição de Código** pode ser usada somente com o código C++.
+> A partir do Visual Studio 2015, a janela **Definição de Código** pode ser usada somente com o código C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menu de atalho de Definição de Código
 
@@ -204,7 +202,7 @@ O menu de atalho na Janela de **Definição de Código** pode conter os seguinte
 |**Depurar Testes**||
 |**Ponto de Interrupção**|Insere um ponto de interrupção (ou um tracepoint).|
 |**Executar até o cursor**|Executa o programa em modo de depuração até o local do cursor.|
-|**Trecho**||
+|**Snippet**||
 |**Recortar**, **Copiar**, **Colar**||
 |**Anotação**||
 |**Estrutura de tópicos**|Comandos de estrutura de tópicos padrão.|

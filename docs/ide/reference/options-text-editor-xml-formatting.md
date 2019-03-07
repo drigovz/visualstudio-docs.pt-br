@@ -1,21 +1,19 @@
 ---
 title: Opções, Editor de texto, XML, Formatação
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 652d9ff3b2178089b4ef35838a4181408aef7f09
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+manager: jillfra
+ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388293"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943539"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opções, Editor de texto, XML, Formatação
 
@@ -68,5 +66,5 @@ Se um elemento contém uma mistura de texto e de marcação, os conteúdos são 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar documentação XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Como: Criar documentação XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Geração de código](../code-generation-in-visual-studio.md)

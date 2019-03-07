@@ -5,8 +5,13 @@ items:
   href: installing-the-visual-studio-sdk.md
 - name: Começar a desenvolver extensões do Visual Studio
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Criar sua primeira extensão: Olá, Mundo'
+- name: 'Criar sua primeira extensão: Hello World'
   href: extensibility-hello-world.md
+- name: Novidades no SDK do Visual Studio 2019
+  href: whats-new-visual-studio-2019-sdk.md
+  items:
+  - name: Extensões carregadas automaticamente de modo sincrônico
+    href: synchronously-autoloaded-extensions.md
 - name: Novidades no SDK do Visual Studio 2017
   href: what-s-new-in-the-visual-studio-2017-sdk.md
   items:
@@ -125,42 +130,42 @@ items:
       href: editor-imports.md
     - name: Suporte para EditorConfig
       href: supporting-editorconfig.md
-    - name: 'Passo a passo: vinculando um tipo de conteúdo a uma extensão de nome de arquivo'
+    - name: 'Passo a passo: Vinculando um tipo de conteúdo a uma extensão de nome de arquivo'
       href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-    - name: 'Passo a passo: criando um glifo de margem'
+    - name: 'Passo a passo: Criando um glifo de margem'
       href: walkthrough-creating-a-margin-glyph.md
-    - name: 'Passo a passo: personalizando a exibição de texto'
+    - name: 'Passo a passo: Personalizando a exibição de texto'
       href: walkthrough-customizing-the-text-view.md
-    - name: 'Passo a passo: criando um adorno de exibição, comandos e configurações (guias de coluna)'
+    - name: 'Passo a passo: Criando um adorno de exibição, comandos e configurações (guias de coluna)'
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-    - name: 'Passo a passo: realçando texto'
+    - name: 'Passo a passo: Realçando o texto'
       href: walkthrough-highlighting-text.md
-    - name: 'Passo a passo: estrutura de tópicos'
+    - name: 'Passo a passo: Estrutura de tópicos'
       href: walkthrough-outlining.md
-    - name: 'Passo a passo: exibindo chaves correspondentes'
+    - name: 'Passo a passo: Exibindo chaves correspondentes'
       href: walkthrough-displaying-matching-braces.md
-    - name: 'Passo a passo: exibindo dicas de ferramenta de InformaçãoRápida'
+    - name: 'Passo a passo: Exibindo dicas de ferramenta Informações Rápidas'
       href: walkthrough-displaying-quickinfo-tooltips.md
-    - name: 'Passo a passo: exibindo a ajuda da assinatura'
+    - name: 'Passo a passo: Exibindo a ajuda da assinatura'
       href: walkthrough-displaying-signature-help.md
-    - name: 'Passo a passo: exibindo o preenchimento de declaração'
+    - name: 'Passo a passo: Exibindo o preenchimento de declaração'
       href: walkthrough-displaying-statement-completion.md
-    - name: 'Passo a passo: implementando snippets de código'
+    - name: 'Passo a passo: Implementando snippets de código'
       href: walkthrough-implementing-code-snippets.md
-    - name: 'Passo a passo: exibindo sugestões de lâmpada'
+    - name: 'Passo a passo: Exibindo sugestões de lâmpada'
       href: walkthrough-displaying-light-bulb-suggestions.md
-    - name: 'Passo a passo: usando um comando do shell com uma extensão do editor'
+    - name: 'Passo a passo: Usando um comando do shell com uma extensão do editor'
       href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-    - name: 'Passo a passo: usando uma tecla de atalho com uma extensão do editor'
+    - name: 'Passo a passo: Usando uma tecla de atalho com uma extensão do editor'
       href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-    - name: 'Passo a passo: acessando o objeto DTE de uma extensão do editor'
+    - name: 'Passo a passo: Acessando o objeto DTE em uma extensão do editor'
       href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
   - name: Criando designers e editores personalizados
     href: creating-custom-editors-and-designers.md
     items:
-    - name: 'Passo a passo: criando um editor personalizado'
+    - name: 'Passo a passo: Criando um editor personalizado'
       href: walkthrough-creating-a-custom-editor.md
-    - name: 'Passo a passo: adicionando recursos a um editor personalizado'
+    - name: 'Passo a passo: Adicionando funcionalidades a um editor personalizado'
       href: walkthrough-adding-features-to-a-custom-editor.md
     - name: Inicialização do designer e a configuração de metadados
       href: designer-initialization-and-metadata-configuration.md
@@ -231,8 +236,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: Elemento de assembly (Extensão do Assistente de Modelo do Visual Studio)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (Modelos do Visual Studio)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: Atributo e elemento BuildOnLoad (modelos do Visual Studio)
+      href: buildonload-visual-studio-templates.md
+    - name: Elemento BuildProjectOnload (Modelos do Visual Studio)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (modelos do Visual Studio)
       href: createinplace-visual-studio-templates.md
     - name: Elemento CreateNewFolder (modelos do Visual Studio)
@@ -295,6 +302,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: Elemento RequiredFrameworkVersion (modelos do Visual Studio)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: Elemento RequiredPlatformVersion (Modelos do Visual Studio)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: Elemento SDKReference (Modelos do Visual Studio)
+      href: sdkreference-element-visual-studio-templates.md
     - name: ShowByDefault (modelos do Visual Studio)
       href: showbydefault-visual-studio-templates.md
     - name: Elemento SolutionFolder (modelos do Visual Studio)
@@ -307,6 +318,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: Elemento SupportsMasterPage (modelos do Visual Studio)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: Elemento TargetPlatformName (Modelos do Visual Studio)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: Elemento TemplateContent (modelos do Visual Studio)
       href: templatecontent-element-visual-studio-templates.md
     - name: Elemento TemplateData (modelos do Visual Studio)
@@ -321,14 +334,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: Elemento WizardExtension (modelos do Visual Studio)
       href: wizardextension-element-visual-studio-templates.md
-    - name: Elemento BuildProjectOnload (Modelos do Visual Studio)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: Elemento RequiredPlatformVersion (Modelos do Visual Studio)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: Elemento SDKReference (Modelos do Visual Studio)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: Elemento TargetPlatformName (Modelos do Visual Studio)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Referência de esquema do manifesto de modelo do Visual Studio
     href: visual-studio-template-manifest-schema-reference.md
 - name: Estendendo opções e configurações do usuário
@@ -365,13 +370,13 @@ items:
   - name: Criando uma página inicial personalizada
     href: creating-a-custom-start-page.md
     items:
-    - name: 'Passo a passo: adicionando XAML personalizado à página inicial'
+    - name: 'Passo a passo: Adicionando um XAML personalizado à página inicial'
       href: walkthrough-adding-custom-xaml-to-the-start-page.md
     - name: Adicionando um controle de usuário à página inicial
       href: adding-user-control-to-the-start-page.md
     - name: Adicionando comandos do Visual Studio a uma página inicial
       href: adding-visual-studio-commands-to-a-start-page.md
-    - name: 'Passo a passo: salvando as configurações do usuário em uma página inicial'
+    - name: 'Passo a passo: Salvando as configurações de usuário em uma página inicial'
       href: walkthrough-saving-user-settings-on-a-start-page.md
     - name: Implantando páginas iniciais personalizadas
       href: deploying-custom-start-pages.md
@@ -380,7 +385,45 @@ items:
 - name: Extensibilidade de projeto do Visual Studio C++
   href: visual-cpp-project-extensibility.md
 - name: Diretrizes da experiência do usuário do Visual Studio
-  href: ux-guidelines/toc.yml
+  href: ux-guidelines/visual-studio-user-experience-guidelines.md
+  items:
+  - name: Conceitos básicos do UX
+    href: ux-guidelines/ux-essentials-for-visual-studio.md
+  - name: Fontes e formatação
+    href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
+  - name: Cores e estilos
+    href: ux-guidelines/colors-and-styling-for-visual-studio.md
+    items:
+    - name: Cores compartilhadas
+      href: ux-guidelines/shared-colors-for-visual-studio.md
+    - name: Referência de valor de cor
+      href: ux-guidelines/color-value-reference-for-visual-studio.md
+  - name: Imagens e ícones
+    href: ux-guidelines/images-and-icons-for-visual-studio.md
+    items:
+    - name: Dicionário de linguagem visual
+      href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
+  - name: Menus e comandos
+    href: ux-guidelines/menus-and-commands-for-visual-studio.md
+  - name: Padrões de interação
+    href: ux-guidelines/interaction-patterns-for-visual-studio.md
+    items:
+    - name: Padrões de aplicação
+      href: ux-guidelines/application-patterns-for-visual-studio.md
+    - name: Padrões de controle comuns
+      href: ux-guidelines/common-control-patterns-for-visual-studio.md
+    - name: Padrões compostos
+      href: ux-guidelines/composite-patterns-for-visual-studio.md
+  - name: Texto e ajuda da interface do usuário
+    href: ux-guidelines/ui-text-and-help-for-visual-studio.md
+  - name: Layout de diálogo
+    href: ux-guidelines/layout-for-visual-studio.md
+  - name: Notificações e andamento
+    href: ux-guidelines/notifications-and-progress-for-visual-studio.md
+  - name: Animations
+    href: ux-guidelines/animations-for-visual-studio.md
+  - name: Ferramentas de avaliação
+    href: ux-guidelines/evaluation-tools-for-visual-studio.md
 - name: Resolvendo problemas e DPI
   href: addressing-dpi-issues2.md
 - name: Catálogo e o serviço de imagem
@@ -426,11 +469,11 @@ items:
     href: vsix-project-template.md
   - name: Introdução ao modelo de projeto do VSIX
     href: getting-started-with-the-vsix-project-template.md
-  - name: 'Passo a passo: publicando uma extensão do Visual Studio'
+  - name: 'Passo a passo: Publicando uma extensão do Visual Studio'
     href: walkthrough-publishing-a-visual-studio-extension.md
-  - name: 'Passo a passo: publicando uma extensão do Visual Studio por meio da linha de comando'
+  - name: 'Passo a passo: Publicando uma extensão do Visual Studio por meio da linha de comando'
     href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-  - name: 'Passo a passo: criar um pacote de extensão'
+  - name: 'Passo a passo: Criar um pacote de extensões'
     href: walkthough-create-extension-pack.md
   - name: Adicionar uma dependência a um pacote do VSIX
     href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -728,11 +771,11 @@ items:
 - name: Criar um Software Development Kit
   href: creating-a-software-development-kit.md
   items:
-  - name: 'Passo a passo: criando um SDK usando C# ou Visual Basic'
+  - name: 'Passo a passo: Criando um SDK usando C# ou Visual Basic'
     href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-  - name: 'Passo a passo: criando um SDK usando C++'
+  - name: 'Passo a passo: Criando um SDK usando C++'
     href: walkthrough-creating-an-sdk-using-cpp.md
-  - name: 'Passo a passo: criando um SDK usando JavaScript'
+  - name: 'Passo a passo: Criando um SDK usando JavaScript'
     href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Extensibilidade da Plataforma do Compilador .NET ("Roslyn")
   href: dotnet-compiler-platform-roslyn-extensibility.md
@@ -743,9 +786,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Referência da versão do pacote Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 5b59d25db51cf7c159d54a821aaa6afa048e2228
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967487"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841812"

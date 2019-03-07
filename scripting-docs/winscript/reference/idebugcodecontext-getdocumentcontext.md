@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 098d57a5ff0ba14b1dd493ad772eee595a10ec9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e69ecf79c369b0ac99f0a598681e1a02a5dd21b0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725646"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096532"
 ---
 # <a name="idebugcodecontextgetdocumentcontext"></a>IDebugCodeContext::GetDocumentContext
-Retorna o contexto do documento associado a este contexto de código.  
+Retorna o contexto de documento associado a este contexto de código.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppsc  
 );  
@@ -38,7 +38,7 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppsc`  
- [out] O contexto do documento associado a este contexto de código.  
+ [out] O contexto de documento associado a este contexto de código.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT GetDocumentContext(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Para documentos de texto, o intervalo de posição do caractere deve incluir o texto da instrução inteira. Isso permite que o depurador IDE para realçar a instrução de origem atual.  
+ Para documentos de texto, o intervalo de posição do caractere deve incluir o texto da instrução inteira. Isso permite que o IDE para destacar a instrução de código-fonte atual do depurador.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugCodeContext](../../winscript/reference/idebugcodecontext-interface.md)

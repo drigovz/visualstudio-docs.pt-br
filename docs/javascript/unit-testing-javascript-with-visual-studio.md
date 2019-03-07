@@ -1,26 +1,24 @@
 ---
-title: Teste de unidade no Node.js
-description: O Visual Studio fornece suporte ao teste de unidade do código JavaScript usando as Ferramentas Node.js para Visual Studio
-ms.custom: ''
+title: Teste de unidade em JavaScript e TypeScript
+description: O Visual Studio fornece suporte ao teste de unidade do código JavaScript e TypeScript usando as Ferramentas Node.js para Visual Studio
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946692"
 ---
-# <a name="unit-testing-in-nodejs"></a>Teste de unidade no Node.js
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Teste de unidade em JavaScript e TypeScript no Visual Studio
 
 As Ferramentas Node.js para Visual Studio permitem que você escreva e execute testes de unidade usando algumas das estruturas mais populares do JavaScript, sem a necessidade de alternar para um prompt de comando.
 

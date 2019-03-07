@@ -3,22 +3,21 @@ title: Exibir o estado anterior do aplicativo usando o IntelliTrace
 description: Saiba como tirar instantâneos e exibi-los com o retrocesso do IntelliTrace
 ms.custom: seodec18
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060139"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703572"
 ---
-# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio
+# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio (Visual Studio Enterprise)
 
 O retrocesso do IntelliTrace tira automaticamente um instantâneo do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
 
@@ -30,14 +29,14 @@ Neste tutorial, você irá:
 > * Habilitar instantâneos e eventos do IntelliTrace
 > * Navegar pelos eventos usando os comandos de retrocesso e de avanço
 > * Exibir instantâneos de evento
-  
-## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Habilitar o modo de eventos e instantâneos do IntelliTrace 
+
+## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Habilitar o modo de eventos e instantâneos do IntelliTrace
 
 1. Abra seu projeto no Visual Studio Enterprise.
 
-1. Abra as configurações **Ferramentas** > **Opções** > **IntelliTrace** e selecione a opção **Eventos e instantâneos do IntelliTrace**. 
+1. Abra as configurações **Ferramentas** > **Opções** > **IntelliTrace** e selecione a opção **Eventos e instantâneos do IntelliTrace**.
 
-    Começando no Visual Studio 2017 Enterprise versão 15.9 Versão prévia 2, essa opção passou a ser **Instantâneos do IntelliTrace (gerenciados e nativos)**. 
+    Começando no Visual Studio 2017 Enterprise versão 15.9 Versão prévia 2, essa opção passou a ser **Instantâneos do IntelliTrace (gerenciados e nativos)**.
 
     ![Habilitar o modo de Eventos e Instantâneos do IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Habilitar o modo de Eventos e Instantâneos do IntelliTrace")
 
@@ -56,7 +55,7 @@ Neste tutorial, você irá:
 
     O IntelliTrace obtém um instantâneo do processo do aplicativo em cada etapa do depurador, em cada evento de ponto de interrupção e em cada evento de exceção sem tratamento. Esses eventos são registrados na guia **Eventos** na janela **Ferramentas de Diagnóstico** junto com outros eventos do IntelliTrace. Para abrir essa janela, escolha **Depurar** > **Janelas** > **Mostrar Ferramentas de Diagnóstico**.
 
-    Um ícone de câmera aparece próximo aos eventos para os quais os instantâneos estão disponíveis. 
+    Um ícone de câmera aparece próximo aos eventos para os quais os instantâneos estão disponíveis.
 
     ![Guia Eventos com instantâneos](../debugger/media/intellitrace-events-tab-with-snapshots.png "Guia Eventos com instantâneos de pontos de interrupção e etapas")
 
@@ -70,15 +69,15 @@ Neste tutorial, você irá:
 
     ![Botões Voltar e Avançar Etapa](../debugger/media/intellitrace-step-back-icons-description.png "Botões Voltar e Avançar Etapa")
 
-    Quando você volta ou avança uma etapa, o Visual Studio entra em modo de depuração histórica. Nesse modo, o contexto do depurador alterna para a hora em que o evento selecionado foi registrado. O Visual Studio também move o ponteiro para a linha de código correspondente na janela de origem. 
+    Quando você volta ou avança uma etapa, o Visual Studio entra em modo de depuração histórica. Nesse modo, o contexto do depurador alterna para a hora em que o evento selecionado foi registrado. O Visual Studio também move o ponteiro para a linha de código correspondente na janela de origem.
 
     Nessa exibição, você pode inspecionar os valores nas janelas **Pilha de Chamadas**, **Locais**, **Autos** e **Inspeção**. Você também pode passar o mouse sobre variáveis para exibir DataTips e executar a avaliação da expressão na janela **Imediato**. Os dados que você vê são do instantâneo do processo do aplicativo executado naquele momento.
 
-    Portanto, por exemplo, se você alcançou um ponto de interrupção e realizou uma Etapa (**F10**), o botão **Voltar Etapa** coloca o Visual Studio no modo histórico na linha de código correspondente ao ponto de interrupção. 
+    Portanto, por exemplo, se você alcançou um ponto de interrupção e realizou uma Etapa (**F10**), o botão **Voltar Etapa** coloca o Visual Studio no modo histórico na linha de código correspondente ao ponto de interrupção.
 
     ![Ativando o modo histórico em um evento com um instantâneo](../debugger/media/intellitrace-historical-mode-with-snapshot.png "Ativando o modo histórico em um evento com um instantâneo")
 
-2. Para retornar à execução ao vivo, escolha **Continuar (F5)** ou clique no link **Retornar à depuração ao vivo** na barra de informações. 
+2. Para retornar à execução ao vivo, escolha **Continuar (F5)** ou clique no link **Retornar à depuração ao vivo** na barra de informações.
 
 3. Você também pode exibir um instantâneo na guia **Eventos**. Para fazer isso, selecione um evento com um instantâneo e clique em **Ativar Depuração Histórica**.
 
@@ -88,28 +87,28 @@ Neste tutorial, você irá:
 
     ![Visão geral do retrocesso do IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Visão geral do retrocesso do IntelliTrace")
 
-    Para saber mais sobre como inspecionar variáveis no Visual Studio, confira [Tour pelas funcionalidades do depurador](../debugger/debugger-feature-tour.md)  
+    Para saber mais sobre como inspecionar variáveis no Visual Studio, confira [Tour pelas funcionalidades do depurador](../debugger/debugger-feature-tour.md)
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
 #### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>Qual a diferença entre o retrocesso do IntelliTrace e o modo somente eventos do IntelliTrace?
 
-O IntelliTrace no modo somente eventos permite que você ative a depuração histórica em pontos de interrupção e etapas do depurador. No entanto, o IntelliTrace somente capturará dados nas janelas **Locais** e **Autos** se elas estiverem abertas e somente capturará dados que estejam expandidos e na exibição. No modo somente eventos, você geralmente não tem uma exibição completa das variáveis e de objetos complexos. Além disso, não há suporte para a avaliação de expressão e para a exibição de dados na janela **Inspeção**. 
+O IntelliTrace no modo somente eventos permite que você ative a depuração histórica em pontos de interrupção e etapas do depurador. No entanto, o IntelliTrace somente capturará dados nas janelas **Locais** e **Autos** se elas estiverem abertas e somente capturará dados que estejam expandidos e na exibição. No modo somente eventos, você geralmente não tem uma exibição completa das variáveis e de objetos complexos. Além disso, não há suporte para a avaliação de expressão e para a exibição de dados na janela **Inspeção**.
 
 No modo de eventos e instantâneos, o IntelliTrace captura todo o instantâneo do processo do aplicativo, incluindo objetos complexos. Em uma linha de código, você pode ver as mesmas informações como se você tivesse parado em um ponto de interrupção (e não importa se você expandiu previamente as informações). A avaliação da expressão também é compatível ao exibir um instantâneo.  
 
 #### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual é o impacto de desempenho desse recurso? 
 
 O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga de tirar um instantâneo é de cerca de 30 ms. Quando um instantâneo é obtido, o processo do aplicativo é bifurcado e a cópia bifurcada é suspensa. Quando você exibe um instantâneo, o Visual Studio está anexando a cópia bifurcada do processo. Para cada instantâneo, o Visual Studio copia apenas a tabela de página e define as páginas como gravação de cópia. Se os objetos no heap forem alterados entre as etapas do depurador associadas a instantâneos, a respectiva tabela de página será copiada, resultando em um custo mínimo de memória. Se o Visual Studio detectar que não há memória suficiente para criar um instantâneo, ele não o fará.
- 
-## <a name="known-issues"></a>Problemas Conhecidos  
+
+## <a name="known-issues"></a>Problemas Conhecidos
 * Se você estiver usando o modo de eventos e instantâneos do IntelliTrace em versões do Windows anteriores ao Windows 10 Fall Creators Update (RS3) e se a plataforma de depuração de destino do aplicativo for definida como x86, o IntelliTrace não obterá instantâneos.
 
     Soluções alternativas:
-  * Se você estiver na Atualização de Aniversário do Windows 10 (RS1) e anterior à versão 10.0.14393.2273, [instale o KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Se você estiver na Atualização de Aniversário do Windows 10 (RS1) e anterior à versão 10.0.14393.2273, [instale o KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720).
   * Se você estiver com o Windows 10 Creators Update (RS2) e anterior à versão 10.0.15063.1112, [instale o KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-  * Instale ou atualize para o Windows 10 Fall Creators Update (RS3). 
-  * Como alternativa: 
+  * Instale ou atualize para o Windows 10 Fall Creators Update (RS3).
+  * Como alternativa:
     1. Instale o conjunto de ferramentas do VC++ 2015.3 v140 para o componente de área de trabalho (x86, x64) do Instalador do Visual Studio.
     2. Compile o aplicativo de destino.
     3. Na linha de comando, use a ferramenta editbin para definir o sinalizador `Largeaddressaware` para o executável de destino. Por exemplo, você pode usar este comando (depois de atualizar o caminho): "C:\Arquivos de Programas (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
@@ -121,11 +120,11 @@ O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga
 * Quando um instantâneo do processo do aplicativo for criado em um aplicativo que usa um arquivo persistente mapeado na memória, o processo com o instantâneo manterá um bloqueio exclusivo no arquivo mapeado em memória (mesmo depois que o processo pai liberar o bloqueio). Outros processos ainda serão capazes de ler, mas não de gravar no arquivo mapeado em memória.
 
     Solução alternativa:
-    * Elimine todos os instantâneos encerrando a sessão de depuração. 
+    * Elimine todos os instantâneos encerrando a sessão de depuração.
 
-* Ao depurar um aplicativo cujo processo tenha um grande número de regiões de memória exclusivas, como um aplicativo que carrega um grande número de DLLs, o desempenho das etapas com instantâneos habilitados poderá ser afetado. Esse problema será abordado em uma versão futura do Windows. Se você estiver enfrentando esse problema, contate-nos em stepback@microsoft.com. 
+* Ao depurar um aplicativo cujo processo tenha um grande número de regiões de memória exclusivas, como um aplicativo que carrega um grande número de DLLs, o desempenho das etapas com instantâneos habilitados poderá ser afetado. Esse problema será abordado em uma versão futura do Windows. Se você estiver enfrentando esse problema, contate-nos em stepback@microsoft.com.
 
-* Ao salvar um arquivo com **Depurar > IntelliTrace > Salvar sessão do IntelliTrace** no modo de eventos e instantâneos, os dados adicionais capturados de instantâneos não ficarão disponíveis no arquivo .itrace. No modo de eventos de ponto de interrupção e etapa, você vê as mesmas informações como se tivesse salvo o arquivo no modo somente eventos do IntelliTrace. 
+* Ao salvar um arquivo com **Depurar > IntelliTrace > Salvar sessão do IntelliTrace** no modo de eventos e instantâneos, os dados adicionais capturados de instantâneos não ficarão disponíveis no arquivo .itrace. No modo de eventos de ponto de interrupção e etapa, você vê as mesmas informações como se tivesse salvo o arquivo no modo somente eventos do IntelliTrace.
 
 ## <a name="next-steps"></a>Próximas etapas
 

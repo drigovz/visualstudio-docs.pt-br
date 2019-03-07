@@ -5,8 +5,6 @@ author: abuchholtzau
 ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -15,12 +13,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 08c4b08c33cd954aa427f158158f29cfbe50df94
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384698"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954940"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Definir configurações de confiança de arquivos e pastas
 
@@ -37,11 +35,11 @@ Para alterar as configurações de confiança, siga estas etapas:
 
 2. Escolha o nível das verificações que você gostaria de ter para os arquivos e pastas. É possível ter verificações diferentes para cada um deles. As opções são:
 
-   * **Nenhuma verificação**: o Visual Studio não executa nenhuma verificação.
+   * **Nenhuma verificação**: O Visual Studio não executa nenhuma verificação.
 
-   * **Verifique a marca do atributo da Web**: se o arquivo ou pasta tiver a marca do atributo Web, o Visual Studio o bloqueará e solicitará permissão para abrir.
+   * **Verifique a marca do atributo da Web**: Se o arquivo ou pasta tiver a marca do atributo Web, o Visual Studio o bloqueará e solicitará permissão para abrir.
 
-   * **Verifique se o caminho é confiável**: se o arquivo ou pasta não fizer parte da lista **Caminhos Confiáveis**, o Visual Studio o bloqueará e solicitará permissão para abrir.
+   * **Verifique se o caminho é confiável**: Se o arquivo ou a pasta não fizer parte da lista **Caminhos Confiáveis**, o Visual Studio o bloqueará e solicitará permissão para abrir.
 
    ![Opções de verificação de confiança](media/trust-settings.png)
 

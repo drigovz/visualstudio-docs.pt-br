@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c44a0945cff625d18ad22b4650dfe4a3f430405
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e1996af8f9921ef888c43d807ee11771e5aaa9e4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733746"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349693"
 ---
 # <a name="profilerheapobjectnameid-type"></a>Tipo PROFILER_HEAP_OBJECT_NAME_ID
-A ID do nome do objeto heap. Usado em [estrutura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md).  
+A ID do nome do objeto heap. Usado na [estrutura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef UINT PROFILER_HEAP_OBJECT_NAME_ID;  
 ```

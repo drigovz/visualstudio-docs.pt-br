@@ -1,5 +1,6 @@
 ---
 title: Ferramentas de IA para Visual Studio
+titleSuffix: ''
 description: Visão geral das Ferramentas de IA para Visual Studio
 keywords: ia, visual studio
 author: lisawong19
@@ -8,16 +9,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: e0377417da5859e38c46f99b3b335ba627261cb5
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 249db51cf178d8f1c266b9421fbfbdfbc95ef4c4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459681"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842829"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Ferramentas do Visual Studio para IA
 
@@ -47,5 +46,5 @@ Essa extensão facilita o treinamento de modelos no computador local ou o envio 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
 No momento, essa extensão dá suporte aos sistemas operacionais Windows de 64 bits
 
-# <a name="support"></a>Suporte
+## <a name="support"></a>Suporte
 O suporte para essa extensão é fornecido no [GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) (Rastreador de Problemas GitHub). É possível enviar um relatório de bugs, uma sugestão de recurso ou participar das discussões.

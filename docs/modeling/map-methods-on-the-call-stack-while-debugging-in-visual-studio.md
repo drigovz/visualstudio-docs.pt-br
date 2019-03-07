@@ -1,8 +1,6 @@
 ---
 title: Mapear métodos na pilha de chamadas ao depurar
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -27,15 +25,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5866a26fdcc8bed88713bf92e1c38bfb3b04ba8f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067392"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924533"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.
@@ -44,7 +42,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
  Itens necessários:
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
 - Código que você pode depurar, como Visual c#, Visual Basic, C++, JavaScript ou X + +
 
@@ -93,7 +91,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 ## <a name="AddRelatedCode"></a> Adicionar código relacionado ao mapa
  Agora você tem um mapa - o que em seguida? Se você estiver trabalhando com c# ou Visual Basic, adicione itens, como campos, propriedades e outros métodos, para acompanhar o que está acontecendo no código.
 
- Clique duas vezes em um método para ver sua definição de código ou use o menu de atalho para o método. (Teclado: selecione o método no mapa e pressione **F12**)
+ Clique duas vezes em um método para ver sua definição de código ou use o menu de atalho para o método. (Teclado: Selecione o método no mapa e pressione **F12**)
 
  ![Ir para definição de código para um método no mapa de códigos](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -143,7 +141,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
    Alterar o mapeamento não afeta o código de forma alguma. Sinta-se à vontade para renomear, mover ou remover qualquer item no mapa.
 
-- **O que significa esta mensagem: "o diagrama pode ser baseado em uma versão mais antiga do código"?**
+- **O que significa esta mensagem: "O diagrama pode ser baseado em uma versão mais antiga do código"?**
 
    O código pode ter sido alterado depois que você alterou o mapa pela última vez. Por exemplo, uma chamada no mapa pode não existir mais no código. Feche a mensagem e tente recriar a solução antes de atualizar o mapa outra vez.
 

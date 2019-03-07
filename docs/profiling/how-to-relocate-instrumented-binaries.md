@@ -1,8 +1,6 @@
 ---
-title: Como realocar binários instrumentados | Microsoft Docs
-ms.custom: ''
+title: 'Como: Realocar binários instrumentados | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.binaries
@@ -13,17 +11,17 @@ helpviewer_keywords:
 - profiling tools, instrumented binaries
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a060506f818ac000611fc0c29988ed324ae89226
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 96faf382145d7c4541f1fe66f872ad3622f64631
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843647"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620727"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>Como realocar binários instrumentados
+# <a name="how-to-relocate-instrumented-binaries"></a>Como: Realocar binários instrumentados
 
 Durante a instrumentação, as investigações são inseridas no binário para medir o desempenho do aplicativo. Ao escolher realocar o binário instrumentado, uma cópia do binário original é instrumentada e colocada no local especificado. Essa opção será útil se você não quiser que o criador de perfil renomeie o binário original. Se o binário não for realocado, a versão original do binário será substituída.
 
@@ -39,5 +37,5 @@ Durante a instrumentação, as investigações são inseridas no binário para m
 
 ## <a name="see-also"></a>Consulte também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
 [VSInstr](../profiling/vsinstr.md)

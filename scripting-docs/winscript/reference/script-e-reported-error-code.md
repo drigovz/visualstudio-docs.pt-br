@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a4ced10b24d80b30ddacd2b2d7c4c04312d576a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734046"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349199"
 ---
 # <a name="scriptereported-error-code"></a>Código de erro SCRIPT_E_REPORTED
-O mecanismo de script relatou uma exceção sem tratamento ao host por meio de [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). O host pode ignorar esse erro.  
+O mecanismo de script relatou uma exceção sem tratamento ao host por meio [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). O host pode ignorar esse erro.  
   
 ## <a name="syntax"></a>Sintaxe  
   

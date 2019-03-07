@@ -3,7 +3,6 @@ title: Dicas e truques no depurador
 description: Saiba mais sobre alguns dos recursos menos conhecidos suportados pelo depurador do Visual Studio
 ms.custom: seodec18
 ms.date: 06/15/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87c9bd45383cdd4e5329834e4a64b1917229e08b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055219"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717540"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprender dicas de produtividade e truques do depurador no Visual Studio
 
-Leia este tópico para aprender algumas dicas de produtividade e truques para o depurador do Visual Studio. Para ver os recursos básicos do depurador, consulte [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md). Neste tópico, abordaremos algumas áreas que não estão incluídas no tour do recurso.
+Leia este tópico para aprender algumas dicas de produtividade e truques para o depurador do Visual Studio. Para ver os recursos básicos do depurador, consulte [primeiro, examine o depurador](../debugger/debugger-feature-tour.md). Neste tópico, abordaremos algumas áreas que não estão incluídas no tour do recurso.
 
 ## <a name="pin-data-tips"></a>Dicas de dados do PIN
 
@@ -78,9 +77,9 @@ Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de
 3. Localize a variável na **Locals** janela (**Depurar > Windows > Locals**), a variável com o botão direito e selecione **criar ID de objeto**.
 
     ![Criar uma ID de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Você deve ver uma **$** além de um número no **locais** janela. Essa variável é a ID de objeto.
-  
+
 5.  A variável de ID de objeto com o botão direito e escolha **Adicionar inspeção**.
 
 Para obter mais informações, consulte [criar uma ID de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -124,11 +123,11 @@ Se você precisar depurar os tipos de problemas que são comuns a aplicativos mu
 #### <a name="to-show-threads-in-your-source-code"></a>Mostrar threads em seu código-fonte
 
 1.  Durante a depuração, clique o **Mostrar Threads em origem** botão ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") no **depurar** barra de ferramentas.
-  
+
 2.  Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se parece com dois threads de pano. O marcador de thread indica que um thread está parado nesse local.
 
     Observe que um marcador de thread pode ser escondido parcialmente por um ponto de interrupção.
-  
+
 3.  Passe o ponteiro sobre o marcador de thread. Um DataTip aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado.
 
     Você também pode exibir o local de threads na [janela pilhas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -163,8 +162,8 @@ Para descobrir como o depurador classifica o código como código de usuário, c
 
 Para obter mais dicas e truques e informações mais detalhadas, consulte essas postagens de blog:
 
-- [7 menos conhecidos de hackers para depuração no Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 gems ocultas no Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 menos conhecidos de hackers para depuração no Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 gems ocultas no Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Consulte também
 [Atalhos de teclado](../ide/tips-and-tricks-for-visual-studio.md)

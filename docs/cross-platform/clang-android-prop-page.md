@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCClangCompilerTool.DebugInformationFormat
@@ -43,12 +43,12 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232111"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956227"
 ---
 # <a name="clang-project-properties-android-c"></a>Propriedades do projeto Clang (Android C++)
 
@@ -67,7 +67,7 @@ Habilitar exceções C++ | Especifica o modelo de tratamento de exceções a ser
 Habilitar vinculação no nível da função | Permite que o compilador empacote funções individuais no formato de funções empacotadas (COMDATs). Necessário para editar e continuar a trabalhar.     (ffunction-sections).
 Habilitar vinculação no nível dos dados | Habilita as otimizações do vinculador para remover dados não utilizados ao emitir cada item de dados em uma seção separada.
 Habilitar SIMD(Neon) avançado | Habilita a geração de código para hardware de ponto flutuante NEON. Somente se aplica a arquiteturas arm.
-ABI de ponto flutuante | Opção de seleção para escolher o ABI de ponto flutuante. | **Suave** – 'Suave' faz com que o compilador gere saídas contendo chamadas da biblioteca para operações de ponto flutuante.<br>**SoftFP** – 'SoftFP' permite a geração de código usando instruções de ponto flutuante de hardware, mas ainda usa as convenções de chamada de flutuação suave.<br>**Rígido** – 'Rígido' permite a geração de instruções de ponto flutuante e usa convenções de chamada específicas de FPU.<br>
+ABI de ponto flutuante | Opção de seleção para escolher o ABI de ponto flutuante. | **Suave** – 'Suave' faz com que o compilador gere saídas contendo chamadas da biblioteca para operações de ponto flutuante.<br>**SoftFP** – 'SoftFP' permite a geração de código usando instruções de ponto flutuante de hardware, mas ainda usa as convenções de chamada de flutuação suave.<br>**Rígido**: permite a geração de instruções de ponto flutuante e usa convenções de chamada específicas de FPU.<br>
 Verificação de segurança | A Verificação de Segurança ajuda a detectar saturações de buffer de pilha, uma tentativa de ataque comum à segurança de um programa. (fstack-protector). | **Desabilitar verificação de segurança** – Desabilitar a verificação de segurança.<br>**Habilitar verificação de segurança** – Habilitar a verificação de segurança. (fstack-protector)<br>
 Código independente da posição | Gerar um PIC (código independente da posição) para ser usado em uma biblioteca compartilhada.
 Usar enums curtas | O tipo enum usa somente o número de bytes exigido pelo conjunto de entrada de valores possíveis.

@@ -4,30 +4,28 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61cf6e716f082abf28043d56d1a8803853d894aa
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 70f39dd23851a2ebc0a48afd05da54b0d8deb24a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566667"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955668"
 ---
 # <a name="vs-shell-deployment"></a>Implantação do VS Shell
 
-Um shell isolado permite que você determine quais Visual Studio funcionalidade que você precisa interagir com sua linguagem específica do domínio e como essa solução deve ser exibidos. Para obter mais informações sobre o shell isolado do Visual Studio, consulte [personalizar o Shell isolado](../extensibility/customizing-the-isolated-shell.md).
+Um shell isolado permite que você determine quais Visual Studio funcionalidade que você precisa interagir com sua linguagem específica do domínio e como essa solução deve ser exibidos. Para obter mais informações sobre o shell isolado do Visual Studio, consulte [personalizar o Shell isolado](https://vspartner.com/pages/vsshells).
 
-## <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>Para definir um Shell do Visual Studio como o destino de implantação
+Para definir um Shell do Visual Studio como o destino de implantação:
 
-1.  No **DslPackage** projeto, abra **source.extension.tt**.
+1. No **DslPackage** projeto, abra **source.extension.tt**.
 
-2.  Sob `<SupportedProducts>` inserir:
+2. Sob `<SupportedProducts>` inserir:
 
-    ```xml
-    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
-    ```
+   ```xml
+   <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
+   ```
 
-     Substitua *MyIsolatedShell* com o nome do seu pacote de shell isolado.
+   Substitua *MyIsolatedShell* com o nome do seu pacote de shell isolado.

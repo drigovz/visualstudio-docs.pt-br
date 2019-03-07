@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f926f206bb8a27e6265fd147909a5adb13c3543
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 83fdf8f6a6e9378d328a9df61b1561a1ae747ae8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733896"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089253"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
 Encerra uma conexão de consultoria estabelecida anteriormente por meio de `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Unadvise(  
    DWORD  dwCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwCookie`  
- [in] Token de conexão para encerrar, como retornado pelo `ISimpleConnectionPoint::Advise`.  
+ [in] Token da conexão para encerrar, conforme retornado pelo `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT Unadvise(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Quando um comunicado de conexão for encerrada, a conexão do ponto de chamadas a `Release` método no ponteiro que foi salvo para a conexão durante o `ISimpleConnectionPoint::Advise` método. Que chamam inverte a `AddRef` que foi executada durante o `ISimpleConnectionPoint::Advise` quando o ponto de conexão chama o coletor de consultoria `QueryInterface`.  
+ Quando uma conexão de consultoria for encerrado, a conexão de ponto chamadas a `Release` método no ponteiro que foi salvo para a conexão durante o `ISimpleConnectionPoint::Advise` método. Essa chamada inverte a `AddRef` que foi executado durante o `ISimpleConnectionPoint::Advise` quando o ponto de conexão chama o coletor de consultoria `QueryInterface`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

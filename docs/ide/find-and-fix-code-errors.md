@@ -2,21 +2,19 @@
 title: Corrigir os erros de programa e melhorar o código
 description: Este artigo descreve algumas maneiras básicas pelas quais o Visual Studio pode ajudá-lo a encontrar e corrigir problemas em seu código, incluindo erros de build, análise de código, ferramentas de depuração e testes de unidade.
 ms.date: 05/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065111"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928303"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -90,9 +88,9 @@ Os avisos novos ou atualizados são exibidos na guia **Lista de Erros** na parte
 
 ![Lista de Erros do Visual Studio com Avisos](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Usar as lâmpadas para corrigir ou refatorar o código
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Usar as Ações Rápidas para corrigir ou refatorar o código
 
-As [Ações Rápidas](../ide/quick-actions.md), disponíveis nos ícones de lâmpada ou chave de fenda, permitem refatorar o código embutido. Elas são uma maneira fácil de corrigir avisos comuns com rapidez e eficiência no código C#, C++ e Visual Basic. Para acessá-las, clique com o botão direito do mouse em uma linha ondulada de aviso e selecione **Ações Rápidas e refatorações**. Outra opção é pressionar **Ctrl**+ **quando o cursor estiver na linha ondulada de aviso** ou selecionar o ícone de lâmpada ou chave de fenda na margem. Você verá uma lista de possíveis correções ou refatorações que podem ser aplicadas àquela linha de código.
+As [Ações Rápidas](../ide/quick-actions.md), disponíveis nos ícones de lâmpada ou chave de fenda, permitem refatorar o código embutido. Elas são uma maneira fácil de corrigir avisos comuns com rapidez e eficiência no código C#, C++ e Visual Basic. Para acessá-las, clique com o botão direito do mouse em uma linha ondulada de aviso e selecione **Ações Rápidas e refatorações**. Outra opção é pressionar **Ctrl**+ **quando o cursor estiver na linha ondulada de aviso** ou selecionar o ícone de lâmpada, lâmpada de erro ou chave de fenda na margem. Você verá uma lista de possíveis correções ou refatorações que podem ser aplicadas àquela linha de código.
 
 ![Visualização da lâmpada do Visual Studio](../ide/media/quick-actions-options.png)
 
@@ -144,7 +142,7 @@ Quando o depurador entra em pausa, você pode inspecionar suas variáveis e pilh
 
 ![Inspeção de valor de tempo de execução do Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Focalize uma variável para ver seu valor atual e suas referências. Se você observar um valor que não esperava, provavelmente, haverá um bug no código anterior ou de chamada. Para obter informações mais detalhadas sobre depuração, [saiba mais](../debugger/getting-started-with-the-debugger.md) sobre como usar o depurador.
+Focalize uma variável para ver seu valor atual e suas referências. Se você observar um valor que não esperava, provavelmente, haverá um bug no código anterior ou de chamada. Para obter informações mais detalhadas sobre depuração, [saiba mais](../debugger/debugger-feature-tour.md) sobre como usar o depurador.
 
 Além disso, o Visual Studio exibe a janela **Ferramentas de Diagnóstico**, na qual você pode observar o uso de memória e CPU do aplicativo ao longo do tempo. Mais tarde no desenvolvimento do seu aplicativo, você pode usar essas ferramentas para procurar uso intenso da CPU ou alocação de memória inesperada. Use-o em conjunto com a janela **Inspeção** e com os pontos de interrupção para determinar o que está ocasionando o uso intenso inesperado ou os recursos não liberados. Para obter mais informações, consulte [Tour do recurso de criação de perfil](../profiling/profiling-feature-tour.md).
 
@@ -159,5 +157,5 @@ Para saber mais sobre testes de unidade no Visual Studio e como eles podem ajud�
 ## <a name="see-also"></a>Consulte também
 
 - [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
-- [Saiba mais sobre como usar o depurador](../debugger/getting-started-with-the-debugger.md)
+- [Saiba mais sobre como usar o depurador](../debugger/debugger-feature-tour.md)
 - [Gerar e corrigir um código](../ide/code-generation-in-visual-studio.md)

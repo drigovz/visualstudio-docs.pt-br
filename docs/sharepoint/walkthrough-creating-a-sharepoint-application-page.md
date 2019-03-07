@@ -1,32 +1,27 @@
 ---
 title: 'Passo a passo: Criando uma página de aplicativo do SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], developing
 - application pages [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634781"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630893"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Passo a passo: Criar uma página de aplicativo do SharePoint
- 
+
 Uma página de aplicativo é uma forma especializada de uma página ASP.NET. Páginas de aplicativos têm conteúdo que é mesclado com uma página mestra do SharePoint. Para obter mais informações, consulte [criar páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 Este passo a passo mostra como criar uma página de aplicativo e depurá-lo por meio de um site do SharePoint local. Esta página mostra todos os itens que cada usuário criou ou modificou em todos os sites do farm de servidores.
@@ -78,7 +73,7 @@ Para criar uma página de aplicativo, adicione uma **página de aplicativo** ite
 
 O item de página de aplicativo permite que você use um designer para adicionar controles ASP.NET à página do aplicativo. Esse designer é o mesmo designer usado no Visual Web Developer. Adicionar um rótulo, uma lista de botão de rádio e uma tabela para o **origem** exibir do designer e, em seguida, defina propriedades exatamente como você faria quando você cria alguma página ASP.NET padrão.
 
-1. Na barra de menus, escolha **modo de exibição** > **caixa de ferramentas**.
+1. Na barra de menus, escolha **Exibir** > **Caixa de Ferramentas**.
 
 2. No nó do padrão de **caixa de ferramentas**, execute uma das seguintes etapas:
 
@@ -158,5 +153,5 @@ Você pode aprender mais sobre como projetar o conteúdo da página do SharePoin
 
 ## <a name="see-also"></a>Consulte também
 
-[Como: criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)  
-[Tipo de página layouts do aplicativo](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Como: Criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)
+[tipo de página layouts do aplicativo](http://go.microsoft.com/fwlink/?LinkID=169274)

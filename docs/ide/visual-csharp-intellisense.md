@@ -1,23 +1,21 @@
 ---
 title: C# IntelliSense
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160134"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936857"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -100,7 +98,7 @@ Para iniciar a operação **Adicionar usando**, posicione o cursor em uma refer�
 
 ![Adicionar usando, imagem expandida da ação rápida](../ide/media/addusing-quickaction.png)
 
-Clique no ícone de lâmpada e, em seguida, escolha **using System.Xml;** para adicionar automaticamente a diretiva using.
+Clique no ícone de lâmpada de erro e, em seguida, escolha **using System.Xml;** para adicionar automaticamente a diretiva using.
 
 ### <a name="remove-and-sort-usings"></a>Remover e classificar usos
 
@@ -124,7 +122,7 @@ O recurso **Gerar com Base no Uso** permite usar classes e membros antes de defi
 
 Um sublinhado vermelho ondulado é exibido em cada identificador indefinido. Ao posicionar o ponteiro do mouse sobre o identificador, uma mensagem de erro é exibida em uma dica de ferramenta. Para exibir as opções apropriadas, é possível usar um dos seguintes procedimentos:
 
-- Clique no identificador indefinido. Uma lâmpada de **Ações Rápidas** é exibida abaixo do identificador. Clique na lâmpada.
+- Clique no identificador indefinido. Uma lâmpada de erro de **Ações Rápidas** é exibida abaixo do identificador. Clique na lâmpada de erro.
 
 - Clique no identificador indefinido e, em seguida, pressione **Ctrl**+**.** (**Ctrl** + ponto).
 

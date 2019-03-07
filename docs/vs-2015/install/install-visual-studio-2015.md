@@ -3,11 +3,7 @@ title: Instalar o Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-install
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -22,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799171"
 ---
 # <a name="install-visual-studio-2015"></a>Instalar o Visual Studio 2015
 
@@ -44,10 +40,10 @@ Antes de nos aprofundar até os detalhes, aqui está uma lista dos nossos links 
 |------------------|----------------|
 |![Baixe o Visual Studio](../install/media/downloads.png "Downloads") |**Downloads** Para instalar o Visual Studio 2015, você pode baixar um arquivo executável do produto dos [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) página (assinatura necessária), ou usar a mídia de instalação do produto Demarcado. [Saiba mais sobre como baixar versões do Visual Studio atuais ou anterior](https://www.visualstudio.com/vs/older-downloads/).|
 |![Saiba mais sobre os recursos](../install/media/features.png "recursos") |**Recursos** Para saber mais sobre os recursos no Visual Studio 2015, consulte as notas de versão para [RTM](https://www.visualstudio.com/news/vs2015-vs), [atualização 1](https://www.visualstudio.com/news/vs2015-update1-vs), [atualização 2](https://www.visualstudio.com/news/vs2015-update2-vs), e [atualização 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
-|![Descubra o que há em cada SKU](../install/media/sku.png "SKUs") |SKUs Para descobrir o que está disponível em cada edição do Visual Studio 2015, consulte nosso [Compare as ofertas do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=242142) página.|
+|![Descubra o que há em cada SKU](../install/media/sku.png "SKUs") |**SKUs**: Para descobrir o que está disponível em cada edição do Visual Studio 2015, consulte nosso [Compare as ofertas do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=242142) página.|
 |![Exibir requisitos do sistema](../install/media/system-requirements.png "requisitos do sistema") |**Requisitos de sistema** Para exibir os requisitos do sistema para cada edição do Visual Studio 2015, consulte o [compatibilidade do Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) página.|
 |![Localize a chave do produto](../install/media/product-keys.png "chaves do produto") |**Chaves do Produto** Para localizar a chave do produto, consulte o [como: Localize a chave de produto do Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) tópico.|
-|![Saiba mais sobre licenciamento](../install/media/licensing.png "licenciamento") |Licenciamento Para obter informações sobre opções de licenciamento para indivíduos ou os clientes corporativos, consulte o [Visual Studio e licenciamento do MSDN](https://www.microsoft.com/download/details.aspx?id=13350) white paper.|
+|![Saiba mais sobre licenciamento](../install/media/licensing.png "licenciamento") |**Licenciamento**: para obter informações sobre opções de licenciamento para indivíduos ou os clientes corporativos, consulte a [Visual Studio e licenciamento do MSDN](https://www.microsoft.com/download/details.aspx?id=13350) white paper.|
 
 ##  <a name="custom"></a> Vs padrão. Instalação personalizada
  Quando você instala o Visual Studio 2015, você pode incluir ou excluir componentes que você deseja usar em uma base diária. Isso significa que uma instalação padrão será muitas vezes menores e instalar mais rapidamente do que uma instalação personalizada. Isso também significa que muitos componentes que foram instalados por padrão nas versões anteriores agora são considerados componentes personalizados que você deve selecionar explicitamente nesta versão.
@@ -84,7 +80,7 @@ Antes de nos aprofundar até os detalhes, aqui está uma lista dos nossos links 
 |Depurar programas|SeDebugPrivilege|
 |Gerenciar logs de auditoria e segurança|SeSecurityPrivilege|
 
- Para obter mais informações sobre esse requisito de conta de administrador local, consulte o artigo da Base de dados de Conhecimento [instalação do SQL Server falhará se a conta de instalação não tiver determinados direitos de usuário](https://support.microsoft.com/en-us/kb/2000257).
+ Para obter mais informações sobre esse requisito de conta de administrador local, consulte o artigo da Base de dados de Conhecimento [instalação do SQL Server falhará se a conta de instalação não tiver determinados direitos de usuário](https://support.microsoft.com/kb/2000257).
 
 ###  <a name="BKMK_Media"></a> Usando a mídia de instalação
  Para instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no diretório raiz na mídia de instalação [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], execute o arquivo de instalação da edição que você deseja:

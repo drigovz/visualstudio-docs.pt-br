@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ae066fe7fa04a5c97dec618c65ccee3f90984a0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d2c9cb95615ad0b978cc7fd9943b687e5a7f3cac
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724626"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344558"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
 Informa ao host que ocorreu um erro de execução durante o mecanismo de execução do script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnScriptError(  
     IActiveScriptError *pase  // address of error interface  
 );  
@@ -38,7 +38,7 @@ HRESULT OnScriptError(
   
 #### <a name="parameters"></a>Parâmetros  
  `pase`  
- [in] Endereço do objeto do erro [IActiveScriptError](../../winscript/reference/iactivescripterror.md) interface. Um host pode usar essa interface para obter informações sobre o erro de execução.  
+ [in] Endereço do objeto de erro [IActiveScriptError](../../winscript/reference/iactivescripterror.md) interface. Um host pode usar essa interface para obter informações sobre o erro de execução.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna `S_OK` se o erro foi tratado corretamente ou uma OLE caso contrário, código de erro definido.  

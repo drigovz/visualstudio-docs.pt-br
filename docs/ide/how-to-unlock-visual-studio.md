@@ -1,23 +1,21 @@
 ---
-title: Como desbloquear o Visual Studio
+title: 'Como: Desbloquear o Visual Studio'
 ms.date: 07/20/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542371"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943136"
 ---
-# <a name="how-to-unlock-visual-studio"></a>Como desbloquear o Visual Studio
+# <a name="how-to-unlock-visual-studio"></a>Como: Desbloquear o Visual Studio
 
 Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Entrar no IDE estende o período de avaliação para 90 dias. Para continuar usando o Visual Studio, desbloqueie o IDE:
 

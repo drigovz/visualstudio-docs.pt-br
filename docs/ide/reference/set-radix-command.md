@@ -1,8 +1,6 @@
 ---
 title: Comando Definir Base
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setradix
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c18d825ae61dd80ab7b72e1e14c7dc3412582317
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704467"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938391"
 ---
 # <a name="set-radix-command"></a>Comando Definir Base
 Define ou retorna a base numérica usada para exibir valores inteiros.

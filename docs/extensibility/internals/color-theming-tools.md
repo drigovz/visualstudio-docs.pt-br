@@ -1,24 +1,23 @@
 ---
 title: Ferramentas de temas de cores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8802a1a5d41d8ba36893d5abf1f19e901ee7b1e3
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b78f2f7bec4858f3b76caa12cdcfe983814834ba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511115"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629632"
 ---
 # <a name="color-theme-tools"></a>Ferramentas de tema de cores
-O SDK do Visual Studio fornece várias ferramentas para ajudá-lo a criar e gerenciar temas de cores.  
-  
--   O [Editor de cores do VSIX](../../extensibility/internals/vsix-color-editor.md) ferramenta pode criar e editar cores personalizadas para o Visual Studio.  
-  
+O SDK do Visual Studio fornece várias ferramentas para ajudá-lo a criar e gerenciar temas de cores.
+
+-   O [Editor de cores do VSIX](../../extensibility/internals/vsix-color-editor.md) ferramenta pode criar e editar cores personalizadas para o Visual Studio.
+
 -   O [compilador de cores do VSIX](../../extensibility/internals/vsix-color-compiler.md) ferramenta converte tema existente do Visual Studio *. XML* arquivos em *pkgdef* arquivos para a sua extensão.

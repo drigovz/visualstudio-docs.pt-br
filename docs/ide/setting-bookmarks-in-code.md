@@ -1,23 +1,21 @@
 ---
 title: Definir indicadores de código
 ms.date: 02/23/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dff534307f7773858ccb43b076ed309504b6ef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e6369aab354e3362c3ac3f1d9320203f930497c7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047636"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941914"
 ---
 # <a name="set-bookmarks-in-code"></a>Definir indicadores no código
 

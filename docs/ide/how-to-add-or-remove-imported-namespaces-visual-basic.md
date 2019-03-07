@@ -1,8 +1,6 @@
 ---
-title: Como adicionar ou remover namespaces importados (Visual Basic)
+title: 'Como: Adicionar ou remover namespaces importados (Visual Basic)'
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df39b7867cd4c7baa2206b2c63634810b2f29dde
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c30a7d89065a7fbea9781d1972dc01fedd5c742
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944642"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970615"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como adicionar ou remover namespaces importados (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como: Adicionar ou remover namespaces importados (Visual Basic)
 
 Importar um namespace permite que você use elementos deste namespace em seu código sem qualificar totalmente o elemento. Por exemplo, se quiser acessar o método `Create` na classe `System.Messaging.MessageQueue`, você pode importar o namespace `System.Messaging` e apenas se referir ao elemento necessário em código como `MessageQueue.Create`.
 

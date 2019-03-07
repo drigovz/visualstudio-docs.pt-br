@@ -3,18 +3,16 @@ title: Benefício da Comunidade Azure na assinatura do Visual Studio | Microsoft
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/08/2018
-ms.topic: Get-Started-Article
+ms.date: 12/19/2018
+ms.topic: conceptual
 description: Saiba mais sobre o benefício da Comunidade Azure incluído nas assinaturas do Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937454"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842098"
 ---
 # <a name="azure-community"></a>Comunidade Azure
 
@@ -54,15 +52,19 @@ A disponibilidade do benefício Comunidade Azure depende do nível de sua assina
 
 |                                          Nível de Assinatura                                           |     Canais      |    Benefício    | Renovável? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Padrão, nuvem anual)                           | VL, Azure, Retail |   Um ano    |    Sim     |
-|                          Visual Studio Professional (Padrão, nuvem anual)                          | VL, Azure, Retail |   Um ano    |    Sim     |
+|                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Um ano    |    Sim     |
+|                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Um ano    |    Sim     |
 |                              Visual Studio Test Professional (Padrão)                               |    VL, Retail     |   Um ano    |    Sim     |
 |                                       Plataformas MSDN (Padrão)                                       |    VL, Retail     |   Um ano    |    Sim     |
 | Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal), NFR<sup>1</sup> |        Todos        | Não disponível |     Não     |
 |                                     Visual Studio Dev Essentials                                      |        N/D        | Não disponível |     Não     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup>  *Inclui: NFR (Proibida a revenda), Microsoft FTE, MVP (Microsoft Valued Professional), RD (Diretor regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer)*
+<sup>1</sup> *Inclui:  NFR (Proibida a revenda), Microsoft FTE, MVP (Most Valuable Professional), RD (Diretor Regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine e MCT (Microsoft Certified Trainer)*
+
+> [!NOTE]
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Perguntas frequentes sobre migração de administrador no Centro de Empresas da Microsoft
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297541"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953937"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migração de administração de assinaturas do Visual Studio
 
@@ -46,21 +44,21 @@ Sim.  Há duas fases nesse processo. Configurar (ou integrar) a organização an
 ### <a name="what-is-the-onboarding-process"></a>O que é o processo de integração?
 Um email é enviado para os Contatos Principal/para Notificações convidando-os a concluir o processo de integração.
 Confira abaixo as instruções sobre o processo.
-1.  **Localizando o PCN e entrando:**
+1. **Localizando o PCN e entrando:**
 
-    a.  No email, os Contatos Principal/para Notificações recebem um link exclusivo e os últimos três dígitos do PCN (número do cliente).*
+    a. No email, os Contatos Principal/para Notificações recebem um link exclusivo e os últimos três dígitos do PCN (número do cliente).*
 
-    b.  Para obter o PCN inteiro, o Contato Principal precisará entrar no Centro de Empresas da Microsoft (instruções para localizar o PCN podem ser encontradas abaixo).
+    b. Para obter o PCN inteiro, o Contato Principal precisará entrar no Centro de Empresas da Microsoft (instruções para localizar o PCN podem ser encontradas abaixo).
 
-    c.  Depois de obter o PCN, ele precisará selecionar o link exclusivo que permitirá sua entrada. Eles poderão entrar usando uma conta corporativa ou de estudante (se a organização estiver no Azure AD) ou uma conta da Microsoft (MSA) se a organização não estiver no Azure AD.
+    c. Depois de obter o PCN, ele precisará selecionar o link exclusivo que permitirá sua entrada. Eles poderão entrar usando uma conta corporativa ou de estudante (se a organização estiver no Azure AD) ou uma conta da Microsoft (MSA) se a organização não estiver no Azure AD.
 
-    d.  Em seguida, será solicitado que eles insiram o PCN.
+    d. Em seguida, será solicitado que eles insiram o PCN.
 
-2.  **Configure os administradores:**
+2. **Configure os administradores:**
 
     Depois de inserir o PCN, eles serão levados à página em que é possível adicionar superadministradores e administradores (conhecidos anteriormente como Gerentes de Assinatura). O ideal é que isso seja concluído antes da data de migração da organização, para que não haja nenhuma interrupção no gerenciamento de suas assinaturas.
 
-3.  **Acessando o novo portal de gerenciamento de assinatura:** após a migração da organização, serão enviados emails aos administradores e superadministradores convidando-os para acessar o novo portal e começar a gerenciar assinaturas.
+3. **Acessando o novo portal de gerenciamento de assinaturas:** Após a migração de sua organização, serão enviados emails para os superadministradores e os administradores convidando-os a acessar o novo portal e começar a gerenciar assinaturas.
 
 > [!NOTE]
 > Se os Contatos Principais ou para Notificações receberem mais de um email, isso significará que eles têm mais de um PCN. Será necessário concluir o processo usando o link exclusivo para o PCN referenciado em cada email.
@@ -77,10 +75,10 @@ Os Contatos Principais e os Contatos para Notificações da organização recebe
 Você continuará gerenciando assinaturas por meio do Centro de Empresas da Microsoft até receber o email de Assinaturas do Visual Studio informando que sua organização foi migrada e está pronta para ser gerenciada no novo portal.
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>Onde localizar o PCN (número do cliente) ou o número de autorização da minha organização?
-Entre no [Centro de Empresas da Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e navegue até o caminho a seguir: **Assinaturas** > **Assinaturas do Visual Studio**. O PCN está localizado abaixo dos **Resultados de número de cliente/contrato**. Obtenha diretrizes passo a passo de como localizar seu PCN neste [artigo de ajuda](find-pcn.md).
+Entre no [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e navegue para o seguinte caminho: **Assinaturas** > **Assinaturas do Visual Studio**. O PCN está localizado abaixo dos **Resultados de número de cliente/contrato**. Obtenha diretrizes passo a passo de como localizar seu PCN neste [artigo de ajuda](find-pcn.md).
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>Como saber quem é o Contato Principal ou o Contato para Notificações?
-Entre no [Centro de Empresas da Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e navegue até o caminho a seguir: **Licenças > Resumo de Relação** selecione sua **ID de Licenciamento > Contatos**. Obtenha diretrizes passo a passo de como descobrir quem é o Contato Principal ou o Contato para Notificações neste [artigo de ajuda](find-primary-contact.md).
+Entre no [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e navegue para o seguinte caminho: **Licenças > Resumo de Relacionamento** selecione sua **ID de Licenciamento > Contatos**. Obtenha diretrizes passo a passo de como descobrir quem é o Contato Principal ou o Contato para Notificações neste [artigo de ajuda](find-primary-contact.md).
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>E se o Contato Principal ou o Contato para Notificações não estiver mais na empresa ou não estiver disponível para concluir a integração?
 Você precisará [contatar o suporte](https://visualstudio.microsoft.com/subscriptions/support/#talktous) e fornecer o email que usou no Centro de Empresas da Microsoft para gerenciar assinaturas. Depois de verificar, o suporte poderá ajudá-lo no processo de integração.
@@ -98,7 +96,7 @@ Sim, se o contrato ainda estiver ativo, sua organização será migrada.
 Sim, sua organização ainda será migrada para o novo sistema. No novo sistema, haverá a capacidade de fazer solicitações em excesso (para tipos de contrato que permitem isso).
 
 ### <a name="what-if-my-organization-has-more-than-one-subscription-assigned-to-a-single-useremail-address"></a>E se a minha organização tiver mais de uma assinatura atribuída a um único usuário/endereço de email?
-Sua organização ainda será migrada.  No entanto, você não poderá atribuir assinaturas adicionais do mesmo nível (ou seja: Enterprise, Professional, etc.) para esse endereço de email/usuário. Todas as assinaturas do mesmo nível que tiverem o mesmo endereço de email após a migração ainda estarão visíveis, mas os administradores precisarão alterar os endereços de email para que eles sejam exclusivos. Não será possível atribuir várias assinaturas do mesmo nível a um único endereço de email/usuário no novo portal.
+Sua organização ainda será migrada.  No entanto, você não poderá atribuir assinaturas adicionais do mesmo nível (ou seja: Enterprise, Professional etc.) a esse usuário/endereço de email. Todas as assinaturas do mesmo nível que tiverem o mesmo endereço de email após a migração ainda estarão visíveis, mas os administradores precisarão alterar os endereços de email para que eles sejam exclusivos. Não será possível atribuir várias assinaturas do mesmo nível a um único endereço de email/usuário no novo portal.
 
 ### <a name="where-can-i-find-the-most-up-to-date-information-about-the-migration"></a>Onde encontrar as informações mais atualizadas sobre a migração?
 Para obter as informações mais atualizadas sobre essa migração, visite a [página da Web](https://aka.ms/vs-admin) do administrador de assinaturas do Visual Studio. Se você precisar de suporte, confira a [página de suporte](http://visualstudio.microsoft.com/subscriptions/support/#!collections/962-subscriptions) de assinaturas do Visual Studio, que contém informações de autoajuda e de contato de suporte. Nos próximos meses, continuaremos a fornecer atualizações na página da Web do administrador e por email para ajudar a facilitar essa transição.

@@ -1,8 +1,6 @@
 ---
-title: Depurando, caixa de diálogo Opções | Microsoft Docs
-ms.custom: ''
+title: Caixa de diálogo depuração, opções | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -20,28 +18,29 @@ helpviewer_keywords:
 ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7e80504e14e6468dc4d9efa31258bdbf6150a649
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472874"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690338"
 ---
 # <a name="debugging-options-dialog-box"></a>Depurando, Caixa de Diálogo Opções
-O **depuração** pasta, no **opções** caixa de diálogo de **ferramentas** , fornece as seguintes páginas, que permitem que você especifique o depurador opções da ferramenta.  
-  
--   [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)  
-  
--   [Caixa de diálogo Just-In-Time, Depuração, Opções](../debugger/just-in-time-debugging-options-dialog-box.md)  
-  
--   [Janela de Saída, Depuração, caixa de diálogo Opções](../debugger/output-window-debugging-options-dialog-box.md)  
-  
--   [Símbolos de depuração, a caixa de diálogo Opções](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
-  
-## <a name="see-also"></a>Consulte também  
- [Segurança do depurador](../debugger/debugger-security.md) [depuração no Visual Studio](../debugger/index.md)  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)   
- [Referência da interface do usuário de depuração](../debugger/debugging-user-interface-reference.md)
+A pasta **Depuração**, na caixa de diálogo **Opções** no menu **Ferramentas**, fornece as seguintes páginas, o que permite especificar as opções de ferramenta do depurador.
+
+-   [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)
+
+-   [Caixa de diálogo Just-In-Time, Depuração, Opções](../debugger/just-in-time-debugging-options-dialog-box.md)
+
+-   [Janela de Saída, Depuração, caixa de diálogo Opções](../debugger/output-window-debugging-options-dialog-box.md)
+
+-   [Símbolos de depuração, caixa de diálogo Opções](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+
+## <a name="see-also"></a>Consulte também
+- [Segurança do depurador](../debugger/debugger-security.md)
+- [Depurando no Visual Studio](../debugger/index.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
+- [Referência da interface do usuário de depuração](../debugger/debugging-user-interface-reference.md)

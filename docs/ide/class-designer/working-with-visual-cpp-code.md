@@ -1,8 +1,6 @@
 ---
 title: Trabalhando com código do Visual C++ (Designer de Classe)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -17,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958445"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950611"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Trabalhar com código do Visual C++ no Designer de Classe
 
@@ -48,7 +46,7 @@ O **Designer de Classe** é compatível com os seguintes elementos de código C+
 - DefTipo
 
 > [!NOTE]
-> Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, consulte [Diagramas de classe UML: Referência](../../modeling/uml-class-diagrams-reference.md).
+> Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, confira [Diagramas de classe UML: Referência](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Solucionar problemas de exibição e resolução de tipo
 
@@ -112,8 +110,6 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 ## <a name="see-also"></a>Consulte também
 
-- [Projetando e exibindo classes e tipos](designing-and-viewing-classes-and-types.md)
-- [Trabalhando com diagramas de classe](working-with-class-diagrams.md)
 - [Projetando e exibindo classes e tipos](designing-and-viewing-classes-and-types.md)
 - [Informações adicionais sobre erros do Designer de Classe](additional-information-about-errors.md)
 - [Classes do Visual C++ no Designer de Classe](visual-cpp-classes.md)

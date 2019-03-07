@@ -1,25 +1,20 @@
 ---
-title: Como anexar o Criador de perfil a um serviço .NET para coletar estatísticas do aplicativo usando a linha de comando | Microsoft Docs
-ms.custom: ''
+title: 'Como: Anexar o Profiler para um serviço .NET para coletar estatísticas do aplicativo usando a linha de comando | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8100f04471b0fd5886bed5c5ea815632cb0031db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 402d0c4de07cb827bbad389c447dedd2dc79d7ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800829"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760172"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +117,7 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
     -   Pare o serviço.  
 
-         -ou-  
+         - ou -  
 
     -   Digite **VSPerfCmd /detach**  
 
@@ -139,6 +134,3 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 ## <a name="see-also"></a>Consulte também  
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)   
  [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)
-
-
-

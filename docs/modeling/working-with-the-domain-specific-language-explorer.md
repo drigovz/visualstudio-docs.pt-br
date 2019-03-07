@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a27558ea21569e4e31bdbb3ea2c238ce863efda3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966616"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907731"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Trabalhando com o Gerenciador de Linguagem Específica do Domínio
 O **Gerenciador de DSL** exibe vários tipos de informações em uma exibição de árvore. Para obter mais informações sobre a maioria dos itens no Gerenciador de DSL, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md).
@@ -35,7 +33,7 @@ O **Gerenciador de DSL** exibe vários tipos de informações em uma exibição 
 
 -   **Tipos de domínio**. Uma lista dos tipos internos e externos usados no modelo.
 
--   **Editor de**. Uma lista dos **caixa de ferramentas** guias e os itens que eles contêm e configurações de validação para o modelo. Para obter mais informações sobre validação, consulte [validação em uma linguagem específica do domínio](../modeling/validation-in-a-domain-specific-language.md).
+-   **Editor**. Uma lista dos **caixa de ferramentas** guias e os itens que eles contêm e configurações de validação para o modelo. Para obter mais informações sobre validação, consulte [validação em uma linguagem específica do domínio](../modeling/validation-in-a-domain-specific-language.md).
 
 -   **Comportamento do Gerenciador**. Configurações que especificam o comportamento do explorador no designer gerado. Para obter mais informações sobre como personalizar o Explorador, consulte [Personalizando o Gerenciador de modelos](../modeling/customizing-the-model-explorer.md).
 
@@ -45,4 +43,4 @@ O **Gerenciador de DSL** exibe vários tipos de informações em uma exibição 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

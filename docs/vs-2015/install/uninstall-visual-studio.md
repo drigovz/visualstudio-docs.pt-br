@@ -3,12 +3,8 @@ title: Desinstalar o Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 f1_keywords:
 - uninstalling
 - uninstalling visual studio
@@ -18,13 +14,13 @@ ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 71e1318444c0b03ee5b2b9024c13bfbeb51b5c41
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050109"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54834823"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +43,7 @@ Essa página guia você pela desinstalação do Visual Studio 2015, uma versão 
 1.  Localize o arquivo de .exe do Visual Studio (por exemplo, localize "vs_enterprise.exe").
 
     > [!NOTE]
-    >  O arquivo deve estar em uma subpasta de "%ProgramData%\Package Cache", por exemplo: Cache de C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
+    >  O arquivo deve estar em uma subpasta de "%ProgramData%\Package Cache", por exemplo: Cache C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
 
 2.  Execute o arquivo .exe usando a desinstalar /Force parâmetros de linha de comando.
 
@@ -77,7 +73,7 @@ Essa página guia você pela desinstalação do Visual Studio 2015, uma versão 
 
 2. Instale ou reinstale a versão anterior do Visual Studio que você deseja usar.
 
-   Mesmo se você instalar uma versão anterior do Visual Studio, o programa de instalação pode ainda tentar usar uma versão mais recente ou se houver uma disponível. Para obter mais informações, consulte o [como: Instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tópico.
+   Mesmo se você instalar uma versão anterior do Visual Studio, o programa de instalação pode ainda tentar usar uma versão mais recente ou se houver uma disponível. Para obter mais informações, consulte o [como: instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tópico.
 
 ## <a name="see-also"></a>Consulte também
  [Instalar o Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

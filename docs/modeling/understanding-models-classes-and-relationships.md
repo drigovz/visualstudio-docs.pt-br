@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3ea744b4939b128f99a38f52e0b4b509c8da25c7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967383"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944241"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 Uma linguagem específica de domínio (DSL) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado você pode escrever. A maioria do código do programa na solução DSL é gerada a partir desse arquivo.
@@ -54,7 +52,7 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
 
  ![Relações de incorporação e referência](../modeling/media/music_classes.png)
 
- A ilustração mostra quatro classes de domínio: música, álbum, artista e música. As classes de domínio definem propriedades de domínio, como nome, título e assim por diante. No modelo de instância, os valores de algumas dessas propriedades são exibidos no diagrama.
+ A ilustração mostra quatro classes de domínio: Música, álbum, artista e música. As classes de domínio definem propriedades de domínio, como nome, título e assim por diante. No modelo de instância, os valores de algumas dessas propriedades são exibidos no diagrama.
 
  Entre as classes são relações de domínio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs e ArtistAppearedOnAlbums. As relações tiverem multiplicidades como 1..1, 0.. *. Por exemplo, todas as músicas devem estar relacionadas a exatamente um álbum por meio do relacionamento AlbumHasSongs. Cada álbum pode ter qualquer número de músicas.
 
@@ -152,4 +150,4 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6723d430b10d7278e47d4273ed10ae08762051e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7b93a0e353e342d805d933030b2ad4d2babb9ab9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725026"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345078"
 ---
 # <a name="iactivescriptsiteinterruptpoll-interface"></a>Interface IActiveScriptSiteInterruptPoll
-O `IActiveScriptSiteInterruptPoll` interface permite que um host especificar que um script deve ser encerrado.  
+O `IActiveScriptSiteInterruptPoll` interface permite que um host ao especificar um script deve ser interrompido.  
   
 ## <a name="methods"></a>Métodos  
  Além dos métodos herdados de `IUnknown`, o `IActiveScriptSiteInterruptPoll` interface expõe o método a seguir.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|Permite que um host especificar que um script deve ser encerrado.|
+|[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|Permite que um host especificar um script deve ser interrompido.|

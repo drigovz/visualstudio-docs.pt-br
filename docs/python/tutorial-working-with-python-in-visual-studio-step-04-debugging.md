@@ -2,23 +2,21 @@
 title: Etapa 4 do Tutorial do Python no Visual Studio, depuração
 titleSuffix: ''
 description: Etapa 4 de um passo a passo básico das funcionalidades do Python no Visual Studio, abordando como executar o código Python no depurador.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060414"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716500"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Etapa 4: Executar o código no depurador
 
@@ -49,12 +47,9 @@ Além de gerenciar projetos, fornecer uma experiência de edição avançada e a
 1. Verifique se o código funciona corretamente pressionando **F5** ou selecionando o comando de menu **Depurar** > **Iniciar Depuração**. Esse comando executa o código no depurador, mas como você não fez nada para pausar o programa enquanto ele está em execução, ele apenas imprime um padrão de onda para algumas iterações. Pressione qualquer tecla para fechar a janela de saída.
 
     > [!Tip]
-    > Para fechar a janela de saída automaticamente quando o programa for concluído, substitua a chamada `main()` pelo seguinte código:
+    > Para fechar a Janela de Saída automaticamente quando o programa for concluído, selecione o comando de menu **Ferramentas** > **Opções**, expanda o nó do **Python**, selecione **Depuração** e, em seguida, desmarque a opção **Aguardar pela entrada quando o processo for encerrado normalmente**:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Opção de depuração do Python para fechar a Janela de Saída na saída normal do programa](media/vs-getting-started-python-22-debugging5.png)
 
 1. Defina um ponto de interrupção na instrução `for` clicando uma vez na margem cinza próxima a essa linha ou colocando o cursor na linha e usando o comando **Depurar** > **Ativar/Desativar Ponto de Interrupção** (**F9**). Um ponto vermelho é exibido na margem cinza para indicar o ponto de interrupção (conforme indicado pela seta abaixo):
 

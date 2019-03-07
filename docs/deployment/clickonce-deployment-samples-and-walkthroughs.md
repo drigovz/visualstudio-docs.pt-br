@@ -1,8 +1,6 @@
 ---
 title: Exemplos de implantação do ClickOnce e instruções passo a passo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -16,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc171010e1616ebe1fdf2d89397f6c796bf2686d
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
-ms.translationtype: MT
+ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459539"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018365"
 ---
-# <a name="clickonce-deployment-samples-and-walkthroughs"></a>Instruções passo a passo e exemplos de implantação do ClickOnce
+# <a name="clickonce-deployment-samples-and-walkthroughs"></a>Exemplos e explicações passo a passo para implantação do ClickOnce
 Esta seção contém exemplos de aplicativos, exemplo de código e orientações passo a passo que ilustram a sintaxe, estrutura e técnicas usadas para implantar o Windows Forms, WPF e aplicativos de console.
 
  O código de exemplo destina-se para fins de instrução e não deve ser usado em soluções implantadas sem modificações. Em particular, segurança deve ser levada em consideração maior.
@@ -41,4 +39,4 @@ Esta seção contém exemplos de aplicativos, exemplo de código e orientações
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo de Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)
+- [Instruções passo a passo do Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)

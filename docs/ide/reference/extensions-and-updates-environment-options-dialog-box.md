@@ -1,38 +1,41 @@
 ---
 title: Caixa de diálogo de extensões e atualizações, ambiente, opções
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35bf9d72ba62210fb83d950fea2bd2f6f90cb34
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8625d24be0e5bffa465cb2d5116cd021e99a017
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943300"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912853"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Caixa de diálogo de extensões e atualizações, ambiente, opções
+
 Use esta página para definir opções de como o Visual Studio executa atualizações e como extensões são atualizadas e descobertas.
 
-### <a name="automatically-check-for-updates"></a>Procurar atualizações automaticamente
- Quando esta opção é marcada, o Visual Studio verifica periodicamente se há atualizações dele ou dos SDKs, ferramentas e extensões instaladas e exibe notificações na barra de menus quando atualizações estiverem disponíveis. Para obter mais informações, consulte [Notificações](../../ide/visual-studio-notifications.md).
+## <a name="automatically-check-for-updates"></a>Procurar atualizações automaticamente
 
-### <a name="automatically-update-extensions"></a>Atualizar extensões automaticamente
- Quando esta opção é marcada, são feitas atualizações de extensões sem prompts. Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Quando esta opção é marcada, o Visual Studio verifica periodicamente se há atualizações dele ou dos SDKs, ferramentas e extensões instaladas e exibe notificações na barra de menus quando atualizações estiverem disponíveis. Para obter mais informações, confira [Atualizar o Visual Studio](../../install/update-visual-studio.md).
 
-### <a name="load-user-extensions-when-running-as-administrator"></a>Carregar extensões do usuário ao executar como administrador
- Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+## <a name="automatically-update-extensions"></a>Atualizar extensões automaticamente
 
-### <a name="additional-extension-galleries"></a>Galerias de Extensões Adicionais
- Um recurso do Enterprise que habilita o suporte para galerias de extensões proprietárias. Para obter mais informações, consulte [Galerias privadas](../../extensibility/private-galleries.md).
+Quando esta opção é marcada, são feitas atualizações de extensões sem prompts. Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+
+## <a name="load-user-extensions-when-running-as-administrator"></a>Carregar extensões do usuário ao executar como administrador
+
+Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+
+## <a name="additional-extension-galleries"></a>Galerias de Extensões Adicionais
+
+Um recurso do Enterprise que habilita o suporte para galerias de extensões proprietárias. Para obter mais informações, consulte [Galerias privadas](../../extensibility/private-galleries.md).
 
 ## <a name="see-also"></a>Consulte também
 

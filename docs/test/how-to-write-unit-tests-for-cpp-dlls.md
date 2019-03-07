@@ -1,20 +1,18 @@
 ---
 title: Escrever testes de unidade para DLLs C++
 ms.date: 11/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bef167eadeb58d54ffff4c4b08dcaf44ec66ccdd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056169"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934023"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escrever testes de unidade para DLLs em C++ no Visual Studio
 

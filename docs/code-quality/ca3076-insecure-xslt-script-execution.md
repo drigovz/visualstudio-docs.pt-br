@@ -1,22 +1,20 @@
 ---
-title: 'CA3076: execução de script XSLT não seguro'
+title: 'CA3076: Execução de script XSLT não seguro'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546386"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929174"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: execução de script XSLT não seguro
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Execução de script XSLT não seguro
 
 |||
 |-|-|

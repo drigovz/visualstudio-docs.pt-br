@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 00cc931a75dee9d3762e94ca522e4d060584840b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305332"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939093"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 
@@ -100,7 +98,7 @@ O Visual Studio gera XAML, que faz o seguinte:
 Quando você arrasta um objeto ou uma propriedade a partir de **fontes de dados** janela para o designer, o Visual Studio gera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que cria um controle associado a dados (ou associa um controle existente para o objeto ou propriedade). No entanto, o Visual Studio não gera código para preencher o objeto com dados. Você deve gravar esse código sozinho.
 
 > [!NOTE]
-> Classes personalizadas devem ser públicos e, por padrão, tem um construtor sem parâmetros. Eles can'tbe aninhados classes que têm "dot" na sua sintaxe. Para obter mais informações, consulte [XAML e classes personalizadas para WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Classes personalizadas devem ser públicos e, por padrão, tem um construtor sem parâmetros. Eles não podem ser classes aninhadas que têm "dot" na sua sintaxe. Para obter mais informações, consulte [XAML e classes personalizadas para WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 O Visual Studio gera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que faz o seguinte:
 

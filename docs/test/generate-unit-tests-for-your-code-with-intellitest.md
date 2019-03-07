@@ -1,22 +1,20 @@
 ---
 title: Gerar testes de unidade para seu código com o IntelliTest
 ms.date: 10/05/2015
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4aefb4aebe65503620f866955f7cbd62e33b3940
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9edda9d12ad5dfea1e65bd0356010d97af6dc3ac
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052345"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317413"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Gerar testes de unidade para seu código com o IntelliTest
 
@@ -159,4 +157,4 @@ Em seguida, execute novamente o IntelliTest para gerar testes de unidade individ
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>P: Posso saber mais sobre como os testes são gerados?
 
-**R:** Sim, para obter uma visão geral de alto nível, leia esta [postagem no blog](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/).
+**R:** Sim, para obter uma visão geral de alto nível, leia esta [postagem no blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).

@@ -1,8 +1,6 @@
 ---
-title: 'CA1305: especificar IFormatProvider'
+title: 'CA1305: Especificar IFormatProvider'
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
@@ -13,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: cc9fc59b274d17751d0863e9fbe931336ef8d43c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174300"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910956"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: especificar IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 
 |||
 |-|-|
@@ -83,7 +81,7 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1304: especificar CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304: Especificar CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Consulte também
 

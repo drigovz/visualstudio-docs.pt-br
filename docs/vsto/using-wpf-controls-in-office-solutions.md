@@ -1,26 +1,23 @@
 ---
 title: Usar controles WPF em soluções do Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - WPF [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 70c77e3b093947703680ab7253fdee0a6c3d60cd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008197"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869756"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles WPF em soluções do Office
 
@@ -56,11 +53,11 @@ Você não pode adicionar controles do WPF diretamente aos elementos de interfac
 
 5.  Adicione um painel de ações, a região do formulário ou o painel de tarefas personalizado ao seu projeto:
 
-    -   Para regiões de formulário, adicione uma **região de formulário do Outlook** item ao projeto. Para obter mais informações, consulte [como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    -   Para regiões de formulário, adicione uma **região de formulário do Outlook** item ao projeto. Para obter mais informações, confira [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Para obter os painéis de ações, adicione uma **controle do painel Ações** ou **controle de usuário** item ao projeto. Para obter mais informações, consulte [como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) e [como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    -   Para obter os painéis de ações, adicione uma **controle do painel Ações** ou **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) e [como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Para obter os painéis de tarefas personalizados, adicione uma **controle de usuário** item ao projeto. Para obter mais informações, consulte [como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    -   Para obter os painéis de tarefas personalizados, adicione uma **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6.  Do *ProjectName* **controles de usuário WPF** guia da **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer para o painel Ações, a região do formulário ou o painel de tarefas personalizado.
 
@@ -113,11 +110,11 @@ Para obter mais informações sobre arquitetura e problemas de design para hospe
 
 Para obter mais informações sobre como adicionar controles do WPF para controles dos Windows Forms e formulários no Visual Studio em tempo de design, consulte os tópicos a seguir:
 
--   [Passo a passo: Criar um novo conteúdo WPF nos Windows Forms em tempo de design](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+-   [Passo a passo: Criar novo conteúdo WPF nos Windows Forms em tempo de design](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
 -   [Passo a passo: Organizar o conteúdo do WPF nos Windows Forms em tempo de design](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [Passo a passo: Estilo conteúdo do WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+-   [Passo a passo: Conteúdo do WPF de estilo](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Consulte também
 
@@ -126,6 +123,6 @@ Para obter mais informações sobre como adicionar controles do WPF para control
 - [Visão geral do painel de ações](../vsto/actions-pane-overview.md)
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
-- [Como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

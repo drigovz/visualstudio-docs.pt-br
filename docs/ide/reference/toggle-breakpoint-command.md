@@ -1,8 +1,6 @@
 ---
 title: Comando Ativar/Desativar Ponto de Interrupção
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.togglebreakpoint
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f4d60bcbf7c7f394d62cc881c78ef9aa51e545
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 214897a0f938d8ea52306b8f605948b38f196111
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946800"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970459"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Ativar/Desativar Ponto de Interrupção
 Ativa ou desativa o ponto de interrupção dependendo de seu estado atual, no local atual do arquivo.

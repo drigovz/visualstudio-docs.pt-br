@@ -2,24 +2,22 @@
 title: Introdução ao Tutorial do R
 description: Um passo a passo de como usar R no Visual Studio, incluindo a criação de projetos, a janela interativa, edição e depuração de código.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 88387485b952bf201a222741a6b3d02861df186c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d3ef293b4e25f85cd901c42382158bdd75742e26
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235230"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936415"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introdução às Ferramentas do R para Visual Studio
 
-Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Instalação](installing-r-tools-for-visual-studio.md)), você poderá ter uma rápida ideia da experiência que essas ferramentas fornecem. 
+Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Instalação](installing-r-tools-for-visual-studio.md)), você poderá ter uma rápida ideia da experiência que essas ferramentas fornecem.
 
 ## <a name="create-an-r-project"></a>Criar um projeto R
 
@@ -94,7 +92,7 @@ Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teore
 
 > [!Tip]
 > Aprenda o padrão de fazer edições e pressionar **Ctrl**+**Enter** (ou selecionar tudo com **Ctrl**+**A** e, em seguida, pressionar **Ctrl**+**Enter**) para executar o código rapidamente. Fazer isso é muito mais eficiente do que usar o mouse para as mesmas operações.
-> 
+>
 > Além disso, você pode arrastar e soltar a janela de gráficos para fora do quadro do Visual Studio e colocá-la em qualquer lugar da tela que desejar. Você pode redimensionar a janela de gráficos para as dimensões desejadas e salve-a em uma imagem ou arquivo PDF.
 
 1. Adicione algumas outras linhas de código para incluir um segundo gráfico:

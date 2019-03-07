@@ -1,8 +1,6 @@
 ---
 title: Exemplo de Dia2dump | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252275"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428538"
 ---
 # <a name="dia2dump-sample"></a>Exemplo de Dia2dump
 
@@ -50,7 +48,7 @@ Por padrão, o diretório de instalação é um diretório protegido. Isso signi
 
 1. No **diretórios de inclusão adicionais** propriedade, escolha o controle de lista suspensa e escolha **editar**.
 
-1. No **diretórios de inclusão adicionais** Inserir caixa de diálogo, no campo de edição, o `$(VSInstallDir)DIA SDK\include` directory. Adicione o diretório para garantir que o compilador pode localizar o arquivo de dia2.h. Escolher **Okey** para salvar suas alterações.
+1. No **diretórios de inclusão adicionais** Inserir caixa de diálogo, no campo de edição, o `$(VSInstallDir)DIA SDK\include` directory. Adicione o diretório para garantir que o compilador pode localizar o arquivo de dia2.h. Escolha **OK** para salvar suas alterações.
 
 1. Escolher **Okey** para salvar suas alterações às propriedades do projeto.
 
@@ -66,7 +64,7 @@ Por padrão, o diretório de instalação é um diretório protegido. Isso signi
 
 ## <a name="run-the-dia2dump-sample"></a>Executar o exemplo de Dia2Dump
 
-Dia2Dump.exe depende do msdia*versão*. dll COM o servidor para fornecer seus serviços. No Visual Studio 2015 e Visual Studio 2017, a versão é msdia140.dll. Se o msdia*versão*. dll COM servidor não é inicializado, você deve registrá-lo antes de dia2dump.exe pode trabalhar. O diretório de DIA SDK tem um subdiretório bin que contém o x86 versão da DLL. Uma versão para x64 máquinas de arquitetura está em bin\amd64 e uma versão para ARM está em bin\arm. Para registrar a dll, abra uma janela elevada de prompt de comando do desenvolvedor e altere o diretório que contém a versão para a sua arquitetura de máquina. Digite o comando `regsvr32 msdia140.dll` para registrar o servidor COM.
+Dia2Dump.exe depende do msdia*versão*. dll COM o servidor para fornecer seus serviços. A partir do Visual Studio 2015, a versão é msdia140.dll. Se o msdia*versão*. dll COM servidor não é inicializado, você deve registrá-lo antes de dia2dump.exe pode trabalhar. O diretório de DIA SDK tem um subdiretório bin que contém o x86 versão da DLL. Uma versão para x64 máquinas de arquitetura está em bin\amd64 e uma versão para ARM está em bin\arm. Para registrar a dll, abra uma janela elevada de prompt de comando do desenvolvedor e altere o diretório que contém a versão para a sua arquitetura de máquina. Digite o comando `regsvr32 msdia140.dll` para registrar o servidor COM.
 
 ### <a name="to-run-the-sample"></a>Para executar a amostra
 
@@ -78,4 +76,4 @@ Dia2Dump.exe depende do msdia*versão*. dll COM o servidor para fornecer seus se
 
 ## <a name="see-also"></a>Consulte também
 
-- [Portar, migrar e atualizar projetos do Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+- [Portar, migrar e atualizar projetos do Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

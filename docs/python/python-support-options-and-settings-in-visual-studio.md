@@ -1,9 +1,7 @@
 ---
 title: Opções e configurações para Python
 description: Uma referência para as várias configurações no Visual Studio que se relacionam ao código e projetos Python.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 02/11/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -15,16 +13,16 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5b8c6b3860641dafccac28b24a4be141d90eae5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220050"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702012"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -35,7 +33,7 @@ Para exibir as opções do Python, use o comando de menu **Ferramentas** > **Op�
 Também há opções adicionais específicas do Python na guia **Editor de Texto** > **Python** > **Avançado** e na guia **Ambiente** > **Fontes e Cores** dentro do grupo **Editor de Texto**.
 
 > [!Note]
-> O grupo **Experimental** contém opções para recursos que ainda estão em desenvolvimento e não estão documentados aqui. Geralmente eles são discutidos em postagens no [blog Python engineering at Microsoft (Engenharia Python na Microsoft)](https://blogs.msdn.microsoft.com/pythonengineering/).
+> O grupo **Experimental** contém opções para recursos que ainda estão em desenvolvimento e não estão documentados aqui. Geralmente eles são discutidos em postagens no [blog Python engineering at Microsoft (Engenharia Python na Microsoft)](https://devblogs.microsoft.com/python/).
 
 ## <a name="general-options"></a>Opções gerais
 

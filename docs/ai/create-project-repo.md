@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 738ada7e72af6c6bfbb93b8c494fdec2aadf68c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: Clonar um repositório
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: 73f1595e0e6c8f182f0bedcece51011390964ed2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895945"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842521"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Clonar um repositório de código Python no Visual Studio
 
@@ -17,16 +24,16 @@ Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installa
 
 2. Inicie o Visual Studio.
 
-3. Selecione **Exibir > Team Explorer...** para abrir a janela do **Team Explorer**, em que é possível se conectar ao GitHub ou ao Azure DevOps ou clonar um repositório.
+3. Selecione **Exibir > Team Explorer** para abrir a janela do **Team Explorer**, em que é possível se conectar ao GitHub ou ao Azure DevOps ou clonar um repositório.
 
-    ![Janela do Team Explorer mostrando o Azure DevOps, o GitHub e a clonagem de um repositório](media/create-project-repo/team-explorer.png)
+    ![Janela do Team Explorer mostrando o Azure DevOps, o GitHub e a clonagem de um repositório](media/create-project-repo/team-explorer-devops.png)
 
 4. No campo de URL em **Repositórios Git Locais**, insira `https://github.com/Microsoft/samples-for-ai`, insira uma pasta para os arquivos clonados e selecione **Clonar**.
 
     > [!Tip]
     > A pasta especificada no Team Explorer é a pasta específica para receber os arquivos clonados. Ao contrário do comando `git clone`, criar um clone no Team Explorer não cria automaticamente uma subpasta com o nome do repositório.
 
-5. Quando a clonagem for concluída, clique duas vezes na pasta do repositório na parte inferior do Team Explorer, para navegar até o dashboard do repositório. Em **Soluções**, selecione **Nova...** .
+5. Quando a clonagem for concluída, clique duas vezes na pasta do repositório na parte inferior do Team Explorer, para navegar até o dashboard do repositório. Em **Soluções**, selecione **Nova**.
 
     ![Janela do Team Explorer, criando um novo projeto com base em um clone](media/create-project-repo/team-explorer-new-project.png)
 
@@ -36,7 +43,7 @@ Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installa
 
 8. No Gerenciador de Soluções, expanda o nó `TensorFlow Examples> MNIST`, clique com botão direito do mouse em `convolutional.py` e selecione **Definir como Arquivo de Inicialização**. Esta etapa informa ao Visual Studio qual arquivo deve ser usado ao executar o projeto.
 
-9. Pressione **Ctrl**+**F5** ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. Se você vir um `, verifique novamente a configuração do diretório de trabalho na etapa anterior.
+9. Pressione **Ctrl**+**F5** ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. Se aparecer um erro, verifique novamente a configuração do diretório de trabalho na etapa anterior.
 
 10. Quando o programa é executado com sucesso, você o verá iniciando o download do seu treinamento, testando o conjunto de dados, treinando o modelo e transmitindo sua taxa de erros. Convém que a taxa de erro diminua com o tempo
 
@@ -49,6 +56,6 @@ Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installa
 
    ![executar tensorboard](media/create-project-repo/run-tensorboard.png)
 
-12. Observe o erro diminuindo com o tempo, o que significa que a qualidade está melhorando
+12. Observe o erro diminuindo com o tempo, o que significa que a qualidade está melhorando.
 
    ![executar tensorboard](media/create-project-repo/tensorboard.png)

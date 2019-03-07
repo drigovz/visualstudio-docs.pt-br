@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 393186330979d464fe54bde339806a5d8335a859
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49df95e2c5298fc9bb7025982e75a90548d9613f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725926"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094946"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
-Adiciona este nó de aplicativo para a árvore de projeto especificado.  
+Adiciona este nó do aplicativo para a árvore de projeto especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugApplicationNode*  pdanParent  
 );  
@@ -38,7 +38,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdanParent`  
- [in] A árvore de projeto em que este nó de aplicativo é a ser adicionado.  
+ [in] A árvore de projeto em que este nó do aplicativo deve ser adicionado.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT Attach(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método adiciona esse nó de aplicativo ao projeto de árvore, usando `pdanParent` como pai. Se `pdanParent` é `NULL`, esse nó de aplicativo será o nó de nível superior.  
+ Esse método adiciona este nó do aplicativo para o projeto de árvore, usando `pdanParent` como pai. Se `pdanParent` é `NULL`, esse nó do aplicativo será o nó de nível superior.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   

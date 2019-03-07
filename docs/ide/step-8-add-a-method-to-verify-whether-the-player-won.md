@@ -1,22 +1,19 @@
 ---
 title: 'Etapa 8: Adicionar um método para verificar se o jogador ganhou'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b4e8085c3ff3de8037827769331eac83325ff8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b6bd64908c902c83023bc48bc72ab6443b2a7df7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748004"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934452"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Etapa 8: Adicionar um método para verificar se o jogador ganhou
 Você criou um jogo divertido, mas ele precisa de um item adicional para ser finalizado. O jogo deve terminar quando os jogadores ganham, de modo que você precisa adicionar um método `CheckForWinner()` para verificar se o jogador ganhou.
@@ -42,6 +39,6 @@ Você criou um jogo divertido, mas ele precisa de um item adicional para ser fin
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para acessar a próxima etapa do tutorial, veja [Etapa 9: Experimentar outros recursos](../ide/step-9-try-other-features.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 9: Experimentar outros recursos](../ide/step-9-try-other-features.md).
 
--   Para retornar à etapa anterior do tutorial, veja [Etapa 7: Manter os pares visíveis](../ide/step-7-keep-pairs-visible.md).
+-   Para retornar à etapa anterior do tutorial, confira [Etapa 7: Manter os pares visíveis](../ide/step-7-keep-pairs-visible.md).

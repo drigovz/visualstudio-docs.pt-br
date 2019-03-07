@@ -1,14 +1,9 @@
 ---
 title: Coletando dados de interação de camada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.tierinteraction
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 47a944c2-3098-497c-8fc7-e1f43d750bbc
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 31e2d46992b48b987966bac7d7dc68787f4016c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: abe38162f20fb73de04301e97974dc348d704b6f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761183"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54770876"
 ---
 # <a name="collecting-tier-interaction-data"></a>Coletando dados de interação entre camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,6 +50,3 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Interações de Camada](../profiling/tier-interactions-view.md)
-
-
-

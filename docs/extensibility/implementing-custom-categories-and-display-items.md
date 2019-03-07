@@ -1,9 +1,6 @@
 ---
 title: Implementação de categorias personalizadas e itens de exibição | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -11,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81deac9f46c03cac997f555f817bba5831409bca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968694"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementar categorias personalizadas e exibir itens
 Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) por meio de categorias personalizadas e itens de exibição.
@@ -135,5 +132,5 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [Obter informações de fonte e cor para a colorização do texto](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [Configurações de fonte e cor armazenados do Access](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Como: acessar o esquema de cores e fontes internas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [Como: Acessar as fontes internas e o esquema de cores](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [Visão geral de fontes e cores](../extensibility/font-and-color-overview.md)

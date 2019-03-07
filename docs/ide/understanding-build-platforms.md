@@ -1,7 +1,6 @@
 ---
 title: Noções básicas sobre plataformas de build
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 3deab6ab77dabe981ada88d5d960c2fe3c8e2a1f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425355"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930266"
 ---
 # <a name="understand-build-platforms"></a>Noções básicas sobre plataformas de build
 
@@ -31,12 +30,12 @@ Você pode armazenar versões diferentes de propriedades de solução e de proje
 
 ## <a name="in-this-section"></a>Nesta seção
 
- [Como configurar projetos para ser direcionado a plataformas](../ide/how-to-configure-projects-to-target-platforms.md) explica como configurar um projeto para ser direcionado a uma plataforma específica.
+ [Como: configurar projetos a serem direcionados a plataformas](../ide/how-to-configure-projects-to-target-platforms.md) Explica como configurar um projeto para direcionar a uma plataforma específica.
 
- [Como configurar projetos para ser direcionado a várias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md) explica como configurar um projeto para ser direcionado a várias plataformas.
+ [Como: configurar projetos a serem direcionados a várias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Explica como configurar um projeto para direcionar a várias plataformas.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

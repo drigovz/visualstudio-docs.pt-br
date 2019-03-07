@@ -1,8 +1,6 @@
 ---
-title: 'CA2217: não marcar enums com FlagsAttribute'
+title: 'CA2217: Não marcar enumerações com FlagsAttribute'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -17,28 +15,28 @@ dev_langs:
 ms.assetid: 1b6f626c-66bf-45b0-a3e2-7c41ee9ceda7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cc5f9fc58ac533d118b693587cf807f44b288f
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: ce4036ef3c0c9ea177ea4225ed10ca7cfe128697
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031638"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926808"
 ---
-# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: não marcar enums com FlagsAttribute
+# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Não marcar enumerações com FlagsAttribute
 
 |||
 |-|-|
 |NomeDoTipo|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separáveis|
+|Alteração Significativa|Não separável|
 
 ## <a name="cause"></a>Causa
 
-Uma enumeração visível externamente é marcada com <xref:System.FlagsAttribute>e ele tem um ou mais valores que não são potências de dois ou uma combinação de outros valores definidos na enumeração.
+Uma enumeração visível externamente é marcada com <xref:System.FlagsAttribute>e ele tem um ou mais valores que não são potências de dois ou uma combinação dos outros os valores definidos na enumeração.
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -46,7 +44,7 @@ Uma enumeração deve ter <xref:System.FlagsAttribute> presente somente se cada 
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação desta regra, remova <xref:System.FlagsAttribute> da enumeração.
+Para corrigir uma violação dessa regra, remova <xref:System.FlagsAttribute> da enumeração.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -70,7 +68,7 @@ O exemplo a seguir mostra uma enumeração `Days`, que atende aos requisitos do 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: Marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Consulte também
 

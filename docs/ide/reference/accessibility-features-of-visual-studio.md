@@ -2,8 +2,6 @@
 title: Recursos de acessibilidade do Visual Studio
 description: Saiba mais sobre as funcionalidades de acessibilidade e os utilitários que ajudam a tornar o sistema operacional Windows e o pacote para desenvolvedores do Visual Studio mais acessível para qualquer pessoa, incluindo pessoas com deficiências.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -11,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348715"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318583"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Recursos de acessibilidade do Visual Studio
 
 > [!TIP]
-> Para saber mais sobre atualizações de acessibilidade recentes, confira a postagem no blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Aprimoramentos de acessibilidade no Visual Studio 2017 versão 15.3).
+> Para saber mais sobre atualizações de acessibilidade recentes, confira a postagem no blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Aprimoramentos de acessibilidade no Visual Studio 2017 versão 15.3).
 
 Além dos recursos de acessibilidade e utilitários no Windows, os seguintes recursos tornam o Visual Studio mais acessível para pessoas portadoras de deficiência:
 
@@ -46,15 +44,15 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 
 Para mais informações, consulte os seguintes tópicos:
 
--   [Como definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Como: Definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Como usar exclusivamente o teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Como: Usar exclusivamente o teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Consulte também
 

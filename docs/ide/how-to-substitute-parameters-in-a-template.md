@@ -1,8 +1,6 @@
 ---
 title: Adicionar parâmetros de nome a modelos de projeto e de item
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -10,13 +8,13 @@ helpviewer_keywords:
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7dbc27762319538053ecee5d7566d86c998db852
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: cf9a990be3f5e87180967a4f9f274ec79fbc357e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062464"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943331"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Como: Substituir parâmetros em um modelo
 
@@ -26,7 +24,7 @@ Parâmetros de modelo são escritos no formato $*parâmetro*$. Para obter uma li
 
 A seção a seguir mostra como modificar um modelo para substituir o nome de um namespace pelo "nome seguro do projeto".
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Para usar um parâmetro para substituir o nome do namespace
+## <a name="example---namespace-name"></a>Exemplo – o nome do namespace
 
 1. Insira o parâmetro em um ou mais dos arquivos de código no modelo. Por exemplo:
 

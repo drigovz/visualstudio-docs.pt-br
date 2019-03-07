@@ -2,23 +2,21 @@
 title: Etapa 2 do Tutorial do Python no Visual Studio, escrever e executar o código
 titleSuffix: ''
 description: Etapa 2 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo como editar código e executar um projeto.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054794"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843085"
 ---
 # <a name="step-2-write-and-run-code"></a>Etapa 2: Escrever e executar o código
 
@@ -47,7 +45,7 @@ Embora o **Gerenciador de Soluções** seja o local em que você gerencia arquiv
     ![Coloração de sintaxe e realce de erros do IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Como o ambiente de desenvolvimento é uma questão muito pessoal, o Visual Studio oferece controle total sobre a aparência e o comportamento do Visual Studio. Selecione o comando de menu **Ferramentas** > **Opções** e explore as configurações nas guias **Ambiente** e **Editor de Texto**. Por padrão, você vê somente um número limitado de opções; para ver todas as opções de todas as linguagens de programação, selecione **Mostrar todas as configurações** na parte inferior da caixa de diálogo. 
+    > Como o ambiente de desenvolvimento é uma questão muito pessoal, o Visual Studio oferece controle total sobre a aparência e o comportamento do Visual Studio. Selecione o comando de menu **Ferramentas** > **Opções** e explore as configurações nas guias **Ambiente** e **Editor de Texto**. Por padrão, você vê somente um número limitado de opções; para ver todas as opções de todas as linguagens de programação, selecione **Mostrar todas as configurações** na parte inferior da caixa de diálogo.
 
 1. Execute o código que você escreveu até este ponto, pressionando **Ctrl**+**F5** ou selecionando o item de menu **Depurar** > **Iniciar Sem Depuração**. O Visual Studio avisará se ainda houver erros em seu código.
 
@@ -55,7 +53,7 @@ Embora o **Gerenciador de Soluções** seja o local em que você gerencia arquiv
 
     ![Saída da primeira execução do programa](media/vs-getting-started-python-07-output.png)
 
-1. Além das conclusões para instruções e funções, o IntelliSense fornece preenchimentos para instruções `import` e `from` do Python. Esses preenchimentos ajudam você a descobrir com facilidade quais módulos estão disponíveis no ambiente e os membros desses módulos. No editor, exclua a linha `print` e comece a digitar `import `. Uma lista de módulos é exibida quando você digita o espaço:
+1. Além das conclusões para instruções e funções, o IntelliSense fornece preenchimentos para instruções `import` e `from` do Python. Esses preenchimentos ajudam você a descobrir com facilidade quais módulos estão disponíveis no ambiente e os membros desses módulos. No editor, exclua a linha `print` e comece a digitar `import`. Uma lista de módulos é exibida quando você digita o espaço:
 
     ![IntellSense mostrando os módulos disponíveis para uma instrução de importação](media/vs-getting-started-python-08-import1.png)
 

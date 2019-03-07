@@ -2,20 +2,18 @@
 title: Editar o código R
 description: O Visual Studio fornece uma experiência de edição personalizada para R, mantendo todos os recursos e a capacidade de usar extensões.
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220873"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921231"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Editar o código R no Visual Studio
 
@@ -41,7 +39,7 @@ Para alterar esse comportamento, confira a configuração **Avançado** > **Veri
 
 ## <a name="edit-and-organize-code"></a>Editar e organizar o código
 
-Conforme você digita o código, as RTVS fornecem preenchimento automático, conforme descrito na página [IntelliSense](r-intellisense.md). Ele também faz a formatação automática, como o fechamento de chaves e parênteses: 
+Conforme você digita o código, as RTVS fornecem preenchimento automático, conforme descrito na página [IntelliSense](r-intellisense.md). Ele também faz a formatação automática, como o fechamento de chaves e parênteses:
 
 ![Animação de formatação embutida](media/editing-inline-formatting.gif)
 
@@ -130,6 +128,6 @@ As opções na guia **R** > **Avançado** são específicas das RTVS:
 | | Lista de conclusão no primeiro caractere | On | Mostra a lista de conclusão nos primeiros tipos de caracteres. Quando desabilitada, uma lista de conclusão é exibida com **Editar** > **IntelliSense** > **Listar Membros** (**Ctrl**+**J**). |
 | | Lista de conclusão com a tecla **Tab** | Off | Invoca uma lista de conclusão digitando um ou mais caracteres e pressionando **Tab**. |
 | | Corresponder parcialmente ao digitar nomes de argumento | Off | Ao digitar os nomes de argumento em uma chamada de função, a ajuda de assinatura mostra uma descrição do argumento que é a melhor correspondência. |
-| Janela Interativa | Verificação de sintaxe no console do R | Off | Aplica a verificação na janela interativa de sintaxe. A verificação de sintaxe pode não funcionar corretamente com instruções de várias linhas. | 
+| Janela Interativa | Verificação de sintaxe no console do R | Off | Aplica a verificação na janela interativa de sintaxe. A verificação de sintaxe pode não funcionar corretamente com instruções de várias linhas. |
 | Estrutura de tópicos | Estrutura de tópicos de código | On | Cria regiões recolhíveis automaticamente para áreas como instruções de várias linhas. |
 | Verificação de sintaxe | Mostrar erros de sintaxe | On | Habilita a verificação de sintaxe automática do código. |

@@ -1,7 +1,6 @@
 ---
-title: Como configurar projetos para terem várias plataformas como destino
+title: 'Como: Configurar projetos para se destinarem a várias plataformas'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1f302821b219266cf7080437a73cc577ffb0ffa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930213"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920087"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Como configurar projetos para terem várias plataformas como destino
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Como: Configurar projetos para se destinarem a várias plataformas
 
 O Visual Studio fornece uma maneira de uma solução se destinar a várias plataformas ou arquiteturas de CPU ao mesmo tempo. As propriedades para defini-las são acessadas por meio da caixa de diálogo **Configuration Manager**.
 
@@ -64,6 +63,6 @@ Uma vez que pode alterar as configurações com base na combinação de definiç
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
+- [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

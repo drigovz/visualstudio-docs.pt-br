@@ -1,23 +1,21 @@
 ---
 title: Depurando código para iniciantes absolutos
 description: Se você estiver depurando pela primeira vez, conheça alguns princípios para ajudá-lo a executar seu aplicativo no modo de depuração com o Visual Studio
-ms.custom: ''
 ms.date: 07/06/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160017"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713146"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -66,9 +64,9 @@ Quando normalmente você executa um aplicativo, você vê erros e resultados inc
 
 Executar um aplicativo dentro do depurador, também chamado de *modo de depuração*, significa que o depurador monitora ativamente tudo que está acontecendo conforme o programa é executado. Isso também permite pausar o aplicativo a qualquer momento para examinar seu estado e percorrer seu código linha por linha para observar todos os detalhes à medida que acontecem.
 
-No Visual Studio, você entra no modo de depuração usando **F5** (ou o comando de menu **Depurar** > **Iniciar Depuração** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na Barra de Ferramentas Depurar). Se ocorrerem exceções, o Auxiliar de Exceção do Visual Studio levará você ao ponto exato em que a exceção ocorreu e fornecerá outras informações úteis.
+No Visual Studio, você entra no modo de depuração usando **F5** (ou o comando de menu **Depurar** > **Iniciar Depuração** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na Barra de Ferramentas Depurar). Se ocorrerem exceções, o Auxiliar de Exceção do Visual Studio levará você ao ponto exato em que a exceção ocorreu e fornecerá outras informações úteis. Para obter mais informações de como tratar exceções no código, confira [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md).
 
-Se você não recebeu uma exceção, você provavelmente tem uma boa ideia de onde procurar o problema em seu código. É aí em que você usa os *pontos de interrupção* com o depurador para se dar a oportunidade de examinar seu código mais cuidadosamente. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica onde o Visual Studio deve pausar seu código em execução para você poder examinar os valores das variáveis ou o comportamento da memória ou a sequência na qual o código é executado.
+Se você não recebeu uma exceção, você provavelmente tem uma boa ideia de onde procurar o problema em seu código. É aí que você usa os *pontos de interrupção* com o depurador para ter uma oportunidade de examinar o código mais cuidadosamente. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica onde o Visual Studio deve pausar seu código em execução para você poder examinar os valores das variáveis ou o comportamento da memória ou a sequência na qual o código é executado.
 
 No Visual Studio, é possível definir rapidamente um ponto de interrupção clicando na margem esquerda ao lado de uma linha de código. Ou coloque o cursor em uma linha e pressione **F9**.
 
@@ -80,7 +78,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
 1. É necessário ter o Visual Studio instalado e a carga de trabalho de **desenvolvimento de área de trabalho do .NET** ou a carga de trabalho de **desenvolvimento multiplataforma do .NET Core** instalada, dependendo de qual tipo de aplicativo você deseja criar.
 
-    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalá-lo gratuitamente.
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique em **Ferramentas** > **Obter ferramentas e recursos**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core**) e, em seguida, escolha **Modificar**.
 
@@ -103,7 +101,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -114,7 +112,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -126,33 +124,33 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -190,8 +188,8 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     O aplicativo é iniciado e não há exceções mostradas pelo depurador. No entanto, a saída que você vê na janela do console é não o que você espera. Veja a saída esperada:
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -201,8 +199,8 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     Mas, em vez disso, vemos o seguinte:
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -219,7 +217,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Quando você definir o ponto de interrupção, um ponto vermelho será exibido na margem esquerda.
@@ -249,13 +247,13 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 1. Examinando seu código com relação à definição do tipo de galáxia, você acha que a propriedade `GalaxyType` da classe `Galaxy` é especificada como `object`, em vez de `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Altere o código anterior para isto:
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Clique no botão **Reiniciar** ![Reiniciar aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na Barra de ferramentas de depuração (**Ctrl** + **Shift** + **F5**) para recompilar o código e reiniciar.
@@ -267,8 +265,8 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     O aplicativo é executado e exibe a saída. Ele parece muito bom agora, mas você percebe uma coisa; você esperava que a galáxia Pequena Nuvem de Magalhães fosse exibida como uma galáxia irregular na saída do console, mas ele mostra nenhum tipo de galáxia.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -285,7 +283,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
 1. Clique no botão **Reiniciar** ![Reiniciar aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na Barra de ferramentas de depuração (**Ctrl** + **Shift** + **F5**) para reiniciar.
 
-    O depurador é pausado na linha de código em que você definiu o ponto de interrupção.  
+    O depurador é pausado na linha de código em que você definiu o ponto de interrupção.
 
 1. Passe o mouse sobre a variável `type`. Você verá um valor de `S` (seguindo o código de caractere). Você está interessado em um valor de `I`, uma vez que você sabe que é um tipo de galáxia irregular.
 
@@ -325,11 +323,11 @@ Quando você encontrar a região de código com o problema, use o depurador para
 * Verifique se o seu aplicativo está executando o código que você espera. (Por exemplo, no aplicativo de exemplo, esperávamos que o código para a instrução de opção definisse o tipo de galáxia como Irregular, mas o aplicativo ignorou o código devido ao erro de digitação.)
 
 > [!TIP]
-> Use um depurador para ajudá-lo a encontrar bugs. Uma ferramenta de depuração poderá localizar bugs *para você* somente se conhecer a intenção do seu código. Uma ferramenta só poderá conhecer a intenção do seu código se você, o desenvolvedor, expressar essa intenção. Gravar [testes de unidade](../test/improve-code-quality.md) é como se faz isso. 
+> Use um depurador para ajudá-lo a encontrar bugs. Uma ferramenta de depuração poderá localizar bugs *para você* somente se conhecer a intenção do seu código. Uma ferramenta só poderá conhecer a intenção do seu código se você, o desenvolvedor, expressar essa intenção. Gravar [testes de unidade](../test/improve-code-quality.md) é como se faz isso.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, é possível começar a aprender mais sobre o depurador.
 
 > [!div class="nextstepaction"]
-> [Aprenda a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Introdução ao depurador](../debugger/debugger-feature-tour.md)

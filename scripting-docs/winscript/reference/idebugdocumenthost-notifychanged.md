@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::NotifyChanged | Microsoft Docs
+title: 'Idebugdocumenthost:: Notifychanged | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1890aeb64346994480a7e4ef452543107bd1544e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 26cf42e8d8a534ae89ecc16957188de32d36ba0b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726256"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089876"
 ---
 # <a name="idebugdocumenthostnotifychanged"></a>IDebugDocumentHost::NotifyChanged
-Notifica o host que tenha sido salva o arquivo de origem do documento e que seu conteúdo deve ser atualizado.  
+Notifica o host que o arquivo de origem do documento foi salvo e que seu conteúdo deve ser atualizado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT NotifyChanged();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -45,7 +45,7 @@ HRESULT NotifyChanged();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método notifica o host que tenha sido salva o arquivo de origem do documento e que seu conteúdo deve ser atualizado.  
+ Esse método notifica o host que o arquivo de origem do documento foi salvo e que seu conteúdo deve ser atualizado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugDocumentHost Interface](../../winscript/reference/idebugdocumenthost-interface.md)

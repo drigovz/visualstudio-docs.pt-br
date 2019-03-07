@@ -1,22 +1,20 @@
 ---
 title: Página de opções do Designer XAML
 ms.date: 03/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f56b6405935bd46c7f1e225ce587ed3d13e5fd34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388355"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954699"
 ---
 # <a name="xaml-designer-options-page"></a>Página de opções do Designer XAML
 
@@ -58,15 +56,15 @@ Use essa configuração para determinar o funcionamento de aplicar zoom ao edita
 |||
 |-|-|
 |**Botão de rolagem do mouse**|Ampliar o XAML Designer ao rolar o botão de rolagem do mouse.|
-|**CTRL + botão de rolagem do mouse**|Ampliar o XAML Designer pressionando a tecla CTRL ao rolar o botão de rolagem do mouse.|
-|**Alt + botão de rolagem do mouse**|Ampliar o XAML Designer pressionando a tecla ALT ao rolar o botão de rolagem do mouse.|
+|**CTRL + botão de rolagem do mouse**|Ampliar o Designer XAML pressionando a tecla **CTRL** ao mesmo tempo em que rola o botão de rolagem do mouse.|
+|**Alt + botão de rolagem do mouse**|Ampliar o Designer XAML pressionando a tecla **ALT** ao mesmo tempo em que rola o botão de rolagem do mouse.|
 
 Essas configurações determinam o comportamento do Designer ao editar um documento XAML.
 
 |||
 |-|-|
 |**Nomear automaticamente os elementos interativos na criação**|Especifica se um nome padrão é fornecido para um novo elemento interativo ao adicioná-lo no Designer.|
-|**Inserir automaticamente as propriedades de layout na criação de elemento**|Especifica se as propriedades de layout são fornecidas a um novo elemento ao adicioná-lo no Designer.|
+|**Inserir automaticamente as propriedades de layout na criação de elemento**|Especifica se as propriedades de layout são fornecidas a um novo elemento ao adicioná-lo no Designer. As propriedades de layout são aquelas que afetam o layout de um controle, por exemplo, VerticalAlignment ou Margin. O XAML a seguir mostra como criar um botão com e sem essa opção selecionada:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Usar layout baseado em quadrantes**|Especifica se o controle atualmente selecionado alinha-se às bordas do contêiner pai mais próximas. Se essa caixa de seleção estiver desmarcada, os alinhamentos de controle não se alteram durante uma operação de movimentação ou criação.|
 |**Popular automaticamente os itens da caixa de ferramentas**|Especifica se os controles de usuário e os controles personalizados na solução atual são mostrados automaticamente na caixa de ferramentas.|
 
@@ -76,7 +74,7 @@ Use essas opções para determinar as configurações ao editar arquivos XAML us
 
 |||
 |-|-|
-|**Aplicar zoom usando**|Ampliar o XAML Designer ao rolar o botão de rolagem do mouse ou pressionando a tecla CTRL ou ALT ao rolar o botão de rolagem do mouse.|
+|**Aplicar zoom usando**|Ampliar o Designer XAML ao rolar o botão de rolagem do mouse ou ao pressionar a tecla **CTRL** ou **ALT** ao mesmo tempo em que rola o botão de rolagem do mouse.|
 |**Digitar unidades**|Especifica se as medidas no designer são baseadas em pontos ou pixels. Como os Aplicativos Universais do Windows não oferecem suporte a pontos, as unidades serão automaticamente convertidas em pixels se **Pontos** estiver selecionado.|
 
 ## <a name="artboard-blend-only"></a>Prancheta (Somente Blend)

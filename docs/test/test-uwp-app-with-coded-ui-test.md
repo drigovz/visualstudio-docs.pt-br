@@ -1,23 +1,21 @@
 ---
 title: Testar um aplicativo UWP com um teste de IU codificado
 ms.date: 05/31/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895958"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942252"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Criar um teste de IU codificado para testar um aplicativo UWP
 
@@ -213,11 +211,11 @@ A primeira etapa é criar um aplicativo UWP simples no qual executar o teste.
 
 ### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>P: Posso criar um teste de IU codificado para meus aplicativos da UWP baseados no WinJS?
 
-**R**: Não. Há suporte apenas para aplicativos baseados em XAML.
+**R**: Não, apenas aplicativos baseados em XAML são compatíveis.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Por que não posso modificar o código no arquivo UIMap.Designer?
 
-**R**: Todas as alterações de código feitas no arquivo *UIMapDesigner.cs* são substituídas sempre que você gera o código usando o **Construtor de Teste de IU Codificado**. Se você precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Remova a referência ao método original no arquivo *CodedUITest.cs* e substitua-a pelo nome do método renomeado.
+**R**: Todas as alterações de código feitas no arquivo *UIMapDesigner.cs* são substituídas sempre que você gera o código usando o **Construtor de Teste de IU Codificado**. Se precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Remova a referência ao método original no arquivo *CodedUITest.cs* e substitua-a pelo nome do método renomeado.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926677"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951508"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Criando uma linguagem específica do domínio baseada no Windows Forms
 Você pode usar o Windows Forms para exibir o estado de um modelo de linguagem específica do domínio (DSL), em vez de usar um diagrama DSL. Este tópico orienta você por meio de um Windows Form de associação a uma DSL, usando o SDK de modelagem e visualização do Visual Studio.
@@ -118,9 +116,9 @@ Você pode usar o Windows Forms para exibir o estado de um modelo de linguagem e
 
 1.  Sobre o **dados** menu, escolha **Show Data Sources**.
 
-     O **fontes de dados** janela é aberta.
+     A janela **Fontes de Dados** é aberta.
 
-     Escolher **Add New Data Source**. O **Data Source Configuration Wizard** é aberta.
+     Escolher **Add New Data Source**. O **Assistente de Configuração de Fonte de Dados** é aberto.
 
 2.  Escolher **objeto**, **próxima**.
 

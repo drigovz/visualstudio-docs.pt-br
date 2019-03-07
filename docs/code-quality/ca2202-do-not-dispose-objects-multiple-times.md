@@ -1,8 +1,6 @@
 ---
-title: 'CA2202: não descartar objetos várias vezes'
+title: 'CA2202: Não descartar objetos várias vezes'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: fa85349a-cf1e-42c8-a86b-eacae1f8bd96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f666ba0cf620249e9308179d715ca38bf0f18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822859"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926938"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: não descartar objetos várias vezes
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Não descartar objetos várias vezes
 
 |||
 |-|-|
@@ -42,7 +40,7 @@ Um implementado corretamente <xref:System.IDisposable.Dispose%2A> método pode s
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA2000: descartar objetos antes de perder o escopo](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000: Descartar objetos antes de perder escopo](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

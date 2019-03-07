@@ -2,22 +2,20 @@
 title: Designer de atividade do Designer de fluxo de trabalho - Receive
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb48c19befc3cf2c155248cfc33c01eedd16ce26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ba2a53b6e658d14d05db04b8b82e9da9bcc3564
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950089"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948245"
 ---
 # <a name="receive-activity-designer"></a>Recebe o designer de atividades
 
@@ -47,13 +45,13 @@ A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities
 | <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> | False | Especifica o nome do contrato de serviço. Essa propriedade é usada para agrupar operações de serviço em contratos de serviço individuais. Todas as atividades de <xref:System.ServiceModel.Activities.Receive> que têm mesmo <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> são agrupadas no mesmo contrato de serviço (tipo de porta de WSDL.) O valor padrão é o nome totalmente qualificado de CLR da atividade de nível superior (raiz). |
 | <xref:System.ServiceModel.Activities.Receive.Content%2A> | False | Especifica o conteúdo de mensagem ou de parâmetro para receber. Pode ser uma atividade de <xref:System.ServiceModel.Activities.ReceiveMessageContent> ou uma atividade de <xref:System.ServiceModel.Activities.ReceiveParametersContent> . Editar essa propriedade, selecionando o botão de reticências ao lado de **conteúdo** campo na grade de propriedade ou clicando o **definir...**  botão ao lado de **conteúdo** rótulos no **Receive** superfície do designer de atividade. Ambos exibe a **definição de conteúdo** caixa de diálogo. Para obter mais informações sobre como usar essa caixa, consulte o [caixa de diálogo de definição de conteúdo](../workflow-designer/content-definition-dialog-box.md) tópico. |
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | False | Especifica se correlaciona entre atividades de <xref:System.ServiceModel.Activities.Receive> em operações de serviço de um fluxo de trabalho com um objeto de <xref:System.ServiceModel.MessageQuerySet> . Clique no botão de reticências ao lado de <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propriedade na grade de propriedades para abrir o **definição de CorrelatesOn** caixa de diálogo. Para obter mais informações sobre o uso desta caixa de diálogo, consulte a [caixa de diálogo de definição de conteúdo](../workflow-designer/content-definition-dialog-box.md) tópico. |
-| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | Especifica <xref:System.ServiceModel.Activities.CorrelationHandle> usado para rotear a mensagem à instância apropriado de fluxo de trabalho.<br /><br /> Clique no botão de reticências ao lado de <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> propriedade na grade de propriedades para abrir o **Editor de expressão** caixa de diálogo. Para obter mais informações sobre o uso desta caixa de diálogo, consulte a [como: usar o Editor de expressão](../workflow-designer/how-to-use-the-expression-editor.md) tópico. |
+| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | Especifica <xref:System.ServiceModel.Activities.CorrelationHandle> usado para rotear a mensagem à instância apropriado de fluxo de trabalho.<br /><br /> Clique no botão de reticências ao lado de <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> propriedade na grade de propriedades para abrir o **Editor de expressão** caixa de diálogo. Para obter mais informações sobre o uso desta caixa de diálogo, consulte o [como: Use o Editor de expressão](../workflow-designer/how-to-use-the-expression-editor.md) tópico. |
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | False | Especifica a coleção de objetos de <xref:System.ServiceModel.Activities.CorrelationInitializer> que inicializam vários objetos de <xref:System.ServiceModel.Activities.CorrelationHandle> que configuram esta atividade de <xref:System.ServiceModel.Activities.Receive> dentro de fluxo de trabalho. Clique no botão de reticências ao lado de <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> propriedade na grade de propriedades para abrir o **adicionar inicializadores de correlação** caixa de diálogo. Para obter mais informações sobre como usar essa caixa, consulte o [caixa de diálogo Adicionar CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) tópico. |
 | <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | False | Especifica um valor que determina se uma nova instância de fluxo de trabalho é criada para processar a mensagem se a mensagem não correlaciona a uma instância existente de fluxo de trabalho. Se o valor for definido como **verdadeira**, uma nova instância de fluxo de trabalho é criada para processar a mensagem quando a mensagem não está correlacionada com uma instância de fluxo de trabalho existente. |
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Especifica uma coleção de tipos conhecidos para a operação de serviço implementada por esta atividade de <xref:System.ServiceModel.Activities.Receive> . Esta propriedade deve ser usada em conjunto com a propriedade de <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> definida como <xref:System.Runtime.Serialization.DataContractSerializer>. É ignorada se <xref:System.Xml.Serialization.XmlSerializer> é usado.<br /><br /> Selecione o botão de reticências ao lado de **KnownTypes** campo na grade de propriedade para exibir o **Editor de coleção do tipo** caixa de diálogo com a qual você pode adicionar tipos relevantes. Para obter mais informações sobre como usar essa caixa, consulte o [caixa de diálogo do Editor de coleção de tipo](../workflow-designer/type-collection-editor-dialog-box.md) tópico. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | Especifica <xref:System.Net.Security.ProtectionLevel> para a mensagem.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> significa somente autenticação.<br />2. <xref:System.Net.Security.ProtectionLevel> significa assinar dados para ajudar a garantir a integridade dos dados transmitidos.<br />3. <xref:System.Net.Security.ProtectionLevel> significa criptografar e assinar dados para ajudar a garantir a confidencialidade e integridade dos dados transmitidos. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | Especifica o tipo de serializador para usar a operação de serviço implementada pela atividade de <xref:System.ServiceModel.Activities.Receive> . O valor padrão é <xref:System.Runtime.Serialization.DataContractSerializer>, que serializa e desserializa uma instância de um tipo em um fluxo XML ou em um documento que usa um contrato fornecido de dados. <xref:System.Xml.Serialization.XmlSerializer> também pode ser usado se mais controle sobre é necessário XML. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Especifica o cabeçalho da ação de mensagem. Se ele não for definido explicitamente, seu valor padrão é: https://tempuri.org/{service de contrato de namespace} / {nome do contrato de serviço} / {nome da operação}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Especifica o cabeçalho da ação de mensagem. Se ele não for definido explicitamente, seu valor padrão é: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
 ## <a name="see-also"></a>Consulte também
 

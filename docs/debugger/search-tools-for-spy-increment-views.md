@@ -1,8 +1,6 @@
 ---
 title: Ferramentas de pesquisa para exibições do Spy + + | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - searching, Spy++
@@ -10,41 +8,33 @@ helpviewer_keywords:
 ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c83a2a0970a8d209a4e445a595722d9a2651519f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7df3b27164eab0b78cdce72a8f938cb6e9743bcf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476313"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709201"
 ---
 # <a name="search-tools-for-spy-views"></a>Ferramentas de pesquisa das exibições do Spy++
-Use essas caixas de diálogo para especificar quais dados exibirá uma janela de exibições do Spy + +:  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Caixa de diálogo Localizar Janela](../debugger/find-window-dialog-box.md)  
- Usado para exibir as propriedades ou as mensagens de uma janela específica.  
-  
- [Caixa de diálogo Pesquisa de Janela](../debugger/window-search-dialog-box.md)  
- Usado para localizar o nó para uma janela específica no modo de exibição do Windows.  
-  
- [Caixa de diálogo Pesquisa de Mensagens](../debugger/message-search-dialog-box.md)  
- Usado para localizar o nó de uma mensagem específica no modo de exibição de mensagem.  
-  
- [Caixa de diálogo Pesquisa de Processos](../debugger/process-search-dialog-box.md)  
- Usado para localizar o nó para um processo específico no modo de exibição de processo.  
-  
- [Caixa de diálogo Pesquisa de Threads](../debugger/thread-search-dialog-box.md)  
- Usado para localizar o nó para um segmento específico no modo de exibição de Threads.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Exibições do Spy++](../debugger/spy-increment-views.md)  
- Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  
-  
- [Usando Spy++](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
-  
- [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.
+Use essas caixas de diálogo para especificar quais dados exibirá uma janela de exibições do Spy + +:
+
+## <a name="in-this-section"></a>Nesta seção
+ [Janela caixa de diálogo Localizar](../debugger/find-window-dialog-box.md) usado para exibir as propriedades ou mensagens de uma janela específica.
+
+ [Caixa de diálogo de pesquisa de janela](../debugger/window-search-dialog-box.md) usado para localizar o nó para uma janela específica no modo de exibição do Windows.
+
+ [Caixa de diálogo de pesquisa da mensagem](../debugger/message-search-dialog-box.md) usado para localizar o nó para uma mensagem específica no modo de exibição de mensagem.
+
+ [Processar caixa de diálogo Pesquisar](../debugger/process-search-dialog-box.md) usado para localizar o nó para um processo específico no modo de exibição de processo.
+
+ [Caixa de diálogo de pesquisa de thread](../debugger/thread-search-dialog-box.md) usado para localizar o nó para um segmento específico na exibição de Threads.
+
+## <a name="related-sections"></a>Seções relacionadas
+ [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.
+
+ [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+
+ [Referência de Spy + +](../debugger/spy-increment-reference.md) inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.

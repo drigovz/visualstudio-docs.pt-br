@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdd71a427a8ef2c57684eef75a044d0cedf42415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac2d6dd0da14be5a624cff0b55985770b8d70fdf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733616"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344051"
 ---
 # <a name="isetnextstatement-interface"></a>Interface ISetNextStatement
-Essa interface é implementada por um interpretador para permitir que o Gerenciador de depuração do processo atualizar a instrução atual. Ele é implementado de um objeto de quadro de pilha, e o PDM obtém essa interface por meio de QueryInterface.  
+Essa interface é implementada por um interpretador para permitir que o Gerenciador de depuração do processo atualizar a instrução atual. Ele é implementado de um objeto de quadro de pilha e o PDM obtém essa interface por meio de QueryInterface.  
   
  interface fornece métodos que são úteis para definir o ponto de execução, que determina a próxima instrução a ser executada.  
   
  Além dos métodos herdados de `IUnknown`, o `ISetNextStatement` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  

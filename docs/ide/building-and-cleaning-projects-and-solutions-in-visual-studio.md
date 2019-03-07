@@ -1,7 +1,6 @@
 ---
 title: Compilando e Limpando Projetos e Soluções
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -21,19 +20,19 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349264"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925378"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Criar e limpar projetos e soluções no Visual Studio
 
-Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para ver um tutorial passo a passo, veja [Instruções passo a passo: criação de um aplicativo](../ide/walkthrough-building-an-application.md).
+Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para obter um tutorial passo a passo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Criar e limpar projetos e soluções no Visual Studio para Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -114,11 +113,11 @@ Execute uma das seguintes etapas:
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
 - [Noções sobre configurações de compilação](../ide/understanding-build-configurations.md)
-- [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Como: definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Referência de compilação C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)

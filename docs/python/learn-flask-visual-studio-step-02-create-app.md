@@ -2,23 +2,21 @@
 title: Tutorial Aprenda a usar o Flask no Visual Studio, etapa 2, modos de exibição e modelos
 titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Flask no contexto dos projetos do Visual Studio, mostrando especificamente as etapas para criar um aplicativo e usar modos de exibição e modelos.
-ms.date: 09/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b3a333482590e284c5cbbc1ec44093a835c76db0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052939"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912788"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Flask com modos de exibição e modelos de página
 

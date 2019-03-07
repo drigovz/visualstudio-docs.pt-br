@@ -1,30 +1,25 @@
 ---
 title: 'Passo a passo: Criando uma Web Part para SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], developing
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872402"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604568"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Passo a passo: Criar uma web part do SharePoint
 
@@ -94,7 +89,7 @@ Você pode especificar quais controles você deseja que apareça na Web Part adi
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Adicione o seguinte código para o `WebPart1` classe. Esse código declara os seguintes campos:
+3. Adicione o código a seguir à classe `WebPart1`. Esse código declara os seguintes campos:
 
    - Uma grade de dados para exibir os funcionários na Web Part.
 
@@ -107,7 +102,7 @@ Você pode especificar quais controles você deseja que apareça na Web Part adi
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Adicione o seguinte código para o `WebPart1` classe. Esse código adiciona uma propriedade personalizada chamada `DataFilePath` para a Web Part. Uma propriedade personalizada é uma propriedade que pode ser definida pelo usuário no SharePoint. Essa propriedade obtém e define o local de um arquivo de dados XML que é usado para preencher a grade de dados.
+4. Adicione o código a seguir à classe `WebPart1`. Esse código adiciona uma propriedade personalizada chamada `DataFilePath` para a Web Part. Uma propriedade personalizada é uma propriedade que pode ser definida pelo usuário no SharePoint. Essa propriedade obtém e define o local de um arquivo de dados XML que é usado para preencher a grade de dados.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
@@ -221,7 +216,7 @@ Mostrar e ocultar os funcionários que não são gerentes, clicando em um item q
 
 ## <a name="see-also"></a>Consulte também
 
-[Criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Como: criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Como: criar uma web part do SharePoint usando um Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[Passo a passo: Criar uma web part para SharePoint usando um designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[como: Criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[como: Criar uma web part do SharePoint usando um Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
+[passo a passo: Criar uma web part para SharePoint usando um designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

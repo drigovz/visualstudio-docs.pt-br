@@ -1,20 +1,18 @@
 ---
 title: Atualizar um aplicativo existente para o MSBuild 15 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da159ae0fcb4347052efcea5d0dbd24d5ccd8f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219231"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596019"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Atualizar um aplicativo existente para o MSBuild 15
 
@@ -79,7 +77,7 @@ Adicione uma referência de pacote NuGet para [Microsoft.Build.Locator](https://
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
-      <Version>1.0.7-preview-ge60d679b53</Version>
+      <Version>1.1.2</Version>
     </PackageReference>
 ```
 

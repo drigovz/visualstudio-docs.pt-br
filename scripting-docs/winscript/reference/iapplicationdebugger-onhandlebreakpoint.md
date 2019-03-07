@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3be067d3b8c3e3268ac2caf1614b70efff6f665
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ebcb24b437b2c77f0dc76f5e753974c8dd299d17
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725296"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090565"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 Manipula um evento de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onHandleBreakPoint(  
    IRemoteDebugApplicationThread*  prpt,  
    BREAKREASON                     br,  
@@ -46,7 +46,7 @@ HRESULT onHandleBreakPoint(
  [in] O motivo para o ponto de interrupção.  
   
  `pError`  
- [in] Informações de erro de tempo de execução, fornecido quando o valor de `br` é BREAKREASON_ERROR.  
+ [in] Informações de erro de tempo de execução, fornecida quando o valor de `br` é breakreason_error ter.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -56,9 +56,9 @@ HRESULT onHandleBreakPoint(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método é chamado quando um ponto de interrupção é atingido e `IDebugApplication::HandleBreakPoint` é chamado.  
+ Esse método é chamado quando um ponto de interrupção é atingido e `IDebugApplication::HandleBreakPoint` é chamado.  
   
- O aplicativo permanecerá suspenso até que o depurador IDE chama `IRemoteDebugApplication::ResumeFromBreakPoint`.  
+ O aplicativo permanecerá suspenso até que o IDE de depurador chama `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   

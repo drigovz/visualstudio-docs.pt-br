@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067055"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335526"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Referência de atualização e de migração de projeto para o Visual Studio 2017
 
@@ -34,7 +35,7 @@ O suporte para alguns tipos de projeto também muda ao longo do tempo. É possí
 
 Este artigo fornece detalhes somente para os tipos de projeto que o Visual Studio 2017 pode migrar. O artigo exclui os tipos de projeto para os quais não há mais suporte no Visual Studio 2017 e, portanto, não podem ser migrados. O artigo também exclui os tipos de projeto compatíveis que não têm nenhum problema de migração. A lista desses tipos é encontrada em [Direcionamento e compatibilidade da plataforma](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Alguns tipos de projeto exigem a instalação das cargas de trabalho apropriadas por meio do instalador do Visual Studio. Se a carga de trabalho não estiver instalada, o Visual Studio relatará um tipo de projeto desconhecido ou incompatível. Nesse caso, verifique as opções de instalação e tente novamente. Novamente, consulte o artigo [Direcionamento e compatibilidade da plataforma](/visualstudio/productinfo/vs2017-compatibility-vs) para obter detalhes sobre o suporte de projetos no Visual Studio 2017.
 
 ## <a name="project-types"></a>Tipos de projeto
@@ -95,7 +96,7 @@ Para manter a compatibilidade máxima com projetos criados em versões mais anti
 
 Nesse contexto, naturalmente surge o questionamento de se você deve tentar atualizar ou migrar manualmente um projeto para um valor mais recente de `ToolsVersion`. Essa alteração é desnecessária e provavelmente geraria muitos erros e avisos que você precisaria corrigir para conseguir compilar o projeto novamente. Além disso, se o Visual Studio deixar de dar suporte a um determinado `ToolsVersion` no futuro, abrir o projeto disparará o processo de migração do projeto especificamente porque o valor `ToolsVersion` precisará ser alterado. Nesse caso, o subsistema desse tipo específico de projeto sabe exatamente o que precisa ser alterado e pode fazer essas alterações automaticamente, conforme descrito anteriormente neste artigo.
 
-# <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 
 Consulte os seguintes artigos para uma discussão mais detalhada:
 

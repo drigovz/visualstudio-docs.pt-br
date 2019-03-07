@@ -1,8 +1,6 @@
 ---
 title: Criar modelos para o aplicativo
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
@@ -20,15 +18,15 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966538"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942616"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 
@@ -38,11 +36,11 @@ Para ver quais versões do Visual Studio dão suporte a cada tipo de diagrama, c
 
 Para visualizar a arquitetura de um sistema ou o código existente, crie diagramas a seguir:
 
-|**Diagrama**|**programas**|
+|**Diagrama**|**Shows**|
 |-|-|
-|[Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)|Arquitetura de alto nível do sistema|
+|[Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)|Arquitetura de alto nível do sistema|
 |Mapas de código<br /><br /> [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dependências e outros relacionamentos no código existente|
-|Diagramas de classe do código gerado<br /><br /> [Trabalhando com diagramas de classe (Designer de Classe)](../ide/working-with-class-diagrams-class-designer.md)|Tipos e suas relações no código do .NET|
+|Diagramas de classe do código gerado<br /><br /> [Trabalhando com diagramas de classe (Designer de Classe)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Tipos e suas relações no código do .NET|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 

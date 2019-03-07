@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b09f900162b6dba82696c946b53ab131691530c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e7f6cc265815db4acd847270b28c3e744257fa0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645576"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086678"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-Retorna o miniscript que tem os atributos especificados.  
+Retorna o scriptlet que tem os atributos especificados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetEventHandler(  
    IDispatch          *pdisp,  
    LPCOLESTR          pszItem,  
@@ -42,19 +42,19 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdisp`  
- [in] O `IDispatch` que corresponde ao objeto de `NamedItem` à qual o miniscript está associado.  
+ [in] O `IDispatch` objeto que corresponde ao `NamedItem` à qual o scriptlet está associado.  
   
  `pszItem`  
- [in] O endereço do buffer do identificador de nível superior do nome totalmente qualificado miniscript no host.  
+ [in] O endereço do buffer do identificador de nível superior do nome totalmente qualificado de scriptlet no host.  
   
  `pszSubItem`  
- [in] O endereço do buffer do identificador de segundo nível do nome totalmente qualificado miniscript no host. Definido como NULL se o nome tem apenas um nível.  
+ [in] O endereço do buffer do identificador do nome totalmente qualificado de scriptlet no host do segundo nível. Definido como NULL se o nome tem apenas um nível.  
   
  `pszEvent`  
- [in] O endereço de um buffer que contém o nome do evento. O miniscript é um manipulador de eventos para esse evento.  
+ [in] O endereço de um buffer que contém o nome do evento. O scriptlet é um manipulador de eventos para este evento.  
   
  `ppse`  
- [out] O endereço de uma variável que recebe um ponteiro para o `IScriptEntry` interface do miniscript que tem os atributos especificados.  
+ [out] O endereço de uma variável que recebe um ponteiro para o `IScriptEntry` interface do scriptlet que tem os atributos especificados.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

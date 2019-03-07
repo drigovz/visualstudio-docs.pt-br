@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d63310a8ba5cfda39d48a482eaf7c345cd492adc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb5adfe508b7b5d3de0cf7f508d8c801a36adf1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645836"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097364"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-Recupera o local no código-fonte em que ocorreu um erro enquanto o mecanismo de script estiver em execução em um script.  
+Recupera o local no código-fonte em que ocorreu um erro enquanto o mecanismo de script estava em execução em um script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetSourcePosition(  
     DWORD *pdwSourceContext,  // context cookie  
     ULONG *pulLineNumber,     // line number of error  
@@ -40,10 +40,10 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdwSourceContext`  
- [out] Endereço de uma variável que recebe um cookie que identifica o contexto. A interpretação deste parâmetro depende do aplicativo host.  
+ [out] Endereço de uma variável que recebe um cookie que identifica o contexto. A interpretação desse parâmetro depende do aplicativo host.  
   
  `pulLineNumber`  
- [out] Endereço de uma variável que recebe o número da linha no arquivo de origem onde ocorreu o erro.  
+ [out] Endereço de uma variável que recebe o número de linha no arquivo de origem onde ocorreu o erro.  
   
  `pichCharPosition`  
  [out] Endereço de uma variável que recebe a posição do caractere na linha onde ocorreu o erro.  

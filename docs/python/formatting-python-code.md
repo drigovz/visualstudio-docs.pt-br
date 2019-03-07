@@ -1,23 +1,21 @@
 ---
 title: Formatar o código do Python
 description: O Visual Studio pode reformatar automaticamente o código Python, incluindo espaçamento, instruções, disposição do texto e comentários.
-ms.date: 10/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46aba6fc0af8fa5c89f8d919fac17f7b59f7c2a2
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052187"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987490"
 ---
 # <a name="format-python-code"></a>Formatar o código do Python
 
@@ -45,8 +43,8 @@ O **espaçamento** controla o local em que espaços são inseridos ou removidos 
 Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
 | Opção de definições de classe | Selecionado | Limpo |
-| --- | --- | --- | 
-| **Inserir espaço entre o nome de uma declaração da classe e a lista de bases** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **Inserir espaço entre o nome de uma declaração da classe e a lista de bases** | `class X (object): pass` | `class X(object): pass` |
 | **Inserir espaço dentro dos parênteses da lista de bases** | `class X( object ): pass` | `class X(object): pass` |
 | **Inserir espaço dentro dos parênteses da lista de bases vazia** | `class X( ): pass` | `class X(): pass` |
 
@@ -54,7 +52,7 @@ Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
 | Opção de definições de função | Selecionado | Limpo |
 | --- | --- | --- |
-| **Inserir espaço entre o nome de uma declaração da função e a lista de parâmetros** | `def X (): pass` | `def X(): pass` | 
+| **Inserir espaço entre o nome de uma declaração da função e a lista de parâmetros** | `def X (): pass` | `def X(): pass` |
 | **Inserir espaço dentro dos parênteses da lista de parâmetros** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Inserir espaço dentro dos parênteses da lista de parâmetros vazia** | `def X( ): pass` | `def X(): pass` |
 | **Inserir espaços em torno de “=” em valores de parâmetro padrão** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

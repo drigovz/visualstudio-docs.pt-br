@@ -3,28 +3,27 @@ title: Depurar o ASP.NET
 description: Depurar o ASP.NET usando o depurador do Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636981"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683591"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Início Rápido: depurar o ASP.NET com o depurador do Visual Studio
+# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Início Rápido: Depurar o ASP.NET com o depurador do Visual Studio
 
 O depurador do Visual Studio oferece muitos recursos avançados para ajudar a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto 
+## <a name="create-a-new-project"></a>Criar um novo projeto
 
 1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
@@ -103,7 +102,7 @@ Enquanto estiver em pausa no ponto de interrupção, passe o mouse sobre a instr
 
 O aplicativo continua a execução e é pausado na linha de código na qual você clicou no botão.
 
-Comandos de teclado comuns usados para percorrer o código incluem **F10** e **F11**. Para obter mais instruções detalhadas, confira o [Guia do Iniciante](../debugger/getting-started-with-the-debugger.md).
+Comandos de teclado comuns usados para percorrer o código incluem **F10** e **F11**. Para obter instruções mais detalhadas, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecionar variáveis em uma datatip
 
@@ -111,7 +110,7 @@ Comandos de teclado comuns usados para percorrer o código incluem **F10** e **F
 
     ![Exibir uma datatip](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    A datatip mostra o valor atual da variável `c2` e permite que você inspecione suas propriedades. Ao depurar, se você vir um valor que não espera, provavelmente haverá um bug nas linhas de código anteriores ou de chamada. 
+    A datatip mostra o valor atual da variável `c2` e permite que você inspecione suas propriedades. Ao depurar, se você vir um valor que não espera, provavelmente haverá um bug nas linhas de código anteriores ou de chamada.
 
 2. Expanda a datatip para examinar os valores de propriedade atuais do objeto `c2`.
 

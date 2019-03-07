@@ -1,8 +1,6 @@
 ---
-title: Como gerenciar janelas do editor
+title: 'Como: Gerenciar janelas do editor'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
@@ -12,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b90db0173275b984c63aa22018ba4ae37328ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446953"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949259"
 ---
-# <a name="how-to-manage-editor-windows"></a>Como gerenciar janelas do editor
+# <a name="how-to-manage-editor-windows"></a>Como: Gerenciar janelas do editor
 
 Você pode trabalhar com o código em vários locais ao mesmo tempo. Faça isso dividindo uma janela do editor ou abrindo várias instâncias de janelas do editor.
 

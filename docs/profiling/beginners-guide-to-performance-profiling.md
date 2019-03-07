@@ -3,7 +3,6 @@ title: Medir o uso da CPU em seus aplicativos
 description: Analise problemas de desempenho da CPU em seu aplicativo usando as ferramentas de diagnóstico integradas ao depurador.
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -15,26 +14,22 @@ helpviewer_keywords:
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cf5fb798bde008da1be3bc562ca0974d2ed916e0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065756"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634299"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
-  
+
 Quando o depurador pausa, a ferramenta **Uso de CPU** coleta informações sobre as funções que estão em execução no aplicativo. A ferramenta lista as funções que estavam executando o trabalho e fornece um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem.
 
 O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se **Uso de CPU** não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecem diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede. O Hub de diagnósticos oferece várias outras opções para registrar e analisar esse tipo de dados.
-
-| | |
-|---------|---------|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre como usar as ferramentas de diagnóstico que mostra como analisar o uso da CPU e como analisar o uso de memória. |
 
 Neste artigo, abordaremos a análise do uso de CPU no fluxo de trabalho de depuração normal. Você também pode analisar o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
@@ -45,16 +40,16 @@ Neste tutorial, você irá:
 > [!div class="checklist"]
 > * Coletar dados de uso da CPU
 > * Analisar os dados de uso da CPU
-  
-## <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil 
-  
+
+## <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
+
 1.  Abra o projeto que deseja depurar no Visual Studio e defina um ponto de interrupção no aplicativo no ponto em que deseja examinar o uso da CPU.
 
 2.  Defina um segundo ponto de interrupção no final da função ou da região do código que deseja analisar.
 
     > [!TIP]
     > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
-  
+
 3.  A janela **Ferramentas de Diagnóstico** é exibida automaticamente, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
 
 4.  Você pode optar por ver **Uso de CPU** e/ou [Uso de Memória](../profiling/Memory-Usage.md), com a configuração **Selecionar Ferramentas** na barra de ferramentas. Se você estiver executando o Visual Studio Enterprise, poderá também habilitar ou desabilitar o IntelliTrace em **Ferramentas** > **Opções** > **IntelliTrace**.
@@ -69,7 +64,7 @@ Neste tutorial, você irá:
 
      ![Guia Resumo das Ferramentas de Diagnóstico](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Para obter mais informações sobre os eventos, confira [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (Pesquisando e filtrando a guia Eventos da janela Ferramentas de Diagnóstico).
+     Para obter mais informações sobre os eventos, confira [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (Pesquisando e filtrando a guia Eventos da janela Ferramentas de Diagnóstico).
 
 6.  Execute o cenário que fará com que o primeiro ponto de interrupção seja atingido.
 
@@ -90,9 +85,9 @@ Neste tutorial, você irá:
      O criador de perfil começa a preparar os dados de thread. Aguarde sua conclusão.
 
      ![Ferramentas de Diagnóstico, Preparando Threads](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
-  
+
      A ferramenta de Uso de CPU exibe o relatório na guia **Uso da CPU**.
-  
+
      ![Guia Uso da CPU da Ferramentas de Diagnóstico](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      Neste ponto, você pode começar a analisar os dados.
@@ -110,7 +105,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
 2. Na lista de funções, clique duas vezes em uma das funções do aplicativo que está trabalhando muito.
 
-    Quando você clica duas vezes em uma função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo. 
+    Quando você clica duas vezes em uma função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo.
 
     ![Exibição Chamador/Computador Chamado da Chamada das Ferramentas de Diagnóstico](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
@@ -123,22 +118,22 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
     > Valores altos em **Corpo da Função** podem indicar um gargalo de desempenho dentro da própria função.
 
 3. Se você quiser ver uma exibição de nível superior mostrando a ordem em que as funções são chamadas, selecione **Árvore de Chamadas** na lista suspensa, na parte superior do painel.
- 
+
     Cada área enumerada na figura está relacionada a uma etapa do procedimento.
-  
+
     ![Árvore de Chamadas das Ferramentas de Diagnóstico](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
-  
+
 |||
 |-|-|
-|![Etapa 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|O nó de nível superior nas árvores de chamada de uso da CPU é um pseudo-nó|  
-|![Etapa 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Na maioria dos aplicativos, quando a opção [Mostrar Código Externo](#view-external-code) está desabilitada, o nó de segundo nível é um nó **[Código Externo]** que contém o código do sistema e da estrutura que inicia e para o aplicativo, desenha a interface do usuário, controla o agendamento de thread e fornece ao aplicativo outros serviços de nível inferior.|  
+|![Etapa 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|O nó de nível superior nas árvores de chamada de uso da CPU é um pseudo-nó|
+|![Etapa 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Na maioria dos aplicativos, quando a opção [Mostrar Código Externo](#view-external-code) está desabilitada, o nó de segundo nível é um nó **[Código Externo]** que contém o código do sistema e da estrutura que inicia e para o aplicativo, desenha a interface do usuário, controla o agendamento de thread e fornece ao aplicativo outros serviços de nível inferior.|
 |![Etapa 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Os filhos do nó de segundo nível são métodos e rotinas assíncronas do código de usuário que são chamados ou criados pelo sistema de segundo nível e código do framework.|
 |![Etapa 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Os nós filhos de um método só contêm dados das chamadas do método pai. Quando **Mostrar Código Externo** é desabilitado, os métodos de aplicativo também podem conter um nó **[Código Externo]**.|
 
 Aqui há mais informações sobre os valores de coluna:
 
 - **Total de CPU** indica quanto trabalho foi feito pela função e por todas as funções chamadas por ela. Valores altos de total de CPU apontam para as funções que são mais dispendiosas em geral.
-  
+
 - **Própria CPU** indica quanto trabalho foi feito pelo código no corpo da função, exceto o trabalho realizado pelas funções que foram chamadas por ele. Valores altos de **Própria CPU** podem indicar um gargalo de desempenho dentro da própria função.
 
 - **Módulos** O nome do módulo que contém a função ou o número de módulos que contêm as funções em um nó [Código Externo].
@@ -146,13 +141,13 @@ Aqui há mais informações sobre os valores de coluna:
 ## <a name="view-external-code"></a>Exibir código externo
 
 O código externo são funções nos componentes do sistema e da estrutura executadas pelo código escrito. O código externo inclui funções que iniciam e param o aplicativo, elaboram a interface do usuário, controlam a segmentação e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não está interessado em código externo, portanto, a ferramenta Uso de CPU reúne as funções externas de um método de usuário em um nó **[External Code]**.
-  
-Se você quiser exibir os caminhos de chamada do código externo, escolha **Mostrar Código Externo** na lista **Filtrar exibição** e, em seguida, escolha **Aplicar**.  
-  
-![Escolha Filtrar Exibição, em seguida, Mostrar Código Externo](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
-  
+
+Se você quiser exibir os caminhos de chamada do código externo, escolha **Mostrar Código Externo** na lista **Filtrar exibição** e, em seguida, escolha **Aplicar**.
+
+![Escolha Filtrar Exibição, em seguida, Mostrar Código Externo](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")
+
 Saiba que muitas correntes de chamada de código externo são muito aninhadas, de forma que a largura da coluna Nome da Função pode exceder a largura da tela de todos os monitores de computador, exceto dos maiores. Quando isso acontece, os nomes de função são mostrados como **[...]** .
-  
+
 Use a caixa de pesquisa para localizar um nó que você esteja procurando e use a barra de rolagem horizontal para exibir os dados.
 
 > [!TIP]
@@ -163,4 +158,4 @@ Use a caixa de pesquisa para localizar um nó que você esteja procurando e use 
 Neste tutorial, você aprendeu como coletar e analisar dados de uso da CPU. Se você já concluiu o [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md), obtenha uma visão geral de como analisar o uso de memória em seus aplicativos.
 
 > [!div class="nextstepaction"]
-> [Analisar o uso de memória no Visual Studio](../profiling/memory-usage.md) 
+> [Analisar o uso de memória no Visual Studio](../profiling/memory-usage.md)

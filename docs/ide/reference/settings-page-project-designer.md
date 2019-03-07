@@ -1,8 +1,6 @@
 ---
 title: Página Configurações, Designer de Projeto
 ms.date: 06/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - ApplicationSettingsOverview
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - Project Designer, Settings page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c0f7b47b56522f5c4aeef0054e6b7b52434ff87
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d7422b87d0f812de2d99d59c2932e9aa2b9e6315
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "35602057"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938768"
 ---
 # <a name="settings-page-project-designer"></a>Página de configurações, Designer de Projeto
 
@@ -83,7 +81,7 @@ As configurações no escopo do aplicativo, como as cadeias de conexão, são as
 
 As configurações no escopo do usuário, como fontes do sistema, devem ser usadas para as preferências do usuário. Os usuários podem alterá-las no tempo de execução.
 
-**Value**
+**Valor**
 
 Os dados ou o valor associado à configuração de aplicativo. Por exemplo, se a configuração for uma fonte, seu valor poderá ser **Verdana, 9.75pt, style=Bold**.
 

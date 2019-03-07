@@ -1,9 +1,6 @@
 ---
 title: Lista de serviços disponíveis | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
@@ -11,27 +8,28 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8219c3abfe483a358f0c23d0011c2741f2489ddb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876458"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695785"
 ---
 # <a name="list-of-available-services"></a>Lista de serviços disponíveis
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e os seguintes serviços de suporte do SDK do Visual Studio. Alguns pacotes oferecem seus próprios serviços que não estão listados aqui — por exemplo, serviços de linguagem não têm um único serviço GUID. Você deve usar o nome da linguagem para localizar o GUID do serviço de linguagem no registro.  
-  
- Use os GUIDs de serviço listados aqui ou obtido de outra origem (por exemplo, serviços de linguagem) para obter a interface primária ou interfaces mostrados com cada serviço.  
-  
-## <a name="the-services"></a>Os serviços  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e os seguintes serviços de suporte do SDK do Visual Studio. Alguns pacotes oferecem seus próprios serviços que não estão listados aqui — por exemplo, serviços de linguagem não têm um único serviço GUID. Você deve usar o nome da linguagem para localizar o GUID do serviço de linguagem no registro.
+
+Use os GUIDs de serviço listados aqui ou obtido de outra origem (por exemplo, serviços de linguagem) para obter a interface primária ou interfaces mostrados com cada serviço.
+
+## <a name="the-services"></a>Os serviços
+
 | Serviço | Interface | Visual Studio | Visual Studio 2005 | Descrição |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Sim | Sim | Usado pelo VSPackages para obter um <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interface a partir de um controle ActiveX para facilitar as transferências de dados assíncrona. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Não | Sim | Obtém o objeto de extensibilidade de tempo de Design (DTE) usado para a automação.<br /><br /> ID DO C/C++: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Não | Sim | Obtém o objeto de extensibilidade de tempo de Design (DTE) usado para a automação.<br /><br /> C/C++ ID: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | Sim | Sim | Implementado por um designer de formulários para exibir o manipulador de eventos padrão para um controle. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | Sim | Sim | Permite que um VSPackage acessar a interface de automação de VSPackage outro ou de um controle. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | Sim | Sim | Permite que um VSPackage adicionar ou criar uma biblioteca de tipo estendido. |
@@ -131,7 +129,7 @@ ms.locfileid: "49876458"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Sim | Sim | Use o <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> de serviço em vez disso. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | Sim | Sim | Permite que um VSPackage armazenar e recuperar informações do arquivo. sln da solução atual. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | Não | Sim | Fornece a capacidade de adicionar e atualizar referências em assemblies de código gerenciado. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Não | Sim | Fornece acesso ao serviço de download da página Iniciar para iniciar e interromper o serviço de download em um thread em segundo plano. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Não | Sim | Fornece acesso ao serviço de download do Visual Studio 2017 início da página para iniciar e interromper o serviço de download em um thread em segundo plano. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | Sim | Sim | Fornece acesso à barra de status do IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | Não | Sim | Fornece acesso a métodos para criar arquivos de chave e nomes de chave forte com senhas que são usadas na assinatura de assemblies de código gerenciado. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | Sim | Sim | Permite que um VSPackage fornecer suporte para salvar dados em vários formatos. |
@@ -159,7 +157,7 @@ ms.locfileid: "49876458"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Sim | Sim | Permite que um VSPackage para adicionar uma URL à lista de URLs usados mais recentemente (MRU) e obter uma lista de todas as URLs na lista MRU. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Sim | Sim | Permite que um VSPackage obter o quadro de janela no qual o pacote ou parte do pacote pode estar situado. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Sim | Sim | Fornece acesso aos arquivos de documentação XML formatado associados com um arquivo de metadados específico. |
-  
-## <a name="see-also"></a>Consulte também  
- [Serviços gerenciados e COM](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Usar e fornecer serviços](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>Consulte também
+
+- [Usar e fornecer serviços](../../extensibility/using-and-providing-services.md)

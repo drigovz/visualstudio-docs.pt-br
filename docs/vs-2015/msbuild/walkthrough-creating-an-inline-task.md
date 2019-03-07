@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: criando uma tarefa embutida | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
@@ -16,13 +11,13 @@ ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a399e8285b7b041488a4cecdf2007f8fd1647b2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f1dd2cb3278357f05d5ed08031c8e385d45f1a35
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840709"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54800486"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Instruções passo a passo: criando uma tarefa embutida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -263,6 +258,3 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
  [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)   
  [Destinos](../msbuild/msbuild-targets.md)
-
-
-

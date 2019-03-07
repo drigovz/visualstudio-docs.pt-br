@@ -1,23 +1,21 @@
 ---
 title: Adicionando dados de interação de camadas da linha de comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - tier interaction profiling method
 - profiling tools,tier interaction method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb950947b3f97a4f6d6e9c1461dd2023595058c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775027"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638537"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Adicionar dados de interação de camada por meio da linha de comando
 
@@ -63,7 +61,7 @@ No exemplo a seguir, um aplicativo de área de trabalho do Windows tem o perfil 
 3. Inicie o criador de perfil. Digite o seguinte comando:
 
     ```cmd
-    vsperfcmd /start:trace /output:Desktop_tip.vsp 
+    vsperfcmd /start:trace /output:Desktop_tip.vsp
     ```
 
 4. Inicie o aplicativo com VSPerfCmd. Digite o seguinte comando:
@@ -115,7 +113,7 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 7. Inicie o criador de perfil. Digite o seguinte comando:
 
     ```cmd
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
+    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
     ```
 
 8. Se necessário, inicie o serviço.
@@ -123,7 +121,7 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 9. Anexe o criador de perfil ao serviço. Digite o seguinte comando:
 
     ```cmd
-    vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
+    vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession
     ```
 
 10. Utilize o serviço e colete dados de criação de perfil.

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12168ddb5f65c62e81a8f724cacf8b3fd4a1b3a9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 142248d4cfedb2d63025fc873c5574c163fcafd4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728156"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344584"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
 Recupera a interface para o pai do namespace de um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetNameSpaceParent(  
    IUnknown **ppunk  
 );  
@@ -38,10 +38,10 @@ HRESULT GetNameSpaceParent(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppunk`  
- Endereço de um `IUnknown` ponteiro de interface que recebe a interface do pai do namespace.  
+ Endereço de um `IUnknown` ponteiro de interface que recebe a interface do namespace pai.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Retorna `S_OK` se for bem-sucedido ou caso contrário, um código de erro definido pelo OLE.  
+ Retorna `S_OK` se tiver êxito ou caso contrário, um código de erro definido pelo OLE.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)

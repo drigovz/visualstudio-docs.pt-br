@@ -1,8 +1,6 @@
 ---
 title: Páginas de Propriedade, JavaScript
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -15,15 +13,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220024"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929486"
 ---
 # <a name="property-pages-javascript"></a>Páginas de Propriedade, JavaScript
 As **Páginas de Propriedades** fornecem acesso às configurações do projeto. Você pode usar as páginas que aparecem nas **Páginas de Propriedade** para alterar as propriedades do projeto.
@@ -39,11 +37,11 @@ As opções e páginas a seguir aparecem nas **Páginas de Propriedade**.
 
  **Configuração**
 
- Especifica as definições de configuração a exibir ou modificar. As configurações são **Depurar** (padrão), **Versão**, **Todas as Configurações de** ou uma configuração definida pelo usuário. Para obter mais informações, consulte [How to: Set debug and release configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md) (Como definir configurações de depuração e versão no Visual Studio).
+ Especifica as definições de configuração a exibir ou modificar. As configurações são **Depurar** (padrão), **Versão**, **Todas as Configurações de** ou uma configuração definida pelo usuário. Para obter mais informações, confira [Como: Definir configurações de depuração e versão no Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plataforma**
 
- Especifica as configurações de plataforma a exibir ou modificar. As configurações são **Qualquer CPU** (padrão para aplicativos [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou uma plataforma definida pelo usuário. Para obter mais informações, consulte [How to: Set debug and release configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md) (Como definir configurações de depuração e versão no Visual Studio).
+ Especifica as configurações de plataforma a exibir ou modificar. As configurações são **Qualquer CPU** (padrão para aplicativos [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou uma plataforma definida pelo usuário. Para obter mais informações, confira [Como: Definir configurações de depuração e versão no Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Página geral
  Use as seguintes opções para configurar propriedades gerais do projeto.
@@ -73,7 +71,7 @@ As opções e páginas a seguir aparecem nas **Páginas de Propriedade**.
 
  Especifica o host padrão para o depurador.
 
--   Selecione **Computador Local** para iniciar o aplicativo no computador de host do Visual Studio. Para obter mais informações, consulte [Executando aplicativos no computador local](../../debugger/run-windows-store-apps-on-the-local-machine.md).
+-   Selecione **Computador Local** para iniciar o aplicativo no computador de host do Visual Studio. Para obter mais informações, consulte [Executando aplicativos no computador local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
 -   Selecione **Simulador** para iniciar o aplicativo no Simulador. Para obter mais informações, consulte [Executando aplicativos no simulador](../../debugger/run-windows-store-apps-in-the-simulator.md).
 

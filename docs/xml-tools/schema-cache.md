@@ -1,21 +1,19 @@
 ---
 title: Cache de esquema do Editor de XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bba01c55e6e71a55895b7ebd16bb3063ed5c1f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa9d2ca4e22a4255ea5a1d35024ed200cb080a31
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904876"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936584"
 ---
 # <a name="schema-cache"></a>Cache de esquema
 
@@ -28,23 +26,23 @@ A tabela a seguir descreve os esquemas que são instalados com o editor XML.
 
 | Filename | Descrição |
 |-| - |
-| *Catalog* | Esquema para arquivos de catálogo do editor XML. Para obter informações sobre catálogos do esquema, consulte abaixo. |
-| *Dotnetconfig* | Esquema para arquivos Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
-| *MSBuild.xsd* | Esquema para os arquivos MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>". |
-| *MSDATA.xsd* | Para anotações esquema XSD adicionados pela classe de <xref:System.Data.DataSet> , “urna: esquema-Microsoft-COM: XML-msdata”. |
+| *catalog.xsd* | Esquema para arquivos de catálogo do editor XML. Para obter informações sobre catálogos do esquema, consulte abaixo. |
+| *DotNetConfig.xsd* | Esquema para arquivos Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
+| *msbuild.xsd* | Esquema para os arquivos MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>". |
+| *msdata.xsd* | Para anotações esquema XSD adicionados pela classe de <xref:System.Data.DataSet> , “urna: esquema-Microsoft-COM: XML-msdata”. |
 | *msxsl.xsd* | Esquema para extensões do bloco de script do Microsoft XSLT, urna: esquema-Microsoft-COM: XSLT. |
 | *SnippetFormat.xsd* | Esquema para os arquivos XML de snippet de código. Para obter exemplos, consulte *%InstallDir%\VC#\Expansions*. |
 | *Soap1.1.xsd* | Esquema para Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/. |
 | *Soap1.2.xsd* | Esquema para o protocolo de acesso simples 1,2 do objeto. |
 | *SiteMapSchema.xsd* | Esquema para o arquivo XML do mapa do site ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL.xsd* | Esquema para o Web Service Description Language http://schemas.xmlsoap.org/wsdl/. |
+| *wsdl.xsd* | Esquema para o Web Service Description Language http://schemas.xmlsoap.org/wsdl/. |
 | *xenc.xsd* | Esquema para a criptografia de XML, http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML.xsd* | Esquema para XHTML http://www.w3.org/1999/xhtml. |
+| *xhtml.xsd* | Esquema para XHTML http://www.w3.org/1999/xhtml. |
 | *xlink.xsd* | Esquema para XLink1.0, http://www.w3.org/1999/xlink. |
-| *XML.xsd* | Esquema que descreve os atributos XML: space e XML: lang, http://www.w3.org/XML/1998/namespace. |
+| *xml.xsd* | Esquema que descreve os atributos XML: space e XML: lang, http://www.w3.org/XML/1998/namespace. |
 | *xmlsig.xsd* | Esquema para assinaturas digitais XML, http://www.w3.org/2000/09/xmldsig#. |
-| *xsdschema* | Esquema que descreve o XSD em si, http://www.w3.org/2001/XMLSchema. |
-| *XSLT* | Esquema XML para transformações, http://www.w3.org/1999/XSL/Transform. |
+| *xsdschema.xsd* | Esquema que descreve o XSD em si, http://www.w3.org/2001/XMLSchema. |
+| *xslt.xsd* | Esquema XML para transformações, http://www.w3.org/1999/XSL/Transform. |
 
 ## <a name="update-schemas-in-the-cache"></a>Atualizar esquemas no cache
  O editor carrega o diretório de cache do esquema quando o pacote de editor XML é carregado e observações para todas as alterações ao executar. Se um esquema foi adicionado, é carregado automaticamente em um índice de memória conhecidos de esquemas. Se um esquema foi removido, ele é removido automaticamente de índice de memória. Se um esquema foi atualizado, invalida automaticamente o cache de memória deste esquema.

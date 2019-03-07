@@ -1,27 +1,22 @@
 ---
-title: Como aplicar um sombreador a um modelo 3D | Microsoft Docs
-ms.custom: ''
+title: 'Como: Aplicar um sombreador a um modelo 3D | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 804e7c0a2e7a9a710071cc6050249bf408bc8230
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862836"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793459"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Como aplicar um sombreador a um modelo 3-D
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Como: Aplicar um sombreador a um modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Editor de Modelos para aplicar um sombreador DGSL (Directed Graph Shader Language) a um modelo 3D.  
@@ -37,7 +32,7 @@ Este documento demonstra como usar o Editor de Modelos para aplicar um sombreado
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>Para aplicar um sombreador a um modelo 3D  
   
-1. Comece com uma cena 3D que contém um ou mais modelos. Se você não tiver uma cena 3D adequada, crie uma conforme descrito em [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md). Você também precisa ter um sombreador DGSL que possa aplicar ao modelo. Se não tiver um sombreador adequado, crie um conforme descrito em [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md) e salve-o em um arquivo antes de continuar.  
+1. Comece com uma cena 3D que contém um ou mais modelos. Se você não tiver uma cena 3D adequada, crie um conforme descrito em [como: Criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md). Você também precisa ter um sombreador DGSL que possa aplicar ao modelo. Se você não tiver um sombreador adequado, crie um conforme a descrição em [Como: Criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md) e certifique-se de que você tenha salvo em um arquivo antes de continuar.  
   
 2. No modo **Selecionar**, selecione o modelo ao qual deseja aplicar o sombreador e, na janela **Propriedades**, na propriedade **Nome do Arquivo** do grupo de propriedades **Efeito**, especifique o sombreador DGSL que deseja aplicar ao modelo.  
   
@@ -48,10 +43,7 @@ Este documento demonstra como usar o Editor de Modelos para aplicar um sombreado
    Depois de aplicar um sombreador a um modelo, você pode abri-lo no Designer de Sombreador selecionando o modelo e, em seguida, na janela **Propriedades**, na propriedade **(Avançado)** do grupo de propriedades **Efeito**, escolha o botão de reticências (**...** ).  
   
 ## <a name="see-also"></a>Consulte também  
- [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   
+ [Como: Criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   
  [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)   
  [Editor de Modelo](../designers/model-editor.md)   
  [Designer de Sombreador](../designers/shader-designer.md)
-
-
-

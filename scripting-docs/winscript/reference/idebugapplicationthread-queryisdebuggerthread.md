@@ -18,35 +18,35 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c3ad00fafa602b7a2f55b0412ae16c82cc2f5bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7ec9e5546a2a957e4842c91e9870ee8d761b2a69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725836"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097338"
 ---
 # <a name="idebugapplicationthreadqueryisdebuggerthread"></a>IDebugApplicationThread::QueryIsDebuggerThread
 Determina se este segmento é o depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT QueryIsDebuggerThread();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`S_OK`|O método foi bem-sucedido, e esse é o thread do depurador.|  
+|`S_OK`|O método foi bem-sucedido e esse é o thread do depurador.|  
 |`S_FALSE`|Isso não é o thread do depurador.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método determina se esse thread for o thread do depurador.  
+ Este método determina se este segmento é o depurador.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)

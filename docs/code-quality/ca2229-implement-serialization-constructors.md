@@ -1,8 +1,6 @@
 ---
-title: 'CA2229: implementar construtores de serialização'
+title: 'CA2229: Implementar construtores de serialização'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2229
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c4dea2b6b3a7f64efa06a1600c63ad7a7d9d5c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2353c342b38a9dca42500c8997dcebb03137c91c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551971"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928537"
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229: implementar construtores de serialização
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implementar construtores de serialização
 
 |||
 |-|-|
@@ -56,7 +54,7 @@ ms.locfileid: "45551971"
  [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2237: marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Consulte também
 

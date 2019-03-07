@@ -1,8 +1,6 @@
 ---
-title: 'Como: depurar o código otimizado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar o código otimizado | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387850"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035920"
 ---
-# <a name="how-to-debug-optimized-code"></a>Como depurar o código otimizado
+# <a name="how-to-debug-optimized-code"></a>Como: Depurar o código otimizado
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).

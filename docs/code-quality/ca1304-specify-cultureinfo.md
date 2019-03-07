@@ -1,8 +1,6 @@
 ---
-title: 'CA1304: especificar CultureInfo'
+title: 'CA1304: Especificar CultureInfo'
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe02dd66b523e6ee82c5e1a2051f3a68839957d4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 59aada89df05d27644eb13aeef58b5573bb24478
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546177"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931345"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: especificar CultureInfo
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: Especificar CultureInfo
 
 |||
 |-|-|
@@ -84,7 +82,7 @@ Este exemplo gera a seguinte saída:
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1305: especificar IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305: Especificar IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Consulte também
 

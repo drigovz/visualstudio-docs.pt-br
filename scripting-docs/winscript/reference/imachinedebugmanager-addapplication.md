@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77c31084ccc24a6bace18f009eb8372a4f68a428
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e056a62ac498c0b4061ed0982189de9747832ccc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728786"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087068"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
 Adiciona um aplicativo para a execução lista de aplicativos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD*                    pdwAppCookie  
@@ -42,7 +42,7 @@ HRESULT AddApplication(
  [in] Aplicativo para a execução lista de aplicativos.  
   
  `pdwAppCookie`  
- [out] Um cookie é usado para remover o aplicativo do Gerenciador de depuração de máquina.  
+ [out] Um cookie que é usado para remover o aplicativo do Gerenciador de depuração de máquina.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -52,7 +52,7 @@ HRESULT AddApplication(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método é chamado pelo Gerenciador de depuração do processo sempre que `IProcessDebugManager::AddApplication` é chamado.  
+ Esse método é chamado pelo Gerenciador de depuração do processo sempre que `IProcessDebugManager::AddApplication` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   

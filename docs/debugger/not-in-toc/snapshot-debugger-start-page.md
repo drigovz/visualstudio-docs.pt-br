@@ -2,19 +2,18 @@
 title: Página inicial para o depurador de instantâneo
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
-ms.translationtype: MT
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310105"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428642"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Guia de Introdução com o depurador de instantâneo
 
@@ -28,7 +27,7 @@ O depurador de instantâneo coleta instantâneos do seu aplicativo. Instantâneo
 
 ### <a name="set-a-snappoint"></a>Defina um Snappoint
 
-1. No editor de códigos, clique na medianiz esquerda ao lado de uma linha de código que você está interessado para definir um snappoint. Verifique se que ele é o código que você sabe que será executado. 
+1. No editor de códigos, clique na medianiz esquerda ao lado de uma linha de código que você está interessado para definir um snappoint. Verifique se que ele é o código que você sabe que será executado.
 
     ![Definindo um snappoint no Editor](../media/snapshot-startpage-set-snappoint.png)
 
@@ -38,7 +37,7 @@ O depurador de instantâneo coleta instantâneos do seu aplicativo. Instantâneo
 
 ### <a name="open-a-snapshot"></a>Abrir um instantâneo
 
-1. Quando o snappoint for atingido, um instantâneo é exibida na janela de ferramentas de diagnóstico à direita. Se não abrir a janela, você pode abri-lo escolhendo **Debug** > **Windows** > **Mostrar ferramentas de diagnóstico**. 
+1. Quando o snappoint for atingido, um instantâneo é exibida na janela de ferramentas de diagnóstico à direita. Se não abrir a janela, você pode abri-lo escolhendo **Debug** > **Windows** > **Mostrar ferramentas de diagnóstico**.
 
     ![Instantâneo na janela de ferramentas de diagnóstico](../media/snapshot-startpage-diagsession-window.png)
 
@@ -60,16 +59,16 @@ O site em si ainda está ao vivo e os usuários finais não são afetados. Por p
 
 3. No **mensagem** , insira uma mensagem de log que você deseja registrar. Você também pode avaliar variáveis na sua mensagem de log, colocando-os entre chaves.
 
-    Se você escolher **enviar para a janela de saída**, a mensagem será exibida na janela de ferramentas de diagnóstico quando o logpoint for atingido. 
+    Se você escolher **enviar para a janela de saída**, a mensagem será exibida na janela de ferramentas de diagnóstico quando o logpoint for atingido.
 
     Se você escolher **enviar para log de aplicativo**, a mensagem será exibida em qualquer lugar que você pode ver mensagens de `System.Diagnostics.Trace` (ou `ILogger` no .NET Core), como o App Insights, quando o logpoint for atingido.
 
-## <a name="learn-more"></a>Saiba Mais
+## <a name="learn-more"></a>Saiba mais
 
 Você pode encontrar mais informações sobre o depurador de instantâneo na [página de documentos](../debug-live-azure-applications.md). Saiba mais sobre como configurar condições para torná-lo mais fácil de encontrar bugs.
 
-## <a name="dont-show-me-this-again"></a>Não ' Mostrar isso novamente
+## <a name="dont-show-me-this-again"></a>Não mostrar novamente
 
-Para nunca mostrar a página de início de depurador de instantâneo novamente quando você conecta o depurador de instantâneo, alterar o **Mostrar 'Getting Started' página no início da sessão** opção **ferramentas**  >   **As opções** > **depurador de instantâneo**. 
+Para nunca mostrar a página de início do depurador de instantâneo novamente quando você conectar o depurador de instantâneo, alterar o **Mostrar 'Getting Started' página no início da sessão** opção **ferramentas**  >   **As opções** > **depurador de instantâneo**.
 
 ![Página de opção de ferramenta de depurador de instantâneo](../media/snapshot-startpage-tools-options.png)

@@ -1,22 +1,18 @@
 ---
 title: Espaço de trabalho de compilação no Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
-ms.assetid: 813f7a5e-f298-4469-9f4c-a5bddf5a6e14
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7415c99c68436519f9bab721fe88a48f750fa1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857616"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951222"
 ---
 # <a name="workspace-build"></a>Compilação de espaço de trabalho
 
@@ -42,7 +38,7 @@ Abaixo está uma descrição do que a sua extensão será precisa.
 - Scanner de arquivo em `ScanContentAsync<T>`
   - Retorna dados quando `FileScannerTypeConstants.FileDataValuesType` é o argumento de tipo
   - Retorna um valor de dados de arquivo para cada configuração construído com:
-    - `type` como `BuildConfigurationContext.ContextTypeGuid`
+    - `type` as `BuildConfigurationContext.ContextTypeGuid`
     - `context` como sua configuração de compilação (por exemplo `"Debug|x86"`, `"ret"`, ou `null` se não for aplicável). Esse valor **deve** correspondem à configuração do contexto de arquivo.
 
 ## <a name="build-file-context-action"></a>Ação de contexto do arquivo de build

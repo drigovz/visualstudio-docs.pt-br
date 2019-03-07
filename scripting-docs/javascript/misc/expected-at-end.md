@@ -1,14 +1,9 @@
 ---
-title: Esperado &#39; @end &#39; | Microsoft Docs
-ms.custom: ''
+title: Esperado '@end' | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1029
 dev_langs:
@@ -16,18 +11,17 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: c2608995-944e-4d35-8b7e-1cfe264d2458
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a510fd034d1053e010a13d28c480f1b0ceb9017
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6179d628c8da58cffa76020f04e3fd1df3396b5d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857972"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840491"
 ---
-# <a name="expected-39end39"></a>Esperado&#39;@end&#39;
+# <a name="expected-end"></a>Esperado '\@final '
 Você tentou criar um bloco compilado condicionalmente de código, mas não incluiu o <strong>@end</strong> instrução no final. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] instruções podem ser compiladas condicionalmente, colocando-os dentro de um <strong>@if/ @end</strong> bloco.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  

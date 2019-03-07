@@ -1,8 +1,6 @@
 ---
 title: Typedefs do Visual C++ no Designer de Classe
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: ded9e1b6bea0a6f03dd9599b592bba5fba6f91fe
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958328"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954141"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedefs do Visual C++ no Designer de Classe
 
@@ -45,7 +43,7 @@ No **Designer de Classe**, um typedef do C++ tem a forma do tipo especificado no
 
 Classes e estruturas podem ter typedefs aninhados declarados dentro delas. No **Designer de Classe**, formas de classe e de estrutura podem mostrar declarações de typedef aninhado como formas aninhadas.
 
-As formas typedef dão suporte aos comandos **Mostrar como Associação** e **Mostrar como Associação de Coleções** no menu de contexto.
+As formas typedef oferecem suporte aos comandos **Mostrar como Associação** e **Mostrar como Associação de Coleções** no menu do clique com o botão direito (menu de contexto).
 
 ### <a name="class-typedef-example"></a>Exemplo do typedef de classe
 

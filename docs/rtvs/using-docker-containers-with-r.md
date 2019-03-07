@@ -2,21 +2,19 @@
 title: R e contêineres do Docker
 description: Como configurar contêineres do Docker para R e conectá-los ao Visual Studio.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8c5b4278ab50aac96703f03e74c014d29831f22e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667126"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954784"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Use contêineres do Docker com as Ferramentas do R para Visual Studio
 
@@ -26,7 +24,7 @@ As RTVS (Ferramentas do R para Visual Studio) versão 1.3+, juntamente com uma i
 
 1. Selecione o botão **Contêineres** no canto superior direito da janela **Espaços de trabalho** (**Ferramentas do R** > **Windows** > **Espaços de trabalho**). A janela informará se você não tiver instalado o Docker para Windows e fornecerá um link para o download. A instalação do Docker pode exigir uma reinicialização do computador.
 
-    ![Janela Espaços de trabalho nas Ferramentas do R para Visual Studio (VS2017) com o comando Contêineres](media/container-workspaces-window.png)
+    ![Janela Workspaces nas Ferramentas do R para Visual Studio (VS2017) com o comando Contêineres](media/container-workspaces-window.png)
 
 1. Na janela **Contêineres**, selecione **Criar**:
 
@@ -42,13 +40,13 @@ As RTVS (Ferramentas do R para Visual Studio) versão 1.3+, juntamente com uma i
 
 ## <a name="connect-to-a-container"></a>Conectar-se a um contêiner
 
-1. A seção **Contêineres Locais em Execução** da janela **Espaços de trabalho** exibe os contêineres que estão executando o daemon das RTVS na porta 5444. (Consulte [Remote R Server for Linux](setting-up-remote-r-service-on-linux.md) (R Server Remoto para Linux) para obter detalhes sobre como o daemon está configurado.)
+1. A seção **Contêineres Locais em Execução** da janela **Workspaces** exibe os contêineres que estão executando o daemon das RTVS na porta 5444. (Consulte [Remote R Server for Linux](setting-up-remote-r-service-on-linux.md) (R Server Remoto para Linux) para obter detalhes sobre como o daemon está configurado.)
 
-    ![Janela Espaços de trabalho mostrando contêineres disponíveis](media/workspaces-window-running-containers.png)
+    ![Janela Workspaces mostrando contêineres disponíveis](media/workspaces-window-running-containers.png)
 
 1. Para conectar-se a um contêiner, clique duas vezes no nome do contêiner ou selecione o botão de seta para frente à sua direita. Quando conectado, você verá uma janela **R Interativo** (consulte [Trabalhar com a janela R Interativo](interactive-repl-for-r-in-visual-studio.md)):
 
-    ![Janelas Espaços de trabalho e janela REPL aberta para um contêiner](media/workspaces-window-container-connected.png)
+    ![Janelas Workspaces e janela REPL aberta para um contêiner](media/workspaces-window-container-connected.png)
 
 ## <a name="use-custom-built-images"></a>Usar imagens personalizadas
 
@@ -70,4 +68,4 @@ docker build -t my-rtvs-image:latest .
 docker run -p 6056:5444 --name my-rtvs-container my-rtvs-image:latest rtvsd
 ```
 
-O argumento `-p 6056:5444` mapeia a porta 6056 para a porta 5444 interna, que as RTVS usam para detectar o rtvs-daemon. Qualquer contêiner que expõe a porta de contêiner 5444 está listado na janela **Espaços de trabalho**. É possível usar a janela **Espaços de trabalho** para se conectar a um contêiner usando `<<unix>>\ruser1` como o nome de usuário e "foobar" como a senha, a menos que você tenha especificado credenciais diferentes no arquivo do docker.
+O argumento `-p 6056:5444` mapeia a porta 6056 para a porta 5444 interna, que as RTVS usam para detectar o rtvs-daemon. Qualquer contêiner que expõe a porta de contêiner 5444 está listado na janela **Workspaces**. É possível usar a janela **Workspaces** para se conectar a um contêiner usando `<<unix>>\ruser1` como o nome de usuário e "foobar" como a senha, a menos que você tenha especificado credenciais diferentes no arquivo do docker.

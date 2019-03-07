@@ -1,14 +1,9 @@
 ---
 title: Comando Adicionar Novo Item | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - project.addnewitem
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 866a77e148fe59d6a5d66b900982716630dd2faa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 952419c5dda9a64b0f3fde93fd314ed9b54fd1a7
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240221"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54835039"
 ---
 # <a name="add-new-item-command"></a>Comando Adicionar Novo Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,6 +72,3 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

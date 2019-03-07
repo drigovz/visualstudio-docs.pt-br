@@ -1,8 +1,6 @@
 ---
-title: 'CA2117: os tipos APTCA só devem estender tipos base APTCA'
+title: 'CA2117: Tipos APTCA devem estender somente tipos base APTCA'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2117
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: c505b586-2f1e-47cb-98ee-a5afcbeda70f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dac5acc0b7c7fff02862853bfd996362f80d1cc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 43b294d72c8f8ec317803f2aa400e9cc50693162
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547494"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935414"
 ---
-# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: os tipos APTCA só devem estender tipos base APTCA
+# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Tipos APTCA devem estender somente tipos base APTCA
 
 |||
 |-|-|
@@ -88,7 +86,7 @@ Meet at the sunny meadow 2/22/2003 12:00:00 AM!
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA2116: os métodos APTCA só devem chamar métodos APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
+[CA2116: Os métodos APTCA só devem chamar métodos APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Consulte também
 

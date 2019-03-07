@@ -1,8 +1,6 @@
 ---
-title: Como criar tipos usando Designer de Classe
+title: 'Como: Criar tipos usando o Designer de Classe'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
@@ -16,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842255"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919632"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Como criar tipos usando o Designer de Classe
+# <a name="how-to-create-types-by-using-class-designer"></a>Como: Criar tipos usando o Designer de Classe
 
-Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-los em um diagrama de classe. Para ver os tipos existentes, consulte [Como exibir tipos existentes](how-to-view-existing-types.md).
+Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-los em um diagrama de classe. Para ver os tipos existentes, confira [Como: Exibir tipos existentes](how-to-view-existing-types.md).
 
 ##  <a name="CreateType"></a> Criar um novo tipo
 
@@ -91,8 +89,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar herança entre tipos](how-to-create-inheritance-between-types.md)
-- [Como criar associações entre tipos](how-to-create-associations-between-types.md)
+- [Como: Criar herança entre tipos](how-to-create-inheritance-between-types.md)
+- [Como: Criar associações entre tipos](how-to-create-associations-between-types.md)
 - [Criando e configurando membros de tipo](creating-and-configuring-type-members.md)
-- [Trabalhando com diagramas de classe](working-with-class-diagrams.md)
 - [Projetando classes e tipos](designing-and-viewing-classes-and-types.md)

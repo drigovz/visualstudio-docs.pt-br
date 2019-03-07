@@ -2,20 +2,18 @@
 title: Projetos R
 description: Como criar um gerenciador de projetos de R no Visual Studio, incluindo propriedades, comandos de projeto e modelos.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248277"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936181"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Criar projetos do R no Visual Studio
 
@@ -66,14 +64,14 @@ Se você tem uma pasta existente de arquivos *.R* que deseja gerenciar em um pro
 Para abrir as páginas de propriedades do projeto, clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades** ou selecione o item de menu **Projeto > Propriedades do (nome do projeto)**. A janela aberta exibe propriedades do projeto:
 
 
-| Tabulação | Propriedade | Descrição | 
-| --- | --- | --- | 
-| Executar | Arquivo de inicialização | O nome do arquivo que é executado com o comando **Arquivo de inicialização de origem**, **F5**, **Depurar** > **Iniciar depuração** ou **Depurar** > **Iniciar sem depuração**. Clicar com o botão direito do mouse no arquivo no projeto e selecionar **Definir como script de inicialização do R** também o define como o arquivo de inicialização. | 
-| | Redefinir R Interativo em execução | Limpa todas as variáveis de workspace da janela interativa ao executar o projeto. Isso garante que não haja nenhum conteúdo no workspace que restou das execuções anteriores. | 
-| | Caminho do projeto remoto | Caminho para um workspace remoto. | 
-| | Transferir arquivos em execução | Indica se os arquivos do projeto, sujeitos ao filtro em **Arquivos para transferir**, devem ser copiados para um workspace remoto com cada execução. | 
-| | Arquivos para transferir | Nomes de arquivo e curingas que indicam os arquivos específicos para copiar em um workspace remoto se **Transferir arquivos em execução** estiver selecionado. | 
-| Configurações | (Arquivo Settings.R) | As configurações do projeto do R vêm dos arquivos *Settings.R* ou **.Settings.R* que estão localizados dentro do projeto. Se não houver nenhum arquivo de configurações, você poderá adicionar variáveis e salvar a página e, em seguida, um arquivo padrão *Settings.R* será criado para você. Também é possível adicionar o arquivo de configurações ao projeto por meio do comando de menu **Arquivo** > **Adicionar Novo Item**. <br/> As configurações são armazenadas como código R e o arquivo pode ser obtido antes da execução de outros módulos, portanto, pré-populando o ambiente com configurações predefinidas. | 
+| Tabulação | Propriedade | Descrição |
+| --- | --- | --- |
+| Executar | Arquivo de inicialização | O nome do arquivo que é executado com o comando **Arquivo de inicialização de origem**, **F5**, **Depurar** > **Iniciar depuração** ou **Depurar** > **Iniciar sem depuração**. Clicar com o botão direito do mouse no arquivo no projeto e selecionar **Definir como script de inicialização do R** também o define como o arquivo de inicialização. |
+| | Redefinir R Interativo em execução | Limpa todas as variáveis de workspace da janela interativa ao executar o projeto. Isso garante que não haja nenhum conteúdo no workspace que restou das execuções anteriores. |
+| | Caminho do projeto remoto | Caminho para um workspace remoto. |
+| | Transferir arquivos em execução | Indica se os arquivos do projeto, sujeitos ao filtro em **Arquivos para transferir**, devem ser copiados para um workspace remoto com cada execução. |
+| | Arquivos para transferir | Nomes de arquivo e curingas que indicam os arquivos específicos para copiar em um workspace remoto se **Transferir arquivos em execução** estiver selecionado. |
+| Configurações | (Arquivo Settings.R) | As configurações do projeto do R vêm dos arquivos *Settings.R* ou **.Settings.R* que estão localizados dentro do projeto. Se não houver nenhum arquivo de configurações, você poderá adicionar variáveis e salvar a página e, em seguida, um arquivo padrão *Settings.R* será criado para você. Também é possível adicionar o arquivo de configurações ao projeto por meio do comando de menu **Arquivo** > **Adicionar Novo Item**. <br/> As configurações são armazenadas como código R e o arquivo pode ser obtido antes da execução de outros módulos, portanto, pré-populando o ambiente com configurações predefinidas. |
 
 ## <a name="r-specific-project-commands"></a>Comandos de projeto específico do R
 
@@ -85,7 +83,7 @@ Os projetos do Visual Studio dão suporte a vários comandos gerais por meio do 
 | Abrir pasta que contém | Abre o Windows Explorer no local do arquivo selecionado. |
 | Adicionar script R | Cria e abre um arquivo *.R* com um nome padrão. Você também pode usar o comando **Adicionar** > **Novo Item** para criar arquivos *.R*, além de vários outros tipos de arquivo. Consulte [Modelos de item específicos do R](#r-specific-item-templates). |
 | Adicionar R Markdown | Cria e abre um documento *.rmd* com um nome padrão. Você também pode usar o comando **Adicionar** > **Novo Item** para criar arquivos *.rmd*, além de vários outros tipos de arquivo. Consulte [Modelos de item específicos do R](#r-specific-item-templates).  |
-| Publicar procedimentos armazenados | Inicia um processo para publicar todos os procedimentos armazenados contidos em scripts R. Veja [Trabalhar com procedimentos armazenados do SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). | 
+| Publicar procedimentos armazenados | Inicia um processo para publicar todos os procedimentos armazenados contidos em scripts R. Veja [Trabalhar com procedimentos armazenados do SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>Modelos de item específicos do R
 
@@ -98,7 +96,7 @@ As RTVS incluem vários modelos para tipos de arquivo específicos. Você pode a
 | --- | --- |
 | Script R | Um arquivo de texto que contém os mesmos comandos que podem ser inseridos na linha de comando R. |
 | R Markdown | Um arquivo contendo um documento [R Markdown](rmarkdown-with-r-in-visual-studio.md). |
-| Configurações do R | Um arquivo que contém as configurações do aplicativo R. | 
+| Configurações do R | Um arquivo que contém as configurações do aplicativo R. |
 | Documentação do R | Um arquivo de documentação do R genérico que contém apenas os campos nome, alias e título. |
 | Documentação do R (função) | Um arquivo de documentação do R que contém vários campos com comentários para descrever uma função. |
 | Documentação do R (conjunto de dados) | Um arquivo de documentação do R que contém vários campos com comentários para descrever um conjunto de dados. |

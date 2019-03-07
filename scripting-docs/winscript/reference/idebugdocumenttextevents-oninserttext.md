@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a00adb996711dc6364edd44babf0c3cde1595947
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce5cd786cead548e7a088f362930b2d27d2e8d69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728066"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089370"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
-Indica que o texto novo foi adicionado ao documento.  
+Indica que o novo texto foi adicionado ao documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onInsertText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToInsert  
@@ -42,7 +42,7 @@ HRESULT onInsertText(
  [in] A posição do caractere em que o novo texto foi inserido.  
   
  `cNumToInsert`  
- [in] O número de caracteres que foram inseridas.  
+ [in] O número de caracteres que foram inseridos.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -52,7 +52,7 @@ HRESULT onInsertText(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método é geralmente chamado por um host que carrega progressivamente conteúdo, como um navegador da Web.  
+ Esse método normalmente é chamado por um host que carrega progressivamente conteúdo, como um navegador da Web.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)   

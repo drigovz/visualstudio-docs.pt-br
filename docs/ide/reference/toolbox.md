@@ -1,8 +1,6 @@
 ---
 title: Janela caixa de ferramentas
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef01cb4bb9b9ee3326d3d955aec9c41f9b15b144
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067849"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925391"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 
@@ -41,7 +39,7 @@ A versão do .NET Framework direcionada pelo seu projeto também afeta o conjunt
 
 Por padrão, a **Caixa de Ferramentas** fica recolhida no lado esquerdo do IDE do Visual Studio e aparece quando o cursor é movido sobre ela. É possível fixar a **Caixa de Ferramentas** (clicando no ícone **Fixar** da barra de ferramentas) para que ela permaneça aberta enquanto você move o cursor. Você também pode desencaixar a janela **Caixa de Ferramentas** e arrastá-la para qualquer lugar na tela. Você pode encaixar, desencaixar e ocultar a **Caixa de Ferramentas**, clicando com o botão direito do mouse na barra de ferramentas e selecionando uma das opções.
 
-Você pode reorganizar os itens em uma guia da **Caixa de Ferramentas** ou adicionar guias e itens personalizados usando os seguintes comandos no menu de contexto:
+Você pode reorganizar os itens em uma guia da **Caixa de Ferramentas** ou adicionar guias e itens personalizados usando os seguintes comandos no menu do clique com o botão direito:
 
 - **Renomear Item** – renomeia o item selecionado.
 

@@ -2,22 +2,20 @@
 title: Designer de fluxo de trabalho - caixa de diálogo correlação inicializar
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edfdef1c1f946e2c5f677d0ff1578a40ea7bcd8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8fab86b39cd927d516bc627630a29feee1698daa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906228"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919879"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicializar a caixa de diálogo correlação
 

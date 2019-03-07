@@ -2,21 +2,19 @@
 title: Configurando o Serviço R Remoto no Linux
 description: Como configurar o Serviço de R Remoto no Ubuntu e no subsistema do Windows para Linux.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220801"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945814"
 ---
 # <a name="remote-r-service-for-linux"></a>Serviço R Remoto para Linux
 
@@ -170,4 +168,3 @@ Em cada caso, o computador remoto deve ter uma dos seguintes interpretadores do 
     ```
 1. Use o comando `az container list` para verificar o status. Pesquise `provisioningState`: `Succeeded`.
 1. Se o provisionamento tiver sido bem-sucedido, agora será possível se conectar ao contêiner. Pesquise o endereço IP público, no campo `ipAddress`, que pode ser usado com as credenciais no arquivo do docker para conectar-se ao contêiner das RTVS.
-

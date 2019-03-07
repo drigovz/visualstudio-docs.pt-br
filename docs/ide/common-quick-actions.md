@@ -1,23 +1,21 @@
 ---
 title: Ações Rápidas comuns
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6eaa3b776e7a4c4e90795265f94af2d0df994b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6f8872fa9acb2ca79010a87168c629dcbc3ac6e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894008"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932931"
 ---
 # <a name="common-quick-actions"></a>Ações Rápidas comuns
 

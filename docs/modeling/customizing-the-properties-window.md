@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813890"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942590"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 Você pode personalizar a aparência e comportamento da janela Propriedades em sua linguagem específica de domínio (DSL) no Visual Studio. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio é listada na janela Propriedades. Isso permite que você consulte e edite os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para os campos de forma no diagrama.
@@ -24,7 +22,7 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
 ## <a name="names-descriptions-and-categories"></a>Nomes, descrições e categorias
  **Nome e o nome de exibição**. Em sua definição de uma propriedade de domínio, o nome de exibição da propriedade é o nome que aparece em tempo de execução na janela Propriedades. Por outro lado, o nome é usado quando você escreve o código do programa para atualizar a propriedade. O nome deve ser um nome alfanumérico correto do CLR, mas o nome de exibição pode conter espaços.
 
- Quando você define o nome de uma propriedade na definição de DSL, seu nome de exibição é definido automaticamente para uma cópia do nome. Se você escrever um nome com maiusculas e minúsculas de Pascal, como "FuelGauge", o nome de exibição conterá automaticamente um espaço: "Medidor de combustível". No entanto, você pode definir o nome de exibição explicitamente a outro valor.
+ Quando você define o nome de uma propriedade na definição de DSL, seu nome de exibição é definido automaticamente para uma cópia do nome. Se você escrever um nome com maiusculas e minúsculas de Pascal, como "FuelGauge", o nome de exibição automaticamente conterá um espaço: "Medidor de combustível. No entanto, você pode definir o nome de exibição explicitamente a outro valor.
 
  **Descrição**. A descrição de uma propriedade de domínio aparece em dois lugares:
 
@@ -41,7 +39,7 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
 
  Nas formas que você pode expor os **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** e **FillGradientMode** propriedades. Sobre conectores, você pode expor os **cor**`,`**TextColor**, **DashStyle**, e **espessura** propriedades. Em diagramas que você pode expor os **FillColor** e **TextColor** propriedades.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Encaminhamento: Exibe as propriedades de elementos relacionados
+## <a name="forwarding-displaying-properties-of-related-elements"></a>Forwarding: Exibindo propriedades de elementos relacionados
  Quando o usuário de sua DSL seleciona um elemento em um modelo, as propriedades desse elemento são exibidas na janela Propriedades. No entanto, você também pode exibir as propriedades de elementos relacionados especificados. Isso é útil se você tiver definido um grupo de elementos que funciona em conjunto. Por exemplo, você pode definir um elemento principal e um elemento de plug-in opcional. Se o principal elemento é mapeado para uma forma e o outro não, é útil ver todas as suas propriedades, como se estivessem em um elemento.
 
  Esse efeito é denominado *encaminhamento de propriedade*, e isso acontece automaticamente em vários casos. Em outros casos, você pode obter a propriedade de encaminhamento, definindo um descritor de tipo de domínio.

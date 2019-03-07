@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c47619fface892e7e0d80141d7d4be53398a356e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2dd18408235a5621354531a2fd228ff44a19d6a1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729416"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088706"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
-Retorna um enumerador de contextos de expressão conhecido por este componente.  
+Retorna um enumerador dos contextos de expressão conhecidos por este componente.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT EnumExpressionContexts(  
    IEnumDebugExpressionContexts**  ppedec  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumExpressionContexts(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppedec`  
- [out] Um enumerador de contextos de expressão conhecido por este componente.  
+ [out] Um enumerador dos contextos de expressão conhecidos por este componente.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,10 +48,10 @@ HRESULT EnumExpressionContexts(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O Gerenciador de depuração do processo usa esse método para localizar todos os contextos de expressão global associados a um determinado thread.  
+ O Gerenciador de depuração do processo usa esse método para localizar todos os contextos de expressão global associados com um determinado thread.  
   
 > [!NOTE]
->  Esse método é chamado de segmento de interesse. Cabe implementador para identificar a thread atual e retorna um enumerador apropriado.  
+>  Esse método é chamado de dentro do thread de interesse. Cabe ao implementador para identificar o thread atual e retorna um enumerador apropriado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IProvideExpressionContexts Interface](../../winscript/reference/iprovideexpressioncontexts-interface.md)

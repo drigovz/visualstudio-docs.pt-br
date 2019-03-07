@@ -1,20 +1,18 @@
 ---
 title: Adicionar parâmetro a uma ação rápida de método
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0337f9869764f544f5248d4da717af849457b8e8
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443705"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934348"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Adicionar um parâmetro a um método usando uma Ação Rápida
 
@@ -24,11 +22,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O que:** permite adicionar automaticamente um parâmetro a um método com base no uso.
+**O quê:** Permite adicionar automaticamente um parâmetro a um método com base no uso.
 
-**Quando:** você precisa adicionar um parâmetro a um método e deseja declará-lo automaticamente.
+**Quando:** Você precisa adicionar um parâmetro a um método e deseja declará-lo automaticamente.
 
-**Motivo:** você poderia adicionar o parâmetro para a declaração do método antes de chamá-lo, no entanto, esse recurso adiciona o parâmetro automaticamente com base na chamada de método.
+**Por que:** Você poderia adicionar o parâmetro para a declaração do método antes de chamá-lo, no entanto, esse recurso adiciona o parâmetro automaticamente com base na chamada de método.
 
 ## <a name="how-to-use-it"></a>Como usá-lo
 

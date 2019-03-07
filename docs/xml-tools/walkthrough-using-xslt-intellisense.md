@@ -1,23 +1,21 @@
 ---
-title: 'Passo a passo: usando XSLT IntelliSense'
+title: 'Passo a passo: Usando XSLT IntelliSense'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 630e88c01960a6477d586952b0680d53fee62401
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693517"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915849"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Passo a passo: usando XSLT IntelliSense
+# <a name="walkthrough-using-xslt-intellisense"></a>Passo a passo: Usando XSLT IntelliSense
 
 Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para completar automaticamente o valor de alguns atributos.
 
@@ -47,7 +45,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
     </xsl:stylesheet>
     ```
 
-2.  Insira o cursor depois `<xsl:template name="msg23" match="msg23">` e pressione **Enter**. Inicie digitando o elemento `xsl:call-template` a seguir:
+2.  Insira o cursor após `<xsl:template name="msg23" match="msg23">` e pressione **Enter**. Inicie digitando o elemento `xsl:call-template` a seguir:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -56,7 +54,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
 
      A lista de nomes de modelo aparece no atributo `name=""` do elemento `xsl:call-template` à medida que você digita.
 
-3.  Insira o cursor depois `<xsl:call-template name="localized-message">` e pressione **Enter**. Inicie digitando o elemento `xsl:with-param` a seguir:
+3.  Insira o cursor após `<xsl:call-template name="localized-message">` e pressione **Enter**. Inicie digitando o elemento `xsl:with-param` a seguir:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -113,7 +111,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
     </xsl:stylesheet>
     ```
 
-2.  Insira o cursor depois `<xsl:apply-templates select="phone" />` e pressione **Enter**. Inicie digitando o elemento `xsl: apply-templates` a seguir:
+2.  Insira o cursor após `<xsl:apply-templates select="phone" />` e pressione **Enter**. Inicie digitando o elemento `xsl: apply-templates` a seguir:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -154,7 +152,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
     </xsl:stylesheet>
     ```
 
-2.  Insira o cursor depois `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e pressione **Enter**. Inicie digitando o elemento `xsl:namespace-alias` a seguir:
+2.  Insira o cursor após `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e pressione **Enter**. Inicie digitando o elemento `xsl:namespace-alias` a seguir:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

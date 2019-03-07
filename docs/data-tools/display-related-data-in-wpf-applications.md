@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: da6f276e714c816ea9b3c1b735ad50f31ffdc3c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304591"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931501"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Exibir dados relacionados em aplicativos WPF
 
@@ -35,7 +33,7 @@ Você pode criar controles associados a dados que exibem dados relacionados, arr
 
 1. Sobre o **dados** menu, clique em **Mostrar fontes de dados** para abrir o **fontes de dados** janela.
 
-2. Clique em Adicionar Nova Fonte de Dados **e complete o Assistente de Configuração de Fonte de Dados**.
+2. Clique em **Adicionar Nova Fonte de Dados** e complete o **Assistente de Configuração de Fonte de Dados**.
 
 3. Abra o designer WPF e certifique-se de que o designer contém um contêiner que é um destino de soltar válido para os itens na **fontes de dados** janela.
 

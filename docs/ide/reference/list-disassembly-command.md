@@ -1,8 +1,6 @@
 ---
 title: Comando Listar Desmontagem
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listdisassembly
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64951810020d99239a47b9c6bdba751b2c0a3dfd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704727"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934296"
 ---
 # <a name="list-disassembly-command"></a>Comando Listar Desmontagem
 Inicia o processo de depuração e permite que você especifique como os erros são tratados.

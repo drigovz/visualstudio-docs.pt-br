@@ -1,8 +1,6 @@
 ---
-title: 'Como: depurar código Assembly embutido | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar código Assembly embutido | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.inline
@@ -18,28 +16,28 @@ helpviewer_keywords:
 ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88865df3dcf507cc9a6f6be13e7ab1ff55877c25
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3e5e7eb7dcfe8103370e30b0be18a0fdcda298d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388306"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018664"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Como depurar código de assembly embutido
+# <a name="how-to-debug-inline-assembly-code"></a>Como: Depurar o código do assembly embutido
 
 > [!NOTE]
-> As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [redefinir configurações](../ide/environment-settings.md#reset-settings).
+> As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
 
-O depurador fornece duas janelas para depurar o código do assembly embutido, a janela Desmontagem **e a janela Registros**.
+O depurador fornece duas janelas para depurar o código do assembly embutido, a janela **Desmontagem** e a janela **Registros**.
 
 ## <a name="debug-inline-assembly-code"></a>Depurar o código do assembly embutido
 
-1.  Use a janela Desmontagem** para exibir as instruções de assembly.
+1.  Use a janela **Desmontagem** para exibir as instruções de assembly.
 
-2.  Use a janela Registros** para exibir conteúdo do registro.
+2.  Use a janela **Registros** para exibir conteúdo do registro.
 
 ## <a name="see-also"></a>Consulte também
 

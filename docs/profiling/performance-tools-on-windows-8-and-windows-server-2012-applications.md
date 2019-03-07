@@ -1,20 +1,18 @@
 ---
 title: Ferramentas de Desempenho em aplicativos do Windows 8 e Windows Server 2012 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220795"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629970"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012
 
@@ -39,7 +37,7 @@ Não há suporte para esses recursos e opções de criação de perfil ao criar 
 
 Para saber mais sobre a criação de perfil de aplicativos UWP, veja os seguintes artigos:
 
-- [Executar aplicativos UWP no computador local](../debugger/run-windows-store-apps-on-the-local-machine.md)
+- [Executar aplicativos UWP no computador local](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
 - [Executar aplicativos UWP em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Introdução às ferramentas de criação de perfil](profiling-feature-tour.md)
 - [Memória JavaScript](../profiling/javascript-memory.md)
@@ -76,7 +74,7 @@ Para analisar aplicativos em dispositivos que não têm o Visual Studio instalad
 
 - Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Os programas de instalação estão na pasta *%VSInstallDir%\Team Tools\Performance Tools\Setups*. Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.
+- Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.
 
 > [!NOTE]
 > Para coletar dados de criação de perfil TIP, você deve instalar o criador de perfil autônomo em seu computador do Visual Studio no computador remoto.

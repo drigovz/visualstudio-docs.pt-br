@@ -1,25 +1,20 @@
 ---
 title: Nós de matemática | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab77bbed9f14ccc81429c37ad367d7d51709871
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c2971a13e82e4b31f985be6db2a8a32167a3f74b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796212"
 ---
 # <a name="math-nodes"></a>Nós de matemática
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ No Designer de Sombreador, os nós de matemática realizam álgebra, lógica, tr
 |**Sqrt**|Calcula a raiz quadrada da entrada especificada, por componente.<br /><br /> Para cada componente do resultado, a raiz quadrada do componente correspondente é calculada.<br /><br /> **Entrada:**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Os valores para os quais calcular a raiz quadrada.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> A raiz quadrada, por componente.|Nenhum|  
 |**Subtração**|Calcula a diferença do componente inteiro das entradas especificadas.<br /><br /> Para cada componente do resultado, o componente correspondente da entrada `Y` é subtraído do componente correspondente da entrada `X`. Você pode usá-lo para calcular o vetor que se estende da primeira entrada para a segunda.<br /><br /> **Entrada:**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Os valores a serem subtraídos.<br /><br /> `Y`: igual à entrada `X`<br /> Os valores a serem subtraídos da entrada `X`.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> A diferença, por componente.|Nenhum|  
 |**Transformar Vetor 3D**|Transforma o vetor 3D especificado em um espaço diferente.<br /><br /> Você pode usar essa opção para colocar pontos ou vetores em um espaço comum para que você possa usá-los para executar cálculos significativos.<br /><br /> **Entrada:**<br /><br /> `Vector`: `float3`<br /> O vetor a ser transformado.<br /><br /> **Saída:**<br /><br /> `Output`: `float3`<br /> O vetor transformado.|**Do Sistema**<br /> O espaço nativo do vetor.<br /><br /> **Para o Sistema**<br /> O espaço no qual transformar o vetor.|
-
-
-

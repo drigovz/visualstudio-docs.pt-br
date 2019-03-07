@@ -1,23 +1,22 @@
 ---
-title: Como excluir projetos de um build
+title: 'Como: Excluir projetos de um build'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e203fd9f1515e212591afe11c246cdeb78201b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef85067ca3478bb2387f1f47a35938805f5fe0c5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949977"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924585"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Como excluir projetos de um build
+# <a name="how-to-exclude-projects-from-a-build"></a>Como: Excluir projetos de um build
 
 É possível compilar uma solução sem compilar todos os projetos que ela contém. Por exemplo, é possível excluir um projeto que interrompe o build. É possível compilar o projeto depois de investigar e resolver os problemas.
 
@@ -58,5 +57,5 @@ Para obter mais informações, consulte [Compreender configurações de build](.
 ## <a name="see-also"></a>Consulte também
 
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
-- [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
-- [Como criar várias configurações simultaneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
+- [Como: compilar várias configurações simultaneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)

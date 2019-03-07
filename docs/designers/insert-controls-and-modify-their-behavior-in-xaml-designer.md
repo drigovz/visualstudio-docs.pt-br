@@ -1,21 +1,19 @@
 ---
 title: Inserir controles e modificar seu comportamento no XAML Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a80fff74-bf01-41c9-ab85-ada7a873c3a9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: edb657779e8c404032d71061132816a2a30c83c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977798"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937275"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Inserir controles e modificar seu comportamento no XAML Designer
 
@@ -57,7 +55,7 @@ Um *comportamento* é um pacote reutilizável de código. Ele pode fazer um pouc
 
 ![FluidMoveBehavior no painel Propriedades](../designers/media/b4_fluidmovebehaviorproperties_sample.png)
 
-**Assista a um vídeo:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Dicas de Blend: introdução ao uso de comportamentos Parte 1](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
+**Assista a um vídeo:** ![Ícone Reproduzir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Dicas de Blend: Introdução ao uso de comportamentos Parte 1](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
 ### <a name="events"></a>Eventos
 

@@ -1,8 +1,6 @@
 ---
 title: Janela do Gerenciador de Desempenho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performanceexplorer
@@ -11,19 +9,19 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f27d1436aaeb0ec75876edf9119dff93f7539483
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c8ffa5340ceaa00adb5e86100d8e58c307f41d40
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582105"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56647027"
 ---
 # <a name="performance-explorer-window"></a>Janela do Performance Explorer
 
-A janela **Gerenciador de Desempenho** no IDE do Visual Studio permite que você configure e inicie sessões de desempenho usando as Ferramentas de Criação de Perfil do Visual Studio.
+A janela **Gerenciador de Desempenho** no IDE do Visual Studio permite que você configure e inicie sessões de desempenho usando as Ferramentas de Criação de Perfil do Visual Studio. Caso precise abrir a janela, siga as instruções descritas em [Guia para iniciantes da criação de perfil de desempenho](../profiling/beginners-guide-to-cpu-sampling.md).
 
 ## <a name="performance-explorer-toolbar"></a>Barra de Ferramentas do Gerenciador de Desempenho
 
@@ -53,6 +51,6 @@ A janela do **Gerenciador de Desempenho** contém um controle de árvore que exi
 
 ## <a name="see-also"></a>Consulte também
 
-[Visões gerais](../profiling/overviews-performance-tools.md)  
-[Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)  
+[Visões gerais](../profiling/overviews-performance-tools.md)
+[Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)
 [Controlando a coleta de dados](../profiling/controlling-data-collection.md)

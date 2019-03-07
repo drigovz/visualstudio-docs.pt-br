@@ -1,14 +1,9 @@
 ---
 title: Referência do esquema de arquivo de projeto MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd1add4f68bb2e0648cf3cf08b72b1bc6f592595
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305975"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54772580"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referência do esquema de arquivos de projeto do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,5 +63,3 @@ Fornece uma tabela de todos os elementos [!INCLUDE[vstecmsbuild](../includes/vst
  [Condições](../msbuild/msbuild-conditions.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)
-
-

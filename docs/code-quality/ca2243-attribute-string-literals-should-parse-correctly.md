@@ -1,8 +1,6 @@
 ---
-title: 'CA2243: os literais da cadeia de caracteres de atributo devem ser analisados corretamente'
+title: 'CA2243: Literais de cadeias de caracteres de atributo devem ser analisados corretamente'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2243
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6808520f3b28a2da8421394619550166d88d52d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 12007beaffab1e046ae7f359bf2988c02278fd91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551932"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908862"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: os literais da cadeia de caracteres de atributo devem ser analisados corretamente
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Literais de cadeias de caracteres de atributo devem ser analisados corretamente
 
 |||
 |-|-|
@@ -63,4 +61,4 @@ ms.locfileid: "45551932"
 
 ## <a name="see-also"></a>Consulte também
 
-- [CA1054: os parâmetros de URI não devem ser cadeias de caracteres](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+- [CA1054: Parâmetros de URI não devem ser cadeias de caracteres](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

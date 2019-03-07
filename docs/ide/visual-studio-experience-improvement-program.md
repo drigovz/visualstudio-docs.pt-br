@@ -2,20 +2,18 @@
 title: Programa de Aperfeiçoamento da Experiência do Usuário
 description: Descubra como gerenciar as configurações de privacidade no Visual Studio.
 ms.date: 05/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba68d0d369d178606777944c9dc4dcd633a503f4
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280638"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927523"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 

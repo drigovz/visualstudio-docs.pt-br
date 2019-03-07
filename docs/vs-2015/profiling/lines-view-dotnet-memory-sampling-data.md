@@ -1,27 +1,22 @@
 ---
 title: Exibição de Linhas – Dados de Amostragem de Memória do .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
 ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3e47ed928d32e3cc7ec1ba9a72cf7992ebd4b892
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 251dc4279530c2d10ba8b404ee515824d0671037
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776974"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54776990"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Exibição de linhas – Dados de Amostragem de Memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,6 +65,3 @@ A exibição de Linhas dos dados de criação de perfil de alocação de memóri
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Linhas](../profiling/lines-view-sampling-data.md)
-
-
-

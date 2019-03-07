@@ -1,8 +1,6 @@
 ---
-title: 'CA2102: capturar exceções que não sejam CLSCompliant em manipuladores gerais'
+title: 'CA2102: Capturar exceções não CLSCompliant em manipuladores gerais'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2102
@@ -12,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5af37daba4ce1791c5485d65734d1dd8c3d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f361720f45a24e561ab2a886537bda02c73c006
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887040"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923702"
 ---
-# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: capturar exceções que não sejam CLSCompliant em manipuladores gerais
+# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Capturar exceções não CLSCompliant em manipuladores gerais
 
 |||
 |-|-|
@@ -86,7 +84,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1031: não capturar tipos de exceção gerais](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+[CA1031: Não capturar tipos de exceção geral](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>Consulte também
 

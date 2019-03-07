@@ -1,14 +1,9 @@
 ---
 title: Editor de Modelo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
@@ -16,13 +11,13 @@ ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9247eae19d32ecc21069836d52192e7d466de1b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844076"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802834"
 ---
 # <a name="model-editor"></a>Editor de modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,14 +73,14 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
 |**Selecionar**|Permite a seleção de pontos, bordas, faces ou objetos na cena, dependendo do modo de seleção ativo.|  
 |**Panorâmica**|Permite a movimentação de uma cena 3D em relação ao quadro da janela. Para obter uma panorâmica, selecione um ponto na cena e movimente-o ao redor.<br /><br /> No modo **Selecionar**, você pode manter pressionada a tecla Ctrl para ativar o modo **Panorâmico** temporariamente.|  
 |**Zoom**|Permite a exibição de mais ou menos detalhes da cena em relação ao quadro da janela. No modo **Zoom**, selecione um ponto na cena e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, você pode ampliar ou reduzir usando a roda do mouse enquanto mantém a tecla Ctrl pressionada.|  
-|**Órbita**|Posiciona a exibição em um caminho circular em volta do objeto selecionado. Se nenhum objeto for selecionado, o caminho será centralizado na origem da cena. **Nota:** esse modo não terá efeito quando a projeção **Ortográfica** estiver habilitada.|  
+|**Órbita**|Posiciona a exibição em um caminho circular em volta do objeto selecionado. Se nenhum objeto for selecionado, o caminho será centralizado na origem da cena. **Observação:**  Esse modo não terá efeito quando a projeção **Ortográfica** estiver habilitada.|  
 |**Local do mundo**|Quando esse item é habilitado, as transformações no objeto selecionado ocorrem no espaço do mundo. Caso contrário, as transformações no objeto selecionado ocorrem no espaço local.|  
 |**Modo Dinâmico**|Quando esse item for habilitado, as transformações afetarão o local e a orientação do *ponto dinâmico* do objeto selecionado (O ponto dinâmico define o centro das operações de translação, dimensionamento e rotação.) Caso contrário, as transformações afetam o local e a orientação da geometria do objeto, em relação ao ponto dinâmico.|  
 |**Bloquear eixo X**|Restringe a manipulação de objetos ao eixo x. Aplica-se apenas quando você usa a parte central do widget do manipulador.|  
 |**Bloquear eixo Y**|Restringe a manipulação de objetos ao eixo y. Aplica-se apenas quando você usa a parte central do widget do manipulador.|  
 |**Bloquear eixo Z**|Restringe a manipulação de objetos ao eixo z. Aplica-se apenas quando você usa a parte central do widget do manipulador.|  
 |**Objeto de Quadro**|Enquadra o objeto selecionado para que ele se localize no centro da exibição.|  
-|**Exibir**|Define a orientação da exibição. Veja as orientações disponíveis:<br /><br /> **Frente**<br /> Posiciona a exibição na frente da cena.<br /><br /> **Atrás**<br /> Posiciona a exibição atrás da cena.<br /><br /> **Esquerda**<br /> Posiciona a exibição à esquerda da cena.<br /><br /> **Direita**<br /> Posiciona a exibição à direita da cena.<br /><br /> **Superior**<br /> Posiciona a exibição acima da cena.<br /><br /> **Inferior**<br /> Posiciona a exibição abaixo da cena. **Nota:** essa é a única maneira de alterar a direção da exibição quando a projeção **Ortográfica** estiver habilitada.|  
+|**Exibir**|Define a orientação da exibição. Veja as orientações disponíveis:<br /><br /> **Frente**<br /> Posiciona a exibição na frente da cena.<br /><br /> **Atrás**<br /> Posiciona a exibição atrás da cena.<br /><br /> **Esquerda**<br /> Posiciona a exibição à esquerda da cena.<br /><br /> **Direita**<br /> Posiciona a exibição à direita da cena.<br /><br /> **Superior**<br /> Posiciona a exibição acima da cena.<br /><br /> **Inferior**<br /> Posiciona a exibição abaixo da cena. **Observação:**  Essa é a única maneira de alterar a direção da exibição quando a projeção **Ortográfica** estiver habilitada.|  
 |**Projeção**|Define o tipo de projeção que é usado para desenhar a cena. Veja as projeções disponíveis:<br /><br /> **Perspectiva**<br /> Na projeção de perspectiva, os objetos que estão mais longe do ponto de vista parecem menores em tamanho e, por fim, convergem para um ponto distante.<br /><br /> **Ortográfica**<br /> Na projeção Ortográfica, os objetos parecem ser do mesmo tamanho, independentemente da sua distância do ponto de vista. Nenhuma convergência é exibida. Quando a projeção **Ortográfica** estiver habilitada, não é possível usar o modo **Órbita** para posicionar a exibição.|  
 |**Estilo de Desenho**|Define como os objetos da cena são renderizados. Veja os estilos disponíveis:<br /><br /> **Esboço**<br /> Quando habilitado, os objetos são renderizados como delineados.<br /><br /> **Exceder**<br /> Quando habilitado, os objetos são renderizados usando combinação aditiva. Você pode usar esse item para visualizar o excedente que existe no cenário.<br /><br /> **Sombra Simples**<br /> Quando habilitado, os objetos são renderizados usando um modelo de iluminação básico de sombra simples. Você pode usar esse item para ver as faces de um objeto com mais facilidade.<br /><br /> Se nenhuma dessas opções for habilitada, cada objeto será renderizado usando o material que é aplicado a ele.|  
 |**Modo de Renderização em Tempo Real**|Quando a renderização em tempo real for habilitada, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] redesenhará a superfície de design, mesmo quando nenhuma ação de usuário for executada. Esse modo é útil quando você trabalha com sombreadores que se alteram ao longo do tempo.|  
@@ -93,7 +88,7 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
 |**Caixa de Ferramentas**|De modo alternado, mostra ou oculta a **Caixa de Ferramentas**.|  
 |**Estrutura de Tópicos do Documento**|De modo alternado, mostra ou oculta a janela **Estrutura de Tópicos de Documentos**.|  
 |**Propriedades**|De modo alternado, mostra ou oculta a janela **Propriedades**.|  
-|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Mecanismos Gráficos**<br /><br /> **Renderizar com o D3D11**<br /> Usa o Direct3D 11 para renderizar a superfície de design do Editor de Modelos.<br /><br /> **Renderizar com o D3D11WARP**<br /> Usa o Direct3D 11 Windows Advanced Rasterization Platform (WARP) para renderizar a superfície de design do Editor de Modelos.<br /><br /> **Gerenciamento de Cena**<br /><br /> **Importarar**<br /> Importa objetos de outro arquivo de modelo 3D para a cena atual.<br /><br /> **Anexar ao Pai**<br /> Estabelece o primeiro de vários objetos selecionados como o pai dos objetos selecionados restantes.<br /><br /> **Desanexar do Pai**<br /> Desanexa o objeto selecionado de seu pai. O objeto selecionado torna-se um *objeto raiz* na cena. Um objeto raiz não tem um objeto pai.<br /><br /> **Criar Grupo**<br /> Agrupa os objetos selecionados como objetos irmãos.<br /><br /> **Mesclar Objetos**<br /> Combina os objetos selecionados em um objeto.<br /><br /> **Criar Novo Objeto da Seleção de Polígono**<br /> Remove as faces selecionadas do objeto atual e adiciona à cena um novo objeto que contenha essas faces.<br /><br /> **Ferramentas**<br /><br /> **Inverter Enrolamento do Polígono**<br /> Inverte os polígonos selecionados para que a ordem de rolagem e a superfície normal sejam invertidas.<br /><br /> **Remover Toda Animação**<br /> Remove os dados de animação dos objetos.<br /><br /> **Triangular**<br /> Converte o objeto selecionado em triângulos.<br /><br /> **Exibir**<br /><br /> Seleção de Face Traseira<br /> Habilita ou desabilita a seleção de face traseira.<br /><br /> **Taxa de Quadros**<br /> Exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo.<br /><br /> Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.<br /><br /> **Mostrar Tudo**<br /> Mostra todos os objetos na cena. Isso redefine a propriedade **Oculto** de cada objeto para **Falso**.<br /><br /> **Mostrar Normais da Face**<br /> Mostra o normal de cada face.<br /><br /> **Mostrar Materiais Ausentes**<br /> Exibe uma textura especial em objetos que não têm um material atribuído a eles.<br /><br /> **Mostrar Ponto Dinâmico**<br /> Habilita ou desabilita a exibição de um marcador de eixo 3D no ponto de dinâmico da seleção ativa.<br /><br /> **Mostrar Nós de Espaço Reservado**<br /> Mostra nós de espaço reservado. Um nó de espaço reservado é criado quando você agrupa objetos.<br /><br /> **Mostrar Normais de Vértice**<br /> Mostra o normal de cada vértice. **Dica:**  você pode escolher o botão **Scripts** para executar novamente o último script.|  
+|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Mecanismos Gráficos**<br /><br /> **Renderizar com o D3D11**<br /> Usa o Direct3D 11 para renderizar a superfície de design do Editor de Modelos.<br /><br /> **Renderizar com o D3D11WARP**<br /> Usa o Direct3D 11 Windows Advanced Rasterization Platform (WARP) para renderizar a superfície de design do Editor de Modelos.<br /><br /> **Gerenciamento de Cena**<br /><br /> **Importarar**<br /> Importa objetos de outro arquivo de modelo 3D para a cena atual.<br /><br /> **Anexar ao Pai**<br /> Estabelece o primeiro de vários objetos selecionados como o pai dos objetos selecionados restantes.<br /><br /> **Desanexar do Pai**<br /> Desanexa o objeto selecionado de seu pai. O objeto selecionado torna-se um *objeto raiz* na cena. Um objeto raiz não tem um objeto pai.<br /><br /> **Criar Grupo**<br /> Agrupa os objetos selecionados como objetos irmãos.<br /><br /> **Mesclar Objetos**<br /> Combina os objetos selecionados em um objeto.<br /><br /> **Criar Novo Objeto da Seleção de Polígono**<br /> Remove as faces selecionadas do objeto atual e adiciona à cena um novo objeto que contenha essas faces.<br /><br /> **Ferramentas**<br /><br /> **Inverter Enrolamento do Polígono**<br /> Inverte os polígonos selecionados para que a ordem de rolagem e a superfície normal sejam invertidas.<br /><br /> **Remover Toda Animação**<br /> Remove os dados de animação dos objetos.<br /><br /> **Triangular**<br /> Converte o objeto selecionado em triângulos.<br /><br /> **Exibir**<br /><br /> Seleção de Face Traseira<br /> Habilita ou desabilita a seleção de face traseira.<br /><br /> **Taxa de Quadros**<br /> Exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo.<br /><br /> Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.<br /><br /> **Mostrar Tudo**<br /> Mostra todos os objetos na cena. Isso redefine a propriedade **Oculto** de cada objeto para **Falso**.<br /><br /> **Mostrar Normais da Face**<br /> Mostra o normal de cada face.<br /><br /> **Mostrar Materiais Ausentes**<br /> Exibe uma textura especial em objetos que não têm um material atribuído a eles.<br /><br /> **Mostrar Ponto Dinâmico**<br /> Habilita ou desabilita a exibição de um marcador de eixo 3D no ponto de dinâmico da seleção ativa.<br /><br /> **Mostrar Nós de Espaço Reservado**<br /> Mostra nós de espaço reservado. Um nó de espaço reservado é criado quando você agrupa objetos.<br /><br /> **Mostrar Normais de Vértice**<br /> Mostra o normal de cada vértice. **Dica:**  Você pode escolher o botão **Scripts** para executar novamente o último script.|  
   
  Veja a barra de ferramentas **Editor de Modelos**:  
   
@@ -122,7 +117,7 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
 |------------------|-----------------|  
 |**Panorâmica**|Permite a movimentação de uma cena 3D em relação ao quadro da janela. Para obter uma panorâmica, selecione um ponto na cena e movimente-o ao redor.<br /><br /> No modo **Selecionar**, você pode manter pressionada a tecla Ctrl para ativar o modo **Panorâmico** temporariamente.|  
 |**Zoom**|Permite a exibição de mais ou menos detalhes da cena em relação ao quadro da janela. No modo **Zoom**, selecione um ponto na cena e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, você pode ampliar ou reduzir usando a roda do mouse enquanto mantém a tecla Ctrl pressionada.|  
-|**Órbita**|Posiciona a exibição em um caminho circular em volta do objeto selecionado. Se nenhum objeto for selecionado, o caminho será centralizado na origem da cena. **Nota:** esse modo não terá efeito quando a projeção **Ortográfica** estiver habilitada.|  
+|**Órbita**|Posiciona a exibição em um caminho circular em volta do objeto selecionado. Se nenhum objeto for selecionado, o caminho será centralizado na origem da cena. **Observação:**  Esse modo não terá efeito quando a projeção **Ortográfica** estiver habilitada.|  
 |**Objeto de Quadro**|Enquadra o objeto selecionado para que ele se localize no centro da exibição.|  
   
  A exibição é estabelecida pela câmera virtual, mas também é definida por uma projeção. A projeção define como as formas e os objetos, no modo de exibição, são convertidos em pixels na superfície de design. Na barra de ferramentas **Editor de Modelos**, escolha a projeção **Perspectiva** ou **Ortográfica**.  
@@ -173,7 +168,7 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
 ### <a name="working-with-the-pivot-point"></a>Trabalhando com o ponto dinâmico  
  O ponto dinâmico de um objeto define seu centro de rotação e dimensionamento. É possível alterar o ponto dinâmico de um objeto par alterar como ele é afetado pelas transformações de rotação e dimensionamento. Na barra de ferramentas **Modo do Editor de Modelos**, escolha **Modo Dinâmico** para habilitar (ou desabilitar) o modo dinâmico. Quando o modo dinâmico é habilitado, um pequeno indicador de eixo aparece no ponto dinâmico do objeto selecionado. Você pode usar as ferramentas **Translação** e **Rotação** para manipular o ponto dinâmico.  
   
- Para uma demonstração que mostra como usar o ponto dinâmico, consulte [Como Modificar o Ponto Dinâmico de um Modelo 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).  
+ Para ver uma demonstração de como usar o ponto dinâmico, confira [Como: Modificar o ponto dinâmico de um modelo 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).  
   
 ### <a name="world-and-local-modes"></a>Modos local e mundial  
  A translação e a rotação podem ocorrer no sistema de coordenada local (ou *quadro de referência local*) do objeto ou no sistema de coordenada mundial (ou *quatro de referência mundial*). O quadro de referência mundial é independente da rotação do objeto. O modo local é o padrão. Para habilitar (ou desabilitar) o modo mundial, na barra de ferramentas **Modo do Editor de Modelos**, escolha o botão **WorldLocal**.  
@@ -242,7 +237,7 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
   
  Para remover todos os materiais de um objeto, na barra de ferramentas **Editor de modelos**, escolha **Scripts**, **Materiais**, **Remover Materiais**.  
   
- Você pode usar o **Designer de Sombreador** para criar materiais sombreadores personalizados que possam ser aplicados a objetos na cena 3D. Para obter informações sobre como criar materiais sombreadores personalizados, consulte [Designer de Sombreador](../designers/shader-designer.md). Para obter informações sobre como aplicar um material sombreador personalizado a um objeto, consulte [Como Aplicar um Sombreador a um Modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Você pode usar o **Designer de Sombreador** para criar materiais sombreadores personalizados que possam ser aplicados a objetos na cena 3D. Para obter informações sobre como criar materiais sombreadores personalizados, consulte [Designer de Sombreador](../designers/shader-designer.md). Para obter informações sobre como aplicar um material sombreador personalizado a um objeto, confira [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ### <a name="scene-management"></a>Gerenciamento de cena  
  Você pode gerenciar cenas como uma hierarquia de objetos. Quando vários objetos são organizados em uma hierarquia, qualquer translação, dimensionamento ou rotação de um nó pai também afeta seus filhos. Isso é útil quando você deseja construir cenas ou objetos complexos de objetos mais básicos.  
@@ -317,6 +312,3 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você pode usar para trabalhar com recursos gráficos, como texturas e imagens, modelos 3D e efeitos de sombreamento.|  
 |[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com texturas e imagens.|  
 |[Designer de Sombreador](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com sombreadores.|
-
-
-

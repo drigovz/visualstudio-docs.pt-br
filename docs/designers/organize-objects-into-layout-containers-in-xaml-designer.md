@@ -1,21 +1,19 @@
 ---
 title: Organizar objetos em contêineres de layout no XAML Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978171"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948232"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos em contêineres de layout no XAML Designer
 
@@ -31,19 +29,7 @@ Painéis de layout ajudam a organizar objetos em uma página, mas fazem mais do 
 
 Comece a página escolhendo um destes painéis de layout. A página pode ter mais de um. Por exemplo, é possível iniciar com um painel de layout em **Grade** e, em seguida, adicionar um **StackPanel** a uma área na **Grade** para organizar os controles verticalmente nesse elemento.
 
-Os painéis de layout a seguir são os mais populares, mas existem outros. É possível encontrar todos no painel **Ativos**.
-
-- [Grade](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Tela](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Os painéis de layout a seguir são os mais populares, mas existem outros. Você pode encontrá-los todos na **Caixa de ferramentas** no Visual Studio ou no painel **Ativos** no Blend para Visual Studio.
 
 ### <a name="grid"></a>Grade
 
@@ -87,21 +73,13 @@ Organize objetos para que eles fiquem ou se *encaixem*, em uma borda do painel.
 
 ![Painel de layout DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Assista a um vídeo curto:** ![botão Reproduzir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF – DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Assista a um breve vídeo:** ![Botão Reproduzir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF – DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Controles de layout
 
 Também é possível adicionar objetos aos controles de layout. Eles não têm tantos recursos como o painel de layout, mas podem ser úteis em determinados cenários.
 
-Os controles de layout a seguir são os mais populares, mas existem outros. É possível encontrar todos no painel **Ativos**.
-
-- [Borda](#Border)
-
-- [Pop-up](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Caixa de Visualização](#viewbox)
+Os controles de layout a seguir são os mais populares, mas existem outros. Você pode encontrá-los todos na **Caixa de ferramentas** no Visual Studio ou no painel **Ativos** no Blend para Visual Studio.
 
 ### <a name="border"></a>Borda
 

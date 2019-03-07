@@ -3,22 +3,23 @@ title: O benefício Power BI Pro nas assinaturas do Visual Studio | Microsoft Do
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
-ms.topic: Get-Started-Article
+ms.date: 12/19/2018
+ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do Power BI Pro incluída na assinatura do Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219530"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843864"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro em assinaturas do Visual Studio
 
 Transforme seus dados em elementos visuais avançados que você pode coletar e organizar.
+
+> [!Note]
+> Esta licença do Power BI é disponibilizada a fim de que os recursos do Power BI possam ser estudados e testados em um local seguro, sem afetar ambientes mais amplos de Produção/Desenvolvimento/Teste.  A oferta atual do Power BI requer que o assinante crie seu próprio locatário para impor a separação. Caso precise de uma licença do Power BI associada às suas credenciais corporativas em seu locatário da empresa, trabalhe com o administrador da empresa para adquirir e atribuir essa licença.
 
 ## <a name="activation-steps"></a>Etapas de ativação
 Para usar o Power BI Pro, você precisará configurar uma conta ou entrar usando uma conta existente.
@@ -73,30 +74,35 @@ Para usar o Power BI Pro, você precisará configurar uma conta ou entrar usando
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim|
-| Visual Studio Professional (Padrão, nuvem anual, nuvem mensal) | VL, Azure, Retail                                       | Não disponível                                                            |NA         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim|
+| Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                       | Não disponível                                                            |NA         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                                            |NA         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível       |  Sim|
 | Visual Studio Dev Essentials | NA  | Não disponível |NA|
 | Visual Studio Enterprise (nuvem mensal) | Azure                                       | Não disponível                                  |NA|
 
-<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Microsoft Valued Professional), RD (Diretor regional).  Exclui: MPN (Microsoft Partner Network), FTE, Imagine.*
+<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Most Valuable Professional) e RD (Diretor Regional).  Exclui:  MPN (Microsoft Partner Network), FTE e Imagine.*
+
+> [!NOTE]
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>P: Se o benefício é gratuito, por que tenho que fornecer um número de cartão de crédito?
-R: O benefício é gratuito, mas a ativação usa o mesmo sistema usado para processar pedidos pagos.  Há dois tipos de pagamento disponíveis. 
-- Cartão de crédito.  Mesmo se você fornecer um número de cartão de crédito, seu cartão NÃO será cobrado. 
-- Fatura.  Se você selecionar "Fatura" como o tipo de pagamento, não será necessário fornecer um número de cartão de crédito.  Você também pode definir o intervalo como "anual".  Dessa forma, você receberá um único email informando que uma fatura está pronta.  O valor da fatura será de $0,00.  
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>P:  Se o benefício é gratuito, por que é necessário fornecer um número de cartão de crédito?
+R:  O benefício é gratuito, mas a ativação usa o mesmo sistema usado para processar pedidos pagos.  Há dois tipos de pagamento disponíveis.
+- Cartão de crédito.  Mesmo se você fornecer um número de cartão de crédito, seu cartão NÃO será cobrado.
+- Fatura.  Se você selecionar "Fatura" como o tipo de pagamento, não será necessário fornecer um número de cartão de crédito.  Você também pode definir o intervalo como "anual".  Dessa forma, você receberá um único email informando que uma fatura está pronta.  O valor da fatura será de $0,00.
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>P: O benefício Power BI Pro incluído em minhas licenças de assinatura é destinado ao uso em um ambiente de produção?
-R: Sim.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>P:  O benefício do Power BI Pro incluído em minha assinatura é licenciado para uso em um ambiente de produção?
+R:  Sim, você pode usá-lo em um ambiente de produção, com duas advertências importantes:
+- Esta oferta requer a instalação em seu próprio locatário.  Caso precise de uma licença do Power BI associada às suas credenciais corporativas em seu locatário da empresa, trabalhe com o administrador da empresa para adquirir e atribuir essa licença.
+- Este benefício do Power BI Pro não pode ser usado em locatários do governo.
 
-### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>P: Ao tentar ativar o Power BI Pro, recebo uma mensagem "Você já tem uma conta pelo trabalho".  Ainda posso usar o benefício?
-R: Sim.  A mensagem indica que você está conectado a um domínio que já tem locatários do Office 365 ativos nos quais você não é um administrador.  Para adicionar o Power BI Pro a um locatário, você deve ser um administrador nesse locatário.  Para resolver esse problema, siga estas etapas para criar seu próprio locatário.
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>P:  Ao tentar ativar o Power BI Pro, recebo uma mensagem "Você já tem uma conta pelo trabalho".  Ainda posso usar o benefício?
+R:  Sim.  A mensagem indica que você está conectado a um domínio que já tem locatários do Office 365 ativos nos quais você não é um administrador.  Para adicionar o Power BI Pro a um locatário, você deve ser um administrador nesse locatário.  Para resolver esse problema, siga estas etapas para criar seu próprio locatário.
 1.  Quando você vir a mensagem de que você já tem uma conta pelo trabalho, clique em **Criar uma nova conta**.
 
 2.  Na tela seguinte, forneça suas informações de contato e clique em **Avançar**.
@@ -104,12 +110,12 @@ R: Sim.  A mensagem indica que você está conectado a um domínio que já tem l
 3.  Crie sua ID de usuário e senha.  Para aproveitar a oferta gratuita, selecione **.onmicrosoft.com** como o domínio. Clique em **Criar minha conta**.
     > [!div class="mx-imgBorder"]
     > ![Criar ID de usuário de locatário privado do Benefício Power BI Pro](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  O restante das etapas no processo são idênticas àquelas listadas no corpo do artigo, começando com a etapa 6.
 
 
-### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>P: Estou em um domínio do governo.  Posso usar o benefício? 
-R: Não.  O benefício Power BI Pro não pode ser adicionado a locatários em um domínio do governo. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>P:  Estou em um locatário do governo.  Posso usar o benefício?
+R:  Nº  O benefício do Power BI Pro não pode ser adicionado a locatários do governo.
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Precisa de ajuda com o Power BI Pro?

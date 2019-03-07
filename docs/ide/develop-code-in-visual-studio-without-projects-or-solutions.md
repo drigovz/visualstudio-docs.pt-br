@@ -1,8 +1,6 @@
 ---
 title: Desenvolver o código sem projetos nem soluções
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -10,19 +8,19 @@ helpviewer_keywords:
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5885fc8c62b8da4213446601f37700cc077eda8c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062358"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718541"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desenvolver código no Visual Studio sem projetos nem soluções
 
-No Visual Studio 2017, é possível abrir códigos de quase todos os tipos de projeto baseado em diretório no Visual Studio sem a necessidade de um arquivo de solução ou de projeto. Isso significa que você pode, por exemplo, clonar um repositório no GitHub, abri-lo diretamente no Visual Studio e começar o desenvolvimento sem precisar criar uma solução ou um projeto. Se for necessário, você pode especificar as tarefas de compilação personalizadas e iniciar os parâmetros por meio de arquivos JSON simples.
+Abra o código em praticamente todos os tipos de projeto baseado em diretório no Visual Studio sem a necessidade de um arquivo de projeto ou de solução. Isso significa que você pode, por exemplo, clonar um repositório no GitHub, abri-lo diretamente no Visual Studio e começar o desenvolvimento sem precisar criar uma solução ou um projeto. Se for necessário, você pode especificar as tarefas de compilação personalizadas e iniciar os parâmetros por meio de arquivos JSON simples.
 
 Após você abrir os arquivos do código no Visual Studio, o **Gerenciador de Soluções** exibirá todos os arquivos na pasta. Você pode clicar em qualquer arquivo para começar a editá-lo. Em segundo plano, o Visual Studio inicia a indexação dos arquivos para habilitar os recursos de IntelliSense, navegação e refatoração. À medida que você edita, cria, move ou exclui arquivos, o Visual Studio rastreia as alterações automaticamente e atualiza continuamente seu índice do IntelliSense. O código será exibido com a colorização de sintaxe e, em muitos casos, incluirá o preenchimento instrução básico do IntelliSense.
 
@@ -31,9 +29,19 @@ Após você abrir os arquivos do código no Visual Studio, o **Gerenciador de So
 Você pode abrir o código no Visual Studio usando uma destas maneiras:
 
 - Na barra de menus do Visual Studio, escolha **Arquivo** > **Abrir** > **Pasta** e, em seguida, navegue até o local do código.
+
 - No menu de contexto (acesso por clique com o botão direito do mouse) de uma pasta que contém o código, escolha o comando **Abrir no Visual Studio**.
+
+::: moniker range="vs-2017"
 - Escolha o link **Abrir Pasta** na **Página Inicial** do Visual Studio.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Escolha o link **Abrir Pasta** na janela Iniciar.
+::: moniker-end
+
 - Se você for usuário de teclado, pressione **Ctrl**+**Shift**+**Alt**+**O** no Visual Studio.
+
 - Abra o código de um repositório GitHub clonado.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Para abrir o código de um repositório GitHub clonado
@@ -63,10 +71,6 @@ O exemplo a seguir mostra como clonar um repositório GitHub e, em seguida, abri
    ![Mostrar exibição de pasta](./media/VSIDE_Code_Clone3_show.png)
 
    Agora é possível procurar pastas e arquivos no repositório clonado, além de exibir e pesquisar o código no editor de códigos do Visual Studio, completo com colorização de sintaxe e outros recursos.
-
-| | |
-|---------|---------|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png)| [Assista a um vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) sobre como clonar e abrir o código de um repositório do GitHub no Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Executar e depurar seu código
 

@@ -1,30 +1,31 @@
 ---
 title: Execução simbólica dinâmica | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295885"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316891"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
 
-O IntelliTest gera entradas para [testes de unidade parametrizados](test-generation.md#parameterized-unit-testing) analisando as condições de branch no programa. As entradas do teste são escolhidas com base em se elas podem disparar novos comportamentos de ramificação do programa. A análise é um processo incremental. Ela refina um predicado **q: I -> {true, false}** nos parâmetros de entrada de teste formal **I**. **q** representa o conjunto de comportamentos que o IntelliTest já observou. Inicialmente, **p: = false**, uma vez que ainda não foi observado nada.
+O IntelliTest gera entradas para [testes de unidade parametrizados](test-generation.md#parameterized-unit-testing) analisando as condições de branch no programa.
+As entradas do teste são escolhidas com base em se elas podem disparar novos comportamentos de ramificação do programa.
+A análise é um processo incremental. Ela refina um predicado **q: I -> {true, false}** nos parâmetros de entrada de teste formal **I**. **q** representa o conjunto de comportamentos que o IntelliTest já observou.
+Inicialmente, **p: = false**, uma vez que ainda não foi observado nada.
 
 As etapas do loop são:
 
-1. O IntelliTest determina entradas **i** de forma que **q(i)=false** usando um [solver de restrição](#constraint-solver). 
+1. O IntelliTest determina entradas **i** de forma que **q(i)=false** usando um [solver de restrição](#constraint-solver).
    Pela construção, a entrada **i** utilizará um caminho de execução não visto antes. Inicialmente, isso significa que **i** pode ser qualquer entrada, porque nenhum caminho de execução foi descoberto ainda.
 
 1. O IntelliTest executa o teste com a entrada de escolhida **i** e monitora a execução de teste e do programa em teste.
@@ -56,7 +57,8 @@ O IntelliTest usa o solver de restrição [Z3](https://github.com/Z3Prover/z3/wi
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Cobertura de código dinâmica
 
-Como um efeito colateral do monitoramento do tempo de execução, o IntelliTest coleta dados de cobertura de código dinâmica. Ela é chamada de *dinâmica* porque o IntelliTest sabe apenas sobre o código que foi executado, portanto ele não pode fornecer valores absolutos para a cobertura da mesma maneira que outra ferramenta de cobertura normalmente faz. 
+Como um efeito colateral do monitoramento do tempo de execução, o IntelliTest coleta dados de cobertura de código dinâmica.
+Ela é chamada de *dinâmica* porque o IntelliTest sabe apenas sobre o código que foi executado, portanto ele não pode fornecer valores absolutos para a cobertura da mesma maneira que outra ferramenta de cobertura normalmente faz.
 
 Por exemplo, quando o IntelliTest informa a cobertura dinâmica como blocos básicos de 5/10, isso significa que cinco blocos de dez foram abrangidos, em que o número total de blocos em todos os métodos que foram alcançados até agora pela análise (em vez de todos os métodos que existem no assembly em teste) é de dez.
 Posteriormente na análise, conforme mais métodos acessíveis forem descobertos, o numerador (5 nesse exemplo) e o denominador (10) podem aumentar.
@@ -81,8 +83,7 @@ O IntelliTest monitora as instruções executadas quando ele executa um teste e 
 Isso significa que o IntelliTest deve criar objetos de certos tipos e definir seus valores de campo. Se a classe for [visível](#visibility) e tiver um construtor [visível](#visibility) padrão, o IntelliTest poderá criar uma instância da classe.
 Se todos os campos da classe forem [visível](#visibility), o IntelliTest poderá definir os campos automaticamente.
 
-Se o tipo não for visível ou os campos não forem [visíveis](#visibility), o IntelliTest precisará de ajuda para criar objetos e colocá-los em estados interessantes para alcançar a cobertura de código máxima. O IntelliTest poderia usar reflexão para criar e inicializar instâncias de maneiras arbitrárias, mas isso geralmente não é  
-desejável porque pode trazer o objeto para um estado que nunca pode ocorrer durante a execução normal do programa. Em vez disso, o IntelliTest depende de dicas do usuário.
+Se o tipo não for visível ou os campos não forem [visíveis](#visibility), o IntelliTest precisará de ajuda para criar objetos e colocá-los em estados interessantes para alcançar a cobertura de código máxima. O IntelliTest poderia usar reflexão para criar e inicializar instâncias de forma arbitrária, mas isso normalmente não é desejável porque pode colocar o objeto em um estado que nunca pode ocorrer durante a execução normal do programa. Em vez disso, o IntelliTest depende de dicas do usuário.
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>Visibilidade
@@ -109,7 +110,7 @@ As regras são as seguintes:
 
 Como testar um método que tem um parâmetro de um tipo de interface? Ou de uma classe não selada? O IntelliTest não sabe quais implementações serão usadas posteriormente quando este método for chamado. E talvez não exista nem mesmo uma implementação real disponível no momento do teste.
 
-A resposta convencional é usar *objetos fictícios* com comportamento explícito. 
+A resposta convencional é usar *objetos fictícios* com comportamento explícito.
 
 Um objeto fictício implementa uma interface (ou estende uma classe não selada). Ele não representa uma implementação real, mas apenas um atalho que permite a execução de testes usando o objeto fictício. Seu comportamento é definido manualmente como parte de cada caso de teste em que ele é usado. Existem muitas ferramentas que facilitam a definição de objetos fictícios e seu comportamento esperado, mas esse comportamento ainda deve ser definido manualmente.
 
@@ -130,7 +131,8 @@ O raciocínio do IntelliTest sobre os valores **struct** é semelhante à maneir
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Matrizes e cadeias de caracteres
 
-O IntelliTest monitora as instruções executadas conforme ele executa um teste e o programa em teste. Em particular, ele observa quando o programa depende do tamanho de uma cadeia de caracteres ou uma matriz (e os limites inferiores e comprimentos de uma matriz multidimensional). Ele também observa como o programa usa os diferentes elementos de uma cadeia de caracteres ou matriz. Ele usa um [solver de restrição](#constraint-solver) para determinar quais valores de elemento e comprimentos podem fazer o teste e o programa em teste se comportarem de maneiras interessantes.
+O IntelliTest monitora as instruções executadas conforme ele executa um teste e o programa em teste. Em particular, ele observa quando o programa depende do tamanho de uma cadeia de caracteres ou uma matriz (e os limites inferiores e comprimentos de uma matriz multidimensional).
+Ele também observa como o programa usa os diferentes elementos de uma cadeia de caracteres ou matriz. Ele usa um [solver de restrição](#constraint-solver) para determinar quais valores de elemento e comprimentos podem fazer o teste e o programa em teste se comportarem de maneiras interessantes.
 
 O IntelliTest tenta minimizar o tamanho das matrizes e cadeias de caracteres necessárias para disparar comportamentos de programa interessantes.
 
@@ -142,7 +144,7 @@ A classe estática [PexChoose](static-helper-classes.md#pexchoose) pode ser usad
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Leitura adicional
 
-* [Como funciona?](https://blogs.msdn.microsoft.com/devops/2014/12/11/smart-unit-tests-a-mental-model/)
+* [Como funciona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
 
 ## <a name="got-feedback"></a>Recebeu comentários?
 

@@ -1,22 +1,18 @@
 ---
 title: Espaços de trabalho e serviços de linguagem no Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
-ms.assetid: 8631ffea-83c8-4fd4-a01e-c59772e89c84
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9fb8c1e3ae363898e0438bdd1ec34c9fd23727
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735460"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929772"
 ---
 # <a name="workspaces-and-language-services"></a>Espaços de trabalho e serviços de linguagem
 
@@ -64,4 +60,4 @@ O `Microsoft.VisualStudio.Workspace.*` APIs não são a única maneira de habili
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* [Compilação de espaço de trabalho](workspace-build.md) -Abrir pasta suporta cria sistemas como o MSBuild e makefiles. 
+* [Compilação de espaço de trabalho](workspace-build.md) -Abrir pasta suporta cria sistemas como o MSBuild e makefiles.

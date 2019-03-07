@@ -1,8 +1,6 @@
 ---
 title: Segurança, controle de versão e problemas de manifesto em implantações do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,17 +19,17 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081739"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631257"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Segurança, controle de versão e problemas de manifesto em implantações do ClickOnce
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de segurança, controle de versão e manifesto em implantações do ClickOnce
 
 Há uma variedade de problemas com a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] segurança, controle de versão do aplicativo e manifesto sintaxe e semântica que pode causar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação não seja bem-sucedida.
 
@@ -98,6 +96,6 @@ Se você deseja mover ou copiar um aplicativo, você também deverá atualizar o
 
 ## <a name="see-also"></a>Consulte também
 
-[Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
-[Aplicativos Securw ClickOnce](../deployment/securing-clickonce-applications.md)  
-[Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+[aplicativos Securw ClickOnce](../deployment/securing-clickonce-applications.md)
+[escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

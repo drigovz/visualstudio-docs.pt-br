@@ -1,24 +1,19 @@
 ---
 title: Compile aplicativos com interface do usuário nativa usando o Xamarin
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a17f8468eca37b5b977aa6b892e268bda5376ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066231"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954102"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -524,7 +519,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 2.  Selecione um destino de emulador ou dispositivo apropriado e inicie o aplicativo pressionando a tecla F5.
 
-3.  No dispositivo ou no emulador, digite um CEP válido dos Estados Unidos na caixa de edição (por exemplo: 60601) e pressione **obter clima**. Dados de clima para aquela região então são exibidos nos controles.
+3.  No dispositivo ou no emulador, digite um CEP dos Estados Unidos válido na caixa de edição (por exemplo: 60601) e pressione **Obter Clima**. Dados de clima para aquela região então são exibidos nos controles.
 
      ![Aplicativo de clima para Android e Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -630,7 +625,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 2.  Inicie o aplicativo pressionando a tecla F5.
 
-3.  No emulador do Windows Phone, digite um CEP válido dos Estados Unidos, na caixa de edição (por exemplo: 60601) e pressione **obter clima**. Dados de clima para aquela região então são exibidos nos controles.
+3.  No emulador do Windows Phone, digite um CEP dos Estados Unidos válido na caixa de edição (por exemplo: 60601) e pressione **Obter Clima**. Dados de clima para aquela região então são exibidos nos controles.
 
      ![Versão do Windows do aplicativo em execução](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -649,4 +644,4 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
  O código compartilhado em uma PCL é neutro em termos de plataforma, pois a PCL é compilada uma vez e incluída em cada pacote do aplicativo específico da plataforma. Se você quiser escrever código compartilhado que use compilação condicional para isolar o código específico da plataforma, poderá usar um projeto *compartilhado*. Para obter mais detalhes, consulte [Opções de compartilhamento ode](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
 
 ## <a name="see-also"></a>Consulte também
- [Site de desenvolvedor do Xamarin](http://developer.xamarin.com/) [Centro de desenvolvimento do Windows](https://dev.windows.com/en-us) [Swift e C# pôster de referência rápida](http://aka.ms/scposter)
+ [Site de desenvolvedor do Xamarin](http://developer.xamarin.com/) [Centro de desenvolvimento do Windows](https://dev.windows.com/en-us) [Swift e C# pôster de referência rápida](https://aka.ms/scposter)

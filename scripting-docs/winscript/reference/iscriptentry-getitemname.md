@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdbb293afc6f58f8d9d9c1fe27bae467fd36792c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fc82dbd26fc2b9956b3d32596e5fa730b96f9a8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729086"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093451"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
 Retorna o nome do item que identifica um `IScriptEntry` objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetItemName(  
    BSTR               *pbstr  
 );  
@@ -48,7 +48,7 @@ HRESULT GetItemName(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Para `IScriptScriptlet` objetos, você define o nome do item usando [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Para outras interfaces, você deve definir o nome de item usando [IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
+ Para `IScriptScriptlet` objetos, defina o nome do item, usando [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Para outras interfaces, você deve definir o nome do item utilizando [IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [IScriptEntry Interface](../../winscript/reference/iscriptentry-interface.md)

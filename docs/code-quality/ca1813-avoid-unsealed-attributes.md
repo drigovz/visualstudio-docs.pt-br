@@ -1,8 +1,6 @@
 ---
-title: 'CA1813: evitar atributos não lacrados'
+title: 'CA1813: Evitar atributos não selados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1813
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: f5e31b4c-9f8b-49e1-a2a8-bb5f1140729a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 45804f08ea25ab8582d28632baf07abea24e0406
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 4d7236b77a7dd0a81f8a7846c0eba28e3b520cdd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859478"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931813"
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: evitar atributos não lacrados
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitar atributos não selados
 
 |||
 |-|-|
@@ -60,8 +58,8 @@ O exemplo a seguir mostra um atributo personalizado que atende a essa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1019: definir acessadores para argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
-- [CA1018: marcar atributos com AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1019: Definir acessadores para argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1018: Marcar atributos com AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Consulte também
 

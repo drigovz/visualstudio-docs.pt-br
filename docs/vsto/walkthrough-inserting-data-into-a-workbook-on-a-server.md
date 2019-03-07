@@ -1,9 +1,6 @@
 ---
 title: 'Passo a passo: Inserir dados em uma pasta de trabalho em um servidor'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
 - workbooks [Office development in Visual Studio], inserting data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 194ec4111d5cc4a34879377695667d97032402b9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672321"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875934"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Passo a passo: Inserir dados em uma pasta de trabalho em um servidor
   Este passo a passo demonstra como inserir dados em um conjunto de dados é armazenado em cache em uma pasta de trabalho do Microsoft Office Excel sem iniciar o Excel usando o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -57,9 +54,9 @@ ms.locfileid: "50672321"
 
 -   Acesso a uma instância em execução do Microsoft SQL Server ou Microsoft SQL Server Express que tem o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT a [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Para obter mais informações sobre como anexar um banco de dados, consulte os tópicos a seguir:
 
-    -   Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    -   Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Para anexar um banco de dados usando a linha de comando, consulte [como: anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
+    -   Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Criar um projeto de biblioteca de classe que define um conjunto de dados
  Para usar o mesmo conjunto de dados em um projeto de pasta de trabalho do Excel e um aplicativo de console, você deve definir o conjunto de dados em um assembly separado que é referenciado por ambos esses projetos. Para este passo a passo, defina o conjunto de dados em um projeto de biblioteca de classe.
@@ -89,7 +86,7 @@ ms.locfileid: "50672321"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Definir um conjunto de dados no projeto de biblioteca de classes
  Defina um dataset tipado que contém os dados do banco de dados AdventureWorksLT para SQL Server 2005. Posteriormente neste passo a passo, você fará referência a esse conjunto de dados de um projeto de pasta de trabalho do Excel e um projeto de aplicativo de console.
 
- O conjunto de dados é um *conjunto de dados digitados* que representa os dados na tabela de produto do banco de dados AdventureWorksLT. Para obter mais informações sobre conjuntos de dados tipados, consulte [ferramentas de conjunto de dados no Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ O conjunto de dados é um *conjunto de dados digitados* que representa os dados na tabela de produto do banco de dados AdventureWorksLT. Para obter mais informações sobre conjuntos de dados tipados, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Para definir um conjunto de dados tipado no projeto de biblioteca de classes
 
@@ -103,7 +100,7 @@ ms.locfileid: "50672321"
 
 5. Se você tiver uma conexão existente no banco de dados AdventureWorksLT, escolha essa conexão e clique em **próxima**.
 
-    Caso contrário, clique em **nova Conexão**e usar o **Adicionar Conexão** caixa de diálogo para criar a nova conexão. Para obter mais informações, consulte [como: conectar a dados em um banco de dados](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    Caso contrário, clique em **nova Conexão**e usar o **Adicionar Conexão** caixa de diálogo para criar a nova conexão. Para obter mais informações, confira [Como: Conectar a dados em um banco de dados](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
 6. No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.
 
@@ -155,9 +152,9 @@ ms.locfileid: "50672321"
 
      A pasta de trabalho é aberto no designer.
 
-2.  Sobre o **dados** menu, clique em **Add New Data Source**.
+2.  No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
-     O **Data Source Configuration Wizard** é aberta.
+     O **Assistente de Configuração de Fonte de Dados** é aberto.
 
 3.  Clique em **objeto**e, em seguida, clique em **próxima**.
 
@@ -293,7 +290,7 @@ ms.locfileid: "50672321"
 
 Você pode aprender mais sobre como trabalhar com dados armazenados em cache com estes tópicos:
 
--   Alterar os dados de um conjunto de dados armazenados em cache sem iniciar o Excel. Para obter mais informações, consulte [instruções passo a passo: alteração de dados em uma pasta de trabalho em um servidor em cache](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
+-   Alterar os dados de um conjunto de dados armazenados em cache sem iniciar o Excel. Para obter mais informações, confira [Passo a passo: Alterar os dados armazenados em cache em uma pasta de trabalho em um servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
 ## <a name="see-also"></a>Consulte também
 

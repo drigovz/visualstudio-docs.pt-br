@@ -1,25 +1,23 @@
 ---
-title: 'CA2130: as constantes críticas de segurança devem ser transparentes'
+title: 'CA2130: Constantes críticas de segurança devem ser transparentes'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2130
 ms.assetid: 344c7f7b-9130-4675-ae7f-9fa260cc9789
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c3ebb69901f031e183d883319861c7e6ef75c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbe1f5c58b957cf3ed226af7c7b879c7a6dcfc0a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858168"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970056"
 ---
-# <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: as constantes críticas de segurança devem ser transparentes
+# <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: Constantes críticas de segurança devem ser transparentes
 
 |||
 |-|-|

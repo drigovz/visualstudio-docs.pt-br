@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, deployment
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 691333abbb943cb3cc9ac3b94616a9f1d0522a1f
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 32d25856c80c5d2945eebb04930e90e74db90658
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857945"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952678"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Implantando soluções de linguagem específica do domínio
 Você pode instalar uma linguagem específica de domínio em seu próprio computador ou em outros computadores. Visual Studio já deve estar instalado no computador de destino.

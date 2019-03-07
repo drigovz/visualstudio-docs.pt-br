@@ -1,14 +1,9 @@
 ---
 title: Usando expressões regulares
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -23,13 +18,13 @@ ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 8ede92874833ca54f44740f518994dac1d6a822f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774506"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Antes do Visual Studio 2012, o Visual Studio usava a sintaxe de expressão regul
 > Em sistemas operacionais Windows, a maioria das linhas termina em “\r\n” (um retorno de carro seguido por uma nova linha). Esses caracteres não são visíveis, mas estão presentes no editor e são passados para o serviço Expressão Regular do .NET.
 
 > [!TIP]
-> Para obter informações sobre as expressões regulares usadas em padrões de substituição, consulte [Substituições](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar um grupo de captura numerado, a sintaxe é `$1` para especificar o grupo numerado e `(x)` para especificar o grupo em questão. Por exemplo, a expressão regular agrupada `(\d)([a-z])` encontra quatro correspondências na cadeia de caracteres a seguir: **1A 2b 3C 4d**. A cadeia de caracteres de substituição `z$1` converte essa cadeia de caracteres em **z1 z2 z3 z4**.
+> Para obter informações sobre as expressões regulares usadas em padrões de substituição, consulte [Substituições](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar um grupo de captura numerado, a sintaxe é `$1` para especificar o grupo numerado e `(x)` para especificar o grupo em questão. Por exemplo, a expressão regular agrupada `(\d)([a-z])` localiza quatro correspondências na cadeia de caracteres a seguir: **1a 2b 3C 4d**. A cadeia de caracteres de substituição `z$1` converte essa cadeia de caracteres em **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Exemplos de expressões regulares
 
@@ -74,7 +69,7 @@ Estes são alguns exemplos:
 |                                                                                                           Encontrar a correspondência de um caractere de espaço em branco.                                                                                                           |                                                   (?([^\r\n])\s)                                                   |                                                `Public\sInterface` corresponde à frase “Public Interface”.                                                 |
 |                                                                                                             Encontrar a correspondência de um caractere numérico                                                                                                             |                                                         \d                                                         |                                                `\d` corresponde a “3” em “3456”, “2” em “23” e “1” em “1”.                                                |
 |                                                                                                              Encontrar a correspondência de um caractere Unicode                                                                                                              |                              \uXXXX em que XXXX especifica o valor do caractere Unicode.                              |                                                            `\u0065` corresponde ao caractere “e”.                                                            |
-|                                                                                                                 Encontrar a correspondência de um identificador                                                                                                                 |                                         \b (*\w+&#124;[\w-[0-9\\*]] \w\*) \b                                          |                                                       Corresponde a “type1”, mas não a “&type1” nem “#define”.                                                       |
+|                                                                                                                 Encontrar a correspondência de um identificador                                                                                                                 |                                         \b(*\w+&#124;[\w-[0-9\\*]]\w\*)\b                                          |                                                       Corresponde a “type1”, mas não a “&type1” nem “#define”.                                                       |
 |                                                                                                            Encontrar a correspondência de uma cadeia de caracteres entre aspas                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Encontrar a correspondência de uma cadeia de caracteres entre aspas simples ou duplas.                                                     |
 |                                                                                                             Encontrar a correspondência de um número hexadecimal                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Corresponde a “0xc67f”, mas não a “0xc67fc67f”.                                                           |
-|                                                                                                             Encontrar a correspondência de inteiros e decimais                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     Encontrar a correspondência de “1.333”.                                                                      |
+|                                                                                                             Encontrar a correspondência de inteiros e decimais                                                                                                             |                                               \b[0-9]\*\\.\*[0-9]+\b                                               |                                                                     Encontrar a correspondência de “1.333”.                                                                      |

@@ -1,14 +1,9 @@
 ---
-title: 'Como: Estender o processo de Build | Microsoft Docs'
-ms.custom: ''
+title: 'Como: estender o processo de Build | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
 - MSBuild, overriding DependsOn properties
@@ -18,15 +13,15 @@ ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e552b75ea5ba34004d0c53850f1af77a120b20cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050251"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758659"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Como: Estender o processo de build do Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Como estender o processo de build do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 
@@ -64,7 +59,7 @@ O processo de build [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é definido por
 |Nome de Destino|Descrição|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Tarefas inseridas em um desses destinos são executadas antes ou após a conclusão da compilação principal. A maioria das personalizações é realizada em um desses dois destinos.|
-|`BeforeBuild`, `AfterBuild`|Tarefas inseridas em um desses destinos serão executadas antes ou depois de todo o resto no build. **Observação:**  O `BeforeBuild` e `AfterBuild` destinos já estão definidos nos comentários no final da maioria dos arquivos de projeto. Isso permite que você adicione facilmente os eventos de pré e pós-build ao arquivo de projeto.|
+|`BeforeBuild`, `AfterBuild`|Tarefas inseridas em um desses destinos serão executadas antes ou depois de todo o resto no build. **Observação:** os destinos `BeforeBuild` e `AfterBuild` já estão definidos nos comentários no final da maioria dos arquivos de projeto. Isso permite que você adicione facilmente os eventos de pré e pós-build ao arquivo de projeto.|
 |`BeforeRebuild`, `AfterRebuild`|Tarefas inseridas em um desses alvos são executadas antes ou depois que a funcionalidade de recompilação do núcleo é invocada. A ordem de execução de destino em Microsoft.Common.targets é: `BeforeRebuild`, `Clean`, `Build` e `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Tarefas inseridas em um desses destinos são executadas antes ou depois da funcionalidade de limpeza do núcleo ser invocada.|
 |`BeforePublish`, `AfterPublish`|Tarefas inseridas em um desses destinos são executadas antes ou depois da funcionalidade de publicação do núcleo ser invocada.|

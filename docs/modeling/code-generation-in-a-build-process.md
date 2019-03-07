@@ -1,5 +1,5 @@
 ---
-title: Geração de código em um processo de build
+title: Geração de código em um processo de compilação
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,18 @@ helpviewer_keywords:
 - text templates, transforming by using msbuild
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281817"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324319"
 ---
 # <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de compilação
 
@@ -59,7 +60,7 @@ Se [seu servidor de compilação](/azure/devops/pipelines/agents/agents) é exec
 
 Você precisará editar o arquivo de projeto para configurar alguns dos recursos no MSBuild.
 
-Na **Gerenciador de soluções**, escolha **Unload** no menu de contexto do seu projeto. Isso permite que você edite o arquivo .csproj ou .vbproj no editor de XML.
+Na **Gerenciador de soluções**, escolha **Unload** do menu de atalho do seu projeto. Isso permite que você edite o arquivo .csproj ou .vbproj no editor de XML.
 
 Quando tiver terminado a edição, escolha **recarregar**.
 
@@ -78,8 +79,8 @@ Depois dessa linha, insira a importação de modelagem de texto:
 ```xml
 <!-- Optionally make the import portable across VS versions -->
   <PropertyGroup>
-    <!-- Get the Visual Studio version - defaults to 10: -->
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Get the Visual Studio version: -->
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
     <!-- Keep the next element all on one line: -->
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
@@ -296,5 +297,16 @@ Se você atualizar um arquivo incluído ou outro arquivo lido pelo modelo, o Vis
 
 ## <a name="see-also"></a>Consulte também
 
+::: moniker range="vs-2017"
+
 - Há boas diretrizes no modelo T4 do MSbuild no *% ProgramFiles (x86) %\Microsoft Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets Visual*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Há boas diretrizes no modelo T4 do MSbuild no *% ProgramFiles (x86) %\Microsoft Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets Visual*
+
+::: moniker-end
+
 - [Escrever um modelo de texto T4](../modeling/writing-a-t4-text-template.md)

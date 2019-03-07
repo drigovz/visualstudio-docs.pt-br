@@ -7,17 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, store
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7fb03dd67168867026c77a30bba412076c0b8408
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858646"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945307"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Depurando por meio do Visualizador de Repositório
 Com o visualizador Store, você pode examinar o estado de um *armazenar* usado pelo [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. O Visualizador de Store exibe todos os elementos de modelo de domínio que estão em um repositório específico, juntamente com propriedades de elementos e links entre elementos.

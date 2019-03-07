@@ -13,15 +13,13 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 8905470513f48bb284749a9fa0fb0e0fc73096f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067836"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914078"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Gerar e executar um teste de desempenho Web codificado
 
@@ -87,7 +85,7 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
 ## <a name="qa"></a>PERGUNTAS E RESPOSTAS
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>P: Posso executar mais de um teste por vez?
- **R:** Sim, use o menu de contexto no **Gerenciador de Soluções**.
+ **R:** Sim, use o menu do clique com o botão direito (contexto) no **Gerenciador de Soluções**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>P: Devo adicionar uma fonte de dados antes ou depois de gerar um teste codificado?
  **R:** É mais fácil adicionar uma [fonte de dados](../test/add-a-data-source-to-a-web-performance-test.md) antes de gerar o teste codificado, pois o código será gerado automaticamente para você.

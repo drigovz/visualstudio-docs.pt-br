@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f54589d70bc7cab3959d7f0a7ad2a84d3b028754
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e3c479e7e5ae706121e0513d825d57d1cb540c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877186"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939626"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 Todas as propriedades de domínio em uma linguagem específica de domínio (DSL) podem ser exibidas para o usuário no diagrama e no Gerenciador de linguagem e podem ser acessadas pelo código do programa. No entanto, as propriedades são diferentes da maneira que seus valores são armazenados.
@@ -45,7 +43,7 @@ Todas as propriedades de domínio em uma linguagem específica de domínio (DSL)
 
 4.  No menu **Compilar**, clique em **Compilar Solução**.
 
-     A seguinte mensagem de erro: "*YourClass* não contém uma definição para Get*YourProperty*."
+     Você receberá a seguinte mensagem de erro: "*YourClass* não contém uma definição para Get*YourProperty*."
 
 5.  Clique duas vezes a mensagem de erro.
 

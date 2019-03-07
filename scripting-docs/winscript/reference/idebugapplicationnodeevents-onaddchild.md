@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3df872cd14b6d7fcd455371d1601b2a4082fb39a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a211989202c0d5b5c0d6c99fe2d6fbb00978787
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726146"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088680"
 ---
 # <a name="idebugapplicationnodeeventsonaddchild"></a>IDebugApplicationNodeEvents::onAddChild
-Manipula o evento quando um nó filho é adicionado a um objeto de nó de aplicativo de depuração.  
+Manipula o evento quando um nó filho é adicionado a um objeto de nó do aplicativo de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onAddChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -48,9 +48,9 @@ HRESULT onAddChild(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método manipula o evento quando um nó filho é adicionado a um objeto de nó de aplicativo de depuração.  
+ Esse método manipula o evento quando um nó filho é adicionado a um objeto de nó do aplicativo de depuração.  
   
- Os implementadores do `IDebugApplicationNode` interface gerar este evento  
+ Os implementadores a `IDebugApplicationNode` interface gere este evento  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

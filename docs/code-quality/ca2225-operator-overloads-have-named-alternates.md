@@ -1,8 +1,6 @@
 ---
-title: 'CA2225: as sobrecargas do operador têm alternativas nomeadas'
+title: 'CA2225: Sobrecargas de operador têm alternativas nomeadas'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a12060752317a2b4c23ec2eba7e96e945be00db0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c12d7ed3fbfdfa5c61171061b9411db442341cdd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914574"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953107"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: as sobrecargas do operador têm alternativas nomeadas
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Sobrecargas de operador têm alternativas nomeadas
 
 |||
 |-|-|
@@ -45,21 +43,21 @@ ms.locfileid: "49914574"
 |+ (binário)|+|+ (binário)|Adicionar|
 |+=|+=|+=|Adicionar|
 |&|And|&|BitwiseAnd|
-|&=|E =|&=|BitwiseAnd|
+|&=|And=|&=|BitwiseAnd|
 |&#124;|Ou|&#124;|BitwiseOr|
-|&#124;=|Ou =|&#124;=|BitwiseOr|
+|&#124;=|Or=|&#124;=|BitwiseOr|
 |--|N/D|--|Decremento|
 |/|/|/|Divisão|
 |/=|/=|/=|Divisão|
 |==|=|==|Igual a|
 |^|Xor|^|Xor|
-|^=|XOR =|^=|Xor|
+|^=|Xor=|^=|Xor|
 |>|>|>|Comparar|
 |>=|>=|>=|Comparar|
 |++|N/D|++|Incremento|
 |<>|!=|Igual a|
-|<<|<<|<<|SHIFT esquerda|
-|<<=|<<=|<<=|SHIFT esquerda|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|Comparar|
 |<=|<=|\<=|Comparar|
 |&&|N/D|&&|LogicalAnd|
@@ -70,8 +68,8 @@ ms.locfileid: "49914574"
 |* (binário)|*|*|Multiplicar|
 |*=|N/D|*=|Multiplicar|
 |~|não|~|OnesComplement|
-|>>|>>|>>|SHIFT direita|
-=|N/D|>>=|SHIFT direita|
+|>>|>>|>>|RightShift|
+=|N/D|>>=|RightShift|
 |-(binário)|-(binário)|-(binário)|Subtração|
 |-=|N/D|-=|Subtração|
 |true|IsTrue|N/D|IsTrue (propriedade)|
@@ -97,12 +95,12 @@ ms.locfileid: "49914574"
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1046: não sobrecarregar operador Equals em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: Não sobrecarregar operador equals em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226: os operadores devem ter sobrecargas simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Os operadores devem ter sobrecargas simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: substituir Equals ao sobrecarregar o operador Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Substituir equals ao sobrecarregar operador equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: substituir GetHashCode em igualdades de substituição](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Substituir GetHashCode em igualdades de substituição](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
- [CA2231: sobrecarregar operador Equals ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231: o operador de sobrecarga é igual ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

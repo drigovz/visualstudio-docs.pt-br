@@ -1,9 +1,6 @@
 ---
-title: 'Como: criar soluções do SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar soluções do SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,21 +9,21 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22fda2415cfb9847c006a0bb4a0d0de576beb073
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: fe707f1b779978b26a53d11c32e92341e667be04
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756062"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867104"
 ---
-# <a name="how-to-build-sharepoint-solutions"></a>Como: criar soluções do SharePoint
+# <a name="how-to-build-sharepoint-solutions"></a>Como: Criar soluções do SharePoint
 
-Compilar seu SharePoint solução não é diferente de criação de outros aplicativos no Visual Studio. Para obter mais informações sobre a criação de aplicativos, consulte [compilar e criar no Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Para uma discussão sobre algumas considerações que são específicas para soluções do SharePoint, consulte [como: implantar e publicar uma solução do SharePoint em um site do SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
+Compilar seu SharePoint solução não é diferente de criação de outros aplicativos no Visual Studio. Para obter mais informações sobre a criação de aplicativos, consulte [compilar e criar no Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Para uma discussão sobre algumas considerações que são específicas para soluções do SharePoint, consulte [como: Implantar e publicar uma solução do SharePoint em um site do SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
 
 ## <a name="to-build-sharepoint-solutions"></a>Para criar soluções do SharePoint
 

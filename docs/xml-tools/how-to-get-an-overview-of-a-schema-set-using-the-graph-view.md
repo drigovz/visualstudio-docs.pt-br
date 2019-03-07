@@ -1,23 +1,21 @@
 ---
-title: 'Como: obter uma visão geral de um conjunto de esquema usando o modo de exibição de gráfico no esquema XML do Designer'
+title: 'Como: Obtenha uma visão geral de um conjunto de esquema usando o modo de exibição de gráfico no esquema XML do Designer'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 004d40992e24f0df651d93b43761add1d2efa673
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381414"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922024"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Como: obter uma visão geral de um esquema definido usando o modo de exibição de gráfico
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Como: Obtenha uma visão geral de um esquema definido usando o modo de exibição de gráfico
 
 Este tópico descreve como usar o [modo de exibição gráfico](../xml-tools/graph-view.md) para ver uma exibição de alto nível de nós em um conjunto de esquema e as relações entre os nós.
 

@@ -17,17 +17,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920918"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223007"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependência: referência
 
@@ -36,7 +34,7 @@ No Visual Studio, você pode usar um *diagrama de dependência* para visualizar 
 Para ver quais edições do Visual Studio dão suporte a esse recurso, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Não há suporte para diagramas de dependência para projetos do .NET Core no Visual Studio 2017.
+> Não há suporte para diagramas de dependência para projetos do .NET Core no Visual Studio.
 
 Você pode especificar as dependências desejadas ou existentes entre camadas. Essas dependências, que são representadas como setas, indicam quais camadas podem usar ou atualmente usam a funcionalidade representada por outras camadas. Organizando seu sistema em camadas que descrevem funções distintas e funções, um diagrama de dependência pode ajudar a tornar mais fácil para você entender, reutilizar e manter seu código.
 
@@ -50,7 +48,7 @@ Use um diagrama de dependência para ajudá-lo a executar as seguintes tarefas:
 
 -   Reforce a arquitetura pretendida durante o desenvolvimento e manutenção do seu código, incluindo validação com seu check-in e operações de compilação.
 
-Este tópico descreve os elementos que você pode usar em um diagrama de dependência. Para obter mais informações sobre como criar e desenhar diagramas de dependência, consulte [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de disposição em camadas, visite o [site padrões & práticas](http://go.microsoft.com/fwlink/?LinkId=145794).
+Este tópico descreve os elementos que você pode usar em um diagrama de dependência. Para obter mais informações sobre como criar e desenhar diagramas de dependência, consulte [diagramas de dependência: Diretrizes de](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de disposição em camadas, visite o [site padrões & práticas](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Leitura de diagramas de dependência
 
@@ -78,7 +76,7 @@ Você pode vincular cada camada para artefatos em sua solução, como projetos, 
 
 Para obter mais informações sobre a vinculação de camadas e artefatos, consulte:
 
--   [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
+-   [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)
 
 -   [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -95,7 +93,7 @@ No diagrama de dependência, abra o menu de atalho para uma ou mais camadas e, e
 |-|-|
 |**Categorias**|O tipo de artefato, como uma classe, namespace, arquivo de origem e assim por diante|
 |**Camada**|A camada que contém links para o artefato|
-|**Dá suporte à validação**|Se **verdadeira**, em seguida, o processo de validação de camada pode verificar que o projeto está de acordo com as dependências de ou para este elemento.<br /><br /> Se **falsos**, em seguida, o link não participa no processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md).|
+|**Dá suporte à validação**|Se **verdadeira**, em seguida, o processo de validação de camada pode verificar que o projeto está de acordo com as dependências de ou para este elemento.<br /><br /> Se **falsos**, em seguida, o link não participa no processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de dependência: Diretrizes de](../modeling/layer-diagrams-guidelines.md).|
 |**Identificador**|A referência para o artefato vinculado|
 
 ## <a name="see-also"></a>Consulte também

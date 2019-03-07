@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69e07c646bfa176f5e2dc07539f301a8ef5c5273
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8c10973bddef45321b9942afef05a696010433f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726946"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090214"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
-Modo síncrono executa a operação e retorna.  
+Forma síncrona executa a operação e retorna.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Execute(  
    IUnknown**  ppunkResult  
 );  
@@ -46,10 +46,10 @@ HRESULT Execute(
 |Valor|Descrição|  
 |-----------|-----------------|  
 |`S_OK`|O método foi bem-sucedido.|  
-|`E_ABORT`|A operação foi anulada por chamar o `IDebugSyncOperation::InProgressAbort` método.|  
+|`E_ABORT`|A operação foi anulada, chamando o `IDebugSyncOperation::InProgressAbort` método.|  
   
 ## <a name="remarks"></a>Comentários  
- O Gerenciador de processo de depuração nas chamadas de thread de destino a `Execute` método de forma síncrona.  
+ O Gerenciador de depuração do processo nas chamadas do thread de destino a `Execute` método forma síncrona.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)

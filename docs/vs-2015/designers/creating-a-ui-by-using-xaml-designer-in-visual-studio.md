@@ -1,14 +1,9 @@
 ---
 title: Criando uma interface de usuário usando o Designer XAML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -18,13 +13,13 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8928f725e144c980d3e625d557a71047959b8b9b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058815"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795163"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +87,9 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Exibição** Especifica diferentes resoluções e tamanhos de exibição para o aplicativo.
 
- **Orientação** Especifica diferentes orientações para o aplicativo: **Paisagem** ou **retrato**.
+ **Orientação** Especifica diferentes orientações para o aplicativo: **Paisagem** ou **Retrato**.
 
- **Borda** Especifica diferentes alinhamentos de borda para seu aplicativo: **Ambos**, **esquerda**, **direita**, ou **nenhum**.
+ **Borda** Especifica diferentes alinhamentos de borda para o aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
 
  **Alto Contraste** Visualize o aplicativo com base na configuração de contraste selecionada. Essa configuração, quando definida como um valor diferente do valor **Padrão**, substituirá a propriedade `RequestedTheme` definida no arquivo App.xaml.
 
@@ -143,4 +138,4 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
  À direita de cada valor da propriedade, está um *marcador de propriedade* que é exibido como símbolo de caixa. A aparência do marcador da propriedade indica se existe uma associação de dados ou um recurso aplicado à propriedade. Por exemplo, um símbolo de caixa branca indica um valor padrão, um símbolo de caixa preta normalmente indica que um recurso local foi aplicado, e uma caixa laranja geralmente indica que uma associação de dados foi aplicada. Quando você clica no marcador da propriedade, pode navegar para a definição de um estilo, abrir o construtor da associação de dados ou abrir o selecionador de recurso.
 
 ## <a name="see-also"></a>Consulte também
- [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [passo a passo: Associação de dados no Designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [passo a passo: Associando a dados no Designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

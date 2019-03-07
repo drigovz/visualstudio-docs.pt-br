@@ -1,23 +1,21 @@
 ---
-title: Como definir opções de nome de arquivo de dados de desempenho | Microsoft Docs
-ms.custom: ''
+title: 'Como: Definir opções de nome de arquivo de dados de desempenho | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f9d47107d8a5e0fb4c10e058c2fc4c7ca3ed5e
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 2b83b0aa083ca115797c9dc1cd8345d397307177
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844463"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626954"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Como definir opções de nome do arquivo de dados de desempenho
+# <a name="how-to-set-performance-data-file-name-options"></a>Como: Definir opções de nome de arquivo de dados de desempenho
 
 Por padrão, um arquivo de dados de criação de perfil (.*vsp*) é salvo usando a sintaxe a seguir:
 

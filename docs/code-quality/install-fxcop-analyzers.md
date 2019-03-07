@@ -1,22 +1,20 @@
 ---
 title: Instalar analisadores do FxCop
 ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7690d1c67797c3a13dc22364d93d8af686e4f90c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892045"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270570"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analisadores FxCop no Visual Studio
 
@@ -45,7 +43,7 @@ Use as diretrizes a seguir para determinar qual versão do pacote de analisadore
 
 | Versão do Visual Studio | Versão do pacote de analisador de FxCop |
 | - | - |
-| Visual Studio 2017 versão 15.5 e posterior | 2.6.2, por exemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
+| Visual Studio 2017 versão 15.5 e posterior | 2.6.3, por exemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3 |
 | Visual Studio 2017 versão 15.3 para 15.4 | 2.3.0-Beta1, por exemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
 | Visual Studio 2017 versão 15.0 para 15.2 | 2.0.0-Beta2, por exemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
 | Visual Studio 2015 atualização 2 e 3 | Versão 1.2.0-beta2, por exemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
@@ -81,7 +79,7 @@ No Visual Studio 2017 versão 15.5 e posteriores, você pode instalar o [2017 de
 
 1. Selecione **modificar** para iniciar a instalação.
 
-1. Depois de um ou dois minutos, a instalação for concluída. Selecione **fechar**.
+1. Depois de um ou dois minutos, a instalação for concluída. Selecione **Fechar**.
 
 1. Abra o Visual Studio novamente.
 
@@ -90,5 +88,5 @@ Se você deseja verificar se a extensão é instalada, selecione **ferramentas**
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral dos analisadores de Roslyn no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Usar os analisadores de Roslyn no Visual Studio](../code-quality/use-roslyn-analyzers.md)
+- [Usar Analisadores do Roslyn no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 - [Migrar do FxCop para analisadores de Roslyn](../code-quality/fxcop-analyzers.yml)

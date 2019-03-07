@@ -1,14 +1,9 @@
 ---
-title: Objeto&#39;não oferece suporte a esta propriedade ou método | Microsoft Docs
-ms.custom: ''
+title: Objeto não dá suporte a esta propriedade ou método | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT438
 dev_langs:
@@ -16,18 +11,17 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c87d7d1c23682d014924c5c9b948133d8391c72
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 02084c6989a3c3948ddbc0bd0ff2999a69ba70cb
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24633406"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842981"
 ---
-# <a name="object-doesn39t-support-this-property-or-method"></a>Objeto&#39;não oferece suporte a esta propriedade ou método
+# <a name="object-doesnt-support-this-property-or-method"></a>O objeto não dá suporte a essa propriedade ou método
 Você especificou uma propriedade ou um método que não existe para esse objeto. Nem todos os objetos são compatíveis com todas as propriedades e todos os métodos.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  

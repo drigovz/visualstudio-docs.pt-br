@@ -1,26 +1,24 @@
 ---
-title: 'Designer de fluxo de trabalho - como: adicionar comentários a um fluxo de trabalho'
+title: 'Designer de fluxo de trabalho - como: Adicionar comentários a um fluxo de trabalho'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ae0d3390be709dfe07f174bbb9754b986cdafc5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883285"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913685"
 ---
-# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Como: Adicionar comentários a um fluxo de trabalho em Designer de Fluxo de Trabalho
+# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Como: Adicionar comentários a um fluxo de trabalho no Designer de Fluxo de Trabalho
 
 Para facilitar a criação de fluxos de trabalho maiores, mais complicados, o .NET Framework 4.5 permite que o desenvolvedor adiciona anotações aos seguintes tipos de item no designer:
 

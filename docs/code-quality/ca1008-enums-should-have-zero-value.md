@@ -1,8 +1,6 @@
 ---
-title: 'CA1008: os enums devem ter valor zero'
+title: 'CA1008: Enumerações devem ter valor zero'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1008
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 3503a73c-360c-416d-8ee4-c2aa44365a05
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 60c5e6e93c8ededc7d08d3b917f8066148f133f7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 4d8d7646ddb294cef27b58b5b5e212c33b11fb46
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551789"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955291"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: os enums devem ter valor zero
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enumerações devem ter valor zero
 
 |||
 |-|-|
@@ -64,11 +62,11 @@ O exemplo a seguir mostra duas enumerações que atendem à regra e uma enumera�
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: não nomear valores de enum como 'Reservados'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: não usar valores de enum como prefixo com o nome do tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
-- [CA1028: o armazenamento de enum deve ser Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
-- [CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: Não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1700: Não nomeie valores de enumeração 'Reservados'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Valores enum como prefixo com o nome do tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1028: Armazenamento de enum deve ser Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+- [CA1027: Marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Consulte também
 

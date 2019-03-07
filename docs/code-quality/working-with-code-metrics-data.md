@@ -1,8 +1,6 @@
 ---
 title: Janela de métricas de código
 ms.date: 12/12/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa1de7b3c4a029038072e84bea1918ea33031db
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967162"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918371"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Use a janela de resultados de métricas de código
 
@@ -111,4 +109,4 @@ Para obter mais informações sobre os quadros de Azure itens de trabalho, consu
 ## <a name="see-also"></a>Consulte também
 
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
-- [Como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Como: Gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

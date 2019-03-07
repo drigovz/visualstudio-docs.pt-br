@@ -2,32 +2,26 @@
 title: Editar código do Python
 description: Para o Python, o Visual Studio fornece funcionalidades avançadas do IntelliSense, de snippets de código e navegação, juntamente com formatação, linting e refatoração.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062810"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155390"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
 Como você passa muito tempo dedicado ao desenvolvimento no editor de códigos, o [Suporte para Python no Visual Studio](installing-python-support-in-visual-studio.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação.
 
 O editor também é integrado à janela **Interativa** no Visual Studio, facilitando a troca do código entre as duas. Confira a [Etapa 3 do Tutorial: Usar a janela REPL Interativa](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usar a janela Interativa – comando Enviar para Interativa](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obter detalhes.
-
-|   |   |
-|---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) para uma demonstração da edição do código Python (2min30s).|
 
 Para obter uma documentação geral sobre edição do código no Visual Studio, confira [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md). Confira também [Estrutura de tópicos](../ide/outlining.md), que ajuda você a manter o foco em seções específicas do código.
 
@@ -196,7 +190,7 @@ O suporte do Python no Visual Studio fornece vários meios para navegar rapidame
 
 A barra de navegação é exibida na parte superior de cada janela do editor e inclui uma lista de dois níveis de definições. A lista suspensa à esquerda contém definições de nível superior de classe e função no arquivo atual; a lista suspensa à direita exibe uma lista de definições dentro do escopo mostrado à esquerda. Conforme você usa o editor, as listas são atualizadas para mostrar o contexto atual e você também pode selecionar uma entrada dessas listas para ir diretamente para ela.
 
-![Navigation Bar] in the Visual Studio editor(media/code-editing-navigation-bar.png)
+![Barra de navegação no editor do Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Para ocultar a barra de navegação, acesse **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Gerais** e desmarque **Configurações** > **Barra de navegação**.

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/11/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Como atribuir assinaturas do Visual Studio a usuários finais, para parceiros do MPN.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949104"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842466"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciando assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
 
@@ -33,7 +31,7 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
 4. Selecione o Primeiro, Segundo ou Terceiro **Contato Técnico** e **Salvar**
 5. Selecione **Requisitos e Ativos**
 6. Selecione **Privilégios**
-7. Selecione **Assinaturas do Visual Studio** (observação: atualização pendente da assinatura do Visual Studio)
+7. Selecione **Assinaturas do Visual Studio** (Observação: Atualização da assinatura do Visual Studio pendente)
 8. Selecione o **Indivíduo** desejado
 9. Clique em **Enviar**
 10. A pessoa receberá um email

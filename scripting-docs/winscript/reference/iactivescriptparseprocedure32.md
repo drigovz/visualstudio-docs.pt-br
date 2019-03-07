@@ -10,17 +10,17 @@ ms.assetid: 387a856b-f5dc-4371-8620-bd574e046c2c
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 8cd253db8cb63adad093b84c4bf47df07bd66d69
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10cdff328216d06a3326dd3595ef8fc78bc9cfc9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645866"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348107"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
-Se o mecanismo de Script do Windows permite que o texto do código de origem para obter os procedimentos a serem adicionados ao script, ele implementa o `IActiveScriptParseProcedure32` interface. Interpretado para linguagens de scripts com nenhum ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IActiveScriptParse32` ou `IPersist`*) para adicionar os procedimentos de script ao namespace.  
+Se o mecanismo de Script do Windows permite que o texto do código fonte para obter os procedimentos a serem adicionados ao script, ele implementa o `IActiveScriptParseProcedure32` interface. Para linguagens de script interpretadas que não têm nenhum ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IActiveScriptParse32` ou `IPersist`*) para adicionar os procedimentos de script ao namespace.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |||  
 |-|-|  

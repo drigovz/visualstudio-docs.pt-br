@@ -1,20 +1,18 @@
 ---
 title: Testar aplicativos do SharePoint com testes de IU codificados
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8b2851d436e9cef64f8a03c3f794d07f12cd0cf8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895438"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912749"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testar aplicativos do SharePoint com testes de IU codificados
 

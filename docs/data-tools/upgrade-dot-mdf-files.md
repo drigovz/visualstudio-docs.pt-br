@@ -11,17 +11,15 @@ helpviewer_keywords:
 - upgrading to LocalDB
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 875208d068c791c0238c110ea0e83b04e18348fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: 841620330c10bae3cbced7710930af8c72456c31
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117934"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943773"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
 
@@ -71,7 +69,7 @@ Antes de atualizar um banco de dados, considere os seguintes critérios:
 
         -   Para usar uma versão específica: `(localdb)\ProjectsV12` ou `(localdb)\ProjectsV13`, onde V12 é LocalDB 2014, e V13 é LocalDB 2016.
 
-    -   **Anexar um arquivo de banco de dados**: O caminho físico do primário *mdf* arquivo.
+    -   **Anexar um arquivo do banco de dados**: O caminho físico da réplica primária *mdf* arquivo.
 
     -   **Nome lógico**: O nome que você deseja usar com o arquivo.
 

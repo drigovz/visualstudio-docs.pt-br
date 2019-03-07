@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d384cea22b79b2a7ca9af3424d053fb3062d79a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f280e2b869a3046ecb2d3fac37facdcc1bfeb7fb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729536"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349875"
 ---
 # <a name="iremotedebugapplication110-interface"></a>Interface IRemoteDebugApplication110
-Usado para fornecer novos recursos que podem ser chamados por script depuradores e chamadores em processo.  
+Usado para fornecer novos recursos que podem ser chamados por depuradores de script e os chamadores em processo.  
   
 > [!IMPORTANT]
 >  Esta interface é implementada pelo PDM v11.0 e superiores. Localizado em. activdbg100.h.  

@@ -1,8 +1,6 @@
 ---
-title: 'CA1061: não ocultar métodos de classe base'
+title: 'CA1061: Não ocultar métodos de classe base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1061
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 0bda9dc8-87b4-4038-ab9d-563298387466
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da132ba941c448f6323199d8baca86841d192ecf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: faa225178a50be080f92a728998e914025c17168
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924116"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947595"
 ---
-# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: não ocultar métodos de classe base
+# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Não ocultar métodos de classe base
 
 |||
 |-|-|

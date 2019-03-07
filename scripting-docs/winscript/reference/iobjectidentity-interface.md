@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e85c5dac657684cfd3113ba403ebb25a75b49a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 375b0be54e1f9a71dd5f70cf70c66a26886af127
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728906"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345624"
 ---
 # <a name="iobjectidentity-interface"></a>Interface IObjectIdentity
 Além dos métodos herdados de `IUnknown`, o `IObjectIdentity` interface expõe os métodos a seguir.  

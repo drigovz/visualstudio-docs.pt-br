@@ -2,9 +2,7 @@
 title: Definir padrões para implantações empresariais
 description: Saiba mais sobre as políticas de domínio e outras operações de configuração de implantação corporativa do Visual Studio.
 ms.date: 05/05/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - gpo
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a173a378ba2165963b8ea9b44e7391807584886b
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159549"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910812"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Definir padrões para implantações empresariais do Visual Studio 2017
 

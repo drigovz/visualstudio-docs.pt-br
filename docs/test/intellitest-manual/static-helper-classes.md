@@ -1,22 +1,20 @@
 ---
 title: Classes auxiliares estáticas | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5c635c8fb3def61b8278b7b7c4b66aa196d82b8
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c639175e74d13a35724a4388505a177c8b60db0b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000471"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912450"
 ---
 # <a name="static-helper-classes"></a>Classes auxiliares estáticas
 
@@ -132,7 +130,7 @@ public static class MathEx {
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -150,7 +148,8 @@ Normalmente, o IntelliTest tenta abranger todos os caminhos de execução do có
 
 **Exemplo**
 
-Este exemplo mostra a implementação do método **PexAssume.Arrays.ElementsAreNotNull**. No método, você ignora as restrições no tamanho do valor da matriz para evitar que o IntelliTest tente gerar diferentes tamanhos de matriz. As restrições são ignoradas somente aqui. Se o código testado tiver um comportamento diferente de comprimentos de matriz diferente, o IntelliTest não poderá gerar matrizes de tamanhos diferentes das restrições no código testado.
+Este exemplo mostra a implementação do método **PexAssume.Arrays.ElementsAreNotNull**.
+No método, você ignora as restrições no tamanho do valor da matriz para evitar que o IntelliTest tente gerar diferentes tamanhos de matriz. As restrições são ignoradas somente aqui. Se o código testado tiver um comportamento diferente de comprimentos de matriz diferente, o IntelliTest não poderá gerar matrizes de tamanhos diferentes das restrições no código testado.
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31e304cfbb0ed7cd19b832d7ed7c33ccc2c930c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640576"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094764"
 ---
 # <a name="documentnametype-enumeration"></a>Enumeração DOCUMENTNAMETYPE
 Descreve os tipos para se obter um documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef enum tagDOCUMENTNAMETYPE {  
    DOCUMENTNAMETYPE_APPNODE,  
    DOCUMENTNAMETYPE_TITLE,  
@@ -47,7 +47,7 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
 |DOCUMENTNAMETYPE_TITLE|Obtém o nome como ele aparece na barra de título do visualizador.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Obtém o nome do arquivo sem um caminho.|  
 |DOCUMENTNAMETYPE_URL|Obtém a URL do documento.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Obtém o título acrescentado com enumeração para identificação.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Obtém o título acrescentado com a enumeração para identificação.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

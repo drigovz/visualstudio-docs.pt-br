@@ -1,14 +1,9 @@
 ---
 title: Relatório de perfil de tempo de bloqueio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 31be25e5fb41f2e7a92ee2c19803d74c442fcad4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807017"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782288"
 ---
 # <a name="blocking-time-profile-report"></a>Bloqueando relatório de perfil de tempo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
 |Tempo de bloqueio inclusivo|O tempo total de bloqueio gasto para todas as pilhas acumuladas para esse nível de árvore de pilha de chamadas. O número inclusivo é a soma do tempo de bloqueio exclusivo para essa função e o tempo de bloqueio exclusivo para todos os nós filho.|  
 |Tempo de bloqueio exclusivo|O tempo total de bloqueio gasto durante o qual essa função é o nível mais baixo da pilha de chamadas. Uma entrada da pilha de chamadas exclusiva que tem um alto tempo de bloqueio exclusivo pode ser uma função de interesse.|  
 |Categoria de API/espera|Mostrado somente para funções do nível mais baixo da pilha de chamadas. Quando a assinatura da chamada de bloqueio é reconhecida, o nome da API do bloqueio é fornecido. Se a assinatura não for reconhecida, as informações relatadas pelo kernel serão fornecidas.|  
-|Detalhes|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|  
+|Details|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|  
   
 ### <a name="synchronization"></a>Sincronização  
  O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de sincronização](../profiling/synchronization-time.md)  
@@ -68,6 +63,3 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
-
-
-

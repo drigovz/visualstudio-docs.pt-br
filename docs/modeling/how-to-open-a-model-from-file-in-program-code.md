@@ -1,22 +1,20 @@
 ---
-title: Como abrir um modelo a partir de um arquivo no código do programa
+title: 'Como: Abrir um modelo de um arquivo no código do programa'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4884aba3deb3a450b373a6d19abd9c7cf5bdbff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812485"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945281"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Como abrir um modelo a partir de um arquivo no código do programa
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Como: Abrir um modelo de um arquivo no código do programa
 Você pode abrir modelos DSL em qualquer aplicativo.
 
  De uma extensão do Visual Studio, você pode usar o ModelBus para essa finalidade. ModelBus fornece um mecanismo padrão para fazer referência a um modelo ou elementos em um modelo e para localizar o modelo se ele foi movido. Para obter mais informações, consulte [integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).

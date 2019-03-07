@@ -1,8 +1,6 @@
 ---
 title: Personalizar layouts de janela
 ms.date: 01/23/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -22,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7719a355e95473e5a077fc935431c54fe1facdac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389637"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927536"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
 
@@ -58,7 +56,7 @@ Quando é necessário exibir ou editar dois locais ao mesmo tempo em um document
 
 ### <a name="toolbars"></a>Barras de ferramentas
 
-As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, consulte [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, veja [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arrange-and-dock-windows"></a>Organizar e encaixar janelas
 
@@ -186,4 +184,4 @@ Esses layouts usam perfis móveis automaticamente entre edições do Visual Stud
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como mover-se no IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)
+- [Como: Deslocar-se pelo IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

@@ -4,37 +4,30 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/29/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba como localizar seu PCN (número do cliente) ou seu número de autorização
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637013"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844341"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Como localizar meu "Número de Cliente Público" (PCN) ou Número de Autorização?
 
-Para concluir a integração da sua organização ao portal de administração de assinatura, você precisará de seu PCN (número do cliente) ou seu número de autorização. Este artigo fornece as etapas para localizar esses números para sua organização.  
+Para concluir a integração da sua organização ao portal de administração de assinatura, você precisará de seu PCN (número do cliente) ou seu número de autorização. Este artigo fornece as etapas para localizar esses números para sua organização.
 
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>Para localizar o PCN ou o número de autorização
 
-1.  Faça logon no Centro de Empresas da Microsoft em: [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter).
-
-2. Na guia Assinaturas, selecione **Assinaturas do Visual Studio**.
+O Centro de Atendimento de Licença por Volume não fornece mais acesso ao seu PCN.  Para ter acesso, contate o Suporte de Assinaturas do Visual Studio.
+1. Visite https://visualstudio.microsoft.com/subscriptions/support/#talktous
+2. Toque no botão **Conta, Assinatura e Suporte à cobrança**.
     > [!div class="mx-imgBorder"]
-    > ![Escolher assinaturas no VLSC](_img/vlsc/vlsc-subscriptions.png)
-
-3. O Número de Cliente público, ou PCN, está localizado na metade da página.
-    > [!div class="mx-imgBorder"]
-    > ![Localizar o PCN no VLSC](_img/vlsc/vlsc-pcn.png)
-
-    
-Se você não visualizar a página acima e for redirecionado para a página de logon do Visual Studio, copie e cole o link a seguir no navegador: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
+    > ![Escolher suporte à assinatura](_img/vlsc/vlsc-pcn.png)
+3. Escolha o país na lista suspensa.
+4. Escolha, na lista de opções de suporte disponíveis em seu país, o contato de um agente de suporte que pode pesquisar o PCN para você.
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Se eu tiver mais de um PCN, qual deles deverei usar?
 
-Se tiver mais de um PCN (Número de Cliente Público), você receberá um email com uma URL de integração exclusiva para cada PCN. Cada URL exclusiva só funciona com o PCN correspondente, os últimos três dígitos que também são fornecidos no mesmo email. Você precisará concluir o processo de integração por meio do link exclusivo em cada email, para cada PCN. 
+Se tiver mais de um PCN (Número de Cliente Público), você receberá um email com uma URL de integração exclusiva para cada PCN. Cada URL exclusiva só funciona com o PCN correspondente, os últimos três dígitos que também são fornecidos no mesmo email. Você precisará concluir o processo de integração por meio do link exclusivo em cada email, para cada PCN.

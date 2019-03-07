@@ -1,21 +1,19 @@
 ---
 title: Atributo (propriedade dinâmica de XElement)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 8440fc7d-b3b4-4726-8ec8-492e6af79642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caacdd787f1765721d281db885364aafc36c5183
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 0ec27fe2d7824ca32cbf97dbabac8b7ea6c4aed6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890003"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948492"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Atributo (propriedade dinâmica de XElement)
 
@@ -39,4 +37,4 @@ Esta propriedade é equivalente ao método de <xref:System.Xml.Linq.XElement.Att
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>
 - [Propriedades dinâmicas da classe XElement](../designers/xelement-class-dynamic-properties.md)
-- [Value](../designers/value-xattribute-dynamic-property.md)
+- [Valor](../designers/value-xattribute-dynamic-property.md)

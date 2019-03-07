@@ -1,0 +1,48 @@
+items:
+- name: Tutoriais sobre o Visual Basic
+  href: index.yml
+  items:
+  - name: Visão geral
+    items:
+    - name: Sobre o Visual Studio
+      href: visual-studio-ide.md
+    - name: Sobre o editor de código
+      href: tutorial-editor.md
+    - name: Sobre projetos e soluções
+      href: tutorial-projects-solutions.md
+    - name: Mais recursos do Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+  - name: Criar um aplicativo
+    items:
+    - name: Criar um aplicativo do console
+      href: tutorial-console.md
+    - name: Criar um aplicativo UWP
+      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    - name: Criar um aplicativo WPF
+      href: tutorial-wpf.md
+    - name: Como criar um aplicativo Web
+      href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
+    - name: Criar um aplicativo do Windows Forms
+      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    expanded: true
+  - name: Aprender a usar o Visual Studio
+    items:
+    - name: Escrever e editar o código
+      href: tutorial-editor.md
+    - name: Compilar e criar
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Depurar seu código
+      href: ../visual-basic/tutorial-debugger.md
+    - name: Teste de unidade
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    - name: Implantar o projeto
+      href: ../../deployment/index.md
+    - name: Acessar dados
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    expanded: true
+ms.openlocfilehash: 6ee764349953a03bcb24902adaf51bb2c71f702b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223410"

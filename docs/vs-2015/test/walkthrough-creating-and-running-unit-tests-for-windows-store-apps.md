@@ -1,14 +1,9 @@
 ---
-title: 'Passo a passo: Criar e executar testes de unidade para aplicativos da Windows Store | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Criando e executando testes de unidade para aplicativos da Windows Store | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754868"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Explicação passo a passo: Criando e executando testes de unidade de aplicativos da Windows Store
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Passo a passo: Criando e executando testes de unidade para aplicativos da Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gerenciados por testes de unidade e inclui modelos de biblioteca de teste de unidade para o Visual C#, Visual Basic e Visual C++.  
@@ -119,7 +114,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
     >  Você deve compilar a solução para atualizar a lista de testes de unidade no Gerenciador de Testes.  
   
     > [!WARNING]
-    >  Problema conhecido do Visual Studio: você deve abrir o Gerenciador de Testes antes de compilar o projeto de teste.  
+    >  Visual Studio problema conhecido: Você deve abrir o Gerenciador de testes antes de compilar o projeto de teste.  
   
 3.  No Gerenciador de Testes, escolha o teste de unidade que você criou.  
   
@@ -144,7 +139,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="videos"></a>Vídeos  
- [Canal 9: teste de unidade dos aplicativos da Windows Store criados com XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9 Aplicativos da Windows Store criados com XAML de teste de unidade](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Fóruns  
  [Teste de unidade do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -155,6 +150,3 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 ## <a name="see-also"></a>Consulte também  
  [Testar aplicativos da Store com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Compilar e testar um aplicativo da Windows Store usando o Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

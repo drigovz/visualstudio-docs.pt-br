@@ -1,8 +1,6 @@
 ---
-title: 'CA1903: usar apenas a API da estrutura de destino'
+title: 'CA1903: Usar apenas a API da estrutura de destino'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 086c4546d72042d2b2c7c1789cdf1695bc54b81d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822807"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955382"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: usar apenas a API da estrutura de destino
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar apenas a API da estrutura de destino
 
 |||
 |-|-|
@@ -43,12 +41,12 @@ ms.locfileid: "49822807"
 |||
 |-|-|
 |Quando é a estrutura de destino|É acionado em usos de membros, introduzidos no|
-|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|
-|.NET Framework 3.0|.NET framework 2.0 SP1, o .NET Framework 2.0 SP2, o .NET Framework 3.0 SP1 e o .NET Framework 3.0 SP2|
+|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|
+|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
 |.NET Framework 3,5|.NET Framework 3,5 SP1|
 |.NET Framework 4|N/D|
 
- Para alterar a estrutura de destino do projeto, consulte [visando uma versão específica do .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Para alterar a estrutura de destino do projeto, consulte [visando uma versão específica do .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para remover a dependência no service pack, remova todos os usos do novo membro ou tipo. Se essa é uma dependência deliberada, suprimir o aviso ou desative essa regra.
@@ -69,4 +67,4 @@ ms.locfileid: "49822807"
 ## <a name="see-also"></a>Consulte também
 
 - [Avisos de portabilidade](../code-quality/portability-warnings.md)
-- [Direcionamento de uma versão específica do .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Direcionamento de uma versão específica do .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

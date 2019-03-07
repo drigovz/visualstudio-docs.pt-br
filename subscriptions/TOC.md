@@ -18,14 +18,14 @@
 ### [Benefícios do assinante](subscriber-benefits.md)
 ## Usar os benefícios do assinante
 ### Ferramentas
-#### [Visual Studio IDE ](vs-ide-benefit.md)
+#### [Visual Studio IDE](vs-ide-benefit.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Crédito Azure](vs-azure.md)
 #### [Assinatura de Desenvolvedor do Office 365](vs-office-dev.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
-#### [Parasoft ](vs-parasoft.md)
+#### [Parasoft](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Enterprise Mobility & Security](vs-ems.md)
 #### [Conta de Desenvolvedor do Windows](vs-windows-dev.md)
@@ -44,7 +44,6 @@
 #### [Chat de Consultoria do Azure](vs-azure-advisory-chat.md)
 #### [Comunidade do Azure](vs-azure-community.md)
 #### [Suporte técnico](vs-tech-support.md)
-#### [Suporte da Comunidade de Desenvolvedores](vs-priority-support.md)
 #### [Suporte do Concierge](vs-concierge-chat.md)
 ## Gerenciando assinaturas
 ### [Responsabilidades do administrador](admin-responsibilities.md)
@@ -82,7 +81,7 @@
 #### [Gerenciar assinaturas para o MPN](manage-mpn-subscriptions.md)
 #### [Microsoft para startups](program-startups.md)
 ## Recursos
-### [White paper de licenciamento do Visual Studio](http://aka.ms/vslicensing)
+### [White paper de licenciamento do Visual Studio](https://aka.ms/vslicensing)
 ### [Comparar opções e preços de assinatura](https://visualstudio.microsoft.com/vs/pricing)
 ### [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ### [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

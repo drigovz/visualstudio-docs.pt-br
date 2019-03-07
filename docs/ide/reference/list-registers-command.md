@@ -1,8 +1,6 @@
 ---
 title: Comando Listar Registros
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listregisters
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce91abde91edf989b33c476b042abaf16c685df0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fb1a2361534f167a0b88b3f1b5b38c005915243d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704896"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934465"
 ---
 # <a name="list-registers-command"></a>Comando Listar Registros
 Exibe o valor dos registros selecionados e permite modificar a lista de registros a mostrar.
@@ -70,5 +68,5 @@ r /Display Flags
 ## <a name="see-also"></a>Consulte também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Noções básicas sobre depuração: janela Registros](../../debugger/debugging-basics-registers-window.md)
-- [Como usar a janela Registros](../../debugger/how-to-use-the-registers-window.md)
+- [Noções básicas de depuração: janela Registros](../../debugger/debugging-basics-registers-window.md)
+- [Como: Usar a janela Registros](../../debugger/how-to-use-the-registers-window.md)

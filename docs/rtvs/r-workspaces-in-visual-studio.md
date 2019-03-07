@@ -2,20 +2,18 @@
 title: Workspaces R
 description: Como controlar onde o código R é executado usando workspaces no Visual Studio.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 11b5086c934b433d4e28095c1d50471ea44e15a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919293"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948141"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Controlar onde o código R é executado com workspaces
 
@@ -35,7 +33,7 @@ O comando **Ferramentas do R** > **Sessão** > **Redefinir** e o botão de barra
 
 ## <a name="local-workspaces"></a>Workspaces locais
 
-A lista de workspaces locais exibe todos os interpretadores de R instalados em seu computador. 
+A lista de workspaces locais exibe todos os interpretadores de R instalados em seu computador.
 
 Quando o Visual Studio é iniciado, ele tenta detectar automaticamente todas as versões do R que você instalou, examinando a chave do Registro **HKEY_LOCAL_MACHINE\Software\R-Core\\**. Como essa verificação é feita apenas na inicialização, você precisará reiniciar o Visual Studio se instalar um novo interpretador de R.
 
@@ -130,7 +128,7 @@ As [Propriedades do projeto](r-projects-in-visual-studio.md#project-properties) 
 
 ![Guia de execução de propriedades do projeto com configurações de transferência de arquivo](media/workspaces-remote-file-transfer-filter-settings.png)
 
-Aqui, a propriedade **Transferir arquivos em execução** determina se as RTVS copiam os arquivos do projeto automaticamente. O valor de **Arquivos para transferir** filtra exatamente quais arquivos são transferidos. O padrão é copiar somente os arquivos *.R*, *.Rmd*, *.sql*, *.md* e *.cpp*. Esse comportamento é feito para evitar a cópia acidental de grandes arquivos de dados para o servidor em todas as execuções. 
+Aqui, a propriedade **Transferir arquivos em execução** determina se as RTVS copiam os arquivos do projeto automaticamente. O valor de **Arquivos para transferir** filtra exatamente quais arquivos são transferidos. O padrão é copiar somente os arquivos *.R*, *.Rmd*, *.sql*, *.md* e *.cpp*. Esse comportamento é feito para evitar a cópia acidental de grandes arquivos de dados para o servidor em todas as execuções.
 
 ## <a name="copy-files-from-a-remote-workspace"></a>Copiar arquivos de um workspace remoto
 

@@ -1,14 +1,9 @@
 ---
 title: 'Como: Alterar fontes e cores'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -16,13 +11,13 @@ ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eee3b8a72ab530e4f480fb4927736e809488cb84
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 017494f4241c74f2c319f918433f1072b7097a9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760341"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Como: Alterar fontes e cores no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "53062503"
 É possível personalizar a cor do quadro e das janelas de ferramentas do IDE no Visual Studio de diversas maneiras.
 
 > [!TIP]
->  Para obter informações sobre como alterar as cores do editor de código, consulte [como: Alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+>  Para obter informações sobre como alterar as cores do editor de códigos, confira [Como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Alterar o tema de cores do IDE
 
@@ -71,4 +66,4 @@ ms.locfileid: "53062503"
 5.  Na lista **Tamanho**, escolha um tamanho de texto e, em seguida, escolha o botão **OK**.
 
 ## <a name="see-also"></a>Consulte também
- [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [como: Alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).

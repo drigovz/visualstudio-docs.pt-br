@@ -1,20 +1,18 @@
 ---
 title: Usando controles HTML5 em testes de IU codificados
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896179"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951872"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 
@@ -34,54 +32,54 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 ## <a name="audio-control"></a>Controle de áudio
 
-**Controle de áudio:** ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.
+**Controle de áudio:** Ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.
 
 ![Controle do HTML5 áudio](../test/media/codedui_html5_audio.png)
 
 |Ação|Gravando|Código gerado|
 |-|---------------|-|
-|**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Busca em uma hora específica no áudio**|Seek \<name> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Pausar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Desativar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Mute \<name> Audio|HtmlAudio.Mute()|
-|**Ativar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Unmute \<name> Audio|HtmlAudio.Unmute()|
+|**Pausar áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Pause \<name> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Desativar áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Mute \<name> Audio|HtmlAudio.Mute()|
+|**Ativar áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Unmute \<name> Audio|HtmlAudio.Unmute()|
 |**Alterar volume de áudio**|Definir volume de \<name> Audio to 79%|HtmlAudio.SetVolume(float)|
 
 Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) para obter uma lista de propriedades às quais você pode adicionar uma declaração.
 
- **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.
+ **Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.
 
- **Propriedades de filtro:** as propriedades de filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.
+ **Propriedades do filtro:** As propriedades do filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.
 
 > [!NOTE]
 > O tempo de busca de Seek e Pause pode ser significativo. Durante a reprodução, o teste de IU codificado aguardará até que o tempo especificado em `(TimeSpan)` antes da pausa do áudio. Se por alguma circunstância especial, o tempo especificado tiver passado antes de atingir o comando Pause, uma exceção será lançada.
 
 
 ## <a name="video-control"></a>Controle de vídeo
- **Controle de vídeo:** ações no controle de vídeo HTML5 são registradas e reproduzidas corretamente.
+ **Controle de vídeo:** Ações no controle de vídeo do HTML5 são registradas e reproduzidas corretamente.
 
  ![Controle do HTML5 vídeo](../test/media/codedui_html5_video.png)
 
 |Ação|Gravando|Código gerado|
 |-|---------------|-|
-|**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Busca em uma hora específica no vídeo**|Seek \<name> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Pausar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Desativar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Mute \<name> Video|HtmlVideo.Mute()|
-|**Ativar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Unmute \<name> Video|HtmlVideo.Unmute()|
+|**Pausar vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Pause \<name> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Desativar vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Mute \<name> Video|HtmlVideo.Mute()|
+|**Ativar vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Unmute \<name> Video|HtmlVideo.Unmute()|
 |**Alterar volume de vídeo**|Definir volume de \<name> Video to 79%||
 
 Confira [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) para obter uma lista de propriedades às quais você pode adicionar uma declaração.
 
- **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.
+ **Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.
 
- **Propriedades de filtro:** as propriedades de filtro para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.
+ **Propriedades do filtro:** As propriedades de pesquisa para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.
 
 > [!NOTE]
 > Se você Avançar ou retroceder rapidamente o vídeo usando rótulos-30s ou +30s, isso será agregado para buscar o momento apropriado.
 
 ## <a name="progressbar"></a>ProgressBar
- **Controle de ProgressBar:** a ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle. Para obter mais informações, confira [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **Controle ProgressBar:** A ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle. Para obter mais informações, confira [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![Controle ProgressBar do HTML5](../test/media/codedui_html5_progressbar.png)
 

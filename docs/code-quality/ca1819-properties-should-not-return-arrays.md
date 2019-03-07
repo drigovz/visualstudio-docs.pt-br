@@ -1,8 +1,6 @@
 ---
-title: 'CA1819: as propriedades não devem retornar matrizes'
+title: 'CA1819: Propriedades não devem retornar matrizes'
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 99fd9627c06b11dae9348a85f417cf152ac1c8c9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859027"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919203"
 ---
-# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: as propriedades não devem retornar matrizes
+# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Propriedades não devem retornar matrizes
 
 |||
 |-|-|
@@ -92,4 +90,4 @@ O exemplo a seguir corrige a violação, alterando a propriedade para retornar u
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1024: usar propriedades quando apropriado](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Usar propriedades quando apropriado](../code-quality/ca1024-use-properties-where-appropriate.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 24aa5ad2b780d5ff61efcde4d24b6700bb5b353e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728516"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092983"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 Enumera os membros do objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetNextDispID(  
    DWORD grfdex,  
    DISPID id,  
@@ -44,16 +44,16 @@ HRESULT GetNextDispID(
   
 |Valor|Significado|  
 |-----------|-------------|  
-|fdexEnumDefault|Solicita que o objeto enumera os elementos do padrão. O objeto é permitido para enumerar um conjunto de elementos.|  
-|fdexEnumAll|Solicita que o objeto enumera todos os elementos. O objeto é permitido para enumerar um conjunto de elementos.|  
+|fdexEnumDefault|Solicita que o objeto enumera os elementos padrão. O objeto tem permissão para enumerar qualquer conjunto de elementos.|  
+|fdexEnumAll|Solicita que o objeto enumera todos os elementos. O objeto tem permissão para enumerar qualquer conjunto de elementos.|  
   
  `id`  
- Identifica o membro atual. GetNextDispID recupera o item na enumeração depois deste. Usa GetDispID ou uma chamada anterior a GetNextDispID para obter esse identificador. Usa o valor DISPID_STARTENUM para obter o identificador da primeira do primeiro item.  
+ Identifica o membro atual. GetNextDispID recupera o item na enumeração depois deste. Usa GetDispID ou uma chamada anterior a GetNextDispID para obter esse identificador. Usa o valor DISPID_STARTENUM para obter o identificador do primeiro item da primeira.  
   
  `pid`  
  Endereço de uma variável DISPID que recebe o identificador do próximo item na enumeração.  
   
- Se um membro for excluído por `DeleteMemberByName` ou `DeleteMemberByDispID`, o `DISPID` deve permanecer válido para `GetNextDispID`.  
+ Se um membro for excluído pelo `DeleteMemberByName` ou `DeleteMemberByDispID`, o `DISPID` deve permanecer válida para `GetNextDispID`.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um dos seguintes valores:  
@@ -65,7 +65,7 @@ HRESULT GetNextDispID(
   
 ## <a name="example"></a>Exemplo  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

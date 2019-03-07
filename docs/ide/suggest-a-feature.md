@@ -1,43 +1,47 @@
 ---
 title: Sugerir um recurso
-description: Descreve quais sugestões estão na Comunidade de Desenvolvedores, como fazer uma sugestão e como as sugestões são usadas pela Microsoft no roteiro do Visual Studio
-ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+description: Descreve quais sugestões são apresentadas na Comunidade de Desenvolvedores, como enviar uma sugestão e como as sugestões são usadas pela Microsoft no roteiro do Visual Studio.
+ms.date: 12/17/2018
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160030"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316074"
 ---
 # <a name="overview-suggest-a-feature"></a>Visão geral: Sugerir uma funcionalidade
 
-Introduzimos uma experiência totalmente nova para sugerir recursos juntamente com a capacidade atual para relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Essa é uma nova maneira de ter mais autonomia para interagir diretamente com o fluxo de trabalho de engenharia do Visual Studio.
+Introduzimos uma nova experiência para envio de sugestão de funcionalidades, juntamente com a capacidade atual de relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Essa é uma nova maneira de ter mais autonomia para interagir diretamente com o fluxo de trabalho de engenharia do Visual Studio.
 
-Até agora, os usuários do Visual Studio usaram o fórum Voz do Usuário para propor novas ideias de recursos. A experiência *Sugerir um recurso* na Comunidade de Desenvolvedores permite que você faça a transição do fórum Voz do Usuário para uma única plataforma com todos os comentários que se envolvem diretamente com as equipes de produto do Visual Studio.
+![Botão Sugerir uma Funcionalidade na Comunidade de Desenvolvedores](media/suggest-a-feature/suggest-feature-button.png)
 
-Migramos um conjunto inicial de ideias do fórum Voz do Usuário para a Comunidade de Desenvolvedores. A migração foi feita com base no impacto na comunidade dos comentários e nossas prioridades de roteiro do produto. Se você esperava ver aqui uma sugestão que talvez não tenhamos percebido, fique à vontade para adicioná-la à Comunidade de Desenvolvedores.
+Envie também uma sugestão de funcionalidade diretamente no Visual Studio escolhendo **Enviar uma Sugestão** no ícone **Fornecer Comentários** próximo ao canto superior direito da janela principal do Visual Studio:
 
-## <a name="votes"></a>Votos
+![Menu Enviar uma Sugestão no Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-O sistema de votação no Voz do Usuário funciona de modo diferente dos votos na Comunidade de Desenvolvedores. Para manter a integridade das contagens de voto da Comunidade de Desenvolvedores e para evitar a distorção dos votos, mostramos a contagem de votos da Voz do Usuário em destaque, como uma marcação ao lado de cada sugestão de recurso. Enquanto você continua a votar em sugestões na Comunidade de Desenvolvedores aprimorada, sua nova contagem de voto será exibida separadamente da contagem de votos do Voz do Usuário.
+Ao escolher **Enviar uma Sugestão**, você será levado à [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com), na qual poderá inserir sua sugestão.
 
 ## <a name="user-voice"></a>Voz do Usuário
 
-Agora o site Voz do Usuário é somente para leitura, permitindo que você procure pelo contexto como necessário. Todas as sugestões de novos recursos devem ser enviadas na Comunidade de Desenvolvedores.
+Até o momento, os usuários do Visual Studio têm sugerido novas ideias de funcionalidades no UserVoice. Quando você adiciona a funcionalidade *Sugerir uma funcionalidade* à Comunidade de Desenvolvedores, todos os seus comentários para a equipe de produto do Visual Studio ficam reunidos em um só lugar.
+
+O site do UserVoice tornou-se somente leitura. Você poderá ler o conteúdo já publicado se precisar de contexto, mas todas as novas sugestões de funcionalidades deverão ser enviadas na Comunidade de Desenvolvedores.
+
+Migramos um conjunto inicial de ideias do fórum UserVoice para a Comunidade de Desenvolvedores. A migração foi feita com base no impacto na comunidade dos comentários e nossas prioridades de roteiro do produto. Se você esperava ver aqui uma sugestão que talvez não tenhamos percebido, fique à vontade para adicioná-la à Comunidade de Desenvolvedores.
+
+## <a name="votes"></a>Votos
+
+O sistema de votação na Comunidade de Desenvolvedores é diferente do UserVoice. Para manter a integridade das contagens de voto da Comunidade de Desenvolvedores e para evitar a distorção dos votos, mostramos a contagem de votos da Voz do Usuário em destaque, como uma marcação ao lado de cada sugestão de recurso. Enquanto você continua a votar em sugestões na Comunidade de Desenvolvedores aprimorada, sua nova contagem de voto será exibida separadamente da contagem de votos do Voz do Usuário.
 
 ## <a name="suggestion-status"></a>Status da sugestão
 
-Depois de enviar uma sugestão de recurso, os estados indicam onde o envio está em seu ciclo de vida. Ao levar seus comentários em consideração e movê-lo ao longo do fluxo de trabalho, podemos marcá-lo com o estado correspondente.
-
-Os diversos estados associados com as sugestões de recursos estão listados abaixo, junto com uma descrição dos indicadores de significados e cores.
+Depois de enviar uma sugestão de recurso, os estados indicam onde o envio está em seu ciclo de vida. Ao levar seus comentários em consideração e movê-lo ao longo do fluxo de trabalho, podemos marcá-lo com o estado correspondente. Os diversos estados associados às sugestões de funcionalidades são listados aqui, juntamente com uma descrição dos significados e dos indicadores de cores.
 
 ![Estado Novo para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +126,7 @@ O sistema de votação no Voz do Usuário funciona de modo diferente dos votos n
 Estamos totalmente empenhados em ouvir suas sugestões de funcionalidades e tomar medidas para fornecer experiências valiosas aos nossos clientes. As ações em sugestões são priorizadas com base no impacto mais amplo para a comunidade. Mesmo se não for possível responder pessoalmente a toda sugestão, garantiremos que seus comentários cheguem à equipe certa e seja avaliado com cuidado.
 
 O tempo de resposta depende do status em que estão seus comentários. Examine a explicação dos status neste documento para entender os tempos de resposta.
+
+## <a name="see-also"></a>Consulte também
+
+- [Introducing 'Suggest a Feature' in Developer Community (Apresentação de 'Sugerir uma Funcionalidade' na Comunidade de Desenvolvedores) (blog do Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

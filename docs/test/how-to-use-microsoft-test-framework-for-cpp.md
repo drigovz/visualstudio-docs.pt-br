@@ -1,20 +1,18 @@
 ---
 title: Usar a estrutura de teste de unidade da Microsoft para C++
 ms.date: 11/15/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 88265c1ac86b5b1c1cd90ef428c9c2c770d9f2a2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ac55d7513fd6670e30c9fa2097a5d38a96a92e26
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068254"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955070"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 

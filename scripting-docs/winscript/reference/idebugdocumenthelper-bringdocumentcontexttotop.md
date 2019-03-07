@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665d194abd2eed02096a2295ec0683a03830fb8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dcdccd2b06059e376941808827a499f7a2d1e45
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725856"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087848"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
-Coloca um contexto deste documento para a parte superior na interface de usuário do depurador.  
+Traz um contexto deste documento para a parte superior da interface de usuário do depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT BringDocumentContextToTop(  
    IDebugDocumentContext*  pddc  
 );  
@@ -38,7 +38,7 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parâmetros  
  `pddc`  
- Contexto de documento para colocar no início na interface de usuário do depurador.  
+ Contexto de documento para trazer para a parte superior da interface de usuário do depurador.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT BringDocumentContextToTop(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método oferece um contexto deste documento para a parte superior na interface de usuário do depurador.  
+ Esse método traz um contexto deste documento para a parte superior da interface de usuário do depurador.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugDocumentHelper Interface](../../winscript/reference/idebugdocumenthelper-interface.md)

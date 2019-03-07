@@ -1,8 +1,6 @@
 ---
 title: Localizar e usar extensões
-ms.date: 06/07/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 01/30/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
@@ -13,59 +11,55 @@ helpviewer_keywords:
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc67602db2d830283bb47fe7c3a9728d0d9fd799
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067901"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919736"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
 As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. Encontre mais informações sobre as extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
-É possível usar a caixa de diálogo **Extensões e Atualizações** para instalar as extensões e amostras do Visual Studio de sites e outros locais e habilitá-las, desabilitá-las, atualizá-las ou desinstalá-las. (**Ferramentas > Extensões e Atualizações** ou digite ou **Extensões** na janela **Início Rápido**). A caixa de diálogo também mostra atualizações para amostras e extensões instaladas. Também é possível baixar extensões de sites ou obtê-las de outros desenvolvedores.
+Use a caixa de diálogo **Extensões e Atualizações** para instalar e gerenciar extensões do Visual Studio. Para abrir a caixa de diálogo **Extensões e Atualizações**, escolha **Ferramentas** > **Extensões e Atualizações** ou digite **Extensões** na janela de **Início Rápido**.
 
-> [!NOTE]
-> A partir do Visual Studio 2015, as extensões hospedadas no Visual Studio Marketplace são atualizadas automaticamente. É possível alterar essa configuração por meio da caixa de diálogo **Extensões e Atualizações**.  Consulte a seção **Atualizações automáticas de extensões** abaixo para obter detalhes.
+![Caixa de diálogo Extensões e Atualizações no Visual Studio](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
 
-## <a name="finding-visual-studio-extensions"></a>Localizando extensões do Visual Studio
+O painel à esquerda categoriza as extensões entre aquelas que estão instaladas, as que estão disponíveis no Visual Studio Marketplace (**Online**) e aquelas que têm atualizações disponíveis. O **Gerenciador de Extensões de Roaming** mantém uma lista de todas as extensões do Visual Studio você instalou em qualquer computador ou instância do Visual Studio. Ele foi projetado para permitir que você encontre suas extensões favoritas com mais facilidade.
+
+## <a name="find-visual-studio-extensions"></a>Encontre extensões do Visual Studio
 
 Você pode instalar as extensões do [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). As extensões podem ser controles, exemplos, modelos, ferramentas ou outros componentes que adicionam funcionalidades ao Visual Studio. O Visual Studio dá suporte a extensões no formato do pacote VSIX, o que inclui modelos de projeto, modelos de item, itens da **Caixa de Ferramentas**, componentes MEF (Managed Extension Framework) e VSPackages. Também é possível baixar e instalar extensões baseadas em MSI, mas a caixa de diálogo **Extensões e Atualizações** não pode habilitá-las nem desabilitá-las. O Visual Studio Marketplace contém extensões VSIX e MSI.
 
-## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalando ou desinstalando extensões do Visual Studio
+## <a name="install-or-uninstall-visual-studio-extensions"></a>Instalar ou desinstalar extensões do Visual Studio
 
-Em **Extensões e Atualizações**, localize a extensão que você deseja instalar. Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar**. Clique em **Baixar**.  Esta extensão está agendada para instalação. A extensão será instalada depois que todas as instâncias do Visual Studio sejam fechadas.
+Em **Extensões e Atualizações**, localize a extensão que você deseja instalar. Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar**. Clique em **Baixar**. Esta extensão está agendada para instalação. A extensão será instalada depois que todas as instâncias do Visual Studio sejam fechadas.
 
 Se você tentar instalar uma extensão que tenha dependências, o instalador verificará se elas já foram instaladas. Se elas não tiverem sido instaladas, a caixa de diálogo **Extensões e Atualizações** listará as dependências que devem ser instaladas para que seja possível instalar a extensão.
 
-Se desejar parar de usar uma extensão, você poderá desabilitá-la ou desinstalá-la. A desabilitação de uma extensão a mantém instalada, mas descarregada. É possível desabilitar somente extensões VSIX; as extensões que foram instaladas usando um MSI só podem ser desinstaladas. Localize a extensão e clique em **Desinstalar** ou **Desabilitar**. É necessário reiniciar o Visual Studio para descarregar uma extensão desabilitada.
+Se desejar parar de usar uma extensão, você poderá desabilitá-la ou desinstalá-la. A desabilitação de uma extensão a mantém instalada, mas descarregada. É possível desabilitar somente extensões VSIX; as extensões que foram instaladas usando um MSI só podem ser desinstaladas. Localize a extensão e clique em **Desinstalar** ou **Desabilitar**. Reinicie o Visual Studio para descarregar uma extensão desabilitada.
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensões administrativas e por usuário
 
 A maioria das extensões são extensões por usuário e são instaladas na pasta *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\* folder. Algumas extensões são extensões administrativas e são instaladas na *\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\*.
 
-Para proteger seu sistema contra extensões que possam conter erros ou código mal-intencionado, é possível restringir que as extensões por usuário sejam carregadas somente quando o Visual Studio estiver em execução com permissões de usuário normal. Isso significa que as extensões por usuário são desabilitadas quando o Visual Studio é executado com permissões de usuário administrativo. Para fazer isso, vá para a página de opções **Extensões e Atualizações** (**Ferramentas > Opções** > **Ambiente** > **Extensões e Atualizações** ou simplesmente digite **Extensão** na janela **Início Rápido**). Desmarque a caixa de seleção **Carregar extensões por usuário ao executar como administrador** e reinicie o Visual Studio.
+Para proteger seu sistema contra extensões que possam conter erros ou código mal-intencionado, é possível restringir que as extensões por usuário sejam carregadas somente quando o Visual Studio estiver em execução com permissões de usuário normal. Isso significa que as extensões por usuário são desabilitadas quando o Visual Studio é executado com permissões de usuário administrativo. Para fazer isso, vá para a página de opções **Extensões e Atualizações** (**Ferramentas > Opções** > **Ambiente** > **Extensões e Atualizações**). Desmarque a caixa de seleção **Carregar extensões por usuário ao executar como administrador** e reinicie o Visual Studio.
 
 ## <a name="automatic-extension-updates"></a>Atualizações automáticas de extensão
 
-As extensões por usuário são atualizadas automaticamente quando uma nova versão está disponível no Visual Studio Marketplace.  A nova versão da extensão é detectada e instalada na tela de fundo e na próxima reinicialização do Visual Studio, a nova versão da extensão será executada.
-
-Somente as extensões por usuário podem ser atualizadas automaticamente.  As extensões administrativas instaladas para todos os usuários não serão atualizadas e você ainda instalará manualmente as novas versões por meio do nó **Atualizações** da caixa de diálogo **Extensões e Atualizações**. É possível ver quais extensões serão atualizadas automaticamente no painel de detalhes da extensão da caixa de diálogo **Extensões e Atualizações**.
+As extensões são atualizadas automaticamente quando uma nova versão está disponível no Visual Studio Marketplace. A nova versão da extensão é detectada e instalada em segundo plano. Na próxima vez que você iniciar o Visual Studio, a nova versão da extensão será executada.
 
 Se você desejar desabilitar as atualizações automáticas, será possível desabilitar o recurso para todas as extensões ou somente para extensões específicas.
 
-- Para desabilitar as atualizações automáticas para todas as extensões, escolha o link **Alterar as configurações de Extensões e Atualizações** na caixa de diálogo **Extensões e Atualizações** e desmarque **Atualizar extensões automaticamente**.
+- Para desabilitar as atualizações automáticas para todas as extensões, escolha o link **Alterar as configurações de Extensões e Atualizações** na caixa de diálogo **Extensões e Atualizações**. Na caixa de diálogo **Opções**, desmarque a opção **Atualizar extensões automaticamente**.
 
 - Para desabilitar as atualizações automáticas de uma extensão específica, desmarque a opção **Atualizar automaticamente essa extensão** no painel de detalhes da extensão do lado direito da caixa de diálogo **Extensões e Atualizações**.
 
-> [!NOTE]
-> A partir do Visual Studio 2015 Atualização 2, é possível especificar (em **Ferramentas > Opções > Ambiente > Extensões e Atualizações**) se você deseja atualizações automáticas para extensões por usuário, todas as extensões do usuário ou ambas (a configuração padrão).
-
-## <a name="extension-crashunresponsiveness-notifications"></a>Notificações de falha/falta de resposta da extensão
+## <a name="extension-crash-and-unresponsiveness-notifications"></a>Notificações de falha e falta de resposta da extensão
 
 Novidade no **Visual Studio 2017 versão 15.3**, o Visual Studio notifica você se suspeitar que uma extensão estava envolvida em uma falha durante uma sessão anterior. Quando o Visual Studio falhar, ele armazenará a pilha de exceção. Na próxima vez em que o Visual Studio for iniciado, ele examinará a pilha, começando com a folha e funcionando em direção à base. Se o Visual Studio determinar que um quadro pertence a um módulo que faz parte de uma extensão instalada e habilitada, ele mostra uma notificação.
 
@@ -76,6 +70,7 @@ Quando essas notificações forem exibidas, você poderá ignorar a notificaçã
 - Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode habilitar a extensão novamente na caixa de diálogo **Extensões e atualizações** se desejar.
 
 - Escolha **Nunca mostrar essa mensagem novamente**.
+
   - Se a notificação for sobre uma falha em uma sessão anterior, o Visual Studio não mostrará mais uma notificação quando uma falha associada a essa extensão ocorrer. O Visual Studio ainda mostrará notificações quando a falta de resposta puder ser associada a essa extensão, ou para falhas ou falta de resposta que possam ser associadas a outras extensões.
   - Se a notificação for sobre a falta de resposta, o IDE não mostrará mais uma notificação quando essa extensão for associada à falta de resposta. O Visual Studio ainda mostrará notificações relacionadas à falha para essa extensão, e notificações relacionados a falhas e falta de resposta para outras extensões.
 

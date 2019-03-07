@@ -6,22 +6,20 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813309"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928277"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 Uma solução de linguagem específica do domínio (DSL) gera uma API que você pode usar para ler e atualizar instâncias da DSL no Visual Studio. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.
 
-## <a name="the-example-solution-component-diagrams"></a>A solução do exemplo: Diagramas de Componente
+## <a name="the-example-solution-component-diagrams"></a>A solução de exemplo: Diagramas de componente
  Para criar a solução que é a origem da maioria dos exemplos neste tópico, crie uma DLs a partir de **modelos do componente** modelo de solução. Esse é um dos modelos padrão que são exibidos ao criar uma nova solução DSL.
 
 > [!NOTE]
@@ -58,15 +56,15 @@ Uma solução de linguagem específica do domínio (DSL) gera uma API que você 
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl
  Os seguintes arquivos gerados são exibidos na **Dsl** projeto.
 
- *{1&gt;yourdsl&lt;1* `Schema.xsd`
+ *YourDsl* `Schema.xsd`
 
- O esquema dos arquivos que contêm instâncias da DSL. Esse arquivo é copiado para a compilação (**bin**) directory. Quando você instala a DSL, você pode copiar esse arquivo para **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que os arquivos de modelo podem ser validados. Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).
+ O esquema dos arquivos que contêm instâncias da DSL. Esse arquivo é copiado para a compilação (**bin**) directory. Quando você instala a DSL, você pode copiar esse arquivo para **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que os arquivos de modelo podem ser validados. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 
  Ao personalizar a serialização configurando opções no Gerenciador de DSL, o esquema será alterado de acordo. No entanto, se escrever seu próprio código de serialização, esse arquivo deixará de representar o esquema atual. Para obter mais informações, consulte [Personalizando o armazenamento de arquivos e a serialização XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
  `ConnectionBuilders.cs`
 
- Um compilador de conexão é uma classe que cria relações. É o código por trás de uma ferramenta de conexão. Esse arquivo contém um par de classes para cada ferramenta de conexão. Seus nomes são derivados dos nomes da ferramenta de conexão e de relação do domínio: *relacionamento*Builder, e *ConnectorTool*ConnectAction.
+ Um compilador de conexão é uma classe que cria relações. É o código por trás de uma ferramenta de conexão. Esse arquivo contém um par de classes para cada ferramenta de conexão. Seus nomes são derivados dos nomes da ferramenta de conexão e de relação do domínio: *Relacionamento*Builder, e *ConnectorTool*ConnectAction.
 
  (No exemplo de solução de componente, um dos compiladores de conexão é chamado ConnectionBuilder, isso é uma coincidência porque o nome da relação do domínio é Connection.)
 
@@ -139,7 +137,7 @@ Uma solução de linguagem específica do domínio (DSL) gera uma API que você 
 
  Isso contém cadeias de caracteres como as descrições de classes e propriedades do domínio, nomes de propriedade, etiquetas de caixa de ferramenta, mensagens de erro padrão e outras cadeias que podem ser exibidas ao usuário. Também contém ícones de ferramentas e imagens dos formatos de imagem.
 
- Esse arquivo é associado ao assembly de compilação e fornece os valores padrão desses recursos. É possível localizar a DSL criando um assembly satélite que contém uma versão localizada dos recursos. Essa versão será usada quando a DSL for instalada em uma cultura que corresponde aos recursos localizados. Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).
+ Esse arquivo é associado ao assembly de compilação e fornece os valores padrão desses recursos. É possível localizar a DSL criando um assembly satélite que contém uma versão localizada dos recursos. Essa versão será usada quando a DSL for instalada em uma cultura que corresponde aos recursos localizados. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 
  `DomainRelationships.cs`
 
@@ -192,7 +190,7 @@ Uma solução de linguagem específica do domínio (DSL) gera uma API que você 
 
  `CommandSet.cs`
 
- Os comandos de menu de contexto que são visíveis no diagrama. É possível adaptar ou adicionar a esse conjunto. Esse arquivo contém o código dos comandos. O local dos comandos nos menus é determinado pelo arquivo Commands.vsct. Para obter mais informações, consulte [comandos de usuário de gravação e ações](../modeling/writing-user-commands-and-actions.md).
+ Os comandos de menu de atalho que são visíveis no diagrama. É possível adaptar ou adicionar a esse conjunto. Esse arquivo contém o código dos comandos. O local dos comandos nos menus é determinado pelo arquivo Commands.vsct. Para obter mais informações, consulte [comandos de usuário de gravação e ações](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -282,7 +280,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Localiza os comandos de menu padrão em menus, como o menu de contexto do diagrama, o **editar** menu e assim por diante. O código dos comandos está em CommandSet.cs. É possível realocar ou modificar os comandos padrão e adicionar seus próprios comandos. Para obter mais informações, consulte [comandos de usuário de gravação e ações](../modeling/writing-user-commands-and-actions.md).
+ Localiza os comandos de menu padrão em menus, como o menu de atalho (contexto) de diagrama, o **editar** menu e assim por diante. O código dos comandos está em CommandSet.cs. É possível realocar ou modificar os comandos padrão e adicionar seus próprios comandos. Para obter mais informações, consulte [comandos de usuário de gravação e ações](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -292,7 +290,7 @@ namespace Company.EmbedInForm
 
  Se desejar manter a seleção no gerenciador de modelos sincronizada com a seleção do diagrama, é possível usar o seguinte código:
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);
@@ -342,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 >  Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.
 
- Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).
+ Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,14 +1,9 @@
 ---
 title: 'Como: Personalizar menus e barras de ferramentas'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -32,15 +27,15 @@ ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3196aac35a05d915f1f4c3b58547e0787e9a1afc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: b492764c6d872ff8f2568b4abcbeefe133ee23c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795427"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como: Personalizar Menus e barras de ferramentas do Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como: Personalizar menus e barras de ferramentas no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para personalizar o Visual Studio, além de adicionar e remover barras de ferramentas e menus na barra de menus, você também pode adicionar e remover comandos em qualquer barra de ferramentas ou menu.
@@ -96,7 +91,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
          Você também pode arrastar uma barra de ferramentas pela sua borda esquerda para movê-la para qualquer lugar na área de encaixe principal.
 
         > [!NOTE]
-        >  Para obter mais informações sobre como melhorar a usabilidade e a acessibilidade das barras de ferramentas, consulte [como: definir opções de acessibilidade do IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        >  Para obter mais informações sobre como melhorar a usabilidade e a acessibilidade das barras de ferramentas, confira [Como: Definir opções de acessibilidade do IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ##  <a name="bkmk_customize"></a> Personalizando um menu ou uma barra de ferramentas
 

@@ -1,14 +1,9 @@
 ---
-title: '&#39; com &#39; não disponível no ECMA 327 Compact Profile | Microsoft Docs'
-ms.custom: ''
+title: "'with' não está disponível no perfil compacto ECMA 327 | Microsoft Docs"
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1036
 dev_langs:
@@ -16,20 +11,19 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 4599f851-bf59-4b70-a5eb-9b779d2a7618
-caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68e9a9acebd0225c5bcb86573698dbd7d116e0d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 17aa9d00bca0b7835309e123478b9621a9260d51
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633286"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841015"
 ---
-# <a name="39with39-not-available-in-the-ecma-327-compact-profile"></a>&#39; com &#39; não disponível no ECMA 327 Compact Profile
-'with' não está disponível na ECMA 327 Compact Profile (ErrWithNotInCP  
+# <a name="with-not-available-in-the-ecma-327-compact-profile"></a>'with' não disponível no Perfil Compacto ECMA 327
+'with' não está disponível no perfil ECMA 327 Compact (ErrWithNotInCP  
   
  Você não tem permissão para usar o com a palavra-chave no perfil compacto.  
   
- Para obter mais informações sobre a palavra-chave, consulte [com a instrução](../../javascript/reference/with-statement-javascript.md).
+ Para obter mais informações sobre o com a palavra-chave, consulte [com a instrução](../../javascript/reference/with-statement-javascript.md).

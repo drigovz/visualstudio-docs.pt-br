@@ -1,5 +1,5 @@
 ---
-title: 'Instruções passo a passo: criando um processador de diretiva'
+title: 'Passo a passo: Criando um processador de diretriz personalizado'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,22 +7,20 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4b46937e8b30dec1f9e2a78d181cd53692b7d1b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930317"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910422"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Passo a passo: criar um processador de diretiva personalizado
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Passo a passo: Criar um processador de diretriz personalizado
 
 *Processadores de diretriz* funcionam adicionando código para o *classe de transformação gerada*. Se você chamar um *diretiva* de uma *modelo de texto*, o restante do código que você escreve em seu modelo de texto pode contar com a funcionalidade que a diretiva fornece.
 
@@ -603,7 +601,7 @@ End Property
 
 4. Somente Visual Basic, abra o **Project** menu e clique em **propriedades de CustomDP**. Sobre o **Application** guia de **namespace raiz**, exclua o valor padrão, `CustomDP`.
 
-5. Sobre o **arquivo** menu, clique em **Salvar tudo**.
+5. No menu **Arquivo**, clique em **Salvar tudo**.
 
 6. No menu **Compilar**, clique em **Compilar Solução**.
 

@@ -1,23 +1,21 @@
 ---
-title: Como exportar um sombreador
+title: 'Como: Exportar um sombreador'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd06664cda1c60d2624b77a0381e1269fcb3c484
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 7d0a962fe941f676369c4c3575647610df809d58
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028962"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927757"
 ---
-# <a name="how-to-export-a-shader"></a>Como exportar um sombreador
+# <a name="how-to-export-a-shader"></a>Como: Exportar um sombreador
 
 Este artigo demonstra como usar o **Designer de Sombreador** para exportar um sombreador da DGSL (Directed Graph Shader Language) para poder usá-lo em seu aplicativo.
 
@@ -27,7 +25,7 @@ Depois de criar um sombreador usando o Designer de Sombreador é necessário exp
 
 1. No Visual Studio, abra um arquivo do **Visual Shader Graph (.dgsl)**.
 
-     Se você não tiver um arquivo **Visual Shader Graph (.dgsl)** para abrir, crie um conforme a descrição em [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md).
+     Se você não tiver um arquivo **Visual Shader Graph (.dgsl)** para abrir, crie um conforme a descrição em [Como: Criar um sombreador de cores básico](../designers/how-to-create-a-basic-color-shader.md).
 
 2. Na barra de ferramentas **Designer de Sombreador**, escolha **Avançado** > **Exportar** > **Exportar Como**. A caixa de diálogo **Exportar Sombreador** é exibida.
 
@@ -45,5 +43,5 @@ Depois de criar um sombreador usando o Designer de Sombreador é necessário exp
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)
+- [Como: Criar um sombreador de cores básico](../designers/how-to-create-a-basic-color-shader.md)
 - [Designer de Sombreador](../designers/shader-designer.md)

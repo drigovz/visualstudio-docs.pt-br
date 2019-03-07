@@ -8,13 +8,13 @@ ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26758c63bb1de64c9497b67afc3f55b73238d5e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064054"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54834433"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>How to Report a Problem with Visual Studio 2015 (Como relatar um problema com o Visual Studio 2015)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [como r
 
 Se você encontrar um problema com o Visual Studio 2015, queremos saber sobre ele para que possamos pode diagnosticar e corrigi-lo.  Usando a ferramenta **Relatar um Problema**, você pode coletar informações detalhadas sobre o problema e enviá-las à Microsoft com apenas alguns cliques de botão.
 
- A Microsoft respeita sua privacidade. Para obter informações sobre como tratamos os dados que você nos envia, consulte a [Política de privacidade da família de produtos do Microsoft Visual Studio](https://www.visualstudio.com/en-us/dn948229).
+ A Microsoft respeita sua privacidade. Para obter informações sobre como tratamos os dados que você nos envia, consulte a [Política de privacidade da família de produtos do Microsoft Visual Studio](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Abrir a ferramenta Relatar um Problema
  Clique no ícone de comentários do usuário ao lado de **Início Rápido** na barra de título ou clique em **Ajuda &#124; Enviar Comentários &#124; Relatar um Problema**.

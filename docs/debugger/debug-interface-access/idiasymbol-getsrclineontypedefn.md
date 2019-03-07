@@ -1,41 +1,40 @@
 ---
 title: IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c2e105848a8c56f86eb71ef4c57dcd75c5f604
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: cd81117c11eb42dbccf22e55ee5e294ad9c3c96a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470596"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613213"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Recupera o número de arquivos e linhas de origem que indicam onde um tipo especificado definido pelo usuário é definido.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT getSrcLineOnTypeDefn(  
-   IDiaLineNumber **ppResult);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppResult`  
- [out] Um `IDiaLineNumber` objeto que contém o número de arquivos e linhas de origem onde definido pelo usuário.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Recupera o número de arquivo e de linha de código-fonte que indicam onde um tipo especificado definido pelo usuário é definido.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT getSrcLineOnTypeDefn(
+   IDiaLineNumber **ppResult);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppResult`
+
+[out] Um `IDiaLineNumber` objeto que contém o número de arquivo e linha do código-fonte em que o definido pelo usuário.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

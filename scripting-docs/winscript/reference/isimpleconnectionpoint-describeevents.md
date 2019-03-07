@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42dab9558d46eae0fbb640c60264a79877708321
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 43a20a2d9580c80bc6aea5d22c6a0713f4843634
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734016"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088498"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
 Retorna o DISPID e o nome para cada evento em um intervalo especificado de eventos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT DescribeEvents(  
    ULONG    iEvent,  
    ULONG    cEvents,  
@@ -42,19 +42,19 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>Parâmetros  
  `iEvent`  
- [in] Índice do primeiro evento para recuperar.  
+ [in] Índice do primeiro evento a recuperar.  
   
  `cEvents`  
  [in] Número de eventos para recuperar.  
   
  `prgid`  
- [out] Matriz de valores DISPID de evento.  
+ [out] Matriz de valores DISPID do evento.  
   
  `prgbstr`  
  [out] Matriz de nomes de evento.  
   
  `pcEventsFetched`  
- [out] O número real de eventos buscados.  
+ [out] O número real de eventos buscada.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -62,8 +62,8 @@ HRESULT DescribeEvents(
 |Valor|Descrição|  
 |-----------|-----------------|  
 |`S_OK`|O método foi bem-sucedido.|  
-|`S_FALSE`|Eventos mais foram solicitados que estavam disponíveis. Os eventos disponíveis são representados por DISPID_NULL e um BSTR nulo.|  
-|`E_INVALIDARG`|Nenhum elemento pôde ser obtido.|  
+|`S_FALSE`|Mais eventos foram solicitados que estavam disponíveis. Indisponíveis eventos são representados com DISPID_NULL e um BSTR nulo.|  
+|`E_INVALIDARG`|Nenhum elemento pôde ser buscado.|  
   
 ## <a name="remarks"></a>Comentários  
  Esse método retorna o DISPID e o nome para cada evento em um intervalo especificado de eventos.  

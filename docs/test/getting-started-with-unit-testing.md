@@ -1,30 +1,31 @@
 ---
 title: Introdução ao teste de unidade
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8835edb2b340778c4431d3de5b554d6aeb6c6d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158808"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927978"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
-Use o Visual Studio para definir e executar os testes de unidade para manter a integridade de código, certificar-se da cobertura de código e localizar erros e falhas antes de seus clientes.
+Use o Visual Studio para definir e executar testes de unidade para manter a integridade de código, assegurar a cobertura de código e localizar erros e falhas antes de seus clientes. Execute os testes de unidade frequentemente para ter certeza de que seu código está funcionando corretamente.
 
 ## <a name="create-unit-tests"></a>Criar testes de unidade
 
-Crie testes de unidade e execute-os frequentemente para ter certeza de que seu código está funcionando corretamente.
+Esta seção descreve, em um alto nível, como criar um projeto de teste de unidade.
+
+> [!TIP]
+> O projeto em teste, "HelloWorld", é um projeto de exemplo e nenhum código para ele destina-se a ser mostrado. Se você deseja criar um projeto "HelloWorld" para testar, confira [Criar seu primeiro aplicativo de console do C#](../ide/quickstart-csharp-console.md). Para um artigo passo a passo completo, confira [Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Crie um projeto de teste de unidade.
 
@@ -151,6 +152,7 @@ Veja a seguir as etapas para habilitar estruturas de teste de terceiros:
 
 ## <a name="see-also"></a>Consulte também
 
+* [Passo a passo: Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Criar comando de Testes de Unidade](create-unit-tests-menu.md)
 * [Gerar testes com IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Executar testes com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)

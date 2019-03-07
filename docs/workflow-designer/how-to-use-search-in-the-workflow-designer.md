@@ -1,23 +1,21 @@
 ---
-title: 'Como: Use Pesquisa em Designer de Fluxo de Trabalho'
+title: 'Como: Usar a pesquisa no Designer de Fluxo de Trabalho'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943057"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942382"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>Como: Use Pesquisa em Designer de Fluxo de Trabalho
+# <a name="how-to-use-search-in-the-workflow-designer"></a>Como: Usar a pesquisa no Designer de Fluxo de Trabalho
 
 Para facilitar a criação de fluxos de trabalho maiores e mais complexos, você pode pesquisar dentro do Designer de fluxo de trabalho para localizar itens por palavra-chave. Observe que o designer não suporta substitui.
 

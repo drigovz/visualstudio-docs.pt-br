@@ -2,22 +2,19 @@
 title: Exemplo avançado para contêineres
 description: ''
 ms.date: 04/18/2018
-ms.technology: vs-acquisition
-ms.custom: ''
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c79051627bd59ae48b0ad88411a94f4cb36c78
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 90969307d328519c95997be2ff0e8fad87fdc0a1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159809"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939795"
 ---
 # <a name="advanced-example-for-containers"></a>Exemplo avançado para contêineres
 
@@ -28,7 +25,7 @@ O Dockerfile de exemplo a seguir usa uma marca de versão específica da imagem 
 > [!NOTE]
 > Não é possível instalar o Visual Studio no microsoft/windowsservercore:10.0.14393.1593 ou em qualquer imagem baseada nele, que tem problemas conhecidos ao iniciar o instalador em um contêiner. Para saber mais, confira os [problemas conhecidos](build-tools-container-issues.md).
 
-O exemplo a seguir faz o download da versão mais recente das Ferramentas de Build 2017. Se quiser usar uma versão anterior das Ferramentas de Build que você pode instalar em um contêiner posteriormente, você deve primeiro [criar](create-an-offline-installation-of-visual-studio.md) e [manter](update-a-network-installation-of-visual-studio.md) um layout.
+O exemplo a seguir faz o download da versão mais recente das Ferramentas de Build 2017. Caso deseje usar uma versão anterior das Ferramentas de Build que possa ser instalada em um contêiner posteriormente, primeiro você precisará [criar](create-an-offline-installation-of-visual-studio.md) e [manter](update-a-network-installation-of-visual-studio.md) um layout.
 
 ## <a name="install-script"></a>Script de instalação
 
@@ -91,6 +88,10 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+   > [!WARNING]
+   > O Visual Studio 2017 versão 15.8 ou anterior (qualquer produto) não será instalado corretamente no mcr<span></span>.microsoft\.com\/windows\/servercore:1809 ou posterior. Nenhum erro é exibido.
+   >
+   > Confira [Problemas conhecidos de contêineres](build-tools-container-issues.md) para obter mais informações.
 
 Execute o seguinte comando para criar a imagem no diretório de trabalho atual:
 

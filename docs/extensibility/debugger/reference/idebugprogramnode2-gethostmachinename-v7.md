@@ -1,10 +1,7 @@
 ---
 title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetHostMachineName
 helpviewer_keywords:
@@ -12,15 +9,15 @@ helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ed7eb9c98ad8da45a50af79918480e74d76779e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b40d3350fb348afb654ae09785eb0956fb950bb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908535"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689065"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -43,8 +40,9 @@ int GetHostMachineName_V7 (
 
 #### <a name="parameters"></a>Parâmetros
 
-`pbstrHostMachineName`  
-[out] Retorna o nome do computador no qual o programa está em execução.
+`pbstrHostMachineName`
+
+ [out] Retorna o nome do computador no qual o programa está em execução.
 
 ## <a name="return-value"></a>Valor de retorno
 
@@ -57,4 +55,4 @@ Uma implementação deve retornar sempre `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Consulte também
 
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

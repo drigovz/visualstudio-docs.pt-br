@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a7a27f4d9d7f834b07a2db5ba8433b63222a3b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c711dd3a4174f38bf2f3b3e163805e6cfa1c314
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734106"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345221"
 ---
 # <a name="profilerheapenumflags-enumeration"></a>Enumeração PROFILER_HEAP_ENUM_FLAGS
-Sinalizadores que representam se apontada informações extras sobre um objeto do heap em uma relação de objeto são expostos. Usado no [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) método.  
+Sinalizadores que representam se informações extras sobre um objeto de heap apontado em uma relação de objeto são expostos. Usado na [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_HEAP_ENUM_FLAGS_NONE                      = 0x00000000,    PROFILER_HEAP_ENUM_FLAGS_STORE_RELATIONSHIP_FLAGS  = 0x00000001,} PROFILER_HEAP_ENUM_FLAGS;  
 ```  
   
@@ -32,7 +32,7 @@ typedef [v1_enum] enum {    PROFILER_HEAP_ENUM_FLAGS_NONE                      =
   
 |Membro|Valor|Descrição|  
 |------------|-----------|-----------------|  
-|PROFILER_HEAP_ENUM_FLAGS_NONE|0x00000000|Este objeto do heap não expõe informações adicionais sobre uma relação de objeto. Esse objeto heap se comporta da mesma maneira como [IActiveScriptProfilerControl3::HeapEnum](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).|  
-|PROFILER_HEAP_ENUM_ENUM_ STORE_RELATIONSHIP_FLAGS|0x00000001|Esse objeto heap irá expor informações sobre se um objeto apontado em uma relação de objeto é um método getter ou setter. Essas informações serão armazenadas em alta 2 bytes (16 bits) da [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) campo como uma da [PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS](../../winscript/reference/profiler-heap-object-relationship-flags-enumeration.md) valores de enumeração.|  
-|PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|0x00000002|Esse objeto heap é usado para exibir a subcadeia de caracteres corretamente.|  
-|PROFILER_HEAP_ENUM_FLAGS_RELATIONSHIP_SUBSTRINGS|PROFILER_HEAP_ENUM_FLAGS_STORE_RELATIONSHIP_FLAGS &#124; PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|Esse objeto heap é usado para exibir a subcadeia de caracteres corretamente.|
+|PROFILER_HEAP_ENUM_FLAGS_NONE|0x00000000|Esse objeto de pilha não expõe informações adicionais sobre uma relação de objeto. Esse objeto de pilha se comporta da mesma forma como [IActiveScriptProfilerControl3::HeapEnum](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).|  
+|PROFILER_HEAP_ENUM_ENUM_ STORE_RELATIONSHIP_FLAGS|0x00000001|Esse objeto de pilha exporá informações sobre ou não um objeto apontado em uma relação de objeto é um método getter ou setter. Essas informações serão armazenadas em 2 bytes superiores (16 bits) do [profiler_heap_object_relationship](../../winscript/reference/profiler-heap-object-relationship-structure.md) campo como um dos [PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS](../../winscript/reference/profiler-heap-object-relationship-flags-enumeration.md) valores de enumeração.|  
+|PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|0x00000002|Esse objeto de heap é usado para exibir a subcadeia de caracteres corretamente.|  
+|PROFILER_HEAP_ENUM_FLAGS_RELATIONSHIP_SUBSTRINGS|PROFILER_HEAP_ENUM_FLAGS_STORE_RELATIONSHIP_FLAGS &#124; PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|Esse objeto de heap é usado para exibir a subcadeia de caracteres corretamente.|

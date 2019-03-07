@@ -1,8 +1,6 @@
 ---
 title: Personalizar tarefas de depuração de build usando tasks.vs.json launch.vs.json
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a5249c1b60c1a3a08e37386bcfbd3d06706bae8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063173"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954160"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizar tarefas de compilação e depuração para desenvolvimento de "Pasta Aberta"
 
@@ -33,8 +31,8 @@ Personalizar sua base de código sem projeto usando os seguintes arquivos *.json
 
 |Nome do arquivo|Finalidade|
 |-|-|
-|*tasks.vs.json*|Especifique os comandos de compilação personalizados e as opções do compilador, além de tarefas arbitrárias (sem relação com a compilação).<br>Acessados por meio do item de menu de contexto do **Gerenciador de Soluções**, **Configurar tarefas**.|
-|*launch.vs.json*|Especifica argumentos de linha de comando para depuração.<br>Acessados por meio do item de menu de contexto do **Gerenciador de Soluções**, **Configurações de depuração e de inicialização**.|
+|*tasks.vs.json*|Especifique os comandos de compilação personalizados e as opções do compilador, além de tarefas arbitrárias (sem relação com a compilação).<br>Acessado por meio do item **Configurar Tarefas** no menu do clique com o botão direito no **Gerenciador de Soluções**.|
+|*launch.vs.json*|Especifica argumentos de linha de comando para depuração.<br>Acessado por meio do item **Configurações de Depuração e Inicialização** no menu do clique com o botão direito no **Gerenciador de Soluções**.|
 |*VSWorkspaceSettings.json*|Configurações genéricas que podem afetar as tarefas e a inicialização. Por exemplo, a definição de `envVars` em *VSWorkspaceSettings.json* adiciona as variáveis de ambiente especificadas para executar os comandos externamente.<br>Crie esse arquivo manualmente.|
 
 Esses arquivos *.json* estão localizados em uma pasta oculta chamada *.vs* na pasta raiz de sua base de código. Os arquivos *tasks.vs.json* e *launch.vs.json* são criados pelo Visual Studio conforme a necessidade quando você escolhe **Configurar Tarefas** ou **Configurações de Depuração e de Inicialização** em um arquivo ou pasta no **Gerenciador de Soluções**. Esses arquivos *.json* ficam ocultos porque a maioria dos usuários geralmente não deseja inclui-los no controle do código-fonte. No entanto, se você quiser a possibilidade de inclui-los no controle do código-fonte, arraste os arquivos para a raiz da base de código, onde eles ficarão visíveis.
@@ -48,7 +46,7 @@ Você pode automatizar os scripts de compilação, ou quaisquer outras operaçõ
 
 ![Menu Configurar Tarefas](../ide/media/customize-configure-tasks-menu.png)
 
-Isso cria (ou abre) o arquivo *tasks.vs.json* na pasta *.vs*. Você pode definir uma tarefa de compilação ou tarefa arbitrária nesse arquivo e, depois, invocá-la usando o nome que você forneceu no menu de contexto **Gerenciador de Soluções**.
+Isso cria (ou abre) o arquivo *tasks.vs.json* na pasta *.vs*. É possível definir uma tarefa de compilação ou uma tarefa arbitrária nesse arquivo e, depois, chamá-la usando o nome que você forneceu por meio do menu do clique com o botão direito no **Gerenciador de Soluções**.
 
 As tarefas personalizadas podem ser adicionadas a arquivos individuais ou a todos os arquivos de um tipo específico. Por exemplo, os arquivos do pacote NuGet podem ser configurados para terem uma tarefa “Restaurar Pacotes” ou todos os arquivos de origem podem ser configurados para terem uma tarefa de análise estática, como um linter para todos os arquivos *.js*.
 
@@ -58,6 +56,7 @@ Se a sua base de código usar ferramentas de compilação personalizadas não re
 
 Considere uma base de código composta por um único arquivo em C# chamado *hello.cs*. O *makefile* de uma base de código como essa pode ter esta aparência:
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -74,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 Para um *makefile* que contém destinos de build, limpeza e recompilação, você pode definir o seguinte arquivo *tasks.vs.json*. Ele contém três tarefas de compilação para compilar, recompilar e limpar a base de código, usando NMAKE como a ferramenta de compilação.
 
@@ -119,7 +119,7 @@ Para um *makefile* que contém destinos de build, limpeza e recompilação, voc�
 }
 ```
 
-Depois de definir as tarefas de compilação no *tasks.vs.json*, ocorre a adição de outros itens de menu de contexto aos arquivos correspondentes no **Gerenciador de Soluções**. Neste exemplo, as opções "criar", "recriar" e "limpar" são adicionadas ao menu de contexto de quaisquer arquivos *makefile*.
+Depois de definir as tarefas de compilação em *tasks.vs.json*, ocorre a adição de outros itens do menu do clique com o botão direito (menu de contexto) aos arquivos correspondentes no **Gerenciador de Soluções**. Neste exemplo, as opções "criar", "recriar" e "limpar" são adicionadas ao menu de contexto de quaisquer arquivos *makefile*.
 
 ![menu de contexto do makefile com compilação, recompilação e limpeza](media/customize-build-rebuild-clean.png)
 
@@ -149,7 +149,7 @@ A exemplo a seguir mostra um arquivo *tasks.vs.json* que define uma única taref
 }
 ```
 
-- `taskName` especifica o nome que aparece no menu de contexto.
+- `taskName` especifica o nome que aparece no menu do clique com o botão direito.
 - `appliesTo` especifica em quais arquivos o comando pode ser executado.
 - A propriedade `command` especifica o comando a ser invocado. Neste exemplo, a variável de ambiente `COMSPEC` é usada para identificar o interpretador de linha de comando, normalmente *cmd.exe*.
 - A propriedade `args` especifica os argumentos a serem passados para o comando invocado.

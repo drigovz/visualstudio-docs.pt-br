@@ -1,14 +1,9 @@
 ---
 title: Comando Inspeção Rápida | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.quickwatch
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 9670ac3a-8f2f-4874-974d-cb87d3b0cde1
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: afe27d567601e43b10323f9dcc3417bcf15e9298
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d8ee0de9cad23b6208c9b015c65a8d9494821eae
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269406"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54789801"
 ---
 # <a name="quick-watch-command"></a>Comando Inspeção Rápida
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ Debug.QuickWatchq [text]
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

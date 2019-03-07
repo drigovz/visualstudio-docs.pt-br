@@ -1,25 +1,23 @@
 ---
-title: 'Designer de fluxo de trabalho - como: usar o Editor de expressão'
+title: 'Designer de fluxo de trabalho - como: Usar o editor de expressão'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f2ab9cad6f54b8d1106fd68eb017434cf5cfef
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756136"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918904"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Como: Use o editor de expressão
+# <a name="how-to-use-the-expression-editor"></a>Como: Usar o editor de expressão
 
 O Editor de expressão é um controle de Designer de fluxo de trabalho que é usado em muitas atividades de fluxo de trabalho para inserir e avaliar expressões. O Editor de expressão fornece um IDE completo para edição de experiência, incluindo IntelliSense, coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma **Editor de expressão** caixa de diálogo.
 

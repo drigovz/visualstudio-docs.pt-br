@@ -1,14 +1,9 @@
 ---
 title: Comando Listar Memória | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listmemory
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 25be71041f0ab127037a25a03cff1d6ffe42ac97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 057099c2ce1c4832c48d2eeac8774a36c5fad7b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224491"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54804289"
 ---
 # <a name="list-memory-command"></a>Comando Listar Memória
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,7 +91,3 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-
-

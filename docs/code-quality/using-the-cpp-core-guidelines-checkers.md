@@ -1,5 +1,5 @@
 ---
-title: Usando os verificadores de diretrizes principais do C++
+title: Usando os verificadores de Diretrizes Principais do C++
 ms.date: 08/14/2018
 ms.topic: conceptual
 author: mikeblome
@@ -7,20 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143457"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223345"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de diretrizes principais do C++
-Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado pelos designers e especialistas em C++. Atualmente, o Visual Studio suporta um subconjunto dessas regras como parte de suas ferramentas de análise de código para C++. Os verificadores de diretrizes de núcleo são instalados por padrão no Visual Studio 2017 e são [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
+# <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
+
+Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado pelos designers e especialistas em C++. Atualmente, o Visual Studio suporta um subconjunto dessas regras como parte de suas ferramentas de análise de código para C++. Os verificadores de diretrizes de núcleo são instalados por padrão no Visual Studio 2017 e Visual Studio de 2019 e estão [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>O projeto de diretrizes principais do C++
- Diretrizes principais do C++ criado por Bjarne Stroustrup e outros, são um guia para usar o C++ moderno com segurança e eficácia. As diretrizes enfatizam a segurança de tipo estático e segurança de recursos. Eles identificarem maneiras de eliminar ou minimizar as partes mais propensas a erro da linguagem e sugerem como tornar seu código mais simples e mais eficaz de forma confiável. Essas diretrizes são mantidas pelo Standard C++ Foundation. Para obter mais informações, consulte a documentação [diretrizes principais do C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)e acessar os arquivos de projeto de documentação de diretrizes principais do C++ no [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+
+Diretrizes principais do C++ criado por Bjarne Stroustrup e outros, são um guia para usar o C++ moderno com segurança e eficácia. As diretrizes enfatizam a segurança de tipo estático e segurança de recursos. Eles identificarem maneiras de eliminar ou minimizar as partes mais propensas a erro da linguagem e sugerem como tornar seu código mais simples e mais eficaz de forma confiável. Essas diretrizes são mantidas pelo Standard C++ Foundation. Para obter mais informações, consulte a documentação [diretrizes principais do C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)e acessar os arquivos de projeto de documentação de diretrizes principais do C++ no [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Habilitar as diretrizes da verificação principal do C++ na análise de código
  Você pode habilitar a análise de código em seu projeto, selecionando o **habilitar análise de código no Build** caixa de seleção na **análise de código** seção o **páginas de propriedade** caixa de diálogo para seu projeto.
@@ -55,11 +55,11 @@ int main()
 
 Este exemplo demonstra alguns dos avisos que as regras de verificação principal do C++ podem encontrar:
 
-- C26494 é regra Type.5: sempre inicialize um objeto.
+- C26494 é Type.5 de regra: Sempre inicialize um objeto.
 
-- C26485 é regra Bounds.3: decaimento nenhum ponteiro de matriz.
+- C26485 é Bounds.3 de regra: Sem matriz para ponteiro de decaimento.
 
-- C26481 é regra Bounds.1: não use aritmética de ponteiro. Use `span` em seu lugar.
+- C26481 é Bounds.1 de regra: Não use aritmética de ponteiro. Use `span` em seu lugar.
 
 Se o rulesets de análise do código de verificação principal do C++ estão instalado e habilitado quando você compila esse código, os dois primeiros avisos forem gerados, mas o terceiro é suprimido. Aqui está a saída da compilação do código de exemplo:
 

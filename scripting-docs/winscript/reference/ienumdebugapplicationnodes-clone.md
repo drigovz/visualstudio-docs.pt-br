@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dab58a36110c0f0321bbf490a105bff9cddad009
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fb547e1032be03a6b1e79894dafda7442796592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726856"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090825"
 ---
 # <a name="ienumdebugapplicationnodesclone"></a>IEnumDebugApplicationNodes::Clone
-Cria um enumerador que contém o mesmo estado do enumerador atual.  
+Cria um enumerador que contém o mesmo estado que o enumerador atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugApplicationNodes**  pperddp  
 );  
@@ -38,7 +38,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parâmetros  
  `pperddp`  
- [out] Retorna o `IEnumDebugApplicationNodes` interface de clone do enumerador.  
+ [out] Retorna o `IEnumDebugApplicationNodes` interface do clone do enumerador.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT Clone(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método cria um enumerador que contém o mesmo estado do enumerador atual.  
+ Esse método cria um enumerador que contém o mesmo estado que o enumerador atual.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IEnumDebugApplicationNodes](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

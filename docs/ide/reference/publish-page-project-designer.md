@@ -1,8 +1,6 @@
 ---
 title: Página de Publicação, Designer de Projeto
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 00202ab13001a56d472027d538bc5560f936ef93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179496"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909343"
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
 A página **Publicar** do **Designer de Projeto** é usada para configurar as propriedades de implantação do ClickOnce.
@@ -82,18 +80,18 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
 ## <a name="see-also"></a>Consulte também
 
 - [Publicando aplicativos ClickOnce](../../deployment/publishing-clickonce-applications.md)
-- [Como publicar um aplicativo ClickOnce usando o Assistente de Publicação](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Como especificar onde o Visual Studio copiará os arquivos](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [Como especificar o local de onde os usuários finais instalarão](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
-- [Como especificar um link para suporte técnico](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [Como especificar o modo de instalação offline ou online do ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
-- [Como habilitar o AutoStart para instalações por CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [Como definir a versão da publicação do ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
-- [Como incrementar a versão da publicação do ClickOnce automaticamente](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
-- [Como especificar os arquivos a serem publicados pelo ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [Como instalar pré-requisitos com um aplicativo ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [Como gerenciar atualizações para um aplicativo ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [Como alterar o idioma de publicação para um aplicativo ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [Como especificar um nome no menu Iniciar para um aplicativo ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
-- [Como especificar uma página de publicação para um aplicativo ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Como: Especificar onde o Visual Studio copiará os arquivos](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Como: Especificar o local de onde os usuários finais instalarão](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [Como: Especificar um link para o suporte técnico](../../deployment/how-to-specify-a-link-for-technical-support.md)
+- [Como: Especificar o modo de instalação offline ou online do ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [Como: Habilitar o Início Automático para instalações do CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
+- [Como: Definir a versão da publicação do ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Como: Incrementar automaticamente a versão de publicação do ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
+- [Como: Especificar quais arquivos são publicados pelo ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
+- [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Como: Gerenciar atualizações para um aplicativo ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Como: Alterar o idioma de publicação de um aplicativo ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [Como: Especificar um nome no menu Iniciar para um aplicativo ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [Como: Especificar uma página de publicação para um aplicativo ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
 - [Segurança e implantação do ClickOnce](../../deployment/clickonce-security-and-deployment.md)

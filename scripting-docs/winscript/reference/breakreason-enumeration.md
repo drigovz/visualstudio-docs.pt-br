@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641016"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096792"
 ---
 # <a name="breakreason-enumeration"></a>Enumeração BREAKREASON
 Indica o que causou a interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef enum tagBREAKREASON {  
    BREAKREASON_STEP,  
    BREAKREASON_BREAKPOINT,  
@@ -47,13 +47,13 @@ typedef enum tagBREAKREASON {
   
 |Membro|Descrição|  
 |------------|-----------------|  
-|BREAKREASON_STEP|O mecanismo de idioma está no modo de depuração.|  
+|BREAKREASON_STEP|O mecanismo de linguagem está no modo passo a passo.|  
 |BREAKREASON_BREAKPOINT|O mecanismo de linguagem encontrou um ponto de interrupção explícito.|  
 |BREAKREASON_DEBUGGER_BLOCK|O mecanismo de linguagem encontrou um bloco de depurador em outro thread.|  
 |BREAKREASON_HOST_INITIATED|O host solicitou uma quebra.|  
 |BREAKREASON_LANGUAGE_INITIATED|O mecanismo de linguagem solicitou uma quebra.|  
-|BREAKREASON_DEBUGGER_HALT|O depurador IDE solicitou uma quebra.|  
-|BREAKREASON_ERROR|Um erro de execução causou a interrupção.|  
+|BREAKREASON_DEBUGGER_HALT|O IDE do depurador solicitou uma quebra.|  
+|BREAKREASON_ERROR TER|Erro de execução causou a interrupção.|  
 |BREAKREASON_JIT|Causadas pela inicialização de depuração JIT.|  
   
 ## <a name="see-also"></a>Consulte também  

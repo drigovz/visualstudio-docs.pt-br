@@ -1,9 +1,6 @@
 ---
 title: Atualizando projetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
@@ -12,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea5c29819d0035e45f97122fd108ea1f51d60806
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 31af6efb2021567b9eb4a5f5048b367c57971fee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057522"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841721"
 ---
 # <a name="upgrading-projects"></a>Atualizando projetos
 
@@ -67,7 +64,7 @@ Se você alterar as informações mantidas no arquivo de projeto entre diferente
 
 O antigo mecanismo que usa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface ainda tem suporte, mas conceitualmente atualiza o sistema de projeto como parte do projeto aberto. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface, portanto, é chamado do Visual Studio ambiente mesmo se o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface é chamado ou implementada. Essa abordagem permite que você use <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> para implementar a cópia e somente as partes da atualização de projeto e delegue o resto do trabalho a ser feito no local (possivelmente no novo local), o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface.
 
-Para uma implementação de exemplo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, consulte [exemplos de VSSDK](http://aka.ms/vs2015sdksamples).
+Para uma implementação de exemplo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, consulte [exemplos de VSSDK](https://aka.ms/vs2015sdksamples).
 
 Os seguintes cenários ocorrem com atualizações de projeto:
 

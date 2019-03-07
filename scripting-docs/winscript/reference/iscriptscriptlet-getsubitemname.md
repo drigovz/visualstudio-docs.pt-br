@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b8483e8a61c25a3911a35d4721c51f7b558530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6962edbc1f639e23e159915ca1aa6ef165433ce0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733696"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096636"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-Retorna o último identificador no nome totalmente qualificado do host do objeto do miniscript.  
+Retorna o último identificador no nome totalmente qualificado do host do objeto do scriptlet.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetSubItemName(  
    BSTR               *pbstr  
 );  
@@ -38,9 +38,9 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstr`  
- [out] Se o host totalmente qualificado do nome de miniscript tem mais de um nível, `pbstr` retorna o endereço do buffer do identificador do segundo nível.  
+ [out] Se o host totalmente qualificado do nome de scriptlet tem mais de um nível, `pbstr` retorna o endereço do buffer do identificador no segundo nível.  
   
- Se o host totalmente qualificado do nome de miniscript tem um nível, `pbstr` retorna o endereço do buffer do identificador do primeiro nível.  
+ Se o host totalmente qualificado do nome de scriptlet tem um nível, `pbstr` retorna o endereço do buffer do identificador no primeiro nível.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

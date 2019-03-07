@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4b009c9eb40b2935a5b1aeca0d551819462bafc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724536"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349745"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-Recupera uma cadeia de caracteres definida pelo host que identifica com exclusividade a versão atual do documento. Se o documento relacionado foi alterado fora do escopo do Script do Windows (como no caso de uma página HTML que está sendo editado com o bloco de notas), o mecanismo de script pode salvar esta juntamente com seu estado persistente, forçar uma recompilação na próxima vez que o script é carregado.  
+Recupera uma cadeia de caracteres definida pelo host que identifica exclusivamente a versão atual do documento. Se o documento relacionado foi alterado fora do escopo de Script do Windows (como no caso de uma página HTML que está sendo editado com o bloco de notas), o mecanismo de script pode salvar isso juntamente com seu estado persistente, forçar uma recompilação na próxima vez em que o script é carregado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetDocVersionString(  
     BSTR *pbstrVersionString  // address of document version string  
 );  
@@ -38,13 +38,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstrVersionString`  
- [out] Endereço da cadeia de caracteres de versão do documento definida pelo host.  
+ [out] Endereço da cadeia de caracteres de versão do documento definido pelo host.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna `S_OK` se for bem-sucedido, ou `E_NOTIMPL` se esse método não tem suporte.  
   
 ## <a name="remarks"></a>Comentários  
- Se `E_NOTIMPL` for retornado, o mecanismo de script deve presumir que o script está em sincronizado com o documento.  
+ Se `E_NOTIMPL` for retornado, o mecanismo de script deve pressupor que o script está em sincronizado com o documento.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

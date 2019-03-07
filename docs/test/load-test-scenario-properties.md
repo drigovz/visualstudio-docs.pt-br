@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894593"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935063"
 ---
 # <a name="load-test-scenario-properties"></a>Propriedades do cenário de teste de carga
 
@@ -43,11 +41,11 @@ Altere as configurações das propriedades do cenário de teste de carga no Visu
 
 |Propriedade|Definição|
 |-|----------------|
-|**Agentes a usar**|Especifica os agentes que você deseja que seu cenário use se você estiver executando o teste de carga remotamente. Por exemplo, talvez seja conveniente especificar um determinado conjunto de agentes para que você possa manter consistência ao analisar tendências de desempenho. Além disso, os agentes podem ser distribuídos geograficamente para que haja uma afinidade entre quais scripts eles executam e onde o agente está localizado.<br /><br />Os agentes devem ser separados por vírgulas, por exemplo, "**Agent1, Agent2, Agent3**". Deixar a propriedade em branco especifica que esse cenário deve usar todos os agentes disponíveis.<br /><br />Para obter mais informações, confira [Como especificar agentes de teste a serem usados](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
-|**Aplicar distribuição à definição dos atrasos**|O valor booliano que é usado para especificar se você deseja aplicar atrasos comuns de distribuição no modelo de combinação de testes no ritmo do usuário. Essa propriedade será aplicada somente se a propriedade **Tipo de Combinação de Testes** for definida como **Com base no ritmo do usuário**.<br /><br />Para obter mais informações, confira [Como aplicar a distribuição à definição dos atrasos](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Agentes a usar**|Especifica os agentes que você deseja que seu cenário use se você estiver executando o teste de carga remotamente. Por exemplo, talvez seja conveniente especificar um determinado conjunto de agentes para que você possa manter consistência ao analisar tendências de desempenho. Além disso, os agentes podem ser distribuídos geograficamente para que haja uma afinidade entre quais scripts eles executam e onde o agente está localizado.<br /><br />Os agentes devem ser separados por vírgulas, por exemplo, "**Agent1, Agent2, Agent3**". Deixar a propriedade em branco especifica que esse cenário deve usar todos os agentes disponíveis.<br /><br />Para obter mais informações, confira [Como: Especificar agentes de teste para usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
+|**Aplicar distribuição à definição dos atrasos**|O valor booliano que é usado para especificar se você deseja aplicar atrasos comuns de distribuição no modelo de combinação de testes no ritmo do usuário. Essa propriedade será aplicada somente se a propriedade **Tipo de Combinação de Testes** for definida como **Com base no ritmo do usuário**.<br /><br />Para obter mais informações, confira [Como: Aplicar distribuição à definição dos atrasos](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**Troca de IPs**|O valor booliano usado para especificar se a troca de IP é usada.<br /><br />A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP diferentes. Isso simula chamadas que venham de computadores cliente diferentes. A troca de IP é importante ao testar com base em um Web farm de balanceamento de carga. A maioria dos balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP.<br /><br />A troca de IP está disponível somente com o agente de teste.|
 |**Número máximo de iterações de teste**|Valor numérico que é usado para especificar o número máximo de testes a serem executados no cenário. Um valor de 0 especifica que não há máximo.<br /><br />Para obter mais informações, confira [Configurar iterações de teste para cenários](../test/configure-test-iterations-in-a-load-test-scenario.md).|
-|**Percentual de novos usuários**|Valor numérico que especifica a porcentagem de novos usuários ou a primeira vez dos visitantes no cenário.<br /><br />Para obter mais informações, confira [Como especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
+|**Percentual de novos usuários**|Valor numérico que especifica a porcentagem de novos usuários ou a primeira vez dos visitantes no cenário.<br /><br />Para obter mais informações, confira [Como: Especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Perfil de processamento**|Especifica se o cenário usará a **Distribuição Normal** ou se o perfil de processamento está **Ativado** ou **Desativado**.<br /><br />Para obter mais informações, confira [Editar tempos de processamento para simular atrasos de interação humana do site](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Timing

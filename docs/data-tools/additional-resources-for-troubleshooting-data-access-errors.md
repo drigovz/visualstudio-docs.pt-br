@@ -221,23 +221,21 @@ helpviewer_keywords:
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089070"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917058"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Solucionar problemas de erros de acesso de dados nos fóruns
 
 Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). Aqui estão alguns fóruns relacionados a dados disponíveis no MSDN:
 
-- [Associação de dados e controles de dados do Windows Forms](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Controles de dados e vinculação de dados do Windows Forms](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [Fórum de conjunto de dados ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
@@ -245,7 +243,7 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 - [Fórum do WCF data services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [Fórum de acesso de dados do SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [Fórum do Acesso a dados no SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
 - [LINQ para o fórum do SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 

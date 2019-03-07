@@ -1,8 +1,6 @@
 ---
-title: 'CA1039: as listas são fortemente tipadas'
+title: 'CA1039: Listas são fortemente tipadas'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1039
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 961052d778551818942977b4d8895b85e96091d6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d11afe8a3ea8fcae971461b8e33fc4771b74eb75
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551815"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947465"
 ---
-# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: as listas são fortemente tipadas
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listas são fortemente tipadas
 
 |||
 |-|-|
@@ -38,7 +36,7 @@ Tipo de público ou protegido implementa <xref:System.Collections.IList?displayP
 
 - IList.Item
 
-- IList
+- IList.Add
 
 - IList.Contains
 
@@ -68,9 +66,9 @@ Para estar em conformidade com esta regra, implemente os membros de interface ex
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1035: as implementações de ICollection têm membros fortemente tipados](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035: As implementações de ICollection têm membros fortemente tipados](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038: os enumeradores devem ser fortemente tipados](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038: Enumeradores devem ser fortemente tipados](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,8 +1,6 @@
 ---
-title: 'CA2216: os tipos descartáveis devem declarar o finalizador'
+title: 'CA2216: Tipos descartáveis devem declarar o finalizador'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DisposableTypesShouldDeclareFinalizer
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 0cabcc5e-b526-452b-8c2a-0cbe3b93c0ef
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9362d7aea5f66be7a7faa237ab1f78853ac7fd6f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549292"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927692"
 ---
-# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: os tipos descartáveis devem declarar o finalizador
+# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Tipos descartáveis devem declarar o finalizador
 
 |||
 |-|-|
@@ -62,11 +60,11 @@ O exemplo a seguir mostra um tipo que viola essa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA2115: chamar GC.KeepAlive durante o uso de recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: Chame GC. KeepAlive ao usar recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Chame GC. SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
-[CA1049: tipos que tenham recursos nativos devem ser descartáveis](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: Tipos que tenham recursos nativos devem ser descartáveis](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>Consulte também
 

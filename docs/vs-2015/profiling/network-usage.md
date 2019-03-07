@@ -1,25 +1,20 @@
 ---
 title: Uso de rede | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759903"
 ---
 # <a name="network-usage"></a>Uso de rede
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
   
 1. Abra o projeto no Visual Studio.  
   
-2. No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha Rede, **Iniciar**.  
+2. No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha **Rede**, **Iniciar**.  
   
 3. A ferramenta de rede começa coletando o tráfego HTTP do seu aplicativo.  
   
@@ -80,8 +75,5 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
   
 ## <a name="see-also"></a>Consulte também  
  [Executar ferramentas de criação de perfil sem depuração](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog do Visual Studio: Introdução ao Inspetor do Visual Studio rede](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Blog do Visual Studio: Apresentando o inspetor de rede do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Vídeo do Channel 9: ferramentas de diagnóstico do VS – novo criador de perfil de rede](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
-
-
-

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725786"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097312"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Faz com que o thread atual bloquear e envia uma notificação de erro para o depurador do IDE.  
+Faz com que o thread atual bloquear e envia uma notificação de erro para o IDE do depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT HandleRuntimeError(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    IActiveScriptSite*        pScriptSite,  
@@ -64,7 +64,7 @@ HRESULT HandleRuntimeError(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Um mecanismo de linguagem chama esse método no contexto de um thread que causa um erro de tempo de execução. Este método faz com que o thread atual bloquear e envia uma notificação de erro a ser enviada ao depurador do IDE. Quando o depurador IDE retoma o aplicativo, este método retorna com a ação a ser executada.  
+ Um mecanismo de linguagem chama esse método no contexto de um thread que causa um erro de tempo de execução. Esse método faz com que o thread atual bloquear e envia uma notificação de erro a ser enviada para o IDE do depurador. Quando o IDE do depurador retoma o aplicativo, esse método retorna com a ação a ser executada.  
   
 > [!NOTE]
 >  Enquanto estiver na falha de tempo de execução, o mecanismo de linguagem pode ser chamado pelo thread para executar tarefas, como enumerar os quadros de pilha ou avaliar expressões.  

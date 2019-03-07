@@ -2,8 +2,6 @@
 title: Atualizar o Dotfuscator CE (Community Edition)
 ms.date: 02/08/2017
 ms.devlang: dotnet
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, proteção, community edition, ofuscação, .NET, gratuito, Visual Studio 2017, atualização, linha de comando
 helpviewer_keywords:
@@ -24,13 +22,13 @@ description: Saiba como atualizar o Dotfuscator Community Edition gratuito inclu
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+manager: jillfra
+ms.openlocfilehash: 8665fdb1cc527c85e3071f9f19362caf4e5bc544
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468537"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937315"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Atualizar o Dotfuscator CE (Community Edition)
 

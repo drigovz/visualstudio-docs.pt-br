@@ -3,30 +3,28 @@ title: Usar o Visual Studio para criar seu primeiro aplicativo de console em C#
 titleSuffix: ''
 description: Saiba como criar passo a passo um aplicativo simples de console Olá, Mundo no Visual Studio em C#.
 ms.date: 09/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 12a08aa0e7509d04b522b74362347bc996e02946
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158600"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923728"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo de console em C#
 
 Nesta introdução de 5 a 10 minutos ao IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo simples em C# para ser executado no console.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
 ## <a name="create-a-project"></a>Criar um projeto
 
@@ -50,7 +48,7 @@ Primeiro, você criará um projeto de aplicativo em C#. O tipo de projeto inclui
 
 ## <a name="create-the-application"></a>Criar o aplicativo
 
-Depois que você seleciona o modelo em C# e dá um nome ao projeto, o Visual Studio cria um aplicativo simples “Olá, Mundo”. 
+Depois que você seleciona o modelo em C# e dá um nome ao projeto, o Visual Studio cria um aplicativo simples “Olá, Mundo”.
 
 Para isso, ele chama o método <xref:System.Console.WriteLine%2A> para exibir a cadeia de caracteres literal "Olá, Mundo!" na janela do console.
 
@@ -99,4 +97,4 @@ Vamos adicionar alguns códigos para pausar o aplicativo de modo que a janela do
 Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha aprendido um pouco sobre C# e o IDE do Visual Studio. Para saber mais, continue com os tutoriais a seguir.
 
 > [!div class="nextstepaction"]
-> [Introdução ao aplicativo de console em C# no Visual Studio](tutorial-csharp-console.md)
+> [Introdução ao aplicativo de console em C# no Visual Studio](../get-started/csharp/tutorial-console.md)

@@ -2,9 +2,7 @@
 title: Controlar atualizações em implantações
 description: Saiba como alterar o local onde o Visual Studio busca atualizações quando você instala usando uma rede.
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f5170b0838e51fb03e17c2f627665c7e64dfd7
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 74ec72ab5cd703998d8f7d88de3ad96d0aa5bb65
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159757"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915625"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Atualizações de controle para implantações do Visual Studio com base em rede
 

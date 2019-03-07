@@ -1,9 +1,9 @@
 items:
 - name: Documentação do Visual Studio
-  href: ide/index.md
+  href: ide/index.yml
 - name: Visão geral
   items:
-  - name: Sobre o Visual Studio 2017
+  - name: Sobre o Visual Studio
     href: get-started/visual-studio-ide.md
   - name: Sobre o editor de código
     href: get-started/tutorial-editor.md
@@ -38,7 +38,7 @@ items:
   - name: Modificar o Visual Studio
     href: install/modify-visual-studio.md
   - name: Instalar o Help Viewer
-    href: ide/microsoft-help-viewer-installation.md
+    href: help-viewer/installation.md
   - name: Reparar o Visual Studio
     href: install/repair-visual-studio.md
   - name: Desinstalar o Visual Studio
@@ -84,36 +84,36 @@ items:
       - name: 'Assinaturas do Visual Studio: Visão geral do administrador'
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: Guia do administrador do Help Viewer
-      href: ide/help-viewer-administrator-guide.md
+      href: help-viewer/administrator-guide.md
       items:
       - name: Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
-        href: ide/command-line-arguments-for-the-help-content-manager.md
+        href: help-viewer/command-line-arguments.md
       - name: Substituições do Gerenciador de Conteúdo da Ajuda
-        href: ide/help-content-manager-overrides.md
+        href: help-viewer/behavior-overrides.md
     - name: Referência
       items:
       - name: IDs de carga de trabalho e de componente do Visual Studio
         href: install/workload-and-component-ids.md
         items:
-        - name: Visual Studio Enterprise 2017
+        - name: Visual Studio Enterprise
           href: install/workload-component-id-vs-enterprise.md
-        - name: Visual Studio Professional 2017
+        - name: Visual Studio Professional
           href: install/workload-component-id-vs-professional.md
-        - name: Visual Studio Community 2017
+        - name: Comunidade Visual Studio
           href: install/workload-component-id-vs-community.md
-        - name: Team Explorer para Visual Studio 2017
+        - name: Team Explorer para Visual Studio
           href: install/workload-component-id-vs-team-explorer.md
-        - name: Visual Studio Express 2017 para Windows Desktop
+        - name: Visual Studio Desktop Express
           href: install/workload-component-id-vs-express.md
-        - name: Ferramentas de Build do Visual Studio 2017
+        - name: Ferramentas de Build do Visual Studio
           href: install/workload-component-id-vs-build-tools.md
-        - name: Visual Studio Test Agent 2017
+        - name: Test Agent do Visual Studio
           href: install/workload-component-id-vs-test-agent.md
-        - name: Visual Studio Test Controller 2017
+        - name: Test Controller do Visual Studio
           href: install/workload-component-id-vs-test-controller.md
-        - name: Visual Studio Test Professional 2017
+        - name: Visual Studio Test Professional
           href: install/workload-component-id-vs-test-professional.md
-        - name: Visual Studio Feedback Client 2017
+        - name: Visual Studio Feedback Client
           href: install/workload-component-id-vs-feedback-client.md
       - name: Números de build e datas de lançamento do Visual Studio
         href: install/visual-studio-build-numbers-and-release-dates.md
@@ -140,32 +140,24 @@ items:
     href: ide/quickstart-fsharp.md
   - name: 'C#: Como criar um aplicativo Web'
     href: ide/quickstart-aspnet-core.md
-  - name: 'C#: Criar um aplicativo UWP'
-    href: ide/quickstart-uwp-csharp.md
   - name: 'C#: Criar um aplicativo do console'
     href: ide/quickstart-csharp-console.md
   - name: 'Visual Basic: Criar um aplicativo do console'
     href: ide/quickstart-visual-basic-console.md
 - name: Tutoriais
   items:
-  - name: C++ no Visual Studio...
-    href: /cpp/build/vscpp-step-0-installation
-  - name: Python no Visual Studio...
-    href: python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-  - name: R no Visual Studio...
-    href: rtvs/getting-started-with-r.md
-  - name: Node.js no Visual Studio
-    href: javascript/tutorial-nodejs.md
-  - name: C# no Visual Studio
-    items:
-    - name: 'C#: Como criar um aplicativo Web'
-      href: ide/tutorial-csharp-aspnet-core.md
-    - name: 'C#: Criar um aplicativo do console'
-      href: ide/tutorial-csharp-console.md
-  - name: Visual Basic no Visual Studio
-    href: ide/tutorial-visual-basic-console.md
-  - name: Depurar no Visual Studio
-    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default&contextView=vs-2017
+  - name: C#
+    href: get-started/csharp/
+  - name: F#
+    href: /dotnet/fsharp/
+  - name: Visual Basic
+    href: get-started/visual-basic/
+  - name: C++
+    href: /cpp/get-started/
+  - name: Python
+    href: python/
+  - name: Node.js
+    href: javascript/
 - name: Guias de instruções
   items:
   - name: Desenvolver
@@ -180,7 +172,7 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: Portar, migrar e atualizar projetos
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-      - name: Portar, migrar e atualizar projetos do Visual Studio 2019 Preview
+      - name: Portar, migrar e atualizar projetos do Visual Studio 2019
         href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: Gerenciar propriedades do projeto e da solução
         href: ide/managing-project-and-solution-properties.md
@@ -238,6 +230,8 @@ items:
           href: ide/how-to-update-existing-templates.md
         - name: Substituir parâmetros em um modelo
           href: ide/how-to-substitute-parameters-in-a-template.md
+        - name: Parâmetros de modelo
+          href: ide/template-parameters.md
       - name: Suporte a 64 bits
         href: ide/visual-studio-ide-64-bit-support.md
     - name: Desenvolver sem projetos nem soluções ("Abrir Pasta")
@@ -311,12 +305,16 @@ items:
             href: ide/reference/generate-field-property-local.md
           - name: Gerar construtor
             href: ide/reference/generate-constructor.md
+          - name: Gerar desconstrutor
+            href: ide/reference/generate-deconstructor.md
           - name: Adicionar parâmetro a um método
             href: ide/reference/add-parameter.md
           - name: Gerar substituição
             href: ide/reference/generate-override.md
           - name: Gerar substituições de método Equals e GetHashCode
             href: ide/reference/generate-equals-gethashcode-methods.md
+          - name: Gerar usos
+            href: ide/reference/generate-usings.md
           - name: Implementar classe abstrata
             href: ide/reference/implement-abstract-class.md
           - name: Implementar interface
@@ -328,10 +326,18 @@ items:
           items:
           - name: Alterar assinatura do método
             href: ide/reference/change-method-signature.md
+          - name: Converter tipo anônimo em classe
+            href: ide/reference/convert-anonymous-type-to-class.md
+          - name: Converter tipo anônimo em tupla
+            href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: Converter entre a instrução loop e foreach
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Converter entre a propriedade e o método Get
             href: ide/reference/convert-get-method-to-property.md
+          - name: Converter função local em método
+            href: ide/reference/convert-local-function-method.md
+          - name: Converter o loop foreach ao LINQ
+            href: ide/reference/convert-foreach-linq.md
           - name: Converter a consulta LINQ em uma instrução foreach
             href: ide/reference/convert-linq-to-foreach.md
           - name: Encapsular campo
@@ -342,10 +348,16 @@ items:
             href: ide/reference/extract-method.md
           - name: Variável temporária embutida
             href: ide/reference/inline-temporary-variable.md
+          - name: Inverter expressões condicionais e operações lógicas
+            href: ide/reference/invert-conditional-logical.md
+          - name: Inverter instrução if
+            href: ide/reference/invert-if-statement.md
           - name: Mover declaração para perto da referência
             href: ide/reference/move-declaration-near-reference.md
           - name: Mover o tipo para o arquivo correspondente
             href: ide/reference/move-type-to-matching-file.md
+          - name: Mover membro para cima
+            href: ide/reference/pull-members-up.md
           - name: Remover o código inacessível
             href: ide/reference/remove-unreachable-code.md
           - name: Renomear
@@ -354,6 +366,12 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Usar o tipo explícito
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: Usar a expressão de lambda ou bloquear o corpo
+            href: ide/reference/use-block-body-lambda.md
+          - name: Parâmetros e valores não usados
+            href: ide/reference/unused-values-parameters.md
+          - name: Encapsular, recuar e alinhar parâmetros
+            href: ide/reference/wrap-align-indent-parameters.md
         - name: 'Passo a passo: Gerar código por meio do uso'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Dicas de produtividade
@@ -514,10 +532,15 @@ items:
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: Trabalhar com arquivos XML e XSLT
       href: xml-tools/xml-tools-in-visual-studio.md
+    - name: Desenvolver aplicativos internacionais
+      href: ide/globalizing-and-localizing-applications.md
+      items:
+      - name: Linguagens bidirecionais
+        href: ide/creating-applications-in-bi-directional-languages.md
     - name: Tutoriais adicionais
       items:
       - name: Criar um aplicativo WPF com C# ou Visual Basic
-        href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
+        href: /visualstudio/get-started/csharp/tutorial-wpf
       - name: Tutoriais de aplicativos do Windows Forms
         items:
         - name: 'Tutorial 1: Criar um visualizador de imagens (C#)'
@@ -666,15 +689,15 @@ items:
       href: ide/environment-settings.md
     - name: Configurações sincronizadas
       href: ide/synchronized-settings-in-visual-studio.md
-    - name: Alterar fontes e cores
+    - name: Fontes e cores
       href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
-    - name: Personalizar menus e barras de ferramentas
+    - name: Menus e barras de ferramentas
       href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
-    - name: Personalizar layouts de janela
+    - name: Layouts de janela
       href: ide/customizing-window-layouts-in-visual-studio.md
-    - name: Personalizar o aninhamento de arquivos no Gerenciador de Soluções
+    - name: Aninhamento de arquivos no Gerenciador de Soluções
       href: ide/file-nesting-solution-explorer.md
-    - name: Personalizar a página inicial
+    - name: Comportamento da inicialização
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: Localizar e usar extensões do Visual Studio
       href: ide/finding-and-using-visual-studio-extensions.md
@@ -702,35 +725,8 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: Recursos para criar aplicativos acessíveis
       href: ide/reference/resources-for-designing-accessible-applications.md
-  - name: Globalizar e localizar aplicativos
-    href: ide/globalizing-and-localizing-applications.md
-    items:
-    - name: Introdução a aplicativos internacionais do .NET Framework
-      href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-    - name: Localizar aplicativos
-      href: ide/localizing-applications.md
-      items:
-      - name: Organização hierárquica de recursos para localização
-        href: ide/hierarchical-organization-of-resources-for-localization.md
-      - name: Assemblies satélite de segurança e localizados
-        href: ide/security-and-localized-satellite-assemblies.md
-      - name: Números de versão para assemblies principal e satélite localizados
-        href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
-      - name: Idiomas de recursos naturais para localização
-        href: ide/neutral-resources-languages-for-localization.md
-    - name: Globalizar aplicativos
-      href: ide/globalizing-applications.md
-      items:
-      - name: Classes específicas de cultura para Windows Forms e Web Forms globais
-        href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-    - name: Criar aplicativos em idiomas bidirecionais
-      href: ide/creating-applications-in-bi-directional-languages.md
 - name: Referência
   items:
-  - name: Modelos de item e de projeto
-    items:
-    - name: Parâmetros de modelo
-      href: ide/template-parameters.md
   - name: Elementos da interface do usuário geral
     items:
     - name: Hierarquia de chamadas
@@ -785,8 +781,8 @@ items:
           href: ide/reference/quick-launch-environment-options-dialog-box.md
         - name: Ambiente – inicialização
           href: ide/reference/startup-environment-options-dialog-box.md
-        - name: Ambiente – configurações sincronizadas
-          href: ide/reference/synchronized-settings-environment-options-dialog-box.md
+        - name: Ambiente – Contas
+          href: ide/reference/accounts-environment-options-dialog-box.md
         - name: Ambiente – janelas e guias
           href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
         - name: Ambiente – Lista de Tarefas
@@ -828,12 +824,34 @@ items:
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: Editor de texto – C#, IntelliSense
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: Editor de texto – F#, avançado
+          href: ide/reference/options-text-editor-fsharp-advanced.md
+        - name: Editor de texto – F#, correções de código
+          href: ide/reference/options-text-editor-fsharp-code-fixes.md
+        - name: Editor de texto – F#, CodeLens
+          href: ide/reference/options-text-editor-fsharp-codelens.md
+        - name: Editor de texto – F#, IntelliSense
+          href: ide/reference/options-text-editor-fsharp-intellisense.md
+        - name: Editor de texto – HTML (Web Forms), formatação
+          href: ide/reference/options-text-editor-html-formatting.md
+        - name: Editor de texto – HTML (Web Forms), diversos
+          href: ide/reference/options-text-editor-html-miscellaneous.md
+        - name: Editor de texto – HTML (Web Forms), validação
+          href: ide/reference/options-text-editor-html-validation.md
         - name: Editor de texto – JavaScript, validação de código
           href: ide/reference/options-text-editor-javascript-code-validation.md
         - name: Editor de texto – JavaScript, formatação
           href: ide/reference/options-text-editor-javascript-formatting.md
         - name: Editor de texto – JavaScript, IntelliSense
           href: ide/reference/options-text-editor-javascript-intellisense.md
+        - name: Editor de texto – JavaScript, linting
+          href: ide/reference/options-text-editor-javascript-linting.md
+        - name: Editor de texto – JavaScript, projeto
+          href: ide/reference/options-text-editor-javascript-project.md
+        - name: Editor de texto – U-SQL, formatação
+          href: ide/reference/options-text-editor-usql-formatting.md
+        - name: Editor de texto – U-SQL, IntelliSense
+          href: ide/reference/options-text-editor-usql-intellisense.md
         - name: Editor de texto – XAML, formatação
           href: ide/reference/options-text-editor-xaml-formatting.md
         - name: Editor de texto – XAML, diversos
@@ -943,7 +961,7 @@ items:
       href: ide/reference/debugexe-devenv-exe.md
     - name: -Deploy (devenv.exe)
       href: ide/reference/deploy-devenv-exe.md
-    - name: -Diff
+    - name: -Diff (devenv.exe)
       href: ide/reference/diff.md
     - name: -Edit (devenv.exe)
       href: ide/reference/edit-devenv-exe.md
@@ -951,6 +969,8 @@ items:
       href: ide/reference/lcid-devenv-exe.md
     - name: -Log (devenv.exe)
       href: ide/reference/log-devenv-exe.md
+    - name: -NoSplash (devenv.exe)
+      href: ide/reference/nosplash-devenv-exe.md
     - name: -Out (devenv.exe)
       href: ide/reference/out-devenv-exe.md
     - name: -Project (devenv.exe)
@@ -961,16 +981,12 @@ items:
       href: ide/reference/rebuild-devenv-exe.md
     - name: -ResetSettings (devenv.exe)
       href: ide/reference/resetsettings-devenv-exe.md
-    - name: -ResetSkipPkgs (devenv.exe)
-      href: ide/reference/resetskippkgs-devenv-exe.md
     - name: -Run (devenv.exe)
       href: ide/reference/run-devenv-exe.md
     - name: -Runexit (devenv.exe)
       href: ide/reference/runexit-devenv-exe.md
     - name: -SafeMode (devenv.exe)
       href: ide/reference/safemode-devenv-exe.md
-    - name: -Setup (devenv.exe)
-      href: ide/reference/setup-devenv-exe.md
     - name: -Upgrade (devenv.exe)
       href: ide/reference/upgrade-devenv-exe.md
     - name: -UseEnv (devenv.exe)
@@ -1057,28 +1073,28 @@ items:
     - name: WIP (Proteção de Informações do Windows)
       href: ide/exempt-visual-studio-from-wip.md
   - name: Microsoft Help Viewer
-    href: ide/microsoft-help-viewer.md
+    href: help-viewer/overview.md
     items:
     - name: Instalar e gerenciar o conteúdo local
-      href: ide/install-and-manage-local-content.md
+      href: help-viewer/install-manage-local-content.md
     - name: Localizar tópicos no Help Viewer
       items:
       - name: Localizar tópicos no índice
-        href: ide/how-to-find-topics-in-the-index.md
+        href: help-viewer/find-topics-index.md
       - name: Localizar tópicos no sumário
-        href: ide/how-to-find-topics-in-the-table-of-contents.md
+        href: help-viewer/find-topics-toc.md
       - name: Procurar tópicos
-        href: ide/how-to-search-for-topics.md
+        href: help-viewer/find-topics.md
         items:
         - name: Operadores lógicos e avançados em expressões de pesquisa
-          href: ide/logical-operators-in-search-expressions.md
+          href: help-viewer/logical-operators-search-expressions.md
     - name: Personalizar o Help Viewer
-      href: ide/customize-the-help-viewer.md
-    - name: Funcionalidades de Acessibilidade do Visualizador da Ajuda
-      href: ide/accessibility-features-of-the-help-viewer.md
+      href: help-viewer/customize.md
+    - name: Funcionalidades de Acessibilidade
+      href: help-viewer/accessibility-features.md
       items:
-      - name: Teclas de atalho (Visualizador da Ajuda)
-        href: ide/shortcut-keys-help-viewer.md
+      - name: Teclas de Atalho
+        href: help-viewer/shortcut-keys.md
   - name: Dotfuscator Community Edition (CE)
     href: ide/dotfuscator/index.md
     items:
@@ -1091,8 +1107,8 @@ items:
 - name: Recursos
   items:
   - name: Novidades no Visual Studio 2017
-    href: ide/whats-new-in-visual-studio.md
-  - name: Novidades no Visual Studio 2019
+    href: ide/whats-new-visual-studio-2017.md
+  - name: Novidades no Visual Studio 2019 RC
     href: ide/whats-new-visual-studio-2019.md
   - name: Notas de versão e requisitos do sistema
     items:
@@ -1119,10 +1135,11 @@ items:
     - name: Privacidade de dados da Comunidade de Desenvolvedores
       href: ide/developer-community-privacy.md
   - name: Como relatar um problema no Visual Studio
-    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 'Visão geral: Relatar um problema'
-    href: ide/report-a-problem.md
-  - name: 'Visão geral: Sugerir um recurso'
+    href: ide/how-to-report-a-problem-with-visual-studio.md
+    items:
+    - name: Estados da ferramenta Relatar um problema e perguntas frequentes
+      href: ide/report-a-problem.md
+  - name: Sugerir uma funcionalidade para o Visual Studio
     href: ide/suggest-a-feature.md
   - name: Programa de Aperfeiçoamento da Experiência do Usuário
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1150,10 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Fale conosco
     href: ide/talk-to-us.md
-ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+  expanded: true
+ms.openlocfilehash: a54443258922e37da185b8abd7897a2ab6a525cb
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160069"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324254"

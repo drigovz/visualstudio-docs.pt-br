@@ -1,14 +1,9 @@
 ---
 title: Comando Ativar/desativar ponto de interrupção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.togglebreakpoint
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f993d9a0377531b155301bed235c00bf8e6667c4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11f0598fa20a5293d662bdbb23b7f67c6c0c80b2
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223152"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54793168"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Ativar/Desativar Ponto de Interrupção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,6 +50,3 @@ Debug.ToggleBreakpoint [text]
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

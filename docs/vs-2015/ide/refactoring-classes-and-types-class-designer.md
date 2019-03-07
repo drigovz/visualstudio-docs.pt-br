@@ -1,14 +1,9 @@
 ---
 title: Refatorando classes e tipos (Designer de Classe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207955"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782120"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refatorando classes e tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49207955"
 Quando você refatora o código, ele fica mais fácil de entender, manter e mais eficiente, alterando a estrutura interna e como os seus objetos são criados, não o comportamento externo dele. Use o Designer de Classe e a janela Detalhes da Classe para reduzir o trabalho que é necessário e a possibilidade de introduzir bugs quando você refatora o código do Visual C# .NET, Visual Basic .NET ou C++ em seu projeto do Visual Studio.  
   
 > [!NOTE]
->  Os arquivos de um projeto podem ser somente leitura porque o projeto está sob controle do código-fonte e não está submetido a check-out, ele é um projeto referenciado ou seus arquivos são marcados como somente leitura no disco. Quando você trabalha em um projeto em um desses estados, você tem várias maneiras de salvar o trabalho, dependendo do estado do projeto. Isso se aplica ao código de refatoração e também ao código que você altera de outra forma, como editando-o diretamente. Para obter mais informações, consulte [Exibição de informações somente leitura (Designer de Classe)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  Os arquivos de um projeto podem ser somente leitura porque o projeto está sob controle do código-fonte e não está submetido a check-out, ele é um projeto referenciado ou seus arquivos são marcados como somente leitura no disco. Quando você trabalha em um projeto em um desses estados, você tem várias maneiras de salvar o trabalho, dependendo do estado do projeto. Isso se aplica ao código de refatoração e também ao código que você altera de outra forma, como editando-o diretamente. Para obter mais informações, consulte [Exibição de informações somente leitura (Designer de Classe)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
   
@@ -99,6 +94,3 @@ Quando você refatora o código, ele fica mais fácil de entender, manter e mais
 |-----------|-----------------|  
 |[Exibindo tipos e relações (Designer de Classe)](../ide/viewing-types-and-relationships-class-designer.md)||  
 |[Projetando classes e tipos (Designer de Classe)](../ide/designing-classes-and-types-class-designer.md)||
-
-
-

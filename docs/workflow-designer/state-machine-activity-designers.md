@@ -2,20 +2,18 @@
 title: Designer de fluxo de trabalho – Designers de atividade de máquina de estado
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: de928ff095c5700506060b9fceb609003f1b9ab1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755492"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952457"
 ---
 # <a name="state-machine-activity-designers"></a>Designer de atividade do computador de estado
 
@@ -39,7 +37,7 @@ Designer de fluxo de trabalho inclui um número de designers de atividade que vo
 
  [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
 
- [Sistema de mensagens](../workflow-designer/messaging-activity-designers.md)
+ [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
  [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
 

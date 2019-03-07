@@ -2,23 +2,21 @@
 title: Designer de fluxo de trabalho - Designer de atividade de StateMachine
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - StateMachine Designer
 - System.Activities.Statements.StateMachine.UI
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 379364ad443c947ea0cd44e2ed58d2b0ca988f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59b1a194f4f301bd3080820b56c89044315c66e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880508"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921062"
 ---
 # <a name="statemachine-activity-designer"></a>Designer de atividade de StateMachine
 

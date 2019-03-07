@@ -1,8 +1,6 @@
 ---
-title: 'CA2112: os tipos seguros não devem expor campos'
+title: 'CA2112: Tipos protegidos não devem expor campos'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2112
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 538c7ac89643c168086d6bdcb514d88295e482dc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2d46c9fe1b97b5bdfb081150a44aa69363eced53
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548282"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922791"
 ---
-# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: os tipos seguros não devem expor campos
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Tipos protegidos não devem expor campos
 
 |||
 |-|-|
@@ -72,7 +70,7 @@ Cached Object fields: 99, 33
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1051: não declarar campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+- [CA1051: Não declarar campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>Consulte também
 

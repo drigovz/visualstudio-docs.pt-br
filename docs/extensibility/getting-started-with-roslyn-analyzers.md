@@ -1,20 +1,19 @@
 ---
 title: Introdução ao analisadores Roslyn | Microsoft Docs
 ms.date: 04/02/2018
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6077fb8a9f0db360389953ef6a7ed25c6d242247
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 57573adeceda942b2968bfe07108ff4d54a8435f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821286"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927688"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introdução ao analisadores Roslyn
 
@@ -24,7 +23,7 @@ Com os analisadores de código ao vivo, com base em projeto no Visual Studio, os
 
 [Passo a passo e introdução de analisadores de código em tempo real de Roslyn](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
-[Adicionar correções de código passo a passo: fornecer correções de usuários para problemas de analisador](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Adicione as correções de código passo a passo: Fornecer correções de usuários para problemas de analisador](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
 [Introdução e instruções passo a passo do analisador do mundo real de falar](https://channel9.msdn.com/events/Build/2015/3-725)
 
@@ -37,7 +36,7 @@ Com os analisadores de código ao vivo, com base em projeto no Visual Studio, os
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral de analisadores de Roslyn](../code-quality/roslyn-analyzers-overview.md)
-- [Tutorial: Escrever sua primeira correção de código e o analisador](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+- [Tutorial: Gravar sua primeira correção de código e o analisador](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [Referência de versão de pacote de plataforma do .NET compilador](roslyn-version-support.md)
 - [Docs mais no site do GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-- [Regras do FxCop implementadas com analisadores de Roslyn no GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+- [Regras do FxCop implementadas com analisadores de Roslyn](http://roslynanalyzersstatus.azurewebsites.net/)

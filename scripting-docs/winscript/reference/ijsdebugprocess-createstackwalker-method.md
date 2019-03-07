@@ -1,5 +1,5 @@
 ---
-title: 'Método: Createstackwalker | Microsoft Docs'
+title: 'Método ijsdebugprocess:: Createstackwalker | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ca7594f4e3c6ef44aa8cde1d92f17d46a9aa30
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f9c39163eae1f3a9bad15697bbc5621661bc781
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727766"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088277"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>Método IJsDebugProcess::CreateStackWalker
-Método de fábrica movimentador de pilha.  
+Método de fábrica para movimentador de pilhas.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT CreateStackWalker(  
    DWORD threadId,  
    IJsDebugStackWalker **ppStackWalker  
@@ -45,7 +45,7 @@ HRESULT CreateStackWalker(
 ## <a name="return-value"></a>Valor de retorno  
   
 ## <a name="remarks"></a>Comentários  
- Retorna E_JsDEBUG_UNKNOWN_THREAD se o thread não tem JavaScript nele. Esse método só pode ser chamado enquanto o processo de destino está parado.  
+ Retornará E_JsDEBUG_UNKNOWN_THREAD se o thread não tiver JavaScript nele. Esse método só pode ser chamado enquanto o processo de destino é interrompido.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** jscript9diag.h  

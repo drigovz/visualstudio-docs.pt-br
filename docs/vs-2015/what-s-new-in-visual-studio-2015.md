@@ -3,10 +3,7 @@ title: Novidades no Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062432"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844133"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -59,7 +56,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
  Ferramentas do Visual Studio para Apache Cordova é o resultado de uma estreita colaboração entre a Microsoft e de código aberto da comunidade do Apache Cordova. As ferramentas permitem o desenvolvimento móvel de plataforma cruzada usando HTML, CSS e JavaScript (ou Typescript). Você pode direcionar o iOS, Android e Windows com uma única base de código e aproveite a riqueza do IDE do Visual Studio incluindo IntelliSense do JavaScript, o Explorador do DOM, Console do JavaScript, os pontos de interrupção, inspeções, locais, apenas meu código e muito mais.  Com o Visual Studio Tools para Apache Cordova, seus aplicativos têm acesso aos recursos nativos do dispositivo em todas as plataformas por meio do plug-ins que fornecem uma API comum em JavaScript. Para começar, consulte [Introdução ao Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Jogos móveis de plataforma cruzada em c# com o Unity
- Unity é uma plataforma amplamente usado para desenvolvimento de jogos 2D e 3D multiplataforma. Você pode escrever seu jogo em c# e executá-lo de modo nativo no Android, iOS, Windows Phone e muitas outras plataformas. Ferramentas do Visual Studio para Unity é uma extensão que se integra a Unity com o IDE do Visual Studio. Com essa extensão, você obtém todos os recursos do IDE do Visual Studio e o depurador, além dos recursos de produtividade que são projetados para desenvolvedores do Unity. Ferramentas do Visual Studio para Unity 2.0 Preview 2 adiciona suporte para Visual Studio 2015, além disso a um número de novos recursos, como uma melhor visualização para objetos em locais e inspeção windows. A Microsoft adquiriu recentemente SyntaxTree, os criadores do Visual Studio Tools for Unity. Para baixar as ferramentas do Visual Studio para Unity 2.0 Preview 2 e para obter mais informações sobre ferramentas do Visual Studio para Unity, consulte [Visual Studio Tools for Unity 2.0](http://Aka.ms/vstu).
+ Unity é uma plataforma amplamente usado para desenvolvimento de jogos 2D e 3D multiplataforma. Você pode escrever seu jogo em c# e executá-lo de modo nativo no Android, iOS, Windows Phone e muitas outras plataformas. Ferramentas do Visual Studio para Unity é uma extensão que se integra a Unity com o IDE do Visual Studio. Com essa extensão, você obtém todos os recursos do IDE do Visual Studio e o depurador, além dos recursos de produtividade que são projetados para desenvolvedores do Unity. Ferramentas do Visual Studio para Unity 2.0 Preview 2 adiciona suporte para Visual Studio 2015, além disso a um número de novos recursos, como uma melhor visualização para objetos em locais e inspeção windows. A Microsoft adquiriu recentemente SyntaxTree, os criadores do Visual Studio Tools for Unity. Para baixar as ferramentas do Visual Studio para Unity 2.0 Preview 2 e para obter mais informações sobre ferramentas do Visual Studio para Unity, consulte [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Aplicativos de plataforma cruzada e bibliotecas para C++ nativo
  C++ é um idioma disponível nativamente pela maioria dos dispositivos móveis. Você pode usá-lo a escrever código de plataforma cruzada compartilhado bibliotecas que pode ser criados para vários destinos de plataforma móvel. Você pode até criar aplicativos móveis todo em C++. Visual C++ fornece as ferramentas para editar, compilar, implantar e depurar seu código de plataforma cruzada. Além dos modelos para aplicativos do Windows, você pode criar projetos de modelos para aplicativos de atividade nativa do Android, aplicativos iOS ou projetos de biblioteca de código compartilhado para várias plataformas que incluem aplicativos híbridos de Xamarin. IntelliSense específico da plataforma permite que você explorar APIs e gerar códigos corretos para destinos de Android, iOS ou Windows. Você pode configurar sua compilação para plataformas x86 ou ARM nativas e, em seguida, implantar seu código em um simulador de iOS ou em dispositivos iOS no Mac conectado à rede, em dispositivos Android diretamente conectados ou usar o emulador do Microsoft Visual Studio de alto desempenho para o Android para teste. Você pode definir pontos de interrupção, inspecione variáveis, exibir a pilha e percorrer o código C++ no depurador do Visual Studio. Você pode compartilhar tudo, exceto o código mais específicos da plataforma em várias plataformas de aplicativo e criar para eles, tudo isso com uma solução no Visual Studio.
@@ -137,14 +134,14 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 -   **C++ / Android**. Use o [Visual C++ para desenvolvimento móvel de plataforma cruzada](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) modelos junto com as ferramentas de terceiros, como o [NDK do Android](https://developer.android.com/tools/sdk/ndk/index.html) para criar aplicativos nativos para Windows e Android.
 
 ## <a name="debugging-and-diagnostics"></a>Depuração e Diagnóstico
- Para obter informações sobre o que há de novo na depuração, consulte [o que há de novo no depurador no Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Para obter informações sobre o que há de novo na depuração, consulte [o que há de novo no depurador no Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Para obter informações sobre o que há de novo no diagnóstico, consulte [o que há de novo nas ferramentas de criação de perfil](./profiling/what-s-new-in-profiling-tools.md).
 
  A seguir é nova ou aprimorados ferramentas que executam diferentes tipos de diagnóstico e análise em seu código:
 
 ### <a name="perftips"></a>PerfTips
- As PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os gargalos sem ter que invocar o criador de perfil. Para começar, consulte [PerfTips: informações de desempenho em geral durante a depuração com o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ As PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os gargalos sem ter que invocar o criador de perfil. Para começar, consulte [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Lista de Erros
  A lista de erros agora dá suporte à filtragem em qualquer coluna. Ele também mostra uma exibição ao vivo de erros, avisos e análise de código em toda a solução c# ou Visual Basic conforme você digita, mesmo quando uma alteração de código produz milhares de avisos. A nova lista de erros é compatível com o back com o uso existente. Para obter mais informações, consulte [janela lista de erros](./ide/reference/error-list-window.md).
@@ -183,18 +180,18 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ### <a name="notification-hub"></a>Hub de notificação
  A interface do usuário para o hub de notificação foi otimizada para torná-lo mais fácil verificar rapidamente. Tipos de notificações adicionais foram adicionados incluindo problemas de desempenho, problemas de renderização e falhas, e você agora pode informar ao Visual Studio pare de mostrar uma notificação. Para obter mais informações, consulte [Notificações do Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens Encontre o que aconteceu com seu código (apenas para edições Enterprise e Professional)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Localizar o que aconteceu com seu código (apenas para edições Enterprise e Professional)
  Mantenha o foco no trabalho enquanto você encontrar informações sobre seu código – sem sair do editor. Você pode revisar as alterações e outro histórico de itens de trabalho, bugs, revisões de código, e assim por diante para o código que é armazenado no Visual Studio Team Services (VSTS) ou no Team Foundation Server (TFS).
 
  No Visual Studio Enterprise e Professional do Visual Studio, agora você pode:
 
 - Obter histórico para um arquivo de código completo no editor do Visual Studio.
 
-   ![CodeLens Obter detalhes do arquivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: obtenha detalhes do arquivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Ver um gráfico que mostra quem alterou seu código. Isso pode ajudá-lo a encontrar padrões nas alterações da sua equipe e avaliar o impacto delas.
 
-   ![CodeLens Consulte o histórico de alterações de código como um grafo](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: ver o histórico de alterações do código como um grafo](./ide/media/codelens.png "CodeLens")
 
 - Ver facilmente quando o seu código foi alterado pela última vez.
 

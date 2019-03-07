@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b01fba7d0e8eb80fed51b1ff0ebd3a8816bacb01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0973b2943ed76a7baa231a287476b237cd45e257
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645686"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095453"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
-Retorna os atributos de texto de um miniscript.  
+Retorna os atributos de texto de um scriptlet.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR pszCode,  
    ULONG cch,  
@@ -42,25 +42,25 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszCode`  
- [in, size_is (`cch`)] o texto miniscript. Essa cadeia de caracteres não precisa ser terminado em null.  
+ [in, size_is (`cch`)] o texto de scriptlet. Essa cadeia de caracteres não precisa ser terminado em null.  
   
  `cch`  
  [in] O tamanho usado para o `pszCode` e `pattr` parâmetros.  
   
  `pszDelimiter`  
- [in] O endereço do delimitador final de miniscript. Quando `pszCode` é analisada em um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples), para detectar o fim do miniscript. Defina esse parâmetro como NULL se nenhum delimitador é usado para identificar o término do miniscript.  
+ [in] O endereço do delimitador final do scriptlet. Quando `pszCode` é analisado de um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples), para detectar o final do scriptlet. Defina esse parâmetro como NULL se nenhum delimitador é usado para identificar o final do scriptlet.  
   
  `dwFlags`  
- [in] Os sinalizadores que estão associados com os atributos de texto do miniscript. Pode ser uma combinação dos valores a seguir.  
+ [in] Os sinalizadores que estão associados com os atributos de texto de scriptlet. Pode ser uma combinação dos valores a seguir.  
   
 |Constante|Valor|Descrição|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Identificar os identificadores que têm o atributo SOURCETEXT_ATTR_IDENTIFIER e identificar os operadores de ponto que têm o atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Identificar os identificadores que têm o atributo SOURCETEXT_ATTR_IDENTIFIER e identificar os operadores dot que têm o atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Identificar o objeto atual que tem o atributo SOURCETEXT_ATTR_THIS.|  
 |GETATTRFLAG_HUMANTEXT|0x8000|Identifique o texto de comentário e conteúdo de cadeia de caracteres que tem o atributo SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [out no, size_is (`cch`)] as informações de cor para o código de miniscript.  
+ [em, k-out, size_is (`cch`)] as informações de cores para o código de scriptlet.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

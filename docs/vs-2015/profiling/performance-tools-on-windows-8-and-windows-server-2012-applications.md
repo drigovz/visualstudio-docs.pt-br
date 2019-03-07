@@ -1,25 +1,20 @@
 ---
 title: Ferramentas de Desempenho em aplicativos do Windows 8 e Windows Server 2012 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e02ce9a9ef06574de999620017b96d470a76e6c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757963"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +62,17 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
   [Analisar o desempenho do aplicativo](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
-- [Temporização de função JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [Temporização de Função JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
 - [Temporização de função JavaScript em um dispositivo remoto](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [Analisar dados de temporização de função JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Analisar os dados de Temporização de Função JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Analisar código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store em um computador local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Analisar código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store em um computador local](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Analisar código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store em um dispositivo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Analisar código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store em um dispositivo remoto](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Analisar os dados de desempenho de código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Analisar os dados de desempenho de código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [Neste tópico](#BKMK_In_this_topic)  
   
@@ -141,7 +136,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
    **Coletando dados TIP em um computador remoto**  
   
-   Para coletar dados de interação de camadas em um computador remoto, você deve copiar o **vs\_profiler\_**_\<Platform >_ **\_**  _\<Language >_**.exe** arquivo o _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**pasta de um Visual Studio de máquina para o computador remoto e instalá-lo. Você não pode usar as ferramentas de criação de perfil na [as ferramentas remotas do Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) fazer download do pacote.  
+   Para coletar os dados de interação de camada em um computador remoto, é necessário copiar o arquivo **vs\_profiler\_**_\<Plataforma>_**\_**_\<Linguagem>_**.exe** da pasta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Você não pode usar as ferramentas de criação de perfil na [as ferramentas remotas do Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) fazer download do pacote.  
   
    Você pode usar [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para coletar dados de criação de perfil.  
   
@@ -153,6 +148,3 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)   
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

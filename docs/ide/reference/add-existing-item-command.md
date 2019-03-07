@@ -1,8 +1,6 @@
 ---
 title: Comando Adicionar Item Existente
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addexistingitem
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4647fd5ca2cc5199c1f9b85e5237dd57d95dbbd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: b8ab2ce6e9f1260172bf0ffbf0aede9138a5115f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704545"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951560"
 ---
 # <a name="add-existing-item-command"></a>Comando Adicionar Item Existente
 Adiciona um arquivo existente à solução atual e abre-o.

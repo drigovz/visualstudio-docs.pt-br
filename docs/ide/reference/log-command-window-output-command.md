@@ -1,8 +1,6 @@
 ---
 title: Comando Saída da Janela Log de Comando
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.logcommandwindowoutput
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de9b21f55765706a56110aee84959b2003e994e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 588c5e39f8b6b6a89de1636bd45036b21d392d33
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704675"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930526"
 ---
 # <a name="log-command-window-output-command"></a>Comando Saída da Janela Log de Comando
 Copia todas as entradas e saídas da janela **Comando** para um arquivo.

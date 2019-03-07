@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881598b39625b02651a4d57456904db60ace80c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640766"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348627"
 ---
 # <a name="breakpointstate-enumeration"></a>Enumeração BREAKPOINT_STATE
 Indica o estado de um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef enum tagBREAKPOINT_STATE {  
    BREAKPOINT_DELETED = 0,  
    BREAKPOINT_DISABLED = 1,  
@@ -42,7 +42,7 @@ typedef enum tagBREAKPOINT_STATE {
   
 |Membro|Descrição|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|O ponto de interrupção não existe, mas ainda há referências a ele.|  
+|BREAKPOINT_DELETED|O ponto de interrupção não existe mais, mas ainda há referências a ele.|  
 |BREAKPOINT_DISABLED|O ponto de interrupção existe, mas está desabilitado.|  
 |BREAKPOINT_ENABLED|O ponto de interrupção existe e está habilitado.|  
   

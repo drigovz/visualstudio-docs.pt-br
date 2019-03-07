@@ -1,85 +1,78 @@
 ---
 title: -Project (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
-- /project Devenv switch
+- /Project Devenv switch
 - projects [Visual Studio], rebuilding
 - projects [Visual Studio], building
 - deployment projects, specifying
-- project Devenv switch (/project)
-- Devenv, /project switch
+- Project Devenv switch (/Project)
+- Devenv, /Project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b18e4715eb711160d0adcc95c6a19e4b90bcc94
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 5fe7ec9fe8734d17868bee6a108d447729e4167f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948212"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970693"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
+
 Identifica um único projeto dentro da configuração da solução especificada para ser compilado, limpo, recompilado ou implantado.
 
 ## <a name="syntax"></a>Sintaxe
 
-```cmd
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Arguments
- /build
 
- Compila o projeto especificado por `/project` `ProjName`.
+- *SolutionName*
 
- /clean
+  Necessário. O caminho completo e o nome do arquivo de solução.
 
- Limpa todos os arquivos intermediários e diretórios de saída criados durante um build.
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
- /rebuild
+  Necessário. [Compila](build-devenv-exe.md), [limpa](clean-devenv-exe.md), [implanta](deploy-devenv-exe.md) ou [recompila](rebuild-devenv-exe.md) o projeto.
 
- Limpa e, em seguida, compila o projeto especificado por `/project` `ProjName`.
+- *SolnConfigName*
 
- /deploy
+  Opcional. Nome da configuração da solução (como `Debug` ou `Release`) aplicado à solução nomeada em *SolutionName*. Se mais de uma plataforma de solução estiver disponível, também será preciso especificar a plataforma (por exemplo, `Debug|Win32`). Se esse argumento não for especificado ou for uma cadeia de caracteres vazia (`""`), a ferramenta usará a configuração ativa da solução.
 
- Especifica que o projeto será implantado após um build ou uma recompilação.
+- `/Project` *ProjName*
 
- `SolnConfigName`
+  Opcional. O caminho e o nome de um arquivo de projeto na solução. Você pode inserir o nome de exibição do projeto ou um caminho relativo da pasta *SolutionName* para o arquivo do projeto. Também é possível inserir o caminho completo e o nome do arquivo do projeto.
 
- Necessário. O nome da configuração da solução que será aplicado à solução nomeada em `SolutionName`.
+- `/ProjectConfig` *ProjConfigName*
 
- `SolutionName`
+  Opcional. Nome da configuração de build do projeto (por exemplo, `Debug` ou `Release`) que será aplicado ao `/Project` nomeado. Se mais de uma plataforma de solução estiver disponível, também será preciso especificar a plataforma (por exemplo, `Debug|Win32`).
 
- Necessário. O caminho completo e o nome do arquivo de solução.
+- `/Out` *OutputFilename*
 
- /project `ProjName`
-
- Opcional. O caminho e o nome de um arquivo de projeto na solução. É possível inserir um caminho relativo da pasta `SolutionName` para o arquivo de projeto ou o nome de exibição do projeto ou o caminho completo e o nome do arquivo de projeto.
-
- /projectconfig `ProjConfigName`
-
- Opcional. O nome de uma configuração de build do projeto a ser aplicado ao `/project` nomeado.
+  Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
 ## <a name="remarks"></a>Comentários
 
--   Parte de um comando `devenv /build`, /`clean`, `/rebuild` ou `/deploy` deve ser usada.
+- Deve ser parte de um comando `devenv` `/Build`, `/Clean`, `/Rebuild` ou `/Deploy`.
 
--   Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.
+- Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.
 
--   As informações de resumo para builds, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.
+- As informações de resumo para builds, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/Out`.
 
 ## <a name="example"></a>Exemplo
- Este exemplo compila o projeto `CSharpConsoleApp`, usando a configuração de build do projeto `Debug` na configuração de solução `Debug` de `MySolution`.
 
-```cmd
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+Este exemplo apresenta a compilação do projeto `CSharpWinApp`, usando a configuração de build de projeto `Debug` dentro de `MySolution`.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Consulte também

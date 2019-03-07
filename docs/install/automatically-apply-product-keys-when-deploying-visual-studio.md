@@ -2,22 +2,20 @@
 title: Aplicar automaticamente as chaves do produto (Product Keys)
 description: Saiba como aplicar chaves de produto de forma programática quando você implanta o Visual Studio.
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f47a2dd890da58c2e666b507d8366ca1915e4f2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 0dab3f8f862b27a8124aecf0e19f7649d8b934b7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159588"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947231"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Aplicar chaves do produto (Product Keys) durante a implantação do Visual Studio
 

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3257ac5632a2f3d713b6329a9a1eeebc4415851
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 268a54ccdcbd70ed159758720db0735f16d81492
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724896"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349043"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Recupera o identificador para uma janela que pode agir como o proprietário de uma janela pop-up que o mecanismo de script deve ser exibido.  
+Recupera o identificador para uma janela que pode atuar como o proprietário de uma janela pop-up que o mecanismo de script deve exibir.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetWindow(  
     HWND *phwnd  // address of variable for window handle  
 );  
@@ -44,7 +44,7 @@ HRESULT GetWindow(
  Retorna `S_OK` se for bem-sucedido, ou `E_FAIL` se ocorreu um erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é semelhante de `IOleWindow::GetWindow` método.  
+ Esse método é semelhante ao `IOleWindow::GetWindow` método.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

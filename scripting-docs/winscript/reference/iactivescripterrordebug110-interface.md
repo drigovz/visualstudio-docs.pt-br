@@ -1,5 +1,5 @@
 ---
-title: Interface IActiveScriptErrorDebug110 | Microsoft Docs
+title: IActiveScriptErrorDebug110 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 152f12154acc59b88fc8b1c9a176ac87a5da847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067a62ec8b87c448577cfd6e5789ae5e073b5fb8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645756"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345897"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>Interface IActiveScriptErrorDebug110
-Adiciona a funcionalidade para o [IActiveScriptDebug Interface](../../winscript/reference/iactivescriptdebug-interface.md). Esta interface é implementada pelo mecanismo JavaScript para determinar o porquê de um evento BREAKREASON_ERROR ter ocorrido.  
+Adiciona a funcionalidade do [IActiveScriptDebug Interface](../../winscript/reference/iactivescriptdebug-interface.md). Esta interface é implementada pelo mecanismo JavaScript para determinar o porquê de um evento BREAKREASON_ERROR ter ocorrido.  
   
 > [!IMPORTANT]
 >  Esta interface é implementada pelo PDM v11.0 e superiores. Localizado em. activdbg100.h.  

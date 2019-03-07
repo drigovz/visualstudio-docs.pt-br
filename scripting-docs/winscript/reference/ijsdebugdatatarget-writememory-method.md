@@ -1,5 +1,5 @@
 ---
-title: 'Método Ijsdebugdatatarget: | Microsoft Docs'
+title: 'Método ijsdebugdatatarget:: Writememory | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727896"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089278"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>Método IJsDebugDataTarget::WriteMemory
 Lê a memória do processo de destino.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -38,18 +38,18 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Parâmetros  
  `address`  
- [in] O endereço base do qual gravar a memória do processo de destino.  
+ [in] O endereço base da qual gravar a memória do processo de destino.  
   
  `pMemory`  
- [in] Os dados a serem gravados no espaço de endereço de processo especificado.  
+ [in] Os dados a serem gravados no espaço de endereço do processo especificado.  
   
  `size`  
- [in] O número de bytes a serem gravados para o processo.  
+ [in] O número de bytes a serem gravados no processo.  
   
 ## <a name="return-value"></a>Valor de retorno  
   
 ## <a name="remarks"></a>Comentários  
- Antes que ocorra a transferência de dados, o sistema verifica se todos os dados no endereço básico e a memória do tamanho especificado está acessível para acesso de gravação e se não estiver acessível, a função gerará um erro de E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+ Antes que ocorra a transferência de dados, o sistema verifica se todos os dados no endereço básico e a memória do tamanho especificado estão acessíveis para acesso de gravação e se não estiver acessível, a função gerará um erro de E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** jscript9diag.h  

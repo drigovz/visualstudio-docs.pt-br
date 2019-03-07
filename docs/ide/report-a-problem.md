@@ -2,21 +2,19 @@
 title: Relatar um problema
 description: Fornece uma visão geral da ferramenta Relatar um problema e inclui estados e definições de problemas
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159822"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800525"
 ---
 # <a name="overview-report-a-problem"></a>Visão geral: Relatar um problema
 
@@ -54,7 +52,7 @@ Depois de relatar um problema, os estados indicam onde seus envios estão no seu
 
 ![Estado Precisamos de Mais Informações para comunicação de problemas na Comunidade de Desenvolvedores](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Precisamos de Mais Informações** indica que é necessário obter mais informações de diagnóstico antes de podermos ir adiante com a investigação.  [Saiba como responder a solicitações de Precisamos de Mais Informações.](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+**Precisamos de Mais Informações** indica que é necessário obter mais informações de diagnóstico antes de podermos ir adiante com a investigação.  [Saiba como responder a solicitações de Precisamos de Mais Informações.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -64,7 +62,7 @@ Depois de relatar um problema, os estados indicam onde seus envios estão no seu
 
 - - -
 
-![Estado Fechado – Corrigido para comunicação de problemas na Comunidade de Desenvolvedores](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![Estado Fechado – Corrigido para comunicação de problemas na Comunidade de Desenvolvedores](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 **Fechado – Corrigido** indica que lançamos uma correção para o problema. Agora o problema também é marcado com "corrigido na:" especificando a versão de lançamento.
 
@@ -112,7 +110,7 @@ Depois de relatar um problema, os estados indicam onde seus envios estão no seu
 
 É recomendável usar a pesquisa para garantir que o problema que você está prestes a relatar ainda não tenha sido comunicado. Se você encontrar um item existente que corresponda a seu problema, siga e vote nesse tíquete de problema.
 
- Forneça todas as informações que você tem para ajudar nossas equipes a reproduzir o que você está enfrentando.  Essas informações incluem etapas de reprodução necessárias, fragmentos de código, capturas de tela, gravações de reprodução, arquivos de log e outros artefatos.  Veja [como relatar um problema no Visual Studio](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Forneça todas as informações que você tem para ajudar nossas equipes a reproduzir o que você está enfrentando.  Essas informações incluem etapas de reprodução necessárias, fragmentos de código, capturas de tela, gravações de reprodução, arquivos de log e outros artefatos.  Veja [como relatar um problema no Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Como meus comentários são priorizados?
 

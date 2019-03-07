@@ -1,21 +1,19 @@
 ---
 title: Atalhos de teclado no Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 119c896313adb94524417cde73624987dd96e279
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891824"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953692"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Atalhos de teclado no Blend
 

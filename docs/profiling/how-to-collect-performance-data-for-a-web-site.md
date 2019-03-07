@@ -1,8 +1,6 @@
 ---
 title: 'Como: Coletar dados de desempenho de um site | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064291"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630477"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Como: Coletar dados de desempenho de um site
 
@@ -103,7 +101,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
 ## <a name="see-also"></a>Consulte também
 
-[Visões gerais](../profiling/overviews-performance-tools.md)  
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
-[Entender os valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)  
+[Visões gerais](../profiling/overviews-performance-tools.md)
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
+[Noções básicas sobre valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
 [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)

@@ -1,5 +1,5 @@
 ---
-title: Encontrar possíveis problemas usando analisadores de mapas de códigos
+title: Encontrar possíveis problemas usando analisadores de mapa de códigos
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,17 +10,15 @@ helpviewer_keywords:
 - graph documents, analyzing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: afc2915a5d1bfb6cf361a4b84a0235db296bac67
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8fd3bb1537d0e985e91f93ea094ec546ed9a6092
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856740"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912333"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Encontrar possíveis problemas usando analisadores de mapa de códigos
 
@@ -38,9 +36,9 @@ Na barra de ferramentas do mapa, escolha **Layout** > **analisadores**e, em segu
 
 |**Analisador**|**Para identificar nós que**|
 |-|-|
-|**Analisador de referências circulares**|Possuem dependências circulares entre si. **Observação:** dependências circulares que estão em de **genéricos** grupo não são mostrados no mapa, ao expandir o grupo.|
+|**Analisador de referências circulares**|Possuem dependências circulares entre si. **Observação:**  As dependências circulares que estão na **genéricos** grupo não são mostrados no mapa, ao expandir o grupo.|
 |**Localizar Hubs Analyzer**|Estão na 25% principais de nós altamente conectado<br /><br /> **Para ocultar todos os outros nós no mapa**<br /><br /> -Abra o menu de atalho para o mapa, escolha **Advanced**, **selecionar**, **ocultar não selecionados**.<br />     O mapa oculta os nós não selecionados e o Analisador identifica novos nós, como hubs.|
-|**Analisador de nós não referenciados**|Não tem referências de outros nós. **Cuidado:** Verifique se cada um desses casos antes, supondo que o código não é usado. Determinadas dependências como dependências XAML e dependências de tempo de execução não podem ser encontradas estaticamente no código.|
+|**Analisador de nós não referenciados**|Não tem referências de outros nós. **Cuidado:**  Verifique se cada um desses casos antes supondo que o código não é usado. Determinadas dependências como dependências XAML e dependências de tempo de execução não podem ser encontradas estaticamente no código.|
 
 Analisadores de mapa de código continuará a ser executado após você aplicá-las. Se você alterar o mapa, quaisquer analisadores aplicados serão automaticamente reprocessar o mapa atualizado. Para interromper a execução de um analisador, na barra de ferramentas do mapa, escolha **Layout** > **analisadores**. Desative o analisador selecionado.
 

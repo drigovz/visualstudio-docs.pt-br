@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56d6e63c41db274634b2593989800ea0392b93a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 76f10d6bbb34c61e87a1be0f61dcd7db168274e7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726756"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348484"
 ---
 # <a name="idebugstackframesnifferex-interface"></a>Interface IDebugStackFrameSnifferEx
-Fornece uma maneira para enumerar os quadros de pilha lógico conhecidos por um componente. Mecanismos de script geralmente implementam essa interface. O processo depuração manager usa essa interface para localizar todos os quadros de pilha associado a um determinado thread.  
+Fornece uma maneira para enumerar os registros de ativação lógicos conhecidos por um componente. Mecanismos de script geralmente implementam essa interface. O Gerenciador de depuração processo usa essa interface para localizar todos os quadros de pilha associado com um determinado thread.  
   
 > [!NOTE]
->  Essa interface é chamada de segmento de interesse. A implementação de interface deve identificar o thread atual e retorna um enumerador apropriado.  
+>  Essa interface é chamada de dentro do thread de interesse. A implementação da interface deve identificar o thread atual e retorna um enumerador apropriado.  
   
  Além dos métodos herdados de `IDebugStackFrameSniffer`, o `IDebugStackFrameSnifferEx` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugStackFrameSnifferEx::EnumStackFramesEx](../../winscript/reference/idebugstackframesnifferex-enumstackframesex.md)|Retorna um enumerador de quadros de pilha do thread atual.|
+|[IDebugStackFrameSnifferEx::EnumStackFramesEx](../../winscript/reference/idebugstackframesnifferex-enumstackframesex.md)|Retorna um enumerador dos quadros de pilha do thread atual.|

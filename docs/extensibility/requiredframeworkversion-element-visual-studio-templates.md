@@ -1,25 +1,23 @@
 ---
 title: Elemento RequiredFrameworkVersion (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 40eefc62eef318bcd9c52a1cbbb966377b3616f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635906"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946991"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelos do Visual Studio)
 
@@ -28,7 +26,7 @@ Especifica a versão mínima do .NET Framework que é exigido pelo modelo. Isso 
 > [!IMPORTANT]
 > A partir do Visual Studio 2017 versão 15.6, o **versão do Framework de destino** lista suspensa não é mais um filtro para os modelos exibidos na **modelos** seção o **novo projeto** caixa de diálogo. Em vez disso, a lista suspensa funciona como um seletor de estrutura para o modelo selecionado.
 
- \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -88,4 +86,4 @@ Neste exemplo, a versão mínima do .NET Framework que é exigido pelo modelo, r
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Uma versão específica do .NET Framework de destino](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Uma versão específica do .NET Framework de destino](../ide/visual-studio-multi-targeting-overview.md)

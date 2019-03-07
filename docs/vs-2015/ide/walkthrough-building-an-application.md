@@ -1,25 +1,20 @@
 ---
 title: 'Passo a passo: Criando um aplicativo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799149"
 ---
 # <a name="walkthrough-building-an-application"></a>Instruções passo a passo: criando um aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
 4.  Escolha o botão **OK**.  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Criar uma configuração de build personalizada  
- Ao criar uma solução, as configurações de build de depuração e versão e seus destinos de plataforma padrão são definidos para a solução automaticamente. Depois, é possível personalizar essas configurações ou criar suas próprias. As configurações de build especificam o tipo de build. As plataformas de build especificam o sistema operacional que um aplicativo tem como destino para a configuração. Para obter mais informações, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md), [Noções básicas sobre plataformas de build](../ide/understanding-build-platforms.md) e [Configurações de depuração e versão do projeto](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Ao criar uma solução, as configurações de build de depuração e versão e seus destinos de plataforma padrão são definidos para a solução automaticamente. Depois, é possível personalizar essas configurações ou criar suas próprias. As configurações de build especificam o tipo de build. As plataformas de build especificam o sistema operacional que um aplicativo tem como destino para a configuração. Para obter mais informações, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md), [Noções básicas sobre plataformas de build](../ide/understanding-build-platforms.md) e [Configurações de depuração e versão do projeto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  É possível alterar ou criar configurações e configurações de plataforma por meio da caixa de diálogo **Configuration Manager**. Neste procedimento, você criará uma configuração de build para testes.  
   
@@ -98,7 +93,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 4. Na lista **Plataforma da solução ativa**, escolha **Nova**.  
   
-5. No **nova plataforma de solução** diálogo caixa, escolha **x64**e não copie as configurações de x86 plataforma.  
+5. Na caixa de diálogo **Nova Plataforma de Solução**, escolha **x64** e não copie as configurações da plataforma x86.  
   
     ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -125,7 +120,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
   ![Janela de Saída do Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Figura 2: Avisos do Visual C#  
+  Figura 2: Avisos do Visual c#  
   
   ![Janela de Saída do Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -208,7 +203,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
 ##  <a name="BKMK_releasebuild"></a> Criar um build da versão  
  É possível compilar uma versão do aplicativo de exemplo que é otimizada para enviá-lo. Para o build de versão, você especificará que o executável é copiado para um compartilhamento de rede antes do início do build.  
   
- Para obter mais informações, consulte [Como alterar o diretório de saída do build](../ide/how-to-change-the-build-output-directory.md) e [Criando e limpando projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
+ Para obter mais informações, confira [Como: Alterar o diretório de saída de Build](../ide/how-to-change-the-build-output-directory.md) e [compilando e limpando projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Para especificar um build de versão para o Visual Basic  
   
@@ -262,8 +257,5 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Compilando um projeto (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [Visão geral da pré-compilação de projeto de aplicativo Web ASP .NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
+ [Visão geral da pré-compilação de projeto de aplicativo Web ASP .NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [Passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-

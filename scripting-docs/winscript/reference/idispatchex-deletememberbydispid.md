@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: de99e74cf12939a31c99cdc59ce8ad7fd685ae03
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727746"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086860"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 Exclui um membro DISPID.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT DeleteMemberByDispID(  
     DISPID id  
 );  
@@ -38,7 +38,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Parâmetros  
  `id`  
- Identificador de membro. Usa `GetDispID` ou `GetNextDispID` para obter o identificador de distribuição.  
+ Identificador de membro. Usa `GetDispID` ou `GetNextDispID` para obter o identificador de expedição.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um dos seguintes valores:  
@@ -49,13 +49,13 @@ HRESULT DeleteMemberByDispID(
 |`S_FALSE`|Membro existe, mas não pode ser excluído.|  
   
 ## <a name="remarks"></a>Comentários  
- Se o membro for excluído, o DISPID deve permanecer válido para `GetNextDispID`.  
+ Se o membro for excluído, o DISPID deve permanecer válida para `GetNextDispID`.  
   
- Se um membro com um nome fornecido será excluído e posteriormente um membro com o mesmo nome é recriado, o DISPID deve ser o mesmo. (Se os nomes de membro que diferenciam somente maiusculas e minúsculas são "mesmo" depende do objeto.)  
+ Se um membro com um determinado nome é excluído e posteriormente um membro com o mesmo nome é recriado, o DISPID deve ser o mesmo. (Se os nomes de membro que diferem somente maiusculas são "mesmo" é o objeto dependente).  
   
 ## <a name="example"></a>Exemplo  
   
-```  
+```cpp
 BSTR bstrName;  
 DISPID dispid;  
 IDispatchEx *pdex;   

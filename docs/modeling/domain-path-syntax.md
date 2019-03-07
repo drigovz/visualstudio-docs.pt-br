@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 47c2adc2894cc67b337243c30f4a62bc3642ff39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749538"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955226"
 ---
 # <a name="domain-path-syntax"></a>Sintaxe do caminho de domínio
 As definições de DSL usam uma sintaxe semelhante a XPath para localizar elementos específicos em um modelo.
@@ -29,9 +27,9 @@ As definições de DSL usam uma sintaxe semelhante a XPath para localizar elemen
 
  ![Referência CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
- A sintaxe percorre a árvore do modelo. Por exemplo, a relação de domínio **CommentReferencesSubjects** na ilustração anterior tem um **assuntos** função. O segmento de caminho **/! Subjectt** Especifica que o caminho termina em elementos acessados por meio de **assuntos** função.
+ A sintaxe percorre a árvore do modelo. Por exemplo, a relação de domínio **CommentReferencesSubjects** na ilustração acima tem um **assuntos** função. O segmento de caminho **/! Subjectt** Especifica que o caminho termina em elementos acessados por meio de **assuntos** função.
 
- Cada segmento inicia com o nome de uma relação de domínio. Se a passagem de um elemento para uma relação, o segmento de caminho é exibido como *Relationship.PropertyName*. Se o nó for de um link para um elemento, o segmento de caminho é exibido como *relação /! RoleName*.
+ Cada segmento inicia com o nome de uma relação de domínio. Se a passagem for de um elemento em uma relação, o segmento de caminho aparecerá como *Relationship*. Se o salto for de um link para um elemento, o segmento de caminho é exibido como *relação /! RoleName*.
 
  Barras separam a sintaxe de um caminho. Cada segmento de caminho é um salto de um elemento para um link (uma instância de uma relação) ou de um link para um elemento. Os segmentos de caminho normalmente aparecem em pares. Um segmento de caminho representa um salto de um elemento para um link e o próximo segmento representa um salto do link para o elemento na outra extremidade. (Qualquer link também pode ser a origem ou destino de uma relação).
 

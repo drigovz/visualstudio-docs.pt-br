@@ -1,31 +1,29 @@
 ---
-title: Práticas recomendadas para usar trechos de código
+title: Práticas recomendadas para usar snippets de código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179525"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933399"
 ---
-# <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar trechos de código
+# <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
 
-O código em um trecho de código mostra somente a maneira mais simples de fazer algo. Para a maioria dos aplicativos, o código deve ser modificado para se adaptar ao aplicativo.
+O código em um snippet de código mostra somente a maneira mais simples de fazer algo. Para a maioria dos aplicativos, o código deve ser modificado para se adaptar ao aplicativo.
 
 ## <a name="handling-exceptions"></a>Tratando exceções
 
-Normalmente, o trecho de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para obter exemplos, confira [Como manipular uma exceção usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Normalmente, o snippet de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para ver mais exemplos, veja [Como: Tratar uma exceção usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Locais de arquivo
 
@@ -39,7 +37,7 @@ Quando você adaptar locais de arquivo ao seu aplicativo, deverá considerar o s
 
 ## <a name="security"></a>Segurança
 
-A segurança de um trecho depende do local em que ele é usado no código-fonte e de como ele é modificado quando estiver no código. A lista a seguir contém algumas das áreas que devem ser consideradas.
+A segurança de um snippet depende do local em que ele é usado no código-fonte e de como ele é modificado quando estiver no código. A lista a seguir contém algumas das áreas que devem ser consideradas.
 
 - Acesso ao arquivo e ao banco de dados
 
@@ -55,22 +53,22 @@ A segurança de um trecho depende do local em que ele é usado no código-fonte 
 
 Para saber mais, veja [Como proteger aplicativos](../ide/securing-applications.md).
 
-## <a name="downloaded-code-snippets"></a>Trechos de código baixados
+## <a name="downloaded-code-snippets"></a>Snippets de código baixados
 
-Os trechos de código do IntelliSense instalados pelo Visual Studio não são em si um risco de segurança. No entanto, eles podem criar riscos de segurança no aplicativo. Trechos de código baixados na Internet devem ser tratados como qualquer outro conteúdo baixado – com muito cuidado.
+Os snippets de código do IntelliSense instalados pelo Visual Studio não são em si um risco de segurança. No entanto, eles podem criar riscos de segurança no aplicativo. Snippets baixados na Internet devem ser tratados como qualquer outro conteúdo baixado – com muito cuidado.
 
-- Baixe trechos de código somente em sites confiáveis e use um software antivírus atualizado.
+- Baixe snippets somente em sites confiáveis e use um software antivírus atualizado.
 
-- Abra todos os arquivos de trecho de código baixados no Bloco de notas ou no editor de XML do Visual Studio e examine-os cuidadosamente antes de instalá-los. Procure os seguintes problemas:
+- Abra todos os arquivos de snippet baixados no Bloco de notas ou no editor de XML do Visual Studio e examine-os cuidadosamente antes de instalá-los. Procure os seguintes problemas:
 
-    - O trecho de código poderá danificar o sistema se for executado. Leia atentamente o código-fonte antes de executá-lo.
+    - O snippet de código poderá danificar o sistema se for executado. Leia atentamente o código-fonte antes de executá-lo.
 
-    - O bloco URL de Ajuda do arquivo de trecho de código pode conter URLs que executam um arquivo de script mal-intencionado ou exibir um site ofensivo.
+    - O bloco URL de Ajuda do arquivo de snippet pode conter URLs que executam um arquivo de script mal-intencionado ou exibir um site ofensivo.
 
-    - O trecho de código pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o trecho de código. Depois, o trecho de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de trecho.
+    - O snippet pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o snippet. Depois, o snippet de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de snippet.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trechos de código do Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Snippets de código do Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Como proteger aplicativos](../ide/securing-applications.md)
-- [Trechos de código](../ide/code-snippets.md)
+- [Snippets de código](../ide/code-snippets.md)

@@ -1,22 +1,19 @@
 ---
 title: 'Etapa 1: Criar um projeto e adicionar uma tabela ao formulário'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f83ce585120131d63c07e6db2ed6b90f32cc0876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857595"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940653"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 
@@ -71,7 +68,7 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
    5.  Escolha a propriedade **Fonte**. O botão reticências (**...**) deverá aparecer.
 
-   6.  Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** para **72**.
+   6.  Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** como **48**.
 
    7.  Defina a propriedade **Texto** do rótulo como a letra **c**.
 
@@ -91,6 +88,6 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, veja [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Para retornar ao tópico de visão geral, veja [Tutorial 3: Criar um jogo da memória](../ide/tutorial-3-create-a-matching-game.md).
+-   Para retornar ao tópico de visão geral, confira [Tutorial 3: Criar um jogo da memória](../ide/tutorial-3-create-a-matching-game.md).

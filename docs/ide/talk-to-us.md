@@ -1,9 +1,6 @@
 ---
 title: Fale conosco
-ms.custom: ''
 ms.date: 10/09/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -11,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671983"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953511"
 ---
 # <a name="visual-studio-product-feedback"></a>Comentários de produto do Visual Studio
 
@@ -27,7 +24,7 @@ Fale conosco! Estamos interessados em suas ideias para aprimorar nossos produtos
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Desejo relatar um problema com o Visual Studio
 
-Se você tiver problemas com o Visual Studio&mdash;, tais como falhas, desempenho lento ou comportamento inesperado, &mdash;fale conosco usando a ferramenta **Relatar um problema**. No Visual Studio, escolha o ícone de comentários ao lado de **Início Rápido** ou escolha **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Em seguida, o Visual Studio abre a página [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com) no navegador, na qual você pode entrar para relatar o problema. Para saber mais, veja [Como relatar um problema com o Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Se você tiver problemas com o Visual Studio&mdash;, tais como falhas, desempenho lento ou comportamento inesperado, &mdash;fale conosco usando a ferramenta **Relatar um problema**. No Visual Studio, escolha o ícone de comentários ao lado de **Início Rápido** ou escolha **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Em seguida, o Visual Studio abre a página [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com) no navegador, na qual você pode entrar para relatar o problema. Para saber mais, consulte [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quero fazer sugestões sobre os recursos do Visual Studio
 
@@ -41,12 +38,12 @@ As versões de pré-lançamento do Visual Studio têm o item de menu **Classific
 
 Para obter informações de suporte do Visual Studio, confira a página [Ciclo de vida e manutenção do suporte](/visualstudio/productinfo/vs-servicing-vs).
 
-Para outros produtos e serviços Microsoft, veja [Suporte da Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) para obter ajuda online.
+Para outros produtos e serviços Microsoft, veja [Suporte da Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) para obter ajuda online.
 
 > [!NOTE]
-> O suporte fora dos Estados Unidos e do Canadá pode variar. Para obter uma lista de contatos regionais, veja [Sites Internacionais da Microsoft](http://www.microsoft.com/worldwide/).
+> O suporte fora dos Estados Unidos e do Canadá pode variar. Para obter uma lista de contatos regionais, veja [Sites Internacionais da Microsoft](https://www.microsoft.com/worldwide/).
 
-Para organizações maiores que exigem suporte gerenciado diretamente da Microsoft, os contratos estão disponíveis por meio de várias ofertas de Suporte Empresarial. Para saber mais, confira [Soluções de suporte empresarial da Microsoft](http://go.microsoft.com/fwlink/?LinkId=258223).
+Para organizações maiores que exigem suporte gerenciado diretamente da Microsoft, os contratos estão disponíveis por meio de várias ofertas de Suporte Empresarial. Para saber mais, confira [Soluções de suporte empresarial da Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
 
 Se o produto veio instalado em um novo computador ou dispositivo, o fabricante de hardware fornecerá suporte técnico e assistência para esse software. Contate o fabricante diretamente para obter suporte.
 
@@ -54,7 +51,7 @@ Os serviços de suporte da Microsoft estão sujeitos a preços, termos e condiç
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Quero participar da comunidade de desenvolvedores
 
-Se você quiser compartilhar suas perguntas e respostas com outros desenvolvedores, use o site da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com), os [Fóruns do MSDN](https://social.msdn.microsoft.com/Forums/home) ou o [StackOverflow](http://stackoverflow.com/). Você também pode exibir código de outros desenvolvedores e compartilhar os seus próprios exemplos no site [Exemplos de código do desenvolvedor](https://code.msdn.microsoft.com/).
+Caso deseje compartilhar suas perguntas e respostas com outros desenvolvedores, use o site da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com), os [Fóruns do MSDN](https://social.msdn.microsoft.com/Forums/home) ou o [Stack Overflow](https://stackoverflow.com/). Você também pode exibir código de outros desenvolvedores e compartilhar os seus próprios exemplos no site [Exemplos de código do desenvolvedor](https://code.msdn.microsoft.com/).
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Desejo ajudar a melhorar a documentação do Visual Studio
 
@@ -62,6 +59,6 @@ Use nosso botão de comentários **Esta página foi útil?** na parte inferior d
 
 ## <a name="see-also"></a>Consulte também
 
-* [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+* [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 * [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com)
 * [Privacidade de dados da Comunidade de Desenvolvedores](developer-community-privacy.md)

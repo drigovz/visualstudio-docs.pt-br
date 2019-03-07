@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c90b5d089ea6665060944e0a6f720a43aa1295a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640966"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348797"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Faz com que o mecanismo de script abandonar qualquer script carregado no momento, perder seu estado e liberar qualquer ponteiros de interface a outros objetos, portanto, entrar em um estado fechado. Coletores de eventos, o texto do script executado imediatamente e invocações de macro que já estão em andamento sejam concluídas antes das alterações de estado (use [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar um thread em execução do script). Esse método deve ser chamado pelo host criando antes que a interface seja liberada para evitar problemas de referência circular.  
+Faz com que o mecanismo de script abandonar a qualquer script carregado no momento, perder seu estado e liberar quaisquer ponteiros de interface, que ele tem a outros objetos, portanto, inserindo um estado fechado. Coletores de eventos, o texto do script executado imediatamente e chamadas de macro que já estão em andamento são concluídas antes das alterações de estado (use [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar um thread em execução do script). Esse método deve ser chamado pelo host criando antes que a interface seja liberada para evitar problemas de referência circular.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Close(void);  
 ```  
   
@@ -41,7 +41,7 @@ HRESULT Close(void);
 |-----------|-------------|  
 |`S_OK`|Êxito.|  
 |`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script já estava no estado fechado).|  
-|`OLESCRIPT_S_PENDING`|O método foi enfileirado com êxito, mas o estado ainda não foi alterado. Quando as alterações de estado, o site está para ser o retorno de chamada de [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) método.|  
+|`OLESCRIPT_S_PENDING`|O método foi enfileirado com êxito, mas o estado ainda não foi alterado. Quando as alterações de estado, o site é ser o retorno de chamada a [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) método.|  
 |`S_FALSE`|O método foi bem-sucedido, mas o script já foi fechado.|  
   
 ## <a name="see-also"></a>Consulte também  

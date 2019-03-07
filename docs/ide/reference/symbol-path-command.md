@@ -1,8 +1,6 @@
 ---
 title: Comando demarcador do Símbolo
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.symbolpath
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a27d795e5491081dca98a395c788cf8407e43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942764"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934219"
 ---
 # <a name="symbol-path-command"></a>Comando demarcador do Símbolo
 Define a lista de diretórios para o depurador pesquisar símbolos.

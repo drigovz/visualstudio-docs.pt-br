@@ -1,9 +1,6 @@
 ---
-title: 'Como: implementar projetos aninhados | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Implementar projetos aninhados | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -11,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512894"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335240"
 ---
-# <a name="how-to-implement-nested-projects"></a>Como: implementar projetos aninhados
+# <a name="how-to-implement-nested-projects"></a>Como: Implementar projetos aninhados
 
 Quando você cria um tipo de projeto aninhado, há várias etapas adicionais que devem ser implementadas. Um projeto pai leva em algumas das mesmas responsabilidades que a solução tem para seus projetos aninhados (filho). O projeto pai é um contêiner de projetos semelhantes a uma solução. Em particular, há vários eventos que devem ser gerados pela solução e pelos projetos pai para criar a hierarquia de projetos aninhados. Esses eventos são descritos no seguinte processo para a criação de projetos aninhados.
 
@@ -68,7 +65,7 @@ Quando você cria um tipo de projeto aninhado, há várias etapas adicionais que
      Porque os projetos pai e filho são instanciados por meio de programação, você pode definir propriedades para projetos aninhados neste momento.
 
     > [!NOTE]
-    > Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode fazer se o projeto pai tem qualquer contexto para esse item, marcando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Dessa forma, você pode adicionar atributos ajuda dinâmica extra e opções de menu específicas para projetos aninhados individuais.
+    > Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode fazer se o projeto pai tem qualquer contexto para esse item, marcando [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). Dessa forma, você pode adicionar atributos ajuda dinâmica extra e opções de menu específicas para projetos aninhados individuais.
 
 10. A hierarquia é criada para exibição nas **Gerenciador de soluções** com uma chamada para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.
 

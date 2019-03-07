@@ -1,8 +1,6 @@
 ---
 title: Exibição de classe ícones do Pesquisador de Objetos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - Object Browser, icons in Class View
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9814b03d0a8cd8733c9fd48b4e49c2cf306a8a44
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745783"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931891"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Ícones do Pesquisador de Objetos e do Modo de Exibição de Classe
 
@@ -33,7 +31,7 @@ ms.locfileid: "34745783"
 |----------|-----------------|----------|-----------------|
 |![Símbolo de namespace](../ide/media/vxnamespace_icon.gif)|Namespace|![Símbolo de declaração](../ide/media/vxmethod_icon.gif)|Método ou função|
 |![Ícone de classe](../ide/media/vxclass_icon.gif)|Classe|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|
-|![Símbolo de interface pirulito](../ide/media/vxinterface_icon.gif)|Interface|![Símbolo de propriedade](../ide/media/vxproperty_icon.gif)|propriedade|
+|![Símbolo de interface pirulito](../ide/media/vxinterface_icon.gif)|Interface|![Símbolo de propriedade](../ide/media/vxproperty_icon.gif)|Propriedade|
 |![Símbolo de estrutura](../ide/media/vxstruct_icon.gif)|Estrutura|![Ícone de campo](../ide/media/vxfield_icon.gif)|Campo ou variável|
 |![Símbolo de união](../ide/media/vxunion_icon.gif)|União|![Símbolo de evento](../ide/media/vxevent_icon.gif)|evento|
 |![Símbolo de enumeração](../ide/media/vxenum_icon.gif)|Enum|![Ícone constante](../ide/media/vxconstant_icon.gif)|Constante|

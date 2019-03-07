@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af2d671a6c93cde39c2e3e644243d666e1cd5d46
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e07b7f90068dac5b39b1dedfd2bb91d65540f2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728416"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086470"
 ---
 # <a name="iremotedebugapplicationeventsondestroythread"></a>IRemoteDebugApplicationEvents::OnDestroyThread
-Manipula um evento destruído por thread.  
+Manipula um evento destruídas pelo thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnDestroyThread(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -48,7 +48,7 @@ HRESULT OnDestroyThread(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método manipula o evento de destruído por thread.  
+ Esse método manipula o evento de destruídas pelo thread.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

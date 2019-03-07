@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 69ce0f2504741c0bc48df0245202cdf0eefee20f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063309"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928875"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Como: Criar uma configuração de teste para um teste de carga distribuída
 
@@ -35,7 +33,7 @@ As configurações de teste do Visual Studio são armazenadas em um arquivo. As 
 
 Ao executar seus testes, você seleciona as configurações de teste para usar como as configurações ativas de teste, dependendo do que você precisa para essa execução específica de teste. O arquivo de configurações de teste é armazenado como parte de sua solução. O nome do arquivo tem a extensão *.testsettings*.
 
-Ao adicionar um projeto de teste de carga e desempenho na Web a uma solução, um arquivo *Default.testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo *.testsettings* para especificar adaptadores de dados de diagnóstico e controladores de teste.
+Ao adicionar um projeto de teste de carga e desempenho na Web a uma solução, um arquivo *Default.testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo *.testsettings* para especificar adaptadores de dados de diagnóstico e controladores de teste.**
 
 O controlador de teste terá agentes que podem ser usados para cada função nas configurações de teste. Para obter mais informações sobre controladores e agentes de teste, confira [Gerenciar controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 

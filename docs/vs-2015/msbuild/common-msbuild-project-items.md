@@ -1,14 +1,9 @@
 ---
 title: Itens de projeto comuns do MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238401"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54796871"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +121,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 |Visível|Booliano opcional. Indica se o arquivo no **Gerenciador de Soluções** deve ser exibido no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1.  Nunca<br />2.  Sempre<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Nenhum  
+### <a name="none"></a>Nenhuma  
  Representa arquivos que não devem ter função no processo de build.  
   
 |Nome do Item|Descrição|  
@@ -150,6 +145,3 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
   
 ## <a name="see-also"></a>Consulte também  
  [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)
-
-
-

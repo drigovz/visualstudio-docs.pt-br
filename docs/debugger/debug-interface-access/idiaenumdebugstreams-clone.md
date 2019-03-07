@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumdebugstreams:: clone | Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumDebugStreams::Clone | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: e85ec592-de97-4f95-a774-1623315ba415
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6247e36ecc34c016cf4b976664f14d6e3fb5bb80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 11a7f8e051350b066c745c47530ab4ed818f8b1b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836120"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607235"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumDebugStreams** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppenum`  
- [out] Retorna um [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) objeto que contém uma duplicata do enumerador. Os fluxos não são duplicados, apenas o enumerador.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
+
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumDebugStreams** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppenum`
+
+[out] Retorna um [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) objeto que contém uma duplicata do enumerador. Os fluxos não são duplicados, apenas o enumerador.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

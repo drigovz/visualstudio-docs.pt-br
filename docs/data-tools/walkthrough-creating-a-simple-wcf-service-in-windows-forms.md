@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um serviço WCF simples no Windows Forms'
+title: 'Passo a passo: criando um Serviço WCF simples no Windows Forms'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e2c9d0bd58adcd0a0595c061fa4dfaa81f629601
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 08b55652fbadd0b27f4519b94e083409c9de3af5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174241"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951105"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Passo a passo: Criar um serviço WCF simples no Windows Forms
 
@@ -94,7 +92,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-t
 
 ### <a name="to-reference-a-wcf-service"></a>Para fazer referência a um serviço WCF
 
-1.  Sobre o **arquivo** , aponte para **Add** e, em seguida, clique em **novo projeto**.
+1.  No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**.
 
 2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó, selecione **Windows**e, em seguida, selecione  **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.
 
@@ -102,7 +100,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-t
 
 3.  Clique com botão direito **WindowsApplication1** e clique em **Add Service Reference**. O **adicionar referência de serviço** caixa de diálogo é exibida.
 
-4.  No **adicionar referência de serviço** caixa de diálogo, clique em **Discover**.
+4.  Na caixa de diálogo **Adicionar Referência de Serviço**, clique em **Descobrir**.
 
      ![A caixa de diálogo Adicionar referência de serviço](../data-tools/media/wcf8.png)
 

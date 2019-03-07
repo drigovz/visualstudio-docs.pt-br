@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2512fa3b56a19ed7396c7a351c8d8f8323fff6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c916f0a76021afea82b4021ed1ce7d411317807
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726616"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087705"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-Retorna o número da linha e, opcionalmente, o deslocamento de caractere dentro da linha que corresponde à posição do caractere especificada.  
+Retorna o número de linha e, opcionalmente, o deslocamento de caractere dentro da linha que corresponde à posição do caractere especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetLineOfPosition(  
    ULONG   cCharacterPosition,  
    ULONG*  pcLineNumber,  
@@ -46,7 +46,7 @@ HRESULT GetLineOfPosition(
  [out] O número da linha do intervalo.  
   
  `pcCharacterOffsetInLine`  
- [out no] O deslocamento de caractere do intervalo na linha `pcLineNumber`. Se esse parâmetro for `NULL`, o método não retorna um valor.  
+ [no, out] O deslocamento de caractere do intervalo na linha `pcLineNumber`. Se esse parâmetro for `NULL`, o método não retorna um valor.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -56,7 +56,7 @@ HRESULT GetLineOfPosition(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o número da linha e, opcionalmente, o deslocamento de caractere dentro da linha que corresponde à posição do caractere especificada.  
+ Esse método retorna o número de linha e, opcionalmente, o deslocamento de caractere dentro da linha que corresponde à posição do caractere especificada.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

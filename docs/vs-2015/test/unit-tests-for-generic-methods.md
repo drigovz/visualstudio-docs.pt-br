@@ -1,32 +1,27 @@
 ---
 title: Testes de unidade para métodos genéricos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771457"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode gerar testes de unidade para métodos genéricos exatamente como faria para outros métodos, conforme descrito em [Como criar e executar um teste de unidade](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). As seções a seguir fornecem informações e exemplos de criação de testes de unidade para métodos genéricos.  
+Você pode gerar testes de unidade para métodos genéricos exatamente como faria para outros métodos, conforme descrito em [como: Criar e executar um teste de unidade](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). As seções a seguir fornecem informações e exemplos de criação de testes de unidade para métodos genéricos.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Restrições de tipo e argumentos de tipo  
  Quando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera um teste de unidade para uma classe genérica como `MyList<T>`, ela gera dois métodos: um auxiliar genérico e um método de teste. Se `MyList<T>` tem uma ou mais restrições de tipo, o argumento de tipo deve atender a todas as restrições de tipo. Para certificar-se de que o código genérico em teste funciona conforme o esperado para todas as entradas possíveis, o método de teste chama o método auxiliar genérico com todas as restrições que você deseja testar.  
@@ -116,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
@@ -203,8 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Anatomia de um teste de unidade](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Anatomia de um teste de unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
-title: 'CA1801: revisar parâmetros não usados'
+title: 'CA1801: Examinar parâmetros não utilizados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
@@ -14,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 5d73545c-e153-4b7c-a7b2-be6bf5aca5be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c5f288b57a377c69bf159f9e92ccc575f983083
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee9500938feb893627069e9a83f3052fa84bc224
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948207"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949545"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: revisar parâmetros não usados
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Examinar parâmetros não utilizados
 
 |||
 |-|-|
@@ -65,8 +63,8 @@ ms.locfileid: "49948207"
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)

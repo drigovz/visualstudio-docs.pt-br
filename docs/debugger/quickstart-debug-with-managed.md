@@ -3,28 +3,27 @@ title: Depurar código gerenciado | Microsoft Docs
 description: Depurar C# ou Visual Basic usando o depurador do Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257180"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696877"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Início Rápido: depurar com C# ou Visual Basic usando o depurador do Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Início Rápido: Depuração com C# ou Visual Basic usando o depurador do Visual Studio
 
 O depurador do Visual Studio oferece muitos recursos avançados para ajudar a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto 
+## <a name="create-a-new-project"></a>Criar um novo projeto
 
 1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
@@ -151,7 +150,7 @@ Enquanto estiver em pausa no ponto de interrupção, passe o mouse sobre a instr
 
 O aplicativo continua a execução, chamando `doWork`, e é pausado na linha de código em que você clicou no botão.
 
-Comandos de teclado comuns usados para percorrer o código incluem **F10** e **F11**. Para obter mais instruções detalhadas, confira o [Guia do Iniciante](../debugger/getting-started-with-the-debugger.md).
+Comandos de teclado comuns usados para percorrer o código incluem **F10** e **F11**. Para obter instruções mais detalhadas, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecionar variáveis em uma datatip
 
@@ -159,7 +158,7 @@ Comandos de teclado comuns usados para percorrer o código incluem **F10** e **F
 
     ![Exibir uma datatip](../debugger/media/dbg-qs-data-tip-csharp.png "Exibir uma datatip")
 
-    A datatip mostra o valor atual da variável `c1` e permite que você inspecione suas propriedades. Ao depurar, se você vir um valor que não espera, provavelmente haverá um bug nas linhas de código anteriores ou de chamada. 
+    A datatip mostra o valor atual da variável `c1` e permite que você inspecione suas propriedades. Ao depurar, se você vir um valor que não espera, provavelmente haverá um bug nas linhas de código anteriores ou de chamada.
 
 2. Expanda a datatip para examinar os valores de propriedade atuais do objeto `c1`.
 

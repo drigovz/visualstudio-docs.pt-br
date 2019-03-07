@@ -1,20 +1,18 @@
 ---
 title: Práticas recomendadas e exemplos (SAL)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7922d381d61d40c20fa69859dd091849684723b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899962"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940575"
 ---
 # <a name="best-practices-and-examples-sal"></a>Práticas recomendadas e exemplos (SAL)
 Aqui estão algumas maneiras de obter o máximo de fora a fonte de código SAL (Annotation Language) e evitar alguns problemas comuns.

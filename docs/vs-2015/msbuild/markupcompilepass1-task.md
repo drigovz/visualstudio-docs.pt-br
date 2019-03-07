@@ -1,14 +1,9 @@
 ---
 title: Tarefa MarkupCompilePass1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 693d6945-fd6f-4698-8f64-9dfcb71052d3
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7db6923b0a729d909e22136bd3994af45dfe1da9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf6f6b9dbd227dbdf28781fc9ac206ca1d8a91b8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189352"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54790476"
 ---
 # <a name="markupcompilepass1-task"></a>Tarefa MarkupCompilePass1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,6 +128,3 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> converte arquiv
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
  [Compilando um aplicativo WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Visão geral dos aplicativos de navegador XAML do WPF](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-

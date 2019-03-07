@@ -1,26 +1,24 @@
 ---
-title: 'Designer de fluxo de trabalho - como: usar o Designer de argumento'
+title: 'Designer de fluxo de trabalho - como: Usar o designer de argumento'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: cb4cbcb6b1310e6552dfd757a4b6347212f99cfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755516"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941173"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Como: Use o designer do argumento
+# <a name="how-to-use-the-argument-designer"></a>Como: Usar o designer de argumento
 
 Em comparação com versões anteriores do .NET Framework, o designer do argumento facilita permitir que os dados e fluam fora de uma atividade. O designer é acessado clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer contém uma lista de argumentos que aparecem em um formulário tabular e podem ser classificados por cada um dos cabeçalhos de coluna, exceto para o **valor padrão** coluna. Cada argumento contiver um nome, a direção de in/out/in-out/property, o tipo, e o valor padrão de expressão (se houver). O nome e o valor padrão de expressão são campos editáveis de texto, e o tipo e direção são gota- suspensa. Para obter mais informações, consulte [variáveis e argumentos (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
@@ -37,5 +35,5 @@ Em comparação com versões anteriores do .NET Framework, o designer do argumen
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usando o Designer de Fluxo de Trabalho](../workflow-designer/using-the-workflow-designer.md)
+- [Usando o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)
 - [Variables and Arguments](/dotnet/framework/windows-workflow-foundation/variables-and-arguments) (Variáveis e argumentos)

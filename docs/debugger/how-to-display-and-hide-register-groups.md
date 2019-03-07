@@ -1,8 +1,6 @@
 ---
-title: 'Como: exibir e ocultar grupos de registro | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Exibir e ocultar grupos de registro | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registergroups
@@ -18,28 +16,28 @@ helpviewer_keywords:
 ms.assetid: 6be5dfb4-4cfe-4daf-b538-60405640857d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd617a1b787896f296976ba21f76d3eafbd13c4
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388602"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018443"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Como: exibir e ocultar grupos de registro (C#, C++, Visual Basic, F#)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Como: Exibir e ocultar grupos de registro (C#, C++, Visual Basic, F#)
 
-A janela Registros **estará disponível apenas se a depuração do nível de endereços estiver habilitada na caixa de diálogo Opções**, nó Depuração **, categoria Geral**.
+A janela **Registros** estará disponível apenas se a depuração do nível de endereços estiver habilitada na caixa de diálogo **Opções**, nó **Depuração**, categoria **Geral**.
 
-Para reduzir a confusão, a janela Registros** organiza os registros em grupos. Se você clicar com o botão direito na janela Registros **, verá um menu de atalho contendo esses grupos, que você pode exibir ou ocultar como achar melhor seguindo o procedimento abaixo.
+Para reduzir a confusão, a janela **Registros** organiza os registros em grupos. Se você clicar com o botão direito do mouse na janela **Registros**, verá um menu de atalho contendo esses grupos, que você poderá exibir ou ocultar como achar melhor seguindo o procedimento abaixo.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [redefinir configurações](../ide/environment-settings.md#reset-settings).
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
 
 ## <a name="display-or-hide-register-groups"></a>Exibir ou ocultar grupos de registros
 
-1.  Clique com o botão direito na janela Registros **.
+1.  Clique com o botão direito do mouse na janela **Registros**.
 
 2.  No menu de atalho, selecione os grupos de registro que você deseja mostrar ou ocultar.
 
@@ -47,4 +45,4 @@ Para reduzir a confusão, a janela Registros** organiza os registros em grupos. 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
+- [Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)

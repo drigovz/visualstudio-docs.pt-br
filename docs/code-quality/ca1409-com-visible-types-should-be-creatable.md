@@ -1,8 +1,6 @@
 ---
-title: 'CA1409: os tipos visíveis Com devem ser criáveis'
+title: 'CA1409: Tipos visíveis no COM devem poder ser criados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ComVisibleTypesShouldBeCreatable
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 817c2215245412faf0bb30d46aec40a953f239b5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 05dbe964a16f838088fe8b053d59c1916daf38f7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546838"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933712"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: os tipos visíveis Com devem ser criáveis
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Tipos visíveis no COM devem poder ser criados
 
 |||
 |-|-|
@@ -49,7 +47,7 @@ ms.locfileid: "45546838"
  É seguro suprimir um aviso nessa regra, se outros modos são fornecidos para criar e passar o objeto para o cliente COM.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1017: marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017: Marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Consulte também
 

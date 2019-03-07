@@ -1,8 +1,6 @@
 ---
-title: 'CA1724: os nomes de tipo não devem corresponder a namespaces'
+title: 'CA1724: Nomes de tipos não devem corresponder a namespaces'
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - TypeNamesShouldNotMatchNamespaces
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 329af3b5-5600-4101-831d-531ab3eb7060
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf359ffcc098fa2b5653c28da302e2777216ea5b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860258"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953965"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Os nomes de tipo não devem corresponder a namespaces
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Nomes de tipo não devem corresponder a namespaces
 
 |||
 |-|-|

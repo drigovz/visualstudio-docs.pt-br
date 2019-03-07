@@ -1,8 +1,6 @@
 ---
-title: Como especificar o tempo de execução do .NET Framework | Microsoft Docs
-ms.custom: ''
+title: 'Como: Especificar o tempo de execução do .NET Framework | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
@@ -10,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e85e1c571ecb900d5ce7ffdecf8e85b8c367de5c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: d9c62e430d19bbd2c03afbb4db76fca56563cb3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844128"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632661"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Como especificar o tempo de execução do .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Como: Especificar o tempo de execução do .NET Framework
 
 Com o lançamento do [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], os aplicativos podem ser compostos de módulos que foram compilados usando versões diferentes do tempo de execução do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Por padrão, as Ferramentas de Criação de Perfil do Visual Studio analisam o primeiro tempo de execução que é carregado pelo aplicativo. Você pode especificar o tempo de execução a ser analisado ao iniciar um aplicativo com o criador de perfil e ao anexar o criador de perfil a um aplicativo que já esteja em execução.
 

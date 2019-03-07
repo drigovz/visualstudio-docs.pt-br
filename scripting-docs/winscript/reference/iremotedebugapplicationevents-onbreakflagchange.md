@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8b4caac89897f015fec7ac483b967f9b42676aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91facd7a7055ab5ac9e7666c6a0d171e78c73eed
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729116"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086730"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
 Manipula um evento quando alterar os sinalizadores de quebra.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnBreakFlagChange(  
    APPBREAKFLAGS                   abf,  
    IRemoteDebugApplicationThread*  prdatSteppingThread  
@@ -39,7 +39,7 @@ HRESULT OnBreakFlagChange(
   
 #### <a name="parameters"></a>Parâmetros  
  `abf`  
- [in] Os sinalizadores de quebra atual para o aplicativo.  
+ [in] Os sinalizadores de interrupção atual para o aplicativo.  
   
  `prdatSteppingThread`  
  [in] O thread em execução no momento.  
@@ -52,7 +52,7 @@ HRESULT OnBreakFlagChange(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método manipula o evento ao alterar o sinalizador de quebra.  
+ Esse método manipula o evento quando o sinalizador de interrupção são alterados.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)   

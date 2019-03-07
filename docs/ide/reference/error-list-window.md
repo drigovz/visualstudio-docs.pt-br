@@ -1,8 +1,6 @@
 ---
 title: Janela Lista de Erros
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ErrorList
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 069f2a4957338ec3ab29855d9629712c7eb7cdcc
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389047"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933971"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
 
@@ -55,14 +53,14 @@ Há dois tipos de filtro em duas caixas suspensas, uma do lado direito da barra 
 
 É possível restringir o escopo da pesquisa para analisar e tomar decisões sobre grupos de erros. Por exemplo, talvez você deseje se concentrar em erros básicos que estão impedindo a compilação de um projeto. As opções de escopo incluem:
 
-1.  **Documentos Abertos**: mostre erros, avisos e mensagens para os documentos abertos.
+1.  **Documentos Abertos**: Mostre erros, avisos e mensagens para os documentos abertos.
 
-2.  **Projeto Atual**: mostre erros, avisos e mensagens do projeto do documento atualmente selecionado no **Editor** ou o projeto selecionado no **Gerenciador de Soluções**.
+2.  **Projeto Atual**: Mostre erros, avisos e mensagens do projeto do documento atualmente selecionado no **Editor** ou o projeto selecionado no **Gerenciador de Soluções**.
 
     > [!NOTE]
     > A lista filtrada de erros, avisos e mensagens será alterada se o projeto do documento selecionado atualmente for diferente do projeto selecionado no **Gerenciador de Soluções**.
 
-3.  **Documento Atual**: mostre erros, avisos e mensagens para o documento atualmente selecionado no **Editor** ou no **Gerenciador de Soluções**.
+3.  **Documento Atual**: Mostre erros, avisos e mensagens para o documento atualmente selecionado no **Editor** ou no **Gerenciador de Soluções**.
 
 Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do filtro será exibido na barra de título **Lista de Erros**. Em seguida, os botões **Erros**, **Avisos** e **Mensagens** exibem o número de itens filtrados mostrados junto com o número total de itens. Por exemplo, os botões mostram "x de y Erros". Se nenhum filtro for aplicado, a barra de título indicará apenas a “Lista de Erros”.
 

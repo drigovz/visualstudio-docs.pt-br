@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 501b85579460038d6d20ca38b17ab22be7825f5c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176987"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939483"
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 

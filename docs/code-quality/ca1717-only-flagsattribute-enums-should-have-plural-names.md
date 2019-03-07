@@ -1,8 +1,6 @@
 ---
-title: 'CA1717: apenas enums FlagsAttribute devem ter nomes plurais'
+title: 'CA1717: Apenas enumerações FlagsAttribute devem ter nomes no plural'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1717
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: a6855d8b-d78a-42c1-834e-61c31f5572ed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f923949b628d1ad5a3884acd17601daddd83460
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fb7a0ebe6dd068b9552a32b914e1936f1053aa3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889718"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921699"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: apenas enums FlagsAttribute devem ter nomes plurais
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Apenas enumerações FlagsAttribute devem ter nomes no plural
 
 |||
 |-|-|
@@ -49,11 +47,11 @@ ms.locfileid: "49889718"
  É seguro suprimir um aviso da regra se o nome terminar em uma palavra no singular.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1714: enums de sinalizadores devem ter nomes plurais](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+ [CA1714: Enums de sinalizadores devem ter nomes plurais](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
 
- [CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: Marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Consulte também
 

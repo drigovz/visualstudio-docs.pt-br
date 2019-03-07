@@ -1,8 +1,6 @@
 ---
-title: 'CA1804: remover locais não usados'
+title: 'CA1804: Remover locais não utilizados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1804
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545457"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908524"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: remover locais não usados
+# <a name="ca1804-remove-unused-locals"></a>CA1804: Remover locais não utilizados
 
 |||
 |-|-|
@@ -54,10 +52,10 @@ ms.locfileid: "45545457"
  [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1809: evitar locais excessivos](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809: Evitar locais excessivos](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: examinar parâmetros não usados](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Revisar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)

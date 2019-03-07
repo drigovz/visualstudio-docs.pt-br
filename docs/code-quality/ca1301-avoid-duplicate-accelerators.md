@@ -1,8 +1,6 @@
 ---
-title: 'CA1301: evitar aceleradores duplicados'
+title: 'CA1301: Evitar aceleradores duplicados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1301
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 20570a00-864b-459c-a1fa-a6e9db5f1001
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4dac6beddf43e88d47a54ddf2b0e0d56e387038
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f82163b1c377df4c8c7fcbba07672312153dad9b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547197"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916538"
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: evitar aceleradores duplicados
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitar aceleradores duplicados
 
 |||
 |-|-|

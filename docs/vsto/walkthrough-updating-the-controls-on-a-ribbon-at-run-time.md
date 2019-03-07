@@ -1,9 +1,6 @@
 ---
-title: 'Explicação passo a passo: Os controles em uma faixa de opções em tempo de execução de atualização'
-ms.custom: ''
+title: 'Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,19 +12,19 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dynamic menu
 - dynamic menus [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389144"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875908"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Explicação passo a passo: Os controles em uma faixa de opções em tempo de execução de atualização
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução
 
 Este passo a passo demonstra como usar o modelo de objeto da faixa de opções para atualizar os controles em uma faixa de opções, depois que a faixa de opções é carregada no aplicativo do Office.
 
@@ -68,7 +65,7 @@ Primeiro, crie um projeto de suplemento do VSTO do Outlook.
 
 3.  Salve o projeto no diretório de projeto padrão.
 
-     Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Criar um grupo de faixa de opções personalizado
 
@@ -134,7 +131,7 @@ Use o **fontes de dados** janela para adicionar um conjunto de dados tipado ao s
 
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
-1.  Sobre o **dados** menu, clique em **Add New Data Source**.
+1.  No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
      Isso inicia o **Data Source Configuration Wizard**.
 
@@ -210,7 +207,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
 
-9. Adicione o seguinte código para o `CustomerRibbon` classe. Esse código usa consultas LINQ para executar as seguintes tarefas:
+9. Adicione o código a seguir à classe `CustomerRibbon`. Esse código usa consultas LINQ para executar as seguintes tarefas:
 
    - Adiciona um submenu para o **ProductsPurchased** menu para cada ordem de venda relacionadas ao cliente selecionado.
 
@@ -243,7 +240,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Adicione o seguinte código para o `CustomerRibbon` classe. Esse código executa as seguintes tarefas:
+14. Adicione o código a seguir à classe `CustomerRibbon`. Esse código executa as seguintes tarefas:
 
     - Preenche a linha para novas mensagens de email usando o endereço de email do cliente selecionado no momento.
 
@@ -294,7 +291,7 @@ Você pode aprender mais sobre como personalizar a interface do usuário do Offi
 
 -   Adicione com base no contexto da interface do usuário para qualquer personalização de nível de documento. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).
 
--   Estenda um formulário personalizado ou padrão do Microsoft Office Outlook. Para obter mais informações, consulte [instruções passo a passo: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+-   Estenda um formulário personalizado ou padrão do Microsoft Office Outlook. Para obter mais informações, confira [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 -   Adicione um painel de tarefas personalizado para o Outlook. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
@@ -308,8 +305,8 @@ Você pode aprender mais sobre como personalizar a interface do usuário do Offi
 - [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md)
 - [Personalizar uma faixa de opções do Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Como: alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
-- [Como: adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Como: exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Como: Add-in de mostrar erros de interface do usuário](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Como: Alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
+- [Como: Adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Como: Mostrar erros de interface de usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)

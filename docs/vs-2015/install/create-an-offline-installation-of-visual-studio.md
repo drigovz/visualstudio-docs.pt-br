@@ -1,14 +1,9 @@
 ---
 title: Criar uma instalação Offline | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 f1_keywords:
 - offline installation
 - offline install
@@ -17,13 +12,13 @@ ms.assetid: 85d65709-42be-449f-9663-914bf1045089
 caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 0ac8f1c1d631e4d5f682fea5e1841e3914241d14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 89575318a8dd5357e5f786e25d3e3518d35348d6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055232"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954287"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +64,7 @@ Esta página descreve como instalar o Visual Studio 2015 quando você não está
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | O Dotfuscator e Analytics Community Edition 5.19.1 (para as edições Community, Professional e Enterprise do Visual Studio, como instalado em **Windows 7 SP1** e **Windows Server 2008 R2**) |                                                                                                                                       Se o computador offline estiver executando **Windows 7 SP1** ou **Windows Server 2008 R2**, você deve executar as etapas a seguir antes de instalar o Visual Studio 2015:<br /><br /> 1.  Configure um servidor web ou de arquivos para baixar os arquivos da CTL.<br /><br /> 2.    Redirecione a URL de atualização automática da Microsoft para um ambiente desconectado.<br /><br /> Para obter mais informações, consulte o [configurar raízes confiáveis e certificados não permitidos](https://technet.microsoft.com/library/dn265983.aspx) página no site do Microsoft TechNet.                                                                                                                                       |
 |                                                                                  Instalação do SDK do Android (nível de API)                                                                                   |                                                                        Você deve ter uma conexão com a Internet para instalar os pacotes de SDK do Android (nível de API). Se você estiver em uma rede restrita, será necessário permitir o acesso às seguintes URLs ao instalar o Visual Studio:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Para obter mais informações de como solucionar possíveis problemas coma configurações de proxy, confira a postagem no blog [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Falhas de instalação do Visual Studio 2015 (instalação do SDK do Android) por trás de um proxy).                                                                         |
-|                             Modelos de Item de extensibilidade do Visual Studio<br /><br /> Extensão do GitHub para Visual Studio<br /><br /> PowerShell Tools for Visual Studio                             | Se você não tiver uma conexão de internet quando você instala o Visual Studio 2015, você pode usar um feed offline para gerar o layout de instalação offline de especial. **Observação:**  Este feed especial inclui as atualizações mais recentes para o Visual Studio 2015. <br /><br /> Para criar especiais feed offline, execute o seguinte comando: /layout *unidade:* \VisualStudio2015 /overridefeeduri *URL do feed xml*<br /><br /> Por exemplo, para um idioma inglês especial feed offline do Visual Studio 2015 Enterprise, execute:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Para obter uma lista completa de URLs que você pode usar para criar um feed offline de especial no idioma de sua escolha, consulte a tabela a seguir. |
+|                             Modelos de Item de extensibilidade do Visual Studio<br /><br /> Extensão do GitHub para Visual Studio<br /><br /> PowerShell Tools for Visual Studio                             | Se você não tiver uma conexão de internet quando você instala o Visual Studio 2015, você pode usar um feed offline para gerar o layout de instalação offline de especial. **Observação:** esse feed especial inclui as atualizações mais recentes para o Visual Studio 2015. <br /><br /> Para criar especiais feed offline, execute o seguinte comando: /layout *unidade:* \VisualStudio2015 /overridefeeduri *URL do feed xml*<br /><br /> Por exemplo, para um idioma inglês especial feed offline do Visual Studio 2015 Enterprise, execute:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Para obter uma lista completa de URLs que você pode usar para criar um feed offline de especial no idioma de sua escolha, consulte a tabela a seguir. |
 
  Use as URLs a seguir para criar um feed offline especial de idioma específico, conforme descrito na tabela acima.
 
@@ -92,4 +87,4 @@ Esta página descreve como instalar o Visual Studio 2015 quando você não está
 |        Turco        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>Consulte também
- [Instalar o Visual Studio]()
+ [Instalar o Visual Studio](../install/install-visual-studio-2015.md)

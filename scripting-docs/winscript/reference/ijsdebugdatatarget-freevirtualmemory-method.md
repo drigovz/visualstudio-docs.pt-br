@@ -1,5 +1,5 @@
 ---
-title: 'Método: Freevirtualmemory | Microsoft Docs'
+title: 'Método ijsdebugdatatarget:: Freevirtualmemory | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b53d7f80227a1c4eb0ef0293093543c09c5a367
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed5fabfca8ac9b0e9fe0dfba346b0354f4c0576f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728736"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086795"
 ---
 # <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>Método IJsDebugDataTarget::FreeVirtualMemory
-Libera e/ou decommits uma região de memória dentro do espaço de endereço virtual do processo de destino.  
+Libera e/ou anulações de confirmação de uma região de memória no espaço de endereço virtual do processo de destino.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT FreeVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -41,15 +41,15 @@ HRESULT FreeVirtualMemory(
  [in] Endereço dentro do processo de destino em que a memória deve ser liberada.  
   
  `size`  
- [in] Número de bytes a liberação. Para liberar uma região de memória, esse valor deve ser zero.  
+ [in] Número de bytes a serem anulados. Para definir uma região de memória, esse valor deve ser zero.  
   
  `freeType`  
- [in] Indica o tipo de operação livre a ser executada. Normalmente, isso é MEM_RELEASE (0x8000), que libera a região especificada de páginas. Após a operação, as páginas estão no estado livre. MEM_DECOMMIT (0x4000) pode ser usado em vez disso, a liberação de páginas sem liberá-los.  
+ [in] Indica o tipo de operação livre a ser executada. Isso geralmente é MEM_RELEASE (0x8000), que libera a região especificada de páginas. Após a operação, as páginas estão em estado livre. MEM_DECOMMIT (0x4000) pode ser usado em vez disso, a serem anulados as páginas sem liberá-los.  
   
 ## <a name="return-value"></a>Valor de retorno  
   
 ## <a name="remarks"></a>Comentários  
- Para obter informações adicionais, consulte a API do Win32 VirtualFree.  
+ Para obter mais informações, consulte a API Win32 VirtualFree.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** jscript9diag.h  

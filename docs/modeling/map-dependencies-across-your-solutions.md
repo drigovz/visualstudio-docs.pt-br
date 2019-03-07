@@ -13,17 +13,15 @@ helpviewer_keywords:
 - dependency graphs
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896933"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223696"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapear dependências com mapas de código
 
@@ -49,7 +47,7 @@ Você pode mapear as dependências para código nestes idiomas:
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Mapa de código de instalação e validação de dependência dinâmica
 
-Para criar um mapa de código no Visual Studio 2017, primeiro instale o **mapa de códigos** e **validação de dependência dinâmica** componentes:
+Para criar um mapa de código no Visual Studio, primeiro instale o **mapa de códigos** e **validação de dependência dinâmica** componentes:
 
 1. Abra **instalador do Visual Studio**. Você pode abri-lo no menu Iniciar do Windows ou no Visual Studio, selecionando **ferramentas** > **obter ferramentas e recursos**.
 
@@ -240,7 +238,7 @@ Suponha que você tenha uma revisão de código para executar em alguns arquivos
 
 ## <a name="see-also"></a>Consulte também
 
-- [Vídeo: entenda design de código com mapas de código do Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Vídeo: Entenda design de código com mapas de código do Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)

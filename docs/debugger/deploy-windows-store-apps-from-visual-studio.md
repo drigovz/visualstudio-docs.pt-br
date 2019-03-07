@@ -2,7 +2,6 @@
 title: Implantar aplicativos UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -11,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056805"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043759"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP usando o Visual Studio
 
@@ -29,7 +28,7 @@ A funcionalidade de implantação do Visual Studio cria e registra aplicativos U
 
 - Quando o destino é um dispositivo remoto, o Visual Studio copia os arquivos necessários ao computador remoto e registra o aplicativo nesse dispositivo.
 
-A implantação é automática quando você depura seu aplicativo do Visual Studio usando a opção Iniciar depuração** (Teclado: F5) ou o **Start Without Debugging** opção (teclado: CTRL + F5 Você também pode implantar seu aplicativo manualmente. A implantação manual é útil nos seguintes cenários:
+Implantação é automática quando você depura seu aplicativo do Visual Studio usando o **iniciar depuração** opção (teclado: F5) ou o **Start Without Debugging** opção (teclado: CTRL + F5). Você também pode implantar seu aplicativo manualmente. A implantação manual é útil nos seguintes cenários:
 
 - Teste ad-hoc em um computador local ou remoto.
 
@@ -119,4 +118,4 @@ Para configurar a implantação para iniciar automaticamente uma sessão de depu
 
 - [Opções avançadas de implantação remota](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Depurar pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)
-- [Executar aplicativos usando o Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
+- [Executar aplicativos usando o Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

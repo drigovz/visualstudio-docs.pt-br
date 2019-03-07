@@ -1,23 +1,21 @@
 ---
 title: Janela interativa do Python (REPL)
 description: Use a janela interativa (REPL) para desenvolvimento rápido de código Python no Visual Studio.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c3a3a6cd3694a0affa6ca1d5cfabac58b124ec9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055709"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155650"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Trabalhar com a janela Interativa do Python
 
@@ -32,15 +30,11 @@ O Visual Studio tem diversos modos REPL do Python à sua disposição:
 | Padrão | REPL padrão, que se comunica com o Python diretamente | Edição padrão (várias linhas etc.). | Sim, por meio de `$attach` | Não |
 | Depurar | REPL padrão, que se comunica com o processo depurado do Python | Edição padrão | Somente depuração | Não |
 | IPython | O REPL se comunica com o back-end do IPython | Comandos do IPython, funcionalidades do Pylab | Não | Sim, embutido no REPL |
-| IPython sem Pylab | O REPL se comunica com o back-end do IPython | IPython padrão | Não | Sim, em uma janela separada | 
+| IPython sem Pylab | O REPL se comunica com o back-end do IPython | IPython padrão | Não | Sim, em uma janela separada |
 
 Este artigo descreve os modos REPL **Padrão** e **Depuração**. Para obter detalhes sobre os modos do IPython, confira [Usar o REPL do IPython](interactive-repl-ipython.md).
 
-Para obter um passo a passo detalhado com exemplos, incluindo as interações com o editor, como **Ctrl**+**Enter**, confira [Etapa 3 do Tutorial: Usar a janela Interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
-
-|   |   |
-|---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) na janela **Interativa** (2min22s).|
+Para obter um passo a passo detalhado com exemplos, incluindo as interações com o editor, como **Ctrl**+**Enter**, confira [Etapa 3 do Tutorial: Usar a janela Interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Abrir uma janela Interativa
 

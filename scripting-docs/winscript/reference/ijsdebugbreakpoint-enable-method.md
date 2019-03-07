@@ -1,5 +1,5 @@
 ---
-title: 'Método Ijsdebugbreakpoint: | Microsoft Docs'
+title: 'Método ijsdebugbreakpoint:: Enable | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fa66486b479f8bc3e05bad24868392ace121347
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a612cc0fb11e8651164dd6b17f945e91659d4bf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728036"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349238"
 ---
 # <a name="ijsdebugbreakpointenable-method"></a>Método IJsDebugBreakPoint::Enable
 Permite que o ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Enable(void);  
 ```  
   

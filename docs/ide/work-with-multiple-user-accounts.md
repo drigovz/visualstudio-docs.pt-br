@@ -1,81 +1,117 @@
 ---
 title: Trabalhar com várias contas de usuário
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.date: 12/10/2018
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33f88444d7bbdc0b0fe85bfa5efbdbbd794fa3e4
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349381"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933386"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 
-Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudante, é possível adicionar todas elas no Visual Studio para acessar os recursos de qualquer conta sem a necessidade de entrar nas contas separadamente. No momento, os serviços Azure, Application Insights, Team Foundation Server e Office 365 oferecem suporte à experiência de logon simplificada. Serviços adicionais podem ser disponibilizados com o passar do tempo.
+Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudante, é possível adicionar todas elas no Visual Studio para acessar os recursos de qualquer conta sem a necessidade de entrar nas contas separadamente. Os serviços do Azure, do Application Insights, do Azure DevOps e do Office 365 dão suporte à experiência de conexão simplificada.
 
-Depois de adicionar várias contas em um computador, esse conjunto de contas se moverá com você ao entrar no Visual Studio em outro computador. É importante observar que, embora os nomes de conta usem perfil móvel, as credenciais não. Portanto, você será solicitado a inserir as credenciais das outras contas na primeira vez que tentar usar os recursos dessas contas no novo computador.
+Depois que você adicionar várias contas em um computador, esse conjunto de contas fará parte de seu perfil móvel se você entrar no Visual Studio em outro computador.
 
-Este passo a passo mostra como adicionar várias contas no Visual Studio e como ver que os recursos acessíveis dessas contas são refletidos em locais como a caixa de diálogo **Adicionar Serviço Conectado**, o **Gerenciador de Servidores** e o **Team Explorer**.
+> [!NOTE]
+> Embora os nomes de conta usem perfis móveis, isso não ocorre com as credenciais. Você deverá inserir as credenciais das outras contas na primeira vez que tentar usar os recursos delas em um novo computador.
+
+Este artigo mostra como adicionar várias contas ao Visual Studio. Ele também mostra como ver os recursos acessíveis nessas contas em locais como a caixa de diálogo **Adicionar Serviço Conectado**, o **Gerenciador de Servidores**, e o **Team Explorer**.
 
 ## <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
-- Entre no Visual Studio com uma conta da Microsoft ou uma conta organizacional. Você verá seu nome de usuário exibido no canto superior da janela, semelhante a isso:
+Entre no Visual Studio com uma conta da Microsoft ou uma conta organizacional. Você verá seu nome de usuário exibido no canto superior da janela, semelhante a isso:
 
-     ![Usuário atualmente conectado](../ide/media/vs2015_username.png)
+![Usuário atualmente conectado](../ide/media/vs2015_username.png)
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Acessar sua conta do Azure no Gerenciador de Servidores
 
-Pressione **Ctrl**+**Alt**+**S** para abrir o **Gerenciador de Servidores**. Escolha o ícone do **Azure** e, quando ele se expandir, você verá os recursos disponíveis na conta do Azure associada à ID que você usou para fazer logon no Visual Studio. Ele deve se parecer com algo semelhante ao seguinte (com a exceção de que você verá seus próprios recursos).
+Pressione **Ctrl**+**Alt**+**S** para abrir o **Gerenciador de Servidores**. Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
 
-![Gerenciador de Servidores mostrando o nó de Ferramentas do Azure expandido](../ide/media/vs2015_serverexplorer.png)
+![Gerenciador de Servidores com o nó do Azure expandido](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
-Na primeira vez que você usar o Visual Studio em qualquer dispositivo específico, a caixa de diálogo mostrará apenas as assinaturas registradas na ID que você usou para entrar no IDE. Você pode acessar os recursos de qualquer uma das outras contas diretamente do **Gerenciador de Servidores** clicando com o botão direito do mouse no nó do **Azure** e escolhendo **Gerenciar e Filtrar Assinaturas** e adicionando suas contas por meio do controle de seletor de conta. Você pode escolher outra conta, se desejar, clicando na seta para baixo e escolhendo na lista de contas. Depois de escolher a conta, escolha qual assinatura dessa conta você deseja exibir no **Gerenciador de Servidores**.
+Na primeira vez que você usa o Visual Studio em qualquer dispositivo específico, a caixa de diálogo mostra apenas as assinaturas registradas na conta que você usou para entrar. Acesse os recursos de uma das outras contas diretamente no **Gerenciador de Servidores** clicando com o botão direito do mouse no nó do **Azure**, escolhendo **Gerenciar e Filtrar Assinaturas** e, em seguida, adicionando suas contas por meio do controle de seletor de conta. Você pode escolher outra conta, se desejar, clicando na seta para baixo e escolhendo na lista de contas. Depois de escolher a conta, você poderá personalizar quais assinaturas dessa conta serão exibidas no **Gerenciador de Servidores**.
 
 ![Caixa de diálogo Gerenciar assinaturas do Azure](../ide/media/vs2015_manage_subs.png)
 
-Na próxima vez que você abrir o **Gerenciador de Servidores**, os recursos dessas assinaturas serão exibidos.
+Na próxima vez que você abrir o **Gerenciador de Servidores**, os recursos dessa assinatura serão exibidos.
 
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Acessar sua conta do Azure através da caixa de diálogo Adicionar Serviço Conectado
 
-1. Crie um projeto de aplicativo UWP em C#.
+1. Abra um projeto existente ou crie um projeto.
 
-1. Escolha o nó do projeto no **Gerenciador de Soluções** e, em seguida, escolha **Adicionar** > **Serviço Conectado**. O assistente **Adicionar Serviço Conectado** é exibido e mostra a lista de serviços na conta do Azure que está associada com sua ID de logon do Visual Studio. Observe que você não precisa entrar separadamente no Azure. No entanto, é necessário entrar nas outras contas na primeira vez que você tentar acessar os recursos delas de um determinado computador.
+1. Escolha o nó do projeto no **Gerenciador de Soluções** e, em seguida, clique com o botão direito do mouse e escolha **Adicionar** > **Serviço Conectado**.
 
-    > [!WARNING]
-    > Se esta for a primeira vez que você estiver criando um aplicativo UWP no Visual Studio em um computador específico, você deverá habilitar o dispositivo para o modo de desenvolvimento acessando **Configurações** > **Atualizações e Segurança** > **Para Desenvolvedores** no computador. Para obter mais informações, consulte [Habilitar seu dispositivo para desenvolvimento](/windows/uwp/get-started/enable-your-device-for-development).
+   O assistente **Adicionar Serviço Conectado** é exibido e mostra a lista de serviços na conta do Azure associada à sua conta de personalização do Visual Studio. Você não precisa entrar separadamente no Azure. No entanto, você precisará entrar nas outras contas na primeira vez que tentar acessar os recursos delas em outro computador.
 
-### <a name="access_azure"></a> Acessar o Azure Active Directory em um projeto Web
+### <a name="access-azure-active-directory-in-a-web-project"></a>Acessar o Azure Active Directory em um projeto Web
 
-O Azure AD habilita o suporte para o logon única do usuário final em aplicativos Web ASP.NET MVC ou autenticação AD nos serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao seu domínio do Active Directory podem usar suas contas existentes do Azure AD para conectar-se aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio. Para ver isso em ação, crie um aplicativo Web (**Arquivo** > **Novo Projeto** > **C#** > **Nuvem** > **Aplicativo Web ASP.NET**). Na caixa de diálogo **Novo Projeto ASP.NET**, escolha **Alterar Autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.
+O AAD (Azure Active Directory) habilita o suporte para logon único do usuário final em aplicativos Web ASP.NET MVC ou a autenticação do AD em serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao domínio do Active Directory podem usar suas contas existentes do AAD para se conectarem aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio.
+
+Para ver isso em ação, crie um aplicativo Web (**Arquivo** > **Novo Projeto** > **C#** > **Nuvem** > **Aplicativo Web ASP.NET**). Na caixa de diálogo **Novo Projeto ASP.NET**, escolha **Alterar Autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.
 
 ![Caixa de diálogo Alterar autenticação para ASP.NET](../ide/media/vs2015_change_authentication.png)
 
-Para obter mais informações sobre os diferentes tipos de autenticação no ASP.NET, consulte [Criar projetos Web ASP.NET no Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (as informações sobre a autenticação ainda são relevantes para as versões atuais do Visual Studio).
+Para obter mais informações sobre os diferentes tipos de autenticação no ASP.NET, confira [Criar projetos Web ASP.NET no Visual Studio](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#authentication-methods).
 
-### <a name="access-your-team-foundation-server-tfs-organization"></a>Acessar sua organização do TFS (Team Foundation Server)
+### <a name="access-your-azure-devops-organization"></a>Acessar sua organização do Azure DevOps
 
-No menu principal, escolha **Equipe** > **Conectar-se ao Team Foundation Server** para mostrar a janela do **Team Explorer**. Clique em **Selecionar Projetos** e, em seguida, na caixa de listagem em **Selecionar um Team Foundation Server**, você verá a URL de sua organização do TFS. Ao selecionar a URL você será conectado sem precisar reinserir suas credenciais.
+No menu principal, escolha **Team** > **Gerenciar Conexões** para abrir a janela **Team Explorer – Conectar**. Escolha **Gerenciar Conexões** > **Conectar-se a um Projeto**. Na caixa de diálogo **Conectar-se a um Projeto**, selecione um projeto da lista (ou selecione **Adicionar Servidor TFS** e insira a URL do servidor). Ao selecionar uma URL, você será conectado sem precisar reinserir suas credenciais.
 
-## <a name="add-a-second-user-account-to-visual-studio"></a>Adicionar uma segunda conta de usuário no Visual Studio
+Para obter mais informações, confira [Conectar-se a projetos no Team Explorer](connect-team-project.md).
 
-Clique na seta para baixo ao lado de seu nome de usuário no canto superior do Visual Studio. Em seguida, escolha o item de menu **Configurações de Conta**. A caixa de diálogo **Gerenciador de Conta** aparece e exibe a conta com a qual você entrou. Escolha o link **Adicionar uma conta** no canto inferior da caixa de diálogo para adicionar uma nova conta da Microsoft ou uma nova conta corporativa ou de estudante.
+## <a name="add-an-additional-account-to-visual-studio"></a>Adicionar outra conta ao Visual Studio
 
-![Seletor de conta do Visual Studio](../ide/media/vs2015_acct_picker.png)
+Para adicionar outra conta ao Visual Studio:
 
-Siga as solicitações para ingressar as credenciais da nova conta. A ilustração a seguir mostra o **Gerenciador de Contas** depois que um usuário adicionou sua conta corporativa de *Contoso.com*.
+1. Escolha **Arquivo** > **Configurações da Conta**.
 
-![Gerente de contas](../ide/media/vs2015_accountmanager.gif)
+1. Em **Todas as Contas**, escolha **Adicionar uma conta**.
 
-## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Rever o Assistente para Adicionar Serviços Conectados e o Gerenciador de Servidores
+1. Na página **Entrar em sua conta**, selecione a conta ou escolha **Usar outra conta**. Siga as solicitações para ingressar as credenciais da nova conta.
 
-Agora, acesse novamente o **Gerenciador de Servidores**, clique com o botão direito do mouse no nó **Azure** e escolha **Gerenciar e filtrar assinaturas**. Escolha a nova conta clicando na seta suspensa ao lado da conta atual e, em seguida, escolha quais assinaturas você deseja exibir no **Gerenciador de Servidores**. Você deverá ver todos os serviços associados à assinatura especificada. Embora você não esteja atualmente conectado ao IDE do Visual Studio com a segunda conta, você está conectado aos serviços e recursos dessa conta. O mesmo se aplica a **Projeto** > **Adicionar Serviço Conectado** e **Equipe** > **Conectar-se ao Team Foundation Server**.
+(Opcional) Agora você pode acessar o **Gerenciador de Servidores** e ver os serviços do Azure associados à conta recém-adicionada. No **Gerenciador de Servidores**, clique com o botão direito do mouse no nó do **Azure** e escolha **Gerenciar e Filtrar Assinaturas**. Escolha a nova conta clicando na seta suspensa ao lado da conta atual e, em seguida, escolha quais assinaturas você deseja exibir no **Gerenciador de Servidores**. Você deverá ver todos os serviços associados à assinatura especificada. Embora você não esteja atualmente conectado ao Visual Studio com a segunda conta, você está conectado aos serviços e aos recursos dessa conta. O mesmo se aplica a **Projeto** > **Adicionar Serviço Conectado** e **Equipe** > **Conectar-se ao Team Foundation Server**.
+
+### <a name="add-an-account-using-device-code-flow"></a>Adicionar uma conta usando o fluxo de código do dispositivo
+
+Em alguns casos, você não pode entrar em sua conta nem adicionar uma conta da maneira normal. Isso pode acontecer se o Internet Explorer está bloqueado por algum motivo ou se a rede está protegida por um firewall. Para resolver esse problema, habilite o *fluxo de código do dispositivo* para adicionar uma conta ou reautenticar sua conta. O fluxo de código do dispositivo permite que você entre em sua conta usando outro navegador ou computador – um computador físico ou uma VM (máquina virtual).
+
+Para entrar usando o fluxo de código do dispositivo:
+
+1. Abra a página [**Contas**](reference/accounts-environment-options-dialog-box.md) em **Ferramentas** > **Opções** > **Ambiente** e, em seguida, selecione **Habilitar fluxo de código do dispositivo ao adicionar ou reautenticar uma conta**. Escolha **OK** para fechar as páginas de opções.
+
+1. Escolha **Arquivo** > **Configurações da Conta** para abrir a página de gerenciamento de contas.
+
+1. Escolha **Adicionar uma conta** em **Todas as Contas**.
+
+   Uma caixa de diálogo mostra uma URL e um código para colar em um navegador da Web.
+
+   ![URL e código do fluxo de código do dispositivo](media/work-with-multiple-user-accounts/device-login-code.png)
+
+1. Pressione **Ctrl**+**C** para copiar o texto da caixa de diálogo e, em seguida, escolha **OK** para fechar a caixa de diálogo. Cole o texto copiado em um editor de texto como o Bloco de notas. Isso facilita a cópia do código na próxima etapa.
+
+1. Navegue para a URL de logon do dispositivo no computador ou no navegador da Web que deseja usar para entrar no Visual Studio e, em seguida, cole ou insira o código copiado na caixa que indica **Código**.
+
+   O nome do aplicativo **Visual Studio** deverá ser exibido mais adiante na página.
+
+1. Em **Visual Studio**, escolha **Continuar**.
+
+   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+
+1. Siga os prompts para inserir as credenciais de sua conta.
+
+   Uma página é exibida, informando que você entrou no Visual Studio por meio de seu dispositivo e que a janela do navegador pode ser fechada.
+
+   ![Conexão ao Visual Studio por meio do navegador concluída](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
+
+1. Volte para a página de gerenciamento de contas no Visual Studio e você verá a conta recém-adicionada listada em **Todas as Contas**. Escolha **Fechar**.
 
 ## <a name="see-also"></a>Consulte também
 

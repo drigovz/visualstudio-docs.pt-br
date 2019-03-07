@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6b3078fdc54a5efa652d9de737559365cca7f58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927080"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923272"
 ---
 # <a name="properties-of-domain-roles"></a>Propriedades de funções de domínio
 As propriedades na tabela a seguir estão associadas com uma função de domínio. Para obter informações sobre as funções de domínio, consulte [Noções básicas sobre modelos, Classes e relacionamentos](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -37,7 +35,7 @@ As propriedades na tabela a seguir estão associadas com uma função de domíni
 |Categoria|A categoria na qual a propriedade gerada aparece na **propriedades** janela no designer gerado. Se essa propriedade estiver vazia, a propriedade gerada aparece sob o **Misc** categoria|< nenhum\>|
 |Descrição|A descrição que é usada para documentar código e é usada na interface do usuário do designer gerado.<br /><br /> A descrição aparece na dica de ferramenta IntelliSense para a propriedade gerada na classe de player de função.|`Description for` *o nome completo da função*|
 |Nome de Exibição|O nome que é exibido no designer gerado para a função de domínio.|O valor ajustado da propriedade Name.|
-|Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a Ajuda de F1 para a função de domínio.|\<Nenhum >|
+|Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a Ajuda de F1 para a função de domínio.|\<nenhum>|
 |Nome de exibição de propriedade|O nome que é exibido no designer gerado para a propriedade de função gerado.|O valor ajustado da propriedade nome da propriedade.|
 
 > [!NOTE]

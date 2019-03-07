@@ -1,23 +1,21 @@
 ---
 title: Noções básicas sobre valores de dados de amostragem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
 - Profiling Tools, sampling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476996"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641072"
 ---
 # <a name="understand-sampling-data-values"></a>Noções básicas sobre valores de dados de amostragem
 
@@ -53,5 +51,5 @@ O percentual do número total de amostras exclusivas na criação de perfil que 
 
 ## <a name="see-also"></a>Consulte também
 
-[Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)  
+[Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
 [Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

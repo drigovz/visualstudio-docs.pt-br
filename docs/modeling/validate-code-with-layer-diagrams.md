@@ -16,17 +16,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967279"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223189"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -51,11 +49,11 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
 - Uma solução que tem um projeto de modelagem com um diagrama de dependência. Este diagrama de dependência deve ser vinculado a artefatos em projetos do c# ou Visual Basic que você deseja validar. Ver [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
-> Não há suporte para diagramas de dependência para projetos do .NET Core no Visual Studio 2017.
+> Não há suporte para diagramas de dependência para projetos do .NET Core no Visual Studio.
 
 Para ver quais edições do Visual Studio dão suporte a esse recurso, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Você pode validar código manualmente a partir de um diagrama de dependência aberto no Visual Studio ou em um prompt de comando. Você também pode validar código automaticamente ao executar compilações locais ou Pipelines do Azure compilações. Ver [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=252073).
+Você pode validar código manualmente a partir de um diagrama de dependência aberto no Visual Studio ou em um prompt de comando. Você também pode validar código automaticamente ao executar compilações locais ou Pipelines do Azure compilações. Consulte [vídeo do Channel 9: Projetar e validar a arquitetura usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Se você quiser executar a validação de camada usando o Team Foundation Server (TFS), você deve instalar também a mesma versão do Visual Studio no seu servidor de compilação.
@@ -224,19 +222,19 @@ A seção a seguir descreve a sintaxe usada nesses erros, explica o significado 
 |*ArtifactN*(*ArtifactTypeN*)|*{1&gt;artefaton&lt;1* é um artefato associado uma camada no diagrama de dependência.<br /><br /> *1&gt;tipoartefaton&lt;1* é o tipo de *2&gt;artefaton&lt;2*, como um **classe** ou **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|O nome de um namespace.|
 |*LayerNameN*|O nome de uma camada no diagrama de dependência.|
-|*Tipodependência*|O tipo de relação de dependência entre *artefato1* e *artefato2*. Por exemplo, *artefato1* tem um **chamadas** relação com *artefato2*.|
+|*DependencyType*|O tipo de relação de dependência entre *artefato1* e *artefato2*. Por exemplo, *artefato1* tem um **chamadas** relação com *artefato2*.|
 
 | **Erro de sintaxe** | **Descrição do erro** |
 |-|-|
-| DV0001: **dependência inválida** | Esse problema é relatado quando um elemento de código (namespace, tipo, membro) mapeada para referências de uma camada um elemento de código mapeado para outra camada, mas não há nenhuma seta de dependência entre essas camadas no diagrama de validação de dependência que contém esse camadas. Essa é uma violação de restrição de dependência. |
-| DV1001: **nome de namespace inválido** | Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Permitidos em nomes de Namespace" não contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a sintaxe de "Permitidos em nomes de Namespace" deve ser uma lista de ponto e vírgula de namespaces na qual o código elementos associados são camada são podem ser definidos. |
-| DV1002: **dependência no namespace não referenciáveis** | Esse problema é relatado em um elemento de código associado a uma camada e fazendo referência a outro elemento de código definido em um namespace que é definido na propriedade "Namespace não Referenciáveis" da camada. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Namespaces não Referenciáveis" é definida como uma lista de ponto e vírgula separada de namespaces que não devem ser referenciados em elementos de código associados a essa camada. |
-| DV1003: **nome do namespace não permitido** | Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Não permitidos em nomes de Namespace" contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Nome do namespace não permitido" é definida como uma lista separada por dois pontos de namespaces na qual o código elementos associados a essa camada não devem ser definidos. |
+| DV0001: **Dependência inválida** | Esse problema é relatado quando um elemento de código (namespace, tipo, membro) mapeada para referências de uma camada um elemento de código mapeado para outra camada, mas não há nenhuma seta de dependência entre essas camadas no diagrama de validação de dependência que contém esse camadas. Essa é uma violação de restrição de dependência. |
+| DV1001: **Nome de namespace inválido** | Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Permitidos em nomes de Namespace" não contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a sintaxe de "Permitidos em nomes de Namespace" deve ser uma lista de ponto e vírgula de namespaces na qual o código elementos associados são camada são podem ser definidos. |
+| DV1002: **Dependência no namespace não referenciáveis** | Esse problema é relatado em um elemento de código associado a uma camada e fazendo referência a outro elemento de código definido em um namespace que é definido na propriedade "Namespace não Referenciáveis" da camada. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Namespaces não Referenciáveis" é definida como uma lista de ponto e vírgula separada de namespaces que não devem ser referenciados em elementos de código associados a essa camada. |
+| DV1003: **Nome do namespace não permitido** | Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Não permitidos em nomes de Namespace" contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Nome do namespace não permitido" é definida como uma lista separada por dois pontos de namespaces na qual o código elementos associados a essa camada não devem ser definidos. |
 | DV3001: **Link ausente** | Camada '*Nomecamada*'contém links para'*artefato*' que não foi encontrado. Você não tem uma referência de assembly? |
-| DV9001: **análise arquitetônica encontrou erros internos** | Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída. |
+| DV9001: **Análise arquitetônica encontrou erros internos** | Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída. |
 
 ## <a name="see-also"></a>Consulte também
 
-- [Validação de dependência dinâmica no Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Validação de dependência dinâmica no Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)
 - [Vídeo: Validar suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

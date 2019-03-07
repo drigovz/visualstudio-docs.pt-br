@@ -3,22 +3,20 @@ title: Introdução ao C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159991"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796641"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
@@ -32,11 +30,23 @@ Para acompanhar, você precisará de uma cópia do Visual Studio 2017 versão 15
 
 ## <a name="create-a-console-app"></a>Criar um aplicativo do console
 
-Se ele não ainda estiver em execução, inicie o Visual Studio.
+Se ele ainda não estiver em execução, abra o Visual Studio.
+
+::: moniker range="vs-2017"
 
 ![Configurações do IDE com Visual C&#43;&#43; aplicadas](../ide/media/get-started-cpp-ide-layout.png)
 
 Depois de abrir o Visual Studio, você poderá ver as três partes básicas do IDE: janelas de ferramenta, menus e barras de ferramentas e o espaço da janela principal. As janelas de ferramentas são encaixadas à esquerda e à direita da janela do aplicativo. A caixa **Início Rápido**, a barra de menus e a barra de ferramentas padrão estão na parte superior. O centro da janela contém a **Página Inicial**. Quando você abre uma solução ou um projeto, editores e designers aparecem neste espaço. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nesta área central.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Depois que você abrir o Visual Studio, a janela **Iniciar** será exibida primeiro. Selecione **Continuar sem código** para abrir o ambiente de desenvolvimento.
+
+Você verá as três partes básicas do IDE: janelas de ferramentas, menus e barras de ferramentas, além do espaço da janela principal. As janelas de ferramentas são encaixadas à esquerda e à direita da janela do aplicativo. A caixa **Início Rápido**, a barra de menus e a barra de ferramentas padrão estão na parte superior. Quando você carrega uma solução ou um projeto, os editores e designers são exibidos no espaço central da janela do aplicativo. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
+
+::: moniker-end
 
 O Visual Studio usa os *projetos* para organizar o código em um aplicativo e as *soluções* para organizar seus projetos. Um projeto contém todas as opções, configurações e regras usadas para criar seus aplicativos. Ele também gerencia a relação entre todos os arquivos de projeto e todos os arquivos externos. Para criar seu aplicativo, primeiro, crie um novo projeto e uma nova solução.
 
@@ -156,5 +166,5 @@ Parabéns por concluir este guia de início rápido!
 ## <a name="see-also"></a>Consulte também
 
 - [Usando o IDE do Visual Studio para desenvolvimento de área de trabalho do C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Passo a passo: Criar um aplicativo simples com o C# ou o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Passo a passo: Criar um aplicativo simples com o C# ou o Visual Basic](../get-started/csharp/tutorial-wpf.md)
 - [Dicas de produtividade para o Visual Studio](../ide/productivity-tips-for-visual-studio.md)

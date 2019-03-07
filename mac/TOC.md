@@ -1,7 +1,7 @@
-# [Introdução do Visual Studio para Mac](index.md)
-# [Tour do IDE](ide-tour.md)
+# [Visual Studio para Mac](index.yml)
+# [Tour do IDE](/visualstudio/mac/ide-tour/)
 
-# [Instalação](installation.md)
+# [Instalação](/visualstudio/mac/installation/)
 ## [Instalar e usar por trás de um firewall ou proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalar uma versão prévia](install-preview.md)
 ## [Atualizar](update.md)
@@ -9,7 +9,7 @@
 
 # [Contas de Usuário](user-accounts.md)
 ## [Assinatura](signing-in.md)
-## [Habilitar Assinatura](activation.md)
+## [Habilitar Assinatura](enable-subscription.md)
 
 # [Personalizando o IDE](customizing-the-ide.md)
 ## [Estendendo o Visual Studio para Mac](extending-visual-studio-mac.md)
@@ -22,7 +22,7 @@
 ## [Gerenciando referências em um projeto](managing-references-in-a-project.md)
 ### [Passo a passo – incluindo um pacote do NuGet em seu projeto](nuget-walkthrough.md)
 ## [Gerenciamento de Recursos do Aplicativo](managing-app-resources.md)
-## [Como abrir várias soluções ou instâncias](open-multiple-solutions.md)
+## [Como: Abrir várias soluções ou instâncias](open-multiple-solutions.md)
 
 # [Editor de Origem](source-editor.md)
 ## [Refatoração](refactoring.md)
@@ -41,6 +41,7 @@
 # [Compilando e criando](compiling-and-building.md)
 ## [Compilando e limpando projetos e soluções](building-and-cleaning-projects-and-solutions.md)
 ## [Compilar Ações](build-actions.md)
+## [Como: Definir vários projetos de inicialização](set-startup-projects.md)
 ## [Personalizando o sistema de build](customizing-build-system.md)
 ## [Configurações](configurations.md)
 ### [Criar e editar configurações](create-and-edit-configurations.md)
@@ -52,10 +53,14 @@
 ## [Configurando um Repositório do Subversion](set-up-subversion-repository.md)
 ## [Trabalhando com o Subversion](working-with-subversion.md)
 
+# [Implantação do aplicativo Web](web-app-deployment.md)
+## [Publicar no Serviço de Aplicativo do Azure](publish-app-svc.md)
+## [Publicar na pasta](publish-folder.md)
+
 # [Cargas de trabalho](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [Javascript](javascript.md)
+### [JavaScript e TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Introdução ao Azure Functions](azure-functions.md)
 ### [Tutorial: Azure Functions](azure-functions-lab.md)
@@ -65,6 +70,7 @@
 ### [Usando ferramentas do Unity](using-vsmac-tools-unity.md)
 ### [Usando o .NET 4.x no Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Log de Alterações](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Aplicativos móveis com Xamarin](/visualstudio/mac/xamarin)
 
 # [Acessibilidade](accessibility.md)
 

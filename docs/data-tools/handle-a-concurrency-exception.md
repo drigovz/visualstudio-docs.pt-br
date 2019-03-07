@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388732"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927211"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 
@@ -208,7 +206,7 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
 8. No primeiro registro no formulário (**ALFKI**), altere **ContactName** para **Maria Anders1**.
 
-9. Selecione o **salvar** botão.
+9. Selecione o botão **Salvar**.
 
      O erro de simultaneidade é gerado e a caixa de mensagem é exibida.
 

@@ -1,22 +1,20 @@
 ---
 title: Noções básicas de teste de unidade
-ms.date: 2016-01-07
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+ms.date: 01/07/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053163"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796823"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -26,7 +24,7 @@ O teste de unidade tem o maior efeito sobre a qualidade do código quando é par
 
 Você pode gerar os projetos de teste e métodos de teste rapidamente do seu código ou criar os testes manualmente conforme a necessidade. Quando você usar o IntelliTest para explorar seu código .NET, poderá gerar dados de teste e um conjunto de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Descubra como [gerar testes de unidade para seu código](generate-unit-tests-for-your-code-with-intellitest.md).
 
-O Gerenciador de Testes também pode executar estruturas de teste de unidade de código aberto e de terceiros que implementaram interfaces de complemento do Gerenciador de Testes. Você pode adicionar muitas dessas estruturas por meio do gerenciador de extensões do Visual Studio e da galeria do Visual Studio. Confira [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
+O Gerenciador de Testes também pode executar estruturas de teste de unidade de código aberto e de terceiros que implementaram interfaces de complemento do Gerenciador de Testes. Você pode adicionar muitas dessas estruturas por meio do gerenciador de extensões do Visual Studio e da galeria do Visual Studio. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Introdução
 
@@ -84,7 +82,7 @@ Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de tes
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Gerar o projeto de teste de unidade e os stubs de teste de unidade
 
-1. Na janela do editor de código, clique com botão direito do mouse e escolha **Criar Testes de Unidade** no menu de contexto.
+1. Na janela do editor de código, clique com o botão direito do mouse e escolha **Criar Testes de Unidade** no menu do clique com o botão direito.
 
     ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png)
 
@@ -219,7 +217,7 @@ A barra de ferramentas do **Gerenciador de Testes** ajuda você a descobrir, org
 
 ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute_toolbar.png)
 
-Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados. Depois que você executa um conjunto de testes, um resumo da execução de teste é exibido na parte inferior da janela **Gerenciador de Testes**. Selecione um teste para exibir seus detalhes no painel inferior. Escolha **Abrir Teste** no menu de contexto (teclado: **F12**) para exibir o código-fonte do teste selecionado.
+Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados. Depois que você executa um conjunto de testes, um resumo da execução de teste é exibido na parte inferior da janela **Gerenciador de Testes**. Selecione um teste para exibir seus detalhes no painel inferior. Escolha **Abrir Teste** no menu do clique com o botão direito (teclado: **F12**) para exibir o código-fonte do teste selecionado.
 
 Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
@@ -257,7 +255,7 @@ Para obter mais informações, consulte [Executar testes de unidade com o Gerenc
 
 2.  No **Gerenciador de Testes**, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu de atalho.
 
-Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugging-in-visual-studio.md).
+Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugger-feature-tour.md).
 
 **P: Se eu estiver usando o TDD, como fazer para gerar o código em meus testes?**
 

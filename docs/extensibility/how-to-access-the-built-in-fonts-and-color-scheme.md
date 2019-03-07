@@ -1,9 +1,6 @@
 ---
-title: 'Como: acessar o esquema de cores e fontes internas | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Acessar as fontes internas e o esquema de cores | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -12,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911246"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969084"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Como: acessar as fontes internas e ccheme de cores
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Como: Acessar as fontes internas e ccheme de cores
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de fontes e cores que está associado com a janela do editor. Você pode acessar esse esquema por meio de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
 
  Para usar o esquema de cores e fontes internas, um VSPackage deve:

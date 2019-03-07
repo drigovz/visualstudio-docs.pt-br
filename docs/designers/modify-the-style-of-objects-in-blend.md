@@ -1,20 +1,18 @@
 ---
 title: Modificar o estilo de objetos no Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917196"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955304"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar o estilo de objetos no Blend
 
@@ -44,13 +42,13 @@ Crie um pincel visual a partir de um controle, como um botão. As ilustrações 
 
 ![Pincel visual](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Pincel visual lado a lado](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Estilos e modelos: criar uma aparência consistente entre os controles
+## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Estilos e modelos: Criar uma aparência consistente entre os controles
 
 Você pode criar uma vez a aparência e o comportamento de um controle uma vez e aplicar esse design a outros controles, para que você não precise mantê-los individualmente.
 
-**Você deve usar um estilo?** : se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. É possível modificar um controle, mesmo após aplicar um estilo a ele.
+**Você deve usar um estilo?**: Se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. É possível modificar um controle, mesmo após aplicar um estilo a ele.
 
-**Você deve usar um modelo?**: se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um modelo a ele.
+**Você deve usar um modelo?**: Se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um modelo a ele.
 
 ### <a name="create-a-template-or-style"></a>Criar um modelo ou estilo
 
@@ -94,7 +92,7 @@ Os controles podem ter aparências diferentes com base nas interações do usuá
 
 ![Mouse sobre o estado](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Assista a um vídeo curto:** ![botão Reproduzir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gerenciar o estado dos controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Assista a um breve vídeo:** ![Botão Reproduzir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gerenciar o estado dos controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Recursos: Criar cores, estilos e modelos e reutilizá-los posteriormente
 

@@ -1,8 +1,6 @@
 ---
-title: 'CA1816: chamar GC.SuppressFinalize corretamente'
+title: 'CA1816: Chamar GC.SuppressFinalize corretamente'
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1816
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c874aac5d84d45159ef7d169ab2749269fa0905
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2c14f9ed8803c02d1570ac2a3dee82fbdfca5f01
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174225"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948531"
 ---
-# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: chamar GC.SuppressFinalize corretamente
+# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Chamar GC.SuppressFinalize corretamente
 
 |||
 |-|-|
@@ -81,8 +79,8 @@ Este exemplo mostra um método que corretamente chamadas <xref:System.GC.Suppres
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA2215: métodos Dispose devem chamar o descarte da classe base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
-- [CA2216: os tipos descartáveis devem declarar o finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+- [CA2215: Métodos Dispose devem chamar o descarte da classe base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+- [CA2216: Os tipos descartáveis devem declarar o finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,22 +1,20 @@
 ---
 title: Calcular métricas de código
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056766"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917721"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas de código
 
@@ -24,7 +22,7 @@ O aumento da complexidade de aplicativos de software moderno também aumenta a d
 
 Os desenvolvedores podem usar o Visual Studio para gerar dados de métricas de código que medem a complexidade e facilidade de manutenção de seu código gerenciado. Dados de métricas de código podem ser gerados para uma solução inteira ou um único projeto.
 
-Para obter informações sobre como gerar dados de métricas de código no Visual Studio, consulte [como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md).
+Para obter informações sobre como gerar dados de métricas de código no Visual Studio, consulte [como: Gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Medições de software
 
@@ -57,5 +55,5 @@ Código gerado para o Windows Forms não é ignorado, porque ele é o código qu
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Como: Gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
 - [Use a janela de resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)

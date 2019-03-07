@@ -1,23 +1,21 @@
 ---
-title: Como exportar uma textura para uso com aplicativos Direct2D ou Javascipt
+title: 'Como: Exportar uma textura para ser usada com aplicativos Direct2D ou Javascript'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c748e8b380da906ca9fb8fc8588efa6ffcc44980
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826350"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939996"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Como exportar uma textura a ser usada com aplicativos Direct2D ou Javascipt
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Como: Exportar uma textura para ser usada com aplicativos Direct2D ou Javascript
 
 O Pipeline de conteúdo de imagem pode gerar texturas que são compatíveis com as convenções de renderização internas do Direct2D. Texturas desse tipo são adequadas para serem usadas em aplicativos que usam Direct2D e em aplicativos UWP criados usando JavaScript.
 
@@ -37,7 +35,7 @@ Este documento demonstra essas atividades:
 
 Texturas que são usadas no contexto do Direct2D devem estar em conformidade com as seguintes convenções de renderização internas do Direct2D:
 
--   O Direct2D implementa a transparência e a translucência usando alfa pré-multiplicado. Texturas usadas com Direct2D devem conter alfa pré-multiplicado, mesmo se a textura não usar transparência ou translucência. Para obter mais informações sobre alfa pré-multiplicado, confira [Como exportar uma textura que tem alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+-   O Direct2D implementa a transparência e a translucência usando alfa pré-multiplicado. Texturas usadas com Direct2D devem conter alfa pré-multiplicado, mesmo se a textura não usar transparência ou translucência. Para obter mais informações sobre alfa pré-multiplicado, confira [Como: Exportar uma textura que tenha o alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
 -   A textura precisa ser fornecida no formato *.dds*, usando um desses formatos de compactação em bloco:
 
@@ -51,7 +49,7 @@ Texturas que são usadas no contexto do Direct2D devem estar em conformidade com
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Para criar uma textura compatível com as convenções de renderização do Direct2D
 
-1. Comece com uma textura básica. Carregue uma imagem existente ou crie uma conforme a descrição em [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para dar suporte à compactação em bloco no formato *.dds*, especifique uma textura que tenha uma largura e altura que sejam múltiplos de quatro em tamanho, por exemplo, 100 x 100, 128 x 128 ou 256 x 192. Como não há suporte para mipmap, a textura não precisa ser quadrada nem ser uma potência de dois de tamanho.
+1. Comece com uma textura básica. Carregue um arquivo de imagem existente ou crie um, conforme descrito em [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para dar suporte à compactação em bloco no formato *.dds*, especifique uma textura que tenha uma largura e altura que sejam múltiplos de quatro em tamanho, por exemplo, 100 x 100, 128 x 128 ou 256 x 192. Como não há suporte para mipmap, a textura não precisa ser quadrada nem ser uma potência de dois de tamanho.
 
 2. Configure o arquivo de textura para que ele seja processado pelo Pipeline de conteúdo de imagem. No **Gerenciador de Soluções**, abra o menu de atalho do arquivo de textura que acabou de criar e selecione **Propriedades**. Na página **Propriedades de Configuração** > **Geral**, defina a propriedade **Tipo de Item** como **Pipeline de Conteúdo de Imagem**. Verifique se a propriedade **Conteúdo** está definida como **Sim** e se **Excluir do Build** está definido como **Não** e, em seguida, escolha o botão **Aplicar**. A página de propriedades de configuração **Pipeline de Conteúdo de Imagem** é exibida.
 

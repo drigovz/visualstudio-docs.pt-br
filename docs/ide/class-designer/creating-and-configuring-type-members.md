@@ -1,8 +1,6 @@
 ---
 title: Criando e configurando membros de tipo (Designer de Classe)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
@@ -28,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938793"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956851"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Criar e configurar membros de tipo no Designer de Classe
 
@@ -59,8 +57,8 @@ ms.locfileid: "49938793"
 
 |Tarefa|Conteúdo de suporte|
 |----------| - |
-|**Introdução:** antes de criar e configurar membros de tipo, você precisa abrir a janela **Detalhes da Classe**.|- [Abrir a janela Detalhes da Classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Observações sobre uso de detalhes da classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Exibição de informações somente leitura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Criar e modificar membros de tipo:** você pode criar membros, modificar membros e adicionar parâmetros a um método usando a janela **Detalhes da Classe**.|- [Criar membros](creating-and-configuring-type-members.md#create-members)<br />- [Modificar membros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />- [Adicionar parâmetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Introdução:** Antes de criar e configurar membros de tipo, você precisará abrir a Janela **Detalhes da Classe**.|- [Abrir a janela Detalhes da Classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Observações sobre uso de detalhes da classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Exibição de informações somente leitura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Criar e modificar membros de tipo:** Crie membros, modifique-os e adicione parâmetros a um método usando a Janela **Detalhes da Classe**.|- [Criar membros](creating-and-configuring-type-members.md#create-members)<br />- [Modificar membros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />- [Adicionar parâmetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Abra a janela Detalhes da Classe
 
@@ -124,7 +122,7 @@ Você pode criar um membro usando qualquer uma das ferramentas a seguir:
 
 4.  Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
 
-     **Observação:** você também pode usar atalhos de teclado para criar membros. Para obter mais informações, confira [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+     **Observação:** Use também atalhos de teclado para criar membros. Para obter mais informações, confira [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modificar membros de tipo
 
@@ -209,7 +207,7 @@ As linhas de parâmetro contém os seguintes itens:
 
      A última linha de parâmetro de um membro contém o texto **<add parameter>** na célula **Nome**. Clicar nessa célula permite criar um novo parâmetro. Para obter mais informações, consulte [Para adicionar um parâmetro a um método](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na janela **Detalhes da Classe**: **Nome**, **Tipo**, **Modificador**, **Resumo** e também a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.
+A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na Janela **Detalhes da Classe**: **Nome**, **Tipo**, **Modificador**, **Resumo**, bem como a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.
 
 > [!NOTE]
 > Para adicionar um parâmetro a um representante, consulte [Criar membros](creating-and-configuring-type-members.md#create-members).
@@ -320,5 +318,5 @@ Não é possível editar código C++ nativo usando o Designer de Classe ou a jan
 
 ## <a name="see-also"></a>Consulte também
 
-- [Exibindo tipos e relações](viewing-types-and-relationships.md)
+- [Exibindo tipos e relações](designing-and-viewing-classes-and-types.md)
 - [Refatorando classes e tipos](refactoring-classes-and-types.md)

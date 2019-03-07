@@ -1,22 +1,19 @@
 ---
 title: SDK do Microsoft Help Viewer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000341"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323926"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 
@@ -32,7 +29,8 @@ Este artigo contém as seguintes tarefas para integradores do Visual Studio Help
 
 -   Recursos adicionais
 
-### <a name="creating-a-topic-f1-support"></a>Criação de um tópico (suporte a F1)
+## <a name="create-a-topic-f1-support"></a>Criar um tópico (suporte a F1)
+
 Esta seção fornece uma visão geral dos componentes de um tópico apresentado, requisitos de tópico, uma breve descrição de como criar um tópico (incluindo os requisitos de suporte F1) e, finalmente, um tópico de exemplo com seu resultado renderizado.
 
 **Visão geral de tópico do Visualizador de ajuda**
@@ -53,7 +51,7 @@ Pacote de identidade visual do Visual Studio com suporte a controles:
 
 -   Links
 
--   Trecho de código
+-   CodeSnippet
 
 -   CollapsibleArea
 
@@ -63,13 +61,13 @@ Pacote de identidade visual do Visual Studio com suporte a controles:
 
 Suporte para cadeias de caracteres de idioma (não diferencia maiusculas de minúsculas):
 
--   JavaScript
+-   javascript
 
 -   CSharp ou c#
 
 -   cplusplus ou visualc + + ou c + +
 
--   JScript
+-   jscript
 
 -   Visual Basic ou do vb
 
@@ -94,17 +92,17 @@ Criar um novo documento XHTML chamado ContosoTopic4.htm e incluir a marca de tí
 
 ```
 
-Em seguida, adicione dados para definir como o tópico é para ser apresentado (próprio da marca ou não), como fazer referência a este tópico para F1, em que este tópico existe dentro do Sumário, sua ID (para a referência de link por outros tópicos), etc.  Consulte a tabela "Metadados de conteúdo" abaixo para obter uma lista completa de metadados com suporte.
+Em seguida, adicione dados para definir como o tópico é para ser apresentado (próprio da marca ou não), como fazer referência a este tópico para F1, em que este tópico existe dentro do Sumário, sua ID (para a referência de link por outros tópicos), etc. Consulte a tabela "Metadados de conteúdo" abaixo para obter uma lista completa de metadados com suporte.
 
 -   Nesse caso, usaremos nosso próprio pacote de marcas, uma variante do pacote de identidade visual do Visual Studio Help Viewer.
 
--   Adicionar o valor e nome de meta F1 (conteúdo de "Microsoft.Help.F1" = "ContosoTopic4") que corresponderá o valor de F1 fornecido no conjunto de propriedades do IDE.  (Consulte a seção de suporte de F1 para obter mais informações).   Esse é o valor que corresponde a F1 chamar de dentro do IDE para exibir este tópico quando F1 é escolhido no IDE.
+-   Adicionar o valor e nome de meta F1 (conteúdo de "Microsoft.Help.F1" = "ContosoTopic4") que corresponderá o valor de F1 fornecido no conjunto de propriedades do IDE. (Consulte a seção de suporte de F1 para obter mais informações). Esse é o valor que corresponde a F1 chamar de dentro do IDE para exibir este tópico quando F1 é escolhido no IDE.
 
--   Adicione a ID do tópico. Isso é a cadeia de caracteres que é usada por outros tópicos para vincular a esse tópico.  É a identificação de Visualizador de ajuda para este tópico.
+-   Adicione a ID do tópico. Isso é a cadeia de caracteres que é usada por outros tópicos para vincular a esse tópico. É a identificação de Visualizador de ajuda para este tópico.
 
 -   Para o Sumário, adicione nó do pai deste tópico para definir no qual este nó de Sumário do tópico serão exibidos.
 
--   Para o Sumário, adicione a ordem de nó deste tópico. Quando o nó pai tem um número de nós filhos, defina na ordem de nós filho local deste tópico. Por exemplo, este tópico é o número 4 de 4 tópicos de filho.)
+-   Para o Sumário, adicione a ordem de nó deste tópico. Quando o nó pai tem `n` número de filhos definir nós, na ordem de nós filho local deste tópico. Por exemplo, este tópico é o número 4 de 4 tópicos de filho.
 
 Seção de metadados de exemplo:
 
@@ -127,7 +125,6 @@ Seção de metadados de exemplo:
 
 </body>
 </html>
-
 ```
 
 **O corpo do tópico**
@@ -142,12 +139,12 @@ O corpo (sem incluir o cabeçalho e rodapé) do tópico conterá links da págin
 
 4.  Adicione um trecho de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Adicionar texto do código de idioma específico: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que `devLangnu=` permite que você insira outras linguagens. Por exemplo, `devLangnu="Fortran"` exibe Fortran quando o trecho de código DisplayLanguage = Fortran
+5.  Adicione o texto do código de idioma específico:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que `devLangnu=` permite que você insira outras linguagens. Por exemplo, `devLangnu="Fortran"` exibe Fortran quando o trecho de código DisplayLanguage = Fortran
 
-6.  Adicione links de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  Adicione links de página: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Observação: para sem suporte novo "Idioma de exibição" (exemplo, F#, Cobol, Fortran) colorização de código no trecho de código poderá ser monocromático.
+> Observação: para sem suporte novo "Idioma de exibição" (exemplo, F#, Cobol, Fortran) colorização de código no trecho de código poderá ser monocromático.
 
 **Tópico Visualizador da Ajuda do exemplo** o código ilustra como definir metadados, um trecho de código, uma área recolhível e específicos do idioma de texto.
 
@@ -260,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -283,13 +280,13 @@ F1 diagrama de fluxo:
 
 Quando a fonte de conteúdo de Ajuda do Visualizador da Ajuda padrão é definida como on-line (lançamento em navegador):
 
--   Recursos do Visual Studio Partner (VSP) emitem um valor para o recipiente F1 (prefix.keyword de recipiente da propriedade e a URL on-line para o prefixo encontrado no registro): F1 envia uma URL de VSP + parâmetros para o navegador.
+-   Recursos do Visual Studio Partner (VSP) emitem um valor para o recipiente F1 (prefix.keyword de recipiente da propriedade e a URL on-line para o prefixo encontrado no registro): F1 envia uma URL de VSP + parâmetros no navegador.
 
--   Recursos do Visual Studio (editor de linguagem, itens de menu específico do Visual Studio, etc.): F1 envia uma URL do Visual Studio para o navegador.
+-   Recursos do Visual Studio (editor de linguagem, itens de menu específico do Visual Studio, etc.):  F1 envia uma URL do Visual Studio para o navegador.
 
 Quando a fonte de conteúdo de Ajuda do Visualizador da Ajuda padrão é definida como a Ajuda local (Iniciar no Help Viewer):
 
--   Recursos VSP onde a palavra-chave correspondem entre o recipiente de propriedades de F1 e o índice de repositório local (ou seja, o prefix.keyword de recipiente da propriedade = valor localizado no índice de repositório local): F1 renderiza o tópico no Visualizador da Ajuda.
+-   Recursos VSP onde a palavra-chave correspondem entre o recipiente de propriedades de F1 e o índice de repositório local (ou seja, o prefix.keyword de recipiente da propriedade = valor localizado no índice de repositório local):  F1 renderiza o tópico no Visualizador da Ajuda.
 
 -   Recursos do Visual Studio (nenhuma opção para VSP substituir o recipiente de emissores de recursos do Visual Studio): F1 renderiza um tópico do Visual Studio no Visualizador da Ajuda.
 
@@ -301,31 +298,31 @@ Defina os seguintes valores de registro para habilitar o F1 Fallback para conte�
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-        "VendorContent" = DWORD: 00000001
+        "VendorContent"=dword:00000001
 
    -   Para sistemas operacionais de 64 bits:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-        "VendorContent" = DWORD: 00000001
+        "VendorContent"=dword:00000001
 
 2. Registre o namespace de parceiro na chave do registro ajuda 2.3:
 
    - Para sistemas operacionais de 32 bits:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\< namespace\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
-      "local"="offline"
+      "location"="offline"
 
    - Para sistemas operacionais de 64 bits:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\< namespace\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
-      "local"="offline"
+      "location"="offline"
 
 **Namespace nativo de análise de base**
 
-Para ativar a análise de um namespace base nativo, no registro de adicionar um novo DWORD pelo nome do: BaseNativeNamespaces e defina seu valor como 1 (sob a chave de catálogo que desejam dar suporte).  Por exemplo, se você quiser usar o catálogo do Visual Studio, pode adicionar a chave para o caminho:
+Para ativar o namespace nativo de base de análise, no registro, adicione um novo DWORD pelo nome do: BaseNativeNamespaces e defina seu valor como 1 (sob a chave de catálogo que desejam dar suporte).  Por exemplo, se você quiser usar o catálogo do Visual Studio, pode adicionar a chave para o caminho:
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,9 +340,21 @@ Um usuário possa registrar CustomLibrary como o namespace sob a seção de parc
 
 Adicione a seguinte chave do registro e o valor:
 
-Tecla de Ajuda do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: saída de depuração de exibição do valor de varejo: Sim
+::: moniker range="vs-2017"
 
-No IDE, sob o item de menu de Ajuda, selecione "Depurar contexto de Ajuda"
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
+
+::: moniker-end
+
+Valor: Saída de depuração de exibição nos dados de varejo: SIM
+
+No IDE, sob o item de menu de Ajuda, selecione **contexto de ajudar a depurar**.
 
 **Metadados de conteúdo**
 
@@ -357,24 +366,25 @@ A tabela a seguir, qualquer cadeia de caracteres que aparece entre colchetes é 
 | \< conteúdo de meta name="Microsoft.Help.Locale" = "[código do idioma]" / > | Define uma localidade para este tópico. Se essa marca é usada em um tópico, ele deve ser usado apenas uma vez e deve ser inserido acima quaisquer outras marcas do Microsoft Help. Se essa marca não for usada, o texto do corpo do tópico é indexado usando o separador de palavras que está associado com a localidade do produto, se for especificado; Caso contrário, en-us é usado o separador de palavras. Essa marca é compatível com ISOC RFC 4646. Para garantir que o Microsoft Help funciona corretamente, use essa propriedade em vez do atributo de idioma geral. |
 | \< conteúdo de meta name="Microsoft.Help.TopicLocale" = "[código do idioma]" / > | Define uma localidade para este tópico quando outras localidades também são usadas. Se essa marca é usada em um tópico, ele deve ser usado apenas uma vez. Use essa marca quando o catálogo contém o conteúdo em mais de um idioma. Vários tópicos em um catálogo podem ter a mesma ID, mas cada um deve especificar um TopicLocale exclusivo. O tópico que especifica um TopicLocale que corresponde à localidade do catálogo é o tópico que é exibido no sumário. No entanto, todas as versões de idioma do tópico são exibidas nos resultados da pesquisa. |
 | \< título > [Title] \< /title > | Especifica o título deste tópico. Essa marca é obrigatório e deve ser usada apenas uma vez em um tópico. Se o corpo do tópico não contém um título \<div > seção, esse título é exibida no tópico e no sumário. |
-| \< nome da meta = "Microsoft.Help.Keywords" conteúdo = "[aKeywordPhrase]" / > | Especifica o texto de um link que é exibido no painel de índice do Visualizador da Ajuda. Quando o link é clicado, o tópico é exibido. Você pode especificar várias palavras-chave de índice para um tópico, ou você pode omitir essa marca se não quiser links deste tópico para aparecer no índice. "K" palavras-chave de versões anteriores da Ajuda podem ser convertidas para essa propriedade. |
+| \< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/> | Especifica o texto de um link que é exibido no painel de índice do Visualizador da Ajuda. Quando o link é clicado, o tópico é exibido. Você pode especificar várias palavras-chave de índice para um tópico, ou você pode omitir essa marca se não quiser links deste tópico para aparecer no índice. "K" palavras-chave de versões anteriores da Ajuda podem ser convertidas para essa propriedade. |
 | \< conteúdo de meta name="Microsoft.Help.Id" = "[TopicID]" / > | Define o identificador para este tópico. Essa marca é obrigatório e deve ser usada apenas uma vez em um tópico. A ID deve ser exclusiva entre tópicos no catálogo que têm a mesma configuração de localidade. Em outro tópico, você pode criar um link para este tópico usando esta ID. |
-| \< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ > | Especifica a palavra-chave F1 deste tópico. Você pode especificar várias palavras-chave F1 para um tópico, ou você pode omitir essa marca se você não quiser que este tópico a ser exibido quando um usuário de aplicativo pressiona F1. Normalmente, apenas uma palavra-chave de F1 é especificada para um tópico. Palavras-chave de "F" de versões anteriores da Ajuda podem ser convertidas para essa propriedade. |
-| \< nome da meta = "Descrição" content = "[Descrição do tópico]" / > | Fornece um breve resumo do conteúdo neste tópico. Se essa marca é usada em um tópico, ele deve ser usado apenas uma vez. Esta propriedade é acessada diretamente pela biblioteca de consulta; ele não é armazenado no arquivo de índice. |
+| \< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/> | Especifica a palavra-chave F1 deste tópico. Você pode especificar várias palavras-chave F1 para um tópico, ou você pode omitir essa marca se você não quiser que este tópico a ser exibido quando um usuário de aplicativo pressiona F1. Normalmente, apenas uma palavra-chave de F1 é especificada para um tópico. Palavras-chave de "F" de versões anteriores da Ajuda podem ser convertidas para essa propriedade. |
+| \< meta name="Description" content="[topic description]" /> | Fornece um breve resumo do conteúdo neste tópico. Se essa marca é usada em um tópico, ele deve ser usado apenas uma vez. Esta propriedade é acessada diretamente pela biblioteca de consulta; ele não é armazenado no arquivo de índice. |
 | conteúdo de meta name="Microsoft.Help.TocParent" = "[parent_Id]" / > | Especifica o tópico pai deste tópico no sumário. Essa marca é obrigatório e deve ser usada apenas uma vez em um tópico. O valor é o Microsoft.Help.Id do pai. Um tópico pode ter apenas um local na tabela do conteúdo. "-1" é considerado a ID do tópico para a raiz do Sumário. No [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], essa página é a home page do Visualizador da Ajuda. Isso é o mesmo motivo que podemos adicionar especificamente TocParent =-1 para alguns tópicos para garantir que elas aparecem na parte superior nível. Home page do Help Viewer é uma página do sistema e portanto não podem ser substituídas. Se um VSP tenta adicionar uma página com uma ID de -1, ele pode obter adicionado ao conjunto de conteúdo, mas o Help Viewer sempre usará a página do sistema - início do Help Viewer |
 | \< conteúdo de meta name="Microsoft.Help.TocOrder" = "[número inteiro positivo]" / > | Especifica onde este tópico no sumário aparece em relação a seus tópicos de ponto a ponto. Essa marca é obrigatório e deve ser usada apenas uma vez em um tópico. O valor é um inteiro. Um tópico que especifica um inteiro menor valor aparece acima de um tópico que especifica um valor mais alto de inteiro. |
 | \< conteúdo de meta name="Microsoft.Help.Product" = "[product code]" / > | Especifica o produto descrita neste tópico. Se essa marca é usada em um tópico, ele deve ser usado apenas uma vez. Essas informações também podem ser fornecidas como um parâmetro que é passado para o indexador de Ajuda. |
 | \< conteúdo de meta name="Microsoft.Help.ProductVersion" = "[número de versão]" / > | Especifica a versão do produto descrita neste tópico. Se essa marca é usada em um tópico, ele deve ser usado apenas uma vez. Essas informações também podem ser fornecidas como um parâmetro que é passado para o indexador de Ajuda. |
 | \< conteúdo de meta name="Microsoft.Help.Category" = "[string]" / > | Usado por produtos para identificar subseções de conteúdo. Você pode identificar várias subseções para um tópico, ou você pode omitir essa marca se você não quiser que os links para identificar quaisquer subseções. Essa marca é usada para armazenar os atributos para TargetOS e TargetFrameworkMoniker quando um tópico é convertido de uma versão anterior da Ajuda. O formato do conteúdo é AttributeName:AttributeValue. |
-| \< conteúdo da meta name="Microsoft.Help.TopicVersion ="[número de versão de tópico]"/ > | Especifica a esta versão do tópico quando há várias versões em um catálogo. Porque Microsoft.Help.Id não é garantida para ser exclusivo, essa marca é necessária quando mais de uma versão de um tópico existe em um catálogo, por exemplo, quando um catálogo contém um tópico para o .NET Framework 3.5 e um tópico para o .NET Framework 4 e ambos têm o mesmo Micro reversível. Ajuda. |
+| \< meta name="Microsoft.Help.TopicVersion content="[topic version number]"/> | Especifica a esta versão do tópico quando há várias versões em um catálogo. Porque Microsoft.Help.Id não é garantida para ser exclusivo, essa marca é necessária quando mais de uma versão de um tópico existe em um catálogo, por exemplo, quando um catálogo contém um tópico para o .NET Framework 3.5 e um tópico para o .NET Framework 4 e ambos têm o mesmo Micro reversível. Ajuda. |
 | \< nome da meta = "SelfBranded" content = "[TRUE ou FALSE]" / > | Especifica se este tópico usa o pacote de marcas de inicialização do Gerenciador de biblioteca de Ajuda ou um pacote de marcas é específico para o tópico. Essa marca deve ser verdadeiro ou falso. Se for TRUE, em seguida, o pacote de marcas para o tópico associado substitui o pacote de marcas é definido quando inicia o Help Library Manager para que o tópico é renderizado conforme o esperado, mesmo se for diferente do processamento de outros tipos de conteúdo. Se for FALSE, o tópico atual é renderizado de acordo com o pacote de marcas é definido quando o Help Library Manager é iniciado. Por padrão, o Help Library Manager presume Self identidade visual seja false, a menos que a variável SelfBranded é declarada como TRUE; Portanto, você não precisa declarar \<nome meta = "SelfBranded" content = "Falso" / >. |
 
-### <a name="creating-a-branding-package"></a>Criando um pacote de marcas
+## <a name="create-a-branding-package"></a>Criar um pacote de marcas
+
 A versão do Visual Studio abrange um número de diferentes produtos do Visual Studio, incluindo os shells integrados e isolado para parceiros do Visual Studio.  Cada um desses produtos requer um certo grau de conteúdo da Ajuda baseado em tópico exclusivo para o produto, o suporte de identidade visual.  Por exemplo, tópicos do Visual Studio precisam ter uma apresentação consistentes de marcas, enquanto SQL Studio, que encapsula o Shell do ISO, requer sua própria exclusivo ajuda conteúdo de identidade visual para cada tópico.  Um parceiro de Shell integrado pode querer seus tópicos da Ajuda para estar dentro do pai do conteúdo de Ajuda do produto Visual Studio enquanto mantém seu próprio tópico identidade visual.
 
 Identidade visual de pacotes é instalados pelo produto que contém o Visualizador da Ajuda.  Produtos do Visual Studio:
 
--   Um pacote de marcas de fallback (Branding_\<localidade >. mshc) está instalado na raiz do aplicativo de Ajuda do visualizador 2.3 (exemplo: C:\Program Files (x86) \Microsoft Help Viewer\v2.3), o pacote de idiomas do Visualizador da Ajuda.  Isso é usado para casos em que o produto identidade visual do pacote não está instalado (nenhum conteúdo foi instalado) ou em que o pacote de marcas instalado está corrompido.  Os elementos do Visual Studio (logotipo e comentários) são ignorados quando o pacote de marcas aplicativo raiz fallback é usado.
+-   Um pacote de marcas de fallback (Branding_\<localidade >. mshc) está instalado na raiz do aplicativo de Ajuda do visualizador 2.3 (exemplo: C:\Program arquivos (x86) \Microsoft Help Viewer\v2.3), o pacote de idiomas do Visualizador da Ajuda.  Isso é usado para casos em que o produto identidade visual do pacote não está instalado (nenhum conteúdo foi instalado) ou em que o pacote de marcas instalado está corrompido.  Os elementos do Visual Studio (logotipo e comentários) são ignorados quando o pacote de marcas aplicativo raiz fallback é usado.
 
 -   Quando o conteúdo do Visual Studio é instalado do serviço do pacote de conteúdo, um pacote de marcas também é instalado (para o primeiro cenário de instalação de conteúdo de tempo).  Se houver uma atualização para o pacote de marcas, a atualização é instalada quando a próxima atualização de conteúdo ou uma ação de instalação de pacote adicionais ocorre.
 
@@ -434,8 +444,7 @@ O arquivo Branding.xml contém uma lista de elementos usados para renderizar con
 
 Observação: as variáveis observadas por "{n}" tem dependências de código - remover ou alterar esses valores causará erros e, possivelmente, a falha do aplicativo. Identificadores de localização (exemplo _locID="codesnippet.n") são incluídos no pacote do Visual Studio de identidade visual.
 
-**Branding.XML**
-
+**Branding.xml**
 
 | | |
 | - | - |
@@ -444,7 +453,7 @@ Observação: as variáveis observadas por "{n}" tem dependências de código - 
 | **Elemento** | **Valor** |
 | ExpandText | Expandir |
 | CollapseText | Recolher |
-| Recurso: | **Trecho de código** |
+| Recurso: | **CodeSnippet** |
 | Uso: | Texto de controle de trecho de código.  Observação: Conteúdo do trecho de código com espaço "Não-separável" será alterado para o espaço. |
 | **Elemento** | **Valor** |
 | CopyToClipboard | Copiar para a Área de Transferência |
@@ -513,7 +522,7 @@ Observação: as variáveis observadas por "{n}" tem dependências de código - 
 | HomePageNoBooksInstalled | Nenhum conteúdo foi encontrado no seu computador. |
 | HomePageHelpSettings | Configurações de conteúdo de ajuda |
 | HomePageHelpSettingsText | \<p > sua configuração atual é a Ajuda local. O Visualizador da Ajuda exibe o conteúdo que você instalou em seu computador. \<br / > para alterar a fonte de conteúdo da Ajuda, na barra de menus do Visual Studio, escolha \<span style = "{0}" > Ajuda, definir preferência da Ajuda\</span >.\< br / > \< /p > |
-| Megabytes | MB |
+| MegaByte | MB |
 
 **branding.js**
 
@@ -526,7 +535,7 @@ O arquivo branding.js contém JavaScript usado pelos elementos de identidade vis
 |Obter a linguagem de código do usuário|setUserPreferenceLang|mapeia um índice # para a linguagem de código|
 |Definir e obter valores de cookie|getCookie, setCookie||
 |Membro herdado|changeMembersLabel|Expandir/recolher membro herdado|
-|Quando SelfBranded = False|onLoad|Ler a cadeia de caracteres de consulta para verificar se é uma solicitação de impressão.  Defina todos os codesnippets para se concentrar na guia preferencial do usuário.  Se for uma solicitação de impressão, em seguida, defina isPrinterFriendly como true. Verificação de modo de alto contraste.|
+|When SelfBranded=False|onLoad|Ler a cadeia de caracteres de consulta para verificar se é uma solicitação de impressão.  Defina todos os codesnippets para se concentrar na guia preferencial do usuário.  Se for uma solicitação de impressão, em seguida, defina isPrinterFriendly como true. Verificação de modo de alto contraste.|
 |Trecho de código|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||ChangeTab||
@@ -548,7 +557,7 @@ O arquivo branding.js contém JavaScript usado pelos elementos de identidade vis
 ||captionsOnOff(id)||
 ||toSeconds(t)||
 ||getAllComments(node)||
-||styleRectify (styleName, styleValue)||
+||styleRectify(styleName, styleValue)||
 ||showCC(id)||
 ||SubTitle(ID)||
 
@@ -559,23 +568,23 @@ O pacote de marcas contém um conjunto de arquivos HTM que dão suporte a cenár
 ||||
 |-|-|-|
 |**Arquivo**|**Use**|**Fonte de conteúdo exibido**|
-|HomePage|Essa é uma página que exibe conteúdo atualmente instalado e qualquer outra mensagem apropriada para apresentar ao usuário sobre seu conteúdo.  Este arquivo tem o conteúdo adicional da meta dados atributo "Microsoft.Help.Id" = "-1", que coloca esse conteúdo na parte superior do Sumário conteúdo local.||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, marca \<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, marca \<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, marca \<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Título de seção marca Branding.xml\<HomePageInstalledBooks >, os dados gerados por aplicativo, \<HomePageNoBooksInstalled > quando não há livros estão instalados.|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Título de seção marca Branding.xml \<HomePageHelpSettings >, seção texto \<HomePageHelpSettingsText >.|
+|homepage.htm|Essa é uma página que exibe conteúdo atualmente instalado e qualquer outra mensagem apropriada para apresentar ao usuário sobre seu conteúdo.  Este arquivo tem o conteúdo adicional da meta dados atributo "Microsoft.Help.Id" = "-1", que coloca esse conteúdo na parte superior do Sumário conteúdo local.||
+||<META_HOME_PAGE_TITLE_ADD />|Branding.xml, tag \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.XML, marca \<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml, tag \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Título de seção marca Branding.xml\<HomePageInstalledBooks >, os dados gerados por aplicativo, \<HomePageNoBooksInstalled > quando não há livros estão instalados.|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Título de seção marca Branding.xml \<HomePageHelpSettings >, seção texto \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|Quando há um tópico em conjunto local, mas por algum motivo não pode ser exibido (corrompido de conteúdo).||
-||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, marca \<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, marca \<TopicCorruptedViewOnlineText >|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.XML, marca \<TopicCorruptedTitle >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.XML, marca \<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|Quando um tópico não é encontrado no conteúdo do local definido nem está disponível online||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, marca \<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, marca \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, marca \<TopicNotFoundText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml, tag \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.XML, marca \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml, tag \<TopicNotFoundText>|
 |contentnotinstalled.htm|Quando não há nenhum conteúdo local instalado para o produto.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, marca \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, marca \<ContentNotInstalledDownloadContentText >|
-||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, marca \<ContentNotInstalledText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.xml, tag \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.xml, tag \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml, tag \<ContentNotInstalledText>|
 
 **Arquivos CSS**
 
@@ -606,7 +615,8 @@ Conteúdo do Visual Studio exibe um logotipo do Visual Studio, bem como outros e
 |ccOn.png|Legendas de gráfico||
 |ImageSprite.png|Usado para renderizar a área recolhível|expandido ou recolher gráfico|
 
-### <a name="deploying-a-set-of-topics"></a>Implantar um conjunto de tópicos
+## <a name="deploy-a-set-of-topics"></a>Implantar um conjunto de tópicos
+
 Este é um tutorial rápido e simple para a criação de um conjunto de implantação de conteúdo do Visualizador da Ajuda composto de um arquivo MSHA e o conjunto de cabs ou MSHCs que contém os tópicos. O MSHA é um arquivo XML que descreve um conjunto de cabs ou arquivos MSHC. O Visualizador da Ajuda podem ler o MSHA para obter uma lista de conteúdo (o. CAB ou. Arquivos MSHC) disponíveis para instalação local.
 
 Isso é apenas um livro de instruções que descrevem o esquema XML muito básico para o MSHA de Visualizador de Ajuda.  Há um exemplo de implementação abaixo neste exemplo HelpContentSetup. msha e uma breve visão geral.
@@ -615,7 +625,7 @@ O nome do MSHA, para fins deste primer é HelpContentSetup. msha (o nome do arqu
 
 Observação: no exemplo a implementação abaixo, incluímos o pacote de marcas. Isso é essencial para incluir a fim de obter o necessários elementos de renderização de conteúdo do Visual Studio e comportamentos de conteúdo.
 
-Arquivo HelpContentSetup msha exemplo: (substitua "nome 1 do conjunto de conteúdo" e "nome do conjunto 2" etc. com seus nomes de arquivo de conteúdo.)
+Sample HelpContentSetup.msha file: (Substitua "nome 1 do conjunto de conteúdo" e "nome do conjunto 2" etc. com seus nomes de arquivo de conteúdo.)
 
 ```html
 <html>
@@ -680,14 +690,14 @@ Para obter o pacote de identidade visual do Visual Studio, copie o arquivo de Br
 </div>
 </body>
 </html>
-
 ```
 
 **Resumo**
 
 Usando e estendendo as etapas acima permitirá VSPs implantar seus conjuntos de conteúdo para o Visual Studio Help Viewer.
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Adicionar uma ajuda para o Visual Studio Shell (integrado e isolado)
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Adicionar a Ajuda para o Visual Studio Shell (integrado e isolado)
+
 **Introdução**
 
 Este passo a passo demonstra como incorporar o conteúdo da Ajuda em um aplicativo de Shell do Visual Studio e, em seguida, implantá-lo.
@@ -725,11 +735,11 @@ Defina o repositório de conteúdo no registro. Para o Shell integrado, altere V
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   Chave: Valor de cadeia de caracteres LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   Key: Valor de cadeia de caracteres LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   Chave: Valor de cadeia de caracteres CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] documentação
+   Key: Valor de cadeia de caracteres CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentação
 
 **Criar o projeto**
 
@@ -789,7 +799,7 @@ Para testar isso como se implantado:
 
 6. Criar Catalogtype e adicionar ao repositório de conteúdo (etapa anterior) que contém:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -804,15 +814,15 @@ Para testar isso como se implantado:
 
     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell integrado:
 
-    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-EUA
+    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
-    Chave: Valor de cadeia de caracteres CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] documentação. Para o Shell do ISO, isso é o nome do seu catálogo.
+    Key: Valor de cadeia de caracteres CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentação. Para o Shell do ISO, isso é o nome do seu catálogo.
 
 8. Copie o conteúdo (cabs ou MSHC e MSHA) em uma pasta local.
 
 9. Linha de comando de Shell integrado de exemplo para testar o repositório de conteúdo. Para o Shell do ISO, altere os valores de catálogo e launchingApp conforme apropriado para coincidir com o produto.
 
-     Método de /helpQuery /catalogName VisualStudio15 "C:\Program arquivos (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe" = "página & id = ContosoTopic0" /launchingApp Microsoft VisualStudio, 12.0
+     "C:\Program Files (x86)\Microsoft Help Viewer\v2.3\HlpViewer.exe" /catalogName VisualStudio15 /helpQuery method="page&id=ContosoTopic0" /launchingApp Microsoft,VisualStudio,12.0
 
 10. Inicie o aplicativo da Contoso (da raiz do aplicativo Contoso). No Shell de ISO, escolha o **ajudar** item de menu e altere o **Definir preferência da Ajuda** para **usar a Ajuda Local**.
 
@@ -820,7 +830,7 @@ Para testar isso como se implantado:
 
 12. Dentro do IDE de Contoso, escolha a tecla F1 para testar a funcionalidade de F1.
 
-### <a name="additional-resources"></a>Recursos adicionais
+## <a name="additional-resources"></a>Recursos adicionais
 
 Para a API de tempo de execução, consulte [API de Ajuda do Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 

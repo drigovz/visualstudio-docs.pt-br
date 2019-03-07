@@ -1,8 +1,6 @@
 ---
-title: 'CA1715: os identificadores devem ter o prefixo correto'
+title: 'CA1715: Identificadores devem ter um prefixo correto'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1715
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad2e867b40bd8fc05215e7bb1d905a7d079eecf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 871c97591ebbaea2087273d925613e12f0fe7529
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879825"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923558"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: os identificadores devem ter o prefixo correto
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identificadores devem ter um prefixo correto
 
 |||
 |-|-|
@@ -87,4 +85,4 @@ ms.locfileid: "49879825"
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1722: os identificadores não devem ter prefixo incorreto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+ [CA1722: Identificadores não devem ter prefixo incorreto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

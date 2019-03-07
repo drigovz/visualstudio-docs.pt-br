@@ -2,7 +2,6 @@
 title: Usar arquivos de despejo no depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
@@ -20,23 +19,23 @@ helpviewer_keywords:
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e30f9d29ba3c922d70c8acdf7d4db5d8a1670fd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066948"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693445"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Arquivos de despejo no depurador do Visual Studio
 
-<a name="BKMK_What_is_a_dump_file_"></a> Um *arquivo de despejo* é um instantâneo que mostra o processo que estava em execução e os módulos que foram carregados para um aplicativo em um ponto no tempo. Um despejo com informações de heap também inclui um instantâneo de memória do aplicativo neste ponto. 
+<a name="BKMK_What_is_a_dump_file_"></a> Um *arquivo de despejo* é um instantâneo que mostra o processo que estava em execução e os módulos que foram carregados para um aplicativo em um ponto no tempo. Um despejo com informações de heap também inclui um instantâneo de memória do aplicativo neste ponto.
 
 Abrir um arquivo de despejo com um heap no Visual Studio é algo como parar em um ponto de interrupção em uma sessão de depuração. Embora você não pode continuar a execução, você pode examinar as pilhas, threads e valores de variáveis do aplicativo no momento do despejo.
 
-Despejos de memória são usados principalmente para depurar problemas de máquinas que os desenvolvedores não têm acesso ao. Quando você não pode reproduzir uma falha ou suspensão em seu próprio computador, você pode usar um arquivo de despejo de uma máquina do cliente. Os testadores também criarem despejos para salvar a crash ou dados a serem usados para testar mais de suspensão. 
+Despejos de memória são usados principalmente para depurar problemas de máquinas que os desenvolvedores não têm acesso ao. Quando você não pode reproduzir uma falha ou suspensão em seu próprio computador, você pode usar um arquivo de despejo de uma máquina do cliente. Os testadores também criarem despejos para salvar a crash ou dados a serem usados para testar mais de suspensão.
 
 O depurador do Visual Studio pode salvar arquivos de despejo para código gerenciado ou nativo. Ele pode depurar arquivos de despejo criados pelo Visual Studio ou por outros aplicativos que salvam arquivos na *minidespejo* formato.
 
@@ -56,23 +55,23 @@ O depurador do Visual Studio pode salvar arquivos de despejo para código gerenc
 
 Arquivos de despejo podem ou não ter informações de heap.
 
--   **Arquivos de despejo com heaps** contêm um instantâneo da memória do aplicativo, incluindo os valores das variáveis, no momento do despejo. O Visual Studio também salva os binários de módulos nativos carregados em um arquivo de despejo com um heap, o que pode tornar a depuração muito mais fácil. Visual Studio pode carregar símbolos de um arquivo de despejo com um heap, mesmo se ele não é possível localizar um aplicativo binário. 
+-   **Arquivos de despejo com heaps** contêm um instantâneo da memória do aplicativo, incluindo os valores das variáveis, no momento do despejo. O Visual Studio também salva os binários de módulos nativos carregados em um arquivo de despejo com um heap, o que pode tornar a depuração muito mais fácil. Visual Studio pode carregar símbolos de um arquivo de despejo com um heap, mesmo se ele não é possível localizar um aplicativo binário.
 
 -   **Arquivos de despejo sem heaps** são muito menor do que despejos com heaps, mas o depurador deve carregar os binários de aplicativo para localizar informações de símbolo. Os binários carregados devem corresponder exatamente aqueles em execução durante a criação de despejo. Arquivos de despejo sem heaps salvar os valores das variáveis de pilha apenas.
 
 ##  <a name="BKMK_Create_a_dump_file"></a> Criar um arquivo de despejo
 
-Enquanto você estiver depurando um processo no Visual Studio, você pode salvar um despejo de memória quando o depurador foi interrompido em um ponto de interrupção ou exceção. 
+Enquanto você estiver depurando um processo no Visual Studio, você pode salvar um despejo de memória quando o depurador foi interrompido em um ponto de interrupção ou exceção.
 
 Com o [depuração Just-in-](../debugger/just-in-time-debugging-in-visual-studio.md) habilitado, você pode anexar o depurador do Visual Studio a um processo travado fora do Visual Studio e, em seguida, salve um arquivo de despejo do depurador. Ver [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 **Para salvar um arquivo de despejo:**
 
-1. Enquanto estiver parado em um ponto de interrupção ou um erro durante a depuração, selecione **Debug** > **Salvar despejo como**. 
+1. Enquanto estiver parado em um ponto de interrupção ou um erro durante a depuração, selecione **Debug** > **Salvar despejo como**.
 
 1. No **Salvar despejo como** caixa de diálogo **Salvar como tipo**, selecione **minidespejo** ou **minidespejo com Heap** (o padrão).
 
-1. Procure um caminho, selecione um nome para o arquivo de despejo e, em seguida, selecione **salvar**. 
+1. Procure um caminho, selecione um nome para o arquivo de despejo e, em seguida, selecione **salvar**.
 
 >[!NOTE]
 >Você pode criar arquivos de despejo com qualquer programa que ofereça suporte ao formato de minidespejo do Windows. Por exemplo, o utilitário de linha de comando **Procdump** do [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) pode criar arquivos de despejo de memória do processo com base em gatilhos ou sob demanda. Ver [requisitos e limitações](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) para obter informações sobre como usar outras ferramentas para criar arquivos de despejo.
@@ -100,7 +99,7 @@ Para usar o total de recursos em um arquivo de despejo de depuração Visual Stu
 - O *.exe* e *. PDB* arquivos que correspondem exatamente a versão e compilação dos arquivos na criação de despejo.
 - Arquivos de origem para os módulos relevantes. Se você não encontrar os arquivos de origem, você pode usar a desmontagem dos módulos.
 
-Se o despejo tem dados de heap, o Visual Studio poderá lidar com binários ausentes para alguns módulos, mas deverá ter binários para módulos suficientes de modo a gerar pilhas de chamadas válidas. 
+Se o despejo tem dados de heap, o Visual Studio poderá lidar com binários ausentes para alguns módulos, mas deverá ter binários para módulos suficientes de modo a gerar pilhas de chamadas válidas.
 
 ### <a name="search-paths-for-exe-files"></a>Caminhos de pesquisa para arquivos .exe
 

@@ -1,8 +1,6 @@
 ---
 title: Tarefa MarkupCompilePass1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db623dd06db06a1dfee3e22345564f888431d1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855320"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643048"
 ---
 # <a name="markupcompilepass1-task"></a>Tarefa MarkupCompilePass1
 
@@ -37,7 +35,7 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> converte arquiv
 | `AllGeneratedFiles` | Parâmetro de saída opcional **ITaskItem[]**.<br /><br /> Contém uma lista completa dos arquivos que são gerados pela tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>. |
 | `AlwaysCompileMarkupFilesInSeparateDomain` | Parâmetro **Boolean** opcional.<br /><br /> Especifica se a tarefa deve ser executada em um <xref:System.AppDomain> separado. Se esse parâmetro retorna **false**, a tarefa é executada no mesmo <xref:System.AppDomain> que [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] e é executada mais rapidamente. Se o parâmetro retorna **true**, a tarefa é executada em um segundo <xref:System.AppDomain> que é isolado de [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] e é executada de modo mais lento. |
 | `ApplicationMarkup` | Parâmetro opcional **ITaskItem[]**.<br /><br /> Especifica o nome do arquivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] de definição de aplicativo. |
-| `AssembliesGeneratedDuringBuild` | Parâmetro **String[]** opcional.<br /><br /> Especifica as referências aos assemblies alterados durante o processo de build. Por exemplo, uma solução do Visual Studio pode conter um projeto que faz referência à saída compilada de outro projeto. Nesse caso, a saída compilada do segundo projeto pode ser adicionada ao parâmetro **AssembliesGeneratedDuringBuild**.<br /><br /> Observação: o parâmetro **AssembliesGeneratedDuringBuild** deve conter referências ao conjunto completo de assemblies que são gerados por uma solução de build. |
+| `AssembliesGeneratedDuringBuild` | Parâmetro **String[]** opcional.<br /><br /> Especifica as referências aos assemblies alterados durante o processo de build. Por exemplo, uma solução do Visual Studio pode conter um projeto que faz referência à saída compilada de outro projeto. Nesse caso, a saída compilada do segundo projeto pode ser adicionada ao parâmetro **AssembliesGeneratedDuringBuild**.<br /><br /> Observação: O parâmetro **AssembliesGeneratedDuringBuild** precisa conter referências ao conjunto completo de assemblies que são gerados por uma solução de build. |
 | `AssemblyName` | Parâmetro obrigatório **string**.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto. Por exemplo, se um projeto está gerando um executável [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] cujo nome é *WinExeAssembly.exe*, o parâmetro **AssemblyName** tem um valor de **WinExeAssembly**. |
 | `AssemblyPublicKeyToken` | Parâmetro **String** opcional.<br /><br /> Especifica o token da chave pública para o assembly. |
 | `AssemblyVersion` | Parâmetro **String** opcional.<br /><br /> Especifica o número de versão do assembly. |
@@ -104,11 +102,11 @@ O exemplo a seguir mostra como converter três arquivos [!INCLUDE[TLA2#tla_xaml]
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass1Task">
-    <MarkupCompilePass1 
+    <MarkupCompilePass1
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -123,9 +121,9 @@ O exemplo a seguir mostra como converter três arquivos [!INCLUDE[TLA2#tla_xaml]
 
 ## <a name="see-also"></a>Consulte também
 
-[Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
-[Referência do MSBuild](../msbuild/msbuild-reference.md)  
-[Referência de tarefas do MSBuild](../msbuild/msbuild-task-reference.md)  
-[Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Visão geral dos aplicativos de navegador XAML do WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
+- [Referência do MSBuild](../msbuild/msbuild-reference.md)
+- [Referência de tarefas do MSBuild](../msbuild/msbuild-task-reference.md)
+- [Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Visão geral dos aplicativos de navegador XAML do WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

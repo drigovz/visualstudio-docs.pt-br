@@ -2,7 +2,6 @@
 title: Visão geral da implantação | Microsoft Docs
 ms.custom: seodec18
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -11,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a389fdafb6167fb132578111c7a8b5d02c8495
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068046"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628982"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visão geral da implantação no Visual Studio
 
@@ -122,4 +121,4 @@ Tutoriais:
 - [Implantação no Visual C++](/cpp/ide/deployment-in-visual-cpp)
 - [Implantar aplicativos UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publicar um aplicativo Node.js no Azure usando a Implantação da Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Publicar um aplicativo Python no Serviço de Aplicativo do Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Publicar um aplicativo Python no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

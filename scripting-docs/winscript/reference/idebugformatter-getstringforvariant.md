@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfc31b0fdbf6d1f4a29b1322dc3a3c4015f9c8ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a7b2eefb69435333509c4b9cda986cc75e431f73
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726656"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097442"
 ---
 # <a name="idebugformattergetstringforvariant"></a>IDebugFormatter::GetStringForVariant
-Retorna uma cadeia de caracteres que representa o valor de VARIANTE especificado.  
+Retorna uma cadeia de caracteres que representa o valor de VARIANTE determinado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetStringForVariant(  
    VARIANT*  pvar,  
    ULONG     nRadix,  
@@ -40,10 +40,10 @@ HRESULT GetStringForVariant(
   
 #### <a name="parameters"></a>Parâmetros  
  `pvar`  
- [in] VARIANTE para representar como uma cadeia de caracteres.  
+ [in] VARIANTE para ser representado como uma cadeia de caracteres.  
   
  `nRadix`  
- [in] Base a ser usado para valores numéricos.  
+ [in] Raiz a ser usada para valores numéricos.  
   
  `pbstrValue`  
  [out] Cadeia de caracteres que representa `pvar`.  
@@ -56,7 +56,7 @@ HRESULT GetStringForVariant(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna uma cadeia de caracteres que representa o valor de variante especificado.  
+ Esse método retorna uma cadeia de caracteres que representa o valor variant fornecido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugFormatter](../../winscript/reference/idebugformatter-interface.md)

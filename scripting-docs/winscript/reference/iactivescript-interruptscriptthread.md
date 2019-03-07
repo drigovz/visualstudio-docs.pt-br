@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::InterruptScriptThread | Microsoft Docs
+title: 'IActiveScript:: Interruptscriptthread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad717ee950dda4f0f0d7a14292f0f5f150ab4973
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d20847245e25ec6227bb043df3190a6db5f095d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641846"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088927"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
-Interrompe a execução de um thread em execução do script (um coletor de eventos, a execução imediata ou uma chamada de macro). Esse método pode ser usado para finalizar um script que está preso (por exemplo, em um loop infinito). Ele pode ser chamado de threads não base sem resultando em um texto explicativo de base não a objetos de host ou para o [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) método.  
+Interrompe a execução de um thread em execução do script (um coletor de eventos, uma execução imediata ou uma invocação de macro). Esse método pode ser usado para encerrar um script que está preso (por exemplo, em um loop infinito). Ele pode ser chamado de threads não base sem resultando em um balão não base para objetos de host ou o [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT InterruptScriptThread(  
     SCRIPTTHREADID   stidThread,  // identifier of thread  
     const EXCEPINFO *pexcepinfo,  // receives error information  
@@ -40,12 +40,12 @@ HRESULT InterruptScriptThread(
   
 #### <a name="parameters"></a>Parâmetros  
  `stidThread`  
- [in] Identificador do segmento para interrupção ou um dos seguintes valores de identificador de thread especial:  
+ [in] Identificador do thread para interrupção ou um dos seguintes valores de identificador de thread especial:  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|SCRIPTTHREADID_ALL|Todos os threads. A interrupção é aplicada a todos os métodos de script está em andamento. Observe que, a menos que o chamador solicitou que o script a ser desconectada, o próximo evento de script faz com que o código de script para executar novamente chamando o [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) método com o SCRIPTSTATE_DISCONNECTED ou O sinalizador SCRIPTSTATE_INITIALIZED definido.|  
-|SCRIPTTHREADID_BASE|O thread de base; ou seja, o thread em que o script do mecanismo foi instanciado.|  
+|SCRIPTTHREADID_ALL|Todos os threads. A interrupção é aplicada a todos os métodos de script está em andamento. Observe que, a menos que o chamador solicitou que o script a ser desconectada, o próximo evento com script faz com que o código de script executar novamente com a chamada a [IActiveScript:: Setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) método com o SCRIPTSTATE_DISCONNECTED ou O sinalizador SCRIPTSTATE_INITIALIZED definido.|  
+|SCRIPTTHREADID_BASE|O thread base. ou seja, o thread no qual o script do mecanismo foi instanciado.|  
 |SCRIPTTHREADID_CURRENT|O thread em execução no momento.|  
   
  `pexcepinfo`  
@@ -56,8 +56,8 @@ HRESULT InterruptScriptThread(
   
 |Valor|Significado|  
 |-----------|-------------|  
-|SCRIPTINTERRUPT_DEBUG|Se suportado, insira o depurador do mecanismo de script no ponto atual de execução do script.|  
-|SCRIPTINTERRUPT_RAISEEXCEPTION|Se o suporte para a linguagem do mecanismo de script, permitem que o script de lidar com a exceção. Caso contrário, o método de script será anulado e o código de erro é retornado ao chamador; ou seja, o evento fonte ou macro chamador.|  
+|SCRIPTINTERRUPT_DEBUG|Se houver suporte, insira o depurador do mecanismo de script no ponto de execução de script atual.|  
+|SCRIPTINTERRUPT_RAISEEXCEPTION|Se o suporte para a linguagem do mecanismo de script, permitem que o script de tratar a exceção. Caso contrário, o método de script será anulado e o código de erro é retornado ao chamador; ou seja, o evento fonte ou macro chamador.|  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um dos seguintes valores:  

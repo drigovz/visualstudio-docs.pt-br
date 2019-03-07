@@ -8,16 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459758"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842457"
 ---
 # <a name="installation"></a>Instalação
 
@@ -27,7 +25,7 @@ As Ferramentas do Visual Studio para IA podem ser instaladas nos sistemas operac
 
 Essa extensão funciona com o Visual Studio 2015 e o Visual Studio 2017, Community Edition ou versões posteriores.
 
-Você pode fazer o download das ferramentas do [Visual Studio Marketplace](http://aka.ms/vstoolsforai) ou do Visual Studio:
+Você pode fazer o download das ferramentas do [Visual Studio Marketplace](https://aka.ms/vstoolsforai) ou do Visual Studio:
 
 1. Escolha **Ferramentas** > **Extensões e Atualizações**.
 
@@ -200,21 +198,32 @@ O [PyTorch](http://pytorch.org/) é um pacote em Python que oferece dois recurso
 Para instalar o PyTorch, execute o seguinte comando em um terminal:
 
 - **Windows**
-    - Ainda não há nenhum pacote indicador oficial. Você pode baixar um [pacote Anaconda PyTorch](https://anaconda.org/pytorch/repo?type=all) de terceiros.
-    - Descompacte-o no diretório base, por exemplo, "C:\Users\test\pytorch".
-    - Adicione "C:\Users\test\pytorch\Lib\site-packages" à variável de ambiente %PYTHONPATH%.
+
+   Ainda não há nenhum pacote indicador oficial. Você pode baixar um pacote de terceiros da [Anaconda](https://anaconda.org/pytorch/repo?type=all) ou da [Universidade da Califórnia](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+
+   - Descompacte-o em seu diretório base, por exemplo, *C:\Users\test\pytorch*.
+   - Adicione *C:\Users\test\pytorch\Lib\site-packages* à variável de ambiente %PYTHONPATH%.
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > Os binários macOS não tem suporte para CUDA, instale da fonte se o CUDA for necessário
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > Este pacote único é compatível com GPU e CPU.
 

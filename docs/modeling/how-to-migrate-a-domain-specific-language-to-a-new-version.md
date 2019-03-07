@@ -1,29 +1,27 @@
 ---
-title: Como migrar uma linguagem específica do domínio para uma nova versão
+title: 'Como: Migrar uma Linguagem Específica de Domínio para uma nova versão'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f736a8d5b8e09bbb1c5a894e3f0f450de19fd02f
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bbc7694ca7e2b000392aa18dcd45284560ed84ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967019"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924411"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como migrar uma linguagem específica do domínio para uma nova versão
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como: Migrar uma Linguagem Específica de Domínio para uma nova versão
 Você pode migrar os projetos que definem e usam a linguagem específica de domínio para [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] da versão do [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que foi distribuído com [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
  Uma ferramenta de migração é fornecida como parte do [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. A ferramenta converte as soluções que usam ou definem as ferramentas DSL e projetos do Visual Studio.
 
  Você deve executar a ferramenta de migração explicitamente: ele não seja iniciado automaticamente quando você abre uma solução no Visual Studio. A ferramenta e o documento de diretrizes detalhadas podem ser encontradas no seguinte caminho:
 
- **% Programa Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar seus projetos DSL
  A ferramenta de migração modifica os arquivos de projeto do Visual Studio (**. csproj**) e arquivos de solução (**. sln**).
@@ -42,7 +40,7 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
 
    -   Você pode clicar duas vezes a ferramenta no Windows Explorer (ou Explorador de arquivos) ou iniciar a ferramenta de prompt de comando. A ferramenta é neste local:
 
-        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 2. Escolha uma pasta que contém as soluções e projetos que você deseja converter.
 

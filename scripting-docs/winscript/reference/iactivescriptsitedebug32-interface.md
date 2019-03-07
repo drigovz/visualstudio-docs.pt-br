@@ -1,5 +1,5 @@
 ---
-title: Interface IActiveScriptSiteDebug32 | Microsoft Docs
+title: IActiveScriptSiteDebug32 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,19 +10,19 @@ ms.assetid: 03f42217-303d-46e7-9792-61a5ab95252c
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: a752851aa6afd903747dc58fed79d2bc5b27e3e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e7937311e01274570e34bd639a0dc5f68206a3aa
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725116"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345558"
 ---
-# <a name="iactivescriptsitedebug32-interface"></a>Interface IActiveScriptSiteDebug32
-Hosts inteligentes implementam a `IActiveScriptSiteDebug32` para executar o gerenciamento de documentos e participem de depuração. O `IActiveScriptSite` objeto normalmente fornece uma implementação de `IActiveScriptSiteDebug32` interface. Se isso for feito, chame o `IActiveScriptSite::QueryInterface` método para obter o `IActiveScriptSiteDebug32` interface.  
+# <a name="iactivescriptsitedebug32-interface"></a>IActiveScriptSiteDebug32 Interface
+Hosts inteligentes implementam o `IActiveScriptSiteDebug32` interface para realizar o gerenciamento de documentos e participar de depuração. O `IActiveScriptSite` objeto geralmente fornece uma implementação do `IActiveScriptSiteDebug32` interface. Se isso for feito, chame o `IActiveScriptSite::QueryInterface` método para obter o `IActiveScriptSiteDebug32` interface.  
   
  Além dos métodos herdados de `IUnknown`, o `IActiveScriptSiteDebug32` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  

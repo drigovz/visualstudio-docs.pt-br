@@ -1,14 +1,9 @@
 ---
 title: Gerenciando recursos de aplicativo (.NET) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
 - msvse_settingsdesigner.err.formatvalue
@@ -26,13 +21,13 @@ ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29f32fa59f719af3efab6901596b682c95a5d57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8319e4e71b313e0c4614f720cb371b339c09d391
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784768"
 ---
 # <a name="managing-application-resources-net"></a>Gerenciando recursos de aplicativo (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +41,4 @@ Arquivos de recurso são arquivos que fazem parte de um aplicativo, mas não sã
 ## <a name="working-with-resources"></a>Trabalho com recursos  
  Em um projeto de código gerenciado, abra a janela Propriedades do projeto (clique com botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**, digite **propriedades do projeto** na janela **Início Rápido** ou digite ALT+ENTER na janela **Gerenciador de Soluções**). Selecione a guia **Recursos**. Você poderá adicionar um arquivo .resx se o projeto ainda não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.  
   
- Para saber como trabalhar com recursos em projetos C++, consulte [Como criar um recurso](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716).
-
+ Para saber como trabalhar com recursos em projetos do C++, consulte [como: criar um recurso](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716)

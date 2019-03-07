@@ -1,8 +1,6 @@
 ---
 title: Noções básicas de SAL
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
@@ -10,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a219590c20e2ec2bb77cc3ffa59bb6249cc52dfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917520"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946646"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 
@@ -43,7 +41,7 @@ void * memcpy(
 Você pode dizer que essa função faz? Quando uma função é implementada ou chamada, certas propriedades devem ser mantidas para garantir a exatidão do programa. Apenas observando uma declaração, como o exemplo, você não sabe o que são. Sem anotações de SAL, você teria que se baseiam na documentação ou comentários de código. Aqui está a documentação do MSDN para `memcpy` diz:
 
 > "Contagem de cópias de bytes de origem para dest. Se a origem e destino se sobrepõem, o comportamento de memcpy é indefinido. Use memmove para lidar com regiões sobrepostas.
-> **Observação de segurança:** Certifique-se de que o buffer de destino é o mesmo tamanho ou maior que o buffer de origem. Para obter mais informações, consulte"evitando saturações de Buffer."
+> **Observação de segurança:** Certifique-se de que o buffer de destino seja do mesmo tamanho ou maior que o buffer de origem. Para obter mais informações, consulte"evitando saturações de Buffer."
 
 A documentação contém algumas partes de informações que sugerem que seu código deve manter determinadas propriedades para garantir a exatidão do programa:
 

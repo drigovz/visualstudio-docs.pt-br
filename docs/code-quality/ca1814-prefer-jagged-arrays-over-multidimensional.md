@@ -1,8 +1,6 @@
 ---
-title: 'CA1814: preferir matrizes denteadas em relação às multidimensionais'
+title: 'CA1814: Preferir matrizes denteadas a matrizes multidimensionais'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PreferJaggedArraysOverMultidimensional
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 69210ac7957cf66119c059fc34a9eb4e11a4d0cb
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 6d3dc26964a62c952b9c8d18c710e6163bf8ab08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551875"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955317"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: preferir matrizes denteadas em relação às multidimensionais
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferir matrizes denteadas a matrizes multidimensionais
 
 |||
 |-|-|

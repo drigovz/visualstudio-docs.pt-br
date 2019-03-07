@@ -1,8 +1,6 @@
 ---
 title: Comando Definir Thread Atual
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setcurrentthread
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b02dbc1d22716483acdfd5378316d6297f6b031f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88ede32645c9fc761c476e9f4d45ddf11a7577a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942933"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970732"
 ---
 # <a name="set-current-thread-command"></a>Comando Definir Thread Atual
 Define o thread especificado como o thread atual.

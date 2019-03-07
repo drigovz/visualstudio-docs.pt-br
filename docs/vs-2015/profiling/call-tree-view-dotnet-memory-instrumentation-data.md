@@ -1,27 +1,22 @@
 ---
 title: Modo de exibição de árvore de chamadas – Dados de instrumentação da memória do .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed87363751c18794d9cf4c00e156d75760e0bf8d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dfcee55882ee90af6ed13072a7e557a9c1763ae8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792987"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Modo de exibição de árvore de chamadas – Dados de instrumentação de memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,6 +106,3 @@ O modo de exibição de árvore de chamada dos dados de criação de perfil de a
 |**Tempo Exclusivo Médio do Aplicativo**|O tempo médio exclusivo do aplicativo de todas as chamadas a esta função, quando ela tiver sido chamada pela função pai na árvore de chamadas.|  
 |**Tempo Exclusivo Máximo do Aplicativo**|O tempo máximo exclusivo do aplicativo de todas as chamadas a esta função, quando ela tiver sido chamada pela função pai na árvore de chamadas.|  
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo mínimo exclusivo do aplicativo de todas as chamadas a esta função, quando ela tiver sido chamada pela função pai na árvore de chamadas.|
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: Snippets de código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -12,23 +10,23 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348481"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908446"
 ---
 # <a name="code-snippets"></a>Snippets de código
 
-Snippets de código são pequenos blocos de código reutilizável que podem ser inseridos em um arquivo de código usando um comando de menu de contexto ou uma combinação de teclas de atalho. Eles geralmente contêm os blocos de código mais usados, como `try-finally` ou `if-else`, mas podem ser usados para inserir métodos ou classes inteiras.
+Trechos de código são pequenos blocos de código reutilizável que podem ser inseridos em um arquivo de código usando um comando do menu do clique com o botão direito (menu de contexto) ou uma combinação de teclas de atalho. Eles geralmente contêm os blocos de código mais usados, como `try-finally` ou `if-else`, mas podem ser usados para inserir métodos ou classes inteiras.
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Snippet de código (Visual Studio para Mac)](/visualstudio/mac/snippets).
@@ -62,7 +60,7 @@ finally
 }
 ```
 
-Você pode inserir esse snippet de código clicando em **Inserir Snippet de Código** no menu de contexto da janela de código, em seguida, clicando em **Visual C#**, digitando `tryf` e pressionando **Tab**. Ou, você pode digitar `tryf` e pressionar **Tab** duas vezes.
+Para inserir esse trecho de código, clique em **Inserir Trecho de Código** no menu do clique com o botão direito (menu de contexto) da janela de código; depois, em **Visual C#**, digite `tryf` e, por fim, pressione **Tab**. Ou, você pode digitar `tryf` e pressionar **Tab** duas vezes.
 
 Um exemplo de um snippet “envolver com”: em C++, o atalho `if` pode ser usado como um snippet de inserção ou um snippet “envolver com”. Se você selecionar uma linha de código (por exemplo `return FALSE;`) e, em seguida, escolher **Envolver Com** > **if**, o snippet de código será expandido na linha:
 
@@ -99,8 +97,8 @@ Se você alterar `newPropertyValue` para `m_property`, cada instância de `newPr
 
 ## <a name="see-also"></a>Consulte também
 
-- [Instruções passo a passo: criando um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
-- [Como distribuir snippets de código](../ide/how-to-distribute-code-snippets.md)
+- [Passo a passo: Criando um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Como: Distribuir snippets de código](../ide/how-to-distribute-code-snippets.md)
 - [Melhores práticas para usar snippets de código](../ide/best-practices-for-using-code-snippets.md)
 - [Solução de problemas de snippets](../ide/troubleshooting-snippets.md)
 - [Snippets de código C#](../ide/visual-csharp-code-snippets.md)

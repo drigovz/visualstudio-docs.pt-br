@@ -3,18 +3,16 @@ title: Benefícios do Azure DevOps para assinantes do Visual Studio | Microsoft 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/15/2018
-ms.topic: Get-Started-Article
+ms.date: 09/19/2018
+ms.topic: conceptual
 description: Saiba como você pode usar o Azure DevOps enquanto assinante do Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1b536a303b2eba848c6b1cf41bcf73d6cf10975d
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 01f5f34210b4a562015eb030b9a23ef4d5017add
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073643"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842644"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Benefícios do Azure DevOps para assinantes do Visual Studio
 
@@ -28,12 +26,18 @@ Quando você entra no Azure DevOps com a mesma identidade usada para ativar sua 
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado, FTE  | Azure Boards e Repos (básico), Azure Test Plans, Azure Artifacts, Azure Pipelines (auto-hospedado)       |  Sim          |
-| Visual Studio Professional (Padrão, nuvem anual, nuvem mensal) | VL, Azure, Retail,                                        | Azure Boards e Repos (básico)                                                            |  Sim          |
+| Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado, FTE  | Azure Boards e Repos (básico), Azure Test Plans, Azure Artifacts, Azure Pipelines (auto-hospedado)       |  Sim          |
+| Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail,                                        | Azure Boards e Repos (básico)                                                            |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Azure Boards e Repos (básico), Azure Test Plans                                              |  Sim          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Azure Boards e Repos (básico), Azure Test Plans                                              |  Sim          |
 
-<sup>1</sup>  *Inclui:  NFR (Proibida a Revenda), MVP (Microsoft Valued Professional), RD (Diretor regional), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Exclui: MCT Software & Services, Imagine.*
+<sup>1</sup> *Inclui:  NFR (Proibida a revenda), MVP (Most Valuable Professional), RD (Diretor Regional), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), BizSpark e MCT Software & Services Developer. Exclui: MCT Software & Services e Imagine.*
+
+> [!NOTE]
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a você.
+Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 Saiba mais sobre os recursos do Azure DevOps:
 
@@ -41,12 +45,10 @@ Saiba mais sobre os recursos do Azure DevOps:
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a você.
-Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
+
 
 ## <a name="support-resources"></a>Recursos de suporte
 
 - Para obter assistência com vendas, assinaturas, contas e cobranças para Assinaturas do Visual Studio, entre em contato com o [Suporte a assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps ou outros produtos ou serviços do Visual Studio?  Visite o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Documentação do Azure DevOps](/azure/devops/).
-

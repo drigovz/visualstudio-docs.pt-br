@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130895e0e70b1044fab5d5ab406f940b036c37f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e3fd21ba720dfed394e497a9a56a1bb6898dc60
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734246"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348770"
 ---
 # <a name="textdocattr-constants"></a>Constantes TEXT_DOC_ATTR
 Descrevem os atributos do documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef DWORD TEXT_DOC_ATTR;  
 ```  
   
@@ -39,8 +39,8 @@ typedef DWORD TEXT_DOC_ATTR;
 |Constante|Valor|Descrição|  
 |--------------|-----------|-----------------|  
 |TEXT_DOC_ATTR_READONLY|0x00000001|O documento é somente leitura.|  
-|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|O documento é o arquivo primário desta árvore do documento.|  
-|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|O documento é um operador.|  
+|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|O documento é o arquivo primário dessa árvore do documento.|  
+|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|O documento é um trabalhador.|  
 |TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|O documento é um arquivo de script.|  
   
 ## <a name="see-also"></a>Consulte também  

@@ -1,8 +1,6 @@
 ---
 title: Criar um conjunto de regras de análise de código personalizado
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000210"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952444"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -85,7 +83,7 @@ Você também pode criar um novo arquivo de conjunto de regras do **novo arquivo
 
 - Se a mesma regra é listadas duas ou mais vezes em uma regra definida com o *mesmo* gravidade, você poderá ver o seguinte aviso na **lista de erros**:
 
-   **CA0063: Falha ao carregar o arquivo de conjunto de regras '\[seu] RuleSet ' ou uma de suas regras dependentes definida arquivos. O arquivo não estiver de acordo com o esquema do conjunto de regra.**
+   **CA0063 : Falha ao carregar o arquivo de conjunto de regras '\[seu] RuleSet ' ou uma de suas regras dependentes definida arquivos. O arquivo não estiver de acordo com o esquema do conjunto de regra.**
 
 - Se o conjunto de regras inclui uma regra de filho definida usando um **Include** a mesma regra de lista de marca e os conjuntos de regras pai e filho ambos os mas com gravidades diferentes, em seguida, a gravidade no conjunto de regras pai terá precedência. Por exemplo:
 
@@ -121,5 +119,5 @@ Agora que você tem uma regra definida, a próxima etapa é personalizar as regr
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Como: Configurar análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referência do conjunto de regras de análise de código](../code-quality/rule-set-reference.md)

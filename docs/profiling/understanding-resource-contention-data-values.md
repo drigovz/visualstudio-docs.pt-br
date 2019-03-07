@@ -1,23 +1,21 @@
 ---
 title: Noções Básicas sobre valores de dados de contenção de recurso | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffacfcd5eac9fd88cfd7bbaa2c7d2546836d87c6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 8ed72fe023e849d68dc8c417fc237bdd9e3d8c0f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948551"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622495"
 ---
 # <a name="understand-resource-contention-data-values"></a>Noções básicas sobre valores de dados de contenção de recurso
 

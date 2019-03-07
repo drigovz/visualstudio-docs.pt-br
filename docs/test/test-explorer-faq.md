@@ -1,8 +1,6 @@
 ---
 title: Perguntas Frequentes sobre o Gerenciador de Testes
 ms.date: 11/07/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -15,13 +13,13 @@ ms.author: kehavens
 ms.workload:
 - multiple
 author: kendrahavens
-manager: douge
-ms.openlocfilehash: 59c4cd06ee6c698ceb62803fb43b611daa298512
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055258"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318310"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -109,7 +107,7 @@ Todos os projetos de teste devem incluir a referência ao NuGet do adaptador de 
 
 O **projeto de teste{} não faz referência a nenhum adaptador do NuGet do .NET. A execução ou a detecção de testes pode não funcionar para esse projeto. Recomendamos fazer referencia aos adaptadores de teste do NuGet em cada projeto de teste do .NET na solução.**
 
-Em vez de usar extensões do adaptador de teste, os projetos são solicitados a usar os pacotes do adaptador de teste do NuGet. Esse requisito melhora bastante o desempenho e causa menos problemas com a integração contínua. Leia mais sobre a substituição da extensão do adaptador de teste do .NET nas [notas de versão](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+Em vez de usar extensões do adaptador de teste, os projetos são solicitados a usar os pacotes do adaptador de teste do NuGet. Esse requisito melhora bastante o desempenho e causa menos problemas com a integração contínua. Leia mais sobre a substituição da extensão do adaptador de teste do .NET nas [notas de versão](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 > [!NOTE]
 > Se estiver usando o Adaptador de teste NUnit 2 e não puder migrar para o adaptador de teste NUnit 3, você poderá desativar esse novo comportamento de descoberta no Visual Studio versão 15.8 em **Ferramentas** > **Opções** > **Teste**.

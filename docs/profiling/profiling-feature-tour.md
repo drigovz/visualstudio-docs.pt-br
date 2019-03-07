@@ -3,24 +3,23 @@ title: Medir o desempenho com ferramentas de criação de perfil
 description: Dê uma olhada rápida em diferentes ferramentas de diagnóstico disponíveis no Visual Studio.
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356789"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611913"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Início rápido: primeiro olhar sobre ferramentas de criação de perfil
+# <a name="quickstart-first-look-at-profiling-tools"></a>Início Rápido: Introdução às ferramentas de criação de perfil
 
 O Visual Studio fornece uma variedade de ferramentas de criação de perfil para ajudá-lo a diagnosticar diferentes tipos de problemas de desempenho, dependendo do tipo do aplicativo.
 
@@ -150,22 +149,22 @@ Se você precisar de recursos, como instrumentação, que não estão atualmente
 
 ![Ferramenta de Gerenciador de Desempenho](../profiling/media/prof-tour-performance-explorer.png "Gerenciador de Desempenho")
 
-## <a name="which-tool-should-i-use"></a>Qual ferramenta devo usar?  
+## <a name="which-tool-should-i-use"></a>Qual ferramenta devo usar?
 
 Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio oferece e os diferentes tipos de projeto com os quais você poderá usá-las:
-  
-|Ferramenta de Desempenho|Área de Trabalho do Windows|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|Ferramenta de Desempenho|Área de Trabalho do Windows|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|
-|[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim| 
-|[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no| 
+|[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
+|[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no|
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|
 |[Gerenciador de Desempenho](../profiling/performance-explorer.md)|sim|no|sim|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
 |[Uso de rede](../profiling/network-usage.md)|no|sim|no|
-|[Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no| 
+|[Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no|
 |[Memória JavaScript](../profiling/javascript-memory.md)|no|sim para HTML, não para XAML|no|
 
-## <a name="see-also"></a>Consulte também  
- [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)
+## <a name="see-also"></a>Consulte também
+- [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour)

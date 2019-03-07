@@ -2,7 +2,6 @@
 title: Exibir o código de desmontagem no depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -20,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 43214ee122b3aa5c3907b9176631f2dc22c9178e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063830"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987759"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Exibir o código de desmontagem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -57,7 +56,7 @@ Código de assembly depende intensamente registros do processador ou, para códi
 
 Para exibir instruções de código de máquina em sua forma bruta de numérica, em vez de linguagem assembly, use o **memória** janela ou selecione **Bytes de código** no menu de atalho no **desmontagem**  janela.
 
-## <a name="use-the-disassembly-window"></a>Use a janela de desmontagem
+## <a name="use-the-disassembly-window"></a>Usar a janela Desmontagem
 
 Para habilitar o **desmontagem** janela, em **ferramentas** > **opções** (ou **ferramentas**  >  **As opções**) > **Debugging**, selecione **Habilitar depuração no nível do endereço**.
 
@@ -74,4 +73,4 @@ Uma seta amarela na margem esquerda marca o ponto de execução atual. Para cód
 
 * [Paginação para cima ou para baixo na memória](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Exibição de dados no depurador](../debugger/viewing-data-in-the-debugger.md)
-* [Como: Usar a janela registros](../debugger/how-to-use-the-registers-window.md)
+* [Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)

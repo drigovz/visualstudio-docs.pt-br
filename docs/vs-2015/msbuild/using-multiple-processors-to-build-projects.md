@@ -1,14 +1,9 @@
 ---
 title: Uso de vários processadores para criar projetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
@@ -16,13 +11,13 @@ ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67b873b8ab1668ea2fea3b3bf0487339a86c9ffe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ab8f3896c0a57657966c022f85c7827fedf3d65
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199908"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54792822"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Usando vários processadores para compilar projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ MSBuild pode tirar proveito dos sistemas com vários processadores ou vários n�
 ## <a name="see-also"></a>Consulte também  
  [Criação de vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)
-
-
-

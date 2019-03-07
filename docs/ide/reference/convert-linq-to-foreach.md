@@ -1,22 +1,20 @@
 ---
 title: Refatorar código para converter uma consulta LINQ em uma instrução foreach
 ms.date: 05/15/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3e4e448931e028c53d62c534e2785e4f026a7ec
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9e58b9af583c6183a12f611bcc527443bc9bd30a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268292"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949597"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refatorar para converter LINQ em uma instrução foreach
 

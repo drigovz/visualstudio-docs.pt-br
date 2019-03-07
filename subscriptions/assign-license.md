@@ -2,19 +2,17 @@
 title: Atribuir licenças a assinaturas do Visual Studio | Microsoft Docs
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças aos assinantes
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 97962571d8a7c433a5f72af90d9107f9e2b08a9b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931227"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843008"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Atribuir licenças no portal do administrador de assinaturas do Visual Studio
 
@@ -46,7 +44,7 @@ Veja a seguir como atribuir uma licença de assinatura do Visual Studio a um nov
 
     Caso deseje adicionar suas próprias anotações de referência para a assinatura, faça isso na seção **Adicionar referência**.
    > [!div class="mx-imgBorder"]
-   > ![Adicionar suas próprias anotações de referência a cada assinatura](media/add-subscriber-reference-notes.png) 
+   > ![Adicionar suas próprias anotações de referência a cada assinatura](media/add-subscriber-reference-notes.png)
 
     Quando terminar de selecionar as opções e inserir os dados do assinante, escolha **Adicionar** na parte inferior do submenu **Adicionar Assinante**.
    > [!div class="mx-imgBorder"]
@@ -54,7 +52,7 @@ Veja a seguir como atribuir uma licença de assinatura do Visual Studio a um nov
 
 4. Depois que você adicionar o assinante, um Email de Atribuição será enviado automaticamente para o novo assinante com mais instruções. É possível enviar o Email de atribuição novamente a qualquer momento selecionando o assinante e clicando no botão **Reenviar** no menu superior.
    > [!div class="mx-imgBorder"]
-   > ![Reenviar o email de ativação para qualquer usuário ou para vários usuários sempre que você desejar](media/resend-subscriber-activation-emails.png) 
+   > ![Reenviar o email de ativação para qualquer usuário ou para vários usuários sempre que você desejar](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Atribuições em massa
 
@@ -65,7 +63,7 @@ Veja a seguir como atribuir uma licença de assinatura do Visual Studio a um nov
 2. A atribuição em massa usa um modelo do Microsoft Excel para carregar os assinantes. Na caixa de diálogo Carregar Vários Assinantes, clique em **Baixar** para baixar o modelo.
    > [!div class="mx-imgBorder"]
    > ![Baixar o modelo do Excel para carregar vários assinantes](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Sempre baixe a versão mais recente deste modelo. Se você usar uma versão mais antiga, o upload em massa poderá falhar.
 

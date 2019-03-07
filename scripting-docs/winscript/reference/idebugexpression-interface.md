@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39e139e09362fc392d1110e26837c52fd4c642c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727786"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345507"
 ---
 # <a name="idebugexpression-interface"></a>Interface IDebugExpression
-Representa uma expressão avaliada de forma assíncrona. Mecanismos de script geralmente implementam essa interface. Um depurador IDE normalmente usa essa interface para ativar uma janela de execução imediata ou janela de observação.  
+Representa uma expressão avaliada de forma assíncrona. Mecanismos de script geralmente implementam essa interface. Um IDE de depurador normalmente usa essa interface para habilitar uma janela de execução imediata ou janela de observação.  
   
 > [!NOTE]
->  O `IDebugExpression` interface está disponível somente de um quadro de pilha.  
+>  O `IDebugExpression` interface está disponível somente a partir de um quadro de pilha.  
   
  Além dos métodos herdados de `IUnknown`, o `IDebugExpression` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  

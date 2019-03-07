@@ -1,21 +1,19 @@
 ---
 title: Teclas modificadoras da ferramenta Seleção Direta no Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 955968137e1f8d2ba1322f5ccf9be2eac6196580
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876224"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940250"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Teclas modificadoras da ferramenta Seleção Direta no Blend
 A tabela a seguir lista os atalhos que podem ser usados para modificar a forma de um demarcador existente com a ferramenta **Seleção Direta** ![ferramenta Seleção Direta](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Para adicionar ou remover pontos de um caminho existente ou para unir dois caminhos existentes, use a ferramenta **Caneta**.

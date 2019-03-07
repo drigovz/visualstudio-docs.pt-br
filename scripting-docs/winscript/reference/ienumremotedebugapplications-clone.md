@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97b135d0139be40fa864064422027e7c3247fc8a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91f9b9a1461fbf1e87094fea3c908b5afd52ab1c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727376"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089816"
 ---
 # <a name="ienumremotedebugapplicationsclone"></a>IEnumRemoteDebugApplications::Clone
-Cria um enumerador que contém o mesmo estado do enumerador atual.  
+Cria um enumerador que contém o mesmo estado que o enumerador atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumRemoteDebugApplications**  ppessd  
 );  
@@ -48,7 +48,7 @@ HRESULT Clone(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método cria um enumerador que contém o mesmo estado do enumerador atual.  
+ Esse método cria um enumerador que contém o mesmo estado que o enumerador atual.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)

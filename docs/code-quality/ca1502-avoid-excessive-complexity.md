@@ -1,8 +1,6 @@
 ---
-title: 'CA1502: evitar complexidade excessiva'
+title: 'CA1502: Evitar complexidade excessiva'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveComplexity
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819297"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916759"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: evitar complexidade excessiva
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar complexidade excessiva
 
 |||
 |-|-|
@@ -50,7 +48,7 @@ em que um nó representa um ponto de ramificação de lógica e uma borda repres
 
 A regra relata uma violação, quando a complexidade ciclomática é a mais de 25.
 
-Você pode aprender mais sobre as métricas de código em [medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Você pode aprender mais sobre as métricas de código em [medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -104,8 +102,8 @@ Os exemplos a seguir mostram os métodos que possuem as complexidades de ciclom�
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1501: evitar herança excessiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: Evitar herança excessiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)

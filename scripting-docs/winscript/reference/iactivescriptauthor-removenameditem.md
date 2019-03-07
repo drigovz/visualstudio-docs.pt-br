@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f3acc7d61d63ce4fb4fe53729ce43324b9718a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64f62acd02e0901af341a571fb09ba81f3a11f28
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645596"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088816"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
-Remove um `NamedItem` objeto do namespace do script de criação de mecanismo.  
+Remove um `NamedItem` objeto do namespace do mecanismo de criação de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT RemoveNamedItem(  
    LPCOLESTR          pszName  
 );  
@@ -49,7 +49,7 @@ HRESULT RemoveNamedItem(
 |`S_FALSE`|O `NamedItem` objeto não está presente no namespace do script de criação de mecanismo.|  
   
 ## <a name="remarks"></a>Comentários  
- [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) é usado para inserir o `NamedItem` objeto para o namespace do mecanismo de criação de script.  
+ [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) é usado para injetar o `NamedItem` objeto para o namespace do mecanismo de criação de script.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   

@@ -1,20 +1,18 @@
 ---
 title: Criar um teste de IU codificado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895516"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955057"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Passo a passo: Criar, editar e manter um teste de IU codificado
 
@@ -355,11 +353,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ## <a name="videos"></a>Vídeos
 
-![link para vídeo](../data-tools/media/playvideo.gif) [Introdução aos testes de IU codificados](http://go.microsoft.com/fwlink/?LinkID=230573)
-
-![link para vídeo](../data-tools/media/playvideo.gif) [Manutenção e depuração de testes de IU codificados](http://go.microsoft.com/fwlink/?LinkID=230574)
-
-![link para vídeo](../data-tools/media/playvideo.gif) [Codificação manual de testes de IU codificados](http://go.microsoft.com/fwlink/?LinkID=230575)
+![link para vídeo](../data-tools/media/playvideo.gif) [Introdução aos testes de IU codificados](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>Perguntas Frequentes
 

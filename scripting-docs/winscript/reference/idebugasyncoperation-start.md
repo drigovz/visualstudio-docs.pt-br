@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd39053e86dce95fa52ba8576814962d13d8b050
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 099e256496278a33ccae77351641cfdd23447b1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725936"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094777"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
 Faz com que a operação assíncrona começar.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugAsyncOperationCallBack*  padocb  
 );  
@@ -49,7 +49,7 @@ HRESULT Start(
 |`E_UNEXPECTED`|Uma operação já está pendente.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método faz `IDebugSyncOperation::Execute` para ser chamado de forma assíncrona no thread obtido `IDebugSyncOperation::GetTargetThread`. Esse método deve ser chamado apenas de dentro do thread do depurador; Caso contrário, ele não retornará até que a operação seja concluída.  
+ Esse método faz com que `IDebugSyncOperation::Execute` a ser chamado de forma assíncrona no thread obtido do `IDebugSyncOperation::GetTargetThread`. Esse método deve ser chamado apenas de dentro do thread depurador; Caso contrário, ele não retornará até que a operação seja concluída.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   

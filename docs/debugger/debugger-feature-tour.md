@@ -1,24 +1,23 @@
 ---
-title: Introdução à depuração no VS 2017
+title: Depurar aplicativos usando o Visual Studio
 description: Introdução à depuração de aplicativos usando o depurador do Visual Studio
 ms.custom: mvc
-ms.date: 06/15/2018
-ms.technology: vs-ide-debug
+ms.date: 01/09/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882660"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696734"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -28,7 +27,7 @@ Os recursos descritos aqui são aplicáveis a C#, C++, Visual Basic, JavaScript 
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Definir um ponto de interrupção e iniciar o depurador
 
-Para depurar, você precisa iniciar o aplicativo com o depurador anexado ao processo do aplicativo. **F5** (**Depurar > Iniciar Depuração**) é a maneira mais comum de fazer isso. No entanto, talvez você ainda não definiu pontos de interrupção para examinar o código do seu aplicativo, portanto faremos isso primeiro e, em seguida, iniciaremos a depuração. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não. 
+Para depurar, você precisa iniciar o aplicativo com o depurador anexado ao processo do aplicativo. **F5** (**Depurar > Iniciar Depuração**) é a maneira mais comum de fazer isso. No entanto, talvez você ainda não definiu pontos de interrupção para examinar o código do seu aplicativo, portanto faremos isso primeiro e, em seguida, iniciaremos a depuração. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não.
 
 Se você tem um arquivo aberto no editor de código, é possível definir um ponto de interrupção clicando na margem à esquerda de uma linha de código.
 
@@ -174,7 +173,7 @@ A janela **Pilha de Chamadas** mostra a ordem em que os métodos e as funções 
 
 Você pode clicar duas vezes em uma linha de código para examinar esse código-fonte. Isso também altera o escopo atual que está sendo inspecionado pelo depurador. Isso não avança o depurador.
 
-Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificas, reiniciar o aplicativo usando **Executar até o Cursor** e examinar o código-fonte. Confira [Como examinar a Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).
+Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificas, reiniciar o aplicativo usando **Executar até o Cursor** e examinar o código-fonte. Confira [Como Examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Examinar uma exceção
 
@@ -186,7 +185,7 @@ Neste exemplo, o **Auxiliar de Exceção** mostra uma exceção `System.Argument
 
 Neste exemplo, a chamada `DirectoryInfo` gerou o erro na cadeia de caracteres vazia armazenada na variável `value`.
 
-O Auxiliar de Exceção é um ótimo recurso que pode ajudá-lo a depurar erros. Você também pode fazer coisas como exibir detalhes do erro e adicionar uma inspeção por meio do Auxiliar de Exceção. Ou, se necessário, você pode alterar as condições para lançar a exceção específica.
+O Auxiliar de Exceção é um ótimo recurso que pode ajudá-lo a depurar erros. Você também pode fazer coisas como exibir detalhes do erro e adicionar uma inspeção por meio do Auxiliar de Exceção. Ou, se necessário, você pode alterar as condições para lançar a exceção específica. Para obter mais informações de como tratar exceções no código, confira [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
 > O Auxiliar de Exceção substitui o Assistente de Exceção no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -215,7 +214,7 @@ Para obter mais informações, confira a página [Inspecionar estados anteriores
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste tutorial, você obteve uma visão rápida de muitos recursos do depurador. Convém uma visão mais detalhada sobre esses recursos usando um aplicativo de exemplo
+Neste tutorial, você obteve uma visão rápida de muitos recursos do depurador. Talvez você deseje fazer uma análise mais detalhada de uma dessas funcionalidades, como pontos de interrupção.
 
 > [!div class="nextstepaction"]
-> [Aprenda a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Aprenda a usar pontos de interrupção](../debugger/using-breakpoints.md)

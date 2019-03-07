@@ -1,23 +1,21 @@
 ---
 title: Opções, Editor de Texto, C#, Avançado
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670709"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927510"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 
@@ -48,7 +46,7 @@ Use a página de opções **Avançado** para modificar as configurações de for
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Após a classificação:
 
    ```csharp
@@ -59,7 +57,7 @@ Use a página de opções **Avançado** para modificar as configurações de for
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Separar usando grupos de diretivas
 
    Quando selecionado, o comando **Remover e classificar usos** no menu de clique com o botão direito do mouse separa as diretivas `using` inserindo uma linha vazia entre os grupos de diretivas que têm o mesmo namespace de raiz.
@@ -74,28 +72,28 @@ Use a página de opções **Avançado** para modificar as configurações de for
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Após a classificação:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Sugerir usos para tipos em assemblies de referência 
-- Sugerir usos para tipos em pacotes NuGet 
+
+- Sugerir usos para tipos em assemblies de referência
+- Sugerir usos para tipos em pacotes NuGet
 
    Quando essas opções estiverem selecionadas, uma [Ação Rápida](../quick-actions.md) estará disponível para instalar um pacote NuGet e para adicionar uma diretiva `using` para tipos não referenciados.
 
    ![Ação rápida para instalar o pacote NuGet no Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Realce
 
 - Realçar referências a símbolo sob o cursor
@@ -110,13 +108,17 @@ Use a página de opções **Avançado** para modificar as configurações de for
 
 - Mostrar separadores de linha de procedimento
 
-   O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *.vb* do seu projeto nos locais listados na tabela a seguir:
+   O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *.cs* do seu projeto nos locais listados na tabela a seguir:
 
-   |Local no arquivo de origem .vb|Exemplo de local da linha|
+   |Local no arquivo de origem .cs|Exemplo de local da linha|
    |---------------------------------|------------------------------|
    |Após o encerramento de um constructo de declaração de bloco|–   No final de uma classe, estrutura, módulo, interface ou enumeração<br />–   Depois de uma propriedade, função ou sub<br />–   Não entre cláusulas get e set em uma propriedade|
    |Depois de um conjunto de constructos de linha única|–   Depois das instruções de importação, antes de uma definição de tipo em um arquivo de classe<br />–   Depois de variáveis declaradas em uma classe, antes de qualquer procedimento|
    |Depois de declarações de linha única (declarações de nível não de bloco)|–   Após instruções de importação, instruções de herdar, declarações de variável, declarações de evento, declarações de delegado e instruções de declaração DLL|
+
+## <a name="block-structure-guides"></a>Guias de estrutura de bloco
+
+Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre chaves (**{}**) em seu código. Isso permite que você veja facilmente blocos individuais de código para o seu nível de declaração e construções no nível do código.
 
 ## <a name="editor-help"></a>Ajuda do Editor
 
@@ -126,7 +128,7 @@ Use a página de opções **Avançado** para modificar as configurações de for
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como inserir comentários XML para geração de documentação](../../ide/reference/generate-xml-documentation-comments.md)
+- [Como: Inserir comentários XML para geração de documentação](../../ide/reference/generate-xml-documentation-comments.md)
 - [Comentários de documentação XML (Guia de Programação em C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentar o código com comentários XML (guia do C#)](/dotnet/csharp/codedoc)
 - [Definir opções de editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)

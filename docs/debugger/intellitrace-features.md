@@ -1,8 +1,6 @@
 ---
 title: Recursos do IntelliTrace | Microsoft Docs
-ms.custom: ''
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, debugging with events
@@ -19,21 +17,21 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
-ms.translationtype: MT
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542455"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720179"
 ---
-# <a name="intellitrace-features"></a>funcionalidades do IntelliTrace
+# <a name="intellitrace-features-c-visual-basic-c"></a>Recursos do IntelliTrace (C#, Visual Basic, C++)
 
 Você pode usar o IntelliTrace para registrar eventos e chamadas de método do aplicativo, que permite que você examine seu estado (pilha de chamadas e valores de variáveis locais) em pontos diferentes na execução. Basta iniciar a depuração como de costume - IntelliTrace é ativado por padrão e você pode ver as informações do IntelliTrace está gravando no novo **ferramentas de diagnóstico** janela sob o **eventos** guia. Selecione um evento e clique em **Ativar depuração histórica** para ver a pilha de chamadas e variáveis locais registradas para este evento.
 
-Para obter uma descrição passo a passo, consulte [instruções passo a passo: usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+Para obter uma descrição passo a passo, consulte [passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace está disponível no Visual Studio Enterprise edition, mas não nas edições do Visual Studio Professional ou Community.
 
@@ -42,23 +40,23 @@ Para confirmar que o IntelliTrace esteja ativado, abra o **Ferramentas > Opçõe
 > [!NOTE]
 > O escopo de todas as configurações de **IntelliTrace** página de opções é o Visual Studio como um todo, não individuais projetos ou soluções. Uma alteração nessas configurações se aplica a todas as instâncias do Visual Studio, sessões de depuração tudo e todos os projetos ou soluções.
 
-## <a name="ChooseEvents"></a> Escolha os eventos que o IntelliTrace registra (somente código gerenciado)
+## <a name="ChooseEvents"></a> Escolha os eventos que o IntelliTrace registra (C#, Visual Basic)
 
 Você pode ativar ou desativar a gravação de eventos específicos do IntelliTrace.
 
 Se você estiver depurando, pare a depuração. Vá para **Ferramentas > Opções > IntelliTrace > eventos do IntelliTrace**. Escolha os eventos que você deseja que o IntelliTrace registrar.
 
-## <a name="Snapshots"></a> Coletar instantâneos
+## <a name="Snapshots"></a> Coletar instantâneos (C#, Visual Basic, C++)
 
-Isso não é habilitado por padrão, mas IntelliTrace pode capturar instantâneos do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção, e você pode exibir esses instantâneos em uma sessão de depuração histórica. Um instantâneo fornece uma exibição do estado completo do aplicativo. Para habilitar a captura de instantâneos, acesse **Ferramentas > Opções > IntelliTrace > geral**e selecione **instantâneos do IntelliTrace (gerenciados e nativos)**. Para obter mais informações, consulte [inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md)
+Isso não é habilitado por padrão, mas IntelliTrace pode capturar instantâneos do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção, e você pode exibir esses instantâneos em uma sessão de depuração histórica. Um instantâneo fornece uma exibição do estado completo do aplicativo. Para habilitar a captura de instantâneos, acesse **Ferramentas > Opções > IntelliTrace > geral**e selecione **instantâneos do IntelliTrace (gerenciados e nativos)**. Para saber mais, confira [Inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md)
 
 Instantâneos estão disponíveis no Visual Studio Enterprise 2017 versão 15.5 e posterior, e ela requer a atualização de aniversário do Windows 10 ou superior.  Para aplicativos .NET Core e ASP.NET Core, o Visual Studio Enterprise 2017 versão 15.7 é necessária. Para aplicativos nativos de direcionamento do Windows, versão do Visual Studio Enterprise 2017 15,9 Preview 2 é necessária.
 
-## <a name="GoingFurther"></a> Coletar eventos do IntelliTrace e informações (somente código gerenciado) de chamada
+## <a name="GoingFurther"></a> Coletar eventos do IntelliTrace e informações de chamada (C#, Visual Basic)
 
 Isso não é habilitado por padrão, mas o IntelliTrace poderá registrar chamadas de método, junto com eventos. Para habilitar a coleta de método chamadas acessem **Ferramentas > Opções > IntelliTrace > geral**e selecione **eventos do IntelliTrace e informações (somente gerenciadas) de chamada**.
 
-Informações de chamada não estão atualmente disponíveis para aplicativos .NET Core e ASP.NET Core. 
+Informações de chamada não estão atualmente disponíveis para aplicativos .NET Core e ASP.NET Core.
 
 Isso permite que você consulte o histórico da pilha de chamadas e retroceda e avance por meio de chamadas em seu código. O IntelliTrace registra dados como nomes de método, pontos de entrada e saída de método e determinados valores de parâmetros e valores de retorno.
 
@@ -76,17 +74,17 @@ A medianiz de navegação permite que você mova a frente e para trás por meio 
 |||
 |-|-|
 |**Definir o contexto do depurador aqui**|Defina o contexto de depuração para o período de chamada onde ele aparece.<br /><br /> Esse ícone é exibido apenas na pilha de chamadas atual.|
-|**Voltar para Site de chamada**|Mova o ponteiro e o contexto de depuração para qual a função atual foi chamada.<br /><br /> Se você estiver no modo de depuração ao vivo, este comando ativa a depuração histórica. Se você navegar de volta para a interrupção da execução original, depuração histórica está desativado e ao vivo de depuração está ativado.|
-|**Ir para chamada anterior ou evento do IntelliTrace**|Mova o ponteiro e o contexto de depuração de volta para a chamada anterior ou evento.<br /><br /> Se você estiver no modo de depuração ao vivo, este comando ativa a depuração histórica.|
+|**Voltar para o site de chamada**|Mova o ponteiro e o contexto de depuração para qual a função atual foi chamada.<br /><br /> Se você estiver no modo de depuração ao vivo, este comando ativa a depuração histórica. Se você navegar de volta para a interrupção da execução original, depuração histórica está desativado e ao vivo de depuração está ativado.|
+|**Ir para chamada anterior ou para evento do IntelliTrace**|Mova o ponteiro e o contexto de depuração de volta para a chamada anterior ou evento.<br /><br /> Se você estiver no modo de depuração ao vivo, este comando ativa a depuração histórica.|
 |**Entrar**|Passar para a função selecionada no momento.<br /><br /> Esse comando está disponível somente quando você estiver no modo de depuração histórica.|
-|**Ir para próxima chamada ou evento do IntelliTrace**|Mova o ponteiro e o contexto de depuração para a próxima chamada ou evento do qual IntelliTrace dados existem.<br /><br /> Esse comando está disponível somente quando você estiver no modo de depuração histórica.|
-|**Ir para modo dinâmico**|Retornar ao modo de depuração ao vivo.|
+|**Ir para próxima chamada ou para evento do IntelliTrace**|Mova o ponteiro e o contexto de depuração para a próxima chamada ou evento do qual IntelliTrace dados existem.<br /><br /> Esse comando está disponível somente quando você estiver no modo de depuração histórica.|
+|**Ir para o modo ao vivo**|Retornar ao modo de depuração ao vivo.|
 
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>Procure uma linha ou um método no IntelliTrace
 
 Você pode pesquisar métodos somente quando as informações de chamada de método tem sido habilitadas. Você pode pesquisar o histórico do IntelliTrace para uma linha específica ou um método. Embora a execução do depurador é interrompida, clique com botão direito dentro do corpo da função para ver o menu de contexto e clique em **pesquisa para esta linha no IntelliTrace** ou **pesquisa para este método no IntelliTrace do**.
 
-### <a name="ControlCallData"></a> Controle quanto chamar informações pelo IntelliTrace
+### <a name="ControlCallData"></a> Controlar a quantidade de informações de chamada gravadas pelo IntelliTrace
 
 Por padrão, o IntelliTrace registra informações para todos os módulos usados pela sua solução. Você pode definir o IntelliTrace para informações de chamada de registro somente para os módulos que lhe interessam. Na **Ferramentas > Opções > IntelliTrace > módulos**, você pode especificar os módulos para incluir ou módulos a serem excluídos do IntelliTrace. IntelliTrace coletará apenas os eventos que tenham sido originados dos módulos especificados por você e as chamadas de método que ocorreram dentro de módulos que você está interessado.
 
@@ -94,7 +92,7 @@ Para adicionar vários módulos, use o caractere curinga * no início ou no fina
 
 Tente manter o número de módulos em um mínimo. Obtenha o melhor desempenho porque há menos dados a serem coletados. Você também obtém menos ruído na interface do usuário porque há menos dados para percorrer.
 
-## <a name="SaveSession"></a> Salvar dados do IntelliTrace para arquivo
+## <a name="SaveSession"></a> Salvar dados do IntelliTrace para arquivo (C#, Visual Basic, C++)
 
 Você pode salvar os dados coletados pelo IntelliTrace vai **Depurar > IntelliTrace > Salvar a sessão do IntelliTrace** enquanto você está depurando e o aplicativo está em um estado de interrupção. O item de menu está desativado e você não poderá salvar os dados coletados pelo IntelliTrace se o aplicativo ainda está em execução ou se você interromper a depuração.
 
@@ -107,21 +105,21 @@ Quando você salva dados do IntelliTrace para o arquivo, você obtém um arquivo
 
 ## <a name="blogs"></a>Blogs
 
-[IntelliTrace no Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+[IntelliTrace no Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[Instruções passo a passo de depuração tempo real usando o IntelliTrace no Visual Studio 2015 (Editor de texto)](https://blogs.msdn.microsoft.com/devops/2015/01/16/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[Instruções passo a passo de depuração tempo real usando o IntelliTrace no Visual Studio 2015 (Editor de texto)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[Instruções passo a passo de depuração tempo real usando o IntelliTrace no Visual Studio 2015 (clube Social)](https://blogs.msdn.microsoft.com/devops/2015/04/29/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[Instruções passo a passo de depuração tempo real usando o IntelliTrace no Visual Studio 2015 (clube Social)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[IntelliTrace no Visual Studio Enterprise 2015 agora dá suporte a anexar!](https://blogs.msdn.microsoft.com/devops/2015/05/14/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[IntelliTrace no Visual Studio Enterprise 2015 agora dá suporte a anexar!](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[Coletar dados de um serviço do windows usando o coletor do IntelliTrace autônomo](https://blogs.msdn.microsoft.com/devops/2015/05/14/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[Coletar dados de um serviço do windows usando o coletor do IntelliTrace autônomo](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[Editar o plano de coleta do IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/03/09/editing-the-intellitrace-collection-plan/)
+[Editar o plano de coleta do IntelliTrace](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[TraceSource personalizado e depuração usando o IntelliTrace](https://blogs.msdn.microsoft.com/devops/2014/12/16/custom-tracesource-and-debugging-using-intellitrace/)
+[TraceSource personalizado e depuração usando o IntelliTrace](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[IntelliTrace Standalone Collector e Pools de aplicativos executando em contas do Active Directory](https://blogs.msdn.microsoft.com/devops/2014/12/22/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[IntelliTrace Standalone Collector e Pools de aplicativos executando em contas do Active Directory](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>Fóruns
 
@@ -131,4 +129,4 @@ Quando você salva dados do IntelliTrace para o arquivo, você obtém um arquivo
 
 [Experiência IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
-[Histórico de depuração com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
+[Depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)

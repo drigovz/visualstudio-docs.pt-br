@@ -2,20 +2,18 @@
 title: Designer de fluxo de trabalho – Designers de atividade do fluxograma
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7fc3e956c6b31b1df8346e9b347ca3e094d878
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4f3b816c0e486eeaad49bac0b0054d7d3c2bff9b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755714"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950408"
 ---
 # <a name="flowchart-activity-designers"></a>Designer de atividade do fluxograma
 
@@ -37,7 +35,7 @@ Designer de fluxo de trabalho inclui um número de sistema forneceu atividades q
 
  [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
 
- [Sistema de mensagens](../workflow-designer/messaging-activity-designers.md)
+ [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
  [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
 

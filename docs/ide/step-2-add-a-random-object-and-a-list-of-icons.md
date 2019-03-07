@@ -1,22 +1,19 @@
 ---
 title: 'Etapa 2: Adicionar um objeto aleatório e uma lista de ícones'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 52c098db169ef80d069d82514c3a550e09976a71
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746826"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940627"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Etapa 2: Adicionar um objeto aleatório e uma lista de ícones
 Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Cada símbolo é adicionado a duas células aleatórias no TableLayoutPanel do formulário. Para isso, use duas instruções `new` para criar dois objetos. A primeira é um objeto <xref:System.Random>, como o usado no jogo de enigmas de matemática. Ele é usado nesse código para escolher aleatoriamente células no TableLayoutPanel. O segundo objeto, que pode ser novo para você, é um objeto <xref:System.Collections.Generic.List%601>, que é usado para armazenar os símbolos escolhidos aleatoriamente.
@@ -43,7 +40,7 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
 
      Se você observar o código (e fizer observações) em pequenas seções, será mais fácil entender. Seus programas podem usar objetos de lista para acompanhar muitos tipos de item diferentes. Uma lista pode manter números, valores verdadeiro/falso, texto ou outros objetos. Você pode ter até mesmo um objeto de lista que mantém outros objetos de lista. Os itens em uma lista são chamados de elementos e cada lista mantém apenas um tipo de elemento. Desse modo, uma lista de números pode manter apenas números; não é possível adicionar texto a essa lista. Da mesma forma, não é possível adicionar número a uma lista de valores verdadeiro/falso.
 
-     Quando você cria um objeto `List` usando uma declaração `new`, é preciso especificar o tipo de dados que deseja armazenar nele. É por esse motivo que a dica de ferramenta na parte superior da janela do **IntelliSense** mostra os tipos de elementos na lista. Além disso, isso é o que `List<string>` (no Visual C#) e `List(Of String)` (no Visual Basic) significam: é um objeto `List` que mantém elementos do tipo de dados `string`. Uma cadeia de caracteres é o que seu programa usa para armazenar texto, que é o que a dica de ferramenta à direita da janela do **IntelliSense** está informando a você.
+     Quando você cria um objeto `List` usando uma declaração `new`, é preciso especificar o tipo de dados que deseja armazenar nele. É por esse motivo que a dica de ferramenta na parte superior da janela do **IntelliSense** mostra os tipos de elementos na lista. Além disso, é isso que `List<string>` (no Visual C#) e `List(Of String)` (no Visual Basic), significam: É um objeto `List` que contém os elementos de tipo de dados `string`. Uma cadeia de caracteres é o que seu programa usa para armazenar texto, que é o que a dica de ferramenta à direita da janela do **IntelliSense** está informando a você.
 
 4.  Considere por que, no Visual Basic, uma matriz temporária deve ser criada primeiro, mas, no Visual C#, a lista pode ser criada com uma declaração. Isso ocorre porque a linguagem do Visual C# tem *inicializadores de coleção*, que preparam a lista para aceitar valores. No Visual Basic, você pode usar um inicializador de coleção. No entanto, para compatibilidade com a versão anterior do Visual Basic, é recomendável usar o código anterior.
 
@@ -54,6 +51,6 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para acessar a próxima etapa do tutorial, confira [Etapa 3: Atribuir um ícone aleatório a cada rótulo](../ide/step-3-assign-a-random-icon-to-each-label.md).
+-   Para ir para a próxima etapa do tutorial, confira [Etapa 3: Atribuir um ícone aleatório a cada rótulo](../ide/step-3-assign-a-random-icon-to-each-label.md).
 
 -   Para retornar à etapa anterior do tutorial, confira [Etapa 1: Criar um projeto e adicionar uma tabela ao formulário](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).

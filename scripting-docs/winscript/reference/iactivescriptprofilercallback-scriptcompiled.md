@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ea1823087b323f2acc9b87edfce48bbe9f924bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf653e5623506a68e6353e3d9f97077592e87941
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724696"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091501"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
-Notifica o criador de perfil de um script compilado do objeto do mecanismo de script. Esse método é chamado para cada script compilado.  
+Notifica o criador de perfil de um script compilado do objeto que o script do mecanismo. Esse método é chamado para cada script que é compilado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT ScriptCompiled(  
     [in] PROFILER_TOKEN scriptId,  
     [in] PROFILER_SCRIPT_TYPE type,  
@@ -40,16 +40,16 @@ HRESULT ScriptCompiled(
  [in] A ID exclusiva do script que foi compilado. Essa ID é atribuída pelo mecanismo de script.  
   
  `type`  
- [in] O tipo de script que foi compilado. Os valores são definidos em [enumeração PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
+ [in] O tipo de script que foi compilado. Os valores são definidos no [enumeração PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
  `pIDebugDocumentContext`  
- [in] Se estiver disponível, um ponteiro para um `IUnknown` interface deve consultar o criador de perfil para um [IDebugDocumentContext Interface](../../winscript/reference/idebugdocumentcontext-interface.md) ponteiro. Caso contrário, será nulo.  
+ [in] Se estiver disponível, um ponteiro para um `IUnknown` interface que o criador de perfis deve consultar um [IDebugDocumentContext Interface](../../winscript/reference/idebugdocumentcontext-interface.md) ponteiro. Caso contrário, será nulo.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O valor de retorno desse método é ignorado pelo mecanismo de script.  
   
 ## <a name="remarks"></a>Comentários  
- O mecanismo de script pode fornecer o contexto de documento somente se isso for suportado pelo host.  
+ O mecanismo de script pode fornecer o contexto do documento somente se isso for suportado pelo host.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

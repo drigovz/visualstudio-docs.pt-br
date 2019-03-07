@@ -1,9 +1,6 @@
 ---
-title: 'Como: preencher documentos com dados de um banco de dados'
-ms.custom: ''
+title: 'Como: Preencher documentos com dados de um banco de dados'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - documents, populating with data
 - data, adding to documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: af068fc9cdacc0f681232ee4c7424d67d77f3a11
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f1522b2567c05a9c3a61091813a8b5e18315433f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756795"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863442"
 ---
-# <a name="how-to-populate-documents-with-data-from-a-database"></a>Como: preencher documentos com dados de um banco de dados
+# <a name="how-to-populate-documents-with-data-from-a-database"></a>Como: Preencher documentos com dados de um banco de dados
 
 Você pode acessar dados em projetos de nível de documento para o Microsoft Office da mesma forma que você acessar dados em projetos do Windows Forms. Você usa as mesmas ferramentas e código de trazer os dados de um banco de dados para sua solução, e você pode usar controles dos Windows Forms para exibir os dados.
 
@@ -31,7 +28,7 @@ Além disso, você pode exibir dados usando controles de host. Controles de host
 
 [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
-O exemplo a seguir mostra como adicionar controles ligados a dados em projetos de nível de documento usando um designer. Para obter um exemplo de como adicionar controles ligados a dados em projetos de suplemento do VSTO em tempo de execução, consulte [instruções passo a passo: associação de dados simples no projeto do suplemento do VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
+O exemplo a seguir mostra como adicionar controles ligados a dados em projetos de nível de documento usando um designer. Para obter um exemplo de como adicionar controles ligados a dados em projetos de suplemento do VSTO em tempo de execução, consulte [passo a passo: Associação de dados simples no projeto do suplemento do VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
 
 ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [associar dados ao conteúdo do Word 2007 controla usando o Visual Studio Tools para o Office system (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).
 
@@ -67,14 +64,14 @@ Quando você executa o projeto, o controle exibe o primeiro registro na fonte de
 
 -   Use <xref:System.Windows.Forms.BindingSource> métodos como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> e <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Para obter informações sobre como enviar atualizações para o conjunto de dados tipado e o banco de dados, consulte [como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Para obter informações sobre como enviar atualizações para o conjunto de dados tipado e o banco de dados, consulte [como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)
 - [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Usar arquivos de banco de dados local na visão geral das soluções do Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Visão geral do componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

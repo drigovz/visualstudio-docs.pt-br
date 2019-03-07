@@ -2,23 +2,21 @@
 title: Tutorial Aprenda a usar o Flask no Visual Studio, etapa 4, modelos de projeto Web
 titleSuffix: ''
 description: Um passo a passo das noções básicas do Flask no contexto dos projetos do Visual Studio, especificamente as funcionalidades fornecidas pelos modelos Projeto Web do Flask e Projeto Web do Flask/Jade.
-ms.date: 09/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051695"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908914"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Etapa 4: Usar o modelo completo de Projeto Web do Flask
 
@@ -164,7 +162,7 @@ Cada um dos modelos de página individual, *about.html*, *contact.html* e *index
 
 Conforme observado no início deste artigo, o Visual Studio fornece um modelo "Projeto Web do Flask/Jade", que cria um aplicativo visualmente idêntico ao produzido pelo "Projeto Web do Flask". A principal diferença é que ele usa o mecanismo de modelagem Jade, que é uma extensão do Jinja que implementa os mesmos conceitos com uma linguagem mais sucinta. Especificamente, o Jade usa palavras-chave em vez de marcas entre delimitadores {% %}, por exemplo, e permite que você se refira a elementos HTML e estilos CSS usando palavras-chave.
 
-Para habilitar o Jade, o modelo de projeto inclui primeiro o pacote pyjade em *requirements.txt*. 
+Para habilitar o Jade, o modelo de projeto inclui primeiro o pacote pyjade em *requirements.txt*.
 
 O arquivo *\_\_init\_\_.py* do aplicativo contém uma linha para
 

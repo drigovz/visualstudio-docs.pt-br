@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860193"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952379"
 ---
 # <a name="t4-output-directive"></a>T4 Diretiva de saída
 
@@ -49,7 +47,7 @@ Em modelos de texto do Visual Studio, o `output` diretiva é usada para definir 
 
  `<#@ output extension=".vb" #>`
 
- Os valores aceitáveis: Qualquer nome extensão de arquivo válida.
+ Valores aceitáveis: Qualquer extensão de nome de arquivo válida.
 
 ## <a name="encoding-attribute"></a>atributo de codificação
  Especifica a codificação usada ao gerar o arquivo de saída. Por exemplo:

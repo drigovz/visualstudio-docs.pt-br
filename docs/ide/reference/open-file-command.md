@@ -1,8 +1,6 @@
 ---
 title: Comando Abrir Arquivo
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openfile
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: b76db52534f4c264e065152548d49f9773863a29
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923988"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937923"
 ---
 # <a name="open-file-command"></a>Comando Abrir arquivo
 

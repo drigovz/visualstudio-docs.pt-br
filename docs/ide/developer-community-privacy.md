@@ -1,23 +1,21 @@
 ---
 title: Dados particulares para relatórios de problemas
 ms.date: 06/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836821"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954329"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
@@ -87,5 +85,5 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+- [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Privacidade de dados do relatório de problema do C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

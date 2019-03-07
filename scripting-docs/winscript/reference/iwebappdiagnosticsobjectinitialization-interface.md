@@ -14,20 +14,20 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 159b81a336accea4e4e8c035119d5525de71ae90
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c892d3eceea65f16c69bfd2202b1f64181773532
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733856"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348042"
 ---
 # <a name="iwebappdiagnosticsobjectinitialization-interface"></a>Interface IWebAppDiagnosticsObjectInitialization
-Esta interface pode ser implementada em classes que implementam [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md). [IWebAppDiagnosticsSetup Interface](../../winscript/reference/iwebappdiagnosticssetup-interface.md) é implementada pelo objeto que implementa [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md). Na maioria dos casos, esse objeto é o PDM.  
+Essa interface pode ser implementada nas classes que implementam [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md). [IWebAppDiagnosticsSetup Interface](../../winscript/reference/iwebappdiagnosticssetup-interface.md) é implementada por objeto que implementa [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md). Na maioria dos casos, esse objeto é o PDM.  
   
- Depois que o objeto foi criado, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) é chamado com uma referência para o aplicativo de depuração PDM e `hPassToObject` parâmetro `CreateObjectWithSiteAtWebApp`.  
+ Depois que o objeto foi criado, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) for chamado com uma referência para o aplicativo de depuração do PDM e o `hPassToObject` parâmetro do `CreateObjectWithSiteAtWebApp`.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsObjectInitialization`foi encontrado no activdbg100.h.  
+>  `IWebAppDiagnosticsObjectInitialization` está localizado em. activdbg100.h.  
   
 ## <a name="methods"></a>Métodos  
  Essa interface expõe os métodos a seguir.  

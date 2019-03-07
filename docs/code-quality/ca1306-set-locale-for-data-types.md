@@ -1,8 +1,6 @@
 ---
-title: 'CA1306: definir localidade para tipos de dados'
+title: 'CA1306: Definir localidade para tipos de dados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1306
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e60a788d94a6c0d594ee45505b8f4ad9f64dbdff
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547176"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932736"
 ---
-# <a name="ca1306-set-locale-for-data-types"></a>CA1306: definir localidade para tipos de dados
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Definir localidade para tipos de dados
 
 |||
 |-|-|

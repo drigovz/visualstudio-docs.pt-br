@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 888e15bdd154fbac444eb91fc31ad7f17c2981ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f6f21c553197a3967619b9aedc25779444185e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726776"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095739"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
-Retorna o thread associado deste quadro de pilhas.  
+Retorna o thread associado a esse registro de ativação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetThread(  
    IDebugApplicationThread**  ppat  
 );  
@@ -38,7 +38,7 @@ HRESULT GetThread(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppat`  
- [out] O thread associado deste quadro de pilhas.  
+ [out] O thread associado a esse registro de ativação.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -48,7 +48,7 @@ HRESULT GetThread(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o thread associado deste quadro de pilhas.  
+ Esse método retorna o thread associado a esse registro de ativação.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

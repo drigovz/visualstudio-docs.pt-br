@@ -2,10 +2,8 @@
 title: Instalar o Visual Studio
 titleSuffix: ''
 description: Saiba como instalar o Visual Studio, passo a passo.
+ms.date: 02/11/2019
 ms.custom: seodec18
-ms.date: 05/07/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -17,19 +15,19 @@ helpviewer_keywords:
 - Visual Studio installer
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159731"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607013"
 ---
 # <a name="install-visual-studio-2017"></a>Instalar o Visual Studio 2017
 
-Bem-vindo a uma nova maneira de instalar o Visual Studio! Em nossa versão mais recente, facilitamos a seleção e instalação apenas dos recursos necessários. Também reduzimos os volumes mínimos do Visual Studio para que ele seja instalado mais rapidamente e com menor impacto ao sistema.
+Bem-vindo a uma nova maneira de instalar o Visual Studio! Nesta versão, facilitamos a seleção e a instalação apenas dos recursos necessários. Também reduzimos os volumes mínimos do Visual Studio para que ele seja instalado mais rapidamente e com menor impacto ao sistema.
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Instalar o Visual Studio para Mac](/visualstudio/mac/installation).
@@ -56,10 +54,6 @@ Em seguida, baixe o arquivo bootstrapper do Visual Studio. Para fazer isso, cliq
  > [!div class="button"]
  > [Baixe o Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![ícone de câmera para vídeo](media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) sobre como baixar o arquivo bootstrapper do Visual Studio e selecione a edição do Visual Studio que é ideal para você. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Etapa 3 - Instalar o instalador do Visual Studio
 
@@ -96,29 +90,17 @@ Após a instalação do instalador, use-o para personalizar sua instalação sel
 > [!TIP]
 > A qualquer momento após a instalação, você pode instalar as cargas de trabalho ou os componentes não instalados inicialmente. Caso o Visual Studio esteja aberto, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Outra opção é abrir o **Instalador do Visual Studio** no menu Iniciar. Assim, é possível selecionar as cargas de trabalho ou os componentes que você deseja instalar e, em seguida, clicar e **Modificar**.
 
-|         |         |
-|---------|---------|
-|  ![ícone de câmera para vídeo](media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) sobre como instalar o Instalador do Visual Studio e, em seguida, instalar uma carga de trabalho. |
-
 ## <a name="step-5---select-individual-components-optional"></a>Etapa 5 - Selecionar componentes individuais (opcional)
 
 Se não quiser usar o recurso Cargas de Trabalho para personalizar a instalação do Visual Studio, você pode fazê-lo instalando componentes individuais como alternativa. Para selecionar componentes individuais, clique na opção **Componentes individuais** no Instalador do Visual Studio, selecione o que deseja e, em seguida, siga os avisos.
 
   ![Visual Studio 2017 — Instalar componentes individuais](media/vs2017-components.PNG "Instalar componentes individuais do Visual Studio")
 
-  |         |         |
-  |---------|---------|
-  |  ![ícone de câmera para vídeo](media/video-icon.png "Assistir a um vídeo")  |   [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) sobre como instalar um componente individual usando o Instalador do Visual Studio. |
-
 ## <a name="step-6---install-language-packs-optional"></a>Etapa 6 - Instalar pacotes de idiomas (opcional)
 
 Por padrão, o programa do instalador tenta encontrar a correspondência do idioma do sistema operacional quando ele é executado pela primeira vez. Para instalar o Visual Studio 2017 em um idioma de sua escolha, clique na opção **Pacotes de idioma** do Instalador do Visual Studio e siga os prompts.
 
   ![Visual Studio 2017 — Instalar pacotes de idiomas](media/vs2017-languages.PNG "Instalar pacotes de idiomas do Visual Studio")
-
-  |         |         |
-  |---------|---------|
-  |  ![ícone de câmera para vídeo](media/video-icon.png "Assistir a um vídeo")  |   [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) sobre como instalar um pacote de idiomas usando o Instalador do Visual Studio. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Alterar o idioma de instalação da linha de comando
 
@@ -142,7 +124,7 @@ Para obter mais informações, consulte a página [Alterar locais de instalaçã
 
    Por exemplo, para [compilar um aplicativo em C++](../ide/getting-started-with-cpp-in-visual-studio.md), clique em **Instalado**, expanda **Visual C++** e, em seguida, selecione o tipo de projeto C++ que deseja compilar.
 
-   Para [compilar um aplicativo em C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), clique em **Instalado**, expanda **Visual C#** e, em seguida, selecione o tipo de projeto C# que deseja compilar.
+   Para [compilar um aplicativo em C#](../get-started/csharp/tutorial-wpf.md), clique em **Instalado**, expanda **Visual C#** e, em seguida, selecione o tipo de projeto C# que deseja compilar.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

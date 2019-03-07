@@ -1,8 +1,6 @@
 ---
-title: 'Como: publicar um aplicativo ClickOnce usando o Assistente de publicação | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Publicar um aplicativo ClickOnce usando o Assistente de publicação | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 890a61290d7606fb2a03ea7aed2c4782e5b69b67
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016545"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Como publicar um aplicativo ClickOnce usando o Assistente de Publicação
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Como: Publicar um aplicativo ClickOnce usando o assistente de publicação
 Para disponibilizar um aplicativo ClickOnce para os usuários, você deve publicá-lo para um compartilhamento de arquivo ou caminho, servidor FTP ou mídia removível. É possível publicar o aplicativo usando o Assistente de Publicação; as propriedades adicionais relacionadas à publicação estão disponíveis na página **Publicar** do **Designer de Projeto**. Para obter mais informações, consulte [aplicativos ClickOnce publicação](../deployment/publishing-clickonce-applications.md).
 
 Antes de executar o Assistente de Publicação, configure as propriedades de publicação corretamente. Por exemplo, se você deseja designar uma chave para assinar o aplicativo ClickOnce, pode fazer isso na página **Assinatura** do **Designer de Projeto**. Para obter mais informações, consulte [aplicativos ClickOnce Secure](../deployment/securing-clickonce-applications.md).

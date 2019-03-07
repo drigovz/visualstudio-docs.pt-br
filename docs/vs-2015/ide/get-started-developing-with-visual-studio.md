@@ -1,42 +1,37 @@
 ---
 title: Introdução ao desenvolvimento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
 caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 160922088eb0d5f517de072649df94479e4d7e31
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 957e1d771723578b425e4eafbb2aa7c912b230e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062781"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805346"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introdução ao desenvolvimento com o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bem-vindo ao Visual Studio! Depois de [baixar](http://www.visualstudio.com/community) o produto, essas páginas o ajudarão a começar a codificação.
 
--   **[Crie aplicativos web](https://www.visualstudio.com/features/modern-web-tooling-vs):** Ferramentas para criar e implantar aplicativos web modernos.
+-   **[Crie aplicativos Web](https://www.visualstudio.com/features/modern-web-tooling-vs):** ferramentas para criar e implantar aplicativos Web modernos.
 
      [Siga um tutorial](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                              [Procure os documentos](https://docs.asp.net/) &#124;                                  [Assista a um vídeo](http://www.asp.net/vnext)
 
--   **[Tornar aplicativos móveis de plataforma cruzada em HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  : Apache Cordova é um ambiente de plataforma cruzada do código-fonte aberto baseado em HTML/CSS/Javascript.  O código Javascript é executado em um wrapper que direciona uma plataforma específica e permite o acesso a todos os recursos de hardware do dispositivo. Desenvolva aplicativos para a Apple Store, para a Android Store e para a Windows Store.
+-   **[Crie aplicativos móveis de plataforma cruzada em HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**: o Apache Cordova é um ambiente de plataforma cruzada de software livre baseado em HTML/CSS/Javascript.  O código Javascript é executado em um wrapper que direciona uma plataforma específica e permite o acesso a todos os recursos de hardware do dispositivo. Desenvolva aplicativos para a Apple Store, para a Android Store e para a Windows Store.
 
      [Carregue uma amostra](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [Siga um tutorial](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) &#124;                               [Procure os documentos](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) &#124;                                [Assista a um vídeo](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
--   **[Tornar aplicativos móveis de plataforma cruzada em c# ou Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  : Introdução ao uso do Visual Studio e ferramentas para Xamarin para criar aplicativos móveis que são executados no Android, iOS e a plataforma Universal do Windows em uma base de código compartilhado.
+-   **[Crie aplicativos móveis de plataforma cruzada em C# ou Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**: comece a usar o Visual Studio e as Ferramentas para Xamarin para criar aplicativos móveis executados no Android, iOS e na Plataforma Universal do Windows em uma base de código compartilhada.
 
      Carregue um exemplo: [Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (interface do usuário nativa) ou [Exemplo de lista de pendências do Xamarin Forms](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interface do usuário compartilhada do Xamarin.Forms) &#124;   [Realize um tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Navegue nos documentos](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Assista a um vídeo](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
@@ -44,23 +39,23 @@ Bem-vindo ao Visual Studio! Depois de [baixar](http://www.visualstudio.com/commu
 
      [Carregue uma amostra](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124;   [Siga um tutorial](https://msdn.microsoft.com/library/dn707595.aspx) &#124;                             [Procure os documentos](https://msdn.microsoft.com/library/dn707591.aspx) &#124;                                  [Assista a um vídeo](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
 
--   **[Crie jogos com DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**  : Começar a criar jogos de plataforma Universal do Windows usando o DirectX.
+-   **[Crie jogos com DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**: comece a criar jogos da Plataforma Universal do Windows usando DirectX.
 
      [Carregue uma amostra](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) &#124;                    [Siga um tutorial](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124;                                [Procure os documentos](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124;                                   [Assista a um vídeo](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
 
--   **[Crie jogos com Unity](../cross-platform/visual-studio-tools-for-unity.md)**  : Começar a criar jogos de plataforma cruzada usando a estrutura Unity.
+-   **[Crie jogos com Unity](../cross-platform/visual-studio-tools-for-unity.md)** : comece a criar jogos de plataforma cruzada usando a estrutura Unity.
 
      [Carregue uma amostra](http://unity3d.com/learn/resources/downloads) &#124;                     [Siga um tutorial](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124;                               [Procure os documentos](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [Assista a um vídeo](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
--   **[Tornar o Windows Universal aplicativos de plataforma](https://dev.windows.com/windows-apps)**  : Começar a criar aplicativos que são executados na plataforma Universal do Windows (XBox, PCs, tablets, Windows Phone, Surface Hub e Internet das coisas).
+-   **[Crie aplicativos da Plataforma Universal do Windows](https://dev.windows.com/windows-apps)**: Crie aplicativos que serão executados na Plataforma Universal do Windows (XBox, computadores, tablets, Windows Phone, Surface Hub e Internet das Coisas).
 
      [Carregue uma amostra](https://github.com/Microsoft/Windows-universal-samples) &#124;                          [Siga um tutorial](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) &#124;                               [Procure os documentos](https://dev.windows.com) &#124;     [Assista a um vídeo](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10)
 
--   **[Tornar os aplicativos da área de trabalho](https://dev.windows.com/desktop)**  : Clique aqui para começar a criar aplicativos de desktop tradicionais que são executados em computadores Windows.
+-   **[Crie aplicativos da área de trabalho](https://dev.windows.com/desktop)**: clique aqui para começar a criar aplicativos da área de trabalho tradicionais executados em computadores Windows.
 
      [Carregue uma amostra](https://github.com/microsoft/windows-classic-samples) &#124;                     [Siga um tutorial](https://msdn.microsoft.com/library/dd492171.aspx) &#124;                               [Procure os documentos](https://dev.windows.com/desktop)
 
--   **[Crie aplicativos do Office](https://msdn.microsoft.com/library/fp161347.aspx)**  : Começar a criar aplicativos do Office que estendam e personalizem o Word, Excel, Outlook e Powerpoint com serviços do Office 365.
+-   **[Crie aplicativos do Office](https://msdn.microsoft.com/library/fp161347.aspx)**  : Começar a criar aplicativos do Office que estendam e personalizem o Word, Excel, Outlook e PowerPoint com serviços do Office 365.
 
      [Carregue uma amostra](https://code.msdn.microsoft.com/office365/) &#124;                       [Siga um tutorial](http://dev.office.com/getting-started/office365apis) &#124;                              [Pesquise os documentos](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [Assista a um vídeo](http://dev.office.com/videos)
 

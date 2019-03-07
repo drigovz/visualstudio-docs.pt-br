@@ -1,8 +1,6 @@
 ---
-title: 'CA1822: marcar membros como estáticos'
+title: 'CA1822: Marcar membros como estáticos'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 743f0af7-41d1-4852-8d97-af0688b31118
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90b3dedfb76d222a8d9344c81410327de09e153
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5ac9aff8741654ee5799724feb09c53f588dafb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894528"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948518"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: marcar membros como estáticos
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar membros como estáticos
 
 |||
 |-|-|
@@ -45,8 +43,8 @@ ms.locfileid: "49894528"
  É seguro suprimir um aviso nessa regra para o código fornecido anteriormente para o qual a correção seria uma alteração significativa.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)

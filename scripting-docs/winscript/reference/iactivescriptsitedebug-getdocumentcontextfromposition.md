@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetDocumentContextFromPosition | Microsoft Docs
+title: Getdocumentcontextfromposition | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25ce03a124f246443afd0f5a8540a93e7d474f9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1bcc7469e02ba380ebd6839e9fe55031e52ecd32
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724766"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086978"
 ---
 # <a name="iactivescriptsitedebuggetdocumentcontextfromposition"></a>IActiveScriptSiteDebug::GetDocumentContextFromPosition
 Usado pelo mecanismo de linguagem para delegar `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetDocumentContextFromPosition(  
    DWORD_PTR                dwSourceContext,  
    ULONG                    uCharacterOffset,  
@@ -41,16 +41,16 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwSourceContext`  
- [in] O conteúdo de origem conforme fornecido `ParseScriptText` ou `AddScriptlet`.  
+ [in] O conteúdo de origem conforme fornecido para `ParseScriptText` ou `AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Deslocamento em relação ao início do bloco de script ou miniscript de caractere.  
+ [in] Caractere de deslocamento relativo ao início do bloco de script ou o scriptlet.  
   
  `uNumChars`  
- [in] Número de caracteres neste contexto.  
+ [in] Número de caracteres nesse contexto.  
   
  `ppsc`  
- [out] O contexto de documento correspondente a esse intervalo de posição do caractere.  
+ [out] O contexto do documento correspondente a esse intervalo de posição do caractere.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -60,7 +60,7 @@ HRESULT GetDocumentContextFromPosition(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Mecanismos de idioma usam esse método para delegar `IDebugCodeContext::GetSourceContext`.  
+ Mecanismos de linguagem usam esse método para delegar `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptSiteDebug Interface](../../winscript/reference/iactivescriptsitedebug-interface.md)

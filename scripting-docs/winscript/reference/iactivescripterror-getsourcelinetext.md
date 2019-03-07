@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb886d5f40042313483dc3b298488d1291c30563
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3186ec3edcdd0c66f06f7b769eff31e8b050c428
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645696"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349147"
 ---
 # <a name="iactivescripterrorgetsourcelinetext"></a>IActiveScriptError::GetSourceLineText
-Recupera a linha no arquivo de origem em que ocorreu um erro enquanto um mecanismo de script estiver em execução em um script.  
+Recupera a linha no arquivo de origem em que ocorreu um erro enquanto um mecanismo de script estava em execução em um script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetSourceLineText(  
     BSTR *pbstrSourceLine  // address of buffer for source line  
 );  
@@ -38,7 +38,7 @@ HRESULT GetSourceLineText(
   
 ## <a name="parameter"></a>Parâmetro  
  `pbstrSourceLine`  
- [out] Endereço de um buffer que recebe a linha do código-fonte no qual ocorreu o erro.  
+ [out] Endereço de um buffer que recebe a linha de código-fonte no qual ocorreu o erro.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna `S_OK` se for bem-sucedido, ou `E_FAIL` se a linha no arquivo de origem não foi recuperada.  

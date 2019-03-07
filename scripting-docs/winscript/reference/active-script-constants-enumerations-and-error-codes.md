@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb4165a5471c8e79827f0f7605cef575e82bab75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f5e25070aa92a9464bfc92433c0d2b7763232fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641566"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347613"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>Constantes, enumerações e códigos de erro do script ativo
 Esta seção descreve as enumerações e códigos de erro usados nos mecanismos de script do Windows.  
@@ -26,13 +26,13 @@ Esta seção descreve as enumerações e códigos de erro usados nos mecanismos 
   
 |Constante|Descrição|  
 |--------------|-----------------|  
-|[Constantes SCRIPTTHREADID](../../winscript/reference/scriptthreadid-constants.md)|Especifica o tipo de segmento.|  
+|[Constantes SCRIPTTHREADID](../../winscript/reference/scriptthreadid-constants.md)|Especifica o tipo de thread.|  
   
 ## <a name="properties"></a>Propriedades  
   
 |Propriedade|Descrição|  
 |--------------|-----------------|  
-|[Propriedade SCRIPTPROP_HOSTKEEPALIVE](../../winscript/reference/scriptprop-hostkeepalive-property.md)|Usado para especificar se o mecanismo de script deve ser mantido totalmente funcional, se houver referências pendentes.|  
+|[Propriedade SCRIPTPROP_HOSTKEEPALIVE](../../winscript/reference/scriptprop-hostkeepalive-property.md)|Usado para especificar se o mecanismo de script deve ser mantido totalmente funcional se houver referências pendentes.|  
   
 ## <a name="enumerations"></a>Enumerações  
   
@@ -43,9 +43,9 @@ Esta seção descreve as enumerações e códigos de erro usados nos mecanismos 
 |[Enumeração SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md)|Especifica o estado de um mecanismo de script.|  
 |||  
 |[Enumeração SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md)|Especifica o estado de um thread em um mecanismo de script.|  
-|[Enumeração SCRIPTTRACEINFO](../../winscript/reference/scripttraceinfo-enumeration.md)|Representa o evento de script que está sendo rastreado. Usado no [: Sendscripttraceinfo método](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).|  
+|[Enumeração SCRIPTTRACEINFO](../../winscript/reference/scripttraceinfo-enumeration.md)|Representa o evento de script que está sendo rastreado. Usado na [método iactivescriptsitetraceinfo:: Sendscripttraceinfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).|  
 |[Enumeração SCRIPTUICHANDLING](../../winscript/reference/scriptuichandling-enumeration.md)|Representa a maneira que o controle de interface do usuário deve ser tratado.|  
-|[Enumeração SCRIPTUICITEM](../../winscript/reference/scriptuicitem-enumeration.md)|Representa o tipo de item de interface do usuário. Usado no [método Iactivescriptsiteuicontrol:](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).|  
+|[Enumeração SCRIPTUICITEM](../../winscript/reference/scriptuicitem-enumeration.md)|Representa o tipo de item de interface do usuário. Usado na [método iactivescriptsiteuicontrol:: Getuibehavior](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).|  
   
 ## <a name="error-codes"></a>Códigos de erro  
   
@@ -53,7 +53,7 @@ Esta seção descreve as enumerações e códigos de erro usados nos mecanismos 
 |----------------|-----------------|  
 |[Código de erro SCRIPT_E_PROPAGATE](../../winscript/reference/script-e-propagate-error-code.md)|Um erro de script está sendo propagado para o chamador, que pode estar em um thread diferente.|  
 |[Código de erro SCRIPT_E_RECORDED](../../winscript/reference/script-e-recorded-error-code.md)|Um erro foi passado entre o mecanismo de script e o host.|  
-|[Código de erro SCRIPT_E_REPORTED](../../winscript/reference/script-e-reported-error-code.md)|O mecanismo de script relatou uma exceção sem tratamento no host.|  
+|[Código de erro SCRIPT_E_REPORTED](../../winscript/reference/script-e-reported-error-code.md)|O mecanismo de script relatou uma exceção sem tratamento para o host.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Interfaces de script ativo](../../winscript/reference/active-script-interfaces.md)

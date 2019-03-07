@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8b602afa2b6611f5201515f492f7b3c7bb7afa08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966707"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912411"
 ---
 # <a name="structure-your-modeling-solution"></a>Estruturar a solução de modelagem
 
@@ -36,7 +34,7 @@ Em um projeto de médio ou grande, a estrutura da equipe com base na estrutura d
 
 2. Crie uma solução do Visual Studio, que chamaremos a solução de arquitetura. Esta solução será usada para criar o design geral do sistema. Ele conterá os modelos, mas nenhum código.
 
-   Adicione um diagrama de dependência para esta solução. No diagrama de dependência, desenhe a arquitetura que você escolheu para o seu aplicativo. Por exemplo, o diagrama pode mostrar essas camadas e as dependências entre eles: apresentação; Lógica de negócios; e os dados.
+   Adicione um diagrama de dependência para esta solução. No diagrama de dependência, desenhe a arquitetura que você escolheu para o seu aplicativo. Por exemplo, o diagrama pode mostrar essas camadas e as dependências entre eles: Apresentação; Lógica de negócios; e os dados.
 
 4. Crie uma solução do Visual Studio separada para cada camada no diagrama de dependência de arquitetura.
 
@@ -76,7 +74,7 @@ Em um projeto de médio ou grande, a estrutura da equipe com base na estrutura d
 
 1. Na solução para cada camada, adicione o projeto de modelagem de arquitetura. Na **Gerenciador de soluções**, clique com botão direito no nó da solução, aponte para **Add**e, em seguida, clique em **projeto existente**. O projeto de modelagem único agora pode ser acessado de cada solução: o projeto de arquitetura e o projeto de desenvolvimento para cada camada.
 
-2. No modelo compartilhado, crie um pacote para cada camada: nos **Gerenciador de soluções**, selecione o projeto de modelagem. Na **Gerenciador de modelos UML**, clique com botão direito no nó de raiz do modelo, aponte para **Add**e, em seguida, clique em **pacote**.
+2. No modelo compartilhado, crie um pacote para cada camada: Na **Gerenciador de soluções**, selecione o projeto de modelagem. Na **Gerenciador de modelos UML**, clique com botão direito no nó de raiz do modelo, aponte para **Add**e, em seguida, clique em **pacote**.
 
    Cada pacote contém diagramas que descrevem os requisitos e design da camada correspondente.
 

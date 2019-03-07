@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180419"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927030"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referências de serviço
 
@@ -96,7 +94,7 @@ Quando ele tenta exibir uma representação XML dos dados em um [!INCLUDE[ss_dat
 
 Para corrigir esse erro, desabilite os feeds RSS:
 
-1.  No Internet Explorer, sobre o **ferramentas** menu, clique em **opções da Internet**.
+1.  No Internet Explorer, no menu **Ferramentas**, clique em **Opções da Internet**.
 
 2.  Sobre o **conteúdo** guia da **Feeds** seção, clique em **configurações**.
 

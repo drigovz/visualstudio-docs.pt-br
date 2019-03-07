@@ -1,8 +1,6 @@
 ---
-title: Como definir permissões | Microsoft Docs
-ms.custom: ''
+title: 'Como: Definir permissões | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
@@ -12,17 +10,17 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897375"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620818"
 ---
-# <a name="how-to-set-permissions"></a>Como definir permissões
+# <a name="how-to-set-permissions"></a>Como: Configurar permissões
 
 Este artigo descreve como um Administrador de um computador concede as permissões de segurança necessárias para a criação de perfil para um usuário ou grupo que não tenha permissões de Administrador no computador.
 
@@ -84,7 +82,7 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 2. Altere o diretório para:
 
     ```cmd
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
+    <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
 3. Execute o seguinte comando:
@@ -123,6 +121,6 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
 ## <a name="see-also"></a>Consulte também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
 [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)

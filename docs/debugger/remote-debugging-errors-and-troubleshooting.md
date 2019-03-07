@@ -1,8 +1,6 @@
 ---
-title: Erros de depuração remota e solução de problemas | Microsoft Docs
-ms.custom: ''
+title: Solução de problemas e erros de depuração remota | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -19,26 +17,26 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbac9eea6b3510d670aa00e48c85c8dd5bb0e4b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: df38a0d65a3073e35228c84fa18606e2fe014f9d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474357"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702103"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Erros de depuração remota e solução de problemas
-Você pode descobrir os seguintes erros ao tentar depurar remotamente.  
-  
--   [Erro: não é possível intervir automaticamente no servidor](../debugger/error-unable-to-automatically-step-into-the-server.md)  
-  
--   [Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
-  
--   [Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
-  
--   [Erro: O computador remoto não aparece em uma caixa de diálogo Conexões Remotas](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
-  
-## <a name="see-also"></a>Consulte também  
- [Depuração remota](../debugger/remote-debugging.md)
+Você pode descobrir os seguintes erros ao tentar depurar remotamente.
+
+-   [Erro: não é possível intervir automaticamente no servidor](../debugger/error-unable-to-automatically-step-into-the-server.md)
+
+-   [Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
+
+-   [Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+
+-   [Erro: O computador remoto não aparece em uma caixa de diálogo Conexões Remotas](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
+
+## <a name="see-also"></a>Consulte também
+- [Depuração remota](../debugger/remote-debugging.md)

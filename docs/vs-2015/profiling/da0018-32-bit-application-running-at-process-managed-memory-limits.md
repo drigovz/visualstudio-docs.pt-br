@@ -1,14 +1,9 @@
 ---
 title: 'DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,13 +12,13 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722256"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773281"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51722256"
 Id da regra | DA0018 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Método de criação de perfil | Amostragem |  
-| Mensagem | Gerenciado alocações de memória se aproximando do limite padrão para um processo de 32 bits. Seu aplicativo pode ser associado à memória. |  
+| Mensagem | Gerenciado alocações de memória se aproximando do limite padrão para um processo de 32 bits. O aplicativo pode ser associado à memória.|  
 | Tipo de regra | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  
@@ -59,7 +54,7 @@ Id da regra | DA0018 |
   
 - otimizar o uso do aplicativo de recursos de memória gerenciada  
   
-   -ou-  
+   - ou -  
   
 - tomar medidas para aliviar as restrições de arquitetura em relação ao tamanho máximo de memória virtual para um processo de 32 bits  
   
@@ -74,6 +69,3 @@ Id da regra | DA0018 |
   Para obter alívio de arquitetura das restrições de memória virtual em relação ao tamanho da parte privada de um espaço de endereço do processo, tente executar esse processo de 32 bits em um computador de 64 bits.  Um processo de 32 bits em um computador de 64 bits pode adquirir até 4 GB de memória virtual privada.  
   
   Um processo de 64 bits em execução em um computador de 64 bits pode adquirir até 8 TB de memória virtual. Considere uma nova compilação do aplicativo para que ele seja executado como um aplicativo nativo de 64 bits. Essa regra se destina apenas a fins informativos e pode não exigir ação corretiva.
-
-
-

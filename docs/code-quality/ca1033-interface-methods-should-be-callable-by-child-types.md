@@ -1,8 +1,6 @@
 ---
-title: 'CA1033: os métodos de interface devem ser chamáveis por tipos filho'
+title: 'CA1033: Métodos de interface devem ser chamados por tipos filho'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - InterfaceMethodsShouldBeCallableByChildTypes
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 9f171497-a5e3-4769-a77b-7aed755b2662
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b56cd055fa8413d7d98a1c0d6d8b538a8a858af6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1fd8ee08b53ef3f9216edcb67ebcdbe6c4978bb3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941315"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908706"
 ---
-# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: os métodos de interface devem ser chamáveis por tipos filho
+# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Métodos de interface devem ser chamados por tipos filho
 
 |||
 |-|-|

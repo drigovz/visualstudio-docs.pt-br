@@ -40,14 +40,14 @@ items:
     - name: Implantação contínua do ASP.NET Core no Azure com o Git
       href: /aspnet/core/publishing/azure-continuous-deployment
     - name: Publicar no Kubernetes com ferramentas do Visual Studio para Kubernetes
-      href: tutorial-kubernetes-tools.md
-  - name: Nativo
+      href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
+  - name: C++
     items:
-    - name: Implantação em Visual C++...
-      href: /cpp/ide/deployment-in-visual-cpp
+    - name: Implantar um aplicativo C/C++
+      href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
     - name: Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)
       href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
-    - name: Implantar um aplicativo nativo usando ClickOnce...
+    - name: Implantar um aplicativo C++/CLR usando ClickOnce...
       href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
   - name: UWP
     items:
@@ -107,6 +107,8 @@ items:
     - name: Publicar aplicativos ClickOnce
       href: publishing-clickonce-applications.md
       items:
+      - name: Publicar um aplicativo ClickOnce usando o assistente de publicação
+        href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
       - name: Criar aplicativos ClickOnce para que outros usuários implantem
         href: creating-clickonce-applications-for-others-to-deploy.md
       - name: Implantar aplicativos para servidores de produção e teste sem assinar novamente
@@ -117,8 +119,6 @@ items:
         href: deploying-com-components-with-clickonce.md
       - name: Compilar aplicativos ClickOnce usando a linha de comando
         href: building-clickonce-applications-from-the-command-line.md
-      - name: Publicar um aplicativo ClickOnce usando o assistente de publicação
-        href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
       - name: Especificar onde o Visual Studio copia os arquivos
         href: how-to-specify-where-visual-studio-copies-the-files.md
       - name: Especificar o local de onde os usuários finais instalarão
@@ -169,21 +169,21 @@ items:
         href: how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-dotnet-framework.md
       - name: Publicar um aplicativo WPF com estilos visuais habilitados
         href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
-      - name: 'Passo a passo: baixar assemblies sob demanda usando o designer'
+      - name: 'Passo a passo: Baixar assemblies sob demanda usando o designer'
         href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
         items:
-        - name: 'Passo a passo: baixar assemblies sob demanda'
+        - name: 'Passo a passo: Baixar assemblies sob demanda'
           href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
-      - name: 'Passo a passo: baixar assemblies satélites sob demanda usando o designer'
+      - name: 'Passo a passo: Baixar assemblies satélites sob demanda usando o designer'
         href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-      - name: 'Passo a passo: implantar um aplicativo ClickOnce manualmente'
+      - name: 'Passo a passo: Como implantar um aplicativo ClickOnce'
         href: walkthrough-manually-deploying-a-clickonce-application.md
         items:
-        - name: 'Passo a passo: implantar manualmente um aplicativo que não requer uma nova assinatura'
+        - name: 'Passo a passo: Implantar manualmente um aplicativo que não requer uma nova assinatura'
           href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
-      - name: 'Passo a passo: baixar assemblies satélites sob demanda'
+      - name: 'Passo a passo: Baixar assemblies satélites sob demanda'
         href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md
-      - name: 'Passo a passo: criar um instalador personalizado'
+      - name: 'Passo a passo: Criar um instalador personalizado'
         href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
     - name: Escolher uma estratégia de atualização do ClickOnce
       href: choosing-a-clickonce-update-strategy.md
@@ -224,7 +224,7 @@ items:
       href: how-to-create-a-package-manifest.md
     - name: Criar um pacote de bootstrapper localizado
       href: how-to-create-a-localized-bootstrapper-package.md
-    - name: 'Passo a passo: criar um bootstrapper personalizado com um aviso de privacidade'
+    - name: 'Passo a passo: Criar um bootstrapper personalizado com um aviso de privacidade'
       href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
     - name: Referência de esquema de produto e pacote
       href: product-and-package-schema-reference.md
@@ -253,19 +253,19 @@ items:
     - name: Manifesto de aplicativo ClickOnce
       href: clickonce-application-manifest.md
       items:
-      - name: Elemento <assembly>(aplicativo ClickOnce)
+      - name: Elemento <assembly> (aplicativo ClickOnce)
         href: assembly-element-clickonce-application.md
-      - name: Elemento <assemblyIdentity>(aplicativo ClickOnce)
+      - name: Elemento <assemblyIdentity> (aplicativo ClickOnce)
         href: assemblyidentity-element-clickonce-application.md
-      - name: Elemento <trustInfo>(aplicativo ClickOnce)
+      - name: Elemento <trustInfo> (aplicativo ClickOnce)
         href: trustinfo-element-clickonce-application.md
-      - name: Elemento <entryPoint>(aplicativo ClickOnce)
+      - name: Elemento <entryPoint> (aplicativo ClickOnce)
         href: entrypoint-element-clickonce-application.md
-      - name: Elemento <dependency>(aplicativo ClickOnce)
+      - name: Elemento <dependency> (aplicativo ClickOnce)
         href: dependency-element-clickonce-application.md
-      - name: Elemento <file>(aplicativo ClickOnce)
+      - name: Elemento <file> (aplicativo ClickOnce)
         href: file-element-clickonce-application.md
-      - name: Elemento <fileAssociation>(aplicativo ClickOnce)
+      - name: Elemento <fileAssociation> (aplicativo ClickOnce)
         href: fileassociation-element-clickonce-application.md
     - name: Manifesto de implantação do ClickOnce
       href: clickonce-deployment-manifest.md
@@ -290,9 +290,9 @@ items:
         href: customerrorreporting-element-clickonce-deployment.md
     - name: Referência de API não gerenciada do ClickOnce
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: 303890cae6181264f0bcd96e24b27a1065d67d6b
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: ea0d78149670c3b3d180104c25f5cffa3f3cb1fa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243972"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526445"

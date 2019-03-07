@@ -1,8 +1,6 @@
 ---
 title: Comando Imprimir
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.print
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef4f0c5c6bd5be2820e1f666529fc43fac59763
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c9a3de1fba86c78f16703efd858448bc0f25e8d0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704246"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952288"
 ---
 # <a name="print-command"></a>Comando Imprimir
 Avalia uma expressão ou exibe o texto especificado.

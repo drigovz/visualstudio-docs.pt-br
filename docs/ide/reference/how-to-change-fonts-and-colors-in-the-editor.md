@@ -1,8 +1,6 @@
 ---
 title: Alterar as fontes e as cores do editor
 ms.date: 11/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4e6fefeac5ecdaf03f4e672ea6804b0c20c79136
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894541"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934608"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Como alterar as fontes e as cores do editor no Visual Studio 2017
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Como: Alterar as fontes e as cores do editor no Visual Studio 2017
 
 Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de primeiro plano e da tela de fundo de vários **Itens de exibição** de texto no editor de códigos. Ao alterar as configurações de fonte, lembre-se das seguintes informações:
 
@@ -55,4 +53,4 @@ Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de p
 - [Personalizar o editor](../../ide/customizing-the-editor.md)
 - [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Como alterar fontes e cores no Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Como: Alterar fontes e cores no Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

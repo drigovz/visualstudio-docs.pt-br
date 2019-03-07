@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: ebf412dbeb4e0ecc391c52d7da5ea49d12e6231f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: Exibir trabalhos recentes
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: a2970c0086ec18789347eebdea752487be18ce7d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930356"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842764"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Exibir detalhes e desempenho do trabalho recentes
 

@@ -1,10 +1,7 @@
 ---
 title: IDebugProcess3::DisableENC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcess3::DisableENC
 helpviewer_keywords:
@@ -12,45 +9,46 @@ helpviewer_keywords:
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc769e7386777dbf59dadbbe93b53bc9cac01ce0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39b7456d9a045331c53f8465cc7387823c734104
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875855"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688921"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Esse método explicitamente desabilita editar e continuar sobre esse processo (e todos os programas que ele contém). Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT DisableENC(  
-   EncUnavailableReason reason  
-);  
-```  
-  
-```csharp  
-   EncUnavailableReason reason  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `reason`  
- [in] Um valor a partir de [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeração.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  
-  
+Esse método explicitamente desabilita editar e continuar sobre esse processo (e todos os programas que ele contém). Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT DisableENC(
+   EncUnavailableReason reason
+);
+```
+
+```csharp
+   EncUnavailableReason reason
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `reason`
+
+ [in] Um valor a partir de [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeração.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.
+
 > [!NOTE]
->  Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.  
-  
-## <a name="remarks"></a>Comentários  
- Uma vez editar e continuar está desabilitado para um processo, ele pode ser habilitado novamente reiniciando o processo.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
- [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)
+>  Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.
+
+## <a name="remarks"></a>Comentários
+ Uma vez editar e continuar está desabilitado para um processo, ele pode ser habilitado novamente reiniciando o processo.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
+- [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

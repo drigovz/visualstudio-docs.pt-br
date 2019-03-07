@@ -1,8 +1,6 @@
 ---
-title: 'CA1812: evitar classes internas sem instâncias'
+title: 'CA1812: Evitar classes internas sem instâncias'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827449"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950741"
 ---
-# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: evitar classes internas sem instâncias
+# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar classes internas sem instâncias
 
 |||
 |-|-|
@@ -99,8 +97,8 @@ Para corrigir uma violação dessa regra, remova o tipo ou adicione o código qu
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
-[CA1801: examinar parâmetros não usados](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Revisar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)
 
-[CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)

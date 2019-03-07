@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ce67df5dd55bd8c1ae55bb19fe2a19aed9e40f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aebe983c33416d1c3d12d18c272fd1e4de27467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727106"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093100"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
 Retorna o resultado da avaliação da expressão como uma propriedade de depuração e o valor de retorno da operação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetResultAsDebugProperty(  
    HRESULT*          phrResult,  
    IDebugProperty**  ppdp  
@@ -53,9 +53,9 @@ HRESULT GetResultAsDebugProperty(
 |`E_PENDING`|A operação ainda está pendente.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o resultado da avaliação de expressão como um `IDebugProperty` e a operação `HRESULT`.  
+ Esse método retorna o resultado da avaliação da expressão como uma `IDebugProperty` e a operação `HRESULT`.  
   
- Este método retorna `S_OK` e `phrResult` retorna `E_ABORT` se `Abort` anula a operação.  
+ Esse método retornará `S_OK` e `phrResult` retorna `E_ABORT` se `Abort` anula a operação.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugExpression](../../winscript/reference/idebugexpression-interface.md)   

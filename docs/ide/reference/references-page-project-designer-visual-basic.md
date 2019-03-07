@@ -1,8 +1,6 @@
 ---
 title: Página Referências, Designer de Projeto (Visual Basic)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesReference
@@ -11,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815189"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335124"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 
@@ -34,12 +31,6 @@ Para acessar a página **Referências**, escolha um nó de projeto (não o nó *
 ## <a name="uielement-list"></a>Lista UIElement
 
 As opções a seguir permitem selecionar ou remover referências e namespaces importados em seu projeto.
-
-**Referências Não Utilizadas**
-
-Clique neste botão para acessar a caixa de diálogo **Referências Não Utilizadas**.
-
-A caixa de diálogo **Referências Não Utilizadas** permite remover referências que estão incluídas em seu projeto, mas na verdade não são usadas pelo código. Ela contém uma grade que lista o **Nome da Referência**, o **Caminho** e outras informações sobre as referências de namespace não utilizadas em seu projeto. Na grade, selecione as referências de namespace que você deseja remover de seu projeto e clique em **Remover**.
 
 **Caminhos de Referência**
 
@@ -100,5 +91,5 @@ Clique neste botão para acessar a caixa de diálogo **Caminhos de Referência**
 ## <a name="see-also"></a>Consulte também
 
 - [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md)
-- [Como adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Como: Adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Instrução Imports (Namespace de XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

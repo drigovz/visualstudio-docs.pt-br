@@ -3,22 +3,20 @@ title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 4, modelo de pro
 titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos fornecidos pelo modelo Projeto Web do Django.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e9f356a8b6af23e587bf5f22ea99c64218f0dee7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065455"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943422"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Etapa 4: Usar o modelo completo de Projeto Web do Django
 

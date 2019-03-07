@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17098b4055bb61e9a2f639404edfe2214abc931e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728006"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087484"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Retorna o caminho do arquivo de Ajuda e a ID do contexto do tópico que explica o erro, se possível.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetHelpInfo(  
    BSTR*  pbstrFileName,  
    DWORD*  pdwContext  
@@ -39,10 +39,10 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrFileName`  
- [out] Cadeia de caracteres que contém o caminho totalmente qualificado do arquivo de Ajuda. Se não há nenhum arquivo de Ajuda ou ocorrerá um erro, o valor de retorno será NULL.  
+ [out] Cadeia de caracteres que contém o caminho totalmente qualificado do arquivo de Ajuda. Se não há nenhum arquivo de Ajuda ou ocorre um erro, o valor retornado é NULL.  
   
  `pdwContext`  
- [out] A ID do contexto de ajuda para o erro. Se não houver nenhum arquivo de Ajuda (se `pbstrFileName` for NULL), esse parâmetro não tem nenhum significado.  
+ [out] A ID do contexto de ajuda para o erro. Se não houver nenhum arquivo de Ajuda (se `pbstrFileName` é NULL), esse parâmetro não tem nenhum significado.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -51,8 +51,8 @@ HRESULT GetHelpInfo(
 |-----------|-----------------|  
 |`S_OK`|O método foi bem-sucedido.|  
 |`E_FAIL`|Ocorreu um erro específico do provedor.|  
-|`E_INVALIDARG`|`pbstrFileName`ou `pdwContext` era nulo.|  
-|`E_OUTOFMEMORY`|O provedor não pôde alocar memória suficiente para retornar o caminho do arquivo de Ajuda.|  
+|`E_INVALIDARG`|`pbstrFileName` ou `pdwContext` era nulo.|  
+|`E_OUTOFMEMORY`|O provedor não pôde alocar memória suficiente no qual retornar o caminho do arquivo de Ajuda.|  
   
 ## <a name="remarks"></a>Comentários  
  Esse método retorna o caminho do arquivo de Ajuda e a ID do contexto do tópico que explica o erro, se possível.  

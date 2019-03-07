@@ -1,27 +1,25 @@
 ---
 title: 'Passo a passo: Exemplo de LinqToXmlDataBinding'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824896a4e381a6a8d5c5e0935010b1cf224ed9b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839226"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931722"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Passo a passo: exemplo de LinqToXmlDataBinding
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Passo a passo: Exemplo de LinqToXmlDataBinding
 Este passo a passo descreve o exemplo de LinqToXmlDataBinding e explica o conteúdo mais interessante de seus dois arquivos de origem primários, *L2DBForm.xaml* e *L2DBForm.xaml.cs*.
 
 ## <a name="prerequisites"></a>Pré-requisitos
- Antes de ler este passo a passo, recomendamos que você compile e execute o programa LinqToXmlDataBinding conforme descrito em [Como compilar e executar o exemplo de LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
+ Antes de ler este passo-a-passo, é altamente recomendados que você compila e executa o programa de LinqToXmlDataBinding como descrito em [Como: Compilar e executar o exemplo de LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
 
 ## <a name="remarks"></a>Comentários
  O programa de LinqToXmlDataBinding é um aplicativo Windows Presentation Foundation (WPF) composto de arquivos de origem C# e XAML. Contém um documento XML inserido que define uma lista de livros, e permite que o usuário para exibir, adicionar, excluir, e editar essas entradas. É composto de dois seguintes arquivos de fonte primária:
@@ -50,4 +48,4 @@ Este passo a passo descreve o exemplo de LinqToXmlDataBinding e explica o conte�
 ## <a name="see-also"></a>Consulte também
 
 - [Exemplo de associação de dados do WPF usando LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Como criar e executar o exemplo de LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+- [Como: Compilar e executar o exemplo de LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

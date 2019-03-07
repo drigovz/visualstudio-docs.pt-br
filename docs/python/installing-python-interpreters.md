@@ -2,22 +2,20 @@
 title: Selecionar e instalar interpretadores do Python
 description: Uma lista completa de interpretadores do Python que têm suporte no Visual Studio com instruções breves sobre onde localizar os instaladores.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de7bd0dcbdd36b9d30ea252a70a380b190adcce2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063555"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920997"
 ---
 # <a name="install-python-interpreters"></a>Instalar interpretadores do Python
 

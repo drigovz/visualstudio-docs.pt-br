@@ -1,8 +1,6 @@
 ---
 title: Tarefa GenerateDeploymentManifest | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - GenerateDeploymentManifest task [MSBuild]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ac7c6f1a840a38508e49ca15efdd08c2043da6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939638"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610314"
 ---
 # <a name="generatedeploymentmanifest-task"></a>Tarefa GenerateDeploymentManifest
 
@@ -69,7 +67,7 @@ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <x
 
 ## <a name="see-also"></a>Consulte também
 
-[Tarefas](../msbuild/msbuild-tasks.md)  
-[Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)  
-[Tarefa SignFile](../msbuild/signfile-task.md)  
-[Referência de tarefas](../msbuild/msbuild-task-reference.md)
+- [Tarefas](../msbuild/msbuild-tasks.md)
+- [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)
+- [Tarefa SignFile](../msbuild/signfile-task.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

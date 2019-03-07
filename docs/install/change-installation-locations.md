@@ -2,9 +2,7 @@
 title: Selecionar os locais de instalação
 description: Saiba como reduzir o volume de instalação do Visual Studio na unidade do sistema alterando a localização do cache de download, dos componentes compartilhados, dos SDKs e das ferramentas para unidades diferentes.
 ms.date: 11/07/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - change installation locations for Visual Studio
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - use the D drive
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159835"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947816"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Selecionar os locais de instalação no Visual Studio 2017
 

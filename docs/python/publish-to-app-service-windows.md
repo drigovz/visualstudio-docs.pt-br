@@ -1,24 +1,22 @@
 ---
 title: Publicar um aplicativo do Python no Serviço de Aplicativo do Azure no Windows
 description: Como publicar um aplicativo Web em Python diretamente no Serviço de Aplicativo do Azure no Windows desde o Visual Studio, incluindo o conteúdo necessário para o arquivo web.config.
-ms.date: 10/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248199"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713536"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Como publicar no Serviço de Aplicativo do Azure no Windows
 
@@ -30,7 +28,7 @@ O Visual Studio possibilita publicar um aplicativo Web do Python no Serviço de 
 O processo de publicação difere entre o Visual Studio 2017 e o Visual Studio 2015. Especificamente, o Visual Studio 2015 automatiza algumas etapas, incluindo a criação do `web.config`, mas essa automação limita o controle e flexibilidade a longo prazo. O Visual Studio 2017 requer mais etapas manuais, mas proporciona um controle mais exato sobre o ambiente do Python. As duas opções são descritas aqui.
 
 > [!Note]
-> Para obter informações adicionais das alterações entre o Visual Studio 2015 e Visual Studio 2017, consulte a postagem de blog, [Publicar no Azure no Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
+> Para obter informações adicionais das alterações entre o Visual Studio 2015 e Visual Studio 2017, consulte a postagem de blog, [Publicar no Azure no Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

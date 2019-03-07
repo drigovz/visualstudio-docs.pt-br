@@ -1,8 +1,6 @@
 ---
-title: Como exibir URLs como links no Editor
+title: 'Como: Exibir URLs como links no Editor'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - URLs, opening
@@ -11,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7d05dd3a6c6797bbd563a45e93df76ec16f1e36b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388524"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949623"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Como exibir URLs como links no Editor
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Como: Exibir URLs como links no Editor
 
 É possível optar por fazer o Editor de Código tratar URLs (Uniform Resource Locators) em seu código como links ativos. Quando você usa esse recurso, as URLs:
 

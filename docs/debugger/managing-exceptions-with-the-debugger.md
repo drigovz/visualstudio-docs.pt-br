@@ -2,7 +2,6 @@
 title: Gerenciar exceções com o depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -31,21 +30,21 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057912"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428694"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
-Uma exceção é uma indicação de um estado de erro que ocorre enquanto um programa está sendo executado. Você pode instruir o depurador quais exceções ou conjuntos de exceções para interromper e, no ponto em que você deseja que o depurador seja interrompido. Quando o depurador for interrompido, ele mostra onde a exceção foi lançada. Você também pode adicionar ou excluir exceções. Com uma solução aberta no Visual Studio, use **Depurar > Windows > configurações de exceção** para abrir o **configurações de exceção** janela.
+Uma exceção é uma indicação de um estado de erro que ocorre enquanto um programa está sendo executado. Você pode instruir o depurador quais exceções ou conjuntos de exceções para interromper no e no ponto em que você deseja que o depurador seja interrompido (ou seja, pausa no depurador). Quando o depurador for interrompido, ele mostra onde a exceção foi lançada. Você também pode adicionar ou excluir exceções. Com uma solução aberta no Visual Studio, use **Depurar > Windows > configurações de exceção** para abrir o **configurações de exceção** janela.
 
-Fornece manipuladores que respondem às exceções mais importantes. Saiba também como configurar o depurador para interromper a execução de algumas exceções sempre.
+Fornece manipuladores que respondem às exceções mais importantes. Se você precisa saber como adicionar manipuladores de exceções, consulte [corrigir bugs, escrevendo melhor C# código](../debugger/write-better-code-with-visual-studio.md). Além disso, saiba como configurar o depurador para interromper a execução de algumas exceções sempre.
 
 Quando ocorre uma exceção, o depurador grava uma mensagem de exceção para o **saída** janela. Ele pode interromper a execução a seguir casos quando:
 
@@ -205,7 +204,7 @@ Você pode adicionar a exceção **configurações de exceção** usando o proce
 Use o **configurações de exceção** janela para definir condições em exceções. Condições com suporte no momento incluem os nomes de módulo para incluir ou excluir da exceção. Ao definir nomes de módulo como condições, você pode optar por interromper a exceção apenas em determinados módulos de código. Você também pode optar por evitar a quebra de módulos específicos.
 
 > [!NOTE]
-> Adicionar condições a uma exceção é nova no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Adicionando condições a uma exceção tem suporte do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Para adicionar exceções condicionais:
 
@@ -217,14 +216,14 @@ Para adicionar exceções condicionais:
 
    ![As condições adicionais para uma exceção](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Para cada linha de condição, digite o nome do módulo e altere a lista de operadores de comparação para **é igual a** ou **não é igual a**. Você pode especificar caracteres curinga (* *\\* * *) no nome para especificar mais de um módulo.
+3. Para cada linha de condição, digite o nome do módulo e altere a lista de operadores de comparação para **é igual a** ou **não é igual a**. Você pode especificar caracteres curinga (**\\\***) no nome para especificar mais de um módulo.
 
 4. Se você precisar excluir uma condição, escolha o **X** no final da linha de condição.
 
 ## <a name="see-also"></a>Consulte também
 
-[Continuar a execução depois de uma exceção](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Como: Examinar o código do sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Como: Usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Usar verificações de tempo de execução sem a biblioteca em tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Tutorial: Aprender a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)
+- [Continuar a execução depois de uma exceção](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [Como examinar um código de sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Como usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Usar verificações de tempo de execução sem a biblioteca em tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)

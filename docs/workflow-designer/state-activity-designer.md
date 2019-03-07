@@ -2,22 +2,20 @@
 title: Designer de fluxo de trabalho - Designer de atividade de estado
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dee095f83d09ecf1425fa1117cafd629eb1a1add
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4d07cfeeb713767bc4f711c99b6b482759af2232
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906774"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940758"
 ---
 # <a name="state-activity-designer"></a>Designer de atividade de estado
 

@@ -1,22 +1,19 @@
 ---
 title: 'Tutorial 1: Criar um visualizador de imagens'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672152"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941482"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 
@@ -44,7 +41,7 @@ Quando você terminar, seu programa será como a imagem a seguir:
 
 Para baixar uma versão concluída do exemplo, veja [Exemplo de tutorial completo do Visualizador de Imagens](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
-![link para o vídeo](../data-tools/media/playvideo.gif)Para ver uma versão em vídeo deste tópico, confira [How do I: Create a picture viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) (Como fazer para criar um visualizador de imagens no Visual Basic?) ou [How do I: Create a picture viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198) (Como fazer para criar um visualizador de imagens em C#?).
+![link para vídeo](../data-tools/media/playvideo.gif)Para obter uma versão em vídeo deste tópico, confira [Como criar um visualizador de imagens em Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Como criar um visualizador de imagens em C#?](http://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio. O Visual C# e o Visual Basic são abordados neste tutorial, portanto concentre-se nas informações específicas da linguagem de programação que você está usando.
@@ -64,7 +61,7 @@ Para baixar uma versão concluída do exemplo, veja [Exemplo de tutorial complet
 |[Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md)|Adicione controles, como um controle `PictureBox` e um controle `CheckBox`, ao seu formulário. Adicionar botões ao seu formulário.|
 |[Etapa 6: Nomear os controles de botão](../ide/step-6-name-your-button-controls.md)|Renomear os botões a algo mais significativo.|
 |[Etapa 7: Adicionar componentes de diálogo ao formulário](../ide/step-7-add-dialog-components-to-your-form.md)|Adicionar um componente `OpenFileDialog` e um componente `ColorDialog` ao seu formulário.|
-|[Etapa 8: Escrever código para o manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Escrever código usando a ferramenta do IntelliSense.|
-|[Etapa 9: Revisar, comentar e testar o código](../ide/step-9-review-comment-and-test-your-code.md)|Revise e teste seu código. Adicionar comentários quando necessário.|
+|[Etapa 8: Escrever o código do manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Escrever código usando a ferramenta do IntelliSense.|
+|[Etapa 9: Examinar, comentar e testar o código](../ide/step-9-review-comment-and-test-your-code.md)|Revise e teste seu código. Adicionar comentários quando necessário.|
 |[Etapa 10: Escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Escrever código para tornar outros botões e uma caixa de seleção trabalhar usando o IntelliSense.|
 |[Etapa 11: Executar o programa e experimentar outros recursos](../ide/step-11-run-your-program-and-try-other-features.md)|Execute o programa e defina a cor do plano de fundo. Tente outros recursos, como alterar cores, fontes, e bordas.|

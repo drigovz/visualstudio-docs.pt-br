@@ -1,8 +1,6 @@
 ---
 title: Padrões comuns para aplicativos multithread de mau comportamento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549000"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634260"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multi-threaded com mau comportamento
 
@@ -32,7 +30,7 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
 
 Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU, em que, mesmo na presença de vários threads, o aplicativo consome apenas um núcleo lógico.
 
-Para obter mais informações, confira "Performance pattern 1: Identifying lock contention" (Padrão de desempenho 1: identificando a contenção de bloqueio) no blog de Hazim Shafi [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Ferramentas de desempenho paralelo para o Windows) no site do blog do MSDN.
+Para obter mais informações, veja "Performance pattern 1: Identifying lock contention" (Padrão de desempenho 1: identificando a contenção de bloqueio) no blog de Hazim Shafi, [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Ferramentas de desempenho paralelo para o Windows), no site do blog do MSDN.
 
 ![Contenção de bloqueio](../profiling/media/lockcontention_2.png "LockContention_2")
 

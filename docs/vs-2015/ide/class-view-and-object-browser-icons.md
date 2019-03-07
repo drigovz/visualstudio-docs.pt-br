@@ -1,14 +1,9 @@
 ---
 title: Ícones de Modo de Exibição de Classe e Pesquisador de Objetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,18 +17,18 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785043"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Exibição de classe ícones do Pesquisador de Objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Classe exibição * * e o **Pesquisador de objetos** exibem ícones que representam entidades de código, por exemplo, namespaces, classes, funções e variáveis. A tabela a seguir ilustra e descreve os ícones.  
+O Modo de Exibição de Classe** e o **Pesquisador de Objetos** exibem ícones que representam entidades de código, por exemplo, namespaces, classes, funções e variáveis. A tabela a seguir ilustra e descreve os ícones.  
   
 |Ícone|Descrição|Ícone|Descrição|  
 |----------|-----------------|----------|-----------------|  
@@ -68,6 +63,3 @@ Classe exibição * * e o **Pesquisador de objetos** exibem ícones que represen
   
 ## <a name="see-also"></a>Consulte também  
  [Exibindo a estrutura do código](../ide/viewing-the-structure-of-code.md)
-
-
-

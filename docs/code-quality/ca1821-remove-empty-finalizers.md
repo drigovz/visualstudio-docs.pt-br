@@ -1,8 +1,6 @@
 ---
-title: 'CA1821: remover finalizadores vazios'
+title: 'CA1821: Remover finalizadores vazios'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - RemoveEmptyFinalizers
@@ -12,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e7f7f4d38e494b53eb2bba11020e9d0f361ef76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16bb2786c4c7b0ca94fe60a9577e4b462d663bfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895672"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957842"
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821: remover finalizadores vazios
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Remover finalizadores vazios
 
 |||
 |-|-|

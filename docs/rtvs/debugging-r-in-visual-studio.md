@@ -2,26 +2,24 @@
 title: Depurando código em R
 description: O Visual Studio fornece uma experiência de depuração completa para R, incluindo pontos de interrupção, anexação, pilha de chamadas e inspeção de variáveis.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235177"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933945"
 ---
 # <a name="debug-r-in-visual-studio"></a>Depurar o R no Visual Studio
 
-As RTVS (Ferramentas do R para Visual Studio) se integram à experiência de depuração completa do Visual Studio (consulte [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)). Esse suporte inclui pontos de interrupção, a anexação a processos em execução, a inspeção e a observação de varáveis e a inspeção da pilha de chamadas. Portanto, este artigo explora os aspectos de depuração que são exclusivos para R e RTVS.
+As RTVS (Ferramentas do R para Visual Studio) se integram à experiência de depuração completa do Visual Studio (consulte [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour)). Esse suporte inclui pontos de interrupção, a anexação a processos em execução, a inspeção e a observação de varáveis e a inspeção da pilha de chamadas. Portanto, este artigo explora os aspectos de depuração que são exclusivos para R e RTVS.
 
-A inicialização do depurador para o arquivo R de inicialização em um projeto do R é igual a de outros tipos de projeto: use **Depurar** > **Iniciar Depuração**, a tecla **F5** ou o **Arquivo de inicialização de origem** na barra de ferramentas de depuração: 
+A inicialização do depurador para o arquivo R de inicialização em um projeto do R é igual a de outros tipos de projeto: use **Depurar** > **Iniciar Depuração**, a tecla **F5** ou o **Arquivo de inicialização de origem** na barra de ferramentas de depuração:
 
 ![Botão Iniciar depurador para R](media/debugger-start-button.png)
 

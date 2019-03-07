@@ -4,16 +4,15 @@ title: Depure seus aplicativos | Microsoft Docs
 description: Saiba como usar o Visual Studio 2017 para depurar aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: b6ec9fffe0223a018724f9bd82125a63204a15fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 81ecddbfdb3f1b36a28156686e5d07ff4e6ee558
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048600"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156027"
 ---
 # <a name="debugging-in-visual-studio"></a>Depurando no Visual Studio
 
@@ -27,7 +26,7 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="/media/common/i_categorize.svg" alt="What is debugging?">
+                                <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="What is debugging?">
                             </div>
                         </div>
                         <div class="cardText">
@@ -45,29 +44,11 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-edit.svg" alt="Write better code">
+                            <img src="https://docs.microsoft.com/media/common/i_code-quality.svg" alt="Write better code">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Escreva em código C# com menos bugs!</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Assista a um vídeo sobre como usar o depurador</h3>
+                        <h3>Técnicas e ferramentas de depuração</h3>
                     </div>
                 </div>
             </div>
@@ -76,7 +57,7 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
     </li>
 </ul>
 
-<h2>Experimente a depuração do Visual Studio com Guias de Início Rápido de cinco minutos</h2>
+<h2>Introdução ao depurador</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -86,7 +67,7 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="Road map">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="Road map">
                         </div>
                     </div>
                     <div class="cardText">
@@ -97,18 +78,18 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-managed">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt=".NET">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Absolute beginners">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Depurar um aplicativo em Visual Basic ou C#</h3>
+                        <h3>Guia completo para iniciantes</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +97,25 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-cplusplus">
+        <a href="https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_csharp.svg" alt="C#">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Depurar um aplicativo em C#</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger-cpp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -134,17 +133,17 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-aspnet">
+        <a href="https://docs.microsoft.com/visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="ASP.NET">
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Depurar um aplicativo ASP.NET</h3>
+                        <h3>Depurar um aplicativo em Visual Basic</h3>
                     </div>
                 </div>
             </div>
@@ -153,39 +152,21 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
     </li>
 </ul>
 
-<h2>Aprofundar-se com os tutoriais</h2>
+<h2>Aprofundar-se no depurador</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/using-breakpoints">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Absolute beginners">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="Use breakpoints">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Guia completo para iniciantes</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Learn to use the debugger">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Saiba como usar o depurador</h3>
+                        <h3>Saiba mais sobre pontos de interrupção</h3>
                     </div>
                 </div>
             </div>
@@ -199,7 +180,7 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="Tips and tricks">
+                            <img src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Tips and tricks">
                         </div>
                     </div>
                     <div class="cardText">
@@ -217,7 +198,7 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="View historical app state">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="View historical app state">
                         </div>
                     </div>
                     <div class="cardText">
@@ -235,7 +216,7 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="Debug Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Azure">
                         </div>
                     </div>
                     <div class="cardText">

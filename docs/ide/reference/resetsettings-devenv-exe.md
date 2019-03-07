@@ -1,59 +1,74 @@
 ---
 title: -ResetSettings (devenv.exe)
-ms.date: 11/16/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /ResetSettings switch
 - ResetSettings switch
 - /ResetSettings Devenv switch
+- settings [Visual Studio], resetting
 ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 0ebc0e3faf26351a31c2f6b75669d50f1e3c2f14
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388655"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936285"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Restaura as configurações padrão do Visual Studio e inicia automaticamente o IDE do Visual Studio. Opcionalmente, redefine as configurações para um arquivo *vssettings* especificado.
+Restaura as configurações padrão do Visual Studio e inicia automaticamente o IDE do Visual Studio. Esta opção redefine facultativamente as configurações para um arquivo de configurações especificado.
 
-As configurações padrão são determinadas pelo perfil selecionado quando o Visual Studio é iniciado pela primeira vez.
+As configurações padrão derivam do perfil selecionado quando o Visual Studio foi iniciado pela primeira vez.
 
 > [!TIP]
 > Para saber como redefinir configurações usando o IDE (ambiente de desenvolvimento integrado), confira [Reset settings](../environment-settings.md#reset-settings) (Redefinir configurações).
 
 ## <a name="syntax"></a>Sintaxe
 
-```cmd
-Devenv /ResetSettings SettingsFile
+```shell
+devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 ```
 
 ## <a name="arguments"></a>Arguments
 
-`SettingsFile`
+- *SettingsFile*
 
-O caminho completo e o nome do arquivo *vssettings* a ser aplicado ao Visual Studio.
+  Opcional. O caminho completo e o nome do arquivo de configurações a ser aplicado ao Visual Studio.
 
-Para restaurar o perfil de Configurações Gerais de Desenvolvimento, use `General`.
+- *DefaultCollectionSpecifier*
+
+  Opcional. Um especificador que representa uma coleção padrão de configurações a restaurar. Escolha um dos especificadores de coleção padrão listados na tabela.
+
+  | Nome da coleção padrão | Especificador da coleção |
+  | --- | --- |
+  | **Geral** | `General` |
+  | **JavaScript** | `JavaScript` |
+  | **Visual Basic** | `VB` |
+  | **Visual C#** | `CSharp` |
+  | **Visual C++** | `VC` |
+  | **Desenvolvimento para a Web** | `Web` |
+  | **Desenvolvimento para a Web (somente código)** | `WebCode` |
 
 ## <a name="remarks"></a>Comentários
 
-Se nenhum `SettingsFile` for especificado, você deverá selecionar uma coleção padrão de configurações na próxima vez que iniciar o Visual Studio.
+Se nenhum *SettingsFile* for especificado, o IDE abrirá usando as configurações existentes.
 
 ## <a name="example"></a>Exemplo
 
-A seguinte linha de comando aplica as configurações armazenadas no arquivo `MySettings.vssettings`.
+O primeiro exemplo aplica as configurações armazenadas no arquivo `MySettings.vssettings`.
 
-```cmd
-Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
+O segundo exemplo restaura o perfil padrão do Visual C#.
+
+```shell
+devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /resetsettings CSharp
 ```
 
 ## <a name="see-also"></a>Consulte também

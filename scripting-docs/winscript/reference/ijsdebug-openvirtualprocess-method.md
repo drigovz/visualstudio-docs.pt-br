@@ -1,5 +1,5 @@
 ---
-title: 'Método Ijsdebug: | Microsoft Docs'
+title: 'Método ijsdebug:: Openvirtualprocess | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5acb137337e46a6e84f7d68c9330a3ca847f2e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: daa5414153ee55a431294afaf7b167ee91839bfc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727356"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093984"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>Método IJsDebug::OpenVirtualProcess
 Método de fábrica usado para criar um novo objeto de processo virtual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
- HRESULT OpenVirtualProcess(  
+```cpp
+HRESULT OpenVirtualProcess(  
    DWORD processId,  
    UINT64 runtimeJsBaseAddress,  
    IJsDebugDataTarget *pDataTarget,  
@@ -42,10 +42,10 @@ Método de fábrica usado para criar um novo objeto de processo virtual.
  [in] Id do processo para anexar o depurador.  
   
  `runtimeJsBaseAddress`  
- [in] O endereço base no qual o tempo de execução do JavaScript tem carregados no processo de destino.  
+ [in] O endereço básico no qual o tempo de execução do JavaScript carregado no processo de destino.  
   
  `pDataTarget`  
- [in] Interface fornecida para consultar o estado do processo do depurador.  
+ [in] Interface fornecido para consultar o estado do processo do depurador.  
   
  `ppProcess`  
  [out] Novo objeto de processo de depuração  
@@ -53,7 +53,7 @@ Método de fábrica usado para criar um novo objeto de processo virtual.
 ## <a name="return-value"></a>Valor de retorno  
   
 ## <a name="remarks"></a>Comentários  
- Retorna E_JsDEBUG_MISMATCHED_RUNTIME se Jscript9diag e Jscript9 não coincidem.  
+ Retornará E_JsDEBUG_MISMATCHED_RUNTIME se Jscript9diag e Jscript9 não corresponderem.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** jscript9diag.h  

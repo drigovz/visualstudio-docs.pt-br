@@ -8,17 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3b4b2f57485a942877861400aec9ec7d0f13f977
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967422"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957605"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 
@@ -40,7 +38,7 @@ Embora as operações de criação podem parecer diferente do que as operações
 
 A responsabilidade de uma EMD é decidir como um objeto ou grupo de objetos deve ser mesclado em um local específico no modelo. Em particular, ele decide quais relações devem ser instanciadas para vincular o grupo mesclado no modelo. Você também pode personalizá-lo para definir as propriedades e criar objetos adicionais.
 
-![DSL&#45;EMD&#95;de mesclagem](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Uma EMD é gerado automaticamente quando você define uma relação de incorporação. Esse padrão EMD cria uma instância da relação quando os usuários adicionarem novas instâncias filho ao pai. Você pode modificar essas EMDs padrão, por exemplo, adicionando código personalizado.
 
@@ -50,7 +48,7 @@ Você também pode adicionar seus próprios EMDs na definição de DSL, para per
 
 Você pode adicionar diretivas de mesclagem de elementos para as classes de domínio, relações de domínio, formas, conectores e diagramas. Você pode adicionar ou encontrá-los no Gerenciador de DSL sob a classe de domínio de recebimento. A classe de recebimento é a classe de domínio do elemento que já está no modelo e, para que o elemento novo ou copiado será mesclado.
 
-![DSL&#45;EMD&#95;detalhes](../modeling/media/dsl-emd_details.png)
+![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
 O **indexação classe** é a classe de domínio de elementos que podem ser mescladas em membros da classe receptora. Instâncias de subclasses da classe de indexação também serão mescladas por este EMD, a menos que você defina **aplica-se a subclasses** como False.
 
@@ -91,7 +89,7 @@ Os usuários também podem colar elementos em outros elementos.
 
    1.  Na **Gerenciador de DSL**, expanda **Classes de domínio**. Clique com botão direito `ExampleElement` e, em seguida, clique em **adicionar nova diretiva Element Merge**.
 
-   2.  Certifique-se de que o **detalhes de DSL** janela estiver aberta, para que você possa ver os detalhes de EMD o novo. (Menu: **modo de exibição**, **outros Windows**, **detalhes de DSL**.)
+   2.  Certifique-se de que o **detalhes de DSL** janela estiver aberta, para que você possa ver os detalhes de EMD o novo. (Menu: **Exiba**, **outros Windows**, **detalhes de DSL**.)
 
 3. Defina as **classe de indexação** na janela de detalhes de DSL, para definir a classe de elementos pode ser mesclado com `ExampleElement` objetos.
 
@@ -145,7 +143,7 @@ Observe os seguintes pontos deste procedimento:
 
      Se você escrever código personalizado que cria novos elementos, você pode invocar explicitamente o EMD usando o `ElementOperations.Merge` método. Isso garante que seu código vincula novos elementos no modelo da mesma forma como outras operações. Para obter mais informações, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemplo: Adicionar código de aceitação personalizada a uma EMD
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemplo: Adicionando código aceitação personalizada a uma EMD
 
 Adicionando código personalizado a uma EMD, você pode definir o comportamento mais complexo de mesclagem. Neste exemplo simples impede que o usuário adicionando mais de um número fixo de elementos no diagrama. O exemplo modifica o padrão EMD que acompanha uma relação de incorporação.
 
@@ -208,7 +206,7 @@ Adicionando código personalizado a uma EMD, você pode definir o comportamento 
 
     3.  Verifique se que você não pode usar qualquer uma das seguintes maneiras para adicionar mais de quatro elementos ao modelo. Isso ocorre porque todos eles usam a diretiva de mesclagem.
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemplo: Adicionar código personalizado de mesclagem para uma EMD
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemplo: Adicionar código personalizado de mesclagem em uma EMD
 
 No código personalizado de mesclagem, você pode definir o que acontece quando o usuário arrasta uma ferramenta ou cola em um elemento. Há duas maneiras de definir uma mesclagem personalizada:
 

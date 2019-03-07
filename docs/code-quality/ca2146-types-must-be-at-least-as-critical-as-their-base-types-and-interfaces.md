@@ -1,25 +1,23 @@
 ---
-title: 'CA2146: tipos devem ser pelo menos críticos como tipos base e interfaces'
+title: 'CA2146: Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2146
 ms.assetid: 241fb784-1f6b-46e5-8ceb-c438e341d38e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0550061102c7f785dfe69d1505801a60648e9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01a8a5609394f0dd428066e32fb425a2abb486c4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895893"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926860"
 ---
-# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: tipos devem ser pelo menos críticos como tipos base e interfaces
+# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces
 
 |||
 |-|-|

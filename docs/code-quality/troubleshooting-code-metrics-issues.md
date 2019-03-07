@@ -1,21 +1,19 @@
 ---
 title: Solucionando problemas de métricas do código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7078b09b1bf2382e1c91878995772d80bfa625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5903494097ed954eebecc80f98a641cc7f4fa95f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853955"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956110"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Solucionando problemas de métricas do código
 Você pode encontrar alguns dos problemas a seguir ao coletar as métricas de código:
@@ -30,4 +28,4 @@ Você pode encontrar alguns dos problemas a seguir ao coletar as métricas de c�
 - A função contém uma instrução de opção (selecione o caso em VB). Diferenças de compilador entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e versões anteriores podem gerar códigos MSIL diferentes para algumas instruções de opção que contêm casos com falhas.
 
 ## <a name="see-also"></a>Consulte também
- [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)

@@ -1,8 +1,6 @@
 ---
 title: Criar modelos de multiprojeto
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -10,13 +8,13 @@ helpviewer_keywords:
 - multi-project templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049653"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970875"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos de multiprojeto
 
@@ -70,17 +68,20 @@ O arquivo *vstemplate* raiz para um modelo multiprojeto difere de um modelo de p
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Para criar um modelo multiprojetos usando uma solução existente
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Criar um modelo multiprojetos usando uma solução existente
 
 1. Crie uma solução e adicione dois ou mais projetos.
 
 1. Personalize os projetos até que eles estejam prontos para serem exportados para um modelo.
 
+   > [!TIP]
+   > Se você estiver usando [parâmetros de modelo](template-parameters.md) e quiser se referir a variáveis do modelo pai, prefixe o nome do parâmetro com `ext_`. Por exemplo, `$ext_safeprojectname$`.
+
 1. No menu **Projeto**, escolha **Exportar Modelo**.
 
    O **Assistente para Exportar Modelo** é aberto.
 
-1. Na página **Escolher Tipo de Modelo**, selecione **Modelo de Projeto**. Selecione o projeto que você deseja exportar como um modelo e, em seguida, escolha **Avançar**.
+1. Na página **Escolher Tipo de Modelo**, selecione **Modelo de Projeto**. Selecione um dos projetos que você deseja exportar para um modelo e, em seguida, escolha **Avançar**. (Você repetirá essas etapas para cada projeto na solução.)
 
 1. Na página **Selecionar Opções do Modelo**, insira um nome e uma descrição opcional, um ícone e uma imagem de exibição para o modelo. Escolha **Concluir**.
 

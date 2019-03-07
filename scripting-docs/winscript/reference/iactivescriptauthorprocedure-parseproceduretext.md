@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9c4a1ba03a8498dbaa857dc5dbabba8914e54a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 893dc36c066426ad1de7346c7ce1fea24b191ba3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645636"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090682"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-Analisa um procedimento de código, adiciona o texto do procedimento de código para o mecanismo de criação de script e cria um `IScriptEntry` objeto correspondente para o procedimento de código.  
+Analisa um procedimento de código, adiciona o texto do procedimento de código para o mecanismo de criação de script e cria um `IScriptEntry` objeto que corresponde ao procedimento de código.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT ParseProcedureText(  
    LPCOLESTR   pszCode,  
    LPCOLESTR   pszFormalParams,  
@@ -48,16 +48,16 @@ HRESULT ParseProcedureText(
  [in] O texto do script para analisar.  
   
  `pszFormalParams`  
- [in] O endereço dos nomes de parâmetro formal para o procedimento. Os nomes de parâmetro devem ser separados pelos delimitadores apropriados para o mecanismo de criação de script. Os nomes não devem ser incluídos entre parênteses.  
+ [in] O endereço dos nomes de parâmetro formal para o procedimento. Os nomes de parâmetro devem ser separados pelos delimitadores apropriados para o mecanismo de criação de script. Os nomes não deverão ser incluídos em parênteses.  
   
  `pszProcedureName`  
- [in] O endereço do nome do procedimento a ser analisada.  
+ [in] O endereço do nome do procedimento a ser analisado.  
   
  `pszItemName`  
- [in] O endereço do buffer que contém o nome do item associado a `IScriptEntry` objeto.  
+ [in] O endereço do buffer que contém o nome do item associado com o `IScriptEntry` objeto.  
   
  `pszDelimiter`  
- [in] O endereço do delimitador final do bloco de script. Quando `pszCode` é analisada a partir de um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples), para detectar o final do bloco de script. Defina esse parâmetro como NULL se não houver nenhum delimitador para marcar o fim do bloco de script.  
+ [in] O endereço do delimitador de fim do bloco de script. Quando `pszCode` é analisado de um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples), para detectar o fim do bloco de script. Defina esse parâmetro como NULL se não houver nenhum delimitador para marcar o fim do bloco de script.  
   
  `dwCookie`  
  [in] Um valor definido pelo aplicativo que está associado com o novo `IScriptEntry` objeto.  

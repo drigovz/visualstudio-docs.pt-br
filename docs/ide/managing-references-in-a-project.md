@@ -1,8 +1,6 @@
 ---
 title: Gerenciar referências em um projeto
 ms.date: 04/11/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -20,21 +18,21 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e772f4d861e4b16499ad9be9d7c814320e1a14f9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950940"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921049"
 ---
 # <a name="manage-references-in-a-project"></a>Gerenciar referências em um projeto
 
 Antes de escrever código em um componente externo ou um serviço conectado, o projeto primeiro deve conter uma referência a ele. Basicamente, uma referência é uma entrada em um arquivo de projeto que contém as informações de que o Visual Studio precisa para localizar o componente ou o serviço.
 
-Para adicionar uma referência, clique com o botão direito do mouse no nó **Referências** ou **Dependências** no **Gerenciador de Soluções** e escolha **Adicionar Referência**. Também é possível clicar com o botão direito do mouse no nó do projeto e selecionar **Adicionar** > **Referência**. Para obter mais informações, consulte [How to: Add or remove references](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md) (Como adicionar ou remover referências).
+Para adicionar uma referência, clique com o botão direito do mouse no nó **Referências** ou **Dependências** no **Gerenciador de Soluções** e escolha **Adicionar Referência**. Também é possível clicar com o botão direito do mouse no nó do projeto e selecionar **Adicionar** > **Referência**. Para obter mais informações, confira [Como: Adicionar ou remover referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
 ![Adicionar uma referência no Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -113,7 +111,7 @@ Para obter mais informações, consulte [Visão geral da multissegmentação](..
 
 Referências projeto a projeto são referências a projetos que contêm assemblies; é possível criá-las usando a guia **Projeto**. O Visual Studio pode encontrar um assembly quando receber um caminho para o projeto.
 
-Quando você tiver um projeto que produz um assembly, será necessário referenciar o projeto e não usar uma referência de arquivo (consulte abaixo). A vantagem de uma referência projeto a projeto é que ela cria uma dependência entre os projetos no sistema de build. O projeto dependente será compilado se ele tiver sido alterado desde a última vez que o projeto de referência foi compilado. Uma referência de arquivo não cria uma dependência de build e, portanto, é possível compilar o projeto de referência sem compilar o projeto dependente, e a referência pode se tornar obsoleta. (Ou seja, o projeto pode referenciar uma versão anteriormente compilada do projeto.) Isso pode resultar na exigência de várias versões de uma única DLL no diretório *bin*, o que não é possível. Quando ocorrer esse conflito, você verá uma mensagem como “Aviso: o 'arquivo' de dependência no projeto 'projeto' não pode ser copiado para o diretório de execução, pois ele substituirá o 'arquivo' de referência”. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md) e [Como criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md).
+Quando você tiver um projeto que produz um assembly, será necessário referenciar o projeto e não usar uma referência de arquivo (consulte abaixo). A vantagem de uma referência projeto a projeto é que ela cria uma dependência entre os projetos no sistema de build. O projeto dependente será compilado se ele tiver sido alterado desde a última vez que o projeto de referência foi compilado. Uma referência de arquivo não cria uma dependência de build e, portanto, é possível compilar o projeto de referência sem compilar o projeto dependente, e a referência pode se tornar obsoleta. (Ou seja, o projeto pode referenciar uma versão anteriormente compilada do projeto.) Isso pode resultar na exigência de várias versões de uma única DLL no diretório *bin*, o que não é possível. Quando ocorrer esse conflito, você verá uma mensagem como “Aviso: o 'arquivo' de dependência no projeto 'projeto' não pode ser copiado para o diretório de execução, pois ele substituirá o 'arquivo' de referência”. Para obter mais informações, veja [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md) e [Como: Criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Uma referência de arquivo será criada em vez de uma referência projeto a projeto se a versão de destino do .NET Framework de um projeto for a versão 4.5 e a versão de destino do outro projeto for a versão 2, 3, 3.5 ou 4.0.
@@ -125,4 +123,4 @@ Referências de arquivo são referências diretas a assemblies fora do contexto 
 ## <a name="see-also"></a>Consulte também
 
 - [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md)
-- [Como adicionar ou remover referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Como: Adicionar ou remover referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

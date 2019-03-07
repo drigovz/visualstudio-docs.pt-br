@@ -1,23 +1,21 @@
 ---
 title: Localizando referências no código
 ms.date: 09/26/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac09eace078ef60f36bd57e9a2c4a1e5f1c510c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942315"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335266"
 ---
 # <a name="find-references-in-your-code"></a>Localizar referências no seu código
 
@@ -41,13 +39,18 @@ Você pode usar os seguintes métodos para navegar para as referências na janel
 
 - Pressione **F8** para acessar a próxima referência ou **Shift + F8** para acessar a referência anterior.
 - Pressione a tecla **Enter** em uma referência ou clique duas vezes nela para acessá-la no código.
-- No menu de contexto de uma referência, escolha os comandos **Ir ao Local Anterior** ou **Ir ao Próximo Local**.
+- No menu do clique com o botão direito (menu de contexto) de uma referência, escolha os comandos **Ir para Local Anterior** ou **Ir para Próximo Local**.
 - Use as teclas **Seta para cima** e **Seta para baixo** (se elas estiverem habilitadas na caixa de diálogo **Opções**). Para habilitar essa funcionalidade, na barra de menus, selecione **Ferramentas** > **Opções** > **Ambiente** > **Guias e Janelas** > **Guia Visualizar** e, em seguida, selecione as caixas **Permitir que novos arquivos sejam abertos na guia de visualização** e **Visualizar arquivos selecionados em Localizar Resultados**.
 
 ## <a name="change-reference-groupings"></a>Alterar agrupamentos de referência
 Por padrão, as referências são agrupadas por projetos, depois por definição. No entanto, é possível mudar essa ordem de agrupamento, alterando a configuração na caixa de listagem suspensa **Agrupar por:** na barra de ferramentas. Por exemplo, é possível alterá-la na configuração padrão de **Projeto em vez de definição** para **Definição em vez de projeto** e também para outras configurações.
 
-**Definição** e **Projeto** são dois agrupamentos padrão usados, mas é possível adicionar outros ao escolher o comando **Agrupamento** no menu de contexto do item selecionado. Pode ser útil adicionar mais agrupamentos se sua solução tem muitos arquivos e caminhos.
+**Definição** e **Projeto** são dois agrupamentos padrão usados, mas é possível adicionar outros ao escolher o comando **Agrupamento** no menu do clique com o botão direito ou de contexto do item selecionado. Pode ser útil adicionar mais agrupamentos se sua solução tem muitos arquivos e caminhos.
+
+## <a name="filter-by-reference-type-in-net"></a>Filtrar por tipo de referência no .NET
+No C# ou Visual Basic, a janela Localizar Referências tem uma coluna de tipo em que ela lista o tipo de referência encontrada. Esta coluna pode ser usada para filtrar por tipo de referência, clicando no ícone de filtro que aparece ao passar o mouse sobre o cabeçalho da coluna. As referências podem ser filtradas por leitura, gravação, referência e NameOnly.
+
+![Encontrar a coluna Tipo da janela Referências ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>Consulte também
 

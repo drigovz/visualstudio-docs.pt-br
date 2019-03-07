@@ -1,8 +1,6 @@
 ---
-title: 'CA1038: os enumeradores devem ser fortemente tipados'
+title: 'CA1038: Enumeradores devem ser fortemente tipados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 8919f526-d487-42a4-87dc-2b2ee25260c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22cc84a0cdc8d4fdb86f6890ae0ebd25eb65beb8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 61eced11a61b8da92d01d26c0e66ad5d9c49f72d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545483"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922401"
 ---
-# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: os enumeradores devem ser fortemente tipados
+# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Enumeradores devem ser fortemente tipados
 
 |||
 |-|-|
@@ -56,9 +54,9 @@ ms.locfileid: "45545483"
  [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1035: as implementações de ICollection têm membros fortemente tipados](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035: As implementações de ICollection têm membros fortemente tipados](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: as listas são fortemente tipadas](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039: Listas são fortemente tipadas](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Consulte também
 

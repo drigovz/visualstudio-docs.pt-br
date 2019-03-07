@@ -1,23 +1,21 @@
 ---
 title: Renomear um nome de arquivo para que ele corresponda a um tipo
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054781"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940263"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refatoração Sincronizar um tipo para um nome de arquivo ou um nome de arquivo para um tipo
 
@@ -32,6 +30,9 @@ Esta refatoração aplica-se a:
 **Quando:** Você renomeou um arquivo ou um tipo e ainda não atualizou o arquivo nem o tipo correspondente a ser correspondido.
 
 **Por que:** Se você colocar um tipo em um arquivo com um nome diferente ou vice-versa, será difícil encontrar o que está procurando. Se você renomear o tipo ou nome de arquivo, o código se tornará mais legível e mais fácil de navegar.
+
+> [!NOTE]
+> Esta refatoração ainda não está disponível para projetos .NET Core e .NET Standard.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -63,8 +64,6 @@ Esta refatoração aplica-se a:
    - Visual Basic: No exemplo a seguir, o arquivo **Employee.vb** foi renomeado para **Person.vb** para corresponder ao nome do tipo.
 
        ![Resultado embutido em Visual Basic](media/synctype-result-vb.png)
-
-> ![NOTE] Esta refatoração ainda não está disponível para projetos .NET Core e .NET Standard.
 
 ## <a name="see-also"></a>Consulte também
 

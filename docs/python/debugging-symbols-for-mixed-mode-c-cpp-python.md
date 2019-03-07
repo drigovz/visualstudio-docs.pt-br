@@ -2,21 +2,19 @@
 title: Símbolos para a depuração de modo misto Python/C++
 description: Como o Visual Studio fornece a capacidade de carregar símbolos para C++ completo de modo misto e depuração de Python.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062684"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951331"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalar símbolos de depuração para interpretadores do Python
 
@@ -52,7 +50,7 @@ Se os símbolos tiverem sido baixados separadamente, siga as etapas abaixo para 
 
 1. Selecione o menu **Ferramentas** > **Opções** e navegue para **Depuração** > **Símbolos**.
 
-1. Selecione o botão **Adicionar** na barra de ferramentas (descrita abaixo), insira a pasta em que os símbolos baixados foram expandidos (em que *python.pdb* está localizado, como *c:\python34\Symbols*, conforme mostrado abaixo) e selecione **OK**. 
+1. Selecione o botão **Adicionar** na barra de ferramentas (descrita abaixo), insira a pasta em que os símbolos baixados foram expandidos (em que *python.pdb* está localizado, como *c:\python34\Symbols*, conforme mostrado abaixo) e selecione **OK**.
 
     ![Opções de símbolos do depurador de modo misto](media/mixed-mode-debugging-symbols.png)
 
@@ -63,9 +61,9 @@ Se os símbolos tiverem sido baixados separadamente, siga as etapas abaixo para 
 
 ## <a name="official-distributions"></a>Distribuições oficiais
 
-| Versão do Python | Downloads | 
-| --- | --- | 
-| 3.5 e versões posteriores | Instale símbolos por meio do instalador do Python. | 
+| Versão do Python | Downloads |
+| --- | --- |
+| 3.5 e versões posteriores | Instale símbolos por meio do instalador do Python. |
 | 3.4.4 | [32 bits](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32 bits](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32 bits](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

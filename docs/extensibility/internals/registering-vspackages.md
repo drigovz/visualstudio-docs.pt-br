@@ -1,9 +1,6 @@
 ---
-title: Registrando VSPackages | Microsoft Docs
-ms.custom: ''
+title: Registrar VSPackages | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, registering
@@ -11,22 +8,24 @@ helpviewer_keywords:
 ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6f7e603fbc023415ad2b8ddc157f239feb53768
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 426adc0cd150d5867760a8570df5777fec8260a2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128839"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601571"
 ---
 # <a name="registering-vspackages"></a>Registrando VSPackages
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se baseia em arquivos de .pkgdef para descrever e localizar um VSPackage. Um arquivo .pkgdef contém todas as informações de registro que outra forma seriam adicionadas ao registro do sistema. VSPackages gerenciados são registrados por adicionar atributos ao código-fonte e, em seguida, executar o [CreatePkgDef utilitário](../../extensibility/internals/createpkgdef-utility.md) no assembly resultante para gerar um arquivo de .pkgdef.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Especificar o local do arquivo VSPackage ao Shell do VS](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- Descreve o caminho de carregamento para VSPackages.  
-  
- [Registrar e cancelar o registro de VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)  
- Explica como registrar um VSPackage.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se baseia em arquivos. pkgdef para descrever e localizar um VSPackage. Um arquivo. pkgdef contém todas as informações de registro caso contrário, seriam adicionadas ao registro do sistema. VSPackages gerenciados são registrados, adicionando atributos no código-fonte e, em seguida, executando o [utilitário CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md) no assembly resultante para gerar um arquivo. pkgdef.
+
+## <a name="in-this-section"></a>Nesta seção
+- [Especificar o local do arquivo VSPackage ao Shell do VS](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)
+
+ Descreve o caminho de carregamento de VSPackages.
+
+- [Registrar e cancelar o registro de VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)
+
+ Explica como registrar um VSPackage.

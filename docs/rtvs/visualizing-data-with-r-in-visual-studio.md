@@ -2,20 +2,18 @@
 title: Visualizando dados com R
 description: Como plotar dados em programas de R no Visual Studio, usando janelas de plotagem.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235182"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911761"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Criar gráficos de dados visuais com R
 
@@ -39,7 +37,7 @@ As janelas de gráficos são independentes dos projetos do Visual Studio e perma
 
 A geração de um gráfico usará a janela de gráficos “ativa”, salvando todos os gráficos anteriores no histórico de gráficos (consulte [Histórico de gráficos](#plot-history)). Por exemplo, digite `plot(100:1)` e o primeiro gráfico é substituído por uma linha para baixo.
 
-Como todas as outras janelas do Visual Studio. a janela de gráficos dá suporte a layouts personalizados (consulte [Personalização de layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). As janelas de gráficos podem ser encaixadas em diferentes locais dentro do quadro do Visual Studio, redimensionadas dentro desse quadro ou retiradas inteiramente do quadro para um redimensionamento independente. 
+Como todas as outras janelas do Visual Studio. a janela de gráficos dá suporte a layouts personalizados (consulte [Personalização de layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). As janelas de gráficos podem ser encaixadas em diferentes locais dentro do quadro do Visual Studio, redimensionadas dentro desse quadro ou retiradas inteiramente do quadro para um redimensionamento independente.
 
 Redimensionar uma janela de gráficos sempre renderiza o gráfico novamente para fornecer a melhor qualidade de imagem. Geralmente, é importante redimensionar o gráfico antes de exportá-lo para um arquivo ou para a área de transferência usando os comandos descritos na próxima seção.
 
@@ -47,7 +45,7 @@ Redimensionar uma janela de gráficos sempre renderiza o gráfico novamente para
 
 A barra de ferramentas da janela de gráficos contém comandos aplicáveis e a maioria deles também está disponível por meio do menu **Ferramentas do R** > **Gráficos**.
 
-| Botão | Comando | Descrição | 
+| Botão | Comando | Descrição |
 | --- | --- | --- |
 | ![Botão Nova janela de gráficos](media/plotting-toolbar-01-new-plot-window.png) | Nova janela de gráficos | Cria uma janela de gráficos separada com seu próprio histórico. Consulte [Várias janelas de gráficos](#multiple-plot-windows). |
 | ![Botão Ativar janela de gráficos](media/plotting-toolbar-02-activate-plot-window.png) | Ativar a janela de gráficos | Define a janela de gráficos atual como a janela ativa, de modo que os próximos comandos `plot` sejam renderizados para essa janela. Consulte [Várias janelas de gráficos](#multiple-plot-windows). Consulte [Várias janelas de gráficos](#multiple-plot-windows). |
@@ -55,8 +53,8 @@ A barra de ferramentas da janela de gráficos contém comandos aplicáveis e a m
 | ![Botões Histórico de gráficos](media/plotting-toolbar-04-plot-history-arrows.png) | Gráfico anterior/seguinte |  Navega para gráfico anterior ou seguinte no histórico. Você também pode navegar no histórico com Ctrl + Alt + F11 (anterior) e Ctrl + Alt + F12 (seguinte). Consulte [Histórico de gráficos](#plot-history). |
 | ![Botão Salvar como imagem](media/plotting-toolbar-05-save-as-image.png)| Salvar como imagem | Solicita um nome de arquivo e salva o gráfico atual (o conteúdo da janela, no tamanho da janela) em um arquivo de imagem. Os formatos disponíveis são `.png`, `.jpg`, `.bmp` e `.tif`. |
 | ![Botão Salvar como PDF](media/plotting-toolbar-06-save-as-pdf.png)| Salvar como PDF | Salva o gráfico atual em um arquivo PDF, usando o tamanho da janela atual. O gráfico será renderizado novamente se o PDF for dimensionado. |
-| ![Botão Copiar como bitmap](media/plotting-toolbar-07-copy-as-bitmap.png)| Copiar como bitmap | Copia o gráfico na área de transferência como um bitmap de varredura, usando o tamanho da janela atual. | 
-| ![Botão Copiar como metarquivo](media/plotting-toolbar-08-copy-as-metafile.png)| Copiar como metarquivo | Copia o gráfico na área de transferência como um [metarquivo do Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipédia). | 
+| ![Botão Copiar como bitmap](media/plotting-toolbar-07-copy-as-bitmap.png)| Copiar como bitmap | Copia o gráfico na área de transferência como um bitmap de varredura, usando o tamanho da janela atual. |
+| ![Botão Copiar como metarquivo](media/plotting-toolbar-08-copy-as-metafile.png)| Copiar como metarquivo | Copia o gráfico na área de transferência como um [metarquivo do Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipédia). |
 | ![Botão Remover gráfico](media/plotting-toolbar-09-remove-plot.png)| Remover gráfico | Remove o gráfico atual do histórico. |
 | ![Botão Limpar todos os gráficos](media/plotting-toolbar-10-clear-all-plots.png) | Limpar todos os gráficos | Remove todos os gráficos do histórico (solicita confirmação). |
 
@@ -85,9 +83,9 @@ O tempo de vida de seu histórico de gráficos em todas as janelas está vincula
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Manipular programaticamente janelas de gráficos
 
-Você pode manipular as janelas de gráficos do código R de forma programática, usando números de dispositivo para identificar janelas de gráficos específicas. 
+Você pode manipular as janelas de gráficos do código R de forma programática, usando números de dispositivo para identificar janelas de gráficos específicas.
 
-- `dev.list()`: listar todos os dispositivos de gráficos na sessão atual do R.
-- `dev.new()`: criar um novo dispositivo de gráficos (uma nova janela de gráficos).
-- `dev.set(<device number>)`: definir o dispositivo de gráficos ativo.
-- `dev.off()`: excluir o dispositivo ativo.
+- `dev.list()`: Listar todos os dispositivos de gráficos na sessão atual do R.
+- `dev.new()`: Criar um novo dispositivo de gráficos (uma nova janela de gráficos).
+- `dev.set(<device number>)`: Definir o dispositivo de gráficos ativo.
+- `dev.off()`: Excluir o dispositivo ativo.

@@ -1,8 +1,6 @@
 ---
-title: Como coletar dados do contador do Windows | Microsoft Docs
-ms.custom: ''
+title: 'Como: Coletar dados do contador do Windows | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
@@ -13,17 +11,17 @@ helpviewer_keywords:
 - profiling tools, using windows counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea074024e605d2dcc91500fb00fe0d7b6781692
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668124"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640929"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Como coletar dados do contador do Windows
+# <a name="how-to-collect-windows-counter-data"></a>Como: Coletar dados de contadores do Windows
 
 Os contadores do Windows são contadores de desempenho do sistema que podem ser coletados em intervalos definidos durante a criação de perfil. Na exibição de Marcas do relatório das Ferramentas de Criação de Perfil, uma linha é rotulada **AutoMark** para cada intervalo de coleta. A linha contém colunas que descrevem os valores do contador de desempenho nesse intervalo. Para restringir a análise para um período de tempo entre duas marcas específicas, selecione as marcas, clique com o botão direito do mouse e, em seguida, selecione **Filtrar por** > **Marcas** no menu de atalho.
 
@@ -50,6 +48,6 @@ Os contadores do Windows são contadores de desempenho do sistema que podem ser 
 
 ## <a name="see-also"></a>Consulte também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
-[Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)  
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
+[Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)
 [Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)

@@ -1,8 +1,6 @@
 ---
-title: 'CA2109: revisar manipuladores de eventos visíveis'
+title: 'CA2109: Examinar manipuladores de eventos visíveis'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2109
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 8f8fa0ee-e94e-400e-b516-24d8727725d7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df271f5427d005ef94c4c09d6c0a1eb05c850b0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: de5ab1fac368f1da1ceea39df19b198a22d999c1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548849"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917526"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: revisar manipuladores de eventos visíveis
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Examinar manipuladores de eventos visíveis
 
 |||
 |-|-|

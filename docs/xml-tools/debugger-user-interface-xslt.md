@@ -1,21 +1,19 @@
 ---
 title: Interface de usuário do depurador (XSLT)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb19167bd6d689d807f9eb910b8e9e1135819ab4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847377"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919684"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
 
@@ -92,15 +90,15 @@ Para obter mais informações, consulte o [referência de interface do usuário 
 
 -   As funções definidas pelo usuário não são permitidas.
 
-Para obter mais informações, consulte [como: avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Para obter mais informações, confira [Como: Avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>janela de Desmontagem
  A janela de desmontagem mostra o código do assembly que é gerado pelo compilador XSLT. Esta janela pode ser usada da mesma forma como quaisquer outras janelas de desmontagem do Visual Studio.
 
- Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
+ Para obter mais informações, [como: Use a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
-- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Inspecionar variáveis nas janelas autos e locais no Visual Studio](../debugger/autos-and-locals-windows.md)

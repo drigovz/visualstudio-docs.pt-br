@@ -1,24 +1,22 @@
 ---
-title: Como limitar a instrumentação a DLLs específicas | Microsoft Docs
-ms.custom: ''
+title: 'Como: Limitar a instrumentação a DLLs específicas | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843943"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597563"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como: Limitar a instrumentação a DLLs específicas
 
 Ao usar o método de criação de perfil de instrumentação, é possível limitar a coleta de dados de criação de perfil a uma ou mais DLLs em um aplicativo. Para criar o perfil de uma ou mais DLLs em um aplicativo, você deverá criar uma sessão de desempenho que inclua os arquivos .*dll* como destino. É possível especificar as DLLs que você deseja analisar como projetos em uma solução do Visual Studio ou como arquivos binários independentes.
 
@@ -71,5 +69,5 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 
 ## <a name="see-also"></a>Consulte também
 
-[Controlar a coleta de dados](../profiling/controlling-data-collection.md)  
-[Como limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Controlar a coleta de dados](../profiling/controlling-data-collection.md)
+[Como: Limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

@@ -1,21 +1,19 @@
 ---
 title: Exibição do gráfico do Designer de Esquema XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894619"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952639"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 
@@ -37,13 +35,13 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
  ![Designer XSD; Exibição do gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
- Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”
+ Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".
 
 ## <a name="breadcrumb-bar"></a>Barra de navegação estrutural
 
  A barra de rastreamento na parte inferior do modo de figura a seguir mostra onde o nó selecionado é localizado no conjunto de esquema. Se vários itens são selecionados, a barra de rastreamento será em branco.
 
-## <a name="context-menu"></a>Menu de contexto
+## <a name="context-right-click-menu"></a>Menu de contexto (atalho)
 
  A tabela a seguir descreve as opções que estão disponíveis para todos os nós na superfície de design do modo de gráfico.
 
@@ -93,7 +91,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
 ## <a name="properties-window"></a>Janela de Propriedades
 
- Use o menu de contexto para abrir inicialmente a **propriedades** janela. Por padrão, o **propriedades** janela é exibida no canto inferior direito do Visual Studio. Quando você clica em um nó que é renderizado no modo de modelo de conteúdo, as propriedades do nó serão exibidas na **propriedades** janela.
+ Use o menu de contexto (atalho) para abrir inicialmente a **propriedades** janela. Por padrão, o **propriedades** janela é exibida no canto inferior direito do Visual Studio. Quando você clica em um nó que é renderizado no modo de modelo de conteúdo, as propriedades do nó serão exibidas na **propriedades** janela.
 
 ## <a name="xsd-toolbar"></a>Barra de ferramentas XSD
 
@@ -109,10 +107,10 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 |**Limpar o espaço de trabalho**|Limpa o workspace e a superfície de design.|
 |**Remover espaço de trabalho**|Removes selecionou nós de workspace e da superfície de design.|
 |**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design. Essa opção é ativada no modo do modelo de conteúdo e no modo de gráfico.|
-|**Esquerda para a direita**|Altera o layout no modo de gráfico a uma representação hierárquica esquerda para a direita de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt**+**seta para a direita**.|
-|**Direita para a esquerda**|Altera o layout no modo de gráfico a uma representação hierárquica da direita para a esquerda de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt**+**seta para a esquerda**.|
-|**Cima para baixo**|Altera o layout no modo de gráfico a uma representação hierárquica de cima para baixo de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt**+**seta para baixo**.|
-|**Baixo para cima**|Altera o layout no modo de gráfico a uma representação hierárquica de parte inferior-à- parte superior dos nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt**+**seta para cima**.|
+|**Esquerda para a direita**|Altera o layout no modo de gráfico a uma representação hierárquica esquerda para a direita de nós. Essa opção pode ser acessada por meio do atalho de teclado: **ALT**+**seta para a direita**.|
+|**Direita para a esquerda**|Altera o layout no modo de gráfico a uma representação hierárquica da direita para a esquerda de nós. Essa opção pode ser acessada por meio do atalho de teclado: **ALT**+**seta para a esquerda**.|
+|**Cima para baixo**|Altera o layout no modo de gráfico a uma representação hierárquica de cima para baixo de nós. Essa opção pode ser acessada por meio do atalho de teclado: **ALT**+**seta para baixo**.|
+|**Baixo para cima**|Altera o layout no modo de gráfico a uma representação hierárquica de parte inferior-à- parte superior dos nós. Essa opção pode ser acessada por meio do atalho de teclado: **ALT**+**seta para cima**.|
 
 ## <a name="panscroll"></a>Bandeja/rolagem
 
@@ -142,7 +140,7 @@ O controle deslizante de Zoom é opaco ao selecioná-la, passe o mouse sobre ele
 
 ## <a name="xml-editor-integration"></a>Integração do editor de XML
 
- Você pode alternar para frente e para trás entre o modo de gráfico e o editor XML clicando em um nó e usando o menu de contexto de código de exibição.
+ Você pode alternar entre o modo de exibição de gráfico e o Editor XML clicando em um nó e usando o menu de contexto (atalho) Exibir código.
 
  Se você alterar o esquema definido no editor XML, as alterações serão sincronizadas no modo de gráfico. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
 

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2aff2d43d36fd543eea12d7fc60d3c56271af641
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909816"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088342"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Interfaces auxiliares do host inteligente de implementação
 A [Interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) simplifica a tarefa de criação de um host inteligente para depuração ativa, porque ela fornece implementações de várias interfaces necessárias para hospedagem inteligente.  
@@ -53,7 +53,7 @@ A [Interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-i
   
      O código a seguir descreve o processo, mas ele não inclui a verificação de erros ou outras técnicas de programação robustas.  
   
-    ```  
+    ```cpp
     CoCreateInstance(CLSID_ProcessDebugManager, NULL,  
           CLSCTX_INPROC_SERVER | CLSCTX_INPROC_HANDLER  
           | CLSCTX_LOCAL_SERVER,  
@@ -80,13 +80,13 @@ A [Interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-i
 ## <a name="implementing-iactivescriptsitedebug"></a>Implementando IActiveScriptSiteDebug  
  Para implementar [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md), obtenha o auxiliar que corresponde ao site especificado e, em seguida, obtenha o deslocamento inicial do documento para o contexto de origem fornecido, da seguinte maneira:  
   
-```  
+```cpp
 pddh->GetScriptBlockInfo(dwSourceContext, NULL, &ulStartPos, NULL);  
 ```  
   
  Em seguida, use o auxiliar para criar um novo contexto de documento para o deslocamento de caractere especificado:  
   
-```  
+```cpp
 pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew);  
 ```  
   

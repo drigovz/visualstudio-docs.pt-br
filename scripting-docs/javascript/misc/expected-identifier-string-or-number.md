@@ -1,14 +1,9 @@
 ---
 title: Esperado identificador, cadeia de caracteres ou número | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1028
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b902795ef2cd273c937067771505a1b3b4f60af
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855125"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842443"
 ---
 # <a name="expected-identifier-string-or-number"></a>Identificador, cadeia de caracteres ou número esperado
 Você usou a sintaxe de literal incorreta para declarar um objeto literal. As propriedades de um literal de objeto devem ser um identificador, uma cadeia de caracteres ou um número. Um literal de objeto (também chamado de um inicializador de objeto"") consiste em uma lista separada por vírgulas de pares de propriedade: valor, tudo incluídos entre colchetes. Por exemplo:  

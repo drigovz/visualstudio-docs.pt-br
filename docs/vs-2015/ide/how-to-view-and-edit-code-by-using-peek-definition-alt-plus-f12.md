@@ -1,25 +1,20 @@
 ---
-title: Como exibir e editar o código usando Inspecionar Definição (Alt + F12) | Microsoft Docs
-ms.custom: ''
+title: 'Como: Exibir e editar códigos usando inspecionar definição (Alt + F12) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 45f3dd20-902a-4047-8cca-9f18216123f4
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777297"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como visualizar e editar códigos usando a janela Inspecionar definição (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,6 +80,3 @@ Você pode usar o comando **Inspecionar Definição** para exibir e editar códi
   
 ## <a name="see-also"></a>Consulte também  
  [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md)
-
-
-

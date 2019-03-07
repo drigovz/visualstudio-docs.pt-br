@@ -1,8 +1,6 @@
 ---
-title: 'CA1013: sobrecarregar igualdades de operador em add e subtract de sobrecarga'
+title: 'CA1013: Sobrecarregar o operador equals na sobrecarga de adição e subtração'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OverrideOperatorEqualsOnOverridingAddAndSubtract
@@ -17,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 5bd28d68-c179-49ff-af47-5250b8b18a10
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f0f3d40ea24828430983efd2cf39f4fa399238
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 76a3790f57882071bddc90ef78a0ac74dd565514
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547711"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915848"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: sobrecarregar igualdades de operador em add e subtract de sobrecarga
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Sobrecarregar o operador equals na sobrecarga de adição e subtração
 
 |||
 |-|-|

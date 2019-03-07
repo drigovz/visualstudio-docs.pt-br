@@ -1,27 +1,25 @@
 ---
 title: Suprimir avisos da análise de código
-ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
+ms.date: 12/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513040"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223069"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir avisos da análise de código
 
@@ -35,7 +33,7 @@ No C + + c++ CLI, use as macros da autoridade de certificação\_SUPRIMIR\_mensa
 > Você não deve usar supressões de código-fonte em compilações de versão, para impedir que os metadados de supressão na origem de envio acidentalmente. Além disso, devido ao custo de processamento de supressão de código-fonte, o desempenho do seu aplicativo pode ser prejudicado.
 
 > [!NOTE]
-> Se você migrar um projeto para Visual Studio 2017, você pode encontrar, de repente, com um grande número de avisos da análise de código. Esses avisos são provenientes [analisadores de Roslyn](roslyn-analyzers-overview.md). Se você não estiver pronto para corrigir os avisos, você pode suprimir todos eles, escolhendo **Analyze** > **executar análise de código e suprimir problemas ativos**.
+> Se você migrar um projeto para Visual Studio 2017 ou Visual Studio de 2019, você pode encontrar, de repente, com um grande número de avisos da análise de código. Esses avisos são provenientes [analisadores de Roslyn](roslyn-analyzers-overview.md). Se você não estiver pronto para corrigir os avisos, você pode suprimir todos eles, escolhendo **Analyze** > **executar análise de código e suprimir problemas ativos**.
 >
 > ![Executar análise de código e suprimir problemas no Visual Studio](media/suppress-active-issues.png)
 
@@ -67,17 +65,19 @@ As propriedades do atributo incluem:
 
 - **MessageId** -identificador exclusivo de um problema para cada mensagem.
 
-- **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Escopos com suporte incluem o seguinte:
+- **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Com suporte [escopos](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) incluem o seguinte:
 
-    - Módulo
+   - `module`
 
-    - Namespace
+   - `resource`
 
-    - Recurso
+   - `type`
 
-    - Tipo
+   - `member`
 
-    - Membro
+   - `namespace` -Este escopo suprime os avisos em relação ao namespace em si. Ele não suprime avisos em relação aos tipos no namespace.
+
+   - `namespaceanddescendants` -(Novo para o Visual Studio de 2019) nesse escopo suprime os avisos em um namespace e todos os seus descendentes símbolos. O `namespaceanddescendants` valor só é válida para os analisadores do Roslyn e é ignorado por análise estática de binária, com base no FxCop.
 
 - **Destino** – um identificador que é usado para especificar o destino no qual o aviso está sendo suprimido. Ele deve conter um nome totalmente qualificado do item.
 
@@ -140,7 +140,7 @@ public class Animal
 
 Compiladores de código gerenciado e algumas ferramentas de terceiros geram código para facilitar o desenvolvimento rápido de código. Código gerado pelo compilador que aparece nos arquivos de origem geralmente é marcado com o `GeneratedCodeAttribute` atributo.
 
-Você pode escolher se deseja suprimir avisos da análise de código e erros de código gerado. Para obter informações sobre como suprimir esses avisos e erros, consulte [como: suprimir avisos para o código gerado pelo](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+Você pode escolher se deseja suprimir avisos da análise de código e erros de código gerado. Para obter informações sobre como suprimir esses avisos e erros, consulte [como: Suprimir avisos para o código gerado](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
 > Análise de código ignora `GeneratedCodeAttribute` quando ele é aplicado a um assembly inteiro ou um único parâmetro.
@@ -152,7 +152,7 @@ A ferramenta de análise de código gerenciado examina `SuppressMessage` atribut
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Quando você suprime um aviso com escopo de namespace, ele suprime o aviso em relação ao namespace em si. Ele não suprime o aviso em relação aos tipos no namespace.
+> Quando você suprimir um aviso com `namespace` escopo, ele suprime o aviso em relação ao namespace em si. Ele não suprime o aviso em relação aos tipos no namespace.
 
 Qualquer supressão pode ser expressos com a especificação de um escopo explícito. Esses supressões devem residir no nível global. Você não pode especificar a supressão de nível de membro decorando um tipo.
 
@@ -169,5 +169,6 @@ O arquivo de supressão global mantém supressões supressões no nível global 
 
 ## <a name="see-also"></a>Consulte também
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Usar os analisadores de Roslyn](../code-quality/use-roslyn-analyzers.md)

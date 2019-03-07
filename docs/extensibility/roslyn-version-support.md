@@ -1,22 +1,20 @@
 ---
 title: Mapeamentos de versão do pacote de Roslyn com suporte
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18938ef7cdf0b1b0f7193c2f795a394837f92abb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cd83aabecd8d5631b4a34d2c2e77e2d0ca01a037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895997"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912983"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Referência de versão de pacote de plataforma do .NET compilador
 

@@ -16,26 +16,26 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b20b5410af7e48f1b9dadb937e794c1941e74df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 45ded6caec95f5421328be09e299af535765a9c2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724846"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086782"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-Define um bitmask de 4 bytes que especifica os tipos de eventos que o mecanismo de script deve gerar.  
+Define uma máscara de bits de 4 bytes que especifica os tipos de eventos que o mecanismo de script deve gerar.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
-RESULT SetProfilerEventMask(  
+```cpp
+HRESULT SetProfilerEventMask(  
     [in] DWORD dwEventMask);  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
  `dwEventMask`  
- [in] Um bitmask de 4 bytes que especifica os tipos de eventos. Os bits são definidos em [enumeração PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ [in] Um bitmask de 4 bytes que especifica os tipos de eventos. Os bits são definidos no [enumeração PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um HRESULT. Os valores possíveis são:  

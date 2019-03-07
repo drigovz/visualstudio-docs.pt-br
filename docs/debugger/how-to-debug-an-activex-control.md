@@ -1,8 +1,6 @@
 ---
-title: 'Como: depurar um controle ActiveX | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar um controle ActiveX | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -23,17 +21,17 @@ helpviewer_keywords:
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 385f5c9e03aaeb84cf33c6d76a499b0d1e35d5c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931980"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Como depurar um controle ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Como: Depurar um controle ActiveX
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
@@ -64,4 +62,4 @@ Para depurar seu controle ActiveX, você deverá especificar um contêiner (exec
 - [Testando propriedades e eventos com contêiner de teste](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Depurando no Visual Studio](../debugger/index.md)
-- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)

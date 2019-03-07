@@ -2,20 +2,18 @@
 title: Janela de Ajuda para R
 description: A ajuda do R está integrada diretamente na janela interativa no Visual Studio por meio do comando ? comando.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 6576a701abe699bfe47666acfc21c848dde1f53a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666677"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957738"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Ajuda nas Ferramentas do R para Visual Studio
 

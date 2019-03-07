@@ -2,9 +2,7 @@
 title: Automatizar a instalação com um arquivo de resposta
 description: Saiba como criar um arquivo de resposta JSON que ajuda a automatizar a instalação do Visual Studio
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - response file
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - command-line
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30e7af50259a2087a0a380b1fe2d0c96c0d83f9a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 58c8d580ace576f7b2a4512e5bc91f83529fba77
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158769"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939574"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Como definir as configurações em um arquivo de resposta
 

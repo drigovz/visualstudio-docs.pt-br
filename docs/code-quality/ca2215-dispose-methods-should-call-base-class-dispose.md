@@ -1,8 +1,6 @@
 ---
-title: 'CA2215: os métodos de descarte devem chamar o descarte da classe base'
+title: 'CA2215: Métodos Dispose devem chamar o descarte da classe base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2215
@@ -14,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11359e021d5c297c0782bf95fe35997b0a1b5be5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548407"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914312"
 ---
-# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: os métodos de descarte devem chamar o descarte da classe base
+# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Métodos Dispose devem chamar o descarte da classe base
 
 |||
 |-|-|

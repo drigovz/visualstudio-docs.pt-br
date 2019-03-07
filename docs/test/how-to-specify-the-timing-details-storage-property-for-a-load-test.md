@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054578"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948687"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Como: Especificar a propriedade de armazenamento de detalhes de tempo para uma configuração de execução de teste de carga
 

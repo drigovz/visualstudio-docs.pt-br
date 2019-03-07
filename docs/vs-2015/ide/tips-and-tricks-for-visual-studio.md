@@ -1,25 +1,20 @@
 ---
 title: Dicas e truques | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b067302576dd83d88853a517f66e1c19186e3a78
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051150"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54771173"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Dicas e truques sobre o Visual Studio
 
@@ -144,7 +139,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 
 ##  <a name="BKMK_ALM"></a> Gerenciamento do Ciclo de Vida do Aplicativo
 
-Consulte [atalhos de teclado: Visual Studio Online, TFS da web do portal e o Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
+Veja [Atalhos de teclado: Visual Studio Online, portal da Web do TFS e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
 ## <a name="see-also"></a>Consulte também
 

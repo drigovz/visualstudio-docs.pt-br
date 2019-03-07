@@ -1,14 +1,9 @@
 ---
 title: Permissões de usuário | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
 - user permissions
@@ -18,13 +13,13 @@ ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83a45aaebbf621a5ae84a0ae4bdf3379697a47e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062840"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54775866"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permissões de usuário e Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Por motivos de segurança, você deve executar o Visual Studio como um usuário 
 |Área|Tarefa|Para obter mais informações|
 |----------|----------|--------------------------|
 |Instalação|Instalar o Visual Studio.|[Instalação do Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Atualizar de uma edição de avaliação do Visual Studio.|[Como: Atualização de uma edição de avaliação do Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Atualizar de uma edição de avaliação do Visual Studio.|[Como atualizar de uma edição para avaliação do Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Instalar, atualizar ou remover conteúdo da Ajuda local.|[Instalar e gerenciar o conteúdo local](../ide/install-and-manage-local-content.md)|
 |Tipos de aplicativo|Desenvolver soluções do SharePoint 2010.|[Requisitos para desenvolver soluções do SharePoint](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Adquirir uma licença de desenvolvedor da [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Obter uma licença da desenvolvedor (Aplicativos da Windows Store)](http://go.microsoft.com/fwlink/?LinkID=241313)|
@@ -53,8 +48,8 @@ Por motivos de segurança, você deve executar o Visual Studio como um usuário 
 ||Usar o emulador para depurar projetos de serviço de nuvem do Microsoft Azure.|[Depurando um serviço de nuvem no Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Configurar um firewall para depuração remota.|[Configurar as ferramentas remotas no dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Ferramentas de desempenho|Criar perfil de um aplicativo.|[Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)|
-|Implantação|Implantar um aplicativo Web para o IIS (Serviços de Informações da Internet) em um computador local.|[Implantando um aplicativo de Web do ASP.NET para um provedor de hospedagem usando o Visual Studio ou Visual Web Developer: Implantando no IIS como um ambiente de teste](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Fornecendo comentários à Microsoft|Alterar como participar do Programa de Experiência do Usuário do Visual Studio.|[Como: Enviar comentários](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Implantação|Implantar um aplicativo Web para o IIS (Serviços de Informações da Internet) em um computador local.|[Implantando um aplicativo Web ASP .NET em um provedor de hospedagem usando o Visual Studio ou o Visual Web Developer: Implantando no IIS como um ambiente de teste](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|Fornecendo comentários à Microsoft|Alterar como participar do Programa de Experiência do Usuário do Visual Studio.|[Como enviar comentários](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Executando o Visual Studio como um administrador
  Você pode iniciar o Visual Studio com permissões administrativas toda vez que iniciar o IDE ou pode modificar o atalho do aplicativo para sempre ser executado com permissões administrativas. Para obter mais informações, consulte a Ajuda do Windows.

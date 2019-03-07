@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067379"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916681"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como: Selecionar a configuração de execução ativa para um teste de carga
 

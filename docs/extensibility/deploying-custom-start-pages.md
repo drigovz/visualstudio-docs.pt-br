@@ -1,9 +1,6 @@
 ---
 title: Implantar páginas iniciais personalizadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package start page
@@ -11,15 +8,16 @@ helpviewer_keywords:
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926456"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693003"
 ---
 # <a name="deploy-custom-start-pages"></a>Implantar páginas de inicialização personalizada
 
@@ -46,13 +44,13 @@ Você pode obter o modelo de projeto de página inicial usando **Extension Manag
 
 - Criando manualmente uma *VSIX* arquivo. Para criar uma *VSIX* arquivo manualmente:
 
-  1.  Criar o *vsixmanifest* arquivo e o *[Content_Types]. XML* arquivo em uma nova pasta. Para obter mais informações, consulte [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+   1. Criar o *vsixmanifest* arquivo e o *[Content_Types]. XML* arquivo em uma nova pasta. Para obter mais informações, consulte [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-  2.  No Windows Explorer, clique com botão direito na pasta que contém os dois arquivos XML, clique em **enviar para**e, em seguida, clique em pasta compactada (zipada). Renomear resultante *. zip* arquivo *Filename.vsix*, onde Filename é o nome do arquivo redistribuível que instala o pacote.
+   2. No Windows Explorer, clique com botão direito na pasta que contém os dois arquivos XML, clique em **enviar para**e, em seguida, clique em pasta compactada (zipada). Renomear resultante *. zip* arquivo *Filename.vsix*, onde Filename é o nome do arquivo redistribuível que instala o pacote.
 
-  Para o Visual Studio reconhecer uma página inicial, o `Content Element` do manifesto do VSIX deve conter um `CustomExtension Element` que tem o `Type` atributo definido como `"StartPage"`. Uma extensão de página inicial que foi instalada usando a implantação do VSIX aparece na **Personalizar página inicial** lista o **inicialização** página de opções como **[instalado a extensão]** *Nome de extensão*.
+Para o Visual Studio reconhecer uma página inicial, o `Content Element` do manifesto do VSIX deve conter um `CustomExtension Element` que tem o `Type` atributo definido como `"StartPage"`. Uma extensão de página inicial que foi instalada usando a implantação do VSIX aparece na **Personalizar página inicial** lista o **inicialização** página de opções como **[instalado a extensão]** *Nome de extensão*.
 
-  Se o seu pacote de página inicial inclui assemblies, você deve adicionar o registro do caminho de associação para que eles estejam disponíveis quando o Visual Studio é iniciado. Para fazer isso, certifique-se de que seu pacote inclui um *pkgdef* arquivo que tem as informações a seguir.
+Se o seu pacote de página inicial inclui assemblies, você deve adicionar o registro do caminho de associação para que eles estejam disponíveis quando o Visual Studio é iniciado. Para fazer isso, certifique-se de que seu pacote inclui um *pkgdef* arquivo que tem as informações a seguir.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -78,7 +76,7 @@ Você pode obter o modelo de projeto de página inicial usando **Extension Manag
 
 4.  Modificar a *. pkgdef* para definir a página de início padrão em HKLM, adicionando o seguinte, onde *MyStartPage.xaml* é o nome da *. XAML* arquivo que contém seu início Página.
 
-     [$RootKey$ \StartPage\Default]
+     [$RootKey$\StartPage\Default]
 
      "Uri"="$PackageFolder$\\*MyStartPage.xaml*"
 

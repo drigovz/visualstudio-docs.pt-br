@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3eb78f96d2621eac3794ba5c7c017590a775bd8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3ff45733723395dc80d85c6c3242f24ba1474060
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728346"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088914"
 ---
 # <a name="iremotedebugapplicationeventsoncreatethread"></a>IRemoteDebugApplicationEvents::OnCreateThread
 Manipula um evento de thread de criação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnCreateThread(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -48,7 +48,7 @@ HRESULT OnCreateThread(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método trata o evento de thread de criação.  
+ Esse método manipula o evento de thread de criação.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

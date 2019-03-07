@@ -1,14 +1,9 @@
 ---
 title: Tarefa VCMessage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: 956675fd-05dc-40b4-856f-616145103498
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f592160aae4fc1382b36c7331175eb6ab20d3fdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e1011ccfe1609376dc496dc6eb8e7f50795fab5c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243926"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54784493"
 ---
 # <a name="vcmessage-task"></a>Tarefa VCMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +47,3 @@ Registra mensagens de aviso e erro durante o build.
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)
-
-
-

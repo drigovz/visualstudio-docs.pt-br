@@ -1,23 +1,21 @@
 ---
 title: Validação de quadros de gráficos | Microsoft Docs
-ms.custom: ''
 ms.date: 03/02/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.FrameValidation
 ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cdfdee83a9c78069b3f086ef84b280ba9328e4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850874"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694810"
 ---
 # <a name="graphics-frame-validation"></a>Validação de quadro de gráficos
 <!-- VERSIONLESS --> Visual Studio 2017 e maior suporte a **validação de quadro** ferramenta.  A janela de validação de quadro exibe erros e avisos associados com a lista de eventos.  Para exibir essa janela, selecione a **Exibir > validação de quadro** menu.
@@ -35,6 +33,6 @@ Clique o **executar a validação** botão no canto superior esquerdo para inici
 | Mensagem | A mensagem associada ao evento. |
 | evento | O evento associado com o erro ou aviso. |
 
-## <a name="see-also"></a>Consulte também  
-[Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>Consulte também
+[Diagnóstico de Gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

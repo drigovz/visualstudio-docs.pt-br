@@ -10,17 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967435"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913360"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 
@@ -71,15 +69,15 @@ O **construtor de Conexão** propriedade de uma ferramenta de conexão faz refer
 
 3.  Defina as **ícone da caixa de ferramentas** propriedade para se referir a um bitmap 16 x 16.
 
-     Se você quiser definir um novo ícone, crie um arquivo de bitmap no Gerenciador de soluções na **Dsl\Resources** pasta. O arquivo deve ter os seguintes valores de propriedade: **ação de compilação** = **conteúdo**; **Copy to Output Directory** = **não copiar**.
+     Se você quiser definir um novo ícone, crie um arquivo de bitmap no Gerenciador de soluções na **Dsl\Resources** pasta. O arquivo deve ter os seguintes valores de propriedade: **Ação de Build** = **conteúdo**; **Copy to Output Directory** = **não copiar**.
 
-4.  **Para uma ferramenta de elemento:** defina a **classe** propriedade da ferramenta para se referir a uma classe de domínio concreta que é mapeada para uma forma.
+4.  **Para uma ferramenta de elemento:** Defina as **classe** propriedade da ferramenta para se referir a uma classe de domínio concreta que é mapeada para uma forma.
 
-     **Para uma ferramenta de conector:** defina a **construtor de Conexão** propriedade da ferramenta para um dos itens que são oferecidos na lista suspensa. Os construtores de conexão são criados automaticamente ao mapear um conector para uma relação de domínio. Se tiver criado recentemente um conector, normalmente selecionaria o construtor de conexão associado.
+     **Para uma ferramenta de conector:** Defina as **construtor de Conexão** propriedade da ferramenta para um dos itens que são oferecidos na lista suspensa. Os construtores de conexão são criados automaticamente ao mapear um conector para uma relação de domínio. Se tiver criado recentemente um conector, normalmente selecionaria o construtor de conexão associado.
 
 5.  Para testar o DSL, pressione F5 ou CTRL+F5 e na instância experimental do Visual Studio, abra um arquivo de modelo de exemplo. A nova ferramenta deve aparecer na caixa de ferramentas. Arraste-a para o diagrama para verificar se ela criou um novo elemento.
 
-     Se a ferramenta não aparecer, pare o experimental do Visual Studio. No Windows **inicie** menu, execute **redefinir a instância Microsoft Visual Studio 2010 Experimental**. Sobre o **construir** menu, clique em **recompilar solução**. Em seguida, teste o DSL novamente.
+     Se a ferramenta não aparecer, pare o experimental do Visual Studio. No Windows **inicie** menu, execute **redefinir a instância Microsoft Visual Studio 2010 Experimental**. No menu **Compilar**, clique em **Recompilar Solução**. Em seguida, teste o DSL novamente.
 
 ## <a name="customizing"></a> Personalizando ferramentas de elemento
  Por padrão, a ferramenta criará uma única instância da classe especificada, mas é possível variar isso de duas maneiras:
@@ -238,6 +236,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)
-- [Como adicionar um manipulador de evento do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Exemplo de diagramas de circuito DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

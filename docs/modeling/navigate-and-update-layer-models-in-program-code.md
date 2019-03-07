@@ -7,21 +7,19 @@ helpviewer_keywords:
 - layer models, updating in program code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d74501a45fe3f6a40b8b64cd0b1da3f07a69bde1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566733"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923311"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar e atualizar modelos de camada no código do programa
 
-Este artigo descreve os elementos e relações em modelos de camada, o que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de dependência do ponto de vista do usuário, consulte [diagramas de dependência: referência](../modeling/layer-diagrams-reference.md) e [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md).
+Este artigo descreve os elementos e relações em modelos de camada, o que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de dependência do ponto de vista do usuário, consulte [diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md) e [diagramas de dependência: Diretrizes de](../modeling/layer-diagrams-guidelines.md).
 
 O <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> modelo descrito neste tópico é uma fachada em um mais geral <xref:Microsoft.VisualStudio.GraphModel> modelo. Se você estiver escrevendo uma [extensão de gesto ou comando de menu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), use o `Layer` modelo. Se você estiver escrevendo uma [extensão de validação de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), é mais fácil de usar o `GraphModel`.
 
@@ -136,5 +134,5 @@ public void ... (...)
 - [Adicionar comandos e gestos aos diagramas de dependência](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Adicionar validação de arquitetura personalizada a diagramas de dependência](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Adicionar propriedades personalizadas a diagramas de dependência](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
-- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)

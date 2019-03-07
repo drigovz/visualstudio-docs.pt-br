@@ -1,23 +1,21 @@
 ---
-title: 'Como: Crie snippets XML'
+title: 'Como: Criar snippet XML'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867709"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907328"
 ---
-# <a name="how-to-create-xml-snippets"></a>Como: Crie trechos XML
+# <a name="how-to-create-xml-snippets"></a>Como: Criar trechos de código XML
 
 O editor XML pode ser usado para criar novos snippets XML. O editor inclui um snippet XML, chamado “Snippets”, que é um snippet de texto constante para criar novos snippets XML.
 
@@ -121,5 +119,5 @@ O editor XML pode ser usado para criar novos snippets XML. O editor inclui um sn
 ## <a name="see-also"></a>Consulte também
 
 - [Trechos de código XML](../xml-tools/xml-snippets.md)
-- [Como: Use XML trechos de código](../xml-tools/how-to-use-xml-snippets.md)
-- [Como: gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Como: Usar trechos de código XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Como: Gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

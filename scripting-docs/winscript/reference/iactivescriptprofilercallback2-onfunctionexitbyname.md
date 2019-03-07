@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd26ab1cf36378c0f037d78a3c079c58e004006d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb198f56e5ff73561fe7b42a25b019dfb0e3817c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727406"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094556"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionexitbyname"></a>IActiveScriptProfilerCallback2::OnFunctionExitByName
-Notifica o criador de perfil de objeto que o script do mecanismo terminar de executar uma chamada de função do modelo de objeto de documento (DOM).  
+Notifica o criador de perfil de objeto que o script do mecanismo de concluir a execução de uma chamada de função do modelo de objeto de documento (DOM).  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnFunctionExitByName(  
     [in] [string] const WCHAR *pwszFunctionName,  
     [in] PROFILER_SCRIPT_TYPE scriptType);  
@@ -44,7 +44,7 @@ HRESULT OnFunctionExitByName(
  O valor de retorno desse método é ignorado pelo mecanismo de script.  
   
 ## <a name="remarks"></a>Comentários  
- Chamadas de DOM, o mecanismo de script chama esse método em vez de chamar [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Isso é devido ao grande número de exclusivos métodos e propriedades no DOM.  
+ Para chamadas de DOM, o mecanismo de script chama esse método em vez de chamar [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Isso é devido ao grande número de métodos exclusivos e propriedades no DOM.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   

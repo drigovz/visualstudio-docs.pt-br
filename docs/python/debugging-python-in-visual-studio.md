@@ -1,23 +1,21 @@
 ---
 title: Depurar o código Python
 description: O Visual Studio fornece depuração avançada para o código Python, incluindo a definição de pontos de interrupção, execução em etapas, inspeção de valores, análise de exceções e depuração na janela interativa.
-ms.date: 10/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068429"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954355"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -28,10 +26,6 @@ Veja também os seguintes artigos sobre depuração específicos ao cenário:
 - [Depuração remota do Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Depuração de modo misto do Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Símbolos para a depuração do modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) para uma demonstração da depuração do Python (3min32s).|
 
 <a name="debugging-without-a-project"></a>
 
@@ -84,7 +78,7 @@ Depois de interromper em um ponto de interrupção, você tem várias maneiras p
 
 ### <a name="inspect-and-modify-values"></a>Inspecionar e modificar valores
 
-Quando estiver parado no depurador, é possível inspecionar e modificar os valores das variáveis. Use também a janela **Inspeção** para monitorar variáveis individuais, bem como expressões personalizadas. (Confira [Inspecionar variáveis](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) para obter detalhes gerais.)
+Quando estiver parado no depurador, é possível inspecionar e modificar os valores das variáveis. Use também a janela **Inspeção** para monitorar variáveis individuais, bem como expressões personalizadas. (Confira [Inspecionar variáveis](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows) para obter detalhes gerais.)
 
 Para exibir um valor usando **DataTips**, basta passar o mouse sobre qualquer variável no editor. É possível clicar no valor para alterá-lo:
 
@@ -252,7 +246,7 @@ As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
 1. Insira o seguinte comando:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Inicie a depuração e percorra todas as etapas são necessárias para reproduzir o problema. Durante esse tempo, os logs de depuração aparecem na janela **Saída** em **Log de Host do Adaptador de Depuração**. Em seguida, você poderá copiar os logs dessa janela e colá-los em um problema do GitHub, em um email etc.
@@ -262,7 +256,7 @@ As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
 1. Se o Visual Studio parar de funcionar ou se não for possível acessar a janela **Saída**, reinicie o Visual Studio, abra uma janela de comando e digite o seguinte comando:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Inicie a depuração e reproduza o problema novamente. Os logs de depurador podem ser encontrados em `%temp%\DebugAdapterHostLog.txt`.

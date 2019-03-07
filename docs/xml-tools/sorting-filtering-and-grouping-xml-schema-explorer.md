@@ -1,33 +1,31 @@
 ---
 title: Classificação, filtragem e agrupamento em XML Schema Explorer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693663"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914000"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Classificação, filtragem e agrupamento (XML Schema Explorer)
 
-Este tópico descreve as opções que estão disponíveis por meio de **opções de agrupamento, filtragem e classificação** menu o **XML Schema Explorer** barra de ferramentas.
+Este tópico descreve as opções que estão disponíveis por meio de **opções de agrupamento, filtragem e classificação** menu a **XML Schema Explorer** barra de ferramentas.
 
 ## <a name="filter-options"></a>Opções de filtro
 
- As seguintes opções de filtro estão disponíveis. Por padrão, o **Mostrar Namespaces** e **Mostrar arquivos de esquema** são selecionadas.
+ As seguintes opções de filtro estão disponíveis. Por padrão, o **Mostrar Namespaces** e **Mostrar arquivos do esquema** opções são selecionadas.
 
--   **Mostrar Namespaces**.
+-   **Exibir Namespaces**.
 
--   **Mostrar os arquivos de esquema**.
+-   **Exibir arquivos de esquema**.
 
 -   **Exibir compositores (sequência/escolha/tudo)**.
 
@@ -39,11 +37,11 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
 -   **Classificar por nome**.
 
--   **Ordem de documento**.
+-   **Ordem do documento**.
 
 ### <a name="sort-by-type"></a>Classificar por Tipo
 
- Quando o **classificar por tipo** opção é selecionada, nós globais são classificados na seguinte ordem. Nós são classificados em ordem alfabética dentro de cada grupo.
+ Quando o **classificar por tipo** opção estiver selecionada, os nós globais são classificados na seguinte ordem. Nós são classificados em ordem alfabética dentro de cada grupo.
 
 1.  nós de`import` .
 
@@ -65,7 +63,7 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
 ### <a name="sort-by-name"></a>Classificar por Nome
 
- Quando o **classificar por nome** opção é selecionada, nós globais são classificados na seguinte ordem:
+ Quando o **classificar por nome** opção estiver selecionada, os nós globais são classificados na seguinte ordem:
 
 1.  nós de`import` (em ordem alfabética namespaces).
 
@@ -77,7 +75,7 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
 ### <a name="document-order"></a>Ordem de documento
 
- O **ordem do documento** opção está disponível quando o **Mostrar arquivos de esquema** opção é selecionada. Quando **ordem do documento** for selecionada, nós globais são exibidos na ordem em que aparecem no arquivo de esquema.
+ O **ordem do documento** opção está disponível quando o **Mostrar arquivos do esquema** opção está selecionada. Quando **ordem do documento** for selecionada, os nós globais são exibidos na ordem em que aparecem no arquivo de esquema.
 
 ## <a name="persisting-sortfilter-options"></a>Opções de classificação/filtro persistentes
 

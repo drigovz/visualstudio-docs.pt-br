@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058657"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335565"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Referência de migração e atualização de projeto para o Visual Studio 2019 Preview
 
@@ -35,7 +35,7 @@ O suporte para alguns tipos de projeto também muda ao longo do tempo. É possí
 
 Este artigo fornece detalhes para os tipos de projeto que o Visual Studio 2019 Preview pode migrar. Também fornece detalhes sobre os tipos de projeto preteridos no Visual Studio 2019 Preview ou que em breve serão preteridos. O artigo exclui os tipos de projeto para os quais não há mais suporte no Visual Studio 2019 e, portanto, não podem ser migrados. O artigo também exclui os tipos de projeto compatíveis que não têm nenhum problema de migração. A lista desses tipos é encontrada em [Direcionamento e compatibilidade da plataforma](/visualstudio/releases/2019/compatibility).
 
-> [!Important]
+> [!IMPORTANT]
 > Alguns tipos de projeto exigem a instalação de cargas de trabalho específicas por meio do Instalador do Visual Studio. Se a carga de trabalho não estiver instalada, o Visual Studio relatará um tipo de projeto desconhecido ou incompatível. Nesse caso, verifique as opções de instalação e tente novamente. Confira o artigo [Direcionamento e compatibilidade de plataformas](/visualstudio/releases/2019/compatibility) para obter detalhes sobre o suporte de projetos no Visual Studio 2019 Preview.
 
 ## <a name="project-types"></a>Tipos de projeto

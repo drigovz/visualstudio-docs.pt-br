@@ -1,9 +1,6 @@
 ---
 title: Dentro do SDK do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -12,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757036"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796667"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 Esta seção fornece informações detalhadas sobre as extensões do Visual Studio, incluindo a arquitetura do Visual Studio, componentes, serviços, esquemas, utilitários e assim por diante.
@@ -37,7 +34,7 @@ Esta seção fornece informações detalhadas sobre as extensões do Visual Stud
  Shell do Visual Studio fornece a funcionalidade básica e dar suporte a comunicação cruzada entre suas extensões de componente VSPackages e MEF. Para obter mais informações, consulte [Shell do Visual Studio](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Diretrizes da Experiência do Usuário
- Se você estiver planejando criar novos recursos para o Visual Studio, você deve dar uma olhada nestas diretrizes para obter dicas de design e a usabilidade: [diretrizes de experiência de usuário do Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Se você estiver planejando criar novos recursos para o Visual Studio, você deve dar uma olhada nestas diretrizes para obter dicas de design e a usabilidade: [Diretrizes de experiência de usuário do Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Comandos
  Comandos são funções que realizam tarefas, como imprimir um documento, a atualização de uma exibição ou criando um novo arquivo.
@@ -58,13 +55,13 @@ Esta seção fornece informações detalhadas sobre as extensões do Visual Stud
 
  Normalmente, as janelas de ferramentas oferecem vários controles com a qual o usuário pode interagir. Por exemplo, o **propriedades** janela permite que o usuário defina as propriedades de objetos que têm um propósito específico. O **propriedades** janela é especializada nesse sentido, mas também geral porque ele pode ser usado em muitas situações diferentes. Da mesma forma, o **saída** é especializada em janela porque ele fornece uma saída com base em texto, mas geral porque muitos subsistemas no Visual Studio podem usá-lo para fornecer saída para o usuário do Visual Studio.
 
- Considere a imagem a seguir do Visual Studio, que contém várias janelas de ferramentas.
+ Considere a imagem a seguir do Visual Studio, que contém várias janelas de ferramenta:
 
  ![Captura de tela](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Algumas das janelas de ferramentas estão encaixadas juntas em um único painel que exibe a janela de ferramenta do Gerenciador de soluções e oculta as outras janelas de ferramentas, mas torna-os disponíveis clicando nas guias. A figura mostra duas outras janelas de ferramentas, o **lista de erros** e **saída** janela, encaixada juntas em um único painel.
 
- Também mostrado é o painel do documento principal, que mostra as várias janelas do editor. Embora as janelas de ferramentas normalmente têm uma única instância (por exemplo, você pode abrir somente um **Gerenciador de soluções**), janelas do editor podem ter várias instâncias, cada um deles é usada para editar um documento separado, mas todos os quais ferramentas estão encaixados em o mesmo painel. A figura mostra um painel de documento que tem duas janelas do editor, uma janela de designer de formulário e uma janela do navegador que mostra a página de início. Todas as janelas no painel do documento estão disponíveis clicando nas guias, mas a janela do editor que contém o arquivo EditorPane.cs está visível e Active Directory.
+ Também mostrado é o painel do documento principal, que mostra as várias janelas do editor. Embora as janelas de ferramentas normalmente têm uma única instância (por exemplo, você pode abrir somente um **Gerenciador de soluções**), janelas do editor podem ter várias instâncias, cada um deles é usada para editar um documento separado, mas todos os quais ferramentas estão encaixados em o mesmo painel. A figura mostra um painel de documento que contém duas janelas do editor, uma janela de designer de formulário. Todas as janelas no painel do documento estão disponíveis clicando nas guias, mas a janela do editor que contém o arquivo EditorPane.cs está visível e Active Directory.
 
  Quando você estende o Visual Studio, você pode criar ferramenta janelas que permitem que os usuários do Visual Studio interagir com sua extensão. Você também pode criar seus próprios editores que permitem que os usuários do Visual Studio editar documentos. Como seus editores e janelas de ferramenta serão integrados ao Visual Studio, você não precisa programá-los para encaixar ou exibidos corretamente em uma guia. Quando eles são registrados corretamente no Visual Studio, eles terão automaticamente os recursos típicos de janelas de ferramentas e janelas de documentos no Visual Studio. Para obter mais informações, consulte [estendendo e personalizando ferramenta Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 
@@ -103,7 +100,7 @@ Esta seção fornece informações detalhadas sobre as extensões do Visual Stud
  Para obter mais informações, consulte [adicionando projeto e modelos de Item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="properties-and-options"></a>Propriedades e opções
- O **propriedades** janela exibe as propriedades de um único ou vários itens selecionados: [estendendo propriedades](../../extensibility/internals/extending-properties.md) páginas de opções contêm conjuntos de opções que pertencem a um componente específico, como um programação da linguagem ou um VSPackage: [opções e páginas de opções](../../extensibility/internals/options-and-options-pages.md). As configurações são recursos geralmente relacionados à interface do usuário que podem ser importados e exportados: [suporte para configurações de usuário](../../extensibility/internals/support-for-user-settings.md).
+ O **propriedades** janela exibe as propriedades de um único ou vários itens selecionados: [Estendendo propriedades](../../extensibility/internals/extending-properties.md) páginas de opções contêm conjuntos de opções que pertencem a um componente específico, como uma linguagem de programação ou em um VSPackage: [Opções e páginas de opções](../../extensibility/internals/options-and-options-pages.md). As configurações são recursos geralmente relacionados à interface do usuário que podem ser importados e exportados: [Suporte para configurações de usuário](../../extensibility/internals/support-for-user-settings.md).
 
 ## <a name="visual-studio-services"></a>Serviços do Visual Studio
  Um serviço fornece um conjunto específico de interfaces de componentes consumir. Visual Studio fornece um conjunto de serviços que podem ser usados por todos os componentes, incluindo as extensões. Por exemplo, serviços do Visual Studio permitem que janelas de ferramenta a ser mostrado ou oculto dinamicamente, habilitar o acesso à Ajuda, barra de status ou eventos de interface do usuário. Editor do Visual Studio também fornece serviços que podem ser importados por extensões de editor. Para obter mais informações, consulte [Using e fornecendo serviços](../../extensibility/using-and-providing-services.md).

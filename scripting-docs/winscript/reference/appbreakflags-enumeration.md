@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641676"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349017"
 ---
 # <a name="appbreakflags-enumeration"></a>Enumeração APPBREAKFLAGS
 Indica o estado atual da depuração para aplicativos e threads.  
@@ -38,18 +38,18 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |Membro|Valor|Descrição|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Mecanismo de linguagem deve interromper imediatamente em todos os threads com BREAKREASON_DEBUGGER_BLOCK.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Mecanismo de linguagem deve interromper imediatamente com BREAKREASON_DEBUGGER_HALT.|  
-|APPBREAKFLAG_STEP|0x00010000|Mecanismo de linguagem deve interromper imediatamente no thread de revisão com BREAKREASON_STEP.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Mecanismo de linguagem deve ser interrompido imediatamente em todos os threads com BREAKREASON_DEBUGGER_BLOCK.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Mecanismo de linguagem deve ser interrompido imediatamente com BREAKREASON_DEBUGGER_HALT.|  
+|APPBREAKFLAG_STEP|0x00010000|Mecanismo de linguagem deve ser interrompido imediatamente no thread de passo a passo com BREAKREASON_STEP.|  
 |APPBREAKFLAG_NESTED|0x00020000|O aplicativo está em execução aninhada em um ponto de interrupção.|  
-|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|O depurador está entrando no nível de fonte.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|O depurador está entrando no nível de código de bytes.|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|O depurador está entrando no nível do computador.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Determinando os tipos de etapa máscara.|  
+|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|O depurador é depuração no nível do código-fonte.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|O depurador é depuração no nível do código de bytes.|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|O depurador é depuração no nível do computador.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Máscara para fatorar os tipos de etapa.|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Um ponto de interrupção está em andamento.|  
   
 ## <a name="remarks"></a>Comentários  
- Alguns sinalizadores de especificam que os mecanismos de idioma devem haver uma quebra na próxima oportunidade, enquanto outros sinalizadores de especificar o modo de depuração do depurador.  
+ Alguns sinalizadores de especificam que mecanismos de linguagem devem ser interrompido na próxima oportunidade, enquanto outros sinalizadores de especificam o modo de passo a passo do depurador.  
   
 ## <a name="see-also"></a>Consulte também  
  [Estruturas, enumerações e constantes do depurador de Script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   

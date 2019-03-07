@@ -1,23 +1,21 @@
 ---
 title: Editor de imagem
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9783029eab9597624be459fe88b51a495328b5be
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878369"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938183"
 ---
 # <a name="image-editor"></a>Editor de imagem
 
@@ -126,10 +124,10 @@ A tabela a seguir descreve os itens na barra de ferramentas **Modo do Editor de 
 |**Grade**|Habilita ou desabilita a grade que mostra os limites de pixel. A grade pode não aparecer até você ampliar a imagem.|
 |**Exibição do Próximo Nível de MIP**|Ativa o próximo nível maior de MIP em uma cadeia de mapas MIP. O nível de MIP ativo é exibido na área de design. Este item só está disponível para texturas que têm níveis de MIP.|
 |**Exibir um Nível de MIP Anterior**|Ativa o próximo nível menor de MIP em uma cadeia de mapas MIP. O nível de MIP ativo é exibido na área de design. Este item só está disponível para texturas que têm níveis de MIP.|
-|**Canal vermelho**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita ou desabilita o canal da cor específica. **Observação:** habilitando ou desabilitando sistematicamente os canais de cor, você pode isolar problemas relacionados a um ou mais deles. Por exemplo, você poderia identificar a transparência alfa incorreta.|
+|**Canal vermelho**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita ou desabilita o canal da cor específica. **Observação:**  Habilitando ou desabilitando sistematicamente os canais de cor, você pode isolar problemas relacionados a um ou mais deles. Por exemplo, você poderia identificar a transparência alfa incorreta.|
 |**Tela de Fundo**|Habilita ou desabilita a exibição da tela de fundo através das partes transparentes da imagem. Você pode configurar como a tela de fundo é exibida escolhendo entre estas opções:<br /><br /> **Quadriculado**<br /> Usa uma cor verde junto com a cor da tela de fundo especificada para exibir a tela de fundo como um padrão quadriculado. Você pode usar essa opção para ajudar a tornar as partes transparentes da imagem mais visíveis.<br /><br /> Tela de fundo branco<br /> Usa a cor branca para exibir a tela de fundo.<br /><br /> Tela de fundo preto<br /> Usa a cor preta para exibir a tela de fundo.<br /><br /> Animar a tela de fundo<br /> Movimenta o padrão quadriculado lentamente em panorâmica. Você pode usar essa opção para ajudar a tornar as partes transparentes da imagem mais visíveis.|
 |**Propriedades**|Alterna entre abrir e fechar a janela **Propriedades**.|
-|**Avançado**|Contém comandos e opções adicionais.<br /><br /> **Filtros**<br /><br /> Fornece vários filtros de imagem comuns: **Preto e branco**, **Desfoque**, **Iluminar**, **Escurecer**, **Detecção de borda**, **Colocar em alto-relevo**, **Inverter cores**, **Ripple**, **Tom sépia** e **Ajustar nitidez**.<br /><br /> **Mecanismos Gráficos**<br /><br /> **Renderizar com o D3D11**<br /> Usa o Direct3D 11 para renderizar a área de design do **Editor de Imagens**.<br /><br /> **Renderizar com o D3D11WARP**<br /> Usa o 11 WARP (Windows Advanced Rasterization Platform) do Direct3D para renderizar a área de design do **Editor de Imagens**.<br /><br /> **Ferramentas**<br /><br /> **Inverter Horizontalmente**<br /> Transpõe a imagem ao redor do seu eixo horizontal, também chamado x.<br /><br /> **Inverter Verticalmente**<br /> Transpõe a imagem ao redor do seu eixo vertical, também chamado y.<br /><br /> **Gerar Mips**<br /> Gera os níveis de MIP para uma imagem. Se os níveis de MIP já existirem, eles serão recriados do maior nível de MIP. Quaisquer alterações feitas aos níveis de MIP menores serão perdidas. Para salvar os níveis de MIP gerados, use o formato *.dds* para salvar a imagem.<br /><br /> **Exibir**<br /><br /> **Taxa de Quadros**<br /> Quando habilitado exibe a taxa de quadros no canto superior direito da área de design. A taxa de quadros é o número de quadros desenhados por segundo. **Dica:** escolha o botão **Avançado** para executar o último comando novamente.|
+|**Avançado**|Contém comandos e opções adicionais.<br /><br /> **Filtros**<br /><br /> Fornece vários filtros de imagem comuns: **Preto e branco**, **Desfoque**, **Iluminar**, **Escurecer**, **Detecção de borda**, **Colocar em alto-relevo**, **Inverter cores**, **Ripple**, **Tom sépia** e **Ajustar nitidez**.<br /><br /> **Mecanismos Gráficos**<br /><br /> **Renderizar com o D3D11**<br /> Usa o Direct3D 11 para renderizar a área de design do **Editor de Imagens**.<br /><br /> **Renderizar com o D3D11WARP**<br /> Usa o 11 WARP (Windows Advanced Rasterization Platform) do Direct3D para renderizar a área de design do **Editor de Imagens**.<br /><br /> **Ferramentas**<br /><br /> **Inverter Horizontalmente**<br /> Transpõe a imagem ao redor do seu eixo horizontal, também chamado x.<br /><br /> **Inverter Verticalmente**<br /> Transpõe a imagem ao redor do seu eixo vertical, também chamado y.<br /><br /> **Gerar Mips**<br /> Gera os níveis de MIP para uma imagem. Se os níveis de MIP já existirem, eles serão recriados do maior nível de MIP. Quaisquer alterações feitas aos níveis de MIP menores serão perdidas. Para salvar os níveis de MIP gerados, use o formato *.dds* para salvar a imagem.<br /><br /> **Exibir**<br /><br /> **Taxa de Quadros**<br /> Quando habilitado exibe a taxa de quadros no canto superior direito da área de design. A taxa de quadros é o número de quadros desenhados por segundo. **Dica:** Você pode escolher o botão **Avançado** para executar novamente o último comando.|
 
 ### <a name="image-editor-toolbar"></a>Barra de ferramentas do editor de imagens
 
@@ -152,7 +150,7 @@ A tabela a seguir descreve os itens da barra de ferramentas **Editor de Imagens*
 
 ### <a name="work-with-mip-levels"></a>Trabalhar com níveis de MIP
 
-Alguns formatos de imagem, por exemplo, o DirectDraw Surface (*.dds*) dão suporte a níveis de MIP para LOD (Nível de Detalhe) do espaço de textura. Para obter informações sobre como gerar e trabalhar com níveis de MIP, confira [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Alguns formatos de imagem, por exemplo, o DirectDraw Surface (*.dds*) dão suporte a níveis de MIP para LOD (Nível de Detalhe) do espaço de textura. Para obter informações sobre como gerar e trabalhar com níveis de MIP, confira [Como: Criar e modificar os níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Trabalhar com transparência
 

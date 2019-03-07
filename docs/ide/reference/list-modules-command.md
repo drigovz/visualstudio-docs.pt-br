@@ -1,8 +1,6 @@
 ---
 title: Comando Listar Módulos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmodules
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e975cf886f0bb8392bd3679a28bae6bb6bfe00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d466a320d9acd968bfab07b7e8a595dde10ad9c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944655"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947400"
 ---
 # <a name="list-modules-command"></a>Comando Listar Módulos
 Lista os módulos do processo atual.
@@ -82,4 +80,4 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)
-- [Como usar a janela Módulos](../../debugger/how-to-use-the-modules-window.md)
+- [Como: Usar a janela Módulos](../../debugger/how-to-use-the-modules-window.md)

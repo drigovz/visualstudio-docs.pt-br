@@ -2,23 +2,21 @@
 title: Tutorial Python no Visual Studio, etapa 1, criar um projeto
 titleSuffix: ''
 description: Visão geral e etapa 1 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo pré-requisitos e criação de um projeto do Python.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049839"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155208"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Trabalhar com o Python no Visual Studio
 
@@ -62,7 +60,7 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 
     (1) O seu projeto está realçado em negrito, usando o nome que você forneceu na caixa de diálogo **Novo Projeto**. No disco, esse projeto é representado por um arquivo *.pyproj* na pasta do projeto.
 
-    (2) No nível superior está uma *solução* que, por padrão, tem o mesmo nome que o seu projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados. Por exemplo, se você escreve uma extensão de C++ para o seu aplicativo Python, o projeto de C++ poderá residir na mesma solução. A solução também pode conter um projeto para um serviço Web, juntamente com projetos para programas de teste dedicados. 
+    (2) No nível superior está uma *solução* que, por padrão, tem o mesmo nome que o seu projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados. Por exemplo, se você escreve uma extensão de C++ para o seu aplicativo Python, o projeto de C++ poderá residir na mesma solução. A solução também pode conter um projeto para um serviço Web, juntamente com projetos para programas de teste dedicados.
 
     (3) No seu projeto, você vê os arquivos de origem, neste caso, um único arquivo *.py*. Quando se seleciona um arquivo, as respectivas propriedades são exibidas na janela **Propriedades**. Ao clicar duas vezes em um arquivo, ele será aberto da forma que for apropriada para esse arquivo.
 
@@ -80,5 +78,3 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 - [Projetos do Python no Visual Studio](managing-python-projects-in-visual-studio.md).
 - [Saiba mais sobre a linguagem Python em python.org](https://www.python.org)
 - [Python para iniciantes](https://www.python.org/about/gettingstarted/) (python.org)
-- [Cursos gratuitos do Python na Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Top Python Questions (Principais perguntas sobre Python) na Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

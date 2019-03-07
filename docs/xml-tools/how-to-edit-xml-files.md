@@ -1,25 +1,23 @@
 ---
-title: Como editar arquivos XML
+title: 'Como: Editar arquivos XML'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3754bcf87d77a3a67801ef7f9df8e07dc687b052
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549123"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931748"
 ---
-# <a name="how-to-edit-xml-files"></a>Como: editar arquivos XML
+# <a name="how-to-edit-xml-files"></a>Como: Editar arquivos XML
 
-O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquivo XML independente, ou em um arquivo associado a um projeto o Visual Studio. O Editor de XML está associado com as seguintes extensões de arquivo: *. config*, *. DTD*, *. XML*, *. xsd*, *XDR*, *. xsl*, *. XSLT*, e *vssettings*. O Editor de XML também está associado a qualquer outro tipo de arquivo que não tenha nenhum editor específico registrado e que contenha o conteúdo XML ou DTD.
+O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquivo XML independente, ou em um arquivo associado a um projeto o Visual Studio. O Editor de XML está associado com as seguintes extensões de arquivo: *. config*, *. DTD*, *. XML*, *. xsd*, *. XDR*, *. xsl*, *XSLT*, e *vssettings*. O Editor de XML também está associado a qualquer outro tipo de arquivo que não tenha nenhum editor específico registrado e que contenha o conteúdo XML ou DTD.
 
 > [!NOTE]
 > Os documentos XHTML são tratados pelo Editor de HTML.
@@ -30,17 +28,17 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
 
 ### <a name="to-add-a-new-xml-file-to-a-project"></a>Para adicionar um novo arquivo XML a um projeto
 
-1.  Do **projeto** menu, selecione **Adicionar Novo Item**.
+1.  Dos **Project** menu, selecione **Adicionar Novo Item**.
 
-2.  Selecione **arquivo XML** do **modelos** painel.
+2.  Selecione **arquivo XML** da **modelos** painel.
 
-3.  Insira o nome do arquivo de **nome** campo e pressione **adicionar**.
+3.  Insira o nome do arquivo a **nome** campo e pressione **Add**.
 
      O arquivo XML é adicionado ao projeto e aberto no Editor de XML. O arquivo contém a declaração XML padrão, `<?xml version="1.0" encoding="utf-8" ?>`.
 
 ## <a name="to-add-an-existing-xml-file-to-a-project"></a>Para adicionar um arquivo XML existente a um projeto
 
-1.  Do **projeto** menu, selecione **Add Existing Item**.
+1.  Dos **Project** menu, selecione **Add Existing Item**.
 
      O **Add Existing Item** caixa de diálogo é exibida.
 
@@ -48,17 +46,17 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
 
 ## <a name="to-create-a-new-xml-or-xslt-file"></a>Para criar um novo arquivo XML ou XSLT
 
-1.  Do **arquivo** menu, selecione **novo**.
+1.  Dos **arquivo** menu, selecione **New**.
 
      O **novo arquivo** caixa de diálogo é exibida.
 
 2.  Selecione **arquivo XML** para criar um novo arquivo XML; ou, selecione **arquivo XSLT** para criar uma nova folha de estilos XSLT.
 
-3.  Clique em **abrir**.
+3.  Clique em **Abrir**.
 
 ## <a name="to-create-a-project-for-xml-files"></a>Para criar um projeto para arquivos XML
 
-1.  Do **arquivo** menu, selecione **novo**e, em seguida, selecione **projeto**.
+1.  Dos **arquivo** menu, selecione **New**e, em seguida, selecione **projeto**.
 
      A caixa de diálogo **Novo Projeto** é exibida.
 
@@ -71,5 +69,5 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
 ## <a name="see-also"></a>Consulte também
 
 - [Editor de XML](../xml-tools/xml-editor.md)
-- [Propriedades de documento XML, janela de propriedades](../xml-tools/xml-document-properties-properties-window.md)
-- [Como: criar um esquema XML de um documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)
+- [Como: Criar um esquema XML de um documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

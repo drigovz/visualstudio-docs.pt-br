@@ -1,29 +1,24 @@
 ---
 title: Usando shims a fim de isolar seu aplicativo de outros assemblies para teste de unidade | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a6cd7efa12fc87c5de4bd82bcfb789d50193dbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784135"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usando shims para isolar seu aplicativo de outros assemblies para teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tipos de shim * * são uma das duas tecnologias que o Microsoft Fakes Framework usa para permitir que você isole facilmente os componentes em teste do ambiente. Shims desviam chamadas a métodos específicos para o código que você está escrevendo como parte de seu teste. Muitos métodos retornam resultados diferentes dependendo das condições externas, mas um shim está sob controle do seu teste e pode retornar resultados consistentes em cada chamada. Isso facilita a escrita dos testes.  
+Os tipos de shim** são uma das duas tecnologias usadas pelo Microsoft Fakes Framework para permitir que você isole com facilidade componentes em teste do ambiente. Shims desviam chamadas a métodos específicos para o código que você está escrevendo como parte de seu teste. Muitos métodos retornam resultados diferentes dependendo das condições externas, mas um shim está sob controle do seu teste e pode retornar resultados consistentes em cada chamada. Isso facilita a escrita dos testes.  
   
  Use shims para isolar o código de assemblies que não fazem parte de sua solução. Para isolar os componentes da solução uns dos outros, recomendamos que você use stubs.  
   
@@ -33,7 +28,7 @@ Tipos de shim * * são uma das duas tecnologias que o Microsoft Fakes Framework 
   
 - Visual Studio Enterprise  
   
-  Confira [Vídeo (1:16): testando códigos que não podem ser testados com o Fakes no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
+  Consulte [vídeo (1:16): Testar o código que não podem ser testado com o Fakes no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
   
 ## <a name="in-this-topic"></a>Neste tópico  
  Veja o que você aprenderá neste tópico:  
@@ -552,12 +547,9 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="guidance"></a>Diretrizes  
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testando para entrega contínua com Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Consulte também  
  [Isolando código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Blog do Peter Provost: shims no Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Vídeo (1:16): testando códigos que não podem ser testados com o Fakes no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
-
-
-
+ [Vídeo (1h16): Testar o código que não podem ser testado com o Fakes no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

@@ -3,22 +3,21 @@ title: Gerenciar pacotes npm
 description: O Visual Studio ajuda você a gerenciar pacotes usando o npm (gerenciador de pacotes do Node.js)
 ms.custom: seodec18
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 297bad186c7f3412e56a5a59f65b82ab9cd35a03
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049646"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948189"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gerenciar pacotes de npm no Visual Studio
 
@@ -37,7 +36,7 @@ A maneira mais fácil de instalar pacotes npm é por meio da janela de instalaç
 
 ![Instalar o novo pacote do npm usando o Gerenciador de Soluções](../javascript/media/solution-explorer-install-package.png)
 
-Nessa janela, você pode procurar por um pacote, especificar as opções e instalar. 
+Nessa janela, você pode procurar por um pacote, especificar as opções e instalar.
 
 ![Pesquisar pacote do npm](../javascript/media/search-package.png)
 
@@ -74,10 +73,10 @@ Você também pode usar o comando `.npm` na janela interativa do Node.js para ex
 Na janela, você pode usar comandos como o seguinte para instalar um pacote:
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > Por padrão, o npm será executado no diretório inicial do projeto. Se houver vários projetos na solução, especifique o nome ou o caminho do projeto entre colchetes. 
+ > Por padrão, o npm será executado no diretório inicial do projeto. Se houver vários projetos na solução, especifique o nome ou o caminho do projeto entre colchetes.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Se seu projeto não contiver um arquivo package.json, use `.npm init -y` para criar um novo arquivo package.json com as entradas padrão. 
+ > Se seu projeto não contiver um arquivo package.json, use `.npm init -y` para criar um novo arquivo package.json com as entradas padrão.

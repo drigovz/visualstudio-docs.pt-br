@@ -1,8 +1,6 @@
 ---
-title: 'CA2121: os construtores estáticos devem ser privados'
+title: 'CA2121: Construtores estáticos devem ser particulares'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2121
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ee93c620-8fc1-4e47-866c-d389c3ca9f2e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f20115d694657053e3e687b4e399df463957e9c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9aecfe8e0be0f5d32df41b7eb164423fd4d405db
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923921"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939730"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: os construtores estáticos devem ser privados
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Construtores estáticos devem ser particulares
 
 |||
 |-|-|

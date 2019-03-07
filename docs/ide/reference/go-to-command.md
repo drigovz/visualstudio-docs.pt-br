@@ -1,8 +1,6 @@
 ---
 title: Comando Ir para
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.goto
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e583ee3bcb764d09bed9907710454dd6c39c6b8d
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704260"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947414"
 ---
 # <a name="go-to-command"></a>Comando Ir para
 Move o cursor para a linha especificada.

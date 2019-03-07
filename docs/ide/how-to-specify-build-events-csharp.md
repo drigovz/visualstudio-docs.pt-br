@@ -1,8 +1,6 @@
 ---
-title: Como especificar eventos de build (C#)
+title: 'Como: Especificar eventos de build (C#)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa82c7f12b3932c1e9f5aac7392d6ef2b8e8a773
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af2329789e5eea4c9b0875f2986181f6d672757c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885835"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930448"
 ---
-# <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
+# <a name="how-to-specify-build-events-c"></a>Como: Especificar eventos de build (C#)
 
 Use eventos de build para especificar comandos que são executados antes do início do build ou após sua conclusão. Eventos de build são executados somente se o build atingir com êxito esses pontos no processo de build.
 
@@ -61,7 +59,7 @@ Quando um projeto é compilado, eventos de pré-build são adicionados a um arqu
     > [!NOTE]
     > Se o evento de pré ou de pós-build não for concluído com êxito, você poderá encerrar o build fazendo a ação do evento terminar com um código diferente de zero (0), o que indica uma ação bem-sucedida.
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Exemplo: como alterar informações de manifesto usando um evento de pós-build
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Exemplo: Como alterar informações de manifesto usando um evento de pós-build
 
 O procedimento a seguir mostra como definir a versão mínima do sistema operacional no manifesto do aplicativo usando um comando *.exe* chamado de um evento de pós-build (o arquivo *.exe.manifest* no diretório do projeto). A versão mínima do sistema operacional é um número de quatro partes, como 4.10.0.0. Para fazer isso, o comando alterará a seção `<dependentOS>` do manifesto:
 
@@ -189,5 +187,5 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 - [Página Eventos de Build, Designer de Projeto (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Como especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

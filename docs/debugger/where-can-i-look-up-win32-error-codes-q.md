@@ -1,8 +1,6 @@
 ---
 title: Onde posso pesquisar códigos de erro Win32? | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.errors
@@ -17,24 +15,24 @@ helpviewer_keywords:
 ms.assetid: 8fb4ff42-b8eb-4152-b49e-b802d194b05e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecddd2a8ca87d4c86b3cdf776fcf2e475efb8836
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: ebd2b4dd65fbcb957e13207cc5550a10b7870219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056918"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699230"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Onde posso pesquisar códigos de erro Win32?
-WINERROR.H no diretório INCLUDE da instalação do sistema padrão contém as definições do código de erro para as funções de API do Win32.  
-  
- Você pode pesquisar um código de erro digitando o código a **Watch** janela ou o **QuickWatch** caixa de diálogo. Por exemplo:  
-  
-`0x80000004,hr` 
+WINERROR.H no diretório INCLUDE da instalação do sistema padrão contém as definições do código de erro para as funções de API do Win32.
 
-  
-## <a name="see-also"></a>Consulte também  
- [Perguntas frequentes do código nativo de depuração](../debugger/debugging-native-code-faqs.md)   
- [Depurando código nativo](../debugger/debugging-native-code.md)
+ Você pode pesquisar um código de erro digitando o código na janela **Inspeção** ou na caixa de diálogo **QuickWatch**. Por exemplo:
+
+`0x80000004,hr`
+
+
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)
+- [Depurando código nativo](../debugger/debugging-native-code.md)

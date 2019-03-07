@@ -14,26 +14,26 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3360cea0d1649348a795356ad827b32b6f8ebc19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2fd51d5bdd076199167e52f685f16572756f9740
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729396"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346547"
 ---
 # <a name="iremotedebugapplicationex-interface"></a>Interface IRemoteDebugApplicationEx
-Representa um aplicativo em execução. Ele não precisa corresponder a um processo do sistema operacional. Normalmente, um depurador tem como alvo um aplicativo para depuração. Normalmente, o Gerenciador de depuração do processo implementa o objeto de aplicativo.  
+Representa um aplicativo em execução. Ele não precisa corresponder a um processo do sistema operacional. Normalmente, um depurador destina-se um aplicativo para depuração. O Gerenciador de depuração do processo normalmente implementa o objeto de aplicativo.  
   
  Além dos métodos herdados de `IUnknown`, o `IRemoteDebugApplicationEx` interface expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Retorna a ID de processo para o aplicativo host.|  
-|GetHostMachineName|Retorna o nome do computador que o aplicativo de host está em execução no.|  
+|GetHostMachineName|Retorna o nome do computador que o aplicativo host está sendo executado.|  
 |[IRemoteDebugApplicationEx:SetLocale](../../winscript/reference/iremotedebugapplicationex-setlocale.md)|Define o idioma para a localização do depurador.|  
-|[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Força o depurador em modo de única etapa.|  
+|[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Força o depurador em modo de etapa única.|  
 |[IRemoteDebugApplicationEx:RevokeBreak](../../winscript/reference/iremotedebugapplicationex-revokebreak.md)|Revoga um comando de interrupção.|  
-|SetProxyBlanketAndAddRef|Atualiza as informações de segurança COM um proxy para um objeto do depurador para garantir a compatibilidade com a depuração remota de sistemas operacionais baseados no Windows 95.|  
-|ReleaseFromSetProxyBlanket|Versões AddRef de SetProxyBlanketAndAddRef.|
+|SetProxyBlanketAndAddRef|Atualiza as informações de segurança COM um proxy para um objeto de depurador a fim de garantir a compatibilidade com a depuração remota de sistemas operacionais baseados no Windows 95.|  
+|ReleaseFromSetProxyBlanket|AddRef versões de SetProxyBlanketAndAddRef.|

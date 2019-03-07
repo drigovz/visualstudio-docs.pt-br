@@ -1,14 +1,9 @@
 ---
 title: Número esperado | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5001
 dev_langs:
@@ -16,19 +11,18 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b272f51a-97c2-4398-8b46-9cc49a5c0bd6
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e6525a79ed866b9c714913f11fcbbe13066208
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c439126cb10f24a3354ce58901a691d8f0f20738
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633046"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843549"
 ---
 # <a name="number-expected"></a>Número esperado
-Você tentou invocar o **Number.prototype.toString** ou **Number.prototype.valueOf** método em um objeto de um tipo diferente de **número**. O objeto desse tipo de chamada deve ser do tipo **número**.  
+Você tentou invocar o **Number.prototype.toString** ou **Number.prototype.valueOf** método em um objeto de um tipo diferente de **número**. O objeto desse tipo de invocação deve ser do tipo **número**.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

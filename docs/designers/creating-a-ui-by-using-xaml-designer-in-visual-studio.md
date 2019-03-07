@@ -1,8 +1,6 @@
 ---
 title: Criando uma interface do usuário usando o Designer XAML
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -12,15 +10,15 @@ f1_keywords:
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 6c84017ac7cbeb33e4ce63297ade66d54dfa152b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220990"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955187"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criar uma interface do usuário usando o Designer XAML no Visual Studio
 
@@ -163,7 +161,7 @@ A janela Estrutura de Tópicos de Documento no Designer XAML ajuda a executar es
 
 - Criar e modificar modelos para elementos que são controles.
 
-- Usar o menu de contexto para elementos selecionados. O mesmo menu também está disponível para os elementos selecionados no artboard.
+- Use o menu de clique com o botão direito do mouse (menu de contexto) para os elementos selecionados. O mesmo menu também está disponível para os elementos selecionados no artboard.
 
 Para exibir a janela **Estrutura de Tópicos do Documento**, na barra de menus escolha **Exibir** > **Outras Janelas** > **Estrutura de Tópicos do Documento**.
 
@@ -201,4 +199,4 @@ Há várias opções na parte superior da janela **Propriedades**. Você pode al
 
 - [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md)
 - [Como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md)
-- [Passo a passo: associando dados no XAML Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Passo a passo: Associando a dados no Designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

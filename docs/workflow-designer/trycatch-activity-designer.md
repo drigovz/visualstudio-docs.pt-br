@@ -2,23 +2,21 @@
 title: Designer de fluxo de trabalho - Designer de atividade de TryCatch
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 079c25b2bbaa37432009f0eeade9673f8d0afd28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866383"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950039"
 ---
 # <a name="trycatch-activity-designer"></a>Designer de atividade de TryCatch
 
@@ -35,7 +33,7 @@ O **TryCatch** designer de atividade pode ser arrastado da **caixa de ferramenta
 
 Clique no botão expandir no canto superior direito das **TryCatch** designer para ver os **tente**, **captura**, e **finalmente** nas caixas a exibição expandida. Para adicionar uma captura, clique o **adicionar novo catch** botão **TryCatch** designer. O botão muda para uma caixa de combinação de tipo. Selecione um tipo de exceção e pressione ENTER para adicionar a captura. Depois de adicionar um **Catch**, a área de captura expande e uma atividade pode ser levada na captura para definir a lógica de execução para a captura. Observe que há uma caixa de texto no lado direito da área expandida catch. Você pode nomear a variável de exceções usando esta caixa de texto. A variável de exceção só pode ser usada para atividades dentro do mesmo **Catch**.
 
-O **TryCatch** designer não oferece suporte à edição **Catch**. Se você quiser alterar o tipo de exceção, você precisa excluir o **Catch** e adicione um novo. Um **Catch** pode ser excluído selecionando-lo e excluí-lo ou usando o **excluir** menu no menu de contexto acessado clique direito.
+O **TryCatch** designer não oferece suporte à edição **Catch**. Se você quiser alterar o tipo de exceção, você precisa excluir o **Catch** e adicione um novo. Um **Catch** pode ser excluído selecionando-lo e excluí-lo ou selecionando **excluir** no menu de contexto que é acessado clicando com o.
 
 ### <a name="the-trycatch-properties"></a>As propriedades de TryCatch
 

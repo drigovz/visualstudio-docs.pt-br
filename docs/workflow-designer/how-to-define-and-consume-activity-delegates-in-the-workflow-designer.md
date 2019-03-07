@@ -1,34 +1,32 @@
 ---
-title: 'Designer de fluxo de trabalho - como: definir e consumir representantes de atividade'
+title: 'Designer de fluxo de trabalho - como: Definir e consumir representantes de atividade'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916348"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222877"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Como: Defina e consumir representantes de atividade em Designer de Fluxo de Trabalho
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Como: Definir e consumir representantes de atividades no Designer de Fluxo de Trabalho
 
 .NET framework 4.5 inclui um designer de out-of-box para o <xref:System.Activities.Statements.InvokeDelegate> atividade. Este criador pode ser usado para atribuir os representantes para a atividade que derivam de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> ou <xref:System.Activities.ActivityFunc%601>.
 
 ## <a name="define-an-activity-delegate"></a>Defina um representante de atividades
 
-1. No Visual Studio, selecione **arquivo** > **New** > **projeto**.
+1. No Visual Studio, selecione **Arquivo** > **Novo** > **Projeto**.
 
 2. No **novo projeto** caixa de diálogo, selecione o **fluxo de trabalho** categoria à esquerda e, em seguida, selecione o **aplicativo de Console do fluxo de trabalho** modelo de projeto. Nomeie o projeto (se desejado) e clique em **Okey**.
 
    > [!NOTE]
-   > Se você não vir as **fluxo de trabalho** categoria, primeiro instale o **Windows Workflow Foundation** componente do Visual Studio 2017. Para obter instruções detalhadas, consulte [instalar o Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Se você não vir as **fluxo de trabalho** categoria, primeiro instale o **Windows Workflow Foundation** componente do Visual Studio. Para obter instruções detalhadas, consulte [instalar o Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Clique com botão direito no projeto no **Gerenciador de soluções** e selecione **Add** > **Novo Item**. Selecione o **fluxo de trabalho** categoria e, em seguida, selecione o **atividade** modelo de item. Nomeie a nova atividade **Myforeach** e, em seguida, selecione **Okey**.
 

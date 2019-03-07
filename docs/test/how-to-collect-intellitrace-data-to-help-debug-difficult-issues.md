@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064751"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926548"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
@@ -62,7 +60,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
      Esse proxy permite que você colete informações sobre as chamadas http de um cliente para um servidor Web para os adaptadores de dados de diagnóstico do IntelliTrace e de Impacto de Teste.
 
     > [!WARNING]
-    > Se optar por usar uma conta personalizada para a identidade que está sendo usada no pool de aplicativos do IIS (Servidor de informações da Internet) onde deseja coletar dados do Intellitrace, você deverá criar o perfil de usuário local no computador do IIS para a conta personalizada que está sendo usada. Você pode criar o perfil local para a conta personalizada fazendo logon no computador do IIS localmente uma vez ou executando a seguinte linha de comando com as credenciais da conta personalizada:
+    > Se optar por usar uma conta personalizada para a identidade do pool de aplicativos do Servidor de Informações da Internet (IIS) onde deseja coletar dados do IntelliTrace, será preciso criar o perfil de usuário local no computador do IIS para a conta personalizada que está sendo usada. Você pode criar o perfil local para a conta personalizada fazendo logon no computador do IIS localmente uma vez ou executando a seguinte linha de comando com as credenciais da conta personalizada:
     >
     > **runas /user:domain\name /profile cmd.exe**
 

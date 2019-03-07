@@ -1,8 +1,6 @@
 ---
-title: 'CA2124: encapsular cláusulas finalmente vulneráveis em tentativa externa'
+title: 'CA2124: Encapsular cláusulas finally vulneráveis em try externo'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2124
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c03a16af9562df40dc04a431fac157c1321fbb
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860076"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970342"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: encapsular cláusulas finalmente vulneráveis em tentativa externa
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Encapsular cláusulas finally vulneráveis em try externo
 
 |||
 |-|-|

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57b76f44eeeaad1946d40435c770b0687b82fd17
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c77c87011c539e02f92aa2aedfdcd7659466d37
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725306"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096246"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Coloca a janela que contém o documento de depuração especificado para a parte superior do depurador de interface do usuário.  
+Traz a janela que contém o documento de depuração especificada na parte superior no depurador de interface do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT BringDocumentToTop(  
    IDebugDocumentText*  pddt  
 );  
@@ -38,7 +38,7 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Parâmetros  
  `pddt`  
- [in] Depura o documento para colocar no início na interface de usuário do depurador.  
+ [in] Depure o documento para trazer para a parte superior da interface de usuário do depurador.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -49,7 +49,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|O documento não é conhecido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método coloca a janela que contém o documento de depuração especificado para a parte superior do depurador interface do usuário.  
+ Esse método traz a janela que contém o documento de depuração especificada na parte superior no depurador de interface do usuário.  
   
 ## <a name="see-also"></a>Consulte também  
  [IApplicationDebuggerUI Interface](../../winscript/reference/iapplicationdebuggerui-interface.md)

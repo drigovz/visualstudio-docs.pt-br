@@ -1,10 +1,7 @@
 ---
 title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 helpviewer_keywords:
@@ -12,37 +9,37 @@ helpviewer_keywords:
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ee07f9118565177e513647d28ebcb11a23de3a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad31d015048d8e0732c32652141b7be060628663
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113426"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722623"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Este método determina se o fornecedor de porta pode persistir portas (por gravá-los em disco) entre chamadas do depurador.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT CanPersistPorts();  
-```  
-  
-```csharp  
-int CanPersistPorts();  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- nenhuma.  
-  
-## <a name="return-value"></a>Valor de retorno  
- `S_OK` Se as portas podem ser persistentes, ou `S_FALSE` para indicar que as portas não podem ser persistentes.  
-  
-## <a name="remarks"></a>Comentários  
- Se o fornecedor de porta pode manter portas, ele deve fazer isso quando ele é destruído e, em seguida, recarregue-los quando ela é instanciada novamente.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
+Este método determina se o fornecedor de porta pode persistir portas (gravando-os em disco) entre as invocações do depurador.
+
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT CanPersistPorts();
+```
+
+```csharp
+int CanPersistPorts();
+```
+
+#### <a name="parameters"></a>Parâmetros
+ nenhuma.
+
+## <a name="return-value"></a>Valor de retorno
+ `S_OK` Se as portas podem ser persistentes, ou `S_FALSE` para indicar que as portas não podem ser persistente.
+
+## <a name="remarks"></a>Comentários
+ Se o fornecedor de porta pode manter as portas, ele deverá fazê-lo quando ele é destruído e recarregá-los, em seguida, quando ela é instanciada novamente.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

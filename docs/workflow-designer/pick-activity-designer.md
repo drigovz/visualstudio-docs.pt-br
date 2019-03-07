@@ -2,22 +2,20 @@
 title: Designer de fluxo de trabalho - Designer de atividade Pick
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Pick.UI
 ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd37c78567ea11d53899bcbaefb2e3809a00057
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed558c40e932f2148f2240247d19a4fc6df0d06a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826005"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950520"
 ---
 # <a name="pick-activity-designer"></a>Escolha o designer de atividades
 
@@ -31,7 +29,7 @@ Uma atividade de <xref:System.Activities.Statements.Pick> contém uma coleção 
 
 Acesso a **escolher** designer de atividade na **fluxo de controle** categoria dos **caixa de ferramentas**. O **escolher** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que os designers de atividade são colocados normalmente, por exemplo, dentro de um  **Sequência** designer de atividade. Depois de soltá-la no Designer de fluxo de trabalho, ele cria um <xref:System.Activities.Statements.Pick> atividade, que, por padrão, contém dois vazio <xref:System.Activities.Statements.PickBranch> atividades como elementos com nomes para exibição de Branch1 e de Branch2. Esses respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valores de propriedade podem ser editados na **PickBranch** cabeçalho do designer de atividade ou dentro de **propriedades** janela para cada ramificação.
 
-Há duas maneiras de adicionar <xref:System.Activities.Statements.PickBranch> atividades para a coleção de um <xref:System.Activities.Statements.Pick> objeto: arrastando e soltando o **PickBranch** designer dos **caixa de ferramentas** ou usando o menu de contexto do dentro de **escolher** superfície de design. Para obter detalhes, consulte o [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tópico. Observe que o único item que pode ser colocado dentro de um **escolher** designer de atividade é um **PickBranch** designer de atividade.
+Há duas maneiras de adicionar <xref:System.Activities.Statements.PickBranch> atividades para a coleção de um <xref:System.Activities.Statements.Pick> objeto: arrastando e soltando o **PickBranch** designer dos **caixa de ferramentas** ou por meio do menu de atalho de dentro do **escolher** superfície de design. Para obter detalhes, consulte o [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tópico. Observe que o único item que pode ser colocado dentro de um **escolher** designer de atividade é um **PickBranch** designer de atividade.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Escolha propriedades de atividade em Designer de Fluxo de Trabalho
 

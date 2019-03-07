@@ -1,14 +1,9 @@
 ---
 title: Argumento substituto inválido | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -20,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 640eefb53304de48e4ad2398a02910a1cff1b57d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632856"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841280"
 ---
 # <a name="invalid-replacer-argument"></a>Argumento substituto inválido
-Foi feita uma tentativa para chamar `JSON.stringify` com um argumento que não é válido. O `replacer` argumento deve ser uma função ou uma matriz.  
+Foi feita uma tentativa para invocar `JSON.stringify` com um argumento que não é válido. O `replacer` argumento deve ser uma função ou uma matriz.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
 -   Alterar o `replacer` argumento para uma função ou uma matriz.  
   
 ## <a name="example"></a>Exemplo  
- O código neste exemplo causará um erro de tempo de execução porque `memberfilter` é um objeto, em vez de uma função ou uma matriz.  
+ O código neste exemplo causa um erro de tempo de execução porque `memberfilter` é um objeto, em vez de uma função ou uma matriz.  
   
 ```JavaScript  
 var contact = new Object();  

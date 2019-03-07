@@ -1,9 +1,6 @@
 ---
 title: Localizar pacotes VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - localize package
@@ -12,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636968"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687075"
 ---
 # <a name="localizing-vsix-packages"></a>Localizando pacotes do VSIX
 
@@ -30,7 +27,7 @@ Se o conteúdo do seu pacote do VSIX inclui um VSPackage que adiciona os comando
 
 ## <a name="directory-structure"></a>Estrutura do diretório
 
- Quando um usuário instala uma extensão **extensões e atualizações** verifica o nível superior do pacote VSIX para uma pasta cujo nome corresponde à localidade do Visual Studio do computador de destino. Se **extensões e atualizações** localiza um *.vsixlangpack* arquivo na pasta, ele substitui os valores localizados no arquivo para os valores correspondentes no *.vsixmanifest*arquivo. Esses valores são exibidos quando a extensão está sendo instalada. O exemplo a seguir mostra a estrutura de diretório para um pacote VSIX que está localizado em espanhol (es-ES) e francês (fr-FR).  
+ Quando um usuário instala uma extensão **extensões e atualizações** verifica o nível superior do pacote VSIX para uma pasta cujo nome corresponde à localidade do Visual Studio do computador de destino. Se **extensões e atualizações** localiza um *.vsixlangpack* arquivo na pasta, ele substitui os valores localizados no arquivo para os valores correspondentes no *.vsixmanifest*arquivo. Esses valores são exibidos quando a extensão está sendo instalada. O exemplo a seguir mostra a estrutura de diretório para um pacote VSIX que está localizado em espanhol (es-ES) e francês (fr-FR).
 
 ```text
 .
@@ -66,7 +63,7 @@ O exemplo a seguir mostra as partes relevantes de um *vsixmanifest* arquivo. O a
 
 ### <a name="code"></a>Código
 
- [*Vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,7 +83,7 @@ O exemplo a seguir mostra as partes relevantes de um *vsixmanifest* arquivo. O a
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -106,6 +103,6 @@ O exemplo a seguir mostra as partes relevantes de um *vsixmanifest* arquivo. O a
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Referência de esquema 2.0 do pacote de idiomas do VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Um pacote de idiomas do VSIX descreve as informações de localização de um arquivo de implantação. VSIX.|
+|[Referência de esquema 2.0 do pacote de idiomas do VSIX](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Um pacote de idiomas do VSIX descreve as informações de localização de um arquivo de implantação. VSIX.|
 |[Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Descreve a estrutura e o conteúdo de um pacote vsix.|
 |[Localizar os comandos de menu](../extensibility/localizing-menu-commands.md)|Mostra como localizar outros recursos de texto em uma extensão.|

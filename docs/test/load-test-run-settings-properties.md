@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895490"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932568"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriedades das configurações de execução de teste de carga
 
@@ -45,7 +43,7 @@ Para obter mais informações, confira [Definir as configurações de execução
 |-|----------------|
 |**Máximo de logs de teste**|Especifica o número máximo de logs de teste para salvar para o teste de carga. Quando o valor inserido para o número máximo de logs de teste for atingido, o teste de carga parará de coletar logs. Portanto, os logs serão coletados no início de teste, não no final. O teste de carga continuará sendo executado até ser concluído.|
 |**Salvar frequência de logs para testes concluídos**|Especifica a frequência com que o log de teste será gravado. O número que indica que um de cada número inserido de testes será salvo no log de teste. Por exemplo, inserindo o valor de dez especifica que o décimo, vigésimo, trigésimo etc. será gravado no log de teste. Definindo o valor como 0 especifica que nenhum log de teste será salvo.|
-|**Salvar log em caso de falha do teste**|Um valor booliano que determina se os logs de teste são salvos se um teste falhar em um teste de carga. O padrão é `True`.<br /><br /> Para obter mais informações, confira [Como especificar se as falhas no teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Salvar log em caso de falha do teste**|Um valor booliano que determina se os logs de teste são salvos se um teste falhar em um teste de carga. O padrão é `True`.<br /><br /> Para obter mais informações, confira [Como: Especificar se as falhas de teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Para obter mais informações, confira [Modificar as configurações de log de teste de carga](../test/modify-load-test-logging-settings.md).
 
@@ -54,7 +52,7 @@ Para obter mais informações, confira [Definir as configurações de execução
 |Propriedade|Definição|
 |-|----------------|
 |**Tipo de armazenamento**|A forma de armazenar os contadores de desempenho que são obtidos em um teste de carga. As opções são as seguintes:<br /><br /> -   **Banco de dados** – Requer um banco de dados SQL que tenha um **Repositório de Resultados de Teste de Carga**.<br />-   **Nenhum**.|
-|**Armazenamento de detalhes de medição de tempo**|Usado para determinar quais detalhes serão armazenados no **Repositório de Resultados de Teste de Carga**. Três valores estão disponíveis:<br /><br /> -   **AllIndividualDetails** – Coleta e armazena valores de medição de tempo individuais para cada teste, transação e página executados ou emitidos durante o teste de carga no **Repositório de Resultados de Teste de Carga**. É necessário quando você pretende usar o **Gráfico de Atividade de Usuário Virtual** no **Analisador de Teste de Carga**.<br />     Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Nenhum** – Não coleta valores de medição de tempo individuais. É o valor padrão para a Atualização 4 do Visual Studio 2013 e versões posteriores.<br />-   **StatisticsOnly** – Coleta e armazena somente as estatísticas em vez de armazenar os valores de medição de tempo individuais para cada teste, transação e página executados ou emitidos durante o teste de carga no **Repositório de Resultados de Teste de Carga**.<br /><br /> Para saber mais, confira [Como especificar a propriedade de armazenamento dos detalhes de medição de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Armazenamento de detalhes de medição de tempo**|Usado para determinar quais detalhes serão armazenados no **Repositório de Resultados de Teste de Carga**. Três valores estão disponíveis:<br /><br /> -   **AllIndividualDetails** – Coleta e armazena valores de medição de tempo individuais para cada teste, transação e página executados ou emitidos durante o teste de carga no **Repositório de Resultados de Teste de Carga**. É necessário quando você pretende usar o **Gráfico de Atividade de Usuário Virtual** no **Analisador de Teste de Carga**.<br />     Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Nenhum** – Não coleta valores de medição de tempo individuais. É o valor padrão para a Atualização 4 do Visual Studio 2013 e versões posteriores.<br />-   **StatisticsOnly** – Coleta e armazena somente as estatísticas em vez de armazenar os valores de medição de tempo individuais para cada teste, transação e página executados ou emitidos durante o teste de carga no **Repositório de Resultados de Teste de Carga**.<br /><br /> Para obter mais informações, confira [Como: Especificar a propriedade de armazenamento de detalhes de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Propriedades do rastreamento do SQL
 
@@ -72,7 +70,7 @@ Para obter mais informações, confira [Definir as configurações de execução
 |**Iterações de teste**|Especifica o número total de teste individuais para executar antes que o teste de carga seja concluído. Essa propriedade só se aplica quando a propriedade “Usar iterações de teste” é `True`.|
 |**Usar iterações de teste**|Se Usar iterações de teste for `True`, o teste de carga será executado até que o número de testes individuais concluídos no teste de carga atinja o número especificado de pela propriedade “Iterações de teste”. Nesse caso, as configurações baseadas em tempo, que são Duração do aquecimento, Duração da execução e Duração do desaquecimento, são ignoradas. Se “Usar iterações de teste” for `False`, todas as configurações de tempo se aplicarão, e "Iterações teste” é ignorada.|
 
- Para saber mais, confira [Como especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+ Para obter mais informações, confira [Como: Especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Propriedades de tempo
 
@@ -80,7 +78,7 @@ Para obter mais informações, confira [Definir as configurações de execução
 |-|----------------|
 |**Duração do desaquecimento**|A duração do período de desaquecimento do teste, expressa no formato hh:mm:ss. Os testes individuais em um teste de carga podem ainda estar em execução quando o teste de carga é concluído. Durante o período de desaquecimento, esses testes podem continuar até que sejam concluídos ou o até o término do período de desaquecimento ser atingido. Por padrão, não existe período de desaquecimento, e os testes individuais são encerrados quando o teste de carga termina com base na configuração de Duração da execução.|
 |**Duração da execução**|A duração do teste, no formato hh:mm:ss.|
-|**Taxa de amostragem**|O intervalo no qual capturar valores do contador de desempenho, no formato hh:mm:ss.<br /><br /> Para saber mais, confira [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
+|**Taxa de amostragem**|O intervalo no qual capturar valores do contador de desempenho, no formato hh:mm:ss.<br /><br /> Para obter mais informações, confira [Como: Especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
 |**Duração do aquecimento**|O período entre o início do teste e quando amostras de dados começam a ser gravadas, no formato hh:mm:ss. Isso é frequentemente usado para carregar usuários virtuais em incrementos para atingir determinado nível de carga antes de gravar valores de exemplo. Os valores de exemplo que são capturados antes do término do período de aquecimento sejam mostrados no **Analisador de Teste de Carga**.|
 
 ## <a name="webtest-connections-properties"></a>Propriedades de conexões WebTest
@@ -91,7 +89,7 @@ Para obter mais informações, confira [Definir as configurações de execução
 |**Tamanho do pool de conexão do WebTest**|Especifica o número máximo de conexões para fazer entre o agente de teste de carga e o servidor Web. Isso se aplica apenas ao modelo **Pool de conexões**.|
 
 ##  <a name="change-run-setting-properties"></a>Alterar as propriedades da configuração de execução
- Você pode adicionar mais configurações de execução ao teste de carga com configurações de propriedade diferentes para que possa executar o teste de carga em condições diferentes. Por exemplo, você pode adicionar uma nova configuração de teste e usar uma taxa de amostragem diferente ou especificar uma duração de execução mais longa. Você só pode usar uma configuração de execução de cada vez e deve especificar que configuração de execução usar tornando-a ativa. Para obter um exemplo, confira [Como selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+ Você pode adicionar mais configurações de execução ao teste de carga com configurações de propriedade diferentes para que possa executar o teste de carga em condições diferentes. Por exemplo, você pode adicionar uma nova configuração de teste e usar uma taxa de amostragem diferente ou especificar uma duração de execução mais longa. Você só pode usar uma configuração de execução de cada vez e deve especificar que configuração de execução usar tornando-a ativa. Para obter um exemplo, consulte [ Selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Para alterar as configurações de execução
 

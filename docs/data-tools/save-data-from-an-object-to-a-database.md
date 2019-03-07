@@ -12,17 +12,15 @@ helpviewer_keywords:
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1203b3b129b42ca65b94cd7a4b9cebf108740f4
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 5e7762b50d486f50ed59f489ef45641908d61612
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750943"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933100"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
 
@@ -35,7 +33,7 @@ Por padrão, `DBDirect` métodos são criados em um TableAdapter que pode ser ex
 > [!NOTE]
 > Quando você estiver configurando um TableAdapter, a consulta principal deve fornecer informações suficientes para que o `DBDirect` métodos a serem criados. Por exemplo, se um TableAdapter é configurado para consultar dados de uma tabela que não tem uma coluna de chave primária definida, ela não gera `DBDirect` métodos.
 
-|Método TableAdapter DBDirect|Descrição|
+|Métodos DBDirect TableAdapter|Descrição|
 | - |-----------------|
 |`TableAdapter.Insert`|Adiciona novos registros para um banco de dados e permite que você passe valores de colunas individuais como parâmetros de método.|
 |`TableAdapter.Update`|Atualizações de registros existentes em um banco de dados. O `Update` método usa valores da coluna original e novo como parâmetros de método. Os valores originais são usados para localizar o registro original e os novos valores são usados para atualizar esse registro.<br /><br /> O `TableAdapter.Update` método também é usado para acomodar as alterações em um conjunto de dados no banco de dados fazendo uma <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, ou uma matriz de <xref:System.Data.DataRow>s como parâmetros de método.|

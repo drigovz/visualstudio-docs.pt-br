@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511099"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936974"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Substituir e estender as classes geradas
 
@@ -92,6 +90,6 @@ O repositório de modelagem fornece um mecanismo de eventos que você pode usar 
 
 Você pode assinar alguns eventos nas formas. Por exemplo, você pode escutar cliques do mouse em uma forma. Você precisa escrever código que assina o evento para cada objeto. Esse código pode ser escrito em uma substituição de InitializeInstanceResources().
 
-Alguns eventos são gerados em ShapeFields, que são usados para desenhar os decoradores em uma forma. Por exemplo, consulte [como: interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Alguns eventos são gerados em ShapeFields, que são usados para desenhar os decoradores em uma forma. Para obter um exemplo, consulte [ Interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Normalmente, esses eventos não ocorrem dentro de uma transação. Se você quiser fazer alterações no repositório, você deve criar uma transação.

@@ -1,14 +1,9 @@
 ---
 title: Exibição de resumo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fdacfcba18d465685053cdea4581a5806c25db9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfba1981fb6becea34fb567a2f7ae2e6c06896d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767851"
 ---
 # <a name="summary-view"></a>Exibição do Resumo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,8 +52,8 @@ A exibição de resumo exibe informações sobre as funções ou os objetos de d
 |**Exibir Árvore de Chamadas Cortada**|Exibe os caminhos de execução mais caros no modo de exibição de árvore de chamada. Para obter mais informações, consulte o [Modo de exibição de árvore de Chamadas](../profiling/call-tree-view.md).|  
 |**Mostrar linhas de acesso**|Não disponível para criação de perfil de dados que foram coletados usando o método de instrumentação. Exibe as linhas de código-fonte mais caras na exibição de linhas. Para obter mais informações, consulte [Exibição de linhas](../profiling/lines-view.md).|  
 |**Comparar Relatórios**|Exibe o **selecionar arquivos de análise para comparação** caixa de diálogo na qual você pode especificar outro arquivo de dados de criação de perfil a ser comparado com o arquivo atual. Para mais informações, consulte [Comparando os Arquivos de Dados de desempenho](../profiling/comparing-performance-data-files.md).|  
-|**Exportar Dados de Relatório**|Exibe a caixa de diálogo **Exportar relatório**, na qual você pode especificar um ou mais modos de exibição de relatório para salvar como valores separados por vírgulas (. csv) ou arquivos .xml. Para mais informações, consulte [Como exportar relatórios de ferramentas de criação de perfil](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Salvar relatório analisado**|Salva o arquivo de dados de criação de perfil atual como um arquivo .vsps, que abre mais rapidamente na interface para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [Como salvar perfis analisados de arquivos de dados](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Exportar Dados de Relatório**|Exibe a caixa de diálogo **Exportar relatório**, na qual você pode especificar um ou mais modos de exibição de relatório para salvar como valores separados por vírgulas (. csv) ou arquivos .xml. Para mais informações, consulte [Como exportar relatórios de ferramentas de criação de perfil](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Salvar relatório analisado**|Salva o arquivo de dados de criação de perfil atual como um arquivo .vsps, que abre mais rapidamente na interface para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [Como salvar perfis analisados de arquivos de dados](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtrar Dados de Relatório**|Exibe o painel de filtro de relatório perfil no qual você pode especificar critérios para restringir os dados na exibição do relatório. Para obter mais informações, consulte [Filtro de Exibição do Relatório de Desempenho](../profiling/performance-report-view-filter.md)|  
 |**Alternar Tela Inteira**|Alterna o modo de tela inteira para o modo de exibição de relatório.|  
   
@@ -66,6 +61,3 @@ A exibição de resumo exibe informações sobre as funções ou os objetos de d
  [Exibição Resumo](../profiling/summary-view-sampling-data.md)   
  [Exibição Resumo](../profiling/summary-view-instrumentation-data.md)   
  [Exibição de Resumo](../profiling/summary-view-dotnet-memory-data.md)
-
-
-

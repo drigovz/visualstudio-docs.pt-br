@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725956"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091254"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Manipula um evento indicando que o objeto de nó de aplicativo de depuração foi anexado a um nó pai.  
+Manipula um evento indicando que o objeto de nó do aplicativo de depuração foi anexado a um nó pai.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -48,9 +48,9 @@ HRESULT onAttach(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método manipula um evento indicando que o objeto de nó de aplicativo de depuração foi anexado a um nó pai.  
+ Esse método manipula um evento indicando que o objeto de nó do aplicativo de depuração foi anexado a um nó pai.  
   
- Os implementadores do `IDebugApplicationNode` interface gerar este evento.  
+ Os implementadores a `IDebugApplicationNode` interface gere este evento.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

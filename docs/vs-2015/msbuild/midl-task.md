@@ -1,14 +1,9 @@
 ---
 title: Tarefa MIDL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
 - VC.Project.VCMidlTool.ApplicationConfigurationMode
@@ -31,13 +26,13 @@ ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 345cd480cd5e34a6fe4650c9321d3ad9f90db01e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215781"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782469"
 ---
 # <a name="midl-task"></a>Tarefa MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -428,6 +423,3 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
-title: Como especificar opções de instrumentação adicionais | Microsoft Docs
-ms.custom: ''
+title: 'Como: Especificar opções de instrumentação adicionais | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -12,17 +10,17 @@ helpviewer_keywords:
 - performance sessions, options
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845243"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618673"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Como especificar opções de instrumentação adicionais
+# <a name="how-to-specify-additional-instrumentation-options"></a>Como: Especificar opções de instrumentação adicionais
 
 Você pode instrumentar binários usando o IDE do Visual Studio ou usando ferramentas de linha de comando. Se você instrumentar um binário do IDE, será possível controlar o volume de dados coletados durante a instrumentação, especificando opções de instrumentação adicionais para a ferramenta [VSInstr](../profiling/vsinstr.md). Essas opções estão disponíveis no nível de sessão ou de destino. Por exemplo, para incluir ou excluir funções específicas durante o processo de instrumentação, use a opção adicional de instrumentação no nível de destino.
 
@@ -43,5 +41,5 @@ Você pode instrumentar binários usando o IDE do Visual Studio ou usando ferram
 
 ## <a name="see-also"></a>Consulte também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
-[Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
+[Criação de perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

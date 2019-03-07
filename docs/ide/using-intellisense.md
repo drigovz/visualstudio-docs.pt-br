@@ -1,8 +1,6 @@
 ---
 title: Informações do parâmetro, listar membros e informações rápidas
 ms.date: 05/25/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748469"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957776"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense no Visual Studio
 
-O IntelliSense é uma ajuda de preenchimento de código que inclui inúmeras funcionalidades: Listar Membros, Informações do Parâmetro, Informações Rápidas e Completar Palavra. Essas funcionalidades ajudam você a aprender mais sobre o código que está usando, a manter o acompanhamento dos parâmetros que está digitando e a adicionar chamadas a métodos e propriedades pressionando apenas algumas teclas.
+O IntelliSense é um recurso de preenchimento de código que inclui uma série de funcionalidades: Listar Membros, Informações de Parâmetro, Informações Rápidas e Completar Palavra. Essas funcionalidades ajudam você a aprender mais sobre o código que está usando, a manter o acompanhamento dos parâmetros que está digitando e a adicionar chamadas a métodos e propriedades pressionando apenas algumas teclas.
 
 Vários aspectos do IntelliSense são específicos do idioma. Para obter mais informações sobre o IntelliSense para diferentes idiomas, consulte os tópicos listados na seção [Consulte também](#see-also).
 
@@ -54,7 +52,7 @@ O parâmetro em negrito indica o próximo parâmetro que é necessário à medid
 
 ![Informações de Parâmetro](../ide/media/vs2015_param_info.png)
 
-Quando você anota funções e parâmetros com comentários da Documentação XML, os comentários são exibidos como Informações do Parâmetro. Para obter mais informações, consulte [Fornecer comentários de código XML](../ide/supplying-xml-code-comments.md).
+Quando você anota funções e parâmetros com comentários da Documentação XML, os comentários são exibidos como Informações do Parâmetro. Para obter mais informações, consulte [Fornecer comentários de código XML](reference/generate-xml-documentation-comments.md).
 
 Invoque a opção Informações do Parâmetro manualmente escolhendo **Editar** > **IntelliSense** > **Informações do Parâmetro**, pressionando **Ctrl**+**Shift**+**Espaço** ou escolhendo o botão **Informações do Parâmetro** na barra de ferramentas do editor.
 
@@ -104,4 +102,4 @@ MessageBox( hWnd, "String literal|")
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [Escrever e refatorar o código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [Fornecer comentários de código XML](../ide/supplying-xml-code-comments.md)
+- [Fornecer comentários de código XML](reference/generate-xml-documentation-comments.md)

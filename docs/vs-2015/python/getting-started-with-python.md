@@ -1,25 +1,20 @@
 ---
 title: Introdução ao Python | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275282"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678859"
 ---
 # <a name="getting-started-with-python"></a>Introdução ao Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Como uma linguagem de programação Python é:
 - Geralmente é útil para programas rápidos de scripts, scripts de aplicativo, aplicativos da área de trabalho, servidores web, serviços web e computação científica.
 - Fácil de aprender e tem um bom design para incentivar a boa codificação (muitas universidades usam-os para cursos introdutórios de programação).
 - Flexível, suporte a estilos de programação imperativos, funcionais e orientada a objeto.
-- Código-fonte aberto e gratuito.
+- Gratuito e software livre.
 - É executado bem em todos os principais sistemas operacionais.  
 - Suporte para várias bibliotecas gratuitas, úteis e bem projetadas.  
 - Compatível com muita documentação, exemplos e uma sólida comunidade de desenvolvedores.  
@@ -48,10 +43,10 @@ Para instalar o Python em si, visite [ https://www.python.org/download/ ](https:
   
 ## <a name="python-tools-for-visual-studio"></a>Ferramentas Python para o Visual Studio
   
-As ferramentas Python para Visual Studio, que pode ser instalado a partir [visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs), fornecem os seguintes recursos:  
+As ferramentas Python para Visual Studio, que pode ser instalado a partir [visualstudio.com](https://www.visualstudio.com/explore/python-vs), fornecem os seguintes recursos:  
   
 - Suporte para vários intérpretes: várias versões de CPython, IronPython e IPython  
-- Um sistema de projeto que seleciona implicitamente uma estrutura de pastas de código do Python e também permite controle explícito para que você possa identificar o código do aplicativo, código de teste, páginas da web, JavaScript, scripts de build e assim por diante.  
+- Um sistema de projeto que seleciona implicitamente uma estrutura de pastas do código Python e também permite o controle explícito, de modo que você possa identificar o código do aplicativo, o código de teste, as páginas da Web, o JavaScript, os scripts de build e assim por diante.  
 - Modelos de projeto para console, Web, Azure, ciência de dados e outros tipos de projetos.    
 - O SDK do Azure para Python (veja abaixo)    
 - Recursos de compreensão de código e edição avançada, incluindo coloração de sintaxe, preenchimento automático em todo o seu código e bibliotecas, ajuda com assinatura, modo de exibição de classe, Ir para Definição, Localizar Todas as Referências, refatoração e muito mais.    
@@ -70,7 +65,7 @@ Os recursos a seguir o ajudarão a começar:
 - [Documentação](https://github.com/Microsoft/PTVS/wiki)  
 
 
-Observe que o Visual Studio no momento fornece os meios para criar um executável autônomo usando o Python, que basicamente significa que um programa com um interpretador de Python incorporado. No entanto, há vários meios dentro da comunidade do Python para fazer isso, conforme descrito em [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). O CPython também dá suporte a ser inserido em um aplicativo nativo, conforme descrito na postagem do blog [Using CPython's Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Usando o arquivo .zip que permite inserção do CPython).
+Observe que o Visual Studio no momento fornece os meios para criar um executável autônomo usando o Python, que basicamente significa que um programa com um interpretador de Python incorporado. No entanto, há vários meios dentro da comunidade do Python para fazer isso, conforme descrito em [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). O CPython também dá suporte a ser inserido em um aplicativo nativo, conforme descrito na postagem do blog [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Usando o arquivo .zip que permite inserção do CPython).
   
 ## <a name="building-ui-with-python"></a>Construção da interface do usuário com o Python  
 
@@ -104,4 +99,3 @@ Além de todas as bibliotecas de cientistas de dados do Python, as Ferramentas P
 [Introdução ao PTVS: depurando](../python/getting-started-with-ptvs-debugging.md)
 [Introdução ao PTVS: Python interativo](../python/getting-started-with-ptvs-interactive-python.md)
 [Introdução ao PTVS: compilando um site no Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-

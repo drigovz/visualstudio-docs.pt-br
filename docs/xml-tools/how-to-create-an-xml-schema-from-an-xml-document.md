@@ -1,23 +1,21 @@
 ---
-title: Como criar um esquema XML de um documento XML
+title: 'Como: Criar um esquema XML de um documento XML'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: ebea3b20bc606ec82529e4a9b2a547d6a44fc905
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548267"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953783"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Como: criar um esquema XML de um documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Como: Criar um esquema XML de um documento XML
 
 O Editor de XML permite que você crie uma linguagem XSD (definição de esquema XML) de um documento XML. O documento de instância XML determina como o esquema é gerado da seguinte maneira:
 
@@ -35,14 +33,14 @@ Para obter mais informações sobre o mecanismo de inferência de esquema, consu
 
 1.  Carregue um documento de instância XML no Editor de XML.
 
-2.  Clique o **Create Schema** botão do **barra de ferramentas**.
+2.  Clique o **Create Schema** botão da **barra de ferramentas**.
 
      Um documento de esquema XML é criado e aberto para cada namespace encontrado no documento de instância XML. Cada esquema é aberto como um arquivo variado temporário.
 
      Os esquemas podem ser salvos no disco, adicionados ao seu projeto ou descartados.
 
     > [!NOTE]
-    >  O **Create Schema** comando também está disponível no menu de atalho do Editor de XML e, sob o **XML** menu.
+    >  O **Create Schema** comando também está disponível no menu de atalho do Editor de XML e, nas **XML** menu.
 
 ## <a name="see-also"></a>Consulte também
 

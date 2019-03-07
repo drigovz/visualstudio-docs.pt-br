@@ -12,15 +12,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 995cf0653886745d44ede4553e03f81ed45d37d7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: ae61b261e9a613a2eee9ca8baca24773253a6df8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049075"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936025"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Como: Gerenciar conjuntos de contadores usando o Editor de Teste de Carga
 

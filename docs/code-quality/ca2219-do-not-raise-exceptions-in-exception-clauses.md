@@ -1,8 +1,6 @@
 ---
-title: 'CA2219: não acione exceções em cláusulas de exceção'
+title: 'CA2219: Não acionar exceções em cláusulas de exceção'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotRaiseExceptionsInExceptionClauses
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 7b9b0bee-4e8e-49a4-8c40-52142b49061f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49baf6fe645df35949f47f2796197977d428427e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a644cf3dc934676a14f1c5c59a6582fcd45ae7d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885961"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941147"
 ---
-# <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: não acione exceções em cláusulas de exceção
+# <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Não acionar exceções em cláusulas de exceção
 
 |||
 |-|-|
@@ -49,7 +47,7 @@ ms.locfileid: "49885961"
  Não suprima um aviso para essa regra. Não há nenhum cenário em que uma exceção gerada em uma cláusula de exceção fornece um benefício ao código em execução.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1065: não acionar exceções em locais inesperados](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+ [CA1065: Não gerar exceções em locais inesperados](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>Consulte também
  [Avisos de design](../code-quality/design-warnings.md)

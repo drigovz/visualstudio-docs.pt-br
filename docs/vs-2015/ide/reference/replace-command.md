@@ -1,14 +1,9 @@
 ---
 title: Comando Substituir | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.replace
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83281a656d553dfa677d7ae25bf043fc0b588978
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f230a2270274f85fd799f86caa278bb98cb5fd46
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283199"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54772229"
 ---
 # <a name="replace-command"></a>Comando Substituir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,6 +95,3 @@ Edit.Replace findwhat replacewith [/all] [/case]
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

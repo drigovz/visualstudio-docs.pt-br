@@ -1,23 +1,20 @@
 ---
 title: Localizando o Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 08/21/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b0b8dfcc42cfcf80fc24f0c844469b77734e9c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495382"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683565"
 ---
 # <a name="locate-visual-studio"></a>Localize o Visual Studio
 
@@ -44,4 +41,4 @@ Para localizar o Visual Studio e outras ferramentas em ambientes de compilação
 
 ## <a name="see-also"></a>Consulte também
 
-* [Alterações na instalação do Visual Studio 2017](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)
+* [Alterações na instalação do Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)

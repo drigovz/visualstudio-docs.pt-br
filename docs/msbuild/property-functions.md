@@ -1,23 +1,21 @@
 ---
 title: Funções de propriedade | Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a238e0bb35efd3ddf984a692a032535c37dfd88
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468693"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623054"
 ---
 # <a name="property-functions"></a>Funções de propriedade
 
@@ -130,7 +128,7 @@ O nome da classe deve ser totalmente qualificado com o namespace.
 Por exemplo, você pode usar o seguinte código para definir uma propriedade de compilação para a data atual.
 
 ```xml
-<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+<Today>$([System.DateTime]::Now.ToString('yyyy.MM.dd'))</Today>
 ```
 
 ### <a name="msbuild-property-functions"></a>Funções de propriedade MSBuild
@@ -246,9 +244,9 @@ A função da propriedade `GetRegistryValue` do MSBuild retorna o valor de uma c
 Os exemplos a seguir mostram como a função é usada:
 
 ```fundamental
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
@@ -340,6 +338,6 @@ Output:
 
 ## <a name="see-also"></a>Consulte também
 
-[Propriedades do MSBuild](../msbuild/msbuild-properties.md)
+- [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
 
-[Visão geral do MSBuild](../msbuild/msbuild.md)
+- [Visão geral do MSBuild](../msbuild/msbuild.md)

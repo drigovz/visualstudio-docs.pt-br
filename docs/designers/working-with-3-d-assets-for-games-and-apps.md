@@ -1,23 +1,21 @@
 ---
 title: Trabalhando com Ativos 3D para Jogos e Aplicativos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1ee4d850250abf0249ce1cccebd3408872b34fd6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079468"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941095"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabalhar com ativos 3D para jogos e aplicativos
 
@@ -44,7 +42,7 @@ Este documento descreve as ferramentas do Visual Studio que você pode usar para
  Use o Designer de Sombreador do Visual Studio, que é uma ferramenta de design de sombreador baseada em grafo, para criar efeitos visuais personalizados sem conhecer programação em HLSL.
 
 > [!NOTE]
-> Para saber mais sobre como iniciar a programação em DirectX, consulte [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Para obter mais informações sobre como depurar um aplicativo baseado no DirectX, confira [Diagnóstico de elementos gráficos (depurando elementos gráficos do DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
+> Para saber mais sobre como iniciar a programação em DirectX, consulte [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Para obter mais informações sobre como depurar um aplicativo baseado no DirectX, confira [Diagnóstico de elementos gráficos (depurando elementos gráficos do DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilidade de versão do DirectX
  O Visual Studio usa o DirectX para renderizar ativos 2D e 3D. Selecione o renderizador do DirectX 11, ou o renderizador de software WARP (Windows Advanced Rasterization Platform). O renderizador do DirectX 11 fornece renderização acelerada por hardware de alto desempenho em GPUs do DirectX 11 e do DirectX 10. O renderizador WARP ajuda a garantir que seus ativos funcionem muitos computadores — incluindo computadores que não possuem hardware de gráfico moderno e computadores com hardware de gráfico integrado. Para obter mais informações sobre o WARP, confira [Guia do WARP (Windows Advanced Rasterization Platform)](http://go.microsoft.com/fwlink/p/?LinkId=224634).

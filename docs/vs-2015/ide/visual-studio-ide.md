@@ -3,21 +3,18 @@ title: Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062477"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54780673"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +111,7 @@ Se você quiser saber sobre os novos recursos no Visual Studio 2015, consulte [o
 
  ![Greetingsconsoleapp no editor de códigos](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C + +")
 
- O editor de texto é altamente interativo (se desejar que ele seja assim), com muitos recursos de produtividade que ajudarão a escrever códigos mais rapidamente. Os recursos variam por linguagem, e você não precisa usar qualquer um deles (tipo de "Editor" no início rápido) para ativar ou desativar recursos do: Alguns dos recursos de produtividade comuns são:
+ O editor de texto é altamente interativo (se desejar que ele seja assim), com muitos recursos de produtividade que ajudarão a escrever códigos mais rapidamente. Os recursos variam por linguagem e você não precisa usar nenhum deles. Digite "Editor" no Início Rápido para ativar ou desativar recursos. Alguns dos recursos de produtividade comuns são:
 
 1. [Refatoração](../ide/refactoring-in-visual-studio.md) inclui operações como renomeação inteligente de variáveis, movimentação de linhas de código selecionadas para uma função distinta, movimentação do código para outros locais, reordenação de parâmetros de função e muito mais.
 
@@ -136,7 +133,7 @@ Se você quiser saber sobre os novos recursos no Visual Studio 2015, consulte [o
 
 8. A opção de menu de contexto **Ir para Definição** leva você diretamente para o local em que a função ou o objeto estão definidos. Outros comandos de navegação também estão disponíveis clicando com o botão direito do mouse no editor.
 
-9. Uma ferramenta relacionada, o [Pesquisador de Objetos](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), habilita a inspeção de assemblies de .NET ou de Windows Runtime em seu sistema para ver que tipos eles contêm e quais métodos e propriedades esses tipos contêm.
+9. Uma ferramenta relacionada, o [Pesquisador de Objetos](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), habilita a inspeção de assemblies de .NET ou de Windows Runtime em seu sistema para ver que tipos eles contêm e quais métodos e propriedades esses tipos contêm.
 
      ![Pesquisador de Objetos mostrando System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -157,7 +154,7 @@ A saída da compilação, incluindo uma mensagem de erro ou sucesso, aparecem na
 
  A [Janela Imediata](../ide/reference/immediate-window.md) permite a digitação de uma expressão e a visualização imediada de seu resultado.
 
- A janela [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) registra cada chamada de método e outros eventos em um programa .NET em execução e pode ajudar a localizar rapidamente a origem de um problema.
+ A janela [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) registra cada chamada de método e outros eventos em um programa .NET em execução e pode ajudar a localizar rapidamente a origem de um problema.
 
  Para obter mais informações, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -172,7 +169,7 @@ A saída da compilação, incluindo uma mensagem de erro ou sucesso, aparecem na
 ## <a name="connecting-to-cloud-services-and-databases"></a>Conectar-se a bancos de dados e serviços de nuvem
  O [Gerenciador de servidores](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) janela no Visual Studio mostra os recursos em todas as contas gerenciadas na sua conta de personalização (aquele com você fez logon), incluindo instâncias do SQL Server, Azure, Salesforce.com, Office 365, e sites da Web.
 
- ![Gerenciador de servidores](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![Gerenciador de Servidores](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
  O Visual Studio inclui o [SSDT](https://msdn.microsoft.com/data/tools.aspx) (Microsoft SQL Server Data Tools), que permite você criar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 
@@ -196,7 +193,7 @@ A saída da compilação, incluindo uma mensagem de erro ou sucesso, aparecem na
 |||
 |-|-|
 |[Contas de usuário e atualizações](../ide/user-accounts-and-updates.md)|[Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[Como: Mover-se no IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Introdução ao desenvolvimento com o Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
+|[How to: Move Around in the IDE (Como mover-se no IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Introdução ao desenvolvimento com o Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Localizando e usando extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)|[Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Ferramentas de Criação de Perfil](../profiling/profiling-tools.md)|[Melhorar a qualidade do código](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|

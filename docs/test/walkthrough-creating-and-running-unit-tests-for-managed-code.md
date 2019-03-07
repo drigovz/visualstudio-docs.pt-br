@@ -1,8 +1,6 @@
 ---
 title: Criar e executar testes de unidade para código gerenciado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -11,16 +9,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469107"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922284"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -84,6 +82,11 @@ public void Debit(double amount)
 
 1. No menu **Arquivo**, selecione **Adicionar** > **Novo Projeto**.
 
+   > [!TIP]
+   > Há duas outras maneiras de adicionar mais um projeto a uma solução existente. Você pode clicar com o botão direito do mouse na solução no **Gerenciador de Soluções** e escolher **Adicionar** > **Novo Projeto**. Ou você pode selecionar **Arquivo** > **Novo** > **Projeto** e, em seguida, na caixa de diálogo **Novo Projeto**, selecionar a opção **Adicionar à solução**:
+   >
+   > ![Opção Adicionar à solução na caixa de diálogo Novo Projeto](media/add-to-solution.png)
+
 2. Na caixa de diálogo **Novo Projeto**, expanda **Instalado**, expanda **Visual C#** e, em seguida, escolha **Teste**.
 
 3. Na lista de modelos, selecione **Projeto de Teste de Unidade**.
@@ -94,7 +97,7 @@ public void Debit(double amount)
 
 5. No projeto **BankTests** adicione uma referência ao projeto **Bank**.
 
-   No **Gerenciador de Soluções**, selecione **Referências** no projeto **BankTests** e, em seguida, escolha **Adicionar Referência** no menu de contexto.
+   No **Gerenciador de Soluções**, selecione **Referências** no projeto **BankTests** e, em seguida, escolha **Adicionar Referência** no menu do clique com o botão direito.
 
 6. Na caixa de diálogo **Gerenciador de Referências**, expanda **Solução** e, em seguida, marque o item **Banco**.
 
@@ -104,7 +107,7 @@ Crie uma classe de teste para verificar a classe `BankAccount`. Use o arquivo *U
 
 ### <a name="rename-a-class-file"></a>Renomear um arquivo de classe
 
-No **Gerenciador de Soluções**, selecione o arquivo *UnitTest1.cs* no projeto BankTests. No menu de contexto, escolha **Renomear** e, em seguida, renomeie o arquivo como *BankAccountTests.cs*. Escolha **Sim** na caixa de diálogo que pergunta se você deseja renomear todas as referências ao elemento de código `UnitTest1` no projeto.
+No **Gerenciador de Soluções**, selecione o arquivo *UnitTest1.cs* no projeto BankTests. No menu do clique com o botão direito, escolha **Renomear** e, em seguida, renomeie o arquivo como *BankAccountTests.cs*. Escolha **Sim** na caixa de diálogo que pergunta se você deseja renomear todas as referências ao elemento de código `UnitTest1` no projeto.
 
 Esta etapa altera o nome da classe para `BankAccountTests`. O arquivo *BankAccountTests.cs* agora contém o seguinte código:
 

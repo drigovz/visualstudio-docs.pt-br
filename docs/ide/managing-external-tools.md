@@ -1,8 +1,6 @@
 ---
 title: Gerenciar ferramentas externas
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeee2e6e7ae5d043124faaa79bc6bad7c527702
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945877"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907796"
 ---
 # <a name="manage-external-tools"></a>Gerenciar ferramentas externas
 
@@ -29,7 +27,7 @@ Você pode chamar ferramentas externas de dentro do Visual Studio usando o menu 
 O menu **Ferramentas** contém vários comandos internos, como:
 
 * **Extensões e atualizações** para [Gerenciar extensões do Visual Studio](finding-and-using-visual-studio-extensions.md)
-* **Gerenciador de trechos de código** para [Organizar trechos de código](code-snippets.md)
+* **Gerenciador de snippets de código** para [Organizar snippets de código](code-snippets.md)
 * **Proteção PreEmptive – Dotfuscator** para iniciar o [Dotfuscator CE (Community Edition)](dotfuscator/index.md) se ele estiver [instalado](dotfuscator/install.md)
 * **Personalizar** para [Personalizar menus e barras de ferramentas](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Opções** para [Definir várias opções diferentes para o IDE do Visual Studio e outras ferramentas](reference/options-dialog-box-visual-studio.md)
@@ -66,8 +64,8 @@ Esta é uma lista completa de argumentos que podem ser usados ao definir uma fer
 |Nome de Destino|$(TargetName)|O nome de arquivo do item a ser criado.|
 |Extensão de Destino|$(TargetExt)|A extensão de nome de arquivo do item a ser criada.|
 |Diretório binário|$(BinDir)|O local final do binário que está sendo criado (definido como unidade + caminho).|
-|Diretório do Projeto|$(ProjDir)|O diretório do projeto atual (unidade + caminho).|
-|Nome do arquivo de projeto|$(ProjFileName)|O nome de arquivo do projeto atual (unidade + caminho + nome de arquivo).|
+|Diretório do Projeto|$(ProjectDir)|O diretório do projeto atual (unidade + caminho).|
+|Nome do arquivo de projeto|$(ProjectFileName)|O nome de arquivo do projeto atual (unidade + caminho + nome de arquivo).|
 |Diretório da solução|$(SolutionDir)|O diretório da solução atual (unidade + caminho).|
 |Nome de arquivo da solução|$(SolutionFileName)|O nome de arquivo da solução atual (unidade + caminho + nome de arquivo).|
 

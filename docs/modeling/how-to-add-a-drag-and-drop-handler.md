@@ -1,22 +1,20 @@
 ---
-title: Como adicionar um manipulador de evento de arrastar e soltar
+title: 'Como: Adicionar um manipulador do tipo "arrastar e soltar"'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 4ff2be60979298de7a4c10e55285f1cdedc01ba9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859192"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954459"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Como adicionar um manipulador de evento de arrastar e soltar
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Como: Adicionar um manipulador do tipo "arrastar e soltar"
 
 Você pode adicionar manipuladores para eventos de arrastar e soltar à DSL, para que os usuários poderão arrastar itens para o diagrama de outros diagramas ou de outras partes do Visual Studio. Também é possível adicionar manipuladores de eventos como cliques duplos. Juntos, os manipuladores de arrastar-e-soltar e clique duas vezes são conhecidos como *manipuladores de gesto*.
 
@@ -70,7 +68,7 @@ No novo arquivo, defina uma classe parcial da classe da forma ou do diagrama que
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -Este método é chamado quando o usuário clica duas vezes na forma ou diagrama.
 
-     Para obter mais informações, consulte [como: interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Para obter mais informações, confira [Como: Interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Defina `IsAcceptableDropItem(e)` para determinar se o item arrastado é aceitável e ProcessDragDropItem(e) para atualizar o modelo quando o item for solto. Esses métodos devem primeiro extrair o item dos argumentos do evento. Para obter informações sobre como fazer isso, consulte [como obter uma referência para o item arrastado](#extracting).
 
@@ -322,7 +320,7 @@ As propriedades `Data` e `Prototype` dos argumentos do evento contêm apenas uma
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Usando ações do mouse: Arrastando itens de compartimento
+## <a name="using-mouse-actions-dragging-compartment-items"></a>Usando ações do Mouse: Arrastando itens de compartimento
 
 Você pode escrever um manipulador que intercepta ações do mouse nos campos de uma forma. O exemplo a seguir permite ao usuário reordenar os itens em um compartimento arrastando com o mouse.
 

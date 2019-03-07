@@ -1,8 +1,6 @@
 ---
-title: 'CA2118: revisar uso de SuppressUnmanagedCodeSecurityAttribute'
+title: 'CA2118: Examinar o uso de SuppressUnmanagedCodeSecurityAttribute'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2118
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 900abe516ebd07cf5a8849f269f915623500731e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a3762bf0826e2fbaef365a6251cdc8ee58286007
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859699"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945242"
 ---
-# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: revisar uso de SuppressUnmanagedCodeSecurityAttribute
+# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Examinar o uso de SuppressUnmanagedCodeSecurityAttribute
 
 |||
 |-|-|

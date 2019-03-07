@@ -1,14 +1,9 @@
 ---
 title: Portando, migrando e Atualizando projetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -23,13 +18,13 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 6fffd688382287dc4c5d2e7623297383637e7b64
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054166"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54805547"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portando, migrando e atualizando projetos do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,15 +66,15 @@ Quando você estiver considerando se deve ir para uma versão mais recente do Vi
 |SketchFlow|Se você permitir que o Visual Studio atualize o projeto para o WPF 4.5/Silverlight 5, será possível abri-lo no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |Banco de dados do [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|Você pode abrir o projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1. Se você tiver um arquivo de banco de dados (.mdf) criado em uma versão anterior do SQL Server, será preciso atualizá-lo para o [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] para poder usá-lo com o SQL Server Express LocalDB, mas o banco de dados não será mais compatível com versões anteriores do SQL Server. Se você não atualizar, será possível continuar trabalhando com o banco de dados no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] instalando e usando o [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] no mesmo computador. Para obter mais informações, consulte [atualizar arquivos. mdf](../data-tools/upgrade-dot-mdf-files.md).|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|Se o [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express estiver instalado nos computadores que estão executando o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1, você poderá abrir o projeto em todas as três versões.|
-|Projeto de Relatório do SQL Server|Você só pode abrir o projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Apenas para o modo local (isto é, quando não conectado ao SQL Server), você não obterá a experiência em tempo de design para controles associados ao visualizador no [!INCLUDE[vs2010](../includes/vs2010-md.md)], mas o projeto funcionará corretamente no tempo de execução. **Cuidado:**  Se você adicionar um recurso específico do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], o esquema de relatório será atualizado automaticamente e você não poderá mais abrir o projeto no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
+|Projeto de Relatório do SQL Server|Você só pode abrir o projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Apenas para o modo local (isto é, quando não conectado ao SQL Server), você não obterá a experiência em tempo de design para controles associados ao visualizador no [!INCLUDE[vs2010](../includes/vs2010-md.md)], mas o projeto funcionará corretamente no tempo de execução. **Cuidado:** se você adicionar um recurso específico [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], o esquema de relatório é atualizado automaticamente e você não pode mais abrir o projeto no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |Testes de unidade|Você pode usar o [!INCLUDE[TCMext](../includes/tcmext-md.md)] no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1 para abrir os testes que foram criados em qualquer uma dessas versões.|
-|Visual C++|Você pode usar o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] para abrir um projeto do C++ criado no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1. Se desejar usar o ambiente de compilação do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] para compilar um projeto que foi criado no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], você deverá ter ambas as versões do Visual Studio instaladas no mesmo computador. Confira mais informações em [Como: Atualizar projetos do Visual C++ para Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) e [Visual C++ do guia de atualização e portabilidade](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
+|Visual C++|Você pode usar o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] para abrir um projeto do C++ criado no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1. Se desejar usar o ambiente de compilação do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] para compilar um projeto que foi criado no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], você deverá ter ambas as versões do Visual Studio instaladas no mesmo computador. Para obter mais informações, consulte [Como atualizar projetos do Visual C++ para o Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) e [Guia de Portabilidade e Atualização do Visual C++](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
 |Visual Studio 2010 Web|Se você permitir que o Visual Studio atualize o projeto automaticamente, será possível abri-lo no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1.|
 |Banco de dados do Visual Studio 2010 (.dbproj)|Se você converter o projeto em um projeto de Banco de Dados do SQL Server Data Tools, será possível abri-lo no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. No entanto, o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] não oferece suporte a estes artefatos:<br /><br /> –    testes de unidade<br />–    planos de geração de dados<br />–    arquivos de comparação de dados<br />–    extensões de regra personalizada para análise de código estático<br />–    server.sqlsettings<br />–    arquivos .sqlcmd<br />–    extensões de implantação personalizada<br />–    projetos parciais (.files)<br /><br /> Se você instalar o SQL Server Data Tools, será possível abrir o projeto no Visual Studio 2010 SP1 após a conversão. Para obter mais informações, consulte [Microsoft SQL Server Data Tools](http://msdn.microsoft.com/data/tools.aspx).|
 |Visual Database Tools do Visual Studio 2010|Você pode abrir esse projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1.|
 |Visual Studio Lab Management|Você pode usar o [!INCLUDE[TCMext](../includes/tcmext-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1 para abrir ambientes que foram criados em qualquer uma dessas versões. No entanto, a versão do Microsoft Test Manager deve corresponder à versão do Team Foundation Server para que você possa criar ambientes.|
 |Macro do Visual Studio|Esse projeto não pode ser aberto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], pois este não oferece suporte ao tipo de projeto.|
-|SDK/VSIX do Visual Studio|Depois de atualizar um projeto do SDK do Visual Studio para o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], não será possível abri-lo no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Confira mais informações em [Como: Migrar projetos de extensibilidade para o Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
+|SDK/VSIX do Visual Studio|Depois de atualizar um projeto do SDK do Visual Studio para o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], não será possível abri-lo no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Para obter mais informações, consulte [como: migrar projetos de extensibilidade para o Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
 |Ferramentas do Microsoft Azure para Visual Studio|Se estiver usando as Ferramentas do Microsoft Azure para Visual Studio versão 2.1, pode abrir o projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1. Para projetos destinados a versões anteriores, se você permitir que o Visual Studio atualize o projeto para a versão 2.1, será possível abri-lo no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1.|
 |Windows Communication Foundation, Windows Presentation Foundation|Você pode abrir esse projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1.|
 |Windows Mobile|Esse projeto não pode ser aberto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], pois este não oferece suporte ao tipo de projeto.|
@@ -87,7 +82,7 @@ Quando você estiver considerando se deve ir para uma versão mais recente do Vi
 |Outros|Você pode abrir a maioria dos outros tipos de projetos no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e Visual Studio 2010 SP1.|
 |Sites do FrontPage|Esse projeto não pode ser aberto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], pois este não oferece suporte ao tipo de projeto.|
 |Biblioteca de Classes Portátil|Se você permitir que o Visual Studio atualize o projeto automaticamente, será possível abri-lo no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1.<br /><br /> –    Os projetos direcionados ao Silverlight 4 serão direcionados ao Silverlight 5.<br />–    Os projetos direcionados ao Windows Phone 7.0 ou ao Windows Phone 7.5 serão direcionados ao Windows Phone 8.<br />–    Os projetos direcionados ao Xbox 360 não serão mais direcionados ao Xbox 360.|
-|Projetos do Azure, como a nuvem de serviço (extensão. ccproj) do Azure Resource Manager projetos e (projetos de implantação de nuvem) com a extensão .deployproj|Para abrir esses tipos de projetos, primeiro instale o [SDK do Azure para .NET](http://azure.microsoft.com/en-us/downloads/) e, em seguida, abra o projeto.|
+|Projetos do Azure, como a nuvem de serviço (extensão. ccproj) do Azure Resource Manager projetos e (projetos de implantação de nuvem) com a extensão .deployproj|Para abrir esses tipos de projetos, primeiro instale o [SDK do Azure para .NET](http://azure.microsoft.com/downloads/) e, em seguida, abra o projeto.|
 
 ## <a name="troubleshooting-project-compatibility-issues"></a>Solucionando problemas de compatibilidade de projeto
  Veja a seguir algumas ações que poderão ser realizadas quando um projeto não abrir no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ou no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:

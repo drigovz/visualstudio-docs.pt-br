@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a669d435d84295b22af4298936babf8439eaefa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5680d22ffa5ec648afaced5e98f651e35758f929
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724986"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092112"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
 Permite que um host inteligente determinar como tratar erros de tempo de execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    BOOL*                     pfEnterDebugger,  
@@ -40,13 +40,13 @@ HRESULT OnScriptErrorDebug(
   
 #### <a name="parameters"></a>Parâmetros  
  `pErrorDebug`  
- [in] O erro de tempo de execução ocorreu  
+ [in] O erro de tempo de execução que ocorreu  
   
  `pfEnterDebugger`  
- [out] Sinalizador indicando se é necessário passar o erro para o depurador para fazer a depuração JIT.  
+ [out] Sinalizador que indica se deve passar o erro para o depurador para fazer a depuração JIT.  
   
  `pfCallOnScriptErrorWhenContinuing`  
- [out] Sinalizador que indica se a chamada `IActiveScriptSite::OnScriptError` quando o usuário decide continuar sem depuração.  
+ [out] Sinalizador que indica se a chamada `IActiveScriptSite::OnScriptError` quando o usuário decidir continuar sem depurar.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os valores possíveis incluem, mas não estão limitados ao valor na tabela a seguir.  

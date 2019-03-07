@@ -1,25 +1,20 @@
 ---
 title: Dicas de produtividade | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: db89bda465d1a4fc4da1b3066858b270ce50c5bb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051024"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54785681"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +79,13 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
 
      As caixas azul sugerem maneiras de corrigir erros em seu código.
 
-     (Figura 1). Marcas inteligentes de erro
+     Figure 1: Marcas Inteligentes de erro
 
      ![Sugestões de marcação inteligente de erro](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
      As caixas vermelhas sugerem maneiras de refatorar seu código.
 
-     Figura 2: Marcas inteligentes de refatoração
+     Figure 2: Refatorando Marcas Inteligentes
 
      ![Sugestões de marcação inteligente de refatoração](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
 
@@ -120,7 +115,7 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
 
 -   **Localizar caixas de diálogo, comandos de menu e opções**. Na caixa [Caixa de diálogo Início Rápido, Ambiente, Opções](../ide/reference/quick-launch-environment-options-dialog-box.md), digite palavras-chave ou frases para os itens que você está tentando localizar. Por exemplo, as seguintes opções aparecerão se você inserir `new project`:
 
-     Figura 3. Listam de resultados do início rápido para `new project`
+     Figura 3: lista de resultados do Início Rápido para `new project`
 
      ![Resultados de Início Rápido para 'novo projeto'](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
@@ -156,11 +151,11 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
 
      Para fixar um arquivo, escolha a guia do arquivo e então escolha o botão **Ativar/desativar status de pin**.
 
--   **Mover documentos e janelas para outros monitores**. Se você usar mais de um monitor quando desenvolver aplicativos, poderá trabalhar em partes do seu aplicativo mais facilmente movendo arquivos que estejam abertos no editor para outro monitor. Você também pode mover janelas de ferramentas, como janelas de depuração, para outro monitor e encaixar janelas de documento e de ferramenta para criar "reposicionamentos". Confira mais informações em [Como: Organizar e encaixar janelas](../misc/how-to-arrange-and-dock-windows.md).
+-   **Mover documentos e janelas para outros monitores**. Se você usar mais de um monitor quando desenvolver aplicativos, poderá trabalhar em partes do seu aplicativo mais facilmente movendo arquivos que estejam abertos no editor para outro monitor. Você também pode mover janelas de ferramentas, como janelas de depuração, para outro monitor e encaixar janelas de documento e de ferramenta para criar "reposicionamentos". Para obter mais informações, consulte [Como organizar e encaixar janelas](../misc/how-to-arrange-and-dock-windows.md).
 
      Você também pode gerenciar arquivos mais facilmente criando outra instância do **Gerenciador de Soluções** e movendo-a para outro monitor. Para criar outra instância do **Gerenciador de Soluções**, abra um menu de atalho no **Gerenciador de Soluções** e então escolha **Novo Modo de Exibição do Gerenciador de Soluções**.
 
--   **Personalizar as fontes que aparecem no Visual Studio**. Você pode alterar a fonte, o tamanho e a cor usados par ao texto no IDE. Por exemplo, você pode personalizar a cor de elementos de código específicos no editor e a fonte em janelas de ferramenta ou por meio do IDE. Confira mais informações em [Como: Alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [como: Alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+-   **Personalizar as fontes que aparecem no Visual Studio**. Você pode alterar a fonte, o tamanho e a cor usados par ao texto no IDE. Por exemplo, você pode personalizar a cor de elementos de código específicos no editor e a fonte em janelas de ferramenta ou por meio do IDE. Para obter mais informações, consulte [Como alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Como alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Consulte também
- [Atalhos de teclado padrão para comandos usados frequentemente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [como: Personalizar Menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [acessibilidade dicas e truques](../ide/reference/accessibility-tips-and-tricks.md)
+ [Atalhos de teclado padrão para comandos usados frequentemente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [como: Personalizar Menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [dicas de acessibilidade e Truques](../ide/reference/accessibility-tips-and-tricks.md)

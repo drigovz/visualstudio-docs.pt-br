@@ -1,8 +1,6 @@
 ---
 title: Não é possível conectar o Monitor de depuração remota do Studio Visual da Microsoft | Microsoft Docs
-ms.custom: ''
 ms.date: 08/24/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_debug
@@ -14,21 +12,21 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
-ms.translationtype: MT
+ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073929"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953642"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 Essa mensagem pode ocorrer porque o monitor de depuração remota não está corretamente configurado no computador remoto ou o computador remoto está inacessível devido a problemas de rede ou a presença de um firewall.
-  
+
 > [!IMPORTANT]
->  Se você acredita ter recebido esta mensagem devido a um bug do produto, por favor [relate este problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) para o Visual Studio. Se você precisar de mais ajuda, consulte [Fale conosco](../ide/talk-to-us.md) maneiras de entrar em contato com a Microsoft.
+>  Se você acredita ter recebido esta mensagem devido a um bug do produto, por favor [relate este problema](../ide/how-to-report-a-problem-with-visual-studio.md) para o Visual Studio. Se você precisar de mais ajuda, consulte [Fale conosco](../ide/talk-to-us.md) maneiras de entrar em contato com a Microsoft.
 
 ## <a name="specificerrors"></a>O que é a mensagem de erro detalhadas?
 
@@ -108,16 +106,16 @@ Você poderá ver esse erro se você tentar depurar em um computador remoto de 6
 
 ## <a name="security_package"></a> Ocorreu um erro específico do pacote de segurança
 
-Isso pode ser um problema de herdados específico para o Windows XP e Windows 7. Consulte este [informações](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package). 
+Isso pode ser um problema de herdados específico para o Windows XP e Windows 7. Consulte este [informações](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package).
 
 ## <a name="causes-and-recommendations"></a>As causas e as recomendações
 
-### <a name="dns"></a> O computador remoto não está acessível 
+### <a name="dns"></a> O computador remoto não está acessível
 
 Se você não pode se conectar usando o nome do computador remoto, tente usar o endereço IP. Você pode usar `ipconfig` em uma linha de comando no computador remoto para obter o endereço IPv4. Se você estiver usando um arquivo de HOSTS, verifique se ele está configurado corretamente.
 
 Se isso falhar, verifique se o computador remoto está acessível na rede ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) máquina remota). Não há suporte para a depuração remota pela Internet, exceto em alguns cenários do Microsoft Azure.
-  
+
 ### <a name="server_incorrect"></a> O nome do servidor está incorreto ou software de terceiros está interferindo com o depurador remoto
 
 No Visual Studio, examine as propriedades do projeto e verifique se que o nome do servidor está correto. Consulte os tópicos para [em C# e Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) e [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Para o ASP.NET, abra **propriedades / Web / servidores** ou **propriedades / Depurar** dependendo do seu tipo de projeto.
@@ -127,11 +125,11 @@ No Visual Studio, examine as propriedades do projeto e verifique se que o nome d
 
 Se o nome do servidor está correto, um firewall de terceiros ou de seu software antivírus pode estar bloqueando o depurador remoto. Quando estiver depurando localmente, isso pode acontecer porque o Visual Studio é um aplicativo de 32 bits, portanto, ele usa a versão de 64 bits do depurador remoto para depurar aplicativos de 64 bits. Os processos de 32 bits e 64 bits se comunicam usando a rede local no computador local. Nenhum tráfego de rede deixa o computador, mas é possível que o software de segurança de terceiros pode bloquear a comunicação.
 
-### <a name="user_accounts"></a> O depurador remoto está em execução em uma conta de usuário diferente 
+### <a name="user_accounts"></a> O depurador remoto está em execução em uma conta de usuário diferente
 
-O depurador remoto, por padrão, só aceitará conexões de usuário que iniciou o depurador remoto e os membros do grupo Administradores. Usuários adicionais devem ser explicitamente concedidos permissões. 
- 
-Você pode resolver isso em uma das seguintes maneiras:  
+O depurador remoto, por padrão, só aceitará conexões de usuário que iniciou o depurador remoto e os membros do grupo Administradores. Usuários adicionais devem ser explicitamente concedidos permissões.
+
+Você pode resolver isso em uma das seguintes maneiras:
 
 -   Adicionar usuário do Visual Studio para permissões de usuário do depurador remoto (na janela do depurador remoto, escolha **Ferramentas > permissões**).
 
@@ -139,33 +137,33 @@ Você pode resolver isso em uma das seguintes maneiras:
 
     > [!NOTE]
     > Se você estiver executando o depurador remoto em um servidor remoto, o aplicativo depurador remoto com o botão direito e escolha **executar como administrador** (ou, você pode executar o depurador remoto como um serviço). Se você não estiver executando-lo em um servidor remoto, apenas iniciá-lo normalmente.
-  
--   Você pode iniciar o depurador remoto na linha de comando com o **/Allow \<nome de usuário >** parâmetro: `msvsmon /allow <username@computer>`. 
-  
+
+-   Você pode iniciar o depurador remoto na linha de comando com o **/Allow \<nome de usuário >** parâmetro: `msvsmon /allow <username@computer>`.
+
 -   Como alternativa, você pode permitir que qualquer usuário faça a depuração remota. Na janela do depurador remoto, vá para o **Ferramentas > Opções** caixa de diálogo. Quando você seleciona **sem autenticação**, em seguida, você pode verificar **permitem que qualquer usuário depure**. No entanto, você deve tentar esta opção apenas se as demais opções falhem ou se você estiver usando uma rede privada.
 
-### <a name="firewall"></a> O firewall no computador remoto não permite conexões de entrada para o depurador remoto  
+### <a name="firewall"></a> O firewall no computador remoto não permite conexões de entrada para o depurador remoto
  O firewall no computador do Visual Studio e o firewall no computador remoto devem ser configurados para permitir a comunicação entre o Visual Studio e o depurador remoto. Para obter informações sobre as portas que o depurador remoto está usando, consulte [as atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Para obter informações sobre como configurar o firewall do Windows, consulte [configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
-  
-### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>A versão do depurador remoto não corresponde à versão do Visual Studio  
+
+### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>A versão do depurador remoto não corresponde à versão do Visual Studio
  A versão do Visual Studio que você estiver executando localmente precisa corresponder à versão do monitor de depuração remota que está em execução no computador remoto. Para corrigir esse problema, baixe e instale a versão correspondente do monitor de depuração remota. Para obter a versão correta do depurador remoto, consulte [depuração remota](../debugger/remote-debugging.md).
-  
-### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>As máquinas locais e remotas têm diferentes modos de autenticação  
+
+### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>As máquinas locais e remotas têm diferentes modos de autenticação
  As máquinas locais e remotas precisam usar o mesmo modo de autenticação. Para corrigir esse problema, certifique-se de que ambos os computadores estão usando o mesmo modo de autenticação. Você pode alterar o modo de autenticação. Na janela do depurador remoto, vá para o **Ferramentas > Opções** caixa de diálogo.
-  
- Para obter mais informações sobre modos de autenticação, consulte [visão geral da autenticação do Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).   
-  
-### <a name="anti-virus-software-is-blocking-the-connections"></a>Um software antivírus está bloqueando as conexões  
- Software de antivírus do Windows permite conexões do depurador remoto, mas alguns softwares antivírus de terceiros podem bloqueá-los. Verifique a documentação do seu software antivírus saber como permitir que essas conexões.  
-  
-### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>Política de segurança de rede está bloqueando a comunicação entre o computador remoto e o Visual Studio  
- Revise a segurança de sua rede para certificar-se de que ele não está bloqueando a comunicação. Para obter mais informações sobre a política de segurança de rede do Windows, consulte [configurações de política de segurança](/windows/device-security/security-policy-settings/security-policy-settings).  
-  
-### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>A rede está muito ocupada para dar suporte à depuração remota  
- Você talvez precise fazer a depuração remota em um momento diferente ou reagendar o trabalho na rede para um momento diferente.  
-  
-## <a name="more-help"></a>Mais ajuda  
+
+ Para obter mais informações sobre modos de autenticação, consulte [visão geral da autenticação do Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).
+
+### <a name="anti-virus-software-is-blocking-the-connections"></a>Um software antivírus está bloqueando as conexões
+ Software de antivírus do Windows permite conexões do depurador remoto, mas alguns softwares antivírus de terceiros podem bloqueá-los. Verifique a documentação do seu software antivírus saber como permitir que essas conexões.
+
+### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>Política de segurança de rede está bloqueando a comunicação entre o computador remoto e o Visual Studio
+ Revise a segurança de sua rede para certificar-se de que ele não está bloqueando a comunicação. Para obter mais informações sobre a política de segurança de rede do Windows, consulte [configurações de política de segurança](/windows/device-security/security-policy-settings/security-policy-settings).
+
+### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>A rede está muito ocupada para dar suporte à depuração remota
+ Você talvez precise fazer a depuração remota em um momento diferente ou reagendar o trabalho na rede para um momento diferente.
+
+## <a name="more-help"></a>Mais ajuda
  Para obter ajuda do depurador mais remota, abra a página de Ajuda do depurador remoto (**Ajuda > uso** no depurador remoto).
-  
-## <a name="see-also"></a>Consulte também  
- [Depuração remota](../debugger/remote-debugging.md)
+
+## <a name="see-also"></a>Consulte também
+- [Depuração remota](../debugger/remote-debugging.md)

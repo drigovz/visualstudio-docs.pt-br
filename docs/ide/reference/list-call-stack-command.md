@@ -1,8 +1,6 @@
 ---
 title: Comando Listar Pilha de Chamadas
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listcallstack
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e809af75f0a4a47da6af30a3d93748401ca4609d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511974"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912398"
 ---
 # <a name="list-call-stack-command"></a>Comando Listar Pilha de Chamadas
 Exibe a pilha de chamadas atual.

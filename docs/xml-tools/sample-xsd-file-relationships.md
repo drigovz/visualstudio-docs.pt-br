@@ -1,23 +1,21 @@
 ---
-title: 'Arquivo XSD de exemplo: Relações'
+title: 'Arquivo de exemplo XSD: Relações'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ddb896fad5d69fafc67c04ef839b952cac4d11
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572768"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951690"
 ---
-# <a name="sample-xsd-file-relationships"></a>Arquivo XSD de exemplo: relações
+# <a name="sample-xsd-file-relationships"></a>Arquivo de exemplo XSD: Relações
 
 O arquivo XSD a seguir é usado em vários exemplos na documentação do Designer de Esquema XSD. Este arquivo é um esquema de ordem de compra com anotações e documentação.
 

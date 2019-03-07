@@ -1,36 +1,34 @@
 ---
 title: Propriedades de documento XML, a janela de propriedades
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 69cd8a8f1acd650c65c995f303adc4d3ee2c1bc5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693559"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938236"
 ---
-# <a name="xml-document-properties-properties-window"></a>Propriedades de documento XML, janela de propriedades
+# <a name="xml-document-properties-properties-window"></a>Propriedades de documento XML, janela Propriedades
 
-O **propriedades** janela fornece informações básicas sobre o documento ativo no Editor de XML. As propriedades que estão disponíveis varia dependendo do tipo de documento XML que está atualmente ativa.
+O **propriedades** janela fornece informações básicas sobre o documento que está ativo no Editor de XML. As propriedades que estão disponíveis varia dependendo do tipo de documento XML que está atualmente ativa.
 
 > [!NOTE]
 > Todas as propriedades de documento XML são salvas na solução. Como resultado, você não tem que digitar novamente esses valores na próxima vez que você abrir a solução.
 
- **Codificação**
+ **Encoding**
 
  A codificação de caractere para o arquivo. Alterar essa propriedade também altera o atributo de codificação na declaração XML, e vice-versa. A nova codificação será usada para codificar o arquivo quando você salvar o arquivo.
 
  **Entrada**
 
- O documento de entrada associado com a folha de estilos XSLT. Ele é usado pelo **ShowXSLT saída** comando. Um documento pode ser selecionado usando o botão Procurar (**...** ) botão.
+ O documento de entrada associado com a folha de estilos XSLT. Ele é usado pelas **ShowXSLT saída** comando. Um documento pode ser selecionado usando o botão Procurar (**...** ) botão.
 
  Esta propriedade é visível somente quando um arquivo fonte é atualmente ativa na janela editor.
 
@@ -48,9 +46,9 @@ O **propriedades** janela fornece informações básicas sobre o documento ativo
 
  **Folha de estilos**
 
- O arquivo XSLT que é usado para transformar o documento quando o **Mostrar saída de XSLT** comando é usado. Se esse campo estiver em branco quando o **Mostrar saída de XSLT** comando é usado, o editor usa o valor fornecido a `xml-stylesheet` instrução do documento, ou de processamento solicitará o nome do arquivo.
+ O arquivo XSLT que é usado para transformar o documento quando o **saída XSLT de apresentação** comando é usado. Se esse campo estiver em branco quando o **saída XSLT de apresentação** comando é usado, o editor usa o valor fornecido no `xml-stylesheet` o documento, ou instrução de processamento solicitará o nome do arquivo.
 
- Ao editar um arquivo XSLT, essa propriedade pode ser usada para especificar que uma folha de estilo diferente deve ser usado quando o **Mostrar saída de XSLT** ou **depuração XSLT** comando é selecionado. Por exemplo, você pode querer fazer isso quando você estiver editando uma folha de estilos incluída em uma folha de estilos pai.
+ Ao editar um arquivo XSLT, essa propriedade pode ser usada para especificar que uma folha de estilo diferente deve ser usado quando o **saída XSLT de apresentação** ou **depuração XSLT** comando está selecionado. Por exemplo, você pode querer fazer isso quando você estiver editando uma folha de estilos incluída em uma folha de estilos pai.
 
 ## <a name="see-also"></a>Consulte também
 

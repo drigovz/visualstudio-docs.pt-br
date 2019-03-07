@@ -1,5 +1,5 @@
 ---
-title: Como definir atributos CLR em um elemento
+title: 'Como: Definir atributos CLR em um elemento'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,19 +8,17 @@ helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1609b92e631abdaba34a18bd32d4fc6d892f7cd7
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b890a5d3d5c48ad3841075a8ae818d2d37d44f98
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966785"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946620"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>Como definir atributos CLR em um elemento
+# <a name="how-to-set-clr-attributes-on-an-element"></a>Como: Definir atributos CLR em um elemento
 Atributos personalizados são atributos especiais que podem ser adicionados a diagramas, formas, conectores e elementos de domínio. Você pode adicionar qualquer atributo que herda o `System.Attribute` classe.
 
 ### <a name="to-add-a-custom-attribute"></a>Para adicionar um atributo personalizado
@@ -41,8 +39,8 @@ Atributos personalizados são atributos especiais que podem ser adicionados a di
 
      O **atributos personalizados** propriedade agora exibe o atributo no seguinte formato:
 
-     `[` *AttributeName* `(` *ParameterName* `=` *tipo* `)]`
+     `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

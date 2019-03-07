@@ -2,8 +2,6 @@
 title: Designer de fluxo de trabalho - FlowSwitch<T> Designer de atividade
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Core.Presentation.FlowSwitchLink.UI
 - System.Activities.Statements.FlowSwitch`1.UI
@@ -12,15 +10,15 @@ f1_keywords:
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 783f3101f567f5fe45a1de24a8dad866ea619a39
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3f6d396acb62b9cac8f34ef106ac96257eec612
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848120"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970837"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > Designer de atividade
 

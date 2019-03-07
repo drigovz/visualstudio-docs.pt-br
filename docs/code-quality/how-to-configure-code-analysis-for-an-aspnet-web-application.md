@@ -1,24 +1,22 @@
 ---
 title: Configurar a análise de código para o aplicativo Web do ASP.NET
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8b2776399e776e34126c3c000332aa267682b88f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 51638db2cf258cc1a91c659c137c6a17811fa8c8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065307"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923833"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Como configurar a análise de código para um aplicativo Web do ASP.NET
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Como: Configurar a análise de código para um aplicativo Web ASP.NET
 
 No Visual Studio, você pode selecionar em uma lista de análise de código *conjuntos de regras* para aplicar a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativo web. O conjunto de regras padrão é a regras mínimo recomendado da Microsoft. Você pode selecionar outro conjunto de regras para aplicar ao site da web.
 

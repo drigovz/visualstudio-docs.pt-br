@@ -3,25 +3,23 @@ title: Aumentar a produtividade de desenvolvimento do .NET
 description: Uma visão geral da navegação, da análise de código, do teste de unidade e de outros recursos para ajudá-lo a escrever um código .NET melhor mais rápido.
 author: kuhlenh
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+manager: jillfra
 ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645140"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708635"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guia de produtividade em C# do Visual Studio 2017
 
-Saiba como o [Visual Studio de 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) faz com que os desenvolvedores sejam mais produtivos do que nunca. Aproveite nossas melhorias em desempenho e produtividade como a navegação para assemblies descompilados, sugestões de nomes de variáveis durante a digitação, um modo de exibição de hierarquia no **Gerenciador de Testes**, opção Ir para Todos (**Ctrl**+**T**) para navegar para as declarações de arquivo/tipo/membro/símbolo, um **Auxiliar de Exceção** inteligente, configuração e imposição de estilo de código e muitas correções de código e refatorações.
+Saiba como o [Visual Studio de 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) faz com que os desenvolvedores sejam mais produtivos do que nunca. Aproveite nossas melhorias em desempenho e produtividade como a navegação para assemblies descompilados, sugestões de nomes de variáveis durante a digitação, um modo de exibição de hierarquia no **Gerenciador de Testes**, opção Ir para Todos (**Ctrl**+**T**) para navegar para as declarações de arquivo/tipo/membro/símbolo, um **Auxiliar de Exceção** inteligente, configuração e imposição de estilo de código e muitas correções de código e refatorações.
 
 ## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Estou acostumado aos meus atalhos de teclado de uma extensão/editor/IDE diferente
 
@@ -94,6 +92,8 @@ O Visual Studio 2017 vem com muitas refatorações, ações de geração de cód
   - *Adicionar Null-Check*
   - *Adicionar Parâmetro*
   - *Remover Usos Desnecessários*
+  - *Loop Foreach para uma consulta LINQ ou um método LINQ*
+  - *Refatoração para efetuar pull de membros para nível superior com opções de caixa de diálogo*
   - Confira mais em nossa [documentação](https://aka.ms/refactorings)
 - Crie sua própria refatoração ou correção de código com [analisadores Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Vários membros da comunidade codificaram extensões gratuitas que adicionam outras inspeções de código:
@@ -110,12 +110,12 @@ O Visual Studio 2017 tem muitos recursos para ajudar você a pesquisar e navegar
 
 | Recurso | Atalho | Detalhes/melhorias |
 |- | - | -|
-| Localizar Todas as Referências | **Shift**+**F12**| Os resultados são coloridos e podem ser agrupados por projeto, definição etc. Também é possível “bloquear” resultados. |
+| Localizar Todas as Referências | **Shift**+**F12**| Os resultados são coloridos e podem ser agrupados por projeto, definição e tipo de referência, como leitura ou gravação. Também é possível “bloquear” resultados. |
 | Ir Para Implementação | **Ctrl**+**F12** | É possível usar “Ir para definição” na palavra-chave `override` para navegar até o membro substituído |
 | Ir para definição | **F12** ou **Ctrl**+**Clique**| Ou pressione **Ctrl** enquanto clica para navegar até a definição |
 | Inspecionar Definição | **Alt**+**F12** | Exibição embutida de uma definição |
 | Visualizador de Estrutura | Linhas cinzas pontilhadas entre chaves | Passe o mouse para ver a estrutura do código |
-| Navegação para assemblies descompilados | **F12** ou **Ctrl**+**Clique** | Navegue para a fonte externa (descompilada com o ILSpy) habilitando o recurso: **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar a navegação para fontes descompiladas**. |
+| Navegação para assemblies descompilados | **F12** ou **Ctrl**+**Clique** | Navegue para a fonte externa (descompilada com ILSpy) habilitando a funcionalidade: **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar navegação para fontes descompiladas**. |
 
 ![Ir para Todos e Localizar Todas as Referências](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -135,7 +135,7 @@ Nós adicionamos inúmeros recursos de depuração novos no Visual Studio 2017:
 
 - *Executar até o clique* permite que você passe o mouse ao lado de uma linha de código, pressione o ícone verde 'executar' que é exibido e execute o programa até atingir essa linha.
 - O novo **Auxiliar de Exceção** coloca as informações mais importantes, como qual variável é 'nula' em uma NullReferenceException, na parte superior da caixa de diálogo.
-- A opção [Retroceder](../debugger/how-to-use-intellitrace-step-back.md) a depuração permite voltar para os pontos de interrupção ou para as etapas anteriores e exibir o estado do aplicativo como ele estava anteriormente.
+- A opção [Retroceder](../debugger/view-historical-application-state.md) a depuração permite voltar para os pontos de interrupção ou para as etapas anteriores e exibir o estado do aplicativo como ele estava anteriormente.
 - A opção [Depuração de instantâneo](/azure/application-insights/app-insights-snapshot-debugger) permite investigar o estado de um aplicativo Web online no momento em que uma exceção foi gerada (é necessário estar no Azure).
 
 ![Novo Auxiliar de Exceção no Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
@@ -156,7 +156,7 @@ Aqui está uma lista dos recursos do editor e de produtividade para escrever có
 | Recurso | Detalhes | Como habilitar |
 |-|-|-|
 | Arquivo local no Gerenciador de Soluções | Realça o arquivo ativo no **Gerenciador de Soluções** | **Ferramentas** > **Opções** > **Projetos e Soluções** > **Acompanhar Item Ativo no Gerenciador de Soluções** |
-| Adicionar usos para tipos em assemblies de referência e pacotes do NuGet | Mostra uma lâmpada com uma correção de código para instalar um pacote do NuGet para um tipo não referenciado | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Sugerir usos para tipos em assemblies de referência** e **Sugerir usos para tipos em pacotes NuGet** |
+| Adicionar usos para tipos em assemblies de referência e pacotes do NuGet | Mostra uma lâmpada de erro com uma correção de código para instalar um pacote do NuGet para um tipo não referenciado | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Sugerir usos para tipos em assemblies de referência** e **Sugerir usos para tipos em pacotes NuGet** |
 | Habilitar análise de solução completa | Ver todos os erros na solução na **Lista de Erros** | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar análise completa da solução** |
 | Habilitar a navegação para origens descompiladas | Habilite Ir Para a Definição em tipos/membros de fontes externas e usar o descompilador ILSpy para mostrar os corpos de método | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar navegação para fontes descompiladas** |
 | Modo de conclusão/sugestão | Altera o comportamento de conclusão no IntelliSense – os desenvolvedores com experiência em IntelliJ tendem a alterar aqui a configuração padrão | **Menu** > **Editar** > **IntelliSense** > **Ativar/Desativar Modo de Preenchimento** |

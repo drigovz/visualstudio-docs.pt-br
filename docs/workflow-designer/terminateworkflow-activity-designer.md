@@ -2,22 +2,20 @@
 title: Designer de fluxo de trabalho - Designer de atividade de TerminateWorkflow
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TerminateWorkflow.UI
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f11cbf6ac5a0b19022794aaafd59afe96f51273b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 662366e3b0c0558170c117104d20a1bcb6417615
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908048"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919424"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Designer de atividade de TerminateWorkflow
 

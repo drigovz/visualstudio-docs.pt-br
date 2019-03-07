@@ -7,17 +7,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e6fa953c294bb355d61126354b0752590e536c40
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059227"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932190"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Ler modelos e diagramas em outras edições do Visual Studio
 
@@ -59,5 +57,5 @@ Você pode salvar essas alterações. Se você quiser fazer as alterações vis�
 
 ## <a name="see-also"></a>Consulte também
 
-- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

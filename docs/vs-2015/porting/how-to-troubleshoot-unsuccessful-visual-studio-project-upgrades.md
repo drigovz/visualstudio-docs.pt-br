@@ -1,14 +1,9 @@
 ---
 title: 'Como: Solucionar problemas de atualizações de projeto malsucedidas | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 f1_keywords:
 - VisualStudio.SourceControl.CannotOpenFromSourceControlDSW
 - vs.UpgradeProjectSolution.8.0
@@ -22,13 +17,13 @@ ms.assetid: 842fe448-c044-4343-8eae-d81711cf48ba
 caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 6b50bbaaf7e5b018709f3cf0dece3c0ae38410f8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804257"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Como: Solucionar problemas de atualizações de projeto do Visual Studio malsucedidas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,32 +1,30 @@
 ---
-title: Designer de fluxo de trabalho - Designers de atividade de primitivas
+title: Designer de fluxo de trabalho – Designers de atividade de primitivas
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a92a9a6f09ac576d8ed69c4bf94d9983545ccf4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0facda4d2dfab4862208a6267f2b0f5f4db61b08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973958"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909382"
 ---
 # <a name="primitives-activity-designers"></a>Designer de atividade de primitivas
 
-Os designers de atividade de primitivas são usados para criar e configurar mais atividades no espaço de <xref:System.Activities.Statements> como atribuir e atrasar. Os tópicos contidos nesta seção fornecem orientação sobre como usar a atividade de Designer de fluxo de trabalho e designers de modelo.
+Os designers de atividade de primitivas são usados para criar e configurar mais atividades no espaço de <xref:System.Activities.Statements> como atribuir e atrasar. Os tópicos contidos nesta seção fornecem orientação sobre como usar a atividade de Designer de fluxo de trabalho e os designers de modelo.
 
 ## <a name="related-sections"></a>Seções relacionadas
  [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
 
  [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 
- [Sistema de mensagens](../workflow-designer/messaging-activity-designers.md)
+ [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
  [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
 

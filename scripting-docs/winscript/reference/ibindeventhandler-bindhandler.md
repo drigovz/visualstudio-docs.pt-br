@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66de7cba8181ce9f3d683a90e4d7dd51e63d4779
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62ac6de8342f0a436d984f4194351507fdcd5edd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725186"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090708"
 ---
 # <a name="ibindeventhandlerbindhandler"></a>IBindEventHandler::BindHandler
-Associa um evento para um objeto.  
+Associa um evento a um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT BindHandler(  
    LPCOLESTR   pstrEvent,  
    IDispatch*  pdisp  
@@ -52,7 +52,7 @@ HRESULT BindHandler(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método associa um evento para um objeto.  
+ Esse método é associado a um evento a um objeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [IBindEventHandler Interface](../../winscript/reference/ibindeventhandler-interface.md)

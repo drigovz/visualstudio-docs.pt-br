@@ -1,8 +1,6 @@
 ---
-title: Como escolher métodos de coleta | Microsoft Docs
-ms.custom: ''
+title: 'Como: Escolher métodos de coleta | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
@@ -10,17 +8,17 @@ helpviewer_keywords:
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921282"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638511"
 ---
-# <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleta
+# <a name="how-to-choose-collection-methods"></a>Como: Escolher os métodos de coleta
 
 As Ferramentas de Criação de Perfil do Visual Studio dão suporte a três métodos de coleta de dados de desempenho: amostragem, instrumentação e simultaneidade. Você também pode usar o método de amostragem ou instrumentação para coletar dados de tempo de vida e de alocação de memória do .NET.
 
@@ -93,6 +91,6 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 
 ## <a name="see-also"></a>Consulte também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
-[Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)  
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
+[Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)
 [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)

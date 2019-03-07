@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064621"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926249"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Como: Criar um plug-in do gravador
 

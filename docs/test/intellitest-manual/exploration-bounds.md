@@ -1,22 +1,20 @@
 ---
 title: Limites de exploração | Ferramenta de teste para desenvolvedores do Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d1ac08a2314119c924417191ca509a4bcd18021
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000640"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952353"
 ---
 # <a name="exploration-bounds"></a>Limites de exploração
 
@@ -107,7 +105,7 @@ Por exemplo, cada caminho no código a seguir consome n+1 condições:
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -145,10 +143,10 @@ O número máximo de caminhos exclusivos que o IntelliTest considerará durante 
 
 A motivação por trás desse limite de exploração é que qualquer código que contenha loops ou recursão pode ter um número infinito de caminhos de execução e, portanto, o IntelliTest deve ser limitado durante a [geração de entrada](input-generation.md).
 
-As duas configurações **MaxRuns** e **MaxRunsWithUniquePaths** são relacionadas da seguinte maneira: 
+As duas configurações **MaxRuns** e **MaxRunsWithUniquePaths** são relacionadas da seguinte maneira:
 
 * O IntelliTest chamará um método de teste parametrizado até **MaxRuns** vezes com diferentes entradas de teste.
-* Se o código executado for determinístico, o IntelliTest seguirá um caminho de execução diferente cada vez. No entanto, em algumas condições o código executado pode seguir um caminho de execução que já usado antes, com entradas diferentes. 
+* Se o código executado for determinístico, o IntelliTest seguirá um caminho de execução diferente cada vez. No entanto, em algumas condições o código executado pode seguir um caminho de execução que já usado antes, com entradas diferentes.
 * O IntelliTest conta quantos caminhos de execução exclusivos ele encontra, esse número é limitado pela opção **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>

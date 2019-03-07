@@ -1,23 +1,21 @@
 ---
-title: 'Designer de fluxo de trabalho - como: usar a navegação estrutural'
+title: 'Designer de fluxo de trabalho - como: Usar a navegação estrutural'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b9b4856188cb08379649ab7611dceb5b26b55149
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512272"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950468"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Como: Use a navegação de rastreamento
+# <a name="how-to-use-breadcrumb-navigation"></a>Como: Usar a navegação estrutural
 
 Há três maneiras principais de alterar o conjunto de atividades que são exibidos no Designer de fluxo de trabalho:
 

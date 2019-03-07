@@ -1,8 +1,6 @@
 ---
-title: 'CA1036: substituir métodos em tipos comparáveis'
+title: 'CA1036: Substituir métodos em tipos comparáveis'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1036
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed69ba759d63ba27114bc097ac1fd9ccbe424edd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9ab36be0233ad83c5f1ec23b3511937eda07940c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547731"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952990"
 ---
-# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: substituir métodos em tipos comparáveis
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Substituir métodos em tipos comparáveis
 
 |||
 |-|-|

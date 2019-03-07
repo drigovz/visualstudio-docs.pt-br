@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9ccce6d63e1cb96d4f4027bd13a4a4095e0e4248
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057542"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951482"
 ---
 # <a name="domain-property-value-change-handlers"></a>Manipuladores de alteração de valor de propriedade de domínio
 
@@ -95,7 +93,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Técnica alternativa: propriedades calculadas
+### <a name="alternative-technique-calculated-properties"></a>Técnica alternativa: Propriedades calculadas
 
 O exemplo anterior mostra como OnValueChanged() pode ser usado para propagar os valores de uma propriedade de domínio para outra. Cada propriedade tem seu próprio valor armazenado.
 
@@ -105,7 +103,7 @@ Em vez do exemplo anterior, você poderia definir a **tipo** campo dos `TextLeng
 
 No entanto, há uma possível desvantagem referente às propriedades calculadas, pois a expressão é avaliada toda vez que o valor é usado, o que pode representar um problema de desempenho. Além disso, não há nenhum OnValueChanging() e OnValueChanged() em uma propriedade calculada.
 
-### <a name="alternative-technique-change-rules"></a>Técnica alternativa: alterar as regras
+### <a name="alternative-technique-change-rules"></a>Técnica alternativa: Regras de alteração
 
 Se você definir uma ChangeRule, ele é executado no final de uma transação em que o valor da propriedade é alterada.  Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 

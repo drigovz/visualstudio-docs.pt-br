@@ -1,23 +1,21 @@
 ---
-title: Como criar e modificar níveis MIP
+title: 'Como: Criar e modificar os níveis de MIP'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bdda75e5c8796ccd6e0b1d86b717dbd9bc48926
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: ee24cd3dac57f3daca340eabacdbf05f20d35156
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924441"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923038"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Como criar e modificar níveis de MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Como: Criar e modificar os níveis de MIP
 Este documento demonstra como usar o **Editor de Imagens** para gerar e modificar *níveis de MIP* para um nível de detalhe (LoD) de espaço de textura.
 
 ## <a name="generating-mip-levels"></a>Gerando níveis MIP
@@ -25,7 +23,7 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
 
 #### <a name="to-generate-mip-levels"></a>Para gerar os níveis de MIP
 
-1.  Comece com uma textura básica, conforme descrito em [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para obter melhores resultados, especifique uma textura com largura e altura que sejam uma potência de dois em tamanho, por exemplo, 256, 512, 1024 e assim por diante.
+1.  Comece com uma textura básica, conforme descrito em [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para obter melhores resultados, especifique uma textura com largura e altura que sejam uma potência de dois em tamanho, por exemplo, 256, 512, 1024 e assim por diante.
 
 2.  Gere os níveis de MIP. Na barra de ferramentas **Modo do Editor de Imagens**, escolha **Avançado** > **Ferramentas** > **Gerar Mips**.
 
@@ -41,8 +39,8 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
 2.  Depois de selecionar o nível de MIP que você deseja modificar, você pode usar as ferramentas de desenho para modificá-la sem alterar o conteúdo de outros níveis de MIP. As ferramentas de desenho estão disponíveis na barra de ferramentas **Editor de Imagens**. Depois de selecionar uma ferramenta, você pode alterar suas propriedades na janela **Propriedades**. Para obter informações sobre as ferramentas de desenho e suas propriedades, consulte [Editor de Imagens](../designers/image-editor.md).
 
 > [!NOTE]
->  Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+>  Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como: Exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md)
+- [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md)

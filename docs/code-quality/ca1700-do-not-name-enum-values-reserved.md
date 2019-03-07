@@ -1,8 +1,6 @@
 ---
 title: 'CA1700: Não nomeie valores de enumeração &#39;reservado&#39;'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1700
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7a7e01c3-ae7d-4c82-a646-91b58864a749
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5d1cff8f6833696bdb74dbf145b14aaaaaf509
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f4b08c10fa0d9aa4dea2a58d7e219371baf13ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883660"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912190"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Não nomeie valores de enumeração &#39;reservado&#39;
 
@@ -60,12 +58,12 @@ Para corrigir uma violação dessa regra, remova ou renomeie o membro.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: Não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-[CA1712: não usar valores de enum como prefixo com o nome do tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712: Valores enum como prefixo com o nome do tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028: o armazenamento de enum deve ser Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028: Armazenamento de enum deve ser Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
-[CA1008: as enums devem ter valor zero](../code-quality/ca1008-enums-should-have-zero-value.md)
+[CA1008: Enums devem ter valor zero](../code-quality/ca1008-enums-should-have-zero-value.md)
 
-[CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: Marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

@@ -1,24 +1,22 @@
 ---
 title: Fazer os testes de IU codificados aguardarem eventos específicos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3e2c83b74c2649681251ffa51f1366c0ce96d677
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894762"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970069"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Fazer os testes de IU codificados aguardarem eventos específicos durante a reprodução
 
-Na reprodução de um teste de IU codificado, é possível instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Para fazer isso, use o método apropriado UITestControl.WaitForControlXXX(), conforme descrito na tabela a seguir. Para obter um exemplo de um teste de IU codificado que aguarda a habilitação de um controle usando o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, confira [Passo a passo: Criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Na reprodução de um teste de IU codificado, é possível instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Para fazer isso, use o método apropriado UITestControl.WaitForControlXXX(), conforme descrito na tabela a seguir. Para obter um exemplo de teste de IU codificado que aguarde a habilitação de um controle usando o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, confira [Passo a passo: Criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
@@ -27,7 +25,7 @@ Na reprodução de um teste de IU codificado, é possível instruir o teste a ag
 Visual Studio Enterprise
 
 > [!TIP]
-> Você também pode adicionar atrasos antes de ações usando o Editor de teste de IU codificado. Para obter mais informações, confira [Como inserir um atraso antes de uma ação de interface do usuário usando o Editor de Teste de IU Codificado](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
+> Você também pode adicionar atrasos antes de ações usando o Editor de teste de IU codificado. Para obter mais informações, confira [Como: Inserir um atraso antes de uma ação de interface do usuário usando o editor de teste de IU codificado](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
 **Métodos UITestControl.WaitForControlXXX()**
 
@@ -37,7 +35,7 @@ Aguarda até que o controle esteja pronto para aceitar a entrada do mouse e do t
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-Aguarda o controle ser habilitado quando o assistente está fazendo alguma validação assíncrona da entrada ao fazer chamadas para o servidor. Por exemplo, você pode aguardar até que o botão **Avançar** do assistente esteja habilitado (). Para obter um exemplo desse método, confira [Passo a passo: Criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Aguarda o controle ser habilitado quando o assistente está fazendo alguma validação assíncrona da entrada ao fazer chamadas para o servidor. Por exemplo, você pode aguardar até que o botão **Avançar** do assistente esteja habilitado (). Para obter um exemplo desse método, confira [Passo a passo: Criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -111,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)
-- [Passo a passo: criar, editar e manter um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Passo a passo: Criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)
 - [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Como inserir um atraso antes de uma ação de interface do usuário usando o editor de teste de IU codificado](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)
+- [Como: Inserir um atraso antes de uma ação de interface do usuário usando o editor de teste de IU codificado](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

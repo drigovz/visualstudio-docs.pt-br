@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2d122f6b85853e488035615835b299173951953
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 956d9e119f637dc08cff4b0aa93889cad86b00a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728916"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091761"
 ---
 # <a name="iremotedebugapplicationeventsonenterbreakpoint"></a>IRemoteDebugApplicationEvents::OnEnterBreakPoint
 Manipula um evento para a inserção de um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT OnEnterBreakPoint(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -38,7 +38,7 @@ HRESULT OnEnterBreakPoint(
   
 #### <a name="parameters"></a>Parâmetros  
  `prdat`  
- [in] O thread de aplicativo que inseriu o ponto de interrupção.  
+ [in] O thread do aplicativo que inseriu o ponto de interrupção.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

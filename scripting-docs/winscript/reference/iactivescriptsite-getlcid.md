@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6e128f5ac5de11b45af59c83750411c35e6efa7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 959989d14d2a71f9c9eab4c78ef1b1bd9078362f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724806"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094998"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-Recupera o identificador de localidade associado a interface do usuário do host. O mecanismo de script usa o identificador para garantir que as cadeias de caracteres de erro e outros elementos de interface do usuário gerados pelo mecanismo de aparecem no idioma adequado.  
+Recupera o identificador de localidade associado com a interface do usuário do host. O mecanismo de script usa o identificador para garantir que as cadeias de caracteres de erro e outros elementos de interface do usuário gerados pelo mecanismo aparecem no idioma apropriado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetLCID(  
     LCID *plcid  // address of variable for language identifier  
 );  
@@ -38,7 +38,7 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>Parâmetros  
  `plcid`  
- [out] Endereço de uma variável que recebe o identificador de localidade para elementos de interface de usuário exibido pelo mecanismo de script.  
+ [out] Endereço de uma variável que recebe o identificador de localidade para elementos de interface do usuário exibida pelo mecanismo de script.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um dos seguintes valores:  

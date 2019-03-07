@@ -1,23 +1,21 @@
 ---
 title: Gerenciar projetos de aplicativo do Python
 description: Os projetos do Visual Studio gerenciam dependências entre arquivos e a complexidade das relações em um aplicativo.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068280"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155858"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -38,8 +36,7 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) para obter uma introdução a projetos do Python (2min17s). |
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Assista também ao vídeo [Aprofundamento: Usar o controle do código-fonte com projetos do Python](https://youtu.be/Aq8eqApnugM) (youtube.com, 8min55s). |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Aprofundamento: Usar o controle do código-fonte com projetos do Python](https://youtu.be/Aq8eqApnugM) (youtube.com, 8min55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Adicionar arquivos, atribuir um arquivo de inicialização e definir os ambientes
 
@@ -114,7 +111,7 @@ Arquivos vinculados são ignorados em uma das seguintes condições:
 
 Para adicionar um item existente como um link, clique com o botão direito do mouse na pasta do projeto em que deseja adicionar o arquivo e, em seguida, selecione **Adicionar** > **Item Existente**. Na caixa de diálogo exibida, selecione um arquivo e escolha **Adicionar como Link** no menu suspenso do botão **Adicionar**. Desde que não existam arquivos conflitantes, esse comando criará um link na pasta selecionada. No entanto, o link não será adicionado se já existir um arquivo com o mesmo nome ou se já existir um link para esse arquivo no projeto.
 
-Se você tentar vincular a um arquivo que já existe nas pastas do projeto, ele será adicionado como um arquivo normal e não como um link. Para converter um arquivo em um link, selecione **Arquivo** > **Salvar Como** para salvar o arquivo em um local fora da hierarquia do projeto. O Visual Studio o converte em um link automaticamente. Da mesma forma, um link pode ser convertido novamente usando a opção **Arquivo** > **Salvar Como** para salvar o arquivo em algum lugar na hierarquia do projeto. 
+Se você tentar vincular a um arquivo que já existe nas pastas do projeto, ele será adicionado como um arquivo normal e não como um link. Para converter um arquivo em um link, selecione **Arquivo** > **Salvar Como** para salvar o arquivo em um local fora da hierarquia do projeto. O Visual Studio o converte em um link automaticamente. Da mesma forma, um link pode ser convertido novamente usando a opção **Arquivo** > **Salvar Como** para salvar o arquivo em algum lugar na hierarquia do projeto.
 
 Se você mover um arquivo vinculado no **Gerenciador de Soluções**, o link será movido, mas o arquivo real não será afetado. Da mesma forma, a exclusão de um link removerá o link sem afetar o arquivo.
 

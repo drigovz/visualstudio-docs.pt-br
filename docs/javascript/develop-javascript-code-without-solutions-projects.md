@@ -4,38 +4,36 @@ titleSuffix: ''
 description: O Visual Studio dá suporte para a criação de código sem uma dependência de um arquivo de projeto ou de solução
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a68174fd9cc1efcdde068448445adcf68fe36f63
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058448"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796758"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desenvolver código JavaScript e TypeScript no Visual Studio sem projetos ou soluções
 
-O Visual Studio 2017 apresenta a capacidade de [desenvolver código sem projetos ou soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), que permite que você abra uma pasta de código e comece a trabalhar imediatamente com o suporte do editor avançado, como IntelliSense, pesquisa, refatoração, depuração e muito mais.
-Além desses recursos, as Ferramentas Node.js para Visual Studio adicionam suporte para criação de arquivos TypeScript, o gerenciamento de pacotes npm e a execução de scripts npm.
+O Visual Studio 2017 introduziu a capacidade de [desenvolver o código sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), o que permite que você abra uma pasta de códigos e comece a trabalhar imediatamente com o suporte avançado do editor, como IntelliSense, pesquisa, refatoração, depuração, entre outros. Além desses recursos, as Ferramentas Node.js para Visual Studio adicionam suporte para criação de arquivos TypeScript, o gerenciamento de pacotes npm e a execução de scripts npm.
 
-Para começar, selecione **Abrir Pasta** na página inicial que aparece quando você abre o Visual Studio, ou selecione **arquivo** > **Abrir** > **Pasta** na barra de ferramentas. O Gerenciador de Soluções exibe todos os arquivos na pasta, e você pode abrir qualquer um dos arquivos para começar a editar. Em segundo plano, o Visual Studio indexa os arquivos para habilitar recursos de npm, build e depuração.
+Para começar, selecione **Arquivo** > **Abrir** > **Pasta** na barra de ferramentas. O Gerenciador de Soluções exibe todos os arquivos na pasta, e você pode abrir qualquer um dos arquivos para começar a editar. Em segundo plano, o Visual Studio indexa os arquivos para habilitar recursos de npm, build e depuração.
 
 > [!IMPORTANT]
 > Muitos dos recursos descritos neste artigo, incluindo a integração com npm, exigem o Visual Studio 2017 versão 15.8.
 
 ## <a name="npm-integration"></a>Integração com npm
 
-Se a pasta que você abrir contiver um arquivo *package.json*, clique com o botão direito do mouse em *package.json* para mostrar um menu de contexto (menu de atalho) específico do npm. 
+Se a pasta que você abrir contiver um arquivo *package.json*, clique com o botão direito do mouse em *package.json* para mostrar um menu de contexto (menu de atalho) específico do npm.
 
-![Menu do npm no Gerenciador de Soluções](../javascript/media/solution-explorer-npm-ctx.png) 
+![Menu do npm no Gerenciador de Soluções](../javascript/media/solution-explorer-npm-ctx.png)
 
 No menu de atalho, você pode gerenciar os pacotes instalados pelo npm da mesma maneira que você [gerencia pacotes de npm](npm-package-management.md) ao usar um arquivo de projeto.
 
@@ -44,7 +42,8 @@ Além disso, o menu também permite a execução de scripts definidos no element
 ## <a name="build-and-debug"></a>Build e depuração
 
 ### <a name="packagejson"></a>package.json
-Se o *package.json* na pasta especificar um elemento `main`, o comando **Depurar** estará disponível no menu de atalho com clique do botão direito do mouse para *package.json*. Se você clicar nele, o *node.exe* será iniciado com o script especificado como seu argumento.
+Se o *package.json* na pasta especificar um elemento `main`, o comando **Depurar** estará disponível no menu de atalho com clique do botão direito do mouse para *package.json*.
+Se você clicar nele, o *node.exe* será iniciado com o script especificado como seu argumento.
 
 ### <a name="javascript-files"></a>Arquivos JavaScript
 Você pode depurar arquivos JavaScript clicando com o botão direito do mouse em um arquivo e selecionando **Depurar** no menu de atalho. Isso inicia o *node.exe* com esse arquivo JavaScript como seu argumento.

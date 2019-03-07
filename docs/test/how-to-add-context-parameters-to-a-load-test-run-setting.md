@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048483"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907900"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Como: Adicionar parâmetros de contexto a uma configuração de execução de teste de carga
 

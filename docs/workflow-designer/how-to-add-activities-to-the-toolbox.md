@@ -1,29 +1,27 @@
 ---
-title: 'Designer de fluxo de trabalho - como: adicionar atividades à caixa de ferramentas'
+title: 'Designer de fluxo de trabalho - como: Adicionar atividades à caixa de ferramentas'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e334ee23a68a4fbbb481765997ea1668daede13f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118207"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940679"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Como: Adicione atividades a caixa de ferramentas
+# <a name="how-to-add-activities-to-the-toolbox"></a>Como: Adicionar atividades à caixa de ferramentas
 
 As atividades podem ser adicionadas para o **caixa de ferramentas** em sua solução de várias maneiras diferentes. Você pode adicioná-los do seu projeto atual, referênciá-los de um projeto diferente, ou referênciá-los de um conjunto diferente.
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>Para adicionar uma atividade do seu projeto atual
 
-1.  Adicionar uma nova atividade personalizado ao seu projeto atual de fluxo de trabalho. Para obter mais informações sobre como adicionar uma nova atividade personalizado ao seu projeto, consulte [como: adicionar um novo Item a um projeto de fluxo de trabalho](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1.  Adicionar uma nova atividade personalizado ao seu projeto atual de fluxo de trabalho. Para obter mais informações sobre como adicionar uma nova atividade personalizado ao seu projeto, consulte [como: Adicionar um novo Item a um projeto de fluxo de trabalho](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
 2.  Adicione lógica personalizada para a atividade.
 
@@ -62,4 +60,4 @@ As atividades podem ser adicionadas para o **caixa de ferramentas** em sua solu�
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usando o Designer de Fluxo de Trabalho](../workflow-designer/using-the-workflow-designer.md)
+- [Usando o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)

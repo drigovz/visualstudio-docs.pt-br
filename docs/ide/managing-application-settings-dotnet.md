@@ -1,8 +1,6 @@
 ---
 title: Gerenciar configurações de aplicativo (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_settingsdesigner.err.nameblank
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4ea61199159e68f3707b6dac4d3a6c1f5ea7635
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671781"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323558"
 ---
 # <a name="manage-application-settings-net"></a>Gerenciar configurações de aplicativo (.NET)
 
@@ -86,7 +84,9 @@ Se as configurações no escopo do usuário forem alteradas durante o tempo de e
 
 É altamente recomendável que você use o objeto `My.Settings` e o arquivo *.settings* padrão para acessar as configurações. Isso ocorre porque você pode usar o **Designer de Configurações** para atribuir propriedades às configurações e, além disso, as configurações de usuário são salvas automaticamente antes do desligamento do aplicativo. No entanto, seu aplicativo do Visual Basic pode acessar as configurações diretamente. Nesse caso você precisa acessar a classe `MySettings` e usar um arquivo *.settings* personalizado na raiz do projeto. Você deve salvar as configurações do usuário antes de encerrar o aplicativo, como você faria para um aplicativo C#. Isso é descrito na próxima seção.
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Acessar ou alterar as configurações de aplicativo no tempo de execução em C# #
+<!-- markdownlint-disable MD003 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Acessar ou alterar as configurações de aplicativo no tempo de execução em C#
+<!-- markdownlint-enable MD003 -->
 
 Em linguagens diferentes do Visual Basic, como C#, você deve acessar a classe `Settings` diretamente, conforme mostrado no exemplo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] a seguir.
 

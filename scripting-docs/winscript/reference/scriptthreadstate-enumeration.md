@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e18cc6f5f2afb1dcea6835983f69f6a6f7b9280
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733916"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347665"
 ---
 # <a name="scriptthreadstate-enumeration"></a>Enumeração SCRIPTTHREADSTATE
 Especifica o estado de um thread em um mecanismo de script. Essa enumeração é usada pelo [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 typedef enum tagSCRIPTTHREADSTATE {  
     SCRIPTTHREADSTATE_NOTINSCRIPT  = 0,  
     SCRIPTTHREADSTATE_RUNNING      = 1  
@@ -41,8 +41,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Thread especificado atualmente não é um evento de script, texto do script de processamento executado imediatamente, ou executar uma macro de script.|  
-|SCRIPTTHREADSTATE_RUNNING|Thread especificado é ativamente atendendo a um evento com script, o texto do script de processamento executado imediatamente, ou executar uma macro de script.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Thread especificado atualmente não está atendendo a um evento com script, o texto do script de processamento executado imediatamente, ou executando uma macro de script.|  
+|SCRIPTTHREADSTATE_RUNNING|Thread especificado está ativamente atendendo a um evento com script, o texto do script de processamento executado imediatamente, ou executando uma macro de script.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e códigos de erro do script ativo](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

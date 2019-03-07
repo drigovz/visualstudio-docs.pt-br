@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa3d7d6173161407619174607eae221e4513cbcd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1470d71dcc5e54f1bd38c740993642d2798bff87
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727546"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096974"
 ---
 # <a name="idebugexpressioncallbackoncomplete"></a>IDebugExpressionCallBack::onComplete
-Indica que a avaliação da expressão é concluída.  
+Indica que a avaliação da expressão foi concluída.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT onComplete();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Esse método não usa nenhum parâmetro.  
+ Esse método não usa parâmetros.  
   
 ## <a name="return-value"></a>Valor de retorno  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
@@ -45,7 +45,7 @@ HRESULT onComplete();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é chamado quando a avaliação da expressão é concluída. O `IDebugExpression::GetResultAsString` método pode ser chamado de dentro deste manipulador de eventos.  
+ Esse método é chamado quando a avaliação da expressão for concluída. O `IDebugExpression::GetResultAsString` método pode ser chamado de dentro do manipulador de eventos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugExpressionCallBack](../../winscript/reference/idebugexpressioncallback-interface.md)   

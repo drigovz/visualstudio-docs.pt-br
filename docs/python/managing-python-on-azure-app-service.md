@@ -1,24 +1,22 @@
 ---
 title: Configurar o Python no Serviço de Aplicativo do Azure (Windows)
 description: Como instalar um interpretador e bibliotecas Python no Serviço de Aplicativo do Azure, e configurar os aplicativos Web para fazer referência corretamente a esse interpretador.
-ms.date: 10/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e21be06c26ec6a15b46ef72c0fe33a35b314c989
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051287"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918917"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Como configurar um ambiente Python no Serviço de Aplicativo do Azure (Windows)
 
@@ -127,7 +125,7 @@ As `<appSettings>` definidas aqui estão disponíveis para seu aplicativo como v
 
 - O valor de `PYTHONPATH` pode ser estendido livremente, mas deve incluir a raiz do seu aplicativo.
 - `WSGI_HANDLER` deve apontar para um aplicativo WSGI importável do seu aplicativo.
-- `WSGI_LOG` é opcional, mas recomendado para depuração do seu aplicativo. 
+- `WSGI_LOG` é opcional, mas recomendado para depuração do seu aplicativo.
 
 Confira [Publicar no Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) para obter detalhes adicionais sobre conteúdos de *web.config* para aplicativos Web de Bottle, Flask e Django.
 

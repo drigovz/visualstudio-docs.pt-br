@@ -1,14 +1,9 @@
 ---
 title: Funções de snippet de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
 - snippets [Visual Studio], functions
@@ -17,27 +12,27 @@ ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3874b162719deb02813ceb7eae09b373e208f458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270875"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54790001"
 ---
 # <a name="code-snippet-functions"></a>Funções de snippet de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Há três funções disponíveis para uso com os snippets de código de [!INCLUDE[csprcs](../includes/csprcs-md.md)]. As funções são especificadas no elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) do snippet de código. Para obter informações sobre como criar snippets de código, consulte [Snippets de Código](../ide/code-snippets.md).  
+Há três funções disponíveis para uso com os snippets de código de [!INCLUDE[csprcs](../includes/csprcs-md.md)]. As funções são especificadas no elemento [Function](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) do snippet de código. Para obter informações sobre como criar snippets de código, consulte [Snippets de Código](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Funções  
  A tabela a seguir descreve as funções disponíveis para uso com o elemento `Function` em snippets de código.  
   
 |Função|Descrição|Idioma|  
 |--------------|-----------------|--------------|  
-|`GenerateSwitchCases(``EnumerationLiteral``)`|Gera uma instrução de opção e um conjunto de instruções de maiúsculas e minúsculas para os membros da enumeração especificada pelo parâmetro `EnumerationLiteral`. O parâmetro `EnumerationLiteral` deve ser uma referência a uma literal de enumeração ou a um tipo de enumeração.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Gera uma instrução de opção e um conjunto de instruções de maiúsculas e minúsculas para os membros da enumeração especificada pelo parâmetro `EnumerationLiteral`. O parâmetro `EnumerationLiteral` deve ser uma referência a uma literal de enumeração ou a um tipo de enumeração.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
 |`ClassName()`|Retorna o nome da classe que contém o snippet inserido.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
-|`SimpleTypeName(``TypeName``)`|Reduz o parâmetro *TypeName* para sua forma mais simples no contexto em que o snippet foi invocado.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
+|`SimpleTypeName(` `TypeName` `)`|Reduz o parâmetro *TypeName* para sua forma mais simples no contexto em que o snippet foi invocado.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra como usar a função `GenerateSwitchCases`. Quando este snippet for inserido e uma enumeração for inserida no literal `$switch_on$`, o literal `$cases$` gerará uma instrução `case` para cada valor na enumeração.  
@@ -159,8 +154,5 @@ Há três funções disponíveis para uso com os snippets de código de [!INCLUD
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Elemento de função (snippets de código do IntelliSense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Elemento de função (snippets de código do IntelliSense)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Referência de esquema dos snippets de código](../ide/code-snippets-schema-reference.md)
-
-
-

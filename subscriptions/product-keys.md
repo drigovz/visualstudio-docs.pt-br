@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900846"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953895"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -32,14 +30,14 @@ Se tiver solicitado todas as chaves do produto disponíveis na assinatura e tive
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versões comercial e de licenciamento por volume dos produtos
 As assinaturas do Visual Studio oferecem uma seleção de versões comerciais e de licenciamento por volume dos produtos da Microsoft. Alguns produtos estão disponíveis em Downloads somente na versão comercial ou somente na versão de licenciamento por volume, enquanto outros estão disponíveis nas duas versões. Geralmente, os produtos que exigem ativação, como o Windows, o Windows Server e os produtos de cliente Office, são oferecidos apenas na versão comercial por meio de Downloads.
 
-Os clientes de licenciamento por volume também podem baixar software no VSLC (Centro de Serviços de Licenciamento por Volume) para obter as versões de licenciamento por volume dos produtos (e as chaves do produto (Product Keys) correspondentes).  O acesso ao VLSC é gerenciado por administradores designados na organização do cliente.
+Os clientes do licenciamento por volume também podem baixar o software no VLSC (Centro de Serviços de Licenciamento por Volume) para obter versões do licenciamento por volume de produtos, bem como as chaves do produto (Product Keys) correspondentes.  O acesso ao VLSC é gerenciado por administradores designados na organização do cliente.
 
 ## <a name="daily-product-key-claim-limits"></a>Limites diários de solicitações de chaves do produto (Product Key)
 A Microsoft tem o compromisso de proteger a integridade do programa de assinaturas do Visual Studio e o valor do software e dos benefícios que os assinantes legítimos do programa recebem pelo investimento. Como apoio a esse compromisso, a Microsoft implementou limites diários de solicitações de chaves para as assinaturas do Visual Studio. Esses limites restringem o número de chaves que podem ser solicitadas por dia por assinatura.
 
 O limite diário de solicitação é de 10 chaves para todas as assinaturas do Visual Studio, incluindo aquelas oferecidas pelo MPN, BizSpark, MCT Software & Services e MCT, com a exceção do Visual Studio Professional (MPN), que tem um limite diário de solicitações de 7 chaves.
 
-Observação: os limites de solicitação de chaves estão sujeitos a alterações. Verifique aqui os limites atualizados.
+Observação: Os limites de solicitação de chave estão sujeitos a alterações. Verifique aqui os limites atualizados.
 
 Se você tiver solicitado o número máximo de chaves disponíveis para sua assinatura em um período de 24 horas, será exibida uma mensagem de erro informando que o limite foi atingido. O limite é reiniciado a cada 24 horas, começando às 00:01, Hora do Pacífico.
 
@@ -47,9 +45,9 @@ Nossa pesquisa mostra que o número de chaves do produto (Product Keys) incluíd
 
 ## <a name="locating-and-claiming-product-keys"></a>Localizando e solicitando chaves do produto (Product Keys)
 Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul [Obter Chave](https://my.visualstudio.com/downloads) de um produto específico na página **Downloads**, conforme mostrado abaixo.  Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Obter chave da página de downloads](_img/product-keys/download-get-key.png)
-    
+
 Alguns produtos incluem diversas edições do produto em um único download. Nesses casos, a chave do produto (Product Key) informada determina qual edição é instalada.
 Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”, que você pode usar sempre que necessário, uma vez que não é preciso fazer a ativação. Outras chaves devem ser solicitadas ao selecionar o link **Obter Chave** do produto.
 
@@ -106,10 +104,10 @@ Os assinantes do Visual Studio podem aumentar o número de usuários com acesso 
 Cinco chaves de cada tipo estão disponíveis para o Windows Server 2008 R2, sendo que cada chave comporta 20 conexões. Quatro chaves de cada tipo são fornecidas para o Windows Server 2012 R2, sendo que cada uma comporta 50 conexões.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Para habilitar as conexões adicionais no Windows Server:
-1.  Abra o Gerenciador de Servidores.
-2.  Abra a lista de Servidores no painel de navegação à esquerda.
-3.  Clique com o botão direito do mouse no servidor de licença e escolha “Instalar Licenças”.
-4.  Siga as etapas no assistente.  Ao selecionar o tipo de contrato, escolha “Pacote de Licença (comercial)” e insira a chave do produto (Product Key) obtida no portal do usuário.
+1. Abra o Gerenciador de Servidores.
+2. Abra a lista de Servidores no painel de navegação à esquerda.
+3. Clique com o botão direito do mouse no servidor de licença e escolha “Instalar Licenças”.
+4. Siga as etapas no assistente.  Ao selecionar o tipo de contrato, escolha “Pacote de Licença (comercial)” e insira a chave do produto (Product Key) obtida no portal do usuário.
 
 Se as seguintes condições forem atendidas, os usuários finais poderão conectar-se para acessar os aplicativos pelo RDS:
 - Os usuários devem ser anônimos (em estado não autenticado).

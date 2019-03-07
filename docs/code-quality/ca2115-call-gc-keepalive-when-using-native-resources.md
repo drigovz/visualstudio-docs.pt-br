@@ -1,8 +1,6 @@
 ---
-title: 'CA2115: chamar GC.KeepAlive durante o uso de recursos nativos'
+title: 'CA2115: Chamar GC.KeepAlive ao usar recursos nativos'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21777b19e488e60e68c11ccceaad779dcf4e94a3
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546987"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930981"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: chamar GC.KeepAlive durante o uso de recursos nativos
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Chamar GC.KeepAlive ao usar recursos nativos
 
 |||
 |-|-|

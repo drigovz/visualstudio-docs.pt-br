@@ -1,8 +1,6 @@
 ---
-title: 'Como: Iniciar e interromper a exibição de Log de mensagem | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Iniciar e parar a exibição do Log de mensagem | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message log display, starting
@@ -11,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 3036611c-acf3-42b6-b5d7-1a0c653f6af9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbb0a3eedd5060576c145b71d6c501a8b753b6c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c1ba10dbdb9227c6631048f083ee1857dfc3091d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481068"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712405"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Como iniciar e parar a exibição do log de mensagem
-Quando um [exibição de mensagens](../debugger/messages-view.md) janela está ativa, um **Iniciar registro** ou **parar log** escolha aparecerá no Spy + + **mensagens** menu e o correspondente **Iniciar registro** ou **parar log** botão da barra de ferramentas se torna ativa.  
-  
-### <a name="to-start-the-message-log-display"></a>Para iniciar a exibição de mensagem de log  
-  
-1.  Do **mensagens** menu, escolha **Iniciar registro**.  
-  
-### <a name="to-stop-the-message-log-display"></a>Para interromper a exibição de log de mensagem  
-  
-1.  Do **mensagens** menu, escolha **parar log**.
+Quando um [exibição de mensagens](../debugger/messages-view.md) janela está ativa, um **Iniciar registro em log** ou **parar log** opção é exibida sobre o Spy + + **mensagens** menu e o correspondente **Iniciar registro em log** ou **parar log** botão da barra de ferramentas se torna ativo.
+
+### <a name="to-start-the-message-log-display"></a>Para iniciar a exibição do log de mensagem
+
+1.  Dos **mensagens** menu, escolha **Iniciar registro**.
+
+### <a name="to-stop-the-message-log-display"></a>Para parar a exibição do log de mensagem
+
+1.  Dos **mensagens** menu, escolha **parar log**.

@@ -1,38 +1,35 @@
 ---
 title: Mensagens de erro (desenvolvimento do Office no Visual Studio)
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - error messages, Office development in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6f87f2bbdda39dd00cf2771d3764aea6ad89d0a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6f00597c7d0cd55deb3a8747f6d23c658d83c2e4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263271"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601069"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Mensagens de erro (desenvolvimento do Office no Visual Studio)
-  Cada tópico de mensagem de erro fornece informações sobre possíveis causas de um erro e possíveis soluções ou soluções alternativas para solucionar o problema.  
-  
- Você pode obter informações sobre uma mensagem de erro das seguintes maneiras.  
-  
-|Método|Descrição|  
-|-|-|  
-|F1|Se você receber um erro, você pode pressionar **F1**. Isso abrirá o tópico de mensagem de erro correspondente na documentação online.|  
-|Pesquisa de texto completo|Você pode usar a pesquisa de texto completo usando palavras da primeira frase no texto da mensagem de erro. Sobre o **ajuda** menu, clique em **pesquisa**.|  
-  
-## <a name="see-also"></a>Consulte também  
- [Desenvolvimento do Office e do SharePoint no Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)  
-  
-  
+  Cada tópico de mensagem de erro fornece informações sobre possíveis causas do erro e possíveis soluções ou soluções alternativas para solucionar o problema.
+
+ Você pode obter informações sobre uma mensagem de erro das seguintes maneiras.
+
+|Método|Descrição|
+|-|-|
+|F1|Se você receber um erro, você pode pressionar **F1**. Isso abrirá o tópico de mensagem de erro correspondente na documentação online.|
+|Pesquisa de texto completo|Você pode usar a pesquisa de texto completo usando palavras da primeira frase no texto da mensagem de erro. Sobre o **ajudar** menu, clique em **pesquisa**.|
+
+## <a name="see-also"></a>Consulte também
+- [Desenvolvimento do Office e SharePoint no Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)

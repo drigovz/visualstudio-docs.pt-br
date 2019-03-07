@@ -1,8 +1,6 @@
 ---
-title: 'CA1012: tipos abstratos não devem ter construtores'
+title: 'CA1012: Tipos abstratos não devem ter construtores'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AbstractTypesShouldNotHaveConstructors
@@ -12,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec69fc08375bb88287cfb89eb49e52fa45466e6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 182a0fc2b0d8947e6e77d557679d5ad92e5bb443
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550525"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929122"
 ---
-# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: tipos abstratos não devem ter construtores
+# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Tipos abstratos não devem ter construtores
 
 |||
 |-|-|

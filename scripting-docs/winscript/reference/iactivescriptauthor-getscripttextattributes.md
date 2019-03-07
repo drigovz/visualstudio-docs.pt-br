@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa96623b4356f0a3d17c8b2631840953dac2d51
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 57513e51248e26e39f95871e0dad329e8cc2f82c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645516"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094699"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
 Retorna os atributos de texto para um bloco de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp
 HRESULT GetScriptTextAttributes(  
     LPCOLESTR        pszCode,  
     ULONG            cch,  
@@ -48,19 +48,19 @@ HRESULT GetScriptTextAttributes(
  [in] O tamanho usado para o `pszCode` e `pattr` parâmetros.  
   
  `pszDelimiter`  
- [in] O endereço do delimitador final do script. Quando `pszCode` é analisada em um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples), para detectar o fim do miniscript. Defina esse parâmetro como NULL se não houver nenhum delimitador para identificar o fim do bloco de script.  
+ [in] O endereço do delimitador de fim do script. Quando `pszCode` é analisado de um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples), para detectar o final do scriptlet. Defina esse parâmetro como NULL se não houver nenhum delimitador para identificar o fim do bloco de script.  
   
  `dwFlags`  
  [in] Os sinalizadores que estão associados com os atributos de texto do bloco de script. Pode ser uma combinação dos seguintes valores:  
   
 |Constante|Valor|Descrição|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Identificar os identificadores que têm o atributo SOURCETEXT_ATTR_IDENTIFIER e identificar os operadores de ponto que têm o atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Identificar os identificadores que têm o atributo SOURCETEXT_ATTR_IDENTIFIER e identificar os operadores dot que têm o atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Identificar o objeto atual que tem o atributo SOURCETEXT_ATTR_THIS.|  
 |GETATTRFLAG_HUMANTEXT|0x8000|Identifique o texto de comentário e conteúdo de cadeia de caracteres que tem o atributo SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [out no, size_is (`cch`)] as informações de cor para o código do bloco de script.  
+ [em, k-out, size_is (`cch`)] as informações de cores para o código do bloco de script.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
