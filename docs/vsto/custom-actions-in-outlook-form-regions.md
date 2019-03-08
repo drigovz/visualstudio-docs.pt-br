@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638030"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567177"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Personalizar ações em regiões de formulário do Outlook
   Ações de exibem botões que permitem que os usuários respondam a um item do Microsoft Office Outlook. Por exemplo, para responder a um item de email, os usuários clicam a **resposta**, **responder a todos**, ou **Forward** botões de ação. Cada uma dessas ações cria um novo item de email e preenche os campos do item com o uso de informações do item original.
@@ -28,7 +28,7 @@ ms.locfileid: "56638030"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Adicionar ações personalizadas para uma região de formulário
- Para adicionar uma ação personalizada para uma região de formulário, use o **ações personalizadas** caixa de diálogo. Você pode abrir o **Custom Actions** da caixa de diálogo **Gerenciador de soluções** , expandindo o **manifesto** nó, selecionando o **CustomActions**propriedade e, em seguida, clicar no botão de reticências (![elipse designer móvel do ASP.NET](../sharepoint/media/mwellipsis.gif "elipse do Designer de dispositivo móvel do ASP.NET")).
+ Para adicionar uma ação personalizada para uma região de formulário, use o **ações personalizadas** caixa de diálogo. Você pode abrir o **Custom Actions** caixa de diálogo, selecionando a região do formulário no **Gerenciador de soluções**, expandindo o **manifesto** nó no **propriedades Janela**, selecionando os **CustomActions** propriedade e, em seguida, clicando no botão de reticências (![elipse de designer móvel ASP.NET](../sharepoint/media/mwellipsis.gif "ASP.NET para dispositivos móveis Elipse de Designer")).
 
  Você pode usar o **Custom Actions** caixa de diálogo para especificar um *formulário de destino*. Um formulário de destino é o formulário que aparece quando o usuário executa a ação personalizada.
 

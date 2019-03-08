@@ -155,7 +155,7 @@ JavaScript</a>
                                                 <h3>Criar um aplicativo</h3>
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                        <a class="barLink" href="/visualstudio/get-started/csharp/tutorial-uwp">
                                                             <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Windows logo">
 Aplicativo universal do Windows</a>
                                                     </li>
@@ -170,8 +170,7 @@ Aplicativo da área de trabalho do Windows</a>
 Aplicativo móvel</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
-                ">
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity">
                                                             <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="Unity logo">
 Jogo do Unity</a>
                                                     </li>
