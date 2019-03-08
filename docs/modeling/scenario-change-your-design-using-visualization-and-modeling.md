@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f320c992f3bb82ee29829d8d0a8dccc230ee6eb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41ca66c796b352113973dcf8d8158f385f49a8ec
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951599"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567364"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: Alterar o design usando visualização e modelagem
 
@@ -172,7 +172,7 @@ O dinner Now deve estimar o custo de atender o requisito de novo. Isso depende e
 
 |**Diagrama**|**Descreve**|
 |-|-|
-|*Diagrama de dependência*<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de dependência organiza e mapeia os artefatos em uma solução do Visual Studio para grupos abstratos chamados *camadas*. Essas camadas identificam as funções, tarefas ou funções que esses artefatos executam no sistema.<br /><br /> Diagramas de camada são úteis para descrever o design pretendido do sistema e validação de código em evolução em relação a esse design.<br /><br /> Para criar camadas, arraste itens do Gerenciador de soluções, mapas de código, modo de exibição de classe e Pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com botão direito na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com botão direito na superfície do diagrama de camada e, em seguida, clique em **gerar dependências**. Para especificar dependências destinadas, desenhe novas dependências.|
+|*Diagrama de dependência*<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de dependência organiza e mapeia os artefatos em uma solução do Visual Studio para grupos abstratos chamados *camadas*. Essas camadas identificam as funções, tarefas ou funções que esses artefatos executam no sistema.<br /><br /> Diagramas de camada são úteis para descrever o design pretendido do sistema e validação de código em evolução em relação a esse design.<br /><br /> Para criar camadas, arraste itens do Gerenciador de soluções, mapas de código, modo de exibição de classe e Pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com botão direito na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com botão direito na superfície do diagrama de camada e, em seguida, clique em **gerar dependências**. Para especificar dependências destinadas, desenhe novas dependências.|
 
  Por exemplo, o diagrama de dependência a seguir descreve as dependências entre camadas e o número de artefatos que estão associados a cada camada:
 
@@ -214,7 +214,7 @@ Como seu trabalho progride, as equipes atualizam seus itens de trabalho para ref
 
 Consulte:
 
-- [Sobre as ferramentas do Agile e gerenciamento de projeto Agile](/azure/devops/boards/backlogs/overview?view=vsts)
+- [Sobre as ferramentas do Agile e gerenciamento de projeto Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [Gráficos, painéis e widgets (serviços de DevOps do Azure)](/azure/devops/report/dashboards/overview?view=vsts)
 
@@ -329,7 +329,7 @@ Este mapa mostra que a classe PaymentApprover agora está no espaço DinnerNow B
 
 |**Diagrama**|**Descreve**|
 |-|-|
-|Diagrama de dependência|A arquitetura lógica do sistema. Use a validação de dependência para certificar-se de que o código permaneça consistente com o design.<br /><br /> Para ajudá-lo a identificar dependencys existentes ou dependencys pretendidos, crie um mapa de código e agrupar itens relacionados. Para criar um diagrama de dependência, consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)|
+|Diagrama de dependência|A arquitetura lógica do sistema. Use a validação de dependência para certificar-se de que o código permaneça consistente com o design.<br /><br /> Para ajudá-lo a identificar dependencys existentes ou dependencys pretendidos, crie um mapa de código e agrupar itens relacionados. Para criar um diagrama de dependência, consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de classe (baseado em código)|Classes existentes no código para um projeto específico.<br /><br /> Para visualizar e modificar uma classe existente no código, use o Designer de classe.<br /><br /> Confira [Como Adicionar diagramas de classe a projetos (Designer de classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Defina um glossário de tipos: Diagramas de classe
@@ -398,7 +398,7 @@ Como ponto de partida para explorar e discutir as classes existentes, você pode
 
 |**Diagrama**|**Descrição**|
 |-|-|
-|Diagrama de dependência|Defina a arquitetura lógica do sistema no que diz respeito às classes.<br /><br /> Use a validação de dependência para certificar-se de que o código permaneça consistente com o design.<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
+|Diagrama de dependência|Defina a arquitetura lógica do sistema no que diz respeito às classes.<br /><br /> Use a validação de dependência para certificar-se de que o código permaneça consistente com o design.<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapa de código|Visualize a organização e os relacionamentos no código existente.<br /><br /> Para identificar classes, seus relacionamentos e seus métodos, crie um mapa de códigos que mostre esses elementos.<br /><br /> Consulte:<br /><br /> - [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a> Descreve a arquitetura lógica: diagramas de dependência
@@ -454,9 +454,9 @@ Consulte:
 
 - [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
 
-- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 
-- [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
 
 - [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
 
