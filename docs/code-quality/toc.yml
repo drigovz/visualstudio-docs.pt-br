@@ -153,7 +153,7 @@ items:
   - name: Avisos de análise de código para código gerenciado
     href: code-analysis-for-managed-code-warnings.md
     items:
-    - name: Avisos da análise de código para código gerenciado por CheckId
+    - name: Avisos da Análise de Código para código gerenciado por CheckId
       href: code-analysis-warnings-for-managed-code-by-checkid.md
     - name: Avisos de criptografia
       href: cryptography-warnings.md
@@ -479,6 +479,8 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: 'CA2006: Usar SafeHandle para encapsular recursos nativos'
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+      - name: 'CA2007: não aguardar diretamente uma tarefa'
+        href: ca2007-do-not-directly-await-task.md
     - name: Avisos de segurança
       href: security-warnings.md
       items:
@@ -828,7 +830,7 @@ items:
       href: C26497.md
     - name: C26498
       href: C26498.md
-  - name: Análise de código para avisos do C/C++
+  - name: Análise de código para avisos de C/C++
     href: code-analysis-for-c-cpp-warnings.md
     items:
     - name: C1250
@@ -1468,9 +1470,9 @@ items:
       href: ca0505.md
     - name: Erros (FxCopCmd)
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835144"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699662"
