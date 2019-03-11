@@ -116,6 +116,8 @@ items:
       items:
       - name: Aplicar edições no modo de interrupção com Editar e Continuar
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: Gravar e depurar executando código XAML
+      href: xaml-edit-and-continue.md
     - name: Não há suporte para Editar e Continuar em F#
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: Exibir dados do depurador
@@ -417,9 +419,9 @@ items:
       - name: 'Preparação de depuração: Tipos de projeto C#, F# e Visual Basic'
         href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
         items:
-        - name: 'Depuração gerenciada: Configurações de propriedade recomendadas'
+        - name: 'Depuração gerenciada: configurações de propriedade recomendadas'
           href: managed-debugging-recommended-property-settings.md
-        - name: 'Preparação de depuração: Aplicativos Windows Forms'
+        - name: 'Preparação de depuração: aplicativos do Windows Forms'
           href: debugging-preparation-windows-forms-applications.md
         - name: 'Preparação de depuração: Serviços Windows'
           href: debugging-preparation-windows-services.md
@@ -841,9 +843,9 @@ items:
   items:
   - name: Novidades do depurador no Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335461"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699649"
