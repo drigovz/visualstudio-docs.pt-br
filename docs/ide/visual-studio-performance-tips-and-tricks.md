@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318765"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222981"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
 As recomendações de desempenho do Visual Studio destinam-se a situações de baixa memória, o que podem ocorrer em casos raros. Nessas situações, é possível otimizar determinados recursos do Visual Studio que você talvez não esteja usando. As dicas a seguir não devem ser consideradas como as recomendações gerais.
 
 > [!NOTE]
-> Se você estiver tendo dificuldades para usar o produto devido a problemas de memória, conte para nós pela [ferramenta de comentários](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+> Se você estiver tendo dificuldades para usar o produto devido a problemas de memória, conte para nós pela [ferramenta de comentários](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Usar um sistema operacional de 64 bits
 
@@ -41,9 +41,9 @@ Caso você desabilite a restauração automática de arquivos, uma maneira rápi
 
 - Para a funcionalidade **Ir para** general, selecione **Editar** > **Ir para** > **Ir para Todos** ou pressione **Ctrl**+**T**.
 
-- No Visual Studio 2017 versão 15.8 e posterior, você pode pular para o local da última edição em uma solução usando **Editar** > **Ir para** > **Ir para Local da Última Edição** ou pressionando **Ctrl**+**Shift**+**Backspace**.
+- Vá para a localização da última edição em uma solução usando **Editar** > **Ir para** > **Ir para Localização da Última Edição** ou pressionando **Ctrl**+**Shift**+**Backspace**.
 
-- No Visual Studio 2017 versão 15.8 e posteriores, use **Ir para Arquivo Recente** para ver uma lista de arquivos visitados recentemente em uma solução. Selecione **Editar** > **Ir para** > **Ir para Arquivo Recente** ou pressione **Ctrl**+**1**, **Ctrl**+**R**.
+- Use **Ir Para Arquivo Recente** para ver uma lista dos arquivos visitados recentemente em uma solução. Selecione **Editar** > **Ir para** > **Ir para Arquivo Recente** ou pressione **Ctrl**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configurar as opções de depuração
 

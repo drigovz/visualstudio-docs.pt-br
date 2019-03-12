@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946050"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222851"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permissões de usuário e o Visual Studio
 
@@ -50,11 +50,25 @@ Se você precisar executar o Visual Studio como administrador, siga estas etapas
 > [!NOTE]
 > Estas instruções referem-se ao Windows 10. Elas são semelhantes para outras versões do Windows.
 
+::: moniker range="vs-2017"
+
 1. Abra o menu **Iniciar** e role até o Visual Studio 2017.
 
-1. No menu de contexto ou clicando com o botão direito do **Visual Studio 2017**, selecione **Mais** > **Executar como administrador**.
+1. No menu de contexto ou de atalho do **Visual Studio 2017**, selecione **Mais** > **Executar como administrador**.
 
    Quando o Visual Studio for iniciado, **(Administrador)** será exibido após o nome do produto na barra de título.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o menu **Iniciar** e role a página até o Visual Studio 2019.
+
+1. No menu de contexto ou de atalho do **Visual Studio 2019**, selecione **Mais** > **Executar como administrador**.
+
+   Quando o Visual Studio for iniciado, **(Administrador)** será exibido após o nome do produto na barra de título.
+
+::: moniker-end
 
 Você também pode modificar o atalho do aplicativo para sempre ser executado com permissões administrativas.
 

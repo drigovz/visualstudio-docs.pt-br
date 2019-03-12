@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923363"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223124"
 ---
 # <a name="code-style-preferences"></a>Preferências de estilo de código
 
@@ -38,11 +38,11 @@ As configurações de estilo de código para o .NET também podem ser gerenciada
 
 ## <a name="format-document-command"></a>Comando Formatar Documento
 
-No Visual Studio 2017 versão 15.8 e posteriores, você pode configurar o comando **Formatar Documento** (**Editar** > **Avançado** > **Formatar Documento**) para executar uma limpeza de código adicional em um arquivo, como remover e classificar usings ou aplicar preferências de estilo de código. Você pode definir quais configurações deseja que **Formatar Documento** aplique na [página Opções de formatação](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Configure o comando **Formatar Documento** (**Editar** > **Avançado** > **Formatar Documento**) para executar uma limpeza de código adicional em um arquivo, como remover e classificar instruções using ou aplicar preferências de estilo de código. Você pode definir quais configurações deseja que **Formatar Documento** aplique na [página Opções de formatação](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 A limpeza de código respeita as configurações definidas em um arquivo *.editorconfig* ou a falta dessa regra ou arquivo, conforme a definição em **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > [**Estilos de Código** ou **Formatação**].
 
-Na primeira vez que você disparar o comando **Formatar Documento** no Visual Studio 2017, uma barra amarela de informações solicitará que você defina as configurações de limpeza de código.
+Na primeira vez que você dispara o comando **Formatar Documento** no Visual Studio, uma barra amarela de informações solicita que você defina as configurações de limpeza de código.
 
 > [!TIP]
 > As regras configuradas como **none** em um arquivo *.editorconfig* não participam da limpeza de código, mas podem ser aplicadas individualmente por meio do menu **Ações Rápidas e Refatorações**.

@@ -8,18 +8,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920022"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428655"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
 Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio, faremos um tour em algumas janelas, menus e em outros recursos de interface do usuário.
 
 Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Janela de início
+
+A primeira coisa que você verá depois de iniciar o Visual Studio é a janela de início. A janela de início foi projetada para ajudar você a "acessar o código" mais rapidamente. Ela tem opções para fechar o código ou fazer check-out dele, abrir um projeto ou uma solução existente, criar um projeto ou simplesmente abrir uma pasta que contenha alguns arquivos de código.
+
+[![](media/vs-2019/start-window.png "Janela de início no Visual Studio 2019")](media/vs-2019/start-window.png)
+
+Se essa for a primeira vez que você estiver usando o Visual Studio, sua lista de projetos recentes estará vazia.
+
+Se você trabalhar com bases de código não baseadas no MSBuild, você usará a opção **Abrir uma pasta local** para abrir o código no Visual Studio. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](develop-javascript-code-without-solutions-projects.md). Caso contrário, você poderá criar um projeto ou clonar um projeto de um provedor de origem como o GitHub ou o Azure DevOps.
+
+A opção **Continuar sem código** apenas abre o ambiente de desenvolvimento do Visual Studio sem nenhum projeto ou código específico carregado. Escolha essa opção para ingressar em uma sessão do [Live Share](/visualstudio/liveshare/) ou anexar a um processo para depuração. Pressione também **Esc** para fechar a janela de início e abrir o IDE.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>Start Page
 
@@ -31,9 +49,27 @@ Se você fechar a **Página Inicial** e desejar vê-la novamente, será possíve
 
 ![Menu Arquivo no Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
 ## <a name="create-a-project"></a>Criar um projeto
 
 Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
+
+::: moniker range=">=vs-2019"
+
+1. Na **Janela de Início**, selecione **Criar um projeto** e, em seguida, na caixa de pesquisa, digite **javascript** para filtrar da lista de tipos de projeto para aqueles que contenham "javascript" no nome ou no tipo de linguagem.
+
+   O Visual Studio fornece vários tipos de modelos de projeto que ajudam você a começar a codificar rapidamente. (Como alternativa, se você for um desenvolvedor do TypeScript, fique à vontade criar um projeto nessa linguagem. A interface do usuário que veremos é semelhante em todas as linguagens de programação.)
+
+   ![Pesquisar modelos de projeto na janela de início do Visual Studio](media/vs-2019/create-new-project.png)
+
+1. Escolha um modelo de projeto **Aplicativo Web do Node.js em Branco** e clique em **Avançar**. 
+
+1. Na caixa de diálogo **Configurar o novo projeto** exibida, aceite o nome de projeto padrão e escolha **Criar**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 1. Na **Página Inicial**, na caixa de pesquisa de **Novo projeto**, digite **javascript** para filtrar da lista de tipos de projeto aqueles que contêm "javascript" no nome ou tipo de linguagem.
 
@@ -42,6 +78,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
    O Visual Studio fornece vários tipos de modelos de projeto que ajudam você a começar a codificar rapidamente. Escolha um modelo de projeto de **Aplicativo Web do Node.js em branco**. (Como alternativa, se você for um desenvolvedor do TypeScript, fique à vontade criar um projeto nessa linguagem. A interface do usuário que veremos é semelhante em todas as linguagens de programação.)
 
 1. Na caixa de diálogo **Novo Projeto** exibida, aceite o nome de projeto padrão e escolha **OK**.
+::: moniker-end
 
    O projeto é criado e um arquivo chamado *server.cs* é aberto na janela **Editor**. O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
 

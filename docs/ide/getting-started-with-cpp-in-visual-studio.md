@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796641"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222513"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
@@ -26,7 +26,17 @@ Complete este guia de início rápido para se familiarizar com várias ferrament
 
 Você não precisa estar familiarizado com C++ para concluir este guia de início rápido, mas precisa conhecer um pouco de programação geral e de conceitos de depuração. A documentação do Visual Studio não ensina como programar em C++. Um bom guia para os recursos de aprendizagem de C++ é a página [Introdução](https://isocpp.org/get-started) no site de C++ da ISO.
 
-Para acompanhar, você precisará de uma cópia do Visual Studio 2017 versão 15.3 ou posterior, com a carga de trabalho **Desenvolvimento para a área de trabalho com C++** instalada. Para obter um guia rápido de instalação, consulte [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Suporte para a instalação de C++ no Visual Studio).
+::: moniker range="vs-2017"
+
+Para acompanhar, você precisará de uma cópia do Visual Studio 2017 com a carga de trabalho **Desenvolvimento para desktop com C++** instalada. Para obter um guia rápido de instalação, consulte [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Suporte para a instalação de C++ no Visual Studio).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para acompanhar, você precisará de uma cópia do Visual Studio 2019 com a carga de trabalho **Desenvolvimento para desktop com C++** instalada. Para obter um guia rápido de instalação, consulte [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Suporte para a instalação de C++ no Visual Studio).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>Criar um aplicativo do console
 

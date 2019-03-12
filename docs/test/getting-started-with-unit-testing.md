@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927978"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223514"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -74,7 +74,7 @@ Você também pode criar stubs de método de teste de unidade com o[comando](cre
 Se estiver usando a estrutura de teste do MSTest, do xUnit ou do NUnit no Visual Studio de 2017 ou posterior, você poderá ver os resultados em tempo real de seus testes de unidade.
 
 > [!NOTE]
-> O Live Unit Testing está disponível somente no Visual Studio 2017 Enterprise Edition.
+> O Live Unit Testing está disponível somente no Visual Studio Enterprise Edition.
 
 1. Ative o teste de unidade em tempo real no menu **Teste**.
 

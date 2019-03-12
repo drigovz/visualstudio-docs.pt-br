@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937442"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323728"
 ---
 # <a name="find-and-replace-text"></a>Localizar e substituir texto
 
-Localize e substitua um texto no editor do Visual Studio usando [Localizar e Substituir](#find-and-replace-control) ou [Localizar/Substituir em Arquivos](#find-in-files-and-replace-in-files). Novo no Visual Studio 2017 versão 15.8, você pode localizar e substituir *algumas* instâncias de um padrão usando a *[seleção de vários cursores](#multi-caret-selection)*.
+Localize e substitua um texto no editor do Visual Studio usando [Localizar e Substituir](#find-and-replace-control) (**Ctrl**+**F** ou **Ctrl**+**H**) ou [Localizar/Substituir em Arquivos](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F** ou **Ctrl**+**Shift**+**H**). Localize e substitua também apenas *algumas* instâncias de um padrão usando a *[seleção de vários sinais de interpolação](#multi-caret-selection)*.
 
 > [!TIP]
 > Se você está renomeando os símbolos de código, como variáveis e métodos, é melhor *[refatorá-los](../ide/reference/rename.md)* em vez de usar o recurso Localizar e Substituir. A refatoração é inteligente e reconhece o escopo, enquanto o recurso Localizar e Substituir substitui cegamente todas as instâncias.
@@ -53,7 +53,10 @@ A funcionalidade Localizar e Substituir está disponível no editor, em algumas 
 
 ## <a name="find-and-replace-control"></a>Controle Localizar e Substituir
 
-O controle **Localizar e Substituir** aparece no canto superior direito da janela do editor de código. O controle **Localizar e Substituir** realça imediatamente todas as ocorrências da cadeia de caracteres de pesquisa fornecida no documento atual. Você pode navegar de uma ocorrência para outra escolhendo o botão **Localizar próximo** ou o botão **Localizar anterior** no controle de pesquisa.
+- Pressione **Ctrl**+**F** como um atalho para *localizar* uma cadeia de caracteres no arquivo atual.
+- Pressione **Ctrl**+**H** como um atalho para *localizar e substituir* uma cadeia de caracteres no arquivo atual.
+
+O controle **Localizar e Substituir** aparece no canto superior direito da janela do editor de código. Ele realça imediatamente todas as ocorrências da cadeia de caracteres de pesquisa fornecida no documento atual. Você pode navegar de uma ocorrência para outra escolhendo o botão **Localizar próximo** ou o botão **Localizar anterior** no controle de pesquisa.
 
 ![Localizar e Substituir no Visual Studio](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ Uma versão do controle **Localizar** também está disponível em algumas janel
 
 ## <a name="find-in-files-and-replace-in-files"></a>Localizar nos arquivos e substituir nos arquivos
 
-**Localizar/substituir em Arquivos** funciona como o controle **Localizar e Substituir**, mas você pode definir um escopo para a pesquisa. Você pode pesquisar não apenas o arquivo atual aberto no editor, mas também todos os documentos abertos, toda a solução, o projeto atual e conjuntos de pastas selecionados. Você também pode pesquisar por extensão de nome de arquivo. Para acessar a caixa de diálogo **Localizar/Substituir em Arquivos**, selecione **Localizar e Substituir** no menu **Editar** ou pressione **Ctrl+Shift+F**.
+- Pressione **Ctrl**+**Shift**+**F** como um atalho para *localizar* uma cadeia de caracteres em vários arquivos.
+- Pressione **Ctrl**+**Shift**+**H** como um atalho para *localizar e substituir* uma cadeia de caracteres em vários arquivos.
+
+**Localizar/substituir em Arquivos** funciona como o controle **Localizar e Substituir**, mas você pode definir um escopo para a pesquisa. Você pode pesquisar não apenas o arquivo atual aberto no editor, mas também todos os documentos abertos, toda a solução, o projeto atual e conjuntos de pastas selecionados. Você também pode pesquisar por extensão de nome de arquivo. Para acessar a caixa de diálogo **Localizar/Substituir em Arquivos**, selecione **Localizar e Substituir** no menu **Editar** (ou pressione **Ctrl**+**Shift**+**F**).
 
 ![Localizar em Arquivos no Visual Studio](media/find-in-files-box.png)
 
@@ -93,7 +99,7 @@ Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo
 > [!NOTE]
 > Esta seção aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Seleção de bloco](/visualstudio/mac/block-selection).
 
-**Novo no Visual Studio 2017 versão 15.8**
+**Introduzido no Visual Studio 2017 versão 15.8**
 
 Use a *seleção de vários cursores* para fazer a mesma edição em dois ou mais locais ao mesmo tempo. Por exemplo, você pode inserir o mesmo texto ou modificar o texto existente em vários locais ao mesmo tempo.
 

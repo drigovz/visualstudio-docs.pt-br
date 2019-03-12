@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98c93f193a17c8581694079ce0c9d7add0341bd1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925976"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324215"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Passo a passo: Criar um ambiente de build de vários computadores
 
@@ -43,7 +43,7 @@ O ambiente de vários computadores não pode ser usado para compilar estes tipos
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- O Visual Studio com a carga de trabalho instalada para **desenvolvimento de área de trabalho .NET**.
+O Visual Studio com a carga de trabalho instalada para **desenvolvimento de área de trabalho .NET**.
 
 ## <a name="install-software-on-the-computers"></a>Instalar o software nos computadores
 
@@ -59,13 +59,13 @@ Ao instalar o Visual Studio no computador host, você pode criar os arquivos e a
 
 Esta seção aborda a cópia de arquivos específicos, compiladores, ferramentas de build, ativos do MSBuild e configurações do Registro do computador host para o computador de build. Estas instruções pressupõem que você instalou o Visual Studio no local padrão no computador host; se você tiver instalado-o em outro local, ajuste as etapas apropriadamente.
 
-- Em um computador x86, a localização padrão é *C:\Program Files\Microsoft Visual Studio 11.0*
-- Em um computador x64, a localização padrão é *C:\Program Files (x86)\Microsoft Visual Studio 11.0*
+- Em um computador x86, a localização padrão é *C:\Arquivos de Programas\Microsoft Visual Studio*
+- Em um computador x64, a localização padrão é *C:\Arquivos de Programas (x86)\Microsoft Visual Studio*
 
 Observe que o nome da pasta *Arquivos de Programa* depende do sistema operacional instalado. Em um computador x86, o nome é *Arquivos de Programa*; em um computador x64, o nome é *Arquivos de Programa (x86)*. Independentemente da arquitetura do sistema, este passo a passo refere-se à pasta *Arquivos de Programa* como *%ProgramFiles%*.
 
 > [!NOTE]
-> No computador de build, todos os arquivos relevantes devem estar na mesma unidade; no entanto, a letra da unidade pode ser diferente da letra da unidade em que o Visual Studio está instalado no computador host. Em qualquer caso, você deve considerar o local dos arquivos ao criar entradas de Registro conforme descrito mais adiante neste documento.
+> No computador de build, todos os arquivos relevantes precisam estar na mesma unidade. No entanto, a letra da unidade para essa unidade pode ser diferente da letra da unidade para a unidade na qual o Visual Studio está instalado no computador host. Em qualquer caso, você deve considerar o local dos arquivos ao criar entradas de Registro conforme descrito mais adiante neste documento.
 
 ### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Copiar os arquivos do SDK do Windows para o computador de build
 
@@ -85,7 +85,7 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
    - %ProgramFiles%\Windows Kits\8.0\References\
 
-     Se você também tiver estes outros kits do Windows 8...
+   Se você também tiver estes outros kits do Windows 8...
 
    - Kit de Avaliação e Implantação do Microsoft Windows
 
@@ -93,7 +93,7 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
    - Kit de Certificação de Hardware do Microsoft Windows
 
-     ... eles poderão ter instalado arquivos nas pastas *%ProgramFiles%\Windows Kits\8.0* listadas na etapa anterior, e os termos de licença poderão não permitir direitos de servidor de build para esses arquivos. Verifique os termos de licença para cada kit do Windows instalado para determinar se os arquivos podem ser copiados para o computador de build. Se os termos de licença não permitirem direitos de servidor de build, remova os arquivos do computador de build.
+   ... eles poderão ter instalado arquivos nas pastas *%ProgramFiles%\Windows Kits\8.0* listadas na etapa anterior, e os termos de licença poderão não permitir direitos de servidor de build para esses arquivos. Verifique os termos de licença para cada kit do Windows instalado para determinar se os arquivos podem ser copiados para o computador de build. Se os termos de licença não permitirem direitos de servidor de build, remova os arquivos do computador de build.
 
 2. Copie as seguintes pastas recursivamente do computador host para o computador de build:
 
@@ -101,11 +101,11 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
     - %ProgramFiles%\Common Files\Merge Modules\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\VC\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\ProjectComponents\
 
-    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\
+    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
     - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\
 
@@ -113,23 +113,23 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
 3. Copie estes arquivos do computador host para o computador de build:
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\msobj110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\mspdb110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\mspdbcore.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\mspdbsrv.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\makehm.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\vsvars32.bat
 
-4. As seguintes bibliotecas de tempo de execução do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Normalmente, os arquivos estão localizados em subpastas na pasta *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* ou *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64*, dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta *Windows\System32*\. Em sistemas x64, copie os binários x86 para a pasta *Windows\SysWOW64* e os binários x64 para a *Windows\System32*.
+4. As seguintes bibliotecas de tempo de execução do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Normalmente, os arquivos estão localizados em subpastas na pasta *%ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\redist\x86* ou na pasta *%ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\redist\x64*, dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta *Windows\System32*\. Em sistemas x64, copie os binários x86 para a pasta *Windows\SysWOW64* e os binários x64 para a *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -254,7 +254,7 @@ Para usar o MSBuild no computador de build, é preciso definir as variáveis de 
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Usar vcvarsall.bat para definir variáveis de ambiente
 
-Abra uma janela do **Prompt de Comando** no computador de build e execute *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*. Você pode usar um argumento de linha de comando para especificar o conjunto de ferramentas que você deseja usar: x86, x64 nativo ou x64 de compilador cruzado. Se você não especificar um argumento de linha de comando, o conjunto de ferramentas x86 será usado.
+Abra uma janela do **Prompt de Comando** no computador de build e execute *%Program Files%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\vcvarsall.bat*. Você pode usar um argumento de linha de comando para especificar o conjunto de ferramentas que você deseja usar: x86, x64 nativo ou x64 de compilador cruzado. Se você não especificar um argumento de linha de comando, o conjunto de ferramentas x86 será usado.
 
 Esta tabela descreve os argumentos compatíveis com *vcvarsall.bat*:
 
@@ -270,7 +270,7 @@ Se *vcvarsall.bat* for executado com êxito – ou seja, nenhuma mensagem de err
 
 1. Para configurar manualmente o ambiente de linha de comando, adicione este caminho à variável de ambiente PATH:
 
-    - %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE
+    - %Program Files%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE
 
 2. Opcionalmente, você também pode adicionar os seguintes caminhos à variável PATH para tornar mais fácil usar o MSBuild para compilar suas soluções.
 
@@ -294,9 +294,9 @@ O MSBuild requer que alguns assemblies adicionais sejam instalados no GAC do com
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
 2. Para instalar os assemblies no GAC, localize *gacutil.exe* no computador de build; normalmente, ele está em %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Se você não conseguir localizar essa pasta, repita as etapas na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) deste passo a passo.
 
@@ -364,7 +364,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
     <VCTargetsPath11>$(DepotRoot)MSBuild\Microsoft.Cpp\v4.0\v110\</VCTargetsPath11>
     <MSBuildExtensionsPath>$(DepotRoot)MSBuild</MSBuildExtensionsPath>
     <MSBuildExtensionsPath32>$(DepotRoot)MSBuild</MSBuildExtensionsPath32>
-    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio 11.0\VC\</VCInstallDir_110>
+    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio\2017\Enterprise\VC\</VCInstallDir_110>
     <VCInstallDir>$(VCInstallDir_110)</VCInstallDir>
     <WindowsKitRoot>$(DepotRoot)Windows Kits\</WindowsKitRoot>
     <WindowsSDK80Path>$(WindowsKitRoot)</WindowsSDK80Path>
@@ -381,13 +381,29 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>
     ```
 
+::: moniker range="vs-2017"
+
 6. Altere o ambiente da linha de comando da seguinte maneira:
 
     - Defina Depot=*localização do diretório Depósito criado na etapa 1*
 
     - Definir path=%path%;*localização do MSBuild no computador*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
-       Para compilação de 64 bits nativa, aponte para o MSBuild de 64 bits.
+       Para a compilação nativa de 64 bits, aponte para a versão de 64 bits do MSBuild.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. Altere o ambiente da linha de comando da seguinte maneira:
+
+    - Defina Depot=*localização do diretório Depósito criado na etapa 1*
+
+    - Defina path=%path%;*localização do MSBuild no computador*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+
+       Para a compilação nativa de 64 bits, aponte para a versão de 64 bits do MSBuild.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Consulte também
 
