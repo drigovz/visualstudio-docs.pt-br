@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ac40b3ae84aad689df9884ad8453860f91d971
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919710"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223735"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Como: Adicionar diagramas de classe a projetos
 
@@ -26,7 +26,7 @@ Não é possível criar diagramas de classes a partir de projetos que compartilh
 
 ## <a name="install-the-class-designer-component"></a>Instalar o componente do Designer de Classe
 
-Se você estiver executando o Visual Studio de 2017 e não tiver instalado o componente do **Designer de Classe**, siga estas etapas para instalá-lo.
+Se você não tiver instalado o componente do **Designer de Classe**, siga estas etapas para instalá-lo.
 
 1. Abra o **Instalador do Visual Studio** no menu Iniciar do Windows ou selecionando **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus no Visual Studio.
 

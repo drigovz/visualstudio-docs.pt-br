@@ -1,6 +1,5 @@
 ---
-title: Funcionalidades avançadas do Visual Studio 2017
-titleSuffix: ''
+title: Recursos avançados
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: gewarren
@@ -8,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317829"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221769"
 ---
-# <a name="features-of-visual-studio-2017"></a>Funcionalidades do Visual Studio 2017
+# <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
 O artigo [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md) fornece uma introdução básica ao Visual Studio. Este artigo descreve os recursos que podem ser mais apropriados para desenvolvedores experientes ou aqueles que já estão familiarizados com o Visual Studio.
 
@@ -23,9 +22,19 @@ O artigo [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide
 
 O instalador modular do Visual Studio permite que você escolha e instale *cargas de trabalho*. As cargas de trabalho são grupos de recursos necessários para a linguagem de programação ou a plataforma de sua preferência. Essa estratégia ajuda a manter a superfície de instalação do Visual Studio menor, o que significa que ele é instalado e atualizado mais rapidamente também.
 
-Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+::: moniker range="vs-2017"
 
-Para saber mais sobre como configurar o Visual Studio no sistema, consulte [Instalar o Visual Studio 2017](../install/install-visual-studio.md).
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+Para saber mais sobre como configurar o Visual Studio no sistema, confira [Instalar o Visual Studio](../install/install-visual-studio.md).
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>Criar aplicativos habilitados para a nuvem para o Azure
 
@@ -99,7 +108,7 @@ Quando o aplicativo estiver pronto para ser implantado em usuários ou clientes,
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gerenciar seu código-fonte e colaborar com outros
 
-É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Ou use o [Azure DevOps Services](/azure/devops/index) para gerenciar o código, bem como bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios GIT no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos recursos do Git no Visual Studio 2017 (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
+É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Ou use o [Azure DevOps Services](/azure/devops/index) para gerenciar o código, bem como bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios GIT no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, confira [Novas funcionalidades do Git no Visual Studio (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
 Os Azure DevOps Services são serviços baseados em nuvem para planejar, hospedar, automatizar e implantar o software e habilitar a colaboração nas equipes. Os Azure DevOps Services dão suporte a repositórios Git (controle de versão distribuído) e ao Controle de Versão do Team Foundation (controle de versão centralizado). Eles dão suporte a pipelines de build e versão contínuos (CI/CD) de código armazenado em sistemas de controle de versão. O Azure DevOps Services também dá suporte a metodologias de desenvolvimento Agile, CMMI e Scrum.
 
@@ -127,4 +136,4 @@ Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Novidades no Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Novidades no Visual Studio 2019 Versão Prévia](../ide/whats-new-visual-studio-2019.md)
+- [Novidades no Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

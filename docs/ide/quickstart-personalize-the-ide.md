@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934062"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223033"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Início Rápido: Personalizar o Editor e o IDE do Visual Studio
 
@@ -22,7 +22,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ## <a name="set-the-color-theme"></a>Definir o tema de cores
 
-O tema de cores padrão para a interface do usuário do Visual Studio 2017 é chamada **Azul**. Vamos alterar para **Escuro**.
+O tema de cores padrão da interface do usuário do Visual Studio é chamado **Azul**. Vamos alterar para **Escuro**.
 
 1. Na barra de menus, que é a linha de menus, como **Arquivo** e **Editar**, escolha **Ferramentas** > **Opções**.
 

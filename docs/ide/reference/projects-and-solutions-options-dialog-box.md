@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922206"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223436"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Página de projetos e soluções, caixa de diálogo Opções
 
@@ -71,7 +71,7 @@ Quando selecionada, o Visual Studio exibe uma caixa de mensagem de confirmação
 
 ### <a name="reopen-documents-on-solution-load"></a>Reabrir documentos no carregamento da solução
 
-**Novo no Visual Studio 2017 versão 15.8 versão prévia 2 e posterior**
+**Introduzido no Visual Studio 2017 versão 15.8**
 
 Quando selecionada, os documentos que foram deixados abertos na última vez em que a solução foi fechada são abertos automaticamente quando a solução é aberta.
 

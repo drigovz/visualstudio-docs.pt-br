@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1873cc68c33fca8912415a00e7c7dda9ded49695
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335526"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223657"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Referência de atualização e de migração de projeto para o Visual Studio 2017
 
@@ -69,7 +69,7 @@ Se não estiver listado aqui um projeto ou um tipo de arquivo que deveria estar,
 | Extensibilidade/VSIX do Visual Studio | Os projetos com o MinimumVersion 14.0 ou inferior serão atualizados para declarar a MinimumVersion 15.0, que impede que o projeto seja aberto em versões anteriores do Visual Studio. Para permitir que um projeto seja aberto em versões anteriores, defina MinimumVersion como `$(VisualStudioVersion)`. Confira também [Como: Migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | É possível usar o Microsoft Test Manager ou o Visual Studio 2010 SP1 e posterior para abrir ambientes criados em qualquer uma dessas versões. No entanto, para o Visual Studio 2010 SP1, a versão do Microsoft Test Manager deve corresponder à versão do Team Foundation Server para que você possa criar ambientes. |
 | Ferramentas do Visual Studio para Apache Cordova | Os projetos podem ser abertos no Visual Studio 2017, mas não são compatíveis com versões anteriores. Ao abrir um projeto do Visual Studio 2015, será solicitado que você permita modificações no projeto. Essa modificação atualiza o projeto para usar conjuntos de ferramentas em vez de um arquivo `taco.json` para gerenciar o controle de versão da biblioteca Cordova, suas plataformas e seus plug-ins, bem como suas dependências de nó/npm. Consulte o [guia de migração](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) para obter mais informações. |
-| Implantação da Web (wdproj) | O suporte para projetos da Implantação da Web foi removido no Visual Studio 2012 com a adição do suporte ao perfil de publicação. Como não há nenhum equivalente no Visual Studio 2017, não há nenhum caminho de migração automática para esses projetos. Em vez disso, abra o arquivo wdproj em um editor de texto e copie e cole as personalizações em para o arquivo pubxml (perfil de publicação), conforme descrito em [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Confira também [Plans regarding website and web deployment projects](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/) (Planos sobre projetos de site e de implantação da Web). |
+| Implantação da Web (wdproj) | O suporte para projetos da Implantação da Web foi removido no Visual Studio 2012 com a adição do suporte ao perfil de publicação. Como não há nenhum equivalente no Visual Studio 2017, não há nenhum caminho de migração automática para esses projetos. Em vez disso, abra o arquivo wdproj em um editor de texto e copie e cole as personalizações em para o arquivo pubxml (perfil de publicação), conforme descrito em [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | É possível abrir esse projeto no Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012 |
 | Windows Presentation Foundation | É possível abrir esse projeto no Visual Studio 2013, Visual Studio 2012 e Visual Studio 2010 SP1. |
 | Aplicativos da Windows Store/aplicativos Windows Phone | Não há suporte para projetos da Windows Store 8.1 e 8.0 e do Windows Phone 8.1 e 8.0 no Visual Studio 2017. Para manter esses aplicativos, continue a usar o Visual Studio 2015. Para manter os projetos do Windows Phone 7. x, use o Visual Studio 2012. |
@@ -105,4 +105,4 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 
 ## <a name="see-also"></a>Consulte também
 
-[Referência de migração e atualização de projeto para o Visual Studio 2019 Preview](port-migrate-upgrade-visual-studio-projects-2019.md)
+[Referência de migração e atualização de projeto do Visual Studio 2019](port-migrate-upgrade-visual-studio-projects-2019.md)

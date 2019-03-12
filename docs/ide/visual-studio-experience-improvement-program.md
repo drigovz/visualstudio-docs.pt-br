@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927523"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323112"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 
@@ -31,8 +31,7 @@ O VSCEIP está ativado por padrão. Você pode desligá-lo ou ativá-lo novament
 
    A caixa de diálogo **Programa de Aperfeiçoamento da Experiência do Visual Studio** será aberta.
 
-1. Para recusar, selecione **Não, prefiro não participar** e, em seguida, selecione **OK**.
-   Para aceitar, selecione **Sim, desejo participar** e, em seguida, selecione **OK**.
+1. Para recusar, selecione **Não, prefiro não participar** e, em seguida, selecione **OK**. Para aceitar, selecione **Sim, desejo participar** e, em seguida, selecione **OK**.
 
    ![Caixa de diálogo Programa de Aperfeiçoamento da Experiência do Visual Studio](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ Se você instalar as [Ferramentas de Build do Visual Studio](https://visualstudi
 
 A chave do Registro e as configurações relevantes são as seguintes:
 
-Em um sistema operacional de 64 bits, a chave é **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**, em um sistema operacional de 32 bits, a chave é **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Quando a Política de Grupo está habilitada, a chave é **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
+
+- Em um sistema operacional de 64 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- Em um sistema operacional de 32 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Quando a Política de Grupo está habilitada, Chave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Em um sistema operacional de 64 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- Em um sistema operacional de 32 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Quando a Política de Grupo está habilitada, Chave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
 
 Entrada = **OptIn**
 
 Valor = (DWORD)
+
 - **0** é recusado (desligar o VSCEIP)
 - **1** é aceito (ativar o VSCEIP)
 
@@ -59,6 +73,6 @@ Para obter mais informações sobre as informações coletadas, processadas ou t
 
 * [Informações de diagnóstico coletadas pelo Visual Studio](diagnostic-data-collection.md)
 * [Fale conosco](../ide/talk-to-us.md)
-* [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/)
 * [Política de privacidade da Microsoft](https://privacy.microsoft.com/privacystatement)

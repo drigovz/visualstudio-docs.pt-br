@@ -1,61 +1,46 @@
 ---
-title: IDs de carga de trabalho e de componente do Test Controller do Visual Studio 2017
+title: IDs de carga de trabalho e de componente do Test Controller do Visual Studio
 titleSuffix: ''
 description: Usar IDs de carga de trabalho e de componente do Visual Studio para distribuir testes automatizados para vários computadores
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
-ms.workload:
-- multiple
-ms.openlocfilehash: 0af631c4422a4e139cc799a8f4489e0d71e1e7b5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 546ae0fe1660c6b04198f2b562d4358cebbdb192
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840543"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324098"
 ---
-# <a name="visual-studio-test-controller-2017-component-directory"></a>Diretório de componentes do Test Controller do Visual Studio 2017
+# <a name="visual-studio-test-controller-component-directory"></a>Diretório de componentes do Test Controller do Visual Studio
 
-As tabelas desta página listam as IDs que podem ser usadas para instalar o Visual Studio usando a linha de comando ou que podem ser especificadas como uma dependência em um manifesto do VSIX. Observe que adicionaremos outros componentes conforme atualizações forem liberadas para o Visual Studio.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Além disso, observe o seguinte sobre a página:
+::: moniker range="vs-2017"
 
-* Cada carga de trabalho tem sua própria seção, seguida pela ID da carga de trabalho e por uma tabela dos componentes que estão disponíveis para a carga de trabalho.
-* Por padrão, os componentes **Obrigatórios** serão instalados durante a instalação da carga de trabalho.
-* Se preferir, também será possível instalar os componentes **Recomendados** e **Opcionais**.
-* Também adicionamos uma seção que lista os componentes adicionais que não são afiliados a nenhuma carga de trabalho.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar nossas dependências mínimas de componente. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, confira a página [Como: Migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+[!include[Visual Studio Test Controller 2017](includes/vs-2017/workload-component-id-vs-test-controller.md)]
 
-Para obter mais informações sobre como usar essas IDs, consulte a página [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Além disso, para obter uma lista de IDs de carga de trabalho e de componente para outros produtos, consulte a página [IDs de carga de trabalho e de componente do Visual Studio 2017](workload-and-component-ids.md).
+::: moniker-end
 
-## <a name="test-controller"></a>Controlador de teste
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.TestController
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Descrição:** Distribuir testes automatizados para vários computadores
+[!include[Visual Studio Test Controller 2019](includes/vs-2019/workload-component-id-vs-test-controller.md)]
 
-### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
-
-ID do componente | Nome | Versão | Tipo de dependência
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Principais recursos do Test Controller | 15.6.27309.0 | Necessária
-
-## <a name="unaffiliated-components"></a>Componentes não afiliados
-
-Estes são os componentes que não são incluídos com nenhuma carga de trabalho, mas que podem ser selecionados como um componente individual.
-
-ID do componente | Nome | Versão
---- | --- | ---
-N/D | N/D | N/D
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

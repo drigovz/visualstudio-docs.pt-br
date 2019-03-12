@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864862"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222890"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar um projeto do C++ para o IntelliSense
 
@@ -74,7 +74,7 @@ Há duas maneiras comuns em que esse problema se manifesta no Visual Studio:
 
 Para corrigir esses tipos de problemas, adicione um arquivo chamado **cpp.hint** na raiz do diretório de soluções. Para saber mais, confira [Arquivos de dicas](/cpp/ide/hint-files).
 
-Os erros do Analisador de Marca do **Visual Studio 2017 versão 15.7** são exibidos na janela de Lista de Erros.
+Os erros de analisador de marca são exibidos na janela **Lista de Erros**.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Validar configurações do projeto com o log de diagnóstico
 
@@ -107,7 +107,7 @@ No entanto, em alguns casos o Visual Studio pode não atualizar o banco de dados
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Como solucionar problemas de falhas de compilação do IntelliSense
 
-Uma compilação do IntelliSense não produz binários, mas ainda assim poderá falhar. Uma possível causa de falha são os arquivos personalizados .props ou .targets. No Visual Studio 2017 versão 15.6, os erros de compilação somente IntelliSense são registrados na Janela de Saída. Para vê-los, defina **Mostrar saída de** a **Solução**:
+Uma compilação do IntelliSense não produz binários, mas ainda assim poderá falhar. Uma possível causa de falha são os arquivos personalizados .props ou .targets. No Visual Studio 2017 versão 15.6 e posterior, os erros de build somente do IntelliSense são registrados em log na Janela de Saída. Para vê-los, defina **Mostrar saída de** a **Solução**:
 
 ![Janela de Saída para erros de solução](media/vcpp-intellisense-output-window.png)
 

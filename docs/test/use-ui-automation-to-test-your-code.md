@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919229"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223475"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar a automação da interface do usuário para testar o código
 
@@ -48,7 +48,7 @@ Para obter mais informações sobre quais plataformas e configurações são com
 
 ## <a name="install-the-coded-ui-test-component"></a>Instalar o componente de teste de IU codificado
 
-Para acessar as ferramentas e os modelos do teste de IU codificado, instale o componente **Teste de IU Codificado** do Visual Studio 2017.
+Para acessar as ferramentas e os modelos do teste de IU codificado, instale o componente **Teste de IU Codificado** do Visual Studio.
 
 1. Inicie o **Instalador do Visual Studio** escolhendo **Ferramentas** > **Obter Ferramentas e Recursos**.
 
@@ -437,7 +437,7 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 ## <a name="whats-next"></a>O que vem a seguir?
 
-**Opções adicionais para executar testes de IU codificados:** É possível executar testes de IU codificados diretamente no Visual Studio, como descrito anteriormente neste tópico. Além disso, você pode executar testes automatizados de interface do usuário no Microsoft Test Manager ou usando o Azure Pipelines. Quando são automatizados, os testes de IU codificados precisam interagir com a área de trabalho quando executados, diferentemente de outros testes automatizados.
+**Opções adicionais para executar testes de IU codificados:** É possível executar testes de IU codificados diretamente no Visual Studio, conforme descrito anteriormente neste tópico. Além disso, você pode executar testes automatizados de interface do usuário no Microsoft Test Manager ou usando o Azure Pipelines. Quando são automatizados, os testes de IU codificados precisam interagir com a área de trabalho quando executados, diferentemente de outros testes automatizados.
 
 - [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)
 
@@ -445,7 +445,7 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 - [Como: Configurar o agente de teste para executar testes que interagem com a área de trabalho](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Adição de suporte a controles personalizados:**  A estrutura de testes de IU codificados não oferece suporte a todas as interfaces do usuário possíveis e talvez não ofereça suporte à interface do usuário que você deseja testar. Por exemplo, você não pode criar imediatamente um teste de IU codificado para a IU do Microsoft Excel. Porém, você pode criar uma extensão para o framework de teste de IU codificado que oferecerá suporte a um controle personalizado.
+**Adição de suporte a controles personalizados:**  A estrutura do teste de IU codificado não dá suporte a todas as interfaces do usuário possíveis e pode não dar suporte à interface do usuário que você deseja testar. Por exemplo, você não pode criar imediatamente um teste de IU codificado para a IU do Microsoft Excel. Porém, você pode criar uma extensão para o framework de teste de IU codificado que oferecerá suporte a um controle personalizado.
 
 - [Habilitar testes de IU codificados dos controles](../test/enable-coded-ui-testing-of-your-controls.md)
 

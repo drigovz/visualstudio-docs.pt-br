@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 515cd501044b1b83f8adbd365e13336322c20f3f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931293"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323190"
 ---
-# <a name="learn-about-projects-and-solutions-using-c"></a>Saiba mais sobre projetos e soluções usando C#
+# <a name="learn-about-projects-and-solutions-using-c"></a>Saiba mais sobre projetos e soluções usando o C\#
 
 Neste artigo introdutório, exploraremos o que significa criar uma *solução* e um *projeto* no Visual Studio. Uma solução é um contêiner usado para organizar um ou mais projetos de código relacionados, por exemplo, um projeto de biblioteca de classes e um projeto de teste correspondente. Vamos examinar as propriedades de um projeto e alguns dos arquivos que ele pode conter. Também criaremos uma referência de um projeto a outro.
 

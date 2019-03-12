@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76cc490523325c8334ad7ada3273f101e0bbc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626122"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323530"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Como: Usar o SDK de marcadores do visualizador de simultaneidade
 Este tópico mostra como usar o SDK da Visualização Simultânea para criar intervalos e gravar sinalizadores, mensagens e alertas.
@@ -78,7 +78,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
      ![Visualização Simultânea com três séries de marcador personalizadas](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
-### <a name="to-use-visual-basic-or-c"></a>Para usar o Visual Basic ou C# #
+### <a name="to-use-visual-basic-or-c"></a>Para usar o Visual Basic ou o C\#
 
 1.  Adicione o suporte ao SDK da Visualização Simultânea ao seu aplicativo. Para obter mais informações, consulte [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md).
 

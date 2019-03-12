@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40abd872863231b2631830cd214fc9060da364d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952301"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221639"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como: Localizar e organizar modelos de projeto de e item
 
@@ -30,13 +30,29 @@ Os modelos instalados e os modelos do usuário são armazenados em dois locais d
 
 Se você adicionar um arquivo compactado (*.zip*) que inclua um arquivo *.vstemplate* no diretório de modelos do usuário, o modelo aparecerá na caixa de diálogo **Novo Projeto** ou **Adicionar Novo Item**. Por padrão, os modelos do usuário estão localizados em:
 
-- *%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ProjectTemplates*
+::: moniker range="vs-2017"
 
-- *%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ItemTemplates*
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*
 
 Por exemplo, o seguinte diretório contém modelos de projeto do usuário para C#:
 
 - *C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*
+
+Por exemplo, o seguinte diretório contém modelos de projeto do usuário para C#:
+
+- *C:\Users\UserName\Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
 
 > [!TIP]
 > Você pode definir o local dos modelos do usuário em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**.

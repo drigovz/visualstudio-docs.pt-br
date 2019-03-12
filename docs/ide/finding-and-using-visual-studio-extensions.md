@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919736"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222747"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
@@ -61,9 +61,9 @@ Se você desejar desabilitar as atualizações automáticas, será possível des
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>Notificações de falha e falta de resposta da extensão
 
-Novidade no **Visual Studio 2017 versão 15.3**, o Visual Studio notifica você se suspeitar que uma extensão estava envolvida em uma falha durante uma sessão anterior. Quando o Visual Studio falhar, ele armazenará a pilha de exceção. Na próxima vez em que o Visual Studio for iniciado, ele examinará a pilha, começando com a folha e funcionando em direção à base. Se o Visual Studio determinar que um quadro pertence a um módulo que faz parte de uma extensão instalada e habilitada, ele mostra uma notificação.
+O Visual Studio notifica você se ele suspeita de que uma extensão estava envolvida em uma falha durante uma sessão anterior. Quando o Visual Studio falhar, ele armazenará a pilha de exceção. Na próxima vez em que o Visual Studio for iniciado, ele examinará a pilha, começando com a folha e funcionando em direção à base. Se o Visual Studio determinar que um quadro pertence a um módulo que faz parte de uma extensão instalada e habilitada, ele mostra uma notificação.
 
-Novidade no **Visual Studio 2017 15.6**, o Visual Studio também notifica se suspeitar que uma extensão está causando a falta de resposta da interface do usuário.
+O Visual Studio também notifica você se ele suspeita de que uma extensão é responsável por uma interface do usuário sem resposta.
 
 Quando essas notificações forem exibidas, você poderá ignorar a notificação ou executar uma das seguintes ações:
 

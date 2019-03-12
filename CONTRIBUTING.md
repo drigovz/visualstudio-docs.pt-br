@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324332"
+---
 # <a name="contribute-to-visual-studio-documentation"></a>Contribuir com a documentação do Visual Studio
 
 Agradecemos o fato de dedicar seu tempo para contribuir com os documentos do Visual Studio.
@@ -25,3 +33,7 @@ Siga as diretrizes para [edições rápidas a documentos existentes](https://doc
 ### <a name="larger-edits"></a>Edições maiores
 
 Examine as diretrizes sobre [solicitações de pull](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing) no guia de colaboradores.
+
+**OBSERVAÇÃO**
+
+Não estamos trabalhamos ativamente nos arquivos da pasta `docs/vs-2015`, pois eles são para o Visual Studio 2015, uma versão mais antiga de nosso produto. Não aceitamos solicitações de pull para alterações triviais nesses arquivos.

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702714"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223137"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -24,7 +24,7 @@ Para saber mais sobre os atalhos de teclado comuns, confira [Dicas de teclado](.
 
 Escreva código mais rapidamente usando os seguintes recursos.
 
-- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, no **Visual Studio 2017 versão 15.6** e posterior, você pode escolher um comando para duplicar facilmente uma linha de código sem a necessidade de copiá-lo, reposicionar o cursor e, depois, colá-lo. Escolha **Editar** > **Duplicar** ou pressione **Ctrl**+**E**,**V**. Você também pode expandir ou recolher uma seleção de texto escolhendo **Editar** > **Avançado** > **Expandir Seleção** ou **Editar** > **Avançado** > **Reduzir Seleção** ou pressionando **Shift**+**Alt**+**=** ou **Shift**+**Alt**+**-** (disponível no **Visual Studio 2017 versão 15.5** e posterior).
+- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, você pode escolher um comando para duplicar com facilidade uma linha de código sem precisar copiá-la, reposicionar o cursor e, em seguida, colá-la. Escolha **Editar** > **Duplicar** ou pressione **Ctrl**+**E**,**V**. Expanda ou recolha uma seleção de texto rapidamente escolhendo **Editar** > **Avançado** > **Expandir Seleção** ou **Editar** > **Avançado** > **Recolher Seleção** ou pressionando **Shift**+**Alt**+**=** ou **Shift**+**Alt**+**-**.
 
 - **Use o IntelliSense**. À medida que você inserir código no editor, informações do IntelliSense, como Membros da Lista, Informações do Parâmetro, Informações Rápidas, Ajuda de Assinatura e Completar Palavras, serão exibidas. Esses recursos dão suporte à correspondência difusa de texto; por exemplo, as listas de resultados para Membros da Lista incluem não só entradas que começam com os caracteres que você inseriu, como também entradas que contêm a combinação de caracteres em qualquer lugar de seus nomes. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
 
@@ -102,9 +102,19 @@ A depuração pode consumir muito tempo, mas as dicas a seguir podem ajudar a ac
 
 Você poderá acessar rapidamente o Prompt de Comando do Desenvolvedor ou outra ferramenta do Visual Studio se você fixá-la no menu Iniciar ou na barra de tarefas.
 
-1. No Windows Explorer, navegue até `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Clique com botão direito do mouse ou abra o menu de contexto para o **Prompt de Comando do Desenvolvedor** e, em seguida, selecione **Fixar na tela inicial** ou **Fixar na barra de tarefas**.
+1. No Windows Explorer, procure *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. No Windows Explorer, procure *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*.
+
+::: moniker-end
+
+2. Clique com botão direito do mouse ou abra o menu de contexto para o **Prompt de Comando do Desenvolvedor** e, em seguida, selecione **Fixar na tela inicial** ou **Fixar na barra de tarefas**.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Gerenciar arquivos, barras de ferramentas e janelas
 

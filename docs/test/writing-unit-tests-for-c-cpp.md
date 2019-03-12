@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926782"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223046"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -30,11 +30,11 @@ O Visual Studio inclui estas estruturas de teste para C++, sem a necessidade de 
 
 Além das estruturas instaladas, é possível gravar seu próprio adaptador de teste em qualquer estrutura que você deseja usar no Visual Studio. Um adaptador de teste pode integrar testes de unidade à janela **Gerenciador de Testes**. Vários adaptadores de terceiros são disponibilizados no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 versão 15.7 (Professional e Enterprise)**
+**Visual Studio 2017 versão 15.7 e posterior (Professional e Enterprise)**
 
 Os projetos de teste de unidade C++ são compatíveis com o [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017 versão 15.5**
+**Visual Studio 2017 versão 15.5 e posterior**
 
 - O **Adaptador do Google Test** está incluído como componente padrão da carga de trabalho **Desenvolvimento para área de trabalho com C++**. Ele tem um modelo de projeto que pode ser adicionado a uma solução por meio da opção **Adicionar Novo Projeto** do menu do clique com o botão direito no nó da solução no **Gerenciador de Soluções**, além de opções que podem ser configuradas por meio de **Ferramentas** > **Opções**. Para saber mais, consulte [How to: use Google Test in Visual Studio](how-to-use-google-test-for-cpp.md) (Como usar o Google Test no Visual Studio).
 
@@ -117,7 +117,9 @@ Para conhecer as melhores práticas relacionadas ao teste de unidade, confira [N
 
 ## <a name="use-codelens"></a>Usar o CodeLens
 
-**Somente Visual Studio 2017 versão 15.7 Professional e Enterprise Editions**: O [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permite que você veja rapidamente o status de um teste de unidade sem sair do editor de códigos. Você pode inicializar o CodeLens para um projeto de teste de unidade do C++ em qualquer uma das seguintes formas:
+**Visual Studio 2017 versão 15.7 e posterior (somente Professional e Enterprise Editions)**
+
+O [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permite que você veja rapidamente o status de um teste de unidade sem sair do editor de códigos. Você pode inicializar o CodeLens para um projeto de teste de unidade do C++ em qualquer uma das seguintes formas:
 
 - Editar e compilar sua solução ou projeto de teste.
 - Recompilar sua solução ou projeto.
@@ -127,10 +129,10 @@ Após o **CodeLens** ser inicializado, os ícones de status de teste podem ser v
 
 ![Ícones do CodeLens C++](media/cpp-test-codelens-icons.png)
 
- Clique no ícone para obter mais informações ou para executar ou depurar o teste de unidade:
+Clique no ícone para obter mais informações ou para executar ou depurar o teste de unidade:
 
 ![Execução e depuração do CodeLens C++](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Consulte também
 
-[Efetuar teste de unidade em seu código](unit-test-your-code.md)
+- [Efetuar teste de unidade em seu código](unit-test-your-code.md)

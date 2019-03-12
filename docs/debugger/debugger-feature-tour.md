@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696734"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428681"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -77,7 +77,7 @@ Enquanto estiver no depurador, passe o mouse sobre uma linha de código até que
 ![Executar com um Clique](../debugger/media/dbg-tour-run-to-click-2.png "Executar com um Clique")
 
 > [!NOTE]
-> O botão **Executar com um Clique** (Realizar a execução até aqui) é novo no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> O botão **Executar com um Clique** (Realizar a execução até aqui) está disponível no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] em diante.
 
 Clique no botão **Executar com um Clique** (Realizar a execução até aqui). O depurador avança até a linha de código em que você clicou.
 
@@ -188,7 +188,7 @@ Neste exemplo, a chamada `DirectoryInfo` gerou o erro na cadeia de caracteres va
 O Auxiliar de Exceção é um ótimo recurso que pode ajudá-lo a depurar erros. Você também pode fazer coisas como exibir detalhes do erro e adicionar uma inspeção por meio do Auxiliar de Exceção. Ou, se necessário, você pode alterar as condições para lançar a exceção específica. Para obter mais informações de como tratar exceções no código, confira [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> O Auxiliar de Exceção substitui o Assistente de Exceção no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> O Auxiliar de Exceção substituiu o Assistente de Exceção no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda o nó **Configurações de Exceção** para ver mais opções de como lidar com esse tipo de exceção, mas você não precisa alterar nada neste tour!
 
