@@ -1,5 +1,5 @@
 ---
-title: 'Como: Depurar no modo misto | Microsoft Docs'
+title: 'Como: depurar no modo misto | Microsoft Docs'
 ms.date: 11/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968525"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526718"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Como: Depurar no modo misto (C#, C++, Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Como: depurar no modo misto (C#, C++, Visual Basic)
 
 Os procedimentos a seguir descrevem como habilitar a depuração de código gerenciado e nativo juntos, também conhecido como mista de depuração. Há dois cenários de depuração de modo misto:
 
@@ -34,7 +34,7 @@ Os procedimentos a seguir descrevem como habilitar a depuração de código gere
 
 Você pode permitir que os depuradores gerenciados e nativos do projeto de aplicativo chamada **propriedade** páginas. As configurações são diferentes entre os aplicativos nativos e gerenciados.
 
-Se você não tiver acesso a projeto de um aplicativo de chamada, você pode depurar a DLL do projeto de DLL. Modo misto para depurar apenas o projeto DLL não é necessário. Para obter mais informações, confira [Como: Depurar por meio de um projeto DLL](../debugger/how-to-debug-from-a-dll-project.md).
+Se você não tiver acesso a projeto de um aplicativo de chamada, você pode depurar a DLL do projeto de DLL. Modo misto para depurar apenas o projeto DLL não é necessário. Para obter mais informações, consulte [como: depurar de um projeto DLL](../debugger/how-to-debug-from-a-dll-project.md).
 
 > [!NOTE]
 > As caixas de diálogo e comandos que você vê podem ser diferentes daquelas que neste artigo, dependendo de suas configurações do Visual Studio ou a edição. Para alterar suas configurações, escolha **ferramentas** > **importar e exportar configurações**. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
@@ -62,8 +62,8 @@ Se você não tiver acesso a projeto de um aplicativo de chamada, você pode dep
    ![Habilitar a depuração de código nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "habilitar a depuração de código nativo")
 
 > [!NOTE]
-> Na maioria das versões do Visual Studio 2017, você precisa usar o arquivo *launchSettings.json* em vez das propriedades do projeto para habilitar a depuração de modo misto de um código nativo em um aplicativo .NET Core. Para obter detalhes, consulte [depurar código gerenciado e nativo](../debugger/how-to-debug-managed-and-native-code.md).
+> Na maioria das versões do Visual Studio a partir do Visual Studio 2017, você deve usar o *launchsettings. JSON* arquivo em vez de propriedades do projeto para habilitar a depuração de modo misto para código nativo em um aplicativo .NET Core. Para obter detalhes, consulte [depurar código gerenciado e nativo](../debugger/how-to-debug-managed-and-native-code.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Depurar por meio de um projeto DLL](../debugger/how-to-debug-from-a-dll-project.md)
+- [Como depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715174"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526224"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Como definir um nome de thread em código nativo
 A nomeação de thread é possível em qualquer edição do Visual Studio. Nomeação de thread é útil para identificar threads de seu interesse na **Threads** janela ao depurar um processo em execução. Ter chamado recognizably threads também pode ser útil ao executar por meio de inspeção de despejo de pane e analisar o desempenho da captura usando várias ferramentas de depuração de post-mortem.
@@ -40,7 +40,7 @@ Benefícios:
 * Nomes de thread também são visíveis quando usar outras ferramentas, como o [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) depurador e o [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) analisador de desempenho.
 
 Restrições:
-* Nomes de thread somente são visíveis no Visual Studio 2017 versão 15.6 e posterior.
+* Nomes de thread visíveis apenas no Visual Studio 2017 versão 15.6 e versões posteriores.
 * Quando o arquivo de despejo de depuração de uma falha de post-mortem, nomes de thread são visíveis apenas se a falha foi criada no Windows 10 versão 1607, Windows Server 2016 ou versões posteriores do Windows.
 
 *Exemplo:*

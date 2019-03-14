@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689298"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526530"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
 
@@ -54,7 +54,7 @@ Em condições de 2 e 3, a exceção é às vezes detectada pelo código gerenci
 
 **Habilitar filtros de ponto de interrupção**: permite que você defina filtros em pontos de interrupção para que elas afetarão apenas processos específicos, threads ou computadores.
 
-**Use o novo auxiliar de exceção**: permite que o auxiliar de exceção (Visual Studio 2017) que substitui o Assistente de exceção.
+**Use o novo auxiliar de exceção**: permite que o auxiliar de exceção que substitui o Assistente de exceção. (Auxiliar de exceção é compatível a partir do Visual Studio 2017)
 
 > [!NOTE]
 > Para código gerenciado, essa opção foi chamada anteriormente **habilitar o Assistente de exceção** .
@@ -158,7 +158,7 @@ Para ver quais símbolos estão disponíveis na tabela de exportação de uma dl
 
 Se você estiver usando uma versão mais antiga do Visual Studio, algumas opções adicionais podem estar presentes.
 
-**Habilitar o Assistente de exceção**: para código gerenciado, permite que o Assistente de exceção. No Visual Studio 2017, o auxiliar de exceção substituído o Assistente de exceção.
+**Habilitar o Assistente de exceção**: para código gerenciado, permite que o Assistente de exceção. A partir do Visual Studio 2017, o auxiliar de exceção substituído o Assistente de exceção.
 
 **Desenrolar a pilha de chamadas em exceções não tratadas**: faz com que o **pilha de chamadas** janela para reverter a pilha de chamadas para o ponto antes da ocorrência de exceção sem tratamento.
 
