@@ -8,22 +8,22 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4300eaa751eb8ac24461f9aca11e75c07d78a94d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930279"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525076"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opções, Editor de texto, XML, Diversos
 
-Use a página de propriedades **Diversos** para alterar as configurações de preenchimento automático e de esquema para o Editor XML. Para abrir a caixa de diálogo **Opções**, clique no menu **Ferramentas** e clique em **Opções**. Para acessar a página de propriedades **Diversos**, expanda o nó **Editor de texto** > **XML** > **Diversos**.
+Use a página de opções **Diversos** para alterar as configurações de preenchimento automático e de esquema para o Editor XML. Para acessar as opções de XML diversas, escolha **Ferramentas** > **Opções** > **Editor de texto** > **XML** e, em seguida, escolha **Diversos**.
 
 ## <a name="auto-insert"></a>AutoInserção
 
 **Marcas de fechamento**
 
-O Editor de texto adiciona marcas de fechamento ao criar elementos XML. Se uma marca de início de elemento for selecionada, o editor inserirá a marca de fechamento correspondente, incluindo um prefixo de namespace correspondente. Por padrão, a caixa de seleção fica marcada.
+O editor de texto adiciona marcas de fechamento ao criar elementos XML. Se uma marca de início de elemento for selecionada, o editor inserirá a marca de fechamento correspondente, incluindo um prefixo de namespace correspondente. Por padrão, a caixa de seleção fica marcada.
 
 **Aspas de atributo**
 
@@ -53,9 +53,9 @@ Ativa o recurso de estruturação quando um arquivo é aberto. Por padrão, a ca
 
 **Esquemas**
 
-Especifica o local do cache de esquema. O botão Procurar (...) abre a localização do cache do esquema atual em uma nova janela. A localização padrão é *\<diretório de instalação do Management Studio>* \Xml\Schemas.
+Especifica o local do cache de esquema. O botão **Procurar** abre a localização do cache do esquema atual em uma nova janela. O local padrão é *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar documentação XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Geração de código](../code-generation-in-visual-studio.md)
+- [Opções de XML – Formatação](options-text-editor-xml-formatting.md)
+- [Ferramentas XML no Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
