@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919671"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736932"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Passo a passo: Analisando o código C/C++ em busca de defeitos
 
@@ -67,7 +67,7 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
 
      warning C6230: Conversão implícita entre tipos semanticamente diferentes: usando HRESULT em um contexto booleano.
 
-     O editor de código exibe a linha que causou o aviso na função `bool``ProcessDomain()`. Este aviso indica que um HRESULT está sendo usado em uma instrução 'if' em que um resultado booliano é esperado.
+     O editor de código exibe a linha que causou o aviso na função `bool ProcessDomain()`. Este aviso indica que um HRESULT está sendo usado em uma instrução 'if' em que um resultado booliano é esperado.
 
 3. Corrigi este aviso usando a macro SUCCEEDED. Seu código deve se parecer com o código a seguir:
 
