@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835080"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567241"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bem-vindo ao Visual Studio de 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -56,11 +56,11 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 
 1.  [Xamarin para Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): uma base de código comum em C# para todos os dispositivos.
 
-2.  [Apache Cordova com o Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Um código comum de base para HTML, CSS e JavaScript ou Typescript
+2.  [Apache Cordova com o Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): uma base para HTML, CSS e JavaScript ou Typescript de código comum
 
 3.  [Ferramentas do Visual Studio para Unity](./cross-platform/visual-studio-tools-for-unity.md): desenvolvimento de jogos 2D/3D em C#.
 
-4.  [C++ para desenvolvimento de plataforma cruzada](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Aplicativos em C++ e bibliotecas de código compartilhado
+4.  [C++ para Desenvolvimento Móvel Multiplataforma](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): aplicativos e bibliotecas de códigos compartilhados em C++
 
 5.  [Emulador do Visual Studio para Android](./cross-platform/visual-studio-emulator-for-android.md): depure e teste aplicativos Android, independentemente do IDE.
 
@@ -97,7 +97,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 |||||
 |-|-|-|-|
 |[Novidades no Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novidades do Visual C++](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[O que há de novo para o .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novidades do ALM](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
-|[Quais são as novidades do C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novidades do Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[O que há de novo para JavaScript](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
+|[Quais são as novidades do C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novidades do Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[O que há de novo para JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>Nesta seção
