@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634260"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737026"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multi-threaded com mau comportamento
 
@@ -30,7 +30,7 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
 
 Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU, em que, mesmo na presença de vários threads, o aplicativo consome apenas um núcleo lógico.
 
-Para obter mais informações, veja "Performance pattern 1: Identifying lock contention" (Padrão de desempenho 1: identificando a contenção de bloqueio) no blog de Hazim Shafi, [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Ferramentas de desempenho paralelo para o Windows), no site do blog do MSDN.
+Para obter mais informações, veja a seção "Começar com o problema" no artigo da MSDN Magazine [Desempenho do Thread – criação de perfil de simultaneidade de contenção de recursos no Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
 
 ![Contenção de bloqueio](../profiling/media/lockcontention_2.png "LockContention_2")
 

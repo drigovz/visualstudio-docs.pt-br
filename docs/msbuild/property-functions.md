@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623054"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737037"
 ---
 # <a name="property-functions"></a>Funções de propriedade
 
@@ -166,7 +166,7 @@ Aqui está uma lista de funções da propriedade MSBuild:
 |int BitwiseXor(int first, int second)|Realizar um bit a bit `XOR` no primeiro e segundo (primeiro ^ segundo).|
 |int BitwiseNot(int first)|Realizar um bit a bit `NOT` (~primeiro).|
 |bool IsOsPlatform(string platformString)|Especifique se a plataforma do sistema operacional atual é `platformString`. `platformString` deve ser um membro do <xref:System.Runtime.InteropServices.OSPlatform>.|
-|bool IsOSUnixLike|True se o sistema operacional atual for um sistema Unix.|
+|bool IsOSUnixLike()|True se o sistema operacional atual for um sistema Unix.|
 |string NormalizePath(params string[] path)|Obtém o caminho completo canonizado do caminho fornecido e garante que ele contém os caracteres do separador de diretório corretos para o sistema operacional atual.|
 |string NormalizeDirectory(params string[] path)|Obtém o caminho completo canonizado do diretório fornecido e garante que ele contém os caracteres do separador de diretório corretos para o sistema operacional atual, enquanto garante que tem uma barra à direita.|
 |string EnsureTrailingSlash(string path)|Se o caminho especificado não tiver uma barra à direita, adicione uma. Se o caminho for uma cadeia de caracteres vazia, não a modifique.|

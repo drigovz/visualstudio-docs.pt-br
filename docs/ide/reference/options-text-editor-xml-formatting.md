@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943539"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525063"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opções, Editor de texto, XML, Formatação
 
-Use a página de propriedades **Formatação** para especificar como elementos e atributos são formatados nos documentos XML. Para abrir a caixa de diálogo **Opções**, clique no menu **Ferramentas** e clique em **Opções**. Para acessar a página de propriedades **Formatação**, expanda o nó **Editor de texto** > **XML** > **Formatação**.
+Use a página de opções de **Formatação** para especificar como elementos e atributos são formatados nos documentos XML. Para acessar as opções de formatação de XML, escolha **Ferramentas** > **Opções** > **Editor de texto** > **XML** e, em seguida, escolha **Formatação**.
 
 ## <a name="attributes"></a>Atributos
 
@@ -30,7 +30,7 @@ Não reformate os atributos. Essa é a configuração padrão.
 
 **Alinhar cada atributo em uma linha separada**
 
-Alinhe o segundo atributo e os subsequentes verticalmente para coincidir com o recuo do primeiro atributo. O texto a seguir XML é um exemplo de como os atributos seriam alinhados.
+Alinhe o segundo atributo e os subsequentes verticalmente para coincidir com o recuo do primeiro atributo. O texto XML a seguir é um exemplo de como os atributos seriam alinhados:
 
 ```xml
 <item id = "123-A"
@@ -66,5 +66,5 @@ Se um elemento contém uma mistura de texto e de marcação, os conteúdos são 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar documentação XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Geração de código](../code-generation-in-visual-studio.md)
+- [Opções de XML – Diversos](options-text-editor-xml-miscellaneous.md)
+- [Ferramentas XML no Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

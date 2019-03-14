@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716513"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526510"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Início Rápido: Depuração com C++ usando o depurador do Visual Studio
 
@@ -94,7 +94,7 @@ Um *ponto de interrupção* é um marcador que indica quando o Visual Studio dev
 
 ## <a name="navigate-code"></a>Navegue pelos códigos
 
-Há diferentes comandos para instruir o depurador a continuar. Mostramos um comando de navegação de código útil que é novo no Visual Studio 2017.
+Há diferentes comandos para instruir o depurador a continuar. Mostramos um comando de navegação de código útil que está disponível começando pelo Visual Studio 2017.
 
 Enquanto estiver em pausa no ponto de interrupção, passe o mouse sobre a instrução `c1.push_back(20)` até que o botão verde **Executar com um clique** ![Executar com um clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") seja exibido e, em seguida, pressione o botão **Executar com um clique**.
 

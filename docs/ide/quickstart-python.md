@@ -1,7 +1,7 @@
 ---
 title: 'Início rápido: usar o Visual Studio para criar um aplicativo Web Python'
 description: Neste início rápido, você usa o Visual Studio e a estrutura do Flask para criar um aplicativo Web simples em Python.
-ms.date: 02/11/2019
+ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 826e0134d4798526a3ba3ae8055500808eb922a1
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987425"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683379"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Início Rápido: Criar seu primeiro aplicativo Web do Python usando o Visual Studio
 
@@ -27,21 +27,43 @@ Se você ainda não tiver instalado o Visual Studio, acesse [Downloads do Visual
 
 As seguintes etapas criam um projeto vazio que serve como um contêiner para o aplicativo:
 
+::: moniker range="vs-2017"
 1. Abra o Visual Studio 2017.
 
-1. Na barra de menus superior, escolha **Arquivo > Novo > Projeto**.
+2. Na barra de menus superior, escolha **Arquivo > Novo > Projeto**.
 
-1. Na caixa de diálogo **Novo Projeto**, digite "Projeto Web Python" no campo de pesquisa no canto superior direito, escolha **Projeto Web** na lista do meio, nomeie o projeto como "HelloPython" e escolha **Ok**.
+3. Na caixa de diálogo **Novo Projeto**, digite "Projeto Web Python" no campo de pesquisa no canto superior direito, escolha **Projeto Web** na lista do meio, nomeie o projeto como "HelloPython" e escolha **Ok**.
 
     ![Caixa de diálogo Novo projeto com o projeto Web do Python selecionado](media/quickstart-python-00-web-project.png)
 
-    Se os modelos de projeto Python não forem exibidos, cancele a caixa de diálogo **Novo Projeto** e, na barra de menus superior, escolha **Ferramentas > Obter Ferramentas e Recursos** para abrir o **Instalador do Visual Studio**. Escolha a carga de trabalho **Desenvolvimento de Python** e, em seguida, selecione **Modificar**.
+    Se você não vir os modelos de projeto do Python, execute o **Instalador do Visual Studio**, selecione **Mais** > **Modificar**, selecione a carga de trabalho de **desenvolvimento do Python** e, em seguida, escolha **Modificar**.
 
     ![Carga de trabalho de desenvolvimento do Python no instalador do Visual Studio](../python/media/installation-python-workload.png)
 
-1. O novo projeto será aberto no **Gerenciador de Soluções** no painel direito. O projeto está vazio neste momento porque ele não contém outros arquivos.
+4. O novo projeto será aberto no **Gerenciador de Soluções** no painel direito. O projeto está vazio neste momento porque ele não contém outros arquivos.
 
     ![Gerenciador de Soluções mostrando o projeto vazio recém-criado](media/quickstart-python-01-empty-project.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+1. Abra o Visual Studio 2019.
+2. Na tela inicial, selecione **Criar um novo projeto**.
+3. Na caixa de diálogo **Criar um novo projeto**, digite "Python Web"no campo de pesquisa na parte superior, escolha **Projeto Web** na lista do meio, depois selecione **Avançar**:
+
+    ![Tela Criar um novo projeto com o projeto Web do Python selecionado](media/quickstart-python-00-web-project-2019a.png)
+
+    Se você não vir os modelos de projeto do Python, execute o **Instalador do Visual Studio**, selecione **Mais** > **Modificar**, selecione a carga de trabalho de **desenvolvimento do Python** e, em seguida, escolha **Modificar**.
+
+    ![Carga de trabalho de desenvolvimento do Python no instalador do Visual Studio](../python/media/installation-python-workload.png)
+
+4. Na caixa de diálogo **Configurar seu novo projeto**, insira "HelloPython" para **Nome do projeto**, especifique um local e selecione **Criar**. (O **Nome da solução** é definido automaticamente para corresponder ao **Nome do projeto**.)
+
+    ![Caixa de diálogo Configurar novo projeto](media/quickstart-python-00-web-project-2019b.png)
+
+5. O novo projeto será aberto no **Gerenciador de Soluções** no painel direito. O projeto está vazio neste momento porque ele não contém outros arquivos.
+
+    ![Gerenciador de Soluções mostrando o projeto vazio recém-criado](media/quickstart-python-01-empty-project-2019.png)
+::: moniker-end
 
 **Pergunta: Qual é a vantagem de criar um projeto no Visual Studio para um aplicativo do Python?**
 
@@ -57,19 +79,37 @@ Aplicativos Web em Python quase sempre usam uma das muitas bibliotecas Python di
 
 Aqui, use as etapas a seguir para instalar a biblioteca Flask no "ambiente global" padrão que o Visual Studio usa para este projeto.
 
+::: moniker range="vs-2017"
 1. Expanda o nó **Ambiente do Python** no projeto para ver o ambiente padrão para o projeto.
 
     ![Gerenciador de soluções mostrando o ambiente padrão](media/quickstart-python-02-default-environment.png)
 
-1. Clique com o botão direito do mouse no ambiente e selecione **Instalar pacote Python**. Esse comando abre a janela **Ambientes de Python** na guia **Pacotes**.
+2. Clique com o botão direito do mouse no ambiente e selecione **Instalar pacote Python**. Esse comando abre a janela **Ambientes de Python** na guia **Pacotes**.
 
-1. Insira “flask” no campo de pesquisa e selecione **pip install flask from PyPI**. Aceite os prompts de privilégios de administrador e observe o andamento na janela **Saída** janela no Visual Studio. (Um prompt para elevação é exibido quando a pasta de pacotes do ambiente global está localizada em uma área protegida como *C:\Arquivos de Programas*.)
+3. Insira “flask” no campo de pesquisa e selecione **pip install flask from PyPI**. Aceite os prompts de privilégios de administrador e observe o andamento na janela **Saída** janela no Visual Studio. (Um prompt para elevação é exibido quando a pasta de pacotes do ambiente global está localizada em uma área protegida como *C:\Arquivos de Programas*.)
 
     ![Instalando a biblioteca do Flask usando a instalação de PIP](media/quickstart-python-03-install-package.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Expanda o nó **Ambiente do Python** no projeto para ver o ambiente padrão para o projeto.
 
-1. Uma vez instalada, a biblioteca aparece no ambiente em **Gerenciador de Soluções**, o que significa que você pode utilizá-la no código Python.
+    ![Gerenciador de soluções mostrando o ambiente padrão](media/quickstart-python-02-default-environment-2019.png)
 
+2. Clique com o botão direito do mouse no ambiente e selecione **Gerenciar Pacotes do Python...**. Esse comando abre a janela **Ambientes de Python** na guia **Pacotes (PyPI)**.
+
+3. Insira "flask" no campo de pesquisa. Se **Flask** aparece abaixo da caixa de pesquisa, você pode ignorar esta etapa. Caso contrário, selecione **Executar o comando: pip install flask**. Aceite os prompts de privilégios de administrador e observe o andamento na janela **Saída** janela no Visual Studio. (Um prompt para elevação é exibido quando a pasta de pacotes do ambiente global está localizada em uma área protegida como *C:\Arquivos de Programas*.)
+
+    ![Instalando a biblioteca do Flask usando a instalação de PIP](media/quickstart-python-03-install-package-2019.png)
+::: moniker-end
+
+4. Uma vez instalada, a biblioteca aparece no ambiente em **Gerenciador de Soluções**, o que significa que você pode utilizá-la no código Python.
+
+    ::: moniker range="vs-2017"
     ![Biblioteca do Flask instalada e mostrada no Gerenciador de Soluções](media/quickstart-python-04-package-installed.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![Biblioteca do Flask instalada e mostrada no Gerenciador de Soluções](media/quickstart-python-04-package-installed-2019.png)
+    ::: moniker-end
 
 > [!Note]
 > Em vez de instalar as bibliotecas no ambiente global, os desenvolvedores geralmente criam um “ambiente virtual” no qual instalar bibliotecas para um projeto específico. Modelos do Visual Studio geralmente oferecem essa opção, conforme discutido em [Início Rápido: criar um projeto de Python usando um modelo](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
@@ -121,7 +161,14 @@ Agora você está pronto para adicionar um pouco de código Python para implemen
 
 1. Clique com o botão direito do mouse em *app.py* no **Gerenciador de Soluções** e selecione **Definir como arquivo de inicialização**. Esse comando identifica o arquivo de código para iniciar em Python ao executar o aplicativo.
 
+    ::: moniker range="vs-2017"
     ![Definir o arquivo de inicialização para um projeto no Gerenciador de Soluções](media/quickstart-python-05-set-as-startup-file.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![Definir o arquivo de inicialização para um projeto no Gerenciador de Soluções](media/quickstart-python-05-set-as-startup-file-2019.png)
+    ::: moniker-end
+
+1. Clique com o botão direito do mouse em *app.py* no **Gerenciador de Soluções** e selecione **Definir como arquivo de inicialização**. Esse comando identifica o arquivo de código para iniciar em Python ao executar o aplicativo.
 
 2. Clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades**. Selecione a guia **Depurar** e defina a propriedade **Número da porta** para `4449`. Essa etapa garante que o Visual Studio inicie um navegador com `localhost:4449` para corresponder aos argumentos `app.run` no código.
 
