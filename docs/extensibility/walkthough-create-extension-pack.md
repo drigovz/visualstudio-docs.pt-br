@@ -10,12 +10,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718350"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983007"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Passo a passo: Criar um pacote de extensões
 
@@ -85,7 +85,7 @@ Agora que a extensão for publicada, instalá-lo no Visual Studio e testá-lo l�
 
 Para remover a extensão do seu computador:
 
-1. No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações...** .
+1. No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações**.
 
 2. Selecione `Test Extension Pack` e, em seguida, clique em **desinstalação**. A extensão e sua lista de extensões incluídas no pacote de extensão, em seguida, serão agendadas para desinstalação.
 

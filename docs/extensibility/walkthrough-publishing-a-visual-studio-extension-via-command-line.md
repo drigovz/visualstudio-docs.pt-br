@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695363"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983371"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Passo a passo: Publicando uma extensão do Visual Studio por meio da linha de comando
 
@@ -290,7 +290,7 @@ Você pode remover a extensão do Visual Studio Marketplace e do seu computador.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Para remover a extensão do seu computador
 
-1. No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações...** .
+1. No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações**.
 
 2. Selecione "MyVsixExtension" e, em seguida, clique em **desinstalação**. Em seguida, a extensão será agendada para desinstalação.
 
