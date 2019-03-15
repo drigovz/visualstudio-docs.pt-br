@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223189"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870354"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -102,14 +102,14 @@ Se você tiver um diagrama de dependência aberto que esteja vinculado a itens d
     > [!NOTE]
     > Por padrão, o **ação de compilação** no arquivo de diagrama (. layerdiagram) dependência estiver definida como **validar** para que o diagrama seja incluído no processo de validação.
 
-     O **Error List** janela relata os erros que ocorrem. Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
+     O **Error List** janela relata os erros que ocorrem. Para obter mais informações sobre erros de validação, consulte [solucionar problemas de validação de camada](#troubleshoot-layer-validation-issues).
 
 2.  Para exibir a origem de cada erro, clique duas vezes no erro na **Error List** janela.
 
     > [!NOTE]
     > Visual Studio pode mostrar um mapa de código em vez da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly que não é especificado no diagrama de dependência ou o código não tem uma dependência que é especificada no diagrama de dependência. Examine o mapa de códigos ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de código, consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Para gerenciar erros, consulte [gerenciar erros de validação](#ManageErrors).
+3.  Para gerenciar erros, consulte [resolver erros de validação de camada](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Validar o código no prompt de comando
 
@@ -147,7 +147,7 @@ Se você tiver um diagrama de dependência aberto que esteja vinculado a itens d
 
      Todos os erros ocorridos serão listados. Para obter mais informações sobre o MSBuild, consulte [MSBuild](../msbuild/msbuild.md) e [tarefa MSBuild](../msbuild/msbuild-task.md).
 
-   Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
+   Para obter mais informações sobre erros de validação, consulte [solucionar problemas de validação de camada](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Gerenciar erros na validação
 
@@ -195,11 +195,11 @@ Use um editor de texto para abrir o arquivo do projeto de modelagem (.modelproj)
 
     Isso inclui o diagrama de dependência no processo de validação.
 
-Para gerenciar erros na janela lista de erros, consulte [gerenciar erros de validação](#ManageErrors).
+Para gerenciar erros na janela lista de erros, consulte [resolver erros de validação de camada](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Solucionar problemas de validação da camada
 
-A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
+A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [solucionar problemas de validação de camada](#troubleshoot-layer-validation-issues).
 
 |**Problema**|**Possível causa**|**Resolução**|
 |-|-|-|

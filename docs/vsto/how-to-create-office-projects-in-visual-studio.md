@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614305"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868166"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Como: Criar projetos do Office no Visual Studio
   Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar o suplemento do VSTO e o nível de documento personalizações para aplicativos do Microsoft Office. Para obter mais informações sobre esses tipos de projetos, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -85,17 +85,18 @@ ms.locfileid: "56614305"
 
 7. Escolha o botão **OK**.
 
-    > [!NOTE]
-    >  Projetos de suplemento são sempre salvas quando eles são criados. Eles não podem ser criados como projetos temporários. Para obter mais informações sobre projetos temporários, consulte [projetos temporários](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Projetos de suplemento são sempre salvas quando eles são criados. Eles não podem ser criados como projetos temporários. Para obter mais informações sobre projetos temporários, consulte [projetos temporários](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Para criar um projeto de personalização de nível de documento
 
 1. No menu **Arquivo**, escolha **Novo** > **Projeto**. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual Basic, nos **arquivo** menu, escolha **New** > **projeto**.
 
     A caixa de diálogo **Novo Projeto** é exibida.
-
-   > [!NOTE]
-   >  Projetos do Office direcionam o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] por padrão.  Para obter mais informações, consulte [perfil de cliente do .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. No painel de modelos, sob o nó para o idioma que você deseja usar, expanda **Office/SharePoint**.
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614305"
 4. Na lista de modelos de projeto, selecione um modelo de projeto de nível de documento. Para obter uma lista de modelos de projeto de nível de documento disponíveis, consulte [visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Se os modelos de projeto não são visíveis quando você seleciona os **suplementos do Office** nó, verifique se **.NET Framework 4** ou posterior está selecionado na caixa de combinação na parte superior da caixa de diálogo. Modelos de projeto do Office são visíveis para ambas as versões do .NET Framework.
+   > Se os modelos de projeto não são visíveis quando você seleciona os **suplementos do Office** nó, verifique se **.NET Framework 4** ou posterior está selecionado.
 
 5. No **nome** , digite um nome para o projeto. Por padrão, esse nome também é usado para o documento. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual c# ou configurações desenvolvimento gerais, insira também um local e o nome da solução.
 
    > [!NOTE]
-   >  Você não pode usar caracteres substitutos no caminho do local do projeto ou no nome do projeto. Além disso, se você planeja implantar a solução para uso offline, os caracteres no nome do projeto devem se ajustar as especificações de protocolo HTTP.
+   > Você não pode usar caracteres substitutos no caminho do local do projeto ou no nome do projeto. Além disso, se você planeja implantar a solução para uso offline, os caracteres no nome do projeto devem se ajustar as especificações de protocolo HTTP.
 
 6. Escolha o botão **OK**.
 

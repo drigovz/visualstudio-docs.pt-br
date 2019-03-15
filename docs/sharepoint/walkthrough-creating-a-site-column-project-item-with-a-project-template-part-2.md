@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604851"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868098"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de projeto no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para criar um novo projeto que contém o item de projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.
@@ -195,7 +195,7 @@ ms.locfileid: "56604851"
 
 - O Gerenciador de assinatura do projeto.
 
-  Para obter mais informações sobre esses componentes, consulte [Noções básicas sobre o Assistente de componentes](#wizardcomponents).
+  Para obter mais informações sobre esses componentes, consulte [compreender os componentes do assistente](#understand-the-wizard-components).
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>Para definir as IDs de comando do SharePoint
 

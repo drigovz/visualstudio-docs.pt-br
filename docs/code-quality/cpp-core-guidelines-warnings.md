@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223488"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872428"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 
@@ -187,7 +187,7 @@ O verificador de análise de código nativo (PREfast) é integrado ao ambiente d
 
 Verifique se que você adicionar essas propriedades antes da importação do arquivo Microsoft.Cpp.targets. Você pode escolher os conjuntos de regras específicas ou criar um conjunto de regras personalizadas ou usar o conjunto de regras padrão que inclui outras verificações PREfast.
 
-Você pode executar o verificador de núcleo do C++ somente em arquivos especificados usando a mesma abordagem [descritos anteriormente](#coreckeck_per_file), mas usando arquivos do MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
+Você pode executar o verificador de núcleo do C++ somente em arquivos especificados usando a mesma abordagem [descritos anteriormente](#corecheck_per_file), mas usando arquivos do MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
 
 ```xml
 <ItemGroup>

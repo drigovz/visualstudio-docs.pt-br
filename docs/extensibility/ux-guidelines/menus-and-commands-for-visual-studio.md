@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b726d13d77c56446ff19dbb477d29ec58627341
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1b7fb3b82d56038695c728d2125658a7f51d31f6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690624"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870472"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para o Visual Studio
 ## <a name="command-usage"></a>Uso do comando
@@ -229,7 +229,7 @@ ms.locfileid: "56690624"
 
 #### <a name="when-naming-commands"></a>Quando nomear comandos:
 
--   Construa o texto para que ele seja facilmente localizável. Para obter mais informações sobre como localizar texto, consulte [preparação para o mundo para o Visual Studio](http://msdn.microsoft.com/en-us/1cc35051-8126-441f-bea9-059245a47b1d).
+-   Construa o texto para que ele seja facilmente localizável. Para obter mais informações sobre como localizar texto, consulte [práticas recomendadas de localização](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
 -   Seja conciso. Comandos devem usar não mais do que três palavras.
 

@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841709"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867700"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Passo a passo: Perfil de um aplicativo do SharePoint
   Este passo a passo mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que pode degradar o desempenho do receptor de evento do recurso. O criador de perfil do Visual Studio permite que você localize e eliminar a parte mais cara (desempenho mais lento) do projeto, também conhecido como o *afunilamento*.
 
  Este passo a passo demonstra as seguintes tarefas:
 
-- [Adicionando um recurso e o receptor de evento de recurso](#BKMK_AddFtrandFtrEvntReceiver).
+- [Addg um recurso e o receptor de evento de recurso](#add-a-feature-and-feature-event-receiver).
 
-- [Configurando e implantando o aplicativo do SharePoint](#BKMK_ConfigSharePointApp).
+- [Configurar e implantar o aplicativo do SharePoint](#configure-and-deploy-the-sharepoint-application).
 
-- [Executando o aplicativo do SharePoint](#BKMK_RunSPApp).
+- [Executar o aplicativo do SharePoint](#run-the-sharepoint-application).
 
-- [Exibir e interpretar os resultados de criação de perfil](#BKMK_ViewResults).
+- [Exibir e interpretar os resultados de perfil](#view-and-interpret-the-profile-results).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

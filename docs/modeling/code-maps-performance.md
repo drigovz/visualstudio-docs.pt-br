@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913178"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872382"
 ---
 # <a name="improve-performance-for-code-maps"></a>Melhorar o desempenho de mapas de código
 
 Quando você gera um mapa pela primeira vez, o Visual Studio indexa todas as dependências que encontra. Esse processo pode levar algum tempo, especialmente para grandes soluções, mas melhora o desempenho posterior. Se o código for alterado, o Visual Studio só reindexará o código atualizado. Para minimizar o tempo necessário para o mapa concluir a renderização, considere as seguintes sugestões:
 
-- [Mapear as dependências que lhe interessam.](#create-a-code-map-to-see-specific-dependencies)
+- Mapear as dependências que lhe interessam.
 
 - Antes de gerar o mapa para uma solução inteira, reduza o escopo da solução.
 
