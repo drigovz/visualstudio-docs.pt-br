@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932008"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866991"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Conjuntos de regras para analisadores de Roslyn
 
-Conjuntos de regras predefinidas são incluídos com alguns pacotes NuGet do analisador. Por exemplo, os conjuntos de regras que são incluídos com o [pacote do NuGet fxcopanalyzers analisador](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (começando na versão 2.6.2) habilitar ou desabilitar regras com base em sua categoria, como segurança, nomenclatura, ou desempenho. Usando conjuntos de regras torna mais fácil ver rapidamente apenas essas violações de regra que pertencem a uma determinada categoria de regra.
+Conjuntos de regras predefinidas são incluídos com alguns pacotes NuGet do analisador. Por exemplo, os conjuntos de regras que são incluídos com o [fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pacote do NuGet analyzer (começando na versão 2.6.2) habilitar ou desabilitar regras com base em sua categoria, como segurança, nomenclatura, ou desempenho. Usando conjuntos de regras torna mais fácil ver rapidamente apenas essas violações de regra que pertencem a uma determinada categoria de regra.
 
 Se você estiver migrando de análise de código estático "FxCop" herdada para analisadores de Roslyn, esses conjuntos de regras permitem que você continue usando as mesmas configurações de regra que você usou anteriormente.
 
@@ -41,7 +41,7 @@ Os conjuntos de regra do analisador predefinido incluem três conjuntos de regra
 
 Além disso, há dois conjuntos de regras para cada categoria de regras no pacote, como desempenho ou segurança. Um conjunto de regras permite que todas as regras para a categoria e um conjunto de regras respeita as configurações de severidade e habilitação de padrão para cada regra na categoria.
 
- O [pacote do NuGet fxcopanalyzers analisador](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) inclui conjuntos de regras para as seguintes categorias, para corresponder os conjuntos de regras disponíveis para análise de código estático "FxCop" herdada:
+O [fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pacote do NuGet do analisador inclui conjuntos de regras para as seguintes categorias, que correspondem aos conjuntos de regras disponíveis para análise de código estático "FxCop" herdados:
 
 - design
 - documentação
@@ -54,7 +54,8 @@ Além disso, há dois conjuntos de regras para cada categoria de regras no pacot
 
 ## <a name="see-also"></a>Consulte também
 
+- [Analisadores de perguntas Frequentes](analyzers-faq.md)
 - [Visão geral dos analisadores do .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Instalar analisadores do .NET Compiler Platform](install-roslyn-analyzers.md)
-- [Configurar e usar regras do analisador Roslyn](use-roslyn-analyzers.md)
+- [Instalar analisadores](install-roslyn-analyzers.md)
+- [Usar analisadores](use-roslyn-analyzers.md)
 - [Usar conjuntos de regras para agrupar regras de análise de código](using-rule-sets-to-group-code-analysis-rules.md)

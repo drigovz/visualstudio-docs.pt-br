@@ -1,6 +1,6 @@
 ---
 title: 'CA1716: Identificadores não devem corresponder a palavras-chave'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb483206ba13f89f0a23667039bf5f1a9d740b73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910189"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867726"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identificadores não devem corresponder a palavras-chave
 
@@ -32,7 +32,9 @@ ms.locfileid: "55910189"
 
 ## <a name="cause"></a>Causa
 
-Um nome de um namespace, um tipo ou membro viritual ou interface corresponde a uma palavra-chave reservada em uma linguagem de programação.
+O nome de um namespace, tipo, ou virtual ou membro de interface corresponde a uma palavra-chave reservada em uma linguagem de programação.
+
+Por padrão, essa regra olha apenas visível externamente namespaces, tipos e membros, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -41,12 +43,10 @@ Identificadores de namespaces, tipos e virtuais e os membros de interface não d
 Esta regra verifica em palavras-chave nos seguintes idiomas:
 
 - Visual Basic
-
 - C#
-
 - C++/CLI
 
-Comparação de maiusculas e minúsculas é usada para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] comparação diferencia maiusculas de minúsculas e palavras-chave é usada para os outros idiomas.
+Comparação diferencia maiusculas de minúsculas é usada para palavras-chave do Visual Basic, e a comparação diferencia maiusculas de minúsculas é usada para os outros idiomas.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -54,4 +54,14 @@ Selecione um nome que não aparece na lista de palavras-chave.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Se você estiver convencido de que o identificador não confundir os usuários da API, e que a biblioteca é utilizável em todos os idiomas disponíveis no .NET Framework, você pode suprimir um aviso nessa regra.
+Se você estiver convencido de que o identificador não confundir os usuários da API, e que a biblioteca é utilizável em todos os idiomas disponíveis no .NET, você pode suprimir um aviso nessa regra.
+
+## <a name="configurability"></a>Capacidade de configuração
+
+Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+
+```
+dotnet_code_quality.ca1716.api_surface = private, internal
+```
+
+Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (nomenclatura). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).

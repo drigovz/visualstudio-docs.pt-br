@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642827"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867557"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empacotar e implantar soluções do SharePoint
   Normalmente, uma solução do SharePoint é implantada em um servidor do SharePoint usando um arquivo de pacote (. wsp) da solução. Você pode usar o Visual Studio para organizar os itens de projeto do SharePoint em recursos e criar um pacote para implantar seus recursos do SharePoint.
 
  Este tópico fornece as seguintes informações:
 
--   [Criando recursos e pacotes](#Creating)
+-   [Criar recursos e pacotes](#create-features-and-packages)
 
--   [Recursos e suporte à ferramenta de empacotamento](#Tools)
+-   [Recursos e suporte de ferramenta de empacotamento](#feature-and-packaging-tool-support)
 
--   [Implantando soluções do SharePoint](#Deploying)
+-   [Implantar soluções do SharePoint](#deploy-sharepoint-solutions)
 
--   [Implantando arquivos em soluções do SharePoint](#DeployingFiles)
+-   [Implantar arquivos em soluções do SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Criar recursos e pacotes
  Você pode usar o Visual Studio para agrupar elementos relacionados do SharePoint em um *recurso*. Por exemplo, um recurso para uma definição de lista de contatos pode incluir a instância de lista e a definição de lista. Você pode combinar esses dois elementos em um único recurso para fins de implantação. Para obter mais informações sobre recursos, consulte [bloco de construção: Recursos](http://go.microsoft.com/fwlink/?LinkID=169183).

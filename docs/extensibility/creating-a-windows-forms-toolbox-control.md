@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687881"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872994"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Criar um controle de caixa de ferramentas do Windows Forms
 O modelo de item de controle de caixa de ferramentas do Windows Forms que está incluído no Visual Studio Extensibility Tools (SDK do VS) permite que você crie um controle que é adicionado automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar um controle de um contador simples que você pode distribuir a outros usuários.
@@ -206,7 +206,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
     O contador é redefinido como **0**.
 
 ## <a name="next-steps"></a>Próximas etapas
-Quando você cria um **caixa de ferramentas** controle, o Visual Studio cria um arquivo chamado *ProjectName.vsix* na pasta \bin\debug\ do seu projeto. Você pode implantar o controle ao carregar o *VSIX* arquivo a uma rede ou para um site da Web. Quando um usuário abre o *. VSIX* arquivo, o controle está instalado e adicionado ao Visual Studio **caixa de ferramentas** no computador do usuário. Como alternativa, você pode carregar os *. VSIX* arquivo [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) para que os usuários podem encontrá-lo, navegando no **ferramentas**  >   **Extensões e atualizações** caixa de diálogo.
+Quando você cria um **caixa de ferramentas** controle, o Visual Studio cria um arquivo chamado *ProjectName.vsix* na pasta \bin\debug\ do seu projeto. Você pode implantar o controle ao carregar o *VSIX* arquivo a uma rede ou para um site da Web. Quando um usuário abre o *. VSIX* arquivo, o controle está instalado e adicionado ao Visual Studio **caixa de ferramentas** no computador do usuário. Como alternativa, você pode carregar os *. VSIX* arquivo [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que os usuários podem encontrá-lo, navegando no **ferramentas**  >   **Extensões e atualizações** caixa de diálogo.
 
 ## <a name="see-also"></a>Consulte também
 - [Estender outras partes do Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796667"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870267"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 Esta seção fornece informações detalhadas sobre as extensões do Visual Studio, incluindo a arquitetura do Visual Studio, componentes, serviços, esquemas, utilitários e assim por diante.
@@ -90,7 +90,7 @@ Esta seção fornece informações detalhadas sobre as extensões do Visual Stud
  Para obter mais informações, consulte [projetos](../../extensibility/internals/projects.md) e [soluções](../../extensibility/internals/solutions.md).
 
 ## <a name="project-and-item-templates"></a>Modelos de item e de projeto
- Visual Studio inclui modelos de projeto predefinidos e modelos de item de projeto. Você pode também tornar seus próprios modelos ou adquirir modelos da comunidade e, em seguida, integrá-las ao Visual Studio. O [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) é o lugar ideal para os modelos e extensões.
+ Visual Studio inclui modelos de projeto predefinidos e modelos de item de projeto. Você pode também tornar seus próprios modelos ou adquirir modelos da comunidade e, em seguida, integrá-las ao Visual Studio. O [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) é o lugar ideal para os modelos e extensões.
 
  Modelos contêm a estrutura de projeto e os arquivos básicos que são necessários para compilar um determinado tipo de aplicativo, controle, biblioteca ou classe. Quando você deseja desenvolver um software que se parece com um dos modelos, criar um projeto com base no modelo e, em seguida, modifique os arquivos no projeto.
 

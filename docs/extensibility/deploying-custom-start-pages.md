@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693003"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872993"
 ---
 # <a name="deploy-custom-start-pages"></a>Implantar páginas de inicialização personalizada
 
@@ -29,7 +29,7 @@ Quando você cria uma página inicial, usando o modelo de projeto de página ini
 
 -   Você pode colocar o *VSIX* arquivo em um compartilhamento de rede ou em um site público. Quando alguém abre o arquivo, a página de início é instalada automaticamente.
 
--   Você pode carregar os *. VSIX* do arquivo para o [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) Web site para que os usuários podem instalá-lo usando **Gerenciador de extensões**.
+-   Você pode carregar os *. VSIX* do arquivo para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site para que os usuários podem instalá-lo usando **Gerenciador de extensões**.
 
 O modelo de página inicial do projeto cria uma cópia da página de início do Visual Studio padrão para que você possa modificar a cópia e preservar o original.
 

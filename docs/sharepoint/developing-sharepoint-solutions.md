@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618140"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870422"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desenvolver soluções do SharePoint
   Vários modelos de tipo de projeto do SharePoint estão disponíveis no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para a criação de sites do SharePoint e os elementos do site. Para obter uma lista dos tipos de projeto disponíveis, consulte [SharePoint modelos de item de projeto e projeto](../sharepoint/sharepoint-project-and-project-item-templates.md). Veja a seguir uma descrição dos elementos e propriedades de um projeto do SharePoint.
 
- Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) e [suplementos do SharePoint compilar](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e [suplementos do SharePoint compilar](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Elementos de um projeto do SharePoint
  Os nós em um projeto do SharePoint são conhecidos como *itens do SharePoint*. Itens do SharePoint também podem conter um ou mais subarquivos, conhecidos como *arquivos de item do SharePoint*, como [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivos de configuração, os formulários. aspx e muito mais.

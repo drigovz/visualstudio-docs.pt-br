@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff441de5d3643a1c8c4e9b57a98c7a5563d1ea62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ab7ffdf6e9323b3d4ee67b2bf237b271abb1a7d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653964"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869339"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Como: Configurar um computador para desenvolver soluções do Office
   Para configurar um computador de desenvolvimento para que você pode usar o Microsoft Office developer tools no Visual Studio, siga as instruções neste tópico. Você deve ter privilégios administrativos no computador de desenvolvimento para executar essas etapas.
@@ -34,7 +34,7 @@ ms.locfileid: "56653964"
 3.  Se você tiver uma versão em inglês do Visual Studio, mas usa configurações diferentes do inglês para Windows, você pode instalar o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pacote de idiomas para ver [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mensagens no mesmo idioma do Windows. Essas versões do Visual Studio instalam automaticamente o pacote de idiomas. O pacote de idiomas está disponível na [Centro de download da Microsoft](http://go.microsoft.com/fwlink/?LinkId=140386).
 
 ## <a name="see-also"></a>Consulte também
-- [O que há de novo no desenvolvimento do Office](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)
+
 - [Introdução ao &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Como: Instalar o Visual Studio Tools for Office runtime redistribuível](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Como: Instalar assemblies de interoperabilidade primários do Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

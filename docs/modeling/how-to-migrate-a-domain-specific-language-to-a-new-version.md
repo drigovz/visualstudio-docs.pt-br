@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc7694ca7e2b000392aa18dcd45284560ed84ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dae9c7728de35c92c973c9fca097595b56aabaf5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924411"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869238"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como: Migrar uma Linguagem Específica de Domínio para uma nova versão
 Você pode migrar os projetos que definem e usam a linguagem específica de domínio para [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] da versão do [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que foi distribuído com [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -87,4 +87,4 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
 
 ## <a name="see-also"></a>Consulte também
 
-- [Postagens de blogs relacionadas](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+- [Postagens de blogs relacionadas](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

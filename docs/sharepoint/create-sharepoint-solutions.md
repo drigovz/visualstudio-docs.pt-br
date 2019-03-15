@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c29c74388ed5766827ef04b378aa2d51167662d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599824"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869909"
 ---
 # <a name="create-sharepoint-solutions"></a>Criar soluções do SharePoint
   Você pode criar aplicativos do SharePoint no Visual Studio como uma alternativa a criá-los no SharePoint Designer. O Visual Studio promove rápido desenvolvimento do SharePoint, fornecendo recursos como ferramentas avançadas de depuração, IntelliSense, conclusão da instrução e modelos de projeto. Visual Studio também aproveita ferramentas avançadas com base no .NET Framework e linguagens. Você pode desenvolver projetos do SharePoint usando o Visual Basic ou Visual c#, e você pode desenvolver aplicativos para projetos SharePoint usando JavaScript.
 
- Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) e [crie aplicativos para o SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e [crie aplicativos para o SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
 >  Saiba como usar a nova [modelo de suplemento do SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) para estender a experiência do SharePoint para seus usuários. Esses suplementos têm superfície muito pequenas em comparação com soluções do SharePoint, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.

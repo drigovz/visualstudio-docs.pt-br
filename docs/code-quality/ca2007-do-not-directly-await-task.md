@@ -1,5 +1,5 @@
 ---
-title: 'CA2007: Não diretamente espera uma tarefa'
+title: 'CA2007: não aguardar diretamente uma tarefa'
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699675"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869283"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Não diretamente espera uma tarefa
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: não aguardar diretamente uma tarefa
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>Capacidade de configuração
+
+Você pode configurar se deseja excluir os métodos assíncronos que não retornam um valor a partir dessa regra. Para excluir esses tipos de métodos, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+Você também pode configurar quais tipos de assembly ao qual aplicar essa regra de saída. Por exemplo, para aplicar somente a regra ao código que produz um aplicativo de console ou uma biblioteca de vínculos dinâmicos (ou seja, não uma interface do usuário app), adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Consulte também
 
