@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323926"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868295"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 
@@ -706,7 +706,7 @@ Este passo a passo demonstra como incorporar o conteúdo da Ajuda em um aplicati
 
 1.  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
-2.  [Pacote redistribuível do Shell de isolado do Visual Studio 2013](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2.  [Pacote redistribuível do Shell de isolado do Visual Studio 2013](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
 **Visão geral**
 

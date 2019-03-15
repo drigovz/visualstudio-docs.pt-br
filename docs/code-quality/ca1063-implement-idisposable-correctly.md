@@ -1,6 +1,6 @@
 ---
 title: 'CA1063: Implementar IDisposable corretamente'
-ms.date: 02/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945749"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868308"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable corretamente
 
@@ -52,7 +52,9 @@ O <xref:System.IDisposable?displayProperty=nameWithType> interface não está im
 
 Aviso CA1063 dispara a violação de qualquer um desses padrões.
 
-Cada tipo sem lacre que declara e implementa o <xref:System.IDisposable> interface deve fornecer seu próprio método void Dispose (bool) virtual protegido. Dispose () deve chamar Dipose(true) e o finalizador deve chamar Dispose (False). Se você criar um tipo sem lacre que declara e implementa o <xref:System.IDisposable> interface, você deve definir Dispose (bool) e chamá-lo. Para obter mais informações, consulte [limpar recursos não gerenciados (guia do .NET)](/dotnet/standard/garbage-collection/unmanaged) e [padrão de descarte](/dotnet/standard/design-guidelines/dispose-pattern).
+Cada tipo sem lacre que declara e implementa o <xref:System.IDisposable> interface deve fornecer seu próprio `protected virtual void Dispose(bool)` método. `Dispose()` deve chamar `Dipose(true)`, e o finalizador deve chamar `Dispose(false)`. Se você criar um tipo sem lacre que declara e implementa o <xref:System.IDisposable> interface, você deve definir `Dispose(bool)` e chamá-lo. Para obter mais informações, consulte [limpar recursos não gerenciados (guia do .NET)](/dotnet/standard/garbage-collection/unmanaged) e [padrão de descarte](/dotnet/standard/design-guidelines/dispose-pattern).
+
+Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -83,6 +85,16 @@ Examine seu código e determinar qual das seguintes resoluções corrigirá essa
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
 Não suprima um aviso nessa regra.
+
+## <a name="configurability"></a>Capacidade de configuração
+
+Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+
+```
+dotnet_code_quality.ca1063.api_surface = private, internal
+```
+
+Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (Design). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
 
 ## <a name="pseudo-code-example"></a>Exemplo de pseudocódigo
 

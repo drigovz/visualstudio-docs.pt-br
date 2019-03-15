@@ -1,5 +1,5 @@
 ---
-title: Usar e configurar os analisadores de Roslyn
+title: Gravidade da regra de analisador e supressão
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924598"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873496"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurar e usar regras do analisador Roslyn
+# <a name="use-roslyn-analyzers"></a>Usar os analisadores de Roslyn
 
 Regras do analisador do .NET compiler Platform ("Roslyn"), ou *diagnóstico*, analisar seu código c# ou Visual Basic, conforme você digita. Cada diagnóstico tem um estado de gravidade e supressão de padrão que pode ser substituído para o seu projeto. Este artigo aborda a severidade de regra de configuração, usando conjuntos de regras e suprimindo violações.
 
@@ -91,7 +91,7 @@ Você pode alterar a severidade de uma regra de **Gerenciador de soluções**, o
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Definir regra de gravidade na regra definida arquivo
 
-1. Abra o conjunto de regras arquivo clicando duas vezes no **Gerenciador de soluções**, selecionando **abrir conjunto de regras de Active Directory** no menu de atalho do **analisadores** nó, ou selecionando **Aberto** na **análise de código** página de propriedades para o projeto.
+1. Abra o [conjunto de regras](analyzer-rule-sets.md) arquivo clicando duas vezes no **Gerenciador de soluções**, selecionando **abrir conjunto de regras de Active Directory** no menu de atalho do **analisadores** nó, ou selecionando **aberto** no **análise de código** página de propriedades para o projeto.
 
 1. Navegue até a regra, expandindo o seu assembly de contenção.
 

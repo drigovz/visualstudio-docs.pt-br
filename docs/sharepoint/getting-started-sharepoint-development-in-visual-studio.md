@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873204"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869012"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Obter Introdução (desenvolvimento do SharePoint no Visual Studio)
   Esta seção ajuda você a começar a trabalhar com [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para desenvolver soluções do SharePoint que aproveitam [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) e [suplementos do SharePoint compilar](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e [suplementos do SharePoint compilar](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  O SharePoint oferece uma plataforma de colaboração baseada na Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fornece que muitos modelos de projeto para criação de sites do SharePoint e o conteúdo, incluindo as definições de lista, fluxos de trabalho, modelos de conectividade de dados de negócios e as definições de site. Além disso, você pode criar extensões para projetos do SharePoint e ferramentas no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 

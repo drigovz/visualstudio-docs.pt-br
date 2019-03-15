@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640227"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873104"
 ---
 # <a name="debug-sharepoint-solutions"></a>Depurar soluções do SharePoint
   Você pode depurar soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Quando você inicia a depuração, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implanta os arquivos de projeto para o servidor do SharePoint e, em seguida, abre uma instância do site do SharePoint no navegador da Web. As seções a seguir explicam como depurar aplicativos do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Habilitando a depuração](#EnableDebug)
+-   [Habilitar a depuração](#enable-debugging)
 
--   [Processo de implantação e depuração F5](#Deployment)
+-   [Processo de implantação e depuração F5](#f5-debug-and-deployment-process)
 
--   [Recursos de projeto do SharePoint](#Features)
+-   [Recursos de projeto do SharePoint](#sharepoint-project-features)
 
--   [Depurando fluxos de trabalho](#Workflow)
+-   [Depurar fluxos de trabalho](#debug-workflows)
 
--   [Receptores de evento de depuração](#FeatureEvents)
+-   [Receptores de evento de depuração](#debug-feature-event-receivers)
 
--   [Habilitar informações de depuração aprimoradas](#EnhancedDebug)
+-   [Habilitar ehanced informações de depuração](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Habilitar a depuração
  Quando você depura uma solução do SharePoint no primeiro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], uma caixa de diálogo alerta você que o arquivo Web. config não está configurado para habilitar a depuração. (O arquivo Web. config é criado quando você instala o SharePoint server. Para obter mais informações, consulte [trabalhando com arquivos Web. config](http://go.microsoft.com/fwlink/?LinkID=149266).) A caixa de diálogo lhe dá a opção de execução do projeto sem depuração ou modificando o arquivo Web. config para habilitar a depuração. Se você escolher a primeira opção, o projeto é executado normalmente. Se você escolher a segunda opção, o arquivo Web. config está configurado para:
@@ -137,7 +137,7 @@ ms.locfileid: "56640227"
 
  Para desabilitar a ativação automática do recurso no SharePoint e permitir a depuração adequada de receptores de evento, defina o valor do projeto **configuração de implantação ativa** propriedade **sem ativação** antes de depurar. Em seguida, depois de começar a depurar seu aplicativo do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], manualmente ativar o recurso no SharePoint. Para ativar o recurso, abra o **ações do Site** menu no SharePoint, escolha **configurações de Site**, escolha o **gerenciar recursos de Site** vincular e, em seguida, escolha o **Activate** botão ao lado do recurso, para continuar a depuração como de costume.
 
-## <a name="enable-enhanced-debug-information"></a>Habilitar informações de depuração avançada
+## <a name="enable-enhanced-debugging-information"></a>Habilitar informações de depuração avançadas
  Devido a interações complexas, às vezes, entre o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo (devenv.exe), o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo de host do SharePoint (*vssphost4.exe*), SharePoint e a camada do WCF, diagnóstico de erros que ocorrem enquanto Compilando, implantando e assim por diante podem ser um desafio. Para ajudá-lo a resolver esses erros, você pode habilitar as informações de depuração aprimoradas. Para fazer isso, vá para a seguinte chave do registro no registro do Windows:
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**
