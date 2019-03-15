@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270570"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983449"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analisadores FxCop no Visual Studio
 
@@ -54,12 +54,27 @@ Use as diretrizes a seguir para determinar qual versão do pacote de analisadore
 
 No Visual Studio 2017 versão 15.5 e posteriores, você pode instalar o [2017 de análise de código Microsoft](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) extensão que contém todos os analisadores FxCop para projetos gerenciados.
 
+::: moniker range="vs-2017"
+
 1. No Visual Studio, selecione **ferramentas** > **extensões e atualizações**.
 
    A caixa de diálogo **Extensões e Atualizações** é aberta.
 
    > [!NOTE]
    > Como alternativa, baixe a extensão diretamente [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. No Visual Studio, selecione **extensões** > **gerenciar extensões**.
+
+   O **gerenciar extensões** caixa de diálogo é aberta.
+
+   > [!NOTE]
+   > Como alternativa, baixe a extensão diretamente [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
 
 1. Expandir **Online** no painel esquerdo e, em seguida, selecione **Visual Studio Marketplace**.
 
@@ -83,7 +98,17 @@ No Visual Studio 2017 versão 15.5 e posteriores, você pode instalar o [2017 de
 
 1. Abra o Visual Studio novamente.
 
+::: moniker range="vs-2017"
+
 Se você deseja verificar se a extensão é instalada, selecione **ferramentas** > **extensões e atualizações**. No **extensões e atualizações** caixa de diálogo, selecione o **instalado** categoria à esquerda e, em seguida, pesquise a extensão pelo nome.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se você deseja verificar se a extensão é instalada, selecione **extensões** > **gerenciar extensões**. No **gerenciar extensões** caixa de diálogo, selecione o **instalado** categoria à esquerda e, em seguida, pesquise a extensão pelo nome.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Consulte também
 

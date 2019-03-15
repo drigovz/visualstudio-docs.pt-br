@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915615"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983098"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 
@@ -37,9 +37,19 @@ Sua extensão é compilada em um arquivo VSIX, que pode ser instalado em outros 
 
 ### <a name="to-uninstall-the-extension"></a>Para desinstalar a extensão
 
-1.  No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações**.
+::: moniker range="vs-2017"
 
-2.  Clique no nome da extensão e, em seguida, clique em **desinstalação**.
+1. No Visual Studio, escolha **ferramentas** > **extensões e atualizações**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. No Visual Studio, escolha **extensões** > **gerenciar extensões**.
+
+::: moniker-end
+
+2. Clique no nome da extensão e, em seguida, clique em **desinstalação**.
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Instalar uma extensão no Team Foundation Server
 
