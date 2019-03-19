@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601017"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146520"
 ---
 # <a name="project-persistence"></a>Persistência de projeto
 Persistência é uma consideração de design chave para seu projeto. A maioria dos projetos usar itens de projeto que representam arquivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] também oferece suporte a projetos cujos dados são não baseados em arquivo. Os arquivos de propriedade do projeto e o arquivo de projeto devem ser persistente. O IDE instrui o projeto para salvar a mesmo ou para um item de projeto.
 
- Modelos para projetos são passados para a fábrica de projeto. Os modelos devem dar suporte a inicialização de todos os itens de projeto acordo com os requisitos do tipo de projeto específico. Esses modelos podem posteriormente salvos como arquivos de projeto e gerenciados pelo IDE através da solução. Para obter mais informações, consulte [criação de projeto instâncias por usando fábricas de projetos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluções](../../extensibility/internals/solutions.md).
+ Modelos para projetos são passados para a fábrica de projeto. Os modelos devem dar suporte a inicialização de todos os itens de projeto acordo com os requisitos do tipo de projeto específico. Esses modelos podem posteriormente salvos como arquivos de projeto e gerenciados pelo IDE através da solução. Para obter mais informações, consulte [criação de projeto instâncias por usando fábricas de projetos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluções](../../extensibility/internals/solutions-overview.md).
 
  Itens de projeto podem ser baseado em arquivo ou não se baseiam no arquivo:
 

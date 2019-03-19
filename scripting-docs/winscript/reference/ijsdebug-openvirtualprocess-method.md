@@ -2,7 +2,6 @@
 title: 'Método ijsdebug:: Openvirtualprocess | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: daa5414153ee55a431294afaf7b167ee91839bfc
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 97a055bf1550d74dc6b86d93ffdb9ca406afb43d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093984"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151941"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>Método IJsDebug::OpenVirtualProcess
 Método de fábrica usado para criar um novo objeto de processo virtual.  
