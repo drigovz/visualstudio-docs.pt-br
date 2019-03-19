@@ -33,7 +33,7 @@
 ## [Bloquear Seleção](block-selection.md)
 ## [Temas do Editor](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Atalhos comuns do teclado](keyboard-shortcuts.md)
+## [Atalhos de teclado padrão](keyboard-shortcuts.md)
 
 # [Depuração](debugging.md)
 ## [Visualizações de dados](data-visualizations.md)
