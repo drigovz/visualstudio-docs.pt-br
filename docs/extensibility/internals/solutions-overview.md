@@ -1,5 +1,5 @@
 ---
-title: Visão geral das soluções | Microsoft Docs
+title: Visão geral das soluções
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,41 +10,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df03e73d963b7b1b6166b1376d31b517f515dcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6fe348d3e6b5c896ff4c76965b918d41dfe00328
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645453"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149582"
 ---
 # <a name="solutions-overview"></a>Visão geral das soluções
-Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo. As projeto e informações de status que pertencem à solução são armazenados em dois arquivos de solução diferente. O arquivo de solução (. sln) é baseado em texto e pode ser colocado sob controle do código-fonte e compartilhado entre usuários. O arquivo de opção (. suo) de usuário da solução é binário. Como resultado, o arquivo. suo não pode ser colocado sob controle do código-fonte e contém informações específicas do usuário.
 
- Qualquer VSPackage pode gravar em um dos tipos de arquivo de solução. Devido à natureza dos arquivos, há duas interfaces diferentes implementados para gravar a eles. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interface grava informações de texto para o arquivo e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interface grava fluxos binários no arquivo. suo.
+Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo. As projeto e informações de status que pertencem à solução são armazenados em dois arquivos de solução diferente. O [arquivo de solução (. sln)](solution-dot-sln-file.md) é baseado em texto e pode ser colocado sob controle do código-fonte e compartilhado entre usuários. O [arquivo de opção (. suo) de usuário de solução](solution-user-options-dot-suo-file.md) é binário. Como resultado, o arquivo. suo não pode ser colocado sob controle do código-fonte e contém informações específicas do usuário.
+
+Qualquer VSPackage pode gravar em um dos tipos de arquivo de solução. Devido à natureza dos arquivos, há duas interfaces diferentes implementados para gravar a eles. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interface grava informações de texto para o arquivo e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interface grava fluxos binários no arquivo. suo.
 
 > [!NOTE]
->  Um projeto não precisa gravar explicitamente uma entrada para si mesmo no arquivo de solução; o ambiente cuida disso para o projeto. Portanto, a menos que você deseja adicionar o conteúdo adicional especificamente para o arquivo de solução, não é necessário registrar o VSPackage dessa maneira.
+> Um projeto não precisa gravar explicitamente uma entrada para si mesmo no arquivo de solução; o ambiente cuida disso para o projeto. Portanto, a menos que você deseja adicionar o conteúdo adicional especificamente para o arquivo de solução, não é necessário registrar o VSPackage dessa maneira.
 
- Cada VSPackage que dão suporte a persistência de solução usa três interfaces, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interface, que é implementada pelo ambiente e chamado pelo VSPackage, e `IVsPersistSolutionProps` e `IVsPersistSolutionOpts`, que são implementados pelo VSPackage. O `IVsPersistSolutionOpts` interface só precisa ser implementado se informações particulares deve ser gravada pelo VSPackage para o arquivo. suo.
+Cada VSPackage que dão suporte a persistência de solução usa três interfaces, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interface, que é implementada pelo ambiente e chamado pelo VSPackage, e `IVsPersistSolutionProps` e `IVsPersistSolutionOpts`, que são implementados pelo VSPackage. O `IVsPersistSolutionOpts` interface só precisa ser implementado se informações particulares deve ser gravada pelo VSPackage para o arquivo. suo.
 
- Quando uma solução é aberta, o seguinte processo ocorre.
+Quando uma solução é aberta, o seguinte processo ocorre.
 
 1. O ambiente lê a solução.
 
 2. Se o ambiente de encontrar um `CLSID`, ele carrega o VSPackage correspondente.
 
-3. Se um VSPackage é carregado, as chamadas de ambiente `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interface para a interface que requer o VSPackage.
+3. Se um VSPackage é carregado, as chamadas de ambiente `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interface para a interface que exija o VSPackage.
 
-   1.  Ao ler de um arquivo. sln, o ambiente chama `QueryInterface` para `IVsPersistSolutionProps`.
+   - Ao ler de um arquivo. sln, o ambiente chama `QueryInterface` para `IVsPersistSolutionProps`.
 
-   2.  Ao ler de um arquivo. suo, o ambiente chama `QueryInterface` para `IVsPersistSolutionOpts`.
+   - Ao ler de um arquivo. suo, o ambiente chama `QueryInterface` para `IVsPersistSolutionOpts`.
 
    Informações específicas relacionadas ao uso desses arquivos podem ser encontradas no [solução (. Arquivo DPD)](../../extensibility/internals/solution-dot-sln-file.md) e [opções de usuário da solução (. Arquivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).
 
 > [!NOTE]
->  Se você quiser criar uma nova configuração de solução consiste em configurações de dois projetos e exclusão de um terço da compilação, você precisa usar a automação ou páginas de propriedade de interface do usuário. Você não pode alterar as configurações de Gerenciador de build da solução e suas propriedades diretamente, mas você pode manipular o Gerenciador de build da solução usando o `SolutionBuild` classe do DTE no modelo de automação. Para obter mais informações sobre a configuração de soluções, consulte [configuração da solução](../../extensibility/internals/solution-configuration.md).
+> Se você quiser criar uma nova configuração de solução consiste em configurações de dois projetos e exclusão de um terço da compilação, você precisa usar a automação ou páginas de propriedade de interface do usuário. Você não pode alterar as configurações de Gerenciador de build da solução e suas propriedades diretamente, mas você pode manipular o Gerenciador de build da solução usando o `SolutionBuild` classe do DTE no modelo de automação. Para obter mais informações sobre a configuração de soluções, consulte [configuração da solução](../../extensibility/internals/solution-configuration.md).
 
 ## <a name="see-also"></a>Consulte também
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
