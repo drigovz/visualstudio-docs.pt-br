@@ -2,7 +2,6 @@
 title: Estrutura PROFILER_HEAP_OBJECT_SCOPE_LIST | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: b1285e4efa3db8a7ec99808f5888d3dbf948e589
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344818"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152516"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>Estrutura PROFILER_HEAP_OBJECT_SCOPE_LIST
 Essa estrutura é associada a apenas os objetos de função. A lista de escopo representa o fechamento da função como uma lista de escopos, onde cada escopo é um objeto de heap com uma lista de propriedade associada que representa as variáveis em cada escopo fornecido. Em alguns casos, os nomes de objetos no escopo não esteja disponível e apenas seu índice na lista de propriedades está disponível.  
