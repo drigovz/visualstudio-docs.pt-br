@@ -5,19 +5,21 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 02/21/2019
 ms.topic: conceptual
-ms.prod: visual-studio-mac-dev16
+ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 84581fb3f6e33d22f0895b807998120ea7ca0cb7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 65b44dddfdadcb7ef38332fa35443dbaeededb5d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56724042"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152909"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Como: Definir vários projetos de inicialização
+
 O Visual Studio para Mac permite que você especifique como mais de um projeto é iniciado ao depurar ou executar sua solução.
 
 ## <a name="to-set-multiple-startup-projects"></a>Para definir vários projetos de inicialização
+
 1.  No **Painel de Soluções**, selecione a solução (o nó superior).
 
 2. Escolha o menu de contexto (de atalho) do nó da solução e, em seguida, escolha **Definir Projetos de Inicialização…**.

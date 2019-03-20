@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222890"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194052"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar um projeto do C++ para o IntelliSense
 
@@ -52,7 +52,7 @@ Para obter mais informações, confira [Como: Habilitar o IntelliSense para proj
 
 ### <a name="open-folder-projects"></a>Projetos de pasta aberta
 
-Para projetos CMake, certifique-se de que os caminhos de #include estejam especificados corretamente para todas as configurações em CMakeLists.txt. Outros tipos de projeto podem exigir um arquivo CppProperties.json. Para saber mais, confira [Configurar o IntelliSense com CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Os caminhos devem estar corretos para cada configuração definida no arquivo.
+Para projetos CMake, certifique-se de que os caminhos de #include estejam especificados corretamente para todas as configurações em CMakeLists.txt. Outros tipos de projeto podem exigir um arquivo CppProperties.json. Para saber mais, confira [Configurar o IntelliSense com CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Os caminhos devem estar corretos para cada configuração definida no arquivo.
 
 Se houver um erro de sintaxe no arquivo CppProperties.json, o IntelliSense ficará incorreto nos arquivos afetados. O Visual Studio exibirá o erro na Janela de Saída.
 
@@ -72,7 +72,7 @@ Há duas maneiras comuns em que esse problema se manifesta no Visual Studio:
 
    ![O Analisador de Marca se oferece para definir uma função existente](media/vcpp-intellisense-tag-parser-function.png)
 
-Para corrigir esses tipos de problemas, adicione um arquivo chamado **cpp.hint** na raiz do diretório de soluções. Para saber mais, confira [Arquivos de dicas](/cpp/ide/hint-files).
+Para corrigir esses tipos de problemas, adicione um arquivo chamado **cpp.hint** na raiz do diretório de soluções. Para saber mais, confira [Arquivos de dicas](/cpp/build/reference/hint-files).
 
 Os erros de analisador de marca são exibidos na janela **Lista de Erros**.
 

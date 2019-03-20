@@ -1,6 +1,6 @@
 ---
 title: Analisar o uso de memória sem depurar | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615905"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873448"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
 
@@ -72,7 +72,7 @@ Após interromper a coleta de dados, a ferramenta **Uso de Memória** interrompe
 
 Os números nos painéis **Instantâneo** mostram os bytes e objetos na memória quando cada instantâneo foi tirado e a diferença entre o instantâneo e o anterior.
 
-Os números são links que abrem exibições do relatório **Uso de Memória** detalhadas em novas janelas do Visual Studio. Um [relatório de detalhes do instantâneo](#snapshot-details-report) mostra os tipos e instâncias em um instantâneo. Um [relatório de comparações de diferenças de instantâneos](#snapshot-difference-diff-reports) compara os tipos e as instâncias em dois instantâneos.
+Os números são links que abrem exibições do relatório **Uso de Memória** detalhadas em novas janelas do Visual Studio. Um [relatório de detalhes do instantâneo](#snapshot-details-reports) mostra os tipos e instâncias em um instantâneo. Um [relatório de comparações de diferenças de instantâneos](#snapshot-difference-diff-reports) compara os tipos e as instâncias em dois instantâneos.
 
   ![Links de exibição do instantâneo](../profiling/media/memuse__snapshotview_numbered.png "Links de exibição do instantâneo")
 

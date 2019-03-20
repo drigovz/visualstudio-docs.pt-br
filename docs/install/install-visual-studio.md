@@ -18,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607013"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983540"
 ---
-# <a name="install-visual-studio-2017"></a>Instalar o Visual Studio 2017
+# <a name="install-visual-studio"></a>Instalar o Visual Studio
 
 Bem-vindo a uma nova maneira de instalar o Visual Studio! Nesta versão, facilitamos a seleção e a instalação apenas dos recursos necessários. Também reduzimos os volumes mínimos do Visual Studio para que ele seja instalado mais rapidamente e com menor impacto ao sistema.
 
@@ -130,9 +130,9 @@ Para obter mais informações, consulte a página [Alterar locais de instalaçã
 
 ## <a name="see-also"></a>Consulte também
 
-* [Atualizar o Visual Studio 2017](update-visual-studio.md)
-* [Modificar o Visual Studio 2017](modify-visual-studio.md)
-* [Desinstalar o Visual Studio 2017](uninstall-visual-studio.md)
-* [Criar uma instalação offline do Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Atualizar o Visual Studio](update-visual-studio.md)
+* [Modificar o Visual Studio](modify-visual-studio.md)
+* [Desinstalar o Visual Studio](uninstall-visual-studio.md)
+* [Criar uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Instalar o Visual Studio para Mac](/visualstudio/mac/installation)
