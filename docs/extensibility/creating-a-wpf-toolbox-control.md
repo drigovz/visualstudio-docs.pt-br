@@ -1,6 +1,6 @@
 ---
 title: Criar um controle de caixa de ferramentas do WPF | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867975"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194821"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Criar um controle de caixa de ferramentas do WPF
-O modelo de controle de caixa de ferramentas do WPF (Windows Presentation Framework) permite que você crie controles WPF que são adicionados automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar uma **caixa de ferramentas** controle que você pode distribuir a outros usuários.
+
+O modelo de controle de caixa de ferramentas do WPF (Windows Presentation Framework) permite que você crie controles WPF que são adicionados automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este passo a passo mostra como usar o modelo para criar uma **caixa de ferramentas** controle que você pode distribuir a outros usuários.
 
 A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-wpf-toolbox-control"></a>Criar um controle de caixa de ferramentas do WPF
+## <a name="create-the-toolbox-control"></a>Criar o controle de caixa de ferramentas
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Criar uma extensão com um controle de caixa de ferramentas do WPF
 
-1. Crie um projeto do VSIX chamado `MyToolboxControl`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c#** > **extensibilidade**.
+1. Crie um projeto do VSIX chamado `MyToolboxControl`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo pesquisando por "vsix".
 
 2. Quando o projeto aberto, adicione uma **controle de caixa de ferramentas do WPF** modelo de item chamado `MyToolboxControl`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **controle de caixa de ferramentas do WPF**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *MyToolboxControl.cs*.
 
@@ -53,6 +54,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     ```
 
 ## <a name="renaming-the-control"></a>Renomear o controle
+
  Por padrão, o controle será exibido na **caixa de ferramentas** como **MyToolboxControl** em um grupo denominado **MyToolboxControl.MyToolboxControl**. Você pode alterar esses nomes na *MyToolboxControl.xaml.cs* arquivo.
 
 1. Abra *MyToolboxControl.xaml.cs* na exibição de código.
@@ -75,6 +77,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     ```
 
 ## <a name="build-test-and-deployment"></a>Compilação, teste e implantação
+
  Quando você depurar o projeto, você deve encontrar o controle instalado na **caixa de ferramentas** da instância experimental do Visual Studio.
 
 ### <a name="to-build-and-test-the-control"></a>Para compilar e testar o controle

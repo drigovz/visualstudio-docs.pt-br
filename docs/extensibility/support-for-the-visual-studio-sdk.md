@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873435"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193890"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Suporte para o SDK do Visual Studio
 Várias opções de suporte estão disponíveis para clientes que tenham dúvidas sobre como estender o ambiente de desenvolvimento integrado (IDE) do Visual Studio.
@@ -54,9 +54,9 @@ Você pode encontrar exemplos de código-fonte aberto de extensões do SDK do VS
 
 ### <a name="developer-tools-support"></a>Suporte de ferramentas de desenvolvedor
 
-O suporte também pode ser adquirido. Uma variedade de ofertas de suporte estão disponíveis na categoria ferramentas de desenvolvedor no [Microsoft Help e centros de suporte](http://go.microsoft.com/fwlink/?LinkID=82383).
+O suporte também pode ser adquirido. Uma variedade de ofertas de suporte estão disponíveis na categoria ferramentas de desenvolvedor no [Microsoft Help e centros de suporte](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-Os clientes que desejam usar o [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] desenvolver pacotes complexos pode optar por adquirir um contrato de suporte Premier com a Microsoft. Para obter mais informações, consulte [suporte Microsoft Premier](https://support.microsoft.com/premier). Para empresas de pequeno [suporte do parceiro vantagem](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) pode ser uma alternativa atraente para uma oferta de suporte Premier tradicional.
+Os clientes que desejam usar o [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] desenvolver pacotes complexos pode optar por adquirir um contrato de suporte Premier com a Microsoft. Para obter mais informações, consulte [suporte Microsoft Premier](https://support.microsoft.com/premier). Para empresas de pequeno [suporte avançado para parceiros](https://partner.microsoft.com/support/advanced-cloud-support) pode ser uma alternativa atraente para uma oferta de suporte Premier tradicional.
 
 > [!NOTE]
 > Suporte padrão não pode ser usado para consulta ou para obter conselhos.
