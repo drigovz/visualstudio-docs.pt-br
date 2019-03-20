@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805560"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873237"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código C++ de aplicativos da Store usando a análise de código estático do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,13 +128,12 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 |                       [C6516](../code-quality/c6516.md)                        |                                          Nenhuma propriedade no atributo                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Tamanho válido em buffer não legível                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Tamanho gravável em buffer não gravável                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Anotação inválida: o valor da propriedade 'NeedsRelease' deve ser Sim ou Não                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Desreferência de tamanho de cadeia de caracteres inválido                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Tipo de cadeia de caracteres de tamanho inválido                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Local inatingível da cadeia de caracteres inválido                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Anotação inválida: A propriedade 'NeedsRelease' não pode ser usada em valores do tipo void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Estilo de cadeia de caracteres de formato não reconhecido                                        |
 |                       [C6540](../code-quality/c6540.md)                        | O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Especificação de tamanho inválido: expressão não analisável                              |
@@ -194,7 +193,6 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 |                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast<>() não tem suporte nas anotações                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Foi encontrado um erro de sintaxe na anotação na função, para anotação                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Foi encontrado um erro de sintaxe em uma anotação condicional na anotação intrínseca                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Os valores das listas de resultado devem ser constantes.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Foi encontrado um erro de sintaxe nas anotações da função.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Para função, os indícios são inconsistentes com a declaração da função                     |
@@ -206,7 +204,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 |                      [C28286](../code-quality/c28286.md)                       |                                    Para função, erro de sintaxe perto do fim                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Para a função: ReadableTo ou WritableTo não tinha uma especificação de limite como um parâmetro                |
+|                      [C28289](../code-quality/c28289.md)                       |                Para função: ReadableTo ou WritableTo não tinha uma especificação de limite como parâmetro                |
 |                      [C28290](../code-quality/c28290.md)                       |           a anotação para função contém mais Externos que o número real de parâmetros            |
 |                      [C28291](../code-quality/c28291.md)                       |                        pós null/notnull em deref nível 0 não tem sentido para a função.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Operandos da expressão de tipos incompatíveis para o operador                             |

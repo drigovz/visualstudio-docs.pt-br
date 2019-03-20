@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 447c51193845e4cc558ed70bcd89b68ceef888fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919164"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983488"
 ---
 # <a name="access-data-in-visual-studio"></a>Acessar dados no Visual Studio
 
@@ -65,10 +65,20 @@ A maioria dos outros SQL e NoSQL banco de dados produtos listados aqui pode ser 
 - VelocityDB
 - E muito mais...
 
-Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio pacotes do NuGet. Você pode explorar as ofertas em nuget.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas** > **Gerenciador de pacotes NuGet** > **gerenciar NuGet Pacotes para a solução**). Outros produtos de banco de dados integram ao Visual Studio como uma extensão. Você pode procurar essas ofertas do Visual Studio Marketplace, navegando até **ferramentas**, **extensões e atualizações** e, em seguida, selecionando **Online** no painel esquerdo das caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatível para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+::: moniker range="vs-2017"
+
+Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio pacotes do NuGet. Você pode explorar as ofertas em nuget.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas** > **Gerenciador de pacotes NuGet** > **gerenciar NuGet Pacotes para a solução**). Outros produtos de banco de dados integram ao Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **ferramentas** > **extensões e atualizações** e, em seguida, selecionando  **On-line** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatível para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio pacotes do NuGet. Você pode explorar as ofertas em nuget.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas** > **Gerenciador de pacotes NuGet** > **gerenciar NuGet Pacotes para a solução**). Outros produtos de banco de dados integram ao Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **extensões** > **gerenciar extensões** e, em seguida, selecionando  **On-line** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatível para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
 
 > [!NOTE]
-> O suporte estendido para o SQL Server 2005 terminou em 12 de abril de 2016. Não há nenhuma garantia de que as ferramentas de dados no Visual Studio 2015 e versões posteriores continuarão funcionando com o SQL Server 2005 após essa data. Para obter mais informações, consulte o [comunicado de fim do suporte para o SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> O suporte estendido para o SQL Server 2005 terminou em 12 de abril de 2016. Não há nenhuma garantia de que as ferramentas de dados no Visual Studio 2015 e versões posteriores continuarão funcionando com o SQL Server 2005. Para obter mais informações, consulte o [comunicado de fim do suporte para o SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Linguagens .NET
 

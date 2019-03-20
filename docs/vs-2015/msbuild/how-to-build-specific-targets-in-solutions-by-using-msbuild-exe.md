@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26e1670d5e67581ee61ec5517bedc4e8cfce1755
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 85c8f3dcb9364c2837cd4d10f163de3795821ce7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766234"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194224"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Como compilar destinos específicos em soluções usando o MSBuild.exe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,5 +42,5 @@ msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clea
 ## <a name="see-also"></a>Consulte também  
  [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [ MSBuild](msbuild.md)  
+ [MSBuild](msbuild.md)  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

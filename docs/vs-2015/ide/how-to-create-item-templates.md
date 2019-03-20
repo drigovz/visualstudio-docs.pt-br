@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar modelos de Item | Microsoft Docs'
+title: Como criar modelos de item | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788240"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867909"
 ---
 # <a name="how-to-create-item-templates"></a>Como criar modelos de item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As etapas no [primeiro procedimento](../ide/how-to-create-item-templates.md#export_template) deste tópico mostram como criar um modelo de item usando o assistente **Exportar Modelo**. Se seu modelo for consistir em vários arquivos, consulte [Como criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).  
+As etapas no [primeiro procedimento](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) deste tópico mostram como criar um modelo de item usando o assistente **Exportar Modelo**. Se seu modelo for consistir em vários arquivos, consulte [Como criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).  
   
- O assistente faz grande parte do trabalho para você para criar o modelo básico, mas, em muitos casos, será necessário modificar manualmente o arquivo .vstemplate depois de exportar o modelo. Por exemplo, se você desejar que o item apareça na caixa de diálogo **Adicionar Novo Item** para um projeto do aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], precisará executar algumas etapas adicionais. O [segundo procedimento](../ide/how-to-create-item-templates.md#modify_template) neste tópico o ajudará a realizar essa tarefa.  
+ O assistente faz grande parte do trabalho para você para criar o modelo básico, mas, em muitos casos, será necessário modificar manualmente o arquivo .vstemplate depois de exportar o modelo. Por exemplo, se você desejar que o item apareça na caixa de diálogo **Adicionar Novo Item** para um projeto do aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], precisará executar algumas etapas adicionais. O [segundo procedimento](#to-enable-the-item-template-to-be-used-in-a-store-project) neste tópico o ajudará a realizar essa tarefa.  
  
- Em alguns casos, você pode desejar ou precisar criar um modelo de item manualmente desde o princípio. O [terceiro procedimento](../ide/how-to-create-item-templates.md#create_template) mostra como fazer isso.  
+ Em alguns casos, você pode desejar ou precisar criar um modelo de item manualmente desde o princípio. O [terceiro procedimento](#to-enable-templates-for-specific-project-sub-types) mostra como fazer isso.  
   
  Consulte [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md) para obter informações sobre os elementos que podem ser usados no arquivo .vstemplate.  
   

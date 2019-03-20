@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d7a7ee6b8dec07284e35ff6807859136a1223fb7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769060"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868028"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Instruções passo a passo: criando um ambiente de build de vários computadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
   
 -   Uma cópia licenciada do Visual Studio Ultimate, do Visual Studio Premium ou do Visual Studio Professional  
   
--   Uma cópia do .NET Framework 4.5.1, que pode ser baixada do site do [Visual Studio](http://www.microsoft.com/visualstudio/eng/downloads#d-additional-software).  
+-   Uma cópia do .NET Framework 4.5.1, que pode ser baixado do [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) site.  
   
 ##  <a name="InstallingSoftware"></a> Instalando software nos computadores  
  Primeiro, configure o computador host e, em seguida, configure o computador de build.  

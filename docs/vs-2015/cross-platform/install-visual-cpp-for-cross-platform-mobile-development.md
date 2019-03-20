@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 47285fe9fb57b9c4d5d80c60f9e626f394e11934
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762853"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869116"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
   
    Por padrão, o instalador coloca o Apache Ant em C:\Arquivos de Programas (x86)\Microsoft Visual Studio 14.0\Apps.  
   
-- [Emulador do Microsoft Visual Studio para Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Emulador do Microsoft Visual Studio para Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/)  
   
    Você pode instalar e atualizar o Emulador do Microsoft Visual Studio para Android da Galeria do Visual Studio.  
   
