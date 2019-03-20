@@ -15,17 +15,17 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798474"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867755"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Encontrando e usando extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. Encontre mais informações sobre as extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
+As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. É possível encontrar mais informações sobre extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
  É possível usar a caixa de diálogo **Extensões e Atualizações** para instalar as extensões e amostras do Visual Studio de sites e outros locais e habilitá-las, desabilitá-las, atualizá-las ou desinstalá-las. (**Ferramentas/Extensões e Atualizações** ou digite ou **Extensões** na janela **Início Rápido**). A caixa de diálogo também mostra atualizações para amostras e extensões instaladas. Também é possível baixar extensões de sites ou obtê-las de outros desenvolvedores.
 
@@ -33,7 +33,7 @@ As extensões do Visual Studio são pacotes de código executados dentro do Visu
 >  A partir do Visual Studio 2015, as extensões hospedadas na Galeria do Visual Studio serão atualizadas automaticamente.  É possível alterar essa configuração por meio da caixa de diálogo **Extensões e Atualizações**.  Consulte a seção **Atualizações automáticas de extensões** abaixo para obter detalhes.
 
 ## <a name="finding-visual-studio-extensions"></a>Localizando extensões do Visual Studio
- É possível instalar extensões da [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=178891) ou da [Galeria de Amostras](http://go.microsoft.com/fwlink/?LinkId=245175) no site da Microsoft. As extensões podem ser controles, exemplos, modelos, ferramentas ou outros componentes que adicionam funcionalidades ao Visual Studio. O Visual Studio dá suporte a extensões no formato do pacote VSIX, o que inclui modelos de projeto, modelos de item, itens da **Caixa de Ferramentas**, componentes MEF (Managed Extension Framework) e VSPackages. Também é possível baixar e instalar extensões baseadas em MSI, mas a caixa de diálogo **Extensões e Atualizações** não pode habilitá-las nem desabilitá-las. A Galeria do Visual Studio contém extensões VSIX e MSI.
+ Você pode instalar as extensões do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou o [Galeria de exemplos](https://code.msdn.microsoft.com/vstudio) no site da Microsoft. As extensões podem ser controles, exemplos, modelos, ferramentas ou outros componentes que adicionam funcionalidades ao Visual Studio. O Visual Studio dá suporte a extensões no formato do pacote VSIX, o que inclui modelos de projeto, modelos de item, itens da **Caixa de Ferramentas**, componentes MEF (Managed Extension Framework) e VSPackages. Também é possível baixar e instalar extensões baseadas em MSI, mas a caixa de diálogo **Extensões e Atualizações** não pode habilitá-las nem desabilitá-las. A Galeria do Visual Studio contém extensões VSIX e MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalando ou desinstalando extensões do Visual Studio
  Em **Extensões e Atualizações**, localize a extensão que você deseja instalar. (Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar na Galeria do Visual Studio**.) Clique em **Baixar**, em seguida, em **Instalar**. É necessário reiniciar o Visual Studio para carregar a extensão.

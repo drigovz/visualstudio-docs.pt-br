@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844133"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195158"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 
      [Depurando](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) e [depurar no dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) no [guias do desenvolvedor Xamarin](http://developer.xamarin.com/guides) descrevem a experiência de depuração.
 
--   **C++ / Android**. Use o [Visual C++ para desenvolvimento móvel de plataforma cruzada](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) modelos junto com as ferramentas de terceiros, como o [NDK do Android](https://developer.android.com/tools/sdk/ndk/index.html) para criar aplicativos nativos para Windows e Android.
+-   **C++ / Android**. Use o [Visual C++ para desenvolvimento móvel de plataforma cruzada](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) modelos junto com as ferramentas de terceiros, como o [NDK do Android](https://developer.android.com/tools/sdk/ndk/index.html) para criar aplicativos nativos para Windows e Android.
 
 ## <a name="debugging-and-diagnostics"></a>Depuração e Diagnóstico
- Para obter informações sobre o que há de novo na depuração, consulte [o que há de novo no depurador no Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Para obter informações sobre o que há de novo no diagnóstico, consulte [o que há de novo nas ferramentas de criação de perfil](./profiling/what-s-new-in-profiling-tools.md).
+Para obter informações sobre o que há de novo no diagnóstico, consulte [o que há de novo nas ferramentas de criação de perfil](./profiling/what-s-new-in-profiling-tools.md).
 
- A seguir é nova ou aprimorados ferramentas que executam diferentes tipos de diagnóstico e análise em seu código:
+A seguir é nova ou aprimorados ferramentas que executam diferentes tipos de diagnóstico e análise em seu código:
 
 ### <a name="perftips"></a>PerfTips
  As PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os gargalos sem ter que invocar o criador de perfil. Para começar, consulte [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)

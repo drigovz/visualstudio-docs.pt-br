@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MTE95
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57874484"
+---
 
 1. Feche e reabra o Console de gerenciamento do IIS para mostrar opções de configuração atualizadas na interface do usuário.
 
@@ -34,6 +42,6 @@
    * Se você não conseguir se conectar ao host remoto no Visual Studio usando o nome do host (nas etapas posteriores), teste o endereço IP no lugar do nome de host.
 
      > [!NOTE]
-     > Se você estiver publicando no IIS em execução em uma VM do Azure, será necessário abrir as portas do IIS e da Implantação da Web no grupo de Segurança de Rede. Para obter informações detalhadas, confira [Instalar e executar o IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > Se você estiver publicando no IIS em execução em uma VM do Azure, será necessário abrir as portas do IIS e da Implantação da Web no grupo de Segurança de Rede. Para obter informações detalhadas, confira [Instalar e executar o IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server).
 
 5. Copie esse arquivo para o computador em que você está executando o Visual Studio.

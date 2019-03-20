@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802306"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867908"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem de Ferramentas de Criação de Perfil do [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obter mais informações sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) no site da Microsoft.  
+Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem de Ferramentas de Criação de Perfil do [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obter mais informações sobre HPC, consulte [Big Compute: HPC e lote](https://azure.microsoft.com/solutions/big-compute/) no site da Microsoft.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para criar o perfil em um nó de computação do HPC, faça o seguinte:  
@@ -55,8 +55,8 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
 |||  
 |-|-|  
 |*%HeadNode%*|Nome do nó principal do cluster.|  
-|*%FxPath%*|Caminho para o instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sobre o [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] é o caminho de mídia de instalação: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Sobre o [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] é o caminho de mídia de instalação: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Caminho para o instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. No [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], o caminho de mídia de instalação é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Na mídia de instalação [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], o caminho é: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Criação de perfil em um nó de computação HPC  
  Você pode configurar uma sessão de criação de perfil usando o Assistente de Desempenho HPC para especificar as informações de destino e de cluster HPC. Você pode definir outras opções nas páginas de propriedade de sessão de desempenho. As Ferramentas de Criação de Perfil implantam automaticamente os binários de destino e iniciam o criador de perfil e o aplicativo do HPC.  

@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752960"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151174"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidade de Resposta de interface do usuário HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
     -   Use a opção [Exibir a linha do tempo da sessão de diagnóstico](#Ruler) para exibir [Marcar código para análise](#ProfileMark), eventos de ciclo de vida do aplicativo, a linha do tempo associada a esses eventos e a linha do tempo para dados nos outros gráficos.  
   
-    -   Use o [Gráfico da utilização da CPU](#CPUutilization) para exibir informações gerais sobre a atividade da CPU e o tipo de trabalho com o qual ela está lidando durante um determinado período de tempo. Períodos de atividade excessiva da CPU têm maior probabilidade de causar problemas de capacidade de resposta e quadros ignorados.  
+    -   Use o [Gráfico da utilização da CPU](#CPUUtilization) para exibir informações gerais sobre a atividade da CPU e o tipo de trabalho com o qual ela está lidando durante um determinado período de tempo. Períodos de atividade excessiva da CPU têm maior probabilidade de causar problemas de capacidade de resposta e quadros ignorados.  
   
     -   Se você estiver desenvolvendo um jogo ou um aplicativo de mídia avançado, use a opção [Exibir representação visual da taxa de transferência (FPS)](#VisualThroughput) para identificar períodos nos quais a taxa de quadros caiu.  
   

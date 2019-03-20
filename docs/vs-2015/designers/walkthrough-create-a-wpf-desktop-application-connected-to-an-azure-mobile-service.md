@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803725"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195067"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Passo a passo: Criar um aplicativo de área de trabalho do WPF conectado a um serviço móvel do Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -484,7 +484,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
     > [!NOTE]
     >  Talvez seja necessário alterar a parte numérica da URL. O Microsoft Azure requer uma URL exclusiva para cada serviço móvel.  
   
-     Isso define a URL para o serviço *https://wpfquickstart01.azure-mobile.net/*.  
+     Isso define a URL para o serviço `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  Na lista **BANCO DE DADOS**, escolha uma opção de banco de dados. Como esse é um aplicativo que provavelmente não terá muito uso, você pode escolher a opção **Criar um banco de dados SQL de 20 MB gratuito** ou escolher o banco de dados gratuito já associado à sua assinatura.  
   

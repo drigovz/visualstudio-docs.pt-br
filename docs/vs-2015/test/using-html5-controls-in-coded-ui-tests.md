@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805070"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867894"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +33,18 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 ## <a name="supported-html5-controls"></a>Controles do HTML5 com suporte  
  Testes de UI codificados incluem suporte para registro, reprodução e validação dos seguintes controles HTML5:  
   
--   [Controle de áudio](#UsingHTML5ControlsCodedUITestsAudio)  
+-   [Controle de áudio](#audio-control)  
   
--   [Controle Video](#UsingHTML5ControlsCodedUITestsVideo)  
+-   [Controle Video](#video-control)  
   
--   [Slider](#UsingHTML5ControlsCodedUITestsSlider)  
+-   [Slider](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+-   [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Controle de áudio  
+### <a name="audio-control"></a>Controle de áudio  
  **Controle de áudio:** ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.  
   
- ![Controle Audio do HTML5](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![Controle do HTML5 áudio](../test/media/codedui-html5-audio.png)  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.  
@@ -84,10 +83,10 @@ string Volume
 > [!NOTE]
 >  O tempo de busca de Seek e Pause pode ser significativo. Durante a reprodução, o teste de IU codificado aguardará até que o tempo especificado em `(TimeSpan)` antes da pausa do áudio. Se por alguma circunstância especial, o tempo especificado tiver passado antes de atingir o comando Pause, uma exceção será lançada.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Controle Video  
+### <a name="video-control"></a>Controle de vídeo  
  **Controle de vídeo:** ações no controle de vídeo HTML5 são registradas e reproduzidas corretamente.  
   
- ![Controle Video do HTML5](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![Controle do HTML5 vídeo](../test/media/codedui-html5-video.png)  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -114,10 +113,10 @@ string VideoWidth
 > [!NOTE]
 >  Se você Avançar ou retroceder rapidamente o vídeo usando rótulos-30s ou +30s, isso será agregado para buscar o momento apropriado.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider  
+### <a name="slider"></a>Controle deslizante  
  **Controle deslizante:** ações no controle deslizante de HTML5 são registradas e reproduzidas corretamente.  
   
- ![Controle Slider do HTML5](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![Controle deslizante do HTML5](../test/media/codedui-html5-slider.png)  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
- **Controle ProgreesBar:** o ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle.  
+### <a name="progressbar"></a>ProgressBar  
+ **Controle de ProgressBar:** a ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle.  
   
- ![Controle ProgressBar do HTML5](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Controle ProgressBar do HTML5](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>Consulte também  
- [Elementos HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Personalização de seu teste de IU codificado](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Consulte também
+
+- [Elementos HTML](https://www.w3schools.com/HTML/html_elements.asp)   
+- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)   
+- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [Personalizando o teste de IU codificado](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

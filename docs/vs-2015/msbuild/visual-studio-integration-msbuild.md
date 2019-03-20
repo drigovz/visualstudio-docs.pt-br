@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763304"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194503"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md
   
  Este tópico descreve aspectos específicos da hospedagem do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pelo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que devem ser considerados ao personalizar projetos e arquivos .targets que serão carregados e compilados em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Isso ajudará a certificar recursos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], como o IntelliSense e a depuração de trabalho no projeto personalizado.  
   
- Para obter informações sobre projetos C++, consulte [Arquivos de Projeto](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401).  
+ Para obter informações sobre projetos C++, consulte [Arquivos de Projeto](/cpp/build/reference/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Extensões de Nome do Arquivo de Projeto  
  O MSBuild.exe reconhece extensões de nome de arquivo de projeto que correspondem ao padrão .*proj. No entanto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reconhece somente um subconjunto dessas extensões de nome de arquivo de projeto, o que determina o sistema de projeto específico a um idioma que carregará o projeto. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não tem um [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com neutralidade de idioma baseado no sistema de projeto.  
