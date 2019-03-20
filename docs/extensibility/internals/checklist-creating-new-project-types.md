@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621000"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146338"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista de verificação: Criar novos tipos de projeto
 Você deve concluir várias tarefas para criar um novo tipo de projeto. A lista de verificação a seguir fornece um guia para essas tarefas:
@@ -37,7 +37,7 @@ Você deve concluir várias tarefas para criar um novo tipo de projeto. A lista 
 
     -   Gerenciamento de itens de projeto, incluindo a adição de seu projeto para o **novo projeto** caixa de diálogo. Para obter mais informações, consulte [adicionar o projeto e modelos de item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md) e [registrar modelos de projeto e item](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    -   Persistência de estado do projeto e itens individuais. Para obter mais informações, consulte [abrir e salvar itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md). Para a persistência das informações de solução, consulte [soluções](../../extensibility/internals/solutions.md).
+    -   Persistência de estado do projeto e itens individuais. Para obter mais informações, consulte [abrir e salvar itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md). Para a persistência das informações de solução, consulte [soluções](../../extensibility/internals/solutions-overview.md).
 
     -   Propriedades de configuração independente para exibir na janela Propriedades. Para obter mais informações, consulte [estender propriedades](../../extensibility/internals/extending-properties.md).
 
