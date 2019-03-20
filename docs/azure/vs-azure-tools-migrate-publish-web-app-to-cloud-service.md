@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: bb470e245f41bc83245d8c2234753ad84c0ee8db
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936298"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868999"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Como: Migrar e publicar um aplicativo Web em um serviço de nuvem do Azure usando o Visual Studio
 
@@ -30,7 +30,7 @@ Para tirar proveito dos serviços de hospedagem e a escalabilidade do Azure, voc
 1. O Visual Studio também define a propriedade **Copiar Local** como verdadeira para todos os assemblies que são necessários para MVC 2, MVC 3, MVC 4 e Aplicativos de negócios do Silverlight. Essa propriedade adiciona esses assemblies ao pacote de serviço usado para a implantação.
 
    > [!Important]
-   > Se tiver outros assemblies ou arquivos necessários para o aplicativo Web, você precisa definir manualmente as propriedades para esses arquivos. Para obter informações sobre como definir essas propriedades, consulte [Incluir arquivos no pacote de serviço](#include-files-in-the-service-package).
+   > Se tiver outros assemblies ou arquivos necessários para o aplicativo Web, você precisa definir manualmente as propriedades para esses arquivos. Para obter informações sobre como definir essas propriedades, consulte [Incluir arquivos no pacote de serviço](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
 
 ### <a name="errors-and-warnings"></a>Erros e avisos
 

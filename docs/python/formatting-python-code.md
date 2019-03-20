@@ -1,7 +1,7 @@
 ---
 title: Formatar o código do Python
 description: O Visual Studio pode reformatar automaticamente o código Python, incluindo espaçamento, instruções, disposição do texto e comentários.
-ms.date: 02/11/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 46aba6fc0af8fa5c89f8d919fac17f7b59f7c2a2
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 4049576d18befb71cc71fdb85a19bcc3b0234401
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987490"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160661"
 ---
 # <a name="format-python-code"></a>Formatar o código do Python
 

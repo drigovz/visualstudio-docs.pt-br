@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Perguntas frequentes sobre migração de administrador no Centro de Empresas da Microsoft
 searchscope: VS Subscription
-ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953937"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145259"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migração de administração de assinaturas do Visual Studio
 
@@ -36,7 +36,7 @@ Essa é uma transição grande e será concluída em fases até que todos os cli
 Sua organização não precisa se inscrever no Azure AD, mas isso pode ser feito a qualquer momento. Se você optar por se integrar ao Azure AD, faça isso sem nenhum custo usando a camada gratuita do Azure AD. Com o Azure Active Directory, você protegerá sua organização com maior segurança, controle e confiabilidade de longo prazo. No entanto, se você não estiver pronto para o Azure AD, será possível continuar usando as contas da Microsoft (MSAs) que você usa hoje.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>Como saber quando minha organização será migrada?
-Os Contatos Principal/para Notificações receberão um email nosso convidando-os para concluir o processo de integração uma semana antes da migração da sua organização. Os Gerentes de Assinatura também receberão um email avisando-os que você contatou os Contatos Principal/para Notificações e forneceu detalhes de como ajudar a garantir o sucesso da integração. Saiba como [Localizar os Contatos Principal/para Notificações da sua organização](#How-do-I-find-out-who-my-Primary-or-Notices-Contact-is?).
+Os Contatos Principal/para Notificações receberão um email nosso convidando-os para concluir o processo de integração uma semana antes da migração da sua organização. Os Gerentes de Assinatura também receberão um email avisando-os que você contatou os Contatos Principal/para Notificações e forneceu detalhes de como ajudar a garantir o sucesso da integração. Saiba como [Localizar os Contatos Principal/para Notificações da sua organização](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
 
 ### <a name="is-onboarding-different-from-migration"></a>A integração é diferente da migração?
 Sim.  Há duas fases nesse processo. Configurar (ou integrar) a organização antes da migração assegura que não haja nenhuma interrupção do seu trabalho como administrador. Depois que as informações da organização forem migradas, você poderá gerenciar assinaturas do Visual Studio no novo portal. Se os Contatos Principal/para Notificações não forem integrados antes de serem migrados, os Gerentes de Assinatura serão bloqueados e não poderão gerenciar assinaturas até que você conclua o processo de integração.

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c8d580ace576f7b2a4512e5bc91f83529fba77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939574"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982968"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Como definir as configurações em um arquivo de resposta
 
@@ -99,4 +99,4 @@ O exemplo a seguir instalará o Visual Studio Enterprise com seis cargas de trab
 
 ## <a name="see-also"></a>Consulte também
 
-* [IDs de carga de trabalho e de componente do Visual Studio 2017](workload-and-component-ids.md)
+* [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)

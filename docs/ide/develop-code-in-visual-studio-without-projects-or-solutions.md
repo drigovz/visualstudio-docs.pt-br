@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718541"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194944"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desenvolver código no Visual Studio sem projetos nem soluções
 
@@ -103,7 +103,7 @@ Se a sua base de código contiver código Python ou JavaScript, não será neces
 
 ### <a name="codebases-that-contain-c-code"></a>As bases de código que contêm o código C++
 
-Para saber mais sobre como abrir o código C++ sem soluções ou projetos no Visual Studio, confira [Projetos de pasta aberta para C++](/cpp/ide/non-msbuild-projects).
+Para saber mais sobre como abrir o código C++ sem soluções ou projetos no Visual Studio, confira [Projetos de pasta aberta para C++](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Bases de código que contém um projeto do Visual Studio
 
@@ -118,6 +118,6 @@ O texto do botão **Iniciar** muda para refletir que o projeto é o item de inic
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizar as tarefas de depuração e build](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Projetos de pasta aberta para C++](/cpp/ide/non-msbuild-projects)
-- [Projetos CMake em C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Projetos de pasta aberta para C++](/cpp/build/open-folder-projects-cpp)
+- [Projetos CMake em C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Escrevendo código no editor de código e texto](../ide/writing-code-in-the-code-and-text-editor.md)

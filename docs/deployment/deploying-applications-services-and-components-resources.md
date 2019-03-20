@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628982"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870286"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visão geral da implantação no Visual Studio
 
@@ -35,7 +35,7 @@ De dentro do Visual Studio, os aplicativos podem ser publicados diretamente nos 
 - [Serviço de Aplicativo do Azure](#azure-app-service)
 - [Máquinas Virtuais do Azure](#azure-virtual-machines)
 - [Sistema de arquivos](#file-system)
-- [Destinos personalizados (IIS, FTP, etc.) ](#custom-targets), que inclui todos os servidores Web arbitrários.
+- [Destinos personalizados (IIS, FTP, etc.) ](#custom-targets-iis-ftp), que inclui todos os servidores Web arbitrários.
 
 Na guia **Publicar** é possível selecionar um perfil de publicação existente, importar um perfil existente ou criar um novo perfil usando as opções descritas aqui. Para fazer um tour pelas opções de publicação no IDE para diferentes tipos de aplicativos, confira [Introdução à implantação](../deployment/deploying-applications-services-and-components.md).
 

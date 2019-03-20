@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934751"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194892"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Etapa 5: Instalar pacotes no ambiente do Python
 
@@ -26,23 +26,23 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
 
 1. Selecione o comando de menu **Exibir** > **Outras Janelas** > **Ambientes do Python**. A janela **Ambientes de Python** será aberta como um par com o **Gerenciador de Soluções** e mostrará os diferentes ambientes disponíveis para você. A lista inclui os ambientes em que você instalou usando o instalador do Visual Studio e os que você instalou separadamente. O ambiente em negrito é o ambiente padrão, que é usado para novos projetos.
 
-   ![Janela Ambientes do Python](media/environments-default-view-blue.png)
+   ![Janela Ambientes do Python](media/environments/environments-default-view-blue.png)
 
 2. A guia **Visão geral** proporciona acesso rápido a uma janela **Interativa** do ambiente, junto com a pasta de instalação e os interpretadores desse ambiente. Por exemplo, escolha **Abrir janela Interativa** e uma janela **Interativa** desse ambiente específico será exibida no Visual Studio.
 
 3. Selecione a guia **Pacotes** e você verá uma lista dos pacotes que estão atualmente instalados no ambiente.
 
-   ![Pacotes instalados em um ambiente](media/environments-installed-packages-blue.png)
+   ![Pacotes instalados em um ambiente](media/environments/environments-installed-packages-blue.png)
 
 4. Para instalar o `matplotlib`, digite seu nome no campo de pesquisa e, em seguida, escolha **instalação do pip**
 
-   ![Instalação do matplotlib no ambiente](media/environments-add-matplotlib1.png)
+   ![Instalação do matplotlib no ambiente](media/environments/environments-add-matplotlib1.png)
 
 5. Dê permissão para a elevação, se for solicitado.
 
 6. Depois de instalar o pacote, ele aparecerá na janela **Ambientes de Python**. O **X** à direita do pacote serve para desinstalá-lo.
 
-   ![Conclusão da instalação do matplotlib no ambiente](media/environments-add-matplotlib2.png)
+   ![Conclusão da instalação do matplotlib no ambiente](media/environments/environments-add-matplotlib2.png)
 
    Uma pequena barra de progresso pode ser exibida sob o ambiente para indicar que o Visual Studio está criando o banco de dados do IntelliSense para o pacote recém-instalado. A guia **IntelliSense** também mostra mais informações detalhadas. Observe que, até que o banco de dados seja concluído, os recursos do IntelliSense, como preenchimento automático e verificação de sintaxe, não estarão ativos no editor para esse pacote.
 
@@ -65,7 +65,7 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
 
 8. Execute o programa com (**F5**) ou sem o depurador (**Ctrl**+**F5**) para ver a saída:
 
-   ![Saída de exemplo de matplotlib](media/environments-add-matplotlib3.png)
+   ![Saída de exemplo de matplotlib](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Próximas etapas
 

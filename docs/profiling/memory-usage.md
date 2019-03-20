@@ -2,19 +2,19 @@
 title: Medir o uso de memória em seus aplicativos
 description: Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico integrada ao depurador.
 ms.custom: seodec18
-ms.date: 04/25/2017
+ms.date: 04/25/2018
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570590a37e76301305159a4249165b1a20c475a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223319"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868973"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medir o uso de memória no Visual Studio
 

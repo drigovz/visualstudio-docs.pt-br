@@ -8,20 +8,20 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 676b46c87fe9b6af6e0e1baed0ff5fcdc7e68b6e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909187"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873643"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Como instalar as Ferramentas do R para Visual Studio
 
 Neste artigo:
 
 - [Versões do Visual Studio com suporte](#supported-versions-of-visual-studio)
-- [Instalar as RTVS no Visual Studio 2017](#installing-rtvs-in-visual-studio-2017)
-- [Instalar as RTVS no Visual Studio 2015](#installing-rtvs-in-visual-studio-2015)
+- [Instalar as RTVS no Visual Studio 2017](#install-rtvs-in-visual-studio-2017)
+- [Instalar as RTVS no Visual Studio 2015](#install-rtvs-in-visual-studio-2015)
 - [Instalação offline](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -66,7 +66,7 @@ O Microsoft R Open e o CRAN R permitem várias versões lado a lado. O Microsoft
 Baixe as RTVS para Visual Studio 2015 em [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current). As RTVS verificam se há uma versão adequada do Visual Studio e ajudam a instalar um interpretador de R, caso isso ainda não tenha sido feito.
 
 > [!Note]
-> O instalador autônomo das RTVS funciona apenas com o Visual Studio 2015; com o Visual Studio 2017, instale o suporte ao R por meio da [Carga de trabalho para Aplicativos de ciência de dados e análise](#installing-rtvs-in-visual-studio-2017) conforme descrito anteriormente.
+> O instalador autônomo das RTVS funciona apenas com o Visual Studio 2015; com o Visual Studio 2017, instale o suporte ao R por meio da [Carga de trabalho para Aplicativos de ciência de dados e análise](#install-rtvs-in-visual-studio-2017) conforme descrito anteriormente.
 
 As RTVS para Visual Studio 2015 estão instaladas em: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 
