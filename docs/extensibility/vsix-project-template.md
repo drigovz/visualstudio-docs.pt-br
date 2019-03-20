@@ -11,38 +11,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56f44f6898c7a99a7024906b5c38f521a169c0f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 972b0b777cda837b246de4a208337c4e369139c4
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871292"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194626"
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto do VSIX
+
 Você pode usar o modelo de projeto de VSIX para encapsular uma ou mais extensões do Visual Studio em um projeto VSIX e, em seguida, publicar o pacote na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site da Web.
 
  Dá suporte à implantação do VSIX VSPackages, assemblies, componentes MEF, modelos de projeto, modelos de item, controles de caixa de ferramentas e os tipos de extensão personalizada.
 
 > [!NOTE]
->  Para usar os projetos VSIX, você deve instalar o SDK do Visual Studio. Para obter mais informações sobre o SDK do Visual Studio, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
+> Para usar os projetos VSIX, você deve instalar o SDK do Visual Studio. Para obter mais informações sobre o SDK do Visual Studio, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="where-to-find-the-vsix-project-template"></a>Onde encontrar o modelo de projeto do VSIX
- O modelo de projeto do VSIX está disponível na **novo projeto** caixa de diálogo. Expanda o **Visual Basic** nó ou o **Visual c#** nó e, em seguida, escolha **extensibilidade**.
+
+O modelo de projeto do VSIX está disponível na **novo projeto** caixa de diálogo pesquisando por "vsix".  Há um C# e a versão do Visual Basic.
 
 > [!TIP]
->  Assegure-se de que o .NET Framework 4.5 ou superior é especificado na caixa de lista suspensa na parte superior do **novo projeto** caixa de diálogo.
+> Assegure-se de que o .NET Framework 4.5 ou superior é especificado na caixa de lista suspensa na parte superior a **novo projeto** caixa de diálogo.
 
 ## <a name="uses-of-the-vsix-project-template"></a>Usos do modelo de projeto do VSIX
- O modelo de projeto do VSIX tem dois usos principais:
 
-- Para implantar modelos de projeto, modelos de item e outras extensões que não têm suporte do VSIX.
+O modelo de projeto do VSIX tem dois usos principais:
+
+- Para implantar modelos de projeto, modelos de item e extensões.
 
 - Para encapsular as saídas de várias extensões em pacote de uma implantação.
 
-  Não é necessário usar o modelo de projeto de VSIX para implantar os VSPackages ou outros tipos de extensões que já têm VSIX suporte.
-
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Empacotando a extensão em um projeto vazio do VSIX
- Você pode empacotar uma extensão existente ou uma extensão que ainda não tenha VSIX dar suporte, encapsulando-os em um projeto vazio do VSIX. A extensão a ser encapsulado deve ser de um tipo que é compatível com o [esquema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).
+
+Você pode empacotar uma extensão existente ou uma extensão que ainda não tenha VSIX dar suporte, encapsulando-os em um projeto vazio do VSIX. A extensão a ser encapsulado deve ser de um tipo que é compatível com o [esquema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).
 
 ### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Para empacotar uma extensão usando um projeto do VSIX
 
@@ -60,19 +62,19 @@ Você pode usar o modelo de projeto de VSIX para encapsular uma ou mais extensõ
 
 5. Para adicionar um elemento de extensão ou conteúdo que está incluído na solução atual (por exemplo, um modelo de item ou um assembly compilado), execute as seguintes etapas:
 
-   1.  No **fonte** , escolha **um projeto na solução atual**.
+   1. No **fonte** , escolha **um projeto na solução atual**.
 
-   2.  No **projeto** , escolha o nome da extensão.
+   2. No **projeto** , escolha o nome da extensão.
 
-   3.  No **Embed nesta pasta** , digite o nome de uma pasta na qual é possível incorporar o ativo e, em seguida, escolha o **Okey** botão.
+   3. No **Embed nesta pasta** , digite o nome de uma pasta na qual é possível incorporar o ativo e, em seguida, escolha o **Okey** botão.
 
 6. Para adicionar uma extensão ou um elemento de conteúdo que não está incluído na solução atual, execute as seguintes etapas:
 
-   1.  No **fonte** caixa de listagem, escolha **arquivo no sistema de arquivos**.
+   1. No **fonte** caixa de listagem, escolha **arquivo no sistema de arquivos**.
 
-   2.  No **caminho** campo, insira o caminho completo para o arquivo de extensão compilada ou compactada ou usar o **procurar** botão para navegar até o arquivo.
+   2. No **caminho** campo, insira o caminho completo para o arquivo de extensão compilada ou compactada ou usar o **procurar** botão para navegar até o arquivo.
 
-   3.  No **Embed nesta pasta** , digite o nome de uma pasta na qual é possível incorporar o ativo e, em seguida, escolha o **Okey** botão.
+   3. No **Embed nesta pasta** , digite o nome de uma pasta na qual é possível incorporar o ativo e, em seguida, escolha o **Okey** botão.
 
 7. Se você quiser que seu pacote para incluir extensões adicionais, você deve adicioná-los da mesma maneira.
 
@@ -81,5 +83,6 @@ Você pode usar o modelo de projeto de VSIX para encapsular uma ou mais extensõ
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria uma *. VSIX* arquivo que contém um arquivo de manifesto do VSIX, [Content_Types]*. XML* arquivo e todos os ativos de extensão que você adicionou ao projeto.
 
 ## <a name="see-also"></a>Consulte também
+
 - [Referência de esquema 2.0 de extensão do VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Localizar e usar extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

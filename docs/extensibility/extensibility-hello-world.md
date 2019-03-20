@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160700"
+ms.locfileid: "58194730"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Crie sua primeira extensão: Hello World
 
@@ -44,7 +44,7 @@ Antes de começar, verifique se você instalou o **desenvolvimento de extensões
 
 ::: moniker range="vs-2017"
 
-Etapa 1. Dos **arquivo** menu, selecione **novo projeto**.
+Etapa 1. No menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 Etapa 2. Na caixa de pesquisa na parte superior direita, digite "vsix" e selecione o Visual C# **projeto do VSIX**. Digite "HelloWorld" para o **nome** na parte inferior da caixa de diálogo e selecione **Okey**.
 
@@ -58,7 +58,7 @@ Se você precisar deixar este tutorial e volte a ela, você pode encontrar seu n
 
 ::: moniker range=">=vs-2019"
 
-Etapa 1. Dos **arquivo** menu, selecione **novo projeto**. Pesquise por "vsix" e selecione o Visual C# **projeto do VSIX** e, em seguida **próxima**.
+Etapa 1. No menu **Arquivo**, selecione **Novo** > **Projeto**. Pesquise por "vsix" e selecione o Visual C# **projeto do VSIX** e, em seguida **próxima**.
 
 Etapa 2. Digite "HelloWorld" para o **nome do projeto** e selecione **criar**.
 
@@ -84,7 +84,7 @@ O novo arquivo de comando está visível no **Gerenciador de soluções**. Sob o
 
 ## <a name="modify-the-source-code"></a>Modificar o código-fonte
 
-Neste ponto, o comando e o botão texto é gerado automaticamente e não muito interessante. Se você quiser fazer alterações, você pode modificar o arquivo VSCT e o arquivo do CS.
+Neste ponto, o comando e o texto do botão são gerados automaticamente e não muito interessante. Se você quiser fazer alterações, você pode modificar o arquivo VSCT e o arquivo do CS.
 
 * O arquivo VSCT é onde você pode renomear os comandos, bem como definir onde eles ficar no sistema de comando do Visual Studio. Conforme você explora o arquivo VSCT, você observará comentários que explicam o que cada seção dos controles de código VSCT.
 
