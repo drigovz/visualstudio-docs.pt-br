@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868137"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195171"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidade e conjunto de ferramentas de integração do Project
 
@@ -418,7 +418,7 @@ O sistema de projeto do Visual C++ se baseia a [sistema de projeto do VS](https:
 
 Para obter informações gerais de design, consulte [extensibilidade da plataforma - parte 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) e [extensibilidade da plataforma - parte 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-Em termos simples, as páginas de propriedades que você verá na **propriedades do projeto** caixa de diálogo para um projeto C++ são definidos pela *regra* arquivos. Um arquivo de regra especifica um conjunto de propriedades para mostrar em uma página de propriedades e como e onde eles devem ser salvos no projeto de arquivos. Arquivos de regras são arquivos. XML que usam o formato Xaml. Os tipos usados para serializá-los são descritos em [xamltypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obter mais informações sobre o uso de arquivos de regras em projetos, consulte [arquivos de regras do XML da página de propriedade](/cpp/ide/property-page-xml-files).
+Em termos simples, as páginas de propriedades que você verá na **propriedades do projeto** caixa de diálogo para um projeto C++ são definidos pela *regra* arquivos. Um arquivo de regra especifica um conjunto de propriedades para mostrar em uma página de propriedades e como e onde eles devem ser salvos no projeto de arquivos. Arquivos de regras são arquivos. XML que usam o formato Xaml. Os tipos usados para serializá-los são descritos em [xamltypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obter mais informações sobre o uso de arquivos de regras em projetos, consulte [arquivos de regras do XML da página de propriedade](/cpp/build/reference/property-page-xml-files).
 
 Os arquivos de regra devem ser adicionados para o `PropertyPageSchema` grupo de itens:
 
@@ -636,8 +636,8 @@ Para obter informações sobre como criar arquivos VSIX, consulte [envio extens�
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-O sistema de compilação da Microsoft ([MSBuild](../msbuild/msbuild.md)) fornece o mecanismo de compilação e o formato extensível baseado em XML para arquivos de projeto. Você deve estar familiarizado com o basic [conceitos do MSBuild](../msbuild/msbuild-concepts.md) e com a forma [MSBuild para o Visual C++](/cpp/build/msbuild-visual-cpp-overview) funciona para estender o Visual C++ de sistema de projeto.
+O sistema de compilação da Microsoft ([MSBuild](../msbuild/msbuild.md)) fornece o mecanismo de compilação e o formato extensível baseado em XML para arquivos de projeto. Você deve estar familiarizado com o basic [conceitos do MSBuild](../msbuild/msbuild-concepts.md) e com a forma [MSBuild para o Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) funciona para estender o Visual C++ de sistema de projeto.
 
 O Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) fornece a extensão de APIs que são usadas por CPS e o sistema de projeto do Visual C++. Para uma visão geral de como o MEF é usado pelo CPS, consulte [CPS e MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) na [VSProjectSystem visão de geral de MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Você pode personalizar o sistema de compilação existente para adicionar etapas de compilação ou novos tipos de arquivo. Para obter mais informações, consulte [visão geral do MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) e [trabalhando com propriedades do projeto](/cpp/ide/working-with-project-properties).
+Você pode personalizar o sistema de compilação existente para adicionar etapas de compilação ou novos tipos de arquivo. Para obter mais informações, consulte [visão geral do MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) e [trabalhando com propriedades do projeto](/cpp/build/working-with-project-properties).
