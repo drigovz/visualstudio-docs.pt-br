@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969714"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873470"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando dados salvos do IntelliTrace (C#, Visual Basic, C++)
 
@@ -38,7 +38,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
     |----------------|-------------|
     |Uma sessão do IntelliTrace no Visual Studio Enterprise (mas não Professional ou Community edições)|[Recursos do IntelliTrace](../debugger/intellitrace-features.md)|
     |Uma sessão de teste no Microsoft Test Manager. Isso anexa um arquivo .iTrace a um item de trabalho do Team Foundation Server.|[Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |Microsoft Monitoring Agent, sozinho ou com o System Center 2012 R2 Operations Manager, para aplicativos Web do ASP.NET e aplicativos do SharePoint em execução na implantação|-   [Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novidades do System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
+    |Microsoft Monitoring Agent, sozinho ou com o System Center 2012 R2 Operations Manager, para aplicativos Web do ASP.NET e aplicativos do SharePoint em execução na implantação|-   [Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novidades do System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ##  <a name="GetStarted"></a> O que você deseja fazer?
 
@@ -109,7 +109,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
 3.  Expanda essa chamada para revisar qualquer chamada e aninhada e os valores de parâmetro gravados nesse momento.
 
-     (Teclado: Para mostrar ou ocultar uma chamada aninhada, pressione a **seta para a direita** ou **seta para a esquerda** , respectivamente. Para mostrar e ocultar valores de parâmetro para uma chamada aninhada, pressione a tecla **Espaço**.)
+     (Teclado: para mostrar ou ocultar uma chamada aninhada, pressione a tecla **Seta para a direita** ou **Seta para a esquerda**, respectivamente. Para mostrar e ocultar valores de parâmetro para uma chamada aninhada, pressione a tecla **Espaço**.)
 
      Comece a depuração pela chamada.
 
@@ -206,7 +206,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
     ![Log do IntelliTrace &#45; exceções sem tratamento do SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Para obter instruções, consulte [passo a passo: Depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Para os tipos de dados que registra o agente, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
+   Para obter instruções, consulte [instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Para os tipos de dados que registra o agente, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Lista de threads
  Examine os threads registrados executados no processo de destino. Você pode iniciar a depuração do primeiro evento válido do IntelliTrace em um thread selecionado.
@@ -272,4 +272,4 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
  [Depurador do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Diretrizes
- [Testando para entrega contínua com Visual Studio 2012 – capítulo 6: Uma caixa de ferramentas de teste](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Teste para Entrega Contínua com o Visual Studio 2012 – Capítulo 6: Caixa de ferramentas de teste](http://go.microsoft.com/fwlink/?LinkID=255203)
