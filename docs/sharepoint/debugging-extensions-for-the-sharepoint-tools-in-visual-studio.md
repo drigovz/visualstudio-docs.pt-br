@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875713"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324494"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depurar extensões para ferramentas do SharePoint no Visual Studio
   Você pode depurar extensões de ferramentas do SharePoint na instância experimental ou na instância normal do Visual Studio. Se você precisar solucionar problemas no comportamento de uma extensão, você também pode modificar os valores do registro para exibir informações de erro adicionais e para configurar como o Visual Studio executa comandos do SharePoint.
@@ -56,7 +56,7 @@ ms.locfileid: "54875713"
 
 #### <a name="to-debug-the-extension"></a>Para depurar a extensão
 
-1.  Inicie o Visual Studio com privilégios de administrador e abra o projeto de extensão. As etapas a seguir se referem a essa instância do Visual Studio como o *pela primeira vez da instância*.
+1.  Abra o Visual Studio com privilégios de administrador e abra o projeto de extensão. As etapas a seguir se referem a essa instância do Visual Studio como o *pela primeira vez da instância*.
 
 2.  Inicie outra instância do Visual Studio com privilégios de administrador. As etapas a seguir se referem a essa instância do Visual Studio como o *segunda instância*.
 

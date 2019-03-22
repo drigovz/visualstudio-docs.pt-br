@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634923"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324676"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualizar personalizações da faixa de opções em projetos do Office que você migrar para o .NET Framework 4 ou o .NET Framework 4.5
   Se o projeto contém uma personalização da faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** de item de projeto, você deve fazer as seguintes alterações ao seu código de projeto se a estrutura de destino é alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou mais tarde.
@@ -103,9 +103,9 @@ ms.locfileid: "56634923"
 
      Por exemplo, suponha que o arquivo contém a seguinte linha de código que manipula o <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> eventos em um projeto que tem como alvo o .NET Framework 3.5.
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder> em um projeto que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve usar o código a seguir em vez disso.
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> em um projeto que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve usar o código a seguir em vez disso.
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder> para obter uma lista completa dos delegados da faixa de opções, consulte [eventos tratar da faixa de opções](#ribbonevents).
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> para obter uma lista completa dos delegados da faixa de opções, consulte [eventos tratar da faixa de opções](#ribbonevents).
 
 5.  Em projetos do Visual Basic, localize o `ThisRibbonCollection` classe no final do arquivo. Modifique a declaração dessa classe para que ele não herde mais da `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634923"
 
   O exemplo de código a seguir demonstra como criar uma <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> em uma classe de faixa de opções em um projeto que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder> a tabela a seguir lista os controles que você pode criar programaticamente e o método a ser usado para criar os controles em projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> a tabela a seguir lista os controles que você pode criar programaticamente e o método a ser usado para criar os controles em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
 |Controle|Método RibbonFactory para usar na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|
 |-------------| - |
