@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1cf64fc8f70c0a3cf3ed5df1237603f490a703db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3c669b7cc314bc2d7a999e77d5cfb95251789dd8
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639564"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323286"
 ---
 # <a name="files-element"></a>Elemento de arquivos
   Especifica os arquivos para implantar com o item de projeto do SharePoint, como arquivos de recurso de elemento e a saída de projetos do SharePoint não dependentes.
@@ -57,7 +57,7 @@ ms.locfileid: "56639564"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nome do esquema**|Esquema de Item de projeto do SharePoint|
 |**Arquivo de validação**|ProjectItemModelSchema.xsd|
 |**Pode estar vazio**|Não|

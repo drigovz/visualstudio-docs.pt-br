@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872428"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323445"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 
@@ -84,7 +84,7 @@ Diretrizes principais do C++ estão lá para ajudá-lo a escrever código melhor
 
 Conforme novas regras são adicionadas ao verificador de diretrizes de núcleo do C++, pode aumentar o número de avisos que são produzidos para código pré-existente. Você pode usar conjuntos de regras predefinidas para filtrar quais tipos de regras para permitir. A partir do Visual Studio 2017 versão 15.3, os conjuntos de regra com suporte são:
 
-  - **Regras de ponteiro de proprietário** impor [verificações de gerenciamento de recursos relacionados ao proprietário<T> das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **Regras de ponteiro de proprietário** impor [verificações de gerenciamento de recursos relacionados ao proprietário\<T > das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **Regras de const** impor [verificações relacionadas a const das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -162,7 +162,7 @@ Você pode usar a opção de linha de comando para desabilitar temporariamente t
 Às vezes, pode ser útil para análise de código foco e ainda aproveitar o IDE do Visual Studio. Abaixo está um cenário de exemplo que pode ser usado para projetos grandes para economizar tempo de compilação e para facilitar para filtrar os resultados.
 
 1. No shell de comando, defina as `esp.extension` e `esp.annotationbuildlevel` variáveis de ambiente.
-2. Inicie o Visual Studio no shell de comando para herdar essas variáveis.
+2. Abra o Visual Studio no shell de comando para herdar essas variáveis.
 3. Carregue seu projeto e abra suas propriedades.
 4. Habilitar análise de código, selecione os conjuntos de regra apropriado, mas não habilitar extensões de análise de código.
 5. Vá até o arquivo que você deseja analisar com o verificador de diretrizes de núcleo do C++ e abrir suas propriedades.

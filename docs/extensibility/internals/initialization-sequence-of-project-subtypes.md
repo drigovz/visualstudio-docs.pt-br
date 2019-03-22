@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18a60e5589671101471bbb5f82877ce5234215d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15fc8d330de6b707d4747b9c297dffcbc78d5fec
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920183"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323697"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Sequência de inicialização de subtipos de projeto
 O ambiente constrói um projeto, chamando a implementação da fábrica de projeto base <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. A construção de um subtipo de projeto é iniciado quando o ambiente determina se a lista GUID de tipo de projeto para a extensão do arquivo de projeto não está vazia. A extensão de arquivo de projeto e o GUID do projeto especificam se o projeto é um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tipo de projeto. Por exemplo, a extensão. vbproj e {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identificar um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projeto.
@@ -31,7 +31,7 @@ O ambiente constrói um projeto, chamando a implementação da fábrica de proje
 
     1.  A implementação do ambiente do <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> chamadas de método a `HrCreateInnerProj` método com a seguinte declaração de função:
 
-         <CodeContentPlaceHolder>0</CodeContentPlaceHolder>
+         \<CodeContentPlaceHolder>0</CodeContentPlaceHolder>
 
          Quando essa função é chamada pela primeira vez, ou seja, para o subtipo de projeto mais externo, os parâmetros `pOuter` e `pOwner` são passados como `null` e a função define o subtipo de projeto mais externo `IUnknown` para `pOuter`.
 

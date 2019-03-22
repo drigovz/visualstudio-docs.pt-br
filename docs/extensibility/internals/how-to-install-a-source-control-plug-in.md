@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635183"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323380"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como: Instalar um plug-in de controle do código-fonte
 Criando um controle de fonte plug-in envolve três etapas:
@@ -78,7 +78,7 @@ Criando um controle de fonte plug-in envolve três etapas:
 
 4. Crie uma subchave denominada **InstalledSCCProviders** sob o **SourceCodeControlProvider** subchave e, em seguida, colocar uma entrada sob essa subchave.
 
-    O nome desta entrada é o nome legível pelo usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor for, mais uma vez, a subchave criada na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *SOFTWARE\\< nome da empresa\> \\< nome do produto\>*.
+    O nome desta entrada é o nome legível pelo usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor for, mais uma vez, a subchave criada na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nome de exibição\>** = *SOFTWARE\\< empresa nome da\>\\< nome do produto\>*.
 
     Por exemplo:
 
