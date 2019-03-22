@@ -19,6 +19,7 @@ As assinaturas do Visual Studio são um conjunto abrangente de recursos para cri
 Os administradores entram em [https://manage.visualstudio.com](https://manage.visualstudio.com) para atribuir assinaturas às suas equipes.<br>
 Os assinantes entram em [https://my.visualstudio.com](https://my.visualstudio.com) para acessar os benefícios da assinatura.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

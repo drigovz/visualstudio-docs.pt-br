@@ -12,6 +12,8 @@ manager: jillfra
 
 O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implantar seus aplicativos.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>Experimente a implantação do Visual Studio com Guias de Início Rápido de 5 minutos</h2>
 
 <ul class="panelContent cardsFTitle">
