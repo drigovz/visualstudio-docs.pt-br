@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763278"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194451"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 
 -   Funções que são definidas em todos os blocos de script no documento ativo. Blocos de script embutidos têm suporte em arquivos que tenham as extensões de nome de arquivo: .aspx, . ascx, .master, .html e .htm.
 
--   Elementos de`script` com atributos `src` que apontam para outro arquivo de script. O arquivo de script de destino deve ter a extensão de nome de arquivo .js.
+-   Elementos de `script` com atributos `src` que apontam para outro arquivo de script. O arquivo de script de destino deve ter a extensão de nome de arquivo .js.
 
 -   Arquivos JavaScript que fazem referência a outros arquivos JavaScript usando uma diretiva `reference`.
 
@@ -122,7 +122,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
  O JavaScript IntelliSense fornece referências de programação para elementos DHTML (HTML dinâmico) DOM, como `body`, `form` e `div`. Somente os elementos que são incluídos no documento atual e na página mestra são exibidos pelo IntelliSense. O JavaScript IntelliSense também oferece suporte aos objetos `window` e `document` e a seus membros.
 
 ###  <a name="IntrinsicObjects"></a> Objetos intrínsecos
- O JavaScript IntelliSense fornece referências de programação para objetos intrínsecos como `Array`, `String`, `Math`, `Date` e `Number`. Para obter mais informações sobre objetos intrínsecos, consulte [objetos intrínsecos](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ O JavaScript IntelliSense fornece referências de programação para objetos intrínsecos como `Array`, `String`, `Math`, `Date` e `Number`. Para obter mais informações sobre objetos intrínsecos, consulte [objetos internos padrão](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a> Variáveis, funções e objetos definidos pelo usuário
  Quando você altera um arquivo JavaScript, o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] examina documentos abertos e referenciados para determinar todos os recursos de código disponíveis. Isso inclui variáveis, funções e objetos que você criou. Esses recursos são então disponibilizados para o JavaScript IntelliSense.

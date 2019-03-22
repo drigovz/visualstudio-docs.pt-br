@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752284"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868111"
 ---
 # <a name="general-environment-options-dialog-box"></a>Caixa de diálogo Geral, Ambientes, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Use esta página para alterar temas de cores, configurações de barra de status
  **Tema da cor**  
  Escolha o tema de cor **Azul**, **Claro** ou **Escuro** para o IDE.  
   
- É possível instalar temas predefinidos adicionais e criar temas personalizados, baixando e instalando o **Visual Studio 2015 Color Theme Editor** da [Galeria do Visual Studio](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Após você instalar essa ferramenta, temas de cores adicionais aparecem na caixa de listagem Tema da cor.  
+ Para instalar temas predefinidos adicionais e criar temas personalizados, baixe e instale o **Visual Studio 2015 Color Theme Editor** do [Visual Studio Marketplace](https://marketplace.visualstudio.com). Após você instalar essa ferramenta, temas de cores adicionais aparecem na caixa de listagem Tema da cor.  
   
  Aplicar o padrão de minúsculas e maiúsculas de título à barra de menus  
  Menus têm o **Padrão de minúsculas e maiúsculas de título** por padrão no Visual Studio 2015. Desmarque essa opção para defini-los como **TODAS EM MAIÚSCULAS**.  

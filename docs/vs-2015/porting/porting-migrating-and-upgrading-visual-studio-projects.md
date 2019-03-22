@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805547"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194918"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portando, migrando e atualizando projetos do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Quando você estiver considerando se deve ir para uma versão mais recente do Vi
 |Office 2007 VSTO|Se você atualizar o projeto para que ele seja destinado ao Office 2013 e ao .NET Framework 4, será possível abrir esse projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1.|
 |Office 2010 VSTO|Se o projeto for destinado para o .NET Framework 4, você poderá abri-lo no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1. Todos outros projetos exigem uma atualização unidirecional.|
 |Aplicativos avançados da Internet|Se você atualizar o projeto, será possível abri-lo no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1.|
-|SharePoint 2007|Esse projeto não pode ser aberto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. No entanto, se você atualizar manualmente o projeto para o SharePoint 2010, será possível abri-lo no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1. Para obter mais informações de como atualizar o SharePoint 2007, confira [Migrando do SharePoint 2007 para o SharePoint 2010 para profissionais de TI](http://go.microsoft.com/fwlink/?LinkId=238224), [Migrando um fluxo de trabalho 2007 para Visual Studio e o SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225) e [Ferramenta de migração do SharePoint Enterprise Search para o SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226).|
+|SharePoint 2007|Esse projeto não pode ser aberto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. No entanto, se você atualizar manualmente o projeto para o SharePoint 2010, será possível abri-lo no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1. Para obter mais informações sobre como atualizar o SharePoint 2007, consulte [Migrando do SharePoint 2007 para o SharePoint 2010 para profissionais de TI](http://go.microsoft.com/fwlink/?LinkId=238224) e [ferramenta de migração do SharePoint Enterprise Search para o SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|Você pode abrir o projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1.|
 |SketchFlow|Se você permitir que o Visual Studio atualize o projeto para o WPF 4.5/Silverlight 5, será possível abri-lo no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |Banco de dados do [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|Você pode abrir o projeto no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e Visual Studio 2010 SP1. Se você tiver um arquivo de banco de dados (.mdf) criado em uma versão anterior do SQL Server, será preciso atualizá-lo para o [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] para poder usá-lo com o SQL Server Express LocalDB, mas o banco de dados não será mais compatível com versões anteriores do SQL Server. Se você não atualizar, será possível continuar trabalhando com o banco de dados no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] instalando e usando o [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] no mesmo computador. Para obter mais informações, consulte [atualizar arquivos. mdf](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,9 +91,9 @@ Quando você estiver considerando se deve ir para uma versão mais recente do Vi
 
 - Se você tenta abrir um projeto para um aplicativo da área de trabalho no [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], ocorrerá um erro e uma dessas mensagens é exibida: "Esta edição do Visual Studio dá suporte apenas a [!INCLUDE[win81](../includes/win81-md.md)] aplicativos" ou "Este projeto é incompatível com a edição atual do Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] é restrito para o desenvolvimento, teste e implantação de aplicativos da Windows Store projetado para Windows 8.1. Para abrir um projeto de aplicativo da área de trabalho, você deve usar uma edição do Visual Studio que ofereça suporte a esse tipo de projeto.
 
-   Para obter mais informações sobre as edições do Visual Studio, confira [Produtos do Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332)
+   Para obter mais informações sobre as edições do Visual Studio, confira [Produtos do Microsoft Visual Studio](https://visualstudio.microsoft.com/products/)
 
-- Se você tentar abrir um projeto de aplicativo da Windows Store no [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, ocorrerá um erro. O [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop não pode ser usado para compilar aplicativos da Windows Store. Se desejar compilar aplicativos da Windows Store, você também poderá instalar o [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Ou, para desenvolver aplicativos para todas as plataformas da Microsoft e da Web, tente o Visual Studio Professional 2013.
+- Se você tentar abrir um projeto de aplicativo da Windows Store no [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, ocorrerá um erro. Não é possível usar o [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop para criar aplicativos da Windows Store. Se desejar compilar aplicativos da Windows Store, você também poderá instalar o [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Ou, para desenvolver aplicativos para todas as plataformas da Microsoft e da Web, tente o Visual Studio Professional 2013.
 
 - Se um projeto exigir recursos específicos do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], ele não poderá ser aberto em uma versão anterior.
 
@@ -116,7 +116,7 @@ Quando você estiver considerando se deve ir para uma versão mais recente do Vi
 |Arquivos EDMX (Modelo de Dados de Entidade)|No [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], você pode abrir um arquivo EDMX destinado para o .NET Framework 4.5 ou o .NET Framework 4 sem fazer alterações no arquivo.|
 |Arquivos de relatório do Criador de Perfil|Você pode abrir arquivos de relatório do Criador de Perfil (.vsp .vsps, .psess e .vspf) no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Um arquivo .vspx não pode ser aberto no Visual Studio 2010 SP1.|
 |Arquivo de solução (.suo)|Você pode usar o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] para abrir um projeto de solução criado no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1.|
-|SQL Server Compact Edition|O [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] não oferece suporte ao SQL Server Compact Edition.|
+|SQL Server Compact Edition|O [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] não tem suporte para o SQL Server Compact Edition.|
 |Arquivos SQLX|Para abrir esses arquivos no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], você deve executar uma atualização unidirecional, implantar o arquivo .sqlx na versão de destino do Visual Studio e recompilar o arquivo no formato .dacpac.|
 |Arquivos de log do IntelliTrace do [!INCLUDE[vs2010](../includes/vs2010-md.md)]|Você pode abrir esses arquivos no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e Visual Studio 2010 SP1.|
 |Arquivos JavaScript Memory Analyzer (.diagsession)|Os arquivos criados por versões anteriores do Visual Studio podem ser exibidos no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. No entanto, dependendo das informações coletadas, os arquivos criados no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] podem não ser abertos no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1.|

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939158"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069860"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 
@@ -56,15 +56,29 @@ Conhecimento prévio dos conceitos a seguir também é útil, mas não é necess
 
 Crie um novo projeto WPF para exibir os registros de produtos.
 
-1. Inicie o Visual Studio.
+::: moniker range="vs-2017"
 
-2. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. Abra o Visual Studio.
+
+2. No menu **Arquivo**, selecione **Novo**> **Projeto**.
 
 3. Expanda **Visual Basic** ou **Visual C#** e selecione **Windows**.
 
-4. Selecione o modelo de projeto **Aplicativo WPF**.
+4. Selecione o **aplicativo WPF** modelo de projeto.
 
 5. No **nome** , digite **AdventureWorksProductsEditor** e, em seguida, selecione **Okey**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio.
+
+2. Na janela de início, escolha **criar um novo projeto**.
+
+3. Pesquise o C# **aplicativo WPF** modelo de projeto e siga as etapas para criar o projeto, o projeto de nomenclatura **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    O Visual Studio cria o projeto AdventureWorksProductsEditor.
 

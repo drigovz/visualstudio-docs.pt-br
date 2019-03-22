@@ -1,5 +1,6 @@
 ---
 title: O que há de novo no depurador no Visual Studio 2017 | Microsoft Docs
+titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff14414415f86aeb704920f722eb221a2530a35c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993228"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867613"
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>O que há de novo no depurador no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novidades do depurador no Visual Studio 2017
 
 O depurador inclui esses novos recursos:
 
-- Uma novidade na versão 15.5, o **Depurador de Instantâneos** tira um instantâneo de seus aplicativos em produção quando o código no qual você está interessado é executado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
+- Novidades na versão 15.5, o **depurador de instantâneo** tira um instantâneo de seus aplicativos em produção quando o código que você está interessado é executado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
 
     A coleção de instantâneos está disponível para os seguintes aplicativos Web em execução no Serviço de Aplicativo do Azure:
 
@@ -38,7 +40,7 @@ O depurador inclui esses novos recursos:
 
     Para obter mais informações, confira [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md).
 
-- Novidade na versão 15.5, apenas, no Visual Studio Enterprise **retrocesso do IntelliTrace** tira um instantâneo do seu aplicativo em cada ponto de interrupção e o depurador automaticamente a eventos de etapa. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
+- Novidades na versão 15.5 no Visual Studio Enterprise somente **retrocesso do IntelliTrace** tira um instantâneo do seu aplicativo em cada ponto de interrupção e o depurador automaticamente a eventos de etapa. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
 
     É possível navegar e exibir instantâneos usando os botões **Voltar** e **Avançar** na barra de ferramentas Depurar. Esses botões navegam pelos eventos exibidos na guia **Eventos** na janela **Ferramentas de Diagnóstico**.
 
@@ -66,7 +68,7 @@ O depurador inclui esses novos recursos:
 
     ![Pesquisar em Anexar ao processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Para obter mais informações sobre esses novos recursos, consulte a [notas de versão do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+Para obter mais informações sobre esses novos recursos, consulte a [notas de versão do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Consulte também
 

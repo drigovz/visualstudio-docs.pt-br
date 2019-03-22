@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909681"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069769"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 
@@ -50,7 +50,7 @@ Você precisa dos seguintes componentes para concluir esta instrução passo a p
 
 Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:
 
-- WCF Data Services. Para obter mais informações, consulte [visão geral](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modelos de dados no [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,21 +60,9 @@ Conhecimento prévio dos conceitos a seguir também é útil, mas não é necess
 
 ## <a name="create-the-service-project"></a>Criar o projeto de serviço
 
-Inicie este passo a passo Criando um projeto para um serviço de dados do WCF:
+1. Comece este passo a passo pela criação de um C# ou Visual Basic **aplicativo Web do ASP.NET** projeto. Nomeie o projeto **AdventureWorksService**.
 
-1. Inicie o Visual Studio.
-
-2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
-
-3. Expanda **Visual C#** ou **Visual Basic** e selecione **Web**.
-
-4. Selecione o modelo de projeto **Aplicativo Web ASP.NET**.
-
-5. Na caixa **Nome**, digite **AdventureWorksService** e clique em **OK**.
-
-     O Visual Studio cria o projeto **AdventureWorksService**.
-
-6. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Default.aspx** e selecione **Excluir**. Este arquivo não é necessário neste passo a passo.
+2. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Default.aspx** e selecione **Excluir**. Esse arquivo não é necessário para o passo a passo.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Criar um modelo de dados de entidade para o serviço
 
