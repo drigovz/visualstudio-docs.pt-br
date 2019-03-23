@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633857"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355572"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Passo a passo: Criar uma região de formulário do Outlook
   Regiões de formulário personalizadas estendem formulários do Microsoft Office Outlook padrão ou personalizados. Neste passo a passo, você criará uma região de formulário personalizada é exibida como uma nova página na janela Inspetor de um item de contato. Esta região do formulário exibe um mapa de cada endereço listado para o contato, enviando as informações de endereço para o Windows Live Search site Local. Para obter informações sobre regiões de formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56633857"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] ou mais recente.
 
   ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma versão em vídeo deste tópico, consulte [vídeo como: Criar uma região de formulário do Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633857"
 4.  Salve e feche o item de contato.
 
 5.  Reabra o **Ann Beebe** item de contato.
+
+    No Outlook, isso pode ser feito **encontrar** grupo, abrindo o catálogo de endereços para os contatos ou digitando Ann Beebe em **pesquisar pessoas**.
 
 6.  No **mostram** grupo da faixa de opções do item, clique em **mapa ele** para abrir a região de formulário do mapa-lo.
 
