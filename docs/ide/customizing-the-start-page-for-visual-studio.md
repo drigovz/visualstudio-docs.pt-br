@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953376"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070107"
 ---
 # <a name="customize-startup"></a>Personalizar a inicialização
 
@@ -65,7 +65,7 @@ Para instalar uma página inicial personalizada, abra um arquivo *.vsix* ou copi
 1. Na lista **Personalizar Página Inicial**, escolha a página desejada.
 
 > [!TIP]
-> Se um erro em uma página inicial personalizada causar pane no Visual Studio, você poderá iniciar o Visual Studio no modo de segurança e defini-lo para usar a página inicial padrão. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Se um erro em uma página inicial personalizada causar pane no Visual Studio, você poderá abrir o Visual Studio no modo de segurança e defini-lo para usar a página inicial padrão. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Consulte também
 

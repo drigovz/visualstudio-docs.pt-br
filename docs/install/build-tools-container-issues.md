@@ -1,6 +1,6 @@
 ---
 title: Problemas conhecidos de contêineres
-description: Saiba mais sobre os problemas conhecidos que podem ocorrer quando as Ferramentas de Build do Visual Studio 2017 são instaladas em um contêiner do Windows.
+description: Saiba mais sobre os problemas conhecidos que podem ocorrer quando as Ferramentas de Build do Visual Studio são instaladas em um contêiner do Windows.
 ms.date: 04/18/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -10,16 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1fdfcc71f2bd17bf8ab4be0796350799af2c35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935011"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983696"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conhecidos de contêineres
 
 Há alguns problemas ao instalar o Visual Studio em um contêiner do Docker.
+
+::: moniker range="vs-2017"
 
 ## <a name="windows-container"></a>Contêiner do Windows
 
@@ -36,6 +38,8 @@ Estes problemas conhecidos ocorrem quando as Ferramentas de Build do Visual Stud
 
 * Não é possível instalar o Visual Studio 2017 versão 15.8 ou anterior (qualquer produto) no mcr<span></span>.microsoft.com/windows/servercore:1809 ou posterior. Consulte https://aka.ms/setup/containers/servercore1809 para obter mais informações.
 
+::: moniker-end
+
 ## <a name="build-tools-container"></a>Contêiner das Ferramentas de Build
 
 Os problemas conhecidos a seguir podem ocorrer ao usar o contêiner das Ferramentas de Build. Para ver se os problemas foram corrigidos ou se há outros problemas conhecidos, visite https://developercommunity.visualstudio.com.
@@ -48,4 +52,4 @@ Os problemas conhecidos a seguir podem ocorrer ao usar o contêiner das Ferramen
 
 * [Instalar ferramentas de build em um contêiner](build-tools-container.md)
 * [Exemplo avançado para contêineres](advanced-build-tools-container.md)
-* [IDs de carga de trabalho e de componente das Ferramentas de Build do Visual Studio 2017](workload-component-id-vs-build-tools.md)
+* [IDs de carga de trabalho e de componente das Ferramentas de Build do Visual Studio](workload-component-id-vs-build-tools.md)

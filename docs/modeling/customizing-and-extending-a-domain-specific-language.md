@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 001b0efc5beaa5f76f979070e8e73c2d59fb3e8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 140a79e3771e4097a58c6974c8e088006ae2105a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949792"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415649"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizando e estendendo uma linguagem específica do domínio
 O Visual Studio de modelagem e o SDK de visualização (VMSDK) oferece vários níveis na qual você pode definir as ferramentas de modelagem:
@@ -51,17 +51,17 @@ O Visual Studio de modelagem e o SDK de visualização (VMSDK) oferece vários n
 |Altere o nome, ícone e visibilidade de nós no Gerenciador de modelos da sua DSL.|Ver [Personalizando o Gerenciador de modelos](../modeling/customizing-the-model-explorer.md).|
 |Habilitar copiar, recortar e colar|Defina as **habilitar copiar e colar** propriedade da **Editor** nó no Gerenciador de DSL.|
 |Copie suas metas e links de referência sempre que um elemento é copiado. Por exemplo, copie os comentários anexados a um item.|Defina as **propaga cópia** propriedade da função de origem (representada pela linha em um dos lados da relação de domínio no diagrama de definição de DSL).<br /><br /> Escreva código para substituir ProcessOnCopy para atingir efeitos mais complexos.<br /><br /> Ver [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).|
-|Excluir, reassociar ou vincular novamente os elementos relacionados quando um elemento é excluído.|Defina as **propaga exclusão** valor de uma função de relação. Para obter efeitos mais complexos, substituir `ShouldVisitRelationship` e `ShouldVisitRolePlayer` métodos na `MyDslDeleteClosure` classe, definida em **DomainModel.cs**<br /><br /> Consulte [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md)|
+|Excluir, reassociar ou vincular novamente os elementos relacionados quando um elemento é excluído.|Defina as **propaga exclusão** valor de uma função de relação. Para obter efeitos mais complexos, substituir `ShouldVisitRelationship` e `ShouldVisitRolePlayer` métodos na `MyDslDeleteClosure` classe, definida na **DomainModel.cs**.|
 |Preserve o layout da forma e a aparência em cópia e arraste e solte.|Adicionar as formas e conectores para copiado `ElementGroupPrototype`. É o método mais conveniente para substituir `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Ver [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).|
 |Cole formas em um local escolhido, como a posição atual do cursor.|Substituir `ClipboardCommandSet.ProcessOnCopy()` para usar a versão específica do local de `ElementOperations.Merge().` consulte [personalizar o comportamento de cópia](../modeling/customizing-copy-behavior.md).|
 |Criar links adicionais ao colar|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|Permitir arrastar e soltar este diagrama para outras DSLs e Windows elementos|Confira [Como Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Permitir arrastar e soltar este diagrama para outras DSLs e Windows elementos|Confira [Como Adicionar um manipulador do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Permitir que uma forma ou a ferramenta a ser arrastado para uma forma de filho, como uma porta, como se ele foi arrastado para o pai.|Defina uma diretiva Element Merge na classe de objeto de destino para encaminhar o objeto solto ao pai. Ver [Personalizando a criação de elemento e movimentação](../modeling/customizing-element-creation-and-movement.md).|
 |Permitir que uma forma ou a ferramenta a ser arrastado para uma forma e têm links adicionais ou objetos criados. Por exemplo, para permitir que um comentário a ser solto em um item ao qual ele deve ser vinculado.|Definir uma diretiva Element Merge na classe de domínio de destino e definir os links a ser gerado. Em casos complexos, você pode adicionar código personalizado. Ver [Personalizando a criação de elemento e movimentação](../modeling/customizing-element-creation-and-movement.md).|
-|Crie um grupo de elementos com uma ferramenta. Por exemplo, um componente com um conjunto fixo de portas.|Substitua o método de inicialização da caixa de ferramentas no ToolboxHelper.cs. Crie um protótipo de grupo de elemento (EGP) que contém os elementos e seus vínculos de relação. Ver [personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Inclua as formas de entidade de segurança e a porta em que o EGP ou definir BoundsRules para posicionar as formas de porta, quando o EGP é instanciado. Ver [BoundsRules restringem o local de forma e tamanho](../modeling/boundsrules-constrain-shape-location-and-size.md).|
+|Crie um grupo de elementos com uma ferramenta. Por exemplo, um componente com um conjunto fixo de portas.|Substitua o método de inicialização da caixa de ferramentas no ToolboxHelper.cs. Crie um protótipo de grupo de elemento (EGP) que contém os elementos e seus vínculos de relação. Ver [personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Inclua as formas de entidade de segurança e a porta em que o EGP ou definir BoundsRules para posicionar as formas de porta, quando o EGP é instanciado.|
 |Use uma ferramenta de conexão para criar uma instância de vários tipos de relação.|Adicione diretivas de conectar-se de Link (LCD) para o construtor de Conexão que é invocado pela ferramenta. Os LCDs determinam o tipo da relação entre os tipos dos dois elementos. Para fazer isso dependem dos estados dos elementos, você pode adicionar código personalizado. Ver [personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md).|
 |Ferramentas de adesivas - o usuário pode clicar duas vezes qualquer ferramenta para criar muitas formas ou conectores em sucessão.|No Gerenciador de DSL, selecione o `Editor` nó. Na janela Propriedades, defina **usa itens de caixa de ferramentas adesivo**.|
-|Definir comandos de menu|Confira [Como Modificar um comando de Menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Definir comandos de menu|Confira [Como Modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |Restringir o modelo com as regras de validação|Consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md)|
 |Gere código, arquivos de configuração ou documentos de uma DSL.|[Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Personalizar como os modelos são salvos ao arquivo.|Consulte [Personalizando o armazenamento de arquivos e a serialização de XML](../modeling/customizing-file-storage-and-xml-serialization.md)|

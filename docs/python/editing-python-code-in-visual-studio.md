@@ -1,7 +1,7 @@
 ---
 title: Editar código do Python
 description: Para o Python, o Visual Studio fornece funcionalidades avançadas do IntelliSense, de snippets de código e navegação, juntamente com formatação, linting e refatoração.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155390"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155518"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
@@ -109,10 +109,20 @@ Usar o comando **Execute Mypy** neste código gera o seguinte erro:
 
 ![Exemplo de resultado de MyPy validando dicas de tipo](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
+> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
 >
 > No momento, o Visual Studio não dá suporte a dicas de tipo nos comentários.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
+>
+> O Visual Studio inclui um conjunto de pacotes de arquivos Typeshed para Python 2 e 3, para que os downloads adicionais não sejam necessários. No entanto, se você quiser usar um conjunto diferente de arquivos, poderá especificar o caminho nas opções de **Ferramentas** > **Opções** > **Python**  >  **Servidor de Linguagem**. Confira [Opções – Servidor de linguagem](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> No momento, o Visual Studio não dá suporte a dicas de tipo nos comentários.
+::: moniker-end
 
 ### <a name="signature-help"></a>Ajuda da assinatura
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba8f58d13d3e0c9e360796092a8d522f54d0384
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 76bfa81f1285dce000f79c356a604bab1d53cc55
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939535"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415818"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Adicionar propriedades personalizadas a diagramas de dependência
 
@@ -22,7 +22,7 @@ Quando você escreve o código de extensão para diagramas de dependência, voc�
 
 ## <a name="non-visible-properties"></a>Propriedades não visíveis
 
-Se você quiser apenas seu código anexe valores a qualquer elemento em um diagrama de dependência, você não precisa definir um componente MEF. Não há um dicionário, chamado `Properties` em <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Adicione valores de marshaling ao dicionário de qualquer elemento de camada. Eles serão salvos como parte do diagrama de dependência. Para obter mais informações, consulte [navegar e atualizar modelos no código do programa de camada](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Se você quiser apenas seu código anexe valores a qualquer elemento em um diagrama de dependência, você não precisa definir um componente MEF. Não há um dicionário, chamado `Properties` em <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Adicione valores de marshaling ao dicionário de qualquer elemento de camada. Eles serão salvos como parte do diagrama de dependência.
 
 ## <a name="editable-properties"></a>Propriedades editáveis
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021865"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070302"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar um aplicativo Node.js no Azure (Serviço de Aplicativo do Linux)
 
@@ -36,15 +36,44 @@ Neste tutorial, você aprenderá como:
 > * Criar um Serviço de Aplicativo do Linux no Azure
 > * Implantar no Linux
 
+## <a name="prerequisites"></a>Pré-requisitos
+
+* Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js. 
+
+    ::: moniker range=">=vs-2019"
+    Se você ainda não instalou o Visual Studio 2019, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se você ainda não instalou o Visual Studio 2017, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
+    ::: moniker-end
+
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+
+    ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
+
+* Você precisa ter o tempo de execução do Node.js instalado.
+
+    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Criar um projeto Node.js para execução no Azure
 
-1. Crie um novo aplicativo TypeScript Express usando a caixa de diálogo **Arquivo** > **Novo Projeto**.
+1. Abra o Visual Studio.
 
-1. No nó **TypeScript**, selecione **Aplicativo 4 básico do Node.js Express**.
+1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+
+1. Criar um novo aplicativo TypeScript Express.
+
+    ::: moniker range=">=vs-2019"
+    Na caixa de diálogo **Criar um novo projeto**, digite **javascript** na caixa de pesquisa para filtrar os resultados e escolha **Aplicativo Azure Node.js Express 4 básico** e escolha **Avançar**. Em seguida, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, escolha **OK**.
 
     ![Criar um aplicativo TypeScript Express](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    Se não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, você deverá adicionar a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
 
-1. Clique em **OK** para criar o projeto no Visual Studio.
+    O Visual Studio criará o projeto e o abrirá no Gerenciador de Soluções (painel direito).
 
 1. Pressione **F5** para criar e executar o aplicativo e verifique se tudo está funcionando conforme esperado.
 
@@ -145,7 +174,7 @@ Para configurar o GitHub para o Visual Studio:
 
 * Se o processo do node.exe se tornar inativo (ou seja, uma exceção sem tratamento ocorrer), o contêiner será reinicializado.
 * Quando o contêiner for iniciado, ele percorrerá várias heurísticas para descobrir como iniciar o processo do Node.js. Veja os detalhes da implementação em [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
-* Conecte-se ao contêiner em execução por meio do SSH para fazer investigações. Faça isso com facilidade usando o Portal do Azure. Selecione o Serviço de Aplicativo e role a lista de ferramentas para baixo até chegar a **SSH**, na seção **Ferramentas de Desenvolvimento**.
+* Conecte-se ao contêiner em execução por meio do SSH para fazer investigações. Faça isso com facilidade usando o portal do Azure. Selecione o Serviço de Aplicativo e role a lista de ferramentas para baixo até chegar a **SSH**, na seção **Ferramentas de Desenvolvimento**.
 * Para ajudar com a solução de problemas, vá para as configurações de **Logs de diagnóstico** do Serviço de Aplicativo e altere a configuração de **Log de contêiner do Docker** de **Desativado** para **Sistema de Arquivos**. Os logs são criados no contêiner em */home/LogFiles/*_docker.log* e podem ser acessados na caixa usando o SSH ou FTP(S).
 * Um nome de domínio personalizado pode ser atribuído ao site, em vez da URL *.azurewebsites.net atribuída por padrão. Para obter mais detalhes, confira o tópico [Mapear domínio personalizado](/azure/app-service/app-service-web-tutorial-custom-domain).
 * A implantação em um site de preparo para a execução de testes adicionais antes da migração para a produção é uma melhor prática. Para obter detalhes sobre como configurar isso, confira o tópico [Criar ambientes de preparo](/azure/app-service/web-sites-staged-publishing).

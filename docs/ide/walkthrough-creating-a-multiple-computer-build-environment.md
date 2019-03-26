@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324215"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870499"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Passo a passo: Criar um ambiente de build de vários computadores
 
@@ -264,7 +264,7 @@ Esta tabela descreve os argumentos compatíveis com *vcvarsall.bat*:
 |x86_amd64|x64 Cruzado|x86, x64|X64|
 |amd64|x64 Nativo|X64|X64|
 
-Se *vcvarsall.bat* for executado com êxito – ou seja, nenhuma mensagem de erro for exibida, você poderá ignorar a próxima etapa e continuar na seção [Instalar assemblies do MSBuild para o GAC (Cache de Assembly Global) no computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) deste documento.
+Se *vcvarsall.bat* for executado com êxito – ou seja, nenhuma mensagem de erro for exibida, você poderá ignorar a próxima etapa e continuar na seção [Instalar assemblies do MSBuild para o GAC (Cache de Assembly Global) no computador de build](#install-msbuild-to-gac) deste documento.
 
 ### <a name="manually-set-environment-variables"></a>Definir manualmente variáveis de ambiente
 
@@ -286,7 +286,7 @@ Se *vcvarsall.bat* for executado com êxito – ou seja, nenhuma mensagem de err
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Instalar assemblies do MSBuild para o GAC (Cache de Assembly Global) no computador de build
+## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Instalar assemblies do MSBuild para o GAC (Cache de Assembly Global) no computador de build
 
 O MSBuild requer que alguns assemblies adicionais sejam instalados no GAC do computador de build.
 
@@ -298,7 +298,7 @@ O MSBuild requer que alguns assemblies adicionais sejam instalados no GAC do com
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. Para instalar os assemblies no GAC, localize *gacutil.exe* no computador de build; normalmente, ele está em %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Se você não conseguir localizar essa pasta, repita as etapas na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) deste passo a passo.
+2. Para instalar os assemblies no GAC, localize *gacutil.exe* no computador de build; normalmente, ele está em %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Se você não conseguir localizar essa pasta, repita as etapas na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) deste passo a passo.
 
      Abra uma janela do **Prompt de Comando** que tem direitos administrativos e execute este comando para cada arquivo:
 
@@ -330,7 +330,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
      Estas etapas referem-se ao diretório como %Depot%.
 
-2. Copie os diretórios e arquivos, conforme descrito na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) deste passo a passo, mas cole-os no diretório *%Depot%* recém-criado. Por exemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* para *%Depot%\Windows Kits\8.0\bin*.
+2. Copie os diretórios e arquivos, conforme descrito na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) deste passo a passo, mas cole-os no diretório *%Depot%* recém-criado. Por exemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* para *%Depot%\Windows Kits\8.0\bin*.
 
 3. Quando os arquivos forem colados em *%Depot%*, faça estas alterações:
 

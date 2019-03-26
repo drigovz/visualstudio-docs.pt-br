@@ -2,7 +2,6 @@
 title: Mecanismos do Windows Script | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16e699ee789ae10883152b5d8aa7d8ffee0ddffd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572615"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157757"
 ---
 # <a name="windows-script-engines"></a>Mecanismos de script do Windows
 Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE COM que dá suporte às interfaces a seguir.  
@@ -29,7 +28,7 @@ Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE CO
 |Interface|Descrição|  
 |[IActiveScript](../winscript/reference/iactivescript.md)|Fornece a capacidade de script básico. A implementação dessa interface é necessária.|  
 |[IActiveScriptParse](../winscript/reference/iactivescriptparse.md)|Fornece a capacidade de adicionar texto de script, avaliar expressões e assim por diante. A implementação dessa interface é opcional. No entanto, se ela não for implementada, o mecanismo de script deverá implementar uma das interfaces IPersist* para carregar um script.|  
-|IPersist*|Fornece suporte a persistência. A implementação de pelo menos uma das interfaces a seguir é necessária se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) não está implementado.<br /><br /> IPersistStorage: dá suporte ao atributo DATA={url} na marca OBJECT.<br /><br /> IPersistStreamInit: dá suporte para o mesmo que `IPersistStorage`, bem como o atributo DATA="string-encoded byte stream" na marca OBJECT.<br /><br /> IPersistPropertyBag: dá suporte ao atributo PARAM= na marca OBJECT.|  
+|IPersist*|Fornece suporte a persistência. A implementação de pelo menos uma das interfaces a seguir é necessária se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) não está implementado.<br /><br /> IPersistStorage: Dá suporte ao atributo DATA={url} na marca OBJECT.<br /><br /> IPersistStreamInit: Dá suporte para o mesmo que `IPersistStorage`, bem como o atributo DATA="string-encoded byte stream" na marca OBJECT.<br /><br /> IPersistPropertyBag: Dá suporte ao atributo PARAM= na marca OBJECT.|  
   
 > [!NOTE]
 >  É possível que o mecanismo de script nunca seja chamado para salvar ou restaurar um estado de script por meio de `IPersist*`. Em vez disso, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) é usado chamando [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para criar um script em branco, em seguida, miniscripts são adicionados e conectados aos eventos com [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) e o código geral é adicionado com [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). No entanto, um mecanismo de script deve implementar totalmente pelo menos uma interface `IPersist*` (preferencialmente `IPersistStreamInit`), pois outros aplicativos de host podem tentar utilizá-las.  

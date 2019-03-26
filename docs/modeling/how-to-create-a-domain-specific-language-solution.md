@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936935"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416178"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como: Criar uma solução de Linguagem Específica de Domínio
 Uma linguagem específica de domínio (DSL) é criada usando uma solução do Visual Studio especializada.
 
 ## <a name="prerequisites"></a>Pré-requisitos
- Antes de iniciar este procedimento, você deve primeiro instalar esses componentes:
 
+Antes de iniciar este procedimento, instale esses componentes:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| SDK de Visualização e Modelagem do Visual Studio | |
+- Visual Studio
+- SDK do Visual Studio (instalado como parte dos **desenvolvimento de extensões do Visual Studio** carga de trabalho)
+- Modelando o SDK (instalado como um componente do Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica do domínio
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>Para criar uma solução de linguagem específica do domínio
+1. Iniciar o Assistente de DSL, criando um novo **Designer de linguagem específica do domínio** projeto.
 
-1. Inicie o assistente DSL.
+   > [!NOTE]
+   > De preferência, o nome que você escolhe para o projeto deve ser um Visual válido C# identificador porque ele pode ser usado para gerar código.
 
-   1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+   ::: moniker range="vs-2017"
 
-   2. A caixa de diálogo **Novo Projeto** é exibida.
+   ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png)
 
-   3. Sob **tipos de projeto**, expanda o **Other Project Types** nó e clique em **extensibilidade**.
-
-   4. Clique em **Designer de linguagem específica do domínio**.
-
-   5. No **nome** , digite um nome para a solução. Clique em **OK**.
-
-       O **Assistente de Designer de linguagem específica do domínio** é exibida.
-
-      > [!NOTE]
-      >  De preferência, o nome que você digita deve ser um Visual C# identificador válido, porque ele pode ser usado para gerar código.
-
-      ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. Escolha um modelo DSL.
 

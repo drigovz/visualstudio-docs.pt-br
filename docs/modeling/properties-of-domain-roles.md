@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923272"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415519"
 ---
 # <a name="properties-of-domain-roles"></a>Propriedades de funções de domínio
 As propriedades na tabela a seguir estão associadas com uma função de domínio. Para obter informações sobre as funções de domínio, consulte [Noções básicas sobre modelos, Classes e relacionamentos](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -28,7 +28,7 @@ As propriedades na tabela a seguir estão associadas com uma função de domíni
 |Multiplicidade|O número de elementos de modelo que pode desempenhar a função oposta (`0..1`, `1..1`, `0..*`, ou `1..*`). Se a multiplicidade for `0..*` ou `1..*`, em seguida, a propriedade gerada representará uma coleção; caso contrário, a propriedade gerada representará um elemento de modelo único.|Depende do tipo de relação e se essa é a função de origem ou destino na relação.|
 |Nome|O nome da função de domínio. Essa propriedade não pode conter espaço em branco.|O nome da classe de domínio do representante da função para essa função.|
 |Propaga cópia|`DoNotPropagateCopy` -O representante da função copiado não terá nenhuma cópia desse link.<br /><br /> `PropagateCopyToLinkOnly` -O link copiado aponta para o existente oposto.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -O link copiado aponta para uma cópia do representante da função oposta.|`PropagateCopyToLinkAndOppositeRolePlayer` para as funções de origem dos objetos incorporados.<br /><br /> `DoNotPropagateCopy` para outras funções.<br /><br /> Para obter mais informações, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)|
-|Propaga a exclusão|`True` Para excluir o elemento que desempenha essa função quando o link associado é excluído.|`True` para o destino de uma função de inserção.<br /><br /> `False` para outras funções.<br /><br /> Para obter mais informações, consulte [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md).|
+|Propaga a exclusão|`True` Para excluir o elemento que desempenha essa função quando o link associado é excluído.|`True` para o destino de uma função de inserção.<br /><br /> `False` para outras funções.|
 |Nome da Propriedade|O nome da propriedade gerada no código de representante da função. Esse nome não pode conter espaço em branco.|O nome da função oposta se essa função tem um zero-para-um ou uma-para-um multiplicidade; Caso contrário, o nome pluralizado da função oposta.|
 |Representante da função|A classe de domínio do elemento que pode desempenhar esta função na relação. Esta propriedade é somente para leitura.|A classe de domínio do representante da função para essa função.|
 |Observações|Observações informais que estão associadas com a função de domínio.|< nenhum\>|

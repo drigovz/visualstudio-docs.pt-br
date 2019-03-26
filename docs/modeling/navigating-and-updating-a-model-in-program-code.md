@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950143"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416226"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navegar e atualizar um modelo no código do programa
 
@@ -226,27 +226,28 @@ using (Transaction t =
   Quando você cria um elemento dessa forma, um conector no diagrama é criado automaticamente, mas ele tem uma forma padrão, cor e outros recursos. Para controlar como o conector associado é criado, consulte [criação de um elemento e sua forma](#merge).
 
 ##  <a name="deleteelements"></a> Excluir elementos
- Excluir um elemento chamando `Delete()`:
 
- `henry.Delete();`
+Excluir um elemento chamando `Delete()`:
 
- Esta operação excluirá também:
+`henry.Delete();`
+
+Esta operação excluirá também:
 
 - Links do relacionamento de e para o elemento. Por exemplo, `edward.Parents` não conterá mais `henry`.
 
 - Elementos em funções para o qual o `PropagatesDelete` sinalizador é verdadeiro. Por exemplo, a forma que exibe o elemento será excluída.
 
-  Por padrão, cada relação de incorporação tem `PropagatesDelete` verdadeira em que a função de destino. Excluindo `henry` não exclui o `familyTree`, mas `familyTree.Delete()` seria excluir todos os `Persons`. Para obter mais informações, consulte [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md).
+Por padrão, cada relação de incorporação tem `PropagatesDelete` verdadeira em que a função de destino. Excluindo `henry` não exclui o `familyTree`, mas `familyTree.Delete()` seria excluir todos os `Persons`.
 
-  Por padrão, `PropagatesDelete` não é verdadeiro para as funções de relações de referência.
+Por padrão, `PropagatesDelete` não é verdadeiro para as funções de relações de referência.
 
-  Você pode fazer com que as regras de exclusão omitir as propagações específicas quando você exclui um objeto. Isso é útil se você estiver substituindo um elemento para outro. Você fornecer o GUID de uma ou mais funções para os quais não deveriam ser propagada exclusão. O GUID pode ser obtido da classe de relação:
+Você pode fazer com que as regras de exclusão omitir as propagações específicas quando você exclui um objeto. Isso é útil se você estiver substituindo um elemento para outro. Você fornecer o GUID de uma ou mais funções para os quais não deveriam ser propagada exclusão. O GUID pode ser obtido da classe de relação:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (Esse exemplo específico não terá efeito algum, pois `PropagatesDelete` está `false` para funções do `ParentsHaveChildren` relacionamento.)
+(Esse exemplo específico não terá efeito algum, pois `PropagatesDelete` está `false` para funções do `ParentsHaveChildren` relacionamento.)
 
-  Em alguns casos, a exclusão é impedida pela existência de um bloqueio no elemento ou em um elemento que seria excluído pelo propagação. Você pode usar `element.CanDelete()` para verificar se o elemento pode ser excluído.
+Em alguns casos, a exclusão é impedida pela existência de um bloqueio no elemento ou em um elemento que seria excluído pelo propagação. Você pode usar `element.CanDelete()` para verificar se o elemento pode ser excluído.
 
 ##  <a name="deletelinks"></a> Excluindo os Links do relacionamento
  Você pode excluir um link de relação, removendo um elemento de uma propriedade de função:

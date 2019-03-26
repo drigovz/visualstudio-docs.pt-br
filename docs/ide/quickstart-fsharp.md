@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323271"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069756"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro serviço Web ASP.NET Core no F\#
 
@@ -27,6 +27,8 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 ## <a name="create-a-project"></a>Criar um projeto
 
 Primeiro, você criará um projeto de API Web do ASP.NET Core. O tipo de projeto vem com arquivos de modelo que constituem um serviço Web funcional, mesmo sem adicionar nada!
+
+::: moniker range="vs-2017"
 
 1. Abra o Visual Studio.
 
@@ -39,6 +41,22 @@ Primeiro, você criará um projeto de API Web do ASP.NET Core. O tipo de projeto
      ![Carga de trabalho ASP.NET no instalador do VS](../ide/media/quickstart-aspnet-workload.png)
 
 4. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, selecione **ASP.NET Core 2.1** no menu suspenso superior. (Se o **ASP.NET Core 2.1** não aparecer na lista, instale-o seguindo o link **Baixar** que deve aparecer em uma barra amarela próxima à parte superior da caixa de diálogo.) Escolha **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio.
+
+2. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+3. Na página **Criar um novo projeto**, digite **f# web** na caixa de pesquisa e escolha o modelo de projeto **Aplicativo Web ASP.NET Core**. Escolha **Avançar**.
+
+4. Na página **Configurar seu novo projeto**, insira um nome e escolha **Criar**.
+
+5. Na página **Criar novo Aplicativo Web ASP.NET Core**, selecione **ASP.NET Core 2.1** no menu suspenso superior e escolha **Criar**.
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>Explorar o IDE
 

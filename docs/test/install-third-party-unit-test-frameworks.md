@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316139"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982916"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalar estruturas de teste de unidade
 
@@ -26,9 +26,19 @@ Baixe e instale estruturas de teste de unidade de terceiros usando o Gerenciador
 
 ### <a name="install-from-visual-studio"></a>Instalar do Visual Studio
 
-1. Escolha **Ferramentas** no menu padrão e, em seguida, selecione **Extensões e atualizações**.
+::: moniker range="vs-2017"
 
-2. Expanda **Online** > **Visual Studio Marketplace** > **Ferramentas**. Escolha **Teste**.
+1. Escolha **Ferramentas** > **Extensões e Atualizações**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Escolha **Extensões** > **Gerenciar Extensões**.
+
+::: moniker-end
+
+2. Expanda **Online** > **Visual Studio Marketplace** > **Ferramentas** e, em seguida, escolha **Testes**.
 
 3. Navegue pela lista para localizar a estrutura.
 

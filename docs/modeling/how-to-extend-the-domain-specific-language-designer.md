@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fad34e853aee65f32d87145d1d0300495e07b9c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953991"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415961"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Como: Estender o Designer de Linguagem Específica de Domínio
 
@@ -26,15 +26,13 @@ Configure um projeto que contém o código de sua extensão e um projeto VSIX qu
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Para criar uma solução de extensão do Designer de DSL
 
-1.  Crie um novo projeto usando o modelo de projeto de biblioteca de classes. No **novo projeto** caixa de diálogo, clique em **Visual c#** e, na janela do meio, clique em **biblioteca de classes**.
+1.  Criar um novo projeto usando o **biblioteca de classes** modelo de projeto. Esse projeto conterá o código de suas extensões.
 
-     Esse projeto conterá o código de suas extensões.
-
-2.  Crie um novo projeto usando o modelo de projeto do VSIX. No **novo projeto** diálogo caixa, expanda **Visual c#**, clique em **extensibilidade**e, em seguida, na janela Central selecione **projeto VSIX**.
+2.  Criar um novo **VSIX Project** projeto.
 
      Selecione **adicionar a solução**.
 
-     Vsixmanifest é aberto no editor de manifesto do VSIX.
+     *Vsixmanifest* abre no editor de manifesto do VSIX.
 
 3.  Acima do campo de conteúdo, clique em **adicionar conteúdo**.
 

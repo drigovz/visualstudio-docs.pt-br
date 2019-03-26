@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927874"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416416"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma linguagem específica de domínio (DSL), você pode criar uma solução do Visual Studio de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
 
-Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por meio de **laboratório de ferramentas de DSL**, que pode ser encontrado neste site: [SDK de modelagem e tiver](http://go.microsoft.com/fwlink/?LinkID=186128)
+Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por meio de **laboratório de ferramentas de DSL**, que pode ser encontrado neste site: [SDK de modelagem e visualização](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Selecionando uma solução de modelo
- Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
+Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| SDK de Visualização e Modelagem do Visual Studio | |
+- Visual Studio
+- Visual Studio extensão carga de trabalho desenvolvimento (inclui o SDK do Visual Studio)
+- SDK de modelagem (instalá-lo como um componente individual no Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+Para criar uma nova linguagem específica de domínio, você deve criar uma nova solução do Visual Studio usando o modelo de projeto de linguagem específica do domínio.
 
- Para criar uma nova linguagem específica de domínio, você deve criar uma nova solução do Visual Studio usando o modelo de projeto de linguagem específica do domínio.
+### <a name="to-create-a-dsl-solution"></a>Para criar uma solução DSL
 
-#### <a name="to-create-a-dsl-solution"></a>Para criar uma solução DSL
+1. Criar um novo **linguagem específica do domínio** projeto.
 
-1. Criar uma solução com o **linguagem específica de domínio** modelo, que pode ser encontrado em **outros tipos/extensibilidade de projeto** no **novo projeto** caixa de diálogo.
+   ::: moniker range="vs-2017"
 
     ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png)
 
-    Quando você clica em **Okey**, o **Assistente de linguagem específica de domínio** abre e exibe uma lista de soluções DSL do modelo.
+   ::: moniker-end
+
+    O **Assistente de linguagem específica de domínio** abre e exibe uma lista de soluções DSL do modelo.
 
 2. Clique em cada modelo para ver uma descrição. Escolha a solução que mais se assemelha ao que você deseja criar.
 

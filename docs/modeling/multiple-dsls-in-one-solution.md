@@ -7,39 +7,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a670c43d584fb65f014765874f23c42b5de71179
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942824"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416143"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Várias DSLs em uma mesma solução
+
 É possível empacotar diversas DSLs como parte de uma única solução para serem instaladas juntas.
 
- É possível usar diversas técnicas para integrar múltiplas DSLs. Para obter mais informações, consulte [integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) e [como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) e [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).
+É possível usar diversas técnicas para integrar múltiplas DSLs. Para obter mais informações, consulte [integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) e [como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) e [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).
 
-### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Compilar mais de uma DSL na mesma solução
+## <a name="build-more-than-one-dsl-in-the-same-solution"></a>Criar mais de uma DSL na mesma solução
 
-1. Crie duas ou mais soluções DSL e um projeto VSIX e adicione todos os projetos a uma única solução.
+1. Criar um novo **VSIX Project** projeto.
 
-   -   Para criar um novo projeto VSIX: No **novo projeto** caixa de diálogo, selecione **Visual c#**, **extensibilidade**, **projeto VSIX**.
+2. Crie dois ou mais projetos DSL no diretório da solução VSIX.
 
-   -   Crie duas ou mais soluções DSL no diretório da solução VSIX.
+   - Abra uma nova instância do Visual Studio para cada DSL. Crie a nova DSL e especifique a mesma pasta da solução que a solução VSIX.
 
-        Abra uma nova instância do Visual Studio para cada DSL. Crie a nova DSL e especifique a mesma pasta da solução que a solução VSIX.
+   - Certifique-se de criar cada DSL com uma extensão de nome de arquivo diferente.
 
-        Certifique-se de criar cada DSL com uma extensão de nome de arquivo diferente.
+   - Alterar os nomes da **Dsl** e **DslPackage** projetos para que eles estejam todos diferentes. Por exemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   -   Alterar os nomes da **Dsl** e **DslPackage** projetos para que eles estejam todos diferentes. Por exemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+   - Em cada **DslPackage\*\source.extension.tt**, atualize essa linha para o nome do projeto Dsl correto:
 
-   -   Em cada **DslPackage\*\source.extension.tt**, atualize essa linha para o nome do projeto Dsl correto:
+      `string dslProjectName = "Dsl2";`
 
-        `string dslProjectName = "Dsl2";`
-
-   -   Na solução VSIX, adicione o Dsl * e DslPackage\* projetos.
-
-        É aconselhável colocar cada par em sua própria pasta da solução.
+   - Na solução VSIX, adicione o Dsl * e DslPackage\* projetos. É aconselhável colocar cada par em sua própria pasta da solução.
 
 2. Combine os manifestos VSIX das DSLs:
 
@@ -60,5 +57,5 @@ ms.locfileid: "55942824"
 ## <a name="see-also"></a>Consulte também
 
 - [Integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
-- [Como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Como: Adicionar um manipulador do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951331"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869357"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalar símbolos de depuração para interpretadores do Python
 
@@ -54,7 +54,7 @@ Se os símbolos tiverem sido baixados separadamente, siga as etapas abaixo para 
 
     ![Opções de símbolos do depurador de modo misto](media/mixed-mode-debugging-symbols.png)
 
-1. Durante uma sessão de depuração, o Visual Studio também pode solicitar o local de um arquivo de origem para o interpretador de Python. Se você baixou os arquivos de origem (de [python.org/downloads](https://www.python.org/downloads), por exemplo), certamente será possível apontar para eles também.
+1. Durante uma sessão de depuração, o Visual Studio também pode solicitar o local de um arquivo de origem para o interpretador de Python. Se você baixou os arquivos de origem (de [python.org/downloads/](https://www.python.org/downloads/), por exemplo), certamente será possível apontar para eles também.
 
 > [!Note]
 > As funcionalidades de cache de símbolo mostradas no diálogo são usadas para criar um cache local de símbolos obtidos de uma fonte online. Essas funcionalidades não serão necessárias com os símbolos do interpretador de Python, uma vez que os símbolos já estão presentes localmente. De qualquer maneira, veja [Especificar símbolos e arquivos de origem no depurador do Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) para obter mais detalhes.

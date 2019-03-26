@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941043"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867849"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
 O CodeLens permite que você mantenha o foco no trabalho enquanto descobre o que aconteceu com seu código – sem sair do editor. Encontre referências e alterações no código, bugs vinculados, itens de trabalho, revisões de código e testes de unidade.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > O CodeLens está disponível apenas nas edições Visual Studio Enterprise e Visual Studio Professional. Ele não está disponível na edição Visual Studio Community.
+
+::: moniker-end
 
 Ver onde e como as partes individuais do código são usadas em sua solução:
 
@@ -62,7 +66,7 @@ Inspecione o histórico do código para descobrir o que aconteceu com ele. Ou ex
 
 Você precisa do:
 
-- Visual Studio Enterprise ou Visual Studio Professional
+- Visual Studio 2019 (ou Visual Studio 2017 Enterprise ou Professional edition)
 
 - Team Foundation Server 2013 ou posterior, Azure DevOps Services ou GIT
 

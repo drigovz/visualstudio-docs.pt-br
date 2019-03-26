@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo de extensões e atualizações, ambiente, opções
+title: Caixa de diálogo extensões, ambiente e opções
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8625d24be0e5bffa465cb2d5116cd021e99a017
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912853"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983930"
 ---
-# <a name="extensions-and-updates-environment-options-dialog-box"></a>Caixa de diálogo de extensões e atualizações, ambiente, opções
+# <a name="extensions-environment-options-dialog-box"></a>Caixa de diálogo extensões, ambiente e opções
 
 Use esta página para definir opções de como o Visual Studio executa atualizações e como extensões são atualizadas e descobertas.
 
@@ -35,7 +35,7 @@ Para obter mais informações, consulte [Localizando e usando extensões do Visu
 
 ## <a name="additional-extension-galleries"></a>Galerias de Extensões Adicionais
 
-Um recurso do Enterprise que habilita o suporte para galerias de extensões proprietárias. Para obter mais informações, consulte [Galerias privadas](../../extensibility/private-galleries.md).
+Um recurso do Enterprise que habilita o suporte para galerias de extensões proprietárias. Saiba mais em [Galerias privadas](../../extensibility/private-galleries.md).
 
 ## <a name="see-also"></a>Consulte também
 
