@@ -2,7 +2,6 @@
 title: Interfaces do Windows Script | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f98e60a82735ae561edf404763e0700f71b3a3d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905357"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154420"
 ---
 # <a name="windows-script-interfaces"></a>Interfaces do Windows Script
 
@@ -37,7 +36,7 @@ A documentação do Windows Script é dividida nas seguintes seções:
 
 ## <a name="windows-script-background"></a>Contexto do Windows Script
 
-Interfaces do Windows Script se enquadram em duas categorias: hosts do Windows Script e mecanismos do Windows Script. Um host cria um mecanismo de script e chama o mecanismo para executar os scripts. Exemplos de hosts do Windows Script incluem:
+As interfaces de Script do Windows se enquadram em duas categorias: Hosts de Script do Windows e mecanismos de Script do Windows. Um host cria um mecanismo de script e chama o mecanismo para executar os scripts. Exemplos de hosts do Windows Script incluem:
 
 - Microsoft Internet Explorer
 

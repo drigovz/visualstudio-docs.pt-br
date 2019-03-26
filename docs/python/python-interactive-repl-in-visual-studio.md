@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155650"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151135"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Trabalhar com a janela Interativa do Python
 
@@ -56,7 +56,7 @@ Por fim, é possível marcar o código no arquivo e usar o [comando **Enviar có
 
 ## <a name="interactive-window-options"></a>Opções da janela interativa
 
-Você pode controlar vários aspectos da janela **Interativa** por meio de **Ferramentas** > **Opções** > **Ferramentas Python** > **Janelas Interativas** (confira [Opções](python-support-options-and-settings-in-visual-studio.md)):
+Você pode controlar vários aspectos da janela **Interativa** por meio de **Ferramentas** > **Opções** > **Python** > **Janelas Interativas** (confira [Opções](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Opções da janela interativa do Python](media/options-interactive-windows.png)
 
@@ -121,4 +121,4 @@ O Visual Studio também detecta células de código começando com comentários 
 
 A janela **Interativa** inclui o IntelliSense baseado nos objetos dinâmicos, ao contrário do editor de código, no qual o IntelliSense é baseado apenas na análise de código-fonte. Essas sugestões estão mais corretas na janela **Interativa**, especialmente com um código gerado dinamicamente. A desvantagem é que as funções com efeitos colaterais (como mensagens de log) podem afetar sua experiência de desenvolvimento.
 
-Se esse comportamento for um problema, altere as configurações em **Ferramentas** > **Opções** > **Ferramentas Python** > **Janelas Interativas** no grupo **Modo de Conclusão**, conforme descrito em [Opções - Opções das Janelas Interativas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Se esse comportamento for um problema, altere as configurações em **Ferramentas** > **Opções** > **Python** > **Janelas Interativas** no grupo **Modo de Conclusão**, conforme descrito em [Opções – Opções das Janelas Interativas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

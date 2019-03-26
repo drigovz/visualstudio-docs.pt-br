@@ -2,7 +2,7 @@
 title: 'Início Rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js'
 description: Neste guia de início rápido, você cria um aplicativo Node.js no Visual Studio
 ms.date: 06/27/2018
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -13,16 +13,35 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 144e06450b4419b28e1ec2ad2684fd730164df48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17bd74a9c5a484d7e3539e787f4ae05d078aa80b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952366"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867006"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Início Rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js
 
-Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Node.js simples. Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Node.js simples.
+
+## <a name="prerequisites"></a>Pré-requisitos
+
+* Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
+
+    ::: moniker range=">=vs-2019"
+    Se você ainda não instalou o Visual Studio 2019, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se você ainda não instalou o Visual Studio 2017, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
+    ::: moniker-end
+
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+
+    ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
+
+* Você precisa ter o tempo de execução do Node.js instalado.
+
+    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
 
 ## <a name="create-a-project"></a>Criar um projeto
 
@@ -32,17 +51,21 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
     Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
 
-1. Abra o Visual Studio 2017.
+1. Abra o Visual Studio.
 
 1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
-1. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em branco** e, em seguida, escolha **OK**.
+1. Crie um novo projeto.
 
-     Se você não vir o modelo de projeto do **Aplicativo Web Node.js em branco**, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    ::: moniker range=">=vs-2019"
+    Na caixa de diálogo **Criar um novo projeto**, digite **javascript** na caixa de pesquisa para filtrar os resultados e escolha **Aplicativo Web Vue.js básico**, depois escolha **Avançar**. Em seguida, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em branco** e, em seguida, escolha **OK**.
+    ::: moniker-end
+    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
 
-     ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
-
-    Depois que você escolher o modelo **Aplicativo Web Node.js em Branco** e clicar em **OK**, o Visual Studio criará a solução e abrirá o projeto. *server.js* é aberto no editor no painel esquerdo.
+    O Visual Studio cria a nova solução e abre o projeto. *server.js* é aberto no editor no painel esquerdo.
 
 ## <a name="explore-the-ide"></a>Explorar o IDE
 

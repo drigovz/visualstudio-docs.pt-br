@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223514"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984112"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -112,25 +112,39 @@ Você pode executar testes de unidade no Visual Studio usando estruturas de test
 
 Veja a seguir as etapas para habilitar estruturas de teste de terceiros:
 
+::: moniker range="vs-2017"
+
 1. Na barra de menus, escolha **Ferramentas** > **Extensões e Atualizações**.
 
-1. Na caixa de diálogo **Extensões e Atualizações**, expanda a categoria **Online** e escolha **Visual Studio Marketplace**. Em seguida, escolha **Ferramentas** > **Testes**.
+2. Na caixa de diálogo **Extensões e Atualizações**, expanda a categoria **Online** e escolha **Visual Studio Marketplace**. Em seguida, escolha **Ferramentas** > **Testes**.
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. Selecione a estrutura ou adaptador que deseja instalar e, em seguida, escolha **Baixar**.
+::: moniker-end
 
-1. Crie um projeto de biblioteca de classes e adicione-o à sua solução.
+::: moniker range=">=vs-2019"
+
+1. Escolha **Extensões** > **Gerenciar Extensões** na barra de menus.
+
+2. Na caixa de diálogo **Gerenciar Extensões**, expanda a categoria **Online** e escolha **Visual Studio Marketplace**. Em seguida, escolha **Ferramentas** > **Testes**.
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. Selecione a estrutura ou adaptador que deseja instalar e, em seguida, escolha **Baixar**.
+
+4. Crie um projeto de biblioteca de classes e adicione-o à sua solução.
 
    ![Atribua um nome ao projeto de biblioteca de classes e adicione-o](media/create3rdpartyunittest3.png)
 
-1. Instale o plug-in. No **Gerenciador de Soluções**, selecione o projeto de biblioteca de classes e, em seguida, escolha **Gerenciar pacotes NuGet** no menu de contexto ou clicando com o botão direito do mouse.
+5. Instale o plug-in. No **Gerenciador de Soluções**, selecione o projeto de biblioteca de classes e, em seguida, escolha **Gerenciar pacotes NuGet** no menu de contexto ou clicando com o botão direito do mouse.
 
    ![Gerenciar pacotes NuGet para instalar o plug-in](media/create3rdpartyunittest3a.png)
 
    O [NuGet](https://www.nuget.org/) é uma extensão do Visual Studio que pode ser usada para adicionar e atualizar bibliotecas e ferramentas dos seus projetos.
 
-1. Na janela do **Gerenciador de Pacotes NuGet**, pesquise e selecione o plug-in e, em seguida, escolha **Instalar**.
+6. Na janela do **Gerenciador de Pacotes NuGet**, pesquise e selecione o plug-in e, em seguida, escolha **Instalar**.
 
    ![Instalar a estrutura de terceiros](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Veja a seguir as etapas para habilitar estruturas de teste de terceiros:
 
    ![A referência para a estrutura de teste de unidade de terceiros é adicionada à solução](media/create3rdpartyunittest6.png)
 
-1. No nó **Referências** do projeto de biblioteca de classes, selecione **Adicionar Referência**.
+7. No nó **Referências** do projeto de biblioteca de classes, selecione **Adicionar Referência**.
 
    ![Adicionar uma referência ao projeto](media/createunittest6.png)
 
-1. Na caixa de diálogo **Gerenciador de Referências**, selecione o projeto que contém o código que você testará.
+8. Na caixa de diálogo **Gerenciador de Referências**, selecione o projeto que contém o código que você testará.
 
    ![Selecione o projeto de código para testar](media/createunittest7.png)
 
-1. Codifique seu teste de unidade.
+9. Codifique seu teste de unidade.
 
    ![Adicionar o código ao arquivo de código do teste de unidade](media/create3rdpartyunittest7.png)
 

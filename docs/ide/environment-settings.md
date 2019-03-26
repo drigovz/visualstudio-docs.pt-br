@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49cbb49b6ee28e7bb184c22052a7bc4bee57d13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913269"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069821"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Configurações do ambiente do Visual Studio
 
-Ao iniciar o Visual Studio pela primeira vez, você pode otimizar o ambiente de desenvolvimento para o tipo de desenvolvimento mais utilizado escolhendo uma coleção de configurações. Cada coleção otimiza elementos, como atalhos de teclado, layouts de janela, modelos de item e projeto e visibilidade de comando.
+Ao abrir o Visual Studio pela primeira vez, você pode otimizar o ambiente de desenvolvimento para o tipo de desenvolvimento mais utilizado escolhendo uma coleção de configurações. Cada coleção otimiza elementos, como atalhos de teclado, layouts de janela, modelos de item e projeto e visibilidade de comando.
 
 As seguintes coleções de configurações estão disponíveis:
 
@@ -30,7 +30,7 @@ As seguintes coleções de configurações estão disponíveis:
 
 ## <a name="reset-settings"></a>Redefinir configurações
 
-Para alterar as configurações de desenvolvimento depois de iniciar o Visual Studio pela primeira vez, siga estas etapas:
+Para alterar as configurações de desenvolvimento depois de abrir o Visual Studio pela primeira vez, siga estas etapas:
 
 1. Selecione **Ferramentas** > **Importar e Exportar Configurações** na barra de menus para abrir o **Assistente de Importação e Exportação de Configurações**.
 

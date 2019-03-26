@@ -4,19 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 2/13/2019
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 7b0968532a1feffb667bb0cd2f3e04f1deb02bb5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: ab56754f6ef707eb619d7473cb391d415506a396
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323472"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867097"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
-O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual. 
+O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual.
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar https://visualstudio.microsoft.com/vs/pricing/ para explorar diferentes opções de compra de assinaturas do Visual Studio.
@@ -27,14 +27,15 @@ O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a re
 **Para enviar uma solicitação de suporte usando o benefício, primeiro você precisa ativá-lo.  Siga as etapas da próxima seção para concluir a ativação.**
 
 ## <a name="how-to-activate-the-benefit"></a>Como ativar o benefício
-1. Acesse https://my.visualstudio.com/Benefits, role a página para baixo até a seção Suporte e, no bloco Suporte Técnico, clique em **Conversar para ativar**. 
+
+1. Acesse https://my.visualstudio.com/Benefits, role a página para baixo até a seção Suporte e, no bloco Suporte Técnico, clique em **Conversar para ativar**.
     > [!div class="mx-imgBorder"]
     > ![Bloco do benefício do Suporte Técnico](_img/vs-tech-support/vs-tech-support-tile.png)
-2. Isso iniciará uma sessão de chat com um representante que poderá criar a **ID do Contrato** e a **ID de Acesso** e fornecê-las para você por email, de modo a tê-los para seus registros. 
+2. Isso iniciará uma sessão de chat com um representante que poderá criar a **ID do Contrato** e a **ID de Acesso** e fornecê-las para você por email, de modo a tê-los para seus registros.
 
 3. Para concluir o processo, será necessário fornecer ao representante:
    - Seu país
-   - Nome da empresa 
+   - Nome da empresa
    - Seu nome completo
    - O endereço de email usado para entrar em sua assinatura
    - Seu número de telefone
@@ -43,19 +44,18 @@ O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a re
    > [!div class="mx-imgBorder"]
    > ![Benefício do suporte técnico: encontrar a ID da assinatura](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. Depois que o processo for concluído, você receberá um email contendo a **ID do Contrato** e a **ID de Acesso** que você usará ao criar um incidente de suporte. 
+4. Depois que o processo for concluído, você receberá um email contendo a **ID do Contrato** e a **ID de Acesso** que você usará ao criar um incidente de suporte.
 
 > [!NOTE]
 > Para ativar sua conta de suporte em um idioma diferente de inglês, escolha seu país [nesta lista](https://support.microsoft.com/help/14084/activate-support-contract).
-
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Como enviar um incidente usando seu benefício
 
 Depois de configurar a **ID do Contrato** e a **ID de Acesso**, você poderá usá-las para enviar um incidente de Suporte Técnico [online](http://support.microsoft.com/oas/) (entrada necessária), por meio do [portal do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ou ligando para o número de suporte técnico de seu país. Se você enviar seu incidente online, terá a opção de receber uma chamada do analista de Suporte da Microsoft.
 
-### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Já tem a ID do Contrato e a ID de Acesso associadas à conta usada na entrada para enviar um incidente de Suporte Técnico online?  
+### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Já tem a ID do Contrato e a ID de Acesso associadas à conta usada na entrada para enviar um incidente de Suporte Técnico online?
 
-Ao enviar um incidente online, primeiro você deverá entrar. Entre com a conta que você sabe que está associada à ID do Contrato e à ID de Acesso. O benefício do Plano de Suporte existente associado à sua conta serão exibidos na Etapa 3 do fluxo de trabalho de suporte. Basta selecionar o plano e continuar para enviar seu caso. Você poderá enviar incidentes até o limite indicado no plano ou até a data do término do plano, o que ocorrer primeiro. Depois que os incidentes restantes mostrarem "0" ou se o plano expirar, ele não estará mais ativo.  
+Ao enviar um incidente online, primeiro você deverá entrar. Entre com a conta que você sabe que está associada à ID do Contrato e à ID de Acesso. O benefício do Plano de Suporte existente associado à sua conta serão exibidos na Etapa 3 do fluxo de trabalho de suporte. Basta selecionar o plano e continuar para enviar seu caso. Você poderá enviar incidentes até o limite indicado no plano ou até a data do término do plano, o que ocorrer primeiro. Depois que os incidentes restantes mostrarem "0" ou se o plano expirar, ele não estará mais ativo.
 
    > [!div class="mx-imgBorder"]
    > ![Etapa 3 de Envio de Incidente do Benefício de Suporte Técnico](_img/vs-tech-support/vs-tech-support-step3.png)
@@ -87,17 +87,16 @@ Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista sus
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Adicionar ID do Contrato](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
-5. Depois que o contrato for adicionado, ele será exibido em **Selecionar um plano de suporte** na parte superior. Seu plano conterá o termo “MSDN” no título. Escolha-o, role a página para baixo e clique em **Avançar**. 
+5. Depois que o contrato for adicionado, ele será exibido em **Selecionar um plano de suporte** na parte superior. Seu plano conterá o termo “MSDN” no título. Escolha-o, role a página para baixo e clique em **Avançar**.
 
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Escolher Plano](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
-6. Conclua as etapas restantes (gravidade, informações de contato e análise).   Depois de enviar seu incidente, você verá uma confirmação de que seu incidente foi enviado com êxito e poderá carregar arquivos no caso. Um analista de suporte será atribuído ao seu incidente e contatará você para resolver o problema usando a forma de contato selecionada. 
+6. Conclua as etapas restantes (gravidade, informações de contato e análise).   Depois de enviar seu incidente, você verá uma confirmação de que seu incidente foi enviado com êxito e poderá carregar arquivos no caso. Um analista de suporte será atribuído ao seu incidente e contatará você para resolver o problema usando a forma de contato selecionada.
 
 #### <a name="submit-an-incident-by-phone"></a>Enviar um incidente por telefone
 
 Se desejar criar um incidente de suporte por telefone, localize o número de telefone do [Atendimento ao cliente](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) para seu país. Certifique-se de ter a ID do Contrato e a ID do Acesso disponíveis ao ligar.
-
 
 #### <a name="submit-an-incident-within-the-azure-portal"></a>Enviar um incidente no Portal do Azure
 
@@ -118,9 +117,8 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 | Visual Studio Dev Essentials | NA | Não disponível |NA|
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
-<sup>1</sup> *Inclui: Imagine Premium. Exclui: NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP (Most Valuable Professional), RD (Diretor Regional) e MCT Software & Services.*
+<sup>1</sup> *Inclui: Imagine Premium, BizSpark. Exclui: NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, Imagine Standard, MVP (Most Valuable Professional), RD (Diretor Regional) e MCT Software & Services.*
 
 <sup>2</sup> *Inclui: Imagine Standard.*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
-

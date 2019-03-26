@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908186"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983268"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -73,18 +73,19 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
 - particulares
 - protegidos
 - protected\_internal or protected_friend
+- privado\_protegido
 - local
 
 > [!NOTE]
 > Não especifique um nível de acessibilidade como parte de sua convenção de nomenclatura se a acessibilidade não for aplicável ao tipo de símbolo para o qual você está direcionando. Por exemplo, parâmetros não tem níveis de acessibilidade. Se você especificar um nível de acessibilidade para uma convenção de nomenclatura de parâmetro, a regra de nomenclatura não funcionará corretamente.
 
-### <a name="symbol-modifiers"></a>Modificadores de símbolo
+### <a name="symbol-modifiers-optional"></a>Modificadores de símbolo (opcional)
 
 Para descrever os modificadores dos símbolos aos quais você deseja aplicar a regra de nomenclatura, especifique um nome de propriedade no formato a seguir:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula. Uma regra de nomenclatura será correspondente somente a assinaturas que tenham todos os modificadores especificados em `required_modifiers`. Se você omitir essa propriedade, o valor padrão de uma lista vazia será usado, ou seja, modificadores específicos não são necessários para uma correspondência. Isso significa que os modificadores de um símbolo não têm efeito sobre a opção de aplicar essa regra ou não.
+A lista a seguir mostra os valores permitidos (separe vários valores por vírgula):
 
 - `abstract` ou `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
    > [!NOTE]
    > Se você tiver uma regra de nomenclatura para os símbolos `static` ou `shared`, ela também se aplicará aos símbolos `const` porque são implicitamente estáticos. Se não quiser que a regra de nomenclatura `static` se aplique aos símbolos `const`, crie uma regra de nomenclatura separada para os símbolos `const`.
 
-`required_modifiers` é uma propriedade opcional. Se você omitir esta propriedade, a regra de nomenclatura será aplicada a todos os modificadores.
+Uma regra de nomenclatura corresponde a assinaturas que tenham *todos* os modificadores especificados em `required_modifiers`. Se você omitir essa propriedade, o valor padrão de uma lista vazia será usado, ou seja, modificadores específicos não são necessários para uma correspondência. Isso significa que os modificadores de um símbolo não têm efeito sobre a opção de aplicar essa regra ou não.
+
+> [!TIP]
+> Não especifique um valor de `*` para `required_modifiers`. Em vez disso, basta omitir totalmente a propriedade `required_modifiers` que a regra de nomenclatura será aplicada a qualquer tipo de modificador.
 
 ## <a name="style"></a>Estilo
 

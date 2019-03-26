@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703247"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983709"
 ---
 # <a name="environment-options-dialog-box"></a>Caixa de diálogo Opções do Ambiente
 
@@ -27,7 +27,7 @@ Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opçõe
 |Personalizar a aparência e o comportamento dos menus, das janelas e de outros elementos do IDE.|[Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)|
 |Alterar as configurações para salvamento e restauração automáticos de arquivos.|[Caixa de diálogo Recuperação Automática, Ambiente, Opções](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Estabelecer configurações de gerenciamento e exibição de documento que incluem o comportamento de arquivos diversos.|[Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md)|
-|Personalize como as atualizações ocorrem e como as extensões são gerenciadas.|[Caixa de diálogo Extensões e Atualizações, Ambiente, Opções](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|Personalize como as atualizações ocorrem e como as extensões são gerenciadas.|[Caixa de diálogo Extensões, Ambiente e Opções](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |Personalize a exibição das caixas de mensagem e o comportamento da janela **Localizar e Substituir** durante uma Localização Rápida ou uma Substituição Rápida, bem como o preenchimento automático de Localizar.|[Caixa de diálogo Localizar e Substituir, Ambiente, Opções](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Definir a fonte e a cor de determinados editores, caixas de diálogo, janelas de ferramentas e outros elementos da interface do usuário.|[Caixa de diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Personalize o local dos arquivos vssettings que armazenam informações de configurações do usuário.|[Caixa de diálogo Importar e Exportar Configurações, Ambiente, Opções](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

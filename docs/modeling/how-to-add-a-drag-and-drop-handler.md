@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867742"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415662"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Como: Adicionar um manipulador do tipo "arrastar e soltar"
 
@@ -158,13 +158,13 @@ As propriedades `Data` e `Prototype` dos argumentos do evento contêm apenas uma
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Preparar um projeto DSL para Model Bus
 
-1.  Verifique a DSL de origem acessível pelo Visual Studio Model Bus:
+Verifique a DSL de origem acessível pelo Visual Studio Model Bus:
 
-    1.  Faça o download e instale a extensão Visual Studio Model Bus, se ainda não estiver instalada. Para obter mais informações, consulte [SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Faça o download e instale a extensão Visual Studio Model Bus, se ainda não estiver instalada. Para obter mais informações, consulte [SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2.  Abra o arquivo de definição da DSL da DSL de origem no Designer de DSL. Clique duas vezes na superfície de design e, em seguida, clique em **habilitar Modelbus**. Na caixa de diálogo, escolha uma ou as duas opções.  Clique em **OK**. Um novo projeto "ModelBus" é adicionado à solução de DSL.
+2. Abra o arquivo de definição da DSL da DSL de origem no Designer de DSL. Clique duas vezes na superfície de design e, em seguida, clique em **habilitar Modelbus**. Na caixa de diálogo, escolha uma ou as duas opções.  Clique em **OK**. Um novo projeto "ModelBus" é adicionado à solução de DSL.
 
-    3.  Clique em **transformar todos os modelos** e recompile a solução.
+3. Clique em **transformar todos os modelos** e recompile a solução.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Enviar um objeto de uma DSL de origem
 

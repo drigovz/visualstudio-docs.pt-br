@@ -7,18 +7,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596019"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984034"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Atualizar um aplicativo existente para o MSBuild 15
 
 Em versões do MSBuild anteriores à 15.0, o MSBuild era carregado do GAC (cache de assembly global) e extensões do MSBuild eram instaladas no registro. Isso garantia que todos os aplicativos usassem a mesma versão do MSBuild e tivessem acesso aos mesmos conjuntos de ferramentas, mas impedia instalações lado a lado de diferentes versões do Visual Studio.
 
-Para dar suporte a uma instalação mais rápida, menor e lado a lado, o Visual Studio 2017 não coloca mais o MSBuild no GAC ou modifica o registro. Infelizmente, isso significa que aplicativos que desejam usar a API do MSBuild para avaliar ou criar projetos não podem contar implicitamente com a instalação do Visual Studio.
+Para dar suporte a uma instalação menor, mais rápida e lado a lado, o Visual Studio 2017 e versões posteriores não colocam mais o MSBuild no GAC nem modificam o registro. Infelizmente, isso significa que aplicativos que desejam usar a API do MSBuild para avaliar ou criar projetos não podem contar implicitamente com a instalação do Visual Studio.
 
 ## <a name="use-msbuild-from-visual-studio"></a>Usar o MSBuild no Visual Studio
 
@@ -42,7 +42,7 @@ Essas instruções pressupõem que você esteja usando [referências de NuGet de
 
 Altere os arquivos de projeto para fazer referência a assemblies de MSBuild de seus pacotes NuGet. Especifique `ExcludeAssets=runtime` para informar ao NuGet que os assemblies são necessários somente no momento da compilação, e não devem ser copiados para o diretório de saída.
 
-As versões principal e secundária dos pacotes do MSBuild devem ser menores ou iguais à versão mínima do Visual Studio a que você deseja dar suporte. Se quiser dar suporte a qualquer versão do Visual Studio 2017, faça referência à versão do pacote `15.1.548`.
+As versões principal e secundária dos pacotes do MSBuild devem ser menores ou iguais à versão mínima do Visual Studio a que você deseja dar suporte. Por exemplo, se você quiser dar suporte ao Visual Studio 2017 e versões posteriores, faça referência à versão do pacote `15.1.548`.
 
 Por exemplo, você pode usar este XML:
 

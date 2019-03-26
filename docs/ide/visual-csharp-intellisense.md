@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936857"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194597"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -94,7 +94,7 @@ Você pode instalar uma [extensão do IntelliCode](/visualstudio/intellicode/int
 
 A operação **Adicionar usando** do IntelliSense adiciona automaticamente a diretiva `using` necessária em seu arquivo de código. Esse recurso permite que você mantenha o foco no código que está sendo escrito, em vez de precisar mudar o foco para outra parte do código.
 
-Para iniciar a operação **Adicionar usando**, posicione o cursor em uma referência de tipo que não pode ser resolvida. Por exemplo, quando você cria um aplicativo de console e, em seguida, adiciona `XmlTextReader` ao corpo do método `Main`, um rabisco vermelho aparece nessa linha de código, porque a referência de tipo não pode ser resolvida. Em seguida, você pode invocar a operação **Adicionar usando** por meio da **Ação Rápida**. A **Ação Rápida** fica visível apenas quando o cursor está posicionado no tipo não associado.
+Para iniciar a operação **Adicionar usando**, posicione o cursor em uma referência de tipo que não pode ser resolvida. Por exemplo, quando você cria um aplicativo de console e, em seguida, adiciona `XmlReader` ao corpo do método `Main`, um rabisco vermelho aparece nessa linha de código, porque a referência de tipo não pode ser resolvida. Em seguida, você pode invocar a operação **Adicionar usando** por meio da **Ação Rápida**. As **Ações Rápidas** ficam visíveis apenas quando o cursor está posicionado no tipo não associado.
 
 ![Adicionar usando, imagem expandida da ação rápida](../ide/media/addusing-quickaction.png)
 

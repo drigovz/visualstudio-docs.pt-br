@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737003"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983969"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Atualizar o Visual Studio para a versão mais recente
 
@@ -82,7 +82,7 @@ Você pode verificar se há uma atualização e, em seguida, instalar a atualiza
 
 ### <a name="use-the-visual-studio-installer"></a>Usar o instalador do Visual Studio
 
-Como nas versões anteriores do Visual Studio de 2017, você pode usar o instalador do Visual Studio para instalar uma atualização.
+Como nas versões anteriores do Visual Studio, você pode usar o instalador do Visual Studio para instalar uma atualização.
 
 1. Salve o trabalho.
 
@@ -150,14 +150,14 @@ Se você optar por ignorar uma notificação, o Visual Studio parará de mostrá
 
    Escolha o botão **Atualizar** para instalar as atualizações.
 
-     ![Atualizar o Visual Studio 2017 usando o Instalador do Visual Studio](media/update-visual-studio.png "Atualizar o Visual Studio 2017 usando o Instalador do Visual Studio")
+     ![Atualizar o Visual Studio 2017 usando o Instalador do Visual Studio](media/update-visual-studio.png "Atualizar o Visual Studio usando o Instalador do Visual Studio")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Consulte também
 
-* [Modificar o Visual Studio 2017](modify-visual-studio.md)
-* [Desinstalar o Visual Studio 2017](uninstall-visual-studio.md)
+* [Modificar o Visual Studio](modify-visual-studio.md)
+* [Desinstalar o Visual Studio](uninstall-visual-studio.md)
 * [Atualizar o Visual Studio para Mac](/visualstudio/mac/update)
 
 ::: moniker-end

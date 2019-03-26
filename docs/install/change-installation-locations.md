@@ -14,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947816"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983891"
 ---
-# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Selecionar os locais de instalação no Visual Studio 2017
+# <a name="select-the-installation-locations-in-visual-studio"></a>Selecionar os locais de instalação no Visual Studio
 
-**Novidades do 15.7**: Reduza o volume de instalação do Visual Studio na unidade do sistema alterando a localização de alguns dos arquivos. Especificamente, você pode usar uma localização diferente para o cache de download, para os componentes compartilhados, os SDKs e os arquivos de ferramentas.
+**Novidades na versão 15.7**: Reduza o volume de instalação do Visual Studio na unidade do sistema alterando a localização de alguns dos arquivos. Especificamente, você pode usar uma localização diferente para o cache de download, para os componentes compartilhados, os SDKs e os arquivos de ferramentas.
 
    > [!NOTE]
    > Há algumas ferramentas e SDKs que têm regras diferentes sobre o local em que podem ser instalados. Essas ferramentas e SDKs são instalados em sua unidade do sistema, mesmo que você escolha outra localização.
@@ -64,7 +64,7 @@ Pronto para começar? Veja como.
 
 ## <a name="see-also"></a>Consulte também
 
-* [Instalar o Visual Studio 2017](install-visual-studio.md)
-* [Atualizar o Visual Studio 2017](update-visual-studio.md)
-* [Modificar o Visual Studio 2017](update-visual-studio.md)
-* [Desinstalar o Visual Studio 2017](uninstall-visual-studio.md)
+* [Instalar o Visual Studio](install-visual-studio.md)
+* [Atualizar o Visual Studio](update-visual-studio.md)
+* [Modificar o Visual Studio](update-visual-studio.md)
+* [Desinstalar o Visual Studio](uninstall-visual-studio.md)

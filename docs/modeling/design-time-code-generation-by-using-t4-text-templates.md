@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355783"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415690"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código na hora de design usando modelos de texto T4
 Modelos de texto T4 em tempo de design permitem que você gerar o código do programa e outros arquivos no projeto do Visual Studio. Normalmente, você escreve os modelos para que eles variem o código que geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre os requisitos do aplicativo.
@@ -34,13 +34,9 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
 
  Um modelo de texto contém uma mistura do texto que você deseja gerar e o código de programa que gera partes variáveis ​​do texto. O código do programa permite repetir ou omitir condicionalmente partes do texto gerado. O texto gerado pode ser o próprio código de programa que fará parte do seu aplicativo.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Criando um modelo de texto T4 em tempo de design
+## <a name="create-a-design-time-t4-text-template"></a>Criar um modelo de texto T4 em tempo de Design
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para criar um modelo T4 em tempo de design no Visual Studio
-
-1. Criar um projeto do Visual Studio ou abrir um existente.
-
-    Por exemplo, na **arquivo** menu, escolha **New** > **projeto**.
+1. Criar um novo projeto do Visual Studio ou abra um existente.
 
 2. Adicione um arquivo de modelo de texto ao seu projeto e dê a ele um nome que tem a extensão **. TT**.
 
@@ -70,10 +66,11 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
 6. Na **Gerenciador de soluções**, expanda o nó do arquivo de modelo e você encontrará um arquivo que tem a extensão **. txt**. O arquivo contém o texto gerado a partir do modelo.
 
    > [!NOTE]
-   >  Se seu projeto é um projeto do Visual Basic, você deve clicar **Show All Files** para ver o arquivo de saída.
+   > Se seu projeto é um projeto do Visual Basic, você deve clicar **Show All Files** para ver o arquivo de saída.
 
-### <a name="regenerating-the-code"></a>Gerando novamente o código
- Um modelo será executado, gerando o arquivo subsidiário, em qualquer um dos seguintes casos:
+### <a name="regenerate-the-code"></a>Gerar novamente o código
+
+Um modelo será executado, gerando o arquivo subsidiário, em qualquer um dos seguintes casos:
 
 - Editar o modelo e, em seguida, altere o foco para uma janela diferente do Visual Studio.
 
@@ -83,12 +80,11 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
 
 - Na **Gerenciador de soluções**, no menu de atalho de qualquer arquivo, escolha **executar ferramenta personalizada**. Use esse método para transformar um subconjunto de modelos selecionado.
 
-  Você também pode configurar um projeto do Visual Studio para que os modelos são executados quando os arquivos de dados que eles leem foram alterados. Para obter mais informações, consulte [gerando o código automaticamente](#Regenerating).
+Você também pode configurar um projeto do Visual Studio para que os modelos são executados quando os arquivos de dados que eles leem foram alterados. Para obter mais informações, consulte [gerando o código automaticamente](#Regenerating).
 
-## <a name="generating-variable-text"></a>Gerando texto variável
- Os modelos de texto permitem que você use o código de programa para alterar o conteúdo do arquivo gerado.
+## <a name="generate-variable-text"></a>Gerar texto variável
 
-#### <a name="to-generate-text-by-using-program-code"></a>Para gerar o texto usando o código de programa
+Os modelos de texto permitem que você use o código de programa para alterar o conteúdo do arquivo gerado.
 
 1. Altere o conteúdo do arquivo `.tt`:
 

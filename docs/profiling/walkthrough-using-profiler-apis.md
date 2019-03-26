@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 260510c918bc38a2555ff04e711c4a5c728066dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637783"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868196"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Passo a passo: Usando APIs do criador de perfil
 
@@ -30,7 +30,12 @@ O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferram
 
  O criador de perfil do Visual Studio permite que você limite a coleta de dados. Este passo a passo oferece um exemplo de como limitar a coleta de dados usando as APIs do criador de perfil. O criador de perfil do Visual Studio fornece uma API para controlar a coleta de dados de dentro de um aplicativo.
 
+ ::: moniker range=">=vs-2019"
+ Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK*.  Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*
+ ::: moniker-end
+ ::: moniker range="vs-2017"
  Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+ ::: moniker-end
 
  Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Profiler>.
 

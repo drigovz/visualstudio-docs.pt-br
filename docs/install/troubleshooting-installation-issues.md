@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 73e1616af5665fc7ae89a3aa1019f2600afc24fd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953963"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984125"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio 2017
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio
 
 > [!IMPORTANT]
 > Está com problema para instalar? Podemos ajudá-lo. Oferecemos um [**chat ao vivo**](https://visualstudio.microsoft.com/vs/support/#talktous) a opção de suporte (apenas em inglês).
@@ -86,7 +86,7 @@ Vejamos uma tabela de problemas conhecidos e algumas soluções alternativas que
 
 Os logs de instalação são necessários para solucionar a maioria dos problemas de instalação. Quando você enviar um problema usando [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio.md) no Instalador do Visual Studio, esses logs serão incluídos automaticamente no relatório.
 
-Caso contate o Suporte da Microsoft, talvez você precise fornecer esses logs de configuração usando a [Ferramenta de Coleta de Log do .NET Framework e o Microsoft Visual Studio](https://aka.ms/vscollect). A ferramenta de coleta de log coleta os logs de configuração de todos os componentes instalados pelo Visual Studio 2017, incluindo .NET Framework, SDK do Windows e SQL Server. Ela também coleta informações do computador, um inventário do Windows Installer e as informações de log de eventos do Instalador do Visual Studio, Windows Installer e Restauração do Sistema.
+Caso contate o Suporte da Microsoft, talvez você precise fornecer esses logs de configuração usando a [Ferramenta de Coleta de Log do .NET Framework e o Microsoft Visual Studio](https://aka.ms/vscollect). A ferramenta de coleta de log coleta os logs de configuração de todos os componentes instalados pelo Visual Studio, incluindo .NET Framework, SDK do Windows e SQL Server. Ela também coleta informações do computador, um inventário do Windows Installer e as informações de log de eventos do Instalador do Visual Studio, Windows Installer e Restauração do Sistema.
 
 Para coletar os logs:
 
@@ -104,7 +104,7 @@ Se as soluções listadas neste guia de solução de problemas não ajudarem a i
 
 ## <a name="see-also"></a>Consulte também
 
-* [Remover o Visual Studio 2017](remove-visual-studio.md)
+* [Remover o Visual Studio](remove-visual-studio.md)
 * [Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

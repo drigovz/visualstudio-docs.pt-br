@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd95c248ecec057cfb602b7f2324d680f715ed68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946530"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983059"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de Opções, Depuração, Propriedades do Nó
 As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) associadas à categoria **Depuração**, `DTE.Properties("Debugging", <Property Page>)` da caixa de diálogo **Opções**.
@@ -84,5 +84,5 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
 - [Página de Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Página de Opções, Propriedades do Nó de Editor de Texto](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Caixa de diálogo Geral, Depuração, Opções](../../debugger/general-debugging-options-dialog-box.md)
-- [Caixa de diálogo Editar e Continuar, Depuração, Opções](../../debugger/edit-and-continue.md?view=vs-2015)
+- [Editar e continuar a depuração](../../debugger/edit-and-continue.md)
 - [Caixa de diálogo Just-In-Time, Depuração, Opções](../../debugger/just-in-time-debugging-options-dialog-box.md)

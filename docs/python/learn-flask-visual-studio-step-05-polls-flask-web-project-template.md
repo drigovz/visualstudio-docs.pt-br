@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38b77b4461303cd4bf21b98c63c1ae0b93a4cdc6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 77c33bc24162af0aacba9e86108a4301cdb882e6
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913386"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195184"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5: Usar o modelo de Projeto Web Votações do Flask
 
@@ -356,4 +356,4 @@ A execução de um aplicativo Web no computador de desenvolvimento é apenas uma
 
 - Adicione uma implementação de repositório que usa outro armazenamento de dados em nível de produção como o PostgreSQL, o MySQL e o SQL Server (que podem ser hospedados no Azure). Também é possível usar o [SDK do Azure para Python](/python/azure/?view=azure-python) para trabalhar com serviços de armazenamento do Azure como tabelas e blobs, bem como o Cosmos DB.
 
-- Configure um pipeline de integração contínua/implantação contínua em um serviço como o Azure DevOps. Além de trabalhar com o controle do código-fonte (por meio do Azure Repos, do GitHub ou em outro local), você pode configurar um projeto do Azure DevOps para executar automaticamente os testes de unidade como um pré-requisito para o lançamento, bem como configurar o pipeline para implantação em um servidor de preparo para testes adicionais antes de implantar na produção. O Azure DevOps, além disso, integra-se às soluções de monitoramento, como o App Insights e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para saber mais, confira [Criar um pipeline de CI/CD para Python com o projeto do Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts) e também a [documentação geral do Azure DevOps](/azure/devops/?view=vsts).
+- Configure um pipeline de integração contínua/implantação contínua em um serviço como o Azure DevOps. Além de trabalhar com o controle do código-fonte (por meio do Azure Repos, do GitHub ou em outro local), você pode configurar um projeto do Azure DevOps para executar automaticamente os testes de unidade como um pré-requisito para o lançamento, bem como configurar o pipeline para implantação em um servidor de preparo para testes adicionais antes de implantar na produção. O Azure DevOps, além disso, integra-se às soluções de monitoramento, como o App Insights e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Saiba mais em [Criar um pipeline de CI/CD para Python com o projeto do Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts) e também a [documentação geral do Azure DevOps](/azure/devops/?view=vsts).

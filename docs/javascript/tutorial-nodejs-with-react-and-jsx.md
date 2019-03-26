@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9259b5a813dc09389c57288e13eafd5a3adb0064
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 58d8cba033fd3e43b8e54afdc7651a45df17a59a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55770564"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069977"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -57,11 +57,18 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de desenvolvimento de Node.js.
+* Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
-    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalá-lo gratuitamente.
+    ::: moniker range=">=vs-2019"
+    Se você ainda não instalou o Visual Studio 2019, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se você ainda não instalou o Visual Studio 2017, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
+    ::: moniker-end
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, selecione o link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+
+    ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Você precisa ter o tempo de execução do Node.js instalado.
 
@@ -73,13 +80,19 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
 
 Primeiro, crie um projeto de aplicativo Web Node.js.
 
-1. Abra o Visual Studio 2017.
+1. Abra o Visual Studio.
 
 1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
-1. Na caixa de diálogo **Novo projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em Branco**, digite o nome **NodejsWebAppBlank** e, em seguida, escolha **OK**.
+1. Crie um novo projeto.
 
-     Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, você deverá instalar a carga de trabalho de desenvolvimento do Node.js primeiro.
+    ::: moniker range=">=vs-2019"
+    Na caixa de diálogo **Criar um novo projeto**, digite **javascript** na caixa de pesquisa para filtrar os resultados e, em seguida, escolha **Aplicativo Web Vue.js básico**, depois escolha **Avançar**. Em seguida, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em Branco**, digite o nome **NodejsWebAppBlank** e escolha **OK**.
+    ::: moniker-end
+    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a nova solução e abre seu projeto.
 
@@ -377,7 +390,7 @@ Na seção anterior, você anexou o depurador ao código do Node.js do lado do s
 
     ![Anexar ao processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    Você sabe que o depurador foi anexado corretamente quando o Explorador do DOM e o Console do JavaScript são abertos no Visual Studio. Essas ferramentas de depuração são semelhantes às Ferramentas para Desenvolvedores do Chrome e às Ferramentas F12 para Microsoft Edge.
+    Você sabe que o depurador foi anexado corretamente quando o Explorador do DOM e o Console do JavaScript são abertos no Visual Studio. Essas ferramentas de depuração são semelhantes às Ferramentas para Desenvolvedores do Chrome e às Ferramentas F12 do Microsoft Edge.
 
     > [!NOTE]
     > Se o depurador não for anexado e a mensagem "Não é possível anexar ao processo. Uma operação não é válida no estado atual.", use o Gerenciador de Tarefas para fechar todas as instâncias do Chrome antes de iniciar o Chrome no modo de depuração. As extensões do Chrome podem estar em execução e impedindo o modo de depuração completa.
