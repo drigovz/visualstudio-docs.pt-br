@@ -229,7 +229,7 @@ items:
           href: ide/how-to-manually-create-web-templates.md
         - name: Solucionar problemas de modelos
           href: ide/how-to-troubleshoot-templates.md
-      - name: Localizar e organizar modelos de projeto de e item
+      - name: Localizar modelos de item e projeto
         href: ide/how-to-locate-and-organize-project-and-item-templates.md
       - name: Personalizar modelos de projeto e de item
         href: ide/customizing-project-and-item-templates.md
@@ -380,9 +380,9 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Usar o tipo explícito
             href: ide/reference/convert-var-to-explicit-type.md
-          - name: Usar a expressão de lambda ou bloquear o corpo
+          - name: Usar uma expressão de lambda ou o corpo do bloco
             href: ide/reference/use-block-body-lambda.md
-          - name: Parâmetros e valores não usados
+          - name: Parâmetros, variáveis e atribuições de valor não usados
             href: ide/reference/unused-values-parameters.md
           - name: Encapsular, recuar e alinhar parâmetros
             href: ide/reference/wrap-align-indent-parameters.md
@@ -1195,9 +1195,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 9df9ac7c4440ae6d968f0925a086921bf49a309d
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8fc8123e3c9b2a77ba4bd05dc3a7efa8bcfa652c
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324033"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416378"
