@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526032"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475988"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introdução ao depurar aplicativos multithread (C#, Visual Basic, C++)
 
@@ -38,21 +38,33 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
 
 ## <a name="create-a-multithreaded-app-project"></a>Criar um projeto de aplicativo multithread
 
-1.  No menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. Abra o Visual Studio e crie um novo projeto.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+    ::: moniker range=">=vs-2019"
+    Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +**), escolha **modelos**e, em seguida:
+    
+    - Para C# ou Visual Basic, escolha **criar novo projeto de aplicativo de Console (.NET Framework)** para o C# ou o Visual Basic. Na caixa de diálogo que aparece, escolha **criar**.
+    - Para C++, escolha **criar novo projeto de aplicativo de Console** para C++. Na caixa de diálogo que aparece, escolha **criar**.
 
-2.  Selecione um idioma: **Visual C#** , **Visual C++**, ou **Visual Basic**.
+    Em seguida, digite um nome como **MyThreadWalkthroughApp** e clique em **criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo, escolha o seguinte:
 
-3.  Sob **área de trabalho do Windows**, escolha **aplicativo de Console**.
+    - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)**.
+    - Para um aplicativo Visual Basic, sob **Visual Basic**, escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)**.
+    - Para um aplicativo C++, sob **Visual C++**, escolha **área de trabalho do Windows**e, em seguida, escolha **aplicativo de Console do Windows**.
 
-4.  No **nome** , insira MyThreadWalkthroughApp.
+    Em seguida, digite um nome como **MyThreadWalkthroughApp** e clique em **Okey**.
+    ::: moniker-end
 
-5.  Selecione **OK**.
+    Se você não vir as **aplicativo de Console** modelo de projeto, acesse **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
-     Um novo projeto de console é exibido. Depois que o projeto tiver sido criado, um arquivo de origem é exibido. Dependendo da linguagem escolhida, o arquivo de origem pode ser chamado *Program.cs*, *mythreadwalkthroughapp. cpp*, ou *Module1.vb*.
+1. Selecione **OK**.
 
-6.  Exclua o código que aparece no arquivo de origem e substitua-o com o código de exemplo apropriado listando abaixo.
+    Um novo projeto de console é exibido. Depois que o projeto tiver sido criado, um arquivo de origem é exibido. Dependendo da linguagem escolhida, o arquivo de origem pode ser chamado *Program.cs*, *mythreadwalkthroughapp. cpp*, ou *Module1.vb*.
+
+1. Exclua o código que aparece no arquivo de origem e substitua-o com o código de exemplo apropriado listando abaixo.
 
     ```csharp
     using System;
@@ -187,9 +199,9 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
     End Class
     ```
 
-7.  Sobre o **arquivo** menu, selecione **Salvar tudo**.
+1. Sobre o **arquivo** menu, selecione **Salvar tudo**.
 
-8. (Somente Visual Basic) No Gerenciador de soluções (painel direito), clique com botão direito no nó do projeto, escolha **propriedades**. Sob o **Application** , altere o **objeto de inicialização** para **simples**.
+1. (Somente Visual Basic) No Gerenciador de soluções (painel direito), clique com botão direito no nó do projeto, escolha **propriedades**. Sob o **Application** , altere o **objeto de inicialização** para **simples**.
 
 ## <a name="debug-the-multithreaded-app"></a>Depurar o aplicativo com multithread
 
