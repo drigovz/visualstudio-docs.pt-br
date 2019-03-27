@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934140"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268529"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
 
@@ -33,17 +33,7 @@ O ADO.NET fornece métodos simples para trabalhar com dados XML. Neste passo a p
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
 
-Nesta etapa, você cria um projeto do Visual Basic ou Visual c#.
-
-1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
-
-2. Expanda o **Visual c#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
-
-3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
-
-4. Nomeie o projeto **ReadingXML**e, em seguida, escolha **Okey**.
-
-   O **ReadingXML** projeto é criado e adicionado ao **Gerenciador de soluções**.
+Criar um novo **aplicativo do Windows Forms** projeto para o C# ou o Visual Basic. Nomeie o projeto **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Gerar o arquivo XML a ser lido para o conjunto de dados
 
@@ -123,15 +113,15 @@ Porque este passo a passo se concentra na leitura de dados XML em um conjunto de
 
 A interface do usuário para esse aplicativo consiste no seguinte:
 
--   Um <xref:System.Windows.Forms.DataGridView> controle que exibe o conteúdo do arquivo XML como dados.
+- Um <xref:System.Windows.Forms.DataGridView> controle que exibe o conteúdo do arquivo XML como dados.
 
--   Um <xref:System.Windows.Forms.TextBox> controle que exibe o esquema XML para o arquivo XML.
+- Um <xref:System.Windows.Forms.TextBox> controle que exibe o esquema XML para o arquivo XML.
 
--   Dois <xref:System.Windows.Forms.Button> controles.
+- Dois <xref:System.Windows.Forms.Button> controles.
 
-    -   Um botão lê o arquivo XML para o conjunto de dados e exibe-o no <xref:System.Windows.Forms.DataGridView> controle.
+    - Um botão lê o arquivo XML para o conjunto de dados e exibe-o no <xref:System.Windows.Forms.DataGridView> controle.
 
-    -   Um segundo botão extrai o esquema do conjunto de dados e por meio de um <xref:System.IO.StringWriter> exibe-o no <xref:System.Windows.Forms.TextBox> controle.
+    - Um segundo botão extrai o esquema do conjunto de dados e por meio de um <xref:System.IO.StringWriter> exibe-o no <xref:System.Windows.Forms.TextBox> controle.
 
 ### <a name="to-add-controls-to-the-form"></a>Para adicionar controles ao formulário
 
@@ -139,11 +129,11 @@ A interface do usuário para esse aplicativo consiste no seguinte:
 
 2.  Dos **caixa de ferramentas**, arraste os seguintes controles ao formulário:
 
-    -   Um <xref:System.Windows.Forms.DataGridView> controle
+    - Um <xref:System.Windows.Forms.DataGridView> controle
 
-    -   Um <xref:System.Windows.Forms.TextBox> controle
+    - Um <xref:System.Windows.Forms.TextBox> controle
 
-    -   Dois <xref:System.Windows.Forms.Button> controles
+    - Dois <xref:System.Windows.Forms.Button> controles
 
 3.  Defina as propriedades a seguir:
 
@@ -220,9 +210,9 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
 Este passo a passo ensina as Noções básicas de ler um arquivo XML em um conjunto de dados, bem como a criação de um esquema com base no conteúdo do arquivo XML. Aqui estão algumas tarefas que você pode fazer em seguida:
 
--   Edite os dados no dataset e grave-os de volta como XML. Para obter mais informações, consulte <xref:System.Data.DataSet.WriteXml%2A>.
+- Edite os dados no dataset e grave-os de volta como XML. Para obter mais informações, consulte <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Editar os dados no conjunto de dados e grave-os em um banco de dados.
+- Editar os dados no conjunto de dados e grave-os em um banco de dados.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780269"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355364"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Otimizar o tempo de inicialização do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Idealmente, o Visual Studio sempre deve iniciar o mais rápido possível. No ent
 
 ## <a name="control-startup-behavior"></a>Controlar o comportamento de inicialização
 
-Para evitar a extensão do tempo de inicialização, o Visual Studio 2017 evita carregar extensões durante a inicialização, usando uma abordagem de carregamento sob demanda. Isso significa que as extensões não abrem imediatamente após o Visual Studio ser iniciado, mas abrem de forma assíncrona conforme o necessário após a inicialização. Além disso, como as janelas de ferramentas deixadas abertas em uma sessão anterior do Visual Studio podem deixar o tempo de inicialização lento, o Visual Studio abre as janelas de ferramentas de uma maneira mais inteligente para evitar afetar o tempo de inicialização.
+Para evitar a extensão do tempo de inicialização, o Visual Studio 2017 e posterior evitar carregar extensões durante a inicialização, usando uma abordagem de carregamento sob demanda. Isso significa que as extensões não abrem imediatamente após o Visual Studio ser iniciado, mas abrem de forma assíncrona conforme o necessário após a inicialização. Além disso, como as janelas de ferramentas deixadas abertas em uma sessão anterior do Visual Studio podem deixar o tempo de inicialização lento, o Visual Studio abre as janelas de ferramentas de uma maneira mais inteligente para evitar afetar o tempo de inicialização.
 
 Se o Visual Studio detectar lentidão na inicialização, uma mensagem pop-up será exibida, alertando-o para a janela de ferramentas ou extensão que está causando a lentidão. A mensagem também fornece um link para a caixa de diálogo **Gerenciar o Desempenho do Visual Studio**, que lista as extensões e janelas de ferramentas que estão afetando o desempenho de inicialização. Essa caixa de diálogo permite que você altere as configurações de janela de ferramentas e extensão para melhorar o desempenho de inicialização.
 
