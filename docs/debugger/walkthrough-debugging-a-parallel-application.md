@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709402"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476053"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Passo a passo: Depurando um aplicativo paralelo no Visual Studio (C#, Visual Basic, C++)
 
@@ -62,23 +62,39 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 #### <a name="to-create-the-sample-project"></a>Para criar o projeto de exemplo
 
-1. No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+1. Abra o Visual Studio e crie um novo projeto.
 
-2. Selecione a **Visual c#**, **Visual Basic**, ou **Visual C++**. Para as linguagens gerenciadas, certifique-se de que [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] seja exibido na caixa da estrutura.
+    ::: moniker range=">=vs-2019"
+    Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +**), escolha **modelos**e, em seguida:
+    
+    - Para C# ou Visual Basic, escolha **criar novo projeto de aplicativo de Console (.NET Framework)** para o C# ou o Visual Basic. Na caixa de diálogo que aparece, escolha **criar**.
+    - Para C++, escolha **criar novo projeto de aplicativo de Console** para C++. Na caixa de diálogo que aparece, escolha **criar**.
 
-3. Sob **área de trabalho do Windows**, escolha **aplicativo de Console** e, em seguida, clique em **Okey**. Permaneça na configuração de depuração, que é o padrão.
+    Em seguida, digite um nome ou use o nome padrão e clique em **criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo, escolha o seguinte:
 
-4. No projeto, abra o arquivo de código .cpp, .cs ou .vb. Exclua o conteúdo para criar um arquivo de código vazio.
+    - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)**.
+    - Para um aplicativo Visual Basic, sob **Visual Basic**, escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)**.
+    - Para um aplicativo C++, sob **Visual C++**, escolha **área de trabalho do Windows**e, em seguida, escolha **aplicativo de Console do Windows**.
 
-5. Cole o código a seguir para seu idioma escolhido no arquivo de código vazio.
+    Em seguida, digite um nome ou use o nome padrão e clique em **Okey**.
+    ::: moniker-end
+
+    Se você não vir as **aplicativo de Console** modelo de projeto, acesse **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+
+1. No projeto, abra o arquivo de código .cpp, .cs ou .vb. Exclua o conteúdo para criar um arquivo de código vazio.
+
+1. Cole o código a seguir para seu idioma escolhido no arquivo de código vazio.
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. No menu **Arquivo**, clique em **Salvar tudo**.
+1. No menu **Arquivo**, clique em **Salvar tudo**.
 
-7. No menu **Compilar**, clique em **Recompilar Solução**.
+1. No menu **Compilar**, clique em **Recompilar Solução**.
 
     Observe que há quatro chamadas a `Debugger.Break` (`DebugBreak` no exemplo do C++). Em virtude disso, você não precisa inserir pontos de interrupção; a execução do aplicativo causará sua interrupção no depurador até quatro vezes.
 
