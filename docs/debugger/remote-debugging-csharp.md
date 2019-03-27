@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526731"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355157"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de um projeto c# ou Visual Basic no Visual Studio
 Para depurar um aplicativo do Visual Studio que tenha sido implantado em um computador diferente, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, executar seu aplicativo.
@@ -71,7 +71,15 @@ O depurador não é possível implantar aplicativos de desktop em Visual C# ou V
 
 5. Verifique se o **diretório de trabalho** caixa de texto está vazia.
 
-6. Escolher **usar computador remoto**e digite **MJO-DL:4022** na caixa de texto. (4022 é o número da porta mostrado na janela do depurador remoto. O número da porta incrementa 2 em cada versão do Visual Studio).
+6. Escolher **usar computador remoto**e digite **yourmachinename:port** na caixa de texto. (O número da porta é mostrado na janela do depurador remoto. O número da porta incrementa 2 em cada versão do Visual Studio).
+
+    Neste exemplo, use:
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** no Visual Studio de 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** no Visual Studio 2017
+    ::: moniker-end
 
 7. Certifique-se de que **habilitar a depuração de código nativo** não estiver selecionada.
 

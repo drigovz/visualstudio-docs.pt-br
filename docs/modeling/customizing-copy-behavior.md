@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8572ecf95790fdc5f6e73ce0b137e5532c44bdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911813"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416307"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma linguagem de específica de domínio (DSL) criada com o SDK de modelagem e visualização do Visual Studio, você pode alterar o que acontece quando o usuário copia e cola elementos.
@@ -242,7 +242,7 @@ Confira [Como Adicionar um manipulador de arrastar e soltar](../modeling/how-to-
 
 1. Em um novo arquivo no seu projeto DSL, crie uma classe que derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Adicione uma definição de classe parcial para a sua classe de diagrama. O nome dessa classe pode ser encontrado no **dsl\generatedcode\diagrams.cs.**.
+2. Adicione uma definição de classe parcial para a sua classe de diagrama. O nome dessa classe pode ser encontrado no **dsl\generatedcode\diagrams.cs**.
 
     Na classe de diagrama, substitua <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> para retornar uma instância de sua subclasse ElementOperations. Você deve retornar a mesma instância em cada chamada.
 
@@ -555,8 +555,7 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)
-- [Como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md)
+- [Como: Adicionar um manipulador do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Exemplo: Exemplo de diagramas de circuito VMSDK&lt;5}{6&gt; http://go.microsoft.com/FWLINK/?LINKID=213879&lt;6}&lt;4](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

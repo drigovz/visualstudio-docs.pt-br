@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619814a77b0bfaddc1c8c68213d050646a07e7e0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d106260aab40707aeb04f37df05a9d1ffb26a1b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721975"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324410"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Como: sinalizar e remover sinalização de Threads (C#, Visual Basic, C++)
 
@@ -31,7 +31,7 @@ Threads sinalizados também recebem tratamento especial na **Thread** lista o **
 ### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread
 
 - No **Threads** ou **inspeção paralela** janela, localize o thread que você está interessado e clique no ícone de sinalizador para marcar ou desmarcar o sinalizador.
-- No **pilhas paralelas** janela, o botão direito do mouse em um thread ou o grupo de threads e selecione **sinalizador / <thread>**  ou **Remover sinalização / <thread>** .
+- No **pilhas paralelas** janela, o botão direito do mouse em um thread ou o grupo de threads e selecione **sinalizador / \<thread >** ou **Remover sinalização / \<thread >**.
 
 ### <a name="to-unflag-all-threads"></a>Para remover a sinalização de todos os threads
 
