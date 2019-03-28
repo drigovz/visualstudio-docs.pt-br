@@ -1,6 +1,6 @@
 ---
 title: Gravidade da regra de analisador e supressão
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873496"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515331"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar os analisadores de Roslyn
 
@@ -46,12 +46,17 @@ Os ícones ao lado de cada diagnóstico na **Gerenciador de soluções** corresp
 
 ## <a name="rule-sets"></a>Conjuntos de regras
 
-Um [conjunto de regras](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) é um arquivo XML que armazena o estado de gravidade e supressão de diagnóstico individual. Conjuntos de regras se aplicam a um único projeto, e um projeto pode ter vários conjuntos de regras. Para exibir o conjunto no editor de regras Active Directory, clique com botão direito no **analisadores** nó no **Gerenciador de soluções** e selecione **do conjunto de regras ativo aberto**. Se esta for a primeira vez que você está acessando a regra definido, um arquivo chamado  *\<projectname > RuleSet* é adicionado ao projeto e aparece na **Gerenciador de soluções**.
+Um [conjunto de regras](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) é um arquivo XML que armazena o estado de gravidade e supressão de diagnóstico individual.
 
 > [!NOTE]
-> Conjuntos de regras de incluem análise de código (binário) estático e regras do analisador Roslyn.
+> Conjuntos de regras podem incluir regras de análise estática de código (binário) e analisadores de Roslyn.
 
-Você pode alterar a regra ativa definido para um projeto na **análise de código** guia de propriedades de um projeto. Selecione a conjunto de regras de **executar este conjunto de regras** lista suspensa. Você também pode abrir a conjunto de regras do **análise de código** página de propriedades, selecionando **abrir**.
+Para editar a regra ativa definida no editor de conjunto de regras, clique com botão direito no **referências** > **analisadores** nó no **Gerenciador de soluções** e selecione **Abrir conjunto de regras ativo**. Se essa for a primeira vez em que você está editando o conjunto de regras, o Visual Studio faz com que uma cópia da regra padrão de arquivo de conjunto, nomeia  *\<projectname > RuleSet*e o adiciona ao seu projeto. Essa regra personalizada definida também torna-se a regra ativa definido para o projeto.
+
+Para alterar a regra ativa definido para um projeto, navegue até a **análise de código** guia de propriedades de um projeto. Selecione a conjunto de regras de lista sob **executar este conjunto de regras**. Para abrir o conjunto de regras, selecione **abrir**.
+
+> [!NOTE]
+> Projetos .NET core e .NET Standard não dão suporte os comandos de menu para conjuntos de regras **Gerenciador de soluções**, por exemplo, **do conjunto de regras ativo aberto**. Para especificar uma regra de não-padrão definida para um projeto .NET Core ou .NET Standard, manualmente [adicionar a **CodeAnalysisRuleSet** propriedade ao arquivo de projeto](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Você pode configurar as regras dentro da conjunto de regras no Visual Studio editor de interface do usuário do conjunto de regras.
 
 ## <a name="rule-severity"></a>Gravidade da regra
 
@@ -79,7 +84,7 @@ Você pode alterar a severidade de uma regra de **Gerenciador de soluções**, o
 
 ![Arquivo de conjunto de regras no Gerenciador de soluções](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Para definir a gravidade da regra no Gerenciador de soluções
+### <a name="set-rule-severity-from-solution-explorer"></a>Definir a gravidade da regra no Gerenciador de soluções
 
 1. Na **Gerenciador de soluções**, expanda **referências** > **analisadores** (**dependências**  >  **Analisadores** para projetos .NET Core).
 
@@ -89,7 +94,7 @@ Você pode alterar a severidade de uma regra de **Gerenciador de soluções**, o
 
    A gravidade da regra é salvo no arquivo de conjunto de regras ativo.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Definir regra de gravidade na regra definida arquivo
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Severidade de conjunto de regras no arquivo de conjunto de regras
 
 1. Abra o [conjunto de regras](analyzer-rule-sets.md) arquivo clicando duas vezes no **Gerenciador de soluções**, selecionando **abrir conjunto de regras de Active Directory** no menu de atalho do **analisadores** nó, ou selecionando **aberto** no **análise de código** página de propriedades para o projeto.
 
