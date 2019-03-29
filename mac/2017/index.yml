@@ -1,14 +1,14 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 6b16d58a760b92d71eabcad95ffacc2aed9db94d
+ms.openlocfilehash: 7629349f0d9adec6bc0843c2844295e48010c609
 ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568056"
+ms.locfileid: "58568948"
 documentType: LandingData
-title: Documentação do Visual Studio 2019 para Mac
+title: Documentação do Visual Studio para Mac
 metadata:
-  description: Este artigo apresenta os recursos do Visual Studio para Mac.
+  description: Este artigo apresenta os recursos do Visual Studio 2017 para Mac.
   author: conceptdev
   ms.author: crdun
   ms.date: 02/06/2019
@@ -35,6 +35,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
       title: Tour do Visual Studio para Mac
+    - href: ~/installation.md?view=vsmac-2019
+      html: <p></p>
+      image:
+        src: media/index-2019-preview.png
+      title: Experimente a versão prévia de 2019!
 - title: Quais aplicativos posso criar?
   items:
   - type: paragraph

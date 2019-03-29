@@ -68,6 +68,7 @@
 #### [Procurar uma assinatura](search-license.md)
 #### [Exportar assinaturas](exporting-subscriptions.md)
 #### [Superalocações](handle-overclaimed-license.md)
+#### [Uso máximo](maximum-usage.md)
 #### [Assinaturas expiradas](handle-expired-license.md)
 #### [Assinantes que entram com emails pessoais](personal-email-sign-ins.md)
 ## Adquirir assinaturas do Visual Studio
