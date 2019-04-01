@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069964"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415480"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Início Rápido: Criar um projeto de teste de carga
 
@@ -22,13 +22,13 @@ Neste guia de início rápido de 10 minutos, você aprenderá a criar e executar
 
 ## <a name="software-requirements"></a>Requisitos de software
 
-Projetos de teste de carga e de desempenho Web só estão disponíveis na edição Enterprise do Visual Studio.
+Projetos de teste de carga e de desempenho Web só estão disponíveis na **edição Enterprise** do Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Instalar a componente de teste de carga
 
 Se ainda não tiver o componente de ferramentas de teste de carga e de desempenho Web instalado, você precisará instalá-lo usando o Instalador do Visual Studio.
 
-1. Abra o **Instalador do Visual Studio** no menu **Iniciar** do Windows. Você também pode acessá-lo no Visual Studio na caixa de diálogo **Novo Projeto** ou escolhendo **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus.
+1. Abra o **Instalador do Visual Studio** no menu **Iniciar** do Windows. Você também pode acessá-lo no Visual Studio na caixa de diálogo de novo projeto ou escolhendo **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus.
 
 1. No **Instalador do Visual Studio**, escolha a guia **Componentes individuais** e role para baixo até a seção **Depuração e testes**. Selecione **Ferramentas de teste de carga e desempenho Web**.
 
@@ -62,9 +62,9 @@ Nesta seção, criaremos um projeto de teste de carga em C#. Você também pode 
 
 1. Abra o Visual Studio.
 
-2. Na tela inicial, selecione **Criar um novo projeto**.
+2. Na tela Iniciar, selecione **Criar um novo projeto**.
 
-3. Na caixa de diálogo **Criar um novo projeto**, digite **teste da Web** na caixa de pesquisa e selecione o modelo **Desempenho da Web e Projeto de teste de carga\[preterido]**  para o modelo C#. Escolha **Avançar**.
+3. Na página **Criar um novo projeto**, digite **teste da Web** na caixa de pesquisa e selecione o modelo **Desempenho da Web e Projeto de teste de carga \[preterido]**  para o modelo C#. Escolha **Avançar**.
 
 4. Insira um nome para o projeto se não quiser usar o nome padrão e escolha **Criar**.
 

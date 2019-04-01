@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 790d6d866619b19a81bd0e92ecb043385736eaac
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983294"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355533"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Como instalar o suporte do Python no Visual Studio no Windows
 
@@ -50,14 +50,14 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
 
     ::: moniker range="vs-2017"
     Opcional: se estiver trabalhando com ciência de dados, considere também a carga de trabalho para **Aplicativos de ciência de dados e análise**. Essa carga de trabalho inclui suporte para as linguagens Python, R e F#. Para obter mais informações, veja [Carga de trabalho para Aplicativos de ciência de dados e análise](data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > As cargas de trabalho para Python e para Ciência de dados estão disponíveis apenas com a versão Visual Studio 2017 15.2 e posterior.
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
     Opcional: se estiver trabalhando com ciência de dados, considere também a carga de trabalho para **Aplicativos de ciência de dados e análise**. Essa carga de trabalho inclui suporte para as linguagens Python e F#. Para obter mais informações, veja [Carga de trabalho para Aplicativos de ciência de dados e análise](data-science-and-analytical-applications-workload.md).
     ::: moniker-end
-
-    > [!Note]
-    > As cargas de trabalho para Python e para Ciência de dados estão disponíveis apenas com a versão Visual Studio 2017 15.2 e posterior.
 
 1. No lado direito do instalador, escolha opções adicionais se desejado. Ignore essa etapa para aceitar as opções padrão.
 

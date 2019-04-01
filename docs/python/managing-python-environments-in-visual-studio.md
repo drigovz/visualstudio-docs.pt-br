@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80507633538e28650ed53e74794ddda173382878
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195132"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355679"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
@@ -123,7 +123,7 @@ O Visual Studio também fornece um comando para gerar um arquivo *requirements.t
 
 #### <a name="conda-environments"></a>Ambientes do Conda
 
-Um ambiente do conda é aquele criado usando a ferramenta `conda`, ou com o gerenciamento do conda integrado no Visual Studio 2017 versão 15.7 e superior. (Exige o Anaconda ou Miniconda; o Anaconda está disponível por meio do instalador do Visual Studio, consulte [Instalação](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017)).
+Um ambiente do conda é aquele criado usando a ferramenta `conda`, ou com o gerenciamento do conda integrado no Visual Studio 2017 versão 15.7 e superior. (Exige o Anaconda ou Miniconda, que estão disponíveis por meio do Instalador do Visual Studio. Para informações, consulte [Instalação](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017).)
 
 ::: moniker range="vs-2017"
 

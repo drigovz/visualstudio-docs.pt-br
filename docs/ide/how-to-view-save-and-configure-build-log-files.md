@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925222"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323864"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como: Exibir, salvar e configurar arquivos de log de build
 
@@ -53,7 +53,7 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
      Para obter mais informações, consulte [Caixa de diálogo Opções, Projetos e Soluções, Criar e Executar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) e <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > É necessário recompilar o projeto para que suas alterações tenham efeito na Janela de **Saída** (todos os projetos) e no arquivo *<ProjectName>.txt* (apenas projetos C++).
+    > É necessário recompilar o projeto para que suas alterações entrem em vigor na Janela de **Saída** (todos os projetos) e no arquivo *\<NomeDoProjeto>.txt* (apenas projetos C++).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -2,8 +2,8 @@
 title: Portar, migrar e atualizar projetos do Visual Studio 2019
 titleSuffix: ''
 description: Uma referência do suporte no Visual Studio 2019 para projetos criados em versões anteriores do Visual Studio e de como o Visual Studio decide quando migrar um projeto.
-ms.date: 02/26/2019
-ms.prod: visual-studio-dev16
+ms.date: 03/20/2019
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 7447dff5d8855fb141ab66f23ab9bd9b272c3d0d
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 2350f98c5db2428bdb48f57d2dd5ed1236ee4446
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683353"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415766"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Referência de migração e atualização de projeto do Visual Studio 2019
 
-Geralmente, cada nova versão do Visual Studio dá suporte à maioria dos tipos anteriores de projetos, arquivos e outros ativos. Você pode trabalhar com eles [como sempre trabalhou](../ide/solutions-and-projects-in-visual-studio.md) e, desde que não dependa de funcionalidades mais recentes, o Visual Studio geralmente tentará preservar a compatibilidade com versões anteriores, como o Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. (Consulte as [Notas de versão](/visualstudio/releases/2019/release-notes-preview) para saber quais recursos são específicos a quais versões.)
+Geralmente, cada nova versão do Visual Studio dá suporte à maioria dos tipos anteriores de projetos, arquivos e outros ativos. Você pode trabalhar com eles [como sempre trabalhou](../ide/solutions-and-projects-in-visual-studio.md) e, desde que não dependa de funcionalidades mais recentes, o Visual Studio geralmente tentará preservar a compatibilidade com versões anteriores, como o Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. (Consulte as [notas sobre a versão do Visual Studio 2019 Preview](/visualstudio/releases/2019/release-notes-preview) e as [notas sobre a versão do Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/) para saber quais recursos são específicos para quais versões.)
 
 O suporte para alguns tipos de projeto também muda ao longo do tempo. É possível que uma versão mais recente do Visual Studio já não dê mais suporte a determinados projetos ou exija que eles sejam atualizados, fazendo com que deixem de ser compatíveis com versões anteriores. Para obter o status atual de problemas de migração, veja a [Comunidade do Desenvolvedor do Visual Studio](https://developercommunity.visualstudio.com).
 
@@ -71,7 +71,7 @@ Se um projeto ou um tipo de arquivo que deveria estar listado aqui não estiver,
 | Silverlight | Não há suporte para projetos do Silverlight no Visual Studio 2019 Preview. Para manter os aplicativos do Silverlight, continue a usar o Visual Studio 2015. |
 | SQL – Redgate | O SQL Change Automation Core (anteriormente chamado ReadyRoll Core), o SQL Prompt Core e o SQL Search do Redgate não são mais fornecidos no Instalador do Visual Studio.<br/><br/>Você pode continuar usando o Visual Studio 2017 para essas funcionalidades. No Visual Studio 2019 Preview, você pode fazer a atualização para os produtos pagos SQL Change Automation e SQL Prompt pagos que estão disponíveis no SQL Toolbelt do Redgate.|
 | SQL Server Reporting Services e SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | O suporte para esses tipos de projeto é fornecido por meio de duas extensões na Galeria do Visual Studio:  [Projetos de Modelagem do Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) e [Projetos do Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). O suporte do SSDT também está incluído com a carga de trabalho de Processamento e Armazenamento de Dados no Visual Studio 2019 Preview. |
-| SQL Server Integration Services (SSIS) | O suporte ao Visual Studio 2019 Preview virá em breve. Obtenha as notícias mais recentes do [Blog oficial do SSIS](https://blogs.msdn.microsoft.com/ssis/). |
+| SQL Server Integration Services (SSIS) | O suporte ao Visual Studio 2019 Preview virá em breve. Obtenha as notícias mais recentes do [Blog da equipe do SQL Server Data Tools](https://devblogs.microsoft.com/ssdt/). |
 | Extensão da Janela de Teste | No Visual Studio 2019, algumas APIs de janela de teste que foram marcadas como públicas anteriormente, mas nunca foram documentadas oficialmente, foram removidas. As APIs amplamente visíveis foram marcadas como preteridas no Visual Studio 2017 para fornecer um aviso antecipado aos mantenedores de extensão. Para o nosso conhecimento, poucas extensões haviam criado uma dependência dessas APIs. Para obter mais informações e atualizações, veja a [lista completa de APIs relacionadas a teste preteridas](https://github.com/Microsoft/vstest/issues/1830). Se isso afetar o seu cenário, informe-nos na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com). |
 | Visual C++ | Você pode usar o Visual Studio 2019 Preview para trabalhar em projetos criados em versões anteriores do Visual Studio no Visual Studio 2010. Quando você abre o projeto pela primeira vez, tem a opção de atualizar para o compilador e o conjunto de ferramentas mais recentes, ou continuar usando os originais. Se você optar por continuar usando os originais, o Visual Studio 2019 Preview não modificará o arquivo de projeto e usará o conjunto de ferramentas da instalação anterior do Visual Studio para compilar o projeto. Manter as opções originais significa que você ainda pode abrir o projeto na versão original do Visual Studio, se for necessário. Para obter mais informações, consulte [Usar a multiplataforma nativa no Visual Studio para compilar projetos antigos](/cpp/porting/use-native-multi-targeting). |
 | Extensibilidade/VSIX do Visual Studio | Os projetos com o MinimumVersion 14.0 ou inferior serão atualizados para declarar a MinimumVersion 15.0, que impede que o projeto seja aberto em versões anteriores do Visual Studio. Para permitir que um projeto seja aberto em versões anteriores, defina MinimumVersion como `$(VisualStudioVersion)`. Confira também [Como: Migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
@@ -86,13 +86,13 @@ Se um projeto ou um tipo de arquivo que deveria estar listado aqui não estiver,
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Como o Visual Studio decide quando migrar um projeto
 
-Cada nova versão do Visual Studio geralmente tenta manter a compatibilidade com versões anteriores, de forma que o mesmo projeto pode ser aberto, modificado e compilado em versões diferentes. No entanto, há alterações inevitáveis ao longo do tempo, de modo que alguns projetos podem deixar de ter suporte. (Confira [Direcionamento e compatibilidade de plataformas](/visualstudio/releases/2019/compatibility) para saber quais tipos de projeto têm suporte no Visual Studio 2019 Preview.) Nesses casos, uma versão mais recente do Visual Studio não carregará o projeto e não oferecerá um caminho de migração. Você precisará manter o projeto em uma versão anterior do Visual Studio que dá suporte a ele.
+Cada nova versão do Visual Studio geralmente tenta manter a compatibilidade com versões anteriores, de forma que o mesmo projeto pode ser aberto, modificado e compilado em versões diferentes. No entanto, há alterações inevitáveis ao longo do tempo, de modo que alguns projetos podem deixar de ter suporte. (Consulte em [Direcionamento e compatibilidade de plataformas](/visualstudio/releases/2019/compatibility) quais tipos de projeto são compatíveis com o Visual Studio 2019.) Nesses casos, uma versão mais recente do Visual Studio não carregará o projeto e não oferecerá um caminho de migração. Você precisará manter o projeto em uma versão anterior do Visual Studio que dá suporte a ele.
 
 Em outros casos, a versão mais recente do Visual Studio poderá abrir um projeto, mas precisará atualizar ou migrar o projeto, de forma que ele poderá se tornar incompatível com versões anteriores. O Visual Studio usa um número de critérios para determinar se essa migração é necessária:
 
 - Compatibilidade com as versões de destino das plataformas, até o Visual Studio 2013 RTM.
 
-- Compatibilidade de ativos de tempo de design com versões anteriores do Visual Studio. (Ou seja, canais diferentes do Visual Studio 2019; Visual Studio 2017; Visual Studio 2015 RTM e Atualização 3; Visual Studio 2013 RTM e Atualização 5; Visual Studio 2012 Atualização 4 e Visual Studio 2010 SP 1.) O Visual Studio 2019 tem o objetivo de falhar normalmente com ativos em tempo de design preteridos sem corrompê-los, de modo que as versões anteriores ainda possam abrir o projeto.
+- Compatibilidade de ativos de tempo de design com versões anteriores do Visual Studio. (Ou seja, canais diferentes do Visual Studio 2019; Visual Studio 2017; Visual Studio 2015 RTM e Atualização 3; Visual Studio 2013 RTM e Atualização 5; Visual Studio 2012 Atualização 4 e Visual Studio 2010 SP1.) O Visual Studio 2019 tem o objetivo de falhar normalmente com ativos em tempo de design preteridos sem corrompê-los, de modo que as versões anteriores ainda possam abrir o projeto.
 
 - Se novos ativos de tempo de design interromperiam a compatibilidade com versões anteriores até o Visual Studio 2013 RTM e Atualização 5.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708323"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355598"
 ---
 # <a name="options-page-environment-node-properties"></a>Página Opções, propriedades do nó de Ambiente
 
@@ -120,7 +120,7 @@ Este artigo descreve as páginas (ou coleções de propriedades) associadas a um
 |Nome do item de propriedade|Valor|Descrição|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (Cadeia de Caracteres)|Determina se o IDE salva tudo antes de visualizar ou executar um projeto compilado.|
-|ProjectsLocation|Get/Set (Cadeia de Caracteres)|Determina o diretório padrão no qual a caixa de diálogo **Adicionar Projeto** salva novos projetos.|
+|ProjectsLocation|Get/Set (Cadeia de Caracteres)|Determina o diretório padrão em que novos projetos são salvos.|
 |ShowOutputWindowBeforeBuild|Get/Set (Booliano)|Determina se iniciar um build exibe a Janela de **Saída**.|
 |ShowTaskListAfterBuild|Get/Set (Booliano)|Determina se uma operação de build bem-sucedida exibe a **Lista de Tarefas** quando o build é concluído.|
 |TrackFileSelectionInExplorer|Get/Set (Booliano)|Determina se o item atual é rastreado no **Gerenciador de Soluções**.|

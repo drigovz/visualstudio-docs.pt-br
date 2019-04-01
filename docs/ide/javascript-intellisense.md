@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868892"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324390"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -53,6 +53,7 @@ O TypeScript usa várias fontes para criar essas informações:
 - [Aquisição automática de definições de tipo](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense com base em inferência de tipos
 
 No JavaScript, na maioria das vezes, não há nenhuma informação de tipo explícita disponível. Felizmente, geralmente é bastante fácil descobrir um tipo dado o contexto de código ao redor.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense com base em JSDoc
 
 Nos casos em que a inferência de tipos não fornecer as informações de tipo desejadas (ou para dar suporte à documentação), as informações de tipo podem ser fornecidas explicitamente por meio de anotações do JSDoc.  Por exemplo, para fornecer um tipo específico a um objeto parcialmente declarado, é possível usar a marcação `@type` conforme mostrado abaixo:
@@ -123,7 +125,7 @@ Como o JavaScript e o TypeScript agora são baseados no mesmo serviço de lingua
 
 Abaixo, mostramos um exemplo simples de um arquivo de definição TypeScript que fornece essas informações de tipo (por meio de uma interface) para um arquivo JavaScript no mesmo projeto (usando uma marca `JsDoc`).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![Arquivo de definição de TypeScript](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Aquisição automática das definições de tipo

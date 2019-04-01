@@ -2,8 +2,9 @@
 title: 'Tutorial: Introdução ao Visual Basic'
 description: Saiba como criar aplicativos de console do Visual Basic no Visual Studio, passo a passo.
 ms.custom: seodec18, get-started
-ms.date: 08/10/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,22 +14,34 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840408"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416156"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introdução ao Visual Basic no Visual Studio
 
 Neste tutorial do VB (Visual Basic), você usará o Visual Studio para criar e executar alguns aplicativos de console diferentes e explorar alguns recursos do [IDE (ambiente de desenvolvimento integrado) do Visual Studio](visual-studio-ide.md) durante esse processo.
 
+::: moniker range="vs-2017"
+
 Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Criar um projeto
 
 Primeiro, criaremos um projeto de aplicativo do Visual Basic. O tipo de projeto inclui todos os arquivos de modelo que você precisará, mesmo sem adicionar nada!
+
+::: moniker range="vs-2017"
 
 1. Abra o Visual Studio 2017.
 
@@ -58,9 +71,49 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> Algumas das capturas de tela neste tutorial usam o tema escuro. Se você não estiver usando o tema escuro, mas quiser usá-lo, confira a página [Personalizar o IDE e o Editor do Visual Studio](../../ide/quickstart-personalize-the-ide.md) para saber como.
+
+1. Abra o Visual Studio 2019.
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+   ![Exibir a janela 'Criar um novo projeto'](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, escolha **Visual Basic** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma. 
+
+   Depois de aplicar os filtros de linguagem de programação e plataforma, escolha o modelo **Aplicativo de Console (.NET Core)** e, em seguida, escolha **Avançar**.
+
+   ![Escolha o modelo de Visual Basic para o Aplicativo de Console (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Se não vir o modelo **Aplicativo de Console (.NET Core)**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
+   >
+   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
+   >
+   > ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
+
+1. Na janela **Configurar seu novo projeto**, digite ou insira *WhatIsYourName* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
+
+   ![Na janela "Configurar seu novo projeto", dê ao projeto o nome 'WhatIsYourName'](./media/vs-2019/vb-name-your-project.-whatname.png)
+
+   O Visual Studio abre seu novo projeto.
+
+::: moniker-end
+
 ## <a name="create-a-what-is-your-name-application"></a>Criar um aplicativo de “Qual é o seu nome”
 
 Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e a hora. Veja como:
+
+ ::: moniker range="vs-2017"
 
 1. Se ainda não estiver aberto, abra seu projeto *WhatIsYourName*.
 
@@ -77,7 +130,7 @@ Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e 
 
     Esse código substitui as instruções <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> e <xref:System.Console.ReadKey%2A> existentes.
 
-   ![Janela de código mostrando o código Qual é o seu nome](media/vb-codewindow-what-name.png)
+   ![Janela de código mostrando o código Qual é o seu nome](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
 1. Quando a janela do console é aberta, digite seu nome. A janela do console deve ser semelhante à captura de tela a seguir:
 
@@ -85,7 +138,36 @@ Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e 
 
 1. Pressione qualquer tecla para fechar a janela de console.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. No projeto *WhatIsYourName*, insira o código do Visual Basic a seguir imediatamente após o colchete de abertura que segue a linha `Sub Main(args As String())` e antes da linha `End Sub`:
+
+     ```vb
+     Console.WriteLine(vbCrLf + "What is your name? ")
+     Dim name = Console.ReadLine()
+     Dim currentDate = DateTime.Now
+     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
+     Console.Write(vbCrLf + "Press any key to exit... ")
+     Console.ReadKey(True)
+    ```
+
+    Esse código substitui as instruções <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> e <xref:System.Console.ReadKey%2A> existentes.
+
+   ![Janela de código mostrando o código Qual é o seu nome](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. Quando a janela do console é aberta, digite seu nome. A janela do console deve ser semelhante à captura de tela a seguir:
+
+   ![Janela do console mostrando Qual é o seu nome, a data e hora, e Pressione qualquer tecla para continuar a mensagem](media/vb-console-what-name.png)
+
+1. Pressione qualquer tecla para fechar a janela de console.
+
+ ::: moniker-end
+
 ## <a name="create-a-calculate-this-application"></a>Criar um aplicativo “Calcular isso”
+
+::: moniker range="vs-2017"
 
 1. Abra o Visual Studio 2017 e, na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
@@ -110,11 +192,50 @@ Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e 
 
    Sua janela de código deve se parecer com a captura de tela a seguir:
 
-   ![Janela de código mostrando o código Calcular isso](media/vb-codewindow-calculate-this.png)
+   ![Janela de código mostrando o código CalculateThis](media/vb-codewindow-calculate-this.png)
 
 1. Clique em **CalculateThis** para executar o programa. A janela do console deve ser semelhante à captura de tela a seguir:
 
-    ![Janela do console mostrando o aplicativo CaluculateThis, que inclui solicitações de ações a serem tomadas.](media/vb-console-calculate-this.png)
+    ![Janela do console mostrando o aplicativo CalculateThis, que inclui solicitações de ações a serem tomadas.](media/vb-console-calculate-this.png)
+
+::: moniker-end 
+
+::: moniker range="vs-2019"
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**. 
+
+1. Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, escolha **Visual Basic** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma. 
+
+1. Depois de aplicar os filtros de linguagem de programação e plataforma, escolha o modelo **Aplicativo de Console (.NET Core)** e, em seguida, escolha **Avançar**.
+
+   Em seguida, na janela **Configurar seu novo projeto**, digite ou insira *WhatIsYourName* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
+
+1. Insira o código a seguir entre as linhas `Module Program` e `End Module`:
+
+   ```vb
+   Public num1 As Integer
+   Public num2 As Integer
+   Public answer As Integer
+   Sub Main()
+       Console.WriteLine("Type a number and press Enter")
+       num1 = Console.ReadLine()
+       Console.WriteLine("Type another number to add to it and press Enter")
+       num2 = Console.ReadLine()
+       answer = num1 + num2
+       Console.WriteLine("The answer is " & answer)
+       Console.ReadLine()
+   End Sub
+   ```
+
+   Sua janela de código deve se parecer com a captura de tela a seguir:
+
+   ![Janela de código mostrando o código CalculateThis](media/vb-codewindow-calculate-this.png)
+
+1. Clique em **CalculateThis** para executar o programa. A janela do console deve ser semelhante à captura de tela a seguir:
+
+    ![Janela do console mostrando o aplicativo CalculateThis, que inclui solicitações de ações a serem tomadas.](media/vb-console-calculate-this.png)
+
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>Perguntas frequentes com respostas rápidas
 

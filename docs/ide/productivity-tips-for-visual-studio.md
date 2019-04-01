@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223137"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355757"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -66,13 +66,23 @@ Você pode procurar no IDE comandos, arquivos e opções, bem como filtrar o con
 
 - **Exiba apenas os erros que você deseja resolver**. Se você escolher o botão **Filtrar** na barra de ferramentas **Lista de Erros**, poderá reduzir o número de erros que aparecem na janela **Lista de Erros**. Você só pode exibir os erros em arquivos que estão abertos no editor, somente os erros no arquivo atual ou somente os erros no projeto atual. Você também pode pesquisar na janela **Lista de Erros** para localizar erros específicos.
 
-- **Localizar caixas de diálogo, comandos de menu e opções**. Na caixa de pesquisa [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md), insira palavras-chave ou frases para os itens que você está tentando localizar. Por exemplo, as seguintes opções aparecerão se você inserir `new project`:
+- **Localizar caixas de diálogo, comandos de menu, opções e mais**. Na caixa de pesquisa [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md), insira palavras-chave ou frases para os itens que você está tentando localizar. Por exemplo, as seguintes opções aparecerão se você inserir **novo projeto**:
 
-    ![Resultados do Início Rápido para "novo projeto"](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    O **Início Rápido** exibe links para a caixa de diálogo **Novo Projeto**, a caixa de diálogo **Adicionar Novo Item** e a página **Projetos e Soluções** na caixa de diálogo **Opções**, entre outros. Os resultados do Início Rápido também podem incluir arquivos de projeto e janelas de ferramenta.
+   ![Resultados do Início Rápido para "novo projeto"](../ide/media/productivity_quicklaunch.png)
 
-  A caixa de pesquisa **Início Rápido** é exibida no canto superior direito do IDE. (Alternativamente, pressione **Ctrl**+**Q** para acessá-la.)
+   O **Início Rápido** exibe links para criar um projeto, para adicionar um novo item a um projeto e para a página **Projetos e Soluções** na caixa de diálogo **Opções**, entre outros. Os resultados da pesquisa também podem incluir arquivos de projeto e janelas de ferramentas.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Resultados da pesquisa do Início Rápido para "novo projeto"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   Pressione **Ctrl**+**Q** para ir direto à caixa de pesquisa do **Início Rápido**.
 
 ## <a name="debug-code"></a>Depurar o código
 

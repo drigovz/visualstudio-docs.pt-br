@@ -10,33 +10,41 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 21486fb42f689fbdd5876353a0d99b8f818cf817
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983696"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415619"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conhecidos de contêineres
 
 Há alguns problemas ao instalar o Visual Studio em um contêiner do Docker.
 
-::: moniker range="vs-2017"
-
 ## <a name="windows-container"></a>Contêiner do Windows
 
-Estes problemas conhecidos ocorrem quando as Ferramentas de Build do Visual Studio 2017 são instaladas em um contêiner do Windows.
+Estes problemas conhecidos ocorrem quando as Ferramentas de Build do Visual Studio são instaladas em um contêiner do Windows.
+
+::: moniker range="vs-2017"
 
 * Não é possível instalar o Visual Studio em um contêiner com base na imagem microsoft/windowsservercore:10.0.14393.1593. As imagens marcadas com versões do Windows anteriores ou posteriores à versão 10.0.14393 deverão funcionar.
+
 * Não é possível instalar o SDK do Windows versão 10.0.14393 ou anterior. A instalação de certos pacotes falha e as cargas de trabalho que dependem desses pacotes não funcionarão.
+
+::: moniker-end
+
 * Passe `-m 2GB` (ou mais) ao compilar a imagem. Algumas cargas de trabalho exigem mais memória que o padrão de 1 GB quando instaladas.
 * Configure o Docker para usar discos maiores que o padrão de 20 GB.
 * Passe `--norestart` na linha de comando. A partir dessa gravação, tentar reiniciar um contêiner do Windows dentro do contêiner retorna `ERROR_TOO_MANY_OPEN_FILES` para o host.
-* Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie a imagem no [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou posterior. Por exemplo, você poderá ver um erro ao compilar com o MSBuild, como:
+* Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie a imagem no [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou posterior. Por exemplo, ao compilar com o MSBuild, você poderá ver um erro semelhante ao seguinte:
 
   > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): erro MSB6003: Não foi possível executar o executável da tarefa especificada "csc.exe". Não foi possível carregar o arquivo ou assembly “System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
 
-* Não é possível instalar o Visual Studio 2017 versão 15.8 ou anterior (qualquer produto) no mcr<span></span>.microsoft.com/windows/servercore:1809 ou posterior. Consulte https://aka.ms/setup/containers/servercore1809 para obter mais informações.
+::: moniker range="vs-2017"
+
+* Não é possível instalar o Visual Studio 2017 versão 15.8 ou anterior (qualquer produto) no mcr.microsoft.com/windows/servercore:1809 ou posterior. Consulte https://aka.ms/setup/containers/servercore1809 para obter mais informações.
 
 ::: moniker-end
 

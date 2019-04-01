@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 61d37adfdc74a5b2a9c22ba9f3e5a92622cbbab6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194334"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355520"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -75,7 +75,7 @@ O Visual Studio fornece várias maneiras para configurar um projeto do Python, d
 
 ![Nova caixa de diálogo do projeto com modelos do Python](media/projects-new-project-dialog.png)
 
-A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 (nem todos os modelos estão disponíveis em todas as versões anteriores):
+A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 e posterior (nem todos os modelos estão disponíveis em todas as versões anteriores):
 
 | Modelo | Descrição |
 | --- | --- |
@@ -88,7 +88,7 @@ A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 (nem todo
 | **Página da Web do IronPython Silverlight** | Um projeto do IronPython executado em um navegador usando o Silverlight. O código do aplicativo do Python é incluído na página da Web como um script. Uma marca de script de texto clichê puxa um código JavaScript que inicializa o IronPython em execução dentro do Silverlight, no qual o código do Python pode interagir com o DOM. |
 | **Aplicativo do Windows Forms do IronPython** | Uma estrutura de projeto que usa o IronPython com a interface do usuário criada usando o código com o Windows Forms. O aplicativo é executado sem exibir um console. |
 | **Aplicativo em segundo plano (IoT)** | Dá suporte à implantação de projetos do Python a serem executados como serviços em segundo plano em dispositivos. Visite a [Central de desenvolvedores do Windows IoT](https://dev.windows.com/en-us/iot) para obter mais informações. |
-| **Módulo de Extensão do Python** | Esse modelo é exibido no Visual C++ se você instalou as **ferramentas de desenvolvimento nativo do Python** com a carga de trabalho do Python no Visual Studio 2017 (confira [Instalação](installing-python-support-in-visual-studio.md)). Ele fornece a estrutura principal para uma DLL de extensão do C++, semelhante ao que é descrito em [Criar uma extensão do C++ para o Python](working-with-c-cpp-python-in-visual-studio.md). |
+| **Módulo de Extensão do Python** | Esse modelo é exibido no Visual C++ se você instalou as **ferramentas de desenvolvimento nativo do Python** com a carga de trabalho do Python no Visual Studio 2017 ou posteriores (consulte [Instalação](installing-python-support-in-visual-studio.md)). Ele fornece a estrutura principal para uma DLL de extensão do C++, semelhante ao que é descrito em [Criar uma extensão do C++ para o Python](working-with-c-cpp-python-in-visual-studio.md). |
 
 > [!Note]
 > Como Python é uma linguagem interpretada, os projetos em Python no Visual Studio não produzem um executável autônomo como outros projetos de linguagem compilada (C#, por exemplo). Para saber mais, confira [Perguntas e respostas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).

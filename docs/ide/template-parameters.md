@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907679"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355666"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 
@@ -54,11 +54,11 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |guid[1-10]|Um GUID usado para substituir o GUID do projeto em um arquivo de projeto. Você pode especificar até 10 GUIDs exclusivos (por exemplo, `guid1`).|
 |itemname|O nome fornecido pelo usuário na caixa de diálogo **Adicionar Novo Item**.|
 |machinename|O nome do computador atual (por exemplo, Computer01).|
-|projectname|O nome fornecido pelo usuário na caixa de diálogo **Novo Projeto**.|
+|projectname|O nome fornecido pelo usuário quando o projeto foi criado.|
 |registeredorganization|O valor da chave do Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|O namespace raiz do projeto atual. Esse parâmetro se aplica somente a modelos de item.|
 |safeitemname|O nome fornecido pelo usuário na caixa de diálogo **Adicionar Novo Item**, com todos os caracteres desprotegidos e espaços removidos.|
-|safeprojectname|O nome fornecido pelo usuário na caixa de diálogo **Novo Projeto**, com todos os caracteres desprotegidos e espaços removidos.|
+|safeprojectname|O nome fornecido pelo usuário quando o projeto foi criado, mas com todos os caracteres desprotegidos e espaços removidos.|
 |hora|A hora atual no formato DD/MM/AAAA 00:00:00.|
 |SpecificSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `SpecificSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `SpecificSolutionName` estará em branco.|
 |userdomain|O domínio do usuário atual.|

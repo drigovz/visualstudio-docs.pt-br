@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29f6cfe21537cd74ffa135edc3f93b9d8548aab7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946659"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414964"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Como: Associar um controlador de teste ou um agente de teste a um adaptador de rede
 
@@ -55,7 +55,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
      `net stop vsttcontroller`
 
-3.  Abra o arquivo de configuração XML *QTCcontroller.exe.config* localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Abra o arquivo de configuração XML *QTCcontroller.exe.config* localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4.  localize a marca `<appSettings>`.
 
@@ -101,7 +101,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
      **net stop vsttagent**
 
-3.  Abra o arquivo de configuração XML *QTAgentService.exe.config* localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Abra o arquivo de configuração XML *QTAgentService.exe.config* localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4.  localize a marca `<appSettings>`.
 
@@ -133,5 +133,4 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)
 - [Modificar configurações de registro em log de testes de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar portas para controladores e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Como: Especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Como: Especificar períodos de tempo limite para controladores e agentes de teste](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

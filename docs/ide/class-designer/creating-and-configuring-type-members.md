@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956851"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324234"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Criar e configurar membros de tipo no Designer de Classe
 
@@ -205,7 +205,7 @@ As linhas de parâmetro contém os seguintes itens:
 
 - **\<adicionar parâmetro>**
 
-     A última linha de parâmetro de um membro contém o texto **<add parameter>** na célula **Nome**. Clicar nessa célula permite criar um novo parâmetro. Para obter mais informações, consulte [Para adicionar um parâmetro a um método](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     A última linha de parâmetro de um membro contém o texto **<adicionar parâmetro\>** na célula **Nome**. Clicar nessa célula permite criar um novo parâmetro. Para obter mais informações, consulte [Para adicionar um parâmetro a um método](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na Janela **Detalhes da Classe**: **Nome**, **Tipo**, **Modificador**, **Resumo**, bem como a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.
 

@@ -11,14 +11,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1273c5475fe6090648b61ca351ae3b507702708
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873253"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324075"
 ---
-# <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bem-vindo ao IDE do Visual Studio | Visual Studio
+# <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bem-vindo ao IDE do Visual Studio | Visual Basic
 
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 
@@ -123,7 +123,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
 - [Live Share](/visualstudio/liveshare/)
 
-   Editar e depurar de maneira colaborativa com outras pessoas em tempo real, independentemente do tipo de aplicativo ou linguagem de programação. Você pode compartilhar seu projeto atual de forma instantânea e segura e, conforme necessário, compartilhar sessões de depuração, instâncias de terminal, aplicativos Web do localhost, chamadas de voz e muito mais.
+   Edite e depure de maneira colaborativa com outras pessoas em tempo real, independentemente do tipo de aplicativo ou linguagem de programação. Você pode compartilhar seu projeto atual de forma instantânea e segura e, conforme necessário, compartilhar sessões de depuração, instâncias de terminal, aplicativos Web do localhost, chamadas de voz e muito mais.
 
 - [Hierarquia de chamadas](../../ide/reference/call-hierarchy.md)
 
@@ -225,9 +225,9 @@ Para alterar para o tema **Escuro**:
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio. Na janela Iniciar, escolha **Continuar sem código**.
+1. Abra o Visual Studio. Na janela de início, escolha **Continuar sem código**.
 
-   ![Janela de início no Visual Studio 2019](media/vs-2019/continue-without-code.png)
+   ![A janela de início no Visual Studio 2019](media/vs-2019/continue-without-code.png)
 
    O IDE abre.
 

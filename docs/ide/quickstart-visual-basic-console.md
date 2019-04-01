@@ -1,8 +1,9 @@
 ---
 title: Criar seu primeiro aplicativo de console com o Visual Basic
 description: Saiba como criar um aplicativo de console Olá, Mundo simples no Visual Studio com o Visual Basic, passo a passo.
-ms.date: 12/10/2017
 ms.custom: seodec18
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -12,22 +13,34 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ed05ae0c223ac61db52782b76509d7f42f2b43fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947361"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415831"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Início Rápido: Criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic
 
 Nesta introdução de 5 a 10 minutos ao IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo simples do Visual Basic que é executado no console.
 
+::: moniker range="vs-2017"
+
 Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Criar um projeto
 
 Primeiro, você criará um projeto de aplicativo do Visual Basic. O tipo de projeto inclui todos os arquivos de modelo que você precisará, mesmo sem adicionar nada!
+
+::: moniker range="vs-2017"
 
 1. Abra o Visual Studio 2017.
 
@@ -43,7 +56,45 @@ Primeiro, você criará um projeto de aplicativo do Visual Basic. O tipo de proj
 
      O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
-     ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> Algumas das capturas de tela neste Início Rápido usam o tema escuro. Se você não estiver usando o tema escuro, mas quiser usá-lo, confira a página [Personalizar o IDE e o Editor do Visual Studio](quickstart-personalize-the-ide.md) para saber como.
+
+1. Abra o Visual Studio 2019.
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+   ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, escolha **Visual Basic** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma. 
+
+   Depois de aplicar os filtros de linguagem de programação e plataforma, escolha o modelo **Aplicativo de Console (.NET Core)** e, em seguida, escolha **Avançar**.
+
+   ![Escolha o modelo de Visual Basic para o Aplicativo de Console (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Se não vir o modelo **Aplicativo de Console (.NET Core)**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
+   >
+   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
+   >
+   > ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
+
+1. Na janela **Configurar seu novo projeto**, digite ou insira *WhatIsYourName* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
+
+   ![Na janela "Configurar seu novo projeto", dê ao projeto o nome 'WhatIsYourName'](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+
+   O Visual Studio abre seu novo projeto.
+
+::: moniker-end
 
 ## <a name="create-the-application"></a>Criar o aplicativo
 
