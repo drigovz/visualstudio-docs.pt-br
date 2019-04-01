@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a3bd2c65ccca172eca46eb5d935ef7735734a608
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069587"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355254"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Vue.js
 
@@ -56,15 +56,13 @@ Primeiro, você criará um projeto de aplicativo Web Vue.js.
 
 1. Abra o Visual Studio.
 
-1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
-
 1. Crie um novo projeto.
 
     ::: moniker range=">=vs-2019"
-    Na caixa de diálogo **Criar um novo projeto**, digite **javascript** ou **typescript** na caixa de pesquisa para filtrar os resultados e escolha **Aplicativo Web Vue.js básico** e escolha **Avançar**. Em seguida, escolha **Criar**.
+    Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Vue.js** e, em seguida, escolha **Aplicativo Web básico do Vue.js** (JavaScript ou TypeScript). Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Vue.js básico** e **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** ou **TypeScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Vue.js básico** e **OK**.
     ::: moniker-end
     Se não vir o modelo de projeto **Aplicativo Web Vue.js básico**, você deverá instalar a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
 

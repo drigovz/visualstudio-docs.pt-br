@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57987012"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354902"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Início Rápido: Abrir e executar código Python em uma pasta
 
 Depois de [instalar o suporte ao Python no Visual Studio 2019](installing-python-support-in-visual-studio.md), é fácil executar o código de Python existente no Visual Studio 2019 sem criar um projeto do Visual Studio.
 
 > [!Note]
-> O Visual Studio 2017 e anterior exigia que você criasse um projeto do Visual Studio para executar o código Python, o que você pode fazer facilmente usando um modelo de projeto interno. Confira [Início Rápido: criar um projeto do Python com base em um código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> O Visual Studio 2017 e anteriores exigiam que você criasse um projeto do Visual Studio para executar o código Python, o que você pode fazer facilmente usando um modelo de projeto interno. Confira [Início Rápido: criar um projeto do Python com base em um código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. Para este passo a passo, use qualquer pasta com o código do Python que desejar. Para acompanhar o exemplo mostrado aqui, clone o repositório do GitHub gregmalcolm/python_koans em seu computador usando o comando `git clone https://github.com/gregmalcolm/python_koans` em uma pasta apropriada.
 
-1. Inicie o Visual Studio de 2019 e, na tela Iniciar, selecione **Abrir** na parte inferior da coluna **Introdução**. Como alternativa, se o Visual Studio já estiver em execução, selecione o comando **Arquivo** > **Abrir** > **Pasta** em vez disso.
+1. Inicie o Visual Studio de 2019 e, na janela de início, selecione **Abrir** na parte inferior da coluna **Introdução**. Como alternativa, se o Visual Studio já estiver em execução, selecione o comando **Arquivo** > **Abrir** > **Pasta** em vez disso.
 
     ![A tela de inicialização do Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 

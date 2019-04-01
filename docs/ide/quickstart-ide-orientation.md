@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867820"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354718"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início Rápido: Introdução ao IDE do Visual Studio
 
@@ -39,9 +39,9 @@ Se você fechar a **Página Inicial** e desejar vê-la novamente, será possíve
 
 ## <a name="start-window"></a>Janela de início
 
-A primeira coisa que você verá depois de abrir o Visual Studio é a janela Iniciar. A janela Iniciar foi projetada para ajudar você a "acessar o código" mais rapidamente. Ela tem opções para clonar o código ou fazer check-out dele, abrir um projeto ou uma solução existente, criar um projeto ou simplesmente abrir uma pasta que contenha alguns arquivos de código.
+A primeira coisa que você verá depois de abrir o Visual Studio é a janela de início. A janela de início foi projetada para ajudar você a "acessar o código" mais rapidamente. Ela tem opções para clonar o código ou fazer check-out dele, abrir um projeto ou uma solução existente, criar um projeto ou simplesmente abrir uma pasta que contenha alguns arquivos de código.
 
-[![](media/vs-2019/start-window-labeled.png "Janela de início no Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![](media/vs-2019/start-window-labeled.png "A janela de início no Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
 
 Se essa for a primeira vez que você estiver usando o Visual Studio, sua lista de projetos recentes estará vazia.
 
@@ -71,7 +71,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 
 1. Na tela Iniciar, selecione **Criar um novo projeto**.
 
-   Uma janela é aberta informando **Criar um novo projeto**. Às vezes, essa janela é conhecida como a caixa de diálogo **Novo Projeto** e é nela que você pode procurar e selecionar um modelo de projeto. Ela também mantém uma lista de modelos de projeto usados recentemente.
+   Uma caixa de diálogo é aberta com o título **Criar um novo projeto**. Aqui, você pode pesquisar, filtrar e, em seguida, escolher um modelo de projeto. Ela também mostra uma lista dos modelos de projeto usados recentemente por você.
 
 1. Na caixa de pesquisa na parte superior, digite **console** para filtrar a lista de tipos de projeto àqueles que contêm "console" no nome. Refine ainda mais os resultados da pesquisa pela separação **C#**  (ou outra linguagem de sua escolha) do seletor **Linguagem**.
 

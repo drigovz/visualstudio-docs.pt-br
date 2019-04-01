@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 786b116d153eeea2ddb1c495f88ae0cd6ce135c6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194892"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354757"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Etapa 5: Instalar pacotes no ambiente do Python
 
@@ -46,7 +46,7 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
 
    Uma pequena barra de progresso pode ser exibida sob o ambiente para indicar que o Visual Studio está criando o banco de dados do IntelliSense para o pacote recém-instalado. A guia **IntelliSense** também mostra mais informações detalhadas. Observe que, até que o banco de dados seja concluído, os recursos do IntelliSense, como preenchimento automático e verificação de sintaxe, não estarão ativos no editor para esse pacote.
 
-   Observe que o **Visual Studio 2017 versão 15.6** e posterior usa um método diferente e mais rápido para trabalhar com o IntelliSense e exibe uma mensagem para esse efeito na guia **IntelliSense**.
+   Observe que o Visual Studio 2017 versão 15.6 e posterior usa um método diferente e mais rápido para trabalhar com o IntelliSense e exibe uma mensagem para esse efeito na guia **IntelliSense**.
 
 7. Crie um novo projeto com **Arquivo** > **Novo**  > **Projeto**, escolhendo o modelo **Aplicativo do Python**. No arquivo de código que é exibido, cole o código a seguir, que cria uma curva de cosseno como nas etapas anteriores do tutorial, só que plotada graficamente desta vez:
 

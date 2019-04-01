@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946933"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416351"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como: Criar um suplemento do Visual Studio para o Visualizador de Resultados do Teste de Desempenho Web
 
@@ -24,7 +24,7 @@ Você pode estender a interface do usuário para o **Visualizador de Testes de D
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Além disso, é necessário adicionar uma referência à DLL LoadTestPackage, localizada na pasta *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
+Além disso, é necessário adicionar uma referência à DLL LoadTestPackage, localizada na pasta *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<versão>\Enterprise\Common7\IDE\PrivateAssemblies*.
 
 Para estender a interface do usuário do **Visualizador de Testes de Desempenho Web**, você precisa criar um suplemento do Visual Studio e um controle de usuário. Os procedimentos a seguir explicam como criar o suplemento, o controle de usuário e como implementar as classes necessárias para estender interface de usuário do **Visualizador de Testes de Desempenho Web**.
 
@@ -51,46 +51,38 @@ Um suplemento é uma DLL compilada executada no IDE (ambiente de desenvolvimento
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **Novo Projeto**.
 
-    A caixa de diálogo **Novo Projeto** é exibida.
-
-2. Em **Modelos Instalados**, expanda **Outros Tipos de Projetos** e selecione **Extensibilidade**.
-
-3. Na lista de modelos, selecione **Suplemento do Visual Studio**.
-
-4. Em **Nome**, digite um nome para o suplemento. Por exemplo, **WebPerfTestResultsViewerAddin**.
-
-5. Escolha **OK**.
+2. Criar um projeto de **suplemento do Visual Studio**.
 
     O **Assistente de Suplemento** do Visual Studio é iniciado.
 
-6. Escolha **Avançar**.
+3. Escolha **Avançar**.
 
-7. Na página **Selecione uma Linguagem de Programação**, selecione a linguagem de programação que deseja usar para gravar o suplemento.
+4. Na página **Selecione uma Linguagem de Programação**, selecione a linguagem de programação que deseja usar para gravar o suplemento.
 
    > [!NOTE]
    > Este tópico usa o Visual C# no código de exemplo.
 
-8. Na página **Selecione um Aplicativo Host**, selecione **Visual Studio** e desmarque **Macros do Visual Studio**.
+5. Na página **Selecione um Aplicativo Host**, selecione **Visual Studio** e desmarque **Macros do Visual Studio**.
 
-9. Escolha **Avançar**.
+6. Escolha **Avançar**.
 
-10. Digite um nome e uma descrição para o suplemento na página **Digite um Nome e uma Descrição**.
+7. Digite um nome e uma descrição para o suplemento na página **Digite um Nome e uma Descrição**.
 
      Após o suplemento ser criado, seu nome e sua descrição serão exibidos na lista **Suplementos Disponíveis** no **Gerenciador de Suplementos**. Adicione detalhes o suficiente à descrição do suplemento de modo que os usuários possam saber o que o suplemento faz, como funciona etc.
 
-11. Escolha **Avançar**.
+8. Escolha **Avançar**.
 
-12. Na página **Escolha Opções de Suplemento**, selecione **Desejo que o suplemento seja carregado quando o aplicativo host for iniciado**.
+9. Na página **Escolha Opções de Suplemento**, selecione **Desejo que o suplemento seja carregado quando o aplicativo host for iniciado**.
 
-13. Desmarque as caixas de seleção restantes.
+10. Desmarque as caixas de seleção restantes.
 
-14. Na página **Escolhendo Informações de “Ajuda Sobre”**, você pode especificar se deseja que as informações sobre o suplemento sejam exibidas em uma caixa de diálogo **Sobre**. Se você quiser que as informações sejam exibidas, marque a caixa de seleção **Sim, desejo que o suplemento ofereça informações da caixa “Sobre”**.
+11. Na página **Escolhendo Informações de “Ajuda Sobre”**, você pode especificar se deseja que as informações sobre o suplemento sejam exibidas em uma caixa de diálogo **Sobre**. Se você quiser que as informações sejam exibidas, marque a caixa de seleção **Sim, desejo que o suplemento ofereça informações da caixa “Sobre”**.
 
      As informações que podem ser adicionadas à caixa de diálogo **Sobre** do Visual Studio incluem o número de versão, os detalhes de suporte, os dados de licenciamento etc.
 
-15. Escolha **Avançar**.
+12. Escolha **Avançar**.
 
-16. As opções que você selecionou são exibidas na página **Resumo** para análise. Se você estiver satisfeito, escolha **Finalizar** para criar o suplemento. Se quiser alterar algo, escolha o botão **Voltar**.
+13. As opções que você selecionou são exibidas na página **Resumo** para análise. Se você estiver satisfeito, escolha **Finalizar** para criar o suplemento. Se quiser alterar algo, escolha o botão **Voltar**.
 
      A nova solução e o projeto são criados, e o arquivo *Connect.cs* do novo suplemento é exibido no **Editor de Códigos**.
 
@@ -119,24 +111,11 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **Novo Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+2. Crie um projeto da **Biblioteca de Controle do Windows Forms**.
 
-2.  Em **Modelos Instalados**, expanda **Visual Basic** ou **Visual C#** e selecione **Windows**.
+3.  Na **Caixa de Ferramentas**, arraste um <xref:System.Windows.Forms.DataGridView> para a superfície de userControl1.
 
-    > [!NOTE]
-    > Este tópico usa o Visual C# no código de exemplo.
-
-3.  Na lista de modelos, selecione **Biblioteca de Controle do Windows Forms**.
-
-4.  Em **Nome**, digite um nome para o suplemento. Por exemplo, **WebPerfTestResultsViewerControl**.
-
-5.  Escolha **OK**.
-
-     O projeto WebPerfTestResultsViewerControl da biblioteca de controles do Windows Forms é adicionado ao **Gerenciador de Soluções** e *UserControl1.cs* é exibido no modo de design.
-
-6.  Na **Caixa de Ferramentas**, arraste um <xref:System.Windows.Forms.DataGridView> para a superfície de userControl1.
-
-7.  Clique no glifo de marcação de ação (![Glifo de marcação inteligente](../test/media/vs_winformsmttagglyph.gif)) no canto superior direito do <xref:System.Windows.Forms.DataGridView> e siga estas etapas:
+4. Clique no glifo de marcação de ação (![Glifo de marcação inteligente](../test/media/vs_winformsmttagglyph.gif)) no canto superior direito do <xref:System.Windows.Forms.DataGridView> e siga estas etapas:
 
     1.  Escolha **Encaixar no Contêiner Pai**.
 
@@ -154,13 +133,13 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
     7.  Escolha **Fechar**.
 
-8.  Na janela **Propriedades**, altere a propriedade **(Nome)** da <xref:System.Windows.Forms.DataGridView> para **resultControlDataGridView**.
+5.  Na janela **Propriedades**, altere a propriedade **(Nome)** da <xref:System.Windows.Forms.DataGridView> para **resultControlDataGridView**.
 
-9. Clique com o botão direito do mouse na superfície de design e selecione **Exibir Código**.
+6. Clique com o botão direito do mouse na superfície de design e selecione **Exibir Código**.
 
      O arquivo *UserControl1.cs* é exibido no **Editor de Códigos**.
 
-10. Altere o nome da classe instanciada <xref:System.Windows.Forms.UserControl> de UserContro1 para resultControl:
+7. Altere o nome da classe instanciada <xref:System.Windows.Forms.UserControl> de UserContro1 para resultControl:
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
      Você adicionará um código extra ao arquivo *Connect.cs* depois.
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Adicionar um código ao WebPerfTestResultsViewerAddin
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Para adicionar um código ao suplemento do Visual Studio para estender o Visualizador de Testes de Desempenho Web
 
 1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó **Referências** do projeto WebPerfTestResultsViewerAddin e selecione **Adicionar Referência**.
 
@@ -276,8 +253,6 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
      Agora que o código foi concluído para o suplemento do Visual Studio, você precisa adicionar o método Update ao resultControl no projeto WebPerfTestResultsViewerControl.
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Adicionar código ao WebPerfTestResultsViewerControl
-
-### <a name="to-add-code-to-the-user-control"></a>Para adicionar código ao controle de usuário
 
 1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó de projeto WebPerfTestResultsViewerControl e selecione **Propriedades**.
 

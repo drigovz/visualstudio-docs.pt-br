@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867807"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355468"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Página de projetos e soluções, caixa de diálogo Opções
 
@@ -91,11 +91,11 @@ Especifica o local padrão em que o Visual Studio cria novos projetos e pastas d
 
 ### <a name="user-project-templates-location"></a>Local dos modelos de projeto do usuário
 
-Especifica o local padrão usado pela caixa de diálogo **Novo Projeto** para criar a lista de **Meus Modelos**. Para obter mais informações, confira [Como: Localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica o local padrão que é usado para procurar modelos de projeto criados pelo usuário. Para obter mais informações, confira [Como: Localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Local de modelos de item do usuário
 
-Especifica o local padrão usado pela caixa de diálogo **Adicionar Novo Item** para criar a lista de **Meus Modelos**. Para obter mais informações, confira [Como: Localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica o local padrão que é usado para procurar modelos de item criados pelo usuário. Para obter mais informações, confira [Como: Localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Consulte também
 

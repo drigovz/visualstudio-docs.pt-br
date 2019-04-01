@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070328"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342648"
 ---
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 
@@ -232,11 +232,11 @@ Vamos nos aprofundar e criar um programa simples.
 
 1. Abra o Visual Studio.
 
-   A janela de início é exibida com várias opções para clonar um repositório, abrir um projeto recente ou criar um novo projeto.
+   A janela de início é exibida com várias opções para clonar um repositório, abrir um projeto recente ou criar um projeto.
 
 1. Escolha **Criar um novo projeto**.
 
-   ![Janela Iniciar do Visual Studio para criar um novo projeto](../media/vs-2019/start-window-create-new-project.png)
+   ![Janela de início do Visual Studio para criar um projeto](../media/vs-2019/start-window-create-new-project.png)
 
    A janela **Criar um novo projeto** é aberta e mostra diversos *modelos* de projeto. Um modelo contém as configurações e os arquivos básicos necessários para um tipo de projeto fornecido.
 
@@ -244,7 +244,7 @@ Vamos nos aprofundar e criar um programa simples.
 
     ![Criar um novo projeto no Visual Studio](../media/vs-2019/create-new-project.png)
 
-1. Na janela **Configurar seu novo projeto**, insira **HelloWorld** na caixa **Nome do projeto**. Como opção, altere a localização do diretório dos arquivos de projeto e, em seguida, escolha **Criar**.
+1. Na janela **Configurar seu novo projeto**, insira **HelloWorld** na caixa **Nome do projeto**. Como opção, altere a localização do diretório dos arquivos de projeto e escolha **Criar**.
 
    ![Configurar um novo projeto no Visual Studio](../media/vs-2019/configure-new-project.png)
 

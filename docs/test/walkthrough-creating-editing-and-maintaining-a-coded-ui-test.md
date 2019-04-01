@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955057"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416387"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Passo a passo: Criar, editar e manter um teste de IU codificado
 
@@ -22,41 +22,27 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ## <a name="create-a-wpf-app"></a>Criar um aplicativo WPF
 
-1.  No menu **Arquivo**, aponte para **Novo** e selecione **Projeto**.
+1. Crie um projeto **Aplicativo WPF (.NET Framework)** e dê ao projeto o nome **SimpleWPFApp**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+     O **WPF Designer** é aberto e exibe a MainWindow do projeto.
 
-2.  No painel **Instalado**, expanda **Visual C#** e selecione **Área de Trabalho do Windows**.
+2. Se a caixa de ferramentas não estiver aberta, abra-a. Escolha o menu **Exibir** e a opção **Caixa de Ferramentas**.
 
-3.  Acima do painel central, verifique se a lista suspensa da estrutura de destino está definida como **.NET Framework 4.5**.
+3. Na seção **Todos os Controles do WPF**, arraste um controle **Button**, **CheckBox** e **ProgressBar** para a MainWindow na superfície de design.
 
-4.  No painel do meio, selecione o modelo **Aplicativo WPF**.
+4. Selecione o controle de **Botão**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para button1. Em seguida, altere o valor da propriedade **Conteúdo** de Button para Start.
 
-5.  Na caixa de texto **Nome**, digite **SimpleWPFApp**.
+5. Selecione o controle **ProgressBar**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para progressBar1. Em seguida, altere o valor da propriedade **Máximo** de **100** para **10000**.
 
-6.  Escolha a pasta em que você salvará o projeto. Na caixa de texto **Local**, digite o nome da pasta.
-
-7.  Escolha **OK**.
-
-     O **WPF Designer for Visual Studio** é aberto e exibe a MainWindow do projeto.
-
-8.  Se a caixa de ferramentas não estiver aberta, abra-a. Escolha o menu **Exibir** e a opção **Caixa de Ferramentas**.
-
-9. Na seção **Todos os Controles do WPF**, arraste um controle **Button**, **CheckBox** e **ProgressBar** para a MainWindow na superfície de design.
-
-10. Selecione o controle de **Botão**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para button1. Em seguida, altere o valor da propriedade **Conteúdo** de Button para Start.
-
-11. Selecione o controle **ProgressBar**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para progressBar1. Em seguida, altere o valor da propriedade **Máximo** de **100** para **10000**.
-
-12. Selecione o controle **Caixa de Seleção**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para checkBox1 e desmarque a propriedade **IsEnabled**.
+6. Selecione o controle **Caixa de Seleção**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para checkBox1 e desmarque a propriedade **IsEnabled**.
 
      ![Aplicativo WPF simples](../test/media/codedui_wpfapp.png)
 
-13. Clique duas vezes no controle de botão para adicionar um manipulador de eventos de clique.
+7. Clique duas vezes no controle de botão para adicionar um manipulador de eventos de clique.
 
      O *MainWindow.xmal.cs* é exibido no Editor de Códigos com o cursor no novo método button1_Click.
 
-14. Na parte superior da classe MainWindow, adicione um delegado. O delegado será usado para a barra de progresso. Para adicionar o delegado, adicione o seguinte código:
+8. Na parte superior da classe MainWindow, adicione um delegado. O delegado será usado para a barra de progresso. Para adicionar o delegado, adicione o seguinte código:
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
         }
     ```
 
-15. No método button1_Click, adicione o seguinte código:
+9. No método button1_Click, adicione o seguinte código:
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
     }
     ```
 
-16. Salve o arquivo.
+10. Salve o arquivo.
 
 ### <a name="run-the-wpf-app"></a>Executar o aplicativo WPF
 
@@ -120,22 +106,14 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Criar um teste de IU codificado para SimpleWPFApp
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **Novo Projeto**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução e escolha **Adicionar** > **Novo Projeto**.
 
-     A caixa de diálogo **Adicionar Novo Projeto** é exibida.
-
-1. No painel **Instalado**, expanda **Visual C#** e selecione **Testar**.
-
-1. No painel central, selecione o modelo **Projeto de Teste de Interface de Usuário Codificado**.
+2. Pesquise o modelo de **Projeto de Teste de IU Codificado**, selecione-o e continue pelas etapas até o projeto ser criado.
 
    > [!NOTE]
    > Se o modelo **Projeto de Teste de IU Codificado** não for exibido, será necessário [instalar o componente Teste de IU Codificado](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. Escolha **OK**.
-
-     O novo projeto de teste de IU codificado chamado **CodedUITestProject1** é adicionado à solução.
-
-     A caixa de diálogo **Gerar Código para Teste de IU Codificado** é exibida.
+     O novo projeto de teste de IU codificado chamado **CodedUITestProject1** é adicionado à sua solução e a caixa de diálogo **Gerar Código para Teste de IU Codificado** é exibida.
 
 1. Selecione a opção **Gravar ações, editar o mapa de IU ou adicionar asserções** e escolha **OK**.
 
@@ -355,7 +333,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ![link para vídeo](../data-tools/media/playvideo.gif) [Introdução aos testes de IU codificados](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>Perguntas Frequentes
+## <a name="faq"></a>Perguntas frequentes
 
 [Perguntas frequentes sobre testes de IU codificados](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 

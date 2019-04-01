@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0abf64442c6a31758f3a3c24c4268b6aee5720a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947056"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324916"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: Usar o MSBuild
 O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instruções passo a passo apresentam os componentes essenciais do MSBuild e mostram como gravar, manipular e depurar projetos do MSBuild. Você aprenderá a:
@@ -125,7 +125,7 @@ A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entra
 
    (Windows 10) Na caixa de pesquisa na barra de tarefas, comece a digitar o nome da ferramenta, como `dev` ou `developer command prompt`. Isso abre uma lista de aplicativos instalados que correspondem ao seu padrão de pesquisa.
 
-   Caso você precise encontrá-lo manualmente, o arquivo será *LaunchDevCmd.bat* na pasta *<visualstudio installation folder>\<versão>\Common7\Tools*.
+   Caso você precise encontrá-lo manualmente, o arquivo será *LaunchDevCmd.bat* na pasta *<pasta de instalação do visual studio\>\<versão>\Common7\Tools*.
 
 2. Na janela Comando, acesse a pasta que contém o arquivo de projeto, a qual, neste caso, é *D:\BuildApp\BuildApp*.
 

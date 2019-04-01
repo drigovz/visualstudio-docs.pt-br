@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983826"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475975"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Atualizar uma instalação em rede do Visual Studio
 
@@ -100,6 +102,9 @@ O vs_enterprise.exe pode ser invocado dentro do layoutDir.
 > Alguns arquivos de metadados importantes que são necessários para a opção `--verify` devem estar no cache offline do layout. Se esses arquivos de metadados estiverem ausentes, "--verify" não poderá ser executado e a instalação apresentará um erro. Se esse erro ocorrer, recrie um novo layout offline para uma pasta diferente (ou na mesma pasta de cache offline). Para fazer isso, execute o mesmo comando de layout que você usou para criar o layout offline inicial. Por exemplo, `Vs_enterprise.exe --layout <layoutDir>`.
 
 A Microsoft fornece atualizações para o Visual Studio periodicamente, portanto, o novo layout que você criar poderá não ser da mesma versão que o layout inicial.
+
+> [!NOTE]
+> A verificação funciona apenas para a versão mais recente de uma versão secundária específica do Visual Studio. Assim que uma nova versão é lançada, a verificação não funcionará para versões de nível de patch anteriores da mesma versão secundária.
 
 ## <a name="how-to-fix-a-layout"></a>Como corrigir um layout
 

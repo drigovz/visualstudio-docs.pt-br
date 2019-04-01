@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8bba4541f27a64f553c985f50dbe535b82440cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916824"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355228"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -57,13 +57,13 @@ Os recursos de depuração de modo misto incluem o seguinte, conforme explicado 
 
     É possível selecionar outros tipos de código além do **Nativo** ou em vez dele. Por exemplo, se um aplicativo gerenciado hospedar o CPython, que, por sua vez, usa módulos de extensão nativos e você desejar depurar todos os três, é possível marcar **Python**, **Nativo** e **Gerenciado** juntos para uma experiência de depuração unificada, incluindo pilhas de chamadas combinadas e a execução em etapas entre os três tempos de execução.
 
-1. Ao iniciar a depuração no modo misto pela primeira vez, você poderá ver uma caixa de diálogo **Símbolos Obrigatórios do Python** (confira [Símbolos para depuração de modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Você precisa instalar símbolos apenas uma vez para qualquer ambiente do Python. Os símbolos serão incluídos automaticamente se você instalar o suporte do Python por meio do instalador do Visual Studio 2017.
+1. Ao iniciar a depuração no modo misto pela primeira vez, você poderá ver uma caixa de diálogo **Símbolos Obrigatórios do Python** (confira [Símbolos para depuração de modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Você precisa instalar símbolos apenas uma vez para qualquer ambiente do Python. Os símbolos serão incluídos automaticamente se você instalar o suporte do Python por meio do instalador do Visual Studio (Visual Studio 2017 e posterior).
 
 1. Para disponibilizar o código-fonte para o próprio Python padrão durante a depuração, visite [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), baixe o arquivo morto apropriado para a versão e extraia-o em uma pasta. Em seguida, aponte o Visual Studio para arquivos específicos nessa pasta em qualquer ponto que for solicitado.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Habilitar a depuração de modo misto em um projeto do C/C++
 
-O Visual Studio 2017 (versão 15.5 e posterior) é compatível com a depuração de modo misto em um projeto do C/C++ (por exemplo, ao [inserir Python em outro aplicativo, conforme a descrição em python.org](https://docs.python.org/3/extending/embedding.html)). Para habilitar a depuração de modo misto, configure o projeto C/C++ para iniciar a **Depuração do Python/Nativa**:
+O Visual Studio (2017 versão 15.5 e posterior) é compatível com a depuração de modo misto em um projeto do C/C++ (por exemplo, ao [inserir Python em outro aplicativo, conforme a descrição em python.org](https://docs.python.org/3/extending/embedding.html)). Para habilitar a depuração de modo misto, configure o projeto C/C++ para iniciar a **Depuração do Python/Nativa**:
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto C/C++ e selecione **Propriedades**.
 1. Selecione a guia **Depuração**, **Depuração Nativa/do Python** em **Depurador a ser iniciado** e **OK**.
