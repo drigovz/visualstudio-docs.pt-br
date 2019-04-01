@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155518"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355546"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
@@ -31,9 +31,9 @@ Use também o **Pesquisador de Objetos** do Visual Studio (**Exibir** > **Outras
 
 O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). O Visual Studio 2017 versão 15.7 e posteriores também dão suporte a [dicas de tipo](#type-hints).
 
-Para melhorar o desempenho, o IntelliSense no **Visual Studio 2017 versão 15.5** e anteriores depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do **Gerenciador de Soluções**) na guia **IntelliSense** (confira [Referência da janela Ambientes](python-environments-window-tab-reference.md#intellisense-tab)).
+Para melhorar o desempenho, o IntelliSense no Visual Studio 2017 versão 15.5 e anteriores depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do **Gerenciador de Soluções**) na guia **IntelliSense** (confira [Referência da janela Ambientes](python-environments-window-tab-reference.md#intellisense-tab)).
 
-O **Visual Studio 2017 versão 15.6** e posterior usa um modo diferente para fornecer as conclusões de IntelliSense que não são dependentes do banco de dados.
+O Visual Studio 2017 versão 15.6 e posterior usa um modo diferente para fornecer as conclusões de IntelliSense que não são dependentes do banco de dados.
 
 ### <a name="completions"></a>Preenchimentos
 

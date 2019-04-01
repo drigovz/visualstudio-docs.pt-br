@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926249"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415895"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Como: Criar um plug-in do gravador
 
@@ -35,34 +35,24 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
 
 1.  Abra uma solução que contenha o projeto de teste de carga e desempenho na Web com o teste de desempenho na Web para o qual você deseja criar um plug-in de gravação.
 
-2.  No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, selecione **Adicionar** e, em seguida, escolha **Novo Projeto**.
+2.  Adicione um novo projeto de **Biblioteca de Classes** à solução.
 
-     A caixa de diálogo **Adicionar Novo Projeto** é exibida.
-
-3.  Em **Modelos Instalados**, selecione **Visual C#**.
-
-4.  Na lista de modelos, selecione **Biblioteca de Classes**.
-
-5.  Na caixa de texto **Nome**, digite um nome para o plug-in de gravador.
-
-     A biblioteca de classes é adicionada ao **Gerenciador de Soluções** e a nova classe é aberta no **Editor de Códigos**.
-
-6.  No **Gerenciador de Soluções**, na nova pasta de projeto da biblioteca de classes, clique com o botão direito do mouse na pasta **Referências** e selecione **Adicionar Referência**.
+3.  No **Gerenciador de Soluções**, na nova pasta de projeto da biblioteca de classes, clique com o botão direito do mouse na pasta **Referências** e selecione **Adicionar Referência**.
 
     > [!TIP]
     > Um exemplo de uma nova pasta de projeto de biblioteca de classes é **RecorderPlugins**.
 
      A caixa de diálogo **Adicionar Referência** é exibida.
 
-7.  Selecione a guia **.NET**.
+4.  Selecione a guia **.NET**.
 
-8.  Role para baixo, selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework** e escolha **OK**.
+5.  Role para baixo, selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework** e escolha **OK**.
 
      O **Microsoft.VisualStudio.QualityTools.WebTestFramework** é adicionado à pasta **Referências** do **Gerenciador de Soluções**.
 
-9. Escreva o código para o plug-in de gravação. Primeiro, crie uma nova classe pública que derive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
+6. Escreva o código para o plug-in de gravação. Primeiro, crie uma nova classe pública que derive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Substituir o método <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
+7. Substituir o método <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
     > [!NOTE]
     > Se você modificar o teste de desempenho na Web, também será preciso definir a propriedade <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> como verdadeira: `e.RecordedWebTestModified = true;`
 
-11. Adicione mais código de acordo com o que você deseja que o plug-in de gravação execute depois da gravação da Web. Por exemplo, você pode adicionar código para manipular a correlação personalizada, conforme mostrado no exemplo abaixo. Também é possível criar um plug-in de gravação para tarefas como converter comentários em transações ou adicionar regras de validação ao teste de desempenho na Web.
+8. Adicione mais código de acordo com o que você deseja que o plug-in de gravação execute depois da gravação da Web. Por exemplo, você pode adicionar código para manipular a correlação personalizada, conforme mostrado no exemplo abaixo. Também é possível criar um plug-in de gravação para tarefas como converter comentários em transações ou adicionar regras de validação ao teste de desempenho na Web.
 
-12. No menu **Build**, escolha **Compilar \<nome do projeto de biblioteca de classes>**.
+9. No menu **Build**, escolha **Compilar \<nome do projeto de biblioteca de classes>**.
 
-13. Em seguida, implante o plug-in de gravador para que ele seja registrado com o Visual Studio.
+Em seguida, implante o plug-in de gravador para que ele seja registrado com o Visual Studio.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Implantar o plug-in de gravação
 
@@ -96,7 +86,7 @@ Depois de compilar o plug-in de gravação, coloque a DLL resultante em um dos d
 > [!WARNING]
 > Depois de copiar o plug-in de gravador em um dos dois locais, você deverá reiniciar o Visual Studio para que ele seja registrado.
 
-### <a name="to-execute-the-recorder-plug-in"></a>Para executar o plug-in de gravação
+### <a name="execute-the-recorder-plug-in"></a>Executar o plug-in de gravador
 
 1.  Crie um novo teste de desempenho na Web.
 
@@ -123,9 +113,7 @@ Este exemplo demonstra como criar um plug-in personalizado de gravação de test
 > [!NOTE]
 > Uma listagem completa do código de exemplo está localizada na parte final deste tópico.
 
-**Revisando o código de exemplo**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Iterar pelo resultado para encontrar a primeira página com ReportSession
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Iterar pelo resultado para encontrar a primeira página com ReportSession
 
 Esta parte do exemplo de código é iterada em cada objeto gravado e pesquisa o corpo da resposta em busca de ReportSession.
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>Adicionar uma regra de extração
+### <a name="add-an-extraction-rule"></a>Adicionar uma regra de extração
 
 Agora que uma resposta foi encontrada, você precisa adicionar uma regra de extração. Esta parte do exemplo de código cria a regra de extração usando a classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> e, em seguida, localiza a solicitação correta no teste de desempenho na Web à qual adicionar a regra de extração. Cada objeto de resultado tem uma nova propriedade DeclarativeWebTestItemId adicionada, que é a que está sendo usada no código para obtenção da solicitação correta no teste de desempenho na Web.
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>Substituir parâmetros da cadeia de caracteres de consulta
+### <a name="replace-query-string-parameters"></a>Substituir parâmetros da cadeia de caracteres de consulta
 
 Agora o código localiza os parâmetros da cadeia de caracteres de consulta que têm ReportSession como o nome e altera o valor para {{SessionId}}, conforme mostrado nesta parte do exemplo de código:
 

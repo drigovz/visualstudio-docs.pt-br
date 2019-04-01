@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925235"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415597"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes
 
 É recomendável que você crie testes de unidade para ajudar a manter seu código funcionando corretamente muitas etapas incrementais de desenvolvimento. Há várias estruturas que você pode usar para escrever testes de unidade, incluindo alguns desenvolvidos por terceiros. Algumas estruturas de teste são especializadas para testes em diferentes idiomas ou plataformas. O Gerenciador de Testes fornece uma interface única para testes de unidade em qualquer uma dessas estruturas. Adaptadores estão disponíveis para as estruturas comumente usadas e você pode escrever seus próprios adaptadores para outras estruturas.
 
- O Gerenciador de Testes substitui as janelas de teste de unidade encontradas em edições anteriores do Visual Studio. Suas vantagens incluem:
+O Gerenciador de Testes substitui as janelas de teste de unidade encontradas em edições anteriores do Visual Studio. Suas vantagens incluem:
 
--   Executar o .NET, não gerenciado, o banco de dados e outros tipos de testes usando uma única interface.
+- Executar o .NET, não gerenciado, o banco de dados e outros tipos de testes usando uma única interface.
 
--   Use a estrutura de teste de unidade de sua escolha, como NUnit ou MSTest estruturas.
+- Use a estrutura de teste de unidade de sua escolha, como NUnit ou MSTest estruturas.
 
--   Consulte todas as informações que você precisa em uma janela.
+- Consulte todas as informações que você precisa em uma janela.
 
 ## <a name="use-test-explorer"></a>Usar o Gerenciador de Testes
- ![Gerenciador de Testes de Unidade mostrando o botão Executar Todos](../test/media/unittestexplorer-beta-.png)
+
+![Gerenciador de Testes mostrando o botão Executar Todos](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para executar testes de unidade usando o Gerenciador de Testes
 
-1. Crie testes de unidade que usam as estruturas de teste de sua escolha.
+1. Crie testes de unidade que usam as estruturas de teste de sua escolha. Por exemplo, para criar um teste que usa a estrutura MSTest:
 
-    Por exemplo, para criar um teste que usa a estrutura MSTest:
+   1. Crie um **Projeto de Teste de Unidade** do C#, Visual Basic ou C++.
 
-   1.  Criar um projeto de teste.
-
-        Na caixa de diálogo **Novo Projeto**, expanda o **Visual Basic**, o **Visual C#** ou o **Visual C++** e escolha **Teste**.
-
-        Selecione **Projeto de teste de unidade**.
-
-   2.  Grave cada teste de unidade como um método. Prefixe cada método de teste com o atributo `[TestMethod]`.
+   2. Grave cada teste de unidade como um método. Prefixe cada método de teste com o atributo `[TestMethod]`.
 
 2. Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
@@ -66,19 +61,17 @@ ms.locfileid: "55925235"
 > [!NOTE]
 > Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Passo a passo: Usando testes de unidade para desenvolver um método
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Passo a passo: Usando testes de unidade para desenvolver um método
- Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
+Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Criar o teste e o método
 
-1. Crie um projeto de biblioteca de classes do Visual C#. Esse projeto conterá o código que queremos fornecer. Neste exemplo, o nome usado é `MyMath`.
+1. Crie um projeto de **Biblioteca de Classes** do C#. Esse projeto conterá o código que queremos fornecer. Neste exemplo, o nome usado é `MyMath`.
 
-2. Criar um projeto de teste.
+2. Crie um **Projeto de Teste de Unidade**.
 
-   -   Na caixa de diálogo **Novo Projeto**, escolha **Visual C#** > **Teste** e, em seguida, escolha **Projeto de Teste de Unidade**.
-
-        ![Novos projetos de teste e código](../test/media/unittestexplorerwalk1.png)
+   ![Novos projetos de teste e código](../test/media/unittestexplorerwalk1.png)
 
 3. Escreva um método de teste básico. Verifique o resultado obtido para uma entrada específica:
 

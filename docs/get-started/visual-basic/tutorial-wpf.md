@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ecfb6f144b632f2c332d73e90a8deca08e8c03c6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155531"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324247"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: como criar um aplicativo simples com o Visual Basic
 
@@ -35,7 +35,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range="vs-2017"
 
-Ao iniciar o Visual Studio pela primeira vez, você será solicitado a entrar. Esta etapa é opcional neste tutorial. Em seguida, você poderá ver uma caixa de diálogo que solicita a escolha das configurações de desenvolvimento e o tema de cores. Mantenha os padrões e escolha **Iniciar o Visual Studio**.
+Ao abrir o Visual Studio pela primeira vez, você será solicitado a entrar. Esta etapa é opcional neste tutorial. Em seguida, você poderá ver uma caixa de diálogo que solicita a escolha das configurações de desenvolvimento e o tema de cores. Mantenha os padrões e escolha **Iniciar o Visual Studio**.
 
 ![Caixa de diálogo Escolher configurações](../media/exploreide-settings.png)
 
@@ -47,7 +47,7 @@ Depois que o Visual Studio for iniciado, você verá as janelas de ferramentas, 
 
 ::: moniker range=">=vs-2019"
 
-Quando você inicia o Visual Studio, a janela **Iniciar** é aberta primeiro. Selecione **Continuar sem código** para abrir o ambiente de desenvolvimento. Você verá as janelas de ferramentas, os menus e as barras de ferramentas, além do espaço da janela principal. As janelas de ferramentas estão encaixadas nos lados esquerdo e direito da janela do aplicativo, com **Início Rápido**, a barra de menus e a barra de ferramentas padrão na parte superior. Quando você carrega uma solução ou um projeto, os editores e designers são exibidos no espaço central da janela do aplicativo. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
+Quando você inicia o Visual Studio, a janela de início é aberta primeiro. Selecione **Continuar sem código** para abrir o ambiente de desenvolvimento. Você verá as janelas de ferramentas, os menus e as barras de ferramentas, além do espaço da janela principal. As janelas de ferramentas estão encaixadas nos lados esquerdo e direito da janela do aplicativo, com **Início Rápido**, a barra de menus e a barra de ferramentas padrão na parte superior. Quando você carrega uma solução ou um projeto, os editores e designers são exibidos no espaço central da janela do aplicativo. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
 
 ::: moniker-end
 

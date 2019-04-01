@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 12fcc2813b36968270e0eeba968a5572f904fc1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946932"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323195"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testando o desempenho de um serviço de nuvem
 ## <a name="overview"></a>Visão geral
@@ -101,7 +101,7 @@ Uma sessão de criação de perfil é gerada para cada instância de uma funçã
 2. Escolha o nó de Computação do Azure e escolha o nó de implantação do Azure para o serviço de nuvem que você selecionou para o perfil ao publicar no Visual Studio.
 3. Para exibir relatórios de criação de perfil para uma instância, escolha a função no serviço, abra o menu de atalho para uma instância específica e, em seguida, escolha **Exibir Relatório de Criação de Perfil**.
 
-    O relatório, um arquivo .vsp, agora é baixado do Azure e o status do download é exibido no log de atividades do Azure. Quando o download é concluído, o relatório de criação de perfil é exibido em uma guia no editor do Visual Studio denominada <Role name>*<Instance Number>*<identifier>.vsp. Serão exibidos dados de resumo para o relatório.
+    O relatório, um arquivo .vsp, agora é baixado do Azure e o status do download é exibido no log de atividades do Azure. Quando o download é concluído, o relatório de criação de perfil é exibido em uma guia no editor do Visual Studio denominada <Nome da função\>*<Número da instância\>*<identificador\>.vsp. Serão exibidos dados de resumo para o relatório.
 4. Para mostrar diferentes modos de exibição do relatório, na lista Modo de Exibição Atual, escolha o tipo de exibição desejado. Para saber mais, consulte [Exibições de relatório de ferramentas de criação de perfil](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Próximas etapas

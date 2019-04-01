@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ac55d7513fd6670e30c9fa2097a5d38a96a92e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955070"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324903"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 
@@ -30,7 +30,7 @@ Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, se
 
    1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto do programa que você está testando e, em seguida, escolha **Propriedades** > **Propriedades de Configuração** > **Diretórios VC++**.
 
-   2. Clique na seta para baixo nas linhas a seguir e escolha **<Edit>**:
+   2. Clique na seta para baixo nas linhas a seguir e escolha **\<Editar>**:
 
 
       | Diretório | Propriedade |

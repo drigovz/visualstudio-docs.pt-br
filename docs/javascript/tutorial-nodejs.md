@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48fe46b8f46c9ea3f6c14ebe44315eafa1c56d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070315"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355559"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 
@@ -75,15 +75,13 @@ Neste tutorial, você começará com um projeto simples que contém o código pa
 
 1. Abra o Visual Studio.
 
-1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
-
 1. Crie um novo projeto.
 
     ::: moniker range=">=vs-2019"
-    Na caixa de diálogo **Criar um novo projeto**, digite **javascript** na caixa de pesquisa para filtrar os resultados e escolha **Aplicativo Azure Node.js Express 4 básico** e escolha **Avançar**. Em seguida, escolha **Criar**.
+    Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js** e, em seguida, escolha **Criar um novo Aplicativo Básico Azure Node.js Express 4** (JavaScript). Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
     ::: moniker-end
     Se você não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, adicione a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597524"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323718"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 
@@ -67,7 +67,7 @@ Para obter mais informações, consulte [Pesquisando e filtrando a guia de Event
 
 ## <a name="collect-profiling-data-without-debugging"></a>Coletar dados de criação de perfil sem depuração
 
-Para coletar dados de desempenho sem depuração, é possível executar as ferramentas do **Criador de Perfil de Desempenho**. Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. É possível iniciar o Visual Studio como administrador ou executar as ferramentas como administrador quando inicia a sessão de diagnóstico.
+Para coletar dados de desempenho sem depuração, é possível executar as ferramentas do **Criador de Perfil de Desempenho**. Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. É possível abrir o Visual Studio como administrador ou executar as ferramentas como administrador quando inicia a sessão de diagnóstico.
 
 1. Com um projeto aberto no Visual Studio, selecione **Depurar** > **Criador de Perfil de Desempenho** ou pressione **Alt**+**F2**.
 

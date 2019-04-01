@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07081d8b02e4f884ae7ec983e4c97dcb8bfe672
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938729"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324715"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como: Especificar eventos de build (Visual Basic)
 
@@ -115,7 +115,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
    End Sub
    ```
 
-   O comando utiliza dois argumentos. O primeiro argumento é o caminho para o manifesto do aplicativo (ou seja, a pasta na qual o processo de build cria o manifesto, geralmente, *<Projectname>.publish*). O segundo argumento é a nova versão do sistema operacional.
+   O comando utiliza dois argumentos. O primeiro argumento é o caminho para o manifesto do aplicativo (ou seja, a pasta na qual o processo de build cria o manifesto, geralmente, *\<NomeDoProjeto>.publish*). O segundo argumento é a nova versão do sistema operacional.
 
 5. No menu **Compilar**, clique em **Compilar Solução**.
 

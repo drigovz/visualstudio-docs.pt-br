@@ -8,12 +8,12 @@ ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c60aa8284dd19401fb2f4b6db3dc0ec0fc9c7942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948843"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416078"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar configurações de registro em log de testes de carga
 
@@ -26,7 +26,7 @@ O *controlador de teste* armazena em spool todos os dados de exemplo do teste de
 |Tarefa|Tópicos associados|
 |-|-----------------------|
 |**Salvar os logs se um teste de carga falhar:** Você poderá especificar se deseja salvar o log de teste sempre que um teste de carga falhar.|-   [Como: Especificar se as falhas de teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Definir o tamanho máximo de arquivo para o arquivo de log:** Você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho máximo de arquivo que você deseja usar para o arquivo de log.|[Como: Especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Definir o tamanho máximo de arquivo para o arquivo de log:** Você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho máximo de arquivo que você deseja usar para o arquivo de log.|Modifique `<add key="LogSizeLimitInMegs" value="20"/>` no arquivo de configuração XML *QTCcontroller.exe.config*.|
 
 ## <a name="see-also"></a>Consulte também
 

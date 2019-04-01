@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983384"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268541"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
@@ -141,7 +141,7 @@ Quando essas notificações forem exibidas, você poderá ignorar a notificaçã
 
 Quando você instala um exemplo online, a solução é armazenada em dois locais:
 
-- Uma cópia funcional é armazenada no local especificado na caixa de diálogo **Novo Projeto**.
+- Uma cópia funcional é armazenada no local que você especificou quando criou o projeto.
 
 - Uma cópia mestra separada é armazenada em seu computador.
 
@@ -163,7 +163,7 @@ Quando você instala um exemplo online, a solução é armazenada em dois locais
 
 - Instale os Pacotes de Exemplos, que são coleções de exemplos que se relacionam a uma tecnologia ou um recurso.
 
-- Instalar exemplos online individuais. (Também é possível fazer isso na caixa de diálogo **Novo Projeto**.)
+- Instalar exemplos online individuais.
 
 - Exibir notificações de atualização quando as alterações do código-fonte são publicadas para exemplos instalados.
 
@@ -173,7 +173,7 @@ Quando você instala um exemplo online, a solução é armazenada em dois locais
 
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalando sem usar a caixa de diálogo Extensões e Atualizações
 
-As extensões que foram agrupadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo *.vsix* clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo *.vsix* clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>A caixa de diálogo Extensões e Atualizações não é compatível com os tipos de extensão
 
@@ -188,7 +188,7 @@ O Visual Studio continua dando suporte a extensões instaladas pelo MSI (Microso
 
 ## <a name="installing-without-using-the-manage-extensions-dialog-box"></a>Instalar sem usar a caixa de diálogo Gerenciar Extensões
 
-As extensões que foram agrupadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Gerenciar Extensões** não pode detectar esses arquivos, mas é possível instalar um arquivo *.vsix* clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Gerenciar Extensões** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Gerenciar Extensões** não pode detectar esses arquivos, mas é possível instalar um arquivo *.vsix* clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Gerenciar Extensões** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 ## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>A caixa de diálogo Gerenciar Extensões não é compatível com os tipos de extensão
 

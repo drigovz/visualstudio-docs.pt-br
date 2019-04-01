@@ -1,5 +1,5 @@
 ---
-title: Criando um projeto de serviço de nuvem do Azure
+title: Criar um projeto de serviço de nuvem do Azure
 description: Saiba como criar um projeto de serviço de nuvem do Azure com o Visual Studio
 author: ghogen
 manager: jillfra
@@ -7,22 +7,24 @@ assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 03/21/2017
+ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 2ef17bab90ae1f2c9df66a85a6a78b1494bd5c3d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926951"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323812"
 ---
-# <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Criando um projeto de serviço de nuvem do Azure com o Visual Studio
+# <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Criar um projeto de serviço de nuvem do Azure com o Visual Studio
+
 As Ferramentas do Azure para Visual Studio fornecem um modelo de projeto que permite criar um [serviço de nuvem do Azure](/azure/cloud-services/cloud-services-choose-me), que é um serviço simples do Azure para fins gerais. Após a criação do projeto, o Visual Studio permite configurar, depurar e implantar o serviço de nuvem no Azure.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Etapas para criar um projeto de serviço de nuvem do Azure no Visual Studio
 Esta seção explica como criar um projeto de serviço de nuvem do Azure no Visual Studio com uma ou mais funções web.
 
-1. Inicie o Visual Studio como administrador.
+::: moniker range="vs-2017"
+1. Abra o Visual Studio como um administrador.
 
 1. No menu principal, selecione **Arquivo** > **Novo** > **Projeto**.
 
@@ -35,6 +37,18 @@ Esta seção explica como criar um projeto de serviço de nuvem do Azure no Visu
 1. Insira um nome e local para seu projeto e um nome para a solução.
 
 1. Selecione **OK**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Na janela de início, escolha **Criar um novo projeto**.
+
+1. Na caixa de pesquisa, digite *Nuvem* e, em seguida, escolha **Serviço de Nuvem do Azure**.
+
+   ![Novo serviço de nuvem do Azure](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
+
+1. Dê um nome ao projeto e escolha **Criar**.
+
+   ![Dê um nome ao projeto](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
+::: moniker-end
 
 1. Na caixa de diálogo **Novo Serviço de Nuvem do Microsoft Azure**, selecione as funções que você deseja adicionar e escolha o botão de seta para a direita para adicioná-las à solução.
 

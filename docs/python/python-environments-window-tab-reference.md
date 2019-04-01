@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195200"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355770"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -60,7 +60,7 @@ Como você janelas interativas no fluxo de trabalho diário, provavelmente desen
 
 Os scripts de inicialização contêm o código que a janela **Interativa** carrega e executa automaticamente, incluindo importações, definições de função e literalmente qualquer outra coisa. Esses scripts são referenciados de duas maneiras:
 
-1. Quando você instala um ambiente, o Visual Studio cria uma pasta *Documents\Visual Studio 2017\Python Scripts\\\<environment>* em que &lt;environment&gt; corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela **Interativa** para esse ambiente, ela carrega e executa qualquer arquivo *.py* que for encontrado aqui em ordem alfabética.
+1. Quando você instala um ambiente, o Visual Studio cria uma pasta *Documents\Visual Studio <version>\Python Scripts\\\<ambiente>*, em que &lt;versão&gt; é a versão do Visual Studio (tal como 2017 ou 2019) e &lt;ambiente&gt; corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela **Interativa** para esse ambiente, ela carrega e executa qualquer arquivo *.py* que for encontrado aqui em ordem alfabética.
 
 1. O controle **Scripts** na guia **Ferramentas** > **Opções** > **Python** > **Janelas Interativas** (confira [Opções de janelas Interativas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) destina-se a especificar uma pasta adicional para os scripts de inicialização que estão carregados e são executados em todos os ambientes. No entanto, esse recurso não funciona no momento.
 
@@ -156,8 +156,8 @@ Mostra o status atual do banco de dados de preenchimento do IntelliSense:
 
 ![Guia IntelliSense de Ambientes do Python](media/environments/environments-intellisense-tab.png)
 
-- No **Visual Studio 2017 versão 15.5** e anteriores, as conclusões do IntelliSense dependem de um banco de dados que é compilado para essa biblioteca. A criação do banco de dados é feita em segundo plano quando uma biblioteca é instalada, mas pode levar algum tempo e não pode ser concluída quando você começa a escrever código.
-- O **Visual Studio 2017 versão 15.6** e versões posteriores usam um método mais rápido para fornecer conclusões que não dependem do banco de dados por padrão. Por esse motivo, a guia é rotulada **IntelliSense [banco de dados desabilitado]**. É possível habilitar o banco de dados desmarcando a opção **Ferramentas** > **Opções** > **Python** > **Experimental** > **Usar novo estilo de IntelliSense para ambientes**.
+- No Visual Studio 2017 versão 15.5 e anteriores, as conclusões do IntelliSense dependem de um banco de dados que é compilado para essa biblioteca. A criação do banco de dados é feita em segundo plano quando uma biblioteca é instalada, mas pode levar algum tempo e não pode ser concluída quando você começa a escrever código.
+- O Visual Studio 2017 versão 15.6 e versões posteriores usam um método mais rápido para fornecer conclusões que não dependem do banco de dados por padrão. Por esse motivo, a guia é rotulada **IntelliSense [banco de dados desabilitado]**. É possível habilitar o banco de dados desmarcando a opção **Ferramentas** > **Opções** > **Python** > **Experimental** > **Usar novo estilo de IntelliSense para ambientes**.
 
 Quando o Visual Studio detecta um novo ambiente (ou você adiciona um), ele começa a compilar o banco de dados automaticamente, analisando os arquivos de origem da biblioteca. Esse processo pode levar de um minuto a uma hora ou mais, dependendo do que está instalado. (O Anaconda, por exemplo, é fornecido com várias bibliotecas e leva algum tempo para compilar o banco de dados.) Depois de concluído, você obtém um IntelliSense detalhado não precisa atualizar o banco de dados novamente (com o botão **Atualizar Banco de Dados**) quando instalar mais bibliotecas.
 

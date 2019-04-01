@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069652"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415532"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -43,24 +43,33 @@ Para obter informações sobre como executar testes em uma linha de comando, con
 
    A caixa de diálogo **Novo Projeto** é exibida.
 
+3. Escolha modelo de projeto da **Biblioteca de Classes** do C#.
+
+4. Dê ao projeto o nome **Bank** e clique em **OK**.
+
+   O projeto Bank é criado e exibido no **Gerenciador de Soluções** com o arquivo *Class1.cs* aberto no editor de códigos.
+
+   > [!NOTE]
+   > Se *Class1.cs* não estiver aberto no Editor de Códigos, clique duas vezes no arquivo *Class1.cs* no **Gerenciador de Soluções** para abri-lo.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
 1. Abra o Visual Studio.
 
-2. Na tela inicial, selecione **Criar um novo projeto**.
+2. Na tela Iniciar, selecione **Criar um novo projeto**.
 
-::: moniker-end
+3. Pesquise o modelo de projeto **Biblioteca de Classes** do C#, selecione-o e, em seguida, clique em **Avançar**.
 
-3. Escolha modelo de projeto da Biblioteca de Classes do C#.
-
-4. Nomeie o projeto como **Bank** e clique em **OK** ou **Criar**.
+4. Dê ao projeto o nome **Bank** e clique em **Criar**.
 
    O projeto Bank é criado e exibido no **Gerenciador de Soluções** com o arquivo *Class1.cs* aberto no editor de códigos.
 
    > [!NOTE]
    > Se *Class1.cs* não estiver aberto no Editor de Códigos, clique duas vezes no arquivo *Class1.cs* no **Gerenciador de Soluções** para abri-lo.
+
+::: moniker-end
 
 5. Copie o código-fonte do [Projeto de exemplo para criação de testes de unidade](../test/sample-project-for-creating-unit-tests.md) e substitua o conteúdo original de *Class1.cs* pelo código copiado.
 
@@ -93,9 +102,9 @@ public void Debit(double amount)
 1. No menu **Arquivo**, selecione **Adicionar** > **Novo Projeto**.
 
    > [!TIP]
-   > Há duas outras maneiras de adicionar mais um projeto a uma solução existente. Você pode clicar com o botão direito do mouse na solução no **Gerenciador de Soluções** e escolher **Adicionar** > **Novo Projeto**. Ou você pode selecionar **Arquivo** > **Novo** > **Projeto** e, em seguida, na caixa de diálogo **Novo Projeto**, selecionar a opção **Adicionar à solução**:
-   >
-   > ![Opção Adicionar à solução na caixa de diálogo Novo Projeto](media/add-to-solution.png)
+   > Você também pode clicar com o botão direito do mouse na solução no **Gerenciador de Soluções** e escolher **Adicionar** > **Novo Projeto**.
+
+::: moniker range="vs-2017"
 
 2. Na caixa de diálogo **Novo Projeto**, expanda **Instalado**, expanda **Visual C#** e, em seguida, escolha **Teste**.
 
@@ -104,6 +113,20 @@ public void Debit(double amount)
 4. Na caixa **Nome**, insira `BankTests` e, em seguida, selecione **OK**.
 
    O projeto **BankTests** é adicionado à solução **Bank**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Pesquise o modelo de **Projeto de Teste de Unidade** do C#, selecione-o e, em seguida, clique em **Avançar**.
+
+3. Nomeie o projeto `BankTests`.
+
+4. Clique em **Criar**.
+
+   O projeto **BankTests** é adicionado à solução **Bank**.
+
+::: moniker-end
 
 5. No projeto **BankTests** adicione uma referência ao projeto **Bank**.
 

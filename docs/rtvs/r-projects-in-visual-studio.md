@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936181"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324780"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Criar projetos do R no Visual Studio
 
@@ -23,9 +23,9 @@ Os projetos são sempre gerenciados em uma *solução* do Visual Studio, que pod
 
 ## <a name="creating-a-new-r-project"></a>Criando um novo projeto R
 
-1. Inicie o Visual Studio.
-1. Escolha **Arquivo > Novo > Projeto...** (**Ctrl**+**Shift**+**N**)
-1. Selecione "Projeto R" em **Modelos > R**, dê ao projeto um nome e um local e selecione **OK**:
+1. Abra o Visual Studio.
+1. Escolha **Arquivo > Novo > Projeto** (**Ctrl**+**Shift**+**N**)
+1. Selecione "Projeto R" em **Modelos** > **R**, dê ao projeto um nome e um local e selecione **OK**:
 
     ![Caixa de diálogo Novo Projeto para R no Visual Studio (RTVS no VS2017)](media/getting-started-01-new-project.png)
 

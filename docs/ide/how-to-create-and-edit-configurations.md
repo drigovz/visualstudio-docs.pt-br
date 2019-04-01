@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928420"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268640"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Como: Criar e editar configurações
 
@@ -46,17 +46,13 @@ Na caixa de diálogo **Configuration Manager** é possível usar a lista suspens
 
  Depois de definir as configurações desejadas, é possível definir as propriedades do projeto adequadas para essas configurações.
 
-### <a name="to-set-properties-based-on-configurations"></a>Para definir as propriedades com base nas configurações
+### <a name="set-properties-based-on-configurations"></a>Definir as propriedades com base nas configurações
 
--   No **Gerenciador de Soluções**, abra o menu de atalho para um projeto e, em seguida, escolha **Propriedades**.
+Para definir as propriedades com base nas configurações, no **Gerenciador de Soluções**, abra o menu de atalho para um projeto e, em seguida, escolha **Propriedades**. É possível definir propriedades para suas configurações. Por exemplo, para uma Configuração de versão, é possível especificar se o código é otimizado quando a solução é criada, e para uma Configuração de depuração, é possível especificar se o símbolo de compilação condicional `DEBUG` está incluído.
 
-     A janela **Páginas de Propriedades** é aberta.
+Para obter mais informações sobre as configurações da página de propriedades, consulte [Gerenciar propriedades de solução e de projeto](../ide/managing-project-and-solution-properties.md).
 
-     É possível definir propriedades para suas configurações. Por exemplo, para uma Configuração de versão, é possível especificar se o código é otimizado quando a solução é criada, e para uma Configuração de depuração, é possível especificar se o símbolo de compilação condicional `DEBUG` está incluído. Para obter mais informações sobre as configurações da página de propriedades, consulte [Gerenciar propriedades de solução e de projeto](../ide/managing-project-and-solution-properties.md).
-
-## <a name="create-and-modify-project-configurations"></a>Criar e modificar configurações de projeto
-
-### <a name="to-create-a-project-configuration"></a>Para criar uma configuração de projeto
+## <a name="create-a-project-configuration"></a>Criar uma configuração de projeto
 
 1.  Abra a caixa de diálogo **Configuration Manager**.
 
@@ -72,7 +68,7 @@ Na caixa de diálogo **Configuration Manager** é possível usar a lista suspens
 
 6.  Para criar uma configuração em toda a solução ao mesmo tempo, a marque a caixa de seleção **Criar nova configuração de solução**.
 
-### <a name="to-rename-a-project-configuration"></a>Para renomear uma configuração de projeto
+## <a name="rename-a-project-configuration"></a>Renomear uma configuração de projeto
 
 1.  Abra a caixa de diálogo **Configuration Manager**.
 

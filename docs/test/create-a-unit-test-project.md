@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949428"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416130"
 ---
 # <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
 
@@ -23,11 +23,23 @@ Geralmente, os testes de unidade refletem a estrutura do código que está sendo
 
 ## <a name="to-create-a-unit-test-project"></a>Para criar um projeto de teste de unidade
 
-1. No menu **Arquivo**, escolha **Novo** e, em seguida, clique em **Projeto**. Ou pressione **Ctrl**+**Shift**+**N**.
+1. No menu **Arquivo**, escolha **Novo** > **Projeto** ou pressione **Ctrl**+**Shift**+**N**.
+
+::: moniker range="vs-2017"
 
 2. Na caixa de diálogo **Novo Projeto**, expanda o nó **Instalado**, escolha a linguagem que deseja usar para o projeto de teste e clique em **Testar**.
 
 3. Para usar uma das estruturas de teste de unidade da Microsoft, escolha **Projeto de Teste de Unidade** na lista de modelos de projeto. Caso contrário, escolha o modelo de projeto da estrutura de teste de unidade que você deseja usar. Nomeie o projeto e selecione **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Na página **Criar um novo projeto**, digite **teste de unidade** na caixa de pesquisa. Selecione o modelo de **Projeto de Teste de Unidade (.NET Framework)** e clique em **Avançar**.
+
+3. Na página **Configurar seu novo projeto**, insira um nome para o projeto e clique em **Criar**.
+
+::: moniker-end
 
 4. No projeto de teste de unidade, adicione uma referência ao código que está sendo testado. Para adicionar uma referência a um projeto de código na mesma solução:
 
