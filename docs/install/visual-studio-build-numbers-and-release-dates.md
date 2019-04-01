@@ -1,23 +1,25 @@
 ---
 title: Números de build e datas de lançamento do Visual Studio
 titleSuffix: ''
-description: Uma lista das versões lançadas e dos números de build do Visual Studio 2017 e posterior, classificados por data.
+description: Uma lista com as versões lançadas e números de build do Visual Studio, classificadas por data.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3e88054d497bda068585b7bc58787ee3058bcb71
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194973"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476079"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -29,6 +31,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.10 | Versão | 25 de março de 2019 | 15.9.28307.557 |
 | 15.9.9 | Versão | 12 de março de 2019 | 15.9.28307.518 |
 | 15.0.21 | Versão | 12 de março de 2019 | 15.0.26228.76 |
 | 15.9.8 | Versão | 5 de março de 2019 | 15.9.28307.481 |
@@ -189,6 +192,8 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | RC.3 (versão Release Candidate 3) | 19 de março de 2019 | 16.0.28714.193 |
+| 16.0.0 | Preview 4.3 | 19 de março de 2019 | 16.0.28714.193 |
 | 16.0.0 | RC.2 (versão Release Candidate 2) | 12 de março de 2019 | 16.0.28711.60 |
 | 16.0.0 | Versão prévia 4.2 | 12 de março de 2019 | 16.0.28711.60 |
 | 16.0.0 | Versão Release Candidate 1 Svc1 (RC.1 Svc1) | 6 de março de 2019 | 16.0.28705.295 |

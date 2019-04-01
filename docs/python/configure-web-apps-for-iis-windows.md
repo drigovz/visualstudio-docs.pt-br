@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 88717998e22ffad028ce3fd7e0a2304de3e779d6
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 547c92cdb892c3a087301fb527d069dacfaccd8e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323556"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355443"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurar aplicativos Web do Python para o IIS
 
@@ -37,7 +37,7 @@ Ao usar um host dedicado, você pode usar o ambiente global do Python para execu
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Configurar o web.config para apontar para o interpretador do Python
 
-O arquivo *web.config* do aplicativo instrui o servidor Web do IIS (7 ou posterior) em execução no Windows sobre como ele deve tratar as solicitações do Python por meio de HttpPlatform (recomendado) ou FastCGI. As versões do Visual Studio 2015 e anterior fazem essas modificações automaticamente. Ao usar o Visual Studio 2017, você deve modificar *web.config* manualmente.
+O arquivo *web.config* do aplicativo instrui o servidor Web do IIS (7 ou posterior) em execução no Windows sobre como ele deve tratar as solicitações do Python por meio de HttpPlatform (recomendado) ou FastCGI. As versões do Visual Studio 2015 e anterior fazem essas modificações automaticamente. Ao usar o Visual Studio 2017 e posterior, você deve modificar *web.config* manualmente.
 
 ### <a name="configure-the-httpplatform-handler"></a>Configurar o manipulador HttpPlatform
 

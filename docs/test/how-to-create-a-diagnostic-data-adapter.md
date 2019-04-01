@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914013"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416312"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Como: Criar um adaptador de dados de diagnóstico
 
@@ -48,21 +48,9 @@ Use o seguinte procedimento para criar o adaptador de dados de diagnóstico que 
 
 Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo, incluindo um editor de configuração personalizado, confira [Projeto de exemplo para criar um adaptador de dados de diagnóstico](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Criar e instalar um adaptador de dados de diagnóstico
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Criar e instalar um adaptador de dados de diagnóstico
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Para criar e instalar um adaptador de dados de diagnóstico
-
-1. Criar uma nova biblioteca de classes.
-
-   1.  No menu **Arquivo**, selecione **Novo** e aponte para **Novo projeto**.
-
-   2.  De **Tipos de projeto**, selecione a linguagem a ser usada.
-
-   3.  Em **Modelos instalados do Visual Studio**, clique em **Biblioteca de Classes**.
-
-   4.  Digite um nome para o adaptador de dados de diagnóstico.
-
-   5.  Escolha **OK**.
+1. Crie um projeto de **Biblioteca de Classes**.
 
 2. Adicione o assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 

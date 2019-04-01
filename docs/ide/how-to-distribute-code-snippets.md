@@ -1,6 +1,6 @@
 ---
-title: 'Como: Distribuir snippets de código'
-ms.date: 11/04/2016
+title: Distribuir snippets de código como uma extensão
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323047"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355416"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Como: Distribuir snippets de código
 
-Você pode fornecer os snippets de código a seus amigos e solicitar a eles que instalem os snippets em seus próprios computadores usando o **Gerenciador de Snippets de Código**. No entanto, se você tiver vários snippets para distribuir ou desejar distribuí-los mais amplamente, inclua o arquivo de snippet em uma extensão do Visual Studio. Em seguida, os usuários do Visual Studio podem instalar a extensão.
+Você pode fornecer os snippets de código a seus amigos e solicitar a eles que instalem os snippets em seus próprios computadores usando o **Gerenciador de Snippets de Código**. No entanto, se tiver vários snippets para distribuir ou desejar distribuí-los mais amplamente, você poderá incluir os arquivos de snippet em uma extensão do Visual Studio. Em seguida, os usuários do Visual Studio podem instalar a extensão para obter os snippets.
 
-Você deve instalar o SDK do Visual Studio para criar extensões do Visual Studio. Localize a versão do VSSDK que corresponde à sua instalação do Visual Studio em [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+## <a name="prerequisites"></a>Pré-requisitos
+
+Instale a carga de trabalho do **desenvolvimento de extensões do Visual Studio** para obter acesso aos modelos do **Projeto do VSIX**.
+
+![Carga de trabalho de desenvolvimento de extensão do Visual Studio](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Configurar a extensão
 
-Neste procedimento, usaremos o mesmo snippet de código Olá, Mundo criado no [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md). Forneceremos o texto *.snippet*, de modo que você não precise voltar e criar um.
+Neste procedimento, você usará o mesmo snippet de código Olá, Mundo criado no [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md). Este artigo fornece o snippet XML, portanto, você não precisa voltar e criar um snippet.
 
-1. Crie um novo projeto do VSIX chamado **TestSnippet**. (**Arquivo** > **Novo** > **Projeto** > **Visual C# (ou Visual Basic)** > **Extensibilidade**).
+1. Crie um projeto por meio do modelo **Projeto Vazio do VSIX** e dê a ele o nome **TestSnippet**.
 
 2. No projeto **TestSnippet**, adicione um novo arquivo XML e chame-o de *VBCodeSnippet.snippet*. Substitua o conteúdo pelo seguinte XML:
 
@@ -111,7 +115,9 @@ Neste procedimento, usaremos o mesmo snippet de código Olá, Mundo criado no [P
 
 4. Teste o snippet. Na instância experimental, abra um projeto do Visual Basic e abra um dos arquivos de código. Coloque o cursor em algum lugar no código, clique com o botão direito do mouse e, no menu de contexto, selecione **Inserir Snippet**.
 
-5. Você deve ver *HelloWorldVB* como uma das pastas. Clique duas vezes nesse item. Você deve ver um pop-up **Inserir trecho de código: HelloWorldVB >** que tem uma lista suspensa **HelloWorldVB**. Clique na lista suspensa **HelloWorldVB**. Você deve ver a seguinte linha adicionada ao arquivo:
+5. Você deve ver *HelloWorldVB* como uma das pastas. Clique duas vezes nesse item. Você deve ver um pop-up **Inserir trecho de código: HelloWorldVB >** que tem uma lista suspensa **HelloWorldVB**. Clique na lista suspensa **HelloWorldVB**.
+
+   A seguinte linha é adicionada ao arquivo de código:
 
     ```vb
     Console.WriteLine("Hello, World!")

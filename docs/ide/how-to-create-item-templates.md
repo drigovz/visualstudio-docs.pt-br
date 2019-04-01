@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222081"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416377"
 ---
 # <a name="how-to-create-item-templates"></a>Como: Criar modelos de item
 
 Este artigo mostra como criar um modelo de item usando o **Assistente de Exportação de Modelo**. Se o modelo consistir em vários arquivos, confira [Como: Criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Para adicionar um modelo de item de usuário para a caixa de diálogo Adicionar Novo Item
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Adicione um modelo de item à caixa de diálogo Adicionar Novo Item
 
 1. Crie ou abra um projeto no Visual Studio.
 
@@ -46,7 +46,7 @@ Este artigo mostra como criar um modelo de item usando o **Assistente de Exporta
 
    O modelo de item aparece na caixa de diálogo **Adicionar Novo Item**. Se você adicionou uma descrição no **Assistente para Exportar Modelo**, a descrição será exibida no lado direito da caixa de diálogo.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Para habilitar o modelo de item a ser usado em um projeto de aplicativo universal do Windows
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Habilitar o modelo de item a ser usado em um projeto de Aplicativo Universal do Windows
 
 O assistente faz grande parte do trabalho de criar um modelo básico, mas, em muitos casos, será necessário modificar manualmente o arquivo *.vstemplate* depois de exportar o modelo. Por exemplo, se quiser que o item apareça na caixa de diálogo **Adicionar Novo Item** de um projeto de aplicativo universal do Windows, será necessário executar algumas etapas adicionais.
 
@@ -68,7 +68,7 @@ O assistente faz grande parte do trabalho de criar um modelo básico, mas, em mu
 
 Agora você pode adicionar um item com base neste modelo em um projeto universal do Windows usando a caixa de diálogo **Adicionar Novo Item**.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Para habilitar os modelos para subtipos de projeto específicos
+## <a name="enable-templates-for-specific-project-subtypes"></a>Habilitar os modelos para subtipos de projeto específicos
 
 Você pode especificar que o modelo deve aparecer apenas para determinados subtipos do projeto, como Windows, Office, banco de dados ou Web.
 
@@ -103,7 +103,7 @@ O exemplo a seguir mostra um modelo de item para projetos do **Office**.
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Para criar manualmente um modelo de item sem usar o assistente Exportar Modelo
+## <a name="manually-create-an-item-template"></a>Criar manualmente um modelo de item
 
 Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 

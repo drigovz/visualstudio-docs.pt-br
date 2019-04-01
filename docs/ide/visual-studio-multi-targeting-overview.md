@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949636"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355267"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multiplataforma no Visual Studio
 
@@ -35,13 +35,13 @@ A definição de destino da estrutura inclui os seguintes recursos:
 
 - Ao abrir um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o Visual Studio pode fazer upgrade dele ou deixar o destino no estado em que se encontra.
 
-- Ao criar um projeto, é possível especificar a versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que você deseja definir como destino.
+- Ao criar um projeto, é possível especificar a versão do .NET Framework que você deseja definir como destino.
 
-- É possível alterar a versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que um projeto existente tem como destino.
+- É possível alterar a versão do .NET Framework que um projeto existente tem como destino.
 
-- É possível definir como destino uma versão diferente do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] em cada um dos vários projetos na mesma solução.
+- É possível definir como destino uma versão diferente do .NET Framework em cada um dos vários projetos na mesma solução.
 
-- Ao alterar a versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que um projeto tem como destino, o [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] faz as alterações necessárias nas referências e nos arquivos de configuração.
+- Ao alterar a versão do .NET Framework que um projeto tem como destino, o [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] faz as alterações necessárias nas referências e nos arquivos de configuração.
 
 Ao trabalhar em um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o Visual Studio altera dinamicamente o ambiente de desenvolvimento, da seguinte maneira:
 
@@ -62,17 +62,27 @@ Ao trabalhar em um projeto que tem como destino uma versão anterior do [!INCLUD
 
 ## <a name="select-a-target-framework-version"></a>Selecionar uma versão de estrutura de destino
 
-Ao criar um projeto, selecione a versão do .NET Framework de destino na caixa de diálogo **Novo Projeto**. A lista de estruturas disponíveis inclui as versões da estrutura instalada que são aplicáveis para o tipo de modelo selecionado. Para os tipos de modelo que não exigem o .NET Framework, por exemplo modelos do .NET Core, a lista suspensa **Estrutura** está oculta.
+Ao criar um projeto, selecione a versão do .NET Framework de destino após você selecionar um modelo de projeto. A lista de estruturas disponíveis inclui as versões da estrutura instalada que são aplicáveis para o tipo de modelo selecionado. Para os tipos de modelo que não exigem o .NET Framework, por exemplo modelos do .NET Core, a lista suspensa **Estrutura** está oculta.
 
-![A lista suspensa Estrutura na caixa de diálogo Novo Projeto](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-Em um projeto existente, é possível alterar a versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+![Lista suspensa Estrutura no VS 2017](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Lista suspensa Estrutura no VS 2019](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+Em um projeto existente, é possível alterar a versão do .NET Framework de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Resolver referências de assembly do sistema e do usuário
 
 Para definir uma versão do .NET Framework como destino, é necessário primeiro instalar as referências de assembly apropriadas. É possível baixar pacotes de desenvolvedor para diferentes versões do .NET Framework na página de [downloads do .NET](https://www.microsoft.com/net/download/windows).
 
-A caixa de diálogo **Adicionar Referência** desabilita assemblies do sistema que não pertencem à versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino, para que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos *.dll* incluídos em uma versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) As referências que pertencem a uma versão do Framework posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não podem ser adicionados. Se você desejar habilitar essa referência, redefina o destino [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] do projeto para um que inclua a referência.  Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+A caixa de diálogo **Adicionar Referência** desabilita assemblies do sistema que não pertencem à versão do .NET Framework de destino, para que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos *.dll* incluídos em uma versão do .NET Framework.) As referências que pertencem a uma versão do Framework posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não podem ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência.  Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Para obter mais informações sobre referências de assembly, consulte [Resolver assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md).
 

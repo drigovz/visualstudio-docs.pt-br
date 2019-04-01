@@ -9,28 +9,28 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970875"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416239"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos de multiprojeto
 
-Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. Quando você cria um projeto baseado em um modelo multiprojetos usando a caixa de diálogo **Novo Projeto**, todos os projetos no modelo são adicionados à solução.
+Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. Quando você cria um projeto baseado em um modelo multiprojetos, todos os projetos no modelo são adicionados à solução.
 
 Um modelo multiprojeto tem dois ou mais modelos de projeto e um modelo raiz do tipo **ProjectGroup**.
 
 Os modelos multiprojetos comportam-se de forma diferente dos modelos de projeto único. Eles têm as seguintes características exclusivas:
 
-- Os projetos individuais em um modelo multiprojetos não podem ter nomes atribuídos na caixa de diálogo **Novo Projeto**. Em vez disso, use o atributo **ProjectName** no elemento **ProjectTemplateLink** do arquivo *vstemplate* para especificar um nome para cada projeto.
+- Nomes não podem ser atribuídos a projetos individuais em um modelo multiprojetos quando o modelo é usado para criar um projeto. Em vez disso, use o atributo **ProjectName** no elemento **ProjectTemplateLink** do arquivo *vstemplate* para especificar um nome para cada projeto.
 
 - Os modelos multiprojetos podem conter projetos de diferentes linguagens, mas o modelo inteiro em si só pode ser colocado em uma única categoria. Especifique a categoria de modelo no elemento **ProjectType** do arquivo *vstemplate*.
 
 Um modelo multiprojeto deve incluir os itens a seguir, compactados em um arquivo *.zip*:
 
-- Um arquivo *vstemplate* raiz para todo o modelo multiprojeto. Esse arquivo *vstemplate* raiz contém metadados que a caixa de diálogo **Novo Projeto** exibe e especifica onde localizar os arquivos *vstemplate* dos projetos no modelo. Esse arquivo deve estar localizado na raiz do arquivo *.zip*.
+- Um arquivo *vstemplate* raiz para todo o modelo multiprojeto. Esse arquivo *vstemplate* raiz contém metadados que são exibidos na caixa de diálogo em que você cria um projeto. Ela também especifica onde encontrar os arquivos *vstemplate* para os projetos no modelo. Esse arquivo deve estar localizado na raiz do arquivo *.zip*.
 
 - Duas ou mais pastas que contêm os arquivos necessários para um modelo de projeto concluído. As pastas incluem todos os arquivos de código do projeto e também um arquivo *vstemplate* do projeto.
 
@@ -72,37 +72,37 @@ O arquivo *vstemplate* raiz para um modelo multiprojeto difere de um modelo de p
 
 1. Crie uma solução e adicione dois ou mais projetos.
 
-1. Personalize os projetos até que eles estejam prontos para serem exportados para um modelo.
+2. Personalize os projetos até que eles estejam prontos para serem exportados para um modelo.
 
    > [!TIP]
    > Se você estiver usando [parâmetros de modelo](template-parameters.md) e quiser se referir a variáveis do modelo pai, prefixe o nome do parâmetro com `ext_`. Por exemplo, `$ext_safeprojectname$`.
 
-1. No menu **Projeto**, escolha **Exportar Modelo**.
+3. No menu **Projeto**, escolha **Exportar Modelo**.
 
    O **Assistente para Exportar Modelo** é aberto.
 
-1. Na página **Escolher Tipo de Modelo**, selecione **Modelo de Projeto**. Selecione um dos projetos que você deseja exportar para um modelo e, em seguida, escolha **Avançar**. (Você repetirá essas etapas para cada projeto na solução.)
+4. Na página **Escolher Tipo de Modelo**, selecione **Modelo de Projeto**. Selecione um dos projetos que você deseja exportar para um modelo e, em seguida, escolha **Avançar**. (Você repetirá essas etapas para cada projeto na solução.)
 
-1. Na página **Selecionar Opções do Modelo**, insira um nome e uma descrição opcional, um ícone e uma imagem de exibição para o modelo. Escolha **Concluir**.
+5. Na página **Selecionar Opções do Modelo**, insira um nome e uma descrição opcional, um ícone e uma imagem de exibição para o modelo. Escolha **Concluir**.
 
    O projeto é exportado para um arquivo *.zip* e colocado no local de saída especificado.
 
    > [!NOTE]
    > Cada projeto deve ser exportado para um modelo separadamente, portanto, repita as etapas anteriores para cada projeto na solução.
 
-1. Crie um diretório para o modelo, com um subdiretório para cada projeto.
+6. Crie um diretório para o modelo, com um subdiretório para cada projeto.
 
-1. Extraia o conteúdo do arquivo *.zip* de cada projeto para o subdiretório correspondente que você criou.
+7. Extraia o conteúdo do arquivo *.zip* de cada projeto para o subdiretório correspondente que você criou.
 
-1. No diretório base, crie um arquivo XML com uma extensão de arquivo *.vstemplate*. Esse arquivo contém os metadados do modelo multiprojetos. Consulte o exemplo a seguir para obter a estrutura do arquivo. Certifique-se de especificar o caminho relativo para o arquivo *vstemplate* de cada projeto.
+8. No diretório base, crie um arquivo XML com uma extensão de arquivo *.vstemplate*. Esse arquivo contém os metadados do modelo multiprojetos. Consulte o exemplo a seguir para obter a estrutura do arquivo. Certifique-se de especificar o caminho relativo para o arquivo *vstemplate* de cada projeto.
 
-1. Selecione todos os arquivos no diretório base e, no menu de clique com o botão direito do mouse ou de contexto, escolha **Enviar para** > **Pasta compactada (zipada)**.
+9. Selecione todos os arquivos no diretório base e, no menu de clique com o botão direito do mouse ou de contexto, escolha **Enviar para** > **Pasta compactada (zipada)**.
 
    Esses arquivos e pastas estão compactados em um arquivo *.zip*.
 
-1. Copie o arquivo *.zip* no diretório do modelo de projeto do usuário. Por padrão, esse diretório é *%USERPROFILE%\Documents\Visual Studio \<versão\>\Templates\ProjectTemplates*.
+10. Copie o arquivo *.zip* no diretório do modelo de projeto do usuário. Por padrão, esse diretório é *%USERPROFILE%\Documents\Visual Studio \<versão\>\Templates\ProjectTemplates*.
 
-1. No Visual Studio, abra a caixa de diálogo **Novo Projeto** e verifique se o modelo é exibido.
+11. No Visual Studio, abra a caixa de diálogo **Arquivo** > **Novo** > **Projeto** e verifique se o modelo é exibido.
 
 ## <a name="two-project-example"></a>Exemplo de dois projetos
 

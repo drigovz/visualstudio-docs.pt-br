@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152922"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475962"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Início Rápido: Depuração com C# ou Visual Basic usando o depurador do Visual Studio
 
@@ -25,13 +25,13 @@ O depurador do Visual Studio oferece muitos recursos avançados para ajudar a de
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
 
-1. No Visual Studio, escolha **Arquivo > Novo > Projeto**.
+1. Abra o Visual Studio e crie um projeto.
 
     ::: moniker range=">=vs-2019"
-    A caixa de diálogo **Criar um novo projeto** é aberta. Digite **.net** na caixa de pesquisa para filtrar os resultados; escolha **Aplicativo de Console (.NET Core)** e clique em **Avançar**. Em seguida, insira um nome como **MyDbgApp** e escolha **Criar**.
+    Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **console**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console (.NET Core)**. Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    A caixa de diálogo **Novo projeto** é aberta. Em **Visual C#**, escolha **.NET Core** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Core)**. Depois, digite um nome como **MyDbgApp** e clique em **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **.NET Core** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Core)**. Depois, digite um nome como **MyDbgApp** e clique em **OK**.
     ::: moniker-end
 
      Caso não veja o modelo de projeto **Aplicativo de Console (.NET Core)**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** e **.NET Core**; em seguida, selecione **Modificar**.

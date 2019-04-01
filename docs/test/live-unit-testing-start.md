@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223752"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416287"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Introdução ao Live Unit Testing no Visual Studio
 
@@ -40,15 +40,19 @@ Este tutorial exige que o Visual Studio Enterprise Edition esteja instalado com 
 
 Comece criando uma solução do Visual Studio chamada `UtilityLibraries` que consiste em um único projeto de biblioteca de classes do .NET Standard `StringLibrary`. Você pode escrever a `StringLibrary` em C# ou Visual Basic.
 
-A solução é apenas um contêiner para um ou mais projetos. Para criar a solução, abra o Visual Studio e faça o seguinte:
+A solução é apenas um contêiner para um ou mais projetos. Para criar uma solução em branco, abra o Visual Studio e faça o seguinte:
 
 1. Selecione **Arquivo** > **Novo** > **Projeto** no menu de nível superior do Visual Studio.
 
-1. Na caixa de diálogo **Novo Projeto**, expanda o nó **Outros Tipos de Projeto** e selecione **Soluções do Visual Studio**. Selecione o modelo **Solução em Branco** no painel à direita e insira `UtilityLibraries` na caixa de texto **Nome**, como mostra a figura a seguir:
+1. Digite **Solução** na caixa de pesquisa de modelo e selecione o modelo **Solução em Branco**.
+
+   ::: moniker range="vs-2017"
 
    ![A caixa de diálogo **Novo Projeto**](./media/lut-start/new-solution.png)
 
-1. Selecione **OK** para criar a solução.
+   ::: moniker-end
+
+1. Conclua a criação da solução.
 
 Agora que já criou a solução, você criará uma biblioteca de classes chamada `StringLibrary` que contém vários métodos de extensão para trabalhar com cadeias de caracteres.
 
@@ -56,18 +60,35 @@ Agora que já criou a solução, você criará uma biblioteca de classes chamada
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
-1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó C# e, em seguida, selecione **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó C# e, em seguida, selecione **.NET Standard**.
 
    > [!NOTE]
    > Como nossa biblioteca é direcionada ao .NET Standard e não a uma implementação específica do .NET, ela pode ser chamada de qualquer implementação do .NET que dê suporte a essa versão do .NET padrão. Para obter mais informações, confira [.NET Standard](/dotnet/standard/net-standard).
 
-1. Selecione o modelo **Biblioteca de Classes (.NET Standard)** no painel à direita e insira `StringLibrary` na caixa de texto **Nome**, como mostra a figura a seguir:
+3. Selecione o modelo **Biblioteca de Classes (.NET Standard)** no painel à direita e insira `StringLibrary` na caixa de texto **Nome**, como mostra a figura a seguir:
 
    ![Caixa de diálogo **Adicionar Novo Projeto**](./media/lut-start/add-project-cs.png)
 
-1. Selecione **OK** para criar o projeto.
+4. Selecione **OK** para criar o projeto.
 
-1. Substitua todo o código existente na janela de código pelo código a seguir:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Digite **biblioteca de classes** na caixa de pesquisa de modelo e selecione o modelo **Biblioteca de Classes (.NET Standard)**. Clique em **Avançar**.
+
+   > [!NOTE]
+   > Como nossa biblioteca é direcionada ao .NET Standard e não a uma implementação específica do .NET, ela pode ser chamada de qualquer implementação do .NET que dê suporte a essa versão do .NET padrão. Para obter mais informações, confira [.NET Standard](/dotnet/standard/net-standard).
+
+3. Nomeie o projeto `StringLibrary`.
+
+4. Clique em **Criar** para criar o projeto.
+
+::: moniker-end
+
+5. Substitua todo o código existente na janela de código pelo código a seguir:
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
@@ -79,24 +100,41 @@ Agora que já criou a solução, você criará uma biblioteca de classes chamada
 
       - `HasEmbeddedSpaces` retornará `true` se uma cadeia de caracteres contiver um caractere de espaço em branco inserido, caso contrário, retornará `false`.
 
-1. Selecione **Compilar** > **Compilar Solução** no menu de nível superior do Visual Studio. O Visual Studio deverá compilar a biblioteca com êxito.
+6. Selecione **Compilar** > **Compilar Solução** no menu de nível superior do Visual Studio. O Visual Studio deverá compilar a biblioteca com êxito.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
-1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó Visual Basic e, em seguida, selecione **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó Visual Basic e, em seguida, selecione **.NET Standard**.
 
    > [!NOTE]
    > Como nossa biblioteca é direcionada ao .NET Standard e não a uma implementação específica do .NET, ela pode ser chamada de qualquer implementação do .NET que dê suporte a essa versão do .NET padrão. Para obter mais informações, confira [.NET Standard](/dotnet/standard/net-standard).
 
-1. Selecione o modelo **Biblioteca de Classes (.NET Standard)** no painel à direita e insira `StringLibrary` na caixa de texto **Nome**, como mostra a figura a seguir:
+3. Selecione o modelo **Biblioteca de Classes (.NET Standard)** no painel à direita e insira `StringLibrary` na caixa de texto **Nome**, como mostra a figura a seguir:
 
    ![Caixa de diálogo **Adicionar Novo Projeto**](./media/lut-start/add-project-vb.png)
 
-1. Selecione **OK** para criar o projeto.
+4. Selecione **OK** para criar o projeto.
 
-1. Substitua todo o código existente na janela de código pelo código a seguir:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Digite **biblioteca de classes** na caixa de pesquisa de modelo e selecione o modelo **Biblioteca de Classes (.NET Standard)**. Clique em **Avançar**.
+
+   > [!NOTE]
+   > Como nossa biblioteca é direcionada ao .NET Standard e não a uma implementação específica do .NET, ela pode ser chamada de qualquer implementação do .NET que dê suporte a essa versão do .NET padrão. Para obter mais informações, confira [.NET Standard](/dotnet/standard/net-standard).
+
+3. Nomeie o projeto `StringLibrary`.
+
+4. Clique em **Criar** para criar o projeto.
+
+::: moniker-end
+
+5. Substitua todo o código existente na janela de código pelo código a seguir:
 
    [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
 
@@ -108,11 +146,11 @@ Agora que já criou a solução, você criará uma biblioteca de classes chamada
 
       - `HasEmbeddedSpaces` retornará `true` se uma cadeia de caracteres contiver um caractere de espaço em branco inserido, caso contrário, retornará `false`.
 
-1. Clique com o botão direito do mouse no projeto StringLibrary no **Gerenciador de Soluções** e selecione **Propriedades**. Na guia **Aplicativo**, exclua o texto na caixa de texto **Namespace raiz**, como mostra a figura a seguir. O namespace raiz é definido pela [Instrução namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) no código-fonte.
+6. Clique com o botão direito do mouse no projeto StringLibrary no **Gerenciador de Soluções** e selecione **Propriedades**. Na guia **Aplicativo**, exclua o texto na caixa de texto **Namespace raiz**, como mostra a figura a seguir. O namespace raiz é definido pela [Instrução namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) no código-fonte.
 
    ![A caixa de diálogo Propriedades do Projeto de um projeto Visual Basic](./media/lut-start/vb-properties.png)
 
-1. Selecione **Compilar** > **Compilar Solução** no menu de nível superior do Visual Studio. O Visual Studio deverá compilar a biblioteca com êxito.
+7. Selecione **Compilar** > **Compilar Solução** no menu de nível superior do Visual Studio. O Visual Studio deverá compilar a biblioteca com êxito.
 
 ---
 
@@ -124,77 +162,105 @@ A próxima etapa é criar o projeto de teste de unidade para testar a biblioteca
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
-1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó C# e, em seguida, selecione **.NET Core**.
+::: moniker range="vs-2017"
+
+2. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó C# e, em seguida, selecione **.NET Core**.
 
    > [!NOTE]
    > Você não precisa escrever os testes de unidade na mesma linguagem da biblioteca de classes.
 
-1. Selecione o modelo **Projeto de Teste de Unidade (.NET Core)** no painel direito e insira `StringLibraryTests` na caixa de texto **Nome**, como mostra a figura a seguir:
+3. Selecione o modelo **Projeto de Teste de Unidade (.NET Core)** no painel direito e insira `StringLibraryTests` na caixa de texto **Nome**, como mostra a figura a seguir:
 
    ![A caixa de diálogo **Adicionar Novo Projeto** do projeto de teste de unidade](./media/lut-start/add-unit-test-cs.png)
 
-1. Selecione **OK** para criar o projeto.
+4. Selecione **OK** para criar o projeto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Digite **teste de unidade** na caixa de pesquisa de modelo e selecione o modelo **Projeto de Teste de Unidade (.NET Core)**. Clique em **Avançar**.
+
+3. Nomeie o projeto `StringLibraryTests`.
+
+4. Clique em **Criar** para criar o projeto.
+
+::: moniker-end
 
    > [!NOTE]
    > Este tutorial de introdução usa o Live Unit Testing com o framework de teste do MSTest. Você também pode usar as estruturas de teste xUnit e NUnit.
 
-1. O projeto de teste de unidade não pode acessar automaticamente a biblioteca de classes que ele está testando. Forneça acesso à biblioteca de teste adicionando uma referência ao projeto de biblioteca de classes. Para fazer isso, clique com o botão direito do mouse no projeto `StringLibraryTests` e selecione **Adicionar** > **Referência**. Na caixa de diálogo **Gerenciador de Referências**, verifique se a guia **Solução** está selecionada e selecione o projeto `StringLibrary`, conforme é mostrado na figura a seguir.
+5. O projeto de teste de unidade não pode acessar automaticamente a biblioteca de classes que ele está testando. Forneça acesso à biblioteca de teste adicionando uma referência ao projeto de biblioteca de classes. Para fazer isso, clique com o botão direito do mouse no projeto `StringLibraryTests` e selecione **Adicionar** > **Referência**. Na caixa de diálogo **Gerenciador de Referências**, verifique se a guia **Solução** está selecionada e selecione o projeto `StringLibrary`, conforme é mostrado na figura a seguir.
 
    ![A caixa de diálogo **Gerenciador de Referências**](./media/lut-start/add-reference.png)
 
-1. Substitua o código de teste de unidade clichê que o modelo fornece pelo código a seguir:
+6. Substitua o código de teste de unidade clichê que o modelo fornece pelo código a seguir:
 
    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest1.cs)]
 
-1. Salve o projeto selecionando o ícone **Salvar** na barra de ferramentas.
+7. Salve o projeto selecionando o ícone **Salvar** na barra de ferramentas.
 
-1. Como o código de teste de unidade inclui alguns caracteres não ASCII, o Visual Studio exibe a caixa de diálogo a seguir para avisar que alguns caracteres serão perdidos se o arquivo for salvo em seu formato ASCII padrão. Escolha o botão **Salvar com Outra Codificação**.
+8. Como o código de teste de unidade inclui alguns caracteres não ASCII, o Visual Studio exibe a caixa de diálogo a seguir para avisar que alguns caracteres serão perdidos se o arquivo for salvo em seu formato ASCII padrão. Escolha o botão **Salvar com Outra Codificação**.
 
    ![Escolha uma codificação de arquivo](media/lut-start/ascii-encoding.png)
 
-1. Na lista suspensa **Codificação** da caixa de diálogo **Opções Avançadas de Salvamento**, escolha **Unicode (UTF-8 sem assinatura) – página de código 65001**, como mostra a figura a seguir:
+9. Na lista suspensa **Codificação** da caixa de diálogo **Opções Avançadas de Salvamento**, escolha **Unicode (UTF-8 sem assinatura) – página de código 65001**, como mostra a figura a seguir:
 
    ![Escolhendo a codificação UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Compile o projeto de teste de unidade selecionando **Compilar** > **Recompilar Solução** no menu de nível superior do Visual Studio.
+10. Compile o projeto de teste de unidade selecionando **Compilar** > **Recompilar Solução** no menu de nível superior do Visual Studio.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
-1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó Visual Basic e, em seguida, selecione **.NET Core**.
+::: moniker range="vs-2017"
+
+2. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó Visual Basic e, em seguida, selecione **.NET Core**.
 
    > [!NOTE]
    > Você não precisa escrever os testes de unidade na mesma linguagem da biblioteca de classes.
 
-1. Selecione o modelo **Projeto de Teste de Unidade (.NET Core)** no painel direito e insira `StringLibraryTests` na caixa de texto **Nome**, como mostra a figura a seguir:
+3. Selecione o modelo **Projeto de Teste de Unidade (.NET Core)** no painel direito e insira `StringLibraryTests` na caixa de texto **Nome**, como mostra a figura a seguir:
 
    ![A caixa de diálogo **Adicionar Novo Projeto** do teste de unidade](./media/lut-start/add-unit-test-vb.png)
 
-1. Selecione **OK** para criar o projeto.
+4. Selecione **OK** para criar o projeto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Digite **teste de unidade** na caixa de pesquisa de modelo e selecione o modelo **Projeto de Teste de Unidade (.NET Core)**. Clique em **Avançar**.
+
+3. Nomeie o projeto `StringLibraryTests`.
+
+4. Clique em **Criar** para criar o projeto.
+
+::: moniker-end
 
    > [!NOTE]
    > Este tutorial de introdução usa o Live Unit Testing com o framework de teste do MSTest. Você também pode usar as estruturas de teste xUnit e NUnit.
 
-1. O projeto de teste de unidade não pode acessar automaticamente a biblioteca de classes que ele está testando. Forneça acesso à biblioteca de teste adicionando uma referência ao projeto de biblioteca de classes. Para fazer isso, clique com o botão direito do mouse no projeto `StringLibraryTests` e selecione **Adicionar** > **Referência**. Na caixa de diálogo **Gerenciador de Referências**, verifique se a guia **Solução** está selecionada e selecione o projeto `StringLibrary`, conforme é mostrado na figura a seguir.
+5. O projeto de teste de unidade não pode acessar automaticamente a biblioteca de classes que ele está testando. Forneça acesso à biblioteca de teste adicionando uma referência ao projeto de biblioteca de classes. Para fazer isso, clique com o botão direito do mouse no projeto `StringLibraryTests` e selecione **Adicionar** > **Referência**. Na caixa de diálogo **Gerenciador de Referências**, verifique se a guia **Solução** está selecionada e selecione o projeto `StringLibrary`, conforme é mostrado na figura a seguir.
 
    ![A caixa de diálogo **Gerenciador de Referências**](./media/lut-start/add-reference.png)
 
-1. Substitua o código de teste de unidade clichê que o modelo fornece pelo código a seguir:
+6. Substitua o código de teste de unidade clichê que o modelo fornece pelo código a seguir:
 
    [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest1.vb)]
 
-1. Salve o projeto selecionando o ícone **Salvar** na barra de ferramentas.
+7. Salve o projeto selecionando o ícone **Salvar** na barra de ferramentas.
 
-1. Como o código de teste de unidade inclui alguns caracteres não ASCII, o Visual Studio exibe a caixa de diálogo a seguir para avisar que alguns caracteres serão perdidos se o arquivo for salvo em seu formato ASCII padrão. Escolha o botão **Salvar com Outra Codificação**.
+8. Como o código de teste de unidade inclui alguns caracteres não ASCII, o Visual Studio exibe a caixa de diálogo a seguir para avisar que alguns caracteres serão perdidos se o arquivo for salvo em seu formato ASCII padrão. Escolha o botão **Salvar com Outra Codificação**.
 
    ![Escolha uma codificação de arquivo](media/lut-start/ascii-encoding.png)
 
-1. Na lista suspensa **Codificação** da caixa de diálogo **Opções Avançadas de Salvamento**, escolha **Unicode (UTF-8 sem assinatura) – página de código 65001**, como mostra a figura a seguir:
+9. Na lista suspensa **Codificação** da caixa de diálogo **Opções Avançadas de Salvamento**, escolha **Unicode (UTF-8 sem assinatura) – página de código 65001**, como mostra a figura a seguir:
 
    ![Escolhendo a codificação UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Compile o projeto de teste de unidade com **Compilar** > **Recompilar Solução** no menu de nível superior do Visual Studio.
+10. Compile o projeto de teste de unidade com **Compilar** > **Recompilar Solução** no menu de nível superior do Visual Studio.
 
 ---
 

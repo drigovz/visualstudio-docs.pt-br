@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145220"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416260"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar a automação da interface do usuário para testar o código
 
@@ -62,9 +62,13 @@ Para acessar as ferramentas e os modelos do teste de IU codificado, instale o co
 
 1. Crie um projeto de teste de IU codificado.
 
-   Os testes de IU codificados devem estar contidos em um projeto de teste de IU codificado. Se você ainda não tiver um projeto de teste de IU codificado, crie um. Escolha **Arquivo** > **Novo** > **Projeto** para abrir a caixa de diálogo **Novo Projeto**. No painel de categorias à esquerda, expanda **Instalado** > **Visual Basic** *ou* **Visual C#** > **Teste**. Selecione o modelo **Projeto de Teste de IU Codificado** e, em seguida, escolha **OK**.
+   Os testes de IU codificados devem estar contidos em um projeto de teste de IU codificado. Se você ainda não tiver um projeto de teste de IU codificado, crie um. Escolha **Arquivo** > **Novo** > **Projeto**. Pesquise o modelo de **Projeto de Teste de IU Codificado** e selecione-o.
+
+   ::: moniker range="vs-2017"
 
    ![Modelo de projeto de teste de IU codificado na caixa de diálogo Novo Projeto](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Se o modelo **Projeto de Teste de IU Codificado** não for exibido, será necessário [instalar o componente Teste de IU Codificado](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
