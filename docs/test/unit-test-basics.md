@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796823"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416364"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -38,7 +38,7 @@ Para obter uma introdução ao teste de unidade que leva você diretamente para 
 
 ## <a name="the-mybank-solution-example"></a>O exemplo da solução MyBank
 
-Neste tópico, usamos o desenvolvimento de um aplicativo fictício chamado `MyBank` como exemplo. Você não precisa do código real para seguir as explicações neste tópico. Os métodos de teste são gravados em C# e apresentados usando o Microsoft Unit Testing Framework para Código Gerenciado. No entanto, os conceitos podem ser facilmente transferidos para outros idiomas e estruturas.
+Neste artigo, usamos o desenvolvimento de um aplicativo fictício chamado `MyBank` como exemplo. Você não precisa do código real para seguir as explicações neste tópico. Os métodos de teste são gravados em C# e apresentados usando o Microsoft Unit Testing Framework para Código Gerenciado. No entanto, os conceitos podem ser facilmente transferidos para outros idiomas e estruturas.
 
 ![Solução MyBank](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ Um projeto de teste de unidade geralmente espelha a estrutura de um projeto de c
 
 **Para adicionar um projeto de teste de unidade a uma solução:**
 
-1. No menu **Arquivo**, escolha **Novo** e, em seguida, escolha **Projeto** (Teclado: **Ctrl**+**Shift**+**N**).
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução e escolha **Adicionar** > **Novo** **Projeto**.
 
-2. Na caixa de diálogo **Novo Projeto**, expanda o nó **Instalado**, escolha a linguagem que deseja usar para o projeto de teste e, em seguida, escolha **Testar**.
+::: moniker range="vs-2017"
+
+2. Na caixa de diálogo **Novo Projeto**, expanda o nó **Instalado**, escolha a linguagem que deseja usar para o projeto de teste e clique em **Testar**.
 
 3. Para usar uma das estruturas de teste de unidade da Microsoft, escolha **Projeto de Teste de Unidade** na lista de modelos de projeto. Caso contrário, escolha o modelo de projeto da estrutura de teste de unidade que você deseja usar. Para testar o projeto `Accounts` do nosso exemplo, você deve nomear o projeto `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > Nem todas as estruturas de teste de unidade de código aberto e de terceiros fornecem um modelo de projeto do Visual Studio. Consulte o documento da estrutura para saber como criar um projeto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Use a caixa de pesquisa de modelo de projeto para localizar um modelo de projeto de teste de unidade para a estrutura de teste que você deseja usar.
+
+3. Na próxima página, dê um nome ao projeto. Para testar o projeto `Accounts` do nosso exemplo, você poderia nomear o projeto `AccountsTests`.
+
+::: moniker-end
 
 4. Em seu projeto de teste de unidade, adicione uma referência ao projeto de código em teste, neste caso, ao projeto Contas.
 
