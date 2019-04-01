@@ -10,26 +10,26 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952145"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355377"
 ---
 # <a name="how-to-update-existing-templates"></a>Como: Atualizar modelos existentes
 
 Depois de criar um modelo e compactar os arquivos em um arquivo *.zip*, modifique o modelo. É possível fazer isso alterando manualmente os arquivos no modelo ou exportando um novo modelo de um projeto com base no modelo.
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Usando o Assistente para Exportar Modelo para atualizar um modelo de projeto existente
+## <a name="use-the-export-template-wizard"></a>Use o Assistente para Exportar Modelo
 
 O Visual Studio fornece um **Assistente para Exportar Modelo** que pode ser usado para atualizar um modelo existente.
 
-1. Abra a caixa de diálogo **Novo Projeto**, escolhendo **Arquivo** > **Novo** > **Projeto**.
+1. Escolha **Arquivo** > **Novo** > **Projeto** na barra de menus.
 
-1. Selecione o modelo que deseja atualizar, insira um nome e um local para o projeto e escolha **OK**.
+1. Selecione o modelo que você deseja atualizar e continue seguindo as etapas para criar o projeto.
 
-1. Modifique o projeto no Visual Studio.
+1. Modifique o projeto no Visual Studio. Por exemplo, altere o tipo de saída ou adicione um novo arquivo ao projeto.
 
 1. No menu **Projeto**, escolha **Exportar Modelo**.
 
@@ -37,7 +37,7 @@ O Visual Studio fornece um **Assistente para Exportar Modelo** que pode ser usad
 
 1. Siga os prompts no assistente para exportar o modelo como um arquivo *.zip*.
 
-1. (Opcional) Para adicionar o modelo à caixa de diálogo **Novo Projeto**, coloque o arquivo *.zip* no seguinte diretório: *%USERPROFILE%\Documents\Visual Studio \<versão\>\Templates\ProjectTemplates*. Você precisará executar essa etapa se você não tiver selecionado a opção **Importar automaticamente o modelo no Visual Studio** no **Assistente para Exportar Modelo**.
+1. (Opcional) Coloque o arquivo *.zip* no seguinte diretório: *%USERPROFILE%\Documents\Visual Studio\< \>versão\Templates\ProjectTemplates* para disponibilizá-lo para seleção. Você precisará executar essa etapa se você não tiver selecionado a opção **Importar automaticamente o modelo no Visual Studio** no **Assistente para Exportar Modelo**.
 
 1. Exclua o arquivo *.zip* de modelo antigo.
 

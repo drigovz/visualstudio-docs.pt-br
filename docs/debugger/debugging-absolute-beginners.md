@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526575"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476040"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -82,17 +82,16 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique em **Ferramentas** > **Obter ferramentas e recursos**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core**) e, em seguida, escolha **Modificar**.
 
-1. Abra o Visual Studio e escolha **Arquivo** > **Novo** > **Projeto**.
+1. Abra o Visual Studio.
 
-1. Escolha um modelo para o código do aplicativo.
+    ::: moniker range=">=vs-2019"
+    Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **console**, escolha **Modelos** e, em seguida, escolha **Criar novo Aplicativo de Console (.NET Framework)** ou **Criar novo Aplicativo de Console (.NET Core)**. Na caixa de diálogo que aparece, escolha **Criar**. Digite um nome como **ConsoleApp-FirstApp** e clique em **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **Aplicativo de Console** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)** ou **Aplicativo de Console (.NET Core)**. Digite um nome como **ConsoleApp-FirstApp** e clique em **OK**.
+    ::: moniker-end
 
-    Para o .NET Framework, na caixa de diálogo **Novo projeto**, escolha **Visual C#**, **Windows Desktop** na seção de modelos instalados e, no painel central, selecione **Aplicativo de console (.NET Framework)**.
-
-    Para o .NET Core, na caixa de diálogo **Novo projeto**, escolha **Visual C#**, **.NET Core** na seção de modelos instalados e, no painel central, selecione **Aplicativo de console (.NET Core)**.
-
-    Se você não vir esses modelos, deverá instalar a carga de trabalho apropriada (confira as etapas anteriores).
-
-1. No campo **Nome**, digite **ConsoleApp-FirstApp** e clique em **OK**.
+    Caso não veja o modelo de projeto **Aplicativo de Console (.NET Framework)** ou **Aplicativo de Console (.NET Core)**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para Desktop do .NET** ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core** e, em seguida, escolha **Modificar**.
 
     O Visual Studio criará o console do projeto, que será aberto no Gerenciador de Soluções no painel direito.
 
