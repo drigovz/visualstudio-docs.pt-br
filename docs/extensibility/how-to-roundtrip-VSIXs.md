@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323809"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790414"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Como: Fazer com que as extensões compatíveis com o Visual Studio 2017 e Visual Studio 2015
 
@@ -95,7 +95,7 @@ Precisamos dizer ao Visual Studio quais versões de destino para a criação de 
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Adicionando pré-requisitos para o *vsixmanifest* arquivo
 
-Pré-requisitos são um novo recurso com o Visual Studio 2017. Nesse caso, é necessário o Editor principal do Visual Studio como um pré-requisito. Uma vez que o designer do Visual Studio 2015 VSIX não lida com a nova `Prerequisites` seção, você precisará editar esta parte manualmente no código XML. Como alternativa, você pode abrir o Visual Studio 2017 e usar o designer de manifesto atualizado para inserir os pré-requisitos.
+Precisamos de Editor de núcleo do Visual Studio como um pré-requisito. Abra o Visual Studio e use o designer de manifesto atualizado para inserir os pré-requisitos.
 
 Para fazer isso manualmente:
 
@@ -112,7 +112,7 @@ Para fazer isso manualmente:
 * Salve e feche o arquivo.
 
 > [!NOTE]
-> Se você optar por fazer isso com o designer VSIX no Visual Studio 2017, será preciso editar manualmente a versão do pré-requisito para garantir que ele é compatível com todas as versões do Visual Studio 2017. Isso ocorre porque o designer irá inserir a versão mínima como sua versão atual do Visual Studio (por exemplo, 15.0.26208.0). No entanto, desde que outros usuários podem ter uma versão anterior, você desejará editá-la manualmente para 15.0.
+> Talvez você precise editar manualmente a versão do pré-requisito para garantir que ele é compatível com todas as versões do Visual Studio 2017. Isso ocorre porque o designer irá inserir a versão mínima como sua versão atual do Visual Studio (por exemplo, 15.0.26208.0). No entanto, desde que outros usuários podem ter uma versão anterior, você desejará editá-la manualmente para 15.0.
 
 Neste ponto, seu arquivo de manifesto deve ser algo parecido com isto:
 

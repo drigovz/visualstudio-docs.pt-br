@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194412"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790154"
 ---
 # <a name="create-an-options-page"></a>Criar uma página de opções
 
@@ -101,7 +101,7 @@ Este passo a passo cria uma página Ferramentas/opções simples que usa uma gra
 
      No painel esquerdo, você deve ver **My Category**. (Categorias de opções são listadas em ordem alfabética, portanto, ele deve aparecer sobre na metade para baixo na lista.) Abra **My Category** e, em seguida, clique em **minha página de grade**. A grade de opções é exibida no painel direito. A categoria de propriedade é **minhas opções**, e é o nome da propriedade **minha opção de inteiro**. A descrição da propriedade **minha opção inteiro**, aparece na parte inferior do painel. Altere o valor do seu valor inicial de 256 para algo diferente. Clique em **Okey**e, em seguida, reabra **minha página de grade**. Você pode ver que o novo valor persiste.
 
-     Sua página de opções também está disponível por meio de início rápido do Visual Studio. Na janela de início rápido no canto superior direito do IDE, digite **My Category** e você verá **My Category -> minha página de grade** listados na lista suspensa.
+     Sua página de opções também está disponível por meio da caixa de pesquisa do Visual Studio. Na caixa de pesquisa na parte superior do IDE, digite **My Category** e você verá **My Category -> minha página de grade** listado nos resultados.
 
 ## <a name="create-a-tools-options-custom-page"></a>Criar uma página de opções de ferramentas personalizada
 
