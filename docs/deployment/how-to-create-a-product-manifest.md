@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622bf6f34b2644c028886184cf42e8f994a43f71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596913"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568095"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Como criar um manifesto de produto
 Para implantar o pré-requisitos para o seu aplicativo, você pode criar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único, mas um manifesto de pacote para cada localidade. O manifesto de pacote contém aspectos específicos de localização do seu pacote. Isso inclui cadeias de caracteres, os contratos de licença de usuário final e os pacotes de idiomas.
 
- Para obter mais informações sobre manifestos de produto, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).
+ Para obter mais informações sobre manifestos de pacote, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).
 
 ## <a name="create-the-product-manifest"></a>Crie o manifesto de produto
 

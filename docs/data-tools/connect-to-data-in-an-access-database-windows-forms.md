@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227638"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647343"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectar-se a dados em um banco de dados do Access (Windows Forms)
 
@@ -95,7 +95,7 @@ Você cria o conjunto de dados executando o **Assistente de Configuração de Fo
 
 8. No **nome do arquivo de banco de dados**, especifique o caminho e nome da *. mdb* arquivo que você deseja se conectar a e, em seguida, selecione **Okey**.
 
-   ![Adicionar o arquivo de banco de dados de acesso de Conexão](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Adicionar o arquivo de banco de dados de acesso de Conexão](../data-tools/media/add-connection-access-db.png)
 
 9. Selecione **próxima** sobre o **escolha sua Conexão de dados** página.
 

@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cf0d92169974970c041214e53f8a8feb5f07a24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dd678d7db2a3af56a89756f65f8f7b98ef1e37a6
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598031"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567796"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Como criar um manifesto de pacote
 Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único, mas um manifesto de pacote para cada localidade. Funcionalidade compartilhada entre diferentes versões localizadas deve ir para o manifesto do produto.
 
- Para obter mais informações sobre manifestos de pacote, consulte [como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).
+ Para obter mais informações sobre manifestos de produto, consulte [como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).
 
 ## <a name="create-the-package-manifest"></a>Crie o manifesto de pacote
 

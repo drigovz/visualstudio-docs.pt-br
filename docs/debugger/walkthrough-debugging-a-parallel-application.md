@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476053"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790700"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Passo a passo: Depurando um aplicativo paralelo no Visual Studio (C#, Visual Basic, C++)
 
@@ -62,13 +62,13 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 #### <a name="to-create-the-sample-project"></a>Para criar o projeto de exemplo
 
-1. Abra o Visual Studio e crie um novo projeto.
+1. Abra o Visual Studio e crie um projeto.
 
     ::: moniker range=">=vs-2019"
-    Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +**), escolha **modelos**e, em seguida:
-    
-    - Para C# ou Visual Basic, escolha **criar novo projeto de aplicativo de Console (.NET Framework)** para o C# ou o Visual Basic. Na caixa de diálogo que aparece, escolha **criar**.
-    - Para C++, escolha **criar novo projeto de aplicativo de Console** para C++. Na caixa de diálogo que aparece, escolha **criar**.
+    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +**), escolha **modelos**e, em seguida:
+
+    - Para C# ou Visual Basic, escolha **criar novo projeto de aplicativo de Console (.NET Framework)** para o C# ou o Visual Basic. Na caixa de diálogo que aparece, escolha **Criar**.
+    - Para C++, escolha **criar novo projeto de aplicativo de Console** para C++. Na caixa de diálogo que aparece, escolha **Criar**.
 
     Em seguida, digite um nome ou use o nome padrão e clique em **criar**.
     ::: moniker-end
@@ -82,7 +82,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
     Em seguida, digite um nome ou use o nome padrão e clique em **Okey**.
     ::: moniker-end
 
-    Se você não vir as **aplicativo de Console** modelo de projeto, acesse **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+    Caso não veja o modelo de projeto **Aplicativo de Console**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
 1. No projeto, abra o arquivo de código .cpp, .cs ou .vb. Exclua o conteúdo para criar um arquivo de código vazio.
 

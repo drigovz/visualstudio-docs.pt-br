@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043759"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790375"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP usando o Visual Studio
 
@@ -76,7 +76,7 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
 
     O **Conexão remota** caixa de diálogo exibe os dispositivos na sub-rede local e em qualquer dispositivo que está conectado diretamente ao computador do Visual Studio por um cabo Ethernet.
 
-   **Especificando o dispositivo remoto na página de projetos em JavaScript ou Visual C++**
+   **Especificar o dispositivo remoto em uma página de projeto do Visual C++**
 
    ![C&#43; &#43; propriedades para depuração remota do projeto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Para remover a isenção de loopback de rede do aplicativo:
 
 - Sobre o C# e Visual Basic Depurar página de propriedades, desmarque a **permitir Loopback de rede** caixa de seleção.
 
-- Na página de propriedades JavaScript e depuração, defina o valor de **Permitir loopback de rede** como **Não**.
+- Na página de propriedades de depuração de C++, defina as **permitir Loopback de rede** valor para **não**.
 
-**Não iniciar, mas depurar meu código quando ele é iniciado (C# e Visual Basic) / Iniciar aplicativo (JavaScript e C++)**
+**Não iniciar, mas depurar meu código quando ele é iniciado (C# e Visual Basic) / iniciar o aplicativo (C++)**
 
 Para configurar a implantação para iniciar automaticamente uma sessão de depuração quando o aplicativo é iniciado:
 
 - Sobre o C# e a página de propriedades de depuração do Visual Basic, verifique o **não iniciar, mas depurar meu código quando ele é iniciado** caixa de seleção.
 
-- Na página de propriedades JavaScript e depuração, defina o valor de **Iniciar Aplicativo** como **Sim**.
+- Na página de propriedades de depuração de C++, defina a **aplicativo&lt;3}.&lt;1** valor para **Sim**.
 
 ## <a name="see-also"></a>Consulte também
 
