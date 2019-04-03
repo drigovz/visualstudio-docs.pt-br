@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cba7cf4a402b92f05f12faa39b88ab03cd5bd03b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943006"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790856"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Criar e configurar conjuntos de dados no Visual Studio
 
@@ -70,7 +70,7 @@ Este procedimento mostra como adicionar uma tabela do mesmo banco de dados que v
 
 1. Clique no nó do conjunto de dados do **Gerenciador de soluções** para abrir o **DataSet Designer** em foco.
 
-2. Clique o **fontes de dados** guia na margem esquerda do Visual Studio ou o tipo **fontes de dados** no **início rápido** caixa.
+2. Clique o **fontes de dados** guia na margem esquerda do Visual Studio ou o tipo **fontes de dados** na caixa de pesquisa.
 
 3. Clique com botão direito no nó do conjunto de dados e selecione **configurar a fonte de dados com o assistente**.
 

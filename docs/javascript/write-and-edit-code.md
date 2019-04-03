@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957829"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856626"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
 Nesta breve introdução ao editor de códigos do Visual Studio, examinaremos algumas das formas pelas quais o Visual Studio facilita a escrita, a navegação e o entendimento do código.
 
 > [!TIP]
-> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente. Dependendo do tipo de desenvolvimento de aplicativo que você estiver fazendo, talvez você precise instalar a **carga de trabalho de desenvolvimento em Node.js** com o Visual Studio.
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente. Dependendo do tipo de desenvolvimento de aplicativo que você estiver fazendo, talvez você precise instalar a **carga de trabalho de desenvolvimento em Node.js** com o Visual Studio.
 
 Este artigo pressupõe que você já esteja familiarizado com o desenvolvimento em JavaScript. Caso contrário, sugerimos que você primeiro examine um tutorial, como [Criar um aplicativo Node.js e Express](../javascript/tutorial-nodejs.md).
 
@@ -119,7 +119,7 @@ Examine os snippets de código disponíveis para a linguagem escolhendo **Editar
 ## <a name="see-also"></a>Consulte também
 
 - [Snippets de código](../ide/code-snippets.md)
-- [Navegar pelo código](../ide/navigating-code.md)
+- [Navegue pelos códigos](../ide/navigating-code.md)
 - [Estrutura de tópicos](../ide/outlining.md)
 - [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)
 - [Refatoração](../ide/refactoring-in-visual-studio.md)
