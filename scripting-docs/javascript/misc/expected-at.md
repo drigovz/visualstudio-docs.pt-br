@@ -1,5 +1,5 @@
 ---
-title: Esperado ' @' | Microsoft Docs
+title: Esperado '@' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
