@@ -2,7 +2,7 @@
 title: Guia do administrador do Visual Studio
 titleSuffix: ''
 description: Saiba mais sobre como implantar o Visual Studio em um ambiente corporativo.
-ms.date: 05/29/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324929"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790089"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guia do administrador do Visual Studio
 
@@ -30,7 +30,17 @@ Em ambientes corporativos, é comum que administradores de sistema implantem ins
 
 ## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Implantar o Visual Studio em um ambiente empresarial
 
-Você pode implantar o Visual Studio para estações de trabalho cliente, contanto que cada computador de destino atenda a [requisitos mínimos de instalação](/visualstudio/productinfo/vs2017-system-requirements-vs). Se você estiver implantando por meio de softwares como o System Center ou por meio de um arquivo em lotes, normalmente é preciso percorrer as etapas a seguir:
+::: moniker range="vs-2017"
+
+Você pode implantar o Visual Studio para estações de trabalho cliente, contanto que cada computador de destino atenda a [requisitos mínimos de instalação](/visualstudio/productinfo/vs2017-system-requirements-vs/). Se você estiver implantando por meio de softwares como o System Center ou por meio de um arquivo em lotes, normalmente é preciso percorrer as etapas a seguir:
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Você pode implantar o Visual Studio para estações de trabalho cliente, contanto que cada computador de destino atenda a [requisitos mínimos de instalação](/visualstudio/releases/2019/system-requirements/). Se você estiver implantando por meio de softwares como o System Center ou por meio de um arquivo em lotes, normalmente é preciso percorrer as etapas a seguir:
+
+::: moniker-end
 
 1. [Crie um compartilhamento de rede que contenha os arquivos de produto do Visual Studio](create-a-network-installation-of-visual-studio.md) para um local de rede.
 
