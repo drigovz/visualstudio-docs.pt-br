@@ -1,26 +1,21 @@
 ---
 title: Criando tabela de comando XML (. Arquivos VSCT) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923547"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Criando tabela de comando XML (. Arquivos de VSCT)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
   
  Quando você cria um novo VSPackage, executando o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modelo de pacote, o modelo gera um arquivo. VSCT com os elementos necessários para um comando de menu, a janela da ferramenta ou o editor personalizado, dependendo de suas seleções. Esse arquivo. VSCT, em seguida, pode ser modificado para atender aos requisitos de um VSPackage específico. Para obter exemplos de como modificar um arquivo. VSCT, consulte os exemplos [estendendo Menus e comandos](../../extensibility/extending-menus-and-commands.md).  
   
- Para criar um arquivo. VSCT em branco, consulte [como: criar um. Arquivo VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Depois de criar, adicionar elementos, atributos e valores XML para o arquivo para descrever o layout do item de comando. Para um esquema XML detalhado, consulte o [referência de esquema de XML do VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+ Para criar um arquivo. VSCT em branco, consulte [como: Criar um. Arquivo VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Depois de criar, adicionar elementos, atributos e valores XML para o arquivo para descrever o layout do item de comando. Para um esquema XML detalhado, consulte o [referência de esquema de XML do VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>Diferenças entre arquivos. ctc e. VSCT  
  Enquanto o significado por trás de marcas XML em um arquivo. VSCT é os mesmos, como aqueles em que o agora preterido o formato de arquivo. CTC, sua implementação é um pouco diferente.  
@@ -71,7 +66,7 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
   
   O novo compilador, vsct.exe, compila arquivos. ctc e. VSCT. O compilador ctc.exe antigo, no entanto, não reconhece nem compilar arquivos. VSCT.  
   
-  Você pode usar o compilador vsct.exe para converter um arquivo CTO já existente em um arquivo. VSCT. Para obter mais informações sobre isso, consulte [como: criar um. Arquivo VSCT de um existente. Arquivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Você pode usar o compilador vsct.exe para converter um arquivo CTO já existente em um arquivo. VSCT. Para obter mais informações sobre isso, consulte [como: Criar um. Arquivo VSCT de um existente. Arquivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Os elementos do arquivo. VSCT  
  A tabela de comando tem a hierarquia e os elementos a seguir:  
@@ -124,10 +119,9 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
   
  Durante o desenvolvimento, é possível que vários projetos de VSPackage seja criado e registrado na seção do registro experimental que pode levar a bagunça confusa no IDE. Para corrigir isso, você pode redefinir o hive experimental para as configurações padrão para remover todos os VSPackages e as alterações que fez o IDE. Para redefinir o hive experimental, use a ferramenta de CreateExpInstance.exe que vem com o SDK do Visual Studio. Você pode encontrá-lo em  
   
- **% PROGRAMFILES (x86) %\Visual Studio \<versão > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
  Execute a ferramenta usando a linha de comando **CreateExpInstance /Reset**. Lembre-se de que essa ferramenta remove do hive experimental todos os os VSPackages registrados não são normalmente instalados com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Consulte também  
  [Ampliar menus e comandos](../../extensibility/extending-menus-and-commands.md)
-

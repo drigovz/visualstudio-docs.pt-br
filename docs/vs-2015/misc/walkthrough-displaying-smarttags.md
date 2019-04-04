@@ -1,28 +1,23 @@
 ---
 title: 'Passo a passo: Exibindo SmartTags | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939092"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926936"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Passo a passo: Exibindo SmartTags
-Marcas inteligentes foram preteridas em favor de lâmpadas. Ver [instruções passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Marcas inteligentes foram preteridas em favor de lâmpadas. Confira [Passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Marcas inteligentes são marcas no texto que se expandem para exibir um conjunto de ações. Por exemplo, em um projeto do Visual Basic ou Visual c#, uma linha vermelha aparecerá sob uma palavra ao renomear um identificador como um nome de variável. Quando você move o ponteiro sobre o sublinhado, um botão é exibido próximo o ponteiro. Se você clicar no botão, uma ação sugerida é exibida, por exemplo, **IsRead renomear para IsReady**. Se você clicar em ação, todas as referências aos **IsRead** no projeto são renomeados **IsReady**.  
   
@@ -31,7 +26,7 @@ Marcas inteligentes foram preteridas em favor de lâmpadas. Ver [instruções pa
 > [!NOTE]
 >  Outros tipos de marcas podem ser implementados de maneira semelhante.  
   
- A instrução a seguir mostra como criar uma marca inteligente que aparece na palavra atual e tem duas ações sugeridas: **convertida em letras maiusculas** e **converter em letras minúsculas**.  
+ A instrução a seguir mostra como criar uma marca inteligente que aparece na palavra atual e tem duas ações sugeridas: **Converter em maiusculas** e **converter em letras minúsculas**.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
@@ -185,7 +180,7 @@ Marcas inteligentes foram preteridas em favor de lâmpadas. Ver [instruções pa
   
      Um botão deve ser exibido perto do ponteiro.  
   
-5.  Quando você clica no botão, duas sugeridas ações devem ser exibidas: **convertida em letras maiusculas** e **converter em letras minúsculas**. Se você clicar na primeira ação, todo o texto da palavra atual deve ser convertido em letras maiusculas. Se você clicar na segunda ação, todo o texto deve ser convertido em letras minúsculas.  
+5.  Quando você clica no botão, as duas ações sugeridas devem ser exibidas: **Converter em maiusculas** e **converter em letras minúsculas**. Se você clicar na primeira ação, todo o texto da palavra atual deve ser convertido em letras maiusculas. Se você clicar na segunda ação, todo o texto deve ser convertido em letras minúsculas.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Passo a passo: Vinculando a um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

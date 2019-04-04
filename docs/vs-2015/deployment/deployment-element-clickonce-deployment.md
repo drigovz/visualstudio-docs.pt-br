@@ -1,14 +1,9 @@
 ---
 title: '&lt;implantação&gt; elemento (implantação do ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
 - urn:schemas-microsoft-com:asm.v2#beforeApplicationStartup
@@ -26,13 +21,13 @@ ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231537"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922056"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;implantação&gt; elemento (implantação do ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,25 +38,25 @@ Identifica os atributos usados para a implantação de atualizações e exposiç
   
 ```  
   
-      <deployment   
+      <deployment   
    install  
    minimumRequiredVersion  
    mapFileExtensions  
    disallowUrlActivation  
    trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
+>   
+   <subscription>   
+         <update>   
+            <beforeApplicationStartup/>   
             <expiration  
                maximumAge  
                unit  
             />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
+         </update>    
+   </subscription>   
+   <deploymentProvider   
+      codebase   
+   />   
 </deployment>  
 ```  
   
@@ -74,11 +69,11 @@ Identifica os atributos usados para a implantação de atualizações e exposiç
 |`minimumRequiredVersion`|Opcional. Especifica a versão mínima do aplicativo que pode ser executados no cliente. Se o número de versão do aplicativo é menor que o número de versão fornecido no manifesto de implantação, o aplicativo não será executado. Números de versão devem ser especificados no formato `N.N.N.N`, onde `N` é um inteiro sem sinal. Se o `install` atributo é `false`, `minimumRequiredVersion` não deve ser definido.|  
 |`mapFileExtensions`|Opcional. Assume o padrão de `false`. Se `true`, todos os arquivos na implantação devem ter uma extensão. Deploy. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] removeremos essa extensão desativar esses arquivos, assim que ele baixa-os do servidor Web. Se você publicar seu aplicativo usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], essa extensão adiciona automaticamente a todos os arquivos. Esse parâmetro permite que todos os arquivos dentro de um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação a ser baixado de um servidor Web que bloqueia a transmissão de arquivos que terminam em "não seguras" extensões como .exe.|  
 |`disallowUrlActivation`|Opcional. Assume o padrão de `false`. Se `true`, impede que um aplicativo instalado que está sendo iniciado clicando na URL ou digitando a URL no Internet Explorer. Se o `install` atributo não estiver presente, esse atributo é ignorado.|  
-|`trustURLParameters`|Opcional. Assume o padrão de `false`. Se `true`, permite que a URL para conter parâmetros de cadeia de caracteres de consulta são passados para o aplicativo, muito como argumentos de linha de comando são passados para um aplicativo de linha de comando. Para obter mais informações, consulte [como: recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se o `disallowUrlActivation` atributo é `true`, `trustUrlParameters` deve ser excluído do manifesto, ou explicitamente definida como `false`.|  
+|`trustURLParameters`|Opcional. Assume o padrão de `false`. Se `true`, permite que a URL para conter parâmetros de cadeia de caracteres de consulta são passados para o aplicativo, muito como argumentos de linha de comando são passados para um aplicativo de linha de comando. Para obter mais informações, confira [Como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se o `disallowUrlActivation` atributo é `true`, `trustUrlParameters` deve ser excluído do manifesto, ou explicitamente definida como `false`.|  
   
  O `deployment` elemento também contém os seguintes elementos filho.  
   
-## <a name="subscription"></a>Assinatura  
+## <a name="subscription"></a>assinatura  
  Opcional. Contém o `update` elemento. O `subscription` elemento não tem atributos. Se o `subscription` elemento não existir, o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo nunca se há atualizações. Se o `install` atributo do `deployment` elemento é `false`, o `subscription` elemento será ignorado, pois um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo é iniciado a partir da rede sempre usa a versão mais recente.  
   
 ## <a name="update"></a>atualizar  
@@ -131,6 +126,3 @@ Identifica os atributos usados para a implantação de atualizações e exposiç
   
 ## <a name="see-also"></a>Consulte também  
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
-
-
-

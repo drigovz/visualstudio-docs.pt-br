@@ -1,27 +1,22 @@
 ---
 title: Estado gráfico | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923339"
 ---
 # <a name="graphics-state"></a>Estado gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entende
   
 -   Na janela de estado, no canto superior esquerdo logo abaixo a barra de título, escolha o botão que corresponde ao estilo de exibição de estado que deseja usar.  
   
-    -   **Mostrar exibição de estado de entrada de API**  
+    -   **Mostrar exibição de estado de recebimento de API**  
   
     -   **Mostrar exibição de estado lógico**  
   
@@ -77,6 +72,3 @@ A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entende
 2.  Coloque o cursor sobre o estado em que você está interessado. Um ícone de alfinete aparece à esquerda do item de estado.  
   
 3.  Escolha o ícone de pino para fixar o item de estado em vigor.
-
-
-

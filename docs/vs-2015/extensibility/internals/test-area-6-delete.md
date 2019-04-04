@@ -1,29 +1,24 @@
 ---
-title: 'Área de teste 6: Excluir | Microsoft Docs'
-ms.custom: ''
+title: 'Área de teste 6: Delete | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1498566e1afeaf1517b7ae3bd62297444c828888
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 206835d92a2fca27bed2cbb8a96b99e6b7c8a082
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923555"
 ---
-# <a name="test-area-6-delete"></a>Área de teste 6: excluir
+# <a name="test-area-6-delete"></a>Área de teste 6: Excluir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Essa área de plug-in de teste de controle de origem aborda as ações de exclusão.  
@@ -61,4 +56,3 @@ Essa área de plug-in de teste de controle de origem aborda as ações de exclus
   
 ## <a name="see-also"></a>Consulte também  
  [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

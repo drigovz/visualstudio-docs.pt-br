@@ -1,27 +1,22 @@
 ---
 title: Configuração para a criação de projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 99d9e20799f3747def12be6a40ae3b1f8269e666
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923082"
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para compilar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Várias configurações
   
  Dependências do projeto e a ordem de compilação são independentes da configuração de solução: ou seja, você só pode definir a árvore de uma dependência para todos os projetos na solução. Clicando duas vezes a solução ou projeto e selecionando o **dependências do projeto** ou **ordem de Build do projeto** opção abre o **dependências do projeto** caixa de diálogo. Ele também pode ser aberto na **projeto** menu.  
   
- ![Dependências do projeto](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Project Dependencies](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Dependências do projeto  
   
  Dependências do projeto determinam a ordem na qual os projetos são compilados. Use a guia de ordem de Build na caixa de diálogo para exibir a ordem exata em que projetos dentro de uma solução de build e use a guia dependências para modificar a ordem de compilação.  
@@ -68,4 +63,3 @@ Dependências do projeto
  [Gerenciar opções de configuração](../../extensibility/internals/managing-configuration-options.md)   
  [Configuração de projeto para gerenciar a implantação](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [Configuração do projeto para saída](../../extensibility/internals/project-configuration-for-output.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Renomear a refatoração (c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274957"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926893"
 ---
 # <a name="rename-refactoring-c"></a>Refatoração Renomear (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49274957"
 |Exibição de Classe|Quando você seleciona um identificador na exibição de classe, a refatoração de renomeação está disponível no menu de atalho e **refatorar** menu.|  
 |Pesquisador de Objetos|Quando você seleciona um identificador no Pesquisador de objetos, refatoração de renomeação está disponível apenas a **refatorar** menu.|  
 |Grade de propriedade do Designer de formulários do Windows|No **grade de propriedade** do Designer de formulários do Windows, alterando o nome de um controle iniciará uma operação de renomeação para esse controle. O **Renomear** caixa de diálogo não aparecerá.|  
-|Gerenciador de Soluções|Na **Gerenciador de soluções**, um **Renomear** comando está disponível no menu de atalho. Se o arquivo de origem selecionado contém uma classe cujo nome de classe é o mesmo que o nome do arquivo, você pode usar esse comando para renomear o arquivo de origem e executar a refatoração de renomeação de simultaneamente.<br /><br /> Por exemplo, se você criar um aplicativo do padrão baseado em Windows e, em seguida, renomeie Form1.cs para TestForm.cs, o nome do arquivo de origem Form1.cs será alterado para TestForm.cs e a classe Form1 e todas as referências para que a classe será renomeada para TestForm. **Observação:** as **desfazer** comando (CTRL + Z) apenas cancelará a refatoração de renomeação no código e será não alterar o nome do arquivo de volta para o nome original. <br /><br /> Se o arquivo de origem selecionado não contém uma classe cujo nome é o mesmo que o nome do arquivo, o **Renomear** comando **Gerenciador de soluções** apenas renomeará o arquivo de origem e não executará renomeação refatoração.|  
+|Gerenciador de Soluções|Na **Gerenciador de soluções**, um **Renomear** comando está disponível no menu de atalho. Se o arquivo de origem selecionado contém uma classe cujo nome de classe é o mesmo que o nome do arquivo, você pode usar esse comando para renomear o arquivo de origem e executar a refatoração de renomeação de simultaneamente.<br /><br /> Por exemplo, se você criar um aplicativo do padrão baseado em Windows e, em seguida, renomeie Form1.cs para TestForm.cs, o nome do arquivo de origem Form1.cs será alterado para TestForm.cs e a classe Form1 e todas as referências para que a classe será renomeada para TestForm. **Observação:**  O **desfazer** comando (CTRL + Z) apenas cancelará a refatoração de renomeação no código e será não alterar o nome do arquivo de volta para o nome original. <br /><br /> Se o arquivo de origem selecionado não contém uma classe cujo nome é o mesmo que o nome do arquivo, o **Renomear** comando **Gerenciador de soluções** apenas renomeará o arquivo de origem e não executará renomeação refatoração.|  
   
 ## <a name="rename-operations"></a>Operações de renomeação  
  Quando você executa **Renomear**, o mecanismo de refatoração executa um específico da operação de renomeação cada símbolo de código, conforme descrito na tabela a seguir.  
@@ -53,8 +48,8 @@ ms.locfileid: "49274957"
 |-----------------|----------------------|  
 |Campo|Altera a declaração e usos do campo para o novo nome.|  
 |variável local|Altera a declaração e usos da variável para o novo nome.|  
-|Método|Altera o nome do método e todas as referências a esse método para o novo nome. **Observação:** quando você renomeia um método de extensão, a operação de renomeação é propagada para todas as instâncias do método que estão no escopo, independentemente se o método de extensão está sendo usado como um método estático ou um método de instância. Para obter mais informações, consulte [Métodos de extensão](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Namespace|Altera o nome do namespace para o novo nome na declaração, todas as `using` instruções e nomes totalmente qualificados. **Observação:** ao renomear um namespace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também atualiza o **Namespace padrão** propriedade no **aplicativo** página do **Project Designer**. Essa propriedade não pode ser redefinida, selecionando **desfazer** da **editar** menu. Para redefinir a **Namespace padrão** valor da propriedade, você deve modificar a propriedade nas **Designer de projeto**. Para obter mais informações, consulte [página de aplicativo](../ide/reference/application-page-project-designer-csharp.md).|  
+|Método|Altera o nome do método e todas as referências a esse método para o novo nome. **Observação:**  Quando você renomeia um método de extensão, a operação de renomeação é propagada para todas as instâncias do método que estão no escopo, independentemente se o método de extensão está sendo usado como um método estático ou um método de instância. Para obter mais informações, consulte [Métodos de extensão](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Namespace|Altera o nome do namespace para o novo nome na declaração, todas as `using` instruções e nomes totalmente qualificados. **Observação:**  Ao renomear um namespace, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também atualiza a **Namespace padrão** propriedade o **aplicativo** página do **Designer de projeto**. Essa propriedade não pode ser redefinida, selecionando **desfazer** da **editar** menu. Para redefinir a **Namespace padrão** valor da propriedade, você deve modificar a propriedade nas **Designer de projeto**. Para obter mais informações, consulte [página de aplicativo](../ide/reference/application-page-project-designer-csharp.md).|  
 |Propriedade|Altera a declaração e usos da propriedade para o novo nome.|  
 |Tipo|Altera todas as declarações e todos os usos do tipo para o novo nome, incluindo construtores e destruidores. Para tipos parciais, a operação de renomeação será propagado para todas as partes.|  
   
@@ -125,13 +120,13 @@ ms.locfileid: "49274957"
   
 3.  Digite o atalho de teclado SHIFT + ALT + F10 e, em seguida, pressione a seta para baixo para exibir o menu de marca inteligente.  
   
-     -ou-  
+     - ou -  
   
      Mova o ponteiro do mouse sobre o aviso de marca inteligente para exibir a marca inteligente. Em seguida, mova o ponteiro do mouse sobre a marca inteligente e clique na seta para baixo para exibir o menu de marca inteligente.  
   
 4.  Selecione o **renomear '\<identifer1 >' para '\<identifier2 >'** item de menu para invocar refatoração de renomeação sem uma visualização das alterações ao seu código. Todas as referências aos  **\<identifer1 >** serão automaticamente atualizadas para  **\<identifier2 >**.  
   
-     -ou-  
+     - ou -  
   
      Selecione o **renomear com visualização** item de menu para invocar refatoração Renomear com uma visualização das alterações ao seu código. O **visualizar alterações** caixa de diálogo será exibida.  
   

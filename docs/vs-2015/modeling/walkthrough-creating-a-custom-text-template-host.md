@@ -1,12 +1,9 @@
 ---
 title: 'Passo a passo: Criando um Host de modelo de texto personalizado | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,15 +11,15 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926925"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>Instruções passo a passo: criando um host de modelo de texto personalizado
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Passo a passo: Criando um host de modelo de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um *modelo de texto*<em>host</em> fornece um ambiente que permite que o *mecanismo de transformação do modelo de texto* para ser executado. O host é responsável por gerenciar a interação do mecanismo com o sistema de arquivos. O mecanismo ou *processador de diretriz* que precisa de um arquivo ou assembly podem solicitar um recurso do host. O host pode pesquisar em diretórios e no cache de assembly global para localizar o recurso solicitado. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).  
@@ -719,7 +716,7 @@ Um *modelo de texto*<em>host</em> fornece um ambiente que permite que o *mecanis
   
 4.  Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] somente, abra o **Project** menu e clique em **as propriedades de CustomHost**. No **objeto de inicialização** , clique em **Customhost**.  
   
-5.  Sobre o **arquivo** menu, clique em **Salvar tudo**.  
+5.  No menu **Arquivo**, clique em **Salvar tudo**.  
   
 6.  No menu **Compilar**, clique em **Compilar Solução**.  
   
@@ -820,10 +817,7 @@ Um *modelo de texto*<em>host</em> fornece um ambiente que permite que o *mecanis
     ```  
   
 ## <a name="next-steps"></a>Próximas etapas  
- Neste passo a passo, você criou um host de transformação de modelo de texto que oferece suporte à funcionalidade de transformação básica. Você pode expandir o host para oferecer suporte a modelos de texto que chamam processadores de diretriz personalizados ou gerados. Para obter mais informações, consulte [instruções passo a passo: conectando um Host a um processador de diretriz gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+ Neste passo a passo, você criou um host de transformação de modelo de texto que oferece suporte à funcionalidade de transformação básica. Você pode expandir o host para oferecer suporte a modelos de texto que chamam processadores de diretriz personalizados ou gerados. Para obter mais informações, confira [Passo a passo: Conectando um Host a um processador de diretriz gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

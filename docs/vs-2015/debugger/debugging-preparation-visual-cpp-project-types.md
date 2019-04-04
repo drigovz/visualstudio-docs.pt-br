@@ -1,14 +1,9 @@
 ---
-title: 'Preparação da depuração: Tipos de projeto do Visual C++ | Microsoft Docs'
-ms.custom: ''
+title: 'Preparação de depuração: Tipos de projeto do Visual C++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 802b34d47501d3538008838f9bb6ddec93ac827a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 59c7e42e005e423a27adc7676a05ebc03cd068d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923117"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Preparação de depuração: tipos de projeto Visual C++
+# <a name="debugging-preparation-visual-c-project-types"></a>Preparação de depuração: Tipos de projeto do Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esta seção descreve como depurar os tipos de projeto básicos criados pelos modelos de projeto do [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
@@ -57,13 +52,13 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
   
 |Nome da Propriedade|Configuração|  
 |-------------------|-------------|  
-|**Optimization**|Definido como **desabilitado (/ 0D).** O código otimizado é mais difícil de depurar porque as instruções geradas não correspondem diretamente ao código-fonte. Se você achar que seu programa tem um bug que aparece apenas em código otimizado, você pode ativar essa configuração, mas lembre-se de que o código mostrado na **desmontagem** janela é gerada de origem otimizada que pode não corresponder ao que você vê no seu código-fonte Windows. Outros recursos, como depuração, podem não se comportar como esperado.|  
+|**Optimization**|Definido como **Desabilitado (/0d).** O código otimizado é mais difícil de depurar porque as instruções geradas não correspondem diretamente ao código-fonte. Se você descobrir que seu programa tem um bug que aparece apenas em código otimizado, habilite essa configuração, mas lembre-se de que o código mostrado na janela **Desmontagem** é gerado da origem otimizada que pode não corresponder ao que é visto em suas janelas de origem. Outros recursos, como depuração, podem não se comportar como esperado.|  
   
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>Propriedades de configuração &#124; vinculador &#124; nó de depuração  
   
 |Nome da Propriedade|Configuração|  
 |-------------------|-------------|  
-|**Gerar informações de depuração**|Você sempre deve definir essa opção como **Sim (/debug)** para criar os arquivos necessários para depuração e símbolos de depuração. Quando o aplicativo entra em produção, você pode defini-lo como desativado.|  
+|**Gerar informações de depuração**|Você sempre deve definir essa opção como **Sim (/DEBUG)** para criar os símbolos e os arquivos de depuração necessários para a depuração. Quando o aplicativo entra em produção, você pode defini-lo como desativado.|  
   
  [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
@@ -78,51 +73,48 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
   
 1.  Abra o projeto no Visual Studio.  
   
-2.  Sobre o **Debug** menu, escolha **iniciar**.  
+2.  No menu **Depurar**, escolha **Iniciar**.  
   
 3.  Depuração usando as técnicas discutidas [Noções básicas do depurador](../debugger/debugger-basics.md).  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Para definir manualmente uma configuração de depuração  
   
-1. Sobre o **modo de exibição** menu, clique em **páginas de propriedade**.  
+1. No menu **Exibir**, clique em **Páginas de Propriedades**.  
   
-2. Clique o **propriedades de configuração** nó para abri-lo se ele não ainda estiver  
+2. Clique no nó **Propriedades de Configuração** para abri-lo se ele não ainda estiver aberto  
   
-3. Selecione **gerais**e defina o valor da **saída** linha à **depurar**.  
+3. Selecione **Geral** e defina o valor da linha **Saída** para **Depurar**.  
   
-4. Abra o **C/C++** nó e selecione **geral**.  
+4. Abra o nó **C/C++** e selecione **Geral**.  
   
-    No **depurar** linha que você especifique o tipo de informações de depuração para ser gerado pelo compilador. Você pode escolher os valores incluem **banco de dados do programa (/Zi)** ou **banco de dados do programa para edição & continuar (/ZI)**.  
+    Na linha **Depurar**, especifique o tipo de informações de depuração a ser geradas pelo compilador. Você pode escolher valores como **Banco de dados do programa (/Zi)** ou **Banco de dados do programa para edição e continuação (/ZI)**.  
   
-5. Selecione **otimização**e, nas **otimização** linha, selecione **desabilitado (/ 0D)** na lista suspensa.  
+5. Selecione **Otimização** e, na linha **Otimização**, selecione **Desabilitado (/0d)** na lista suspensa.  
   
     O código otimizado é mais difícil de depurar porque as instruções geradas não correspondem diretamente ao código-fonte. Se você descobrir que seu programa tem um bug que aparece apenas em código otimizado, poderá ativar essa configuração, mas lembre-se de que o código mostrado na janela Desmontagem é gerado de origem otimizada que pode não corresponder ao que é visto em suas janelas de origem. Os recursos como o depuração provavelmente mostram incorretamente pontos de interrupção e ponto de execução.  
   
-6. Abra o **vinculador** nó e selecione **depuração**. No primeiro **Generate** linha, selecione **Sim (/debug)** na lista suspensa. Sempre defina isso quando você estiver depurando.  
+6. Abra o nó **Vinculador** e selecione **Depuração**. Na primeira linha **Gerar**, selecione **Sim (/DEBUG)** na lista suspensa. Sempre defina isso quando você estiver depurando.  
   
    Para obter mais informações, consulte[configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
    [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplicativos do Windows Forms (.NET)  
- O **aplicativo de formulários do Windows (.NET)** modelo cria um [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplicativo Windows Forms. Para obter mais informações, consulte [Como criar um projeto de aplicativos do Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ O modelo **Aplicativo do Windows Forms (.NET)** cria um aplicativo do Windows Forms do [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Para obter mais informações, confira [Como: Criar um projeto de aplicativo do Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Depurar esse tipo de aplicativo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é semelhante a depurar em aplicativos gerenciados do Windows Forms.  
   
- Quando você cria um projeto do Windows Forms com o modelo de projeto, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria automaticamente as configurações necessárias para as configurações de depuração e versão. Se necessário, você pode alterar essas configurações na  **\<nome do projeto > páginas de propriedade** caixa de diálogo. Para obter mais informações, consulte [Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Quando você cria um projeto do Windows Forms com o modelo de projeto, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria automaticamente as configurações necessárias para as configurações de depuração e versão. Se necessário, você poderá alterar essas configurações na caixa de diálogo **\<nome do projeto > Páginas de Propriedades**. Para obter mais informações, confira [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).  
   
  Para obter mais informações, consulte [configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- Outro modo de depurar um aplicativo do Windows Forms 2 é iniciar o aplicativo fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e anexar a ele. Para obter mais informações, consulte [anexando a um programa em execução ou vários programas](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Outro modo de depurar um aplicativo do Windows Forms 2 é iniciar o aplicativo fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e anexar a ele. Para obter mais informações, confira [Anexando a um programa ou a vários programas em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
  [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Consulte também  
  [Noções básicas do depurador](../debugger/debugger-basics.md)   
- [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Anexando a um programa em execução ou vários programas](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Anexando a um programa ou a vários programas em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Como: criar um projeto de aplicativo do Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)
-
-
-
+ [Como: Criar um projeto de aplicativo do Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
