@@ -1,12 +1,9 @@
 ---
 title: Exibir dados relacionados em aplicativos WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923340"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Exibir dados relacionados em aplicativos WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ Em alguns aplicativos, você talvez queira trabalhar com dados que vêm de vári
   
 1.  Sobre o **dados** menu, clique em **Mostrar fontes de dados** para abrir o **fontes de dados** janela.  
   
-2.  Clique em **Add New Data Source**e conclua a **configuração de fonte de dados** assistente.  
+2.  Clique em **Adicionar Nova Fonte de Dados** e complete o **Assistente de Configuração de Fonte de Dados**.  
   
 3.  Abra o designer WPF e certifique-se de que o designer contém um contêiner que é um destino de soltar válido para os itens na **fontes de dados** janela.  
   
@@ -70,5 +67,4 @@ Em alguns aplicativos, você talvez queira trabalhar com dados que vêm de vári
  [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Criar tabelas de pesquisa em aplicativos WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [Passo a passo: exibindo dados relacionados em um aplicativo WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Passo a passo: Exibindo dados relacionados em um aplicativo WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

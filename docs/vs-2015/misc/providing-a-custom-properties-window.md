@@ -1,26 +1,21 @@
 ---
 title: Fornecendo uma janela de propriedades personalizadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - property browsers, providing
 - Properties window, providing your own
 ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 8b3aeae11e087b6a6bd662ed32564d93062426df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 31c33bfafeba1210e6cd70db48643a6329c21a45
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924306"
 ---
 # <a name="providing-a-custom-properties-window"></a>Fornecendo uma janela de propriedades personalizadas
 É possível fornecer seus próprios **propriedades** janela para um sistema de projeto determinado, em vez de ampliar a **propriedades** janela fornecida pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE). O cenário mais frequentemente encontrado é quando você mesmo implementa o objeto localizado no quadro de janela.  

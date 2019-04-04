@@ -1,14 +1,9 @@
 ---
 title: BuildProjectOnLoad (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
@@ -17,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5883eebec4ad5266258de2c0db456ea516c5b53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 209f015103a291940f2d43ccdbfd140d71c9e8ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809955"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922549"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (Modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica se deve compilar o projeto imediatamente após sua criação.  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -94,5 +89,4 @@ Especifica se deve compilar o projeto imediatamente após sua criação.
 ## <a name="see-also"></a>Consulte também  
  [Elemento TemplateContent (modelos do Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
+ [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
