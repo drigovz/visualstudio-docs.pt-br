@@ -1,14 +1,9 @@
 ---
 title: Escolher entre VSPackages compartilhados e com controle de versão | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SxS
 - side-by-side installation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922066"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Escolhendo entre VSPackages compartilhados e com controle de versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Diferentes versões do Visual Studio podem coexistir no mesmo computador. Os VSP
   
     -   Programar o VSPackage para adaptar-se para a versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no qual ele está sendo executado. Em seguida, se as consultas para os serviços mais recentes falhar, o VSPackage pode oferecer outros serviços que têm suporte em versões mais antigas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Registre o VSPackage adequadamente. Para obter mais informações, consulte [o VSPackage](../extensibility/internals/vspackage-registration.md) e [gerenciado o VSPackage](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+-   Registre o VSPackage adequadamente. Para obter mais informações, consulte [o VSPackage](../extensibility/internals/vspackage-registration.md) e [gerenciado o VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 -   Registre extensões de arquivo adequadamente. Para obter mais informações, consulte [registrando extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
@@ -71,4 +66,3 @@ Diferentes versões do Visual Studio podem coexistir no mesmo computador. Os VSP
 ## <a name="see-also"></a>Consulte também  
  [Instalar VSPackages com o Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
  [Gerenciamento de componente](../extensibility/internals/component-management.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Criando e usando políticas do Check-In de análise de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: 3fa5a849-e05f-4e31-8ba3-b014c889d94d
@@ -16,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922812"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Criando e usando políticas de check-in de análise do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Quando você usa o controle de versão do Team Foundation (TFVC), você pode cri
  Criar código de políticas de check-in de análise usando as configurações de projeto de equipe do [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Políticas de check-in são especificadas e impostas para um projeto de equipe, mas as execuções de análise de código são configuradas e executadas para projetos de código individuais nos computadores de desenvolvimento local. Esta seção descreve como especificar políticas análise de código check-in para um projeto de equipe e como implementar políticas de análise de código personalizado para código gerenciado.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como criar ou atualizar políticas de check-in de análise de código padrão](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
+ [Como: Criar ou atualizar as políticas do Check-in de análise de código padrão](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
  Explica as etapas que você pode usar para definir e modificar uma política de análise de código para um projeto de equipe.  
   
  [Implementando políticas de check-in personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)  
@@ -45,13 +40,10 @@ Quando você usa o controle de versão do Team Foundation (TFVC), você pode cri
  [Compatibilidade da versão para políticas de check-in de análise de código](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md)  
  Explica os problemas de compatibilidade de check-in de análise de código entre versões do [!INCLUDE[vstsLong](../includes/vstslong-md.md)].  
   
- [Como personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ [Como: Personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
  Explica como adicionar palavras e tokens para o dicionário que é referenciado em regras de nomenclatura de análise de código.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Definir e impor restrições de qualidade](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [Melhorando a qualidade do código com políticas de check-in do projeto de equipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)
-
-
-

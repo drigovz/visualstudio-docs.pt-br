@@ -1,12 +1,9 @@
 ---
 title: Programando com a API UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, API
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d5670b0c0806d59119e1a1af87bae5642255c5a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922718"
 ---
 # <a name="programming-with-the-uml-api"></a>Programando com a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,13 +64,10 @@ A UML API do Visual Studio permite escrever código para criar, ler e atualizar 
 ||(outros namespaces)|Recomendado somente para uso avançado.|  
 |Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|<xref:Microsoft.VisualStudio.TeamFoundation.WorkItemTracking>|[Links para itens de trabalho](../modeling/define-a-work-item-link-handler.md).|  
 |Microsoft.TeamFoundation.WorkItemTracking.Client|<xref:Microsoft.TeamFoundation.WorkItemTracking.Client>|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|  
-|TeamFoundation|<xref:Microsoft.TeamFoundation.Client>|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|  
+|Microsoft.TeamFoundation.Client|<xref:Microsoft.TeamFoundation.Client>|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|  
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Exportar e importar para componentes de MEF](../modeling/define-and-install-a-modeling-extension.md)|  
 |System.Linq|<xref:System.Linq>|[Fácil manipulação de coleções, especialmente ao lidar com relações](../modeling/navigate-relationships-with-the-uml-api.md).|  
   
 ## <a name="see-also"></a>Consulte também  
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Referência de API para extensibilidade de modelagem UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Menus de contexto (XML Schema Explorer) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922536"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus de contexto (XML Schema Explorer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,8 +60,8 @@ Os seguintes itens de menu de contexto são usados para executar pesquisas esque
   
 |Opção|Descrição|  
 |------------|-----------------|  
-|**Mostrar na exibição de gráfico**|Abre a exibição do gráfico. Se o nó selecionado não está no espaço de trabalho, adicione-o ao espaço de trabalho e selecione o nó.|  
-|**Mostrar no modo de exibição do modelo de conteúdo**|Abre a exibição do modelo de conteúdo. Se o nó selecionado não está no espaço de trabalho, adicione-o ao espaço de trabalho e selecione o nó.|  
+|**Mostrar na exibição de gráfico**|Abre a exibição do gráfico. Se o nó selecionado não está no workspace, adicione-o ao workspace e selecione o nó.|  
+|**Mostrar no modo de exibição do modelo de conteúdo**|Abre a exibição do modelo de conteúdo. Se o nó selecionado não está no workspace, adicione-o ao workspace e selecione o nó.|  
 |**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|  
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|  
   
@@ -101,7 +96,7 @@ Os seguintes itens de menu de contexto são usados para executar pesquisas esque
 |**Vá para o atributo Original**|Para referências de atributo, navega para a definição real do atributo.|  
 |**Mostrar todas as referências**|Para atributos globais, localiza e realça todas as referências (outros atributos que têm `ref="selectedAttribute"`) para o atributo selecionado.|  
   
-## <a name="node-type-attribute-group"></a>Tipo de nó: Grupo de atributo  
+## <a name="node-type-attribute-group"></a>Tipo de nó: Grupo de atributos  
  Além das opções do nó globais descritos acima, o menu de contexto para nós do grupo de atributo tem as seguintes opções:  
   
 |Opção|Descrição|  
@@ -122,6 +117,3 @@ Os seguintes itens de menu de contexto são usados para executar pesquisas esque
 ## <a name="see-also"></a>Consulte também  
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)   
  [Pesquisando pelo conjunto de esquema](../xml-tools/searching-the-schema-set.md)
-
-
-

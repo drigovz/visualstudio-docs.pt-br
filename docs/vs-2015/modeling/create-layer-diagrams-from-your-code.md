@@ -1,12 +1,9 @@
 ---
 title: Criar diagramas de camada do seu código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,13 +13,13 @@ ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
 caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0a1c5af9394f36f7f89a20b711657a3ca76e8d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923363"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Criar diagramas de camada por meio de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +48,7 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
   
 4.  Na **adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente na solução.  
   
-     -ou-  
+     - ou -  
   
      Escolher **criar um novo projeto de modelagem** para adicionar um novo projeto de modelagem à solução.  
   
@@ -69,9 +66,9 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
   
 |**To**|**Siga estas etapas**|  
 |------------|----------------------------|  
-|Criar uma camada para um único artefato|<ol><li>Arraste o item para o diagrama de camada destas origens:<br /><br /> <ul><li>**Gerenciador de Soluções**<br /><br />         Por exemplo, é possível arrastar arquivos ou projetos.</li><li>Mapas de código<br /><br />         Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md) e [mapas de código de uso para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Exibição de classe** ou **Pesquisador de objetos**</li></ul><br />     Uma camada é exibida no diagrama e está vinculada ao artefato.</li><li>Renomeie a camada para refletir as responsabilidades do código ou dos artefatos associados.</li></ol> **Importante:** arrastar arquivos binários para o diagrama de camada não adiciona automaticamente suas referências ao projeto de modelagem. Você deve adicionar manualmente os arquivos binários que você deseja validar ao projeto de modelagem. **Para adicionar arquivos binários ao projeto de modelagem** <ol><li>Na **Gerenciador de soluções**, abra o menu de atalho para o projeto de modelagem e, em seguida, escolha **Add Existing Item**.</li><li>No **Adicionar Item existente** caixa de diálogo, navegue até os arquivos binários, selecioná-los e, em seguida, escolha **Okey**.     Os arquivos binários são exibidos no projeto de modelagem.</li><li>Na **Gerenciador de soluções**, escolha um arquivo binário que você adicionou e, em seguida, pressione **F4** para abrir o **propriedades** janela.</li><li>Em cada arquivo binário, defina as **ação de compilação** propriedade **validar**.</li></ol>|  
+|Criar uma camada para um único artefato|<ol><li>Arraste o item para o diagrama de camada destas origens:<br /><br /> <ul><li>**Gerenciador de Soluções**<br /><br />         Por exemplo, é possível arrastar arquivos ou projetos.</li><li>Mapas de código<br /><br />         Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md) e [mapas de código de uso para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Exibição de classe** ou **Pesquisador de objetos**</li></ul><br />     Uma camada é exibida no diagrama e está vinculada ao artefato.</li><li>Renomeie a camada para refletir as responsabilidades do código ou dos artefatos associados.</li></ol> **Importante:**  Arrastar arquivos binários para o diagrama de camada não adiciona automaticamente suas referências ao projeto de modelagem. Você deve adicionar manualmente os arquivos binários que você deseja validar ao projeto de modelagem. **Para adicionar arquivos binários ao projeto de modelagem** <ol><li>Na **Gerenciador de soluções**, abra o menu de atalho para o projeto de modelagem e, em seguida, escolha **Add Existing Item**.</li><li>No **Adicionar Item existente** caixa de diálogo, navegue até os arquivos binários, selecioná-los e, em seguida, escolha **Okey**.     Os arquivos binários são exibidos no projeto de modelagem.</li><li>Na **Gerenciador de soluções**, escolha um arquivo binário que você adicionou e, em seguida, pressione **F4** para abrir o **propriedades** janela.</li><li>Em cada arquivo binário, defina as **ação de compilação** propriedade **validar**.</li></ol>|  
 |Criar uma única camada para todos os artefatos selecionados|Arraste todos os artefatos para o diagrama de camada ao mesmo tempo.<br /><br /> Uma camada é exibida no diagrama e está vinculada a todos os artefatos.|  
-|Criar uma camada para cada artefato selecionado|Pressione e segure a **SHIFT** pressionada ao arrastar todos os artefatos para o diagrama de camada ao mesmo tempo. **Observação:** se você usar o **SHIFT** chave para selecionar um intervalo de itens, solte a tecla depois de selecionar os artefatos. Mantenha-o pressionado novamente ao arrastar os artefatos para o diagrama. <br /><br /> Uma camada para cada artefato é exibida no diagrama e está vinculada a cada artefato.|  
+|Criar uma camada para cada artefato selecionado|Pressione e segure a **SHIFT** pressionada ao arrastar todos os artefatos para o diagrama de camada ao mesmo tempo. **Observação:**  Se você usar o **SHIFT** chave para selecionar um intervalo de itens, solte a tecla depois de selecionar os artefatos. Mantenha-o pressionado novamente ao arrastar os artefatos para o diagrama. <br /><br /> Uma camada para cada artefato é exibida no diagrama e está vinculada a cada artefato.|  
 |Adicionar um artefato a uma camada|Arraste o artefato à camada.|  
 |Criar uma nova camada desvinculada|No **caixa de ferramentas**, expanda o **diagrama de camada** seção e, em seguida, arraste uma **camada** ao diagrama de camada.<br /><br /> Para adicionar várias camadas, clique duas vezes na ferramenta. Quando tiver terminado, escolha o **ponteiro** ferramenta ou pressione a **ESC** chave.<br /><br /> - ou -<br /><br /> Abra o menu de atalho do diagrama de camada, escolha **Add**e, em seguida, escolha **camada**.|  
 |Criar camadas aninhadas|Arraste uma camada existente para outra camada.<br /><br /> - ou -<br /><br /> Abra o menu de atalho para uma camada, escolha **Add**e, em seguida, escolha **camada**.|  
@@ -140,7 +137,7 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
   
 ## <a name="see-also"></a>Consulte também  
  [Vídeo do Channel 9: Projetar e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073)   
- [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)   
- [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramas de camada: Referência](../modeling/layer-diagrams-reference.md)   
+ [Diagramas de camada: Diretrizes](../modeling/layer-diagrams-guidelines.md)   
  [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)   
  [Visualizar código](../modeling/visualize-code.md)

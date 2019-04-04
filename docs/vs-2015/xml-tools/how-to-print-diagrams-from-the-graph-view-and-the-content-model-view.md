@@ -1,27 +1,22 @@
 ---
 title: 'Como: Imprimir diagramas da exibição de gráfico e o modo de exibição do modelo de conteúdo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 53774a410a05244f4b005fac1b14fe5776794a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 50b38a5ca5c37fe2b372f863f695a968055895ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58921813"
 ---
-# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Como: Diagramas de impressão do modo de gráfico e exibir o modelo de conteúdo
+# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Como: Imprimir diagramas dos modos de exibição de gráficos e do modo de exibição de modelo de conteúdo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -40,7 +35,4 @@ Este tópico descreve como imprimir um diagrama do modo de gráfico ou do modo d
 ## <a name="see-also"></a>Consulte também  
  [Exibição de gráfico](../xml-tools/graph-view.md)   
  [Modo de exibição do modelo de conteúdo](../xml-tools/content-model-view.md)   
- [O espaço de trabalho do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)
-
-
-
+ [O workspace do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)
