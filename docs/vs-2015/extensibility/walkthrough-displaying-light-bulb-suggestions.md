@@ -1,35 +1,30 @@
 ---
 title: 'Passo a passo: Exibir sugestões de lâmpada | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7e5bf7ad795615e70e990dd29c05f5efe3a1c78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e13ce65888ace73ca58bfbc5690330fd8265ad8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781095"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922817"
 ---
-# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Passo a passo: exibindo sugestões de lâmpada
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Passo a passo: Exibindo sugestões de lâmpada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 As lâmpadas são ícones usados no editor do Visual Studio que expanda para exibir um conjunto de ações, por exemplo, correções para problemas identificados pelo analisadores de código internos ou refatoração de código.  
   
  Nos editores do Visual c# e Visual Basic, você também pode usar o .NET Compiler Platform ("Roslyn") para gravar e empacotar seus próprios analisadores de código com as ações que exibem as lâmpadas automaticamente. Para obter mais informações, consulte:  
   
-- [Como Gravar um c# diagnóstico e a correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Como: Gravar um c# diagnóstico e a correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [Como Gravar um diagnóstico do Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Como: Gravar um diagnóstico do Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   Outras linguagens como C++ também fornecem as lâmpadas para algumas ações rápidas, como uma sugestão para criar uma implementação de stub dessa função.  
   
@@ -41,7 +36,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
   
   ![visualização da lâmpada](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  Você pode usar as lâmpadas para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover as chaves para uma nova linha de abertura ou movê-los ao final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **convertida em letras maiusculas** e **converter em letras minúsculas**.  
+  Você pode usar as lâmpadas para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover as chaves para uma nova linha de abertura ou movê-los ao final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **Converter em maiusculas** e **converter em letras minúsculas**.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -370,4 +365,3 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
      ![testar a lâmpada expandida](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Se você clicar na primeira ação, todo o texto da palavra atual deve ser convertido em letras maiusculas. Se você clicar na segunda ação, todo o texto deve ser convertido em letras minúsculas.
-

@@ -1,14 +1,9 @@
 ---
 title: 'CA2202: Não descartar objetos várias vezes | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2202
 - Do not dispose objects multiple times
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: de3bc29e6d843532e4c15db1e33673d4f63c5179
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b5968c0ba577893bae87e67dee3aa0e8a178e41
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830711"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923673"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: não descartar objetos várias vezes
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Não descartar objetos várias vezes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49830711"
  Um implementado corretamente <xref:System.IDisposable.Dispose%2A> método pode ser chamado várias vezes sem lançar uma exceção. No entanto, isso não é garantido e para evitar a geração de um <xref:System.ObjectDisposedException?displayProperty=fullName> você não deve chamar <xref:System.IDisposable.Dispose%2A> mais de uma vez em um objeto.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2000: descartar objetos antes de perder o escopo](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA2000: Descartar objetos antes de perder escopo](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, altere a implementação assim que independentemente do caminho do código, <xref:System.IDisposable.Dispose%2A> é chamado apenas uma vez para o objeto.
@@ -90,6 +85,3 @@ finally
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.IDisposable?displayProperty=fullName> [Padrão de descarte](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-

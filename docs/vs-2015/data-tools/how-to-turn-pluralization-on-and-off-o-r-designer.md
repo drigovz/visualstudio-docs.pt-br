@@ -1,25 +1,22 @@
 ---
-title: 'Como: ative em pluralization e off (Object Relational Designer) | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Ative em pluralization e off (Object Relational Designer) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4491f25a861b8556ae5018e526349d6a17187a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ff3f206f57a544053498def16318e0ed65b64ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922440"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Como: ative em pluralization e off (O/R Designer)
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -34,12 +31,12 @@ Por padrão, quando você arrasta objetos de banco de dados que têm nomes que t
   
 1.  No menu **Ferramentas**, clique em **Opções**.  
   
-2.  No **opções** diálogo caixa, expanda **ferramentas de banco de dados**.  
+2.  Na caixa de diálogo **Opções**, expanda **Ferramentas de Banco de Dados**.  
   
 > [!NOTE]
->  Selecione **Mostrar todas as configurações** se o **ferramentas de banco de dados** nó não está visível.  
+>  Selecione **Mostrar todas as configurações** se o nó de **Ferramentas de Banco de Dados** não estiver visível.  
   
-1.  Clique em **Relational Designer**.  
+1.  Clique em **Designer Relacional de Objetos**.  
   
 2.  Definir **Pluralização de nomes** para **Enabled** = **False** para definir o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] para que ele não altera os nomes de classe.  
   
@@ -49,4 +46,3 @@ Por padrão, quando você arrasta objetos de banco de dados que têm nomes que t
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

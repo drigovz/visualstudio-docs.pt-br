@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Baixando Assemblies satélite por demanda com a API de implantação do ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,28 +21,28 @@ ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e6de316fd0ff66e0815da7fa935d21e23a8285e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77795c93679bddb21a56b8c7a64a11ceb6aa1e6c
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306326"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58923226"
 ---
-# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Instruções passo a passo: baixando assemblies satélite por demanda com a API de implantação do ClickOnce
+# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Baixando Assemblies satélite por demanda com a API de implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aplicativos do Windows Forms podem ser configurados para várias culturas com o uso de assemblies satélite. Um *assembly satélite* é um assembly que contém os recursos de aplicativo para uma cultura que não seja a cultura padrão do aplicativo.  
   
  Conforme discutido em [localizando aplicativos do ClickOnce](../deployment/localizing-clickonce-applications.md), você pode incluir vários assemblies de satélite para várias culturas dentro do mesmo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação. Por padrão, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] baixará todos os assemblies de satélite em sua implantação para o computador cliente, embora um único cliente provavelmente exigirá apenas um assembly satélite.  
   
- Este passo a passo demonstra como marcar seus assemblies satélites como opcionais e baixar somente o assembly precisa de um computador cliente para suas configurações de cultura. O procedimento a seguir usa as ferramentas disponíveis no [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Você também pode executar esta tarefa no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consulte também [instruções passo a passo: baixando Assemblies de satélite sob demanda com o ClickOnce Deployment API usando o Designer](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) ou [passo a passo: baixando Assemblies de satélite por demanda com a API de implantação do ClickOnce Usando o Designer](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Este passo a passo demonstra como marcar seus assemblies satélites como opcionais e baixar somente o assembly precisa de um computador cliente para suas configurações de cultura. O procedimento a seguir usa as ferramentas disponíveis no [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Você também pode executar esta tarefa no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consulte também [passo a passo: Baixando Assemblies satélite por demanda com a API usando o Designer de implantação do ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) ou [passo a passo: Baixando Assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 > [!NOTE]
 >  Para fins de teste, o exemplo de código a seguir por meio de programação define a cultura para `ja-JP`. Consulte a seção "Próximas etapas" mais adiante neste tópico para obter informações sobre como ajustar esse código para um ambiente de produção.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
- Este tópico pressupõe que você saiba como adicionar recursos localizados ao seu aplicativo usando o Visual Studio. Para obter instruções detalhadas, consulte [instruções passo a passo: Localizando Windows Forms](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
+ Este tópico pressupõe que você saiba como adicionar recursos localizados ao seu aplicativo usando o Visual Studio. Para obter instruções detalhadas, consulte [passo a passo: Localizando Windows Forms](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Para baixar os assemblies satélite por demanda  
   
@@ -75,6 +70,3 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
   
 ## <a name="see-also"></a>Consulte também  
  [Localizando aplicativos ClickOnce](../deployment/localizing-clickonce-applications.md)
-
-
-

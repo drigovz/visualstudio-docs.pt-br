@@ -1,14 +1,9 @@
 ---
 title: Referência de esquema de modelo do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b49b15047d11e8d09690c90dd3011700481fcef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a15a08dc674940897bf465946efd2ec350cc7c42
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817419"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923490"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Referência de esquema do modelo do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
   
 |Elemento|Elementos filho|Atributos|  
 |-------------|--------------------|----------------|  
-|[Aplica-se](../extensibility/appliesto-element-visual-studio-templates.md)|Nenhum|Nenhum|  
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Nenhum|Nenhum|  
 |[Assembly (modelo)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|  
 |[Assembly (extensão do assistente)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|  
@@ -46,7 +41,7 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
 |[Descrição](../extensibility/description-element-visual-studio-templates.md)|--|Pacote<br /><br /> ID|  
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|  
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|  
-|[Pasta](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Folder|Nome|  
+|[Pasta](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Pasta|Nome|  
 ||[preterido]|--|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[Oculto](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
@@ -57,7 +52,7 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
 |[Nome](../extensibility/name-element-visual-studio-templates.md)|--|Pacote<br /><br /> ID|  
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|  
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|  
-|[Projeto](../extensibility/project-element-visual-studio-templates.md)|Folder<br /><br /> ProjectItem|Arquivo<br /><br /> TargetFileName<br /><br /> ReplaceParameters|  
+|[Projeto](../extensibility/project-element-visual-studio-templates.md)|Pasta<br /><br /> ProjectItem|Arquivo<br /><br /> TargetFileName<br /><br /> ReplaceParameters|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|  
 |[ProjectItem (modelos de Item)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|SubType<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|  
 |[ProjectItem (modelos de projeto)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|  
@@ -73,7 +68,7 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
 |[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Pacote|  
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|Nome|  
-|[Ordem de classificação](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|  
+|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|  
 |[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|--|--|  
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|  
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|  
@@ -88,4 +83,4 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
   
 ## <a name="see-also"></a>Consulte também  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como criar kits de início](../ide/how-to-create-starter-kits.md)
+ [Como: Criar kits de início](../ide/how-to-create-starter-kits.md)
