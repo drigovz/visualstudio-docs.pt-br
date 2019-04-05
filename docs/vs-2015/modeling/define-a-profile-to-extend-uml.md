@@ -1,12 +1,9 @@
 ---
 title: Definir um perfil para estender UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730339"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924637"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definir um perfil para estender UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +220,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
 7.  Compile a extensão do Visual Studio, criando o projeto de extensão ou compactando todos os arquivos, conforme descrito nas seções anteriores.  
   
 ##  <a name="Schema"></a> A estrutura de um perfil  
- O arquivo XSD para perfis UML pode ser encontrado no exemplo a seguir: [definindo estereótipos e perfis XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Para ajudar a editar arquivos de perfil, instale o `.xsd` de arquivo em:  
+ O arquivo XSD para perfis UML pode ser encontrado no exemplo a seguir: [Definindo estereótipos e perfis XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Para ajudar a editar arquivos de perfil, instale o `.xsd` de arquivo em:  
   
  **%ProgramFiles%\Microsoft visual Studio [versão] \XML\Schemas.**  
   
@@ -345,7 +342,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
  Meus estereótipos não aparecem em Meus modelos de UML.  
  Você precisa selecionar seu perfil em um pacote ou modelo. Os estereótipos aparecerão em elementos dentro do pacote ou modelo. Para obter mais informações, consulte [elementos de modelo de adicionar Estereótipos UML](../modeling/add-stereotypes-to-uml-model-elements.md).  
   
- O seguinte erro aparece quando abro um modelo UML: **VS1707: os seguintes perfis não podem ser carregados porque ocorreu um erro de serialização: MyProfile.profile**  
+ O seguinte erro aparece quando abro um modelo UML: **VS1707: Os seguintes perfis não podem ser carregados porque ocorreu um erro de serialização: MyProfile.profile**  
  1.  Verifique se a sintaxe XML básica do Profile está correta.  
   
 2. Certifique-se de que cada nome de apelido esteja no formulário /ProfileName/NodeName. O profileName é o valor do atributo name no nó raiz de perfil. O nodeName é o valor do atributo de nome de uma metaclasse, externalType ou enumerationType.  
@@ -358,7 +355,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
   
 5. Recompile o arquivo VSIX e abri-lo no Windows Explorer para reinstalá-lo. Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-   A extensão não aparece no Gerenciador de extensões, mas ao tentar reinstalá-lo, a seguinte mensagem aparecerá: **a extensão já está instalada para todos os produtos aplicáveis.**  
+   A extensão não aparece no Gerenciador de extensões, mas ao tentar reinstalá-lo, a seguinte mensagem aparecerá: **A extensão já está instalada para todos os produtos aplicáveis.**  
    1.  Remover o arquivo de extensão de uma subpasta da *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [versão]  
   
    -   Para ver *LocalAppData*, você deve definir Mostrar arquivos e pastas ocultos na guia Exibir das opções de pasta do Windows Explorer.  
@@ -373,6 +370,3 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
  [Estereótipos padrão para modelos UML](../modeling/standard-stereotypes-for-uml-models.md)   
  [Exemplo: Elementos UML de cor por estereótipo](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Exemplo: Configuração de estereótipos, perfis XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Noções básicas sobre modelos, Classes e relações | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929860"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +28,13 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
 ## <a name="the-dsl-definition"></a>A definição de DSL  
  Quando você abre `Dsl\DslDefinition.dsl`, seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janela se parece com a imagem a seguir.  
   
- ![designer de DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+ ![Designer de DSL](../modeling/media/dsl-designer.png "dsl_designer")  
   
  As informações mais importantes na definição de DSL são exibidas no diagrama de definição de DSL. Informações adicionais, que também é parte do Dsldefinition, são exibidas no Gerenciador de DSL, que geralmente aparece no lado do diagrama. Você trabalha com o diagrama para as tarefas mais frequentes e com o Gerenciador de DSL para personalizações mais avançadas.  
   
  O diagrama de definição de DSL mostra as classes de domínio que definem os elementos de modelo e as relações que definem links entre elementos de modelo. Ele também mostra as formas e conectores que são usados para exibir os elementos de modelo para o usuário.  
   
- ![designer de DSL com raias](../modeling/media/dsl-desinger.png "dsl_desinger")  
+ ![Designer de DSL com raias](../modeling/media/dsl-desinger.png "dsl_desinger")  
   
  Quando você seleciona um item na definição de DSL, no diagrama ou no Gerenciador de DSL, informações sobre ele são exibidas na janela Propriedades. Informações adicionais podem ser exibidas na janela de detalhes de DSL.  
   
@@ -59,7 +56,7 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
   
  ![Relações de referência e incorporação](../modeling/media/music-classes.png "Music_Classes")  
   
- A ilustração mostra quatro classes de domínio: música, álbum, artista e música. As classes de domínio definem propriedades de domínio, como nome, título e assim por diante. No modelo de instância, os valores de algumas dessas propriedades são exibidos no diagrama.  
+ A ilustração mostra quatro classes de domínio: Música, álbum, artista e música. As classes de domínio definem propriedades de domínio, como nome, título e assim por diante. No modelo de instância, os valores de algumas dessas propriedades são exibidos no diagrama.  
   
  Entre as classes são relações de domínio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs e ArtistAppearedOnAlbums. As relações tiverem multiplicidades como 1..1, 0.. *. Por exemplo, todas as músicas devem estar relacionadas a exatamente um álbum por meio do relacionamento AlbumHasSongs. Cada álbum pode ter qualquer número de músicas.  
   
@@ -157,7 +154,4 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
   
 ## <a name="see-also"></a>Consulte também  
  [Relações de domínio na API gerada](../misc/domain-relationships-in-the-generated-api.md)   
- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

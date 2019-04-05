@@ -1,12 +1,9 @@
 ---
 title: Solucionando problemas de referências de serviço | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929765"
 ---
 # <a name="troubleshooting-service-references"></a>Solucionando problemas de referências de serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Este tópico lista os problemas comuns que podem ocorrer quando você estiver tr
 -   Na **Gerenciador de soluções**, o projeto de biblioteca de serviços WCF com o botão direito e clique em **Build**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Erro ao acessar um serviço em uma área de trabalho remota
- Quando um usuário acessa um serviço WCF hospedado na Web sobre uma conexão de área de trabalho remota e o usuário não tem permissões administrativas, autenticação NTLM será usada. Se o usuário não tem permissões administrativas, o usuário pode receber a seguinte mensagem de erro: "a solicitação HTTP é autorizada no esquema de autenticação de cliente 'Anonymous'. O cabeçalho de autenticação recebido do servidor foi 'NTLM' ".
+ Quando um usuário acessa um serviço WCF hospedado na Web sobre uma conexão de área de trabalho remota e o usuário não tem permissões administrativas, autenticação NTLM será usada. Se o usuário não tem permissões administrativas, o usuário pode receber a seguinte mensagem de erro: "A solicitação HTTP é autorizada no esquema de autenticação de cliente 'Anonymous'. O cabeçalho de autenticação recebido do servidor foi 'NTLM' ".
 
  Para corrigir esse erro:
 
@@ -79,9 +76,9 @@ Este tópico lista os problemas comuns que podem ocorrer quando você estiver tr
 
 3.  Certifique-se de que o **configurações de build Show advanced** caixa de seleção está selecionada e, em seguida, clique em **Okey**.
 
-4.  Carregar o projeto de serviço do WCF. Para obter mais informações, consulte [NIB como: criar soluções de vários projetos](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4.  Carregar o projeto de serviço do WCF. Para obter mais informações, consulte [NIB como: Criar soluções multiprojeto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
+5.  No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
 
 6.  Na **Gerenciador de soluções**, selecione o projeto de serviço do WCF.
 
@@ -92,7 +89,7 @@ Este tópico lista os problemas comuns que podem ocorrer quando você estiver tr
 
  Para corrigir esse erro, desabilite os feeds RSS:
 
-1.  No Internet Explorer, sobre o **ferramentas** menu, clique em **opções da Internet**.
+1.  No Internet Explorer, no menu **Ferramentas**, clique em **Opções da Internet**.
 
 2.  Sobre o **conteúdo** guia da **Feeds** seção, clique em **configurações**.
 

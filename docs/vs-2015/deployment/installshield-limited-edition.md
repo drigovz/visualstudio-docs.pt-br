@@ -1,25 +1,20 @@
 ---
 title: Edição limitada do InstallShield | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 151e46e5-86da-4336-b6d0-42b5326c4884
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 482b06a079346e91a91708d32733754a3f98a3db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189652"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928968"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +33,3 @@ Com o InstallShield Limited Edition, você pode criar um arquivo de configuraç�
 3.  Na lista de modelos, escolha **habilitar InstallShield Limited Edition**e, em seguida, escolha o **Okey** botão.  
   
 4.  Na janela do navegador é aberta, leia as instruções e, em seguida, escolha o **ir para o site de download da** link.
-
-
-
