@@ -1,14 +1,9 @@
 ---
 title: Janela de saída, depuração, caixa de diálogo de opções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.options.OutputWindow
 - VS.ToolsOptionsPages.Debugger.OutputWindow
@@ -22,30 +17,27 @@ ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a146404a4f4d396cc7afc56218850d758a608bde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9153da163fb30b05e13d9c25f8589d632d64326e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923132"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Caixa de diálogo Janela de Saída, Depuração, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode especificar quais tipos de informações de depuração são exibidos na **saída** janela. Para exibir essas opções, abra o **ferramentas** menu, clique em **opções**, expanda o **depuração** nó e clique em **janela de saída**.  
+Você pode especificar quais tipos de informações de depuração aparecem na janela de **Saída**. Para exibir essas opções, abra o menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração** e clique em **Janela de Saída**.  
   
  **Configurações gerais de saída**  
  Essa categoria contém controles que determinam se as mensagens de depuração gerais aparecem na **saída** janela. Você pode especificar se cada tipo de mensagem aparece.  
   
  **Configurações de rastreamento do WPF**  
- Essa categoria contém controles que determinam o nível das mensagens de rastreamento WPF que aparecem na **saída** janela. Você pode especificar se cada tipo de mensagem aparece e especificar um nível desde **crítica** ao **todos os**.  
+ Essa categoria contém controles que determinam o nível das mensagens de rastreamento WPF que aparecem na **saída** janela. Você pode especificar se cada tipo de mensagem é exibido e especificar um nível que varia de **Crítico** a **Tudo**.  
   
- Para obter mais informações, consulte [como: exibir informações de rastreamento de WPF](../debugger/how-to-display-wpf-trace-information.md).  
+ Para obter mais informações, confira [Como: Exibir informações de rastreamento do WPF](../debugger/how-to-display-wpf-trace-information.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Caixa de diálogo depuração, opções](../debugger/debugging-options-dialog-box.md)   
+ [Caixa de diálogo Depuração, Opções](../debugger/debugging-options-dialog-box.md)   
  [Janela de Saída](../ide/reference/output-window.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Como: fornecer suporte a texto oculto em um serviço de linguagem herdado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Fornecer suporte a texto oculto em um serviço de linguagem herdado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d5451576115dcada98f6b8f7daaf1cca5a86f95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a74998e6cb9b236818f20ec3c597f9a3b9bd7dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926644"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Como: fornecer suporte a texto oculto em um serviço de linguagem herdado
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Como: Fornecer suporte a texto oculto em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Você pode criar regiões de texto oculto além das regiões de estrutura de tópicos. Regiões de texto oculta podem ser controlado pelo cliente ou controlado pelo editor e são usados para ocultar uma região de texto completo. O editor exibe uma região oculta como linhas horizontais. Um exemplo disso é o modo de exibição somente Script no editor de HTML.  
@@ -54,4 +49,3 @@ Você pode criar regiões de texto oculto além das regiões de estrutura de tó
         >  Quando regiões escondidos estiverem ocultas, o editor exibe automaticamente linhas ao redor das regiões ocultas para indicar sua presença.  
   
     2.  Especifique se a região é controlado pelo cliente ou controlado de editor do `dwBehavior` os membros a <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura. Sua implementação de estrutura de tópicos inteligente pode conter uma mistura de estrutura de tópicos do editor-controlado pelo cliente e regiões de texto oculto.
-

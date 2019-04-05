@@ -1,26 +1,21 @@
 ---
 title: Quando criar tipos de projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801661"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922350"
 ---
 # <a name="when-to-create-project-types"></a>Quando criar tipos de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Criar um novo tipo de projeto oferece uma base para a personalização [!INCLUDE
 |Tarefa|Descrição|  
 |----------|-----------------|  
 |Manipulando comandos|Qualquer VSPackage pode lidar com comandos.|  
-|Criação de um editor|Editores personalizados podem ser registrados. Para obter mais informações, consulte [editores e documentos Windows](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Criação de um editor|Editores personalizados podem ser registrados. Para obter mais informações, consulte [editores e documentos Windows](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Proprietário do windows|Você pode criar janelas de ferramenta e o documento sem adicionar um novo tipo de projeto.|  
 |Expondo propriedades na janela Propriedades|Todos os objetos podem expor propriedades.|  
   
@@ -65,7 +60,6 @@ Criar um novo tipo de projeto oferece uma base para a personalização [!INCLUDE
  Você pode usar os subtipos de projeto para estender um tipo de projeto gerenciado sem precisar criar um novo tipo de projeto. Subtipos de projeto usam agregação COM para estender projetos gerenciados escritos em Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Com a agregação de COM, você pode reutilizar grande parte da implementação do sistema de projeto gerenciado e ainda personalizar para um cenário específico por meio de agregação e o uso de interfaces de suporte. Para obter mais informações sobre os subtipos de projeto, consulte [subtipos do projeto](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Windows de documento e editores](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
- [Lista de verificação: Criar novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Windows de documento e editores](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Hierarquias no Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
-

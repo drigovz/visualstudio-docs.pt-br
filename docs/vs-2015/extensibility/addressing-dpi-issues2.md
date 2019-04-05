@@ -1,21 +1,17 @@
 ---
 title: Endereçamento DPI Problemas2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922868"
 ---
 # <a name="addressing-dpi-issues"></a>Resolvendo problemas e DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,9 +94,9 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funções permitem o dimensionamento em X / eixo Y)  
   
-- espaço de int = DpiHelper.LogicalToDeviceUnitsX (10);  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
-- int altura = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
   Há sobrecargas de LogicalToDeviceUnits para permitir o dimensionamento de objetos, como Rect, ponto e tamanho.  
   
@@ -151,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - Para itens de menu e imagens de iconografia, o <xref:System.Windows.Media.BitmapScalingMode> deve ser usado quando ele não faz com que outros artefatos de distorção eliminar o grau de seleção (no % 200 e 300%).  
   
-- • Para zoom grande níveis não múltiplos de 100% (por exemplo, 250% ou % 350), dimensionando imagens de iconografia com resultados bicúbica na interface do usuário difusa e Desbotado. Um resultado melhor é obtido ao dimensionar a imagem com NearestNeighbor para o múltiplo de maior de 100% (por exemplo, 200% ou 300%) primeiro e o dimensionamento com bicúbica a partir daí. Consulte o caso especial: prescaling imagens do WPF para grande DPI níveis para obter mais informações.  
+- • Para zoom grande níveis não múltiplos de 100% (por exemplo, 250% ou % 350), dimensionando imagens de iconografia com resultados bicúbica na interface do usuário difusa e Desbotado. Um resultado melhor é obtido por meio do dimensionamento primeiro a imagem com NearestNeighbor para o múltiplo de maior de 100% (por exemplo, 200% ou % 300) e o dimensionamento com bicúbica a partir daí. Consulte o caso especial: prescaling imagens do WPF para grande DPI níveis para obter mais informações.  
   
   A classe DpiHelper no namespace Microsoft.VisualStudio.PlatformUI fornece um membro <xref:System.Windows.Media.BitmapScalingMode> que pode ser usado para associação. Isso permitirá que o shell do Visual Studio controlar o modo de dimensionamento em todo o produto uniformemente, dependendo do fator de escala de DPI de bitmap.  
   
@@ -169,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  Algumas interfaces do usuário podem ser dimensionados independentemente do nível de zoom DPI conjunto do sistema, como o editor de texto do Visual Studio e os designers com base em WPF (área de trabalho do WPF e Windows Store). Nesses casos, DpiHelper.BitmapScalingMode não deve ser usado. Para corrigir esse problema no editor, a equipe IDE criada uma propriedade personalizada denominada RenderOptions.BitmapScalingMode. Defina o valor da propriedade HighQuality ou NearestNeighbor dependendo do nível de zoom combinado do sistema e a interface do usuário.  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Caso especial: prescaling imagens do WPF para níveis DPI grandes  
- Para os níveis de zoom muito grandes que não são múltiplos de 100% (por exemplo, 250%, % 350 e assim por diante), dimensionando imagens de iconografia com resultados bicúbica na interface do usuário difusa e Desbotado. A impressão dessas imagens junto com textos quase é semelhante à de uma ilusão ótica. As imagens parecem ser mais próximo ao olho e fora de foco em relação ao texto. O resultado de colocação em escala nesse tamanho ampliada pode ser melhorado, dimensionar a imagem com NearestNeighbor para o múltiplo de maior de 100% (por exemplo, 200% ou 300%) primeiro e o dimensionamento com bicúbica ao restante (um adicional 50%).  
+ Para os níveis de zoom muito grandes que não são múltiplos de 100% (por exemplo, 250%, % 350 e assim por diante), dimensionando imagens de iconografia com resultados bicúbica na interface do usuário difusa e Desbotado. A impressão dessas imagens junto com textos quase é semelhante à de uma ilusão ótica. As imagens parecem ser mais próximo ao olho e fora de foco em relação ao texto. O resultado de colocação em escala nesse tamanho ampliada pode ser aprimorado expandindo primeiro a imagem com NearestNeighbor para o múltiplo de maior de 100% (por exemplo, 200% ou % 300) e o dimensionamento com bicúbica ao restante (um adicional 50%).  
   
  A seguir está um exemplo das diferenças nos resultados, em que a primeira imagem é dimensionada com o algoritmo de dimensionamento dupla aprimorado 100% -> 200% -> 250%, e o segundo é apenas com bicúbica 100% -> 250%.  
   
@@ -207,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- Etapa 2: Verifique se que o tamanho final está correto para o DPI atual.  
+ Etapa 2: Certifique-se de que o tamanho final está correto para o DPI atual.  
   
  Porque o WPF dimensionará a interface do usuário para o DPI atual usando a propriedade de BitmapScalingMode definida no UIElement, deve ser um controle de imagem usando uma imagem prescaled como sua fonte aparecerá duas ou três vezes maior do que ele. A seguir estão algumas maneiras de combater esse efeito:  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-

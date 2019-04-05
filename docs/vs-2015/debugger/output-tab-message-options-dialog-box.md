@@ -1,27 +1,22 @@
 ---
 title: Guia de saída, caixa de diálogo Opções de mensagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Output
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f4589f29f0c52ed82c829c68c2fc9347dfc68c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fa4494ccff03fa71e25b32a4814a98a9e06dc28
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787855"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925631"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Guia Saída, Caixa de diálogo Opções da Mensagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +31,10 @@ Use o **saída** tab para especificar quais dados de cada mensagem à lista na [
  **Nível de aninhamento de mensagem**  
  Prefixo de mensagens aninhadas com um período por nível.  
   
- **Parâmetros de mensagem processados**  
+ **Parâmetros de mensagens brutos**  
  Exibir o hexadecimal **wParam** e **lParam** valores.  
   
- **Parâmetros de mensagem decodificada**  
+ **Parâmetros de mensagem decodificados**  
  Exibir os resultados da decodificação de mensagem específica do **wParam** e **lParam** valores.  
   
  **Valores de retorno brutos**  
@@ -60,8 +55,5 @@ Use o **saída** tab para especificar quais dados de cada mensagem à lista na [
  **Também registrar mensagens de arquivo**  
  Especifique um arquivo de saída para o log de mensagem. Este arquivo de saída é gravado simultaneamente com a janela de log de mensagem.  
   
- **Salvar configurações como padrão**  
+ **Salvar as Configurações como Padrão**  
  Salve as configurações anteriores para novas janelas de fluxo de mensagem. Essas configurações são salvas ao fechar o Spy + +.
-
-
-

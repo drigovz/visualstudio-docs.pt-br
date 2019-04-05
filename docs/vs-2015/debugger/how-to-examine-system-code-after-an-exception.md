@@ -1,14 +1,9 @@
 ---
-title: 'Como: examinar o código do sistema após uma exceção | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Examinar o código do sistema após uma exceção | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,39 +16,34 @@ ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8cbaff38cdd6d769140f135d319a88d6098f294b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 289ef1825e8034566e2a9595a46919a3c498108d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922391"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>Como examinar um código de sistema após uma exceção
+# <a name="how-to-examine-system-code-after-an-exception"></a>Como: Examinar o código do sistema após uma exceção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando uma exceção ocorre, você poderá precisar examinar o código dentro de uma chamada do sistema para determinar a causa da exceção. O procedimento a seguir explica como fazer isso se você não tiver os símbolos carregados para o código do sistema ou se Just My Code estiver habilitado.  
   
 ### <a name="to-examine-system-code-following-an-exception"></a>Para examinar o código do sistema após uma exceção  
   
-1.  No **pilha de chamadas** janela, o botão direito do mouse, em seguida, clique em **Mostrar código externo**.  
+1.  Na janela **Pilha de Chamadas**, clique com o botão direito do mouse, em seguida, clique em **Mostrar Código Externo**.  
   
      Se Just My Code não estiver habilitado, essa opção não estará disponível no menu de atalho e o código do sistema será mostrado por padrão.  
   
-2.  Os quadros de código externo que agora são exibidos no botão direito do mouse a **pilha de chamadas** janela.  
+2.  Clique com o botão direito do mouse nos quadros de código externos que agora são exibidos na janela **Pilha de Chamadas**.  
   
-3.  Aponte para **carregar símbolos de** e, em seguida, clique em **servidores de símbolo Microsoft**.  
+3.  Aponte para **Carregar Símbolos de** e, em seguida, clique em **Servidores de Símbolo da Microsoft**.  
   
     1.  Se Just My Code tiver sido habilitado, uma caixa de diálogo será exibida. Indica que Just My Code agora foi desabilitado. Isso é necessário para entrar em chamadas do sistema.  
   
-    2.  O **Baixando símbolos públicos** caixa de diálogo é exibida. Ela desaparecerá quando o download for concluído.  
+    2.  A caixa de diálogo **Baixando símbolos públicos** é exibida. Ela desaparecerá quando o download for concluído.  
   
-4.  Agora você pode examinar o código do sistema na **pilha de chamadas** janela e outras janelas. Por exemplo, você pode clique duas vezes em um quadro de pilha de chamadas para exibir o código em uma fonte ou **desmontagem** janela.  
+4.  Agora você pode examinar o código do sistema na janela **Pilha de Chamadas** e em outras janelas. Por exemplo, você pode clicar duas vezes em um registro de ativação de chamadas para exibir o código em uma fonte ou na janela **Desmontagem**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

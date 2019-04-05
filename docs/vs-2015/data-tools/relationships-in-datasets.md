@@ -1,12 +1,9 @@
 ---
 title: Relacionamentos em conjuntos de dados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922294"
 ---
 # <a name="relationships-in-datasets"></a>Relacionamentos em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ Conjuntos de dados que contêm dados relacionados a tabelas usam <xref:System.Da
 |Regra de restrição de chave estrangeira|Ação|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|A alteração (update ou delete) feita no registro pai também é feita em registros relacionados na tabela filho.|  
-|<xref:System.Data.Rule>|Registros filho não são excluídos, mas a chave estrangeira nos registros filho é definida como <xref:System.DBNull>. Com essa configuração, os registros filho podem ser deixados como "órfãos" — ou seja, eles não têm nenhuma relação com registros pai. **Observação:** usar essa regra pode resultar em dados inválidos na tabela filho.|  
+|<xref:System.Data.Rule>|Registros filho não são excluídos, mas a chave estrangeira nos registros filho é definida como <xref:System.DBNull>. Com essa configuração, os registros filho podem ser deixados como "órfãos" — ou seja, eles não têm nenhuma relação com registros pai. **Observação:**  Usar essa regra pode resultar em dados inválidos na tabela filho.|  
 |<xref:System.Data.Rule>|A chave estrangeira nos registros filho relacionados é definida como seu valor padrão (conforme estabelecido da coluna <xref:System.Data.DataColumn.DefaultValue%2A> propriedade).|  
 |<xref:System.Data.Rule>|Nenhuma alteração é feita para registros filho relacionados. Com essa configuração, os registros filho podem conter referências a registros pai inválido.|  
   
@@ -88,7 +85,7 @@ Conjuntos de dados que contêm dados relacionados a tabelas usam <xref:System.Da
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Para criar uma relação entre duas tabelas de dados  
   
-1.  Abra o dataset na **Dataset Designer**. Para obter mais informações, consulte [como: abrir um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Arraste uma **relação** objeto o **conjunto de dados** toolbox para a tabela de dados filho na relação.  
   
@@ -112,7 +109,6 @@ Conjuntos de dados que contêm dados relacionados a tabelas usam <xref:System.Da
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Para exibir um nome de relação no Designer de conjunto de dados  
   
-1.  Abra o dataset na **Dataset Designer**. Para obter mais informações, consulte [como: abrir um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Dos **dados** menu, selecione o **Mostrar rótulos de relação** comando para exibir o nome da relação. Desmarque desse comando para ocultar o nome da relação.
-

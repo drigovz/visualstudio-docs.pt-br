@@ -1,23 +1,20 @@
 ---
 title: Gerar e configurar seu aplicativo a partir de modelos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922711"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Você pode gerar ou configurar as partes do seu aplicativo de um modelo. O model
   
 - [Ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md)  
   
-- [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [Como: Abrir um modelo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   Esse método também pode ser aplicado incrementalmente, mas há mais trabalho no início. Você precisa escrever o código que leia o modelo e configurar uma estrutura que permite que seus valores fique acessível para as partes variáveis. Tornar as partes variáveis genéricos é mais caro do que a geração de código.  
   
@@ -85,8 +82,5 @@ Você pode gerar ou configurar as partes do seu aplicativo de um modelo. O model
  [Gerar arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md)   
  [Ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md)   
  [Código de geração de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Como: abrir um modelo de arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
+ [Como: Abrir um modelo de arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-
-
-

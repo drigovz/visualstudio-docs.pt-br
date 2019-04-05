@@ -1,12 +1,9 @@
 ---
 title: 'Diagramas de caso de uso UML: Diretrizes | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams - modeling, use case
 - UML, use case diagrams
@@ -17,15 +14,15 @@ ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793081"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926566"
 ---
-# <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de caso de uso UML: diretrizes
+# <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de caso de uso UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir a quem usa o aplicativo ou sistema e o que podem fazer com ele. Para criar um diagrama de caso de uso UML, nos **arquitetura** menu, clique em **UML novo ou diagrama de camada**.  
@@ -44,7 +41,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
   Um diagrama de caso de uso não mostra os detalhes dos casos de uso: apenas resume algumas das relações entre casos de uso, atores e sistemas. Em particular, o diagrama não mostra a ordem na qual as etapas são executadas para atingir as metas de cada caso de uso. Você pode descrever os detalhes em outros diagramas e documentos, que você pode vincular a cada caso de uso. Para obter mais informações, consulte [casos de uso que descrevem detalhadamente](#Details) neste tópico.  
   
-  As descrições que você fornecer para casos de uso usará vários termos relacionados ao domínio em que o sistema funciona, como a venda, o Menu, o cliente e assim por diante. É importante definir claramente esses termos e suas relações, e você pode fazer isso com a Ajuda de um diagrama de classe UML. Para obter mais informações, consulte [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md).  
+  As descrições que você fornecer para casos de uso usará vários termos relacionados ao domínio em que o sistema funciona, como a venda, o Menu, o cliente e assim por diante. É importante definir claramente esses termos e suas relações, e você pode fazer isso com a Ajuda de um diagrama de classe UML. Para obter mais informações, confira [Diagramas de classe UML: Diretrizes de](../modeling/uml-class-diagrams-guidelines.md).  
   
   Casos de uso lidam apenas em requisitos funcionais de um sistema. Outros requisitos, como regras de negócio, qualidade de serviço requisitos e restrições de implementação devem ser representados separadamente. Arquitetura e os detalhes internos também devem ser descritos separadamente. Para obter mais informações sobre como definir os requisitos de usuário, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
   
@@ -91,13 +88,13 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
     -   Os atores representam classes de usuários, as organizações e sistemas externos que interagem com o seu sistema.  
   
-    -   Renomeie-os. Por exemplo: **agência do cliente, restaurante, cartão de crédito.**  
+    -   Renomeie-os. Por exemplo: **Agência de cartão de crédito do cliente, restaurante.**  
   
 3.  Arraste **casos de uso** Toolbox para os sistemas apropriados.  
   
     -   Casos de uso representam as atividades que os atores executam com a Ajuda do seu sistema.  
   
-    -   Renomeie-os usando títulos que entende os atores em si. Não use títulos que estão relacionados ao seu código. Por exemplo: **Meal Order, pague refeição, entregar refeição**.  
+    -   Renomeie-os usando títulos que entende os atores em si. Não use títulos que estão relacionados ao seu código. Por exemplo: **Solicitar a refeição, pague refeição, entregar refeição**.  
   
     -   Começar com transações principais, como **Meal Order**, deixando até posteriores interações menores, como **selecione o Item de Menu**.  
   
@@ -145,7 +142,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
 1.  O ator com o botão direito e, em seguida, clique em **propriedades**.  
   
-     O **propriedades** janela é exibida.  
+     A janela **Propriedades** é exibida.  
   
 2.  Defina as **caminho da imagem** propriedade para o local de um arquivo de imagem.  
   
@@ -233,9 +230,9 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
 - Vincule o caso de uso para outro diagrama ou diagramas no projeto.  
   
-  -   Um diagrama de atividade o ajuda a explicar um processo mais complexo em que há loops, ramificações e threads paralelos. Ele também pode mostrar o fluxo de dados entre partes do processo. Para obter mais informações, consulte [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).  
+  -   Um diagrama de atividade o ajuda a explicar um processo mais complexo em que há loops, ramificações e threads paralelos. Ele também pode mostrar o fluxo de dados entre partes do processo. Para obter mais informações, consulte [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md).  
   
-  -   Um diagrama de sequência ajuda a explicar uma série complexa de interações entre diferentes atores. Você também pode usá-lo para mostrar o que acontece dentro do sistema em resposta a cada caso de uso. Para obter mais informações, consulte [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md).  
+  -   Um diagrama de sequência ajuda a explicar uma série complexa de interações entre diferentes atores. Você também pode usá-lo para mostrar o que acontece dentro do sistema em resposta a cada caso de uso. Para obter mais informações, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 - Vincule o caso de uso para uma página do OneNote, seção ou parágrafo que descreve o caso de uso em detalhes.  
   
@@ -337,7 +334,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
 - As ações no diagrama de atividade têm os mesmos nomes que o incluído casos de uso.  
   
-  Para obter mais informações, consulte [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).  
+  Para obter mais informações, consulte [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md).  
   
   ![Use as etapas casos mostradas no diagrama de atividade vinculada](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
@@ -445,13 +442,10 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
 ## <a name="see-also"></a>Consulte também  
  [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)   
- [Diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagramas de sequência de UML: Diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)   
- [Diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md)   
+ [Diagrama de casos de uso UML: Referência](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de componente UML: Referência](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramas de atividade de UML: Diretrizes](../modeling/uml-activity-diagrams-guidelines.md)   
  [Vídeo: Organizar recursos em casos de uso](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
-
-
-

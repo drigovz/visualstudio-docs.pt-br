@@ -1,25 +1,22 @@
 ---
-title: 'Como: criar um aplicativo de serviço de fluxo de trabalho WCF | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um aplicativo de serviço de fluxo de trabalho WCF | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 8632d8cf942fe4a06f12d324fea1f6f567080981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0e7bf54f527a82bb59a8dc9248d3d9294a07aa59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922531"
 ---
-# <a name="how-to-create-a-wcf-workflow-service-application"></a>Como: Crie um aplicativo de Serviço WCF de Fluxo de Trabalho
+# <a name="how-to-create-a-wcf-workflow-service-application"></a>Como: Criar um aplicativo de serviço de fluxo de trabalho do WCF
 aplicativos de serviço do fluxo de trabalho[!INCLUDE[indigo1](../includes/indigo1-md.md)] são serviços de comunicação distribuídos que transmitem as mensagens entre clientes e eles próprios através dos limites de processo. A implementação do contrato de serviço no lado de serviço é feita declarativamente com as atividades de fluxo de trabalho em [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] de um modo semelhante aos serviços herdados de fluxo de trabalho no .NET Framework 3.5.  
   
 ### <a name="to-create-a-wcf-workflow-service-application"></a>Para criar um aplicativo de serviço do fluxo de trabalho WCF  
@@ -46,5 +43,5 @@ aplicativos de serviço do fluxo de trabalho[!INCLUDE[indigo1](../includes/indig
 8.  O modelo de projeto cria uma definição de serviço como XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] abre para o modo design com uma atividade de <xref:System.Activities.Statements.Sequence> que contém um conjunto de <xref:System.ServiceModel.Activities.Receive> e de atividades de <xref:System.ServiceModel.Activities.SendReply> .  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: criar uma atividade](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Como: Criar uma atividade](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Criando um projeto de fluxo de trabalho](../workflow-designer/creating-a-workflow-project.md)
