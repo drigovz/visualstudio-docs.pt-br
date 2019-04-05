@@ -1,31 +1,26 @@
 ---
 title: Gerenciando a caixa de ferramentas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924896"
 ---
 # <a name="managing-the-toolbox"></a>Gerenciando a caixa de ferramentas
 O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite que um VSPackage, como um editor ou designer, para gerenciar a associação e a aparência do **caixa de ferramentas**.  
   
- Além disso, o **caixa de ferramentas** em si pode ser gerenciada usando a automação. Para obter mais informações sobre como gerenciar uma caixa de ferramentas por meio da automação, consulte [como: controle de caixa de ferramentas](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Além disso, o **caixa de ferramentas** em si pode ser gerenciada usando a automação. Para obter mais informações sobre como gerenciar uma caixa de ferramentas por meio da automação, consulte [como: A caixa de ferramentas de controle](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Seleção automática de caixa de ferramentas da guia  
  Um determinado **caixa de ferramentas** guia ou categoria pode ser automaticamente feita Active Directory com base em qual editor ou designer está ativo no momento. Por exemplo, se um designer de formulários estiver ativado, você pode querer a **todos os Windows Forms** guia selecionada.  

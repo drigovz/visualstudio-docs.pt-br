@@ -1,14 +1,9 @@
 ---
 title: Servidor e problemas de configuração de cliente em implantações do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948935"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925578"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
   
 - .deploy  
   
-  No entanto, você poderá desabilitar essa opção desmarcando os **usar a extensão de arquivo. Deploy"** opção a [caixa de diálogo Opções de publicação](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), nesse caso, você deve configurar o servidor Web para desbloquear todas as extensões de arquivo usado no aplicativo.  
+  No entanto, você poderá desabilitar essa opção desmarcando os **usar a extensão de arquivo. Deploy"** opção a [caixa de diálogo Opções de publicação](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), nesse caso, você deve configurar o servidor Web para desbloquear todas as extensões de arquivo usado no aplicativo.  
   
   Você terá que configurar. manifest,. Application e. Deploy, por exemplo, se você estiver usando o IIS em que você não tiver instalado o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], ou se você estiver usando outro servidor Web (por exemplo, Apache).  
   
@@ -104,12 +99,12 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
   
 |Tipo de URL|Descrição|  
 |--------------|-----------------|  
-|FTP: / /|Você pode publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo usando esse protocolo.|  
+|ftp://|Você pode publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo usando esse protocolo.|  
 |http://|Você pode instalar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo usando esse protocolo.|  
 |https://|Você pode instalar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo usando esse protocolo.|  
 |file://|Você pode instalar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo usando esse protocolo.|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall de Windows  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall do Windows  
  Por padrão, o Windows XP SP2 habilita o Firewall do Windows. Se você estiver desenvolvendo seu aplicativo em um computador com Windows XP instalado, é ainda possível publicar e executar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos do servidor local que está executando o IIS. No entanto, você não pode acessar o servidor que está executando o IIS de outro computador, a menos que você abrir o Firewall do Windows. Consulte a Ajuda do Windows para obter instruções sobre como gerenciar o Firewall do Windows.  
   
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Habilitar extensões FrontPage server extensions  
@@ -117,7 +112,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
   
  Por padrão, o Windows Server não tem instalado extensões FrontPage Server Extensions. Se você quiser usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para publicar em um servidor Web do Windows Server que usa HTTP com o FrontPage Server Extensions, você deve instalar extensões FrontPage Server Extensions primeiro. Você pode executar a instalação usando a ferramenta de administração de gerenciar o servidor no Windows Server.  
   
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipos de conteúdo de bloqueada  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipos de conteúdo bloqueado  
  IIS no [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] bloqueará todos os tipos de arquivo, exceto para determinados tipos de conteúdo conhecidos (por exemplo,. htm,. HTML,. txt e assim por diante). Para habilitar a implantação de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando este servidor de aplicativos, você precisa alterar as configurações do IIS para permitir o download de arquivos do tipo Application,. manifest e outros tipos de arquivo personalizado usados pelo seu aplicativo.  
   
  Se você implantar usando um servidor IIS, execute inetmgr.exe e adicionar novos tipos de arquivo da página da Web padrão:  
@@ -144,6 +139,3 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
  [Solucionando problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Escolhendo uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Pré-requisitos de implantação de aplicativos](../deployment/application-deployment-prerequisites.md)
-
-
-

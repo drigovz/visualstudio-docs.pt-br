@@ -1,14 +1,9 @@
 ---
 title: Continuando a execução após uma exceção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -33,13 +28,13 @@ ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 947a17993fe0e8366149d1cef79c26c68b11d22a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926259"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuando a execução depois de uma exceção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,8 +58,3 @@ Quando o depurador interrompe a execução devido a uma exceção, uma caixa de 
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

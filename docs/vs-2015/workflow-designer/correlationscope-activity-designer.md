@@ -1,11 +1,8 @@
 ---
 title: Designer de atividade de CorrelationScope | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.CorrelationScope.UI
@@ -13,13 +10,13 @@ ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4a46c50a888808932d071622d83b871761977259
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 95c8422d53903c3c7b81db9f6ef042c5ea9ff1c1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173193"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58924938"
 ---
 # <a name="correlationscope-activity-designer"></a>Designer de atividade de CorrelationScope
 O **CorrelationScope** designer de atividade é usado para criar e configurar um <xref:System.ServiceModel.Activities.CorrelationScope> atividade que fornece gerenciamento implícito de atividades filhos de mensagem usando um <xref:System.ServiceModel.Activities.CorrelationHandle> objeto.  
@@ -47,7 +44,7 @@ O **CorrelationScope** designer de atividade é usado para criar e configurar um
   
 ## <a name="see-also"></a>Consulte também  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
- [Receber](../workflow-designer/receive-activity-designer.md)   
+ [Receive](../workflow-designer/receive-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
  [Enviar](../workflow-designer/send-activity-designer.md)   
  [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)   

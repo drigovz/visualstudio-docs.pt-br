@@ -1,29 +1,24 @@
 ---
-title: 'Como: instalar um plug-in de controle do código-fonte | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Instalar um plug-in de controle do código-fonte | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5f151653387c95e77d775bfc9f37cbdfb9f824e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c9c93c83a6385ad45b3f402867b7f7e734447f98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925757"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>Como: instalar um plug-in de controle do código-fonte
+# <a name="how-to-install-a-source-control-plug-in"></a>Como: Instalar um plug-in de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Criando um controle de fonte plug-in envolve três etapas:  
@@ -125,4 +120,3 @@ Criando um controle de fonte plug-in envolve três etapas:
   
 ## <a name="see-also"></a>Consulte também  
  [Introdução](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
-

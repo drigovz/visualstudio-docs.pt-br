@@ -1,24 +1,22 @@
 ---
 title: Usando os verificadores de diretrizes principais do C++ | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799555"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928192"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de diretrizes principais do C++
+# <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado pelos designers e especialistas em C++.  Visual Studio agora oferece suporte a pacotes suplemento que criar regras adicionais para o código de ferramentas de análise para verificar seu código quanto à conformidade com diretrizes principais do C++ e sugerir melhorias.  
@@ -81,32 +79,29 @@ int main()
   
  Este exemplo demonstra alguns dos avisos que as regras de verificação principal do C++ podem encontrar:  
   
-- C26494 é regra Type.5: sempre inicialize um objeto.  
+- C26494 é Type.5 de regra: Sempre inicialize um objeto.  
   
-- C26485 é regra Bounds.3: decaimento nenhum ponteiro de matriz.  
+- C26485 é Bounds.3 de regra: Sem matriz para ponteiro de decaimento.  
   
-- C26481 é regra Bounds.1: não use aritmética de ponteiro. Use `span` em seu lugar.  
+- C26481 é Bounds.1 de regra: Não use aritmética de ponteiro. Use `span` em seu lugar.  
   
   Se o rulesets de análise do código de verificação principal do C++ estão instalado e habilitado quando você compila esse código, os dois primeiros avisos forem gerados, mas o terceiro é suprimido. Aqui está a saída da compilação do código de exemplo:  
   
-  **1 >---compilação iniciada: projeto: CoreCheckExample, configuração: Debug Win32 -**  
+  **1 >---compilação iniciada: Projeto: CoreCheckExample, configuração: Depurar Win32 –**  
 **----**  
-**1 > CoreCheckExample.cpp**  
+**1>  CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.PDB (PDB completo)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): aviso C26494: a variável 'arr' é uninitializ**  
+**ckexample\corecheckexample.cpp(6): aviso C26494: A variável 'arr' é uninitializ**  
 **Ed. sempre inicialize um objeto. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
-**ID = 620421)**  
+**ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): aviso C26485: expressão 'arr': sem matriz para**  
+**ckexample\corecheckexample.cpp(7): warning C26485: Expressão 'arr': Sem matriz para**  
  **ponteiro de decaimento. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
 **= = = Compilação: 1 com êxito, 0 com falha, 0 atualizada, 0 ignorado = = =** as diretrizes do C++ Core existem para ajudar você a escrever código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, é fácil suprimi-lo diretamente no código. Você pode usar o `gsl::suppress` atributo para manter a verificação principal do C++ de detectar e relatar qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você pode até mesmo suprimir todo o perfil limites escrevendo `[[gsl::suppress(bounds)]]` sem incluir um número específico de regra.  
   
 ## <a name="use-the-guideline-support-library"></a>Use a biblioteca de suporte de diretriz  
  O pacote do Microsoft.CppCoreCheck NuGet também instala um pacote que contém a implementação da Microsoft da biblioteca de suporte de diretriz (GSL). A GSL também está disponível na forma independente em [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Essa biblioteca é útil se você quiser seguir as diretrizes de núcleo. O GSL inclui definições que permitem que você substitua construções propenso a erro alternativas mais seguras. Por exemplo, você pode substituir uma `T*, length` par de parâmetros com o `span<T>` tipo. O GSL é um software livre, portanto, se você quiser dar uma olhada fontes da biblioteca, comentário ou contribuir com, o projeto pode ser encontrado em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
-
-
-

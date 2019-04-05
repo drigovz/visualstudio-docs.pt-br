@@ -1,27 +1,22 @@
 ---
 title: 'Passo a passo: Usando o IntelliTrace | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923027"
 ---
-# <a name="walkthrough-using-intellitrace"></a>Passo a passo: usando o IntelliTrace
+# <a name="walkthrough-using-intellitrace"></a>Passo a passo: Usando o IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o IntelliTrace para coletar informações sobre categorias de eventos ou eventos específicos, ou sobre chamadas de função individuais Além disso, a eventos. Os procedimentos a seguir mostram como fazer isso.  
@@ -74,7 +69,7 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
   
      Captura de tela a seguir é do Visual Studio 2015 atualização 1.  
   
-     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1 SingleEvent")  
+     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")  
   
      Você pode escolher o link do nome do caminho para abrir o arquivo. Se o nome do caminho completo não estiver disponível, o **abrir arquivo** caixa de diálogo é exibida.  
   
@@ -82,9 +77,9 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
   
      Captura de tela a seguir é do Visual Studio 2015 atualização 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging Update1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
-8.  Se você não encontrou o bug, tente examinar outros eventos que levam ao bug. Você também pode ter informações de chamada de registro do IntelliTrace para que você possa passar por chamadas de função.  
+8.  Se você não encontrou o bug, tente examinar outros eventos que levam ao bug. Você também pode fazer o IntelliTrace registrar informações de chamada para que você possa passar por chamadas de função.  
   
 ## <a name="using-intellitrace-with-events-and-function-calls"></a>Usando o IntelliTrace com eventos e chamadas de função  
  O IntelliTrace poderá registrar chamadas de função juntamente com os eventos. Isso permite que você consulte o histórico da pilha de chamadas e retroceda e avance por meio de chamadas em seu código. O IntelliTrace registra dados como nomes de função, pontos de entrada e saída da função e determinados valores de parâmetros e valores de retorno. Ver [recursos do IntelliTrace](../debugger/intellitrace-features.md).  
@@ -106,9 +101,3 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
     >  Você pode ver que algumas chamadas estão esmaecidas. Isso ocorre porque o IntelliTrace não registra dados dos módulos correspondentes. Para ver esses dados, com o IntelliTrace colete dados desses módulos. Para obter informações sobre como especificar módulos, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Próximas etapas
-
-
-
-
-
-

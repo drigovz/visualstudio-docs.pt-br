@@ -1,12 +1,9 @@
 ---
 title: Adicionar validação a um conjunto de dados de n camadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,21 +17,20 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928193"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Adicionar validação a um conjunto de dados de n camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Adicionando validação a um conjunto de dados que é separado em uma solução de n camadas é basicamente o mesmo que adicionar validação a um conjunto de dados de arquivo único (um conjunto de dados em um único projeto). O local sugerido para executar a validação nos dados é durante o <xref:System.Data.DataTable.ColumnChanging> e/ou <xref:System.Data.DataTable.RowChanging> eventos de uma tabela de dados.  
   
- O [criando e editando conjuntos de dados tipados](../data-tools/creating-and-editing-typed-datasets.md) fornece a funcionalidade para criar classes parciais para o qual você pode adicionar código de usuário para a coluna e linha – eventos das tabelas de dados no conjunto de dados de alteração. Para obter mais informações sobre como adicionar código a um conjunto de dados em uma solução de n camadas, consulte [adicione o código a conjuntos de dados em aplicativos de n camadas](../data-tools/add-code-to-datasets-in-n-tier-applications.md), e [adicionar código a TableAdapters em aplicativos de n camadas](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Para obter mais informações sobre classes parciais, consulte [como: dividir uma classe em Classes parciais (Designer de classe)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) ou [Classes e métodos parciais](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
+O Designer de conjunto de dados fornece a funcionalidade para criar classes parciais para o qual você pode adicionar código de usuário para a coluna e linha alterando eventos das tabelas de dados no conjunto de dados. Para obter mais informações sobre como adicionar código a um conjunto de dados em uma solução de n camadas, consulte [adicione o código a conjuntos de dados em aplicativos de n camadas](../data-tools/add-code-to-datasets-in-n-tier-applications.md), e [adicionar código a TableAdapters em aplicativos de n camadas](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Para obter mais informações sobre classes parciais, consulte [como: Dividir uma classe em Classes parciais (Designer de classe)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) ou [Classes e métodos parciais](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
 >  Quando você separa os conjuntos de dados de TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. Classes parciais do conjunto de dados existente devem ser movidas manualmente para o projeto de conjunto de dados.  
@@ -43,7 +39,7 @@ Adicionando validação a um conjunto de dados que é separado em uma solução 
 >  O Designer de conjunto de dados não cria automaticamente manipuladores de eventos em c# para o <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventos. Você precisa criar um manipulador de eventos manualmente e conectar o manipulador de eventos ao evento subjacente. Os procedimentos a seguir descrevem como criar manipuladores de eventos necessários no Visual Basic e c#.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges para colunas individuais  
- Valide os valores em colunas individuais manipulando o <xref:System.Data.DataTable.ColumnChanging> eventos. O <xref:System.Data.DataTable.ColumnChanging> é gerado quando um valor em uma coluna é modificado. Crie um manipulador de eventos para o <xref:System.Data.DataTable.ColumnChanging> evento clicando duas vezes na coluna desejada na [criando e editando conjuntos de dados tipados](../data-tools/creating-and-editing-typed-datasets.md).  
+ Valide os valores em colunas individuais manipulando o <xref:System.Data.DataTable.ColumnChanging> eventos. O <xref:System.Data.DataTable.ColumnChanging> é gerado quando um valor em uma coluna é modificado. Crie um manipulador de eventos para o <xref:System.Data.DataTable.ColumnChanging> evento clicando duas vezes na coluna desejada no conjunto de dados.  
   
  Na primeira vez que você clique duas vezes em uma coluna, o designer gera um manipulador de eventos para o <xref:System.Data.DataTable.ColumnChanging> eventos. Um `If…Then` instrução também é criada que testa a coluna específica. Por exemplo, o código a seguir é gerado quando você clica duas vezes a coluna RequiredDate na tabela Orders do Northwind:  
   
@@ -62,7 +58,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Para adicionar validação durante alterações a valores de colunas individuais  
   
-1.  Abra o conjunto de dados a [criando e editando conjuntos de dados tipados](../data-tools/creating-and-editing-typed-datasets.md) clicando duas vezes o **. xsd** de arquivo no **Gerenciador de soluções**. Para obter mais informações, consulte [como: abrir um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Abra o conjunto de dados no designer clicando duas vezes o **. xsd** arquivo no **Gerenciador de soluções**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Clique duas vezes a coluna que você deseja validar. Essa ação cria o <xref:System.Data.DataTable.ColumnChanging> manipulador de eventos.  
   
@@ -117,11 +113,11 @@ End Sub
   
  Quando os pedidos estão sendo inseridos, validação garante que um pedido não é inserido com uma RequiredDate é igual ou anterior à OrderDate. Neste exemplo, os valores para colunas de RequiredDate e OrderDate precisam ser comparadas, para que validar uma alteração de coluna individual não faz sentido.  
   
- Crie um manipulador de eventos para o <xref:System.Data.DataTable.RowChanging> evento clicando duas vezes no nome da tabela na barra de título da tabela na [criando e editando conjuntos de dados tipados](../data-tools/creating-and-editing-typed-datasets.md).  
+ Crie um manipulador de eventos para o <xref:System.Data.DataTable.RowChanging> evento clicando duas vezes no nome da tabela na barra de título da tabela.  
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Para adicionar a validação durante alterações em linhas inteiras  
   
-1.  Abra o conjunto de dados a [criando e editando conjuntos de dados tipados](../data-tools/creating-and-editing-typed-datasets.md) clicando duas vezes o **. xsd** de arquivo no **Gerenciador de soluções**. Para obter mais informações, consulte [como: abrir um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Abra o conjunto de dados no designer clicando duas vezes o **. xsd** arquivo no **Gerenciador de soluções**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Clique duas vezes a barra de título da tabela de dados no designer.  
   
@@ -183,4 +179,3 @@ End Sub
  [Visão geral dos aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)   
  [Passo a passo: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
-

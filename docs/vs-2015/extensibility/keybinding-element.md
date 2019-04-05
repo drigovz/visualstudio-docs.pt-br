@@ -1,27 +1,22 @@
 ---
 title: Elemento KeyBinding | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32dafc1b16282657db40531e34d1eccb02841481
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925790"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +38,13 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Obrigatório.|  
-|id|Obrigatório.|  
-|editor|Obrigatório. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
-|CHAVE1|Obrigatório. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
-|Mod1|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
+|GUID|Necessário.|  
+|id|Necessário.|  
+|editor|Necessário. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
+|CHAVE1|Necessário. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
+|mod1|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
 |Key2|Opcional. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
-|Mod2|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
+|mod2|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
 |Emulador|Opcional.|  
 |Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
@@ -80,4 +75,3 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
 ## <a name="see-also"></a>Consulte também  
  [Elemento KeyBindings](../extensibility/keybindings-element.md)   
  [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

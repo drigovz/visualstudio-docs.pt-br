@@ -1,26 +1,21 @@
 ---
 title: Personalizando o Windows do código usando a API herdada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45788e3fdfff2898a0d2d2ed36c81425c225b54c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f15c649b8d857d2e920bb957e5975d296749cb86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925769"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalizando o Windows do código usando a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ Janela de código
  `Customizing Code Windows by Using the Legacy API`  
  Explica como personalizar o windows de código usando a API herdada.  
   
- [Como hospedar um editor em outro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Como: Hospedar um Editor em outro Editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Explica como hospedar um segundo editor dentro de uma janela do editor.  
   
- [Como disparar eventos quando o editor perde o foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Como: Disparar eventos quando o Editor perde o foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Explica como anexar um modo de exibição de documento para um objeto de dados do documento.  
   
 ## <a name="see-also"></a>Consulte também  
@@ -53,4 +48,3 @@ Janela de código
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  [Criando uma instância o Editor principal usando a API herdada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
  [Acessando a exibição de texto usando a API herdada](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
-

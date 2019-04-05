@@ -1,26 +1,21 @@
 ---
-title: 'CA5350: Não usar algoritmos criptográficos fracos | Microsoft Docs'
-ms.custom: ''
+title: 'CA5350: Não Use algoritmos criptográficos fracos | Microsoft Docs'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c22c10467c620d41e0cc73ab763a260f278f8a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2997abd9a112b60e9ef692bfe87b740976007656
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234215"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927482"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: não use algoritmos criptográficos fracos
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Não usar algoritmos de criptografia fracos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -48,7 +43,7 @@ ms.locfileid: "49234215"
   
 -   Para criptografia TripleDES, use <xref:System.Security.Cryptography.Aes> criptografia.  
   
--   Para funções de hash SHA1 ou RIPEMD160, use os dos [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) família (por exemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+-   Para funções de hash SHA1 ou RIPEMD160, use os dos [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) família (por exemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
  Suprima um aviso nessa regra, quando o nível de proteção necessário para os dados não requer uma garantia de segurança.  

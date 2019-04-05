@@ -1,14 +1,9 @@
 ---
-title: 'Como: sincronizar conjuntos de regras do projeto de código com a política de Check-in do projeto de equipe | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Sincronizar conjuntos de regras do projeto de código com a política de Check-in do projeto de equipe | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263114"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924850"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Como sincronizar conjuntos de regras do projeto de código com política de check-in do projeto de equipe
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Como: Sincronizar conjuntos de regras do projeto de código com a política de check-in do projeto de equipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode sincronizar as configurações de análise de código para projetos de código para a política de check-in para o projeto de equipe, especificando um conjunto de regras que contenha pelo menos as regras que são especificadas na regra definida para a política de check-in. O líder de desenvolvimento pode informar o nome e o local da regra definida para a política de check-in. Você pode usar uma das opções a seguir para garantir que a análise de código para o projeto usa o conjunto correto de regras:  
@@ -60,7 +55,7 @@ Você pode sincronizar as configurações de análise de código para projetos d
   
 1.  Siga um dos procedimentos neste tópico para selecionar a política de check-in do projeto da equipe na página de análise de código da caixa de diálogo de configurações do projeto.  
   
-2.  Clique em **aberto**.  
+2.  Clique em **Abrir**.  
   
 3.  Adicionar ou remover regras usando o editor de conjunto de regras.  
   
@@ -73,6 +68,3 @@ Você pode sincronizar as configurações de análise de código para projetos d
 6.  No **executar este conjunto de regras** , clique em  **\<procurar... >**.  
   
 7.  No **abrir** caixa de diálogo, especifique o arquivo de conjunto de regra.
-
-
-

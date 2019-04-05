@@ -1,13 +1,8 @@
 ---
 title: Expressões no depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -31,23 +26,23 @@ ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923129"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressões no depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O depurador do Visual Studio inclui avaliadores de expressão que funcionam quando você insere uma expressão na **QuickWatch** caixa de diálogo **inspeção** janela, ou **imediato** janela. Os avaliadores de expressão também estão em funcionamento na **pontos de interrupção** janela e muitos outros locais no depurador.  
+O depurador do Visual Studio inclui os avaliadores de expressão que funcionam quando você insere uma expressão na caixa de diálogo **QuickWatch**, na janela **Inspeção** ou na janela **Imediato**. Os avaliadores de expressão também estão no trabalho na janela **Pontos de interrupção** e em muitos outros locais no depurador.  
   
  As seções a seguir fornecem detalhes sobre as expressões em idiomas diferentes.  
   
 ## <a name="f-expressions-are-not-supported"></a>F#Não há suporte para expressões  
- F#expressões não são reconhecidas. Se você estiver depurando F# código, você precisa converter as expressões na C# sintaxe antes de inserir expressões em uma caixa de diálogo ou janela do depurador. Quando você converter expressões de F# para C#, lembre-se de que C# usa o `==` operador para testar a igualdade, enquanto F# usa o único `=`.  
+ F#expressões não são reconhecidas. Se você estiver depurando F# código, você precisa converter as expressões na C# sintaxe antes de inserir expressões em uma caixa de diálogo ou janela do depurador. Quando você converter expressões de F# em C#, certifique-se de que C# usa o operador `==` para testar a igualdade, enquanto F# usa o `=` único.  
   
 ## <a name="c-expressions"></a>Expressões C++  
  Para obter informações sobre como usar operadores de contexto com expressões em C++, consulte [operador de contexto (C++)](../debugger/context-operator-cpp.md).  
@@ -115,8 +110,8 @@ int main()
 |Área|Funções intrínsecas|  
 |----------|-------------------------|  
 |**Comprimento da cadeia de caracteres**|strlen, wcslen, strnlen, wcsnlen|  
-|**Comparação de cadeia de caracteres**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
-|**Pesquisa de cadeia de caracteres**|strchr, wcschr, strstr, wcsstr|  
+|**Comparação de cadeias de caracteres**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
+|**Pesquisa de cadeias de caracteres**|strchr, wcschr, strstr, wcsstr|  
 |**Win32**|GetLastError(), TlsGetValue()|  
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|  
 |**Diversos**|__log2<br /><br /> Retorna a base 2 de log de um inteiro especificado, arredondada para o menor inteiro próximo.|  
@@ -222,10 +217,5 @@ int main()
 ## <a name="see-also"></a>Consulte também  
  [Especificadores de formato em C++](../debugger/format-specifiers-in-cpp.md)   
  [Operador de contexto (C++)](../debugger/context-operator-cpp.md)   
- [Especificadores de formato em c#](../debugger/format-specifiers-in-csharp.md)   
+ [Especificadores de formato em C#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudovariáveis](../debugger/pseudovariables.md)
-
-
-
-
-
