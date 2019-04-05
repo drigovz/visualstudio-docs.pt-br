@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Depure seus aplicativos | Microsoft Docs
-description: 'Saiba como usar o Visual Studio para depurar aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.'
+description: Saiba como usar o Visual Studio para depurar aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322071"
 ---
 # <a name="debugging-in-visual-studio"></a>Depurando no Visual Studio
 

@@ -1,14 +1,9 @@
 ---
 title: Implementando o código personalizado Check-in políticas de análise de código gerenciado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268957"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58921841"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementando políticas de check-in de análise do código personalizadas para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Uma política de check-in Especifica um conjunto de regras que os membros de um 
  Para criar uma regra personalizada definida para um projeto de equipe, você primeiro crie uma pasta especial para a conjunto de regras de política de check-in **Gerenciador de controle do código-fonte**. Em seguida, crie o arquivo de conjunto de regras e adicionar o arquivo ao controle de versão. Por fim, você pode especificar a conjunto de regras como a código check-in política de análise para o projeto de equipe.  
   
 > [!NOTE]
->  Para criar uma pasta em um projeto de equipe, primeiro você deve mapear a raiz do projeto de equipe para um local no computador local. Para obter mais informações, consulte [criar e trabalhar com espaços de trabalho (antigo)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Para criar uma pasta em um projeto de equipe, primeiro você deve mapear a raiz do projeto de equipe para um local no computador local. Para obter mais informações, consulte [criar e trabalhar com espaços de trabalho (antigo)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para criar a pasta de controle de versão para o conjunto de regras de política de check-in  
   
@@ -124,6 +119,3 @@ Uma política de check-in Especifica um conjunto de regras que os membros de um 
 7.  No **executar este conjunto de regras** , clique em  **\<procurar... >**.  
   
 8.  Especifique a versão local do arquivo de conjunto de regras de política de check-in.
-
-
-

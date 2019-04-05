@@ -1,14 +1,9 @@
 ---
 title: IDebugPropertyCreateEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyCreateEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 48d440e92bda8dae1e1b37d0bb82718bcf0e1966
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3b31882f89d8fbf723af8f2a7d52f39c3a1d6c4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922175"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ IDebugPropertyCreateEvent2 : IUnknown
  Se uma propriedade tiver um documento específico ou o script associado a ele, o DE pode enviar esse evento para o SDM para atualizar o **documentos de Script** janela com o nome do documento. O SDM chamará [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) com o argumento `guidDocument` para recuperar um `VARIANT` que contém um [IUnknown](http://msdn.microsoft.com/library/e6b85472-e54b-4b8c-b19f-4454d6c05a8f) ponteiro. O SDM chamará [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) nesse ponteiro para recuperar o [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface que é usado para atualizar o **documentos de Script** janela.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -63,4 +58,3 @@ IDebugPropertyCreateEvent2 : IUnknown
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-

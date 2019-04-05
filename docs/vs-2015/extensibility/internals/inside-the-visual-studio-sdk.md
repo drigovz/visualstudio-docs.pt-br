@@ -1,14 +1,9 @@
 ---
 title: Dentro do SDK do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795824"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000291"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Modo de exibição generalizado da arquitetura do Visual Studio
  Shell do Visual Studio fornece a funcionalidade básica e dar suporte a comunicação cruzada entre suas extensões de componente VSPackages e MEF. Para obter mais informações, consulte [Shell do Visual Studio](../../extensibility/internals/visual-studio-shell.md).  
   
 ## <a name="user-experience-guidelines"></a>Diretrizes da Experiência do Usuário  
- Se você estiver planejando criar novos recursos para o Visual Studio, você deve dar uma olhada nestas diretrizes para obter dicas de design e a usabilidade: [diretrizes de experiência de usuário do Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
+ Se você estiver planejando criar novos recursos para o Visual Studio, você deve dar uma olhada nestas diretrizes para obter dicas de design e a usabilidade: [Diretrizes de experiência de usuário do Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Comandos  
  Comandos são funções que realizam tarefas, como imprimir um documento, a atualização de uma exibição ou criando um novo arquivo.  
@@ -95,10 +90,10 @@ Modo de exibição generalizado da arquitetura do Visual Studio
   
  Projetos também podem ser reunidos em uma solução, que é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo. Projeto e informações de status que pertencem à solução são armazenadas em dois arquivos de solução, o arquivo de solução com base em texto (. sln) e o arquivo de opção (. suo) de usuário de solução de binário. Esses arquivos são semelhantes aos arquivos de grupo (. vbg) que foram usados nas versões anteriores do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], e o espaço de trabalho (dsw) e o usuário opções de arquivos (. opt) que foram usados nas versões anteriores do [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
- Para obter mais informações, consulte [projetos](../../extensibility/internals/projects.md) e [soluções](../../extensibility/internals/solutions.md).  
+ Para obter mais informações, consulte [projetos](../../extensibility/internals/projects.md) e [soluções](../../extensibility/internals/solutions-overview.md).  
   
 ## <a name="project-and-item-templates"></a>Modelos de item e de projeto  
- Visual Studio inclui modelos de projeto predefinidos e modelos de item de projeto. Você pode também tornar seus próprios modelos ou adquirir modelos da comunidade e, em seguida, integrá-las ao Visual Studio. O [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) é o lugar ideal para os modelos e extensões.  
+ Visual Studio inclui modelos de projeto predefinidos e modelos de item de projeto. Você pode também tornar seus próprios modelos ou adquirir modelos da comunidade e, em seguida, integrá-las ao Visual Studio. O [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) é o lugar ideal para os modelos e extensões.  
   
  Modelos contêm a estrutura de projeto e os arquivos básicos que são necessários para compilar um determinado tipo de aplicativo, controle, biblioteca ou classe. Quando você deseja desenvolver um software que se parece com um dos modelos, criar um projeto com base no modelo e, em seguida, modifique os arquivos no projeto.  
   
@@ -108,7 +103,7 @@ Modo de exibição generalizado da arquitetura do Visual Studio
  Para obter mais informações, consulte [adicionando projeto e modelos de Item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Propriedades e opções  
- O **propriedades** janela exibe as propriedades de um único ou vários itens selecionados: [estendendo propriedades](../../extensibility/internals/extending-properties.md) páginas de opções contêm conjuntos de opções que pertencem a um componente específico, como um programação da linguagem ou um VSPackage: [opções e páginas de opções](../../extensibility/internals/options-and-options-pages.md). As configurações são recursos geralmente relacionados à interface do usuário que podem ser importados e exportados: [suporte para configurações de usuário](../../extensibility/internals/support-for-user-settings.md).  
+ O **propriedades** janela exibe as propriedades de um único ou vários itens selecionados: [Estendendo propriedades](../../extensibility/internals/extending-properties.md) páginas de opções contêm conjuntos de opções que pertencem a um componente específico, como uma linguagem de programação ou em um VSPackage: [Opções e páginas de opções](../../extensibility/internals/options-and-options-pages.md). As configurações são recursos geralmente relacionados à interface do usuário que podem ser importados e exportados: [Suporte para configurações de usuário](../../extensibility/internals/support-for-user-settings.md).  
   
 ## <a name="visual-studio-services"></a>Serviços do Visual Studio  
  Um serviço fornece um conjunto específico de interfaces de componentes consumir. Visual Studio fornece um conjunto de serviços que podem ser usados por todos os componentes, incluindo as extensões. Por exemplo, serviços do Visual Studio permitem que janelas de ferramenta a ser mostrado ou oculto dinamicamente, habilitar o acesso à Ajuda, barra de status ou eventos de interface do usuário. Editor do Visual Studio também fornece serviços que podem ser importados por extensões de editor. Para obter mais informações, consulte [Using e fornecendo serviços](../../extensibility/using-and-providing-services.md).  
@@ -133,4 +128,3 @@ Modo de exibição generalizado da arquitetura do Visual Studio
   
 ## <a name="help-viewer"></a>Visualizador da Ajuda  
  Você pode integrar seu próprio de Ajuda e páginas de F1 do Visualizador da Ajuda. Para obter mais informações, consulte [SDK do Microsoft Help Viewer](../../extensibility/internals/microsoft-help-viewer-sdk.md).
-

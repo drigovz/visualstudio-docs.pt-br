@@ -1,25 +1,22 @@
 ---
 title: Definir um comando de menu em um diagrama de modelagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809097"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58921986"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir um comando de menu em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +220,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciado.  
 
-     **Solução de problemas**: se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado:  
+     **Solução de problemas**: Se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado:  
 
     -   Se você tiver mais de um projeto, certifique-se de que o projeto do VSIX está definido como o projeto de inicialização da solução.  
 
@@ -235,7 +232,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  Abra o menu de atalho em qualquer lugar no diagrama. O comando deve aparecer no menu.  
 
-     **Solução de problemas**: se o comando não aparecer no menu, verifique se:  
+     **Solução de problemas**: Se o comando não aparecer no menu, verifique se:  
 
     -   O projeto de comando de menu está listado como um componente MEF na **ativos** guia **source.extensions.manifest** no projeto VSIX.  
 
@@ -276,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo de:  
 
-   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [versão]**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
 ##  <a name="MenuExample"></a> Exemplo  
  O exemplo a seguir mostra o código para um comando de menu que fará intercâmbio entre os nomes dos dois elementos em um diagrama de classe. Esse código deve ser criado um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto de extensão e instalado conforme descrito nas seções anteriores.  
@@ -376,6 +373,3 @@ namespace SwapClassNames
  [Editar diagramas de sequência UML usando a API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)   
  [Exemplo: Comando para alinhar formas em um diagrama UML](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-

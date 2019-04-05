@@ -1,12 +1,9 @@
 ---
 title: Geração de texto de tempo de execução com modelos de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920125"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000006"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Herança entre modelos de texto de tempo de execução  
  Você pode compartilhar conteúdo entre os modelos de tempo de execução ao escrever um modelo de classe base, que pode ser abstrato. Use o `inherits` parâmetro do `<@#template#>` diretiva para fazer referência a outra classe de modelo de tempo de execução.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Padrão de herança: fragmentos em métodos de Base  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Padrão de herança: Fragmentos em métodos Base  
  O padrão usado no exemplo a seguir, observe os seguintes pontos:  
   
 - A classe base `SharedFragments` define os métodos dentro de blocos de recurso de classe `<#+ ... #>`.  
@@ -348,7 +345,7 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>Padrão de herança: O texto no corpo de Base  
+#### <a name="inheritance-pattern-text-in-base-body"></a>Padrão de herança: Texto no corpo de Base  
  Nessa abordagem alternativa ao uso de herança do modelo, a maior parte do texto é definida no modelo de base. Modelos derivados fornecerem dados e fragmentos de texto que se ajustam o conteúdo de base.  
   
  **AbstractBaseTemplate1.tt:**  
@@ -431,7 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Consulte também  
  [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)   
- [Noções básicas sobre T4: Modelos de texto pré-processado pelo {1&gt;{2&gt;oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Noções básicas sobre T4: Modelos de texto pré-processado pelo {1&gt;{2&gt;oleg Sych](https://github.com/olegsych/T4Toolbox)

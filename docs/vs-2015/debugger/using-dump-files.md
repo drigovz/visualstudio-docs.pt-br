@@ -1,14 +1,9 @@
 ---
 title: Usando arquivos de despejo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761129"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000035"
 ---
 # <a name="using-dump-files"></a>Usando arquivos de despejo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,9 +78,9 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
   
 - Para depurar [modo de kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) despejar arquivos no Visual Studio 2013, baixe a [Windows 8.1 versão de depuração de ferramentas para Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Ver [depuração de Kernel no Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
-- O Visual Studio não pode depurar arquivos de despejo salvos no formato de despejo mais antigo conhecido como um [despejo completo do modo de usuário](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Observe que um despejo completo do modo de usuário não é igual a um despejo com heap.  
+- O Visual Studio não pode depurar arquivos de despejo salvos no formato de despejo mais antigo conhecido como um [despejo completo do modo de usuário](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Observe que um despejo completo do modo de usuário não é igual a um despejo com heap.  
   
-- Para depurar com o [SOS. dll (extensão de depuração SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) no Visual Studio, você deve instalar a depuração de ferramentas para Windows que faz parte do Windows Driver Kit (WDK). Ver [Windows 8.1 Preview: Baixe kits, bits e ferramentas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Para depurar com o [SOS. dll (extensão de depuração SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) no Visual Studio, você deve instalar a depuração de ferramentas para Windows que faz parte do Windows Driver Kit (WDK). Consulte [Windows 8.1 Preview: Baixe kits, bits e ferramentas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
@@ -104,7 +99,7 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
   
 1.  No Visual Studio, escolha **arquivo**, **abra**, **arquivo**.  
   
-2.  No **abrir arquivo** caixa de diálogo, localize e selecione o arquivo de despejo. Geralmente, ele terá uma extensão .dmp. Em seguida, escolha **Okey**.  
+2.  Na caixa de diálogo **Abrir Arquivo**, localize e selecione o arquivo de despejo. Geralmente, ele terá uma extensão .dmp. Em seguida, escolha **Okey**.  
   
 3.  O **resumo do arquivo de despejo** janela é exibida. Nessa janela, você pode exibir informações resumidas da depuração do arquivo de despejo, definir o caminho do símbolo, iniciar a depuração e copiar as informações resumidas na área de transferência.  
   
@@ -145,6 +140,5 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Especifique o símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-

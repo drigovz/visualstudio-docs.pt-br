@@ -1,12 +1,9 @@
 ---
 title: Geração em um processo de compilação de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,15 +11,15 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281804"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000007"
 ---
-# <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de build
+# <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de compilação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Transformação de texto pode ser chamada como parte do processo de compilação de uma solução do Visual Studio. Há tarefas de compilação que são especializadas para a transformação de texto. As tarefas de compilação T4 executam modelos de texto de tempo de design e também compilam modelos de texto de tempo de execução (pré-processados).
 
@@ -32,7 +29,7 @@ Isso significa que você não pode acessar itens como nomes de arquivo do projet
 
 ##  <a name="buildserver"></a> Configurar seus computadores
 
-Para habilitar tarefas de compilação no seu computador de desenvolvimento, instale [SDK de modelagem do Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Para habilitar tarefas de compilação no seu computador de desenvolvimento, instale [SDK de modelagem do Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Se [seu servidor de compilação](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) é executado em um computador no qual o Visual Studio não estiver instalado, copie os seguintes arquivos para o computador de build do seu computador de desenvolvimento. Substitua os números da versão mais recente por ‘*’.
 
@@ -288,4 +285,4 @@ Há uma boa orientação no modelo T4 do MSbuild, $(VSToolsPath)\TextTemplating\
 
 - [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)
 - [Visualização do Visual Studio e SDK de modelagem](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [{1&gt;{2&gt;oleg Sych: Noções básicas sobre a integração de T4:MSBuild](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [{1&gt;{2&gt;oleg Sych: Noções básicas sobre a integração de T4:MSBuild](https://github.com/olegsych/T4Toolbox)

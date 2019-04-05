@@ -1,37 +1,32 @@
 ---
-title: O que&#39;s novo design no Visual Studio | Microsoft Docs
-ms.custom: ''
+title: O que&#39;s novos para o design
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771283"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000295"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Novidades no design no Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>O que há de novo no design no Visual Studio no Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Esta versão do Visual Studio inclui os seguintes aprimoramentos para ajudá-lo a entender melhor e criar o código.
 
- **Gráficos de dependência e mapas de código**
+ **Mapas de código e gráficos de dependência**
 
- No Visual Studio Enterprise, quando você quiser entender dependências específicas em seu código, exiba-os Criando mapas de código. Em seguida, você pode navegar essas relações usando o mapa, que aparece ao lado de seu código. Mapas de código também podem ajudar a manter o controle de seu local no código enquanto você trabalha ou depura código, portanto, você lerá menos códigos enquanto aprende mais sobre o design do seu código.
+ No Visual Studio Enterprise, quando você quiser entender dependências específicas em seu código, exiba-os Criando mapas de código. Assim, você pode navegar entre essas relações usando o mapa que aparece ao lado do código. Os mapas de código também podem ajudar a saber em que parte do código você está enquanto trabalha ou depura código, para que seja necessário ler menos código enquanto examina o design do código.
 
  Na versão final (RTM), fizemos os menus de atalho para elementos de código e links muito mais fácil de usar, agrupando comandos em seções relacionadas ao selecionar, edição, gerenciamento de grupos e alterando o layout do conteúdo do grupo. Observe também que os projetos de teste são exibidos em um estilo diferente de outros projetos e que atualizamos os ícones de elementos no mapa para versões mais adequadas.
 
@@ -39,25 +34,25 @@ Esta versão do Visual Studio inclui os seguintes aprimoramentos para ajudá-lo 
 
  Outros aprimoramentos incluem:
 
-- **Diagramas de cima para baixo melhorados**. Para médias e grandes soluções do Visual Studio, agora você pode usar um menu de arquitetura simplificado para obter um código mais útil mapas para sua solução. Os assemblies da sua solução são agrupados pelas pastas de solução, para que você possa vê-los no contexto e aproveitar o esforço feito para estruturar a solução. Você verá imediatamente projeto e referências de assembly e, em seguida, os tipos de link que aparecem. Além disso, os assemblies externos à solução são agrupados de forma mais compacta.
+- **Diagramas de cima para baixo melhorados**. Para soluções médias a grandes do Visual Studio, agora você pode usar um menu de arquitetura simplificado para obter mapas de códigos mais eficientes para sua solução. Os assemblies da solução são agrupados pelas pastas da solução para que você possa vê-los no contexto e usufruir do esforço que empregou para estruturar a solução. Você verá imediatamente referências de projeto e assembly e, em seguida, aparecerão os tipos de link. Além disso, os assemblies que estiverem externos à solução serão agrupados de uma maneira mais compacta.
 
-- **Projetos de teste têm estilo diferente e podem ser filtrados**. Você pode agora mais fácil e rapidamente identificar os projetos de teste no mapa porque eles têm estilos diferentes. Eles também podem ser filtrados para que você possa se concentrar no código de trabalho do aplicativo.
+- **Os projetos de teste têm estilo diferente e podem ser filtrados**. Você pode agora mais fácil e rapidamente identificar os projetos de teste no mapa porque eles têm estilos diferentes. Eles também podem ser filtrados para que você possa se concentrar no código de trabalho do aplicativo.
 
-- **Links de dependência externa de simplificado**. Links de dependência não mais representam a herança de System. Object, System. ValueType, System. Enum e System. Delegate, que facilita ver dependências externas no mapa de códigos.
+- **Links de dependência externa simplificados**. Os links de dependência não representam mais a herança de System.Object, System.ValueType, System.Enum e System.Delegate, o que facilita a visualização das dependências externas no mapa de códigos.
 
-- **'Drill-in into dependency links' leva os filtros em consideração**. Você obtém um diagrama simples e útil quando expande para compreender as contribuições para um link de dependência. O diagrama é menos desorganizado e leva em consideração as opções que você selecionou de filtragem de link.
+- **O 'Aprofundamento nos links de dependência' leva os filtros em consideração**. Você obtém um diagrama simples e útil quando o expande para compreender as contribuições a um link de dependência. O diagrama é menos desorganizado e leva em consideração as opções de filtragem de link que você selecionou.
 
-- **Elementos de código são adicionados a um mapa de código com seus contexto**. Como os diagramas agora aparecem com contexto (até assembly e solução de pasta que você pode filtrar as se necessário), que você conseguir diagramas mais eficientes ao arrastar e soltar elementos de código do Gerenciador de soluções, o modo de exibição de classe, o Pesquisador de objetos; ou, quando selecionar elementos no Gerenciador de soluções e selecionando mostram no mapa de códigos.
+- **Os elementos de código são adicionados a um mapa de código com seus contextos**. Como os diagramas agora aparecem com contexto (até o assembly e a pasta de solução, que podem ser filtrados, se necessário), você pode obter diagramas mais eficientes ao arrastar e soltar elementos de código do Gerenciador de Soluções, do Modo de Exibição de Classe e do Pesquisador de Objetos ou ao solicitar elementos no Gerenciador de Soluções e escolher Exibir no Mapa de Códigos.
 
-- **Obtenha mapas de código reativos mais rapidamente**. Arrastar e soltar operações produzem um resultado imediato, e os links entre os nós são criados com muito mais rapidamente, sem afetar as operações posteriores iniciadas pelo usuário, como expandir um nó ou solicitar mais nós. Quando você cria mapas de código sem compilar a solução, todos os casos de canto, como quando os assemblies não são compilados — agora são processados.
+- **Obtenha mapas de código reativos mais rapidamente**. As operações de arrastar e soltar produzem um resultado imediato, e os links entre os nós são criados com muito mais rapidez, sem afetar as operações posteriores iniciadas pelo usuário, como expandir um nó ou solicitar mais nós. Quando você cria mapas de código sem compilar a solução, todos os casos de canto, como quando os assemblies não são compilados, são agora compilados.
 
 - **Ignorar a recompilação de sua solução.** Fornece um melhor desempenho durante a criação e edição de diagramas.
 
-- **Filtrar nós de elemento de código e grupos**. Você organizar rapidamente seus mapas ao exibir ou ocultar elementos de código com base em sua categoria, bem como pelo agrupamento de elementos de código por pastas de solução, assemblies, namespaces, pastas de projeto e tipos.
+- **Filtrar nós e grupos de elemento de código**. Você pode organizar rapidamente seus mapas ao exibir ou ocultar elementos de código com base na categoria e ao agrupar elementos de código por pastas de solução, assemblies, namespaces, pastas de projeto e tipos.
 
-- **Filtre relações para tornar os diagramas mais fáceis de ler**. Filtragem de link agora também se aplica para cruzar os links de grupo, o que torna o trabalho com a janela de filtros menos intrusivo que do que era nas versões anteriores.
+- **Filtre relações para tornar os diagramas mais fáceis de ler**. Agora, a filtragem de links também se aplica a links de grupos cruzados, o que torna o trabalho com a janela de filtros menos intrusivo do que era nas versões anteriores.
 
-- **Criar diagramas da exibição de classe e Pesquisador de objetos**. Arraste e solte arquivos e assemblies em um novo ou um mapa existente do windows de modo de exibição de classe e Pesquisador de objetos.
+- **Criar diagramas do Modo de Exibição de Classe e do Pesquisador de Objetos**. Arraste e solte arquivos e assemblies em um mapa novo ou existente nas janelas Modo de Exibição de Classe e Pesquisador de Objetos.
 
   Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
 
@@ -65,9 +60,9 @@ Esta versão do Visual Studio inclui os seguintes aprimoramentos para ajudá-lo 
 
 - **Diagramas de camada**. Atualize esses diagramas usando o modo de exibição de classe e Pesquisador de objetos. Para atender aos requisitos de design de software, use diagramas de camada para descrever as dependências desejadas para seu software. Mantenha o código consistente com esse design, localizando o código que não atende a essas restrições e validando códigos futuros com essa linha de base.
 
-- **Diagramas de UML**. Você não pode mais criar diagramas de classe UML e diagramas de sequência do código. Mas você ainda criar esses diagramas usando novos elementos UML.
+- **Diagramas de UML**. Não é mais possível criar diagramas de classe UML e diagramas de sequência por meio do código. Mas ainda é possível criar esses diagramas usando novos elementos UML.
 
-- **Gerenciador de arquitetura**. Não há mais você pode usar o Architecture Explorer para criar diagramas. Mas você ainda pode usar o Gerenciador de soluções.
+- **Architecture Explorer**. Não é mais possível usar o Architecture Explorer para criar diagramas. Mas ainda é possível usar o Gerenciador de Soluções.
 
 ##  <a name="VersionSupport"></a> Suporte de edição para a arquitetura e ferramentas de modelagem
 

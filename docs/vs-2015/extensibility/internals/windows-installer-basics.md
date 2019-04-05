@@ -1,34 +1,29 @@
 ---
 title: Noções básicas do Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747657"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000042"
 ---
 # <a name="windows-installer-basics"></a>Noções básicas do Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 O Windows Installer instala e desinstala aplicativos ou produtos de software no computador do usuário, executar essas tarefas em unidades chamadas de componentes do Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID que identifica cada WIC, que é a unidade básica de instalação e a contagem de referências para as configurações usando o Windows Installer.  
   
- Para obter uma documentação abrangente do Windows Installer, consulte o tópico do SDK da plataforma [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).  
+ Para obter uma documentação abrangente do Windows Installer, consulte o tópico do SDK da plataforma [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).  
   
 ## <a name="authoring-a-vspackage"></a>Criação de um VSPackage  
  Windows Installer usa pacotes de instalação, que contêm informações que o Windows Installer precisa para instalar, desinstalar ou reparar um produto e para executar a interface de usuário (UI) de configuração. Cada pacote de instalação inclui um arquivo. msi, que contém um banco de dados de instalação, um fluxo de informações de resumo e fluxos de dados de várias partes da instalação. Para usar o instalador, você deve criar uma instalação. Como o instalador organiza as instalações em torno do conceito de componentes e armazena informações sobre a instalação em um banco de dados relacional, o processo de criação de um pacote de instalação em larga escala envolve as seguintes etapas:  
@@ -80,4 +75,3 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
   
 ## <a name="see-also"></a>Consulte também  
  [O que acontece se as regras de componente são interrompidas?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
-

@@ -1,27 +1,22 @@
 ---
-title: 'Como: usar o diagnóstico de gráficos com um dispositivo ARM | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar o diagnóstico de gráficos com um dispositivo ARM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 346fd3c0-9e92-4ab8-bb3b-1aa9000a2483
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728668"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000008"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Como usar diagnóstico de gráficos com um dispositivo ARM
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Como: Usar o diagnóstico de gráficos com um dispositivo ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O Diagnóstico de Gráficos oferece suporte à depuração remota de aplicativos Direct3D em dispositivos baseados em ARM que executam o Windows RT 8.1 ou Windows Phone 8.1. É possível capturar informações de gráficos do aplicativo Direct3D enquanto ele é executado no dispositivo ou usar o dispositivo como computador de reprodução para obter informações de gráficos capturadas anteriormente.  
@@ -35,7 +30,7 @@ O Diagnóstico de Gráficos oferece suporte à depuração remota de aplicativos
   
 1.  Instalar o [política de Kits ARM](http://msdn.microsoft.com/windows/desktop/dn469188) em seu dispositivo baseado em ARM.  
   
-2.  Instalar o [ferramentas de depuração remota](http://go.microsoft.com/fwlink/?LinkId=393086) em seu dispositivo baseado em ARM.  
+2.  Instalar o [ferramentas de depuração remota](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) em seu dispositivo baseado em ARM.  
   
 > [!IMPORTANT]
 >  No caso de dispositivos do Windows Phone 8.1, pode ser preciso registrar seu telefone para o desenvolvimento. Para fazer isso, você deve ser um desenvolvedor registrado. Para obter mais informações, consulte [como implantar e executar um aplicativo para Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
@@ -48,11 +43,8 @@ O Diagnóstico de Gráficos oferece suporte à depuração remota de aplicativos
   
 2.  Sobre o **destino de depuração** lista suspensa, selecione seu dispositivo ARM.  
   
-3.  No menu, escolha **Debug**, **gráficos**, **iniciar diagnóstico**. (Teclado: Alt + F5)  
+3.  No menu, escolha **Debug**, **gráficos**, **iniciar diagnóstico**. (Teclado: Alt+F5)  
   
 ## <a name="see-also"></a>Consulte também  
  [Executar aplicativos da Store do Windows em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
- [Como alterar o computador de reprodução de diagnóstico de gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)
-
-
-
+ [Como: Alterar o computador de reprodução de Diagnóstico de Gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)

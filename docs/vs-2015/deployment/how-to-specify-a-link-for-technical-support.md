@@ -1,14 +1,9 @@
 ---
-title: 'Como: especificar um Link para obter suporte técnico | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Especificar um Link para obter suporte técnico | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,15 +20,15 @@ ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: a2a772122851bb48e5cb5f0cf388110df8e5b371
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ad3dddec84ac8afc00681171bf59d13205229ca7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196138"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922141"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Como especificar um link para suporte técnico
+# <a name="how-to-specify-a-link-for-technical-support"></a>Como: Especificar um Link para o suporte técnico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao publicar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo, o **URL de suporte** propriedade identifica uma página da Web ou compartilhamento de arquivos em que os usuários podem ir para obter informações sobre o aplicativo. Essa propriedade é opcional. Se fornecido, a URL será exibida na entrada do aplicativo **adicionar ou remover programas** caixa de diálogo.  
@@ -54,7 +49,4 @@ Ao publicar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativ
   
 ## <a name="see-also"></a>Consulte também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como publicar um aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,14 +1,9 @@
 ---
 title: Analisando a qualidade do aplicativo usando as ferramentas de análise de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.analysisresults
 helpviewer_keywords:
@@ -20,22 +15,22 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216664"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000002"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisando a qualidade do aplicativo usando as ferramentas de análise de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nesta seção  
  [Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
- Análise de código do Visual Studio para código gerenciado fornece informações sobre assemblies gerenciados, como violações de programação e design de regras definidas nas diretrizes de Design do Framework do Microsoft .NET. Mensagens de aviso identificam quaisquer problemas de programação e design relevantes e, quando é possíveis, forneça informações sobre como corrigir o problema.  
+ Análise de código do Visual Studio para código gerenciado fornece informações sobre assemblies gerenciados, como violações de programação e design de regras definidas nas diretrizes de Design do Framework do Microsoft .NET. As mensagens de aviso identificam problemas de programação e de design relevantes e, quando possível, fornecem informações de como corrigir o problema.  
   
  [Analisando a qualidade do código do C/C++ usando a análise de código](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)  
- A ferramenta de análise de código C/C++ fornece informações para desenvolvedores sobre possíveis defeitos no código-fonte C/C++. Erros de codificação comuns relatados pela ferramenta incluem saturações de buffer, memória não inicializada, desreferências de ponteiro nulo e vazamentos de memória e recursos.  
+ A ferramenta de análise de código C/C++ fornece informações aos desenvolvedores sobre possíveis defeitos no código-fonte C/C++. Erros de codificação comuns relatados pela ferramenta incluem estouros de buffer, memória não inicializada, desreferências de ponteiro nulo e perdas de memória e de recursos.  
   
  [Usando conjuntos de regras para agrupar regras de análise de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)  
  Selecione e crie *conjuntos de regra* para aplicar ao seu projeto.  
@@ -49,8 +44,8 @@ Nesta seção
 ### <a name="code-analysis-for-drivers"></a>Análise de código para Drivers  
  Ferramentas de análise de código podem ajudar a melhorar a estabilidade e a confiabilidade do seu driver sistematicamente analisando o código de origem do driver.  
   
- [Analisando a qualidade do Driver usando as ferramentas de análise de código](http://go.microsoft.com/fwlink/?LinkId=227618)  
- Análise de código para Drivers é uma ferramenta de verificação de tempo de compilação estática que detecta básica de erros de codificação em programas C e C++ e inclui um módulo especializado que foi projetado para detectar erros no código do driver de modo kernel (principalmente)... Verificador de Driver estático (SDV) é uma ferramenta de verificação estática que sistematicamente analisa o código-fonte dos drivers de modo kernel do Windows. SDV determina se o driver corretamente interage com o kernel do sistema operacional Windows.  
+ [Analisando a qualidade do Driver usando as ferramentas de análise de código](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
+ Análise de código para Drivers é uma ferramenta de verificação de tempo de compilação estática que detecta básica de erros de codificação em programas C e C++ e inclui um módulo especializado que foi projetado para detectar erros no código do driver de modo kernel (principalmente). Verificador de Driver estático (SDV) é uma ferramenta de verificação estática que sistematicamente analisa o código-fonte dos drivers de modo kernel do Windows. SDV determina se o driver corretamente interage com o kernel do sistema operacional Windows.  
   
  [Análise de código para avisos de Drivers](http://go.microsoft.com/fwlink/?LinkId=225920)  
  Descreve os avisos de análise de código para Drivers relata quando ela detecta um possível erro no código do driver.  
@@ -61,6 +56,3 @@ Nesta seção
   
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)  
  Inserir descrição aqui.
-
-
-

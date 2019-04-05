@@ -1,27 +1,22 @@
 ---
 title: Referência de esquema 2.0 de extensão do VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785922"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58921996"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência do esquema de extensão do VSIX 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
     -   `Id` – Esse atributo deve ser uma ID exclusiva para o pacote escolhido por seu autor. O nome deve ser qualificado da mesma forma que os tipos CLR são ajudaria: Company.Product.Feature.Name. O `Id` atributo é limitado a 100 caracteres.  
   
-    -   `Version` – Isso define a versão deste pacote e seu conteúdo. Esse atributo segue o formato de controle de versão do assembly CLR: Major (1.2.40308.00). Um pacote com um maior número de versão é considerado atualizações do pacote e pode ser instalado em relação à versão instalada existente.  
+    -   `Version` – Isso define a versão deste pacote e seu conteúdo. Esse atributo segue o formato de controle de versão do assembly CLR: Major.Minor.Build.Revision (1.2.40308.00). Um pacote com um maior número de versão é considerado atualizações do pacote e pode ser instalado em relação à versão instalada existente.  
   
     -   `Language` – Esse atributo é o idioma padrão para o pacote e corresponde aos dados textuais neste manifesto. Esse atributo segue a convenção de código de localidade do CLR para assemblies de recurso, por exemplo: en-us, en, fr-fr. Você pode especificar `neutral` para declarar uma extensão com neutralidade de idioma que será executado em qualquer versão do Visual Studio. O valor padrão é `neutral`.  
   
@@ -170,9 +165,9 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
   - `Type` – Esse é o tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
   
-    1. VSPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-    2. Mefcomponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
     3. Microsoft.VisualStudio.ToolboxControl  
   
@@ -222,4 +217,3 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
 ## <a name="see-also"></a>Consulte também  
  [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

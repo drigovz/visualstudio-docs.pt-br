@@ -1,38 +1,33 @@
 ---
-title: 'Como: adicionar nós ao espaço de trabalho do XML Schema Explorer | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar nós ao espaço de trabalho do XML Schema Explorer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6ef4e4e019406d9c317ccd90eabcb89e25a6f36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 84a99426cf32477e0661872c09f41ec50aeb2842
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220097"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58921811"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Como: Adicionar nós ao espaço de trabalho XML Schema Explorer
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Como: Adicionar nós ao workspace do gerenciador de esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Este tópico explica como adicionar nós a [espaço de trabalho do Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md) XML Schema Explorer. Isso pode ser obtido arrastando e soltando-os nós XML Schema Explorer em uma exibição do designer XSD, ou usando o menu de contexto do gerenciador de esquema XML. Você também pode adicionar os nós que são realçadas como resultado de uma pesquisa executada por XML Schema Explorer. Para obter mais informações, consulte [como: adicionar esquema definir pesquisa de resultado nós ao espaço de trabalho](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
+Este tópico explica como adicionar nós a [espaço de trabalho do Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md) XML Schema Explorer. Isso pode ser obtido arrastando e soltando-os nós XML Schema Explorer em uma exibição do designer XSD, ou usando o menu de contexto do gerenciador de esquema XML. Você também pode adicionar os nós que são realçadas como resultado de uma pesquisa executada por XML Schema Explorer. Para obter mais informações, confira [Como: Adicionar nós de resultados de pesquisa de conjunto de esquema para o espaço de trabalho](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
   
 > [!NOTE]
 >  Somente os nós globais podem ser adicionados para o [espaço de trabalho de Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md).  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Para adicionar nós através do menu de contexto XML Explorer  
   
-1.  Siga as etapas em [como: criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
 2.  Clique com o botão direito do mouse no nó de `PurchaseOrderType` em um XSD Explorer. Selecione **Mostrar no modo de exibição gráfico**.  
   
@@ -68,6 +63,3 @@ Este tópico explica como adicionar nós a [espaço de trabalho do Designer de e
   
 ## <a name="see-also"></a>Consulte também  
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
-
-
-

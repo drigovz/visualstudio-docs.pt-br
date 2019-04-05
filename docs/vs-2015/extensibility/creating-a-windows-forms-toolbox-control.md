@@ -1,14 +1,9 @@
 ---
 title: Criando um Windows Forms o controle de caixa de ferramentas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781706"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000011"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Criando um controle de caixa de ferramentas do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -213,11 +208,10 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
      O contador é redefinido como **0**.  
   
 ## <a name="next-steps"></a>Próximas etapas  
- Quando você cria um **caixa de ferramentas** controle, o Visual Studio cria um arquivo chamado *ProjectName*. VSIX na pasta \bin\debug\ do seu projeto. Você pode implantar o controle ao carregar o arquivo. VSIX para uma rede ou para um site da Web. Quando um usuário abre o arquivo. VSIX, o controle seja instalado e adicionado ao Visual Studio **caixa de ferramentas** no computador do usuário. Como alternativa, você pode carregar o arquivo. VSIX para o [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) Web site para que os usuários podem encontrá-lo, navegando na **ferramentas / extensões e atualizações** caixa de diálogo.  
+ Quando você cria um **caixa de ferramentas** controle, o Visual Studio cria um arquivo chamado *ProjectName*. VSIX na pasta \bin\debug\ do seu projeto. Você pode implantar o controle ao carregar o arquivo. VSIX para uma rede ou para um site da Web. Quando um usuário abre o arquivo. VSIX, o controle seja instalado e adicionado ao Visual Studio **caixa de ferramentas** no computador do usuário. Como alternativa, você pode carregar o arquivo. VSIX para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site para que os usuários podem encontrá-lo, navegando na **ferramentas / extensões e atualizações** caixa de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Estendendo a caixa de ferramentas](../misc/extending-the-toolbox.md)   
  [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Estender outras partes do Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Noções básicas sobre o desenvolvimento de controles dos Windows Forms](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

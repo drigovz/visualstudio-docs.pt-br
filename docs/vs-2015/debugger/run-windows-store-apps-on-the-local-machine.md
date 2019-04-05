@@ -1,14 +1,9 @@
 ---
 title: Aplicativos de execução Windows Store no computador local | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922051"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Executar aplicativos da Windows Store na máquina local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
  **Para alternar de uma instância em execução de um aplicativo da Windows Store para Visual Studio**  
   
  Quando você executa um aplicativo da Windows Store em um computador local e usa apenas um único monitor, você pode querer alternar para o Visual Studio enquanto deixa o aplicativo em execução. Por exemplo, o aplicativo pode estar em um estado que não pode ser alcançado por um ponto de interrupção, como esperar por um evento ou estar preso em um loop extenso ou sem fim. Para retornar ao Visual Studio, pressione ALT+TAB.
-
-
-

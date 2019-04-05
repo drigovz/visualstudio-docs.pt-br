@@ -1,14 +1,9 @@
 ---
 title: Exibir valores de dados em dicas de dados no editor de códigos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37fc58a68f8cf482ac6a2bbab3ecb47c28d60904
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922055"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Exibir valores de dados em Dicas de Dados no editor de códigos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +107,7 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 -   Clique no ícone de lupa para selecionar o visualizador padrão para o tipo de dados.  
   
-     -ou-  
+     - ou -  
   
      Clique na seta do menu suspenso ao lado do visualizador para selecionar de uma lista de visualizadores apropriados para o tipo de dados.  
   
@@ -148,9 +143,6 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 ## <a name="see-also"></a>Consulte também  
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Como usar a caixa de diálogo QuickWatch](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Como: Use a caixa de diálogo QuickWatch](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Como: alterar o formato numérico de Windows do depurador](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
-
-
-
+ [Como: Alterar o formato numérico de Windows do depurador](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

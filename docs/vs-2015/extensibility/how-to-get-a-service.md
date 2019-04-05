@@ -1,28 +1,23 @@
 ---
-title: 'Como: obter um serviço | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Obtenha um serviço | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea5f3be4f5792213c5625e4c287195161eb1dd62
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785060"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926446"
 ---
-# <a name="how-to-get-a-service"></a>Como: obter um serviço
+# <a name="how-to-get-a-service"></a>Como: Obter um serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Muitas vezes você precisa obter os serviços do Visual Studio para acessar recursos diferentes. Em geral, um serviço do Visual Studio fornece uma ou mais interfaces que você pode usar. Você pode obter a maioria dos serviços de um VSPackage.  
@@ -46,7 +41,7 @@ Muitas vezes você precisa obter os serviços do Visual Studio para acessar recu
   
     ```  
   
-     Esse código obtém um serviço SVsActivityLog e converte-o para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, que pode ser usado para gravar no log de atividade. Por exemplo, consulte [como: usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
+     Esse código obtém um serviço SVsActivityLog e converte-o para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, que pode ser usado para gravar no log de atividade. Para obter um exemplo, consulte [ Usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
   
 4.  Compile o projeto e comece a depuração. A instância experimental é exibida.  
   
@@ -57,7 +52,7 @@ Muitas vezes você precisa obter os serviços do Visual Studio para acessar recu
   
  Estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método se baseia em um provedor de serviços em cache que é inicializado na primeira vez que qualquer VSPackage derivado de <xref:Microsoft.VisualStudio.Shell.Package> é colocado no local.  
   
- Como o construtor de VSPackage é chamado antes do VSPackage é colocado no local, serviços globais são normalmente indisponíveis a partir do construtor de VSPackage. Ver [como: solucionar problemas de serviços](../extensibility/how-to-troubleshoot-services.md) para uma solução alternativa.  
+ Como o construtor de VSPackage é chamado antes do VSPackage é colocado no local, serviços globais são normalmente indisponíveis a partir do construtor de VSPackage. Confira [Como Solucionar problemas de serviços](../extensibility/how-to-troubleshoot-services.md) para uma solução alternativa.  
   
  Aqui está um exemplo da forma de obter um serviço em uma janela de ferramenta ou outro elemento não VSPackage.  
   
@@ -90,7 +85,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: fornecer um serviço](../extensibility/how-to-provide-a-service.md)   
+ [Como: Fornecer um serviço](../extensibility/how-to-provide-a-service.md)   
  [Usar e fornecer serviços](../extensibility/using-and-providing-services.md)   
  [Fundamentos do serviço](../extensibility/internals/service-essentials.md)
-

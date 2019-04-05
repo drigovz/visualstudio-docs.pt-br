@@ -1,27 +1,22 @@
 ---
 title: Criar um VSPackage de controle do código-fonte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0e85c25f1a5d935d36466e922659b5c2021b4c71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2b1516cf358a4488ff02e650f6c703a1761a94a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922101"
 ---
 # <a name="creating-a-source-control-vspackage"></a>Criar um VSPackage de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,4 +44,3 @@ Esta documentação inclui links para a visão geral da arquitetura de um pacote
   
  [Controle do código-fonte](../../extensibility/internals/source-control.md)  
  Discute as opções para implementar o controle de origem como um recurso integrado do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
-

@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Baixando Assemblies sob demanda com a implantação do ClickOnce usando o Designer de API | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,15 +17,15 @@ ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 923951196487c9dc3f08b61879271fc71be373e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9c65ca67b54396935f52aaa8168d802f0179afd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922152"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Instruções passo a passo: baixando assemblies por demanda com a API de implantação do ClickOnce usando o designer
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Passo a passo: Baixando Assemblies sob demanda com a implantação do ClickOnce usando o Designer de API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo são baixadas quando o aplicativo é executado pela primeira vez. No entanto, pode haver partes do seu aplicativo que são usados por um pequeno conjunto de usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional", e como baixá-los usando as classes no <xref:System.Deployment.Application> namespace quando o common language runtime requê-los.  
@@ -39,7 +34,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../incl
 >  Seu aplicativo precisará executar em confiança total para usar este procedimento.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, clique em **Importar e exportar configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, clique em **Importar e exportar configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="creating-the-projects"></a>Criando os Projetos  
   
@@ -70,7 +65,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../incl
      [!code-csharp[ClickOnceOnDemand#2](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#2)]
      [!code-vb[ClickOnceOnDemand#2](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#2)]  
   
-6.  Sobre o **modo de exibição** menu, clique em **caixa de ferramentas**. Arraste uma <xref:System.Windows.Forms.Button> do **caixa de ferramentas** para o formulário. Clique duas vezes no botão e adicione o seguinte código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos.  
+6.  No menu **Exibir**, clique em **Caixa de Ferramentas**. Arraste uma <xref:System.Windows.Forms.Button> do **caixa de ferramentas** para o formulário. Clique duas vezes no botão e adicione o seguinte código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos.  
   
      [!code-csharp[ClickOnceOnDemand#3](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#3)]
      [!code-vb[ClickOnceOnDemand#3](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#3)]  
@@ -87,11 +82,11 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../incl
   
 4.  Expanda o **grupo** caixa de lista suspensa e selecione **New**. Insira o nome `ClickOnceLibrary` como o novo nome de grupo.  
   
-5.  Continuar publicando seu aplicativo, conforme descrito em [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+5.  Continuar publicando seu aplicativo, conforme descrito em [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando o Manifest Generation and Editing Tool, cliente gráfico (MageUI.exe)  
   
-1.  Criar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos conforme descrito em [passo a passo: Implantando um aplicativo ClickOnce manualmente](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1.  Criar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos conforme descrito em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 2.  Antes de fechar MageUI.exe, selecione a guia que contém o manifesto do aplicativo da implantação e, nessa guia, selecione a **arquivos** guia.  
   
@@ -107,6 +102,3 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../incl
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Deployment.Application.ApplicationDeployment>
-
-
-

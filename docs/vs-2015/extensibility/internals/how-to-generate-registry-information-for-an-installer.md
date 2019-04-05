@@ -1,14 +1,9 @@
 ---
-title: 'Como: gerar informações de registro para um instalador | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Gerar informações de registro para um instalador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 612b8eda676b7e27b226a99e04e7298df8c8fab7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782629"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000059"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Como: gerar informações de registro para um instalador
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Como: Gerar informações de registro de um instalador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para um VSPackage gerenciado. O manifesto pode ser incorporado a um pacote de instalação do Windows Installer. RegPkg também pode gerar um arquivo que pode ser incluído em um arquivo de origem de instalação com base nas [conjunto de ferramentas do Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=62238).  
@@ -188,6 +183,5 @@ O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Registrar VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Registrar VSPackages](registering-vspackages.md)   
  [VSPackages](../../extensibility/internals/vspackages.md)
-

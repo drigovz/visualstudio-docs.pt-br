@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Analisando código C / C++ em busca de defeitos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922246"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Instruções passo a passo: analisando código do C/C++ em busca de defeitos
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Passo a passo: Analisando o código C/C++ em busca de defeitos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo demonstra como analisar o código C/C++ em busca de possíveis defeitos de código usando a ferramenta de análise de código para código C/C++.  
@@ -57,7 +52,7 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
      A solução de demonstração agora preenche **Gerenciador de soluções**.  
   
-2.  Sobre o **construir** menu, clique em **recompilar solução**.  
+2.  No menu **Compilar**, clique em **Recompilar Solução**.  
   
      A solução é compilada sem erros ou avisos.  
   
@@ -83,7 +78,7 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
 2.  No **Error List**, clique duas vezes o seguinte aviso:  
   
-     Aviso C6230: conversão implícita entre tipos semanticamente diferentes: usando HRESULT em um contexto booleano.  
+     warning C6230: Conversão implícita entre tipos semanticamente diferentes: usando HRESULT em um contexto booleano.  
   
      O editor de código exibe a linha que causou o aviso na função `bool``ProcessDomain()`. Este aviso indica que um HRESULT está sendo usado em uma instrução 'if' em que um resultado booliano é esperado.  
   
@@ -95,7 +90,7 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
 4.  No **Error List**, clique duas vezes o seguinte aviso:  
   
-     Aviso C6282: operador incorreto: atribuição a constante no contexto do teste. Foi = = pretendido?  
+     Aviso C6282: Operador incorreto: atribuição a constante no contexto do teste. Foi = = pretendido?  
   
 5.  Para corrigir este aviso, testando a igualdade. Seu código deve ser semelhante ao seguinte código:  
   
@@ -179,7 +174,7 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
 3.  No **Error List**, clique duas vezes o seguinte aviso:  
   
-     Aviso C6011: Desreferenciando ponteiro NULL 'node'.  
+     Aviso C6011: Desreferenciando ponteiro nulo 'node'.  
   
      Este aviso indica que o nó passado para a função pode ser nulo e indica o número de linha em que o aviso foi gerado.  
   
@@ -200,7 +195,4 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
      O projeto é compilado sem avisos ou erros.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: analisando código gerenciado em busca de defeitos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [Passo a passo: Analisando o código gerenciado em busca de defeitos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

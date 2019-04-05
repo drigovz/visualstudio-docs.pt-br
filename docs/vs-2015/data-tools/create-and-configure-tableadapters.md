@@ -1,12 +1,9 @@
 ---
 title: Criar e configurar TableAdapters | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922261"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
   
  Se você arrastar um novo TableAdapter da caixa de ferramentas quando o **Dataset Designer** está no foco, as solicitações do assistente que você especifique qual fonte de dados o TableAdapter deve se conectar e quais tipos de comandos que ele devem usar para se comunicar com o banco de dados, instruções SQL ou procedimentos armazenados. Você não verá essa opção se você estiver configurando um TableAdapter que já está associado uma fonte de dados.  
   
--   Usando o **criar métodos para enviar atualizações diretamente ao banco de dados** opção equivale a definir o `GenerateDBDirectMethods` propriedade como true. A opção não está disponível quando a instrução SQL original não fornecer informações suficientes ou a consulta não é uma consulta atualizável. Essa situação pode ocorrer, por exemplo, no **INGRESSAR** consultas e consultas que retornam um valor único (escalar).  
+-   Usando o **criar métodos para enviar atualizações diretamente ao banco de dados** opção equivale a definir o `GenerateDBDirectMethods` propriedade como true. A opção fica não disponível quando a instrução SQL original não fornecer informações suficientes ou a consulta não for uma consulta atualizável. Essa situação pode ocorrer, por exemplo, no **INGRESSAR** consultas e consultas que retornam um valor único (escalar).  
   
 -   Você tem a opção de criar um novo procedimento armazenado no banco de dados subjacente, se você tiver as permissões corretas para o banco de dados. Se você não tiver essas permissões, isso não será uma opção.  
   
@@ -79,7 +76,7 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Para iniciar o Assistente de configuração de consulta do TableAdapter com uma nova consulta  
   
-1.  Abra o dataset na **Dataset Designer**.  
+1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**.  
   
 2.  Se você estiver criando uma nova consulta, arraste um **consulta** do objeto da **DataSet** guia da **caixa de ferramentas** em um <xref:System.Data.DataTable>, ou selecione **Add Query**no menu de atalho do TableAdapter. Você também pode arrastar uma **consulta** objeto em uma área vazia do **Dataset Designer**, que cria um TableAdapter sem um associado <xref:System.Data.DataTable>. Essas consultas só podem retornar valores únicos de (escalares) ou executar a atualização, inserção, ou exclua comandos no banco de dados.  
   
@@ -116,4 +113,3 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
   
 ## <a name="see-also"></a>Consulte também  
  [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
-

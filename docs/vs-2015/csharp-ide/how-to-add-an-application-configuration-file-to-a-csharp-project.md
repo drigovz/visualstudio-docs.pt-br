@@ -1,14 +1,9 @@
 ---
-title: 'Como: adicionar um arquivo de configuração de aplicativo para um projeto c# | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar um arquivo de configuração de aplicativo para um projeto c# | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -17,15 +12,15 @@ ms.assetid: 9caf6bb0-c2fc-4ab6-ba69-bed3b880fbf8
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 43245704a2393b298f0f1d948d8a8829a4ef9bc4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925403"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Como adicionar um Arquivo de Configuração do Aplicativo a um projeto C#
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Como: Adicionar um arquivo de configuração de aplicativo para um projeto c#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao adicionar um arquivo de configuração de aplicativo (arquivo app.config) a um projeto C#, você pode personalizar o modo como o Common Language Runtime localiza e carrega arquivos do assembly. Para obter mais informações sobre arquivos de configuração de aplicativo, consulte [como o tempo de execução Localiza Assemblies](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
@@ -51,5 +46,5 @@ Ao adicionar um arquivo de configuração de aplicativo (arquivo app.config) a u
  [Gerenciando configurações de aplicativo (.NET)](../ide/managing-application-settings-dotnet.md)   
  [Esquema de arquivo de configuração](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
  [Configuração de aplicativos](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Como: configurar um aplicativo para direcionar uma versão do .NET Framework](http://msdn.microsoft.com/en-us/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Como: Configurar um aplicativo para direcionar uma versão do .NET Framework](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [Usando o Ambiente de Desenvolvimento do Visual Studio para C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

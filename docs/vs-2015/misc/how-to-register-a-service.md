@@ -1,27 +1,22 @@
 ---
-title: 'Como: registrar um serviço | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Registrar um serviço | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206252"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000099"
 ---
-# <a name="how-to-register-a-service"></a>Como: registrar um serviço
+# <a name="how-to-register-a-service"></a>Como: Registrar um serviço
 A estrutura de pacote gerenciado (MPF) fornece os atributos para controlar o registro de serviços gerenciados. O utilitário RegPkg usa esses atributos para registrar um serviço com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="example"></a>Exemplo  
@@ -46,5 +41,5 @@ A estrutura de pacote gerenciado (MPF) fornece os atributos para controlar o reg
 >  Embora você possa usar o mesmo tipo ou o GUID para o serviço e a interface, é recomendável que você separe as duas como um serviço pode expor interfaces diferentes.  
   
 ## <a name="see-also"></a>Consulte também  
- [Registrar VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Registrar VSPackages](../extensibility/internals/registering-vspackages.md)   
  [Fundamentos do serviço](../extensibility/internals/service-essentials.md)
