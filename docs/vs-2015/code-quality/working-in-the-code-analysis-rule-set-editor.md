@@ -1,14 +1,9 @@
 ---
 title: Editor de conjunto de trabalho na regra de análise de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269640"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922383"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Trabalhando no Editor de Conjunto de Regras de Análise do Código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ O editor de conjunto de regras de análise de código permite que você especifi
   
 |Controle de barra de ferramentas|Descrição|  
 |---------------------|-----------------|  
-|**Expandir tudo**|Mostra as regras em todos os grupos.|  
+|**Expandir Tudo**|Mostra as regras em todos os grupos.|  
 |**Recolher tudo**|Oculta as regras em todos os grupos.|  
 |**Group By**|Especifica o campo pelo qual as regras são agrupadas. Clique em  **\<None >** para mostrar as regras sem grupos.|  
 |**Opções de coluna**|Especifica os campos de regra a serem exibidos.|  
@@ -81,6 +76,3 @@ O editor de conjunto de regras de análise de código permite que você especifi
 -   Para classificar a lista de conjunto de regra, clique no cabeçalho da coluna do campo pelo qual você deseja classificar. Se os conjuntos de regras são agrupados, cada grupo é classificado individualmente.  
   
 -   Para filtrar os conjuntos de regras pelo valor de um campo, clique no botão de filtro no cabeçalho da coluna do campo pelo qual você deseja filtrar. Marque as caixas de seleção dos valores que você deseja mostrar e desmarque as caixas de seleção dos valores que você deseja ocultar.
-
-
-

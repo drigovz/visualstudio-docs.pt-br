@@ -1,26 +1,21 @@
 ---
 title: Interfaces e campos da janela Propriedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b9e7705af131bdc8c81b6cbeeac3ed4dda80aa4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 515540eee455fcf22151e336897dd5f586867a82
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923320"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces e campos da janela Propriedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ O modelo para a seleção determinar quais informações são exibidas na **prop
   
 3. Chamando <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> e passando-os itens da hierarquia selecionada na `VSHPROPID_BrowseObject` parâmetro preenche o <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> objeto.  
   
-4. Um objeto derivado de [IDispatch Interface](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) é retornado para <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> para o item solicitado e o ambiente encapsula-o em um <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (consulte a etapa a seguir). Se a chamada falhar, o ambiente torna uma segunda chamada para `IVsHierarchy::GetProperty`, passando-o contêiner de seleção <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> que forneçam o item de hierarquia ou itens.  
+4. Um objeto derivado de [IDispatch Interface](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) é retornado para <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> para o item solicitado e o ambiente encapsula-o em um <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (consulte a etapa a seguir). Se a chamada falhar, o ambiente torna uma segunda chamada para `IVsHierarchy::GetProperty`, passando-o contêiner de seleção <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> que forneçam o item de hierarquia ou itens.  
   
     Seu projeto de VSPackage não cria <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> como a janela fornecida pelo ambiente de VSPackage que o implementa (por exemplo, **Gerenciador de soluções**) constrói <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> em seu nome.  
   
@@ -52,4 +47,3 @@ O modelo para a seleção determinar quais informações são exibidas na **prop
   
 ## <a name="see-also"></a>Consulte também  
  [Estender as propriedades](../../extensibility/internals/extending-properties.md)
-

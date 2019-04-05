@@ -1,14 +1,9 @@
 ---
 title: Criar exibições personalizadas de objetos nativos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922489"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Criar exibições personalizadas de objetos nativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +109,7 @@ A estrutura do Natvis do Visual Studio permite que você personalize a forma com
 
 - As expressões do Natvis são avaliadas no contexto do objeto que está sendo visualizado, não do registro de ativação atual. Por exemplo, se você usar `x` em uma expressão do Natvis, isso se refere ao campo denominado `x` no objeto que está sendo visualizado, não a uma variável local chamada `x` na função em execução no momento. Você não pode acessar variáveis locais em expressões do Natvis, embora você possa acessar as variáveis globais.  
 
-- As expressões do natvis não permitem avaliação ou efeitos colaterais de função. Isso significa que as chamadas de função e os operadores de atribuição são ignorados. Porque [funções intrínsecas do depurador](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) têm efeitos colaterais gratuitamente, elas podem ser livremente chamadas de qualquer expressão do Natvis, mesmo que outras chamadas de função não são permitidas.  
+- As expressões do natvis não permitem avaliação ou efeitos colaterais de função. Isso significa que as chamadas de função e os operadores de atribuição são ignorados. Como as [funções intrínsecas do depurador](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) não têm efeitos colaterais, elas podem ser livremente chamadas de qualquer expressão do natvis, mesmo que outras chamadas de função estejam desabilitadas.  
 
   Para controlar como uma expressão é exibida em uma janela variável, você pode usar qualquer um dos especificadores de formato descritos a [especificadores de formato](../debugger/format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers) seção o [especificadores de formato em C++](../debugger/format-specifiers-in-cpp.md) tópico. Observe que os especificadores de formato são ignorados quando a entrada de virtualização é usada internamente pelo Natvis, como o `Size` expressão em uma expansão de ArrayItems.  
 
@@ -172,7 +167,7 @@ A estrutura do Natvis do Visual Studio permite que você personalize a forma com
 
 1. Para qual tipo essa visualização deve ser usada (atributo `Type Name`).  
 
-2. O valor de um objeto desse tipo de aparência (o `DisplayString` elemento).  
+2. Qual deve ser a aparência de um objeto desse tipo (semelhante à do elemento `DisplayString`).  
 
 3. Os membros do tipo de aparência quando o usuário o expandir em uma janela variável (o `Expand` nó).  
 
@@ -189,7 +184,7 @@ A estrutura do Natvis do Visual Studio permite que você personalize a forma com
 
  Observe que os parâmetros do modelo podem ser referenciados na entrada de visualização usando as macros $T1, $T2 e assim por diante. Para localizar exemplos dessas macros, consulte os arquivos .natvis que acompanham o Visual Studio.  
 
-####  <a name="BKMK_Visualizer_type_matching"></a> Correspondência de tipo de Visualizador  
+####  <a name="BKMK_Visualizer_type_matching"></a> Correspondência de tipo de visualizador  
  Se uma entrada de visualização não for validado, em seguida, a próxima visualização disponível será usada.  
 
 #### <a name="inheritable-attribute"></a>Atributo herdável  
@@ -638,6 +633,3 @@ A estrutura do Natvis do Visual Studio permite que você personalize a forma com
  `CustomVisualizer` é um ponto de extensibilidade que especifica uma extensão do VSIX que você pode escrever para controlar a visualização em código que é executado no Visual Studio. Para obter mais informações sobre como escrever extensões VSIX, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md). Escrevendo um visualizador personalizado é muito mais trabalho do que escrever uma definição de natvis XML, mas você é livre de restrições sobre quais natvis dá suporte a ou não dá suporte. Os visualizadores personalizados têm acesso ao conjunto completo de APIs, o que pode ser usadas para consultar e modificar o processo a ser depurado ou se comunicar com outras partes do Visual Studio de extensibilidade do depurador.  
 
  Você pode usar o `Condition`, `IncludeView`, e `ExcludeView` atributos em elementos de CustomVisualizer.
-
-
-

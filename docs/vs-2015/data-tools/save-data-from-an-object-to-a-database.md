@@ -1,12 +1,9 @@
 ---
 title: Salvar dados de um objeto em um banco de dados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,19 +17,19 @@ ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207448"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923649"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Você pode salvar dados em objetos de um banco de dados, passando os valores de seu objeto para um dos métodos DBDirect do TableAdapter (por exemplo, `TableAdapter.Insert`). Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/tableadapter-overview.md).  
+Você pode salvar dados em objetos de um banco de dados, passando os valores de seu objeto para um dos métodos DBDirect do TableAdapter (por exemplo, `TableAdapter.Insert`).
   
  Para salvar dados de uma coleção de objetos, executar um loop através da coleção de objetos (por exemplo, um loop for-next) e enviar os valores para cada objeto no banco de dados usando um dos métodos DBDirect do TableAdapter.  
   
@@ -41,7 +38,7 @@ Você pode salvar dados em objetos de um banco de dados, passando os valores de 
 > [!NOTE]
 >  Quando você estiver configurando um TableAdapter, a consulta principal deve fornecer informações suficientes para que os métodos DBDirect a ser criado. Por exemplo, se um TableAdapter é configurado para consultar dados de uma tabela que não tem uma coluna de chave primária definida, ela não gera métodos DBDirect.  
   
-|Método TableAdapter DBDirect|Descrição|  
+|Métodos DBDirect TableAdapter|Descrição|  
 |----------------------------------|-----------------|  
 |`TableAdapter.Insert`|Adiciona novos registros para um banco de dados e permite que você passe valores de colunas individuais como parâmetros de método.|  
 |`TableAdapter.Update`|Atualizações de registros existentes em um banco de dados. O `Update` método usa valores da coluna original e novo como parâmetros de método. Os valores originais são usados para localizar o registro original e os novos valores são usados para atualizar esse registro.<br /><br /> O `TableAdapter.Update` método também é usado para acomodar as alterações em um conjunto de dados no banco de dados fazendo uma <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, ou uma matriz de <xref:System.Data.DataRow>s como parâmetros de método.|  
@@ -85,4 +82,3 @@ Você pode salvar dados em objetos de um banco de dados, passando os valores de 
   
 ## <a name="see-also"></a>Consulte também  
  [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'Como: suprimir avisos usando o Item de Menu | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Suprimir Avisos usando o Item de Menu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - warnings, suppressing
 - code analysis, suppressing warnings
@@ -17,17 +12,17 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c756a5ab6516d78f5370622555898c98658e8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922792"
 ---
-# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Como suprimir avisos usando o item de menu
+# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Como: Suprimir avisos usando o item de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-OBSERVAÇÃO]
+[OBSERVAÇÃO]
 >  No código-fonte supressão não há suporte para projetos de site.  
   
  Você pode usar a janela de análise de código para suprimir avisos da análise de código. Suprimir um aviso não é igual a desabilitá-lo. Quando você suprime um aviso, ele se aplica somente a uma instância particular da violação. Outras violações do aviso mesmo ainda serão relatadas na janela lista de erros.  
@@ -48,6 +43,3 @@ OBSERVAÇÃO]
   
 > [!NOTE]
 >  Supressões que não têm um destino aparecem no arquivo de supressão global.
-
-
-

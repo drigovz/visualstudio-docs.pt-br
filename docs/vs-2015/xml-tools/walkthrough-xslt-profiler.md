@@ -1,27 +1,22 @@
 ---
 title: 'Passo a passo: Profiler XSLT | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922595"
 ---
-# <a name="walkthrough-xslt-profiler"></a>Passo a passo: Profiler XSLT
+# <a name="walkthrough-xslt-profiler"></a>Passo a passo: Perfil XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -82,11 +77,11 @@ O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da 
   
 2.  O **chamador/receptor** exibição tem três partes distintas:  
   
-    -   **Funções que chamaram**: todas as funções que chamaram uma função particular são listadas na parte superior do modo de exibição.  
+    -   **Funções que chamaram**: Todas as funções que chamaram uma função particular são listadas na parte superior do modo de exibição.  
   
-    -   **Função atual**: A função específica que foi chamada está listada na parte do meio da exibição.  
+    -   **Função atual**: A função específica que foi chamada é listada na parte do meio da exibição.  
   
-    -   **Funções que foram chamadas pela** : todas as funções que foram chamadas pela função particular são listadas na parte inferior do modo de exibição.  
+    -   **Funções que foram chamadas pela** : Todas as funções que foram chamadas pela função particular são listadas na parte inferior do modo de exibição.  
   
 3.  Se uma função chamada `SyncToNavigator` aparece na parte média de exibição, todas as funções que chamaram a função de `SyncToNavigator` aparecem na parte superior de exibição, e em todas as funções que foram chamados por `SyncToNavigator` aparecem na parte de fundo de exibição.  
   
@@ -115,7 +110,4 @@ O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da 
 4.  A exibição processo exibe uma tabela que inclui o **ID do processo**, **nome do processo**, **inicie tempo**e o **hora de término**. Os dados podem ser classificados clicando em nomes de coluna.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: usando a hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-
+ [Passo a passo: usando Hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

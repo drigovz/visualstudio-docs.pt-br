@@ -1,26 +1,21 @@
 ---
 title: 'Passo a passo: Implementar trechos de código | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923411"
 ---
-# <a name="walkthrough-implementing-code-snippets"></a>Passo a passo: implementando snippets de código
+# <a name="walkthrough-implementing-code-snippets"></a>Passo a passo: Implementando snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode criar trechos de código e incluí-los em uma extensão de editor para que os usuários da extensão podem adicioná-los para seu próprio código.  
@@ -37,7 +32,7 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
   
 3. Implementar a expansão de trecho de código.  
   
-   Este passo a passo se baseia [instruções passo a passo: exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Este passo a passo se baseia no [passo a passo: Exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -116,7 +111,7 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>Para registrar os trechos de código para um GUID específico  
   
-1.  Abra o **CompletionTest** projeto. Para obter informações sobre como criar este projeto, consulte [instruções passo a passo: exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Abra o **CompletionTest** projeto. Para obter informações sobre como criar este projeto, consulte [passo a passo: Exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  No projeto, adicione referências aos assemblies a seguir:  
   
@@ -124,7 +119,7 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  No projeto, abra o arquivo de vsixmanifest.  
   
@@ -254,4 +249,3 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
 7.  Em uma parte diferente do texto, digite "teste" e, em seguida, pressione TAB. Como "teste" é o atalho de trecho de código, o trecho de código deve ser inserido novamente.  
   
 ## <a name="next-steps"></a>Próximas etapas
-

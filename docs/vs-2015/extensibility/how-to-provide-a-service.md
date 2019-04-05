@@ -1,28 +1,23 @@
 ---
-title: 'Como: fornecer um serviço | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Fornecer um serviço | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0d0425e0e931d28157439d3d8a4174f1d4961a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 082e8db8793850319f02586ba3894da8775e6ff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923772"
 ---
-# <a name="how-to-provide-a-service"></a>Como: fornecer um serviço
+# <a name="how-to-provide-a-service"></a>Como: Fornecer um serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para fornecer um serviço, um VSPackage deve registrar o serviço com o Visual Studio e adicione o serviço.  
@@ -146,7 +141,6 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
      O valor de `helloString` deve ser "Hello".  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: obter um serviço](../extensibility/how-to-get-a-service.md)   
+ [Como: Obtenha um serviço](../extensibility/how-to-get-a-service.md)   
  [Usar e fornecer serviços](../extensibility/using-and-providing-services.md)   
  [Fundamentos do serviço](../extensibility/internals/service-essentials.md)
-

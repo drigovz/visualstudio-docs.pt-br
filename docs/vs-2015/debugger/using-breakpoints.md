@@ -1,13 +1,8 @@
 ---
 title: Usando pontos de interrupção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765952"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58923254"
 ---
 # <a name="using-breakpoints"></a>Usando pontos de interrupção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
   
  Neste ponto, o valor de `testInt` ainda é 1.  
   
- Você pode examinar o estado atual do aplicativo, incluindo valores de variáveis e a pilha de chamadas. Para obter mais informações sobre a pilha de chamadas, consulte [como: usar a janela pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).  
+ Você pode examinar o estado atual do aplicativo, incluindo valores de variáveis e a pilha de chamadas. Para obter mais informações sobre a pilha de chamadas, consulte [como: Usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).  
   
  Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no c# o código acima, você pode definir um ponto de interrupção na declaração de variável, o `for` loop ou qualquer código dentro de `for` loop, mas você não pode definir um ponto de interrupção nas declarações de namespace ou classe ou a assinatura do método.  
   
@@ -76,7 +71,7 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
  Você também pode definir pontos de interrupção na pilha de chamadas, na janela de desmontagem e, em código C++ nativo, em uma condição de dados ou um endereço de memória.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Definindo um ponto de interrupção na janela de pilha de chamadas  
- Você pode interromper a execução na instrução ou na linha de uma função de chamada retorna, definindo um ponto de interrupção **pilha de chamadas** janela. Para obter mais informações sobre a pilha de chamadas, consulte [como: usar a janela pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md). O depurador deve ter parado de executar.  
+ Você pode interromper a execução na instrução ou na linha de uma função de chamada retorna, definindo um ponto de interrupção **pilha de chamadas** janela. Para obter mais informações sobre a pilha de chamadas, consulte [como: Usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md). O depurador deve ter parado de executar.  
   
 1. Iniciar a depuração do aplicativo e execução de espera é interrompida (por exemplo, em um ponto de interrupção). Abra o **pilha de chamadas** janela (**depurar / Windows / pilha de chamadas**, ou **CTRL + ALT + C**).  
   
@@ -155,7 +150,7 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
   
    Quando você verificar a **condições** caixa, a janela expande para mostrar os diferentes tipos de condições.  
   
-   **Expressão condicional:** quando você seleciona a expressão condicional, você pode escolher duas condições: **vale** e **quando alterado**. Escolher **vale** se você quiser interromper quando a expressão for satisfeita ou escolha **quando alterado** se você quiser interromper quando o valor da expressão for alterado.  
+   **Expressão condicional:** Quando você seleciona a expressão condicional, você pode escolher duas condições: **Vale** e **quando alterado**. Escolher **vale** se você quiser interromper quando a expressão for satisfeita ou escolha **quando alterado** se você quiser interromper quando o valor da expressão for alterado.  
   
    No exemplo a seguir, definimos o ponto de interrupção atingido somente quando o valor de `testInt` está **4**:  
   
@@ -202,15 +197,15 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
   
  No **configuração de ponto de interrupção**janela s, defina a condição como **filtro**. Insira um ou mais das seguintes expressões.  
   
-- MachineName = "name"  
+- MachineName = "nome"  
   
 - ProcessId = valor  
   
-- ProcessName = "name"  
+- ProcessName = "nome"  
   
 - ThreadId = valor  
   
-- ThreadName = "name"  
+- ThreadName = "nome"  
   
   Coloque os valores de cadeia de caracteres entre aspas duplas. Você pode combinar cláusulas usando `&` (AND), `||` (OR), `!` (NOT) e parênteses.  
   
@@ -259,6 +254,3 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
   
 ## <a name="see-also"></a>Consulte também  
  [Navegar pelo Código com o Depurador](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-

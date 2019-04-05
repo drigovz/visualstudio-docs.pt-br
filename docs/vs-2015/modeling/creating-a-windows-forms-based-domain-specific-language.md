@@ -1,23 +1,20 @@
 ---
 title: Criando uma linguagem específica de domínio de baseada em formulários do Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 452318ff-8ecf-46d0-8ca0-4013d0cdafaf
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a79ffda3a044424cc863472c32d62228e90cc6fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1faa3b8a7b57ddae646b55a8a17226894a5ed5d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926378"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Criando uma linguagem específica do domínio baseada no Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,9 +121,9 @@ Uma instância DSL, mostrando uma interface do usuário do Windows Form e o Gere
 
 1.  Sobre o **dados** menu, escolha **Show Data Sources**.  
 
-     O **fontes de dados** janela é aberta.  
+     A janela **Fontes de Dados** é aberta.  
 
-     Escolher **Add New Data Source**. O **Data Source Configuration Wizard** é aberta.  
+     Escolher **Add New Data Source**. O **Assistente de Configuração de Fonte de Dados** é aberto.  
 
 2.  Escolher **objeto**, **próxima**.  
 
@@ -336,6 +333,3 @@ private void NewSheepButton_Click(object sender, EventArgs e)
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [SDK de Modelagem para Visual Studio – linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

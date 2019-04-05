@@ -1,14 +1,9 @@
 ---
-title: 'Como: depurar o código-fonte do .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar o código-fonte do .NET Framework | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cbc6ed2ff77a971962fa73b15d5b7aafb9ef02b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926265"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Como depurar a origem do .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Como: Depurar o código-fonte do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A versão mais recente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece novos recursos para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] depuração. Para depurar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] fonte, você deve ter acesso aos símbolos de depuração para o código. Você também precisará habilitar a depuração de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] código-fonte.  
@@ -80,6 +75,3 @@ A versão mais recente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece n
 ## <a name="see-also"></a>Consulte também  
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
  [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

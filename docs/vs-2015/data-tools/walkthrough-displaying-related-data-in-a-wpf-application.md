@@ -1,12 +1,9 @@
 ---
 title: 'Passo a passo: Exibindo dados relacionados em um aplicativo WPF | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923515"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Instruções passo a passo: exibindo dados relacionados em um aplicativo WPF
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Passo a passo: Exibindo dados relacionados em um aplicativo WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabelas de banco de dados que têm uma relação pai/filho. Os dados são encapsulados em entidades em um modelo de dados de entidade. A entidade pai contém informações de visão geral de um conjunto de pedidos. Cada propriedade dessa entidade é associada a um controle diferente no aplicativo. A entidade filho contém detalhes de cada pedido. Esse conjunto de dados está associado a um <xref:System.Windows.Controls.DataGrid> controle.  
@@ -55,7 +52,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 - Modelos de Dados de Entidade e o ADO.NET Entity Framework. Para obter mais informações, consulte [visão geral do Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Trabalhando com o WPF Designer. Para obter mais informações, consulte [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Trabalhando com o WPF Designer. Para obter mais informações, consulte [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 - Associação de dados do WPF. Para obter mais informações, consulte [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
@@ -72,7 +69,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 4.  Certifique-se de que **.NET Framework 4** está selecionado na caixa de combinação na parte superior da caixa de diálogo. O <xref:System.Windows.Controls.DataGrid> controle que você pode usar neste passo a passo está disponível apenas no .NET Framework 4.  
   
-5.  Selecione o **aplicativo WPF** modelo de projeto.  
+5.  Selecione o modelo de projeto **Aplicativo WPF**.  
   
 6.  Na caixa **Nome**, digite `AdventureWorksOrdersViewer`.  
   
@@ -81,7 +78,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
      O Visual Studio cria o `AdventureWorksOrdersViewer` projeto.  
   
 ## <a name="creating-an-entity-data-model-for-the-application"></a>Criando um modelo de dados de entidade para o aplicativo  
- Antes de criar controles associados a dados, você deve definir um modelo de dados para seu aplicativo e adicioná-lo para o **fontes de dados** janela. Neste passo a passo, o modelo de dados é um modelo de dados de entidade.  
+ Antes de criar controles de associação de dados, você deve definir um modelo de dados para seu aplicativo e adicioná-lo à janela **Fontes de Dados**. Neste passo a passo, o modelo de dados é um modelo de dados de entidade.  
   
 #### <a name="to-create-an-entity-data-model"></a>Para criar um Modelo de Dados de Entidade  
   
@@ -97,7 +94,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
    - Se uma conexão de dados com o banco de dados de exemplo AdventureWorksLT estiver disponível na lista suspensa, selecione-a.  
   
-      -ou-  
+      - ou -  
   
    - Clique em **nova Conexão** e criar uma conexão ao banco de dados AdventureWorksLT.  
   
@@ -126,7 +123,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 3. No **fontes de dados** janela, clique no menu suspenso para o **SalesOrderHeaders** nó e selecione **detalhes**.  
   
-4. Expanda o **SalesOrderHeaders** nó.  
+4. Expanda o nó **SalesOrderHeaders**.  
   
 5. Clique no menu suspenso ao lado **SalesOrderID** e selecione **ComboBox**.  
   
@@ -148,7 +145,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
    - **Frete**  
   
-   - **ROWGUID**  
+   - **rowguid**  
   
    - **ModifiedDate**  
   
@@ -160,7 +157,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 8. No designer, clique na caixa de combinação lado a **ID do pedido de vendas** rótulo.  
   
-9. No **propriedades** janela, selecione a caixa de seleção ao lado de **IsReadOnly** propriedade.  
+9. Na janela **Propriedades**, marque a caixa de seleção ao lado da propriedade **IsReadOnly**.  
   
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Criando um DataGrid que exibe os detalhes do pedido  
  Criar uma <xref:System.Windows.Controls.DataGrid> controle que exibe os detalhes do pedido, arrastando o `SalesOrderDetails` entidade entre a **fontes de dados** janela para o WPF designer.  
@@ -180,7 +177,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
    - **SalesOrderDetailID**  
   
-   - **ROWGUID**  
+   - **rowguid**  
   
    - **ModifiedDate**  
   

@@ -1,14 +1,9 @@
 ---
 title: Executar aplicativos do Windows Phone no emulador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923281"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Executar aplicativos do Windows Phone no emulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode depurar e testar aplicativos do Windows Phone em seu computador sem um dispositivo físico. Você pode simular eventos comuns de toque e rotação e escolher o tamanho da tela física e a resolução que deseja emular. Você também pode testar muitas funcionalidades normalmente usadas, como local, rede, notificações, sensores, acelerômetro e cartão SD opcional.  
   
- Para obter mais informações sobre os recursos que você pode testar no emulador, consulte [testar recursos de aplicativo no emulador do Windows Phone](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Para obter mais informações sobre os recursos que você pode testar no emulador, consulte [testar recursos de aplicativo no emulador do Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Junto com o Visual Studio, o emulador fornece um ambiente completo em que você pode criar, desenvolver, depurar e testar aplicativos do Windows Phone.  
   
@@ -222,9 +217,6 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Para desabilitar os contadores de taxa de quadros no emulador antes de capturar telas  
   
--   Especifique um build de versão no Visual Studio. Depois de especificar um build de versão, inicie seu aplicativo selecionando o **Deploy _[nome do aplicativo]_**  no link a **Build** menu.  
+-   Especifique uma criação de versão no Visual Studio. Depois de especificar um build de versão, inicie seu aplicativo selecionando o **Deploy _[nome do aplicativo]_**  no link a **Build** menu.  
   
 -   Como alternativa, você pode comentar na linha de código do arquivo app.xaml.cs ou app.xaml.vb que define o valor de `EnableFrameRateCounter` para `true`.
-
-
-

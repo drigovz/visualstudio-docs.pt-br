@@ -1,11 +1,8 @@
 ---
-title: 'Como: criar um conjunto de regras de PolicyActivity (herdado) | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um conjunto de regras de PolicyActivity (herdado) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
@@ -17,15 +14,15 @@ ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7ab49957d830bf558a9dddf55cdc5e8c2f3f75d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194617"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924018"
 ---
-# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Como: Criar uma regra de PolicyActivity definida (o legados)
+# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Como: Criar uma regra de PolicyActivity definida (herdado)
 Este tópico descreve como criar um conjunto de regras de atividade de política usando o novas [!INCLUDE[wfd1](../includes/wfd1-md.md)] que direciona [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Após você ter arrastado um **diretiva** item de atividade da **caixa de ferramentas** à superfície de design de fluxo de trabalho, você desejará selecione uma regra existente ou crie uma nova regra definida para o [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) atividade. Você seleciona uma regra existente definida usando o [regra definir caixa de diálogo Selecionar (herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) e criar conjuntos de regras usando o [regra de Editor de caixa de diálogo conjunto (herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
@@ -43,11 +40,11 @@ Este tópico descreve como criar um conjunto de regras de atividade de política
   
     -   Clique o **RuleSetReference** elipses **[...]** e, em seguida, selecione uma regra existente definida de [selecione Definir caixa de diálogo regra (herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Então vá para a etapa 10.  
   
-         -ou-  
+         - ou -  
   
     -   Digite um nome para um conjunto de regras. Clique o **RuleSetReference** elipses **[...]** e, em seguida, selecione **edite** no [selecione Definir caixa de diálogo regra (herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
   
-         -ou-  
+         - ou -  
   
     -   Digite um nome para um conjunto de regras. Expanda o **RuleSetReference** propriedade e selecione as reticências **[...]**  no **definição de conjunto de regras** propriedade.  
   

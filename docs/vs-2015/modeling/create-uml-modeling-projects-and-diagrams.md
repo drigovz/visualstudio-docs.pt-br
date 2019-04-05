@@ -1,12 +1,9 @@
 ---
 title: Criar diagramas e projetos de modelagem UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738391"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923708"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Criar projetos e diagramas de modelagem UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ Os modelos de UML ajudam você a entende, discuta e criar sistemas de software. 
   
 |**Problema**|**Faz com que**|**Resolução**|  
 |---------------|----------------|--------------------|  
-|O projeto de modelagem não pode ser aberto ou carregado na solução.<br /><br /> A seguinte mensagem é exibida:<br /><br /> "Um ou mais projetos na solução não foram carregados corretamente. Consulte a janela de saída para obter detalhes."<br /><br /> A janela Saída exibe a seguinte mensagem:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: erro: formato de Guid não reconhecido."|Um projeto de modelagem tem referências a projetos que têm o mesmo nome e estão na mesma solução.<br /><br /> Por exemplo, uma camada está vinculada aos projetos que têm o mesmo nome e estão na mesma solução.|Use um editor de texto para abrir o projeto de modelagem de arquivo, remova as referências e, em seguida, tente abrir novamente o projeto de modelagem.<br /><br /> Para evitar esse problema, não adicione referências a projetos que têm o mesmo nome. Certifique-se de projetos têm nomes exclusivos.|  
+|O projeto de modelagem não pode ser aberto ou carregado na solução.<br /><br /> A seguinte mensagem é exibida:<br /><br /> "Um ou mais projetos na solução não foram carregados corretamente. Consulte a janela de saída para obter detalhes."<br /><br /> A janela Saída exibe a seguinte mensagem:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: error: Formato de Guid não reconhecido."|Um projeto de modelagem tem referências a projetos que têm o mesmo nome e estão na mesma solução.<br /><br /> Por exemplo, uma camada está vinculada aos projetos que têm o mesmo nome e estão na mesma solução.|Use um editor de texto para abrir o projeto de modelagem de arquivo, remova as referências e, em seguida, tente abrir novamente o projeto de modelagem.<br /><br /> Para evitar esse problema, não adicione referências a projetos que têm o mesmo nome. Certifique-se de projetos têm nomes exclusivos.|  
 |Elementos estão ausentes em diagramas que são adicionados, copiados ou arrastados para outros projetos de modelagem ou para outros locais na solução.<br /><br /> - ou -<br /><br /> As seguintes mensagens são exibidas quando você tenta abrir um diagrama:<br /><br /> -"Algumas formas ou conectores no diagrama estão ausentes porque suas definições não existe neste projeto. As definições foram excluídas do modelo enquanto o diagrama foi fechado ou o diagrama foi copiado para outro projeto que não contém essas definições."<br /><br /> - ou -<br /><br /> -"Deste documento está aberto por outro projeto."|O arquivo de diagrama foi adicionado, arrastado ou copiado de um projeto de modelagem a outro projeto de modelagem ou em outro local na solução.|Para copiar um arquivo de diagrama, criar um novo diagrama e, em seguida, copiar os elementos do diagrama de origem para o novo diagrama.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)
-
-
-

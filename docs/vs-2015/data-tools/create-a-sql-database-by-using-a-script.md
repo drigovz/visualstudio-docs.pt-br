@@ -1,12 +1,9 @@
 ---
 title: Criar um banco de dados SQL usando um script | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266585"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925214"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Criar um banco de dados SQL usando um script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -276,4 +273,3 @@ Neste passo a passo, você usa o Visual Studio para criar um banco de dados pequ
   
 ##  <a name="DeployDatabase"></a> Implantar o banco de dados  
  Quando você pressiona o **F5** chave, você implantar (ou publica) o banco de dados para um banco de dados LocalDB por padrão. Você pode implantar o banco de dados para um local diferente abrindo a página de propriedades do projeto, selecionando o **depurar** guia e, em seguida, alterando a cadeia de caracteres de conexão.
-

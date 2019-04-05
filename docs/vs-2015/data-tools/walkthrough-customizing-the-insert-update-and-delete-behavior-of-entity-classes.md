@@ -1,25 +1,22 @@
 ---
 title: 'Passo a passo: Personalizando a inserção, atualização e exclusão de comportamento de classes de entidade | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4d8ef69258d9c672bb5deb01b9c2e0972d4e8303
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 307722b668a71dd97e6b05364226d8c5ea62af66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193538"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923952"
 ---
-# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Passo a passo: Personalizando a inserção, atualização e exclusão de comportamento de classes de entidade
+# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Passo a passo: Personalizando o comportamento de inserção, atualização e exclusão de classes de entidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -28,7 +25,7 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
  Por padrão, a lógica para executar atualizações é fornecida pelo tempo de execução do [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. O tempo de execução cria instruções padrão Insert, Update e Delete com base no esquema da tabela (as definições de coluna e as informações da chave primária). Quando você não deseja usar o comportamento padrão, poderá configurar o comportamento de atualização e designar procedimentos armazenados específicos para executar as inserções, as atualizações e as exclusões necessárias para trabalhar com os dados no banco de dados. Você também pode fazer isso quando o comportamento padrão não é gerado, por exemplo, quando as classes de entidade mapeiam para as exibições. Além disso, você pode substituir o comportamento de atualização padrão quando o banco de dados exige acesso à tabela por meio dos procedimentos armazenados. Para obter mais informações, consulte [personalizando operações por usando procedimentos armazenados](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
->  Este passo a passo exige a disponibilidade dos **InsertCustomer**, **UpdateCustomer**, e **DeleteCustomer** procedimentos armazenados para o banco de dados Northwind. Para obter detalhes sobre como criar esses procedimentos armazenados, consulte [instruções passo a passo: Criando procedimentos de armazenado de atualização para a tabela de clientes Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md).  
+> Essa explicação passo a passo exige a disponibilidade dos procedimentos armazenados **InsertCustomer**, **UpdateCustomer** e **DeleteCustomer** para o banco de dados Northwind.
   
  Essa explicação passo a passo fornece as etapas que você deve seguir para substituir o comportamento padrão de tempo de execução LINQ to SQL para salvar dados de volta para um banco de dados usando procedimentos armazenados.  
   
@@ -51,9 +48,9 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir esta explicação passo a passo, você precisará do seguinte:  
   
--   Acessar a versão do SQL Server do banco de dados de exemplo Northwind. Para obter mais informações, consulte [como: instalar os bancos de dados de exemplo](../data-tools/how-to-install-sample-databases.md).  
+-   Acessar a versão do SQL Server do banco de dados de exemplo Northwind.
   
--   O **InsertCustomer**, **UpdateCustomer**, e **DeleteCustomer** procedimentos armazenados para o banco de dados Northwind. Para obter mais informações, consulte [instruções passo a passo: Criando procedimentos de armazenado de atualização para a tabela de clientes Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md).  
+-   O **InsertCustomer**, **UpdateCustomer**, e **DeleteCustomer** procedimentos armazenados para o banco de dados Northwind.
   
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Criando um aplicativo e adicionando classes LINQ to SQL  
  Como você estará trabalhando com classes do [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] e exibindo os dados em um Windows Form, crie um novo aplicativo do Windows Forms e adicione um arquivo de classes LINQ to SQL.  
@@ -75,7 +72,7 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
   
 4.  No menu **Projeto**, clique em **Adicionar Novo Item**.  
   
-5.  Clique o **Classes LINQ to SQL** modelo e o tipo **dbml** no **nome** caixa.  
+5.  Clique no modelo **Classes LINQ to SQL** e digite **Northwind.dbml** na caixa **Nome**.  
   
 6.  Clique em **Adicionar**.  
   
@@ -86,29 +83,29 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
   
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Para criar uma classe de entidade Customer e configurar uma fonte de dados com ela  
   
-1.  Na **Gerenciador de servidores**/**Gerenciador de banco de dados**, localize a tabela Customer na versão do SQL Server do banco de dados de exemplo Northwind. Para obter mais informações, consulte [como: conectar-se ao banco de dados Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
+1.  Na **Gerenciador de servidores**/**Gerenciador de banco de dados**, localize a tabela Customer na versão do SQL Server do banco de dados de exemplo Northwind.
   
 2.  Arraste o **clientes** nó a partir **Gerenciador de servidores**/**Database Explorer** até o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] superfície.  
   
-     Uma classe de entidade nomeada **cliente** é criado. Ela tem propriedades que correspondem às colunas na tabela Customers. A classe de entidade é nomeada **Customer** (não **clientes**) porque ele representa um único cliente na tabela Customers.  
+     Uma classe de entidade chamada **Customer** é criada. Ela tem propriedades que correspondem às colunas na tabela Customers. A classe de entidade é chamada de **Customer** (e não **Customers**) porque representa um único cliente da tabela Customers.  
   
     > [!NOTE]
-    >  Esse comportamento de renomeação é chamado *pluralização*. Ele pode ser ativado ou desativado [caixa de diálogo Opções](../ide/reference/options-dialog-box-visual-studio.md). Para obter mais informações, consulte [como: ative em pluralization e off (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    >  Esse comportamento de renomeação é chamado de *pluralização*. Ele pode ser ativado ou desativado [caixa de diálogo Opções](../ide/reference/options-dialog-box-visual-studio.md). Para obter mais informações, confira [Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
-3.  Sobre o **construir** menu, clique em **compilar UpdatingwithSProcsWalkthrough** para compilar o projeto.  
+3.  No menu **Compilar**, clique em **Compilar UpdatingwithSProcsWalkthrough** para criar o projeto.  
   
-4.  Sobre o **dados** menu, clique em **Show Data Sources**.  
+4.  No menu **Dados**, clique em **Mostrar Fontes de Dados**.  
   
-5.  No **fontes de dados** janela, clique em **Add New Data Source**.  
+5.  Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.  
   
-6.  Clique em **objeto** sobre o **escolher um tipo de fonte de dados** página e, em seguida, clique em **próxima**.  
+6.  Clique em **Objeto** na página **Escolher um Tipo de Fonte de Dados** e clique em **Avançar**.  
   
-7.  Expanda o **UpdatingwithSProcsWalkthrough** nó e localize e selecione o **cliente** classe.  
+7.  Expanda o nó **UpdatingwithSProcsWalkthrough** e localize e selecione a classe **Customer**.  
   
     > [!NOTE]
-    >  Se o **cliente** classe não estiver disponível, cancele o assistente, compile o projeto e execute o assistente novamente.  
+    >  Se a classe **Customer** não estiver disponível, cancele o assistente, compile o projeto e execute o assistente novamente.  
   
-8.  Clique em **terminar** para criar a fonte de dados e adicionar o **Customer** classe de entidade para o **fontes de dados** janela.  
+8.  Clique em **Concluir** para criar a fonte de dados e adicionar a classe de entidade **Customer** à janela **Fontes de Dados**.  
   
 ## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Criando um DataGridView para exibir os dados do cliente em um Windows Form  
  Crie controles que estão associados às classes de entidade arrastando [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] itens da fonte de dados do **fontes de dados** janela em um formulário do Windows.  
@@ -120,7 +117,7 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
 2.  Dos **fontes de dados** janela, arraste a **cliente** nó para Form1.  
   
     > [!NOTE]
-    >  Para exibir o **fontes de dados** janela, clique em **Show Data Sources** sobre o **dados** menu.  
+    >  Para exibir a janela **Fontes de Dados**, clique em **Mostrar Fontes de Dados** no menu **Dados**.  
   
 3.  Abra o Form1 no Editor de Códigos.  
   
@@ -155,9 +152,9 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
   
 1.  Abrir Form1 na exibição Design.  
   
-2.  Selecione Salvar no botão de **CustomerBindingNavigator** (o botão com o ícone de disquete).  
+2.  Selecione o botão de salvar no **CustomerBindingNavigator** (o botão com o ícone de disquete).  
   
-3.  No **propriedades** janela, defina o **Enabled** propriedade a ser **verdadeiro**.  
+3.  Na janela **Propriedades**, defina a propriedade **Habilitado** como **True**.  
   
 4.  Clique duas vezes no botão de salvar para criar um manipulador de eventos e alternar para o Editor de Códigos.  
   
@@ -175,7 +172,7 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
   
 #### <a name="to-override-the-default-update-behavior"></a>Para substituir o comportamento padrão de atualização  
   
-1.  Abra o arquivo LINQ to SQL no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **dbml** arquivo no **Gerenciador de soluções**.)  
+1.  Abra o arquivo LINQ to SQL no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes no arquivo **Northwind.dbml** no **Gerenciador de Soluções**.)  
   
 2.  Na **Gerenciador de servidores**/**Database Explorer**, expanda os bancos de dados Northwind **Stored Procedures** nó e localize o  **InsertCustomers**, **UpdateCustomers**, e **DeleteCustomers** procedimentos armazenados.  
   
@@ -185,41 +182,41 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
   
 4.  Selecione o **Customer** classe de entidade no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-5.  No **propriedades** janela, selecione a **inserir** propriedade.  
+5.  Na janela **Propriedades**, selecione a propriedade **Insert**.  
   
 6.  Clique nas reticências (...) próximo a **usar tempo de execução** para abrir o **configurar comportamento** caixa de diálogo.  
   
-7.  Selecione **personalizar**.  
+7.  Selecione **Personalizar**.  
   
-8.  Selecione o **InsertCustomers** método o **personalizar** lista.  
+8.  Selecione o método **InsertCustomers** na lista **Personalizar**.  
   
-9. Clique em **aplicar** para salvar a configuração para a classe e comportamento selecionados.  
-  
-    > [!NOTE]
-    >  Você pode continuar a configurar o comportamento para cada combinação de classe/comportamento desde que você clique em **aplicar** após cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso fornecendo uma oportunidade de aplicar as alterações serão exibidas.  
-  
-10. Selecione **atualização** na **comportamento** lista.  
-  
-11. Selecione **personalizar**.  
-  
-12. Selecione o **UpdateCustomers** método o **personalizar** lista.  
-  
-     Inspecione a lista de **argumentos de método** e **propriedades da classe** e observe que há dois **argumentos de método** e dois **propriedades da classe**para algumas colunas na tabela. Isso facilita controlar as alterações e criar as instruções que conferem a existência de violações de simultaneidade.  
-  
-13. Mapa de **Original_CustomerID** argumento de método para o **CustomerID (Original)** propriedade da classe.  
+9. Clique em **Aplicar** para salvar a configuração para a Classe e o Comportamento selecionados.  
   
     > [!NOTE]
-    >  Por padrão, os argumentos do método mapearão para as propriedades da classe quando os nomes corresponderem. Se os nomes de propriedade forem modificados e não corresponderem entre a tabela e a classe de entidade, você poderá ter que selecionar a propriedade da classe equivalente para a qual mapear se o Designer Relacional de Objetos não puder determinar o mapeamento correto. Além disso, se não tiverem propriedades de classe válida para mapear para argumentos de método, você pode definir as **propriedades da classe** valor para **(nenhum)**.  
+    >  Você pode continuar a configurar o comportamento para cada combinação de classe/comportamento quando você clica em **Aplicar** depois de cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso fornecendo uma oportunidade de aplicar as alterações serão exibidas.  
   
-14. Clique em **aplicar** para salvar a configuração para a classe e comportamento selecionados.  
+10. Selecione **Atualizar** na lista **Comportamento**.  
   
-15. Selecione **exclua** na **comportamento** lista.  
+11. Selecione **Personalizar**.  
   
-16. Selecione **personalizar**.  
+12. Selecione o método **UpdateCustomers** na lista **Personalizar**.  
   
-17. Selecione o **DeleteCustomers** método o **personalizar** lista.  
+     Inspecione a lista de **Argumentos de Método** e de **Propriedades de Classe** e observe que há dois **Argumentos de Método** e duas **Propriedades de Classe** para algumas colunas na tabela. Isso facilita controlar as alterações e criar as instruções que conferem a existência de violações de simultaneidade.  
   
-18. Mapa de **Original_CustomerID** argumento de método para o **CustomerID (Original)** propriedade da classe.  
+13. Mapeie o argumento do método **Original_CustomerID** para a propriedade de classe **CustomerID (Original)**.  
+  
+    > [!NOTE]
+    >  Por padrão, os argumentos do método mapearão para as propriedades da classe quando os nomes corresponderem. Se os nomes de propriedade forem modificados e não corresponderem entre a tabela e a classe de entidade, você poderá ter que selecionar a propriedade da classe equivalente para a qual mapear se o Designer Relacional de Objetos não puder determinar o mapeamento correto. Além disso, se os argumentos do método não tiverem propriedades da classe válidas para a qual mapear, você poderá definir o valor de **Propriedades de Classe** como **(Nenhum)**.  
+  
+14. Clique em **Aplicar** para salvar a configuração para a Classe e o Comportamento selecionados.  
+  
+15. Selecione **Excluir** na lista **Comportamento**.  
+  
+16. Selecione **Personalizar**.  
+  
+17. Selecione o método **DeleteCustomers** na lista **Personalizar**.  
+  
+18. Mapeie o argumento do método **Original_CustomerID** para a propriedade de classe **CustomerID (Original)**.  
   
 19. Clique em **OK**.  
   
@@ -227,7 +224,7 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
 >  Embora isso não seja um problema para essa explicação passo a passo específica, vale observar que o [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] manipula automaticamente os valores gerados por banco de dados para as colunas identidade (incremento automático), rowguidcol (GUID gerado por banco de dados) e carimbo de data/hora durante inserções e atualizações. Os valores gerados pelo banco de dados em outros tipos de coluna resultarão inesperadamente em um valor nulo. Para retornar os valores gerados pelo banco de dados, você deve definir manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> para um dos seguintes: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, ou <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="testing-the-application"></a>Testando o aplicativo  
- Executar o aplicativo novamente para verificar se o **UpdateCustomers** procedimento armazenado atualiza corretamente o registro do cliente no banco de dados.  
+ Execute o aplicativo novamente para verificar se o procedimento armazenado **UpdateCustomers** atualiza corretamente o registro do cliente no banco de dados.  
   
 #### <a name="to-test-the-application"></a>Para testar o aplicativo  
   
@@ -252,12 +249,12 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
 10. Pressione F5 e verifique se o registro excluído foi removido do banco de dados.  
   
     > [!NOTE]
-    >  Se seu aplicativo usa o SQL Server Express Edition, dependendo do valor da **Copy to Output Directory** propriedade do arquivo de banco de dados, as alterações podem não aparecer quando você pressiona F5 na etapa 10. Para obter mais informações, consulte [como: gerenciar arquivos de dados locais em seu projeto](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
+    > Se seu aplicativo usa o SQL Server Express Edition, dependendo do valor da **Copy to Output Directory** propriedade do arquivo de banco de dados, as alterações podem não aparecer quando você pressiona F5 na etapa 10.
   
 ## <a name="next-steps"></a>Próximas etapas  
  Dependendo dos requisitos do aplicativo, há várias etapas que você talvez queira realizar após criar [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] classes de entidade. Entre algumas das melhorias que você pode fazer neste aplicativo estão:  
   
--   Implementar verificação de simultaneidade durante atualizações. Para obter informações, consulte [simultaneidade otimista: Visão geral do](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+-   Implementar verificação de simultaneidade durante atualizações. Para obter informações, consulte [a simultaneidade otimista: Visão geral do](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
 -   Adicionar consultas LINQ para filtrar dados. Para obter informações, consulte [Introdução a consultas LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
@@ -266,6 +263,5 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Consultas LINQ to SQL](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [Métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer relacional de objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [PREPARAR o que há de novo para o desenvolvimento de aplicativo de dados no Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)
-
+ [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer relacional de objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [PREPARAR o que há de novo para o desenvolvimento de aplicativo de dados no Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

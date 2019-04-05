@@ -1,14 +1,9 @@
 ---
 title: Depuração F# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,20 +16,20 @@ ms.assetid: 20bcd51c-2d06-4281-9a1e-ef2b91d1a779
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cfe65671e0f3d9b3e4702c9f08740c6694286ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e0fd75d45d42fb4216e96c29d1403e89eb44353
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734802"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923795"
 ---
 # <a name="debugging-f"></a>Depurando F# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A depuração de F# é semelhante à depuração de qualquer linguagem gerenciada, com algumas exceções:  
   
--   O **automóveis** não exibe a janela F# variáveis.  
+-   A janela **Autos** não exibe as variáveis de F#.  
   
 -   Não há suporte para Editar e Continuar em F#. As edições ao código F# durante uma sessão de depuração são possíveis, mas devem ser evitadas. Como as alterações de código não são aplicadas durante a sessão de depuração, a edição do código F# durante a depuração causará uma incompatibilidade entre o código-fonte e o código que está sendo depurado.  
   
@@ -42,6 +37,3 @@ A depuração de F# é semelhante à depuração de qualquer linguagem gerenciad
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)
-
-
-

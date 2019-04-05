@@ -1,14 +1,9 @@
 ---
 title: Depurar o layout usando o Explorador do DOM | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787738"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923513"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Depurar o layout com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 > [!TIP]
 >  As alterações feitas na **Layout** guia não são permanentes. Você pode fazer mudanças permanentes no seu código-fonte e, em seguida, atualize seu aplicativo usando o **Windows atualizar aplicativo** botão (somente para aplicativos Windows Store e Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
   
- Para usar o Explorador do DOM para modificar os aspectos do layout que não são mostrados no modelo de caixa, consulte [guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Para usar o Explorador do DOM para modificar os aspectos do layout que não são mostrados no modelo de caixa, consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Exemplo de correção de um problema de layout  
  Este exemplo mostra como selecionar um elemento de lista no modelo Hub/dinâmico, interpretar os valores do modelo de caixa que estão na **Layout** guia e, em seguida, alterar um dos valores de propriedade para corrigir um problema de layout.  
@@ -76,7 +71,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
      ![Selecionando um destino de depuração](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  Pressione F5 para executar o aplicativo no modo de depuração.  
+6.  Pressione F5 para executar seu aplicativo no modo de depuração.  
   
 7.  Abra a Seção 4 rolando ou movendo.  
   
@@ -85,10 +80,10 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
      Quando a Seção 4 for carregada, você poderá ver que as imagens inferiores não aparecem corretamente. Cada imagem de item aparece cortada ao meio (com a metade esquerda ausente).  
   
-8.  Alterne para o Visual Studio e escolha **selecionar elemento** no Explorador do DOM (ou pressione Ctrl + B). O modo de seleção muda, permitindo que você selecione um item clicando nele, e o aplicativo é colocado em primeiro plano. O modo é revertido após um único clique.  
+8.  Alterne para o Visual Studio e escolha **selecionar elemento** no Explorador do DOM (ou pressione Ctrl + B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique.  
   
     > [!TIP]
-    >  Você também pode usar as teclas de seta ou outros métodos para selecionar os elementos HTML diretamente no Explorador do DOM. Para obter mais informações sobre como selecionar elementos, consulte [guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Você também pode usar as teclas de seta ou outros métodos para selecionar os elementos HTML diretamente no Explorador do DOM. Para obter mais informações sobre como selecionar elementos, consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. No Simulador ou Emulador do Windows Phone, selecione a metade cinza à direita de uma das imagens que estão cortadas ao meio. Aparecem realces ao redor do elemento selecionado, como mostrado aqui no Emulador do Windows Phone:  
   
@@ -132,9 +127,6 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 15. Alterne para Simulador ou Emulador do Windows Phone. Os valores margin-left atualizados foram aplicados às imagens da Seção 4. Esses valores também são atualizados na **computado** guia sob a regra margin-left.  
   
 ## <a name="see-also"></a>Consulte também  
- [Guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Início Rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar estilos CSS usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md)
-
-
-

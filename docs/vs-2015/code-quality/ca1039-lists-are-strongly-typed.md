@@ -1,14 +1,9 @@
 ---
-title: 'CA1039: As listas são fortemente tipadas | Microsoft Docs'
-ms.custom: ''
+title: 'CA1039: Listas são fortemente tipadas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1039
 - ListsAreStronglyTyped
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 681c1ada7600743c0a548f8a774dada6863f7d0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925197"
 ---
-# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: as listas são fortemente tipadas
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listas são fortemente tipadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -42,7 +37,7 @@ ms.locfileid: "49853409"
 
 -   IList.Item
 
--   IList
+-   IList.Add
 
 -   IList.Contains
 
@@ -71,15 +66,12 @@ ms.locfileid: "49853409"
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IListStrongTypes/cs/FxCop.Design.IListStrongTypes.cs#1)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1035: as implementações de ICollection têm membros fortemente tipados](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035: As implementações de ICollection têm membros fortemente tipados](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038: os enumeradores devem ser fortemente tipados](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038: Enumeradores devem ser fortemente tipados](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.IList?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>
-
-
-

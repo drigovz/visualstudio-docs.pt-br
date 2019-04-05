@@ -1,13 +1,8 @@
 ---
 title: Formatar especificadores em C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924456"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato em C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,20 +74,20 @@ int main() {
 |X<br /><br /> **H**|inteiro hexadecimal|102|0xCCCCCCCC|  
 |c|caractere único|0x0065, c|101 'e'|  
 |s|Const char * cadeia de caracteres|\<local > "hello world"|"hello world"|  
-|**sb**|Const char * cadeia de caracteres|\<local > "hello world"|Olá, mundo|  
+|**sb**|Const char * cadeia de caracteres|\<local > "hello world"|hello world|  
 |s8|Const char * cadeia de caracteres|\<local > "hello world"|"hello world"|  
 |**s8b**|Const char * cadeia de caracteres|\<local > "hello world"|"hello world"|  
-|su|Const wchar_t * const<br /><br /> char16_t\* cadeia de caracteres|\<local > L "hello world"|L "hello world"<br /><br /> u "hello world"|  
-|sub|Const wchar_t * const<br /><br /> char16_t\* cadeia de caracteres|\<local > L "hello world"|Olá, mundo|  
+|su|const wchar_t*  const<br /><br /> char16_t\* string|\<local > L "hello world"|L"hello world"<br /><br /> u "hello world"|  
+|sub|const wchar_t*  const<br /><br /> char16_t\* string|\<local > L "hello world"|hello world|  
 |bstr|Cadeia de caracteres BSTR|\<local > L "hello world"|L "hello world"|  
 |**s32**|Cadeia de caracteres UTF-32|\<local > U "hello world"|U "hello world"|  
-|**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|Olá, mundo|  
+|**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|hello world|  
 |**en**|enum|Saturday(6)|Sábado|  
 |**hv**|Tipo de ponteiro - indica que o valor do ponteiro está sendo inspecionado é o resultado da alocação de heap de uma matriz, por exemplo, `new int[3]`.|\<local > {\<primeiro membro >}|\<local > {\<primeiro membro >, \<segundo membro >,...}|  
-|**na**|Suprime o endereço de memória de um ponteiro para um objeto.|\<local >, {membro = valor...}|{membro = valor...}|  
-|**nd**|Exibe apenas as informações de classe base, ignorando as classes derivadas|`(Shape*) square` inclui a classe base e derivadas informações de classe|Exibe somente informações de classe de base|  
+|**na**|Inibe o endereço de memória de um ponteiro para um objeto.|\<location>, {member=value…}|{member=value…}|  
+|**nd**|Exibe somente as informações de classe base, ignorando classes derivadas|`(Shape*) square` inclui a classe base e derivadas informações de classe|Exibe somente informações de classe de base|  
 |hr|Código de erro HRESULT ou Win32. (O depurador agora decodifica HRESULTs automaticamente. Portanto, esse especificador não é necessário nesses casos.|S_OK|S_OK|  
-|wc|Sinalizador de classe de janela|0x0010|WC_DEFAULTCHAR|  
+|wc|Sinalizador de classe do Windows|0x0010|WC_DEFAULTCHAR|  
 |wm|Números de mensagens do Windows|16|WM_CLOSE|  
 |!|formato bruto, ignorando qualquer personalização de exibições de tipo de dados|\<personalizado representação >|4|  
   
@@ -104,28 +99,28 @@ int main() {
   
 |Especificador|Formatar|Valuen original de inspeção|Valor exibido|  
 |---------------|------------|---------------------------|---------------------|  
-|n|Decimal ou **hexadecimal** inteiro|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Exibe `pBuffer` como uma matriz de 32 elementos.|  
+|n|Inteiro decimal ou inteiro **hexadecimal**|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Exibe `pBuffer` como uma matriz de 32 elementos.|  
 |**[exp]**|Uma expressão C++ válida que é avaliada como um inteiro.|pBuffer,[bufferSize]|Exibe pBuffer como uma matriz de `bufferSize` elementos.|  
-|**expand(n)**|Uma expressão C++ válida que é avaliada como um número inteiro|pBuffer, expand(2)|Exibe o terceiro elemento da  `pBuffer`|  
+|**expand(n)**|Uma expressão C++ válida que é avaliada como um inteiro|pBuffer, expand(2)|Exibe o terceiro elemento da  `pBuffer`|  
   
 ##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para depuração interop com c++ CLI  
  Especificadores em **negrito** têm suporte somente para depuração nativos e c++ /CLI código CLI.  
   
 |Especificador|Formatar|Valor original de inspeção|Valor exibido|  
 |---------------|------------|--------------------------|---------------------|  
-|**1!d, eu**|inteiro decimal assinado|0xF000F065|-268373915|  
+|**d,i**|inteiro decimal assinado|0xF000F065|-268373915|  
 |**u**|inteiro decimal não assinado|0x0065|101|  
 |o|inteiro octal não assinado|0xF065|0170145|  
 |x,X|Inteiro hexadecimal|61541|0x0000f065|  
-|**l, h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|  
-|**f**|ponto flutuante assinado|(3./2.), f|1.500000|  
+|**l,h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|  
+|**f**|ponto flutuante assinado|(3./2.), f|1,500000|  
 |**e**|notação científica assinada|(3.0/2.0)|1.500000e+000|  
 |**g**|ponto flutuante assinado ou notação científica assinada, o que for menor|(3.0/2.0)|1.5|  
-|c|caractere único|\<location>|101 'e'|  
-|s|Const char *|\<location>|"hello world"|  
-|su|Const wchar_t *<br /><br /> char16_t const\*|\<location>|L "hello world"|  
-|sub|Const wchar_t *<br /><br /> char16_t const\*|\<location>|Olá, mundo|  
-|s8|Const char *|\<location>|"hello world"|  
+|c|caractere único|\<localização>|101 'e'|  
+|s|Const char *|\<localização>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<localização>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<localização>|hello world|  
+|s8|Const char *|\<localização>|"hello world"|  
 |hr|Código de erro HRESULT ou Win32. (O depurador agora decodifica HRESULTs automaticamente. Portanto, esse especificador não é necessário nesses casos.|S_OK|S_OK|  
 |wc|Sinalizador de classe do Windows.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Números de mensagens do Windows|0x0010|WM_CLOSE|  
@@ -137,8 +132,8 @@ int main() {
 |Símbolo|Formatar|Valor original de inspeção|Valor exibido|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|Caracteres ASCII na base 64|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
-|**mb**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
+|**m**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**mb**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
 |**mw**|8 palavras|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 palavra duplas|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 palavras quádruplas|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
@@ -150,8 +145,3 @@ int main() {
 |Especificador|Formatar|Expressão|Valor exibido|  
 |---------------|------------|----------------|---------------------|  
 |n|Inteiro decimal|pBuffer[32]|Exibe `pBuffer` como uma matriz de 32 elementos.|
-
-
-
-
-
