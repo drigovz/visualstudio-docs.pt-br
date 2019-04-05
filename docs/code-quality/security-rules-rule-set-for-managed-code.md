@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 52a7944de897d48322f78e4842756e4389e0026f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c43e1edc2e2aae13fef6df4b4fe414b933067798
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911238"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018383"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de regras de segurança para código gerenciado
 Você deve incluir as regras de segurança da Microsoft conjunto de regras para maximizar o número de possíveis problemas de segurança que são relatados.
@@ -63,3 +63,15 @@ Você deve incluir as regras de segurança da Microsoft conjunto de regras para 
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Assemblies devem ter nomes fortes válidos|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de SQL|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Examine o código para vulnerabilidades de XSS|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de caminho de arquivo|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Examine o código para vulnerabilidades de divulgação de informações|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de LDAP|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de comando de processo|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Examine o código para vulnerabilidades de redirecionamento abertos|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de XPath|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de XML|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de XAML|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de DLL|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Examine o código para vulnerabilidades de injeção de expressão regular|
