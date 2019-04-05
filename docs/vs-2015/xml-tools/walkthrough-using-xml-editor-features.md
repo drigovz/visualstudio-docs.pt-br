@@ -1,27 +1,22 @@
 ---
 title: 'Passo a passo: Usando recursos do Editor de XML | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925810"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Passo a passo: Usando funcionalidades do editor XML
+# <a name="walkthrough-using-xml-editor-features"></a>Passo a passo: Usando recursos do Editor de XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 As etapas nessa explicação passo a passo mostram como criar um novo documento XML. A explicação passo a passo também usa alguns dos recursos do editor XML que tornam valioso para criar XML.  
@@ -77,7 +72,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
   
 5.  Tipo `>` para a marca de fechamento.  
   
-6.  O editor adiciona a marca de fim. A marca de fim é adicionada com um a linha subescrita ondulada que indica um erro de validação. A dica de ferramenta exibe a mensagem: O elemento “empregado” tem conteúdo incompleto. 'ID' esperado.  
+6.  O editor adiciona a marca de fim. A marca de fim é adicionada com um a linha subescrita ondulada que indica um erro de validação. A dica de ferramenta exibe a mensagem: O elemento "empregado" tem conteúdo incompleto. 'ID' esperado.  
   
 7.  Tipo de `<` e selecione **ID** da lista de membros. Digite `>`.  
   
@@ -85,7 +80,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
   
 8.  Tipo de **abc**.  
   
-     O **abc** texto tem uma linha ondulada. A dica de ferramenta exibe a mensagem: O elemento “identificação” tem um valor inválido de acordo com seu tipo de dados.  
+     O **abc** texto tem uma linha ondulada. A dica de ferramenta exibe a mensagem: O elemento 'ID' tem um valor inválido de acordo com seu tipo de dados.  
   
 9. Clique com o botão direito no elemento de identificação e selecione **ir para definição**.  
   
@@ -93,7 +88,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
   
 10. Retornar para o arquivo XML e substitua os **abc** texto com **123**.  
   
-     O sublinhado e o ToolTip ondulados são desmarcados no valor do elemento ID. A dica de ferramenta para a marca de fim do funcionário agora exibe a mensagem: O elemento “empregado” tem conteúdo incompleto. “Data de admissão esperada”.  
+     O sublinhado e o ToolTip ondulados são desmarcados no valor do elemento ID. Dica de ferramenta para a marca de fim do funcionário agora exibe a mensagem: O elemento "empregado" tem conteúdo incompleto. “Data de admissão esperada”.  
   
 11. Coloque o cursor após a marca de fim de identificação, digite `<`, data de admissão select da lista de membros, e digite dentro `>`.  
   
@@ -136,4 +131,3 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
   
 ## <a name="see-also"></a>Consulte também  
  [Editor de XML](../xml-tools/xml-editor.md)
-

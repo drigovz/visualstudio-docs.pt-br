@@ -1,29 +1,24 @@
 ---
 title: Suporte para categorias de configurações | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - settings, supporting with Visual Studio SDK
 - Visual Studio SDK, supporting settings
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
-manager: douge
-ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923986"
 ---
 # <a name="support-for-settings-categories"></a>Suporte para categorias de configurações
-Uma categoria de configurações consiste em um grupo de opções que personalizam o ambiente de desenvolvimento integrado (IDE). Por exemplo, as configurações podem controlar o layout de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows e o conteúdo dos menus. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Uma categoria de configurações consiste em um grupo de opções que personalizam o ambiente de desenvolvimento integrado (IDE). Por exemplo, as configurações podem controlar o layout de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows e o conteúdo dos menus. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Sobre o **ferramentas** menu, clique em **Import and Export Settings** para iniciar o **Import and Export Settings Wizard**. O assistente oferece três opções: exportar, importar ou redefinir as configurações. Por exemplo, selecionando export, abre o **escolher configurações para exportar** página do assistente.  
   
@@ -69,4 +64,4 @@ Uma categoria de configurações consiste em um grupo de opções que personaliz
  [Criando uma página de opções](../extensibility/creating-an-options-page.md)   
  [Exemplos de VSSDK](../misc/vssdk-samples.md)   
  [Estado de VSPackage](../misc/vspackage-state.md)   
- [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

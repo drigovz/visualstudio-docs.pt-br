@@ -1,24 +1,19 @@
 ---
 title: Criando um Software Development Kit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0a03611dcf06c5ecd7c2e638bdced6551bcb3a37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929013"
 ---
 # <a name="creating-a-software-development-kit"></a>Criar um Software Development Kit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,8 +57,8 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
 |Pasta Referências|Contém os binários que contêm APIs que podem ser codificadas contra. Eles podem incluir arquivos de metadados do Windows (WinMD) ou assemblies.|  
 |Pasta de tempo de design|Contém arquivos que são necessários apenas em tempo de pré-execução/depuração. Eles podem incluir documentos XML, bibliotecas, cabeçalhos, binários de tempo de design de caixa de ferramentas, MSBuild artefatos e assim por diante<br /><br /> Documentos XML seriam, idealmente, ser colocados na pasta \DesignTime, mas documentos XML para referências continuarão a ser colocado juntamente com o arquivo de referência no Visual Studio. Por exemplo, o documento XML para uma referência \References\\[configuração]\\[arch]\sample.dll será \References\\[configuração]\\[arch]\sample.xml e a versão localizada desse documento será \References\\[configuração]\\[arch]\\[locale]\sample.xml.|  
 |Pasta de configuração|Pode haver apenas três pastas: debug, varejo e CommonConfiguration. Os autores do SDK podem colocar seus arquivos em CommonConfiguration se o mesmo conjunto de arquivos do SDK deve ser consumido, independentemente da configuração que o consumidor do SDK têm como destino.|  
-|Pasta de arquitetura|Qualquer pasta de arquitetura com suporte pode existir. O Visual Studio suporta as seguintes arquiteturas: x86, x64, ARM e neutral. Observação: O Win32 mapeia para x86 e AnyCPU mapeia para neutro.<br /><br /> MSBuild procura apenas sob \CommonConfiguration\neutral SDKs de plataforma.|  
-|Sdkmanifest|Esse arquivo descreve como o Visual Studio deve consumir o SDK. Examinar o manifesto do SDK para [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** o valor que o Pesquisador de objetos exibe na lista de pesquisa.<br /><br /> **PlatformIdentity:** a existência desse atributo informa ao Visual Studio e o MSBuild que o SDK é uma plataforma SDK e que as referências adicionadas dele não devem ser copiadas localmente.<br /><br /> **TargetFramework:** este atributo é usado pelo Visual Studio para garantir que somente projetos que segmentam as estruturas mesmas conforme especificado no valor deste atributo pode consumir o SDK.<br /><br /> **MinVSVersion:** esse atributo é usado pelo Visual Studio para consumir apenas os SDKs que se aplicam a ele.<br /><br /> **Referência:** esse atributo deve ser especificado para apenas essas referências que contêm controles. Para obter informações sobre como especificar se uma referência contém controles, consulte abaixo.|  
+|Pasta de arquitetura|Qualquer pasta de arquitetura com suporte pode existir. O Visual Studio suporta as seguintes arquiteturas: x86, x64, ARM e neutral. Observação: Win32 mapeia para x86 e AnyCPU mapeia para neutro.<br /><br /> MSBuild procura apenas sob \CommonConfiguration\neutral SDKs de plataforma.|  
+|SDKManifest.xml|Esse arquivo descreve como o Visual Studio deve consumir o SDK. Examinar o manifesto do SDK para [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** O valor que o Pesquisador de objetos exibe na lista de pesquisa.<br /><br /> **PlatformIdentity:** A existência desse atributo informa ao Visual Studio e o MSBuild que o SDK é uma plataforma SDK e que as referências adicionadas dele não devem ser copiadas localmente.<br /><br /> **TargetFramework:** Este atributo é usado pelo Visual Studio para garantir que somente projetos que segmentam as estruturas mesmas conforme especificado no valor deste atributo pode consumir o SDK.<br /><br /> **MinVSVersion:** Esse atributo é usado pelo Visual Studio para consumir apenas os SDKs que se aplicam a ele.<br /><br /> **Referência:** Esse atributo deve ser especificado para apenas essas referências que contêm controles. Para obter informações sobre como especificar se uma referência contém controles, consulte abaixo.|  
   
 ##  <a name="ExtensionSDKs"></a> SDKs de extensão  
  As seções a seguir descrevem o que você precisa fazer para implantar um SDK de extensão.  
@@ -133,11 +128,11 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
   
      Documentos de referência do XML serão posicionados junto com o arquivo de referência. Por exemplo, o documento de referência XML para o **\References\\< config\>\\< arch\>\sample.dll** assembly é **\References\\ < config\>\\< arch\>\sample.xml**, e é a versão localizada do que doc **\References\\< config\>\\< arch\>\\< localidade\>\sample.xml**.  
   
-5.  Pasta de configuração: três subpastas: CommonConfiguration, varejo e depuração. Os autores do SDK podem colocar seus arquivos em CommonConfiguration quando o mesmo conjunto de arquivos do SDK deve ser consumido, independentemente da configuração direcionada pelo cliente do SDK.  
+5.  Pasta de configuração: três subpastas: Depuração, varejo e CommonConfiguration. Os autores do SDK podem colocar seus arquivos em CommonConfiguration quando o mesmo conjunto de arquivos do SDK deve ser consumido, independentemente da configuração direcionada pelo cliente do SDK.  
   
 6.  Pasta de arquitetura: arquiteturas a seguir são suportadas: x86, x64, ARM, neutro. Win32 mapeia para x86 e AnyCPU mapeia para neutro.  
   
-### <a name="sdkmanifestxml"></a>Sdkmanifest  
+### <a name="sdkmanifestxml"></a>SDKManifest.xml  
  Esse arquivo descreve como o Visual Studio deve consumir o SDK. Confira o exemplo abaixo.  
   
 ```  
@@ -166,7 +161,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 1.  DisplayName: o valor que aparece no Gerenciador de referências, Gerenciador de soluções, pesquisador de objetos e outros locais na interface do usuário para o Visual Studio.  
   
-2.  ProductFamilyName: O geral do SDK nome do produto. Por exemplo, o [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK é denominada "Microsoft.WinJS.1.0" e "Microsoft.WinJS.2.0", que pertencem à mesma família da família de produtos do SDK, "Microsoft". Esse atributo permite que o Visual Studio e o MSBuild fazer essa conexão. Se esse atributo não existir, o nome do SDK é usado como o nome da família de produtos.  
+2.  ProductFamilyName: O nome de produto geral do SDK. Por exemplo, o [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK é denominada "Microsoft.WinJS.1.0" e "Microsoft.WinJS.2.0", que pertencem à mesma família da família de produtos do SDK, "Microsoft". Esse atributo permite que o Visual Studio e o MSBuild fazer essa conexão. Se esse atributo não existir, o nome do SDK é usado como o nome da família de produtos.  
   
 3.  FrameworkIdentity: especifica uma dependência em uma ou mais bibliotecas de componentes de Windows que o valor desse atributo é colocado no manifesto do aplicativo de consumo. Esse atributo é aplicável somente às bibliotecas de componentes do Windows.  
   
@@ -176,11 +171,11 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 6.  MaxPlatformVerson: A versão da plataforma de destino máximo deve ser usada para especificar as versões de plataforma na qual o SDK de extensão não funcionará. Por exemplo, o Microsoft Visual C++ Runtime Package v11.0 deve ser referenciado somente por projetos do Windows 8. Assim, MaxPlatformVersion do projeto Windows 8 é 8.0. Isso significa que o Gerenciador de referências filtra pacote de tempo de execução do Microsoft Visual C++ para um projeto do Windows 8.1 e MSBuild gera um erro quando um [!INCLUDE[win81](../includes/win81-md.md)] projeto faz referência a ele. Observação: esse elemento tem suporte do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
-7.  AppliesTo: especifica os SDKs que estão disponíveis no Gerenciador de referências, especificando os tipos de projeto do Visual Studio aplicáveis. Nove valores são reconhecidos: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, gerenciado e nativo. O autor do SDK pode usar e ("+'), ou ("&#124;"), e não ("! ") operadores para especificar exatamente o escopo dos tipos de projeto que se aplicam ao SDK.  
+7.  AppliesTo: especifica os SDKs que estão disponíveis no Gerenciador de referências, especificando os tipos de projeto do Visual Studio aplicáveis. Nove valores são reconhecidos: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, gerenciados e nativo. O autor do SDK pode usar e ("+'), ou ("&#124;"), e não ("! ") operadores para especificar exatamente o escopo dos tipos de projeto que se aplicam ao SDK.  
   
      WindowsAppContainer identifica projetos para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
   
-8.  SupportPrefer32Bit: Os valores com suporte são "True" e "False". O padrão é "True". Se o valor é definido como "False", o MSBuild retornará um erro para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projetos (ou um aviso para projetos da área de trabalho) se o projeto que referencia o SDK tem Prefer32Bit habilitado. Para obter mais informações sobre Prefer32Bit, consulte [página de Build, Designer de projeto (c#)](../ide/reference/build-page-project-designer-csharp.md) ou [página de compilação, Designer de projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).  
+8.  SupportPrefer32Bit: Valores com suporte são "True" e "False". O padrão é "True". Se o valor é definido como "False", o MSBuild retornará um erro para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projetos (ou um aviso para projetos da área de trabalho) se o projeto que referencia o SDK tem Prefer32Bit habilitado. Para obter mais informações sobre Prefer32Bit, consulte [página de Build, Designer de projeto (c#)](../ide/reference/build-page-project-designer-csharp.md) ou [página de compilação, Designer de projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).  
   
 9. SupportedArchitectures: uma vírgula das arquiteturas que o SDK oferece suporte. MSBuild exibirá um aviso se não há suporte para a arquitetura do SDK do destino no projeto consumidor. Se esse atributo não for especificado, o MSBuild nunca exibe esse tipo de aviso.  
   
@@ -270,7 +265,6 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Criando um SDK usando C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Passo a passo: Criando um SDK usando c# ou Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [Passo a passo: Criar um SDK usando C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [Passo a passo: Criar um SDK usando c# ou Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)
-

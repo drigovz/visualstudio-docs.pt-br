@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de classe UML: Referência | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de classe UML: Referência de | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,15 +23,15 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741055"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928916"
 ---
-# <a name="uml-class-diagrams-reference"></a>Diagramas de classe UML: referência
+# <a name="uml-class-diagrams-reference"></a>Diagramas de classe UML: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um diagrama de classe UML descreve o objeto e as informações de estruturas usadas pelo seu aplicativo, tanto internamente e em comunicação com seus usuários. Ele descreve as informações sem referência a qualquer implementação específica. Suas classes e relações podem ser implementadas de várias maneiras, como tabelas de banco de dados, nós XML ou composições de objetos de software.  
@@ -42,7 +39,7 @@ Um diagrama de classe UML descreve o objeto e as informações de estruturas usa
 > [!NOTE]
 >  Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classe, o diagrama de classe do .NET, que é usado para visualizar o código do programa. Para obter mais informações, consulte [Projetando e exibindo Classes e tipos](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
- Para criar um diagrama de classe UML, nos **arquitetura** menu, escolha **UML novo ou diagrama de camada**. Para obter mais informações sobre como desenhar diagramas de classe UML, consulte [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md). Para obter mais informações sobre como criar e desenhar diagramas de modelagem, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+ Para criar um diagrama de classe UML, nos **arquitetura** menu, escolha **UML novo ou diagrama de camada**. Para obter mais informações sobre como desenhar diagramas de classe UML, consulte [diagramas de classe UML: Diretrizes de](../modeling/uml-class-diagrams-guidelines.md). Para obter mais informações sobre como criar e desenhar diagramas de modelagem, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -93,11 +90,8 @@ Um diagrama de classe UML descreve o objeto e as informações de estruturas usa
   
 ## <a name="see-also"></a>Consulte também  
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagramas de classe UML: Diretrizes](../modeling/uml-class-diagrams-guidelines.md)   
  [Propriedades de tipos em diagramas de classe UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propriedades de atributos em diagramas de classe UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Propriedades de associações em diagramas de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-

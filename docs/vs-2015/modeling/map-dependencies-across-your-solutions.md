@@ -1,11 +1,8 @@
 ---
 title: Mapear dependências nas soluções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928309"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +69,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
   
 - Projetos e assemblies do X++ feitos com base nos módulos do .NET para Microsoft AX Dynamics  
   
-  **Observação:** para projetos que não sejam c# ou Visual Basic .NET, há poucas opções para o início de um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não é um objeto no editor de texto de um projeto C++ com o botão direito e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de Gerenciador de soluções, exibição de classe e Pesquisador de objetos.  
+  **Observação:** Para projetos que não sejam c# ou Visual Basic .NET, há menos opções para o início de um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não é um objeto no editor de texto de um projeto C++ com o botão direito e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de Gerenciador de soluções, exibição de classe e Pesquisador de objetos.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Para ver as dependências gerais em sua solução  
   
@@ -289,7 +286,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
 ##  <a name="SeeSourceHeader"></a> Ver as dependências entre arquivos de código-fonte C e C++ e arquivos de cabeçalho  
  Se você quiser criar mapas mais completos para projetos do C++, defina a opção de compilador de informações de procura (**/FR**) nesses projetos. Consulte [/FR, /Fr (criar. Arquivo SBR)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Do contrário, uma mensagem é exibida e solicita a definição dessa opção. Se você selecionar **Okey**, isso define a opção para o map atual. Você pode optar por ocultar a mensagem para todos os mapas posteriores. Se você ocultar essa mensagem, poderá exibi-la novamente. Defina a seguinte chave do registro `0` ou exclua a chave:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Quando você abre uma solução que contém projetos do Visual C++, pode demorar algum tempo para atualizar o banco de dados do IntelliSense. Durante esse tempo, talvez você não conseguir criar mapas de código para o cabeçalho (. h ou `#include`) até que o banco de dados do IntelliSense conclui a atualização de arquivos. É possível monitorar o andamento da atualização na barra de status do Visual Studio. Para resolver problemas ou mensagens exibidas porque determinadas configurações do IntelliSense estão desabilitadas, consulte [solucionar problemas de mapas de código C e C++](#Troubleshooting).  
   
@@ -347,7 +344,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Compartilhar o mapa com outros usuários do Visual Studio  
  Use o **arquivo** menu para salvar o mapa.  
   
- -ou-  
+ - ou -  
   
  Para salvar o mapa como parte do projeto específico, na barra de ferramentas do mapa, escolha **compartilhamento**, **mover** \< *CodeMapName*>**. dgml em**e, em seguida, escolha o projeto onde você deseja salvar o mapa.  
   
@@ -389,6 +386,3 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
 -   [Procurar e reorganizar mapas de códigos](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Plug-ins de controle de origem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7c51efc30251a177e07b7acf3e4c62821cb9488
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745449"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926549"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de controle do código-fonte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +56,11 @@ A seção de referência do SDK de plug-in de controle do código-fonte contém 
  [Glossário](../extensibility/source-control-plug-in-glossary.md)  
  Fornece termos úteis e suas definições para ler a documentação do SDK de plug-in de controle do código-fonte.  
   
- [Como desativar avisos de compatibilidade para plug-ins de controle do código-fonte](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Como: Desativar avisos de compatibilidade para Plug-ins de controle de origem](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Descreve como desabilitar avisos.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Exemplo de plug-in de controle do código-fonte](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Exemplo de plug-in de controle do código-fonte](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Fornece um exemplo da funcionalidade de plug-in de controle do código-fonte.  
   
  [Guia de teste para plug-ins de controle do código-fonte](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
@@ -76,4 +71,3 @@ A seção de referência do SDK de plug-in de controle do código-fonte contém 
   
  [Referência do SDK do Visual Studio](../extensibility/visual-studio-sdk-reference.md)  
  Apresenta uma lista de tópicos de referência.
-

@@ -1,25 +1,22 @@
 ---
-title: 'Como: adicionar um manipulador de arrastar e soltar | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Adicionar um manipulador de arrastar e soltar | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925511"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Como adicionar um manipulador de evento de arrastar e soltar
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Como: Adicionar um manipulador do tipo "arrastar e soltar"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível adicionar manipuladores para eventos arrastar e soltar à DSL, para os usuários poderem arrastar itens para o diagrama de outros diagramas ou de outras partes do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Também é possível adicionar manipuladores de eventos como cliques duplos. Juntos, os manipuladores de arrastar-e-soltar e clique duas vezes são conhecidos como *manipuladores de gesto*.  
@@ -87,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Esse método é chamado quando o usuário clica duas vezes na forma ou diagrama.  
   
-   Para obter mais informações, consulte [como: interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Para obter mais informações, confira [Como: Interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
   Defina `IsAcceptableDropItem(e)` para determinar se o item arrastado é aceitável e ProcessDragDropItem(e) para atualizar o modelo quando o item for solto. Esses métodos devem primeiro extrair o item dos argumentos do evento. Para obter informações sobre como fazer isso, consulte [como obter uma referência para o item arrastado](#extracting).  
   
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Consulte também  
  [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)   
  [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

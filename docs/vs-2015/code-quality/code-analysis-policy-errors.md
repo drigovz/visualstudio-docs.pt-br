@@ -1,14 +1,9 @@
 ---
 title: Erros de política de análise de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyfailures
 helpviewer_keywords:
@@ -18,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4582f19882cc283acd3712236cdbb081e2f8f3ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b61d7d9718e9557ef153474718542f889ad7629
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859811"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925715"
 ---
 # <a name="code-analysis-policy-errors"></a>Erros da política de análise do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,6 +77,3 @@ Os seguintes erros ocorrem se a política de análise de código não for atendi
   
 ## <a name="see-also"></a>Consulte também  
  [Erros de aplicativo de análise de código](../code-quality/code-analysis-application-errors.md)
-
-
-

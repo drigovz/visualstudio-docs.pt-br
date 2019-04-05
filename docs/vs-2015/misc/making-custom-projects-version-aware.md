@@ -1,23 +1,18 @@
 ---
 title: Tornando projetos personalizados com reconhecimento de versão | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832999"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924267"
 ---
 # <a name="making-custom-projects-version-aware"></a>Tornando projetos personalizados com reconhecimento de versão
 No seu sistema de projeto personalizado, você pode permitir que os projetos desse tipo de carga em várias versões do Visual Studio. Você também pode impedir projetos deste tipo de carregamento em uma versão anterior do Visual Studio. Você também pode habilitar esse projeto para se identificar para uma versão posterior, no caso do projeto exige o reparo, a conversão ou a substituição.  
@@ -31,11 +26,11 @@ No seu sistema de projeto personalizado, você pode permitir que os projetos des
   
 1.  `SPUVF_PROJECT_NOREPAIR`: Não requer que nenhum reparo.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Torna o projeto compatível com uma versão anterior sem os problemas que você possa ter encontram com as versões anteriores do produto.  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`: Faz com que o projeto seja compatível com uma versão anterior sem os problemas que você possa ter encontram com as versões anteriores do produto.  
   
 3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Torna o projeto compatível com versões anteriores, mas com algum risco de problemas que podem ser encontrados com versões anteriores do produto. Por exemplo, o projeto não será compatível se dependia de diferentes versões do SDK.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Torna o projeto incompatível com uma versão anterior.  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Faz com que o projeto incompatível com uma versão anterior.  
   
 5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Indica que a versão atual não dá suporte a este projeto.  
   

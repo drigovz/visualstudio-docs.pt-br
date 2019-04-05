@@ -1,12 +1,9 @@
 ---
 title: Associar controles a imagens de um banco de dados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cb1bdb99db405962f487bc9ec13de961f352ec48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925206"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associar controles a imagens de um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +38,9 @@ Você pode usar o **fontes de dados** window para vincular uma imagem em um banc
   
  Imagens em um banco de dados normalmente são armazenadas como matrizes de bytes. Os itens na **fontes de dados** janela que são armazenados como matrizes de bytes têm seu controle tipo definido como **None** por padrão, como matrizes de bytes podem conter qualquer coisa, desde uma simples matriz de bytes para o arquivo executável de um aplicativo grande. Para criar um controle associado a dados para um item de matriz de bytes na **fontes de dados** janela que representa uma imagem, você deve selecionar o controle para criar.  
   
- O procedimento a seguir pressupõe que o **fontes de dados** janela já está preenchida com um item que está associado à sua imagem. Para obter mais informações, consulte [como: conectar a dados em um banco de dados](../data-tools/how-to-connect-to-data-in-a-database.md).  
+ O procedimento a seguir pressupõe que o **fontes de dados** janela já está preenchida com um item que está associado à sua imagem.
   
-### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Para vincular uma imagem em um banco de dados a um controle  
+## <a name="bind-a-picture-in-a-database-to-a-control"></a>Vincular uma imagem em um banco de dados a um controle  
   
 1.  Certifique-se de que a superfície de design que você deseja adicionar o controle é aberta no Designer do WPF ou o Designer de formulários do Windows.  
   
@@ -59,4 +56,3 @@ Você pode usar o **fontes de dados** window para vincular uma imagem em um banc
   
 ## <a name="see-also"></a>Consulte também  
  [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)
-

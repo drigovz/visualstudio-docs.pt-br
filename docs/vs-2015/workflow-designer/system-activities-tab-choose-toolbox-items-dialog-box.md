@@ -1,11 +1,8 @@
 ---
 title: Guia de System. Activities, escolher a caixa de diálogo de itens de caixa de ferramentas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
@@ -14,13 +11,13 @@ ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927196"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>O guia de System.Activities, escolher a caixa de diálogo dos itens da caixa de ferramentas
 Esta guia, o **Choose Toolbox Items** caixa de diálogo exibe uma lista de [!INCLUDE[wf](../includes/wf-md.md)] atividades, modelos e itens disponíveis para você. Para exibir essa lista, selecione **Choose Toolbox Items** da **ferramentas** menu ou clicando com o **caixa de ferramentas** e selecionando **escolher itens**para exibir o **Choose Toolbox Items** caixa de diálogo e, em seguida, selecione sua **System. Activities** guia. Imediatamente, a lista contém atividades de fluxo de trabalho de assemblies System. Activities, Activities e Activities; No entanto, somente o sistema forneceu atividades mostradas e as atividades adicionados por meio de outros assemblies exibidos na **caixa de ferramentas** são verificadas por padrão. Adicionado recentemente atividades automaticamente são verificadas e aparecem na **caixa de ferramentas** quando você clica em **Okey** na caixa de diálogo. Além disso, esses itens aparecem na **caixa de ferramentas** em uma nova categoria que corresponde ao namespace onde o atividade/item/modelo reside.  

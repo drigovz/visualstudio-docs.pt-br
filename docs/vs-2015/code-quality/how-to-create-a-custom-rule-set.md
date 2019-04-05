@@ -1,14 +1,9 @@
 ---
-title: 'Como: criar um conjunto de regras personalizado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um conjunto de regras personalizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -18,14 +13,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d21ad2edd01ee5b7a939c6c0ddfdaa882e38754
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927574"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Como criar um conjunto de regras personalizado
+# <a name="how-to-create-a-custom-rule-set"></a>Como: Criar um conjunto de regras personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Na [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], e [!INCLUDE[vsPro](../includes/vspro-md.md)], você pode criar e modificar um personalizado *conjunto de regras* para atender às necessidades específicas do projeto associadas com a análise de código. Para criar uma regra personalizada definida, você abrir um ou mais padrão regra define no editor de conjunto de regras. Em seguida, você pode adicionar ou remover regras específicas, e você pode alterar a ação que ocorre quando a análise de código determina que uma regra foi violada.  
@@ -117,8 +112,5 @@ Na [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 -   Para adicionar ou remover Microsoft conjuntos de regras do padrão para o conjunto de regras atual, clique em **adicionar ou remover conjuntos de regras filho**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Como: Configurar análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Referência do conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)
-
-
-
