@@ -1,32 +1,27 @@
 ---
-title: 'Como: usar pontos de interrupção com XSLT | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar pontos de interrupção com XSLT | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bf7bbc2c-71dc-4cac-a6fc-add6b27d92ed
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b01553075115ce953b499f722a254b5a2b9f20ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233448"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925065"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Como: Use pontos de interrupção com XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Como: Usar pontos de interrupção com XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode definir pontos de interrupção em uma folha de estilos XSLT ou no documento de código-fonte XML. Se você definir um ponto de interrupção em uma marca, quando a execução iniciar o ponto de interrupção se transportará para a instrução que tem a seguinte linha de código informações.  
   
- Para obter mais informações, consulte [Noções básicas de depuração: pontos de interrupção](http://msdn.microsoft.com/en-us/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
+ Para obter mais informações, consulte [Noções básicas de depuração: Pontos de interrupção](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Definir um ponto de interrupção em uma folha de estilos  
  Os pontos de interrupção podem ser definidos em marcas inicial, em marcas de fim, e em nós de texto de uma folha de estilos XSLT. Os pontos de interrupção também podem ser definidos no código em um bloco de script.  
@@ -64,4 +59,3 @@ Você pode definir pontos de interrupção em uma folha de estilos XSLT ou no do
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-

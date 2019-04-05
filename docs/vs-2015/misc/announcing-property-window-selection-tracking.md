@@ -1,14 +1,9 @@
 ---
 title: Anunciando o acompanhamento de seleção de janela de propriedade | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], property pages support
 - property pages, tracking selection
@@ -17,13 +12,13 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], Properties window support
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
-manager: douge
-ms.openlocfilehash: 9639e0347689fc99e0b43c4b69394b522af984da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924197"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Anunciando a seleção da janela de propriedades de controle
 Se você quiser trabalhar com o **propriedades** janela ou o **propriedade** páginas, por exemplo, um formulário, texto ou uma seleção para o qual você deseja ver as propriedades, em seguida, você deve ter um conhecimento completo de como você Coordene a seleção. Por exemplo, você deve saber se você tem uma seleção única ou várias seleções. Em seguida, você precisa anunciar seu tipo de seleção (um ou vários) no IDE usando o <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. Essa interface fornece informações necessárias para o **propriedades** janela.  

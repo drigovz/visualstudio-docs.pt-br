@@ -1,29 +1,24 @@
 ---
 title: 'Área de teste 2: Obter do controle de origem | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96b00cfc9965b6006fa51b3cd313566658d604bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78ecbcb50effc133487f03ffd2f2edee3cbd8d4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925258"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Área de teste 2: obter do controle do código-fonte
+# <a name="test-area-2-get-from-source-control"></a>Área de teste 2: Obter do controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Esta área de teste aborda os casos de teste para recuperar itens do repositório de versão por meio do comando Get. Esses casos de teste podem ser aplicados para ambos os locais e para projetos da Web.  
@@ -39,7 +34,7 @@ Esta área de teste aborda os casos de teste para recuperar itens do repositóri
   
 -   Menu de atalho **obter última versão**.  
   
--   Get: **arquivo**, **controle de fonte**, **obter**.  
+-   Obter: **Arquivo**, **controle de origem**, **obter**.  
   
 ## <a name="expected-behavior"></a>Comportamento esperado  
   
@@ -62,4 +57,3 @@ Esta área de teste aborda os casos de teste para recuperar itens do repositóri
   
 ## <a name="see-also"></a>Consulte também  
  [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

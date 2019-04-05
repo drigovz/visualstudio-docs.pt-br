@@ -1,14 +1,9 @@
 ---
-title: 'Como: depurar clientes e servidores usando a depuração RPC COM | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar clientes e servidores usando a depuração RPC COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -30,15 +25,15 @@ ms.assetid: 3e8526c8-43b5-4b87-8e0d-b22c24f0a3ea
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 78a4c85d24ea382e5946000ac2225588c5deceed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924027"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Como depurar clientes e servidores COM usando a depuração RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Como: Depurar clientes e servidores COM usando a depuração RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar a depuração de chamada de procedimento remoto (RPC) para depurar aplicativos cliente/servidor COM. Você deve habilitar a depuração de RPC para usá-lo. Com a depuração de RPC habilitada, quando você entrar na chamada do servidor do cliente, o depurador anexará ao servidor e permitirá depurar o código. Quando o depurador for anexado, você poderá usar todos os recursos do depurador com o cliente e os processos do servidor.  
@@ -47,11 +42,11 @@ Você pode usar a depuração de chamada de procedimento remoto (RPC) para depur
   
 1.  No menu **Ferramentas**, clique em **Opções**.  
   
-2.  No **opções** caixa de diálogo, clique o **depuração** pasta.  
+2.  Na caixa de diálogo **Opções**, clique na pasta **Depuração**.  
   
-3.  Clique o **nativo** página.  
+3.  Clique na página **Nativa**.  
   
-4.  Selecione o **depuração RPC** caixa de seleção.  
+4.  Marque a caixa de seleção **Depuração RPC**.  
   
     > [!NOTE]
     >  Para depurar chamadas de RPC, você deve ter privilégios de Administrador ou Usuário avançado.  
@@ -60,8 +55,5 @@ Você pode usar a depuração de chamada de procedimento remoto (RPC) para depur
     >  A entrada de RPC em um servidor remoto que executa o Microsoft Windows Vista só funcionará se um depurador nativo for anexado ao servidor remoto. Caso contrário, a chamada de RPC apresentará falha sem uma mensagem de erro. De outro modo, a chamada de RPC será concluída, mas a depuração da chamada de RPC não funcionará.  
   
 ## <a name="see-also"></a>Consulte também  
- [Servidor COM e a depuração de contêiner](../debugger/com-server-and-container-debugging.md)   
+ [Depuração de servidor e contêiner COM](../debugger/com-server-and-container-debugging.md)   
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-
