@@ -1,14 +1,9 @@
 ---
-title: 'Como: criar um pacote de Bootstrapper localizado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um pacote de Bootstrapper localizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,15 +12,15 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928161"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Como criar um pacote de bootstrapper localizado
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Como: Criar um pacote de Bootstrapper localizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depois de criar um pacote de bootstrapper, você pode criar versões localizadas desse pacote criando mais dois arquivos para cada localidade: um arquivo de termos de licença de software (como um eula.rtf) e um manifesto do pacote (package.xml).  
@@ -39,7 +34,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 3.  Crie um manifesto do pacote com o nome package.xml, atualize as cadeias de caracteres e cultura, e coloque o arquivo na nova pasta. Se você já criou um bootstrapper do Visual Studio no idioma de destino, você pode copiar o arquivo package.xml do Visual Studio e modificá-lo nesta etapa.  
   
 > [!NOTE]
->  Se você estiver usando um projeto de instalação para implantar aplicativos, você pode localizar seu aplicativo, alterando a **localização** propriedade.  
+>  Se você estiver usando um projeto de instalação para implantar aplicativos, você poderá localizar o aplicativo alterando a propriedade **Localização**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -72,7 +67,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
   
 2.  Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.  
   
-3.  Crie um manifesto do pacote com o nome package.xml e coloque-o na nova pasta. Para obter mais informações, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
+3.  Crie um manifesto do pacote com o nome package.xml e coloque-o na nova pasta. Para obter mais informações, confira [Como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Atualize a seção `<Strings>` do manifesto do pacote, para que as cadeias de caracteres fiquem no idioma correto para a localidade.  
   
@@ -101,7 +96,4 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 ## <a name="see-also"></a>Consulte também  
  [Criando pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)   
  [Pré-requisitos de implantação do aplicativo](../deployment/application-deployment-prerequisites.md)   
- [Como criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md)
-
-
-
+ [Como: Criar um manifesto do pacote](../deployment/how-to-create-a-package-manifest.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Início rápido: Análise de código para C / C++ | Microsoft Docs'
-ms.custom: ''
+title: 'Início Rápido: Análise de código para C / C++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,15 +11,15 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927981"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Início Rápido: análise de código para C/C++
+# <a name="quick-start-code-analysis-for-cc"></a>Início Rápido: Análise de código para C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode melhorar a qualidade do seu aplicativo, executando a análise de código regularmente em código C ou C++. Isso pode ajudá-lo a localizar problemas mais comuns, violações de boa prática de programação ou defeitos que são difíceis de descobrir por meio de testes. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código.  
@@ -130,11 +125,8 @@ Você pode melhorar a qualidade do seu aplicativo, executando a análise de cód
 ##  <a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código  
  Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.  
   
-1.  **Para filtrar avisos por título ou identificação de aviso**: insira a palavra-chave em de **filtro** caixa de texto.  
+1.  **Para filtrar avisos por título ou id do aviso**: Insira a palavra-chave na **filtro** caixa de texto.  
   
-2.  **Para filtrar avisos por projeto**: em uma solução multiprojeto, escolha um ou mais projetos na lista na parte superior direita da janela análise de código. Escolha o nome da solução para exibir todos os avisos.  
+2.  **Para filtrar avisos por projeto**: Em uma solução multiprojeto, escolha um ou mais projetos na lista na parte superior direita da janela análise de código. Escolha o nome da solução para exibir todos os avisos.  
   
-3.  **Para filtrar avisos por gravidade**: por padrão, mensagens de análise de código são atribuídas a severidade **aviso**. Você pode atribuir a gravidade de uma ou mais mensagens, como **erro** em uma regra personalizada definida. Escolha **aviso** ou **erro** para exibir apenas as mensagens que são atribuídas a severidade do respectiva. Escolher **todos os** para exibir todas as mensagens.
-
-
-
+3.  **Para filtrar avisos por severidade**: Por padrão, mensagens de análise de código são atribuídas a severidade **aviso**. Você pode atribuir a gravidade de uma ou mais mensagens, como **erro** em uma regra personalizada definida. Escolha **aviso** ou **erro** para exibir apenas as mensagens que são atribuídas a severidade do respectiva. Escolher **todos os** para exibir todas as mensagens.

@@ -1,12 +1,9 @@
 ---
 title: Implantar uma extensão de modelo de camada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, deploying extensions
 - layer models, deploying extensions
@@ -14,13 +11,13 @@ ms.assetid: 00a4675b-d20e-487e-8fd5-be2b1e0ba238
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a31413f5332ddfec8dc6021da85e2135d691f930
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 63538797f335cab770f3748d946b08de6b44c609
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929434"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +62,7 @@ Outros usuários do Visual Studio podem instalar extensões que você criar usan
   
     -   Se você tiver configurado o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] para executar no modo interativo como um usuário específico, você pode instalar apenas para esse usuário:  
   
-         %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [versão]  
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData % é normalmente *DriveName*: os usuários*nome de usuário*AppDataLocal.  
@@ -79,6 +76,3 @@ Outros usuários do Visual Studio podem instalar extensões que você criar usan
     3.  Excluir o arquivo. zip  
   
 3.  Reinicie o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
-
-
-

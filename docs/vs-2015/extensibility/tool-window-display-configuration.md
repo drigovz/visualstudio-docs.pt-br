@@ -1,27 +1,22 @@
 ---
 title: Configuração de exibição da janela de ferramentas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929777"
 ---
 # <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramenta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +40,9 @@ HKEY_LOCAL_MACHINE\
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
 |Nome|REG_SZ|"O nome curto aqui"|Um nome curto que descreve a janela da ferramenta. Usado apenas para referência no registro.|  
-|Float|REG_SZ|"X1, Y1, X2, Y2"|Quatro valores separados por vírgula. X1, Y1 é a coordenada do canto superior esquerdo da janela de ferramentas. X2, Y2 é a coordenada do canto inferior direito. Todos os valores estão em coordenadas da tela.|  
+|Float|REG_SZ|"X1,Y1,X2,Y2"|Quatro valores separados por vírgula. X1, Y1 é a coordenada do canto superior esquerdo da janela de ferramentas. X2, Y2 é a coordenada do canto inferior direito. Todos os valores estão em coordenadas da tela.|  
 |Estilo|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Vinculado"<br /><br /> "Com guias"<br /><br /> "AlwaysFloat"|Uma palavra-chave especificando inicial exibem o estado da janela de ferramenta.<br /><br /> "MDI" = encaixado com janela MDI.<br /><br /> "Flutuar" = flutuante.<br /><br /> "Vinculado" = vinculado a outra janela (especificada na entrada de janela).<br /><br /> "Com guias" = combinada com outra janela de ferramenta.<br /><br /> "AlwaysFloat" = não pode ser encaixada.<br /><br /> Para obter mais informações, consulte a seção comentários abaixo.|  
-|Janela|REG_SZ|*\<GUID &GT;*|O GUID de uma janela para o qual a janela de ferramentas pode ser vinculada ou com guias. O GUID pode pertencer a uma das suas próprias janelas ou uma das janelas no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
+|Janela|REG_SZ|*\<GUID>*|O GUID de uma janela para o qual a janela de ferramentas pode ser vinculada ou com guias. O GUID pode pertencer a uma das suas próprias janelas ou uma das janelas no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |{1&gt;Orientação&lt;1}|REG_SZ|"Esquerda"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Inferior"|Consulte a seção de comentários abaixo.|  
 |DontForceCreate|REG_DWORD|0 ou 1|Quando essa entrada estiver presente e seu valor não for zero, a janela é carregada, mas não imediatamente exibida.|  
   
@@ -94,7 +89,7 @@ HKEY_LOCAL_MACHINE\
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
 |(Padrão)|REG_SZ|Nenhum|Deixe em branco.|  
-|*\<GUID &GT;*|REG_DWORD ou REG_SZ|0 ou uma cadeia de caracteres descritiva.|Opcional. Nome da entrada deve ser o GUID de um comando que exigem a visibilidade. O valor contém apenas uma cadeia de caracteres informativa. Normalmente, o valor é um `reg_dword` definido como 0.|  
+|*\<GUID>*|REG_DWORD ou REG_SZ|0 ou uma cadeia de caracteres descritiva.|Opcional. Nome da entrada deve ser o GUID de um comando que exigem a visibilidade. O valor contém apenas uma cadeia de caracteres informativa. Normalmente, o valor é um `reg_dword` definido como 0.|  
   
 ### <a name="example"></a>Exemplo  
   
@@ -115,4 +110,3 @@ HKEY_LOCAL_MACHINE\
   
 ## <a name="see-also"></a>Consulte também  
  [Conceitos básicos do VSPackage](../misc/vspackage-essentials.md)
-

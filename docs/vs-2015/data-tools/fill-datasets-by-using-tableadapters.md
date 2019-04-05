@@ -1,12 +1,9 @@
 ---
 title: Preencher conjuntos de dados usando TableAdapters | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251843"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928014"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +60,7 @@ Um componente do TableAdapter preenche um dataset com os dados do banco de dados
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>Esquema de DataTable associada  
- Quando você cria um TableAdapter, você usar a consulta inicial ou procedimento armazenado para definir o esquema do TableAdapter associado à <xref:System.Data.DataTable>. Execute esta consulta inicial ou procedimento armazenado, chamando o TableAdapter `Fill` método (que preenche o TableAdapter associado do <xref:System.Data.DataTable>). Todas as alterações são feitas para a consulta do TableAdapter principal são refletidas no esquema da tabela de dados associado. Por exemplo, remover uma coluna da consulta principal também remove a coluna da tabela de dados associada. Se quaisquer consultas adicionais no TableAdapter usam instruções SQL que retornam colunas que não estão na consulta principal, o designer tentará sincronizar as alterações de coluna entre a consulta principal e as consultas adicionais. Para obter mais informações, consulte [como: editar TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Quando você cria um TableAdapter, você usar a consulta inicial ou procedimento armazenado para definir o esquema do TableAdapter associado à <xref:System.Data.DataTable>. Execute esta consulta inicial ou procedimento armazenado, chamando o TableAdapter `Fill` método (que preenche o TableAdapter associado do <xref:System.Data.DataTable>). Todas as alterações são feitas para a consulta do TableAdapter principal são refletidas no esquema da tabela de dados associado. Por exemplo, remover uma coluna da consulta principal também remove a coluna da tabela de dados associada. Se quaisquer consultas adicionais no TableAdapter usam instruções SQL que retornam colunas que não estão na consulta principal, o designer tentará sincronizar as alterações de coluna entre a consulta principal e as consultas adicionais. Para obter mais informações, confira [Como: Editar TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Comandos de atualização do TableAdapter  
  A funcionalidade de atualização de um TableAdapter é dependente de quantidade de informações está disponível na consulta principal no Assistente do TableAdapter. Por exemplo, TableAdapters configurados para buscar valores de várias tabelas (JOINs), valores escalares, exibições ou os resultados de funções de agregação não são inicialmente criados com a capacidade de enviar atualizações de volta para o banco de dados subjacente. No entanto, você pode configurar os comandos INSERT, UPDATE e DELETE manualmente na **propriedades** janela.  
@@ -113,8 +110,7 @@ Um componente do TableAdapter preenche um dataset com os dados do banco de dados
  TableAdapters oferecem suporte a tipos anuláveis `Nullable(Of T)` e `T?`. Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Para obter mais informações sobre tipos anuláveis no c#, consulte [usando tipos anuláveis](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Segurança  
- Quando você usa comandos de dados com um `CommandType` propriedade definida como <xref:System.Data.CommandType>, cuidadosamente verifique informações que são enviadas de um cliente antes de passá-la para seu banco de dados. Usuários mal-intencionados podem tentar enviar (injetar) instruções de SQL modificadas ou adicionais em um esforço para obter acesso não autorizado ou danificar o banco de dados. Antes de você transferir a entrada do usuário para um banco de dados, sempre verifique se que as informações são válidas. Uma prática recomendada é sempre usar consultas parametrizadas ou procedimentos armazenados quando possível.  
+ Quando você usa comandos de dados com um `CommandType` propriedade definida como <xref:System.Data.CommandType>, cuidadosamente verifique informações que são enviadas de um cliente antes de passá-la para seu banco de dados. Usuários maliciosos podem tentar enviar (injetar) instruções SQL modificadas ou adicionais para obter acesso não autorizado ou para danificar o banco de dados. Antes de você transferir a entrada do usuário para um banco de dados, sempre verifique se que as informações são válidas. Uma prática recomendada é sempre usar consultas parametrizadas ou procedimentos armazenados quando possível.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-

@@ -1,33 +1,28 @@
 ---
 title: Fornecer um contexto de serviço de linguagem, usando a API herdada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 322dc704524a5b0172797c9351e7beb60d778ab4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929581"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Fornecer um contexto de serviço de linguagem, usando a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Há duas opções para um serviço de linguagem fornecer o contexto de usuário usando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo: fornecer um contexto de marcador de texto, ou fornecer todo o contexto de usuário. As diferenças entre cada são descritas aqui.  
   
- Para obter mais informações sobre como fornecer contexto para um serviço de linguagem que está conectado ao seu próprio editor, consulte [como: fornecer contexto para os editores](../extensibility/how-to-provide-context-for-editors.md).  
+ Para obter mais informações sobre como fornecer contexto para um serviço de linguagem que está conectado ao seu próprio editor, consulte [como: Fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Fornecer o contexto de marcador de texto no Editor  
  Para fornecer contexto para erros do compilador indicados por marcadores de texto na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo, implemente o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interface. Nesse cenário, o serviço de linguagem fornece contexto somente quando o cursor estiver sobre um marcador de texto. Isso permite que o editor fornecer a palavra-chave na posição do cursor para o **ajuda dinâmica** janela sem atributos.  
@@ -56,4 +51,3 @@ Há duas opções para um serviço de linguagem fornecer o contexto de usuário 
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>Diretrizes de contexto para editores e Designers  
  Designers e editores devem fornecer uma palavra-chave geral para o editor ou a janela do designer. Isso é feito para que um tópico de ajuda genérico, mas apropriado, será exibido para o designer ou editor quando um usuário pressiona F1. Um editor deve, além disso, forneça a palavra-chave atual na posição do cursor ou fornecer um termo-chave com base na seleção atual. Isso é feito para garantir que um tópico da Ajuda para o texto ou um elemento de interface do usuário apontado ou selecionado exibe quando o usuário pressiona F1. Um designer fornece contexto para um item selecionado em um designer, como um botão em um formulário. Editores e designers também devem se conectar a um serviço de linguagem conforme descrito na [fundamentos do serviço de linguagem herdado](../extensibility/internals/legacy-language-service-essentials.md).
-

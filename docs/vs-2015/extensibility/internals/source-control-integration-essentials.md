@@ -1,14 +1,9 @@
 ---
 title: Fundamentos da integração do controle de origem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9893d5525bf66b167dea170c0c5fae8285aa40af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b9189b647baa29d72975f84172696ecb54cd7f87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928554"
 ---
 # <a name="source-control-integration-essentials"></a>Conceitos básicos da integração do controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51780965"
   
 1. Criar uma DLL que implementa as funções especificadas na [Plug-ins de controle de origem](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrar a DLL, tornando as entradas de registro apropriadas, conforme descrito em [como: instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Registrar a DLL, tornando as entradas de registro apropriadas, conforme descrito em [como: Instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
 3. Criar um auxiliar de interface do usuário e exibi-la quando for solicitado pelo pacote de adaptador de controle de origem (o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] componente que manipula a funcionalidade de controle do código-fonte por meio do plug-ins de controle do código-fonte).  
   
@@ -61,4 +56,3 @@ ms.locfileid: "51780965"
  [Visão geral](../../extensibility/internals/source-control-integration-overview.md)   
  [Criando um controle de fonte plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

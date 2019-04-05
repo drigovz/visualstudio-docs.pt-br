@@ -1,25 +1,22 @@
 ---
-title: 'Como: migrar uma linguagem específica de domínio para uma nova versão | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Migrar uma linguagem específica de domínio para uma nova versão | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927121"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como migrar uma linguagem específica do domínio para uma nova versão
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como: Migrar uma Linguagem Específica de Domínio para uma nova versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode migrar os projetos que definem e usam a linguagem específica de domínio para [!INCLUDE[vs2010](../includes/vs2010-md.md)] da versão do [!INCLUDE[dsl](../includes/dsl-md.md)] que foi distribuído com [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
@@ -28,7 +25,7 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
   
  Você deve executar a ferramenta de migração explicitamente: ele não seja iniciado automaticamente quando você abre uma solução em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. A ferramenta e o documento de diretrizes detalhadas podem ser encontradas no seguinte caminho:  
   
- **% Programa Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar seus projetos DSL  
  A ferramenta de migração modifica [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] arquivos de projeto (**. csproj**) e arquivos de solução (**. sln**).  
@@ -47,7 +44,7 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
   
    -   Você pode clicar duas vezes a ferramenta no Windows Explorer (ou Explorador de arquivos) ou iniciar a ferramenta de prompt de comando. A ferramenta é neste local:  
   
-        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2. Escolha uma pasta que contém as soluções e projetos que você deseja converter.  
   
@@ -81,7 +78,7 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
    2.  Clique o **transformar todos os modelos** botão no cabeçalho do Gerenciador de soluções.  
   
        > [!NOTE]
-       >  Você pode fazer essa etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       >  Você pode fazer essa etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Atualize seu código personalizado nos projetos convertidos.  
   
@@ -91,6 +88,3 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
   
 ## <a name="see-also"></a>Consulte também  
  [Novidades no SDK de Visualização e Modelagem](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-
