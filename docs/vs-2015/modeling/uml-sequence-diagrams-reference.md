@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de sequência UML: Referência | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de sequência UML: Referência de | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,15 +18,15 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797020"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922280"
 ---
-# <a name="uml-sequence-diagrams-reference"></a>Diagramas de sequência UML: referência
+# <a name="uml-sequence-diagrams-reference"></a>Diagramas de sequência UML: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No Visual Studio, uma *diagrama de sequência* mostra uma interação, que representa a sequência de mensagens entre instâncias de classes, componentes e subsistemas de atores. Tempo flui para baixo no diagrama, e mostra o fluxo de controle de um participante para outro. Use diagramas de sequência para visualizar instâncias e eventos, em vez de classes e métodos. Mais de uma instância do mesmo tipo pode aparecer no diagrama. Também pode aparecer mais de uma ocorrência da mesma mensagem.  
@@ -61,15 +58,12 @@ No Visual Studio, uma *diagrama de sequência* mostra uma interação, que repre
 |14|**Protetor de fragmento**|Pode ser usado para o estado de uma condição relevante se o fragmento ocorrerá.<br /><br /> Para definir o protetor, selecione um fragmento, em seguida, selecione o protetor e digite um valor.|  
 |**X**|**Evento de destruição**|Representa o ponto no qual o objeto é excluído ou não estarão mais acessíveis. É exibida na parte inferior de cada linha da vida.|  
 ||**Interação**|A coleção de mensagens e as linhas de vida que é exibida no diagrama de sequência. Para exibir as propriedades de uma interação, selecione-o na **Gerenciador de modelos UML**.|  
-||**Diagrama de Sequência**|O diagrama que exibe uma interação. Para exibir suas propriedades, clique em uma parte vazia do diagrama. **Observação:** os nomes do diagrama de sequência, a interação que ele exibe, e o arquivo que contém o diagrama pode todos ser diferente.|  
+||**Diagrama de Sequência**|O diagrama que exibe uma interação. Para exibir suas propriedades, clique em uma parte vazia do diagrama. **Observação:**  Os nomes de diagrama de sequência, a interação que ele exibe, e o arquivo que contém o diagrama pode todos ser diferente.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagramas de sequência de UML: Diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrama de casos de uso UML: Referência](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de componente UML: Referência](../modeling/uml-component-diagrams-reference.md)   
  [Diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)
-
-
-
