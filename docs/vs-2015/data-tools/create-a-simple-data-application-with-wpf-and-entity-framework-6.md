@@ -1,25 +1,22 @@
 ---
 title: Criar um aplicativo de dados simples com o WPF e Entity Framework 6 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922192"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000069"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e Entity Framework 6
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e o Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -30,9 +27,9 @@ Essa explicação passo a passo mostra como criar um aplicativo básico "formul�
 ## <a name="install-and-connect-to-northwind"></a>Instalar e conectar-se para a Northwind  
  Este exemplo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind. Ele deve funcionar com outros produtos de banco de dados SQL assim como se o provedor de dados ADO.NET para o produto dá suporte a Entity Framework.  
   
-1.  Se você ainda não fez isso, instale o SQL Server 2014 LocalDB Express de 32 bits do [página de download de edições do SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Se você ainda não fez isso, instale o SQL Server 2014 LocalDB Express de 32 bits do [página de download de edições do SQL Server](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
-2.  Instalar o banco de dados de exemplo Northwind, seguindo as instruções aqui: [bancos de dados de exemplo de instalar o SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+2.  Instale o banco de dados de exemplo Northwind, seguindo as instruções aqui: [Instalar bancos de dados de exemplo do SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Adicionar novas conexões](../data-tools/add-new-connections.md) da Northwind.  
   
@@ -709,4 +706,3 @@ Essa explicação passo a passo mostra como criar um aplicativo básico "formul�
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [documentação do Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)
-

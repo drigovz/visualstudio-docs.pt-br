@@ -1,14 +1,9 @@
 ---
 title: Criando pacotes de Bootstrapper | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910921"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000031"
 ---
 # <a name="creating-bootstrapper-packages"></a>Criando pacotes de bootstrapper
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ O programa de instalação é um instalador genérico que pode ser configurado p
  O bootstrapper primeiro detecta se qualquer um dos pré-requisitos já está instalado. Se os pré-requisitos não estiverem instalados, primeiro o bootstrapper mostra os contratos de licença. Em segundo lugar, depois que o usuário final aceita os contratos de licença, a instalação dos pré-requisitos começa. Caso contrário, se forem detectados todos os pré-requisitos, o bootstrapper apenas inicia o instalador do aplicativo.  
   
 ## <a name="creating-custom-packages"></a>Criando pacotes personalizados  
- É possível gerar manifestos usando o Editor de XML no Visual Studio. Para obter mais informações, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md) e [como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md). Para ver um exemplo de como criar um pacote de bootstrapper, consulte [instruções passo a passo: Criando um Bootstrapper personalizado para mostrar um Prompt de privacidade](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ É possível gerar manifestos usando o Editor de XML no Visual Studio. Para obter mais informações, confira [Como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md) e [como: Criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md). Para ver um exemplo de como criar um pacote de bootstrapper, consulte [passo a passo: Criando um Bootstrapper personalizado para mostrar uma privacidade Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Para criar um pacote de bootstrapper, é necessário fornecer o redistribuível na forma de um arquivo EXE ou MSI ao Gerador de Manifesto do Bootstrapper. Em seguida, o Gerador de Manifesto do Bootstrapper cria os seguintes arquivos:  
   
@@ -75,7 +70,7 @@ O programa de instalação é um instalador genérico que pode ser configurado p
   
   `package.xml`  
   
-  Por fim, copie os arquivos redistribuíveis para o local da pasta do bootstrapper. Para obter mais informações, consulte [como: criar um pacote de Bootstrapper localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Por fim, copie os arquivos redistribuíveis para o local da pasta do bootstrapper. Para obter mais informações, confira [Como: Criar um pacote de Bootstrapper localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -87,7 +82,7 @@ O programa de instalação é um instalador genérico que pode ser configurado p
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- Você também pode determinar o local da pasta do bootstrapper para o **caminho** valor na seguinte chave do registro:  
+ Você também pode determinar a localização da pasta do bootstrapper no valor **Path** na seguinte chave do Registro:  
   
 ```  
 HKLM\Software\Microsoft\GenericBootstrapper\11.0  
@@ -108,19 +103,19 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |Propriedade|Descrição|  
 |--------------|-----------------|  
 |ApplicationName|O nome do aplicativo.|  
-|ProcessorArchitecture|O processador e bits por palavra da plataforma de destino de um executável. Os valores incluem o seguinte:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|ProcessorArchitecture|O processador e bits por palavra da plataforma de destino de um executável. Os valores incluem o seguinte:<br /><br /> – Intel<br />– IA64<br />– AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|O número de versão para os sistemas operacionais Microsoft Windows 95, Windows 98 ou Windows ME. A sintaxe da versão é Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|O número de versão para os sistemas operacionais Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. A sintaxe da versão é Major.Minor.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|O número de versão para os sistemas operacionais Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. A sintaxe da versão é Major.Minor.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|A versão de assembly do Windows Installer (msi.dll) executado durante a instalação.|  
 |[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Essa propriedade será definida se o usuário tiver privilégios de administrador. Os valores são verdadeiro ou falso.|  
-|InstallMode|O modo de instalação indica de onde o componente precisa ser instalado. Os valores incluem o seguinte:<br /><br /> -HomeSite - pré-requisitos são instalados a partir do site do fornecedor.<br />-SpecificSite - pré-requisitos são instalados no local que você selecionar.<br />-SameSite - pré-requisitos são instalados no mesmo local que o aplicativo.|  
+|InstallMode|O modo de instalação indica de onde o componente precisa ser instalado. Os valores incluem o seguinte:<br /><br /> – HomeSite – os pré-requisitos são instalados do site do fornecedor.<br />– SpecificSite – os pré-requisitos são instalados da localização selecionada.<br />– SameSite – os pré-requisitos são instalados da mesma localização que o aplicativo.|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>Separando redistribuíveis das instalações do aplicativo  
  Você pode evitar que seus arquivos redistribuíveis sejam implantados em projetos de instalação. Para fazer isso, crie uma lista redistribuível na pasta RedistList em seu diretório NET Framework:  
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *nome da empresa*. *Nome do componente*. Redistlist. Assim, por exemplo, se o componente for chamado de Datawidgets feito por Acme, use Acme.DataWidgets.RedistList.xml. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:  
+ A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *Nome da empresa*. *Nome do componente*. Redistlist. Assim, por exemplo, se o componente for chamado de Datawidgets feito por Acme, use Acme.DataWidgets.RedistList.xml. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -130,10 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md)   
  [Referência de esquema de pacote e produto](../deployment/product-and-package-schema-reference.md)   
  [Usar o Visual Studio 2005 Bootstrapper para iniciar sua instalação](http://go.microsoft.com/fwlink/?LinkId=107537)
-
-
-

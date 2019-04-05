@@ -1,12 +1,9 @@
 ---
 title: Personalizar mapa de códigos editando os arquivos DGML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -24,13 +21,13 @@ ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
 caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e370e805df8e3a6ee253e3560738e882a247d2de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817453"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59000331"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapa de códigos editando os arquivos DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,29 +289,29 @@ Para personalizar um mapa de código, você pode editar o arquivo Directed Graph
   
     Essa expressão usa a seguinte sintaxe BNF (Backus-Naur Form):  
   
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>  
   
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>  
   
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    \<UnaryExpression >:: = "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>  
   
-    <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "ou" &#124; "e" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    \<Operador >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "ou" &#124; "e" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding >  
   
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >  
   
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    \<MethodCall >:: = \<identificador > "(" \<MethodArgs > "")""  
   
-    <PropertyGet> :: = Identificador  
+    \<PropertyGet >:: = identificador  
   
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>  
   
-    <Identifier> ::= [^. ]*  
+    \<Identificador >:: = [^. ]*  
   
-    <Literal> :: = literal de cadeia de único ou duplo  
+    \<Literal >:: = literal de cadeia de único ou duplo  
   
-    <Number> :: = cadeia de caracteres de dígitos com ponto decimal opcional  
+    \<Número >:: = cadeia de caracteres de dígitos com ponto decimal opcional  
   
     Você pode especificar vários `<Condition/>` elementos, que devem ser verdadeiros para aplicar o estilo.  
   
@@ -379,9 +376,9 @@ Para personalizar um mapa de código, você pode editar o arquivo Directed Graph
   
  Neste exemplo:  
   
-1.  Se `Coverage` for > 80, defina a propriedade `Background` como verde.  
+1.  Se `Coverage` for > 80, em seguida, defina o `Background` propriedade para verde.  
   
-2.  Além disso, se `Coverage` for > 50, defina a propriedade `Background` como um sombreamento de laranja com base no valor da propriedade `Coverage`.  
+2.  Senão se `Coverage` é > 50, em seguida, defina a `Background` propriedade como um sombreamento de laranja com base no valor da `Coverage` propriedade.  
   
 3.  Além disso, defina a propriedade `Background` como um sombreamento com base no valor da propriedade `Coverage`.  
   

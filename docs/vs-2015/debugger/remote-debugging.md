@@ -1,13 +1,8 @@
 ---
 title: Depuração remota | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,13 +18,13 @@ ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799269"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000086"
 ---
 # <a name="remote-debugging"></a>Depuração remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,7 +146,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
    Para obter uma lista dos números de porta usados por padrão, consulte [as atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
-  >  Você também pode optar por executar as ferramentas remotas no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo não há nenhuma segurança de rede. Escolha o modo sem autenticação somente se você tiver certeza de que a rede não está em risco de tráfego mal-intencionado ou hostil.
+  >  Você também pode optar por executar as ferramentas remotas no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo, não há nenhuma segurança de rede. Escolha o modo sem autenticação somente se você tiver certeza de que a rede não está em risco de tráfego mal-intencionado ou hostil.
 
 ##  <a name="bkmk_configureService"></a> (Opcional) Configurar o depurador remoto como um serviço
  Para depuração no ASP.NET e outros ambientes de servidor, você deve executar o depurador remoto como um administrador ou, se você quiser que ele sempre em execução, executar o depurador remoto como um serviço.
@@ -212,7 +207,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
   
 6. No Gerenciador de soluções, clique com botão direito a solução e escolha **Configuration Manager**.  
   
-7. Para o **Debug** configuração, selecione o **implantar** caixa de seleção.  
+7. Para a configuração de **Depuração**, selecione a caixa de seleção **Implantar**.  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
@@ -293,7 +288,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
   
  Para obter informações sobre a depuração no Azure, consulte um destes tópicos:  
   
--   [Depurando um serviço de nuvem ou máquina Virtual no Visual Studio](http://msdn.microsoft.com/library/azure/ff683670.aspx)  
+-   [Depurando um serviço de nuvem ou máquina Virtual no Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
 -   [Depuração de back-end do .NET no Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
@@ -305,6 +300,3 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
  [Atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md)   
  [Depuração Remota de ASP.NET em um computador remoto IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Erros e solução de problemas de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

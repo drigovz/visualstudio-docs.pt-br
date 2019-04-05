@@ -1,14 +1,9 @@
 ---
 title: Implantando componentes do COM o ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820285"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000084"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implantando componentes do COM com o ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Fornece um mecanismo fácil e seguro para implantar seus aplicativos .NET. No entanto, se seus aplicativos usam componentes herdados, você precisará executar etapas adicionais para implantá-los. Este tópico descreve como implantar componentes isolados e fazer referência a componentes nativos (por exemplo, do Visual Basic 6.0 ou Visual C++).  
   
- Para obter mais informações sobre como implantar componentes do COM isolado, consulte "Simplifique a implantação de aplicativo com [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] e COM sem registro" em [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Para obter mais informações sobre como implantar componentes do COM isolado, consulte "Simplifique a implantação de aplicativo com [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] e COM sem registro" em [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx).  
   
 ## <a name="registration-free-com"></a>COM sem registro  
  COM sem registro é uma tecnologia nova para implantar e ativar os componentes isolados. Ele funciona, colocando a biblioteca de tipos de todas as do componente e informações de registro que normalmente são instaladas no registro do sistema em um arquivo XML chamado um manifesto, armazenados na mesma pasta que o aplicativo.  
@@ -145,7 +140,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
   
 2. No Assistente de publicação, especifique um local no disco do computador local em que você pode acessar e examinar os arquivos publicados.  
   
-3. Clique em **concluir** para publicar o aplicativo.  
+3. Clique em **Concluir** para publicar o aplicativo.  
   
    Se você examinar os arquivos publicados, você observará que o arquivo Sysmon seja incluído. O controle é totalmente isolado para este aplicativo, o que significa que, se o computador do usuário final tiver outro aplicativo usando uma versão diferente do controle, não possam interferir com este aplicativo.  
   
@@ -171,7 +166,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
   
 - O componente gerencia um dispositivo físico ou virtual para o sistema, por exemplo, um driver de dispositivo para o spooler de impressão.  
   
-- O componente é redistribuível de acesso a dados. Aplicativos de dados geralmente requerem separado de acesso a dados redistribuível ser instalado antes de serem executados. Você não deve tentar isolar os componentes, como o controle de dados do Microsoft ADO, OLE DB Microsoft ou Microsoft Data Access Components (MDAC). Em vez disso, se seu aplicativo usa MDAC ou SQL Server Express, você deve defini-los como pré-requisitos; ver [como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- O componente é redistribuível de acesso a dados. Aplicativos de dados geralmente requerem separado de acesso a dados redistribuível ser instalado antes de serem executados. Você não deve tentar isolar os componentes, como o controle de dados do Microsoft ADO, OLE DB Microsoft ou Microsoft Data Access Components (MDAC). Em vez disso, se seu aplicativo usa MDAC ou SQL Server Express, você deve defini-los como pré-requisitos; consulte [como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   Em alguns casos, talvez seja possível para o desenvolvedor do componente de refazer o design para COM. sem registro Se isso não for possível, você pode criar e publicar aplicativos que dependem deles por meio do esquema padrão do registro usando o Bootstrapper. Para obter mais informações, consulte [criação de pacotes de Bootstrapper](../deployment/creating-bootstrapper-packages.md).  
   
@@ -181,6 +176,3 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
-
-
-

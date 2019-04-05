@@ -1,14 +1,9 @@
 ---
-title: 'CA1726: Usar termos preferenciais | Microsoft Docs'
-ms.custom: ''
+title: 'CA1726: Use termos preferenciais | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220513"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59000344"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: usar termos preferenciais
+# <a name="ca1726-use-preferred-terms"></a>CA1726: Usar termos preferenciais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1726: usar termos preferenciais](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA1726: Use termos preferenciais](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) em docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -46,28 +41,28 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1726
   
 |Termo obsoleto|Termo preferencial|  
 |-------------------|--------------------|  
-|não são|Não são|  
+|não são|AreNot|  
 |Cancelada|Cancelado|  
 |Não é possível|Não é possível|  
 |ComPlus|EnterpriseServices|  
-|Não foi possível|Não foi|  
+|Não foi possível|CouldNot|  
 |Didnt|DidNot|  
-|Doesnt|Não|  
-|Não|Não|  
+|Doesnt|DoesNot|  
+|Não|DoNot|  
 |Sinalizador ou sinalizadores|Não há nenhum termo de substituição. Não use.|  
 |não tinha|HadNot|  
 |Ainda não|HasNot|  
-|ainda não|HaveNot|  
+|Havent|HaveNot|  
 |Índices|Índices|  
-|não é|IsNot|  
-|Logon|LogOn|  
-|Logoff|Fazer LogOff|  
+|Isnt|IsNot|  
+|LogIn|LogOn|  
+|LogOut|Fazer LogOff|  
 |Shouldnt|ShouldNot|  
-|Logon|Entrar|  
-|Aprovação|SignOut|  
+|SignOn|SignIn|  
+|SignOff|SignOut|  
 |Wasnt|WasNot|  
-|não foram|Não foram|  
-|Não quer|Vai|  
+|não foram|WereNot|  
+|Wont|WillNot|  
 |Wouldnt|WouldNot|  
 |Gravável|Gravável|  
   
@@ -79,4 +74,3 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1726
   
 ## <a name="related-rules"></a>Regras relacionadas  
  [Avisos de Nomenclatura](../code-quality/naming-warnings.md)
-

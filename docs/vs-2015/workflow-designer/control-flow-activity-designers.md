@@ -1,23 +1,20 @@
 ---
 title: Designers de atividade de fluxo de controle | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303609"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000088"
 ---
 # <a name="control-flow-activity-designers"></a>Designer de atividade de fluxo de controle
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui um número o sistema forneceu as atividades que você pode usar para construir os fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para controlar o fluxo em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.  
@@ -26,7 +23,7 @@ ms.locfileid: "49303609"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Executa a atividade contida em seu corpo pelo menos uma vez, até que uma condição especificada for avaliada como **verdadeira**.  
   
- [ForEach\<T >](http://msdn.microsoft.com/en-us/a680cddd-2760-497a-b27b-c023fcbc6f33)  
+ [ForEach\<T>](foreach-t-activity-designer.md)  
  Executa a atividade contida no corpo para cada item em uma coleção especificada.  
   
  [Se](../workflow-designer/if-activity-designer.md)  
@@ -47,7 +44,7 @@ ms.locfileid: "49303609"
  [Sequência](../workflow-designer/sequence-activity-designer.md)  
  Contém uma coleção ordenada de atividades filhos que executam em ordem.  
   
- [Comutador\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
+ [Switch\<T>](switch-t-activity-designer.md)  
  Avalia uma expressão especificada e executa a atividade de uma coleção de atividades cuja chave associado corresponde ao valor obtido de avaliação.  
   
  [While](../workflow-designer/while-activity-designer.md)  

@@ -1,29 +1,24 @@
 ---
 title: 'Passo a passo: Adicionar XAML personalizado à página inicial | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58c7441a4f910a1da35bc464e12ddba3bd5583bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 193cea35fb7aa852b996aead6a26fd4e26b7b331
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802519"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000105"
 ---
-# <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Passo a passo: adicionando XAML personalizado à página inicial
+# <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Passo a passo: Adicionando um XAML personalizado à página inicial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo mostra como criar um Visual Studio iniciar página personalizada que contém um navegador da Web.  
@@ -93,9 +88,8 @@ Este passo a passo mostra como criar um Visual Studio iniciar página personaliz
 1.  Na **Ferramentas / opções / ambiente**, selecione **inicialização**. Sobre o **Personalizar página inicial** lista, selecione o arquivo. XAML e clique em **Okey**.  
   
 ## <a name="next-steps"></a>Próximas etapas  
- A página do Visual Studio iniciar agora contém uma guia que exibe uma guia de MyButton e uma guia do navegador da Web. Você pode criar páginas personalizadas Iniciar que têm outras funcionalidades usando o *de lógica* modelo para adicionar um arquivo. dll personalizado, conforme mostrado na [adicionando o controle de usuário para a página início](../extensibility/adding-user-control-to-the-start-page.md). Você pode compartilhar páginas de inicialização personalizada com outros usuários ao publicar o arquivo. VSIX resultante para o [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site da Web ou para outro site da Web ou de rede no compartilhamento. Para obter mais informações, consulte [implantação de páginas de inicialização personalizada](../extensibility/deploying-custom-start-pages.md).  
+ A página do Visual Studio iniciar agora contém uma guia que exibe uma guia de MyButton e uma guia do navegador da Web. Você pode criar páginas personalizadas Iniciar que têm outras funcionalidades usando o *de lógica* modelo para adicionar um arquivo. dll personalizado, conforme mostrado na [adicionando o controle de usuário para a página início](../extensibility/adding-user-control-to-the-start-page.md). Você pode compartilhar páginas de inicialização personalizada com outros usuários ao publicar o arquivo. VSIX resultante para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site da Web ou para outro site da Web ou de rede no compartilhamento. Para obter mais informações, consulte [implantação de páginas de inicialização personalizada](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando a página inicial](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Controles de contêiner do WPF](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
-
+ [Controles de contêiner do WPF](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)

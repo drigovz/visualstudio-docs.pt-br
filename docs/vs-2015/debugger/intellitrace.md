@@ -1,14 +1,9 @@
 ---
 title: IntelliTrace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.overview
 helpviewer_keywords:
@@ -26,13 +21,13 @@ ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 28e1a926800bcd4c63bdc83336fbba41c38579eb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737211"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000056"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
   
    Examinar o código relacionado, dados que aparecem na **Locals** janela durante eventos do depurador e informações de chamada de função  
   
-- Depurar erros que são difíceis de reproduzir ou que ocorrem na implantação  
+- Depurar erros difíceis de reproduzir ou que ocorrem na implantação  
   
   Você pode usar o IntelliTrace no Visual Studio Enterprise edition (mas não as edições Professional ou Community).  
   
@@ -53,18 +48,18 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
   
 |||  
 |-|-|  
-|**Depure meu aplicativo com o IntelliTrace:**<br /><br /> -Mostre eventos anteriores.<br />-Mostrar-me informações de chamadas com eventos passados.<br />-Salve minha sessão do IntelliTrace.<br />-Controle os dados que o IntelliTrace coleta.|-   [Passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Recursos do IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Histórico de depuração](../debugger/historical-debugging.md)|  
+|**Depure meu aplicativo com o IntelliTrace:**<br /><br /> -Mostre eventos anteriores.<br />-Mostrar-me informações de chamadas com eventos passados.<br />-Salve minha sessão do IntelliTrace.<br />-Controle os dados que o IntelliTrace coleta.|-   [Passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Recursos do IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Depuração de histórico](../debugger/historical-debugging.md)|  
 |**Coletar dados do IntelliTrace durante uma sessão de teste no Test Manager**|-   [Coletar mais dados de diagnóstico em testes manuais](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-|**Coletar dados do IntelliTrace de aplicativos implantados**|-   [Usando o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
-|**Inicie a depuração de um arquivo de log do IntelliTrace (arquivo. itrace).**|-   [Usando dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
+|**Coletar dados do IntelliTrace de aplicativos implantados**|-   [Usando o coletor IntelliTrace autônomo](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
+|**Iniciar a depuração a partir de um arquivo de log do IntelliTrace (arquivo .iTrace).**|-   [Usando os dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
-##  <a name="IntelliTraceSupport"></a> Quais aplicativos posso depurar com o IntelliTrace?  
+##  <a name="IntelliTraceSupport"></a> Que aplicativos posso depurar com o IntelliTrace?  
   
 |||  
 |-|-|  
-|**Com suporte**|– Aplicativos Visual Basic e Visual c# que usam o .NET Framework 2.0 ou versões superiores.<br />     É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br />     Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Para depurar aplicativos do Microsoft Azure com o IntelliTrace, consulte [depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).|  
+|**Com suporte**|– Aplicativos Visual Basic e Visual c# que usam o .NET Framework 2.0 ou versões superiores.<br />     É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br />     Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [passo a passo: Depurando um aplicativo do SharePoint usando o IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Para depurar aplicativos do Microsoft Azure com o IntelliTrace, consulte [depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Suporte limitado**|- F# aplicativos em uma base de avaliação<br />-Aplicativos Windows Store suportados somente para eventos|  
-|**Não tem suporte**|-C + +, outros idiomas e script<br />-Windows Services, Silverlight, Xbox ou [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplicativos|  
+|**Sem suporte**|-C + +, outros idiomas e script<br />-Windows Services, Silverlight, Xbox ou [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplicativos|  
   
 > [!NOTE]
 >  Para depurar um processo que já está sendo executado, não é possível usar o IntelliTrace. Você deverá iniciar o IntelliTrace quando o processo for iniciado.  
@@ -100,7 +95,7 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
   
 - Um bug ou uma falha ocorre em um aplicativo implantado.  
   
-   Para aplicativos baseados no Azure da Microsoft, você pode configurar a coleta de dados do IntelliTrace antes de publicar o aplicativo. Enquanto seu aplicativo é executado, o IntelliTrace salva dados em um arquivo. itrace. Ver [depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).  
+   Para aplicativos baseados no Azure da Microsoft, você pode configurar a coleta de dados do IntelliTrace antes de publicar o aplicativo. Enquanto seu aplicativo é executado, o IntelliTrace salva dados em um arquivo. itrace. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).  
   
    Para aplicativos Web em ASP.NET hospedados no IIS 7.0, 7.5 e 8.0 e aplicativos SharePoint 2010 ou SharePoint 2013, use o Agente de Monitoramento da Microsoft sozinho ou com o System Center 2012 para salvar dados do IntelliTrace em um arquivo .iTrace.  
   
@@ -109,17 +104,17 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
 ##  <a name="WhatData"></a> Que dados são coletados pelo IntelliTrace?  
  **Coletando informações de evento**  
   
- Por padrão, o IntelliTrace registra apenas eventos do IntelliTrace: eventos, exceções, eventos do .NET Framework e outros eventos do sistema que podem ajudar você com a depuração do depurador. Você pode escolher os tipos de eventos do IntelliTrace que deseja coletar, exceto para eventos do depurador e exceções, os quais são coletados sempre. Ver [configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Por padrão, o IntelliTrace registra apenas eventos do IntelliTrace: eventos, exceções, eventos do .NET Framework e outros eventos do sistema que podem ajudar você com a depuração do depurador. Você pode escolher os tipos de eventos do IntelliTrace que deseja coletar, exceto para eventos do depurador e exceções, os quais são coletados sempre. Ver [configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 - **Eventos do depurador**  
   
-   O IntelliTrace sempre registra eventos que acontecem no depurador do Visual Studio. Por exemplo, iniciar seu aplicativo é um evento do depurador. Outros eventos do depurador estão interrompendo eventos, o que fazer com que seu aplicativo para interromper a execução. Por exemplo, seu programa atinge um ponto de interrupção, atinge um tracepoint ou executa um **etapa** comando.  
+   O IntelliTrace sempre registra eventos que acontecem no depurador do Visual Studio. Por exemplo, iniciar seu aplicativo é um evento do depurador. Outros eventos do depurador estão interrompendo eventos, o que fazer com que seu aplicativo para interromper a execução. Por exemplo, seu programa atinge um ponto de interrupção, atinge um ponto de controle ou executa um comando **Etapa**.  
   
    Para ajudar no desempenho, o IntelliTrace não registra todos os valores possíveis para um evento do depurador. Em vez de isso, ele registra estes valores:  
   
-  -   Os valores na **Locals** janela. Manter o **Locals** janela aberta para consultar esses valores.  
+  -   Valores na janela **Locais**. Mantenha a janela **Locais** aberta para consultar esses valores.  
   
-  -   Os valores na **Autos** somente se de janela a **Autos** janela está aberta  
+  -   Valores na janela **Autos** somente se a janela **Autos** estiver aberta  
   
   -   Valores em DataTips que surgem quando você move o ponteiro do mouse sobre uma variável na janela de origem para ver seu valor. O IntelliTrace não coleta valores em DataTips fixados.  
   
@@ -131,7 +126,7 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
   
   -   Exceções sem tratamento  
   
-- **Eventos do .NET framework**  
+- **Eventos do .NET Framework**  
   
    Por padrão, o IntelliTrace registra os eventos mais comuns do .NET Framework. Por exemplo:  
   
@@ -139,7 +134,7 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
   
   -   Para um evento de marcar caixa de seleção, o IntelliTrace coleta o estado e o texto da caixa de seleção.  
   
-- **Eventos de aplicativo do SharePoint 2010 e SharePoint 2013**  
+- **Eventos de aplicativos SharePoint 2010 e SharePoint 2013**  
   
    Você pode registrar eventos de perfil de usuário e um subconjunto de eventos do ULS (Sistema de Registro Unificado) para os aplicativos SharePoint 2010 e 2013 que são executados fora do Visual Studio. Você pode salvar esses eventos em um arquivo de .iTrace. Requer o Visual Studio Enterprise 2015, uma versão anterior do Visual Studio Ultimate, ou [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) em execução no **rastreamento** modo.  
   
@@ -151,7 +146,7 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
   
   -   [Usando dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [Instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  -   [Passo a passo: Depurando um aplicativo do SharePoint usando o IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Coletando informações de chamada de função**  
   
@@ -168,21 +163,21 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
 > [!NOTE]
 >  O IntelliTrace coleta somente os 256 primeiros objetos em matrizes e os 256 primeiros caracteres para cadeias de caracteres.  
   
- Ver [configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Ver [configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
  **Coletando informações de módulo**  
   
- Para controlar a quantidade de informações de chamadas que o IntelliTrace coleta, especifique somente os módulos que interessem a você. Isso pode ajudar a melhorar o desempenho do seu aplicativo durante a coleta. Ver [configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Para controlar a quantidade de informações de chamadas que o IntelliTrace coleta, especifique somente os módulos que interessem a você. Isso pode ajudar a melhorar o desempenho do seu aplicativo durante a coleta. Ver [configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ##  <a name="AffectPerformance"></a> IntelliTrace faz com que velocidade meu aplicativo?  
  Por padrão, o IntelliTrace coleta dados somente para eventos do IntelliTrace selecionados. Isso pode ou não pode causar lentidão na seu aplicativo, dependendo da estrutura e organização do seu código. Por exemplo, se o IntelliTrace registra um evento muitas vezes, isso pode retardar o aplicativo. Ele também pode fazer você considerar refatorar seu aplicativo.  
   
- A coleta de informações de chamada pode significativamente mais lento seu aplicativo. Ela também pode aumentar o tamanho de qualquer arquivo de log do IntelliTrace (arquivos .iTrace) que você possa estar salvando em disco. Para minimizar esses efeitos, colete informações de chamada somente para os módulos desejados.  Para alterar o tamanho máximo dos seus arquivos. itrace, vá para **ferramentas**, **opções**, **IntelliTrace**, **avançado**. Ver [configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ A coleta de informações de chamada pode significativamente mais lento seu aplicativo. Ela também pode aumentar o tamanho de qualquer arquivo de log do IntelliTrace (arquivos .iTrace) que você possa estar salvando em disco. Para minimizar esses efeitos, colete informações de chamada somente para os módulos desejados.  Para alterar o tamanho máximo de seus arquivos de .iTrace, vá para **Ferramentas**, **Opções**, **IntelliTrace**, **Avançado**. Ver [configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Recursos do IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)  
+ [Configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
  [Incluindo dados de rastreamento de diagnóstico que sejam difíceis de reproduzir](http://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
@@ -195,8 +190,3 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
   
 ### <a name="forums"></a>Fóruns  
  [Diagnóstico do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
-
-
-
-
-

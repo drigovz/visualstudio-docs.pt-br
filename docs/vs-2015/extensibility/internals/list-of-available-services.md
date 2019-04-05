@@ -1,27 +1,22 @@
 ---
 title: Lista de serviços disponíveis | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730702"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000040"
 ---
 # <a name="list-of-available-services"></a>Lista de serviços disponíveis
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51730702"
 |Serviço|Interface|Visual Studio|Visual Studio 2005|Descrição|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Sim|Sim|Usado pelo VSPackages para obter um <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interface a partir de um controle ActiveX para facilitar as transferências de dados assíncrona.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Não|Sim|Obtém o objeto de extensibilidade de tempo de Design (DTE) usado para a automação.<br /><br /> ID DO C/C++: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Não|Sim|Obtém o objeto de extensibilidade de tempo de Design (DTE) usado para a automação.<br /><br /> C/C++ ID: SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|Sim|Sim|Implementado por um designer de formulários para exibir o manipulador de eventos padrão para um controle.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|Sim|Sim|Permite que um VSPackage acessar a interface de automação de VSPackage outro ou de um controle.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|Sim|Sim|Permite que um VSPackage adicionar ou criar uma biblioteca de tipo estendido.|  
@@ -165,6 +160,5 @@ ms.locfileid: "51730702"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Sim|Sim|Fornece acesso aos arquivos de documentação XML formatado associados com um arquivo de metadados específico.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Serviços gerenciados e COM](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [Serviços gerenciados e COM](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [Usar e fornecer serviços](../../extensibility/using-and-providing-services.md)
-

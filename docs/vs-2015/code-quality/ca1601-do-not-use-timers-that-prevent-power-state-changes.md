@@ -1,14 +1,9 @@
 ---
 title: 'CA1601: Não usar temporizadores que impeçam alterações no estado de energia | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1601
 - DoNotUseTimersThatPreventPowerStateChanges
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 27c4098412dfead4a17945b389d9a14ffddbc495
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 228c95a8f0c3e1b9b1643e529e78f52f1e059bc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58921943"
 ---
-# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: não usar temporizadores que impeçam alterações no estado de energia
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Não usar temporizadores que impedem alterações no estado de energia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +43,3 @@ ms.locfileid: "49912741"
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Essa regra deve ser suprimida somente se o temporizador de acionamento mais de uma vez por segundo é necessária e considerações de mobilidade podem ser ignoradas com segurança.
-
-
-

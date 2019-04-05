@@ -1,27 +1,22 @@
 ---
-title: 'Como: gerar um trecho XML a partir de um esquema XML | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Gerar um trecho XML a partir de um esquema XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922046"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerencia um snippet de um esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerar um snippet de XML de um esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -41,7 +36,7 @@ O editor XML tem a capacidade de gerar snippets de um esquema de linguagem de de
   
 - O cursor deve ser localizado imediatamente à direita do nome do elemento.  
   
-  O snippet gerado contém todos os atributos e elementos necessários. Se `minOccurs` é maior de um, o número mínimo necessário de instâncias desse elemento é incluído no snippet, até um máximo de 100 instâncias. Todos os valores fixos encontrados no esquema levam a valores fixos no snippet. `xsd:any` e elementos de `xsd:anyAttribute` são ignorados e resultado nas compilações adicionais de trecho.  
+  O snippet gerado contém todos os atributos e elementos necessários. Se `minOccurs` é maior de um, o número mínimo necessário de instâncias desse elemento é incluído no snippet, até um máximo de 100 instâncias. Todos os valores fixos encontrados no esquema levam a valores fixos no snippet. `xsd:any` e elementos de `xsd:anyAttribute` são ignorados e resultado nas compilações adicionais de snippet.  
   
   Os valores padrão são gerados e observados como valores editáveis. Se o esquema especifica um valor padrão, esse valor padrão é usado. Entretanto, se o valor padrão de esquema é uma cadeia de caracteres vazia, o editor gerencia os valores padrão da seguinte maneira:  
   
@@ -161,7 +156,4 @@ O editor XML tem a capacidade de gerar snippets de um esquema de linguagem de de
   
 ## <a name="see-also"></a>Consulte também  
  [Trechos de código XML](../xml-tools/xml-snippets.md)   
- [Como usar snippets XML](../xml-tools/how-to-use-xml-snippets.md)
-
-
-
+ [Como: usar snippets XML](../xml-tools/how-to-use-xml-snippets.md)

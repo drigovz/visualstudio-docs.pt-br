@@ -1,29 +1,24 @@
 ---
-title: 'Como: criar um controle de caixa de ferramentas que usa o Windows Forms | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um controle de caixa de ferramentas que usa o Windows Forms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263712"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000028"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Como: criar um controle de caixa de ferramentas que usa o Windows Forms
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Como: Criar um controle de caixa de ferramentas que usa o Windows Forms
 O modelo de controle de caixa de ferramentas do Windows Forms que está incluído na [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] permite que você crie controles de formulários do Windows que são adicionados automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar uma **caixa de ferramentas** controle que você pode distribuir a outros usuários...  
   
 > [!NOTE]
@@ -92,7 +87,7 @@ O modelo de controle de caixa de ferramentas do Windows Forms que está incluíd
   
 2.  Carregar o arquivo. VSIX para uma rede ou em um site da Web.  
   
-     Se você carregar o arquivo para o [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site da Web, outros usuários podem usar **Gerenciador de extensões** no Visual Studio para localizar o controle e instalá-lo.  
+     Se você carregar o arquivo para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site da Web, outros usuários podem usar **Gerenciador de extensões** no Visual Studio para localizar o controle e instalá-lo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)
