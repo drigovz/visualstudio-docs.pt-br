@@ -1,14 +1,9 @@
 ---
 title: Suporte para alterações de código (c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1d028c35ea5d0f00dd8206fbfe0b086c9dbed067
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c464c63f7e5059e98cb12e4dfed06c60330160b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929140"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Editar e Continuar trata a maioria dos tipos de alterações de código dentro d
   
      As instruções ativas incluem todas as instruções, em funções na pilha de chamadas, que foram chamadas para acessar a instrução atual.  
   
-     A instrução atual é marcada por um plano de fundo amarelo na janela de origem. Outras instruções ativas são marcadas por um plano de fundo sombreado e são somente leitura. Essas cores padrão podem ser alteradas na **opções** caixa de diálogo.  
+     A instrução atual é marcada por um plano de fundo amarelo na janela de origem. Outras instruções ativas são marcadas por um plano de fundo sombreado e são somente leitura. Essas cores padrão podem ser alteradas na caixa de diálogo **Opções**.  
   
 -   Alterando a assinatura de um tipo.  
   
@@ -52,7 +47,7 @@ Editar e Continuar trata a maioria dos tipos de alterações de código dentro d
 -   Adicionando `foreach`, `using`, ou `lock` em torno da instrução ativa.  
   
 ## <a name="unsafe-code"></a>Código não seguro  
- Alterações no código não seguro têm as mesmas limitações que as alterações no código seguro, com uma restrição adicional: editar e continuar não dá suporte a alterações no código não seguro que saem de um método que contém o `stackalloc` operador.  
+ As alterações no código não seguro têm as mesmas restrições que as alterações no código seguro, com uma restrição adicional: Editar e continuar não dá suporte a alterações no código não seguro que saem de um método que contém o `stackalloc` operador.  
   
 ## <a name="exceptions"></a>Exceções  
  Editar e continuar dá suporte a alterações `catch` e `finally` bloqueia, exceto que a adição de uma `catch` ou `finally` bloco em torno da instrução ativa não é permitido.  
@@ -91,8 +86,5 @@ Editar e Continuar trata a maioria dos tipos de alterações de código dentro d
 -   Depurando uma versão antiga do código depois que uma nova versão não é compilada devido a erros de compilação.  
   
 ## <a name="see-also"></a>Consulte também  
- [Editar e continuar (Visual c#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Como usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
-
-
-
+ [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [Como: Usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

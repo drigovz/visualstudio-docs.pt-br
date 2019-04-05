@@ -1,26 +1,21 @@
 ---
 title: Importações do Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926495"
 ---
 # <a name="editor-imports"></a>Importações do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,19 +44,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Para obter mais exemplos de como usar importações, consulte as instruções a seguir:  
   
- [Passo a passo: Criar um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Passo a passo: Criando um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Passo a passo: Personalizar a exibição de texto](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Passo a passo: Personalizando a exibição de texto](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Passo a passo: Realçar o texto](../extensibility/walkthrough-highlighting-text.md)  
+ [Passo a passo: Realce de texto](../extensibility/walkthrough-highlighting-text.md)  
   
- [Passo a passo: Exibir dicas de ferramenta de informação rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Passo a passo: Exibindo dicas de ferramenta de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Passo a passo: Exibir a ajuda da assinatura](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Passo a passo: Exibindo a Ajuda da assinatura](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Walkthrough: Displaying Statement Completion (Passo a passo: exibindo o preenchimento de declaração)](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Passo a passo: Exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Passo a passo: exibindo SmartTags](../misc/walkthrough-displaying-smarttags.md)  
+ [Passo a passo: Exibindo SmartTags](../misc/walkthrough-displaying-smarttags.md)  
   
 ## <a name="importing-the-service-provider"></a>Importar o provedor de serviços  
  Você também pode importar um <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (encontrado no assembly Microsoft.VisualStudio.Shell.Immutable.10.0) da mesma maneira para obter acesso aos serviços do Visual Studio:  
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Ver [instruções passo a passo: acessando o objeto DTE de uma extensão do Editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) para obter mais informações.  
+ Confira [Passo a passo: Acessando o objeto DTE de uma extensão do Editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) para obter mais informações.  
   
 ## <a name="services"></a>Serviços  
  Serviços do editor são geralmente única entidades que fornecem um serviço e são compartilhadas entre vários componentes.  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>Consulte também  
  [Serviço de linguagem e pontos de extensão do editor](../extensibility/language-service-and-editor-extension-points.md)
-

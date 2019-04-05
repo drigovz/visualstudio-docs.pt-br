@@ -1,14 +1,9 @@
 ---
-title: 'Como: criar um manifesto de produto | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um manifesto de produto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927774"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Como criar um manifesto de produto
+# <a name="how-to-create-a-product-manifest"></a>Como: Criar um manifesto de produto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para implantar o pré-requisitos para o seu aplicativo, você pode criar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único, mas um manifesto de pacote para cada localidade. O manifesto de pacote contém aspectos específicos de localização do seu pacote. Isso inclui cadeias de caracteres, os contratos de licença de usuário final e os pacotes de idiomas.  
   
- Para obter mais informações sobre manifestos de produto, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
+ Para obter mais informações sobre manifestos de produto, consulte [como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="creating-the-product-manifest"></a>Criando o manifesto do produto  
   
@@ -168,6 +163,3 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode criar um paco
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
-
-
-

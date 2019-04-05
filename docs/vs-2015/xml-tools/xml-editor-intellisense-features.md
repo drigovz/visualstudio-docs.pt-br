@@ -1,27 +1,22 @@
 ---
 title: Recursos de IntelliSense do Editor de XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830737"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929653"
 ---
-# <a name="xml-editor-intellisense-features"></a>Funcionalidades do IntelliSense o editor XML
+# <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +46,7 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
   
 - Nomes de parâmetro para um modelo chamado determinado.  
   
-  Para obter mais informações, consulte [instruções passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.  
+  Para obter mais informações, confira [Passo a passo: Usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.  
   
 ## <a name="auto-completion"></a>Preenchimento automático  
  O editor XML também facilita editando XML preenchendo na sintaxe XML necessário para você. Por exemplo, se você digitar a seguinte marcação inicial:  
@@ -128,6 +123,3 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
  [Editor de XML](../xml-tools/xml-editor.md)   
  [Usando o IntelliSense](../ide/using-intellisense.md)   
  [Passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
-
-
-

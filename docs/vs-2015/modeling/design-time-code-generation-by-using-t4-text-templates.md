@@ -1,12 +1,9 @@
 ---
 title: Geração de código de tempo de design usando modelos de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,15 +16,15 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925766"
 ---
-# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código no tempo de design usando modelos de texto T4
+# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código na hora de design usando modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Modelos de texto T4 em tempo de design permitem que você gere código de programa e outros arquivos no seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. Normalmente, você escreve os modelos para que eles variem o código que geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre os requisitos do seu aplicativo.  
@@ -128,7 +125,7 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
   
    Observe que as instruções são incluídas em `<#...#>` e expressões individuais em `<#=...#>`. Para obter mais informações, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).  
   
-   Se você escrever o código de geração no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], a diretiva `template` deve conter `language="VB"`. O padrão é `"C#"`.  
+   Se você escrever o código de geração no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], a diretiva `template` deve conter `language="VB"`. `"C#"` é o padrão.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Depurando um modelo de texto T4 em tempo de design  
  Para depurar um modelo de texto:  
@@ -365,7 +362,7 @@ Warning("A warning message");
   
 ## <a name="next-steps"></a>Próximas etapas  
   
-|Próxima etapa|Tópico|  
+|Próximas etapas|Tópico|  
 |---------------|-----------|  
 |Escreva e depure um modelo de texto mais avançado, com código que usa funções auxiliares, arquivos e dados externos incluídos.|[Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)|  
 |Gere documentos a partir de modelos em tempo de execução.|[Geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>Consulte também  
  [Diretrizes para escrever modelos de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

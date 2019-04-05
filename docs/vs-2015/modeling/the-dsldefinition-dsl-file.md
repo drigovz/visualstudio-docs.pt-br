@@ -1,25 +1,22 @@
 ---
 title: O arquivo Dsldefinition. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929451"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>O arquivo DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +87,7 @@ Este tópico descreve a estrutura do arquivo Dsldefinition DSL no projeto Dsl de
   
  O sistema de moniker requer que irmãos na árvore XML tenham nomes distintos. Por esse motivo, ocorrerão erros de validação se você tentar salvar uma definição de linguagem específica do domínio que tenha, por exemplo, duas classes com o mesmo nome. Você deve sempre corrigir tais erros de nome duplicado antes de salvar o arquivo DslDefinition.dsl para que possa recarregá-lo corretamente mais tarde.  
   
- Cada tipo tem seu próprio tipo de moniker: DomainClassMoniker, DomainRelationshipMoniker etc.  
+ Cada tipo tem seu próprio tipo de identificador de origem: DomainClassMoniker, DomainRelationshipMoniker e assim por diante.  
   
 ## <a name="types"></a>Tipos  
  A seção Tipos especifica todos os tipos que o arquivo DslDefinition.dsl contém como tipos de propriedades. Esses tipos são de dois tipos: tipos externos, tais como System.String, e tipos enumerados.  
@@ -198,7 +195,7 @@ Este tópico descreve a estrutura do arquivo Dsldefinition DSL no projeto Dsl de
   
 -   **IsUIReadOnly**. Este atributo determina se o usuário pode alterar a propriedade na **propriedades** janela ou por meio de um decorador no qual a propriedade é apresentada.  
   
--   **Tipo**. Você pode configurar este atributo como Normal, Calculado ou CustomStorage. Se você configurar este atributo como Calculado, deverá fornecer um código personalizado que determina o valor e a propriedade será somente leitura. Se você configurar esse atributo como CustomStorage, deverá fornecer o código que obtém e configura valores.  
+-   **Kind**. Você pode configurar este atributo como Normal, Calculado ou CustomStorage. Se você configurar este atributo como Calculado, deverá fornecer um código personalizado que determina o valor e a propriedade será somente leitura. Se você configurar esse atributo como CustomStorage, deverá fornecer o código que obtém e configura valores.  
   
 -   **IsElementName**. Se esse atributo estiver configurado como true, seu valor será configurado automaticamente como um valor exclusivo quando uma instância da classe pai for criada. Este atributo pode ser configurado como true para somente uma propriedade em cada classe, que deve ter um tipo de cadeia de caracteres. No exemplo de Diagrama de Componente, a propriedade `Name` em `NamedElement` possui o `IsElementName` configurado como true. Sempre que um usuário cria um elemento `Component` (que herda do `NamedElement`), o nome é automaticamente inicializado para algo como "Component6."  
   
@@ -214,7 +211,7 @@ Este tópico descreve a estrutura do arquivo Dsldefinition DSL no projeto Dsl de
 ### <a name="source-and-target-roles"></a>Funções de origem e de destino  
  Todo relacionamento contém funções de origem e de destino que possuem os seguintes atributos:  
   
--   O atributo `RolePlayer` faz referências à classe de domínio das instâncias vinculadas: OutPort para origem, InPort para destino.  
+-   O `RolePlayer` atributo faz referência à classe de domínio das instâncias vinculadas: OutPort para origem, InPort para destino.  
   
 -   O atributo `Multiplicity` possui quatro valores possíveis (ZeroMany, ZeroOne, One e OneMany). Este atributo se refere ao número de links desta relação que pode ser associado a um usuário.  
   
@@ -281,7 +278,7 @@ Este tópico descreve a estrutura do arquivo Dsldefinition DSL no projeto Dsl de
  Ao escrever em C# em relação a esse modelo, você pode ir em um link em uma única etapa, usando a propriedade que a relação gera em cada uma das classes relacionada a ela:  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  No entanto, você deve executar ambos os saltos explicitamente na Sintaxe de Caminho. Em função desse requisito, você pode acessar o link intermediário com mais facilidade. O seguinte código completa o salto do link para o Componente:  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Os mapas do conector também podem conter mapas do decorador.  
   
 ## <a name="see-also"></a>Consulte também  
- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

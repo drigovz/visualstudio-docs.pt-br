@@ -1,27 +1,22 @@
 ---
 title: Histórico de Pixel de gráficos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 20b33c987cf7e2b1ab57160b4f4917246d9030b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e1df80c41c71b02b8dfc8d99553e2d5b22afdd8a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733158"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58999861"
 ---
 # <a name="graphics-pixel-history"></a>Histórico de pixel gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ A janela de histórico de Pixel de gráficos no analisador de gráficos do Visua
 ## <a name="understanding-the-pixel-history-window"></a>Noções básicas sobre a janela de histórico de Pixel  
  Usando o histórico de Pixel, você pode analisar como um pixel específico do destino de renderização é afetado pelos eventos do Direct3D durante um intervalo. Você pode identificar um problema de processamento de um evento específico do Direct3D, mesmo quando eventos subsequentes — ou primitivas subsequentes no mesmo evento — continuam a alterar o valor de cor final do pixel. Por exemplo, um pixel pode ser processado incorretamente e obscurecido por outro pixel semitransparente, para que as cores sejam combinadas no framebuffer. Esse tipo de problema seria difícil de diagnosticar se você tivesse apenas o conteúdo final do destino da renderização para orientá-lo.  
   
- A janela de histórico de Pixel exibe o histórico completo de um pixel ao longo do quadro selecionado. O **Buffer de quadro Final** na parte superior da janela exibe a cor que é escrita no framebuffer no final do quadro, juntamente com informações adicionais sobre o pixel, como o quadro que eles vêm e sua tela coordenadas. Essa área também contém o **processar Alpha** caixa de seleção. Quando essa caixa de seleção é selecionada, o **Buffer de quadro Final** cor e valores de cor intermediários são exibidos com transparência sobre um padrão quadriculado. Se a caixa de seleção estiver desmarcada, o canal alfa dos valores de cor será ignorado.  
+ A janela de histórico de Pixel exibe o histórico completo de um pixel ao longo do quadro selecionado. O **Buffer de Quadro Final** na parte superior da janela exibe a cor escrita no framebuffer no final do quadro, além de informações adicionais sobre o pixel, como o seu quadro de origem e coordenada da tela. Essa área também contém a caixa de seleção **Renderizar Alfa**. Quando a caixa de seleção estiver marcada, a cor do **Buffer de Quadro Final** e os valores de cor intermediários são exibidos com transparência sobre um padrão quadriculado. Se a caixa de seleção estiver desmarcada, o canal alfa dos valores de cor será ignorado.  
   
- A parte inferior da janela exibe os eventos que possam afetar a cor do pixel, juntamente com o **inicial** e **Final** pseudo-eventos que representam os valores de cor inicial e final do o pixel no framebuffer. O valor de cor inicial é determinado pelo primeiro evento que alterou a cor do pixel (geralmente um evento `Clear`). Um pixel sempre tem esses dois pseudo-eventos no seu histórico, mesmo quando outros eventos não o afetaram. Quando outros eventos podem afetar o pixel, eles são exibidos entre o **inicial** e **Final** eventos. Os eventos podem ser expandidos para mostrar seus detalhes. No caso de eventos simples, como aqueles que limpam um destino de renderização, o efeito do evento é um valor de cor. Eventos mais complexos, como chamadas de desenho geram uma ou mais primitivas que podem colaborar com a cor do pixel.  
+ A parte inferior da janela exibe os eventos que podem afetar a cor do pixel, com os pseudoeventos **Inicial** e **Final** que representam os valores de cor inicial e final do pixel no framebuffer. O valor de cor inicial é determinado pelo primeiro evento que alterou a cor do pixel (geralmente um evento `Clear`). Um pixel sempre tem esses dois pseudo-eventos no seu histórico, mesmo quando outros eventos não o afetaram. Quando outros eventos podem afetar o pixel, eles são exibidos entre os eventos **Inicial** e **Final**. Os eventos podem ser expandidos para mostrar seus detalhes. No caso de eventos simples, como aqueles que limpam um destino de renderização, o efeito do evento é um valor de cor. Eventos mais complexos, como chamadas de desenho geram uma ou mais primitivas que podem colaborar com a cor do pixel.  
   
- As primitivas que foram desenhadas pelo evento são identificadas por seu tipo e índice de primitiva, com a contagem total de primitiva do objeto. Por exemplo, um identificador, como **triângulo (1456) de (6214)** significa que a primitiva corresponde ao triângulo 1456 º em um objeto que é composto de 6214 triângulos. À esquerda de cada identificador de primitiva há um ícone que resume o efeito que a primitiva tinha sobre o pixel. As primitivas que afetam a cor do pixel são representadas por um retângulo arredondado preenchido com a cor resultante. As primitivas que são excluídas devido a algum impacto sobre a cor do pixel são representadas por ícones que indicam o motivo pelo qual o pixel foi excluído. Esses ícones são descritos na seção [exclusão da primitiva](../debugger/graphics-pixel-history.md#exclusion) mais adiante neste artigo.  
+ As primitivas que foram desenhadas pelo evento são identificadas por seu tipo e índice de primitiva, com a contagem total de primitiva do objeto. Por exemplo, um identificador como **Triângulo (1456) de (6214)** significa que a primitiva corresponde ao triângulo 1456º em um objeto que é composto de 6214 triângulos. À esquerda de cada identificador de primitiva há um ícone que resume o efeito que a primitiva tinha sobre o pixel. As primitivas que afetam a cor do pixel são representadas por um retângulo arredondado preenchido com a cor resultante. As primitivas que são excluídas devido a algum impacto sobre a cor do pixel são representadas por ícones que indicam o motivo pelo qual o pixel foi excluído. Esses ícones são descritos na seção [exclusão da primitiva](../debugger/graphics-pixel-history.md#exclusion) mais adiante neste artigo.  
   
  É possível expandir cada primitiva para examinar como a saída do sombreador do pixel foi mesclada com a cor do pixel existente para produzir a cor resultante. A partir disso você também pode examinar ou depurar o código de sombreador de pixel que está associado à primitiva e ampliar o nó do sombreador de vértice para examinar a entrada do sombreador de vértice.  
   
@@ -80,11 +75,8 @@ A janela de histórico de Pixel de gráficos no analisador de gráficos do Visua
      Para depurar a invocação do sombreador de vértice de um vértice específico, expanda o link de título VertexShader e localize o vértice que você está interessado, escolha **iniciar depuração** ao lado dele.  
   
 ### <a name="links-to-graphics-objects"></a>Links a objetos de gráficos  
- Para entender os eventos de gráficos no histórico de pixel, talvez você precise obter informações sobre o estado do dispositivo no momento do evento ou sobre os objetos do Direct3D referenciados pelo evento. Para cada evento no histórico de pixel, o **histórico de Pixel de gráficos** fornece links para o dispositivo atual estados e para objetos relacionados.  
+ Para entender os eventos de gráficos no histórico de pixel, talvez você precise obter informações sobre o estado do dispositivo no momento do evento ou sobre os objetos do Direct3D referenciados pelo evento. Para cada evento no histórico de pixel, o **Histórico de Pixel de Gráficos** fornece links para o estado do dispositivo atual e para objetos relacionados.  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Objetos ausentes devido ao estado do dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
- [Passo a passo: depurando erros de renderização devido ao sombreamento](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)
-
-
-
+ [Passo a passo: Como depurar erros de renderização devido ao sombreamento](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

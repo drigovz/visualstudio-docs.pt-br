@@ -1,12 +1,9 @@
 ---
 title: Visão geral dos aplicativos de dados de N camadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929531"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ N-camadas * aplicativos de dados são aplicativos de dados que são separados em
   
  O Visual Studio contém vários recursos para ajudar os desenvolvedores a criar aplicativos de n camadas:  
   
--   O [criando e editando conjuntos de dados tipados](../data-tools/creating-and-editing-typed-datasets.md) fornece um **projeto DataSet** propriedade que permite que você separe o conjunto de dados (camada de entidade de dados) e `TableAdapter`s (camada de acesso a dados) em discretos projetos.  
+-   O Designer de conjunto de dados fornece um **projeto DataSet** propriedade que permite que você separe o conjunto de dados (camada de entidade de dados) e `TableAdapter`s (camada de acesso a dados) em projetos discretos.  
   
 -   O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornece configurações para gerar as classes DataContext e dados em namespaces separados. Isso permite uma separação lógica do acesso a dados e camadas de entidade de dados.  
   
@@ -89,7 +86,7 @@ Camada de dados
   
  [Separar conjuntos de dados e TableAdapters em diferentes projetos](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
- [Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [Passo a passo: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
  [Passo a passo: Adicionando validação a um aplicativo de dados de N camadas](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
@@ -101,4 +98,3 @@ Camada de dados
  [Atualização hierárquica](../data-tools/hierarchical-update.md)   
  [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
  [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

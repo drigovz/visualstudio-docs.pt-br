@@ -1,25 +1,22 @@
 ---
 title: Definir restrições de validação para modelos UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926565"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restrições de validação para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -190,7 +187,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciado.  
   
-     **Solução de problemas**: se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado:  
+     **Solução de problemas**: Se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado:  
   
     -   Se você tiver mais de um projeto, certifique-se de que o projeto do VSIX está definido como o projeto de inicialização da solução.  
   
@@ -212,7 +209,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 6.  Clique duas vezes no relatório de erros. Se os elementos citados no relatório são visíveis na tela, eles serão realçados.  
   
-     **Solução de problemas**: se o **Validate** comando não aparecer no menu, verifique se:  
+     **Solução de problemas**: Se o **validar** comando não aparecer no menu, verifique se:  
   
     -   O projeto de validação está listado como um componente MEF na **ativos** guia **source.extensions.manifest** no projeto VSIX.  
   
@@ -397,7 +394,7 @@ context.LogError(... , usecase);
   
    Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
   
-   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="Example"></a> Exemplo  
  Este exemplo localiza loops na relação de dependência entre elementos.  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>Consulte também  
  [Definir e instalar uma extensão de modelagem](../modeling/define-and-install-a-modeling-extension.md)   
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Adição de itens para a adicionar novo Item caixas de diálogo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778547"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58999902"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Adicionando itens às caixas de diálogo Adicionar Novo Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,17 +29,17 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
   
  O primeiro GUID é o CLSID para projetos desse tipo; o segundo GUID indica o tipo de projeto registrados para os modelos de adicionar itens.  
   
- \\{C061DB26-5833-11D2-96F5-000000000000} \AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000} \1  
+ \\{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
   
  @="#6"  
   
  "TemplatesDir"="\<caminho de instalação do SDK do Visual Studio\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
   
- "SortPriority" = dword:00000064  
+ "SortPriority"=dword:00000064  
   
 |Nome|Tipo|Dados (de arquivo. rgs)|Descrição|  
 |----------|----------|-----------------------------|-----------------|  
-|@ (Padrão)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|ID do recurso **Adicionar Item** modelos.|  
+|@ (Padrão)|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY%|ID do recurso **Adicionar Item** modelos.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Caminho dos itens de projeto exibido na caixa de diálogo para o **Adicionar Novo Item** assistente.|  
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Determina a ordem de classificação no nó de árvore de arquivos exibidos na **Adicionar Novo Item** caixa de diálogo.|  
   
@@ -89,4 +84,3 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
  [Adicionando o projeto e modelos de Item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Descrição do diretório de modelo (. Arquivos de Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
  [Arquivo do assistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

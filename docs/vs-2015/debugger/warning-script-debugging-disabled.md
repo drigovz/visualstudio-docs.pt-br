@@ -1,14 +1,9 @@
 ---
-title: 'Aviso: Depuração de Script desabilitada | Microsoft Docs'
-ms.custom: ''
+title: 'Aviso: Depuração de script desabilitada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 505f93056de1d5212856d32152a91a26d5f2a250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926474"
 ---
-# <a name="warning-script-debugging-disabled"></a>Aviso: depuração de script desabilitada
+# <a name="warning-script-debugging-disabled"></a>Aviso: Depuração de script desabilitada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A depuração de scripts está atualmente desabilitada no Internet Explorer  
@@ -37,13 +32,13 @@ A depuração de scripts está atualmente desabilitada no Internet Explorer
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Para habilitar a depuração de scripts no Internet Explorer  
   
-1.  No Internet Explorer **ferramentas** menu, escolha **opções da Internet**.  
+1.  No menu do Internet Explorer **Ferramentas**, escolha **Opções da Internet**.  
   
 2.  Na caixa de diálogo **Opções da Internet** , clique na guia **Avançado** .  
   
-3.  Sobre o **avançado** guia, examine o **configurações** caixa, **navegação** categoria.  
+3.  Na guia **Avançado**, examine a caixa **Configurações**, categoria **Navegação**.  
   
-4.  Desmarque **Desabilitar depuração de scripts (Internet Explorer)**.  
+4.  Limpe **Desabilitar depuração de scripts (Internet Explorer)**.  
   
 5.  Clique em **OK**.  
   
@@ -52,7 +47,4 @@ A depuração de scripts está atualmente desabilitada no Internet Explorer
      As novas configurações serão aplicadas.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como anexar ao script](../debugger/how-to-attach-to-script.md)
-
-
-
+ [Como: Anexar ao script](../debugger/how-to-attach-to-script.md)
