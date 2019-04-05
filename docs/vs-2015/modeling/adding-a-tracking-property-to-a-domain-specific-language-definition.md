@@ -1,12 +1,9 @@
 ---
 title: Adicionar uma propriedade de acompanhamento a uma definição de linguagem específica do domínio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
@@ -15,13 +12,13 @@ ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 164586555c9027481b157f1232ce3d41e0fe40b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894372"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928407"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionando uma propriedade de acompanhamento a uma definição de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
   
  Por exemplo, nas ferramentas de linguagem específica do domínio (ferramentas DSL), o nome de exibição, a propriedade de uma classe de domínio tem um valor padrão que é calculado usando o nome da classe de domínio, mas um usuário pode alterar o valor em tempo de design ou redefini-lo para o valor calculado.  
   
- Este passo a passo, você criará uma linguagem específica de domínio (DSL) que tem uma propriedade que tem um valor padrão com base na propriedade de Namespace padrão do modelo de controle de Namespace. Para obter mais informações sobre propriedades de acompanhamento, consulte [definindo propriedades de controle](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ Este passo a passo, você criará uma linguagem específica de domínio (DSL) que tem uma propriedade que tem um valor padrão com base na propriedade de Namespace padrão do modelo de controle de Namespace. Para obter mais informações sobre propriedades de acompanhamento, consulte [definindo propriedades de controle](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - O suporte de ferramentas DSL descritores de propriedade de controle. No entanto, o designer DSL não pode ser usado para adicionar uma propriedade de acompanhamento para um idioma. Portanto, você deve adicionar código personalizado para definir e implementar a propriedade de controle.  
   
@@ -725,7 +722,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
   
 #### <a name="to-exercise-the-language"></a>Para exercitar o idioma  
   
-1.  Sobre o **construir** menu, clique em **recompilar solução**.  
+1.  No menu **Compilar**, clique em **Recompilar Solução**.  
   
 2.  No menu **Depuração**, clique em **Iniciar Depuração**.  
   
@@ -766,8 +763,5 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)   
- [Como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md)   
- [Passo a passo: personalizando a definição de linguagem específica de domínio](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)
-
-
-
+ [Como: Criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+ [Passo a passo: Personalizando a definição de linguagem específica do domínio](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

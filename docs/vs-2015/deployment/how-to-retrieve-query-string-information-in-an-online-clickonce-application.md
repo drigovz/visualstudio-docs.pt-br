@@ -1,14 +1,9 @@
 ---
-title: 'Como: recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce Online | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce Online | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278922"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929159"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um ponto de interrogação (?) que contém informações arbitrárias no formulário *nome = valor*. Suponha que você tenha um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo denominado `WindowsApp1` que você hospede em `servername`, e você deseja passar um valor para a variável `username` quando o aplicativo é iniciado. A URL pode parecer com o seguinte:  
@@ -47,7 +42,7 @@ O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um pon
 > [!NOTE]
 >  Antes de tomar uma decisão para habilitar esse recurso, consulte a seção "Segurança" mais adiante neste tópico.  
   
- Para obter informações sobre como criar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação usando Mage.exe ou MageUI.exe, consulte [passo a passo: Implantando um aplicativo ClickOnce manualmente](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Para obter informações sobre como criar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação usando Mage.exe ou MageUI.exe, consulte [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  A partir do .NET Framework 3.5 SP1, é possível passar argumentos de linha de comando para um offline [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo. Se você deseja fornecer argumentos para o aplicativo, você pode passar parâmetros para o arquivo de atalho com o. Extensão APPREF-MS.  
@@ -88,6 +83,3 @@ O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um pon
   
 ## <a name="see-also"></a>Consulte também  
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
-
-
-

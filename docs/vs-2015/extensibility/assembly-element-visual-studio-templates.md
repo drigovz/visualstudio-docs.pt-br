@@ -1,14 +1,9 @@
 ---
 title: Elemento Assembly (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -17,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40bb0b99bfe22c7842296c2fbaa2b868ca1ef259
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e3dfc502157b2d0016f1a0fd9a12dc3905f623c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928856"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento de assembly (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica informações sobre um assembly, que usa o modelo para adicionar uma referência de assembly para projetos.  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Referências >  
  \<Referência >  
  \<Assembly >  
@@ -105,4 +100,3 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-

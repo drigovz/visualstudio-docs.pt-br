@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Depurando um aplicativo multithread | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798619"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929510"
 ---
-# <a name="walkthrough-debugging-a-multithreaded-application"></a>Instruções passo a passo: depurando um aplicativo multithread
+# <a name="walkthrough-debugging-a-multithreaded-application"></a>Passo a passo: Depurando um aplicativo multithread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Fornece um melhor **Threads** janela e outro usuário aperfeiçoamentos de interface para tornar mais fácil de depurar aplicativos multi-threaded. Este passo a passo só levará alguns minutos e o ajudará a se familiarizar com os recursos da nova interface para depurar aplicativos de vários threads.  
@@ -54,7 +49,7 @@ ms.locfileid: "51798619"
   
 6.  Exclua o código que aparece no arquivo de origem e substitua-o com o código de exemplo que aparece na seção "Criando um Thread" do tópico [criando Threads e passando dados na hora de início](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
-7.  Sobre o **arquivo** menu, clique em **Salvar tudo**.  
+7.  No menu **Arquivo**, clique em **Salvar tudo**.  
   
 #### <a name="to-begin-the-walkthrough"></a>Para iniciar o passo a passo  
   
@@ -129,7 +124,7 @@ Thread::Sleep(3000);
 2.  Vá para o **local de depuração** barra de ferramentas e clique no **Thread** lista.  
   
     > [!NOTE]
-    >  Você pode reconhecer essa barra de ferramentas por três listas importantes: **processo**, **Thread**, e **quadro de pilha**.  
+    >  Você pode reconhecer essa barra de ferramentas por três listas importantes: **Processo**, **Thread**, e **quadro de pilha**.  
   
 3.  Observe quantos threads aparecem na lista.  
   
@@ -143,7 +138,7 @@ Thread::Sleep(3000);
   
 7.  Passe o ponteiro sobre o ícone do sinalizador.  
   
-     Um pop-up será exibido. Este Popup informa em qual modo o **Thread** lista está na: **Mostrar somente Threads sinalizados**.  
+     Um pop-up será exibido. Este Popup informa em qual modo o **Thread** lista esteja em: **Mostrar somente Threads sinalizados**.  
   
 8.  Clique no botão para voltar ao sinalizador **Mostrar todos os Threads** modo.  
   
@@ -151,7 +146,7 @@ Thread::Sleep(3000);
   
 10. Clique no botão para voltar ao sinalizador **Mostrar somente Threads sinalizados**.  
   
-11. Sobre o **Debug** , aponte para **Windows** e, em seguida, clique em **Threads**.  
+11. No menu **Depurar**, aponte para **Janelas** e, em seguida, clique em **Threads**.  
   
      O **Threads** janela é exibida. Um thread tem um ícone de sinalizador destacado anexado.  
   
@@ -245,7 +240,7 @@ Thread::Sleep(3000);
   
      Agora você já viu três maneiras de alterar o thread ativo: usando o **Threads** janela, o **Thread** caixa a **local de depuração** barra de ferramentas e o indicador de thread no janela de origem.  
   
-     Com o indicador de thread, você pode alternar somente para threads que pararam nesse local específico. Usando o **Threads** janela e **local de depuração** barra de ferramentas, você pode alternar para qualquer thread.  
+     Com o indicador de thread, você pode alternar somente para threads que pararam nesse local específico. Ao usar a janela **Threads** e a barra de ferramentas **Localização de Depuração**, você pode alternar para qualquer thread.  
   
 ## <a name="freezing-and-thawing-thread-execution"></a>Congelando e descongelando a execução de thread  
   
@@ -262,8 +257,5 @@ Thread::Sleep(3000);
      A coluna thread ativo e o **Suspend** alteração de coluna.  
   
 ## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-
-
-
+ [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Como: Mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)

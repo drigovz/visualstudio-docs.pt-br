@@ -1,14 +1,9 @@
 ---
 title: Desenvolver um serviço de linguagem herdado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
 - vs.vsip.LangServWiz.welcome
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 801a349b588a1dd7612b573fcc97b4b344a69452
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a4477249dfad57bb75a83b40d6c3b1a4343a23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746792"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929207"
 ---
 # <a name="developing-a-legacy-language-service"></a>Desenvolvendo um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,9 +62,8 @@ Links essas seção para tópicos que ajudam você a criar um serviço de lingua
  [Informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Descreve como fornecer dicas de método para métodos e funções sobrecarregadas.  
   
- [Como fornecer suporte a texto oculto em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Como: Fornecer suporte a texto oculto em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Explica a finalidade de uma região de texto oculto e fornece instruções sobre como implementar uma região de texto oculto.  
   
- [Como fornecer suporte estendido à estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Como: Fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Explica as duas opções que estendem o suporte de estrutura de tópicos para seu idioma além do suporte a *recolher para definições de* comando.
-

@@ -1,25 +1,22 @@
 ---
 title: Modelar seu aplicativo&#39;arquitetura s | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929447"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar seu aplicativo&#39;arquitetura s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
   Esses pontos são elaborados no restante desta seção.  
   
 ### <a name="components"></a>Componentes  
- Os modos de exibição centrais de um modelo de arquitetura são os diagramas de componente que mostram as partes principais do sistema e como eles dependem uma da outra. Para obter mais informações sobre diagramas de componente, consulte [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md).  
+ Os modos de exibição centrais de um modelo de arquitetura são os diagramas de componente que mostram as partes principais do sistema e como eles dependem uma da outra. Para obter mais informações sobre diagramas de componente, consulte [diagramas de componente UML: Referência](../modeling/uml-component-diagrams-reference.md).  
   
  ![Diagrama de componente UML mostrando partes](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
   
@@ -137,7 +134,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
   
   Você pode mostrar as dependências diretamente entre os componentes, ou você pode mostrar as dependências entre necessárias e interfaces que estão anexados aos componentes fornecidas. Usando interfaces, você pode definir as operações que são usadas em cada dependência. Normalmente, as dependências são mostradas entre os componentes quando os diagramas são desenhados primeiro e, em seguida, substituídos por dependências entre as interfaces conforme são adicionadas mais informações. Ambas as versões são descrições corretas do software, mas a versão com interfaces fornece mais detalhes do que a versão anterior.  
   
-  Gerenciamento de dependências é mais importante para a produção de software fácil de manter. Os diagramas de componente devem refletir todas as dependências em seu código. Se o código já existir, certifique-se de que todas as dependências são mostradas nos diagramas. Se o código está sendo desenvolvido, certifique-se de que ele não inclui as dependências que não sejam planejadas no diagrama de componente. Para ajudá-lo a descobrir dependências no código, é possível gerar diagramas de camada. Para ajudar a garantir que suas restrições de dependência planejadas sejam atendidas, você pode validar o código em diagramas de camada. Para obter mais informações, consulte [diagramas de camada: referência](../modeling/layer-diagrams-reference.md).  
+  Gerenciamento de dependências é mais importante para a produção de software fácil de manter. Os diagramas de componente devem refletir todas as dependências em seu código. Se o código já existir, certifique-se de que todas as dependências são mostradas nos diagramas. Se o código está sendo desenvolvido, certifique-se de que ele não inclui as dependências que não sejam planejadas no diagrama de componente. Para ajudá-lo a descobrir dependências no código, é possível gerar diagramas de camada. Para ajudar a garantir que suas restrições de dependência planejadas sejam atendidas, você pode validar o código em diagramas de camada. Para obter mais informações, consulte [diagramas de camada: Referência](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Interfaces  
  Colocando as interfaces em seus componentes, você pode separar e nomear os principais grupos de operações que são fornecidos por cada componente. Por exemplo, os componentes em um sistema de vendas baseado na web podem ter uma interface por meio do qual os clientes compram produtos, uma interface por meio dos quais fornecedores seus catálogos de atualização e uma terceira interface por meio do qual o sistema é gerenciado.  
@@ -161,7 +158,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 ### <a name="decomposing-a-component-into-parts"></a>Decomposição de um componente em partes  
  Você pode aplicar o procedimento descrito nas seções anteriores para cada componente.  
   
- Dentro de cada componente, você pode mostrar seus subcomponentes como partes. Uma parte é efetivamente um atributo do componente pai, que é um tipo de classe. Cada parte tem seu próprio tipo, que pode ser um componente. Você pode colocar esse componente em um diagrama e mostrar suas partes. Para obter mais informações, consulte [diagramas de componente UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md).  
+ Dentro de cada componente, você pode mostrar seus subcomponentes como partes. Uma parte é efetivamente um atributo do componente pai, que é um tipo de classe. Cada parte tem seu próprio tipo, que pode ser um componente. Você pode colocar esse componente em um diagrama e mostrar suas partes. Para obter mais informações, consulte [diagramas de componente UML: Diretrizes de](../modeling/uml-component-diagrams-guidelines.md).  
   
  É útil aplicar essa técnica para todo o sistema. Desenhá-lo como um único componente e mostrar seus principais componentes como partes. Isso ajuda você a identificar claramente as interfaces do seu sistema com o mundo externo.  
   
@@ -199,7 +196,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 ### <a name="identifying-the-initiating-events"></a>Identificando os eventos de início  
  O trabalho realizado pela maioria dos sistemas de software pode ser dividido convenientemente pelas respostas que ele oferece a eventos ou entradas diferentes. O evento inicial pode ser um dos seguintes eventos:  
   
--   A primeira ação em um caso de uso. Ele pode aparecer no modelo de requisitos como uma etapa em um caso de uso, ou uma ação em um diagrama de atividade. Para obter mais informações, [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md) e [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).  
+-   A primeira ação em um caso de uso. Ele pode aparecer no modelo de requisitos como uma etapa em um caso de uso, ou uma ação em um diagrama de atividade. Para obter mais informações, [diagramas de caso de uso UML: Diretrizes](../modeling/uml-use-case-diagrams-guidelines.md) e [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md).  
   
 -   Uma mensagem na interface de programação. Se o sistema que você está desenvolvendo um componente em um sistema maior, devem ser descrito como uma operação em uma das interfaces do componente. Ver [componentes e suas Interfaces](#Components).  
   
@@ -210,9 +207,9 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
   
  Desenhe uma linha da vida para cada instância do componente que faz parte de uma sequência típica. Em alguns casos, pode haver mais de uma instância de cada tipo. Se você descreveu seu sistema inteiro como um único componente, deverá haver uma linha da vida para cada parte que ele contém.  
   
- Para obter mais informações, consulte [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Para obter mais informações, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).  
   
- Diagramas de atividade também são úteis em alguns casos. Por exemplo, se seus componentes têm um fluxo contínuo de dados, descrevê-lo como um fluxo do objeto. Se o componente tem um algoritmo complexo, podem descrevê-lo como um fluxo de controle. Certifique-se de que você deixar claro qual componente executa cada ação, por exemplo, usando comentários. Para obter mais informações, consulte [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).  
+ Diagramas de atividade também são úteis em alguns casos. Por exemplo, se seus componentes têm um fluxo contínuo de dados, descrevê-lo como um fluxo do objeto. Se o componente tem um algoritmo complexo, podem descrevê-lo como um fluxo de controle. Certifique-se de que você deixar claro qual componente executa cada ação, por exemplo, usando comentários. Para obter mais informações, consulte [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ### <a name="specify-the-operations"></a>Especificar as operações  
  Os diagramas mostram as operações executadas por cada componente, representados como mensagens em um diagrama de sequência ou ações em um diagrama de atividade.  
@@ -247,7 +244,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
   
 -   Modelo de partes mais importantes e suas relações. Eles podem ser classes ou componentes e interfaces, com associações e dependências entre eles. Os elementos normalmente se encaixam em duas categorias:  
   
-    -   Elementos que o desenvolvedor deve ser replicada em todas as partes do código em que o padrão é usado. Você pode usar tipos de modelo para descrevê-los. Para obter mais informações, consulte [diagramas de caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md).  
+    -   Elementos que o desenvolvedor deve ser replicada em todas as partes do código em que o padrão é usado. Você pode usar tipos de modelo para descrevê-los. Para obter mais informações, consulte [diagramas de caso de uso UML: Referência](../modeling/uml-use-case-diagrams-reference.md).  
   
     -   Elementos que descrevem as classes do framework que o desenvolvedor deve usar.  
   
@@ -265,6 +262,3 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
  [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)   
  [Desenvolver testes de um modelo](../modeling/develop-tests-from-a-model.md)   
  [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
-
-
-

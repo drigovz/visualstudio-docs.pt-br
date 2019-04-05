@@ -1,11 +1,8 @@
 ---
-title: 'Como: usar o Editor de expressões | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Use o Editor de expressões | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
@@ -13,15 +10,15 @@ ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929443"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Como: Use o editor de expressão
+# <a name="how-to-use-the-expression-editor"></a>Como: Usar o editor de expressão
 O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que é usado em muitas atividades de fluxo de trabalho como um meio de inserir e avaliar dessas expressões. O editor de expressão fornece IDE completo que a experiência de edição IntelliSense, que inclui coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma **Editor de expressão** caixa de diálogo.  
   
  As expressões são valores ou código literal de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associado aos argumentos ou propriedades. Eles contêm elementos de valor (por exemplo, variáveis, constantes, literais, propriedades) que são combinados com operações para produzir um novo valor. As expressões são escritas usando a sintaxe de VB.NET mesmo se o aplicativo estiver em um programa usando C#. Isso significa que a maiusculas não importa, a comparação é realizada usando uma única é igual a entrada ("=") em vez de ("= ="), os operadores boolianos são as palavras "e" e "ou" em vez dos símbolos "& &" e "&#124;&#124;", e **nada**  é usado em vez de **nulo**. Para obter mais informações sobre expressões e operadores no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e para alguns exemplos, consulte [operadores e expressões no Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).  

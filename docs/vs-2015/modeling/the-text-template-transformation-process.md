@@ -1,25 +1,22 @@
 ---
 title: O processo de transformação do modelo de texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928941"
 ---
 # <a name="the-text-template-transformation-process"></a>O processo de transformação de modelo de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ O processo de transformação do modelo de texto utiliza um arquivo de modelo de
 ## <a name="the-engine"></a>O mecanismo  
  O mecanismo recebe o modelo como uma cadeia de caracteres do host, que lida com todos os arquivos que são usados no processo de transformação. O mecanismo de, em seguida, solicita que o host para localizar quaisquer processadores de diretriz personalizados e outros aspectos do ambiente. O mecanismo, em seguida, compila e executa a classe de transformação gerada. O mecanismo retorna o texto gerado para o host, que normalmente salva o texto em um arquivo.  
   
-## <a name="the-host"></a>O Host  
+## <a name="the-host"></a>O host  
  O host é responsável por qualquer coisa que se relaciona com o ambiente de fora do processo de transformação, incluindo o seguinte:  
   
 -   Localizando arquivos de texto e binários solicitados pelo mecanismo de ou em um processador de diretriz. O host pode pesquisar diretórios e cache de assembly global para localizar assemblies. O host pode localizar o código de processador de diretriz personalizado para o mecanismo. O host também pode localizar e ler arquivos de texto e retornar seus conteúdos como cadeias de caracteres.  
@@ -68,6 +65,3 @@ O processo de transformação do modelo de texto utiliza um arquivo de modelo de
  `<#@ import namespace="System.Text" #>`  
   
  O processador de diretriz padrão converte isso para um `using` instrução na classe de transformação gerada. Você pode usar o `StringBuilder` classe no restante do seu código de modelo sem qualificá-lo como `System.Text.StringBuilder`.
-
-
-

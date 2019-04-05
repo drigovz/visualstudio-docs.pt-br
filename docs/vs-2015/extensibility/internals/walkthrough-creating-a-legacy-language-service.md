@@ -1,28 +1,23 @@
 ---
-title: 'Passo a passo: Criando um serviço de linguagem herdado | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Criar um serviço de linguagem herdado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d80b40aa1db779c233dea846b49dbbc66084015
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 044e9d1102ac5e7415eafdead35c834296621bcb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927848"
 ---
-# <a name="walkthrough-creating-a-legacy-language-service"></a>Passo a passo: criando um serviço de linguagem herdado
+# <a name="walkthrough-creating-a-legacy-language-service"></a>Passo a passo: Criando um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Usando as classes de linguagem do framework (MPF) de pacote gerenciado para implementar um serviço de linguagem no [!INCLUDE[csprcs](../../includes/csprcs-md.md)] é simples. Você precisa de um VSPackage para hospedar o serviço de linguagem, o serviço de linguagem e um analisador para seu idioma.  
@@ -139,4 +134,3 @@ Usando as classes de linguagem do framework (MPF) de pacote gerenciado para impl
   
 ## <a name="see-also"></a>Consulte também  
  [Implementando um serviço de linguagem herdado](../../extensibility/internals/implementing-a-legacy-language-service1.md)
-
