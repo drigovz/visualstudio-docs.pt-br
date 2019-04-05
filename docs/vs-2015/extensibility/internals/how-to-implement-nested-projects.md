@@ -1,29 +1,24 @@
 ---
-title: 'Como: implementar projetos aninhados | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Implementar projetos aninhados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810124"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928296"
 ---
-# <a name="how-to-implement-nested-projects"></a>Como: implementar projetos aninhados
+# <a name="how-to-implement-nested-projects"></a>Como: Implementando projetos aninhados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quando você cria um tipo de projeto aninhado existe são uma várias etapas adicionais que devem ser implementadas. Um projeto pai leva em algumas das mesmas responsabilidades que a solução tem para seus projetos aninhados (filho). O projeto pai é um contêiner de projetos semelhantes a uma solução. Em particular, há vários eventos que devem ser gerados pela solução e pelos projetos pai para criar a hierarquia de projetos aninhados. Esses eventos são descritos no seguinte processo para a criação de projetos aninhados.  
@@ -96,7 +91,6 @@ Quando você cria um tipo de projeto aninhado existe são uma várias etapas adi
 ## <a name="see-also"></a>Consulte também  
  [Adição de itens para a adicionar novo Item caixas de diálogo](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Registrar modelos de projeto e Item](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Lista de verificação: Criar novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parâmetros de contexto](../../extensibility/internals/context-parameters.md)   
  [Arquivo do assistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

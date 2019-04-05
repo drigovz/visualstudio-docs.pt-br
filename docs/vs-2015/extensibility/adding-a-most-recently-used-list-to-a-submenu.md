@@ -1,14 +1,9 @@
 ---
 title: Adicionando a lista a um Submenu um mais usados recentemente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 87e9fb6ec0b4d0339427175fd18fdb79f6ef500b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6cf4f94d7459344353261b15552a51d9bb0f09e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744350"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924545"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Adicionando uma lista dos mais usados recentemente a um submenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,4 +207,3 @@ Este passo a passo se baseia no demonstrações [adicionando um Submenu a um Men
   
 ## <a name="see-also"></a>Consulte também  
  [Adicionar itens de menu dinamicamente](../extensibility/dynamically-adding-menu-items.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 'Erro: O servidor Web foi bloqueado e está bloqueando o verbo DEBUG | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 9c8c4812-17db-484d-9c1b-ffd9e3bfef5a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60fffd146516bca57497bfdaaabe0f51407063b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924804"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Erro: o servidor Web foi bloqueado e está bloqueando o verbo DEBUG
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Erro: O servidor Web foi bloqueado e está bloqueando o verbo DEBUG
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Falha ao entrar em um aplicativo Web ou serviço Web XML porque a ferramenta de bloqueio do IIS foi executada e URLScan foi instalado e ativado. Esta condição impede o IIS de receber o verbo DEBUG.  
@@ -45,7 +40,7 @@ Falha ao entrar em um aplicativo Web ou serviço Web XML porque a ferramenta de 
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Criar uma cópia do arquivo e nomeie- **old**.  
+2.  Crie uma cópia do arquivo e dê o nome de **Urlscan.old**.  
   
 3.  Abra a cópia original do arquivo Urlscan.ini usando o Bloco de Notas ou o editor de texto de sua escolha.  
   
@@ -59,7 +54,4 @@ Falha ao entrar em um aplicativo Web ou serviço Web XML porque a ferramenta de 
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web: Erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Erro: o servidor Web não conseguiu localizar o recurso solicitado](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
-
-
-
+ [Erro: O servidor Web não conseguiu localizar o recurso solicitado](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

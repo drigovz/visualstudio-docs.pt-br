@@ -1,12 +1,9 @@
 ---
 title: Editar modelos e diagramas UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925764"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +136,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Para mover uma extremidade de um conector para outra forma  
   
-1. Siga um destes procedimentos:  
+1. Realize um dos seguintes procedimentos:  
   
    - Pressione **CTRL** e move a extremidade.  
   
@@ -193,7 +190,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
  **Cada projeto de modelagem tem uma única pilha de alterações.** Todas as alterações feitas no modelo e os diagramas são mantidas nessa pilha. A pilha também inclui alterações de foco de um diagrama para outro. O comando Desfazer reverte as alterações nessa pilha.  
   
- Por exemplo, digamos que você executar essas operações: faça uma alteração diagrama1; Altere o foco para o diagrama 2; Altere Diagram2. Quando você desfaz as alterações, o primeiro desfazer reverterá a última alteração; o próximo desfazer mudar o foco volta para o diagrama 1; e o terceiro desfazer reverterá a alteração ao diagrama 1.  
+ Por exemplo, digamos que você executar essas operações: Faça uma alteração diagrama1; Altere o foco para o diagrama 2; Altere Diagram2. Quando você desfaz as alterações, o primeiro desfazer reverterá a última alteração; o próximo desfazer mudar o foco volta para o diagrama 1; e o terceiro desfazer reverterá a alteração ao diagrama 1.  
   
  **Um diagrama de fechamento trunca a pilha de alterações.** Se você fechar um diagrama, você não pode desfazer as alterações que você executou no diagrama, e você não pode desfazer as alterações anteriores para o modelo ou qualquer um dos seus diagramas.  
   
@@ -219,7 +216,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
      Uma forma de fornecer que uma exibição do elemento de modelo é exibida, que pode ser além das exibições em outros diagramas ou no mesmo diagrama.  
   
     > [!NOTE]
-    >  O efeito é diferente quando você arrasta uma classe ou um componente para um diagrama de sequência. Nesse caso, uma nova linha da vida é criada cujo tipo é a classe ou componente. Para obter mais informações, consulte [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md).  
+    >  O efeito é diferente quando você arrasta uma classe ou um componente para um diagrama de sequência. Nesse caso, uma nova linha da vida é criada cujo tipo é a classe ou componente. Para obter mais informações, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Para adicionar uma nova exibição de um elemento de modelo usando Colar referência  
   
@@ -274,7 +271,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
    Você não pode replicar um diagrama, copiando e colando no Gerenciador de soluções.  
   
 ##  <a name="Deleting"></a> A exclusão de um elemento de modelo ou seus modos de exibição  
- Alguns tipos de elementos, especificamente os classificadores, podem ser removidos de um diagrama sem excluí-las do modelo. Classificadores são os elementos principais que são exibidos em diagramas de classe, diagramas de componente e usam diagramas de caso. Eles podem aparecer em mais de um diagrama. Para esses tipos de elementos, há dois comandos separados: **remover do diagrama** e **excluir do modelo**.  
+ Alguns tipos de elementos, especificamente os classificadores, podem ser removidos de um diagrama sem excluí-las do modelo. Classificadores são os elementos principais que são exibidos em diagramas de classe, diagramas de componente e usam diagramas de caso. Eles podem aparecer em mais de um diagrama. Para esses tipos de elementos, há dois comandos separados: **Remover do diagrama** e **excluir do modelo**.  
   
  Por outro lado, quando você exclui uma relação de um diagrama, você sempre é excluí-lo do modelo.  
   
@@ -323,7 +320,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
 -   Para adicionar anotações e explicações para elementos de modelo, você pode criar comentários e, em seguida, vinculá-los para os elementos.  
   
--   Para alinhar claramente uma coluna ou linha o formas no diagrama, você pode instalar o comando Alinhar formas. Isso está disponível como uma extensão UML de exemplo: [UML: comando para alinhar formas](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   Para alinhar claramente uma coluna ou linha o formas no diagrama, você pode instalar o comando Alinhar formas. Isso está disponível como uma extensão UML de exemplo:  [UML: Comando para alinhar formas](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>Para exportar um diagrama como uma imagem  
  Para obter mais informações, consulte [exportar diagramas como imagens](../modeling/export-diagrams-as-images.md).  
@@ -345,6 +342,3 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
  [Criar diagramas e projetos de modelagem UML](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [Análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md)   
  [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
-
-
-

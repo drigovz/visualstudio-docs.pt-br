@@ -1,27 +1,22 @@
 ---
 title: Elemento combos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7b3a7b0d378295e0eea2aaf3e7292b670bc481f2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b7842bd2e0a6cebc5980781bae1fc89c1401fc08
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744984"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925648"
 ---
 # <a name="combos-element"></a>Elemento Combos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,4 +81,3 @@ Grupos [elemento Combo](../extensibility/combo-element.md) elementos.
 ## <a name="see-also"></a>Consulte também  
  [Como os VSPackages adicionam elementos da Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
-

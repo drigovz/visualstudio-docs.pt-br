@@ -1,14 +1,9 @@
 ---
-title: 'Como: dar suporte a estrutura de tópicos em um serviço de linguagem herdado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Suporte de estrutura de tópicos em um serviço de linguagem herdado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
 - language services, supporting Collapse to Definitions command
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb596c8fbc7ab3c354b5b8d3e2a116ee752f06a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2177ad8080f549f8f1de2736c34103979d8828f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925063"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Como: dar suporte a estrutura de tópicos em um serviço de linguagem herdado
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Como: Suporte a estrutura de tópicos em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Estrutura de tópicos é usada para expandir ou recolher a diferentes regiões do texto. A forma de estrutura de tópicos é usada pode ser definido de forma diferente por diferentes idiomas. Para obter mais informações, consulte [Estrutura de tópicos](../../ide/outlining.md).  
   
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar a estrutura de tópicos, consulte [instruções passo a passo: estrutura de tópicos](../../extensibility/walkthrough-outlining.md).  
+ Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar a estrutura de tópicos, consulte [passo a passo: Estrutura de tópicos](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
 >  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
@@ -53,6 +48,5 @@ Estrutura de tópicos é usada para expandir ou recolher a diferentes regiões d
 >  Tenha cuidado sobre a ocultação de caracteres de nova linha. Texto oculto deve estender desde o início da primeira linha até o último caractere da última linha em uma seção, deixando o caractere de nova linha final visível.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: fornecer suporte a texto oculto em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Como fornecer suporte estendido à estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
-
+ [Como: Fornecer suporte a texto oculto em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [Como: Fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

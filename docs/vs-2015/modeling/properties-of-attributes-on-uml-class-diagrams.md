@@ -1,12 +1,9 @@
 ---
 title: Diagramas de classe de propriedades de atributos em UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.attribute.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: ba01e064-7424-4e72-98fa-42fa1c30e153
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0129242593596ea7e3875db2a748045c50863c4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923404"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propriedades de atributos em diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,16 +64,13 @@ Em um diagrama de classe UML, você pode adicionar *atributos* a classes e inter
 |    **É folha**    |    False     |                                                                                                                                                                    Se for true, ele não se destina para permitir que a redefinição desse atributo em tipos derivados.                                                                                                                                                                     |
 |  **É derivado**   |    False     |                                                                                                              Se for true, esse atributo é calculado de outros atributos. Por exemplo, Diagonal, calculado de largura e altura. Os detalhes devem ser escritos **descrição** ou um comentário anexado.                                                                                                              |
 |  **Descrição**  |   (vazio)    |                                                                                                                                                                        Para obter notas gerais, ou para definir restrições nos valores no atributo.                                                                                                                                                                        |
-| **Multiplicidade**  |      1       | **1** -este atributo tem um único valor do tipo especificado.<br /><br /> **entre 0 e 1** -esse atributo pode ter um valor de `null`.<br /><br /> **\\**\* -valor desse atributo é uma coleção de valores.<br /><br /> **1...\\**  \* -valor desse atributo é uma coleção que contém pelo menos um valor.<br /><br /> *n* **...** *m* -valor desse atributo é uma coleção que contenha entre *n* e *m* valores. |
+| **Multiplicidade**  |      1       | **1** -este atributo tem um único valor do tipo especificado.<br /><br /> **entre 0 e 1** -esse atributo pode ter um valor de `null`.<br /><br /> **\\**\* -valor desse atributo é uma coleção de valores.<br /><br /> **1...\\**  \* -valor desse atributo é uma coleção que contém pelo menos um valor.<br /><br /> *n* **..** *m* -valor desse atributo é uma coleção que contenha entre *n* e *m* valores. |
 |  **É ordenada**   |    False     |                                                                                                                                                                    Se for true, a coleção de forma uma lista sequencial. Para **multiplicidade** de mais de 1.                                                                                                                                                                     |
 |   **É exclusivo**   |    False     |                                                                                                                                                                Não se for true, há nenhum valor duplicado na coleção. Para **multiplicidade** de mais de 1.                                                                                                                                                                |
 
 ## <a name="see-also"></a>Consulte também  
- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md)   
  [Propriedades de tipos em diagramas de classe UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagramas de classe UML: Diretrizes](../modeling/uml-class-diagrams-guidelines.md)   
  [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

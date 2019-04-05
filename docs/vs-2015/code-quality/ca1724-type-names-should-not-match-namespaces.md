@@ -1,14 +1,9 @@
 ---
-title: 'CA1724: Os nomes de tipo não devem corresponder a Namespaces | Microsoft Docs'
-ms.custom: ''
+title: 'CA1724: Nomes de tipo não devem corresponder a Namespaces | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TypeNamesShouldNotMatchNamespaces
 - CA1724
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5331a32db054b1cb3939bbfd3ba088ab5da33f96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fe95e08d2265baf06c6da265996ffcd579f0d1f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925402"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: os nomes de tipo não devem corresponder a namespaces
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Nomes de tipos não devem corresponder a namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +43,3 @@ ms.locfileid: "49903173"
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Para novos desenvolvimentos, nenhum conhecidos ocorrem de cenários em que você deve suprimir um aviso nessa regra. Antes de você suprime o aviso, considere cuidadosamente como os usuários da sua biblioteca talvez estejam confusos pelas nome correspondente. Para o envio de bibliotecas, talvez você precise suprimir um aviso nessa regra.
-
-
-

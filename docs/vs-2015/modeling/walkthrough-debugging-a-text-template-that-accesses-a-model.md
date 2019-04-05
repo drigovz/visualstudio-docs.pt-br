@@ -1,44 +1,41 @@
 ---
 title: 'Passo a passo: Depurando um modelo de texto que acessa um modelo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924883"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928291"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Passo a passo: Depurando um modelo de texto que acessa um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você modificar ou adicionar modelos de texto em uma solução de linguagem específica de domínio, você pode receber erros quando o mecanismo transforma o modelo de código-fonte ou quando ele compila o código gerado. A instrução a seguir demonstra algumas das coisas que você pode fazer para depurar um modelo de texto.  
   
 > [!NOTE]
->  Para obter mais informações sobre o texto modelos em geral, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obter mais informações sobre a depuração de modelos de texto, consulte [instruções passo a passo: depurando um modelo de texto](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+>  Para obter mais informações sobre o texto modelos em geral, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obter mais informações sobre a depuração de modelos de texto, consulte [passo a passo: Depurando um modelo de texto](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica do domínio  
  Neste procedimento, você deve criar uma solução de linguagem específica de domínio que tem as seguintes características:  
   
 - Nome: DebuggingTestLanguage  
   
-- Modelo de solução: linguagem mínima  
+- Modelo de solução: Linguagem mínima  
   
 - Extensão de arquivo: .ddd  
   
 - Nome da empresa: Fabrikam  
   
-  Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Criando um modelo de texto  
  Adicione um modelo de texto à sua solução.  
@@ -164,7 +161,7 @@ Quando você modificar ou adicionar modelos de texto em uma solução de linguag
   
      (C#)  
   
-     **Compilando transformação: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' não contém uma definição para 'ExampleModel'**  
+     **Compilando transformação: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' não contém uma definição para 'ExampleModel'**  
   
      (Visual Basic)  
   
@@ -216,6 +213,3 @@ Quando você modificar ou adicionar modelos de texto em uma solução de linguag
 5.  Na **Gerenciador de soluções**DebugTest.tt com o botão direito e, em seguida, clique em **executar ferramenta personalizada**.  
   
      Agora, o sistema transforma o modelo de texto e gera o arquivo de saída correspondente. Você não verá quaisquer erros na **Error List** janela.
-
-
-

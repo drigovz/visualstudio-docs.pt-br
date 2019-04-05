@@ -1,14 +1,9 @@
 ---
 title: '&lt;assemblyIdentity&gt; elemento (implantação do ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 157ad7bb43ae7eb164d7c58edb79f51df3da5dcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bfc2ff97a2eb465fe7306ebe368a20e2a7fd8638
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926705"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; elemento (implantação do ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,8 +33,8 @@ Identifica o assembly principal da [!INCLUDE[ndptecclick](../includes/ndptecclic
   
 ```  
   
-      <assemblyIdentity    
-   name   
+      <assemblyIdentity    
+   name   
    version  
    publicKeyToken  
    processorArchitecture  
@@ -76,7 +71,4 @@ Identifica o assembly principal da [!INCLUDE[ndptecclick](../includes/ndptecclic
   
 ## <a name="see-also"></a>Consulte também  
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md)
-
-
-
+ [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-application.md)

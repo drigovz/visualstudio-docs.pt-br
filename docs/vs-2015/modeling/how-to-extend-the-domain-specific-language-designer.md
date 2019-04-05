@@ -1,25 +1,22 @@
 ---
-title: 'Como: estender o Designer de linguagem específica do domínio | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Estender o Designer de linguagem específica do domínio | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923977"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Como estender o Designer de Linguagem Específica do Domínio
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Como: Estender o Designer de Linguagem Específica de Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode tornar as extensões para o designer que você pode usar para editar as definições de DSL. Tipos de extensão que você pode fazer incluem a adição de comandos de menu, adicionando manipuladores para arrastar e clique duas vezes em gestos e regras que são disparadas quando determinados tipos de valores ou relacionamentos são alterados. As extensões podem ser empacotadas como o Visual Studio Integration extensão (VSIX) e distribuídas para outros usuários.  
@@ -317,4 +314,3 @@ namespace Fabrikam.SimpleDslDesignerExtension
     }  
 }  
 ```
-

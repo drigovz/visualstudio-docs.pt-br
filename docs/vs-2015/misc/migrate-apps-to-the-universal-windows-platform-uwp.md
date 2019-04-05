@@ -1,25 +1,20 @@
 ---
 title: Migrar aplicativos para a plataforma Universal do Windows (UWP) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791742"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923997"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrar aplicativos para a UWP (Plataforma Universal do Windows)
 Verifique as alterações manuais necessárias em seus arquivos de projeto existente para aplicativos da Windows Store 8.1, aplicativos Windows Phone 8.1 ou aplicativos do Universal Windows criados com o Visual Studio 2015 RC, para que eles podem ser usados com o Visual Studio 2015 RTM. (Se você tiver um aplicativo universal do Windows 8.1 com um projeto de aplicativo do Windows e o projeto do Windows Phone, você precisará seguir as etapas para migrar cada projeto.)  
@@ -97,7 +92,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
     3.  Alterar o valor existente do \<TargetPlatformVersion > elemento a ser o valor da versão de plataforma Universal do Windows que você instalou. Adicione também um \<TargetPlatformMinVersion > elemento e dê a ele o mesmo valor.  
   
-    4.  Altere o valor da \<MinimumVisualStudioVersion > elemento a ser: **14**.  
+    4.  Altere o valor da \<MinimumVisualStudioVersion > elemento: **14**.  
   
     5.  Substitua o \<ProjectTypeGuids > elemento, conforme mostrado abaixo:  
   
@@ -337,7 +332,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 2. Você precisa atualizar o \<pacote > elemento com os novos esquemas com base em seu tipo de projeto existente. Primeiro, remova os esquemas abaixo com base em se você tiver um projeto da Windows Store ou Windows Phone.  
   
-    **ANTIGO para o projeto da Windows Store:** sua \<pacote > elemento será semelhante a esta.  
+    **ANTIGO para o projeto da Windows Store:** Seu \<pacote > elemento será semelhante a esta.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
    ```  
   
-    **ANTIGO para o projeto do Windows Phone:** sua \<pacote > elemento será semelhante a esta.  
+    **ANTIGO para o projeto do Windows Phone:** Seu \<pacote > elemento será semelhante a esta.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **NOVO para a plataforma Universal do Windows:** adicione os esquemas abaixo ao seu \<pacote > elemento. Remova os prefixos de identificador de namespace associado de elementos para os esquemas que você acabou de ser removido. Atualize a propriedade IgnorableNamespaces para: uap mp. Seu novo \<pacote > elemento deve ser semelhante a esta.  
+    **NOVO para a plataforma Windows Universal:** Adicione os esquemas abaixo ao seu \<pacote > elemento. Remova os prefixos de identificador de namespace associado de elementos para os esquemas que você acabou de ser removido. Atualize a propriedade IgnorableNamespaces para: uap mp. Seu novo \<pacote > elemento deve ser semelhante a esta.  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
    ```  
   
-3. Adicionar um \<dependências > elemento filho para o \<pacote > elemento. Em seguida, adicione uma \<TargetDeviceFamily > elemento filho a este \<dependências > elemento com atributos de nome e MinVersion MaxVersionTested. Fornecer o valor de atributo de nome: universal. Conceda ao MinVersion e MaxVersionTested o valor da versão de plataforma Universal do Windows que você instalou. Esse elemento deve ser semelhante a este:  
+3. Adicionar um \<dependências > elemento filho para o \<pacote > elemento. Em seguida, adicione uma \<TargetDeviceFamily > elemento filho a este \<dependências > elemento com atributos de nome e MinVersion MaxVersionTested. Fornecer o valor de atributo de nome: Windows.Universal. Conceda ao MinVersion e MaxVersionTested o valor da versão de plataforma Universal do Windows que você instalou. Esse elemento deve ser semelhante a este:  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
    </Dependencies>  
    ```  
   
-4. **Para Windows Store apenas:** você precisa adicionar uma \<mp:PhoneIdentity > elemento filho para o \<pacote > elemento. Adicione um atributo de PhoneProductId e um atributo PhonePublisherId. Defina o PhoneProductId para ter o mesmo valor que o atributo Name no \<identidade > elemento. Defina o valor de PhonePublishedId como: 00000000-0000-0000-0000-000000000000. Assim:  
+4. **Para Windows Store apenas:** Você precisa adicionar uma \<mp:PhoneIdentity > elemento filho para o \<pacote > elemento. Adicione um atributo de PhoneProductId e um atributo PhonePublisherId. Defina o PhoneProductId para ter o mesmo valor que o atributo Name no \<identidade > elemento. Defina o valor de PhonePublishedId como: 00000000-0000-0000-0000-000000000000. Assim:  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 5. Encontre o \<pré-requisitos > elemento e excluir esse elemento e todos os elementos filho que ele tem.  
   
-6. Adicione a **uap** namespace para o seguinte \<recursos > elementos: escala, DXFeatureLevel. Por exemplo:  
+6. Adicione a **uap** namespace para o seguinte \<recursos > elementos: Escala, DXFeatureLevel. Por exemplo:  
   
    ```xml  
    <Resources>  
@@ -419,7 +414,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
    ```  
   
-    **Aplica-se somente a Windows Store:** os nomes de tamanho de bloco foram alterados. Alterar os atributos no \<VisualElements > elemento para refletir a nova convergido tamanhos de bloco. 70x70 torna-se de 71 x 71, e 30 x 30 torna-se de 44 x 44.  
+    **Aplica-se somente a Windows Store:** Os nomes de tamanho de bloco foram alterados. Alterar os atributos no \<VisualElements > elemento para refletir a nova convergido tamanhos de bloco. 70x70 torna-se de 71 x 71, e 30 x 30 torna-se de 44 x 44.  
   
     **ANTIGO:** nomes de tamanho de bloco  
   
@@ -487,7 +482,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 12. Altere as dependências de estrutura. Adicionar um nome de publicador a todos os \<PackageDependency > elementos, e especifique um MinVersion se ela já não estiver especificada.  
   
-     **ANTIGO:** \<PackageDependency > elemento  
+     **OLD:** \<PackageDependency > elemento  
   
     ```xml  
     <Dependencies>  
@@ -512,7 +507,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 13. Substitua as tarefas de tipo de plano de fundo gattCharacteristicNotification e rfcommConnection com uma tarefa de tipo de Bluetooth. Por exemplo:  
   
-     **ANTIGO:**  
+     **OLD:**  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -523,7 +518,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
     </Extension>  
     ```  
   
-     **NOVO:** com a tarefa de tipo de Bluetooth.  
+     **NOVO:** Com a tarefa de tipo de Bluetooth.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -535,7 +530,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 14. Substitua o bluetooth.rfcomm de recursos do dispositivo Bluetooth e a bluetooth.genericAttributeProfile com um recurso genérico do Bluetooth. Por exemplo:  
   
-     **ANTIGO:**  
+     **OLD:**  
   
     ```xml  
     <Capabilities>  
@@ -552,7 +547,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
     </Capabilities>  
     ```  
   
-     **NOVO:** substituído por um recurso genérico do Bluetooth.  
+     **NOVO:** Substituído por um recurso genérico do Bluetooth.  
   
     ```xml  
     <Capabilities>  

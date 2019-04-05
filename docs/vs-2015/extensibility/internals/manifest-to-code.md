@@ -1,21 +1,17 @@
 ---
 title: Manifestar no código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927696"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,23 +28,23 @@ O manifesto para a ferramenta de código é um aplicativo de console que usa um 
 ||||  
 |-|-|-|  
 |**Nome do comutador**|**Observações**|**Obrigatório ou opcional**|  
-|Anexe|O caminho para o manifesto de imagem para usar para criar ou atualizar o wrapper de código.|Necessária|  
-|/idioma|O idioma no qual gerar o wrapper de código.<br /><br /> Os valores válidos: CPP, C++, CS, CSharp, c#, VB ou VSCT os valores diferenciam maiusculas de minúsculas.<br /><br /> Para o idioma VSCT opções de opção, o /monikerClass, /classAccess e /namespace serão ignoradas.|Necessária|  
-|/imageIdClass|O nome da imageIdClass e o arquivo associado, criado pela ferramenta. Para a opção de linguagem C++, somente os arquivos. h são gerados.<br /><br /> Padrão: \<caminho de manifesto > \MyImageIds.\< Lang Ext >|Opcional|  
-|/monikerClass|O nome da monikerClass e o arquivo associado, criado pela ferramenta. Para a opção de linguagem C++, somente os arquivos. h são gerados. Isso é ignorado para o idioma VSCT.<br /><br /> Padrão: \<caminho de manifesto > \MyMonikers.\< Lang Ext >|Opcional|  
-|/classAccess|O modificador de acesso para o imageIdClass e o monikerClass. Verifique se que o modificador de acesso é válido para o idioma fornecido. Isso é ignorado para a opção de idioma VSCT.<br /><br /> Padrão: público|Opcional|  
-|/namespace|O namespace definido no wrapper de código. Isso é ignorado para a opção de idioma VSCT. Qualquer um dos '.' ou ':: ' são os separadores de namespace válido, independentemente da opção de idioma escolhido.<br /><br /> Padrão: MyImages|Opcional|  
+|/manifest|O caminho para o manifesto de imagem para usar para criar ou atualizar o wrapper de código.|Necessária|  
+|/language|O idioma no qual gerar o wrapper de código.<br /><br /> Valores válidos: CPP, C++, CS, CSharp, c#, VB ou VSCT os valores diferenciam maiusculas de minúsculas.<br /><br /> Para o idioma VSCT opções de opção, o /monikerClass, /classAccess e /namespace serão ignoradas.|Necessária|  
+|/imageIdClass|O nome da imageIdClass e o arquivo associado, criado pela ferramenta. Para a opção de linguagem C++, somente os arquivos. h são gerados.<br /><br /> Padrão: \<Caminho de manifesto > \MyImageIds. \<Lang Ext >|Opcional|  
+|/monikerClass|O nome da monikerClass e o arquivo associado, criado pela ferramenta. Para a opção de linguagem C++, somente os arquivos. h são gerados. Isso é ignorado para o idioma VSCT.<br /><br /> Padrão: \<Caminho de manifesto > \MyMonikers. \<Lang Ext >|Opcional|  
+|/classAccess|O modificador de acesso para o imageIdClass e o monikerClass. Verifique se que o modificador de acesso é válido para o idioma fornecido. Isso é ignorado para a opção de idioma VSCT.<br /><br /> Padrão: Público|Opcional|  
+|/namespace|O namespace definido no wrapper de código. Isso é ignorado para a opção de idioma VSCT. Either ‘.’ ou ':: ' são os separadores de namespace válido, independentemente da opção de idioma escolhido.<br /><br /> Padrão: MyImages|Opcional|  
 |/noLogo|Definir esse sinalizador interrompe as informações de produto e os direitos autorais de impressão.|Opcional|  
 |/?|Imprima informações de Ajuda.|Opcional|  
 |/help|Imprima informações de Ajuda.|Opcional|  
   
  **Exemplos**  
   
--   /Manifest:D:\MyManifest.imagemanifest de ManifestToCode /language: CSharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace: meu:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Observações  
   
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

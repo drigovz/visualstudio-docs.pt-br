@@ -1,14 +1,9 @@
 ---
 title: Atualizar um aplicativo (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1905d48e79567684da6215b419c348b32721e0e3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925103"
 ---
 # <a name="refresh-an-app-javascript"></a>Atualizar um aplicativo (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 -   Alterações em recursos, como as efetuadas nas cadeias de caracteres dos arquivos .resjson.  
   
--   Alterações em arquivos de projeto que resultam em mudanças de nome de caminho, novos arquivos de projeto ou arquivos excluídos.  
+-   Alterações em arquivos de projeto que resultam em mudanças de nome de demarcador, novos arquivos de projeto ou arquivos excluídos.  
   
 -   Alterações em propriedades de projetos e de itens, como as feitas no dispositivo de depuração selecionado, ou alterações na ação de pacote para um arquivo (na janela Propriedades).  
   
@@ -83,12 +78,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     Hello!  
     ```  
   
-7.  Clique o **atualizar o Windows app** botão, que se parece com isso: ![botão de aplicativo do Windows de atualização](../debugger/media/js-refresh.png "JS_Refresh"). (Ou pressione F4.)  
+7.  Clique o **Refresh Windows app** botão, que se parece com isso: ![Atualizar o botão de aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh"). (Ou pressione F4.)  
   
 8.  Altere para o aplicativo. O aplicativo é recarregado sem que o depurador seja reiniciado, e o novo título da página é exibido.  
   
 ## <a name="see-also"></a>Consulte também  
- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

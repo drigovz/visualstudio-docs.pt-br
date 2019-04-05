@@ -1,13 +1,8 @@
 ---
 title: Autos e locais Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -25,13 +20,13 @@ ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782473"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925496"
 ---
 # <a name="autos-and-locals-windows"></a>Autos e locais Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **depurar /
  Se você precisar de mais informações sobre depuração básica, consulte [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinando objetos nas janelas Autos e locais  
- Matrizes e objetos são exibidos nas janelas Autos e locais, como controles de árvore. Clique na seta à esquerda do nome da variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de uma <xref:System.IO.FileStream> do objeto na **Locals** janela:  
+ Matrizes e objetos são exibidos nas janelas Autos e locais, como controles de árvore. Clique na seta à esquerda do nome da variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de uma <xref:System.IO.FileStream> do objeto na janela **Locals**:  
   
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
@@ -145,7 +140,7 @@ private static int subtractVars(int i, int j)
 -   Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Mesmo uma edição aparentemente inofensiva pode resultar em alterações em alguns bits menos significativos na variável de ponto flutuante.  
   
 ## <a name="debug-location-toolbar"></a>Depurar barra de ferramentas de local  
- Você pode usar o **local de depuração** barra de ferramentas para selecionar a função desejada, thread ou processo. Defina um ponto de interrupção e iniciar a depuração. (Se você não vir essa barra de ferramentas, você pode habilitá-lo clicando em uma parte vazia da área de barra de ferramentas. Você deve ver uma lista das barras de ferramentas; Selecione **local de depuração**). Quando o ponto de interrupção é atingido, a execução é interrompida e você pode ver a barra de ferramentas do local de depuração, que é a linha inferior do gráfico a seguir:  
+ Você pode usar o **local de depuração** barra de ferramentas para selecionar a função desejada, thread ou processo. Definir um ponto de interrupção e iniciar a depuração. (Se você não vir essa barra de ferramentas, você pode habilitá-lo clicando em uma parte vazia da área de barra de ferramentas. Você deve ver uma lista das barras de ferramentas; Selecione **local de depuração**). Quando o ponto de interrupção é atingido, a execução é interrompida e você pode ver a barra de ferramentas do local de depuração, que é a linha inferior do gráfico a seguir:  
   
  ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
   
@@ -153,8 +148,3 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>Consulte também  
  [Janelas do depurador](../debugger/debugger-windows.md)
-
-
-
-
-

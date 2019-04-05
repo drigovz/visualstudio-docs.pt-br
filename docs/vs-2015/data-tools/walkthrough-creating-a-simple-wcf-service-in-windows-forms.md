@@ -1,12 +1,9 @@
 ---
 title: 'Passo a passo: Criando um serviço WCF simples no Windows Forms | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - WCF, walkthrough [Visual Studio]
 - WCF, Visual Studio tools for
@@ -16,13 +13,13 @@ ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6e73659c2d28cf97a8a7136ed8232cfbc5f0b77c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a87c88aba4b0a622dd66440fca33ab99fd028d51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925491"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Passo a passo: Criando um serviço WCF simples no Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +90,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../includ
   
 #### <a name="to-reference-a-wcf-service"></a>Para fazer referência a um serviço WCF  
   
-1.  Sobre o **arquivo** , aponte para **Add** e, em seguida, clique em **novo projeto**.  
+1.  No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**.  
   
 2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó e selecione **Windows**e, em seguida, selecione **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.  
   
@@ -101,7 +98,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../includ
   
 3.  Clique com botão direito **WindowsApplication1** e clique em **Add Service Reference**. O **adicionar referência de serviço** caixa de diálogo será exibida.  
   
-4.  No **adicionar referência de serviço** caixa de diálogo, clique em **Discover**.  
+4.  Na caixa de diálogo **Adicionar Referência de Serviço**, clique em **Descobrir**.  
   
      ![A caixa de diálogo Add Service Reference](../data-tools/media/wcf8.png "wcf8")  
   
@@ -130,4 +127,3 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../includ
   
 ## <a name="see-also"></a>Consulte também  
  [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-

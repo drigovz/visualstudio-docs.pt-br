@@ -1,14 +1,9 @@
 ---
-title: 'Passo a passo: Criando um Basic aplicativo de Shell isolado | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Criando um Basic o aplicativo de Shell isolado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925533"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Passo a passo: Criando um aplicativo básico de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
   
 #### <a name="to-create-a-basic-isolated-shell-solution"></a>Para criar uma solução básica de shell isolado  
   
-1.  Abra o Visual Studio e crie um novo projeto.  
+1.  Abra o Visual Studio e crie um projeto.  
   
 2.  No **novo projeto** janela, expanda **Other Project Types** e, em seguida, **extensibilidade**. Selecione o **isolado do Visual Studio Shell** modelo de projeto.  
   
@@ -120,7 +115,7 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
   
 2.  Remova a seguinte linha:  
   
-     [$RootKey$ \packages.\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3.  Recompile a solução e iniciar a depuração o shell isolado. Abra um arquivo XML, por exemplo, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verifique se que as palavras-chave do XML no arquivo não são coloridas e que digitando "<" em uma linha não ativar XML dicas de ferramenta.  
   
@@ -209,9 +204,9 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
   
     1.  MyVSShellStub.exe.config  
   
-    2.  Debuggerproxy  
+    2.  DebuggerProxy.dll  
   
-    3.  Debuggerproxy  
+    3.  DebuggerProxy.dll.manifest  
   
     4.  MyVSShellStub.pkgdef  
   
@@ -265,4 +260,3 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
   
 ## <a name="testing-the-installation-program"></a>Teste o programa de instalação  
  Para testar a instalação, copie o arquivo de setup.exe para um computador diferente e execute o executável de instalação. Você deve ser capaz de executar o aplicativo de shell isolado.
-

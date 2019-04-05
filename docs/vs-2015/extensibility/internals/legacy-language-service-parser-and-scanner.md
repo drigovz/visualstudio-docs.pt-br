@@ -1,27 +1,22 @@
 ---
 title: Analisador de serviço de linguagem herdada e Scanner | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786387"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925598"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ namespace MyNamespace
   
 |Nome do token|Tipo de token|  
 |----------------|----------------|  
-|namespace, void público, de classe, int|keyword|  
+|namespace, class, public, void, int|keyword|  
 |=|operator|  
 |{ } ( ) ;|delimitador|  
 |MyNamespace, MyClass, MyFunction, arg1, var1|identifier|  
@@ -143,4 +138,3 @@ namespace MyNamespace
  [Visão geral do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-overview.md)   
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Correspondência de chave em um serviço de linguagem herdado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-
