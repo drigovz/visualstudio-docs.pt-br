@@ -1,14 +1,9 @@
 ---
 title: Elemento ProjectItem (modelos de Item do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929163"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelos de item do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ Especifica um arquivo que está incluído no modelo de item.
 > [!NOTE]
 >  O `ProjectItem` elemento aceita atributos diferentes, dependendo se o modelo é para um projeto ou um item. Este tópico explica o `ProjectItem` elemento para o item. Para obter uma explicação sobre o `ProjectItem` elemento para modelos de projeto, consulte [elemento ProjectItem (modelos de projeto do Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectItem >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -86,7 +81,7 @@ Especifica um arquivo que está incluído no modelo de item.
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Quando um item é criado com base neste modelo, o nome do arquivo será baseado no nome que o usuário inseriu na **Adicionar Novo Item** caixa de diálogo. Isso é útil durante a criação de modelos de item de vários arquivos. Para obter mais informações, consulte [como: criar modelos de Item multiarquivos](../ide/how-to-create-multi-file-item-templates.md) e [parâmetros de modelo](../ide/template-parameters.md).  
+ Quando um item é criado com base neste modelo, o nome do arquivo será baseado no nome que o usuário inseriu na **Adicionar Novo Item** caixa de diálogo. Isso é útil durante a criação de modelos de item de vários arquivos. Para obter mais informações, confira [Como: Criar modelos de Item multiarquivos](../ide/how-to-create-multi-file-item-templates.md) e [parâmetros de modelo](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir ilustra os metadados para o modelo de item padrão para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] classe.  
@@ -110,6 +105,5 @@ Especifica um arquivo que está incluído no modelo de item.
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md)   
+ [Como: Criar modelos de Item multiarquivos](../ide/how-to-create-multi-file-item-templates.md)   
  [Parâmetros de modelo](../ide/template-parameters.md)
-

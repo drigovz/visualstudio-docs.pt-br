@@ -1,28 +1,23 @@
 ---
-title: 'Passo a passo: Vinculação de um tipo de conteúdo para uma extensão de nome de arquivo | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Vinculando a um tipo de conteúdo para uma extensão de nome de arquivo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f543992ba23e08be25d5c8206d2b5b0565d33948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739882"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927837"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Passo a passo: vinculando um tipo de conteúdo a uma extensão de nome de arquivo
+# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Passo a passo: Vinculando um tipo de conteúdo a uma extensão de nome de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de nome de arquivo a ela usando as extensões do editor Managed Extensibility Framework (MEF). Em alguns casos, a extensão de nome de arquivo já foi definida por um serviço de linguagem; No entanto, para usá-lo com o MEF você ainda deverá vinculá-lo para um tipo de conteúdo.  
@@ -97,7 +92,7 @@ Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de 
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>Adicionando o tipo de conteúdo para uma exportação de Editor  
   
-1.  Crie uma extensão do editor. Por exemplo, você pode usar a extensão de glifo de margem descrita em [instruções passo a passo: Criando um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Crie uma extensão do editor. Por exemplo, você pode usar a extensão de glifo de margem descrita [passo a passo: Criando um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Adicione a classe definida neste procedimento.  
   
@@ -110,4 +105,3 @@ Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de 
   
 ## <a name="see-also"></a>Consulte também  
  [Serviço de linguagem e pontos de extensão do editor](../extensibility/language-service-and-editor-extension-points.md)
-

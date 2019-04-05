@@ -1,14 +1,9 @@
 ---
-title: 'CA1806: Não ignorar resultados do método | Microsoft Docs'
-ms.custom: ''
+title: 'CA1806: Não ignore resultados do método | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1806
 - DoNotIgnoreMethodResults
@@ -20,14 +15,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0af1f7270cca341b713c5036b2c457f5964c0bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927313"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: não ignore resultados do método
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Não ignorar resultados do método
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -57,7 +52,7 @@ ms.locfileid: "49830581"
   
  Se o método um chama o método B, mas não usa a nova instância de cadeia de caracteres que o método B retorna. Passe a instância como um argumento para outro método, atribua a instância a uma variável. Ou remova a chamada se ela for desnecessária.  
   
- -ou-  
+ - ou -  
   
  Se o método um chama o método B, mas não usa o HRESULT ou código de erro que o método retorna. Use o resultado em uma instrução condicional, atribua o resultado a uma variável ou passá-lo como um argumento para outro método.  
   

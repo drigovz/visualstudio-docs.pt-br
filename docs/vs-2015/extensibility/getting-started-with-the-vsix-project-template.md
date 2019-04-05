@@ -1,26 +1,21 @@
 ---
 title: Introdução ao modelo de projeto do VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f7230bce49342ad8e31baeb3f46c72f1c45d776
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9f5db7f20cf77df72a8c103eea68b3e64cc148b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929055"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Introdução ao modelo de projeto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ Você pode usar o modelo de projeto de VSIX para criar uma extensão ou para uma
 6.  Abra o manifesto do VSIX.  
   
 7.  No manifesto do VSIX, atualize o **ativo** caminho do modelo para que ele aponte para a raiz da árvore de diretório que contém o arquivo de modelo. Por exemplo, se o modelo estiver em \CSharp\Windows, a referência deve apontar para \CSharp.
-

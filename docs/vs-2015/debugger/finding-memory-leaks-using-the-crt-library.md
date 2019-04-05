@@ -1,14 +1,9 @@
 ---
 title: Localizando perdas de memória usando a biblioteca CRT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -34,13 +29,13 @@ ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929479"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Localizando perdas de memória usando a biblioteca CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ _CrtDumpMemoryLeaks();
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
- Por padrão, `_CrtDumpMemoryLeaks` gera o relatório de vazamento de memória para o **Debug** painel da **saída** janela. Você pode usar `_CrtSetReportMode` para redirecionar o relatório para outro local.  
+ Por padrão, a saída `_CrtDumpMemoryLeaks` emite o relatório de vazamento de memória para o painel **Depurar** da janela de **Saída**. Você pode usar `_CrtSetReportMode` para redirecionar o relatório para outro local.  
   
  Se você usar uma biblioteca, a biblioteca poderá redefinir a saída para outro local. Nesse caso, você pode definir o local de saída para o **saída** janela, conforme mostrado aqui:  
   
@@ -114,7 +109,7 @@ Object dump complete.
   
 - O número de alocação de memória, que é `18` nesse exemplo  
   
-- O [tipo de bloco](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), que é `normal` neste exemplo.  
+- O [tipo de bloco](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), que é `normal` neste exemplo.  
   
 - O número de alocação de memória hexadecimal, que é `0x00780E80` nesse exemplo.  
   
@@ -122,7 +117,7 @@ Object dump complete.
   
 - Os primeiros 16 bytes de dados no bloco, no formulário hexadecimal.  
   
-  O relatório de vazamento de memória identifica um bloco de memória como normal, cliente, ou CRT. Um *bloco normal* é a memória comum atribuída pelo seu programa. Um *bloco de cliente* é um tipo especial de bloco de memória usado por programas MFC para objetos que exigem um destruidor. O operador MFC `new` cria um bloco normal ou um bloco de cliente, como apropriado para o objeto que estiver sendo criado. Um *bloco de CRT* é alocado pela biblioteca de CRT para seu próprio uso. A biblioteca de CRT trata a desalocação desses blocos. Portanto, é improvável que você os veja no relatório de vazamento de memória a menos que algo esteja significativamente errado, por exemplo, a biblioteca de CRT está danificada.  
+  O relatório de vazamento de memória identifica um bloco de memória como normal, cliente, ou CRT. Um *bloco normal* é a memória comum atribuída pelo seu programa. Um *bloco de cliente* é um tipo especial de bloco de memória usado por programas MFC para os objetos que exigem um destruidor. O operador MFC `new` cria um bloco normal ou um bloco de cliente, como apropriado para o objeto que estiver sendo criado. Um *bloco de CRT* é atribuído pela biblioteca de CRT para seu próprio uso. A biblioteca de CRT trata a desalocação desses blocos. Portanto, é improvável que você os veja no relatório de vazamento de memória a menos que algo esteja significativamente errado, por exemplo, a biblioteca de CRT está danificada.  
   
   Há dois tipos de outros blocos de memória que nunca aparecem nos relatórios de escape de memória. Um *bloco livre* é a memória que foi lançada. Isso significa que não está vazado, por definição. Uma *bloco ignorar* é a memória que você marcou explicitamente para excluí-lo do relatório de vazamento de memória.  
   
@@ -198,7 +193,7 @@ Isso indica que a alocação vazada foi na linha 20 de debug_new.cpp.
   
 4. Pressione **retornar**.  
   
-    O depurador avalia a chamada e coloca o resultado na **valor** coluna. Esse valor será -1 se você não definir nenhum ponto de interrupção nas alocações de memória.  
+    O depurador avalia a chamada e coloca o resultado na coluna de **Valor**. Esse valor será -1 se você não definir nenhum ponto de interrupção nas alocações de memória.  
   
 5. No **valor** coluna, substitua o valor mostrado com o número de alocação da alocação de memória no qual você deseja interromper.  
   
@@ -271,6 +266,3 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
  [Detalhes do Heap de depuração CRT](../debugger/crt-debug-heap-details.md)   
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando código nativo](../debugger/debugging-native-code.md)
-
-
-

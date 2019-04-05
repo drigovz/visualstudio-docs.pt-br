@@ -1,25 +1,20 @@
 ---
 title: Noções básicas sobre o SAL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792808"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929769"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  Você pode dizer que essa função faz? Quando uma função é implementada ou chamada, certas propriedades devem ser mantidas para garantir a exatidão do programa. Apenas observando uma declaração, como o exemplo, você não sabe o que são. Sem anotações de SAL, você teria que se baseiam na documentação ou comentários de código. Aqui está a documentação do MSDN para `memcpy` diz:  
   
 > "Contagem de cópias de bytes de origem para dest. Se a origem e destino se sobrepõem, o comportamento de memcpy é indefinido. Use memmove para lidar com regiões sobrepostas.   
-> **Observação de segurança:** Certifique-se de que o buffer de destino é o mesmo tamanho ou maior que o buffer de origem. Para obter mais informações, consulte"evitando saturações de Buffer."  
+> **Observação de segurança:** Certifique-se de que o buffer de destino seja do mesmo tamanho ou maior que o buffer de origem. Para obter mais informações, consulte"evitando saturações de Buffer."  
   
  A documentação contém algumas partes de informações que sugerem que seu código deve manter determinadas propriedades para garantir a exatidão do programa:  
   
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md)   
  [Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Práticas recomendadas e exemplos](../code-quality/best-practices-and-examples-sal.md)
-
-
-

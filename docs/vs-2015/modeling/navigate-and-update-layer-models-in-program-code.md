@@ -1,12 +1,9 @@
 ---
 title: Navegar e atualizar modelos de camada no código do programa | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734730"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929837"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar e atualizar modelos de camada no código do programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tópico descreve os elementos e relações em modelos de camada, o que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de camada do ponto de vista do usuário, consulte [diagramas de camada: referência](../modeling/layer-diagrams-reference.md) e [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md).  
+Este tópico descreve os elementos e relações em modelos de camada, o que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de camada do ponto de vista do usuário, consulte [diagramas de camada: Referência](../modeling/layer-diagrams-reference.md) e [diagramas de camada: Diretrizes de](../modeling/layer-diagrams-guidelines.md).  
   
  O modelo <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> descrito neste tópico é uma fachada em um modelo <xref:Microsoft.VisualStudio.GraphModel> mais geral. Se você estiver escrevendo uma [extensão de gesto ou comando de menu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), use o `Layer` modelo. Se você estiver escrevendo uma [extensão de validação de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), é mais fácil de usar o `GraphModel`.  
   
@@ -134,9 +131,6 @@ public void ... (...)
  [Adicionar comandos e gestos a diagramas de camada](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [Adicionar validação de arquitetura personalizada a diagramas de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Adicionar propriedades personalizadas a diagramas de camada](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)   
- [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramas de camada: Referência](../modeling/layer-diagrams-reference.md)   
+ [Diagramas de camada: Diretrizes](../modeling/layer-diagrams-guidelines.md)   
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: 'Como: avaliar uma expressão XPath | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Avaliar uma expressão XPath | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929737"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Como: Avalie uma expressão XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Como: Avaliar uma expressão XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode avaliar expressões XPath com o **QuickWatch** caixa de diálogo. A expressão XPath deve ser válido de acordo com a recomendação XPath 1,0 W3C. XSLT de contexto atual — ou seja, o `self::node()` nó o **Locals** janela — fornece o contexto de avaliação da expressão XPath.  
@@ -35,7 +30,7 @@ Você pode avaliar expressões XPath com o **QuickWatch** caixa de diálogo. A e
 -   As funções definidas pelo usuário não são suportadas.  
   
 > [!NOTE]
->  O procedimento a seguir usa arquivos de Belowavg e Books. XML do [instruções passo a passo: depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tópico.  
+>  O procedimento a seguir usa arquivos de Belowavg e Books. XML do [passo a passo: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tópico.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Para avaliar uma expressão XPath  
   
@@ -59,4 +54,3 @@ Você pode avaliar expressões XPath com o **QuickWatch** caixa de diálogo. A e
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração de XSLT](../xml-tools/debugging-xslt.md)
-
