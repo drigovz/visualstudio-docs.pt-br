@@ -1,12 +1,8 @@
 ---
 title: Suspensão automática de recursos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 - performance
@@ -16,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927977"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensão automática de recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +39,7 @@ Se a memória disponível no sistema cai a 200MB ou menos, o Visual Studio exibe
  Para obter dicas e truques sobre como melhorar o desempenho do Visual Studio ao lidar com grandes soluções ou condições de memória baixa, consulte [considerações sobre desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 ## <a name="full-solution-analysis-suspended"></a>Análise de solução completa suspenso
- Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual c#. No entanto, em uma condição de pouca memória, análise de solução completa é automaticamente desabilitada para Visual Basic e Visual c#, independentemente de suas definições na caixa de diálogo Opções. No entanto, você pode habilitar novamente a análise de solução completa, escolhendo a **reabilitar** botão nas informações da barra quando ele for exibido, selecionando a **habilitar análise de solução completa** caixa de seleção na caixa de diálogo Opções, ou, reiniciar o Visual Studio. A caixa de diálogo Opções sempre mostra a atual solução completa as configurações de análise. Para obter mais informações, consulte [como: habilitar e desabilitar análise completa da solução](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+ Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual c#. No entanto, em uma condição de pouca memória, análise de solução completa é automaticamente desabilitada para Visual Basic e Visual c#, independentemente de suas definições na caixa de diálogo Opções. No entanto, você pode habilitar novamente a análise de solução completa, escolhendo a **reabilitar** botão nas informações da barra quando ele for exibido, selecionando a **habilitar análise de solução completa** caixa de seleção na caixa de diálogo Opções, ou, reiniciar o Visual Studio. A caixa de diálogo Opções sempre mostra a atual solução completa as configurações de análise. Para obter mais informações, confira [Como: Habilitar e desabilitar análise completa da solução](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC baixa latência desabilitada
  Para habilitar o modo de baixa latência de GC novamente, reinicie o Visual Studio.  Por padrão, o Visual Studio habilita o modo de baixa latência de GC sempre que você está digitando para garantir que sua digitação não impeça que quaisquer operações de GC. No entanto, se uma condição de pouca memória faz com que o Visual Studio exibir o aviso de suspensão automática, o modo de baixa latência de GC está desabilitado para a sessão. Reiniciar o Visual Studio irá habilitar novamente o comportamento de GC padrão. Para obter mais informações, consulte <xref:System.Runtime.GCLatencyMode>.
@@ -65,6 +61,6 @@ Além disso, os caches usados para operações internas do Visual Studio também
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como habilitar e desabilitar a análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Como: Habilitar e desabilitar análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Conceitos básicos da coleta de lixo](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Considerações sobre desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

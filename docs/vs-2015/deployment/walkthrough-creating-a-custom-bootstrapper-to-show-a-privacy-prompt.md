@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Criando um Bootstrapper personalizado para mostrar uma privacidade Prompt | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893384"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926598"
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Instruções passo a passo: criando um bootstrapper personalizado para mostrar um prompt de privacidade
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Passo a passo: Criando um Bootstrapper personalizado para mostrar um Prompt de privacidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode configurar os aplicativos ClickOnce para atualizar automaticamente quando assemblies com versões do assembly e versões mais recentes do arquivo se tornam disponíveis. Para certificar-se de que seus clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Então, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ele não é instalado.  
@@ -154,7 +149,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 -   Um documento para os termos de licença de software.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Etapa 1: Criar o diretório de bootstrapper  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Etapa 1: Para criar o diretório de bootstrapper  
   
 1.  Crie um diretório chamado **UpdateConsentDialog** em %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
@@ -166,7 +161,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
     > [!NOTE]
     >  Crie um novo diretório para cada localidade. Por exemplo, você pode adicionar subdiretórios para as localidades fr e Alemanha. Esses diretórios conteria o francês e alemão cadeias de caracteres e os pacotes de idiomas, se necessário.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Etapa 2: Criar o arquivo de manifesto Product  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Etapa 2: Para criar o arquivo de manifesto Product  
   
 1.  Crie um arquivo de texto chamado `product.xml`.  
   
@@ -198,7 +193,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 3.  Salve o arquivo para o diretório de bootstrapper UpdateConsentDialog.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Etapa 3: Criar o manifesto Package. XML de arquivos e o software de termos de licença  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Etapa 3: Para criar o arquivo de manifesto Package. XML e os termos de licença de software  
   
 1.  Crie um arquivo de texto chamado `package.xml`.  
   
@@ -242,7 +237,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 1.  Na **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.  
   
-2.  Sobre o **Project** menu, clique em *ProjectName* **propriedades**.  
+2.  No menu **Projeto**, clique em *ProjectName* **Propriedades**.  
   
 3.  Clique o **Publish** página e, em seguida, clique em **pré-requisitos**.  
   
@@ -260,7 +255,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 1.  Na **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.  
   
-2.  Sobre o **Project** menu, clique em *ProjectName* **propriedades**.  
+2.  No menu **Projeto**, clique em *ProjectName* **Propriedades**.  
   
 3.  Clique o **Publish** página e, em seguida, clique em **publicar agora**.  
   
@@ -272,13 +267,13 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 6.  Leia o contrato de licença de software e, em seguida, clique em **Accept**.  
   
-     O aplicativo de diálogo de consentimento de atualização é exibida e mostra o seguinte texto: verifica se o aplicativo que você está prestes a instalar as atualizações mais recentes na Web. Ao clicar em concordo, você deve autorizar o aplicativo para verificar se há atualizações automaticamente na Internet.  
+     O aplicativo de diálogo de consentimento de atualização é exibida e mostra o seguinte texto: Verifica se o aplicativo que você está prestes a instalar as atualizações mais recentes na Web. Ao clicar em concordo, você deve autorizar o aplicativo para verificar se há atualizações automaticamente na Internet.  
   
 7.  Feche o aplicativo ou clique em Cancelar.  
   
      O aplicativo mostra um erro: Ocorreu um erro durante a instalação de componentes do sistema do *ApplicationName*. A instalação não pode continuar até que todos os componentes do sistema foi instalados com êxito.  
   
-8.  Clique em detalhes para exibir a seguinte mensagem de erro: componente atualizar diálogo de consentimento não foi instalado com a seguinte mensagem de erro: "o contrato de atualização automática não é aceito". Os seguintes componentes não conseguiu instalar:-atualização de caixa de diálogo de consentimento  
+8.  Clique em detalhes para mostrar a mensagem de erro a seguir: Diálogo de consentimento de atualização de componente falhou ao instalar com a seguinte mensagem de erro: "O contrato de atualização automática não é aceito". Os seguintes componentes não conseguiu instalar:-atualização de caixa de diálogo de consentimento  
   
 9. Clique em **Fechar**.  
   
@@ -286,7 +281,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 1.  Na **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.  
   
-2.  Sobre o **Project** menu, clique em *ProjectName* **propriedades**.  
+2.  No menu **Projeto**, clique em *ProjectName* **Propriedades**.  
   
 3.  Clique o **Publish** página e, em seguida, clique em **publicar agora**.  
   
@@ -298,7 +293,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 6.  Leia o contrato de licença de software e, em seguida, clique em **Accept**.  
   
-     O aplicativo de diálogo de consentimento de atualização é exibida e mostra o seguinte texto: verifica se o aplicativo que você está prestes a instalar as atualizações mais recentes na Web. Ao clicar em concordo, você deve autorizar o aplicativo para verificar se há atualizações automaticamente na Internet.  
+     O aplicativo de diálogo de consentimento de atualização é exibida e mostra o seguinte texto: Verifica se o aplicativo que você está prestes a instalar as atualizações mais recentes na Web. Ao clicar em concordo, você deve autorizar o aplicativo para verificar se há atualizações automaticamente na Internet.  
   
 7.  Clique em **concordo**e, em seguida, clique em **continuar**.  
   
@@ -309,9 +304,6 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 ## <a name="see-also"></a>Consulte também  
  [Pré-requisitos de implantação do aplicativo](../deployment/application-deployment-prerequisites.md)   
  [Criando pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)   
- [Como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md)   
- [Como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md)   
+ [Como: Criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md)   
+ [Como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md)   
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Como: depurar de um projeto DLL | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar de um projeto DLL | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,20 +19,20 @@ ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61ccfc1fbf97dc36ed0625f95f998f9b154fd68c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926878"
 ---
-# <a name="how-to-debug-from-a-dll-project"></a>Como depurar a partir de um projeto de DLL
+# <a name="how-to-debug-from-a-dll-project"></a>Como: Depurar de um projeto DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para iniciar a depuração de um projeto DLL, você deve especificar o aplicativo de chamada nas propriedades do projeto. As páginas de propriedades do C++ diferem no layout e conteúdo a partir do c# e Visual Basic páginas de propriedades.  
   
- Se uma DLL gerenciada for chamada por código nativo e você quiser depurar os dois, você pode especificar isso nas propriedades do projeto. Para obter mais informações, consulte [como: depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).  
+ Se uma DLL gerenciada for chamada por código nativo e você quiser depurar os dois, você pode especificar isso nas propriedades do projeto. Para obter mais informações, confira [Como: Depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
 >  Você não pode especificar um aplicativo de chamada externa nas edições Express do Visual Studio. Em vez disso, você precisa adicionar um projeto executável à solução, defini-lo como o projeto de inicialização e chamar métodos na DLL do projeto executável.  
@@ -79,6 +74,3 @@ Para iniciar a depuração de um projeto DLL, você deve especificar o aplicativ
  [Configurações do projeto para configurações de depuração de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Configurações do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-
-
-
