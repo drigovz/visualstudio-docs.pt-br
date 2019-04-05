@@ -1,24 +1,19 @@
 ---
 title: Elemento SDKReference (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4462e42eb0810c3ab988610149395fd4a52fce78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 606c6595f83003c463d218cf7253407ae2e925d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923436"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Elemento SDKReference (Modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,5 +65,4 @@ Especifica que o modelo de item usa uma referência de SDK.
  [Elemento References (modelos do Visual Studio)](../extensibility/references-element-visual-studio-templates.md)   
  [Elemento de referência (modelos do Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
+ [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

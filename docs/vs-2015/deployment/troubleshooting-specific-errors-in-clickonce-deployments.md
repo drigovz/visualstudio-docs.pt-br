@@ -1,14 +1,9 @@
 ---
 title: Solução de problemas de erros específicos nas implantações do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -24,13 +19,13 @@ ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924553"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Solução de problemas com erros específicos nas implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
   
  Você também deve definir os tipos de conteúdo (também conhecido como tipos de MIME) adequadamente para arquivos. Deploy,. Application e. manifest. Para obter mais informações, consulte a documentação do servidor Web.  
   
- Para obter mais informações, consulte "Windows Server 2003: outra tipos de conteúdo" em [problemas de configuração de cliente em implantações do ClickOnce e servidor](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Para obter mais informações, consulte "Windows Server 2003: Bloqueado tipos de conteúdo" [problemas de configuração de cliente em implantações do ClickOnce e servidor](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Mensagem de erro: "Aplicativo está formatado incorretamente;" Arquivo de log contém "assinatura XML é inválida"  
  Certifique-se de que você atualizou o arquivo de manifesto e assinado novamente. Republique o aplicativo usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou use Mage para assinar o aplicativo novamente.  
@@ -78,13 +73,13 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
   
 -   Tente reiniciar o aplicativo no menu Iniciar. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pode ter detectado a atualização em segundo plano, mas solicitará que você instale os bits na próxima ativação.  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante a atualização, você recebe um erro com a seguinte entrada de log: "a referência na implantação não coincide com a identidade definida no manifesto do aplicativo"  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante a atualização, você recebe um erro com a seguinte entrada de log: "A referência na implantação não coincide com a identidade definida no manifesto do aplicativo"  
  Esse erro pode ocorrer porque você editar manualmente os manifestos de implantação e o aplicativo e ter causado a descrição da identidade de um assembly em um manifesto para que fiquem fora de sincronia com as outras. A identidade de um assembly consiste em seu nome, versão, cultura e token de chave pública. Examine as descrições de identidade em seus manifestos e corrigir quaisquer diferenças.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Primeira vez que a ativação do CD-ROM ou disco local for bem-sucedida, mas subsequente ativação do Menu Iniciar não tiver êxito  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usa a URL do provedor de implantação para receber atualizações para o aplicativo. Verifique se o local que aponta para a URL está correto.  
   
-#### <a name="error-cannot-start-the-application"></a>Erro: "não é possível iniciar o aplicativo"  
+#### <a name="error-cannot-start-the-application"></a>Erro: "Não é possível iniciar o aplicativo"  
  Essa mensagem de erro geralmente indica que há um problema ao instalar esse aplicativo para o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] armazenar. O aplicativo tem um erro ou o repositório está corrompido. O arquivo de log pode informar onde ocorreu o erro.  
   
  Você deve fazer o seguinte:  
@@ -112,8 +107,8 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensagem de erro: Não é possível criar o site da Web '\<site >'. Os componentes para se comunicar com as extensões FrontPage Server Extensions não estão instalados.  
  Certifique-se de que você tenha o Microsoft Visual Studio Web criação componente instalado no computador em que você está publicando da. Para usuários do Express, esse componente não está instalado por padrão. Para obter mais informações, consulte [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensagem de erro: Não foi possível encontrar o arquivo ' Microsoft.Windows.Common-controles, versão = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'  
- Essa mensagem de erro aparece quando você tentar publicar um aplicativo WPF com estilos visuais habilitados. Para resolver esse problema, consulte [como: publicar um aplicativo WPF com estilos visuais habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensagem de erro: Could not find file 'Microsoft.Windows.Common-Controls, Version=6.0.0.0, Culture=*, PublicKeyToken=6595b64144ccf1df, ProcessorArchitecture=\*, Type=win32'  
+ Essa mensagem de erro aparece quando você tentar publicar um aplicativo WPF com estilos visuais habilitados. Para resolver esse problema, consulte [como: Publicar um aplicativo WPF com estilos visuais habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>Usando o Mage  
   
@@ -130,7 +125,7 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
 ## <a name="additional-errors"></a>Outros erros  
  A tabela a seguir mostra algumas mensagens de erro comuns que um usuário do computador cliente pode receber quando o usuário instala um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo. Cada mensagem de erro é listada ao lado de uma descrição do que a causa mais provável do erro.  
   
-|mensagem de erro|Descrição|  
+|Mensagem de erro|Descrição|  
 |-------------------|-----------------|  
 |Aplicativo não pode ser iniciado. Entre em contato com o Editor do aplicativo.<br /><br /> Não é possível iniciar o aplicativo. Para obter assistência, entre em contato com o fornecedor do aplicativo.|Essas são mensagens de erro genérico que ocorrem quando o aplicativo não pode ser iniciado, e nenhum outro motivo específico pode ser encontrado. Com frequência isso significa que o aplicativo está corrompido de alguma forma, ou que o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] repositório está corrompido.|  
 |Não é possível continuar. O aplicativo está formatado incorretamente. Para obter assistência, entre em contato com o Editor do aplicativo.<br /><br /> Validação de aplicativo não foi bem-sucedida. Não é possível continuar.<br /><br /> Não é possível recuperar arquivos do aplicativo. Arquivos corrompidos na implantação.|Um dos arquivos de manifesto na implantação sintaticamente não é válido ou contém um hash que não pode ser reconciliado com o arquivo correspondente. Esse erro também pode indicar que o manifesto inserido dentro de um assembly está corrompido. Crie novamente sua implantação e recompilar seu aplicativo, ou encontrar e corrigir os erros manualmente em seus manifestos.|  
@@ -147,6 +142,3 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
 ## <a name="see-also"></a>Consulte também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Solução de problemas de implantações ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-
-
-

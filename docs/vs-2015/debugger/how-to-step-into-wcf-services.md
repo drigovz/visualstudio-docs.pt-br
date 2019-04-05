@@ -1,14 +1,9 @@
 ---
-title: 'Como: intervir em serviços WCF | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Intervir em serviços WCF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 9893ad01-54af-499f-85a6-9d1cfe6eb640
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7474626ccf5310faf5fc22c6323dc388dd20461d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ad5ca2d74a1c141b9687d9b9eac5d8b3e268cc0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798073"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922770"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Como intervir em serviços WCF
+# <a name="how-to-step-into-wcf-services"></a>Como: Intervir nos serviços WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], você pode entrar em um serviço WCF. Se o serviço WCF estiver na mesma solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que o cliente, você poderá usar pontos de interrupção no serviço WCF.  
@@ -40,7 +35,7 @@ No [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], você pode entrar
   
 1.  Crie uma solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contém os projetos de cliente WCF e serviço WCF.  
   
-2.  No Solution Explorer, o projeto de cliente do WCF com o botão direito e, em seguida, clique em **definir como projeto de inicialização**.  
+2.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto Cliente WCF e clique em **Definir como projeto de inicialização**.  
   
 3.  Habilite a depuração no arquivo app.config ou web.config. Para obter mais informações, consulte [limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md).  
   
@@ -50,8 +45,5 @@ No [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], você pode entrar
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando serviços WCF](../debugger/debugging-wcf-services.md)   
- [Limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
-
-
-
+ [Limitações na depuração do WCF](../debugger/limitations-on-wcf-debugging.md)   
+ [Como: Depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

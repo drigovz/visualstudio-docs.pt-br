@@ -1,27 +1,22 @@
 ---
 title: Interface do usuário personalizada (VSPackage de controle do código-fonte) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 237a79fe0225f54bd8be1f779f241bc54f13cd09
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f03713213ec2e54ed8d82d7528dae12cefab7ebc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922580"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface do usuário personalizada (VSPackage de controle do código-fonte)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,4 +64,3 @@ Um VSPackage declara seus itens de menu e seus estados padrão por meio do arqui
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>   
  <xref:EnvDTE.Constants.vsContextNoSolution>   
  [Gerenciar VSPackages](../../extensibility/managing-vspackages.md)
-

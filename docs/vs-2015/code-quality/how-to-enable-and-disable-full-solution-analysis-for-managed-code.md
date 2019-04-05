@@ -1,12 +1,9 @@
 ---
-title: 'Como: habilitar e desabilitar análise de solução completa para código gerenciado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Habilitar e desabilitar análise de solução completa para código gerenciado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,17 +11,17 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221865"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922377"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como: habilitar e desabilitar análise de solução completa para código gerenciado
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como: Habilitar e desabilitar análise de solução completa para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-OBSERVAÇÃO]
+[OBSERVAÇÃO]
 >  Este tópico se aplica somente ao Visual Studio 2015 atualização 3 RC e posterior.  
   
  *Análise de solução completa* é um recurso do Visual Studio que permite que você escolha se você vê problemas de análise de código somente em arquivos abertos de Visual c# ou Visual Basic em sua solução, ou em arquivos abertos e fechados, do Visual c# ou Visual Basic em sua solução.  
@@ -59,6 +56,3 @@ OBSERVAÇÃO]
  Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual c#.  
   
  Visual Studio Update 3 RC inclui um mecanismo de diagnóstico v2 de analisador de código aprimorada que reduz o uso de memória significativamente e diminui o tempo de CPU permanecer ocioso, mesmo se a análise de solução completa está habilitada.
-
-
-

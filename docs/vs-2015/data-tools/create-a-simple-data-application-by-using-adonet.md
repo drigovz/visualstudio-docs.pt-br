@@ -1,12 +1,9 @@
 ---
 title: Criar um aplicativo de dados simples usando o ADO.NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824276"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58924957"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +51,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
   
 - Visual Studio Community Edition.  
   
-- SQL Server Express LocalDB.  
+- LocalDB do SQL Server Express.  
   
 - O banco de dados de exemplo pequeno que você criar seguindo as etapas em [criar um banco de dados SQL usando um script](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
@@ -102,11 +99,11 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
 |---------------------------------------|----------------|  
 |TextBox|Nome = txtCustomerName|  
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = True|  
-|Botão|Name = btnCreateAccount|  
+|Botão|Nome = btnCreateAccount|  
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Máximo = 5000<br /><br /> Nome = numOrderAmount|  
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpOrderDate|  
 |Botão|Nome = btnPlaceOrder|  
-|Botão|Name = btnAddAnotherAccount|  
+|Botão|Nome = btnAddAnotherAccount|  
 |Botão|Nome = btnAddFinish|  
   
  **Formulário FillOrCancel**  
@@ -116,7 +113,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
 |Controles para o formulário FillOrCancel|Propriedades|  
 |----------------------------------------|----------------|  
 |TextBox|Nome = txtOrderID|  
-|Botão|Name = btnFindByOrderID|  
+|Botão|Nome = btnFindByOrderID|  
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpFillDate|  
 |DataGridView|Nome = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|  
 |Botão|Nome = btnCancelOrder|  
@@ -734,7 +731,7 @@ End Namespace
 |NC-16|Defina um método para verificar se um nome de cliente está presente.<br /><br /> -Se a caixa de texto está vazia, exibir uma mensagem e retornar `false`, porque é necessário um nome para criar a conta.<br />-Se a caixa de texto não estiver vazia, retorne `true`.|  
 |NC-17|Adicione código para o manipulador de eventos para o `btnPlaceOrder` botão.|  
 |NC-18|Encapsular a chamada para `isPlaceOrderReady` em torno de `btnPlaceOrder_Click` código de evento, de modo que `uspPlaceNewOrder` não será executado se a entrada necessária não estiver presente.|  
-|NC-19 até NC-25|Essas seções de código lembram o código que você adicionou para a `btnCreateAccount_Click` manipulador de eventos.<br /><br /> -NC-19. Criar o `SqlCommand` objeto, `cmdNewOrder`e especifique `Sales.uspPlaceOrder` como o procedimento armazenado.<br />-NC-20 até NC-23 são parâmetros de entrada para o procedimento armazenado.<br />-NC-24. `@RC` conterá um valor de retorno que é a ID da ordem gerada do banco de dados. Direção desse parâmetro é especificada como `ReturnValue`.<br />-NC-25. Store o valor da ID do pedido no `orderID` variável que você declarou em NC-2 e exibir o valor em uma caixa de mensagem.|  
+|NC-19 até NC-25|Essas seções de código lembram o código que você adicionou para a `btnCreateAccount_Click` manipulador de eventos.<br /><br /> -   NC-19. Criar o `SqlCommand` objeto, `cmdNewOrder`e especifique `Sales.uspPlaceOrder` como o procedimento armazenado.<br />-NC-20 até NC-23 são parâmetros de entrada para o procedimento armazenado.<br />-   NC-24. `@RC` conterá um valor de retorno que é a ID da ordem gerada do banco de dados. Direção desse parâmetro é especificada como `ReturnValue`.<br />-   NC-25. Store o valor da ID do pedido no `orderID` variável que você declarou em NC-2 e exibir o valor em uma caixa de mensagem.|  
 |NC-26|Defina um método para verificar se uma ID de cliente existe e que foi especificado um valor em `numOrderAmount`.|  
 |NC-27|Chame o `ClearForm` método no `btnAddAnotherAccount` manipulador de eventos de clique.|  
 |NC-28|Criar o `ClearForm` método para limpar os valores do formulário se você quiser adicionar outro cliente.|  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> Teste seu aplicativo  
  Selecione a tecla F5 para compilar e testar seu aplicativo depois que você codifica cada manipulador de eventos de clique e, em seguida, depois de concluir a codificação.
-

@@ -1,26 +1,21 @@
 ---
 title: Dados de documento e o documento de exibição em editores personalizados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55f082711de306e9dd22fdf55e769282ad150f17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f73ffde43f2ef3608ae492a9643f7920243d818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922864"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dados de documento e exibição de documentos em editores personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +41,10 @@ Um editor personalizado consiste em duas partes: um objeto de dados de documento
 ## <a name="see-also"></a>Consulte também  
  [Suporte a vários modos de exibição de documento](../extensibility/supporting-multiple-document-views.md)   
  [Incorporação simplificada](../extensibility/simplified-embedding.md)   
- [Como: anexar exibições para dados de documentos](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Como: Anexar exibições para dados de documentos](../extensibility/how-to-attach-views-to-document-data.md)   
  [Gerenciamento de titular de bloqueio de documento](../extensibility/document-lock-holder-management.md)   
  [Modos de exibição únicos e com várias guias](../extensibility/single-and-multi-tab-views.md)   
  [Salvar um documento padrão](../extensibility/internals/saving-a-standard-document.md)   
  [A tabela de documento em execução e persistência](../extensibility/internals/persistence-and-the-running-document-table.md)   
  [Determinar qual Editor abre um arquivo em um projeto](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
  [Fábricas de editor](../extensibility/editor-factories.md)
-

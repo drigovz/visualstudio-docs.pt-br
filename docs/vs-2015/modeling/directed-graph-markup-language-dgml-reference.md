@@ -1,23 +1,20 @@
 ---
 title: Direcionado a referência de Graph Markup Language (DGML) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f352d87975bf2c9705b348b465215a0a9fe72f2a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922534"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referência DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -329,6 +326,3 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
  [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)   
  [Usar mapas de códigos para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
-
-
-
