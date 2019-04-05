@@ -1,14 +1,9 @@
 ---
 title: Edições sem suporte no Visual Basic, editar e continuar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787894"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58929915"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Edições não suportadas em Editar e Continuar do Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ Editar e Continuar permite parar a execução do programa no modo de interrupç�
  Se você precisar fazer uma alteração que não tem suporte, deverá parar a depuração, fazer as alterações e iniciar uma nova sessão de depuração.  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Edições de corpo de propriedade e método  
- **Sem suporte a alterações em variáveis locais estáticas**: adicionando ou atualizando uma variável local ou remover uma variável local estática, se o que causaria um erro de compilação.  
+ **Sem suporte a alterações em variáveis locais estáticas**: Adicionando ou atualizando uma variável local ou remoção de uma variável local estática se isso causaria um erro de compilação.  
   
- **Sem suporte a alterações aos genéricos**: não há suporte para alterações no próprio método genérico ou corpo do método genérico. A instanciação de um tipo genérico ou chamadas para os métodos genéricos existentes pode ser adicionada, excluída ou modificada.  
+ **Sem suporte a alterações aos genéricos**: As alterações ao próprio método genérico ou corpo do método genérico não têm suporte. A instanciação de um tipo genérico ou chamadas para os métodos genéricos existentes pode ser adicionada, excluída ou modificada.  
   
  **Outras alterações sem suporte**  
   
@@ -223,8 +218,5 @@ Editar e Continuar permite parar a execução do programa no modo de interrupç�
 -   Alterando o tipo de um campo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: aplicar edições no modo de interrupção com editar e continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Como: Aplicar edições no modo de interrupção com editar e continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-
