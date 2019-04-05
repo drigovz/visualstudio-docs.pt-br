@@ -1,14 +1,9 @@
 ---
-title: 'Como: personalizar a página da Web padrão para um aplicativo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Personalizar a página da Web padrão para um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,15 +17,15 @@ ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b87019a824acada616865fd65cfd6aade8aa6ec9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a8fc28666a7b0c1d44ad36fabffa19974fea5956
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243419"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924672"
 ---
-# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Como personalizar a página da Web padrão para um aplicativo ClickOnce
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Como: Personalizar a página da Web padrão para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao publicar um aplicativo ClickOnce para a Web, uma página da Web é gerada automaticamente e publicada com o aplicativo. A página padrão contém o nome do aplicativo e links para instalar o aplicativo, instale os pré-requisitos ou acessar a Ajuda no MSDN.  
@@ -38,7 +33,7 @@ Ao publicar um aplicativo ClickOnce para a Web, uma página da Web é gerada aut
 > [!NOTE]
 >  Os links reais que você vê na página dependem do computador em que a página estiver sendo exibida e o que você está incluindo de pré-requisitos.  
   
- O nome padrão para a página da Web é Publish. htm; Você pode alterar o nome na **Designer de projeto**. Para obter mais informações, consulte [como: especificar uma página de publicação para um aplicativo ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
+ O nome padrão para a página da Web é Publish. htm; Você pode alterar o nome na **Designer de projeto**. Para obter mais informações, confira [Como: Especifique uma página de publicação para um aplicativo ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
   
  A página da Web de Publish. htm é publicada somente se for detectada uma versão mais recente.  
   
@@ -47,7 +42,7 @@ Ao publicar um aplicativo ClickOnce para a Web, uma página da Web é gerada aut
   
 ### <a name="to-customize-the-publish-web-page"></a>Para personalizar a página Web publicar  
   
-1.  Publica seu aplicativo ClickOnce em um local da Web. Para obter mais informações, consulte [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+1.  Publica seu aplicativo ClickOnce em um local da Web. Para obter mais informações, confira [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 2.  No servidor Web, abra o arquivo publish. htm no Visual Web Designer ou outro editor de HTML.  
   
@@ -58,8 +53,5 @@ Ao publicar um aplicativo ClickOnce para a Web, uma página da Web é gerada aut
 ## <a name="see-also"></a>Consulte também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Como especificar uma página de publicação para um aplicativo ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
-
-
-
+ [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Como: Especificar uma página de publicação para um aplicativo ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
