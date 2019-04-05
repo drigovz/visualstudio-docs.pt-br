@@ -1,12 +1,9 @@
 ---
 title: 'Diagramas de componente UML: Diretrizes | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,15 +14,15 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927631"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>Diagramas de componente UML: diretrizes
+# <a name="uml-component-diagrams-guidelines"></a>Diagramas de componente UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a estrutura de um sistema de software. Para uma demonstração em vídeo, consulte [criando a estrutura física usando diagramas de componente](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).  
@@ -49,13 +46,13 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
   
 |Outro diagrama|Ajuda a debater e transmitir esses aspectos do design|  
 |-------------------|--------------------------------------------------------------------|  
-|Diagrama de Sequência UML|-As interações entre componentes de um sistema<br />-As interações entre as partes dentro de um componente.<br /><br /> Para obter mais informações, consulte [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|Diagrama de Classes UML|-As interfaces de um componente. O diagrama de classe permite detalhar os métodos da interface.<br />-Os dados enviados em parâmetros nas interfaces dos componentes.<br /><br /> Para obter mais informações, consulte [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md).|  
-|Diagramas de Atividade|-O processamento interno realizado por um componente em resposta às mensagens de entrada.<br /><br /> Para obter mais informações, consulte [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).|  
-|Diagramas de Camada|-Camadas arquitetônicas lógicas para os componentes.<br /><br /> Para obter mais informações, consulte [diagramas de camada: referência](../modeling/layer-diagrams-reference.md).|  
+|Diagrama de Sequência UML|-As interações entre componentes de um sistema<br />-As interações entre as partes dentro de um componente.<br /><br /> Para obter mais informações, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|Diagrama de Classes UML|-As interfaces de um componente. O diagrama de classe permite detalhar os métodos da interface.<br />-Os dados enviados em parâmetros nas interfaces dos componentes.<br /><br /> Para obter mais informações, confira [Diagramas de classe UML: Diretrizes de](../modeling/uml-class-diagrams-guidelines.md).|  
+|Diagramas de Atividade|-O processamento interno realizado por um componente em resposta às mensagens de entrada.<br /><br /> Para obter mais informações, consulte [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md).|  
+|Diagramas de Camada|-Camadas arquitetônicas lógicas para os componentes.<br /><br /> Para obter mais informações, consulte [diagramas de camada: Referência](../modeling/layer-diagrams-reference.md).|  
   
 ##  <a name="Basics"></a> Etapas básicas para desenhar diagramas de componente  
- Para informações de referência sobre os elementos em diagramas de componente, consulte [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md).  
+ Para informações de referência sobre os elementos em diagramas de componente, consulte [diagramas de componente UML: Referência](../modeling/uml-component-diagrams-reference.md).  
   
  Para obter mais informações sobre como usar diagramas de componente no processo de design, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
   
@@ -149,7 +146,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
   
 -   Encontre a interface no **Gerenciador de modelos UML** e, em seguida, arraste-o a partir daí para o componente.  
   
-     -ou-  
+     - ou -  
   
 -   Copie e cole uma referência para uma interface de um diagrama.  
   
@@ -279,7 +276,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
   
 1.  Criar um novo diagrama de sequência.  
   
-     Para obter mais informações, consulte [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Para obter mais informações, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 2.  Crie uma linha da vida para um componente externo, usuário, dispositivo ou outro ator (1) que envia mensagens para esse componente.  
   
@@ -301,7 +298,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
  É possível indicar isso no modelo definindo o **Is Indirectly Instantiated** propriedade do componente. Nesse caso, todas as interfaces do componente devem estar nas portas, com delegações para partes internas.  
   
 ### <a name="describing-the-process-inside-each-part"></a>Descrevendo o Processo Dentro de Cada Parte  
- É possível usar diagramas de atividade para mostrar como um componente processa cada mensagem recebida. Para obter mais informações, consulte [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).  
+ É possível usar diagramas de atividade para mostrar como um componente processa cada mensagem recebida. Para obter mais informações, consulte [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Diagrama de atividade com o buffer de dados](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -337,12 +334,9 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
   
 ## <a name="see-also"></a>Consulte também  
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)   
- [Diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramas de caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramas de componente UML: Referência](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramas de sequência de UML: Referência](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrama de casos de uso UML: Referência](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de componente UML: Referência](../modeling/uml-component-diagrams-reference.md)   
  [Vídeo: Criando a estrutura física usando diagramas de componente](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-

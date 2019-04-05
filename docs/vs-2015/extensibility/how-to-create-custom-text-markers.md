@@ -1,28 +1,23 @@
 ---
-title: 'Como: criar marcadores de texto personalizado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar marcadores de texto personalizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b0a280b44ad468ba44baf81efcc4e4569638e8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bd79d91dbf9705bf0faf743e66b4da40008307ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783075"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929304"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Como: criar marcadores de texto personalizado
+# <a name="how-to-create-custom-text-markers"></a>Como: Criar marcadores de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se você quiser criar um marcador de texto personalizado para enfatizar ou organizar o código, você deve executar as seguintes etapas:  
@@ -33,13 +28,13 @@ Se você quiser criar um marcador de texto personalizado para enfatizar ou organ
   
 - Criar um serviço que pode ser usado por outros processos para fazer uso do marcador de texto  
   
-  Para obter detalhes sobre como aplicar um marcador de texto em uma região de código, consulte [como: Use marcadores de texto](../extensibility/how-to-use-text-markers.md).  
+  Para obter detalhes sobre como aplicar um marcador de texto em uma região de código, consulte [como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Para registrar um marcador personalizado  
   
 1. Crie uma entrada de registro da seguinte maneira:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* \Text Editor\External marcadores\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>é um `GUID` usado para identificar o marcador que está sendo adicionado  
   
@@ -96,7 +91,6 @@ Se você quiser criar um marcador de texto personalizado para enfatizar ou organ
   
 ## <a name="see-also"></a>Consulte também  
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
- [Como: implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)   
- [Como usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
-
+ [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
+ [Como: Implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)   
+ [Como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Como: abrir editores específicos do projeto | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Abrir editores específicos do projeto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbafb5938f26b4cdb702168ee2f3500def7ac9c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817666"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928078"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Como: abrir editores específicos do projeto
+# <a name="how-to-open-project-specific-editors"></a>Como: Editores abertos específicos do projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente associado ao editor específico para o projeto, o projeto deve abrir o arquivo usando um editor específico do projeto. O arquivo não pode ser delegado para baixo para o mecanismo do IDE para a seleção de um editor. Por exemplo, em vez de usar um editor de bitmap padrão, você pode usar essa opção do editor específicas a um projeto para especificar um editor de bitmap específico que reconhece as informações no arquivo que é exclusivo ao seu projeto.  
@@ -60,6 +55,5 @@ Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente a
   
 ## <a name="see-also"></a>Consulte também  
  [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Como: abrir editores padrão](../extensibility/how-to-open-standard-editors.md)   
- [Como abrir editores para documentos abertos](../extensibility/how-to-open-editors-for-open-documents.md)
-
+ [Como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md)   
+ [Como: Abrir editores para documentos abertos](../extensibility/how-to-open-editors-for-open-documents.md)

@@ -1,12 +1,9 @@
 ---
 title: Gerar código em diagramas de classe UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929588"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Gerar código por meio de diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,8 +91,8 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 |Classe|Classe|\<none > ou<br /><br /> Classe do C#|  
 |Interface|Interface|\<none > ou<br /><br /> Interface do C#|  
 |Enumeração|Enumeração|\<none > ou<br /><br /> Enum do C#|  
-|Representante|Classe|Representante do C#|  
-|Struct|Classe|Struct do C#|  
+|delegado|Classe|Representante do C#|  
+|Estrutura|Classe|Struct do C#|  
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Para definir um estereótipo em um tipo ou outro elemento  
 
@@ -240,9 +237,6 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 - `<#= Expressions #>` são avaliados e convertidos em cadeias de caracteres.  
 
 ## <a name="see-also"></a>Consulte também  
- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de classe UML: Diretrizes](../modeling/uml-class-diagrams-guidelines.md)   
  [Gerar arquivos por meio de um modelo UML](../modeling/generate-files-from-a-uml-model.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Analisando código gerenciado em busca de defeitos de código | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928196"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Instruções passo a passo: analisando código gerenciado em busca de defeitos de código
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Passo a passo: Analisando o código gerenciado em busca de defeitos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Neste passo a passo, você pode analisar um projeto gerenciado em busca de defeitos de código usando a ferramenta de análise de código.  
@@ -128,23 +123,23 @@ Neste passo a passo, você pode analisar um projeto gerenciado em busca de defei
   
        Recompile o projeto.  
   
-- [CA1709: Os identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija as maiusculas e minúsculas do nome do namespace 'testCode' alterando-o para 'TestCode'.  
+- [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija as maiusculas e minúsculas do nome do namespace 'testCode' alterando-o para 'TestCode'.  
   
   -   Alterar as maiusculas e minúsculas do namespace `testCode` para `TestCode`.  
   
-- [CA1709: Os identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija as maiusculas e minúsculas da demonstração' nome de tipo' alterando-o para 'Demonstração'.  
+- [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija as maiusculas e minúsculas da demonstração' nome de tipo' alterando-o para 'Demonstração'.  
   
   -   Altere o nome do membro a ser `Demo`.  
   
-- [CA1709: Os identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija as maiusculas e minúsculas do item' nome do membro' alterando-o para 'Item'.  
+- [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija as maiusculas e minúsculas do item' nome do membro' alterando-o para 'Item'.  
   
   -   Altere o nome do membro a ser `Item`.  
   
-- [CA1710: Os identificadores devem ter sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Renomear 'testCode.demo' para terminar em 'Exceções'.  
+- [CA1710: Os identificadores devem ter sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Renomear 'testCode.demo' para terminar com 'Exceções'.  
   
   -   Altere o nome da classe e seus construtores para `DemoException`.  
   
-- [CA2210: Os Assemblies devem ter nomes fortes válidos](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): assinar 'ManagedDemo' com uma chave de nome forte.  
+- [CA2210: Os assemblies devem ter nomes fortes válidos](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Assine 'ManagedDemo' com uma chave de nome forte.  
   
   -   Sobre o **Project** menu, clique em **ManagedDemo propriedades**.  
   
@@ -166,7 +161,7 @@ Neste passo a passo, você pode analisar um projeto gerenciado em busca de defei
   
        Recompile o projeto.  
   
-- [CA2237: Marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: adicionar um atributo [Serializable] para o tipo 'demonstração', pois esse tipo implementa ISerializable.  
+- [CA2237: Marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Adicione um atributo [Serializable] para o tipo 'demonstração', pois esse tipo implementa ISerializable.  
   
   -   Adicione a `[Serializable ()]` à classe de atributo `demo`.  
   
@@ -208,11 +203,8 @@ namespace TestCode
   
    2. Escolher **ações**, em seguida, escolha **suprimir mensagem**e, em seguida, escolha **no arquivo de supressão do projeto**.  
   
-      Para obter mais informações, consulte [como: suprimir avisos usando o Item de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Para obter mais informações, confira [Como: Suprimir Avisos usando o Item de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
 2. Recompile o projeto.  
   
     O projeto é compilado sem avisos ou erros.
-
-
-

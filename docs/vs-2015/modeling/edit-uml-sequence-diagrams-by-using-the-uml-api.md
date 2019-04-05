@@ -1,25 +1,22 @@
 ---
 title: Editar diagramas de sequência UML usando a API UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928929"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Editar diagramas de sequência UML usando a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Uma interação é uma sequência de mensagens entre um conjunto de linhas da vi
   
 ## <a name="basic-code"></a>Código básico  
   
-### <a name="namespace-imports"></a>Importações de Namespace  
+### <a name="namespace-imports"></a>Namespace imports  
  Você deve incluir o seguinte `using` instruções:  
   
 ```  
@@ -256,6 +253,3 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
  [Definir um personalizado item de caixa de ferramentas de modelagem](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

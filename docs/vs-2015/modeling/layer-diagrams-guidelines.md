@@ -1,12 +1,9 @@
 ---
 title: 'Diagramas de camada: Diretrizes | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,23 +13,23 @@ ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad85ccb9e58b45b1e6354c7abf0cb5651aa6d92e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734441"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929688"
 ---
-# <a name="layer-diagrams-guidelines"></a>Diagramas de camada: diretrizes
+# <a name="layer-diagrams-guidelines"></a>Diagramas de camada: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de camada* no Visual Studio. Certifique-se de que o código permaneça consistente com esse design, validando seu código com um diagrama de camada. Você também pode incluir validação de camada no processo de compilação. Ver [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
+Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de camada* no Visual Studio. Certifique-se de que o código permaneça consistente com esse design, validando seu código com um diagrama de camada. Você também pode incluir validação de camada no processo de compilação. Consulte [vídeo do Channel 9: Projetar e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="what-is-a-layer-diagram"></a>O que é um diagrama de camada?  
- Como um diagrama de arquitetura tradicional, um diagrama de camada identifica os principais componentes ou unidades funcionais de design e suas interdependências. Cada nó no diagrama, chamado um *camada*, representa um grupo lógico de namespaces, projetos ou outros artefatos. Você pode desenhar as dependências que devem existir no seu design. Ao contrário de um diagrama de arquitetura tradicional, você pode verificar que as dependências reais no código-fonte está em conformidade com as dependências pretendidas que você especificou. Fazendo parte de validação de um build normal no [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], você pode garantir que o código do programa continua a aderir a arquitetura do sistema por meio de alterações futuras. Ver [diagramas de camada: referência](../modeling/layer-diagrams-reference.md).  
+ Como um diagrama de arquitetura tradicional, um diagrama de camada identifica os principais componentes ou unidades funcionais de design e suas interdependências. Cada nó no diagrama, chamado um *camada*, representa um grupo lógico de namespaces, projetos ou outros artefatos. Você pode desenhar as dependências que devem existir no seu design. Ao contrário de um diagrama de arquitetura tradicional, você pode verificar que as dependências reais no código-fonte está em conformidade com as dependências pretendidas que você especificou. Fazendo parte de validação de um build normal no [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], você pode garantir que o código do programa continua a aderir a arquitetura do sistema por meio de alterações futuras. Consulte [diagramas de camada: Referência](../modeling/layer-diagrams-reference.md).  
   
 ##  <a name="Update"></a> Como criar ou atualizar seu aplicativo com diagramas de camada  
  As etapas a seguir fornecem uma visão geral de como usar diagramas de camada no processo de desenvolvimento. As seções posteriores neste tópico descrevem mais detalhes sobre cada etapa. Se você estiver desenvolvendo um novo design, omita as etapas que se referem ao código existente.  
@@ -118,7 +115,7 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
 ##  <a name="NewAreas"></a> Novas áreas de design do seu aplicativo  
  Ao iniciar o desenvolvimento de um novo projeto ou uma nova área em um novo projeto, você pode desenhar camadas e dependências para ajudar a identificar os principais componentes antes de começar a desenvolver o código.  
   
--   **Mostrar os padrões de arquitetura identificáveis** em seus diagramas de camada, se possível. Por exemplo, um diagrama de camada que descreve um aplicativo da área de trabalho pode incluir camadas como apresentação, lógica de domínio e Data Store. Um diagrama de camada que aborda um recurso único dentro de um aplicativo pode ter camadas como modelo, exibição e controlador. Para obter mais informações sobre esses padrões, consulte [Patterns & Practices: arquitetura de aplicativo](http://go.microsoft.com/fwlink/?LinkId=145794).  
+-   **Mostrar os padrões de arquitetura identificáveis** em seus diagramas de camada, se possível. Por exemplo, um diagrama de camada que descreve um aplicativo da área de trabalho pode incluir camadas como apresentação, lógica de domínio e Data Store. Um diagrama de camada que aborda um recurso único dentro de um aplicativo pode ter camadas como modelo, exibição e controlador. Para obter mais informações sobre esses padrões, consulte [padrões & práticas: Arquitetura do aplicativo](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
      Se você criar o padrões semelhantes com frequência, crie uma ferramenta personalizada. Ver [definir um personalizado item de caixa de ferramentas de modelagem](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
@@ -166,8 +163,5 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
  Para garantir que as alterações futuras no código em conformidade com os diagramas de camada, incluem a validação de camada ao processo de compilação padrão da sua solução. Sempre que outros membros da equipe Compile a solução, todas as diferenças entre as dependências no código e o diagrama de camada serão relatadas como erros de compilação. Para obter mais informações sobre como incluir validação de camada no processo de compilação, consulte [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)   
+ [Diagramas de camada: Referência](../modeling/layer-diagrams-reference.md)   
  [Criar diagramas de camada por meio de código](../modeling/create-layer-diagrams-from-your-code.md)
-
-
-
