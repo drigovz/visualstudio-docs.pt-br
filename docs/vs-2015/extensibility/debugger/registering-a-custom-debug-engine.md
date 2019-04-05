@@ -1,26 +1,21 @@
 ---
 title: Registrando um personalizado de mecanismo de depuração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ce7faf0ad538478d3291b48ac7306a39558663b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b840d262849fc59f3868451f201316094f2e5346
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928836"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registrando um mecanismo de depuração personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51732647"
 O mecanismo de depuração deve se registrar como uma fábrica de classes que segue as convenções de COM, bem como se registrar com o Visual Studio por meio da subchave do registro do Visual Studio.  
   
 > [!NOTE]
->  Um exemplo de como registrar um mecanismo de depuração pode ser encontrado em uma amostra TextInterpreter, que é criado como parte do [Tutorial: Criando um depurar mecanismo usando COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  Um exemplo de como registrar um mecanismo de depuração pode ser encontrado em uma amostra TextInterpreter, que é criado como parte do [Tutorial: Criando um mecanismo de depuração usando COM ATL](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
 ## <a name="dll-server-process"></a>Processo do servidor de DLL  
  Normalmente, um mecanismo de depuração é implementado em sua própria DLL como um servidor COM. Isso significa que o mecanismo de depuração deve registrar o CLSID da sua fábrica de classe com, antes que o Visual Studio pode acessá-lo. Em seguida, o mecanismo de depuração deve ser registrado com o próprio Visual Studio para estabelecer as propriedades (conhecido como métricas) de depuração dá suporte a do mecanismo. A escolha de métricas que são gravadas na subchave do registro do Visual Studio para o mecanismo de depuração depende dos recursos que o mecanismo de depuração suporta.  
@@ -58,5 +53,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>Consulte também  
  [Criando um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [Auxiliares do SDK para depuração](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Tutorial: Criando um mecanismo de depuração usando COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)
-
+ [Tutorial: Criando um mecanismo de depuração usando COM ATL](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)

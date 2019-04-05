@@ -1,12 +1,9 @@
 ---
 title: Estereótipos padrão para modelos UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763236"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924635"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Estereótipos padrão para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ Você pode adicionar estereótipos a elementos de modelo UML para fornecer infor
 |Arquivo |Artefato|Um arquivo físico.|  
 |foco|Classe|Uma classe que define a lógica de negócios principal, que há suporte para várias classes «auxiliar».|  
 |estrutura|Pacote|Esse pacote define um padrão de design reutilizáveis.|  
-|Implementar|Componente|A implementação de «especificação».|  
+|implement|Componente|A implementação de «especificação».|  
 |implementationClass|Classe|A classe descreve uma implementação, e cada instância de tempo de execução tem uma classe de implementação fixa. Compare com «type».|  
 |Criar uma instância|Dependência|O cliente cria instâncias do fornecedor.|  
 |biblioteca|Artefato|Uma biblioteca «arquivo».|  
@@ -122,7 +119,7 @@ Você pode adicionar estereótipos a elementos de modelo UML para fornecer infor
 |Estereótipo|Aplica-se a|Descrição|  
 |----------------|----------------|-----------------|  
 |buildComponent|Componente|Uma coleção de elementos usados para definir uma compilação.|  
-|Metamodelo|Modelo|Define uma linguagem de modelagem, como uma variante do UML, ou uma linguagem específica de domínio.|  
+|metaModel|Modelo|Define uma linguagem de modelagem, como uma variante do UML, ou uma linguagem específica de domínio.|  
 |systemModel|Modelo|Um modelo que é uma coleção de modelos que se aplicam ao mesmo sistema, por exemplo, uma especificação, uma realização e relacionamentos de rastreamento entre eles.|  
   
 ##  <a name="NetProfile"></a> Perfil do c#  
@@ -145,6 +142,3 @@ Você pode adicionar estereótipos a elementos de modelo UML para fornecer infor
  [Adicionar estereótipos a elementos de modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Personalizar o modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

@@ -1,28 +1,23 @@
 ---
 title: 'Passo a passo: Exibindo chaves correspondentes | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928752"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Passo a passo: exibindo chaves correspondentes
+# <a name="walkthrough-displaying-matching-braces"></a>Passo a passo: Exibindo chaves correspondentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode implementar recursos de baseada na linguagem, como correspondência definindo as chaves que você deseja corresponder e, em seguida, adicionar uma marca de marcador de texto as chaves correspondentes quando o cursor está em uma das chaves de chaves. Você pode definir chaves no contexto de um idioma, ou você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e aplicar as marcas a apenas esse tipo, ou você pode aplicar marcas a um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar marcas para o tipo de conteúdo "texto" a correspondência de chaves.  
@@ -130,5 +125,4 @@ Você pode implementar recursos de baseada na linguagem, como correspondência d
 4.  Quando você posiciona o cursor antes de uma chave de abertura, essa chave e o colchete de fechamento correspondente deve ser realçado. Quando você posiciona o cursor logo após o colchete de fechamento, essa chave e a chave de abertura correspondente deve ser realçada.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Passo a passo: Vinculando a um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

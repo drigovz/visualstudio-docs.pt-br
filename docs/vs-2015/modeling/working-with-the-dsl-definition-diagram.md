@@ -1,12 +1,9 @@
 ---
 title: Trabalhando com o diagrama de definição de DSL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -20,13 +17,13 @@ ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208579"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928295"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabalhando com o diagrama de definição de DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,14 +68,11 @@ O diagrama de um [!INCLUDE[dsl](../includes/dsl-md.md)] definição é uma ferra
 ### <a name="bring-tree-here"></a>Bring Tree Here  
  Você pode consolidar o diagrama clicando duas vezes uma classe de domínio de espaço reservado e, em seguida, clicando em **trazer árvore aqui**. A classe de domínio do espaço reservado torna-se um elemento de definição e exibe as árvores de herança e relações. O elemento de definição anterior torna-se um elemento do espaço reservado, se este for o alvo de uma relação ou o filho em uma relação de herança; caso contrário, ele desaparece.  
   
-### <a name="split-tree"></a>Split Tree  
+### <a name="split-tree"></a>Dividir Árvore  
  É possível fragmentar árvores de herança ou as relações clicando duas vezes na definição de classe de domínio que exibe-os e, em seguida, clicando em **dividir árvore**. O elemento de definição torna-se um elemento de espaço reservado e a classe de domínio de definição, juntamente com suas árvores de herança e relações, agora é exibida na parte inferior da partição.  
   
 ### <a name="show-as-class"></a>Show As Class  
  Se uma relação de domínio foi derivada de relações, ou se ele tiver relações de incorporação ou referência com outras relações de domínio, você pode exibir a relação como uma classe clicando duas vezes a relação e, em seguida, clicando em **mostrar como classe** . A relação será exibida com uma **propriedades do domínio** do compartimento e mostrará as árvores de herança e relações.  
   
 ## <a name="see-also"></a>Consulte também  
- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

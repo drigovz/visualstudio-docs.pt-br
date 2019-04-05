@@ -1,14 +1,9 @@
 ---
-title: 'Erro: O compartilhamento de arquivos do Windows foi configurado... | Microsoft Docs'
-ms.custom: ''
+title: 'Erro: Compartilhamento de arquivos do Windows foi configurado... | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: c45a1b74-61ec-4c64-9e2c-13051a4f50a5
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30a2fd01828d92fadeb901305f56ad8c65b863d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929409"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>Erro: o compartilhamento de arquivos do Windows foi configurado...
+# <a name="error-windows-file-sharing-has-been-configured"></a>Erro: O compartilhamento de arquivos do Windows foi configurado...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O compartilhamento de arquivos do Windows foi configurado de forma que você se conectará ao computador remoto usando um nome do usuário diferente. Isso é incompatível com a depuração remota  
@@ -47,13 +42,10 @@ O compartilhamento de arquivos do Windows foi configurado de forma que você se 
   
      . Desconecte-se do computador remoto e reconfigure o compartilhamento de arquivos para se conectar ao outro computador usando seu nome de conta:  
   
-    1.  Sobre o **inicie** , aponte para **Acessórios**e, em seguida, clique em **Prompt de comando**.  
+    1.  No menu **Iniciar**, aponte para **Acessórios** e clique em **Prompt de Comando**.  
   
     2.  No prompt de comando do Windows, digite:  
   
          `net use /delete computer_name`  
   
     3.  Modificar as configurações de compartilhamento de arquivos usando qualquer um dos métodos documentados na Ajuda do Windows.
-
-
-

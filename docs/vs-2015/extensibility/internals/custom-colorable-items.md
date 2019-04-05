@@ -1,27 +1,22 @@
 ---
 title: Itens de coloração personalizados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924848"
 ---
 # <a name="custom-colorable-items"></a>Itens personalizados que podem ser coloridos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Você pode substituir a lista de tipos para colorir, como palavras-chave e comen
 > [!CAUTION]
 >  Você deve incluir o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido. Se você alterar o nome de um dos itens de coloração durante o desenvolvimento, você deve redefinir o cache que foi criado na primeira vez em que seus itens de coloração foram acessado. Você pode redefinir o cache experimental com a ferramenta CreateExpInstance, que é instalado com o SDK do Visual Studio, normalmente no diretório  
 >   
->  **C:\Program arquivos (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+>  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
 >  Para redefinir o cache, chame `CreateExpInstance /Reset`. Para obter mais informações sobre CreateExpInstance, consulte [utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   
@@ -76,5 +71,4 @@ Você pode substituir a lista de tipos para colorir, como palavras-chave e comen
  [Coloração de sintaxe em editores personalizados](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementando a coloração de sintaxe](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Como usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-
+ [Como: Usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

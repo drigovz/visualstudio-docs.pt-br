@@ -1,25 +1,22 @@
 ---
 title: Definir um manipulador de link de item de trabalho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924262"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir um manipulador de link de item de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +89,9 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 ### <a name="import-the-work-item-namespace"></a>Importar o Namespace de Item de trabalho  
  No seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] project **referências**, adicione referências aos assemblies a seguir:  
   
-- Microsoft  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
-- WorkItemTracking  
+- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
   
   No código do programa, importe os seguintes namespaces:  
   
@@ -163,7 +160,7 @@ namespace WorkItems
   
      Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciado.  
   
-     **Solução de problemas**: se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não iniciar, certifique-se de que o projeto do VSIX está definido como o projeto de inicialização da solução.  
+     **Solução de problemas**: Se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não iniciar, certifique-se de que o projeto do VSIX está definido como o projeto de inicialização da solução.  
   
 2.  Em experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.  
   
@@ -183,7 +180,7 @@ namespace WorkItems
   
 7.  Verifique se o item de trabalho agora está em vermelho. Isso demonstra `OnWorkItemLinked()` no código de exemplo.  
   
-     **Solução de problemas**: se os métodos do manipulador não executou, verifique se que:  
+     **Solução de problemas**: Se os métodos do manipulador não executou, verifique se:  
   
     -   O projeto de biblioteca de classes está listado como um componente MEF na **conteúdo** lista **source.extensions.manifest** no projeto VSIX.  
   
@@ -240,9 +237,9 @@ public void OnWorkItemRemoved
   
  Para usar o exemplo a seguir, adicione esses assemblies .NET às referências do projeto:  
   
--   DLL  
+-   Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft  
+-   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Anexar cadeias de caracteres de referência a elementos de modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Definir e instalar uma extensão de modelagem](../modeling/define-and-install-a-modeling-extension.md)   
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

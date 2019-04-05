@@ -1,27 +1,22 @@
 ---
-title: 'Como: usar trechos de código XML | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar trechos de código XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219608"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929181"
 ---
-# <a name="how-to-use-xml-snippets"></a>Como: Use snippets XML
+# <a name="how-to-use-xml-snippets"></a>Como: Usar snippets XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -113,12 +108,9 @@ Você pode chamar snippets XML usando os dois seguintes comandos no menu de atal
   
  Pressionando ENTER ou o ESC cancela a edição de campo e retorna o editor a normal.  
   
- As cores padrão para campos de trecho de código editável podem ser alteradas modificando a configuração do campo de trecho de código na **fontes e cores** painel da **opções** caixa de diálogo. Para obter mais informações, consulte [como: alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+ As cores padrão para campos de trecho de código editável podem ser alteradas modificando a configuração do campo de trecho de código na **fontes e cores** painel da **opções** caixa de diálogo. Para obter mais informações, confira [Como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Trechos de código XML](../xml-tools/xml-snippets.md)   
- [Como: gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [Como criar snippets XML](../xml-tools/how-to-create-xml-snippets.md)
-
-
-
+ [Como: Gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
+ [Como: criar snippets XML](../xml-tools/how-to-create-xml-snippets.md)

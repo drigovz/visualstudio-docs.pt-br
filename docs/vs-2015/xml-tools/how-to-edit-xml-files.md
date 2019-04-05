@@ -1,27 +1,22 @@
 ---
-title: 'Como: editar arquivos XML | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Editar arquivos XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3864b3d3a3074f9b6be2529e8f674df90532c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926414"
 ---
-# <a name="how-to-edit-xml-files"></a>Como editar arquivos XML
+# <a name="how-to-edit-xml-files"></a>Como: Editar arquivos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -60,7 +55,7 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
   
 2.  Selecione **arquivo XML** para criar um novo arquivo XML; ou, selecione **arquivo XSLT** para criar uma nova folha de estilos XSLT.  
   
-3.  Clique em **aberto**.  
+3.  Clique em **Abrir**.  
   
 ### <a name="to-create-a-project-for-xml-files"></a>Para criar um projeto para arquivos XML  
   
@@ -77,7 +72,4 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
 ## <a name="see-also"></a>Consulte também  
  [Editor de XML](../xml-tools/xml-editor.md)   
  [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)   
- [Como criar um esquema XML de um documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
-
-
-
+ [Como: criar um esquema XML de um documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

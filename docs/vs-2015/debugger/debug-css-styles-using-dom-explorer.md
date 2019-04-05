@@ -1,14 +1,9 @@
 ---
 title: Depurar estilos CSS usando o Explorador do DOM | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926520"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Depurar estilos CSS com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +34,13 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
  Quando você estiver depurando aplicativos Windows Store, Windows Phone Store de aplicativos e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova, você pode exibir e alterar regras de CSS para elementos DOM selecionados e seus elementos filho.  
   
- O **estilos** e **computado** guias no Explorador do DOM mostram as regras de CSS que se aplicam a um elemento selecionado. As regras são exibidas na ordem de sua especificidade de acordo com as regras de precedência de CSS. As regras na parte superior de um seletor ou estilo de uma guia (as regras mais específicas) são as últimas a serem aplicadas ao elemento selecionado, e as regras na parte inferior de um seletor ou estilo são as primeiras a serem aplicadas. Quando as regras são aplicadas, elas substituem as regras aplicadas anteriormente.  
+ O **estilos** e **computado** guias no Explorador do DOM mostram as regras de CSS que se aplicam a um elemento selecionado. As regras são exibidas na ordem de sua especificidade de acordo com as regras de precedência de CSS. As regras na parte superior de um seletor ou estilo em uma guia (as regras mais específicas) serão as últimas a serem aplicadas ao elemento selecionado, e as regras na parte inferior de um seletor ou estilo serão as primeiras a serem aplicadas. Quando as regras são aplicadas, elas substituem as regras aplicadas anteriormente.  
   
  O **estilos**, **calculado**, e **alterações** guias fornecem exibições diferentes de informações de estilo.  
   
 -   Use o **estilos** guia para exibir as regras organizadas por nome de seletor CSS, como `html, body`. Você também pode usar essa guia para habilitar ou desabilitar estilos específicos, editar valores manualmente e ver os resultados imediatos dessas alterações.  
   
--   Use o **computado** guia para exibir os valores calculados de um estilo. Por exemplo, se você definir um tamanho para 1em, o valor calculado pelo Internet Explorer poderá ser 16px. Os estilos nessa guia estão organizados por nome de estilo, como `height`. Você também pode usar essa guia para habilitar ou desabilitar estilos específicos, editar valores manualmente e ver os resultados imediatos dessas alterações.  
+-   Use o **computado** guia para exibir os valores calculados de um estilo. Por exemplo, se você definir um tamanho como 1em, o valor calculado pelo Internet Explorer poderá ser 16px. Os estilos nessa guia estão organizados por nome de estilo, como `height`. Você também pode usar essa guia para habilitar ou desabilitar estilos específicos, editar valores manualmente e ver os resultados imediatos dessas alterações.  
   
     > [!NOTE]
     >  No Visual Studio 2013 atualização 2, as informações fornecidas na **rastreamento** guia foi mesclada com o **calculado** guia e o **rastreamento** guia foi removida.  
@@ -79,7 +74,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     }  
     ```  
   
-     com isso:  
+     por este:  
   
     ```css  
     .itemspage .itemslist .item {  
@@ -98,17 +93,17 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
      ![Lista de destino de depuração Select](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-5.  Pressione F5 para executar o aplicativo no modo de depuração.  
+5.  Pressione F5 para executar seu aplicativo no modo de depuração.  
   
      Quando o aplicativo termina de carregar, procure nos títulos dos itens da lista, como **título do grupo: 1**. A cor não foi alterada. Assim, a tentativa de aplicar uma cor laranja aos títulos não funcionou. Vamos entender o que deu errado e corrigir usando as guias CSS no Explorador de DOMs.  
   
     > [!TIP]
-    >  Depois que o aplicativo aparecer no Simulador, posicione o Simulador ao lado da janela do Visual Studio para que seja possível ver imediatamente os resultados das seleções e alterações feitas em estilos CSS.  
+    >  Após o aplicativo ser exibido no Simulador, posicione o Simulador diretamente ao lado da janela do Visual Studio para verificar imediatamente os resultados de suas seleções e alterações nos estilos de CSS.  
   
-6.  Alterne para o Visual Studio e clique em **selecionar elemento** no Explorador do DOM (ou pressione Ctrl + B). O modo de seleção muda, permitindo que você selecione um item clicando nele, e o aplicativo é colocado em primeiro plano. O modo é revertido após um único clique. Aqui está o **selecionar elemento** botão. ![Selecione o botão de elemento no Explorador do DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6.  Alterne para o Visual Studio e clique em **selecionar elemento** no Explorador do DOM (ou pressione Ctrl + B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique. Aqui está o **selecionar elemento** botão. ![Selecione o botão de elemento no Explorador do DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  Você também pode selecionar elementos HTML diretamente no Explorador de DOMs. Para obter mais informações sobre como selecionar elementos, consulte [guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Você também pode selecionar elementos HTML diretamente no Explorador de DOMs. Para obter mais informações sobre como selecionar elementos, consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 7.  No simulador, focalize o título do primeiro item na lista, **título do grupo: 1**, no painel esquerdo da home page. O título é realçado, conforme mostrado aqui:  
   
@@ -117,13 +112,13 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     > [!NOTE]
     >  O Emulador do Windows Phone só permite destacar os elementos parcialmente ao focalizá-los.  
   
-8.  Clique no título destacado. O Explorador de DOMs seleciona automaticamente o elemento HTML correspondente, que é semelhante a este:  
+8.  Clique no título destacado. O Explorador do DOM selecionará automaticamente o elemento HTML correspondente, semelhante a este.  
   
     ```html  
     <h4 class="item-title">Group Title: 1</h4>  
     ```  
   
-     Quando você seleciona o elemento H4 no Explorador do DOM, as guias do Explorador do DOM mostram as regras associadas ao elemento H4. O **computado** guia é mostrada aqui, com o `color` propriedade aberta:  
+     Quando você seleciona o elemento H4 no Explorador do DOM, suas guias mostram as regras associadas ao elemento H4. O **computado** guia é mostrada aqui, com o `color` propriedade aberta:  
   
      ![Guia de estilos de rastreamento no Explorador do DOM](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
@@ -155,17 +150,14 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 13. Abra o seletor de estilo de `.itemspage .itemslist .item .item-overlay .item-title`.  
   
-14. Selecione a primeira ocorrência do estilo de `color` e clique duas vezes no valor de propriedade `rgb(255, 255, 255, 0.87)`.  
+14. Selecione a primeira ocorrência de estilo de `color` e clique duas vezes no valor da propriedade `rgb(255, 255, 255, 0.87)`.  
   
 15. Use o teclado para modificar esse valor. Altere-o para `rgb(255, 255, 0, 0.87)` e pressione Enter. As cores dos títulos do item no Simulador mudam para amarelo.  
   
 16. Para fazer alterações no arquivo CSS de origem, clique o **Items** no link a **estilos** guia. Isso abre o arquivo items.css, no qual é possível alterar o valor do estilo de `color` no código do aplicativo. Para atualizar o aplicativo sem interromper e reiniciar o depurador, clique o ![botão de aplicativo do Windows de atualização](../debugger/media/js-refresh.png "JS_Refresh") (**aplicativo atualizar Windows**) botão o **Depurar** barra de ferramentas.  
   
 ## <a name="see-also"></a>Consulte também  
- [Guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Início Rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md)   
- [Acessibilidade e suporte ao produto](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-
+ [Suporte ao produto e acessibilidade](http://go.microsoft.com/fwlink/?LinkId=253502)
