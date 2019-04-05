@@ -1,14 +1,9 @@
 ---
 title: Compatibilidade de versão para políticas do Check-In de análise de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
@@ -17,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cd449446c66b2f37df9993786477734a78e10a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922416"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidade da versão para políticas de check-in de análise do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ Se você deve avaliar e autor usando versões diferentes das políticas de sele�
 -   Para criar uma política de check-in do análise código com configurações de regra que se aplicam a ambos [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] e [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], você deve criar a política no [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], fazer todas as alterações necessárias e salvar a política. Se as alterações às regras existem somente no [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], modificar e salvar a política em [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].  
   
      Depois de salvar a política no [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], você não poderá mais alterar as configurações para regras que existem no [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] apenas.
-
-
-

@@ -1,13 +1,8 @@
 ---
 title: Navegar pelo código com o depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924748"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Navegar pelo Código com o Depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
   
  Quando você depura, a linha amarela mostra o código que executará a seguir.  
   
- ![DBG&#95;Noções básicas&#95;interromper&#95;modo](../debugger/media/dbg-basics-break-mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg-basics-break-mode.png "DBG_Basics_Break_Mode")  
   
  Durante a depuração, você pode alternar entre os comandos **F5**, **F11** e usar outros recursos descritos neste tópico (como pontos de interrupção) para obter rapidamente o código que você deseja examinar.  
   
@@ -63,7 +58,7 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
   
  Aqui estão alguns detalhes sobre o comportamento do **intervir**:  
   
-- Em uma chamada de função aninhada **intervir** etapas para a função aninhada mais profundamente. Se você usar **intervir** em uma chamada como `Func1(Func2())`, o depurador vai para a função `Func2`.  
+- Em uma chamada de função aninhada, a **Depuração Completa** intervém na função aninhada mais profunda. Se você usar **intervir** em uma chamada como `Func1(Func2())`, o depurador vai para a função `Func2`.  
   
 - O depurador avança realmente com as instruções de código em vez de linhas físicas. Por exemplo, uma cláusula `if` pode ser gravada em uma linha:  
   
@@ -151,7 +146,7 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
 >   -   Se você mover o ponto de execução para trás, as instruções intervenientes não serão desfeitas.  
 >   -   Mover a instrução seguinte para outra função ou escopo normalmente resulta em danos à pilha de chamadas, causando um erro em tempo de execução ou uma exceção. Se você tentar mover a instrução seguinte para outro escopo, o depurador abrirá uma caixa de diálogo com um aviso e dará uma chance de cancelar a operação. No Visual Basic, você não pode mover a instrução seguinte para outro escopo ou função.  
 >   -   No C++ nativo, se você tiver as verificações de tempo de execução ativadas, definir a instrução seguinte poderá fazer com que uma exceção seja gerada quando a execução chegar ao final do método.  
->   -   Quando editar e continuar está ativada, **definir próxima instrução** falhar caso você tenha feito edições que editar e continuar não pode remapear imediatamente. Isso pode ocorrer, por exemplo, se você editou o código dentro de um bloco catch. Quando isso acontece, você verá uma mensagem de erro que indica que a operação não é suportada.  
+>   -   Quando a opção Editar e Continuar está habilitada, **Definir Próxima Instrução** falha caso você tenha feito edições que Editar e Continuar não pode remapear imediatamente. Isso pode ocorrer, por exemplo, se você editou o código dentro de um bloco catch. Quando isso acontece, você verá uma mensagem de erro que indica que a operação não é suportada.  
 > 
 > [!NOTE]
 >  No código gerenciado, você não pode mover a instrução seguinte nas seguintes circunstâncias:  
@@ -181,7 +176,7 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
   
  Para carregar símbolos para um componente do sistema específico enquanto você depura:  
   
-1.  Abra a janela de módulos (teclado: **Ctrl + Alt + U**).  
+1.  Abra a janela de módulos (teclado: **Ctrl+Alt+U**).  
   
 2.  Selecione o módulo para os quais você deseja carregar os símbolos.  
   
@@ -189,10 +184,5 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
   
 3.  Escolher **carregar símbolos** no menu de contexto.  
   
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Depurar propriedades e operadores no código gerenciado  
+##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Intervir em propriedades e operadores no código gerenciado  
  O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em propriedades ou operadores, escolha **Debug** / **opções**. Sobre o **Debugging** / **geral** página, desmarque o **depurar parcialmente propriedades e operadores (somente gerenciado)** caixa de seleção
-
-
-
-
-

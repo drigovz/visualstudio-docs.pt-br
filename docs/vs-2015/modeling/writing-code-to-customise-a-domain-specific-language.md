@@ -1,25 +1,22 @@
 ---
 title: Escrevendo código para personalizar uma linguagem específica do domínio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 ms.assetid: a4a17f5b-9c97-4575-b2d1-3182c1896b72
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: affa3db292ed23ca52b0cca810daf5ca70ad0fd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866318"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924630"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Escrevendo código para personalizar uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ Esta seção mostra como usar código personalizado para acessar, modificar ou c
   
  Há vários contextos em que você pode escrever código que funciona com uma DSL:  
   
-- **Comandos personalizados.** Você pode criar um comando que os usuários podem chamar pelo botão direito do mouse no diagrama, e que pode modificar o modelo. Para obter mais informações, consulte [como: adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+- **Comandos personalizados.** Você pode criar um comando que os usuários podem chamar pelo botão direito do mouse no diagrama, e que pode modificar o modelo. Para obter mais informações, confira [Como: Adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 - **Validação.** Você pode escrever código que verifica se o modelo está no estado correto. Para obter mais informações, consulte [validação em uma linguagem específica do domínio](../modeling/validation-in-a-domain-specific-language.md).  
   
@@ -36,7 +33,7 @@ Esta seção mostra como usar código personalizado para acessar, modificar ou c
   
 - **Transformação de texto.** Você pode escrever modelos de texto que contêm código que acessa um modelo e gera um arquivo de texto, por exemplo, para gerar o código do programa. Para obter mais informações, consulte [código de geração de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-- **Outras extensões do Visual Studio.** Você pode escrever extensões VSIX separadas que ler e modificar modelos. Para obter mais informações, consulte [como: abrir um modelo de arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- **Outras extensões do Visual Studio.** Você pode escrever extensões VSIX separadas que ler e modificar modelos. Para obter mais informações, confira [Como: Abrir um modelo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   Instâncias das classes que definem em Dsldefinition são mantidas em uma estrutura de dados chamada a *Store na memória* (IMS) ou *Store*. As classes que definem uma DSL sempre levam uma Store como um argumento para o construtor. Por exemplo, se a sua DSL define uma classe chamada de exemplo:  
   
@@ -80,6 +77,3 @@ Esta seção mostra como usar código personalizado para acessar, modificar ou c
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
-
-

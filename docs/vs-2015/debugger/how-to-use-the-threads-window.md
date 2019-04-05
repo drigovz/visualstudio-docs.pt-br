@@ -1,14 +1,9 @@
 ---
-title: 'Como: usar a janela Threads | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar a janela Threads | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -28,22 +23,22 @@ ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922601"
 ---
-# <a name="how-to-use-the-threads-window"></a>Como usar a janela Threads
+# <a name="how-to-use-the-threads-window"></a>Como: Usar a janela Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo que você está depurando.  
   
  O **Threads** janela contém uma tabela em que cada linha representa um thread em seu aplicativo. Por padrão, a tabela lista todos os threads em seu aplicativo, mas você pode filtrar a lista para mostrar apenas os threads do seu interesse. Cada coluna contém um tipo diferente de informação. Você também pode ocultar algumas colunas. Se você exibir todas as colunas, as seguintes informações são exibidas, da esquerda para a direita:  
   
--   A coluna do sinalizador, em que você pode marcar um thread para o qual você deseja prestar atenção especial. Para obter informações sobre como sinalizar um thread, consulte [como: sinalizador e remover sinalização de Threads](../debugger/how-to-flag-and-unflag-threads.md).  
+-   A coluna do sinalizador, em que você pode marcar um thread para o qual você deseja prestar atenção especial. Para obter informações sobre como sinalizar um thread, consulte [como: Sinalizar e remover sinalização de Threads](../debugger/how-to-flag-and-unflag-threads.md).  
   
 -   A coluna thread ativo, em que uma seta amarela indica um thread ativo. Um contorno de uma seta indica o thread onde a execução interrompe no depurador.  
   
@@ -119,7 +114,7 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
 #### <a name="to-search-for-specific-threads"></a>Para pesquisar threads específicos  
   
--   Na barra de ferramentas na parte superior a **Threads** janela, vá para o **pesquisa** caixa e:  
+-   Na barra de ferramentas na parte superior da janela **Threads**, vá para a caixa **Pesquisar** e:  
   
     -   Digite uma cadeia de caracteres de pesquisa e pressione ENTER.  
   
@@ -127,7 +122,7 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
     -   Clique na lista suspensa ao lado de **pesquisa** caixa e selecione uma cadeia de caracteres de pesquisa de uma pesquisa anterior.  
   
--   (Opcional) Para incluir a pilha de chamadas inteira na pesquisa, selecione **pilha de chamadas de pesquisa**.  
+-   (Opcional) Para incluir a pilha de chamadas inteira na pesquisa, selecione **Pesquisar Pilha de Chamadas**.  
   
 ## <a name="freezing-and-thawing-threads"></a>Congelando e descongelando threads  
  Quando você congela um thread, o sistema não iniciará a execução do thread mesmo se os recursos estiverem disponíveis.  
@@ -143,17 +138,17 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
 -   Na barra de ferramentas na parte superior do **Threads** janela, clique em **congelar Threads** ou **descongelar Threads**.  
   
-     Essa ação afeta somente os threads selecionados na **Threads** janela.  
+     Essa ação afeta somente os threads que estão selecionados na janela **Threads**.  
   
 ## <a name="displaying-flagged-threads"></a>Exibindo threads sinalizados  
- Você pode sinalizar um thread que você deseja dar atenção especial marcando-o com um ícone na **Threads** janela. Para obter mais informações, consulte [como: sinalizador e remover sinalização de Threads](../debugger/how-to-flag-and-unflag-threads.md). Na janela Threads, você pode optar por exibir todos os threads ou apenas os threads sinalizados.  
+ Você pode sinalizar um thread ao qual deseja dar atenção especial marcando-o com um ícone na janela **Threads**. Para obter mais informações, confira [Como: Sinalizar e remover sinalização de Threads](../debugger/how-to-flag-and-unflag-threads.md). Na janela Threads, você pode optar por exibir todos os threads ou apenas os threads sinalizados.  
   
 #### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados  
   
 -   Escolha o botão de sinalizador no canto superior esquerdo dos **Threads** janela.  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>Exibindo pilhas de chamadas de threads e alternando entre quadros  
- Em um programa de vários threads, cada thread tem sua própria pilha de chamadas. O **Threads** janela fornece uma maneira conveniente de exibir essas pilhas.  
+ Em um programa de vários threads, cada thread tem sua própria pilha de chamadas. A janela **Threads** fornece um modo conveniente de exibir essas pilhas.  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>Para exibir a pilha de chamadas de um thread  
   
@@ -166,8 +161,5 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
 -   Na barra de ferramentas na parte superior do **Threads** janela, clique em **expandir pilhas** ou **recolher pilhas**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Passo a passo: depurando um aplicativo multi-threaded](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-
+ [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Passo a passo: Como depurar um aplicativo multi-threaded](../debugger/walkthrough-debugging-a-multithreaded-application.md)

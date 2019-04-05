@@ -1,14 +1,9 @@
 ---
 title: CV_HREG_e | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5387a697b025757388864289cbbd3fdcebc7a5ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e05b93d363b8157cae5ac66a4fe8fdd14634aa11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923850"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -417,37 +412,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>Elementos  
- CV_REG_ *  
+ CV_REG_*  
  Registros são usados pela Intel 80x86 e processadores ix86 e p-code.  
   
- CV_R68_ *  
+ CV_R68_*  
  Registra os usados pelo processador de 68 mil.  
   
- CV_M4_ *  
+ CV_M4_*  
  Registra os usados pelo processador da série MIPS 4000.  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  Registra os usados pelo processador da série Digital Equipment Corporation Alpha AXP.  
   
- CV_PPC_ *  
+ CV_PPC_*  
  Registra os usado pelo processador do IBM/Motorola PowerPC.  
   
  CV_SH3_ * e CV_SH_\*  
  Registra os usados pelo processador da série Hitachi SH3 e Hitachi SH.  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Registra os usado pelos processadores de máquina avançada do RISC (ARM).  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Registra os usado pelos processadores de série do IA64 da Intel.  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Usado pelo processador Infineon tecnologias TriCore de registros.  
   
- CV_AM33_ *  
+ CV_AM33_*  
  Registros usados pelo Matsushita/Panasonic AM33 e relacionados processadores.  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Usado pelo processador Mitsubishi M32R de registros.  
   
 ## <a name="remarks"></a>Comentários  
@@ -470,11 +465,8 @@ enum CV_HREG_e { 
   
 ## <a name="see-also"></a>Consulte também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiastackwalkframe:: Get_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [Idiastackwalkframe:: Put_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
  [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
-
-
-
