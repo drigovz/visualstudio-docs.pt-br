@@ -1,26 +1,21 @@
 ---
 title: Abrindo uma janela de ferramenta dinâmica | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 073e8a2e7ff13dad0e413aa47b7875260f612cd2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80d2666fc40fa561a0e2993ca50edd0dcf72dbc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929390"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Abrindo uma janela de ferramentas dinâmica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Janelas de ferramentas normalmente são abertas a partir de um comando em um men
 3.  Compile o projeto e comece a depuração. A instância experimental deve aparecer. Você não verá a janela da ferramenta.  
   
 4.  Abra um projeto na instância experimental. A janela da ferramenta deve aparecer.
-

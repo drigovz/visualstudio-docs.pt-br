@@ -1,27 +1,22 @@
 ---
 title: Classe Task - membros internos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 92ddc4b00f9d8eb37893e1db7ae44802e04e9c46
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 200b35e60d3d468a934565959629298e6c6f04bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764823"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929780"
 ---
 # <a name="task-class---internal-members"></a>Classe de tarefa – membros internos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ Este tópico descreve os membros internos do <xref:System.Threading.Tasks.Task?d
 |----------|-----------------|  
 |[m_action](../../extensibility/debugger/m-action-field.md)|O delegado que representa o código seja executado no <xref:System.Threading.Tasks.Task> objeto.|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Armazena propriedades adicionais do <xref:System.Threading.Tasks.Task> objeto.|  
-|[m_Parent](../../extensibility/debugger/m-parent-field.md)|O campo de suporte para o <xref:System.Threading.Tasks.Task?displayProperty=fullName> propriedade pai.|  
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|O campo de suporte para o <xref:System.Threading.Tasks.Task?displayProperty=fullName> propriedade pai.|  
 |[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Armazena informações sobre o estado atual do <xref:System.Threading.Tasks.Task> objeto.|  
 |[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Um objeto que representa os dados que serão usados pela ação.|  
 |[m_taskId](../../extensibility/debugger/m-taskid-field.md)|O campo de suporte para o <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> propriedade.|  
@@ -89,4 +84,3 @@ Este tópico descreve os membros internos do <xref:System.Threading.Tasks.Task?d
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  [Elementos internos de extensões paralelas para o .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
-

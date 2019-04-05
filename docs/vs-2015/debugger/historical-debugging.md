@@ -1,25 +1,20 @@
 ---
 title: Histórico de depuração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929504"
 ---
 # <a name="historical-debugging"></a>Depuração de histórico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Depuração de histórico é um modo de depuração que depende das informaçõe
  Você pode usar o IntelliTrace e a depuração histórica circulem por em seu aplicativo e inspecionar o estado (pilha de chamadas e variáveis locais) sem precisar definir pontos de interrupção, reinicie a depuração e repita as etapas de teste. Isso pode economizar muito tempo, especialmente quando o bug estiver localizado profundo em um cenário de teste que leva muito tempo para ser executado.  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>Como posso começar a usar a depuração de histórico?  
- IntelliTrace está ativado por padrão. Tudo o que você precisa fazer é decidir quais eventos e chamadas de função são de interesse para você. Para obter mais informações sobre como definir o que você deseja procurar, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md). Para uma conta de passo a passo de depuração com o IntelliTrace, consulte [instruções passo a passo: usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+ IntelliTrace está ativado por padrão. Tudo o que você precisa fazer é decidir quais eventos e chamadas de função são de interesse para você. Para obter mais informações sobre como definir o que você deseja procurar, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md). Para uma conta de passo a passo de depuração com o IntelliTrace, consulte [passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>Navegando pelo código com o histórico de depuração  
  Vamos começar com um programa simples que tem um bug. Em um aplicativo de console em C#, adicione o seguinte código:  
@@ -92,8 +87,3 @@ private static int AddInt(int add)
 7. Entrar agora o `AddInt()` método. Você deve ver o bug nesse código imediatamente.  
   
    Este procedimento apenas uma pequena amostra do que você pode fazer com a depuração histórica. Para obter mais informações sobre as diferentes configurações e os efeitos dos botões diferentes na medianiz de navegação, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
-
-
-
-
-

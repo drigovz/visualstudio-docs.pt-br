@@ -1,12 +1,9 @@
 ---
 title: Salvar dados no banco de dados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +25,13 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 413a92f2e42b6bacfeb62deb3bae0e50d5ef908b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281843"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929470"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +167,7 @@ Processo de atualização de dois estágios e a função do DataRowVersion em um
   
  `GetChanges` por si só retorna todos os registros alterados. Em contraste, passando o desejado <xref:System.Data.DataRowState> como um parâmetro para o `GetChanges` método, você pode especificar o subconjunto de registros alterados que você deseja: recentemente registros, registros marcados para exclusão, registros separados, ou registros modificados.  
   
- Obter um subconjunto de registros alterados é útil quando você deseja enviar os registros para outro componente para processamento. Em vez de enviar todo o conjunto de dados, você pode reduzir a sobrecarga de se comunicar com o outro componente obtendo somente os registros que o componente precisa. Para obter mais informações, consulte [como: recuperar linhas alteradas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Obter um subconjunto de registros alterados é útil quando você deseja enviar os registros para outro componente para processamento. Em vez de enviar todo o conjunto de dados, você pode reduzir a sobrecarga de se comunicar com o outro componente obtendo somente os registros que o componente precisa. Para obter mais informações, confira [Como: Recuperar linhas alteradas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Confirmando alterações no conjunto de dados  
  Como as alterações são feitas no conjunto de dados, o <xref:System.Data.DataRow.RowState%2A> propriedade de linhas alteradas é definida. As versões originais e atuais de registros são estabelecidas, mantidas e disponibilizadas para você pelo <xref:System.Data.DataRowView.RowVersion%2A> propriedade. Os metadados que são armazenados nas propriedades de uma dessas linhas alteradas são necessário para enviar as atualizações corretas para a fonte de dados.  
@@ -221,14 +218,14 @@ Processo de atualização de dois estágios e a função do DataRowVersion em um
   
  Você pode validar os dados de várias maneiras:  
   
-- Na camada de negócios, adicionando código ao seu aplicativo para validar dados. O conjunto de dados é um único lugar, você pode fazer isso. O conjunto de dados fornece algumas das vantagens de validação de back-end — como a capacidade para validar alterações como valores de coluna e linha estão mudando. Para obter mais informações, consulte [validar dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md).  
+- Na camada de negócios, adicionando código ao seu aplicativo para validar dados. O conjunto de dados é um único lugar, você pode fazer isso. O Designer de conjunto de dados fornece algumas das vantagens de validação de back-end — como a capacidade para validar alterações como valores de coluna e linha estão mudando. Para obter mais informações, consulte [validar dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md).  
   
 - Na camada de apresentação, adicionando validação a formulários. Para obter mais informações, consulte [validação de entrada do usuário nos Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
 - Nos dados de back-end, enviando dados para a fonte de dados — por exemplo, o banco de dados — e permitindo que ele aceite ou rejeite os dados. Se você estiver trabalhando com um banco de dados que tem recursos sofisticados para validação de dados e fornecendo informações de erro, isso pode ser uma abordagem prática porque você pode validar os dados, independentemente de onde eles vêm. No entanto, essa abordagem não pode acomodar requisitos de validação específicos do aplicativo. Além disso, ter a fonte de dados a validar os dados pode resultar em várias viagens de ida e a fonte de dados, dependendo de como seu aplicativo facilita a resolução de erros de validação gerados pelo back-end.  
   
   > [!IMPORTANT]
-  >  Ao usar comandos de dados com um <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriedade é definida como <xref:System.Data.CommandType>, cuidadosamente verifique informações que são enviadas de um cliente antes de passá-la para seu banco de dados. Usuários mal-intencionados podem tentar enviar (injetar) instruções de SQL modificadas ou adicionais em um esforço para obter acesso não autorizado ou danificar o banco de dados. Antes de você transferir a entrada do usuário para um banco de dados, sempre verifique se que as informações são válidas. É uma prática recomendada sempre usar consultas parametrizadas ou procedimentos armazenados quando possível. Para obter mais informações, consulte [Visão geral de explorações de script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  >  Ao usar comandos de dados com um <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriedade é definida como <xref:System.Data.CommandType>, cuidadosamente verifique informações que são enviadas de um cliente antes de passá-la para seu banco de dados. Usuários maliciosos podem tentar enviar (injetar) instruções SQL modificadas ou adicionais para obter acesso não autorizado ou para danificar o banco de dados. Antes de você transferir a entrada do usuário para um banco de dados, sempre verifique se que as informações são válidas. É uma prática recomendada sempre usar consultas parametrizadas ou procedimentos armazenados quando possível. Para obter mais informações, consulte [Visão geral de explorações de script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Depois que alterações foram feitas em um conjunto de dados, você pode transmitir as alterações em uma fonte de dados. Mais comumente, fazer isso chamando o `Update` método de um TableAdapter (ou adaptador de dados). O método loops a cada registro em uma tabela de dados, determina que tipo de atualização é necessário (atualizar, inserir ou excluir), se houver, e, em seguida, executa o comando apropriado.  
   
@@ -275,14 +272,7 @@ Processo de atualização de dois estágios e a função do DataRowVersion em um
 >  Você também pode definir valores `Parameters` coleção por conta própria no código, que você normalmente faria em um manipulador de eventos para o adaptador de dados <xref:System.Data.DataTable.RowChanging> eventos.  
   
 ## <a name="see-also"></a>Consulte também  
- [Visão geral de TableAdapter](../data-tools/tableadapter-overview.md)   
  [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Visão geral de aplicativos de dados no Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Conectando-se a dados no Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
  [Preparando o aplicativo para receber dados](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Buscando dados no aplicativo](../data-tools/fetching-data-into-your-application.md)   
  [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Editando dados no aplicativo](../data-tools/editing-data-in-your-application.md)   
- [Validando dados](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Salvando dados](../data-tools/saving-data.md)
-
+ [Validação de dados](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

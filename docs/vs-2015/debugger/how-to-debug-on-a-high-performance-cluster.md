@@ -1,14 +1,9 @@
 ---
-title: 'Como: depurar em um Cluster de alto desempenho | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar em um Cluster de alto desempenho | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,27 +11,27 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 75f2a96df18137f04b8b7637940c70378842e23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a283cfd34d0990a59bc5d8ce1109f2c0ae6b38bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929483"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Como depurar em um cluster de alto desempenho
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Como: Depurar em um cluster de alto desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A depuração de um programa com vários processamentos em um cluster de alto desempenho é semelhante à depuração de um programa comum em um computador remoto. No entanto, há algumas considerações adicionais. Para requisitos gerais de configuração remota, consulte [depuração remota](../debugger/remote-debugging.md).  
   
  Ao depurar em um cluster de alto desempenho, você pode usar todas as janelas e técnicas de depuração do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que estiverem disponíveis para a depuração remota. Como você está depurando remotamente, no entanto, a janela do console externo não está disponível.  
   
- O **Threads** janela e **processos** janela são especialmente úteis para depurar aplicativos paralelos. Para obter dicas sobre como usar essas janelas, consulte [como: usar a janela de processos](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [como: usar a janela Threads](../debugger/how-to-use-the-threads-window.md).  
+ A janela **Threads** e a janela **Processos** são úteis especificamente para depurar aplicativos paralelos. Para obter dicas sobre como usar essas janelas, consulte [como: Use a janela de processos](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [como: Usar a janela Threads](../debugger/how-to-use-the-threads-window.md).  
   
  Os procedimentos a seguir mostram algumas técnicas que são muito úteis para depurar em um conjunto de alto desempenho.  
   
@@ -44,19 +39,19 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Para abrir a caixa de diálogo Filtro de Ponto de Interrupção  
   
-1.  Um glifo de ponto de interrupção em uma janela de origem, com o botão direito do **desmontagem** janela, o **pilha de chamadas** janela, ou o **pontos de interrupção** janela.  
+1.  Clique com o botão direito do mouse em um glifo de ponto de interrupção em uma janela de origem, na janela de **Desmontagem**, na janela de **Pilha de Chamadas** ou na janela de **Pontos de Interrupção**.  
   
-2.  No menu de atalho, clique em **filtro**. Essa opção pode aparecer na parte superior, nível ou no submenu em **pontos de interrupção**.  
+2.  No menu de atalho, clique em **Filtrar**. Essa opção pode aparecer no nível superior ou no submenu em **Pontos de Interrupção**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Para definir um ponto de interrupção em um computador específico  
   
-1.  Obter o nome do computador a **processos** janela.  
+1.  Obter o nome do computador na janela **Processos**.  
   
-2.  Selecione um ponto de interrupção e abra o **filtro de ponto de interrupção** caixa de diálogo, conforme descrito no procedimento anterior.  
+2.  Selecione um ponto de interrupção e abra a caixa de diálogo **Filtro de Ponto de Interrupção** como descrito no procedimento anterior.  
   
-3.  No **filtro de ponto de interrupção** caixa de diálogo, digite:  
+3.  Na caixa de diálogo **Filtro de Ponto de Interrupção**, digite:  
   
-     MachineName =*nomeseucomputador*  
+     MachineName =*nomedoseucomputador*  
   
      Para criar um filtro mais complexo, você pode combinar cláusulas usando `&`, o operador AND, `||`, o operador OR, `!`, o operador NOT, e parênteses.  
   
@@ -64,17 +59,17 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Para definir um ponto de interrupção em um processo específico  
   
-1.  Obter o nome do processo ou o número de ID de processo do **processos** janela.  
+1.  Obter o nome do processo ou o número da ID do processo na janela **Processos**.  
   
-2.  Selecione um ponto de interrupção e abra o **filtro de ponto de interrupção** caixa de diálogo, como no primeiro procedimento.  
+2.  Selecione um ponto de interrupção e abra a caixa de diálogo **Filtro de Ponto de Interrupção** como no primeiro procedimento.  
   
-3.  No **filtro de ponto de interrupção** caixa de diálogo, digite:  
+3.  Na caixa de diálogo **Filtro de Ponto de Interrupção**, digite:  
   
-     `ProcessName =`  *yourprocessname*  
+     `ProcessName =` *nomedoseuprocesso*  
   
      —ou—  
   
-     `ProcessID =` *yourprocessIDnumber*  
+     `ProcessID =` *númerodaIDdoseuprocesso*  
   
      Para criar um filtro mais complexo, você pode combinar cláusulas usando `&`, o operador AND, `||`, o operador OR, `!`, o operador NOT, e parênteses.  
   
@@ -82,17 +77,17 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Para definir um ponto de interrupção em um segmento específico  
   
-1.  Obter o nome do thread ou do número da ID do thread a **Threads** janela.  
+1.  Obter o nome do thread ou o número da ID do thread na janela **Threads**.  
   
-2.  Selecione um ponto de interrupção e abra o **filtro de ponto de interrupção** caixa de diálogo, conforme descrito no primeiro procedimento.  
+2.  Selecione um ponto de interrupção e abra a caixa de diálogo **Filtro de Ponto de Interrupção** como descrito no primeiro procedimento.  
   
-3.  No **filtro de ponto de interrupção** caixa de diálogo, digite:  
+3.  Na caixa de diálogo **Filtro de Ponto de Interrupção**, digite:  
   
-     `ThreadName =` *yourthreadname*  
+     `ThreadName =` *nomedothread*  
   
      —ou—  
   
-     `ThreadID =` *yourthreadIDnumber*  
+     `ThreadID =` *númerodaIDdothread*  
   
      Para criar um filtro mais complexo, você pode combinar cláusulas usando `&`, o operador AND, `||`, o operador OR, `!`, o operador NOT, e parênteses.  
   
@@ -106,12 +101,9 @@ A depuração de um programa com vários processamentos em um cluster de alto de
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Depuração remota](../debugger/remote-debugging.md)   
- [Como: usar a janela processos](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [Como: usar a janela Threads](../debugger/how-to-use-the-threads-window.md)   
- [Threads e processos](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Como: Use a janela processos](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Como: Usar a janela Threads](../debugger/how-to-use-the-threads-window.md)   
+ [Threads e processos](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Usando pontos de interrupção](../debugger/using-breakpoints.md)
-
-
-

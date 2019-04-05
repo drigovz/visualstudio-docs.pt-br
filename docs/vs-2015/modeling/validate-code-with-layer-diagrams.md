@@ -1,12 +1,9 @@
 ---
 title: Validar o código com diagramas de camada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928397"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Validar o código com diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
   
   Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-  É possível validar manualmente o código com base em um diagrama de camada aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Ver [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  É possível validar manualmente o código com base em um diagrama de camada aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Consulte [vídeo do Channel 9: Projetar e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Se você quiser executar a validação de camada com o Team Foundation Build, você deve instalar também a mesma versão do Visual Studio no seu servidor de compilação.  
@@ -233,21 +230,18 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
 |*ArtifactN*(*ArtifactTypeN*)|*{1&gt;artefaton&lt;1* é um artefato associado uma camada no diagrama de camada.<br /><br /> *1&gt;tipoartefaton&lt;1* é o tipo de *2&gt;artefaton&lt;2*, como um **classe** ou **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|  
 |*NamespaceNameN*|O nome de um namespace.|  
 |*LayerNameN*|O nome de uma camada no diagrama de camada.|  
-|*Tipodependência*|O tipo de relação de dependência entre *artefato1* e *artefato2*. Por exemplo, *artefato1* tem um **chamadas** relação com *artefato2*.|  
+|*DependencyType*|O tipo de relação de dependência entre *artefato1* e *artefato2*. Por exemplo, *artefato1* tem um **chamadas** relação com *artefato2*.|  
   
 |**Erro de sintaxe**|**Descrição do erro**|  
 |----------------------|---------------------------|  
-|AV0001: Dependência inválida: *artefato1*(*Tipoartefato1*)--> *artefato2*(*Tipoartefato2*)<br /><br /> Camadas: *LayerName1*, *LayerName2* &#124; dependências: *Tipodependência*|*Artefato1* na *LayerName1* não deve ter uma dependência na *artefato2* na *LayerName2* porque *LayerName1* não tem uma dependência direta no *LayerName2*.|  
-|AV1001: Namespace de inválido: *artefato*<br /><br /> Camada: *Nomecamada* &#124; necessário Namespace: *Nomenamespace1* &#124; Namespace atual: *Nomenamespace2*|*{1&gt;nomecamada&lt;1* exige que seus artefatos associados devam pertencer ao *Nomenamespace1*. *Artefato* está no *Nomenamespace2*, e não *Nomenamespace1*.|  
-|AV1002: Depende do Namespace proibido: *artefato1*(*Tipoartefato1*) &#124; *artefato2*(*Tipoartefato2*)<br /><br /> Camada: *Nomecamada* &#124; proibido Namespace: *NamespaceName* &#124; dependências: *Tipodependência*|*{1&gt;nomecamada&lt;1* exige que seus artefatos associados não devam depender *NamespaceName*. *Artefato1* não pode depender *artefato2* porque *artefato2* está em *NamespaceName*.|  
-|AV1003: No Namespace proibido: *artefato*(*Tipoartefato*)<br /><br /> Camada: *Nomecamada* &#124; proibido Namespace: *NamespaceName*|*{1&gt;nomecamada&lt;1* exige que seus artefatos associados não possam pertencer ao *NamespaceName*. *Artefato* pertence *NamespaceName*.|  
-|AV3001: Link ausente: camada '*Nomecamada*'contém links para'*artefato*' que não foi encontrado. Você não tem uma referência de assembly?|*{1&gt;nomecamada&lt;1* links para um artefato que não pode ser encontrado. Por exemplo, um link para uma classe talvez não seja encontrado porque o projeto de modelagem não tem uma referência para o assembly que contém a classe.|  
+|AV0001: Dependência inválida: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Camadas: *LayerName1*, *LayerName2* &#124; Dependencies: *DependencyType*|*Artefato1* na *LayerName1* não deve ter uma dependência na *artefato2* na *LayerName2* porque *LayerName1* não tem uma dependência direta no *LayerName2*.|  
+|AV1001: Namespace inválido: *Artefato*<br /><br /> Camada: *{1&gt;nomecamada&lt;1* &#124; necessário Namespace: *NamespaceName1* &#124; Current Namespace: *NamespaceName2*|*{1&gt;nomecamada&lt;1* exige que seus artefatos associados devam pertencer ao *Nomenamespace1*. *Artefato* está no *Nomenamespace2*, e não *Nomenamespace1*.|  
+|AV1002: Depende do Namespace proibido: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Camada: *{1&gt;nomecamada&lt;1* &#124; proibido Namespace: *NamespaceName* &#124; Dependencies: *DependencyType*|*{1&gt;nomecamada&lt;1* exige que seus artefatos associados não devam depender *NamespaceName*. *Artefato1* não pode depender *artefato2* porque *artefato2* está em *NamespaceName*.|  
+|AV1003: No Namespace proibido: *Artifact*(*ArtifactType*)<br /><br /> Camada: *{1&gt;nomecamada&lt;1* &#124; proibido Namespace: *NamespaceName*|*{1&gt;nomecamada&lt;1* exige que seus artefatos associados não possam pertencer ao *NamespaceName*. *Artefato* pertence *NamespaceName*.|  
+|AV3001: Link ausente: Camada '*Nomecamada*'contém links para'*artefato*' que não foi encontrado. Você não tem uma referência de assembly?|*{1&gt;nomecamada&lt;1* links para um artefato que não pode ser encontrado. Por exemplo, um link para uma classe talvez não seja encontrado porque o projeto de modelagem não tem uma referência para o assembly que contém a classe.|  
 |AV9001: A análise arquitetônica encontrou erros internos. Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída.|Consulte o log de eventos da compilação ou a janela de saída para obter mais detalhes.|  
   
 ## <a name="security"></a>Segurança  
   
 ## <a name="see-also"></a>Consulte também  
  [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)
-
-
-

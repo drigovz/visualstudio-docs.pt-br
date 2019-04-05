@@ -1,28 +1,23 @@
 ---
-title: 'Como: migrar projetos de extensibilidade para o Visual Studio 2015 | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Migrar projetos de extensibilidade para o Visual Studio 2015 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 564e279d259cae879ca2925eed3309c30d7513db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9715a71869ebb24e2631fa962f7078cd7044b0cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928459"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Como: migrar projetos de extensibilidade para o Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Como: Migrar projetos de extensibilidade para o Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aqui está como atualizar sua extensão.  
@@ -52,7 +47,7 @@ Aqui está como atualizar sua extensão.
   
 3.  Adicione as versões do NuGet dos assemblies de referência do SDK do VS.  Enquanto estiver na **referências do Gerenciador de soluções** nó, abra o **gerenciar pacotes NuGet...** caixa de diálogo.  Se você quiser saber mais sobre essa caixa de diálogo, consulte [gerenciar pacotes de NuGet usando a caixa de diálogo](http://docs.nuget.org/Consume/Package-Manager-Dialog). Os assemblies de referência do SDK do VS são publicados no [nuget.org](http://www.nuget.org) pela [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
-4.  Usando o **nuget.org** como seu **origem do pacote**, procure o nome do pacote NuGet que satisfaz o assembly de referência desejado (por exemplo: Microsoft.VisualStudio.Shell.14.0) e instalá-lo no seu projeto.  O NuGet pode adicionar vários assemblies de referência para satisfazer as dependências do assembly inicial.  
+4.  Usando o **nuget.org** como seu **origem do pacote**, procure o nome do pacote NuGet que satisfaz o assembly de referência desejado (por exemplo: Microsoft.VisualStudio.Shell.14.0) e instalá-lo em seu projeto.  O NuGet pode adicionar vários assemblies de referência para satisfazer as dependências do assembly inicial.  
   
      Se você preferir, você pode adicionar todos os assemblies de referência do SDK do VS ao mesmo tempo, instalar o SDK do VS [metapacote](http://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
   
@@ -60,4 +55,3 @@ Aqui está como atualizar sua extensão.
   
 > [!NOTE]
 >  Não é necessário que você atualize seus projetos de extensibilidade existentes para usar as ferramentas e assemblies de referência do NuGet.  Eles podem continuar a criar usando assemblies de referência e ferramentas instaladas com o SDK do VS.
-

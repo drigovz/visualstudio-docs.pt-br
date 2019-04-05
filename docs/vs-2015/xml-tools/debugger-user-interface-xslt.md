@@ -1,25 +1,20 @@
 ---
 title: Depurador (XSLT) de Interface do usuário | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891839"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929788"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
 |`position()`|A posição, ou número de índice, o nó de contexto, relativo ao tamanho do contexto.|  
 |`self::node()`|O valor do nó de contexto.|  
   
- Para obter mais informações, consulte [como: alterar o contexto do depurador](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
+ Para obter mais informações, confira [Como: Alterar o contexto do depurador](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
   
 ## <a name="output-window"></a>Janela Saída  
  A janela de saída mostra todas as mensagens de erro ou exceções de segurança que ocorrem durante a depuração.  
@@ -96,15 +91,14 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
   
 - As funções definidas pelo usuário não são permitidas.  
   
-  Para obter mais informações, consulte [como: avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Para obter mais informações, confira [Como: Avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>A janela de desmontagem  
  A janela de desmontagem mostra o código do assembly que é gerado pelo compilador XSLT. Esta janela pode ser usada da mesma forma como quaisquer outras janelas de desmontagem do Visual Studio.  
   
- Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).  
+ Para obter mais informações, [como: Use a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração XSLT](../xml-tools/debugging-xslt.md)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)   
- [Windows variável](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
+ [Janelas de Variáveis](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

@@ -1,14 +1,9 @@
 ---
 title: Exibir arquivos usando o comando Abrir arquivo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
 - Open File command
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f1a2ca2b87cadf118c83501bbd6b6bf78af761a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 286f310765db6fff14f6b134c6107ff1c9e36215
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929670"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Exibindo arquivos usando o comando Abrir Arquivo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,11 +51,10 @@ As etapas a seguir descrevem como o IDE manipula a **abrir arquivo** comando, qu
   
 4.  Assim que o IDE determina qual projeto abre o arquivo, ele chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método nesse projeto.  
   
-5.  O projeto, em seguida, tem a opção de abrir o arquivo usando um editor específico do projeto ou um editor padrão. Para obter mais informações, consulte [como: os editores abertos específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md) e [como: abrir editores padrão](../../extensibility/how-to-open-standard-editors.md), respectivamente.  
+5.  O projeto, em seguida, tem a opção de abrir o arquivo usando um editor específico do projeto ou um editor padrão. Para obter mais informações, confira [Como: Abrir editores específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md) e [como: Abrir editores padrão](../../extensibility/how-to-open-standard-editors.md), respectivamente.  
   
 ## <a name="see-also"></a>Consulte também  
  [Exibir arquivos usando o aberto com o comando](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Abrir e salvar itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md)   
- [Como: abrir editores específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md)   
- [Como abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)
-
+ [Como: Editores abertos específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Como: Abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)

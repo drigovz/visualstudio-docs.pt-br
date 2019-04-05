@@ -1,25 +1,22 @@
 ---
 title: Desenvolver testes de um modelo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929306"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
  Você pode criar e manter uma relação entre os testes de sistema e um modelo de requisitos. Para estabelecer essa relação, você escreve testes que correspondem aos elementos principais do modelo de requisitos. Visual Studio ajuda você a manter essa relação, permitindo que você criar links entre os testes e as partes do modelo. Para obter mais informações sobre modelos de requisitos, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
   
 ### <a name="write-tests-for-each-use-case"></a>Escrever testes para cada caso de uso  
- Se você usar [!INCLUDE[TCMext](../includes/tcmext-md.md)], você pode criar um grupo de testes para cada caso de uso que você definiu no seu modelo de requisitos. Por exemplo, se você tiver um caso de uso ordem uma refeição, que inclui criar pedido e Adicionar Item à ordem, você pode criar testes para ambos os geral e mais detalhada desses casos de uso. Para obter mais informações sobre casos de uso, consulte [diagramas de caso de usar o UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Se você usar [!INCLUDE[TCMext](../includes/tcmext-md.md)], você pode criar um grupo de testes para cada caso de uso que você definiu no seu modelo de requisitos. Por exemplo, se você tiver um caso de uso ordem uma refeição, que inclui criar pedido e Adicionar Item à ordem, você pode criar testes para ambos os geral e mais detalhada desses casos de uso. Para obter mais informações sobre casos de uso, consulte [UML usar diagramas de caso: Diretrizes de](../modeling/uml-use-case-diagrams-guidelines.md).  
   
  Essas diretrizes podem ser úteis:  
   
@@ -59,7 +56,7 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
   
     -   Se o plano de desenvolvimento implementa um aspecto do caso de uso antes da outra, você pode habilitar os testes separadamente à medida que progride de desenvolvimento.  
   
--   Quando você cria os testes, separe a escolha de dados de teste do código ou script que determina se a pós-condição foi atingida. Por exemplo, um teste de uma função aritmético simples pode ser: 4 de entrada; Verifique se a saída é 2. Em vez disso, criar o script como: escolha uma entrada; Multiplique o resultado por si só e verifique se o resultado é a entrada original. Esse estilo permite variar as entradas de teste sem alterar o corpo principal do teste.  
+-   Quando você cria os testes, separe a escolha de dados de teste do código ou script que determina se a pós-condição foi atingida. Por exemplo, um teste de uma função aritmético simples pode ser: Entrada 4; Verifique se a saída é 2. Em vez disso, crie o script como: Escolha uma entrada; Multiplique o resultado por si só e verifique se o resultado é a entrada original. Esse estilo permite variar as entradas de teste sem alterar o corpo principal do teste.  
   
 #### <a name="linking-tests-to-use-cases"></a>Testes de vinculação para casos de uso  
  Se você estiver usando [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] para criar e executar seus testes, você pode organizar seus testes em itens de trabalho de história de usuário, requisito ou em caso de uso. Você pode vincular esses itens de trabalho para casos de uso em seu modelo. Isso permite que você rapidamente rastrear alterações de requisitos para os testes e ajuda a acompanhar o progresso de cada caso de uso.  
@@ -116,7 +113,7 @@ Assert (countAfter == countBefore = 1);
   
  Uma regra invariável desse tipo controla não apenas todos os casos de uso são definidos no momento, mas também qualquer outros casos de uso que serão definidos posteriormente. Portanto, é útil para gravá-lo separadamente de qualquer caso de uso e testá-lo separadamente dos casos de uso.  
   
- Você pode escrever uma regra de negócio invariável como um comentário em um diagrama de classe. Para obter mais informações, consulte [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md).  
+ Você pode escrever uma regra de negócio invariável como um comentário em um diagrama de classe. Para obter mais informações, confira [Diagramas de classe UML: Diretrizes de](../modeling/uml-class-diagrams-guidelines.md).  
   
  Você pode vincular testes a uma regra de negócio ao vincular o comentário a um requisito ou usuário história item de trabalho que você pode vincular a um conjunto de testes no [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]. Para obter mais informações, consulte [anexando a casos de teste para elementos de modelo](#Attaching).  
   
@@ -130,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  Tente verificar o estado do sistema após cada mensagem ou ação. Isso pode exigir a instrumentação adicionais.  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>Derivando de testes do subsistema de modelos  
- O design de um sistema grande de alto nível, você pode identificar componentes ou subsistemas. Elas representam as partes que podem ser criadas separadamente, estão localizados em diferentes computadores ou são módulos reutilizáveis que podem ser recombinados de várias maneiras. Para obter mais informações, consulte [diagramas de componente UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md).  
+ O design de um sistema grande de alto nível, você pode identificar componentes ou subsistemas. Elas representam as partes que podem ser criadas separadamente, estão localizados em diferentes computadores ou são módulos reutilizáveis que podem ser recombinados de várias maneiras. Para obter mais informações, consulte [diagramas de componente UML: Diretrizes de](../modeling/uml-component-diagrams-guidelines.md).  
   
  Você pode aplicar a cada componente principal os mesmos princípios que você usa em todo o sistema. Em um projeto grande, cada componente pode ter seu próprio modelo de requisitos. Em projetos menores, um modelo de arquitetura ou design de alto nível pode ser criado para mostrar os principais componentes e suas interações. Para obter mais informações, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
   
@@ -182,6 +179,3 @@ Assert (countAfter == countBefore = 1);
  [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)   
  [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)   
  [Análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md)
-
-
-
