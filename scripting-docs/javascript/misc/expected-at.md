@@ -14,14 +14,14 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05842c274c27165a7065cb90fda60dd75da2a659
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840332"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018305"
 ---
-# <a name="expected-"></a>'@' esperado
+# <a name="expected-"></a>Esperado '\@'
 Você tentou criar uma variável a ser usada com instruções de compilação condicional usando o `@set` instrução, mas não colocou um sinal de arroba "**@**" antes do nome da variável.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
@@ -33,6 +33,6 @@ Você tentou criar uma variável a ser usada com instruções de compilação co
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [@set Statement](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set Instrução](../../javascript/reference/at-set-statement-javascript.md)   
  [Compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)
