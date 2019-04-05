@@ -1,14 +1,9 @@
 ---
-title: 'CA2147: Métodos transparentes talvez não usem segurança declara | Microsoft Docs'
-ms.custom: ''
+title: 'CA2147: Métodos transparentes não podem usar a segurança declara | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SecurityTransparentCodeShouldNotAssert
 - CA2147
@@ -21,14 +16,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6542a2063d076cb57750015039f413b2faf4bca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e8ac2e907e3c13a019e5f534faf86ae425ae30a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921622"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924593"
 ---
-# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: os métodos transparentes talvez não usem declarações de segurança
+# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Métodos transparentes podem não usar declarações de segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -70,6 +65,3 @@ ms.locfileid: "49921622"
 
 ## <a name="see-also"></a>Consulte também
  [Avisos de segurança](../code-quality/security-warnings.md)
-
-
-

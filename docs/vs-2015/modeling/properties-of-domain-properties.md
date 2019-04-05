@@ -1,25 +1,22 @@
 ---
 title: Propriedades das propriedades de domínio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain properties
 ms.assetid: a9471562-d6f2-46bf-9872-e0d66ba03150
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ca7f4e44f1d40256e821091609752b48d8f204d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923008"
 ---
 # <a name="properties-of-domain-properties"></a>Propriedades de propriedades de domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,22 +38,19 @@ Um *propriedade de domínio* é um recurso de um elemento de modelo que pode con
   
 |Propriedade|Descrição|Valor padrão|  
 |--------------|-----------------|-------------------|  
-|**Descrição**|A descrição usada para documentar a interface do usuário (IU) do designer gerado.|\<Nenhum >|  
-|**Nome de exibição**|O nome que será exibido no designer gerado para essa propriedade de domínio. Ele pode conter espaços e pontuação, por exemplo "Título da Música".|\<Nenhum >|  
-|**Nome do provedor de elemento**|Só será aplicável se você tiver configurado `Is Element Name` como `true`. Você pode escrever código que fornece um nome para um novo elemento de uma classe de domínio, substituindo o comportamento padrão.<br /><br /> Em um arquivo de código no projeto DSL, crie uma classe derivada de <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider>.<br /><br /> Depois, no Gerenciador de DSL, clique com o botão direito do mouse na raiz do DSL e clique em Adicionar Tipo Externo. Insira o nome da sua classe.<br /><br /> Escolha essa propriedade de domínio novamente e escolha o nome da classe na lista suspensa.|\<Nenhum >|  
-|**Modificador de acesso getter**|O nível de acesso da classe de domínio (`public` ou `internal`). Controla o escopo no qual o código do programa pode acessar a propriedade.|`public`|  
-|**Palavra-chave ajuda**|A palavra-chave opcional usada para indexar a ajuda F1 desta propriedade de domínio.|\<Nenhum >|  
+|**Descrição**|A descrição usada para documentar a interface do usuário (IU) do designer gerado.|\<nenhum>|  
+|**Nome de exibição**|O nome que será exibido no designer gerado para essa propriedade de domínio. Ele pode conter espaços e pontuação, por exemplo "Título da Música".|\<nenhum>|  
+|**Nome do provedor de elemento**|Só será aplicável se você tiver configurado `Is Element Name` como `true`. Você pode escrever código que fornece um nome para um novo elemento de uma classe de domínio, substituindo o comportamento padrão.<br /><br /> Em um arquivo de código no projeto DSL, crie uma classe derivada de <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider>.<br /><br /> Depois, no Gerenciador de DSL, clique com o botão direito do mouse na raiz do DSL e clique em Adicionar Tipo Externo. Insira o nome da sua classe.<br /><br /> Escolha essa propriedade de domínio novamente e escolha o nome da classe na lista suspensa.|\<nenhum>|  
+|**Getter Access Modifier**|O nível de acesso da classe de domínio (`public` ou `internal`). Controla o escopo no qual o código do programa pode acessar a propriedade.|`public`|  
+|**Palavra-chave ajuda**|A palavra-chave opcional usada para indexar a ajuda F1 desta propriedade de domínio.|\<nenhum>|  
 |**É navegável**|Se `True`, a propriedade de domínio será exibida para o usuário na janela de propriedades quando modelos deste DSL forem abertos.<br /><br /> Se `False`, a propriedade de domínio ficará oculta na interface do usuário.<br /><br /> Se você quiser tornar a propriedade de domínio visível, mas somente leitura, defina **é IU somente leitura**.|`True`|  
 |**É o nome do elemento**|Se `True`, esta propriedade de domínio será exibida como o nome do seu elemento modelo no Gerenciador de DSL.<br /><br /> Novos elementos do modelo receberão um valor padrão único para esta propriedade. Se você quiser controlar como esses valores são gerados, defina **provedor de nomes de elemento**.|`False`|  
 |**É IU somente leitura**|Se `True`, o valor da propriedade de domínio não poderá ser alterada usando a IU. Ele ainda pode ser definido por programas e estará visível na janela Propriedades.<br /><br /> Se você quiser ocultar a propriedade de domínio do usuário, defina **é navegável**. Se você quiser controlar o acesso por programas, defina **modificador de acesso Setter**.|`False`|  
-|**Tipo**|O tipo da propriedade de domínio (`Normal`, `Calculated` ou `CustomStorage`). Para obter mais informações, consulte [Calculated e propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|  
-|**Nome**|O nome da propriedade do domínio. Ele deve ser um identificador válido, por exemplo **SongTitle**.|\<Nenhum >|  
-|**Observações**|Notas informais associadas a esta propriedade de domínio.|\<Nenhum >|  
-|**Modificador de acesso setter**|O modificador de acesso do setter. Controla o escopo no qual o código do programa pode definir a propriedade.|`public`|  
+|**Kind**|O tipo da propriedade de domínio (`Normal`, `Calculated` ou `CustomStorage`). Para obter mais informações, consulte [Calculated e propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|  
+|**Nome**|O nome da propriedade do domínio. Ele deve ser um identificador válido, por exemplo **SongTitle**.|\<nenhum>|  
+|**Observações**|Notas informais associadas a esta propriedade de domínio.|\<nenhum>|  
+|**Setter Access Modifier**|O modificador de acesso do setter. Controla o escopo no qual o código do programa pode definir a propriedade.|`public`|  
 |**Tipo**|O tipo de propriedade. Para adicionar à lista de tipos disponíveis, clique com botão direito a raiz do DSL no Gerenciador de DSL e clique em **Adicionar tipo externo**.|`String`|  
   
 ## <a name="see-also"></a>Consulte também  
- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

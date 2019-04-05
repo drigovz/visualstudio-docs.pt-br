@@ -1,14 +1,9 @@
 ---
-title: 'Como: especificar informações de código adicionais usando analysis_assume | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Especificar informações de código adicionais usando analysis_assume | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - __analysis_assume
 helpviewer_keywords:
@@ -17,15 +12,15 @@ ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: de4d70dc615c14e9f9355608fa6b352b799c2c1a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925054"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Como especificar informações de código adicionais usando __analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Como: Especificar informações de código adicionais usando _analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode fornecer dicas para a ferramenta de análise de código para código C/C++ que ajudam no processo de análise e reduzir os avisos. Para fornecer informações adicionais, use a função a seguir:  
@@ -65,6 +60,3 @@ void test( )
   
 ## <a name="see-also"></a>Consulte também  
  [__assume](http://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)
-
-
-

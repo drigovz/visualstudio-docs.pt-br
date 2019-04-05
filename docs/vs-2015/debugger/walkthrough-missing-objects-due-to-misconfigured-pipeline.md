@@ -1,27 +1,22 @@
 ---
 title: 'Passo a passo: Objetos ausentes devido ao Pipeline configurado incorretamente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd28886695e3234240de5675e5e2b19972b105fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782005"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58923253"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Instruções passo a passo: objetos ausentes devido ao pipeline configurado incorretamente
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Passo a passo: Objetos ausentes devido a configuração incorreta do pipeline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ferramentas de diagnóstico de gráficos para investigar um objeto que está faltando devido a um sombreador de pixel não definidas.  
@@ -110,6 +105,3 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md
    Depois de corrigir o código, você pode recriá-lo e executar o aplicativo novamente para verificar se o problema de renderização é resolvido:  
   
    ![O objeto agora é exibido](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
-
-
-

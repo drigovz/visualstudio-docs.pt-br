@@ -1,23 +1,20 @@
 ---
 title: Definindo formas e conectores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812940"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925516"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definindo formas e conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +47,3 @@ Há diversos tipos básicos de formas possíveis de serem usados para exibir inf
   
 ##  <a name="shapeInheritance"></a> Herança da forma  
  Uma forma pode ser herdeira de outra forma. No entanto, as formas devem ser do mesmo tipo. Por exemplo, somente uma forma geométrica pode ser herdeira de uma forma geométrica. Formas herdadas possuem os compartimentos e decoradores de sua forma de base. Os conectores podem ser herdeiros dos conectores.
-
-
-

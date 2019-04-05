@@ -1,14 +1,9 @@
 ---
 title: IDebugProgramPublisher2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramPublisher2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 89d0dd95f4587950e1381f5fd16d690d010109c3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cad86071904b2af4c22a2cb1a0ef67d7de95d84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747089"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926246"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,14 +51,14 @@ IDebugProgramPublisher2 : IUnknown
  Essa interface disponibiliza programas e nós de programa (ou seja, "Publicar") para uso por DEs e o Gerenciador de sessão de depuração (SDM). Para acessar programas publicados e nós de programa, use o [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface. Isso é a única maneira de que Visual Studio pode reconhecer que um programa está sendo depurado.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo mostra como instanciar o Editor de programa e registrar um nó de programa. Isso é obtido do Tutorial [o nó do programa de publicação](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
+ Este exemplo mostra como instanciar o Editor de programa e registrar um nó de programa. Isso é obtido do Tutorial [o nó do programa de publicação](http://msdn.microsoft.com/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
   
 ```cpp#  
 // This is how m_srpProgramPublisher is defined in the class definition:  
@@ -99,4 +94,3 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 ## <a name="see-also"></a>Consulte também  
  [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
-

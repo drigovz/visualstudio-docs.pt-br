@@ -1,14 +1,9 @@
 ---
-title: 'Como: incluir um arquivo de dados em um aplicativo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Incluir um arquivo de dados em um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923025"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Como incluir um arquivo de dados em um aplicativo ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Como: Incluir um arquivo de dados em um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalação de aplicativo é atribuído a um diretório de dados no disco local do computador de destino, onde o aplicativo pode gerenciar seus próprios dados. Arquivos de dados podem incluir arquivos de qualquer tipo: arquivos de texto, arquivos XML ou até mesmo arquivos de banco de dados (. mdb) do Microsoft Access. Os procedimentos a seguir mostram como adicionar um arquivo de dados de qualquer tipo em seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
@@ -94,6 +89,3 @@ Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalação de apli
   
 ## <a name="see-also"></a>Consulte também  
  [Acessando dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

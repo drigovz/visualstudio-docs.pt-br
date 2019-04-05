@@ -1,11 +1,8 @@
 ---
-title: 'Como: depurar fluxos de trabalho baseados em ASP.NET (herdado) | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar fluxos de trabalho baseados em ASP.NET (herdado) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - ASP.NET, debugging workflows
@@ -16,15 +13,15 @@ ms.assetid: 79b21edc-9e7d-410d-af68-09c1598b9c30
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b9da40b0b40216fc36ea45b199ecde9c6dc4a89d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923980"
 ---
-# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Como: Fluxos de trabalho de depuração ASP.NET-Based (legados)
+# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Como: Depurar de fluxos de trabalho baseados no ASP.NET (herdado)
 Este tópico descreve como depurar aplicativos baseadas em [!INCLUDE[vstecasp](../includes/vstecasp-md.md)][!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado.  
   
  Você pode depurar fluxos de trabalho herdados que são iniciados no ASP.NET ou em fluxos de trabalho herdados que são publicados como um serviço Web anexando o processo no qual o fluxo de trabalho é hospedado.  
@@ -57,5 +54,5 @@ Este tópico descreve como depurar aplicativos baseadas em [!INCLUDE[vstecasp](.
   
 ## <a name="see-also"></a>Consulte também  
  [Invocar o depurador do Visual Studio para Windows Workflow Foundation (herdado)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
- [Como: definir pontos de interrupção em fluxos de trabalho (herdado)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
+ [Como: Definir pontos de interrupção em fluxos de trabalho (herdado)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
  [Depurando fluxos de trabalho herdados](../workflow-designer/debugging-legacy-workflows.md)

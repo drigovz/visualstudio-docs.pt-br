@@ -1,23 +1,20 @@
 ---
 title: A classe selecionada não pode ser excluída porque ele é usado como um tipo de retorno para um ou mais métodos DataContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 084843636d62bd7d85c5bbc141aa0fe8ddf81462
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ad1ccf45a2df6a0b1b23208926136aa2b09eabd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236256"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923951"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +28,10 @@ O tipo de retorno de um ou mais métodos de <xref:System.Data.Linq.DataContext> 
   
 1.  Identificar <xref:System.Data.Linq.DataContext> métodos que usam a classe de entidade como um tipo de retorno selecionando um <xref:System.Data.Linq.DataContext> método nos métodos de painel e inspecionando a **tipo de retorno** propriedade no **propriedades** janela .  
   
-2.  Defina as **tipo de retorno** para uma classe de entidade diferente ou exclua o <xref:System.Data.Linq.DataContext> método a partir do painel de métodos.  
+2.  Definir **Tipo de Retorno** a uma classe diferente de entidade ou exclui o método de <xref:System.Data.Linq.DataContext> do painel métodos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [Métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Como alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)
-
+ [Como: Alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)

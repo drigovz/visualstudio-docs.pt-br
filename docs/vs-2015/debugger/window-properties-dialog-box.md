@@ -1,27 +1,22 @@
 ---
 title: Janela caixa de diálogo de propriedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b10fb130e5f2f584369a363491c5317e83aaf80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9eb07b20c08945b6a9f253d0ab634dca1c767d59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924674"
 ---
 # <a name="window-properties-dialog-box"></a>Caixa de diálogo Propriedades da Janela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +24,19 @@ ms.locfileid: "51773958"
 Use essa caixa de diálogo para obter mais informações sobre uma janela específica. Para exibir essa caixa de diálogo, mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Guia Geral. Caixa de diálogo de propriedades de janela](../debugger/general-tab-window-properties-dialog-box.md)  
+ [Guia Geral. Caixa de diálogo Propriedades da Janela](../debugger/general-tab-window-properties-dialog-box.md)  
  Mostra informações sobre a janela selecionada.  
   
- [Guia de estilos. Caixa de diálogo de propriedades de janela](../debugger/styles-tab-window-properties-dialog-box.md)  
+ [Guia Estilos. Caixa de diálogo Propriedades da Janela](../debugger/styles-tab-window-properties-dialog-box.md)  
  Mostra os estilos aplicados para a janela selecionada.  
   
- [Guia do Windows. Caixa de diálogo de propriedades de janela](../debugger/windows-tab-window-properties-dialog-box.md)  
+ [Guia Janelas. Caixa de diálogo Propriedades da Janela](../debugger/windows-tab-window-properties-dialog-box.md)  
  Mostra informações sobre janelas relacionadas a janela selecionada.  
   
- [Guia de classe. Caixa de diálogo de propriedades de janela](../debugger/class-tab-window-properties-dialog-box.md)  
+ [Guia Classe. Caixa de diálogo Propriedades da Janela](../debugger/class-tab-window-properties-dialog-box.md)  
  Mostra informações sobre a classe da janela selecionada.  
   
- [Guia do processo. Caixa de diálogo de propriedades de janela](../debugger/process-tab-window-properties-dialog-box.md)  
+ [Guia Processo. Caixa de diálogo Propriedades da Janela](../debugger/process-tab-window-properties-dialog-box.md)  
  Identifica o processo da janela selecionada.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
@@ -65,6 +60,3 @@ Use essa caixa de diálogo para obter mais informações sobre uma janela espec�
   
  [Usando Spy++](../debugger/using-spy-increment.md)  
  Apresenta a ferramenta Spy + + e explica como ele pode ser usado.
-
-
-

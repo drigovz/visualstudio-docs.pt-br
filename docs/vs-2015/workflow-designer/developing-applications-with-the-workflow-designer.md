@@ -1,11 +1,8 @@
 ---
 title: Desenvolvimento de aplicativos com o Designer de fluxo de trabalho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - DefaultWorkflowDesigner
@@ -19,13 +16,13 @@ ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 71cde900802543a21a20bc02e95bcfedc50d5541
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926576"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Desenvolvendo aplicativos com designers de Fluxo de Trabalho
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] é um designer e um depurador visuais para a compilação e gráficos a depuração de aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] em [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] que está hospedada no ambiente de desenvolvimento de [!INCLUDE[vs2010](../includes/vs2010-md.md)] . Permite que você escreve um aplicativo de fluxo de trabalho, uma biblioteca de atividade, ou um serviço composto de [!INCLUDE[indigo1](../includes/indigo1-md.md)] com o uso de modelos e os designers de atividade. [!INCLUDE[crabout](../includes/crabout-md.md)] fluxos de trabalho, consulte o [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  

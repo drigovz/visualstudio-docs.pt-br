@@ -1,25 +1,20 @@
 ---
 title: Depuração remota de ASP.NET em um remoto IIS 7.5 computador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924006"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Depuração remota de ASP.NET em um computador remoto IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Depois de instalado, verifique se que o depurador remoto está em execução no 
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    No Windows Server 2008 R2, instale o ASP.NET 4, em vez de usar esse comando: **\v4.0.30319\aspnet_regiis.exe - ir C:\Windows\Microsoft.NET\Framework (64)**
+    No Windows Server 2008 R2, instale o ASP.NET 4, em vez de usar este comando:   **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. Copiar o diretório de projeto do ASP.NET do computador do Visual Studio para um diretório local (que chamaremos **C:\Publish**) no computador do Windows Server. Você pode copiar o projeto manualmente, use Xcopy, implantação da Web, Robocopy, Powershell ou outras opções.
 
     > [!CAUTION]
@@ -93,7 +88,7 @@ Depois de instalado, verifique se que o depurador remoto está em execução no 
 1. No computador do Visual Studio, abra o **MyMVC** solução.
 1. No Visual Studio, clique em **depurar / anexar ao processo** (**Ctrl + Alt + P**).
 1. Definir o qualificador de campo para  **\<nome do computador remoto >: 4020**.
-1. Clique em **Refresh**.
+1. Cliquem em **Atualizar**.
     Você deve ver alguns processos que aparecem na **processos disponíveis** janela.
 
     Se você não vir todos os processos, tente usar o endereço IP em vez do nome do computador remoto (a porta é necessária). Use `ipconfig` em uma linha de comando para obter o endereço IPv4.
@@ -113,6 +108,3 @@ Depois de instalado, verifique se que o depurador remoto está em execução no 
 1. Na página da web ASP.NET, clique no link para o **sobre** página.
 
     O ponto de interrupção deve ser atingido no Visual Studio.
-
-
-

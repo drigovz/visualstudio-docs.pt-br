@@ -1,35 +1,30 @@
 ---
 title: Elemento EnableEditOfLocationField (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b227db6f1eccf7d0d5c291bfd831525ae010f1d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6823b462f884e06e1729c9bb4777cc166b34ea7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924476"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica se o usuário pode editar o campo de localização.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<EnableEditOfLocationField >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableEditOfLocationField>  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -94,4 +89,3 @@ Especifica se o usuário pode editar o campo de localização.
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-

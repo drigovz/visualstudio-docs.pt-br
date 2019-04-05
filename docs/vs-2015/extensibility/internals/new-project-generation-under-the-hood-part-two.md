@@ -1,37 +1,32 @@
 ---
-title: 'Nova geração de projeto: Nos bastidores, parte 2 | Microsoft Docs'
-ms.custom: ''
+title: 'Geração de novo projeto: Nos bastidores, parte 2 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923617"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Geração de novo projeto: nos bastidores, Parte dois
+# <a name="new-project-generation-under-the-hood-part-two"></a>Geração de novo projeto: Bastidores, parte dois
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Na [nova geração de projeto: Under the Hood, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou uma **Visual c# Windows Application**, preenchido a **nome** e **local** caixas de texto e Okey clicado.  
+No [nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou uma **Visual c# Windows Application**, preenchido a **nome** e **local** caixas de texto e Okey clicado.  
   
 ## <a name="generating-the-solution-files"></a>Gerar os arquivos de solução  
  Escolher um modelo de aplicativo direciona [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para descompactar e abrir o arquivo. vstemplate correspondente e para iniciar um modelo para interpretar os comandos XML neste arquivo. Esses comandos criam projetos e itens de projeto na solução nova ou existente.  
   
- O modelo desempacota os arquivos de origem, chamados de modelos de item, da mesma pasta. zip que contém o arquivo. vstemplate. O modelo copia esses arquivos para o novo projeto, personalizá-las adequadamente. Para uma visão geral dos modelos de projeto e de item, consulte [NIB: modelos do Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ O modelo desempacota os arquivos de origem, chamados de modelos de item, da mesma pasta. zip que contém o arquivo. vstemplate. O modelo copia esses arquivos para o novo projeto, personalizá-las adequadamente. Para uma visão geral dos modelos de projeto e de item, consulte [NIB: Modelos do Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Substituição de parâmetro de modelo  
  Quando o modelo copia um modelo de item para um novo projeto, ele substitui quaisquer parâmetros de modelo com cadeias de caracteres para personalizar o arquivo. Um parâmetro de modelo é um símbolo especial que é precedido e seguido por um sinal de cifrão, por exemplo, $ $date.  
@@ -82,7 +77,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- Analisamos o \<TemplateData > seção de [nova geração de projeto: Under the Hood, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). As marcas nesta seção são usadas para controlar a aparência do **novo projeto** caixa de diálogo.  
+ Analisamos os \<TemplateData > seção o [nova geração de projeto: Nos bastidores, parte um](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). As marcas nesta seção são usadas para controlar a aparência do **novo projeto** caixa de diálogo.  
   
  As marcas no \<TemplateContent > seção controle a geração de novos projetos e itens de projeto. Aqui está o \<TemplateContent > seção do arquivo na pasta \Program Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip cswindowsapplication.vstemplate.  
   
@@ -161,7 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Nova geração de projeto: nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)
-
-

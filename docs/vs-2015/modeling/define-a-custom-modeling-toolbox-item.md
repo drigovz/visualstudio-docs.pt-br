@@ -1,25 +1,22 @@
 ---
 title: Definir um personalizado item de caixa de ferramentas de modelagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924638"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir um item de caixa de ferramentas de modelagem personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
 4.  Adicione suas definições de caixa de ferramentas para o projeto. Incluir o **.tbxinfo** de arquivos, os arquivos de diagrama, arquivos de bitmap e quaisquer arquivos de recurso e certifique-se de que eles são incluídos no VSIX.  
   
-    -   No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **Add**, **Item existente**. Na caixa de diálogo, defina **objetos do tipo: todos os arquivos**. Localize os arquivos, selecione todas elas e, em seguida, escolha **adicionar**.  
+    -   No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **Add**, **Item existente**. Na caixa de diálogo, defina **objetos do tipo: Todos os arquivos**. Localize os arquivos, selecione todas elas e, em seguida, escolha **adicionar**.  
   
         > [!NOTE]
         >  Neste projeto, você não pode abrir os arquivos de diagrama no editor de modelo.  
@@ -185,7 +182,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
     -   **Tipo de** = **tipo de extensão personalizada**  
   
-    -   Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
+    -   Type = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
         >  Isso não é uma das opções na lista suspensa. Você tem para inseri-la usando o teclado.  
@@ -200,7 +197,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
      Na instância experimental, crie ou abra um diagrama UML do tipo relevante. Verifique se que sua nova ferramenta aparece na caixa de ferramentas e que ele cria elementos corretamente.  
   
-10. **Para obter um arquivo VSIX para implantação:** no Windows Explorer, abra a pasta **.\bin\Debug** ou **.\bin\Release** para localizar o **VSIX** arquivo. Esse é um [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] arquivo de extensão. Ele pode ser instalado em seu computador e também é enviado a outros usuários do Visual Studio.  
+10. **Para obter um arquivo VSIX para implantação:** No Windows Explorer, abra a pasta **.\bin\Debug** ou **.\bin\Release** para encontrar o **. VSIX** arquivo. Esse é um [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] arquivo de extensão. Ele pode ser instalado em seu computador e também é enviado a outros usuários do Visual Studio.  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Para instalar ferramentas personalizadas de uma extensão do Visual Studio  
   
@@ -241,6 +238,3 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
  [Definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

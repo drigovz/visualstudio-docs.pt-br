@@ -1,27 +1,22 @@
 ---
 title: Extensibilidade do depurador do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Debugging SDK
 - Debugging SDK
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b5e9e7a3db38b5138f6392ff89f3a3bb4a13303
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924844"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidade do depurador do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ O Visual Studio inclui um depurador de código fonte totalmente interativas, for
   
  O [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] inclui uma referência completa a todos os [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] elementos necessários para criar DE um novo. Além disso, há exemplos e tutoriais que ajudarão você a começar.  
   
- Para um exemplo de ponta a ponta de um sistema de projeto de linguagem com suporte à depuração, consulte o [exemplo de IronPython](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Para um exemplo de ponta a ponta de um sistema de projeto de linguagem com suporte à depuração, consulte o [exemplo de IronPython](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  As seções a seguir descrevem como estender o depurador usando o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
@@ -54,4 +49,3 @@ O Visual Studio inclui um depurador de código fonte totalmente interativas, for
   
  [Amostras](../../extensibility/debugger/visual-studio-debugging-samples.md)  
  Contém links para uma amostra do avaliador de expressão comum language runtime e um exemplo de mecanismo de depuração.
-

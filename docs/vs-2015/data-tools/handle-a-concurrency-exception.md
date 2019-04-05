@@ -1,12 +1,9 @@
 ---
 title: Manipular uma exceção de simultaneidade | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922691"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 4.  Preencher um conjunto de dados com os dados do `Customers` tabela no banco de dados Northwind.  
   
-5.  Use o [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) no Visual Studio para acessar diretamente o `Customers` tabela de dados e alterar um registro.  
+5.  Use o [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) no Visual Studio para acessar diretamente o `Customers` tabela de dados e alterar um registro.  
   
 6.  Alterar o mesmo registro com um valor diferente, atualize o conjunto de dados e tentam gravar as alterações no banco de dados, o que resulta em um erro de simultaneidade que está sendo gerado.  
   
@@ -56,10 +53,10 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir este passo a passo, você precisará de:  
   
--   Acesso ao banco de dados de exemplo Northwind com permissão para executar atualizações. Para obter mais informações, consulte [como: instalar os bancos de dados de exemplo](../data-tools/how-to-install-sample-databases.md).  
+-   Acesso ao banco de dados de exemplo Northwind com permissão para executar atualizações.
   
 > [!NOTE]
->  As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Criar um novo projeto  
  Passo a passo você começa criando um novo aplicativo do Windows.  
@@ -83,7 +80,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 1.  Sobre o **dados** menu, escolha **fonte de adicionar novos dados**.  
   
-     O [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) é aberta.  
+     O [Assistente de Configuração de Fonte de Dados](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) é aberto.  
   
 2.  Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**.  
   
@@ -211,7 +208,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 8.  No primeiro registro no formulário (`ALFKI`), altere`ContactName` para `Maria Anders1`.  
   
-9. Selecione o **salvar** botão.  
+9. Selecione o botão **Salvar**.  
   
      O erro de simultaneidade é gerado e a caixa de mensagem é exibida.  
   

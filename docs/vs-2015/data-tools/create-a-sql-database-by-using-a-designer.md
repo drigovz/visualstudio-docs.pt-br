@@ -1,12 +1,9 @@
 ---
 title: Criar um banco de dados SQL usando um designer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 54
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923855"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Criar um banco de dados SQL usando um designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ ms.locfileid: "49860316"
   
 2.  Abra o menu de atalho **tabelas**e, em seguida, selecione **adicionar nova tabela**.  
   
-     O **Designer de tabela** é aberta e mostra uma grade com uma linha padrão, que representa uma única coluna na tabela que você está criando. Adicionando linhas à grade, você adicionará colunas na tabela.  
+     O **Designer de Tabela** é aberto e mostra uma grade com uma linha padrão, que representa uma única coluna na tabela que você está criando. Adicionando linhas à grade, você adicionará colunas na tabela.  
   
 3.  Na grade, adicione uma linha para cada uma das seguintes entradas:  
   
@@ -195,4 +192,3 @@ ms.locfileid: "49860316"
   
 ## <a name="next-steps"></a>Próximas etapas  
  Agora que você tem um arquivo de banco de dados local com alguns dados de exemplo, você pode concluir qualquer uma das instruções passo a passo que demonstram tarefas de banco de dados.
-

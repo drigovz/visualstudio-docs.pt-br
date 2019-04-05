@@ -1,26 +1,21 @@
 ---
 title: O carregamento do projeto em uma solução de gerenciamento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 041c5ab52a7a0e8be89ef1abe6db4d1aed51ecfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781758"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924666"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Gerenciando o carregamento de projeto em uma solução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,4 +115,3 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 > [!NOTE]
 >  . Por padrão somente os projetos que têm a demanda de carga e prioridades de carregamento em segundo plano são carregadas, mas se o <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> sinalizador é passado para o método, todos os projetos serão carregados, exceto para aqueles que são marcados para carregar explicitamente.
-

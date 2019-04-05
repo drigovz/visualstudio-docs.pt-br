@@ -1,26 +1,21 @@
 ---
 title: Analisar problemas de memória do .NET Framework | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924396"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analisar problemas de memória .NET Framework
 Encontre perdas de memória e uso ineficiente da memória no código do .NET Framework com o analisador de memória gerenciada do Visual Studio. A versão mínima do .NET Framework do código de destino é o .NET Framework 4.5.  
@@ -100,7 +95,7 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
   
 |||  
 |-|-|  
-|**Habilitar Apenas Meu Código**|Habilitar Apenas Meu Código oculta os objetos de sistema mais comuns, para que apenas os tipos criados por você sejam exibidos na lista.<br /><br /> Você também pode definir a opção Just My Code no Visual Studio **opções** caixa de diálogo. Sobre o **Debug** menu, escolha **opções e configurações**. No **Debugging**/**geral** guia, marque ou desmarque **Just My Code**.|  
+|**Habilitar Apenas Meu Código**|Habilitar Apenas Meu Código oculta os objetos de sistema mais comuns, para que apenas os tipos criados por você sejam exibidos na lista.<br /><br /> Você também pode definir a opção Just My Code no Visual Studio **opções** caixa de diálogo. No menu de **Depurar**, escolha **Opções e Configurações**. No **Debugging**/**geral** guia, marque ou desmarque **Just My Code**.|  
 |**Recolher pequenos objetos**|**Recolher pequenos objetos** oculta todos os tipos cujo tamanho inclusivo total é menor que 0,5% do tamanho total do heap.|  
   
  Você também pode filtrar a lista de tipo, inserindo uma cadeia de caracteres a **pesquisa** caixa. A lista exibe apenas os tipos cujos nomes contenham a cadeia de caracteres.  
@@ -140,7 +135,7 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
   
   Por padrão, os tipos e as instâncias são classificadas por **tamanho inclusivo (Bytes)**. Escolha um cabeçalho de coluna na lista para alterar a ordem de classificação.  
   
-#### <a name="paths-to-root"></a>demarcadores para a Raiz  
+#### <a name="paths-to-root"></a>Caminhos para a Raiz  
   
 -   Para um tipo selecionado na **tipo de objeto** tabela, o **caminhos para raiz** tabela mostra as hierarquias de tipo exclusivo que levam até objetos raiz de todos os objetos do tipo, juntamente com o número de referências para o tipo acima na hierarquia.  
   

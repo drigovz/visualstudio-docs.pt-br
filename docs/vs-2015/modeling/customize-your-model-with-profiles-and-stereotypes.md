@@ -1,12 +1,9 @@
 ---
 title: Personalizar o modelo com perfis e estereótipos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, profiles
 - UML model, stereotypes
@@ -15,13 +12,13 @@ ms.assetid: fd607157-0d3a-4583-a84e-427a4b2a5acb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 33e887764c535083c2449a7d333868b2ccd9c4c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923348"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personalizar o modelo com perfis e estereótipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +46,3 @@ No Visual Studio, você pode adaptar os elementos de modelo UML padrão, como cl
 |[Instalar um perfil UML](../modeling/install-a-uml-profile.md)|Se alguém tenha dado a você um perfil UML, você pode instalá-lo em seu computador.|  
 |[Definir um item de caixa de ferramentas de modelagem personalizada](../modeling/define-a-custom-modeling-toolbox-item.md)|Um item de caixa de ferramentas personalizado evita que você definir repetidamente um estereótipo em novos elementos.|  
 |[Classes UML de cor por estereótipo](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Esse código de exemplo estende os diagramas UML. Ela configura automaticamente a cor de uma forma UML de acordo com o estereótipo do elemento.|
-
-
-

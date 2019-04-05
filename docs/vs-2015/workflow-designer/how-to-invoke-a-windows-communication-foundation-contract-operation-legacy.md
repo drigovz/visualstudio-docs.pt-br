@@ -1,25 +1,22 @@
 ---
-title: 'Como: chamar uma operação de contrato Windows Communication Foundation (herdado) | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Invocar uma operação de contrato Windows Communication Foundation (herdado) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5e59d5ed9617d4be71a0542e35dd509d9035ae33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b6cdd551a0cf8ee085359f5545dd16dfac163c4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923219"
 ---
-# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Como: Chamar uma operação do Windows Communication Foundation (o legados)
+# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Como: Invocar uma operação do contrato do Windows Communication Foundation (herdado)
 Este tópico descreve como chamar uma operação do contrato de [!INCLUDE[indigo1](../includes/indigo1-md.md)] usando o novas [!INCLUDE[wfd1](../includes/wfd1-md.md)] que direciona [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Após arrastar uma **SendActivity** atividade da caixa de ferramentas para a superfície de design de fluxo de trabalho, você deve importar um contrato existente e determinar qual operação será invocada daquele **SendActivity** atividade. Selecione o contrato e as operações com o [escolha a caixa de diálogo da operação (herdado)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
@@ -52,5 +49,5 @@ Este tópico descreve como chamar uma operação do contrato de [!INCLUDE[indigo
   
 ## <a name="see-also"></a>Consulte também  
  [Escolha a caixa de diálogo de operação (herdado)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [Como: implementar uma operação de contrato do Windows (legados)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Como: Implementar uma operação de contrato do Windows (legados)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
  [Atividades de fluxo de trabalho herdadas](../workflow-designer/legacy-workflow-activities.md)

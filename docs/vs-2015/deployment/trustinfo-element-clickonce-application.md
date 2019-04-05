@@ -1,14 +1,9 @@
 ---
 title: '&lt;trustInfo&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -27,13 +22,13 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924546"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicativo ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -278,6 +273,3 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ## <a name="see-also"></a>Consulte também  
  [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)   
  [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
-
-
-

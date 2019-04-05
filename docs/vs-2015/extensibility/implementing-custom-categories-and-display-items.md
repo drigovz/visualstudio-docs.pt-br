@@ -1,27 +1,22 @@
 ---
 title: Implementação de categorias personalizadas e itens de exibição | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 040c2408f8b0e120996f95e31afdf188d123f76a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924086"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementação de categorias personalizadas e itens de exibição
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +115,7 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
   
      O IDE chama o método apropriado seguindo as modificações de usuário do **fontes e cores** página. Por exemplo, ele chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> método se uma nova fonte é selecionada.  
   
-     -ou-  
+     - ou -  
   
 -   Sondando o IDE para que as alterações.  
   
@@ -138,6 +133,5 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  [Obtendo informações de cores para colorização de texto e fonte](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Acessando configurações de cor e a fonte armazenada](../extensibility/accessing-stored-font-and-color-settings.md)   
- [Como: acessar o esquema de cores e fontes internas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
+ [Como: Acessar as fontes internas e o esquema de cores](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [Visão geral de cor e de fonte](../extensibility/font-and-color-overview.md)
-

@@ -1,23 +1,20 @@
 ---
 title: Implantação por MSI e VSIX de uma DSL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6ce16f06-1978-4e19-8cdc-441ee65a3fb2
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf826a45fbb7f5fc23ffad36dc2adba0442cd3a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925302"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implantação de uma DSL por MSI e VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
   
 |Método|Benefícios|  
 |------------|--------------|  
-|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão)|Muito fácil de implantar: cópia e executar o **VSIX** arquivo do projeto DslPackage.<br /><br /> Para obter mais informações, consulte [instalando e desinstalando uma DSL usando a VSX](#Installing).|  
+|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão)|Muito fácil de implantar: Copie e execute o **VSIX** arquivo do projeto DslPackage.<br /><br /> Para obter mais informações, consulte [instalando e desinstalando uma DSL usando a VSX](#Installing).|  
 |MSI (arquivo do instalador)|-Permite que o usuário abra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] clicando duas vezes em um arquivo DSL.<br />-Associa um ícone com o tipo de arquivo DSL no computador de destino.<br />-Associa um XSD (esquema XML) com o tipo de arquivo DSL. Isso evita avisos quando o arquivo é carregado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Você deve adicionar um projeto de instalação à sua solução para criar um MSI.<br /><br /> Para obter mais informações, consulte [a implantação de uma DSL usando um arquivo MSI](#msi).|  
   
 ##  <a name="Installing"></a> Instalação e desinstalação de uma DSL usando a VSX  
@@ -141,6 +138,3 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 2.  Desinstale a DSL.  
   
 3.  Reinicie o Visual Studio.
-
-
-

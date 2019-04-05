@@ -1,14 +1,9 @@
 ---
 title: Auxiliares do SDK para depuração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923653"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Auxiliares do SDK para depuração
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>Definições de métrica  
  Essas definições podem ser usadas para nomes de métrica predefinidos. Os nomes correspondem aos nomes de valor e várias chaves de registro e estão todas definidas como cadeias de caracteres largos: por exemplo, `extern LPCWSTR metrictypeEngine`.  
   
-|Tipos predefinidos de métrica|Descrição: A chave de base para...|  
+|Tipos predefinidos de métrica|Descrição: o A chave de base para...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|Todas as métricas do mecanismo de depuração.|  
 |metrictypePortSupplier|Todas as métricas de fornecedor de porta.|  
@@ -183,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Definida como diferente de zero para indicar o suporte para a configuração de pontos de interrupção em alterações nos dados.|  
 |metricDisassembly|Definido como não zero para indicar o suporte para a produção de uma listagem de desmontagem.|  
 |metricDumpWriting|Definida como diferente de zero para indicar o suporte para despejo de gravação (o despejo de memória para um dispositivo de saída).|  
-|metricENC|Definido como não zero para indicar o suporte para editar e continuar. **Observação:** nunca deve definir isso de um mecanismo de depuração personalizado ou deve sempre será definido como 0.|  
+|metricENC|Definido como não zero para indicar o suporte para editar e continuar. **Observação:**  Um mecanismo de depuração personalizado nunca deve definir isso ou deve sempre será definido como 0.|  
 |metricExceptions|Definida como diferente de zero para indicar o suporte para exceções.|  
 |metricFunctionBP|Definida como diferente de zero para indicar o suporte para pontos de interrupção nomeados (os pontos de interrupção que param quando um determinado nome de função é chamado).|  
 |metricHitCountBP|Definida como diferente de zero para indicar o suporte para a configuração de pontos de interrupção "de acertos do ponto" (pontos de interrupção que são disparados somente depois que está sendo atingido um determinado número de vezes).|  
@@ -198,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Defina isso como não zero para indicar que o provedor de programa seria sempre carregado localmente.|  
 |metricEngineCanWatchProcess|Defina isso como diferente de zero para indicar que o mecanismo de depuração irá observar para processar eventos em vez do provedor do programa.|  
 |metricRemoteDebugging|Defina isso como diferente de zero para indicar o suporte para depuração remota.|  
-|metricEncUseNativeBuilder|Defina isso como não zero para indicar que o editar e continuar Manager devem usar encbuild.dll do mecanismo de depuração para compilar para editar e continuar. **Observação:** nunca deve definir isso de um mecanismo de depuração personalizado ou deve sempre será definido como 0.|  
+|metricEncUseNativeBuilder|Defina isso como não zero para indicar que o editar e continuar Manager devem usar encbuild.dll do mecanismo de depuração para compilar para editar e continuar. **Observação:**  Um mecanismo de depuração personalizado nunca deve definir isso ou deve sempre será definido como 0.|  
 |metricLoadUnderWOW64|Defina isso como diferente de zero para indicar que o mecanismo de depuração deve ser carregado no processo a ser depurado em WOW, ao depurar um processo de 64 bits; Caso contrário, o mecanismo de depuração será carregado no processo do Visual Studio (que está em execução no WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Defina isso como diferente de zero para indicar que o provedor do programa deve ser carregado do processo de depuração ao depurar um processo de 64 bits em WOW; Caso contrário, ele será carregado no processo do Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Defina isso como diferente de zero para indicar que o processo deve ser interrompida se uma exceção não tratada é lançada em limites de código gerenciados/não gerenciados.|  
@@ -237,7 +232,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Defina isso para mostrar o código de nonuser diferente de zero.|  
 |metricJustMyCodeStepping|Defina isso como diferente de zero para indicar que a revisão pode ocorrer apenas no código do usuário.|  
 |metricCLSID|CLSID para um objeto de um tipo específico de métrica.|  
-|MetricName|Nome amigável para um objeto de um tipo específico de métrica.|  
+|metricName|Nome amigável para um objeto de um tipo específico de métrica.|  
 |metricLanguage|Nome do idioma.|  
   
 ## <a name="registry-locations"></a>Locais do registro  
@@ -256,23 +251,23 @@ HRESULT EnumMetricSections(
   
  *[raiz de versão]*\  
   
- *[métrica root]*\  
+ *[metric root]*\  
   
  *[tipo de métrica]*\  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
 |*[chave do Registro]*|`HKEY_CURRENT_USER` ou `HKEY_LOCAL_MACHINE`.|  
 |*[raiz de versão]*|A versão do Visual Studio (por exemplo, `7.0`, `7.1`, ou `8.0`). No entanto, essa raiz também pode ser modificado usando o **/rootsuffix** alternar para o **devenv.exe**. Para VSIP, esse modificador é normalmente **Exp**, portanto, a raiz da versão seria, por exemplo, 8.0Exp.|  
-|*[métrica root]*|Isso ocorre `AD7Metrics` ou `AD7Metrics(Debug)`, dependendo se a versão de depuração de dbgmetric.lib é usada. **Observação:** se dbgmetric.lib for usada, essa convenção de nomenclatura deverão ser seguida se você tiver diferenças entre depuração e versão versões que devem ser refletidas no registro.|  
+|*[metric root]*|Isso ocorre `AD7Metrics` ou `AD7Metrics(Debug)`, dependendo se a versão de depuração de dbgmetric.lib é usada. **Observação:**  Se dbgmetric.lib for usada, essa convenção de nomenclatura deverão ser seguida se você tiver diferenças entre depuração e versão versões que devem ser refletidas no registro.|  
 |*[tipo de métrica]*|O tipo de métrica a ser gravado: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc. Eles são definidos como no dbgmetric.h como `metricTypeXXXX`, onde `XXXX` é o nome de tipo específico.|  
-|*[métrica]*|O nome de uma entrada a ser atribuído um valor para definir a métrica. A organização real das métricas depende o tipo de métrica.|  
+|*[metric]*|O nome de uma entrada a ser atribuído um valor para definir a métrica. A organização real das métricas depende o tipo de métrica.|  
 |*[valor de métrica]*|O valor atribuído para a métrica. O tipo que o valor deve ter (cadeia de caracteres), números, etc. depende a métrica.|  
   
 > [!NOTE]
@@ -287,11 +282,11 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
  `PortSupplier`\  
   
@@ -314,9 +309,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
@@ -334,17 +329,17 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
  `metadata`\  
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
@@ -365,9 +360,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de classe]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
  `Engine`\  
   
@@ -389,9 +384,9 @@ HRESULT EnumMetricSections(
   
  *[extensão guid]*\  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
@@ -406,31 +401,30 @@ HRESULT EnumMetricSections(
   
  *[tipos de exceção]*\  
   
- *[exceção]*\  
+ *[exception]*\  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[exceção]*\  
+ *[exception]*\  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
- *[métrica] = [valor de métrica]*  
+ *[metric] = [metric value]*  
   
 |Espaço reservado|Descrição|  
 |-----------------|-----------------|  
 |*[guid do mecanismo de depuração]*|O GUID de um mecanismo de depuração que dá suporte a exceções.|  
 |*[tipos de exceção]*|Um título geral para a subchave identifica a classe de exceções que podem ser manipulados. São nomes típicos **exceções do C++**, **exceções Win32**, **exceções do Common Language Runtime**, e **verificações de tempo de execução nativo**. Esses nomes também são usados para identificar uma determinada classe de exceção para o usuário.|  
-|*[exceção]*|Um nome para uma exceção: por exemplo, **com_error** ou **Control-Break**. Esses nomes também são usados para identificar uma exceção específica ao usuário.|  
+|*[exception]*|Um nome para uma exceção: por exemplo, **com_error** ou **Control-Break**. Esses nomes também são usados para identificar uma exceção específica ao usuário.|  
   
 ## <a name="requirements"></a>Requisitos  
  Esses arquivos estão localizados na [!INCLUDE[vs_dev10_ext](../../../includes/vs-dev10-ext-md.md)] diretório de instalação do SDK (por padrão, *[unidade]* \Program Files\Microsoft SDK do Visual Studio 2010\\).  
   
  Cabeçalho: includes\dbgmetric.h  
   
- Biblioteca: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

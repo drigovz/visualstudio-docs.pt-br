@@ -1,28 +1,23 @@
 ---
-title: 'Como: disparar eventos quando o Editor perde o foco | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Disparar eventos quando o Editor perde o foco | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - fire events on losing focus
 ms.assetid: 64d40695-6917-468a-8037-a253453ac159
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2875ff13302b1f54d87f1f69a68757b10fb98dca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6bcd77d16f3c765a522f178604842714db84e24
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749229"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923618"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Como: disparar eventos quando o Editor perde o foco
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Como: Disparar eventos quando o Editor perde o foco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Às vezes, é necessário saber quando um editor perde o foco no quadro de janela. Por exemplo, talvez seja necessário extrair o código de uma janela de código depois que o editor não está mais focalizado nele. O procedimento a seguir fornece as etapas a seguir para receber notificações do editor de perder o foco.  
@@ -40,4 +35,3 @@ ms.locfileid: "51749229"
     1.  O quadro de janela que você está procurando.  
   
     2.  O ponto em que seu programa perde a seleção para esse quadro de janela.
-

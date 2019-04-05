@@ -1,8 +1,8 @@
 ---
 title: Publish-WebApplicationWebSite (script do Windows PowerShell) | Microsoft Docs
-description: Saiba como publicar um projeto da web em um site do Azure. Esse script cria os recursos necessários em sua assinatura do Azure se não existirem.
+description: Saiba como publicar um projeto Web em um site do Azure. Se os recursos necessários não existirem, este script criará tais recursos em sua assinatura do Azure.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,16 +11,16 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 175181d5d866e9d7fab51eaf7c3262e47d0ed6a8
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: daf3e22176ef950177ebdb22ae6a9e36bcb5dd83
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924766"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script do Windows PowerShell)
 ## <a name="syntax"></a>Sintaxe
-Publica um projeto da web em um site do Azure. Se não existirem, o script cria os recursos necessários em sua assinatura do Azure.
+Publica um projeto Web em um site do Azure. Se os recursos necessários não existirem, o script criará tais recursos em sua assinatura do Azure.
 
     Publish-WebApplicationWebSite
     –Configuration <configuration>
@@ -32,69 +32,69 @@ Publica um projeto da web em um site do Azure. Se não existirem, o script cria 
 
 
 ## <a name="configuration"></a>Configuração
-O caminho para o arquivo de configuração JSON que descreve os detalhes da implantação.
+O caminho para o arquivo de configuração de JSON que descreve os detalhes da implantação.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |true |
-| Posição |nomeados |
+| Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada de pipeline? |false |
+| Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
-O nome da assinatura do Azure que você deseja criar o site.
+O nome da assinatura do Azure na qual você deseja criar o site.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Posição |nomeados |
+| Position |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada de pipeline? |false |
+| Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-O caminho para o pacote de implantação da web para publicar o site. Você pode criar este pacote usando o Assistente de publicação na Web no Visual Studio. Para obter mais informações, consulte [Introdução aos serviços de nuvem do Azure e ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+O caminho para o pacote de implantação Web a publicar no site. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Para obter mais informações, consulte [Introdução aos serviços de nuvem do Azure e ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
 
 | Parâmetro | Valor padrão |
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Posição |nomeados |
+| Position |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada de pipeline? |false |
+| Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
-O nome de usuário e senha para o banco de dados SQL no Azure.
+O nome do administrador e a senha do Banco de Dados SQL no Azure.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Posição |nomeados |
+| Position |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada de pipeline? |false |
+| Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
-Se for true, imprimir mensagens do script no fluxo de saída.
+Se seu valor for true, imprimir mensagens do script para o fluxo de saída.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Posição |nomeados |
+| Position |nomeado |
 | Valor padrão |false |
-| Aceitar entrada de pipeline? |false |
+| Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="remarks"></a>Comentários
-Para obter uma explicação completa de como usar o script para criar ambientes de desenvolvimento e teste, consulte [usando Scripts do Windows PowerShell para publicar para ambientes de desenvolvimento e teste](vs-azure-tools-publishing-using-powershell-scripts.md).
+Para obter uma explicação completa de como usar o script para criar ambientes de desenvolvimento e teste, consulte [Usando scripts do Windows PowerShell para publicar para ambientes de desenvolvimento e teste](vs-azure-tools-publishing-using-powershell-scripts.md).
 
-O arquivo de configuração JSON Especifica os detalhes do que está para ser implantado. Ele inclui as informações que você especificou quando criou o projeto, como o nome e o nome de usuário para o site. Ele também inclui o banco de dados para provisionar, se houver. O código a seguir mostra um exemplo de um arquivo de configuração JSON:
+O arquivo de configuração JSON especifica os detalhes daquilo que está para ser implantado. Ele inclui as informações que você especificou quando criou o projeto, como o nome e também o nome de usuário para o site. Ele também inclui o banco de dados a provisionar, se houver. O código a seguir mostra um exemplo de arquivo de configuração JSON:
 
     {
         "environmentSettings": {
@@ -118,8 +118,7 @@ O arquivo de configuração JSON Especifica os detalhes do que está para ser im
         }
     }
 
-Você pode editar o arquivo de configuração JSON para alterar o que é implantado. Uma seção do site é necessária, mas a seção de banco de dados é opcional.
+Você pode editar o arquivo de configuração JSON para alterar o que é implantado. Uma seção de site é obrigatória, mas a seção de banco de dados é opcional.
 
 ## <a name="next-steps"></a>Próximas etapas
-Para obter mais informações, consulte [Publish-WebApplicationVM (script do Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)
-
+Para obter mais informações, consulte [WebApplicationVM de publicação (script do Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)

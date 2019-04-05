@@ -1,14 +1,9 @@
 ---
 title: Anatomia de um pacote VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
 - vsix
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1534c13c6c09a95fab21582ba0016153d1a6992
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926597"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia de um pacote do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Um pacote VSIX é um arquivo. VSIX que contém um ou mais extensões do Visual S
 >  Os nomes dos arquivos incluídos em pacotes VSIX não devem incluir espaços nem caracteres reservados em identificadores de URI (Uniform Resource), como definido em [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>O manifesto do VSIX  
- O manifesto do VSIX contém informações sobre a extensão a ser instalado e segue o esquema de VSX. Para obter mais informações, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Para um manifesto do VSIX de exemplo, consulte [PackageManifest elemento (elemento raiz, o esquema de VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+ O manifesto do VSIX contém informações sobre a extensão a ser instalado e segue o esquema de VSX. Para obter mais informações, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Para um manifesto do VSIX de exemplo, consulte [PackageManifest elemento (elemento raiz, o esquema de VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
  O manifesto do VSIX deve ser nomeado `extension.vsixmanifest` quando ele é incluído em um arquivo. VSIX.  
   
@@ -50,7 +45,7 @@ Um pacote VSIX é um arquivo. VSIX que contém um ou mais extensões do Visual S
   
  Se um usuário tenta instalar uma extensão que tenha dependências, o instalador verifica se os assemblies necessários estão instalados no sistema de usuário. Se os assemblies necessários não foram encontrados **extensões e atualizações** exibe uma lista de assemblies ausentes.  
   
- Se o manifesto de extensão inclui um ou mais [referência](http://msdn.microsoft.com/en-us/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) elementos **extensões e atualizações** compara o manifesto de cada referência para as extensões que estão instalados no sistema e instala o extensão referenciada se ele não ainda estiver instalado. Se uma versão anterior de uma extensão referenciada estiver instalada, a versão mais recente substitui-lo.  
+ Se o manifesto de extensão inclui um ou mais [referência](http://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) elementos **extensões e atualizações** compara o manifesto de cada referência para as extensões que estão instalados no sistema e instala o extensão referenciada se ele não ainda estiver instalado. Se uma versão anterior de uma extensão referenciada estiver instalada, a versão mais recente substitui-lo.  
   
  Se um projeto em uma solução multiprojeto inclui uma referência a outro projeto na mesma solução, o pacote VSIX inclui as dependências do projeto. Você pode substituir esse comportamento clicando-se a referência para o projeto interno e, em seguida, no **propriedades** janela, definindo o **saída grupos incluídos no VSIX** propriedade `BuiltProjectOutputGroup`.  
   
@@ -59,10 +54,9 @@ Um pacote VSIX é um arquivo. VSIX que contém um ou mais extensões do Visual S
 ## <a name="installation-location"></a>Local de instalação  
  Durante a instalação, **extensões e atualizações** procura o conteúdo do pacote VSIX em uma pasta sob % LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
- Por padrão, a instalação se aplica somente ao usuário atual, como % LocalAppData % é um diretório específico do usuário. No entanto, se você definir a [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b) elemento do manifesto para `True`, a extensão será instalada em... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions e estará disponível para todos os usuários do computador.  
+ Por padrão, a instalação se aplica somente ao usuário atual, como % LocalAppData % é um diretório específico do usuário. No entanto, se você definir a [AllUsers](http://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) elemento do manifesto para `True`, a extensão será instalada em... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions e estará disponível para todos os usuários do computador.  
   
-## <a name="contenttypesxml"></a>[Content_Types]. XML  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  Arquivo [Content_Types]. XML identifica os tipos de arquivo no arquivo. VSIX expandido. Visual Studio usa esse arquivo durante a instalação do pacote, mas não instala o arquivo propriamente dito. Para obter mais informações sobre esse arquivo, consulte [a estrutura do Content_types\]. XML o arquivo](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- Um arquivo de [Content_Types]. XML é necessária, o Open Packaging Conventions (OPC) padrão. Para obter mais informações sobre OPC, consulte [OPC: um novo padrão para empacotamento seus dados](http://go.microsoft.com/fwlink/?LinkID=148207) no site do MSDN.
-
+ Um arquivo de [Content_Types]. XML é necessária, o Open Packaging Conventions (OPC) padrão. Para obter mais informações sobre OPC, consulte [OPC: Um novo padrão para empacotamento seus dados](http://go.microsoft.com/fwlink/?LinkID=148207) no site do MSDN.

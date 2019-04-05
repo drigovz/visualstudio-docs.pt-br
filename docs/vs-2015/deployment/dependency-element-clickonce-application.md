@@ -1,14 +1,9 @@
 ---
 title: '&lt;dependência&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -31,13 +26,13 @@ ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233851"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923749"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependência&gt; elemento (aplicativo ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +107,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 ### <a name="osversioninfo"></a>osVersionInfo  
  Necessário. Esse elemento é um filho de `dependentOS` elemento e contém o `os` elemento. Esse elemento não tem atributos.  
   
-### <a name="os"></a>sistema operacional  
+### <a name="os"></a>SO  
  Necessário. Esse elemento é um filho de `osVersionInfo` elemento. Este elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
@@ -123,7 +118,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 |`servicePackMajor`|Necessário. Especifica o número principal do service pack do sistema operacional.|  
 |`servicePackMinor`|Opcional. Especifica o número secundário do service pack do sistema operacional.|  
 |`productType`|Opcional. Identifica o valor do tipo de produto. Os valores válidos são `server`, `workstation` e `domainController`. Por exemplo, para o Windows 2000 Professional, esse valor de atributo é `workstation`.|  
-|`suiteType`|Opcional. Identifica um conjunto de produtos disponível no sistema ou o tipo de configuração do sistema. Os valores válidos são `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, e `terminal`. Por exemplo, para o Windows 2000 Professional, esse valor de atributo é `professional`.|  
+|`suiteType`|Opcional. Identifica um conjunto de produtos disponível no sistema ou o tipo de configuração do sistema. Os valores válidos são `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` e `terminal`. Por exemplo, para o Windows 2000 Professional, esse valor de atributo é `professional`.|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
  Opcional. Contém o `assemblyIdentity` elemento. O `dependentOS` e `dependentAssembly` elementos são mutuamente exclusivos: um ou outro deve existir para um `dependency` elemento, mas não ambos.  
@@ -134,7 +129,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 |---------------|-----------------|  
 |`dependencyType`|Necessário. Especifica o tipo de dependência. Os valores válidos são `preprequisite` e `install`. Uma `install` assembly é instalado como parte do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo. Um `prerequisite` assembly deve estar presente no cache de assembly global (GAC) antes do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pode instalar o aplicativo.|  
 |`allowDelayedBinding`|Necessário. Especifica se o assembly pode ser carregado por meio de programação em tempo de execução.|  
-|`group`|Opcional. Se o `dependencyType` atributo é definido como `install`, designa um grupo nomeado de assemblies somente instalação sob demanda. Para obter mais informações, consulte [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md) (Instruções passo a passo: baixando assemblies sob demanda com a API de implantação do ClickOnce usando o designer).<br /><br /> Se definido como `framework` e o `dependencyType` atributo é definido como `prerequisite`, designa o assembly como parte do .NET Framework. O cache de assembly global (GAC) não é verificado para esse assembly ao instalar em [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] e versões posteriores.|  
+|`group`|Opcional. Se o `dependencyType` atributo é definido como `install`, designa um grupo nomeado de assemblies somente instalação sob demanda. Para obter mais informações, confira [Passo a passo: Como baixar assemblies sob demanda com a API de implantação do ClickOnce usando o designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Se definido como `framework` e o `dependencyType` atributo é definido como `prerequisite`, designa o assembly como parte do .NET Framework. O cache de assembly global (GAC) não é verificado para esse assembly ao instalar em [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] e versões posteriores.|  
 |`codeBase`|Necessário quando o `dependencyType` atributo é definido como `install`. O caminho para o assembly dependente. Talvez um caminho absoluto ou um caminho relativo ao código do manifesto base. Esse caminho deve ser um URI válido para o manifesto do assembly que seja válido.|  
 |`size`|Necessário quando o `dependencyType` atributo é definido como `install`. O tamanho do assembly dependente, em bytes.|  
   
@@ -154,24 +149,24 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usa um algoritmo hash de todos os arquivos em um aplicativo como uma verificação de segurança, para garantir que nenhum dos arquivos foram alterados após a implantação. Se o `hash` elemento não for incluído, essa verificação não será executada. Portanto, omitindo o `hash` elemento não é recomendado.  
   
-### <a name="dsigtransforms"></a>DSIG:Transforms  
+### <a name="dsigtransforms"></a>dsig:Transforms  
  O `dsig:Transforms` elemento é um filho necessário do `hash` elemento. O `dsig:Transforms` elemento não tem atributos.  
   
-### <a name="dsigtransform"></a>DSIG:Transform  
+### <a name="dsigtransform"></a>dsig:Transform  
  O `dsig:Transform` elemento é um filho necessário do `dsig:Transforms` elemento. O `dsig:Transform` elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Algorithm`|O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] é `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
-### <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
+### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  O `dsig:DigestMethod` elemento é um filho necessário do `hash` elemento. O `dsig:DigestMethod` elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Algorithm`|O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] é `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-### <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  O `dsig:DigestValue` elemento é um filho necessário do `hash` elemento. O `dsig:DigestValue` elemento não tem atributos. Seu valor de texto é o hash calculado para o arquivo especificado.  
   
 ## <a name="remarks"></a>Comentários  
@@ -226,7 +221,4 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
   
 ## <a name="see-also"></a>Consulte também  
  [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<dependência > elemento](../deployment/dependency-element-clickonce-deployment.md)
-
-
-
+ [Elemento \<dependency>](../deployment/dependency-element-clickonce-deployment.md)

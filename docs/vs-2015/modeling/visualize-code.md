@@ -1,14 +1,9 @@
 ---
 title: Visualizar código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - code, understanding
 - code, visualizing
@@ -17,13 +12,13 @@ ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 071048fba8d3663639747ea35dbae4375d101c26
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5803544e4e7279179929c7c04a3792e4dd9318
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738925"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "58999945"
 ---
 # <a name="visualize-code"></a>Visualizar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ Você pode usar a visualização e modelagem de ferramentas no Visual Studio par
   
 |||  
 |-|-|  
-|**Compreenda o código e suas relações:**<br /><br /> Mapear as relações entre as partes específicas de código.<br /><br /> Consulte uma visão geral das relações em seu código para a solução inteira.<br /><br /> **Observação**: nesta versão do Visual Studio, o termo *mapa de códigos* é usado no lugar de *grafo de dependência*.|-   [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usar mapas de códigos para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Localizar possíveis problemas usando analisadores de mapa de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Compreenda as estruturas de classe:**<br /><br /> Visualize a estrutura de classes em um projeto com a criação de diagramas de classe do código.|[Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**Descrever o design de alto nível do sistema e validar o código em relação a esse design:**<br /><br /> Descreva o design de alto nível do sistema e suas dependências pretendidas com a criação de diagramas de camada. Valide o código em relação a esse design para certificar-se de dependências no código permaneçam consistentes com o design.|-   [Criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)<br />-   [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />-   [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)|  
+|**Compreenda o código e suas relações:**<br /><br /> Mapear as relações entre as partes específicas de código.<br /><br /> Consulte uma visão geral das relações em seu código para a solução inteira.<br /><br /> **Observação**: Nesta versão do Visual Studio, o termo *mapa de códigos* é usado no lugar de *grafo de dependência*.|-   [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usar mapas de códigos para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Localizar possíveis problemas usando analisadores de mapa de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
+|**Compreenda as estruturas de classe:**<br /><br /> Visualize a estrutura de classes em um projeto com a criação de diagramas de classe do código.|[Como: adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
+|**Descrever o design de alto nível do sistema e validar o código em relação a esse design:**<br /><br /> Descreva o design de alto nível do sistema e suas dependências pretendidas com a criação de diagramas de camada. Valide o código em relação a esse design para certificar-se de dependências no código permaneçam consistentes com o design.|-   [Criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de camada: Referência](../modeling/layer-diagrams-reference.md)<br />-   [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />-   [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)|  
 |**Comunicar os requisitos de usuário e a arquitetura:**<br /><br /> Modelar os requisitos de usuário e a arquitetura de seu sistema de software ao desenhar os seguintes diagramas UML: atividade, componente, classe, sequência e caso de uso.|-   [Criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)<br />-   [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)<br />-   [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="external-resources"></a>Recursos externos  
@@ -66,6 +61,3 @@ Você pode usar a visualização e modelagem de ferramentas no Visual Studio par
  [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)   
  [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)   
  [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
-
-
-

@@ -1,29 +1,24 @@
 ---
 title: 'Lista de verificação: Criar um serviço de linguagem herdado | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782980"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922584"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>Lista de verificação: criando um serviço de linguagem herdado
+# <a name="checklist-creating-a-legacy-language-service"></a>Lista de verificação: Criando um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 A lista de verificação a seguir resume as etapas básicas que você deve executar para criar um serviço de linguagem para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor de núcleo. Integre seu serviço de linguagem em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], você deve criar um avaliador de expressão de depuração. Para obter mais informações, consulte [escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) na [extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
@@ -116,7 +111,7 @@ A lista de verificação a seguir resume as etapas básicas que você deve execu
   
 - Estrutura de tópicos  
   
-   Há várias opções para dar suporte a estrutura de tópicos. Por exemplo, você pode dar suporte a **recolher para definições de** de comando, fornecer regiões controlado pelo editor de estrutura de tópicos ou suporte a regiões controlado pelo cliente. Para obter mais informações, consulte [como: fornecer expandido de estrutura de tópicos suporte em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Há várias opções para dar suporte a estrutura de tópicos. Por exemplo, você pode dar suporte a **recolher para definições de** de comando, fornecer regiões controlado pelo editor de estrutura de tópicos ou suporte a regiões controlado pelo cliente. Para obter mais informações, confira [Como: Fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Registro do serviço de linguagem  
   
@@ -133,4 +128,3 @@ A lista de verificação a seguir resume as etapas básicas que você deve execu
 ## <a name="see-also"></a>Consulte também  
  [Desenvolver um serviço de linguagem herdado](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Escrevendo um avaliador de expressão do CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Aplicativos de execução Windows Store no simulador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924007"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Executar aplicativos da Windows Store no simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
 ## <a name="pinch-and-zoom"></a>Aperto e zoom  
  Defina o modo de interação como sendo gestos de aperto e zoom com dois dedos.  
   
--   ![Destino de dedo Siimulator duas](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+-   ![Destino do simulador dois dedos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
      O ícone de alvo duplo indica o local de dois dedos na tela do dispositivo.  
   
@@ -84,22 +79,22 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
   
     -   Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de girar o objeto no sentido horário.  
   
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Habilitar ou desabilitar o AlwaysOn modo superior  
+##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Habilitar ou desabilitar o modo Sempre visível  
  Você pode configurar a janela do simulador para ficar sempre por cima das outras janelas. O **alternar janela superior** botão habilita ou desabilita a **sempre visível** modo da janela do simulador.  
   
 ##  <a name="BKMK_Change_the_device_orientation"></a> Alterar a orientação do dispositivo  
  Você pode alternar a orientação do dispositivo entre retrato e paisagem girando o simulador 90 graus em qualquer direção.  
   
 > [!NOTE]
->  O simulador não respeita [Displayproperties](http://go.microsoft.com/fwlink/?LinkId=249460) propriedade de um projeto. Por exemplo, se o projeto define a orientação como `Landscape` e você gira o simulador até a orientação retrato, a imagem de exibição do simulador também é girada e redimensionada. Teste essas configurações em um dispositivo real.  
+>  O simulador não respeita a propriedade [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) de um projeto. Por exemplo, se o projeto define a orientação como `Landscape` e você gira o simulador até a orientação retrato, a imagem de exibição do simulador também é girada e redimensionada. Teste essas configurações em um dispositivo real.  
   
 > [!NOTE]
 >  Se você gira o simulador de modo que uma borda dele fica maior do que a tela em que ele é exibido, o simulador é automaticamente redimensionado para caber na tela. O simulador não é redimensionado para o tamanho original se você o gira novamente.  
   
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Alterar o tamanho de tela simulados e a resolução  
- Para alterar o tamanho de tela simulados e a resolução, escolha o **alterar resolução** botão na paleta e escolha um novo tamanho e resolução na lista.  
+##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Alterar o tamanho e a resolução de tela simulados  
+ Para alterar o tamanho e a resolução de tela simulados, escolha o botão **Alterar Resolução** na paleta e escolha um novo tamanho e uma nova resolução na lista.  
   
- O tamanho da tela e a resolução são listados como *polegadas de largura de tela, a altura de pixel de largura X do pixel*. Observe que tanto o tamanho como a resolução da tela são simulados. As coordenadas de local no simulador são convertidas nas coordenadas do tamanho e da resolução do dispositivo selecionado.  
+ O tamanho e a resolução da tela são listados como *Largura da tela em polegadas, largura em pixel X altura em pixel*. Observe que tanto o tamanho como a resolução da tela são simulados. As coordenadas de local no simulador são convertidas nas coordenadas do tamanho e da resolução do dispositivo selecionado.  
   
 > [!NOTE]
 >  Você pode salvar versões dimensionadas de imagens de bitmap em seu aplicativo, e o Windows carregará a imagem correta para a escala atual. Para obter mais informações, consulte [101 de Design responsivo](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). No entanto, se você alterar a resolução do simulador de modo que o Windows selecione uma imagem diferente para ajustar à resolução, será preciso parar e reiniciar a sessão de depuração para exibir a nova imagem.  
@@ -108,16 +103,16 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
  Quando você envia um aplicativo na app Store do Windows, você deve incluir capturas de tela do aplicativo.  
   
 > [!NOTE]
->  A captura de tela é salva na resolução atual do simulador. Para alterar a resolução, escolha o **alterar resolução** botão.  
+>  A captura de tela é salva na resolução atual do simulador. Para alterar a resolução, escolha o botão **Alterar Resolução**.  
   
--   Para criar capturas de tela de seu aplicativo de simulador, escolha o **captura de tela na área de transferência** botão.  
+-   Para criar capturas de tela do aplicativo por meio do simulador, escolha o botão **Capturar tela na área de transferência**.  
   
 -   Para definir o local onde se encontram as capturas de tela, escolha o **configurações de captura de tela** botão e escolha o local no menu de atalho.  
   
      ![Menu de contexto de configurações de captura de tela](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propriedades de conexão de rede  
- Você pode ajudar os usuários de seu aplicativo a gerenciar o custo de conexões de rede limitadas mantendo a percepção do custo da conexão de rede ou as alterações de status do plano de dados e habilitando o aplicativo para usar essas informações para evitar a cobrança de custos adicionais para roaming ou exceder um limite especificado de transferência de dados. O [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) APIs permitem que você responda aos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) e [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) eventos que assinar. Ver [guia de início rápido: restrições de custo de gerenciamento de rede limitada](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Você pode ajudar os usuários de seu aplicativo a gerenciar o custo de conexões de rede limitadas mantendo a percepção do custo da conexão de rede ou as alterações de status do plano de dados e habilitando o aplicativo para usar essas informações para evitar a cobrança de custos adicionais para roaming ou exceder um limite especificado de transferência de dados. O [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) APIs permitem que você responda aos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) e [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) eventos que assinar. Confira [Início Rápido: Gerenciando restrições de custo de rede limitada](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar ou testar seu código com reconhecimento de custo de rede, o simulador pode imitar as propriedades de uma rede que são expostas por meio de [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto retornado por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
   
@@ -125,11 +120,11 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
   
 1. Na barra de ferramentas do simulador, escolha o **alterar propriedades da rede** botão.  
   
-2. Sobre o **definir propriedades de rede** caixa de diálogo, selecione **uso simulado propriedades de rede**.  
+2. Na caixa de diálogo **Definir Propriedades de Rede**, selecione **Usar propriedades de rede simulada**.  
   
     Desmarque a caixa de seleção para remover a simulação e retornar às propriedades de rede da interface atualmente conectada.  
   
-3. Insira um **nome do perfil** para a rede simulada. É recomendável usar um nome exclusivo que você pode usar para identificar a simulação na [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) propriedade da [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto.  
+3. Digite um **Nome de Perfil** para a rede simulada. É recomendável usar um nome exclusivo que você pode usar para identificar a simulação na [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) propriedade da [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto.  
   
 4. Selecione o [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) valor para o perfil da **tipo de custo de rede** lista.  
   
@@ -139,9 +134,9 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
   
 7. Escolher **propriedades do conjunto** para simular as propriedades de rede Disparando um primeiro plano [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) eventos e um plano de fundo [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) do tipo  **NetworkStateChange**.  
   
-   **Para obter mais informações sobre como gerenciar conexões de rede**  
+   **Mais informações sobre como gerenciar conexões de rede**  
   
-   [Guia de início rápido: Gerenciando monitorados restrições de custo de rede](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Início Rápido: Gerenciando restrições de custo de rede limitada](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Exemplo de informações de rede](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -149,17 +144,14 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [Como responder a eventos do sistema com tarefas em segundo plano](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Como responder a eventos do sistema com tarefas em segundo plano](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
    [Como disparar suspender, continuar e eventos em aplicativos da Windows Store em segundo plano](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar no simulador com o teclado  
- Você pode navegar a barra de ferramentas do simulador pressionando **CTRL + ALT + seta acima** para alternar o foco da janela do simulador na barra de ferramentas do simulador. Use o **seta para cima** e o **seta para baixo** para mover entre os botões da barra de ferramentas.  
+ Você pode navegar a barra de ferramentas do simulador pressionando **CTRL + ALT + seta acima** para alternar o foco da janela do simulador na barra de ferramentas do simulador. Use a **seta para cima** e a **seta para baixo** para navegar entre os botões da barra de ferramentas.  
   
  Você pode desligar o simulador pressionando **CTRL + ALT + F4**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Executar aplicativos usando o Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
-
-
-

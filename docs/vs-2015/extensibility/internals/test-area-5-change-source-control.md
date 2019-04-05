@@ -1,29 +1,24 @@
 ---
 title: 'Área de teste 5: Alterar controle do código-fonte | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d117d3ad85d46bfeeb896892508ba90efb33e702
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922882"
 ---
-# <a name="test-area-5-change-source-control"></a>Área de teste 5: alterar o controle do código-fonte
+# <a name="test-area-5-change-source-control"></a>Área de teste 5: Alterar controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Essa área de plug-in de teste de controle de origem aborda alterando o controle do código-fonte por meio de **alterar controle do código-fonte** comando.  
@@ -40,7 +35,7 @@ Essa área de plug-in de teste de controle de origem aborda alterando o controle
   
 - **Conectar/Desconecte:**  
   
-  Alterna o estado conectado ou offline da solução controlada, que é abordado na área de 3. Para obter mais informações, consulte [área de teste 3: Fazer Check-Out / desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Alterna o estado conectado ou offline da solução controlada, que é abordado na área de 3. Para obter mais informações, consulte [3 da área de teste: Fazer Check-Out / desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  
  O seguinte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] caminho de menu de ambiente de desenvolvimento integrado é usado nos casos de teste.  
@@ -69,7 +64,7 @@ Essa área de plug-in de teste de controle de origem aborda alterando o controle
 |Desassociar a solução que contém um sistema de arquivos ou o projeto da Web do IIS local e o projeto de um cliente|1.  Crie um sistema de arquivos ou o projeto da Web do IIS local.<br />2.  Adicione a solução ao controle de origem.<br />3.  Adicione um novo projeto de cliente para a solução.<br />4.  Aceite Check-Out da solução de se solicitado.<br />5.  Abra o **alterar controle do código-fonte** caixa de diálogo.<br />6.  Clique em **desassociar**.<br />7.  Clique em **OK** para fechar a caixa de diálogo.<br />8.  Tentativa de fazer check-out da solução, projeto, itens de solução, itens de projeto.|Soluções e projetos não estão sob controle de origem.<br /><br /> Comandos de menu de controle do código-fonte não aparecem.|  
 |Desassociar Cancelar|1.  Criar um projeto.<br />2.  Adicione a solução ao controle de origem.<br />3.  Abra o **alterar controle do código-fonte** caixa de diálogo.<br />4.  Clique em **desassociar todos**.<br />5.  Clique em **Cancelar**.|Solução estiver sob controle do código-fonte.|  
   
-### <a name="case-5c-rebind"></a>Caso 5c: Rebind  
+### <a name="case-5c-rebind"></a>Caso 5c: Reassociar  
  Reassociar é simplesmente uma combinação de desassociar e bind — o processo de uma projeto/solução que foi anteriormente sob controle do código-fonte e foi desassociado de reassociação.  
   
 |Ação|Etapas de teste|Resultados esperados para verificar|  
@@ -81,4 +76,3 @@ Essa área de plug-in de teste de controle de origem aborda alterando o controle
   
 ## <a name="see-also"></a>Consulte também  
  [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

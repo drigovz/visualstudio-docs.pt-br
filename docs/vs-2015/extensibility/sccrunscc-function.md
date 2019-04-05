@@ -1,14 +1,9 @@
 ---
 title: Função SccRunScc | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRunScc
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 67d2ad2ee783d23e3bd8c960ad5a94eac3fbd908
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d2b36bd226d4eb19a694347edcba51812ee6f771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733684"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924413"
 ---
 # <a name="sccrunscc-function"></a>Função SccRunScc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,11 +66,10 @@ SCCRTN SccRunScc(
   
  Essa função é chamada com uma contagem e uma matriz de nomes de arquivo para os arquivos selecionados no momento. Se a ferramenta de administração suportá-lo, a lista de arquivos pode ser usada para selecionar antecipadamente os arquivos na interface de administração; Caso contrário, a lista pode ser ignorada.  
   
- Essa função normalmente é chamado quando o usuário seleciona o **inicie \<servidor de controle de origem >** da **arquivo** -> **controle do código-fonte** menu. Isso **inicie** opção de menu pode ser sempre desabilitada ou ocultada até mesmo, definindo uma entrada de registro. Ver [como: instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Essa função é chamada somente se [SccInitialize](../extensibility/sccinitialize-function.md) retorna o `SCC_CAP_RUNSCC` bit de recurso (consulte [sinalizadores de recurso](../extensibility/capability-flags.md) para obter detalhes sobre esse e outros bits de capacidade).  
+ Essa função normalmente é chamado quando o usuário seleciona o **inicie \<servidor de controle de origem >** da **arquivo** -> **controle do código-fonte** menu. Isso **inicie** opção de menu pode ser sempre desabilitada ou ocultada até mesmo, definindo uma entrada de registro. Confira [Como Instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Essa função é chamada somente se [SccInitialize](../extensibility/sccinitialize-function.md) retorna o `SCC_CAP_RUNSCC` bit de recurso (consulte [sinalizadores de recurso](../extensibility/capability-flags.md) para obter detalhes sobre esse e outros bits de capacidade).  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
- [Como: instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Como: Instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Sinalizadores de recurso](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)
-

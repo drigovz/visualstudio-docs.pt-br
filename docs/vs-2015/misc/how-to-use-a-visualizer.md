@@ -1,14 +1,9 @@
 ---
-title: 'Como: usar um visualizador | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar um visualizador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925128"
 ---
-# <a name="how-to-use-a-visualizer"></a>Como usar um visualizador
+# <a name="how-to-use-a-visualizer"></a>Como: Usar um visualizador
 Você pode usar um visualizador para exibir o conteúdo de uma variável ou objeto de uma maneira que seja mais significativa para o tipo de dados. Você pode usar visualizadores de **DataTips**, um **inspeção** janela, o **Autos** janela, ou o **Locals** janela.  
   
  Os visualizadores não têm suporte na Compact Framework.  
@@ -59,12 +54,12 @@ Você pode usar um visualizador para exibir o conteúdo de uma variável ou obje
   
      *Caminho de instalação do Visual Studio* `\Common7\Packages\Debugger\Visualizers`  
   
-     -ou-  
+     - ou -  
   
      `My Documents\Visual Studio 2010\Visualizers` *Versão do Visual Studio* `\Visualizers`  
   
 ## <a name="see-also"></a>Consulte também  
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
- [Como: escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
+ [Como: Escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
  [Exibir valores de dados em dicas de dados](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

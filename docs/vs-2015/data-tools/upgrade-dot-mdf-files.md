@@ -1,12 +1,9 @@
 ---
 title: Atualizar arquivos. mdf | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923632"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,8 +120,3 @@ Este tópico descreve as opções para atualizar seu arquivo de banco de dados (
 4. Selecione o botão **OK**.  
   
    SQL Server Express será o mecanismo de banco de dados padrão para seus aplicativos.  
-  
-## <a name="see-also"></a>Consulte também  
- [Visão geral de dados local](../data-tools/local-data-overview.md)   
- [Passo a passo: conectando a dados em um arquivo de banco de dados local (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

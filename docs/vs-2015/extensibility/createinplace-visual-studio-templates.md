@@ -1,14 +1,9 @@
 ---
 title: CreateInPlace (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc14bd5cae376c23ece97cdb7a780a1ae7354e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751301"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924458"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica se deve criar o projeto e executar a substituição de parâmetro no local especificado, ou executar a substituição de parâmetro em um local temporário e, em seguida, salve o projeto no local especificado.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CreateInPlace >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CreateInPlace>  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -93,5 +88,4 @@ Especifica se deve criar o projeto e executar a substituição de parâmetro no 
   
 ## <a name="see-also"></a>Consulte também  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
+ [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
