@@ -1,14 +1,9 @@
 ---
 title: Implementando a coloração de sintaxe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923779"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementando a coloração de sintaxe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Quando o serviço de linguagem fornece colorização de sintaxe, o analisador co
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não especifica uma interface de analisador, e a implementação do analisador cabe completamente a você. No entanto, uma implementação de analisador padrão é fornecida no projeto do pacote de idiomas do Visual Studio. Para código gerenciado, a estrutura de pacote gerenciado (MPF) fornece suporte completo para colorir texto.  
   
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar a coloração de sintaxe, consulte [instruções passo a passo: realçar texto](../../extensibility/walkthrough-highlighting-text.md).  
+ Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar a coloração de sintaxe, consulte [passo a passo: Realçar o texto](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
 >  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
@@ -70,8 +65,7 @@ Quando o serviço de linguagem fornece colorização de sintaxe, o analisador co
  A estrutura de pacote gerenciado (MPF) fornece todas as classes que são necessários para implementar um colorizador. Sua classe de serviço de linguagem deve herdar o <xref:Microsoft.VisualStudio.Package.LanguageService> de classe e implementar os métodos necessários. Você deve fornecer um analisador e scanner, Implementando a <xref:Microsoft.VisualStudio.Package.IScanner> interface e retornar uma instância dessa interface do <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> método (um dos métodos que devem ser implementados no <xref:Microsoft.VisualStudio.Package.LanguageService> classe). Para obter mais informações, consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [Como: Usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [Itens de coloração personalizados](../../extensibility/internals/custom-colorable-items.md)   
  [Desenvolver um serviço de linguagem herdado](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

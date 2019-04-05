@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Implante seus aplicativos | Microsoft Docs
-description: 'Saiba como usar o Visual Studio para implantar aplicativos, serviços e componentes.'
+description: Saiba como usar o Visual Studio para implantar aplicativos, serviços e componentes.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: b1ffebc17d7915c7845a27cc2864623fa2f2d263
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325010"
 ---
 # <a name="deployment-in-visual-studio"></a>Implantação no Visual Studio
 

@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Meça o desempenho do aplicativo usando a criação de perfil | Microsoft Docs
-description: 'Saiba como usar o Visual Studio para criar o perfil do desempenho dos seus aplicativos, serviços e ferramentas na linguagem de sua escolha.'
+description: Saiba como usar o Visual Studio para criar o perfil do desempenho dos seus aplicativos, serviços e ferramentas na linguagem de sua escolha.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323002"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Meça o desempenho do aplicativo no Visual Studio
 

@@ -1,25 +1,20 @@
 ---
 title: Ativação in-loco | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
-manager: douge
-ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9c673fd7eb2b51e611256efb427baa0174d29462
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232187"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924203"
 ---
 # <a name="in-place-activation"></a>Ativação in-loco
 Se seu modo de exibição do editor hospeda ActiveX ou outros controles Active Directory, você deve implementar o modo de exibição do editor como um controle ActiveX ou como um objeto de dados de documento ativo usando o modelo de ativação no local.  
