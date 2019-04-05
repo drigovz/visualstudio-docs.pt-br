@@ -1,27 +1,22 @@
 ---
 title: Iniciar um programa | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3af2c1f571287a4a33c1dd57340e2a66197bd59
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd23fdc3baf4afd6dde50a4310abf1b5c1841fd7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753955"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927729"
 ---
 # <a name="launching-a-program"></a>Iniciando um programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Os usuários que desejam depurar um programa podem pressionar F5 para executar o
   
 2. Se a DE for especificada, o DE chama o sistema operacional para iniciar o programa. Como consequência de iniciar o programa, o ambiente de tempo de execução do programa é carregado. Por exemplo, se um programa é escrito em MSIL, o common language runtime será invocado para executar o programa.  
   
-    -ou-  
+    - ou -  
   
     Se a DE não for especificada, a porta chama o sistema operacional para iniciar o programa, o que faz com que o ambiente de tempo de execução do programa a ser carregado.  
   
@@ -66,4 +61,3 @@ Os usuários que desejam depurar um programa podem pressionar F5 para executar o
 ## <a name="related-sections"></a>Seções relacionadas  
  [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)  
  Contém links para várias tarefas de depuração, como iniciar um programa e avaliar expressões.
-

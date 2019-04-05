@@ -1,25 +1,22 @@
 ---
-title: 'Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Object Relational Designer) | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Object Relational Designer) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926744"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer relacional de objetos)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -38,7 +35,7 @@ Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Obj
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Para atribuir procedimentos armazenados para substituir o comportamento padrão de uma classe de entidade  
   
-1.  Abra o **LINQ to SQL** arquivo no designer. (Duas vezes no arquivo. dbml **Gerenciador de soluções**.)  
+1.  Abra o arquivo **LINQ to SQL** no designer. (Duas vezes no arquivo. dbml **Gerenciador de soluções**.)  
   
 2.  Na **Gerenciador de servidores**/**Database Explorer**, expanda **Stored Procedures** e localize os procedimentos armazenados que você deseja usar para Insert, Update, e/ou comandos de exclusão da classe de entidade.  
   
@@ -48,23 +45,23 @@ Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Obj
   
 4.  Selecione a classe de entidade para a qual você deseja usar o procedimento armazenado para executar atualizações.  
   
-5.  No **propriedades** janela, selecione o comando para substituir (**inserir**, **atualização**, ou **excluir**).  
+5.  Na janela **Propriedades**, selecione o comando a ser substituído (**Insert**, **Update** ou **Delete**).  
   
-6.  Clique nas reticências (...) ao lado das palavras **usar tempo de execução** para abrir o **configurar comportamento** caixa de diálogo.  
+6.  Clique nas reticências (...) ao lado das palavras **Usar Tempo de Execução** para abrir a caixa de diálogo **Configurar Comportamento**.  
   
-7.  Selecione **personalizar**.  
+7.  Selecione **Personalizar**.  
   
-8.  Selecione o procedimento armazenado desejado na **personalizar** lista.  
+8.  Selecione o procedimento armazenado desejado na lista **Personalizar**.  
   
-9. Inspecione a lista de **argumentos de método** e **propriedades da classe** para verificar se o **argumentos de método** são mapeados para apropriado **propriedades da classe**. Mapeie os argumentos de método originais (original _*ArgumentName*) para as propriedades originais (*PropertyName* (Original)) para os comandos Update e Delete.  
+9. Inspecione a lista de **Argumentos de Método** e de **Propriedades de Classe** para verificar se **Argumentos de Método** é mapeado para **Propriedades de Classe** apropriado. Mapeie os argumentos de método originais (original _*ArgumentName*) para as propriedades originais (*PropertyName* (Original)) para os comandos Update e Delete.  
   
     > [!NOTE]
     >  Por padrão, os argumentos do método são mapeados para as propriedades de classe quando os nomes coincidem. Se os nomes de propriedade forem modificados, não haverá mais correspondência entre a tabela e a classe de entidade. Talvez seja necessário selecionar a propriedade de classe equivalente para mapeamento se o designer não puder determinar o mapeamento correto.  
   
-10. Clique em **Okey** ou **aplicar**.  
+10. Clique em **OK** ou em **Aplicar**.  
   
     > [!NOTE]
-    >  Você pode continuar a configurar o comportamento para cada combinação de classe/comportamento desde que você clique em **aplicar** após cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso fornecendo uma oportunidade de aplicar as alterações serão exibidas.  
+    >  Você pode continuar a configurar o comportamento para cada combinação de classe/comportamento quando você clica em **Aplicar** depois de cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso fornecendo uma oportunidade de aplicar as alterações serão exibidas.  
   
      Para reverter para usar a lógica de tempo de execução padrão para atualizações, clique no botão de reticências ao lado de Insert, Update, ou excluir na **propriedades** janela e, em seguida, selecione **usar tempo de execução** no  **Configurar o comportamento de** caixa de diálogo.  
   
@@ -72,7 +69,5 @@ Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Obj
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Passo a passo: Criando procedimentos armazenados atualizados para a tabela de clientes Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Operações de inserção, atualização e exclusão](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
-

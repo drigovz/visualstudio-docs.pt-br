@@ -1,14 +1,9 @@
 ---
 title: Web (código gerenciado) de biblioteca de controle | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +16,18 @@ ms.assetid: 2413883f-9e88-406d-b874-0ed743b75d40
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a523d593b4c61a7ca730cc60a6ed22a1be541f9c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 17be48435dd8251d1269c7a95195d794f750d534
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928970"
 ---
 # <a name="web-control-library-managed-code"></a>Biblioteca de Controles da Web (código gerenciado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O modelo de projeto da Biblioteca de Controles da Web cria uma DLL. Como a biblioteca de classe é uma DLL, você não pode executá-la diretamente. Você deve criar uma página do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que insira o controle. Para obter mais informações, consulte [modelo de biblioteca de controle da Web](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372).  
+O modelo de projeto da Biblioteca de Controles da Web cria uma DLL. Como a biblioteca de classe é uma DLL, você não pode executá-la diretamente. Você deve criar uma página do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que insira o controle. Para obter mais informações, consulte [modelo de biblioteca de controle da Web](http://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Para depurar uma Biblioteca de Controles da Web (método 1)  
   
@@ -58,6 +53,3 @@ O modelo de projeto da Biblioteca de Controles da Web cria uma DLL. Como a bibli
   
 ## <a name="see-also"></a>Consulte também  
  [Aplicativos Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)
-
-
-

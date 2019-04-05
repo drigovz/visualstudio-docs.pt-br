@@ -1,27 +1,22 @@
 ---
 title: 'Passo a passo: Objetos ausentes devido ao estado do dispositivo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928820"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Instruções passo a passo: objetos ausentes devido ao estado do dispositivo
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Passo a passo: Objetos ausentes devido ao estado do dispositivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnóstico de gráficos para investigar um objeto que está faltando devido a configurado incorretamente o estado do dispositivo.  
@@ -113,6 +108,3 @@ Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../includes/vsprvs-md.m
    Depois de determinar que a causa do problema de renderização pode ser uma função de profundidade configurado incorretamente, você pode usar essas informações junto com seu conhecimento do código para localizar onde a função de profundidade foi definida incorretamente e, em seguida, corrigir o problema. Se você estiver familiarizado com o código, você pode procurar o problema por meio de dicas que você coletou enquanto você estava depurando — por exemplo, com base nas **descrição de estêncil de profundidade** nesse cenário, você pode pesquisar o código para palavras como "camadas" ou "Maior". Depois de corrigir o código, recriá-lo e executar o aplicativo novamente para descobrir que o problema de renderização é resolvido:  
   
    ![Aplicativo depois que o problema é corrigido](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

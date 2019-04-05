@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Escrevendo um visualizador em c# | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,21 +16,21 @@ ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e265810e30423064e27b1650f57fb054743341ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a179ae7fbfc0a947725bf47a2e2c86187e0adebd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925845"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Instruções passo a passo: escrevendo um visualizador em C# #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Passo a passo: Escrevendo um visualizador em C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo mostra como escrever um visualizador simples usando C#. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres não é especialmente útil em si mesmo, mas mostra as etapas básicas a seguir para criar visualizadores mais úteis para outros tipos de dados.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar suas configurações, vá para o **ferramentas** menu e escolha **Import and Export Settings**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar as configurações, vá para o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  O código do visualizador deve ser colocado em uma DLL, que será lido pelo depurador. Consequentemente, a primeira etapa é criar um projeto da Biblioteca de Classes para a DLL.  
   
@@ -47,7 +42,7 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 3. No **modelos** , escolha **biblioteca de classes**.  
   
-4. No **nome** , digite um nome apropriado para a biblioteca de classes, por exemplo, MyFirstVisualizer.  
+4. Na caixa **Nome**, digite um nome apropriado para a biblioteca de classes, por exemplo, MyFirstVisualizer.  
   
 5. Clique em **OK**.  
   
@@ -55,16 +50,16 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 #### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Para renomear Class1.cs e adicionar Microsoft.VisualStudio.DebuggerVisualizers  
   
-1. Na **Gerenciador de soluções**, clique com botão direito Class1.cs e escolha **Renomear** no menu de atalho.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em Class1.cs e escolha **Renomear** no menu de atalho.  
   
 2. Altere o nome de Class1.cs para algo significativo, por exemplo, DebuggerSide.cs.  
   
    > [!NOTE]
    >  O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em DebuggerSide.cs para corresponder ao novo nome do arquivo.  
   
-3. Na **Gerenciador de soluções**, clique com botão direito **referências** e escolha **Add Reference** no menu de atalho.  
+3. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e escolha **Adicionar Referência** no menu de atalho.  
   
-4. No **adicionar referência** caixa de diálogo do **.NET** guia, escolha DebuggerVisualizers.  
+4. Na caixa de diálogo **Adicionar Referência**, na guia **.NET**, escolha Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
 5. Clique em **OK**.  
   
@@ -94,7 +89,7 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Para substituir o método DialogDebuggerVisualizer.Show  
   
-- Na `public class DebuggerSide`, adicione o seguinte **método:**  
+- Em `public class DebuggerSide`, adicione o seguinte **método**:  
   
   ```  
   override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
@@ -106,9 +101,9 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 #### <a name="to-add-systemwindowsforms"></a>Para adicionar System.Windows.Forms  
   
-1. Na **Gerenciador de soluções**, clique com botão direito **referências** e escolha **Add Reference** no menu de atalho.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e escolha **Adicionar Referência** no menu de atalho.  
   
-2. No **adicionar referência** caixa de diálogo do **.NET** guia, escolha a dll.  
+2. Na caixa de diálogo **Adicionar Referência**, na guia **.NET**, escolha System.Windows.Forms.DLL.  
   
 3. Clique em **OK**.  
   
@@ -130,7 +125,7 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
     Esse código de exemplo não inclui tratamento de erros. Você deve incluir o tratamento de erros em um visualizador real ou qualquer outro tipo de aplicativo.  
   
-2. Sobre o **construir** menu, escolha **compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
+2. No menu **Compilar**, escolha **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
   
    Esse é o final do código do lado do depurador. Há mais uma etapa, porém; o atributo que diz ao lado a ser depurado qual coleção de classes integra o visualizador.  
   
@@ -146,7 +141,7 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
    Description  = "My First Visualizer")]  
    ```  
   
-2. Sobre o **construir** menu, escolha **compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
+2. No menu **Compilar**, escolha **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
   
    Neste momento, o primeiro visualizador é concluído. Se você seguiu as etapas corretamente, poderá compilar o visualizador e instalá-lo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Antes de instalar um visualizador no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no entanto, você deverá testá-lo para garantir que seja executado corretamente. Agora você criará um teste automatizado para executar o visualizador sem instalá-lo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -162,17 +157,17 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
    }  
    ```  
   
-2. Sobre o **construir** menu, escolha **compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
+2. No menu **Compilar**, escolha **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
   
    Em seguida, você deverá criar um projeto executável para chamar sua DLL do visualizador. Para simplificar, usaremos um projeto de aplicativo de console.  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>Para adicionar um projeto de aplicativo de console à solução  
   
-1. Sobre o **arquivo** menu, escolha **Add** e, em seguida, clique em **novo projeto**.  
+1. No menu **Arquivo**, escolha **Adicionar** e clique em **Novo Projeto**.  
   
 2. No **adicionar novo projeto** na caixa de **modelos** , escolha **aplicativo de Console**.  
   
-3. No **nome** , digite um nome significativo para o aplicativo de console, como `MyTestConsole`.  
+3. Na caixa **Nome**, digite um nome significativo para o aplicativo de console, por exemplo, `MyTestConsole`.  
   
 4. Clique em **OK**.  
   
@@ -180,15 +175,15 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Para adicionar as referências necessárias a MyTestConsole  
   
-1. Na **Gerenciador de soluções**, clique com botão direito **MyTestConsole** e escolha **Add Reference** no menu de atalho.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **MyTestConsole** e escolha **Adicionar Referência** no menu de atalho.  
   
-2. No **adicionar referência** caixa de diálogo **.NET** guia, escolha DebuggerVisualizers.  
+2. Na caixa de diálogo **Adicionar Referência**, guia **.NET**, escolha Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
 3. Clique em **OK**.  
   
-4. Clique com botão direito **MyTestConsole** e escolha **adicionar referência** novamente.  
+4. Clique com o botão direito do mouse em **MyTestConsole** e escolha **Adicionar Referência** novamente.  
   
-5. No **adicionar referência** caixa de diálogo, clique o **projetos** guia e, em seguida, clique em MyFirstVisualizer.  
+5. Na caixa de diálogo **Adicionar Referência**, clique na guia **Projetos** e clique em MyFirstVisualizer.  
   
 6. Clique em **OK**.  
   
@@ -196,7 +191,7 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 #### <a name="to-add-code-to-mytestconsole"></a>Para adicionar código a MyTestConsole  
   
-1. Na **Gerenciador de soluções**, clique com botão direito Program.cs e escolha **Renomear** no menu de atalho.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em Program.cs e escolha **Renomear** no menu de atalho.  
   
 2. Edite o nome de Program.cs para algo mais significativo, por exemplo, TestConsole.cs.  
   
@@ -219,15 +214,15 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 #### <a name="to-test-the-visualizer"></a>Para testar o visualizador  
   
-1. Na **Gerenciador de soluções**, clique com botão direito **MyTestConsole** e escolha **Set as Startup Project** no menu de atalho.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **MyTestConsole** e escolha **Definir como Projeto de Inicialização** no menu de atalho.  
   
-2. Sobre o **Debug** menu, escolha **iniciar**.  
+2. No menu **Depurar**, escolha **Iniciar**.  
   
     O aplicativo de console inicia e o visualizador aparece e exibe a cadeia de caracteres “Hello World”.  
   
    Parabéns. Você acabou de criar e testar seu primeiro visualizador.  
   
-   Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).  
+   Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, confira [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="using-the-visualizer-item-template"></a>Usando o modelo de item do visualizador  
  Até agora, este passo a passo mostrou como criar um visualizador manualmente. Isto foi feito como um exercício de aprendizado. Agora que você sabe como um visualizador simples funciona, há uma forma mais fácil de criar um: usando o modelo de item do visualizador.  
@@ -236,13 +231,13 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 #### <a name="to-create-a-new-class-library"></a>Para criar uma nova biblioteca de classes  
   
-1. Sobre o **arquivo** menu, escolha **Add** e, em seguida, clique em **novo projeto**.  
+1. No menu **Arquivo**, escolha **Adicionar** e clique em **Novo Projeto**.  
   
 2. No **adicionar novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#**.  
   
 3. No **modelos** , escolha **biblioteca de classes**.  
   
-4. No **nome** , digite um nome apropriado para a biblioteca de classes, por exemplo, MySecondVisualizer.  
+4. Na caixa **Nome**, digite um nome apropriado para a biblioteca de classes, por exemplo, MySecondVisualizer.  
   
 5. Clique em **OK**.  
   
@@ -250,22 +245,19 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 #### <a name="to-add-a-visualizer-item"></a>Para adicionar um item de visualizador  
   
-1. Na **Gerenciador de soluções**, clique com botão direito MySecondVisualizer.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em MySecondVisualizer.  
   
-2. No menu de atalho, escolha **Add** e, em seguida, clique em **Novo Item**.  
+2. No menu de atalho, escolha **Adicionar** e clique em **Novo Item**.  
   
 3. No **Adicionar Novo Item** caixa de diálogo **modelos**, **Visual Studio Installed Templates**, selecione **Visualizador de depurador**.  
   
-4. No **nome** , digite um nome apropriado, por exemplo, SecondVisualizer.cs.  
+4. Na caixa **Nome**, digite um nome apropriado, por exemplo, SecondVisualizer.cs.  
   
 5. Clique em **Adicionar**.  
   
    É tudo que se precisa. Examine o arquivo SecondVisualizer.cs e exiba o código que o modelo adicionou para você. Agora tente com o código. Agora que você conhece as noções básicas, está em condições de criar visualizadores mais complexos e úteis.  
   
 ## <a name="see-also"></a>Consulte também  
- [Arquitetura do Visualizador](../debugger/visualizer-architecture.md)   
- [Como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
+ [Arquitetura do visualizador](../debugger/visualizer-architecture.md)   
+ [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
-
-
-

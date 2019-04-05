@@ -1,25 +1,20 @@
 ---
 title: Editor de XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 623869f3-040b-4bf4-b353-ddc2229694e4
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: caff32f582778ec03765554979abe6be5d608d26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927634"
 ---
 # <a name="xml-editor"></a>Editor de XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,14 +75,11 @@ O editor de XML é baseado no editor de texto do [!INCLUDE[msCoName](../includes
  Descreve os componentes da interface de usuário do editor de XML.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Edição de texto, código e marcação](http://msdn.microsoft.com/en-us/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [Edição de texto, código e marcação](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  Fornece informações sobre o editor de texto.  
   
- [XML Standards Reference](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401) (Referência de padrões XML)  
+ [XML Standards Reference](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) (Referência de padrões XML)  
  Fornece informações sobre as tecnologias XML, incluindo XML, Definição de Tipo de Documento (DTD), linguagem XSD do XML e XSLT.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas XML no Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

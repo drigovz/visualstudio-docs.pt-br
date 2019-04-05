@@ -1,28 +1,23 @@
 ---
-title: 'Como: hospedar um Editor em outro Editor | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Hospedar um Editor em outro Editor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
 ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fead1aa7b1094fe5bcd1cac989b6853d3564b00b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38e47e918683d375f6a6baded2bf946a60020e64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925582"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>Como: hospedar um Editor em outro Editor
+# <a name="how-to-host-an-editor-in-another-editor"></a>Como: Hospedar um Editor em outro Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No Visual Studio, você pode hospedar um editor dentro de outro, especificando a janela de hospedagem como uma janela pai. Para fazer isso, defina os parâmetros <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> e <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> no quadro de janela filho.  
@@ -45,4 +40,3 @@ No Visual Studio, você pode hospedar um editor dentro de outro, especificando a
   
 ## <a name="robust-programming"></a>Programação robusta  
  O **Application Designer** no Visual Studio Team Edition for Architects é um exemplo de um quadro de janela do editor outro editor de hospedagem. O **Application Designer** hospeda outros designers em seu painel direito. Um painel do designer (ou **propriedades** página) para cada um dos designers contidos é adicionada ao quadro da janela recipiente.
-

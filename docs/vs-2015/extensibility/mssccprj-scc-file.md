@@ -1,27 +1,22 @@
 ---
 title: MSSCCPRJ. Arquivos SCC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a04429bafb7da0b3d4922905bd712e82ba16a4ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736136"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926496"
 ---
 # <a name="mssccprjscc-file"></a>Arquivo MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +44,23 @@ Quando uma solução do Visual Studio ou o projeto é colocado sob controle do c
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Uma ilustração de MSSCCPRJ. Formato de arquivo de SCC  
  A seguir está um exemplo da MSSCCPRJ. Formato de arquivo do SCC (os números de linha são fornecidos apenas como um guia e não devem ser incluídos no corpo do arquivo):  
   
- [Linha 1] `SCC = This is a Source Code Control file`  
+ [Line 1] `SCC = This is a Source Code Control file`  
   
- [Linha 2]  
+ [Line 2]  
   
- [Linha 3] `[TestApp.sln]`  
+ [Line 3] `[TestApp.sln]`  
   
- [Linha 4] `SCC_Aux_Path = "\\server\vss\"`  
+ [Line 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Linha 5] `SCC_Project_Name = "$/TestApp"`  
+ [Line 5] `SCC_Project_Name = "$/TestApp"`  
   
- [Linha 6]  
+ [Line 6]  
   
- [Linha 7] `[TestApp.csproj]`  
+ [Line 7] `[TestApp.csproj]`  
   
- [Linha 8] `SCC_Aux_Path = "\\server\vss\"`  
+ [Line 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Linha 9] `SCC_Project_Name = "$/TestApp"`  
+ [Line 9] `SCC_Project_Name = "$/TestApp"`  
   
  A primeira linha declara a finalidade do arquivo e serve como a assinatura para todos os arquivos desse tipo. Essa linha deve aparecer exatamente como isso em todos os MSSCCPRJ. Arquivos SCC:  
   
@@ -82,4 +77,3 @@ Quando uma solução do Visual Studio ou o projeto é colocado sob controle do c
 ## <a name="see-also"></a>Consulte também  
  [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)   
  [Cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
-

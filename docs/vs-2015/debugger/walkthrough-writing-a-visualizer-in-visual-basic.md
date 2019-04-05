@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Escrevendo um visualizador em Visual Basic | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,21 +16,21 @@ ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 549e1ce240808a3947b2780f5c96485439e44ecc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794870"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927423"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Instruções passo a passo: escrevendo um visualizador no Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Passo a passo: Como escrever um visualizador em Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres é um exemplo básico para mostrar como você pode criar visualizadores para outros tipos de dados mais aplicáveis a seus projetos.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar suas configurações, vá para o **ferramentas** menu e escolha **importar e exportar** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar suas configurações, acesse o menu **Ferramentas** e escolha **Importar e Exportar**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  O código do visualizador deve ser colocado em uma DLL, que será lido pelo depurador. A primeira etapa é criar um projeto da biblioteca de classes para a DLL.  
   
@@ -43,13 +38,13 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-create-a-class-library-project"></a>Para criar um projeto da biblioteca de classes  
   
-1. Sobre o **arquivo** menu, escolha **New** e clique em **novo projeto**.  
+1. No menu **Arquivo**, escolha **Novo** e clique em **Novo Projeto**.  
   
 2. No **novo projeto** caixa de diálogo **tipo de projeto**s, clique em **Visual Basic**.  
   
 3. No **modelos** , clique em **biblioteca de classes**.  
   
-4. No **nome** , digite um nome apropriado para a biblioteca de classes, como **MyFirstVisualizer**.  
+4. Na caixa **Nome**, digite um nome apropriado para a biblioteca de classes, por exemplo, **MyFirstVisualizer**.  
   
 5. Clique em **OK**.  
   
@@ -57,16 +52,16 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Para renomear Class1.vb e adicionar Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito **Class1.vb**e no menu de atalho, clique em **Renomear**.  
+1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Class1.vb** e no menu de atalho, clique em **Renomear**.  
   
 2.  Altere o nome de Class1.vb para algo significativo, por exemplo, DebuggerSide.vb.  
   
     > [!NOTE]
     >  O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em DebuggerSide.vb para corresponder ao novo nome do arquivo.  
   
-3.  Na **Gerenciador de soluções**, clique com botão direito **meu primeiro visualizador**e no menu de atalho, clique em **Add Reference**.  
+3.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Meu Primeiro Visualizador** e, no menu de atalho, clique em **Adicionar Referência**.  
   
-4.  No **adicionar referência** caixa de diálogo do **.NET** , clique em DebuggerVisualizers.  
+4.  Na caixa de diálogo **Adicionar Referência**, na guia **.NET**, clique em Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
 5.  Clique em **OK**.  
   
@@ -110,9 +105,9 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-add-systemwindowsforms"></a>Para adicionar System.Windows.Forms  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito **referências**e no menu de atalho, clique em **Add Reference**.  
+1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e, no menu de atalho, clique em **Adicionar Referência**.  
   
-2.  No **adicionar referência** caixa de diálogo do **.NET** , clique em **System**.  
+2.  Na caixa de diálogo **Adicionar Referência**, na guia **.NET**, clique em **System.Windows.Forms**.  
   
 3.  Clique em **OK**.  
   
@@ -135,7 +130,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
      Esse código de exemplo não inclui tratamento de erros. Você deve incluir o tratamento de erros em um visualizador real ou qualquer outro tipo de aplicativo.  
   
-2.  Sobre o **construir** menu, clique em **compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
+2.  No menu **Compilar**, clique em **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
   
 ## <a name="add-the-necessary-attribute"></a>Adicionar o atributo necessário  
  Esse é o final do código do lado do depurador. Há mais uma etapa, porém: o atributo que diz ao lado a ser depurado qual coleção de classes integra o visualizador.  
@@ -148,7 +143,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  Sobre o **construir** menu, clique em **compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
+2.  No menu **Compilar**, clique em **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
   
 ## <a name="create-a-test-harness"></a>Criar um agente de teste  
  Neste momento, o primeiro visualizador é concluído. Se você seguiu as etapas corretamente, poderá compilar o visualizador e instalá-lo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Antes de instalar um visualizador no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no entanto, você deverá testá-lo para garantir que seja executado corretamente. Agora você criará um teste automatizado para executar o visualizador sem instalá-lo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -164,17 +159,17 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
    End Sub  
    ```  
   
-2. Sobre o **construir** menu, clique em **compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
+2. No menu **Compilar**, clique em **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
   
    Em seguida, você deverá criar um projeto executável para chamar sua DLL do visualizador. Para simplificar, use um projeto de aplicativo de console.  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>Para adicionar um projeto de aplicativo de console à solução  
   
-1. Sobre o **arquivo** menu, clique em **Add**e, em seguida, clique em **novo projeto**.  
+1. No menu **Arquivo**, clique em **Adicionar** e, em seguida, clique em **Novo Projeto**.  
   
 2. No **adicionar novo projeto** na caixa de **modelos** , clique em **aplicativo de Console**.  
   
-3. No **nome** , digite um nome significativo para o aplicativo de console, como **MyTestConsole**.  
+3. Na caixa **Nome**, digite um nome significativo para o aplicativo de console, por exemplo, **MyTestConsole**.  
   
 4. Clique em **OK**.  
   
@@ -182,15 +177,15 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Para adicionar as referências necessárias a MyTestConsole  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito **MyTestConsole**e no menu de atalho, clique em **Add Reference**.  
+1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **MyTestConsole** e, no menu de atalho, clique em **Adicionar Referência**.  
   
-2.  No **adicionar referência** caixa de diálogo do **.NET** , clique em DebuggerVisualizers.  
+2.  Na caixa de diálogo **Adicionar Referência**, na guia **.NET**, clique em Microsoft.VisualStudio.DebuggerVisualizers.  
   
 3.  Clique em **OK**.  
   
-4.  Clique com botão direito **MyTestConsole**e, em seguida, clique em **adicionar referência** novamente.  
+4.  Clique com o botão direito do mouse em **MyTestConsole** e, em seguida, clique em **Adicionar Referência** novamente.  
   
-5.  No **adicionar referência** caixa de diálogo, clique o **projetos** guia e, em seguida, selecione MyFirstVisualizer.  
+5.  Na caixa de diálogo **Adicionar Referência**, clique na guia **Projetos** e, em seguida, selecione MyFirstVisualizer.  
   
 6.  Clique em **OK**.  
   
@@ -199,9 +194,9 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-add-code-to-mytestconsole"></a>Para adicionar código a MyTestConsole  
   
-1. Na **Gerenciador de soluções**, clique com botão direito **Program. vb**e no menu de atalho, clique em **Renomear**.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Program.vb** e, no menu de atalho, clique em **Renomear**.  
   
-2. Editar o nome de Module1.vb para algo apropriado, como **TestConsole**.  
+2. Edite o nome de Module1.vb para algo apropriado, como **TestConsole.vb**.  
   
     Observe que o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em TestConsole.vb para corresponder ao novo nome do arquivo.  
   
@@ -222,20 +217,17 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-test-the-visualizer"></a>Para testar o visualizador  
   
-1. Na **Gerenciador de soluções**, clique com botão direito **MyTestConsole**e no menu de atalho, clique em **Set as Startup Project**.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **MyTestConsole** e, no menu de atalho, clique em **Definir como Projeto de Inicialização**.  
   
-2. Sobre o **Debug** menu, clique em **iniciar**.  
+2. No menu **Depurar**, clique em **Iniciar**.  
   
     O aplicativo de console é iniciado. O visualizador aparece e exibe a cadeia de caracteres “Hello, World”.  
   
    Parabéns. Você acabou de criar e testar seu primeiro visualizador.  
   
-   Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).  
+   Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, confira [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Arquitetura do Visualizador](../debugger/visualizer-architecture.md)   
- [Como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
+ [Arquitetura do visualizador](../debugger/visualizer-architecture.md)   
+ [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
-
-
-

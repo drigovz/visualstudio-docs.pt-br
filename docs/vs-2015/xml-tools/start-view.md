@@ -1,25 +1,20 @@
 ---
 title: Iniciar modo de exibição | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8f3ae39fa1b90140794b7dd4c571dabed2c12d95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 733d72f9fdf0d172e5d61d44120f212787d70050
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929135"
 ---
 # <a name="start-view"></a>O modo de Início
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ O modo de Início é o ponto iniciando para o designer de (XSD) de esquema XML. 
  ![Modo de exibição de início do Designer de esquema XML](../xml-tools/media/xsddesigner-startview.gif "XSDDesigner_StartView")  
   
 ## <a name="watermark"></a>Marca de agua  
- O painel de marca de agua contém uma lista de links para todas as exibições, editor XML, e XML Schema Explorer de designer XSD. Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”  
+ O painel de marca de agua contém uma lista de links para todas as exibições, editor XML, e XML Schema Explorer de designer XSD. Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".  
   
 ## <a name="schema-set-details"></a>Para obter detalhes de esquema  
  O **definir detalhes de esquema** painel lista os tipos de nós globais do esquema e exibe quantas instâncias de cada tipo estão lá no esquema. Você pode usar o **adicionar** links ao lado de tipos de nós para adicionar novos nós ao espaço de trabalho.  
@@ -55,6 +50,3 @@ O modo de Início é o ponto iniciando para o designer de (XSD) de esquema XML. 
  [Exibição de gráfico](../xml-tools/graph-view.md)   
  [Modo de exibição do modelo de conteúdo](../xml-tools/content-model-view.md)   
  [Editor de XML](../xml-tools/xml-editor.md)
-
-
-

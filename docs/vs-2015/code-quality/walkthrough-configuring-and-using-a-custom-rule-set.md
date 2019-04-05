@@ -1,14 +1,9 @@
 ---
-title: 'Passo a passo: Configurar e usar um personalizado conjunto de regras | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Conjunto de regras de configuração e uso personalizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,14 +12,14 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926547"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Instruções passo a passo: configurando e usando um conjunto de regras personalizado
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Passo a passo: Configurando e usando um conjunto de regras personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo mostra como usar as ferramentas de análise de código que foram configuradas para usar um personalizado *conjunto de regras* em uma biblioteca de classes. Você pode selecionar um conjunto de regras que se relaciona ao tipo de projeto que você especificou para sua solução, ou você pode selecionar conjuntos de regras alternativa para atender a uma necessidade específica, como verificação de código herdado para problemas que podem ser corrigidos de forma incondicional. Em ambos os casos, os conjuntos de regras também podem ser personalizados para ajustá-las aos seus requisitos de projeto.  
@@ -77,7 +72,7 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
    > [!TIP]
    >  Em uma situação de mundo real, uma boa prática a ser usado para priorizar os problemas que você deseja direcionar com análise de código é começar com o **mínimo recomendado regras** conjunto de regras e corrigir os problemas desejados e, em seguida, adicionar incrementalmente mais regras ou regra define a encontrar e corrigir os problemas adicionais.  
   
-   Em seguida, você adicionará um código para a biblioteca de classes que será usada para demonstrar violações de CA1704 "Identificadores devem ter grafia correta" regra de análise de código. Para obter mais informações, consulte [CA1704: os identificadores devem ter grafia correta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+   Em seguida, você adicionará um código para a biblioteca de classes que será usada para demonstrar violações de CA1704 "Identificadores devem ter grafia correta" regra de análise de código. Para obter mais informações, consulte [CA1704: Identificadores devem ter grafia correta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
 #### <a name="add-your-own-code"></a>Adicionar seu próprio código  
   
@@ -115,7 +110,7 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
   
 2. Na janela lista de erros, clique em **avisos** e, em seguida, clique no **descrição** cabeçalho de coluna para classificar os avisos em ordem alfanumérica.  
   
-    Em um aplicativo do mundo real, você teria corrigir quaisquer violações de regra que vale a pena corrigindo neste ponto, ou, opcionalmente, desativar ou suprimir uma regra se você determinou que não era que vale a pena corrigindo. Para obter mais informações, consulte [suprimir avisos usando o atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+    Em um aplicativo do mundo real, você teria corrigir quaisquer violações de regra que vale a pena corrigindo neste ponto, ou, opcionalmente, desativar ou suprimir uma regra se você determinou que não era que vale a pena corrigindo. Para obter mais informações, confira [Suprimir avisos usando o atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
 3. Observe os avisos de CA1704. Essas violações nessa regra indicam que "considere fornecer um nome mais significativo para os parâmetros." Você pode corrigir o problema em seu código, ou você pode desabilitar a regra, conforme explicado no próximo procedimento.  
   
@@ -158,8 +153,5 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
 2.  Na janela lista de erros, observe que quando você clica **avisos**, você não verá mais as violações do aviso CA1704 para a regra "Identificadores devem ter grafia correta".  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Como: Configurar análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Referência do conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

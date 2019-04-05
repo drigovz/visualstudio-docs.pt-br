@@ -1,28 +1,23 @@
 ---
-title: 'Como: criar um. Arquivo VSCT | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um. Arquivo VSCT | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bbfdcf605a1c4346874ec222937a458225788151
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2d3def90d568b77ccfd781d573b49551313d733f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928555"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Como: criar um. Arquivo VSCT
+# <a name="how-to-create-a-vsct-file"></a>Como: Criar um arquivo .Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Há várias maneiras de criar um arquivo de configuração (. VSCT) de tabela de comando com base em XML Visual Studio.  
@@ -102,7 +97,6 @@ Há várias maneiras de criar um arquivo de configuração (. VSCT) de tabela de
 ## <a name="see-also"></a>Consulte também  
  [Criação de páginas. Arquivos do VSCT](../../extensibility/internals/authoring-dot-vsct-files.md)   
  [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Como: criar um. Arquivo VSCT de um existente. Arquivos CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
- [Como: criar um. Arquivo VSCT de um existente. Arquivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
+ [Como: Criar um. Arquivo VSCT de um existente. Arquivos CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
+ [Como: Criar um. Arquivo VSCT de um existente. Arquivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
  [Referência do esquema XML do VSCT](../../extensibility/vsct-xml-schema-reference.md)
-

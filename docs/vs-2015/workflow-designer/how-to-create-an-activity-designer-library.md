@@ -1,25 +1,22 @@
 ---
-title: 'Como: criar uma biblioteca do Designer de atividade | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar uma biblioteca do Designer de atividade | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928759"
 ---
-# <a name="how-to-create-an-activity-designer-library"></a>Como: Crie uma biblioteca do designer de atividade
+# <a name="how-to-create-an-activity-designer-library"></a>Como: Criar uma biblioteca do designer de atividade
 Designers personalizados de atividade permitem que você crie uma interface de usuário para uma atividade padrão ou personalizado. Você controla a complexidade da interface do usuário e tem a capacidade de criar mais de um designer de atividade para uma atividade. Este cenário permite que você crie os designers que são personalizados para mais audiências.  
   
 ### <a name="to-create-an-activity-designer-library"></a>Para criar uma biblioteca do designer de atividade  
@@ -43,7 +40,7 @@ Designers personalizados de atividade permitem que você crie uma interface de u
   
 8.  O modelo de projeto cria uma definição de designer de atividade em XAML e o arquivo de código de implementação no código-fonte. [!INCLUDE[wfd1](../includes/wfd1-md.md)] abre e exibe a tela para o designer de atividade.  
   
-9. Arraste [!INCLUDE[avalon1](../includes/avalon1-md.md)] controla a partir de **caixa de ferramentas** para a superfície de design para usá-los em seu designer personalizado de atividade.  Para obter um exemplo de como implementar um designer personalizado de atividade, consulte [como: criar um Designer personalizado de atividade](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Arraste [!INCLUDE[avalon1](../includes/avalon1-md.md)] controla a partir de **caixa de ferramentas** para a superfície de design para usá-los em seu designer personalizado de atividade.  Para obter um exemplo de como implementar um designer personalizado de atividade, consulte [como: Criar um Designer personalizado de atividade](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     >  Designers personalizados de atividade podem ser usados para atividades personalizadas, bem como para padrão [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]atividades.  

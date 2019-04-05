@@ -1,14 +1,9 @@
 ---
 title: '&lt;arquivo&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -27,13 +22,13 @@ ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928167"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;arquivo&gt; elemento (aplicativo ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +97,7 @@ Identifica todos os arquivos de nonassembly baixado e usado pelo aplicativo.
 |`optional`|Opcional. Especifica se esse arquivo deve executar quando o aplicativo é o primeiro de download, ou se o arquivo deve residir apenas no servidor até que o aplicativo solicitá-lo sob demanda. Se `false` ou indefinido, o arquivo é baixado quando o aplicativo pela primeira vez é executado ou instalado. Se `true`, um `group` deve ser especificado para o manifesto do aplicativo seja válido. `optional` não pode ser true se `writeableType` for especificado com o valor `applicationData`.|  
 |`writeableType`|Opcional. Especifica que esse arquivo é um arquivo de dados. Atualmente, o único valor válido é `applicationData`.|  
   
-## <a name="typelib"></a>TypeLib  
+## <a name="typelib"></a>typelib  
  O `typelib` elemento é um filho opcional do elemento de arquivo. O elemento descreve a biblioteca de tipos que pertence ao componente COM. O elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
@@ -168,24 +163,24 @@ Identifica todos os arquivos de nonassembly baixado e usado pelo aplicativo.
   
  Se um manifesto contém um arquivo que não será transformada em hash, esse manifesto não pode ser digitalmente assinados, pois os usuários não é possível verificar o conteúdo de um arquivo sem hash.  
   
-## <a name="dsigtransforms"></a>DSIG:Transforms  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  O `dsig:Transforms` elemento é um filho necessário do `hash` elemento. O `dsig:Transforms` elemento não tem atributos.  
   
-## <a name="dsigtransform"></a>DSIG:Transform  
+## <a name="dsigtransform"></a>dsig:Transform  
  O `dsig:Transform` elemento é um filho necessário do `dsig:Transforms` elemento. O `dsig:Transform` elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Algorithm`|O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] é `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
-## <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
+## <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  O `dsig:DigestMethod` elemento é um filho necessário do `hash` elemento. O `dsig:DigestMethod` elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Algorithm`|O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] é `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  O `dsig:DigestValue` elemento é um filho necessário do `hash` elemento. O `dsig:DigestValue` elemento não tem atributos. Seu valor de texto é o hash calculado para o arquivo especificado.  
   
 ## <a name="remarks"></a>Comentários  
@@ -208,6 +203,3 @@ Identifica todos os arquivos de nonassembly baixado e usado pelo aplicativo.
   
 ## <a name="see-also"></a>Consulte também  
  [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Formatar especificadores em c# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -31,13 +26,13 @@ ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 330a32b20eeab172ebf36e49f16e79aa936a1bdc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3521f39227b5abcb51a4db6b61e6bf0d853e5afe
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754165"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "58999970"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato em C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +46,9 @@ Você pode alterar o formato no qual um valor é exibido na **inspeção** janel
   
 ```  
 {  
-        int my_var1 = 0x0065;  
-        int my_var2 = 0x0066;  
-        int my_var3 = 0x0067;  
+    int my_var1 = 0x0065;  
+    int my_var2 = 0x0066;  
+    int my_var3 = 0x0067;  
 }  
 ```  
   
@@ -66,20 +61,15 @@ Você pode alterar o formato no qual um valor é exibido na **inspeção** janel
   
 |Especificador|Formatar|Valor original de inspeção|Telas|  
 |---------------|------------|--------------------------|--------------|  
-|CA|Forçar avaliação de uma expressão. Isso pode ser útil quando a avaliação implícita das propriedades e das chamadas de função implícitas é desativada. Ver [efeitos colaterais e expressões](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|"Avaliação da função implícita está desativada pelo usuário" da mensagem|\<value>|  
+|CA|Forçar avaliação de uma expressão. Isso pode ser útil quando a avaliação implícita das propriedades e das chamadas de função implícitas é desativada. Ver [efeitos colaterais e expressões](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|"Avaliação da função implícita está desativada pelo usuário" da mensagem|\<valor>|  
 |d|inteiro decimal|0x0065|101|  
 |dinâmica|Exibe o objeto especificado usando um Modo de Exibição Dinâmico|Exibe todos os membros do objeto, incluindo o modo de exibição dinâmico|Exibe apenas o modo de exibição dinâmico|  
 |h|inteiro hexadecimal|61541|0x0000F065|  
 |nq|cadeia de caracteres sem aspas|"Minha cadeia de caracteres"|Minha cadeia de caracteres|  
-|oculto|Exibe todos os membros públicos e não públicos|Exibe os membros públicos|Exibe todos os membros|  
+|oculto|Exibe todos os membros públicos e não públicos|Exibe membros públicos|Exibe todos os membros|  
 |bruto|Exibe o item como aparece no nó bruto do item. Válido apenas em objetos proxy.|Dicionário\<T >|Modo de exibição bruto do dicionário\<T >|  
 |resultados|Usado com uma variável de um tipo que implementa IEnumerable ou IEnumerable\<T >, geralmente o resultado de uma expressão de consulta. Exibe apenas os membros que contém o resultado da consulta.|Exibe todos os membros.|Exibe os membros que atendam as condições da consulta.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Inspeção e QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Windows variável](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
-
-
-
-
+ [Janelas Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
+ [Janelas de Variáveis](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

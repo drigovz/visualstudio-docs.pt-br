@@ -1,14 +1,9 @@
 ---
-title: 'Como: especificar quais arquivos são publicados pelo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Especificar quais arquivos são publicados pelo ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925569"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Como especificar os arquivos a serem publicados pelo ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Como: Especificar quais arquivos são publicados pelo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] arquivos de aplicativo, tudo sem código no projeto são implantados juntamente com o aplicativo. Em alguns casos, você talvez não queira ou precise publicar certos arquivos, ou você talvez queira instalar determinados arquivos com base em condições. Visual Studio fornece os recursos para excluir arquivos, marcar arquivos como arquivos de dados ou pré-requisitos e criar grupos de arquivos para instalação condicional.  
@@ -45,7 +40,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] arquivos d
   
 -   Arquivos de dados como arquivos de banco de dados SQL (. mdf e. mdb) e arquivos XML serão marcados como arquivos de dados por padrão.  
   
--   Referências aos assemblies (arquivos. dll) são designadas como a seguir quando você adiciona a referência: se **Copy Local** é **falso**, ele é marcado por padrão como um assembly de pré-requisito (**(pré-requisito Auto)**) que devem estar presentes no GAC, antes do aplicativo está instalado. Se **Copy Local** é **verdadeiro**, o assembly é marcado por padrão como um assembly de aplicativo (**incluir (Auto)**) e será copiada para a pasta do aplicativo durante a instalação. Uma referência COM aparecerá na **arquivos de aplicativo** diálogo caixa (como um arquivo. ocx) somente se seu **isolado** estiver definida como **verdadeiro**. Por padrão, ele será incluído.  
+-   Referências aos assemblies (arquivos. dll) são designadas como a seguir quando você adiciona a referência: Se **Copy Local** é **falso**, ele é marcado por padrão como um assembly de pré-requisito (**pré-requisito (Auto)**) que devem estar presentes no GAC, antes do aplicativo está instalado. Se **Copy Local** é **verdadeiro**, o assembly é marcado por padrão como um assembly de aplicativo (**incluir (Auto)**) e será copiada para a pasta do aplicativo durante a instalação. Uma referência COM aparecerá na **arquivos de aplicativo** diálogo caixa (como um arquivo. ocx) somente se seu **isolado** estiver definida como **verdadeiro**. Por padrão, ele será incluído.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para adicionar arquivos à caixa de diálogo de arquivos do aplicativo  
   
@@ -123,7 +118,4 @@ Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] arquivos d
   
 ## <a name="see-also"></a>Consulte também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como publicar um aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
