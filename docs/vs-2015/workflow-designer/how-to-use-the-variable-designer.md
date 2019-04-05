@@ -1,11 +1,8 @@
 ---
-title: 'Como: usar o Designer variável | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Use o Designer variável | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
@@ -13,15 +10,15 @@ ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2348fbe0ed51f72ee1218f7ed1ed2006a48a124d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ba555be7b5de38fa0fba5bc7cc899661e47333cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929452"
 ---
-# <a name="how-to-use-the-variable-designer"></a>Como: Use o designer variável
+# <a name="how-to-use-the-variable-designer"></a>Como: Usar a variável do designer
 O designer variável é usado para criar variáveis para uso em cenários e em instruções condicionais de associação de dados. O designer é acessado clicando o **variáveis** botão no canto inferior esquerdo da tela de design. O designer contém uma lista de variáveis que aparecem em um formulário tabular e podem ser classificados por cada um dos cabeçalhos de coluna, exceto para o **padrão** coluna. Cada variável contém um nome, um tipo de variável, um escopo, e um valor padrão (se houver). O nome e o valor padrão são campos editáveis de texto, e o tipo e escopo são gota- suspensa. O escopo é a atividade que foi selecionada quando o designer variável foi chamado. Se uma variável não pode ser criado no escopo de seleção, então o escopo usará padrão a atividade a mais próxima de ancestral de seleção que permite variáveis criado em seu escopo. [!INCLUDE[crabout](../includes/crabout-md.md)] variáveis, consulte [variáveis e argumentos](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
   
  A ordem de classificação não é aplicado até que o usuário explicitamente use um dos controles de classificação, feche e reabra o designer variável, ou cria outra variável.  
@@ -42,4 +39,4 @@ O designer variável é usado para criar variáveis para uso em cenários e em i
 ## <a name="see-also"></a>Consulte também  
  [Usando o Designer de fluxo de trabalho](../workflow-designer/using-the-workflow-designer.md)   
  [Variáveis e argumentos](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)   
- [Como usar o designer de argumento](../workflow-designer/how-to-use-the-argument-designer.md)
+ [Como: usar o designer de argumento](../workflow-designer/how-to-use-the-argument-designer.md)

@@ -1,23 +1,20 @@
 ---
 title: T4 Diretiva de Assembly | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928395"
 ---
 # <a name="t4-assembly-directive"></a>Diretiva de assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,6 +94,3 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../includes/vsprvs
   
 ## <a name="see-also"></a>Consulte também  
  [Diretiva de inclusão T4](../modeling/t4-include-directive.md)
-
-
-

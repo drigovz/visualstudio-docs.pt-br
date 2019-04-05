@@ -1,26 +1,21 @@
 ---
 title: Criar uma extensão com um modelo de Item do Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab22549550c0564f7e27b88adae4627f24ab9acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c98adbd9b08447ef7b599b00c70d94d2b49050c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928166"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Criando uma extensão com um modelo de item do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,4 +100,3 @@ Você pode usar modelos de item que estão incluídos no SDK do Visual Studio pa
   
 ## <a name="see-also"></a>Consulte também  
  [Serviço de linguagem e pontos de extensão do editor](../extensibility/language-service-and-editor-extension-points.md)
-

@@ -1,28 +1,23 @@
 ---
-title: 'Passo a passo: Adicionando recursos a um Editor personalizado | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Adicionar recursos a um Editor personalizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929844"
 ---
-# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Passo a passo: adicionando recursos a um editor personalizado
+# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Passo a passo: Adicionando funcionalidades a um editor personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depois de criar um editor personalizado, você pode adicionar mais recursos a ele.  
@@ -31,7 +26,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
   
 1.  Crie um editor personalizado usando o modelo de projeto do Visual Studio Package.  
   
-     Para obter mais informações, consulte [instruções passo a passo: Criando um Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Para obter mais informações, confira [Passo a passo: Criar um Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Decida se deseja que o seu editor para dar suporte a um modo de exibição único ou vários modos de exibição.  
   
@@ -122,7 +117,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
   
 12. Implemente suporte a Ajuda contextual.  
   
-     Isso permite que você forneça suportam a Ajuda de F1 e a janela Ajuda dinâmica para itens em seu editor. Para obter mais informações sobre isso, consulte [como: fornecer contexto para os editores](../extensibility/how-to-provide-context-for-editors.md).  
+     Isso permite que você forneça suportam a Ajuda de F1 e a janela Ajuda dinâmica para itens em seu editor. Para obter mais informações sobre isso, consulte [como: Fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Expor um modelo de objeto de automação do seu editor, Implementando o `IDispatch` interface.  
   
@@ -161,5 +156,4 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
   
 ## <a name="see-also"></a>Consulte também  
  [Contribuindo para o modelo de automação](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Como fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md)
-
+ [Como: Fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Como: usar o Visualizador de árvore do WPF | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar o Visualizador de árvore do WPF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 2a1bf1cd-90f9-4d06-9fb4-1bfc925afef3
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 69ce98efe7429b011915f14b267cf5346528a93d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6d2fc99235c9001cd465236c82588e33a842c168
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752117"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928624"
 ---
-# <a name="how-to-use-the-wpf-tree-visualizer"></a>Como usar o Visualizador de Árvore WPF
+# <a name="how-to-use-the-wpf-tree-visualizer"></a>Como: Usar o visualizador de árvore do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o visualizador de árvore do WPF para explorar a árvore visual de um objeto do WPF e exibir as propriedades de dependência do WPF para os objetos contidos nessa árvore. Para obter mais informações sobre árvores visuais, consulte [árvores no WPF](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Para obter mais informações sobre propriedades de dependência, consulte [visão geral das propriedades de dependência](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
@@ -38,23 +33,23 @@ Você pode usar o visualizador de árvore do WPF para explorar a árvore visual 
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Para abrir o visualizador de árvore do WPF  
   
-1.  Em um DataTip **Watch** janela **Autos** janela, ou **locais** janela, ao lado de um nome de objeto do WPF, clique na seta adjacente ao ícone de lupa.  
+1.  Em uma DataTip, em uma janela **Inspeção**, **Autos** ou **Locais**, ao lado do nome do objeto do WPF, clique na seta adjacente ao ícone de lupa.  
   
      Uma lista de visualizadores é exibida.  
   
-2.  Clique em **Visualizador de árvore WPF**.  
+2.  Clique em **Visualizador de árvore do WPF**.  
   
 ### <a name="to-search-the-visual-tree"></a>Para pesquisar a árvore visual  
   
--   No **árvore Visual** painel, digite a cadeia de caracteres que você deseja procurar na **pesquisa** caixa.  
+-   No painel **Árvore Visual**, digite a cadeia de caracteres que deseja pesquisar na caixa **Pesquisar**.  
   
      O visualizador de árvore do WPF localiza imediatamente o primeiro objeto na árvore visual que corresponde à cadeia de caracteres digitada. Digite mais caracteres para localizar uma correspondência mais precisa.  
   
-    -   Para ir para a próxima correspondência na árvore visual, clique em **próxima**.  
+    -   Para ir para a próxima correspondência na árvore visual, clique em **Avançar**.  
   
-    -   Para voltar à correspondência anterior, clique em **Prev**.  
+    -   Para voltar à correspondência anterior, clique em **Ant**.  
   
-    -   Para limpar os critérios de pesquisa, clique em **limpar**.  
+    -   Para limpar os critérios de pesquisa, clique em **Limpar**.  
   
 ### <a name="to-search-the-properties-list"></a>Para pesquisar a lista de propriedades  
   
@@ -62,17 +57,14 @@ Você pode usar o visualizador de árvore do WPF para explorar a árvore visual 
   
      O visualizador de árvore do WPF localiza imediatamente as propriedades que correspondem à cadeia de caracteres digitada; agora, a lista exibe apenas as propriedades que correspondem à cadeia de caracteres digitada. Digite mais caracteres para localizar uma correspondência mais precisa.  
   
-    -   Para limpar os critérios de pesquisa, clique em **limpar**.  
+    -   Para limpar os critérios de pesquisa, clique em **Limpar**.  
   
 ### <a name="to-close-the-visualizer"></a>Para fechar o visualizador  
   
--   Clique o **fechar** ícone no canto superior direito da caixa de diálogo.  
+-   Clique no ícone **Fechar** no canto superior direito da caixa de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: usar um visualizador](../misc/how-to-use-a-visualizer.md)   
+ [Como: Usar um visualizador](../misc/how-to-use-a-visualizer.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
  [Árvores no WPF](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)   
  [Visão geral das propriedades da dependência](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)
-
-
-

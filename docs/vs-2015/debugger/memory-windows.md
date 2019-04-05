@@ -1,14 +1,9 @@
 ---
 title: Memória Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -31,13 +26,13 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724247"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58929099"
 ---
 # <a name="memory-windows"></a>Janelas de memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
 2.  Digite ou cole o endereço que você deseja ver e, em seguida, pressione **ENTER**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Alterando o modo como a janela de memória exibe informações  
- Você pode personalizar a maneira como o **memória** janela mostra o conteúdo da memória. Por padrão, o conteúdo da memória aparece como inteiros de um byte em formato hexadecimal e o número de colunas é determinado automaticamente pela largura atual da janela.  
+ Você pode personalizar a maneira como a janela **Memória** mostra o conteúdo da memória. Por padrão, o conteúdo da memória aparece como inteiros de um byte em formato hexadecimal e o número de colunas é determinado automaticamente pela largura atual da janela.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Para alterar o formato do conteúdo de memória  
   
@@ -105,7 +100,7 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
     Se a avaliação dinâmica estiver ativa, a opção será selecionada e clicar nela a desativará. Se a avaliação dinâmica estiver inativa, a opção não será selecionada e clicar nela a ativará.  
   
-   Você pode ocultar ou exibir a barra de ferramentas na parte superior do **memória** janela. Você não terá acesso à caixa de endereço ou outras ferramentas enquanto a barra de ferramentas estiver oculta.  
+   Você pode ocultar ou exibir a barra de ferramentas na parte superior da janela **Memória**. Você não terá acesso à caixa de endereço ou outras ferramentas enquanto a barra de ferramentas estiver oculta.  
   
 #### <a name="to-toggle-the-toolbar"></a>Para ativar/desativar a barra de ferramentas  
   
@@ -128,8 +123,3 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 ## <a name="see-also"></a>Consulte também  
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

@@ -1,21 +1,17 @@
 ---
 title: Manifestar de recursos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929154"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,12 +28,12 @@ O manifesto de ferramenta de recursos é um aplicativo de console que utiliza um
 ||||  
 |-|-|-|  
 |**Nome do comutador**|**Observações**|**Obrigatório ou opcional**|  
-|/recursos|Uma lista delimitada por ponto e vírgula de imagens ou diretórios. Essa lista sempre deve conter a lista completa de imagens que estarão no manifesto. Se apenas uma lista parcial for fornecida, as entradas não incluídas serão perdidas.<br /><br /> Se um arquivo de recurso determinado é uma faixa de imagem, a ferramenta será dividi-lo em imagens separadas antes de adicionar cada subimage ao manifesto.<br /><br /> Se a imagem é um arquivo. png, é recomendável formatar o nome assim, para que a ferramenta pode preencher os atributos corretos para a imagem: \<nome >.\< Largura >. \<Altura >. PNG.|Necessária|  
+|/resources|Uma lista delimitada por ponto e vírgula de imagens ou diretórios. Essa lista sempre deve conter a lista completa de imagens que estarão no manifesto. Se apenas uma lista parcial for fornecida, as entradas não incluídas serão perdidas.<br /><br /> Se um arquivo de recurso determinado é uma faixa de imagem, a ferramenta será dividi-lo em imagens separadas antes de adicionar cada subimage ao manifesto.<br /><br /> Se a imagem é um arquivo. png, é recomendável que formatar o nome assim, para que a ferramenta pode preencher os atributos corretos para a imagem: \<Nome >. \<Largura >. \<Altura >. PNG.|Necessária|  
 |/assembly|O nome do assembly gerenciado (não incluindo a extensão) ou o caminho de tempo de execução do assembly nativo que hospeda os recursos (relativo ao local de tempo de execução do manifesto).|Necessária|  
-|Anexe|O nome a ser atribuído ao arquivo .imagemanifest gerado. Isso também pode incluir um caminho absoluto ou relativo para criar o arquivo em um local diferente. O nome padrão corresponde ao nome do assembly.<br /><br /> Padrão: \<diretório atual >\\< Assembly\>.imagemanifest|Opcional|  
+|/manifest|O nome a ser atribuído ao arquivo .imagemanifest gerado. Isso também pode incluir um caminho absoluto ou relativo para criar o arquivo em um local diferente. O nome padrão corresponde ao nome do assembly.<br /><br /> Padrão: \<Diretório atual >\\< Assembly\>.imagemanifest|Opcional|  
 |/guidName|O nome a ser dado ao símbolo de GUID para todas as imagens no manifesto gerado.<br /><br /> Padrão: AssetsGuid|Opcional|  
-|/rootPath|O caminho raiz que precisa ser eliminados antes de criar URIs de recursos gerenciados. (Esse sinalizador é ajudar com casos em que a ferramenta obtém o caminho URI relativo errado, causando falha ao carregar recursos de.)<br /><br /> Padrão: \<diretório atual >|Opcional|  
-|/Recursive|Defina esse sinalizador diz à ferramenta recursivamente todos os diretórios de pesquisa no argumento /recursos. Omitir esse sinalizador resultará em uma pesquisa somente superior nível de diretórios.|Opcional|  
+|/rootPath|O caminho raiz que precisa ser eliminados antes de criar URIs de recursos gerenciados. (Esse sinalizador é ajudar com casos em que a ferramenta obtém o caminho URI relativo errado, causando falha ao carregar recursos de.)<br /><br /> Padrão: \<Diretório atual >|Opcional|  
+|/recursive|Defina esse sinalizador diz à ferramenta recursivamente todos os diretórios de pesquisa no argumento /recursos. Omitir esse sinalizador resultará em uma pesquisa somente superior nível de diretórios.|Opcional|  
 |/isNative|Defina esse sinalizador quando o argumento de assembly é um caminho para um assembly nativo. Omita esse sinalizador quando o argumento de assembly é o nome de um assembly gerenciado. (Consulte a seção Observações para obter mais informações sobre esse sinalizador).|Opcional|  
 |/newGuids|Defina esse sinalizador diz à ferramenta para criar um novo valor para o símbolo GUID de imagens em vez de mesclagem do manifesto do existente.|Opcional|  
 |/newIds|Defina esse sinalizador diz à ferramenta para criar novos valores de símbolo de ID para cada imagem em vez de mesclar os valores do manifesto do existente.|Opcional|  
@@ -47,9 +43,9 @@ O manifesto de ferramenta de recursos é um aplicativo de console que utiliza um
   
  **Exemplos**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+-   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
@@ -163,4 +159,3 @@ O manifesto de ferramenta de recursos é um aplicativo de console que utiliza um
   <ImageLists />  
 </ImageManifest>  
 ```
-

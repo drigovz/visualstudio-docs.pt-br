@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de camada: Referência | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de camada: Referência de | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -24,15 +21,15 @@ ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 904b92a058b8fb50f3f2e53f093f4add3730dfbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929724"
 ---
-# <a name="layer-diagrams-reference"></a>Diagramas de camada: referência
+# <a name="layer-diagrams-reference"></a>Diagramas de camada: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arquitetura lógica de alto nível do sistema. Um diagrama de camada organiza os artefatos físicos no seu sistema em grupos abstratos, lógicos, chamados *camadas*. Essas camadas descrevem tarefas principais realizadas pelos artefatos ou os principais componentes do seu sistema. Cada camada também pode conter camadas aninhadas que descrevem tarefas mais detalhadas.  
@@ -51,7 +48,7 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
   
 - Reforce a arquitetura pretendida durante o desenvolvimento e manutenção do seu código, incluindo validação com seu check-in e operações de compilação.  
   
-  Este tópico descreve os elementos que você pode usar em um diagrama de camada. Para obter mais informações sobre como criar e desenhar diagramas de camada, consulte [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de disposição em camadas, visite o [site padrões & práticas](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  Este tópico descreve os elementos que você pode usar em um diagrama de camada. Para obter mais informações sobre como criar e desenhar diagramas de camada, consulte [diagramas de camada: Diretrizes de](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de disposição em camadas, visite o [site padrões & práticas](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Diagramas de camada de leitura  
  ![Elementos em diagramas de camada](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -94,11 +91,8 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
     |----------------------------------|---------------------|  
     |**Categorias**|O tipo de artefato, como uma classe, namespace, arquivo de origem e assim por diante|  
     |**Camada**|A camada que contém links para o artefato|  
-    |**Dá suporte à validação**|Se **verdadeira**, em seguida, o processo de validação de camada pode verificar que o projeto está de acordo com as dependências de ou para este elemento.<br /><br /> Se **falsos**, em seguida, o link não participa no processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md).|  
+    |**Dá suporte à validação**|Se **verdadeira**, em seguida, o processo de validação de camada pode verificar que o projeto está de acordo com as dependências de ou para este elemento.<br /><br /> Se **falsos**, em seguida, o link não participa no processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de camada: Diretrizes de](../modeling/layer-diagrams-guidelines.md).|  
     |**Identificador**|A referência para o artefato vinculado|  
   
 ## <a name="see-also"></a>Consulte também  
  [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
-
-
-

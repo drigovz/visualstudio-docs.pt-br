@@ -1,22 +1,20 @@
 ---
 title: Tipados vs. conjuntos de dados não tipados | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928111"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Conjuntos de dados tipados versus. não tipados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +40,3 @@ Um dataset tipado é um conjunto de dados pela primeira vez é derivado da base 
  Embora os conjuntos de dados tipados têm muitas vantagens, um conjunto de dados não tipado é útil em uma variedade de circunstâncias. O cenário mais óbvio é quando nenhum esquema está disponível para o conjunto de dados. Isso pode ocorrer, por exemplo, se seu aplicativo está interagindo com um componente que retorna um conjunto de dados, mas você não souber de antemão qual é sua estrutura. Da mesma forma, há vezes quando você estiver trabalhando com dados que não tem uma estrutura estática e previsível. Nesse caso, é impraticável para usar um dataset tipado, porque você precisará regenerar a classe de conjunto de dados tipado com cada alteração na estrutura de dados.  
   
  De modo geral, há muitas vezes quando você pode criar um conjunto de dados dinamicamente sem a necessidade de um esquema estão disponíveis. Nesse caso, o conjunto de dados é simplesmente uma estrutura conveniente no qual você pode manter informações, desde que os dados podem ser representados de forma relacional. Ao mesmo tempo, você pode tirar proveito dos recursos do conjunto de dados, como a capacidade de serializar as informações para passar para outro processo ou para gravar um arquivo XML.
-

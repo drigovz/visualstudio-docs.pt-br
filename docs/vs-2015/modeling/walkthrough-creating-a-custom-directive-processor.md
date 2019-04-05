@@ -1,12 +1,9 @@
 ---
 title: 'Passo a passo: Criando um processador de diretriz personalizado | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,15 +11,15 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929259"
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Instruções passo a passo: criando um processador de diretiva
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Passo a passo: Criando um processador de diretriz personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Processadores de diretriz * funcionam adicionando código para o *classe de transformação gerada*. Se você chamar um *diretiva* de uma *modelo de texto*, o restante do código que você escreve em seu modelo de texto pode contar com a funcionalidade que a diretiva fornece.  
@@ -611,7 +608,7 @@ End Property
 
 4.  Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] somente, abra o **Project** menu e clique em **as propriedades de CustomDP**. Sobre o **Application** guia de **namespace raiz**, exclua o valor padrão, `CustomDP`.  
 
-5.  Sobre o **arquivo** menu, clique em **Salvar tudo**.  
+5.  No menu **Arquivo**, clique em **Salvar tudo**.  
 
 6.  No menu **Compilar**, clique em **Compilar Solução**.  
 
@@ -838,7 +835,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  Nesse exemplo, o valor do parâmetro `Processor` é `CustomDirectiveProcessor`. O valor do parâmetro `Processor` deve corresponder ao nome da chave do Registro do processador.  
 
-5.  Sobre o **arquivo** menu, clique em **Salvar tudo**.  
+5.  No menu **Arquivo**, clique em **Salvar tudo**.  
 
 #### <a name="to-test-the-directive-processor"></a>Para testar o processador de diretriz  
 
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Para exibir a saída em um navegador, no **Gerenciador de soluções**Testdp com o botão direito e clique em **exibir no navegador**.  
 
      O resultado deve ser igual ao texto original, exceto que deve ter o formato HTML aplicado. Cada nome de item deve aparecer em negrito.
-
-
-
