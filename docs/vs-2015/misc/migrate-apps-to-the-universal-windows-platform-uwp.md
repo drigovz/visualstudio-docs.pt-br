@@ -21,7 +21,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
  Com a plataforma Universal do Windows, você agora direcionar seu aplicativo para um ou mais famílias de dispositivos. Se você deseja obter mais informações sobre os aplicativos do Windows Universal, dê uma olhada neste [guia da plataforma](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
-- [Migrar seus aplicativos existentes do C em c# /VB Windows Store 8.1 ou Windows Phone 8.1](#MigrateCSharp) para usar a plataforma Universal do Windows.  
+- [Migrar seus aplicativos existentes do C em C# /VB Windows Store 8.1 ou Windows Phone 8.1](#MigrateCSharp) para usar a plataforma Universal do Windows.  
   
 - [Migrar seus aplicativos existentes do C++ Windows Store 8.1 ou Windows Phone 8.1](#MigrateCPlusPlus) para usar a plataforma Universal do Windows.  
   
@@ -33,7 +33,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 ##  <a name="MigrateCSharp"></a> Migrar seus C# /VB aplicativos do Windows Store 8.1 ou Windows Phone 8.1 para usar a plataforma Universal do Windows  
   
-#### <a name="migrate-your-cvb-project-files"></a>Migrar seus arquivos de projeto do C em c# /VB  
+#### <a name="migrate-your-cvb-project-files"></a>Migrar seus arquivos de projeto do C em C# /VB  
   
 1.  Para localizar qual plataforma Universal do Windows que você tiver instalado, abra essa pasta: **\Program arquivos (x86) \Windows Kits\10\Platforms\UAP**. Ela contém uma lista de pastas para cada plataforma Universal do Windows que está instalada. O nome da pasta é a versão da plataforma Universal do Windows que você instalou. Por exemplo, este dispositivo Windows 10 tem versão 10.0.10240.0 da plataforma Universal do Windows instalada.  
   
@@ -66,7 +66,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
     ```  
   
-3.  Crie um arquivo chamado RD com o seguinte conteúdo. Se você tiver um projeto do VB, adicione esse arquivo para o diretório do meu projeto para seu projeto. Se você tiver um projeto c#, adicione esse arquivo para o diretório de propriedades para seu projeto.  
+3.  Crie um arquivo chamado RD com o seguinte conteúdo. Se você tiver um projeto do VB, adicione esse arquivo para o diretório do meu projeto para seu projeto. Se você tiver um projeto C#, adicione esse arquivo para o diretório de propriedades para seu projeto.  
   
     ```xml  
     <?xml version="1.0"?>  
@@ -197,7 +197,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 12. Localizar o \<ItemGroup > elemento que contém outros ativos que são adicionados ao seu projeto, como arquivos. PNG de logotipo (\<Include="Assets\Logo.scale-100.png conteúdo" / >). Adicione o seguinte \<conteúdo > elemento filho a este \<ItemGroup > elemento:  
   
-     **Para c#:**  
+     **Para C#:**  
   
     ```xml  
     <Content Include="Properties\default.rd.xml" />  
@@ -596,11 +596,11 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
 ##  <a name="PreviousVersions"></a> Alterações necessárias para os aplicativos Universal Windows existentes criados com o Visual Studio 2015 RC  
  Se você tiver criado aplicativos universais do Windows 10 com o Visual Studio 2015 RC, você precisará redirecionar seu projeto para usar a versão da plataforma Universal do Windows instalado com a versão mais recente do Visual Studio 2015. Não há suporte para qualquer versão anterior. As alterações necessárias são diferentes dependendo do idioma usado para criar seu aplicativo:  
   
--   [Aplicativos do C em c# /VB](#RCUpdate10CSharp)  
+-   [Aplicativos do C em C# /VB](#RCUpdate10CSharp)  
   
 -   [Aplicativos em C++](#RCUpdate10CPlusPlus)  
   
-###  <a name="RCUpdate10CSharp"></a> Atualize seus projetos em c# /VB de C para usar a última plataforma Universal do Windows  
+###  <a name="RCUpdate10CSharp"></a> Atualize seus projetos em C# /VB de C para usar a última plataforma Universal do Windows  
  Quando você abre a solução para seu aplicativo existente, você verá que seu aplicativo requer uma atualização:  
   
  ![Exibir o projeto no Gerenciador de soluções](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")  
@@ -611,7 +611,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
  Porque o SDK da plataforma Windows Universal para o seu projeto está agora sem suporte, você não poderá instalá-lo. Basta clicar em Okey e, em seguida, siga as etapas abaixo.  
   
-##### <a name="update-your-cvb-projects-to-use-the-latest-universal-windows-platform"></a>Atualize seus projetos em c# /VB de C para usar a última plataforma Universal do Windows  
+##### <a name="update-your-cvb-projects-to-use-the-latest-universal-windows-platform"></a>Atualize seus projetos em C# /VB de C para usar a última plataforma Universal do Windows  
   
 1. Para localizar qual plataforma Universal do Windows que você tiver instalado, abra essa pasta: **\Program arquivos (x86) \Windows Kits\10\Platforms\UAP**. Ela contém uma lista de pastas para cada plataforma Universal do Windows que está instalada. O nome da pasta é a versão da plataforma Universal do Windows que você instalou. Por exemplo, este dispositivo Windows 10 tem versão 10.0.10240.0 da plataforma Universal do Windows instalada.  
   
@@ -645,7 +645,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
    ```  
   
-3. Com o Visual Studio, abra a solução que contém seu aplicativo do C em c# /VB Windows Universal. Você verá que o arquivo de projeto (arquivo. csproj ou. vbproj) precisa ser atualizado. O arquivo de projeto com o botão direito e escolha Editar esse arquivo.  
+3. Com o Visual Studio, abra a solução que contém seu aplicativo do C em C# /VB Windows Universal. Você verá que o arquivo de projeto (arquivo. csproj ou. vbproj) precisa ser atualizado. O arquivo de projeto com o botão direito e escolha Editar esse arquivo.  
   
     ![Com o botão direito do mouse no projeto e escolha Editar](../misc/media/uap-editproject.png "UAP_EditProject")  
   
@@ -815,13 +815,13 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
 ##  <a name="MigrateUnitTest"></a> Alterações necessárias para projetos de teste de unidade existentes para aplicativos Universal Windows criados com o Visual Studio 2015 RC  
  Se você criou a unidade de projetos de teste para aplicativos universais do Windows 10 com o Visual Studio 2015 RC, você precisa fazer essas alterações adicionais ao seu projeto de teste de arquivos para usar esses projetos com a versão mais recente do Visual Studio 2015. As alterações necessárias são diferentes dependendo do idioma usado para criar seu aplicativo:  
   
--   [Aplicativos do C em c# /VB](#UnitTestRCUpdate10CSharp)  
+-   [Aplicativos do C em C# /VB](#UnitTestRCUpdate10CSharp)  
   
 -   [Aplicativos em C++](#UnitTestRCUpdate10CPlusPlus)  
   
-###  <a name="UnitTestRCUpdate10CSharp"></a> Atualizar seus projetos de teste de unidade do C em c# /VB  
+###  <a name="UnitTestRCUpdate10CSharp"></a> Atualizar seus projetos de teste de unidade do C em C# /VB  
   
-1. Com o Visual Studio, abra a solução que contém seu projeto de teste de unidade em c# /VB C. Altere o valor da \<OuttputType > elemento: AppContainerExe.  
+1. Com o Visual Studio, abra a solução que contém seu projeto de teste de unidade em C# /VB C. Altere o valor da \<OuttputType > elemento: AppContainerExe.  
   
    ```xml  
   

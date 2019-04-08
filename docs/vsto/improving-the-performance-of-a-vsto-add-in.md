@@ -79,7 +79,7 @@ ms.locfileid: "54867462"
 
     ```
 
-     Para obter informações sobre como criar um evento de pós-compilação em um projeto c#, consulte [como: Especificar eventos de build &#40;C&#35;&#41;](../ide/how-to-specify-build-events-csharp.md).
+     Para obter informações sobre como criar um evento de pós-compilação em um projeto C#, consulte [como: Especificar eventos de build &#40;C&#35;&#41;](../ide/how-to-specify-build-events-csharp.md).
 
      Para obter informações sobre como criar um evento de pós-compilação em um projeto do Visual Basic, consulte [como: Especificar eventos de build &#40;Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md).
 

@@ -150,7 +150,7 @@ Some text.
   
  Você deve ter em mente as seguintes considerações ao usar blocos de controle:  
   
--   **Idioma.** Você pode usar o código c# ou Visual Basic em um modelo de texto. O idioma padrão é c#, mas você pode especificar o Visual Basic com o `language` parâmetro do `template` diretiva. (Para obter mais informações sobre o `template` diretiva, consulte [diretivas de modelo de texto T4](../modeling/t4-text-template-directives.md).)  
+-   **Idioma.** Você pode usar o código C# ou Visual Basic em um modelo de texto. O idioma padrão é C#, mas você pode especificar o Visual Basic com o `language` parâmetro do `template` diretiva. (Para obter mais informações sobre o `template` diretiva, consulte [diretivas de modelo de texto T4](../modeling/t4-text-template-directives.md).)  
   
      O idioma usado nos blocos de controle não tem nada a ver com o idioma ou o formato do texto gerado em um modelo de texto. Você pode gerar em C# usando o Visual Basic código ou vice-versa.  
   

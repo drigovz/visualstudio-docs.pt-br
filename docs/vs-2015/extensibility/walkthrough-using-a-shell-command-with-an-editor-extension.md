@@ -40,7 +40,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
 ## <a name="adding-a-mef-extension-to-the-command-extension"></a>Adicionando uma extensão do MEF para a extensão de comando  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito no nó da solução, clique em **Add**e, em seguida, clique em **novo projeto**. No **adicionar novo projeto** caixa de diálogo, clique em **extensibilidade** sob **Visual c#**, em seguida, **projeto VSIX**. Nomeie o projeto `CommentAdornmentTest`.  
+1.  Na **Gerenciador de soluções**, clique com botão direito no nó da solução, clique em **Add**e, em seguida, clique em **novo projeto**. No **adicionar novo projeto** caixa de diálogo, clique em **extensibilidade** sob **Visual C#**, em seguida, **projeto VSIX**. Nomeie o projeto `CommentAdornmentTest`.  
   
 2.  Porque este projeto irá interagir com o assembly de nome forte de VSPackage, você deve assinar o assembly. Você pode reutilizar o arquivo de chave já criado para o assembly de VSPackage.  
   

@@ -73,7 +73,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  Se você marcar uma determinada exceção, a execução do depurador interromperá sempre que a exceção é lançada, independentemente se ele é tratado ou sem tratamento. Neste ponto, a exceção é chamada uma exceção de primeira chance. Por exemplo, aqui estão alguns cenários:  
   
-1. O seguinte c# aplicativo de console, o método Main lança um **AccessViolationException** dentro de um `try/catch` bloco:  
+1. O seguinte C# aplicativo de console, o método Main lança um **AccessViolationException** dentro de um `try/catch` bloco:  
   
    ```csharp  
    static void Main(string[] args)  
@@ -100,7 +100,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
     mas ele não exibe o `here` linha.  
   
-2. Um aplicativo de console c# faz referência a uma biblioteca de classes com uma classe que tem dois métodos, um método que lança uma exceção e lida com isso e um segundo método que gera a mesma exceção e não tratá-la:  
+2. Um aplicativo de console C# faz referência a uma biblioteca de classes com uma classe que tem dois métodos, um método que lança uma exceção e lida com isso e um segundo método que gera a mesma exceção e não tratá-la:  
   
    ```vb  
    public class Class1  
@@ -166,7 +166,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  Configurações de exceção são persistidas no arquivo. suo da solução, para que elas se aplicam a uma determinada solução. É possível reutilizar configurações de exceção específicos em soluções. Neste ponto, apenas as exceções adicionadas são persistentes; não são excluídos de exceções. Em outras palavras, você pode adicionar uma exceção, feche e reabra a solução e a exceção ainda estará lá. Mas se você excluir uma exceção e fechar/reabrir a solução, a exceção reaparecerá.  
   
- O **configurações de exceção** janela dá suporte a tipos de exceção genérica em c#, mas não no Visual Basic. Para interromper as exceções, como `MyNamespace.GenericException<T>`, você deve adicionar a exceção como **MyNamespace.GenericException'1**. Ou seja, se você tiver criado uma exceção como este:  
+ O **configurações de exceção** janela dá suporte a tipos de exceção genérica em C#, mas não no Visual Basic. Para interromper as exceções, como `MyNamespace.GenericException<T>`, você deve adicionar a exceção como **MyNamespace.GenericException'1**. Ou seja, se você tiver criado uma exceção como este:  
   
 ```csharp  
 public class GenericException<T> : Exception  

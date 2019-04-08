@@ -30,7 +30,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
   
 1.  Sob a extensibilidade do Visual Basic. O idioma padrão do projeto é o Visual Basic.  
   
-2.  Sob c# extensibilidade. O idioma padrão do projeto é c#.  
+2.  Sob C# extensibilidade. O idioma padrão do projeto é C#.  
   
 3.  Em outra extensibilidade de tipos de projeto. O idioma padrão do projeto é C++.  
   

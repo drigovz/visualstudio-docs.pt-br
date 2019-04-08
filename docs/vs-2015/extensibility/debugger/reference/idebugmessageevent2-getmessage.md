@@ -58,7 +58,7 @@ int GetMessage( 
  [out] Retorna o tipo da mensagem, usando as convenções do Win32 `MessageBox` função. Consulte a [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) função para obter detalhes.  
   
  `pbstrHelpFileName`  
- [no, out] Retorna o nome do arquivo de Ajuda. Pode ser um null (C++) ou valor vazio (c#), se não houver nenhum arquivo de Ajuda.  
+ [no, out] Retorna o nome do arquivo de Ajuda. Pode ser um null (C++) ou valor vazio (C#), se não houver nenhum arquivo de Ajuda.  
   
  `pdwHelpId`  
  [no, out] Retorna o identificador de Ajuda. Pode ser 0 se não houver nenhuma ajuda associado com esta mensagem.  

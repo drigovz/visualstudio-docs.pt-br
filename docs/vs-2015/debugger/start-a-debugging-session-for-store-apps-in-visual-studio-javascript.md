@@ -32,7 +32,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  Este tópico descreve como iniciar uma sessão de depuração para os aplicativos da Windows Store gravados em JavaScript e HTML5. Você pode iniciar a depuração com um único pressionamento de tecla ou configurar a sessão de depuração para cenários específicos e escolher a maneira de iniciar o aplicativo.
 
 > [!NOTE]
->  Para aplicativos escritos em XAML e Visual c#, Visual C++ ou Visual Basic, consulte [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+>  Para aplicativos escritos em XAML e Visual C#, Visual C++ ou Visual Basic, consulte [iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ##  <a name="BKMK_In_this_topic"></a> Neste tópico
  [Neste tópico](#BKMK_In_this_topic)

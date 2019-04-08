@@ -29,7 +29,7 @@ ms.locfileid: "58925153"
   
      A caixa de diálogo **Novo Projeto** é aberta.  
   
-3.  No **modelos instalados** painel, selecione **fluxo de trabalho** de qualquer um os **Visual c#** ou **Visual Basic** agrupamentos, dependendo do seu idioma de preferência.  
+3.  No **modelos instalados** painel, selecione **fluxo de trabalho** de qualquer um os **Visual C#** ou **Visual Basic** agrupamentos, dependendo do seu idioma de preferência.  
   
 4.  No painel central, selecione **aplicativo de Console do fluxo de trabalho**.  
   

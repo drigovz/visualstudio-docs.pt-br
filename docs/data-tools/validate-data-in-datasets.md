@@ -23,7 +23,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55945801"
@@ -106,7 +106,7 @@ Você pode escrever código para verificar se cada coluna que você deseja valid
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar dados quando uma linha for alterada (c#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar dados quando uma linha for alterada (C#)
 
 1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, consulte [instruções passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 

@@ -73,7 +73,7 @@ Antes de iniciar este procedimento, instale esses componentes:
 Escolha um modelo que é semelhante a DSL que você deseja criar. Os modelos diferentes oferecem pontos de partida. Quando você seleciona um modelo de solução, o assistente exibe uma descrição. Para obter mais informações sobre modelos de solução, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **O que você deseja nomear sua linguagem específica de domínio?**
-O padrão é o nome da solução. Código é gerado a partir esse valor. Ele deve ser válido como um nome de classe c#.
+O padrão é o nome da solução. Código é gerado a partir esse valor. Ele deve ser válido como um nome de classe C#.
 
 ### <a name="file-extension-page"></a>Página de extensão de arquivo
  **Use arquivos de modelo do qual extensão deve?**

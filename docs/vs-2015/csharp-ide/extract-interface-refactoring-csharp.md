@@ -1,5 +1,5 @@
 ---
-title: Extrair Interface refatoração (c#) | Microsoft Docs
+title: Extrair Interface refatoração (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

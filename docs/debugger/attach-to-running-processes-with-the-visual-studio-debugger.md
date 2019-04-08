@@ -30,7 +30,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
 ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/21/2019
 ms.locfileid: "58323088"
@@ -172,8 +172,8 @@ Para selecionar rapidamente um processo em execução para anexar a, no Visual S
 |Depuração remota ASP.NET 4 ou 4.5 em um servidor IIS|Usar as ferramentas remotas e **anexar ao processo**|*w3wp.exe*|Consulte [remota de depuração do ASP.NET em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depuração remota do ASP.NET Core em um servidor IIS|Usar as ferramentas remotas e **anexar ao processo**|*dotnet.exe*|Para implantação de aplicativo, consulte [publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para depuração, consulte [depuração remota do ASP.NET Core em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Depurar o script do lado do cliente em um servidor IIS local, para tipos de aplicativos com suporte |Use **anexar ao processo**|*chrome.exe*, *MicrosoftEdgeCP.exe* ou *iexplore.exe*|Depuração de script deve ser habilitada. Para o Chrome, você também deve executar Chrome no modo de depuração e selecione **código Webkit** na **anexar a** campo.|
-|Depurar um aplicativo c#, Visual Basic ou C++ no computador local|Use um [depuração padrão](../debugger/debugger-feature-tour.md) ou **anexar ao processo**|*\<nomedoaplicativo>.exe*|Na maioria dos cenários, usar a depuração padrão e não **anexar ao processo**.|
-|Depuração remota de um aplicativo de desktop do Windows|Ferramentas remotas|N/D| Ver [remoto depurar um aplicativo c# ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [remoto depurar um aplicativo C++](../debugger/remote-debugging-cpp.md)|
+|Depurar um aplicativo C#, Visual Basic ou C++ no computador local|Use um [depuração padrão](../debugger/debugger-feature-tour.md) ou **anexar ao processo**|*\<nomedoaplicativo>.exe*|Na maioria dos cenários, usar a depuração padrão e não **anexar ao processo**.|
+|Depuração remota de um aplicativo de desktop do Windows|Ferramentas remotas|N/D| Ver [remoto depurar um aplicativo C# ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [remoto depurar um aplicativo C++](../debugger/remote-debugging-cpp.md)|
 |Depurar um aplicativo ASP.NET no computador local depois de iniciar o aplicativo sem o depurador|Use **anexar ao processo**|*iiexpress.exe*|Isso pode ser útil para fazer com que seu aplicativo carregar mais rápido, como (por exemplo) ao criar o perfil. |
 |Depurar outros tipos de aplicativos com suporte em um processo do servidor|Se o servidor remoto, use as ferramentas remotas, e **anexar ao processo**|*Chrome.exe*, *iexplore.exe*, ou outros processos|Se necessário, use o Monitor de recursos para ajudar a identificar o processo. Confira [Depuração remota](../debugger/remote-debugging.md).|
 |Remoto depurar um aplicativo de IoT, OneCore, HoloLens ou aplicativo Universal do Windows (UWP)|Depurar pacote do aplicativo instalado|N/D|Ver [depurar pacote de aplicativo instalado](debug-installed-app-package.md) em vez de usar **anexar ao processo**|

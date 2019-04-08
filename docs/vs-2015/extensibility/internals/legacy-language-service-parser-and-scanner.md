@@ -24,7 +24,7 @@ ms.locfileid: "58925598"
 O analisador é o coração do serviço de linguagem. As classes de linguagem da estrutura de pacote gerenciado (MPF) exigem um analisador de linguagem para selecionar as informações sobre o código que está sendo exibido. Um analisador separa o texto em tokens léxicos e, em seguida, identifica esses tokens por tipo e funcionalidade.  
   
 ## <a name="discussion"></a>Discussão  
- Este é um método em c#.  
+ Este é um método em C#.  
   
 ```csharp  
 namespace MyNamespace  

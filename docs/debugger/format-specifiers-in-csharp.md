@@ -1,5 +1,5 @@
 ---
-title: Formatar especificadores no depurador (c#) | Microsoft Docs
+title: Formatar especificadores no depurador (C#) | Microsoft Docs
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +27,12 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
 ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/19/2019
 ms.locfileid: "57870514"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em c# no depurador do Visual Studio
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em C# no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido na **inspeção** janela usando especificadores de formato. Você também pode usar especificadores de formato na **Immediate** janela, o **comando** janela, na [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e em janelas de origem. Se você pausar em uma expressão nessas janelas, o resultado será exibido em uma [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) na exibição do formato especificado.
 
 Para usar um especificador de formato, insira a expressão variável, seguida por uma vírgula e o especificador apropriado.

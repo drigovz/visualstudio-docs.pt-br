@@ -42,7 +42,7 @@ A chamada para a diretiva personalizada é semelhante a esta:
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-O processador de diretriz personalizado adiciona a variável e a propriedade à classe de transformação gerada. A diretiva que você escreve usa as classes <xref:System.CodeDom> para criar o código que o mecanismo adiciona à classe de transformação gerada. O <xref:System.CodeDom> classes criar código em Visual c# ou Visual Basic, dependendo do idioma especificado na `language` parâmetro do `template` diretiva. A linguagem do processador de diretriz e a linguagem do modelo de texto que está acessando o processador de diretriz não precisam coincidir.
+O processador de diretriz personalizado adiciona a variável e a propriedade à classe de transformação gerada. A diretiva que você escreve usa as classes <xref:System.CodeDom> para criar o código que o mecanismo adiciona à classe de transformação gerada. O <xref:System.CodeDom> classes criar código em Visual C# ou Visual Basic, dependendo do idioma especificado na `language` parâmetro do `template` diretiva. A linguagem do processador de diretriz e a linguagem do modelo de texto que está acessando o processador de diretriz não precisam coincidir.
 
 O código que a diretiva cria é semelhante a este:
 

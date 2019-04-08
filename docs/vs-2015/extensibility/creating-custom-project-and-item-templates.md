@@ -29,7 +29,7 @@ A partir do Visual Studio 2017, verificação de projeto personalizados e modelo
 
 ## <a name="create-a-project-template"></a>Criar um modelo de projeto
 
-1.  Crie um projeto de modelo de projeto. Você pode encontrar o modelo de projeto na **novo projeto** caixa de diálogo, no Visual Basic ou Visual c# **extensibilidade** pasta.
+1.  Crie um projeto de modelo de projeto. Você pode encontrar o modelo de projeto na **novo projeto** caixa de diálogo, no Visual Basic ou Visual C# **extensibilidade** pasta.
 
      O modelo gera um arquivo de classe, um ícone, um arquivo. vstemplate, um arquivo de projeto editável chamado ProjectTemplate.vbproj ou ProjectTemplate.csproj e alguns arquivos que normalmente são gerados por outros tipos de projeto, esse arquivo resx, um AssemblyInfo arquivo e um arquivo. Settings. Cada arquivo de código contém substituições de parâmetro comuns onde for apropriado.
 
@@ -77,7 +77,7 @@ A partir do Visual Studio 2017, verificação de projeto personalizados e modelo
 
 4.  Compile a solução e, em seguida, pressione F5. A instância experimental é exibida.
 
-5.  Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado na **novo projeto** caixa de diálogo (**arquivo / novo / projeto**), no Visual c# ou no nó Visual Basic. Para um projeto de modelo de item, você deve ver o modelo de item listado na caixa de diálogo Add New Item (na **Gerenciador de soluções**, selecione o nó do projeto e clique em **Add / Novo Item**).
+5.  Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado na **novo projeto** caixa de diálogo (**arquivo / novo / projeto**), no Visual C# ou no nó Visual Basic. Para um projeto de modelo de item, você deve ver o modelo de item listado na caixa de diálogo Add New Item (na **Gerenciador de soluções**, selecione o nó do projeto e clique em **Add / Novo Item**).
 
 ## <a name="see-also"></a>Consulte também
 

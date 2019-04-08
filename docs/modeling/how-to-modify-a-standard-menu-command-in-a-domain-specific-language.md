@@ -28,7 +28,7 @@ ms.locfileid: "55952691"
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Para descobrir quais comandos podem ser modificados
 
-1.  No `DslPackage` projeto, abra `GeneratedCode\CommandSet.cs`. Esse arquivo c# pode ser encontrado no Gerenciador de soluções, como uma subsidiária da `CommandSet.tt`.
+1.  No `DslPackage` projeto, abra `GeneratedCode\CommandSet.cs`. Esse arquivo C# pode ser encontrado no Gerenciador de soluções, como uma subsidiária da `CommandSet.tt`.
 
 2.  Encontre classes nesse arquivo cujos nomes terminam com "`CommandSet`", por exemplo `Language1CommandSet` e `Language1ClipboardCommandSet`.
 

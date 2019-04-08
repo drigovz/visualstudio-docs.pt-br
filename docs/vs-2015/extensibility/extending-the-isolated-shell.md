@@ -30,7 +30,7 @@ Você pode estender o shell isolado do Visual Studio com a adição de um VSPack
   
 1.  Sob **Visual Basic**, **extensibilidade**. O idioma padrão do projeto é o Visual Basic.  
   
-2.  Sob **Visual c#**, **extensibilidade**. O idioma padrão do projeto é c#.  
+2.  Sob **Visual C#**, **extensibilidade**. O idioma padrão do projeto é C#.  
   
 3.  Sob **outros tipos de projeto**, **extensibilidade**. O idioma padrão do projeto é C++.  
   
@@ -74,7 +74,7 @@ Você pode estender o shell isolado do Visual Studio com a adição de um VSPack
   
 #### <a name="to-add-a-mef-component"></a>Para adicionar um componente MEF  
   
-1.  No **adicionar novo projeto** caixa de diálogo **Visual c#**, **extensibilidade**, use o **margem do Editor** modelo para adicionar um projeto. Nomeie-o como `ShellEditorMargin`.  
+1.  No **adicionar novo projeto** caixa de diálogo **Visual C#**, **extensibilidade**, use o **margem do Editor** modelo para adicionar um projeto. Nomeie-o como `ShellEditorMargin`.  
   
 2.  No projeto ShellExtensionsVSIX, abra o arquivo de vsixmanifest no modo Design, não o modo de exibição de código.  
   
@@ -98,7 +98,7 @@ Você pode estender o shell isolado do Visual Studio com a adição de um VSPack
   
 #### <a name="to-add-a-generic-vsix-project"></a>Para adicionar um projeto VSIX genérico  
   
-1.  No **adicionar novo projeto** caixa de diálogo **Visual c#**, **extensibilidade**, use o **VSIXProject** modelo para adicionar um projeto. Nomeie-o como `EmptyVSIX`.  
+1.  No **adicionar novo projeto** caixa de diálogo **Visual C#**, **extensibilidade**, use o **VSIXProject** modelo para adicionar um projeto. Nomeie-o como `EmptyVSIX`.  
   
 2.  No projeto ShellExtensionsVSIX, abra o arquivo de Source.extensions.vsixmanifest na exibição de Design, não o modo de exibição de código.  
   

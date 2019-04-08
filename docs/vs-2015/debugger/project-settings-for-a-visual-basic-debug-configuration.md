@@ -36,7 +36,7 @@ ms.locfileid: "58926629"
 Você pode alterar as configurações do projeto para uma configuração de depuração do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] na janela **Páginas de Propriedades**, conforme discutido em [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar as configurações relacionadas ao depurador na janela **Páginas de Propriedades**.  
   
 > [!WARNING]
->  Este tópico não se aplica a aplicativos da Store. Consulte [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  Este tópico não se aplica a aplicativos da Store. Consulte [iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ### <a name="debug-tab"></a>Guia Depurar  
   

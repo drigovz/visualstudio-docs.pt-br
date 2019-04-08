@@ -27,7 +27,7 @@ Você pode adicionar efeitos visuais diferentes para o editor, Criando component
   
 ## <a name="creating-a-mef-project"></a>Criando um projeto MEF  
   
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `HighlightWordTest`.  
+1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual C# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `HighlightWordTest`.  
   
 2.  Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -308,7 +308,7 @@ Você pode adicionar efeitos visuais diferentes para o editor, Criando component
   
 8.  Você deve implementar o <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> método. Esse método usa uma coleção de <xref:Microsoft.VisualStudio.Text.SnapshotSpan> objetos e retorna uma enumeração dos períodos de marca.  
   
-     No c#, implemente esse método como um iterador yield, que permite a avaliação lenta (ou seja, a avaliação do conjunto somente quando os itens individuais são acessados) das marcas. No Visual Basic, adicione as marcas a uma lista e retornar a lista.  
+     No C#, implemente esse método como um iterador yield, que permite a avaliação lenta (ou seja, a avaliação do conjunto somente quando os itens individuais são acessados) das marcas. No Visual Basic, adicione as marcas a uma lista e retornar a lista.  
   
      Aqui o método retorna um <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> objeto que tem um "blue" <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, que fornece um plano de fundo azul.  
   

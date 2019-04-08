@@ -256,7 +256,7 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
   
 -   Implementar verificação de simultaneidade durante atualizações. Para obter informações, consulte [a simultaneidade otimista: Visão geral do](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
--   Adicionar consultas LINQ para filtrar dados. Para obter informações, consulte [Introdução a consultas LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+-   Adicionar consultas LINQ para filtrar dados. Para obter informações, consulte [Introdução a consultas LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

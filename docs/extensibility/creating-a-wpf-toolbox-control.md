@@ -31,7 +31,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
 
 1. Crie um projeto do VSIX chamado `MyToolboxControl`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo pesquisando por "vsix".
 
-2. Quando o projeto aberto, adicione uma **controle de caixa de ferramentas do WPF** modelo de item chamado `MyToolboxControl`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **controle de caixa de ferramentas do WPF**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *MyToolboxControl.cs*.
+2. Quando o projeto aberto, adicione uma **controle de caixa de ferramentas do WPF** modelo de item chamado `MyToolboxControl`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual C#** > **extensibilidade** e selecione **controle de caixa de ferramentas do WPF**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *MyToolboxControl.cs*.
 
     A solução agora contém um controle de usuário, uma `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> que adiciona o controle para o **caixa de ferramentas**e um **Microsoft.VisualStudio.ToolboxControl** entrada de ativo no manifesto do VSIX para  implantação.
 
@@ -59,7 +59,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
 
 1. Abra *MyToolboxControl.xaml.cs* na exibição de código.
 
-2. Encontre o `MyToolboxControl` de classe e renomeie-o para TestControl. (A maneira mais rápida de fazer isso é renomear a classe, em seguida, selecione **Renomear** no menu de contexto e conclua as etapas. (Para obter mais informações sobre o **renomeie** de comando, consulte [renomear refatoração (c#)](../ide/reference/rename.md).)
+2. Encontre o `MyToolboxControl` de classe e renomeie-o para TestControl. (A maneira mais rápida de fazer isso é renomear a classe, em seguida, selecione **Renomear** no menu de contexto e conclua as etapas. (Para obter mais informações sobre o **renomeie** de comando, consulte [renomear refatoração (C#)](../ide/reference/rename.md).)
 
 3. Vá para o `ProvideToolboxControl` de atributo e altere o valor do primeiro parâmetro para **teste**. Esse é o nome do grupo que contém o controle na **caixa de ferramentas**.
 

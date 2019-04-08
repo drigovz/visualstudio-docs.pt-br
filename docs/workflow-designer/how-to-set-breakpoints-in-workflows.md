@@ -17,7 +17,7 @@ ms.locfileid: "55908433"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Como: Definir pontos de interrupção em fluxos de trabalho
 
-Quando você usar o Designer de fluxo de trabalho, você pode definir pontos de interrupção em fluxos de trabalho gráficos como você faria no código do Visual Basic ou c#. Como esperado, a execução de fluxo de trabalho que ele pare em cada ponto de interrupção esse definido.
+Quando você usar o Designer de fluxo de trabalho, você pode definir pontos de interrupção em fluxos de trabalho gráficos como você faria no código do Visual Basic ou C#. Como esperado, a execução de fluxo de trabalho que ele pare em cada ponto de interrupção esse definido.
 
 Um ponto de interrupção tem três estados: *Pendente*, *ligado*, e *erro*. Quando você definir um ponto de interrupção, ele está pendente, e ele é representado por um ícone vermelho contínuo. Quando o tempo de execução carregado o tipo de fluxo de trabalho, transformações limite. Se você especificar um formato incorreto do ponto de interrupção, como um nome de atividade que não é válida, uma janela de erro aparece. O ponto de interrupção é adicionado ainda para a janela de ponto de interrupção, mas é marcado com um pequeno “x”.
 

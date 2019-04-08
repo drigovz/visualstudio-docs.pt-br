@@ -28,11 +28,11 @@ Você pode tornar as extensões para o designer que você pode usar para editar 
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Para criar uma solução de extensão do Designer de DSL  
   
-1.  Crie um novo projeto usando o modelo de projeto de biblioteca de classes. No **novo projeto** caixa de diálogo, clique em **Visual c#** e, na janela do meio, clique em **biblioteca de classes**.  
+1.  Crie um novo projeto usando o modelo de projeto de biblioteca de classes. No **novo projeto** caixa de diálogo, clique em **Visual C#** e, na janela do meio, clique em **biblioteca de classes**.  
   
      Esse projeto conterá o código de suas extensões.  
   
-2.  Crie um novo projeto usando o modelo de projeto do VSIX. No **novo projeto** diálogo caixa, expanda **Visual c#**, clique em **extensibilidade**e, em seguida, na janela Central selecione **projeto VSIX**.  
+2.  Crie um novo projeto usando o modelo de projeto do VSIX. No **novo projeto** diálogo caixa, expanda **Visual C#**, clique em **extensibilidade**e, em seguida, na janela Central selecione **projeto VSIX**.  
   
      Selecione **adicionar a solução**.  
   

@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58921910"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>Usando o ambiente de desenvolvimento do Visual Studio para c# #
+# <a name="using-the-visual-studio-development-environment-for-c"></a>Usando o ambiente de desenvolvimento do Visual Studio para C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio é uma coleção de ferramentas de desenvolvimento expostas por meio de uma interface de usuário comum. Algumas ferramentas são compartilhados com outras linguagens [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e outras, como o compilador C#, são exclusivas do Visual C#. Este tópico fornece links para as ferramentas do Visual C# mais importantes.
@@ -41,7 +41,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio é uma coleção 
 |[Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md)|Fornece uma visão geral do uso de snippets de código no Visual C# para adicionar automaticamente construções de código comuns ao seu aplicativo|
 |[Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)|Fornece links para procedimentos sobre como usar a janela Localizar e Substituir, Indicadores, Lista de Tarefas e Lista de Erros para localizar linhas de código.|
 |[Exibindo a estrutura do código](../ide/viewing-the-structure-of-code.md)|Explica como procurar hierarquias de classes, membros de classes e recursos.|
-|[Como: Adicionar um arquivo de configuração de aplicativo para um projeto c#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Descreve como adicionar um arquivo de configuração (app.config) a um projeto C#.|
+|[Como: Adicionar um arquivo de configuração de aplicativo para um projeto C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Descreve como adicionar um arquivo de configuração (app.config) a um projeto C#.|
 |[Metadados como origem](../csharp-ide/metadata-as-source.md)|Descreve como o IDE permite exibir metadados como códigos-fonte.|
 |[Refatoração (C#)](../csharp-ide/refactoring-csharp.md)|Lista as operações de refatoração que ajudam a modificar seu código sem mudar o comportamento do aplicativo.|
 |[Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)|Explica como configurar depuração, versão e compilações especiais de sua solução do Visual Studio.|
