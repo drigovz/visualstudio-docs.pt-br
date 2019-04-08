@@ -58,7 +58,7 @@ ms.locfileid: "54865288"
 
 1.  Na barra de menus, escolha **arquivo** > **New** > **projeto** para exibir o **novo projeto** caixa de diálogo.
 
-2.  Expanda o **SharePoint** nó em um **Visual c#** ou **Visual Basic**e, em seguida, escolha o **2010** nó.
+2.  Expanda o **SharePoint** nó em um **Visual C#** ou **Visual Basic**e, em seguida, escolha o **2010** nó.
 
 3.  No **modelos** painel, escolha o **o projeto do SharePoint 2010** modelo.
 

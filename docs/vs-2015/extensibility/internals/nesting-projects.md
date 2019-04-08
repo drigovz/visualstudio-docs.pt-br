@@ -29,7 +29,7 @@ Os desenvolvedores de aplicativos corporativos que usam o seu pacote VS convenie
   
  Aninhamento de projeto não é uma parte intrínseca da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Você precisa escrever o código para habilitar o aninhamento e subprojeto de aninhamento dentro de projetos filho. O projeto pai é um VSPackage especial, ou o tipo de projeto, criado e registrado com seu próprio GUID que inclui o código que é necessário para implementar o aninhamento de projeto.  
   
- Você pode encontrar um exemplo de projetos aninhados no exemplo de c# Example.Nested projeto.  
+ Você pode encontrar um exemplo de projetos aninhados no exemplo de C# Example.Nested projeto.  
   
 ## <a name="nested-projects-example"></a>Exemplo de projetos aninhados  
  ![Aninhado projetos de solução](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  

@@ -15,7 +15,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54798898"
@@ -90,7 +90,7 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
 ## <a name="passing-items-to-a-task"></a>Passando itens para uma tarefa  
  Em um arquivo de projeto, você pode usar a notação @() em tarefas para especificar uma lista completa de itens como a entrada para um build. Você pode usar essa notação se listar todos os arquivos separadamente ou usar caracteres curinga.  
   
-#### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos os arquivos do Visual c# ou Visual Basic como entradas  
+#### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos os arquivos do Visual C# ou Visual Basic como entradas  
   
 -   Use os atributos `Include` semelhantes ao seguinte:  
   

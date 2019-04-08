@@ -98,9 +98,9 @@ Não há suporte para blocos marcados no [!INCLUDE[vbprvb](../code-quality/inclu
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Ativar verificado estouro/estouro negativo aritmético
 
-Se você ativar verificado estouro/estouro negativo aritmético em c#, equivale a disposição de cada operação de inteiro em um bloco verificado.
+Se você ativar verificado estouro/estouro negativo aritmético em C#, equivale a disposição de cada operação de inteiro em um bloco verificado.
 
-Para ativar verificado estouro/estouro negativo aritmético em c#:
+Para ativar verificado estouro/estouro negativo aritmético em C#:
 
 1.  Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
 

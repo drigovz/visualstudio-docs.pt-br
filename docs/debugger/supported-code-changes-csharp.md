@@ -1,5 +1,5 @@
 ---
-title: Suporte para alterações de código (c# e Visual Basic) | Microsoft Docs
+title: Suporte para alterações de código (C# e Visual Basic) | Microsoft Docs
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +18,17 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
 ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/06/2019
 ms.locfileid: "57526172"
 ---
-# <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código suportadas (c# e Visual Basic)
+# <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código suportadas (C# e Visual Basic)
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.
 
 ## <a name="supported-changes-to-code"></a>Alterações suportadas em código
 
-A tabela a seguir mostra as alterações que podem ser feitas ao código c# e Visual Basic durante uma sessão de depuração sem reiniciar a sessão.
+A tabela a seguir mostra as alterações que podem ser feitas ao código C# e Visual Basic durante uma sessão de depuração sem reiniciar a sessão.
 
 |Elemento de linguagem/recurso|Operação de edição com suporte|Limitações|
 |-|-|-|
@@ -43,7 +43,7 @@ A tabela a seguir mostra as alterações que podem ser feitas ao código c# e Vi
 > Geralmente, há suporte para mais recentes recursos de linguagem como interpolação de cadeia de caracteres e operadores nulo-condicional por editar e continuar. Para obter informações mais atuais, consulte o [Enc suporte edita](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) página.
 
 ## <a name="unsupported-changes-to-code"></a>Não há suporte para alterações no código
- As seguintes alterações não podem ser aplicadas ao código c# e Visual Basic durante uma sessão de depuração:
+ As seguintes alterações não podem ser aplicadas ao código C# e Visual Basic durante uma sessão de depuração:
 
 -   As alterações na instrução atual ou qualquer outra instrução ativa.
 

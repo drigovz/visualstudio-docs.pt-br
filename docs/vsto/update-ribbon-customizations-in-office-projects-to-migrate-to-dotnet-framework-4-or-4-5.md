@@ -29,9 +29,9 @@ ms.locfileid: "58324676"
 ## <a name="update-the-generated-ribbon-code"></a>Atualizar o código gerado da faixa de opções
  Se a estrutura de destino do seu projeto é alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve alterar o código gerado para o item da faixa de opções, executando as etapas a seguir. Os arquivos de código que você precisa atualizar dependem da linguagem de programação e como você criou o projeto:
 
--   Em projetos do Visual Basic ou em projetos do Visual c# que você criou no [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] execute todas as etapas no arquivo code-behind da faixa de opções (*YourRibbonItem*. Designer.cs ou *YourRibbonItem*. VB). Para ver o arquivo code-behind em projetos do Visual Basic, clique o **Show All Files** botão na **Gerenciador de soluções**.
+-   Em projetos do Visual Basic ou em projetos do Visual C# que você criou no [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] execute todas as etapas no arquivo code-behind da faixa de opções (*YourRibbonItem*. Designer.cs ou *YourRibbonItem*. VB). Para ver o arquivo code-behind em projetos do Visual Basic, clique o **Show All Files** botão na **Gerenciador de soluções**.
 
--   Em projetos do Visual c# que você criou no Visual Studio 2008 e, em seguida, atualizado para [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], execute as duas primeiras etapas no arquivo de código da faixa de opções (*YourRibbonItem*. cs ou *YourRibbonItem*. vb), e Execute as etapas restantes no arquivo code-behind da faixa de opções.
+-   Em projetos do Visual C# que você criou no Visual Studio 2008 e, em seguida, atualizado para [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], execute as duas primeiras etapas no arquivo de código da faixa de opções (*YourRibbonItem*. cs ou *YourRibbonItem*. vb), e Execute as etapas restantes no arquivo code-behind da faixa de opções.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>Para alterar o código gerado da faixa de opções
 
@@ -75,7 +75,7 @@ ms.locfileid: "58324676"
 3.  No `InitializeComponent` método, modificar qualquer código que constrói um controle de faixa de opções para que o código em vez disso, usa um dos métodos de auxiliar a <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objeto.
 
     > [!NOTE]
-    >  Em projetos do Visual c#, você deve expandir a região em que é denominada `Component Designer generated code` para ver o `InitializeComponent` método.
+    >  Em projetos do Visual C#, você deve expandir a região em que é denominada `Component Designer generated code` para ver o `InitializeComponent` método.
 
      Por exemplo, suponha que o arquivo contém a seguinte linha de código que cria uma instância de um <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> denominado `button1` em um projeto que tem como alvo o .NET Framework 3.5.
 
@@ -99,7 +99,7 @@ ms.locfileid: "58324676"
 
      Para obter uma lista completa dos métodos auxiliares para os controles da faixa de opções, consulte [controles de faixa de opções instanciar](#ribboncontrols).
 
-4.  Em projetos do Visual c#, modifique qualquer linha de código na `InitializeComponent` método que usa um <xref:System.EventHandler%601> delegado a ser usado um delegado específico de faixa de opções em vez disso.
+4.  Em projetos do Visual C#, modifique qualquer linha de código na `InitializeComponent` método que usa um <xref:System.EventHandler%601> delegado a ser usado um delegado específico de faixa de opções em vez disso.
 
      Por exemplo, suponha que o arquivo contém a seguinte linha de código que manipula o <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> eventos em um projeto que tem como alvo o .NET Framework 3.5.
 

@@ -66,7 +66,7 @@ Na prática, descobrimos que os recursos que a maioria das pessoas que desejam e
 ##  <a name="BKMK_ProjectTemplate"></a> Quais modelos de projeto são fornecidos pelo VSSDK?
  Os dois tipos principais de extensões são extensões VSPackages e MEF. Em geral, as extensões VSPackage são usadas para extensões que usam ou estendem comandos, janelas de ferramentas e projetos. Extensões do MEF são usadas para estender ou personalizar o editor do Visual Studio.
 
- Extensões do Visual c# e Visual Basic, VSSDK fornece um modelo de projeto VSIX vazio que pode ser usado junto com os novos modelos de item que criar comandos de menu, janelas de ferramentas e extensões do editor. Você também pode usar este modelo para modelos de projeto de pacote, trechos de código e outros artefatos para distribuição a outros usuários.
+ Extensões do Visual C# e Visual Basic, VSSDK fornece um modelo de projeto VSIX vazio que pode ser usado junto com os novos modelos de item que criar comandos de menu, janelas de ferramentas e extensões do editor. Você também pode usar este modelo para modelos de projeto de pacote, trechos de código e outros artefatos para distribuição a outros usuários.
 
  Para C++, o Assistente de VSPackage fornece o código para adicionar comandos de menu, janelas de ferramentas e editores personalizados.
 

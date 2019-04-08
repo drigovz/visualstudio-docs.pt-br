@@ -54,7 +54,7 @@ Quando você tiver gravado um visualizador, precisará depurá-lo e testá-lo.
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     Para obter um exemplo mais completo, consulte [passo a passo: Escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+     Para obter um exemplo mais completo, consulte [passo a passo: Escrevendo um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   

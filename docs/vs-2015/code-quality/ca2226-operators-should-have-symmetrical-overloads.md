@@ -38,7 +38,7 @@ ms.locfileid: "58926673"
 ## <a name="rule-description"></a>Descrição da Regra
  Não há nenhuma circunstância onde igualdade ou desigualdade é aplicável a instâncias de um tipo, e o operador oposto é indefinido. Tipos normalmente implementam o operador de desigualdade, retornando o valor negado do operador de igualdade.
 
- O compilador c# emite um erro para as violações dessa regra.
+ O compilador C# emite um erro para as violações dessa regra.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, implementar a igualdade e os operadores de desigualdade, ou remover o que está presente.

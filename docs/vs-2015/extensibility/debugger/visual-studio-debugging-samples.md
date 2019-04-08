@@ -24,6 +24,6 @@ ms.locfileid: "58923601"
 
 Dois exemplos mostram como estender o depurador do Visual Studio usando [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
--   O exemplo de avaliador de expressão de depurador, para linguagens gerenciadas, está incluído no [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. No [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] janela, clique em de **exemplos** , clique em **todos os** ou **c#** na lista de idiomas e depois clique em **depurador**.  
+-   O exemplo de avaliador de expressão de depurador, para linguagens gerenciadas, está incluído no [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. No [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] janela, clique em de **exemplos** , clique em **todos os** ou **C#** na lista de idiomas e depois clique em **depurador**.  
   
 -   O Visual Studio depurar mecanismo de exemplo, linguagens nativas, está disponível na Galeria de códigos do MSDN. Para obter mais informações, confira esta página no site da Microsoft: [Exemplo de mecanismo de depuração do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).

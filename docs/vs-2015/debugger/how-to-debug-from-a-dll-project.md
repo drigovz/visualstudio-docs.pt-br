@@ -30,7 +30,7 @@ ms.locfileid: "58926878"
 # <a name="how-to-debug-from-a-dll-project"></a>Como: Depurar de um projeto DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para iniciar a depuração de um projeto DLL, você deve especificar o aplicativo de chamada nas propriedades do projeto. As páginas de propriedades do C++ diferem no layout e conteúdo a partir do c# e Visual Basic páginas de propriedades.  
+Para iniciar a depuração de um projeto DLL, você deve especificar o aplicativo de chamada nas propriedades do projeto. As páginas de propriedades do C++ diferem no layout e conteúdo a partir do C# e Visual Basic páginas de propriedades.  
   
  Se uma DLL gerenciada for chamada por código nativo e você quiser depurar os dois, você pode especificar isso nas propriedades do projeto. Para obter mais informações, confira [Como: Depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).  
   

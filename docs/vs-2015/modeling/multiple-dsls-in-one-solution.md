@@ -27,7 +27,7 @@ ms.locfileid: "58923011"
   
 1. Crie duas ou mais soluções DSL e um projeto VSIX e adicione todos os projetos a uma única solução.  
   
-   -   Para criar um novo projeto VSIX: No **novo projeto** caixa de diálogo, selecione **Visual c#**, **extensibilidade**, **projeto VSIX**.  
+   -   Para criar um novo projeto VSIX: No **novo projeto** caixa de diálogo, selecione **Visual C#**, **extensibilidade**, **projeto VSIX**.  
   
    -   Crie duas ou mais soluções DSL no diretório da solução VSIX.  
   

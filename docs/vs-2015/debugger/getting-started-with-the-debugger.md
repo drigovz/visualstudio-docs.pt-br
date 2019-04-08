@@ -24,10 +24,10 @@ ms.locfileid: "58923521"
 # <a name="getting-started-with-the-debugger"></a>Introdução ao depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O depurador do Visual Studio é fácil de usar em qualquer idioma. Aqui, mostraremos como depurar um programa c# simples, mas você pode aplicar as mesmas etapas para o código em outras linguagens como C++ e JavaScript.  
+O depurador do Visual Studio é fácil de usar em qualquer idioma. Aqui, mostraremos como depurar um programa C# simples, mas você pode aplicar as mesmas etapas para o código em outras linguagens como C++ e JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Depurar um projeto c# básico  
- Vamos começar com um simple aplicativo de console em c# (**arquivo / novo / projeto**, em seguida, selecione **Visual c#** e, em seguida, selecione **aplicativo de Console**). Se você nunca trabalhou com o Visual Studio antes, consulte [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). O **Main** método apenas adiciona 1 a uma variável de inteiro 10 vezes e imprime o resultado no console:  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Depurar um projeto C# básico  
+ Vamos começar com um simple aplicativo de console em C# (**arquivo / novo / projeto**, em seguida, selecione **Visual C#** e, em seguida, selecione **aplicativo de Console**). Se você nunca trabalhou com o Visual Studio antes, consulte [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). O **Main** método apenas adiciona 1 a uma variável de inteiro 10 vezes e imprime o resultado no console:  
   
 ```csharp  
 static void Main(string[] args)  

@@ -85,7 +85,7 @@ Você pode migrar um serviço de linguagem herdado para uma versão posterior do
   
 10. Você deve adicionar um arquivo vsixmanifest.  
   
-    -   Copie esse arquivo de uma extensão existente no diretório do projeto. (Uma maneira de obter esse arquivo é criar um projeto do VSIX (sob **arquivo**, clique em **New**, em seguida, clique em **projeto**. Clique em Visual Basic ou c# **extensibilidade**, em seguida, selecione **projeto VSIX**.)  
+    -   Copie esse arquivo de uma extensão existente no diretório do projeto. (Uma maneira de obter esse arquivo é criar um projeto do VSIX (sob **arquivo**, clique em **New**, em seguida, clique em **projeto**. Clique em Visual Basic ou C# **extensibilidade**, em seguida, selecione **projeto VSIX**.)  
   
     -   Adicione o arquivo ao seu projeto.  
   

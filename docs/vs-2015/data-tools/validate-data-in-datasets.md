@@ -113,7 +113,7 @@ Validação de dados é o processo de confirmar que os valores que estão sendo 
   
      [!code-vb[VbRaddataValidating#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb#3)]  
   
-#### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar dados quando uma linha for alterada (c#)  
+#### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar dados quando uma linha for alterada (C#)  
   
 1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   

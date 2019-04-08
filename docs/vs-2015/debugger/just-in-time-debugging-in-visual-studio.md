@@ -125,9 +125,9 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
 
  Quando você instala o Visual Studio, a depuração Just-In-Time é habilitada por padrão.
 
- Para os fins desta seção, criaremos um aplicativo de console c# no Visual Studio gera um <xref:System.NullReferenceException>.
+ Para os fins desta seção, criaremos um aplicativo de console C# no Visual Studio gera um <xref:System.NullReferenceException>.
 
- No Visual Studio, crie um aplicativo de console c# (**arquivo / novo / projeto / Visual c# / aplicativo de Console**) denominada **ThrowsNullException**. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+ No Visual Studio, crie um aplicativo de console C# (**arquivo / novo / projeto / Visual C# / aplicativo de Console**) denominada **ThrowsNullException**. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 
  Quando o projeto é aberto no Visual Studio, abra o arquivo Program.cs. Substitua o método Main () com o código a seguir, que imprime uma linha para o console e, em seguida, lança uma NullReferenceException:
 
@@ -144,7 +144,7 @@ static void Main(string[] args)
 
  Compile a solução (no Visual Studio, escolha **construir / recompilar solução**). Você pode escolher a depuração ou a configuração de versão. Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).
 
- O processo de compilação cria um executável ThrowsNullException.exe. Você pode encontrá-lo na pasta em que você criou o projeto do c#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** ou **...\ThrowsNullException\ThrowsNullException\bin\Release**.
+ O processo de compilação cria um executável ThrowsNullException.exe. Você pode encontrá-lo na pasta em que você criou o projeto do C#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** ou **...\ThrowsNullException\ThrowsNullException\bin\Release**.
 
  Clique duas vezes o ThrowsNullException.exe. Você deverá ver uma janela de comando como este:
 

@@ -58,7 +58,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
    1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
   
-   2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, na coluna do meio, escolha **biblioteca de classes**.  
+   2.  Sob **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, na coluna do meio, escolha **biblioteca de classes**.  
   
 2. Adicione as seguintes referências ao seu projeto.  
   
@@ -210,7 +210,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
     1.  Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
   
-    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
+    2.  Sob **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
   
 3.  Defina o projeto VSIX como o projeto de inicialização da solução.  
   

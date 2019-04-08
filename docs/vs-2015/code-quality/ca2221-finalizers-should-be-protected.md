@@ -36,7 +36,7 @@ ms.locfileid: "58925676"
  Um tipo público implementa um finalizador que não especificam o acesso da família (protegido).
 
 ## <a name="rule-description"></a>Descrição da Regra
- Os finalizadores deve usar o modificador de acesso da família. Essa regra é imposta pelos compiladores c#, Visual Basic e Visual C++.
+ Os finalizadores deve usar o modificador de acesso da família. Essa regra é imposta pelos compiladores C#, Visual Basic e Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, altere o finalizador para ser acessível de família.

@@ -63,7 +63,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
      Você precisa determinar se o seu aplicativo contém um manifesto com informações de controle de conta de usuário (UAC), como um `<dependentAssembly>` elemento. Para examinar um manifesto de aplicativo, você pode usar o Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) utilitário.  
   
-     Se seu aplicativo contém um manifesto com detalhes do UAC, você deve criá-la novamente sem as informações de UAC. Para um projeto c# no Visual Studio, abra as propriedades do projeto e selecione a guia do aplicativo. No **manifesto** lista suspensa, selecione **criar aplicativo sem um manifesto**. Para um projeto do Visual Basic no Visual Studio, abra as propriedades do projeto, selecione a guia aplicativo e clique em **exibir configurações de UAC**. No arquivo de manifesto aberto, remover todos os elementos dentro do único `<asmv1:assembly>` elemento.  
+     Se seu aplicativo contém um manifesto com detalhes do UAC, você deve criá-la novamente sem as informações de UAC. Para um projeto C# no Visual Studio, abra as propriedades do projeto e selecione a guia do aplicativo. No **manifesto** lista suspensa, selecione **criar aplicativo sem um manifesto**. Para um projeto do Visual Basic no Visual Studio, abra as propriedades do projeto, selecione a guia aplicativo e clique em **exibir configurações de UAC**. No arquivo de manifesto aberto, remover todos os elementos dentro do único `<asmv1:assembly>` elemento.  
   
 -   Determine se o aplicativo requer os pré-requisitos no computador cliente.  
   

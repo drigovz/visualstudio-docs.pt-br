@@ -1,5 +1,5 @@
 ---
-title: Pré-selecionada em itens de lista de conclusão em c# | Microsoft Docs
+title: Pré-selecionada em itens de lista de conclusão em C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -20,4 +20,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58923700"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>Itens da lista de conclusão pré-selecionada no C# #
-Este conteúdo foi movido para [listas de conclusão no c#](../misc/completion-lists-in-csharp.md)
+Este conteúdo foi movido para [listas de conclusão no C#](../misc/completion-lists-in-csharp.md)

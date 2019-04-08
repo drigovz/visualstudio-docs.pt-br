@@ -25,7 +25,7 @@ Se você não pode criar uma página inicial personalizada usando o modelo de pr
   
 #### <a name="to-create-a-blank-start-page"></a>Para criar uma página em branco do início  
   
-1.  Criar um novo projeto do tipo **aplicativo WPF** (**Visual c# / área de trabalho do Windows**.  
+1.  Criar um novo projeto do tipo **aplicativo WPF** (**Visual C# / área de trabalho do Windows**.  
   
 2.  Adicione uma referência ao `Microsoft.VisualStudio.Shell.14.0`.  
   

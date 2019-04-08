@@ -226,7 +226,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
   
     Se você tiver arquivos sem código que precisam ser usados pelo aplicativo, você precisará incluí-los no projeto do Visual Studio. Crie uma pasta de projeto para os arquivos adicionais (na **Gerenciador de soluções**, clique em **adicionar / nova pasta**.) Em seguida, adicione os arquivos na pasta (na **Gerenciador de soluções**, clique em **adicionar / existente Item**, em seguida, selecione os arquivos.). Sobre o **propriedades** para cada arquivo, defina **Copy to Output Directory** para **copiar sempre**.  
   
-## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Depuração remota de um projeto Visual c# ou Visual Basic  
+## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Depuração remota de um projeto Visual C# ou Visual Basic  
  O depurador não é possível implantar aplicativos de desktop em Visual C# ou Visual Basic para um computador remoto, mas você ainda pode depurá-los remotamente da seguinte maneira. O procedimento a seguir pressupõe que você deseja para depurá-lo em um computador denominado **MJO DL**, conforme mostrado na ilustração anterior.
   
 1. Crie um projeto WPF chamado **MyWpf**.  

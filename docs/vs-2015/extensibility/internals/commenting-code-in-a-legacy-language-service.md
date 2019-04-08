@@ -32,7 +32,7 @@ Linguagens de programação normalmente fornecem um meio de anotações ou comen
   
 2. Comentários do bloco, em que o comentário pode incluir várias linhas.  
   
-   Comentários de linha geralmente têm um caractere (ou caracteres iniciais), enquanto os comentários do bloco têm caracteres iniciais e finais. Por exemplo, no c#, um comentário de linha começa com / /, e um comentário de bloco começa com / * e termina com \*/.  
+   Comentários de linha geralmente têm um caractere (ou caracteres iniciais), enquanto os comentários do bloco têm caracteres iniciais e finais. Por exemplo, no C#, um comentário de linha começa com / /, e um comentário de bloco começa com / * e termina com \*/.  
   
    Quando o usuário seleciona o comando **seleção de comentário** da **editar** -> **avançado** menu, o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe. Quando o usuário seleciona o comando **seleção Descomente**, o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> método.  
   

@@ -89,7 +89,7 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
     > [!TIP]
     >  Isso pode reduzir a velocidade de seu aplicativo e aumentar o tamanho de qualquer arquivo de log do IntelliTrace (arquivos. itrace) que você está salvando em disco. Para obter a maioria dos dados de chamada, mas minimizar os efeitos, registrar dados somente dos módulos que lhe interessam. Para alterar o tamanho máximo dos seus arquivos. itrace, vá para **Ferramentas / opções / IntelliTrace / avançados**e especifique a quantidade máxima de espaço em disco. O padrão é 250 MB.  
   
-2.  Inicie a depuração do aplicativo de console c# criado na seção anterior. Interrompe a execução no ponto de interrupção. Se você não vir as **ferramentas de diagnóstico** janela, clique em **depurar / Windows / eventos do IntelliTrace**.  
+2.  Inicie a depuração do aplicativo de console C# criado na seção anterior. Interrompe a execução no ponto de interrupção. Se você não vir as **ferramentas de diagnóstico** janela, clique em **depurar / Windows / eventos do IntelliTrace**.  
   
 3.  Alterne para o **chamadas** guia.  
   

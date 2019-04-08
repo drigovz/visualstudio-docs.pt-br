@@ -67,7 +67,7 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 ### <a name="registering-file-filters"></a>Filtros de arquivo do registro  
  Opcionalmente, você pode registrar os filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa quando ele solicita para nomes de arquivo. Por exemplo, o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar para o **abrir arquivo** caixa de diálogo é:  
   
- **Arquivos Visual c# (\*. cs,\*. resx,\*Settings,\*. xsd,\*. WSDL);\*. CS,\*. resx,\*Settings,\*. xsd,\*. WSDL)**  
+ **Arquivos Visual C# (\*. cs,\*. resx,\*Settings,\*. xsd,\*. WSDL);\*. CS,\*. resx,\*Settings,\*. xsd,\*. WSDL)**  
   
  Para dar suporte a registro de vários filtros, cada filtro é registrado em sua própria subchave sob HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versão*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*subchave*>. O nome da subchave é arbitrário; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignora o nome da subchave e usa apenas seus valores.  
   

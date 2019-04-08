@@ -31,14 +31,14 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
  O <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> métodos de interface são chamados em vários momentos enquanto o projeto está sendo criado, iniciando assim que um usuário clica **Okey** sobre o **novo projeto** caixa de diálogo. Cada método da interface é denominado para descrever o ponto no qual ele é chamado. Por exemplo, o Visual Studio chama <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> imediatamente no início da criação do projeto, tornando-um bom local para escrever código personalizado para coletar entrada do usuário.  
   
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Criando um projeto de modelo de projeto com um projeto VSIX  
- Começar a criar um modelo personalizado com o modelo de projeto project., que faz parte do SDK do Visual Studio. Neste procedimento, usaremos um projeto de modelo de projeto c#, mas também há um projeto de modelo de projeto do Visual Basic. Em seguida, você adicionar um projeto VSIX para a solução que contém o projeto de modelo de projeto.  
+ Começar a criar um modelo personalizado com o modelo de projeto project., que faz parte do SDK do Visual Studio. Neste procedimento, usaremos um projeto de modelo de projeto C#, mas também há um projeto de modelo de projeto do Visual Basic. Em seguida, você adicionar um projeto VSIX para a solução que contém o projeto de modelo de projeto.  
   
-1.  Criar um projeto de modelo de projeto c# (no Visual Studio, **arquivo / novo / projeto / Visual c# / extensibilidade / modelo de projeto c#**). Denomine **MyProjectTemplate**.  
+1.  Criar um projeto de modelo de projeto C# (no Visual Studio, **arquivo / novo / projeto / Visual C# / extensibilidade / modelo de projeto C#**). Denomine **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Você pode ser solicitado a instalar o SDK do Visual Studio. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Adicionar um novo projeto VSIX (**arquivo / novo / projeto / Visual c# / extensibilidade / projeto VSIX**) na mesma solução que o projeto de modelo de projeto (na **Gerenciador de soluções**, selecione o nó da solução Clique com botão direito e selecione **adicionar / novo projeto**). Nomeie- **MyProjectWizard.**  
+2.  Adicionar um novo projeto VSIX (**arquivo / novo / projeto / Visual C# / extensibilidade / projeto VSIX**) na mesma solução que o projeto de modelo de projeto (na **Gerenciador de soluções**, selecione o nó da solução Clique com botão direito e selecione **adicionar / novo projeto**). Nomeie- **MyProjectWizard.**  
   
 3.  Defina o projeto VSIX como o projeto de inicialização. No **Gerenciador de soluções**, selecione o nó da solução, clique com botão direito e selecione **definir como projeto de inicialização**.  
   
@@ -50,7 +50,7 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
   
 7.  Compile a solução e inicie a depuração. Uma segunda instância do Visual Studio é exibida. (Isso pode levar alguns minutos.)  
   
-8.  Na segunda instância do Visual Studio, tente criar um novo projeto com o novo modelo. (**Arquivo / novo / projeto / Visual c# / modelo MyProject**). O novo projeto deve aparecer com uma classe chamada **Class1**. Agora você criou um modelo de projeto personalizado! Pare a depuração agora.  
+8.  Na segunda instância do Visual Studio, tente criar um novo projeto com o novo modelo. (**Arquivo / novo / projeto / Visual C# / modelo MyProject**). O novo projeto deve aparecer com uma classe chamada **Class1**. Agora você criou um modelo de projeto personalizado! Pare a depuração agora.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Criando um Assistente de modelo personalizado  
  Este tópico mostra como criar um assistente personalizado que abre um formulário do Windows antes do projeto é criado. O formulário permite que os usuários adicionem um valor de parâmetro personalizado que é adicionado ao código-fonte durante a criação do projeto.  
@@ -294,7 +294,7 @@ namespace $safeprojectname$
   
 1.  Recompile a solução e iniciar a depuração. Uma segunda instância do Visual Studio deve ser exibida.  
   
-2.  Crie um novo projeto de MyProjectTemplate. (**Arquivo / novo / projeto / Visual c# / MyProjectTemplate**)  
+2.  Crie um novo projeto de MyProjectTemplate. (**Arquivo / novo / projeto / Visual C# / MyProjectTemplate**)  
   
 3.  No **novo projeto** caixa de diálogo, localize seu modelo, digite um nome e clique em **Okey**.  
   

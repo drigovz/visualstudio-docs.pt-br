@@ -48,11 +48,11 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 ##  <a name="BKMK_CreateTheApplication"></a> Criar o aplicativo de exemplo
  Depuração é sobre código, portanto, o aplicativo de exemplo usa a estrutura do aplicativo Windows Store apenas para criar um arquivo de origem no qual você pode ver como funciona a navegar de uma sessão de depuração e como examinar e alterar o estado do programa. Todo o código que você vai invocar é chamado do construtor da página principal; Nenhum controle é adicionado e nenhum evento é tratado.
 
- **Crie um aplicativo da Windows Store de c# padrão.** Abra o Visual Studio. Na home page, escolha o **novo projeto** link. Na caixa de diálogo Novo projeto, escolha **Visual c#** na **instalado** lista e, em seguida, escolha **Windows Store**. Na lista de modelos de projeto, escolha **aplicativo**. Visual Studio cria uma nova solução e projeto e exibe o designer de MainPage. XAML e o editor de código XAML.
+ **Crie um aplicativo da Windows Store de C# padrão.** Abra o Visual Studio. Na home page, escolha o **novo projeto** link. Na caixa de diálogo Novo projeto, escolha **Visual C#** na **instalado** lista e, em seguida, escolha **Windows Store**. Na lista de modelos de projeto, escolha **aplicativo**. Visual Studio cria uma nova solução e projeto e exibe o designer de MainPage. XAML e o editor de código XAML.
 
  **Abra o arquivo MainPage.xaml.cs.** Clique com botão direito em qualquer lugar no editor XAML e escolha **Exibir código**. O arquivo de code-behind MainPage.xaml.cs é exibido. Observe que apenas um método, o `MainPage()` construtor, está listado no arquivo.
 
- **Substitua o construtor MainPage com o código de exemplo.** Exclua o método MainPage(). Siga este link: [Código de exemplo de navegação (Xaml e c#) do depurador](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)e, em seguida, copie o código listado na seção c# para a área de transferência. (Escolha **volta** no navegador ou Visualizador da Ajuda para retornar a esta página de início rápido.) No editor do Visual Studio, cole o código no `partial class MainPage` bloco. Escolha CTRL + s para salvar o arquivo.
+ **Substitua o construtor MainPage com o código de exemplo.** Exclua o método MainPage(). Siga este link: [Código de exemplo de navegação (Xaml e C#) do depurador](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)e, em seguida, copie o código listado na seção C# para a área de transferência. (Escolha **volta** no navegador ou Visualizador da Ajuda para retornar a esta página de início rápido.) No editor do Visual Studio, cole o código no `partial class MainPage` bloco. Escolha CTRL + s para salvar o arquivo.
 
  {1&gt;Agora você pode acompanhar os exemplos neste tópico.&lt;1}
 

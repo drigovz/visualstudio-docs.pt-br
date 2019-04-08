@@ -27,7 +27,7 @@ ms.locfileid: "58999944"
 # <a name="code-generation-and-t4-text-templates"></a>Geração de código e modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], um *modelo de texto T4* é uma mistura de blocos de texto e a lógica de controle que pode gerar um arquivo de texto. A lógica de controle é escrita como fragmentos de código de programa na [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. No Visual Studio 2015 atualização 2 e posterior, você pode usar os recursos de versão 6.0 do c# nas diretivas de modelos T4. O arquivo gerado pode ser texto de qualquer tipo, como uma página da Web, um arquivo de recurso ou código de origem do programa em qualquer idioma.  
+Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], um *modelo de texto T4* é uma mistura de blocos de texto e a lógica de controle que pode gerar um arquivo de texto. A lógica de controle é escrita como fragmentos de código de programa na [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. No Visual Studio 2015 atualização 2 e posterior, você pode usar os recursos de versão 6.0 do C# nas diretivas de modelos T4. O arquivo gerado pode ser texto de qualquer tipo, como uma página da Web, um arquivo de recurso ou código de origem do programa em qualquer idioma.  
   
  Há dois tipos de modelos de texto T4:  
   

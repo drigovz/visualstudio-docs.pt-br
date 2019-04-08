@@ -39,7 +39,7 @@ Você pode personalizar uma exibição de texto por meio da modificação de qua
   
 ## <a name="creating-a-mef-project"></a>Criando um projeto MEF  
   
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `ViewPropertyTest`.  
+1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual C# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `ViewPropertyTest`.  
   
 2.  Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

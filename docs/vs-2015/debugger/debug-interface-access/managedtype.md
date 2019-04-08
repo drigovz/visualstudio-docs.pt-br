@@ -25,7 +25,7 @@ ms.locfileid: "58928985"
 # <a name="managedtype"></a>ManagedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Um tipo gerenciado (qualquer símbolo definido por metadados, ou do modo nativo para a funcionalidade de gerenciamento de memória e recursos de linguagens como c#) é identificado por um `SymTagManagedType` símbolo.  
+Um tipo gerenciado (qualquer símbolo definido por metadados, ou do modo nativo para a funcionalidade de gerenciamento de memória e recursos de linguagens como C#) é identificado por um `SymTagManagedType` símbolo.  
   
 ## <a name="properties"></a>Propriedades  
  A tabela a seguir mostra as propriedades adicionais de válido para esse tipo de símbolo.  

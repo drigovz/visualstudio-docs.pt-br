@@ -78,7 +78,7 @@ Diagramas de modelagem ajudarão-lo a entender, esclarecer e comunicar ideias so
 |[Criar projetos e diagramas de modelagem UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Criar modelos** e adicionar diagramas.|  
 |[Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)|**Desenhar diagramas** para editar o modelo.|  
 |[Definir pacotes e namespaces](../modeling/define-packages-and-namespaces.md)|**Criar pacotes** para dividir um modelo em unidades diferentes membros da equipe podem trabalhar em.|  
-|[Gerar código por meio de diagramas de classe UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Gerar o código c# de diagramas de classe** para iniciar sua implementação.|  
+|[Gerar código por meio de diagramas de classe UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Gerar o código C# de diagramas de classe** para iniciar sua implementação.|  
 |[Personalizar o modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personalizar elementos de modelo** usando estereótipos, para estender os elementos de modelo UML padrão para fins específicos.|  
 |[Vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md)|**Criar links entre elementos de modelo e itens de trabalho** para ajudar você a acompanhar tarefas, casos de teste, bugs, requisitos, problemas ou outros tipos de trabalho que estão associados a partes específicas do seu modelo.|  
 |[Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md)|**Salvar o modelo e os diagramas** para que você pode compartilhá-los com outros usuários, incluindo aqueles que não use [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|  

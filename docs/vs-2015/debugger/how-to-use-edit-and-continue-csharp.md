@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar Editar e continuar (c#) | Microsoft Docs'
+title: 'Como: Usar Editar e continuar (C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -39,7 +39,7 @@ Com a função Editar e Continuar no C#, é possível fazer alterações em seu 
   
 2.  Dos **Debug** menu, clique em **continuar**, **etapa**, ou **definir próxima instrução** ou avaliar uma função em uma janela do depurador.  
   
-     O novo código é compilado e a depuração continua com o novo código. Algumas alterações não têm suporte para a função Editar e Continuar. Para obter mais informações, consulte [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md).  
+     O novo código é compilado e a depuração continua com o novo código. Algumas alterações não têm suporte para a função Editar e Continuar. Para obter mais informações, consulte [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Para habilitar/desabilitar a função Editar e Continuar  
   
@@ -53,5 +53,5 @@ Com a função Editar e Continuar no C#, é possível fazer alterações em seu 
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Alterações de código suportadas (c#)](../debugger/supported-code-changes-csharp.md)   
+ [Alterações de código suportadas (C#)](../debugger/supported-code-changes-csharp.md)   
  [Erros e avisos de Editar e Continuar (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)

@@ -23,7 +23,7 @@ ms.locfileid: "58928430"
 
 Correspondência de chaves ajuda o desenvolvedor a acompanhar os elementos de linguagem que precisam ocorrer em conjunto, como parênteses e as chaves. Quando um desenvolvedor entra em uma chave de fechamento, a chave de abertura é realçada.  
   
- Você pode combinar duas ou três elementos com ocorrência concomitante, chamados de pares e triplos. Triplos são conjuntos de três elementos com ocorrência concomitante. Por exemplo, no c#, o `foreach` um triplo de formulários de instrução: "`foreach()`","`{`", e "`}`". Todos os três elementos são realçados quando a chave de fechamento é digitada.  
+ Você pode combinar duas ou três elementos com ocorrência concomitante, chamados de pares e triplos. Triplos são conjuntos de três elementos com ocorrência concomitante. Por exemplo, no C#, o `foreach` um triplo de formulários de instrução: "`foreach()`","`{`", e "`}`". Todos os três elementos são realçados quando a chave de fechamento é digitada.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar correspondência de chaves, consulte [passo a passo: Exibindo chaves correspondentes](../../extensibility/walkthrough-displaying-matching-braces.md).  
   

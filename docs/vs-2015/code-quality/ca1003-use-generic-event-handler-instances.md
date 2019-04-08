@@ -45,7 +45,7 @@ ms.locfileid: "58927816"
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um delegado que viola a regra. No [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] exemplo, comentários a seguir descrevem como modificar o exemplo para satisfazer a regra. Para obter o exemplo de c#, segue um exemplo que mostra o código modificado.
+ O exemplo a seguir mostra um delegado que viola a regra. No [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] exemplo, comentários a seguir descrevem como modificar o exemplo para satisfazer a regra. Para obter o exemplo de C#, segue um exemplo que mostra o código modificado.
 
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/cs/FxCop.Design.CustomEventHandler.cs#1)]
  [!code-vb[FxCop.Design.CustomEventHandler#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/vb/FxCop.Design.CustomEventHandler.vb#1)]

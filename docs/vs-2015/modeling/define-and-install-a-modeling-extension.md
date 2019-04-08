@@ -44,7 +44,7 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
   
 1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
   
-2.  Sob **modelos instalados**, selecione **Visual c#** ou **Visual Basic**, em seguida, escolha **biblioteca de classes**.  
+2.  Sob **modelos instalados**, selecione **Visual C#** ou **Visual Basic**, em seguida, escolha **biblioteca de classes**.  
   
 #### <a name="to-create-a-vsix-project"></a>Para criar um projeto do VSIX  
   
@@ -54,7 +54,7 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
   
     1.  Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
   
-    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
+    2.  Sob **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
   
 3.  Defina o projeto VSIX como o projeto de inicialização da solução.  
   

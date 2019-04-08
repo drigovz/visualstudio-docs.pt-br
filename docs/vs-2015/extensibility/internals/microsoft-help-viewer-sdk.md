@@ -63,7 +63,7 @@ Este artigo contém as seguintes tarefas para integradores do Visual Studio Help
 
 - javascript
 
-- CSharp ou c#
+- CSharp ou C#
 
 - cplusplus ou visualc + + ou c + +
 

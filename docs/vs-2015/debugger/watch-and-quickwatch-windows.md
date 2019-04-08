@@ -156,10 +156,10 @@ var1 = var2
   
  Uma maneira de evitar todos os efeitos colaterais é desativar a avaliação automática de função (**Ferramentas / opções / depuração / habilitar a avaliação de propriedade e outras chamadas de função implícitas**).  
   
- Quando a avaliação de propriedades ou chamadas de função implícitas é desativada, você pode forçar a avaliação usando o **ac** modificador de formato (apenas para c#). Ver [especificadores em c# de formato](../debugger/format-specifiers-in-csharp.md).  
+ Quando a avaliação de propriedades ou chamadas de função implícitas é desativada, você pode forçar a avaliação usando o **ac** modificador de formato (apenas para C#). Ver [especificadores em C# de formato](../debugger/format-specifiers-in-csharp.md).  
   
-## <a name="using-object-ids-in-the-watch-window-c-and-visual-basic"></a>Usando IDs de objeto na janela de inspeção (c# e Visual Basic)  
- Há vezes quando você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira controlar um objeto referenciado por uma variável local depois que essa variável tiver saído do escopo. Em c# e Visual Basic, você pode criar IDs para instâncias específicas de tipos de referência de objeto e usá-los na janela de inspeção e em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  
+## <a name="using-object-ids-in-the-watch-window-c-and-visual-basic"></a>Usando IDs de objeto na janela de inspeção (C# e Visual Basic)  
+ Há vezes quando você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira controlar um objeto referenciado por uma variável local depois que essa variável tiver saído do escopo. Em C# e Visual Basic, você pode criar IDs para instâncias específicas de tipos de referência de objeto e usá-los na janela de inspeção e em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  
   
 > [!NOTE]
 >  IDs de objeto criem referências fracas e não impedem que o objeto que está sendo coletado como lixo. Eles só são válidos para a sessão de depuração atual.  
@@ -227,7 +227,7 @@ public class Program
   
  Se o botão direito do mouse qualquer filho de um **modo de exibição dinâmico** e escolha **Adicionar inspeção**, o depurador vai inserir uma nova variável de inspeção que converte um objeto em um objeto dinâmico. Em outras palavras, **nome do objeto** torna-se (**objeto (dinâmico)). Nome**.  
   
- Avaliar os membros de um **modo de exibição dinâmico** pode ter efeitos colaterais. Para obter uma explicação dos quais são os efeitos colaterais, consulte [efeitos colaterais e expressões](#bkmk_sideEffects). Para c#, o depurador não reavalia automaticamente os valores mostrados na **modo de exibição dinâmico** quando você depura em uma nova linha de código. Para o Visual Basic, as expressões adicionadas por meio de **modo de exibição dinâmico** são atualizados automaticamente.  
+ Avaliar os membros de um **modo de exibição dinâmico** pode ter efeitos colaterais. Para obter uma explicação dos quais são os efeitos colaterais, consulte [efeitos colaterais e expressões](#bkmk_sideEffects). Para C#, o depurador não reavalia automaticamente os valores mostrados na **modo de exibição dinâmico** quando você depura em uma nova linha de código. Para o Visual Basic, as expressões adicionadas por meio de **modo de exibição dinâmico** são atualizados automaticamente.  
   
  Para obter instruções sobre como atualizar os valores do modo de exibição dinâmico, consulte [valores de inspeção de atualização que estão desatualizados](#bkmk_refreshWatch).  
   

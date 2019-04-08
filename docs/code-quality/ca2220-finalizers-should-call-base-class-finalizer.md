@@ -36,7 +36,7 @@ Um tipo que substitui <xref:System.Object.Finalize%2A?displayProperty=fullName> 
 
 ## <a name="rule-description"></a>Descrição da regra
 
-A finalização deve ser propagada em toda a hierarquia de herança. Para garantir isso, os tipos devem chamar sua classe base <xref:System.Object.Finalize%2A> método de dentro de seus próprios <xref:System.Object.Finalize%2A> método. O compilador c# adiciona a chamada para o finalizador da classe base automaticamente.
+A finalização deve ser propagada em toda a hierarquia de herança. Para garantir isso, os tipos devem chamar sua classe base <xref:System.Object.Finalize%2A> método de dentro de seus próprios <xref:System.Object.Finalize%2A> método. O compilador C# adiciona a chamada para o finalizador da classe base automaticamente.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

@@ -45,7 +45,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
   
  [Configurando o projeto do Visual Studio para depuração remota](#BKMK_ConnectVS)  
   
-- [Escolhendo o dispositivo remoto para projetos c# e Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [Escolhendo o dispositivo remoto para projetos C# e Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
 - [Escolhendo o dispositivo remoto para projetos em JavaScript e C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
@@ -143,7 +143,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
 > [!TIP]
 >  Se você tiver problemas para se conectar a um dispositivo remoto, tente inserir o endereço IP do dispositivo. Para determinar o endereço IP de um dispositivo, abra uma janela de comando e digite **ipconfig**. O endereço IP é listado como **endereço IPv4**.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Escolhendo o dispositivo remoto para projetos c# e Visual Basic  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Escolhendo o dispositivo remoto para projetos C# e Visual Basic  
  ![Gerenciado propriedades do projeto para depuração remota](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
   
 1.  Selecione o nome do projeto no Gerenciador de soluções e escolha **propriedades** no menu de atalho.  

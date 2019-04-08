@@ -41,9 +41,9 @@ O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **depurar /
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>Quais variáveis são exibidos na janela Autos?  
- Você pode usar o **automóveis** janela no código c#, Visual Basic e C++. O **automóveis** não tem suporte para JavaScript ou F#.  
+ Você pode usar o **automóveis** janela no código C#, Visual Basic e C++. O **automóveis** não tem suporte para JavaScript ou F#.  
   
- Em c# e Visual Basic, o **automóveis** janela exibirá qualquer variável usada na linha atual ou anterior. Por exemplo, se você declara quatro variáveis e defini-los da seguinte maneira:  
+ Em C# e Visual Basic, o **automóveis** janela exibirá qualquer variável usada na linha atual ou anterior. Por exemplo, se você declara quatro variáveis e defini-los da seguinte maneira:  
   
 ```csharp  
 public static void Main()  
@@ -87,7 +87,7 @@ void main() {
 ##  <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método  
  No código .NET e C++, você pode examinar valores de retorno ao passar sobre ou fora de uma chamada de método. Essa funcionalidade é útil quando o resultado de uma chamada de método não é armazenado em uma variável local, por exemplo, quando um método é usado como um parâmetro ou como um valor de retorno de outro método.  
   
- O código c# a seguir adiciona os valores de retorno das duas funções:  
+ O código C# a seguir adiciona os valores de retorno das duas funções:  
   
 ```csharp  
 static void Main(string[] args)  

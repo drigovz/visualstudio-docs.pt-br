@@ -78,7 +78,7 @@ Você pode usar as extensões do editor para adicionar recursos de serviço de l
  Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Usando modelos para criar extensões de Editor  
- Você pode usar o editor de modelos para criar extensões MEF que personalizam classificadores, adornos e margens. Há modelos para projetos c# e Visual Basic. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+ Você pode usar o editor de modelos para criar extensões MEF que personalizam classificadores, adornos e margens. Há modelos para projetos C# e Visual Basic. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
  Você também pode usar o modelo de projeto de VSIX para criar extensões. Esse modelo fornece apenas os elementos que são necessárias para implantar qualquer tipo de extensão e incluir o arquivo vsixmanifest, as referências de assembly necessárias e um arquivo de projeto que inclui as tarefas de compilação que permitem que você implantar o extensão. Para obter mais informações, consulte [modelo de projeto do VSIX](../extensibility/vsix-project-template.md).  
   

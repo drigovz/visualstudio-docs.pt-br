@@ -16,7 +16,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
 ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/19/2019
 ms.locfileid: "57983488"
@@ -86,7 +86,7 @@ Todos os acesso de dados do .NET, incluindo no .NET Core baseia-se no ADO.NET, u
 
 Para obter a documentação de acesso a dados relacionada ao ASP.NET, consulte [trabalhando com dados](https://www.asp.net/web-forms/overview/presenting-and-managing-data) no site do ASP.NET. Para obter um tutorial sobre como usar o Entity Framework com o ASP.NET MVC, consulte [Introdução ao Entity Framework 6 Code First usando MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Aplicativos universais do Windows Platform (UWP) em c# ou Visual Basic podem usar o SDK do Microsoft Azure para .NET para acessar o armazenamento do Azure e outros serviços do Azure. A classe Windows.Web.HttpClient permite a comunicação com qualquer serviço RESTful. Para obter mais informações, consulte [como se conectar a um servidor HTTP usando o Windows](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Aplicativos universais do Windows Platform (UWP) em C# ou Visual Basic podem usar o SDK do Microsoft Azure para .NET para acessar o armazenamento do Azure e outros serviços do Azure. A classe Windows.Web.HttpClient permite a comunicação com qualquer serviço RESTful. Para obter mais informações, consulte [como se conectar a um servidor HTTP usando o Windows](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
 Para o armazenamento de dados no computador local, a abordagem recomendada é usar o SQLite, que é executado no mesmo processo que o aplicativo. Se uma camada de mapeamento relacional de objeto (ORM) for necessária, você pode usar o Entity Framework. Para obter mais informações, consulte [acesso a dados](/windows/uwp/data-access/index) no Centro de desenvolvedores do Windows.
 
@@ -150,7 +150,7 @@ Instale [suporte do Python no Visual Studio](../python/overview-of-python-tools-
 
 [Dados em soluções do Office](../vsto/data-in-office-solutions.md)&mdash;contém links para tópicos que explicam como dados funcionam em soluções do Office. Isso inclui informações sobre programação orientada a esquema, caching de dados e acesso a dados do lado do servidor.
 
-[LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/)&mdash;descreve os recursos de consulta incorporados no c# e Visual Basic e o modelo comum para consultar bancos de dados relacionais, documentos XML, conjuntos de dados e coleções na memória.
+[LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/)&mdash;descreve os recursos de consulta incorporados no C# e Visual Basic e o modelo comum para consultar bancos de dados relacionais, documentos XML, conjuntos de dados e coleções na memória.
 
 [Ferramentas XML no Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;aborda o trabalho com recursos de XML do .NET Framework de dados, depuração XSLT, XML e a arquitetura de consulta XML.
 

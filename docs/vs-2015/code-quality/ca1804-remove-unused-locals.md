@@ -39,7 +39,7 @@ ms.locfileid: "58925275"
  As variáveis locais não utilizadas e as atribuições desnecessárias aumentam o tamanho de um assembly e diminuem o desempenho.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, remova ou use a variável local. Observe que o compilador do c# que está incluído nas [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] remove as variáveis locais não utilizados quando a `optimize` opção está habilitada.
+ Para corrigir uma violação dessa regra, remova ou use a variável local. Observe que o compilador do C# que está incluído nas [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] remove as variáveis locais não utilizados quando a `optimize` opção está habilitada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Suprima um aviso nessa regra se a variável tiver sido emitido de compilador. Também é seguro para suprimir um aviso nessa regra, ou para desabilitar a regra, se o desempenho e manutenção de código não são principais preocupações.

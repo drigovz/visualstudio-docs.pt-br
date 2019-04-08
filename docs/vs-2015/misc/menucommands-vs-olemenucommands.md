@@ -27,7 +27,7 @@ Você pode criar comandos de menu, derivando de <xref:System.ComponentModel.Desi
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="template-locations-for-the-visual-studio-package-template"></a>Locais de modelo para o modelo de pacote do Visual Studio  
- Você pode encontrar o modelo de pacote do Visual Studio na **novo projeto** diálogo sob **Visual Basic / extensibilidade**, **c# / extensibilidade**, ou **outros Tipos de projeto / extensibilidade**.  
+ Você pode encontrar o modelo de pacote do Visual Studio na **novo projeto** diálogo sob **Visual Basic / extensibilidade**, **C# / extensibilidade**, ou **outros Tipos de projeto / extensibilidade**.  
   
 ## <a name="creating-a-command"></a>Criar um comando  
  Todos os comandos, grupos de comando, menus, barras de ferramentas e janelas de ferramentas são definidas no arquivo. VSCT. Para obter mais informações, consulte [tabela de comando do Visual Studio (. VSCT) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  

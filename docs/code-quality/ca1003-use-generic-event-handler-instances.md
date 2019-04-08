@@ -65,7 +65,7 @@ Você pode configurar essa opção para apenas essa regra, para todas as regras 
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um delegado que viola a regra. O exemplo do Visual Basic, comentários descrevem como modificar o exemplo para satisfazer a regra. Para obter o exemplo de c#, segue um exemplo que mostra o código modificado.
+O exemplo a seguir mostra um delegado que viola a regra. O exemplo do Visual Basic, comentários descrevem como modificar o exemplo para satisfazer a regra. Para obter o exemplo de C#, segue um exemplo que mostra o código modificado.
 
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]

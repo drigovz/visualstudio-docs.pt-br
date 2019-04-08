@@ -42,11 +42,11 @@ Criando aplicativos no Visual Studio para controle de conta de usuário (UAC) no
   
    Essa abordagem também é conhecido como *virtualização*. Use esta opção para compatibilidade com aplicativos existentes de versões anteriores do Visual Studio.  
   
-  As novas propriedades estão disponíveis na **aplicativo** página do Designer de projeto (Visual c# somente para projetos) e no formato de arquivo de projeto MSBuild.  
+  As novas propriedades estão disponíveis na **aplicativo** página do Designer de projeto (Visual C# somente para projetos) e no formato de arquivo de projeto MSBuild.  
   
-  Observe que o método para configurar a geração de manifesto de UAC no IDE do Visual Studio difere dependendo do tipo de projeto (Visual c# e Visual Basic).  
+  Observe que o método para configurar a geração de manifesto de UAC no IDE do Visual Studio difere dependendo do tipo de projeto (Visual C# e Visual Basic).  
   
-  Para obter informações sobre como configurar projetos do Visual c# para geração de manifesto, consulte [página de aplicativo, Designer de projeto (c#)](../ide/reference/application-page-project-designer-csharp.md).  
+  Para obter informações sobre como configurar projetos do Visual C# para geração de manifesto, consulte [página de aplicativo, Designer de projeto (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
   Para obter informações sobre como configurar projetos do Visual Basic para geração de manifesto, consulte [página de aplicativo, Designer de projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   

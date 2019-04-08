@@ -1,5 +1,5 @@
 ---
-title: Formatar especificadores em c# | Microsoft Docs
+title: Formatar especificadores em C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug

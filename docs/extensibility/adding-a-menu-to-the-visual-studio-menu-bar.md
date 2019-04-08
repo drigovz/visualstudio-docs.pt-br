@@ -39,7 +39,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
 
 1. Crie um projeto do VSIX chamado `TopLevelMenu`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo pesquisando por "vsix".  Para obter mais informações, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **TestCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** >  **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *TestCommand.cs*.
+2. Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **TestCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** >  **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual C# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *TestCommand.cs*.
 
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Criar um menu na barra de menus do IDE
 

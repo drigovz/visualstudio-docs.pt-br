@@ -83,7 +83,7 @@ ms.locfileid: "57868098"
 
 3.  Na parte superior a **adicionar novo projeto** diálogo caixa, certifique-se de que **.NET Framework 4.5** for escolhido na lista de versões do .NET Framework.
 
-4.  Expanda o **Visual c#** nó ou o **Visual Basic** nó e escolha o **Windows** nó.
+4.  Expanda o **Visual C#** nó ou o **Visual Basic** nó e escolha o **Windows** nó.
 
 5.  Na lista de modelos de projeto, escolha **biblioteca de controle de usuário do WPF**, nomeie o projeto **ProjectTemplateWizard**e, em seguida, escolha o **Okey** botão.
 
@@ -97,7 +97,7 @@ ms.locfileid: "57868098"
 
 2.  Na parte superior a **adicionar novo projeto** diálogo caixa, escolha **.NET Framework 3.5** na lista de versões do .NET Framework.
 
-3.  Expanda o **Visual c#** nó ou o **Visual Basic** nó e, em seguida, escolha o **Windows** nó.
+3.  Expanda o **Visual C#** nó ou o **Visual Basic** nó e, em seguida, escolha o **Windows** nó.
 
 4.  Escolha o **biblioteca de classes** modelo de projeto, nomeie o projeto **SharePointCommands**e, em seguida, escolha o **Okey** botão.
 
@@ -112,7 +112,7 @@ ms.locfileid: "57868098"
 
 1.  Na **Gerenciador de soluções**, abra o menu de atalho para o **ProjectTemplateWizard** nó do projeto e, em seguida, escolha **propriedades**.
 
-2.  No **Designer de projeto**, escolha o **Application** guia para um projeto do Visual c# ou o **compilar** guia para um projeto do Visual Basic.
+2.  No **Designer de projeto**, escolha o **Application** guia para um projeto do Visual C# ou o **compilar** guia para um projeto do Visual Basic.
 
 3.  Certifique-se de que a estrutura de destino é definida como o .NET Framework 4.5, não o perfil de cliente do .NET Framework 4.5.
 
@@ -484,7 +484,7 @@ ms.locfileid: "57868098"
 
 1. Na instância experimental do Visual Studio, na barra de menus, escolha **arquivo** > **New** > **projeto**.
 
-2. Expanda o **Visual c#** nó ou o **Visual Basic** nó (dependendo da linguagem que dá suporte a seu modelo de projeto), expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+2. Expanda o **Visual C#** nó ou o **Visual Basic** nó (dependendo da linguagem que dá suporte a seu modelo de projeto), expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
 
 3. Na lista de modelos de projeto, escolha **coluna de Site**, nomeie o projeto **SiteColumnWizardTest**e, em seguida, escolha o **Okey** botão.
 

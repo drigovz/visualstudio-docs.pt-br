@@ -56,7 +56,7 @@ Mesmo se o comportamento padrão do membro sobrecarregado é apropriado para sua
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, use a sobrecarga que utiliza um <xref:System.IFormatProvider> argumento. Ou use uma [c# cadeia de caracteres interpolada](/dotnet/csharp/tutorials/string-interpolation) e passá-lo para o <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> método.
+Para corrigir uma violação dessa regra, use a sobrecarga que utiliza um <xref:System.IFormatProvider> argumento. Ou use uma [C# cadeia de caracteres interpolada](/dotnet/csharp/tutorials/string-interpolation) e passá-lo para o <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> método.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

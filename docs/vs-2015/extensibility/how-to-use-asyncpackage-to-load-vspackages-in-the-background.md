@@ -18,7 +18,7 @@ ms.locfileid: "58924855"
 Carregar e inicializar um VS package podem resultar em e/s de disco. Se tal e/s acontece no thread da interface do usuário, ele pode levar a problemas de capacidade de resposta. Para resolver isso, o Visual Studio 2015 apresentou a <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe que habilita o carregamento do pacote em um thread em segundo plano.  
   
 ## <a name="creating-an-asyncpackage"></a>Criando um AsyncPackage  
- Você pode começar criando um projeto VSIX (**arquivo / novo / projeto / Visual c# / extensibilidade / projeto VSIX**) e a adição de um VSPackage ao projeto (clique com botão direito no projeto e **Add/New Item / c# item/extensibilidade/Visual Pacote do Studio**). Em seguida, você pode criar seus serviços e adicionar esses serviços ao seu pacote.  
+ Você pode começar criando um projeto VSIX (**arquivo / novo / projeto / Visual C# / extensibilidade / projeto VSIX**) e a adição de um VSPackage ao projeto (clique com botão direito no projeto e **Add/New Item / C# item/extensibilidade/Visual Pacote do Studio**). Em seguida, você pode criar seus serviços e adicionar esses serviços ao seu pacote.  
   
 1. Derivar o pacote de <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Escrevendo um visualizador em c# | Microsoft Docs'
+title: 'Passo a passo: Escrevendo um visualizador em C# | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -38,7 +38,7 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 1. Sobre o **arquivo** menu, escolha **New** e, em seguida, clique em **novo projeto**.  
   
-2. No **novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#**.  
+2. No **novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual C#**.  
   
 3. No **modelos** , escolha **biblioteca de classes**.  
   
@@ -233,7 +233,7 @@ Este passo a passo mostra como escrever um visualizador simples usando C#. O vis
   
 1. No menu **Arquivo**, escolha **Adicionar** e clique em **Novo Projeto**.  
   
-2. No **adicionar novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#**.  
+2. No **adicionar novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual C#**.  
   
 3. No **modelos** , escolha **biblioteca de classes**.  
   

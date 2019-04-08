@@ -65,7 +65,7 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
   
  Você pode examinar o estado atual do aplicativo, incluindo valores de variáveis e a pilha de chamadas. Para obter mais informações sobre a pilha de chamadas, consulte [como: Usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).  
   
- Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no c# o código acima, você pode definir um ponto de interrupção na declaração de variável, o `for` loop ou qualquer código dentro de `for` loop, mas você não pode definir um ponto de interrupção nas declarações de namespace ou classe ou a assinatura do método.  
+ Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no C# o código acima, você pode definir um ponto de interrupção na declaração de variável, o `for` loop ou qualquer código dentro de `for` loop, mas você não pode definir um ponto de interrupção nas declarações de namespace ou classe ou a assinatura do método.  
   
 ##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Configuração de outros tipos de pontos de interrupção  
  Você também pode definir pontos de interrupção na pilha de chamadas, na janela de desmontagem e, em código C++ nativo, em uma condição de dados ou um endereço de memória.  

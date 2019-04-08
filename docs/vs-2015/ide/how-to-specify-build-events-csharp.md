@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar eventos de Build (c#) | Microsoft Docs'
+title: 'Como: Especificar eventos de Build (C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54781079"

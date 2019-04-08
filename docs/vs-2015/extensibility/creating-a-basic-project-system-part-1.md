@@ -24,7 +24,7 @@ ms.locfileid: "58928180"
 
 No Visual Studio, os projetos são contêineres que os desenvolvedores usam para organizar os arquivos de código-fonte e outros ativos. Projetos aparecem como filhos de soluções na **Gerenciador de soluções**. Projetos permitem que você organize, compilar, depurar e implantar o código-fonte e criar referências para os serviços da Web, bancos de dados e outros recursos.  
   
- Projetos são definidos em arquivos de projeto, por exemplo, um arquivo. csproj para um projeto do Visual c#. Você pode criar seu próprio tipo de projeto que tem sua própria extensão de nome de arquivo de projeto. Para obter mais informações sobre tipos de projeto, consulte [tipos de projeto](../extensibility/internals/project-types.md).  
+ Projetos são definidos em arquivos de projeto, por exemplo, um arquivo. csproj para um projeto do Visual C#. Você pode criar seu próprio tipo de projeto que tem sua própria extensão de nome de arquivo de projeto. Para obter mais informações sobre tipos de projeto, consulte [tipos de projeto](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
 >  Se você precisar estender o Visual Studio com um tipo de projeto personalizado, é altamente recomendável aproveitar a [sistema de projeto do Visual Studio](https://github.com/Microsoft/VSProjectSystem) que tem uma série de vantagens sobre a criação de um sistema de projeto a partir do zero:  
@@ -34,7 +34,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
 > 
 >   Se você precisar direcionar às versões do Visual Studio mais antigo que o Visual Studio 2013, você não poderá aproveitar o CPS em uma extensão do Visual Studio.  Se esse for o caso, este passo a passo é um bom lugar para começar a usar.  
   
- Este passo a passo mostra como criar um tipo de projeto que tem o .myproj de extensão de nome de arquivo de projeto. Este passo a passo emprestada do sistema de projeto Visual c# existente.  
+ Este passo a passo mostra como criar um tipo de projeto que tem o .myproj de extensão de nome de arquivo de projeto. Este passo a passo emprestada do sistema de projeto Visual C# existente.  
   
 > [!NOTE]
 >  Para um exemplo de ponta a ponta de um sistema de projeto de linguagem completa, consulte o exemplo de IronPython Deep Dive na [exemplos de VSSDK](../misc/vssdk-samples.md).  
@@ -63,7 +63,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
  Você também deve baixar o código-fonte para o [estrutura de pacote gerenciado para projetos](http://mpfproj12.codeplex.com/). Extraia o arquivo para um local acessível para a solução que você pretende criar.  
   
 ## <a name="creating-a-basic-project-type"></a>Criando um tipo de projeto básico  
- Crie um projeto de VSIX em C# chamado **SimpleProject**. (**Arquivo, novo, projeto** e, em seguida **pacote do Visual Studio c#, extensibilidade,**). Adicionar um modelo de item de projeto do Visual Studio Package (no Gerenciador de soluções, clique com botão direito no nó do projeto e selecione **Adicionar / Novo Item**, em seguida, vá para **extensibilidade / pacote do Visual Studio**). Nomeie o arquivo **SimpleProjectPackage**.  
+ Crie um projeto de VSIX em C# chamado **SimpleProject**. (**Arquivo, novo, projeto** e, em seguida **pacote do Visual Studio C#, extensibilidade,**). Adicionar um modelo de item de projeto do Visual Studio Package (no Gerenciador de soluções, clique com botão direito no nó do projeto e selecione **Adicionar / Novo Item**, em seguida, vá para **extensibilidade / pacote do Visual Studio**). Nomeie o arquivo **SimpleProjectPackage**.  
   
 ## <a name="creating-a-basic-project-template"></a>Criando um modelo de projeto básico  
  Agora, você pode modificar este VSPackage básicas para implementar o novo tipo de projeto .myproj. Para criar um projeto com base no tipo de projeto .myproj, Visual Studio precisa saber quais arquivos, recursos e referências a serem adicionadas ao novo projeto. Para fornecer essas informações, colocar os arquivos de projeto em uma pasta de modelo de projeto. Quando um usuário usa o projeto .myproj para criar um projeto, os arquivos são copiados para o novo projeto.  
@@ -158,7 +158,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
   
 12. No **propriedades** janela, defina as **Build Action** de AssemblyInfo.cs, Program.cs, SimpleProject.ico e SimpleProject.myproj para **conteúdo**e defina seus  **Incluir no VSIX** propriedades a serem **verdadeiro**.  
   
-    Este modelo de projeto descreve um projeto Visual c# básico que tenha uma configuração de depuração e uma configuração de versão. O projeto inclui dois arquivos de origem, AssemblyInfo.cs e Program.cs e assembly várias referências. Quando um projeto é criado a partir do modelo, o valor de ProjectGuid automaticamente é substituído por um novo GUID.  
+    Este modelo de projeto descreve um projeto Visual C# básico que tenha uma configuração de depuração e uma configuração de versão. O projeto inclui dois arquivos de origem, AssemblyInfo.cs e Program.cs e assembly várias referências. Quando um projeto é criado a partir do modelo, o valor de ProjectGuid automaticamente é substituído por um novo GUID.  
   
     Na **Gerenciador de soluções**, o expandido **modelos** pasta deve aparecer da seguinte maneira:  
   

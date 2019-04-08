@@ -56,7 +56,7 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
   
 6.  Fechar o **arquivos de aplicativo** caixa de diálogo.  
   
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Para baixar os assemblies satélite sob demanda em c#  
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Para baixar os assemblies satélite sob demanda em C#  
   
 1.  Abra o arquivo Program.cs. Se você não vir esse arquivo no Gerenciador de soluções, selecione seu projeto e sobre o **projeto** menu, clique em **Mostrar todos os arquivos**.  
   

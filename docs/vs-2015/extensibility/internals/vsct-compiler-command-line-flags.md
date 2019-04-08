@@ -61,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Especifique todos os símbolos definidos adicionais.|  
 |-I|Indicam que caminhos que devem ser usados ao resolver referências de arquivo de inclusão adicionais.|  
 |-L|Especifique o <xref:System.Globalization.CultureInfo> nome de cultura, por exemplo "en-US".|  
-|-E|Emitir C# objetos no namespace especificado para os itens de comando, seguido por [C&#124;H&#124;N]:*filename*em que C = C#, H = cabeçalho de C++, N = namespace. O namespace é necessário para c#.|  
+|-E|Emitir C# objetos no namespace especificado para os itens de comando, seguido por [C&#124;H&#124;N]:*filename*em que C = C#, H = cabeçalho de C++, N = namespace. O namespace é necessário para C#.|  
 |-v|Saída detalhada.|  
   
  -L switch instrui o compilador a selecionar um grupo de cadeias de caracteres para produzir o arquivo CTO já binário correspondente para o determinado <xref:System.Globalization.CultureInfo> nome da cultura. O nome da cultura especificada com o atributo de idioma de um ou mais [cadeias de caracteres de elemento](../../extensibility/strings-element.md) no arquivo. VSCT. Se um elemento de cadeias de caracteres não tem nenhum atributo de idioma, ela é herdada de recipiente [elemento CommandTable](../../extensibility/commandtable-element.md).  
@@ -70,7 +70,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  Se o nome de cultura fornecido pelo comutador -L não coincide com o atributo de idioma de qualquer elemento de cadeias de caracteres, o compilador tentará corresponder o idioma e não a região. Por exemplo, se não podem ser encontrado "en-US", o compilador tentará "en" em vez disso. Caso de falha, ele tentará a cultura atual do sistema operacional. Caso de falha, ele compilará o primeiro elemento de cadeias de caracteres que encontrar.  
   
- A opção -E pode ser usada para emitir um arquivo de cabeçalho de estilo C que contém os símbolos que são usados pela tabela de comando ou para emitir um arquivo c# que contém objetos para os símbolos de comando.  
+ A opção -E pode ser usada para emitir um arquivo de cabeçalho de estilo C que contém os símbolos que são usados pela tabela de comando ou para emitir um arquivo C# que contém objetos para os símbolos de comando.  
   
  -D e – eu switches têm a sintaxe dos sinalizadores de pré-processador C Cl.exe que têm o mesmo nome. – D definições que têm o formato X = Y são usadas para a expansão do baseado em XML \<definido pelo > testes no `Condition` atributos. – Posso incluir caminhos são usados para resolver \<Include >, \<Extern > e \<Bitmap > as referências de arquivo. Para obter mais informações, consulte o [referência de esquema de XML do VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   

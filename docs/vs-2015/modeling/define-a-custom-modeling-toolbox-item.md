@@ -157,7 +157,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
     1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
   
-    2.  No **novo projeto** caixa de diálogo **modelos instalados**, escolha **Visual c#**, **extensibilidade**, **VSIX projeto**.  
+    2.  No **novo projeto** caixa de diálogo **modelos instalados**, escolha **Visual C#**, **extensibilidade**, **VSIX projeto**.  
   
 4.  Adicione suas definições de caixa de ferramentas para o projeto. Incluir o **.tbxinfo** de arquivos, os arquivos de diagrama, arquivos de bitmap e quaisquer arquivos de recurso e certifique-se de que eles são incluídos no VSIX.  
   

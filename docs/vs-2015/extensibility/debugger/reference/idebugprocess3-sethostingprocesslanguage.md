@@ -40,7 +40,7 @@ int SetHostingProcessLanguage(
   
 #### <a name="parameters"></a>Parâmetros  
  `guidLang`  
- [in] `GUID` da linguagem que o DE deve usar. Especificar `GUID_NULL` (C++) ou `Guid.Empty` (c#) para ter DE usar o idioma padrão.  
+ [in] `GUID` da linguagem que o DE deve usar. Especificar `GUID_NULL` (C++) ou `Guid.Empty` (C#) para ter DE usar o idioma padrão.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  

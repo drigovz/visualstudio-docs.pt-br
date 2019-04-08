@@ -130,7 +130,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
        > [!NOTE]
        >  Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-       Visual c# somente para desenvolvedores:  
+       Visual C# somente para desenvolvedores:  
   
        Abra o arquivo de código de Program.cs e adicione o seguinte código.  
   

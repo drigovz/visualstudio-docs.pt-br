@@ -55,7 +55,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 2.  No painel Tipos de Projeto, abra o nó **Visual Basic**, **Visual C#** ou **Visual C++**, em seguida,  
   
-    1.  Para o Visual Basic ou Visual c#, selecione a **Windows** nó, em seguida, selecione **aplicativo de formulário do Windows** no **modelos** painel.  
+    1.  Para o Visual Basic ou Visual C#, selecione a **Windows** nó, em seguida, selecione **aplicativo de formulário do Windows** no **modelos** painel.  
   
     2.  Para o Visual C++, selecione o **CLR** nó, em seguida, selecione **aplicativo de formulário do Windows** no **modelos** painel...  
   
@@ -129,7 +129,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 4.  No menu **Depurar**, escolha **Windows**, em seguida, **Inspeção** e clique em **Watch1**.  
   
-5.  Na janela **Watch1**, clique em uma linha em branco. No **nome** coluna, digite `textBox1.Text` (se você estiver usando Visual Basic, Visual c# ou j#) ou `textBox1->Text` (se você estiver usando C++), em seguida, pressione ENTER.  
+5.  Na janela **Watch1**, clique em uma linha em branco. No **nome** coluna, digite `textBox1.Text` (se você estiver usando Visual Basic, Visual C# ou j#) ou `textBox1->Text` (se você estiver usando C++), em seguida, pressione ENTER.  
   
      A janela **Watch1** mostra o valor dessa variável entre aspas como:  
   

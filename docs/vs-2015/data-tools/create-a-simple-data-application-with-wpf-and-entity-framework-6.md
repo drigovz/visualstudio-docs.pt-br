@@ -49,7 +49,7 @@ Essa explicação passo a passo mostra como criar um aplicativo básico "formul�
   
 ## <a name="create-the-model"></a>Criar o modelo  
   
-1. Clique com o botão direito no nó do projeto no Gerenciador de soluções e escolha **adicionar &#124; Novo Item**. No painel esquerdo, sob o nó c#, escolha **dados** e no painel central, escolha **modelo de dados de entidade ADO.NET**.  
+1. Clique com o botão direito no nó do projeto no Gerenciador de soluções e escolha **adicionar &#124; Novo Item**. No painel esquerdo, sob o nó C#, escolha **dados** e no painel central, escolha **modelo de dados de entidade ADO.NET**.  
   
     ![Entity Framework modelo novo Item de projeto](../data-tools/media/raddata-ef-new-project-item.png "raddata EF Novo Item de projeto")  
   
@@ -63,7 +63,7 @@ Essa explicação passo a passo mostra como criar um aplicativo básico "formul�
   
     ![Escolha os objetos de banco de dados para o modelo](../data-tools/media/raddata-choose-ef-objects.png "raddata escolher EF objetos")  
   
-5. O assistente gera as classes do c# que representam o modelo do Entity Framework. Esses são antigas classes c# simples e são o que faremos databind na interface de usuário do WPF. O arquivo. edmx descreve as relações e outros metadados que associa as classes de objetos no banco de dados.  Os arquivos. TT são modelos de T4 que geram o código que irá operar no modelo e salvar as alterações no banco de dados. Você pode ver todos esses arquivos no Gerenciador de soluções sob o nó Northwind_model:  
+5. O assistente gera as classes do C# que representam o modelo do Entity Framework. Esses são antigas classes C# simples e são o que faremos databind na interface de usuário do WPF. O arquivo. edmx descreve as relações e outros metadados que associa as classes de objetos no banco de dados.  Os arquivos. TT são modelos de T4 que geram o código que irá operar no modelo e salvar as alterações no banco de dados. Você pode ver todos esses arquivos no Gerenciador de soluções sob o nó Northwind_model:  
   
     ![Arquivos de modelo do Solution Explorer EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata arquivos de modelo de EF do Gerenciador de soluções")  
   

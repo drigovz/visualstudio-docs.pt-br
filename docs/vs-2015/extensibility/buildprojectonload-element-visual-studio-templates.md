@@ -54,7 +54,7 @@ Como criar e adicioná-los a uma solução se baseia somente novos projetos. A s
  `BuildProjectOnLoad` é um elemento opcional. O valor padrão é `false`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um modelo do Visual c#.  
+ O exemplo a seguir ilustra os metadados para um modelo do Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

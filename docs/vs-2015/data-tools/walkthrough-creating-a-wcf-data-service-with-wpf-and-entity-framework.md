@@ -145,7 +145,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[ss_data_service](..
   
 1. Na barra de menus, escolha arquivo, **Add**, **novo projeto**.  
   
-2. No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó e escolha o **Windows** nó e, em seguida, escolha  **Aplicativo de formulários do Windows**.  
+2. No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó e escolha o **Windows** nó e, em seguida, escolha  **Aplicativo de formulários do Windows**.  
   
 3. Na caixa de texto **Nome**, insira `NorthwindClient` e, em seguida, escolha o botão **OK**.  
   

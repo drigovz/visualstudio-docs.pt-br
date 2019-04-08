@@ -53,7 +53,7 @@ int GetExtendedInfo ( 
 ## <a name="remarks"></a>Comentários  
  Este método existe para fins de recuperação de informações que não se prestam a que está sendo recuperado por meio da chamada a [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) método.  
   
- Os GUIDs seguintes normalmente são reconhecidos por este método (os valores GUID são especificados para c#, pois o nome não está disponível em qualquer assembly). GUIDs adicionais podem ser criados para uso interno.  
+ Os GUIDs seguintes normalmente são reconhecidos por este método (os valores GUID são especificados para C#, pois o nome não está disponível em qualquer assembly). GUIDs adicionais podem ser criados para uso interno.  
   
 |Nome|GUID|Descrição|  
 |----------|----------|-----------------|  

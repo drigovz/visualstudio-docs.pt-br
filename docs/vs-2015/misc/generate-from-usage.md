@@ -28,4 +28,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58925735"
 ---
 # <a name="generate-from-usage"></a>Gerar a partir do uso
-Este conteúdo foi movido para [Visual c# IntelliSense](../ide/visual-csharp-intellisense.md).
+Este conteúdo foi movido para [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md).

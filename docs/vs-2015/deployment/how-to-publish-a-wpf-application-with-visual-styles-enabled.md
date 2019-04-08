@@ -66,7 +66,7 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
 
          O arquivo App. manifest é aberto na **Editor de códigos**.
 
-    **Para abrir o arquivo de manifesto em um projeto c#**
+    **Para abrir o arquivo de manifesto em um projeto C#**
 
     1. Na barra de menus, escolha **Project**, _ProjectName_**propriedades**, onde *ProjectName* é o nome do seu projeto WPF.
 

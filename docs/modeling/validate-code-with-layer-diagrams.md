@@ -46,7 +46,7 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
 
 - Visual Studio
 
-- Uma solução que tem um projeto de modelagem com um diagrama de dependência. Este diagrama de dependência deve ser vinculado a artefatos em projetos do c# ou Visual Basic que você deseja validar. Ver [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md).
+- Uma solução que tem um projeto de modelagem com um diagrama de dependência. Este diagrama de dependência deve ser vinculado a artefatos em projetos do C# ou Visual Basic que você deseja validar. Ver [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
 > Não há suporte para diagramas de dependência para projetos do .NET Core no Visual Studio.
@@ -62,7 +62,7 @@ Você pode validar código manualmente a partir de um diagrama de dependência a
 
 Validação de dependência ocorre em tempo real e erros são exibidos imediatamente na **Error List**.
 
-* Há suporte para c# e Visual Basic de validação em tempo real.
+* Há suporte para C# e Visual Basic de validação em tempo real.
 
 * Para habilitar análise completa da solução ao usar a validação de dependência dinâmica, abra as configurações de opções da barra de ouro que aparece na **Error List**.
 

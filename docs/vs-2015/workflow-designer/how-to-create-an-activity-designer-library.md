@@ -25,7 +25,7 @@ Designers personalizados de atividade permitem que você crie uma interface de u
   
 2.  Sobre o **arquivo** , aponte para **New**e, em seguida, selecione **projeto...** Para abrir o **novo projeto** caixa de diálogo.  
   
-3.  No **tipos de projeto** painel, selecione **fluxo de trabalho** de qualquer um os **Visual c#** ou **Visual Basic** agrupamentos, dependendo de sua preferência idioma.  
+3.  No **tipos de projeto** painel, selecione **fluxo de trabalho** de qualquer um os **Visual C#** ou **Visual Basic** agrupamentos, dependendo de sua preferência idioma.  
   
 4.  No **modelos** painel, selecione **biblioteca do Designer de atividade**.  
   

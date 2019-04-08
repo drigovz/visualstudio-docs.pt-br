@@ -37,7 +37,7 @@ ms.locfileid: "58929510"
   
      A caixa de diálogo **Novo Projeto** é exibida.  
   
-2.  No **tipo de projeto**s caixa, clique na linguagem de sua escolha: **Visual Basic**, **Visual c#**, ou **Visual C++**.  
+2.  No **tipo de projeto**s caixa, clique na linguagem de sua escolha: **Visual Basic**, **Visual C#**, ou **Visual C++**.  
   
 3.  No **modelos** , escolha **aplicativo de Console** ou **aplicativo de Console CLR**.  
   

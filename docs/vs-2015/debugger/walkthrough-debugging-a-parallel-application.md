@@ -65,7 +65,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
   
 1. No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2. No **modelos instalados** painel, selecione Visual c#, Visual Basic ou Visual C++. Para as linguagens gerenciadas, certifique-se de que [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] seja exibido na caixa da estrutura.  
+2. No **modelos instalados** painel, selecione Visual C#, Visual Basic ou Visual C++. Para as linguagens gerenciadas, certifique-se de que [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] seja exibido na caixa da estrutura.  
   
 3. Selecione **aplicativo de Console** e, em seguida, clique em **Okey**. Permaneça na configuração de depuração, que é o padrão.  
   

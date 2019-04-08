@@ -33,7 +33,7 @@ O modelo de item do pacote de extensão cria um pacote de extensão com o conjun
 
 1. No **novo projeto** caixa de diálogo, pesquise por "vsix" e selecione **projeto VSIX**. Para **nome do projeto**, digite "Pacote de extensão de teste". Selecione **Criar**.
 
-2. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. Vá para o Visual c# **extensibilidade** nó e selecione **pacote de extensão**. Deixe o nome de arquivo padrão (ExtensionPack1.cs).
+2. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. Vá para o Visual C# **extensibilidade** nó e selecione **pacote de extensão**. Deixe o nome de arquivo padrão (ExtensionPack1.cs).
 
 3. Arquivo ExtensionPack1.vsext é adicionado, que contém o código a seguir
 

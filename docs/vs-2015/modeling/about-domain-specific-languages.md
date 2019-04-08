@@ -21,7 +21,7 @@ ms.locfileid: "58928932"
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ao contrário de uma linguagem de finalidade geral, como c# ou UML, uma linguagem específica de domínio (DSL) foi projetada para expressar declarações em um determinado problema de espaço ou domínio.  
+Ao contrário de uma linguagem de finalidade geral, como C# ou UML, uma linguagem específica de domínio (DSL) foi projetada para expressar declarações em um determinado problema de espaço ou domínio.  
   
  DSLs Well-Known incluem expressões regulares e SQL. Cada DSL é muito melhor do que uma linguagem de finalidade geral para descrever as operações em cadeias de caracteres de texto ou um banco de dados, mas um desempenho pior para descrever as ideias que estão fora do seu próprio escopo. Setores individuais também têm seus próprios DSLs. Por exemplo, na indústria de telecomunicações, chame descrição idiomas são amplamente usados para especificar a sequência dos estados em uma chamada telefônica e a indústria de viagem no ar um padrão de que DSL é usada para descrever as reservas de voo.  
   

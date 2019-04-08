@@ -46,7 +46,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
   
  Você também pode definir o destino de execução diretamente no arquivo de propriedades do projeto. Clique com botão direito no nome do projeto no **Gerenciador de soluções** e, em seguida, escolha **propriedades**. Siga um destes procedimentos:  
   
--   Em projetos c# e Visual Basic, clique em **Debug** e, em seguida, selecione **Máquina Local** do **dispositivo de destino** lista suspensa.  
+-   Em projetos C# e Visual Basic, clique em **Debug** e, em seguida, selecione **Máquina Local** do **dispositivo de destino** lista suspensa.  
   
      ![C&#35; e a página de propriedades de projeto do Visual Basic](../debugger/media/vsrun-cs-vb-projprop-local.png "VSRUN_CS_VB_ProjProp_Local")  
   

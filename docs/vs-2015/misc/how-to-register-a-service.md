@@ -30,7 +30,7 @@ A estrutura de pacote gerenciado (MPF) fornece os atributos para controlar o reg
  Para registrar um serviço que substitui outro serviço com o mesmo nome, use o <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> em vez do <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>.  
   
 ## <a name="robust-programming"></a>Programação robusta  
- Para facilitar recompilar um provedor de serviço sem alterar o cliente do serviço, ou vice-versa, você pode definir o serviço e suas interfaces em um módulo de assembly separado. O código a seguir é do arquivo IMyGlobalService.cs na amostra Reference.Services (c#).  
+ Para facilitar recompilar um provedor de serviço sem alterar o cliente do serviço, ou vice-versa, você pode definir o serviço e suas interfaces em um módulo de assembly separado. O código a seguir é do arquivo IMyGlobalService.cs na amostra Reference.Services (C#).  
   
  [!code-csharp[VSSDKRegisterService#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkregisterservice/cs/vssdkregisterservicepackage.cs#2)]
  [!code-vb[VSSDKRegisterService#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkregisterservice/vb/vssdkregisterservicepackage.vb#2)]  

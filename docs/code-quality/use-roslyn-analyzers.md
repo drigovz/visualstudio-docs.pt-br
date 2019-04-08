@@ -20,7 +20,7 @@ ms.locfileid: "58515331"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar os analisadores de Roslyn
 
-Regras do analisador do .NET compiler Platform ("Roslyn"), ou *diagnóstico*, analisar seu código c# ou Visual Basic, conforme você digita. Cada diagnóstico tem um estado de gravidade e supressão de padrão que pode ser substituído para o seu projeto. Este artigo aborda a severidade de regra de configuração, usando conjuntos de regras e suprimindo violações.
+Regras do analisador do .NET compiler Platform ("Roslyn"), ou *diagnóstico*, analisar seu código C# ou Visual Basic, conforme você digita. Cada diagnóstico tem um estado de gravidade e supressão de padrão que pode ser substituído para o seu projeto. Este artigo aborda a severidade de regra de configuração, usando conjuntos de regras e suprimindo violações.
 
 ## <a name="analyzers-in-solution-explorer"></a>Analisadores no Gerenciador de soluções
 
@@ -124,7 +124,7 @@ Há várias maneiras de suprimir as violações de regra:
 
 Você pode suprimir um ou vários diagnósticos do **lista de erros** selecionar aqueles que você deseja suprimir, e, em seguida, clicando com botão direito e selecionando **suprimir** > **na origem**  ou **suprimir** > **no arquivo de supressão**.
 
-- Se você selecionar **no código-fonte**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do c# [#pragma aviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou o Visual Basic [#Disable aviso](/dotnet/visual-basic/language-reference/directives/directives) diretiva é adicionada ao código-fonte.
+- Se você selecionar **no código-fonte**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do C# [#pragma aviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou o Visual Basic [#Disable aviso](/dotnet/visual-basic/language-reference/directives/directives) diretiva é adicionada ao código-fonte.
 
    ![Visualização de adição de aviso #pragma no arquivo de código](media/pragma-warning-preview.png)
 

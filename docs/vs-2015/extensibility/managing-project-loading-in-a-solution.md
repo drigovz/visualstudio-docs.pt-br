@@ -50,7 +50,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ```  
   
 #### <a name="implementing-ivssolutionloadmanager"></a>Implementando IVsSolutionLoadManager  
- O <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A> método é chamado durante o processo de abertura da solução. Para implementar esse método, você deve usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> serviço para definir a prioridade de carga para o tipo de projeto que você deseja gerenciar. Por exemplo, o código a seguir define tipos de projeto c# para carregar em segundo plano:  
+ O <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A> método é chamado durante o processo de abertura da solução. Para implementar esse método, você deve usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> serviço para definir a prioridade de carga para o tipo de projeto que você deseja gerenciar. Por exemplo, o código a seguir define tipos de projeto C# para carregar em segundo plano:  
   
 ```csharp  
 Guid guidCSProjectType = new Guid("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}");  

@@ -32,7 +32,7 @@ Este passo a passo mostra como publicar uma extensão do Visual Studio em Galeri
 ## <a name="create-a-visual-studio-extension"></a>Criar uma extensão do Visual Studio
  Nesse caso, usaremos uma extensão de VSPackage padrão, mas as mesmas etapas são válidas para cada tipo de extensão.
 
-1.  Criar um VSPackage no c#, chamado `TestPublishing` que possui um comando de menu. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1.  Criar um VSPackage no C#, chamado `TestPublishing` que possui um comando de menu. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>A extensão de teste
  Antes de distribuir a extensão, compilar e testar para verificar se que ele está instalado corretamente na instância experimental do Visual Studio.

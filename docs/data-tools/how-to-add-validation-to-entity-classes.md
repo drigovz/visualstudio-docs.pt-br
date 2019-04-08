@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55913490"
@@ -62,7 +62,7 @@ ms.locfileid: "55913490"
 
     Para projetos C#:
 
-    Porque os projetos c# não gerenciar automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar os métodos parciais de alteração de coluna. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de alteração para a coluna que você deseja adicionar validação para. O seguinte código lembra o código que é gerado quando você seleciona um método parcial de alteração de coluna:
+    Porque os projetos C# não gerenciar automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar os métodos parciais de alteração de coluna. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de alteração para a coluna que você deseja adicionar validação para. O seguinte código lembra o código que é gerado quando você seleciona um método parcial de alteração de coluna:
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -106,7 +106,7 @@ ms.locfileid: "55913490"
 
     Para projetos C#:
 
-    Porque os projetos c# não gerenciar automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar parcial `UpdateCLASSNAME` método. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de atualização para a classe na qual você deseja adicionar validação. O seguinte código lembra o código que é gerado quando você seleciona um `UpdateCLASSNAME` método parcial:
+    Porque os projetos C# não gerenciar automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar parcial `UpdateCLASSNAME` método. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de atualização para a classe na qual você deseja adicionar validação. O seguinte código lembra o código que é gerado quando você seleciona um `UpdateCLASSNAME` método parcial:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

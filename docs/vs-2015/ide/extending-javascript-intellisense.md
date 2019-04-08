@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54797441"
@@ -486,7 +486,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-4.  Na appCode.js, digite o código a seguir. Enquanto você digita, você verá que o ícone para o namespace foi alterado para "{}", conforme é usado em c#.  
+4.  Na appCode.js, digite o código a seguir. Enquanto você digita, você verá que o ícone para o namespace foi alterado para "{}", conforme é usado em C#.  
   
      ![Exemplo mostrando o uso da propriedade de glifo](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   

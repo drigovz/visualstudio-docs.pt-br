@@ -103,9 +103,9 @@ End Sub
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Ativar verificado estouro/estouro negativo aritmético
- Se você ativar verificado estouro/estouro negativo aritmético em c#, equivale a disposição de cada operação de inteiro em um bloco verificado.
+ Se você ativar verificado estouro/estouro negativo aritmético em C#, equivale a disposição de cada operação de inteiro em um bloco verificado.
 
- **Para ativar o verificado estouro/estouro negativo aritmético em c#**
+ **Para ativar o verificado estouro/estouro negativo aritmético em C#**
 
 1.  Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
 
@@ -114,4 +114,4 @@ End Sub
 3.  Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.OverflowException?displayProperty=fullName> [Operadores do c#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+ <xref:System.OverflowException?displayProperty=fullName> [Operadores do C#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

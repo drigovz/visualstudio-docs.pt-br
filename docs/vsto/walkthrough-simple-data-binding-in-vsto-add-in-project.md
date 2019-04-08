@@ -57,7 +57,7 @@ A primeira etapa é criar um projeto de suplemento do VSTO do Word.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de suplemento do VSTO do Word com o nome **Populando documentos de um banco de dados**, usando o Visual Basic ou c#.
+1.  Criar um projeto de suplemento do VSTO do Word com o nome **Populando documentos de um banco de dados**, usando o Visual Basic ou C#.
 
      Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -128,7 +128,7 @@ Para obter mais informações sobre controles de vinculação de dados, consulte
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6.  Associar o controle de conteúdo `AdventureWorksLTDataSet` usando o <xref:System.Windows.Forms.BindingSource>. Para desenvolvedores do c#, adicione dois manipuladores de eventos para o <xref:Microsoft.Office.Tools.Word.Controls.Button> controles.
+6.  Associar o controle de conteúdo `AdventureWorksLTDataSet` usando o <xref:System.Windows.Forms.BindingSource>. Para desenvolvedores do C#, adicione dois manipuladores de eventos para o <xref:Microsoft.Office.Tools.Word.Controls.Button> controles.
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]

@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 27c2677b8afef1f1e2cd035acb3038b42a4ef56d
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55948596"
@@ -73,7 +73,7 @@ Porque você está trabalhando com LINQ para classes SQL e exibindo os dados em 
 
 1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
 
-2. Expanda o **Visual c#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
+2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
 
@@ -267,7 +267,7 @@ Dependendo dos requisitos do aplicativo, há várias etapas que você talvez que
 
 - Implementar verificação de simultaneidade durante atualizações. Para obter informações, consulte [simultaneidade otimista: Visão geral do](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Adicionar consultas LINQ para filtrar dados. Para obter informações, consulte [Introdução a consultas LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Adicionar consultas LINQ para filtrar dados. Para obter informações, consulte [Introdução a consultas LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
 ## <a name="see-also"></a>Consulte também
 

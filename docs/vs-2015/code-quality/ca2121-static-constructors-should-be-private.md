@@ -38,7 +38,7 @@ ms.locfileid: "58922655"
 ## <a name="rule-description"></a>Descrição da Regra
  Um construtor estático, também conhecido como um construtor de classe é usado para inicializar um tipo. O sistema chama o construtor estático antes que a primeira instância do tipo seja criada ou que outros membros estáticos sejam referenciados. O usuário não tem controle sobre quando o construtor estático é chamado. Se não for privado, um construtor estático poderá ser chamado por um código diferente do sistema. Dependendo das operações realizadas no construtor, isso pode causar um comportamento inesperado.
 
- Essa regra é imposta pelos compiladores c# e Visual Basic .NET.
+ Essa regra é imposta pelos compiladores C# e Visual Basic .NET.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Violações normalmente são causadas por uma das seguintes ações:

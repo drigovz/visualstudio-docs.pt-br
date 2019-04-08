@@ -44,7 +44,7 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Determina a ordem de classificação no nó de árvore de arquivos exibidos na **Adicionar Novo Item** caixa de diálogo.|  
   
 > [!NOTE]
->  Os GUIDS para os tipos de projeto do Visual c# e Visual Basic são da seguinte maneira:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+>  Os GUIDS para os tipos de projeto do Visual C# e Visual Basic são da seguinte maneira:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  O diretório listado para TemplateDirs, que é % TEMPLATE_PATH%\SomeProjectItems, é o nó no lado esquerdo do **Adicionar Novo Item** árvore da caixa de diálogo. Elementos adicionais da árvore baseiam-se no subdiretório do diretório raiz. Os arquivos disponíveis para serem adicionados ao projeto são os itens no painel à direita do **Adicionar Novo Item** caixa de diálogo.  
   

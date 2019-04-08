@@ -31,7 +31,7 @@ As seções a seguir tratam de depuração para tipos específicos de aplicativo
 |||  
 |-|-|  
 |[Depurando aplicativos universais do Windows e da Windows Store](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Descreve como depurar aplicativos da Windows Store e aplicativos universais do Windows.|  
-|[Depurando código gerenciado](../debugger/debugging-managed-code.md)|Descreve como depurar código gerenciado (Visual c#, Visual Basic e F3).|  
+|[Depurando código gerenciado](../debugger/debugging-managed-code.md)|Descreve como depurar código gerenciado (Visual C#, Visual Basic e F3).|  
 |[Depurando código nativo](../debugger/debugging-native-code.md)|Descreve como depurar um tipo diferente de aplicativos nativos do C++.|  
 |[Depurando código de GPU](../debugger/debugging-gpu-code.md)|Descreve como depurar código C++ que é executado na unidade de processamento gráfico (GPU).|  
 |[Diagnóstico de gráficos (depuração de gráficos DirectX)](../debugger/visual-studio-graphics-diagnostics.md)|Descreve como depurar de gráficos do DirectX.|  

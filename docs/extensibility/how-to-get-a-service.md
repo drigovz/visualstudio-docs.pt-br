@@ -29,7 +29,7 @@ Quando o Visual Studio carrega uma <xref:Microsoft.VisualStudio.Shell.Package>, 
 
 1. Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX, que irá conter os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto do VSIX chamado `GetServiceExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo pesquisando por "vsix".
 
-2. Agora, adicione um modelo de item de comando personalizado chamado **GetServiceCommand**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *GetServiceCommand.cs*. Para obter mais informações sobre como criar um comando personalizado, [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. Agora, adicione um modelo de item de comando personalizado chamado **GetServiceCommand**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual C#** > **extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *GetServiceCommand.cs*. Para obter mais informações sobre como criar um comando personalizado, [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 3. Na *GetServiceCommand.cs*, remova o corpo de `MenuItemCommand` método e adicione o seguinte código:
 

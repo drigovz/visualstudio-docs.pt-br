@@ -34,7 +34,7 @@ ms.locfileid: "58929026"
   
 3.  Formata o valor com base no tipo do local.  
   
-4.  Retorna um objeto genérico que contém o valor do local. No c#, isso é um `object`, e em C++, esse é um `VARIANT`.  
+4.  Retorna um objeto genérico que contém o valor do local. No C#, isso é um `object`, e em C++, esse é um `VARIANT`.  
   
 ## <a name="managed-code"></a>Código gerenciado  
  Essa é uma implementação de uma função que recupera o valor de um local no código gerenciado.  

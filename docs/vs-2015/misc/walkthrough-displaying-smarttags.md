@@ -19,7 +19,7 @@ ms.locfileid: "58926936"
 # <a name="walkthrough-displaying-smarttags"></a>Passo a passo: Exibindo SmartTags
 Marcas inteligentes foram preteridas em favor de lâmpadas. Confira [Passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
- Marcas inteligentes são marcas no texto que se expandem para exibir um conjunto de ações. Por exemplo, em um projeto do Visual Basic ou Visual c#, uma linha vermelha aparecerá sob uma palavra ao renomear um identificador como um nome de variável. Quando você move o ponteiro sobre o sublinhado, um botão é exibido próximo o ponteiro. Se você clicar no botão, uma ação sugerida é exibida, por exemplo, **IsRead renomear para IsReady**. Se você clicar em ação, todas as referências aos **IsRead** no projeto são renomeados **IsReady**.  
+ Marcas inteligentes são marcas no texto que se expandem para exibir um conjunto de ações. Por exemplo, em um projeto do Visual Basic ou Visual C#, uma linha vermelha aparecerá sob uma palavra ao renomear um identificador como um nome de variável. Quando você move o ponteiro sobre o sublinhado, um botão é exibido próximo o ponteiro. Se você clicar no botão, uma ação sugerida é exibida, por exemplo, **IsRead renomear para IsReady**. Se você clicar em ação, todas as referências aos **IsRead** no projeto são renomeados **IsReady**.  
   
  Embora as marcas inteligentes são parte da implementação do IntelliSense no editor, você pode implementar marcas inteligentes, a criação de subclasses <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>e, em seguida, Implementando a <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> interface e o <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> interface.  
   

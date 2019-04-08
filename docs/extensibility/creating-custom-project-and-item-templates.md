@@ -80,7 +80,7 @@ Para cenários de criação do modelo básico, você deve usar o **exportar mode
 
 4. Compilar a solução e pressione **F5**. A instância experimental é exibida.
 
-5. Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado na **novo projeto** caixa de diálogo (**arquivo** > **novo**  >  **Projeto**), no Visual c# ou no nó Visual Basic. Para um projeto de modelo de item, você deve ver o modelo de item listado na **Adicionar Novo Item** caixa de diálogo. Para exibir o **Adicionar Novo Item** caixa de diálogo, da **Gerenciador de soluções**, selecione o nó do projeto e clique em **Add** > **Novo Item**).
+5. Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado na **novo projeto** caixa de diálogo (**arquivo** > **novo**  >  **Projeto**), no Visual C# ou no nó Visual Basic. Para um projeto de modelo de item, você deve ver o modelo de item listado na **Adicionar Novo Item** caixa de diálogo. Para exibir o **Adicionar Novo Item** caixa de diálogo, da **Gerenciador de soluções**, selecione o nó do projeto e clique em **Add** > **Novo Item**).
 
 ## <a name="see-also"></a>Consulte também
 
