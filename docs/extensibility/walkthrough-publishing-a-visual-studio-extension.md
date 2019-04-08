@@ -30,7 +30,7 @@ Este passo a passo mostra como publicar uma extensão do Visual Studio no Visual
 
 Este artigo usa uma extensão de VSPackage padrão, mas as etapas são válidas para cada tipo de extensão.
 
-1. Criar um VSPackage no c#, chamado `TestPublish` que possui um comando de menu. Para obter mais informações, consulte [criar sua primeira extensão: Olá, mundo](../extensibility/extensibility-hello-world.md).
+1. Criar um VSPackage no C#, chamado `TestPublish` que possui um comando de menu. Para obter mais informações, consulte [criar sua primeira extensão: Olá, mundo](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Empacotar sua extensão
 

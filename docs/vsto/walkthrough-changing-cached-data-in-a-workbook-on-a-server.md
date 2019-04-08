@@ -67,7 +67,7 @@ ms.locfileid: "54866003"
 
 2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
 
-3.  No painel de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, clique em **Windows**.
+3.  No painel de modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, clique em **Windows**.
 
 4.  Na lista de modelos de projeto, selecione **biblioteca de classes**.
 
@@ -127,7 +127,7 @@ ms.locfileid: "54866003"
 
 1.  No **Gerenciador de soluções**, clique com botão direito do **AdventureWorksDataSet** solução, aponte para **adicionar**e, em seguida, clique em **novo projeto**.
 
-2.  No painel de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, expanda **Office**.
+2.  No painel de modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office**.
 
 3.  Sob o expandida **Office** nó, selecione o **2010** nó.
 
@@ -228,7 +228,7 @@ ms.locfileid: "54866003"
 
 1.  No **Gerenciador de soluções**, clique com botão direito do **AdventureWorksDataSet** solução, aponte para **adicionar**e, em seguida, clique em **novo projeto**.
 
-2.  No **tipos de projeto** painel, expanda **Visual c#** ou **Visual Basic**e, em seguida, clique em **Windows**.
+2.  No **tipos de projeto** painel, expanda **Visual C#** ou **Visual Basic**e, em seguida, clique em **Windows**.
 
 3.  No **modelos** painel, selecione **aplicativo de Console**.
 
@@ -255,7 +255,7 @@ ms.locfileid: "54866003"
 
 6. Abra o *Program.cs* ou *Module1.vb* arquivo no Editor de códigos.
 
-7. Adicione o seguinte **usando** (para c#) ou **Imports** (para Visual Basic) à parte superior do arquivo de código.
+7. Adicione o seguinte **usando** (para C#) ou **Imports** (para Visual Basic) à parte superior do arquivo de código.
 
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]

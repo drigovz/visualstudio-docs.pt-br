@@ -33,7 +33,7 @@ Você pode adicionar estereótipos a elementos de modelo UML para fornecer infor
 |-------------|-------------|  
 |[L2 de perfil padrão de UML](#L2)|Um conjunto padrão de estereótipos que pode ser usado para adicionar informações extras sobre um elemento ou um relacionamento.|  
 |[L3 do perfil padrão de UML](#L3)|Um conjunto padrão de estereótipos que pode ser usado para adicionar informações extras sobre um elemento ou um relacionamento.|  
-|[Perfil do c#](#NetProfile)|Se você pretende uma classe ou outro elemento em um modelo UML para representar o código do programa, você pode indicar isso aplicando um dos estereótipos do perfil do c#.<br /><br /> Essas estereótipos também adicionar propriedades aos elementos de modelo.|  
+|[Perfil do C#](#NetProfile)|Se você pretende uma classe ou outro elemento em um modelo UML para representar o código do programa, você pode indicar isso aplicando um dos estereótipos do perfil do C#.<br /><br /> Essas estereótipos também adicionar propriedades aos elementos de modelo.|  
   
  Quando você cria um novo modelo UML, o UML padrão perfis L2 e L3 são vinculadas ao modelo, a menos que você remova os links.  
   
@@ -122,21 +122,21 @@ Você pode adicionar estereótipos a elementos de modelo UML para fornecer infor
 |metaModel|Modelo|Define uma linguagem de modelagem, como uma variante do UML, ou uma linguagem específica de domínio.|  
 |systemModel|Modelo|Um modelo que é uma coleção de modelos que se aplicam ao mesmo sistema, por exemplo, uma especificação, uma realização e relacionamentos de rastreamento entre eles.|  
   
-##  <a name="NetProfile"></a> Perfil do c#  
+##  <a name="NetProfile"></a> Perfil do C#  
  Os estereótipos definidos neste perfil permitem que você indicar que um elemento de modelo destina-se para a tradução para o código do programa. Cada estereótipo define propriedades adicionais que podem ser definidas no elemento de modelo.  
   
- Para disponibilizar essas estereótipos, vincule um modelo ou pacote para o perfil do c#. Em seguida, você pode aplicar os estereótipos a elementos de modelo no modelo ou pacote.  
+ Para disponibilizar essas estereótipos, vincule um modelo ou pacote para o perfil do C#. Em seguida, você pode aplicar os estereótipos a elementos de modelo no modelo ou pacote.  
   
  Os estereótipos disponíveis, os elementos aos quais elas se aplicam e as propriedades adicionais que eles se tornam disponíveis são resumidas na tabela a seguir.  
   
 |Estereótipo|Aplica-se a|Propriedades|  
 |----------------|----------------|----------------|  
-|**Classe do c#**|Classe UML<br /><br /> Componente|**Atributos CLR**<br /><br /> **É parcial**<br /><br /> **Está lacrado**<br /><br /> **É estático**<br /><br /> **Não é seguro**<br /><br /> **Visibilidade do pacote**|  
-|**Struct c#**|Classe UML<br /><br /> Componente|**Atributos CLR**<br /><br /> **É parcial**<br /><br /> **Não é seguro**<br /><br /> **Visibilidade do pacote**|  
-|**Membros globais do c#**|Classe UML<br /><br /> Componente|**Atributos CLR**|  
-|**Interface c#**|Interface UML|**Atributos CLR**<br /><br /> **É parcial**<br /><br /> **Visibilidade do pacote**|  
-|**Enum do c#**|Enumeração de UML|**ClrAttributes**<br /><br /> **Tipo base**|  
-|**Namespace do c#**|Pacote UML|**Atributos CLR**<br /><br /> **Nome de base**<br /><br /> **Usando namespaces**|  
+|**Classe do C#**|Classe UML<br /><br /> Componente|**Atributos CLR**<br /><br /> **É parcial**<br /><br /> **Está lacrado**<br /><br /> **É estático**<br /><br /> **Não é seguro**<br /><br /> **Visibilidade do pacote**|  
+|**Struct C#**|Classe UML<br /><br /> Componente|**Atributos CLR**<br /><br /> **É parcial**<br /><br /> **Não é seguro**<br /><br /> **Visibilidade do pacote**|  
+|**Membros globais do C#**|Classe UML<br /><br /> Componente|**Atributos CLR**|  
+|**Interface C#**|Interface UML|**Atributos CLR**<br /><br /> **É parcial**<br /><br /> **Visibilidade do pacote**|  
+|**Enum do C#**|Enumeração de UML|**ClrAttributes**<br /><br /> **Tipo base**|  
+|**Namespace do C#**|Pacote UML|**Atributos CLR**<br /><br /> **Nome de base**<br /><br /> **Usando namespaces**|  
   
 ## <a name="see-also"></a>Consulte também  
  [Adicionar estereótipos a elementos de modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md)   

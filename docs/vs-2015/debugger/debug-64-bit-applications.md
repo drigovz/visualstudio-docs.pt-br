@@ -40,7 +40,7 @@ Você pode depurar um aplicativo de 64 bits que está sendo executado no computa
 ## <a name="debug-a-64-bit-application"></a>Depurar um aplicativo de 64 bits  
  Para tentar depurar um aplicativo de 64 bits:  
   
-1.  Crie uma solução do Visual Studio, por exemplo um console aplicativo c#.  
+1.  Crie uma solução do Visual Studio, por exemplo um console aplicativo C#.  
   
 2.  Defina a configuração para 64 bits usando o Configuration Manager. Para obter mais informações, confira [Como: Configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).  
   

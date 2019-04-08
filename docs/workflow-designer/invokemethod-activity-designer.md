@@ -43,7 +43,7 @@ A tabela a seguir mostra o <xref:System.Activities.Statements.InvokeMethod> prop
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|O objeto que contém o método para chamar. Esta propriedade pode ser editada na superfície de designer.<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> ou <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> são necessários para ser definidos.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|O tipo de <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Esta propriedade pode ser editada na superfície de designer. Esta propriedade deve ser definida somente se o método é chamado estático.|
 
-Passar parâmetros como uma linguagem c# **horizontalmente** parâmetro (por exemplo, `Method1(out myParam))`, use **OutArgument** em vez de **InOutArgument**
+Passar parâmetros como uma linguagem C# **horizontalmente** parâmetro (por exemplo, `Method1(out myParam))`, use **OutArgument** em vez de **InOutArgument**
 
 Métodos com argumentos chamados **TargetObject** ou **resultado** não pode ser invocado usando o <xref:System.Activities.Statements.InvokeMethod> atividade. A razão para isso é que registros de atividade de <xref:System.Activities.Statements.InvokeMethod><xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> e <xref:System.Activities.Statements.InvokeMethod.Result%2A> em <xref:System.Activities.Activity.CacheMetadata%2A>.
 

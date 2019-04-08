@@ -52,7 +52,7 @@ O ADO.NET fornece métodos simples para trabalhar com dados XML. Neste passo a p
 >  As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar suas configurações, nos **ferramentas** menu, selecione**Import and Export Settings**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Criar um novo projeto  
- Nesta etapa, você cria um projeto do Visual Basic ou Visual c# que contém este passo a passo.  
+ Nesta etapa, você cria um projeto do Visual Basic ou Visual C# que contém este passo a passo.  
   
 #### <a name="to-create-the-new-windows-project"></a>Para criar o novo projeto do Windows  
   

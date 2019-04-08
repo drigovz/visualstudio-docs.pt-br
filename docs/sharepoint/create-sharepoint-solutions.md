@@ -20,7 +20,7 @@ ms.lasthandoff: 03/14/2019
 ms.locfileid: "57869909"
 ---
 # <a name="create-sharepoint-solutions"></a>Criar soluções do SharePoint
-  Você pode criar aplicativos do SharePoint no Visual Studio como uma alternativa a criá-los no SharePoint Designer. O Visual Studio promove rápido desenvolvimento do SharePoint, fornecendo recursos como ferramentas avançadas de depuração, IntelliSense, conclusão da instrução e modelos de projeto. Visual Studio também aproveita ferramentas avançadas com base no .NET Framework e linguagens. Você pode desenvolver projetos do SharePoint usando o Visual Basic ou Visual c#, e você pode desenvolver aplicativos para projetos SharePoint usando JavaScript.
+  Você pode criar aplicativos do SharePoint no Visual Studio como uma alternativa a criá-los no SharePoint Designer. O Visual Studio promove rápido desenvolvimento do SharePoint, fornecendo recursos como ferramentas avançadas de depuração, IntelliSense, conclusão da instrução e modelos de projeto. Visual Studio também aproveita ferramentas avançadas com base no .NET Framework e linguagens. Você pode desenvolver projetos do SharePoint usando o Visual Basic ou Visual C#, e você pode desenvolver aplicativos para projetos SharePoint usando JavaScript.
 
  Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e [crie aplicativos para o SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 

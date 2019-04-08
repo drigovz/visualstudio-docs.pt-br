@@ -58,7 +58,7 @@ Você pode escrever um visualizador personalizado para um objeto de qualquer cla
   
   Os visualizadores personalizados podem ter considerações de segurança. Ver [considerações de segurança do visualizador](../debugger/visualizer-security-considerations.md).  
   
-  Os procedimentos a seguir dão uma exibição de alto nível do que você precisa fazer para criar um visualizador. Para obter uma explicação mais detalhada, consulte [passo a passo: Escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Os procedimentos a seguir dão uma exibição de alto nível do que você precisa fazer para criar um visualizador. Para obter uma explicação mais detalhada, consulte [passo a passo: Escrevendo um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Para criar o lado do depurador  
   

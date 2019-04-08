@@ -36,7 +36,7 @@ ms.locfileid: "57867866"
  Para obter informações sobre conceitos básicos do SharePoint, consulte [blocos de construção do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=179404). Usuários avançados podem criar modelos de item de projeto e projeto personalizados. Para obter mais informações, consulte [estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ## <a name="project-templates"></a>Modelos de projeto
- A seguir está uma lista de modelos de projeto do SharePoint. Para exibir os modelos de projeto do SharePoint no Visual Studio, nos **novo projeto** diálogo caixa, expanda o **SharePoint** nó em um **Visual c#** ou  **Visual Basic**e, em seguida, escolha **2010**.
+ A seguir está uma lista de modelos de projeto do SharePoint. Para exibir os modelos de projeto do SharePoint no Visual Studio, nos **novo projeto** diálogo caixa, expanda o **SharePoint** nó em um **Visual C#** ou  **Visual Basic**e, em seguida, escolha **2010**.
 
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 project
  O conteúdo de um *projeto do SharePoint 2010* estão incluídos em cada modelo de projeto do SharePoint. Contém um projeto do SharePoint 2010:
@@ -68,7 +68,7 @@ ms.locfileid: "57867866"
 ## <a name="project-item-templates"></a>Modelos de item de projeto
  A seguir está uma lista de modelos de item de projeto do SharePoint. Modelos de item de projeto adicionam arquivos à solução do SharePoint para dar suporte à funcionalidade do SharePoint como colunas de site, listas e tipos de conteúdo. Por exemplo, a adição de uma coluna de site para sua solução adiciona um projeto de coluna de site que contém um *Elements. XML* arquivo de definição. Adicionar uma web part visual adiciona um projeto do visual web part à sua solução que contém um *Elements. XML* arquivo, um item de controle de usuário e um item do visual web part.
 
- Para exibir os modelos de item de projeto do SharePoint, no **Gerenciador de soluções**, abra o menu de atalho para um projeto do SharePoint e, em seguida, escolha **Add**, **Novo Item**. Expanda o **SharePoint** nó em um **Visual c#** ou **Visual Basic**e, em seguida, escolha **2010**.
+ Para exibir os modelos de item de projeto do SharePoint, no **Gerenciador de soluções**, abra o menu de atalho para um projeto do SharePoint e, em seguida, escolha **Add**, **Novo Item**. Expanda o **SharePoint** nó em um **Visual C#** ou **Visual Basic**e, em seguida, escolha **2010**.
 
 ### <a name="application-page-farm-solution-only"></a>Página de aplicativo (somente solução de farm)
  Uma **página do aplicativo (somente solução de Farm)** item permite que você projete um [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] página da web para um site do SharePoint. Páginas de aplicativos podem ser usadas somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, confira [Como: Criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md) e [tipo de página layouts do aplicativo](http://go.microsoft.com/fwlink/?LinkId=179434).

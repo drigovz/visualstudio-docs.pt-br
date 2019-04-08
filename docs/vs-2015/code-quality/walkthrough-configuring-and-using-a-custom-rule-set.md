@@ -49,9 +49,9 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
   
 1. Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**.  
   
-2. No **novo projeto** caixa de diálogo **tipos de projeto**, clique em **Visual c#**.  
+2. No **novo projeto** caixa de diálogo **tipos de projeto**, clique em **Visual C#**.  
   
-3. Sob **Visual c#**, selecione **biblioteca de classes**.  
+3. Sob **Visual C#**, selecione **biblioteca de classes**.  
   
 4. No **nome** caixa de texto, digite **RuleSetSample** e, em seguida, clique em **Okey**.  
   

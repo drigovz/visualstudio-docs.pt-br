@@ -72,7 +72,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
 1.  Dos **arquivo** menu, crie um novo projeto.  
   
     > [!NOTE]
-    >  O **Dataset Designer** tem suporte no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e projetos c#. Crie o novo projeto em uma dessas linguagens.  
+    >  O **Dataset Designer** tem suporte no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e projetos C#. Crie o novo projeto em uma dessas linguagens.  
   
 2.  No **novo projeto** na caixa de **tipos de projeto** painel, clique em **Windows**.  
   

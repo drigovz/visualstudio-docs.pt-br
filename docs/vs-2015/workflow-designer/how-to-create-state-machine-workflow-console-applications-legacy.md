@@ -36,7 +36,7 @@ Siga estas etapas para criar um projeto de aplicativo do console de fluxo de tra
     > [!NOTE]
     >  A opção padrão na [!INCLUDE[vs2010](../includes/vs2010-md.md)] está **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.  
   
-4.  No **tipos de projeto** painel, selecione Visual c# ou Visual Basic (sob **outras linguagens**) e, em seguida, selecione **fluxo de trabalho**.  
+4.  No **tipos de projeto** painel, selecione Visual C# ou Visual Basic (sob **outras linguagens**) e, em seguida, selecione **fluxo de trabalho**.  
   
 5.  No **modelos** painel, selecione **aplicativo de Console do fluxo de trabalho de máquina de estado**.  
   

@@ -22,7 +22,7 @@ ms.locfileid: "58924404"
 # <a name="outlining-in-a-legacy-language-service"></a>Estrutura de tópicos em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Estrutura de tópicos torna possível recolher um programa complexo em uma visão geral ou a estrutura de tópicos. Por exemplo, no c# todos os métodos podem ser recolhidos para uma única linha, mostrando apenas a assinatura do método. Além disso, as estruturas e classes podem ser recolhidas para mostrar somente os nomes das estruturas e classes. Dentro de um único método, uma lógica complexa pode ser recolhida para mostrar o fluxo geral mostrando apenas a primeira linha de instruções, como `foreach`, `if`, e `while`.  
+Estrutura de tópicos torna possível recolher um programa complexo em uma visão geral ou a estrutura de tópicos. Por exemplo, no C# todos os métodos podem ser recolhidos para uma única linha, mostrando apenas a assinatura do método. Além disso, as estruturas e classes podem ser recolhidas para mostrar somente os nomes das estruturas e classes. Dentro de um único método, uma lógica complexa pode ser recolhida para mostrar o fluxo geral mostrando apenas a primeira linha de instruções, como `foreach`, `if`, e `while`.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [passo a passo: Estrutura de tópicos](../../extensibility/walkthrough-outlining.md).  
   
@@ -35,7 +35,7 @@ Estrutura de tópicos torna possível recolher um programa complexo em uma visã
  O valor da `AutoOutlining` entrada de registro pode ser obtida por meio do <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> propriedade no <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. O `AutoOutlining` entrada de registro pode ser inicializada com um parâmetro nomeado para o <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo (consulte [Registrando um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obter detalhes).  
   
 ## <a name="the-hidden-region"></a>A região oculta  
- Para fornecer a estrutura de tópicos, o serviço de linguagem deve dar suporte a regiões ocultas. Esses são os intervalos de texto que podem ser expandidos ou recolhidos. Regiões ocultas podem ser delimitados por símbolos de idioma padrão, como chaves, ou por símbolos personalizados. Por exemplo, o c# tem um `#region` / `#endregion` par que delimita uma região oculta.  
+ Para fornecer a estrutura de tópicos, o serviço de linguagem deve dar suporte a regiões ocultas. Esses são os intervalos de texto que podem ser expandidos ou recolhidos. Regiões ocultas podem ser delimitados por símbolos de idioma padrão, como chaves, ou por símbolos personalizados. Por exemplo, o C# tem um `#region` / `#endregion` par que delimita uma região oculta.  
   
  Regiões ocultas são gerenciados por um Gerenciador de região oculta, que é exposto como o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interface.  
   
@@ -48,7 +48,7 @@ Estrutura de tópicos torna possível recolher um programa complexo em uma visã
 ### <a name="example"></a>Exemplo  
  Aqui está um exemplo simplificado de criação de regiões ocultas para todos os pares de chaves. Supõe-se que a linguagem fornece a correspondência de chaves e as chaves a serem correspondidos incluem pelo menos as chaves ({e}). Essa abordagem é apenas para fins ilustrativos. Uma implementação completa teria um tratamento completo de casos no <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Este exemplo também mostra como definir a <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preferência para `true` temporariamente. Uma alternativa é especificar o `AutoOutlining` parâmetro no nomeado o `ProvideLanguageServiceAttribute` atributo em seu pacote de idiomas.  
   
- Este exemplo presume c# regras para comentários, cadeias de caracteres e literais.  
+ Este exemplo presume C# regras para comentários, cadeias de caracteres e literais.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

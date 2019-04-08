@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54787099"
@@ -81,4 +81,4 @@ Os snippets de código são snippets de código prontos que você pode inserir r
  [Como: Criar um novo trecho com substituições](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Parâmetros de modelo](../ide/template-parameters.md)   
  [Como usar snippets de código surround-with](../ide/how-to-use-surround-with-code-snippets.md)   
- [Como: Restaurar trechos de refatoração c#](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Como: Restaurar trechos de refatoração C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

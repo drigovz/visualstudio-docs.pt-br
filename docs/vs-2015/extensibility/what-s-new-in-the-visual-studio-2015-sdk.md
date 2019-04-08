@@ -40,7 +40,7 @@ A partir do Visual Studio 2017, verificação de modelos de item e projeto perso
  A partir do SDK do Visual Studio 2015, você tem opções diferentes para criar extensões, dependendo da linguagem de programação que você está usando.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# e Visual Basic
- Para c# e Visual Basic, há uma ampla gama de modelos de item de projeto que permitem que você crie os VSPackages, comandos de menu, janelas de ferramentas, classificadores de editor, editor adornos e as extensões de margem do editor. Você pode adicionar qualquer ou todos eles ao projeto do VSIX standard. Para obter mais informações, consulte:
+ Para C# e Visual Basic, há uma ampla gama de modelos de item de projeto que permitem que você crie os VSPackages, comandos de menu, janelas de ferramentas, classificadores de editor, editor adornos e as extensões de margem do editor. Você pode adicionar qualquer ou todos eles ao projeto do VSIX standard. Para obter mais informações, consulte:
 
 -   [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -50,7 +50,7 @@ A partir do Visual Studio 2017, verificação de modelos de item e projeto perso
 
 -   [Criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     O Assistente de VSPackage não cria mais extensões em c# ou Visual Basic.
+     O Assistente de VSPackage não cria mais extensões em C# ou Visual Basic.
 
 ### <a name="c"></a>C++
  Para C++, o Assistente de VSPackage dar suporte a editores personalizados, as janelas de ferramentas e comandos de menu. Procure-na **novo projeto** caixa de diálogo no **Visual C++ / extensibilidade**.

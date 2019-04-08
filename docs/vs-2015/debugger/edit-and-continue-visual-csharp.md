@@ -1,5 +1,5 @@
 ---
-title: Editar e continuar (Visual c#) | Microsoft Docs
+title: Editar e continuar (Visual C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,7 +31,7 @@ ms.locfileid: "58921791"
 
 Com a função Editar e Continuar no C#, é possível fazer alterações em seu código no modo de interrupção durante a depuração. As alterações podem ser aplicadas sem precisar interromper e reiniciar a sessão de depuração. No modo de execução, o editor de origem é somente leitura.  
   
- Editar e Continuar dá suporte à maioria das alterações que você talvez queira fazer durante uma sessão de depuração, mas há algumas exceções. Para obter mais informações, consulte [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md).  
+ Editar e Continuar dá suporte à maioria das alterações que você talvez queira fazer durante uma sessão de depuração, mas há algumas exceções. Para obter mais informações, consulte [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md).  
   
  Editar e Continuar tem suporte para projetos de 64 bits voltados para o .NET Framework 4.5.1.  
   

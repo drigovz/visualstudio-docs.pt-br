@@ -39,7 +39,7 @@ Um tipo público implementa o operador de igualdade, mas não substitui <xref:Sy
 
 O operador de igualdade se destina a ser uma forma conveniente sintaticamente para acessar a funcionalidade do <xref:System.Object.Equals%2A> método. Se você implementar o operador de igualdade, sua lógica deve ser idêntica de <xref:System.Object.Equals%2A>.
 
-O compilador c# emite um aviso se seu código viola essa regra.
+O compilador C# emite um aviso se seu código viola essa regra.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

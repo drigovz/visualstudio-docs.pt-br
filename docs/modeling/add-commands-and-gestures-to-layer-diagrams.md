@@ -96,7 +96,7 @@ Se você quiser criar um VSIX que contém comandos, validadores de camada e outr
    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definir as extensões de modelagem|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Atualizar formas e diagramas|
 
-6. Edite o arquivo de classe na classe biblioteca projeto c# para conter o código para a sua extensão. Para obter mais informações, consulte uma das seções a seguir:
+6. Edite o arquivo de classe na classe biblioteca projeto C# para conter o código para a sua extensão. Para obter mais informações, consulte uma das seções a seguir:
 
      [Definindo um comando de Menu](#command)
 

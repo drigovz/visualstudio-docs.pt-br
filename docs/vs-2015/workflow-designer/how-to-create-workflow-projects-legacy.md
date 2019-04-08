@@ -35,7 +35,7 @@ Siga estas etapas para criar um projeto de [!INCLUDE[wf](../includes/wf-md.md)] 
     > [!NOTE]
     >  A opção padrão na [!INCLUDE[vs2010](../includes/vs2010-md.md)] está **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.  
   
-4.  No **tipos de projeto** painel, selecione projetos do Visual c# ou projetos do Visual Basic e, em seguida, selecione **fluxo de trabalho**.  
+4.  No **tipos de projeto** painel, selecione projetos do Visual C# ou projetos do Visual Basic e, em seguida, selecione **fluxo de trabalho**.  
   
 5.  No **modelos** painel, selecione um dos modelos de projeto instalado:  
   
