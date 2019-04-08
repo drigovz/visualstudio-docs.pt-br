@@ -1,5 +1,5 @@
 ---
-title: Editar e continuar erros e avisos (c#) | Microsoft Docs
+title: Editar e continuar erros e avisos (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -75,7 +75,7 @@ Você fez uma edição em uma seção do código que não é permitido em Editar
   
  As edições declarativas de código que afetam a estrutura pública de uma classe são proibidas em geral, e algumas edições que você pode fazer em um método, corpo da propriedade ou declarações privadas dentro de uma classe não são permitidas. Sempre que possível, Editar e Continuar marca o código que não pode ser editado como cinza claro e exibe uma mensagem de erro.  
   
- Para obter mais informações sobre as edições com suporte em Editar e continuar para [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consulte [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md). Se você precisar obter mais informações sobre um erro específico ou um aviso, você pode pesquisar ou postar no MSDN [Fórum do IDE do Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693).  
+ Para obter mais informações sobre as edições com suporte em Editar e continuar para [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consulte [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Se você precisar obter mais informações sobre um erro específico ou um aviso, você pode pesquisar ou postar no MSDN [Fórum do IDE do Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

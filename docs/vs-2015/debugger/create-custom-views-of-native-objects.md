@@ -89,7 +89,7 @@ A estrutura do Natvis do Visual Studio permite que você personalize a forma com
 
 1.  arquivos. natvis é inserido em um. PDB que você está depurando (a menos que um arquivo de mesmo nome existe em um projeto carregado)  
 
-2.  arquivos. natvis que fazem parte de um projeto C++ carregado ou um item de solução de nível superior. Isso inclui carregados todos os projetos do C++, incluindo bibliotecas de classes, mas ele não inclui projetos de outras linguagens (por exemplo, você não pode carregar um arquivo. natvis de um projeto de c#). Para projetos executáveis, você deve usar os itens de solução para hospedar todos os arquivos. natvis que ainda não estão presentes em um. PDB, porque não há nenhum projeto C++.  
+2.  arquivos. natvis que fazem parte de um projeto C++ carregado ou um item de solução de nível superior. Isso inclui carregados todos os projetos do C++, incluindo bibliotecas de classes, mas ele não inclui projetos de outras linguagens (por exemplo, você não pode carregar um arquivo. natvis de um projeto de C#). Para projetos executáveis, você deve usar os itens de solução para hospedar todos os arquivos. natvis que ainda não estão presentes em um. PDB, porque não há nenhum projeto C++.  
 
 3.  O diretório específico do usuário natvis (**%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**  
 

@@ -38,7 +38,7 @@ ms.locfileid: "58925292"
 ## <a name="rule-description"></a>Descrição da Regra
  Os tipos declaram métodos como virtuais de forma que a herança de tipos possa substituir a implementação do método virtual. Por definição, você não pode herdar de um tipo selado, tornando um método virtual em um tipo lacrado sem sentido.
 
- Os compiladores do Visual Basic .NET e c# não permitem tipos violar essa regra.
+ Os compiladores do Visual Basic .NET e C# não permitem tipos violar essa regra.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, tornar o método não virtual ou tornar o tipo herdável.

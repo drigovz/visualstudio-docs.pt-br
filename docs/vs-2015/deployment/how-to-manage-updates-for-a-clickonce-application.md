@@ -104,7 +104,7 @@ ms.locfileid: "58928061"
   
 5.  No **atualizar local** , insira o local de atualização com uma URL totalmente qualificada, usando o formato http://Hostname/ApplicationName, ou um caminho UNC usando o formato \\\Server\ApplicationName ou clique no **procurar** botão para procurar o local de atualização. O local de atualização é onde o aplicativo irá procurar uma versão atualizada de si mesmo.  
   
-6.  Crie um botão, o item de menu ou outro item de interface do usuário em um formulário do Windows que os usuários irá selecionar para verificar se há atualizações. Manipulador de eventos do item, chame um método para verificar e instalar atualizações. Você pode encontrar um exemplo de código do Visual Basic e Visual c# para esse tipo de método em [como: Verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6.  Crie um botão, o item de menu ou outro item de interface do usuário em um formulário do Windows que os usuários irá selecionar para verificar se há atualizações. Manipulador de eventos do item, chame um método para verificar e instalar atualizações. Você pode encontrar um exemplo de código do Visual Basic e Visual C# para esse tipo de método em [como: Verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Crie seu aplicativo.  
   

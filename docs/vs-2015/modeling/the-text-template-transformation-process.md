@@ -21,7 +21,7 @@ ms.locfileid: "58928941"
 # <a name="the-text-template-transformation-process"></a>O processo de transformação de modelo de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O processo de transformação do modelo de texto utiliza um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como saída. Por exemplo, você pode usar modelos de texto para gerar o código Visual Basic ou c#, ou você pode gerar um relatório HTML.  
+O processo de transformação do modelo de texto utiliza um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como saída. Por exemplo, você pode usar modelos de texto para gerar o código Visual Basic ou C#, ou você pode gerar um relatório HTML.  
   
  Três componentes fazem parte desse processo: o mecanismo, o host e os processadores de diretriz. O mecanismo controla o processo. ele interage com o host e o processador de diretriz para produzir o arquivo de saída. O host fornece qualquer interação com o ambiente, como localizar arquivos e assemblies. O processador de diretriz adiciona funcionalidade, como ler dados de um arquivo XML ou um banco de dados.  
   

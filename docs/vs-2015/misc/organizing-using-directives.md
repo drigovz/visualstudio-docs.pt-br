@@ -20,4 +20,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58922270"
 ---
 # <a name="organizing-using-directives"></a>Organizar usando diretivas
-Este conteúdo foi movido para [Visual c# IntelliSense](../ide/visual-csharp-intellisense.md).
+Este conteúdo foi movido para [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md).

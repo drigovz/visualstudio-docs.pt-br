@@ -37,7 +37,7 @@ Você pode obter uma exibição em tempo real de seu código XAML em execução 
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Examinando os elementos na árvore Visual  
  Vamos começar com um aplicativo muito simples do WPF que tem uma exibição de lista e um botão. Sempre que você clica no botão, o outro item é adicionado à lista. Itens pares são coloridos em cinza e itens ímpares são coloridos de amarelos.  
   
- Criar um novo aplicativo do WPF em C# (arquivo / novo / projeto, em seguida, selecione c# e localizar o aplicativo do WPF). Denomine **TestXAML**.  
+ Criar um novo aplicativo do WPF em C# (arquivo / novo / projeto, em seguida, selecione C# e localizar o aplicativo do WPF). Denomine **TestXAML**.  
   
  Altere o MainWindow. XAML para o seguinte:  
   

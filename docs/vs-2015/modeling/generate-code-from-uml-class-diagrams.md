@@ -26,7 +26,7 @@ ms.locfileid: "58929588"
 # <a name="generate-code-from-uml-class-diagrams"></a>Gerar código por meio de diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual Studio, use o **gerar código** comando. Por padrão, o comando gera um tipo do C# para cada tipo UML selecionado. É possível modificar e estender esse comportamento modificando ou copiando-se os modelos de texto que geram o código. É possível especificar o comportamento diferente para os tipos contidos em pacotes diferentes do modelo.  
+Para gerar código Visual C# .NET a partir de diagramas de classe UML no Visual Studio, use o **gerar código** comando. Por padrão, o comando gera um tipo do C# para cada tipo UML selecionado. É possível modificar e estender esse comportamento modificando ou copiando-se os modelos de texto que geram o código. É possível especificar o comportamento diferente para os tipos contidos em pacotes diferentes do modelo.  
 
  O **gerar código** comando é especialmente adequado à geração de código da seleção do usuário de elementos e à geração de um arquivo para cada classe UML ou outro elemento. Por exemplo, a captura de tela mostra dois arquivos do C# que foram gerados com base em duas classes UML.  
 
@@ -86,7 +86,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
   Adicionando um estereótipo a cada tipo UML, você pode controlar mais propriedades do tipo do C# gerado.  
 
-|**Para criar esse tipo de c#**|**Desenhar este tipo UML**|**Aplicar este estereótipo**|  
+|**Para criar esse tipo de C#**|**Desenhar este tipo UML**|**Aplicar este estereótipo**|  
 |---------------------------------|----------------------------|-------------------------------|  
 |Classe|Classe|\<none > ou<br /><br /> Classe do C#|  
 |Interface|Interface|\<none > ou<br /><br /> Interface do C#|  
@@ -101,7 +101,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 2. No **propriedades** janela, escolha a seta suspensa na **estereótipos** propriedade e, em seguida, selecione a caixa de seleção do estereótipo que você deseja aplicar.  
 
    > [!TIP]
-   >  Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, nos **propriedades** janela, escolha **perfil**e, em seguida, habilite o perfil do c#.  
+   >  Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, nos **propriedades** janela, escolha **perfil**e, em seguida, habilite o perfil do C#.  
 
 3. Expanda o **estereótipos** propriedade para ver as propriedades adicionais que podem ser definidas.  
 
@@ -112,7 +112,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
  Além disso, cada estereótipo oferece várias propriedades adicionais que é possível definir. Esses valores são convertidos em palavras-chave no código do C#. Por exemplo, se você definir a propriedade `Is Static` em uma classe, a classe do C# será `static`.  
 
- Para definir essas propriedades adicionais, selecione a classe ou outro elemento no diagrama. Na janela Propriedades, expanda **estereótipos**e, em seguida, expanda o estereótipo do c#, como **classe c#**.  Para classes, entre essas propriedades adicionais estão:  
+ Para definir essas propriedades adicionais, selecione a classe ou outro elemento no diagrama. Na janela Propriedades, expanda **estereótipos**e, em seguida, expanda o estereótipo do C#, como **classe C#**.  Para classes, entre essas propriedades adicionais estão:  
 
 - Atributos CLR  
 

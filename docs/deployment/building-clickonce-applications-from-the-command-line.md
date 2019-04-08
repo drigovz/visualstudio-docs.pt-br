@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
 ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/28/2019
 ms.locfileid: "58567835"
@@ -33,7 +33,7 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
  "target" é um indicador para o MSBuild sobre como processar o comando. Os destinos de chave são o destino de "build" e o destino de "Publicar". O destino de build é o equivalente a selecionar a compilação comando (ou pressionando F5) no IDE. Se você quiser criar seu projeto, pode fazer isso digitando `msbuild`. Esse comando funciona porque o destino de compilação é o destino padrão para todos os projetos gerados pelo [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Isso significa que você explicitamente não precisa especificar o destino de build. Portanto, digitando `msbuild` é a mesma operação que digitar `msbuild /target:build`.
 
- O `/target:publish` comando informa ao MSBuild para invocar o destino de publicação. O destino de publicação depende do destino de build. Isso significa que a operação de publicação é um superconjunto da operação de compilação. Por exemplo, se você fez uma alteração em um dos seus arquivos de origem do Visual Basic ou c#, o assembly correspondente automaticamente ser recriado por operação de publicação.
+ O `/target:publish` comando informa ao MSBuild para invocar o destino de publicação. O destino de publicação depende do destino de build. Isso significa que a operação de publicação é um superconjunto da operação de compilação. Por exemplo, se você fez uma alteração em um dos seus arquivos de origem do Visual Basic ou C#, o assembly correspondente automaticamente ser recriado por operação de publicação.
 
  Para obter informações sobre como gerar uma completa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando a ferramenta de linha de comando Mage.exe para criar sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto, consulte [passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 

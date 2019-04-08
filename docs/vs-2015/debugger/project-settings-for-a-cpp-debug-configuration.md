@@ -125,7 +125,7 @@ ms.locfileid: "58929276"
 Você pode alterar as configurações de projeto para uma configuração de depuração C ou Visual C++ na **páginas de propriedades** caixa de diálogo, conforme discutido em [como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram como localizar configurações relacionadas ao depurador na caixa de diálogo **Páginas de Propriedades**.  
   
 > [!WARNING]
->  As configurações de projeto de depuração na **propriedades de configuração/depuração** categoria para aplicativos da Windows Store e componentes que são escritos em C++ são diferentes. Ver [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) no Centro de desenvolvimento do Windows.  
+>  As configurações de projeto de depuração na **propriedades de configuração/depuração** categoria para aplicativos da Windows Store e componentes que são escritos em C++ são diferentes. Ver [iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) no Centro de desenvolvimento do Windows.  
   
  Especifique qual depurador usar a **depurador a iniciar** caixa de listagem. Sua escolha afetará as propriedades visíveis.  
   

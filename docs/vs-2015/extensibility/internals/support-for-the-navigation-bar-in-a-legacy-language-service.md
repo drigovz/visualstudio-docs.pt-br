@@ -29,7 +29,7 @@ A barra de navegação na parte superior do editor de modo de exibição exibe o
  Quando o cursor é movido, o <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> chamadas de método a <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> método. A base <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método na sua <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe para atualizar o estado da barra de navegação. Você passa um conjunto de <xref:Microsoft.VisualStudio.Package.DropDownMember> objetos para esse método. Cada objeto representa uma entrada na lista suspensa.  
   
 ## <a name="the-contents-of-the-navigation-bar"></a>O conteúdo da barra de navegação  
- A barra de navegação geralmente contém uma lista de tipos e uma lista de membros. A lista de tipos inclui todos os tipos disponíveis no arquivo de origem atual. Os nomes de tipo incluem as informações do namespace completo. Este é um exemplo de código em c# com dois tipos:  
+ A barra de navegação geralmente contém uma lista de tipos e uma lista de membros. A lista de tipos inclui todos os tipos disponíveis no arquivo de origem atual. Os nomes de tipo incluem as informações do namespace completo. Este é um exemplo de código em C# com dois tipos:  
   
 ```csharp  
 namespace TestLanguagePackage  

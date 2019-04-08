@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54775568"
@@ -43,7 +43,7 @@ Usando operadores de pesquisa avançada, você pode refinar a pesquisa de conte�
 |Linguagem de programação|Use|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> ou<br /><br /> code:visualbasic|  
-|C#|code:c#<br /><br /> ou<br /><br /> code:csharp|  
+|C#|code:C#<br /><br /> ou<br /><br /> code:csharp|  
 |C++|code:cpp<br /><br /> ou<br /><br /> code:c++<br /><br /> ou<br /><br /> code:cplusplus|  
 |F#|code:f#<br /><br /> ou<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> ou<br /><br /> code:js|  

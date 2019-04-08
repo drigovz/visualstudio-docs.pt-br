@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54756386"
@@ -45,11 +45,11 @@ Esta seção descreve alguns elementos da interface do usuário do IDE (ambiente
 
  [Opções, Editor de texto, C/C++, avançado](../../ide/reference/options-text-editor-c-cpp-advanced.md) permite que você especifique opções avançadas para arquivos C ou C++.
 
- [Opções, Editor de texto, c#, formatação](../../ide/reference/options-text-editor-csharp-formatting.md) permite que você especifique opções de formatação para arquivos c#.
+ [Opções, Editor de texto, C#, formatação](../../ide/reference/options-text-editor-csharp-formatting.md) permite que você especifique opções de formatação para arquivos C#.
 
- [Opções, Editor de texto, c#, avançado](../../ide/reference/options-text-editor-csharp-advanced.md) permite que você especifique opções avançadas para arquivos c#.
+ [Opções, Editor de texto, C#, avançado](../../ide/reference/options-text-editor-csharp-advanced.md) permite que você especifique opções avançadas para arquivos C#.
 
- [Opções, Editor de texto, c#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) permite que você especifique as opções do IntelliSense para arquivos c#.
+ [Opções, Editor de texto, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) permite que você especifique as opções do IntelliSense para arquivos C#.
 
  [Opções, Editor de texto, XAML, formatação](../../ide/reference/options-text-editor-xaml-formatting.md) permite que você especifique opções de formatação para arquivos XAML.
 

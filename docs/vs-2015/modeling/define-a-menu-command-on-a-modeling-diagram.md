@@ -57,7 +57,7 @@ No Visual Studio, você pode definir itens de menu adicionais nos menus de atalh
 
    1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
 
-   2.  Sob **modelos instalados**, selecione **Visual c#** ou **Visual Basic**. Na coluna do meio, escolha **biblioteca de classes**.  
+   2.  Sob **modelos instalados**, selecione **Visual C#** ou **Visual Basic**. Na coluna do meio, escolha **biblioteca de classes**.  
 
    3.  Definir **solução** para indicar se você deseja criar uma nova solução ou adicionar um componente a uma solução VSIX que você já abriu.  
 
@@ -150,7 +150,7 @@ No Visual Studio, você pode definir itens de menu adicionais nos menus de atalh
 
     1.  Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
 
-    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, escolha **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
+    2.  Sob **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, escolha **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
 
 3.  No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.  
 

@@ -42,7 +42,7 @@ A tabela a seguir lista CATIDs que são usados para estender `Project` e `Projec
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBFolderBrowseObject>|{932DC619-2EAA-4192-B7E6-3D15AD31DF49}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBReferenceBrowseObject>|{2289B812-8191-4e81-B7B3-174045AB0CB5}|  
   
-## <a name="visual-c-catids"></a>CATIDs do Visual c#  
+## <a name="visual-c-catids"></a>CATIDs do Visual C#  
  CATIDs a seguir podem ser usados para estender [!INCLUDE[csprcs](../../includes/csprcs-md.md)] procurar objetos. Eles são definidos em VSLangProj.olb.  
   
 |Nome|GUID|  

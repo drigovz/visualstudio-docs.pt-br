@@ -65,7 +65,7 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-3.  Expandir **Visual c#** ou **Visual Basic**e, em seguida, selecione **Windows**.  
+3.  Expandir **Visual C#** ou **Visual Basic**e, em seguida, selecione **Windows**.  
   
 4.  Certifique-se de que **.NET Framework 4** está selecionado na caixa de combinação na parte superior da caixa de diálogo. O <xref:System.Windows.Controls.DataGrid> controle que você pode usar neste passo a passo está disponível apenas no .NET Framework 4.  
   

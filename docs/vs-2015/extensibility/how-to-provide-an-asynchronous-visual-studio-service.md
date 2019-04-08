@@ -22,9 +22,9 @@ Se você quiser obter um serviço sem bloquear o thread de interface do usuário
 
 ## <a name="implementing-an-asynchronous-service"></a>Implementando um serviço assíncrono
 
-1.  Crie um projeto VSIX (**arquivo / novo / projeto / Visual c# / extensibilidade / VSIX Project**). Nomeie o projeto **TestAsync**.
+1.  Crie um projeto VSIX (**arquivo / novo / projeto / Visual C# / extensibilidade / VSIX Project**). Nomeie o projeto **TestAsync**.
 
-2.  Adicione um VSPackage ao projeto. Selecione o nó do projeto na **Gerenciador de soluções** e clique em **Add / novo item / itens do Visual c# / extensibilidade / pacote do Visual Studio**. Nomeie esse arquivo **TestAsyncPackage.cs**.
+2.  Adicione um VSPackage ao projeto. Selecione o nó do projeto na **Gerenciador de soluções** e clique em **Add / novo item / itens do Visual C# / extensibilidade / pacote do Visual Studio**. Nomeie esse arquivo **TestAsyncPackage.cs**.
 
 3.  No TestAsyncPackage.cs, altere o pacote para herdar de AsyncPackage em vez de pacote:
 

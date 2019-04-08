@@ -33,12 +33,12 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
   
 2.  Na **Gerenciador de soluções**, a solução com o botão direito, clique em **Add**e, em seguida, clique em **novo projeto**.  
   
-3.  No painel esquerdo do **novo projeto** diálogo caixa, expanda o a **Visual Basic** ou **Visual c#** nó e clique em **Windows**. No painel central, selecione **biblioteca de controle de usuário do WPF**.  
+3.  No painel esquerdo do **novo projeto** diálogo caixa, expanda o a **Visual Basic** ou **Visual C#** nó e clique em **Windows**. No painel central, selecione **biblioteca de controle de usuário do WPF**.  
   
 4.  Nomeie o controle `WebUserControl` e, em seguida, clique em **Okey**.  
   
 ## <a name="implementing-the-user-control"></a>Implementando o controle de usuário  
- Para implementar um controle de usuário do WPF, crie a interface do usuário (IU) no XAML e, em seguida, gravar os eventos de lógica em c# ou outra linguagem .NET.  
+ Para implementar um controle de usuário do WPF, crie a interface do usuário (IU) no XAML e, em seguida, gravar os eventos de lógica em C# ou outra linguagem .NET.  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>Para gravar o XAML para o controle de usuário  
   

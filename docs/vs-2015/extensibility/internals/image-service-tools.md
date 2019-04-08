@@ -20,6 +20,6 @@ O SDK do VS inclui várias ferramentas para ajudar desenvolvedores de extensão 
   
 -   O [de recursos de manifesto](../../extensibility/internals/manifest-from-resources.md) ferramenta utiliza uma lista de recursos de imagem (arquivos. png ou. XAML) e gera um arquivo de manifesto de imagem.  
   
--   O [manifesto ao código](../../extensibility/internals/manifest-to-code.md) ferramenta usa um arquivo de manifesto de imagem e gera um arquivo de conteúdo adicional para usar em arquivos de C++, c#, VB ou. VSCT.  
+-   O [manifesto ao código](../../extensibility/internals/manifest-to-code.md) ferramenta usa um arquivo de manifesto de imagem e gera um arquivo de conteúdo adicional para usar em arquivos de C++, C#, VB ou. VSCT.  
   
 -   O [Visualizador da biblioteca de imagens](../../extensibility/internals/image-library-viewer.md) pode carregar, editar e pesquisar os manifestos de imagem.

@@ -200,31 +200,31 @@ Esta seção contém informações sobre namespaces, namespaces relacionados e o
  Usado para o Assistente do Visual Studio.  
   
  <xref:VSLangProj>  
- Usado para a automação de projeto c# e Visual Basic.  
+ Usado para a automação de projeto C# e Visual Basic.  
   
  <xref:VSLangProj2>  
- Usado para a automação de projeto c# e Visual Basic.  
+ Usado para a automação de projeto C# e Visual Basic.  
   
  <xref:VSLangProj80>  
- Usado para a automação de projeto c# e Visual Basic.  
+ Usado para a automação de projeto C# e Visual Basic.  
   
  <xref:VSLangProj90>  
- Usado para a automação de projeto c# e Visual Basic.  
+ Usado para a automação de projeto C# e Visual Basic.  
   
  <xref:VSLangProj100>  
- Usado para a automação de projeto c# e Visual Basic.  
+ Usado para a automação de projeto C# e Visual Basic.  
   
  <xref:VSLangProj110>  
- Usado para a automação de projeto c# e Visual Basic.  
+ Usado para a automação de projeto C# e Visual Basic.  
   
  <xref:VSLangProj140>  
- Usado para a automação de projeto c# e Visual Basic.  
+ Usado para a automação de projeto C# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Language.CallHierarchy>  
- Usado para a automação de c# e Visual Basic.  
+ Usado para a automação de C# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces>  
- Usado para a automação de c# e Visual Basic.  
+ Usado para a automação de C# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Threading>  
  Usado para threading do Visual Studio.  

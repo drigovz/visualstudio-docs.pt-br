@@ -48,7 +48,7 @@ Crie um mapa de códigos para acompanhar visualmente a pilha de chamadas durante
 
 - [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)
 
-- Código que você pode depurar, como Visual c# .NET, Visual Basic .NET, C++, JavaScript ou X + +
+- Código que você pode depurar, como Visual C# .NET, Visual Basic .NET, C++, JavaScript ou X + +
 
   Consulte: [Vídeo: Depurar visualmente com a integração do depurador mapa de códigos (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [mapear a pilha de chamadas](#MapStack) • [fazer anotações sobre o código](#MakeNotes) • [atualizar o mapa com a próxima pilha de chamadas](#UpdateMap)• [Adicionar código relacionado ao mapa](#AddRelatedCode) • [localizar bugs usando o mapa](#FindBugs) • [p e r](#QA)
 

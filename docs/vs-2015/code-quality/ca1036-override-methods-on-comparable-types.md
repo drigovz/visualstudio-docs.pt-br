@@ -49,7 +49,7 @@ ms.locfileid: "58926456"
 
 - op_GreaterThan
 
-  No c#, os tokens que são usados para representar esses operadores são os seguintes: = =,! =, \<, e >.
+  No C#, os tokens que são usados para representar esses operadores são os seguintes: = =,! =, \<, e >.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  É seguro suprimir um aviso nessa regra, quando a violação é causada por falta de operadores e sua linguagem de programação não oferece suporte a sobrecarga de operador, como é o caso com o Visual Basic .NET. Também é seguro suprimir um aviso para essa regra quando ela é acionada em operadores de igualdade diferente de op_Equality se você determinar que os operadores a implementação não faz sentido no contexto do aplicativo. No entanto, você deve sempre sobre op_Equality e o operador = = se substitui Object. Equals.

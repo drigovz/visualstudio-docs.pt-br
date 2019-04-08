@@ -1,5 +1,5 @@
 ---
-title: Renomear a refatoração (c#) | Microsoft Docs
+title: Renomear a refatoração (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

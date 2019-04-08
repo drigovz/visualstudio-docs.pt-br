@@ -40,7 +40,7 @@ Jamais pensou em como criar seu próprio tipo de projeto? Se perguntar o que rea
   
  ![Caixa de diálogo Novo projeto](../../extensibility/internals/media/newproject.gif "NewProject")  
   
- Vamos dar uma olhada mais próxima. O **tipos de projeto** árvore lista os vários tipos de projeto, você pode criar. Quando você seleciona um tipo de projeto, como **Visual c# Windows**, você verá uma lista de modelos de aplicativo para você começar. **Modelos instalados do Visual Studio** são instalados pelo Visual Studio e estão disponíveis para qualquer usuário do seu computador. Novos modelos que você cria ou coleta podem ser adicionados a **Meus modelos** e estão disponíveis apenas para você.  
+ Vamos dar uma olhada mais próxima. O **tipos de projeto** árvore lista os vários tipos de projeto, você pode criar. Quando você seleciona um tipo de projeto, como **Visual C# Windows**, você verá uma lista de modelos de aplicativo para você começar. **Modelos instalados do Visual Studio** são instalados pelo Visual Studio e estão disponíveis para qualquer usuário do seu computador. Novos modelos que você cria ou coleta podem ser adicionados a **Meus modelos** e estão disponíveis apenas para você.  
   
  Quando você seleciona um modelo semelhante **aplicativo do Windows**, uma descrição do tipo de aplicativo é exibida na caixa de diálogo; nesse caso, **um projeto para criar um aplicativo com uma interface de usuário do Windows**.  
   
@@ -62,7 +62,7 @@ devenv /installvstemplates
 ```  
   
 ### <a name="project-types"></a>Tipos de projeto  
- A posição e nomes do **tipos de projeto** raiz nós, como **Visual c#** e **outros idiomas**, é determinado pelas entradas de registro do sistema. A organização de nós filho, como **banco de dados** e **Smart Device**, espelha a hierarquia de pastas que contêm os arquivos. vstemplate correspondente. Vamos examinar os nós raiz primeiro.  
+ A posição e nomes do **tipos de projeto** raiz nós, como **Visual C#** e **outros idiomas**, é determinado pelas entradas de registro do sistema. A organização de nós filho, como **banco de dados** e **Smart Device**, espelha a hierarquia de pastas que contêm os arquivos. vstemplate correspondente. Vamos examinar os nós raiz primeiro.  
   
 #### <a name="project-type-root-nodes"></a>Nós de raiz do tipo de projeto  
  Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é inicializado, ele percorre as subchaves da chave do registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs para compilar e nomear os nós raiz do sistema de **detiposdeprojeto** árvore. Essas informações são armazenadas em cache para uso posterior. Examinar o TemplateDirs\\{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 chave. Cada entrada é um GUID de VSPackage. O nome da subchave (/ 1) é ignorado, mas sua presença indica que esta é uma **tipos de projeto** nó raiz. Um nó raiz pode ter várias subchaves que controlam sua aparência na **tipos de projeto** árvore. Vamos examinar alguns deles.  
@@ -80,7 +80,7 @@ devenv /installvstemplates
   
  \<Caminho de instalação do Visual Studio > \VC#\VCSPackages\1033\csprojui.dll  
   
- Para verificar isso, abra o Explorador de arquivos e arraste csprojui.dll no diretório do Visual Studio... A tabela de cadeia de caracteres mostra que o recurso #2345 tem a legenda **Visual c#**.  
+ Para verificar isso, abra o Explorador de arquivos e arraste csprojui.dll no diretório do Visual Studio... A tabela de cadeia de caracteres mostra que o recurso #2345 tem a legenda **Visual C#**.  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Isso determina a posição do nó raiz na **tipos de projeto** árvore.  
@@ -106,7 +106,7 @@ devenv /installvstemplates
 #### <a name="project-type-child-nodes-and-vstdir-files"></a>Nós de filhos do tipo de projeto e arquivos de vstdir  
  A posição de nós filho na **tipos de projeto** árvore segue a hierarquia das pastas nas pastas ProjectTemplates. Para modelos de máquina (**modelos instalados do Visual Studio**), o local típico é \Program Files\Microsoft 14.0\Common7\IDE\ProjectTemplates\ Visual Studio e dos modelos do usuário (**Meus modelos**), o local típico é Documents\Visual Studio 14.0\Templates\ProjectTemplates\\. As hierarquias de pasta nesses dois locais são mescladas para criar o **tipos de projeto** árvore.  
   
- Para o Visual Studio com c# configurações do desenvolvedor, o **tipos de projeto** árvore pode ter esta aparência:  
+ Para o Visual Studio com C# configurações do desenvolvedor, o **tipos de projeto** árvore pode ter esta aparência:  
   
  ![Tipos de projeto](../../extensibility/internals/media/projecttypes.png "dos ProjectTypes")  
   
@@ -131,7 +131,7 @@ devenv /installvstemplates
 <ProjectType>CSharp</ProjectType>  
 ```  
   
- O \<ProjectType > marca e não a subpasta na pasta ProjectTemplates, determina o nó raiz de um aplicativo na **tipos de projeto** árvore. No exemplo, os aplicativos do Windows CE seriam exibido sob o **Visual c#** nó raiz, e mesmo se você mover a pasta WindowsCE até a pasta do Visual Basic, os aplicativos do Windows CE ainda seriam exibido sob o  **Visual c#** nó raiz.  
+ O \<ProjectType > marca e não a subpasta na pasta ProjectTemplates, determina o nó raiz de um aplicativo na **tipos de projeto** árvore. No exemplo, os aplicativos do Windows CE seriam exibido sob o **Visual C#** nó raiz, e mesmo se você mover a pasta WindowsCE até a pasta do Visual Basic, os aplicativos do Windows CE ainda seriam exibido sob o  **Visual C#** nó raiz.  
   
 ##### <a name="localizing-the-node-name"></a>Localizando o nome do nó  
  Quando o Visual Studio atravessa as pastas ProjectTemplates, ele examina todos os arquivos vstdir encontra. Um arquivo de vstdir é um arquivo XML que controla a aparência do tipo no projeto do **novo projeto** caixa de diálogo. No arquivo vstdir, use o \<LocalizedName > marca ao nome do **tipos de projeto** nó.  
@@ -208,11 +208,11 @@ devenv /installvstemplates
   
    Abra o Visual Studio.  
   
-10. Abra o **novo projeto** diálogo caixa e expanda o **Visual c#** nó do projeto.  
+10. Abra o **novo projeto** diálogo caixa e expanda o **Visual C#** nó do projeto.  
   
     ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
-    **MyProjectNode** aparece como um nó filho do Visual c# apenas sob o nó do Windows.  
+    **MyProjectNode** aparece como um nó filho do Visual C# apenas sob o nó do Windows.  
   
 ## <a name="see-also"></a>Consulte também  
  [Nova geração de projeto: Nos bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -1,5 +1,5 @@
 ---
-title: Refatoração (c#) | Microsoft Docs
+title: Refatoração (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -30,7 +30,7 @@ ms.locfileid: "58927328"
 
 Refatoração é o processo de aperfeiçoar seu código após ele ter sido gravado, alterando a estrutura interna do código sem alterar o comportamento externo do código.  
   
- Visual c# fornece os seguintes comandos de refatoração sobre o **refatoração** menu:  
+ Visual C# fornece os seguintes comandos de refatoração sobre o **refatoração** menu:  
   
 -   [Refatoração Extrair método (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
@@ -69,7 +69,7 @@ Refatoração é o processo de aperfeiçoar seu código após ele ter sido grava
   
  O **resultados da verificação** caixa de diálogo pode notificá-lo se o mecanismo de refatoração detecta erros de compilação ou detecta que uma operação de refatoração inadvertidamente faz com que uma referência de código para associar a algo diferente do que era originalmente associada a (problema de religação).  
   
- Para ativar os resultados da verificação de recursos, diante a **ferramentas** menu, clique em **opções**. No **opções** diálogo caixa, expanda **Editor de texto**e, em seguida, expanda **c#**. Clique em **Advanced** e selecione o **verificar os resultados da refatoração** caixa de seleção.  
+ Para ativar os resultados da verificação de recursos, diante a **ferramentas** menu, clique em **opções**. No **opções** diálogo caixa, expanda **Editor de texto**e, em seguida, expanda **C#**. Clique em **Advanced** e selecione o **verificar os resultados da refatoração** caixa de seleção.  
   
  O **resultados da verificação** caixa de diálogo distingue a diferença entre dois tipos de problemas de reassociação.  
   
@@ -107,5 +107,5 @@ class Example
  Se você usar a refatoração Renomear `OtherMethod` para `Method`, essa caixa de diálogo é exibida. A referência na `Main` refere-se agora para o método sobrecarregado que aceita um `int` parâmetro em vez do método sobrecarregado que aceita um `object` parâmetro.  
   
 ## <a name="see-also"></a>Consulte também  
- [Usando o ambiente de desenvolvimento do Visual Studio para c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
+ [Usando o ambiente de desenvolvimento do Visual Studio para C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
  [Como: restaurar snippets de refatoração de C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

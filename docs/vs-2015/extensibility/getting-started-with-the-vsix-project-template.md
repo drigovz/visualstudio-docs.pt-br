@@ -20,7 +20,7 @@ ms.locfileid: "58929055"
 # <a name="getting-started-with-the-vsix-project-template"></a>Introdução ao modelo de projeto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar o modelo de projeto de VSIX para criar uma extensão ou para uma extensão existente para a implantação do pacote. O modelo de projeto do VSIX tem versões de Visual Basic e Visual c# e é instalado como parte do SDK do Visual Studio.  
+Você pode usar o modelo de projeto de VSIX para criar uma extensão ou para uma extensão existente para a implantação do pacote. O modelo de projeto do VSIX tem versões de Visual Basic e Visual C# e é instalado como parte do SDK do Visual Studio.  
   
  O modelo de projeto do VSIX apenas consiste em um arquivo de vsixmanifest, que contém informações sobre a extensão e os ativos de que enviá-lo.  
   
@@ -39,7 +39,7 @@ Você pode usar o modelo de projeto de VSIX para criar uma extensão ou para uma
   
 2.  Crie um projeto vazio do VSIX.  
   
-     Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**. Selecione a **Visual Basic** ou **Visual c#**. Sob o nó selecionado, selecione **extensibilidade**e, em seguida, selecione **projeto VSIX**.  
+     Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**. Selecione a **Visual Basic** ou **Visual C#**. Sob o nó selecionado, selecione **extensibilidade**e, em seguida, selecione **projeto VSIX**.  
   
 3.  Adicione o arquivo. zip para o projeto. Defina suas **Copy to Output Directory** propriedade `Copy Always`.  
   

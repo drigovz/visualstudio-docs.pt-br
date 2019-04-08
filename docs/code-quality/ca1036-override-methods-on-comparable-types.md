@@ -49,7 +49,7 @@ Para corrigir uma violação dessa regra, substituir <xref:System.Object.Equals%
 - op_LessThan
 - op_GreaterThan
 
-No c#, os tokens que são usados para representar esses operadores são:
+No C#, os tokens que são usados para representar esses operadores são:
 
 ```csharp
 ==

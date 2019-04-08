@@ -1,5 +1,5 @@
 ---
-title: Gerenciando ferramentas externas | Microsoft Docs
+title: Gerenciar ferramentas externas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763317"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866752"
 ---
 # <a name="managing-external-tools"></a>Gerenciando ferramentas externas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,16 +78,16 @@ ms.locfileid: "54763317"
   
 3.  Ferramenta de Rastreamento da ATL/MFC: mostra mensagens de rastreamento de depuração nas fontes ATL e MFC.  
   
-4.  PreEmptive Dotfuscator e Analytics: Protege os programas .NET contra engenharia reversa.  
+4.  PreEmptive Protection – Dotfuscator: protege os programas .NET contra engenharia reversa.  
   
-5.  SPY++ Exibe graficamente os processos, threads, windows e as mensagens da janela.  
+5.  SPY++: exibe processos, threads, janelas e mensagens de janela graficamente.  
   
-6.  Editor de Configuração de Serviço &WCF Permite que você criar e modificar definições de configuração para serviços WCF.  
+6.  Editor de Configuração do serviço WCF: permite criar e modificar definições de configuração para os serviços WCF.  
   
 > [!WARNING]
 >  Você poderá ver uma lista diferente de ferramentas externas, dependendo de qual edição do Visual Studio está instalada e o perfil de configurações aplicado. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-## <a name="adding-new-tools"></a>Adição de novas ferramentas  
+## <a name="adding-new-tools"></a>Adicionar novas ferramentas  
  É possível adicionar uma ferramenta externa ao menu **Ferramentas**. Abra a caixa de diálogo **Ferramentas Externas**, clique em **Adicionar** e, em seguida, preencha as informações. Por exemplo, a seguinte entrada faz com que o Windows Explorer abra o diretório do arquivo atualmente aberto no Visual Studio:  
   
 1.  Título: Abrir local do arquivo  
@@ -122,4 +122,4 @@ ms.locfileid: "54763317"
 |Nome de arquivo da solução|$(SolutionFileName)|O nome de arquivo da solução atual (unidade + caminho + nome de arquivo).|  
   
 ## <a name="see-also"></a>Consulte também  
- [Ferramentas de build de C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Ferramentas de build da linguagem C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

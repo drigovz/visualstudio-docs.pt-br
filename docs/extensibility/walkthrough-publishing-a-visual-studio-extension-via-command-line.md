@@ -200,7 +200,7 @@ Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para
 
 Nesse caso, usaremos uma extensão de VSPackage padrão, mas as mesmas etapas são válidas para cada tipo de extensão.
 
-1. Crie um VSPackage no c#, chamado "TestPublish" que tem um comando de menu. Para obter mais informações, consulte [criando sua primeira extensão: Olá, mundo](../extensibility/extensibility-hello-world.md).
+1. Crie um VSPackage no C#, chamado "TestPublish" que tem um comando de menu. Para obter mais informações, consulte [criando sua primeira extensão: Olá, mundo](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Empacotar sua extensão
 

@@ -49,7 +49,7 @@ Em um modelo de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pod
   
 - Use `once="true"` para garantir que um modelo seja incluído somente uma vez, mesmo se for invocado por mais de um arquivo de inclusão.  
   
-   Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de c#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.  
+   Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de C#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.  
   
   **MyTextTemplate.tt:**  
   

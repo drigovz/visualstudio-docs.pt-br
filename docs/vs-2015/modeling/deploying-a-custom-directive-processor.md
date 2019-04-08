@@ -50,7 +50,7 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   
 1.  Crie um projeto VSIX no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    -   No **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, em seguida, expanda **extensibilidade**. Clique em **VSIX Project**.  
+    -   No **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual C#**, em seguida, expanda **extensibilidade**. Clique em **VSIX Project**.  
   
 2.  Na **vsixmanifest**, defina o tipo de conteúdo e edições com suporte.  
   

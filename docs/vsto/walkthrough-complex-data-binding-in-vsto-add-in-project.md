@@ -52,7 +52,7 @@ ms.locfileid: "54867553"
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de suplemento do VSTO do Excel com o nome **preenchendo planilhas de um banco de dados**, usando o Visual Basic ou c#.
+1.  Criar um projeto de suplemento do VSTO do Excel com o nome **preenchendo planilhas de um banco de dados**, usando o Visual Basic ou C#.
 
      Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 

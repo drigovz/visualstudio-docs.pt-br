@@ -81,7 +81,7 @@ typedef enum CV_CFL_LANG { 
  Aplicativo é um módulo POGO otimizado gerado com a ferramenta CVTPGD.  
   
  CV_CFL_CSHARP  
- Idioma do aplicativo é c#.  
+ Idioma do aplicativo é C#.  
   
  CV_CFL_VB  
  É o idioma do aplicativo Visual Basic.  

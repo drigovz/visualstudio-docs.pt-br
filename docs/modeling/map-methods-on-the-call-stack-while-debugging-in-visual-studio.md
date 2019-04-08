@@ -44,7 +44,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 - [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
-- Código que você pode depurar, como Visual c#, Visual Basic, C++, JavaScript ou X + +
+- Código que você pode depurar, como Visual C#, Visual Basic, C++, JavaScript ou X + +
 
   Consulte:
 
@@ -89,7 +89,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
  ![Atualizar o mapa de código com a próxima pilha de chamadas](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Adicionar código relacionado ao mapa
- Agora você tem um mapa - o que em seguida? Se você estiver trabalhando com c# ou Visual Basic, adicione itens, como campos, propriedades e outros métodos, para acompanhar o que está acontecendo no código.
+ Agora você tem um mapa - o que em seguida? Se você estiver trabalhando com C# ou Visual Basic, adicione itens, como campos, propriedades e outros métodos, para acompanhar o que está acontecendo no código.
 
  Clique duas vezes em um método para ver sua definição de código ou use o menu de atalho para o método. (Teclado: Selecione o método no mapa e pressione **F12**)
 

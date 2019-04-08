@@ -24,7 +24,7 @@ ms.locfileid: "58922305"
 
 A primeiro passo a passo desta série [criando um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), mostra como criar um sistema de projeto básico. Este passo a passo se baseia no sistema de projeto básico, adicionando um modelo do Visual Studio, uma página de propriedades e outros recursos. Você deve concluir o passo a passo primeiro antes de iniciar este.  
   
- Este passo a passo ensina como criar um tipo de projeto que tem o .myproj de extensão de nome de arquivo de projeto. Para concluir o passo a passo, você não precisa criar sua própria linguagem porque pega emprestado o passo a passo do sistema de projeto Visual c# existente.  
+ Este passo a passo ensina como criar um tipo de projeto que tem o .myproj de extensão de nome de arquivo de projeto. Para concluir o passo a passo, você não precisa criar sua própria linguagem porque pega emprestado o passo a passo do sistema de projeto Visual C# existente.  
   
  Este passo a passo ensina como realizar essas tarefas:  
   
@@ -39,7 +39,7 @@ A primeiro passo a passo desta série [criando um sistema de projeto básico, pa
 -   Crie uma página de propriedades do projeto.  
   
 > [!NOTE]
->  As etapas neste passo a passo se baseiam em um projeto c#. No entanto, exceto para obter informações específicas, como extensões de nome de arquivo e código, você pode usar as mesmas etapas para um projeto do Visual Basic.  
+>  As etapas neste passo a passo se baseiam em um projeto C#. No entanto, exceto para obter informações específicas, como extensões de nome de arquivo e código, você pode usar as mesmas etapas para um projeto do Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Criando um modelo do Visual Studio  
  [Criando um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) mostra como criar um modelo de projeto básico e adicioná-lo para o sistema de projeto. Ele também mostra como registrar esse modelo com o Visual Studio usando o <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que grava o caminho completo da pasta \Templates\Projects\SimpleProject\ no registro do sistema.  

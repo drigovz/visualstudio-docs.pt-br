@@ -110,7 +110,7 @@ ms.locfileid: "58924936"
   
       Para projetos C#:  
   
-   5. Porque os projetos c# não gerenciar automaticamente os manipuladores de eventos, você pode usar o IntelliSense para criar parcial `Update` *CLASSNAME* método.  
+   5. Porque os projetos C# não gerenciar automaticamente os manipuladores de eventos, você pode usar o IntelliSense para criar parcial `Update` *CLASSNAME* método.  
   
    6. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de atualização para a classe que você deseja adicionar validação para. O código a seguir é semelhante ao código que é gerado quando você seleciona uma `Update` *CLASSNAME* método parcial:  
   

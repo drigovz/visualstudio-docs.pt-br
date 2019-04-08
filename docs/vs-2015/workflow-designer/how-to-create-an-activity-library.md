@@ -27,7 +27,7 @@ As atividades personalizados são usadas para modelar seus processos comerciais 
   
      A caixa de diálogo **Novo Projeto** é aberta.  
   
-3.  No **tipos de projeto** painel, selecione **fluxo de trabalho** de qualquer um os **Visual c#** projetos ou **Visual Basic** agrupamentos dependendo da sua preferência de idioma.  
+3.  No **tipos de projeto** painel, selecione **fluxo de trabalho** de qualquer um os **Visual C#** projetos ou **Visual Basic** agrupamentos dependendo da sua preferência de idioma.  
   
 4.  No **modelos** painel, selecione **biblioteca de atividades**.  
   

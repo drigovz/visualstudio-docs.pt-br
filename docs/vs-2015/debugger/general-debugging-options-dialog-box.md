@@ -84,7 +84,7 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  **Habilitar a avaliação de propriedade e outras chamadas de função implícitas**  
  Ativa a classificação automática da propriedades e as chamadas de função implícitas nas janelas de variáveis e na caixa de diálogo **QuickWatch**.  
   
- **Chamar a função de conversão de cadeia de caracteres em objetos nas janelas de variáveis (c# e JavaScript apenas)**  
+ **Chamar a função de conversão de cadeia de caracteres em objetos nas janelas de variáveis (C# e JavaScript apenas)**  
  Executa uma chamada de conversão de cadeia de caracteres implícita ao avaliar objetos em janelas de variáveis. Portanto, o resultado é exibido como uma cadeia de caracteres em vez do nome do tipo. Aplica-se somente à depuração no código em C. Essa configuração pode ser substituída pelo atributo DebuggerDisplay (consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Habilitar suporte a servidor de origem**  
@@ -145,7 +145,7 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
   
   Você deve usar essa opção quando você estiver depurando o código C++ .NET, pois o novo mecanismo de depuração não dá suporte a expressões de avaliação C++ .NET. No entanto, a habilitação do modo de compatibilidade nativa desabilita muitos recursos que dependem da implementação atual do depurador para operar. Por exemplo, o mecanismo herdado não tem muitos visualizadores para tipos internos, como `std::string` em projetos do Visual Studio 2015.   Use projetos do Visual Studio 2013 para a melhor experiência de depuração nesses casos.  
   
-  **Use os avaliadores de expressão c# e VB herdados**  
+  **Use os avaliadores de expressão C# e VB herdados**  
   O depurador usará os avaliadores de expressão do Visual Studio 2013 C# /VB em vez dos avaliadores de expressão baseada em Roslyn de 2015 do Visual Studio.  
   
   **Avisar ao usar os visualizadores do depurador personalizados contra processos potencialmente inseguros (somente gerenciado)**  

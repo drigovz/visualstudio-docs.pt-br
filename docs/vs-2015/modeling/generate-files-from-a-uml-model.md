@@ -49,7 +49,7 @@ Em um modelo UML, você pode gerar o código do programa, esquemas, documentos, 
 ### <a name="example"></a>Exemplo  
  Para executar este exemplo, crie um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto VSIX (extensão). O nome do projeto que é usado neste exemplo é `VdmGenerator`. No **vsixmanifest** arquivo, clique em **adicionar conteúdo** e defina o campo de tipo como **componente MEF** e referenciar o projeto atual do caminho de origem. Para obter mais informações sobre como configurar esse tipo de projeto, consulte [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
- Adicione ao projeto um arquivo c# que contém o código a seguir. Essa classe define um comando de menu que aparecerá em um diagrama de classe UML.  
+ Adicione ao projeto um arquivo C# que contém o código a seguir. Essa classe define um comando de menu que aparecerá em um diagrama de classe UML.  
   
 ```  
 using System;  
@@ -109,7 +109,7 @@ Type <#= classElement.Name #> ::
 #>  
 ```  
   
- O modelo de texto gera uma c# classe parcial, que se tornará parte de seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. Em um arquivo separado, adicione outra declaração parcial da mesma classe. Esse código fornece o modelo com acesso ao armazenamento de modelos UML:  
+ O modelo de texto gera uma C# classe parcial, que se tornará parte de seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. Em um arquivo separado, adicione outra declaração parcial da mesma classe. Esse código fornece o modelo com acesso ao armazenamento de modelos UML:  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
@@ -167,7 +167,7 @@ Type Class2 ::
 -   Você também pode definir um processador de diretriz especializado que permite que você forneça parâmetros para o processo de geração de texto. Para obter mais informações, consulte [personalizando transformação de texto T4](../modeling/customizing-t4-text-transformation.md).  
   
 ### <a name="example"></a>Exemplo  
- Este exemplo gera uma classe c# para cada classe UML no modelo de origem.  
+ Este exemplo gera uma classe C# para cada classe UML no modelo de origem.  
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>Para configurar uma solução do Visual Studio para este exemplo  
   
@@ -183,17 +183,17 @@ Type Class2 ::
   
    5.  Salve o arquivo.  
   
-2. Crie um projeto c# ou Visual Basic na mesma solução.  
+2. Crie um projeto C# ou Visual Basic na mesma solução.  
   
-   -   No Gerenciador de soluções, clique com botão direito a solução, aponte para **Add**e, em seguida, clique em **novo projeto**. Sob **modelos instalados**, clique em **Visual Basic** ou **Visual c#** e, em seguida, selecione um tipo de projeto como **aplicativo de Console**.  
+   -   No Gerenciador de soluções, clique com botão direito a solução, aponte para **Add**e, em seguida, clique em **novo projeto**. Sob **modelos instalados**, clique em **Visual Basic** ou **Visual C#** e, em seguida, selecione um tipo de projeto como **aplicativo de Console**.  
   
-3. Adicione um arquivo de texto sem formatação para o projeto c# ou Visual Basic. Esse arquivo conterá código compartilhado para gravar vários modelos de texto.  
+3. Adicione um arquivo de texto sem formatação para o projeto C# ou Visual Basic. Esse arquivo conterá código compartilhado para gravar vários modelos de texto.  
   
    - No Gerenciador de soluções, clique com botão direito no projeto, aponte para **Add**e, em seguida, clique em **Novo Item**. Selecione **arquivo de texto**.  
   
      Insira o texto que é mostrado na seção a seguir.  
   
-4. Adicione um arquivo de modelo de texto para o projeto c# ou Visual Basic.  
+4. Adicione um arquivo de modelo de texto para o projeto C# ou Visual Basic.  
   
    - No Gerenciador de soluções, clique com botão direito no projeto, aponte para **Add**e, em seguida, clique em **Novo Item**. Selecione **modelo de texto**.  
   
@@ -278,7 +278,7 @@ private IModelStore ModelStore
 ```  
   
 #### <a name="content-of-the-text-template-file"></a>Conteúdo do arquivo de modelo de texto  
- O seguinte texto é colocado na **. TT** arquivo. Este exemplo gera classes em um arquivo c# de classes UML no modelo. No entanto, você pode gerar arquivos de qualquer tipo. O idioma do arquivo gerado não está relacionado à linguagem em que o código de modelo de texto é escrito.  
+ O seguinte texto é colocado na **. TT** arquivo. Este exemplo gera classes em um arquivo C# de classes UML no modelo. No entanto, você pode gerar arquivos de qualquer tipo. O idioma do arquivo gerado não está relacionado à linguagem em que o código de modelo de texto é escrito.  
   
 ```  
 <#@include file="SharedTemplateCode.txt"#>  

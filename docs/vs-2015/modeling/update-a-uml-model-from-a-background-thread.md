@@ -32,7 +32,7 @@ ms.locfileid: "58928911"
   
 #### <a name="to-run-the-example"></a>Para executar o exemplo  
   
-1. Crie um manipulador de comandos em um projeto c#, conforme descrito em [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Crie um manipulador de comandos em um projeto C#, conforme descrito em [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
 2. Certifique-se de que o projeto inclua referências a esses assemblies:  
   
@@ -50,7 +50,7 @@ ms.locfileid: "58928911"
   
 3. Adicionar ao projeto um formulário do Windows chamado **ProgressForm**. Ele deve exibir uma mensagem informando que as atualizações estão em andamento. Ele não precisa ter todos os outros controles.  
   
-4. Adicione um arquivo c# que contém o código mostrado após a etapa 7.  
+4. Adicione um arquivo C# que contém o código mostrado após a etapa 7.  
   
 5. Compile e execute o projeto.  
   

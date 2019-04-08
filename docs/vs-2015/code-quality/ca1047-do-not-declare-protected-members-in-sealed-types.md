@@ -33,12 +33,12 @@ ms.locfileid: "58928377"
 |Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
- É um tipo público `sealed` (`NotInheritable` no Visual basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para <xref:System.Object.Finalize%2A> métodos, que devem seguir esse padrão.
+ É um tipo público `sealed` (`NotInheritable` no Visual Basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para <xref:System.Object.Finalize%2A> métodos, que devem seguir esse padrão.
 
 ## <a name="rule-description"></a>Descrição da Regra
  Os tipos declaram membros protegidos de forma que a herança de tipos possa acessar ou substituir o membro. Por definição, você não pode herdar de um tipo selado, o que significa que métodos em tipos lacrados protegidos não pode ser chamada.
 
- O compilador c# emite um aviso para esse erro.
+ O compilador C# emite um aviso para esse erro.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, altere o nível de acesso do membro particular ou tornar o tipo herdável.

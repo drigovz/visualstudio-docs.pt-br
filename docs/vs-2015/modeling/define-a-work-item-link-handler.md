@@ -36,7 +36,7 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
   
     1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
   
-    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, na coluna do meio, clique em **biblioteca de classes**.  
+    2.  Sob **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, na coluna do meio, clique em **biblioteca de classes**.  
   
     3.  Definir **solução** para indicar se você deseja criar uma nova solução ou adicionar um componente a uma solução VSIX que você já abriu.  
   
@@ -46,7 +46,7 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
   
     1.  Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
   
-    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
+    2.  Sob **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
   
 3.  Defina o projeto VSIX como o projeto de inicialização da solução.  
   

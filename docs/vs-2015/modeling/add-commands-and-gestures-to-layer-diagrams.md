@@ -62,14 +62,14 @@ Você pode definir comandos de menu de contexto e manipuladores do gesto em diag
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Para adicionar extensões de camada a um VSIX separado  
   
-1.  Crie um projeto de biblioteca de classes em uma solução nova ou existente do Visual Studio. No **novo projeto** caixa de diálogo, clique em **Visual c#** e, em seguida, clique em **biblioteca de classes**. Este projeto irá conter comando ou classes de manipulador de gesto.  
+1.  Crie um projeto de biblioteca de classes em uma solução nova ou existente do Visual Studio. No **novo projeto** caixa de diálogo, clique em **Visual C#** e, em seguida, clique em **biblioteca de classes**. Este projeto irá conter comando ou classes de manipulador de gesto.  
   
     > [!NOTE]
     >  Você pode definir mais de uma classe de manipulador de gesto ou comando em uma biblioteca de classes, mas você deve definir classes de validação de camada em uma biblioteca de classes separado.  
   
 2.  Identifique ou crie um projeto de VSIX em sua solução. Um projeto do VSIX contém um arquivo chamado **vsixmanifest**. Para adicionar um projeto VSIX:  
   
-    1.  No **novo projeto** diálogo caixa, expanda **Visual c#**, em seguida, clique em **extensibilidade**e, em seguida, clique em **projeto VSIX**.  
+    1.  No **novo projeto** diálogo caixa, expanda **Visual C#**, em seguida, clique em **extensibilidade**e, em seguida, clique em **projeto VSIX**.  
   
     2.  No Gerenciador de soluções, clique com botão direito do projeto VSIX e, em seguida, clique em **definir como projeto de inicialização**.  
   
@@ -96,7 +96,7 @@ Você pode definir comandos de menu de contexto e manipuladores do gesto em diag
 |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definir as extensões de modelagem|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Atualizar formas e diagramas|  
   
-1.  Edite o arquivo de classe na classe biblioteca projeto c# para conter o código para a sua extensão. Para obter mais informações, consulte uma das seções a seguir:  
+1.  Edite o arquivo de classe na classe biblioteca projeto C# para conter o código para a sua extensão. Para obter mais informações, consulte uma das seções a seguir:  
   
      [Definindo um comando de Menu](#command)  
   

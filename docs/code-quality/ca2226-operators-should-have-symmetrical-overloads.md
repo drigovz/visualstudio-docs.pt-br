@@ -40,7 +40,7 @@ Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [c
 
 Não há nenhuma circunstância onde igualdade ou desigualdade é aplicável a instâncias de um tipo, e o operador oposto é indefinido. Tipos normalmente implementam o operador de desigualdade, retornando o valor negado do operador de igualdade.
 
-O compilador c# emite um erro para as violações dessa regra.
+O compilador C# emite um erro para as violações dessa regra.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

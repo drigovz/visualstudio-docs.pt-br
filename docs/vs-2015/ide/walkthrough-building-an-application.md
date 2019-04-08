@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799149"
@@ -120,7 +120,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
   ![Janela de Saída do Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Figura 2: Avisos do Visual c#  
+  Figura 2: Avisos do Visual C#  
   
   ![Janela de Saída do Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   

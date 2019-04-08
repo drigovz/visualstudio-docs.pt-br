@@ -35,7 +35,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../includ
   
 1.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó e clique em **WCF**, seguido por **WCF Biblioteca de serviço**. Clique em **Okey** para abrir o projeto.  
+2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó e clique em **WCF**, seguido por **WCF Biblioteca de serviço**. Clique em **Okey** para abrir o projeto.  
   
      ![O projeto de biblioteca de serviço do WCF](../data-tools/media/wcf1.PNG "wcf1")  
   
@@ -92,7 +92,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../includ
   
 1.  No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**.  
   
-2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó e selecione **Windows**e, em seguida, selecione **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.  
+2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó e selecione **Windows**e, em seguida, selecione **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.  
   
      ![Projeto de aplicativo do Windows Forms](../data-tools/media/wcf7.png "wcf7")  
   

@@ -1,5 +1,5 @@
 ---
-title: Listas de conclusão no c# | Microsoft Docs
+title: Listas de conclusão no C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -20,7 +20,7 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58928950"
 ---
 # <a name="completion-lists-in-c"></a>Listas de conclusão em C# #
-Este conteúdo foi movido para [IntelliSense do Visual c#](../ide/visual-csharp-intellisense.md)  
+Este conteúdo foi movido para [IntelliSense do Visual C#](../ide/visual-csharp-intellisense.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md)

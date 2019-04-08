@@ -27,7 +27,7 @@ Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de 
   
 ## <a name="creating-a-mef-project"></a>Criando um projeto MEF  
   
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `ContentTypeTest`.  
+1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual C# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `ContentTypeTest`.  
   
 2.  No **vsixmanifest** arquivo, vá para o **ativos** guia e defina o **tipo** campo **mefcomponent**, o **código-fonte** campo **um projeto na solução atual**e o **projeto** campo para o nome do projeto.  
   

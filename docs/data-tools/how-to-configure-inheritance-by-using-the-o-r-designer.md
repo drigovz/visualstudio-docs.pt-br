@@ -10,7 +10,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 6430cd3092f6edbc514c7958e07961ccd234c161
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55931254"
@@ -24,7 +24,7 @@ Criar um modelo de objeto que usar herança (e corresponde a dados relacionais) 
 
 ## <a name="to-create-inherited-data-classes"></a>Para criar classes de dados herdadas
 
-1.  Abra o **Relational Designer** adicionando um **Classes LINQ to SQL** item a um projeto existente do Visual Basic ou c#.
+1.  Abra o **Relational Designer** adicionando um **Classes LINQ to SQL** item a um projeto existente do Visual Basic ou C#.
 
 2.  Arraste a tabela que você deseja usar como a classe base para o **Relational Designer**.
 

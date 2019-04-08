@@ -92,7 +92,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
 2. Selecione F5.
 
-   O Visual Studio compila e inicia o aplicativo com o depurador anexado. A execução continua até que um ponto de interrupção seja alcançado, você suspenda a execução manualmente, ocorra uma exceção sem tratamento ou o aplicativo chegue ao fim. Para obter mais informações, consulte [navegar por uma sessão de depuração (Xaml e c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
+   O Visual Studio compila e inicia o aplicativo com o depurador anexado. A execução continua até que um ponto de interrupção seja alcançado, você suspenda a execução manualmente, ocorra uma exceção sem tratamento ou o aplicativo chegue ao fim. Para obter mais informações, consulte [navegar por uma sessão de depuração (Xaml e C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> Configurar a sessão de depuração
 
@@ -102,7 +102,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
 2.  Faça isso para abrir a página de propriedades de depuração do projeto:
 
-    -   Para aplicativos do Visual c# e Visual Basic, escolha **depurar**.
+    -   Para aplicativos do Visual C# e Visual Basic, escolha **depurar**.
 
          ![C&#35; &#47; página de propriedades de depuração de projeto do VB](../debugger/media/dbg-csvb-debugpropertypage.png "DBG_CsVb_DebugPropertyPage")
 
@@ -121,7 +121,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
  Você pode implantar e depurar um aplicativo da Windows Store no computador com Visual Studio, no simulador do Visual Studio no computador local ou em um dispositivo remoto.
 
-- Para aplicativos c# e Visual Basic, escolha o destino na **dispositivo de destino** lista os **depurar** página de propriedades para o projeto.
+- Para aplicativos C# e Visual Basic, escolha o destino na **dispositivo de destino** lista os **depurar** página de propriedades para o projeto.
 
 - Para aplicativos em C++, escolha o destino do **depurador a iniciar** lista os **depuração** página de propriedades:
 
@@ -137,7 +137,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
 - Digite o nome ou endereço IP do computador remoto.
 
-  -   Para aplicativos c# e Visual Basic, insira o nome ou endereço IP na **máquina remota** caixa.
+  -   Para aplicativos C# e Visual Basic, insira o nome ou endereço IP na **máquina remota** caixa.
 
   -   Para aplicativos em C++, insira o nome ou endereço IP na **nome da máquina** caixa.
 
@@ -145,7 +145,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
    Para abrir a caixa de diálogo:
 
-  - Para aplicativos c# e Visual Basic, escolha **localizar**.
+  - Para aplicativos C# e Visual Basic, escolha **localizar**.
 
   - Para aplicativos do C++, escolha a seta para baixo na **nome da máquina** caixa e escolha  **\<localizar... >**.
 
@@ -186,7 +186,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
  Para atrasar a inicialização do aplicativo, você pode fazer o seguinte:
 
--   Para aplicativos do Visual c# e Visual Basic, selecione **não iniciar, mas depurar meu código quando ele é iniciado** sobre o **depurar** página de propriedades.
+-   Para aplicativos do Visual C# e Visual Basic, selecione **não iniciar, mas depurar meu código quando ele é iniciado** sobre o **depurar** página de propriedades.
 
 -   Para aplicativos do Visual C++, escolha **Sim** da **Iniciar aplicativo** lista os **depuração** página de propriedades.
 
@@ -197,7 +197,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
  Para remover a isenção de loopback de rede:
 
--   Para aplicativos do Visual c# e Visual Basic, desmarque a **permitir Loopback de rede** caixa de seleção a **depurar** página de propriedades.
+-   Para aplicativos do Visual C# e Visual Basic, desmarque a **permitir Loopback de rede** caixa de seleção a **depurar** página de propriedades.
 
 -   Para aplicativos do Visual C++, escolha **não** da **permitir Loopback de rede** lista os **depuração** página de propriedades.
 
@@ -214,7 +214,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
  Para remover a requisição de autenticação:
 
-1. Para aplicativos do Visual c# e Visual Basic, desmarque a **usar autenticação do** caixa de seleção a **depurar** página de propriedades.
+1. Para aplicativos do Visual C# e Visual Basic, desmarque a **usar autenticação do** caixa de seleção a **depurar** página de propriedades.
 
 2. Para aplicativos do Visual C++, escolha **não** da **exigir autenticação** lista os **depuração** página de propriedades.
 
@@ -230,7 +230,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
 - Sobre o **Debugging** página de propriedades do aplicativo (**depurar** no Visual C++)
 
-  -   Para aplicativos do Visual c# e Visual Basic, escolha **não iniciar, mas depurar meu código quando iniciar**.
+  -   Para aplicativos do Visual C# e Visual Basic, escolha **não iniciar, mas depurar meu código quando iniciar**.
 
   -   Para aplicativos do Visual C++, escolha **Yes** da **Iniciar aplicativo** lista.
 

@@ -125,7 +125,7 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
   
 #### <a name="to-create-a-dsl-extension-vsix"></a>Para criar uma DSL de extensão VSIX  
   
-1. Crie um novo projeto de biblioteca de classes. Para fazer isso, além de **novo projeto** caixa de diálogo, selecione **Visual Basic** ou **Visual c#** e, em seguida, selecione **biblioteca de classes**.  
+1. Crie um novo projeto de biblioteca de classes. Para fazer isso, além de **novo projeto** caixa de diálogo, selecione **Visual Basic** ou **Visual C#** e, em seguida, selecione **biblioteca de classes**.  
   
 2. No novo projeto de biblioteca de classe, adicione uma referência ao assembly da DSL.  
   
@@ -147,7 +147,7 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
   
    -   System.Windows.Forms.dll  
   
-4. Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.  
+4. Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual C#**, clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.  
   
 5. No Gerenciador de soluções, clique com botão direito do projeto VSIX e, em seguida, clique em **definir como projeto de inicialização**.  
   

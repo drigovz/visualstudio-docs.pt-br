@@ -66,7 +66,7 @@ Categoriza o modelo de projeto para que ele apareça sob o grupo especificado na
 ## <a name="remarks"></a>Comentários  
  O `ProjectType` é um elemento filho obrigatório de `TemplateData`.  
   
- O valor da `ProjectType` elemento Especifica onde o modelo está localizado em de **novo projeto** ou **Adicionar Novo Item** caixa de diálogo. Por exemplo, um modelo com um `ProjectType` valor de `CSharp` aparece sob o **Visual c#** nó no **novo projeto** caixa de diálogo.  
+ O valor da `ProjectType` elemento Especifica onde o modelo está localizado em de **novo projeto** ou **Adicionar Novo Item** caixa de diálogo. Por exemplo, um modelo com um `ProjectType` valor de `CSharp` aparece sob o **Visual C#** nó no **novo projeto** caixa de diálogo.  
   
  Um subtipo de modelo pode ser especificado usando o [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) elemento.  
   

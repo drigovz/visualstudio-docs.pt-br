@@ -63,7 +63,7 @@ Suporte para cadeias de caracteres de idioma (n√£o diferencia maiusculas de min√
 
 -   javascript
 
--   CSharp ou c#
+-   CSharp ou C#
 
 -   cplusplus ou visualc + + ou c + +
 

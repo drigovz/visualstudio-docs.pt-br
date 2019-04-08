@@ -39,7 +39,7 @@ ms.locfileid: "58926259"
 # <a name="continuing-execution-after-an-exception"></a>Continuando a execução depois de uma exceção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando o depurador interrompe a execução devido a uma exceção, uma caixa de diálogo é exibida. Para o Visual Basic ou c#, você verá a [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) caixa de diálogo, por padrão. Para C++, você verá o mais antigo **exceção** caixa de diálogo. Se você estiver usando o Visual Basic ou c#, mas tiver desabilitado as **Assistente de exceção** na **opções** caixa de diálogo, você verá o **exceção** caixa de diálogo.  
+Quando o depurador interrompe a execução devido a uma exceção, uma caixa de diálogo é exibida. Para o Visual Basic ou C#, você verá a [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) caixa de diálogo, por padrão. Para C++, você verá o mais antigo **exceção** caixa de diálogo. Se você estiver usando o Visual Basic ou C#, mas tiver desabilitado as **Assistente de exceção** na **opções** caixa de diálogo, você verá o **exceção** caixa de diálogo.  
   
  Quando o **Assistente de exceção** ou **exceção** caixa de diálogo for exibida, você pode tentar corrigir o problema que causou a exceção.  
   

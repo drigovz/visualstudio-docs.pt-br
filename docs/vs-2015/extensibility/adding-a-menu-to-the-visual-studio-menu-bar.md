@@ -34,9 +34,9 @@ Este passo a passo mostra como adicionar um menu a barra de menus do ambiente de
 
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Criando um projeto de VSIX que tem um modelo de item de comando personalizado
 
-1.  Crie um projeto do VSIX chamado `TopLevelMenu`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c#** / **extensibilidade**.  Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1.  Crie um projeto do VSIX chamado `TopLevelMenu`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual C#** / **extensibilidade**.  Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **TestCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **TestCommand.cs**.
+2.  Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **TestCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual C# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **TestCommand.cs**.
 
 ## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Criando um Menu na barra de menus do IDE
 

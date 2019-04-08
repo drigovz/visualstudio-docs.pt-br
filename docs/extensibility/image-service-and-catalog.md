@@ -584,7 +584,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 3. Altere a implementação dos VSHPROPIDs originais para ícones para criar versões "herdadas" dos ícones se pontos de extensão solicitação-los. **IVsImageService2** fornece a funcionalidade necessária obter esses ícones
 
-   **Requisitos adicionais para o VB / c# projeto sabores**
+   **Requisitos adicionais para o VB / C# projeto sabores**
 
    Implementar apenas **VSHPROPID_SupportsIconMonikers** se você detectar que o seu projeto é a **sabor mais externo**. Caso contrário, o tipo mais externo real pode não oferecer suporte monikers de imagem na realidade, e seu tipo base pode efetivamente "Ocultar" imagens personalizadas.
 
@@ -732,7 +732,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**
 
- O manifesto para a ferramenta de código usa um arquivo de manifesto de imagem e gera um arquivo de wrapper para fazer referência os valores de manifesto no código (C++, c# ou VB) ou *VSCT* arquivos.
+ O manifesto para a ferramenta de código usa um arquivo de manifesto de imagem e gera um arquivo de wrapper para fazer referência os valores de manifesto no código (C++, C# ou VB) ou *VSCT* arquivos.
 
  **ImageLibraryViewer**
 

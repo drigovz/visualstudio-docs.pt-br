@@ -20,15 +20,15 @@ ms.locfileid: "58922817"
 
 As lâmpadas são ícones usados no editor do Visual Studio que expanda para exibir um conjunto de ações, por exemplo, correções para problemas identificados pelo analisadores de código internos ou refatoração de código.  
   
- Nos editores do Visual c# e Visual Basic, você também pode usar o .NET Compiler Platform ("Roslyn") para gravar e empacotar seus próprios analisadores de código com as ações que exibem as lâmpadas automaticamente. Para obter mais informações, consulte:  
+ Nos editores do Visual C# e Visual Basic, você também pode usar o .NET Compiler Platform ("Roslyn") para gravar e empacotar seus próprios analisadores de código com as ações que exibem as lâmpadas automaticamente. Para obter mais informações, consulte:  
   
-- [Como: Gravar um c# diagnóstico e a correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Como: Gravar um C# diagnóstico e a correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
 - [Como: Gravar um diagnóstico do Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   Outras linguagens como C++ também fornecem as lâmpadas para algumas ações rápidas, como uma sugestão para criar uma implementação de stub dessa função.  
   
-  Uma lâmpada é semelhante ao seguinte. Em um projeto do Visual Basic ou Visual c#, uma linha ondulada vermelha aparece sob um nome de variável quando ela é inválida. Quando você passa o mouse sobre o identificador inválido, uma lâmpada é exibida perto do cursor.  
+  Uma lâmpada é semelhante ao seguinte. Em um projeto do Visual Basic ou Visual C#, uma linha ondulada vermelha aparece sob um nome de variável quando ela é inválida. Quando você passa o mouse sobre o identificador inválido, uma lâmpada é exibida perto do cursor.  
   
   ![lâmpada](../extensibility/media/lightbulb.png "lâmpada")  
   
@@ -43,7 +43,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Criando um projeto do Managed Extensibility Framework (MEF)  
   
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `LightBulbTest`.  
+1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual C# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `LightBulbTest`.  
   
 2.  Adicionar um **classificador de Editor** modelo de item ao projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

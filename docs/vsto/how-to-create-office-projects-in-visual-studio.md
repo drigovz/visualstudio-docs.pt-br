@@ -107,7 +107,7 @@ ms.locfileid: "57868166"
    > [!NOTE]
    > Se os modelos de projeto não são visíveis quando você seleciona os **suplementos do Office** nó, verifique se **.NET Framework 4** ou posterior está selecionado.
 
-5. No **nome** , digite um nome para o projeto. Por padrão, esse nome também é usado para o documento. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual c# ou configurações desenvolvimento gerais, insira também um local e o nome da solução.
+5. No **nome** , digite um nome para o projeto. Por padrão, esse nome também é usado para o documento. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual C# ou configurações desenvolvimento gerais, insira também um local e o nome da solução.
 
    > [!NOTE]
    > Você não pode usar caracteres substitutos no caminho do local do projeto ou no nome do projeto. Além disso, se você planeja implantar a solução para uso offline, os caracteres no nome do projeto devem se ajustar as especificações de protocolo HTTP.

@@ -82,7 +82,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Para habilitar o prompt de confiança do ClickOnce por meio de programação  
   
-1.  Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.  
+1.  Crie um aplicativo de console do Visual Basic ou Visual C# no Visual Studio.  
   
 2.  Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
   
@@ -139,7 +139,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Para restringir o prompt de confiança do ClickOnce por meio de programação  
   
-1.  Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.  
+1.  Crie um aplicativo de console do Visual Basic ou Visual C# no Visual Studio.  
   
 2.  Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
   
@@ -196,7 +196,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Para desabilitar o prompt de confiança do ClickOnce por meio de programação  
   
-1.  Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.  
+1.  Crie um aplicativo de console do Visual Basic ou Visual C# no Visual Studio.  
   
 2.  Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
   

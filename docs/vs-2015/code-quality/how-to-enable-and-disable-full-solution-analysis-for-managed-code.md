@@ -24,7 +24,7 @@ ms.locfileid: "58922377"
 [OBSERVAÇÃO]
 >  Este tópico se aplica somente ao Visual Studio 2015 atualização 3 RC e posterior.  
   
- *Análise de solução completa* é um recurso do Visual Studio que permite que você escolha se você vê problemas de análise de código somente em arquivos abertos de Visual c# ou Visual Basic em sua solução, ou em arquivos abertos e fechados, do Visual c# ou Visual Basic em sua solução.  
+ *Análise de solução completa* é um recurso do Visual Studio que permite que você escolha se você vê problemas de análise de código somente em arquivos abertos de Visual C# ou Visual Basic em sua solução, ou em arquivos abertos e fechados, do Visual C# ou Visual Basic em sua solução.  
   
  Embora seja útil ser capaz de ver todos os problemas em todos os arquivos, pode ser perturbador e até mesmo desacelerar os Visual Studio se sua solução for muito grande ou tem muitos arquivos.  Para limitar o número de problemas mostrados e melhorar o desempenho do Visual Studio, você pode desabilitar análise completa da solução. Você pode facilmente habilitar este recurso novamente se você quiser.  
   
@@ -32,7 +32,7 @@ ms.locfileid: "58922377"
   
 1.  No menu principal do Visual Studio, escolha **ferramentas** &#124; **opções** para exibir a **opções** caixa de diálogo.  
   
-2.  No **opções** diálogo caixa, escolha **Editor de texto** &#124; **c#** ou **básica** &#124; **avançado**.  
+2.  No **opções** diálogo caixa, escolha **Editor de texto** &#124; **C#** ou **básica** &#124; **avançado**.  
   
 3.  Selecione o **habilitar a análise de solução completa** caixa de seleção para habilitar a análise de solução completa, ou desmarque a caixa para desativá-lo. Escolha o **Okey** botão quando terminar.  
   
@@ -53,6 +53,6 @@ ms.locfileid: "58922377"
  ![Suspendendo a análise de solução completa de texto de alerta](../code-quality/media/fsa-alert.png "FSA_Alert")  
   
 ## <a name="additional-details"></a>Detalhes adicionais  
- Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual c#.  
+ Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual C#.  
   
  Visual Studio Update 3 RC inclui um mecanismo de diagnóstico v2 de analisador de código aprimorada que reduz o uso de memória significativamente e diminui o tempo de CPU permanecer ocioso, mesmo se a análise de solução completa está habilitada.

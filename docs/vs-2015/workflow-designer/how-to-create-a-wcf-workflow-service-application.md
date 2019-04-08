@@ -27,7 +27,7 @@ aplicativos de serviço do fluxo de trabalho[!INCLUDE[indigo1](../includes/indig
   
      A caixa de diálogo **Novo Projeto** é aberta.  
   
-3.  No **modelos instalados** painel, selecione **WCF** ou **fluxo de trabalho** de qualquer um de **Visual c#** ou **doVisualBasic** agrupamentos, dependendo de você linguagem de sua escolha.  
+3.  No **modelos instalados** painel, selecione **WCF** ou **fluxo de trabalho** de qualquer um de **Visual C#** ou **doVisualBasic** agrupamentos, dependendo de você linguagem de sua escolha.  
   
 4.  No painel central, selecione **aplicativo de serviço de fluxo de trabalho WCF**.  
   

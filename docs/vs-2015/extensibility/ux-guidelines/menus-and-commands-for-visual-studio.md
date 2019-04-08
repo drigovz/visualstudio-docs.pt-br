@@ -289,4 +289,4 @@ ms.locfileid: "59000010"
 
 1.  Verifique a lista de [atalhos do Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar se há comandos semelhantes para agrupar seus com.
 
-2.  Vá para **Ferramentas > Opções > ambiente > teclado** e testar o atalho. Verifique cada esquema de mapeamento de teclado listados em "Aplicar o seguinte esquema de mapeamento de teclado adicionais". Verifique perfis geral, c#, VB e C++, como aqueles compartilham atalhos exclusivos. O atalho está disponível se ela não estiver mapeada em qualquer um desses locais.
+2.  Vá para **Ferramentas > Opções > ambiente > teclado** e testar o atalho. Verifique cada esquema de mapeamento de teclado listados em "Aplicar o seguinte esquema de mapeamento de teclado adicionais". Verifique perfis geral, C#, VB e C++, como aqueles compartilham atalhos exclusivos. O atalho está disponível se ela não estiver mapeada em qualquer um desses locais.

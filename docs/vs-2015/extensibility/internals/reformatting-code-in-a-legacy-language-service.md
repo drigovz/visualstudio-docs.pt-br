@@ -26,7 +26,7 @@ No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] código-fonte pode ser reform
 > [!NOTE]
 >  **Observação** inserindo ou excluindo os caracteres de nova linha pode afetar marcadores, como pontos de interrupção e indicadores, mas adicionando ou removendo espaços ou tabulações não afeta marcadores.  
   
- Os usuários podem iniciar uma operação de reformatação, selecionando **seleção de formato** ou **Formatar documento** do **avançado** menu o **editar**menu. Uma operação de reformatação também pode ser disparada quando um trecho de código ou um determinado caractere é inserido. Por exemplo, quando você digita uma chave de fechamento em c#, tudo entre a chave de abertura correspondente e o colchete de fechamento é recuado automaticamente para o nível adequado.  
+ Os usuários podem iniciar uma operação de reformatação, selecionando **seleção de formato** ou **Formatar documento** do **avançado** menu o **editar**menu. Uma operação de reformatação também pode ser disparada quando um trecho de código ou um determinado caractere é inserido. Por exemplo, quando você digita uma chave de fechamento em C#, tudo entre a chave de abertura correspondente e o colchete de fechamento é recuado automaticamente para o nível adequado.  
   
  Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] envia o **Formatar seleção** ou **Formatar documento** comando para o serviço de linguagem, o <xref:Microsoft.VisualStudio.Package.ViewFilter> chamado pela classe o <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe. Para dar suporte a formatação que você deve substituir o <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> método e fornecer sua própria formatação de código.  
   

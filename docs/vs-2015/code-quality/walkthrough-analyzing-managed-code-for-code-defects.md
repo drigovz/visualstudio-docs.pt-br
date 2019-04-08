@@ -41,7 +41,7 @@ Neste passo a passo, você pode analisar um projeto gerenciado em busca de defei
   
 1.  Sobre o **arquivo** menu de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], clique em **New** e, em seguida, clique em **projeto**.  
   
-2.  No **novo projeto** caixa de diálogo **tipos de projeto**, clique em **Visual c#**.  
+2.  No **novo projeto** caixa de diálogo **tipos de projeto**, clique em **Visual C#**.  
   
 3.  Sob **modelos**, selecione **biblioteca de classes**.  
   

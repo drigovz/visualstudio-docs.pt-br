@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a65eb289cf42ba7b9a9bd7d0ad2cfdc1b630a131
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54796823"
@@ -43,7 +43,7 @@ A janela Propriedades com nome de closeButton
 3.  Clique duas vezes no botão **Mostrar uma imagem** no formulário. Como alternativa, escolha o botão **Mostrar uma imagem** no formulário e, em seguida, pressione a tecla ENTER. Quando você fizer isso, o IDE abrirá uma guia adicional na janela principal chamada **Form1.cs** (**Form1.vb** se você estiver usando Visual Basic). Esta guia mostra o arquivo de código por trás do formulário, conforme mostrado na seguinte imagem.  
   
      ![Guia Form1.cs com o código Visual C&#35;](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode")  
-Guia Form1.cs com código do Visual c#  
+Guia Form1.cs com código do Visual C#  
   
 4.  Foco nesta parte do código. (Escolha a guia **VB** abaixo se você estiver usando o Visual Basic para exibir a versão de Visual Basic do código.)  
   
@@ -55,7 +55,7 @@ Guia Form1.cs com código do Visual c#
     > [!NOTE]
     >  Neste tutorial, o código do Visual Basic que é gerado automaticamente foi simplificado por meio da remoção de tudo entre os parênteses, (). Sempre que isso ocorre, você pode remover o mesmo código. Seu programa irá trabalhar de qualquer maneira. Para o restante dos tutoriais, qualquer código automaticamente gerado será simplificado sempre que possível.  
   
-5.  Escolha o guia do Designer de Formulários do Windows novamente (**Form1.cs [Design]** no Visual c#, **Form1.vb [Design]** no Visual Basic) e abra o arquivo de código do botão **Limpar a imagem** para criar um método para ele no código do formulário. Repita isso para os dois botões restantes. A cada vez, o IDE adiciona um novo método ao arquivo de código do formulário.  
+5.  Escolha o guia do Designer de Formulários do Windows novamente (**Form1.cs [Design]** no Visual C#, **Form1.vb [Design]** no Visual Basic) e abra o arquivo de código do botão **Limpar a imagem** para criar um método para ele no código do formulário. Repita isso para os dois botões restantes. A cada vez, o IDE adiciona um novo método ao arquivo de código do formulário.  
   
 6.  Para adicionar mais um método, abra o arquivo de código para o controle CheckBox no Windows Forms Designer para fazer o IDE adicionar um método `checkBox1_CheckedChanged()`. Esse método é chamado sempre que o usuário seleciona ou desmarca a caixa de seleção.  
   
@@ -73,7 +73,7 @@ Guia Form1.cs com código do Visual c#
   
      Após adicionar um manipulador de eventos para um controle, você pode retornar a ele a qualquer momento do Designer de Formulários do Windows clicando duas vezes no controle ou na barra de menus, selecionando **Modo de Exibição**, **Código**.  
   
-     Os nomes são importantes quando você cria programas e métodos (incluindo manipuladores de eventos) podem ter qualquer nome que você desejar. Quando você adiciona um manipulador de eventos com o IDE, cria um nome com base no nome do controle e do evento que está sendo tratado. Por exemplo, o evento Click de um botão chamado **showButton** é chamado de o método manipulador de eventos de `showButton_Click()`. Além disso, os parênteses de abertura e fechamento () são adicionados geralmente após o nome do método para indicar que os métodos estão sendo discutidos. Se você decidir que deseja alterar um nome de variável de código, clique com o botão direito do mouse na variável no código e então escolha **Refatorar**, **Renomear**. Todas as instâncias desta variável no código são renomeadas. Ver [refatoração de renomeação (c#)](../csharp-ide/rename-refactoring-csharp.md) ou [refatoração e renomear a caixa de diálogo](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) para obter mais informações.  
+     Os nomes são importantes quando você cria programas e métodos (incluindo manipuladores de eventos) podem ter qualquer nome que você desejar. Quando você adiciona um manipulador de eventos com o IDE, cria um nome com base no nome do controle e do evento que está sendo tratado. Por exemplo, o evento Click de um botão chamado **showButton** é chamado de o método manipulador de eventos de `showButton_Click()`. Além disso, os parênteses de abertura e fechamento () são adicionados geralmente após o nome do método para indicar que os métodos estão sendo discutidos. Se você decidir que deseja alterar um nome de variável de código, clique com o botão direito do mouse na variável no código e então escolha **Refatorar**, **Renomear**. Todas as instâncias desta variável no código são renomeadas. Ver [refatoração de renomeação (C#)](../csharp-ide/rename-refactoring-csharp.md) ou [refatoração e renomear a caixa de diálogo](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) para obter mais informações.  
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   

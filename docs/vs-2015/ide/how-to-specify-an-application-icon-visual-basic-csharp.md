@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especifique um ícone do aplicativo (Visual Basic, c#) | Microsoft Docs'
+title: 'Como: Especifique um ícone do aplicativo (Visual Basic, C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54788159"

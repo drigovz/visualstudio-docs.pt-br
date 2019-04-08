@@ -70,7 +70,7 @@ As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUD
   
 11. Clique duas vezes no controle de botão que você removeu.  
   
-     Isso leva você à página de código: Default.aspx.cs para c# ou default para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. O cursor deve estar na função `Button1_Click`.  
+     Isso leva você à página de código: Default.aspx.cs para C# ou default para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. O cursor deve estar na função `Button1_Click`.  
   
 12. Na função `Button1_Click`, adicione o seguinte código:  
   

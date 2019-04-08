@@ -31,7 +31,7 @@ SDK do Azure para .NET ajuda a criar, configurar, compilar, depurar, executar e 
   
 1.  Sobre o **arquivo** menu, crie um novo projeto. (Clique em **New** e, em seguida, clique em **projeto**.)  
   
-2.  Expanda o nó para um **Visual Basic** ou **c#** e, em seguida, clique em **nuvem**.  
+2.  Expanda o nó para um **Visual Basic** ou **C#** e, em seguida, clique em **nuvem**.  
   
 3.  No painel central, selecione **Obtenha o SDK do Azure para .NET**e, em seguida, clique em **Okey**.  
   

@@ -18,7 +18,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
 ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/21/2019
 ms.locfileid: "58325221"
@@ -117,7 +117,7 @@ Este passo a passo demonstra como criar um serviço simples do Windows Communica
 
 1. No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**.
 
-2. No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó, selecione **Windows**e, em seguida, selecione  **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.
+2. No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó, selecione **Windows**e, em seguida, selecione  **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.
 
      ![Projeto de aplicativo do Windows Forms](../data-tools/media/wcf7.png)
 

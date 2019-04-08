@@ -44,7 +44,7 @@ Primeiro você irá criar um projeto VSIX, adicionar um adorno de exibição do 
 - Há um pacote do VSIP é necessário se você tiver os comandos do usuário, mas é apenas um código clichê que inicializa o objeto de implementação de comandos.
 - Há um `ColumnGuideCommands` objeto que implementa os comandos de usuário e conecta os manipuladores de comando para comandos declarado no arquivo. VSCT.
   
-  **VSIX**. Use **arquivo &#124; novo...** comando para criar um projeto. Escolha o nó extensibilidade em c# no painel de navegação esquerdo e escolha **VSIX Project** no painel direito. Insira o nome ColumnGuides e escolha **Okey** para criar o projeto.
+  **VSIX**. Use **arquivo &#124; novo...** comando para criar um projeto. Escolha o nó extensibilidade em C# no painel de navegação esquerdo e escolha **VSIX Project** no painel direito. Insira o nome ColumnGuides e escolha **Okey** para criar o projeto.
   
   **Exibir adornos**. Pressione o botão direito do ponteiro no nó do projeto no Gerenciador de soluções. Escolha o **adicionar &#124; Novo Item...** comando para adicionar um novo item do adorno de exibição. Escolher **extensibilidade &#124; Editor** no painel de navegação à esquerda e escolha **Editor de visor adorno** no painel direito. Insira o nome ColumnGuideAdornment como o nome do item e escolha **adicionar** para adicioná-lo.
   

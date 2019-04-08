@@ -1,5 +1,5 @@
 ---
-title: Depurador de código de exemplo de navegação (Xaml e c#) | Microsoft Docs
+title: Depurador de código de exemplo de navegação (Xaml e C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,7 +24,7 @@ ms.locfileid: "58927162"
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>Código de exemplo da navegação do depurador (XAML e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O código neste tópico é o arquivo de exemplo para o [navegar por uma sessão de depuração (Xaml e c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) tópico.  
+O código neste tópico é o arquivo de exemplo para o [navegar por uma sessão de depuração (Xaml e C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) tópico.  
   
 ## <a name="sample-code"></a>Código de exemplo  
   

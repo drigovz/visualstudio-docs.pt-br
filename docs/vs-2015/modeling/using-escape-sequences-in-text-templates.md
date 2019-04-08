@@ -21,7 +21,7 @@ ms.locfileid: "58922712"
 # <a name="using-escape-sequences-in-text-templates"></a>Usando sequências de escape em modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar sequências de escape em modelos de texto para gerar marcações de modelo de texto e (no c# somente código) para caracteres de controle de escape e aspas.  
+Você pode usar sequências de escape em modelos de texto para gerar marcações de modelo de texto e (no C# somente código) para caracteres de controle de escape e aspas.  
   
  Para imprimir as marcas de abertura e fechamento de um bloco de código padrão para o arquivo de saída, escape as marcas da seguinte maneira:  
   
@@ -37,7 +37,7 @@ Você pode usar sequências de escape em modelos de texto para gerar marcações
   
 -   Se a marcação de modelo de texto é precedida por um número ímpar de escape (\\) caracteres, o analisador de modelo incluirá metade da "\\" caracteres além de marca em si (\<# ou #>). A marca não é considerada uma marca de modelo de texto.  
   
--   Se um escape (\\) caracteres é exibida em qualquer lugar em qualquer sequência diferente de onde ele realiza o escape de um caractere de controle ou uma cotação (no c# somente), o caractere será gerado diretamente.  
+-   Se um escape (\\) caracteres é exibida em qualquer lugar em qualquer sequência diferente de onde ele realiza o escape de um caractere de controle ou uma cotação (no C# somente), o caractere será gerado diretamente.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Gerar modelos com base em modelos usando sequências de escape](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

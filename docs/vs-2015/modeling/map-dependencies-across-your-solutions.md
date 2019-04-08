@@ -63,13 +63,13 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
   
  **Você pode mapear as dependências para o código nesses idiomas**:  
   
-- Visual c# .NET ou Visual Basic .NET em uma solução ou assemblies (. dll ou .exe)  
+- Visual C# .NET ou Visual Basic .NET em uma solução ou assemblies (. dll ou .exe)  
   
 - Código C ou C++ nativo ou gerenciado em projetos do Visual C++, arquivos de cabeçalho (. h ou `#include`) ou binários  
   
 - Projetos e assemblies do X++ feitos com base nos módulos do .NET para Microsoft AX Dynamics  
   
-  **Observação:** Para projetos que não sejam c# ou Visual Basic .NET, há menos opções para o início de um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não é um objeto no editor de texto de um projeto C++ com o botão direito e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de Gerenciador de soluções, exibição de classe e Pesquisador de objetos.  
+  **Observação:** Para projetos que não sejam C# ou Visual Basic .NET, há menos opções para o início de um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não é um objeto no editor de texto de um projeto C++ com o botão direito e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de Gerenciador de soluções, exibição de classe e Pesquisador de objetos.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Para ver as dependências gerais em sua solução  
   

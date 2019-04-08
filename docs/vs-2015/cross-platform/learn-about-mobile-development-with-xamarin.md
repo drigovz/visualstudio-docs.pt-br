@@ -8,7 +8,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54781688"
@@ -72,7 +72,7 @@ Este tópico direciona você a materiais de visão geral que ajudam a entender o
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) fornece uma breve visão geral e os prós e contras do Xamarin.Forms versus camadas nativas da interface do usuário (ou seja, Xamarin.iOS e Xamarin.Android).  
   
-2.  Os primeiros três minutos do vídeo de James Montemagno [xamarin. Forms: IOS nativo, aplicativos Android e Windows com c# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9 13m3s) fornece outra visão geral, e você pode continuar assistindo a demonstrações.  
+2.  Os primeiros três minutos do vídeo de James Montemagno [xamarin. Forms: IOS nativo, aplicativos Android e Windows com C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9 13m3s) fornece outra visão geral, e você pode continuar assistindo a demonstrações.  
   
 3.  (Opcional) [Uma Introdução ao Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   

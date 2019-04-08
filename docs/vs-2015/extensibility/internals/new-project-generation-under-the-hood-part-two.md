@@ -21,7 +21,7 @@ ms.locfileid: "58923617"
 # <a name="new-project-generation-under-the-hood-part-two"></a>Geração de novo projeto: Bastidores, parte dois
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-No [nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou uma **Visual c# Windows Application**, preenchido a **nome** e **local** caixas de texto e Okey clicado.  
+No [nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou uma **Visual C# Windows Application**, preenchido a **nome** e **local** caixas de texto e Okey clicado.  
   
 ## <a name="generating-the-solution-files"></a>Gerar os arquivos de solução  
  Escolher um modelo de aplicativo direciona [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para descompactar e abrir o arquivo. vstemplate correspondente e para iniciar um modelo para interpretar os comandos XML neste arquivo. Esses comandos criam projetos e itens de projeto na solução nova ou existente.  

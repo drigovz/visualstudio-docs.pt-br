@@ -27,7 +27,7 @@ Persistência é uma consideração de design chave para seu projeto. A maioria 
   
  Itens de projeto podem ser baseado em arquivo ou não se baseiam no arquivo:  
   
--   Itens com base em arquivo podem ser local ou remoto. Em projetos da Web em c#, por exemplo, conexões com arquivos em um sistema remoto persistem localmente, enquanto que os próprios arquivos persistirem no sistema remoto.  
+-   Itens com base em arquivo podem ser local ou remoto. Em projetos da Web em C#, por exemplo, conexões com arquivos em um sistema remoto persistem localmente, enquanto que os próprios arquivos persistirem no sistema remoto.  
   
 -   Itens com base em arquivo não podem salvar os itens a um banco de dados ou o repositório.  
   

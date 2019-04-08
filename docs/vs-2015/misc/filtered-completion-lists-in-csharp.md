@@ -1,5 +1,5 @@
 ---
-title: Listas de conclusão no c# filtradas | Microsoft Docs
+title: Listas de conclusão no C# filtradas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -21,4 +21,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58928951"
 ---
 # <a name="filtered-completion-lists-in-c"></a>Listas de conclusão filtradas em C# #
-Este conteúdo foi movido para [listas de conclusão no c#](../misc/completion-lists-in-csharp.md)
+Este conteúdo foi movido para [listas de conclusão no C#](../misc/completion-lists-in-csharp.md)
