@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680926"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789686"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Dicas de acessibilidade e truques do Visual Studio
 
@@ -50,9 +50,9 @@ O Visual Studio IDE tem barras de ferramentas, assim como tem muitas janelas de 
 
 |Recurso|Descrição|Combinação de teclas|
 |-------------|-----------------| - |
-|Barras de ferramentas do IDE|Selecione o primeiro botão na barra de ferramentas Standard.|**ALT**, **CTRL** + **TAB**|
-|Barras de ferramentas da janela de ferramentas|Mova o foco para a barra de ferramentas em uma janela de ferramentas. <br> <br> **OBSERVAÇÃO:** Isso funciona para a maioria das janelas de ferramentas, mas somente quando o foco está em uma janela de ferramentas. Além disso, você deve escolher a tecla SHIFT antes da tecla ALT. Em algumas janelas de ferramentas, como a Team Explorer, você deve manter a tecla SHIFT pressionada por um momento antes de escolher a tecla ALT.|**SHIFT** + **ALT**|
-|Barras de ferramentas|Acesse o primeiro item na barra de ferramentas Avançar (quando uma barra de ferramentas tem foco).|**CTRL** + **TAB**|
+|Barras de ferramentas do IDE|Selecione o primeiro botão na barra de ferramentas Standard.|**Alt**, **Ctrl** + **Tab**|
+|Barras de ferramentas da janela de ferramentas|Mova o foco para a barra de ferramentas em uma janela de ferramentas. <br> <br> **OBSERVAÇÃO:** Isso funciona para a maioria das janelas de ferramentas, mas somente quando o foco está em uma janela de ferramentas. Além disso, você deve escolher a tecla SHIFT antes da tecla ALT. Em algumas janelas de ferramentas, como a Team Explorer, você deve manter a tecla SHIFT pressionada por um momento antes de escolher a tecla ALT.|**Shift** + **Alt**|
+|Barras de ferramentas|Acesse o primeiro item na barra de ferramentas Avançar (quando uma barra de ferramentas tem foco).|**Ctrl** + **Tab**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>Outras combinações de teclas de atalho úteis
 
@@ -60,14 +60,14 @@ Algumas outras combinações de teclas de atalho úteis incluem o seguinte.
 
 |Recurso|Descrição|Combinação de teclas|
 |-------------|-----------------| - |
-|IDE|Ativar e desativar o alto contraste. <br> <br> **OBSERVAÇÃO:** Atalho padrão do Windows|**ALT esquerdo + SHIFT esquerdo + PRINT SCREEN**|
+|IDE|Ativar e desativar o alto contraste. <br> <br> **OBSERVAÇÃO:** Atalho padrão do Windows|**Alt esquerdo+Shift esquerdo+PrtScn**|
 |Caixa de diálogo|Marque ou desmarque a opção da caixa de seleção em uma caixa de diálogo. <br> <br> **OBSERVAÇÃO:** Atalho padrão do Windows|**BARRA DE ESPAÇO**|
-|Menus de contexto|Abra um menu de contexto (clique com o botão direito do mouse). <br> <br> **OBSERVAÇÃO:** Atalho padrão do Windows|**SHIFT** + **F10**|
-|Menus|Acesse rapidamente um item de menu usando as teclas de aceleração. Escolha a tecla **ALT** seguida pelas letras sublinhadas em um menu de atalho para ativar o comando. Por exemplo, para exibir a caixa de diálogo Abrir Projeto no Visual Studio, você escolheria **ALT** + **F** + **O** + **P**.  <br><br> **OBSERVAÇÃO:** Atalho padrão do Windows|**ALT** + **[carta]**|
-|Caixa de pesquisa Início Rápido| Usar o recurso de pesquisa no Visual Studio|**Ctrl** + **Q**|
-|Janela caixa de ferramentas|Mover-se entre guias da Caixa de ferramentas.|**CTRL** + **SETA PARA CIMA**<br /><br /> e<br /><br /> **CTRL** + **SETA PARA BAIXO**|
-|Janela caixa de ferramentas|Adicionar um controle da Caixa de ferramentas a um formulário ou designer.|**ENTER**|
-|Caixa de diálogo Teclado, Ambiente, Opções|Excluir uma combinação de teclas inserida na opção **Pressionar teclas de atalho**.|**BACKSPACE**|
+|Menus de contexto|Abra um menu de contexto (clique com o botão direito do mouse). <br> <br> **OBSERVAÇÃO:** Atalho padrão do Windows|**Shift** + **F10**|
+|Menus|Acesse rapidamente um item de menu usando as teclas de aceleração. Escolha a tecla **Alt** seguida pelas letras sublinhadas em um menu para ativar o comando. Por exemplo, para exibir a caixa de diálogo Abrir Projeto, no Visual Studio, escolha **Alt** + **F** + **O** + **P**.  <br><br> **OBSERVAÇÃO:** Atalho padrão do Windows|**Alt** + **[letra]**|
+|Caixa de pesquisa|Usar o recurso de pesquisa no Visual Studio.|**Ctrl** + **Q**|
+|Janela caixa de ferramentas|Mover-se entre guias da Caixa de ferramentas.|**Ctrl** + **Seta para cima**<br /><br /> e<br /><br /> **Ctrl** + **Seta para baixo**|
+|Janela caixa de ferramentas|Adicionar um controle da Caixa de ferramentas a um formulário ou designer.|**Enter**|
+|Caixa de diálogo Opções: Ambiente > Teclado|Excluir uma combinação de teclas inserida na opção **Pressionar teclas de atalho**.|**Backspace**|
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas.
@@ -76,12 +76,12 @@ Algumas outras combinações de teclas de atalho úteis incluem o seguinte.
 
 Você pode usar o miniaplicativo de som no Windows para atribuir um som a eventos do programa Visual Studio. Especificamente, você pode atribuir sons aos seguintes eventos do programa:
 
- * Ocorrências de ponto de interrupção
- * Build cancelado
- * Build com falha
- * Build bem-sucedido
+* Ocorrências de ponto de interrupção
+* Build cancelado
+* Build com falha
+* Build bem-sucedido
 
-Veja como.
+Veja como:
 
 1. Na caixa **Pesquisar** em um computador executando o Windows 10, digite **Alterar sons do sistema**.
 

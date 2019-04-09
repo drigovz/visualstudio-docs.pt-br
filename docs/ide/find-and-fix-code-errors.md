@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223605"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790518"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -44,7 +44,7 @@ A menos que não tenha feito nenhuma modificação no código compilado com êxi
 
 ![Lista de Erros e Saída do Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Clique na linha de erro na janela **Lista de Erros** e vá para a linha em que ocorre o erro. (Ou ative os números de linha clicando na barra **Início Rápido** na parte superior direita, digitando "números de linha" nela e pressionando **Enter**. Essa é a maneira mais rápida para acessar a caixa de diálogo **Opções**, em que é possível ativar os números de linha. Saiba como usar a barra **Início Rápido** e poupe muitos cliques na interface do usuário!)
+Clique na linha de erro na janela **Lista de Erros** e vá para a linha em que ocorre o erro. Ou ative os números de linha pressionando **Ctrl**+**Q**, digitando **números de linha** e, em seguida, escolhendo **Ativar ou desativar números de linha** nos resultados. Essa é a maneira mais rápida para acessar a caixa de diálogo **Opções**, em que é possível ativar os números de linha.
 
 ![Editor do Visual Studio com números de linha](../ide/media/vs_ide_gs_debug_line_numbers.png)
 

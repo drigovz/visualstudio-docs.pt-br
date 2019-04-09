@@ -9,16 +9,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e0185e8879718e068cd624559087db9369d7e190
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323864"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789920"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como: Exibir, salvar e configurar arquivos de log de build
 
-Depois de compilar um projeto no Visual Studio IDE, é possível exibir informações sobre sse build na Janela de **Saída**. Usando essas informações, é possível, por exemplo, solucionar problemas de uma falha de build. Para projetos C++, também é possível exibir as mesmas informações em um arquivo *.txt* criado e salvo automaticamente. Para projetos de código gerenciado, é possível copiar e colar as informações da Janela de **Saída** em uma arquivo *.txt* e salvá-lo. Também é possível usar o IDE para especificar que tipos de informações você deseja exibir sobre cada build.
+Depois de compilar um projeto no Visual Studio IDE, é possível exibir informações sobre sse build na Janela de **Saída**. Usando essas informações, é possível, por exemplo, solucionar problemas de uma falha de build. 
+
+  - Para projetos C++, também é possível exibir as mesmas informações em um arquivo *.txt* criado e salvo automaticamente. 
+
+  - Para projetos de código gerenciado, clique na janela de saída de build e pressione **Ctrl**+**S**. O Visual Studio solicitará um local para salvar as informações da janela de **Saída** em um arquivo *.txt*. 
+  
+Também é possível usar o IDE para especificar que tipos de informações você deseja exibir sobre cada build.
 
 Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar um arquivo *.txt* para salvar informações sobre o build. Para obter mais informações, consulte [Obtendo logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -30,9 +36,11 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
 
 1.  Na barra de menus, escolha **Compilar** > **Compilar Solução**.
 
-2.  Na Janela de **Saída**, realce as informações do build e, em seguida, copie-as para a **Área de transferência**.
+2.  Na janela de **Saída**, clique em algum lugar no texto.
 
-3.  Abra um editor de texto, como o **Bloco de notas**, cole as informações no arquivo e salve-o.
+3.  Pressione **Ctrl**+**S**.
+
+   O Visual Studio solicitará um local para salvar a saída de build.
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para alterar a quantidade de informações incluídas no log de build
 

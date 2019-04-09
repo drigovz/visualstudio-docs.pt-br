@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354718"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790895"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início Rápido: Introdução ao IDE do Visual Studio
 
@@ -125,15 +125,15 @@ Vamos criar o projeto para ver uma saída de build. No menu **Compilação**, es
 
 ![Janela de Saída no Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Início Rápido
+## <a name="search-box"></a>Caixa de pesquisa
 
-A caixa de pesquisa **Início Rápido** é uma maneira rápida e fácil de navegar em praticamente tudo no Visual Studio. Você pode inserir um texto relacionado ao que você deseja fazer e ele mostrará uma lista de opções que pertencem ao texto. Por exemplo, imagine que você deseje aumentar o detalhamento da saída de build para que ela exiba mais detalhes sobre o que o build está fazendo exatamente. Veja como você pode fazer isso:
+A caixa de pesquisa é uma maneira rápida e fácil de navegar em praticamente tudo no Visual Studio. Você pode inserir um texto relacionado ao que você deseja fazer e ele mostrará uma lista de opções que pertencem ao texto. Por exemplo, imagine que você deseje aumentar o detalhamento da saída de build para que ela exiba mais detalhes sobre o que o build está fazendo exatamente. Veja como você pode fazer isso:
 
 ::: moniker range="vs-2017"
 
 1. Localize a caixa de pesquisa **Início Rápido** no canto superior direito do IDE. (Alternativamente, pressione **Ctrl**+**Q** para acessá-la.)
 
-2. Digite **detalhamento** na caixa de pesquisa **Início Rápido**. Nos resultados exibidos, escolha **Projetos e Soluções -> Compilar e Executar** na categoria **Opções**.
+2. Digite **detalhamento** na caixa de pesquisa. Nos resultados exibidos, escolha **Projetos e Soluções -> Compilar e Executar** na categoria **Opções**.
 
    ![Caixa de pesquisa Início Rápido no Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ A caixa de pesquisa **Início Rápido** é uma maneira rápida e fácil de naveg
 
 ::: moniker range=">=vs-2019"
 
-1. Localize a caixa de pesquisa **Início Rápido** na parte superior do IDE, à direita dos menus. (Alternativamente, pressione **Ctrl**+**Q** para acessá-la.)
+1. Pressione **Ctrl**+**Q** para ativar a caixa de pesquisa na parte superior do IDE.
 
-2. Digite **detalhamento** na caixa de pesquisa **Início Rápido**. A partir dos resultados exibidos, escolha **Alterar detalhamento do MSBuild**.
+2. Digite **detalhamento** na caixa de pesquisa. A partir dos resultados exibidos, escolha **Alterar detalhamento do MSBuild**.
 
-   ![Caixa de pesquisa Início Rápido no Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+   ![Caixa de pesquisa no Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
 
    A caixa de diálogo **Opções**é aberta na página de opções **Compilar e Executar**.
 
@@ -163,7 +163,7 @@ A caixa de pesquisa **Início Rápido** é uma maneira rápida e fácil de naveg
 
 ## <a name="send-feedback-menu"></a>Menu Enviar Comentários
 
-Caso encontre problemas enquanto estiver usando o Visual Studio ou tenha sugestões de como melhorar o produto, use o menu **Enviar Comentários** na parte superior da janela do Visual Studio, ao lado da caixa **Início Rápido**.
+Caso encontre problemas enquanto estiver usando o Visual Studio ou se tiver sugestões de como melhorar o produto, use o menu **Enviar Comentários** próximo da parte superior da janela do Visual Studio.
 
 ::: moniker range="vs-2017"
 

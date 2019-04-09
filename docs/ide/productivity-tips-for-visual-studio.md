@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355757"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789907"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -66,7 +66,7 @@ Você pode procurar no IDE comandos, arquivos e opções, bem como filtrar o con
 
 - **Exiba apenas os erros que você deseja resolver**. Se você escolher o botão **Filtrar** na barra de ferramentas **Lista de Erros**, poderá reduzir o número de erros que aparecem na janela **Lista de Erros**. Você só pode exibir os erros em arquivos que estão abertos no editor, somente os erros no arquivo atual ou somente os erros no projeto atual. Você também pode pesquisar na janela **Lista de Erros** para localizar erros específicos.
 
-- **Localizar caixas de diálogo, comandos de menu, opções e mais**. Na caixa de pesquisa [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md), insira palavras-chave ou frases para os itens que você está tentando localizar. Por exemplo, as seguintes opções aparecerão se você inserir **novo projeto**:
+- **Localizar caixas de diálogo, comandos de menu, opções e mais**. Na caixa de pesquisa, digite as palavras-chave ou frases dos itens que você está tentando localizar. Por exemplo, as seguintes opções aparecerão se você inserir **novo projeto**:
 
    ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ Você pode procurar no IDE comandos, arquivos e opções, bem como filtrar o con
 
    ::: moniker range=">=vs-2019"
 
-   ![Resultados da pesquisa do Início Rápido para "novo projeto"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Resultados para o 'novo projeto'](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Pressione **Ctrl**+**Q** para ir direto à caixa de pesquisa do **Início Rápido**.
+   Pressione **Ctrl**+**Q** para ir direto à caixa de pesquisa.
 
 ## <a name="debug-code"></a>Depurar o código
 

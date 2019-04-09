@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223358"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790362"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado para o Visual Studio
 
@@ -50,9 +50,9 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 |||
 |-|-|
 |Pesquisa do Gerenciador de Soluções|**Ctrl**+**;**|
-|Foque na caixa de Pesquisa em qualquer janela de ferramentas|**Alt**+**`** quando a janela de ferramentas tiver foco|
-|Início Rápido|**Ctrl**+**Q**|
-|Resultados de Escopo de Início Rápido|–   @opt Opções<br />–   @cmd Comandos<br />–   @mru Usado mais recentemente<br />–   @doc Abrir documentos|
+|Foque na caixa de pesquisa em qualquer janela de ferramentas|**Alt**+**`** quando a janela de ferramentas tiver foco|
+|Caixa de pesquisa|**Ctrl**+**Q**|
+|Resultados de escopo da caixa de pesquisa|–   @opt Opções<br />–   @cmd Comandos<br />–   @mru Usado mais recentemente<br />–   @doc Abrir documentos|
 |Pesquisar em Opções de Ferramentas|**Ctrl**+**E**|
 
 ## <a name="editor-find"></a>Localização de editor
