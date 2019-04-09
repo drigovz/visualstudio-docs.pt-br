@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916877"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790843"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como: Assinar manifestos de aplicativo e implantação
 
@@ -35,11 +35,11 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
  Para obter informações sobre como criar arquivos de chave, veja [Como: Como criar um par de chaves pública/privada](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
-> O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é compatível apenas com arquivos de chave de Troca de Informações Pessoais (PFX) que têm a extensão *.pfx*. No entanto, é possível selecionar outros tipos de certificados do repositório de certificados do Windows do usuário atual, clicando em **Selecionar do Repositório** na página **Assinatura** das propriedades do projeto.
+> O Visual Studio oferece suporte apenas a arquivos de chave de Troca de Informações Pessoais (PFX) que têm a extensão *.pfx*. No entanto, é possível selecionar outros tipos de certificados do repositório de certificados do Windows do usuário atual, clicando em **Selecionar do Repositório** na página **Assinatura** das propriedades do projeto.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Para assinar os manifestos do aplicativo e de implantação usando um certificado
+## <a name="sign-using-a-certificate"></a>Assinar usando um certificado
 
-1.  Acesse a janela Propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**, digite **propriedades do projeto** na janela **Início Rápido** ou pressione **Alt**+**Enter** no **Gerenciador de Soluções**). Na guia **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
+1.  Vá para a janela de propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**). Na guia **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
 2.  Clique no botão **Selecionar do Repositório**.
 
@@ -52,7 +52,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 
 4.  Além disso, é possível especificar o endereço de um servidor de carimbo de data/hora na caixa de texto **URL do servidor de carimbo de data/hora**. Esse é um servidor que fornece um carimbo de data/hora que especifica quando o manifesto foi assinado.
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Para assinar os manifestos do aplicativo e de implantação usando um arquivo de chave existente
+## <a name="sign-using-an-existing-key-file"></a>Assinar usando um arquivo de chave existente
 
 1.  Na página **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
@@ -69,7 +69,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 
 4.  Insira a senha para acessar o arquivo de chave e pressione **Enter**.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Para assinar os manifestos do aplicativo e de implantação usando um certificado de teste
+## <a name="sign-using-a-test-certificate"></a>Assinar usando um certificado de teste
 
 1.  Na página **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
 

@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325088"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790336"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
@@ -54,7 +54,7 @@ Depois de abrir o Visual Studio, você poderá ver as três partes básicas do I
 
 Depois que você abrir o Visual Studio, a janela de início será exibida primeiro. Selecione **Continuar sem código** para abrir o ambiente de desenvolvimento.
 
-Você verá as três partes básicas do IDE: janelas de ferramentas, menus e barras de ferramentas, além do espaço da janela principal. As janelas de ferramentas são encaixadas à esquerda e à direita da janela do aplicativo. A caixa **Início Rápido**, a barra de menus e a barra de ferramentas padrão estão na parte superior. Quando você carrega uma solução ou um projeto, os editores e designers são exibidos no espaço central da janela do aplicativo. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
+Você verá as três partes básicas do IDE: janelas de ferramentas, menus e barras de ferramentas, além do espaço da janela principal. As janelas de ferramentas são encaixadas à esquerda e à direita da janela do aplicativo. A caixa de pesquisa, a barra de menus e a barra de ferramentas padrão estão na parte superior. Quando você carrega uma solução ou um projeto, os editores e designers são exibidos no espaço central da janela do aplicativo. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
 
 ::: moniker-end
 

@@ -1,6 +1,7 @@
 ---
 title: 'Como: Desbloquear o Visual Studio'
-ms.date: 07/20/2017
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943136"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856814"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Como: Desbloquear o Visual Studio
 
@@ -27,7 +30,7 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Entrar no IDE
 
 Para desbloquear o Visual Studio usando uma Assinatura do Visual Studio, uma organização do Azure DevOps associada a uma conta Microsoft ou uma conta corporativa ou de estudante:
 
-1. Clique no botão **Entrar** no canto superior direito do IDE (ou acesse **Arquivo** > **Configurações de Conta** para abrir a caixa de diálogo **Configurações de Conta** e clique no botão **Entrar**).
+1. Escolha o botão **Entrar** no canto superior direito do IDE (ou acesse **Arquivo** > **Configurações de Conta** para abrir a caixa de diálogo **Configurações de Conta** e escolha o botão **Entrar**).
 
 1. Insira as credenciais para uma conta da Microsoft ou uma conta corporativa ou de estudante. O Visual Studio encontrará uma Assinatura do Visual Studio ou uma organização do Azure DevOps associada à sua conta.
 
@@ -36,9 +39,9 @@ Para desbloquear o Visual Studio usando uma Assinatura do Visual Studio, uma org
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear o Visual Studio com uma chave do produto (Product Key)
 
-1. Selecione **Arquivo** > **Configurações de Conta** para abrir a caixa de diálogo **Configurações de Conta** e clique no link **Licenciar com uma Chave de Produto**.
+1. Selecione **Arquivo** > **Configurações de Conta** para abrir a caixa de diálogo **Configurações de Conta** e, em seguida, escolha o link **Licenciar com uma Chave de Produto**.
 
-Insira a chave do produto (Product Key) no espaço fornecido.
+1. Insira a chave do produto (Product Key) no espaço fornecido.
 
 > [!TIP]
 > As versões de pré-lançamento do Visual Studio não têm chaves de produto. Você deve entrar no IDE para usar as versões de pré-lançamento.
@@ -47,7 +50,7 @@ Insira a chave do produto (Product Key) no espaço fornecido.
 
 ### <a name="update-stale-licenses"></a>Atualizar licenças obsoletas
 
- Você poderá ver a mensagem abaixo informando que sua licença está obsoleta no Visual Studio, indicando "Sua licença ficou obsoleta e deve ser atualizada".
+ Talvez você tenha visto a mensagem a seguir que informa que sua licença ficará obsoleta no Visual Studio. A mensagem diz que "Sua licença ficou obsoleta e deve ser atualizada".
 
  ![Mensagem de licença obsoleta do Visual Studio](../ide/media/vs2017_stale-license.png)
 
@@ -56,12 +59,12 @@ Insira a chave do produto (Product Key) no espaço fornecido.
 - Você não usou o Visual Studio ou não teve uma conexão com a Internet por um longo período.
 - Você saiu do Visual Studio.
 
-Antes de o token de licença se tornar obsoleto, o Visual Studio mostrará primeiro uma mensagem de aviso solicitando que você insira suas credenciais novamente.
+Antes de o token de licença ficar obsoleto, o Visual Studio mostrará primeiro uma mensagem de aviso que solicita que você insira suas credenciais novamente.
 
-Se você não digitar novamente suas credenciais, o token começará a ficar obsoleto e a caixa de diálogo **Configurações da Conta** informará quantos dias você ainda tem até seu token expirar totalmente. Depois que o token expirar, você precisará inserir novamente suas credenciais para esta conta ou licença com outro método acima para poder continuar usando o Visual Studio.
+Se você não digitar novamente suas credenciais, o token começará a ficar obsoleto e a caixa de diálogo **Configurações da Conta** informará quantos dias você ainda tem até seu token expirar totalmente. Depois que o token expirar, será preciso digitar novamente suas credenciais de conta para continuar usando o Visual Studio.
 
 > [!Important]
-> Se estiver usando o Visual Studio por longos períodos em ambientes com acesso limitado ou sem acesso à Internet, você deverá usar uma chave do produto (Product Key) para desbloquear o Visual Studio para evitar a interrupção.
+> Se estiver usando o Visual Studio por longos períodos em ambientes com acesso limitado ou sem acesso à Internet, você deverá usar uma chave do produto (Product Key) para desbloquear o Visual Studio a fim de evitar uma interrupção.
 
 ### <a name="update-expired-licenses"></a>Atualizar licenças expiradas
 

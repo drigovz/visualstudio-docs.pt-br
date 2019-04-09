@@ -1,23 +1,20 @@
 ---
 title: Personalizando o comportamento de cópia | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844075"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927351"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ partial class MyDslClipboardCommandSet
  Substituir *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` no projeto DslPackage.  
   
  **Preservar o layout de forma por meio de copiar e colar.**  
- Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada no exemplo em [VMSDK: exemplo de diagramas de circuito](http://go.microsoft.com/fwlink/?LinkId=213879).  
+ Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada no exemplo em [VMSDK: Exemplo de diagramas de circuito](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
  Para conseguir esse efeito, adicione as formas e conectores ao ElementGroupPrototype copiado. O método mais conveniente para substituir é o ElementOperations.CreateElementGroupPrototype(). Para fazer isso, adicione o seguinte código ao projeto Dsl:  
   
@@ -151,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```  
   
  **Cole formas em um local escolhido, como a posição atual do cursor.**  
- Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada no exemplo em [VMSDK: exemplo de diagramas de circuito](http://go.microsoft.com/fwlink/?LinkId=213879).  
+ Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada no exemplo em [VMSDK: Exemplo de diagramas de circuito](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
  Para conseguir esse efeito, substitua `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar a versão específica do local do `ElementOperations.Merge()`. Para fazer isso, adicione o seguinte código ao projeto DslPackage:  
   
@@ -218,7 +215,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```  
   
  **Permitir que o usuário arrasta e solta elementos.**  
- Ver [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Confira [Como Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ##  <a name="customizeLinks"></a> Personalizando o comportamento Copiar Link  
  Quando o usuário copia um elemento, o comportamento padrão é que todos os elementos incorporados também sejam copiados. Você pode modificar o comportamento de cópia padrão. Na definição de DSL, selecione uma função em um dos lados de uma relação e na janela Propriedades, configure a **propaga cópia** valor.  
@@ -290,7 +287,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```  
   
 ## <a name="receiving-items-dragged-from-other-models"></a>Recebendo itens arrastados de outros modelos  
- O ElementOperations também pode ser usado para definir os comportamentos copiar, mover, apagar e arrastar e soltar. Como uma demonstração do uso do ElementOperations, o exemplo que fornecemos aqui define o comportamento personalizado de arrastar e soltar. No entanto, para essa finalidade você pode considerar a abordagem alternativa descrita [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md), que é mais extensível.  
+ O ElementOperations também pode ser usado para definir os comportamentos copiar, mover, apagar e arrastar e soltar. Como uma demonstração do uso do ElementOperations, o exemplo que fornecemos aqui define o comportamento personalizado de arrastar e soltar. No entanto, para essa finalidade você pode considerar a abordagem alternativa descrita no [como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md), que é mais extensível.  
   
  Defina dois métodos em sua classe ElementOperations:  
   
@@ -378,7 +375,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Comportamento copiar padrão   
  O código nesta seção mostra métodos que você pode substituir para alterar o comportamento de cópia. Para ajudá-lo a entender como fazer suas próprias personalizações, esta seção mostra o código que substitui os métodos envolvidos na cópia, mas não altera o comportamento padrão.  
   
- Quando o usuário pressiona CTRL+C ou usa o comando Copiar, o método <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> é chamado. Você pode ver como isso é configurado **DslPackage\Generated Code\CommandSet.cs**. Para obter mais informações sobre como comandos são configurados, consulte [como: adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Quando o usuário pressiona CTRL+C ou usa o comando Copiar, o método <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> é chamado. Você pode ver como isso é configurado **DslPackage\Generated Code\CommandSet.cs**. Para obter mais informações sobre como comandos são configurados, consulte [como: Adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
  Você pode substituir ProcessOnMenuCopyCommand adicionando uma definição de classe parcial de *MyDsl* `ClipboardCommandSet` no projeto DslPackage.  
   
@@ -568,9 +565,6 @@ namespace Company.MyDsl
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando a criação de elemento e movimentação](../modeling/customizing-element-creation-and-movement.md)   
- [Como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md)   
- [Exemplo: Exemplo de diagramas de circuito VMSDK&lt;2}{3&gt; http://go.microsoft.com/FWLINK/?LINKID=213879&lt;3}&lt;1](http://go.microsoft.com/fwlink/?LinkId=213879)
-
-
-
+ [Exemplo: Exemplo de diagramas de circuito VMSDK&lt;5}{6&gt; http://go.microsoft.com/FWLINK/?LINKID=213879&lt;6}&lt;4](http://go.microsoft.com/fwlink/?LinkId=213879)

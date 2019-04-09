@@ -1,12 +1,9 @@
 ---
 title: Processando modelos de texto usando um Host personalizado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
@@ -14,13 +11,13 @@ ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f2f10b239b4307b94c1f3b62b8e0a29767b22aaf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928915"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Processando modelos de texto usando um host personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> é definido em **Microsoft.VisualStudio.TextTemplating.\*. 0. dll**, e <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> é definida no **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0. dll**.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Passo a passo: criando um host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
+ [Passo a passo: Criar um host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
  Demonstra como criar um host de modelo de texto personalizado que torna a funcionalidade do modelo de texto disponível fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="reference"></a>Referência  
@@ -68,6 +65,3 @@ string output = engine.ProcessTemplate(templateString, host);
   
  [Criando processadores de diretiva de modelo de texto T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md)  
  Fornece uma visão geral de processadores de diretiva do modelo de texto.
-
-
-

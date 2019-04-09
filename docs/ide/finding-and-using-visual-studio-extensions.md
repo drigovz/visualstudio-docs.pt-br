@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268541"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790752"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
@@ -33,7 +33,7 @@ Use a caixa de diálogo **Extensões e Atualizações** para instalar e gerencia
 
 ::: moniker range=">=vs-2019"
 
-Use a caixa de diálogo **Gerenciar Extensões** para instalar e gerenciar extensões do Visual Studio. Para abrir a caixa de diálogo **Gerenciar Extensões**, escolha **Extensões** > **Gerenciar Extensões**. Ou digite **Extensões** na caixa de pesquisa **Início Rápido** e escolha **Gerenciar Extensões**.
+Use a caixa de diálogo **Gerenciar Extensões** para instalar e gerenciar extensões do Visual Studio. Para abrir a caixa de diálogo **Gerenciar Extensões**, escolha **Extensões** > **Gerenciar Extensões**. Ou digite **Extensões** na caixa de pesquisa e escolha **Gerenciar Extensões**.
 
 ::: moniker-end
 

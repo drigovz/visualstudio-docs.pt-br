@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268609"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790531"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
@@ -118,7 +118,7 @@ Os Azure DevOps Services são serviços baseados em nuvem para planejar, hospeda
 
 O TFS (Team Foundation Server) é o hub de gerenciamento do ciclo de vida do aplicativo para o Visual Studio. Ele habilita a participação de todos os envolvidos com o processo de desenvolvimento usando uma única solução. O TFS também é útil para gerenciar equipes e projetos heterogêneos.
 
-Se você tiver uma organização do Azure DevOps ou um Team Foundation Server na rede, conecte-se a ela por meio da janela **Team Explorer** no Visual Studio. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e workspaces. Abra o **Team Explorer** na caixa **Início Rápido** ou no menu principal, em **Exibir** > **Team Explorer** ou em **Equipe** > **Gerenciar Conexões**.
+Se você tiver uma organização do Azure DevOps ou um Team Foundation Server na rede, conecte-se a ela por meio da janela **Team Explorer** no Visual Studio. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e workspaces. Abra o **Team Explorer** na caixa de pesquisa ou no menu principal, em **Exibir** > **Team Explorer** ou em **Equipe** > **Gerenciar Conexões**.
 
 A imagem a seguir mostra a janela **Team Explorer** em uma solução hospedada no Azure DevOps Services.
 

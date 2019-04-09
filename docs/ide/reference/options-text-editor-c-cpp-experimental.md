@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325208"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789985"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
 
@@ -28,7 +28,7 @@ Este artigo descreve as opções no Visual Studio 2017. Para o Visual Studio 201
 
 ::: moniker-end
 
-Para acessar esta página de propriedades, pressione **Control** + **Q** para ativar `Quick Launch` e, em seguida, digite "experimental". O Início Rápido encontra a página após as primeiras letras. Acesse-a também escolhendo **Ferramentas** > **Opções** e expandindo **Editor de Texto**, em seguida, **C/C++** e escolhendo **Experimental**.
+Para acessar esta página de propriedades, pressione **Ctrl**+**Q** para ativar a caixa de pesquisa e, em seguida, digite **experimental**. A Pesquisa encontra a página após as primeiras letras. Acesse-a também escolhendo **Ferramentas** > **Opções** e expandindo **Editor de Texto**, em seguida, **C/C++** e escolhendo **Experimental**.
 
 Essas funcionalidades estão disponíveis em uma instalação do Visual Studio.
 

@@ -1,27 +1,22 @@
 ---
 title: Solucionar problemas de VSPackages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764001"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000048"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 3.  Verifique as entradas de registro de VSPackage.  
   
-     Para obter mais informações, consulte [registrar VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) e [gerenciar VSPackages](../extensibility/managing-vspackages.md).  
+     Para obter mais informações, consulte [registrar VSPackages](internals/registering-vspackages.md) e [gerenciar VSPackages](../extensibility/managing-vspackages.md).  
   
 4.  Abra o **saída** janela da instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que falha ao carregar o VSPackage. Informações sobre por que o VSPackage falha no carregamento podem ser exibidas nessa janela.  
   
@@ -57,7 +52,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 5.  Examine o log de atividades.  
   
-     Para obter mais informações, consulte [como: usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
+     Para obter mais informações, confira [Como: Usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
   
 6.  Para obter mais informações sobre as exceções geradas pelo IDE, clique em **exceções** sobre o **depurar** menu habilitar as exceções. No **exceções** caixa de diálogo Selecionar os tipos de exceções sobre o qual você deseja obter mais informações.  
   
@@ -96,7 +91,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 2.  Use o log de atividades.  
   
-     Rastrear o comportamento de VSPackage gravando informações ao log de atividades em pontos-chave. Essa técnica é especialmente útil quando você executa um VSPackage em um ambiente de varejo. Para obter mais informações, consulte [como: usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
+     Rastrear o comportamento de VSPackage gravando informações ao log de atividades em pontos-chave. Essa técnica é especialmente útil quando você executa um VSPackage em um ambiente de varejo. Para obter mais informações, confira [Como: Usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Use os símbolos públicos.  
   
@@ -132,4 +127,3 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 ## <a name="see-also"></a>Consulte também  
  [VSPackages](../extensibility/internals/vspackages.md)
-

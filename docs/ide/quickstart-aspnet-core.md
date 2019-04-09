@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 2c9bbe0b6a1f7722fb2da685b29f5d244441edc2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475845"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856712"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -37,7 +37,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -83,11 +83,13 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
 ::: moniker range="vs-2019"
 
+1. Abra o Visual Studio.
+
 1. Na tela Iniciar, selecione **Criar um novo projeto**.
 
    ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na janela **Criar um novo projeto**, insira ou digite *ASP.NET* na caixa de pesquisa. Em seguida, escolha **C#** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma. 
+1. Na janela **Criar um novo projeto**, insira ou digite *ASP.NET* na caixa de pesquisa. Em seguida, escolha **C#** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma.
 
    Depois de aplicar os filtros de linguagem de programação e plataforma, escolha o modelo **Aplicativo Web ASP.NET Core (.NET Core)** e, em seguida, escolha **Avançar**.
 
@@ -96,8 +98,8 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
    > [!NOTE]
    > Se não vir o modelo **Aplicativo Web ASP.NET Core**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
    >
-   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento Web e ASP.NET**.
    >
    > ![Carga de trabalho do Aplicativo Web ASP.NET Core no Instalador do Visual Studio](../get-started/media/aspnet-core-web-dev-workload.png)
@@ -172,7 +174,7 @@ Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha a
 Para saber mais, continue com o tutorial a seguir:
 
 > [!div class="nextstepaction"]
-> [Introdução ao C# e ao ASP.NET no Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
+> [Introdução a C# e ASP.NET no Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
 ## <a name="see-also"></a>Consulte também
 

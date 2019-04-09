@@ -1,27 +1,22 @@
 ---
 title: 'Passo a passo: Capturando informações de gráficos de forma programática | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926483"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Passo a passo: Como capturar informações de gráficos de forma programática
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.  
@@ -204,9 +199,6 @@ ms.locfileid: "51747671"
 -   Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Ver [visão geral](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Capturando informações de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
- [Capturando informações de gráficos](../debugger/capturing-graphics-information.md)   
+ [Passo a passo: Como capturar informações de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
+ [Como capturar informações de gráficos](../debugger/capturing-graphics-information.md)   
  [Ferramenta de captura de linha de comando](../debugger/command-line-capture-tool.md)
-
-
-

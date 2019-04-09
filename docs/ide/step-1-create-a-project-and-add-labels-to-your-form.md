@@ -2,18 +2,20 @@
 title: 'Etapa 1: Criar um projeto e adicionar rótulos ao formulário'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917747"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647395"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 
@@ -24,23 +26,39 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Para criar um projeto e definir propriedades para um formulário
 
-1.  Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+::: moniker range="vs-2017"
 
-2.  Na lista **Modelos Instalados** escolha **C#** ou **Visual Basic**.
+1.  Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
 
-3.  Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms**, nomeie-o como **Teste de matemática** e então clique no botão **OK**.
+1.  Na lista **Modelos Instalados** escolha **C#** ou **Visual Basic**.
+
+1.  Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms**, dê o nome **MathQuiz** a ele e, então, clique no botão **OK**.
 
      Um formulário chamado *Form1.cs* ou *Form1.vb* aparece, dependendo da linguagem de programação que você escolheu.
 
-4.  Escolha o formulário e, em seguida, altere sua propriedade **Text** para **Teste de matemática**.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+1. Na caixa de pesquisa, digite "WPF", escolha **aplicativo WPF (.NET Framework)** e, em seguida, escolha **Próxima**.
+
+   Se você não encontrar o modelo **Aplicativo do WPF (.NET Framework)**, use o Instalador do Visual Studio para instalar a carga de trabalho **desenvolvimento para área de trabalho do .NET**.
+
+1. Dê um nome ao projeto, **MathQuiz**, e escolha **Criar**
+
+::: moniker-end
+
+1.  Escolha o formulário e, em seguida, altere sua propriedade **Text** para **Teste de matemática**.
 
      A janela **Propriedades** contém propriedades para o formulário.
 
-5.  Altere o tamanho do formulário para 500 pixels de largura por 400 pixels de altura.
+1.  Altere o tamanho do formulário para 500 pixels de largura por 400 pixels de altura.
 
      É possível redimensionar o formulário arrastando as bordas até que o tamanho correto apareça no canto inferior esquerdo do ambiente de desenvolvimento integrado (IDE). Como alternativa, você pode alterar os valores da propriedade **Size**.
 
-6.  Altere o valor da propriedade **FormBorderStyle** para **Fixed3D** e defina a propriedade **MaximizeBox** para **False**.
+1.  Altere o valor da propriedade **FormBorderStyle** para **Fixed3D** e defina a propriedade **MaximizeBox** para **False**.
 
      Esses valores impedem que os participantes de teste redimensionem o formulário.
 

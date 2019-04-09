@@ -2,18 +2,20 @@
 title: 'Etapa 1: Criar um projeto e adicionar uma tabela ao formulário'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940653"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647486"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 
@@ -21,7 +23,23 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Para criar um projeto e adicionar uma tabela ao formulário
 
-1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+::: moniker range="vs-2017"
+
+1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+1. Na caixa de pesquisa, digite "WPF", escolha **aplicativo WPF (.NET Framework)** e, em seguida, escolha **Próxima**.
+
+   Se você não encontrar o modelo **Aplicativo do WPF (.NET Framework)**, use o Instalador do Visual Studio para instalar a carga de trabalho **desenvolvimento para área de trabalho do .NET**.
+
+1. Dê um nome ao projeto, **MatchingGame**, e escolha **Criar**
+
+::: moniker-end
 
 2. Se não estiver usando o Visual Studio Express, primeiramente, você precisará selecionar uma linguagem de programação. Na lista **Modelos Instalados**, escolha **Visual C#** ou **Visual Basic**.
 
