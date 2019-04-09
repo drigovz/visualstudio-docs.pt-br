@@ -1,5 +1,5 @@
 ---
-title: 'Como: incluir pré-requisitos com um aplicativo ClickOnce | Microsoft Docs'
+title: 'Como: Incluir pré-requisitos com um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a31058893e09de2c945cc253374a55c53f277110
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619999"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232847"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Como incluir pré-requisitos com um aplicativo ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Como: Incluir pré-requisitos com um aplicativo ClickOnce
 Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], primeiro você deverá baixar os pacotes de instalador desses pré-requisitos em seu computador de desenvolvimento. Quando você publicar um aplicativo e escolher **Baixar pré-requisitos da mesma localização que meu aplicativo baixa**, ocorrerá um erro se os pacotes de instalador não estiverem na pasta **Pacotes**.
 
 > [!NOTE]
@@ -25,7 +25,7 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
 
 1. No Explorador de Arquivos, abra a pasta **Pacotes**.
 
-    Por padrão, o caminho é *C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* em um sistema de 32 bits e *C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* em um sistema de 64 bits.
+    Por padrão, o caminho é `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
 
 2. Abra a pasta do pré-requisito que você deseja adicionar e, em seguida, abra a pasta do idioma da versão instalada de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (por exemplo, **en** para inglês).
 
@@ -50,4 +50,4 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
     Agora você poderá distribuir o pacote de instalador com seu aplicativo.
 
 ## <a name="see-also"></a>Consulte também
-- [Como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
