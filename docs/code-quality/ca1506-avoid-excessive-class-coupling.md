@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0312289379e8aea79ee4e8291d9f4ee984949aaa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934283"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232477"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitar acoplamento de classes excessivo
 
@@ -31,18 +31,22 @@ ms.locfileid: "55934283"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo ou método é acoplado com muitos outros tipos.
+
+Um tipo ou método é acoplado com muitos outros tipos.
 
 ## <a name="rule-description"></a>Descrição da regra
- Esta regra mede o acoplamento de classes contando o número de referências de tipo exclusivas que um tipo ou um método contém.
 
- Tipos e métodos que têm um alto grau de acoplamento de classes podem ser difícil de manter. É uma boa prática tem tipos e métodos que apresentam menor acoplamento e maior coesão.
+Esta regra mede o acoplamento de classes contando o número de referências de tipo exclusivas que um tipo ou um método contém.
+
+Tipos e métodos que têm um alto grau de acoplamento de classes podem ser difícil de manter. É uma boa prática tem tipos e métodos que apresentam baixo acoplamento e alta coesão.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir essa violação, tente recriar o tipo ou método para reduzir o número de tipos para o qual ele está acoplado.
+
+Para corrigir essa violação, tente recriar o tipo ou método para reduzir o número de tipos para o qual ele está acoplado.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Exclua esse aviso quando o tipo ou método ainda é considerado sustentável, apesar de seu grande número de dependências em outros tipos.
+
+Exclua esse aviso quando o tipo ou método é considerado sustentável, apesar de seu grande número de dependências em outros tipos.
 
 ## <a name="see-also"></a>Consulte também
 
