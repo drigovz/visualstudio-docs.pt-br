@@ -87,7 +87,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
   
    1.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-   2.  No **novo projeto** caixa de diálogo **modelos instalados**, expanda **Visual c#**, clique em **extensibilidade**e, em seguida, clique em  **Projeto do VSIX**. Defina o nome do projeto e clique em **Okey**.  
+   2.  No **novo projeto** caixa de diálogo **modelos instalados**, expanda **Visual C#**, clique em **extensibilidade**e, em seguida, clique em  **Projeto do VSIX**. Defina o nome do projeto e clique em **Okey**.  
   
 2. Adicione o perfil ao projeto.  
   
@@ -224,7 +224,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
   
  **%ProgramFiles%\Microsoft visual Studio [versão] \XML\Schemas.**  
   
- Esta seção usa o perfil c# como um exemplo. A definição de perfil completo pode ser vista:  
+ Esta seção usa o perfil C# como um exemplo. A definição de perfil completo pode ser vista:  
   
  *unidade* **: \Program Files\Microsoft \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\CSharp.profile Visual Studio [versão]**  
   
