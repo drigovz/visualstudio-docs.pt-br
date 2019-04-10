@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723247"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366803"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Assista a variáveis com janelas de inspeção e QuickWatch
 
@@ -92,6 +92,19 @@ As regras para avaliar expressões na **inspeção** janela geralmente são as m
 
 Um círculo com ícone de duas linhas onduladas pode aparecer na **inspeção** janela. Este ícone significa que o depurador não avalia a expressão devido à dependência potencial entre threads. Avaliar o código requer outros threads no seu aplicativo seja executado temporariamente, mas como você está no modo de interrupção, todos os threads em seu aplicativo geralmente são interrompidos. Permitir que outros threads sejam executados temporariamente pode ter efeitos inesperados no estado do seu aplicativo e o depurador podem ignorar eventos como pontos de interrupção e exceções nesses threads.
 
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>Pesquisar na janela de inspeção
+
+Você pode pesquisar por palavras-chave nas colunas de nome, valor e tipo de **inspeção** janela usando a barra de pesquisa acima de cada janela. Pressionar ENTER, ou selecione uma das setas para executar uma pesquisa. Para cancelar uma pesquisa em andamento, selecione o ícone "x" na barra de pesquisa.
+
+Use as setas à esquerda e direita (Shift + F3 e F3, respectivamente) navegar entre encontradas correspondências.
+
+![Pesquisa na janela inspeção](../debugger/media/ee-search-watch.png "pesquisa na janela Inspeção")
+
+Para tornar sua pesquisa mais ou menos completo, use o **pesquisa mais profunda** lista suspensa na parte superior das **inspeção** objetos aninhados de janela para selecionar quantos níveis de profundidade que você deseja pesquisar em. 
+
+::: moniker-end
+
 ### <a name="bkmk_refreshWatch"></a> Atualizar valores de inspeção
 
 Um ícone de atualização (seta circular) pode aparecer na **inspeção** janela quando uma expressão é avaliada. O ícone de atualização indica um erro ou um valor que está desatualizado.
@@ -143,7 +156,7 @@ Uma expressão com efeitos colaterais é avaliada apenas uma vez, quando você p
 
 Uma maneira de impedir a designação de efeitos colaterais é desativar a avaliação automática de funções. Na **ferramentas** > **opções** > **depuração** > **geral**, cancele a seleção de **Habilitar a avaliação de propriedade e outras chamadas de função implícitas**.
 
-Para C# apenas, quando a avaliação de propriedades ou chamadas de função implícitas é desativada, você pode forçar a avaliação, adicionando o **CA** modificador de formato para uma variável **nome** no **Watch**  janela. Ver [Formatar especificadores em C# ](../debugger/format-specifiers-in-csharp.md).
+Para C# apenas, quando a avaliação de propriedades ou chamadas de função implícitas é desativada, você pode forçar a avaliação, adicionando o **CA** modificador de formato para uma variável **nome** no **Watch**  janela. Ver [especificadores em c# de formato](../debugger/format-specifiers-in-csharp.md).
 
 ## <a name="bkmk_objectIds"></a> Usar IDs de objeto na janela de inspeção (C# e Visual Basic)
 
@@ -218,7 +231,7 @@ Para atualizar **modo de exibição dinâmico** valores, selecionadas o [ícone 
 
 Para exibir apenas o **modo de exibição dinâmico** para um objeto, adicione uma **dinâmico** especificador de formato após o nome de objeto dinâmico na **Assista** janela:
 
-- Para C#: `ObjectName, dynamic`
+- Para o C#: `ObjectName, dynamic`
 - Para o Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
@@ -280,6 +293,6 @@ Para observar o `a` variável,
 
 ## <a name="see-also"></a>Consulte também
 - [O que é depuração?](../debugger/what-is-debugging.md)
-- [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)
+- [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)
 - [Janelas do depurador](../debugger/debugger-windows.md)
