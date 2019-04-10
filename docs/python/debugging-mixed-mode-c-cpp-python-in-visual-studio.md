@@ -3,19 +3,19 @@ title: Depuração de modo misto para Python
 description: Depure simultaneamente o C++ e o Python no Visual Studio, incluindo execução em etapas entre ambientes, exibição de valores e avaliação de expressões.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355228"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366647"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -87,7 +87,7 @@ Para todas as versões anteriores do Visual Studio, a depuração direta de modo
 ## <a name="mixed-mode-specific-features"></a>Recursos específicos ao modo misto
 
 - [Pilha de chamadas combinada](#combined-call-stack)
-- [Executar em etapas o código do Python e o código nativo](#step-between-python-and-native-code)
+- [Etapa entre o Python e o código nativo](#step-between-python-and-native-code)
 - [Exibição de valores PyObject no código nativo](#pyobject-values-view-in-native-code)
 - [Exibição de valores Nativos no código do Python](#native-values-view-in-python-code)
 
