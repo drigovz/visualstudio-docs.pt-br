@@ -180,8 +180,6 @@ items:
         href: get-started/tutorial-open-project-from-repo.md
       - name: Portar, migrar e atualizar projetos
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-      - name: Portar, migrar e atualizar projetos do Visual Studio 2019
-        href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: Gerenciar propriedades do projeto e da solução
         href: ide/managing-project-and-solution-properties.md
       - name: Gerenciar referências em um projeto
@@ -725,6 +723,7 @@ items:
       displayName: Start page window
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: Localizar e usar extensões do Visual Studio
+      displayName: marketplace, gallery, vsix
       href: ide/finding-and-using-visual-studio-extensions.md
     - name: Gerenciar ferramentas externas
       href: ide/managing-external-tools.md
@@ -1124,20 +1123,20 @@ items:
       items:
       - name: Teclas de Atalho
         href: help-viewer/shortcut-keys.md
-  - name: Dotfuscator Community Edition (CE)
+  - name: Dotfuscator Community
     href: ide/dotfuscator/index.md
     items:
     - name: Funcionalidades do Dotfuscator
       href: ide/dotfuscator/capabilities.md
-    - name: Instalar o Dotfuscator CE
+    - name: Instalar o Dotfuscator Community
       href: ide/dotfuscator/install.md
-    - name: Atualizar o Dotfuscator CE
+    - name: Atualizar o Dotfuscator Community
       href: ide/dotfuscator/upgrades.md
 - name: Recursos
   items:
   - name: Novidades no Visual Studio 2017
     href: ide/whats-new-visual-studio-2017.md
-  - name: Novidades no Visual Studio 2019 RC
+  - name: Novidades no Visual Studio 2019
     href: ide/whats-new-visual-studio-2019.md
   - name: Notas de versão e requisitos do sistema
     items:
@@ -1195,9 +1194,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 91a495ff1f48243244f4c68bb6a8a87a6acdd7ea
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 815123cfc5caf88a7131f87bf194c1b62762a068
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568017"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232503"
