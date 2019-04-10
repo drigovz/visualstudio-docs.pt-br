@@ -9,8 +9,6 @@ dev_langs:
 - VB
 - FSharp
 - C++
-- JScript
-- SQL
 helpviewer_keywords:
 - datasets [Visual Studio], Dataset Visualizer dialog box
 - visualizers, Dataset Visualizer dialog box
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 251e6ca5d1d9985defc8dff1dc6be95f3a088bbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626317"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366985"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Caixa de diálogo Visualizador do Conjunto de Dados
 O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de DataSet, DataTable, DataView ou DataViewManager. Você pode acessar esse visualizador clicando no ícone de lupa que aparece ao lado do valor para um desses objetos em uma janela de variáveis do depurador ou em um DataTip.
@@ -40,5 +38,5 @@ O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de Da
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
-- [Janelas do depurador](../debugger/debugger-windows.md)
-- [Exibir valores de dados em dicas de dados](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+- [Depurador do Windows](../debugger/debugger-windows.md)
+- [Exibir valores de dados em Dicas de Dados](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
