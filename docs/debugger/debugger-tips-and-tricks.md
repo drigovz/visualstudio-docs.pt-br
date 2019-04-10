@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526354"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366296"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprender dicas de produtividade e truques do depurador no Visual Studio
 
@@ -31,7 +31,7 @@ Se você passar com frequência sobre dicas de dados durante a depuração, voc�
 
 ![A fixação de uma dica de dados](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Editar seu código e continuar a depuração (C#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Editar seu código e continuar a depuração (c#, VB, C++)
 
 Na maioria dos idiomas com suporte do Visual Studio, você pode editar seu código no meio de uma sessão de depuração e continuar a depuração. Para usar esse recurso, clique em seu código com o seu cursor enquanto estiver em pausa no depurador, editar e pressione **F5**, **F10**, ou **F11** para continuar a depuração.
 
@@ -64,7 +64,7 @@ Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de
 > [!WARNING]
 > Geralmente, você precisa ter cuidado com esse recurso. Um aviso é exibido na dica de ferramenta. Outros avisos também podem ser exibidos. Movendo o ponteiro não é possível reverter o seu aplicativo para um estado anterior do aplicativo.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Controlar um objeto fora do escopo (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Controlar um objeto fora do escopo (c#, Visual Basic)
 
 É fácil exibir variáveis usando as janelas do depurador, como o **inspeção** janela. No entanto, quando uma variável sai do escopo na **inspeção** janela, você pode perceber que está esmaecido. Em alguns cenários de aplicativo, o valor de uma variável pode ser alterada até mesmo quando a variável está fora do escopo, e talvez você queira estar atento a ele (por exemplo, uma variável pode obter coleta de lixo). Você pode acompanhar a variável, criando uma ID de objeto para ele na **inspeção** janela.
 
@@ -106,7 +106,7 @@ Um visualizador de cadeia de caracteres pode ajudá-lo a descobrir se uma cadeia
 
 ![Visualizador de cadeia de caracteres JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Para alguns outros tipos como objetos do WPF que aparecem nas janelas do depurador, você também pode abrir os visualizadores.
+Para alguns outros tipos como objetos de DataSet e DataTable que aparecem nas janelas do depurador, você também pode abrir um visualizador interno.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Entrar no código em exceções manipuladas
 

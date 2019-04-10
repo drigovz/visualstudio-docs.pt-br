@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636899"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366543"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas Autos e locais
 
-As janelas **Autos** e **Locals** mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. A janela **Autos** mostra as variáveis usadas em torno do ponto de interrupção atual. A janela **Locals** mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md) antes de prosseguir com este artigo.
+O **Autos** e **Locals** windows mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. O **Autos** janela mostra as variáveis usadas em torno do ponto de interrupção atual. A janela **Locals** mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md) antes de prosseguir com este artigo.
 
- A janela **Autos** está disponível para código C#, Visual Basic, C++ e Python, mas não para JavaScript ou F#.
+ O **Autos** janela está disponível para C#, código do Visual Basic, C++ e Python, mas não para JavaScript ou F#.
 
-Para abrir a janela **Autos**, durante a depuração, selecione **Debug** > **Windows** > **Autos**, ou pressione **Ctrl**+**Alt**+**V** > **um**.
+Para abrir o **Autos** janela, durante a depuração, selecione **Debug** > **Windows** > **Autos**, ou pressione **Ctrl**+**Alt**+**V** > **um**.
 
 Para abrir a janela **Locals**, durante a depuração, selecione **Debug** > **Windows** > **Locals**, ou pressione **Alt**+**4**.
 
@@ -37,7 +37,7 @@ Para abrir a janela **Locals**, durante a depuração, selecione **Debug** > **W
 
 ## <a name="use-the-autos-and-locals-windows"></a>Usar as janelas Autos e locais
 
-Matrizes e objetos mostram nas janelas **Autos** e **Locals** como controles de árvore. Selecione a seta à esquerda de um nome de variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de uma <xref:System.IO.FileStream?displayProperty=fullName> do objeto na janela **Locals**:
+Matrizes e objetos mostram na **Autos** e **locais** windows como controles de árvore. Selecione a seta à esquerda de um nome de variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de uma <xref:System.IO.FileStream?displayProperty=fullName> do objeto na janela **Locals**:
 
 ![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
@@ -47,7 +47,7 @@ O formato numérico de padrão nas janelas do depurador é decimal. Para alterá
 
 ## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Editar valores de variáveis na janela Autos ou locais
 
-Para editar os valores da maioria das variáveis nas janelas **Autos** ou **Locals**, clique duas vezes o valor e digite o novo valor.
+Para editar os valores da maioria das variáveis na **Autos** ou **Locals** windows, clique duas vezes o valor e digite o novo valor.
 
 Você pode inserir uma expressão para um valor, por exemplo `a + b`. O depurador aceita expressões de linguagem mais válidas.
 
@@ -59,6 +59,19 @@ No código C++ nativo, talvez você precise qualificar o contexto de um nome de 
 > - Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, a avaliação de `var1 = ++var2` altera o valor de ambos `var1` e `var2`. Essas expressões são consideradas como tendo [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efeitos colaterais podem causar resultados inesperados se você não estiver ciente deles.
 >
 > - Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Até mesmo uma edição aparentemente inofensiva pode resultar em alterações para alguns dos bits na variável de ponto flutuante.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Pesquisar na janela Autos ou locais
+
+Você pode pesquisar por palavras-chave nas colunas de nome, valor e tipo de **Autos** ou **Locals** janela usando a barra de pesquisa acima de cada janela. Pressionar ENTER, ou selecione uma das setas para executar uma pesquisa. Para cancelar uma pesquisa em andamento, selecione o ícone "x" na barra de pesquisa.
+
+Use as setas à esquerda e direita (Shift + F3 e F3, respectivamente) navegar entre encontradas correspondências.
+
+![Pesquisa na janela locais](../debugger/media/ee-search-locals.png "pesquisa na janela locais")
+
+Para tornar sua pesquisa mais ou menos completo, use o **pesquisa mais profunda** lista suspensa na parte superior das **Autos** ou **locais** janela para selecionar quantos níveis de profundidade que você deseja pesquisar em objetos aninhados. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Alterar o contexto para a janela Autos ou locais
 
@@ -87,13 +100,13 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
        }
    ```
 
-   Defina um ponto de interrupção na linha `c = 3;`, e inicie o depurador. Quando a execução pausa, a janela **Autos** é exibida:
+   Defina um ponto de interrupção na linha `c = 3;`, e inicie o depurador. Quando a execução pausa, o **Autos** janela será exibida:
 
    ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    O valor de `c` é 0, porque a linha `c = 3` ainda não foi executada.
 
- - No C++, a janela **Autos** exibe as variáveis usadas em pelo menos três linhas antes da linha atual em que a execução está em pausa. Por exemplo, no código C++, declare seis variáveis:
+ - No C++, o **Autos** janela exibe as variáveis usadas em pelo menos três linhas antes da linha atual em que a execução está em pausa. Por exemplo, no código C++, declare seis variáveis:
 
    ```C++
        void main() {
@@ -107,14 +120,14 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
        }
    ```
 
-    Defina um ponto de interrupção na linha `e = 5;` e execute o depurador. Quando a execução for interrompida, a janela **Autos** será exibida:
+    Defina um ponto de interrupção na linha `e = 5;` e execute o depurador. Quando a execução for interrompida, o **Autos** janela será exibida:
 
     ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     A variável `e` não foi inicializada, porque a linha `e = 5` ainda não foi executada.
 
 ##  <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método
- No código .NET e C++, você pode examinar os valores de retorno na janela **Autos** ao passar sobre uma chamada de método ou sair dela. Pode ser útil exibir valores de retornor de chamadas de método quando eles não são armazenados em variáveis locais. Um método pode ser usado como um parâmetro ou como o valor retornado de outro método.
+ No código .NET e C++, você pode examinar os valores de retorno na **Autos** janela ao passar sobre ou fora de uma chamada de método. Pode ser útil exibir valores de retornor de chamadas de método quando eles não são armazenados em variáveis locais. Um método pode ser usado como um parâmetro ou como o valor retornado de outro método.
 
  Por exemplo, a seguinte C# código adiciona os valores de retorno das duas funções:
 
@@ -144,13 +157,13 @@ Para ver os valores de retorno de `sumVars()` e `subtractVars()` chamadas de mé
 
 1. Defina um ponto de interrupção a `int x = sumVars(a, b) + subtractVars(c, d);` linha.
 
-1. Inicie a depuração e, quando a execução parar no ponto de interrupção, selecione **Step Over** ou pressione **F10**. Você deve ver os seguintes valores de retornados na janela **Autos**:
+1. Inicie a depuração e, quando a execução parar no ponto de interrupção, selecione **Step Over** ou pressione **F10**. Você deve ver os seguintes valores de retornados na **Autos** janela:
 
   ![Valor de retorno de Autos C# ](../debugger/media/autosreturnvaluecsharp2.png "Autos retornam valorC#")
 
 ## <a name="see-also"></a>Consulte também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
-- [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)
+- [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)
 - [Janelas do depurador](../debugger/debugger-windows.md)

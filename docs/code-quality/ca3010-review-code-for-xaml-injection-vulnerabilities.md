@@ -1,5 +1,5 @@
 ---
-title: 'CA3010: Examine o código para vulnerabilidades de injeção de XAML'
+title: 'CA3010: Examinar código quanto a vulnerabilidades de injeção de XAML'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d8a94dbda7cbf61ac918025aee176cb95781b2
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: ea53f5e0cddf1dc6c6caf4c7fcfb79af52ce354e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018475"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365010"
 ---
-# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Examine o código para vulnerabilidades de injeção de XAML
+# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Examinar código quanto a vulnerabilidades de injeção de XAML
 
 |||
 |-|-|
@@ -28,7 +28,7 @@ ms.locfileid: "59018475"
 
 ## <a name="cause"></a>Causa
 
-Solicitação HTTP potencialmente não confiável de entrada atinge um <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> método de carga.
+Solicitação HTTP potencialmente não confiável de entrada atinge um <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> método de carga.
 
 ## <a name="rule-description"></a>Descrição da regra
 
