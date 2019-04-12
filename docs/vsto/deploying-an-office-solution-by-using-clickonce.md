@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863923"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504426"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implantar uma solução do Office usando o ClickOnce
   Se você usar o ClickOnce, você pode implantar sua solução do Office em menos etapas. Se você publicar atualizações, sua solução vai detectá-las e instalá-las automaticamente. No entanto, o ClickOnce exige que sua solução seja instalada separadamente para cada usuário de um computador. Portanto, você deve considerar o uso do Windows Installer (*. msi*) se mais de um usuário for executar a solução no mesmo computador.
@@ -27,11 +27,11 @@ ms.locfileid: "54863923"
 
 - [Publicar a solução](#Publish)
 
-- [Decida como você deseja conceder confiança à solução](#Trust)
+- [Decidir como deseja conceder confiança à solução](#Trust)
 
-- [Ajudar os usuários a instalar a solução](#Helping)
+- [Ajudar usuários a instalar a solução](#Helping)
 
-- [Coloque o documento de uma solução no computador do usuário final (somente personalizações no nível de documento)](#Put)
+- [Colocar o documento de uma solução no computador do usuário final (somente personalizações no nível de documento)](#Put)
 
 - [Colocar o documento de uma solução em um servidor que está executando o SharePoint (somente personalizações no nível de documento)](#SharePoint)
 
@@ -91,9 +91,9 @@ ms.locfileid: "54863923"
 
     |Opção|Descrição|
     |------------|-----------------|
-    |**Baixar os pré-requisitos no site do fornecedor do componente**|É solicitado que o usuário baixe e instale esses pré-requisitos do fornecedor.|
-    |**Baixar os pré-requisitos no mesmo local do meu aplicativo**|O software de pré-requisito é instalado com a solução. Se você escolher essa opção, o Visual Studio copiará todos os pacotes do pré-requisito no local de publicação. Para que essa opção funcione, os pacotes do pré-requisito devem estar no computador de desenvolvimento.|
-    |**Baixar os pré-requisitos no seguinte local**|O Visual Studio copia todos os pacotes do pré-requisito no local que você especifica e os instala com a solução.|
+    |**Baixar os pré-requisitos do site do fornecedor do componente**|É solicitado que o usuário baixe e instale esses pré-requisitos do fornecedor.|
+    |**Baixar pré-requisitos do mesmo local de meu aplicativo**|O software de pré-requisito é instalado com a solução. Se você escolher essa opção, o Visual Studio copiará todos os pacotes do pré-requisito no local de publicação. Para que essa opção funcione, os pacotes do pré-requisito devem estar no computador de desenvolvimento.|
+    |**Baixar pré-requisitos a partir do seguinte local**|O Visual Studio copia todos os pacotes do pré-requisito no local que você especifica e os instala com a solução.|
 
      Ver [caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md).
 
@@ -139,7 +139,7 @@ ms.locfileid: "54863923"
  Se você estiver implantando uma personalização no nível de documento e você deseja colocar o documento em uma pasta no computador do usuário ou disponibilizar o documento em um site do SharePoint, certifique-se de que o Office confia no local do documento. Ver [conceder confiança a documentos](../vsto/granting-trust-to-documents.md).
 
 ##  <a name="Helping"></a> Ajudar os usuários a instalar a solução
- Os usuários podem instalar a solução executando o programa de instalação, abrindo o manifesto de implantação ou, no caso de uma personalização no nível de documento, abrindo o documento diretamente. Como uma prática recomendada, os usuários devem instalar a solução usando o programa de instalação. As outras duas abordagens não garantem que o software de pré-requisito está instalado. Se os usuários desejarem abrir o documento do local de instalação, eles deverão adicioná-lo à lista de locais confiáveis na Central de Confiabilidade do aplicativo do Office.
+ Os usuários podem instalar a solução executando o programa de instalação, abrindo o manifesto de implantação ou durante a personalização de nível de documento, abrindo o documento diretamente. Como uma prática recomendada, os usuários devem instalar a solução usando o programa de instalação. As outras duas abordagens não garantem que o software de pré-requisito está instalado. Se os usuários desejarem abrir o documento do local de instalação, eles deverão adicioná-lo à lista de locais confiáveis na Central de Confiabilidade do aplicativo do Office.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Abrindo o documento de uma personalização no nível de documento
  Os usuários podem abrir o documento de uma personalização no nível de documento diretamente do local de instalação ou copiando o documento no computador local e, em seguida, abrindo a cópia.
@@ -190,7 +190,7 @@ ms.locfileid: "54863923"
 ##  <a name="Put"></a> Coloque o documento de uma solução no computador do usuário final (somente personalizações no nível de documento)
  Você pode copiar o documento da solução no computador do usuário final para eles, criando uma ação pós-implantação. Dessa forma, o usuário não precisa copiar manualmente o documento do local de instalação para seu computador após instalarem sua solução. Você precisará criar uma classe que define a ação pós-implantação, compilar e publicar a solução, modificar o manifesto do aplicativo e assinar novamente o manifesto de aplicativo e implantação.
 
- Os procedimentos a seguir pressupõem que o nome do seu projeto está **ExcelWorkbook** e que você publique a solução para o **C:\publish** diretório em seu computador.
+ Os procedimentos a seguir pressupõem que o nome do seu projeto está **ExcelWorkbook** e que você publique a solução em uma pasta criada chamada **C:\publish** em seu computador.
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Criar uma classe que defina a ação de pós-implantação
 
@@ -253,7 +253,7 @@ ms.locfileid: "54863923"
 
 ### <a name="modify-the-application-manifest"></a>Modificar o manifesto de aplicativo
 
-1.  Abra o **c:\publish** diretório usando **Explorador de arquivos**.
+1.  Abra o diretório de solução **c:\publish**, usando **Explorador de arquivos**.
 
 2.  Abra o **arquivos de aplicativo** pasta e abra a pasta que corresponde ao mais recente versão publicada do sua solução.
 
@@ -336,11 +336,11 @@ ms.locfileid: "54863923"
              Quando os usuários abrem o documento no site do SharePoint, ele é aberto e a personalização é instalada. Os usuários podem copiar o documento na respectiva área de trabalho. A personalização ainda será executada porque as propriedades no documento apontam para o local de rede do documento.
 
 ##  <a name="Custom"></a> Criar um instalador personalizado
- Você pode criar um instalador personalizado para sua solução do Office, em vez de usar o programa de instalação que é criado para você quando você publica a solução. Por exemplo, você pode usar um script de logon para iniciar a instalação ou pode usar um arquivo em lote para instalar a solução sem interação do usuário. Esses cenários funcionarão melhor se os pré-requisitos já estiverem instalados nos computadores dos usuários finais.
+ Você pode criar um instalador personalizado para sua solução do Office, em vez de usar o programa de instalação que é criado para você quando você publica a solução. Por exemplo, você pode usar uma entrada no script para iniciar a instalação, ou você pode usar um arquivo em lotes para instalar a solução sem interação do usuário. Esses cenários funcionarão melhor se os pré-requisitos já estiverem instalados nos computadores dos usuários finais.
 
  Como parte do processo de instalação personalizado, chame a ferramenta do instalador para soluções do Office (*VSTOInstaller.exe*), que é instalado por padrão no seguinte local:
 
- *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Se a ferramenta não estiver nesse local, você pode usar o **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** ou **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** chave do registro para localizar o caminho dessa ferramenta.
 
@@ -359,8 +359,8 @@ ms.locfileid: "54863923"
 |Código do erro|Definição|
 |----------------|----------------|
 |0|A solução foi instalada ou desinstalada com êxito, ou a Ajuda do VSTOInstaller foi exibida.|
-|-100|Uma ou mais opções de linha de comando não são válidas ou foram definidas mais de uma vez. Para obter mais informações, insira "vstoinstaller /?" ou veja [criar um instalador personalizado para uma solução do Office de ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
-|-101|Uma ou mais opções de linha de comando não é válido. Para obter mais informações, insira "vstoinstaller /?".|
+|-100|Uma ou mais opções de linha de comando não são válidas ou foi definidas mais de uma vez. Para obter mais informações, insira "vstoinstaller /?" ou veja [criar um instalador personalizado para uma solução do Office de ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-101|Uma ou mais opções de linha de comando não são válidas. Para obter mais informações, insira "vstoinstaller /?".|
 |-200|O URI do manifesto de implantação não é válido. Para obter mais informações, insira "vstoinstaller /?".|
 |-201|A solução não pôde ser instalada porque o manifesto de implantação não é válido. Ver [manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md).|
 |-202|A solução não pôde ser instalada porque o Visual Studio Tools para a seção do Office do manifesto do aplicativo não é válido. Ver [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).|
