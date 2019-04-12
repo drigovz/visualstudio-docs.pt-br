@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870393"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504257"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint
   Os procedimentos a seguir demonstram como criar colunas de site do SharePoint personalizadas — ou *campos*— bem como um tipo de conteúdo que usa as colunas de site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.
@@ -46,7 +46,7 @@ ms.locfileid: "57870393"
 
 -   Edições com suporte do Windows e do SharePoint.
 
--   Visual Studio.
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Criar colunas de site personalizada
  Este exemplo cria uma lista para o gerenciamento de pacientes em um hospital. Primeiro, você deve criar um projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e adicionar colunas de site a ele, da seguinte maneira.
@@ -55,7 +55,7 @@ ms.locfileid: "57870393"
 
 1.  Sobre o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **arquivo** menu, escolha **New** > **projeto**.
 
-2.  No **novo projeto** caixa de diálogo, em qualquer um **Visual C#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha **2010**.
+2.  No **novo projeto** caixa de diálogo, em qualquer um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha **2010**.
 
 3.  No **modelos** painel, escolha **o projeto do SharePoint 2010**, altere o nome do projeto para **clínica**e, em seguida, escolha o **Okey** botão.
 
@@ -67,7 +67,7 @@ ms.locfileid: "57870393"
 
      Para obter mais informações sobre a área restrita e soluções em farm, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
 
-6.  Escolha o **concluir** botão. O projeto deve agora estar listado em **Gerenciador de soluções**.
+6.  Escolha o **concluir** botão. O projeto agora está listado em **Gerenciador de soluções**.
 
 #### <a name="to-add-site-columns"></a>Para adicionar colunas de site
 
@@ -99,7 +99,7 @@ ms.locfileid: "57870393"
 
 2.  Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
 
-3.  Em um **Visual C#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+3.  Em um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
 
 4.  No **modelos** painel, escolha o **tipo de conteúdo** modelo, altere o nome para **informações do paciente**e, em seguida, escolha o **adicionar** botão.
 
@@ -133,7 +133,7 @@ ms.locfileid: "57870393"
 
 2.  Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
 
-3.  Em um **Visual C#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+3.  Em um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
 
 4.  No **modelos** painel, escolha o **lista** modelo, altere o nome para **pacientes**e, em seguida, escolha o **adicionar** botão.
 
@@ -224,4 +224,4 @@ ms.locfileid: "57870393"
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Como: Criar um tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)
 - [Tipos de conteúdo](http://go.microsoft.com/fwlink/?LinkId=192080)
-- [Columns](http://go.microsoft.com/fwlink/?LinkId=192081)
+- [Colunas](http://go.microsoft.com/fwlink/?LinkId=192081)
