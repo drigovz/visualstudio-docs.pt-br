@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504322"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537592"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
@@ -113,11 +113,11 @@ Para visualmente rastrear pontos de interrupção durante a execução de códig
 
    - Use o nome da função totalmente qualificado.
 
-     Exemplo:  `Namespace1.ClassX.MethodA()`
+     Exemplo: `Namespace1.ClassX.MethodA()`
 
    - Adicione os tipos de parâmetro de uma função sobrecarregada.
 
-     Exemplo:  `MethodA(int, string)`
+     Exemplo: `MethodA(int, string)`
 
    - Use o '!' símbolo para especificar o módulo.
 
@@ -176,13 +176,13 @@ Pontos de interrupção de dados no .NET Core não funcionarão para:
 
 **Para definir um ponto de interrupção de dados:**
 
-1.  Em um projeto do C++, iniciar a depuração e aguarde até que um ponto de interrupção seja atingido. Sobre o **Debug** menu, escolha **novo ponto de interrupção** > **ponto de interrupção de dados**
+1. Em um projeto do C++, iniciar a depuração e aguarde até que um ponto de interrupção seja atingido. Sobre o **Debug** menu, escolha **novo ponto de interrupção** > **ponto de interrupção de dados**
 
     Você também pode selecionar **New** > **ponto de interrupção de dados** no **pontos de interrupção** janela ou o botão direito do mouse em um item a **Autos**, **Watch**, ou **Locals** janela e selecione **interromper quando o valor é alterado**no menu de contexto.
 
-2.  No **endereço** , digite um endereço de memória ou uma expressão que é avaliada como um endereço de memória. Por exemplo, digite `&avar` para interromper quando o conteúdo da variável `avar` alterações.
+2. No **endereço** , digite um endereço de memória ou uma expressão que é avaliada como um endereço de memória. Por exemplo, digite `&avar` para interromper quando o conteúdo da variável `avar` alterações.
 
-3.  No **contagem de bytes** lista suspensa, selecione o número de bytes que você deseja que o depurador para observar. Por exemplo, se você selecionar **4**, o depurador examinará os quatro bytes começando em `&avar` e interromperá se qualquer um desses bytes mudar o valor.
+3. No **contagem de bytes** lista suspensa, selecione o número de bytes que você deseja que o depurador para observar. Por exemplo, se você selecionar **4**, o depurador examinará os quatro bytes começando em `&avar` e interromperá se qualquer um desses bytes mudar o valor.
 
 Pontos de interrupção não funcionam nas seguintes condições:
 -   Um processo que não estiver sendo depurado grava na localização da memória.

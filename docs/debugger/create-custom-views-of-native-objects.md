@@ -1,5 +1,5 @@
 ---
-title: Criar exibições personalizadas de objetos nativos
+title: Criar exibições personalizadas de C++ objetos
 description: Use a estrutura do Natvis para personalizar a maneira como o Visual Studio exibe os tipos nativos no depurador
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428798"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537571"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Criar exibições personalizadas de objetos nativos no depurador
+# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Criar exibições personalizadas de C++ objetos no depurador
 
 O Visual Studio *Natvis* framework personaliza a forma como tipos nativos aparecem nas janelas de variáveis do depurador, como o **Locals** e **Assista** windows e em **DataTips**. Visualizações do Natvis podem ajudar a tornar os tipos que você crie mais visível durante a depuração.
 
@@ -165,7 +165,7 @@ Quando o depurador encontrar erros em uma entrada de visualização, ele ignora-
 
 **Para ativar o diagnóstico do Natvis:**
 
-- Sob **ferramentas** > **opções** (ou **depurar** > **opções**) > **dedepuração**  >  **Janela de saída**, defina **mensagens de diagnóstico Natvis (somente C++)** para **erro**, **aviso**, ou  **Verbose**e, em seguida, selecione **Okey**.
+- Sob **ferramentas** > **opções** (ou **depurar** > **opções**) > **dedepuração**  >  **Janela de saída**, defina **mensagens de diagnóstico Natvis (C++ somente)** para **erro**, **aviso** , ou **Verbose**e, em seguida, selecione **Okey**.
 
 Os erros exibidos na **saída** janela.
 
