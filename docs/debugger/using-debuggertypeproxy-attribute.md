@@ -1,5 +1,5 @@
 ---
-title: Usando o atributo DebuggerTypeProxy | Microsoft Docs
+title: Exibir o tipo personalizado usando o DebuggerTypeProxy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011f5dc9525a8a5f88f3cc923eb56dde58313d85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717488"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537537"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Usando o atributo DebuggerTypeProxy (C#, Visual Basic, C++ c++ CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Informar ao depurador o tipo para mostram como usar o atributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> especifica um proxy, ou substituto, para um tipo e altera a maneira como o tipo é exibido nas janelas do depurador. Quando você exibe uma variável que tem um proxy, o proxy substitui o tipo original em **exibição**. A janela de variáveis do depurador exibe apenas os membros públicos do tipo de proxy. Os membros particulares não são exibidos.
 
@@ -35,7 +35,7 @@ Esse atributo poderá ser aplicado a:
 - Assemblies
 
 > [!NOTE]
-> Para código nativo, esse atributo só tem suporte no C + + c++ /CLI código CLI.
+> Para código nativo, esse atributo é suportado apenas no C++código /CLI.
 
 Uma classe de proxy de tipo deve ter um construtor que usa um argumento do tipo que o proxy substituirá. O depurador cria uma nova instância da classe de proxy de tipo sempre que precisa exibir uma variável do tipo de destino. Isso pode ter implicações de desempenho. Como resultado, você não deve fazer mais trabalho no construtor do que o que for absolutamente necessário.
 
