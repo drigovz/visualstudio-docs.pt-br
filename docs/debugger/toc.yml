@@ -202,7 +202,7 @@ items:
     - name: Criar exibições personalizadas de dados
       href: viewing-data-in-the-debugger.md
       items:
-      - name: Criar exibições personalizadas de objetos nativos
+      - name: Criar exibições personalizadas dos objetos de C++
         href: create-custom-views-of-native-objects.md
         items:
         - name: Compatibilidade com o visualizador personalizado do Visual C++
@@ -210,10 +210,10 @@ items:
       - name: Criar exibições personalizadas de objetos gerenciados
         href: create-custom-views-of-dot-managed-objects.md
         items:
-        - name: Usar o atributo DebuggerTypeProxy
-          href: using-debuggertypeproxy-attribute.md
-        - name: Usar o atributo DebuggerDisplay
+        - name: Instruir o depurador sobre o que mostrar
           href: using-the-debuggerdisplay-attribute.md
+        - name: Instruir o depurador sobre qual tipo mostrar
+          href: using-debuggertypeproxy-attribute.md
       - name: Criar visualizadores de dados personalizados
         href: create-custom-visualizers-of-data.md
         items:
@@ -844,9 +844,9 @@ items:
   items:
   - name: Novidades do depurador no Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 6e0d832e0adace66495a1edfd19fd7b5a9f9c866
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: ae2dc7baa536b03c6507cb4f7064e74126d1d93e
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366063"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537709"
