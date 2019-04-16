@@ -3,26 +3,26 @@ title: Visão geral do Visual Studio para desenvolvedores do Python
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354726"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365724"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bem-vindo ao IDE do Visual Studio | Python
 
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo para o Python (e outras linguagens) que você pode usar para editar, depurar e testar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui ferramentas de preenchimento de código, ambientes de REPL interativo e outras funcionalidades para facilitar o processo de desenvolvimento de software.
 
-[![Visual Studio com um projeto do Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![VVisual Studio com um projeto do Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Esta imagem mostra o Visual Studio com um projeto aberto do Python e várias janelas de ferramentas importantes que você provavelmente usará:
 
@@ -68,11 +68,11 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
    ![Comando PyLint no menu de contexto em projetos do Python](media/code-pylint-command.png)
 
-- [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Caixa de pesquisa
 
-   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa **Início Rápido** é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, o **Início Rápido** fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
+   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, a caixa de pesquisa fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
 
-   ![Caixa de pesquisa Início Rápido no Visual Studio](media/tour-ide-quick-launch.png)
+   ![Caixa de pesquisa no Visual Studio](media/tour-ide-quick-launch.png)
 
 - Rabiscos e [Ações Rápidas](../ide/quick-actions.md)
 
@@ -80,7 +80,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
    ![Rabiscos no Visual Studio](media/tour-ide-squiggles.png)
 
-- [Ir para Definição e Inspecionar Definição](../ide/go-to-and-peek-definition.md)
+- [Acessar e Escolher Definição](../ide/go-to-and-peek-definition.md)
 
    A funcionalidade **Ir para Definição** leva você diretamente para a localização em que uma função ou um tipo está definido. O comando **Inspecionar Definição** exibe a definição em uma janela sem abrir um arquivo separado. O comando **Localizar Todas as Referências** também fornece uma maneira útil de descobrir em que local um identificador especificado foi definido e usado.
 
@@ -106,7 +106,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
     ![Depurando o Python no Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
-- [Interagindo com o C++](working-with-c-cpp-python-in-visual-studio.md)
+- [Interagir com C++](working-with-c-cpp-python-in-visual-studio.md)
 
     Muitas bibliotecas criadas para o Python são escritas em C++ para um desempenho ideal. O Visual Studio fornece funcionalidades sofisticadas para o desenvolvimento de extensões em C++, incluindo a [depuração de modo misto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
@@ -118,7 +118,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
     ![Relatório de desempenho de criação de perfil](media/profiling-results.png)
 
-- [Testes de Unidade](unit-testing-python-in-visual-studio.md)
+- [Teste de unidade](unit-testing-python-in-visual-studio.md)
 
     O Visual Studio fornece suporte integrado para descoberta, execução e depuração de testes de unidade, tudo no contexto do IDE.
 
@@ -135,10 +135,10 @@ Explore ainda mais o Python no Visual Studio seguindo um destes tutoriais ou in�
 > [Trabalhar com o Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 > [!div class="nextstepaction"]
-> [Introdução à estrutura da Web Django no Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
+> [Introdução à estrutura da Web do Django no Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
 
 > [!div class="nextstepaction"]
-> [Introdução à estrutura da Web Flask no Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
+> [Introdução à estrutura da Web do Flask no Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
 ## <a name="see-also"></a>Consulte também
 

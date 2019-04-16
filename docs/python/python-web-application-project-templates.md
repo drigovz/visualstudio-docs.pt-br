@@ -3,19 +3,19 @@ title: Modelos de aplicativo Web para Python
 description: O Visual Studio fornece modelos para aplicativos Web do Python usando as estruturas Bottle, Flask e Django; o suporte inclui configurações de depuração e publicação no Serviço de Aplicativo do Azure.
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81684f8069189f6ee3deed48d9f2a6718b01d7b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957894"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366582"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
@@ -41,8 +41,8 @@ Todos os modelos de **Projeto Web \<estrutura> em Branco** criam um projeto com 
 
 | Modelo | Descrição |
 | --- | --- |
-| **Projeto Web em Branco do Bottle** | Gera um aplicativo mínimo em *app.py* com uma home page do `/` e uma página `/hello/<name>` que ecoa `<name>` usando um modelo de página embutido muito curto. |
-| **Projeto Web em Branco do Django** | Gera um projeto Django com a estrutura do site principal do Django, mas não aplicativos Django. Para obter mais informações, confira [Modelos do Django](python-django-web-application-project-template.md) e [Etapa 1 do tutorial – Conheça o Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
+| **Projeto Web em branco do Bottle** | Gera um aplicativo mínimo em *app.py* com uma home page do `/` e uma página `/hello/<name>` que ecoa `<name>` usando um modelo de página embutido muito curto. |
+| **Projeto Web em branco do Django** | Gera um projeto Django com a estrutura do site principal do Django, mas não aplicativos Django. Para obter mais informações, confira [Modelos do Django](python-django-web-application-project-template.md) e [Etapa 1 do tutorial – Conheça o Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
 | **Projeto Web em Branco do Flask** | Gera um aplicativo mínimo com um único "Olá, Mundo!" página para `/`. Esse aplicativo é semelhante ao resultado das seguintes etapas detalhadas em [Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web do Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Confira também [Etapa 1 do tutorial – Conheça o Flask](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupo da Web
@@ -62,10 +62,10 @@ Os modelos **Votações do Projeto Web da \<estrutura>** criam um aplicativo Web
 
 | Modelo | Descrição |
 | --- | --- |
-| **Projeto Web de Votações do Bottle** | Gera um aplicativo que pode ser executado em um banco de dados em memória, no MongoDB ou no Armazenamento de Tabelas do Azure, configurado usando a variável de ambiente do `REPOSITORY_NAME`. Os modelos de dados e o código do armazenamento de dados estão contidos na pasta *models*, e o arquivo *settings.py* contém o código para determinar qual armazenamento de dados é usado. |
-| **Projeto Web de Votações do Django** | Gera um projeto e um aplicativo do Django com três páginas e um banco de dados SQLite. Inclui personalizações na interface administrativa do Django para permitir que um administrador autenticado crie e gerencie pesquisas. Para obter mais informações, confira [Modelos do Django](python-django-web-application-project-template.md) e [Etapa 6 do tutorial – Conheça o Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| **Projeto Web de Votações do Flask** | Gera um aplicativo que pode ser executado em um banco de dados em memória, no MongoDB ou no Armazenamento de Tabelas do Azure, configurado usando a variável de ambiente do `REPOSITORY_NAME`. Os modelos de dados e o código do armazenamento de dados estão contidos na pasta *models*, e o arquivo *settings.py* contém o código para determinar qual armazenamento de dados é usado. O aplicativo usa o mecanismo Jinja para modelos de página. Confira [Etapa 5 do tutorial – Conheça o Flask](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
-| **Projeto Web de Votações do Flask/Jade** | Gera o mesmo aplicativo que com o modelo **Projeto Web de Votações do Flask**, mas usando a extensão do Jade para o mecanismo de modelagem do Jinja. |
+| **Pesquisas Projeto Web do Bottle** | Gera um aplicativo que pode ser executado em um banco de dados em memória, no MongoDB ou no Armazenamento de Tabelas do Azure, configurado usando a variável de ambiente do `REPOSITORY_NAME`. Os modelos de dados e o código do armazenamento de dados estão contidos na pasta *models*, e o arquivo *settings.py* contém o código para determinar qual armazenamento de dados é usado. |
+| **Pesquisas Projeto Web do Django** | Gera um projeto e um aplicativo do Django com três páginas e um banco de dados SQLite. Inclui personalizações na interface administrativa do Django para permitir que um administrador autenticado crie e gerencie pesquisas. Para obter mais informações, confira [Modelos do Django](python-django-web-application-project-template.md) e [Etapa 6 do tutorial – Conheça o Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
+| **Pesquisas Projeto Web do Flask** | Gera um aplicativo que pode ser executado em um banco de dados em memória, no MongoDB ou no Armazenamento de Tabelas do Azure, configurado usando a variável de ambiente do `REPOSITORY_NAME`. Os modelos de dados e o código do armazenamento de dados estão contidos na pasta *models*, e o arquivo *settings.py* contém o código para determinar qual armazenamento de dados é usado. O aplicativo usa o mecanismo Jinja para modelos de página. Confira [Etapa 5 do tutorial – Conheça o Flask](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
+| **Pesquisas Projeto Web do Flask/Jade** | Gera o mesmo aplicativo que com o modelo **Projeto Web de Votações do Flask**, mas usando a extensão do Jade para o mecanismo de modelagem do Jinja. |
 
 ## <a name="install-project-requirements"></a>Instalar requisitos de projeto
 
@@ -113,7 +113,7 @@ O modelo de **Projeto Web Bottle** inclui um código de texto clichê que faz a 
 
 - Grupo **Depurar Comando do Servidor**:
   - **Comando**: `bottle` (módulo)
-  - **Argumentos** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 A opção `--reload` não é recomendada ao usar o Visual Studio para depuração.
 

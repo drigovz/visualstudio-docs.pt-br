@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416239"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232614"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos de multiprojeto
 
@@ -75,7 +75,11 @@ O arquivo *vstemplate* raiz para um modelo multiprojeto difere de um modelo de p
 2. Personalize os projetos até que eles estejam prontos para serem exportados para um modelo.
 
    > [!TIP]
-   > Se você estiver usando [parâmetros de modelo](template-parameters.md) e quiser se referir a variáveis do modelo pai, prefixe o nome do parâmetro com `ext_`. Por exemplo, `$ext_safeprojectname$`.
+   > Se você estiver usando [parâmetros de modelo](template-parameters.md) e quiser se referir a variáveis do modelo pai, prefixe o nome do parâmetro com `ext_`. Por exemplo, `$ext_safeprojectname$`. Além disso, defina o atributo **CopyParameters** do elemento **ProjectTemplateLink** como **true**.
+   >
+   > ```xml
+   > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
+   > ```
 
 3. No menu **Projeto**, escolha **Exportar Modelo**.
 
@@ -171,7 +175,7 @@ Este exemplo usa o elemento **SolutionFolder** para dividir os projetos em dois 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento SolutionFolder (modelos do Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)

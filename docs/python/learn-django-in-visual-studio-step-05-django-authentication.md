@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos de autenticação fornecidos pelos modelos Projeto Web do Django.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01c37d70fd38ce8e35b1903308773ccf38203170
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955174"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366023"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
-**Etapa anterior: [Usar o modelo completo de Projeto Web do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Etapa anterior: [Usar o modelo Projeto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Como a autenticação é uma necessidade comum dos aplicativos Web, o modelo "Projeto Web do Django" inclui um fluxo de autenticação básico. (O modelo "Pesquisa Projeto Web do Django" abordado na etapa 6 deste tutorial também inclui o mesmo fluxo.) Ao usar um dos modelos de projeto do Django, o Visual Studio inclui todos os módulos necessários para a autenticação em *settings.py* do projeto do Django.
 
@@ -211,7 +211,7 @@ Resposta: A tag `{% csrf_token %}` inclui a [proteção interna contra CSRF (sol
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Usar o modelo Pesquisas Projeto Web do Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+> [Usar o modelo de projeto Web Votações do Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 

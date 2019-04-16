@@ -1,8 +1,8 @@
 ---
-title: Depurar aplicativos usando o Visual Studio
+title: Introdução ao depurador
 description: Introdução à depuração de aplicativos usando o depurador do Visual Studio
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428681"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366764"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -188,7 +188,7 @@ Neste exemplo, a chamada `DirectoryInfo` gerou o erro na cadeia de caracteres va
 O Auxiliar de Exceção é um ótimo recurso que pode ajudá-lo a depurar erros. Você também pode fazer coisas como exibir detalhes do erro e adicionar uma inspeção por meio do Auxiliar de Exceção. Ou, se necessário, você pode alterar as condições para lançar a exceção específica. Para obter mais informações de como tratar exceções no código, confira [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> O Auxiliar de Exceção substituiu o Assistente de Exceção no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> O Auxiliar de Exceção substituiu o Assistente de Exceção do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda o nó **Configurações de Exceção** para ver mais opções de como lidar com esse tipo de exceção, mas você não precisa alterar nada neste tour!
 
@@ -217,4 +217,4 @@ Para obter mais informações, confira a página [Inspecionar estados anteriores
 Neste tutorial, você obteve uma visão rápida de muitos recursos do depurador. Talvez você deseje fazer uma análise mais detalhada de uma dessas funcionalidades, como pontos de interrupção.
 
 > [!div class="nextstepaction"]
-> [Aprenda a usar pontos de interrupção](../debugger/using-breakpoints.md)
+> [Aprender a usar pontos de interrupção](../debugger/using-breakpoints.md)

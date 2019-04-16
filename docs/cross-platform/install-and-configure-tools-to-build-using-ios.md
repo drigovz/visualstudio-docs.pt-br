@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 54c93a07d7ac3754c5c57d2029fff9991221ae65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070637"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897576"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar e configurar ferramentas de build usando o iOS
 
@@ -70,7 +70,7 @@ Para instalar e usar o agente remoto para desenvolver código para iOS, é neces
 
 Quando você instala o Visual C++ para Desenvolvimento Móvel de Multiplataforma, o Visual Studio pode se comunicar com [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), um agente remoto em execução no seu Mac, para transferir arquivos, compilar e executar seu aplicativo iOS e enviar comandos de depuração.
 
-Antes de instalar o agente remoto, verifique se os [Pré-requisitos](#Prerequisites) foram atendidos e se você instalou o [Visual C++ para Desenvolvimento Móvel Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Antes de instalar o agente remoto, verifique se os [Pré-requisitos](#prerequisites) foram atendidos e se você instalou o [Visual C++ para Desenvolvimento Móvel Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
 ###  <a name="DownloadInstall"></a> Para baixar e instalar o agente remoto
 
@@ -236,4 +236,4 @@ Por motivos de segurança, os certificados de servidor que emparelham o Visual S
 
 ## <a name="see-also"></a>Consulte também
 
-- [Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Instalar o Visual C++ para desenvolvimento móvel multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
