@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416260"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897719"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar a automação da interface do usuário para testar o código
 
@@ -144,7 +144,7 @@ Para acessar as ferramentas e os modelos do teste de IU codificado, instale o co
 
 8. Execute o teste.
 
-   Use o Gerenciador de Testes ou abra o menu de atalho no método de teste e, em seguida, escolha **Executar Testes**. Para obter mais informações sobre como executar testes, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md) e *Opções adicionais para executar testes de IU codificados* na seção [O que vem a seguir?](#whats-next?), no final deste tópico.
+   Use o Gerenciador de Testes ou abra o menu de atalho no método de teste e, em seguida, escolha **Executar Testes**. Para obter mais informações sobre como executar testes, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md) e *Opções adicionais para executar testes de IU codificados* na seção [O que vem a seguir?](#whats-next), no final deste tópico.
 
 As seções restantes neste tópico fornecem mais detalhes sobre as etapas desse procedimento.
 
@@ -289,7 +289,7 @@ Depois de criar o teste de IU codificado, você poderá editá-lo usando qualque
 
 - O **Editor do Construtor de Teste de IU Codificado** permite modificar facilmente seus testes de IU codificados. Com o **Editor de Teste de IU Codificado**, é possível localizar, exibir e editar seus métodos de teste. Também é possível editar ações de interface do usuário e seus controles associados no mapa de controles de IU. Para obter mais informações, confira [Editar testes de IU codificados usando o editor de teste de IU codificado](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-- **Editor de Códigos:**
+- **Editor de códigos:**
 
     - Adicione manualmente o código dos controles ao teste, conforme descrito na seção [Ações e propriedades do controle de IU codificado](#coded-ui-control-actions-and-properties) deste tópico.
 
@@ -307,7 +307,7 @@ Depois de criar o teste de IU codificado, você poderá editá-lo usando qualque
 
        - [Testar um aplicativo grande com vários Mapas de Interface do Usuário](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+       - [Configurações e plataformas compatíveis com testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>O código gerado
 
@@ -386,7 +386,7 @@ Quando você trabalha com controles de teste de IU em testes de IU codificados, 
 
 - A segunda parte consiste em permitir que você obtenha e defina as propriedades em um controle de teste de IU. Por exemplo, os testes de IU codificados podem obter a contagem de itens em um `ListBox` ou definir um `CheckBox` no estado selecionado.
 
-**Acessando Ações do Controle de Teste de IU**
+**Acessar ações do controle de teste de IU**
 
 Para realizar ações em controles de teste de IU, como cliques do mouse ou ações de teclado, use os métodos nas classes <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> e <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>:
 
@@ -398,11 +398,11 @@ Para realizar ações em controles de teste de IU, como cliques do mouse ou aç�
 
      `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`
 
-**Acessando Propriedades do Controle de Teste de IU**
+**Acessar propriedades do controle de teste de IU**
 
 Para obter e definir valores de propriedade específicas de controle de interface de usuário, é possível obter e definir diretamente os valores como as propriedades de um controle ou usar os métodos <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> e <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> com o nome da propriedade específica que você deseja obter ou definir.
 
-<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> retorna um objeto, que pode ser convertido no <xref:System.Type> apropriado. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> aceita um objeto para o valor da propriedade.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> retorna um objeto, que pode ser convertido no <xref:System.Type> apropriado. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> aceita um objeto do valor da propriedade.
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Para obter ou definir propriedades de controles de teste de IU diretamente
 
@@ -451,9 +451,9 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 **Adição de suporte a controles personalizados:**  A estrutura do teste de IU codificado não dá suporte a todas as interfaces do usuário possíveis e pode não dar suporte à interface do usuário que você deseja testar. Por exemplo, você não pode criar imediatamente um teste de IU codificado para a IU do Microsoft Excel. Porém, você pode criar uma extensão para o framework de teste de IU codificado que oferecerá suporte a um controle personalizado.
 
-- [Habilitar testes de IU codificados dos controles](../test/enable-coded-ui-testing-of-your-controls.md)
+- [Habilitar testes de IU codificado dos controles](../test/enable-coded-ui-testing-of-your-controls.md)
 
-- [Estender testes de IU codificados e gravações de ação](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+- [Estender testes de IU codificados e gravações da ação](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
 Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter mais informações sobre testes manuais, consulte [Run manual tests with Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts) (Executar testes manuais com o Microsoft Test Manager). Para obter mais informações sobre testes automatizados, confira [Ferramentas de teste no Visual Studio](../test/improve-code-quality.md).
 

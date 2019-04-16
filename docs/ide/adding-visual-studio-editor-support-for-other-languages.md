@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950572"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232412"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -46,27 +46,27 @@ No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenc
 
 Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.
 
--   Ir
+- Ir
 
--   Java
+- Java
 
--   JavaScript
+- JavaScript
 
--   PHP
+- PHP
 
--   TypeScript
+- TypeScript
 
--   Visual Basic
+- Visual Basic
 
--   Visual C++
+- Visual C++
 
--   C#
+- C#
 
 Todos esses tipos de arquivo terão os recursos descritos anteriormente, mesmo se o suporte para uma linguagem determinada ainda não tiver sido instalado. Instalar suporte especializado para algumas linguagens pode oferecer suporte a outras linguagens, como IntelliSense ou outros recursos de linguagem avançados como lâmpadas.
 
 ## <a name="add-support-for-non-supported-languages"></a>Adicionar suporte para linguagens sem suporte
 
-A Atualização 1 do Visual Studio 2015 e versões posteriores oferecem suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web – um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, poderá adicionar suporte a ela sozinho na Atualização 1 do Visual Studio 2015 ou posterior, criando um modelo de pacote TextMate para snippets e gramáticas de linguagem.
+O Visual Studio 2015 oferece suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web &mdash; um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, poderá adicionar suporte a ela sozinho criando um modelo de pacote TextMate para trechos e gramáticas de linguagem.
 
 Adicione novas Gramáticas TextMate para o Visual Studio na seguinte pasta:
 
@@ -80,11 +80,14 @@ Nesse caminho base, adicione as pastas a seguir se forem aplicáveis à sua situ
 |*\Syntaxes*|A pasta da gramática. Contém os arquivos *.json* da gramática para a linguagem, como *Matlab.json*.|
 |*\Snippets*|A pasta de snippets. Contém snippets da linguagem.|
 
-No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >*. Se a pasta de extensões não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
+No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >*. Se a pasta *Extensões* não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
 
-Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate – Introdução a gramáticas de linguagem: Como adicionar o realce de sintaxe do código-fonte inserido em HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Observações sobre como criar uma gramática da linguagem e um tema personalizado para um pacote TextMate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+> [!TIP]
+> Se você tiver arquivos abertos no editor, precisará fechá-los e reabri-los para ver o realce de sintaxe depois de adicionar as Gramáticas TextMate.
+
+Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate: introdução a gramáticas de linguagem](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Observações sobre como criar uma gramática de linguagem e um tema personalizado para um pacote Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Passo a passo: Para criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Passo a passo: Exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)

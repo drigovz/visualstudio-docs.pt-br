@@ -3,20 +3,20 @@ title: Início Rápido – Abrir uma pasta de código do Python
 description: Neste início rápido, você abre e executa o código Python de uma pasta sem usar um projeto do Visual Studio (apenas Visual Studio 2019).
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354902"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366114"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Início Rápido: Abrir e executar código Python em uma pasta
 
@@ -111,6 +111,6 @@ Nesses casos, você também deve adicionar uma linha ao arquivo JSON de configur
 
 ## <a name="see-also"></a>Consulte também
 
-- [Início Rápido: criar um projeto do Python com base em um código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+- [Início Rápido: Criar um projeto do Python com base em um código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 - [Início Rápido: Criar um projeto Python de um repositório](quickstart-03-python-in-visual-studio-project-from-repository.md)
 - [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

@@ -3,19 +3,19 @@ title: Editar código do Python
 description: Para o Python, o Visual Studio fornece funcionalidades avançadas do IntelliSense, de snippets de código e navegação, juntamente com formatação, linting e refatoração.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355546"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366270"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 

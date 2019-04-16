@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983268"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232587"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -76,8 +76,21 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
 - privado\_protegido
 - local
 
-> [!NOTE]
-> Não especifique um nível de acessibilidade como parte de sua convenção de nomenclatura se a acessibilidade não for aplicável ao tipo de símbolo para o qual você está direcionando. Por exemplo, parâmetros não tem níveis de acessibilidade. Se você especificar um nível de acessibilidade para uma convenção de nomenclatura de parâmetro, a regra de nomenclatura não funcionará corretamente.
+   O nível de acessibilidade `local` se aplica a símbolos definidos em um método. É útil para definir convenções de nomenclatura para símbolos cuja acessibilidade não pode ser especificada no código. Por exemplo, se você especificar `applicable_accessibilities = local` em uma convenção de nomenclatura para constantes (`required_modifiers = const`), a regra se aplicará apenas a constantes definidas em um método e não àquelas definidas em um tipo.
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>Modificadores de símbolo (opcional)
 
@@ -156,8 +169,8 @@ Severidade | Efeito
 ------------ | -------------
 nenhuma ou silenciosa | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
 sugestão | Quando esse estilo não estiver sendo seguido, mostre-o para o usuário como uma sugestão, como pontos subjacentes nos dois primeiros caracteres. Isso não terá nenhum efeito em tempo de compilação.
-aviso | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
-erro | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
+warning | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
+error | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
 
 > [!NOTE]
 > Não é necessário criar seu projeto para ver as violações de regras de nomenclatura. Elas são exibidas à medida que o código é editado, na **Lista de Erros** ou como uma sugestão.
@@ -196,6 +209,6 @@ Se você fechar e reabrir o arquivo de código, em vez de ver a sugestão embaix
 
 ## <a name="see-also"></a>Consulte também
 
-- [Convenções de formatação e linguagem .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Convenções de formatação e de linguagem do .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Criar opções do editor portátil e personalizado](../ide/create-portable-custom-editor-options.md)
 - [Arquivo .editorconfig da plataforma do compilador do .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

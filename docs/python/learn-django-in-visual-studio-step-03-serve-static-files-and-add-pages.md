@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Uma explicação dos conceitos básicos do Django no contexto de projetos do Visual Studio, demonstrando especificamente como fornecer arquivos estáticos, adicionar páginas ao aplicativo e usar a herança do modelo
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e649dd6b802f99c73b99e5980039d0fef6e5a86f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957241"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365698"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
@@ -275,7 +275,7 @@ As etapas a seguir demonstram a herança:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Usar o modelo Projeto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)
+> [Usar o modelo completo de Projeto Web do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 

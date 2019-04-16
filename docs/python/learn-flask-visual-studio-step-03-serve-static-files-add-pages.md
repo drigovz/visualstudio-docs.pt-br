@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Uma explicação dos conceitos básicos do Flask no contexto de projetos do Visual Studio, demonstrando especificamente como fornecer arquivos estáticos, adicionar páginas ao aplicativo e usar a herança do modelo
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72ef0011f2df86ddc25b2f566cd3a5e72d492833
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939782"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365839"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
@@ -281,7 +281,7 @@ As etapas a seguir demonstram a herança:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Usar o modelo completo Projeto Web do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)
+> [Usar o modelo completo de Projeto Web do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 

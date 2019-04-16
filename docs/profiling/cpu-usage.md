@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640786"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366751"
 ---
 # <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
 
@@ -56,6 +56,10 @@ Geralmente, o computador local replica melhor a execução do aplicativo instala
 
 O relatório de diagnóstico é classificado por **CPU total**, do mais alto para o mais baixo. Altere a ordem de classificação ou a coluna de classificação selecionando os cabeçalhos de coluna. Use o menu suspenso **Filtrar** para marcar ou desmarcar os threads a serem exibidos e use a caixa **Pesquisar** para procurar um thread ou um nó específico.
 
+::: moniker range=">=vs-2019"
+A partir do Visual Studio 2019, você pode clicar nos botões **Expandir Afunilamento** e **Mostrar Afunilamento** para ver as chamadas de função que usam a porcentagem mais alta da CPU no modo de exibição de árvore de chamada.
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> Colunas de dados de Uso da CPU
 
 |||
@@ -70,7 +74,12 @@ Para exibir a árvore de chamadas, selecione o nó pai no relatório. A página 
 
 ####  <a name="BKMK_Call_tree_structure"></a> Estrutura da árvore de chamadas
 
- ![Estrutura de árvore de chamadas](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Estrutura de árvore de chamadas")
+::: moniker range=">=vs-2019"
+![Estrutura de árvore de chamadas](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Estrutura de árvore de chamadas")
+::: moniker-end
+::: moniker range="vs-2017"
+![Estrutura de árvore de chamadas](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Estrutura de árvore de chamadas")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ Para exibir a árvore de chamadas, selecione o nó pai no relatório. A página 
 
 ####  <a name="BKMK_External_Code"></a> Código externo
 
- As funções do sistema e do framework executadas pelo seu código são chamadas *código externo*. As funções do código externo iniciam e interrompem o aplicativo, elaboram a interface do usuário, controlam o threading e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não se interessa pelo código externo, então, a árvore de chamadas de Uso da CPU coleta as funções externas de um método de usuário em um nó **[Código Externo]**.
+As funções do sistema e do framework executadas pelo seu código são chamadas *código externo*. As funções do código externo iniciam e interrompem o aplicativo, elaboram a interface do usuário, controlam o threading e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não se interessa pelo código externo, então, a árvore de chamadas de Uso da CPU coleta as funções externas de um método de usuário em um nó **[Código Externo]**.
 
- Para exibir os caminhos de chamada do código externo, na página principal do relatório de diagnóstico (painel direito), selecione **Mostrar Código Externo** na lista suspensa **Filtrar** e, em seguida, selecione **Aplicar**. O modo de exibição de **Árvore de Chamadas** da página **Uso da CPU** expande as chamadas de código externo. (A lista suspensa **Filtrar** está disponível na página principal do diagnóstico, não nas exibições detalhadas.)
+Para exibir os caminhos de chamada do código externo, na página principal do relatório de diagnóstico (painel direito), selecione **Mostrar Código Externo** na lista suspensa **Filtrar** e, em seguida, selecione **Aplicar**. O modo de exibição de **Árvore de Chamadas** da página **Uso da CPU** expande as chamadas de código externo. (A lista suspensa **Filtrar** está disponível na página principal do diagnóstico, não nas exibições detalhadas.)
 
- ![Mostrar Código Externo](../profiling/media/cpu_use_wt_filterview.png "Mostrar Código Externo")
+![Mostrar Código Externo](../profiling/media/cpu_use_wt_filterview.png "Mostrar Código Externo")
 
- Muitas cadeias de chamadas de código externo são muito aninhadas; portanto, a largura da cadeia pode exceder a largura de exibição da coluna **Nome da Função**. Os nomes de função são exibidos como **...**.
+Muitas cadeias de chamadas de código externo são muito aninhadas; portanto, a largura da cadeia pode exceder a largura de exibição da coluna **Nome da Função**. Os nomes de função são exibidos como **...**.
 
- ![Código externo aninhado na árvore de chamadas](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Código externo aninhado na árvore de chamadas")
+![Código externo aninhado na árvore de chamadas](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Código externo aninhado na árvore de chamadas")
 
- Para localizar um nome de função que você está procurando, use a caixa de pesquisa. Passe o mouse sobre a linha selecionada ou use a barra de rolagem horizontal para exibir os dados.
+Para localizar um nome de função que você está procurando, use a caixa de pesquisa. Passe o mouse sobre a linha selecionada ou use a barra de rolagem horizontal para exibir os dados.
 
- ![Pesquisar código externo aninhado](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Pesquisar código externo aninhado")
+::: moniker range=">=vs-2019"
+![Pesquisar código externo aninhado](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "Pesquisar código externo aninhado")
+::: moniker-end
+::: moniker range="vs-2017"
+![Pesquisar código externo aninhado](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Pesquisar código externo aninhado")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funções assíncronas na árvore de chamadas de Uso da CPU
 

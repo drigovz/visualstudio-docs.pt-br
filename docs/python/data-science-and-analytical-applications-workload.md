@@ -3,18 +3,18 @@ title: Carga de trabalho para Aplicativos de ciência de dados e análise
 description: Esta carga de trabalho do Visual Studio reúne o Python, o F# e suas respectivas distribuições de tempo de execução, incluindo o Anaconda. (O R também está incluído somente no Visual Studio 2017.)
 ms.date: 02/28/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44dfa13059e16338111bbeb2eb2f0bc6d6b44408
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324921"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366322"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Instalar o suporte para ciência de dados no Visual Studio
 

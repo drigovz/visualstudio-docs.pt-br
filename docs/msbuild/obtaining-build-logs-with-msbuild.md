@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7999e65a36968872816abfa8246c0e42ce699d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627357"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232639"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obter logs de build com o MSBuild
 
@@ -91,7 +91,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 No exemplo a seguir, é criado um arquivo de log binário com o nome *binarylogfilename*.
 
 ```cmd
-/bl:binarylogfilename.binlog
+-bl:binarylogfilename.binlog
 ```
 
 Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
@@ -107,5 +107,5 @@ Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-co
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [Agentes de build](../msbuild/build-loggers.md)
 - [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)
-- [Como criar Agentes de Encaminhamento](../msbuild/creating-forwarding-loggers.md)
+- [Como criar agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

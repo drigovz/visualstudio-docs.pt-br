@@ -3,19 +3,19 @@ title: Referência da janela de ambientes do Python
 description: Detalhes sobre cada uma das guias que aparecem na janela Ambientes de Python no Visual Studio.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355770"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366517"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -60,7 +60,7 @@ Como você janelas interativas no fluxo de trabalho diário, provavelmente desen
 
 Os scripts de inicialização contêm o código que a janela **Interativa** carrega e executa automaticamente, incluindo importações, definições de função e literalmente qualquer outra coisa. Esses scripts são referenciados de duas maneiras:
 
-1. Quando você instala um ambiente, o Visual Studio cria uma pasta *Documents\Visual Studio <version>\Python Scripts\\\<ambiente>*, em que &lt;versão&gt; é a versão do Visual Studio (tal como 2017 ou 2019) e &lt;ambiente&gt; corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela **Interativa** para esse ambiente, ela carrega e executa qualquer arquivo *.py* que for encontrado aqui em ordem alfabética.
+1. Quando você instala um ambiente, o Visual Studio cria uma pasta *Documents\Visual Studio \<versão>\Python Scripts\\\<ambiente>*, em que &lt;versão&gt; é a versão do Visual Studio (tal como 2017 ou 2019) e &lt;ambiente&gt; corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela **Interativa** para esse ambiente, ela carrega e executa qualquer arquivo *.py* que for encontrado aqui em ordem alfabética.
 
 1. O controle **Scripts** na guia **Ferramentas** > **Opções** > **Python** > **Janelas Interativas** (confira [Opções de janelas Interativas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) destina-se a especificar uma pasta adicional para os scripts de inicialização que estão carregados e são executados em todos os ambientes. No entanto, esse recurso não funciona no momento.
 
@@ -168,6 +168,6 @@ As bibliotecas para as quais os dados não foram compilados serão marcadas com 
 ## <a name="see-also"></a>Consulte também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
+- [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
 - [Usar requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Caminhos de pesquisa](search-paths.md)

@@ -1,27 +1,27 @@
 ---
 title: Benefício do IDE do Visual Studio na assinatura do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Saiba como baixar e instalar o IDE do Visual Studio incluído em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789881"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018136"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Usando o benefício do Visual Studio 2017
+# <a name="using-the-visual-studio-2019-benefit"></a>Usar o benefício do Visual Studio 2019
 
 Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A versão específica dependerá do nível de sua assinatura.  O benefício aparecerá como um bloco na categoria Ferramentas na página [Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) do portal do assinante.
 
 
 ## <a name="activation-steps"></a>Etapas de ativação
 
-*(O Visual Studio Enterprise é usado para este exemplo).*
+*(O Visual Studio Enterprise é usado para este exemplo.)*
 
 Para baixar o IDE:
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -29,7 +29,7 @@ Para baixar o IDE:
    > [!div class="mx-imgBorder"]
    > ![Bloco do Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Você será redirecionado à página de Resultados de download do Visual Studio Enterprise, da qual poderá baixar o IDE e obter uma chave do produto (Product Key) para ativá-lo. Também é possível solicitar uma chave do produto (Product Key) clicando no link azul **Obter Chave** ou solicitar uma chave mais tarde na página [Chaves do produto (Product Keys)](https://my.visualstudio.com/productkeys).
+3. Você será redirecionado à página de Resultados de download do Visual Studio, da qual poderá baixar o IDE e obter uma chave do produto (Product Key) para ativá-lo. Também é possível solicitar uma chave do produto (Product Key) clicando no link azul **Obter Chave** ou solicitar uma chave mais tarde na página [Chaves do produto (Product Keys)](https://my.visualstudio.com/productkeys).
 4. Na guia Detalhes da página Resultados do download:
    - Selecione a arquitetura desejada (x86, x64)
    - Selecione sua preferência de idioma.

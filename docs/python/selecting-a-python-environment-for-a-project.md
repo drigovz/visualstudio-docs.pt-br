@@ -3,19 +3,19 @@ title: Selecionar um interpretador e um ambiente do Python para um projeto
 description: Especificamente, você pode selecionar um ambiente do Python, incluindo Anaconda e ambientes virtuais, a ser aplicado a um projeto específico.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bf1937c92f5da234ab72934c5acd52bc9cd0a6b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194957"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366179"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Como selecionar um ambiente do Python para um projeto
 
@@ -169,11 +169,11 @@ Saiba que as entradas exibidas podem não ser precisas e a instalação e desins
 Observe também que o Visual Studio não oferece suporte no momento ao uso de `conda` para instalar os pacotes em um ambiente conda. Use `conda` na linha de comando.
 
 > [!Tip]
-> Uma situação comum em que o PIP não conseguirá instalar um pacote ocorrerá quando o pacote incluir o código-fonte para componentes nativos em arquivos *\*.pyd*. Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **Erro: Não é possível localizar vcvarsall.bat**. O `easy_install` consegue baixar os binários pré-compilados e é possível baixar um compilador adequado para versões mais antigas do Python em [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
+> Uma situação comum em que o PIP não conseguirá instalar um pacote ocorrerá quando o pacote incluir o código-fonte para componentes nativos em arquivos *\*.pyd*. Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **Erro: Não é possível localizar vcvarsall.bat**. `easy_install` consegue baixar os binários pré-compilados e é possível baixar um compilador adequado para versões mais antigas do Python em [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Usar requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Caminhos de pesquisa](search-paths.md)
-- [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)
+- [Referência da janela de ambientes do Python](python-environments-window-tab-reference.md)

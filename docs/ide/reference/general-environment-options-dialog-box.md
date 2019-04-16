@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647265"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018188"
 ---
 # <a name="options-dialog-box-environment--general"></a>Caixa de diálogo Opções: Ambiente \> Geral
 
@@ -53,17 +53,28 @@ Os menus utilizam o estilo de capitalização de título como padrão. Desmarque
 
 Esta opção habilita ou desabilita o reconhecimento de DPI (pontos por polegada) por monitor (ou *PMA*). Quando o PMA está habilitado, a interface de usuário do Visual Studio é exibida com nitidez em qualquer fator de escala de exibição do monitor e configuração de DPI, inclusive com a extensão a vários monitores. Para habilitar o PMA, é necessária a atualização do Windows 10 de 10 de abril de 2018 ou posterior e o .NET Framework 4.8 ou posterior. Essa opção aparecerá desativada se esses dois pré-requisitos não forem atendidos.
 
+> [!TIP]
+> - O Windows 10 tem uma configuração que diz **Permitir que o Windows tente corrigir aplicativos para que eles não fiquem desfocados**. **Ativar** essa configuração do Windows terá um efeito insignificante se a opção **Otimizar renderização para telas com densidades de pixel diferentes** estiver marcada.
+> - O Windows 10 também inclui uma **Solução de problemas de compatibilidade de programas**. Não é recomendável tentar corrigir a aparência do Visual Studio usando essa solução de problemas.
+
 ::: moniker-end
 
-**Ajustar autom. a experiência visual com base no desempenho do cliente**
+**Ajustar automaticamente a experiência visual com base no desempenho do cliente**
 
 Especifica se o Visual Studio ajusta automaticamente a experiência visual ou se você a ajusta de maneira explícita. Esse ajuste pode alterar a exibição de cores de gradientes para cores simples ou pode restringir o uso de animações em menus ou janelas pop-up.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> O Windows 10 tem uma configuração que diz **Permitir que o Windows tente corrigir aplicativos para que eles não fiquem desfocados**. É recomendável **ativar** essa configuração se o Visual Studio ficar desfocado no monitor. Considere atualizar para o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), que melhorou significativamente a nitidez de exibição por ser um aplicativo com suporte a pontos por polegada por monitor.
+
+::: moniker-end
 
 **Habilitar experiência avançada do cliente**
 
 Habilita a experiência visual completa do Visual Studio, incluindo animações e gradientes. Desmarque esta opção quando estiver usando conexões da Área de Trabalho Remota ou adaptadores de gráficos mais antigos, uma vez que esses recursos podem ter um desempenho ruim nesses casos. Essa opção fica disponível somente quando você desmarca a opção **Ajustar autom. a experiência visual com base no desempenho do cliente**.
 
-**Usar aceleração de elementos gráficos de hardware se disponível**
+**Usar aceleração de elementos gráficos de hardware, se disponível**
 
 Usa aceleração de elementos gráficos de hardware se estiver disponível, em vez de aceleração de software.
 
@@ -81,11 +92,11 @@ Personaliza o número de projetos e arquivos usados mais recentemente que aparec
 
 Exibe a barra de status. A barra de status fica localizada na parte inferior da janela do IDE e exibe informações sobre o progresso das operações em andamento.
 
-**Botão Fechar afeta apenas a janela da ferramenta ativa**
+**Botão Fechar afeta apenas a janela de ferramentas ativa**
 
 Especifica que, quando o botão **Fechar** é acionado, somente a janela da ferramenta que está em foco é fechada, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção é selecionada.
 
-**Botão Ocultar Automaticamente afeta apenas a janela da ferramenta ativa**
+**Botão Ocultar Automaticamente afeta apenas a janela de ferramentas ativa**
 
 Especifica que, quando o botão **Ocultar Automaticamente** é acionado, somente a janela da ferramenta que está em foco é ocultada automaticamente, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção não é selecionada.
 
