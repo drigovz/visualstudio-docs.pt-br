@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610327"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584305"
 ---
-# <a name="customize-your-build-c-visual-basic"></a>Personalizar o build (C#, Visual Basic)
+# <a name="customize-your-build"></a>Personalizar seu build
 
 Os projetos do MSBuild que usam o processo de build padrão (importando *Microsoft.Common.props* e *Microsoft.Common.targets*) têm vários ganchos de extensibilidade que você pode usar para personalizar o processo de build.
 
