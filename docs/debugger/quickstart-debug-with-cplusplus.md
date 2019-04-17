@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475949"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504205"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Início Rápido: Depuração com C++ usando o depurador do Visual Studio
 
@@ -28,7 +28,7 @@ O depurador do Visual Studio oferece muitos recursos avançados para ajudar a de
 1. Abra o Visual Studio e crie um projeto.
 
     ::: moniker range=">=vs-2019"
-    Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **c++**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console**. Na caixa de diálogo que aparece, escolha **Criar**.
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **c++**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console**. Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C++**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console do Windows**. Depois, digite um nome como **MyDbgApp** e clique em **OK**.
@@ -138,4 +138,4 @@ Para saber mais sobre como usar editar e continuar e sobre as limitações das f
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 
 > [!div class="nextstepaction"]
-> [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+> [Introdução ao depurador](../debugger/debugger-feature-tour.md)

@@ -1,7 +1,7 @@
 ---
 title: Escrever um visualizador em Visual Basic | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 04/12/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24138337ab5adbbcabb9b0ab03cc411392565622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988357"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584539"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Passo a passo: Como escrever um visualizador em Visual Basic
 Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres é um exemplo básico para mostrar como você pode criar visualizadores para outros tipos de dados mais aplicáveis a seus projetos.
@@ -36,15 +36,16 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 ### <a name="to-create-a-class-library-project"></a>Para criar um projeto da biblioteca de classes
 
-1. No menu **Arquivo**, escolha **Novo** e clique em **Novo Projeto**.
+1. Crie um novo projeto de biblioteca de classes.
 
-2. No **novo projeto** caixa de diálogo, selecione **Visual Basic**.
+    ::: moniker range=">=vs-2019"
+    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **visual basic**, escolha **modelos**, em seguida, escolha **criar uma nova biblioteca de classes (.NET Standard)**. Na caixa de diálogo que aparece, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo **Visual Basic**, escolha **.NET Standard**e, em seguida, no painel central, escolha **(.NET da biblioteca de classe Standard)**.
+    ::: moniker-end
 
-3. Sob **.NET Standard**, clique em **biblioteca de classes**.
-
-4. Na caixa **Nome**, digite um nome apropriado para a biblioteca de classes, por exemplo, **MyFirstVisualizer**.
-
-5. Clique em **OK**.
+2. Digite um nome apropriado para a biblioteca de classes, como `MyFirstVisualizer`e, em seguida, clique em **Create** ou **Okey**.
 
    Quando você criou a biblioteca de classes, você deverá adicionar uma referência a Microsoft.VisualStudio.DebuggerVisualizers.DLL de forma que possa usar as classes definidas nela. Primeiro, no entanto, dê ao seu projeto um nome significativo.
 
@@ -59,7 +60,9 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 3. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Meu Primeiro Visualizador** e, no menu de atalho, clique em **Adicionar Referência**.
 
-4. Na caixa de diálogo **Adicionar Referência**, na guia **.NET**, clique em Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+4. No **adicionar referência** caixa de diálogo do **procurar** guia, selecione **procurar** e encontre o DebuggerVisualizers.
+
+    Você pode encontrar a DLL no  *\<diretório de instalação do Visual Studio > \Common7\IDE\PublicAssemblies* subdiretório do diretório de instalação do Visual Studio.
 
 5. Clique em **OK**.
 
@@ -105,7 +108,9 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e, no menu de atalho, clique em **Adicionar Referência**.
 
-2.  Na caixa de diálogo **Adicionar Referência**, na guia **.NET**, clique em **System.Windows.Forms**.
+2. No **adicionar referência** caixa de diálogo do **procurar** guia, selecione **procurar**e localizar a dll.
+
+    Você pode encontrar a DLL no *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
 3.  Clique em **OK**.
 
@@ -163,13 +168,16 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>Para adicionar um projeto de aplicativo de console à solução
 
-1. No menu **Arquivo**, clique em **Adicionar** e, em seguida, clique em **Novo Projeto**.
+1. No Gerenciador de soluções, clique com botão direito a solução, escolha **Add**e, em seguida, clique em **novo projeto**.
 
-2. No **adicionar novo projeto** caixa de diálogo, selecione **Visual Basic**e, em seguida, clique em **aplicativo de Console**.
+    ::: moniker range=">=vs-2019"
+    Na caixa de pesquisa, digite **visual basic**, escolha **modelos**, em seguida, escolha **criar um novo aplicativo de Console (.NET Framework)**. Na caixa de diálogo que aparece, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual Basic**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)**.
+    ::: moniker-end
 
-3. Na caixa **Nome**, digite um nome significativo para o aplicativo de console, por exemplo, **MyTestConsole**.
-
-4. Clique em **OK**.
+2. Digite um nome apropriado para a biblioteca de classes, como `MyTestConsole`e, em seguida, clique em **Create** ou **Okey**.
 
    Agora, você deve adicionar as referências necessárias para que MyTestConsole possa chamar MyFirstVisualizer.
 
@@ -177,7 +185,7 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **MyTestConsole** e, no menu de atalho, clique em **Adicionar Referência**.
 
-2.  Na caixa de diálogo **Adicionar Referência**, na guia **.NET**, clique em Microsoft.VisualStudio.DebuggerVisualizers.
+2.  No **adicionar referência** caixa de diálogo do **procurar** , clique em DebuggerVisualizers.
 
 3.  Clique em **OK**.
 
