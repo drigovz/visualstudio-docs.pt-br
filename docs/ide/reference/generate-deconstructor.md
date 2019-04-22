@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159173"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537524"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Gerar um desconstrutor no Visual Studio
 
@@ -26,21 +26,21 @@ Esta geração de código aplica-se a:
 
 **Quando:** Você deseja desconstruir corretamente o tipo de forma automática.
 
-**Por que:** Você pode digitar manualmente um desconstrutor; no entanto, essa funcionalidade gerará o stub para você com os parâmetros de saída corretos.
+**Por que:** você pode digitar manualmente um desconstrutor, mas essa funcionalidade gera o stub para você com os parâmetros de saída corretos.
 
-## <a name="generate-deconstructor"></a>Gerar desconstrutor
+## <a name="generate-a-deconstructor"></a>Gerar um desconstrutor
 
-1. Declare um novo tipo com os parâmetros de saída desejados especificados. Essa declaração causará um erro quando nenhuma instância de desconstrução que corresponda à declaração puder ser encontrada.
+1. Declare um novo tipo com os parâmetros de saída desejados especificados. Essa declaração causa um erro quando nenhuma instância de desconstrução correspondente à declaração for encontrada.
 
    ![Erro de desconstrutor ausente](media/deconstruct.png)
 
-2. Em seguida, escolha uma das seguintes opções no:
+2. Realize uma das seguintes etapas:
 
    - **Teclado**
-      - Com o cursor na declaração, pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Com o cursor na sua declaração, selecione Ctrl+. para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-      - Clique no ícone de ![chave de fenda](media/screwdriver.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha vazia na classe.
+      - Selecione o ícone ![chave de fenda](media/screwdriver.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha vazia na classe.
 
       ![Gerar uma correção de código de desconstrutor](media/deconstruct-codefix.png)
 
@@ -53,4 +53,4 @@ Esta geração de código aplica-se a:
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)
-- [Dicas para desenvolvedores de .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Dicas para desenvolvedores do .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)

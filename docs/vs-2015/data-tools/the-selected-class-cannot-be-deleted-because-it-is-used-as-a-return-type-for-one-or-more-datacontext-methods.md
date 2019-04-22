@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad1ccf45a2df6a0b1b23208926136aa2b09eabd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02454e308a97f043caa6e85e1c4308c2d2a2402e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923951"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649037"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O tipo de retorno de um ou mais métodos de <xref:System.Data.Linq.DataContext> é a classe de entidade selecionada. Excluindo um classe de entidade que é usada como o tipo de retorno para um método de <xref:System.Data.Linq.DataContext> fará com que a compilação do projeto falhar. Para excluir a classe selecionada de entidade, identifica os métodos de <xref:System.Data.Linq.DataContext> que a usam e definem seus tipos de retorno para uma classe diferente de entidade.  
   
  Para reverter os tipos de retorno de <xref:System.Data.Linq.DataContext> métodos para seus tipos gerados automaticamente originais, primeiro exclua os <xref:System.Data.Linq.DataContext> método a partir do painel de métodos e, em seguida, arraste o objeto de **Gerenciador de servidores** / **Gerenciador de banco de dados** para o O/R Designer novamente.  

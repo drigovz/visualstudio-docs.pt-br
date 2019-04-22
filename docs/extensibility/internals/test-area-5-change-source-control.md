@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599643"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649245"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de teste 5: Alterar controle do código-fonte
 Essa área de plug-in de teste de controle de origem aborda alterando o controle do código-fonte por meio de **alterar controle do código-fonte** comando.
@@ -45,7 +45,6 @@ Essa área de plug-in de teste de controle de origem aborda alterando o controle
 
 ### <a name="case-5a-bind"></a>Caso 5a: associar
  Associação permite que o usuário adicione informações de controle do código de origem para os projetos selecionados e as soluções. Normalmente, o usuário é solicitado para identificar um projeto no controle de origem para o qual eles devem ser adicionados. O usuário não pode criar um novo projeto no controle de origem como parte dessa operação (contraste com adicionar ao controle do código-fonte).
-
 
 | Ação | Etapas de teste | Resultados esperados para verificar |
 | - | - | - |

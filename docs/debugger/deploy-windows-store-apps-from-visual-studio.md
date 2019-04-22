@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790375"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP usando o Visual Studio
@@ -76,7 +76,7 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
 
     O **Conexão remota** caixa de diálogo exibe os dispositivos na sub-rede local e em qualquer dispositivo que está conectado diretamente ao computador do Visual Studio por um cabo Ethernet.
 
-   **Especificar o dispositivo remoto em uma página de projeto do Visual C++**
+   **Especificar o dispositivo remoto em um Visual C++ página do projeto**
 
    ![C&#43; &#43; propriedades para depuração remota do projeto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Para remover a isenção de loopback de rede do aplicativo:
 
 - Sobre o C# e Visual Basic Depurar página de propriedades, desmarque a **permitir Loopback de rede** caixa de seleção.
 
-- Na página de propriedades de depuração de C++, defina as **permitir Loopback de rede** valor para **não**.
+- No C++ página de propriedade de depuração, defina a **permitir Loopback de rede** valor para **nenhum**.
 
-**Não iniciar, mas depurar meu código quando ele é iniciado (C# e Visual Basic) / iniciar o aplicativo (C++)**
+**Não iniciar, mas depurar meu código quando ele é iniciado (C# e Visual Basic) / Iniciar aplicativo (C++)**
 
 Para configurar a implantação para iniciar automaticamente uma sessão de depuração quando o aplicativo é iniciado:
 
 - Sobre o C# e a página de propriedades de depuração do Visual Basic, verifique o **não iniciar, mas depurar meu código quando ele é iniciado** caixa de seleção.
 
-- Na página de propriedades de depuração de C++, defina a **aplicativo&lt;3}.&lt;1** valor para **Sim**.
+- No C++ página de propriedade de depuração, defina a **Iniciar aplicativo** de valor para **Sim**.
 
 ## <a name="see-also"></a>Consulte também
 

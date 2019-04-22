@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 641dd7485e97a7833c2483d73271a8169dbc2054
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617737"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584331"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Iniciar um build pelo IDE
 Sistemas de projeto personalizado devem usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar os builds. Este artigo descreve as razões para esse requisito e descreve o procedimento.
 
 ## <a name="parallel-builds-and-threads"></a>Builds paralelas e threads
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite builds paralelos que exigem a mediação para acesso a recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build das quais o retorno de chamada é fornecido para o gerenciador de build.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite builds paralelos que exigem a mediação para acesso a recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build de dentro dos retornos de chamada.
 
  Se o sistema de projeto modificar variáveis de ambiente, ele deverá definir o NodeAffinity do build para OutOfProc. Esse requisito significa que você não pode usar objetos de host, já que eles exigem o nó em processamento.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645869"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648544"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Passo a passo: Adicionar controles a um documento em tempo de execução em um suplemento do VSTO
   Você pode adicionar controles para qualquer documento do Microsoft Office Word aberto usando um suplemento do VSTO. Este passo a passo demonstra como usar a faixa de opções para permitir que os usuários adicionar um <xref:Microsoft.Office.Tools.Word.Controls.Button> ou um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a um documento.
@@ -78,21 +78,17 @@ ms.locfileid: "56645869"
 
 8. No **propriedades** janela, altere as propriedades a seguir.
 
-
    | Propriedade | Valor |
    |-----------|-----------------------|
    | **Nome** | **addButtonCheckBox** |
    | **Rótulo** | **Botão Adicionar** |
 
-
 9. Adicionar uma segunda caixa de seleção para **group1**e, em seguida, altere as propriedades a seguir.
-
 
    | Propriedade | Valor |
    |-----------|---------------------------|
    | **Nome** | **addRichTextCheckBox** |
    | **Rótulo** | **Adicionar controle Rich Text** |
-
 
 10. No Designer de faixa de opções, clique duas vezes **adicionar botão**.
 

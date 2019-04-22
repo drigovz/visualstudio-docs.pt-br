@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15e65b85490c2cc65a6f965a37bd28b9a241b428
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924024"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652053"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: Não é possível iniciar a depuração no servidor Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,6 @@ Se você estiver usando uma versão mais antiga do Visual Studio:
     Um bug nas versões mais antigas (corrigidos mais tarde) necessários privilégios elevados em alguns cenários de depuração de ASP.NET.
     
 - Se estiver executando várias instâncias do Visual Studio, abra novamente o seu projeto em uma instância do Visual Studio e tente novamente.
-   
-  
+
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

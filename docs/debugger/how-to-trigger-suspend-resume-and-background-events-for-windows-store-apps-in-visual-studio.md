@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790349"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Como disparar suspender, continuar e eventos em segundo plano durante a depuração de aplicativos UWP no Visual Studio
@@ -72,7 +72,7 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
 
 2.  Abra a página de propriedades de depuração do projeto de inicialização. No Gerenciador de Soluções, selecione o projeto. No menu **Depurar**, escolha **Propriedades**.
 
-     Para projetos C++, expanda **propriedades de configuração** e, em seguida, escolha **depuração**.
+     Para C++ projetos, expanda **propriedades de configuração** e, em seguida, escolha **depuração**.
 
 3.  Realize um dos seguintes procedimentos:
 
@@ -80,7 +80,7 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
 
          ![C&#35;&#47;propriedade de aplicativo de inicialização de depuração VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Para projetos do Visual C++, escolha **nenhuma** da **Iniciar aplicativo** lista.
+    -   Para o Visual C++ projetos, escolha **nenhuma** do **Iniciar aplicativo** lista.
 
          ![C&#43;&#43;&#47;propriedade de depuração do aplicativo inicie VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

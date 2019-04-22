@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929597"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653054"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Ferramentas de dados do Visual Studio para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 C++ nativo geralmente fornecem o melhor desempenho quando você está acessando fontes de dados. No entanto, os dados de ferramentas para aplicativos do C++ no Visual Studio não são tão rico quanto vale para aplicativos .NET. Por exemplo, as janelas de fontes de dados não podem ser usadas para arrastar e soltar fontes de dados em uma superfície de design de C++. Se você precisar de uma camada relacional de objeto, você precisará escrever sua própria ou usar um produto de terceiros.  O mesmo é verdadeiro para a funcionalidade de associação de dados, embora os aplicativos que usam a biblioteca Microsoft Foundation Class podem usar algumas classes de banco de dados, junto com os documentos e exibições, para armazenar dados na memória e exibi-lo ao usuário. Para obter mais informações, consulte [acesso a dados no Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   
  Para se conectar aos bancos de dados SQL, os aplicativos nativos do C++ podem usar os drivers ODBC e OLE DB e o provedor ADO que estão incluídos com o Windows.     Eles podem se conectar a qualquer banco de dados que dá suporte a essas interfaces. O driver ODBC é o padrão. OLE DB é fornecido para compatibilidade com versões anteriores. Para obter mais informações sobre essas tecnologias de dados, consulte [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  

@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790284"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Atualizar um aplicativo UWP no Visual Studio
@@ -57,9 +57,9 @@ ms.locfileid: "58790284"
 
 5.  Na home page do seu aplicativo UWP, edite algumas de HTML.
 
-7.  Clique o **atualizar o Windows app** botão, que se parece com isso: ![botão de aplicativo do Windows de atualização](../debugger/media/js_refresh.png "JS_Refresh"). (Ou pressione F4.)
+7.  Clique o **Refresh Windows app** botão, que se parece com isso: ![Atualizar o botão de aplicativo do Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Ou pressione F4.)
 
 8.  Altere para o aplicativo. O aplicativo é recarregado e o HTML atualizado é usado para renderizar o aplicativo.
 
 ## <a name="see-also"></a>Consulte também
-- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

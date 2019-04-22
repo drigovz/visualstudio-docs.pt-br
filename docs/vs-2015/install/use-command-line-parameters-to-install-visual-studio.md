@@ -14,25 +14,26 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794033"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651157"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parâmetros de linha de comando para instalar o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [usar parâmetros de linha de comando para instalar o Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
+Para a documentação mais recente do Visual Studio, consulte [usar parâmetros de linha de comando para instalar o Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
 Ao instalar o Visual Studio 2015 por meio de um prompt de comando, é possível usar os parâmetros de linha de comando a seguir (também conhecidos como opções).
 
 > [!NOTE]
->  Certifique-se de que você use o instalador real e não o arquivo de bootstrapper. Por exemplo, verifique se você usar **`vs_enterprise.exe`** em vez de vs_enterprise_*GUID*.exe. Você pode baixar um instalador de [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
+> Certifique-se de que você use o instalador real e não o arquivo de bootstrapper. Por exemplo, verifique se você usar **`vs_enterprise.exe`** em vez de vs_enterprise_*GUID*.exe. Você pode baixar um instalador de [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
 
 ## <a name="list-of-command-line-parameters"></a>Lista de parâmetros de linha de comando
- Parâmetros de linha de comando do Visual Studio não diferenciam maiúsculas de minúsculas.
+
+Parâmetros de linha de comando do Visual Studio não diferenciam maiúsculas de minúsculas.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
@@ -59,7 +60,8 @@ Ao instalar o Visual Studio 2015 por meio de um prompt de comando, é possível 
 |**/repair**|Repara o Visual Studio.|
 |**/SuppressRefreshPrompt**|Impede a exibição que a caixa de diálogo disponíveis de atualização no Assistente de instalação, assim, o Assistente de instalação aceitará automaticamente qualquer versão atualizada necessários ou recomendados.|
 |**/u**<br /><br /> **/Uninstall**|Desinstala o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|**/Uninstall /Force**<br /><br /> **/u /force**|Desinstala o Visual Studio e todos os recursos que são compartilhados com outros produtos. **Aviso:** se você usar esse parâmetro, outros produtos que estão instalados no mesmo computador podem parar de funcionar corretamente.|
+|**/Uninstall /Force**<br /><br /> **/u /force**|Desinstala o Visual Studio e todos os recursos que são compartilhados com outros produtos. **Aviso:**  Se você usar esse parâmetro, outros produtos que estão instalados no mesmo computador podem parar de funcionar corretamente.|
 
 ## <a name="see-also"></a>Consulte também
- [Guia do administrador do Visual Studio](../install/visual-studio-administrator-guide.md)
+
+- [Guia do administrador do Visual Studio](../install/visual-studio-administrator-guide.md)

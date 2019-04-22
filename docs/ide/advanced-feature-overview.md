@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790531"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504296"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
@@ -100,7 +100,7 @@ O **Pesquisador de Objetos do SQL Server** no Visual Studio fornece uma exibiç�
 
 ## <a name="debug-test-and-improve-your-code"></a>Depurar, testar e melhorar o código
 
-Quando você escrever o código, é necessário executá-lo e testá-lo para verificar o desempenho e se há bugs. O sistema de depuração de última geração do Visual Studio permite depurar o código em execução no projeto local, em um dispositivo remoto ou em um [emulador de dispositivo](../cross-platform/visual-studio-emulator-for-android.md). Você pode percorrer pelo código uma instrução por vez e inspecionar as variáveis conforme avança. Você pode definir pontos de interrupção que são atingidos somente quando uma determinada condição é verdadeira. As opções de depuração podem ser gerenciadas no próprio editor de códigos, para que você não precise sair do código. Para obter mais detalhes sobre a depuração no Visual Studio, consulte [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md).
+Quando você escrever o código, é necessário executá-lo e testá-lo para verificar o desempenho e se há bugs. O sistema de depuração de última geração do Visual Studio permite depurar o código em execução no projeto local, em um dispositivo remoto ou em um [emulador de dispositivo](../cross-platform/visual-studio-emulator-for-android.md). Você pode percorrer pelo código uma instrução por vez e inspecionar as variáveis conforme avança. Você pode definir pontos de interrupção que são atingidos somente quando uma determinada condição é verdadeira. As opções de depuração podem ser gerenciadas no próprio editor de códigos, para que você não precise sair do código. Para obter mais detalhes sobre a depuração no Visual Studio, confira [Primeiro acesso ao depurador](../debugger/debugger-feature-tour.md).
 
 Para saber mais sobre como melhorar o desempenho de seus aplicativos, confira a funcionalidade de [criação de perfil](../profiling/profiling-feature-tour.md) do Visual Studio.
 

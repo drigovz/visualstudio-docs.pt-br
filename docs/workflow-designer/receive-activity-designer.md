@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba2a53b6e658d14d05db04b8b82e9da9bcc3564
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948245"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649206"
 ---
 # <a name="receive-activity-designer"></a>Recebe o designer de atividades
 
@@ -36,7 +36,6 @@ Como alternativa, o **ReceiveAndSendReply** designer de modelo na **Messaging** 
 ### <a name="the-receive-activity-properties"></a>As propriedades de atividade de receptor
 
 A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities.Receive> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedades ou na superfície de Designer de fluxo de trabalho. A única propriedade necessário é a propriedade de <xref:System.ServiceModel.Activities.Receive.OperationName%2A> .
-
 
 | Nome da Propriedade | Necessária | Uso |
 |-|----------|-|

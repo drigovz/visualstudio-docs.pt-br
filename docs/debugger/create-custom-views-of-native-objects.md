@@ -1,5 +1,5 @@
 ---
-title: Criar exibições personalizadas de C++ objetos
+title: Criar exibições personalizadas dos objetos de C++
 description: Use a estrutura do Natvis para personalizar a maneira como o Visual Studio exibe os tipos nativos no depurador
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 2dba61d53bdb0007eb2a4f0acff734613e320ab9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537571"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649635"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Criar exibições personalizadas de C++ objetos no depurador
 
@@ -153,7 +153,6 @@ Você pode definir diferentes modos de exibição do Natvis para exibir os tipos
     </Expand>
 </Type>
 ```
-
 
 No **Watch** janela, use o **, modo de exibição** especificador para especificar uma exibição alternativa de formato. O modo de exibição simple é exibido como **vec,view(simple)**:
 

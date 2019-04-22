@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 487e61a98117c8c64b993af5b9300face99478f8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 972f749d03ec81c40ed91a2fb40161ebdb8cd791
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000065"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650234"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de regras mínimas nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O Microsoft Native mínimo regras enfocam os problemas mais críticos do código nativo, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que criar para seus projetos nativos.  
-
 
 |                                      Regra                                      |                                                  Descrição                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923404"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647918"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propriedades de atributos em diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,6 @@ Em um diagrama de classe UML, você pode adicionar *atributos* a classes e inter
  Para ver as propriedades de um atributo, o atributo na classe ou interface no diagrama com o botão direito e, em seguida, clique em **propriedades**. As propriedades aparecem na janela Propriedades.  
 
  Para exibir as propriedades de um atributo, clique duas vezes e, em seguida, clique em **propriedades**.  
-
 
 |   **Property**    | **Padrão**  |                                                                                                                                                                                                         Descrição                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

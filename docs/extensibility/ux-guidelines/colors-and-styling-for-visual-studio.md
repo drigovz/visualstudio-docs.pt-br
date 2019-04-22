@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027705"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650623"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 
@@ -113,7 +113,6 @@ No arquivo VSShell80.idl, a enumeração `__VSSYSCOLOREX` tem constantes de core
 
 Se armazenar uma caneta ou um pincel com uma nova cor, você deve `AdviseBroadcastMessages` (fora do shell do Visual Studio) e escutar `WM_SYSCOLORCHANGE` e `WM_THEMECHANGED` mensagens.
 
-
 Para acessar o serviço de cor em código nativo, você fará uma chamada que é semelhante a esta:
 
 ```
@@ -125,7 +124,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 
 ##### <a name="from-managed-code"></a>No código gerenciado
 
-Acessando o serviço VSColor por meio de código nativo é bastante simples. Se você estiver trabalhando por meio de código gerenciado, no entanto, determinar como usar o serviço pode ser complicado. Com isso em mente, aqui está um trecho de código C# que demonstra esse processo:
+Acessando o serviço VSColor por meio de código nativo é bastante simples. Se você estiver trabalhando por meio de código gerenciado, no entanto, determinar como usar o serviço pode ser complicado. Com isso em mente, aqui está um trecho de código c# que demonstra esse processo:
 
 ```csharp
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)

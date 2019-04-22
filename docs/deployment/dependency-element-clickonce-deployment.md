@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600714"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648228"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependência&gt; elemento (implantação do ClickOnce)
 Identifica a versão do aplicativo para instalar e o local do manifesto do aplicativo.
@@ -78,7 +78,6 @@ Identifica a versão do aplicativo para instalar e o local do manifesto do aplic
 ## <a name="dependentassembly"></a>dependentAssembly
  Necessário. Esse elemento contém o `assemblyIdentity` elemento. A tabela a seguir mostra os atributos de `dependentAssembly` dá suporte.
 
-
 | Atributo | Descrição |
 |------------------| - |
 | `preRequisite` | Opcional. Especifica que esse assembly já deve existir no GAC. Os valores válidos são `true` e `false`. Se `true`e o assembly especificado não existe no GAC, o aplicativo falhar ser executado. |
@@ -110,14 +109,12 @@ Identifica a versão do aplicativo para instalar e o local do manifesto do aplic
 ## <a name="dsigtransform"></a>dsig:Transform
  O `dsig:Transform` elemento é um filho necessário do `dsig:Transforms` elemento. A tabela a seguir mostra os atributos do `dsig:Transform` elemento.
 
-
 | Atributo | Descrição |
 |-------------| - |
 | `Algorithm` | O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] é `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  O `dsig:DigestMethod` elemento é um filho necessário do `hash` elemento. A tabela a seguir mostra os atributos do `dsig:DigestMethod` elemento.
-
 
 | Atributo | Descrição |
 |-------------| - |

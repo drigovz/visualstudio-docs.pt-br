@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195119"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649102"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Passo a passo: Criar um processador de diretriz personalizado
 
@@ -42,7 +42,7 @@ A chamada para a diretiva personalizada é semelhante a esta:
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-O processador de diretriz personalizado adiciona a variável e a propriedade à classe de transformação gerada. A diretiva que você escreve usa as classes <xref:System.CodeDom> para criar o código que o mecanismo adiciona à classe de transformação gerada. O <xref:System.CodeDom> classes criar código em Visual C# ou Visual Basic, dependendo do idioma especificado na `language` parâmetro do `template` diretiva. A linguagem do processador de diretriz e a linguagem do modelo de texto que está acessando o processador de diretriz não precisam coincidir.
+O processador de diretriz personalizado adiciona a variável e a propriedade à classe de transformação gerada. A diretiva que você escreve usa as classes <xref:System.CodeDom> para criar o código que o mecanismo adiciona à classe de transformação gerada. O <xref:System.CodeDom> classes criar código em Visual c# ou Visual Basic, dependendo do idioma especificado na `language` parâmetro do `template` diretiva. A linguagem do processador de diretriz e a linguagem do modelo de texto que está acessando o processador de diretriz não precisam coincidir.
 
 O código que a diretiva cria é semelhante a este:
 
@@ -654,7 +654,6 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
 
      A chave do Registro deverá ter os seguintes valores:
 
-
    | Nome | Tipo | Dados |
    |-|-|-|
    | (Padrão) | REG_SZ | (valor não definido) |
@@ -663,13 +662,11 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
 
      Se você colocou o assembly no GAC, os valores deverão se parecer com o seguinte:
 
-
    | Nome | Tipo | Dados |
    |-|-|-|
    | (Padrão) | REG_SZ | (valor não definido) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Reinicie o Visual Studio.
 

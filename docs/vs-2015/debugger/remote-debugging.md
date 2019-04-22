@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000086"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649440"
 ---
 # <a name="remote-debugging"></a>Depuração remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,6 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
 > [!TIP] 
 > Para instalação de linha de comando e referência de linha de comando, consulte a página de Ajuda **msvsmon.exe** digitando ``msvsmon.exe /?`` na linha de comando no computador com o Visual Studio instalado (ou acesse **ajuda / uso**no depurador remoto).
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  O computador remoto deve estar executando um dos seguintes sistemas operacionais:  
   
@@ -226,7 +225,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
   
     Se você tiver arquivos sem código que precisam ser usados pelo aplicativo, você precisará incluí-los no projeto do Visual Studio. Crie uma pasta de projeto para os arquivos adicionais (na **Gerenciador de soluções**, clique em **adicionar / nova pasta**.) Em seguida, adicione os arquivos na pasta (na **Gerenciador de soluções**, clique em **adicionar / existente Item**, em seguida, selecione os arquivos.). Sobre o **propriedades** para cada arquivo, defina **Copy to Output Directory** para **copiar sempre**.  
   
-## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Depuração remota de um projeto Visual C# ou Visual Basic  
+## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Depuração remota de um projeto Visual c# ou Visual Basic  
  O depurador não é possível implantar aplicativos de desktop em Visual C# ou Visual Basic para um computador remoto, mas você ainda pode depurá-los remotamente da seguinte maneira. O procedimento a seguir pressupõe que você deseja para depurá-lo em um computador denominado **MJO DL**, conforme mostrado na ilustração anterior.
   
 1. Crie um projeto WPF chamado **MyWpf**.  

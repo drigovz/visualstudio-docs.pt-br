@@ -15,30 +15,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 485f503d237cbc98918357eee79a3309fe8d33a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609054"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647995"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto de implantação do ClickOnce
 Um manifesto de implantação é um arquivo XML que descreve uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, incluindo a identificação do atual [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] versão do aplicativo para implantar.
 
  Manifestos de implantação têm os seguintes elementos e atributos.
 
-
 | Elemento | Descrição | Atributos |
 | - | - | - |
 | [Elemento \<assembly>](../deployment/assembly-element-clickonce-deployment.md) | Necessário. Elemento de nível superior. | `manifestVersion` |
 | [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-deployment.md) | Necessário. Identifica o manifesto do aplicativo para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<Descrição > elemento](../deployment/description-element-clickonce-deployment.md) | Necessário. Identifica as informações do aplicativo usadas para criar uma presença de shell e o **adicionar ou remover programas** item no painel de controle. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
-| [\<implantação > elemento](../deployment/deployment-element-clickonce-deployment.md) | Opcional. Identifica os atributos usados para a implantação de atualizações e exposição ao sistema. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
-| [\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Necessário. Identifica as versões do .NET Framework em que este aplicativo pode instalar e executar. | `SupportUrl` |
-| [\<dependência > elemento](../deployment/dependency-element-clickonce-deployment.md) | Necessário. Identifica a versão do aplicativo para instalar a implantação e o local do manifesto do aplicativo. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [Elemento \<description>](../deployment/description-element-clickonce-deployment.md) | Necessário. Identifica as informações do aplicativo usadas para criar uma presença de shell e o **adicionar ou remover programas** item no painel de controle. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [Elemento \<deployment>](../deployment/deployment-element-clickonce-deployment.md) | Opcional. Identifica os atributos usados para a implantação de atualizações e exposição ao sistema. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
+| [Elemento \<compatibleFrameworks>](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Necessário. Identifica as versões do .NET Framework em que este aplicativo pode instalar e executar. | `SupportUrl` |
+| [Elemento \<dependency>](../deployment/dependency-element-clickonce-deployment.md) | Necessário. Identifica a versão do aplicativo para instalar a implantação e o local do manifesto do aplicativo. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
 | [Elemento \<publisherIdentity>](../deployment/publisheridentity-element-clickonce-deployment.md) | Necessário para manifestos assinados. Contém informações sobre o editor que assinou o manifesto de implantação. | `Name`<br /><br /> `issuerKeyHash` |
-| [\<Assinatura > elemento](../deployment/signature-element-clickonce-deployment.md) | Opcional. Contém as informações necessárias para assinar digitalmente o manifesto de implantação. | Nenhum |
-| [\<customErrorReporting > elemento](../deployment/customerrorreporting-element-clickonce-deployment.md) | Opcional. Especifica um URI para mostrar quando ocorre um erro. | URI |
+| [Elemento \<Signature>](../deployment/signature-element-clickonce-deployment.md) | Opcional. Contém as informações necessárias para assinar digitalmente o manifesto de implantação. | Nenhum |
+| [Elemento \<customErrorReporting>](../deployment/customerrorreporting-element-clickonce-deployment.md) | Opcional. Especifica um URI para mostrar quando ocorre um erro. | URI |
 
 ## <a name="remarks"></a>Comentários
  Identifica o arquivo de manifesto de implantação uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação de aplicativo, incluindo a versão atual e outras configurações de implantação. Ele referencia o manifesto do aplicativo, que descreve a versão atual do aplicativo e todos os arquivos contidos dentro da implantação.
