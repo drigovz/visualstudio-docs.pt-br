@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7274f0daaf809116dc502a528fce1b540c2c53b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620729"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657032"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplicação de configurações entre várias conexões de projeto
 Um plug-in de controle do código-fonte criado usando o código-fonte controle plug-in API versão 1.2, pode usar uma operação em lote para executar a mesma operação de controle do código-fonte entre vários projetos ou vários contextos de conexão. Lotes podem ser usados para eliminar redundantes, caixas de diálogo a experiência do usuário por projeto.
@@ -31,7 +31,6 @@ Novas funções a seguir dão suporte a operação em lote:
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)
-
 
 O `SCCBeginBatch` função inicia um grupo de operações de controle do código-fonte. O `SccEndBatch` função fecha o grupo. Os grupos não podem ser aninhados.
 

@@ -16,17 +16,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772580"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660522"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referência do esquema de arquivos de projeto do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Fornece uma tabela de todos os elementos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] do esquema XML com elementos filho e atributos disponíveis.  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] usa arquivos de projeto para instruir o mecanismo de build sobre o que e como compilar. Os arquivos de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] são arquivos XML que seguem o esquema XML [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Esta seção documenta o arquivo de definição do esquema XML (.xsd) para [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  

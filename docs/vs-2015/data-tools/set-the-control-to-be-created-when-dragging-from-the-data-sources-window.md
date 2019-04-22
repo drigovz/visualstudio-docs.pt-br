@@ -19,17 +19,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14803b84e8695839b05726b3cadd3f2150079946
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: dffe803bc0b082f4f14c9010e165bd6b169674fe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927235"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657448"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Definir o controle a ser criado quando arrastado da janela Fontes de Dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode criar controles associados a dados arrastando itens dos **fontes de dados** janela para o WPF designer ou o designer de formulários do Windows. Cada item na **fontes de dados** janela tem um controle padrão que é criado quando você arrastá-lo para o designer. No entanto, você pode optar por criar um controle diferente.  
   
 ## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Defina os controles a serem criados para tabelas de dados ou objetos  

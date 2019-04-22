@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856684"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654705"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Depurar Serviços de Kubernetes do Azure dinâmicos usando o Depurador de Instantâneos
 
@@ -35,9 +35,9 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* O Depurador de Instantâneos para Serviços de Kubernetes do Azure só está disponível para versão prévia do Visual Studio 2019 Enterprise ou posterior, com a **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
+* Depurador de instantâneo para serviços de Kubernetes do Azure só está disponível para o Visual Studio 2019 Enterprise ou superior com o **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
 
-    Se ainda não estiver instalado, instale a [versão prévia do Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/vs/preview/).
+    Se ainda não estiver instalado, instale [Visual Studio Enterprise de 2019](https://visualstudio.microsoft.com/vs/).
 
 * A coleção de instantâneos está disponível para os seguintes aplicativos Web dos Serviços de Kubernetes do Azure:
   * Aplicativos ASP.NET Core em execução no .NET Core 2.2 ou posterior no Debian 9.
@@ -109,7 +109,7 @@ Se você tiver dificuldades para recriar um estado específico em seu aplicativo
 
 #### <a name="to-create-a-conditional-snappoint"></a>Para criar um snappoint condicional
 
-1. Clique com o botão direito em um ícone de snappoint (a bola vazada) e escolha **Configurações**.
+1. Clique com o botão direito do mouse em um ícone de snappoint (a bola vazada) e escolha **Configurações**.
 
    ![Escolha Configurações](../debugger/media/snapshot-snappoint-settings.png)
 
@@ -144,4 +144,4 @@ Além de tirar um instantâneo quando um snappoint é atingido, também é poss�
 Neste tutorial, você aprendeu como usar o Depurador de Instantâneos para os Kubernetes do Azure. Talvez você queira ler mais detalhes sobre esse recurso.
 
 > [!div class="nextstepaction"]
-> [Perguntas frequentes sobre depuração de instantâneo](../debugger/debug-live-azure-apps-faq.md)
+> [Perguntas frequentes sobre depuração de instantâneos](../debugger/debug-live-azure-apps-faq.md)

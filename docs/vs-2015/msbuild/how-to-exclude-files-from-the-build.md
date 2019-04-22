@@ -1,5 +1,5 @@
 ---
-title: Como excluir arquivos do build | Microsoft Docs
+title: 'Como: Excluir arquivos do build | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb390e98b8650764dfc9f4237f150a5b903f1618
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796718"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656448"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Como excluir arquivos do build
+# <a name="how-to-exclude-files-from-the-build"></a>Como: Excluir arquivos do build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios como entradas para um build. No entanto, pode haver um arquivo no diretório ou um diretório em um conjunto aninhado de diretórios que você não deseja incluir como entrada para um build. Você pode excluir explicitamente esse arquivo ou diretório da lista de entradas. Também pode haver um arquivo em um projeto que você deseja incluir somente em determinadas condições. Você pode declarar explicitamente as condições sob as quais um arquivo é incluído em um build.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Excluir um arquivo ou diretório das entradas para um build  
@@ -128,4 +127,4 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
   
 ## <a name="see-also"></a>Consulte também  
  [Itens](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [como: Selecione os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)

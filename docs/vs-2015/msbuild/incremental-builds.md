@@ -11,17 +11,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a436135d4acb27e9f875d6a0bd348e37b91c06a6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758436"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654029"
 ---
 # <a name="incremental-builds"></a>Builds incrementais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Os builds incrementais são builds que são otimizados para que os destinos que têm arquivos de saída que estão atualizados em relação aos seus arquivos de entrada correspondentes não sejam executados. Um elemento de destino pode ter um atributo de `Inputs`, que indica quais itens o destino espera como entrada e um atributo de `Outputs`, que indica quais itens ele gera como saída. O MSBuild tenta localizar um mapeamento de 1 para 1 entre os valores desses atributos. Se existir um mapeamento de 1 para 1, o MSBuild comparará o carimbo de hora de cada item de entrada com o carimbo de hora do seu item de saída correspondente. Arquivos de saída que não tenham nenhum mapeamento de 1 para 1 são comparados com todos os arquivos de entrada. Um item será considerado atualizado se seu arquivo de saída tiver a mesma idade ou for mais recente que seu arquivo ou arquivos de entrada.  
   
  Se todos os itens de saída estiverem atualizados, o MSBuild ignorará o destino. Esse *build incremental* do destino pode melhorar significativamente a velocidade de build. Se apenas alguns arquivos estiverem atualizados, o MSBuild executará o destino, mas ignora os itens atualizados e, portanto, traz todos os itens atualizados. Isso é conhecido como um *build parcial incremental*.  

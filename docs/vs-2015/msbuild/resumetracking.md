@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2328b318c00b214138cf70e505c1988f8f1afc6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 75c1a94e9db6e1a141668f6ba314c39cedc3fd6c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802196"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655901"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Retoma o acompanhamento no contexto atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,7 +36,7 @@ HRESULT WINAPI ResumeTracking();
 ```  
   
 ## <a name="return-value"></a>Valor de retorno  
- Um [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) com o conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) se o acompanhamento foi retomado. [E_FAIL](<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->) é retornado se o acompanhamento não pode ser retomado devido ao contexto não estar disponível.  
+ Um ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) com o ([SUCCEEDED]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) conjunto de bits, se o acompanhamento tiver sido retomado. [E_FAIL](<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->) será retornado se o controle não pode ser retomado porque o contexto não estava disponível.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** FileTracker.h  

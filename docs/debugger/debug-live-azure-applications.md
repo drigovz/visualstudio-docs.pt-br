@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857470"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656434"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos do Azure ASP.NET dinâmicos usando o Depurador de Instantâneos
 
@@ -34,9 +34,14 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* O Depurador de Instantâneos só está disponível para a versão 15.5 ou posterior do Visual Studio 2017 Enterprise, com a **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
+* Depurador de instantâneos só está disponível a partir do Visual Studio 2017 Enterprise versão 15.5 ou posterior com o **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
 
-    Se ainda não estiver instalado, instale a [versão 15.5 do Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ou posterior. Se você estiver atualizando de uma instalação anterior do Visual Studio 2017, execute o Instalador do Visual Studio e verifique o componente do Depurador de Instantâneos na **carga de trabalho de desenvolvimento na Web e do ASP.NET**.
+    ::: moniker range=">=vs-2019"
+    Se ainda não estiver instalado, instale [Visual Studio de 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Se você estiver atualizando de uma instalação anterior do Visual Studio, execute o instalador do Visual Studio e verifique o componente do depurador de instantâneos **carga de trabalho de desenvolvimento ASP.NET e web**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se ainda não estiver instalado, instale a [versão 15.5 do Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ou posterior. Se você estiver atualizando de uma instalação anterior do Visual Studio 2017, execute o Instalador do Visual Studio e verifique o componente do Depurador de Instantâneos na **carga de trabalho de desenvolvimento na Web e do ASP.NET**.
+    ::: moniker-end
 
 * Plano de Serviço de Aplicativo do Azure básico ou avançado.
 
@@ -73,7 +78,7 @@ Neste tutorial, você irá:
   > A extensão de site do Application Insights também dá suporte à depuração de instantâneos. Se você encontrar uma mensagem de erro "extensão de site desatualizada", veja [dicas de solução de problemas e problemas conhecidos da depuração de instantâneos](../debugger/debug-live-azure-apps-troubleshooting.md) para atualizar os detalhes.
 
    O Visual Studio agora está no modo de depuração de instantâneos.
-   ![Modo de depuração de instantâneos](../debugger/media/snapshot-message.png)
+   ![Modo de depuração de instantâneo](../debugger/media/snapshot-message.png)
 
    A janela **Módulos** mostra quando todos os módulos de foram carregados para o Serviço de Aplicativo do Azure (escolha **Depurar > Windows > Módulos** para abrir essa janela).
 
@@ -155,4 +160,4 @@ Além de tirar um instantâneo quando um snappoint é atingido, também é poss�
 Neste tutorial, você aprendeu como usar o Depurador de Instantâneos para Serviços de Aplicativos. Talvez você queira ler mais detalhes sobre esse recurso.
 
 > [!div class="nextstepaction"]
-> [Perguntas frequentes sobre depuração de instantâneo](../debugger/debug-live-azure-apps-faq.md)
+> [Perguntas frequentes sobre depuração de instantâneos](../debugger/debug-live-azure-apps-faq.md)

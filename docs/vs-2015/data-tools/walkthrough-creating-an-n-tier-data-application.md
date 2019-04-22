@@ -17,17 +17,16 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3185a6b7ebe4f5f37428e04f1b4215431921c51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d48cea795cbbe3b7cc749c5866bfd5e720ac768a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924463"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654679"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Passo a passo: Criando um aplicativo de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-camadas * aplicativos de dados são aplicativos que acessam dados e são separados em várias camadas de lógicas, ou *camadas*. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral dos aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).  
   
  Uma maneira de separar as várias camadas em um aplicativo de N camadas é criar projetos discretos para cada camada que você deseja incluir em seu aplicativo. Os conjuntos de dados digitados contêm uma propriedade `DataSet Project` que determina quais projetos o conjunto de dados gerado e o código `TableAdapter` devem acessar.  
@@ -72,7 +71,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
 1.  Dos **arquivo** menu, crie um novo projeto.  
   
     > [!NOTE]
-    >  O **Dataset Designer** tem suporte no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e projetos C#. Crie o novo projeto em uma dessas linguagens.  
+    >  O **Dataset Designer** tem suporte no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e projetos c#. Crie o novo projeto em uma dessas linguagens.  
   
 2.  No **novo projeto** na caixa de **tipos de projeto** painel, clique em **Windows**.  
   

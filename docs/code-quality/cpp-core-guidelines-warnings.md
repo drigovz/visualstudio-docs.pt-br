@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323445"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661380"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 
@@ -96,7 +96,6 @@ Conforme novas regras são adicionadas ao verificador de diretrizes de núcleo d
 
   - **Regras de tipo** impor a [tipo de perfil de diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
-
 Você pode optar por limitar os avisos para apenas um ou alguns dos grupos. O **mínimo nativo** e **recomendado nativo** regra conjuntos incluem regras de verificação principal do C++, além de outras verificações PREfast. Para ver o disponíveis conjuntos de regra, abra a caixa de diálogo Propriedades do projeto, selecione **código Analysis\General**, abra a lista suspensa na **conjuntos de regras** caixa de combinação e selecionar com **escolher vários conjuntos de regras** . Para obter mais informações sobre como usar conjuntos de regra no Visual Studio, consulte [usando os conjuntos de regras para agrupar regras de análise de código](using-rule-sets-to-group-code-analysis-rules.md).
 
 ## <a name="macros"></a>Macros
@@ -151,7 +150,7 @@ Em vez de #pragmas, você pode usar opções de linha de comando na página de p
 
 1. Clique no arquivo em **Gerenciador de soluções**
 
-2. Escolha **propriedades | C / C + + | Linha de comando**
+2. Escolha **propriedades | C /C++| Linha de comando**
 
 3. No **opções adicionais** janela, adicione `/wd26400`.
 
@@ -166,8 +165,8 @@ Você pode usar a opção de linha de comando para desabilitar temporariamente t
 3. Carregue seu projeto e abra suas propriedades.
 4. Habilitar análise de código, selecione os conjuntos de regra apropriado, mas não habilitar extensões de análise de código.
 5. Vá até o arquivo que você deseja analisar com o verificador de diretrizes de núcleo do C++ e abrir suas propriedades.
-6. Escolher **C / C + + \Command opções de linha de** e adicionar `/analyze:plugin EspXEngine.dll`
-7. Desabilitar o uso de cabeçalho pré-compilado (**C / C + + \Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado e se a última opção tiver sido compilado com as opções de projeto padrão, ele não será compatível.
+6. Escolher **C /C++opções de linha de \Command** e adicione `/analyze:plugin EspXEngine.dll`
+7. Desabilitar o uso de cabeçalho pré-compilado (**C /C++\Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado e se a última opção tiver sido compilado com as opções de projeto padrão, ele não será compatível.
 8. Recompile o projeto. As verificações de PREFast comuns devem ser executado em todos os arquivos. Porque o verificador de diretrizes do C++ Core não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Como usar o verificador de diretrizes do C++ Core fora do Visual Studio

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4596015acd94d7d4f1d4d5552cfe6d83ab8727c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714277"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658026"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
 O documento de Log de gráficos é o registro de eventos de gráficos que ocorreu enquanto o aplicativo foi executado em uma sessão de diagnóstico de gráficos. Após ser gravado, você pode examinar o log no analisador de gráficos do Visual Studio para diagnosticar problemas de desempenho e renderização.
@@ -42,7 +42,7 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 ## <a name="playback-machine"></a>Máquina de reprodução
  No canto superior direito da **Lista de Quadros** fica a **Máquina de Reprodução**. O computador de reprodução é um computador ou dispositivo usado para reproduzir eventos de gráficos de um arquivo de log de gráficos em uma sessão de diagnóstico posterior. Ao usar outro dispositivo para reproduzir eventos capturados no lugar de seu computador de desenvolvimento, você pode reproduzir com mais precisão o ambiente de execução no qual o problema ocorreu. Por exemplo, você pode usar um computador com drivers ou hardwares gráficos que seu computador de desenvolvimento não usa ou outros tipos de dispositivos, como um tablet Windows RT baseado em ARM ou um dispositivo com Windows Phone.
 
- Para obter informações sobre como especificar um computador de reprodução, consulte [como: alterar o computador de reprodução de diagnóstico de gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Para obter informações sobre como especificar um computador de reprodução, consulte [como: Alterar o computador de reprodução de Diagnóstico de Gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="graphics-log-summary-information"></a>Informações de resumo do log de elementos gráficos
  Quando o arquivo de log de elementos gráficos está ativo, a janela **Propriedades** exibe informações sobre o ambiente que hospedou a sessão de captura do Diagnóstico de Gráficos. Essa janela exibe informações de diversas categorias.
@@ -73,7 +73,7 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 
 |Propriedade|Descrição|
 |--------------|-----------------|
-|**Path**|O caminho do arquivo .vsglog. **Observação:** em capturas herdadas, essa propriedade não é usada.|
+|**Path**|O caminho do arquivo .vsglog. **Observação:**  Essa propriedade não é usada em capturas herdadas.|
 
  **Informações de módulo** lista o nome e versão das bibliotecas de vínculo dinâmico (DLLs) que foram carregados pelo aplicativo durante a sessão de captura.
 
@@ -98,7 +98,6 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 
  **Arquivo de Log VSG** lista informações sobre o documento de log de gráficos.
 
-
 | Propriedade | Descrição |
 |------------------------| - |
 | **Criado por** | O nome do aplicativo que criou o documento de log de gráficos. Por exemplo, se a sessão de captura foi iniciada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (captura manual), o valor dessa propriedade será [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
@@ -106,5 +105,5 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 | **Size** | O tamanho do documento de log de gráficos. |
 
 ## <a name="see-also"></a>Consulte também
-- [Passo a passo: objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Passo a passo: depurando erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Passo a passo: Como depurar erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)

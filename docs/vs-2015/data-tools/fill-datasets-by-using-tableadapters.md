@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928014"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656772"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Um componente do TableAdapter preenche um dataset com os dados do banco de dados, com base em uma ou mais consultas ou procedimentos armazenados que você especificar. Também pode executar a TableAdapters adiciona, atualiza e exclui o banco de dados para manter as alterações feitas ao conjunto de dados. Você também pode emitir comandos globais que não estão relacionados a qualquer tabela específica.  
   
 > [!NOTE]
@@ -107,7 +106,7 @@ Um componente do TableAdapter preenche um dataset com os dados do banco de dados
  Se você não quiser criar esses métodos diretos, defina o TableAdapter **GenerateDbDirectMethods** propriedade `false` (no **propriedades** janela). Consultas adicionais que são adicionadas ao TableAdapter são consultas autônomas — elas não geram esses métodos.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>Suporte do TableAdapter para tipos anuláveis  
- TableAdapters oferecem suporte a tipos anuláveis `Nullable(Of T)` e `T?`. Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Para obter mais informações sobre tipos anuláveis no C#, consulte [usando tipos anuláveis](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
+ TableAdapters oferecem suporte a tipos anuláveis `Nullable(Of T)` e `T?`. Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Para obter mais informações sobre tipos anuláveis no c#, consulte [usando tipos anuláveis](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Segurança  
  Quando você usa comandos de dados com um `CommandType` propriedade definida como <xref:System.Data.CommandType>, cuidadosamente verifique informações que são enviadas de um cliente antes de passá-la para seu banco de dados. Usuários maliciosos podem tentar enviar (injetar) instruções SQL modificadas ou adicionais para obter acesso não autorizado ou para danificar o banco de dados. Antes de você transferir a entrada do usuário para um banco de dados, sempre verifique se que as informações são válidas. Uma prática recomendada é sempre usar consultas parametrizadas ou procedimentos armazenados quando possível.  

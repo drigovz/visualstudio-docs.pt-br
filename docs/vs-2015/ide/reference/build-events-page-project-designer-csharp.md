@@ -16,18 +16,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e55d9d34a4837e2c01d78cc1f52ae2a25f28da8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d04c750bbe8183ae8e39765e41af2f138704ba3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785778"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654055"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
-Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, consulte [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
+Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, confira [Como: Especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Como: Especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  **Configuração**  
@@ -58,7 +57,7 @@ Use a página **Eventos de Build** do **Designer de Projeto** para especificar a
 |**Quando o build atualizar a saída do projeto**|O evento de pós-build só será executado quando o arquivo de saída do compilador (.exe ou .dll) for diferente do arquivo de saída anterior do compilador. Portanto, um evento de pós-build não será executado se um projeto for atualizado.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)   
+ [Como: Especificar eventos de Build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Como: Especificar eventos de Build (c#)](../../ide/how-to-specify-build-events-csharp.md)   
  [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)   
  [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)

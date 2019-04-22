@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944527"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657383"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionar uma propriedade de controle a uma definição de Linguagem Específica de Domínio
 
@@ -45,7 +45,6 @@ Este passo a passo, você criará uma linguagem específica de domínio (DSL) qu
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Antes de começar este passo a passo, você deve primeiro instalar esses componentes:
-
 
 | | |
 |-|-|
@@ -760,4 +759,4 @@ Se você planeja usar o acompanhamento mais de uma propriedade, ou implementar p
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Como: Criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Como: Criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md)

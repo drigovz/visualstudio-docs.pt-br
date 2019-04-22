@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415690"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657461"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código na hora de design usando modelos de texto T4
 Modelos de texto T4 em tempo de design permitem que você gerar o código do programa e outros arquivos no projeto do Visual Studio. Normalmente, você escreve os modelos para que eles variem o código que geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre os requisitos do aplicativo.
@@ -341,12 +341,10 @@ Warning("A warning message");
 
 4. Verifique se as seguintes propriedades do **. TT** arquivo:
 
-
    | | |
    |-|-|
    | **Ferramenta personalizada =** | **TextTemplatingFileGenerator** |
    | **Ação de build =** | **Nenhum** |
-
 
 5. Insira as seguintes linhas no início do arquivo:
 

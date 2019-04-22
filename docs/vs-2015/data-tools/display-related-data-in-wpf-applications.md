@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923340"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657253"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Exibir dados relacionados em aplicativos WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Em alguns aplicativos, você talvez queira trabalhar com dados que vêm de várias tabelas ou entidades que estão relacionadas entre si em uma relação pai-filho. Por exemplo, você talvez queira exibir uma grade que exibe os clientes de um `Customers` tabela. Quando o usuário seleciona um cliente específico, outra grade exibe os pedidos desse cliente de um relacionados `Orders` tabela.  
   
  Você pode criar controles associados a dados que exibem dados relacionados, arrastando itens dos **fontes de dados** janela para o WPF Designer.  

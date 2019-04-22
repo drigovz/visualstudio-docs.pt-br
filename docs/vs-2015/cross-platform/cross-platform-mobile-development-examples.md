@@ -11,17 +11,16 @@ caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783756"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657435"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Exemplos de desenvolvimento móvel multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vários dos modelos instalados pelo Visual C++ para Desenvolvimento Móvel Multiplataforma geram exemplos completos que podem ser usados para aprendizado. Além disso, o Centro de Desenvolvimento do Windows contém vários aplicativos de exemplo que você pode baixar e experimentar no Visual Studio.  
   
 - [Amostra de aplicativo hello-jni do Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  

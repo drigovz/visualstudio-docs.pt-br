@@ -14,17 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2f570252a5bf87d0949bcda04ba312fe8092704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773032"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657500"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para compilar um aplicativo. Normalmente, um conjunto de ferramentas do MSBuild inclui um arquivo microsoft.common.tasks, um arquivo microsoft.common.targets e compiladores como o csc.exe e o vbc.exe. A maioria dos conjuntos de ferramentas pode ser usada para compilar aplicativos para mais de uma versão do .NET Framework e mais de uma plataforma de sistema. No entanto, o conjunto de ferramentas do MSBuild 2.0 pode ser usado para visar apenas o NET Framework 2.0.  
   
 ## <a name="toolsversion-attribute"></a>Atributo ToolsVersion  
@@ -72,7 +71,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
   
 - Usando os métodos <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
-  As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. O MSBuild usa o valor do atributo `ToolsVersion` no arquivo do projeto para localizar a chave do registro correspondente e usa as informações na chave do registro para definir as propriedades do conjunto de ferramentas. Por exemplo, se `ToolsVersion` tiver um valor `12.0`, o MSBuild configurará as propriedades do conjunto de ferramentas de acordo com esta chave do Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. O MSBuild usa o valor do atributo `ToolsVersion` no arquivo do projeto para localizar a chave do registro correspondente e usa as informações na chave do registro para definir as propriedades do conjunto de ferramentas. Por exemplo, se `ToolsVersion` tem o valor `12.0`, o MSBuild define as propriedades do Conjunto de ferramentas de acordo com esta chave do Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   Estas são as propriedades do conjunto de ferramentas:  
   

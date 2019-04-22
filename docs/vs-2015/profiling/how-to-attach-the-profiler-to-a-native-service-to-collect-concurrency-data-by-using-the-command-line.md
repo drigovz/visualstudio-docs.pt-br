@@ -1,5 +1,5 @@
 ---
-title: Como anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade usando a linha de comando | Microsoft Docs
+title: 'Como: Anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade usando a linha de comando | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a33f43f7c12f45cfbe469b618385c64158547d71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780851"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654341"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Como: Anexar o Profiler para um serviço nativo para coletar dados de simultaneidade usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para anexar o criador de perfil a um serviço nativo (C/C++) e coletar dados de simultaneidade de thread e processo usando o método de amostragem.  
@@ -54,7 +54,6 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Especifica um contador de desempenho do Windows que deve ser coletado durante a criação de perfil.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O valor padrão é 500. |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Eventos de ETW são coletados em um arquivo separado (.etl).       |
-
 
 3. Anexe o criador de perfil ao serviço digitando o seguinte comando em um prompt de comando:  
 

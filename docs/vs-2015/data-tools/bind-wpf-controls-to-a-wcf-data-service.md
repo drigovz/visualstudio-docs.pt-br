@@ -18,17 +18,16 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86c4358179b86031652cf933823c00a68526e9c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 33928df6dd1151dc79dd07c966985666d2e7fd19
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925283"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655784"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Neste passo a passo, você criará um aplicativo WPF que contém controles de associação de dados. Os controles estão associados a registros de clientes que são encapsulados em um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]. Você também adicionará botões que os clientes podem usar para exibir e atualizar registros.  
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  

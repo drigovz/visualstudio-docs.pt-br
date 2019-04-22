@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: b255f521d45d1e827a3bfb9bc9bc5129f090bcaa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935583"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655706"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Passo a passo: Conectar-se um Host para um processador de diretriz gerado
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Passo a passo: Conectar um host a um processador de diretriz gerado
 
 Você pode escrever seu próprio host que processa os modelos de texto. Um host personalizado básico é demonstrado em [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Você pode estender esse host para adicionar funções, como a geração de vários arquivos de saída.
 
@@ -40,7 +40,6 @@ Esta explicação passo a passo inclui as seguintes tarefas:
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para definir uma DSL, é necessário ter instalados os seguintes componentes:
-
 
 | | |
 |-|-|
@@ -363,4 +362,4 @@ Para testar o host de modelo de texto personalizado, primeiro você deve escreve
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [Passo a passo: Criar um host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)

@@ -1,5 +1,5 @@
 ---
-title: Como selecionar os arquivos para compilar | Microsoft Docs
+title: 'Como: Selecionar os arquivos para compilar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798898"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659807"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
+# <a name="how-to-select-the-files-to-build"></a>Como: Selecionar os arquivos a serem compilados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando você compila um projeto que contém vários arquivos, é possível listar cada arquivo separadamente no arquivo de projeto ou usar caracteres curinga para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios.  
   
 ## <a name="specifying-inputs"></a>Especificando as entradas  
@@ -90,7 +89,7 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
 ## <a name="passing-items-to-a-task"></a>Passando itens para uma tarefa  
  Em um arquivo de projeto, você pode usar a notação @() em tarefas para especificar uma lista completa de itens como a entrada para um build. Você pode usar essa notação se listar todos os arquivos separadamente ou usar caracteres curinga.  
   
-#### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos os arquivos do Visual C# ou Visual Basic como entradas  
+#### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos os arquivos do Visual c# ou Visual Basic como entradas  
   
 -   Use os atributos `Include` semelhantes ao seguinte:  
   
@@ -174,5 +173,5 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Itens](../msbuild/msbuild-items.md)

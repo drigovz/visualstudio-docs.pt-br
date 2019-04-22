@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597791"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654081"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar os serviços de informações da Internet (IIS) no Windows Server, e sua implantação contém um tipo de arquivo que o Windows não reconhecem, como um arquivo do Microsoft Word, o IIS se recusará a transmitir esse arquivo e sua implantação não terá êxito.
@@ -94,7 +94,6 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocolo FTP não tem suportado para a instalação de aplicativos
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dá suporte à instalação de aplicativos de qualquer servidor da Web HTTP 1.1 ou o servidor de arquivos. Não há suporte para FTP, o protocolo de transferência de arquivo, para instalar aplicativos. Você pode usar o FTP para publicar aplicativos somente. A tabela a seguir resume essas diferenças:
 
-
 | Tipo de URL | Descrição |
 |----------| - |
 | ftp:// | Você pode publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
@@ -102,7 +101,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 | https:// | Você pode instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
 | file:// | Você pode instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall de Windows
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall do Windows
  Por padrão, o Windows XP SP2 habilita o Firewall do Windows. Se você estiver desenvolvendo seu aplicativo em um computador com Windows XP instalado, é ainda possível publicar e executar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos do servidor local que está executando o IIS. No entanto, você não pode acessar o servidor que está executando o IIS de outro computador, a menos que você abrir o Firewall do Windows. Consulte a Ajuda do Windows para obter instruções sobre como gerenciar o Firewall do Windows.
 
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Habilitar extensões FrontPage server extensions
@@ -110,7 +109,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 
  Por padrão, o Windows Server não tem instalado extensões FrontPage Server Extensions. Se você quiser usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para publicar em um servidor Web do Windows Server que usa HTTP com o FrontPage Server Extensions, você deve instalar extensões FrontPage Server Extensions primeiro. Você pode executar a instalação usando a ferramenta de administração de gerenciar o servidor no Windows Server.
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipos de conteúdo de bloqueada
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipos de conteúdo bloqueado
  IIS no [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] bloqueará todos os tipos de arquivo, exceto para determinados tipos de conteúdo conhecidos (por exemplo, *. htm*, *. HTML*, *. txt*e assim por diante). Para habilitar a implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que usam esse servidor, você precisa alterar as configurações do IIS para permitir o download de arquivos do tipo *. Application*, *. manifest*e outros tipos de arquivo personalizado usado pelo seu aplicativo.
 
  Se você implantar usando um servidor IIS, execute *inetmgr.exe* e adicionar novos tipos de arquivo da página da Web padrão:

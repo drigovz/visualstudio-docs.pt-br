@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928128"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661315"
 ---
 # <a name="validate-data-in-datasets"></a>Validar dados em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Validação de dados é o processo de confirmar que os valores que estão sendo inseridos em objetos de dados estão em conformidade com as restrições no esquema do conjunto de dados. O processo de validação também confirma que esses valores são seguindo as regras que foram estabelecidas para seu aplicativo. É uma boa prática para validar dados antes de enviar atualizações para o banco de dados subjacente. Isso reduz os erros, bem como o número potencial de processamentos entre um aplicativo e o banco de dados.  
   
  Você pode confirmar que os dados que está sendo gravados em um conjunto de dados são válidos, criando verificações de validação no conjunto de dados em si. O conjunto de dados pode verificar os dados, independentemente de como a atualização está sendo executada — se diretamente pelos controles em um formulário, dentro de um componente, ou de alguma outra forma. Como o conjunto de dados é parte do seu aplicativo (ao contrário de back-end do banco de dados), é um lugar lógico para compilação de validação específica do aplicativo.  
@@ -113,7 +112,7 @@ Validação de dados é o processo de confirmar que os valores que estão sendo 
   
      [!code-vb[VbRaddataValidating#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb#3)]  
   
-#### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar dados quando uma linha for alterada (C#)  
+#### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar dados quando uma linha for alterada (c#)  
   
 1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   

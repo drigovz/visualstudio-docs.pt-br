@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923867"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654497"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalar bancos de dados de exemplo do SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Os bancos de dados são úteis para experimentar consultas SQL e LINQ, vinculação de dados, modelagem de Entity Framework e assim por diante.  Cada produto de banco de dados tem seus próprios bancos de dados de exemplo. Northwind e AdventureWorks são dois populares do SQL Server os bancos de dados.  
   
  **AdventureWorks** é o atual banco de dados de exemplo fornecido para produtos do SQL Server. Você pode baixá-lo como um arquivo. mdf a partir de [página do AdventureWorks no Codeplex](http://msftdbprodsamples.codeplex.com/). Há versões de (LT) regulares e leves do banco de dados disponíveis aqui. Na maioria dos cenários, a versão de longo prazo é preferencial porque é menos complexo.  

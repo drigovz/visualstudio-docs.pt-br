@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922256"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653200"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O ADO.NET fornece métodos simples para trabalhar com dados XML. Neste passo a passo, você deve criar um aplicativo do Windows que carrega dados XML em um conjunto de dados. O conjunto de dados é exibido em um <xref:System.Windows.Forms.DataGridView> controle. Por fim, um esquema XML com base no conteúdo do arquivo XML é exibido em uma caixa de texto.  
   
  Este passo a passo consiste em cinco etapas principais:  
@@ -52,7 +51,7 @@ O ADO.NET fornece métodos simples para trabalhar com dados XML. Neste passo a p
 >  As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar suas configurações, nos **ferramentas** menu, selecione**Import and Export Settings**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Criar um novo projeto  
- Nesta etapa, você cria um projeto do Visual Basic ou Visual C# que contém este passo a passo.  
+ Nesta etapa, você cria um projeto do Visual Basic ou Visual c# que contém este passo a passo.  
   
 #### <a name="to-create-the-new-windows-project"></a>Para criar o novo projeto do Windows  
   
