@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897732"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584396"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: Usar o MSBuild
 
@@ -416,7 +416,7 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
  adiciona todos os arquivos com a extensão de arquivo *.jpeg* na pasta de *imagens* ao tipo de item Photos, enquanto
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  adiciona todos os arquivos com a extensão de arquivo *.jpeg* na pasta de *imagens*, juntamente com todas as subpastas, ao tipo de item Photos. Para ver mais exemplos, confira [Como: Selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).

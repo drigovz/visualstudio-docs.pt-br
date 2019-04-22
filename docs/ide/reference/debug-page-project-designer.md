@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b02ecf1b4b03bfc8b664af898fdbedcb27c80bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949675"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504400"
 ---
 # <a name="debug-page-project-designer"></a>Página de Depuração, Designer de Projeto
 
@@ -53,7 +53,7 @@ Escolha esta opção para especificar que o executável (para projetos de aplica
 
 Escolha esta opção para especificar que um programa específico deve ser iniciado quando o aplicativo for depurado.
 
-**Iniciar Navegador com URL**
+**Iniciar navegador com URL**
 
 Escolha esta opção para especificar que uma URL específica deve ser acessada quando o aplicativo for depurado.
 
@@ -83,8 +83,8 @@ Marque ou desmarque esta caixa de seleção para habilitar ou desabilitar a depu
 
 ## <a name="see-also"></a>Consulte também
 
-- [Depurando no Visual Studio](../../debugger/debugger-feature-tour.md)
-- [Configurações do projeto para configurações de depuração de C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Introdução ao depurador](../../debugger/debugger-feature-tour.md)
+- [Definições do projeto para configurações de depuração do C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Definições do projeto para uma configuração de depuração do Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Como: Depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

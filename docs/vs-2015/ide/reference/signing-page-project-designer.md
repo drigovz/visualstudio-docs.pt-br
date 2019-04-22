@@ -20,17 +20,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788720"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650390"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use a página **Assinatura** do **Designer de Projeto** para assinar os manifestos do aplicativo e de implantação e também para assinar o assembly (assinatura de nome forte).  
   
  Observe que a assinatura dos manifestos do aplicativo e de implantação é um processo diferente da assinatura de um assembly, embora ambas as tarefas sejam realizadas na página **Assinatura**.  
@@ -41,7 +40,7 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
   
 ## <a name="application-and-deployment-manifest-signing"></a>Assinatura de manifesto do aplicativo e de implantação  
  Caixa de seleção **Assinar os manifestos do ClickOnce**  
- Marque essa caixa de seleção para assinar os manifestos do aplicativo e de implantação com um par de chaves pública/privada. Para obter mais informações sobre como fazer isso, consulte [Como assinar manifestos do aplicativo e de implantação](../../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Marque essa caixa de seleção para assinar os manifestos do aplicativo e de implantação com um par de chaves pública/privada. Para obter mais informações sobre como fazer isso, confira [Como: Assinar manifestos de aplicativo e de implantação](../../ide/how-to-sign-application-and-deployment-manifests.md).  
   
  Botão **Selecionar do Repositório**  
  Permite selecionar um certificado existente do repositório de certificados pessoais do usuário atual. É possível selecionar um desses certificados para assinar os manifestos do aplicativo e de implantação.  
@@ -67,9 +66,9 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
   
 ## <a name="assembly-signing"></a>Assinatura de assembly  
  Caixa de seleção **Assinar o assembly**  
- Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, consulte [Como assinar um assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, confira [Como: Assinar um assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Essa opção usa a ferramenta Al.exe fornecida pelo [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para assinar o assembly. Para obter mais informações sobre o Al.exe, consulte [Como assinar um assembly com um nome forte](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Essa opção usa a ferramenta Al.exe fornecida pelo [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para assinar o assembly. Para obter mais informações sobre os detalhes, confira [Como: Assinar um assembly com um nome forte](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  Lista **Escolher um arquivo de chave de nome forte**  
  Permite especificar um arquivo de chave novo ou existente de nome forte que é usado para assinar o assembly. Selecione **\<Procurar...>** para selecionar um arquivo de chave existente.  
@@ -93,7 +92,7 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
  [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)   
  [Gerenciando a assinatura de assembly e de manifesto](../../ide/managing-assembly-and-manifest-signing.md)   
  [Assinatura de nome forte para aplicativos gerenciados](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Como assinar manifestos do aplicativo e de implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Como assinar um assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Como assinar um assembly com um nome forte](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Como: Assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)   
+ [Como: Assinar um Assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Como: Assinar um Assembly com um nome forte](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [Assemblies de nomes fortes](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

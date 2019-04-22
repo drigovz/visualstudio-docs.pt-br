@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f65c3fb08932c62bce094b15d698f6bef3da8e86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999918"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653262"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -395,7 +395,6 @@ Padrões compostos combinam elementos de design e interação em configurações
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aparência da seleção de objeto gráfico
  As alças de seleção são desenhados em um padrão retangular ao redor da caixa delimitadora do objeto de quadrados. O gráfico abaixo mostra exemplos de vários estados em que um objeto gráfico pode ter com a alça de dimensionamento e aparência de edição in-loco. O tamanho dos identificadores deve ser vinculado a borda da janela e métricas de borda usando o **GetSystemMetrics** API.
 
-
 |          Estado          |  Aparência   |                                                                  Detalhes do Visual                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Unselected**      |    Padrão    |                 ![Estado do botão padrão](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713 10_DefaultState")                 |
@@ -437,7 +436,6 @@ Padrões compostos combinam elementos de design e interação em configurações
 >  **Foco** e **seleção** são conceitos diferentes. *Foco* é uma indicação de qual interface do usuário do elemento é direcionado para receber entrada dirigida não explicitamente a outro objeto, enquanto *seleção* refere-se ao estado da inclusão de um objeto em um conjunto de objetos dos quais subsequentes as operações podem ocorrer.
 
  As seleções nas listas podem ser contíguos, não contíguo, ou região. Quando várias seleções são permitidas, contíguos e seleção de disjunção sempre deve ser compatível, enquanto o suporte para as seleções de região (caixa) são opcional. Seleções de região são iniciadas, arrastando o espaço em branco do corpo da lista.
-
 
 | Objeto | Seleção  |
 |--------|------------|
@@ -508,7 +506,7 @@ Padrões compostos combinam elementos de design e interação em configurações
  Uma configuração de janela é a apresentação básica do ambiente de desenvolvimento – é um esquema consiste em lista de janelas de ferramenta presentes e a maneira na qual eles são organizados. Para o windows gerenciados pelo IDE (janelas do IDE), informações de layout são mantidas por usuário, portanto, quando um usuário inicia o IDE, o layout da janela é exibida mesmo que, quando elas duram, Visual Studio foi encerrado. O estado e a posição das janelas do IDE é mantido em um arquivo de opções personalizadas em formato XML. Janelas de ferramentas que são criadas por pacotes carregados no IDE manter suas informações de estado no registro e podem ou não ser por usuário.
 
 #### <a name="profile-specific-layouts"></a>Layouts de específico para o perfil
- Cada perfil inclui layouts de janela da ferramenta, organizados de forma familiar para pessoas específicas do desenvolvedor (os desenvolvedores de Visual C++ esperam ver a **Gerenciador de soluções** no lado esquerdo do IDE, enquanto os desenvolvedores de C# esperam ver o  **Gerenciador de soluções** à direita). Layouts de janela específico para o perfil são carregados depois que o usuário escolhe um perfil na inicialização. Um autor do pacote deve determinar o layout da janela mais adequado para a experiência de seus clientes, sabendo que as alterações que o usuário faz a configuração de janela, em seguida, ser persistente.
+ Cada perfil inclui layouts de janela da ferramenta, organizados de forma familiar para pessoas específicas do desenvolvedor (os desenvolvedores de Visual C++ esperam ver a **Gerenciador de soluções** no lado esquerdo do IDE, enquanto os desenvolvedores de c# esperam ver o  **Gerenciador de soluções** à direita). Layouts de janela específico para o perfil são carregados depois que o usuário escolhe um perfil na inicialização. Um autor do pacote deve determinar o layout da janela mais adequado para a experiência de seus clientes, sabendo que as alterações que o usuário faz a configuração de janela, em seguida, ser persistente.
 
 ##  <a name="BKMK_TouchInput"></a> Entrada de toque
  Os usuários estão usando cada vez mais produtos de desenvolvimento da Microsoft nos dispositivos de toque. No entanto, há barreiras que tornam difícil usar ferramentas de desenvolvimento em dispositivos sensíveis ao toque. Usuários esperam que nossos produtos para fornecer uma experiência de toque precisas e confiáveis. A intenção dessas diretrizes é informar decisões sobre quais recursos de toque para incorporar e incentivar uma experiência de toque consistente entre o Visual Studio e produtos relacionados.

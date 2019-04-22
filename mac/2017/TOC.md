@@ -7,14 +7,12 @@
 ## [Atualizar](/visualstudio/mac/update)
 ## [Desinstalar](/visualstudio/mac/uninstall)
 
-
 # [Contas de Usuário](/visualstudio/mac/user-accounts)
 ## [Assinatura](/visualstudio/mac/signing-in)
 ## [Habilitar Assinatura](/visualstudio/mac/enable-subscription)
 
 # [Personalizando o IDE](/visualstudio/mac/customizing-the-ide)
 ## [Estendendo o Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [Projetos e Soluções](/visualstudio/mac/projects-and-solutions)
 ## [Criando Novos Projetos](/visualstudio/mac/create-new-projects)

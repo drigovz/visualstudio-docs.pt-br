@@ -8,16 +8,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7462f99bc06ea84ebbeaf675c8f3882cef527ce5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754928"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649674"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Solução de problemas do emulador do Visual Studio para Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Este tópico contém informações para ajudá-lo a resolver problemas que podem ocorrer quando você estiver usando o emulador do Visual Studio para Android.
 
@@ -174,7 +173,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
      - Desabilitar a execução confiável
 
-       Para obter mais informações, consulte este artigo: Technet: Hyper-V Como corrigir erros de BIOS habilitando o Hyper-V
+       Para obter mais informações, confira este artigo: TechNet: Hyper-V: Como corrigir erros do BIOS habilitando o Hyper-V
 
   5. Verifique se você tem pelo menos 4 GB de memória de sistema e que não esteja sendo consumida por outros programas e processos de uso intensivo de recursos.
 
@@ -192,7 +191,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
    Em geral, é responsabilidade dos desenvolvedores que os produtos a serem atualizados no software sejam compatíveis com o Windows 8 e Hyper-V.
 
-   Os seguintes produtos podem exigir a atualização para conformidade do Windows 8: VirtualBox, Virtual PC 7, VMWare, alguns clientes VPN, firewalls de software, algumas versões do Cisco VPN clientes e outros sistemas de virtualização. Trabalhe com o desenvolvedor do software de virtualização questionável para incentivá-los a atualizar o software a fim de torná-lo compatível com o Windows 8 e o Hyper-V.
+   Os seguintes produtos podem exigir a atualização para conformidade com o Windows 8: VirtualBox, Virtual PC 7, VMWare, alguns clientes VPN, firewalls de software, algumas versões de clientes VPN da Cisco e outros sistemas de virtualização. Trabalhe com o desenvolvedor do software de virtualização questionável para incentivá-los a atualizar o software a fim de torná-lo compatível com o Windows 8 e o Hyper-V.
 
    Como um **solução alternativa**, você pode desabilitar todos os drivers e aplicativos de terceiros que possam estar interferindo na rede virtual usada pelo emulador para se comunicar com o Visual Studio. Esses aplicativos podem incluir:
 
@@ -255,7 +254,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
   Para resolver esse problema, desabilite o USB3 nas configurações do BIOS de placa-mãe e reinicie o computador. Verifique se o Gigabyte lançou uma atualização do BIOS da placa-mãe.
 
-  Para obter mais informações, consulte o seguinte artigo da Base de dados de Conhecimento: [Falha ao iniciar após a instalação da função Hyper-V em sistemas de Gigabyte](https://support.microsoft.com/kb/2693144).
+  Para obter mais informações, confira o seguinte artigo da Base de Dados de Conhecimento: [Falha de inicialização após a instalação da função do Hyper-V em sistemas de Gigabyte](https://support.microsoft.com/kb/2693144).
 
 ##  <a name="ADB"></a> O Visual Studio fica preso tentando implantar o aplicativo no emulador ou o emulador não aparece como um destino de depuração em outras IDEs
  Se o emulador estiver em execução, mas não parece não estar conectado a ADB (Android Debug Bridge) ou não aparecer nas ferramentas do Android que usam ADB (por exemplo, o Android Studio ou o Eclipse), talvez seja necessário ajustar onde o emulador deve procurar o ADB. O emulador usa uma chave do Registro para identificar o local de base do SDK do Android e procura o arquivo \platform-tools\adb.exe nesse diretório. Para modificar o caminho do SDK do Android usado pelo emulador:
@@ -269,7 +268,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
   Reinicie o emulador e agora você deve ver o emulador conectado ao ADB e às ferramentas do Android associadas.
 
 ##  <a name="XamarinPlayer"></a> O emulador paralisa porque não consegue configurar a porta UDP
- Você pode enfrentar esse problema devido a incompatibilidade com Xamarin Player. Se o emulador parece travar ou se você vir essa mensagem de erro "o emulador não consegue se conectar ao sistema operacional do dispositivo: Não foi possível configurar a porta UDP.  Algumas funcionalidades podem estar desabilitadas", você poderá estar enfrentando esse problema. Use as etapas a seguir.
+ Você pode enfrentar esse problema devido a incompatibilidade com Xamarin Player. Se o emulador parecer travado ou se for exibida a mensagem de erro "O emulador não pode se conectar ao sistema operacional do dispositivo: Não foi possível configurar a porta UDP.  Algumas funcionalidades podem estar desabilitadas", você poderá estar enfrentando esse problema. Use as etapas a seguir.
 
 1.  Desinstale o Xamarin Player.
 

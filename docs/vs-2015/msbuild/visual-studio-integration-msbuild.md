@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194503"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649258"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para carregar e compilar projetos gerenciados. Como [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] é responsável pelo projeto, quase todo projeto que estiver no formato [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] poderá ser utilizado com êxito no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], mesmo se o projeto tiver sido criado por meio de uma ferramenta diferente e tenha um processo de build personalizado.  
   
  Este tópico descreve aspectos específicos da hospedagem do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pelo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que devem ser considerados ao personalizar projetos e arquivos .targets que serão carregados e compilados em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Isso ajudará a certificar recursos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], como o IntelliSense e a depuração de trabalho no projeto personalizado.  
@@ -183,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  A atualização rápida não se aplica a builds regulares no Visual Studio e o projeto será compilado como se o build tivesse sido invocado por meio do prompt de comando.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como estender o processo de build do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [Como: Estender o processo de compilação do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Iniciando um build pelo IDE](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Registrando extensões do .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   

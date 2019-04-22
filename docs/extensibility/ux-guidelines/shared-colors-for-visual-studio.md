@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232808"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649948"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Cores compartilhadas para o Visual Studio
 Quando você está projetando a interface do usuário que usa elementos comuns de shell do Visual Studio, ou você gostaria de seu elemento de interface para ser consistente com recursos semelhantes, use nomes de token existentes nos arquivos de definição de pacote para escolher e atribuir cores. Isso garante que sua interface do usuário permaneça consistente com o ambiente geral do Visual Studio e que ele será atualizado automaticamente quando os temas são adicionados ou atualizados.
@@ -1948,7 +1948,6 @@ Visual Studio dá suporte à marcação, que permite que um usuário declarar as
 **Selecionado de marca de fechamento (&times;) glifo: passe o mouse de estado**
 
 ![Selecionado de marca de fechamento (&times;) glifo focalizar](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303 185_TagSelectedHover")<br />Selecionado de marca de fechamento (&times;) glifo ao focalizar
-
 
 | Elemento | Nome do token: Category.color |
 | --- | --- |

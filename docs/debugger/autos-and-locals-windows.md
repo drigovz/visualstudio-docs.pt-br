@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366543"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas Autos e locais
@@ -164,6 +164,6 @@ Para ver os valores de retorno de `sumVars()` e `subtractVars()` chamadas de mé
 ## <a name="see-also"></a>Consulte também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
-- [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
+- [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)
 - [Janelas do depurador](../debugger/debugger-windows.md)

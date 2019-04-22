@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868872"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649362"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guia do Administrador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte o [guia do administrador do Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
+Para a documentação mais recente do Visual Studio, consulte o [guia do administrador do Visual Studio](/visualstudio/install/visual-studio-administrator-guide).
 
 Você pode implantar o Visual Studio 2015 em uma rede desde que cada computador de destino atende o [requisitos mínimos de instalação](https://visualstudio.microsoft.com/vs/older-downloads/). Crie um compartilhamento de rede executando o arquivo de instalação com a opção /layout (conforme descrito na página [Criar uma instalação offline do Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)) e, em seguida, copiando-o do computador local para o compartilhamento de rede. Se você estiver usando um arquivo ISO, você pode montar o ISO e compartilhá-lo ou copiar o ISO em um compartilhamento de rede.  
   
@@ -54,22 +54,23 @@ Você pode implantar o Visual Studio 2015 em uma rede desde que cada computador 
 ## <a name="controlling-what-is-installed"></a>Controlar o que está instalado  
  Se você deseja controlar o que o usuário final pode instalar, há duas opções: o administrador do arquivo de instalação e as opções de linha de comando. Se seu objetivo é restringir o que o usuário final pode escolher entre sua experiência de instalador do Visual Studio, selecione a instalação do arquivo de administrador. Se você quiser criar uma configuração inicial, mas permitir que seu usuário final escolher sua própria experiência de instalador do Visual Studio, selecione os parâmetros de linha de comando.  
   
- Para obter mais informações sobre a experiência de administrador de arquivos, consulte [como: criar e executar uma autônoma instalação do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) e [como: aplicar as chaves de produto durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Para obter mais informações sobre os controles de linha de comando, consulte o [Use parâmetros de linha de comando para instalar o Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) página.  
+ Para obter mais informações sobre a experiência de administrador de arquivos, consulte [como: Criar e executar uma instalação autônoma do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) e [como: Aplicar chaves de produto durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Para obter mais informações sobre os controles de linha de comando, consulte o [Use parâmetros de linha de comando para instalar o Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) página.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Especificar as configurações de comentários do cliente  
- Por padrão, a instalação do Visual Studio habilita os comentários do cliente. Você pode configurar o Visual Studio para desabilitar os comentários do cliente em computadores individuais, alterando o valor da chave do registro para a cadeia de caracteres "0":  
+
+Por padrão, a instalação do Visual Studio habilita os comentários do cliente. Você pode configurar o Visual Studio para desabilitar os comentários do cliente em computadores individuais, alterando o valor da chave do registro para a cadeia de caracteres "0":  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- (Por exemplo, alterá-lo para HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn = "0")  
+(Por exemplo, alterá-lo para HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn = "0")  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Como instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Descreve como instalar configurações específicas da versão atual do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Como criar e executar uma instalação autônoma do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Descreve como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo.|  
-|[Como aplicar as chaves de produto automaticamente durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Descreve como aplicar chaves de produto durante a implantação em vários computadores.|  
+|[Como: Instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Descreve como instalar configurações específicas da versão atual do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Como: Criar e executar uma instalação autônoma do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Descreve como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo.|  
+|[Como: Aplicar chaves de produto durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Descreve como aplicar chaves de produto durante a implantação em vários computadores.|  
 |[Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)|Fornece informações sobre como gerenciar as instalações da Ajuda local para ambientes de rede que têm ou não tem acesso à internet.|  
 |[Instalar o Visual Studio](../install/install-visual-studio-2015.md)|Fornece instruções e links para tópicos que descrevem como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

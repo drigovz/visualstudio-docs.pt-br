@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683671"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649986"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos de gráficos no analisador de gráficos do Visual Studio para explorar os eventos Direct3D registrados durante a renderização de um quadro do seu jogo ou aplicativo.
@@ -105,7 +105,6 @@ Visual Studio 2017 e superior contêm os **histórico de recursos** janela.  Sel
 
 Essa janela permite que você exiba o histórico do item selecionado na lista de eventos.  A lista suspensa na parte superior pode ser usada para selecionar outros itens para exibir o histórico de.  A metade superior da janela contém o **eventos de configuração de quadro**.  Esses são os eventos que entram os *criar* categoria de tipo e são chamadas que geralmente inicializam e criar o recurso.  A parte inferior da janela contém o **eventos de quadro** seção.  Essas são de leitura normal e gravam eventos que ocorrem durante o uso do recurso.
 
-
 | Column | Descrição |
 |-----------| - |
 | **Tipo** | Mostra o tipo de entrada, normalmente *Create*, *leitura* e *gravar*. |
@@ -115,4 +114,4 @@ Essa janela permite que você exiba o histórico do item selecionado na lista de
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Consulte também
-- [Passo a passo: objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Passo a passo: Objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)

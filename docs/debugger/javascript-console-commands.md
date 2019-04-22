@@ -14,10 +14,10 @@ ms.workload:
 - uwp
 - cordova
 ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790765"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos do Console do JavaScript no Visual Studio
@@ -26,7 +26,7 @@ ms.locfileid: "58790765"
 Você pode usar comandos para enviar mensagens e executar outras tarefas na janela Console do JavaScript do Visual Studio. As informações neste tópico se aplica a aplicativos Node. js criados usando o Visual Studio com o **desenvolvimento do Node. js** carga de trabalho instalada.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Você pode usar comandos para enviar mensagens e executar outras tarefas na janela Console do JavaScript do Visual Studio. Para obter exemplos que mostram como usar essa janela, consulte [guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). As informações neste tópico se aplicam ao aplicativo do Node. js, UWP apps e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova. Para obter informações sobre os comandos de console com suporte em aplicativos Cordova, consulte [depuração do seu aplicativo](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
+Você pode usar comandos para enviar mensagens e executar outras tarefas na janela Console do JavaScript do Visual Studio. Para obter exemplos que mostram como usar essa janela, consulte [guia de início rápido: Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). As informações neste tópico se aplicam ao aplicativo do Node. js, UWP apps e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova. Para obter informações sobre os comandos de console com suporte em aplicativos Cordova, consulte [depuração do seu aplicativo](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
 ::: moniker-end
 
 Se a janela do Console do JavaScript estiver fechada, você pode abri-lo enquanto você estiver depurando no Visual Studio escolhendo **Debug** > **Windows** > **JavaScript Console**.
@@ -130,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Consulte também
-- [Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

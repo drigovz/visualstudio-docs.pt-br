@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/03/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3b1be29663bacee5719749746f6275aba4381f99
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018240"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537644"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -193,6 +193,9 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Preview 1 | 10 de abril de 2019 | 16.1.28809.33 |
+| 16.0.1 | Versão | 9 de abril de 2019 | 16.0.28803.156 |
+| 16.0.1 | Preview 1 | 9 de abril de 2019 | 16.0.28803.156 |
 | 16.0.0 | Versão | 2 de abril de 2019 | 16.0.28729.10 |
 | 16.0.0 | Versão prévia 5 | 2 de abril de 2019 | 16.0.28729.10 |
 | 16.0.0 | RC.4 (versão Release Candidate 4) | 26 de março de 2019 | 16.0.28721.148 |

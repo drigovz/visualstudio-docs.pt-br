@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366842"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariáveis no depurador do Visual Studio
@@ -36,7 +36,7 @@ As pseudovariáveis são termos usados para exibir determinadas informações em
 
 |Pseudovariável|Função|
 |--------------------|--------------|
-|`$err`|Exibe o último conjunto de valores de erro com a função SetLastError. O valor que é exibido representa o que seria retornado pela função GetLastError.<br /><br /> Use `$err,hr` para ver o formulário decodificado deste valor. Por exemplo, se o erro mais recente fosse 3, o `$err,hr` exibiria `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
+|`$err`|Exibe o último conjunto de valores de erro com a função SetLastError. O valor que é exibido representa o que seria retornado pela função GetLastError.<br /><br /> Use `$err,hr` para ver o formulário decodificado deste valor. Por exemplo, se o erro mais recente fosse 3, `$err,hr` exibiria `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
 |`$handles`|Exibe o número de manipuladores alocados em seu aplicativo.|
 |`$vframe`|Exibe o endereço do quadro de pilha atual.|
 |`$tid`|Exibe a ID do thread para o thread atual.|
@@ -68,5 +68,5 @@ As pseudovariáveis são termos usados para exibir determinadas informações em
 |`$dynamic`|Exibe o nó especial **Modo de Exibição Dinâmico** para um objeto que implementa o `IDynamicMetaObjectProvider`. Interface. A sintaxe é `$dynamic,` *objeto*. Esse recurso se aplica somente ao código que usa o .NET Framework versão 4.|
 
 ## <a name="see-also"></a>Consulte também
-- [Inspeção e QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
-- [Janelas de variáveis](../debugger/debugger-windows.md)
+- [Janelas Inspeção e Inspeção Rápida](../debugger/watch-and-quickwatch-windows.md)
+- [Janelas de Variáveis](../debugger/debugger-windows.md)

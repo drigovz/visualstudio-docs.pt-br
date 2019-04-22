@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 41fbfb4a19c4c730c046f4c44fc9d88fd9882c45
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 972f52583704b3116066114986948af643069a0d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790258"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651105"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depurar aplicativos do Universal do Windows (UWP) no Visual Studio
 
@@ -29,7 +29,6 @@ O depurador do Visual Studio fornece suporte completo para depurar aplicativos U
 |Execute aplicativos UWP em um computador local, remoto ou conectado um dispositivo ou simulador de aplicativos.|[Iniciar uma sessão de depuração para um aplicativo UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |Depure aplicativos implantados, locais e remotos.|[Depurar pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)|
 |Analise o efeito da classe ContentPrefetcher nos aplicativos UWP.|[Realizar pré-busca de conteúdo para aplicativos UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
-
 
 ## <a name="see-also"></a>Consulte também
 - [Analisar a qualidade do código usando a análise de código estático](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

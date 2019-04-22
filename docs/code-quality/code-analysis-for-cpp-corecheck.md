@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796810"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652105"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referência de verificador das diretrizes principais do C++
 
@@ -107,12 +107,9 @@ Expressão '% expr %': Sem matriz para ponteiro de decaimento. Ver [Bounds.3 de 
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) a função '% % do símbolo' deve especificar exatamente um dos 'virtual', 'override' ou 'final'. Consulte [C.128: Funções virtuais devem especificar exatamente um dos virtual, substituição, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) o tipo '% % do símbolo' com uma função virtual precisa de qualquer um dos destruidor não virtual protegido ou virtual público. Ver [diretrizes principais do C++ C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) substituindo destruidor não deve usar especificadores 'virtuais' ou 'override' explícita. Consulte [C.128: Funções virtuais devem especificar exatamente um dos virtual, substituição, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
-
 
 ## <a name="type-group"></a>TIPO de grupo
 
@@ -205,7 +202,6 @@ Consulte [gsl de diretrizes principais do C++: Modos de exibição](https://gith
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` ou `std::string_view` criado a partir de um temporário será inválido quando o temporário for invalidado. Consulte [diretrizes principais do C++: GSL.view: Modos de exibição](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
-
 
 ## <a name="deprecated-warnings"></a>Avisos preteridos
 

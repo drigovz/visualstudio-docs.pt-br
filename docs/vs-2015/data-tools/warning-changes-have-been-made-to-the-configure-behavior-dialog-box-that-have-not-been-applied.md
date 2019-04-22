@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4a0ef367be3fd2bbe79472a04437230c0b51180
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925677"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651744"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas. Você deseja aplicar as alterações?  
   
  O **configurar comportamento** caixa de diálogo permite que você configure o comportamento de Insert, Update e Delete para todas as classes disponíveis. Esta mensagem aparece quando você seleciona uma nova combinação de **Classe** e **Comportamento** e a alteração anterior ainda não foi aplicada.  

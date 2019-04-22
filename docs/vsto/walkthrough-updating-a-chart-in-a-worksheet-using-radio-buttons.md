@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602059"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651884"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Passo a passo: Atualizando um gráfico em uma planilha usando botões de opção
   Este passo a passo mostra as Noções básicas de como usar botões de opção em uma planilha do Microsoft Office Excel para dar ao usuário uma maneira de alternar rapidamente entre as opções. Nesse caso, as opções de alterar o estilo de um gráfico.
@@ -132,30 +132,24 @@ ms.locfileid: "56602059"
 
 2. Dos **controles comuns** guia da **caixa de ferramentas**, arraste uma **botão de opção** o controle para o controle de usuário e alterar as propriedades a seguir.
 
-
    | Propriedade | Valor |
    |----------|------------------|
    | **Nome** | **columnChart** |
    | **Texto** | **Gráfico de colunas** |
 
-
 3. Adicionar um segundo botão de opção ao controle de usuário e alterar as propriedades a seguir.
-
 
    | Propriedade | Valor |
    |----------|---------------|
    | **Nome** | **barChart** |
    | **Texto** | **Gráfico de barras** |
 
-
 4. Adicionar um terceiro botão de opção ao controle de usuário e alterar as propriedades a seguir.
-
 
    | Propriedade | Valor |
    |----------|----------------|
    | **Nome** | **lineChart** |
    | **Texto** | **Gráfico de linhas** |
-
 
 5. Adicionar um quarto botão de opção ao controle de usuário e alterar as propriedades a seguir.
 

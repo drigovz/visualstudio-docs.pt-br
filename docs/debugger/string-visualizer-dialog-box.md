@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366777"
 ---
-# <a name="string-visualizer-dialog-box"></a>Caixa de diálogo do Visualizador de cadeia de caracteres
+# <a name="string-visualizer-dialog-box"></a>Caixa de diálogo Visualizador da Cadeia de Caracteres
 
 Enquanto você estiver depurando no Visual Studio, você pode exibir cadeias de caracteres com o Visualizador de cadeia de caracteres internas. O Visualizador de cadeia de caracteres mostra as cadeias de caracteres que são muito longos para uma janela de dica ou depurador de dados. Ele pode também ajudar a identificar cadeias de caracteres malformadas.
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018149"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477535"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -34,10 +34,10 @@ O Visual Studio 2019 fornece os melhores serviços e ferramentas do mercado para
 Veja uma recapitulação de alto nível sobre as novidades:
 
 * **[Desenvolver](#develop)**: mantenha a concentração e aumente a produtividade com desempenho aperfeiçoado, limpeza de código instantânea e melhores resultados de pesquisa.
-* **[Colaborar](#collaborate)**: aproveite a colaboração natural por meio de um fluxo de trabalho na nuvem, depuração e edição em tempo real, e revisões de código diretamente no Visual Studio.
+* **[Colaborar](#collaborate)**: aproveite a colaboração natural por meio de um fluxo de trabalho do Git, depuração e edição em tempo real, e revisões de código diretamente no Visual Studio.
 * **[Depurar](#debug)**: realce e navegue para valores específicos, otimize o uso de memória e faça instantâneos automáticos da execução do aplicativo.
 
-Para obter uma lista completa de todas as novidades incluídas nesta versão, confira as [notas de versão](/visualstudio/releases/2019/release-notes/). 
+Para obter uma lista completa de todas as novidades incluídas nesta versão, confira as [notas de versão](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Desenvolver
 
@@ -55,11 +55,11 @@ A nova lógica de pesquisa difusa localizará tudo o que você precisa, mesmo co
 
 ### <a name="refactorings"></a>Refatorações
 
-Com as novas refatorações em C# fica mais fácil organizar o código. Basta invocar as refatorações pressionando **Ctrl+** e selecionar a ação desejada. 
+Há muitas refatorações novas e altamente úteis no C# que facilitam a organizar seu código. Elas aparecem como sugestões na lâmpada e incluem ações como mover membros para classe base ou interface, ajustar os namespaces para coincidir com a estrutura de pastas, converter loops foreach em consultas Linq e muito mais.
 
    ![Animação da nova experiência de refatorações do Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Adicionamos várias refatorações novas, inclusive uma que permite encapsular parâmetros de método.
+Basta invocar as refatorações pressionando **Ctrl+** e selecionar a ação desejada.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ Quando fizemos a primeira versão prévia da extensão do IntelliCode para Visua
 
 E se você usa C#, também adicionamos a capacidade de treinar um modelo personalizado em seu próprio código.
 
-Para saber mais sobre o IntelliCode, confira a postagem no blog [Code more, scroll less with Visual Studio IntelliCode (Codifique de maneira mais eficiente com o IntelliCode do Visual Studio)](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/). 
+Para saber mais sobre o IntelliCode, confira a postagem no blog [Code more, scroll less with Visual Studio IntelliCode (Codifique de maneira mais eficiente com o IntelliCode do Visual Studio)](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/).
 
 ### <a name="code-cleanup"></a>Limpeza de Código
 
@@ -142,7 +142,7 @@ Aproveitamos os pontos de interrupção de dados em C++ exclusivos e os adaptamo
 
    ![Animação que mostra os pontos de interrupção de dados de depuração no Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif)
 
-Portanto, pontos de interrupção de dados podem ser uma ótima alternativa para a simples colocação de pontos de interrupção regulares, quando você está codificando em C++ ou no .NET Core. Pontos de interrupção de dados também são excelentes para cenários como localizar onde um objeto global está sendo modificado, adicionado, ou removido de uma lista. 
+Portanto, pontos de interrupção de dados podem ser uma ótima alternativa para a simples colocação de pontos de interrupção regulares, quando você está codificando em C++ ou no .NET Core. Pontos de interrupção de dados também são excelentes para cenários como localizar onde um objeto global está sendo modificado, adicionado, ou removido de uma lista.
 
 Além disso, se você for um desenvolvedor de C++ que trabalha com grandes aplicativos, o Visual Studio 2019 cria símbolos fora do processo, o que permite depurar esses aplicativos sem passar por problemas relacionados à memória.
 

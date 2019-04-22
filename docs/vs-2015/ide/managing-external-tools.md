@@ -58,10 +58,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866752"
 ---
 # <a name="managing-external-tools"></a>Gerenciando ferramentas externas
@@ -78,11 +78,11 @@ ms.locfileid: "58866752"
   
 3.  Ferramenta de Rastreamento da ATL/MFC: mostra mensagens de rastreamento de depuração nas fontes ATL e MFC.  
   
-4.  PreEmptive Protection – Dotfuscator: protege os programas .NET contra engenharia reversa.  
+4.  PreEmptive Protection – Dotfuscator: Protege os programas .NET contra engenharia reversa.  
   
-5.  SPY++: exibe processos, threads, janelas e mensagens de janela graficamente.  
+5.  SPY + +: Exibe graficamente os processos, threads, windows e as mensagens da janela.  
   
-6.  Editor de Configuração do serviço WCF: permite criar e modificar definições de configuração para os serviços WCF.  
+6.  Editor de configuração de serviço do WCF: Permite que você criar e modificar definições de configuração para serviços WCF.  
   
 > [!WARNING]
 >  Você poderá ver uma lista diferente de ferramentas externas, dependendo de qual edição do Visual Studio está instalada e o perfil de configurações aplicado. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -122,4 +122,4 @@ ms.locfileid: "58866752"
 |Nome de arquivo da solução|$(SolutionFileName)|O nome de arquivo da solução atual (unidade + caminho + nome de arquivo).|  
   
 ## <a name="see-also"></a>Consulte também  
- [Ferramentas de build da linguagem C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Ferramentas de build de C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

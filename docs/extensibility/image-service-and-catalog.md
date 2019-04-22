@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857847"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo e o serviço de imagem
@@ -104,7 +104,7 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
 
 |||
 |-|-|
-|**Subelemento**|**Definição**|
+|**Subelement**|**Definição**|
 |Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto do atual|
 |Guid|O símbolo representa um GUID e deve corresponder ao GUID de formatação|
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo|
@@ -151,7 +151,7 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
 |ID|[Obrigatório] A parte de identificação do moniker de imagem|
 |AllowColorInversion|[Opcional, padrão Verdadeiro] Indica se a imagem pode ter suas cores invertidas programaticamente quando usado em um plano de fundo escuro.|
 
- **Origem**
+ **Source**
 
  O \<origem > elemento define um ativo de origem única imagem (XAML e PNG).
 
@@ -584,7 +584,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 3. Altere a implementação dos VSHPROPIDs originais para ícones para criar versões "herdadas" dos ícones se pontos de extensão solicitação-los. **IVsImageService2** fornece a funcionalidade necessária obter esses ícones
 
-   **Requisitos adicionais para o VB / C# projeto sabores**
+   **Requisitos adicionais para o VB / c# projeto sabores**
 
    Implementar apenas **VSHPROPID_SupportsIconMonikers** se você detectar que o seu projeto é a **sabor mais externo**. Caso contrário, o tipo mais externo real pode não oferecer suporte monikers de imagem na realidade, e seu tipo base pode efetivamente "Ocultar" imagens personalizadas.
 
@@ -732,7 +732,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**
 
- O manifesto para a ferramenta de código usa um arquivo de manifesto de imagem e gera um arquivo de wrapper para fazer referência os valores de manifesto no código (C++, C# ou VB) ou *VSCT* arquivos.
+ O manifesto para a ferramenta de código usa um arquivo de manifesto de imagem e gera um arquivo de wrapper para fazer referência os valores de manifesto no código (C++, c# ou VB) ou *VSCT* arquivos.
 
  **ImageLibraryViewer**
 

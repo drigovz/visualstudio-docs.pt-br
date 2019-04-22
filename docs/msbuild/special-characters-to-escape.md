@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d263344b84ad93cc582d05112c08d2bad1aa998
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632440"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584318"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiais para escape
 Caracteres especiais devem ser de escape somente se tiverem um significado especial no contexto em que eles estiverem sendo usados. Por exemplo, o asterisco (*) é um caractere especial somente nos atributos "Incluir" e "Excluir" de uma definição de item ou em uma chamada para <xref:Microsoft.Build.Tasks.CreateItem>. Em outros casos, o asterisco é tratado como um asterisco literal. Embora você não precise que os asteriscos sejam de escape em todos os arquivos de projeto, fazer isso não é prejudicial.
@@ -37,7 +37,7 @@ Caracteres especiais devem ser de escape somente se tiverem um significado espec
 |@|Sinal de arroba, usado para fazer referência a listas de itens.|
 |(|Parênteses de abertura, usado em listas.|
 |)|Parênteses de fechamento, usado em listas.|
-|`|Apóstrofe (ou marca de escala) usado em condições e outras expressões.|
+|\`|Apóstrofe (ou marca de escala) usado em condições e outras expressões.|
 |;|Ponto e vírgula, separador de lista.|
 |?|Ponto de interrogação, um caractere curinga ao descrever uma especificação de arquivo na seção Incluir/Excluir de um item.|
 |*|Asterisco, um caractere curinga ao descrever uma especificação de arquivo na seção Incluir/Excluir de um item.|
