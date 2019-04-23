@@ -12,27 +12,27 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d7ac06c15fb3b6e4370a3e785abe2ac94483a34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111136"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Como copiar elementos de diagrama de classe para um documento do Microsoft Office (Designer de Classe)
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Como: Copiar elementos do diagrama de classe para um documento do Microsoft Office (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode copiar formas de um diagrama de classe do .NET (arquivo .cd) para outros documentos. Você obterá uma cópia da forma ou seu código subjacente com base no tipo de documento no qual colá-la. Para copiar formas de diagramas de classes UML em um projeto de modelagem, consulte [Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md).  
   
 ### <a name="to-copy-a-single-element"></a>Para copiar um único elemento  
   
--   Clique com o botão direito do mouse na forma e escolha **Copiar Imagem**.  
+- Clique com o botão direito do mouse na forma e escolha **Copiar Imagem**.  
   
 ### <a name="to-copy-several-elements"></a>Para copiar vários elementos  
   
-1.  Selecione as formas no diagrama que você deseja copiar.  
+1. Selecione as formas no diagrama que você deseja copiar.  
   
-2.  Clique com o botão direito do mouse na seleção e escolha **Copiar Imagem**.  
+2. Clique com o botão direito do mouse na seleção e escolha **Copiar Imagem**.  
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Para copiar todos os elementos em um diagrama de classe  
   
@@ -43,5 +43,5 @@ Você pode copiar formas de um diagrama de classe do .NET (arquivo .cd) para out
    Você também pode escolher **Copiar** em vez de **Copiar Imagem**. **Copiar** copia a imagem como um bitmap regular. **Copiar Imagem** copia a imagem como uma imagem baseada em vetor, o que é melhor para a maioria dos aplicativos do Office.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como imprimir diagramas de classe (Designer de Classe)](../ide/how-to-print-class-diagrams-class-designer.md)   
- [Como exportar diagramas de classe como imagens (Designer de Classe)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+ [Como: Imprimir diagramas de classe (Designer de classe)](../ide/how-to-print-class-diagrams-class-designer.md)   
+ [Como: exportar diagramas de classe como imagens (Designer de Classe)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

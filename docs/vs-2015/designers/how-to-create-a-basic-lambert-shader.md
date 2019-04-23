@@ -9,25 +9,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111240"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Como criar um sombreador Lambert básico
+# <a name="how-to-create-a-basic-lambert-shader"></a>Como: Criar um sombreador Lambert básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed Graph Shader Language) para criar um sombreador de iluminação que implementa o modelo de iluminação de Lambert clássico.  
   
  Este documento demonstra essas atividades:  
   
--   Adicionar nós a um grafo de sombreador  
+- Adicionar nós a um grafo de sombreador  
   
--   Desconectar nós  
+- Desconectar nós  
   
--   Conectar nós  
+- Conectar nós  
   
 ## <a name="the-lambert-lighting-model"></a>O modelo de iluminação de Lambert  
  O modelo de iluminação de Lambert incorpora iluminação ambiente e direcional para sombrear objetos em uma cena 3D. Os componentes do ambiente fornecem um nível básico de iluminação na cena 3D. Os componentes direcionais fornecem iluminação adicional de fontes de luz direcionais (distantes). A iluminação ambiente afeta todas as superfícies da cena igualmente, independentemente da orientação. Para uma determinada superfície, é um produto da cor ambiente da superfície e a cor e a intensidade da luz ambiente na cena. A iluminação direcional afeta cada superfície na cena de maneira diferente, com base na orientação da superfície em relação a direção da fonte de luz. É um produto da cor difusa e a orientação da superfície e a cor, intensidade e direção das fontes de luz. As superfícies que estão voltadas diretamente para a fonte de luz recebem a contribuição máxima e superfícies que estão diretamente voltadas para o lado oposto, não recebem nenhuma contribuição. No modelo de iluminação de Lambert, o componente ambiente e um ou mais componentes direcionais são combinados para determinar a contribuição de cor difusa total para cada ponto no objeto.  
@@ -63,7 +63,7 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)   
- [Como criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)   
+ [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)   
+ [Como: Criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

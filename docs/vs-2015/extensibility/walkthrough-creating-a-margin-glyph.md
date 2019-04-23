@@ -10,12 +10,12 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d22607dd4e32ac29a773b6217056c2484121cd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa18b900ca44fbb52c646bfdf021beed6e77f504
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112462"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Passo a passo: Criando um glifo de margem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ Você pode personalizar a aparência das margens do editor ao usar extensões de
   
 ## <a name="creating-a-mef-project"></a>Criando um projeto MEF  
   
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual C# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `TodoGlyphTest`.  
+1. Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `TodoGlyphTest`.  
   
-2.  Adicione um item de projeto de classificador do Editor. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Adicione um item de projeto de classificador do Editor. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Exclua os arquivos de classe existentes.  
+3. Exclua os arquivos de classe existentes.  
   
 ## <a name="defining-the-glyph"></a>Definindo o glifo  
  Definir um glifo Implementando o <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory> interface.  
   
 #### <a name="to-define-the-glyph"></a>Para definir o glifo  
   
-1.  Adicione um arquivo de classe e denomine- `TodoGlyphFactory`.  
+1. Adicione um arquivo de classe e denomine- `TodoGlyphFactory`.  
   
-2.  Adicione o seguinte usando as declarações.  
+2. Adicione o seguinte usando as declarações.  
   
      [!code-csharp[VSSDKTodoGlyphTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#1)]
      [!code-vb[VSSDKTodoGlyphTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#1)]  
   
-3.  Adicione uma classe chamada `TodoGlyphFactory` que implementa <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>.  
+3. Adicione uma classe chamada `TodoGlyphFactory` que implementa <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>.  
   
      [!code-csharp[VSSDKTodoGlyphTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#2)]
      [!code-vb[VSSDKTodoGlyphTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#2)]  
   
-4.  Adicione um campo particular que define as dimensões do glifo.  
+4. Adicione um campo particular que define as dimensões do glifo.  
   
      [!code-csharp[VSSDKTodoGlyphTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#3)]
      [!code-vb[VSSDKTodoGlyphTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#3)]  
   
-5.  Implemente `GenerateGlyph` definindo o elemento de interface do usuário do usuário de glifo. `TodoTag` é definido mais adiante neste passo a passo.  
+5. Implemente `GenerateGlyph` definindo o elemento de interface do usuário do usuário de glifo. `TodoTag` é definido mais adiante neste passo a passo.  
   
      [!code-csharp[VSSDKTodoGlyphTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#4)]
      [!code-vb[VSSDKTodoGlyphTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#4)]  
   
-6.  Adicione uma classe chamada `TodoGlyphFactoryProvider` que implementa <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>. Exportar esta classe com um <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "TodoGlyph", um <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> de VsTextMarker depois, um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "código" e um <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de TodoTag.  
+6. Adicione uma classe chamada `TodoGlyphFactoryProvider` que implementa <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>. Exportar esta classe com um <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "TodoGlyph", um <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> de VsTextMarker depois, um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "código" e um <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de TodoTag.  
   
      [!code-csharp[VSSDKTodoGlyphTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#5)]
      [!code-vb[VSSDKTodoGlyphTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#5)]  
   
-7.  Implemente a <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A> método instanciando a `TodoGlyphFactory`.  
+7. Implemente a <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A> método instanciando a `TodoGlyphFactory`.  
   
      [!code-csharp[VSSDKTodoGlyphTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#6)]
      [!code-vb[VSSDKTodoGlyphTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#6)]  
@@ -75,39 +75,39 @@ Você pode personalizar a aparência das margens do editor ao usar extensões de
   
 #### <a name="to-define-a-todo-tag-and-tagger"></a>Para definir uma marca de tarefas pendentes e o marcador  
   
-1.  Adicione um novo arquivo de classe ao projeto e nomeie- `TodoTagger`.  
+1. Adicione um novo arquivo de classe ao projeto e nomeie- `TodoTagger`.  
   
-2.  Adicione as importações a seguir.  
+2. Adicione as importações a seguir.  
   
      [!code-csharp[VSSDKTodoGlyphTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#7)]
      [!code-vb[VSSDKTodoGlyphTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#7)]  
   
-3.  Adicione uma classe chamada `TodoTag`.  
+3. Adicione uma classe chamada `TodoTag`.  
   
      [!code-csharp[VSSDKTodoGlyphTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#8)]
      [!code-vb[VSSDKTodoGlyphTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#8)]  
   
-4.  Modificar a classe denominada `TodoTagger` que implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> do tipo `TodoTag`.  
+4. Modificar a classe denominada `TodoTagger` que implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> do tipo `TodoTag`.  
   
      [!code-csharp[VSSDKTodoGlyphTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#9)]
      [!code-vb[VSSDKTodoGlyphTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#9)]  
   
-5.  Para o `TodoTagger` classe, adicione campos privados para um <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> e para o texto a ser localizado na classificação abrange.  
+5. Para o `TodoTagger` classe, adicione campos privados para um <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> e para o texto a ser localizado na classificação abrange.  
   
      [!code-csharp[VSSDKTodoGlyphTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#10)]
      [!code-vb[VSSDKTodoGlyphTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#10)]  
   
-6.  Adicione um construtor que define o classificador.  
+6. Adicione um construtor que define o classificador.  
   
      [!code-csharp[VSSDKTodoGlyphTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#11)]
      [!code-vb[VSSDKTodoGlyphTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#11)]  
   
-7.  Implementar o <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> método localizando todos os a classificação abrange cujos nomes incluem a palavra "comment" e cujo texto inclui o texto de pesquisa. Sempre que o texto de pesquisa for encontrado, gerar novamente uma nova <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> do tipo `TodoTag`.  
+7. Implementar o <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> método localizando todos os a classificação abrange cujos nomes incluem a palavra "comment" e cujo texto inclui o texto de pesquisa. Sempre que o texto de pesquisa for encontrado, gerar novamente uma nova <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> do tipo `TodoTag`.  
   
      [!code-csharp[VSSDKTodoGlyphTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#12)]
      [!code-vb[VSSDKTodoGlyphTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#12)]  
   
-8.  Declarar um `TagsChanged` eventos.  
+8. Declarar um `TagsChanged` eventos.  
   
      [!code-csharp[VSSDKTodoGlyphTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#13)]
      [!code-vb[VSSDKTodoGlyphTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#13)]  
@@ -132,12 +132,12 @@ Você pode personalizar a aparência das margens do editor ao usar extensões de
   
 #### <a name="to-build-and-test-the-todoglyphtest-solution"></a>Para compilar e testar a solução TodoGlyphTest  
   
-1.  Compile a solução.  
+1. Compile a solução.  
   
-2.  Execute o projeto pressionando F5. Uma segunda instância do Visual Studio é instanciada.  
+2. Execute o projeto pressionando F5. Uma segunda instância do Visual Studio é instanciada.  
   
-3.  Certifique-se de que a margem do indicador está mostrando. (Sobre o **ferramentas** menu, clique em **opções**. Diante de **Editor de texto** página, certifique-se de que **margem do indicador** está selecionada.)  
+3. Certifique-se de que a margem do indicador está mostrando. (Sobre o **ferramentas** menu, clique em **opções**. Diante de **Editor de texto** página, certifique-se de que **margem do indicador** está selecionada.)  
   
-4.  Abra um arquivo de código com comentários. Adicione a palavra "todo" para uma das seções de comentário.  
+4. Abra um arquivo de código com comentários. Adicione a palavra "todo" para uma das seções de comentário.  
   
-5.  Um círculo azul claro que tem um contorno azul escuro deve aparecer na margem do indicador para a esquerda da janela de código.
+5. Um círculo azul claro que tem um contorno azul escuro deve aparecer na margem do indicador para a esquerda da janela de código.

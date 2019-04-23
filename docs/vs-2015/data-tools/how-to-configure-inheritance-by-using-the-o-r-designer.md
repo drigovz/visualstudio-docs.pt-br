@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115595"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Como: Configurar a herança usando o Designer Relacional de Objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "59662264"
   
 ### <a name="to-create-inherited-data-classes"></a>Para criar classes de dados herdadas  
   
-1.  Abra o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] adicionando um **Classes LINQ to SQL** item a um projeto existente do Visual Basic ou c#.  
+1. Abra o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] adicionando um **Classes LINQ to SQL** item a um projeto existente do Visual Basic ou c#.  
   
-2.  Arraste a tabela que você deseja usar como a classe base em [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Arraste a tabela que você deseja usar como a classe base em [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-3.  Arraste uma segunda cópia da tabela para o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] e renomeá-lo. Esta é a classe derivada, ou subclasse.  
+3. Arraste uma segunda cópia da tabela para o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] e renomeá-lo. Esta é a classe derivada, ou subclasse.  
   
-4.  Clique na guia **Herança** no **Object Relational Designer** da **Caixa de Ferramentas** e em seguida, clique na subclasse (a tabela que você renomeou) e conecta-se a classe base.  
+4. Clique na guia **Herança** no **Object Relational Designer** da **Caixa de Ferramentas** e em seguida, clique na subclasse (a tabela que você renomeou) e conecta-se a classe base.  
   
     > [!NOTE]
     >  Clique no item de **Herança** em **Caixa de Ferramentas** e solte o botão do mouse, clique na segunda cópia de classe que você criou na etapa 3 e depois clique na primeira classe que você criou na etapa 2. A seta na linha de herança irá apontar para a primeira classe.  
   
-5.  Em cada classe, excluir todas as propriedades do objeto que você não deseja que apareça e que não são usadas para associações. Você receberá um erro se você tentar excluir as propriedades do objeto usadas para associações: [A propriedade \<nome da propriedade > não pode ser excluída porque participa da associação \<nome da associação >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5. Em cada classe, excluir todas as propriedades do objeto que você não deseja que apareça e que não são usadas para associações. Você receberá um erro se você tentar excluir as propriedades do objeto usadas para associações: [A propriedade \<nome da propriedade > não pode ser excluída porque participa da associação \<nome da associação >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
     >  Como uma classe derivada herda as propriedades definidas na sua classe base, as mesmas colunas não podem ser definidas em cada classe. (As colunas são implementadas como propriedades.) Você pode ativar a criação das colunas na classe derivada definindo o modificador de herança na propriedade na classe base. Para obter mais informações, consulte [não está no BUILD: Substituindo propriedades e métodos](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
-6.  Selecione a linha de herança em [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+6. Selecione a linha de herança em [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-7.  No **propriedades** janela, defina as **propriedade discriminatória** ao nome da coluna que é usado para distinguir os registros em suas classes.  
+7. No **propriedades** janela, defina as **propriedade discriminatória** ao nome da coluna que é usado para distinguir os registros em suas classes.  
   
-8.  Defina a propriedade **Valor Discriminatório da Classe Derivada** para o valor no banco de dados que designa o registro como o tipo herdado. (Esse é o valor que são armazenados na coluna de discriminador e que é usado para designar a classe herdada.)  
+8. Defina a propriedade **Valor Discriminatório da Classe Derivada** para o valor no banco de dados que designa o registro como o tipo herdado. (Esse é o valor que são armazenados na coluna de discriminador e que é usado para designar a classe herdada.)  
   
 9. Defina as **valor Discriminatório da classe Base** propriedade para o valor que designa o registro como um tipo base. (Esse é o valor que são armazenados na coluna de discriminador e que é usado para designar a classe base.)  
   

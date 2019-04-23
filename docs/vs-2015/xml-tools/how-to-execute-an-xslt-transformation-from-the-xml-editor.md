@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf4696827f0c94e9eb9dfbd88a5e814298f823e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112592"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Como: Executar uma transformação XSLT do editor de XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ O editor XML permite que você associe uma folha de estilos XSLT com um document
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Para executar uma transformação XSLT de um documento XML  
   
-1.  Abrir um documento XML no editor XML.  
+1. Abrir um documento XML no editor XML.  
   
-2.  Associar uma folha de estilos XSLT com o documento XML.  
+2. Associar uma folha de estilos XSLT com o documento XML.  
   
-    -   Adicione uma instrução de processamento de `xml-stylesheet` para o documento XML. Por exemplo, adicione a seguinte linha `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` ao prólogo do documento.  
+    - Adicione uma instrução de processamento de `xml-stylesheet` para o documento XML. Por exemplo, adicione a seguinte linha `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` ao prólogo do documento.  
   
          - ou -  
   
-    -   Adicione a folha de estilos XSLT usando a **propriedades** janela. No documento **janela de propriedades**, clique no **procurar** botão para o **folha de estilos** campo, selecione a folha de estilos XSLT e clique em **abrir**.  
+    - Adicione a folha de estilos XSLT usando a **propriedades** janela. No documento **janela de propriedades**, clique no **procurar** botão para o **folha de estilos** campo, selecione a folha de estilos XSLT e clique em **abrir**.  
   
-3.  Clique o **saída ShowXSL** botão a **Editor de XML** barra de ferramentas.  
+3. Clique o **saída ShowXSL** botão a **Editor de XML** barra de ferramentas.  
   
     > [!NOTE]
     >  Se não houver nenhuma folha de estilos associada com o documento XML, avisos de uma caixa de diálogo você fornecer a folha de estilos ao uso.  
@@ -46,22 +46,22 @@ O editor XML permite que você associe uma folha de estilos XSLT com um document
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>Para executar uma transformação XSLT de uma folha de estilos XSLT  
   
-1.  Abra uma folha de estilos XSLT no editor XML.  
+1. Abra uma folha de estilos XSLT no editor XML.  
   
-2.  Especificar um documento XML na **entrada** campo do documento **propriedades** janela.  
+2. Especificar um documento XML na **entrada** campo do documento **propriedades** janela.  
   
     > [!NOTE]
     >  O documento XML é o documento de entrada usado para a transformação. Se um documento não for especificado quando a transformação XSLT é iniciada, o **abrir arquivo** caixa de diálogo é exibida e você pode especificar um documento no momento.  
   
-3.  Clique o **saída ShowXSLT** botão a **Editor de XML** barra de ferramentas.  
+3. Clique o **saída ShowXSLT** botão a **Editor de XML** barra de ferramentas.  
   
      A saída resultante de transformação XSLT são exibidas em uma nova janela do documento.  
   
 ### <a name="to-provide-a-different-output-file-name"></a>Para fornecer um nome de arquivo diferente de saída  
   
-1.  Especifique um nome de arquivo na **saída** campo do documento **propriedades** janela.  
+1. Especifique um nome de arquivo na **saída** campo do documento **propriedades** janela.  
   
-2.  Clique o **saída ShowXSLT** botão a **Editor de XML** barra de ferramentas.  
+2. Clique o **saída ShowXSLT** botão a **Editor de XML** barra de ferramentas.  
   
      A saída resultante de transformação XSLT é exibida em uma nova janela de documento e o editor usado na janela de saída depende da extensão de arquivo de seu **saída** propriedade de documento.  
   

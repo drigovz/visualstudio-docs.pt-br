@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d48cea795cbbe3b7cc749c5866bfd5e720ac768a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110447"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Passo a passo: Criando um aplicativo de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir esta explicação passo a passo, será necessário:  
   
--   Acesso ao banco de dados de exemplo Northwind.
+- Acesso ao banco de dados de exemplo Northwind.
   
 ## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Criando a solução de N camadas e a biblioteca de classes para manter o conjunto de dados (DataEntityTier)  
  A primeira etapa deste passo a passo é criar uma solução e dois projetos de biblioteca de classes. A primeira biblioteca de classes manterá o conjunto de dados (a classe DataSet digitada gerada e DataTables, que manterá os dados do aplicativo). Este projeto é usado como a camada de entidade de dados do aplicativo e geralmente está localizada na camada intermediária. O Designer de conjunto de dados é usado para criar o conjunto de dados inicial e separar automaticamente o código em duas bibliotecas de classes.  
@@ -68,20 +68,20 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Para criar a solução de N camadas e a biblioteca de classes DataEntityTier  
   
-1.  Dos **arquivo** menu, crie um novo projeto.  
+1. Dos **arquivo** menu, crie um novo projeto.  
   
     > [!NOTE]
     >  O **Dataset Designer** tem suporte no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e projetos c#. Crie o novo projeto em uma dessas linguagens.  
   
-2.  No **novo projeto** na caixa de **tipos de projeto** painel, clique em **Windows**.  
+2. No **novo projeto** na caixa de **tipos de projeto** painel, clique em **Windows**.  
   
-3.  Clique o **biblioteca de classes** modelo.  
+3. Clique o **biblioteca de classes** modelo.  
   
-4.  Nomeie o projeto como **DataEntityTier**.  
+4. Nomeie o projeto como **DataEntityTier**.  
   
-5.  Nomeie a solução **NTierWalkthrough**.  
+5. Nomeie a solução **NTierWalkthrough**.  
   
-6.  Clique em **OK**.  
+6. Clique em **OK**.  
   
      Uma solução NTierWalkthrough que contém o projeto DataEntityTier é criada e adicionada ao **Gerenciador de Soluções**.  
   
@@ -90,11 +90,11 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-create-the-new-class-library-for-the-tableadapters"></a>Para criar a nova biblioteca de classes para os TableAdapters  
   
-1.  Dos **arquivo** menu, adicione um novo projeto à solução NTierWalkthrough.  
+1. Dos **arquivo** menu, adicione um novo projeto à solução NTierWalkthrough.  
   
-2.  No **novo projeto** na caixa de **modelos** painel, clique em **biblioteca de classes**.  
+2. No **novo projeto** na caixa de **modelos** painel, clique em **biblioteca de classes**.  
   
-3.  Nomeie o projeto **DataAccessTier** e clique em **Okey**.  
+3. Nomeie o projeto **DataAccessTier** e clique em **Okey**.  
   
      O projeto DataAccessTier é criado e adicionado à solução NTierWalkthrough.  
   
@@ -106,15 +106,15 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-create-the-dataset"></a>Para criar o conjunto de dados  
   
-1.  Clique em DataAccessTier em **Gerenciador de soluções**.  
+1. Clique em DataAccessTier em **Gerenciador de soluções**.  
   
-2.  No menu **Dados**, clique em **Mostrar Fontes de Dados**.  
+2. No menu **Dados**, clique em **Mostrar Fontes de Dados**.  
   
-3.  No **fontes de dados** janela, clique em **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
+3. No **fontes de dados** janela, clique em **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-4.  Sobre o **escolher um tipo de fonte de dados** , clique em **banco de dados** e, em seguida, clique em **próxima**.  
+4. Sobre o **escolher um tipo de fonte de dados** , clique em **banco de dados** e, em seguida, clique em **próxima**.  
   
-5.  Na página **Escolha a Conexão de Dados**, execute uma das seguintes ações:  
+5. Na página **Escolha a Conexão de Dados**, execute uma das seguintes ações:  
   
      Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, clique nela.  
   
@@ -122,14 +122,14 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
      Clique em **nova Conexão** para abrir o **Adicionar Conexão** caixa de diálogo.  
   
-6.  Se o banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, clique em **próxima**.  
+6. Se o banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, clique em **próxima**.  
   
     > [!NOTE]
     >  Se você escolheu um arquivo do banco de dados local (em vez de se conectar ao SQL Server), talvez seja perguntado se deseja adicionar o arquivo ao projeto. Clique em **Sim** para adicionar o arquivo de banco de dados ao projeto.  
   
-7.  Clique em **próxima** sobre o **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** página.  
+7. Clique em **próxima** sobre o **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** página.  
   
-8.  Expanda o nó **Tabelas** na página **Escolher Objetos do Banco de Dados**.  
+8. Expanda o nó **Tabelas** na página **Escolher Objetos do Banco de Dados**.  
   
 9. Marque as caixas de seleção para o **clientes** e **pedidos** tabelas e clique **concluir**.  
   
@@ -160,11 +160,11 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-create-a-new-wcf-service-application"></a>Para criar um novo aplicativo de Serviço WCF  
   
-1.  Dos **arquivo** menu, adicione um novo projeto à solução NTierWalkthrough.  
+1. Dos **arquivo** menu, adicione um novo projeto à solução NTierWalkthrough.  
   
-2.  No **novo projeto** na caixa de **tipos de projeto** painel, clique em **WCF**. No **modelos** painel, clique em **WCF Service Library**.  
+2. No **novo projeto** na caixa de **tipos de projeto** painel, clique em **WCF**. No **modelos** painel, clique em **WCF Service Library**.  
   
-3.  Nomeie o projeto **DataService** e clique em **Okey**.  
+3. Nomeie o projeto **DataService** e clique em **Okey**.  
   
      O projeto DataService é criado e adicionado à solução NTierWalkthrough.  
   
@@ -173,48 +173,48 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Para criar um método na camada de acesso a dados que retorna a tabela Clientes  
   
-1.  Na **Gerenciador de soluções**, clique duas vezes em NorthwindDataSet para abrir o conjunto de dados no Designer de conjunto de dados.  
+1. Na **Gerenciador de soluções**, clique duas vezes em NorthwindDataSet para abrir o conjunto de dados no Designer de conjunto de dados.  
   
-2.  Clique com botão direito CustomersTableAdapter e clique em **Add Query** para editar o Tableadapter.  
+2. Clique com botão direito CustomersTableAdapter e clique em **Add Query** para editar o Tableadapter.  
   
-3.  Na página **Escolher um Tipo de Comando**, mantenha o valor padrão de **Usar instruções SQL** e clique em **Próximo**.  
+3. Na página **Escolher um Tipo de Comando**, mantenha o valor padrão de **Usar instruções SQL** e clique em **Próximo**.  
   
-4.  Na página **Escolher um Tipo de Consulta**, mantenha o valor padrão de **SELECT que retorna linhas** e clique em **Próximo**.  
+4. Na página **Escolher um Tipo de Consulta**, mantenha o valor padrão de **SELECT que retorna linhas** e clique em **Próximo**.  
   
-5.  Na página **Especificar uma instrução SQL SELECT**, mantenha a consulta padrão e clique em **Próximo**.  
+5. Na página **Especificar uma instrução SQL SELECT**, mantenha a consulta padrão e clique em **Próximo**.  
   
-6.  Na página **Escolher Métodos a Serem Gerados**, digite **GetCustomers** para o **Nome do método** na seção **Retornar uma DataTable**.  
+6. Na página **Escolher Métodos a Serem Gerados**, digite **GetCustomers** para o **Nome do método** na seção **Retornar uma DataTable**.  
   
-7.  Clique em **Finalizar**.  
+7. Clique em **Finalizar**.  
   
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Para criar um método na camada de acesso a dados que retorna a tabela Pedidos  
   
-1.  Clique com botão direito OrdersTableAdapter e clique em **Add Query**.  
+1. Clique com botão direito OrdersTableAdapter e clique em **Add Query**.  
   
-2.  Na página **Escolher um Tipo de Comando**, mantenha o valor padrão de **Usar instruções SQL** e clique em **Próximo**.  
+2. Na página **Escolher um Tipo de Comando**, mantenha o valor padrão de **Usar instruções SQL** e clique em **Próximo**.  
   
-3.  Na página **Escolher um Tipo de Consulta**, mantenha o valor padrão de **SELECT que retorna linhas** e clique em **Próximo**.  
+3. Na página **Escolher um Tipo de Consulta**, mantenha o valor padrão de **SELECT que retorna linhas** e clique em **Próximo**.  
   
-4.  Na página **Especificar uma instrução SQL SELECT**, mantenha a consulta padrão e clique em **Próximo**.  
+4. Na página **Especificar uma instrução SQL SELECT**, mantenha a consulta padrão e clique em **Próximo**.  
   
-5.  Na página **Escolher Métodos a Serem Gerados**, digite **GetOrders** para o **Nome do método** na seção **Retornar uma DataTable**.  
+5. Na página **Escolher Métodos a Serem Gerados**, digite **GetOrders** para o **Nome do método** na seção **Retornar uma DataTable**.  
   
-6.  Clique em **Finalizar**.  
+6. Clique em **Finalizar**.  
   
-7.  No menu **Compilar**, clique em **Compilar Solução**.  
+7. No menu **Compilar**, clique em **Compilar Solução**.  
   
 ## <a name="adding-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Adicionando uma referência à entidade de dados e às camadas de acesso a dados para o serviço de dados  
  Como o serviço de dados requer informações do conjunto de dados e dos TableAdapters, adicione referências aos projetos DataEntityTier e DataAccessTier.  
   
 #### <a name="to-add-references-to-the-data-service"></a>Para adicionar referência aos serviço de dados  
   
-1.  Clique com botão direito DataService na **Gerenciador de soluções** e clique em **adicionar referência**.  
+1. Clique com botão direito DataService na **Gerenciador de soluções** e clique em **adicionar referência**.  
   
-2.  Clique na guia **Projetos** na caixa de diálogo **Adicionar Referência**.  
+2. Clique na guia **Projetos** na caixa de diálogo **Adicionar Referência**.  
   
-3.  Escolha os projetos **DataAccessTier** e **DataEntityTier**.  
+3. Escolha os projetos **DataAccessTier** e **DataEntityTier**.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>Adicionando funções ao serviço para chamar os métodos GetCustomers e GetOrders na camada de acesso a dados  
  Agora que a camada de acesso a dados contém os métodos para retornar dados, crie métodos no serviço de dados para chamar os métodos na camada de acesso a dados.  
@@ -224,9 +224,9 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Para criar as funções GetCustomers e GetOrders no serviço de dados  
   
-1.  No **DataService** do projeto, clique duas vezes em IService1.vb ou IService1.cs.  
+1. No **DataService** do projeto, clique duas vezes em IService1.vb ou IService1.cs.  
   
-2.  Adicione o seguinte código no comentário **Adicionar suas operações de serviço aqui**:  
+2. Adicione o seguinte código no comentário **Adicionar suas operações de serviço aqui**:  
   
     ```vb  
     <OperationContract()> _  
@@ -245,9 +245,9 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
     ```  
   
-3.  No projeto DataService, dê um clique duplo em Service1.vb (ou Service1.cs).  
+3. No projeto DataService, dê um clique duplo em Service1.vb (ou Service1.cs).  
   
-4.  Adicione o seguinte código à classe Service1:  
+4. Adicione o seguinte código à classe Service1:  
   
     ```vb  
     Public Function GetCustomers() As DataEntityTier.NorthwindDataSet.CustomersDataTable Implements IService1.GetCustomers  
@@ -280,46 +280,46 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
     }  
     ```  
   
-5.  No menu **Compilar**, clique em **Compilar Solução**.  
+5. No menu **Compilar**, clique em **Compilar Solução**.  
   
 ## <a name="creating-a-presentation-tier-to-display-data-from-the-data-service"></a>Criando uma camada de apresentação para exibir dados a partir do serviço de dados  
  Agora que a solução contém o serviço de dados que possui métodos chamados na camada de acesso a dados, crie outro projeto que será chamado no serviço de dados e apresente os dados aos usuários. Neste passo a passo, crie um aplicativo do Windows Forms, o qual será a camada de apresentação do aplicativo de N camadas.  
   
 #### <a name="to-create-the-presentation-tier-project"></a>Para criar o projeto da camada de apresentação  
   
-1.  Dos **arquivo** menu, adicione um novo projeto à solução NTierWalkthrough.  
+1. Dos **arquivo** menu, adicione um novo projeto à solução NTierWalkthrough.  
   
-2.  No **novo projeto** na caixa de **tipos de projeto** painel, clique em **Windows**. No **modelos** painel, clique em **aplicativo de formulários do Windows**.  
+2. No **novo projeto** na caixa de **tipos de projeto** painel, clique em **Windows**. No **modelos** painel, clique em **aplicativo de formulários do Windows**.  
   
-3.  Nomeie o projeto como **PresentationTier** e clique em **OK**.  
+3. Nomeie o projeto como **PresentationTier** e clique em **OK**.  
   
-4.  O projeto PresentationTier é criado e adicionado à solução NTierWalkthrough.  
+4. O projeto PresentationTier é criado e adicionado à solução NTierWalkthrough.  
   
 ## <a name="setting-the-presentationtier-project-as-the-startup-project"></a>Configurando o projeto PresentationTier como o projeto de inicialização  
  Como a camada de apresentação é o aplicativo cliente real usado para apresentar e interagir com os dados, você deve configurar o projeto PresentationTier para ser o projeto de inicialização.  
   
 #### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Para configurar o novo projeto de camada de apresentação como o projeto de inicialização  
   
--   Em **Gerenciador de Soluções**, clique com o botão direito do mouse em **PresentationTier** e clique em **Definir como Projeto de Inicialização**.  
+- Em **Gerenciador de Soluções**, clique com o botão direito do mouse em **PresentationTier** e clique em **Definir como Projeto de Inicialização**.  
   
 ## <a name="adding-references-to-the-presentation-tier"></a>Adicionando referências à camada de apresentação  
  O aplicativo cliente PresentationTier requer uma referência de serviço para o serviço de dados a fim de acessar os métodos no serviço. Além disso, uma referência ao conjunto de dados é necessária para permitir o compartilhamento de tipos pelo serviço WCF. O código adicionado à classe do conjunto de dados parcial estará disponível na camada de apresentação somente após você permitir o compartilhamento de tipos por meio do serviço de dados. Como você geralmente adiciona código como validação para os eventos de alteração de linha e coluna de uma tabela de dados, é provável que você queira acessar esse código a partir do cliente.  
   
 #### <a name="to-add-a-reference-to-the-presentation-tier"></a>Para adicionar uma referência à camada de apresentação  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito PresentationTier e clique em **adicionar referência**.  
+1. Na **Gerenciador de soluções**, clique com botão direito PresentationTier e clique em **adicionar referência**.  
   
-2.  No **adicionar referência** caixa de diálogo, clique o **projetos** guia.  
+2. No **adicionar referência** caixa de diálogo, clique o **projetos** guia.  
   
-3.  Selecione **DataEntityTier** e clique em **Okey**.  
+3. Selecione **DataEntityTier** e clique em **Okey**.  
   
 #### <a name="to-add-a-service-reference-to-the-presentation-tier"></a>Para adicionar uma referência de serviço à camada de apresentação  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito PresentationTier e clique em **Add Service Reference**.  
+1. Na **Gerenciador de soluções**, clique com botão direito PresentationTier e clique em **Add Service Reference**.  
   
-2.  Na caixa de diálogo **Adicionar Referência de Serviço**, clique em **Descobrir**.  
+2. Na caixa de diálogo **Adicionar Referência de Serviço**, clique em **Descobrir**.  
   
-3.  Selecione **Service1** e clique em **Okey**.  
+3. Selecione **Service1** e clique em **Okey**.  
   
     > [!NOTE]
     >  Se você tiver vários serviços no computador atual, escolha o serviço criado anteriormente neste passo a passo (o serviço que contém os métodos GetCustomers e GetOrders).  
@@ -329,19 +329,19 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>Para adicionar duas associações de dados DataGridViews ao formulário  
   
-1.  Na **Gerenciador de soluções**, selecione o projeto PresentationTier.  
+1. Na **Gerenciador de soluções**, selecione o projeto PresentationTier.  
   
-2.  Na janela **Fontes de Dados**, expanda **NorthwindDataSet** e localize o nó **Clientes**.  
+2. Na janela **Fontes de Dados**, expanda **NorthwindDataSet** e localize o nó **Clientes**.  
   
-3.  Arraste o nó **Clientes** para Form1.  
+3. Arraste o nó **Clientes** para Form1.  
   
-4.  Na janela **Fontes de Dados**, expanda o nó **Clientes** e localize o nó **Pedidos** relacionado (o nó **Pedidos** aninhado no nó **Clientes**).  
+4. Na janela **Fontes de Dados**, expanda o nó **Clientes** e localize o nó **Pedidos** relacionado (o nó **Pedidos** aninhado no nó **Clientes**).  
   
-5.  Arraste o nó **Pedidos** relacionado para Form1.  
+5. Arraste o nó **Pedidos** relacionado para Form1.  
   
-6.  Crie um manipulador de eventos `Form1_Load` ao clicar duas vezes em uma área vazia do formulário.  
+6. Crie um manipulador de eventos `Form1_Load` ao clicar duas vezes em uma área vazia do formulário.  
   
-7.  Adicione o seguinte código ao manipulador de eventos do `Form1_Load`.  
+7. Adicione o seguinte código ao manipulador de eventos do `Form1_Load`.  
   
     ```vb  
     Dim DataSvc As New ServiceReference1.Service1Client  
@@ -365,25 +365,25 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Para aumentar o valor maxReceivedMessageSize  
   
-1.  Na **Gerenciador de soluções**, duas vezes no arquivo App. config no projeto PresentationTier.  
+1. Na **Gerenciador de soluções**, duas vezes no arquivo App. config no projeto PresentationTier.  
   
-2.  Encontre o atributo de tamanho **maxReceivedMessage** e altere o valor para `6553600`.  
+2. Encontre o atributo de tamanho **maxReceivedMessage** e altere o valor para `6553600`.  
   
 ## <a name="testing-the-application"></a>Testando o aplicativo  
  Execute o aplicativo. Os dados são recuperados a partir do serviço de dados e exibidos no formulário.  
   
 #### <a name="to-test-the-application"></a>Para testar o aplicativo  
   
-1.  Pressione F5.  
+1. Pressione F5.  
   
-2.  Os dados das tabelas Clientes e Pedidos são recuperados a partir do serviço de dados e exibidos no formulário.  
+2. Os dados das tabelas Clientes e Pedidos são recuperados a partir do serviço de dados e exibidos no formulário.  
   
 ## <a name="next-steps"></a>Próximas etapas  
  Dependendo dos requisitos do aplicativo, existem várias etapas que você talvez queira realizar após salvar os dados relacionados no aplicativo baseado em Windows. Por exemplo, você poderia fazer as seguintes melhorias a este aplicativo:  
   
--   Adicionar validação ao conjunto de dados. Para obter informações, consulte [passo a passo: Adicionando validação a um aplicativo de dados de N camadas](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Adicionar validação ao conjunto de dados. Para obter informações, consulte [passo a passo: Adicionando validação a um aplicativo de dados de N camadas](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
--   Adicionar métodos adicionais ao serviço para atualizar dados novamente no banco de dados.  
+- Adicionar métodos adicionais ao serviço para atualizar dados novamente no banco de dados.  
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com conjuntos de dados em aplicativos de n camadas](../data-tools/work-with-datasets-in-n-tier-applications.md)   

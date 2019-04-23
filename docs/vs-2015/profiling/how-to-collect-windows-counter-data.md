@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4fb88d4db82bde5f93d33716b65e2e8a4b48305a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115660"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Como coletar dados do contador do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Os contadores do Windows são contadores de desempenho do sistema que podem ser 
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ### <a name="to-collect-windows-counter-data"></a>Para coletar dados do contador do Windows  
   
-1.  No Gerenciador de Desempenho, clique com botão direito do mouse na sessão para a qual você deseja configurar os contadores do Windows e selecione **Propriedades**.  
+1. No Gerenciador de Desempenho, clique com botão direito do mouse na sessão para a qual você deseja configurar os contadores do Windows e selecione **Propriedades**.  
   
-2.  Nas **Páginas de Propriedades**, clique em **Contadores do Windows**.  
+2. Nas **Páginas de Propriedades**, clique em **Contadores do Windows**.  
   
-3.  Selecione a caixa de seleção **Coletar Contadores do Windows**.  
+3. Selecione a caixa de seleção **Coletar Contadores do Windows**.  
   
-4.  Na caixa de texto **Intervalo de coleta (ms)**, digite um intervalo de tempo.  
+4. Na caixa de texto **Intervalo de coleta (ms)**, digite um intervalo de tempo.  
   
-5.  Selecione uma categoria da lista suspensa **Categoria de Contador**.  
+5. Selecione uma categoria da lista suspensa **Categoria de Contador**.  
   
-6.  Selecione uma instância da lista suspensa de **Instância**.  
+6. Selecione uma instância da lista suspensa de **Instância**.  
   
-7.  Selecione os contadores que você deseja usar ao analisar seu aplicativo.  
+7. Selecione os contadores que você deseja usar ao analisar seu aplicativo.  
   
-8.  Clique em **Aplicar.**  
+8. Clique em **Aplicar.**  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   

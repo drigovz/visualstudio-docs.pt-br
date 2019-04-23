@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0652f8dbb1acfec111dcc587f3ce4ba2496eb4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110460"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Como: Definir uma zona de segurança para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Ao definir permissões de segurança para um aplicativo ClickOnce de acesso do c
   
 ### <a name="to-set-a-security-zone"></a>Para definir uma zona de segurança  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique na guia **Segurança**.  
+2. Clique na guia **Segurança**.  
   
-3.  Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
+3. Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
   
-4.  Selecione o **este é um aplicativo de confiança parcial** botão de opção.  
+4. Selecione o **este é um aplicativo de confiança parcial** botão de opção.  
   
      Os controles na **permissões de segurança do ClickOnce** seção estão habilitados.  
   
-5.  No **seu aplicativo será instalado a partir de zona** lista suspensa, selecione uma zona de segurança.  
+5. No **seu aplicativo será instalado a partir de zona** lista suspensa, selecione uma zona de segurança.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

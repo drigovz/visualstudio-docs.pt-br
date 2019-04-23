@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110538"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 ## <a name="undoredo"></a>Desfazer/refazer  
  Desfazer/refaz o recurso é habilitado no modo de gráfico para as seguintes ações:  
   
--   Adicionando um único nó arrastando e soltando-se.  
+- Adicionando um único nó arrastando e soltando-se.  
   
--   Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer ou em consultas de exibição de Início.  
+- Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer ou em consultas de exibição de Início.  
   
--   Excluindo única ou mais nós.  
+- Excluindo única ou mais nós.  
   
 ## <a name="zoom"></a>Aplicar Zoom  
  O zoom está disponível no canto inferior direito do modo de gráfico.  

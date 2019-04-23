@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112280"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Como: criar uma associação entre classes LINQ to SQL (O/R Designer)
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Como: Criar uma associação entre classes LINQ to SQL (O/R Designer)
 As associações entre classes de entidade no [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] são análogas às relações entre tabelas em um banco de dados. Você pode criar associações entre classes de entidade usando a caixa de diálogo **Editor de Associação**.
 
 Você deve selecionar uma classe pai e uma classe filho ao usar a caixa de diálogo **Editor de Associação** para criar uma associação. A classe pai é a classe de entidade que contém a chave primária; a classe filho é a classe de entidade que contém a chave estrangeira. Por exemplo, se as classes de entidade foram criadas que mapeiam para o `Northwind Customers` e `Orders` tabelas, o `Customer` classe seria a classe pai e o `Order` classe seria a classe filho.
@@ -36,15 +36,15 @@ Depois de criar uma associação, quando você seleciona a associação no **Des
 
 ## <a name="to-create-an-association-between-entity-classes"></a>Para criar uma associação entre classes de entidade
 
-1.  Clique com o botão direito do mouse na classe de entidade que representa a classe pai na associação, aponte-a para **Adicionar** e clique em **Associação**.
+1. Clique com o botão direito do mouse na classe de entidade que representa a classe pai na associação, aponte-a para **Adicionar** e clique em **Associação**.
 
-2.  Verifique se a **Classe Pai** correta está selecionada na caixa de diálogo **Editor de Associação**.
+2. Verifique se a **Classe Pai** correta está selecionada na caixa de diálogo **Editor de Associação**.
 
-3.  Selecione a **Classe Filho** na caixa de combinação.
+3. Selecione a **Classe Filho** na caixa de combinação.
 
-4.  Selecione as **Propriedades de Associação** que relacionam as classes. Geralmente, isso mapeia para a relação de chave estrangeira definida no banco de dados. Por exemplo, nos `Customers` e `Orders` associação, o **propriedades de associação** são o `CustomerID` para cada classe.
+4. Selecione as **Propriedades de Associação** que relacionam as classes. Geralmente, isso mapeia para a relação de chave estrangeira definida no banco de dados. Por exemplo, nos `Customers` e `Orders` associação, o **propriedades de associação** são o `CustomerID` para cada classe.
 
-5.  Clique em **OK** para criar a associação.
+5. Clique em **OK** para criar a associação.
 
 ## <a name="see-also"></a>Consulte também
 
@@ -52,4 +52,4 @@ Depois de criar uma associação, quando você seleciona a associação no **Des
 - [Passo a passo: Criando o LINQ para classes SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Métodos DataContext (Designer Relacional de Objetos)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Como representar chaves primárias](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)
+- [Como: Representar chaves primárias](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

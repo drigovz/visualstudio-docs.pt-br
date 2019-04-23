@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103506"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Página de publicação, Designer de projeto (desenvolvimento do Office no Visual Studio)
   O **Publish** página do **Designer de projeto** é usado para configurar as propriedades de implantação.
@@ -84,9 +84,9 @@ ms.locfileid: "54869665"
 
 - Comportamento de carregamento de suplementos do VSTO.
 
-  -   Carregar na inicialização: Especifica que o suplemento do VSTO carrega quando o aplicativo do Office é iniciado.
+  - Carregar na inicialização: Especifica que o suplemento do VSTO carrega quando o aplicativo do Office é iniciado.
 
-  -   Carregar sob demanda: Especifica que o suplemento do VSTO carrega quando o aplicativo requer, como quando um usuário clica em um elemento de interface do usuário que usa a funcionalidade no suplemento do VSTO.
+  - Carregar sob demanda: Especifica que o suplemento do VSTO carrega quando o aplicativo requer, como quando um usuário clica em um elemento de interface do usuário que usa a funcionalidade no suplemento do VSTO.
 
   **Idioma de publicação** essa opção define o idioma dos termos de licença do Software Microsoft e inclui os pacotes de idiomas na lista de pré-requisitos. Ele não afeta o idioma da personalização. O idioma no programa de instalação é determinado pelos idiomas instalados do Visual Studio.
 

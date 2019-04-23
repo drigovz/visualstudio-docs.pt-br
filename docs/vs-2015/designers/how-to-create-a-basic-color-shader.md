@@ -9,27 +9,27 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117753"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Como criar um sombreador de cor básico
+# <a name="how-to-create-a-basic-color-shader"></a>Como: Criar um sombreador de cores básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed Graph Shader Language) para criar um sombreador de cor simples. Esse sombreador define a cor final em um valor de cor RGB constante.  
   
  Este documento demonstra essas atividades:  
   
--   Remover nós de um grafo  
+- Remover nós de um grafo  
   
--   Adicionar nós a um grafo  
+- Adicionar nós a um grafo  
   
--   Configurar propriedades de nó  
+- Configurar propriedades de nó  
   
--   Conectar nós  
+- Conectar nós  
   
 ## <a name="creating-a-flat-color-shader"></a>Criar um sombreador de cor simples  
  Você pode implementar um sombreador de cor simples gravando o valor de cor de uma constante de cor RGB na cor de saída final.  
@@ -59,6 +59,6 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)   
+ [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

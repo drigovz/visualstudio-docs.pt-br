@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df11ccfc2057da37094c632c10fc9c1a936cf43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bc0797fe993a9a640c3fcc15f0c6dc364a55687d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110954"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrando um serviço de linguagem herdado
 Você pode migrar um serviço de linguagem herdado para uma versão posterior do Visual Studio atualizando o projeto e adicionando um arquivo vsixmanifest ao projeto. O serviço de linguagem continuará a funcionar como antes, porque o editor do Visual Studio se adapta a ele.
@@ -37,9 +37,9 @@ Você pode migrar um serviço de linguagem herdado para uma versão posterior do
 
 #### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Para migrar um serviço de linguagem do Visual Studio 2008 para uma versão posterior
 
-1.  Instale as versões mais recentes do Visual Studio e SDK do Visual Studio. Para obter mais informações sobre as maneiras de instalar o SDK, consulte [instalando o SDK do Visual Studio](../../extensibility/installing-the-visual-studio-sdk.md).
+1. Instale as versões mais recentes do Visual Studio e SDK do Visual Studio. Para obter mais informações sobre as maneiras de instalar o SDK, consulte [instalando o SDK do Visual Studio](../../extensibility/installing-the-visual-studio-sdk.md).
 
-2.  Edite o arquivo de RegExLangServ.csproj (sem carregá-los no Visual Studio.
+2. Edite o arquivo de RegExLangServ.csproj (sem carregá-los no Visual Studio.
 
      No `Import` nó que se refere ao arquivo Microsoft.VsSDK.targets, substitua o valor com o texto a seguir.
 
@@ -47,29 +47,29 @@ Você pode migrar um serviço de linguagem herdado para uma versão posterior do
     $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v14.0\VSSDK\Microsoft.VsSDK.targets
     ```
 
-3.  Salve o arquivo e, em seguida, fechá-lo.
+3. Salve o arquivo e, em seguida, fechá-lo.
 
-4.  Abra a solução RegExLangServ.sln.
+4. Abra a solução RegExLangServ.sln.
 
-5.  O **atualização unidirecional** janela é exibida. Clique em **OK**.
+5. O **atualização unidirecional** janela é exibida. Clique em **OK**.
 
-6.  Atualize as propriedades do projeto. Abra o **propriedades do projeto** selecionando o nó do projeto na **Gerenciador de soluções**, com o botão direito e selecionando **propriedades**.
+6. Atualize as propriedades do projeto. Abra o **propriedades do projeto** selecionando o nó do projeto na **Gerenciador de soluções**, com o botão direito e selecionando **propriedades**.
 
-    -   Sobre o **Application** , altere **estrutura de destino** para **4.6.1**.
+    - Sobre o **Application** , altere **estrutura de destino** para **4.6.1**.
 
-    -   No **Debug** guia, o **Iniciar programa externo** , digite  **\<caminho de instalação do Visual Studio > \Common7\IDE\devenv.exe.**.
+    - No **Debug** guia, o **Iniciar programa externo** , digite  **\<caminho de instalação do Visual Studio > \Common7\IDE\devenv.exe.**.
 
          No **argumentos de linha de comando** , digite /**rootsuffix Exp**.
 
-7.  Atualize as referências a seguir:
+7. Atualize as referências a seguir:
 
-    -   Remova a referência ao Microsoft.VisualStudio.Shell.9.0.dll e, em seguida, adicionar referências a Microsoft.VisualStudio.Shell.14.0.dll e Microsoft.VisualStudio.Shell.Immutable.11.0.dll.
+    - Remova a referência ao Microsoft.VisualStudio.Shell.9.0.dll e, em seguida, adicionar referências a Microsoft.VisualStudio.Shell.14.0.dll e Microsoft.VisualStudio.Shell.Immutable.11.0.dll.
 
-    -   Remova a referência ao Microsoft.VisualStudio.Package.LanguageService.9.0.dll e, em seguida, adicionar uma referência ao Microsoft.VisualStudio.Package.LanguageService.14.0.dll.
+    - Remova a referência ao Microsoft.VisualStudio.Package.LanguageService.9.0.dll e, em seguida, adicionar uma referência ao Microsoft.VisualStudio.Package.LanguageService.14.0.dll.
 
-    -   Adicione uma referência ao Microsoft.VisualStudio.Shell.Interop.10.0.dll.
+    - Adicione uma referência ao Microsoft.VisualStudio.Shell.Interop.10.0.dll.
 
-8.  Abra o arquivo VsPkg.cs e altere o valor da `DefaultRegistryRoot` atributo
+8. Abra o arquivo VsPkg.cs e altere o valor da `DefaultRegistryRoot` atributo
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
@@ -83,25 +83,25 @@ Você pode migrar um serviço de linguagem herdado para uma versão posterior do
 
 10. Você deve adicionar um arquivo vsixmanifest.
 
-    -   Copie esse arquivo de uma extensão existente no diretório do projeto. (Uma maneira de obter esse arquivo é criar um projeto do VSIX (sob **arquivo**, clique em **New**, em seguida, clique em **projeto**. Clique em Visual Basic ou c# **extensibilidade**, em seguida, selecione **projeto VSIX**.)
+    - Copie esse arquivo de uma extensão existente no diretório do projeto. (Uma maneira de obter esse arquivo é criar um projeto do VSIX (sob **arquivo**, clique em **New**, em seguida, clique em **projeto**. Clique em Visual Basic ou c# **extensibilidade**, em seguida, selecione **projeto VSIX**.)
 
-    -   Adicione o arquivo ao seu projeto.
+    - Adicione o arquivo ao seu projeto.
 
-    -   No arquivo de **propriedades**, defina **Build Action** para **None**.
+    - No arquivo de **propriedades**, defina **Build Action** para **None**.
 
-    -   Abra o arquivo com o **Editor de manifesto do VSIX**.
+    - Abra o arquivo com o **Editor de manifesto do VSIX**.
 
-    -   Altere os campos a seguir:
+    - Altere os campos a seguir:
 
-    -   **ID**: RegExLangServ
+    - **ID**: RegExLangServ
 
-    -   **Nome do produto**: RegExLangServ
+    - **Nome do produto**: RegExLangServ
 
-    -   **Descrição**: Um serviço de linguagem de expressão regular.
+    - **Descrição**: Um serviço de linguagem de expressão regular.
 
-    -   Sob **ativos**, clique em **New**, selecione o **tipo** para **VSPackage**, defina o **fonte** ao **um projeto na solução atual**e, em seguida, defina as **projeto** para **RegExLangServ**.
+    - Sob **ativos**, clique em **New**, selecione o **tipo** para **VSPackage**, defina o **fonte** ao **um projeto na solução atual**e, em seguida, defina as **projeto** para **RegExLangServ**.
 
-    -   Salve e feche o arquivo.
+    - Salve e feche o arquivo.
 
 11. Compile a solução. Os arquivos criados são implantados **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.
 

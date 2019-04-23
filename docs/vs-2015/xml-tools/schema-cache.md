@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115985"
 ---
 # <a name="schema-cache"></a>Cache de esquema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ O editor XML fornece um cache de esquema localizado no diretório de %InstallRoo
 
 #### <a name="to-change-the-schema-cache-location"></a>Para alterar o local de cache do esquema  
 
-1.  No menu **Ferramentas**, selecione **Opções**.  
+1. No menu **Ferramentas**, selecione **Opções**.  
 
-2.  Expandir **Editor de texto**, expanda **XML**e, em seguida, clique em **diversos**.  
+2. Expandir **Editor de texto**, expanda **XML**e, em seguida, clique em **diversos**.  
 
-3.  Clique o **navegue** botão a **esquemas** campo.  
+3. Clique o **navegue** botão a **esquemas** campo.  
 
-4.  Selecione a pasta de cache de esquema e clique em **Okey**.  
+4. Selecione a pasta de cache de esquema e clique em **Okey**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>Para adicionar um diretório diferente de esquemas comuns  
 
-1.  Edite o arquivo de catalog.xml no diretório de cache do editor XML.  
+1. Edite o arquivo de catalog.xml no diretório de cache do editor XML.  
 
-2.  Adicionar um novo elemento de `<Catalog href="…"/>` que aponta para o diretório de esquemas adicionais.  
+2. Adicionar um novo elemento de `<Catalog href="…"/>` que aponta para o diretório de esquemas adicionais.  
 
-3.  Salve as alterações.  
+3. Salve as alterações.  
 
      O catálogo é recarregado automaticamente.  
 

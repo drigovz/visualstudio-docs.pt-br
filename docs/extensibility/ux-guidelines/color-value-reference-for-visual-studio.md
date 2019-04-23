@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118078"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referência de valor de cor para o Visual Studio
 
@@ -26,13 +26,13 @@ Para tokens de cor para usar com a interface do usuário existente, consulte [co
 
 Ao usar este guia de referência, lembre-se:
 
--   **Sempre copie matizes primeiro e segundo plano juntas.** Não escolha um primeiro plano de um elemento de interface do usuário e um plano de fundo de outro, só porque você deseja que os matizes.
+- **Sempre copie matizes primeiro e segundo plano juntas.** Não escolha um primeiro plano de um elemento de interface do usuário e um plano de fundo de outro, só porque você deseja que os matizes.
 
--   **Esses são códigos hexadecimais, não os tokens de cor.** Você não pode usar os nomes de token de cor real desses elementos de interface do usuário porque não é possível controlar como os tokens podem ser alterados no futuro. Em vez disso, crie tokens dentro de sua própria categoria e use os valores de matiz mostrados nas tabelas. Tokens de cor para a interface de usuário existente pode ser encontrada no [compartilhado cores para o Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
+- **Esses são códigos hexadecimais, não os tokens de cor.** Você não pode usar os nomes de token de cor real desses elementos de interface do usuário porque não é possível controlar como os tokens podem ser alterados no futuro. Em vez disso, crie tokens dentro de sua própria categoria e use os valores de matiz mostrados nas tabelas. Tokens de cor para a interface de usuário existente pode ser encontrada no [compartilhado cores para o Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
 - **Amostras de alto contraste são mostradas para comparação somente.** Use o nome de cor do sistema para a interface do usuário de alto contraste e não use um seletor de cor ou conta-gotas essas amostras. Amostras de alto contraste neste tópico refletem o tema de alto contraste #1 no Windows. As cores terá uma aparência diferentes em outros temas de alto contraste.
 
--   **Para obter melhores resultados, cor de par define com interface do usuário semelhante ao exemplo.**
+- **Para obter melhores resultados, cor de par define com interface do usuário semelhante ao exemplo.**
 
 ## <a name="properties-window"></a>Janela de Propriedades
 

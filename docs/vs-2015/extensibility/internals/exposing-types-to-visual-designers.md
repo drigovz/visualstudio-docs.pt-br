@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103427"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Expondo tipos para designers visuais
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "58924082"
   
  Ferramentas personalizadas que tiram proveito do suporte de PE temporário devem seguir as regras a seguir:  
   
--   `GeneratesDesignTimeSource` deve ser definido como 1 no registro.  
+- `GeneratesDesignTimeSource` deve ser definido como 1 no registro.  
   
      Nenhuma compilação do arquivo executável de programa ocorre sem essa configuração.  
   
--   O código gerado deve estar no mesmo idioma em que a configuração do projeto global.  
+- O código gerado deve estar no mesmo idioma em que a configuração do projeto global.  
   
      O PE temporário é compilado, independentemente do que a ferramenta personalizada informa como a extensão solicitada na <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> desde que `GeneratesDesignTimeSource` é definido como 1 no registro. A extensão não precisa ser. vb,. cs ou. jsl; ele pode ser qualquer extensão.  
   
--   O código gerado pela ferramenta personalizada deve ser válido, e ele deve compilar em seu próprio usando apenas o conjunto de referências presentes no projeto no momento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termina a execução.  
+- O código gerado pela ferramenta personalizada deve ser válido, e ele deve compilar em seu próprio usando apenas o conjunto de referências presentes no projeto no momento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termina a execução.  
   
      Quando um PE temporário é compilado, o único arquivo de origem fornecido ao compilador é a saída da ferramenta personalizada. Portanto, uma ferramenta personalizada que usa um PE temporário deve gerar arquivos de saída que podem ser compilados independentemente dos outros arquivos no projeto.  
   

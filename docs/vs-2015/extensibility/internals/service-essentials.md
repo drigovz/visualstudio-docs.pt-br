@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111592"
 ---
 # <a name="service-essentials"></a>Conceitos básicos do serviço
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Um serviço é um contrato entre dois VSPackages. Um VSPackage fornece um conjun
   
  Os serviços não têm nenhuma capacidade de descoberta. Portanto, você deve saber o identificador de serviço (SID) de um serviço que você deseja consumir, e você deve saber quais interfaces que ele fornece. A documentação de referência para o serviço fornece essas informações.  
   
--   Os VSPackages que fornecem serviços são chamados de provedores de serviço.  
+- Os VSPackages que fornecem serviços são chamados de provedores de serviço.  
   
--   Serviços que são fornecidos a outros VSPackages são chamados de serviços globais.  
+- Serviços que são fornecidos a outros VSPackages são chamados de serviços globais.  
   
--   Serviços que estão disponíveis somente para o VSPackage que implementa-los, ou qualquer objeto que ele cria, são chamados de serviços locais.  
+- Serviços que estão disponíveis somente para o VSPackage que implementa-los, ou qualquer objeto que ele cria, são chamados de serviços locais.  
   
--   Serviços que substituir serviços internos ou serviços fornecidos por outros pacotes, são chamados de substituições de serviço.  
+- Serviços que substituir serviços internos ou serviços fornecidos por outros pacotes, são chamados de substituições de serviço.  
   
--   Serviços ou substituições de serviço, são carregadas sob demanda, ou seja, o provedor de serviço é carregado quando o serviço que fornece, é solicitado por outro VSPackage.  
+- Serviços ou substituições de serviço, são carregadas sob demanda, ou seja, o provedor de serviço é carregado quando o serviço que fornece, é solicitado por outro VSPackage.  
   
--   Para dar suporte a carregamento sob demanda, um provedor de serviço registra seus serviços globais com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obter mais informações, consulte [Registrando serviços](../../misc/registering-services.md).  
+- Para dar suporte a carregamento sob demanda, um provedor de serviço registra seus serviços globais com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obter mais informações, consulte [Registrando serviços](../../misc/registering-services.md).  
   
--   Depois de obter um serviço, use [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (código não gerenciado) ou conversão (código gerenciado) para obter a interface desejada, por exemplo:  
+- Depois de obter um serviço, use [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (código não gerenciado) ou conversão (código gerenciado) para obter a interface desejada, por exemplo:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,13 +51,13 @@ Um serviço é um contrato entre dois VSPackages. Um VSPackage fornece um conjun
   
     ```  
   
--   Código gerenciado se refere a um serviço por seu tipo, enquanto que o código não gerenciado se refere a um serviço pelo seu GUID.  
+- Código gerenciado se refere a um serviço por seu tipo, enquanto que o código não gerenciado se refere a um serviço pelo seu GUID.  
   
--   Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carrega um VSPackage, ele passa um provedor de serviços para o VSPackage para fornecer o acesso de VSPackage aos serviços globais. Isso é chamado de "localização" VSPackage.  
+- Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carrega um VSPackage, ele passa um provedor de serviços para o VSPackage para fornecer o acesso de VSPackage aos serviços globais. Isso é chamado de "localização" VSPackage.  
   
--   Os VSPackages pode ser provedores de serviço para os objetos que eles criam. Por exemplo, um formulário pode enviar uma solicitação para um serviço de cor ao seu quadro, que pode passar a solicitação [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Os VSPackages pode ser provedores de serviço para os objetos que eles criam. Por exemplo, um formulário pode enviar uma solicitação para um serviço de cor ao seu quadro, que pode passar a solicitação [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Objetos gerenciados que estão profundamente aninhados ou não foi localizados, podem chamar <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> para acesso direto aos serviços globais. Para obter mais informações, confira [Como: Usar GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
+- Objetos gerenciados que estão profundamente aninhados ou não foi localizados, podem chamar <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> para acesso direto aos serviços globais. Para obter mais informações, confira [Como: Usar GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Lista de serviços disponíveis](../../extensibility/internals/list-of-available-services.md)   
