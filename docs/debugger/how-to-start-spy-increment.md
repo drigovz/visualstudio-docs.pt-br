@@ -1,5 +1,5 @@
 ---
-title: 'Como: iniciar o Spy + + | Microsoft Docs'
+title: 'Como: Iniciar o Spy + + | Microsoft Docs'
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099137"
 ---
-# <a name="how-to-start-spy"></a>Como iniciar Spy++
+# <a name="how-to-start-spy"></a>Como: Iniciar Spy++
 
 Você pode iniciar o Spy + + do Visual Studio ou em um prompt de comando.
 
@@ -30,8 +30,8 @@ Você pode iniciar o Spy + + do Visual Studio ou em um prompt de comando.
 
 Spy + + requer os seguintes componentes. Você pode selecionar esses componentes do instalador do Visual Studio, selecionando o **componentes individuais** guia e, em seguida, selecionando os componentes a seguir.
 
-* Em depuração e testes, selecione **C++ ferramentas de criação de perfil**
-* Em atividades de desenvolvimento, selecione **recursos principais do C++ do Visual Studio**
+* Em depuração e testes, selecione  **C++ ferramentas de criação de perfil**
+* Em atividades de desenvolvimento, selecione **Visual Studio C++ recursos principais**
 
 Se você tiver feito alterações, siga os prompts para instalar esses componentes.
 
@@ -46,9 +46,9 @@ Como o Spy + + é executado de forma independente, depois de iniciada, você pod
 
 ## <a name="start-spy-at-a-command-prompt"></a>Iniciar o Spy + + em um prompt de comando
 
-1.  Em uma janela de Prompt de comando, altere os diretórios para a pasta que contém spyxx.exe. Normalmente, o caminho para essa pasta é... \\ *Pasta de instalação do visual Studio*\Common7\Tools\\.
+1. Em uma janela de Prompt de comando, altere os diretórios para a pasta que contém spyxx.exe. Normalmente, o caminho para essa pasta é... \\ *Pasta de instalação do visual Studio*\Common7\Tools\\.
 
-2.  Insira **spyxx.exe**.
+2. Insira **spyxx.exe**.
 
 ## <a name="see-also"></a>Consulte também
 - [Usando Spy++](../debugger/using-spy-increment.md)

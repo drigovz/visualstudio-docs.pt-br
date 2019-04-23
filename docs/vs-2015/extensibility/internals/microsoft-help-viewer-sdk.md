@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098995"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Este artigo contém as seguintes tarefas para integradores do Visual Studio Help Viewer:
 
--   Criação de um tópico (suporte a F1)
+- Criação de um tópico (suporte a F1)
 
--   Criando um pacote de conteúdo de identidade visual do Help Viewer
+- Criando um pacote de conteúdo de identidade visual do Help Viewer
 
--   Implantar um conjunto de artigos
+- Implantar um conjunto de artigos
 
--   Adicionando Ajuda para o shell do Visual Studio (integrado ou isolado)
+- Adicionando Ajuda para o shell do Visual Studio (integrado ou isolado)
 
--   Recursos adicionais
+- Recursos adicionais
 
 ### <a name="creating-a-topic-f1-support"></a>Criação de um tópico (suporte a F1)
  Esta seção fornece uma visão geral dos componentes de um tópico apresentado, requisitos de tópico, uma breve descrição de como criar um tópico (incluindo os requisitos de suporte F1) e, finalmente, um tópico de exemplo com seu resultado renderizado.
@@ -63,7 +63,7 @@ Este artigo contém as seguintes tarefas para integradores do Visual Studio Help
 
 - javascript
 
-- CSharp ou C#
+- CSharp ou c#
 
 - cplusplus ou visualc + + ou c + +
 
@@ -132,17 +132,17 @@ Este artigo contém as seguintes tarefas para integradores do Visual Studio Help
 
  O corpo (sem incluir o cabeçalho e rodapé) do tópico conterá links da página, uma seção de observação, uma área recolhível, um trecho de código e uma seção de texto específicos do idioma.  Consulte a seção de identidade visual para obter informações sobre essas áreas do tópico apresentada.
 
-1.  Adicione uma marca de título do tópico:  `<div class="title">Contoso Topic 4</div>`
+1. Adicione uma marca de título do tópico:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Adicione uma seção de Observação: `<div class="alert"> add your table tag and text </div>`
+2. Adicione uma seção de Observação: `<div class="alert"> add your table tag and text </div>`
 
-3.  Adicione uma área recolhível:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Adicione uma área recolhível:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Adicione um trecho de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Adicione um trecho de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Adicione o texto específico do idioma de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que devLangnu = permite que você insira outras linguagens. Por exemplo, devLangnu = "Fortran" exibirá Fortran quando o trecho de código DisplayLanguage = Fortran
+5. Adicione o texto específico do idioma de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que devLangnu = permite que você insira outras linguagens. Por exemplo, devLangnu = "Fortran" exibirá Fortran quando o trecho de código DisplayLanguage = Fortran
 
-6.  Adicione links de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Adicione links de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  Observação: para sem suporte novo "Idioma de exibição" (exemplo, F#, Cobol, Fortran) colorização de código no trecho de código poderá ser monocromático.
@@ -296,13 +296,13 @@ some F# code
 
 1. Defina as **VendorContent** valor sob a chave do registro da Ajuda 2.1:
 
-   -   Para sistemas operacionais de 32 bits:
+   - Para sistemas operacionais de 32 bits:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         "VendorContent"=dword:00000001
 
-   -   Para sistemas operacionais de 64 bits:
+   - Para sistemas operacionais de 64 bits:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 

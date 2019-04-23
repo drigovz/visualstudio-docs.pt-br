@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092559"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Como: Criar uma associação entre entidades
   Você pode definir relações entre entidades em seu modelo de conectividade de dados comerciais (BDC) com a criação de associações. Visual Studio gera os métodos que fornecem os consumidores do modelo com informações sobre cada associação. Esses métodos podem ser consumidos por web parts, listas ou aplicativos personalizados para exibir relações de dados em uma interface de usuário (IU) do SharePoint.
@@ -35,29 +35,29 @@ ms.locfileid: "56645115"
 
 ### <a name="to-create-an-association-between-entities"></a>Para criar uma associação entre entidades
 
-1.  Sobre o **BusinessDataConnectivity** guia do **caixa de ferramentas**, escolha o **associação** item.
+1. Sobre o **BusinessDataConnectivity** guia do **caixa de ferramentas**, escolha o **associação** item.
 
-2.  No Designer de BDC, escolha a entidade de origem e, em seguida, escolha a entidade de destino.
+2. No Designer de BDC, escolha a entidade de origem e, em seguida, escolha a entidade de destino.
 
      O **Editor de associação** é exibida.
 
-3.  Se você quiser criar uma associação de baseada em chave estrangeira, selecione a **é a associação de chave estrangeira** caixa de seleção.
+3. Se você quiser criar uma associação de baseada em chave estrangeira, selecione a **é a associação de chave estrangeira** caixa de seleção.
 
-    1.  No **ID da fonte** coluna do **mapeamento de identificador** da tabela, escolha o identificador ao lado de cada descritor de tipo correspondente que aparece no **campo** coluna.
+    1. No **ID da fonte** coluna do **mapeamento de identificador** da tabela, escolha o identificador ao lado de cada descritor de tipo correspondente que aparece no **campo** coluna.
 
          Por exemplo, no **ID da fonte** coluna, selecione `ContactID` lado a `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descritor de tipo e o `ReadItem.salesOrder.SalesOrder.ContactID` descritor de tipo.
 
-4.  Se você quiser criar uma associação sem chave estrangeira, desmarque a **é a associação de chave estrangeira** caixa de seleção.
+4. Se você quiser criar uma associação sem chave estrangeira, desmarque a **é a associação de chave estrangeira** caixa de seleção.
 
-5.  Escolha o botão **OK**.
+5. Escolha o botão **OK**.
 
-6.  No Designer de BDC, aparece uma linha que representa a associação entre a entidade de origem e a entidade de destino.
+6. No Designer de BDC, aparece uma linha que representa a associação entre a entidade de origem e a entidade de destino.
 
      O Visual Studio adiciona um método de navegador de associação para a classe de serviço da entidade de destino e a classe de serviço da entidade de origem. Para obter mais informações sobre métodos de navegação de associação, consulte [operações com suporte](http://go.microsoft.com/fwlink/?LinkId=169286).
 
-7.  O método Navigator de associação da entidade de origem, adicione o código que retorna uma coleção de entidades de destino.
+7. O método Navigator de associação da entidade de origem, adicione o código que retorna uma coleção de entidades de destino.
 
-8.  No método Navigator de associação da entidade de destino, adicione o código que retorna a entidade de origem relacionados.
+8. No método Navigator de associação da entidade de destino, adicione o código que retorna a entidade de origem relacionados.
 
      Para obter exemplos de métodos de navegador de associação, consulte [criar uma associação entre entidades](../sharepoint/creating-an-association-between-entities.md).
 

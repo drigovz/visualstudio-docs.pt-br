@@ -8,12 +8,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fe4adb6e70027cae239cf9fafe605aa03431ff3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099098"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolando código em teste com falsificação da Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes d
   
  Em geral, recomendamos que você use tipos de stub para isolar das dependências dentro de sua base de código. É possível fazer isso ocultando os componentes atrás das interfaces. Os tipos de shims podem ser usados para isolar de componentes de terceiros que não oferecem uma API testável.  
   
-##  <a name="stubs"></a> Introdução aos stubs  
+## <a name="stubs"></a> Introdução aos stubs  
  Para obter uma descrição mais detalhada, consulte [Usando stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-1.  **Injetar interfaces**  
+1. **Injetar interfaces**  
   
      Para usar stubs, você precisa escrever o código que deseja testar de forma que ele não mencione explicitamente as classes em outro componente de seu aplicativo. Por “componente”, queremos dizer uma classe ou um grupo de classes que são criadas e atualizadas em conjunto e normalmente estão contidas em um projeto do Visual Studio. As variáveis e os parâmetros devem ser declarados usando interfaces e instâncias de outros componentes que devem ser passados ou criados usando uma fábrica. Por exemplo, se StockFeed é uma classe em outro componente do aplicativo, ele é considerado incorreto:  
   
@@ -75,15 +75,15 @@ O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes d
   
     ```  
   
-2.  **Adicionar Assembly do Fakes**  
+2. **Adicionar Assembly do Fakes**  
   
-    1.  No Gerenciador de Soluções, expanda a lista de referências do projeto de teste. Se estiver trabalhando no Visual Basic, escolha **Mostrar Todos os Arquivos** para ver a lista de referências.  
+    1. No Gerenciador de Soluções, expanda a lista de referências do projeto de teste. Se estiver trabalhando no Visual Basic, escolha **Mostrar Todos os Arquivos** para ver a lista de referências.  
   
-    2.  Selecione a referência ao assembly em que a interface (por exemplo, IStockFeed) é definida. No menu de atalho dessa referência, escolha **Adicionar Assembly do Fakes**.  
+    2. Selecione a referência ao assembly em que a interface (por exemplo, IStockFeed) é definida. No menu de atalho dessa referência, escolha **Adicionar Assembly do Fakes**.  
   
-    3.  Recompile a solução.  
+    3. Recompile a solução.  
   
-3.  Em seus testes, construa instâncias do stub e forneça o código para seus métodos:  
+3. Em seus testes, construa instâncias do stub e forneça o código para seus métodos:  
   
     ```csharp  
     [TestClass]  
@@ -145,7 +145,7 @@ O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes d
   
      Os stubs também são gerados para getters e setters de propriedades, para eventos e métodos genéricos. Para obter mais informações, consulte [Usando stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-##  <a name="shims"></a> Introdução aos shims  
+## <a name="shims"></a> Introdução aos shims  
  Para obter uma descrição mais detalhada, consulte [Usando shims para isolar o aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
   
  Suponhamos que seu componente contenha chamadas para `DateTime.Now`:  
