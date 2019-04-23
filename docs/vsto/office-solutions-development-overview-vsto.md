@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061951"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Visão geral do desenvolvimento de soluções Office (VSTO)
   Ao usar o Microsoft Office como o front-end para soluções, você pode tirar proveito das interfaces de usuário do Microsoft Office e ferramentas como os recursos de processamento de texto no Word, os recursos de análise de dados do Excel e os recursos de gerenciamento de email do Outlook familiares . Você pode desenvolver soluções no Visual Studio para personalizar aplicativos do Office e adicionar os recursos específicos que você precisa para seus processos de negócios. Por exemplo, você pode transformar o Word em um gerador de contrato que monta contratos fora das partes pré-existentes que podem ser feitas editáveis ou não editável. Com o Excel, você pode criar uma planilha de orçamento automatizado personalizada para diferentes projetos. Os usuários também podem executar soluções do office offline, que torna mais prático do que seria se você usar uma arquitetura baseada na web a soluções complexas.
@@ -43,11 +43,11 @@ ms.locfileid: "56628774"
 
  Para obter mais informações sobre personalizações, consulte os tópicos a seguir:
 
--   [Começar a programar personalizações no nível de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [Começar a programar personalizações no nível de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [Começar a programar personalizações no nível de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Começar a programar personalizações no nível de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)
+- [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>Suplementos do VSTO
  Suplementos do VSTO consistem em um assembly que está associado um aplicativo do Microsoft Office. Normalmente, o suplemento do VSTO é executado quando o aplicativo associado é iniciado, embora os usuários também podem carregar suplementos do VSTO depois que o aplicativo já está em execução. Recursos no VSTO Add-ins criados por você estão disponíveis para o aplicativo em si, independentemente de qual documento está aberto.
@@ -56,9 +56,9 @@ ms.locfileid: "56628774"
 
  Para obter mais informações sobre o VSTO Add-ins, consulte os tópicos a seguir:
 
--   [Introdução à programação VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Introdução à programação VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Automatizar os aplicativos do Office usando assemblies de interoperabilidade primários
  Programaticamente, você pode incorporar os recursos de um aplicativo do Office em sua solução, escrevendo código que acessa o modelo de objeto do aplicativo. Modelos de objeto são uma organização de classes que expõem a funcionalidade por meio de várias propriedades e métodos. O modelo de objeto para cada aplicativo do Office é diferente.
@@ -69,9 +69,9 @@ ms.locfileid: "56628774"
 
  Para obter mais informações sobre como usar os PIAs em soluções do Office do VSTO, consulte os tópicos a seguir:
 
--   [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
+- [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
 
--   [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md)
+- [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Executar soluções do Microsoft Office do VSTO em computadores de usuários finais
  Quando você cria uma solução do Office do VSTO, considere como os requisitos de implantação podem afetar suas escolhas de desenvolvimento.

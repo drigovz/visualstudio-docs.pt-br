@@ -14,14 +14,14 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058883"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Instruções passo a passo: criando e executando testes de unidade para código gerenciado
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Passo a passo: Criando e executando testes de unidade para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo guiará você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade do Microsoft para código gerenciado e o Gerenciador de Testes do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Você pode alterar o código do seu projeto e executar novamente os testes.  
@@ -54,9 +54,9 @@ Este passo a passo guiará você pela criação, execução e personalização d
   
 ## <a name="prerequisites"></a>Pré-requisitos  
   
--   O projeto Banco. Consulte [Projeto de exemplo para criação de testes de unidade](../test/sample-project-for-creating-unit-tests.md).  
+- O projeto Banco. Consulte [Projeto de exemplo para criação de testes de unidade](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> Preparar o passo a passo  
+## <a name="BKMK_Prepare_the_walkthrough"></a> Preparar o passo a passo  
   
 1. Abra o Visual Studio.  
   
@@ -107,28 +107,28 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> Criar um projeto de teste de unidade  
- **Pré-requisito**: siga as etapas no procedimento, [preparar o passo a passo](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+## <a name="BKMK_Create_a_unit_test_project"></a> Criar um projeto de teste de unidade  
+ **Pré-requisito**: Siga as etapas no procedimento, [preparar o passo a passo](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Para criar um projeto de teste de unidade  
   
-1.  No menu **Arquivo** escolha **Adicionar** e depois escolha **Novo Projeto...**.  
+1. No menu **Arquivo** escolha **Adicionar** e depois escolha **Novo Projeto...**.  
   
-2.  Na caixa de diálogo Novo Projeto, expanda **Instalado**, expanda **Visual C#** e escolha **Testar**.  
+2. Na caixa de diálogo Novo Projeto, expanda **Instalado**, expanda **Visual C#** e escolha **Testar**.  
   
-3.  Na lista de modelos, selecione **Projeto de Teste de Unidade**.  
+3. Na lista de modelos, selecione **Projeto de Teste de Unidade**.  
   
-4.  Na caixa **Nome**, insira BankTest e, em seguida, escolha **OK**.  
+4. Na caixa **Nome**, insira BankTest e, em seguida, escolha **OK**.  
   
      O projeto **BankTests** é adicionado à solução **Bank**.  
   
-5.  No projeto **BankTests** adicione uma referência à solução **Banco**.  
+5. No projeto **BankTests** adicione uma referência à solução **Banco**.  
   
      No Gerenciador de Soluções, selecione **Referências** no projeto **BankTests** e escolha **Adicionar Referência...**  no menu de contexto.  
   
-6.  Na caixa de diálogo Gerenciador de Referências, expanda **Solução** e marque o item **Banco**.  
+6. Na caixa de diálogo Gerenciador de Referências, expanda **Solução** e marque o item **Banco**.  
   
-##  <a name="BKMK_Create_the_test_class"></a> Criar a classe de teste  
+## <a name="BKMK_Create_the_test_class"></a> Criar a classe de teste  
  Precisamos de uma classe de teste para verificar a classe `BankAccount`. Podemos usar o UnitTest1.cs que foi gerado pelo modelo do projeto, mas devemos dar ao arquivo e à classe nomes mais descritivos. É possível fazer isso em uma única etapa, renomeando o arquivo no Gerenciador de Soluções.  
   
  **Renomeando um arquivo de classe**  
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Requisitos de classe de teste  
+### <a name="BKMK_Test_class_requirements"></a> Requisitos de classe de teste  
  Os requisitos mínimos para uma classe de teste são os seguintes:  
   
 - O atributo `[TestClass]` é necessário na estrutura de teste de unidade do Microsoft para código gerenciado de qualquer classe que contenha métodos de teste de unidade que você queira executar no Gerenciador de Testes.  
@@ -172,12 +172,12 @@ using BankAccountNS;
   
   Pode haver outras classes em um projeto de teste de unidade que não têm o atributo `[TestClass]` e pode haver outros métodos em classes de teste que não têm o atributo `[TestMethod]`. Você pode usar essas classes e métodos em seus métodos de teste.  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> Criar o primeiro método de teste  
+## <a name="BKMK_Create_the_first_test_method"></a> Criar o primeiro método de teste  
  Neste procedimento, vamos escrever métodos de teste de unidade para verificar o comportamento do método `Debit` da classe `BankAccount`. O método é listado acima.  
   
  Ao analisar o método em teste, podemos determinar que há pelo menos três comportamentos que precisam ser verificados:  
   
-1. O método gera uma [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) se o valor do débito é maior que o saldo.  
+1. O método lança um ([ArgumentOutOfRangeException]<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) se o valor do débito for maior que o saldo.  
   
 2. Ele também gerará `ArgumentOutOfRangeException` se o valor do débito for menor que zero.  
   
@@ -213,28 +213,28 @@ using BankAccountNS;
   
    O método é bastante simples. Criamos um novo objeto `BankAccount` com um saldo inicial e, em seguida, retiramos um valor válido. Usamos a estrutura de teste de unidade do Microsoft para o método de código gerenciado <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> para verificar se o saldo final é o que esperamos.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Requisitos do método de teste  
+### <a name="BKMK_Test_method_requirements"></a> Requisitos do método de teste  
  Um método de teste deve atender aos seguintes requisitos:  
   
--   O método deve ser decorado com o atributo `[TestMethod]`.  
+- O método deve ser decorado com o atributo `[TestMethod]`.  
   
--   O método deve retornar `void`.  
+- O método deve retornar `void`.  
   
--   O método não pode ter parâmetros.  
+- O método não pode ter parâmetros.  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> Compilar e executar o teste  
+## <a name="BKMK_Build_and_run_the_test"></a> Compilar e executar o teste  
   
 #### <a name="to-build-and-run-the-test"></a>Para compilar e executar o teste  
   
-1.  No menu **Compilar**, escolha **Compilar Solução**.  
+1. No menu **Compilar**, escolha **Compilar Solução**.  
   
      Se não houver erros, a janela UnitTestExplorer aparecerá com **Debit_WithValidAmount_UpdatesBalance** listado no grupo **Não Executar Testes**. Se o Gerenciador de testes não aparecer após um build bem-sucedido, escolha **Testar** no menu, escolha **Windows**e, em seguida, escolha **Gerenciador de Testes**.  
   
-2.  Escolha **Executar Todos** para executar o teste. Conforme o teste é executado, a barra de status na parte superior da janela é animada. Ao final da execução de teste, a barra ficará verde se todos os métodos de teste forem aprovados ou vermelha, se algum teste falhar.  
+2. Escolha **Executar Todos** para executar o teste. Conforme o teste é executado, a barra de status na parte superior da janela é animada. Ao final da execução de teste, a barra ficará verde se todos os métodos de teste forem aprovados ou vermelha, se algum teste falhar.  
   
-3.  Nesse caso, o teste falha. O método de teste é movido para **Testes com Falha**. grupo. Selecione o método no Gerenciador de Testes para exibir os detalhes na parte inferior da janela.  
+3. Nesse caso, o teste falha. O método de teste é movido para **Testes com Falha**. grupo. Selecione o método no Gerenciador de Testes para exibir os detalhes na parte inferior da janela.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrigir o código e executar novamente os testes  
+## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrigir o código e executar novamente os testes  
  **Analisar os resultados de teste**  
   
  O resultado do teste contém uma mensagem que descreve a falha. Para o método `AreEquals`, a mensagem exibe o que era esperado (o parâmetro (<strong>esperado\<*XXX*></strong>) e o que foi de fato recebido (o parâmetro **real\<*YYY*>**). Esperávamos que o saldo diminuísse do saldo inicial, mas em vez disso, aumentou o valor da retirada.  
@@ -259,7 +259,7 @@ m_balance -= amount;
   
  No Gerenciador de testes, escolha **Executar Todos** para executar novamente o teste. A barra verde/vermelho fica verde e o teste é movido para o grupo **Testes Aprovados**.  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Usar testes de unidade para melhorar o código  
+## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Usar testes de unidade para melhorar o código  
  Esta seção descreve como um processo iterativo de análise, desenvolvimento de testes de unidade e refatoração pode ajudá-lo a tornar seu código de produção mais robusto e eficiente.  
   
  **Analisar os problemas**  

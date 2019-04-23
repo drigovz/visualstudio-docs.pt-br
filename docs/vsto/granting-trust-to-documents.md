@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52ff98f15afb95bda4d69770b84764db21171425
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053007"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confiança a documentos
   Um projeto de nível de documento tem os mesmos requisitos de segurança que projetos de nível de aplicativo: os manifestos com um certificado de assinatura ou clicando no prompt de confiança. Além disso, o documento ou pasta de trabalho deve estar localizada em um diretório que é designado como um local confiável.
@@ -35,13 +35,13 @@ ms.locfileid: "56599656"
 ## <a name="security-considerations-for-office-solutions"></a>Considerações de segurança para soluções do Office
  Há várias questões de segurança que você considere quais pastas adicionar aos locais confiáveis:
 
--   Pastas locais são consideradas mais seguros e são implicitamente confiáveis. Locais remotos, como compartilhamentos de arquivos devem ser designados como locais confiáveis.
+- Pastas locais são consideradas mais seguros e são implicitamente confiáveis. Locais remotos, como compartilhamentos de arquivos devem ser designados como locais confiáveis.
 
--   Quando você adiciona um diretório para os locais confiáveis, essa ação concede confiança total não apenas para soluções do Office, mas também ao código VBA e ActiveX. Por esse motivo, o diretório raiz e o *Meus documentos* pastas não devem ser designadas como confiáveis.
+- Quando você adiciona um diretório para os locais confiáveis, essa ação concede confiança total não apenas para soluções do Office, mas também ao código VBA e ActiveX. Por esse motivo, o diretório raiz e o *Meus documentos* pastas não devem ser designadas como confiáveis.
 
--   Embora o documento em si é confiável por meio de locais confiáveis, permissões adicionais são necessárias para a personalização de confiança. Você pode conceder confiança total para a personalização usando a assinatura dos manifestos com um certificado, clicando em prompt de confiança ou instalar a solução do Office para o *arquivos de programas* directory.
+- Embora o documento em si é confiável por meio de locais confiáveis, permissões adicionais são necessárias para a personalização de confiança. Você pode conceder confiança total para a personalização usando a assinatura dos manifestos com um certificado, clicando em prompt de confiança ou instalar a solução do Office para o *arquivos de programas* directory.
 
--   Você pode armazenar o documento ou pasta de trabalho de uma solução de nível de documento no mesmo diretório que o assembly ou em um diretório diferente. Por exemplo, o documento pode estar localizado em um servidor do SharePoint e o assembly pode estar localizado em um compartilhamento de arquivos de rede. Para obter mais informações, confira [Como: Publicar uma solução do Office em nível de documento em um servidor do SharePoint usando o ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Você pode armazenar o documento ou pasta de trabalho de uma solução de nível de documento no mesmo diretório que o assembly ou em um diretório diferente. Por exemplo, o documento pode estar localizado em um servidor do SharePoint e o assembly pode estar localizado em um compartilhamento de arquivos de rede. Para obter mais informações, confira [Como: Publicar uma solução do Office em nível de documento em um servidor do SharePoint usando o ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
 
 ## <a name="see-also"></a>Consulte também
 - [Conceder confiança a soluções do Office](../vsto/granting-trust-to-office-solutions.md)

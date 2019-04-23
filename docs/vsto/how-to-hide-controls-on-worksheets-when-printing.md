@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3c582696dfba5abdcf132308477e586575777a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050018"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Como: Ocultar controles em planilhas durante a impressão
   Quando você imprime um documento do Microsoft Office Excel que contém controles de formulários do Windows, os controles são visíveis na planilha impressa. Você pode ocultar os controles ao imprimir uma planilha.
@@ -35,11 +35,11 @@ ms.locfileid: "56612615"
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Para ocultar os controles quando uma planilha for impressa
 
-1.  Criar ou abrir um projeto do Excel no Visual Studio e verifique **Sheet1** está visível no designer. Para obter informações sobre como criar projetos, consulte [como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Criar ou abrir um projeto do Excel no Visual Studio e verifique **Sheet1** está visível no designer. Para obter informações sobre como criar projetos, consulte [como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Do **controles comuns** guia da **caixa de ferramentas**, arraste uma <xref:Microsoft.Office.Tools.Excel.Controls.Button> control para uma célula em `Sheet1`.
+2. Do **controles comuns** guia da **caixa de ferramentas**, arraste uma <xref:Microsoft.Office.Tools.Excel.Controls.Button> control para uma célula em `Sheet1`.
 
-3.  No **propriedades** janela, defina o <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> propriedade **False**.
+3. No **propriedades** janela, defina o <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> propriedade **False**.
 
 ## <a name="see-also"></a>Consulte também
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)

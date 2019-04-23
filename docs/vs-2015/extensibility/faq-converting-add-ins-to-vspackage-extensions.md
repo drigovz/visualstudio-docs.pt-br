@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048669"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Perguntas Frequentes: Convertendo suplementos em extensões VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "58928843"
 Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studio, você precisará criar uma extensão do VSIX. Aqui estão as respostas a algumas perguntas frequentes sobre como converter um suplemento do Visual Studio em uma extensão do VSIX.  
   
 > [!WARNING]
->  Iniciando no Visual Studio 2015, para projetos C# e Visual Basic, você pode usar o projeto do VSIX e adicionar modelos de item para comandos de menu, janelas de ferramenta e VSPackages. Para obter mais informações, consulte [o que há de novo no SDK do Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+>  Iniciando no Visual Studio 2015, para projetos c# e Visual Basic, você pode usar o projeto do VSIX e adicionar modelos de item para comandos de menu, janelas de ferramenta e VSPackages. Para obter mais informações, consulte [o que há de novo no SDK do Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
 >  Em muitos casos, você pode simplesmente transferir o seu código de suplemento a um projeto do VSIX com um item de projeto de VSPackage. Você pode obter o objeto de automação DTE chamando <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> no método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
@@ -39,22 +39,22 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Pode converter o meu projeto de suplemento a um projeto VSIX?  
  Um projeto de suplemento não pode ser convertido diretamente a um projeto VSIX, pois os mecanismos usados em projetos do VSIX não são os mesmos que aqueles em projetos de suplemento. O modelo de projeto do VSIX, além dos modelos de item de projeto à direita tem muito código que o torna relativamente fácil de começar a trabalhar e em execução como uma extensão do VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a> Como para começar a desenvolver extensões VSIX?  
+## <a name="BKMK_StartDeveloping"></a> Como para começar a desenvolver extensões VSIX?  
  Aqui está como fazer um VSIX que possui um comando de menu:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Para tornar uma extensão do VSIX que possui um comando de menu  
   
-1.  Crie um projeto VSIX. (**Arquivo**, **New**, **projeto**, ou tipo **projeto** no **início rápido** janela). Além de **novo projeto** caixa de diálogo caixa, expanda **Visual C# / extensibilidade** ou **Visual Basic / extensibilidade** e selecione **projeto VSIX**.) Nomeie o projeto **TestExtension** e especifique um local para ele.  
+1. Crie um projeto VSIX. (**Arquivo**, **New**, **projeto**, ou tipo **projeto** no **início rápido** janela). Além de **novo projeto** caixa de diálogo caixa, expanda **Visual c# / extensibilidade** ou **Visual Basic / extensibilidade** e selecione **projeto VSIX**.) Nomeie o projeto **TestExtension** e especifique um local para ele.  
   
-2.  Adicionar um **comando personalizado** modelo de item de projeto. (Clique com botão direito no nó do projeto na **Gerenciador de soluções** e selecione **Add / Novo Item**. Além de **novo projeto** caixa de diálogo do Visual C# ou Visual Basic, selecione o **extensibilidade** nó e selecione **comando personalizado**.)  
+2. Adicionar um **comando personalizado** modelo de item de projeto. (Clique com botão direito no nó do projeto na **Gerenciador de soluções** e selecione **Add / Novo Item**. Além de **novo projeto** caixa de diálogo do Visual c# ou Visual Basic, selecione o **extensibilidade** nó e selecione **comando personalizado**.)  
   
-3.  Pressione F5 para compilar e executar o projeto em modo de depuração.  
+3. Pressione F5 para compilar e executar o projeto em modo de depuração.  
   
      Uma segunda instância do Visual Studio é exibida. A segunda instância é chamada de instância experimental e não poderá ter as mesmas configurações que a instância do Visual Studio que estiver usando para escrever código. Na primeira vez que executar a instância experimenta, será solicitado para entrar no VS Online e especificar o tema e o perfil.  
   
      Sobre o **ferramentas** menu (na instância experimental), você verá um botão chamado **nome do meu comando**. Quando você escolhe esse botão, uma mensagem deverá aparecer: **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a> Como posso executar meu código de suplemento em um VSPackage?  
+## <a name="BKMK_RunAddin"></a> Como posso executar meu código de suplemento em um VSPackage?  
  Código de suplemento geralmente é executado de uma entre duas maneiras:  
   
 - Acionado por um comando de menu (o código está no método de `IDTCommandTarget.Exec`)  
@@ -67,7 +67,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
 1. Criar VSPackage que possui um comando de menu. (Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2. Abra o arquivo que contém a definição do VSPackage. (Em um projeto C#, ele tem  <em>\<o nome do projeto ></em>Package.cs.)  
+2. Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  <em>\<o nome do projeto ></em>Package.cs.)  
   
 3. Inclua as seguintes instruções `using` no arquivo:  
   
@@ -161,7 +161,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
 1. Crie um VSPackage que tenha um comando de menu, como mostra a [como começar a desenvolver extensões VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) seção.  
   
-2. Abra o arquivo que contém a definição do VSPackage. (Em um projeto C#, ele tem  <em>\<o nome do projeto ></em>Package.cs.)  
+2. Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  <em>\<o nome do projeto ></em>Package.cs.)  
   
 3. Inclua estas instruções `using`:  
   
@@ -209,7 +209,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
 1. Crie um VSPackage que tenha um comando de menu, como mostra a [como começar a desenvolver extensões VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) seção.  
   
-2. Abra o arquivo que contém a definição do VSPackage. (Em um projeto C#, ele tem  <em>\<o nome do projeto ></em>Package.cs.)  
+2. Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  <em>\<o nome do projeto ></em>Package.cs.)  
   
 3. Inclua estas instruções `using`:  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: fa7b0ed959fba781397b3b85ee59f2e62588596c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061652"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Criar um aplicativo OpenGL ES no Android e iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,10 +29,10 @@ Ao instalar a opção Visual C++ para Desenvolvimento Móvel Multiplataforma, vo
  [Compilar e executar o aplicativo iOS](#BuildIOS)   
  [Personalizar seus aplicativos](#Customize)  
   
-##  <a name="req"></a> Requisitos  
+## <a name="req"></a> Requisitos  
  Antes de criar um aplicativo OpenGL ES para iOS e Android, você precisará garantir que tenha atendido a todos os requisitos do sistema. Você deve instalar a opção o Visual C++ para Desenvolvimento Móvel Multiplataforma no Visual Studio 2015. Verifique se os SDKs e as ferramentas de terceiros necessários estão incluídos na instalação e se o Emulador do Visual Studio para Android está instalado. Para obter mais informações e instruções detalhadas, consulte [Instalar o Visual C++ para desenvolvimento móvel de plataforma cruzada](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Para compilar e testar o aplicativo iOS, você precisará de um computador Mac configurado de acordo com as instruções de instalação. Para obter mais informações sobre como configurar para desenvolvimento do iOS, consulte [Instalar e configurar ferramentas para compilar usando iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-##  <a name="Create"></a> Criar um novo projeto de Aplicativo OpenGLES  
+## <a name="Create"></a> Criar um novo projeto de Aplicativo OpenGLES  
  Neste tutorial, primeiro você criará um novo projeto de Aplicativo OpenGL ES e, em seguida, compilará e executará o aplicativo padrão no Emulador do Visual Studio para Android. Em seguida, compilará o aplicativo para iOS e executará o aplicativo no simulador de iOS.  
   
 #### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
@@ -63,7 +63,7 @@ Ao instalar a opção Visual C++ para Desenvolvimento Móvel Multiplataforma, vo
   
 - **MyOpenGLESApp.iOS.Application** contém os recursos e o código de associação Objective-C para criar um aplicativo iOS vinculado ao código de biblioteca estática C++ em MyOpenGLESApp.iOS.StaticLibrary. Esse projeto cria um pacote de build que é transferido para seu Mac pelo Visual Studio e pelo agente remoto. Quando você compila este projeto, o Visual Studio envia os arquivos e os comandos para compilar e implantar seu aplicativo no Mac.  
   
-##  <a name="BuildAndroid"></a> Compilar e executar o aplicativo Android  
+## <a name="BuildAndroid"></a> Compilar e executar o aplicativo Android  
  A solução criada pelo modelo define o aplicativo Android como o projeto padrão.  Você pode compilar e executar esse aplicativo para verificar sua instalação e configuração. Para um teste inicial, execute o aplicativo em um dos perfis de dispositivo instalados pelo Emulador do Visual Studio para Android. Se você preferir testar seu aplicativo em outro destino, poderá carregar o emulador de destino ou conectar o dispositivo ao computador.  
   
 #### <a name="to-build-and-run-the-android-native-activity-app"></a>Para compilar e executar o aplicativo de Atividade Nativa Android  
@@ -104,7 +104,7 @@ Ao instalar a opção Visual C++ para Desenvolvimento Móvel Multiplataforma, vo
   
    O Visual Studio compila projetos de Atividade Nativa do Android usando o NDK do Android, que usa Clang como o conjunto de ferramentas de plataforma. O Visual Studio mapeia as propriedades no projeto NativeActivity para as opções de linha de comando e as opções usadas para compilar, vincular e depurar na plataforma de destino. Para obter detalhes, abra a caixa de diálogo **Páginas de Propriedade** para o projeto MyOpenGLESApp.Android.NativeActivity. Para obter mais informações sobre as opções de linha de comando, consulte o [Manual do usuário do compilador Clang](http://clang.llvm.org/docs/UsersManual.html).  
   
-##  <a name="BuildIOS"></a> Compilar e executar o aplicativo iOS  
+## <a name="BuildIOS"></a> Compilar e executar o aplicativo iOS  
  O projeto de aplicativo iOS é criado e editado no Visual Studio, porém, devido a restrições de licença, deve ser compilado e implantado em um Mac. O Visual Studio comunica-se com um agente remoto em execução no Mac para transferir arquivos de projeto e executar comandos de build, implantação e depuração. Você deve instalar e configurar seu Mac e o Visual Studio para comunicação antes de compilar o aplicativo iOS. Para obter instruções detalhadas, consulte [Instalar e configurar as ferramentas para compilar usando iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Depois que o agente remoto estiver em execução e o Visual Studio estiver emparelhado com o Mac, você poderá compilar e executar o aplicativo do iOS para verificar sua instalação e configuração.  
   
 #### <a name="to-build-and-run-the-ios-app"></a>Para compilar e executar o aplicativo iOS  
@@ -143,7 +143,7 @@ Ao instalar a opção Visual C++ para Desenvolvimento Móvel Multiplataforma, vo
   
    O Visual Studio transfere os arquivos de projeto e envia comandos para o cliente remoto para compilar o aplicativo usando Xcode. O cliente remoto envia informações de status de build de volta ao Visual Studio. Quando o aplicativo tiver sido compilado com êxito, você poderá usar o Visual Studio para enviar comandos para executar e depurar o aplicativo. O depurador do Visual Studio controla o aplicativo em execução no Simulador de iOS em execução no Mac ou em um dispositivo iOS anexado. O Visual Studio mapeia as propriedades no projeto StaticLibrary para as opções de linha de comando e as opções usadas para compilar, vincular e depurar na plataforma iOS de destino. Para obter detalhes de opção de linha de comando do compilador, abra a caixa de diálogo **Páginas de Propriedade** para o projeto MyOpenGLESApp.iOS.StaticLibrary.  
   
-##  <a name="Customize"></a> Personalizar seus aplicativos  
+## <a name="Customize"></a> Personalizar seus aplicativos  
  Você pode modificar o código C++ compartilhado para adicionar ou alterar funcionalidade comum. Você deve alterar as chamadas para o código compartilhado nos projetos MyOpenGLESApp.Android.NativeActivity e MyOpenGLESApp.iOS.Application para que combinem. Você pode usar macros de pré-processador para especificar seções específicas de plataforma no seu código comum. A macro do pré-processador `__ANDROID__` é predefinida ao compilar para Android. A macro do pré-processador `__APPLE__` é predefinida ao compilar para iOS.  
   
  Para ver o IntelliSense para uma plataforma de projeto específica, escolha o projeto na lista suspensa do seletor de contexto na barra de Navegação na parte superior da janela do editor.  

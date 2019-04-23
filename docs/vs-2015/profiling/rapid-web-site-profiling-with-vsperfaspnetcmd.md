@@ -12,17 +12,17 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049823"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Criação de perfil do site rápida com VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter informações, consulte [Como instalar o criador de perfil autônomo](../profiling/how-to-install-the-stand-alone-profiler.md).  
+A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter mais informações, confira [Como: Instalar o Profiler autônomo](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
 >  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -82,7 +82,7 @@ A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente
   
  **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
   
-##  <a name="UsingNoWait"></a> Usando a opção /NoWait  
+## <a name="UsingNoWait"></a> Usando a opção /NoWait  
  Por padrão, o prompt de comando não retorna após um comando **vsperfaspnetcmd**. Você pode usar a opção de sintaxe a seguir para forçar o prompt de comando a retornar. Em seguida, você pode executar outras operações na janela do prompt de comando. Para finalizar a criação de perfil, use a opção **/shutdown** em um comando **vsperfaspnetcmd**.  
   
  Para iniciar a criação de perfil:  

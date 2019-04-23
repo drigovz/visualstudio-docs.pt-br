@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047419"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
   
  **Neste tópico**  
   
--   [Configurar o banco de dados de exemplo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Configurar o banco de dados de exemplo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Criar os formulários e adicionar controles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Criar os formulários e adicionar controles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [A cadeia de caracteres de conexão da Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [A cadeia de caracteres de conexão da Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Recuperar a cadeia de conexão](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Recuperar a cadeia de conexão](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Escreva o código para os formulários](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Escreva o código para os formulários](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Teste seu aplicativo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Teste seu aplicativo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para criar o aplicativo, você precisará de:  
@@ -58,10 +58,10 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
   
   Este tópico pressupõe que você está familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formulários a esse projeto, colocar botões e outros controles em formulários, definem as propriedades desses controles e codificar eventos simples . Se você não estiver confortável com essas tarefas, sugerimos que você conclua a [Introdução ao Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) antes de iniciar este tópico.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Configurar o banco de dados de exemplo  
+## <a name="BKMK_setupthesampledatabase"></a> Configurar o banco de dados de exemplo  
  O banco de dados de exemplo para este passo a passo consiste nas tabelas clientes e pedidos. As tabelas não contêm dados inicialmente, mas você adicionará dados ao executar o aplicativo que você vai criar. O banco de dados também tem cinco procedimentos armazenados simples. [Criar um banco de dados SQL usando um script](../data-tools/create-a-sql-database-by-using-a-script.md) contém um script Transact-SQL que cria as tabelas, as chaves primária e estrangeiras, restrições e os procedimentos armazenados.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Criar os formulários e adicionar controles  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Criar os formulários e adicionar controles  
   
 1. Criar um projeto para um aplicativo do Windows Forms e nomeie-a como SimpleDataApp.  
   
@@ -69,11 +69,11 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
   
 2. Adicione dois formulários do Windows ao seu projeto para que ele tenha três formulários e forneça a eles os seguintes nomes:  
   
-   -   Navegação  
+   - Navegação  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Para cada formulário, adicione as caixas de texto, botões e outros controles que aparecem nas ilustrações a seguir. Para cada controle, defina as propriedades que descrevem as tabelas.  
   
@@ -119,33 +119,33 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
 |Botão|Nome = btnFillOrder|  
 |Botão|Nome = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> A cadeia de caracteres de conexão da Store  
+## <a name="BKMK_storetheconnectionstring"></a> A cadeia de caracteres de conexão da Store  
  Quando seu aplicativo tenta abrir uma conexão ao banco de dados, seu aplicativo deve ter acesso à cadeia de conexão. Para evitar inserir a cadeia de caracteres manualmente em cada formulário, armazenar a cadeia de caracteres no arquivo de configuração de aplicativo em seu projeto e crie um método que retorna a cadeia de caracteres quando o método é chamado de qualquer formulário em seu aplicativo.  
   
  Você pode encontrar a cadeia de conexão no **Pesquisador de objetos do SQL Server** por clicando duas vezes o banco de dados, selecionando **propriedades**e, em seguida, localizando a propriedade ConnectionString. Use Ctrl + A para selecionar a cadeia de caracteres.  
   
-1.  Na **Gerenciador de soluções**, selecione o **Properties** nó sob o projeto e, em seguida, selecione **Settings**.  
+1. Na **Gerenciador de soluções**, selecione o **Properties** nó sob o projeto e, em seguida, selecione **Settings**.  
   
-2.  No **nome** coluna, digite `connString`.  
+2. No **nome** coluna, digite `connString`.  
   
-3.  No **tipo** lista, selecione **(cadeia de caracteres de Conexão)**.  
+3. No **tipo** lista, selecione **(cadeia de caracteres de Conexão)**.  
   
-4.  No **escopo** lista, selecione **aplicativo**.  
+4. No **escopo** lista, selecione **aplicativo**.  
   
-5.  No **valor** coluna, insira sua cadeia de conexão (sem qualquer fora de aspas) e, em seguida, salve suas alterações.  
+5. No **valor** coluna, insira sua cadeia de conexão (sem qualquer fora de aspas) e, em seguida, salve suas alterações.  
   
 > [!NOTE]
 >  Em um aplicativo real, você deve armazenar a cadeia de caracteres de conexão com segurança, conforme descrito em [cadeias de caracteres de Conexão e arquivos de configuração](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Recuperar a cadeia de conexão  
+## <a name="BKMK_retrievetheconnectionstring"></a> Recuperar a cadeia de conexão  
   
-1.  Na barra de menus, selecione **Project** > **Add Reference**e, em seguida, adicione uma referência à dll.  
+1. Na barra de menus, selecione **Project** > **Add Reference**e, em seguida, adicione uma referência à dll.  
   
-2.  Na barra de menus, selecione **Project** > **Add Class** para adicionar um arquivo de classe ao seu projeto e, em seguida, nomeie o arquivo `Utility`.  
+2. Na barra de menus, selecione **Project** > **Add Class** para adicionar um arquivo de classe ao seu projeto e, em seguida, nomeie o arquivo `Utility`.  
   
      Visual Studio cria o arquivo e exibe-o em **Gerenciador de soluções**.  
   
-3.  No arquivo de utilitário, substitua o código de espaço reservado com o código a seguir. Observe os comentários numerados (prefixados com o Util-) que identificam seções do código. A tabela que segue o código chama pontos chave.  
+3. No arquivo de utilitário, substitua o código de espaço reservado com o código a seguir. Observe os comentários numerados (prefixados com o Util-) que identificam seções do código. A tabela que segue o código chama pontos chave.  
   
     ```csharp  
     using System;  
@@ -219,7 +219,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
     |Util-2|Defina uma variável `returnValue`e inicializá-lo para `null` (c#) ou `Nothing` (Visual Basic).|  
     |Util-3|Mesmo que você inseriu `connString` como o nome da cadeia de caracteres de conexão na **Properties** janela, você deve especificar `"SimpleDataApp.Properties.Settings.connString"` (c#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) no código.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Escreva o código para os formulários  
+## <a name="BKMK_writethecodefortheforms"></a> Escreva o código para os formulários  
  Esta seção contém visões gerais breves das quais cada formulário faz e mostra o código que cria os formulários. Comentários numerados identificam seções do código.  
   
 ### <a name="navigation-form"></a>Formulário de navegação  
@@ -1139,5 +1139,5 @@ End Namespace
 |FC-8|Adicione código ao manipulador de eventos Click para `btnFillOrder`. Esse código é executado o `Sales.uspFillOrder` procedimento armazenado.|  
 |FC-9|Crie um método para verificar se `OrderID` está pronto para enviar como um parâmetro para o `SqlCommand` objeto.<br /><br /> -Certifique-se de que uma ID foi inserida no `txtOrderID`.<br />-Use `Regex.IsMatch` para definir uma verificação simples para caracteres não inteiro.<br />-Você declarou o `parsedOrderID` variável em FC-2.<br />-Se a entrada é válida, converta o texto em um inteiro e armazenar o valor no `parsedOrderID` variável.<br />-Encapsular o `isOrderID` método ao redor de `btnFindByOrderID`, `btnCancelOrder`, e `btnFillOrder` manipuladores de eventos de clique.|  
   
-##  <a name="BKMK_testyourapplication"></a> Teste seu aplicativo  
+## <a name="BKMK_testyourapplication"></a> Teste seu aplicativo  
  Selecione a tecla F5 para compilar e testar seu aplicativo depois que você codifica cada manipulador de eventos de clique e, em seguida, depois de concluir a codificação.

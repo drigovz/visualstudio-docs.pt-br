@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065137"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código na hora de design usando modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para criar um modelo T4 em tempo de design no Visual Studio  
   
-1.  Criar um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de projeto ou abrir um existente.  
+1. Criar um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de projeto ou abrir um existente.  
   
      Por exemplo, na **arquivo** menu, escolha **New**, **projeto**.  
   
-2.  Adicione um arquivo de modelo de texto ao seu projeto e dê a ele um nome que tem a extensão **. TT**.  
+2. Adicione um arquivo de modelo de texto ao seu projeto e dê a ele um nome que tem a extensão **. TT**.  
   
      Para fazer isso, em **Gerenciador de soluções**, no menu de atalho do projeto, escolha **Add**, **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** no painel central.  
   
      Observe que o **Custom Tool** é de propriedade do arquivo **TextTemplatingFileGenerator**.  
   
-3.  Abrir o arquivo. Ele conterá as seguintes diretrizes:  
+3. Abrir o arquivo. Ele conterá as seguintes diretrizes:  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -61,17 +61,17 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
   
      Se você adicionou o modelo a um projeto [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], o atributo language será "`VB`".  
   
-4.  Adicione algum texto no final do arquivo. Por exemplo:  
+4. Adicione algum texto no final do arquivo. Por exemplo:  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Salve o arquivo.  
+5. Salve o arquivo.  
   
      Talvez você veja uma **aviso de segurança** caixa de mensagem solicitará que você confirme que você deseja executar o modelo. Clique em **OK**.  
   
-6.  Na **Gerenciador de soluções**, expanda o nó do arquivo de modelo e você encontrará um arquivo que tem a extensão **. txt**. O arquivo contém o texto gerado a partir do modelo.  
+6. Na **Gerenciador de soluções**, expanda o nó do arquivo de modelo e você encontrará um arquivo que tem a extensão **. txt**. O arquivo contém o texto gerado a partir do modelo.  
   
     > [!NOTE]
     >  Se seu projeto é um projeto do Visual Basic, você deve clicar **Show All Files** para ver o arquivo de saída.  
@@ -150,9 +150,9 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
   
 #### <a name="to-generate-program-code-or-resources"></a>Para gerar o código de programa ou recursos  
   
-1.  Altere a diretiva de saída para gerar um arquivo do tipo apropriado, como .cs, .vb, .resx ou .xml.  
+1. Altere a diretiva de saída para gerar um arquivo do tipo apropriado, como .cs, .vb, .resx ou .xml.  
   
-2.  Insira o código que gerará o código da solução que você precisa. Por exemplo, se você deseja gerar três instruções de campo inteiro em uma classe:  
+2. Insira o código que gerará o código da solução que você precisa. Por exemplo, se você deseja gerar três instruções de campo inteiro em uma classe:  
   
     ```csharp  
   
@@ -185,7 +185,7 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
   
     ```  
   
-3.  Salve o arquivo e inspecione o arquivo gerado, que agora contém o seguinte código:  
+3. Salve o arquivo e inspecione o arquivo gerado, que agora contém o seguinte código:  
   
     ```  
     class MyGeneratedClass {  
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Um modelo de texto é executado em seu próprio domínio de aplicativo e os serviços são acessados ​​por empacotamento. Nesse caso, GetCOMService() é mais confiável que GetService().  
   
-##  <a name="Regenerating"></a> Gerando o código automaticamente  
+## <a name="Regenerating"></a> Gerando o código automaticamente  
  Normalmente, vários arquivos em uma solução [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] são gerados com um modelo de entrada. Cada arquivo é gerado a partir do seu próprio modelo, mas todos os modelos se referem ao mesmo modelo.  
   
  Se o modelo de fonte mudar, você deve executar novamente todos os modelos na solução. Para fazer isso manualmente, escolha **transformar todos os modelos** sobre o **Build** menu.  
@@ -320,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Convertendo um arquivo existente em um modelo  
+## <a name="Converting"></a> Convertendo um arquivo existente em um modelo  
  Um recurso útil dos modelos é que eles parecem muito com os arquivos que eles geram, além de um código de programa inserido. Isso sugere um método útil para a criação de um modelo. Primeiro crie um arquivo comum como um protótipo, como um [!INCLUDE[csprcs](../includes/csprcs-md.md)] de arquivo e introduza gradualmente o código de geração que varia o arquivo resultante.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para converter um arquivo existente para um modelo de tempo de design  
   
-1.  Para o seu projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], adicione um arquivo do tipo que você deseja gerar, como um arquivo `.cs`, `.vb` ou `.resx`.  
+1. Para o seu projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], adicione um arquivo do tipo que você deseja gerar, como um arquivo `.cs`, `.vb` ou `.resx`.  
   
-2.  Teste o novo arquivo para conferir se ele funciona.  
+2. Teste o novo arquivo para conferir se ele funciona.  
   
-3.  No Gerenciador de soluções, altere a extensão de nome de arquivo para **. TT**.  
+3. No Gerenciador de soluções, altere a extensão de nome de arquivo para **. TT**.  
   
-4.  Verifique se as seguintes propriedades do **. TT** arquivo:  
+4. Verifique se as seguintes propriedades do **. TT** arquivo:  
   
     |||  
     |-|-|  
     |**Ferramenta personalizada =**|**TextTemplatingFileGenerator**|  
     |**Ação de build =**|**Nenhum**|  
   
-5.  Insira as seguintes linhas no início do arquivo:  
+5. Insira as seguintes linhas no início do arquivo:  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -349,13 +349,13 @@ Warning("A warning message");
   
      Defina o atributo `extension` para a extensão de nome de arquivo para o tipo de arquivo que você deseja gerar, por exemplo `.cs`, `.resx` ou `.xml`.  
   
-6.  Salve o arquivo.  
+6. Salve o arquivo.  
   
      Um arquivo subsidiário é criado com a extensão especificada. As propriedades dele estão corretas para o tipo de arquivo. Por exemplo, o **ação de compilação** propriedade de um arquivo. cs seria **compilar**.  
   
      Verifique se o arquivo gerado contém o mesmo conteúdo que o arquivo original.  
   
-7.  Identifique uma parte do arquivo que você deseja variar. Por exemplo, uma parte que aparece apenas sob certas condições, uma parte que se repete ou em que os valores específicos variam. Insira o código de geração. Salve o arquivo e verifique se o arquivo subsidiário é gerado corretamente. Repita essa etapa.  
+7. Identifique uma parte do arquivo que você deseja variar. Por exemplo, uma parte que aparece apenas sob certas condições, uma parte que se repete ou em que os valores específicos variam. Insira o código de geração. Salve o arquivo e verifique se o arquivo subsidiário é gerado corretamente. Repita essa etapa.  
   
 ## <a name="guidelines-for-code-generation"></a>Diretrizes para a geração de código  
  Consulte [diretrizes para modelos de texto T4 escrita](../modeling/guidelines-for-writing-t4-text-templates.md).  

@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046009"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Como: Criar um manifesto de pacote
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacot
   
 #### <a name="to-create-the-package-manifest"></a>Para criar o manifesto do pacote  
   
-1.  Crie um diretório para o pacote de bootstrapper. Este exemplo usa C:\package.  
+1. Crie um diretório para o pacote de bootstrapper. Este exemplo usa C:\package.  
   
-2.  Crie um subdiretório com o nome da localidade, como en para inglês.  
+2. Crie um subdiretório com o nome da localidade, como en para inglês.  
   
-3.  No Visual Studio, crie um arquivo XML que é denominado `package.xml`e salve-o para a pasta C:\package\en.  
+3. No Visual Studio, crie um arquivo XML que é denominado `package.xml`e salve-o para a pasta C:\package\en.  
   
-4.  Adicione o XML para listar o nome do pacote de bootstrapper, a cultura para esse manifesto de pacote localizado e o contrato de licença opcional. O XML a seguir usa as variáveis `DisplayName` e `Culture`, que é definido em um elemento posterior.  
+4. Adicione o XML para listar o nome do pacote de bootstrapper, a cultura para esse manifesto de pacote localizado e o contrato de licença opcional. O XML a seguir usa as variáveis `DisplayName` e `Culture`, que é definido em um elemento posterior.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacot
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Adicione o XML para listar todos os arquivos que estão no diretório específica de localidade. O XML a seguir usa um arquivo chamado EULA é aplicável para o **en** localidade.  
+5. Adicione o XML para listar todos os arquivos que estão no diretório específica de localidade. O XML a seguir usa um arquivo chamado EULA é aplicável para o **en** localidade.  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacot
     </PackageFiles>  
     ```  
   
-6.  Adicione o XML para definir as cadeias de caracteres localizáveis para o pacote de bootstrapper. O XML a seguir adiciona cadeias de caracteres de erro para a localidade en.  
+6. Adicione o XML para definir as cadeias de caracteres localizáveis para o pacote de bootstrapper. O XML a seguir adiciona cadeias de caracteres de erro para a localidade en.  
   
     ```  
       <Strings>  
@@ -74,7 +74,7 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacot
     </Strings>  
     ```  
   
-7.  Copie a pasta de C:\package para o diretório de bootstrapper do Visual Studio. Para Visual Studio 2010, isso é o diretório \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+7. Copie a pasta de C:\package para o diretório de bootstrapper do Visual Studio. Para Visual Studio 2010, isso é o diretório \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
 ## <a name="example"></a>Exemplo  
  O manifesto de pacote contém informações específicas de localidade, como mensagens de erro, termos de licença de software e pacotes de idiomas.  

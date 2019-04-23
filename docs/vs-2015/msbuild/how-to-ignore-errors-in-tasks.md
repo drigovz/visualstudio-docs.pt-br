@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c641e1f84e90a9e805630d8711f13e3d212ab17
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062133"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Como ignorar erros em tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59668074"
   
 #### <a name="to-ignore-an-error-in-a-task"></a>Para ignorar um erro em uma tarefa  
   
--   Use o atributo `ContinueOnError` da tarefa. Por exemplo:  
+- Use o atributo `ContinueOnError` da tarefa. Por exemplo:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   

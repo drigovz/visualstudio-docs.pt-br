@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048756"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: Não é possível iniciar a depuração no servidor Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Quando você tenta depurar um aplicativo ASP.NET em execução em um servidor We
   
 Em muitos casos, esse erro ocorre porque o IIS não está configurado corretamente.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Verifique a configuração do IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Verifique a configuração do IIS
 
 Após executar etapas para resolver um problema detalhado aqui e antes de tentar novamente a depuração, talvez também precise redefinir o IIS. Você pode fazer isso abrindo um prompt de comando do administrador e digitando `iisreset`, ou você pode fazer isso no Gerenciador do IIS. 
 

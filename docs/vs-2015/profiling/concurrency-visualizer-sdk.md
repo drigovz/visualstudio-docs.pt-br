@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40c9c3d2da03b70b75f5c2edd8c256e1e35ea0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063784"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
   
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Para adicionar suporte do SDK a um projeto em C# ou do Visual Basic  
   
-1.  Na barra de menus, escolha **Analisar**, **Visualização Simultânea**, **Adicionar SDK ao projeto**.  
+1. Na barra de menus, escolha **Analisar**, **Visualização Simultânea**, **Adicionar SDK ao projeto**.  
   
-2.  Selecione o projeto no qual você deseja acessar o SDK e, em seguida, escolha o botão **Adicionar SDK ao Projeto Selecionado**.  
+2. Selecione o projeto no qual você deseja acessar o SDK e, em seguida, escolha o botão **Adicionar SDK ao Projeto Selecionado**.  
   
-3.  Adicione uma importação ou instrução using ao seu código.  
+3. Adicione uma importação ou instrução using ao seu código.  
   
     ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
@@ -53,19 +53,19 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
   
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Para adicionar suporte do SDK a um projeto em C# ou em C  
   
-1.  Na barra de menus, escolha **Analisar**, **Visualização Simultânea**, **Adicionar SDK ao projeto**.  
+1. Na barra de menus, escolha **Analisar**, **Visualização Simultânea**, **Adicionar SDK ao projeto**.  
   
-2.  Selecione o projeto no qual você deseja acessar o SDK e, em seguida, escolha o botão **Adicionar SDK ao Projeto Selecionado**.  
+2. Selecione o projeto no qual você deseja acessar o SDK e, em seguida, escolha o botão **Adicionar SDK ao Projeto Selecionado**.  
   
-3.  Para C++, inclua `cvmarkersobj.h`. Para C, inclua `cvmarkers.h`.  
+3. Para C++, inclua `cvmarkersobj.h`. Para C, inclua `cvmarkers.h`.  
   
-4.  Adicione uma instrução using ao seu código.  
+4. Adicione uma instrução using ao seu código.  
   
     ```  
     using namespace Concurrency::diagnostic;  
     ```  
   
-5.  Crie um objeto `marker_series` e passe-o para o construtor `span`.  
+5. Crie um objeto `marker_series` e passe-o para o construtor `span`.  
   
     ```cpp  
   
@@ -79,19 +79,19 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Para usar um novo provedor de marcador em um projeto em C# ou do Visual Basic  
   
-1.  Crie um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  O construtor aceita um GUID.  
+1. Crie um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  O construtor aceita um GUID.  
   
-2.  Para registrar o provedor, abra a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) da Visualização Simultânea.  Selecione a guia **Marcadores** e, em seguida, escolha o botão **Adicionar novo provedor**. Na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), digite o GUID usado para criar o provedor e uma descrição do provedor.  
+2. Para registrar o provedor, abra a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) da Visualização Simultânea.  Selecione a guia **Marcadores** e, em seguida, escolha o botão **Adicionar novo provedor**. Na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), digite o GUID usado para criar o provedor e uma descrição do provedor.  
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Para usar um novo provedor de marcador em um projeto em C ou em C++  
   
-1.  Use a função `CvInitProvider` para inicializar um PCV_PROVIDER.  O construtor aceita um GUID* e PCV_PROVIDER\*.  
+1. Use a função `CvInitProvider` para inicializar um PCV_PROVIDER.  O construtor aceita um GUID* e PCV_PROVIDER\*.  
   
-2.  Para registrar o provedor, abra a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Selecione a guia **Marcadores** e, em seguida, escolha o botão **Adicionar novo provedor**. Nessa caixa de diálogo, insira o GUID usado para criar o provedor e uma descrição do provedor.  
+2. Para registrar o provedor, abra a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Selecione a guia **Marcadores** e, em seguida, escolha o botão **Adicionar novo provedor**. Nessa caixa de diálogo, insira o GUID usado para criar o provedor e uma descrição do provedor.  
   
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Para usar uma série de marcadores em um projeto em C# ou do Visual Basic  
   
-1.  Para usar um novo <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, primeiro o crie usando um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> e, em seguida, gere eventos de marcador diretamente da nova série.  
+1. Para usar um novo <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, primeiro o crie usando um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> e, em seguida, gere eventos de marcador diretamente da nova série.  
   
     ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);  
@@ -105,7 +105,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Para usar uma série de marcadores em um projeto em C++  
   
-1.  Crie um objeto `marker_series`.  É possível gerar eventos nessa nova série.  
+1. Crie um objeto `marker_series`.  É possível gerar eventos nessa nova série.  
   
     ```scr  
     marker_series series;  
@@ -114,7 +114,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Para usar uma série de marcadores em um projeto em C  
   
-1.  Use a função `CvCreateMarkerSeries` para criar um PCV_MARKERSERIES.  
+1. Use a função `CvCreateMarkerSeries` para criar um PCV_MARKERSERIES.  
   
     ```cpp  
     PCV_MARKERSERIES series;  

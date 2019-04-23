@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060820"
 ---
 # <a name="running-document-table"></a>Tabela de documento em execução
 O IDE mantém a lista de todos os documentos abertos no momento em uma estrutura interna chamada tabela de documento em execução (RDT). Essa lista inclui todos os documentos abertos na memória, independentemente de se esses documentos estão sendo editados. Um documento é qualquer item que é persistida, incluindo arquivos em um projeto ou arquivo de projeto principal (por exemplo, um arquivo. vcxproj).
@@ -52,9 +52,9 @@ O IDE mantém a lista de todos os documentos abertos no momento em uma estrutura
 
  O IDE também usa o RDT para repavimentar (Trazer para frente) um documento aberto, se um usuário solicita esse documento. Para obter mais informações, consulte [exibindo arquivos usando o comando Abrir do arquivo](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Para determinar se um arquivo é aberto no RDT, siga um procedimentos.
 
--   Consulta para o moniker do documento (ou seja, o caminho completo do documento) descobrir se o item for aberto.
+- Consulta para o moniker do documento (ou seja, o caminho completo do documento) descobrir se o item for aberto.
 
--   Use a ID de hierarquia ou um item para pedir que o sistema de projeto para o caminho completo do documento e, em seguida, examinar o item de a RDT.
+- Use a ID de hierarquia ou um item para pedir que o sistema de projeto para o caminho completo do documento e, em seguida, examinar o item de a RDT.
 
 ## <a name="see-also"></a>Consulte também
 - [Uso de RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)

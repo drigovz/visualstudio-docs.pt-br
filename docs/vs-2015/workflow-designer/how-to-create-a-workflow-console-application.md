@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 285c19e7814c369866fe70fa6f13e48efb6da359
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33666c0e5d63d8d4d33d544fcfe18d8c185ce843
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044346"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Como: Criar um aplicativo de console do fluxo de trabalho
 [!INCLUDE[wf](../includes/wf-md.md)] permite que você crie fluxos de trabalho para executar o sistema ou processos humanos. [!INCLUDE[wfd1](../includes/wfd1-md.md)] fornece a superfície de design para criar esses fluxos de trabalho. [!INCLUDE[wfd2](../includes/wfd2-md.md)] pode ser usado para criar fluxos de trabalho dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou pode ser integrado em outros aplicativos que rehost o designer.  
@@ -23,26 +23,26 @@ ms.locfileid: "58925153"
   
 ### <a name="to-create-a-workflow-console-application"></a>Para criar um aplicativo de console do fluxo de trabalho  
   
-1.  Inicie o [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+1. Inicie o [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
-2.  Sobre o **arquivo** , aponte para **New**e, em seguida, selecione **projeto...** .  
+2. Sobre o **arquivo** , aponte para **New**e, em seguida, selecione **projeto...** .  
   
      A caixa de diálogo **Novo Projeto** é aberta.  
   
-3.  No **modelos instalados** painel, selecione **fluxo de trabalho** de qualquer um os **Visual C#** ou **Visual Basic** agrupamentos, dependendo do seu idioma de preferência.  
+3. No **modelos instalados** painel, selecione **fluxo de trabalho** de qualquer um os **Visual c#** ou **Visual Basic** agrupamentos, dependendo do seu idioma de preferência.  
   
-4.  No painel central, selecione **aplicativo de Console do fluxo de trabalho**.  
+4. No painel central, selecione **aplicativo de Console do fluxo de trabalho**.  
   
-5.  No **nome** , digite um nome descritivo para seu projeto para torná-lo mais fácil identificar.  
+5. No **nome** , digite um nome descritivo para seu projeto para torná-lo mais fácil identificar.  
   
-6.  No **local** , digite o diretório no qual você deseja salvar seu projeto, ou clique em **procurar** para navegar até ele.  
+6. No **local** , digite o diretório no qual você deseja salvar seu projeto, ou clique em **procurar** para navegar até ele.  
   
-7.  No **solução** , digite o nome para a nova solução. Clique em **Okey** para criar o aplicativo.  
+7. No **solução** , digite o nome para a nova solução. Clique em **Okey** para criar o aplicativo.  
   
     > [!NOTE]
     >  Se você deseja adicionar um aplicativo de console do fluxo de trabalho a uma solução existente, abra essa solução na [!INCLUDE[vs2010](../includes/vs2010-md.md)], clique com botão direito na solução **Gerenciador de soluções**e selecione **Add**, em seguida,  **Novo projeto...** Para abrir o **novo projeto** caixa de diálogo. Continuar conforme descrito acima neste procedimento.  
   
-8.  O modelo de projeto cria uma definição de fluxo de trabalho em XAML e a definição de aplicativo de console está no código-fonte. [!INCLUDE[wfd2](../includes/wfd2-md.md)] abre e exibe a tela para o fluxo de trabalho que você criou.  
+8. O modelo de projeto cria uma definição de fluxo de trabalho em XAML e a definição de aplicativo de console está no código-fonte. [!INCLUDE[wfd2](../includes/wfd2-md.md)] abre e exibe a tela para o fluxo de trabalho que você criou.  
   
 9. Para compor um fluxo de trabalho, arraste atividades ou outros itens de fluxo de trabalho do **caixa de ferramentas** à superfície de design do fluxo de trabalho.  
   

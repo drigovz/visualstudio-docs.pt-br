@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a781bee0d0ccb1acd7d9c6b035acac603aea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049048"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Depurar em tempo de design no Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -33,7 +33,7 @@ Para depurar o código XAML por trás de um aplicativo no designer XAML, como o 
 
 Você pode usar o Visual Studio **imediato** janela para executar uma função ou sub-rotina sem executar seu aplicativo. Se a função ou sub-rotina contiver um ponto de interrupção, o Visual Studio interromperá no ponto de interrupção. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Esse recurso é chamado de *depuração em tempo de design*.
 
-O exemplo a seguir está em Visual Basic. Você também pode usar o **Immediate** em tempo de design na janela de C#, F#e aplicativos em C++.
+O exemplo a seguir está em Visual Basic. Você também pode usar o **Immediate** em tempo de design na janela de C#, F#, e C++ aplicativos.
 
 1. Cole o código a seguir em um aplicativo de console em branco do Visual Basic:
 
@@ -102,6 +102,7 @@ Em alguns cenários de associação de dados declarativa, ele pode ajudar a depu
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
+
    Quando a página for carregada, o ponto de interrupção é atingido.
 
 ## <a name="see-also"></a>Consulte também

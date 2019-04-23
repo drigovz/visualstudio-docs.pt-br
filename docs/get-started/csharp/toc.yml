@@ -1,60 +1,53 @@
-items:
-- name: Tutoriais do C#
+- name: 'Tutoriais do C#'
   href: index.yml
   items:
-  - name: Visão geral
-    items:
-    - name: Sobre o Visual Studio
-      href: visual-studio-ide.md
-    - name: Sobre o editor de código
-      href: tutorial-editor.md
-    - name: Sobre projetos e soluções
-      href: tutorial-projects-solutions.md
-    - name: Mais recursos do Visual Studio
-      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-  - name: Criar um aplicativo
-    items:
-    - name: Criar seu primeiro aplicativo em C#
-      href: tutorial-console.md
-    - name: Como criar um aplicativo Web
-      href: tutorial-aspnet-core.md
-    - name: Criar um aplicativo UWP
-      href: tutorial-uwp.md
-    - name: Criar um aplicativo WPF
-      href: tutorial-wpf.md
-    - name: Tutorial em vídeo – Criar um aplicativo Web ASP.NET Core
+    - name: Visão geral
       items:
-      - name: 1 – Instalar o Visual Studio
-        href: tutorial-aspnet-core-ef-step-01.md
-      - name: 2 – Criar seu primeiro aplicativo Web ASP.NET Core
-        href: tutorial-aspnet-core-ef-step-02.md
-      - name: 3 – Trabalhar usando dados
-        href: tutorial-aspnet-core-ef-step-03.md
-      - name: 4 – Expor uma API Web
-        href: tutorial-aspnet-core-ef-step-04.md
-      - name: 5 – Criar e implantar seu aplicativo ASP.NET Core no Azure
-        href: tutorial-aspnet-core-ef-step-05.md
-    expanded: true
-  - name: Aprender a usar o Visual Studio
-    items:
-    - name: Abrir um projeto de um repositório
-      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: Escrever e editar o código
-      href: tutorial-editor.md
-    - name: Compilar e criar
-      href: ../../ide/compiling-and-building-in-visual-studio.md
-    - name: Depurar seu código
-      href: ../csharp/tutorial-debugger.md
-    - name: Teste de unidade
-      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: Implantar o projeto
-      href: ../../deployment/index.md
-    - name: Acessar dados
-      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    expanded: true
-ms.openlocfilehash: cb9f6575183977a63224f7333c95fef18a0fd779
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018123"
+        - name: Sobre o Visual Studio
+          href: visual-studio-ide.md
+        - name: Sobre o editor de código
+          href: tutorial-editor.md
+        - name: Sobre projetos e soluções
+          href: tutorial-projects-solutions.md
+        - name: Mais recursos do Visual Studio
+          href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
+    - name: Criar um aplicativo
+      expanded: true
+      items:
+        - name: 'Criar seu primeiro aplicativo em C#'
+          href: tutorial-console.md
+        - name: Como criar um aplicativo Web
+          href: tutorial-aspnet-core.md
+        - name: Criar um aplicativo UWP
+          href: tutorial-uwp.md
+        - name: Criar um aplicativo WPF
+          href: tutorial-wpf.md
+        - name: Tutorial em vídeo – Criar um aplicativo Web ASP.NET Core
+          items:
+            - name: 1 – Instalar o Visual Studio
+              href: tutorial-aspnet-core-ef-step-01.md
+            - name: 2 – Criar seu primeiro aplicativo Web ASP.NET Core
+              href: tutorial-aspnet-core-ef-step-02.md
+            - name: 3 – Trabalhar usando dados
+              href: tutorial-aspnet-core-ef-step-03.md
+            - name: 4 – Expor uma API Web
+              href: tutorial-aspnet-core-ef-step-04.md
+            - name: 5 – Criar e implantar seu aplicativo ASP.NET Core no Azure
+              href: tutorial-aspnet-core-ef-step-05.md
+    - name: Aprender a usar o Visual Studio
+      expanded: true
+      items:
+        - name: Abrir um projeto de um repositório
+          href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
+        - name: Escrever e editar o código
+          href: tutorial-editor.md
+        - name: Compilar e criar
+          href: ../../ide/compiling-and-building-in-visual-studio.md
+        - name: Depurar seu código
+          href: ../csharp/tutorial-debugger.md
+        - name: Teste de unidade
+          href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
+        - name: Implantar o projeto
+          href: ../../deployment/index.md
+        - name: Acessar dados
+          href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json

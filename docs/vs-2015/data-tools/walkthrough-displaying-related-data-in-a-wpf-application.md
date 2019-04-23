@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065383"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Passo a passo: Exibindo dados relacionados em um aplicativo WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 #### <a name="to-create-a-new-wpf-project"></a>Para criar um novo projeto WPF  
   
-1.  Inicie o Visual Studio.  
+1. Inicie o Visual Studio.  
   
-2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-3.  Expandir **Visual C#** ou **Visual Basic**e, em seguida, selecione **Windows**.  
+3. Expandir **Visual c#** ou **Visual Basic**e, em seguida, selecione **Windows**.  
   
-4.  Certifique-se de que **.NET Framework 4** está selecionado na caixa de combinação na parte superior da caixa de diálogo. O <xref:System.Windows.Controls.DataGrid> controle que você pode usar neste passo a passo está disponível apenas no .NET Framework 4.  
+4. Certifique-se de que **.NET Framework 4** está selecionado na caixa de combinação na parte superior da caixa de diálogo. O <xref:System.Windows.Controls.DataGrid> controle que você pode usar neste passo a passo está disponível apenas no .NET Framework 4.  
   
-5.  Selecione o modelo de projeto **Aplicativo WPF**.  
+5. Selecione o modelo de projeto **Aplicativo WPF**.  
   
-6.  Na caixa **Nome**, digite `AdventureWorksOrdersViewer`.  
+6. Na caixa **Nome**, digite `AdventureWorksOrdersViewer`.  
   
-7.  Clique em **OK**.  
+7. Clique em **OK**.  
   
      O Visual Studio cria o `AdventureWorksOrdersViewer` projeto.  
   
@@ -102,9 +102,9 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 6. Sobre o **Choose Your Database Objects** página, expanda **tabelas**e, em seguida, selecione as tabelas a seguir:  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. Clique em **Finalizar**.  
   
@@ -192,15 +192,15 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 #### <a name="to-test-the-application"></a>Para testar o aplicativo  
   
-1.  Pressione **F5**.  
+1. Pressione **F5**.  
   
      O aplicativo é compilado e executado. Verifique o seguinte:  
   
-    -   O **ID do pedido de vendas** caixa de combinação exibe **71774**. Isso é a primeira ID de pedido na entidade.  
+    - O **ID do pedido de vendas** caixa de combinação exibe **71774**. Isso é a primeira ID de pedido na entidade.  
   
-    -   Para cada pedido de você selecionar o **ID do pedido de vendas** caixa de combinação, informações de ordem detalhadas são exibidas no <xref:System.Windows.Controls.DataGrid>.  
+    - Para cada pedido de você selecionar o **ID do pedido de vendas** caixa de combinação, informações de ordem detalhadas são exibidas no <xref:System.Windows.Controls.DataGrid>.  
   
-2.  Feche o aplicativo.  
+2. Feche o aplicativo.  
   
 ## <a name="next-steps"></a>Próximas etapas  
  Depois de concluir este passo a passo, saiba como usar o **fontes de dados** janela no Visual Studio para associar o WPF controla a outros tipos de fontes de dados. Para obter mais informações, consulte [controles de WPF associar a um WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) e [WPF associar controles a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md).  

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061496"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Selar métodos que atendem a interfaces particulares
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "58922225"
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, impedir que o método que está sendo substituído fora do assembly usando um dos seguintes:
 
--   Verifique o tipo de declaração `sealed` (`NotInheritable` no Visual Basic).
+- Verifique o tipo de declaração `sealed` (`NotInheritable` no Visual Basic).
 
--   Altere a acessibilidade do tipo declarativo para `internal` (`Friend` no Visual Basic).
+- Altere a acessibilidade do tipo declarativo para `internal` (`Friend` no Visual Basic).
 
--   Remova todos os construtores públicos do tipo de declaração.
+- Remova todos os construtores públicos do tipo de declaração.
 
--   Implementar o método sem usar o `virtual` modificador.
+- Implementar o método sem usar o `virtual` modificador.
 
--   Implemente o método explicitamente.
+- Implemente o método explicitamente.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  É seguro suprimir um aviso desta regra se, depois de uma análise cuidadosa, há nenhum problema de segurança que pode ser explorável se o método for substituído fora do assembly.

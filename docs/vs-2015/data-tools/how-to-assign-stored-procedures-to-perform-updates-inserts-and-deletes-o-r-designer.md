@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247e1720a21c88f15a766fb948156e93ec55e308
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060859"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Obj
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Para atribuir procedimentos armazenados para substituir o comportamento padrão de uma classe de entidade  
   
-1.  Abra o arquivo **LINQ to SQL** no designer. (Duas vezes no arquivo. dbml **Gerenciador de soluções**.)  
+1. Abra o arquivo **LINQ to SQL** no designer. (Duas vezes no arquivo. dbml **Gerenciador de soluções**.)  
   
-2.  Na **Gerenciador de servidores**/**Database Explorer**, expanda **Stored Procedures** e localize os procedimentos armazenados que você deseja usar para Insert, Update, e/ou comandos de exclusão da classe de entidade.  
+2. Na **Gerenciador de servidores**/**Database Explorer**, expanda **Stored Procedures** e localize os procedimentos armazenados que você deseja usar para Insert, Update, e/ou comandos de exclusão da classe de entidade.  
   
-3.  Arraste o procedimento armazenado para o Designer Relacional de Objetos.  
+3. Arraste o procedimento armazenado para o Designer Relacional de Objetos.  
   
      O procedimento armazenado é adicionado ao painel de métodos como um método <xref:System.Data.Linq.DataContext>. Para obter mais informações, consulte [métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md).  
   
-4.  Selecione a classe de entidade para a qual você deseja usar o procedimento armazenado para executar atualizações.  
+4. Selecione a classe de entidade para a qual você deseja usar o procedimento armazenado para executar atualizações.  
   
-5.  Na janela **Propriedades**, selecione o comando a ser substituído (**Insert**, **Update** ou **Delete**).  
+5. Na janela **Propriedades**, selecione o comando a ser substituído (**Insert**, **Update** ou **Delete**).  
   
-6.  Clique nas reticências (...) ao lado das palavras **Usar Tempo de Execução** para abrir a caixa de diálogo **Configurar Comportamento**.  
+6. Clique nas reticências (...) ao lado das palavras **Usar Tempo de Execução** para abrir a caixa de diálogo **Configurar Comportamento**.  
   
-7.  Selecione **Personalizar**.  
+7. Selecione **Personalizar**.  
   
-8.  Selecione o procedimento armazenado desejado na lista **Personalizar**.  
+8. Selecione o procedimento armazenado desejado na lista **Personalizar**.  
   
 9. Inspecione a lista de **Argumentos de Método** e de **Propriedades de Classe** para verificar se **Argumentos de Método** é mapeado para **Propriedades de Classe** apropriado. Mapeie os argumentos de método originais (original _*ArgumentName*) para as propriedades originais (*PropertyName* (Original)) para os comandos Update e Delete.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059130"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Como: Especifique uma URL de suporte para pré-requisitos individuais em uma implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação pode tes
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Especificando uma URL de suporte para um pré-requisito individual  
   
-1.  Abra o manifesto do aplicativo (o arquivo. manifest) para sua [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo em um editor de texto.  
+1. Abra o manifesto do aplicativo (o arquivo. manifest) para sua [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo em um editor de texto.  
   
-2.  Para obter um pré-requisito de sistema operacional, adicione a `supportUrl` de atributo para o `dependentOS` elemento:  
+2. Para obter um pré-requisito de sistema operacional, adicione a `supportUrl` de atributo para o `dependentOS` elemento:  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação pode tes
       </dependency>  
     ```  
   
-3.  Para obter um pré-requisito para uma determinada versão do common language runtime, adicione a `supportUrl` de atributo para o `dependentAssembly` entrada que especifica a dependência de tempo de execução de linguagem comum:  
+3. Para obter um pré-requisito para uma determinada versão do common language runtime, adicione a `supportUrl` de atributo para o `dependentAssembly` entrada que especifica a dependência de tempo de execução de linguagem comum:  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação pode tes
       </dependency>  
     ```  
   
-4.  Para um pré-requisito para um assembly que deve ser pré-instalados no cache de assembly global, defina as `supportUrl` para o `dependentAssembly` elemento que especifica o assembly necessário:  
+4. Para um pré-requisito para um assembly que deve ser pré-instalados no cache de assembly global, defina as `supportUrl` para o `dependentAssembly` elemento que especifica o assembly necessário:  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação pode tes
       </dependency>  
     ```  
   
-5.  Opcional. Para aplicativos destinados ao .NET Framework 4, abra o manifesto de implantação (o arquivo. Application) para sua [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo em um editor de texto.  
+5. Opcional. Para aplicativos destinados ao .NET Framework 4, abra o manifesto de implantação (o arquivo. Application) para sua [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo em um editor de texto.  
   
-6.  Para obter um pré-requisito do .NET Framework 4, adicione a `supportUrl` de atributo para o `compatibleFrameworks` elemento:  
+6. Para obter um pré-requisito do .NET Framework 4, adicione a `supportUrl` de atributo para o `compatibleFrameworks` elemento:  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação pode tes
     </compatibleFrameworks>  
     ```  
   
-7.  Depois que você alterou manualmente o manifesto do aplicativo, você deve assinar novamente o manifesto do aplicativo usando seu certificado digital, em seguida, atualizar e assinar novamente o manifesto de implantação. Você deve usar o Mage.exe ou MageUI.exe SDK das ferramentas para realizar essa tarefa, como regenerar esses arquivos usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apaga as alterações manuais. Para obter mais informações sobre como usar Mage.exe assinar novamente os manifestos, consulte [como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Depois que você alterou manualmente o manifesto do aplicativo, você deve assinar novamente o manifesto do aplicativo usando seu certificado digital, em seguida, atualizar e assinar novamente o manifesto de implantação. Você deve usar o Mage.exe ou MageUI.exe SDK das ferramentas para realizar essa tarefa, como regenerar esses arquivos usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apaga as alterações manuais. Para obter mais informações sobre como usar Mage.exe assinar novamente os manifestos, consulte [como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Segurança do .NET Framework  
  A URL de suporte não é exibida na caixa de diálogo se o aplicativo é marcado para ser executado em confiança parcial.  

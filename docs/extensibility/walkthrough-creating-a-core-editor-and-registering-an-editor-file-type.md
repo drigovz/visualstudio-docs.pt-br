@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048199"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Passo a passo: Criar um editor de núcleo e registrar um tipo de arquivo do editor
 Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo quando um arquivo com o *.myext* extensão de nome de arquivo é carregado.
@@ -26,11 +26,11 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Locais para o modelo de projeto do Visual Studio Package
  O modelo de projeto de pacote do Visual Studio pode ser encontrado em três locais diferentes nos **novo projeto** caixa de diálogo:
 
-1.  Sob **extensibilidade do Visual Basic**. O idioma padrão do projeto é o Visual Basic.
+1. Sob **extensibilidade do Visual Basic**. O idioma padrão do projeto é o Visual Basic.
 
-2.  Sob **c# extensibilidade**. O idioma padrão do projeto é c#.
+2. Sob **c# extensibilidade**. O idioma padrão do projeto é c#.
 
-3.  Sob **outros tipos de projetos extensibilidade**. O idioma padrão do projeto é C++.
+3. Sob **outros tipos de projetos extensibilidade**. O idioma padrão do projeto é C++.
 
 ### <a name="to-create-the-vspackage"></a>Para criar o VSPackage
 

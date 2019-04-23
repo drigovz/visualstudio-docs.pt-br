@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17be48435dd8251d1269c7a95195d794f750d534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047092"
 ---
 # <a name="web-control-library-managed-code"></a>Biblioteca de Controles da Web (código gerenciado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,25 +31,25 @@ O modelo de projeto da Biblioteca de Controles da Web cria uma DLL. Como a bibli
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Para depurar uma Biblioteca de Controles da Web (método 1)  
   
-1.  Abra um projeto existente da Biblioteca de Controles da Web ou crie um novo.  
+1. Abra um projeto existente da Biblioteca de Controles da Web ou crie um novo.  
   
-2.  Crie uma página do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que insira o controle.  
+2. Crie uma página do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que insira o controle.  
   
-3.  No site que está hospedando o agente de teste do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], crie um subdiretório chamado `/Code`.  
+3. No site que está hospedando o agente de teste do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], crie um subdiretório chamado `/Code`.  
   
-4.  Copie o código-fonte do controle no subdiretório `/Code`.  
+4. Copie o código-fonte do controle no subdiretório `/Code`.  
   
-5.  Abra o código-fonte no subdiretório `/Code` e defina pontos de interrupção.  
+5. Abra o código-fonte no subdiretório `/Code` e defina pontos de interrupção.  
   
-6.  Abra uma janela do navegador com uma URL que aponte para o agente de teste. Um ponto de interrupção no controle será atingido e você poderá iniciar a depuração.  
+6. Abra uma janela do navegador com uma URL que aponte para o agente de teste. Um ponto de interrupção no controle será atingido e você poderá iniciar a depuração.  
   
 ### <a name="to-debug-a-web-control-library-method-2"></a>Para depurar uma biblioteca de controle da Web (método 2)  
   
-1.  Crie o projeto de aplicativo host e o projeto de controle da Web na mesma solução.  
+1. Crie o projeto de aplicativo host e o projeto de controle da Web na mesma solução.  
   
-2.  Na **Gerenciador de soluções**, o aplicativo host com o botão direito e escolha **adicionar referência**.  
+2. Na **Gerenciador de soluções**, o aplicativo host com o botão direito e escolha **adicionar referência**.  
   
-3.  Adicione uma referência ao projeto de controle da Web.  
+3. Adicione uma referência ao projeto de controle da Web.  
   
 ## <a name="see-also"></a>Consulte também  
  [Aplicativos Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)

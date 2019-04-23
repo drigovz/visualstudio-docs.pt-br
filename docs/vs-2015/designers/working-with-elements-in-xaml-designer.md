@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49ec96150eda9bf0a62b9767fefbfd5936aef840
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045134"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 #### <a name="to-add-an-element-to-a-layout"></a>Para adicionar um elemento a um layout  
   
--   No Designer XAML, siga um destes procedimentos:  
+- No Designer XAML, siga um destes procedimentos:  
   
-    -   Clique duas vezes em um elemento na **Caixa de Ferramentas** (ou selecione um elemento na Caixa de Ferramentas e pressione Enter).  
+    - Clique duas vezes em um elemento na **Caixa de Ferramentas** (ou selecione um elemento na Caixa de Ferramentas e pressione Enter).  
   
-    -   Arraste um elemento da **Caixa de Ferramentas** para a prancheta.  
+    - Arraste um elemento da **Caixa de Ferramentas** para a prancheta.  
   
-    -   Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.  
+    - Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Alterando a ordem das camadas de elementos  
  Quando houver dois elementos na prancheta do XAML Designer, um dos elementos será exibido na frente do outro na ordem de camadas. No final da lista de elementos da janela Estrutura de Tópicos de Documento se encontra o elemento mais à frente (exceto quando a propriedade **ZIndex** estiver definida para um elemento). Quando você inserir um elemento em uma página, formulário ou contêiner de layout, o elemento será automaticamente colocado na frente de outros elementos no elemento de contêiner ativo. Para alterar a ordem dos elementos, você pode usar os comandos **Ordem** ou arrastar os elementos na árvore de objetos na janela Estrutura de Tópicos de Documento.  
@@ -47,13 +47,13 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
   - Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento cuja ordem de camadas você deseja alterar, selecione **Ordem** e clique em uma destas opções:  
   
-    -   **Trazer para a Frente** para colocar o elemento na parte da frente da ordem.  
+    - **Trazer para a Frente** para colocar o elemento na parte da frente da ordem.  
   
-    -   **Avançar** para avançar o elemento um nível na ordem.  
+    - **Avançar** para avançar o elemento um nível na ordem.  
   
-    -   **Recuar** para recuar o elemento um nível na ordem.  
+    - **Recuar** para recuar o elemento um nível na ordem.  
   
-    -   **Enviar para Trás** para enviar o elemento para a parte posterior da ordem.  
+    - **Enviar para Trás** para enviar o elemento para a parte posterior da ordem.  
   
     Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** inferior será exibido na frente quando houver sobreposição de elementos.  
   
@@ -64,15 +64,15 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Para alinhar dois ou mais elementos usando comandos de menu  
   
-1.  Selecione os elementos que deseja alinhar. Você pode selecionar mais de um elemento mantendo pressionada a tecla CTRL ao selecionar os elementos.  
+1. Selecione os elementos que deseja alinhar. Você pode selecionar mais de um elemento mantendo pressionada a tecla CTRL ao selecionar os elementos.  
   
-2.  Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Esquerda**, **Centralizar**, **Direita** ou **Alongar**.  
+2. Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Esquerda**, **Centralizar**, **Direita** ou **Alongar**.  
   
-3.  Selecione uma das seguintes propriedades em **VerticalAlignment** na seção **Layout** da janela Propriedades: **Superior**, **Centralizar**, **Inferior** ou **Alongar**.  
+3. Selecione uma das seguintes propriedades em **VerticalAlignment** na seção **Layout** da janela Propriedades: **Superior**, **Centralizar**, **Inferior** ou **Alongar**.  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Para alinhar dois ou mais elementos usando guias de alinhamento  
   
--   No XAML Designer, em um layout que contenha, pelo menos, dois elementos, arraste ou redimensione um dos elementos de forma que a borda seja alinhada a outro elemento.  
+- No XAML Designer, em um layout que contenha, pelo menos, dois elementos, arraste ou redimensione um dos elementos de forma que a borda seja alinhada a outro elemento.  
   
      Quando as bordas estão alinhadas, um *limite de alinhamento* é exibido para indicar o alinhamento. O limite de alinhamento é exibido como uma linha vermelha tracejada. Os limites de alinhamento só são exibidos quando a opção de **ajuste a guias de alinhamento** está habilitada. Para ver uma ilustração da prancheta que mostra um limite de alinhamento, consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
   
@@ -81,13 +81,13 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Para alterar as margens de um elemento na janela Propriedades  
   
-1.  Selecione o elemento cujas margens você deseja alterar.  
+1. Selecione o elemento cujas margens você deseja alterar.  
   
-2.  Em **Layout**, na janela Propriedades, altere o valor (em pixels ou em unidades independentes de dispositivos, de aproximadamente 1/96 polegada) de qualquer propriedade **Margem** (**Superior**, **Esquerda**, **Direita** ou **Inferior**).  
+2. Em **Layout**, na janela Propriedades, altere o valor (em pixels ou em unidades independentes de dispositivos, de aproximadamente 1/96 polegada) de qualquer propriedade **Margem** (**Superior**, **Esquerda**, **Direita** ou **Inferior**).  
   
 #### <a name="to-change-an-elements-margins-in-the-artboard"></a>Para alterar as margens de um elemento na prancheta  
   
--   Para alterar as margens de um elemento relativo ao respectivo contêiner de layout, clique nos *adornos de margem* exibidos ao redor do elemento na prancheta quando o elemento for selecionado e estiver em um contêiner de layout. Para obter uma ilustração que mostra adornos de margem, consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
+- Para alterar as margens de um elemento relativo ao respectivo contêiner de layout, clique nos *adornos de margem* exibidos ao redor do elemento na prancheta quando o elemento for selecionado e estiver em um contêiner de layout. Para obter uma ilustração que mostra adornos de margem, consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
   
      Se um adorno de margem estiver aberto, vertical ou horizontalmente, essa margem não estará definida. Se um adorno de margem está fechado, essa margem está definida.  
   
@@ -101,9 +101,9 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 #### <a name="to-group-elements-into-a-new-layout-container"></a>Para agrupar elementos em um novo contêiner de layout  
   
-1.  Selecione os elementos que você deseja agrupar. (Para selecionar diversos elementos, mantenha pressionada a tecla CTRL ao clicar neles.)  
+1. Selecione os elementos que você deseja agrupar. (Para selecionar diversos elementos, mantenha pressionada a tecla CTRL ao clicar neles.)  
   
-2.  Clique com o botão direito do mouse nos elementos selecionados, aponte para **Agrupar em** e clique no tipo de contêiner de layout no qual deseja que o grupo resida.  
+2. Clique com o botão direito do mouse nos elementos selecionados, aponte para **Agrupar em** e clique no tipo de contêiner de layout no qual deseja que o grupo resida.  
   
     > [!TIP]
     >  Se você selecionar <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> para agrupar os elementos, os elementos serão colocados em um novo painel de <xref:Windows.UI.Xaml.Controls.Grid> dentro de <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Se você desagrupar elementos em um desses contêineres de layout, apenas <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> será excluído, e o painel <xref:Windows.UI.Xaml.Controls.Grid> permanecerá. Para excluir o painel `Grid`, desagrupe os elementos novamente.  
@@ -119,7 +119,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 #### <a name="to-reset-the-element-layout"></a>Para redefinir o layout do elemento  
   
--   Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento, selecione **Layout**, **Redefinir** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **Layout**, **Redefinir Tudo** para redefinir todas as propriedades de layout para o elemento).  
+- Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento, selecione **Layout**, **Redefinir** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **Layout**, **Redefinir Tudo** para redefinir todas as propriedades de layout para o elemento).  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061978"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de camada: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
 |4|**Comentário**|Use para adicionar observações gerais para o diagrama ou os elementos no diagrama.|  
 |5|**Link de comentário**|Use para vincular comentários aos elementos no diagrama.|  
   
-##  <a name="Explorer"></a> Gerenciador de camadas  
+## <a name="Explorer"></a> Gerenciador de camadas  
  Você pode vincular cada camada para artefatos em sua solução, como projetos, classes, namespaces, arquivos de projeto e outras partes do seu software. O número em uma camada mostra o número de artefatos que estão associados à camada. No entanto, ao ler o número de artefatos em uma camada, lembre-se do seguinte:  
   
 - Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.  
@@ -80,7 +80,7 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
   
 #### <a name="to-examine-the-linked-artifacts"></a>Para examinar os artefatos vinculados  
   
--   No diagrama de camada, abra o menu de atalho para uma ou mais camadas e, em seguida, escolha **Exibir Links**.  
+- No diagrama de camada, abra o menu de atalho para uma ou mais camadas e, em seguida, escolha **Exibir Links**.  
   
      **Gerenciador de camada** é aberta e mostra os artefatos que são vinculados para as camadas selecionadas. **Gerenciador de camada** tem uma coluna que mostra cada uma das propriedades dos links de artefato.  
   

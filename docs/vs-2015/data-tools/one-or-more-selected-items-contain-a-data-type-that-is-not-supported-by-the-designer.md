@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065697"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Um ou mais itens selecionados contêm um tipo de dados que não é suportado pelo designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Um ou mais dos itens arrastados de **Gerenciador de servidores**/**Database Expl
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1.  Criar uma exibição que são baseadas na tabela desejada e que não inclui o tipo de dados sem suporte.  
+1. Criar uma exibição que são baseadas na tabela desejada e que não inclui o tipo de dados sem suporte.  
   
-2.  Arraste a exibição de **Gerenciador de servidores**/**Database Explorer** para o designer.  
+2. Arraste a exibição de **Gerenciador de servidores**/**Database Explorer** para o designer.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4a99fd1473ea25667887701198efee23b1356
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063420"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da web conterá "\<html >..." e todas as outras partes padrão de uma página HTML. Inserido no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.
@@ -25,11 +25,11 @@ Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, 
 
  Os modelos de texto são compostos das seguintes partes:
 
--   **Diretivas** -elementos que controlam como o modelo é processado.
+- **Diretivas** -elementos que controlam como o modelo é processado.
 
--   **Blocos de texto** – conteúdo que é copiado diretamente para a saída.
+- **Blocos de texto** – conteúdo que é copiado diretamente para a saída.
 
--   **Blocos de controle** -código de programa que insere valores de variáveis no texto e controla partes condicionais ou repetidas do texto.
+- **Blocos de controle** -código de programa que insere valores de variáveis no texto e controla partes condicionais ou repetidas do texto.
 
 Para testar os exemplos neste tópico, copiá-los em um arquivo de modelo conforme descrito em [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Depois de editar o arquivo de modelo, salvá-lo e, em seguida, inspecione a saída **. txt** arquivo.
 
@@ -107,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Observe que o símbolo de abertura tem três caracteres "<#=".
+ Observe que o símbolo de abertura tem três caracteres "< #=".
 
  A expressão pode incluir qualquer variável que esteja no escopo. Por exemplo, este bloco imprime linhas com números:
 

@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064824"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Vincular atualizações de modelo UML usando transações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Quando você define uma extensão para os designers UML no Visual Studio, você 
   
  Observe o seguinte:  
   
--   Você sempre deve incluir `Commit()` no final da transação. Se uma transação for descartada sem ser confirmada, a transação será revertida. Ou seja, o modelo será restaurado ao estado no início da transação.  
+- Você sempre deve incluir `Commit()` no final da transação. Se uma transação for descartada sem ser confirmada, a transação será revertida. Ou seja, o modelo será restaurado ao estado no início da transação.  
   
--   Se ocorrer uma exceção que não é capturada dentro da transação, a transação será revertida. É um padrão frequente para incluir a `using` bloco de transação dentro um `try…catch` bloco.  
+- Se ocorrer uma exceção que não é capturada dentro da transação, a transação será revertida. É um padrão frequente para incluir a `using` bloco de transação dentro um `try…catch` bloco.  
   
--   Você pode aninhar transações.  
+- Você pode aninhar transações.  
   
--   Você pode fornecer qualquer nome não em branco para `BeginTransaction()`.  
+- Você pode fornecer qualquer nome não em branco para `BeginTransaction()`.  
   
--   Somente o Store de modelo UML é afetado por essas transações. Modelagem de transações não afeta: variáveis, armazenamentos externos, como arquivos e bancos de dados, diagramas de camada e modelos de código.  
+- Somente o Store de modelo UML é afetado por essas transações. Modelagem de transações não afeta: variáveis, armazenamentos externos, como arquivos e bancos de dados, diagramas de camada e modelos de código.  
   
 ## <a name="example"></a>Exemplo  
   

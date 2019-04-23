@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1522b2567c05a9c3a61091813a8b5e18315433f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4ec56ae4345405cfc704a97ec624f9c2e4d96a5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061197"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Como: Preencher documentos com dados de um banco de dados
 
@@ -36,11 +36,11 @@ O exemplo a seguir mostra como adicionar controles ligados a dados em projetos d
 
 ### <a name="to-populate-a-document-with-data-from-a-database"></a>Para preencher um documento com os dados de um banco de dados
 
-1.  Abra um projeto de nível de documento do Word no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], com o documento aberto no designer.
+1. Abra um projeto de nível de documento do Word no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], com o documento aberto no designer.
 
-2.  Abra o **fontes de dados** janela e criar uma fonte de dados de um banco de dados. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
+2. Abra o **fontes de dados** janela e criar uma fonte de dados de um banco de dados. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
 
-3.  Arraste o campo desejado a **fontes de dados** janela ao documento.
+3. Arraste o campo desejado a **fontes de dados** janela ao documento.
 
 Um controle de conteúdo é adicionado ao documento. O tipo de controle de conteúdo depende do tipo de dados do campo selecionado. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).
 
@@ -50,19 +50,19 @@ Você pode adicionar um controle diferente, selecionando o campo de dados do **f
 
 Além do controle, os seguintes objetos de dados são automaticamente adicionados ao seu projeto:
 
--   Um dataset tipado que encapsula as tabelas de dados para o qual você se conectou no banco de dados. Para obter mais informações, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Um dataset tipado que encapsula as tabelas de dados para o qual você se conectou no banco de dados. Para obter mais informações, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Um <xref:System.Windows.Forms.BindingSource> que conecta-se com o controle para o conjunto de dados tipado. Para obter mais informações, consulte [visão geral do componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Um <xref:System.Windows.Forms.BindingSource> que conecta-se com o controle para o conjunto de dados tipado. Para obter mais informações, consulte [visão geral do componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Um TableAdapter que conecta-se o conjunto de dados tipado para o banco de dados. Para obter mais informações, consulte [criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+- Um TableAdapter que conecta-se o conjunto de dados tipado para o banco de dados. Para obter mais informações, consulte [criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
--   Um TableAdapterManager, que é usado para coordenar a adaptadores de tabela no conjunto de dados para habilitar as atualizações hierárquicas. Para obter mais informações, consulte [atualização hierárquica](../data-tools/hierarchical-update.md) e [TableAdapterManager reference](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Um TableAdapterManager, que é usado para coordenar a adaptadores de tabela no conjunto de dados para habilitar as atualizações hierárquicas. Para obter mais informações, consulte [atualização hierárquica](../data-tools/hierarchical-update.md) e [TableAdapterManager reference](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Quando você executa o projeto, o controle exibe o primeiro registro na fonte de dados. Você pode usar o <xref:System.Windows.Forms.BindingSource> para permitir aos usuários percorrer os registros.
 
 ### <a name="to-scroll-through-the-records"></a>Para percorrer os registros
 
--   Use <xref:System.Windows.Forms.BindingSource> métodos como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> e <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Use <xref:System.Windows.Forms.BindingSource> métodos como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> e <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Para obter informações sobre como enviar atualizações para o conjunto de dados tipado e o banco de dados, consulte [como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

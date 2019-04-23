@@ -1,5 +1,5 @@
 ---
-title: Refatoração (C#) | Microsoft Docs
+title: Refatoração (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,31 +18,31 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046312"
 ---
 # <a name="refactoring-c"></a>Refatoração (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Refatoração é o processo de aperfeiçoar seu código após ele ter sido gravado, alterando a estrutura interna do código sem alterar o comportamento externo do código.  
   
- Visual C# fornece os seguintes comandos de refatoração sobre o **refatoração** menu:  
+ Visual c# fornece os seguintes comandos de refatoração sobre o **refatoração** menu:  
   
--   [Refatoração Extrair método (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Refatoração Extrair método (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Refatoração Renomear (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Refatoração Renomear (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Refatoração Encapsular campo (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Refatoração Encapsular campo (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Refatoração Extrair Interface (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Refatoração Extrair Interface (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Refatoração Remover parâmetros (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Refatoração Remover parâmetros (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Refatoração Reordenar parâmetros (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Refatoração Reordenar parâmetros (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refatoração de multiprojeto  
  Visual Studio dá suporte a vários projetos de refatoração para projetos que estão na mesma solução. Todas as operações de refatoração que corrigir referências em arquivos corrigir essas referências a todos os projetos do mesmo idioma. Isso funciona para todas as referências de projeto a projeto. Por exemplo, se você tiver um aplicativo de console que faz referência a uma biblioteca de classes, quando você renomeia um tipo de biblioteca de classe (usando o `Rename` operação de refatoração), as referências ao tipo de biblioteca de classe no aplicativo de console também são atualizadas.  
@@ -69,7 +69,7 @@ Refatoração é o processo de aperfeiçoar seu código após ele ter sido grava
   
  O **resultados da verificação** caixa de diálogo pode notificá-lo se o mecanismo de refatoração detecta erros de compilação ou detecta que uma operação de refatoração inadvertidamente faz com que uma referência de código para associar a algo diferente do que era originalmente associada a (problema de religação).  
   
- Para ativar os resultados da verificação de recursos, diante a **ferramentas** menu, clique em **opções**. No **opções** diálogo caixa, expanda **Editor de texto**e, em seguida, expanda **C#**. Clique em **Advanced** e selecione o **verificar os resultados da refatoração** caixa de seleção.  
+ Para ativar os resultados da verificação de recursos, diante a **ferramentas** menu, clique em **opções**. No **opções** diálogo caixa, expanda **Editor de texto**e, em seguida, expanda **c#**. Clique em **Advanced** e selecione o **verificar os resultados da refatoração** caixa de seleção.  
   
  O **resultados da verificação** caixa de diálogo distingue a diferença entre dois tipos de problemas de reassociação.  
   
@@ -107,5 +107,5 @@ class Example
  Se você usar a refatoração Renomear `OtherMethod` para `Method`, essa caixa de diálogo é exibida. A referência na `Main` refere-se agora para o método sobrecarregado que aceita um `int` parâmetro em vez do método sobrecarregado que aceita um `object` parâmetro.  
   
 ## <a name="see-also"></a>Consulte também  
- [Usando o ambiente de desenvolvimento do Visual Studio para C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
+ [Usando o ambiente de desenvolvimento do Visual Studio para c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
  [Como: restaurar snippets de refatoração de C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062444"
 ---
 # <a name="sourcetextattr-enumeration"></a>Enumeração SOURCE_TEXT_ATTR
 Descrevem os atributos de um único caractere de texto de origem.  
@@ -44,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>Comentários  
  Normalmente, o `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, e `IActiveScriptDebug::GetScriptTextAttributes` métodos retornam um atributo de texto por caractere, a menos que:  
   
--   O sinalizador GETATTRTYPE_DEPSCAN for definido, caso em que o método pode retornar os sinalizadores SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP,  
+- O sinalizador GETATTRTYPE_DEPSCAN for definido, caso em que o método pode retornar os sinalizadores SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP,  
   
--   O sinalizador GETATTRFLAG_THIS for definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_THIS,  
+- O sinalizador GETATTRFLAG_THIS for definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_THIS,  
   
--   O sinalizador GETATTRFLAG_HUMANTEXT está definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_HUMANTEXT.  
+- O sinalizador GETATTRFLAG_HUMANTEXT está definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_HUMANTEXT.  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

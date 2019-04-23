@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 108ccd07c5e15a264fcd1dc5efe6f5052cd052f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047392"
 ---
 # <a name="manage-universal-windows-projects"></a>Gerenciar projetos Windows Universal
 
@@ -25,11 +25,11 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
 
 ### <a name="navigate-the-shared-project"></a>Navegue de projeto compartilhado
 
-1.  Crie um projeto de VSIX em C# chamado **TestUniversalProject**. (**Arquivo** > **nova** > **projeto** e, em seguida, **c#**  >   **Extensibilidade** > **pacote do Visual Studio**). Adicionar um **comando personalizado** modelo de item de projeto (na **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item** , em seguida, vá para **extensibilidade**). Nomeie o arquivo **TestUniversalProject**.
+1. Crie um projeto de VSIX em C# chamado **TestUniversalProject**. (**Arquivo** > **nova** > **projeto** e, em seguida, **c#**  >   **Extensibilidade** > **pacote do Visual Studio**). Adicionar um **comando personalizado** modelo de item de projeto (na **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item** , em seguida, vá para **extensibilidade**). Nomeie o arquivo **TestUniversalProject**.
 
-2.  Adicione uma referência ao *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* e *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (no **deextensões** seção).
+2. Adicione uma referência ao *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* e *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (no **deextensões** seção).
 
-3.  Abra *TestUniversalProject.cs* e adicione o seguinte `using` instruções:
+3. Abra *TestUniversalProject.cs* e adicione o seguinte `using` instruções:
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     using System.Windows.Forms;
     ```
 
-4.  No `TestUniversalProject` classe adicionar um campo particular que aponta para o **saída** janela.
+4. No `TestUniversalProject` classe adicionar um campo particular que aponta para o **saída** janela.
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     }
     ```
 
-5.  Defina a referência ao painel de saída dentro de construtor TestUniversalProject:
+5. Defina a referência ao painel de saída dentro de construtor TestUniversalProject:
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -77,7 +77,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     }
     ```
 
-6.  Remova o código existente do `ShowMessageBox` método:
+6. Remova o código existente do `ShowMessageBox` método:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -85,7 +85,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     }
     ```
 
-7.  Obtenha o objeto DTE, que usaremos para várias finalidades diferentes neste passo a passo. Além disso, certifique-se de que uma solução é carregada quando o botão de menu é clicado.
+7. Obtenha o objeto DTE, que usaremos para várias finalidades diferentes neste passo a passo. Além disso, certifique-se de que uma solução é carregada quando o botão de menu é clicado.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -103,7 +103,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     }
     ```
 
-8.  Localize o projeto compartilhado. O projeto compartilhado é um contêiner puro; não compilar ou produzir saídas. O método a seguir localiza o primeiro projeto compartilhado na solução, buscando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto que tem a capacidade de projeto compartilhado.
+8. Localize o projeto compartilhado. O projeto compartilhado é um contêiner puro; não compilar ou produzir saídas. O método a seguir localiza o primeiro projeto compartilhado na solução, buscando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto que tem a capacidade de projeto compartilhado.
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -306,7 +306,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Gerenciar os itens compartilhados no projeto de plataforma
 
-1.  Localize os itens compartilhados no projeto de plataforma. Os itens no projeto compartilhado aparecem no projeto de plataforma como itens compartilhados. Você não pode vê-los na **Gerenciador de soluções**, mas você pode percorrer a hierarquia de projeto para encontrá-los. O método a seguir mostra a hierarquia e coleta todos os itens compartilhados. Opcionalmente, ele gera a legenda de cada item. Os itens compartilhados são identificados pela nova propriedade <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
+1. Localize os itens compartilhados no projeto de plataforma. Os itens no projeto compartilhado aparecem no projeto de plataforma como itens compartilhados. Você não pode vê-los na **Gerenciador de soluções**, mas você pode percorrer a hierarquia de projeto para encontrá-los. O método a seguir mostra a hierarquia e coleta todos os itens compartilhados. Opcionalmente, ele gera a legenda de cada item. Os itens compartilhados são identificados pela nova propriedade <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -338,7 +338,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     }
     ```
 
-2.  No `ShowMessageBox` método, adicione o seguinte código para percorrer os itens de hierarquia de projeto de plataforma. Inseri-lo dentro de `foreach` bloco.
+2. No `ShowMessageBox` método, adicione o seguinte código para percorrer os itens de hierarquia de projeto de plataforma. Inseri-lo dentro de `foreach` bloco.
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -346,7 +346,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3.  Ler os itens compartilhados. Os itens compartilhados aparecem no projeto de plataforma como arquivos vinculados ocultos, e você pode ler todas as propriedades como arquivos vinculados comuns. O código a seguir lê o caminho completo do primeiro item compartilhado.
+3. Ler os itens compartilhados. Os itens compartilhados aparecem no projeto de plataforma como arquivos vinculados ocultos, e você pode ler todas as propriedades como arquivos vinculados comuns. O código a seguir lê o caminho completo do primeiro item compartilhado.
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -355,7 +355,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4.  Agora tente. Pressione **F5** para iniciar a instância experimental. Criar um C# projeto de aplicativo de hub universal na instância experimental (na **novo projeto** caixa de diálogo **Visual C#**   >  **Windows**  >  **Windows 8** > **Universal** > **App Hub**) acesse o **ferramentas** menu e clique em  **Invocar TestUniversalProject**e, em seguida, verifique o texto de **saída** painel. Você deverá ver algo como o seguinte:
+4. Agora tente. Pressione **F5** para iniciar a instância experimental. Criar um C# projeto de aplicativo de hub universal na instância experimental (na **novo projeto** caixa de diálogo **Visual C#**   >  **Windows**  >  **Windows 8** > **Universal** > **App Hub**) acesse o **ferramentas** menu e clique em  **Invocar TestUniversalProject**e, em seguida, verifique o texto de **saída** painel. Você deverá ver algo como o seguinte:
 
     ```
     Found shared project: HubApp.Shared

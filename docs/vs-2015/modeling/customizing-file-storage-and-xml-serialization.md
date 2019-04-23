@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062393"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizando o armazenamento de arquivos e a serialização XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
 ## <a name="model-and-diagram-files"></a>Arquivos de modelo e diagrama  
  Geralmente, cada modelo é salvo em dois arquivos:  
   
--   O arquivo de modelo tem um nome, como **Model1.mydsl**. Ele armazena os elementos de modelo e as relações e suas propriedades. A extensão de arquivo, como **.mydsl** é determinado pelo **FileExtension** propriedade do **Editor** nó na definição de DSL.  
+- O arquivo de modelo tem um nome, como **Model1.mydsl**. Ele armazena os elementos de modelo e as relações e suas propriedades. A extensão de arquivo, como **.mydsl** é determinado pelo **FileExtension** propriedade do **Editor** nó na definição de DSL.  
   
--   O arquivo de diagrama tem um nome, como **Model1.mydsl.diagram**. Ele armazena as formas, conectores e suas posições, cores, espessuras de linha e outros detalhes da aparência do diagrama. Se o usuário exclui um **. Diagram** arquivo, as informações essenciais no modelo não são perdidas. Apenas o layout do diagrama será perdido. Quando o arquivo de modelo é aberto, um padrão definido de formas e conectores serão criados.  
+- O arquivo de diagrama tem um nome, como **Model1.mydsl.diagram**. Ele armazena as formas, conectores e suas posições, cores, espessuras de linha e outros detalhes da aparência do diagrama. Se o usuário exclui um **. Diagram** arquivo, as informações essenciais no modelo não são perdidas. Apenas o layout do diagrama será perdido. Quando o arquivo de modelo é aberto, um padrão definido de formas e conectores serão criados.  
   
 #### <a name="to-change-the-file-extension-of-a-dsl"></a>Para alterar a extensão de arquivo de uma DSL  
   
-1.  Abra a definição de DSL. No Gerenciador de DSL, clique no nó de Editor.  
+1. Abra a definição de DSL. No Gerenciador de DSL, clique no nó de Editor.  
   
-2.  Na janela Propriedades, edite o **FileExtension** propriedade. Não inclua inicial "." da extensão de nome do arquivo.  
+2. Na janela Propriedades, edite o **FileExtension** propriedade. Não inclua inicial "." da extensão de nome do arquivo.  
   
-3.  No Solution Explorer, altere o nome dos arquivos de modelo de dois itens na **DslPackage\ProjectItemTemplates**. Esses arquivos têm nomes que seguem este formato:  
+3. No Solution Explorer, altere o nome dos arquivos de modelo de dois itens na **DslPackage\ProjectItemTemplates**. Esses arquivos têm nomes que seguem este formato:  
   
      `myDsl.diagram`  
   
@@ -81,17 +81,17 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
   
  Observe os seguintes pontos sobre o modelo serializado:  
   
--   Cada nó XML tem um nome que é o mesmo que um nome de classe de domínio, exceto que a primeira letra é minúscula. Por exemplo, `familyTreeModel` e `person`.  
+- Cada nó XML tem um nome que é o mesmo que um nome de classe de domínio, exceto que a primeira letra é minúscula. Por exemplo, `familyTreeModel` e `person`.  
   
--   Propriedades do domínio, como nome e BirthYear são serializadas como atributos em nós de XML. Novamente, o caractere inicial do nome da propriedade é convertido em minúsculas.  
+- Propriedades do domínio, como nome e BirthYear são serializadas como atributos em nós de XML. Novamente, o caractere inicial do nome da propriedade é convertido em minúsculas.  
   
--   Cada relação é serializada como um nó XML aninhado dentro de extremidade de origem da relação. O nó tem o mesmo nome que a propriedade da função de origem, mas com um caractere inicial de letras minúsculas.  
+- Cada relação é serializada como um nó XML aninhado dentro de extremidade de origem da relação. O nó tem o mesmo nome que a propriedade da função de origem, mas com um caractere inicial de letras minúsculas.  
   
      Por exemplo, na definição de DSL, uma função que é denominada **pessoas** é originado na **FamilyTree** classe.  No XML, isso é representado pelo nó chamado `people` aninhada dentro de `familyTreeModel` nó.  
   
--   A extremidade de destino de cada relação de incorporação é serializada como um nó aninhado sob o relacionamento. Por exemplo, o `people` nó contém vários `person` nós.  
+- A extremidade de destino de cada relação de incorporação é serializada como um nó aninhado sob o relacionamento. Por exemplo, o `people` nó contém vários `person` nós.  
   
--   A extremidade de destino de cada relação de referência é serializada como um *moniker*, que codifica uma referência ao elemento de destino.  
+- A extremidade de destino de cada relação de referência é serializada como um *moniker*, que codifica uma referência ao elemento de destino.  
   
      Por exemplo, em um `person` nó, pode haver um `children` relação. Esse nó contém identificadores de origem, como:  
   
@@ -125,33 +125,33 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Para definir uma classe de domínio sejam referenciadas pelo monikers de ID  
   
-1.  Certifique-se de que **é a chave do Moniker** é `false` para cada propriedade de domínio na classe e suas classes base.  
+1. Certifique-se de que **é a chave do Moniker** é `false` para cada propriedade de domínio na classe e suas classes base.  
   
-    1.  No DSL Explorer, expanda **dados da serialização Xml Behavior\Class\\**_\<a classe de domínio >_**\Element dados**.  
+    1. No DSL Explorer, expanda **dados da serialização Xml Behavior\Class\\**_\<a classe de domínio >_**\Element dados**.  
   
-    2.  Verifique **é a chave do Moniker** é `false` para cada propriedade de domínio.  
+    2. Verifique **é a chave do Moniker** é `false` para cada propriedade de domínio.  
   
-    3.  Se a classe de domínio tem uma classe base, repita o procedimento dessa classe.  
+    3. Se a classe de domínio tem uma classe base, repita o procedimento dessa classe.  
   
-2.  Definir **serializar Id**  =  `true` para a classe de domínio.  
+2. Definir **serializar Id**  =  `true` para a classe de domínio.  
   
      Essa propriedade pode ser encontrada na **comportamento da serialização Xml**.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>Para definir uma classe de domínio para ser referenciado por identificadores de chave qualificados  
   
--   Definir **é a chave do Moniker** para uma propriedade de domínio de uma classe de domínio existente. O tipo da propriedade deve ser `string`.  
+- Definir **é a chave do Moniker** para uma propriedade de domínio de uma classe de domínio existente. O tipo da propriedade deve ser `string`.  
   
-    1.  No DSL Explorer, expanda **dados da serialização Xml Behavior\Class\\**_\<a classe de domínio >_**\Element dados**e, em seguida, selecione o propriedade de domínio.  
+    1. No DSL Explorer, expanda **dados da serialização Xml Behavior\Class\\**_\<a classe de domínio >_**\Element dados**e, em seguida, selecione o propriedade de domínio.  
   
-    2.  Na janela Propriedades, defina **é a chave do Moniker** para `true`.  
+    2. Na janela Propriedades, defina **é a chave do Moniker** para `true`.  
   
--   \- ou -  
+- \- ou -  
   
      Criar um novo domínio classe usando o **classe de domínio chamado** ferramenta.  
   
      Essa ferramenta cria uma nova classe que tem uma propriedade de domínio denominada nome. O **é o nome do elemento** e **é a chave do Moniker** as propriedades dessa propriedade de domínio são inicializadas para `true`.  
   
--   \- ou -  
+- \- ou -  
   
      Crie uma relação de herança da classe de domínio para outra classe que tem uma propriedade de chave do moniker.  
   
@@ -160,11 +160,11 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
   
  Há vários métodos que ajudam a evitar essa situação:  
   
--   Definir **é o nome do elemento**  =  `true` para a propriedade de chave do domínio. Selecione a propriedade de domínio no diagrama de definição de DSL e, em seguida, defina o valor na janela Propriedades.  
+- Definir **é o nome do elemento**  =  `true` para a propriedade de chave do domínio. Selecione a propriedade de domínio no diagrama de definição de DSL e, em seguida, defina o valor na janela Propriedades.  
   
      Quando o usuário cria uma nova instância da classe, esse valor faz com que a propriedade de domínio a ser atribuído automaticamente um valor diferente. O comportamento padrão adiciona um número ao final do nome da classe. Isso não impede que o usuário alterar o nome para uma duplicata, mas ajuda no caso de quando o usuário não define o valor antes de salvar o modelo.  
   
--   Habilite a validação para a DSL. No Gerenciador de DSL, selecione Editor \ validação e defina o **usa...**  propriedades a serem `true`.  
+- Habilite a validação para a DSL. No Gerenciador de DSL, selecione Editor \ validação e defina o **usa...**  propriedades a serem `true`.  
   
      Há um método de validação gerados automaticamente que verifica as ambiguidades. O método está entre o `Load` categoria de validação. Isso garante que o usuário será avisado que pode não ser possível abrir o arquivo novamente.  
   
@@ -204,7 +204,7 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
 ## <a name="customizing-the-structure-of-the-xml"></a>Personalizando a estrutura do XML  
  Para fazer as seguintes personalizações, expanda o **comportamento da serialização Xml** nó no Gerenciador de DSL. Em uma classe de domínio, expanda o nó de elemento de dados para ver a lista de propriedades e relações que têm origem em que essa classe. Selecione uma relação e ajustar suas opções na janela Propriedades.  
   
--   Definir **omitir o elemento** como true para omitir o nó de função de origem, deixando apenas a lista de elementos de destino. Você não deve definir essa opção se não houver mais de uma relação entre as classes de origem e destino.  
+- Definir **omitir o elemento** como true para omitir o nó de função de origem, deixando apenas a lista de elementos de destino. Você não deve definir essa opção se não houver mais de uma relação entre as classes de origem e destino.  
   
     ```  
   
@@ -218,7 +218,7 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
   
     ```  
   
--   Definir **usar o formulário completo** para inserir os nós de destino em nós que representam as instâncias de relação. Essa opção é definida automaticamente quando você adiciona as propriedades do domínio a uma relação de domínio.  
+- Definir **usar o formulário completo** para inserir os nós de destino em nós que representam as instâncias de relação. Essa opção é definida automaticamente quando você adiciona as propriedades do domínio a uma relação de domínio.  
   
     ```  
   
@@ -236,7 +236,7 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
   
     ```  
   
--   Definir **representação** = **elemento** ter uma propriedade de domínio salva como elemento, em vez de como um valor de atributo.  
+- Definir **representação** = **elemento** ter uma propriedade de domínio salva como elemento, em vez de como um valor de atributo.  
   
     ```  
     <person name="Elizabeth I" birthYear="1533">  
@@ -244,7 +244,7 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
     </person>  
     ```  
   
--   Para alterar a ordem na qual os atributos e relações são serializadas, um item de dados do elemento com o botão direito e usar o **mover para cima** ou **mover para baixo** comandos de menu.  
+- Para alterar a ordem na qual os atributos e relações são serializadas, um item de dados do elemento com o botão direito e usar o **mover para cima** ou **mover para baixo** comandos de menu.  
   
 ## <a name="major-customization-using-program-code"></a>Principais personalização usando um código de programa  
  Você pode substituir partes ou todos os algoritmos de serialização.  
@@ -253,13 +253,13 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
   
 #### <a name="to-customize-the-serialization-of-a-particular-class"></a>Para personalizar a serialização de uma classe específica  
   
-1.  Definir **é personalizada** no nó para essa classe sob **comportamento da serialização Xml**.  
+1. Definir **é personalizada** no nó para essa classe sob **comportamento da serialização Xml**.  
   
-2.  Transformar todos os modelos, compile a solução e investigue os erros de compilação resultante. Comentários perto de cada erro explicam o que o código que você precisa fornecer.  
+2. Transformar todos os modelos, compile a solução e investigue os erros de compilação resultante. Comentários perto de cada erro explicam o que o código que você precisa fornecer.  
   
 #### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>Para fornecer sua própria serialização para todo o modelo  
   
-1.  Substituir métodos em Dsl\GeneratedCode\SerializationHelper.cs  
+1. Substituir métodos em Dsl\GeneratedCode\SerializationHelper.cs  
   
 ## <a name="options-in-xml-serialization-behavior"></a>Opções de comportamento de serialização de Xml  
  No Gerenciador de DSL, o nó de comportamento da serialização Xml contém um nó filho para cada classe de domínio, relação, forma, conector e classe de diagrama. Em cada um de nós é uma lista de propriedades e relações originadas no elemento. As relações são representadas por si mesmos e em suas classes de origem.  

@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059845"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
  Observe que a maioria dos tipos de diagrama pode ser usada para outras finalidades. Para obter uma visão geral dos tipos de diagrama, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md). Para obter informações básicas sobre diagramas de desenho, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Descrevendo como seu sistema é usado  
+## <a name="UseCases"></a> Descrevendo como seu sistema é usado  
  Crie diagramas de caso de uso para descrever o que usa o sistema e o que ele usá-lo para. Um caso de uso representa uma meta de um usuário do sistema e o procedimento que eles executam para atingir a meta.  
   
  Por exemplo, uma refeição online vendendo o sistema deve permitir que os clientes escolham itens de um menu e deve permitir que os restaurantes fornecendo atualizar no menu. Você pode resumir isso em um diagrama de caso de uso:  
@@ -93,7 +93,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 |Elementos em um diagrama de caso de uso|[Diagrama de casos de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)|  
 |Como desenvolver o código de casos de uso|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Definição de termos usados para descrever os requisitos  
+## <a name="RequirementsClasses"></a> Definição de termos usados para descrever os requisitos  
  Você pode usar diagramas de classe UML para ajudar você a desenvolver um vocabulário consistentes com os conceitos de negócios usados para as seguintes finalidades:  
   
 - Pelos próprios usuários para discutir os negócios em que o sistema funciona.  
@@ -122,7 +122,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
   O modelo de classe conceitual pode formar o vocabulário básico pelo qual a lógica de negócios do seu sistema pode ser descrita. Mas as classes no software geralmente será muito mais complexas do que o modelo conceitual, porque sua implementação deve considerar os problemas, como desempenho, distribuição, flexibilidade e outros fatores. Várias implementações diferentes de uma classe conceitual frequentemente são encontradas em um sistema.  
   
-  Por exemplo, pedidos poderia ser representados em XML, SQL, HTML e C# em diferentes partes do sistema e em interfaces diferentes entre as partes. A associação entre um pedido e um Menu poderia ser representada de várias maneiras diferentes, como referências no código do C#, as relações em um banco de dados, ou a referência cruzada IDs em XML. Mas, apesar dessas variações, o modelo conceitual fornece informações importantes que se aplica a todas as partes do software. O diagrama de classe no exemplo nos informa que cada implementação, haverá apenas um que menu associado com cada pedido.  
+  Por exemplo, pedidos poderia ser representados em XML, SQL, HTML e c# em diferentes partes do sistema e em interfaces diferentes entre as partes. A associação entre um pedido e um Menu poderia ser representada de várias maneiras diferentes, como referências no código do c#, as relações em um banco de dados, ou a referência cruzada IDs em XML. Mas, apesar dessas variações, o modelo conceitual fornece informações importantes que se aplica a todas as partes do software. O diagrama de classe no exemplo nos informa que cada implementação, haverá apenas um que menu associado com cada pedido.  
   
   Desenhando um diagrama de classe requisitos ajuda sua equipe:  
   
@@ -140,7 +140,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
  Em um diagrama de classe conceitual, normalmente não é útil colocar as setas nas associações para representar navegabilidade. Isso ocorre porque o diagrama não representa uma implementação. As associações representam relações entre objetos do mundo real. O seguinte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão tornar setas de não-direcional padrão: [Exemplo: Recursos de modelagem de domínio UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> Mostrando as regras de negócio  
+## <a name="BusinessRules"></a> Mostrando as regras de negócio  
  Uma regra de negócios é um requisito que não está associado um caso de uso específico e deve ser observado em todo o sistema.  
   
  Muitas regras de negócios são restrições nas relações entre as classes conceituais. Você pode escrever esses *regras de negócio estático* como comentários associados com as classes relevantes em um diagrama de classe conceitual. Por exemplo:  
@@ -161,7 +161,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 |Elementos em um diagrama de classe conceitual|[Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)|  
 |Como desenvolver um código que obedeça às regras de negócio|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Que descreve a qualidade dos requisitos de serviço  
+## <a name="QoSRequirements"></a> Que descreve a qualidade dos requisitos de serviço  
  Há várias categorias de qualidade de requisito de serviço. Elas incluem o seguinte:  
   
 - Desempenho  
@@ -185,7 +185,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 |Anexando documentos adicionais para casos de uso|[Vincular um caso de uso a documentos e diagramas](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Como desenvolver um código que obedeça a qualidade dos requisitos de serviço|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Mostrando o fluxo de trabalho entre usuários e seu sistema  
+## <a name="Workflow"></a> Mostrando o fluxo de trabalho entre usuários e seu sistema  
  Você pode usar um diagrama de atividade para mostrar o fluxo de trabalho entre diferentes casos de uso. Geralmente é útil começar a um modelo de requisitos desenhando um diagrama de atividade mostrando as principais tarefas que os usuários realizam - com o sistema e fora dele.  
   
  Por exemplo:  
@@ -206,7 +206,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 |Elementos em um diagrama de atividade|[Diagramas de atividade de UML: referência](../modeling/uml-activity-diagrams-reference.md)|  
 |Como desenvolver o código em diagramas de atividade|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Mostrando as interações entre usuários e seu sistema  
+## <a name="Sequences"></a> Mostrando as interações entre usuários e seu sistema  
  Você pode usar um diagrama de sequência para mostrar o intercâmbio de mensagens entre seu sistema e atores externos ou entre as partes do seu sistema. Isso fornece uma exibição das etapas em um caso de uso que mostra claramente a sequência de interações. Diagramas de sequência são especialmente úteis em que há que várias interagir a terceiros em um caso de uso e também em que seu sistema tem uma API.  
   
  Por exemplo:  

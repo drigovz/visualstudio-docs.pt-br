@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062913"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Definindo uma imagem de plano de fundo em um diagrama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ No SDK de Visualização e Modelagem do [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Para configurar uma imagem de plano de fundo de um designer gerado  
   
-1.  Copie o arquivo de imagem que você deseja usar como plano de fundo do diagrama no diretório Dsl\Resources do projeto atual.  
+1. Copie o arquivo de imagem que você deseja usar como plano de fundo do diagrama no diretório Dsl\Resources do projeto atual.  
   
-2.  Na **Gerenciador de soluções**, clique com botão direito na pasta Dsl\Resources, aponte para **Add**e, em seguida, clique em **Item existente**.  
+2. Na **Gerenciador de soluções**, clique com botão direito na pasta Dsl\Resources, aponte para **Add**e, em seguida, clique em **Item existente**.  
   
-3.  No **Add Existing Item** caixa de diálogo, navegue até a pasta dsl\resources.  
+3. No **Add Existing Item** caixa de diálogo, navegue até a pasta dsl\resources.  
   
-4.  No **arquivos de tipo** , clique em **arquivos de imagem**.  
+4. No **arquivos de tipo** , clique em **arquivos de imagem**.  
   
-5.  Clique no arquivo de imagem que você copiou para o diretório e, em seguida, clique em **adicionar**.  
+5. Clique no arquivo de imagem que você copiou para o diretório e, em seguida, clique em **adicionar**.  
   
-6.  Clique com botão direito Dsl e, em seguida, clique em **propriedades** para abrir as propriedades do projeto Dsl.  
+6. Clique com botão direito Dsl e, em seguida, clique em **propriedades** para abrir as propriedades do projeto Dsl.  
   
-7.  Sobre o **recursos** , clique em **este projeto não contém um arquivo de recursos padrão. Clique aqui para criar um.**  
+7. Sobre o **recursos** , clique em **este projeto não contém um arquivo de recursos padrão. Clique aqui para criar um.**  
   
-8.  Adicionar o arquivo de imagem ao arquivo de recurso, arrastando a imagem do **Gerenciador de soluções** na janela de recursos.  
+8. Adicionar o arquivo de imagem ao arquivo de recurso, arrastando a imagem do **Gerenciador de soluções** na janela de recursos.  
   
 9. Abra o menu Arquivo e clique na opção para salvar as propriedades do projeto.  
   

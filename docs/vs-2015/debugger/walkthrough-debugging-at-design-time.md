@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046143"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Passo a passo: Depuração em tempo de Design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Você pode usar o Visual Studio **imediato** janela para executar uma função o
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Para usar pontos de interrupção da janela Imediato  
   
-1.  Cole o seguinte código no aplicativo de console do Visual Basic:  
+1. Cole o seguinte código no aplicativo de console do Visual Basic:  
   
     ```  
     Module Module1  
@@ -63,19 +63,19 @@ Você pode usar o Visual Studio **imediato** janela para executar uma função o
     End Module  
     ```  
   
-2.  Defina um ponto de interrupção na linha em que se lê `s="Add BreakPoint Here"`.  
+2. Defina um ponto de interrupção na linha em que se lê `s="Add BreakPoint Here"`.  
   
-3.  Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
+3. Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
   
-4.  Certifique-se de que o ponto de interrupção foi alcançado, e que a pilha de chamadas está correta.  
+4. Certifique-se de que o ponto de interrupção foi alcançado, e que a pilha de chamadas está correta.  
   
-5.  Sobre o **Debug** menu, clique em **continuar**e verificar se você estiver no modo de design.  
+5. Sobre o **Debug** menu, clique em **continuar**e verificar se você estiver no modo de design.  
   
-6.  Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
+6. Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
   
-7.  Digite o seguinte na **imediato** janela: `?MySub<enter>`  
+7. Digite o seguinte na **imediato** janela: `?MySub<enter>`  
   
-8.  Verifique se o ponto de interrupção e examinar o valor da variável estática `i` no **Locals** janela. Deve ter o valor 3.  
+8. Verifique se o ponto de interrupção e examinar o valor da variável estática `i` no **Locals** janela. Deve ter o valor 3.  
   
 9. Verifique se a pilha de chamadas está correta.  
   

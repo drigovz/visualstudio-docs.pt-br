@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045636"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Examinar parâmetros não utilizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Para a documentação mais recente do Visual Studio, consulte [CA1801: Revisar p
 ## <a name="cause"></a>Causa  
  Uma assinatura de método inclui um parâmetro que não é usado no corpo do método. Essa regra não examina os métodos a seguir:  
   
--   Métodos referenciados por um delegado.  
+- Métodos referenciados por um delegado.  
   
--   Métodos usados como manipuladores de eventos.  
+- Métodos usados como manipuladores de eventos.  
   
--   Os métodos declarados com o `abstract` (`MustOverride` no Visual Basic) modificador.  
+- Os métodos declarados com o `abstract` (`MustOverride` no Visual Basic) modificador.  
   
--   Os métodos declarados com o `virtual` (`Overridable` no Visual Basic) modificador.  
+- Os métodos declarados com o `virtual` (`Overridable` no Visual Basic) modificador.  
   
--   Os métodos declarados com o `override` (`Overrides` no Visual Basic) modificador.  
+- Os métodos declarados com o `override` (`Overrides` no Visual Basic) modificador.  
   
--   Os métodos declarados com o `extern` (`Declare` instrução no Visual Basic) modificador.  
+- Os métodos declarados com o `extern` (`Declare` instrução no Visual Basic) modificador.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
  Revise os parâmetros em métodos não virtuais que não são usados no corpo do método para verificar se que nenhuma correção existe em torno de falha para acessá-los. Parâmetros não utilizados incorrem em custos de manutenção e desempenho.  

@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063760"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Arquivos de descrição do diretório de modelo (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Quando você cria um arquivo do assistente, você também deve considerar os problemas a seguir.  
 
--   Qualquer campo não obrigatórios para o qual não há dados significativos deve conter um 0 (zero) como um espaço reservado.  
+- Qualquer campo não obrigatórios para o qual não há dados significativos deve conter um 0 (zero) como um espaço reservado.  
 
--   Se nenhum nome localizado for fornecido, o nome de caminho relativo é usado no arquivo do assistente.  
+- Se nenhum nome localizado for fornecido, o nome de caminho relativo é usado no arquivo do assistente.  
 
--   DLLPath substitui clsidPackage para localização do ícone.  
+- DLLPath substitui clsidPackage para localização do ícone.  
 
--   Se nenhum ícone for definido, a IDE substitui o ícone padrão para um arquivo que tem a extensão.  
+- Se nenhum ícone for definido, a IDE substitui o ícone padrão para um arquivo que tem a extensão.  
 
--   Se nenhum nome de base sugerido for fornecido, 'Project' será usado.  
+- Se nenhum nome de base sugerido for fornecido, 'Project' será usado.  
 
--   Se você excluir os arquivos. vsz, pastas ou arquivos de modelo, você também deve remover seus registros associados do arquivo. vsdir.  
+- Se você excluir os arquivos. vsz, pastas ou arquivos de modelo, você também deve remover seus registros associados do arquivo. vsdir.  
 
 ## <a name="see-also"></a>Consulte também  
  [Assistentes](../../extensibility/internals/wizards.md)   

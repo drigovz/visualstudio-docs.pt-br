@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 626f4e2328a208412d1e4e10857f336f37578f51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049276"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>Como: Fechar pastas de trabalho de forma programática
   Você pode fechar a pasta de trabalho ativa ou você pode especificar uma pasta de trabalho para fechar.
@@ -30,14 +30,14 @@ ms.locfileid: "56620064"
 
 ### <a name="to-close-the-active-workbook-in-a-document-level-customization"></a>Para fechar a pasta de trabalho ativa em uma personalização no nível de documento
 
-1.  Chamar o <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> método para fechar a pasta de trabalho associada com a personalização. Para usar o exemplo de código a seguir, execute-o `Sheet1` classe em um projeto de nível de documento para Excel.
+1. Chamar o <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> método para fechar a pasta de trabalho associada com a personalização. Para usar o exemplo de código a seguir, execute-o `Sheet1` classe em um projeto de nível de documento para Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#3)]
 
 ### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>Para fechar a pasta de trabalho ativa em um suplemento do VSTO
 
-1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> método para fechar a pasta de trabalho ativa. Para usar o exemplo de código a seguir, execute-o `ThisAddIn` classe em um projeto de suplemento do VSTO para Excel.
+1. Chamar o <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> método para fechar a pasta de trabalho ativa. Para usar o exemplo de código a seguir, execute-o `ThisAddIn` classe em um projeto de suplemento do VSTO para Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]
@@ -47,7 +47,7 @@ ms.locfileid: "56620064"
 
 ### <a name="to-close-a-workbook-that-you-specify-by-name"></a>Para fechar uma pasta de trabalho que você especifica por nome
 
-1.  Especifique o nome de pasta de trabalho como um argumento para o <xref:Microsoft.Office.Interop.Excel.Workbooks> coleção. O exemplo de código a seguir pressupõe que uma pasta de trabalho denominada **NewWorkbook** está aberta no Excel.
+1. Especifique o nome de pasta de trabalho como um argumento para o <xref:Microsoft.Office.Interop.Excel.Workbooks> coleção. O exemplo de código a seguir pressupõe que uma pasta de trabalho denominada **NewWorkbook** está aberta no Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]

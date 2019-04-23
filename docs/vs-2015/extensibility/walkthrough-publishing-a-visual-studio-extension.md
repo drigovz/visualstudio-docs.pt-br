@@ -11,12 +11,12 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5238274d66296a21e15b47d1a090ab01c1a1299d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046286"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Passo a passo: Publicando uma extensão do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,35 +31,35 @@ Este passo a passo mostra como publicar uma extensão do Visual Studio em Galeri
 ## <a name="create-a-visual-studio-extension"></a>Criar uma extensão do Visual Studio
  Nesse caso, usaremos uma extensão de VSPackage padrão, mas as mesmas etapas são válidas para cada tipo de extensão.
 
-1.  Criar um VSPackage no c#, chamado `TestPublishing` que possui um comando de menu. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Criar um VSPackage no c#, chamado `TestPublishing` que possui um comando de menu. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>A extensão de teste
  Antes de distribuir a extensão, compilar e testar para verificar se que ele está instalado corretamente na instância experimental do Visual Studio.
 
-1.  No Visual Studio, inicie a depuração. Para abrir uma instância experimental do Visual Studio.
+1. No Visual Studio, inicie a depuração. Para abrir uma instância experimental do Visual Studio.
 
-2.  Na instância experimental, vá para o **ferramentas** menu e clique em **Gerenciador de extensões**. A extensão TestPublishing deve aparecer no painel central e ser habilitada.
+2. Na instância experimental, vá para o **ferramentas** menu e clique em **Gerenciador de extensões**. A extensão TestPublishing deve aparecer no painel central e ser habilitada.
 
-3.  Sobre o **ferramentas** menu, verifique se você vir o comando de teste.
+3. Sobre o **ferramentas** menu, verifique se você vir o comando de teste.
 
 ## <a name="publish-the-extension-to-the-visual-studio-gallery"></a>Publicar a extensão para a Galeria do Visual Studio
  Agora você pode publicar a extensão para a Galeria do Visual Studio.
 
-1.  Certifique-se de que você criou a versão de lançamento da sua extensão e que ela seja atualizada.
+1. Certifique-se de que você criou a versão de lançamento da sua extensão e que ela seja atualizada.
 
-2.  Em um navegador da web, abra o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site.
+2. Em um navegador da web, abra o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site.
 
-3.  No canto superior direito, clique em **SIGN IN**.
+3. No canto superior direito, clique em **SIGN IN**.
 
-4.  Use sua conta da Microsoft para entrar. Se você não tiver uma conta da Microsoft, você pode criar um neste momento.
+4. Use sua conta da Microsoft para entrar. Se você não tiver uma conta da Microsoft, você pode criar um neste momento.
 
-5.  Clique em **carregar**.
+5. Clique em **carregar**.
 
-6.  No **etapa 1: Tipo de extensão**, selecione **ferramenta** e, em seguida, clique em **próximo**.
+6. No **etapa 1: Tipo de extensão**, selecione **ferramenta** e, em seguida, clique em **próximo**.
 
-7.  No **etapa 2: Carregar**, você pode optar por carregar diretamente para a Galeria do Visual Studio ou apenas adicionar um link para seu próprio site. Nesse caso, selecione **gostaria de carregar minha ferramenta**. O **selecionar seu controle** caixa é exibida. Clique em **procurar** e, em seguida, selecione TestPublish.vsix na pasta \bin\Release do projeto. Clique em **Avançar**.
+7. No **etapa 2: Carregar**, você pode optar por carregar diretamente para a Galeria do Visual Studio ou apenas adicionar um link para seu próprio site. Nesse caso, selecione **gostaria de carregar minha ferramenta**. O **selecionar seu controle** caixa é exibida. Clique em **procurar** e, em seguida, selecione TestPublish.vsix na pasta \bin\Release do projeto. Clique em **Avançar**.
 
-8.  No **etapa 3: Informações básicas**, campos de arquivo vsixmanifest são exibidos. Selecione uma opção apropriada **categoria** e adicione **marcas** para ajudar os usuários a localizar a sua extensão. Você talvez queira adicionar mais detalhada resumo e descrição (a descrição deve ter pelo menos de 280 caracteres). Deixe **tipo de extensão** como **não uma extensão da Microsoft** e **categoria de custo** como **avaliação**.
+8. No **etapa 3: Informações básicas**, campos de arquivo vsixmanifest são exibidos. Selecione uma opção apropriada **categoria** e adicione **marcas** para ajudar os usuários a localizar a sua extensão. Você talvez queira adicionar mais detalhada resumo e descrição (a descrição deve ter pelo menos de 280 caracteres). Deixe **tipo de extensão** como **não uma extensão da Microsoft** e **categoria de custo** como **avaliação**.
 
 9. Leia o contrato de contribuição na parte inferior da página e verifique **concordo**.
 
@@ -72,29 +72,29 @@ Este passo a passo mostra como publicar uma extensão do Visual Studio em Galeri
 ## <a name="install-the-extension-from-the-visual-studio-gallery"></a>Instalar a extensão da Galeria do Visual Studio
  Agora que a extensão for publicada, instalá-lo no Visual Studio e testá-lo lá.
 
-1.  No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações**.
+1. No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações**.
 
-2.  Clique em **Online** e, em seguida, pesquise por TestPublish. A listagem para a extensão TestPublish deve aparecer.
+2. Clique em **Online** e, em seguida, pesquise por TestPublish. A listagem para a extensão TestPublish deve aparecer.
 
-3.  Clique em **Baixar**. Depois que a extensão é baixada, clique em **instalar**.
+3. Clique em **Baixar**. Depois que a extensão é baixada, clique em **instalar**.
 
-4.  Para concluir a instalação, reinicie o Visual Studio.
+4. Para concluir a instalação, reinicie o Visual Studio.
 
 ## <a name="removing-the-extension"></a>Removendo a extensão
  Você pode remover a extensão de galeria do Visual Studio e do seu computador.
 
 #### <a name="to-remove-the-extension-from-the-visual-studio-gallery"></a>Para remover a extensão da Galeria do Visual Studio
 
-1.  Abra o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site.
+1. Abra o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site.
 
-2.  No canto superior direito, clique em **Extenions Meus**. A listagem para TestPublish é exibida.
+2. No canto superior direito, clique em **Extenions Meus**. A listagem para TestPublish é exibida.
 
-3.  Clique em **Excluir**.
+3. Clique em **Excluir**.
 
 #### <a name="to-remove-the-extension-from-your-computer"></a>Para remover a extensão do seu computador
 
-1.  No Visual Studio, sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.
+1. No Visual Studio, sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.
 
-2.  Selecione TestPublish e, em seguida, clique em **desinstalação**.
+2. Selecione TestPublish e, em seguida, clique em **desinstalação**.
 
-3.  Para concluir a desinstalação, reinicie o Visual Studio.
+3. Para concluir a desinstalação, reinicie o Visual Studio.

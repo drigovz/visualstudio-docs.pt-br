@@ -9,29 +9,29 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796618"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064214"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Etapa 6: Adicionar um problema de subtração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Na sexta parte deste tutorial, você adicionará um problema de subtração e aprenderá a executar as seguintes tarefas:  
   
--   Armazenar os valores de subtração.  
+- Armazenar os valores de subtração.  
   
--   Gere números aleatórios para o problema (e certifique-se de que a resposta esteja entre 0 e 100).  
+- Gere números aleatórios para o problema (e certifique-se de que a resposta esteja entre 0 e 100).  
   
--   Atualize o método que verifica as respostas de modo que verifique também o novo problema se subtração.  
+- Atualize o método que verifica as respostas de modo que verifique também o novo problema se subtração.  
   
--   Atualize o manipulador de eventos de escala do temporizador de modo que ele preencha a resposta correta quando o tempo de execução se esgotar.  
+- Atualize o manipulador de eventos de escala do temporizador de modo que ele preencha a resposta correta quando o tempo de execução se esgotar.  
   
 ### <a name="to-add-a-subtraction-problem"></a>Para adicionar um problema de subtração  
   
-1.  Adicione duas variáveis inteiras para o problema de subtração ao formulário, entre as variáveis inteiras para o problema de adição e o timer. O código deve se parecer com o seguinte.  
+1. Adicione duas variáveis inteiras para o problema de subtração ao formulário, entre as variáveis inteiras para o problema de adição e o timer. O código deve se parecer com o seguinte.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#12](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#12)]
      [!code-vb[VbExpressTutorial3Step5_6#12](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#12)]  
@@ -40,7 +40,7 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
   
      Em seguida, você modificará o método de `StartTheQuiz()` para fornecer valores aleatórios para o problema de subtração.  
   
-2.  Adicione o seguinte código após o comentário "Preencha o problema de subtração".  
+2. Adicione o seguinte código após o comentário "Preencha o problema de subtração".  
   
      [!code-csharp[VbExpressTutorial3Step5_6#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#13)]
      [!code-vb[VbExpressTutorial3Step5_6#13](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#13)]  
@@ -62,19 +62,19 @@ Sobrecarga para o método Next() no IntelliSense
   
      Nesse caso, você deseja escolher a última sobrecarga, porque você pode especificar valores mínimo e máximo.  
   
-3.  Modifique o método de `CheckTheAnswer()` para verificar a resposta correta da subtração.  
+3. Modifique o método de `CheckTheAnswer()` para verificar a resposta correta da subtração.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#14](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#14)]
      [!code-vb[VbExpressTutorial3Step5_6#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#14)]  
   
      No Visual C#, `&&` é o operador `logical and`. No Visual Basic, o operador equivalente é `AndAlso`. Esses operadores indicam "Se a soma da addend1 e addend2 for igual ao valor da soma NumericUpDown e o minuendo menos o subtraendo for igual ao valor da diferença NumericUpDown". O `CheckTheAnswer()` método retorna `true` somente se as respostas para os problemas de adição e subtração estiverem corretas.  
   
-4.  Substitua a parte mais recente do manipulador de eventos de escala do timer pelo código a seguir, de modo que preencha a resposta correta quando o tempo de execução se esgotar.  
+4. Substitua a parte mais recente do manipulador de eventos de escala do timer pelo código a seguir, de modo que preencha a resposta correta quando o tempo de execução se esgotar.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#22](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#22)]
      [!code-vb[VbExpressTutorial3Step5_6#22](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#22)]  
   
-5.  Salve e execute seu código.  
+5. Salve e execute seu código.  
   
      Seu programa inclui um problema de subtração, como mostra a ilustração a seguir.  
   
@@ -83,6 +83,6 @@ Teste de matemática com problema de subtração
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   
--   Para ir para a próxima etapa do tutorial, consulte [Etapa 7: adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md).  
+- Para ir para a próxima etapa do tutorial, confira [Etapa 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Para retornar à etapa anterior do tutorial, consulte [Etapa 5: adicionar manipuladores de eventos Enter para os controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

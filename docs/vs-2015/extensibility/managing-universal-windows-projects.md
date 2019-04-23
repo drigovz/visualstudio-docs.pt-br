@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063680"
 ---
 # <a name="managing-universal-windows-projects"></a>Gerenciando projetos universais do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
   
 ### <a name="navigate-the-shared-project"></a>Navegue de projeto compartilhado  
   
-1.  Crie um projeto de VSIX em C# chamado **TestUniversalProject**. (**Arquivo, novo, projeto** e, em seguida **pacote do Visual Studio C#, extensibilidade,**). Adicionar um **comando Custom** modelo de item de projeto (no Gerenciador de soluções, clique com botão direito no nó do projeto e selecione **Add / Novo Item**, em seguida, vá para **extensibilidade**). Nomeie o arquivo **TestUniversalProject**.  
+1. Crie um projeto de VSIX em C# chamado **TestUniversalProject**. (**Arquivo, novo, projeto** e, em seguida **pacote do Visual Studio c#, extensibilidade,**). Adicionar um **comando Custom** modelo de item de projeto (no Gerenciador de soluções, clique com botão direito no nó do projeto e selecione **Add / Novo Item**, em seguida, vá para **extensibilidade**). Nomeie o arquivo **TestUniversalProject**.  
   
-2.  Adicione uma referência ao Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll e Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (na **extensões** seção).  
+2. Adicione uma referência ao Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll e Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (na **extensões** seção).  
   
-3.  Abra TestUniversalProject.cs e adicione o seguinte `using` instruções:  
+3. Abra TestUniversalProject.cs e adicione o seguinte `using` instruções:  
   
     ```csharp  
     using EnvDTE;  
@@ -42,7 +42,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     using System.Windows.Forms;  
     ```  
   
-4.  Na classe TestUniversalProject, adicione um campo particular que aponta para o **saída** janela.  
+4. Na classe TestUniversalProject, adicione um campo particular que aponta para o **saída** janela.  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -52,7 +52,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     }  
     ```  
   
-5.  Defina a referência ao painel de saída dentro de construtor TestUniversalProject:  
+5. Defina a referência ao painel de saída dentro de construtor TestUniversalProject:  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -77,7 +77,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     }  
     ```  
   
-6.  Remova o código existente do `ShowMessageBox` método:  
+6. Remova o código existente do `ShowMessageBox` método:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -85,7 +85,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     }  
     ```  
   
-7.  Obtenha o objeto DTE, que usaremos para várias finalidades diferentes neste passo a passo. Além disso, certifique-se de que uma solução é carregada quando o botão de menu é clicado.  
+7. Obtenha o objeto DTE, que usaremos para várias finalidades diferentes neste passo a passo. Além disso, certifique-se de que uma solução é carregada quando o botão de menu é clicado.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     }  
     ```  
   
-8.  Localize o projeto compartilhado. O projeto compartilhado é um contêiner puro; não compilar ou produzir saídas. O método a seguir localiza o primeiro projeto compartilhado na solução, buscando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto que tem a capacidade de projeto compartilhado.  
+8. Localize o projeto compartilhado. O projeto compartilhado é um contêiner puro; não compilar ou produzir saídas. O método a seguir localiza o primeiro projeto compartilhado na solução, buscando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto que tem a capacidade de projeto compartilhado.  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -293,7 +293,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');  
     ```  
   
-16. Agora tente. Pressione F5 para iniciar a instância experimental. Criar um projeto de aplicativo de hub universal C# na instância experimental (na **novo projeto** caixa de diálogo **Visual C# / Windows / Windows 8 / Universal / App Hub**). Depois que a solução for carregada, vá para o **ferramentas** menu e clique em **TestUniversalProject invocar**e, em seguida, verifique o texto **saída** painel. Você deverá ver algo como o seguinte:  
+16. Agora tente. Pressione F5 para iniciar a instância experimental. Criar um projeto de aplicativo de hub universal c# na instância experimental (na **novo projeto** caixa de diálogo **Visual c# / Windows / Windows 8 / Universal / App Hub**). Depois que a solução for carregada, vá para o **ferramentas** menu e clique em **TestUniversalProject invocar**e, em seguida, verifique o texto **saída** painel. Você deverá ver algo como o seguinte:  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -306,7 +306,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Gerenciar os itens compartilhados no projeto de plataforma  
   
-1.  Localize os itens compartilhados no projeto de plataforma. Os itens no projeto compartilhado aparecem no projeto de plataforma como itens compartilhados. Você não pode vê-los na **Gerenciador de soluções**, mas você pode percorrer a hierarquia de projeto para encontrá-los. O método a seguir mostra a hierarquia e coleta todos os itens compartilhados. Opcionalmente, ele gera a legenda de cada item. Os itens compartilhados são identificados pela nova propriedade <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
+1. Localize os itens compartilhados no projeto de plataforma. Os itens no projeto compartilhado aparecem no projeto de plataforma como itens compartilhados. Você não pode vê-los na **Gerenciador de soluções**, mas você pode percorrer a hierarquia de projeto para encontrá-los. O método a seguir mostra a hierarquia e coleta todos os itens compartilhados. Opcionalmente, ele gera a legenda de cada item. Os itens compartilhados são identificados pela nova propriedade <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -338,7 +338,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     }  
     ```  
   
-2.  No `ShowMessageBox` método, adicione o seguinte código para percorrer os itens de hierarquia de projeto de plataforma. Inseri-lo dentro de `foreach` bloco.  
+2. No `ShowMessageBox` método, adicione o seguinte código para percorrer os itens de hierarquia de projeto de plataforma. Inseri-lo dentro de `foreach` bloco.  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -346,7 +346,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  Ler os itens compartilhados. Os itens compartilhados aparecem no projeto de plataforma como arquivos vinculados ocultos, e você pode ler todas as propriedades como arquivos vinculados comuns. O código a seguir lê o caminho completo do primeiro item compartilhado.  
+3. Ler os itens compartilhados. Os itens compartilhados aparecem no projeto de plataforma como arquivos vinculados ocultos, e você pode ler todas as propriedades como arquivos vinculados comuns. O código a seguir lê o caminho completo do primeiro item compartilhado.  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -355,7 +355,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  Agora tente. Pressione F5 para iniciar a instância experimental. Criar um projeto de aplicativo de hub universal C# na instância experimental (na **novo projeto** caixa de diálogo **Visual C# / Windows / Windows 8 / Universal / App Hub**) vá para o **ferramentas** menu e clique em **invocar TestUniversalProject**e, em seguida, verifique o texto **saída** painel. Você deverá ver algo como o seguinte:  
+4. Agora tente. Pressione F5 para iniciar a instância experimental. Criar um projeto de aplicativo de hub universal c# na instância experimental (na **novo projeto** caixa de diálogo **Visual c# / Windows / Windows 8 / Universal / App Hub**) vá para o **ferramentas** menu e clique em **invocar TestUniversalProject**e, em seguida, verifique o texto **saída** painel. Você deverá ver algo como o seguinte:  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -555,7 +555,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     this.ModifyFileNameInProject(sharedHier, fullPath);  
     ```  
   
-11. Compile e execute o projeto. Criar um aplicativo de hub universal C# na instância experimental, vá para o **ferramentas** menu e clique em **TestUniversalProject invocar**e verifique o texto no painel de saída geral. O nome do primeiro item na compartilhado (Esperamos que ele seja o arquivo App. XAML) do projeto deve ser alterado, e você deverá ver que o <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> evento foi disparado. Nesse caso, já que renomear App. XAML faz com que o App.xaml.cs a ser renomeado, bem, você deve ver quatro eventos (para cada projeto de plataforma dois). (Eventos DTE não rastrear os itens no projeto compartilhado.) Você deverá ver duas <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos (uma para cada um dos projetos de plataforma), mas não <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> eventos.  
+11. Compile e execute o projeto. Criar um aplicativo de hub universal c# na instância experimental, vá para o **ferramentas** menu e clique em **TestUniversalProject invocar**e verifique o texto no painel de saída geral. O nome do primeiro item na compartilhado (Esperamos que ele seja o arquivo App. XAML) do projeto deve ser alterado, e você deverá ver que o <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> evento foi disparado. Nesse caso, já que renomear App. XAML faz com que o App.xaml.cs a ser renomeado, bem, você deve ver quatro eventos (para cada projeto de plataforma dois). (Eventos DTE não rastrear os itens no projeto compartilhado.) Você deverá ver duas <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos (uma para cada um dos projetos de plataforma), mas não <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> eventos.  
   
 12. Agora, tente renomear um arquivo em um projeto de plataforma, e você pode ver a diferença nos eventos que seja acionada. Adicione o seguinte código no `ShowMessageBox` após a chamada para `ModifyFileName`.  
   
@@ -572,4 +572,4 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);  
     ```  
   
-13. Compile e execute o projeto. Criar um projeto Universal C# na instância experimental, vá para o **ferramentas** menu e clique em **TestUniversalProject invocar**e verifique o texto no painel de saída geral. Depois que o arquivo no projeto de plataforma é renomeado, você verá uma <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento e um <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos. Uma vez que o arquivo não causou nenhum outro arquivo a ser alterado e, desde que as alterações aos itens em um projeto de plataforma não são propagadas em qualquer lugar, há apenas um cada um desses eventos.
+13. Compile e execute o projeto. Criar um projeto Universal c# na instância experimental, vá para o **ferramentas** menu e clique em **TestUniversalProject invocar**e verifique o texto no painel de saída geral. Depois que o arquivo no projeto de plataforma é renomeado, você verá uma <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento e um <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos. Uma vez que o arquivo não causou nenhum outro arquivo a ser alterado e, desde que as alterações aos itens em um projeto de plataforma não são propagadas em qualquer lugar, há apenas um cada um desses eventos.

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772e238367f16d95fa47d661f8a4bd24091524d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048082"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de teste 3: Fazer Check-Out / desfazer check-out
 Essa área de plug-in de teste de controle de origem aborda itens de edição e reversão do repositório de versão por meio de **Check-Out** e **desfazer check-out** comandos.
@@ -33,21 +33,21 @@ O seguinte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos
 
 ##### <a name="check-out"></a>Fazer Check-out:
 
--   **Arquivo**, **controle de origem**, **Fazer Check-Out**.
+- **Arquivo**, **controle de origem**, **Fazer Check-Out**.
 
--   **Arquivo**, **Fazer Check-Out**.
+- **Arquivo**, **Fazer Check-Out**.
 
--   Menu de atalho **Check-Out**.
+- Menu de atalho **Check-Out**.
 
--   Desfazer check-out: **Arquivo**, **controle de origem**, **desfazer check-out**.
+- Desfazer check-out: **Arquivo**, **controle de origem**, **desfazer check-out**.
 
 ## <a name="common-expected-behavior"></a>Comportamento esperado comuns
 
--   Após o check-out de operação, o arquivo de destino (s) e/ou pastas são marcadas como check-out no repositório de versão.
+- Após o check-out de operação, o arquivo de destino (s) e/ou pastas são marcadas como check-out no repositório de versão.
 
--   O check-out de atributos no repositório de versão para o usuário correto.
+- O check-out de atributos no repositório de versão para o usuário correto.
 
--   A data e hora do check-out estão corretos (de acordo com as configurações do usuário).
+- A data e hora do check-out estão corretos (de acordo com as configurações do usuário).
 
 ## <a name="test-cases"></a>Casos de teste
 
@@ -74,11 +74,11 @@ Quando o usuário reconecta-se para a versão de armazenar, os estados de check-
 
 #### <a name="expected-behavior"></a>Comportamento esperado
 
--   Não é possível usar **Check-Out exclusivamente** enquanto estiver desconectado do repositório de versão de comando.
+- Não é possível usar **Check-Out exclusivamente** enquanto estiver desconectado do repositório de versão de comando.
 
--   Não é possível usar **desfazer check-out** enquanto estiver desconectado do repositório de versão de comando.
+- Não é possível usar **desfazer check-out** enquanto estiver desconectado do repositório de versão de comando.
 
--   **Compartilhado Check-Out** comando funciona.
+- **Compartilhado Check-Out** comando funciona.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|
@@ -89,13 +89,13 @@ Quando o usuário reconecta-se para a versão de armazenar, os estados de check-
 
 #### <a name="expected-behavior"></a>Comportamento esperado
 
--   Após o check-out de operação, o arquivo de destino (s) e/ou pastas são marcadas como check-out no repositório de versão.
+- Após o check-out de operação, o arquivo de destino (s) e/ou pastas são marcadas como check-out no repositório de versão.
 
--   O check-out de atributos no repositório de versão para o usuário correto.
+- O check-out de atributos no repositório de versão para o usuário correto.
 
--   A hora e data do check-out estão corretos (de acordo com as configurações do usuário).
+- A hora e data do check-out estão corretos (de acordo com as configurações do usuário).
 
--   A cópia local do arquivo de destino ou da pasta é gravável.
+- A cópia local do arquivo de destino ou da pasta é gravável.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|
@@ -108,13 +108,13 @@ Quando o usuário reconecta-se para a versão de armazenar, os estados de check-
 
 #### <a name="expected-behavior"></a>Comportamento esperado
 
--   Após o check-out de operação, o arquivo de destino (s) e/ou pastas são marcadas como check-out no repositório de versão.
+- Após o check-out de operação, o arquivo de destino (s) e/ou pastas são marcadas como check-out no repositório de versão.
 
--   O check-out de atributos no repositório de versão para o usuário correto.
+- O check-out de atributos no repositório de versão para o usuário correto.
 
--   A hora e data do check-out está correto (de acordo com as configurações do usuário).
+- A hora e data do check-out está correto (de acordo com as configurações do usuário).
 
--   A cópia local do arquivo de destino ou da pasta é gravável.
+- A cópia local do arquivo de destino ou da pasta é gravável.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|
@@ -126,9 +126,9 @@ Quando o usuário reconecta-se para a versão de armazenar, os estados de check-
 
 #### <a name="expected-behavior"></a>Comportamento esperado
 
--   O padrão baseia-se se o usuário **Check-out da versão Local** configuração. Se o usuário tiver escolhido fazer check-out da versão local, em seguida, o padrão para desfazer check-out é sempre reverter para a versão com check-out.
+- O padrão baseia-se se o usuário **Check-out da versão Local** configuração. Se o usuário tiver escolhido fazer check-out da versão local, em seguida, o padrão para desfazer check-out é sempre reverter para a versão com check-out.
 
--   Mediante a aceitação de desfazer, os ícones no **Gerenciador de soluções** são atualizados para afetado arquivos e o item é removido do **check-ins pendentes** janela.
+- Mediante a aceitação de desfazer, os ícones no **Gerenciador de soluções** são atualizados para afetado arquivos e o item é removido do **check-ins pendentes** janela.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|

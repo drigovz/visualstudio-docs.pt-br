@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "58999957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066072"
 ---
 # <a name="extend-layer-diagrams"></a>Estender diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Você pode escrever código para criar e atualizar diagramas de camada e também
   
  Para obter mais informações sobre diagramas de camada, consulte:  
   
--   [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)  
+- [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)  
   
--   [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)  
   
--   [Criar diagramas de camada por meio de código](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Criar diagramas de camada por meio de código](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)  
+- [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> Requisitos  
+## <a name="prereqs"></a> Requisitos  
  Você deve ter os seguintes itens instalados no computador em que você deseja desenvolver suas extensões em camadas:  
   
 - Visual Studio  

@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048535"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58925598"
 O analisador é o coração do serviço de linguagem. As classes de linguagem da estrutura de pacote gerenciado (MPF) exigem um analisador de linguagem para selecionar as informações sobre o código que está sendo exibido. Um analisador separa o texto em tokens léxicos e, em seguida, identifica esses tokens por tipo e funcionalidade.  
   
 ## <a name="discussion"></a>Discussão  
- Este é um método em C#.  
+ Este é um método em c#.  
   
 ```csharp  
 namespace MyNamespace  
@@ -82,29 +82,29 @@ namespace MyNamespace
   
  Suponha que o serviço de linguagem dá suporte a chaves correspondentes.  
   
-1.  O usuário digita uma chave de fechamento (}).  
+1. O usuário digita uma chave de fechamento (}).  
   
-2.  A chave de abertura é inserido na posição do cursor no arquivo de origem e o cursor é avançado por um.  
+2. A chave de abertura é inserido na posição do cursor no arquivo de origem e o cursor é avançado por um.  
   
-3.  O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe é chamada com a chave de fechamento tipado.  
+3. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe é chamada com a chave de fechamento tipado.  
   
-4.  O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe para obter o token na posição apenas antes da posição atual do cursor. Esse token corresponde da chave de fechamento tipada).  
+4. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe para obter o token na posição apenas antes da posição atual do cursor. Esse token corresponde da chave de fechamento tipada).  
   
-    1.  O <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método no <xref:Microsoft.VisualStudio.Package.Colorizer> objeto para obter todos os tokens na linha atual.  
+    1. O <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método no <xref:Microsoft.VisualStudio.Package.Colorizer> objeto para obter todos os tokens na linha atual.  
   
-    2.  O <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> método no <xref:Microsoft.VisualStudio.Package.IScanner> objeto com o texto da linha atual.  
+    2. O <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> método no <xref:Microsoft.VisualStudio.Package.IScanner> objeto com o texto da linha atual.  
   
-    3.  O <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> repetidamente o método chama o <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> método no <xref:Microsoft.VisualStudio.Package.IScanner> objeto para reunir todos os tokens a partir da linha atual.  
+    3. O <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> repetidamente o método chama o <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> método no <xref:Microsoft.VisualStudio.Package.IScanner> objeto para reunir todos os tokens a partir da linha atual.  
   
-    4.  O <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método chama um método particular em de <xref:Microsoft.VisualStudio.Package.Source> classe para obter o token que contém a posição desejada e passa na lista de tokens obtidos do <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método.  
+    4. O <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método chama um método particular em de <xref:Microsoft.VisualStudio.Package.Source> classe para obter o token que contém a posição desejada e passa na lista de tokens obtidos do <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método.  
   
-5.  O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método procura um sinalizador de token de gatilho de <xref:Microsoft.VisualStudio.Package.TokenTriggers> no token que é retornado o <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método; ou seja, o token que representa a chave de fechamento).  
+5. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método procura um sinalizador de token de gatilho de <xref:Microsoft.VisualStudio.Package.TokenTriggers> no token que é retornado o <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método; ou seja, o token que representa a chave de fechamento).  
   
-6.  Se o gatilho do sinalizador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> for encontrado, o <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método o <xref:Microsoft.VisualStudio.Package.Source> classe é chamada.  
+6. Se o gatilho do sinalizador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> for encontrado, o <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método o <xref:Microsoft.VisualStudio.Package.Source> classe é chamada.  
   
-7.  O <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método inicia uma operação de análise com o valor de motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>. Essa operação, por fim, chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Se a análise assíncrono está habilitado, essa chamada para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método ocorre em um thread em segundo plano.  
+7. O <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método inicia uma operação de análise com o valor de motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>. Essa operação, por fim, chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Se a análise assíncrono está habilitado, essa chamada para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método ocorre em um thread em segundo plano.  
   
-8.  Quando a operação de análise for concluída, um manipulador de conclusão interno (também conhecido como um método de retorno de chamada) chamado `HandleMatchBracesResponse` é chamado no <xref:Microsoft.VisualStudio.Package.Source> classe. Essa chamada é feita automaticamente pelo <xref:Microsoft.VisualStudio.Package.LanguageService> base classe, não pelo analisador.  
+8. Quando a operação de análise for concluída, um manipulador de conclusão interno (também conhecido como um método de retorno de chamada) chamado `HandleMatchBracesResponse` é chamado no <xref:Microsoft.VisualStudio.Package.Source> classe. Essa chamada é feita automaticamente pelo <xref:Microsoft.VisualStudio.Package.LanguageService> base classe, não pelo analisador.  
   
 9. O `HandleMatchBracesResponse` método obtém uma lista de intervalos da <xref:Microsoft.VisualStudio.Package.AuthoringSink> que é armazenado no objeto o <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto. (Um alcance é um <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> estrutura que especifica um intervalo de linhas e os caracteres no arquivo de origem.) Esta lista de intervalos geralmente contém dois intervalos, cada um para as chaves de abertura e fechamento.  
   

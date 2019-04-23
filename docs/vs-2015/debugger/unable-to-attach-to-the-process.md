@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 473afbdbbeb510434d45bf28dc02a3ff636d2b9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1e8f3e5b87879d34ab61f0b50e5e4b91e84933b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063082"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Não é possível anexar ao processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,26 +42,26 @@ Não é possível anexar ao processo. O componente do depurador no servidor rece
   
 ### <a name="to-solve-scenario-1"></a>Para solucionar o cenário 1  
   
--   Execute o depurador e o aplicativo gerenciado no mesmo nome e senha da conta do usuário.  
+- Execute o depurador e o aplicativo gerenciado no mesmo nome e senha da conta do usuário.  
   
 ### <a name="to-solve-scenario-2"></a>Para solucionar o cenário 2  
   
-1.  No menu **Iniciar**, selecione **Painel de Controle**.  
+1. No menu **Iniciar**, selecione **Painel de Controle**.  
   
-2.  No Painel de Controle, clique duas vezes em **Ferramentas administrativas**.  
+2. No Painel de Controle, clique duas vezes em **Ferramentas administrativas**.  
   
-3.  Na janela Ferramentas administrativas, clique duas vezes em **Política de Segurança Local**.  
+3. Na janela Ferramentas administrativas, clique duas vezes em **Política de Segurança Local**.  
   
-4.  Na janela Política de Segurança Local, selecione **Políticas Locais**.  
+4. Na janela Política de Segurança Local, selecione **Políticas Locais**.  
   
-5.  No **diretivas** coluna, clique duas vezes em **acesso à rede: Modelo de compartilhamento e segurança para contas locais**.  
+5. No **diretivas** coluna, clique duas vezes em **acesso à rede: Modelo de compartilhamento e segurança para contas locais**.  
   
-6.  No **acesso à rede: Modelo de compartilhamento e segurança para contas locais** caixa de diálogo, altere a configuração de segurança local para **clássico**e clique em **Okey**.  
+6. No **acesso à rede: Modelo de compartilhamento e segurança para contas locais** caixa de diálogo, altere a configuração de segurança local para **clássico**e clique em **Okey**.  
   
     > [!CAUTION]
     >  A alteração do modelo de segurança para Clássico pode resultar em acesso inesperado a arquivos e componentes DCOM compartilhados. Se você fizer essa alteração, um usuário remoto poderá ser autenticado com sua conta de usuário local em vez como Convidado. Se um usuário remoto corresponder ao seu nome de usuário e sua senha, esse usuário terá acesso a qualquer pasta ou objeto DCOM você compartilhar. Se você usar esse modelo de segurança, verifique se todas as contas de usuário no computador têm senhas fortes ou configure uma ilha isolada de rede para os computadores de depuração e depurados para impedir o acesso não autorizado.  
   
-7.  Feche todas as janelas.  
+7. Feche todas as janelas.  
   
 ## <a name="see-also"></a>Consulte também  
  [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)

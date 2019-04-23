@@ -13,37 +13,37 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064687"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Instruções passo a passo: criação de perfil de linha de comando usando instrumentação
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Passo a passo: Linha de comando usando instrumentação de criação de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo leva você pela criação de perfil de um aplicativo autônomo [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Para coletar dados detalhados de tempo e contagem de chamadas usando o método de instrumentação das ferramentas de criação de perfil. Nesta explicação passo a passo, você concluirá as seguintes tarefas:  
   
--   Use a ferramenta de linha de comando [VSInstr](../profiling/vsinstr.md) para gerar binários instrumentados.  
+- Use a ferramenta de linha de comando [VSInstr](../profiling/vsinstr.md) para gerar binários instrumentados.  
   
--   Use a ferramenta [VSPerfCLREnv](../profiling/vsperfclrenv.md) para definir as variáveis de ambiente para coletar dados de criação de perfil do .NET.  
+- Use a ferramenta [VSPerfCLREnv](../profiling/vsperfclrenv.md) para definir as variáveis de ambiente para coletar dados de criação de perfil do .NET.  
   
--   Use a ferramenta [VSPerfCmd](../profiling/vsperfcmd.md) para coletar dados de criação de perfil.  
+- Use a ferramenta [VSPerfCmd](../profiling/vsperfcmd.md) para coletar dados de criação de perfil.  
   
--   Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para gerar relatórios com base em arquivo dos dados de criação de perfil.  
+- Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para gerar relatórios com base em arquivo dos dados de criação de perfil.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
   
--   [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
+- [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
--   Noções intermediárias do C#  
+- Noções intermediárias do C#  
   
--   Compreensão intermediária de como trabalhar com ferramentas de linha de comando  
+- Compreensão intermediária de como trabalhar com ferramentas de linha de comando  
   
--   Uma cópia de [amostra do PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Uma cópia de [amostra do PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis. Para obter mais informações, consulte [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+- Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis. Para obter mais informações, confira [Como: Informações de símbolo de referência Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Criação de perfil da linha de comando usando o método de instrumentação  
  A instrumentação é um método de criação de perfil pelo qual versões especialmente projetadas de binários com perfil contêm funções de teste que coletam informações de tempo na entrada e saída para funções em um módulo instrumentado. Como esse método de criação de perfil é mais invasivo do que a amostragem, resulta em maior quantidade de sobrecarga. Binários instrumentados também são maiores do que os binários de depuração ou liberação e não são destinados a implantação.  
@@ -53,19 +53,19 @@ Este passo a passo leva você pela criação de perfil de um aplicativo autônom
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Para analisar o aplicativo PeopleTrax usando o método de instrumentação  
   
-1.  Instale o aplicativo de exemplo PeopleTrax e compile a versão de lançamento.  
+1. Instale o aplicativo de exemplo PeopleTrax e compile a versão de lançamento.  
   
-2.  Abra uma janela de prompt de comando e adicione o diretório **Ferramentas de criação de perfil** à variável de ambiente Path local.  
+2. Abra uma janela de prompt de comando e adicione o diretório **Ferramentas de criação de perfil** à variável de ambiente Path local.  
   
-3.  Altere o diretório de trabalho para o diretório que contém os binários de PeopleTrax.  
+3. Altere o diretório de trabalho para o diretório que contém os binários de PeopleTrax.  
   
-4.  Crie um diretório para conter os relatórios baseados em arquivo. Digite o seguinte comando:  
+4. Crie um diretório para conter os relatórios baseados em arquivo. Digite o seguinte comando:  
   
     ```  
     md Reports  
     ```  
   
-5.  Use a ferramenta de linha de comando VSInstr para instrumentar binários no aplicativo. Digite os seguintes comandos em linhas de comando separadas:  
+5. Use a ferramenta de linha de comando VSInstr para instrumentar binários no aplicativo. Digite os seguintes comandos em linhas de comando separadas:  
   
     ```  
     VSInstr PeopleTrax.exe  
@@ -77,19 +77,19 @@ Este passo a passo leva você pela criação de perfil de um aplicativo autônom
   
      **Observação** por padrão, VSInstr salva um backup não instrumentado do arquivo original. O nome do arquivo de backup tem a extensão .orig. Por exemplo, a versão original do "MyApp.exe" deve ser salva como "MyApp.exe.orig".  
   
-6.  Digite o comando a seguir para definir as variáveis de ambiente apropriadas:  
+6. Digite o comando a seguir para definir as variáveis de ambiente apropriadas:  
   
     ```  
     VsPerfCLREnv /traceon  
     ```  
   
-7.  Para iniciar o criador de perfil, digite o seguinte comando:  
+7. Para iniciar o criador de perfil, digite o seguinte comando:  
   
     ```  
     VsPerfCmd /start:trace /output:Reports\Report.vsp  
     ```  
   
-8.  Depois de iniciar o criador de perfil no modo de rastreamento, execute a versão instrumentada do processo PeopleTrax.exe para coletar dados.  
+8. Depois de iniciar o criador de perfil no modo de rastreamento, execute a versão instrumentada do processo PeopleTrax.exe para coletar dados.  
   
      A janela do aplicativo **PeopleTrax** é exibida.  
   

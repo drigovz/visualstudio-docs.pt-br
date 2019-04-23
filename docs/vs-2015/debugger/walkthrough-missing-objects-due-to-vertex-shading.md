@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046373"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Passo a passo: Objetos ausentes devido ao sombreamento de vértice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md
   
  Este passo a passo ilustra essas tarefas:  
   
--   Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.  
+- Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.  
   
--   Usando o **estágios de Pipeline gráficos** janela para verificar o efeito do `DrawIndexed` chamadas à API do Direct3D.  
+- Usando o **estágios de Pipeline gráficos** janela para verificar o efeito do `DrawIndexed` chamadas à API do Direct3D.  
   
--   Usando o **depurador HLSL** para examinar o sombreador de vértices.  
+- Usando o **depurador HLSL** para examinar o sombreador de vértices.  
   
--   Usando o **pilha de chamadas do evento de gráficos** para ajudar a localizar a origem de uma constante de HLSL incorreta.  
+- Usando o **pilha de chamadas do evento de gráficos** para ajudar a localizar a origem de uma constante de HLSL incorreta.  
   
 ## <a name="scenario"></a>Cenário  
  Uma das causas comuns de um objeto ausente em um aplicativo 3D ocorre quando o sombreador de vértices transforma os vértices do objeto de uma forma incorreta ou inesperada — por exemplo, o objeto pode ser dimensionado para um tamanho muito pequeno ou transformado, de modo que ele seja exibido por trás da câmera , em vez de na frente dele.  
